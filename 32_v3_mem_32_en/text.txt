@@ -59,13 +59,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Bonjour Manon, I’m Thunalo. It’s lovely to connect with you. I understand you sometimes find it hard to move forward with creative projects?
-[  6.52s][user ] «backchannel» Yeah.
-[  8.54s][user ] Yeah, a little. I'm trying to plan my Kyoto trip, but I feel…stuck.
-[ 14.19s][moshi] ⟨ret@14.11s⟩ You’re planning a trip to ⟦⚡SPAN@16.11s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ Kyoto in March, which is wonderful. Perhaps we can unlock what feels blocking you about those plans… is it the details, or the bigger picture?
-[ 20.94s][user ] «backchannel» Mm-hmm.
-[ 23.61s][moshi] Sometimes, a lack of clarity around practicalities can really stall momentum. Do you have a sense of what you’d like to *do* in Kyoto, or are you overwhelmed by the options?
-[ 34.55s][user ] I remember mentioning I like climbing… is there good rock climbing near ⟨ret@39.06s⟩ Kyoto?
-[ 39.22s][moshi] There are several climbing options ⟦⚡SPAN@41.06s: (tool result) There are several climbing gyms and outdoor spots within a 2-hour radius of Kyoto, including Spo⟧ near Kyoto, including Sportiva Kyoto and Mount Daimonji… they are within a two-hour radius. That might be a good focus for your trip.
-      CALL: {"function": "search_places", "arguments": {"query": "rock climbing near Kyoto, Japan"}}
-[ 48.93s][user ] That sounds…perfect, actually. Thank you.
+[  0.00s][moshi] Bonjour Manon, I’m Thunalo. It's lovely to connect with you; I'm a counselor specializing in creative flow.
+[  5.22s][user ] «backchannel» Yeah.
+[  6.92s][user ] Oh, hi Thunalo. Um, I was wondering… do you remember anything about my travel plans?
+[ 12.38s][moshi] ⟨ret@12.30s⟩ You mentioned a ⟦⚡SPAN@13.50s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ trip to Kyoto in March, and I believe we touched upon some initial thoughts then…
+[ 16.29s][user ] «backchannel» Mm-hmm.
+[ 17.91s][moshi] …perhaps we could revisit those ideas and see how they’ve evolved?
+[ 21.82s][user ] Yes! That's it. I'm trying to figure out the best time to go, specifically.
+[ 26.21s][moshi] Well, March is a beautiful time to visit Kyoto, though it can be quite busy. To help me tailor some ideas for you, could you tell me what you’re hoping to experience on this trip?
+[ 35.80s][user ] I'd like to find some good rock climbing spots, ⟨ret@38.79s⟩ actually.
+[ 39.03s][moshi] That’s wonderful, ⟦⚡SPAN@40.23s: [2026-02-20] User is into rock climbing.⟧ Manon! Knowing you enjoy rock climbing helps me focus our planning… …Kyoto isn’t immediately known for it, but there are some excellent options within a reasonable distance.

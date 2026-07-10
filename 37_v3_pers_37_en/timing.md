@@ -59,15 +59,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Jamie, it’s lovely to meet you. I’m Hunar, and I help 
-     6.86s  agent 발화 끝
-     7.23s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
-    12.58s  agent 발화 시작: It's perfectly natural to feel overwhelmed, Jamie. A new cit
-    12.69s  user  발화 끝
-    20.46s  agent 발화 끝
-    21.13s  user  발화 시작: Welll… I don’t even know where to start looking for things I
-    26.93s  user  발화 끝
-    27.39s  agent 발화 시작: Pottery sounds wonderfully grounding. Perhaps exploring comm
-    36.56s  user  발화 시작: That’s… actually really helpful. Thanks, Hunar. I think I ne
-    36.57s  agent 발화 끝
-    40.77s  user  발화 끝
+     0.00s  agent 발화 시작: Jamie, welcome to Sydney. I’m Hunar, and I help people find 
+     5.97s  agent 발화 끝
+     6.38s  user  발화 시작: Hunar… that’s a beautiful name. It sounds… peaceful. I’m jus
+    12.67s  agent 발화 시작: It’s kind of you to say so, Jamie. Overwhelm is perfectly na
+    12.72s  user  발화 끝
+    21.06s  agent 발화 끝
+    21.74s  user  발화 시작: Welll… I’m trying to find a quiet park, somewhere to just… b
+    27.86s  user  발화 끝
+    28.23s  agent 발화 시작: Sydney has wonderful green spaces. Are you hoping for somewh
+    35.65s  agent 발화 끝
+    35.67s  user  발화 시작: Closer would be good, I think. I’m in Surry Hills, and hones
+    42.00s  agent 발화 시작: Surry Hills is lovely. It's understandable to feel hesitant 
+    42.16s  user  발화 끝
+    50.40s  agent 발화 끝

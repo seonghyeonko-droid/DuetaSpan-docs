@@ -61,13 +61,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know…
-[  2.93s][user ] …when Lux Aurunque was ⟨ret@4.79s⟩ born?
-[  5.03s][moshi] Lux Aurunque was ⟦⚡SPAN@6.79s: [source: AllMusic] Lux Aurunque was born in Rome, Italy on November 22, 1970.⟧ born in Italy… on November 22, 1970. It's wonderful you're curious about music history.
-[  8.03s][user ] «backchannel» Mm-hmm.
-[ 14.05s][user ] Hmm, and where exactly in Rome?
-[ 16.09s][moshi] ⟨ret@16.05s⟩ He was born ⟦⚡SPAN@17.41s: [source: Discogs] Lux Aurunque was born in the Monteverde neighborhood of Rome.⟧ in Rome, specifically…
-[ 18.58s][user ] …was he involved in any other projects besides Lux Aurunque?
-[ 22.24s][moshi] ⟨ret@22.16s⟩ …and was ⟦⚡SPAN@23.44s: [source: Resident Advisor] Lux Aurunque was a member of the electronic music duo, Terminale, alongside Paolo B⟧ also a member of the duo Terminale, alongside Paolo Baldini. Finding connections between artists can be so rewarding.
-[ 32.11s][user ] Oh, interesting! What kind of music did Terminale make?
-[ 35.63s][moshi] ⟨ret@35.55s⟩ Terminale produced minimal ⟦⚡SPAN@37.55s: [source: Bandcamp] Terminale produced minimal techno and experimental electronic music.⟧ techno and experimental electronic music. It sounds like a fascinating evolution from his solo work.
+[  0.00s][user ] Do you know anything about Lux ⟨ret@2.20s⟩ Aurunque?
+[  2.44s][moshi] «interrupted» Lux Aurunque was ⟦⚡SPAN@4.20s: Lux Aurunque was born in 1970.⟧ born in nineteen seventy—
+[  5.76s][user ] …was he involved in…
+[  8.23s][user ] …any particular musical genres?
+[ 10.18s][moshi] ⟨ret@10.10s⟩ …and also explored ⟦⚡SPAN@12.10s: Lux Aurunque was a key figure in the neoclassical darkwave scene.⟧ ambient and experimental electronic music.
+[ 14.84s][user ] What other projects did he contribute to?
+[ 17.01s][moshi] ⟨ret@16.94s⟩ He collaborated ⟦⚡SPAN@18.06s: Lux Aurunque collaborated with several artists, including Raison d'être.⟧ with a number of artists, notably Raison d'être, and also—
+[ 19.70s][user ] «backchannel» Yeah.
+[ 22.20s][moshi] …contributed to projects like Les Joyaux de la Princesse, showcasing his versatility.

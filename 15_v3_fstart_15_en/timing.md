@@ -63,49 +63,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, are there any with a pool? | S3 …Actually, hold on. What about som | S4 Perfect. Can you check if they hav
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, is there anything happening a | S3 Stalls, please. | S4 And can you set a reminder…
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> The Sydney Opera House’s coordinates are… negative thi
-     4.53s  user  발화 끝
-     6.11s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.39s]: (tool result) -33.8568, 151.2153
-     8.95s  user  발화 시작: Yeah.
-     9.49s  user  발화 끝
-    14.89s  agent 발화 끝
-    14.97s  user  발화 시작: Okay, good. And can you find me hotels near that location?
-    18.86s  <ret> 발화 (turn4 첫 프레임)
-    19.09s  user  발화 끝
-    19.09s  agent 발화 시작: <ret> There are several hotels nearby. The Park Hyatt Sydney
-    20.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: (tool result) Park Hyatt Sydney - $650/night, Shangri-La Hotel - $400/
-    23.60s  user  발화 시작: Yeah.
-    24.09s  user  발화 끝
-    30.05s  agent 발화 시작: Those prices are per night, of course, and can fluctuate dep
-    30.08s  agent 발화 끝
-    35.66s  agent 발화 끝
-    36.02s  user  발화 시작: Hmm, are there any with a pool?
-    38.05s  <ret> 발화 (turn8 첫 프레임)
-    38.29s  agent 발화 시작: <ret> Both the Park Hyatt Sydney and the Shangri-La Hotel ha
-    38.42s  user  발화 끝
-    39.65s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.62s]: (tool result) Park Hyatt Sydney - $650/night (pool, spa), Shangri-La H
-    46.20s  user  발화 시작: …Actually, hold on. What about something a little more…budge
-    46.91s  agent 발화 끝
-    50.27s  <ret> 발화 (turn10 첫 프레임)
-    50.51s  agent 발화 시작: <ret> The Russell Hotel is two hundred twenty dollars a nigh
-    50.60s  user  발화 끝
-    52.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) The Russell Hotel - $220/night, Sydney Harbour YHA - $80
-    58.30s  agent 발화 끝
-    58.37s  user  발화 시작: A hostel could work. What’s the address for that one?
-    61.24s  <ret> 발화 (turn12 첫 프레임)
-    61.27s  user  발화 끝
-    61.56s  agent 발화 시작: <ret> The address for the Sydney Harbour YHA is one eighteen
-    62.36s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.07s]: (tool result) 118 Cumberland St, The Rocks NSW 2000, Australia
-    67.08s  user  발화 시작: Yeah, totally.
-    68.42s  user  발화 끝
-    69.63s  agent 발화 끝
-    69.91s  user  발화 시작: Perfect. Can you check if they have availability next Friday
-    74.06s  <ret> 발화 (turn15 첫 프레임)
-    74.22s  agent 발화 시작: <ret> Yes, they do. There are currently ten beds still avail
-    74.26s  user  발화 끝
-    76.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Available - 10 beds remaining
-    81.03s  agent 발화 끝
+     3.65s  <ret> 발화 (turn1 첫 프레임)
+     3.73s  agent 발화 시작: <ret> The Sydney Opera House is at latitude… -33.8568 and lo
+     3.79s  user  발화 끝
+     5.33s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.22s]: [{"latitude": -33.8568, "longitude": 151.2153}]
+     8.47s  user  발화 시작: Wow.
+     9.29s  user  발화 끝
+    12.95s  agent 발화 끝
+    13.05s  user  발화 시작: And what’s the weather like there right now?
+    15.85s  <ret> 발화 (turn4 첫 프레임)
+    16.09s  agent 발화 시작: <ret> It’s currently 22 degrees and cloudy in Sydney. It’s a
+    16.10s  user  발화 끝
+    17.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: [{"temperature": 22, "condition": "Cloudy"}]
+    19.34s  user  발화 시작: Right.
+    19.83s  user  발화 끝
+    21.36s  agent 발화 끝
+    21.39s  user  발화 시작: Hmm, is there anything happening at the Opera House tonight?
+    24.90s  <ret> 발화 (turn7 첫 프레임)
+    24.97s  agent 발화 시작: <ret> There’s a performance of Tosca at 7:30 PM tonight. It’
+    25.14s  user  발화 끝
+    26.57s  user  발화 시작: Yeah.
+    26.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: [{"event": "Tosca", "time": "7:30 PM"}]
+    27.30s  user  발화 끝
+    30.38s  agent 발화 끝
+    30.46s  user  발화 시작: …Could you book me a ticket for that, please?
+    32.86s  user  발화 끝
+    33.24s  agent 발화 시작: And what seating section would you prefer? We have stalls, d
+    38.89s  agent 발화 끝
+    39.66s  user  발화 시작: Stalls, please.
+    41.31s  user  발화 끝
+    41.53s  <ret> 발화 (turn12 첫 프레임)
+    41.61s  agent 발화 시작: <ret> I’ve booked a stall ticket for you. Your confirmation 
+    42.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.29s]: [{"confirmation_number": "AX7294", "price": 189.00}]
+    44.50s  user  발화 시작: Oh.
+    45.32s  user  발화 끝
+    49.83s  agent 발화 시작: It's wonderful that you're going to see Tosca. It’s a truly 
+    49.90s  agent 발화 끝
+    54.69s  agent 발화 끝
+    55.41s  user  발화 시작: What time does the box office close tonight?
+    57.59s  <ret> 발화 (turn16 첫 프레임)
+    57.91s  agent 발화 시작: <ret> The box office closes at 8:00 PM tonight. You’ll have 
+    58.00s  user  발화 끝
+    58.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.83s]: [{"closing_time": "8:00 PM"}]
+    61.63s  user  발화 시작: Oh.
+    62.46s  user  발화 끝
+    63.65s  user  발화 시작: And can you set a reminder…
+    63.74s  agent 발화 끝
+    65.72s  user  발화 끝
+    66.75s  user  발화 시작: …for me to leave at 6:30 PM?
+    69.42s  user  발화 끝
+    69.52s  <ret> 발화 (turn20 첫 프레임)
+    69.67s  agent 발화 시작: <ret> I’ve set a reminder to leave for Tosca at 6:30 PM. Hav
+    71.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [{"status": "Reminder set"}]
+    74.95s  agent 발화 끝

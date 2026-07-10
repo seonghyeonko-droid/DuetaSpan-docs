@@ -59,25 +59,27 @@
 # }
 
 
-     0.00s  agent 발화 시작: Bonjour Manon, I’m Thunalo. It’s lovely to connect with you.
-     6.52s  user  발화 시작: Yeah.
-     7.11s  user  발화 끝
-     8.39s  agent 발화 끝
-     8.54s  user  발화 시작: Yeah, a little. I'm trying to plan my Kyoto trip, but I feel
-    14.11s  <ret> 발화 (turn3 첫 프레임)
-    14.19s  agent 발화 시작: <ret> You’re planning a trip to Kyoto in March, which is won
-    14.24s  user  발화 끝
-    16.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.54s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    20.94s  user  발화 시작: Mm-hmm.
-    21.44s  user  발화 끝
-    23.61s  agent 발화 시작: Sometimes, a lack of clarity around practicalities can reall
-    23.74s  agent 발화 끝
-    34.18s  agent 발화 끝
-    34.55s  user  발화 시작: I remember mentioning I like climbing… is there good rock cl
-    39.06s  <ret> 발화 (turn7 첫 프레임)
-    39.22s  agent 발화 시작: <ret> There are several climbing options near Kyoto, includi
-    39.45s  user  발화 끝
-    41.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) There are several climbing gyms and outdoor spots within
-    48.26s  agent 발화 끝
-    48.93s  user  발화 시작: That sounds…perfect, actually. Thank you.
-    51.84s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour Manon, I’m Thunalo. It's lovely to connect with you;
+     5.22s  user  발화 시작: Yeah.
+     5.95s  user  발화 끝
+     6.91s  agent 발화 끝
+     6.92s  user  발화 시작: Oh, hi Thunalo. Um, I was wondering… do you remember anythin
+    12.30s  <ret> 발화 (turn3 첫 프레임)
+    12.38s  agent 발화 시작: <ret> You mentioned a trip to Kyoto in March, and I believe 
+    12.56s  user  발화 끝
+    13.50s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.65s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    16.29s  user  발화 시작: Mm-hmm.
+    16.79s  user  발화 끝
+    17.91s  agent 발화 시작: …perhaps we could revisit those ideas and see how they’ve ev
+    18.04s  agent 발화 끝
+    21.52s  agent 발화 끝
+    21.82s  user  발화 시작: Yes! That's it. I'm trying to figure out the best time to go
+    26.21s  agent 발화 시작: Well, March is a beautiful time to visit Kyoto, though it ca
+    26.45s  user  발화 끝
+    34.97s  agent 발화 끝
+    35.80s  user  발화 시작: I'd like to find some good rock climbing spots, actually.
+    38.79s  <ret> 발화 (turn9 첫 프레임)
+    39.03s  agent 발화 시작: <ret> That’s wonderful, Manon! Knowing you enjoy rock climbi
+    39.13s  user  발화 끝
+    40.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.48s]: [2026-02-20] User is into rock climbing.
+    49.51s  agent 발화 끝

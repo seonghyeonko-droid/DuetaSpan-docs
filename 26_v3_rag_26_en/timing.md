@@ -58,33 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, hey… I was wondering about fla | S2 Oh, right! Germany. I knew it felt | S3 Okay, that makes sense. My grandma | S4 Yeah, actually. What about a flag 
+# EXAMINER(FDB-v2) 단계: S1 I was just looking at flags, and I | S2 I think it starts with a G… German | S3 Oh, actually, speaking of colors,  | S4 Wow, that's really interesting! Th
 
-     0.00s  user  발화 시작: Uh, hey… I was wondering about flags.
-     3.38s  user  발화 끝
-     3.46s  agent 발화 시작: It’s good to be curious! Flags can be really fascinating, an
-    13.51s  user  발화 시작: Well, I was thinking about one… it's black, red, and yellow.
-    13.56s  agent 발화 끝
-    19.08s  <ret> 발화 (turn3 첫 프레임)
-    19.20s  user  발화 끝
-    19.32s  agent 발화 시작: <ret> The flag you're describing—with those colors—is… the f
-    21.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: "[source: Britannica] The national flag of Germany consists of three e
-    21.37s  user  발화 시작: Right.
-    22.01s  user  발화 끝
-    23.85s  agent 발화 끝
-    23.88s  user  발화 시작: Oh, right! Germany. I knew it felt familiar. Hmmmm… so, what
-    30.36s  <ret> 발화 (turn6 첫 프레임)
-    30.51s  agent 발화 시작: <ret> Belgium’s flag has a different arrangement—it’s black,
-    30.64s  user  발화 끝
-    31.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.49s]: "[source: Encyclopedia Britannica] The flag of Belgium is a tricolor o
-    36.00s  agent 발화 끝
-    36.13s  user  발화 시작: Okay, that makes sense. My grandma used to collect flags, ac
-    43.73s  user  발화 끝
-    43.83s  agent 발화 시작: That’s lovely! It’s wonderful to have hobbies that connect u
-    51.06s  agent 발화 끝
-    51.13s  user  발화 시작: Yeah, actually. What about a flag that has a maple leaf on i
-    55.49s  <ret> 발화 (turn10 첫 프레임)
-    55.73s  agent 발화 시작: <ret> The flag with a maple leaf is… the flag of Canada, wit
-    55.90s  user  발화 끝
-    57.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: "[source: The Canadian Encyclopedia] The Canadian flag features a red 
-    61.80s  agent 발화 끝
+     0.00s  user  발화 시작: I was just looking at flags, and I’m trying to remember one…
+     6.43s  <ret> 발화 (turn1 첫 프레임)
+     6.66s  agent 발화 시작: <ret> That’s a striking combination of colors… which flag ar
+     6.76s  user  발화 끝
+     8.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: The flag of Germany features black, red, and yellow horizontal bands.
+    13.12s  user  발화 시작: Uh, I think it’s a European one? I’m terrible with geography
+    13.24s  agent 발화 끝
+    17.65s  user  발화 끝
+    18.03s  agent 발화 시작: It’s perfectly alright to struggle with geography, many peop
+    20.81s  user  발화 시작: Right.
+    21.44s  user  발화 끝
+    24.11s  user  발화 시작: I think it starts with a G… Germany, maybe? Is that right?
+    24.14s  agent 발화 끝
+    28.07s  <ret> 발화 (turn6 첫 프레임)
+    28.38s  agent 발화 시작: <ret> Germany’s flag does indeed feature those colors… The f
+    28.55s  user  발화 끝
+    29.19s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.79s]: Germany’s flag consists of three horizontal bands of black, red, and g
+    42.31s  user  발화 시작: Yes! That’s it! I always get the colors mixed up.
+    42.34s  agent 발화 끝
+    46.24s  user  발화 끝
+    46.34s  agent 발화 시작: It's easy to do, especially with similar shades. I'm glad we
+    50.97s  agent 발화 끝
+    51.06s  user  발화 시작: Oh, actually, speaking of colors, do you have a favorite?
+    55.00s  agent 발화 시작: I find blues and greens very calming, personally.
+    55.13s  user  발화 끝
+    57.96s  user  발화 시작: Back to flags though… what’s the oldest national flag still 
+    58.05s  agent 발화 끝
+    62.33s  <ret> 발화 (turn12 첫 프레임)
+    62.41s  agent 발화 시작: <ret> The oldest continuously used national flag is the Dann
+    62.54s  user  발화 끝
+    64.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The Danish flag, the Dannebrog, is considered the oldest continuously 
+    66.11s  user  발화 시작: Uh-huh.
+    66.56s  user  발화 끝
+    70.43s  agent 발화 끝
+    71.66s  user  발화 시작: Wow, that's really interesting! Thanks, Kiora.
+    75.11s  agent 발화 시작: You’re very welcome! It's my pleasure to help you explore th
+    75.27s  user  발화 끝
+    78.94s  agent 발화 끝

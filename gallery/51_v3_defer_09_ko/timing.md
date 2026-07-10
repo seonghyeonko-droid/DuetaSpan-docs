@@ -68,39 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박… | S2 그 호텔에 수영장이 있는지 궁금해. | S3 아, 그런데… 그 호텔 근처에 괜찮은 해변이 있을까? | S4 코로라도 해변이 어디에 있는지 알려줄 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 샌디에이고 오션뷰 호텔에 이월 십일부터 칠박 세개 방 예약해  | S2 가격은 얼마야? | S3 … 혹시 취소 정책은 어떻게 돼? | S4 그럼 예약 완료되면 자세한 취소 규정 좀 알려줘.
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박…
-     4.54s  user  발화 끝
-     5.57s  user  발화 시작: …방 세 개 예약해 줘.
-     6.82s  <ret> 발화 (turn2 첫 프레임)
-     6.98s  agent 발화 시작: <ret> 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개를 예약했습니다. 확인 번호는 팔 육 칠
-     7.18s  user  발화 끝
-     8.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: (tool result) Confirmation number is 8675309. Three rooms at Ocean Vie
-    12.80s  user  발화 시작: 어어.
-    13.63s  user  발화 끝
-    17.00s  agent 발화 끝
-    17.15s  user  발화 시작: 그 호텔에 수영장이 있는지 궁금해.
-    19.54s  <ret> 발화 (turn5 첫 프레임)
-    19.73s  user  발화 끝
-    19.86s  agent 발화 시작: <ret> 네, 오션뷰 호텔에는 수영장이 있습니다.
-    20.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.73s]: (tool result) Yes, Ocean View Hotel has a swimming pool.
-    22.59s  agent 발화 끝
-    22.63s  user  발화 시작: 아, 그런데… 그 호텔 근처에 괜찮은 해변이 있을까?
-    26.41s  agent 발화 시작: 근처 해변에 대해 알아보고 있는데—
-    26.43s  user  발화 끝
-    28.04s  user  발화 시작: … 혹시 호텔에서 해변까지 셔틀버스가 운행하는지 알 수 있을까?
-    28.68s  agent 발화 끝
-    31.16s  <ret> 발화 (turn9 첫 프레임)
-    31.56s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-    31.66s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.10s]: (tool result) Yes, Ocean View Hotel offers a free shuttle to Coronado 
-    31.69s  user  발화 끝
-    32.66s  agent 발화 끝
-    32.73s  agent 발화 시작: 네, 오션뷰 호텔에서는 코로라도 해변까지 두시간마다 무료 셔틀버스를 운행하고 있습니다.
-    38.56s  agent 발화 끝
-    40.08s  user  발화 시작: 코로라도 해변이 어디에 있는지 알려줄 수 있어?
-    42.65s  <ret> 발화 (turn12 첫 프레임)
-    42.80s  agent 발화 시작: <ret> 코로라도 해변은 샌디에이고 시내에서 배를 건너 코로라도 섬 서쪽에 위치해 있습니다.
-    43.03s  user  발화 끝
-    43.85s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.47s]: [source: Google Maps] Coronado Beach is located on the west coast of C
-    48.27s  agent 발화 끝
+     0.00s  user  발화 시작: 샌디에이고 오션뷰 호텔에 이월 십일부터 칠박 세개 방 예약해 줘.
+     4.09s  <ret> 발화 (turn1 첫 프레임)
+     4.25s  agent 발화 시작: <ret> 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 세개 방… 예약을 진행하겠습니다… 찾을 수 없습니
+     4.35s  user  발화 끝
+     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (no information found)
+     8.52s  user  발화 시작: 어어.
+     9.06s  user  발화 끝
+    11.61s  agent 발화 끝
+    12.04s  user  발화 시작: 가격은 얼마야?
+    12.71s  <ret> 발화 (turn4 첫 프레임)
+    13.03s  agent 발화 시작: <ret> 세개 방, 칠박의 총 예상 가격은… 찾을 수 없습니다.
+    13.18s  user  발화 끝
+    14.23s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.16s]: (no information found)
+    17.19s  agent 발화 끝
+    17.92s  user  발화 시작: … 혹시 취소 정책은 어떻게 돼?
+    19.14s  <ret> 발화 (turn6 첫 프레임)
+    19.54s  agent 발화 시작: <ret> 취소 정책은 예약 확정 후 마흔여덟시간 이내에는 전액 환불이 가능하고… 마흔여덟시간 이후에는 취소
+    19.77s  user  발화 끝
+    21.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: 세개 방, 칠박의 총 예상 가격은… 찾을 수 없습니다.
+    27.39s  agent 발화 시작: 마흔여덟시간 이후에는 취소 수수료가 발생합니다.
+    27.43s  agent 발화 끝
+    30.30s  agent 발화 끝
+    30.41s  user  발화 시작: 그럼 예약 완료되면 자세한 취소 규정 좀 알려줘.
+    34.02s  agent 발화 시작: 네, 예약이 완료되면 이메일로 자세한 취소 규정을 보내드리겠습니다. 편안한 여행 준비하시고요.
+    34.16s  user  발화 끝
+    39.39s  agent 발화 끝

@@ -67,29 +67,27 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you’re planning a trip to N
-     4.72s  agent 발화 끝
-     5.48s  user  발화 시작: Yes, that’s right. I’m starting to think about where to go t
-     8.95s  <ret> 발화 (turn2 첫 프레임)
-     9.34s  agent 발화 시작: <ret> Given your trip to New Zealand is planned for March, a
-     9.50s  user  발화 끝
-    10.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    16.60s  user  발화 시작: Mm-hmm.
-    17.23s  user  발화 끝
-    18.89s  agent 발화 시작: Fiordland offers incredible opportunities for photographing 
-    19.07s  agent 발화 끝
-    26.35s  agent 발화 끝
-    26.60s  user  발화 시작: …Is it easy to get to from Queenstown?
-    29.35s  <ret> 발화 (turn6 첫 프레임)
-    29.51s  agent 발화 시작: <ret> Getting to Fiordland from Queenstown is quite straight
-    29.65s  user  발화 끝
-    31.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.91s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    33.45s  user  발화 시작: Mm-hmm.
-    34.08s  user  발화 끝
-    41.42s  agent 발화 끝
-    41.88s  user  발화 시작: That sounds manageable. Are there good places to stay near t
-    46.42s  user  발화 끝
-    46.57s  <ret> 발화 (turn9 첫 프레임)
-    46.81s  agent 발화 시작: <ret> There are several charming accommodations near Fiordla
-    48.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    57.48s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I’m Klen.
+     1.61s  agent 발화 끝
+     2.41s  user  발화 시작: Yes, I am! I’m thinking about that trip to New Zealand in Ma
+     7.28s  <ret> 발화 (turn2 첫 프레임)
+     7.55s  user  발화 끝
+     7.66s  agent 발화 시작: <ret> So, you’re planning a trip to New Zealand in March… ar
+     9.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    14.84s  agent 발화 끝
+    14.84s  user  발화 시작: Well, I’m really into alpine wildflower photography, so some
+    22.17s  <ret> 발화 (turn4 첫 프레임)
+    22.25s  agent 발화 시작: <ret> Alpine wildflower photography in New Zealand sounds lo
+    22.35s  user  발화 끝
+    24.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: [2025-08-26] User is into alpine wildflower photography.
+    27.57s  user  발화 시작: Mm-hmm.
+    28.02s  user  발화 끝
+    29.31s  agent 발화 시작: …with areas like Arthur’s Pass and Mount Cook National Park 
+    29.53s  agent 발화 끝
+    38.95s  agent 발화 끝
+    39.32s  user  발화 시작: …Actually, before we get to hotels, could you tell me what t
+    46.05s  user  발화 끝
+    46.18s  <ret> 발화 (turn8 첫 프레임)
+    46.42s  agent 발화 시작: <ret> The average high is around eighteen degrees Celsius, w
+    47.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.18s]: [{"date": "2024-03-15", "high_temp_c": 18, "low_temp_c": 6, "condition
+    55.60s  agent 발화 끝

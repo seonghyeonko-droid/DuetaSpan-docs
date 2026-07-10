@@ -69,23 +69,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Andrea, welcome. I'm Jaeia, and I'm here to offer support as
-     4.14s  user  발화 시작: Right.
-     4.64s  user  발화 끝
-     6.44s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient? Is that 
-     6.62s  agent 발화 끝
-    11.90s  agent 발화 시작: It is, actually. It’s a name from a culture that deeply valu
-    11.90s  user  발화 끝
-    16.44s  user  발화 시작: Yeah.
-    17.17s  user  발화 끝
-    21.22s  agent 발화 시작: Change can bring up so many feelings, and often remembering 
-    21.36s  agent 발화 끝
-    31.09s  agent 발화 끝
-    32.31s  user  발화 시작: Well, my mother passed away last month, and… it’s all a bit 
-    39.40s  user  발화 끝
-    39.50s  agent 발화 시작: Grief truly does shift everything, doesn’t it? It’s a profou
-    49.70s  agent 발화 끝
-    49.82s  user  발화 시작: It’s just… I don’t even know where to begin, you know? But… 
-    55.14s  user  발화 끝
-    55.23s  agent 발화 시작: That’s a beautiful intention, Andrea. Honoring her doesn’t r
-    69.20s  agent 발화 끝
+     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer a gentle s
+     6.76s  agent 발화 끝
+     6.89s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… peaceful. I’m jus
+    13.65s  agent 발화 시작: Lost is a very human feeling, Andrea. It often comes with ch
+    13.75s  user  발화 끝
+    16.73s  user  발화 시작: Wow.
+    17.54s  user  발화 끝
+    22.96s  agent 발화 시작: Sometimes, simply naming the uncertainty can lessen its weig
+    23.06s  agent 발화 끝
+    34.74s  agent 발화 끝
+    34.80s  user  발화 시작: It’s my job, I think. I’ve been there fifteen years, and the
+    41.23s  user  발화 끝
+    41.34s  agent 발화 시작: Fifteen years is a significant part of one’s life, Andrea. T
+    53.47s  user  발화 시작: Well… it was stability, I guess. And a lot of my friends are
+    53.59s  agent 발화 끝
+    62.15s  user  발화 끝
+    62.29s  agent 발화 시작: That resonance—feeling a disconnect even within something st
+    78.43s  agent 발화 끝

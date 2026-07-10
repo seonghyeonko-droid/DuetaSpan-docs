@@ -77,42 +77,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.34s⟩ fifteenth.
-[  3.58s][moshi] I’ve scheduled a viewing for ⟦⚡SPAN@5.34s: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:00 PM.⟧ you at The Grandview Lofts on June fifteenth at two in the afternoon. That sounds like a great first step!
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.47s⟩ fifteenth.
+[  3.71s][moshi] Let's see about ⟦⚡SPAN@4.99s: (no information found)⟧ scheduling a viewing at The Grandview Lofts for… it could not be found.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.55s][user ] Actually… June sixteenth would be better.
-[ 13.85s][moshi] ⟨ret@13.69s⟩ No problem at all. ⟦⚡SPAN@15.69s: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 2:00 PM.⟧ I’ve rescheduled your viewing for The Grandview Lofts to June sixteenth, also at two PM. Sometimes a little flexibility makes all the difference.
+[  9.18s][user ] Actually, make that June sixteenth.
+[ 11.41s][moshi] ⟨ret@11.25s⟩ Okay, a viewing at ⟦⚡SPAN@13.25s: [{"appointmentId": "78923", "time": "2:30 PM"}]⟧ The Grandview Lofts is now set for… …at 2:30 PM on June sixteenth. Does that time work for you?
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 24.88s][user ] Great. And can you check…
-[ 28.30s][user ] …if there’s parking available ⟨ret@30.14s⟩ nearby?
-[ 30.38s][moshi] Yes, there’s parking at ⟦⚡SPAN@32.14s: (tool result) Parking available at Grandview Garage, 2 blocks away, $5/hour.⟧ the Grandview Garage, two blocks from the lofts, at five dollars an hour. Knowing your options eases stress.
-      CALL: {"function": "Parking_2_CheckAvailability", "arguments": {"location": "The Grandview Lofts"}}
-[ 39.03s][user ] Is there… a cheaper ⟨ret@40.84s⟩ option?
-[ 41.00s][moshi] There's street parking available, ⟦⚡SPAN@42.84s: (tool result) Street parking available, limited spaces, $2/hour, 5-minute walk.⟧ a five-minute walk away, for two dollars an hour, though spaces are limited. Sometimes, a little searching saves money.
-      CALL: {"function": "Parking_2_CheckAvailability", "arguments": {"location": "The Grandview Lofts", "maxPrice": "$3/hour"}}
-[ 49.96s][user ] Okay, street parking it is.
-[ 52.56s][moshi] Wonderful. I’ve noted your preference for street parking. It’s good to have a plan.
-[ 55.17s][user ] «backchannel» Right.
-[ 58.77s][user ] Could you add a reminder to my calendar?
-[ 61.31s][moshi] What time would you like the reminder set for?
-[ 64.07s][user ] Uhhh… one hour before. ⟨ret@65.61s⟩
-[ 66.01s][moshi] I’ve set a reminder ⟦⚡SPAN@67.61s: (tool result) Reminder set for June 16th, 1:00 PM: The Grandview Lofts Viewing.⟧ for June sixteenth at one PM for your viewing at The Grandview Lofts. It’s helpful to have those little nudges!
-      CALL: {"function": "Calendar_2_AddReminder", "arguments": {"time": "1 hour before", "event": "The Grandview Lofts Viewing"}}
-[ 73.94s][user ] Perfect. And can you find the address for me?
-[ 76.66s][moshi] ⟨ret@76.42s⟩ The address for ⟦⚡SPAN@78.42s: (tool result) The Grandview Lofts: 123 Elm Street, Anytown, USA.⟧ The Grandview Lofts is one twenty-three Elm Street, in Anytown. Having that information ready feels empowering.
-      CALL: {"function": "Navigation_2_GetAddress", "arguments": {"location": "The Grandview Lofts"}}
-[ 85.79s][user ] One twenty-three… Elm Street. Right.
-[ 88.76s][moshi] Yes, that’s correct. One twenty-three Elm Street. It's always good to double-check.
-[ 91.92s][user ] «backchannel» Uh-huh.
-[ 93.99s][user ] Can you send that address to my phone?
-[ 96.19s][moshi] ⟨ret@96.03s⟩ I’ve just sent the address ⟦⚡SPAN@98.03s: (tool result) Message sent to user's phone number.⟧ to your phone. Having it readily accessible can bring peace of mind.
-      CALL: {"function": "SMS_2_Send", "arguments": {"phoneNumber": "user's phone number", "message": "The Grandview Lofts: 123 Elm Street, Anytown, USA"}}
-[ 99.87s][user ] «backchannel» Yeah.
-[101.53s][user ] Thanks, Tellar.
-[102.56s][moshi] You’re very welcome. I’m glad I could help streamline things for you.
-[105.58s][user ] «backchannel» Okay.
-[107.69s][user ] Is there a coffee shop ⟨ret@109.40s⟩ nearby?
-[109.56s][moshi] Brew ⟦⚡SPAN@110.12s: (tool result) Brew & Bean Coffee: 0.3 miles, 4.5 stars.⟧ & Bean Coffee is just three tenths of a mile from The Grandview Lofts, with a four and a half star rating. A little caffeine boost can be a nice treat.
-      CALL: {"function": "Places_2_Search", "arguments": {"location": "The Grandview Lofts", "type": "coffee shop"}}
-[121.03s][user ] Great. I think that’s all for now.
-[123.17s][moshi] Wonderful. Enjoy your viewing, and I hope you find your perfect place.
+[ 19.94s][user ] That sounds perfect. Thanks!
+[ 21.99s][moshi] Wonderful! It’s good to get things settled quickly. Planning can be so empowering.
+[ 27.14s][user ] I’m also looking at Riverbend Estates. Could you check availability there?
+[ 31.20s][moshi] ⟨ret@31.12s⟩ Riverbend Estates has ⟦⚡SPAN@33.12s: [{"date": "June twentieth", "time": "10:00 AM"}, {"date": "June twenty-second", "time": "1:00 PM"}]⟧ openings on June twentieth at 10:00 AM and… …June twenty-second at 1:00 PM. Would either of those work?
+      CALL: {"function": "Homes_2_CheckAvailability", "arguments": {"propertyName": "Riverbend Estates"}}
+[ 40.97s][user ] Let’s go with the twentieth.
+[ 42.70s][moshi] ⟨ret@42.54s⟩ Excellent. A viewing at ⟦⚡SPAN@44.54s: [{"appointmentId": "45612", "time": "10:00 AM"}]⟧ Riverbend Estates is confirmed for… …10:00 AM on June twentieth. I've noted both appointments for you.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "Riverbend Estates", "date": "June twentieth", "time": "10:00 AM"}}
+[ 48.24s][user ] «backchannel» Mm-hmm.
+[ 52.47s][user ] Great. And can you send me directions to The Grandview ⟨ret@55.46s⟩ Lofts?
+[ 55.62s][moshi] Directions to The ⟦⚡SPAN@57.46s: [{"distance": "8.2 miles", "estimatedTime": "15 minutes", "route": "Via I-95 North"}]⟧ Grandview Lofts are approximately… …8.2 miles, with an estimated travel time of fifteen minutes via I-95 North.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 66.11s][user ] That's helpful. Thank you so much!
+[ 68.80s][moshi] You're very welcome. Taking these steps is a big accomplishment, and it’s a pleasure to support you.
+[ 74.88s][user ] Actually, one last thing—what’s the weather forecast for June sixteenth?
+[ 79.07s][moshi] ⟨ret@78.84s⟩ For June sixteenth, ⟦⚡SPAN@80.84s: [{"date": "June sixteenth", "high": "78°F", "low": "65°F", "condition": "Sunny"}]⟧ the forecast is showing a high of… …78 degrees and a low of 65, with sunny conditions. Sounds like a lovely day for a viewing.
+      CALL: {"function": "Weather_2_GetForecast", "arguments": {"date": "June sixteenth"}}
+[ 84.13s][user ] «backchannel» Mm-hmm.
+[ 91.45s][user ] Perfect. That’s all I needed.
+[ 93.31s][moshi] Wonderful! It seems you’ve got everything well in hand. Enjoy your viewings.

@@ -62,10 +62,10 @@
 
 
      0.00s  user  발화 시작: 지금 nba에서 뛰는 선수 중에…
-     2.86s  user  발화 끝
-     3.97s  user  발화 시작: …가장 나이가 많은 선수가 누구예요?
-     6.36s  <ret> 발화 (turn2 첫 프레임)
-     6.52s  agent 발화 시작: <ret> 현재 nba에서 뛰는 선수 중에 가장 나이가 많은 선수는 빈스 카터 선수입니다.
-     6.70s  user  발화 끝
-     8.28s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.35s]: [source: ESPN] Vince Carter is currently the oldest player in the NBA 
-    10.87s  agent 발화 끝
+     2.63s  user  발화 끝
+     3.74s  user  발화 시작: …가장 나이가 많은 선수는 누구예요?
+     5.80s  <ret> 발화 (turn2 첫 프레임)
+     5.96s  agent 발화 시작: <ret> 현재 nba에서 가장 나이가 많은 선수는… 빈스 카터 선수입니다… 르브론 제임스 선수입니다.
+     6.10s  user  발화 끝
+     7.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: As of February 2024, LeBron James of the Los Angeles Lakers is the old
+    12.07s  agent 발화 끝

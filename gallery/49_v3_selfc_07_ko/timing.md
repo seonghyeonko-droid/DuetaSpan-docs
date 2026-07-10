@@ -76,51 +76,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘. | S2 음… 세시로 해줘. | S3 벨라 노테… 아, 그게 아니라, 좀 더 캐주얼한 곳으로… 피자 | S4 고마워. 덕분에 편하게 준비할 수 있겠어.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘. | S2 아니, 괜찮아. 그냥 좀 복잡해서… | S3 어? 잠깐만, 육월 십오일은 안 돼. 육월 십칠일로 바꿔줘. | S4 좋아. 고마워.
 
      0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘.
-     3.33s  user  발화 끝
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십오일 오후 두시에 예약 가능합니다. 괜찮으세요?
-     5.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) June 15th at 2:00 PM is available.
-     9.11s  agent 발화 끝
-     9.61s  user  발화 시작: 응, 맞아. 근데 혹시… 십육일은 어때?
-    11.85s  <ret> 발화 (turn3 첫 프레임)
-    12.17s  agent 발화 시작: <ret> 육월 십육일에는 오전 열시와 오후 세시에 예약이 가능합니다.
-    12.19s  user  발화 끝
-    13.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) June 16th at 10:00 AM and 3:00 PM are available.
-    14.78s  user  발화 시작: 어.
-    15.14s  user  발화 끝
-    16.29s  agent 발화 끝
-    16.68s  user  발화 시작: 음… 세시로 해줘.
-    17.87s  <ret> 발화 (turn6 첫 프레임)
-    18.02s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십육일 오후 세시로 예약 완료되었습니다. 확인 번호는 칠 팔 구 이 일번입니
-    18.10s  user  발화 끝
-    19.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Booking confirmed. Confirmation number is 78921.
-    23.77s  user  발화 시작: 어.
-    24.18s  user  발화 끝
-    26.68s  agent 발화 끝
-    27.07s  user  발화 시작: 혹시 그 근처에 맛있는 이탈리안 레스토랑 있으면 추천해 줄 수 있어?
-    31.14s  user  발화 끝
-    31.22s  <ret> 발화 (turn9 첫 프레임)
-    31.29s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 벨라 노테라는 이탈리안 레스토랑이 있습니다. 별점은 사 점 오점이고, 거리
-    33.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: (tool result) Bella Notte - Italian, 4.5 stars, 0.3 miles away.
-    39.96s  user  발화 시작: 벨라 노테… 아, 그게 아니라, 좀 더 캐주얼한 곳으로… 피자 같은 거 파는 데.
-    40.15s  agent 발화 끝
-    44.65s  <ret> 발화 (turn11 첫 프레임)
-    44.80s  agent 발화 시작: <ret> 벨라 노테 말고 토니 피자도 있습니다. 별점은 사 점 이점이고, 거리는 영 점 오마일입니다. 피자
-    44.96s  user  발화 끝
-    46.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Tony's Pizzeria - Pizza, 4.2 stars, 0.5 miles away.
-    53.98s  agent 발화 끝
-    54.30s  user  발화 시작: 토니 피자, 좋아 보여. 거기는 몇 시까지 해?
-    57.22s  <ret> 발화 (turn13 첫 프레임)
-    57.45s  agent 발화 시작: <ret> 토니 피자리아는 밤 열시까지 영업합니다.
-    57.53s  user  발화 끝
-    58.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.86s]: (tool result) Tony's Pizzeria is open until 10:00 PM.
-    58.56s  user  발화 시작: 음.
-    59.00s  user  발화 끝
-    60.09s  user  발화 시작: 고마워. 덕분에 편하게 준비할 수 있겠어.
-    60.31s  agent 발화 끝
-    62.67s  user  발화 끝
-    62.84s  agent 발화 시작: 도움이 되었다니 기쁩니다. 집 보러 가시기 전에 편안하게 휴식하세요.
-    67.42s  agent 발화 끝
+     3.51s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십오일 방문 예약을 확인 중입니다… 찾을 수 없습니다.
+     3.79s  user  발화 끝
+     5.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (no information found)
+     9.49s  agent 발화 끝
+     9.89s  user  발화 시작: 응, 확인되면 알려줘.
+    11.96s  user  발화 끝
+    12.02s  agent 발화 시작: 네, 확인되는 대로 말씀드릴게요. 오늘 하루는 어떠신가요?
+    15.88s  agent 발화 시작: 혹시 요즘 이사 준비로 스트레스 받으시는 건 없으신가요?
+    16.09s  agent 발화 끝
+    20.32s  agent 발화 끝
+    20.68s  user  발화 시작: 아니, 괜찮아. 그냥 좀 복잡해서…
+    24.39s  agent 발화 시작: 복잡하시군요. 새로운 시작은 언제나 그렇지만, 잘 헤쳐나가실 수 있을 거예요.
+    24.47s  user  발화 끝
+    27.39s  user  발화 시작: 어어.
+    28.02s  user  발화 끝
+    29.64s  <ret> 발화 (turn8 첫 프레임)
+    30.04s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십오일 오후 두시에 방문 예약을 확정했습니다.
+    30.26s  agent 발화 끝
+    31.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: {"confirmation_number": "HV729", "visit_date": "June 15th", "visit_tim
+    34.99s  agent 발화 시작: 예약 번호는 HV729이고, 방문 시간은 오후 두시입니다…
+    35.08s  agent 발화 끝
+    38.28s  user  발화 시작: 어.
+    38.72s  user  발화 끝
+    40.11s  user  발화 시작: 어? 잠깐만, 육월 십오일은 안 돼. 육월 십칠일로 바꿔줘.
+    40.12s  agent 발화 끝
+    43.79s  <ret> 발화 (turn12 첫 프레임)
+    43.85s  user  발화 끝
+    43.87s  agent 발화 시작: <ret> 육월 십칠일로 변경 중입니다… 변경이 완료되지 않았습니다.
+    44.99s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.26s]: (no information found)
+    47.87s  user  발화 시작: 됐어?
+    48.12s  agent 발화 끝
+    48.20s  <ret> 발화 (turn14 첫 프레임)
+    48.34s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 날짜를 육월 십칠일로 변경했습니다.
+    48.36s  user  발화 끝
+    49.72s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.09s]: {"confirmation_number": "HV729", "visit_date": "June 17th", "visit_tim
+    53.37s  agent 발화 시작: 예약 번호는 HV729이고, 방문 시간은 여전히 오후 두시입니다…
+    53.44s  agent 발화 끝
+    58.56s  agent 발화 끝
+    58.57s  user  발화 시작: 좋아. 고마워.
+    60.32s  agent 발화 시작: 천만에요. 새로운 집 보러 가시는 일이 즐겁기를 바랍니다.
+    60.32s  user  발화 끝
+    64.35s  agent 발화 끝

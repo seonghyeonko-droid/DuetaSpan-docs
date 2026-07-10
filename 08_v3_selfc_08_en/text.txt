@@ -56,62 +56,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.19s⟩ May tenth.
-[  4.57s][moshi] There’s a bus departing ⟦⚡SPAN@6.19s: (tool result) 14:35 departure, arrives 21:10, $245 per person.⟧ at two thirty-five PM, arriving at nine ten PM, at two hundred forty-five dollars per person.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May 10th", "passengers": 3}}
-[  7.31s][user ] «backchannel» Yeah.
-[ 11.49s][user ] That’s… actually, make that May ⟨ret@13.78s⟩ eleventh.
-[ 14.01s][moshi] on May eleventh, there’s ⟦⚡SPAN@15.78s: (tool result) 08:00 departure, arrives 16:45, $260 per person.⟧ an eight AM departure, arriving at four forty-five PM, costing two hundred sixty dollars per person.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May 11th", "passengers": 3}}
-[ 22.63s][user ] Hmm, are there any earlier options on the eleventh?
-[ 25.95s][moshi] ⟨ret@25.79s⟩ Yes, there’s a six AM departure ⟦⚡SPAN@27.79s: (tool result) 06:00 departure, arrives 14:00, $230 per person.⟧ arriving at two PM, and that one is two hundred thirty dollars per person.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May 11th", "passengers": 3}}
-[ 31.68s][user ] That sounds good. Book that one for me, ⟨ret@34.72s⟩ please.
-[ 35.10s][moshi] ⟦⚡SPAN@35.22s: (tool result) Confirmation: B749X2.⟧ I’ve booked that for you. Your confirmation number is B749X2.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"departure_time": "06:00", "origin": "Chicago", "destination": "Denver", "date": "May 11th", "passengers": 3}}
-[ 37.88s][user ] «backchannel» Really?
-[ 39.57s][user ] Great. Can you set a reminder for me to leave for the bus station at five AM on ⟨ret@45.20s⟩ May eleventh?
-[ 45.59s][moshi] I have set a reminder ⟦⚡SPAN@47.20s: (tool result) Reminder set for May 11th, 05:00.⟧ for May eleventh at five AM to leave for the bus station.
-      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"date": "May 11th", "time": "05:00", "message": "Leave for bus station"}}
-[ 50.43s][user ] Perfect. Now, what’s the weather looking like in Denver on that ⟨ret@54.32s⟩ day?
-[ 54.70s][moshi] The forecast ⟦⚡SPAN@55.52s: (tool result) High 68°F, low 45°F, partly cloudy.⟧ for Denver on May eleventh is a high of sixty-eight degrees, a low of forty-five, and partly cloudy skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Denver", "date": "May 11th"}}
-[ 61.45s][user ] Sounds pleasant enough. I’m thinking of grabbing dinner when I get there. Any recommendations?
-[ 67.57s][moshi] Denver has many excellent restaurants. What kind of cuisine are you in the mood for?
-[ 70.96s][user ] «backchannel» Mhm.
-[ 73.38s][user ] Hmm, Italian, I think. Something not too fancy.
-[ 78.05s][moshi] ⟨ret@77.90s⟩ Carmine’s on Penn is a ⟦⚡SPAN@79.90s: (tool result) Carmine’s on Penn, 4.2 stars, $20-30 per person.⟧ highly-rated Italian restaurant with a moderate price range, around twenty to thirty dollars per person.
-      CALL: {"function": "Restaurants_1_FindRestaurants", "arguments": {"city": "Denver", "cuisine": "Italian", "price_range": "moderate"}}
-[ 85.78s][user ] That sounds good. Is it within walking distance of the ⟨ret@89.64s⟩ bus station?
-[ 90.03s][moshi] It’s two point three miles ⟦⚡SPAN@91.64s: (tool result) 2.3 miles, approximately 45 minutes walking.⟧ from the bus station, which would take about forty-five minutes to walk.
-      CALL: {"function": "Navigation_1_GetDistance", "arguments": {"start": "Denver Bus Station", "end": "Carmine’s on Penn"}}
-[ 92.96s][user ] «backchannel» Right.
-[ 95.48s][user ] Okay, that’s a bit of a walk. Maybe I should check out the public ⟨ret@99.86s⟩ transport options.
-[100.25s][moshi] You can take bus ⟦⚡SPAN@101.86s: (tool result) Bus route 15, departs 16:50, arrives 17:15.⟧ route fifteen, departing at four fifty PM and arriving at five fifteen PM.
-      CALL: {"function": "Transit_1_FindRoute", "arguments": {"start": "Denver Bus Station", "end": "Carmine’s on Penn", "mode": "public transit"}}
-[103.00s][user ] «backchannel» Yeah.
-[105.92s][user ] That's much better. Now, I'm trying to remember… did I pack my.
-[110.44s][moshi] «interrupted» Sometimes, when preparing for a journey, we get caught up in—
-[113.23s][user ] «interrupts_prev» …did I pack my allergy medication? I always forget that!
-[117.81s][moshi] It’s quite common to worry about essential items during travel. Perhaps I can set another reminder?
-[119.94s][user ] «backchannel» Yeah, totally.
-[123.88s][user ] Yes, please. Remind me to take my allergy medication tomorrow morning.
-[129.43s][moshi] ⟨ret@129.36s⟩ I’ve added a reminder ⟦⚡SPAN@130.80s: (tool result) Reminder set for May 10th, 08:00.⟧ for tomorrow, May tenth, at eight AM to take your allergy medication.
-      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"date": "May 10th", "time": "08:00", "message": "Take allergy medication"}}
-[134.24s][user ] Wonderful. What about a good book to read on the bus?
-[137.38s][moshi] Reading is a lovely way to pass the time during travel. Do you have a particular genre in mind?
-[140.92s][user ] «backchannel» Yeah.
-[142.79s][user ] Something light and funny. A good comedy, maybe.
-[146.42s][moshi] ⟨ret@146.19s⟩ “Where’d You Go, Bernadette” by ⟦⚡SPAN@148.19s: (tool result) “Where’d You Go, Bernadette” by Maria Semple, 4.3 stars.⟧ Maria Semple is a highly-rated comedic novel.
-      CALL: {"function": "Books_1_SearchBooks", "arguments": {"genre": "comedy", "keywords": "lighthearted"}}
-[148.48s][user ] «backchannel» Yeah.
-[150.88s][user ] I’ve heard of that one. Is it available as an audiobook?
-[154.74s][moshi] ⟨ret@154.68s⟩ ⟦⚡SPAN@155.18s: (tool result) Available on Audible, $15.99.⟧ Yes, it is available on Audible for fifteen dollars and ninety-nine cents.
-      CALL: {"function": "Audiobooks_1_CheckAvailability", "arguments": {"title": "Where’d You Go, Bernadette"}}
-[159.49s][user ] Okay, I’ll download that. Thanks so much for all your help.
-[163.13s][moshi] You’re very welcome. It sounds like you’re well-prepared for your trip. I trust the journey will be a restorative one.
-[168.95s][user ] I hope so. One last thing—can you translate "Have a good day" into Korean?
-[174.74s][moshi] ⟨ret@174.51s⟩ “Have a good day” in ⟦⚡SPAN@176.51s: (tool result) 좋은 하루 보내세요 (Joheun haru bonaeseyo).⟧ Korean is 좋은 하루 보내세요 — Joheun haru bonaeseyo.
-      CALL: {"function": "Translation_1_Translate", "arguments": {"text": "Have a good day", "target_language": "Korean"}}
-[179.47s][user ] Perfect! Thank you again.
-[181.36s][moshi] You are most welcome. I hope your travels bring you joy and peace.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.60s⟩ tenth.
+[  4.99s][moshi] Let me find buses from ⟦⚡SPAN@6.60s: (no information found)⟧ Chicago to Denver for three passengers on… May tenth, I could not be found.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "3"}}
+[  7.27s][user ] «backchannel» Yeah.
+[ 10.80s][user ] Actually, make that May ⟨ret@12.77s⟩ eleventh.
+[ 13.00s][moshi] There is one bus, ⟦⚡SPAN@14.77s: [{"bus_number": "42", "departure_time": "8:00 AM", "arrival_time": "10:00 PM", "price": 150.00}]⟧ number 42, departing at 8:00 AM and arriving at 10:00 PM, costing…
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "3"}}
+[ 19.49s][user ] One-fifty sounds reasonable. Can you book it?
+[ 23.04s][moshi] ⟨ret@22.89s⟩ I have booked bus ⟦⚡SPAN@24.89s: [{"confirmation_number": "AX927", "status": "confirmed"}]⟧ number 42 for three passengers; your confirmation number is…
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_number": "42", "passengers": "3"}}
+[ 28.21s][user ] AX927. Got it. Do they have Wi-Fi on ⟨ret@32.99s⟩ board?
+[ 33.38s][moshi] ⟦⚡SPAN@33.49s: [{"amenities": ["Wi-Fi", "power outlets", "restroom"]}]⟧ Bus number 42 does offer Wi-Fi, as well as power outlets and a…
+      CALL: {"function": "Buses_3_GetBusAmenities", "arguments": {"bus_number": "42"}}
+[ 36.01s][user ] «backchannel» Really?
+[ 37.61s][user ] That’s good to know. What about legroom?
+[ 41.01s][moshi] Legroom can vary, but generally, longer routes offer more space. It’s a consideration…
+[ 46.62s][user ] Is there a way to see a seat map before booking?
+[ 49.90s][moshi] Unfortunately, seat maps aren't currently available for this particular bus line. However…
+[ 54.98s][user ] Oh, that’s too bad. What’s the refund policy, just in ⟨ret@58.57s⟩ case?
+[ 58.75s][moshi] You'll receive a full refund ⟦⚡SPAN@60.33s: [{"policy": "Full refund if canceled 24 hours before departure."}]⟧ if you cancel your booking at least 24 hours before…
+      CALL: {"function": "Buses_3_GetRefundPolicy", "arguments": {"confirmation_number": "AX927"}}
+[ 61.74s][user ] «backchannel» Okay.
+[ 63.90s][user ] Twenty-four hours. Okay. And where does that bus actually depart from in ⟨ret@70.17s⟩ Chicago?
+[ 70.58s][moshi] Bus ⟦⚡SPAN@71.38s: [{"location": "Union Station, 225 South Canal Street"}]⟧ number 42 departs from Union Station, located at 225 South Canal…
+      CALL: {"function": "Buses_3_GetDepartureLocation", "arguments": {"bus_number": "42"}}
+[ 73.14s][user ] «backchannel» Uh-huh.
+[ 75.89s][user ] Union Station. Right. Is there parking ⟨ret@79.63s⟩ there?
+[ 79.84s][moshi] Yes, parking ⟦⚡SPAN@80.91s: [{"parking_available": "Yes", "hourly_rate": "25.00"}]⟧ is available at Union Station, at a rate of twenty-five…
+      CALL: {"function": "Buses_3_CheckParking", "arguments": {"location": "Union Station"}}
+[ 81.94s][user ] «backchannel» Yeah.
+[ 85.11s][user ] Twenty-five dollars an hour? That’s steep!
+[ 87.96s][moshi] Parking in central areas often carries higher rates, I find. It is a common…
+[ 92.14s][user ] Is there any cheaper parking ⟨ret@94.36s⟩ nearby?
+[ 94.50s][moshi] LAZ Parking is ⟦⚡SPAN@96.36s: [{"parking_name": "LAZ Parking", "distance": "0.5 miles", "hourly_rate": "15.00"}]⟧ 0.5 miles away, offering parking at fifteen dollars…
+      CALL: {"function": "Buses_3_FindNearbyParking", "arguments": {"location": "Union Station, Chicago"}}
+[ 96.85s][user ] «backchannel» Yeah.
+[100.25s][user ] Fifteen is much better. Can you give me directions to ⟨ret@104.03s⟩ that parking?
+[104.34s][moshi] Head west on Canal Street, ⟦⚡SPAN@106.03s: [{"directions": "Head west on Canal Street, turn right onto Harrison Street, LAZ Parking will be on your left.⟧ then turn right onto Harrison Street; LAZ Parking will be…
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"origin": "Union Station, Chicago", "destination": "LAZ Parking"}}
+[109.14s][user ] Okay, that sounds straightforward.
+[111.74s][moshi] It’s good to have a clear plan, especially when traveling. Knowing the route can…
+[113.78s][user ] «backchannel» Yeah.
+[115.76s][user ] Actually, wait a second—
+[117.17s][user ] …what’s the weather like in Denver on the eleventh? I should probably pack ⟨ret@122.14s⟩ accordingly.
+[122.45s][moshi] The forecast for Denver on ⟦⚡SPAN@124.14s: [{"temperature": "65°F", "condition": "Sunny"}]⟧ May eleventh is sunny, with a temperature of sixty-five…
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May eleventh"}}
+[126.56s][user ] Sunny and sixty-five. Perfect!
+[129.13s][moshi] That sounds quite pleasant. A comfortable temperature is often helpful for…
+[133.94s][user ] I think I’m all set then. Thanks for your help.
+[137.23s][moshi] You’re very welcome. I’m glad I could assist you with your travel arrangements.

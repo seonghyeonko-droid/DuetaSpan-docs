@@ -60,33 +60,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know… | S2 Hmm, and where exactly in Rome? | S3 …was he involved in any other proj | S4 Oh, interesting! What kind of musi
+# EXAMINER(FDB-v2) 단계: S1 Do you know anything about Lux Aur | S2 …was he involved in… | S3 …any particular musical genres? | S4 What other projects did he contrib
 
-     0.00s  user  발화 시작: Do you know…
-     0.82s  user  발화 끝
-     2.93s  user  발화 시작: …when Lux Aurunque was born?
-     4.79s  <ret> 발화 (turn2 첫 프레임)
-     5.03s  agent 발화 시작: <ret> Lux Aurunque was born in Italy… on November 22, 1970. 
-     5.20s  user  발화 끝
-     6.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: [source: AllMusic] Lux Aurunque was born in Rome, Italy on November 22
-     8.03s  user  발화 시작: Mm-hmm.
-     8.52s  user  발화 끝
-    13.65s  agent 발화 끝
-    14.05s  user  발화 시작: Hmm, and where exactly in Rome?
-    16.05s  <ret> 발화 (turn5 첫 프레임)
-    16.09s  agent 발화 시작: <ret> He was born in Rome, specifically…
-    16.30s  user  발화 끝
-    17.41s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.45s]: [source: Discogs] Lux Aurunque was born in the Monteverde neighborhood
-    18.54s  agent 발화 끝
-    18.58s  user  발화 시작: …was he involved in any other projects besides Lux Aurunque?
-    22.16s  <ret> 발화 (turn7 첫 프레임)
-    22.24s  agent 발화 시작: <ret> …and was also a member of the duo Terminale, alongside
-    22.38s  user  발화 끝
-    23.44s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.44s]: [source: Resident Advisor] Lux Aurunque was a member of the electronic
-    30.68s  agent 발화 끝
-    32.11s  user  발화 시작: Oh, interesting! What kind of music did Terminale make?
-    35.55s  <ret> 발화 (turn9 첫 프레임)
-    35.63s  agent 발화 시작: <ret> Terminale produced minimal techno and experimental ele
-    35.86s  user  발화 끝
-    37.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: [source: Bandcamp] Terminale produced minimal techno and experimental 
-    44.39s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know anything about Lux Aurunque?
+     2.20s  <ret> 발화 (turn1 첫 프레임)
+     2.44s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy—
+     2.49s  user  발화 끝
+     4.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: Lux Aurunque was born in 1970.
+     5.76s  user  발화 시작: …was he involved in…
+     5.81s  agent 발화 끝
+     7.05s  user  발화 끝
+     8.23s  user  발화 시작: …any particular musical genres?
+    10.10s  <ret> 발화 (turn4 첫 프레임)
+    10.18s  agent 발화 시작: <ret> …and also explored ambient and experimental electronic
+    10.30s  user  발화 끝
+    12.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: Lux Aurunque was a key figure in the neoclassical darkwave scene.
+    14.53s  agent 발화 끝
+    14.84s  user  발화 시작: What other projects did he contribute to?
+    16.94s  <ret> 발화 (turn6 첫 프레임)
+    17.01s  agent 발화 시작: <ret> He collaborated with a number of artists, notably Rais
+    17.19s  user  발화 끝
+    18.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.27s]: Lux Aurunque collaborated with several artists, including Raison d'êtr
+    19.70s  user  발화 시작: Yeah.
+    20.15s  user  발화 끝
+    22.20s  agent 발화 시작: …contributed to projects like Les Joyaux de la Princesse, sh
+    22.28s  agent 발화 끝
+    28.93s  agent 발화 끝

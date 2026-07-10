@@ -63,20 +63,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, uh, actually… | S3 …could you just show me the ones f | S4 Perfect, thanks.
 
-     0.00s  user  발화 시작: Find pictures related to my holiday in France last year…
-     3.23s  user  발화 끝
-     4.66s  user  발화 시작: …but not thumbnails.
-     5.85s  <ret> 발화 (turn2 첫 프레임)
-     5.93s  agent 발화 시작: <ret> I found three pictures from your France trip last year
-     6.08s  user  발화 끝
-     7.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) /Users/sunan/Pictures/France2023/beach.jpg, /Users/sunan
-     9.73s  user  발화 시작: Mhm.
-    10.23s  user  발화 끝
-    12.14s  agent 발화 끝
-    13.06s  user  발화 시작: Oh, fantastic! Could you open the Eiffel Tower one for me?
-    16.57s  <ret> 발화 (turn5 첫 프레임)
-    16.73s  agent 발화 시작: <ret> I’ve opened the Eiffel Tower picture for you now. It l
-    16.90s  user  발화 끝
-    17.61s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.09s]: (tool result) opened /Users/sunan/Pictures/France2023/eiffel.jpg
-    21.82s  agent 발화 끝
+     0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
+     4.62s  <ret> 발화 (turn1 첫 프레임)
+     4.70s  agent 발화 시작: <ret> I’m searching for pictures from your France trip last 
+     4.72s  user  발화 끝
+     6.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (no information found)
+     9.46s  user  발화 시작: Mhm.
+     9.87s  user  발화 끝
+    12.27s  user  발화 시작: Oh, uh, actually…
+    12.44s  agent 발화 끝
+    13.83s  user  발화 끝
+    15.87s  user  발화 시작: …could you just show me the ones from Paris?
+    17.68s  <ret> 발화 (turn5 첫 프레임)
+    17.99s  agent 발화 시작: <ret> Focusing on Paris from your France trip last year, sti
+    18.13s  user  발화 끝
+    18.72s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.86s]: [{"filename": "Paris_Eiffel_Tower.jpg"}, {"filename": "Paris_Louvre.jp
+    22.73s  agent 발화 시작: I found three pictures: Paris_Eiffel_Tower.jpg, Paris_Louvre
+    22.85s  agent 발화 끝
+    28.22s  user  발화 시작: Yeah.
+    28.71s  user  발화 끝
+    31.40s  agent 발화 끝
+    32.55s  user  발화 시작: Perfect, thanks.
+    33.49s  agent 발화 시작: You’re very welcome. It’s wonderful to revisit happy memorie
+    33.56s  user  발화 끝
+    37.65s  agent 발화 끝

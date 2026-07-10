@@ -68,37 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 …San Diego during that time? | S3 Are there any good seafood restaur | S4 Please do, for 7 PM on the tenth.
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 interrupting… Is parking included  | S3 Okay, and could you add a request  | S4 Great. What’s the cancellation pol
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.33s  <ret> 발화 (turn1 첫 프레임)
-     5.42s  user  발화 끝
-     5.57s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
-     7.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.33s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. Thre
-    13.85s  user  발화 시작: Right.
-    14.34s  user  발화 끝
-    19.90s  agent 발화 끝
-    19.95s  user  발화 시작: What's the weather forecast for…
-    21.69s  user  발화 끝
-    23.28s  user  발화 시작: …San Diego during that time?
-    24.76s  <ret> 발화 (turn5 첫 프레임)
-    24.92s  agent 발화 시작: <ret> The forecast for San Diego from February tenth to seve
-    25.03s  user  발화 끝
-    26.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.78s]: (tool result) San Diego, February 10th-17th: Sunny, highs 68-72°F, low
-    38.70s  agent 발화 끝
-    39.09s  user  발화 시작: Are there any good seafood restaurants near the hotel?
-    41.86s  <ret> 발화 (turn7 첫 프레임)
-    42.05s  user  발화 끝
-    42.10s  agent 발화 시작: <ret> Mitch’s Seafood is just point three miles from the Oce
-    43.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: (tool result) Mitch's Seafood is 0.3 miles from Ocean View Hotel. Rati
-    51.09s  user  발화 시작: …Do they take reservations?
-    51.84s  agent 발화 끝
-    52.34s  <ret> 발화 (turn9 첫 프레임)
-    52.65s  agent 발화 시작: <ret> Give me a moment to check if Mitch’s Seafood accepts r
-    52.83s  user  발화 끝
-    54.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Mitch's Seafood: Reservations accepted. Availability at 
-    56.85s  agent 발화 시작: Yes, Mitch’s Seafood does accept reservations, and they have
-    56.96s  agent 발화 끝
-    68.08s  agent 발화 끝
-    68.59s  user  발화 시작: Please do, for 7 PM on the tenth.
-    71.13s  user  발화 끝
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.19s  user  발화 끝
+     5.27s  agent 발화 시작: <ret> I have reserved three rooms for you at the Ocean View 
+     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: [{"confirmation_number": "A7B29X", "hotel_name": "Ocean View Hotel", "
+     8.93s  user  발화 시작: interrupting… Is parking included with the reservation?
+     9.10s  agent 발화 끝
+    11.97s  agent 발화 시작: Parking is available at the hotel for twenty-five dollars pe
+    12.03s  user  발화 끝
+    16.22s  agent 발화 끝
+    16.66s  user  발화 시작: Okay, and could you add a request for a room with an ocean v
+    20.37s  <ret> 발화 (turn5 첫 프레임)
+    20.64s  user  발화 끝
+    20.69s  agent 발화 시작: <ret> I’ve added a request for an ocean view room to your re
+    22.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: [{"confirmation_number": "A7B29X", "request_status": "pending"}]
+    22.96s  user  발화 시작: Yeah.
+    23.64s  user  발화 끝
+    24.85s  agent 발화 시작: …it is currently pending, but the hotel will do its best to 
+    24.86s  agent 발화 끝
+    29.89s  user  발화 시작: Great. What’s the cancellation policy?
+    29.99s  agent 발화 끝
+    31.88s  <ret> 발화 (turn9 첫 프레임)
+    32.20s  agent 발화 시작: <ret> You may cancel for a full refund up to seventy-two hou
+    32.38s  user  발화 끝
+    33.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.59s]: [{"confirmation_number": "A7B29X", "cancellation_policy": "Full refund
+    37.80s  agent 발화 끝

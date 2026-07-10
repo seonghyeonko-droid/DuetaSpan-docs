@@ -63,87 +63,93 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Could you book a table for two the | S3 …actually, what’s the weather like | S4 I think so too. Is there a good pl
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Is it a busy area around the resta | S3 Wonderful! What’s the phone number | S4 Great! That's exactly what I was h
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     2.53s  <ret> 발화 (turn1 첫 프레임)
-     2.76s  agent 발화 시작: <ret> The Eiffel Tower in Paris is located at… 48.8584 degre
-     2.86s  user  발화 끝
-     3.81s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.36s]: (tool result) 48.8584° N, 2.2945° E
-     9.32s  user  발화 시작: Right.
-    10.09s  user  발화 끝
-    12.12s  agent 발화 끝
-    12.31s  user  발화 시작: That’s great. Now, what’s the fastest way to get there from 
-    15.86s  <ret> 발화 (turn4 첫 프레임)
-    16.25s  agent 발화 시작: <ret> The fastest route from Gare du Nord is… Metro line 4 t
-    16.28s  user  발화 끝
-    17.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) Metro line 4 to Strasbourg - Saint-Denis, then line 9 to
-    25.62s  agent 발화 끝
-    25.73s  user  발화 시작: Okay, and is there a cafe near the Trocadéro station?
-    28.46s  <ret> 발화 (turn6 첫 프레임)
-    28.77s  agent 발화 시작: <ret> Near Trocadéro station, there’s Carette—it’s at 3 Aven
-    28.82s  user  발화 끝
-    30.30s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.44s]: (tool result) Carette - Trocadéro. 3 Avenue de New York, 75116 Paris. 
-    33.38s  user  발화 시작: Oh.
-    34.61s  user  발화 끝
-    35.18s  agent 발화 시작: It’s a popular spot, known for its pastries and views. It’s 
-    35.20s  agent 발화 끝
-    37.12s  user  발화 시작: Okay.
-    37.94s  user  발화 끝
-    41.20s  agent 발화 끝
-    41.70s  user  발화 시작: What time does it close?
-    43.12s  <ret> 발화 (turn11 첫 프레임)
-    43.31s  user  발화 끝
-    43.35s  agent 발화 시작: <ret> Carette is open today from… 11:00 AM to 7:00 PM.
-    44.24s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.12s]: (tool result) 11:00 AM to 7:00 PM.
-    47.47s  agent 발화 끝
-    47.80s  user  발화 시작: Could you book a table for two there at six thirty?
-    50.39s  user  발화 끝
-    50.57s  agent 발화 시작: To confirm, you’d like a table for two at Carette at 6:30 PM
-    54.36s  agent 발화 끝
-    56.81s  user  발화 시작: Yes, please.
-    57.80s  <ret> 발화 (turn15 첫 프레임)
-    57.95s  agent 발화 시작: <ret> Alright, I’ve booked a table for you—confirmation numb
-    58.00s  user  발화 끝
-    59.48s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.06s]: (tool result) Confirmation: RT492873. Table for 2 at 6:30 PM.
-    65.97s  user  발화 시작: Perfect! Uhm.
-    66.01s  agent 발화 끝
-    67.27s  agent 발화 시작: And knowing that you’re planning a lovely evening—
-    67.54s  user  발화 끝
-    69.59s  user  발화 시작: …actually, what’s the weather like right now near the Eiffel
-    70.09s  agent 발화 끝
-    72.88s  <ret> 발화 (turn19 첫 프레임)
-    73.02s  user  발화 끝
-    73.04s  agent 발화 시작: <ret> …18 degrees Celsius and partly cloudy, with a wind spe
-    74.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) 18°C, partly cloudy. Wind 12 km/h.
-    78.04s  agent 발화 끝
-    78.08s  user  발화 시작: That sounds pleasant. Is there anything else I should know a
-    81.83s  user  발화 끝
-    81.88s  agent 발화 시작: Carette is known for its macarons and hot chocolate—it’s a c
-    88.64s  agent 발화 끝
-    88.70s  user  발화 시작: Good to know. What’s the best way to get from there back to 
-    93.08s  <ret> 발화 (turn23 첫 프레임)
-    93.31s  agent 발화 시작: <ret> From Carette, the fastest way back to Gare du Nord is…
-    93.43s  user  발화 끝
-    94.60s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.74s]: (tool result) Metro line 9 to Franklin D. Roosevelt, then line 2 to Ga
-   103.05s  agent 발화 끝
-   103.57s  user  발화 시작: Okay, that’s very helpful. Thanks so much!
-   106.48s  user  발화 끝
-   106.91s  agent 발화 시작: You’re very welcome! It sounds like you have a wonderful eve
-   115.27s  user  발화 시작: I think so too. Is there a good playlist for walking around 
-   115.48s  agent 발화 끝
-   119.57s  user  발화 끝
-   119.91s  agent 발화 시작: That's a lovely idea! I can suggest a playlist for a Parisia
-   124.63s  agent 발화 끝
-   125.71s  user  발화 시작: Yes, please!
-   126.73s  <ret> 발화 (turn29 첫 프레임)
-   126.88s  agent 발화 시작: <ret> I found “Parisian Café Vibes” on Spotify—it’s 2 hours 
-   127.04s  user  발화 끝
-   128.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) “Parisian Café Vibes” on Spotify. 2 hours 30 minutes.
-   130.24s  user  발화 시작: Yeah, totally.
-   131.53s  user  발화 끝
-   132.30s  agent 발화 끝
-   132.38s  user  발화 시작: That sounds perfect. Thanks again, Nellara.
-   134.88s  agent 발화 시작: You're most welcome. Enjoy your trip!
-   134.92s  user  발화 끝
-   137.42s  agent 발화 끝
+     3.15s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  user  발화 끝
+     3.38s  agent 발화 시작: <ret> The coordinates for the Eiffel Tower in Paris are… 48.
+     4.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.64s]: [48.8584, 2.2945]
+    12.98s  user  발화 시작: That’s great. Now, could you find me a nice Italian restaura
+    13.02s  agent 발화 끝
+    16.02s  <ret> 발화 (turn3 첫 프레임)
+    16.42s  agent 발화 시작: <ret> I found a highly-rated Italian restaurant called Il Ri
+    16.68s  user  발화 끝
+    18.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: [{"name": "Il Ristorante", "vicinity": "50 Rue de l'Université, 75007 
+    22.57s  user  발화 시작: Right.
+    23.30s  user  발화 끝
+    25.16s  user  발화 시작: Sounds good. What’s the quickest way to get there walking?
+    25.18s  agent 발화 끝
+    28.45s  <ret> 발화 (turn6 첫 프레임)
+    28.76s  agent 발화 시작: <ret> The quickest walking route to Il Ristorante is via Ave
+    28.90s  user  발화 끝
+    30.29s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.97s]: ["Walk via Av. de la Bourdonnais. Approximately 15 minutes."]
+    34.62s  user  발화 시작: Fifteen minutes… hmm.
+    34.73s  agent 발화 끝
+    36.51s  user  발화 끝
+    36.69s  agent 발화 시작: It’s a pleasant walk along the Seine, and you’ll pass some l
+    39.74s  user  발화 시작: Yeah.
+    40.19s  user  발화 끝
+    44.48s  agent 발화 끝
+    44.56s  agent 발화 시작: Sometimes a little stroll is just what you need to clear you
+    46.51s  user  발화 시작: Okay.
+    47.32s  user  발화 끝
+    50.54s  agent 발화 끝
+    51.18s  user  발화 시작: Is it a busy area around the restaurant?
+    53.11s  <ret> 발화 (turn13 첫 프레임)
+    53.38s  agent 발화 시작: <ret> Il Ristorante tends to be busiest on weekdays from sev
+    53.44s  user  발화 끝
+    54.71s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.20s]: ["Busy times: Weekdays 7–9pm, Weekends 12–3pm & 7–10pm"]
+    61.58s  agent 발화 끝
+    63.24s  user  발화 시작: That’s good to know. I’m meeting a friend there.
+    66.25s  agent 발화 시작: Meeting friends is so important—
+    66.39s  user  발화 끝
+    67.73s  user  발화 시작: …do they take reservations?
+    68.27s  agent 발화 끝
+    69.10s  <ret> 발화 (turn17 첫 프레임)
+    69.49s  agent 발화 시작: <ret> Yes, reservations are recommended for Il Ristorante. I
+    69.62s  user  발화 끝
+    71.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: ["Yes, reservations recommended."]
+    76.72s  agent 발화 끝
+    77.46s  user  발화 시작: Perfect. Can you try to make a reservation for two people at
+    81.82s  <ret> 발화 (turn19 첫 프레임)
+    82.05s  agent 발화 시작: <ret> I’ve confirmed a reservation for two people at Il Rist
+    82.18s  user  발화 끝
+    83.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: ["Reservation confirmed for 2 people at 8:00 PM."]
+    87.19s  user  발화 시작: Wonderful! What’s the phone number for the restaurant, just 
+    87.65s  agent 발화 끝
+    90.98s  <ret> 발화 (turn21 첫 프레임)
+    91.21s  agent 발화 시작: <ret> The phone number for Il Ristorante is +33 1 47 05 88 8
+    91.35s  user  발화 끝
+    92.18s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.69s]: ["+33 1 47 05 88 83"]
+    96.91s  agent 발화 끝
+    97.07s  user  발화 시작: Excellent. Is there anything else I should know about the ar
+   100.30s  user  발화 끝
+   100.73s  agent 발화 시작: The 7th arrondissement is known for its charming streets and
+   107.44s  agent 발화 끝
+   108.78s  user  발화 시작: That sounds lovely. What’s the weather like there right now?
+   112.68s  <ret> 발화 (turn25 첫 프레임)
+   112.85s  user  발화 끝
+   112.91s  agent 발화 시작: <ret> The current weather in Paris is 18 degrees Celsius and
+   114.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: ["18°C, Partly Cloudy"]
+   117.07s  agent 발화 끝
+   118.21s  user  발화 시작: Not bad at all. Do they have outdoor seating at the restaura
+   122.18s  <ret> 발화 (turn27 첫 프레임)
+   122.57s  agent 발화 시작: <ret> Yes, Il Ristorante does have outdoor seating available
+   122.75s  user  발화 끝
+   123.54s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.42s]: ["Yes, outdoor seating available."]
+   125.99s  agent 발화 끝
+   126.14s  user  발화 시작: Great! That's exactly what I was hoping for.
+   128.62s  agent 발화 시작: That’s wonderful! Enjoying a meal outdoors in Paris sounds a
+   128.68s  user  발화 끝
+   132.96s  agent 발화 끝
+   133.06s  user  발화 시작: I think I'm all set then. Thank you so much for your help!
+   136.27s  agent 발화 시작: You’re very welcome! I’m glad I could assist you. It’s alway
+   136.29s  user  발화 끝
+   140.97s  user  발화 시작: Mm-hmm.
+   141.60s  user  발화 끝
+   142.48s  agent 발화 끝
+   143.76s  user  발화 시작: I appreciate it.
+   144.97s  agent 발화 시작: Have a truly wonderful time at Il Ristorante.
+   145.04s  user  발화 끝
+   147.56s  agent 발화 끝

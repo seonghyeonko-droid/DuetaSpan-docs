@@ -59,14 +59,19 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, hey… I was wondering about flags.
-[  3.46s][moshi] It’s good to be curious! Flags can be really fascinating, and tell us so much about a country’s history. What about flags were you hoping to explore today?
-[ 13.51s][user ] Well, I was thinking about one… it's black, red, and yellow. Does that ring a bell?
-[ 19.32s][moshi] ⟨ret@19.08s⟩ The flag you're ⟦⚡SPAN@21.08s: "[source: Britannica] The national flag of Germany consists of three equal horizontal bands of black, red, and⟧ describing—with those colors—is… the flag of Germany.
-[ 21.37s][user ] «backchannel» Right.
-[ 23.88s][user ] Oh, right! Germany. I knew it felt familiar. Hmmmm… so, what about ⟨ret@30.36s⟩ Belgium?
-[ 30.51s][moshi] Belgium’s flag ⟦⚡SPAN@31.72s: "[source: Encyclopedia Britannica] The flag of Belgium is a tricolor of three vertical bands of black, yellow,⟧ has a different arrangement—it’s black, yellow, and red, in vertical bands.
-[ 36.13s][user ] Okay, that makes sense. My grandma used to collect flags, actually. It’s a bit of a random thing to get into, I guess.
-[ 43.83s][moshi] That’s lovely! It’s wonderful to have hobbies that connect us to family and history. Is there another flag you'd like to talk about?
-[ 51.13s][user ] Yeah, actually. What about a flag that has a maple leaf on ⟨ret@55.49s⟩ it?
-[ 55.73s][moshi] The flag with a maple ⟦⚡SPAN@57.49s: "[source: The Canadian Encyclopedia] The Canadian flag features a red maple leaf on a white square, flanked by⟧ leaf is… the flag of Canada, with a red leaf on a white field.
+[  0.00s][user ] I was just looking at flags, and I’m trying to remember one… it had black, red, and yellow on ⟨ret@6.43s⟩ it?
+[  6.66s][moshi] That’s a striking combination ⟦⚡SPAN@8.43s: The flag of Germany features black, red, and yellow horizontal bands.⟧ of colors… which flag are you thinking of specifically?… Germany, it would seem.
+[ 13.12s][user ] Uh, I think it’s a European one? I’m terrible with geography, honestly.
+[ 18.03s][moshi] It’s perfectly alright to struggle with geography, many people do! Perhaps knowing the country will help?
+[ 20.81s][user ] «backchannel» Right.
+[ 24.11s][user ] I think it starts with a G… Germany, maybe? Is that ⟨ret@28.07s⟩ right?
+[ 28.38s][moshi] Germany’s ⟦⚡SPAN@29.19s: Germany’s flag consists of three horizontal bands of black, red, and gold.⟧ flag does indeed feature those colors… The flag of Germany is black, red, and gold—that is, yellow—arranged in horizontal bands… Does that sound like the one you had in mind?… black, red, and gold
+[ 42.31s][user ] Yes! That’s it! I always get the colors mixed up.
+[ 46.34s][moshi] It's easy to do, especially with similar shades. I'm glad we found it.
+[ 51.06s][user ] Oh, actually, speaking of colors, do you have a favorite?
+[ 55.00s][moshi] I find blues and greens very calming, personally.
+[ 57.96s][user ] Back to flags though… what’s the oldest national flag still in use?
+[ 62.41s][moshi] ⟨ret@62.33s⟩ The oldest continuously used ⟦⚡SPAN@64.33s: The Danish flag, the Dannebrog, is considered the oldest continuously used national flag in the world.⟧ national flag is the Dannebrog of Denmark, with origins dating back to… the thirteenth century.
+[ 66.11s][user ] «backchannel» Uh-huh.
+[ 71.66s][user ] Wow, that's really interesting! Thanks, Kiora.
+[ 75.11s][moshi] You’re very welcome! It's my pleasure to help you explore these topics.

@@ -63,22 +63,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, is that really working? I don | S3 But SuperCrawler is a bit aggressi | S4 Okay, could you change it back to 
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     4.03s  user  발화 끝
-     4.03s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version ten po
-     4.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.88s]: (tool result) User agent set to SuperCrawler version 10.1.
-     6.67s  user  발화 시작: Mhm.
-     7.17s  user  발화 끝
-     9.91s  agent 발화 끝
-    10.70s  user  발화 시작: Hmm, that seems… aggressive. Can you change it back to the d
-    15.00s  <ret> 발화 (turn4 첫 프레임)
-    15.23s  user  발화 끝
-    15.24s  agent 발화 시작: <ret> I’ve reset the user agent back to the default setting 
-    16.77s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.37s]: (tool result) User agent reset to default.
-    22.61s  agent 발화 끝
-    22.84s  user  발화 시작: That’s better, thank you. I was just testing, actually.
-    26.18s  agent 발화 시작: I understand. It’s good to explore different settings, even 
-    26.30s  user  발화 끝
-    32.43s  agent 발화 끝
+     4.15s  <ret> 발화 (turn1 첫 프레임)
+     4.47s  agent 발화 시작: <ret> I’m setting your user agent to SuperCrawler version te
+     4.54s  user  발화 끝
+     6.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (no information found)
+     7.50s  user  발화 시작: Mhm.
+     8.00s  user  발화 끝
+    11.19s  agent 발화 끝
+    11.88s  user  발화 시작: Hmm, is that really working? I don't feel like it changed.
+    15.69s  <ret> 발화 (turn4 첫 프레임)
+    15.72s  user  발화 끝
+    15.77s  agent 발화 시작: <ret> Let me quickly check the current user agent… it could 
+    17.05s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.49s]: (no information found)
+    20.26s  agent 발화 끝
+    20.66s  user  발화 시작: But SuperCrawler is a bit aggressive, isn’t it?
+    23.06s  user  발화 끝
+    23.06s  agent 발화 시작: It can be, depending on the website. Sometimes a more subtle
+    28.53s  agent 발화 끝
+    29.39s  user  발화 시작: Okay, could you change it back to the default then?
+    32.07s  <ret> 발화 (turn8 첫 프레임)
+    32.11s  user  발화 끝
+    32.15s  agent 발화 시작: <ret> I’ve reset the user agent to the default setting now… 
+    33.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.46s]: (no information found)
+    37.61s  agent 발화 끝

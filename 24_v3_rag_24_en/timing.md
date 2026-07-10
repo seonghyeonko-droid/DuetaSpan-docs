@@ -76,22 +76,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I was wondering about the name du  | S2 Oh, interesting. Is it an old name | S3 And is it connected to Afrikaans a | S4 That makes a lot of sense, thank y
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis… it sounds French,
-     4.06s  <ret> 발화 (turn1 첫 프레임)
-     4.14s  agent 발화 시작: <ret> The name du Plessis does have French origins, meaning 
-     4.21s  user  발화 끝
-     5.26s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.23s]: [source: etymonline.com] “Du Plessis is a French surname literally mea
-     9.45s  user  발화 시작: Mhm.
-    10.08s  user  발화 끝
-    11.31s  user  발화 시작: Oh, interesting! So it’s about a church then… is it a common
-    11.37s  agent 발화 끝
-    17.18s  <ret> 발화 (turn4 첫 프레임)
-    17.43s  user  발화 끝
-    17.57s  agent 발화 시작: <ret> It appears du Plessis is fairly common in South Africa
-    19.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: [source: forebears.io] “Du Plessis is the 257th most common surname in
-    27.73s  agent 발화 끝
-    27.99s  user  발화 시작: That’s… a lot of people. Well, uh, my partner’s family is fr
-    33.87s  user  발화 끝
-    33.95s  agent 발화 시작: Family history can certainly explain a surname’s distributio
-    41.41s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering about the name du Plessis. It seems quite co
+     4.30s  <ret> 발화 (turn1 첫 프레임)
+     4.34s  user  발화 끝
+     4.37s  agent 발화 시작: <ret> The name du Plessis originates from France, meaning “o
+     5.50s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.74s]: Du Plessis is a French surname, originally denoting someone from Pless
+    10.10s  user  발화 시작: Mhm.
+    10.74s  user  발화 끝
+    12.10s  user  발화 시작: Oh, interesting. Is it an old name, then?
+    12.10s  agent 발화 끝
+    14.65s  <ret> 발화 (turn4 첫 프레임)
+    15.04s  agent 발화 시작: <ret> The earliest records of the name du Plessis date back 
+    15.15s  user  발화 끝
+    16.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: The name du Plessis originates from France, meaning “of the chapel” or
+    21.85s  agent 발화 끝
+    22.18s  user  발화 시작: And is it connected to Afrikaans at all? I heard something a
+    26.28s  <ret> 발화 (turn6 첫 프레임)
+    26.66s  agent 발화 시작: <ret> The du Plessis family were French Huguenots who settle
+    26.80s  user  발화 끝
+    28.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: The name du Plessis originates from France, meaning “of the chapel” or
+    35.35s  user  발화 시작: That makes a lot of sense, thank you.
+    35.57s  agent 발화 끝
+    37.88s  user  발화 끝

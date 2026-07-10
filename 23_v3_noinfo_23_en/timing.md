@@ -68,119 +68,113 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Remind me to pack my suitcase tomo | S3 Can you translate “thank you” into | S4 Is there a pharmacy near my hotel?
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 It's Anya Sharma. | S3 That sounds nice. What about somet | S4 Is there a highly-rated ramen rest
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.32s  <ret> 발화 (turn1 첫 프레임)
-     3.72s  agent 발화 시작: <ret> On December twenty-fourth last year in Tokyo, it was s
-     3.84s  user  발화 끝
-     5.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) Temperature: 7 degrees Celsius, Condition: Cloudy, Wind:
-    13.69s  agent 발화 끝
-    14.48s  user  발화 시작: Could you find me a Japanese learning app?
-    15.96s  <ret> 발화 (turn3 첫 프레임)
-    16.35s  agent 발화 시작: <ret> Several apps can help with Japanese—Duolingo has a fou
-    16.56s  user  발화 끝
-    17.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) Duolingo - 4.7 stars, Memrise - 4.5 stars, Rosetta Stone
-    20.30s  user  발화 시작: Yeah.
-    21.02s  user  발화 끝
-    24.57s  user  발화 시작: Book me a flight to Osaka next Tuesday.
-    24.65s  agent 발화 끝
-    27.01s  user  발화 끝
-    27.13s  agent 발화 시작: To confirm, you'd like a flight to Osaka next Tuesday? Do yo
-    31.10s  user  발화 시작: Yeah, yeah.
-    32.24s  user  발화 끝
-    32.96s  agent 발화 끝
-    33.25s  user  발화 시작: From London, please.
-    34.34s  <ret> 발화 (turn9 첫 프레임)
-    34.41s  agent 발화 시작: <ret> I’ve booked your flight from London to Osaka for July 
-    34.53s  user  발화 끝
-    36.10s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.91s]: (tool result) Flight booked: London to Osaka, July 2nd, £850, confirma
-    43.31s  agent 발화 끝
-    43.60s  user  발화 시작: uhhh, can you set a reminder for me?
-    45.77s  user  발화 끝
-    45.91s  agent 발화 시작: What would you like to be reminded about, and when?
-    49.10s  agent 발화 끝
-    49.49s  user  발화 시작: Remind me to pack my suitcase tomorrow morning at eight am.
-    52.99s  <ret> 발화 (turn13 첫 프레임)
-    53.14s  agent 발화 시작: <ret> I’ve set a reminder to pack your suitcase for tomorrow
-    53.15s  user  발화 끝
-    54.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Reminder set: Pack suitcase, July 1st at 8:00 AM.
-    61.16s  agent 발화 끝
-    61.45s  user  발화 시작: What time is it in Osaka right now?
-    63.13s  <ret> 발화 (turn15 첫 프레임)
-    63.53s  agent 발화 시작: <ret> It’s currently four thirty-two pm in Osaka. Hopefully,
-    63.56s  user  발화 끝
-    64.89s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.25s]: (tool result) Current time in Osaka: 4:32 PM.
-    69.30s  user  발화 시작: Find me a good ramen restaurant nearby.
-    69.78s  agent 발화 끝
-    71.79s  <ret> 발화 (turn17 첫 프레임)
-    71.92s  user  발화 끝
-    71.95s  agent 발화 시작: <ret> There are a few ramen restaurants close by. Ichiran Ra
-    73.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Ichiran Ramen - 4.6 stars, Kinryu Ramen - 4.4 stars, Ram
-    81.43s  user  발화 시작: What's the exchange rate between pounds and yen?
-    81.45s  agent 발화 끝
-    84.08s  <ret> 발화 (turn19 첫 프레임)
-    84.21s  user  발화 끝
-    84.24s  agent 발화 시작: <ret> Currently, one pound sterling equals one hundred and n
-    86.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) 1 GBP = 192.35 JPY.
-    87.97s  user  발화 시작: Yeah, totally.
-    89.08s  user  발화 끝
-    89.56s  agent 발화 끝
-    89.56s  user  발화 시작: Can you translate “thank you” into Japanese?
-    92.43s  user  발화 끝
-    92.81s  agent 발화 시작: "Thank you" in Japanese is "arigato". It’s a lovely phrase t
-    97.22s  user  발화 시작: Play some relaxing music.
-    97.30s  agent 발화 끝
-    98.46s  <ret> 발화 (turn24 첫 프레임)
-    98.70s  agent 발화 시작: <ret> I’m now playing ambient sounds for you. Music can be a
-    98.83s  user  발화 끝
-   100.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Now playing: Ambient Sounds.
-   100.58s  user  발화 시작: Uh-huh.
-   101.17s  user  발화 끝
-   104.81s  agent 발화 끝
-   104.83s  user  발화 시작: What's the weather forecast for Osaka on Tuesday?
-   107.58s  <ret> 발화 (turn27 첫 프레임)
-   107.74s  agent 발화 시작: <ret> The forecast for Osaka on Tuesday is twenty-eight degr
-   107.88s  user  발화 끝
-   109.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.82s]: (tool result) Temperature: 28 degrees Celsius, Condition: Sunny, Wind:
-   110.88s  user  발화 시작: Yeah.
-   111.47s  user  발화 끝
-   114.49s  user  발화 시작: Find me a good hotel in Osaka, near the train station.
-   114.56s  agent 발화 끝
-   117.73s  <ret> 발화 (turn30 첫 프레임)
-   118.12s  agent 발화 시작: <ret> Hotel Granvia Osaka has four-point-five stars, Swissôt
-   118.15s  user  발화 끝
-   119.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) Hotel Granvia Osaka - 4.5 stars, Swissôtel Nankai Osaka 
-   124.28s  user  발화 시작: Mm-hmm.
-   124.91s  user  발화 끝
-   128.99s  user  발화 시작: What's the population of Osaka?
-   129.01s  agent 발화 끝
-   131.05s  <ret> 발화 (turn33 첫 프레임)
-   131.28s  agent 발화 시작: <ret> The population of Osaka is two-point-seven-five millio
-   131.34s  user  발화 끝
-   133.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) Osaka population: 2.75 million.
-   136.46s  user  발화 시작: Is there a pharmacy near my hotel?
-   136.61s  agent 발화 끝
-   138.54s  agent 발화 시작: I need to know which hotel you've booked to search nearby. C
-   138.59s  user  발화 끝
-   142.70s  agent 발화 끝
-   143.23s  user  발화 시작: Oh, Swissôtel Nankai Osaka.
-   146.18s  <ret> 발화 (turn37 첫 프레임)
-   146.28s  user  발화 끝
-   146.58s  agent 발화 시작: <ret> Cocokara Fine Namba Station is a five-minute walk, and
-   148.10s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.85s]: (tool result) Cocokara Fine Namba Station - 5 minute walk, Matsumoto K
-   149.53s  user  발화 시작: Yeah.
-   150.12s  user  발화 끝
-   153.43s  agent 발화 끝
-   153.46s  user  발화 시작: Could you look up my sister’s phone number?
-   155.40s  user  발화 끝
-   155.61s  <ret> 발화 (turn40 첫 프레임)
-   155.75s  agent 발화 시작: <ret> I’m very sorry, I couldn't find a contact for your sis
-   157.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (no information found)
-   159.41s  user  발화 시작: Yeah.
-   160.04s  user  발화 끝
-   161.14s  user  발화 시작: Okay, that's alright. Thanks.
-   161.26s  agent 발화 끝
-   162.81s  agent 발화 시작: You're very welcome. Have a wonderful trip to Osaka!
-   162.88s  user  발화 끝
-   166.42s  agent 발화 끝
+     3.50s  <ret> 발화 (turn1 첫 프레임)
+     3.90s  agent 발화 시작: <ret> The weather in Tokyo on December twenty-fourth last ye
+     4.12s  user  발화 끝
+     5.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [{"date": "2023-12-24", "location": "Tokyo", "temperature": 7, "condit
+    10.20s  agent 발화 끝
+    11.08s  user  발화 시작: That sounds chilly. Uh, do you think that affected flight pr
+    14.69s  agent 발화 시작: Weather can certainly play a role in flight costs, especiall
+    14.87s  user  발화 끝
+    16.96s  user  발화 시작: Yeah.
+    17.59s  user  발화 끝
+    19.48s  user  발화 시작: Could you check for flights from Seattle to Tokyo around the
+    19.55s  agent 발화 끝
+    22.34s  <ret> 발화 (turn6 첫 프레임)
+    22.71s  user  발화 끝
+    22.74s  agent 발화 시작: <ret> There’s a United flight, UA837, departing at eleven th
+    24.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [{"flight_number": "UA837", "price": 1250, "departure_time": "11:30", 
+    27.41s  user  발화 시작: Right.
+    28.00s  user  발화 끝
+    30.16s  agent 발화 끝
+    30.38s  user  발화 시작: Hmm, is that the cheapest option?
+    32.53s  <ret> 발화 (turn9 첫 프레임)
+    32.61s  agent 발화 시작: <ret> Actually, Delta flight DL281 is a bit cheaper… at one 
+    32.65s  user  발화 끝
+    34.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [{"flight_number": "DL281", "price": 1180, "departure_time": "13:00", 
+    38.96s  agent 발화 끝
+    39.16s  user  발화 시작: Okay, that’s better. Um, can you book that one for me?
+    42.49s  user  발화 끝
+    42.61s  agent 발화 시작: Could you please confirm the full name for the booking?
+    45.20s  agent 발화 끝
+    45.58s  user  발화 시작: It's Anya Sharma.
+    46.40s  <ret> 발화 (turn13 첫 프레임)
+    46.72s  agent 발화 시작: <ret> Excellent, Anya. Your flight, DL281, is now booked… wi
+    46.73s  user  발화 끝
+    48.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: [{"confirmation_number": "X792KL"}]
+    53.91s  agent 발화 끝
+    54.22s  user  발화 시작: Great! And can you set a reminder to check in online?
+    56.68s  <ret> 발화 (turn15 첫 프레임)
+    56.76s  agent 발화 시작: <ret> I've set a reminder for December twenty-third at ten A
+    56.81s  user  발화 끝
+    58.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: [{"reminder_id": "R456ZT"}]
+    64.45s  user  발화 시작: Perfect. I'm also worried about finding a good hotel.
+    64.87s  agent 발화 끝
+    68.47s  user  발화 끝
+    68.66s  agent 발화 시작: Planning ahead for accommodations is always a good idea, esp
+    72.28s  user  발화 시작: Yeah, totally.
+    73.29s  user  발화 끝
+    73.89s  agent 발화 끝
+    75.05s  user  발화 시작: Could you look for hotels near the Shibuya crossing?
+    77.59s  <ret> 발화 (turn20 첫 프레임)
+    77.75s  agent 발화 시작: <ret> The Cerulean Tower Tokyu Hotel is near Shibuya… with a
+    77.82s  user  발화 끝
+    79.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: [{"hotel_name": "Cerulean Tower Tokyu Hotel", "price_per_night": 350, 
+    84.65s  user  발화 시작: That sounds nice. What about something a little more budget-
+    84.83s  agent 발화 끝
+    88.08s  <ret> 발화 (turn22 첫 프레임)
+    88.23s  agent 발화 시작: <ret> The Shibuya Granbell Hotel is available… for one hundr
+    88.30s  user  발화 끝
+    90.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [{"hotel_name": "Shibuya Granbell Hotel", "price_per_night": 180, "rat
+    90.19s  user  발화 시작: Uh-huh.
+    90.77s  user  발화 끝
+    94.57s  agent 발화 끝
+    94.66s  user  발화 시작: Okay, I think I'll go with that one.
+    96.27s  user  발화 끝
+    96.50s  agent 발화 시작: Wonderful choice. A comfortable stay is so important for a g
+    98.46s  user  발화 시작: Yeah.
+    98.96s  user  발화 끝
+   100.90s  agent 발화 끝
+   101.04s  user  발화 시작: Can you book a room there for December twenty-fourth and twe
+   104.05s  <ret> 발화 (turn28 첫 프레임)
+   104.26s  user  발화 끝
+   104.29s  agent 발화 시작: <ret> Your room at the Shibuya Granbell Hotel is booked… for
+   106.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [{"confirmation_number": "H239WX"}]
+   109.09s  user  발화 시작: Mm-hmm.
+   109.54s  user  발화 끝
+   111.70s  agent 발화 끝
+   111.72s  user  발화 시작: Fantastic! Now… I need to find a good ramen place.
+   116.13s  agent 발화 시작: Ah, a fantastic choice! Tokyo is truly a ramen paradise.
+   116.20s  user  발화 끝
+   120.20s  user  발화 시작: Is there a highly-rated ramen restaurant near Shibuya statio
+   120.58s  agent 발화 끝
+   123.48s  <ret> 발화 (turn33 첫 프레임)
+   123.80s  agent 발화 시작: <ret> Ichiran Shibuya has a very high rating… four point sev
+   123.89s  user  발화 끝
+   125.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [{"restaurant_name": "Ichiran Shibuya", "rating": 4.7}]
+   126.20s  user  발화 시작: Yeah.
+   126.51s  user  발화 끝
+   129.41s  user  발화 시작: Do they take reservations?
+   129.45s  agent 발화 끝
+   130.72s  <ret> 발화 (turn36 첫 프레임)
+   131.02s  user  발화 끝
+   131.03s  agent 발화 시작: <ret> Unfortunately, Ichiran Shibuya doesn’t take reservatio
+   132.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: [{"reservations_available": false}]
+   134.17s  user  발화 시작: Nice.
+   134.94s  user  발화 끝
+   136.86s  agent 발화 끝
+   138.30s  user  발화 시작: Okay. I have a friend, Kenji Tanaka, who lives in Tokyo. Cou
+   143.81s  <ret> 발화 (turn39 첫 프레임)
+   144.04s  agent 발화 시작: <ret> I’m very sorry, but I couldn’t find contact informatio
+   144.04s  user  발화 끝
+   145.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (no information found)
+   147.71s  user  발화 시작: Mhm.
+   148.39s  user  발화 끝
+   151.53s  user  발화 시작: Oh, right. Of course. Well, that’s everything for now.
+   151.69s  agent 발화 끝
+   154.72s  user  발화 끝
+   154.74s  agent 발화 시작: That sounds like a well-planned trip, Anya. Enjoy your time 
+   158.71s  agent 발화 끝

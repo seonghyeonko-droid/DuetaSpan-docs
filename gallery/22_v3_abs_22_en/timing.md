@@ -66,55 +66,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 What about more modern governments | S3 So, it’s not about everyone just d | S4 Was it actually successful, though
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Hmm, okay. What about the history  | S3 Interesting. Was he involved in an | S4 Bakunin sounds more…active. What k
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.31s  <ret> 발화 (turn1 첫 프레임)
-     2.45s  agent 발화 시작: <ret> And one I’ve not encountered before. It appears there 
-     2.59s  user  발화 끝
-     4.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (no information found)
-     8.20s  user  발화 시작: Uh-huh.
-     8.70s  user  발화 끝
-    12.07s  user  발화 시작: Well, what do they generally oppose *about* governments?
-    12.14s  agent 발화 끝
-    15.76s  <ret> 발화 (turn4 첫 프레임)
-    15.92s  agent 발화 시작: <ret> Anarchists generally oppose all hierarchical rule and 
-    16.05s  user  발화 끝
-    17.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: [source: Wikipedia] "Anarchists oppose all forms of hierarchical rule 
-    27.70s  agent 발화 끝
-    27.78s  user  발화 시작: Do they have any specific historical examples of governments
-    31.86s  <ret> 발화 (turn6 첫 프레임)
-    32.01s  agent 발화 시작: <ret> Historically, anarchists have often focused their crit
-    32.13s  user  발화 끝
-    33.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: [source: Stanford Encyclopedia of Philosophy] "Historically, anarchist
-    41.77s  user  발화 시작: What about more modern governments? Like, today?
-    42.16s  agent 발화 끝
-    45.01s  user  발화 끝
-    45.07s  agent 발화 시작: That’s a good clarification. Anarchist critiques today tend 
-    55.08s  agent 발화 시작: It’s interesting to note that—
-    55.32s  agent 발화 끝
-    55.86s  user  발화 시작: …but wouldn’t a totally anarchic society just fall into chao
-    56.65s  agent 발화 끝
-    59.62s  agent 발화 시작: That’s a very common concern. The idea isn’t necessarily abo
-    59.70s  user  발화 끝
-    71.16s  agent 발화 끝
-    72.89s  user  발화 시작: So, it’s not about everyone just doing whatever they want?
-    75.93s  user  발화 끝
-    76.25s  agent 발화 시작: Not at all. Anarchist theory emphasizes cooperation and mutu
-    88.17s  agent 발화 끝
-    88.31s  user  발화 시작: Huh. What’s the most successful example of an anarchist soci
-    93.26s  <ret> 발화 (turn15 첫 프레임)
-    93.33s  agent 발화 시작: <ret> Revolutionary Catalonia, during the Spanish Civil War,
-    93.49s  user  발화 끝
-    95.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: [source: The Anarchist FAQ] "Revolutionary Catalonia, during the Spani
-   106.24s  user  발화 시작: Was it actually successful, though? Or just a short-lived ex
-   106.26s  agent 발화 끝
-   110.31s  user  발화 끝
-   110.31s  agent 발화 시작: It was ultimately suppressed by both fascist and communist f
-   117.42s  user  발화 시작: Yeah, totally.
-   118.24s  user  발화 끝
-   124.83s  agent 발화 끝
-   125.89s  user  발화 시작: Okay, that’s… a lot to think about. Thanks, Frunax.
-   129.62s  agent 발화 시작: You’re very welcome. I’m glad I could offer some perspective
-   129.68s  user  발화 끝
-   138.94s  agent 발화 끝
+     2.12s  <ret> 발화 (turn1 첫 프레임)
+     2.28s  agent 발화 시작: <ret> Anarchists fundamentally oppose all forms of hierarchi
+     2.45s  user  발화 끝
+     4.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: Anarchists oppose all forms of hierarchical rule, including government
+     5.84s  user  발화 시작: Uh-huh.
+     6.42s  user  발화 끝
+     8.34s  user  발화 시작: …but specifically, which system gets the most criticism from
+     8.39s  agent 발화 끝
+    11.83s  <ret> 발화 (turn4 첫 프레임)
+    12.06s  agent 발화 시작: <ret> They direct the most intense criticism towards states,
+    12.17s  user  발화 끝
+    12.87s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.37s]: Anarchists are particularly critical of state capitalism and statist s
+    21.43s  agent 발화 끝
+    21.45s  user  발화 시작: Hmm, okay. What about the history of anarchist movements?
+    25.34s  user  발화 끝
+    25.34s  agent 발화 시작: Anarchist thought has roots stretching back to ancient Greec
+    33.09s  user  발화 시작: And who were some key figures in those early movements?
+    33.45s  agent 발화 끝
+    36.06s  <ret> 발화 (turn8 첫 프레임)
+    36.37s  agent 발화 시작: <ret> Pierre-Joseph Proudhon is often considered the first s
+    36.52s  user  발화 끝
+    38.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: Early anarchist movements included figures like Pierre-Joseph Proudhon
+    46.38s  user  발화 시작: Interesting. Was he involved in any specific events or upris
+    46.70s  agent 발화 끝
+    50.68s  <ret> 발화 (turn10 첫 프레임)
+    51.07s  agent 발화 시작: <ret> Proudhon primarily focused on theoretical work and mut
+    51.23s  user  발화 끝
+    52.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Pierre-Joseph Proudhon’s writings from the eighteen-forties… laying th
+    60.71s  agent 발화 시작: …social reforms through peaceful means. He didn't directly l
+    60.90s  agent 발화 끝
+    68.73s  agent 발화 끝
+    69.07s  user  발화 시작: So, what came *after* Proudhon? What were the next big devel
+    73.72s  agent 발화 시작: Mikhail Bakunin greatly expanded anarchist thought in the ei
+    73.79s  user  발화 끝
+    82.01s  agent 발화 끝
+    82.27s  user  발화 시작: Bakunin sounds more…active. What kind of action did he promo
+    86.86s  agent 발화 시작: He championed direct action and the abolition of the state t
+    87.00s  user  발화 끝
+    94.14s  agent 발화 끝

@@ -55,123 +55,105 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Perfect. Now, what’s the weather l | S3 That's much better. Now, I'm tryin | S4 I’ve heard of that one. Is it avai
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Is there a way to see a seat map b | S3 Twenty-five dollars an hour? That’ | S4 Actually, wait a second—
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.19s  <ret> 발화 (turn1 첫 프레임)
-     4.57s  agent 발화 시작: <ret> There’s a bus departing at two thirty-five PM, arrivin
-     4.77s  user  발화 끝
-     6.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) 14:35 departure, arrives 21:10, $245 per person.
-     7.31s  user  발화 시작: Yeah.
-     7.80s  user  발화 끝
-    11.43s  agent 발화 끝
-    11.49s  user  발화 시작: That’s… actually, make that May eleventh.
-    13.78s  <ret> 발화 (turn4 첫 프레임)
-    14.01s  agent 발화 시작: <ret> on May eleventh, there’s an eight AM departure, arrivi
-    14.21s  user  발화 끝
-    15.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) 08:00 departure, arrives 16:45, $260 per person.
-    21.89s  agent 발화 끝
-    22.63s  user  발화 시작: Hmm, are there any earlier options on the eleventh?
-    25.79s  <ret> 발화 (turn6 첫 프레임)
-    25.95s  agent 발화 시작: <ret> Yes, there’s a six AM departure arriving at two PM, an
-    26.13s  user  발화 끝
-    27.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) 06:00 departure, arrives 14:00, $230 per person.
-    31.50s  agent 발화 끝
-    31.68s  user  발화 시작: That sounds good. Book that one for me, please.
-    34.72s  <ret> 발화 (turn8 첫 프레임)
-    35.05s  user  발화 끝
-    35.10s  agent 발화 시작: <ret> I’ve booked that for you. Your confirmation number is 
-    35.22s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.63s]: (tool result) Confirmation: B749X2.
-    37.88s  user  발화 시작: Really?
-    38.70s  user  발화 끝
-    39.57s  user  발화 시작: Great. Can you set a reminder for me to leave for the bus st
-    39.74s  agent 발화 끝
-    45.20s  <ret> 발화 (turn11 첫 프레임)
-    45.59s  agent 발화 시작: <ret> I have set a reminder for May eleventh at five AM to l
-    45.69s  user  발화 끝
-    47.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (tool result) Reminder set for May 11th, 05:00.
-    50.17s  agent 발화 끝
-    50.43s  user  발화 시작: Perfect. Now, what’s the weather looking like in Denver on t
-    54.32s  <ret> 발화 (turn13 첫 프레임)
-    54.70s  agent 발화 시작: <ret> The forecast for Denver on May eleventh is a high of s
-    54.78s  user  발화 끝
-    55.52s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.72s]: (tool result) High 68°F, low 45°F, partly cloudy.
-    61.42s  agent 발화 끝
-    61.45s  user  발화 시작: Sounds pleasant enough. I’m thinking of grabbing dinner when
-    67.57s  agent 발화 시작: Denver has many excellent restaurants. What kind of cuisine 
-    67.65s  user  발화 끝
-    70.96s  user  발화 시작: Mhm.
-    71.59s  user  발화 끝
-    72.43s  agent 발화 끝
-    73.38s  user  발화 시작: Hmm, Italian, I think. Something not too fancy.
-    77.90s  <ret> 발화 (turn18 첫 프레임)
-    78.05s  agent 발화 시작: <ret> Carmine’s on Penn is a highly-rated Italian restaurant
-    78.20s  user  발화 끝
-    79.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Carmine’s on Penn, 4.2 stars, $20-30 per person.
-    84.69s  agent 발화 끝
-    85.78s  user  발화 시작: That sounds good. Is it within walking distance of the bus s
-    89.64s  <ret> 발화 (turn20 첫 프레임)
-    90.03s  agent 발화 시작: <ret> It’s two point three miles from the bus station, which
-    90.26s  user  발화 끝
-    91.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (tool result) 2.3 miles, approximately 45 minutes walking.
-    92.96s  user  발화 시작: Right.
-    93.72s  user  발화 끝
-    94.93s  agent 발화 끝
-    95.48s  user  발화 시작: Okay, that’s a bit of a walk. Maybe I should check out the p
-    99.86s  <ret> 발화 (turn23 첫 프레임)
-   100.25s  agent 발화 시작: <ret> You can take bus route fifteen, departing at four fift
-   100.48s  user  발화 끝
-   101.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Bus route 15, departs 16:50, arrives 17:15.
-   103.00s  user  발화 시작: Yeah.
-   103.63s  user  발화 끝
-   105.92s  user  발화 시작: That's much better. Now, I'm trying to remember… did I pack 
-   106.36s  agent 발화 끝
-   110.44s  agent 발화 시작: Sometimes, when preparing for a journey, we get caught up in
-   110.55s  user  발화 끝
-   113.23s  user  발화 시작: …did I pack my allergy medication? I always forget that!
-   113.99s  agent 발화 끝
-   117.63s  user  발화 끝
-   117.81s  agent 발화 시작: It’s quite common to worry about essential items during trav
-   119.94s  user  발화 시작: Yeah, totally.
-   121.27s  user  발화 끝
-   123.09s  agent 발화 끝
-   123.88s  user  발화 시작: Yes, please. Remind me to take my allergy medication tomorro
-   129.36s  <ret> 발화 (turn31 첫 프레임)
-   129.43s  agent 발화 시작: <ret> I’ve added a reminder for tomorrow, May tenth, at eigh
-   129.58s  user  발화 끝
-   130.80s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.72s]: (tool result) Reminder set for May 10th, 08:00.
-   134.15s  agent 발화 끝
-   134.24s  user  발화 시작: Wonderful. What about a good book to read on the bus?
-   137.38s  agent 발화 시작: Reading is a lovely way to pass the time during travel. Do y
-   137.61s  user  발화 끝
-   140.92s  user  발화 시작: Yeah.
-   141.46s  user  발화 끝
-   142.79s  user  발화 시작: Something light and funny. A good comedy, maybe.
-   142.90s  agent 발화 끝
-   146.19s  <ret> 발화 (turn36 첫 프레임)
-   146.35s  user  발화 끝
-   146.42s  agent 발화 시작: <ret> “Where’d You Go, Bernadette” by Maria Semple is a high
-   148.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) “Where’d You Go, Bernadette” by Maria Semple, 4.3 stars.
-   148.48s  user  발화 시작: Yeah.
-   148.98s  user  발화 끝
-   150.58s  agent 발화 끝
-   150.88s  user  발화 시작: I’ve heard of that one. Is it available as an audiobook?
-   154.68s  <ret> 발화 (turn39 첫 프레임)
-   154.72s  user  발화 끝
-   154.74s  agent 발화 시작: <ret> Yes, it is available on Audible for fifteen dollars an
-   155.18s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.72s]: (tool result) Available on Audible, $15.99.
-   159.46s  agent 발화 끝
-   159.49s  user  발화 시작: Okay, I’ll download that. Thanks so much for all your help.
-   163.13s  agent 발화 시작: You’re very welcome. It sounds like you’re well-prepared for
-   163.19s  user  발화 끝
-   168.95s  user  발화 시작: I hope so. One last thing—can you translate "Have a good day
-   169.14s  agent 발화 끝
-   174.51s  <ret> 발화 (turn43 첫 프레임)
-   174.74s  agent 발화 시작: <ret> “Have a good day” in Korean is 좋은 하루 보내세요 — Joheun har
-   174.79s  user  발화 끝
-   176.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) 좋은 하루 보내세요 (Joheun haru bonaeseyo).
-   178.90s  agent 발화 끝
-   179.47s  user  발화 시작: Perfect! Thank you again.
-   181.36s  agent 발화 시작: You are most welcome. I hope your travels bring you joy and 
-   181.40s  user  발화 끝
-   185.66s  agent 발화 끝
+     4.60s  <ret> 발화 (turn1 첫 프레임)
+     4.99s  agent 발화 시작: <ret> Let me find buses from Chicago to Denver for three pas
+     5.18s  user  발화 끝
+     6.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (no information found)
+     7.27s  user  발화 시작: Yeah.
+     7.90s  user  발화 끝
+    10.69s  agent 발화 끝
+    10.80s  user  발화 시작: Actually, make that May eleventh.
+    12.77s  <ret> 발화 (turn4 첫 프레임)
+    13.00s  agent 발화 시작: <ret> There is one bus, number 42, departing at 8:00 AM and 
+    13.20s  user  발화 끝
+    14.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [{"bus_number": "42", "departure_time": "8:00 AM", "arrival_time": "10
+    18.79s  agent 발화 끝
+    19.49s  user  발화 시작: One-fifty sounds reasonable. Can you book it?
+    22.89s  <ret> 발화 (turn6 첫 프레임)
+    23.04s  agent 발화 시작: <ret> I have booked bus number 42 for three passengers; your
+    23.19s  user  발화 끝
+    24.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [{"confirmation_number": "AX927", "status": "confirmed"}]
+    27.90s  agent 발화 끝
+    28.21s  user  발화 시작: AX927. Got it. Do they have Wi-Fi on board?
+    32.99s  <ret> 발화 (turn8 첫 프레임)
+    33.38s  agent 발화 시작: <ret> Bus number 42 does offer Wi-Fi, as well as power outle
+    33.40s  user  발화 끝
+    33.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.36s]: [{"amenities": ["Wi-Fi", "power outlets", "restroom"]}]
+    36.01s  user  발화 시작: Really?
+    36.83s  user  발화 끝
+    37.61s  user  발화 시작: That’s good to know. What about legroom?
+    37.73s  agent 발화 끝
+    40.84s  user  발화 끝
+    41.01s  agent 발화 시작: Legroom can vary, but generally, longer routes offer more sp
+    46.33s  agent 발화 끝
+    46.62s  user  발화 시작: Is there a way to see a seat map before booking?
+    49.85s  user  발화 끝
+    49.90s  agent 발화 시작: Unfortunately, seat maps aren't currently available for this
+    54.91s  agent 발화 끝
+    54.98s  user  발화 시작: Oh, that’s too bad. What’s the refund policy, just in case?
+    58.57s  <ret> 발화 (turn15 첫 프레임)
+    58.75s  agent 발화 시작: <ret> You'll receive a full refund if you cancel your bookin
+    59.01s  user  발화 끝
+    60.33s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.20s]: [{"policy": "Full refund if canceled 24 hours before departure."}]
+    61.74s  user  발화 시작: Okay.
+    62.47s  user  발화 끝
+    62.95s  agent 발화 끝
+    63.90s  user  발화 시작: Twenty-four hours. Okay. And where does that bus actually de
+    70.17s  <ret> 발화 (turn18 첫 프레임)
+    70.58s  agent 발화 시작: <ret> Bus number 42 departs from Union Station, located at 2
+    70.67s  user  발화 끝
+    71.38s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.47s]: [{"location": "Union Station, 225 South Canal Street"}]
+    73.14s  user  발화 시작: Uh-huh.
+    73.78s  user  발화 끝
+    75.89s  user  발화 시작: Union Station. Right. Is there parking there?
+    76.05s  agent 발화 끝
+    79.63s  <ret> 발화 (turn21 첫 프레임)
+    79.84s  agent 발화 시작: <ret> Yes, parking is available at Union Station, at a rate 
+    79.97s  user  발화 끝
+    80.91s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.68s]: [{"parking_available": "Yes", "hourly_rate": "25.00"}]
+    81.94s  user  발화 시작: Yeah.
+    82.56s  user  발화 끝
+    84.52s  agent 발화 끝
+    85.11s  user  발화 시작: Twenty-five dollars an hour? That’s steep!
+    87.96s  agent 발화 시작: Parking in central areas often carries higher rates, I find.
+    88.20s  user  발화 끝
+    92.14s  user  발화 시작: Is there any cheaper parking nearby?
+    92.63s  agent 발화 끝
+    94.36s  <ret> 발화 (turn26 첫 프레임)
+    94.50s  agent 발화 시작: <ret> LAZ Parking is 0.5 miles away, offering parking at fif
+    94.67s  user  발화 끝
+    96.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [{"parking_name": "LAZ Parking", "distance": "0.5 miles", "hourly_rate
+    96.85s  user  발화 시작: Yeah.
+    97.48s  user  발화 끝
+   100.15s  agent 발화 끝
+   100.25s  user  발화 시작: Fifteen is much better. Can you give me directions to that p
+   104.03s  <ret> 발화 (turn29 첫 프레임)
+   104.34s  agent 발화 시작: <ret> Head west on Canal Street, then turn right onto Harris
+   104.60s  user  발화 끝
+   106.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: [{"directions": "Head west on Canal Street, turn right onto Harrison S
+   109.14s  user  발화 시작: Okay, that sounds straightforward.
+   109.21s  agent 발화 끝
+   111.40s  user  발화 끝
+   111.74s  agent 발화 시작: It’s good to have a clear plan, especially when traveling. K
+   113.78s  user  발화 시작: Yeah.
+   114.41s  user  발화 끝
+   115.76s  user  발화 시작: Actually, wait a second—
+   115.95s  agent 발화 끝
+   117.17s  user  발화 시작: …what’s the weather like in Denver on the eleventh? I should
+   117.36s  user  발화 끝
+   122.14s  <ret> 발화 (turn35 첫 프레임)
+   122.45s  agent 발화 시작: <ret> The forecast for Denver on May eleventh is sunny, with
+   122.72s  user  발화 끝
+   124.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: [{"temperature": "65°F", "condition": "Sunny"}]
+   126.56s  user  발화 시작: Sunny and sixty-five. Perfect!
+   126.60s  agent 발화 끝
+   129.13s  agent 발화 시작: That sounds quite pleasant. A comfortable temperature is oft
+   129.29s  user  발화 끝
+   133.70s  agent 발화 끝
+   133.94s  user  발화 시작: I think I’m all set then. Thanks for your help.
+   137.08s  user  발화 끝
+   137.23s  agent 발화 시작: You’re very welcome. I’m glad I could assist you with your t
+   141.31s  agent 발화 끝

@@ -63,25 +63,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about government dep | S2 …when did the Veterans Affairs dep | S3 1930? That seems… surprisingly rec | S4 So, the Bureau did everything? It 
+# EXAMINER(FDB-v2) 단계: S1 I was just reading something…… | S2 …and it said the VA was started wa | S3 But what then? That article seemed | S4 Nineteen thirty? That’s a big diff
 
-     0.00s  user  발화 시작: I was reading about government departments……
-     2.26s  user  발화 끝
-     3.56s  user  발화 시작: …when did the Veterans Affairs department actually start?
-     6.16s  <ret> 발화 (turn2 첫 프레임)
-     6.48s  agent 발화 시작: <ret> The Department of Veterans Affairs was formed by Presi
-     6.53s  user  발화 끝
-     7.52s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.30s]: [source: Wikipedia] The Department of Veterans Affairs was established
-    14.77s  agent 발화 끝
-    15.83s  user  발화 시작: 1930? That seems… surprisingly recent, actually. Was there n
-    20.48s  <ret> 발화 (turn4 첫 프레임)
-    20.88s  agent 발화 시작: <ret> Before the department as it exists today, veterans’ af
-    21.01s  user  발화 끝
-    22.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: [source: U.S. Department of Veterans Affairs History] Prior to 1930, t
-    30.17s  user  발화 시작: So, the Bureau did everything? It sounds like a big shift to
-    30.20s  agent 발화 끝
-    35.43s  <ret> 발화 (turn6 첫 프레임)
-    35.83s  agent 발화 시작: <ret> The act of nineteen thirty consolidated several agenci
-    35.96s  user  발화 끝
-    37.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.15s]: [source: Congressional Research Service] The 1930 act consolidated var
-    43.99s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading something……
+     1.47s  user  발화 끝
+     2.79s  user  발화 시작: …and it said the VA was started way back in nineteen ninetee
+     6.83s  <ret> 발화 (turn2 첫 프레임)
+     7.14s  agent 발화 시작: <ret> The Department of Veterans Affairs wasn’t formally est
+     7.24s  user  발화 끝
+     8.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.74s]: The Department of Veterans Affairs (VA) was originally established in 
+    14.88s  agent 발화 끝
+    15.82s  user  발화 시작: But what then? That article seemed pretty sure of itself, uh
+    18.93s  <ret> 발화 (turn4 첫 프레임)
+    19.33s  agent 발화 시작: <ret> The agency’s origins trace back to 1930, when Congress
+    19.48s  user  발화 끝
+    20.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: The Veterans’ Bureau was renamed the Veterans Administration in 1930.
+    26.41s  agent 발화 끝
+    26.43s  user  발화 시작: Nineteen thirty? That’s a big difference. What was it *befor
+    31.09s  <ret> 발화 (turn6 첫 프레임)
+    31.17s  agent 발화 시작: <ret> Before 1930, services for veterans were handled by the
+    31.29s  user  발화 끝
+    33.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: The Department of Veterans Affairs wasn’t formally established in nine
+    39.52s  agent 발화 끝

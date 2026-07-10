@@ -68,23 +68,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 재향군인부(Department of Veterans Affai | S2 음, 좀 늦게 만들어진 것 같기도… | S3 …한데. 그 전에는 재향군인들을 어떻게 보살폈어? | S4 그렇군요. 그럼 그 이전에는 연방 차원에서 별다른 지원이 없었
 
-     0.00s  user  발화 시작: 재향군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     5.36s  <ret> 발화 (turn1 첫 프레임)
-     5.67s  agent 발화 시작: <ret> 재향군인부가 만들어진 건… 대통령 허버트 후버의 명령으로 천구백삼십년 칠월 이십일일입니다.
-     5.79s  user  발화 끝
-     7.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-    11.83s  agent 발화 끝
-    11.85s  user  발화 시작: 음, 좀 늦게 만들어진 것 같기도…
-    14.77s  user  발화 끝
-    16.24s  user  발화 시작: …한데. 그 전에는 재향군인들을 어떻게 보살폈어?
-    19.26s  <ret> 발화 (turn4 첫 프레임)
-    19.33s  agent 발화 시작: <ret> 그 이전에는 재향군인들을 돌보는 게… 주로 민간 단체랑 주 정부에서 맡았다고 해요.
-    19.78s  user  발화 끝
-    20.62s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.00s]: [source: History.com] Prior to 1930, care for veterans in the United S
-    24.33s  agent 발화 끝
-    24.62s  user  발화 시작: 그렇군요. 그럼 그 이전에는 연방 차원에서 별다른 지원이 없었다는 거네?
-    28.87s  agent 발화 시작: 네, 그전에는 연방 정부 차원의… 특별한 지원 체계가 없었습니다.
-    28.97s  user  발화 끝
-    33.08s  agent 발화 끝
+     0.00s  user  발화 시작: 재향군인부(Department of Veterans Affairs)가 언제 만들어졌는지 아세요?
+     5.08s  <ret> 발화 (turn1 첫 프레임)
+     5.39s  agent 발화 시작: <ret> 재향군인부 창설 시기는… 천구백삼십년입니다… 삼월 십구일입니다.
+     5.56s  user  발화 끝
+     6.28s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.86s]: The Department of Veterans Affairs was established on March 19, 1930.
+    10.25s  agent 발화 끝
+    10.26s  user  발화 시작: 천구백삼십년이라고요? 그게 말이 돼요? 좀 더 일찍 만들어졌을 것 같은데요.
+    14.52s  <ret> 발화 (turn3 첫 프레임)
+    14.83s  agent 발화 시작: <ret> 재향군인부의 전신은 천구백십팔년에 설립된 퇴역 군인국인데, 지금의 부서로 개편된 건… 천구백삼십년
+    14.98s  user  발화 끝
+    15.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=9.73s]: 재향군인부 창설 시기는 천구백삼십년 삼월 십구일입니다.
+    24.50s  user  발화 시작: 아, 전신이 있었군요. 그럼 그 전신은 또 언제 만들어졌죠?
+    24.56s  agent 발화 끝
+    28.56s  <ret> 발화 (turn5 첫 프레임)
+    28.79s  agent 발화 시작: <ret> 퇴역 군인국은 제1차 세계 대전 참전 용사들을 위한 의료 및 보상 문제를 다루기 위해… 천구백십팔
+    28.95s  user  발화 끝
+    30.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: 천구백십팔년에 설립된 퇴역 군인국은 재향군인부의 전신입니다.
+    38.94s  agent 발화 끝

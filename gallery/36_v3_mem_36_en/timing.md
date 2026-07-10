@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you. Is there an
-     2.96s  user  발화 시작: Uh-huh.
-     3.60s  user  발화 끝
-     6.11s  agent 발화 끝
-     6.26s  user  발화 시작: Oh, hi Lira. Um, I was just wondering… do I have any appoint
-    11.28s  <ret> 발화 (turn3 첫 프레임)
-    11.52s  agent 발화 시작: <ret> You do have a dentist appointment scheduled, Sky. You 
-    11.72s  user  발화 끝
-    13.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    17.56s  user  발화 시작: Oh, right! That’s a relief. And… uh… what day is that on aga
-    17.91s  agent 발화 끝
-    22.14s  <ret> 발화 (turn5 첫 프레임)
-    22.46s  agent 발화 시작: <ret> That appointment is on January twenty-sixth, Sky. It w
-    22.51s  user  발화 끝
-    24.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    28.81s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you today. Is th
+     3.91s  user  발화 시작: Uh-huh.
+     4.45s  user  발화 끝
+     7.88s  agent 발화 끝
+     8.06s  user  발화 시작: Oh, um, hi. Actually, I was wondering about that dentist app
+    13.20s  <ret> 발화 (turn3 첫 프레임)
+    13.44s  agent 발화 시작: <ret> You booked a dentist appointment and requested an earl
+    13.52s  user  발화 끝
+    15.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.87s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    22.96s  user  발화 시작: Yes, please. And, uh, is that Dr. Han still taking new patie
+    23.32s  agent 발화 끝
+    28.14s  <ret> 발화 (turn5 첫 프레임)
+    28.42s  agent 발화 시작: <ret> Dr. Han is currently accepting new patients. The last 
+    28.52s  user  발화 끝
+    30.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: []
+    34.63s  agent 발화 끝

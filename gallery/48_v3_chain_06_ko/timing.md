@@ -68,49 +68,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십  | S2 아, 그렇군요. 혹시 웹사이트 접속해서 사용자 에이전트가 제대 | S3 흐으으음… 혹시 지금부터 다른 브라우저를 열어서 사용자 에이전 | S4 좋은 하루 보내세요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 음… 그럼 지금 제 브라우저를 열어 줄 수 있을까요? | S3 네이버로 열어 주세요. | S4 알겠습니다. 오늘 날씨는 어때요?
 
-     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄 수 있을까요?
-     4.75s  <ret> 발화 (turn1 첫 프레임)
-     4.98s  agent 발화 시작: <ret> 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정했습니다.
-     5.05s  user  발화 끝
-     6.67s  user  발화 시작: 음.
-     6.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) User agent set to MyCustomBrowser version 10.5
-     7.16s  user  발화 끝
-     9.93s  agent 발화 끝
-    11.55s  user  발화 시작: 음… 그럼 지금 제 사용자 에이전트가 어떻게 되어 있는지 확인해 줄 수 있을까요?
-    16.12s  <ret> 발화 (turn4 첫 프레임)
-    16.35s  agent 발화 시작: <ret> 현재 사용자 에이전트는 MyCustomBrowser 버전 십 점 오입니다.
-    16.40s  user  발화 끝
-    17.32s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.39s]: (tool result) Current user agent: MyCustomBrowser version 10.5
-    18.57s  user  발화 시작: 예.
-    19.16s  user  발화 끝
-    20.74s  agent 발화 끝
-    20.80s  user  발화 시작: 아, 그렇군요. 혹시 웹사이트 접속해서 사용자 에이전트가 제대로 적용됐는지 확인해 볼 수 있을까요? 예를 들
-    32.81s  <ret> 발화 (turn7 첫 프레임)
-    32.89s  agent 발화 시작: <ret> whatismyuseragent.com 말씀하신 대로 해당 사이트에 접속해 보겠습니다.
-    32.90s  user  발화 끝
-    34.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Page opened successfully.
-    35.27s  user  발화 시작: 예.
-    35.77s  user  발화 끝
-    37.36s  <ret> 발화 (turn9 첫 프레임)
-    37.76s  agent 발화 시작: <ret> 웹사이트에 표시된 사용자 에이전트는 MyCustomBrowser 버전 십 점 오입니다. 제대로 적
-    37.93s  agent 발화 끝
-    39.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) MyCustomBrowser version 10.5
-    44.90s  agent 발화 끝
-    45.01s  user  발화 시작: 흐으으음… 혹시 지금부터 다른 브라우저를 열어서 사용자 에이전트를 기본값으로 되돌릴 수 있을까요?
-    51.29s  <ret> 발화 (turn11 첫 프레임)
-    51.35s  user  발화 끝
-    51.52s  agent 발화 시작: <ret> 다른 브라우저를 열어서 사용자 에이전트를 기본값으로 되돌리시겠어요? 그렇게 해 드리겠습니다.
-    52.97s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.12s]: (tool result) New browser instance created.
-    57.60s  agent 발화 시작: 새로운 브라우저 인스턴스를 만들었습니다.
-    57.64s  agent 발화 끝
-    60.03s  <ret> 발화 (turn13 첫 프레임)
-    60.19s  agent 발화 끝
-    60.19s  agent 발화 시작: <ret> 이제 사용자 에이전트를 기본값으로 되돌리겠습니다.
-    61.71s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.18s]: (tool result) User agent reset to default.
-    63.37s  agent 발화 끝
-    63.57s  user  발화 시작: 좋은 하루 보내세요.
-    64.93s  agent 발화 시작: 네, 고객님도 좋은 하루 보내세요.
-    65.00s  user  발화 끝
-    67.18s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
+     5.12s  <ret> 발화 (turn1 첫 프레임)
+     5.36s  agent 발화 시작: <ret> 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 드립니다… 할 수 없습니다.
+     5.46s  user  발화 끝
+     7.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (no information found)
+     7.40s  user  발화 시작: 음.
+     8.04s  user  발화 끝
+    11.15s  agent 발화 끝
+    12.91s  user  발화 시작: 잘 됐는지 확인해 볼 수 있을까요?
+    14.73s  <ret> 발화 (turn4 첫 프레임)
+    14.96s  agent 발화 시작: <ret> 현재 사용자 에이전트는 MyCustomBrowser 버전 십점오로 설정되어 있습니다… 찾을 수 없
+    14.98s  user  발화 끝
+    16.25s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.06s]: (no information found)
+    17.85s  user  발화 시작: 예.
+    18.34s  user  발화 끝
+    20.93s  user  발화 시작: 음… 그럼 지금 제 브라우저를 열어 줄 수 있을까요?
+    21.02s  agent 발화 끝
+    24.04s  <ret> 발화 (turn7 첫 프레임)
+    24.11s  agent 발화 시작: <ret> 브라우저를 열어 드립니다… 찾을 수 없습니다.
+    24.17s  user  발화 끝
+    25.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.61s]: (no information found)
+    27.72s  agent 발화 끝
+    27.82s  user  발화 시작: 어떤 웹사이트로 열어 줄까요?
+    30.08s  user  발화 끝
+    30.53s  agent 발화 시작: 어떤 웹사이트를 방문하시겠어요?
+    32.83s  user  발화 시작: 네이버로 열어 주세요.
+    32.93s  agent 발화 끝
+    34.60s  <ret> 발화 (turn11 첫 프레임)
+    34.72s  user  발화 끝
+    34.76s  agent 발화 시작: <ret> 네이버 웹사이트로 이동합니다… 찾을 수 없습니다.
+    36.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.19s]: (no information found)
+    37.95s  agent 발화 끝
+    39.13s  user  발화 시작: 혹시 지금 시간이 몇 시인지 알려줄 수 있을까요?
+    41.99s  <ret> 발화 (turn13 첫 프레임)
+    42.23s  user  발화 끝
+    42.23s  agent 발화 시작: <ret> 현재 시간은 오후 두 시 삼십칠분입니다… 알 수 없습니다.
+    43.27s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.93s]: (no information found)
+    44.21s  user  발화 시작: 예.
+    44.84s  user  발화 끝
+    46.16s  agent 발화 끝
+    47.37s  user  발화 시작: 알겠습니다. 오늘 날씨는 어때요?
+    50.26s  <ret> 발화 (turn16 첫 프레임)
+    50.42s  agent 발화 시작: <ret> 오늘 날씨는 맑고, 기온은 섭씨 이십오도입니다… 알 수 없습니다.
+    50.42s  user  발화 끝
+    51.94s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.87s]: (no information found)
+    55.28s  agent 발화 끝
+    55.35s  user  발화 시작: 고마워요.
+    56.17s  user  발화 끝
+    56.30s  agent 발화 시작: 도움이 되었다니 다행입니다.
+    58.04s  agent 발화 끝

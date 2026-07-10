@@ -61,9 +61,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 데어데블 시즌 삼는 언제 공개될까요?
-     2.12s  <ret> 발화 (turn1 첫 프레임)
-     2.37s  agent 발화 시작: <ret> 데어데블 시즌 삼가 공개된 날짜는… 이천십팔년 십월 이십육일입니다.
-     2.58s  user  발화 끝
-     3.17s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.91s]: [source: Wikipedia] The third season of Daredevil was released on Octo
-     7.27s  agent 발화 끝
+     0.00s  user  발화 시작: 데어데블 시즌 삼은 언제 나오나요?
+     1.73s  <ret> 발화 (turn1 첫 프레임)
+     1.97s  agent 발화 시작: <ret> 데어데블 시즌 삼이 공개된 건… 이천십팔년입니다… 이천이십사년 삼월 십사일입니다.
+     1.98s  user  발화 끝
+     3.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: 데어데블: 본 투 킬은 2024년 3월 14일에 디즈니+와 훌루에서 공개됩니다.
+     8.50s  agent 발화 끝

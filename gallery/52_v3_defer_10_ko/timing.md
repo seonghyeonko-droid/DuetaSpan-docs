@@ -77,19 +77,23 @@
 # }
 
 
-     0.00s  user  발화 시작: 작년 프랑스 휴가 사진 찾아줘, 썸네일 말고.
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     2.99s  agent 발화 시작: <ret> 프랑스 휴가 사진 세 장을 찾았어요. 이천이십삼년 칠월 십오일 파리, 칠월 십팔일 니ース, 칠월 
-     3.05s  user  발화 끝
-     4.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.87s]: (tool result) 2023-07-15 Paris.jpg, 2023-07-18 Nice.jpg, 2023-07-22 Ly
-     6.39s  user  발화 시작: 음.
-     7.11s  user  발화 끝
-    10.86s  user  발화 시작: 음… 리옹 사진 보여줘.
-    10.87s  agent 발화 끝
-    12.44s  <ret> 발화 (turn4 첫 프레임)
-    12.83s  agent 발화 시작: <ret> 리옹 사진을 띄워 드릴게요. 잠시만 기다려 주세요.
-    13.02s  user  발화 끝
-    14.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) file opened
-    16.67s  agent 발화 끝
-    16.71s  agent 발화 시작: 리옹 사진을 열었어요. 즐거운 시간 되세요.
-    19.63s  agent 발화 끝
+     0.00s  user  발화 시작: 프랑스 휴가 사진 찾아줘, 썸네일 말고.
+     2.32s  <ret> 발화 (turn1 첫 프레임)
+     2.39s  agent 발화 시작: <ret> 프랑스 휴가 사진을 찾고 있는데, 썸네일은 제외했습니다… 찾을 수 없습니다.
+     2.44s  user  발화 끝
+     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.31s]: (no information found)
+     7.63s  user  발화 시작: 몇 장이나 찾았어?
+     7.71s  agent 발화 끝
+     8.79s  <ret> 발화 (turn3 첫 프레임)
+     8.86s  user  발화 끝
+     9.18s  agent 발화 시작: <ret> 총 스물세 장의 사진을 찾았습니다. 혹시 특정 날짜의 사진을 원하세요?
+    10.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: [23]
+    12.72s  user  발화 시작: 응.
+    13.13s  user  발화 끝
+    14.10s  user  발화 시작: 응, 에펠탑 앞에서 찍은 사진만 보여줘.
+    14.13s  agent 발화 끝
+    16.05s  <ret> 발화 (turn6 첫 프레임)
+    16.37s  agent 발화 시작: <ret> 에펠탑 사진을 찾고 있습니다. 잠시만 기다려 주세요… 찾을 수 없습니다.
+    16.59s  user  발화 끝
+    17.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.09s]: (no information found)
+    21.46s  agent 발화 끝

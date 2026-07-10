@@ -66,119 +66,111 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 그럼 제일 싼 거, 오전 여덟시 걸로 예매해 줘. | S3 아, 그거 말고, 혹시 덴버에서 시카고로 돌아오는 버스도 알아 | S4 아, 그런데—
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 BX927이 뭐야? | S3 그 버스 예약해 줘. | S4 이 점 오 영달러가 얼마야?
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
-     4.58s  <ret> 발화 (turn1 첫 프레임)
-     4.81s  user  발화 끝
-     4.89s  agent 발화 시작: <ret> 시카고에서 덴버까지 가는 버스는 그레이하운드, 플릭스버스, 제퍼슨 라인이 있습니다. 최저가는 백오
-     6.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Buses found: Greyhound, FlixBus, Jefferson Lines. Prices
-    10.24s  user  발화 시작: 와.
-    11.06s  user  발화 끝
-    13.28s  agent 발화 끝
-    13.61s  user  발화 시작: 그레이하운드는 몇 시에 출발해?
-    15.19s  <ret> 발화 (turn4 첫 프레임)
-    15.49s  agent 발화 시작: <ret> 그레이하운드는 오월 십일 시카고에서 오전 여덟시, 오후 두시, 저녁 여덟시에 출발합니다.
-    15.54s  user  발화 끝
-    16.15s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.35s]: (tool result) Greyhound departs Chicago 8:00 AM, 2:00 PM, 8:00 PM.
-    21.84s  agent 발화 끝
-    23.23s  user  발화 시작: 제일 싼 시간대는?
-    24.34s  <ret> 발화 (turn6 첫 프레임)
-    24.55s  agent 발화 시작: <ret> 그레이하운드 오전 여덟시 출발 티켓은 백오십달러입니다.
-    24.60s  user  발화 끝
-    26.18s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.89s]: (tool result) $150 for 8:00 AM Greyhound.
-    26.88s  user  발화 시작: 대박.
-    27.52s  user  발화 끝
-    28.32s  user  발화 시작: 혹시 환불 가능한가?
-    28.44s  agent 발화 끝
-    30.16s  agent 발화 시작: 환불 규정은 버스 회사마다 다릅니다. 확인해 드릴까요?
-    30.20s  user  발화 끝
-    34.60s  user  발화 시작: 네, 확인해 줘.
-    34.64s  agent 발화 끝
-    35.81s  <ret> 발화 (turn11 첫 프레임)
-    35.96s  agent 발화 시작: <ret> 그레이하운드는 출발 스물네시간 전에 취소하면 전액 환불됩니다.
-    35.98s  user  발화 끝
-    37.09s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.80s]: (tool result) Greyhound: Full refund if canceled 24 hours before depar
-    39.52s  user  발화 시작: 그럼 제일 싼 거, 오전 여덟시 걸로 예매해 줘.
-    39.76s  agent 발화 끝
-    42.83s  <ret> 발화 (turn13 첫 프레임)
-    42.98s  agent 발화 시작: <ret> 예매가 완료되었습니다. 확인 번호는 칠 팔 구 사 오 육입니다.
-    43.12s  user  발화 끝
-    44.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: (tool result) Booking confirmed. Confirmation number: 789456.
-    45.85s  user  발화 시작: 그치.
-    46.60s  user  발화 끝
-    47.01s  agent 발화 끝
-    47.10s  user  발화 시작: 혹시 좌석 지정할 수 있어?
-    49.05s  agent 발화 시작: 네, 가능합니다. 좌석을 지정해 드릴까요?
-    49.22s  user  발화 끝
-    51.63s  agent 발화 끝
-    51.84s  user  발화 시작: 응, 창가 쪽으로 세 자리.
-    53.38s  <ret> 발화 (turn18 첫 프레임)
-    53.77s  agent 발화 시작: <ret> 창가 쪽 일A, 일B, 일C 좌석이 지정되었습니다.
-    53.91s  user  발화 끝
-    54.90s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.56s]: (tool result) Seats 1A, 1B, 1C assigned.
-    55.42s  user  발화 시작: 그래.
-    56.15s  user  발화 끝
-    57.19s  user  발화 시작: 덴버에 도착하는 시간은?
-    57.34s  agent 발화 끝
-    58.45s  <ret> 발화 (turn21 첫 프레임)
-    58.84s  agent 발화 시작: <ret> 덴버에는 오후 여섯시에 도착합니다.
-    58.94s  user  발화 끝
-    59.17s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.98s]: (tool result) Arrives Denver 6:00 PM.
-    60.75s  user  발화 시작: 짐 부치는 건 얼마야?
-    60.82s  agent 발화 끝
-    62.06s  <ret> 발화 (turn23 첫 프레임)
-    62.13s  agent 발화 시작: <ret> 그레이하운드는 가방당 이십달러입니다.
-    62.36s  user  발화 끝
-    63.18s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.59s]: (tool result) Greyhound: $20 per bag.
-    64.71s  agent 발화 끝
-    66.07s  user  발화 시작: 아, 그거 말고, 혹시 덴버에서 시카고로 돌아오는 버스도 알아봐 줄래?
-    71.04s  agent 발화 시작: 덴버에서 시카고로 돌아오는 버스도 알아봐 드릴까요?
-    71.16s  user  발화 끝
-    72.50s  user  발화 시작: 응.
-    72.99s  user  발화 끝
-    74.29s  user  발화 시작: 응, 오월 십오일에.
-    74.46s  agent 발화 끝
-    76.06s  <ret> 발화 (turn28 첫 프레임)
-    76.44s  agent 발화 시작: <ret> 덴버에서 시카고로 가는 버스는 그레이하운드와 플릭스버스가 있습니다. 최저가는 백팔십달러부터입니다.
-    76.59s  user  발화 끝
-    78.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: (tool result) Buses found: Greyhound, FlixBus. Prices from $180.
-    83.12s  agent 발화 끝
-    83.25s  user  발화 시작: 플릭스버스는?
-    84.27s  <ret> 발화 (turn30 첫 프레임)
-    84.42s  agent 발화 시작: <ret> 플릭스버스는 오월 십오일 덴버에서 오전 아홉시, 오후 세시에 출발합니다.
-    84.53s  user  발화 끝
-    86.03s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.13s]: (tool result) FlixBus departs Denver 9:00 AM, 3:00 PM.
-    86.54s  user  발화 시작: 응.
-    86.94s  user  발화 끝
-    89.55s  agent 발화 끝
-    90.49s  user  발화 시작: 오전 아홉시 거로 예매해 줘.
-    92.69s  <ret> 발화 (turn33 첫 프레임)
-    92.76s  agent 발화 시작: <ret> 예매가 완료되었습니다. 확인 번호는 구 팔 칠 육 오 사입니다.
-    92.88s  user  발화 끝
-    93.81s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.30s]: (tool result) Booking confirmed. Confirmation number: 987654.
-    96.68s  user  발화 시작: 혹시 짐 무게 제한이 있어?
-    97.06s  agent 발화 끝
-    98.38s  <ret> 발화 (turn35 첫 프레임)
-    98.45s  agent 발화 시작: <ret> 플릭스버스는 가방당 이십kg까지 허용됩니다.
-    98.61s  user  발화 끝
-    99.58s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.51s]: (tool result) FlixBus: 20kg per bag.
-   101.90s  user  발화 시작: 아, 그런데—
-   101.97s  agent 발화 끝
-   103.02s  user  발화 시작: …혹시 덴버 공항 근처에서 출발하는 버스가 있어?
-   103.23s  user  발화 끝
-   106.19s  <ret> 발화 (turn38 첫 프레임)
-   106.42s  agent 발화 시작: <ret> 죄송합니다. 덴버 공항에서 시카고로 가는 버스는 없습니다.
-   106.62s  user  발화 끝
-   108.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) No buses found from Denver Airport to Chicago.
-   108.52s  user  발화 시작: 응.
-   109.01s  user  발화 끝
-   110.68s  agent 발화 끝
-   110.83s  user  발화 시작: 알았어. 그럼 됐어.
-   112.65s  agent 발화 시작: 여행 준비 잘 하시고, 즐거운 여행 되세요.
-   112.86s  user  발화 끝
-   115.42s  agent 발화 끝
-   115.58s  user  발화 시작: 고마워.
-   116.21s  user  발화 끝
-   116.34s  agent 발화 시작: 도움이 되었다니 기쁩니다.
-   118.23s  agent 발화 끝
+     4.22s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  user  발화 끝
+     4.53s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일에 가는 버스는 두 대가 있습니다… 첫 번째는 아침 여덟시에 출발해서
+     6.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: [{"bus_id": "7492", "departure_time": "08:00", "arrival_time": "16:00"
+    11.55s  user  발화 시작: 와.
+    12.18s  user  발화 끝
+    15.43s  agent 발화 끝
+    15.80s  user  발화 시작: 아침 여덟시 버스 말고, 좀 더 늦게 출발하는 거 있어?
+    19.05s  <ret> 발화 (turn4 첫 프레임)
+    19.44s  agent 발화 시작: <ret> 오월 십일에 시카고에서 덴버로 가는 버스 중, 아침 여덟시 이후 출발하는 건… 정오 열두시에 출발
+    19.50s  user  발화 끝
+    21.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: [{"bus_id": "8915", "departure_time": "12:00", "arrival_time": "20:00"
+    29.92s  agent 발화 끝
+    31.34s  user  발화 시작: 그 버스, 좌석이 몇 개 남았어?
+    32.94s  <ret> 발화 (turn6 첫 프레임)
+    33.33s  agent 발화 시작: <ret> 그 버스에는 현재 좌석이 두 개 남아 있습니다…
+    33.40s  user  발화 끝
+    34.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.58s]: [{"bus_id": "8915", "departure_time": "12:00", "arrival_time": "20:00"
+    34.89s  user  발화 시작: 응.
+    35.29s  user  발화 끝
+    35.88s  user  발화 시작: 아, 맞다. 혹시 오월 구일은 어때?
+    35.91s  agent 발화 끝
+    38.81s  <ret> 발화 (turn9 첫 프레임)
+    39.21s  agent 발화 시작: <ret> 오월 구일에 시카고에서 덴버로 가는 버스는… 아침 아홉시에 출발해서 오후 다섯시에 도착하는 백육십
+    39.39s  user  발화 끝
+    40.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.18s]: [{"bus_id": "2341", "departure_time": "09:00", "arrival_time": "17:00"
+    50.20s  user  발화 시작: 그 버스, 예약해 줘.
+    50.38s  agent 발화 끝
+    51.96s  <ret> 발화 (turn11 첫 프레임)
+    52.09s  user  발화 끝
+    52.12s  agent 발화 시작: <ret> 오월 구일 아침 아홉시 버스, 세 분 예약 완료되었습니다… 확인 번호는 BX927입니다.
+    53.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: {"confirmation_number": "BX927", "status": "confirmed"}
+    58.66s  user  발화 시작: BX927이 뭐야?
+    58.83s  agent 발화 끝
+    60.72s  agent 발화 시작: BX927은 예약 확인 번호입니다… 혹시 예약 내용을 다시 한번 확인해 드릴까요?
+    60.74s  user  발화 끝
+    66.37s  agent 발화 끝
+    67.38s  user  발화 시작: 아니, 됐어. 그 버스에 와이파이 있어?
+    70.02s  <ret> 발화 (turn15 첫 프레임)
+    70.08s  agent 발화 시작: <ret> 해당 버스에는 와이파이가 제공됩니다… 인터넷 사용은 가능합니다.
+    70.27s  user  발화 끝
+    71.38s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.86s]: {"bus_id": "2341", "wifi": "available"}
+    73.45s  user  발화 시작: 맞아.
+    74.08s  user  발화 끝
+    74.94s  agent 발화 끝
+    75.21s  user  발화 시작: 아, 다행이다. 근데, 혹시 그 버스에 콘센트도 있어?
+    78.33s  <ret> 발화 (turn18 첫 프레임)
+    78.72s  agent 발화 시작: <ret> 아쉽게도 해당 버스에는 콘센트가 없습니다… 충전은 어려울 수 있습니다.
+    78.91s  user  발화 끝
+    80.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: {"bus_id": "2341", "power_outlet": "unavailable"}
+    83.72s  agent 발화 끝
+    83.81s  user  발화 시작: 흐음… 그럼 다른 버스는?
+    85.28s  <ret> 발화 (turn20 첫 프레임)
+    85.67s  agent 발화 시작: <ret> 오월 구일에 시카고에서 덴버로 가는 버스 중, 콘센트가 있는 버스는… 오후 두시에 출발해서 밤 열
+    85.74s  user  발화 끝
+    87.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.06s]: [{"bus_id": "5829", "departure_time": "14:00", "arrival_time": "22:00"
+    90.52s  user  발화 시작: 그래.
+    91.33s  user  발화 끝
+    95.57s  user  발화 시작: 그 버스 예약해 줘.
+    95.74s  agent 발화 끝
+    96.32s  <ret> 발화 (turn23 첫 프레임)
+    96.71s  agent 발화 시작: <ret> 오후 두시 버스, 세 분 예약 완료되었습니다… 확인 번호는 PY513입니다.
+    96.99s  user  발화 끝
+    98.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.45s]: {"confirmation_number": "PY513", "status": "confirmed"}
+   101.54s  user  발화 시작: 진짜?
+   102.17s  user  발화 끝
+   103.16s  agent 발화 끝
+   103.75s  user  발화 시작: PY513이 뭐야?
+   105.19s  agent 발화 시작: PY513은 새로 예약하신 버스의 확인 번호입니다… 혹시 이전 예약은 취소해 드릴까요?
+   105.31s  user  발화 끝
+   107.87s  user  발화 시작: 응.
+   108.37s  user  발화 끝
+   111.44s  user  발화 시작: 아니, 됐어. 그 버스에 화장실은 있어?
+   111.62s  agent 발화 끝
+   114.00s  <ret> 발화 (turn29 첫 프레임)
+   114.39s  agent 발화 시작: <ret> 해당 버스에는 화장실이 있습니다… 편하게 이용하실 수 있습니다.
+   114.54s  user  발화 끝
+   116.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: {"bus_id": "5829", "toilet": "available"}
+   118.00s  agent 발화 끝
+   118.12s  user  발화 시작: 좋아. 근데, 혹시 덴버에 도착해서 시내까지 가는 방법도 알려줄 수 있어?
+   123.86s  <ret> 발화 (turn31 첫 프레임)
+   123.93s  agent 발화 시작: <ret> 덴버 버스 정류장에서 시내까지 가는 방법은… 사십일번 버스를 타면 이십분 정도 걸리고, 요금은 이
+   124.04s  user  발화 끝
+   124.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.10s]: [{"mode": "bus", "route": "41", "estimated_time": "20 minutes", "cost"
+   129.98s  user  발화 시작: 진짜?
+   130.62s  user  발화 끝
+   132.03s  agent 발화 끝
+   133.03s  user  발화 시작: 이 점 오 영달러가 얼마야?
+   134.96s  agent 발화 시작: 이 점 오 영달러는 현재 환율로 약 삼천삼백원 정도입니다… 정확한 금액은 환율에 따라 달라질 수 있습니다.
+   135.06s  user  발화 끝
+   142.13s  user  발화 시작: 알았어.
+   142.47s  agent 발화 끝
+   142.78s  agent 발화 시작: 좋습니다.
+   142.90s  user  발화 끝
+   143.59s  agent 발화 끝
+   143.64s  user  발화 시작: …근데 그 버스, 수하물 규정이 어떻게 돼?
+   146.22s  <ret> 발화 (turn38 첫 프레임)
+   146.29s  agent 발화 시작: <ret> 해당 버스의 수하물 규정은… 승객당 두개의 가방까지 허용되며, 각 가방의 최대 무게는 이십삼kg입
+   146.54s  user  발화 끝
+   148.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: {"bus_id": "5829", "luggage_allowance": "2 bags per passenger, max 50 
+   153.98s  user  발화 시작: 아, 알았어. 고마워.
+   154.22s  agent 발화 끝
+   155.59s  agent 발화 시작: 천만에요. 안전한 여행 되세요.
+   155.59s  user  발화 끝
+   157.99s  agent 발화 끝

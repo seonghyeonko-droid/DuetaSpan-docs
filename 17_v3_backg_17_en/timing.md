@@ -58,27 +58,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for an  | S2 Did you remember to take the recyc | S3 Hmm, okay. Is there a range that’s | S4 That's good to know, thanks.
+# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 …sixty and a hundred, right? That  | S3 Anyone seen my keys? I swear I jus | S4 Oh, okay. That’s a bit lower then.
 
-     0.00s  user  발화 시작: What’s a normal heart rate for an adult?
-     1.84s  <ret> 발화 (turn1 첫 프레임)
-     2.24s  agent 발화 시작: <ret> A normal resting heart rate falls between sixty and on
-     2.26s  user  발화 끝
-     3.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: "[source: Mayo Clinic] A normal resting heart rate for adults ranges f
-     9.23s  agent 발화 끝
-     9.37s  user  발화 시작: Oh, that’s… higher than I thought. What about for someone re
-    12.89s  <ret> 발화 (turn3 첫 프레임)
-    13.12s  agent 발화 시작: <ret> For someone very fit, a resting heart rate can be lowe
-    13.17s  user  발화 끝
-    14.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: "[source: American Heart Association] Well-trained athletes may have r
-    21.96s  agent 발화 끝
-    22.67s  user  발화 시작: Did you remember to take the recycling out?
-    24.71s  user  발화 시작: Hmm, okay. Is there a range that’s considered unhealthy?
-    24.75s  user  발화 끝
-    27.30s  <ret> 발화 (turn6 첫 프레임)
-    27.62s  agent 발화 시작: <ret> A consistently high heart rate, above one hundred beat
-    27.66s  user  발화 끝
-    29.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: "[source: National Institutes of Health] A heart rate consistently abo
-    37.88s  user  발화 시작: That's good to know, thanks.
-    37.96s  agent 발화 끝
-    39.36s  user  발화 끝
+     0.00s  user  발화 시작: What is the average heart rate of a healthy person?
+     2.47s  <ret> 발화 (turn1 첫 프레임)
+     2.87s  agent 발화 시작: <ret> A normal resting heart rate for adults generally falls
+     2.87s  user  발화 끝
+     4.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: The normal resting heart rate for adults ranges from 60 to 100 beats p
+     8.98s  agent 발화 끝
+     9.10s  user  발화 시작: …sixty and a hundred, right? That seems high.
+    12.32s  user  발화 끝
+    12.58s  agent 발화 시작: It can feel that way, certainly. A healthy range is quite br
+    16.84s  agent 발화 끝
+    17.53s  user  발화 시작: Anyone seen my keys? I swear I just had them.
+    20.36s  user  발화 끝
+    20.38s  agent 발화 시작: Actually, the generally accepted range is fifty to ninety be
+    24.80s  user  발화 시작: Oh, okay. That’s a bit lower then. Good to know.
+    24.92s  agent 발화 끝
+    28.49s  user  발화 끝

@@ -58,27 +58,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 | S2 저기, 혹시 쓰레기 버렸어요? | S3 …어쨌든, 반 헤일런은 그 곡에 참여하도록 요청을 받은 건지, | S4 그거 흥미롭네요! 그가 망설였다는 건 몰랐어요. 고마워요, 잘
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 | S2 …계속 말씀해 주세요, 잘. 듣고 있어요. | S3 와, 정말 안됐네요. 그 솔로에 대해 돈을 못 받았어요? | S4 맞아요. 고마워요, 잘. 이제 이야기를 알게 되니 조금 마음이
 
-     0.00s  user  발화 시작: 안녕하세요, 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 늘 궁금했거든요.
-     6.63s  user  발화 끝
-     6.68s  <ret> 발화 (turn1 첫 프레임)
-     7.00s  agent 발화 시작: <ret> 네, 마이클 잭슨의 “Beat It” 기타 솔로는 에디 반 헤일런이 연주했어요. 정말 음악사에서 
-     8.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    10.09s  user  발화 시작: 네.
-    10.72s  user  발화 끝
-    15.02s  agent 발화 끝
-    15.10s  user  발화 시작: 와, 진짜요? 다른 사람인 줄 알았어요. 제 친구는 스티브 바이라고 늘 말했어요.
-    20.64s  user  발화 시작: 저기, 혹시 쓰레기 버렸어요?
-    20.76s  user  발화 끝
-    23.41s  user  발화 시작: …어쨌든, 반 헤일런은 그 곡에 참여하도록 요청을 받은 건지, 아니면 마이클이 그냥 넣은 건지 궁금해요.
-    23.51s  user  발화 끝
-    31.14s  <ret> 발화 (turn6 첫 프레임)
-    31.54s  agent 발화 시작: <ret> 에디 반 헤일런은 처음에는 프로젝트 참여를 조금 망설였다고 해요… 퀸시 존스가 그에게 “Beat 
-    31.65s  user  발화 끝
-    33.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: [source: Rolling Stone] Eddie Van Halen was initially hesitant to play
-    44.48s  user  발화 시작: 그거 흥미롭네요! 그가 망설였다는 건 몰랐어요. 고마워요, 잘.
-    44.67s  agent 발화 끝
-    49.15s  user  발화 끝
-    49.49s  agent 발화 시작: 천만에요. 때로는 익숙한 영역에서 벗어나는 것이 아름다운 결과를 가져다주기도 하죠, 그러시죠?
-    56.21s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요? 늘 궁금했거든요.
+     7.20s  <ret> 발화 (turn1 첫 프레임)
+     7.37s  user  발화 끝
+     7.52s  agent 발화 시작: <ret> 네, “Beat It” 기타 솔로는… 에디 반 헤일런이 연주했습니다.
+     9.03s  user  발화 시작: 네.
+     9.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: Eddie Van Halen played the guitar solo on Michael Jackson's "Beat It".
+     9.62s  user  발화 끝
+    11.60s  agent 발화 끝
+    11.66s  user  발화 시작: 아, 나중에 우유 사 오라는 거 잊지 마세요.
+    14.46s  user  발화 시작: …계속 말씀해 주세요, 잘. 듣고 있어요.
+    14.57s  user  발화 끝
+    16.81s  <ret> 발화 (turn5 첫 프레임)
+    17.21s  agent 발화 시작: <ret> 에디 반 헤일런이 그 솔로를 연주했는데, 작곡가 크레딧이나 로열티를 받지 못했대요. 꽤 흥미로운 
+    17.27s  user  발화 끝
+    18.49s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.69s]: [Eddie Van Halen performed the iconic guitar solo on Michael Jackson's
+    24.41s  user  발화 시작: 와, 정말 안됐네요. 그 솔로에 대해 돈을 못 받았어요?
+    24.90s  agent 발화 끝
+    27.97s  user  발화 끝
+    28.11s  agent 발화 시작: 안타깝게도 그런 상황에 놓이는 아티스트들이 많아요, 심지어 아주 유명한 작품에서도요. 스스로를 위해 목소리를
+    39.05s  agent 발화 끝
+    40.19s  user  발화 시작: 맞아요. 고마워요, 잘. 이제 이야기를 알게 되니 조금 마음이 편안해지네요.
+    45.56s  agent 발화 시작: 도움이 됐다니 다행이에요. 때로는 배경을 이해하는 것만으로도 질문에 대한 긴장감을 조금 풀 수 있거든요.
+    45.61s  user  발화 끝
+    52.64s  agent 발화 끝

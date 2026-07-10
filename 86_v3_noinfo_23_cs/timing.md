@@ -68,119 +68,113 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 내일 아침 8시에 짐 싸는 거 잊지 말라고 알려 줘. | S3 “thank you”를 일본어로 번역해 줄 수 있어? | S4 내 호텔 근처에 약국 있어?
+# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 아냐 샤르마. | S3 좋은데. 좀 더 저렴한 곳은 없어? | S4 시부야 역 근처에 평점 좋은 라멘집 있어?
 
      0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.47s  user  발화 끝
-     3.52s  agent 발화 시작: <ret> 음, 작년 12월 24일 도쿄는 기온이 섭씨 7도이고 흐렸는데, 바람은 시속 15킬로미터였어요. 
-     5.28s  ⚡SPAN 주입 [d'=1.92s / d_lead=9.69s]: (tool result) Temperature: 7 degrees Celsius, Condition: Cloudy, Wind:
-    13.21s  agent 발화 끝
-    13.37s  user  발화 시작: 일본어 공부 앱 좀 찾아 줘.
-    14.90s  <ret> 발화 (turn3 첫 프레임)
-    15.30s  agent 발화 시작: <ret> 네, 일본어 공부에 도움이 되는 앱이 여러 개 있어요. Duolingo는 별점 4.7점이고, Me
-    15.35s  user  발화 끝
-    16.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Duolingo - 4.7 stars, Memrise - 4.5 stars, Rosetta Stone
-    19.57s  user  발화 시작: 응.
-    20.11s  user  발화 끝
-    24.15s  agent 발화 끝
-    24.24s  user  발화 시작: 다음 화요일 오사카 가는 비행기 예약해 줘.
-    27.07s  agent 발화 시작: 네, 다음 화요일 오사카행 비행기를 예약해 드리까요? 출발 도시를 선호하시나요?
-    27.24s  user  발화 끝
-    30.36s  user  발화 시작: 음.
-    30.80s  user  발화 끝
-    31.84s  agent 발화 끝
-    31.95s  user  발화 시작: 런던에서 출발하는 걸로 해 줘.
-    33.83s  user  발화 끝
-    33.94s  <ret> 발화 (turn9 첫 프레임)
-    34.02s  agent 발화 시작: <ret> 알겠습니다. 7월 2일 런던에서 오사카행 비행기를 예약해 드렸고, 요금은 850파운드이며, 예약 
-    34.44s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.34s]: (tool result) Flight booked: London to Osaka, July 2nd, £850, confirma
-    42.36s  agent 발화 끝
-    42.49s  user  발화 시작: 어… 나한테 알림 설정해 줄 수 있어?
-    45.61s  agent 발화 시작: 어떤 내용으로, 언제 알림을 설정해 드릴까요?
-    45.67s  user  발화 끝
-    48.23s  user  발화 시작: 내일 아침 8시에 짐 싸는 거 잊지 말라고 알려 줘.
-    48.52s  agent 발화 끝
-    51.35s  <ret> 발화 (turn13 첫 프레임)
-    51.59s  agent 발화 시작: <ret> 네, 내일 7월 1일 아침 8시에 짐 싸는 것을 상기시켜 드릴게요. 여행 준비는 항상 조금 스트레
-    51.61s  user  발화 끝
-    53.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Reminder set: Pack suitcase, July 1st at 8:00 AM.
-    59.05s  agent 발화 끝
-    59.85s  user  발화 시작: 지금 오사카 시간 몇 시야?
-    60.93s  <ret> 발화 (turn15 첫 프레임)
-    61.32s  agent 발화 시작: <ret> 현재 오사카는 오후 4시 32분입니다. 도착하시면 편안한 저녁 시간을 보내실 수 있기를 바랍니다.
-    61.56s  user  발화 끝
-    62.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Current time in Osaka: 4:32 PM.
-    68.13s  agent 발화 끝
-    68.30s  user  발화 시작: 근처에 괜찮은 라멘집 좀 찾아 줘.
-    70.79s  user  발화 끝
-    70.83s  <ret> 발화 (turn17 첫 프레임)
-    70.91s  agent 발화 시작: <ret> 네, 근처에 라멘집이 몇 군데 있어요. 이치란 라멘은 별점 4.6점이고, 긴류 라멘은 4.4점, 
-    72.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) Ichiran Ramen - 4.6 stars, Kinryu Ramen - 4.4 stars, Ram
-    80.27s  agent 발화 끝
-    80.48s  user  발화 시작: 파운드랑 엔 환율이 얼마야?
-    82.29s  <ret> 발화 (turn19 첫 프레임)
-    82.44s  agent 발화 시작: <ret> 현재 1파운드 스털링은 192.35일본 엔과 같습니다.
-    82.46s  user  발화 끝
-    84.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) 1 GBP = 192.35 JPY.
-    85.47s  user  발화 시작: 응.
-    85.82s  user  발화 끝
-    86.74s  agent 발화 끝
-    87.20s  user  발화 시작: “thank you”를 일본어로 번역해 줄 수 있어?
-    89.42s  user  발화 끝
-    89.83s  agent 발화 시작: 네, “thank you”는 일본어로 “arigato”라고 합니다. 배우기 좋은 표현이죠!
-    93.58s  agent 발화 끝
-    94.45s  user  발화 시작: 편안한 음악 틀어 줘.
-    95.51s  <ret> 발화 (turn24 첫 프레임)
-    95.83s  agent 발화 시작: <ret> 네, 지금 앰비언트 사운드를 재생해 드립니다. 음악은 여행 전 불안감을 해소하는 데 도움이 될 수
-    95.97s  user  발화 끝
-    97.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: (tool result) Now playing: Ambient Sounds.
-    98.00s  user  발화 시작: 응응.
-    98.82s  user  발화 끝
-   102.73s  agent 발화 끝
-   102.89s  user  발화 시작: 화요일 오사카 날씨 예보는 어때?
-   104.80s  <ret> 발화 (turn27 첫 프레임)
-   104.96s  agent 발화 시작: <ret> 네, 화요일 오사카 날씨 예보는 섭씨 28도이고 맑으며, 바람은 시속 10킬로미터입니다.
-   105.16s  user  발화 끝
-   106.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Temperature: 28 degrees Celsius, Condition: Sunny, Wind:
-   107.58s  user  발화 시작: 응.
-   107.89s  user  발화 끝
-   110.56s  agent 발화 끝
-   110.88s  user  발화 시작: 기차역 근처에 괜찮은 오사카 호텔 좀 찾아 줘.
-   114.06s  <ret> 발화 (turn30 첫 프레임)
-   114.07s  user  발화 끝
-   114.22s  agent 발화 시작: <ret> 네, 호텔 그란비아 오사카는 별점 4.5점이고, 스위스텔 난카이 오사카는 4.6점, 크로스 호텔 
-   116.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Hotel Granvia Osaka - 4.5 stars, Swissôtel Nankai Osaka 
-   120.21s  user  발화 시작: 어.
-   121.03s  user  발화 끝
-   124.65s  user  발화 시작: 오사카 인구가 얼마야?
-   124.70s  agent 발화 끝
-   126.06s  <ret> 발화 (turn33 첫 프레임)
-   126.30s  agent 발화 시작: <ret> 네, 오사카 인구는 275만 명입니다. 정말 활기찬 도시죠!
-   126.31s  user  발화 끝
-   128.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) Osaka population: 2.75 million.
-   131.39s  agent 발화 끝
-   131.46s  user  발화 시작: 내 호텔 근처에 약국 있어?
-   133.24s  agent 발화 시작: 어느 호텔을 예약하셨는지 알려주셔야 근처 약국을 검색할 수 있습니다. 말씀해 주시겠어요?
-   133.29s  user  발화 끝
-   139.17s  agent 발화 끝
-   139.18s  user  발화 시작: 아, 스위스텔 난카이 오사카.
-   141.21s  <ret> 발화 (turn37 첫 프레임)
-   141.29s  agent 발화 시작: <ret> 네, 코코카라 파인 남바역은 도보로 5분 거리이고, 마쓰모토 기요시 남바는 7분 거리에 있습니다.
-   141.39s  user  발화 끝
-   143.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Cocokara Fine Namba Station - 5 minute walk, Matsumoto K
-   143.97s  user  발화 시작: 응.
-   144.42s  user  발화 끝
-   147.40s  agent 발화 끝
-   147.45s  user  발화 시작: 나 여동생 전화번호 좀 찾아 줄 수 있어?
-   149.51s  <ret> 발화 (turn40 첫 프레임)
-   149.91s  agent 발화 시작: <ret> 네, 죄송하지만 여동생의 연락처를 찾을 수 없습니다. 해당 정보는 저에게 제공되지 않습니다.
-   150.04s  user  발화 끝
-   150.31s  ⚡SPAN 주입 [d'=0.80s / d_lead=6.26s]: (no information found)
-   154.20s  user  발화 시작: 응.
-   154.55s  user  발화 끝
-   156.16s  agent 발화 끝
-   156.46s  user  발화 시작: 알았어. 고마워.
-   158.07s  user  발화 끝
-   158.11s  agent 발화 시작: 천만에요. 오사카로 즐거운 여행 되세요!
-   160.79s  agent 발화 끝
+     3.40s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  user  발화 끝
+     3.56s  agent 발화 시작: <ret> 음, 도쿄의 작년 12월 24일 날씨는… 흐리고 기온은 섭씨 7도였어요.
+     4.84s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.55s]: [{"date": "2023-12-24", "location": "Tokyo", "temperature": 7, "condit
+     9.12s  agent 발화 끝
+     9.36s  user  발화 시작: 춥겠네. 저, 그게 비행기 가격에 영향을 줬을까?
+    13.39s  user  발화 끝
+    13.51s  agent 발화 시작: 날씨는 특히 연말에 항공료에 영향을 줄 수 있어요.
+    15.10s  user  발화 시작: 응.
+    15.54s  user  발화 끝
+    16.88s  agent 발화 끝
+    16.99s  user  발화 시작: 시애틀에서 도쿄 가는 비행기 좀 찾아 줘.
+    19.54s  <ret> 발화 (turn6 첫 프레임)
+    19.86s  agent 발화 시작: <ret> 네, 유나이티드 항공 UA837편이 11시 30분에 출발하고… 가격은 1250달러예요.
+    20.08s  user  발화 끝
+    21.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [{"flight_number": "UA837", "price": 1250, "departure_time": "11:30", 
+    24.16s  user  발화 시작: 음.
+    24.79s  user  발화 끝
+    26.49s  agent 발화 끝
+    26.65s  user  발화 시작: 흠, 그게 제일 싼 거야?
+    28.49s  user  발화 끝
+    28.54s  <ret> 발화 (turn9 첫 프레임)
+    28.62s  agent 발화 시작: <ret> 아니요, 델타 항공 DL281편이 조금 더 저렴해요… 1180달러예요.
+    29.04s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.14s]: [{"flight_number": "DL281", "price": 1180, "departure_time": "13:00", 
+    33.76s  agent 발화 끝
+    33.85s  user  발화 시작: 오, 그게 더 좋네. 저, 그걸로 예약해 줘.
+    36.60s  agent 발화 시작: 예약자 성함을 말씀해 주시겠어요?
+    36.67s  user  발화 끝
+    38.38s  user  발화 시작: 아냐 샤르마.
+    38.67s  agent 발화 끝
+    39.21s  <ret> 발화 (turn13 첫 프레임)
+    39.45s  agent 발화 시작: <ret> 알겠습니다, 아냐 님. DL281편 예약이 완료됐습니다… 확인 번호는 X792KL이에요.
+    39.57s  user  발화 끝
+    41.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: [{"confirmation_number": "X792KL"}]
+    47.75s  agent 발화 끝
+    48.54s  user  발화 시작: 좋아! 그리고 온라인 체크인 알림 설정해 줄래?
+    51.30s  <ret> 발화 (turn15 첫 프레임)
+    51.70s  agent 발화 시작: <ret> 네, 12월 23일 오전 10시에 DL281편 온라인 체크인 알림을 설정했습니다… 알림 ID는 R
+    51.77s  user  발화 끝
+    53.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: [{"reminder_id": "R456ZT"}]
+    60.13s  agent 발화 끝
+    60.34s  user  발화 시작: 완벽해. 호텔 찾는 것도 걱정돼.
+    63.11s  user  발화 끝
+    63.61s  agent 발화 시작: 숙소를 미리 계획하는 건 항상 좋은 생각이에요, 특히 인기 있는 도시에서는요.
+    66.89s  user  발화 시작: 응.
+    67.24s  user  발화 끝
+    68.24s  agent 발화 끝
+    68.96s  user  발화 시작: 시부야 교차로 근처 호텔 좀 찾아 줘.
+    71.09s  <ret> 발화 (turn20 첫 프레임)
+    71.41s  agent 발화 시작: <ret> 네, 세룰리안 타워 도큐 호텔이 시부야 근처에 있고… 평점은 별 4.5개, 1박에 350달러예요.
+    71.54s  user  발화 끝
+    73.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: [{"hotel_name": "Cerulean Tower Tokyu Hotel", "price_per_night": 350, 
+    78.45s  agent 발화 끝
+    78.70s  user  발화 시작: 좋은데. 좀 더 저렴한 곳은 없어?
+    81.41s  <ret> 발화 (turn22 첫 프레임)
+    81.57s  agent 발화 시작: <ret> 네, 시부야 그란벨 호텔이 있어요… 1박에 180달러이고, 평점은 별 4개예요.
+    81.75s  user  발화 끝
+    83.20s  user  발화 시작: 응응.
+    83.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [{"hotel_name": "Shibuya Granbell Hotel", "price_per_night": 180, "rat
+    83.70s  user  발화 끝
+    86.84s  agent 발화 끝
+    89.04s  user  발화 시작: 좋아, 그걸로 할게.
+    90.69s  agent 발화 시작: 훌륭한 선택이에요. 좋은 여행을 위해서는 편안한 숙소가 정말 중요하죠.
+    90.88s  user  발화 끝
+    93.13s  user  발화 시작: 응.
+    93.58s  user  발화 끝
+    95.97s  agent 발화 끝
+    97.16s  user  발화 시작: 거기 12월 24일하고 25일에 방 예약해 줘.
+   100.85s  <ret> 발화 (turn28 첫 프레임)
+   101.01s  agent 발화 시작: <ret> 네, 시부야 그란벨 호텔에 24일과 25일 방이 예약됐습니다… 확인 번호는 H239WX예요.
+   101.14s  user  발화 끝
+   102.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: [{"confirmation_number": "H239WX"}]
+   106.29s  user  발화 시작: 어.
+   107.11s  user  발화 끝
+   109.01s  user  발화 시작: 완벽해! 이제 맛있는 라멘집을 찾아야 해.
+   109.03s  agent 발화 끝
+   112.06s  agent 발화 시작: 아, 정말 좋은 선택이에요! 도쿄는 정말 라멘 천국이죠.
+   112.25s  user  발화 끝
+   116.04s  user  발화 시작: 시부야 역 근처에 평점 좋은 라멘집 있어?
+   116.37s  agent 발화 끝
+   118.52s  <ret> 발화 (turn33 첫 프레임)
+   118.86s  user  발화 끝
+   118.92s  agent 발화 시작: <ret> 네, 이치란 시부야가 평점이 아주 높아요… 별 4.7개이고, 역 근처에 있어요.
+   120.28s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.97s]: [{"restaurant_name": "Ichiran Shibuya", "rating": 4.7}]
+   121.55s  user  발화 시작: 응.
+   121.86s  user  발화 끝
+   124.85s  user  발화 시작: 거기 예약 가능한가?
+   124.89s  agent 발화 끝
+   125.97s  <ret> 발화 (turn36 첫 프레임)
+   126.37s  agent 발화 시작: <ret> 아쉽게도 이치란 시부야는 예약을 받지 않아요… 선착순이에요.
+   126.41s  user  발화 끝
+   127.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: [{"reservations_available": false}]
+   128.77s  user  발화 시작: 와.
+   129.58s  user  발화 끝
+   130.81s  agent 발화 끝
+   130.89s  user  발화 시작: 알았어. 도쿄에 사는 친구가 있는데, 다나카 겐지야. 전화번호 좀 찾아 줄래?
+   135.90s  <ret> 발화 (turn39 첫 프레임)
+   136.14s  agent 발화 시작: <ret> 죄송하지만, 다나카 겐지 님의 연락처는 찾을 수 없었어요. 그런 정보는 개인 정보라서요… 찾을 수
+   136.26s  user  발화 끝
+   137.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (no information found)
+   139.88s  user  발화 시작: 어.
+   140.56s  user  발화 끝
+   143.74s  agent 발화 끝
+   143.77s  user  발화 시작: 아, 맞아. 그렇지. 그럼 이만 할게.
+   148.47s  agent 발화 시작: 아냐 님, 여행 계획을 잘 세우셨네요. 도쿄에서 즐거운 시간 보내세요!
+   148.57s  user  발화 끝
+   152.95s  agent 발화 끝

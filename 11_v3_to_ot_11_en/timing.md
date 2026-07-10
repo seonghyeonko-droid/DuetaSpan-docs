@@ -68,23 +68,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, when was the last time th | S2 Can you believe the price of gas t | S3 Anyway, um, what about the Yankees | S4 Huh. So it’s been more recent for 
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you know when the A's were | S2 …time ago. Uhhh… my sister just te | S3 She says she's bringing pizza over | S4 Yeah, it is. Do you have any tips 
 
-     0.00s  user  발화 시작: Hey, uh, when was the last time the A's were no-hit? I think
-     4.99s  <ret> 발화 (turn1 첫 프레임)
-     5.38s  agent 발화 시작: <ret> The last time the Oakland A’s were no-hit was… on Apri
-     5.46s  user  발화 끝
-     6.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: "[source: Baseball-Reference.com] The last time the Oakland Athletics 
-    11.81s  user  발화 시작: Wow, that *was* a long time ago. I remember that game being 
-    12.01s  agent 발화 끝
-    16.30s  user  발화 시작: Can you believe the price of gas these days?
-    16.49s  user  발화 끝
-    18.63s  user  발화 시작: Anyway, um, what about the Yankees? When were *they* last no
-    18.71s  user  발화 끝
-    22.69s  <ret> 발화 (turn5 첫 프레임)
-    22.79s  user  발화 끝
-    22.91s  agent 발화 시작: <ret> The New York Yankees were last no-hit on May 5th, 2022
-    24.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: "(tool result) The New York Yankees were last no-hit on May 5, 2022, b
-    32.03s  user  발화 시작: Huh. So it’s been more recent for them. Good to know.
-    32.47s  agent 발화 끝
-    34.80s  user  발화 끝
+     0.00s  user  발화 시작: Hey, do you know when the A's were last no-hit? It feels lik
+     4.13s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> The last time the A's were no-hit was… April twenty-fi
+     4.67s  user  발화 끝
+     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: The last time the Oakland Athletics were no-hit was May 9, 2023, when 
+    15.43s  user  발화 시작: Wow, really? That *was* a long…
+    15.64s  agent 발화 끝
+    19.28s  user  발화 끝
+    20.32s  user  발화 시작: …time ago. Uhhh… my sister just texted.
+    23.74s  user  발화 시작: She says she's bringing pizza over later.
+    23.84s  user  발화 끝
+    25.99s  user  발화 시작: Sorry, where were we? Right, the A’s.
+    26.10s  user  발화 끝
+    28.11s  <ret> 발화 (turn6 첫 프레임)
+    28.34s  agent 발화 시작: <ret> We were discussing that game. It can be surprisingly u
+    28.39s  user  발화 끝
+    30.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: [April 21, 2018, the Los Angeles Angels pitched a combined no-hitter a
+    30.54s  user  발화 시작: Right.
+    30.99s  user  발화 끝
+    35.28s  user  발화 시작: Yeah, it is. Do you have any tips for dealing with frustrati
+    35.30s  agent 발화 끝
+    39.16s  user  발화 끝
+    39.21s  agent 발화 시작: Sometimes a simple breathing exercise can help center you. F
+    44.58s  user  발화 시작: Okay.
+    45.13s  user  발화 끝
+    46.16s  agent 발화 시작: A regular sleep schedule also contributes to emotional resil
+    46.25s  agent 발화 끝
+    53.34s  agent 발화 끝

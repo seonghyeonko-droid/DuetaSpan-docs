@@ -60,71 +60,65 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, yes. I need to get to… the Lou | S2 It’s… uh, 15 Rue de Rivoli. | S3 Welll… I'm also vegetarian. Are th | S4 Oh, that sounds nice.
+# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to the Musée d’ | S2 Perfect. And um, do you know if th | S3 I am, but I haven't booked flights | S4 That's a bit pricey.
 
-     0.00s  agent 발화 시작: Bonjour Ava, I’m Hia. It’s lovely to connect with you.
-     3.23s  agent 발화 끝
-     3.38s  user  발화 시작: Uh, yes. I need to get to… the Louvre Museum. How long will 
-     8.21s  <ret> 발화 (turn2 첫 프레임)
-     8.28s  agent 발화 시작: <ret> From your home on Oak Avenue, the Louvre Museum is app
-     8.38s  user  발화 끝
-    10.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: [2025-08-06] User's home address is 30 Oak Avenue.
-    14.17s  user  발화 시작: Okay.
-    14.84s  user  발화 끝
-    18.88s  user  발화 시작: Hmm, is there a faster way?
-    19.36s  agent 발화 끝
-    20.95s  user  발화 끝
-    21.00s  <ret> 발화 (turn5 첫 프레임)
-    21.07s  agent 발화 시작: <ret> Public transportation is often quicker in Paris.
-    22.52s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.41s]: (tool result) Driving directions: 30 Oak Avenue to Louvre Museum, 32 m
-    24.35s  <ret> 발화 (turn6 첫 프레임)
-    24.48s  agent 발화 끝
-    24.58s  agent 발화 시작: <ret> Taking Metro line 1 will get you there in about twenty
-    26.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Transit directions: 28 minutes, Metro line 1.
-    27.18s  user  발화 시작: Yeah.
-    27.81s  user  발화 끝
-    28.41s  agent 발화 끝
-    28.48s  agent 발화 시작: It’s good to consider all options when planning a route. Wha
-    34.69s  agent 발화 끝
-    34.86s  user  발화 시작: I was thinking around ten… ten thirty. But I have a lunch me
-    40.09s  user  발화 끝
-    40.22s  agent 발화 시작: A lunch meeting… Do you have the address for that, Ava? Know
-    43.51s  user  발화 시작: Mm-hmm.
-    44.14s  user  발화 끝
-    46.23s  user  발화 시작: It’s… uh, 15 Rue de Rivoli.
-    46.25s  agent 발화 끝
-    48.60s  <ret> 발화 (turn13 첫 프레임)
-    48.99s  agent 발화 시작: <ret> From the Louvre to 15 Rue de Rivoli is a ten-minute wa
-    49.09s  user  발화 끝
-    49.96s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.65s]: (tool result) Transit directions: 10 minutes, walking.
-    54.44s  user  발화 시작: That’s good. I’m glad it’s close.
-    54.64s  agent 발화 끝
-    56.91s  agent 발화 시작: It sounds like you're efficiently planning your day, which i
-    56.93s  user  발화 끝
-    58.37s  user  발화 시작: Mhm.
-    58.86s  user  발화 끝
-    60.47s  agent 발화 끝
-    60.52s  user  발화 시작: Welll… I'm also vegetarian. Are there good vegetarian option
-    65.50s  <ret> 발화 (turn18 첫 프레임)
-    65.82s  agent 발화 시작: <ret> Knowing you are vegetarian helps me suggest places. Th
-    65.84s  user  발화 끝
-    67.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.87s]: [2026-04-15] User is vegetarian.
-    71.05s  user  발화 시작: Right.
-    71.68s  user  발화 끝
-    73.69s  agent 발화 끝
-    73.91s  user  발화 시작: Anything you particularly recommend?
-    75.90s  agent 발화 시작: There’s a highly-rated vegetarian bistro, “Le Potager du Mar
-    76.13s  user  발화 끝
-    78.31s  user  발화 시작: Yeah.
-    78.80s  user  발화 끝
-    82.92s  user  발화 시작: Oh, that sounds nice.
-    82.99s  agent 발화 끝
-    84.72s  agent 발화 시작: It’s a popular choice with locals, and they focus on fresh, 
-    84.85s  user  발화 끝
-    88.45s  user  발화 시작: Uh-huh.
-    88.95s  user  발화 끝
-    92.47s  agent 발화 끝
-    92.52s  user  발화 시작: Perfect. Thanks, Hia.
-    94.27s  user  발화 끝
-    94.27s  agent 발화 시작: You’re very welcome, Ava. It’s been a pleasure assisting you
-    99.73s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour Ava, I’m Hia. It’s lovely to connect with you today;
+     6.31s  user  발화 시작: Yes, I need to get to the Musée d’Orsay. How long will that 
+     6.35s  agent 발화 끝
+    10.54s  <ret> 발화 (turn2 첫 프레임)
+    10.62s  agent 발화 시작: <ret> The Musée d’Orsay is approximately six point two kilom
+    10.66s  user  발화 끝
+    12.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [{"distance": "6.2 km", "estimated_time": "25 minutes"}]
+    18.82s  agent 발화 끝
+    21.47s  user  발화 시작: Oh, that's not bad at all. Is there parking nearby?
+    24.36s  <ret> 발화 (turn4 첫 프레임)
+    24.71s  user  발화 끝
+    24.75s  agent 발화 시작: <ret> Parking near the Musée d’Orsay is somewhat limited, wi
+    26.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: [{"parking_lots": ["Parking Saint-Germain", "Parking Rivoli"], "availa
+    28.11s  user  발화 시작: Uh-huh.
+    28.61s  user  발화 끝
+    31.70s  agent 발화 시작: …though availability can change quickly.
+    31.71s  agent 발화 끝
+    34.52s  agent 발화 끝
+    34.73s  user  발화 시작: Hmm, maybe I should take the metro instead. Which line?
+    38.14s  agent 발화 시작: The closest metro station is Solférino, served by line twelv
+    38.29s  user  발화 끝
+    41.98s  user  발화 시작: Okay.
+    42.66s  user  발화 끝
+    45.46s  agent 발화 끝
+    45.91s  user  발화 시작: Perfect. And um, do you know if they have a cafe with vegeta
+    51.34s  <ret> 발화 (turn11 첫 프레임)
+    51.42s  agent 발화 시작: <ret> Yes, knowing you are vegetarian, I can check for suita
+    51.61s  user  발화 끝
+    53.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: [2026-04-15] User is vegetarian.
+    61.15s  agent 발화 끝
+    61.67s  user  발화 시작: That’s great! I’m also planning a trip to Kyoto, do you reme
+    66.01s  user  발화 끝
+    66.06s  <ret> 발화 (turn13 첫 프레임)
+    66.38s  agent 발화 시작: <ret> Yes, of course. You mentioned a trip to Kyoto in Decem
+    68.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: [2026-06-16] User is planning a trip to Kyoto in December.
+    70.75s  user  발화 시작: Mm-hmm.
+    71.38s  user  발화 끝
+    74.13s  user  발화 시작: I am, but I haven't booked flights yet.
+    74.34s  agent 발화 끝
+    76.51s  agent 발화 시작: It’s wise to book in advance, especially for December travel
+    76.67s  user  발화 끝
+    84.34s  agent 발화 끝
+    84.49s  user  발화 시작: Not really, just the cheapest option, I think.
+    86.76s  <ret> 발화 (turn18 첫 프레임)
+    87.16s  agent 발화 시작: <ret> The least expensive flights from Paris to Kyoto in Dec
+    87.26s  user  발화 끝
+    88.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.12s]: [{"airline": "Air France", "price": "€850", "duration": "16 hours"}]
+    90.59s  user  발화 시작: Mhm.
+    91.42s  user  발화 끝
+    95.19s  user  발화 시작: That's a bit pricey.
+    95.28s  agent 발화 끝
+    96.46s  agent 발화 시작: Flights to Kyoto can be expensive, especially during peak se
+    96.61s  user  발화 끝
+   101.88s  user  발화 시작: Right.
+   102.70s  user  발화 끝
+   104.67s  agent 발화 끝
+   104.77s  user  발화 시작: No, that’s okay. Thank you.
+   106.70s  user  발화 끝
+   106.78s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could assist you with y
+   115.73s  agent 발화 끝

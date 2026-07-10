@@ -62,30 +62,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.49s][moshi] ⟨ret@2.42s⟩ I’m afraid I don’t ⟦⚡SPAN@4.42s: (no information found)⟧ have that information readily available at the moment. It’s a surprisingly specific question!
-[  5.68s][user ] «backchannel» Mhm.
-[ 10.12s][user ] Hmm, well… what about the US ⟨ret@13.19s⟩ Senate?
-[ 13.43s][moshi] The US ⟦⚡SPAN@14.47s: [source: Wikipedia] The Senate is composed of 100 senators, two from each of the 50 states.⟧ Senate is made up of one hundred senators, with each state represented by two individuals. That’s a good system for balance.
-[ 18.83s][user ] «backchannel» Okay.
-[ 22.42s][user ] And who are the senators from California right ⟨ret@25.05s⟩ now?
-[ 25.29s][moshi] The senators currently ⟦⚡SPAN@27.05s: (tool result) Alex Padilla and Laphonza Butler are the current senators representing California.⟧ representing California are Alex Padilla and Laphonza Butler. It’s good to stay informed about your representatives.
-[ 33.41s][user ] Laphonza Butler… I hadn’t heard of her.
-[ 36.60s][moshi] She was appointed in late 2023, so it’s understandable if you’re not yet familiar with her work.
-[ 39.76s][user ] «backchannel» Yeah.
-[ 43.01s][user ] What did she do *before* becoming a senator?
-[ 46.20s][moshi] ⟨ret@46.12s⟩ Before becoming a ⟦⚡SPAN@48.12s: (tool result) Prior to her appointment, Butler served as president of SEIU Local 721 and a senior advisor to K⟧ senator, Ms. Butler was president of SEIU Local 721 and advised Kamala Harris. It's a diverse background.
-[ 55.43s][user ] SEIU… that’s a union, right?
-[ 57.99s][moshi] Yes, it’s the Service Employees International Union—a large labor organization focused on public sector workers.
-[ 63.05s][user ] «backchannel» Okay.
-[ 65.58s][user ] Interesting. Um… what's the weather like in Sacramento right ⟨ret@70.33s⟩ now?
-[ 70.65s][moshi] It’s currently seventy-five ⟦⚡SPAN@72.33s: (tool result) The current weather in Sacramento is 75 degrees Fahrenheit and sunny.⟧ degrees and sunny in Sacramento. A lovely day for being outdoors, it seems.
-[ 75.36s][user ] «backchannel» Right.
-[ 77.84s][user ] That *does* sound nice. I’m trying to plan a trip.
-[ 81.66s][moshi] That’s wonderful! Planning can be half the fun, and it’s great to have something to look forward to.
-[ 87.49s][user ] Do you know anything about good hiking trails near ⟨ret@90.98s⟩ Yosemite?
-[ 91.22s][moshi] A popular, challenging hike ⟦⚡SPAN@92.98s: (tool result) The Mist Trail to Vernal Fall and Nevada Fall is a popular, challenging hike near Yosemite Valle⟧ near Yosemite Valley is the Mist Trail to Vernal Fall and Nevada Fall. It’s known for its stunning views.
-[100.19s][user ] That sounds… strenuous. Is there something a little ⟨ret@103.87s⟩ easier?
-[104.11s][moshi] The Lower Yosemite ⟦⚡SPAN@105.87s: (tool result) The Lower Yosemite Fall Trail is a paved, one-mile loop suitable for all fitness levels.⟧ Fall Trail is a paved, one-mile loop, a good choice for all fitness levels. It’s still beautiful!
-[113.25s][user ] Perfect! That sounds much…
-[117.47s][user ] …more my speed. Thanks, Nias.
-[120.42s][moshi] You’re very welcome. I’m glad I could help you find a trail that suits you. Enjoy your trip!
+[  2.56s][moshi] ⟨ret@2.48s⟩ The number of senators ⟦⚡SPAN@4.48s: The French Senate has 348 senators.⟧ in the French Senate is… unfortunately, I’m not finding a current, definitive number at this moment. It seems that information isn’t readily available… three hundred and forty-eight.
+[ 11.98s][user ] «backchannel» Yeah.
+[ 16.13s][user ] Oh. Hmm. Well, what about the United States ⟨ret@20.33s⟩ Senate?
+[ 20.57s][moshi] The United States ⟦⚡SPAN@22.33s: The Senate is composed of one hundred senators, two from each state.⟧ Senate currently has one hundred senators, two from each state… That's a fairly stable number, thankfully… one hundred senators, two from each state.
+[ 31.55s][user ] That makes sense. So, uh, do you know when the first ever senate was formed? Like, ⟨ret@37.68s⟩ anywhere?
+[ 37.76s][moshi] Determining the very first ⟦⚡SPAN@39.68s: The United States Senate currently has one hundred senators, two from each state.⟧ senate is complex, but many trace the idea back to the Roman Senate, established around… It was in 509 BC, after the overthrow of the Roman monarchy… five hundred and nine BC
+[ 52.77s][user ] Wow, that’s… really old.
+[ 55.36s][moshi] It is, isn’t it? It’s remarkable how some foundational structures endure across millennia.
+[ 57.04s][user ] «backchannel» Yeah, yeah.
+[ 60.28s][user ] Yeah. Say, I’ve been trying to get more sleep lately. Any quick tips?
+[ 64.67s][moshi] Establishing a regular bedtime routine can be quite effective.
+[ 68.47s][user ] I’ve tried that, but I still find myself tossing and turning.
+[ 72.41s][moshi] It’s common for that to take time. Perhaps we could explore some relaxation techniques?
+[ 78.25s][user ] Like ⟨ret@78.76s⟩ what?
+[ 79.16s][moshi] Progressive muscle relaxation ⟦⚡SPAN@80.76s: It’s common for that to take time.⟧ involves systematically tensing and releasing different muscle groups, starting with… Your toes and working your way up to your head… your toes and working your way up to your head.
+[ 90.33s][user ] «backchannel» Yeah.
+[ 94.13s][moshi] It can feel that way initially, but many find it deeply calming with practice. It helps release physical tension.
+[ 98.97s][user ] «backchannel» Okay.
+[101.18s][user ] Maybe. I’m also trying to drink more water.
+[104.23s][moshi] That’s a wonderful goal! Staying hydrated is crucial for overall wellbeing, and can certainly impact sleep quality.
+[109.43s][user ] «backchannel» Right.
+[112.24s][user ] Good to know. Thanks, Nias.
+[114.38s][moshi] You’re very welcome. It’s a pleasure to support you on your journey to better health.

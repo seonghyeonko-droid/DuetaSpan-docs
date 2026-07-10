@@ -76,83 +76,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Is there… a cheaper option? | S3 Uhhh… one hour before. | S4 Thanks, Tellar.
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 I’m also looking at Riverbend Esta | S3 Great. And can you send me directi | S4 Actually, one last thing—what’s th
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.34s  <ret> 발화 (turn1 첫 프레임)
-     3.58s  agent 발화 시작: <ret> I’ve scheduled a viewing for you at The Grandview Loft
-     3.71s  user  발화 끝
-     5.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:
-    11.32s  agent 발화 끝
-    11.55s  user  발화 시작: Actually… June sixteenth would be better.
-    13.69s  <ret> 발화 (turn3 첫 프레임)
-    13.85s  agent 발화 시작: <ret> No problem at all. I’ve rescheduled your viewing for T
-    13.96s  user  발화 끝
-    15.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.04s]: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 
-    24.88s  user  발화 시작: Great. And can you check…
-    24.89s  agent 발화 끝
-    26.80s  user  발화 끝
-    28.30s  user  발화 시작: …if there’s parking available nearby?
-    30.14s  <ret> 발화 (turn6 첫 프레임)
-    30.38s  agent 발화 시작: <ret> Yes, there’s parking at the Grandview Garage, two bloc
-    30.47s  user  발화 끝
-    32.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Parking available at Grandview Garage, 2 blocks away, $5
-    39.03s  user  발화 시작: Is there… a cheaper option?
-    39.14s  agent 발화 끝
-    40.84s  <ret> 발화 (turn8 첫 프레임)
-    41.00s  agent 발화 시작: <ret> There's street parking available, a five-minute walk a
-    41.15s  user  발화 끝
-    42.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) Street parking available, limited spaces, $2/hour, 5-min
-    49.95s  agent 발화 끝
-    49.96s  user  발화 시작: Okay, street parking it is.
-    52.13s  user  발화 끝
-    52.56s  agent 발화 시작: Wonderful. I’ve noted your preference for street parking. It
-    55.17s  user  발화 시작: Right.
-    55.80s  user  발화 끝
-    57.42s  agent 발화 끝
-    58.77s  user  발화 시작: Could you add a reminder to my calendar?
-    61.31s  agent 발화 시작: What time would you like the reminder set for?
-    61.36s  user  발화 끝
-    63.89s  agent 발화 끝
-    64.07s  user  발화 시작: Uhhh… one hour before.
-    65.61s  <ret> 발화 (turn15 첫 프레임)
-    65.82s  user  발화 끝
-    66.01s  agent 발화 시작: <ret> I’ve set a reminder for June sixteenth at one PM for y
-    67.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) Reminder set for June 16th, 1:00 PM: The Grandview Lofts
-    73.84s  agent 발화 끝
-    73.94s  user  발화 시작: Perfect. And can you find the address for me?
-    76.42s  <ret> 발화 (turn17 첫 프레임)
-    76.43s  user  발화 끝
-    76.66s  agent 발화 시작: <ret> The address for The Grandview Lofts is one twenty-thre
-    78.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: (tool result) The Grandview Lofts: 123 Elm Street, Anytown, USA.
-    84.72s  agent 발화 끝
-    85.79s  user  발화 시작: One twenty-three… Elm Street. Right.
-    88.76s  agent 발화 시작: Yes, that’s correct. One twenty-three Elm Street. It's alway
-    88.89s  user  발화 끝
-    91.92s  user  발화 시작: Uh-huh.
-    92.37s  user  발화 끝
-    93.99s  user  발화 시작: Can you send that address to my phone?
-    94.22s  agent 발화 끝
-    96.03s  <ret> 발화 (turn22 첫 프레임)
-    96.19s  agent 발화 시작: <ret> I’ve just sent the address to your phone. Having it re
-    96.25s  user  발화 끝
-    98.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Message sent to user's phone number.
-    99.87s  user  발화 시작: Yeah.
-   100.37s  user  발화 끝
-   101.33s  agent 발화 끝
-   101.53s  user  발화 시작: Thanks, Tellar.
-   102.56s  agent 발화 시작: You’re very welcome. I’m glad I could help streamline things
-   102.62s  user  발화 끝
-   105.58s  user  발화 시작: Okay.
-   106.11s  user  발화 끝
-   106.59s  agent 발화 끝
-   107.69s  user  발화 시작: Is there a coffee shop nearby?
-   109.40s  <ret> 발화 (turn28 첫 프레임)
-   109.56s  agent 발화 시작: <ret> Brew & Bean Coffee is just three tenths of a mile from
-   109.66s  user  발화 끝
-   110.12s  ⚡SPAN 주입 [d'=0.72s / d_lead=9.41s]: (tool result) Brew & Bean Coffee: 0.3 miles, 4.5 stars.
-   118.97s  agent 발화 끝
-   121.03s  user  발화 시작: Great. I think that’s all for now.
-   122.92s  user  발화 끝
-   123.17s  agent 발화 시작: Wonderful. Enjoy your viewing, and I hope you find your perf
-   127.06s  agent 발화 끝
+     3.47s  <ret> 발화 (turn1 첫 프레임)
+     3.71s  agent 발화 시작: <ret> Let's see about scheduling a viewing at The Grandview 
+     3.84s  user  발화 끝
+     4.99s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.23s]: (no information found)
+     8.94s  agent 발화 끝
+     9.18s  user  발화 시작: Actually, make that June sixteenth.
+    11.25s  <ret> 발화 (turn3 첫 프레임)
+    11.26s  user  발화 끝
+    11.41s  agent 발화 시작: <ret> Okay, a viewing at The Grandview Lofts is now set for…
+    13.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: [{"appointmentId": "78923", "time": "2:30 PM"}]
+    19.94s  user  발화 시작: That sounds perfect. Thanks!
+    19.94s  agent 발화 끝
+    21.87s  user  발화 끝
+    21.99s  agent 발화 시작: Wonderful! It’s good to get things settled quickly. Planning
+    26.99s  agent 발화 끝
+    27.14s  user  발화 시작: I’m also looking at Riverbend Estates. Could you check avail
+    31.12s  <ret> 발화 (turn7 첫 프레임)
+    31.20s  agent 발화 시작: <ret> Riverbend Estates has openings on June twentieth at 10
+    31.31s  user  발화 끝
+    33.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: [{"date": "June twentieth", "time": "10:00 AM"}, {"date": "June twenty
+    40.62s  agent 발화 끝
+    40.97s  user  발화 시작: Let’s go with the twentieth.
+    42.44s  user  발화 끝
+    42.54s  <ret> 발화 (turn9 첫 프레임)
+    42.70s  agent 발화 시작: <ret> Excellent. A viewing at Riverbend Estates is confirmed
+    44.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [{"appointmentId": "45612", "time": "10:00 AM"}]
+    48.24s  user  발화 시작: Mm-hmm.
+    48.73s  user  발화 끝
+    51.14s  agent 발화 끝
+    52.47s  user  발화 시작: Great. And can you send me directions to The Grandview Lofts
+    55.46s  <ret> 발화 (turn12 첫 프레임)
+    55.62s  agent 발화 시작: <ret> Directions to The Grandview Lofts are approximately… …
+    55.76s  user  발화 끝
+    57.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.39s]: [{"distance": "8.2 miles", "estimatedTime": "15 minutes", "route": "Vi
+    66.01s  agent 발화 끝
+    66.11s  user  발화 시작: That's helpful. Thank you so much!
+    68.51s  user  발화 끝
+    68.80s  agent 발화 시작: You're very welcome. Taking these steps is a big accomplishm
+    74.77s  agent 발화 끝
+    74.88s  user  발화 시작: Actually, one last thing—what’s the weather forecast for Jun
+    78.81s  user  발화 끝
+    78.84s  <ret> 발화 (turn16 첫 프레임)
+    79.07s  agent 발화 시작: <ret> For June sixteenth, the forecast is showing a high of…
+    80.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: [{"date": "June sixteenth", "high": "78°F", "low": "65°F", "condition"
+    84.13s  user  발화 시작: Mm-hmm.
+    84.63s  user  발화 끝
+    90.84s  agent 발화 끝
+    91.45s  user  발화 시작: Perfect. That’s all I needed.
+    93.19s  user  발화 끝
+    93.31s  agent 발화 시작: Wonderful! It seems you’ve got everything well in hand. Enjo
+    97.98s  agent 발화 끝

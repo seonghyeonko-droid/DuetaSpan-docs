@@ -65,24 +65,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.51s][moshi] ⟨ret@4.43s⟩ The Sydney Opera ⟦⚡SPAN@6.11s: (tool result) -33.8568, 151.2153⟧ House’s coordinates are… negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
+[  3.73s][moshi] ⟨ret@3.65s⟩ The ⟦⚡SPAN@5.33s: [{"latitude": -33.8568, "longitude": 151.2153}]⟧ Sydney Opera House is at latitude… -33.8568 and longitude 151.2153.
       CALL: {"function": "maps_geo", "arguments": {"location": "Sydney Opera House"}}
-[  8.95s][user ] «backchannel» Yeah.
-[ 14.97s][user ] Okay, good. And can you find me hotels near that location?
-[ 19.09s][moshi] ⟨ret@18.86s⟩ There are several hotels ⟦⚡SPAN@20.86s: (tool result) Park Hyatt Sydney - $650/night, Shangri-La Hotel - $400/night, Harbour Rocks Hotel - $250/night⟧ nearby. The Park Hyatt Sydney is six hundred fifty dollars a night, the Shangri-La is four hundred, and the Harbour Rocks Hotel is two hundred fifty.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
-[ 23.60s][user ] «backchannel» Yeah.
-[ 30.05s][moshi] Those prices are per night, of course, and can fluctuate depending on availability and the time of year.
-[ 36.02s][user ] Hmm, are there any with a ⟨ret@38.05s⟩ pool?
-[ 38.29s][moshi] «interrupted» Both the Park ⟦⚡SPAN@39.65s: (tool result) Park Hyatt Sydney - $650/night (pool, spa), Shangri-La Hotel - $400/night (pool, gym)⟧ Hyatt Sydney and the Shangri-La Hotel have pools. The Park Hyatt also has a spa, and the Shangri-La has a gym—
-      CALL: {"function": "hotels_filter", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "amenities": "pool"}}
-[ 46.20s][user ] «interrupts_prev» …Actually, hold on. What about something a little ⟨ret@50.27s⟩ more…budget-friendly?
-[ 50.51s][moshi] The Russell Hotel is ⟦⚡SPAN@52.27s: (tool result) The Russell Hotel - $220/night, Sydney Harbour YHA - $80/night (hostel)⟧ two hundred twenty dollars a night, and the Sydney Harbour YHA is eighty dollars—it’s a hostel, though.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "max_price": "300"}}
-[ 58.37s][user ] A hostel could work. What’s the address for that one?
-[ 61.56s][moshi] ⟨ret@61.24s⟩ The ⟦⚡SPAN@62.36s: (tool result) 118 Cumberland St, The Rocks NSW 2000, Australia⟧ address for the Sydney Harbour YHA is one eighteen Cumberland Street, The Rocks, New South Wales, two thousand, Australia.
-      CALL: {"function": "hotels_details", "arguments": {"hotel_name": "Sydney Harbour YHA"}}
-[ 67.08s][user ] «backchannel» Yeah, totally.
-[ 69.91s][user ] Perfect. Can you check if they have availability next Friday?
-[ 74.22s][moshi] ⟨ret@74.06s⟩ Yes, they do. There ⟦⚡SPAN@76.06s: (tool result) Available - 10 beds remaining⟧ are currently ten beds still available next Friday. I hope you have a lovely stay.
-      CALL: {"function": "hotels_availability", "arguments": {"hotel_name": "Sydney Harbour YHA", "date": "next Friday"}}
+[  8.47s][user ] «backchannel» Wow.
+[ 13.05s][user ] And what’s the weather like there right now?
+[ 16.09s][moshi] ⟨ret@15.85s⟩ It’s currently 22 degrees ⟦⚡SPAN@17.85s: [{"temperature": 22, "condition": "Cloudy"}]⟧ and cloudy in Sydney. It’s a lovely day for a visit!
+      CALL: {"function": "weather", "arguments": {"latitude": -33.8568, "longitude": 151.2153}}
+[ 19.34s][user ] «backchannel» Right.
+[ 21.39s][user ] Hmm, is there anything happening at the Opera House tonight?
+[ 24.97s][moshi] ⟨ret@24.90s⟩ There’s a performance of ⟦⚡SPAN@26.90s: [{"event": "Tosca", "time": "7:30 PM"}]⟧ Tosca at 7:30 PM tonight. It’s a popular choice…
+      CALL: {"function": "event_search", "arguments": {"location": "Sydney Opera House", "date": "today"}}
+[ 26.57s][user ] «backchannel» Yeah.
+[ 30.46s][user ] …Could you book me a ticket for that, please?
+[ 33.24s][moshi] And what seating section would you prefer? We have stalls, dress circle, and grand tier.
+[ 39.66s][user ] Stalls, please.
+[ 41.61s][moshi] ⟨ret@41.53s⟩ I’ve booked ⟦⚡SPAN@42.73s: [{"confirmation_number": "AX7294", "price": 189.00}]⟧ a stall ticket for you. Your confirmation number is AX7294, and the price is 189 dollars.
+      CALL: {"function": "ticket_booking", "arguments": {"event": "Tosca", "location": "Sydney Opera House", "time": "7:30 PM", "section": "stalls"}}
+[ 44.50s][user ] «backchannel» Oh.
+[ 49.83s][moshi] It's wonderful that you're going to see Tosca. It’s a truly captivating opera.
+[ 55.41s][user ] What time does the box office close ⟨ret@57.59s⟩ tonight?
+[ 57.91s][moshi] The ⟦⚡SPAN@58.63s: [{"closing_time": "8:00 PM"}]⟧ box office closes at 8:00 PM tonight. You’ll have plenty of time to collect your tickets if needed…
+      CALL: {"function": "business_hours", "arguments": {"location": "Sydney Opera House Box Office"}}
+[ 61.63s][user ] «backchannel» Oh.
+[ 63.65s][user ] And can you set a reminder…
+[ 66.75s][user ] …for me to leave at 6:30 PM?
+[ 69.67s][moshi] ⟨ret@69.52s⟩ I’ve set a reminder to ⟦⚡SPAN@71.52s: [{"status": "Reminder set"}]⟧ leave for Tosca at 6:30 PM. Have a fantastic evening!
+      CALL: {"function": "reminder", "arguments": {"time": "6:30 PM", "event": "Leave for Tosca"}}
