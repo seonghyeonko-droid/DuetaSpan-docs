@@ -64,33 +64,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading…
-[  2.47s][user ] …about surveillance and it made me think…
-[  6.17s][user ] …where did the term “Big Brother” actually come ⟨ret@8.87s⟩ from?
-[  9.17s][moshi] The phrase “Big Brother” ⟦⚡SPAN@10.87s: [source: Wikipedia] "The term 'Big Brother' originates from the 1949 novel Nineteen Eighty-Four by George Orwe⟧ actually comes from a novel, and it refers to the all-seeing leader… in Nineteen Eighty-Four.
-[ 15.62s][user ] Nineteen Eighty-Four…
-[ 18.40s][user ] …right. That sounds familiar. Was it a commentary on something specific happening at the ⟨ret@23.29s⟩ time?
-[ 23.69s][moshi] Orwell wrote it shortly ⟦⚡SPAN@25.29s: [source: Britannica] "Nineteen Eighty-Four, dystopian novel published in 1949 by English author George Orwell,⟧ after World War II, and it's generally understood as a warning about totalitarianism.
-[ 29.67s][moshi] It was indeed a warning about totalitarian regimes, and Orwell published it… in 1949.
-[ 31.88s][user ] «backchannel» Mhm.
-[ 36.09s][user ] So it wasn’t just a random idea he had?
-[ 38.43s][moshi] No, not at all. He was deeply affected by the political climate of the time, particularly Stalinist Russia and Nazi Germany.
-[ 45.96s][user ] Hmm, that makes sense. I wonder if he could have imagined how relevant it would still be today.
-[ 50.59s][moshi] It’s quite striking, isn’t it? The themes of surveillance and control continue to resonate deeply.
-[ 53.41s][user ] «backchannel» Yeah.
-[ 56.61s][user ] It really does. Speaking of surveillance, can you tell me what the current laws are regarding data privacy in California?
-[ 62.64s][moshi] ⟨ret@62.56s⟩ California’s data privacy is protected ⟦⚡SPAN@64.56s: (tool result) "California Consumer Privacy Act (CCPA) grants consumers rights over their personal data, includ⟧ by the CCPA, which gives you rights over your data… including the right to know, delete, and opt-out.
-[ 67.48s][user ] «backchannel» Yeah.
-[ 71.01s][user ] That sounds good, at least. Can I find a summary of that ⟨ret@74.01s⟩ online?
-[ 74.16s][moshi] I found a summary ⟦⚡SPAN@76.01s: (tool result) "The California Consumer Privacy Act (CCPA) gives California consumers more control over their p⟧ stating that the CCPA allows California consumers to control their data… and to request businesses to reveal or delete it.
-[ 78.06s][user ] «backchannel» Right.
-[ 83.90s][user ] Okay, that’s helpful. It’s good to know what my rights are.
-[ 86.70s][moshi] It absolutely is, and being informed is the first step in protecting yourself.
-[ 91.18s][user ] I'm trying to declutter my digital life, actually. Any tips for that?
-[ 94.75s][moshi] As a productivity guide, I always recommend starting with a simple audit of your online accounts.
-[ 99.91s][user ] That sounds… overwhelming.
-[102.10s][user ] …maybe I should start smaller?
-[103.83s][moshi] [happy] You're right to think so! Starting small is the most effective approach for lasting change.
-[105.77s][user ] «backchannel» Oh.
-[108.93s][user ] Maybe just deleting unused apps then?
-[111.47s][moshi] That’s a perfect first step. It’s a quick win that can create a sense of momentum.
+[  0.00s][user ] I was just wondering… where did the term “big brother” actually come from? …
+[  4.38s][user ] …I always assumed it was…
+[  8.10s][user ] …just a general expression for ⟨ret@12.33s⟩ authority.
+[ 12.64s][moshi] The ⟦⚡SPAN@14.33s: [source: Wikipedia] “The term ‘Big Brother’ originated from George Orwell’s dystopian novel Nineteen Eighty-Fo⟧ phrase “big brother” comes from a novel… Nineteen Eighty-Four.
+[ 20.86s][user ] Nineteen Eighty-Four, huh? Was that a popular book when it first came ⟨ret@25.16s⟩ out?
+[ 25.55s][moshi] It ⟦⚡SPAN@27.16s: [source: Britannica] “Nineteen Eighty-Four was an immediate critical and commercial success upon its publicati⟧ was actually quite popular right away… in 1949.
+[ 28.62s][user ] «backchannel» Mhm.
+[ 35.28s][user ] A foundational text… so it really influenced a lot of other stories?
+[ 37.34s][moshi] It certainly did. Many later works of science fiction and political commentary owe a debt to Orwell’s vision.
+[ 39.98s][user ] Hmm, I think I remember my English teacher talking about it. What was the main idea of the book, if you had to ⟨ret@46.86s⟩ summarize?
+[ 47.26s][moshi] The ⟦⚡SPAN@47.36s: [source: LitCharts] “Nineteen Eighty-Four explores the dangers of totalitarianism, mass surveillance, and the ⟧ book explores the dangers of totalitarianism… through mass surveillance.
+[ 47.41s][user ] «backchannel» Yeah.
+[ 47.93s][user ] That sounds… pretty bleak. Did Orwell base it…
+[ 57.02s][user ] …on anything real that was happening at the time?
+[ 57.48s][moshi] ⟨ret@57.41s⟩ Orwell found inspiration in real ⟦⚡SPAN@59.41s: [source: History.com] “Orwell drew inspiration from Stalinist Russia, Nazi Germany, and the political climate ⟧ events… Stalinist Russia and Nazi Germany.
+[ 59.74s][user ] «backchannel» Yeah.
+[ 61.29s][user ] So it wasn’t just a random scary story, it was based on things he saw.
+[ 64.98s][moshi] Exactly. It was a response to the political realities he observed during and after World War II.
+[ 67.97s][user ] «backchannel» Right.
+[ 72.86s][user ] That makes sense. Were there any specific technologies that inspired the surveillance ⟨ret@76.67s⟩ aspect?
+[ 76.99s][moshi] Early ⟦⚡SPAN@78.67s: [source: Smithsonian Magazine] “Although not yet widespread in 1949, early forms of telescreens were envisione⟧ ideas about telescreens… influenced Orwell’s depiction of surveillance.
+[ 85.63s][user ] Wow, so even the idea of the telescreens wasn’t entirely new at the time.
+[ 90.28s][moshi] That's right. He extrapolated from emerging technologies and anxieties about their potential misuse.
+[100.73s][user ] It's a bit unsettling to think about how relevant it still is today.
+[103.60s][moshi] It is, isn't it? The themes Orwell explored continue to resonate in our modern world.
+[106.27s][user ] «backchannel» Yeah.
+[110.51s][user ] I wonder if he'd be surprised by how much of his vision came true.
+[114.45s][moshi] [curious] I imagine he would be, and perhaps a little disheartened. It’s a powerful reminder to stay vigilant.
+[116.10s][user ] «backchannel» Right.
+[120.44s][user ] You’re right. Well, thanks for explaining the origin of “big brother” to me.
+[123.97s][moshi] You’re very welcome. Sometimes understanding the roots of a phrase can give it a new weight.

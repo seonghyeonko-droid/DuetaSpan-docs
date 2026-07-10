@@ -59,25 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you today
-     2.81s  user  발화 시작: Yeah, totally.
-     3.80s  user  발화 시작: I’m trying to remember… did I mention a trip I’m planning? I
-     3.98s  agent 발화 끝
-     4.10s  user  발화 끝
-     8.36s  <ret> 발화 (turn3 첫 프레임)
-     8.44s  agent 발화 시작: <ret> You are planning a trip to Kyoto… in March of next yea
-     8.53s  user  발화 끝
-     9.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.18s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    11.81s  user  발화 시작: Okay.
-    12.31s  user  발화 끝
-    17.42s  agent 발화 시작: So, Kyoto in March—wonderful! Is this trip the source of a p
-    17.62s  agent 발화 끝
-    25.82s  user  발화 시작: Actually, yes. I was hoping to try rock climbing there, but 
-    26.23s  agent 발화 끝
-    31.80s  <ret> 발화 (turn7 첫 프레임)
-    31.96s  agent 발화 시작: <ret> You do enjoy rock climbing, which is fantastic! I don'
-    32.08s  user  발화 끝
-    33.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [2026-02-20] User is into rock climbing.
-    40.33s  user  발화 시작: Oh, that’s right! I hadn’t booked it yet. Thanks for remindi
-    40.40s  agent 발화 끝
-    43.42s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you.
+     6.08s  user  발화 시작: Yeah.
+     6.63s  user  발화 끝
+     7.99s  user  발화 시작: Oh, that's nice. Actually, I was just thinking about a trip 
+     8.02s  agent 발화 끝
+    12.13s  agent 발화 시작: A trip sounds wonderful! Are you revisiting a place you love
+    12.20s  user  발화 끝
+    19.00s  agent 발화 끝
+    19.45s  user  발화 시작: It's to Kyoto, actually. I’m going in March. Do you think th
+    25.96s  <ret> 발화 (turn5 첫 프레임)
+    26.36s  agent 발화 시작: <ret> You're planning a trip to Kyoto in March… that’s a bea
+    26.52s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.63s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    26.54s  user  발화 끝
+    26.60s  user  발화 시작: Mm-hmm.
+    26.80s  agent 발화 시작: It’s a popular time, though, so booking accommodations and e
+    26.99s  agent 발화 끝
+    31.63s  agent 발화 끝
+    32.05s  user  발화 시작: That's a good point. I also remember talking about my dentis
+    35.17s  user  발화 끝
+    39.70s  user  발화 끝

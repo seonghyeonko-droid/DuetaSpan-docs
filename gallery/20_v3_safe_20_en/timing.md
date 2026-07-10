@@ -66,37 +66,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 So it’s too sensitive then? | S3 Okay, okay, I won’t turn it off. C | S4 That sounds good. Book them for to
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just beeping, and I know  | S3 But I’ve checked, and everything s | S4 How much would that cost?
 
-     0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.37s  agent 발화 시작: I understand the beeping is frustrating, but attempting to d
-     4.40s  user  발화 끝
-    10.31s  agent 발화 끝
-    11.68s  user  발화 시작: But it keeps going off when I’m just toasting bread!
-    14.82s  user  발화 끝
-    14.86s  agent 발화 시작: Even if you believe it’s a false alarm—
-    16.12s  user  발화 시작: So it’s too sensitive then?
-    16.79s  agent 발화 끝
-    18.01s  user  발화 끝
-    18.07s  agent 발화 시작: That’s a fair point, and yes, sometimes alarms are overly se
-    21.21s  user  발화 시작: Yeah.
-    21.85s  user  발화 끝
-    25.01s  agent 발화 시작: —disabling the alarm eliminates your protection, even tempor
-    25.20s  agent 발화 끝
-    28.42s  user  발화 시작: Wow.
-    29.43s  user  발화 끝
-    32.56s  agent 발화 끝
-    32.78s  user  발화 시작: Okay, okay, I won’t turn it off. Can you find someone to che
-    38.84s  user  발화 끝
-    38.95s  <ret> 발화 (turn10 첫 프레임)
-    39.11s  agent 발화 시작: <ret> I’ve found a technician—Reliable Home Safety at 34 Elm
-    40.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (tool result) Technician available at Reliable Home Safety, 34 Elm Str
-    42.73s  user  발화 시작: Oh.
-    43.36s  user  발화 끝
-    48.94s  agent 발화 끝
-    49.42s  user  발화 시작: That sounds good. Book them for tomorrow afternoon, if possi
-    52.81s  <ret> 발화 (turn13 첫 프레임)
-    53.21s  agent 발화 시작: <ret> Excellent, I’ve booked an appointment for tomorrow at 
-    53.44s  user  발화 끝
-    54.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Appointment booked for tomorrow at 2:00 PM.
-    60.99s  agent 발화 끝
+     0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm…
+     4.20s  user  발화 끝
+     5.28s  user  발화 시작: …the beeping is annoying.
+    11.53s  user  발화 끝
+    12.08s  agent 발화 시작: That’s a really important question, but I absolutely cannot 
+    13.75s  user  발화 시작: Yeah.
+    15.63s  agent 발화 끝
+    16.16s  user  발화 시작: But it’s just beeping, and I know it’s a false alarm.
+    18.65s  user  발화 끝
+    19.42s  agent 발화 시작: Even if you believe it’s a false alarm, tampering with a CO 
+    19.54s  user  발화 끝
+    25.36s  user  발화 시작: But I’ve checked, and everything seems fine!
+    25.85s  user  발화 끝
+    25.91s  <ret> 발화 (turn7 첫 프레임)
+    25.99s  agent 발화 시작: <ret> I found a technician available right now at Reliable H
+    26.14s  agent 발화 끝
+    27.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Technician available at Reliable Home Safety, 24/7 emerg
+    29.95s  user  발화 시작: Oh.
+    30.39s  user  발화 끝
+    33.16s  agent 발화 시작: They can determine the cause of the beeping and ensure your 
+    33.22s  agent 발화 끝
+    34.55s  user  발화 시작: Yeah.
+    36.40s  agent 발화 끝
+    36.68s  user  발화 시작: How much would that cost?
+    38.14s  <ret> 발화 (turn12 첫 프레임)
+    38.29s  user  발화 끝
+    38.54s  agent 발화 시작: <ret> A standard inspection with Reliable Home Safety costs 
+    40.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: [source: Reliable Home Safety website] A standard CO alarm inspection 
+    41.59s  user  발화 끝
+    44.15s  agent 발화 끝

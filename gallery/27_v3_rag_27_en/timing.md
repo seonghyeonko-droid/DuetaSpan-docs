@@ -60,41 +60,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been getting into classical m | S2 Oh, okay. And what about Lux Aurun | S3 He's the one who did Gruppen… | S4 So, when was Stockhausen born, the
+# EXAMINER(FDB-v2) 단계: S1 I’ve been getting into classical m | S2 Yeah, I heard it in a movie. But w | S3 Oh, 1997… that’s— | S4 Was he born a long time before tha
 
-     0.00s  user  발화 시작: I’ve been getting into classical music lately, and I’m curio
-     4.12s  agent 발화 시작: That’s wonderful—exploring new music is a great way to broad
-     4.25s  user  발화 끝
-     7.54s  user  발화 시작: Yeah, yeah.
-     8.83s  user  발화 끝
-    10.41s  user  발화 시작: Do you know when Lux Aeterna was composed?
-    10.42s  agent 발화 끝
-    12.75s  <ret> 발화 (turn4 첫 프레임)
-    13.15s  agent 발화 시작: <ret> The motet Lux Aeterna was actually composed… in 1966. 
-    13.37s  user  발화 끝
-    14.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: [source: Britannica] Lux Aeterna, a motet for mixed choir, was compose
-    15.76s  user  발화 시작: Mm-hmm.
-    16.26s  user  발화 끝
-    21.17s  agent 발화 끝
-    21.28s  user  발화 시작: Oh, okay. And what about Lux Aurunque? Is that another piece
-    26.49s  <ret> 발화 (turn7 첫 프레임)
-    26.57s  agent 발화 시작: <ret> Lux Aurunque is a different composition—it was created
-    26.79s  user  발화 끝
-    27.61s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.02s]: [source: AllMusic] Lux Aurunque is a composition by Karlheinz Stockhau
-    32.52s  user  발화 시작: Wait, Stockhausen?
-    32.59s  agent 발화 끝
-    33.99s  user  발화 끝
-    33.99s  agent 발화 시작: —and finished in 1969—
-    36.49s  user  발화 시작: He's the one who did Gruppen…
-    36.72s  agent 발화 끝
-    38.23s  user  발화 끝
-    39.55s  user  발화 시작: …right? I read something about that.
-    41.48s  agent 발화 시작: Yes, that’s right. Karlheinz Stockhausen is also well-known 
-    41.62s  user  발화 끝
-    47.73s  agent 발화 끝
-    49.33s  user  발화 시작: So, when was Stockhausen born, then?
-    51.18s  <ret> 발화 (turn14 첫 프레임)
-    51.42s  agent 발화 시작: <ret> Karlheinz Stockhausen was born… on August 23, 1928. He
-    51.59s  user  발화 끝
-    53.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: [source: Grove Music Online] Karlheinz Stockhausen was born on August 
-    59.03s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been getting into classical music lately, and I was won
+     4.41s  agent 발화 시작: That’s a beautiful piece to discover. It’s quite popular in 
+     4.54s  user  발화 끝
+     7.43s  user  발화 시작: Yeah, yeah.
+     8.62s  user  발화 끝
+    10.01s  agent 발화 끝
+    10.12s  user  발화 시작: Yeah, I heard it in a movie. But who actually wrote it?
+    11.56s  <ret> 발화 (turn4 첫 프레임)
+    11.94s  agent 발화 시작: <ret> The composer of Lux Aeterna was… Clint Mansell, in 199
+    12.12s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.82s]: [source: Wikipedia] Clint Mansell composed Lux Aeterna in 1997 for the
+    12.15s  user  발화 시작: Mm-hmm.
+    12.19s  user  발화 끝
+    12.77s  agent 발화 끝
+    13.44s  user  발화 시작: Oh, 1997… that’s—
+    14.07s  user  발화 끝
+    14.08s  user  발화 시작: Was he born a long time before that, do you know?
+    16.30s  <ret> 발화 (turn8 첫 프레임)
+    16.38s  agent 발화 시작: <ret> Clint Mansell was born… on January 18, 1963. It’s amaz
+    16.43s  user  발화 끝
+    18.14s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.05s]: [source: AllMusic] Clint Mansell was born on January 18, 1963, in Stok
+    19.43s  agent 발화 끝
+    19.75s  user  발화 끝

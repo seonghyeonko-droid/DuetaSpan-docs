@@ -69,11 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it’s lovely to connect with you. I’m Ara, and I help pe
-     6.71s  agent 발화 끝
-     7.79s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
-    15.12s  user  발화 끝
-    15.13s  agent 발화 시작: It’s completely understandable to feel that way, Kim. So man
-    24.97s  agent 발화 끝
-    24.99s  user  발화 시작: Welll… I’m thinking about retirement. I haven’t really saved
-    32.64s  user  발화 끝
+     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you.
+     5.79s  agent 발화 끝
+     5.82s  user  발화 시작: Ara… that’s a pretty name. Honestly, I’m just feeling a litt
+    11.47s  user  발화 끝
+    11.87s  agent 발화 시작: It’s completely understandable to feel that way—New York *is
+    19.84s  agent 발화 끝
+    21.15s  user  발화 시작: Well, I’m trying to save for a trip next year, but it feels 
+    27.40s  user  발화 끝
+    27.55s  agent 발화 시작: That’s a wonderful goal! It’s great you’re thinking ahead. P
+    34.22s  agent 발화 끝

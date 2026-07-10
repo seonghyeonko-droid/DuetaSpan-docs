@@ -56,24 +56,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just listening to Mamma Mia and I’m trying to remember who wrote “My Love, My Life.” It’s such a beautiful song.
-[  6.00s][moshi] It’s lovely isn’t it? That song really captures a certain feeling, doesn't it?
-[ 10.09s][user ] It does. I’m putting together a playlist and want to make sure I credit the ⟨ret@14.64s⟩ songwriter correctly.
-[ 14.96s][moshi] The song “My Love, ⟦⚡SPAN@16.64s: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus.⟧ My Life” was written… by Björn Ulvaeus. He’s a very talented songwriter.
-[ 21.12s][user ] Oh, Björn Ulvaeus! Right, of course. I always get the ABBA members mixed ⟨ret@25.84s⟩ up.
-[ 25.99s][moshi] Björn Ulvaeus was ⟦⚡SPAN@27.84s: [source: AllMusic] Björn Ulvaeus was born on April 25, 1945, in Gothenburg, Sweden.⟧ born… on April 25, 1945. That makes him a Taurus!
-[ 33.47s][user ] That’s interesting! Did he write…
-[ 37.98s][user ] …a lot of ABBA’s ⟨ret@39.61s⟩ hits?
-[ 39.85s][moshi] Björn Ulvaeus and Benny ⟦⚡SPAN@41.61s: [source: The Official ABBA Website] Ulvaeus and Benny Andersson composed almost all of ABBA’s songs together.⟧ Andersson composed… almost all of ABBA’s songs together. It was quite a partnership.
-[ 46.51s][user ] Wow, almost all of them? That’s incredible.
-[ 49.73s][user ] I'm actually moving to Sweden soon. I'm a little nervous about the ⟨ret@53.34s⟩ change.
-[ 53.66s][moshi] ⟦⚡SPAN IRRELEVANT@53.84s: (tool result) AAPL: 170.34⟧ [curious] Moving to a new country is a big step! It’s perfectly normal to feel a little anxious.
-[ 56.49s][user ] «backchannel» Yeah.
-[ 60.36s][user ] It is! I'm hoping to really immerse myself in the culture, but I don’t know where to start.
-[ 65.36s][moshi] That’s wonderful. Gothenburg, where Björn Ulvaeus was born, is a really vibrant city with a lot to offer.
-[ 67.90s][user ] «backchannel» Yeah.
-[ 73.41s][user ] Really? What’s it ⟨ret@74.67s⟩ like?
-[ 74.83s][moshi] Gothenburg is known… ⟦⚡SPAN@76.43s: [source: Visit Gothenburg] Gothenburg is known for its canals, leafy boulevards, and a thriving café culture.⟧ for its canals and thriving café culture. It’s a very walkable city, too.
-[ 80.33s][user ] «backchannel» Uh-huh.
-[ 82.27s][user ] That sounds lovely, actually. Maybe starting in Gothenburg would be a good idea.
-[ 87.17s][moshi] [happy] I think so. It’s a beautiful city with a friendly atmosphere, and it's a great place to settle in.
+[  0.00s][user ] I was just watching Mamma Mia!…
+[  6.76s][user ] …and I'm curious… who actually wrote “My Love, My Life”? It’s such a beautiful song.
+[ 13.88s][moshi] It really is a standout track from the musical. It’s wonderful you’re enjoying the film.
+[ 18.84s][user ] Yeah, it got me thinking about the songwriting team. I know ABBA performed it, but who penned the lyrics and music?
+[ 24.72s][moshi] ⟨ret@24.41s⟩ The song “My Love, My Life” was ⟦⚡SPAN@26.41s: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus and Benny Andersson.⟧ created by… Björn Ulvaeus and Benny Andersson. They’re a fantastic writing duo, of course.
+[ 29.27s][user ] Oh, okay, so it wasn't Agnetha or Anni-Frid who wrote it? I always assumed all four contributed to every ⟨ret@36.19s⟩ song.
+[ 36.35s][moshi] It's a common assumption, as their voices are so ⟦⚡SPAN IRRELEVANT@38.19s: (tool result) AAPL: 170.34⟧ central to ABBA’s sound. But Björn and Benny were primarily the composers and songwriters.
+[ 41.58s][user ] That makes sense. Were they writing songs for other artists at the same time as ⟨ret@47.30s⟩ ABBA?
+[ 47.54s][moshi] Yes, Björn and Benny also wrote songs for other ⟦⚡SPAN@49.30s: [source: AllMusic] Ulvaeus and Andersson wrote songs for a variety of artists, including the British group Gem⟧ artists, including the British group Gemini. They were very in demand.
+[ 52.82s][user ] Gemini… I don't think I know them. Did they have any hits?
+[ 57.12s][moshi] Gemini had a few minor hits in the early 1970s, but they’re not as widely known as ABBA. It’s interesting to explore those connections.
+[ 57.29s][user ] «backchannel» Oh.
+[ 58.40s][user ] It is. I’m thinking of learning more about ABBA’s songwriting process. Any recommendations for where to start?
+[ 66.84s][moshi] [happy] There are some excellent documentaries about ABBA available. I'd be glad to share some links if you'd like. It's a fascinating story.

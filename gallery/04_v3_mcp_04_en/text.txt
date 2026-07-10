@@ -64,15 +64,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.33s⟩ one?
-[  4.65s][moshi] The ⟦⚡SPAN@5.29s: (tool result) User agent set to SuperCrawler version 10.1.⟧ user agent is now set to SuperCrawler version ten point one, as requested.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.12s⟩ one?
+[  4.44s][moshi] I’ve ⟦⚡SPAN@5.08s: (tool result) User agent set to SuperCrawler version 10.1⟧ set the user agent to SuperCrawler version 10.1 for you. It’s a small change, but sometimes helpful for testing.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  6.78s][user ] «backchannel» Mhm.
-[  9.27s][user ] Okay, good. And can you now check what the current IP address ⟨ret@13.55s⟩ is?
-[ 13.79s][moshi] Your current ⟦⚡SPAN@14.91s: (tool result) 203.0.113.42⟧ IP address is two zero three dot zero dot one one three dot forty-two.
-      CALL: {"function": "get_ip_address", "arguments": {}}
-[ 19.21s][user ] Hmm, that seems… unusual. Is that definitely my IP?
-[ 25.00s][moshi] It’s understandable to question a result that feels off. Sometimes these things can be a little tricky to interpret.
-[ 32.18s][user ] I think something’s wrong. Can you try a different IP lookup service, just to be sure?
-[ 37.40s][moshi] ⟨ret@37.33s⟩ The alternative ⟦⚡SPAN@38.37s: (tool result) 198.51.100.17⟧ service shows your IP address is one nine eight dot five one dot one hundred dot seventeen.
-      CALL: {"function": "get_ip_address_alternative", "arguments": {}}
+[  7.69s][user ] «backchannel» Yeah.
+[ 11.09s][user ] Hmm, okay… but does that affect my current browsing session, or just new tabs?
+[ 17.03s][moshi] That adjustment applies to all new tabs and windows you open from this point forward. Your currently open tabs will remain unchanged.
+[ 27.82s][user ] I— I mean, can you *undo* that, just in case? ⟨ret@34.19s⟩
+[ 34.51s][moshi] I’ve now ⟦⚡SPAN@35.23s: (tool result) User agent reset to default⟧ reset the user agent back to the default setting. It’s good to have options, isn’t it?
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}

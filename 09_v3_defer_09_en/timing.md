@@ -68,29 +68,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 And what's the cancellation policy | S3 That sounds good, but— | S4 Is parking included with the reser
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 What’s the cancellation policy? | S3 That sounds good, but— | S4 Is parking included with the reser
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.62s  <ret> 발화 (turn1 첫 프레임)
-     5.86s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
-     6.02s  user  발화 끝
-     7.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: (tool result) CONFIRMED: 3 rooms at Ocean View Hotel, San Diego, Febru
-    11.45s  user  발화 시작: Right.
-    12.27s  user  발화 끝
-    15.64s  agent 발화 끝
-    15.68s  user  발화 시작: And what's the cancellation policy?
-    17.55s  <ret> 발화 (turn4 첫 프레임)
-    17.70s  agent 발화 시작: <ret> The Ocean View Hotel allows free cancellation up to se
-    17.89s  user  발화 끝
-    19.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Ocean View Hotel: Free cancellation until 72 hours prior
-    24.36s  user  발화 시작: That sounds good, but—
-    24.42s  agent 발화 끝
-    26.07s  user  발화 시작: Is parking included with the reservation?
-    26.30s  user  발화 끝
-    28.16s  <ret> 발화 (turn7 첫 프레임)
-    28.56s  agent 발화 시작: <ret> Parking is available at the hotel for twenty-five doll
-    28.65s  user  발화 끝
-    30.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Parking: $25 per night.
-    35.40s  agent 발화 시작: I can add parking to your reservation for an additional twen
-    35.59s  agent 발화 끝
-    41.01s  agent 발화 끝
+     4.97s  <ret> 발화 (turn1 첫 프레임)
+     5.20s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
+     5.46s  user  발화 끝
+     6.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
+    12.01s  user  발화 시작: Right.
+    12.51s  user  발화 끝
+    16.98s  agent 발화 끝
+    19.73s  user  발화 시작: What’s the cancellation policy?
+    22.76s  <ret> 발화 (turn4 첫 프레임)
+    23.08s  agent 발화 시작: <ret> You can cancel for free until January twenty-fifth.
+    23.29s  user  발화 끝
+    24.36s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.93s]: (tool result) Free cancellation until January 25th.
+    25.01s  agent 발화 끝
+    25.48s  user  발화 시작: That sounds good, but—
+    28.31s  user  발화 시작: Is parking included with the reservation?
+    28.43s  user  발화 끝
+    34.32s  <ret> 발화 (turn7 첫 프레임)
+    34.48s  agent 발화 시작: <ret> Parking is available at the hotel for a daily fee of t
+    34.57s  user  발화 끝
+    36.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Parking: $25 per day.
+    40.55s  agent 발화 끝

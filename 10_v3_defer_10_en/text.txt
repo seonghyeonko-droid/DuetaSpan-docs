@@ -65,16 +65,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  5.07s][moshi] ⟨ret@5.00s⟩ I found ⟦⚡SPAN@7.00s: (tool result) 3 files found: "Paris EiffelTower.jpg", "Nice Beach.png", "Lyon Museum.jpeg"⟧ three pictures from your France holiday last year, excluding thumbnails: "Paris_EiffelTower.jpg", "Nice_Beach.png", and "Lyon_Museum.jpeg".
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": 2023, "exclude": "thumbnails"}}
-[ 12.56s][user ] «backchannel» Mhm.
-[ 17.71s][user ] Can you send “Paris_EiffelTower.jpg” to my sister, Sarah? ⟨ret@22.34s⟩
-[ 22.50s][moshi] I’ve sent ⟦⚡SPAN@24.34s: (tool result) File sent to Sarah. Confirmation number: 829571⟧ “Paris_EiffelTower.jpg” to Sarah. Your confirmation number is 829571.
-      CALL: {"function": "send_file", "arguments": {"filename": "Paris_EiffelTower.jpg", "recipient": "Sarah"}}
-[ 24.66s][user ] «backchannel» Really?
-[ 29.59s][user ] What’s the weather…
-[ 32.39s][user ] …like in Lyon right now?
-[ 34.13s][moshi] Let me check on that.
-[ 35.07s][user ] Okay.
-  ⟦⚡지연 SPAN 도착@34.85s: (tool result) Partly cloudy, 18°C⟧
-[ 35.63s][moshi] «deferred_result» ⟨ret@35.63s⟩ The weather in Lyon is currently partly cloudy with a temperature of 18 degrees Celsius. It’s partly cloudy in Lyon right now, and the temperature is 18 degrees Celsius.
+[  4.86s][moshi] ⟨ret@4.78s⟩ I found thirty-two images ⟦⚡SPAN@6.78s: (tool result) Found 32 images matching 'France holiday' from 2023, excluding thumbnails.⟧ from your France holiday in 2023, excluding the thumbnails.
+      CALL: {"function": "search_files", "arguments": {"query": "France holiday", "year": "last year", "exclude": "thumbnails"}}
+[  7.32s][user ] «backchannel» Uh-huh.
+[ 10.62s][user ] Can you open the first ⟨ret@12.07s⟩ one?
+[ 12.22s][moshi] I’ve ⟦⚡SPAN@13.11s: (tool result) Opened /Users/sunan/Pictures/France2023/image001.jpg⟧ opened the first picture, it’s from your France trip in 2023.
+      CALL: {"function": "open_file", "arguments": {"file_path": "/Users/sunan/Pictures/France2023/image001.jpg"}}
+[ 14.19s][user ] «backchannel» Yeah.
+[ 17.50s][user ] That’s lovely, thanks!

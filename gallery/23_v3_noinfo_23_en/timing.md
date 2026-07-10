@@ -68,91 +68,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Perfect! And uh, what’s the exchan | S3 Do you think I should practice som | S4 How much does that ticket cost?
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Uobei… is that a conveyor belt sus | S3 Wonderful. I also need to set a re | S4 I have, but I don’t even know wher
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.24s  <ret> 발화 (turn1 첫 프레임)
-     3.63s  agent 발화 시작: <ret> The weather in Tokyo on December twenty-fourth last ye
-     3.89s  user  발화 끝
-     5.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degr
-    11.41s  agent 발화 끝
-    11.83s  user  발화 시작: Okay, good to know. Can you book me a flight to Tokyo from N
-    16.60s  <ret> 발화 (turn3 첫 프레임)
-    16.94s  agent 발화 시작: <ret> I’ve booked your flight to Tokyo from New York for Jan
-    17.29s  user  발화 끝
-    18.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) Flight booked, confirmation number is Alpha789.
-    18.96s  user  발화 시작: Wow.
-    19.69s  user  발화 끝
-    22.71s  user  발화 시작: Great! And could you find me a hotel near the Tokyo Skytree?
-    23.25s  agent 발화 끝
-    26.29s  <ret> 발화 (turn6 첫 프레임)
-    26.68s  agent 발화 시작: <ret> The Gate Hotel Kiyamachi is 0.8 kilometers from the To
-    26.88s  user  발화 끝
-    28.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) The Gate Hotel Kiyamachi is 0.8 kilometers away, rated 4
-    33.16s  agent 발화 끝
-    33.32s  user  발화 시작: That sounds nice. Is it possible to reserve a table for two 
-    39.38s  <ret> 발화 (turn8 첫 프레임)
-    39.45s  agent 발화 시작: <ret> Yes, I’ve reserved a table for two at Sushi Saito for 
-    39.66s  user  발화 끝
-    40.73s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.18s]: (tool result) Reservation confirmed at Sushi Saito, 7:30 PM, January 1
-    44.63s  agent 발화 끝
-    44.66s  user  발화 시작: Perfect! And uh, what’s the exchange rate between US dollars
-    50.17s  <ret> 발화 (turn10 첫 프레임)
-    50.45s  user  발화 끝
-    50.49s  agent 발화 시작: <ret> Currently, one US dollar equals 148.32 Japanese yen.
-    51.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.02s]: (tool result) 1 USD equals 148.32 JPY.
-    54.51s  agent 발화 끝
-    55.16s  user  발화 시작: Okay, good. I’m a little stressed about this trip, to be hon
-    58.61s  agent 발화 시작: [curious] It’s totally normal to feel stressed before a big 
-    58.72s  user  발화 끝
-    65.14s  agent 발화 끝
-    65.47s  user  발화 시작: Yeah, I— I mean, it's a pretty important business meeting.
-    68.40s  agent 발화 시작: That makes sense. A big meeting can add pressure, but you've
-    68.65s  user  발화 끝
-    73.03s  agent 발화 끝
-    73.35s  user  발화 시작: I’m worried about the language barrier, mostly.
-    75.93s  agent 발화 시작: That's a very valid concern! Knowing some basic phrases can 
-    76.07s  user  발화 끝
-    82.39s  user  발화 시작: Do you think I should practice some Japanese before I go?
-    82.42s  agent 발화 끝
-    85.34s  agent 발화 시작: Definitely. Even a little bit of effort can make a big diffe
-    85.43s  user  발화 끝
-    90.99s  agent 발화 끝
-    91.61s  user  발화 시작: Can you find me a good app for learning basic Japanese phras
-    94.65s  <ret> 발화 (turn20 첫 프레임)
-    95.00s  agent 발화 시작: <ret> I found Duolingo, which is highly rated for learning J
-    95.31s  user  발화 끝
-    96.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Duolingo is highly rated for beginners.
-    98.33s  user  발화 시작: Yeah, totally.
-    99.61s  user  발화 끝
-    99.76s  user  발화 시작: Okay, Duolingo. I'll check that out. What about transportati
-    99.86s  agent 발화 끝
-   104.58s  <ret> 발화 (turn23 첫 프레임)
-   104.74s  agent 발화 시작: <ret> Tokyo has a very comprehensive subway and train system
-   104.81s  user  발화 끝
-   106.50s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.68s]: (tool result) Tokyo has extensive subway and train systems.
-   109.38s  user  발화 시작: Is there a pass I can buy for the subway?
-   109.42s  agent 발화 끝
-   111.52s  <ret> 발화 (turn25 첫 프레임)
-   111.92s  agent 발화 시작: <ret> The Tokyo Subway Ticket offers unlimited rides on the 
-   112.11s  user  발화 끝
-   113.27s  user  발화 시작: Uh-huh.
-   113.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) The Tokyo Subway Ticket offers unlimited rides.
-   113.76s  user  발화 끝
-   116.27s  user  발화 시작: How much does that ticket cost?
-   116.45s  agent 발화 끝
-   117.60s  <ret> 발화 (turn28 첫 프레임)
-   117.84s  agent 발화 시작: <ret> A 24-hour Tokyo Subway Ticket costs 800 yen.
-   118.07s  user  발화 끝
-   119.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.56s]: (tool result) 800 yen for a 24-hour pass.
-   119.16s  user  발화 시작: Wow.
-   119.98s  user  발화 끝
-   121.26s  user  발화 시작: Hmm, I'm trying to remember if I told you about my cat…
-   121.40s  agent 발화 끝
-   124.28s  agent 발화 시작: [happy] I do recall you mentioning your cat, Mittens, back o
-   124.49s  user  발화 끝
-   130.39s  agent 발화 끝
-   130.63s  user  발화 시작: Oh, that’s right! Well, I think I’m ready for this trip now.
-   135.09s  agent 발화 시작: You're very welcome. It sounds like you’ve got everything co
-   135.21s  user  발화 끝
-   138.93s  agent 발화 끝
+     3.26s  <ret> 발화 (turn1 첫 프레임)
+     3.66s  agent 발화 시작: <ret> The weather in Tokyo on December twenty-fourth last ye
+     3.84s  user  발화 끝
+     5.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Partly cloudy, high of 10 degrees Celsius, low of 4 degr
+    12.33s  agent 발화 끝
+    12.60s  user  발화 시작: Okay, good to know. And can you find me a highly-rated sushi
+    15.66s  <ret> 발화 (turn3 첫 프레임)
+    15.83s  user  발화 끝
+    16.06s  agent 발화 시작: <ret> There’s Sushi Dai, a highly-rated sushi restaurant—it 
+    17.35s  user  발화 시작: Wow.
+    17.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) Sushi Dai, 4.6 stars, 10-minute walk from Shibuya statio
+    17.94s  user  발화 끝
+    20.14s  user  발화 시작: Hmm, Sushi Dai… is it usually very crowded?
+    20.22s  agent 발화 끝
+    22.50s  <ret> 발화 (turn6 첫 프레임)
+    22.89s  agent 발화 시작: <ret> Sushi Dai is often very crowded, and you can expect a 
+    23.10s  user  발화 끝
+    24.42s  ⚡SPAN 주입 [d'=1.92s / d_lead=13.08s]: (tool result) Often very crowded, expect a 2-hour wait during peak hou
+    35.97s  agent 발화 끝
+    36.01s  <ret> 발화 (turn8 첫 프레임)
+    36.02s  user  발화 시작: Two hours! That’s… a long time. Maybe something a little les
+    36.32s  agent 발화 시작: <ret> How about Uobei Shibuya Dogenzaka? It has 4.2 stars an
+    36.38s  user  발화 끝
+    36.51s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.79s]: (tool result) Uobei Shibuya Dogenzaka, 4.2 stars, 5-minute walk from S
+    40.11s  agent 발화 끝
+    40.22s  user  발화 시작: Uobei… is that a conveyor belt sushi place?
+    48.81s  <ret> 발화 (turn10 첫 프레임)
+    49.13s  agent 발화 시작: <ret> Yes, Uobei Shibuya Dogenzaka is a conveyor belt sushi 
+    49.26s  user  발화 끝
+    50.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Yes, it’s a conveyor belt sushi restaurant with tablet o
+    54.59s  user  발화 시작: Sounds fun! Can you make a reservation for two people there 
+    54.60s  agent 발화 끝
+    60.51s  <ret> 발화 (turn12 첫 프레임)
+    60.58s  agent 발화 시작: <ret> Great! I've confirmed your reservation for two at Uobe
+    60.67s  user  발화 끝
+    62.11s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.00s]: (tool result) Reservation confirmed for two at Uobei Shibuya Dogenzaka
+    63.58s  agent 발화 끝
+    63.72s  user  발화 시작: Fantastic! That's perfect. Now, I need to send a message to 
+    68.36s  agent 발화 시작: What message would you like to send to Hana?
+    68.40s  user  발화 끝
+    77.84s  user  발화 시작: Tell her I’ve made dinner plans and will meet her at Uobei i
+    77.87s  agent 발화 끝
+    82.75s  <ret> 발화 (turn16 첫 프레임)
+    82.90s  agent 발화 시작: <ret> I’ve sent the message to Hana—she should receive it sh
+    83.16s  user  발화 끝
+    84.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Message sent to Hana.
+    88.50s  user  발화 시작: Wonderful. I also need to set a reminder to leave for the re
+    88.55s  agent 발화 끝
+    90.70s  <ret> 발화 (turn18 첫 프레임)
+    90.86s  agent 발화 시작: <ret> I've set a reminder for 6:30 PM to leave for Uobei in 
+    91.04s  user  발화 끝
+    92.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) Reminder set for 6:30 PM: Leave for Uobei in Shibuya.
+    96.19s  agent 발화 끝
+    96.43s  user  발화 시작: Excellent. I’m feeling much less stressed about tomorrow now
+    97.46s  agent 발화 시작: [happy] That’s wonderful to hear! Planning ahead can really 
+    97.52s  user  발화 끝
+   101.13s  user  발화 시작: Yeah, totally.
+   102.56s  user  발화 시작: I am. Actually, I’ve been thinking about my career… I’m feel
+   102.74s  agent 발화 끝
+   105.53s  user  발화 끝
+   107.23s  user  발화 끝
+   107.27s  agent 발화 시작: It’s very common to feel stuck in your career—many of my cli
+   115.34s  agent 발화 끝
+   115.97s  user  발화 시작: I’m not sure my current role is utilizing my strengths. I’m 
+   116.61s  user  발화 끝
+   116.83s  agent 발화 시작: That sounds frustrating. It's important to find work that al
+   117.94s  user  발화 시작: Uh-huh.
+   120.17s  user  발화 시작: I have, but I don’t even know where to start looking for som
+   120.52s  agent 발화 끝
+   121.92s  user  발화 끝
+   129.31s  user  발화 끝
+   129.32s  agent 발화 시작: We can definitely brainstorm some potential career paths tha
+   129.51s  user  발화 시작: Yeah.
+   129.91s  agent 발화 끝
+   131.17s  user  발화 시작: Hmm, team leadership… I’ve never really thought about that b
+   136.31s  user  발화 끝
+   136.66s  agent 발화 시작: It could be a great fit! You’d be able to use your interpers
+   136.90s  user  발화 시작: Mm-hmm.
+   137.29s  agent 발화 끝
+   137.40s  user  발화 시작: That actually sounds… really appealing. Maybe I’ll look into
+   137.62s  user  발화 끝
+   141.24s  user  발화 끝
+   141.47s  user  발화 끝
+   141.52s  agent 발화 시작: [curious] That’s great! Taking that first step is often the 
+   147.57s  user  발화 시작: Thanks, Brae. You've been really helpful.
+   147.96s  agent 발화 끝
+   154.09s  agent 발화 시작: You’re very welcome! Remember, you have a lot to offer, and 
+   154.19s  user  발화 끝
+   159.56s  agent 발화 끝

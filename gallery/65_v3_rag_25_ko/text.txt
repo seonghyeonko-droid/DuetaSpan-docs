@@ -1,0 +1,91 @@
+v3_rag_25_ko src=hotpotqa style=v2
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치 Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_25",
+    "name": "은연",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-20",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-09-03",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-19",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 ⟨ret@2.73s⟩ 하는 선수들이에요?
+[  3.12s][moshi] 잠시 ⟦⚡SPAN@4.41s: [source: Wikipedia] Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 확인해 볼게요.
+[  6.56s][moshi] 잭 소크 선수와 라파엘라 레지 선수 모두… 프로 테니스 선수입니다.
+[  6.63s][user ] «backchannel» 네.
+[  7.24s][user ] 테니스요? 음… 제가 알기로는 잭 소크 선수는 테니스 말고 다른 운동도 조금 하는 것 같던데.
+[ 16.17s][moshi] ⟨ret@15.94s⟩ 잭 소크 선수는 이천십칠년 ⟦⚡SPAN@17.14s: [source: ATP Tour] Jack Sock achieved a career-high ATP singles ranking of world No. 8 in November 2017.⟧ 십일월에 ATP 단식 랭킹 팔위까지 오르셨습니다.
+[ 18.70s][user ] 팔위까지 올랐다고요? 대단하네요. 그런데 라파엘라 레지 선수는요? 테니스 랭킹은 어느 정도인가요? ⟨ret@23.29s⟩
+[ 23.52s][moshi] 라파엘라 레지 선수는 이천사년 ⟦⚡SPAN@25.12s: [source: WTA Tour] Raffaella Reggi reached her highest WTA singles ranking of world No. 202 in October 2004.⟧ 십월에 WTA 단식 랭킹 이백이위까지 오르셨습니다.
+[ 27.84s][user ] 이백이위면… 그렇게 높은 랭킹은 아니네요. 잭 소크 선수랑 비교하면 많이 차이가 나는 것 같아요. ⟨ret@37.84s⟩
+[ 38.07s][moshi] 잭 소크 선수는 ⟦⚡SPAN@39.84s: [source: ITF Juniors] Jack Sock won the 2010 Wimbledon boys' singles title.⟧ 이천십년 윔블던 보이즈 싱글 타이틀을 획득했습니다.
+[ 42.76s][user ] 윔블던에서도 우승했었다고요? 어렸을 때부터 테니스에 재능이 있었던 것 ⟨ret@47.65s⟩ 같네요.
+[ 47.80s][moshi] 라파엘라 레지 선수는 ⟦⚡SPAN@49.17s: [source: ESPN] Raffaella Reggi has represented Italy in Fed Cup competition since 2001.⟧ 이천일년부터 이탈리아 페드컵 대표로 활약하셨습니다.
+[ 51.68s][user ] 페드컵에서도 이탈리아를 대표했군요. 잭 소크 선수도 국가대표로 활동했나요?
+[ 60.74s][moshi] ⟨ret@60.51s⟩ 잭 소크 선수는 이천칠년 ⟦⚡SPAN@61.01s: [source: US Open] Jack Sock was part of the United States team that won the 2007 Junior Davis Cup.⟧ 주니어 데이비스컵에서 우승한 미국 팀의 일원이었습니다.
+[ 61.14s][user ] «backchannel» 진짜요?
+[ 62.86s][user ] 주니어 데이비스컵 우승도 했었군요. 두 분 다 어릴 때부터 좋은 성적을 거둔 것 ⟨ret@67.31s⟩ 같아요.
+[ 67.46s][moshi] 잭 소크 선수와 라파엘라 ⟦⚡SPAN@69.15s: [source: Tennis.com] Jack Sock and Raffaella Reggi both competed at the 2016 Rio Olympics.⟧ 레지 선수 모두 이천십육년 리우 올림픽에 참가하셨습니다.
+[ 72.19s][user ] 리우 올림픽에도 같이 참가했었나요? 신기하네요. ⟨ret@84.68s⟩
+[ 84.91s][moshi] 잭 소크 선수는 ⟦⚡SPAN@85.18s: [source: BBC Sport] Jack Sock won a bronze medal in men's doubles at the 2016 Rio Olympics.⟧ 이천십육년 리우 올림픽 남자 복식에서 동메달을 획득했습니다.
+[ 85.27s][user ] «backchannel» 그렇군요.
+[ 85.69s][user ] 동메달까지 땄었다고요? 대단하네요. 라파엘라 레지 선수는 리우 올림픽에서 어떤 성적을 거뒀나요? ⟨ret@89.69s⟩
+[ 90.00s][moshi] 라파엘라 레지 ⟦⚡SPAN@90.13s: [source: Olympic.org] Raffaella Reggi did not win a medal at the 2016 Rio Olympics.⟧ 선수는 이천십육년 리우 올림픽에서 메달을 획득하지 못했습니다.
+[ 90.08s][user ] «backchannel» 네네.
+[ 90.47s][user ] 아, 메달은 못 땄군요. 그래도 올림픽에 참가했다는 것 자체가 대단한 일이죠.
+[100.78s][moshi] ⟨ret@100.62s⟩ 잭 소크 선수는 ⟦⚡SPAN@101.75s: [source: The Guardian] Jack Sock retired from professional tennis in December 2023.⟧ 이천이십삼년 십이월에 프로 테니스에서 은퇴했습니다.
+[103.91s][user ] 은퇴했다고요? 벌써 은퇴했군요. 아쉽네요. ⟨ret@106.76s⟩
+[107.00s][moshi] 라파엘라 레지 선수는 ⟦⚡SPAN@108.28s: [source: WTA Tennis] Raffaella Reggi is still actively competing in professional tennis as of January 2024.⟧ 이천이십사년 일월 현재까지도 프로 테니스 선수로 활발하게 활동하고 계십니다.
+[111.49s][user ] 라파엘라 레지 선수는 아직도 활동하고…
+[119.38s][user ] …계시는군요. 두 분의 앞날을 응원해야겠네요.
+[122.75s][moshi] 두 분의 앞날을 응원하며, 테니스 팬으로서 즐겁게 지켜보는 것이 좋겠습니다.

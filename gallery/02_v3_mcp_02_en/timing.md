@@ -68,75 +68,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Hmm, moderate. Okay. I'll keep tha | S3 Actually, could you book me a tabl | S4 Wonderful! You’re a lifesaver.
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to get my day together, | S2 Actually, could you check the curr | S3 …for me to leave for my meeting at | S4 Could you pull up the specs for th
 
-     0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     4.18s  <ret> 발화 (turn1 첫 프레임)
-     4.42s  agent 발화 시작: <ret> I’m now tracking the weather for you from weather dot 
-     4.55s  user  발화 끝
-     6.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Temperature is 25 degrees Celsius, partly cloudy.
-    11.19s  agent 발화 끝
-    11.74s  user  발화 시작: That's good to know. I’m thinking of going for a walk later.
-    15.12s  agent 발화 시작: A walk sounds lovely. Perhaps you'd like me to check the pol
-    15.15s  user  발화 끝
-    17.01s  user  발화 시작: Right.
-    17.51s  user  발화 끝
-    19.69s  user  발화 시작: Oh, yes, please. That would be helpful.
-    19.79s  agent 발화 끝
-    21.87s  <ret> 발화 (turn6 첫 프레임)
-    22.19s  user  발화 끝
-    22.19s  agent 발화 시작: <ret> The pollen count is moderate at pollen dot example dot
-    23.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Pollen count is moderate.
-    28.17s  agent 발화 끝
-    28.38s  user  발화 시작: Hmm, moderate. Okay. I'll keep that in mind.
-    31.73s  agent 발화 시작: It’s always best to be prepared, especially if you have sens
-    31.95s  user  발화 끝
-    33.75s  user  발화 시작: Oh.
-    34.20s  user  발화 끝
-    35.75s  agent 발화 끝
-    36.51s  user  발화 시작: I do. Hey, do you think I should pack a light jacket?
-    39.47s  user  발화 끝
-    39.89s  agent 발화 시작: Given the partly cloudy conditions and a temperature of 25 d
-    43.85s  user  발화 시작: Oh.
-    44.48s  user  발화 끝
-    47.71s  user  발화 시작: Yeah, you're probably right. I'm also trying to decide what 
-    48.04s  agent 발화 끝
-    51.55s  user  발화 끝
-    51.68s  agent 발화 시작: Deciding on dinner can be a challenge. I can search for near
-    56.56s  user  발화 시작: Actually, could you book me a table at La Piazza for 7:30?
-    56.72s  agent 발화 끝
-    60.34s  <ret> 발화 (turn16 첫 프레임)
-    60.59s  user  발화 끝
-    60.66s  agent 발화 시작: <ret> I've confirmed your reservation at La Piazza for 7:30 
-    60.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.67s]: (tool result) Reservation confirmed for La Piazza at 7:30 PM. Confirma
-    63.68s  user  발화 시작: Right.
-    64.13s  user  발화 끝
-    67.29s  user  발화 시작: Excellent! That’s perfect, thank you.
-    67.33s  agent 발화 끝
-    69.42s  user  발화 끝
-    69.88s  agent 발화 시작: You’re very welcome. It’s my pleasure to assist you with arr
-    71.36s  user  발화 시작: Yeah.
-    71.86s  user  발화 끝
-    73.77s  agent 발화 끝
-    73.90s  user  발화 시작: I also need to send a reminder to myself to pick up dry clea
-    77.26s  <ret> 발화 (turn22 첫 프레임)
-    77.58s  agent 발화 시작: <ret> I’ve set a reminder for tomorrow to pick up your dry c
-    77.69s  user  발화 끝
-    78.30s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.10s]: (tool result) Reminder set for tomorrow: Pick up dry cleaning.
-    78.43s  user  발화 시작: Mhm.
-    78.88s  user  발화 끝
-    80.68s  agent 발화 끝
-    80.71s  user  발화 시작: Wonderful! You’re a lifesaver.
-    82.97s  user  발화 끝
-    83.08s  agent 발화 시작: [happy] I’m glad I could help. It’s all about streamlining y
-    86.85s  user  발화 시작: It really is. I think that’s everything for now.
-    87.10s  agent 발화 끝
-    89.29s  user  발화 끝
-    89.75s  agent 발화 시작: Very well. Enjoy your walk and your dinner at La Piazza.
-    91.52s  user  발화 시작: Right.
-    91.97s  user  발화 끝
-    93.26s  user  발화 시작: Thanks, I will.
-    93.45s  agent 발화 끝
-    94.27s  user  발화 끝
-    94.52s  agent 발화 시작: Have a pleasant day.
-    96.00s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to get my day together, and I was thinking about 
+     3.64s  agent 발화 시작: It’s understandable to feel that way when the weather is con
+     3.79s  user  발화 끝
+    11.51s  agent 발화 끝
+    12.83s  user  발화 시작: Yeah, that’d be great. I need to know if I should bring an u
+    19.10s  <ret> 발화 (turn3 첫 프레임)
+    19.34s  agent 발화 시작: <ret> I’m now watching weather.example.com for any updates, 
+    19.41s  user  발화 끝
+    21.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) Watching for weather updates from weather.example.com
+    22.26s  user  발화 시작: Uh-huh.
+    22.89s  user  발화 끝
+    25.45s  agent 발화 끝
+    25.47s  user  발화 시작: Okay, cool.
+    25.97s  user  발화 끝
+    26.33s  agent 발화 시작: Staying on top of the weather is a good way to prepare for y
+    28.68s  user  발화 시작: Mhm.
+    31.70s  agent 발화 시작: I can also set a reminder for you, if you’d like, to ensure 
+    31.75s  agent 발화 끝
+    33.56s  user  발화 시작: Yeah.
+    33.67s  user  발화 끝
+    34.19s  user  발화 끝
+    35.29s  user  발화 시작: Actually, could you check the current conditions in Seattle?
+    35.31s  agent 발화 끝
+    41.02s  <ret> 발화 (turn11 첫 프레임)
+    41.42s  agent 발화 시작: <ret> The current conditions in Seattle are 52 degrees Fahre
+    41.54s  user  발화 끝
+    43.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Current conditions in Seattle: 52°F, cloudy.
+    44.71s  user  발화 시작: Oh.
+    45.11s  user  발화 끝
+    48.18s  user  발화 시작: Hmm, okay. Not too bad. Can you set a reminder…
+    48.23s  agent 발화 끝
+    54.43s  user  발화 끝
+    55.38s  user  발화 시작: …for me to leave for my meeting at 2:00 PM?
+    60.07s  <ret> 발화 (turn15 첫 프레임)
+    60.15s  agent 발화 시작: <ret> A reminder is set for 2:00 PM to leave for your meetin
+    60.30s  user  발화 끝
+    60.56s  ⚡SPAN 주입 [d'=0.49s / d_lead=0.49s]: (tool result) Reminder set for 2:00 PM: Leave for meeting.
+    60.64s  agent 발화 끝
+    60.71s  user  발화 시작: Perfect. Thanks. Oh, I wonder what the latest iPhone looks l
+    63.38s  agent 발화 시작: It's good to be prepared; a little curiosity about technolog
+    63.61s  user  발화 끝
+    66.30s  user  발화 시작: Right.
+    67.87s  agent 발화 끝
+    68.91s  user  발화 시작: Could you pull up the specs for the iPhone 15 Pro?
+    71.03s  user  발화 끝
+    74.92s  <ret> 발화 (turn20 첫 프레임)
+    75.00s  agent 발화 시작: <ret> I’ve opened the iPhone 15 Pro specs page on example.co
+    75.12s  user  발화 시작: Oh.
+    75.22s  user  발화 끝
+    75.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.63s]: (tool result) Opening iPhone 15 Pro specs page on example.com
+    75.63s  agent 발화 끝
+    77.78s  user  발화 시작: Great, thanks! I think I'm all set for now.
+    79.84s  user  발화 끝
+    80.83s  agent 발화 시작: [happy] I’m glad I could help you organize your day and get 
+    81.01s  user  발화 끝
+    81.33s  agent 발화 끝

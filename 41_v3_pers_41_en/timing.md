@@ -66,75 +66,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. It f | S2 I keep thinking I should be doing  | S3 I don’t even know what I *like* to | S4 I guess… it’s just hard to see a f
+# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. It f | S2 I keep thinking I should be “over  | S3 I’ve been trying to keep busy, but | S4 I just wish I could talk to her on
 
      0.00s  agent 발화 시작: Marie, it’s lovely to connect with you. I’m Bir, and I offer
-     7.89s  user  발화 시작: Bir… that’s a beautiful name. It feels…grounded. I’m still r
-     8.06s  agent 발화 끝
-    14.67s  agent 발화 시작: Change can certainly feel destabilizing, Marie. It’s natural
-    14.79s  user  발화 끝
-    22.49s  user  발화 시작: It’s my job. I lost it, unexpectedly. Twenty years… just gon
-    22.59s  agent 발화 끝
-    28.23s  user  발화 끝
-    28.35s  agent 발화 시작: Twenty years is a significant commitment, Marie. It's unders
-    39.80s  agent 발화 끝
-    40.03s  user  발화 시작: Mm-hmm.
-    40.48s  agent 발화 시작: Allow yourself to truly feel the sadness, the anger, whateve
-    40.67s  user  발화 끝
-    50.23s  user  발화 시작: Easier said than done, I guess. It feels like everyone else 
-    50.59s  agent 발화 끝
-    55.28s  user  발화 끝
-    55.31s  agent 발화 시작: It often appears that way, doesn’t it? But everyone processe
-    63.51s  agent 발화 끝
-    64.42s  user  발화 시작: I keep thinking I should be doing something, *anything*, but
-    69.87s  agent 발화 시작: That feeling of being overwhelmed is very common, Marie. Som
-    69.97s  user  발화 끝
-    73.43s  user  발화 시작: Yeah, totally.
-    74.85s  user  발화 끝
-    78.39s  agent 발화 끝
-    78.54s  user  발화 시작: Rest feels…wrong. Like I’m failing.
-    82.89s  user  발화 끝
-    82.89s  agent 발화 시작: That’s a powerful statement, Marie. Where does that sense of
-    86.41s  user  발화 시작: Mm-hmm.
-    87.05s  user  발화 끝
-    92.17s  agent 발화 끝
-    92.22s  user  발화 시작: My dad, probably. He always said “idle hands…” you know.
-    96.86s  agent 발화 시작: [happy] It sounds like your father instilled a strong work e
-    96.94s  user  발화 끝
-   107.53s  user  발화 시작: Exactly. And now I have…nothing to prove.
-   107.61s  agent 발화 끝
-   110.92s  agent 발화 시작: Perhaps this is an opportunity to redefine what “proving” me
-   111.09s  user  발화 끝
-   120.35s  user  발화 시작: I don’t even know what I *like* to do anymore, outside of wo
-   120.51s  agent 발화 끝
-   124.56s  user  발화 끝
-   124.64s  agent 발화 시작: That’s a wonderful question to explore. What brought you joy
-   133.96s  agent 발화 끝
-   134.44s  user  발화 시작: I used to paint. I haven’t touched a brush in decades.
-   138.00s  user  발화 끝
-   138.06s  agent 발화 시작: Painting… that sounds like a gentle way to reconnect with a 
-   148.16s  agent 발화 끝
-   149.49s  user  발화 시작: It feels silly, though. Like a childish thing.
-   152.66s  agent 발화 시작: There’s a beautiful freedom in allowing yourself to be playf
-   152.72s  user  발화 끝
-   158.49s  user  발화 시작: Yeah.
-   159.03s  user  발화 끝
-   161.74s  agent 발화 끝
-   161.95s  user  발화 시작: Maybe… I’m scared to be bad at it.
-   165.05s  user  발화 끝
-   165.11s  agent 발화 시작: Being "bad" at something is simply a sign of learning, Marie
-   171.14s  user  발화 시작: Yeah.
-   171.73s  user  발화 끝
-   175.08s  user  발화 시작: I guess… it’s just hard to see a future right now.
-   175.45s  agent 발화 끝
-   178.73s  user  발화 끝
-   179.02s  agent 발화 시작: The future can feel very uncertain after a significant loss.
-   187.57s  user  발화 시작: Like… painting?
-   187.79s  agent 발화 끝
-   189.14s  user  발화 끝
-   189.23s  agent 발화 시작: Exactly. Or perhaps a walk in Golden Gate Park, Marie. Somet
-   197.72s  user  발화 시작: That sounds…peaceful. Thank you, Bir.
-   197.81s  agent 발화 끝
-   201.19s  user  발화 끝
-   201.19s  agent 발화 시작: You’re very welcome, Marie. Remember, you are not alone on t
-   208.23s  agent 발화 끝
+     7.83s  agent 발화 끝
+     8.91s  user  발화 시작: Bir… that’s a beautiful name. It feels… grounded. I’m just f
+    15.68s  user  발화 끝
+    15.91s  agent 발화 시작: Lost is a very natural feeling, Marie, especially when facin
+    25.28s  agent 발화 끝
+    25.52s  user  발화 시작: Well, my mom passed away six months ago, and I still feel co
+    31.73s  user  발화 끝
+    32.01s  agent 발화 시작: Six months is still very recent, Marie. Grief doesn’t follow
+    40.85s  user  발화 시작: It’s just… everything feels different without her advice. Sh
+    41.01s  agent 발화 끝
+    41.70s  agent 발화 시작: It’s understandable to miss that guidance. Our mothers often
+    41.85s  user  발화 끝
+    49.47s  user  발화 시작: Yeah.
+    51.82s  agent 발화 끝
+    51.97s  user  발화 시작: Oh, just… everything. Career stuff, relationships… even what
+    54.93s  user  발화 끝
+    59.55s  agent 발화 시작: It sounds like she was a central figure in your decision-mak
+    59.57s  user  발화 끝
+    59.80s  user  발화 시작: Yeah, yeah.
+    60.09s  agent 발화 끝
+    60.16s  agent 발화 시작: It can be frightening to rely on yourself, Marie, especially
+    63.63s  user  발화 끝
+    64.58s  user  발화 시작: Yeah.
+    65.21s  user  발화 끝
+    67.95s  agent 발화 끝
+    68.11s  user  발화 시작: I keep thinking I should be “over it” by now. Everyone keeps
+    72.98s  agent 발화 시작: Those expectations can be so harmful, Marie. Grief isn’t som
+    73.02s  user  발화 끝
+    79.46s  user  발화 시작: Mm-hmm.
+    80.09s  user  발화 끝
+    81.79s  agent 발화 끝
+    81.93s  user  발화 시작: I feel guilty for still being sad. Like I’m not honoring her
+    86.38s  user  발화 끝
+    86.59s  agent 발화 시작: Guilt is often a companion to grief, but it’s misplaced here
+    94.41s  user  발화 시작: That… actually makes a lot of sense. I hadn’t thought of it 
+    94.47s  agent 발화 끝
+   100.48s  user  발화 끝
+   100.58s  agent 발화 시작: Sometimes, reframing our perspective can offer a little ease
+   108.60s  agent 발화 끝
+   108.77s  user  발화 시작: I’ve been trying to keep busy, but it just feels… empty. Lik
+   113.03s  user  발화 끝
+   113.09s  agent 발화 시작: Busyness can be a temporary distraction, but it rarely addre
+   117.44s  user  발화 시작: Yeah.
+   118.11s  user  발화 끝
+   119.91s  agent 발화 끝
+   120.25s  user  발화 시작: But feeling it is so… overwhelming. It feels like I’ll drown
+   124.62s  agent 발화 시작: That’s a valid fear, Marie. It’s okay to approach those feel
+   124.74s  user  발화 끝
+   130.85s  user  발화 시작: Yeah.
+   131.57s  user  발화 끝
+   135.12s  user  발화 시작: I signed up for a pottery class, hoping it would help. Somet
+   135.22s  agent 발화 끝
+   140.10s  agent 발화 시작: That sounds like a beautiful way to channel your energy, Mar
+   140.12s  user  발화 끝
+   148.77s  agent 발화 끝
+   148.80s  user  발화 시작: It was okay. I just kept messing up, and it reminded me of h
+   153.48s  user  발화 끝
+   153.74s  agent 발화 시작: It’s understandable that it brought up those feelings. Compa
+   162.84s  agent 발화 끝
+   164.29s  user  발화 시작: I just wish I could talk to her one more time.
+   168.33s  agent 발화 시작: That’s a very natural and deeply felt wish, Marie. Holding o
+   168.41s  user  발화 끝
+   172.38s  user  발화 시작: Yeah, yeah.
+   173.48s  user  발화 끝
+   176.70s  user  발화 시작: I feel like I’m failing at grief.
+   176.91s  agent 발화 끝
+   179.22s  agent 발화 시작: There’s no right or wrong way to grieve, Marie. It’s a uniqu
+   179.37s  user  발화 끝
+   188.19s  user  발화 시작: Thank you, Bir. That… really helps.
+   188.36s  agent 발화 끝
+   190.87s  agent 발화 시작: You’re very welcome, Marie. Remember, I’m here to listen, to
+   191.10s  user  발화 끝
+   197.82s  agent 발화 끝

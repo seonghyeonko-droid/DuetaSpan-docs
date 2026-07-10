@@ -77,19 +77,17 @@
 # }
 
 
-     0.00s  user  발화 시작: I’ve been researching my family history, and I keep running 
-     8.44s  <ret> 발화 (turn1 첫 프레임)
-     8.52s  agent 발화 시작: <ret> It’s wonderful you’re connecting with your roots. Fami
-     8.67s  user  발화 끝
-     9.64s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.21s]: [source: Wikipedia] Du Plessis is a French surname of Huguenot origin,
-    16.68s  agent 발화 시작: The name Du Plessis originated as a locational name, identif
-    16.72s  agent 발화 끝
-    23.04s  user  발화 시작: Mhm.
-    23.81s  user  발화 끝
-    25.20s  agent 발화 끝
-    25.49s  user  발화 시작: Oh, a fortified place! That's interesting. Was it a specific
-    30.25s  <ret> 발화 (turn5 첫 프레임)
-    30.49s  agent 발화 시작: <ret> The Du Plessis name was indeed associated with noble f
-    30.63s  user  발화 끝
-    32.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: [source: House of Names] The Plessis family were prominent in Normandy
-    37.26s  agent 발화 끝
+     0.00s  user  발화 시작: I've been researching my family history, and I came across t
+     7.34s  <ret> 발화 (turn1 첫 프레임)
+     7.41s  agent 발화 시작: <ret> Family names often hold fascinating stories, and Du Pl
+     7.46s  user  발화 끝
+     8.54s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.79s]: [source: Wikipedia] Du Plessis is a French surname, originating as a t
+    15.07s  agent 발화 시작: The name Du Plessis originated as a title for someone from P
+    15.20s  agent 발화 끝
+    15.47s  user  발화 시작: Mhm.
+    15.78s  user  발화 시작: Oh, France! That’s interesting. I always assumed it was… wel
+    15.84s  agent 발화 끝
+    17.82s  user  발화 끝
+    20.36s  user  발화 끝
+    20.87s  agent 발화 시작: It's not uncommon for surnames to evolve from titles or asso
+    30.37s  agent 발화 끝

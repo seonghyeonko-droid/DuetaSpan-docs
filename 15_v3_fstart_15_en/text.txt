@@ -65,28 +65,30 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.84s][moshi] ⟨ret@3.79s⟩ The Sydney ⟦⚡SPAN@5.47s: (tool result) -33.8568, 151.2153⟧ Opera House is located at latitude -33.8568 and longitude 151.2153. It's a truly iconic landmark.
-[  8.20s][user ] «backchannel» Oh.
-[ 15.16s][user ] Okay, and can you find me hotels near ⟨ret@17.69s⟩ there?
-[ 17.91s][moshi] I found twenty-three hotels near ⟦⚡SPAN@19.69s: (tool result) 23 hotels found⟧ the Sydney Opera House. Would you like me to list them?
-[ 20.38s][user ] «backchannel» Yeah, yeah.
-[ 23.36s][user ] Yes, just the top three, please.
-[ 25.53s][moshi] ⟨ret@25.51s⟩ The top three hotels are ⟦⚡SPAN@27.51s: (tool result) Park Hyatt Sydney, $650/night; Shangri-La Hotel, $480/night; InterContinental Sydney, $390/night⟧ the Park Hyatt at six hundred fifty dollars a night, the Shangri-La at four hundred eighty, and the InterContinental at three hundred ninety.
-[ 31.61s][user ] «backchannel» Yeah, totally.
-[ 35.77s][user ] The Park Hyatt sounds nice— what’s their phone ⟨ret@38.83s⟩ number?
-[ 39.20s][moshi] ⟦⚡SPAN@39.33s: (tool result) +61 2 9250 6000⟧ The Park Hyatt Sydney's phone number is plus sixty-one two, nine two five oh six thousand.
-[ 45.16s][user ] Great. And can you check if they have availability for next weekend.
-[ 49.21s][moshi] «interrupted» I can certainly check availability for next weekend at the Park Hyatt—
-[ 52.05s][user ] «interrupts_prev» Actually, never mind about the Park Hyatt. Is there parking available at the Opera ⟨ret@57.12s⟩ House itself?
-[ 57.43s][moshi] Ah, ⟦⚡SPAN@58.08s: (tool result) Parking available: Wilson Parking, $33/day⟧ okay. Let me look into parking at the Sydney Opera House for you.
-[ 61.38s][moshi] Parking is available at Wilson Parking near the Opera House, at thirty-three dollars per day.
-[ 63.18s][user ] «backchannel» Mhm.
-[ 67.51s][user ] Thirty-three dollars… that's not too bad.
-[ 70.15s][moshi] It's a reasonable rate considering the location, and it's convenient if you’re attending a performance.
-[ 72.79s][user ] «backchannel» Uh-huh.
-[ 75.22s][user ] Could you book a spot for me for Saturday, ⟨ret@77.92s⟩ then?
-[ 78.14s][moshi] You are all set! I ⟦⚡SPAN@79.92s: (tool result) Booking confirmed: Wilson Parking, Saturday, space #27B⟧ have booked a parking space – number twenty-seven B – at Wilson Parking for Saturday.
-      CALL: {"function": "book_parking", "arguments": {"location": "Sydney Opera House", "date": "Saturday", "provider": "Wilson Parking"}}
-[ 80.80s][user ] «backchannel» Yeah.
-[ 84.67s][user ] Perfect, thank you.
-[ 85.91s][moshi] You're very welcome. Enjoy your time at the Sydney Opera House!
+[  4.25s][moshi] ⟨ret@4.17s⟩ The ⟦⚡SPAN@5.85s: (tool result) -33.8568, 151.2153⟧ Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.
+[  9.30s][user ] «backchannel» Wow.
+[ 14.01s][user ] Okay, and can you find me hotels near that ⟨ret@18.29s⟩ location?
+[ 18.52s][moshi] The closest hotel is ⟦⚡SPAN@20.29s: (tool result) Shangri-La Hotel, Sydney - 0.5km⟧ the Shangri-La Hotel, Sydney, just 0.5 kilometers away.
+[ 21.17s][user ] «backchannel» Right.
+[ 22.88s][user ] What’s their website? ⟨ret@26.86s⟩
+[ 26.93s][moshi] The Shangri-La Hotel, Sydney’s ⟦⚡SPAN@27.36s: (tool result) https://www.shangri-la.com/sydney/shangrila⟧ website is https://www.shangri-la.com/sydney/shangrila/.
+      CALL: {"function": "search_web", "arguments": {"query": "Shangri-La Hotel, Sydney website"}}
+[ 27.09s][user ] «backchannel» Mhm.
+[ 29.25s][user ] Are there any family suites available next weekend.
+[ 34.15s][moshi] «interrupted» Let me check availability for family suites at the Shangri-La next weekend—
+[ 40.78s][user ] «interrupts_prev» Actually, never mind about the suites, what's the cancellation policy?
+[ 41.49s][moshi] The Shangri-La Hotel, Sydney’s cancellation policy allows free cancellation up to 24 hours before arrival.
+[ 43.09s][user ] «backchannel» Yeah, yeah.
+[ 46.41s][user ] Good to know. And what ⟨ret@46.78s⟩ about restaurants nearby?
+[ 47.02s][moshi] Aria Restaurant is nearby, ⟦⚡SPAN@48.62s: (tool result) Aria Restaurant - 0.8km⟧ only 0.8 kilometers from the Opera House.
+[ 48.33s][user ] «backchannel» Oh.
+[ 51.96s][user ] What kind of cuisine do they ⟨ret@54.04s⟩ serve?
+[ 54.36s][moshi] ⟦⚡SPAN@55.00s: (tool result) Modern Australian⟧ Aria Restaurant serves Modern Australian cuisine.
+      CALL: {"function": "search_web", "arguments": {"query": "Aria Restaurant Sydney cuisine"}}
+[ 56.62s][user ] «backchannel» Yeah.
+[ 58.27s][user ] Is it ⟨ret@59.72s⟩ expensive?
+[ 59.88s][moshi] Aria Restaurant is considered ⟦⚡SPAN@61.72s: (tool result) $$$$ (very expensive)⟧ very expensive, with a $$$$ price range.
+      CALL: {"function": "search_web", "arguments": {"query": "Aria Restaurant Sydney price range"}}
+[ 63.27s][user ] «backchannel» Uh-huh.
+[ 65.24s][user ] Okay, thanks. That's helpful.
+[ 67.41s][moshi] You're very welcome. I'm glad I could help you plan a bit for your trip.

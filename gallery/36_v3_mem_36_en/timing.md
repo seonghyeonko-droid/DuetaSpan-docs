@@ -70,18 +70,18 @@
 
 
      0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you today.
-     1.51s  user  발화 시작: Uh-huh.
-     2.01s  user  발화 끝
-     3.28s  agent 발화 끝
-     3.29s  user  발화 시작: I was just thinking about my dentist appointment… I complete
-     7.62s  <ret> 발화 (turn3 첫 프레임)
-     7.85s  agent 발화 시작: <ret> You scheduled a dentist appointment with Dr. Han for a
-     8.01s  user  발화 끝
-     9.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    15.91s  agent 발화 끝
-    17.08s  user  발화 시작: Oh, right! And… what was the name of my dog again? It’s slip
-    21.82s  <ret> 발화 (turn5 첫 프레임)
-    22.22s  agent 발화 시작: <ret> You have an adorable Corgi named Mochi, a lovely compa
-    22.40s  user  발화 끝
-    23.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [2025-07-02] User has a Corgi named Mochi.
-    29.63s  agent 발화 끝
+     5.78s  user  발화 시작: Uh-huh.
+     6.23s  user  발화 끝
+    11.55s  agent 발화 끝
+    11.79s  user  발화 시작: Oh, hi Lira. Um, I was just thinking about that dentist appo
+    19.75s  <ret> 발화 (turn3 첫 프레임)
+    19.98s  agent 발화 시작: <ret> You scheduled a dentist appointment, requesting an ear
+    20.13s  user  발화 끝
+    21.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    29.86s  user  발화 시작: Right, that’s it! I need to change that, actually. I need to
+    30.18s  agent 발화 끝
+    33.45s  <ret> 발화 (turn5 첫 프레임)
+    33.74s  user  발화 끝
+    33.77s  agent 발화 시작: <ret> Your dentist appointment with Dr. Han is now scheduled
+    35.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Appointment rescheduled to 2:30 PM with Dr. Han.
+    42.16s  agent 발화 끝

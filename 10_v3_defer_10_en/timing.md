@@ -63,32 +63,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 What’s the weather… | S3 …like in Lyon right now? | S4 Okay.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     5.00s  <ret> 발화 (turn1 첫 프레임)
-     5.07s  agent 발화 시작: <ret> I found three pictures from your France holiday last y
-     5.18s  user  발화 끝
-     7.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.01s]: (tool result) 3 files found: "Paris EiffelTower.jpg", "Nice Beach.png"
-    12.56s  user  발화 시작: Mhm.
-    13.20s  user  발화 끝
-    17.08s  agent 발화 끝
-    17.71s  user  발화 시작: Can you send “Paris_EiffelTower.jpg” to my sister, Sarah?
-    22.34s  <ret> 발화 (turn4 첫 프레임)
-    22.50s  agent 발화 시작: <ret> I’ve sent “Paris_EiffelTower.jpg” to Sarah. Your confi
-    22.62s  user  발화 끝
-    24.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) File sent to Sarah. Confirmation number: 829571
-    24.66s  user  발화 시작: Really?
-    25.62s  user  발화 끝
-    29.13s  agent 발화 끝
-    29.59s  user  발화 시작: What’s the weather…
-    31.02s  user  발화 끝
-    32.39s  user  발화 시작: …like in Lyon right now?
-    34.13s  agent 발화 시작: Let me check on that.
-    34.28s  user  발화 끝
-    34.85s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Partly cloudy, 18°C
-    35.07s  user  발화 시작: Okay.
-    35.24s  agent 발화 끝
-    35.63s  agent 발화 시작: <ret> The weather in Lyon is currently partly cloudy with a 
-    35.84s  user  발화 끝
-    46.21s  agent 발화 끝
+     4.78s  <ret> 발화 (turn1 첫 프레임)
+     4.86s  user  발화 끝
+     4.86s  agent 발화 시작: <ret> I found thirty-two images from your France holiday in 
+     6.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) Found 32 images matching 'France holiday' from 2023, exc
+     7.32s  user  발화 시작: Uh-huh.
+     7.86s  user  발화 끝
+    10.62s  user  발화 시작: Can you open the first one?
+    10.75s  agent 발화 끝
+    12.07s  <ret> 발화 (turn4 첫 프레임)
+    12.22s  agent 발화 시작: <ret> I’ve opened the first picture, it’s from your France t
+    12.36s  user  발화 끝
+    13.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.77s]: (tool result) Opened /Users/sunan/Pictures/France2023/image001.jpg
+    14.19s  user  발화 시작: Yeah.
+    14.63s  user  발화 끝
+    17.00s  agent 발화 끝
+    17.50s  user  발화 시작: That’s lovely, thanks!
+    19.11s  user  발화 끝

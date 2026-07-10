@@ -52,14 +52,14 @@
 
 
      0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
-     9.36s  agent 발화 끝
-     9.49s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a bit lost, hon
-    16.85s  agent 발화 시작: Feeling lost is completely understandable, Lucia. It’s brave
-    16.95s  user  발화 끝
-    20.52s  user  발화 시작: Wow.
-    21.34s  user  발화 끝
-    26.82s  agent 발화 끝
-    27.41s  user  발화 시작: Welll… it feels silly, but I worry about putting myself out 
-    33.48s  user  발화 끝
-    33.69s  agent 발화 시작: That’s a very common worry, Lucia. It takes courage to be vu
-    44.49s  agent 발화 끝
+     8.02s  agent 발화 끝
+     8.49s  user  발화 시작: Aril, that's a nice name. I’m just… feeling a little lost la
+    16.83s  agent 발화 시작: Feeling lost is completely understandable, Lucia. So many th
+    16.88s  user  발화 끝
+    20.71s  user  발화 시작: Wow.
+    21.53s  user  발화 끝
+    27.30s  agent 발화 끝
+    27.45s  user  발화 시작: Well, I moved here from New York a few years ago, and it’s j
+    32.92s  user  발화 끝
+    32.97s  agent 발화 시작: It absolutely does feel different, making connections later 
+    45.27s  agent 발화 끝

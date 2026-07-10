@@ -58,23 +58,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It by | S2 Wow, Eddie Van Halen? That’s incre | S3 Hey, did you take the trash out ye | S4 Sorry about that. So, was he asked
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Wow, Eddie Van Halen? I didn't rea | S3 Hey, did you take out the trash ye | S4 Sorry about that. Back to the musi
 
-     0.00s  user  발화 시작: I was just listening to Beat It by Michael Jackson, and it o
-     6.64s  <ret> 발화 (turn1 첫 프레임)
-     6.88s  agent 발화 시작: <ret> It’s a really iconic solo, and a lot of people wonder 
-     7.04s  user  발화 끝
-     8.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    11.68s  agent 발화 시작: The guitar solo on Michael Jackson’s “Beat It” was performed
-    11.82s  agent 발화 끝
-    15.29s  user  발화 시작: Okay.
-    16.02s  user  발화 끝
-    20.68s  user  발화 시작: Wow, Eddie Van Halen? That’s incredible. I didn’t know that!
-    21.09s  agent 발화 끝
-    24.45s  user  발화 시작: Hey, did you take the trash out yet?
-    24.51s  user  발화 끝
-    26.36s  user  발화 시작: Sorry about that. So, was he asked specifically, or did he j
-    26.57s  user  발화 끝
-    31.48s  agent 발화 시작: He was specifically asked, which is quite a testament to his
-    31.51s  user  발화 끝
-    41.95s  agent 발화 끝
+     0.00s  user  발화 시작: I was just listening to Beat It, and that guitar solo is inc
+     5.46s  <ret> 발화 (turn1 첫 프레임)
+     5.69s  agent 발화 시작: <ret> That iconic guitar solo on “Beat It” was played by… Ed
+     5.83s  user  발화 끝
+     7.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.59s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     8.21s  user  발화 시작: Okay.
+     8.84s  user  발화 끝
+    12.12s  user  발화 시작: Wow, Eddie Van Halen? I didn't realize he played on a Michae
+    12.27s  agent 발화 끝
+    18.36s  user  발화 시작: Hey, did you take out the trash yet?
+    18.46s  user  발화 끝
+    26.28s  user  발화 시작: Sorry about that. Back to the music—was that a one-time coll
+    26.33s  user  발화 끝
+    37.77s  agent 발화 시작: That was largely a one-time collaboration, though it was a v
+    37.86s  user  발화 끝
+    45.27s  agent 발화 끝

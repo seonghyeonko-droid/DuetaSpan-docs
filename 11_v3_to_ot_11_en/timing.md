@@ -68,25 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Did you take the trash out? | S3 Sorry about that, Ellana. Back to  | S4 Santana, okay. That explains why I
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… when was the | S2 Did you take the recycling out? | S3 Sorry about that. Back to baseball | S4 Oh, James Paxton! I remember heari
 
-     0.00s  user  발화 시작: I was just wondering, has the Oakland A's team been no-hit r
-     5.09s  <ret> 발화 (turn1 첫 프레임)
-     5.46s  user  발화 끝
-     5.48s  agent 발화 시작: <ret> The last time the A's were no-hit was… in April 2018. 
-     7.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: [source: Baseball-Reference.com] The last time the Oakland Athletics w
-    13.27s  agent 발화 끝
-    13.49s  user  발화 시작: Wow, 2018. That *is* a while ago. Hey, Mark, did you remembe
-    19.84s  user  발화 시작: Did you take the trash out?
-    19.93s  user  발화 끝
-    21.29s  user  발화 시작: Sorry about that, Ellana. Back to baseball—who pitched the n
-    21.36s  user  발화 끝
-    25.98s  <ret> 발화 (turn5 첫 프레임)
-    26.11s  user  발화 끝
-    26.21s  agent 발화 시작: <ret> That no-hitter was pitched by Ervin Santana of the Min
-    27.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: [source: ESPN] On April 21, 2018, Ervin Santana of the Minnesota Twins
-    37.09s  user  발화 시작: Santana, okay. That explains why I don’t remember it—I don't
-    37.29s  agent 발화 끝
-    41.83s  agent 발화 시작: It’s perfectly natural to focus on your favorite teams—that’
-    42.09s  user  발화 끝
-    47.89s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering… when was the last time the A’s got no-
+     4.96s  <ret> 발화 (turn1 첫 프레임)
+     5.28s  user  발화 끝
+     5.35s  agent 발화 시작: <ret> The last time the A’s were no-hit was… in April 2018. 
+     6.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.59s]: [source: Baseball-Reference.com] The last no-hitter against the Oaklan
+    10.73s  user  발화 시작: Wow, 2018… that *is* a while. Hey, Mark, did you take the re
+    10.94s  agent 발화 끝
+    15.49s  user  발화 시작: Did you take the recycling out?
+    15.64s  user  발화 끝
+    17.21s  user  발화 시작: Sorry about that. Back to baseball, who pitched that no-hitt
+    17.33s  user  발화 끝
+    23.34s  <ret> 발화 (turn5 첫 프레임)
+    23.55s  agent 발화 시작: <ret> The pitcher who threw the no-hitter against the A’s wa
+    23.83s  user  발화 끝
+    25.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: MLB.com] James Paxton of the Seattle Mariners pitched a no-hi
+    29.34s  agent 발화 끝
+    30.82s  user  발화 시작: Oh, James Paxton! I remember hearing about that game. Thanks
+    36.19s  user  발화 끝

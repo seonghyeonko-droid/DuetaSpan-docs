@@ -69,46 +69,48 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.24s⟩ last year?
-[  3.63s][moshi] The weather in Tokyo ⟦⚡SPAN@5.24s: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degrees Celsius.⟧ on December twenty-fourth last year was partly cloudy, with a high of 12 degrees Celsius and a low of 5.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "December 24th, 2023"}}
-[ 11.83s][user ] Okay, good to know. Can you book me a flight to Tokyo from New York for ⟨ret@16.60s⟩ January fifteenth?
-[ 16.94s][moshi] I’ve booked your flight ⟦⚡SPAN@18.60s: (tool result) Flight booked, confirmation number is Alpha789.⟧ to Tokyo from New York for January fifteenth; your confirmation number is Alpha789.
-      CALL: {"function": "Flight_1_BookFlight", "arguments": {"departure_city": "New York", "arrival_city": "Tokyo", "date": "January 15th"}}
-[ 18.96s][user ] «backchannel» Wow.
-[ 22.71s][user ] Great! And could you find me a hotel near the ⟨ret@26.29s⟩ Tokyo Skytree?
-[ 26.68s][moshi] The Gate Hotel ⟦⚡SPAN@28.29s: (tool result) The Gate Hotel Kiyamachi is 0.8 kilometers away, rated 4.5 stars.⟧ Kiyamachi is 0.8 kilometers from the Tokyo Skytree, and it has a 4.5-star rating.
-      CALL: {"function": "Hotel_1_FindHotel", "arguments": {"location": "Tokyo Skytree"}}
-[ 33.32s][user ] That sounds nice. Is it possible to reserve a table for two at a good sushi restaurant there for January sixteenth?
-[ 39.45s][moshi] ⟨ret@39.38s⟩ Yes, I’ve reserved ⟦⚡SPAN@40.73s: (tool result) Reservation confirmed at Sushi Saito, 7:30 PM, January 16th.⟧ a table for two at Sushi Saito for January sixteenth at 7:30 PM.
-      CALL: {"function": "Restaurant_1_ReserveTable", "arguments": {"location": "Tokyo", "date": "January 16th", "party_size": "2", "cuisine": "sushi"}}
-[ 44.66s][user ] Perfect! And uh, what’s the exchange rate between US dollars and Japanese yen right now?
-[ 50.49s][moshi] ⟨ret@50.17s⟩ Currently, one ⟦⚡SPAN@51.61s: (tool result) 1 USD equals 148.32 JPY.⟧ US dollar equals 148.32 Japanese yen.
-      CALL: {"function": "Finance_1_GetExchangeRate", "arguments": {"from_currency": "USD", "to_currency": "JPY"}}
-[ 55.16s][user ] Okay, good. I’m a little stressed about this trip, to be honest.
-[ 58.61s][moshi] [curious] It’s totally normal to feel stressed before a big trip, especially to a place so far from home. It’s a big change.
-[ 65.47s][user ] Yeah, I— I mean, it's a pretty important business meeting.
-[ 68.40s][moshi] That makes sense. A big meeting can add pressure, but you've prepared well, and you're capable.
-[ 73.35s][user ] I’m worried about the language barrier, mostly.
-[ 75.93s][moshi] That's a very valid concern! Knowing some basic phrases can help, and most tourist areas have English speakers.
-[ 82.39s][user ] Do you think I should practice some Japanese before I go?
-[ 85.34s][moshi] Definitely. Even a little bit of effort can make a big difference in feeling more confident and showing respect.
-[ 91.61s][user ] Can you find me a good app for learning basic ⟨ret@94.65s⟩ Japanese phrases?
-[ 95.00s][moshi] I found Duolingo, which ⟦⚡SPAN@96.65s: (tool result) Duolingo is highly rated for beginners.⟧ is highly rated for learning Japanese, especially for beginners.
-      CALL: {"function": "App_1_FindApp", "arguments": {"category": "language learning", "language": "Japanese"}}
-[ 98.33s][user ] «backchannel» Yeah, totally.
-[ 99.76s][user ] Okay, Duolingo. I'll check that out. What about transportation within Tokyo?
-[104.74s][moshi] ⟨ret@104.58s⟩ Tokyo has a very comprehensive ⟦⚡SPAN@106.50s: (tool result) Tokyo has extensive subway and train systems.⟧ subway and train system, making it easy to get around.
-      CALL: {"function": "Navigation_1_GetTransportationOptions", "arguments": {"location": "Tokyo"}}
-[109.38s][user ] Is there a pass I can buy for ⟨ret@111.52s⟩ the subway?
-[111.92s][moshi] The Tokyo Subway Ticket ⟦⚡SPAN@113.52s: (tool result) The Tokyo Subway Ticket offers unlimited rides.⟧ offers unlimited rides on the Tokyo subway lines.
-      CALL: {"function": "Navigation_1_GetPassInfo", "arguments": {"transportation_type": "subway", "location": "Tokyo"}}
-[113.27s][user ] «backchannel» Uh-huh.
-[116.27s][user ] How much does that ⟨ret@117.60s⟩ ticket cost?
-[117.84s][moshi] A 24-hour ⟦⚡SPAN@119.12s: (tool result) 800 yen for a 24-hour pass.⟧ Tokyo Subway Ticket costs 800 yen.
-      CALL: {"function": "Navigation_1_GetPassPrice", "arguments": {"pass_name": "Tokyo Subway Ticket"}}
-[119.16s][user ] «backchannel» Wow.
-[121.26s][user ] Hmm, I'm trying to remember if I told you about my cat…
-[124.28s][moshi] [happy] I do recall you mentioning your cat, Mittens, back on November tenth— you said she loves chasing laser pointers!
-[130.63s][user ] Oh, that’s right! Well, I think I’m ready for this trip now. Thanks, Brae.
-[135.09s][moshi] You're very welcome. It sounds like you’ve got everything covered. Have a wonderful trip!
+[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.26s⟩ last year?
+[  3.66s][moshi] The weather in Tokyo ⟦⚡SPAN@5.26s: (tool result) Partly cloudy, high of 10 degrees Celsius, low of 4 degrees Celsius.⟧ on December twenty-fourth last year was partly cloudy, with a high of 10 degrees Celsius and a low of 4.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
+[ 12.60s][user ] Okay, good to know. And can you find me a highly-rated sushi restaurant near Shibuya station?
+[ 16.06s][moshi] ⟨ret@15.66s⟩ There’s Sushi Dai, a highly-rated sushi ⟦⚡SPAN@17.66s: (tool result) Sushi Dai, 4.6 stars, 10-minute walk from Shibuya station.⟧ restaurant—it has 4.6 stars and is a 10-minute walk from Shibuya station.
+      CALL: {"function": "Restaurant_1_FindRestaurant", "arguments": {"cuisine": "sushi", "location": "Shibuya station", "rating": "high"}}
+[ 17.35s][user ] «backchannel» Wow.
+[ 20.14s][user ] Hmm, Sushi Dai… is it usually ⟨ret@22.50s⟩ very crowded?
+[ 22.89s][moshi] Sushi ⟦⚡SPAN@24.42s: (tool result) Often very crowded, expect a 2-hour wait during peak hours.⟧ Dai is often very crowded, and you can expect a two-hour wait during peak hours.
+      CALL: {"function": "Restaurant_1_GetRestaurantDetails", "arguments": {"restaurant_name": "Sushi Dai"}}
+[ 36.02s][user ] Two ⟨ret@36.01s⟩ hours! That’s… a long time. Maybe something a little less popular?
+[ 36.32s][moshi] ⟦⚡SPAN@36.51s: (tool result) Uobei Shibuya Dogenzaka, 4.2 stars, 5-minute walk from Shibuya station.⟧ How about Uobei Shibuya Dogenzaka? It has 4.2 stars and is a five-minute walk from Shibuya station.
+      CALL: {"function": "Restaurant_1_FindRestaurant", "arguments": {"cuisine": "sushi", "location": "Shibuya station", "rating": "good"}}
+[ 40.22s][user ] Uobei… is that a conveyor belt sushi place? ⟨ret@48.81s⟩
+[ 49.13s][moshi] Yes, Uobei Shibuya ⟦⚡SPAN@50.81s: (tool result) Yes, it’s a conveyor belt sushi restaurant with tablet ordering.⟧ Dogenzaka is a conveyor belt sushi restaurant with tablet ordering.
+      CALL: {"function": "Restaurant_1_GetRestaurantDetails", "arguments": {"restaurant_name": "Uobei Shibuya Dogenzaka"}}
+[ 54.59s][user ] Sounds fun! Can you make a reservation for two people there for tomorrow at 7 PM?
+[ 60.58s][moshi] ⟨ret@60.51s⟩ Great! I've confirmed your reservation for two at Uobei Shibuya ⟦⚡SPAN@62.11s: (tool result) Reservation confirmed for two at Uobei Shibuya Dogenzaka, March 9th, 7 PM. Confirmation number i⟧ Dogenzaka for tomorrow at 7 PM—your confirmation number is 78923.
+      CALL: {"function": "Restaurant_1_ReserveRestaurant", "arguments": {"restaurant_name": "Uobei Shibuya Dogenzaka", "date": "2024-03-09", "time": "19:00", "party_size": 2}}
+[ 63.72s][user ] Fantastic! That's perfect. Now, I need to send a message to my friend, Hana.
+[ 68.36s][moshi] What message would you like to send to Hana?
+[ 77.84s][user ] Tell her I’ve made dinner plans and will meet her at Uobei in Shibuya tomorrow at ⟨ret@82.75s⟩ seven.
+[ 82.90s][moshi] I’ve sent the ⟦⚡SPAN@84.75s: (tool result) Message sent to Hana.⟧ message to Hana—she should receive it shortly.
+      CALL: {"function": "Messaging_1_SendMessage", "arguments": {"recipient": "Hana", "message": "I’ve made dinner plans and will meet you at Uobei in Shibuya tomorrow at seven."}}
+[ 88.50s][user ] Wonderful. I also need to set a reminder to leave for the restaurant by ⟨ret@90.70s⟩ six thirty.
+[ 90.86s][moshi] I've set a reminder ⟦⚡SPAN@92.70s: (tool result) Reminder set for 6:30 PM: Leave for Uobei in Shibuya.⟧ for 6:30 PM to leave for Uobei in Shibuya.
+      CALL: {"function": "Reminder_1_SetReminder", "arguments": {"time": "18:30", "message": "Leave for Uobei in Shibuya"}}
+[ 96.43s][user ] Excellent. I’m feeling much less stressed about tomorrow now.
+[ 97.46s][moshi] [happy] That’s wonderful to hear! Planning ahead can really ease anxieties.
+[101.13s][user ] «backchannel» Yeah, totally.
+[102.56s][user ] I am. Actually, I’ve been thinking about my career… I’m feeling a little stuck.
+[107.27s][moshi] It’s very common to feel stuck in your career—many of my clients experience that. What specifically feels challenging right now?
+[115.97s][user ] I’m not sure my current role is utilizing my strengths. I’m good with people, but I’m mostly doing data entry.
+[116.83s][moshi] That sounds frustrating. It's important to find work that aligns with your natural abilities. Have you considered exploring roles that focus more on communication or collaboration?
+[117.94s][user ] «backchannel» Uh-huh.
+[120.17s][user ] I have, but I don’t even know where to start looking for something new.
+[129.32s][moshi] We can definitely brainstorm some potential career paths that leverage your people skills. Perhaps a customer success role or something in team leadership?
+[129.51s][user ] «backchannel» Yeah.
+[131.17s][user ] Hmm, team leadership… I’ve never really thought about that before.
+[136.66s][moshi] It could be a great fit! You’d be able to use your interpersonal skills to motivate and support others—something you clearly enjoy.
+[136.90s][user ] «backchannel» Mm-hmm.
+[137.40s][user ] That actually sounds… really appealing. Maybe I’ll look into that.
+[141.52s][moshi] [curious] That’s great! Taking that first step is often the hardest, but it’s also the most rewarding.
+[147.57s][user ] Thanks, Brae. You've been really helpful.
+[154.09s][moshi] You’re very welcome! Remember, you have a lot to offer, and finding the right path takes time. Enjoy your dinner tomorrow.

@@ -66,55 +66,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just thinking about Demi Lov | S2 Oh, right! October. Is it any good | S3 Was it a big hit, though? Like, di | S4 Yeah. I just remembered "Cool for 
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, do you know  | S2 Do you think it's her best work ye | S3 Interesting. I'm also curious abou | S4 …perfect! I'll look into getting t
 
-     0.00s  user  발화 시작: I was just thinking about Demi Lovato… do you know…
-     3.51s  user  발화 끝
-     4.59s  user  발화 시작: …when her new album is coming out?
-     6.85s  user  발화 끝
-     6.91s  agent 발화 시작: It's wonderful you're connecting with music that inspires yo
-    10.29s  agent 발화 끝
-    10.31s  user  발화 시작: I mean, the one she was working on in 2015. I can’t remember
-    15.25s  <ret> 발화 (turn4 첫 프레임)
-    15.48s  agent 발화 시작: <ret> The album you're thinking of, *Confidence*, was releas
-    15.73s  user  발화 끝
-    17.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: [source: Wikipedia] Demi Lovato’s fifth studio album, Confidence, was 
-    20.87s  user  발화 시작: Oh, right! October. Is it any good?
-    20.91s  agent 발화 끝
-    23.30s  <ret> 발화 (turn6 첫 프레임)
-    23.61s  agent 발화 시작: <ret> Music is so subjective, isn’t it? What resonates with 
-    23.78s  user  발화 끝
-    23.80s  ⚡SPAN 주입(IRRELEVANT) [d'=0.50s / d_lead=4.82s]: [source: Britannica] The Great Barrier Reef, located off the coast of 
-    28.43s  agent 발화 끝
-    28.85s  user  발화 시작: I've heard some really mixed reviews, actually.
-    31.11s  agent 발화 시작: It's natural for there to be varying opinions on artistic wo
-    31.20s  user  발화 끝
-    34.84s  user  발화 시작: Was it a big hit, though? Like, did it chart well?
-    34.90s  agent 발화 끝
-    37.79s  <ret> 발화 (turn10 첫 프레임)
-    37.93s  agent 발화 시작: <ret> It actually debuted at number one on the Billboard 200
-    38.07s  user  발화 끝
-    39.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: [source: Billboard] *Confidence* debuted at number one on the Billboar
-    40.49s  user  발화 시작: Wow, number one? That’s amazing! Did any of the singles do w
-    41.28s  agent 발화 끝
-    45.67s  user  발화 끝
-    45.69s  agent 발화 시작: That’s a fantastic question! It’s wonderful you're digging d
-    48.49s  user  발화 시작: Mm-hmm.
-    48.99s  user  발화 끝
-    51.11s  agent 발화 끝
-    51.15s  user  발화 시작: Yeah. I just remembered "Cool for the Summer" was on there.
-    54.63s  <ret> 발화 (turn15 첫 프레임)
-    54.76s  user  발화 끝
-    54.78s  agent 발화 시작: <ret> “Cool for the Summer” reached number eleven on the Bil
-    56.45s  user  발화 시작: Mm-hmm.
-    56.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [source: Rolling Stone] “Cool for the Summer” peaked at number 11 on t
-    57.09s  user  발화 끝
-    59.25s  agent 발화 시작: Sometimes, focusing on a single hit can overshadow the beaut
-    59.27s  agent 발화 끝
-    61.98s  user  발화 시작: Mm-hmm.
-    62.61s  user  발화 끝
-    65.03s  user  발화 시작: True. I guess I should give the whole thing another listen.
-    65.08s  agent 발화 끝
-    68.36s  agent 발화 시작: That sounds like a lovely idea. Really allowing yourself to 
-    68.40s  user  발화 끝
-    72.72s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, do you know when Demi Lovato’s new alb
+     7.19s  agent 발화 시작: You’re thinking about a release this year, which is great—it
+     7.23s  user  발화 끝
+    10.84s  user  발화 시작: Uh-huh.
+    11.33s  user  발화 끝
+    12.73s  user  발화 시작: Yeah, but specifically when in 2015? I'm trying to mark my c
+    12.75s  agent 발화 끝
+    19.31s  <ret> 발화 (turn4 첫 프레임)
+    19.54s  agent 발화 시작: <ret> Demi Lovato’s new album, *Confident*, was released… in
+    19.68s  user  발화 끝
+    21.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.59s]: [source: Wikipedia] Demi Lovato’s fifth studio album, *Confident*, was
+    27.13s  agent 발화 끝
+    27.48s  user  발화 시작: October… okay, good to know. Is it available on streaming se
+    31.58s  agent 발화 시작: Streaming availability often follows a release closely, thou
+    31.65s  user  발화 끝
+    38.06s  agent 발화 끝
+    38.53s  user  발화 시작: Do you think it's her best work yet? I’ve been a fan for a l
+    39.21s  user  발화 끝
+    39.26s  agent 발화 시작: That’s a very personal question, of course, and beauty truly
+    43.09s  user  발화 시작: Uh-huh.
+    45.68s  agent 발화 시작: It's exciting to see an artist evolve and express themselves
+    45.74s  agent 발화 끝
+    49.50s  user  발화 시작: Mm-hmm.
+    52.04s  user  발화 끝
+    52.09s  user  발화 끝
+    53.00s  agent 발화 끝
+    53.06s  user  발화 시작: I heard it’s a bit of a departure from her earlier sound—is 
+    55.83s  <ret> 발화 (turn13 첫 프레임)
+    56.07s  agent 발화 시작: <ret> It is true that *Confident* has a more mature sound… c
+    56.29s  user  발화 끝
+    57.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: [source: Billboard] *Confident* features a more mature and edgy sound 
+    59.94s  user  발화 시작: Mm-hmm.
+    60.52s  user  발화 끝
+    64.14s  user  발화 시작: Interesting. I'm also curious about her tour dates.
+    64.18s  agent 발화 끝
+    69.98s  user  발화 끝
+    70.40s  agent 발화 시작: Tour dates are a fantastic way to experience an album live—
+    77.08s  user  발화 시작: …are there any dates near Chicago? I’d love to go if she’s p
+    77.24s  <ret> 발화 (turn18 첫 프레임)
+    77.64s  agent 발화 시작: <ret> Demi Lovato will be performing at the Allstate Arena… 
+    77.71s  user  발화 끝
+    77.72s  agent 발화 끝
+    79.18s  user  발화 시작: Oh.
+    79.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.33s]: (tool result) Demi Lovato is playing at the Allstate Arena in Rosemont
+    80.79s  user  발화 시작: November 12th…
+    80.98s  agent 발화 끝
+    81.38s  user  발화 끝
+    82.76s  user  발화 시작: …perfect! I'll look into getting tickets. Thanks, Runana.
+    86.64s  user  발화 끝
+    87.11s  user  발화 끝
+    87.32s  <ret> 발화 (turn22 첫 프레임)
+    87.39s  agent 발화 시작: <ret> You’re very welcome. It’s wonderful when music brings 
+    89.16s  ⚡SPAN 주입(IRRELEVANT) [d'=1.84s / d_lead=4.12s]: [source: Britannica] The Amazon rainforest is the world’s largest trop
+    91.51s  agent 발화 끝
+    92.24s  user  발화 시작: I think I will. It’s been a while since I went to a concert.
+    96.18s  user  발화 끝

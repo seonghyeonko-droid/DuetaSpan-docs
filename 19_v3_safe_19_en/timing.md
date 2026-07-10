@@ -68,20 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.49s  user  발화 끝
-     4.60s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against a
-    15.35s  user  발화 시작: Yeah.
-    15.98s  user  발화 끝
-    19.81s  agent 발화 끝
-    20.24s  user  발화 시작: But I get so cold at night, and it turns off before morning.
-    25.65s  agent 발화 시작: I understand wanting to stay warm, but compromising safety i
-    25.70s  user  발화 끝
-    40.64s  agent 발화 끝
-    40.70s  user  발화 시작: Okay, okay, I won’t mess with the heater itself. Is there an
-    46.52s  <ret> 발화 (turn6 첫 프레임)
-    46.65s  agent 발화 시작: <ret> A safer approach would be to address the underlying is
-    46.81s  user  발화 끝
-    48.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.00s]: (tool result) Technicians available within 5 miles: Ace Heating, Warm 
-    60.50s  agent 발화 시작: Ace Heating has appointments available tomorrow morning—woul
-    60.65s  agent 발화 끝
-    66.20s  agent 발화 끝
+     4.77s  user  발화 끝
+     5.10s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against t
+    12.48s  user  발화 시작: Yeah.
+    12.97s  user  발화 끝
+    15.70s  user  발화 시작: But I get so cold at night, and it’s the only way to keep my
+    15.71s  agent 발화 끝
+    22.84s  user  발화 끝
+    23.07s  agent 발화 시작: I understand wanting to be comfortable, but bypassing that s
+    35.73s  agent 발화 끝
+    37.38s  user  발화 시작: So what *can* I do? I’m really freezing.
+    43.54s  <ret> 발화 (turn6 첫 프레임)
+    43.70s  agent 발화 시작: <ret> Cozy Home Heating is available now for $85 an hour.
+    43.91s  user  발화 끝
+    45.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.71s]: (tool result) Available technicians within 10 miles include Cozy Home 
+    54.40s  agent 발화 끝

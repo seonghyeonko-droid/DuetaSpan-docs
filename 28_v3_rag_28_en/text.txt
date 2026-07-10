@@ -64,11 +64,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about government departments……
-[  4.87s][user ] …when did the Veterans Affairs department actually get ⟨ret@8.22s⟩ started?
-[  8.53s][moshi] It’s interesting ⟦⚡SPAN@9.58s: [source: Britannica] The Department of Veterans Affairs was established on July 21, 1930, consolidating variou⟧ to consider how long different agencies have been around… the Department of Veterans Affairs began as a response to specific needs.
-[ 17.96s][moshi] The Department of Veterans Affairs was formally established… on July 21, 1930.
-[ 24.77s][user ] July 1930? That seems… surprisingly recent, actually. Was it really that ⟨ret@31.63s⟩ late?
-[ 32.02s][moshi] Before 1930, ⟦⚡SPAN@33.63s: [source: VA.gov] Prior to 1930, veteran benefits were administered by multiple agencies, including the Bureau ⟧ veteran benefits were handled by several different agencies, including the Bureau of Pensions.
-[ 39.48s][user ] So it wasn't created *from* nothing, it was a consolidation? That makes more sense. What exactly did the Veterans Bureau do?
-[ 48.10s][moshi] ⟨ret@48.03s⟩ The Veterans Bureau, ⟦⚡SPAN@50.03s: [source: History.com] The Veterans Bureau, established in 1921, provided vocational rehabilitation, medical ca⟧ created in 1921, offered services like rehabilitation, medical care, and insurance to World War I veterans.
+[  0.00s][user ] I was just wondering, when did the Veterans Affairs department actually get started? It feels…
+[  7.30s][user ] …like it’s always been around. ⟨ret@17.61s⟩
+[ 17.92s][moshi] The ⟦⚡SPAN@18.73s: [source: Britannica] The Department of Veterans Affairs was established on July 21, 1930, by President Herbert⟧ Department of Veterans Affairs was formally established… on July 21, 1930.
+[ 24.14s][user ] July 1930? That seems… surprisingly recent. Didn’t they have something before ⟨ret@34.09s⟩ that?
+[ 34.49s][moshi] Before the Department of Veterans ⟦⚡SPAN@36.09s: [source: VA.gov] Prior to 1930, veteran benefits were administered by the Bureau of Pensions, established in 1⟧ Affairs, veteran benefits were handled by the Bureau of Pensions… established in 1811.
+[ 39.87s][user ] So, over a century before the department itself? That's a pretty big difference. What did the Bureau of Pensions actually *do*?
+[ 53.19s][moshi] The Bureau focused on providing pensions, of course, but also medical care and some assistance with land claims for those who served. It was a crucial first step.

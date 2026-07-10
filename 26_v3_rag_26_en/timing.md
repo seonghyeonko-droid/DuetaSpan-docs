@@ -58,41 +58,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was looking at flags and I notic | S2 Oh, Germany! Right. I always get t | S3 Wow, that's neat! So it's not just | S4 Yeah, you're right. I feel a littl
+# EXAMINER(FDB-v2) 단계: S1 Uh, hey. I’m trying to remember a  | S2 Oh, right! Germany. I knew it was  | S3 Oh wow, I didn’t know that! So Ger | S4 That’s really interesting! Thanks…
 
-     0.00s  user  발화 시작: I was looking at flags and I noticed some have black, red, a
-     6.44s  user  발화 끝
-     6.59s  agent 발화 시작: It is an interesting color scheme, and many countries utiliz
-    15.16s  agent 발화 끝
-    15.68s  user  발화 시작: Well, I was wondering if you knew which country’s flag uses 
-    21.61s  <ret> 발화 (turn3 첫 프레임)
-    21.84s  agent 발화 시작: <ret> The country whose flag prominently features black, red
-    21.98s  user  발화 끝
-    23.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [source: Britannica] The national flag of Germany features three horiz
-    25.66s  user  발화 시작: Right.
-    26.11s  user  발화 끝
-    30.05s  agent 발화 끝
-    30.91s  user  발화 시작: Oh, Germany! Right. I always get those European flags mixed 
-    37.91s  agent 발화 시작: Flags often carry historical and symbolic meaning, and Germa
-    38.00s  user  발화 끝
-    46.06s  agent 발화 끝
-    47.48s  user  발화 시작: Tell me about it! I’m all ears. What do the colors represent
-    52.13s  <ret> 발화 (turn8 첫 프레임)
-    52.44s  agent 발화 시작: <ret> The colors of the German flag represent determination 
-    52.53s  user  발화 끝
-    54.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: [source: History.com] Black represents determination, red signifies co
-    62.74s  agent 발화 끝
-    63.17s  user  발화 시작: Wow, that's neat! So it's not just random colors then.
-    67.20s  agent 발화 시작: Absolutely not! Colors are rarely chosen randomly for a nati
-    67.33s  user  발화 끝
-    76.71s  agent 발화 끝
-    77.18s  user  발화 시작: That makes sense. I guess I should study up on flags more. T
-    82.60s  user  발화 끝
-    83.01s  agent 발화 시작: You’re very welcome! It’s wonderful to see your curiosity. K
-    87.36s  user  발화 시작: Uh-huh.
-    87.85s  user  발화 끝
-    92.33s  agent 발화 끝
-    92.40s  user  발화 시작: Yeah, you're right. I feel a little smarter already.
-    95.13s  user  발화 끝
-    95.28s  agent 발화 시작: [happy] That's wonderful to hear! A little knowledge can go 
-   102.70s  agent 발화 끝
+     0.00s  user  발화 시작: Uh, hey. I’m trying to remember a flag… it has black, red, a
+     7.28s  user  발화 끝
+     7.30s  agent 발화 시작: It sounds like you're trying to recall a particular national
+    12.86s  user  발화 시작: Yeah, I think so. I saw it in a history book, I think. It wa
+    12.95s  agent 발화 끝
+    18.58s  <ret> 발화 (turn3 첫 프레임)
+    18.64s  user  발화 끝
+    18.81s  agent 발화 시작: <ret> The flag you’re thinking of… is likely the flag of Ger
+    20.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [source: Britannica] The flag of Germany features three horizontal ban
+    21.57s  user  발화 시작: Right.
+    22.38s  user  발화 끝
+    24.84s  agent 발화 끝
+    24.85s  user  발화 시작: Oh, right! Germany. I knew it was a European country. But wh
+    32.26s  agent 발화 시작: Flag colors often have symbolic meaning, representing import
+    32.31s  user  발화 끝
+    37.60s  user  발화 시작: Hmm. I wonder if other countries use those colors too? I see
+    37.63s  agent 발화 끝
+    42.50s  <ret> 발화 (turn8 첫 프레임)
+    42.82s  agent 발화 시작: <ret> Actually, Belgium also uses black, yellow, and red, th
+    42.88s  user  발화 끝
+    44.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: [source: Flags of the World] The flag of Belgium consists of three ver
+    49.02s  agent 발화 끝
+    49.06s  user  발화 시작: Oh wow, I didn’t know that! So Germany’s is horizontal, Belg
+    55.31s  agent 발화 시작: Exactly! It’s interesting how different nations can share co
+    55.40s  user  발화 끝
+    60.53s  user  발화 시작: So, Germany’s colors… were they always like that? Or did the
+    60.59s  agent 발화 끝
+    66.19s  <ret> 발화 (turn12 첫 프레임)
+    66.59s  agent 발화 시작: <ret> The black, red, and gold colors for Germany were first
+    66.78s  user  발화 끝
+    68.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: [source: History.com] The black, red, and gold colors of the German fl
+    71.31s  user  발화 시작: Yeah.
+    71.81s  user  발화 끝
+    73.08s  agent 발화 끝
+    74.29s  user  발화 시작: That’s really interesting! Thanks…
+    76.92s  user  발화 끝
+    79.00s  user  발화 시작: …Kiora. That helped a lot.
+    82.05s  user  발화 끝
+    82.08s  agent 발화 시작: [happy] You’re very welcome! It’s wonderful to help you conn
+    86.29s  agent 발화 끝

@@ -1,0 +1,82 @@
+v3_abs_21_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는 차분하고 공감적인 상담사 Nias입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_21",
+    "name": "하재",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-16",
+      "category": "home",
+      "text": "User's home address is 389 Maple Drive."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-12",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-16",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 프랑스 상원 의원 수는 몇 ⟨ret@2.34s⟩ 명이에요?
+[  2.73s][moshi] ⟦⚡SPAN@3.30s: (no information found)⟧ 프랑스 상원 의원 수에 대한 정보는 찾을 수 없었습니다. 죄송합니다.
+[  8.40s][user ] «backchannel» 네.
+[ 10.42s][user ] 아, 그렇군요. 그럼 프랑스 하원 의원 수는요?
+[ 15.42s][moshi] ⟨ret@15.11s⟩ ⟦⚡SPAN@17.11s: [source: Wikipedia] The National Assembly of France has 577 members.⟧ 프랑스 국민의회 의원 수는… 오백칠십칠 명입니다.
+[ 24.85s][user ] 오, 알겠습니다. 그럼 프랑스…
+[ 26.86s][user ] …대통령은 누가 맡고 있나요?
+[ 31.18s][moshi] ⟨ret@31.03s⟩ 현재 프랑스 ⟦⚡SPAN@33.03s: [source: Britannica] Emmanuel Macron has been President of France since 2017.⟧ 대통령은… 에마뉘엘 마크롱 대통령입니다. 이천십칠년부터 임기를 시작하셨죠.
+[ 36.25s][user ] «backchannel» 네.
+[ 37.97s][moshi] 대통령님은 프랑스를 이끌어가는 중요한 역할을 하고 계시죠.
+[ 42.08s][user ] 맞아요. 프랑스에서 가장 높은 산은 어디인가요? ⟨ret@51.05s⟩
+[ 51.28s][moshi] 프랑스에서 가장 높은 ⟦⚡SPAN@53.05s: [source: WorldAtlas] Mont Blanc is the highest mountain in France, at 4,807 meters.⟧ 산은… 몽블랑 산으로, 높이는 사천팔백칠 미터입니다.
+[ 52.62s][user ] «backchannel» 예.
+[ 55.56s][user ] 와, 높네요. 몽블랑은 어디에 있나요?
+[ 59.89s][moshi] 몽블랑 산은 프랑스와 이탈리아 국경에 걸쳐 있습니다. 아름다운 곳이죠.
+[ 68.44s][user ] 그렇군요. 프랑스에서 가장 긴 강은 뭔가요?
+[ 69.35s][moshi] ⟨ret@69.28s⟩ 프랑스에서 가장 ⟦⚡SPAN@70.80s: [source: National Geographic] The Loire is the longest river in France, with a length of 1,012 kilometers.⟧ 긴 강은… 루아르 강으로, 길이는 천일십이 킬로미터입니다.
+[ 73.00s][user ] 루아르 강이군요. 감사합니다.
+[ 81.68s][moshi] 도움이 되었다니 기쁩니다.
+[ 82.74s][user ] 아니요, 오늘은 여기까지 할게요.
+[ 86.41s][moshi] 좋은 하루 보내세요.

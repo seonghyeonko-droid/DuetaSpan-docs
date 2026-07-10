@@ -60,71 +60,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to figure out the best  | S2 Hmm, so closer to thirty minutes t | S3 Do you know anything about parking | S4 Just trying to gauge how much extr
+# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to visit my  | S2 Are there any good vegetarian rest | S3 Yes, please. | S4 I’m also planning a birthday dinne
 
-     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It's lovely to connect with you. I understa
-     7.56s  user  발화 시작: I'm trying to figure out the best way to get to my friend So
-     7.60s  agent 발화 끝
-    12.22s  <ret> 발화 (turn2 첫 프레임)
-    12.30s  agent 발화 시작: <ret> I can help with that. To start, your home address is 3
-    12.46s  user  발화 끝
-    13.66s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.42s]: [2025-08-06] User's home address is 30 Oak Avenue.
-    16.05s  user  발화 시작: Yeah, yeah.
-    17.15s  user  발화 끝
-    17.72s  agent 발화 끝
-    17.95s  user  발화 시작: Yes, that's right. And Sophie lives at 12 Rue de Rivoli. How
-    23.37s  <ret> 발화 (turn5 첫 프레임)
-    23.77s  agent 발화 시작: <ret> The drive to 12 Rue de Rivoli is approximately 22 minu
-    23.98s  user  발화 끝
-    25.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.59s]: (tool result) Driving directions to 12 Rue de Rivoli: 22 minutes, 8.5 
-    28.23s  user  발화 시작: Yeah.
-    28.96s  user  발화 끝
-    30.30s  agent 발화 시작: That sounds manageable for a dinner with Sophie.
-    30.36s  agent 발화 끝
-    31.77s  user  발화 시작: Mm-hmm.
-    32.41s  user  발화 끝
-    32.97s  user  발화 시작: Oh, good point. What's the traffic like right now?
-    33.21s  agent 발화 끝
-    36.42s  <ret> 발화 (turn10 첫 프레임)
-    36.50s  agent 발화 시작: <ret> There is moderate traffic currently, adding an estimat
-    36.62s  user  발화 끝
-    38.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Moderate traffic; estimated delay: 7 minutes.
-    42.48s  agent 발화 끝
-    43.85s  user  발화 시작: Hmm, so closer to thirty minutes then?
-    46.65s  agent 발화 시작: Yes, accounting for the traffic, the trip will likely take a
-    46.80s  user  발화 끝
-    50.15s  user  발화 시작: Mhm.
-    50.79s  user  발화 끝
-    54.90s  agent 발화 끝
-    56.28s  user  발화 시작: No, that’s okay. I just want to be on time. I remember Sophi
-    64.30s  agent 발화 시작: That’s a good thing to consider. Parking can certainly add t
-    64.44s  user  발화 끝
-    67.71s  user  발화 시작: Right.
-    68.15s  user  발화 끝
-    69.62s  agent 발화 끝
-    69.76s  user  발화 시작: Do you know anything about parking near her place?
-    72.16s  <ret> 발화 (turn18 첫 프레임)
-    72.47s  agent 발화 시작: <ret> Parking near 12 Rue de Rivoli is limited to street par
-    72.67s  user  발화 끝
-    74.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) Limited street parking; nearby parking garage at 20 Rue 
-    75.90s  user  발화 시작: Oh.
-    76.49s  user  발화 끝
-    81.68s  user  발화 시작: Okay, good to know. That garage sounds like a good option.
-    81.83s  agent 발화 끝
-    85.52s  user  발화 끝
-    85.74s  agent 발화 시작: It sounds like a practical solution, Ava. It’s wise to have 
-    93.30s  agent 발화 끝
-    93.31s  user  발화 시작: Is it a long walk from the garage?
-    95.70s  agent 발화 시작: It's—
-    95.85s  user  발화 시작: Just trying to gauge how much extra time I need to add.
-    95.89s  user  발화 끝
-    96.48s  agent 발화 끝
-    99.60s  user  발화 끝
-    99.70s  agent 발화 시작: The walk from 20 Rue Saint-Honoré to 12 Rue de Rivoli is app
-   102.73s  user  발화 시작: Really?
-   103.55s  user  발화 끝
-   104.83s  user  발화 시작: Perfect. Thanks so much, Hia!
-   105.16s  agent 발화 끝
-   106.89s  agent 발화 시작: You're very welcome, Ava. I’m glad I could assist you with y
-   107.05s  user  발화 끝
-   113.42s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s good to connect with you.
+     7.41s  agent 발화 끝
+     7.44s  user  발화 시작: I’m thinking of going to visit my mother. She lives outside 
+    13.19s  user  발화 끝
+    13.22s  <ret> 발화 (turn2 첫 프레임)
+    13.28s  agent 발화 시작: <ret> So, you’d like to get directions from your home… to yo
+    15.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [2025-08-06] User's home address is 30 Oak Avenue.
+    17.27s  user  발화 시작: Right.
+    18.41s  user  발화 끝
+    19.54s  user  발화 시작: Yes, exactly. How long will it take to drive there?
+    20.00s  agent 발화 끝
+    21.11s  user  발화 끝
+    21.17s  <ret> 발화 (turn5 첫 프레임)
+    21.25s  agent 발화 시작: <ret> The drive to your mother’s location is estimated to be
+    22.69s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.12s]: (tool result) Driving to Mother’s location will take approximately 45 
+    24.01s  user  발화 시작: Yeah, yeah.
+    24.46s  user  발화 끝
+    25.37s  agent 발화 끝
+    25.54s  user  발화 시작: Mm-hmm.
+    29.43s  user  발화 끝
+    29.55s  agent 발화 시작: That sounds manageable. Is there anything specific you'd lik
+    32.93s  user  발화 시작: Mm-hmm.
+    33.42s  user  발화 끝
+    35.77s  agent 발화 끝
+    35.92s  user  발화 시작: Are there any good vegetarian restaurants along the way?
+    40.99s  <ret> 발화 (turn11 첫 프레임)
+    41.31s  agent 발화 시작: <ret> Knowing you prefer vegetarian options… I can certainly
+    41.48s  user  발화 끝
+    41.95s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.14s]: [2026-04-15] User is vegetarian.
+    42.41s  user  발화 시작: Oh, that sounds lovely.
+    42.45s  agent 발화 끝
+    49.71s  <ret> 발화 (turn13 첫 프레임)
+    50.10s  agent 발화 시작: <ret> It’s wonderful to find a pleasant stop on a journey. W
+    50.15s  user  발화 끝
+    50.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.50s]: (tool result) “Le Potager” is a vegetarian restaurant 20 minutes into 
+    50.25s  user  발화 시작: Mhm.
+    50.60s  agent 발화 끝
+    51.21s  user  발화 시작: Yes, please.
+    52.04s  user  발화 끝
+    56.78s  <ret> 발화 (turn16 첫 프레임)
+    56.85s  user  발화 끝
+    56.86s  agent 발화 시작: <ret> I’ve added “Le Potager” to your route. It’ll be a nice
+    58.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Le Potager has been added to your route.
+    60.40s  user  발화 시작: Right.
+    62.18s  agent 발화 끝
+    62.41s  user  발화 시작: Perfect!
+    64.21s  agent 발화 시작: [happy] It’s good to anticipate a little enjoyment along the
+    64.34s  user  발화 끝
+    66.11s  user  발화 시작: Yeah.
+    66.61s  user  발화 끝
+    69.44s  user  발화 끝
+    69.79s  user  발화 시작: I’m also planning a birthday dinner for my sister.
+    69.91s  agent 발화 끝
+    72.06s  <ret> 발화 (turn22 첫 프레임)
+    72.36s  agent 발화 시작: <ret> Ah, yes, I recall we discussed a birthday dinner for y
+    72.56s  user  발화 끝
+    74.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: [2026-02-09] Past chat — Planning a birthday dinner: party of six; loo
+    76.06s  user  발화 시작: Uh-huh.
+    76.69s  user  발화 끝
+    80.00s  agent 발화 끝
+    80.11s  user  발화 시작: Right.
+    80.74s  user  발화 끝
+    80.94s  agent 발화 시작: Is there anything new about those plans, or are we still loo
+    86.41s  agent 발화 끝

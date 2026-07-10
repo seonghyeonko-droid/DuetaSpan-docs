@@ -62,25 +62,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  3.06s][moshi] ⟨ret@2.98s⟩ And I’ve checked my resources, but ⟦⚡SPAN@4.98s: (no information found)⟧ unfortunately, I couldn’t find the exact number of senators in the French Senate at this time.
-[  7.23s][user ] «backchannel» Okay.
-[  9.79s][user ] Oh. Well, what about the US Senate? How many senators are there?
-[ 13.10s][moshi] ⟨ret@12.86s⟩ The US Senate ⟦⚡SPAN@14.86s: [source: Wikipedia] The United States Senate is composed of 100 senators, two from each of the 50 states.⟧ is comprised of senators representing each state, and there are… 100 senators total. It's a large group to represent a diverse country.
-[ 18.57s][user ] «backchannel» Exactly.
-[ 24.91s][user ] That makes sense. I’m trying to understand how these bodies are structured. Do any countries have a unicameral legislature?
-[ 30.51s][moshi] ⟨ret@30.44s⟩ Some countries opt ⟦⚡SPAN@32.44s: [source: Britannica] A unicameral legislature is a lawmaking body with only one chamber or house.⟧ for a simpler structure, a single legislative chamber, and that’s called a unicameral legislature. Examples include New Zealand and Denmark.
-[ 42.29s][user ] Interesting. I'm thinking about starting a new habit – regular meditation. Any advice?
-[ 47.97s][moshi] That's a wonderful goal! Starting small is key – even five minutes a day can be incredibly beneficial for your wellbeing.
-[ 50.40s][user ] «backchannel» Yeah, yeah.
-[ 55.87s][user ] Five minutes… okay, that sounds doable. Is there a best time of day to do it?
-[ 60.15s][moshi] There isn’t one single ‘best’ time, but many find mornings before the day begins or evenings to unwind particularly helpful. It depends on your schedule and preferences.
-[ 71.52s][user ] I think mornings might work. I struggle with anxiety sometimes, would meditation help with that?
-[ 77.02s][moshi] Meditation is often recommended for managing anxiety. It helps cultivate a sense of calm and awareness, which can be very grounding.
-[ 85.27s][user ] That's good to hear. What’s the difference between mindfulness and ⟨ret@88.66s⟩ meditation?
-[ 89.05s][moshi] Mindfulness is a ⟦⚡SPAN@90.66s: [source: Mindful.org] Mindfulness is a mental state achieved by focusing one's awareness on the present moment⟧ state of being present, and meditation is a practice you can use to cultivate that state of awareness… mindfulness is achieved through meditation.
-[ 96.55s][user ] «backchannel» Okay.
-[100.16s][user ] So meditation can *lead* to mindfulness?
-[103.29s][moshi] Exactly. Meditation is a tool, and mindfulness is the result. It’s like exercise for your mind.
-[108.14s][user ] «backchannel» Right.
-[110.73s][user ] That's a helpful way to think about it. Thanks, Nias.
-[113.34s][moshi] You’re very welcome. It’s been a pleasure talking with you.
+[  2.53s][moshi] ⟨ret@2.46s⟩ I'm sorry, I don't ⟦⚡SPAN@4.46s: (no information found)⟧ currently have that information available. It seems details on the French Senate’s composition aren’t readily accessible to me right now.
+[  8.59s][user ] «backchannel» Okay.
+[ 12.49s][user ] Oh, okay. Well, what about the US Senate? How many senators are ⟨ret@17.16s⟩ there?
+[ 17.40s][moshi] The US Senate ⟦⚡SPAN@19.16s: [source: Wikipedia] The United States Senate has 100 senators, two from each of the 50 states.⟧ is comprised of one hundred senators… two representing each of the fifty states. It’s a system designed for equal state representation.
+[ 28.68s][user ] That makes sense. And who is the current President Pro ⟨ret@29.00s⟩ Tempore of the US Senate?
+[ 29.08s][moshi] The current President Pro Tempore ⟦⚡SPAN@31.00s: [source: Senate.gov] Patty Murray is the current President Pro Tempore of the Senate as of January 3, 2023.⟧ of the Senate is… Patty Murray, as of January 3rd, 2023. That position holds a lot of historical weight.
+[ 32.72s][user ] «backchannel» Exactly.
+[ 37.39s][user ] I’m trying to get a better handle on how our government works, it’s so complicated.
+[ 42.33s][moshi] It absolutely can be overwhelming, understanding all the layers of government. It’s good you’re taking the time to learn about it.
+[ 44.55s][user ] «backchannel» Yeah, yeah.
+[ 49.18s][user ] Yeah, I feel like I should have paid more attention in civics class. What's the longest river in ⟨ret@58.98s⟩ France?
+[ 59.30s][moshi] The longest ⟦⚡SPAN@59.48s: [source: Britannica] The Loire is the longest river in France, with a length of 1,012 kilometers (629 miles).⟧ river in France is… the Loire, extending 1,012 kilometers, or 629 miles. It's a beautiful and vital waterway.
+[ 60.62s][user ] Wow, that’s pretty long. I’m planning a trip to France next year, maybe I’ll visit it.
+[ 64.85s][moshi] [happy] That sounds wonderful! Traveling can be such a enriching experience. I hope you have a fantastic time.
+[ 74.66s][user ] I’m thinking of visiting Provence. Is it usually hot ⟨ret@76.36s⟩ there in July?
+[ 76.68s][moshi] Provence typically experiences an average high of 29 degrees Celsius… or 84 degrees Fahrenheit, in July. It’s ⟦⚡SPAN@77.72s: (tool result) The average high temperature in Provence, France in July is 29°C (84°F).⟧ a very popular time to visit.
+[ 77.10s][user ] «backchannel» Right.
+[ 78.30s][user ] Okay, good to know. Thanks for the information!
+[ 80.56s][moshi] You’re very welcome. I'm glad I could help you with your planning. Enjoy your trip!

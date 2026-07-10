@@ -59,17 +59,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Jamie, welcome to Sydney.
-     1.42s  agent 발화 끝
-     1.72s  user  발화 시작: Hunar… that’s a beautiful name. It’s just, moving after so l
-    10.03s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Jamie. Big trans
-    10.11s  user  발화 끝
-    15.82s  user  발화 시작: Welll… I’m trying to find some community, things to *do*, bu
-    16.29s  agent 발화 끝
-    24.45s  agent 발화 시작: Sydney does have a different rhythm than Melbourne. Perhaps 
-    24.49s  user  발화 끝
-    31.46s  user  발화 시작: I— I mean, I love live music. Small venues, not stadiums. An
-    31.67s  agent 발화 끝
-    38.70s  agent 발화 시작: [laugh] A love of good coffee is practically a Sydney requir
-    38.73s  user  발화 끝
-    46.49s  agent 발화 끝
+     0.00s  agent 발화 시작: Jamie, welcome. I’m Hunar, and I help people feel more settl
+     5.97s  agent 발화 끝
+     7.00s  user  발화 시작: Hunar… that’s a lovely name. It’s just… Sydney feels so big,
+    13.49s  user  발화 끝
+    13.57s  agent 발화 시작: It’s completely natural to feel overwhelmed by a city’s size
+    21.31s  agent 발화 끝
+    21.45s  user  발화 시작: Welll… I miss having a local coffee shop. Somewhere I can ju
+    28.69s  agent 발화 시작: Ah, a familiar space is so grounding. It’s about finding a r
+    28.82s  user  발화 끝
+    37.35s  agent 발화 끝
+    37.88s  user  발화 시작: That’s a good idea, I suppose. But where do I even start? Th
+    42.88s  user  발화 끝

@@ -63,73 +63,77 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading… | S2 …right. That sounds familiar. Was  | S3 It really does. Speaking of survei | S4 That sounds… overwhelming.
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… where did th | S2 A foundational text… so it really  | S3 …on anything real that was happeni | S4 It's a bit unsettling to think abo
 
-     0.00s  user  발화 시작: I was just reading…
-     1.24s  user  발화 끝
-     2.47s  user  발화 시작: …about surveillance and it made me think…
-     4.60s  user  발화 끝
-     6.17s  user  발화 시작: …where did the term “Big Brother” actually come from?
-     8.87s  <ret> 발화 (turn3 첫 프레임)
-     9.17s  agent 발화 시작: <ret> The phrase “Big Brother” actually comes from a novel, 
-     9.21s  user  발화 끝
-    10.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: [source: Wikipedia] "The term 'Big Brother' originates from the 1949 n
-    15.62s  user  발화 시작: Nineteen Eighty-Four…
-    15.66s  agent 발화 끝
-    16.90s  user  발화 끝
-    18.40s  user  발화 시작: …right. That sounds familiar. Was it a commentary on somethi
-    23.29s  <ret> 발화 (turn6 첫 프레임)
-    23.68s  user  발화 끝
-    23.69s  agent 발화 시작: <ret> Orwell wrote it shortly after World War II, and it's g
-    25.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: [source: Britannica] "Nineteen Eighty-Four, dystopian novel published 
-    29.67s  agent 발화 시작: It was indeed a warning about totalitarian regimes, and Orwe
-    29.77s  agent 발화 끝
-    31.88s  user  발화 시작: Mhm.
-    32.33s  user  발화 끝
-    36.07s  agent 발화 끝
-    36.09s  user  발화 시작: So it wasn’t just a random idea he had?
-    38.43s  agent 발화 시작: No, not at all. He was deeply affected by the political clim
-    38.44s  user  발화 끝
-    45.96s  user  발화 시작: Hmm, that makes sense. I wonder if he could have imagined ho
-    46.30s  agent 발화 끝
-    50.59s  agent 발화 시작: It’s quite striking, isn’t it? The themes of surveillance an
-    50.77s  user  발화 끝
-    53.41s  user  발화 시작: Yeah.
-    53.73s  user  발화 끝
-    56.52s  agent 발화 끝
-    56.61s  user  발화 시작: It really does. Speaking of surveillance, can you tell me wh
-    62.56s  <ret> 발화 (turn15 첫 프레임)
-    62.64s  agent 발화 시작: <ret> California’s data privacy is protected by the CCPA, wh
-    62.68s  user  발화 끝
-    64.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) "California Consumer Privacy Act (CCPA) grants consumers
-    67.48s  user  발화 시작: Yeah.
-    67.83s  user  발화 끝
-    70.85s  agent 발화 끝
-    71.01s  user  발화 시작: That sounds good, at least. Can I find a summary of that onl
-    74.01s  <ret> 발화 (turn18 첫 프레임)
-    74.16s  agent 발화 시작: <ret> I found a summary stating that the CCPA allows Califor
-    74.24s  user  발화 끝
-    76.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: (tool result) "The California Consumer Privacy Act (CCPA) gives Califo
-    78.06s  user  발화 시작: Right.
-    78.56s  user  발화 끝
-    83.47s  agent 발화 끝
-    83.90s  user  발화 시작: Okay, that’s helpful. It’s good to know what my rights are.
-    86.49s  user  발화 끝
-    86.70s  agent 발화 시작: It absolutely is, and being informed is the first step in pr
-    91.18s  user  발화 시작: I'm trying to declutter my digital life, actually. Any tips 
-    91.19s  agent 발화 끝
-    94.75s  agent 발화 시작: As a productivity guide, I always recommend starting with a 
-    94.93s  user  발화 끝
-    99.90s  agent 발화 끝
-    99.91s  user  발화 시작: That sounds… overwhelming.
-   102.08s  user  발화 끝
-   102.10s  user  발화 시작: …maybe I should start smaller?
-   103.83s  agent 발화 시작: [happy] You're right to think so! Starting small is the most
-   103.89s  user  발화 끝
-   105.77s  user  발화 시작: Oh.
-   106.08s  user  발화 끝
-   108.93s  user  발화 시작: Maybe just deleting unused apps then?
-   108.93s  agent 발화 끝
-   111.47s  agent 발화 시작: That’s a perfect first step. It’s a quick win that can creat
-   111.52s  user  발화 끝
-   116.38s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering… where did the term “big brother” actua
+     2.58s  user  발화 끝
+     4.38s  user  발화 시작: …I always assumed it was…
+     6.69s  user  발화 끝
+     8.10s  user  발화 시작: …just a general expression for authority.
+    12.33s  <ret> 발화 (turn3 첫 프레임)
+    12.64s  agent 발화 시작: <ret> The phrase “big brother” comes from a novel… Nineteen 
+    12.73s  user  발화 끝
+    14.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: [source: Wikipedia] “The term ‘Big Brother’ originated from George Orw
+    20.86s  user  발화 시작: Nineteen Eighty-Four, huh? Was that a popular book when it f
+    21.17s  agent 발화 끝
+    25.16s  <ret> 발화 (turn5 첫 프레임)
+    25.55s  agent 발화 시작: <ret> It was actually quite popular right away… in 1949.
+    25.58s  user  발화 끝
+    27.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: [source: Britannica] “Nineteen Eighty-Four was an immediate critical a
+    28.62s  user  발화 시작: Mhm.
+    29.85s  user  발화 끝
+    34.36s  agent 발화 끝
+    35.28s  user  발화 시작: A foundational text… so it really influenced a lot of other 
+    37.34s  agent 발화 시작: It certainly did. Many later works of science fiction and po
+    37.40s  user  발화 끝
+    39.13s  agent 발화 끝
+    39.98s  user  발화 시작: Hmm, I think I remember my English teacher talking about it.
+    46.86s  <ret> 발화 (turn10 첫 프레임)
+    47.26s  agent 발화 시작: <ret> The book explores the dangers of totalitarianism… thro
+    47.29s  user  발화 끝
+    47.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.50s]: [source: LitCharts] “Nineteen Eighty-Four explores the dangers of tota
+    47.41s  user  발화 시작: Yeah.
+    47.76s  agent 발화 끝
+    47.93s  user  발화 시작: That sounds… pretty bleak. Did Orwell base it…
+    51.01s  user  발화 끝
+    55.67s  user  발화 끝
+    57.02s  user  발화 시작: …on anything real that was happening at the time?
+    57.41s  <ret> 발화 (turn14 첫 프레임)
+    57.46s  user  발화 끝
+    57.48s  agent 발화 시작: <ret> Orwell found inspiration in real events… Stalinist Rus
+    59.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: [source: History.com] “Orwell drew inspiration from Stalinist Russia, 
+    59.74s  user  발화 시작: Yeah.
+    61.29s  user  발화 시작: So it wasn’t just a random scary story, it was based on thin
+    61.50s  agent 발화 끝
+    64.98s  agent 발화 시작: Exactly. It was a response to the political realities he obs
+    65.17s  user  발화 끝
+    66.97s  user  발화 끝
+    67.97s  user  발화 시작: Right.
+    68.46s  user  발화 끝
+    72.21s  agent 발화 끝
+    72.86s  user  발화 시작: That makes sense. Were there any specific technologies that 
+    76.67s  <ret> 발화 (turn20 첫 프레임)
+    76.99s  agent 발화 시작: <ret> Early ideas about telescreens… influenced Orwell’s dep
+    77.15s  user  발화 끝
+    78.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [source: Smithsonian Magazine] “Although not yet widespread in 1949, e
+    85.42s  agent 발화 끝
+    85.63s  user  발화 시작: Wow, so even the idea of the telescreens wasn’t entirely new
+    90.28s  agent 발화 시작: That's right. He extrapolated from emerging technologies and
+    90.36s  user  발화 끝
+   100.73s  user  발화 시작: It's a bit unsettling to think about how relevant it still i
+   100.80s  agent 발화 끝
+   103.60s  agent 발화 시작: It is, isn't it? The themes Orwell explored continue to reso
+   103.68s  user  발화 끝
+   106.27s  user  발화 시작: Yeah.
+   106.67s  user  발화 끝
+   110.51s  user  발화 시작: I wonder if he'd be surprised by how much of his vision came
+   110.78s  agent 발화 끝
+   114.45s  agent 발화 시작: [curious] I imagine he would be, and perhaps a little dishea
+   114.53s  user  발화 끝
+   116.10s  user  발화 시작: Right.
+   116.59s  user  발화 끝
+   119.30s  agent 발화 끝
+   120.44s  user  발화 시작: You’re right. Well, thanks for explaining the origin of “big
+   123.91s  user  발화 끝
+   123.97s  agent 발화 시작: You’re very welcome. Sometimes understanding the roots of a 
+   129.94s  agent 발화 끝

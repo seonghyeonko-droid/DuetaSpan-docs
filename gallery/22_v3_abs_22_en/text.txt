@@ -67,20 +67,18 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists hate?
-[  3.24s][moshi] ⟨ret@3.10s⟩ And I can certainly understand ⟦⚡SPAN@5.10s: (no information found)⟧ why you’d ask. It appears there isn’t a single, universally agreed-upon answer to that.
-[  6.94s][user ] «backchannel» Uh-huh.
-[  9.76s][user ] Hmm, okay. Well, what about the history of anarchism—when did it really start gaining ⟨ret@16.95s⟩ traction?
-[ 17.18s][moshi] The roots ⟦⚡SPAN@17.99s: [source: Wikipedia] Anarchism as a political philosophy emerged during the Enlightenment, gaining prominence i⟧ of anarchism go back to the Enlightenment period, but it really took hold in the nineteenth century—with thinkers like Pierre-Joseph Proudhon leading the way.
-[ 25.79s][user ] Proudhon, right. Was he ⟨ret@28.18s⟩ French?
-[ 28.49s][moshi] Yes, Pierre-Joseph Proudhon ⟦⚡SPAN@30.02s: [source: Britannica] Pierre-Joseph Proudhon was a French socialist, political philosopher, and mutualist econo⟧ was indeed French—a socialist, political philosopher, and economist, to be precise.
-[ 34.76s][user ] Interesting. So, if someone wanted to learn more about current anarchist movements.
-[ 41.17s][moshi] «interrupted» Current anarchist movements are quite diverse, ranging from—
-[ 44.13s][user ] «interrupts_prev» Are there any major groups still active in Europe today?
-[ 47.93s][moshi] Europe does see continued anarchist activity, with several groups focusing on direct action and mutual aid.
-[ 53.80s][user ] Mutual aid… how does that work, ⟨ret@56.97s⟩ exactly?
-[ 57.12s][moshi] Mutual aid is a ⟦⚡SPAN@58.97s: [source: The Anarchist Federation] Mutual aid is a reciprocal exchange of resources and services for mutual be⟧ system of reciprocal exchange—resources and services shared for the benefit of everyone involved, typically outside of conventional institutions.
-[ 66.47s][user ] That sounds…idealistic. Could you recommend a good book to get a broader overview of anarchist thought?
-[ 74.33s][moshi] For a broader overview, I often recommend 'Anarchy, State, and Utopia' by Robert Nozick—a foundational text for understanding the core concepts.
-[ 83.44s][user ] Okay, great. Thanks, Frunax.
-[ 85.92s][moshi] You’re very welcome. I’m glad I could help illuminate some of these ideas for you.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.30s⟩ hate?
+[  2.45s][moshi] And ⟦⚡SPAN@4.30s: (no information found)⟧ I can see why you’d ask.
+[  7.19s][user ] «backchannel» Uh-huh.
+[ 10.43s][user ] I’m planning a trip to Italy, what’s the best time of year to go? ⟨ret@21.64s⟩
+[ 21.79s][moshi] The most enjoyable times to visit Rome are… in April and October. ⟦⚡SPAN@22.08s: [source: WeatherSpark] The best times to visit Rome are April and October, when the weather is pleasant and th⟧ It's a beautiful city, you'll love it.
+[ 22.42s][user ] What about Florence? Is that ⟨ret@24.07s⟩ different?
+[ 24.39s][moshi] Florence ⟦⚡SPAN@26.07s: [source: Visit Florence] Florence is best visited in the shoulder seasons of April-May and September-October f⟧ is also best enjoyed during the shoulder seasons… in April-May and September-October.
+[ 34.27s][user ] Okay, good to know. And what are some must-see sights in Florence?
+[ 37.77s][moshi] «interrupted» Florence is brimming with incredible art and architecture—the Duomo is truly spectacular, and the Uffizi Gallery—
+[ 47.80s][user ] «interrupts_prev» Is it really crowded at the Uffizi?
+[ 50.19s][moshi] «interrupted» It can get quite busy, yes. Booking tickets in advance is highly recommended to avoid long lines, and perhaps consider—
+[ 59.79s][user ] «interrupts_prev» Right, good point. Can you book me tickets for the Uffizi for ⟨ret@61.76s⟩ October 10th?
+[ 61.92s][moshi] I have ⟦⚡SPAN@63.76s: (tool result) Tickets for the Uffizi Gallery on October 10th are confirmed. Your reference number is ZX789Q.⟧ confirmed your tickets for the Uffizi Gallery… with reference number ZX789Q. I've sent the confirmation to your email address.
+[ 74.63s][user ] Perfect! Thanks so much, Frunax.
+[ 77.62s][moshi] You are very welcome! I’m glad I could help with your planning.

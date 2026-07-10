@@ -67,38 +67,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Marie, it’s lovely to connect with you. I’m Bir, and I offer support as people navigate life’s transitions and find their way through grief.
-[  7.89s][user ] Bir… that’s a beautiful name. It feels…grounded. I’m still reeling from a big change, actually.
-[ 14.67s][moshi] Change can certainly feel destabilizing, Marie. It’s natural to feel adrift when familiar landscapes shift beneath your feet.
-[ 22.49s][user ] It’s my job. I lost it, unexpectedly. Twenty years… just gone.
-[ 28.35s][moshi] Twenty years is a significant commitment, Marie. It's understandable to feel a profound sense of loss, not just of the work itself, but of the identity it held.
-[ 40.03s][user ] Mm-hmm.
-[ 40.48s][moshi] Allow yourself to truly feel the sadness, the anger, whatever arises. Suppressing those emotions only prolongs the healing process.
-[ 50.23s][user ] Easier said than done, I guess. It feels like everyone else is just… moving on.
-[ 55.31s][moshi] It often appears that way, doesn’t it? But everyone processes loss at their own pace. Comparing your journey to others can be unhelpful.
-[ 64.42s][user ] I keep thinking I should be doing something, *anything*, but I don’t even know where to start.
-[ 69.87s][moshi] That feeling of being overwhelmed is very common, Marie. Sometimes, the most courageous act is simply to rest and allow yourself to be.
-[ 73.43s][user ] «backchannel» Yeah, totally.
-[ 78.54s][user ] Rest feels…wrong. Like I’m failing.
-[ 82.89s][moshi] That’s a powerful statement, Marie. Where does that sense of obligation come from, do you think? What makes rest feel like failure?
-[ 86.41s][user ] «backchannel» Mm-hmm.
-[ 92.22s][user ] My dad, probably. He always said “idle hands…” you know.
-[ 96.86s][moshi] [happy] It sounds like your father instilled a strong work ethic. While admirable, it may also carry a subtle message about self-worth being tied to productivity.
-[107.53s][user ] Exactly. And now I have…nothing to prove.
-[110.92s][moshi] Perhaps this is an opportunity to redefine what “proving” means to you, Marie. To discover a sense of worth independent of external validation.
-[120.35s][user ] I don’t even know what I *like* to do anymore, outside of work.
-[124.64s][moshi] That’s a wonderful question to explore. What brought you joy as a child, before expectations and responsibilities took hold?
-[134.44s][user ] I used to paint. I haven’t touched a brush in decades.
-[138.06s][moshi] Painting… that sounds like a gentle way to reconnect with a part of yourself you may have forgotten. It isn’t about creating a masterpiece, but about the process itself.
-[149.49s][user ] It feels silly, though. Like a childish thing.
-[152.66s][moshi] There’s a beautiful freedom in allowing yourself to be playful, Marie. To embrace the joy of creation without judgment or expectation.
-[158.49s][user ] «backchannel» Yeah.
-[161.95s][user ] Maybe… I’m scared to be bad at it.
-[165.11s][moshi] Being "bad" at something is simply a sign of learning, Marie. It's an act of courage to try something new, to be vulnerable enough to not excel immediately.
-[171.14s][user ] «backchannel» Yeah.
-[175.08s][user ] I guess… it’s just hard to see a future right now.
-[179.02s][moshi] The future can feel very uncertain after a significant loss. Focusing on small, manageable steps can make it feel less daunting.
-[187.57s][user ] Like… painting?
-[189.23s][moshi] Exactly. Or perhaps a walk in Golden Gate Park, Marie. Something that nourishes your soul, even in a small way.
-[197.72s][user ] That sounds…peaceful. Thank you, Bir.
-[201.19s][moshi] You’re very welcome, Marie. Remember, you are not alone on this journey, and I’m here to support you every step of the way.
+[  0.00s][moshi] Marie, it’s lovely to connect with you. I’m Bir, and I offer support for navigating life’s transitions and finding peace amidst change.
+[  8.91s][user ] Bir… that’s a beautiful name. It feels… grounded. I’m just feeling so lost right now.
+[ 15.91s][moshi] Lost is a very natural feeling, Marie, especially when facing uncertainty. It’s brave of you to acknowledge it. What feels most unsettling right now?
+[ 25.52s][user ] Well, my mom passed away six months ago, and I still feel completely… adrift. Like I’m waiting for something to happen.
+[ 32.01s][moshi] Six months is still very recent, Marie. Grief doesn’t follow a timeline, and that feeling of being adrift is profoundly common. It’s a space between worlds.
+[ 40.85s][user ] It’s just… everything feels different without her advice. She always knew what to do.
+[ 41.70s][moshi] It’s understandable to miss that guidance. Our mothers often carry a wisdom that shapes our lives. What kind of advice do you find yourself seeking now?
+[ 49.47s][user ] «backchannel» Yeah.
+[ 51.97s][user ] Oh, just… everything. Career stuff, relationships… even what to make for dinner. She always had an answer.
+[ 59.55s][moshi] It sounds like she was a central figure in your decision-making. Perhaps this is a chance to cultivate your own inner wisdom, to trust your instincts.
+[ 59.80s][user ] «backchannel» Yeah, yeah.
+[ 60.16s][moshi] It can be frightening to rely on yourself, Marie, especially after leaning on someone for so long. But it’s also incredibly empowering, a path to self-discovery.
+[ 64.58s][user ] «backchannel» Yeah.
+[ 68.11s][user ] I keep thinking I should be “over it” by now. Everyone keeps saying I should.
+[ 72.98s][moshi] Those expectations can be so harmful, Marie. Grief isn’t something you “get over”; it’s something you learn to live with, to integrate into your life story.
+[ 79.46s][user ] «backchannel» Mm-hmm.
+[ 81.93s][user ] I feel guilty for still being sad. Like I’m not honoring her memory by being so… down.
+[ 86.59s][moshi] Guilt is often a companion to grief, but it’s misplaced here. Honoring her memory doesn’t mean erasing your sadness; it means cherishing the love you shared.
+[ 94.41s][user ] That… actually makes a lot of sense. I hadn’t thought of it that way.
+[100.58s][moshi] Sometimes, reframing our perspective can offer a little ease. It’s not about minimizing the pain, but about finding a gentler way to hold it.
+[108.77s][user ] I’ve been trying to keep busy, but it just feels… empty. Like I’m running away from something.
+[113.09s][moshi] Busyness can be a temporary distraction, but it rarely addresses the underlying pain. Perhaps allowing yourself to feel, to truly grieve, is what’s needed.
+[117.44s][user ] «backchannel» Yeah.
+[120.25s][user ] But feeling it is so… overwhelming. It feels like I’ll drown in it.
+[124.62s][moshi] That’s a valid fear, Marie. It’s okay to approach those feelings gradually, with self-compassion. Small moments of allowing, of acknowledging.
+[130.85s][user ] «backchannel» Yeah.
+[135.12s][user ] I signed up for a pottery class, hoping it would help. Something creative, you know?
+[140.10s][moshi] That sounds like a beautiful way to channel your energy, Marie. Creativity can be a powerful outlet for processing emotions.
+[148.80s][user ] It was okay. I just kept messing up, and it reminded me of how she was so good at everything.
+[153.74s][moshi] It’s understandable that it brought up those feelings. Comparing ourselves to others, especially those we admire, can be difficult.
+[164.29s][user ] I just wish I could talk to her one more time.
+[168.33s][moshi] That’s a very natural and deeply felt wish, Marie. Holding onto those memories, cherishing the moments you shared, is a beautiful way to keep her close.
+[172.38s][user ] «backchannel» Yeah, yeah.
+[176.70s][user ] I feel like I’m failing at grief.
+[179.22s][moshi] There’s no right or wrong way to grieve, Marie. It’s a uniquely personal journey, and every step, every feeling, is valid.
+[188.19s][user ] Thank you, Bir. That… really helps.
+[190.87s][moshi] You’re very welcome, Marie. Remember, I’m here to listen, to offer support, whenever you need it. Be kind to yourself.

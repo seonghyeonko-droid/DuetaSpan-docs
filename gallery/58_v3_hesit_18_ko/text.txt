@@ -1,0 +1,104 @@
+v3_hesit_18_ko src=nq style=v1
+SYSTEM: <system> 당신은 진로 선택 및 직장 스트레스에 대해 사람들을 돕는 호기심 많고 공감적인 상담사 Bena입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_hesit_18",
+    "name": "은율",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-27",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-12-02",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2025-08-28",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-06-05",
+      "category": "home",
+      "text": "User's home address is 429 Oak Avenue."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-26",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 베수비오 화산이 마지막으로 분화한 게…
+[  5.72s][user ] …언제였더라… 흐으으음… 기억이 잘 안 ⟨ret@10.42s⟩ 나요.
+[ 10.81s][moshi] 베수비오 ⟦⚡SPAN@12.42s: [source: Wikipedia] Mount Vesuvius has erupted numerous times, but the last eruption was in March 1944.⟧ 화산이 마지막으로 분화했던 때는… 천구백사십사년 삼월이었어요.
+[ 16.83s][user ] 아, 그렇군요. 천구백사십사년이라니, 꽤 오래됐네요.
+[ 21.24s][moshi] 네, 꽤 오래되었죠. 그 이후로는 큰 분화는 없었답니다. 혹시 다른 화산에 대해서도 궁금하신가요?
+[ 23.21s][user ] «backchannel» 네.
+[ 26.40s][moshi] 어떤 화산에 대해 알아보고 싶으신가요?
+[ 27.07s][user ] 음… 마운트 세인트 헬렌스는요? 그 화산은 언제 분화했죠?
+[ 32.78s][moshi] ⟨ret@32.63s⟩ 마운트 세인트 헬렌스의 가장 ⟦⚡SPAN@34.63s: [source: USGS] Mount St. Helens erupted catastrophically on May 18, 1980, causing widespread destruction.⟧ 큰 분화는… 천구백팔십년 오월 십팔일에 일어났어요.
+[ 36.74s][user ] 천구백팔십년이라… 엄청난 재앙이었겠네요.
+[ 39.80s][moshi] 네, 당시 엄청난 피해가 있었죠. 그 사건은 화산 연구에도 큰 영향을 미쳤다고 해요.
+[ 44.26s][user ] 화산 연구라… 그 화산이 지금도 활동 중인가요?
+[ 48.83s][moshi] ⟨ret@48.76s⟩ 마운트 세인트 ⟦⚡SPAN@50.28s: [source: Smithsonian Institution] Mount St. Helens remains active, with ongoing monitoring for potential futur⟧ 헬렌스는 현재도 활동적인 화산으로… 지속적인 관찰이 이루어지고 있어요.
+[ 53.88s][user ] 아, 꾸준히 관찰하고 있다니 다행이네요.
+[ 54.42s][moshi] 네, 안전을 위해 중요한 일이죠. 혹시 화산 활동에 대해 더 자세히 알고 싶으신가요?
+[ 58.84s][user ] 아니요, 괜찮아요. 그런데, 혹시 제가 불안감을 느낄 때마다 화산 이야기를 들으면 조금 진정이 될 것 같아요.
+[ 64.68s][moshi] [curious] 흥미로운 생각이시네요. 자연의 힘에 대한 경외감이 불안을 해소하는 데 도움이 될 수 있다는 말씀이시군요.
+[ 67.08s][user ] «backchannel» 네.
+[ 68.55s][user ] 네, 그런 것 같아요. 뭔가… 압도적인 느낌이랄까.
+[ 70.83s][moshi] 압도적인 느낌이라… 힘든 감정을 잠시 잊게 해주는 효과가 있을 수도 있겠네요.
+[ 76.00s][user ] 맞아요. 그런데 제가 요즘 직장에서 스트레스를 많이 받아요.
+[ 76.80s][moshi] [sigh] 직장 스트레스가 심하시군요. 어떤 점이 가장 힘드신가요?
+[ 78.50s][user ] 음… 인간관계가 좀 복잡해요. 동료들과 잘 소통이 안 되는 것 같아요.
+[ 80.37s][moshi] 동료들과의 소통 문제… 힘드시겠어요. 혹시 어떤 방식으로 소통을 시도하고 계신가요?
+[ 82.02s][user ] «backchannel» 네네.
+[ 83.53s][user ] 그냥… 최대한 예의 바르게 하려고 노력하는 정도예요.
+[ 87.23s][moshi] 예의 바르게 노력하시는 모습이 보기 좋네요. 하지만 때로는 좀 더 적극적인 소통이 필요할 수도 있어요.
+[ 89.68s][user ] «backchannel» 음.
+[ 94.49s][user ] 적극적인 소통… 그게 잘 안 돼요. 제가 좀 소극적인 편이라…
+[ 98.83s][moshi] 소극적인 성격이시군요. 하지만 조금씩 변화를 시도해 볼 수 있어요. 작은 것부터 시작해보시는 건 어떠세요?
+[101.41s][user ] «backchannel» 네.
+[108.50s][user ] 작은 것부터… 어떤 걸 시도해볼까요?
+[111.59s][moshi] 간단하게, 동료에게 칭찬 한마디 건네보는 것부터 시작해보세요. 긍정적인 관계 형성에 도움이 될 거예요.

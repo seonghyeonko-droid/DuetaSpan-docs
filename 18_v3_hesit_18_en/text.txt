@@ -56,41 +56,30 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Pompeii… it’s amazing how much was preserved.
-[  4.65s][moshi] It truly is remarkable, isn't it? That city offers such a vivid glimpse into the past.
-[ 10.84s][user ] It makes you wonder about Vesuvius, though… is it still active?
-[ 15.00s][moshi] That’s a very natural question to ask, given its history. It’s certainly considered an active volcano.
-[ 22.59s][user ] But… how long has it been since it last… uhhh… actually ⟨ret@27.51s⟩ erupted?
-[ 27.90s][moshi] The last time ⟦⚡SPAN@29.51s: [source: Britannica] Mount Vesuvius last erupted in March 1944, during World War II.⟧ Mount Vesuvius erupted was… in March 1944. It's been a relatively quiet period since then.
-[ 35.97s][user ] Wow, during World War Two? That’s… incredible.
-[ 39.98s][moshi] It is quite a coincidence, isn't it? The eruption was thankfully a minor one, compared to the famous one in 79 AD.
-[ 47.69s][user ] So, it’s still a threat, then? I mean, living near it…
-[ 51.67s][moshi] It does pose a potential risk, yes. Scientists closely monitor Vesuvius for any signs of increased activity.
-[ 58.98s][user ] Right. Is there like… a warning system? For people who live nearby?
-[ 64.42s][moshi] ⟨ret@64.26s⟩ There is a comprehensive monitoring ⟦⚡SPAN@66.26s: [source: Vesuvius National Park] The Vesuvius Observatory monitors volcanic activity 24/7 and has evacuation p⟧ system, and evacuation plans are in place for nearby communities. That offers some peace of mind, I think.
-[ 69.77s][user ] «backchannel» Yeah.
-[ 72.26s][user ] That’s good to hear. I guess they’ve learned a lot since Pompeii.
-[ 76.39s][moshi] The lessons from Pompeii have been invaluable in modern volcano preparedness.
-[ 80.83s][user ] It’s just… I’m thinking about moving to Naples, and…
-[ 85.10s][moshi] Naples is a beautiful city, with so much to offer. It’s understandable to have some concerns about Vesuvius.
-[ 91.46s][user ] Yeah. Is it… like, a constant worry for people who live there?
-[ 96.11s][moshi] It’s something people are aware of, certainly. But it doesn’t dominate daily life for most residents.
-[ 98.80s][user ] «backchannel» Right.
-[101.91s][user ] Hmm, welll… that’s reassuring. What about… the risk level, specifically?
-[107.76s][moshi] The risk is always present with an active volcano, but it’s carefully assessed and managed.
-[113.65s][user ] And monitored, you said? Constantly?
-[116.36s][moshi] Yes, exactly. The Vesuvius Observatory provides continuous surveillance.
-[118.36s][user ] «backchannel» Yeah.
-[121.66s][moshi] That allows for early detection of any changes that could indicate an impending eruption.
-[123.11s][user ] «backchannel» Yeah.
-[126.86s][user ] So, if something *were* to happen, they’d have time to get people out?
-[131.65s][moshi] ⟨ret@131.33s⟩ Evacuation plans are ⟦⚡SPAN@133.33s: [source: Smithsonian Institution Global Volcanism Program] Evacuation plans are regularly updated and practice⟧ regularly updated and practiced, with designated routes and shelters available. Preparedness is key in mitigating the risks.
-[137.89s][user ] «backchannel» Yeah.
-[140.97s][user ] That’s… good. I think.
-[143.25s][moshi] It’s perfectly natural to feel a little apprehensive. It’s a big decision, moving to a new place.
-[147.69s][user ] «backchannel» Mm-hmm.
-[149.45s][user ] I— I mean, it’s a beautiful area, and the history is amazing…
-[153.80s][moshi] It truly is. Balancing the potential risks with the benefits is a common part of making life choices.
-[155.75s][user ] «backchannel» Uh-huh.
-[160.22s][user ] Okay. Thanks, Bena. You’ve really helped me think this through.
-[164.25s][moshi] [happy] You're very welcome. It sounds like you're carefully weighing all your options, which is wonderful.
+[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… when did Vesuvius last actually erupt?
+[  6.32s][moshi] It’s natural to wonder about the history of a place with such a dramatic past.
+[ 14.68s][user ] Yeah, I mean, it’s been quiet for a while now, hasn’t it? But how long ⟨ret@18.34s⟩ exactly… uhhh…
+[ 18.65s][moshi] The last time Mount ⟦⚡SPAN@20.34s: [source: Wikipedia] Mount Vesuvius last erupted in March 1944.⟧ Vesuvius erupted was… in March 1944. It’s been relatively quiet since then, thankfully.
+[ 24.96s][user ] Wow, nineteen forty-four. That’s… longer than I thought.
+[ 31.00s][moshi] It is a significant period of calm, though volcanic activity is always something to monitor closely.
+[ 38.82s][user ] I guess so. Are there any signs it might erupt again soon? I’m planning a trip to Naples ⟨ret@42.46s⟩ next year.
+[ 42.62s][moshi] Currently, Vesuvius is ⟦⚡SPAN@44.46s: (tool result) Current volcanic activity: yellow alert level, increased fumarole activity, minor ground deforma⟧ at a yellow alert level… with increased fumarole activity and minor ground deformation.
+[ 45.48s][user ] «backchannel» Yeah.
+[ 49.93s][moshi] That means scientists are closely watching it, but there’s no immediate danger. It's good to be informed when traveling.
+[ 54.75s][user ] Okay, that’s… reassuring. I was getting a little worried.
+[ 63.40s][moshi] It’s completely understandable to feel that way! It’s a powerful natural force, and respecting that is wise.
+[ 66.34s][user ] So, uh, what exactly *is* a fumarole? I keep hearing that word.
+[ 74.81s][moshi] ⟨ret@74.57s⟩ A fumarole is essentially a vent… ⟦⚡SPAN@75.06s: [source: USGS] Fumaroles are vents releasing volcanic gas, steam, and sulfur.⟧ releasing volcanic gas, steam, and sulfur.
+[ 75.06s][user ] «backchannel» Yeah.
+[ 76.26s][user ] Oh, okay. So, like, smelly steam?
+[ 83.36s][moshi] [laugh] You could describe it that way! It’s often associated with a sulfurous odor, yes.
+[ 84.02s][user ] Hmm. Is Naples generally safe, then, even with Vesuvius nearby?
+[ 89.14s][moshi] Naples is generally considered safe, but preparedness is key in any area with volcanic activity.
+[ 95.54s][user ] Preparedness… like, having an evacuation plan?
+[102.99s][moshi] ⟨ret@102.93s⟩ Evacuation plans are ⟦⚡SPAN@104.93s: [source: City of Naples Emergency Services] Evacuation plans are in place for zones at high risk, regularly up⟧ indeed in place… for zones at high risk, and are regularly updated.
+[108.08s][user ] «backchannel» Right.
+[110.78s][user ] That’s good to know. I think I'll look into those plans before I go.
+[120.44s][moshi] That's a very proactive step. It's always helpful to be informed and prepared when visiting a new place.
+[120.62s][user ] «backchannel» Uh-huh.
+[123.13s][user ] Yeah, I— I mean, you can’t be too careful, right?
+[131.65s][moshi] Exactly. And remember, a little bit of planning can go a long way toward enjoying your trip with peace of mind.

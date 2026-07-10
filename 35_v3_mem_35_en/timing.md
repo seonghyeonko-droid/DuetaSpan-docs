@@ -66,31 +66,28 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Klen, thanks! I’m starting to p | S2 That sounds beautiful! I’m really  | S3 …are there any specific regions th | S4 Oh, that’s great to know. And I al
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. It's lovely to connect with you today.
-     3.84s  agent 발화 끝
-     4.51s  user  발화 시작: Hi Klen, thanks! I’m starting to plan a trip to New Zealand 
-    10.12s  <ret> 발화 (turn2 첫 프레임)
-    10.52s  agent 발화 시작: <ret> New Zealand sounds wonderful! You’re planning that tri
-    10.72s  user  발화 끝
-    12.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    15.91s  agent 발화 시작: Yes, you mentioned a New Zealand trip for March last month… 
-    15.98s  agent 발화 끝
-    22.15s  user  발화 시작: Mm-hmm.
-    22.78s  user  발화 끝
-    24.29s  agent 발화 끝
-    25.40s  user  발화 시작: That sounds beautiful! I’m really into photography, specific
-    31.39s  agent 발화 시작: Wildflower photography is a passion of yours… and New Zealan
-    31.52s  user  발화 끝
-    38.09s  user  발화 시작: …are there any specific regions that are particularly good f
-    38.85s  agent 발화 끝
-    43.37s  user  발화 끝
-    43.80s  agent 발화 시작: Alpine wildflowers thrive in certain areas… the Southern Alp
-    50.51s  agent 발화 끝
-    50.76s  user  발화 시작: Oh, that’s great to know. And I always prefer a window seat 
-    55.13s  <ret> 발화 (turn10 첫 프레임)
-    55.34s  user  발화 끝
-    55.37s  agent 발화 시작: <ret> I can note your preference for a window seat… it's a s
-    57.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: [2026-06-13] User prefers a window seat when traveling.
-    61.85s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I’m Klen. I understand you’re thinking about trave
+     1.52s  agent 발화 끝
+     1.66s  user  발화 시작: Yeah, I am. I’m trying to decide where to go in March, and I
+     5.83s  <ret> 발화 (turn2 첫 프레임)
+     6.23s  agent 발화 시작: <ret> You’re planning a trip to New Zealand in March, which 
+     6.37s  user  발화 끝
+     7.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    14.43s  user  발화 시작: …Is it going to be super crowded then?
+    14.52s  agent 발화 끝
+    15.24s  agent 발화 시작: That’s a very practical question, Avery. March is shoulder s
+    15.24s  user  발화 끝
+    23.10s  user  발화 시작: Mm-hmm.
+    25.50s  <ret> 발화 (turn6 첫 프레임)
+    25.64s  agent 발화 시작: <ret> New Zealand offers incredible opportunities for alpine
+    25.77s  agent 발화 끝
+    27.12s  user  발화 끝
+    27.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: [2025-08-26] User is into alpine wildflower photography.
+    32.49s  agent 발화 끝
+    32.50s  agent 발화 시작: …and March is when many of the later-blooming species are st
+    33.71s  user  발화 시작: Mm-hmm.
+    34.34s  user  발화 끝
+    35.88s  user  발화 시작: Oh, that sounds perfect! Do you have any recommendations for
+    36.34s  agent 발화 끝
+    42.19s  user  발화 끝

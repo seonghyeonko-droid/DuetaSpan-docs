@@ -59,22 +59,23 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.82s⟩ iframe.
-[  3.22s][moshi] Alright, I’ve initiated the ⟦⚡SPAN@4.82s: (tool result) checkout initiated⟧ checkout process within the shopping cart iframe.
+[  0.00s][user ] Start the checkout process…
+[  3.75s][user ] …in the shopping cart ⟨ret@5.31s⟩ iframe.
+[  5.70s][moshi] Alright, I’ve opened the ⟦⚡SPAN@7.31s: (tool result) checkout page opened⟧ checkout page within the shopping cart iframe for you.
       CALL: {"function": "playwright_iframe_click", "arguments": {"selector": "checkout-button"}}
-[  8.81s][user ] What’s the total amount due?
-[ 10.56s][moshi] ⟨ret@10.49s⟩ The total amount ⟦⚡SPAN@11.85s: (tool result) $78.50⟧ due for your order is seventy-eight dollars and fifty cents.
+[ 10.70s][user ] Okay, good.
+[ 12.60s][moshi] [happy] That's excellent! Now, shall we proceed with filling out the shipping address?
+[ 18.50s][user ] Yes, please. What’s the current ⟨ret@18.89s⟩ shipping cost?
+[ 18.96s][moshi] The current ⟦⚡SPAN@20.89s: (tool result) $7.99⟧ shipping cost is… $7.99.
+      CALL: {"function": "playwright_get_text", "arguments": {"selector": ".shipping-cost"}}
+[ 22.05s][user ] «backchannel» Exactly.
+[ 23.43s][moshi] It’s a standard rate for items delivered within the continental US.
+[ 29.95s][user ] Can you apply the discount ⟨ret@31.88s⟩ code SPRING20?
+[ 32.27s][moshi] I’ve ⟦⚡SPAN@33.88s: (tool result) discount applied⟧ applied the discount code SPRING20 to your order.
+      CALL: {"function": "playwright_iframe_type", "arguments": {"selector": ".discount-code-input", "text": "SPRING20"}}
+[ 40.53s][user ] And what’s the new total?
+[ 42.34s][moshi] ⟨ret@42.18s⟩ The new total, with ⟦⚡SPAN@43.54s: (tool result) $45.50⟧ the discount applied, is… $45.50.
       CALL: {"function": "playwright_get_text", "arguments": {"selector": ".order-total"}}
-[ 13.56s][user ] «backchannel» Yeah.
-[ 14.56s][moshi] It's wonderful to see you moving forward with this purchase, and I'm here to support you through the process.
-[ 20.68s][user ] Can you apply the discount code ⟨ret@23.23s⟩ 'SUMMER20'?
-[ 23.39s][moshi] I’ve applied the ⟦⚡SPAN@24.67s: (tool result) discount applied⟧ discount code SUMMER20 to your order.
-      CALL: {"function": "playwright_fill", "arguments": {"selector": "#discount-code", "value": "SUMMER20"}}
-[ 26.94s][user ] What's the new ⟨ret@28.02s⟩ total?
-[ 28.26s][moshi] With the discount applied, ⟦⚡SPAN@30.02s: (tool result) $62.80⟧ your new total is sixty-two dollars and eighty cents.
-      CALL: {"function": "playwright_get_text", "arguments": {"selector": ".order-total"}}
-[ 32.97s][user ] Go ahead and confirm the ⟨ret@34.36s⟩ order.
-[ 34.68s][moshi] Your order has ⟦⚡SPAN@36.20s: (tool result) order confirmed, #12345⟧ been confirmed, and the order number is twelve thousand three hundred forty-five.
-      CALL: {"function": "playwright_click", "arguments": {"selector": "confirm-order-button"}}
-[ 40.21s][user ] Perfect, thanks!
-[ 41.44s][moshi] [happy] You are very welcome! I'm glad I could help streamline your shopping experience today.
+[ 44.80s][user ] Perfect. Go ahead and place ⟨ret@46.24s⟩ the order.
+[ 46.56s][moshi] Wonderful! Your order ⟦⚡SPAN@48.08s: (tool result) order confirmed, order number 12345⟧ has been confirmed, and the order number is 12345.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"selector": "place-order-button"}}

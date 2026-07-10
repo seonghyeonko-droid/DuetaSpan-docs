@@ -69,38 +69,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.18s⟩ com.
-[  4.42s][moshi] I’m now tracking the weather ⟦⚡SPAN@6.18s: (tool result) Temperature is 25 degrees Celsius, partly cloudy.⟧ for you from weather dot example dot com; currently, it’s 25 degrees Celsius and partly cloudy.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 11.74s][user ] That's good to know. I’m thinking of going for a walk later.
-[ 15.12s][moshi] A walk sounds lovely. Perhaps you'd like me to check the pollen count as well?
-[ 17.01s][user ] «backchannel» Right.
-[ 19.69s][user ] Oh, yes, please. That would be ⟨ret@21.87s⟩ helpful.
-[ 22.19s][moshi] The pollen count is moderate ⟦⚡SPAN@23.87s: (tool result) Pollen count is moderate.⟧ at pollen dot example dot com, so it might be a good idea to bring tissues.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "pollen.example.com"}}
-[ 28.38s][user ] Hmm, moderate. Okay. I'll keep that in mind.
-[ 31.73s][moshi] It’s always best to be prepared, especially if you have sensitivities.
-[ 33.75s][user ] «backchannel» Oh.
-[ 36.51s][user ] I do. Hey, do you think I should pack a light jacket?
-[ 39.89s][moshi] Given the partly cloudy conditions and a temperature of 25 degrees, a light jacket might be a good idea, just in case.
-[ 43.85s][user ] «backchannel» Oh.
-[ 47.71s][user ] Yeah, you're probably right. I'm also trying to decide what to have for dinner.
-[ 51.68s][moshi] Deciding on dinner can be a challenge. I can search for nearby restaurants if you’d like.
-[ 56.56s][user ] Actually, could you book me a table at La Piazza for 7:30?
-[ 60.66s][moshi] ⟨ret@60.34s⟩ ⟦⚡SPAN@60.84s: (tool result) Reservation confirmed for La Piazza at 7:30 PM. Confirmation number is LP789.⟧ I've confirmed your reservation at La Piazza for 7:30 PM; your confirmation number is LP789.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "La Piazza", "time": "7:30"}}
-[ 63.68s][user ] «backchannel» Right.
-[ 67.29s][user ] Excellent! That’s perfect, thank you.
-[ 69.88s][moshi] You’re very welcome. It’s my pleasure to assist you with arrangements like that.
-[ 71.36s][user ] «backchannel» Yeah.
-[ 73.90s][user ] I also need to send a reminder to myself to pick up dry ⟨ret@77.26s⟩ cleaning tomorrow.
-[ 77.58s][moshi] I’ve set ⟦⚡SPAN@78.30s: (tool result) Reminder set for tomorrow: Pick up dry cleaning.⟧ a reminder for tomorrow to pick up your dry cleaning.
-      CALL: {"function": "set_reminder", "arguments": {"time": "tomorrow", "task": "Pick up dry cleaning"}}
-[ 78.43s][user ] «backchannel» Mhm.
-[ 80.71s][user ] Wonderful! You’re a lifesaver.
-[ 83.08s][moshi] [happy] I’m glad I could help. It’s all about streamlining your day, isn’t it?
-[ 86.85s][user ] It really is. I think that’s everything for now.
-[ 89.75s][moshi] Very well. Enjoy your walk and your dinner at La Piazza.
-[ 91.52s][user ] «backchannel» Right.
-[ 93.26s][user ] Thanks, I will.
-[ 94.52s][moshi] Have a pleasant day.
+[  0.00s][user ] I’m trying to get my day together, and I was thinking about checking the weather. It feels like it’s been raining forever.
+[  3.64s][moshi] It’s understandable to feel that way when the weather is consistently gloomy; let’s see what’s ahead for you.
+[ 12.83s][user ] Yeah, that’d be great. I need to know if I should bring an umbrella to my meeting ⟨ret@19.10s⟩ later.
+[ 19.34s][moshi] I’m now watching weather.example.com ⟦⚡SPAN@21.10s: (tool result) Watching for weather updates from weather.example.com⟧ for any updates, and will let you know if there are changes.
+[ 22.26s][user ] «backchannel» Uh-huh.
+[ 25.47s][user ] Okay, cool.
+[ 26.33s][moshi] Staying on top of the weather is a good way to prepare for your day, and it sounds like you have an important meeting coming up.
+[ 28.68s][user ] «backchannel» Mhm.
+[ 31.70s][moshi] I can also set a reminder for you, if you’d like, to ensure you don’t forget your umbrella.
+[ 33.56s][user ] «backchannel» Yeah.
+[ 35.29s][user ] Actually, could you check the current conditions in ⟨ret@41.02s⟩ Seattle?
+[ 41.42s][moshi] The current ⟦⚡SPAN@43.02s: (tool result) Current conditions in Seattle: 52°F, cloudy.⟧ conditions in Seattle are 52 degrees Fahrenheit and cloudy.
+[ 44.71s][user ] «backchannel» Oh.
+[ 48.18s][user ] Hmm, okay. Not too bad. Can you set a reminder…
+[ 55.38s][user ] …for me to leave for my meeting at 2:00 PM?
+[ 60.15s][moshi] ⟨ret@60.07s⟩ A reminder is set for 2:00 PM to leave for ⟦⚡SPAN@60.56s: (tool result) Reminder set for 2:00 PM: Leave for meeting.⟧ your meeting.
+      CALL: {"function": "set_reminder", "arguments": {"time": "2:00 PM", "task": "Leave for meeting"}}
+[ 60.71s][user ] Perfect. Thanks. Oh, I wonder what the latest iPhone looks like.
+[ 63.38s][moshi] It's good to be prepared; a little curiosity about technology is also perfectly fine.
+[ 66.30s][user ] «backchannel» Right.
+[ 68.91s][user ] Could you pull up the specs for the iPhone 15 ⟨ret@74.92s⟩ Pro?
+[ 75.00s][moshi] I’ve opened the iPhone 15 Pro specs page ⟦⚡SPAN@75.42s: (tool result) Opening iPhone 15 Pro specs page on example.com⟧ on example.com for you.
+      CALL: {"function": "open_url", "arguments": {"url": "https://www.example.com/iphone15prospecs"}}
+[ 75.12s][user ] «backchannel» Oh.
+[ 77.78s][user ] Great, thanks! I think I'm all set for now.
+[ 80.83s][moshi] [happy] I’m glad I could help you organize your day and get the information you needed. Enjoy your meeting!

@@ -70,18 +70,20 @@
 
 
      0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer guidance a
-     6.37s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… peaceful. I’m jus
-     6.49s  agent 발화 끝
-    14.21s  user  발화 끝
-    14.60s  agent 발화 시작: It’s understandable to feel lost when things shift, Andrea. 
-    17.86s  user  발화 시작: Wow.
-    18.49s  user  발화 끝
-    24.25s  agent 발화 시작: Allowing yourself to feel is a vital step towards finding yo
-    24.43s  agent 발화 끝
-    32.24s  user  발화 시작: I keep thinking about my grandmother. She always knew what t
-    32.68s  agent 발화 끝
-    38.16s  user  발화 끝
-    38.51s  agent 발화 시작: Grief often brings with it a longing for those familiar voic
-    50.02s  user  발화 시작: I don’t know… just… how to move forward, I guess. It all fee
-    50.05s  agent 발화 끝
-    56.41s  user  발화 끝
+     5.61s  user  발화 시작: Right.
+     6.11s  user  발화 끝
+     8.65s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… peaceful. I’m just f
+     8.76s  agent 발화 끝
+    14.88s  agent 발화 시작: Lost is a very human feeling, Andrea. It’s often a sign we’r
+    14.91s  user  발화 끝
+    20.62s  user  발화 시작: Yeah.
+    21.25s  user  발화 끝
+    26.60s  agent 발화 시작: Sometimes, simply acknowledging that feeling—allowing yourse
+    26.66s  agent 발화 끝
+    37.18s  agent 발화 끝
+    38.32s  user  발화 시작: That’s… helpful, actually. It’s just, everything feels so di
+    44.43s  user  발화 끝
+    44.58s  agent 발화 시작: Grief reshapes our world, Andrea. It’s not about “getting ov
+    56.41s  agent 발화 끝
+    56.49s  user  발화 시작: I— I mean, I keep expecting to call her, you know? Old habit
+    61.35s  user  발화 끝
