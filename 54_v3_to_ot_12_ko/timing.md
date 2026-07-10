@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "서빈",
+#     "name": "우린",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,45 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-03-20",
+#       "date": "2026-06-26",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-06-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-02",
+#       "date": "2026-05-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-08-01",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-10-22",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-07-24",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-05-29",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-02",
+#       "date": "2026-06-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -60,27 +60,37 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 비트 잇 기타 솔로를 누가 연주했는지 궁금해요. | S2 어머, 진짜? 나 그 사람 완전 좋아하는데. | S3 잠깐만요… | S4 아, 그러시군요. 그럼, 에디 반 헤일런은 어떤 기타를 주로 
+# EXAMINER(FDB-v2) 단계: S1 미국에서 물 불소화가 언제 시작됐는지 궁금해요. | S2 어머, 진짜? | S3 아, 죄송해요. 잠시만요. | S4 아니요, 괜찮아요. 감사합니다.
 
-     0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     2.93s  <ret> 발화 (turn1 첫 프레임)
-     3.25s  agent 발화 시작: <ret> 마이클 잭슨의 "비트 잇" 기타 솔로는 에디 반 헤일런이 연주했어요.
-     3.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.88s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     3.33s  user  발화 끝
-     4.74s  user  발화 시작: 맞아요.
-     5.38s  user  발화 끝
-     7.13s  agent 발화 끝
-     8.30s  user  발화 시작: 어머, 진짜? 나 그 사람 완전 좋아하는데.
-    10.88s  user  발화 끝
-    10.91s  user  발화 시작: 잠깐만요…
-    11.89s  <ret> 발화 (turn5 첫 프레임)
-    12.05s  agent 발화 시작: <ret> 죄송하지만, 그 부분에 대한 추가 정보는 찾을 수 없었어요.
-    12.05s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.23s]: (no information found)
-    12.06s  user  발화 끝
-    15.28s  agent 발화 끝
-    15.35s  user  발화 시작: 아, 그러시군요. 그럼, 에디 반 헤일런은 어떤 기타를 주로 사용했죠?
-    19.92s  <ret> 발화 (turn7 첫 프레임)
-    20.24s  agent 발화 시작: <ret> 에디 반 헤일런은 기타를 많이 개조하는 것으로 유명했는데, 특히 천구백칠십팔년 크래머 기타를 자주
-    20.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.39s]: (tool result) Eddie Van Halen was known for heavily modifying his guit
-    20.35s  user  발화 끝
-    30.63s  agent 발화 끝
+     0.00s  user  발화 시작: 미국에서 물 불소화가 언제 시작됐는지 궁금해요.
+     2.91s  <ret> 발화 (turn1 첫 프레임)
+     3.23s  agent 발화 시작: <ret> 물 불소화는 천구백사십오년 일월 이십오일에 시작되었어요.
+     3.23s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.61s]: Fluoridation of water in the U.S. began on January 25, 1945.
+     3.24s  user  발화 끝
+     5.57s  user  발화 시작: 어머.
+     6.06s  user  발화 끝
+     6.83s  agent 발화 끝
+     7.99s  user  발화 시작: 어머, 진짜?
+     9.30s  user  발화 시작: 아, 죄송해요. 잠시만요.
+     9.41s  user  발화 끝
+    11.39s  <ret> 발화 (turn5 첫 프레임)
+    11.54s  agent 발화 시작: <ret> 네, 괜찮아요. 천천히 말씀해 주세요.
+    11.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.26s]: (no information found)
+    11.56s  user  발화 끝
+    13.56s  <ret> 발화 (turn6 첫 프레임)
+    13.80s  agent 발화 끝
+    13.88s  agent 발화 시작: <ret> 물 불소화는 충치 예방에 도움이 된다고 알려져 있지만, 건강에 대한 우려도 있다고 해요. 혹시 더
+    13.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.52s]: (tool result) Fluoridation has been linked to reduced tooth decay, but
+    17.75s  user  발화 시작: 네.
+    18.29s  user  발화 끝
+    22.16s  <ret> 발화 (turn8 첫 프레임)
+    22.40s  agent 발화 시작: <ret> 건강에 대한 우려는 개인차가 있을 수 있고, 다양한 연구 결과가 존재해요. 필요하시면 관련 자료를
+    22.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (no information found)
+    22.41s  agent 발화 끝
+    26.68s  user  발화 시작: 음.
+    27.17s  user  발화 끝
+    29.44s  agent 발화 끝
+    29.58s  user  발화 시작: 아니요, 괜찮아요. 감사합니다.
+    31.62s  agent 발화 시작: 도움이 되었다니 기쁘네요.
+    31.65s  user  발화 끝
+    32.90s  agent 발화 끝

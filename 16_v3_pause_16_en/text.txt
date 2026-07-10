@@ -1,51 +1,51 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Braera, a kind and steady personal guide who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Ther, a practical and reassuring wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Andrea",
+    "name": "Hugo",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-12",
+      "date": "2026-05-10",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-12-10",
       "category": "home",
-      "text": "User's home address is 148 Elm Street."
+      "text": "User's home address is 795 Maple Drive."
     },
     {
-      "date": "2026-02-27",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-02-11",
+      "date": "2025-10-05",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Kyoto in August."
     },
     {
-      "date": "2025-08-18",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2025-08-28",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-05-28",
+      "date": "2025-07-29",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-10",
+      "date": "2026-02-20",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -53,50 +53,33 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-21",
+      "date": "2025-11-17",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-10-30",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, where did the name “big brother” come ⟨ret@3.44s⟩ from…
-[  3.75s][moshi] ⟦⚡SPAN@3.76s: The term comes from George Orwell’s dystopian novel *Nineteen Eighty-Four*, published in 1949.⟧ The term comes from George Orwell’s novel *Nineteen Eighty-Four*, published in nineteen forty-nine. It’s a powerful image, isn’t it?
-[ 12.93s][user ] Nineteen Eighty-Four… was that a really popular book when it came ⟨ret@16.75s⟩ out?
-[ 17.14s][moshi] ⟦⚡SPAN@17.15s: *Nineteen Eighty-Four* was initially not a commercial success, selling only around 800 copies in its first yea⟧ *Nineteen Eighty-Four* didn't sell well at first, only about eight hundred copies in nineteen forty-nine. But it grew in influence later.
-[ 20.58s][user ] «backchannel» Mhm.
-[ 27.89s][user ] Grew in influence… how so?
-[ 30.42s][moshi] ⟨ret@30.26s⟩ ⟦⚡SPAN@30.42s: Its influence grew steadily in the 1950s, becoming a cultural touchstone during the Cold War due to its themes⟧ Its influence really took hold in the nineteen fifties, becoming a key book during the Cold War because of its ideas about control and watching people.
-[ 41.47s][user ] So it became a symbol of the Cold War?
-[ 43.81s][moshi] It did, yes. The themes resonated with anxieties of the time, about government overreach and loss of freedom.
-[ 48.07s][user ] «backchannel» Yeah.
-[ 52.67s][user ] Hmmmmm… it sounds a bit bleak.
-[ 55.07s][moshi] It is, quite bleak actually. Orwell was writing about the dangers of totalitarian regimes.
-[ 58.95s][user ] «backchannel» Yeah.
-[ 61.37s][user ] Is there anything Orwell…
-[ 64.08s][user ] …wrote that *isn't* so…dark?
-[ 66.81s][moshi] He wrote some essays and journalism that were less overtly dystopian, exploring social issues with a more observational tone.
-[ 70.58s][user ] «backchannel» Right.
-[ 75.97s][user ] Observational… like what kind of social ⟨ret@79.07s⟩ issues?
-[ 79.38s][moshi] ⟦⚡SPAN@79.39s: Orwell wrote extensively about poverty, class, and colonialism, notably in *Down and Out in Paris and London* ⟧ Orwell wrote a lot about poverty, class differences, and colonialism, especially in *Down and Out in Paris and London* and *The Road to Wigan Pier*.
-[ 91.02s][user ] Those sound… different.
-[ 92.86s][moshi] They are. They show a different side of his thinking, a commitment to social justice.
-[100.13s][user ] [happy] Maybe I should check those out. But back to “big brother”—is it used in other countries too?
-[105.66s][moshi] Yes, the phrase has become universal, used across many cultures to describe intrusive observation or authoritarian control.
-[109.26s][user ] «backchannel» Yeah.
-[114.98s][user ] That's… kind of scary, actually.
-[116.95s][moshi] It is a sobering thought, isn’t it? The power of language to capture and spread ideas.
-[119.16s][user ] «backchannel» Right.
-[123.32s][user ] Do you— do you think it's getting worse…
-[126.77s][user ] …with all the technology now?
-[128.59s][moshi] That’s a valid concern. Technology certainly presents new avenues for surveillance, and it’s something to be mindful of.
-[132.00s][user ] «backchannel» Yeah, yeah.
-[138.19s][user ] … I guess so.
-[139.36s][moshi] It’s good to be aware and to consider the balance between security and privacy. It's about finding a healthy equilibrium.
-[145.40s][user ] «backchannel» Yeah.
-[148.03s][user ] Welll… thank you, Braera. That was helpful.
-[150.38s][moshi] You’re very welcome. It’s important to understand the origins of these phrases and what they represent.
+[  0.00s][user ] Do you know who sings that song…
+[  3.58s][user ] …mama don't let your babies…
+[  6.75s][user ] …grow up to be ⟨ret@8.17s⟩ cowboys…
+[  8.49s][moshi] ⟦⚡SPAN@8.49s: Ed Bruce originally released the song "Mammas Don't Let Your Babies Grow Up to Be Cowboys" in 1978.⟧ The song you’re thinking of, “Mama Don’t Let Your Babies Grow Up to Be Cowboys,” was originally sung by Ed Bruce.
+[ 12.43s][user ] «backchannel» Yeah.
+[ 15.77s][user ] Oh, Ed Bruce! I always thought it was Willie Nelson and Waylon Jennings…
+[ 19.70s][moshi] It’s a common mistake, actually. Willie Nelson and Waylon Jennings did a very popular cover in 1978 as well.
+[ 24.91s][user ] «backchannel» Yeah, yeah.
+[ 27.93s][user ] Hmm, a cover, huh? What other songs did Ed Bruce write?
+[ 32.18s][moshi] ⟨ret@31.94s⟩ ⟦⚡SPAN@32.18s: (tool result) Ed Bruce also penned the song "Hello World," which was a number one hit for Louise Mandrell in 1⟧ Ed Bruce also wrote “Hello World,” a number one hit for Louise Mandrell that same year. It’s lovely work.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Ed Bruce"}}

@@ -1,117 +1,98 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Tellar, a upbeat and supportive counselor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Elelina, a upbeat and supportive wellness coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Ivy",
+    "name": "Jamie",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-05-29",
-      "category": "home",
-      "text": "User's home address is 585 Elm Street."
-    },
-    {
-      "date": "2026-05-01",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-04-27",
+      "date": "2026-06-18",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-01-21",
+      "date": "2026-02-05",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-10-16",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "date": "2025-12-25",
+      "category": "home",
+      "text": "User's home address is 443 Pine Court."
+    },
+    {
+      "date": "2025-10-23",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-06-05",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-05",
+      "date": "2025-11-09",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-02-01",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-08-24",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.47s⟩ June fifteenth.
-[  3.71s][moshi] ⟦⚡SPAN@3.71s: (tool result) Viewing scheduled for The Grandview Lofts on June 15, 2026, at 2:00 PM. Confirmation ID is GH789⟧ I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM. Your confirmation is GH7892.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "The Grandview Lofts", "date": "2026-06-15"}}
-[ 13.48s][user ] That’s… uh, the sixteenth, actually.
-[ 16.41s][moshi] ⟨ret@16.25s⟩ ⟦⚡SPAN@16.41s: (tool result) Viewing scheduled for The Grandview Lofts on June 16, 2026, at 2:00 PM. Confirmation ID is JK234⟧ Okay, I’ve updated that to June sixteenth at two PM. Your new confirmation ID is JK2345.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "The Grandview Lofts", "date": "2026-06-16"}}
-[ 24.67s][user ] Great. What’s the weather going to be like ⟨ret@27.24s⟩ then?
-[ 27.48s][moshi] ⟦⚡SPAN@27.48s: (tool result) The weather on June 16, 2026, will be 25.5°C, humidity 68%, with a light breeze from the southwe⟧ It’s looking like twenty-five point five degrees Celsius, with sixty-eight percent humidity and a gentle southwest breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-06-16"}}
-[ 35.57s][user ] Hmm, sounds pleasant. Can you find me restaurants ⟨ret@39.63s⟩ nearby?
-[ 39.79s][moshi] ⟦⚡SPAN@39.79s: (tool result) There are five restaurants within 1.6 kilometers of The Grandview Lofts: Bella Italia, The Spice⟧ I found five restaurants nearby: Bella Italia, The Spice Merchant, Golden Dragon, Corner Bistro, and Sushi Zen.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "The Grandview Lofts"}}
-[ 48.62s][user ] Tell me more about Bella Italia.
-[ 51.05s][moshi] ⟨ret@50.65s⟩ ⟦⚡SPAN@51.05s: (tool result) Bella Italia is a popular Italian restaurant known for its pasta and pizza. It has a 4.2-star ra⟧ Bella Italia is a popular Italian place, known for pasta and pizza, with a four point two star rating.
-      CALL: {"function": "search", "arguments": {"query": "Bella Italia restaurant details"}}
-[ 54.99s][user ] «backchannel» Right.
-[ 59.59s][user ] Is it possible to make a reservation there for, say, seven ⟨ret@63.05s⟩ PM?
-[ 63.29s][moshi] ⟦⚡SPAN@63.29s: (tool result) Reservation confirmed at Bella Italia for June 16, 2026, at 7:00 PM for two people. Confirmation⟧ Yes, I’ve booked a table for you at Bella Italia on June sixteenth at seven PM for two. Your confirmation is RI9876.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "19:00"}}
-[ 72.93s][user ] Perfect. What’s playing at the movies that night?
-[ 75.63s][moshi] ⟨ret@75.48s⟩ ⟦⚡SPAN@75.64s: (tool result) Showing on June 16, 2026: "Space Explorers", "The Last Detective", and "City Lights".⟧ That evening, “Space Explorers,” “The Last Detective,” and “City Lights” are all playing in theaters.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-06-16"}}
-[ 81.94s][user ] “Space Explorers” sounds good. What time are the showings?
-[ 85.88s][moshi] ⟨ret@85.57s⟩ ⟦⚡SPAN@85.89s: (tool result) "Space Explorers" showings on June 16, 2026, are at 6:30 PM, 9:00 PM, and 11:30 PM.⟧ “Space Explorers” is showing at six thirty, nine, and eleven thirty that night.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Space Explorers", "date": "2026-06-16"}}
-[ 91.91s][user ] Let's go with the nine o’clock showing.
-[ 94.00s][moshi] ⟨ret@93.92s⟩ ⟦⚡SPAN@94.00s: (tool result) Two tickets for "Space Explorers" at 9:00 PM on June 16, 2026, have been purchased. Confirmation⟧ Two tickets for “Space Explorers” at nine PM are all yours, confirmation code MT4567.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Space Explorers", "time": "21:00", "num_tickets": "2"}}
-[ 97.09s][user ] «backchannel» Mm-hmm.
-[101.08s][user ] Wonderful! I feel much better having everything planned.
-[104.66s][moshi] It’s great to hear you're feeling more prepared! Sometimes, just having a clear schedule can ease a lot of stress.
-[107.35s][user ] «backchannel» Mhm.
-[111.72s][user ] Do you think I'm making the right choice moving to the city?
-[114.90s][moshi] That’s a big question, and it’s good you’re thinking it through. Moving is a transition, and it’s normal to have some doubts.
-[123.10s][user ] I’m just worried about leaving my friends.
-[125.31s][moshi] It's completely natural to feel that way. Maintaining friendships takes effort from both sides, but distance doesn’t have to mean losing touch.
-[135.93s][user ] I suppose you’re right. Thanks, Tellar.
-[138.43s][moshi] You’re very welcome. Remember, change can be exciting, and you’ve already taken such a proactive step in planning this move.
+[  0.00s][user ] Could you please take a screenshot of the entire page and save it as ⟨ret@3.88s⟩ homepage?
+[  4.12s][moshi] ⟦⚡SPAN@4.12s: (tool result) Screenshot saved as /home/user/downloads/homepage.png⟧ I’ve saved a screenshot of this page as homepage.png in your downloads folder.
+      CALL: {"function": "puppeteer_screenshot", "arguments": {"url": "current_page", "filename": "homepage.png"}}
+[  9.87s][user ] That’s great, thanks. I’m feeling really overwhelmed with work lately.
+[ 13.60s][moshi] Oh, I understand. Work stress is so common, especially now. Let’s explore some strategies to help you manage it.
+[ 20.99s][user ] I’ve been thinking about a career change, actually. Something less… demanding.
+[ 25.88s][moshi] That’s a big step, and a very valid consideration! It’s wonderful you’re prioritizing your well-being.
+[ 32.76s][user ] I was looking at becoming a ⟨ret@34.72s⟩ librarian.
+[ 34.96s][moshi] ⟦⚡SPAN@34.96s: Librarians typically earn between $59,000 and $98,000 per year, depending on experience and location.⟧ Librarians generally earn between $59,000 and $98,000 a year, depending on experience and where you live.
+[ 43.34s][user ] $59,000 sounds… low—uhhh, actually, make that $65,000.
+[ 49.99s][moshi] ⟨ret@49.84s⟩ ⟦⚡SPAN@50.00s: (tool result) Librarian positions offering $65,000+ salary - Indeed.com⟧ I found some librarian positions offering a salary of $65,000 or more on Indeed.com.
+      CALL: {"function": "search", "arguments": {"query": "librarian jobs salary $65000+"}}
+[ 56.13s][user ] Can you show me a few of ⟨ret@57.89s⟩ those listings?
+[ 58.29s][moshi] ⟦⚡SPAN@58.29s: (tool result) Indeed.com: Librarian jobs with salaries over $65,000 - Several listings found in major metropol⟧ Tavily shows several listings in major cities on Indeed, with salaries exceeding $65,000.
+      CALL: {"function": "tavily-search", "arguments": {"query": "Indeed.com librarian jobs salary $65000+"}}
+[ 61.50s][user ] «backchannel» Oh.
+[ 64.78s][user ] Hmm, interesting. What about the job outlook for ⟨ret@68.73s⟩ librarians?
+[ 69.13s][moshi] ⟦⚡SPAN@69.13s: The Bureau of Labor Statistics projects a 5% growth in employment for librarians between 2022 and 2032.⟧ According to the Bureau of Labor Statistics, librarian employment is projected to grow by 5% from 2022 to 2032.
+[ 73.02s][user ] «backchannel» Nice.
+[ 79.68s][user ] That's not bad. Is it a competitive field?
+[ 82.04s][moshi] It can be, yes, but skills in digital archiving and information management are highly valued right now.
+[ 88.84s][user ] Digital archiving… that sounds complicated.
+[ 92.52s][moshi] «interrupted» It has a learning curve, but many online courses can help you build those skills—
+[ 96.84s][user ] «interrupts_prev» …are there any courses specifically for career ⟨ret@99.80s⟩ changers?
+[ 99.96s][moshi] ⟦⚡SPAN@99.96s: (tool result) Online Certificate in Library and Information Science - University of North Carolina at Chapel H⟧ Yes, several universities offer certificate programs specifically designed for career transitions into library science.
+      CALL: {"function": "search", "arguments": {"query": "library science certificate programs career changers"}}
+[107.39s][moshi] The University of North Carolina at Chapel Hill offers an online certificate program for career changers.
+[114.14s][user ] UNC Chapel Hill… that’s a good school. How long does that program ⟨ret@118.95s⟩ take?
+[119.10s][moshi] ⟦⚡SPAN@119.11s: The Online Certificate in Library and Information Science at UNC Chapel Hill is a 12-credit program that can b⟧ It's a 12-credit program that you can complete in about a year, according to their website.
+[124.56s][user ] Okay, that’s manageable. What about the ⟨ret@127.48s⟩ cost?
+[127.72s][moshi] ⟦⚡SPAN@127.72s: (tool result) UNC Chapel Hill Library Science Certificate: $4,000 - Tuition and fees.⟧ Tavily reports tuition and fees for the program are around $4,000.
+      CALL: {"function": "tavily-search", "arguments": {"query": "UNC Chapel Hill library science certificate program cost"}}
+[134.35s][user ] $4,000… that's reasonable. Do they offer any financial aid?
+[139.17s][moshi] Many universities offer financial aid options. You'd need to check directly with UNC Chapel Hill.
+[147.91s][user ] Right, of course. This is really helpful, Elelina.
+[151.37s][moshi] I’m so glad I could assist you! Taking that first step towards exploring new possibilities is always the hardest.
+[159.13s][user ] I feel a little less stressed already, just having a plan.
+[162.36s][moshi] That’s wonderful to hear! Remember, small steps can lead to big changes. You’ve got this.
+[168.77s][user ] Thank you.
+[169.41s][moshi] You’re very welcome.

@@ -1,118 +1,135 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Brae, a upbeat and supportive wellness coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Bol, a calm and patient personal guide who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Nina",
+    "name": "Lukas",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
+      "date": "2026-05-24",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-05-01",
+      "category": "home",
+      "text": "User's home address is 904 Birch Road."
+    },
+    {
+      "date": "2026-01-21",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-10-22",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-07-25",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-07-12",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-06-17",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2026-06-12",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-05-04",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
-    },
-    {
-      "date": "2026-03-25",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-06-15",
-      "category": "diet",
-      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-12",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-25",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2026-03-31",
+      "date": "2026-02-02",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know how to reach Anya Sharma? I need her ⟨ret@3.12s⟩ contact details.
-[  3.52s][moshi] ⟦⚡SPAN@3.52s: (tool result)⟧ I’m sorry, I couldn’t find any contact information for Anya Sharma. It doesn’t appear to be publicly available.
-      CALL: {"function": "search", "arguments": {"query": "Anya Sharma contact details"}}
-[ 10.64s][user ] Hmm, okay. Well, what about the origin of the term ⟨ret@14.71s⟩ "burnout"?
-[ 15.10s][moshi] ⟦⚡SPAN@15.11s: Burnout was first described in 1974 by Herbert Freudenberger, who used the term to describe the exhaustion exp⟧ The term comes from work done in the 1970s—specifically, it was first described in 1974 by Herbert Freudenberger, relating to exhaustion among helping professionals.
-[ 22.26s][user ] «backchannel» Exactly.
-[ 26.79s][user ] That’s interesting. I’ve been feeling pretty drained lately, actually.
-[ 30.42s][moshi] That sounds tough. It's really common to feel that way when work is demanding, and it’s important to acknowledge those feelings.
-[ 32.97s][user ] «backchannel» Okay.
-[ 37.51s][user ] Yeah, I think I might be getting there. What’s the weather like in Seoul ⟨ret@41.15s⟩ right now?
-[ 41.47s][moshi] ⟦⚡SPAN@41.47s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0 degrees Celsius in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 44.02s][user ] «backchannel» Uh-huh.
-[ 49.84s][user ] Okay, good to know.
-[ 51.29s][moshi] Knowing the conditions can help you plan your day, even just mentally. It's a small thing, but it can make a difference.
-[ 57.77s][user ] I’m trying to decide if I should look for a new job.
-[ 60.24s][moshi] That’s a big decision, but a very valid one to explore! What’s making you consider a change?
-[ 65.88s][user ] Well, my current role is just…stifling. No growth opportunities.
-[ 70.25s][moshi] That’s incredibly frustrating. Feeling stuck is a major contributor to stress, and it’s smart to address it.
-[ 75.97s][user ] Exactly. Are there any career coaching services available ⟨ret@79.97s⟩ nearby?
-[ 80.29s][moshi] ⟦⚡SPAN@80.29s: (tool result) Brae Wellness - 1.2 km, Bright Futures Coaching - 3.5 km, NextStep Careers - 2.8 km⟧ There are a few options nearby. Brae Wellness is 1.2 kilometers away, Bright Futures Coaching is 3.5 kilometers, and NextStep Careers is 2.8 kilometers.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "career coaching", "location": "current"}}
-[ 91.57s][user ] Hmm, Brae Wellness sounds promising.
-[ 94.67s][moshi] It does! They specialize in helping people navigate career transitions.
-[ 98.98s][user ] Can you book me an appointment with Brae Wellness for next ⟨ret@102.30s⟩ Tuesday?
-[102.53s][moshi] ⟦⚡SPAN@102.54s: (tool result) Appointment confirmed for Tuesday, July 14, 2026 at 10:00 AM. Confirmation ID: BW789234⟧ You’re all set! I’ve booked an appointment for you with Brae Wellness next Tuesday at 10:00 AM. Your confirmation ID is BW789234.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Brae Wellness", "date": "2026-07-14"}}
-[112.97s][user ] Great!
-[113.65s][moshi] Taking that step is a really positive move. It’s good to be proactive about your well-being.
-[118.88s][user ] I’m also feeling overwhelmed with tasks at work.
-[121.51s][moshi] That’s completely understandable. It sounds like you're juggling a lot right now.
-[125.89s][user ] Yeah, it's a lot. What’s the current stock price of ⟨ret@128.93s⟩ Tesla?
-[129.08s][moshi] ⟦⚡SPAN@129.09s: (tool result) Tesla (TSLA) is trading at $255.42, down $3.15 today.⟧ Tesla—TSLA—is currently trading at $255.42, which is down $3.15 for today.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "TSLA"}}
-[137.51s][user ] Okay, thanks.
-[138.32s][moshi] You’re welcome. Sometimes just knowing the numbers can feel…grounding, even if it doesn't change things.
-[143.81s][user ] I need to send a quick message to my sister.
-[145.97s][moshi] I can help with that, but I’ll need her contact information first.
-[149.58s][user ] Oh, right. Never mind.
-[151.72s][moshi] Just let me know if you change your mind.
-[155.49s][user ] I need to set an alarm for 7:00 AM tomorrow.
-[158.54s][moshi] ⟨ret@158.30s⟩ ⟦⚡SPAN@158.54s: (tool result) Alarm set for 7:00 AM.⟧ Okay, an alarm is set for 7:00 AM tomorrow morning.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "07:00"}}
-[162.24s][user ] Thank you.
-[162.70s][moshi] You're very welcome. Prioritizing sleep is such a crucial part of managing stress, you're doing a great thing.
-[169.29s][user ] I think that's all for now.
-[170.57s][moshi] Alright. Remember, taking small steps towards better well-being is what matters most. Take care.
+[  0.00s][user ] Do you know Sarah Miller? I’m trying to reconnect with an ⟨ret@3.05s⟩ old friend.
+[  3.44s][moshi] ⟦⚡SPAN@3.45s: (no information found)⟧ I’m sorry, I couldn’t find any information about a Sarah Miller. It’s quite common for people to change contact details over time.
+[  7.07s][user ] «backchannel» Yeah, totally.
+[ 10.59s][user ] Hmm, that’s frustrating. Do you have a way to search for people ⟨ret@14.53s⟩ generally?
+[ 14.93s][moshi] ⟦⚡SPAN@14.93s: (tool result) People search websites like WhitePages, ZabaSearch, and Intelius can help locate individuals; th⟧ There are several websites that might help—WhitePages, ZabaSearch, and Intelius—they usually need a name and location.
+      CALL: {"function": "search", "arguments": {"query": "people search websites"}}
+[ 17.91s][user ] «backchannel» Yeah, yeah.
+[ 22.69s][user ] Okay, Intelius sounds good. Can you find it for me?
+[ 25.34s][moshi] ⟨ret@25.27s⟩ ⟦⚡SPAN@25.34s: (tool result) Intelius is a public records search service offering background checks, people searches, and pro⟧ Intelius is a public records search service—you can find them at intelius.com.
+      CALL: {"function": "search", "arguments": {"query": "Intelius"}}
+[ 26.82s][user ] «backchannel» Uh-huh.
+[ 30.11s][user ] Great! Could you open that website for ⟨ret@32.17s⟩ me?
+[ 32.49s][moshi] ⟦⚡SPAN@32.49s: (tool result) Website opened: intelius.com⟧ I’ve opened intelius.com for you.
+      CALL: {"function": "web_search", "arguments": {"url": "intelius.com"}}
+[ 34.98s][user ] Thanks. I'm a little nervous about doing this, actually.
+[ 37.49s][moshi] Reconnecting with someone after a long time can be a bit daunting, but it’s often very rewarding.
+[ 43.24s][user ] You're right. I haven't spoken to her in, uhhh, almost fifteen years.
+[ 47.12s][moshi] Fifteen years is a long time—it's understandable to feel a little hesitant.
+[ 49.05s][user ] «backchannel» Mm-hmm.
+[ 53.34s][user ] Yeah. I wonder if she’s even still in the same city. Do you have a tool to find people’s last known ⟨ret@59.75s⟩ location?
+[ 60.06s][moshi] ⟦⚡SPAN@60.07s: (tool result) Several people locator services, like BeenVerified and Instant Checkmate, offer access to last k⟧ BeenVerified and Instant Checkmate are services that might help—they often need a subscription.
+      CALL: {"function": "search", "arguments": {"query": "people locator services with last known address"}}
+[ 65.37s][user ] Subscriptions… ugh. Can you just search for Sarah Miller in Chicago?
+[ 69.80s][moshi] ⟨ret@69.64s⟩ ⟦⚡SPAN@69.80s: (tool result) Search results for "Sarah Miller Chicago" yield numerous potential matches; to narrow down the r⟧ There are many Sarah Millers in Chicago—more information would help narrow the search.
+      CALL: {"function": "search", "arguments": {"query": "Sarah Miller Chicago"}}
+[ 74.31s][user ] She would have been… about forty-two last ⟨ret@77.55s⟩ year.
+[ 77.69s][moshi] ⟦⚡SPAN@77.70s: (tool result) Search results for "Sarah Miller Chicago age 42" show one potential match: Sarah Miller, residin⟧ I found a Sarah Miller, age forty-two, at 2218 North Clark Street in Chicago.
+      CALL: {"function": "search", "arguments": {"query": "Sarah Miller Chicago age 42"}}
+[ 80.48s][user ] «backchannel» Yeah.
+[ 83.41s][user ] That’s… that's her old apartment building! Wow.
+[ 87.08s][moshi] That’s quite a coincidence—it seems like a promising lead.
+[ 90.44s][user ] It really is! Do you think I should just… call her?
+[ 94.04s][moshi] «interrupted» Calling is a direct approach—it can be a little nerve-wracking, but it also allows for an immediate connection. It's a good option—
+[100.84s][user ] «interrupts_prev» …is there a way to find out if she’s still listed as a resident there, before I ⟨ret@105.43s⟩ just call?
+[105.59s][moshi] ⟦⚡SPAN@105.59s: (tool result) Public records indicate Sarah Miller no longer resides at 2218 N Clark St, Chicago, IL 60614; th⟧ Actually, public records show Sarah Miller no longer lives there—David Chen is the current resident.
+      CALL: {"function": "search", "arguments": {"query": "public records Sarah Miller 2218 N Clark St Chicago IL"}}
+[111.53s][user ] Oh. That’s… discouraging.
+[113.94s][moshi] It can be a little disappointing when a lead doesn’t pan out, but it doesn’t necessarily mean you won't find her.
+[120.44s][user ] No, I guess not. Maybe she moved to the suburbs?
+[123.13s][moshi] That's certainly possible—many people relocate to the suburbs as their lives change.
+[125.16s][user ] «backchannel» Uh-huh.
+[128.08s][moshi] It’s a common pattern, especially with starting a family or seeking more space.
+[132.95s][user ] Can you search for Sarah Miller in the Chicago ⟨ret@135.74s⟩ suburbs?
+[135.90s][moshi] ⟦⚡SPAN@135.90s: (tool result) Search results for "Sarah Miller Chicago suburbs" reveal several potential matches across variou⟧ There are several potential matches in the Chicago suburbs—we might need to narrow it down further.
+      CALL: {"function": "search", "arguments": {"query": "Sarah Miller Chicago suburbs"}}
+[142.36s][user ] What about her profession? She was a teacher.
+[145.27s][moshi] ⟨ret@145.04s⟩ ⟦⚡SPAN@145.28s: (tool result) Search results for "Sarah Miller teacher Chicago suburbs" identify Sarah Miller, a middle school⟧ I found a Sarah Miller, a middle school English teacher in Evanston, Illinois.
+      CALL: {"function": "search", "arguments": {"query": "Sarah Miller teacher Chicago suburbs"}}
+[149.96s][user ] Evanston! That’s close. Do you have her school’s ⟨ret@153.22s⟩ number?
+[153.38s][moshi] ⟦⚡SPAN@153.38s: (tool result) Evanston Township High School lists Sarah Miller as an English teacher; their phone number is (8⟧ Sarah Miller is listed as an English teacher at Evanston Township High School—their number is 847-475-8700.
+      CALL: {"function": "search", "arguments": {"query": "Evanston middle school English teachers"}}
+[161.82s][user ] Wow, that's amazing! Thank you so much, Bol.
+[164.75s][moshi] You’re very welcome. It sounds like you’ve made a real breakthrough—I wish you the best of luck reaching out.
+[168.55s][user ] «backchannel» Really?
+[171.44s][user ] I think I’ll call now.
+[172.79s][moshi] That sounds like a wonderful idea—it takes courage to reconnect.

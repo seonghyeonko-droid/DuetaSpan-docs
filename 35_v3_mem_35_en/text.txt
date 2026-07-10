@@ -1,76 +1,72 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Klen, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Sellaia, a thoughtful and soft-spoken personal guide who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Avery",
+    "name": "Andrea",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-14",
-      "category": "home",
-      "text": "User's home address is 70 Cedar Lane."
+      "date": "2026-06-12",
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-04-22",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2026-04-10",
+      "category": "home",
+      "text": "User's home address is 616 Elm Street."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-09-20",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-06-07",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
-    },
-    {
-      "date": "2025-08-26",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-25",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-02-06",
+      "date": "2026-05-28",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-11-23",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Avery, I'm Klen. I understand you’re planning a trip to New Zealand?
-[  4.84s][user ] Yes, that’s right. I was hoping you could help me find some beautiful places for alpine wildflower ⟨ret@11.26s⟩ photography.
-[ 11.66s][moshi] «interrupted» ⟦⚡SPAN@11.66s: [2025-08-26] User is into alpine wildflower photography.⟧ You mentioned your interest in alpine wildflower photography—
-[ 14.33s][user ] «interrupts_prev» …are there any specific times of year that are best for that in New Zealand?
-[ 17.35s][user ] «backchannel» Mm-hmm.
-[ 18.34s][moshi] ⟨ret@18.26s⟩ ⟦⚡SPAN@18.34s: New Zealand’s alpine wildflower season typically peaks from December to March, with variations depending on el⟧ The peak season for alpine wildflowers is December to March, though it depends on where you go. It’s a truly stunning time to visit.
-[ 25.59s][user ] That sounds perfect. I’m already planning to be there in March.
+[  0.00s][moshi] Hi Andrea, I'm Sellaia. It's lovely to connect with you. Is there anything on your mind today?
+[  6.52s][user ] um, I'm starting to think about that Iceland trip in October… and I always prefer a window ⟨ret@12.79s⟩ seat.
+[ 13.19s][moshi] ⟦⚡SPAN@13.19s: [2025-09-20] User prefers a window seat when traveling.⟧ You mentioned you prefer a window seat when you travel, Andrea. That's a lovely way to experience a journey.
+[ 19.20s][user ] yeah, exactly. Can you check if I can request one on my flights?
+[ 23.19s][moshi] ⟨ret@23.18s⟩ ⟦⚡SPAN@23.26s: (tool result) Flights to Reykjavik from London on October 15, 2026, start at £129.⟧ Flights to Reykjavik on October fifteenth start at one hundred and twenty-nine pounds. Would you like me to search for roundtrip options as well?
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {}}
+[ 31.77s][user ] no, one way is fine for now. But could you try and find one with a window seat option?
+[ 38.14s][moshi] ⟨ret@37.90s⟩ ⟦⚡SPAN@38.14s: (tool result) Flights to Reykjavik from London on October 15, 2026, start at £155, window seat available on Ic⟧ Icelandair flight FI451 on October fifteenth offers a window seat for one hundred and fifty-five pounds. Perhaps a nice view will help with any travel anxieties?
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"window_seat": "yes"}}

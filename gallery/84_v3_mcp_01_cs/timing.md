@@ -4,122 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Taylor",
+#     "name": "Noa",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-31",
+#       "date": "2026-05-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-04-13",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-11-13",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-15",
+#       "date": "2025-11-04",
 #       "category": "home",
-#       "text": "User's home address is 50 Pine Court."
+#       "text": "User's home address is 197 Birch Road."
 #     },
 #     {
-#       "date": "2025-07-17",
+#       "date": "2025-10-24",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-08",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-08-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-04",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-18",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-25",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-06-01",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 앱플 홈페이지 상세 지도를 만들어 줘… | S2 음, 그 페이지에 비교 차트도 있어? | S3 $799… 생각보다 비싸네. | S4 좋아. 그럼 보장 옵션은 뭐야?
+# EXAMINER(FDB-v2) 단계: S1 응, 윌로우 크릭 레지던스 10월 5일에 방문 예약해 줬어. | S2 그 세 곳 가격대는 대략 어느 정도야? | S3 고양이는 허용해? 특히, 무게 제한이 있어? | S4 괜찮네. 10월 5일 오후 1시 30분에 출발하라고 알림 설정
 
-     0.00s  user  발화 시작: 앱플 홈페이지 상세 지도를 만들어 줘…
-     2.39s  user  발화 끝
-     3.73s  user  발화 시작: 제품에 집중해서 보여 줘.
-     5.08s  <ret> 발화 (turn2 첫 프레임)
-     5.20s  user  발화 끝
-     5.23s  agent 발화 시작: <ret> 네, 앱플 홈페이지 상세 지도를 만들었고, 아이폰, 아이패드, 맥… 등 제품 카테고리를 강조해 드
-     5.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Map created showing Apple's website structure with produ
-     9.12s  user  발화 시작: 어어.
-     9.66s  user  발화 끝
-    12.26s  agent 발화 시작: …그래서 제품 정보를 쉽게 찾아보실 수 있을 거예요.
-    12.36s  agent 발화 끝
-    13.55s  user  발화 시작: 응.
-    13.86s  user  발화 끝
-    15.42s  user  발화 시작: 좋긴 한데, 아이폰 16 정보 찾는 데도 보여 줄 수 있어?
-    15.54s  agent 발화 끝
-    18.62s  <ret> 발화 (turn7 첫 프레임)
-    19.00s  agent 발화 시작: <ret> 네, 아이폰 16 페이지를 찾아 지도를 업데이트했어요—apple.com/iphone-16에서 확인
-    19.02s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.69s]: (tool result) The map has been updated to pinpoint the iPhone 16 page 
-    19.25s  user  발화 끝
-    24.64s  user  발화 시작: 어.
-    25.04s  user  발화 끝
-    26.50s  user  발화 시작: 음, 그 페이지에 비교 차트도 있어?
-    26.70s  agent 발화 끝
-    28.34s  <ret> 발화 (turn10 첫 프레임)
-    28.64s  agent 발화 시작: <ret> 네, 앱플 홈페이지에 아이폰 16, 프로, 프로 맥스를 비교하는 차트가 있습니다.
-    28.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) The Apple website features a comparison chart detailing 
-    28.67s  user  발화 끝
-    34.70s  user  발화 시작: 그거 유용하겠네—근데, 아이폰 16 기본 모델 가격은 얼마야?
-    34.76s  agent 발화 끝
-    39.44s  <ret> 발화 (turn12 첫 프레임)
-    39.59s  agent 발화 시작: <ret> 아, 그러시군요—기본 아이폰 16, 128기가바이트 모델은 칠백구십구 달러부터 시작합니다.
-    39.70s  user  발화 끝
-    40.16s  ⚡SPAN 주입 [d'=0.72s / d_lead=0.74s]: (tool result) The base model iPhone 16 with 128GB of storage is priced
-    46.21s  agent 발화 끝
-    46.30s  user  발화 시작: $799… 생각보다 비싸네.
-    48.60s  user  발화 끝
-    48.73s  agent 발화 시작: —하지만 그건…
-    50.19s  agent 발화 끝
-    50.64s  user  발화 시작: …가격은 됐고. 지도에서 아이폰 16용 AppleCare 정보 찾는 곳을 보여 줄 수 있어?
-    55.88s  <ret> 발화 (turn16 첫 프레임)
-    56.11s  agent 발화 시작: <ret> 네, 아이폰 16용 AppleCare+ 페이지를 지도에 강조 표시했어요—apple.com/ipho
-    56.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: (tool result) Map updated to highlight the AppleCare+ page for iPhone 
-    56.29s  user  발화 끝
-    61.55s  user  발화 시작: 대박.
-    62.18s  user  발화 끝
-    65.33s  agent 발화 끝
-    65.53s  user  발화 시작: 좋아. 그럼 보장 옵션은 뭐야?
-    67.46s  <ret> 발화 (turn19 첫 프레임)
-    67.62s  agent 발화 시작: <ret> AppleCare+는 우발적인 손상—화면, 뒷면 유리—을 보장하고 2년 보증을 포함합니다.
-    67.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.42s]: (tool result) AppleCare+ for iPhone 16 offers coverage for accidental 
-    67.79s  user  발화 끝
-    70.25s  user  발화 시작: 어.
-    70.61s  user  발화 끝
-    74.88s  user  발화 시작: 2년이네, 꽤 괜찮네. 고마워, 코랄.
-    75.04s  agent 발화 끝
-    77.42s  user  발화 끝
-    77.53s  agent 발화 시작: 천만에요. 오늘 앱플 홈페이지를 탐색하는 데 도움이 되어 기쁩니다.
-    82.39s  agent 발화 끝
+     0.00s  user  발화 시작: 응, 윌로우 크릭 레지던스 10월 5일에 방문 예약해 줬어.
+     4.07s  <ret> 발화 (turn1 첫 프레임)
+     4.22s  agent 발화 시작: <ret> 10월 5일 오후 두 시로 윌로우 크릭 레지던스 방문 예약을 완료했어.
+     4.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Visit scheduled at Willow Creek Residences for October 5
+     4.40s  user  발화 끝
+     8.45s  user  발화 시작: 음, 혹시 그쪽 관리자 연락처 있어?
+     9.13s  agent 발화 끝
+    12.05s  agent 발화 시작: 윌로우 크릭 레지던스 관리자는 사라 첸이고, 전화번호는 555-123-4567이야.
+    12.20s  user  발화 끝
+    14.19s  user  발화 시작: 와.
+    14.83s  user  발화 끝
+    18.29s  user  발화 시작: 좋아, 오크우드 지역에 비슷한 레지던스 찾아 줘.
+    18.44s  agent 발화 끝
+    21.15s  <ret> 발화 (turn6 첫 프레임)
+    21.53s  agent 발화 시작: <ret> 오크우드에 있는 레지던스는 오크 헤이븐, 리버벤드 에스테이트, 그린리프 매너 세 곳이야. 오크 헤
+    21.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Found three residences in Oakwood: Oak Haven, Riverbend 
+    21.80s  user  발화 끝
+    27.69s  user  발화 시작: 음.
+    27.99s  user  발화 끝
+    30.09s  agent 발화 시작: —있어. 네 필요에 따라 검색 시작하기에 괜찮은 곳일 수도 있어.
+    30.20s  agent 발화 끝
+    34.81s  user  발화 시작: 그 세 곳 가격대는 대략 어느 정도야?
+    34.95s  agent 발화 끝
+    36.95s  <ret> 발화 (turn10 첫 프레임)
+    37.27s  agent 발화 시작: <ret> 오크 헤이븐은 1800달러부터 2500달러까지, 리버벤드 에스테이트는 2200달러부터 3000달러
+    37.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.33s]: (tool result) Oak Haven: $1800 - $2500. Riverbend Estates: $2200 - $30
+    37.44s  user  발화 끝
+    43.99s  user  발화 시작: 그린리프가 더 궁금한데. 그린리프 매너에 대한 자세한 정보 좀 알아봐 줘.
+    44.60s  agent 발화 끝
+    48.25s  <ret> 발화 (turn12 첫 프레임)
+    48.64s  agent 발화 시작: <ret> 그린리프 매너는 스튜디오, 원베드룸, 투베드룸 아파트를 제공해. 헬스장, 수영장이 있고, 반려동물
+    48.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Greenleaf Manor offers studio, one-, and two-bedroom apa
+    48.71s  user  발화 끝
+    55.15s  user  발화 시작: 고양이는 허용해? 특히, 무게 제한이 있어?
+    55.77s  agent 발화 끝
+    58.18s  <ret> 발화 (turn14 첫 프레임)
+    58.38s  user  발화 끝
+    58.42s  agent 발화 시작: <ret> 응, 그린리프 매너는 20파운드까지 고양이를 허용하고, 반려동물 수수료가 300달러야. 일부 품종
+    58.42s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.74s]: (tool result) Greenleaf Manor allows cats up to 20 pounds with a one-t
+    65.56s  user  발화 시작: 알겠어, 알아두면 좋겠다. 10월 5일 오크우드 날씨 예보는 어때?
+    66.17s  agent 발화 끝
+    69.67s  <ret> 발화 (turn16 첫 프레임)
+    69.90s  agent 발화 시작: <ret> 10월 5일 오크우드 날씨는 부분적으로 흐리고, 최고 기온은 68도, 최저 기온은—
+    69.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) The weather in Oakwood on October 5th will be partly clo
+    70.09s  user  발화 끝
+    75.41s  user  발화 시작: 기분 좋겠네. 그린리프 매너 주변 교통 상황은 어때?
+    76.02s  agent 발화 끝
+    79.14s  <ret> 발화 (turn18 첫 프레임)
+    79.25s  user  발화 끝
+    79.30s  agent 발화 시작: <ret> 윌로우 크릭에서 그린리프 매너까지 예상 이동 시간은 25분에서 35분 정도이고, 교통 상황은 보통
+    79.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Estimated travel time from Willow Creek Residences to Gr
+    86.54s  user  발화 시작: 괜찮네. 10월 5일 오후 1시 30분에 출발하라고 알림 설정해 줘.
+    87.32s  agent 발화 끝
+    90.75s  <ret> 발화 (turn20 첫 프레임)
+    90.98s  agent 발화 시작: <ret> 10월 5일 오후 1시 30분에 “그린리프 매너로 출발”이라고 알람을 설정했어.
+    90.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Alarm set for October 5th at 1:30 PM: Leave for Greenlea
+    91.21s  user  발화 끝
+    92.95s  user  발화 시작: 응.
+    93.26s  user  발화 끝
+    96.90s  user  발화 시작: 이 모든 것에 대해 도와줘서 고마워.
+    97.05s  agent 발화 끝
+    99.16s  user  발화 끝
+    99.44s  agent 발화 시작: 천만에. 작은 단계들을 밟는 게 변화에 도움이 될 수 있고, 내가 도와줄 수 있어서 기뻐.
+   105.69s  agent 발화 끝

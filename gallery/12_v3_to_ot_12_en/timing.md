@@ -4,79 +4,89 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Rowan",
+#     "name": "Casey",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-11",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-06-26",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-07-07",
+#       "date": "2026-06-21",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-05-09",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-08-25",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-08-01",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-05-29",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-06-22",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-25",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-25",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Hmm, that’s right… uhhh, did he do | S3 Hey, have you seen my keys? | S4 So, it was just that one song then
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about public he | S2 Oh, you wouldn’t believe the traff | S3 Sorry, just a quick chat with some | S4 That’s okay. It just seems… a big 
 
-     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
-     3.24s  <ret> 발화 (turn1 첫 프레임)
-     3.47s  agent 발화 시작: <ret> That was Eddie Van Halen, a truly innovative guitarist
-     3.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Eddie Van Halen, known for his innovative guitar work with the band Va
-     3.65s  user  발화 끝
-     5.61s  user  발화 시작: Okay.
-     6.10s  user  발화 끝
-     8.94s  agent 발화 끝
-     8.96s  user  발화 시작: Hmm, that’s right… uhhh, did he do any other work with Micha
-    13.47s  <ret> 발화 (turn4 첫 프레임)
-    13.87s  agent 발화 시작: <ret> No, that solo was their only recorded collaboration—Ed
-    13.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: Eddie Van Halen and Michael Jackson never collaborated on any other re
-    14.01s  user  발화 끝
-    20.96s  agent 발화 끝
-    22.29s  user  발화 시작: Hey, have you seen my keys?
-    24.13s  user  발화 시작: So, it was just that one song then?
-    24.23s  user  발화 끝
-    26.48s  agent 발화 시작: Just that one song, yes. It’s wonderful how a single contrib
-    26.53s  user  발화 끝
-    31.90s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about public health… uh, when did they st
+     6.15s  <ret> 발화 (turn1 첫 프레임)
+     6.35s  agent 발화 시작: <ret> The practice began on January 25th, 1945, in Newburgh,
+     6.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: Fluoridation began in the United States on January 25, 1945, in Newbur
+     6.48s  user  발화 끝
+     9.89s  user  발화 시작: Oh.
+    10.39s  user  발화 끝
+    14.90s  user  발화 시작: Oh, you wouldn’t believe the traffic on the way here.
+    15.07s  agent 발화 끝
+    17.74s  user  발화 시작: Sorry, just a quick chat with someone. So, Newburgh, huh?
+    17.80s  user  발화 끝
+    21.34s  user  발화 끝
+    21.48s  <ret> 발화 (turn5 첫 프레임)
+    21.87s  agent 발화 시작: <ret> I'm afraid I don’t have any further information about 
+    21.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (no information found)
+    27.47s  agent 발화 끝
+    28.49s  user  발화 시작: That’s okay. It just seems… a big step.
+    32.05s  user  발화 끝
+    32.08s  agent 발화 시작: It is a significant public health decision, certainly. Somet
+    39.36s  agent 발화 끝

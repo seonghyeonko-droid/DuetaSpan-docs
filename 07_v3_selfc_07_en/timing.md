@@ -4,153 +4,142 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Ivy",
+#     "name": "Jamie",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
+#     "nationality": "British",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-29",
-#       "category": "home",
-#       "text": "User's home address is 585 Elm Street."
-#     },
-#     {
-#       "date": "2026-05-01",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-04-27",
+#       "date": "2026-06-18",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-01-21",
+#       "date": "2026-02-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2025-12-25",
+#       "category": "home",
+#       "text": "User's home address is 443 Pine Court."
+#     },
+#     {
+#       "date": "2025-10-23",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
+#       "date": "2025-11-09",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-02-01",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-24",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Tell me more about Bella Italia. | S3 “Space Explorers” sounds good. Wha | S4 Do you think I'm making the right 
+# EXAMINER(FDB-v2) 단계: S1 Could you please take a screenshot | S2 $59,000 sounds… low—uhhh, actually | S3 Digital archiving… that sounds com | S4 $4,000… that's reasonable. Do they
 
-     0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.47s  <ret> 발화 (turn1 첫 프레임)
-     3.71s  agent 발화 시작: <ret> I’ve scheduled a viewing for you at The Grandview Loft
-     3.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Viewing scheduled for The Grandview Lofts on June 15, 20
-     3.93s  user  발화 끝
-    13.21s  agent 발화 끝
-    13.48s  user  발화 시작: That’s… uh, the sixteenth, actually.
-    16.25s  <ret> 발화 (turn3 첫 프레임)
-    16.41s  agent 발화 시작: <ret> Okay, I’ve updated that to June sixteenth at two PM. Y
-    16.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) Viewing scheduled for The Grandview Lofts on June 16, 20
-    16.43s  user  발화 끝
-    24.67s  user  발화 시작: Great. What’s the weather going to be like then?
-    24.71s  agent 발화 끝
-    27.24s  <ret> 발화 (turn5 첫 프레임)
-    27.48s  agent 발화 시작: <ret> It’s looking like twenty-five point five degrees Celsi
-    27.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) The weather on June 16, 2026, will be 25.5°C, humidity 6
-    27.53s  user  발화 끝
-    35.50s  agent 발화 끝
-    35.57s  user  발화 시작: Hmm, sounds pleasant. Can you find me restaurants nearby?
-    39.63s  <ret> 발화 (turn7 첫 프레임)
-    39.79s  agent 발화 시작: <ret> I found five restaurants nearby: Bella Italia, The Spi
-    39.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) There are five restaurants within 1.6 kilometers of The 
-    39.96s  user  발화 끝
-    48.32s  agent 발화 끝
-    48.62s  user  발화 시작: Tell me more about Bella Italia.
-    50.65s  <ret> 발화 (turn9 첫 프레임)
-    50.74s  user  발화 끝
-    51.05s  agent 발화 시작: <ret> Bella Italia is a popular Italian place, known for pas
-    51.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) Bella Italia is a popular Italian restaurant known for i
-    54.99s  user  발화 시작: Right.
-    55.58s  user  발화 끝
-    58.23s  agent 발화 끝
-    59.59s  user  발화 시작: Is it possible to make a reservation there for, say, seven P
-    63.05s  <ret> 발화 (turn12 첫 프레임)
-    63.29s  agent 발화 시작: <ret> Yes, I’ve booked a table for you at Bella Italia on Ju
-    63.29s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.50s]: (tool result) Reservation confirmed at Bella Italia for June 16, 2026,
-    63.42s  user  발화 끝
-    72.79s  agent 발화 끝
-    72.93s  user  발화 시작: Perfect. What’s playing at the movies that night?
-    75.48s  <ret> 발화 (turn14 첫 프레임)
-    75.63s  agent 발화 시작: <ret> That evening, “Space Explorers,” “The Last Detective,”
-    75.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) Showing on June 16, 2026: "Space Explorers", "The Last D
-    75.66s  user  발화 끝
-    81.88s  agent 발화 끝
-    81.94s  user  발화 시작: “Space Explorers” sounds good. What time are the showings?
-    85.57s  <ret> 발화 (turn16 첫 프레임)
-    85.69s  user  발화 끝
-    85.88s  agent 발화 시작: <ret> “Space Explorers” is showing at six thirty, nine, and 
-    85.89s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.00s]: (tool result) "Space Explorers" showings on June 16, 2026, are at 6:30
-    90.88s  agent 발화 끝
-    91.91s  user  발화 시작: Let's go with the nine o’clock showing.
-    93.92s  <ret> 발화 (turn18 첫 프레임)
-    94.00s  agent 발화 시작: <ret> Two tickets for “Space Explorers” at nine PM are all y
-    94.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Two tickets for "Space Explorers" at 9:00 PM on June 16,
-    94.12s  user  발화 끝
-    97.09s  user  발화 시작: Mm-hmm.
-    97.63s  user  발화 끝
-   101.08s  user  발화 시작: Wonderful! I feel much better having everything planned.
-   101.32s  agent 발화 끝
-   104.66s  agent 발화 시작: It’s great to hear you're feeling more prepared! Sometimes, 
-   104.69s  user  발화 끝
-   107.35s  user  발화 시작: Mhm.
-   107.98s  user  발화 끝
-   111.48s  agent 발화 끝
-   111.72s  user  발화 시작: Do you think I'm making the right choice moving to the city?
-   114.85s  user  발화 끝
-   114.90s  agent 발화 시작: That’s a big question, and it’s good you’re thinking it thro
-   121.89s  agent 발화 끝
-   123.10s  user  발화 시작: I’m just worried about leaving my friends.
-   125.31s  agent 발화 시작: It's completely natural to feel that way. Maintaining friend
-   125.36s  user  발화 끝
-   133.88s  agent 발화 끝
-   135.93s  user  발화 시작: I suppose you’re right. Thanks, Tellar.
-   138.19s  user  발화 끝
-   138.43s  agent 발화 시작: You’re very welcome. Remember, change can be exciting, and y
-   145.98s  agent 발화 끝
+     0.00s  user  발화 시작: Could you please take a screenshot of the entire page and sa
+     3.88s  <ret> 발화 (turn1 첫 프레임)
+     4.12s  agent 발화 시작: <ret> I’ve saved a screenshot of this page as homepage.png i
+     4.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.61s]: (tool result) Screenshot saved as /home/user/downloads/homepage.png
+     4.30s  user  발화 끝
+     9.73s  agent 발화 끝
+     9.87s  user  발화 시작: That’s great, thanks. I’m feeling really overwhelmed with wo
+    13.56s  user  발화 끝
+    13.60s  agent 발화 시작: Oh, I understand. Work stress is so common, especially now. 
+    20.99s  user  발화 시작: I’ve been thinking about a career change, actually. Somethin
+    21.01s  agent 발화 끝
+    25.71s  user  발화 끝
+    25.88s  agent 발화 시작: That’s a big step, and a very valid consideration! It’s wond
+    32.69s  agent 발화 끝
+    32.76s  user  발화 시작: I was looking at becoming a librarian.
+    34.72s  <ret> 발화 (turn7 첫 프레임)
+    34.96s  agent 발화 시작: <ret> Librarians generally earn between $59,000 and $98,000 
+    34.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: Librarians typically earn between $59,000 and $98,000 per year, depend
+    35.11s  user  발화 끝
+    43.07s  agent 발화 끝
+    43.34s  user  발화 시작: $59,000 sounds… low—uhhh, actually, make that $65,000.
+    49.78s  user  발화 끝
+    49.84s  <ret> 발화 (turn9 첫 프레임)
+    49.99s  agent 발화 시작: <ret> I found some librarian positions offering a salary of 
+    50.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Librarian positions offering $65,000+ salary - Indeed.co
+    56.13s  user  발화 시작: Can you show me a few of those listings?
+    56.48s  agent 발화 끝
+    57.89s  <ret> 발화 (turn11 첫 프레임)
+    58.29s  agent 발화 시작: <ret> Tavily shows several listings in major cities on Indee
+    58.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Indeed.com: Librarian jobs with salaries over $65,000 - 
+    58.44s  user  발화 끝
+    61.50s  user  발화 시작: Oh.
+    61.99s  user  발화 끝
+    64.78s  user  발화 시작: Hmm, interesting. What about the job outlook for librarians?
+    64.87s  agent 발화 끝
+    68.73s  <ret> 발화 (turn14 첫 프레임)
+    69.13s  agent 발화 시작: <ret> According to the Bureau of Labor Statistics, librarian
+    69.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: The Bureau of Labor Statistics projects a 5% growth in employment for 
+    69.32s  user  발화 끝
+    73.02s  user  발화 시작: Nice.
+    73.84s  user  발화 끝
+    78.03s  agent 발화 끝
+    79.68s  user  발화 시작: That's not bad. Is it a competitive field?
+    82.04s  agent 발화 시작: It can be, yes, but skills in digital archiving and informat
+    82.26s  user  발화 끝
+    88.15s  agent 발화 끝
+    88.84s  user  발화 시작: Digital archiving… that sounds complicated.
+    92.07s  user  발화 끝
+    92.52s  agent 발화 시작: It has a learning curve, but many online courses can help yo
+    96.84s  user  발화 시작: …are there any courses specifically for career changers?
+    97.66s  agent 발화 끝
+    99.80s  <ret> 발화 (turn21 첫 프레임)
+    99.96s  agent 발화 시작: <ret> Yes, several universities offer certificate programs s
+    99.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Online Certificate in Library and Information Science - 
+   100.08s  user  발화 끝
+   107.39s  agent 발화 시작: The University of North Carolina at Chapel Hill offers an on
+   107.51s  agent 발화 끝
+   113.64s  agent 발화 끝
+   114.14s  user  발화 시작: UNC Chapel Hill… that’s a good school. How long does that pr
+   118.95s  <ret> 발화 (turn24 첫 프레임)
+   119.10s  agent 발화 시작: <ret> It's a 12-credit program that you can complete in abou
+   119.11s  ⚡SPAN 주입 [d'=0.72s / d_lead=5.19s]: The Online Certificate in Library and Information Science at UNC Chape
+   119.23s  user  발화 끝
+   124.29s  agent 발화 끝
+   124.56s  user  발화 시작: Okay, that’s manageable. What about the cost?
+   127.48s  <ret> 발화 (turn26 첫 프레임)
+   127.72s  agent 발화 시작: <ret> Tavily reports tuition and fees for the program are ar
+   127.72s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.37s]: (tool result) UNC Chapel Hill Library Science Certificate: $4,000 - Tu
+   127.79s  user  발화 끝
+   133.09s  agent 발화 끝
+   134.35s  user  발화 시작: $4,000… that's reasonable. Do they offer any financial aid?
+   139.17s  agent 발화 시작: Many universities offer financial aid options. You'd need to
+   139.22s  user  발화 끝
+   145.84s  agent 발화 끝
+   147.91s  user  발화 시작: Right, of course. This is really helpful, Elelina.
+   151.15s  user  발화 끝
+   151.37s  agent 발화 시작: I’m so glad I could assist you! Taking that first step towar
+   159.02s  agent 발화 끝
+   159.13s  user  발화 시작: I feel a little less stressed already, just having a plan.
+   162.36s  agent 발화 시작: That’s wonderful to hear! Remember, small steps can lead to 
+   162.46s  user  발화 끝
+   168.77s  user  발화 시작: Thank you.
+   168.84s  agent 발화 끝
+   169.40s  user  발화 끝
+   169.41s  agent 발화 시작: You’re very welcome.
+   170.93s  agent 발화 끝

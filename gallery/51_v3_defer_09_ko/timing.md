@@ -4,87 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "보아",
+#     "name": "채형",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-05",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
-#     },
-#     {
-#       "date": "2025-12-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-10-20",
+#       "date": "2026-05-16",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-08-12",
+#       "date": "2026-03-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-11-27",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-08-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
-#       "title": "Researching a used car",
+#       "date": "2026-04-06",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 세개 방 예약해 | S2 혹시 그 호텔에 수영장이 있는지 알려줄 수 있어? | S3 아, 피트니스 센터는 좋네. 그런데 혹시 해변까지 얼마나 걸릴 | S4 …혹시 호텔 근처에 맛있는 레스토랑도 추천해 줄 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 혹시 이번 주말에 서울 날씨 좀 알려주시겠어요? | S2 음… 주말에 영화 보려고 하는데… | S3 아, 그거 재밌어 보이던데… | S4 와, 정말 감사합니다!
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 세개 방 예약해 줘.
-     5.09s  <ret> 발화 (turn1 첫 프레임)
-     5.25s  agent 발화 시작: <ret> 오션뷰 호텔, 샌디에이고에 이월 십일부터 칠박 세개 방을 예약했습니다. 확인 번호는 팔A9Z2X입
-     5.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Ocean View Hotel in San Diego has been reserved for thre
-     5.28s  user  발화 끝
-    13.78s  agent 발화 끝
-    14.17s  user  발화 시작: 혹시 그 호텔에 수영장이 있는지 알려줄 수 있어?
-    16.81s  <ret> 발화 (turn3 첫 프레임)
-    17.13s  agent 발화 시작: <ret> 오션뷰 호텔에는 야외 수영장과 피트니스 센터, 그리고 무료 아침 식사가 제공됩니다.
-    17.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: Ocean View Hotel in San Diego features an outdoor swimming pool, a fit
-    17.36s  user  발화 끝
-    23.02s  agent 발화 끝
-    24.50s  user  발화 시작: 아, 피트니스 센터는 좋네. 그런데 혹시 해변까지 얼마나 걸릴까?
-    29.27s  agent 발화 시작: 해변까지 걸어서 십분 정도 걸립니다.
-    29.32s  user  발화 끝
-    30.62s  user  발화 시작: 헐.
-    31.11s  user  발화 끝
-    31.31s  agent 발화 시작: 네, 보통 걸음으로 십분 정도면 해변에 도착하실 수 있어요—
-    31.34s  agent 발화 끝
-    34.17s  user  발화 시작: …혹시 호텔 근처에 맛있는 레스토랑도 추천해 줄 수 있어?
-    34.83s  agent 발화 끝
-    37.57s  <ret> 발화 (turn9 첫 프레임)
-    37.65s  agent 발화 시작: <ret> 오션뷰 호텔 근처에는 미치스 씨푸드라는 캐주얼한 레스토랑과 주니퍼 앤 아이비라는 고급 레스토랑이 
-    37.65s  ⚡SPAN 주입 [d'=1.84s / d_lead=10.29s]: There are several highly-rated restaurants near Ocean View Hotel, incl
-    37.87s  user  발화 끝
-    47.94s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 이번 주말에 서울 날씨 좀 알려주시겠어요?
+     2.95s  <ret> 발화 (turn1 첫 프레임)
+     3.11s  agent 발화 시작: <ret> 서울 날씨는 현재 이십육 점 일도이고, 습도는 육십팔%, 바람은 시속 삼 점 이킬로미터 정도예요.
+     3.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) The weather in Seoul is 26.1°C, humidity 68%, wind 3.2 k
+     3.24s  user  발화 끝
+    10.76s  agent 발화 끝
+    11.09s  user  발화 시작: 네, 알겠습니다.
+    12.47s  agent 발화 시작: 날씨 확인은 언제든지 편하게 말씀해 주세요.
+    12.65s  user  발화 끝
+    15.16s  user  발화 시작: 음… 주말에 영화 보려고 하는데…
+    15.38s  agent 발화 끝
+    17.60s  user  발화 끝
+    18.56s  user  발화 시작: …괜찮은 영화가 있을까요?
+    20.23s  <ret> 발화 (turn6 첫 프레임)
+    20.53s  user  발화 끝
+    20.55s  agent 발화 시작: <ret> 현재 메가박스 코엑스에서 '범죄도시 사'를 상영하고 있어요.
+    20.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.74s]: (tool result) '범죄도시 4' is currently playing at Megabox Coex.
+    23.14s  user  발화 시작: 네.
+    23.63s  user  발화 끝
+    24.30s  agent 발화 끝
+    24.34s  user  발화 시작: 아, 그거 재밌어 보이던데…
+    26.08s  agent 발화 시작: 네, 많은 분들이 재미있다고 하시더라고요. 액션 영화 좋아하시면 분명히 만족하실 거예요.
+    26.23s  user  발화 끝
+    28.76s  user  발화 시작: 맞아요.
+    29.40s  user  발화 끝
+    30.71s  agent 발화 끝
+    31.43s  user  발화 시작: 혹시 예매도 도와주실 수 있나요?
+    33.13s  <ret> 발화 (turn12 첫 프레임)
+    33.53s  agent 발화 시작: <ret> 네, '범죄도시 사' 메가박스 코엑스, 토요일 일곱시에 이장 예매 완료되었습니다. 확인 번호는 구
+    33.53s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.04s]: (tool result) Two tickets for '범죄도시 4' at Megabox Coex have been booke
+    33.65s  user  발화 끝
+    42.58s  agent 발화 끝
+    42.79s  user  발화 시작: 와, 정말 감사합니다!
+    44.83s  agent 발화 시작: 천만에요. 즐거운 영화 관람 되시길 바랍니다. 혹시 다른 계획도 있으신가요?
+    44.87s  user  발화 끝
+    47.88s  user  발화 시작: 네.
+    48.28s  user  발화 끝
+    49.41s  agent 발화 끝
+    50.06s  user  발화 시작: 아직 딱히… 그냥 좀 쉬고 싶어요.
+    52.51s  agent 발화 시작: 휴식은 정말 중요하죠. 충분히 쉬면서 재충전하는 시간 가지세요. 스트레스 관리에도 도움이 될 거예요.
+    52.51s  user  발화 끝
+    59.73s  <ret> 발화 (turn18 첫 프레임)
+    59.93s  agent 발화 끝
+    59.97s  agent 발화 시작: <ret> 혹시 평소에 스트레스 해소하는 방법이 있으신가요? 음… 죄송하지만, 제가 스트레스 해소 방법에 대
+    60.77s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.49s]: (no information found)
+    71.56s  agent 발화 끝

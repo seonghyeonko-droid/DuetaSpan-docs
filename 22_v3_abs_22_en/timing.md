@@ -4,111 +4,126 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "William",
+#     "name": "Victor",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-04-28",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-06-26",
+#       "date": "2026-04-29",
 #       "category": "home",
-#       "text": "User's home address is 329 Maple Drive."
+#       "text": "User's home address is 336 Birch Road."
+#     },
+#     {
+#       "date": "2026-04-20",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-26",
+#       "date": "2026-04-12",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-11",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2026-04-24",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-13",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Is there a historical figure most  | S3 …did he ever actually *try* to bui | S4 Mutual aid—that sounds like someth
+# EXAMINER(FDB-v2) 단계: S1 What three powers usually found in | S2 So, it was more about selecting th | S3 …Was that about land, too? | S4 That’s good to know. I'm trying to
 
-     0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.47s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  agent 발화 시작: <ret> But unfortunately, there isn't a clear consensus on ex
-     2.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (no information found)
-     2.76s  user  발화 끝
-     9.53s  agent 발화 끝
-     9.61s  user  발화 시작: Hmm, well, what about their core beliefs then?
-    13.03s  agent 발화 시작: Anarchists fundamentally oppose all forms of hierarchical ru
-    13.17s  user  발화 끝
-    19.28s  user  발화 시작: Yeah.
-    19.77s  user  발화 끝
-    22.90s  agent 발화 시작: It can be, certainly! It’s a philosophy with many different 
-    22.91s  agent 발화 끝
-    29.58s  user  발화 시작: Is there a historical figure most associated with anarchism?
-    29.66s  agent 발화 끝
-    33.47s  user  발화 끝
-    33.50s  <ret> 발화 (turn7 첫 프레임)
-    33.57s  agent 발화 시작: <ret> Pierre-Joseph Proudhon is often considered the father 
-    33.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: Pierre-Joseph Proudhon was a French socialist, political philosopher, 
-    44.49s  user  발화 시작: Oh, Proudhon.
-    44.84s  agent 발화 끝
-    45.55s  agent 발화 시작: He advocated for a society based on voluntary association an
-    45.59s  user  발화 끝
-    50.56s  user  발화 시작: …did he ever actually *try* to build one, or was it just the
-    51.34s  agent 발화 끝
-    54.00s  <ret> 발화 (turn11 첫 프레임)
-    54.39s  agent 발화 시작: <ret> That’s a good point to ask! Proudhon did attempt to es
-    54.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: The People's Bank, founded by Pierre-Joseph Proudhon in 1849, aimed to
-    54.54s  user  발화 끝
-    66.33s  agent 발화 시작: The People’s Bank, which he founded in 1849, aimed to provid
-    66.49s  agent 발화 끝
-    75.80s  user  발화 시작: So, a bit of a practical failure, then. What about more mode
-    75.88s  agent 발화 끝
-    80.30s  agent 발화 시작: Modern anarchists continue to explore diverse strategies, fr
-    80.47s  user  발화 끝
-    90.26s  agent 발화 끝
-    91.94s  user  발화 시작: Mutual aid—that sounds like something I’ve heard about latel
-    95.59s  user  발화 끝
-    95.93s  agent 발화 시작: It’s become more prominent recently, yes. It’s a voluntary r
-   105.86s  agent 발화 끝
-   105.92s  user  발화 시작: I see. Well, thank you, Frunax, that was very helpful.
-   109.46s  agent 발화 시작: You’re most welcome. I'm glad I could shed some light on thi
-   109.53s  user  발화 끝
-   119.34s  agent 발화 끝
+     0.00s  user  발화 시작: What three powers usually found in government are held by th
+     5.18s  <ret> 발화 (turn1 첫 프레임)
+     5.33s  agent 발화 시작: <ret> But unfortunately, there’s no readily available inform
+     5.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (no information found)
+     5.50s  user  발화 끝
+    15.85s  agent 발화 끝
+    16.06s  user  발화 시작: Hmm, that's disappointing. Is there anything about the histo
+    21.11s  <ret> 발화 (turn3 첫 프레임)
+    21.34s  agent 발화 시작: <ret> Historically, the Pope held quite a bit of power—the r
+    21.35s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.96s]: The Pope historically held significant temporal power, including the r
+    21.53s  user  발화 끝
+    25.47s  user  발화 시작: Uh-huh.
+    25.92s  user  발화 끝
+    31.21s  agent 발화 시작: It's fascinating how much influence the papacy once had, isn
+    31.30s  agent 발화 끝
+    40.01s  user  발화 시작: What about the College of Cardinals? What was *their* role i
+    40.11s  agent 발화 끝
+    44.31s  <ret> 발화 (turn7 첫 프레임)
+    44.54s  user  발화 끝
+    44.62s  agent 발화 시작: <ret> The College of Cardinals primarily advised the Pope, a
+    44.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: The College of Cardinals historically advised the Pope on matters of f
+    50.25s  user  발화 시작: Oh.
+    50.69s  user  발화 끝
+    53.91s  user  발화 시작: So, it was more about selecting the leader than direct rule?
+    54.31s  agent 발화 끝
+    58.12s  user  발화 끝
+    58.12s  agent 발화 시작: Exactly. They weren’t directly ruling, but choosing the Pope
+    69.71s  user  발화 시작: What was the biggest dispute they ever had with a secular ru
+    70.08s  agent 발화 끝
+    73.03s  <ret> 발화 (turn12 첫 프레임)
+    73.17s  agent 발화 시작: <ret> One of the biggest disputes was between Pope Gregory V
+    73.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: Pope Gregory VII and Holy Roman Emperor Henry IV engaged in a major di
+    73.31s  user  발화 끝
+    83.10s  user  발화 시작: …Was that about land, too?
+    83.79s  agent 발화 끝
+    85.01s  agent 발화 시작: Yes, absolutely. The Investiture Controversy was deeply root
+    85.03s  user  발화 끝
+    92.46s  user  발화 시작: Mhm.
+    92.96s  user  발화 끝
+   101.70s  user  발화 시작: That sounds messy. Did it ever come to a battle?
+   101.85s  agent 발화 끝
+   104.64s  <ret> 발화 (turn17 첫 프레임)
+   104.88s  agent 발화 시작: <ret> It absolutely did come to battle—there were sieges and
+   104.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: The Investiture Controversy involved military conflicts, including sie
+   104.94s  user  발화 끝
+   113.01s  user  발화 시작: What kind of impact did that have on the power of the church
+   113.18s  agent 발화 끝
+   117.11s  agent 발화 시작: That conflict ultimately weakened the authority of the Holy 
+   117.13s  user  발화 끝
+   121.65s  user  발화 시작: Yeah.
+   122.00s  user  발화 끝
+   131.54s  agent 발화 끝
+   132.62s  user  발화 시작: That’s good to know. I'm trying to understand how power shif
+   137.33s  agent 발화 시작: Understanding those shifts is key to understanding history, 
+   137.48s  user  발화 끝
+   142.75s  user  발화 시작: Mm-hmm.
+   143.29s  user  발화 끝
+   148.93s  agent 발화 끝
+   150.72s  user  발화 시작: It sounds exhausting. Thanks for explaining all of this, Ari
+   154.14s  user  발화 끝
+   154.57s  agent 발화 시작: You're very welcome. It's a fascinating topic, and I'm glad 
+   159.75s  agent 발화 끝

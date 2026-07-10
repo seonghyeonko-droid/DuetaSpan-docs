@@ -4,99 +4,114 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Chloe",
+#     "name": "Hana",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-05",
-#       "category": "home",
-#       "text": "User's home address is 530 Elm Street."
-#     },
-#     {
-#       "date": "2025-12-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-10-20",
+#       "date": "2026-05-16",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-08-12",
+#       "date": "2026-03-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-11-27",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2025-08-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-24",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-06",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-27",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 Hmm, are there any good seafood re | S3 …do any of them have outdoor seati | S4 Let’s check if Mitch's has availab
+# EXAMINER(FDB-v2) 단계: S1 Select credit card from the paymen | S2 Sounds good. What’s the weather in | S3 But… | S4 Excellent. And could you remind me
 
-     0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.02s  <ret> 발화 (turn1 첫 프레임)
-     5.18s  user  발화 끝
-     5.26s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
-     5.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: (tool result) Confirmation: Ocean View Hotel, San Diego. Three rooms r
-    16.35s  user  발화 시작: That sounds perfect, thank you. What’s the weather usually l
-    16.48s  agent 발화 끝
-    20.91s  agent 발화 시작: San Diego in February is generally mild and pleasant. It's a
-    20.98s  user  발화 끝
-    28.89s  agent 발화 끝
-    29.26s  user  발화 시작: Hmm, are there any good seafood restaurants near the hotel?
-    32.49s  <ret> 발화 (turn5 첫 프레임)
-    32.77s  user  발화 끝
-    32.81s  agent 발화 시작: <ret> There are several excellent seafood restaurants nearby
-    32.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Five seafood restaurants near Ocean View Hotel, San Dieg
-    38.94s  user  발화 시작: …do any of them have outdoor seating?
-    39.67s  agent 발화 끝
-    40.88s  agent 발화 시작: Mitch’s Seafood and Brigantine Seafood Restaurant both have 
-    41.01s  user  발화 끝
-    44.97s  user  발화 시작: Yeah.
-    45.42s  user  발화 끝
-    48.02s  agent 발화 시작: I can make a reservation for you at either one if you’d like
-    48.25s  agent 발화 끝
-    55.73s  user  발화 시작: Let’s check if Mitch's has availability for, say, February t
-    55.81s  agent 발화 끝
-    59.93s  <ret> 발화 (turn11 첫 프레임)
-    60.17s  agent 발화 시작: <ret> Excellent. I’ve booked a table for three at Mitch’s Se
-    60.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Reservation confirmed at Mitch’s Seafood for February 12
-    60.22s  user  발화 끝
-    71.53s  agent 발화 끝
+     0.00s  user  발화 시작: Select credit card from the payment method dropdown, please.
+     3.08s  <ret> 발화 (turn1 첫 프레임)
+     3.24s  user  발화 끝
+     3.32s  agent 발화 시작: <ret> The process usually involves clicking the dropdown, re
+     3.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) The process of selecting a credit card from a payment me
+     8.64s  user  발화 시작: Uhhh, and then apply the five-dollar discount code, "SAVE5".
+     8.79s  agent 발화 끝
+    12.20s  <ret> 발화 (turn3 첫 프레임)
+    12.36s  agent 발화 시작: <ret> You'll enter "SAVE5" in a designated field during chec
+    12.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Applying a discount code like "SAVE5" to a payment usual
+    12.53s  user  발화 끝
+    18.01s  agent 발화 끝
+    18.41s  user  발화 시작: Sounds good. What’s the weather in Seoul right now?
+    21.57s  <ret> 발화 (turn5 첫 프레임)
+    21.92s  user  발화 끝
+    21.97s  agent 발화 시작: <ret> It is 23.0 degrees Celsius in Seoul, with 74 percent h
+    21.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    24.86s  user  발화 시작: Mm-hmm.
+    25.54s  user  발화 끝
+    30.46s  agent 발화 시작: That’s a pleasant summer day, perfect for a walk in the park
+    30.49s  agent 발화 끝
+    34.44s  user  발화 시작: Hmmmm, I need to book a table for two at a nice Italian rest
+    34.58s  agent 발화 끝
+    38.35s  <ret> 발화 (turn9 첫 프레임)
+    38.75s  agent 발화 시작: <ret> Give me a moment while I search for Italian restaurant
+    38.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (no information found)
+    38.93s  user  발화 끝
+    41.85s  user  발화 시작: Mhm.
+    42.48s  user  발화 끝
+    44.17s  agent 발화 끝
+    44.89s  user  발화 시작: But…
+    45.12s  ⚡지연 SPAN 주입(선제발표 직전): Ristorante Bella Notte offers classic Italian cuisine and has availabi
+    45.51s  agent 발화 시작: <ret> I’ve found several options. Ristorante Bella Notte has
+    45.53s  user  발화 끝
+    55.16s  agent 발화 끝
+    55.45s  user  발화 시작: Okay, book it.
+    55.99s  <ret> 발화 (turn14 첫 프레임)
+    56.39s  agent 발화 시작: <ret> Your reservation for two at Ristorante Bella Notte is 
+    56.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) Reservation confirmed for two at Ristorante Bella Notte 
+    56.55s  user  발화 끝
+    59.93s  user  발화 시작: Nice.
+    60.74s  user  발화 끝
+    66.74s  user  발화 시작: Excellent. And could you remind me what my appointment with 
+    66.77s  agent 발화 끝
+    70.30s  <ret> 발화 (turn17 첫 프레임)
+    70.53s  agent 발화 시작: <ret> The appointment with Dr. Lee, on May 15th, was for you
+    70.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: [2026-05-15] Appointment with Dr. Lee for annual check-up.
+    70.63s  user  발화 끝
+    75.80s  agent 발화 끝
+    75.94s  user  발화 시작: Oh, right. Thanks, Zal.
+    77.55s  agent 발화 시작: You're very welcome. Focusing on your well-being is a great 
+    77.55s  user  발화 끝
+    84.27s  agent 발화 끝

@@ -1,10 +1,10 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Lio, a thoughtful and soft-spoken counselor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Drarimi, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Lily",
+    "name": "Hugo",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,63 +12,74 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "female",
-    "age_range": "late 30s",
+    "gender": "male",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-21",
+      "date": "2026-05-18",
+      "category": "home",
+      "text": "User's home address is 415 Oak Avenue."
+    },
+    {
+      "date": "2026-04-03",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-16",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-11-17",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in August."
     },
     {
-      "date": "2026-01-04",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-07-08",
+      "date": "2025-08-03",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-05-30",
+      "date": "2025-07-04",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
+      "date": "2025-09-11",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-12",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.07s⟩ one?
-[  4.39s][moshi] ⟦⚡SPAN@4.39s: (tool result) {"status": "success", "url": "https://httpbin.org/headers", "headers": {"Accept": "*/*", "Accept⟧ I’ve set the user agent to SuperCrawler version ten point one, as requested.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://httpbin.org/headers", "user_agent": "SuperCrawler version 10.1"}}
-[  6.70s][user ] «backchannel» Mhm.
-[ 10.35s][user ] Hmm, that’s good… but can you verify it actually ⟨ret@14.32s⟩ took?
-[ 14.56s][moshi] ⟦⚡SPAN@14.56s: (tool result) {"status": "success", "url": "https://httpbin.org/headers", "headers": {"Accept": "*/*", "Accept⟧ Yes, the headers now show “SuperCrawler version ten point one.”
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://httpbin.org/headers", "user_agent": "SuperCrawler version 10.1"}}
-[ 19.36s][user ] Okay, perfect. That’s a relief.
+[  0.00s][user ] What are roundtrip flights from Seattle to Frankfurt, leaving on November twentieth and returning December ⟨ret@5.86s⟩ third?
+[  6.18s][moshi] ⟦⚡SPAN@6.18s: (tool result) Flights from Seattle to Frankfurt departing November 20, 2026, and returning December 3, 2026, a⟧ Roundtrip flights from Seattle to Frankfurt start at eight hundred seventy-five dollars with Lufthansa.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seattle", "arrival_city": "Frankfurt", "departure_date": "November twentieth", "return_date": "December third"}}
+[ 12.97s][user ] That sounds alright. Are there any non-stop options? ⟨ret@16.39s⟩
+[ 16.46s][moshi] ⟦⚡SPAN@16.46s: (tool result) Lufthansa offers non-stop roundtrip flights from Seattle to Frankfurt departing November 20, 202⟧ Lufthansa has non-stop options for twelve hundred fifty dollars.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seattle", "arrival_city": "Frankfurt", "departure_date": "November twentieth", "return_date": "December third", "non_stop": "true"}}
+[ 18.86s][user ] «backchannel» Uh-huh.
+[ 21.46s][user ] Hmm, that's quite a jump in price. What about flying into a different airport near Frankfurt?
+[ 26.61s][moshi] ⟨ret@26.55s⟩ ⟦⚡SPAN@26.63s: (tool result) Flights from Seattle to airports near Frankfurt departing November 20, 2026, and returning Decem⟧ Flying into Cologne Bonn Airport with KLM could be nine hundred twenty dollars.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seattle", "arrival_city": "Frankfurt", "departure_date": "November twentieth", "return_date": "December third", "nearby_airports": "true"}}
+[ 29.33s][user ] «backchannel» Yeah.
+[ 33.55s][user ] Cologne… I’ve heard that’s a nice city. How far is that from Frankfurt, exactly?
+[ 38.31s][moshi] ⟨ret@38.23s⟩ ⟦⚡SPAN@38.31s: (tool result) The distance between Cologne Bonn Airport and Frankfurt is approximately 180 kilometers, or 112 ⟧ Cologne Bonn Airport is about one hundred eighty kilometers—or one hundred twelve miles—from Frankfurt.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Cologne Bonn Airport", "destination": "Frankfurt"}}
+[ 43.10s][user ] «backchannel» Yeah.
+[ 46.52s][user ] That doesn't seem too bad. Okay, let's book the KLM flight to Cologne.
+[ 51.13s][moshi] ⟨ret@50.89s⟩ ⟦⚡SPAN@51.13s: (tool result) Booking confirmed: Seattle to Cologne Bonn Airport, KLM, November 20-December 3, 2026. Confirmat⟧ I've booked your KLM flight to Cologne Bonn Airport. Your confirmation ID is KLM7492.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seattle", "arrival_city": "Cologne Bonn Airport", "departure_date": "November twentieth", "return_date": "December third", "airline": "KLM"}}
+[ 58.86s][user ] Perfect. Now, I'm wondering about hotels in Cologne.
+[ 62.19s][moshi] «interrupted» I can certainly help with that. Cologne has many lovely—
+[ 65.37s][user ] «interrupts_prev» …actually, before we look at hotels, can you quickly check if there are any direct trains from Cologne Airport to Frankfurt ⟨ret@72.47s⟩ Hauptbahnhof?
+[ 72.78s][moshi] ⟦⚡SPAN@72.79s: (tool result) Direct trains run from Cologne Bonn Airport to Frankfurt Hauptbahnhof approximately every hour, ⟧ Direct trains run about every hour, taking an hour and thirty minutes, and start at thirty-five euros.
+      CALL: {"function": "Trains_1_FindTrains", "arguments": {"departure_station": "Cologne Bonn Airport", "arrival_station": "Frankfurt Hauptbahnhof"}}
+[ 77.95s][user ] «backchannel» Yeah.
+[ 79.61s][user ] That's convenient. Okay, now about hotels in Cologne… what are some highly rated options near the city center?
+[ 87.67s][moshi] ⟨ret@87.59s⟩ ⟦⚡SPAN@87.67s: (tool result) The Excelsior Hotel Ernst and the Hyatt Regency Cologne are highly-rated hotels in Cologne's cit⟧ The Excelsior Hotel Ernst and Hyatt Regency Cologne are well-rated, starting around one hundred fifty
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Cologne", "location": "city center", "rating": "4 or higher"}}

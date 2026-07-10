@@ -1,83 +1,77 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Ellana, a kind and steady wellness coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Gura, a grounded and empathetic supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Rowan",
+    "name": "Aiden",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-03",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-03-26",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2026-02-12",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-09-24",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-07-12",
+      "date": "2026-03-06",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-13",
+      "date": "2026-02-22",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-06",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-09-23",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-09-10",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
+      "date": "2025-11-21",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-05-28",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-24",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when the A's were last no-hit? ⟨ret@2.80s⟩ I'm curious.
-[  3.19s][moshi] ⟦⚡SPAN@3.20s: The Oakland Athletics were last no-hit on April 21, 2018, by Mike Fiers of the Detroit Tigers.⟧ The last time the A's were no-hit was April twenty-first, two thousand eighteen. It’s good to look back at those games sometimes.
-[ 11.28s][user ] Wow, that was a while ago. Uhhh…
-[ 15.70s][user ] …my friend just texted about dinner plans…
-[ 20.15s][user ] «to_other» Hey, are we still on for Italian tonight?
-[ 22.25s][user ] …right, sorry. So, who pitched ⟨ret@24.53s⟩ it?
-[ 24.75s][moshi] ⟦⚡SPAN@24.77s: Mike Fiers of the Detroit Tigers pitched the no-hitter against the Oakland Athletics on April 21, 2018.⟧ That no-hitter was pitched by Mike Fiers, playing for the Detroit Tigers.
-[ 28.26s][user ] «backchannel» Okay.
-[ 29.44s][moshi] It's a reminder that even in baseball, unexpected things can happen, isn't it?
-[ 30.79s][user ] «backchannel» Right.
-[ 34.12s][user ] Is he still playing?
-[ 35.31s][moshi] ⟨ret@35.23s⟩ ⟦⚡SPAN@35.31s: Mike Fiers last played in Major League Baseball for the Philadelphia Phillies in 2021, before retiring.⟧ Mike Fiers retired after playing for the Philadelphia Phillies in twenty twenty-one. I hope he's enjoying his time off.
+[  0.00s][user ] I’ve been having heartburn lately. What neutralizes stomach ⟨ret@3.71s⟩ acid?
+[  4.09s][moshi] ⟦⚡SPAN@4.11s: Bicarbonate is a base that neutralizes stomach acid when it reaches the small intestine.⟧ Bicarbonate is a base that neutralizes stomach acid when it reaches the small intestine. It’s good your body has a natural way to handle this.
+[ 13.29s][user ] Hmm, interesting. What exactly *is* bicarbonate? ⟨ret@17.41s⟩
+[ 17.64s][moshi] ⟦⚡SPAN@17.64s: Sodium bicarbonate is a white crystalline powder that is a source of carbon dioxide.⟧ Sodium bicarbonate is a white crystalline powder and a source of carbon dioxide.
+[ 20.18s][user ] «backchannel» Yeah.
+[ 23.75s][user ] «to_other» Hey, did you finish that report yet?
+[ 25.51s][user ] So, is it something I can take as a supplement, then?
+[ 28.36s][moshi] ⟨ret@28.29s⟩ ⟦⚡SPAN@28.37s: Sodium bicarbonate is available as an over-the-counter antacid for temporary relief of heartburn.⟧ Sodium bicarbonate is available as an over-the-counter antacid for temporary relief of heartburn. Just remember it's for short-term use.
+[ 38.19s][user ] Okay, good to know. What’s a safe dosage?
+[ 41.13s][moshi] ⟨ret@40.91s⟩ ⟦⚡SPAN@41.15s: (tool result) A typical dose of sodium bicarbonate for heartburn is 1/2 to 1 teaspoon in 4 ounces of water, bu⟧ A typical dose is 1/2 to 1 teaspoon in water, but don’t take more than seven doses in 24 hours.
+      CALL: {"function": "search", "arguments": {"query": "safe dosage of sodium bicarbonate for heartburn"}}

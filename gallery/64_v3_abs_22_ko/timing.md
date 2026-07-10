@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "수훈",
+#     "name": "도율",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,81 +18,91 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
+#       "date": "2026-04-29",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-03-14",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-11-11",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-06-26",
+#       "date": "2026-01-16",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-29",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-16",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아나키스트들은 어떤 형태의 정부를 가장 싫어할까요? | S2 그건 좀 복잡하네요. 좀 더 쉽게 설명해 줄 수 있을까요? | S3 아, 이해가 돼요. 그럼 아나키스트들은 폭력을 쓰는 편인가요? | S4 …잠깐만요, 아나키스트들이 실제로 성공한 사례가 있나요? 뭔가
+# EXAMINER(FDB-v2) 단계: S1 교황과 추기경단이 정부에서 일반적으로 행사하는 세 가지 권한이 | S2 솔직히 좀 엉망이에요. 돈 관리를 전혀 못 하는 것 같아요. | S3 …줄 수 있어요? 너무 귀찮아서 손으로 쓰기는 싫은데. | S4 투자요? 저는 투자에 대해 아는 게 없어요.
 
-     0.00s  user  발화 시작: 아나키스트들은 어떤 형태의 정부를 가장 싫어할까요?
-     2.73s  <ret> 발화 (turn1 첫 프레임)
-     3.05s  agent 발화 시작: <ret> 아나키스트들이 어떤 정부 형태를 특히 싫어하는지에 대한 정보는 찾을 수 없었습니다.
-     3.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (no information found)
-     3.23s  user  발화 끝
-     8.89s  agent 발화 끝
-     9.23s  user  발화 시작: 흐음, 그렇군요. 그럼 아나키즘 자체는 무슨 뜻인가요?
-    12.46s  <ret> 발화 (turn3 첫 프레임)
-    12.75s  user  발화 끝
-    12.77s  agent 발화 시작: <ret> 아나키즘은 중앙 정부의 권위 없이 자발적인 기관에 기반한 자치 사회를 옹호하는 정치 철학입니다.
-    12.78s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.20s]: Anarchism is a political philosophy that advocates for self-governed s
-    18.89s  user  발화 시작: 그건 좀 복잡하네요. 좀 더 쉽게 설명해 줄 수 있을까요?
-    18.98s  agent 발화 끝
-    22.20s  agent 발화 시작: 아나키즘은 기본적으로 사람들이 스스로 결정하고 서로 협력해서 사는 사회를 꿈꾸는 사상이라고 생각하시면 됩니다
-    22.41s  user  발화 끝
-    29.61s  user  발화 시작: 아, 이해가 돼요. 그럼 아나키스트들은 폭력을 쓰는 편인가요?
-    29.70s  agent 발화 끝
-    32.31s  <ret> 발화 (turn7 첫 프레임)
-    32.63s  agent 발화 시작: <ret> 과거에는 폭력을 사용하는 아나키스트도 있었지만, 현대 아나키스트들은 대부분 비폭력 저항과 직접 행
-    32.63s  ⚡SPAN 주입 [d'=1.84s / d_lead=8.53s]: While some anarchists have historically engaged in violence, most cont
-    32.76s  user  발화 끝
-    41.16s  agent 발화 끝
-    41.23s  user  발화 시작: …잠깐만요, 아나키스트들이 실제로 성공한 사례가 있나요? 뭔가 국가 없이 운영되는 곳이 있었는지 궁금해요.
-    47.21s  <ret> 발화 (turn9 첫 프레임)
-    47.25s  user  발화 끝
-    47.44s  agent 발화 시작: <ret> 실제로 아나키스트들이 국가 없이 운영되는 사회를 만든 사례가 있었는데요— 스페인 내전(일 구 삼 
-    48.17s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.05s]: During the Spanish Civil War (1936-1939), anarchist groups established
-    57.52s  user  발화 시작: 진짜요?
-    58.15s  user  발화 끝
-    64.11s  <ret> 발화 (turn11 첫 프레임)
-    64.18s  agent 발화 시작: <ret> 스페인 내전 당시의 사례는 짧았지만, 아나키스트 사상의 실현 가능성을 보여주는 중요한 사례로 꼽힙
-    64.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: During the Spanish Civil War (1936-1939), anarchist groups established
-    64.29s  agent 발화 끝
-    70.99s  agent 발화 끝
+     0.00s  user  발화 시작: 교황과 추기경단이 정부에서 일반적으로 행사하는 세 가지 권한이 뭔지 알고 싶어요.
+     4.90s  <ret> 발화 (turn1 첫 프레임)
+     5.21s  agent 발화 시작: <ret> 아, 그 부분에 대해서는 정확한 정보를 찾을 수 없었네요. 죄송합니다.
+     5.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.92s]: (no information found)
+     5.46s  user  발화 끝
+     9.13s  agent 발화 끝
+     9.46s  user  발화 시작: 음… 그렇군요.
+    10.69s  user  발화 끝
+    10.99s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 예산 관리나 재정 계획에 대해 도와드릴 수 있어요.
+    17.29s  user  발화 시작: 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요.
+    17.43s  agent 발화 끝
+    19.76s  agent 발화 시작: 괜찮으시다면, 혹시 현재 재정 상황에 대해 간단히 이야기해 주실 수 있을까요?
+    19.88s  user  발화 끝
+    21.69s  user  발화 시작: 응.
+    22.05s  user  발화 끝
+    24.81s  user  발화 시작: 솔직히 좀 엉망이에요. 돈 관리를 전혀 못 하는 것 같아요.
+    24.95s  agent 발화 끝
+    28.37s  agent 발화 시작: [sigh] 많은 분들이 처음에는 그렇게 느끼시는 경우가 많아요. 걱정 마세요. 함께 차근차근 해결해 나갈 
+    28.51s  user  발화 끝
+    36.16s  agent 발화 끝
+    38.33s  user  발화 시작: 어떻게 해야 할지 막막해요.
+    40.23s  user  발화 끝
+    40.55s  agent 발화 시작: 우선, 수입과 지출을 정확하게 파악하는 것부터 시작하는 게 중요합니다. 매달 들어오는 돈과 나가는 돈을 기록
+    49.26s  agent 발화 끝
+    50.18s  user  발화 시작: … 근데 기록하는 앱 같은 거 추천해…
+    52.76s  user  발화 끝
+    53.98s  user  발화 시작: …줄 수 있어요? 너무 귀찮아서 손으로 쓰기는 싫은데.
+    57.88s  agent 발화 시작: 여러 가지 앱이 있는데, '뱅크샐러드'나 '네이버 가계부'가 사용자 인터페이스가 직관적이고 편리해서 많이 사
+    58.01s  user  발화 끝
+    61.16s  user  발화 시작: 그래.
+    61.66s  user  발화 끝
+    65.81s  agent 발화 시작: 앱을 사용하면 소비 패턴을 분석하고 불필요한 지출을 줄이는 데 도움이 될 수 있습니다. 또, 예산을 설정하고
+    65.85s  agent 발화 끝
+    75.69s  agent 발화 끝
+    75.74s  user  발화 시작: 예산 설정하는 방법도 알려주세요.
+    78.10s  user  발화 끝
+    78.51s  agent 발화 시작: 예산은 수입에서 필수 지출(주거비, 식비, 교통비 등)을 제외한 금액을 기준으로 설정하는 것이 일반적입니다.
+    82.27s  user  발화 시작: 그치.
+    82.75s  user  발화 끝
+    87.18s  agent 발화 끝
+    87.94s  user  발화 시작: 아, 그렇군요. 그럼 남은 돈은 어떻게 관리해야 할까요?
+    90.70s  agent 발화 시작: 남은 돈은 저축, 투자, 부채 상환 등에 활용할 수 있습니다. 장기적인 목표를 세우고 그에 맞춰 계획을 세우
+    90.90s  user  발화 끝
+    99.02s  user  발화 시작: 투자요? 저는 투자에 대해 아는 게 없어요.
+    99.13s  agent 발화 끝
+   101.39s  agent 발화 시작: 투자는 위험성이 따르기 때문에 신중하게 접근해야 합니다. 처음에는 소액으로 시작하고 전문가의 도움을 받는 것
+   101.56s  user  발화 끝
+   104.04s  user  발화 시작: 응.
+   104.25s  user  발화 끝
+   109.92s  agent 발화 끝
+   109.98s  user  발화 시작: 알겠습니다. 알려주셔서 감사합니다.
+   112.11s  agent 발화 시작: 천만에요. 언제든지 궁금한 점이 있으면 저에게 물어보세요. 재정적인 어려움은 혼자 끙끙 앓지 말고 함께 해결
+   112.34s  user  발화 끝
+   122.12s  agent 발화 끝

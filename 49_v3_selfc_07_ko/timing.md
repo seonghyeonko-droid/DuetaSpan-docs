@@ -4,153 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "윤율",
+#     "name": "은율",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-29",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
-#     },
-#     {
-#       "date": "2026-05-01",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-01-21",
+#       "date": "2026-02-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2025-12-25",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-10-23",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-15",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-03-12",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-24",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘. | S2 음… 한식. | S3 좋아. 그럼… 그날 저녁에 영화 볼 만한 거 있어? | S4 정말 고마워.
+# EXAMINER(FDB-v2) 단계: S1 홈페이지 화면을 캡처해서 홈페이지라는 이름으로 저장해 줄 수  | S2 나미섬은… 가봤는데, 다른 곳 없을까요? 좀 더 조용하고 한적 | S3 십오분… 조금 걸리네요. 그럴 시간에 차라리 집에서 영화 볼까 | S4 흥미로운데요. 그럼 “우연한 커플” 예매해 줄 수 있을까요? 
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘.
-     3.85s  <ret> 발화 (turn1 첫 프레임)
-     4.08s  agent 발화 시작: <ret> 그랜드뷰 로프트 방문 예약을 육월 십오일 오후 두시에 잡아드렸어요. 확인 번호는 GH7892입니다
-     4.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Your visit to The Grandview Lofts is scheduled for June 
-     4.12s  user  발화 끝
-    12.19s  agent 발화 끝
-    12.74s  user  발화 시작: 근데… 십육일로 바꿀 수 있어?
-    14.86s  <ret> 발화 (turn3 첫 프레임)
-    15.09s  agent 발화 시작: <ret> 죄송하지만, 육월 십육일로 변경하는 데 필요한 정보가 없어서 변경이 어렵습니다.
-    15.10s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.74s]: (no information found)
-    15.28s  user  발화 끝
-    20.77s  user  발화 시작: 아, 실수했어. 육월 십육일로 바꿔줘.
+     0.00s  user  발화 시작: 홈페이지 화면을 캡처해서 홈페이지라는 이름으로 저장해 줄 수 있을까요?
+     3.53s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  agent 발화 시작: <ret> 홈페이지 화면 캡처가 완료되었고, 홈페이지라는 이름으로 저장되었습니다.
+     3.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Screenshot saved as /tmp/homepage.png
+     3.84s  user  발화 끝
+     9.31s  agent 발화 끝
+     9.83s  user  발화 시작: 혹시 지난주 금요일 날씨 어땠는지 알려줄 수 있을까요?
+    12.55s  <ret> 발화 (turn3 첫 프레임)
+    12.86s  agent 발화 시작: <ret> 지난 금요일, 칠월 삼일 날씨는 이십팔 점 오도에 습도는 육십오%, 남쪽에서 불어오는 산들바람이 
+    12.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) The weather on July 3, 2026, was 28.5°C, humidity 65%, w
+    12.88s  user  발화 끝
+    20.76s  user  발화 시작: 흐으으음… 그건 좀 덥겠네요. 이번 주말 서울 근처로 당일치기 여행 갈 만한 곳 있을까요?
     20.83s  agent 발화 끝
-    23.55s  <ret> 발화 (turn5 첫 프레임)
-    23.78s  agent 발화 시작: <ret> 그랜드뷰 로프트 방문 예약을 육월 십육일 오후 두시로 변경해 드렸어요. 새로운 확인 번호는 GH9
-    23.79s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.30s]: (tool result) Your visit to The Grandview Lofts is now scheduled for J
-    24.00s  user  발화 끝
-    32.08s  agent 발화 끝
-    32.30s  user  발화 시작: 혹시 그 근처에 맛집도 찾아줄 수 있어?
-    34.78s  agent 발화 시작: 어떤 종류의 음식을 좋아하세요?
-    34.84s  user  발화 끝
-    36.86s  agent 발화 끝
-    37.64s  user  발화 시작: 음… 한식.
-    38.85s  <ret> 발화 (turn9 첫 프레임)
-    38.92s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 한식집 세 곳이 있어요. 서울 정원(별점 사 점 오, 일 점 이km), 김
-    38.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.68s]: (tool result) Three Korean restaurants near The Grandview Lofts: Seoul
-    39.11s  user  발화 끝
-    50.60s  agent 발화 끝
-    50.61s  user  발화 시작: 서울 정원이 제일 가까운 것 같네. 거기 예약해 줄래?
-    53.73s  <ret> 발화 (turn11 첫 프레임)
-    53.80s  agent 발화 시작: <ret> 서울 정원에 육월 십육일 저녁 일곱시에 두 분으로 예약이 완료되었어요. 확인 번호는 SG3456입
-    53.81s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.02s]: (tool result) Reservation confirmed at Seoul Garden for June 16th, 202
-    53.98s  user  발화 끝
-    59.05s  user  발화 시작: 어.
-    59.54s  user  발화 끝
-    61.67s  user  발화 시작: 혹시 그날 날씨는 어때?
-    61.82s  agent 발화 끝
-    62.85s  <ret> 발화 (turn14 첫 프레임)
-    63.25s  agent 발화 시작: <ret> 육월 십육일 그랜드뷰 로프트 지역의 날씨는 최고 이십팔도, 최저 이십이도이고, 비 올 확률은 이십
-    63.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.49s]: (tool result) The weather on June 16th, 2026, at The Grandview Lofts w
-    63.28s  user  발화 끝
-    71.73s  agent 발화 끝
-    72.40s  user  발화 시작: 좋아. 그럼… 그날 저녁에 영화 볼 만한 거 있어?
-    75.75s  <ret> 발화 (turn16 첫 프레임)
-    76.06s  agent 발화 시작: <ret> 육월 십육일에는 액션 히어로 칠 로맨틱 게트어웨이, 스페이스 익스플로러스 세 편이 상영됩니다.
-    76.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Showing on June 16th: "Action Hero 7" (action, 7:30 PM),
-    76.24s  user  발화 끝
-    82.41s  agent 발화 끝
-    83.36s  user  발화 시작: 스페이스 익스플로러스… 그거 괜찮겠다.
-    85.76s  user  발화 끝
-    85.79s  agent 발화 시작: SF 영화 좋아하시는군요. 좋은 선택이에요.
-    88.75s  user  발화 시작: 티켓 예매해 줄 수 있어? 두 장.
-    88.79s  agent 발화 끝
-    90.42s  <ret> 발화 (turn20 첫 프레임)
-    90.81s  agent 발화 시작: <ret> 스페이스 익스플로러스 영화 티켓 두 장을 육월 십육일 저녁 아홉시 상영으로 예매해 드렸어요. 확인
-    90.82s  user  발화 끝
-    90.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Two tickets for "Space Explorers" on June 16th, 2026, at
-    94.52s  user  발화 시작: 음.
-    94.92s  user  발화 끝
-    99.48s  agent 발화 끝
-    99.78s  user  발화 시작: 정말 고마워.
-   100.73s  user  발화 끝
-   100.89s  agent 발화 시작: 도움이 되어서 기쁩니다. 즐거운 시간 보내세요.
-   102.14s  user  발화 시작: 그치.
-   102.73s  user  발화 끝
-   104.27s  agent 발화 끝
-   105.21s  user  발화 시작: 아, 그리고… 그날 택시 잡아줄 수 있어?
-   107.86s  <ret> 발화 (turn26 첫 프레임)
-   107.94s  user  발화 끝
-   108.01s  agent 발화 시작: <ret> 그랜드뷰 로프트에서 서울 정원까지 택시비는 일만 이천 원이고, 도착 시간은 십오분 정도 예상됩니다
-   108.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) A ride from The Grandview Lofts to Seoul Garden is estim
-   117.35s  user  발화 시작: 좋아, 알았어.
-   117.42s  agent 발화 끝
-   118.95s  user  발화 끝
-   119.24s  agent 발화 시작: 즐거운 저녁 식사 되세요.
-   120.99s  agent 발화 끝
+    25.98s  <ret> 발화 (turn5 첫 프레임)
+    26.13s  agent 발화 시작: <ret> 서울 근처 당일치기 여행지로 나미섬, 아침고요수목원, 수원화성 등이 있습니다.
+    26.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Popular day trip destinations near Seoul include Nami Is
+    26.32s  user  발화 끝
+    27.67s  user  발화 시작: 네.
+    27.97s  user  발화 끝
+    31.40s  user  발화 시작: 나미섬은… 가봤는데, 다른 곳 없을까요? 좀 더 조용하고 한적한 곳으로요.
+    31.45s  agent 발화 끝
+    37.23s  user  발화 끝
+    37.36s  <ret> 발화 (turn8 첫 프레임)
+    37.43s  agent 발화 시작: <ret> 좀 더 조용한 곳을 원하신다면 북촌한옥마을이나 선정릉을 추천해 드립니다.
+    37.44s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.55s]: (tool result) For a quieter day trip, consider the Bukchon Hanok Villa
+    39.52s  user  발화 시작: 네.
+    39.83s  user  발화 끝
+    42.98s  agent 발화 끝
+    43.78s  user  발화 시작: 선정릉… 거기는 처음 들어보는데, 거기로 가는 대중교통 어떻게 타야 할까요?
+    49.26s  <ret> 발화 (turn11 첫 프레임)
+    49.41s  agent 발화 시작: <ret> 대중교통으로는 구호선을 타고 선정릉역에서 내려 십번 출구로 나가면 오분 정도 걸립니다.
+    49.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Transit directions to Seolleung Royal Tomb: Take subway 
+    49.62s  user  발화 끝
+    55.66s  agent 발화 끝
+    55.67s  user  발화 시작: 아, 그렇군요. 그럼 지금 구호선 어디쯤에 있는지 알려줄 수 있을까요?
+    59.55s  <ret> 발화 (turn13 첫 프레임)
+    59.62s  agent 발화 시작: <ret> 지금 신논현역(구호선)까지 일 점 이km 정도 떨어져 있고, 걸어서 약 십오분 정도 걸립니다.
+    59.62s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.50s]: (tool result) You are currently 1.2 km from Sinnonhyeon Station (Line 
+    59.65s  user  발화 끝
+    64.00s  user  발화 시작: 그렇죠.
+    64.45s  user  발화 끝
+    66.92s  user  발화 시작: 십오분… 조금 걸리네요. 그럴 시간에 차라리 집에서 영화 볼까…
+    67.12s  agent 발화 끝
+    71.56s  user  발화 끝
+    71.92s  agent 발화 시작: 영화를 보고 싶으시군요. 요즘 보고 싶은 영화 있으세요? —
+    75.75s  user  발화 시작: …혹시 이번 주말에 볼 만한 로맨틱 코미디 영화 있나요?
+    76.27s  agent 발화 끝
+    78.49s  <ret> 발화 (turn18 첫 프레임)
+    78.64s  agent 발화 시작: <ret> 이번 주말에 상영하는 로맨틱 코미디 영화로는 “러브 액츄얼리 이”와 “우연한 커플”이 있습니다.
+    78.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) Currently showing romantic comedies include “Love Actual
+    78.75s  user  발화 끝
+    81.91s  user  발화 시작: 네네.
+    82.35s  user  발화 끝
+    84.36s  agent 발화 시작: “러브 액츄얼리 이”는 전작의 감동을 이어가는 따뜻한 영화라고 하네요.
+    84.61s  agent 발화 끝
+    89.04s  agent 발화 끝
+    90.06s  user  발화 시작: “우연한 커플”은 어떤 영화인가요? 줄거리를 좀 알려줄 수 있을까요?
+    94.19s  <ret> 발화 (turn22 첫 프레임)
+    94.51s  agent 발화 시작: <ret> “우연한 커플”은 갑작스러운 맞선으로 결혼하게 된 두 남녀가 예상치 못하게 사랑에 빠지는 이야기입
+    94.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) “The Accidental Couple” is about two people forced into 
+    94.55s  user  발화 끝
+   101.86s  user  발화 시작: 흥미로운데요. 그럼 “우연한 커플” 예매해 줄 수 있을까요? 이번 주 토요일 오후 두시로 부탁해요.
+   101.92s  agent 발화 끝
+   107.52s  <ret> 발화 (turn24 첫 프레임)
+   107.84s  user  발화 끝
+   107.84s  agent 발화 시작: <ret> “우연한 커플” 토요일 오후 두시, 두 장 예매 완료되었습니다. 확인 번호는 칠 팔 구 이 삼 사
+   107.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Two tickets for “The Accidental Couple” on Saturday at 2
+   115.10s  user  발화 시작: 감사합니다. 덕분에 주말 계획이 생겼네요.
+   115.49s  agent 발화 끝
+   117.35s  user  발화 끝
+   117.47s  agent 발화 시작: 주말 계획 세우시는 데 도움이 되었다니 기쁩니다. 즐거운 시간 보내세요!
+   122.47s  agent 발화 끝

@@ -1,72 +1,46 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
+SYSTEM: <system> You are Rorami, a calm and patient wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Ada",
+    "name": "Kim",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-20",
-      "category": "home",
-      "text": "User's home address is 209 Cedar Lane."
+      "date": "2026-05-05",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-04-03",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-01-30",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-12-29",
+      "date": "2026-03-27",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-08-13",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-09-09",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-07-23",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
+      "date": "2025-08-28",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-30",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-08-25",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-10",
+      "date": "2026-03-02",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -77,13 +51,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where does the name du Plessis come from?
-[  2.60s][moshi] ⟨ret@2.59s⟩ ⟦⚡SPAN@2.67s: The surname du Plessis is of French origin, meaning "of the Plessis," referring to several places in France na⟧ The term comes from places in France called Plessis — it means “of the Plessis.” It’s a fairly common French surname.
-[  8.35s][user ] «backchannel» Mhm.
-[ 10.33s][user ] Oh, interesting. Was there a famous du ⟨ret@13.75s⟩ Plessis?
-[ 14.14s][moshi] ⟦⚡SPAN@14.15s: Huguenot soldier François du Plessis, Marquis de Dorval, was a French military leader in the service of Englan⟧ There was François du Plessis, a French soldier who fought for England in the eighteenth century. He was known as the Marquis de Dorval.
-[ 22.46s][user ] Hmm, eighteenth century… that’s a while ago. What about more recently?
-[ 27.67s][moshi] Welll… it's difficult to pinpoint a single, universally famous du Plessis in more recent times. Many have contributed in various fields.
-[ 35.60s][user ] I see. Could you search for a contemporary du Plessis who's a public ⟨ret@40.34s⟩ figure?
-[ 40.47s][moshi] ⟦⚡SPAN@40.50s: (tool result) South African rugby player Damian de Allende, whose full name is Damian Willem de Allende du Ple⟧ I found Damian de Allende du Plessis, a South African rugby player. He plays for Stade Rochelais and the Springboks.
-      CALL: {"function": "search", "arguments": {"query": "contemporary public figure named du Plessis"}}
+[  0.00s][user ] When does the next episode of The Handmaid's Tale air?
+[  3.69s][moshi] ⟨ret@3.62s⟩ ⟦⚡SPAN@3.70s: The eleventh episode of The Handmaid's Tale aired on April 25, 2018.⟧ The eleventh episode aired on April twenty-fifth, two thousand eighteen.
+[  7.07s][user ] «backchannel» Yeah.
+[  8.72s][user ] Oh, that was a while ago… um, what about the current season?
+[ 13.32s][moshi] It's understandable to feel a bit disconnected from past air dates. The show has evolved since then.
+[ 17.28s][user ] «backchannel» Yeah.
+[ 19.51s][user ] Is there a way to find out when the newest episodes are ⟨ret@23.20s⟩ released?
+[ 23.42s][moshi] ⟦⚡SPAN@23.44s: (tool result) Season 6 of The Handmaid's Tale premiered on April 3, 2024, with new episodes airing weekly on W⟧ New episodes are airing weekly on Wednesdays, starting April third, two thousand twenty-four. Finding a consistent viewing schedule can help you stay up to date.
+      CALL: {"function": "search", "arguments": {"query": "The Handmaid's Tale season 6 release schedule"}}

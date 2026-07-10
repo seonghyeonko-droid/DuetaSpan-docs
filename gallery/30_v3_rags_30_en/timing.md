@@ -4,56 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Robin",
+#     "name": "Oscar",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "early 30s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "home",
-#       "text": "User's home address is 664 Birch Road."
+#       "date": "2026-06-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-06-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-06-02",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-05",
+#       "date": "2026-05-03",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-09-05",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-05-02",
+#       "category": "home",
+#       "text": "User's home address is 943 Maple Drive."
+#     },
+#     {
+#       "date": "2025-10-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-21",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-18",
+#       "date": "2025-09-01",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -64,11 +61,9 @@
 # }
 
 
-     0.00s  user  발화 시작: When was the printing…
-     1.47s  user  발화 끝
-     3.15s  user  발화 시작: …press invented in Europe?
-     5.37s  <ret> 발화 (turn2 첫 프레임)
-     5.55s  user  발화 끝
-     5.61s  agent 발화 시작: <ret> The printing press, as we know it, came about around 1
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Johannes Gutenberg is credited with inventing the printing press with 
-    11.08s  agent 발화 끝
+     0.00s  user  발화 시작: Who does Hank Moody ultimately end up with in Californicatio
+     3.78s  <ret> 발화 (turn1 첫 프레임)
+     4.02s  agent 발화 시작: <ret> The term comes from… Karen Van Der Beek is the woman H
+     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Karen Van Der Beek is the woman Hank Moody ends up with in the series 
+     4.16s  user  발화 끝
+    11.02s  agent 발화 끝

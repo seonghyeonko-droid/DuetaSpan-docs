@@ -1,106 +1,106 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Oruus, a gentle and reflective counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Zoraen, a grounded and empathetic supportive advisor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Julia",
+    "name": "Adam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "40s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-05",
-      "category": "home",
-      "text": "User's home address is 528 Birch Road."
-    },
-    {
-      "date": "2026-02-10",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-12-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-06-09",
+      "date": "2026-06-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-04-13",
+      "category": "home",
+      "text": "User's home address is 587 Pine Court."
+    },
+    {
+      "date": "2026-04-02",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-08-28",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
-      "title": "Booked a dentist appointment",
+      "date": "2025-09-25",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.49s⟩ May tenth.
-[  4.88s][moshi] «interrupted» ⟦⚡SPAN@4.89s: (tool result) Buses from Chicago to Denver on May 10th are available with Greyhound, starting at $155 per pers⟧ Buses from Chicago to Denver on May tenth start at one hundred fifty-five dollars per person—
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May 10th"}}
-[  9.13s][user ] «interrupts_prev» …are there any direct buses, or do I have to change?
-[ 12.78s][moshi] Direct buses are available, yes. Greyhound offers a direct route departing at 9:15 AM, arriving at 6:30 PM Mountain Time.
-[ 17.95s][user ] «backchannel» Oh.
-[ 21.36s][user ] That sounds good. Book me three tickets on that direct ⟨ret@25.44s⟩ bus.
-[ 25.67s][moshi] ⟦⚡SPAN@25.68s: (tool result) Booking confirmed. Three tickets on Greyhound bus GH-12345 from Chicago to Denver on May 10th. C⟧ Your tickets are booked. Confirmation number BX89Z2, total four hundred sixty-five dollars.
-      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"bus_id": "GH-12345", "num_tickets": 3}}
-[ 31.10s][user ] Perfect. What’s the weather like in Denver on that ⟨ret@35.00s⟩ day?
-[ 35.24s][moshi] ⟦⚡SPAN@35.32s: (tool result) The weather in Denver on May 10th is forecast to be sunny with a high of 24.4°C and a low of 10.⟧ Denver will be sunny, with a high of twenty-four point four degrees Celsius.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver", "date": "May 10th"}}
-[ 38.09s][user ] «backchannel» Yeah.
-[ 40.17s][user ] Hmm, that sounds nice. I think I need a hotel there too.
-[ 44.21s][moshi] A hotel is a good idea, especially if you’re arriving in the evening.
-[ 50.22s][user ] Find me some hotels near Union Station in Denver.
-[ 54.12s][moshi] ⟨ret@54.05s⟩ ⟦⚡SPAN@54.13s: (tool result) There are several hotels near Denver Union Station, including The Crawford Hotel, starting at $3⟧ The Crawford Hotel is three hundred twenty-nine dollars a night, and the Hyatt Place is two hundred nineteen.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Denver Union Station"}}
-[ 59.62s][user ] Book me a room at the Hyatt Place for ⟨ret@62.34s⟩ one night.
-[ 62.73s][moshi] ⟦⚡SPAN@62.74s: (tool result) Reservation confirmed at Hyatt Place Denver Downtown for May 10th. Confirmation number is HP75Y9⟧ Your reservation at the Hyatt Place is confirmed. HP75Y9, two hundred nineteen dollars plus taxes.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Hyatt Place Denver Downtown", "check_in_date": "May 10th", "num_nights": 1}}
-[ 69.63s][user ] Great. Are there any…
-[ 73.17s][user ] …good restaurants near Union ⟨ret@75.49s⟩ Station?
-[ 75.72s][moshi] ⟦⚡SPAN@75.73s: (tool result) Several restaurants are near Denver Union Station, including Stoic & Genuine for seafood, and Me⟧ Stoic & Genuine has seafood, and Mercantile Dining & Provision offers American cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Denver Union Station"}}
-[ 79.39s][user ] «backchannel» Mhm.
-[ 82.09s][user ] What time does Stoic & Genuine ⟨ret@84.95s⟩ close?
-[ 85.18s][moshi] ⟦⚡SPAN@85.19s: (tool result) Stoic & Genuine is open until 10:00 PM on May 10th. Reservations are recommended.⟧ Stoic & Genuine is open until ten PM on May tenth. Reservations are recommended.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Stoic & Genuine", "date": "May 10th", "time": "8:00 PM"}}
-[ 89.89s][user ] Make a reservation for me there at eight ⟨ret@92.79s⟩ o'clock.
-[ 92.94s][moshi] ⟦⚡SPAN@92.95s: (tool result) Reservation confirmed at Stoic & Genuine for May 10th at 8:00 PM for three people. Confirmation ⟧ Your reservation at Stoic & Genuine is confirmed. SG42L7.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Stoic & Genuine", "date": "May 10th", "time": "8:00 PM", "num_people": 3}}
-[ 95.22s][user ] «backchannel» Uh-huh.
-[ 97.71s][user ] Excellent. Uh, what about… what about things to do in Denver?
-[102.31s][moshi] Denver has a lot to offer. Are you interested in museums, parks, or something else?
-[104.23s][user ] «backchannel» Yeah.
-[106.78s][user ] Museums, ⟨ret@108.43s⟩ definitely.
-[108.82s][moshi] ⟦⚡SPAN@108.83s: (tool result) The Denver Art Museum, the Denver Museum of Nature & Science, and the Molly Brown House Museum a⟧ The Denver Art Museum, the Museum of Nature & Science, and the Molly Brown House are all good options.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Denver", "category": "museums"}}
-[114.83s][user ] How much does it cost to get into the Denver Art Museum?
-[118.32s][moshi] ⟨ret@118.26s⟩ ⟦⚡SPAN@118.34s: (tool result) Denver Art Museum admission is $18 for adults, $15 for seniors and students, and free for childr⟧ Admission to the Denver Art Museum is eighteen dollars for adults, fifteen for seniors and students.
-      CALL: {"function": "search", "arguments": {"query": "Denver Art Museum admission cost"}}
-[120.93s][user ] «backchannel» Mm-hmm.
-[123.77s][user ] That’s reasonable. I think I’m all set then.
-[126.89s][moshi] It sounds like you have a well-planned trip. Remember to allow for flexibility.
-[128.82s][user ] «backchannel» Uh-huh.
-[131.08s][user ] Yes, that's true. Thank you.
-[133.49s][moshi] You’re very welcome. Travel well and enjoy your time in Denver.
+[  0.00s][user ] What was the temperature reported in the last ⟨ret@3.06s⟩ reading?
+[  3.43s][moshi] ⟦⚡SPAN@3.46s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.⟧ It is currently 23.0°C with 74% humidity and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 10.04s][user ] Hmm, and what about the forecast for ⟨ret@13.15s⟩ tomorrow?
+[ 13.38s][moshi] ⟦⚡SPAN@13.39s: (tool result) Tomorrow will be 25.0°C, humidity 68%, with a gentle breeze.⟧ Tomorrow’s forecast is 25.0°C, with humidity at 68% and a gentle breeze. A pleasant day ahead.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 18.37s][user ] «backchannel» Yeah.
+[ 23.23s][user ] That sounds…nice. Actually, make that 27 degrees—I meant for Busan, not Seoul.
+[ 29.64s][moshi] ⟨ret@29.49s⟩ ⟦⚡SPAN@29.65s: (tool result) Busan will be 27.0°C, humidity 70%, with winds from the southeast at 8 km/h.⟧ The forecast for Busan is 27.0°C, humidity 70%, and a southeasterly breeze at 8 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
+[ 33.31s][user ] «backchannel» Right.
+[ 38.24s][user ] Can you find me some good restaurants ⟨ret@40.80s⟩ nearby?
+[ 41.19s][moshi] ⟦⚡SPAN@41.20s: (tool result) There are 35 restaurants within 1 kilometer, including 'Gogung Myeongga' and 'Hanil Gwan'.⟧ I found 35 restaurants within a kilometer, including Gogung Myeongga and Hanil Gwan.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 46.30s][user ] Gogung Myeongga—what kind of food do they ⟨ret@49.70s⟩ serve?
+[ 50.09s][moshi] ⟦⚡SPAN@50.10s: (tool result) Gogung Myeongga is a popular Korean BBQ restaurant known for its marinated beef and pork. Domain⟧ Gogung Myeongga is a Korean BBQ restaurant specializing in marinated beef and pork.
+      CALL: {"function": "search", "arguments": {"query": "Gogung Myeongga cuisine"}}
+[ 55.54s][user ] That sounds delicious. Can you reserve a table for two at 7 ⟨ret@60.66s⟩ PM?
+[ 60.88s][moshi] ⟦⚡SPAN@60.90s: (tool result) Reservation confirmed for 2 people at Gogung Myeongga at 7:00 PM. Confirmation ID: GH789X.⟧ I have confirmed your reservation for two at Gogung Myeongga at 7 PM. Your confirmation ID is GH789X.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Gogung Myeongga", "time": "7:00 PM", "party_size": 2}}
+[ 69.40s][user ] Perfect. Uh, actually, make that ⟨ret@72.70s⟩ 7:30.
+[ 72.93s][moshi] ⟦⚡SPAN@72.94s: (tool result) Reservation updated for 2 people at Gogung Myeongga at 7:30 PM. Confirmation ID: GH789X.⟧ Your reservation at Gogung Myeongga is now updated to 7:30 PM. The confirmation ID remains GH789X.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Gogung Myeongga", "time": "7:30 PM", "party_size": 2}}
+[ 76.69s][user ] «backchannel» Exactly.
+[ 82.02s][user ] Great. How long will it take to get there by taxi?
+[ 85.87s][moshi] ⟨ret@85.72s⟩ ⟦⚡SPAN@85.88s: (tool result) Estimated travel time to Gogung Myeongga by taxi is 12 minutes, distance 6.2 kilometers.⟧ The taxi ride to Gogung Myeongga is estimated to take 12 minutes, covering 6.2 kilometers.
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Gogung Myeongga"}}
+[ 92.86s][user ] Hmm, not too bad. What’s playing at the movies ⟨ret@97.44s⟩ tonight?
+[ 97.59s][moshi] ⟦⚡SPAN@97.60s: (tool result) 'Dune: Part Two' and 'Kung Fu Panda 4' are playing tonight at the Megabox Haeundae.⟧ At Megabox Haeundae tonight, you can watch ‘Dune: Part Two’ and ‘Kung Fu Panda 4’.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[100.55s][user ] «backchannel» Mm-hmm.
+[103.37s][user ] ‘Dune’ sounds good. What are the showtimes?
+[106.37s][moshi] ⟨ret@106.29s⟩ ⟦⚡SPAN@106.37s: (tool result) 'Dune: Part Two' showtimes at Megabox Haeundae are 6:00 PM, 9:00 PM, and 11:30 PM.⟧ Showtimes for ‘Dune: Part Two’ at Megabox Haeundae are 6, 9, and 11:30 PM.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Dune: Part Two"}}
+[108.40s][user ] «backchannel» Yeah, yeah.
+[111.18s][user ] Buy me two tickets for the 9 PM ⟨ret@113.70s⟩ showing.
+[114.00s][moshi] ⟦⚡SPAN@114.02s: (tool result) Two tickets purchased for 'Dune: Part Two' at 9:00 PM, Megabox Haeundae. Order #MV2479.⟧ I have purchased two tickets for ‘Dune: Part Two’ at 9 PM at Megabox Haeundae. Your order number is MV2479.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Dune: Part Two", "time": "9:00 PM", "quantity": 2}}
+[121.96s][user ] Wonderful. Thank you, Zoraen.
+[124.26s][moshi] It's my pleasure. Enjoy your evening, and the movie.

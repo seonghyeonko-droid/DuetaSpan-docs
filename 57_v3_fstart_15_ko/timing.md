@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "라완",
+#     "name": "태우",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,34 +13,47 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-09-09",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-07-12",
+#       "date": "2025-09-05",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-06-19",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2025-08-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     },
 #     {
-#       "date": "2025-05-30",
+#       "date": "2025-08-06",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-08",
+#       "date": "2026-03-10",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,49 +63,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 …레스토랑도 찾아줄 수 있어? | S3 …혹시 거기 근처에 주차장도 있니? | S4 고마워. 정말 도움이 됐어.
+# EXAMINER(FDB-v2) 단계: S1 이집트의 기자 피라미드 좌표를 찾아주시겠어요? | S2 …혹시 메나 하우스 호텔 예약이 가능한지 확인해 주시겠어요?  | S3 정말 감사합니다. 혹시 그 호텔에서 피라미드까지 걸어서 갈 수 | S4 아, 그렇군요. 알겠습니다.
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-     2.91s  <ret> 발화 (turn1 첫 프레임)
-     2.98s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
-     2.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.22s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
-     3.24s  user  발화 끝
-     6.01s  user  발화 시작: 응.
-     6.50s  user  발화 끝
-    10.02s  user  발화 시작: 음… 그 근처에 괜찮은…
-    10.20s  agent 발화 끝
-    12.27s  user  발화 끝
-    13.75s  user  발화 시작: …레스토랑도 찾아줄 수 있어?
-    15.28s  <ret> 발화 (turn5 첫 프레임)
-    15.67s  agent 발화 시작: <ret> 시드니 오페라 하우스 근처에는 아리아 레스토랑을 포함해 괜찮은 레스토랑이 여러 곳 있어요. 현대 
-    15.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) There are several restaurants near the Sydney Opera Hous
-    15.82s  user  발화 끝
-    19.27s  user  발화 시작: 응.
-    19.82s  user  발화 끝
-    24.48s  agent 발화 끝
-    24.48s  agent 발화 시작: 아리아 레스토랑은 특히 런치 스페셜 메뉴가 인기가 많다고 하네요.
-    28.08s  user  발화 시작: 아리아 레스토랑 예약 좀 해줘. 다음 주 토요일 저녁 일곱시에 두 명으로.
-    28.23s  agent 발화 끝
-    32.45s  <ret> 발화 (turn9 첫 프레임)
-    32.85s  agent 발화 시작: <ret> 아리아 레스토랑에 다음 주 토요일 저녁 일곱시에 두 분 예약이 완료됐습니다. 확인 번호는 ARIA
-    32.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Your reservation at Aria Restaurant for two people on Ju
-    33.08s  user  발화 끝
-    40.40s  agent 발화 끝
-    41.45s  user  발화 시작: …혹시 거기 근처에 주차장도 있니?
-    43.42s  <ret> 발화 (turn11 첫 프레임)
-    43.66s  user  발화 끝
-    43.81s  agent 발화 시작: <ret> 죄송하지만, 아리아 레스토랑 근처 주차장 정보는 찾을 수 없었어요.
-    43.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (no information found)
-    46.72s  user  발화 시작: 아.
-    47.22s  user  발화 끝
-    48.16s  agent 발화 끝
-    48.26s  user  발화 시작: 흐음… 그럼 대중교통으로 가는 방법 좀 알려줘.
-    51.40s  <ret> 발화 (turn14 첫 프레임)
-    51.49s  user  발화 끝
-    51.55s  agent 발화 시작: <ret> 현재 위치에서 아리아 레스토랑까지 대중교통을 이용하려면 Circular Quay 역까지 기차를 타
-    51.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) To reach Aria Restaurant from your current location by p
-    59.79s  agent 발화 끝
-    60.93s  user  발화 시작: 고마워. 정말 도움이 됐어.
-    63.29s  user  발화 끝
-    63.41s  agent 발화 시작: 언제든 편하게 다시 찾아주세요. 좋은 시간 보내세요.
-    66.92s  agent 발화 끝
+     0.00s  user  발화 시작: 이집트의 기자 피라미드 좌표를 찾아주시겠어요?
+     2.89s  <ret> 발화 (turn1 첫 프레임)
+     2.95s  agent 발화 시작: <ret> 기자 피라미드는 북위 이십구 점 구 칠 구 이도, 동경 삼십일 점 일 삼 사 이도에 위치해 있습니
+     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.70s]: (tool result) The Pyramids of Giza are located at 29.9792 degrees Nort
+     3.23s  user  발화 끝
+    12.63s  user  발화 시작: 음… 혹시 그 주변에 괜찮은 호텔도 알아봐 주실 수 있을까요?
+    12.64s  agent 발화 끝
+    16.70s  <ret> 발화 (turn3 첫 프레임)
+    17.09s  agent 발화 시작: <ret> 기자 피라미드에서 오km 이내에 세 곳의 호텔이 있습니다. 메나 하우스 호텔은 별점 사 점 팔점에
+    17.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.26s]: (tool result) Found three hotels within 5km of the Pyramids of Giza: M
+    17.30s  user  발화 끝
+    27.59s  user  발화 시작: 오.
+    28.09s  user  발화 끝
+    34.12s  agent 발화 시작: 호텔 가격이 꽤 다양하네요—
+    34.35s  agent 발화 끝
+    35.19s  user  발화 시작: …혹시 메나 하우스 호텔 예약이 가능한지 확인해 주시겠어요? 내일 묵을 수 있는지요.
+    35.87s  agent 발화 끝
+    39.91s  <ret> 발화 (turn7 첫 프레임)
+    40.31s  agent 발화 시작: <ret> 메나 하우스 호텔에 이천이십육년 칠월 십일일에 일인실 예약을 완료했습니다. 확인 번호는 엠 에이치
+    40.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Booking confirmed for one guest at Mena House Hotel on J
+    40.33s  user  발화 끝
+    44.87s  user  발화 시작: 진짜요?
+    45.69s  user  발화 끝
+    48.57s  user  발화 시작: 정말 감사합니다. 혹시 그 호텔에서 피라미드까지 걸어서 갈 수 있을까요?
+    48.84s  agent 발화 끝
+    52.62s  <ret> 발화 (turn10 첫 프레임)
+    53.02s  agent 발화 시작: <ret> 메나 하우스 호텔에서 기자 피라미드까지는 약 이 점 오킬로미터이고, 걸어서 삼십분 정도 걸립니다.
+    53.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Walking distance from Mena House Hotel to the Pyramids o
+    53.25s  user  발화 끝
+    59.04s  agent 발화 끝
+    59.87s  user  발화 시작: 아, 그렇군요. 알겠습니다.
+    61.80s  user  발화 끝
+    61.85s  agent 발화 시작: 여행 준비 잘 하시고, 즐거운 시간 보내세요.
+    64.63s  agent 발화 끝

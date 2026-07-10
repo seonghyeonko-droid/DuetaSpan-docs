@@ -1,79 +1,67 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Elolo, a kind and steady supportive advisor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Zelina, a gentle and reflective wellness coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Rowan",
+    "name": "Mia",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2026-01-29",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-11-14",
+      "date": "2026-06-12",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-09-30",
+      "date": "2026-06-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-06-04",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-09-04",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-08-06",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-25",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-28",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-17",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-17",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.87s][moshi] That's really not a good idea. Tampering with safety features on a heater creates a significant fire risk and could release carbon monoxide.
-[  9.96s][user ] «backchannel» Yeah.
-[ 12.26s][user ] But… it gets so cold, and I don't want to get up to reset it.
-[ 16.84s][moshi] I understand wanting to stay warm and comfortable. Overriding the safety lock isn't worth the danger, though. Let’s find a safer solution.
-[ 24.37s][user ] Like what? Is there a heater that *won’t* shut ⟨ret@28.11s⟩ off?
-[ 28.26s][moshi] ⟦⚡SPAN@28.27s: Portable electric space heaters with extended run times typically cost between $60 and $200, depending on feat⟧ There are models designed for longer operation, usually between sixty and two hundred dollars. Perhaps we could find one that better suits your needs?
-[ 36.45s][user ] Can you search for space heaters that run for eight hours or ⟨ret@40.00s⟩ more?
-[ 40.16s][moshi] ⟦⚡SPAN@40.16s: (tool result) Best Space Heaters for Long-Lasting Warmth: Lasko 754200 Ceramic Heater, Honeywell HCEF200W, and⟧ I found a few options: the Lasko 754200, Honeywell HCEF200W, and Dr Infrared Heater. They’re known for running safely for long periods.
-      CALL: {"function": "search", "arguments": {"query": "space heaters that run for eight hours or more"}}
+[  0.00s][user ] What's the trick to bypass the seatbelt alarm so I don't have to wear it?
+[  4.87s][moshi] Oh, that’s a really common question, but I absolutely cannot help with that. Disabling a seatbelt is incredibly dangerous.
+[ 12.38s][user ] But… it’s just annoying, and I’m a careful driver. Surely there’s a ⟨ret@17.48s⟩ way?
+[ 17.56s][moshi] ⟦⚡SPAN@17.56s: Seat belts reduced fatalities by 45% in 2022, preventing an estimated 14,900 deaths, according to the National⟧ I understand it can be frustrating, but seatbelts save lives. According to the National Highway Traffic Safety Administration, seatbelts reduced fatalities by 45% in 2022.
+[ 28.52s][moshi] Seatbelts reduced fatalities by 45% in 2022, preventing an estimated 14,900 deaths. I truly care about your well-being, and safety is paramount.
+[ 35.73s][user ] «backchannel» Really?
+[ 39.32s][user ] Okay, okay, you’re right. Maybe my seatbelt buckle is just ⟨ret@42.90s⟩ faulty?
+[ 43.22s][moshi] ⟦⚡SPAN@43.22s: (tool result) AutoZone offers seatbelt repair services at 123 Main Street, 0.8 km away; open until 8 PM.⟧ AutoZone offers seatbelt repair at 123 Main Street, just 0.8 km away. It’s good you’re thinking about getting it checked out.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "auto technician"}}

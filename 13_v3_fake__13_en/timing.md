@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Casey",
+#     "name": "Caleb",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -12,35 +12,35 @@
 #       "currency": "GBP (£)"
 #     },
 #     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2026-01-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-19",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-07-27",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-01-08",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-11-04",
-#       "category": "home",
-#       "text": "User's home address is 203 Birch Road."
+#       "date": "2025-07-25",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-04",
+#       "date": "2025-07-19",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,79 +48,53 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2025-06-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-17",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 …did it chart well, internationall | S3 …I remember that one. | S4 Absolutely. I'm trying to find tha
+# EXAMINER(FDB-v2) 단계: S1 What channel is the Weather Channe | S2 Hmm, I think I remember setting up | S3 Oh, good! That's a relief. | S4 Okay, thanks, Gera.
 
-     0.00s  user  발화 시작: When does Demi Lovato's new album come out? 2015, I think?
-     5.04s  user  발화 끝
-     5.18s  <ret> 발화 (turn1 첫 프레임)
-     5.39s  agent 발화 시작: <ret> The term comes from October, specifically the sixteent
-     5.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: Demi Lovato’s fifth studio album, “Confident”, was released on October
-    14.05s  user  발화 시작: Oh, okay. And what kind of music is on it?
-    14.06s  agent 발화 끝
-    17.08s  agent 발화 시작: It’s primarily a pop album, but incorporates elements of R&B
-    17.19s  user  발화 끝
-    25.09s  agent 발화 끝
-    25.68s  user  발화 시작: Hmm, sounds interesting.
-    27.17s  <ret> 발화 (turn5 첫 프레임)
-    27.49s  agent 발화 시작: <ret> It features collaborations with some really talented a
-    27.49s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.48s]: The album features collaborations with Max Martin, Ryan Tedder, and Mi
-    27.62s  user  발화 끝
-    33.21s  user  발화 시작: …did it chart well, internationally?
-    33.97s  agent 발화 끝
-    35.38s  <ret> 발화 (turn7 첫 프레임)
-    35.62s  agent 발화 시작: <ret> It spawned three singles: "Cool for the Summer", "King
-    35.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.61s]: "Confident" spawned three singles: "Cool for the Summer", "Kingdom Com
-    35.66s  user  발화 끝
-    40.68s  user  발화 시작: Uh-huh.
-    41.32s  user  발화 끝
-    42.88s  user  발화 시작: "Cool for the Summer" was a big hit…
-    43.23s  agent 발화 끝
-    45.00s  user  발화 끝
-    45.94s  user  발화 시작: …I remember that one.
-    47.45s  user  발화 끝
-    47.90s  agent 발화 시작: That song really resonated with a lot of people. Music can b
-    54.76s  agent 발화 끝
-    55.78s  user  발화 시작: True. What about her previous album? When did that come out?
-    59.48s  <ret> 발화 (turn13 첫 프레임)
-    59.87s  agent 발화 시작: <ret> Her previous album, "Demi", came out on May fourteenth
-    59.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: Demi Lovato’s fourth studio album, “Demi”, was released on May 14, 201
-    59.95s  user  발화 끝
-    66.86s  agent 발화 끝
-    67.52s  user  발화 시작: May 2013, right.
-    69.74s  <ret> 발화 (turn15 첫 프레임)
-    69.83s  user  발화 끝
-    70.14s  agent 발화 시작: <ret> It’s wonderful when artists evolve and aren't afraid t
-    70.14s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=4.30s]: The current weather in London, United Kingdom is 18.0°C, humidity 82%,
-    74.44s  agent 발화 끝
-    74.44s  agent 발화 시작: It takes courage to step outside one’s comfort zone, and tha
-    77.08s  user  발화 시작: Mm-hmm.
-    77.57s  user  발화 끝
-    79.63s  agent 발화 끝
-    79.76s  user  발화 시작: Absolutely. I'm trying to find that courage myself, actually
-    84.16s  agent 발화 시작: That’s a beautiful intention. Sometimes simply acknowledging
-    84.16s  user  발화 끝
-    85.88s  user  발화 시작: Yeah.
-    86.56s  user  발화 끝
-    90.03s  agent 발화 끝
-    90.32s  user  발화 시작: That makes sense. Thanks, Runana.
-    92.85s  agent 발화 시작: You’re very welcome. Remember, you already possess the stren
-    92.86s  user  발화 끝
-    97.89s  agent 발화 끝
+     0.00s  user  발화 시작: What channel is the Weather Channel on Direct TV?
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  user  발화 끝
+     3.68s  agent 발화 시작: <ret> The Weather Channel is available on Direct TV channel 
+     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: The Weather Channel is available on Direct TV channel 362.
+     9.79s  user  발화 시작: And what about the local news?
+     9.79s  agent 발화 끝
+    11.39s  <ret> 발화 (turn3 첫 프레임)
+    11.78s  agent 발화 시작: <ret> Local news channels vary depending on your location, o
+    11.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.75s]: (no information found)
+    11.91s  user  발화 끝
+    14.50s  user  발화 시작: Mm-hmm.
+    15.14s  user  발화 끝
+    15.15s  user  발화 시작: Hmm, I think I remember setting up a reminder.
+    15.53s  agent 발화 끝
+    18.16s  user  발화 끝
+    18.23s  agent 발화 시작: It’s good to stay proactive about checking the weather—
+    20.27s  user  발화 시작: …did I set a reminder for a storm warning last week?
+    20.82s  agent 발화 끝
+    23.49s  <ret> 발화 (turn8 첫 프레임)
+    23.55s  agent 발화 시작: <ret> Yes, you did. On July 3rd, you set a reminder to check
+    23.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [2024-07-03] I set a reminder to check the weather for a potential sto
+    23.82s  user  발화 끝
+    30.17s  user  발화 시작: Oh, good! That's a relief.
+    30.17s  agent 발화 끝
+    32.15s  user  발화 끝
+    32.60s  agent 발화 시작: I'm glad I could help you remember. It's easy to forget thos
+    35.19s  user  발화 시작: Yeah.
+    35.82s  user  발화 끝
+    36.86s  agent 발화 끝
+    38.64s  user  발화 시작: Is there a way to get alerts directly?
+    41.18s  user  발화 끝
+    41.44s  agent 발화 시작: Direct TV doesn't offer weather alerts directly, but you can
+    46.76s  agent 발화 끝
+    47.24s  user  발화 시작: Okay, thanks, Gera.
+    48.76s  user  발화 끝
+    48.88s  agent 발화 시작: You’re very welcome. Stay safe and dry out there!
+    52.07s  agent 발화 끝

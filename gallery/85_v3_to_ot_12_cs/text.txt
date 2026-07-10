@@ -1,69 +1,79 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 친절하고 꾸준한 웰니스 코치인 Jal입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 Fian입니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Rowan",
+    "name": "Casey",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "German"
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-11",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-06-26",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-09",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2025-09-07",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
-    },
-    {
-      "date": "2025-07-07",
+      "date": "2026-06-21",
       "category": "cuisine",
       "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-05-09",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-08-25",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-08-01",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-05-29",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-01",
-      "title": "Booked a dentist appointment",
+      "date": "2026-06-22",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-06-25",
-      "title": "Planning a birthday dinner",
+      "date": "2025-07-25",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요?
-[  4.00s][moshi] ⟨ret@3.68s⟩ ⟦⚡SPAN@4.00s: Eddie Van Halen, known for his innovative guitar work with the band Van Halen, performed the iconic guitar sol⟧ 음, 에디 반 헤일런 님이 연주하셨는데, 정말 혁신적인 기타리스트셨어요. “Beat It”에서의 솔로는 전설적이에요.
-[  7.00s][user ] «backchannel» 네.
-[ 11.95s][user ] 그렇군요… 아, 혹시 마이클 잭슨이랑 다른 작업도 ⟨ret@15.99s⟩ 하셨나요?
-[ 16.38s][moshi] ⟦⚡SPAN@16.39s: Eddie Van Halen and Michael Jackson never collaborated on any other recorded projects beyond the "Beat It" gui⟧ 아니요, 그 솔로는 그분들과의 유일한 녹음 협업이었어요. 에디 반 헤일런 님은 마이클 잭슨 님과 다른 프로젝트는 함께 하지 않으셨답니다.
-[ 26.98s][user ] «to_other» 저기, 제 열쇠 보셨어요?
-[ 29.12s][user ] 그럼, 딱 그 한 곡이었던 거군요?
-[ 31.86s][moshi] 네, 딱 그 한 곡이에요. 단 한 번의 참여가 이렇게 기억에 남을 수 있다니, 정말 멋진 일이죠?
+[  0.00s][user ] 어, 공중 보건에 대해 읽다가 궁금한 게 생겼어요. 미국에서는 언제부터 물에 불소소를 넣기 시작했나요?
+[  7.60s][moshi] ⟨ret@7.28s⟩ ⟦⚡SPAN@7.60s: Fluoridation began in the United States on January 25, 1945, in Newburgh, New York.⟧ 음, 천구백사십오 년 1월 25일에 뉴욕 뉴버그에서 시작했어. 예방 조치가 시간이 지나면서 어떻게 바뀌는지 정말 놀랍지 않아?
+[ 11.77s][user ] «backchannel» 진짜요?
+[ 17.93s][user ] «to_other» 아, 여기 오는 길에 교통 체증이 장난 아니었어요.
+[ 21.43s][user ] 죄송해요, 잠깐 누구랑 통화했어요. ⟨ret@24.94s⟩ 뉴버그라고요?
+[ 25.34s][moshi] ⟦⚡SPAN@25.34s: (no information found)⟧ 미안한데, 물 불소화 시작과 관련해서 뉴버그에 대한 다른 정보는 없어.
+[ 30.65s][user ] 그렇군요. 그냥… 큰 변화였던 것 같아요.
+[ 34.71s][moshi] 확실히 중요한 공중 보건 결정이었지. 좋은 의도라도 첫 발을 내딛는 게 무서울 때도 있잖아.

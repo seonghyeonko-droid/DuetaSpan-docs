@@ -1,92 +1,103 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Koral, a grounded and empathetic personal guide who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Arimi, a encouraging and non-judgmental life coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Taylor",
+    "name": "Noa",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "50s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-03-31",
+      "date": "2026-05-15",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-04-13",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2025-11-13",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-08-15",
+      "date": "2025-11-04",
       "category": "home",
-      "text": "User's home address is 50 Pine Court."
+      "text": "User's home address is 197 Birch Road."
     },
     {
-      "date": "2025-07-17",
+      "date": "2025-10-24",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-08",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2025-08-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-04",
-      "title": "Setting up a home network",
+      "date": "2026-01-18",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-10-25",
-      "title": "Planning a birthday dinner",
+      "date": "2025-06-01",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Create a detailed map of the Apple website…
-[  4.89s][user ] …focusing on the products.
-[  7.01s][moshi] ⟨ret@6.94s⟩ ⟦⚡SPAN@7.02s: (tool result) Map created showing Apple's website structure with product categories highlighted: iPhone, iPad,⟧ I've created a detailed map of the Apple website, highlighting their product categories—iPhone, iPad, Mac…
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[ 10.56s][user ] «backchannel» Uh-huh.
-[ 13.45s][moshi] …and more. It should help you navigate their offerings easily.
-[ 14.77s][user ] «backchannel» Okay.
-[ 16.88s][user ] That's great, but can it show me where to find information on the latest iPhone ⟨ret@21.51s⟩ 16?
-[ 21.75s][moshi] ⟦⚡SPAN@21.75s: (tool result) The map has been updated to pinpoint the iPhone 16 page on Apple's website: https://www.apple.co⟧ I’ve updated the map to pinpoint the iPhone 16 page—it’s at apple.com/iphone-16.
-[ 26.50s][user ] «backchannel» Yeah.
-[ 29.48s][user ] Hmm, is there a comparison chart available on ⟨ret@32.35s⟩ that page?
-[ 32.75s][moshi] ⟦⚡SPAN@32.75s: (tool result) The Apple website features a comparison chart detailing the iPhone 16, iPhone 16 Pro, and iPhone⟧ Yes, the Apple website has a comparison chart—it details the iPhone 16, Pro, and Pro Max.
-      CALL: {"function": "tavily-search", "arguments": {"query": "iPhone 16 comparison chart on apple.com"}}
-[ 40.11s][user ] That sounds useful—but actually, what’s the starting price of the base iPhone ⟨ret@45.07s⟩ 16?
-[ 45.47s][moshi] ⟦⚡SPAN@45.57s: (tool result) The base model iPhone 16 with 128GB of storage is priced at $799.⟧ Actually— The base iPhone 16, with 128GB, is priced at seven hundred and ninety-nine dollars.
-[ 52.99s][user ] $799… that’s more than I expected.
-[ 56.81s][moshi] —but it does include…
-[ 58.00s][user ] …Actually, forget the price for a moment. Can you show me where on the map to find details on AppleCare for the iPhone ⟨ret@66.03s⟩ 16?
-[ 66.27s][moshi] ⟦⚡SPAN@66.27s: (tool result) Map updated to highlight the AppleCare+ page for iPhone 16: https://www.apple.com/iphone/appleca⟧ The map now highlights the AppleCare+ page for the iPhone 16—it's at apple.com/iphone/applecareplus.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "AppleCare iPhone 16"}}
-[ 71.05s][user ] «backchannel» Really?
-[ 76.47s][user ] Okay, good. And what are the ⟨ret@78.58s⟩ coverage options?
-[ 78.98s][moshi] ⟦⚡SPAN@78.98s: (tool result) AppleCare+ for iPhone 16 offers coverage for accidental damage, including screen or back glass d⟧ AppleCare+ covers accidental damage—screens, back glass—and includes a two-year warranty.
-[ 81.19s][user ] «backchannel» Yeah.
-[ 85.11s][user ] Two years, huh? That's decent. Thanks, Koral.
-[ 88.62s][moshi] You’re welcome. I'm glad I could help you navigate the Apple website today.
+[  0.00s][user ] Please book a visit at Willow Creek Residences on October fifth.
+[  3.59s][moshi] «interrupted» ⟨ret@3.51s⟩ ⟦⚡SPAN@3.59s: (tool result) Visit scheduled at Willow Creek Residences for October 5th at 2:00 PM. Confirmation number is WC⟧ I’ve scheduled your visit at Willow Creek Residences for October fifth at two PM—
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "Willow Creek Residences", "visit_date": "October 5th"}}
+[  7.75s][user ] «interrupts_prev» …Is there a contact number for the property manager there?
+[ 11.40s][moshi] Willow Creek Residences’ property manager is Sarah Chen, and her number is 555-123-4567.
+[ 13.83s][user ] «backchannel» Oh.
+[ 18.44s][user ] Okay, good. And can you find me similar residences in the Oakwood ⟨ret@22.92s⟩ area?
+[ 23.15s][moshi] ⟦⚡SPAN@23.16s: (tool result) Found three residences in Oakwood: Oak Haven, Riverbend Estates, and Greenleaf Manor. Oak Haven ⟧ I found three residences in Oakwood: Oak Haven, Riverbend Estates, and Greenleaf Manor. Oak Haven currently has two-bedroom units—
+      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area_name": "Oakwood"}}
+[ 29.13s][user ] «backchannel» Yeah.
+[ 31.43s][moshi] —available. It might be a good starting point for your search, depending on your needs.
+[ 37.65s][user ] What are the price ranges for those three places, roughly?
+[ 40.70s][moshi] «interrupted» ⟨ret@40.62s⟩ ⟦⚡SPAN@40.70s: (tool result) Oak Haven: $1800 - $2500. Riverbend Estates: $2200 - $3000. Greenleaf Manor: $1500 - $2000. Sour⟧ Oak Haven ranges from eighteen hundred to twenty-five hundred dollars, Riverbend Estates from twenty-two hundred to three thousand—
+      CALL: {"function": "search", "arguments": {"query": "price range Oak Haven Riverbend Estates Greenleaf Manor"}}
+[ 47.41s][user ] «interrupts_prev» Greenleaf sounds interesting. Can we get more details on Greenleaf ⟨ret@51.33s⟩ Manor?
+[ 51.70s][moshi] «interrupted» ⟦⚡SPAN@51.73s: (tool result) Greenleaf Manor offers studio, one-, and two-bedroom apartments. Amenities include a gym, pool, ⟧ Greenleaf Manor offers studios, one- and two-bedroom apartments. They have a gym, a pool, and allow—
+      CALL: {"function": "search", "arguments": {"query": "Greenleaf Manor Oakwood amenities floorplans"}}
+[ 57.07s][user ] «interrupts_prev» Do they allow cats? Specifically, are there any weight ⟨ret@61.13s⟩ restrictions?
+[ 61.37s][moshi] «interrupted» ⟦⚡SPAN@61.37s: (tool result) Greenleaf Manor allows cats up to 20 pounds with a one-time pet fee of $300. Breed restrictions ⟧ Yes, Greenleaf Manor allows cats up to twenty pounds, with a three hundred dollar pet fee. Some breed—
+      CALL: {"function": "search", "arguments": {"query": "Greenleaf Manor Oakwood cat weight restrictions"}}
+[ 67.58s][user ] «interrupts_prev» Okay, that’s good to know. Can you check the weather forecast for Oakwood on ⟨ret@72.74s⟩ October fifth?
+[ 73.14s][moshi] «interrupted» ⟦⚡SPAN@73.14s: (tool result) The weather in Oakwood on October 5th will be partly cloudy with a high of 68°F and a low of 52°⟧ The forecast for Oakwood on October fifth is partly cloudy, with a high of sixty-eight and a low of—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Oakwood", "date": "October 5th"}}
+[ 78.32s][user ] «interrupts_prev» That sounds pleasant. What about traffic conditions around Greenleaf Manor on that ⟨ret@83.04s⟩ day?
+[ 83.20s][moshi] «interrupted» ⟦⚡SPAN@83.20s: (tool result) Estimated travel time from Willow Creek Residences to Greenleaf Manor is 25-35 minutes with mode⟧ The estimated travel time from Willow Creek to Greenleaf Manor is twenty-five to thirty-five minutes, with moderate—
+      CALL: {"function": "map_directions", "arguments": {"origin": "Willow Creek Residences", "destination": "Greenleaf Manor, Oakwood", "date": "October 5th", "time": "2:00 PM"}}
+[ 89.09s][user ] «interrupts_prev» That’s manageable. Could you set a reminder for me to leave at one thirty PM on ⟨ret@94.22s⟩ October fifth?
+[ 94.54s][moshi] ⟦⚡SPAN@94.54s: (tool result) Alarm set for October 5th at 1:30 PM: Leave for Greenleaf Manor.⟧ I’ve set an alarm for one thirty PM on October fifth, labeled “Leave for Greenleaf Manor”.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "1:30 PM", "date": "October 5th", "label": "Leave for Greenleaf Manor"}}
+[ 96.40s][user ] «backchannel» Yeah.
+[100.17s][user ] Perfect. I appreciate your help with all of this.
+[103.03s][moshi] It’s my pleasure. Taking these small steps can really help to ease transitions, and I’m glad I could support you.

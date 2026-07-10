@@ -1,79 +1,99 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 당신은 돈과 예산 관리에 대해 사람들을 돕는 호기심 많고 공감적인 개인 가이드인 Eus입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 사람들의 여행 및 휴가 계획을 돕는 차분하고 공감적인 상담사 Delira입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "도정",
+    "name": "윤빈",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-06-17",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2026-02-07",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-05-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-30",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
+      "date": "2026-05-08",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2026-01-18",
+      "date": "2026-04-30",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-10-23",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-26",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-02-28",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-02",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-17",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-09-20",
-      "title": "Apartment hunting downtown",
+      "date": "2025-06-09",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-08",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 건강한 사람의 평균 심박수는 어떻게 ⟨ret@2.39s⟩ 되나요?
-[  2.54s][moshi] ⟦⚡SPAN@2.55s: A normal resting heart rate for adults ranges from 60 to 100 bpm.⟧ 건강한 성인의 정상적인 휴식 시 심박수는 분당 육십회에서 백회 정도예요.
-[  9.57s][user ] 아, 그렇군요. 그럼 운동할 때 ⟨ret@12.26s⟩ 심박수는요?
-[ 12.50s][moshi] ⟦⚡SPAN@12.50s: During exercise, a healthy heart rate typically ranges from 50 to 90 bpm.⟧ 운동할 때는 건강한 심장이 보통 분당 오십회에서 구십회 사이로 뛰는 편이에요.
-[ 18.50s][user ] «to_other» 아휴, 오늘따라 손님이 너무 많네.
-[ 20.65s][moshi] 음, 심박수에 대해 더 궁금한 점이 있으신가요?
-[ 24.43s][user ] 혹시 심박수가 너무 낮으면 문제가 될까요?
-[ 27.36s][moshi] 심박수가 너무 낮으면 의사와 상담하는 게 좋아요.
+[  0.00s][user ] 음… '미스터 테러프트 때문에'라는 책이 어디에서 벌어지는 이야기인지 ⟨ret@4.42s⟩ 궁금해.
+[  4.58s][moshi] ⟦⚡SPAN@4.58s: Snow Hill School in Connecticut is the setting for the novel Because of Mr. Terupt.⟧ 그 책의 이야기는 코네티컷 주에 있는 스노우 힐 학교에서 벌어져요.
+[ 10.87s][user ] 코네티컷이 어디쯤에 있는 주인지 좀 알려줄 수 ⟨ret@13.23s⟩ 있어?
+[ 13.46s][moshi] ⟦⚡SPAN@13.47s: (tool result) Connecticut is a state in the New England region of the northeastern United States.⟧ 코네티컷 주는 미국 북동부 뉴잉글랜드 지역에 있는 주예요.
+      CALL: {"function": "map_search_places", "arguments": {"query": "Connecticut"}}
+[ 16.84s][user ] «backchannel» 응.
+[ 17.92s][user ] 아, 그렇구나. 혹시 그 학교 홈페이지 같은 거 찾아볼 수 ⟨ret@20.97s⟩ 있어?
+[ 21.12s][moshi] ⟦⚡SPAN@21.13s: (tool result) Snow Hill School is a public elementary school in Windsor, Connecticut; https://shs.windsorct.or⟧ 스노우 힐 학교 웹사이트를 찾았어요. 주소는 shs.windsorct.org 입니다.
+      CALL: {"function": "search", "arguments": {"query": "Snow Hill School Connecticut website"}}
+[ 28.10s][user ] 흠… 홈페이지 들어가 보니까, 학교에서 특별한 행사 같은 거 하는지 ⟨ret@32.24s⟩ 궁금하네.
+[ 32.64s][moshi] ⟦⚡SPAN@32.64s: (tool result) No events found at Snow Hill School in Windsor, Connecticut for the next month.⟧ 죄송해요. 스노우 힐 학교에서 다음 달에 특별한 행사는 없는 것 같아요.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Snow Hill School, Windsor, Connecticut"}}
+[ 34.61s][user ] «backchannel» 맞아.
+[ 36.66s][user ] «to_other» 어머, 세상에, 벌써 시간이 이렇게 됐네.
+[ 38.84s][user ] 아, 그래? 아쉽다. 그럼, 그 책 작가는 누구야?
+[ 42.16s][moshi] ⟨ret@42.00s⟩ ⟦⚡SPAN@42.16s: Rob Buyea is the author of Because of Mr. Terupt, published in 2010.⟧ '미스터 테러프트 때문에'의 작가는 롭 부예아 작가이고, 이천십년에 출판되었어요.
+[ 44.89s][user ] «backchannel» 와.
+[ 47.59s][user ] 이천십년이라고? 꽤 오래됐네. 혹시 그 책이 받은 상 같은 거 ⟨ret@51.76s⟩ 있어?
+[ 52.16s][moshi] ⟦⚡SPAN@52.16s: (tool result) Because of Mr. Terupt won the 2011 Rhode Island Children’s Book Award and was a nominee for seve⟧ '미스터 테러프트 때문에'는 이천십일년 로드아일랜드 아동 도서상을 받았고, 다른 여러 상에도 후보에 올랐다고 해요.
+      CALL: {"function": "search", "arguments": {"query": "awards Because of Mr. Terupt"}}
+[ 61.60s][user ] 오, 상도 받았구나. 잘 됐네. 그럼, 롭 부예아 작가 다른 책도 ⟨ret@66.91s⟩ 있어?
+[ 67.07s][moshi] ⟦⚡SPAN@67.07s: (tool result) Rob Buyea has written several other books, including "The Perfect Score" and "The Last Last Day ⟧ 롭 부예아 작가의 다른 책으로는 'The Perfect Score'와 'The Last Last Day of Summer'가 있어요.
+      CALL: {"function": "search", "arguments": {"query": "Rob Buyea books"}}
+[ 74.09s][user ] 아, 그렇구나. 알려줘서 고마워, 델리라.
+[ 76.70s][moshi] 천만에요. 여행 계획을 세우는 데 도움이 되었다니 기뻐요.

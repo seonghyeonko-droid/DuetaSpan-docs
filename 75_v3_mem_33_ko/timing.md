@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "유경",
+#     "name": "현민",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,52 +13,55 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-07",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-10-29",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-08-08",
+#       "date": "2026-06-05",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-05-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2025-06-15",
+#       "date": "2026-04-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-11-03",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-15",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-07",
+#       "date": "2026-03-20",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-16",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -68,81 +71,125 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 흐으으음… 좀 피곤하네요. 지금 몇 시예요? | S2 그쵸. 근데 요즘 글루텐 프리 식단 지키고 있잖아요. 스시 먹 | S3 일 점 이km… 가까운 편이네요. 예약해 줄 수 있어요? | S4 러스티! 아, 맞아요. 러스티. 너무 귀여워요.
+# EXAMINER(FDB-v2) 단계: S1 어, 안녕하세요. | S2 음… 호텔보다는 에어비앤비가 좋을 것 같아요. | S3 바이샤 지구는 어떤 곳이에요? | S4 네, 스트레스 해소에 좋더라고요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 유경님. 저는 디올로예요. 오늘 하루 어떻게 지내셨어요?
-     3.33s  user  발화 시작: 어.
-     3.92s  user  발화 끝
-     4.58s  agent 발화 끝
-     4.77s  user  발화 시작: 흐으으음… 좀 피곤하네요. 지금 몇 시예요?
-     8.20s  <ret> 발화 (turn3 첫 프레임)
-     8.28s  agent 발화 시작: <ret> 지금은 서울 시간으로 오후 세 시 십칠분이에요. 조금만 더 힘내세요.
-     8.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-     8.46s  user  발화 끝
-    10.24s  user  발화 시작: 그치.
-    10.83s  user  발화 끝
-    12.49s  agent 발화 끝
-    12.77s  user  발화 시작: 부산은 지금 몇 시예요?
-    14.02s  <ret> 발화 (turn6 첫 프레임)
-    14.25s  agent 발화 시작: <ret> 부산도 지금 오후 세 시 십칠분이에요. 시간 차이가 없죠.
-    14.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Busan rig
-    14.38s  user  발화 끝
-    18.18s  agent 발화 끝
-    18.23s  user  발화 시작: 저… 혹시 제가 좋아하는 음식이 뭐였죠? 기억 안 나네요.
-    21.78s  <ret> 발화 (turn8 첫 프레임)
-    22.02s  user  발화 끝
-    22.02s  agent 발화 시작: <ret> 유경님께서 가장 좋아하시는 음식은 스시였어요. 혹시 드시고 싶으세요?
-    22.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [2026-05-07] User's favorite cuisine is sushi.
-    26.32s  user  발화 시작: 아, 스시! 맞아요, 맞아요. 스시 진짜 좋아하죠.
-    26.41s  agent 발화 끝
-    29.44s  agent 발화 시작: 스시를 좋아하시는군요. 저도 스시를 좋아하는데, 신선한 해산물이 정말 좋잖아요.
-    29.46s  user  발화 끝
-    32.00s  user  발화 시작: 어.
-    32.64s  user  발화 끝
-    35.04s  agent 발화 끝
-    35.38s  user  발화 시작: 그쵸. 근데 요즘 글루텐 프리 식단 지키고 있잖아요. 스시 먹을 수 있을까요?
-    39.80s  <ret> 발화 (turn13 첫 프레임)
-    40.20s  agent 발화 시작: <ret> 네, 유경님께서는 글루텐 프리 식단을 지키시죠. 스시를 드실 때 간장 조심하셔야 할 거예요.
-    40.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.41s]: [2025-10-29] User is gluten-free.
-    40.37s  user  발화 끝
-    45.61s  agent 발화 끝
-    45.87s  user  발화 시작: 간장! 아 맞다. 간장에 밀가루 들어가 있잖아요.
-    49.29s  agent 발화 시작: 맞아요. 간장 대신 타마리 간장을 사용하시면 괜찮을 거예요.
-    49.38s  user  발화 끝
-    52.36s  user  발화 시작: 타마리 간장… 알아봐야겠네요. 혹시 근처에 글루텐 프리 스시집 있나요?
-    52.75s  agent 발화 끝
-    57.64s  <ret> 발화 (turn17 첫 프레임)
-    57.71s  agent 발화 시작: <ret> 네, 부산에 '글루텐 프리 스시 부산'이라는 식당이 있어요. 거리는 일 점 이km이고 평점은 사 
-    57.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) There is a restaurant named “Gluten-Free Sushi Busan” lo
-    57.73s  user  발화 끝
-    64.16s  agent 발화 끝
-    64.51s  user  발화 시작: 일 점 이km… 가까운 편이네요. 예약해 줄 수 있어요?
-    68.22s  <ret> 발화 (turn19 첫 프레임)
-    68.37s  agent 발화 시작: <ret> 네, 칠월 십일일 저녁 일곱시에 두 분으로 '글루텐 프리 스시 부산' 예약 완료되었어요. 확인 번
-    68.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Reservation confirmed for 2 people at Gluten-Free Sushi 
-    68.58s  user  발화 끝
-    77.04s  agent 발화 끝
-    77.31s  user  발화 시작: 와, 감사합니다! 저 완전 잊고 있었어요.
-    80.06s  agent 발화 시작: 천만에요. 유경님을 도와드릴 수 있어서 기뻐요.
-    80.13s  user  발화 끝
-    83.56s  user  발화 시작: 아, 그리고 혹시… 저희 강아지 이름이 뭐였죠? 갑자기 까먹었어요.
-    83.58s  agent 발화 끝
-    87.66s  <ret> 발화 (turn23 첫 프레임)
-    87.73s  agent 발화 시작: <ret> 유경님 강아지 이름은 러스티였어요. 귀여운 비글이죠.
-    87.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.33s]: [2025-08-08] User has a Beagle named Rusty.
-    87.95s  user  발화 끝
-    91.06s  agent 발화 끝
-    91.90s  user  발화 시작: 러스티! 아, 맞아요. 러스티. 너무 귀여워요.
-    95.28s  agent 발화 시작: 러스티는 정말 사랑스러운 이름이네요. 강아지와 함께 행복한 시간 보내세요.
-    95.41s  user  발화 끝
-    99.63s  agent 발화 끝
-    99.64s  user  발화 시작: 네, 감사합니다. 러스티 산책시키러 가야겠어요.
-   102.95s  agent 발화 시작: 러스티와 즐거운 산책 되세요. 날씨도 좋으니 러스티가 좋아할 거예요.
-   103.15s  user  발화 끝
-   104.24s  user  발화 시작: 응.
-   104.82s  user  발화 끝
-   107.15s  agent 발화 끝
-   107.28s  user  발화 시작: 디올로, 정말 고마워요. 덕분에 기억도 나고, 저녁 약속도 잡고.
-   112.32s  agent 발화 시작: 천만에요, 유경님. 언제든지 편하게 말씀해주세요. 제가 항상 곁에 있답니다.
-   112.37s  user  발화 끝
-   117.23s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 현민님. 저는 재정 관리와 예산 계획을 도와드리는 니오입니다.
+     2.38s  user  발화 시작: 어.
+     2.92s  user  발화 끝
+     4.54s  agent 발화 끝
+     4.67s  user  발화 시작: 어, 안녕하세요.
+     5.91s  <ret> 발화 (turn3 첫 프레임)
+     5.99s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다.
+     5.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     6.10s  user  발화 끝
+     7.91s  user  발화 시작: 오.
+     8.64s  user  발화 끝
+    10.16s  agent 발화 끝
+    10.34s  user  발화 시작: 고마워요.
+    10.98s  <ret> 발화 (turn6 첫 프레임)
+    11.16s  user  발화 끝
+    11.21s  agent 발화 시작: <ret> 부산의 오늘 날씨는 이십팔 점 이도, 습도 육십팔%, 바람은 시속 칠 점 이킬로미터이고, 해는 일
+    11.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) The weather in Busan is 28.2°C, humidity 68%, wind 7.2 k
+    18.29s  agent 발화 끝
+    18.34s  user  발화 시작: 아, 그렇군요.
+    19.43s  agent 발화 시작: 혹시 최근에 계획하신 여행에 대해 이야기해 볼까요?
+    19.44s  user  발화 끝
+    22.18s  user  발화 시작: 리스본 여행 계획하고 있는데…
+    22.29s  agent 발화 끝
+    24.26s  <ret> 발화 (turn10 첫 프레임)
+    24.41s  agent 발화 시작: <ret> 팔월에 리스본 여행을 계획하고 계시는군요.
+    24.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.98s]: [2026-05-12] User is planning a trip to Lisbon in August.
+    24.53s  user  발화 끝
+    26.39s  agent 발화 끝
+    26.45s  agent 발화 시작: 오월 십이일에 기록하신 대로, 팔월에 리스본 여행을 계획하고 계시는군요.
+    31.26s  agent 발화 끝
+    31.52s  user  발화 시작: 네, 맞아요. 숙소 예약은 아직 못 했어요.
+    34.02s  agent 발화 시작: 아직 숙소 예약을 못 하셨군요. 어떤 종류의 숙소를 선호하시나요?
+    34.10s  user  발화 끝
+    37.87s  agent 발화 끝
+    38.15s  user  발화 시작: 음… 호텔보다는 에어비앤비가 좋을 것 같아요.
+    41.64s  agent 발화 시작: 에어비앤비를 선호하시는군요. 리스본에서 어떤 지역을 고려하고 계신가요?
+    41.71s  user  발화 끝
+    43.43s  user  발화 시작: 응.
+    43.75s  user  발화 끝
+    46.27s  agent 발화 끝
+    46.81s  user  발화 시작: 글쎄요… 아직 잘 모르겠어요.
+    49.22s  agent 발화 시작: 리스본의 어떤 지역이 좋을지 알아봐 드릴까요?
+    49.25s  user  발화 끝
+    51.62s  agent 발화 끝
+    51.72s  user  발화 시작: 네, 부탁드려요.
+    52.66s  <ret> 발화 (turn20 첫 프레임)
+    52.73s  agent 발화 시작: <ret> 리스본에는 제로니무스 수도원, 벨렘 탑, 알파마 지구 같은 볼거리가 많습니다. 숙박비는 보통 밤에
+    52.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) Lisbon offers attractions like Jerónimos Monastery, Belé
+    52.95s  user  발화 끝
+    59.00s  user  발화 시작: 응.
+    59.63s  user  발화 끝
+    62.05s  user  발화 시작: 아, 알파마 지구는 유명하죠.
+    62.09s  agent 발화 끝
+    64.16s  agent 발화 시작: 알파마 지구는 정말 유명하죠. 그곳은 역사적인 분위기가 아주 매력적입니다—
+    64.32s  user  발화 끝
+    67.64s  user  발화 시작: …근데 숙소는 주로 어디에 있는 편인가요?
+    68.33s  agent 발화 끝
+    69.97s  <ret> 발화 (turn25 첫 프레임)
+    70.23s  user  발화 끝
+    70.29s  agent 발화 시작: <ret> 알파마 지구 외에 다른 지역도 고려해 보세요. 리스본의 바이샤와 시아두 지구에 에어비앤비 매물이 
+    70.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: (tool result) Airbnb listings in Lisbon’s Baixa and Chiado districts o
+    79.28s  agent 발화 끝
+    79.76s  user  발화 시작: 바이샤 지구는 어떤 곳이에요?
+    81.52s  agent 발화 시작: 바이샤 지구는 리스본의 중심부에 위치하고 있어 편리합니다.
+    81.70s  user  발화 끝
+    82.75s  user  발화 시작: 응.
+    83.15s  user  발화 끝
+    85.08s  agent 발화 끝
+    85.16s  user  발화 시작: 아, 그렇군요.
+    86.23s  <ret> 발화 (turn30 첫 프레임)
+    86.31s  agent 발화 시작: <ret> 혹시 최근에 고양이 벨라가 잘 지내고 있는지 궁금하시군요?
+    86.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: [2026-06-05] User has a Siamese cat named Bella.
+    86.44s  user  발화 끝
+    90.44s  agent 발화 끝
+    90.52s  agent 발화 시작: 유월 오일에 기록하신 대로, 벨라가 잘 지내고 있는지 궁금하시군요.
+    91.90s  user  발화 시작: 그치.
+    92.44s  user  발화 끝
+    94.83s  agent 발화 끝
+    94.99s  user  발화 시작: 네, 벨라는 아주 잘 지내요.
+    97.08s  agent 발화 시작: 다행이네요. 벨라가 건강하게 잘 지내는 모습이 보기 좋습니다.
+    97.11s  user  발화 끝
+   100.63s  agent 발화 끝
+   102.77s  user  발화 시작: 고마워요.
+   103.53s  agent 발화 시작: 천만에요. 혹시 최근에 관심 있는 분야가 있으신가요?
+   103.59s  user  발화 끝
+   105.06s  user  발화 시작: 그래.
+   105.75s  user  발화 끝
+   106.58s  agent 발화 끝
+   108.13s  user  발화 시작: 요즘 암벽 등반에 관심이 많아요.
+   110.15s  <ret> 발화 (turn39 첫 프레임)
+   110.39s  agent 발화 시작: <ret> 암벽 등반에 관심이 많으시군요.
+   110.39s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.75s]: [2025-09-11] User is into rock climbing.
+   110.58s  user  발화 끝
+   112.14s  agent 발화 시작: 구월 십일일에 기록하신 대로, 암벽 등반에 관심이 많으신가요.
+   112.14s  agent 발화 끝
+   113.59s  user  발화 시작: 대박.
+   114.18s  user  발화 끝
+   116.30s  agent 발화 끝
+   116.32s  user  발화 시작: 네, 스트레스 해소에 좋더라고요.
+   118.47s  agent 발화 시작: 스트레스 해소에 도움이 된다니 정말 좋은 취미네요.
+   118.57s  user  발화 끝
+   120.33s  user  발화 시작: 응.
+   120.77s  user  발화 끝
+   121.19s  agent 발화 끝
+   121.67s  user  발화 시작: 맞아요.
+   122.31s  user  발화 끝
+   122.55s  agent 발화 시작: 혹시 재정 관리에 도움이 될 만한 팁을 원하시나요?
+   125.04s  agent 발화 끝
+   125.84s  user  발화 시작: 음… 예산 관리가 좀 어려워요.
+   128.25s  user  발화 끝
+   128.66s  agent 발화 시작: 예산 관리가 어렵다고 느끼시는군요. 제가 도와드릴 수 있습니다.
+   132.55s  agent 발화 끝
+   132.64s  user  발화 시작: 네, 부탁드려요.
+   134.09s  agent 발화 시작: 우선, 지출 내역을 꼼꼼히 기록하는 것이 중요합니다.
+   134.25s  user  발화 끝
+   137.27s  agent 발화 끝
+   137.44s  user  발화 시작: 네, 알겠습니다.
+   138.67s  agent 발화 시작: 좋은 하루 보내세요, 현민님.
+   138.77s  user  발화 끝
+   140.09s  agent 발화 끝

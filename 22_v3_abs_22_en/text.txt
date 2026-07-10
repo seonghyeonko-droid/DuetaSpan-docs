@@ -1,88 +1,92 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Frunax, a warm and attentive supportive advisor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Ariona, a encouraging and non-judgmental supportive advisor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "William",
+    "name": "Victor",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "early 20s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2026-04-28",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-04-21",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-06-26",
+      "date": "2026-04-29",
       "category": "home",
-      "text": "User's home address is 329 Maple Drive."
+      "text": "User's home address is 336 Birch Road."
+    },
+    {
+      "date": "2026-04-20",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-03-14",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-08-04",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-07-22",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-26",
+      "date": "2026-04-12",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-04-11",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-04-24",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-13",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.47s⟩ hate?
-[  2.62s][moshi] ⟦⚡SPAN@2.63s: (no information found)⟧ But unfortunately, there isn't a clear consensus on exactly which governmental mode anarchists universally oppose.
-[  9.61s][user ] Hmm, well, what about their core beliefs then?
-[ 13.03s][moshi] Anarchists fundamentally oppose all forms of hierarchical rule and coercive control—they advocate for self-governance and voluntary association.
-[ 19.28s][user ] «backchannel» Yeah.
-[ 22.90s][moshi] It can be, certainly! It’s a philosophy with many different interpretations and approaches, but that’s the central tenet.
-[ 29.58s][user ] Is there a historical figure most associated with anarchism?
-[ 33.57s][moshi] ⟨ret@33.50s⟩ ⟦⚡SPAN@33.58s: Pierre-Joseph Proudhon was a French socialist, political philosopher, and mutualist who is widely regarded as ⟧ Pierre-Joseph Proudhon is often considered the father of anarchism—he was a French socialist and political philosopher. He really laid the groundwork for a lot of the thinking in that area.
-[ 44.49s][user ] Oh, Proudhon.
-[ 45.55s][moshi] «interrupted» He advocated for a society based on voluntary association and mutual exchange—
-[ 50.56s][user ] «interrupts_prev» …did he ever actually *try* to build one, or was it ⟨ret@54.00s⟩ just theory?
-[ 54.39s][moshi] ⟦⚡SPAN@54.40s: The People's Bank, founded by Pierre-Joseph Proudhon in 1849, aimed to provide interest-free credit based on t⟧ That’s a good point to ask! Proudhon did attempt to establish a People's Bank based on mutual credit principles in 1849, though it ultimately faced challenges and was short-lived.
-[ 66.33s][moshi] The People’s Bank, which he founded in 1849, aimed to provide interest-free credit— but it unfortunately didn’t last very long due to financial issues.
-[ 75.80s][user ] So, a bit of a practical failure, then. What about more modern anarchists?
-[ 80.30s][moshi] Modern anarchists continue to explore diverse strategies, from direct action and community organizing to mutual aid networks and alternative institutions.
-[ 91.94s][user ] Mutual aid—that sounds like something I’ve heard about lately.
-[ 95.93s][moshi] It’s become more prominent recently, yes. It’s a voluntary reciprocal exchange of resources and services for mutual benefit, often outside of traditional governmental systems.
-[105.92s][user ] I see. Well, thank you, Frunax, that was very helpful.
-[109.46s][moshi] You’re most welcome. I'm glad I could shed some light on this complex topic—planning to understand different ideologies is often a good first step.
+[  0.00s][user ] What three powers usually found in government are held by the Pope and College of ⟨ret@5.18s⟩ Cardinals?
+[  5.33s][moshi] ⟦⚡SPAN@5.34s: (no information found)⟧ But unfortunately, there’s no readily available information on exactly three powers held by the Pope and College of Cardinals that directly mirror governmental powers.
+[ 16.06s][user ] Hmm, that's disappointing. Is there anything about the historical power they *did* ⟨ret@21.11s⟩ wield?
+[ 21.34s][moshi] ⟦⚡SPAN@21.35s: The Pope historically held significant temporal power, including the right to crown emperors, declare war, and⟧ Historically, the Pope held quite a bit of power—the right to crown emperors, declare war, and even levy taxes, especially during the medieval period.
+[ 25.47s][user ] «backchannel» Uh-huh.
+[ 31.21s][moshi] It's fascinating how much influence the papacy once had, isn't it? It’s a complex history, and a lot of it is tied to land ownership and political alliances.
+[ 40.01s][user ] What about the College of Cardinals? What was *their* role in all of this?
+[ 44.62s][moshi] ⟨ret@44.31s⟩ ⟦⚡SPAN@44.63s: The College of Cardinals historically advised the Pope on matters of faith and governance and, most importantl⟧ The College of Cardinals primarily advised the Pope, and their most important role was electing new ones—giving them a lot of influence over policy.
+[ 50.25s][user ] «backchannel» Oh.
+[ 53.91s][user ] So, it was more about selecting the leader than direct rule?
+[ 58.12s][moshi] Exactly. They weren’t directly ruling, but choosing the Pope meant shaping the direction of the Church and its political involvement. It's a powerful position, even without a crown.
+[ 69.71s][user ] What was the biggest dispute they ever had with a secular ⟨ret@73.03s⟩ ruler?
+[ 73.17s][moshi] «interrupted» ⟦⚡SPAN@73.19s: Pope Gregory VII and Holy Roman Emperor Henry IV engaged in a major dispute known as the Investiture Controver⟧ One of the biggest disputes was between Pope Gregory VII and Emperor Henry IV—it was over who appointed church officials, and it really challenged both their powers—
+[ 83.10s][user ] «interrupts_prev» …Was that about land, too?
+[ 85.01s][moshi] Yes, absolutely. The Investiture Controversy was deeply rooted in land ownership and control. The right to appoint bishops meant control over valuable land and resources. It’s a classic example of the intersection of spiritual and political power.
+[ 92.46s][user ] «backchannel» Mhm.
+[101.70s][user ] That sounds messy. Did it ever come to a ⟨ret@104.64s⟩ battle?
+[104.88s][moshi] ⟦⚡SPAN@104.88s: The Investiture Controversy involved military conflicts, including sieges and battles, as both Pope Gregory VI⟧ It absolutely did come to battle—there were sieges and conflicts as both sides tried to assert control over territories and appointments.
+[113.01s][user ] What kind of impact did that have on the power of the church long-term?
+[117.11s][moshi] That conflict ultimately weakened the authority of the Holy Roman Emperor and strengthened the independence of the papacy, solidifying its role as a major political and spiritual force in Europe. It was a pivotal moment.
+[121.65s][user ] «backchannel» Yeah.
+[132.62s][user ] That’s good to know. I'm trying to understand how power shifts like that happen.
+[137.33s][moshi] Understanding those shifts is key to understanding history, and how institutions evolve. It’s often about maneuvering, compromise, and sometimes, unfortunately, conflict.
+[142.75s][user ] «backchannel» Mm-hmm.
+[150.72s][user ] It sounds exhausting. Thanks for explaining all of this, Ariona.
+[154.57s][moshi] You're very welcome. It's a fascinating topic, and I'm glad I could help shed some light on it.

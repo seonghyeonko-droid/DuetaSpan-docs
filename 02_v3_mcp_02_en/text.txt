@@ -1,64 +1,56 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Lir, a encouraging and non-judgmental counselor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Ethan",
+    "name": "Julian",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
+    "nationality": "British",
     "gender": "male",
-    "age_range": "early 30s",
-    "language": "German"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-02-24",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-06-26",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
       "date": "2025-12-24",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-11-11",
+      "date": "2025-12-19",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-10-13",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-08-21",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-15",
+      "date": "2025-06-15",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
-    },
-    {
-      "date": "2025-07-31",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User is planning a trip to Vietnam in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-19",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-05-11",
+      "date": "2025-08-04",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -69,38 +61,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.20s⟩ com.
-[  4.44s][moshi] ⟦⚡SPAN@4.44s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h, condition: partly cloudy.⟧ It is currently 23.0 degrees Celsius and partly cloudy.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "weather.example.com"}}
-[  6.11s][user ] «backchannel» Yeah.
-[ 10.31s][user ] Hmm, that’s good to know. Do you think I should take an umbrella?
-[ 14.82s][moshi] Considering the humidity and partly cloudy conditions, an umbrella might be a good idea.
-[ 17.20s][user ] «backchannel» Yeah, yeah.
-[ 20.45s][user ] Okay, yeah, probably. What about flights to Seoul?
-[ 24.33s][moshi] To help me find flights, could you tell me your desired travel dates?
-[ 26.36s][user ] «backchannel» Yeah.
-[ 28.59s][user ] Uhhh, let's say… July fifteenth to July ⟨ret@32.66s⟩ twenty-second.
-[ 33.06s][moshi] ⟦⚡SPAN@33.06s: (tool result) Korean Air flight KE085 departs July 15th at 10:00 AM, arriving July 16th at 2:30 PM; price is $⟧ Korean Air flight KE085 departs on July fifteenth at ten AM, arriving in Seoul the next day.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"destination": "Seoul", "departure_date": "2026-07-15", "return_date": "2026-07-22"}}
-[ 38.39s][user ] «backchannel» Yeah.
-[ 40.89s][moshi] The flight costs twelve hundred dollars. It’s a direct flight, which is usually preferable.
-[ 47.48s][user ] That sounds… pretty good, actually. Book that one for me, ⟨ret@51.61s⟩ please.
-[ 51.93s][moshi] ⟦⚡SPAN@51.93s: (tool result) Booking confirmed: KE085, July 15th, 10:00 AM - July 16th, 2:30 PM; KE086, July 22nd, 4:00 PM - ⟧ The flight is booked! Your confirmation ID is ZX987Y.
-      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"destination": "Seoul", "departure_date": "2026-07-15", "return_date": "2026-07-22"}}
-[ 54.56s][user ] «backchannel» Right.
-[ 58.39s][user ] Perfect. Now, can you find me a good Italian restaurant near my hotel?
-[ 63.08s][moshi] ⟨ret@63.00s⟩ ⟦⚡SPAN@63.08s: (tool result) Bella Italia is 0.8 km away, rated 4.5 stars; Trattoria Roma is 1.2 km away, rated 4.2 stars.⟧ Bella Italia is point eight kilometers away and has a four-and-a-half-star rating.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "my hotel"}}
-[ 65.27s][user ] «backchannel» Yeah.
-[ 68.56s][user ] Hmm, Bella Italia sounds nice. Can you make a reservation there for, say, seven PM tonight?
-[ 75.07s][moshi] ⟨ret@74.91s⟩ ⟦⚡SPAN@75.07s: (tool result) Reservation confirmed at Bella Italia for 7:00 PM tonight, party of one. Confirmation number is ⟧ Your reservation at Bella Italia is confirmed for seven PM tonight, under confirmation RT5432.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "19:00"}}
-[ 79.27s][user ] «backchannel» Yeah.
-[ 83.79s][user ] Excellent. That’s everything for now, I think.
-[ 86.83s][moshi] Wonderful. It’s good to have those details settled and organized.
-[ 88.90s][user ] «backchannel» Right.
-[ 91.89s][user ] Actually, one more thing… what's the stock price for Tesla?
-[ 95.97s][moshi] ⟨ret@95.90s⟩ ⟦⚡SPAN@95.98s: (tool result) Tesla (TSLA) is trading at $255.42, up $3.15 today.⟧ Tesla, ticker TSLA, is currently trading at two hundred fifty-five dollars and forty-two cents.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"stock": "Tesla"}}
-[102.09s][user ] Okay, good. Thanks a lot, Driaus.
-[104.04s][moshi] You’re very welcome. Enjoy your trip and your dinner, and I’m glad I could help.
+[  0.00s][user ] Start a web crawl on CNN, with a depth of one and a limit of eighteen ⟨ret@5.79s⟩ links.
+[  6.03s][moshi] «interrupted» ⟦⚡SPAN@6.03s: (tool result) Crawl initiated on CNN. 18 links found at depth 1. Crawl completed successfully.⟧ I’ve started a crawl on CNN, finding eighteen links at a depth of one—
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "CNN", "depth": "1", "max_links": "18"}}
+[ 10.45s][user ] «interrupts_prev» …are any of those links about the upcoming ⟨ret@12.89s⟩ election?
+[ 13.20s][moshi] ⟦⚡SPAN@13.21s: (tool result) CNN is extensively covering the upcoming presidential election, with articles on candidate profi⟧ CNN is covering the election extensively, with articles on candidates and debates—
+      CALL: {"function": "tavily-search", "arguments": {"query": "CNN election coverage"}}
+[ 15.51s][user ] «backchannel» Uh-huh.
+[ 18.61s][moshi] It's helpful to stay informed, especially during important events like an election.
+[ 23.56s][user ] Can you find me articles specifically about the economic policies of the candidates?
+[ 28.35s][moshi] «interrupted» ⟨ret@28.20s⟩ ⟦⚡SPAN@28.36s: (tool result) CNN reports on candidate economic plans: Biden focuses on middle-class tax cuts, while Trump emp⟧ CNN reports Biden focuses on tax cuts for the middle class—
+      CALL: {"function": "tavily-search", "arguments": {"query": "CNN economic policies presidential candidates"}}
+[ 31.80s][user ] «interrupts_prev» And what about Trump's plans for trade deals?
+[ 34.80s][moshi] «interrupted» ⟨ret@34.72s⟩ ⟦⚡SPAN@34.80s: Trump plans to renegotiate existing trade deals, impose new tariffs on imports, and prioritize domestic manufa⟧ Trump plans to renegotiate trade deals and prioritize domestic manufacturing—
+[ 39.24s][user ] «interrupts_prev» Okay, that’s helpful. Can you search for articles about the impact of these policies on small ⟨ret@45.52s⟩ businesses?
+[ 45.83s][moshi] «interrupted» ⟦⚡SPAN@45.84s: (tool result) CNN analysis suggests Biden’s policies could benefit small businesses through increased consumer⟧ CNN’s analysis suggests Biden's policies could boost consumer spending—
+      CALL: {"function": "tavily-search", "arguments": {"query": "CNN impact of presidential economic policies on small businesses"}}
+[ 50.02s][user ] «interrupts_prev» That’s quite a contrast. Let's move on. What's the weather in Seoul right ⟨ret@54.52s⟩ now?
+[ 54.92s][moshi] «interrupted» ⟦⚡SPAN@54.92s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It is 23.0 degrees Celsius in Seoul, with 74% humidity—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 59.59s][user ] «interrupts_prev» Thanks, that sounds pleasant enough. I think I have a good grasp on things now.
+[ 64.35s][moshi] It's wonderful you feel more prepared. Remember, informed decisions are empowering.

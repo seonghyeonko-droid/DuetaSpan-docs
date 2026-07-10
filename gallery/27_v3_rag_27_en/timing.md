@@ -4,89 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Kim",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
+#       "date": "2025-12-26",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "home",
-#       "text": "User's home address is 411 Maple Drive."
-#     },
-#     {
-#       "date": "2025-09-15",
+#       "date": "2025-12-21",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2025-11-08",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "category": "home",
+#       "text": "User's home address is 271 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-26",
-#       "title": "Researching a used car",
+#       "date": "2026-06-08",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know… | S2 …is he still making music these da | S3 Oh, that's good to hear! What kind | S4 I think I've heard of that style. 
+# EXAMINER(FDB-v2) 단계: S1 Hi Thina, I’m moving to the city a | S2 Great! I was wondering, which plan | S3 …Is it common in gardens, or more  | S4 That sounds lovely. Thanks for the
 
-     0.00s  user  발화 시작: Do you know…
-     0.78s  user  발화 끝
-     2.86s  user  발화 시작: …when Lux Aurunque was born?
-     4.65s  <ret> 발화 (turn2 첫 프레임)
-     4.87s  agent 발화 시작: <ret> Lux Aurunque was born in Rome in nineteen seventy—
-     4.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: Lux Aurunque was born in Rome in 1970, and is known for his work in ex
-     5.08s  user  발화 끝
-     8.18s  user  발화 시작: …is he still making music these days?
-     8.85s  agent 발화 끝
-    10.31s  <ret> 발화 (turn4 첫 프레임)
-    10.63s  agent 발화 시작: <ret> …and continues to perform live, having released his la
-    10.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: Lux Aurunque released his latest album, *The Echoing Void*, in 2023 an
-    10.76s  user  발화 끝
-    15.22s  user  발화 시작: Yeah, yeah.
-    16.46s  user  발화 끝
-    18.97s  agent 발화 끝
-    19.34s  user  발화 시작: Oh, that's good to hear! What kind of music does he make?
-    22.33s  agent 발화 시작: He’s really known for experimental music, often blending ele
-    22.44s  user  발화 끝
-    27.42s  user  발화 시작: Uh-huh.
-    27.91s  user  발화 끝
-    30.95s  agent 발화 끝
-    32.30s  user  발화 시작: I think I've heard of that style. Is there anywhere I can li
-    36.51s  <ret> 발화 (turn10 첫 프레임)
-    36.74s  user  발화 끝
-    36.75s  agent 발화 시작: <ret> You can find his music on streaming platforms like Spo
-    36.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.39s]: Lux Aurunque's music is available on major streaming platforms such as
-    43.15s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Thina, I’m moving to the city and trying to learn about l
+     4.21s  user  발화 끝
+     4.28s  agent 발화 시작: Welcome! Settling in is exciting. I can definitely help with
+     7.42s  user  발화 시작: Yeah.
+     7.77s  user  발화 끝
+     9.69s  agent 발화 끝
+     9.78s  user  발화 시작: Great! I was wondering, which plant—Buddleja or Burchardia—i
+    16.52s  <ret> 발화 (turn4 첫 프레임)
+    16.92s  agent 발화 시작: <ret> Burchardia is a genus named after Johann Burchard, a G
+    16.92s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.70s]: Burchardia is a genus of perennial herbaceous flowering plants native 
+    17.05s  user  발화 끝
+    21.91s  user  발화 시작: …Is it common in gardens, or more of a wild plant?
+    22.62s  agent 발화 끝
+    24.98s  agent 발화 시작: It’s primarily found in the wild, though some gardeners cult
+    25.20s  user  발화 끝
+    31.03s  user  발화 시작: Yeah.
+    31.52s  user  발화 끝
+    33.03s  agent 발화 시작: It’s a beautiful, delicate plant—often spotted in forests an
+    33.18s  agent 발화 끝
+    39.41s  user  발화 시작: Yeah.
+    39.86s  user  발화 끝
+    42.45s  agent 발화 끝
+    43.99s  user  발화 시작: That sounds lovely. Thanks for the info, Thina!
+    46.67s  user  발화 끝
+    46.90s  agent 발화 시작: You’re very welcome! I’m glad I could help.
+    49.48s  agent 발화 끝

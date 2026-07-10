@@ -4,69 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Ada",
+#     "name": "Kim",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-20",
-#       "category": "home",
-#       "text": "User's home address is 209 Cedar Lane."
+#       "date": "2026-05-05",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-12-29",
+#       "date": "2026-03-27",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-13",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-09-09",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-07-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2025-08-28",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-30",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-25",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-10",
+#       "date": "2026-03-02",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -76,29 +50,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Where does the name du Plessis com | S2 Oh, interesting. Was there a famou | S3 Hmm, eighteenth century… that’s a  | S4 I see. Could you search for a cont
 
-     0.00s  user  발화 시작: Where does the name du Plessis come from?
-     2.59s  <ret> 발화 (turn1 첫 프레임)
-     2.60s  agent 발화 시작: <ret> The term comes from places in France called Plessis — 
-     2.67s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.75s]: The surname du Plessis is of French origin, meaning "of the Plessis," 
-     2.73s  user  발화 끝
-     8.35s  user  발화 시작: Mhm.
-     9.08s  user  발화 끝
-    10.33s  user  발화 시작: Oh, interesting. Was there a famous du Plessis?
-    10.35s  agent 발화 끝
-    13.75s  <ret> 발화 (turn4 첫 프레임)
-    14.14s  agent 발화 시작: <ret> There was François du Plessis, a French soldier who fo
-    14.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: Huguenot soldier François du Plessis, Marquis de Dorval, was a French 
-    14.17s  user  발화 끝
-    22.15s  agent 발화 끝
-    22.46s  user  발화 시작: Hmm, eighteenth century… that’s a while ago. What about more
-    27.67s  agent 발화 시작: Welll… it's difficult to pinpoint a single, universally famo
-    27.72s  user  발화 끝
-    35.60s  user  발화 시작: I see. Could you search for a contemporary du Plessis who's 
-    35.73s  agent 발화 끝
-    40.34s  <ret> 발화 (turn8 첫 프레임)
-    40.47s  agent 발화 시작: <ret> I found Damian de Allende du Plessis, a South African 
-    40.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) South African rugby player Damian de Allende, whose full
-    40.74s  user  발화 끝
-    48.12s  agent 발화 끝
+     0.00s  user  발화 시작: When does the next episode of The Handmaid's Tale air?
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.69s  agent 발화 시작: <ret> The eleventh episode aired on April twenty-fifth, two 
+     3.70s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.05s]: The eleventh episode of The Handmaid's Tale aired on April 25, 2018.
+     3.70s  user  발화 끝
+     7.07s  user  발화 시작: Yeah.
+     7.71s  user  발화 끝
+     8.72s  user  발화 시작: Oh, that was a while ago… um, what about the current season?
+     8.74s  agent 발화 끝
+    13.21s  user  발화 끝
+    13.32s  agent 발화 시작: It's understandable to feel a bit disconnected from past air
+    17.28s  user  발화 시작: Yeah.
+    17.92s  user  발화 끝
+    19.51s  user  발화 시작: Is there a way to find out when the newest episodes are rele
+    19.57s  agent 발화 끝
+    23.20s  <ret> 발화 (turn7 첫 프레임)
+    23.42s  agent 발화 시작: <ret> New episodes are airing weekly on Wednesdays, starting
+    23.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Season 6 of The Handmaid's Tale premiered on April 3, 20
+    23.63s  user  발화 끝
+    33.16s  agent 발화 끝

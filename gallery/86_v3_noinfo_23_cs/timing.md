@@ -4,165 +4,191 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Nina",
+#     "name": "Lukas",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
+#       "date": "2026-05-24",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-05-01",
+#       "category": "home",
+#       "text": "User's home address is 904 Birch Road."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-12",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-06-17",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-06-15",
-#       "category": "diet",
-#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-25",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-31",
+#       "date": "2026-02-02",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안야 샤르마 연락처 알아? 연락처 좀 알려줘. | S2 새로운 직장을 찾아볼까 고민 중이야. | S3 좋아! | S4 아, 그렇지. 됐어.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 사라 밀러 씨를 아시나요? 옛 친구랑 다시 연락하 | S2 맞아요. 거의 15년 동안 연락이 없었어요. | S3 정말 그래요! 그냥… 전화해 볼까요? | S4 그녀의 직업은요? 그녀는 선생님이었어요.
 
-     0.00s  user  발화 시작: 안야 샤르마 연락처 알아? 연락처 좀 알려줘.
-     3.21s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  user  발화 끝
-     3.37s  agent 발화 시작: <ret> 죄송해요, 안야 샤르마 씨의 연락처는 찾을 수 없었어요. 공개적으로 이용 가능한 정보가 아닌 것 
-     3.37s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.21s]: (tool result)
-     9.57s  agent 발화 끝
-     9.80s  user  발화 시작: 음, 알았어. 그럼 "번아웃"이라는 용어의 유래는 뭐야?
-    13.08s  <ret> 발화 (turn3 첫 프레임)
-    13.48s  agent 발화 시작: <ret> 그 용어는 천구백칠십사 년대 연구에서 유래했는데, 특히 1974년에 허버트 프라이든버거가 도움직업
-    13.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: Burnout was first described in 1974 by Herbert Freudenberger, who used
-    13.60s  user  발화 끝
-    20.28s  user  발화 시작: 와.
-    20.87s  user  발화 끝
-    24.61s  agent 발화 끝
-    24.69s  user  발화 시작: 요즘 좀 지쳐, 솔직히.
-    26.49s  agent 발화 시작: 힘드시겠네요. 일이 많으면 그렇게 느끼는 게 흔하고, 그런 감정을 인정하는 게 중요해요.
-    26.67s  user  발화 끝
-    28.73s  user  발화 시작: 음.
-    29.22s  user  발화 끝
-    32.37s  agent 발화 끝
-    32.51s  user  발화 시작: 나도 혹시 번아웃이 오고 있는 건가 싶어. 지금 서울 날씨 어때?
-    36.71s  <ret> 발화 (turn9 첫 프레임)
-    36.81s  user  발화 끝
-    36.95s  agent 발화 시작: <ret> 현재 서울은 23.0도이고, 습도는 74%, 풍속은 시속 5.5킬로미터예요.
-    36.95s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.71s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    38.98s  user  발화 시작: 응.
-    39.47s  user  발화 끝
-    43.67s  agent 발화 끝
-    44.12s  user  발화 시작: 알겠어, 좋은 정보네.
-    45.61s  agent 발화 시작: 날씨를 알면 정신적으로라도 하루를 계획하는 데 도움이 될 거예요. 작은 일이지만, 변화를 줄 수 있어요.
-    45.73s  user  발화 끝
-    52.15s  agent 발화 끝
-    52.51s  user  발화 시작: 새로운 직장을 찾아볼까 고민 중이야.
-    54.90s  agent 발화 시작: 큰 결정이지만, 탐색해 볼 만한 아주 타당한 생각이에요! 무슨 이유로 변화를 고려하고 계세요?
-    54.95s  user  발화 끝
-    60.70s  agent 발화 끝
-    60.84s  user  발화 시작: 음, 지금 하는 일은 그냥… 답답해. 성장할 기회가 없어.
-    65.56s  user  발화 끝
-    65.80s  agent 발화 시작: 정말 답답하시겠어요. 막힌 기분은 스트레스의 주요 원인이고, 해결하는 게 현명해요.
-    71.63s  agent 발화 끝
-    73.49s  user  발화 시작: 맞아. 근처에 커리어 코칭 서비스가 있어?
-    76.27s  <ret> 발화 (turn18 첫 프레임)
-    76.40s  user  발화 끝
-    76.51s  agent 발화 시작: <ret> 근처에 몇 군데 있어요. 브레이 웰니스는 1.2킬로미터, 브라이트 퓨처스 코칭은 3.5킬로미터, 
-    76.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) Brae Wellness - 1.2 km, Bright Futures Coaching - 3.5 km
-    86.15s  agent 발화 끝
-    86.23s  user  발화 시작: 음, 브레이 웰니스가 괜찮아 보이네.
-    88.81s  user  발화 끝
-    89.02s  agent 발화 시작: 정말 그래요! 그곳은 사람들이 커리어 전환을 헤쳐나갈 수 있도록 돕는 것을 전문으로 해요.
-    94.16s  agent 발화 끝
-    95.78s  user  발화 시작: 다음 화요일에 브레이 웰니스에 예약을 해줘.
-    98.61s  user  발화 끝
-    98.65s  <ret> 발화 (turn22 첫 프레임)
-    98.97s  agent 발화 시작: <ret> 예약 완료됐어요! 다음 화요일 오전 10시에 브레이 웰니스 예약이 완료됐습니다. 확인 ID는 BW
-    98.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Appointment confirmed for Tuesday, July 14, 2026 at 10:0
-   107.22s  agent 발화 끝
-   107.46s  user  발화 시작: 좋아!
-   108.09s  user  발화 끝
-   108.11s  agent 발화 시작: 그렇게 행동하는 건 정말 긍정적인 움직임이에요. 자신의 안녕에 대해 적극적으로 대처하는 건 좋은 일이에요.
-   114.54s  agent 발화 끝
-   115.77s  user  발화 시작: 일이 너무 많아서 정신이 없어.
-   117.91s  agent 발화 시작: 완전히 이해가 돼요. 지금 많은 일을 처리하고 계신 것 같아요.
-   118.03s  user  발화 끝
-   121.15s  agent 발화 끝
-   121.62s  user  발화 시작: 그래, 일이 엄청 많아. 테슬라 주식 가격은 얼마야?
-   125.11s  <ret> 발화 (turn28 첫 프레임)
-   125.27s  agent 발화 시작: <ret> 테슬라—TSLA—는 현재 255.42달러에 거래되고 있고, 오늘 3.15달러 하락했어요.
-   125.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Tesla (TSLA) is trading at $255.42, down $3.15 today.
-   125.46s  user  발화 끝
-   131.68s  user  발화 시작: 알았어, 고마워.
-   131.99s  agent 발화 끝
-   132.97s  user  발화 끝
-   133.30s  agent 발화 시작: 천만에요. 숫자를 아는 것만으로도 상황이 바뀌지 않더라도 마음이 안정될 때가 있어요.
-   139.27s  agent 발화 끝
-   139.55s  user  발화 시작: 동생에게 간단한 메시지를 보내야 해.
-   142.13s  user  발화 끝
-   142.38s  agent 발화 시작: 도와드릴 수 있지만, 먼저 동생의 연락처가 필요해요.
-   146.03s  agent 발화 끝
-   146.08s  user  발화 시작: 아, 그렇지. 됐어.
-   147.61s  agent 발화 시작: 생각이 바뀌면 말씀해주세요.
-   147.69s  user  발화 끝
-   149.35s  user  발화 시작: 내일 아침 7시에 알람을 맞춰줘.
-   149.35s  agent 발화 끝
-   151.46s  <ret> 발화 (turn36 첫 프레임)
-   151.86s  agent 발화 시작: <ret> 알람이 내일 아침 7시에 맞춰졌어요.
-   151.86s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.40s]: (tool result) Alarm set for 7:00 AM.
-   151.98s  user  발화 끝
-   154.26s  agent 발화 끝
-   154.32s  user  발화 시작: 고마워.
-   154.91s  agent 발화 시작: 천만에요. 수면을 우선시하는 것은 스트레스 관리에 매우 중요한 부분이고, 정말 잘하고 계세요.
-   155.13s  user  발화 끝
-   161.53s  agent 발화 끝
-   161.64s  user  발화 시작: 지금은 다 끝이야.
-   163.01s  user  발화 끝
-   163.07s  agent 발화 시작: 알겠습니다. 작은 단계로 더 나은 안녕을 추구하는 것이 가장 중요합니다. 잘 지내세요.
-   168.96s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 사라 밀러 씨를 아시나요? 옛 친구랑 다시 연락하고 싶어서요.
+     5.00s  user  발화 끝
+     5.08s  <ret> 발화 (turn1 첫 프레임)
+     5.25s  agent 발화 시작: <ret> 죄송하지만, 사라 밀러 씨에 대한 정보는 찾을 수 없었습니다. 시간이 지나면서 연락처가 바뀌는 경
+     5.25s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.46s]: (no information found)
+     9.18s  user  발화 시작: 네.
+     9.77s  user  발화 끝
+    12.70s  agent 발화 끝
+    13.26s  user  발화 시작: 음, 좀 답답하네요. 사람들을 찾는 방법은 혹시 있나요?
+    16.41s  <ret> 발화 (turn4 첫 프레임)
+    16.81s  agent 발화 시작: <ret> WhitePages, ZabaSearch, Intelius 같은 웹사이트들이 도움이 될 수 있는데
+    16.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) People search websites like WhitePages, ZabaSearch, and 
+    17.01s  user  발화 끝
+    19.73s  user  발화 시작: 네.
+    20.18s  user  발화 끝
+    24.27s  agent 발화 끝
+    25.63s  user  발화 시작: 알겠습니다. Intelius가 괜찮은 것 같네요. 그걸 찾아주시겠어요?
+    29.58s  <ret> 발화 (turn7 첫 프레임)
+    29.82s  agent 발화 시작: <ret> Intelius는 공개 기록 검색 서비스인데, intelius.com에서 찾을 수 있습니다.
+    29.82s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.99s]: (tool result) Intelius is a public records search service offering bac
+    29.98s  user  발화 끝
+    31.41s  user  발화 시작: 네.
+    31.86s  user  발화 끝
+    34.82s  agent 발화 끝
+    35.73s  user  발화 시작: 좋아요! 그 웹사이트 열어주시겠어요?
+    38.31s  user  발화 끝
+    38.41s  <ret> 발화 (turn10 첫 프레임)
+    38.49s  agent 발화 시작: <ret> intelius.com을 열어드렸습니다.
+    38.49s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.26s]: (tool result) Website opened: intelius.com
+    40.75s  agent 발화 끝
+    40.81s  user  발화 시작: 고마워요. 사실 좀 긴장되네요.
+    43.90s  user  발화 끝
+    44.12s  agent 발화 시작: 오랜만에 연락하는 건 조금 떨릴 수 있지만, 종종 보람 있는 일이기도 합니다.
+    48.56s  agent 발화 끝
+    48.56s  user  발화 시작: 맞아요. 거의 15년 동안 연락이 없었어요.
+    51.33s  agent 발화 시작: 15년은 정말 긴 시간이네요. 조금 망설여지는 마음은 이해가 갑니다.
+    51.42s  user  발화 끝
+    53.17s  user  발화 시작: 네네.
+    53.81s  user  발화 끝
+    55.96s  agent 발화 끝
+    56.47s  user  발화 시작: 네. 혹시 아직 같은 도시에 살고 있을지 궁금하네요. 마지막으로 알려진 위치를 찾는 도구가 있나요?
+    63.17s  <ret> 발화 (turn17 첫 프레임)
+    63.42s  user  발화 끝
+    63.48s  agent 발화 시작: <ret> BeenVerified와 Instant Checkmate이 도움이 될 수 있는데, 보통 구독이 필
+    63.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (tool result) Several people locator services, like BeenVerified and I
+    68.35s  agent 발화 끝
+    69.20s  user  발화 시작: 구독… 으. 사라 밀러 씨를 시카고에서 찾아주시겠어요?
+    73.55s  <ret> 발화 (turn19 첫 프레임)
+    73.95s  agent 발화 시작: <ret> 시카고에는 사라 밀러 씨가 많이 계신데, 검색 범위를 좁히려면 더 많은 정보가 필요합니다.
+    73.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Search results for "Sarah Miller Chicago" yield numerous
+    74.11s  user  발화 끝
+    79.60s  agent 발화 끝
+    79.85s  user  발화 시작: 그녀는 작년에 42살이었을 거예요.
+    82.49s  <ret> 발화 (turn21 첫 프레임)
+    82.57s  agent 발화 시작: <ret> 시카고 노스 클라크 스트리트 2218번지에 거주하는 사라 밀러 씨, 42세가 검색되었습니다.
+    82.57s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.16s]: (tool result) Search results for "Sarah Miller Chicago age 42" show on
+    82.76s  user  발화 끝
+    85.77s  user  발화 시작: 네.
+    86.27s  user  발화 끝
+    88.73s  agent 발화 끝
+    90.97s  user  발화 시작: 와, 그게 그녀가 옛날에 살던 아파트 건물이에요! 정말 놀랍네요.
+    95.75s  agent 발화 시작: 정말 우연이네요. 좋은 단서가 될 것 같습니다.
+    95.88s  user  발화 끝
+    98.53s  agent 발화 끝
+    99.20s  user  발화 시작: 정말 그래요! 그냥… 전화해 볼까요?
+   102.53s  user  발화 끝
+   102.57s  agent 발화 시작: 전화하는 건 직접적인 방법인데, 조금 긴장될 수도 있지만 즉각적인 연결이 가능합니다. 좋은 방법입니다.
+   109.21s  user  발화 시작: …거기에 아직 거주자로 등록되어 있는지 확인해 볼 수 있을까요? 전화하기 전에요.
+   109.80s  agent 발화 끝
+   114.19s  <ret> 발화 (turn28 첫 프레임)
+   114.39s  user  발화 끝
+   114.43s  agent 발화 시작: <ret> 실제로 공개 기록에 따르면 사라 밀러 씨는 더 이상 그곳에 살지 않고, 데이비드 첸 씨가 현재 거
+   114.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Public records indicate Sarah Miller no longer resides a
+   121.24s  agent 발화 끝
+   121.32s  user  발화 시작: 아. 그건… 실망스럽네요.
+   124.46s  user  발화 끝
+   124.50s  agent 발화 시작: 단서가 잘 풀리지 않으면 조금 실망스러울 수 있지만, 꼭 그녀를 찾지 못한다는 의미는 아닙니다.
+   131.08s  user  발화 시작: 네, 그렇지 않겠죠. 혹시 교외로 이사했을 수도 있겠네요?
+   131.12s  agent 발화 끝
+   134.59s  user  발화 끝
+   134.78s  agent 발화 시작: 그럴 가능성이 충분히 있습니다. 삶이 변하면서 교외로 이사하는 사람들이 많습니다.
+   136.98s  user  발화 시작: 예.
+   137.43s  user  발화 끝
+   140.02s  agent 발화 끝
+   140.04s  agent 발화 시작: 가족을 시작하거나 더 넓은 공간을 찾는 경우 특히 그렇습니다.
+   144.04s  user  발화 시작: 시카고 교외에서 사라 밀러 씨를 찾아주시겠어요?
+   144.06s  agent 발화 끝
+   146.96s  <ret> 발화 (turn36 첫 프레임)
+   147.12s  agent 발화 시작: <ret> 시카고 교외에는 여러 명의 잠재적인 일치 항목이 있는데, 더 자세히 좁혀야 할 것 같습니다.
+   147.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: (tool result) Search results for "Sarah Miller Chicago suburbs" reveal
+   147.23s  user  발화 끝
+   152.67s  agent 발화 끝
+   152.69s  user  발화 시작: 그녀의 직업은요? 그녀는 선생님이었어요.
+   155.71s  <ret> 발화 (turn38 첫 프레임)
+   155.87s  agent 발화 시작: <ret> 일리노이주 에반스턴에서 중학교 영어 선생님으로 일하는 사라 밀러 씨를 찾았습니다.
+   155.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) Search results for "Sarah Miller teacher Chicago suburbs
+   156.02s  user  발화 끝
+   161.15s  agent 발화 끝
+   161.29s  user  발화 시작: 에반스턴! 가까운 곳이네요. 학교 전화번호가 있나요?
+   165.04s  <ret> 발화 (turn40 첫 프레임)
+   165.28s  agent 발화 시작: <ret> 사라 밀러 씨는 에반스턴 타운십 고등학교에서 영어 선생님으로 근무하고 있으며, 전화번호는 847-
+   165.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.12s]: (tool result) Evanston Township High School lists Sarah Miller as an E
+   165.51s  user  발화 끝
+   174.41s  agent 발화 끝
+   174.50s  user  발화 시작: 와, 정말 놀랍네요! 정말 감사합니다, 볼.
+   178.20s  user  발화 끝
+   178.27s  agent 발화 시작: 천만에요. 정말 획기적인 발견을 하신 것 같네요. 연락하시길 바랍니다.
+   181.85s  user  발화 시작: 진짜요?
+   182.67s  user  발화 끝
+   183.13s  agent 발화 끝
+   183.17s  user  발화 시작: 지금 전화해 볼 생각이에요.
+   185.06s  user  발화 끝
+   185.40s  agent 발화 시작: 정말 좋은 생각입니다. 다시 연락하는 데 용기가 필요합니다.
+   189.56s  agent 발화 끝

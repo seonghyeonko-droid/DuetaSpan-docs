@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Caleb",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "non-binary",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2025-12-18",
+#       "date": "2026-04-27",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-03-14",
 #       "category": "home",
-#       "text": "User's home address is 808 Elm Street."
+#       "text": "User's home address is 449 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-12-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-11-04",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-08-19",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-06-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -48,28 +56,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-11-07",
+#       "date": "2025-08-11",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When was the third season of Daredevil released?
-     2.43s  <ret> 발화 (turn1 첫 프레임)
-     2.66s  agent 발화 시작: <ret> The third season of Daredevil came out on October twen
-     2.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.05s]: The third season of the Netflix original series Daredevil was released
-     2.72s  user  발화 끝
-    11.70s  agent 발화 끝
+     0.00s  user  발화 시작: Where does the hottest chilli pepper in the world come from?
+     2.72s  <ret> 발화 (turn1 첫 프레임)
+     2.95s  agent 발화 시작: <ret> The hottest chilli pepper, Pepper X, comes from Rock H
+     2.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: The Pepper X, currently the world’s hottest chili pepper, was develope
+     3.14s  user  발화 끝
+    10.49s  agent 발화 끝

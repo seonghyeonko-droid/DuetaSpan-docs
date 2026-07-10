@@ -1,96 +1,86 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Hia, a calm and patient personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Bir, a warm and attentive wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Ava",
+    "name": "Adam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-19",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-04-15",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-03-22",
+      "date": "2026-06-25",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-25",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-06-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-08-06",
+      "date": "2026-05-12",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-01-01",
       "category": "home",
-      "text": "User's home address is 30 Oak Avenue."
+      "text": "User's home address is 329 Pine Court."
     },
     {
-      "date": "2025-06-16",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "date": "2025-09-10",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-09",
+      "date": "2026-03-04",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ava, I'm Hia. It’s lovely to connect with you.
-[  3.19s][user ] Uh, welll… I need to get to the Musée d'Orsay from home.
-[  7.29s][moshi] ⟨ret@7.21s⟩ ⟦⚡SPAN@7.29s: User's home address is 30 Oak Avenue.⟧ Your home address is 30 Oak Avenue, so I can start planning from there.
-[ 10.16s][user ] «backchannel» Yeah, yeah.
-[ 11.06s][user ] Yes, that’s right. How long will it take?
-[ 13.89s][moshi] ⟨ret@13.81s⟩ ⟦⚡SPAN@13.89s: (tool result) The distance from 30 Oak Avenue to Musée d'Orsay is 7.2 kilometers, and the estimated travel tim⟧ The Musée d'Orsay is 7.2 kilometers from your home, about a 22-minute drive.
-      CALL: {"function": "map_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Musée d'Orsay"}}
-[ 18.43s][user ] «backchannel» Yeah.
-[ 20.89s][user ] And what about public ⟨ret@22.57s⟩ transport?
-[ 22.81s][moshi] ⟦⚡SPAN@22.81s: (tool result) Public transport from 30 Oak Avenue to Musée d'Orsay takes approximately 35 minutes, with one li⟧ By public transport, it’s around 35 minutes, with a change at Concorde station.
-      CALL: {"function": "map_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Musée d'Orsay", "mode": "transit"}}
-[ 25.42s][user ] «backchannel» Mm-hmm.
-[ 28.00s][user ] Hmm, that's a bit long. Is there a faster bus route?
-[ 31.22s][moshi] ⟨ret@31.15s⟩ ⟦⚡SPAN@31.23s: (tool result) No direct bus route exists between 30 Oak Avenue and Musée d'Orsay. The fastest option involves ⟧ Unfortunately, there isn’t a direct bus. The quickest option is a bus to a metro, then the metro itself.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "30 Oak Avenue", "destination": "Musée d'Orsay"}}
-[ 33.67s][user ] «backchannel» Mhm.
-[ 36.84s][user ] I see… but…
-[ 38.75s][moshi] «interrupted» Perhaps we could explore alternative routes? –
-[ 40.62s][user ] «interrupts_prev» Actually, do you remember if I mentioned I’m vegetarian?
-[ 43.75s][moshi] ⟨ret@43.44s⟩ ⟦⚡SPAN@43.76s: User is vegetarian.⟧ Yes, you are vegetarian. You mentioned that on April 15th, 2026.
-[ 45.70s][user ] «backchannel» Right.
-[ 48.69s][user ] Oh, good. I was worried I’d forgotten to tell you.
-[ 51.56s][moshi] It’s perfectly alright to need a reminder, Ava. It’s a common part of transitions.
-[ 53.44s][user ] «backchannel» Yeah.
-[ 56.68s][user ] [laugh] True enough. Back to the museum… are there any restaurants nearby?
-[ 61.55s][moshi] ⟨ret@61.48s⟩ ⟦⚡SPAN@61.56s: (tool result) There are three vegetarian restaurants within 1 kilometer of the Musée d'Orsay: Le Potager du Ma⟧ There are three vegetarian options nearby: Le Potager du Marais, Hank Vegan Burger, and Abattoir Végétal.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Musée d'Orsay", "cuisine": "vegetarian"}}
-[ 69.40s][user ] Le Potager du Marais sounds nice. Can you reserve a table for one?
-[ 74.23s][moshi] ⟨ret@74.07s⟩ ⟦⚡SPAN@74.23s: (tool result) Reservation confirmed at Le Potager du Marais for one person at 1:00 PM today, confirmation numb⟧ A table for one is confirmed at Le Potager du Marais at 1:00 PM. Your confirmation number is 7892AB.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Le Potager du Marais", "party_size": "1", "date": "today", "time": "13:00"}}
-[ 79.20s][user ] «backchannel» Really?
-[ 84.00s][user ] Perfect. Thank you, Hia.
-[ 85.58s][moshi] You’re very welcome, Ava. It sounds like a lovely plan, and I’m glad I could help.
+[  0.00s][moshi] Hi Adam, I'm Bir. It's lovely to connect with you. Are you thinking about a trip today?
+[  5.13s][user ] Uh, yeah, I am. I need to get to the de Young museum.
+[  8.62s][moshi] ⟨ret@8.54s⟩ ⟦⚡SPAN@8.62s: [2026-01-01] User's home address is 329 Pine Court.⟧ Your home is at 329 Pine Court, so let me find directions from there. The de Young Museum is 6.2 miles from your home, and the drive will take about 18 minutes.
+[ 13.25s][user ] «backchannel» Okay.
+[ 18.77s][user ] Hmm, is there a quicker way by public transit?
+[ 21.92s][moshi] ⟨ret@21.85s⟩ ⟦⚡SPAN@21.93s: (tool result) Public transit from 329 Pine Court to de Young Museum takes approximately 35 minutes, involving ⟧ Taking public transit would take around 35 minutes, with a bus and train transfer. It might be a bit longer, but scenic.
+      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "329 Pine Court", "destination": "de Young museum"}}

@@ -1,122 +1,60 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Zura, a kind and steady wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Oli, a grounded and empathetic supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Morgan",
+    "name": "Jordan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "German"
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "home",
-      "text": "User's home address is 461 Cedar Lane."
-    },
-    {
-      "date": "2025-10-29",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-09-03",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-08-06",
+      "date": "2026-05-17",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-05-29",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-03-20",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-02-26",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "home",
+      "text": "User's home address is 57 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-23",
-      "title": "Apartment hunting downtown",
+      "date": "2026-01-26",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-18",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, what sport did Jack Sock and Raffaella Reggi ⟨ret@3.73s⟩ play?
-[  3.89s][moshi] ⟦⚡SPAN@3.89s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ They both play tennis, professionally. It's wonderful to find common ground in athletic pursuits.
-[  5.83s][user ] «backchannel» Yeah.
-[ 10.33s][user ] Tennis, huh? Well, I thought Jack Sock was… different.
-[ 14.10s][moshi] People often have multiple interests, and athletes are no exception. It’s perfectly alright to be surprised.
-[ 19.87s][user ] Okay, but when did Raffaella Reggi actually *turn* ⟨ret@22.69s⟩ pro?
-[ 22.93s][moshi] ⟦⚡SPAN@22.93s: Raffaella Reggi turned professional in 2001, competing on the ITF Women's Circuit.⟧ Raffaella Reggi began her professional career in 2001, playing on the ITF Women’s Circuit. That’s quite a while ago.
-[ 32.41s][user ] 2001… hmmm. And what’s the highest ranking she ever ⟨ret@37.36s⟩ achieved?
-[ 37.67s][moshi] ⟦⚡SPAN@37.68s: Raffaella Reggi’s highest WTA singles ranking was 163rd, achieved in February 2006.⟧ Her peak WTA singles ranking was 163rd, which she reached in February of 2006. It takes dedication to reach that level.
-[ 47.80s][user ] 163rd… not bad, I guess. What about Jack Sock?
-[ 51.40s][moshi] Jack Sock has had a more prominent career, reaching higher rankings. It’s inspiring to see dedication pay off.
-[ 58.13s][user ] Yeah, yeah, I know. Give me the number, ⟨ret@59.99s⟩ Zura.
-[ 60.31s][moshi] ⟦⚡SPAN@60.31s: Jack Sock’s highest ATP singles ranking was 8th, achieved in November 2017.⟧ Jack Sock’s highest ATP ranking was 8th, back in November 2017. That’s a significant achievement in the sport.
-[ 66.24s][user ] «backchannel» Wow.
-[ 67.97s][user ] November 2017. Right. Did they ever… play *against* each other?
-[ 72.19s][moshi] ⟨ret@71.87s⟩ ⟦⚡SPAN@72.19s: Jack Sock and Raffaella Reggi have never competed against each other in a professional match.⟧ No, Jack Sock and Raffaella Reggi haven’t played a professional match against each other. Their careers haven't crossed that way.
-[ 79.53s][user ] Never? That’s… surprising. What’s the weather like in Rome right now?
-[ 83.80s][moshi] ⟨ret@83.56s⟩ ⟦⚡SPAN@83.80s: (tool result) 28.5°C, humidity 62%, wind 7.2 km/h⟧ It's currently 28.5 degrees Celsius in Rome, with 62% humidity and a 7.2 kilometer per hour breeze. A lovely day, it seems.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Rome"}}
-[ 90.17s][user ] «backchannel» Really?
-[ 93.62s][user ] That does sound nice. What about… the ⟨ret@96.28s⟩ time?
-[ 96.52s][moshi] ⟦⚡SPAN@96.52s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Rome right now.⟧ It’s currently 3:17 PM in Rome, on Friday, July 10th, 2026. Time truly does seem to slip away.
-      CALL: {"function": "get_time", "arguments": {}}
-[102.41s][user ] «backchannel» Right.
-[106.07s][user ] July 10th… okay. Can you find me some information on the Colosseum?
-[110.29s][moshi] ⟨ret@110.21s⟩ ⟦⚡SPAN@110.29s: (tool result) The Colosseum, also known as the Flavian Amphitheatre, was completed in AD 80. It hosted gladiat⟧ The Colosseum, completed in 80 AD, hosted gladiatorial contests and public spectacles. It’s a powerful symbol of ancient Rome.
-      CALL: {"function": "search", "arguments": {"query": "Colosseum history"}}
-[119.45s][user ] Gladiators… brutal. Uhhh, can you find me hotels near the ⟨ret@123.21s⟩ Colosseum?
-[123.53s][moshi] ⟦⚡SPAN@123.53s: (tool result) Hotel Artemide: 4 stars, $250/night; The Hive Hotel: 4 stars, $200/night; Hotel Capo d'Africa: 5⟧ I found Hotel Artemide at $250 a night, The Hive Hotel at $200, and Hotel Capo d'Africa at $350. All are near the Colosseum.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Colosseum, Rome"}}
-[134.87s][user ] Three fifty… that’s a bit much. What’s the cheapest flight from New York to ⟨ret@139.12s⟩ Rome?
-[139.52s][moshi] ⟦⚡SPAN@139.52s: (tool result) Delta: $780, departing July 15th; United: $820, departing July 16th; American: $750, departing J⟧ The cheapest flight I found is with American Airlines for $750, departing on July 14th. A good price for a long journey.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "New York", "destination": "Rome"}}
-[143.15s][user ] «backchannel» Uh-huh.
-[148.11s][user ] July 14th… hmm. What’s the exchange rate between US dollars and Euros right ⟨ret@153.28s⟩ now?
-[153.52s][moshi] ⟦⚡SPAN@153.52s: (tool result) EUR/USD is trading at 0.92, down 0.001 today.⟧ The Euro is trading at 92 cents to the dollar, with a slight decrease today. It's good to know that when planning travel.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "EURUSD"}}
-[160.83s][user ] Okay. What’s a good restaurant near the Hotel ⟨ret@164.04s⟩ Artemide?
-[164.28s][moshi] ⟦⚡SPAN@164.28s: (tool result) La Taverna dei Fori Imperiali: Italian, $30/person; Aroma: Fine Dining, $80/person; Li Rioni: Pi⟧ I found La Taverna dei Fori Imperiali, Aroma, and Li Rioni, offering Italian, fine dining, and pizza respectively.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Hotel Artemide, Rome"}}
-[167.51s][user ] «backchannel» Yeah.
-[172.31s][user ] Pizza sounds good. Can you book me a table at Li Rioni for two people tonight?
-[176.71s][moshi] ⟨ret@176.63s⟩ ⟦⚡SPAN@176.71s: (tool result) Reservation confirmed at Li Rioni for 2 people on July 10, 2026 at 8:00 PM. Confirmation ID: XR7⟧ Your table for two at Li Rioni is confirmed for 8 PM tonight. Your confirmation ID is XR749Z.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Li Rioni", "date": "July 10, 2026", "time": "8:00 PM", "party_size": "2"}}
-[184.21s][user ] Perfect. That’s all I needed, thank you.
-[186.18s][moshi] You're very welcome. Planning a trip can be overwhelming, but it’s a beautiful process.
-[192.75s][user ] It is. But… I’m still a bit sad…
-[198.81s][user ] …about everything.
-[199.68s][moshi] Grief is a natural part of life, and it's okay to feel it. Allow yourself the space to process your emotions.
-[207.74s][user ] I’m trying. It just… feels endless sometimes.
-[210.11s][moshi] It can feel that way, yes. Remember to be kind to yourself, and focus on small moments of joy when you can.
-[214.08s][user ] «backchannel» Mm-hmm.
-[216.37s][user ] Small moments… yeah. That makes sense.
-[219.70s][moshi] They add up, little by little. Like building a mosaic, each piece contributes to the whole.
-[224.78s][user ] A mosaic… that's a nice image, Zura.
-[228.97s][moshi] Sometimes, finding beauty in the fragments helps us to heal. Take care, and be gentle with your heart.
+[  0.00s][user ] I’m curious—who led the Paris Opera Ballet for a while back in the eighties?
+[  4.26s][moshi] ⟨ret@4.10s⟩ ⟦⚡SPAN@4.26s: Rudolf Nureyev directed the Paris Opera Ballet from 1983 to 1989 and served as its chief choreographer until O⟧ Rudolf Nureyev directed the Paris Opera Ballet from 1983 to 1989. It’s fascinating how one person can shape an entire company, isn’t it?
+[ 13.75s][user ] 1983 to 1989… that’s quite a run.…
+[ 18.78s][user ] …Did he also elevate dancers within the ⟨ret@20.64s⟩ company?
+[ 20.79s][moshi] ⟦⚡SPAN@20.80s: Nureyev gave the title of étoile—the highest rank—to a member of the Paris Opera Ballet in 1978.⟧ He did, actually. Nureyev gave the title of étoile to a dancer back in 1978. It’s a huge honor, that highest rank.
+[ 28.94s][user ] Hmmm, 1978… before he was even director?
+[ 32.95s][moshi] Yes, that’s right. He was already influencing the company and recognizing talent before taking on the director role. It shows his early impact.

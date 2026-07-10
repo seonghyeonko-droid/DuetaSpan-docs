@@ -4,48 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Zoe",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-26",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-02-16",
+#       "date": "2026-03-11",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-11-12",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
-#     },
-#     {
-#       "date": "2025-07-18",
+#       "date": "2026-01-17",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "home",
+#       "text": "User's home address is 911 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-06-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-20",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -53,83 +61,101 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-15",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 That Len Kyoto Kawaramachi sounds  | S3 What kind of cuisine does Kyoto Go | S4 That’s helpful. I’m trying to stic
+# EXAMINER(FDB-v2) 단계: S1 Find action movies directed by Aki | S2 Perfect, thanks! What’s the weathe | S3 That’s a good idea. But I'm worrie | S4 Play it.
 
-     0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     5.00s  agent 발화 시작: <ret> Okay, I’ve set the user agent to MyCustomBrowser versi
-     5.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) User agent successfully set to MyCustomBrowser version 1
-     5.18s  user  발화 끝
-     6.76s  user  발화 시작: Mm-hmm.
-     7.26s  user  발화 끝
-    10.19s  agent 발화 끝
-    10.20s  user  발화 시작: Now, can you search for hotels in Kyoto, Japan, for two adul
-    17.89s  <ret> 발화 (turn4 첫 프레임)
-    18.05s  agent 발화 시작: <ret> I found one hundred and twenty-three hotels in Kyoto, 
-    18.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) 123 hotels found in Kyoto, Japan, matching your criteria
-    18.13s  user  발화 끝
-    21.31s  user  발화 시작: Mm-hmm.
-    21.80s  user  발화 끝
-    24.47s  user  발화 시작: Hmm, show me the cheapest five.
-    24.58s  agent 발화 끝
-    26.77s  <ret> 발화 (turn7 첫 프레임)
-    26.85s  agent 발화 시작: <ret> The cheapest five are Len Kyoto Kawaramachi at sixty d
-    26.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) The five cheapest hotels are: Hotel Granvia Kyoto ($80/n
-    27.01s  user  발화 끝
-    30.30s  user  발화 시작: Mm-hmm.
-    30.79s  user  발화 끝
-    33.83s  agent 발화 시작: …UNPLAN Shijo Omiya at seventy, Piece Hostel at seventy-five
-    33.99s  agent 발화 끝
-    41.25s  agent 발화 끝
-    41.45s  user  발화 시작: That Len Kyoto Kawaramachi sounds good. Can you reserve a ro
-    46.53s  <ret> 발화 (turn11 첫 프레임)
-    46.85s  agent 발화 시작: <ret> Your room at Len Kyoto Kawaramachi is booked for July 
-    46.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: (tool result) Booking confirmed for Len Kyoto Kawaramachi, July 15-20,
-    47.01s  user  발화 끝
-    55.98s  agent 발화 끝
-    56.12s  user  발화 시작: Perfect! And could you find some restaurants near that hotel
-    59.13s  <ret> 발화 (turn13 첫 프레임)
-    59.17s  user  발화 끝
-    59.37s  agent 발화 시작: <ret> There are five restaurants nearby: Musashi Sushi, Omen
-    59.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Five restaurants near Len Kyoto Kawaramachi: Musashi Sus
-    67.81s  user  발화 시작: What kind of cuisine does Kyoto Gogyo serve?
-    67.90s  agent 발화 끝
-    71.37s  <ret> 발화 (turn15 첫 프레임)
-    71.41s  user  발화 끝
-    71.44s  agent 발화 시작: <ret> Kyoto Gogyo specializes in burnt miso ramen, a local s
-    71.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.83s]: Kyoto Gogyo specializes in burnt miso ramen, a local specialty known f
-    74.81s  user  발화 시작: Yeah.
-    75.16s  user  발화 끝
-    77.27s  agent 발화 끝
-    77.36s  user  발화 시작: That sounds amazing. What’s the current exchange rate from U
-    81.71s  <ret> 발화 (turn18 첫 프레임)
-    81.75s  user  발화 끝
-    81.79s  agent 발화 시작: <ret> One US dollar is currently equal to one hundred and fi
-    81.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) As of today, July 10, 2026, 1 USD equals 159.82 JPY.
-    87.39s  user  발화 시작: Okay, great. If I wanted to buy a meal that costs 2000 yen, 
-    87.48s  agent 발화 끝
-    92.64s  <ret> 발화 (turn20 첫 프레임)
-    93.04s  agent 발화 시작: <ret> Two thousand yen is about twelve dollars and fifty-two
-    93.04s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.93s]: 2000 Japanese yen is equivalent to approximately 12.52 US dollars, bas
-    93.08s  user  발화 끝
-    98.97s  agent 발화 끝
-    99.18s  user  발화 시작: That’s helpful. I’m trying to stick to a budget. Can you cre
-   107.14s  <ret> 발화 (turn22 첫 프레임)
-   107.46s  agent 발화 시작: <ret> I’ve created an invoice for seven hundred and eighty-o
-   107.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: (tool result) Invoice created. Total: $781.26. Invoice number: INV-202
-   107.71s  user  발화 끝
-   117.80s  agent 발화 끝
-   118.66s  user  발화 시작: Perfect. Thank you, Lio.
-   120.02s  agent 발화 시작: You’re very welcome. Enjoy your trip to Kyoto!
-   120.03s  user  발화 끝
-   123.44s  agent 발화 끝
+     0.00s  user  발화 시작: Find action movies directed by Akira Kurosawa and featuring 
+     5.29s  <ret> 발화 (turn1 첫 프레임)
+     5.33s  user  발화 끝
+     5.37s  agent 발화 시작: <ret> I found two films that match your request: *Seven Samu
+     5.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Seven Samurai (1954) is an action film directed by Akira
+     8.76s  user  발화 시작: Yeah.
+     9.11s  user  발화 끝
+    12.97s  agent 발화 끝
+    13.03s  user  발화 시작: Hmm, tell me more about *Seven Samurai*.
+    15.00s  <ret> 발화 (turn4 첫 프레임)
+    15.10s  user  발화 끝
+    15.16s  agent 발화 시작: <ret> I’m sorry, I don’t have more detailed information abou
+    15.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (no information found)
+    18.22s  user  발화 시작: Yeah.
+    18.57s  user  발화 끝
+    20.99s  user  발화 시작: Okay. Can you find showtimes for *Yojimbo* near me?
+    21.04s  agent 발화 끝
+    24.24s  <ret> 발화 (turn7 첫 프레임)
+    24.32s  agent 발화 시작: <ret> There are showtimes for *Yojimbo* at the Grand Cinema 
+    24.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Showtimes for Yojimbo are available at the Grand Cinema 
+    24.51s  user  발화 끝
+    27.34s  user  발화 시작: Mm-hmm.
+    27.83s  user  발화 끝
+    29.71s  agent 발화 시작: Perhaps a good choice for a quiet evening.
+    29.88s  agent 발화 끝
+    31.28s  user  발화 시작: Mhm.
+    31.77s  user  발화 끝
+    32.19s  user  발화 시작: Book me a ticket for the 9:15 showing.
+    32.29s  agent 발화 끝
+    34.26s  <ret> 발화 (turn12 첫 프레임)
+    34.58s  agent 발화 시작: <ret> You’re all set! I’ve booked a ticket for *Yojimbo* at 
+    34.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.70s]: (tool result) Your ticket for Yojimbo at 9:15 PM at the Grand Cinema i
+    34.59s  user  발화 끝
+    37.86s  user  발화 시작: Mhm.
+    38.49s  user  발화 끝
+    42.27s  agent 발화 끝
+    43.46s  user  발화 시작: Perfect, thanks! What’s the weather like there?
+    45.96s  <ret> 발화 (turn15 첫 프레임)
+    46.20s  agent 발화 시작: <ret> It’s currently 22.5 degrees Celsius near the Grand Cin
+    46.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) The weather at the Grand Cinema is currently 22.5°C, wit
+    46.32s  user  발화 끝
+    51.38s  user  발화 시작: That sounds pleasant. I’m feeling a bit stressed about a pro
+    51.99s  agent 발화 끝
+    55.31s  agent 발화 시작: That’s understandable. Work can be demanding, and it’s good 
+    55.41s  user  발화 끝
+    60.08s  agent 발화 끝
+    61.05s  user  발화 시작: It is… I'm really behind schedule.
+    63.03s  user  발화 끝
+    63.20s  agent 발화 시작: It’s easy to feel overwhelmed when deadlines loom. Perhaps b
+    67.05s  user  발화 시작: Mhm.
+    67.63s  user  발화 끝
+    70.20s  agent 발화 끝
+    70.25s  user  발화 시작: That’s a good idea. But I'm worried about presenting to the 
+    73.16s  user  발화 끝
+    73.20s  agent 발화 시작: Presentations can be nerve-wracking. Remember to focus on yo
+    77.58s  user  발화 시작: Right.
+    77.94s  user  발화 끝
+    78.72s  user  발화 시작: Easier said than done, I guess.
+    79.23s  agent 발화 끝
+    80.80s  agent 발화 시작: It often is. Taking a few deep breaths before you begin can 
+    80.94s  user  발화 끝
+    84.76s  user  발화 시작: Yeah.
+    85.11s  user  발화 끝
+    86.44s  agent 발화 끝
+    86.66s  user  발화 시작: Hmm… maybe. Can you find some relaxing music for me?
+    89.53s  <ret> 발화 (turn28 첫 프레임)
+    89.85s  agent 발화 시작: <ret> I found a playlist called “Ambient Calm” on Spotify th
+    89.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) I found a playlist titled “Ambient Calm” on Spotify with
+    89.90s  user  발화 끝
+    92.21s  user  발화 시작: Yeah.
+    92.56s  user  발화 끝
+    94.85s  agent 발화 끝
+    95.59s  user  발화 시작: Play it.
+    96.14s  <ret> 발화 (turn31 첫 프레임)
+    96.28s  user  발화 끝
+    96.29s  agent 발화 시작: <ret> The playlist is now playing on Spotify.
+    96.30s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.59s]: (tool result) Now playing “Ambient Calm” on Spotify.
+    98.71s  user  발화 시작: That's nice. Thank you, Sio.
+    98.88s  agent 발화 끝
+   100.31s  user  발화 끝
+   100.42s  agent 발화 시작: You’re very welcome. It's good to take a moment for yourself
+   104.95s  agent 발화 끝
+   104.97s  user  발화 시작: I think I will.
+   106.07s  user  발화 끝
+   106.15s  agent 발화 시작: I'm glad to hear that. Remember, you've got this.
+   109.01s  agent 발화 끝

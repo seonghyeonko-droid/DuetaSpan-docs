@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Lucia",
+#     "name": "Ruby",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -18,72 +18,72 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-02-08",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-03",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-11",
+#       "date": "2026-02-01",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-07-27",
+#       "date": "2026-01-30",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
+#     },
+#     {
+#       "date": "2025-10-12",
 #       "category": "home",
-#       "text": "User's home address is 820 Cedar Lane."
+#       "text": "User's home address is 379 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-13",
+#       "date": "2025-09-12",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-15",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about the Depar | S2 Nineteen thirty? That seems… late. | S3 So the bureau came first, then the | S4 That makes sense… I think I’m good
 
-     0.00s  user  발화 시작: I was just reading about the Department of Veterans Affairs…
-     5.62s  <ret> 발화 (turn1 첫 프레임)
-     5.93s  agent 발화 시작: <ret> The Department of Veterans Affairs was elevated to cab
-     5.94s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.83s]: The Department of Veterans Affairs became a cabinet-level department o
-     6.12s  user  발화 끝
-     9.11s  user  발화 시작: Right.
-     9.61s  user  발화 끝
-    15.75s  agent 발화 끝
-    16.85s  user  발화 시작: Nineteen thirty? That seems… late. Uhhh, wasn’t there someth
-    22.92s  <ret> 발화 (turn4 첫 프레임)
-    23.32s  agent 발화 시작: <ret> There was a Veterans Bureau established on August nint
-    23.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: The Veterans Bureau was established on August 9, 1921, originally to a
-    23.52s  user  발화 끝
-    29.59s  user  발화 시작: Okay.
-    30.03s  user  발화 끝
-    31.70s  agent 발화 끝
-    33.37s  user  발화 시작: So the bureau came first, then the department? But what was 
-    39.77s  agent 발화 시작: Well, advocating for veterans’ rights was a growing movement
-    39.89s  user  발화 끝
-    47.31s  user  발화 시작: That makes sense… I think I’m good for now.
-    47.42s  agent 발화 끝
-    50.26s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering, when is the next Olympics coming to Lo
+     3.34s  <ret> 발화 (turn1 첫 프레임)
+     3.66s  agent 발화 시작: <ret> The next Olympics in Los Angeles are scheduled for Jul
+     3.66s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.69s]: The 2028 Summer Olympics are scheduled to be held in Los Angeles, Cali
+     3.80s  user  발화 끝
+    13.35s  agent 발화 끝
+    13.83s  user  발화 시작: 2028… that feels so far away! I thought maybe they’d moved i
+    18.36s  user  발화 끝
+    18.81s  agent 발화 시작: It does seem a bit distant, doesn’t it? Sometimes big events
+    20.77s  user  발화 시작: Yeah.
+    21.55s  user  발화 끝
+    25.10s  user  발화 시작: Hmm, well, what about the weather there then, around that ti
+    25.26s  agent 발화 끝
+    27.90s  <ret> 발화 (turn6 첫 프레임)
+    28.30s  agent 발화 시작: <ret> On July 21st, 2028, Los Angeles is forecast to be arou
+    28.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: (tool result) Los Angeles on July 21, 2028, is forecast to have a high
+    28.33s  user  발화 끝
+    39.29s  agent 발화 끝

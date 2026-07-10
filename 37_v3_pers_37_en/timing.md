@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Jamie",
+#     "name": "Paul",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,43 +12,40 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-07",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-04-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-10-19",
+#       "date": "2026-01-25",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-09-20",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-10-12",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-08-18",
-#       "category": "home",
-#       "text": "User's home address is 178 Elm Street."
+#       "date": "2025-10-09",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-05-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-24",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-14",
+#       "date": "2025-12-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,18 +55,39 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Parenting already? Wow, that’s… a  | S2 Yeah, she keeps saying Chloe needs | S3 Hmmmm. She’s also been talking abo | S4 That’s… a good idea, actually. I’l
 
-     0.00s  agent 발화 시작: Hello Jamie, welcome.
-     1.66s  agent 발화 끝
-     1.99s  user  발화 시작: Hunar… that’s a beautiful name. I’m feeling a bit overwhelme
-     7.85s  agent 발화 시작: It’s kind of you to say so. Overwhelm is very common with a 
-     7.87s  user  발화 끝
-    15.35s  agent 발화 끝
-    16.17s  user  발화 시작: Uhhh, finding a good coffee shop. Sounds silly, I know, but 
-    21.39s  user  발화 끝
-    21.77s  agent 발화 시작: Not silly at all. Those small rituals really anchor us. A co
-    31.83s  agent 발화 끝
-    31.84s  user  발화 시작: But… how do I even *begin* to choose a neighborhood? There a
-    36.54s  agent 발화 시작: Sydney is quite vast, Jamie — it’s made up of seventy-nine d
-    36.74s  user  발화 끝
-    46.37s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Paul, it’s lovely to meet you. I’m Vunana, and I’m her
+     7.13s  agent 발화 끝
+     7.55s  user  발화 시작: Parenting already? Wow, that’s… a jump. I just moved out of 
+    13.08s  agent 발화 시작: That’s a big step, Paul! Leaving home is a wonderful, and so
+    13.15s  user  발화 끝
+    20.49s  agent 발화 끝
+    21.13s  user  발화 시작: Well, uh, my younger sister, Chloe, is starting high school.
+    26.92s  user  발화 끝
+    27.33s  agent 발화 시작: It’s completely natural for parents to feel anxious when the
+    35.72s  user  발화 시작: Yeah, she keeps saying Chloe needs to be ‘prepared’. Prepare
+    35.73s  agent 발화 끝
+    40.45s  agent 발화 시작: It sounds like your mum is trying to feel in control. Often,
+    40.63s  user  발화 끝
+    46.57s  user  발화 시작: Yeah, yeah.
+    47.67s  user  발화 끝
+    48.97s  agent 발화 끝
+    50.23s  user  발화 시작: Hmmmm. She’s also been talking about setting really strict r
+    56.01s  user  발화 끝
+    56.37s  agent 발화 시작: Strict rules can feel reassuring, but they can also create t
+    61.58s  user  발화 시작: Yeah.
+    62.21s  user  발화 끝
+    64.29s  agent 발화 끝
+    65.17s  user  발화 시작: Not really. She just… announces things. It’s hard to get a w
+    69.66s  user  발화 끝
+    69.77s  agent 발화 시작: That sounds incredibly frustrating, Paul. Chloe’s age group 
+    73.89s  user  발화 시작: Yeah.
+    74.52s  user  발화 끝
+    79.00s  agent 발화 시작: Perhaps suggesting a family discussion, focused on Chloe’s n
+    79.18s  agent 발화 끝
+    86.39s  user  발화 시작: That’s… a good idea, actually. I’ll try.
+    86.42s  agent 발화 끝
+    90.34s  agent 발화 시작: It takes courage to navigate these family dynamics, Paul. Re
+    90.36s  user  발화 끝
+    98.27s  agent 발화 끝

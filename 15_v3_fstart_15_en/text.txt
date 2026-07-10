@@ -1,90 +1,87 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Helin, a kind and steady personal guide who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Ada",
+    "name": "Marie",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "female",
-    "age_range": "50s",
-    "language": "German"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-01",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2025-09-20",
+      "date": "2026-01-06",
       "category": "hobby",
       "text": "User is into rock climbing."
     },
     {
-      "date": "2025-09-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-09-05",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-07-12",
+      "date": "2025-08-29",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-08-06",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-05-30",
+      "date": "2025-07-25",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-06-24",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "text": "User is planning a trip to Iceland in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-16",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-26",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-07-08",
-      "title": "Researching a used car",
+      "date": "2025-06-02",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.27s][moshi] ⟨ret@4.19s⟩ ⟦⚡SPAN@4.27s: (tool result) The Sydney Opera House is located at latitude -33.8567841 and longitude 151.2152929.⟧ The Sydney Opera House is at latitude negative thirty-three point eight five six seven eight four one, and longitude one five one point two one five two nine two nine.
-      CALL: {"function": "map_geo", "arguments": {"place": "Sydney Opera House"}}
-[  8.86s][user ] «backchannel» Yeah.
-[ 15.08s][user ] And what’s the weather like there right now?
-[ 17.81s][moshi] ⟨ret@17.57s⟩ ⟦⚡SPAN@17.81s: (tool result) The current weather in Sydney, Australia is 22.0°C, humidity 68%, wind 15.5 km/h.⟧ It’s currently twenty-two degrees Celsius in Sydney, with sixty-eight percent humidity and winds at fifteen point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sydney Opera House"}}
-[ 26.66s][user ] That sounds lovely.
-[ 28.25s][moshi] It really does—a perfect day for a harbor stroll, wouldn’t you say?
-[ 34.08s][user ] Can you find me some family-friendly events happening near there this ⟨ret@38.16s⟩ weekend?
-[ 38.40s][moshi] «interrupted» ⟦⚡SPAN@38.40s: (tool result) There are several family-friendly events near the Sydney Opera House this weekend, including a p⟧ This weekend, you’ll find a puppet show at the Botanic Garden and a children’s art workshop at the Museum of Contemporary Art—
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Sydney Opera House", "date": "this weekend", "category": "family-friendly"}}
-[ 44.21s][user ] «interrupts_prev» …Are those events free, or do they cost ⟨ret@47.26s⟩ anything?
-[ 47.50s][moshi] ⟦⚡SPAN@47.50s: (tool result) The puppet show at the Botanic Garden costs $25 per person, while the children’s art workshop at⟧ The puppet show is twenty-five dollars per person, and the art workshop is thirty dollars per child.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Sydney Opera House", "date": "this weekend", "category": "family-friendly", "details": "price"}}
-[ 49.84s][user ] «backchannel» Yeah.
-[ 53.31s][moshi] Both sound like wonderful ways to make some family memories, and they're a good starting point for planning a fun day, don’t you think?
-[ 58.07s][user ] «backchannel» Yeah, totally.
-[ 61.66s][user ] Can you book tickets for…
-[ 65.88s][user ] …the art workshop for two ⟨ret@68.01s⟩ children?
-[ 68.41s][moshi] ⟦⚡SPAN@68.41s: (tool result) Booking confirmed: Children’s Art Workshop, Museum of Contemporary Art, 2 children, total cost $⟧ Your tickets for the children’s art workshop are booked! That will be sixty dollars, confirmation ID seven X nine B two K.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event": "children’s art workshop", "location": "Museum of Contemporary Art", "quantity": "2", "attendees": "children"}}
-[ 76.52s][user ] Perfect, thank you. That’s all I needed.
-[ 79.99s][moshi] You're very welcome! It's such a gift to spend quality time with your children, and I'm glad I could help you plan a little something special.
+[  0.00s][user ] Can you look up the coordinates for the Pyramids of Giza in Egypt?
+[  4.60s][moshi] «interrupted» ⟨ret@4.52s⟩ ⟦⚡SPAN@4.60s: (tool result) The Pyramids of Giza are located at 29.9792 degrees North latitude and 31.1342 degrees East long⟧ The Pyramids of Giza are at 29.9792 degrees North, 31.1342 degrees East—
+      CALL: {"function": "map_geocode", "arguments": {"address": "Pyramids of Giza, Egypt"}}
+[ 12.40s][user ] «interrupts_prev» …and what about the Sphinx? Is that nearby?
+[ 15.63s][moshi] The Sphinx is indeed very close, situated on the Giza Plateau alongside the pyramids.
+[ 21.52s][user ] Hmm, okay. And can you show me a map with both of ⟨ret@25.13s⟩ them marked?
+[ 25.53s][moshi] ⟦⚡SPAN@25.53s: (tool result) Map displayed with markers for the Pyramids of Giza and the Sphinx on the Giza Plateau.⟧ I’ve marked both on a map for you. You’ll see them right next to each other.
+      CALL: {"function": "map_mark", "arguments": {"points": [{"latitude": 29.9792, "longitude": 31.1342, "label": "Pyramids of Giza"}, {"latitude": 29.9792, "longitude": 31.1342, "label": "Sphinx"}]}}
+[ 28.28s][user ] «backchannel» Yeah.
+[ 29.17s][moshi] It’s a remarkably preserved site, isn’t it? Considering its age.
+[ 33.20s][user ] What's the weather like there ⟨ret@35.37s⟩ right now?
+[ 35.77s][moshi] ⟦⚡SPAN@35.77s: (tool result) The current weather in Giza is 34.0°C, humidity 28%, wind 14.5 km/h from the northwest.⟧ It’s currently 34.0 degrees Celsius in Giza, with a bit of a breeze.
+      CALL: {"function": "map_weather", "arguments": {"latitude": 29.9792, "longitude": 31.1342}}
+[ 38.32s][user ] «backchannel» Really?
+[ 40.68s][user ] That sounds hot! Is it always that warm?
+[ 44.28s][moshi] Generally, yes. Giza experiences a desert climate, with hot, dry summers and mild winters. It's not unusual for temperatures to reach those levels in July.

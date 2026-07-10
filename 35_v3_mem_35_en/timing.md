@@ -4,84 +4,80 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Avery",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "home",
-#       "text": "User's home address is 70 Cedar Lane."
+#       "date": "2026-06-12",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-06-13",
+#       "date": "2026-04-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2026-04-10",
+#       "category": "home",
+#       "text": "User's home address is 616 Elm Street."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-20",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-06-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
-#     },
-#     {
-#       "date": "2025-08-26",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-06",
+#       "date": "2026-05-28",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-23",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you’re planning a trip to N
-     4.07s  agent 발화 끝
-     4.84s  user  발화 시작: Yes, that’s right. I was hoping you could help me find some 
-    11.26s  <ret> 발화 (turn2 첫 프레임)
-    11.66s  agent 발화 시작: <ret> You mentioned your interest in alpine wildflower photo
-    11.66s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.24s]: [2025-08-26] User is into alpine wildflower photography.
-    11.75s  user  발화 끝
-    14.33s  user  발화 시작: …are there any specific times of year that are best for that
-    14.90s  agent 발화 끝
-    17.35s  user  발화 시작: Mm-hmm.
-    17.84s  user  발화 끝
-    18.26s  <ret> 발화 (turn5 첫 프레임)
-    18.34s  agent 발화 시작: <ret> The peak season for alpine wildflowers is December to 
-    18.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: New Zealand’s alpine wildflower season typically peaks from December t
-    18.50s  user  발화 끝
-    25.59s  user  발화 시작: That sounds perfect. I’m already planning to be there in Mar
-    25.80s  agent 발화 끝
-    29.75s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Andrea, I'm Sellaia. It's lovely to connect with you. Is 
+     5.74s  agent 발화 끝
+     6.52s  user  발화 시작: um, I'm starting to think about that Iceland trip in October
+    12.79s  <ret> 발화 (turn2 첫 프레임)
+    13.19s  agent 발화 시작: <ret> You mentioned you prefer a window seat when you travel
+    13.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: [2025-09-20] User prefers a window seat when traveling.
+    13.28s  user  발화 끝
+    19.07s  agent 발화 끝
+    19.20s  user  발화 시작: yeah, exactly. Can you check if I can request one on my flig
+    23.18s  <ret> 발화 (turn4 첫 프레임)
+    23.19s  agent 발화 시작: <ret> Flights to Reykjavik on October fifteenth start at one
+    23.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) Flights to Reykjavik from London on October 15, 2026, st
+    23.32s  user  발화 끝
+    31.24s  agent 발화 끝
+    31.77s  user  발화 시작: no, one way is fine for now. But could you try and find one 
+    37.83s  user  발화 끝
+    37.90s  <ret> 발화 (turn6 첫 프레임)
+    38.14s  agent 발화 시작: <ret> Icelandair flight FI451 on October fifteenth offers a 
+    38.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) Flights to Reykjavik from London on October 15, 2026, st
+    49.22s  agent 발화 끝
