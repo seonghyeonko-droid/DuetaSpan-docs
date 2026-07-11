@@ -4,98 +4,98 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "지국",
+#     "name": "도진",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2026-02-09",
+#       "date": "2026-02-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-15",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2025-09-26",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-09-22",
+#       "date": "2025-09-07",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-07-28",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2025-07-27",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-26",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-14",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-06-15",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 요즘 잠을 잘 못 자서 걱정이에요. | S2 그럼 마라 산탄젤로는요? 이탈리아 선수 맞죠? | S3 이십오위면 꽤 잘하는 선수였네요. — | S4 그렇군요. 마라 산탄젤로는 언제 은퇴했나요?
+# EXAMINER(FDB-v2) 단계: S1 트레버 프랭글리 선수가 라이트급 말고 다른 체급에서 싸운 적이 | S2 잠깐만요, 그럼 라이트급으로 전향하기 전에 페더급에서 패배한  | S3 … 혹시 그 경기 결과에 대해 좀 더 자세히 알 수 있을까요? | S4 아, 벨레이터 경기였군요. 혹시 프랭글리 선수가 다른 단체에서
 
-     0.00s  user  발화 시작: 안녕하세요. 요즘 잠을 잘 못 자서 걱정이에요.
-     3.13s  agent 발화 시작: 안녕하세요. 잠이 안 오시는군요. 편안한 밤을 위해 제가 도와드릴게요.
-     3.28s  user  발화 끝
-     4.95s  user  발화 시작: 네.
-     5.44s  user  발화 끝
-     7.62s  agent 발화 끝
-     8.28s  user  발화 시작: 혹시 테니스 선수 크리스 에버트가 이탈리아 사람인가요?
-    11.49s  <ret> 발화 (turn4 첫 프레임)
-    11.88s  agent 발화 시작: <ret> 크리스 에버트는 미국 출신의 전 프로 테니스 선수로, 역사상 가장 위대한 선수 중 한 명으로 꼽힙
-    11.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: Chris Evert is an American former professional tennis player, widely r
-    12.12s  user  발화 끝
-    16.79s  user  발화 시작: 네.
-    17.19s  user  발화 끝
-    18.41s  agent 발화 끝
-    18.91s  user  발화 시작: 그럼 마라 산탄젤로는요? 이탈리아 선수 맞죠?
-    21.91s  <ret> 발화 (turn7 첫 프레임)
-    21.98s  agent 발화 시작: <ret> 마라 산탄젤로는 은퇴한 이탈리아 프로 테니스 선수이고, 최고 순위는 단식 이십오위였습니다.
-    21.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: Mara Santangelo is a retired Italian professional tennis player who ac
-    22.19s  user  발화 끝
-    25.16s  user  발화 시작: 네.
-    25.70s  user  발화 끝
-    28.24s  user  발화 시작: 이십오위면 꽤 잘하는 선수였네요. —
-    28.36s  agent 발화 끝
-    30.34s  user  발화 시작: …혹시 마라 산탄젤로는 에버트처럼 유명한 선수였나요?
-    30.50s  user  발화 끝
-    33.93s  agent 발화 시작: 마라 산탄젤로는 에버트만큼 널리 알려진 선수는 아니었지만, 이탈리아에서는 꽤 유명한 선수였습니다.
-    34.04s  user  발화 끝
-    40.46s  user  발화 시작: 그렇군요. 마라 산탄젤로는 언제 은퇴했나요?
-    40.65s  agent 발화 끝
-    42.84s  <ret> 발화 (turn13 첫 프레임)
-    43.24s  agent 발화 시작: <ret> 마라 산탄젤로는 이천십일년 오월 이탈리아 오픈에 참가한 후 프로 테니스에서 은퇴했습니다.
-    43.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Mara Santangelo retired from professional tennis in May 2011, after pa
-    43.41s  user  발화 끝
-    49.49s  agent 발화 끝
+     0.00s  user  발화 시작: 트레버 프랭글리 선수가 라이트급 말고 다른 체급에서 싸운 적이 있나요?
+     3.96s  <ret> 발화 (turn1 첫 프레임)
+     4.11s  agent 발화 시작: <ret> 트레버 프랭글리 선수는 라이트급 외에도 페더급에서도 경기를 치렀습니다.
+     4.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: Trevor Prangley has competed in the Featherweight division, in additio
+     4.31s  user  발화 끝
+     6.82s  user  발화 시작: 네.
+     7.17s  user  발화 끝
+     8.83s  agent 발화 끝
+     9.47s  user  발화 시작: 페더급이라고요? 음, 그 체급에서 얼마나 활약했는지 궁금하네요.
+    13.43s  <ret> 발화 (turn4 첫 프레임)
+    13.50s  agent 발화 시작: <ret> 페더급에서는 세 번 경기를 했고, 한 번 이기고 두 번 졌다가 라이트급에 집중했습니다.
+    13.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: Prangley fought three times in the Featherweight division, winning one
+    13.68s  user  발화 끝
+    16.95s  user  발화 시작: 네.
+    17.41s  user  발화 끝
+    19.19s  agent 발화 끝
+    19.63s  user  발화 시작: 잠깐만요, 그럼 라이트급으로 전향하기 전에 페더급에서 패배한 두 번의 경기는 언제였죠? —
+    25.26s  user  발화 시작: … 혹시 그 경기 결과에 대해 좀 더 자세히 알 수 있을까요?
+    25.42s  user  발화 끝
+    28.36s  <ret> 발화 (turn8 첫 프레임)
+    28.43s  agent 발화 시작: <ret> 페더급에서 패배한 두 번의 경기는 이천십오년 십일월 이십칠일 제이슨 영 선수와의 경기와 이천십육년
+    28.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: His two losses in the Featherweight division were against Jason Young 
+    28.49s  user  발화 끝
+    39.10s  user  발화 시작: 알렉스 리치 선수와의 경기는 어떻게 진행됐는지 기억나시나요?
+    39.19s  agent 발화 끝
+    43.07s  <ret> 발화 (turn10 첫 프레임)
+    43.23s  agent 발화 시작: <ret> 알렉스 리치 선수는 이천십육년 이월 이십칠일 캘리포니아주 산호세에서 열린 벨레이터 백사십팔에서 심
+    43.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.46s]: Alex Ricci defeated Trevor Prangley by unanimous decision at Bellator 
+    43.46s  user  발화 끝
+    54.69s  agent 발화 끝
+    55.10s  user  발화 시작: 아, 벨레이터 경기였군요. 혹시 프랭글리 선수가 다른 단체에서도 활동했었나요?
+    59.73s  agent 발화 시작: 트레버 프랭글리 선수는 다양한 단체에서 활동했습니다. 어떤 단체가 궁금하신가요?
+    59.81s  user  발화 끝
+    65.47s  agent 발화 끝

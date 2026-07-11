@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "태형",
+#     "name": "재현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-04-20",
+#       "date": "2026-06-26",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2026-05-03",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-11-19",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-09-22",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-07-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-06-01",
+#       "date": "2026-06-05",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -56,30 +58,32 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "title": "Researching a used car",
+#       "date": "2026-02-19",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 근처에 약국 좀 찾아줄 수 있어? 위도 삼십삼 점 사 사…
-     3.98s  user  발화 끝
-     5.29s  user  발화 시작: …경도 -백십이 점 영 칠야.
-     7.26s  <ret> 발화 (turn2 첫 프레임)
-     7.33s  agent 발화 시작: <ret> 주변에 Walgreens, CVS Pharmacy, Safeway Pharmacy가 있어요. 가까
-     7.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) pharmacies: Walgreens, CVS Pharmacy, Safeway Pharmacy
-     7.40s  user  발화 끝
-    10.48s  user  발화 시작: 맞아요.
-    11.31s  user  발화 끝
-    13.86s  agent 발화 끝
-    13.98s  user  발화 시작: Walgreens까지 가는 길 좀 알려줘.
-    15.66s  <ret> 발화 (turn5 첫 프레임)
-    16.05s  agent 발화 시작: <ret> Walgreens까지는 이 점 오마일, 약 칠분 정도 걸립니다. 길 안내를 시작해 드릴까요?
-    16.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) Directions to Walgreens: Drive 2.5 miles, approximately 
-    16.24s  user  발화 끝
-    21.75s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 밤에 숙소 예약 좀 알아봐 줄 수 있어? 조용한 곳으로.
+     3.96s  agent 발화 시작: 어떤 지역을 찾으시나요?
+     4.02s  user  발화 끝
+     5.39s  agent 발화 끝
+     5.43s  user  발화 시작: 음… 해운대 쪽으로 괜찮을 것 같아.
+     7.83s  agent 발화 시작: 해운대요? 해운대에서 조용한 숙소를 찾아보겠습니다—
+     7.83s  user  발화 끝
+    10.37s  user  발화 시작: … 바닷가 바로 앞은 좀 시끄러울 것 같고, 조금 안쪽에 있는 곳으로 알아봐 줄 수 있을까?
+    11.06s  agent 발화 끝
+    15.45s  <ret> 발화 (turn5 첫 프레임)
+    15.84s  agent 발화 시작: <ret> 해운대 브리즈 호텔은 해운대구 해운대로 백이십삼번지에 위치하며, 일박당 십오만 원이고 현재 다섯개
+    15.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: {"hotel_name": "Hotel Haeundae Breeze", "address": "123 Haeundae-ro, H
+    15.98s  user  발화 끝
+    20.95s  user  발화 시작: 네.
+    21.78s  user  발화 끝
+    24.33s  agent 발화 시작: 평점이 꽤 높네요. 혹시 다른 조건도 있으신가요?
+    24.36s  agent 발화 끝
+    27.43s  agent 발화 끝

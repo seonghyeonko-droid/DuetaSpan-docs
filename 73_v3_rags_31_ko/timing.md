@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "민훈",
+#     "name": "정서",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,56 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-03-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-05-26",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "date": "2025-09-09",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-30",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-08-31",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-06-30",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-14",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이천십칠년 슬로베니아 대통령 선거에서 누가 이겼는지 알려주시겠어요?
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     3.89s  agent 발화 시작: <ret> 이천십칠년 슬로베니아 대통령 선거에서는 보루트 파호르 님이 마르얀 샤레츠 님을 이겨서 당선되셨습니
-     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.67s]: Borut Pahor won the 2017 Slovenian presidential election, defeating Ma
-     4.02s  user  발화 끝
-    11.56s  agent 발화 끝
+     0.00s  user  발화 시작: 미니언즈 삼에서 미니언즈 목소리를 누가 연기했는지 궁금해요.
+     3.40s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  user  발화 끝
+     3.63s  agent 발화 시작: <ret> 미니언즈 목소리는 프랑스 애니메이터이자 성우인 피에르 코팽이 연기했어요. [happy] 정말 귀여
+     3.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: Pierre Coffin is a French animator and voice actor who notably voices 
+    10.67s  agent 발화 끝

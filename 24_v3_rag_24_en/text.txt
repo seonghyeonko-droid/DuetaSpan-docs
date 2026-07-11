@@ -1,98 +1,98 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Drael, a practical and reassuring supportive advisor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Lorara, a thoughtful and soft-spoken supportive advisor who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Rosa",
+    "name": "Alice",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
+    "nationality": "British",
     "gender": "female",
-    "age_range": "late 30s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-03",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-05-22",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2026-03-12",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-22",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-01-13",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "date": "2026-04-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-10-06",
+      "date": "2026-03-21",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-12-25",
+      "category": "home",
+      "text": "User's home address is 974 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-26",
-      "title": "Planning a birthday dinner",
+      "date": "2025-08-04",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Good afternoon. I’m trying to understand how the Indian budget process works.
-[  0.02s][moshi] Good afternoon to you too.
-[  0.03s][user ] What’s ⟨ret@0.00s⟩ the first step in creating the budget?
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: The Union budget preparation begins around September-October, with ministries submitting their initial estimat⟧ The Union budget preparation actually begins around September or October, with ministries submitting their initial estimates.
-[  0.08s][user ] And ⟨ret@0.02s⟩ who ultimately decides the final budget details?
-[  0.10s][moshi] ⟦⚡SPAN@0.10s: The final budget is decided by the Union Cabinet, led by the Prime Minister and the Finance Minister.⟧ The final budget details are decided by the Union Cabinet, led by the Prime Minister and the Finance Minister.
-[  0.14s][user ] Is the Finance Minister always the key person?
-[  0.15s][moshi] Yes, the Finance Minister plays a central role in the budget process. It’s a significant responsibility.
-[  0.18s][user ] When ⟨ret@0.00s⟩ is the budget usually presented to Parliament?
-[  0.20s][moshi] ⟦⚡SPAN@0.20s: The Union Budget is typically presented to Parliament on the last working day of February.⟧ The Union Budget is typically presented to Parliament on the last working day of February.
-[  0.23s][user ] What happens if that day falls on a weekend?
-[  0.25s][moshi] The presentation is shifted to the preceding working day if the last day of February is a weekend.
-[  0.28s][user ] [happy] So it’s always *in* February?
-[  0.29s][moshi] Yes, it’s consistently presented in February, though the exact date shifts slightly each year.
-[  0.32s][user ] Is ⟨ret@0.00s⟩ there a fixed date, or does it vary?
-[  0.34s][moshi] ⟦⚡SPAN@0.34s: While usually the last working day of February, the date can be changed by the government.⟧ While it’s usually the last working day of February, the date can be changed by the government.
-[  0.37s][user ] «backchannel» Yeah, totally.
-[  0.38s][user ] Who decides when to change that date, though?
-[  0.39s][moshi] The decision to alter the presentation date rests with the Union Cabinet, guided by the Finance Ministry.
-[  0.43s][user ] What ⟨ret@0.05s⟩ about the timing of the budget presentation itself? What time?
-[  0.45s][moshi] ⟦⚡SPAN@0.45s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It is currently Friday, July 10, 2026 at 2:47 PM in Asia/Seoul. The budget is usually presented around 11 AM.
-      CALL: {"function": "get_time", "arguments": {}}
-[  0.49s][user ] 11 AM… that's quite early. Is that a tradition?
-[  0.51s][moshi] It is a long-standing convention, allowing time for debate and scrutiny throughout the parliamentary session.
-[  0.54s][user ] And ⟨ret@0.39s⟩ who actually delivers the budget speech?
-[  0.55s][moshi] ⟦⚡SPAN@0.55s: The Finance Minister traditionally presents the Union Budget speech in Parliament.⟧ The Finance Minister traditionally presents the Union Budget speech in Parliament.
-[  0.57s][user ] Does the Prime Minister ever present it?
-[  0.59s][moshi] While rare, the Prime Minister has occasionally presented the budget speech in the past.
-[  0.62s][user ] [curious] What were the circumstances then?
-[  0.63s][moshi] It usually happens when a new government is formed or during times of significant economic change.
-[  0.66s][user ] So, the Finance Minister is the usual one, but.
-[  0.68s][moshi] «interrupted» —the Prime Minister can step in when needed, yes. It demonstrates the government’s commitment—
-[  0.71s][user ] «interrupts_prev» …but ⟨ret@0.65s⟩ what about before India became independent? Who presented the budget then?
-[  0.73s][moshi] ⟦⚡SPAN@0.73s: Before 1947, the budget was presented by the Viceroy of India, representing the British Crown.⟧ Before 1947, the budget was presented by the Viceroy of India, representing the British Crown.
-[  0.76s][user ] So, it wasn’t an Indian official at all?
-[  0.77s][moshi] Correct. The Viceroy acted as the financial representative of the British government in India.
-[  0.80s][user ] «backchannel» Uh-huh.
-[  0.80s][user ] Interesting. And what role did Parliament play then?
-[  0.82s][moshi] Before independence, the Legislative Council had limited powers regarding the budget; it could debate, but not fully control it.
-[  0.86s][user ] [sigh] It’s so different now.
-[  0.87s][moshi] It truly is. The Indian Parliament now holds full authority over the budget process. It’s a testament to our sovereignty.
-[  0.91s][user ] Okay, ⟨ret@0.69s⟩ one last question. What determines the financial year itself?
-[  0.93s][moshi] ⟦⚡SPAN@0.93s: India’s financial year runs from April 1st to March 31st, established in 1866.⟧ India’s financial year runs from April 1st to March 31st, a system established back in 1866.
-[  0.96s][user ] 1866! That's a long time ago.
-[  0.97s][moshi] Yes, it’s a tradition with deep historical roots. It's a fairly standard practice, though.
+[  0.00s][user ] Hi Lorara, how are you doing today?
+[  0.02s][moshi] I’m doing very well, thank you for asking.
+[  0.04s][user ] «backchannel» Mhm.
+[  0.04s][user ] That’s ⟨ret@0.00s⟩ good to hear. Who is the current head coach of Real Madrid?
+[  0.08s][moshi] ⟦⚡SPAN@0.08s: Carlo Ancelotti is an Italian professional football manager and former player who is currently the manager of ⟧ The current head coach of Real Madrid is Carlo Ancelotti, a very experienced manager.
+[  0.12s][user ] Has he always been their coach?
+[  0.13s][moshi] No, he hasn’t. He’s had multiple stints with the club.
+[  0.16s][user ] Could ⟨ret@0.00s⟩ you tell me when he first became their coach?
+[  0.19s][moshi] ⟦⚡SPAN@0.19s: Carlo Ancelotti first became Real Madrid manager on 1 June 2013, signing a three-year deal with the club.⟧ He first became Real Madrid manager on June 1st, 2013, signing a three-year deal.
+[  0.22s][user ] And how did he do during that first period?
+[  0.25s][moshi] He led them to La Decima – their tenth Champions League title. It was a very successful time.
+[  0.30s][user ] «backchannel» Right.
+[  0.30s][user ] What ⟨ret@0.00s⟩ happened after that first three years?
+[  0.32s][moshi] ⟦⚡SPAN@0.32s: After his first three years at Real Madrid, Carlo Ancelotti left the club on 1 June 2016 to become manager of ⟧ After that first period, he left Real Madrid on June 1st, 2016 to manage Bayern Munich.
+[  0.36s][user ] «backchannel» Yeah, totally.
+[  0.37s][user ] Oh, so he didn’t stay with Real Madrid continuously?
+[  0.39s][moshi] No, he didn’t. He had a period managing other teams before returning.
+[  0.42s][user ] When ⟨ret@0.37s⟩ did he come back to Real Madrid?
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: Carlo Ancelotti returned to Real Madrid on 1 June 2021, signing a contract until 30 June 2024.⟧ He returned to Real Madrid on June 1st, 2021, with a contract until June 30th, 2024.
+[  0.49s][user ] What about Zinedine Zidane?.
+[  0.50s][moshi] «interrupted» Zinedine Zidane was also a very successful coach for them. –
+[  0.53s][user ] «interrupts_prev» …Wasn’t ⟨ret@0.15s⟩ he the one before Ancelotti’s second stint?
+[  0.55s][moshi] ⟦⚡SPAN@0.55s: Zinedine Zidane managed Real Madrid from 2016 to 2018 and again from March 2019 to May 2021.⟧ He managed the team from 2016 to 2018, and then again from March 2019 to May 2021.
+[  0.60s][user ] What ⟨ret@0.54s⟩ did Zidane win with Real Madrid?
+[  0.62s][moshi] ⟦⚡SPAN@0.62s: Zinedine Zidane won three consecutive Champions League titles with Real Madrid from 2016 to 2018.⟧ He won three Champions League titles in a row, from 2016 to 2018, which is remarkable.
+[  0.66s][user ] «backchannel» Mm-hmm.
+[  0.66s][user ] That’s ⟨ret@0.29s⟩ incredible! What’s the weather like in Madrid right now?
+[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) 28.5°C, humidity 45%, wind 7.2 km/h⟧ The weather in Madrid is currently 28.5 degrees Celsius, with 45% humidity and a 7.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Madrid"}}
+[  0.74s][user ] «backchannel» Uh-huh.
+[  0.74s][user ] Sounds ⟨ret@0.36s⟩ warm. What about the time there?
+[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) It is Friday, July 10, 2026 at 3:47 PM in Europe/Madrid right now.⟧ It is currently 3:47 PM in Madrid, on Friday, July 10th, 2026.
+      CALL: {"function": "get_time", "arguments": {"location": "Madrid"}}
+[  0.79s][user ] Do you think Ancelotti will stay until his contract ends?
+[  0.82s][moshi] That’s hard to say. Football management can be unpredictable, but he seems very settled there.
+[  0.86s][user ] Do you have any tips for staying focused while working from home?
+[  0.89s][moshi] Creating a dedicated workspace can be very helpful, and scheduling regular breaks is essential.
+[  0.93s][user ] «backchannel» Yeah.
+[  0.94s][user ] That’s good advice. Thanks, Lorara.
+[  0.95s][moshi] You’re very welcome. I’m glad I could offer some helpful suggestions. Remember, small changes can make a big difference.

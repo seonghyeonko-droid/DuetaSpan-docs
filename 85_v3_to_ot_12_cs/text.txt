@@ -1,105 +1,98 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> Viaia는 건강 및 일상 습관 관리를 돕는 실용적이고 안심감을 주는 웰니스 코치입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 긍정적이고 지지적인 조언자 Kaeia입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Kim",
+    "name": "Nora",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "home",
-      "text": "User's home address is 28 Oak Avenue."
+      "date": "2026-06-08",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-04-22",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-05-09",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-02-21",
+      "date": "2026-03-25",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-02-08",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2026-03-21",
+      "category": "home",
+      "text": "User's home address is 151 Oak Avenue."
     },
     {
-      "date": "2026-01-07",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-10-06",
+      "category": "work",
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-10-13",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-08-05",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-07",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 동물보호법이 언제 만들어졌는지 ⟨ret@2.57s⟩ 궁금해.
-[  2.89s][moshi] ⟦⚡SPAN@2.89s: The Animal Welfare Act was first passed on August 27, 1958, and has been amended several times.⟧ 음, 구월 이십칠일 천구백오십팔년이 그 법이 만들어진 날짜인데, 그 이후로 여러 번 수정됐어요.
-[ 10.35s][user ] 아, 그렇구나. 그 법은 대체 뭘 하는 거야?
-[ 13.09s][moshi] 그 법은 연구, 전시, 운송, 그리고 판매업체에서 동물을 사용할 때 동물의 복지 기준을 정하고 있어요.
-[ 20.09s][user ] «to_other» 치킨 꺼냈어?
-[ 21.10s][user ] …상하면 안 되니까.
-[ 22.57s][moshi] 미리 계획하는 습관은 정말 좋은 거 같아요. 나중에 스트레스를 줄여주거든요.
-[ 25.45s][user ] «backchannel» 어어.
-[ 27.90s][user ] 그 법은 연방 ⟨ret@29.13s⟩ 법이야?
-[ 29.37s][moshi] ⟦⚡SPAN@29.37s: The Animal Welfare Act is a United States federal law that regulates the treatment of animals.⟧ 네, 맞아요. 미국 연방 법이고, 동물의 대우를 규제하는 법이에요.
-[ 31.82s][user ] «backchannel» 음.
-[ 33.62s][moshi] 동물의 복지를 위해 특정 기준을 충족하도록 설계됐어요.
-[ 35.58s][user ] «backchannel» 응.
-[ 38.88s][user ] 주 법은 어때? 그것도 있어?
-[ 41.20s][moshi] 많은 주에서 연방 법보다 더 엄격한 동물 복지 법을 가지고 있어요.
-[ 46.53s][user ] 흥미롭네. 캘리포니아 주에 대한 정보 좀 찾아줄래?
-[ 50.69s][moshi] ⟨ret@50.61s⟩ ⟦⚡SPAN@50.69s: (tool result) California’s animal welfare laws are among the most comprehensive in the US, covering topics fro⟧ 캘리포니아 주는 농장 동물, 펫샵, 동물 실험 등 다양한 분야를 포괄하는 법이 아주 잘 되어 있어요.
-      CALL: {"function": "search", "arguments": {"query": "California animal welfare laws"}}
-[ 58.64s][user ] 와, 그거…꽤 포괄적이네.
-[ 61.75s][moshi] 그것은 주 내 동물 복지에 대한 강한 의지를 반영하는 것이에요.
-[ 64.06s][user ] «backchannel» 그래.
-[ 66.20s][user ] 학대 신고하면 어떻게 ⟨ret@67.58s⟩ 해야 돼?
-[ 67.98s][moshi] ⟦⚡SPAN@67.98s: In California, animal cruelty is a misdemeanor, punishable by up to one year in county jail and a $20,000 fine⟧ 캘리포니아 주에서는 동물 학대에 대해 최대 1년의 징역형과 이만 달러의 벌금이 부과될 수 있어요.
-[ 71.94s][user ] «backchannel» 응.
-[ 75.16s][user ] 알아두면 좋네. 근처에 수의사 찾는 방법은?
-[ 79.13s][moshi] ⟨ret@79.06s⟩ ⟦⚡SPAN@79.14s: (tool result) Veterinarian: Animal Medical Center of California, 123 Main St, Los Angeles, CA 90012, (213) 555⟧ 캘리포니아 동물 의료 센터가 근처에 있는데, 로스앤젤레스 메인 스트리트 123번지에 있어요.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "veterinarian"}}
-[ 85.81s][user ] 좋아! 전화번호는?
-[ 87.83s][moshi] 213-555-1212예요.
-[ 89.67s][user ] «backchannel» 응.
-[ 93.45s][user ] 고마워. 정말 도움이 됐어.
-[ 95.64s][moshi] 천만에요. 정보를 잘 아는 것이 책임감 있는 반려동물 소유의 중요한 단계예요.
-[ 97.41s][user ] «backchannel» 맞아.
-[101.58s][user ] 나도 그거 좀 더 신경 쓰려고 노력 중이야. 가끔 힘들지만.
-[105.30s][moshi] 물론 노력은 필요하지만, 작은 변화라도 동물의 삶에 큰 영향을 줄 수 있어요.
-[107.69s][user ] «backchannel» 응.
-[111.41s][user ] 아…맞아. 버스터 검진 예약해야겠다.
-[114.66s][moshi] 정말 좋은 생각이에요. 예약 가능한 시간을 찾아 드릴까요?
-[118.57s][user ] 아니, 괜찮아. 직접 전화할게.
-[121.02s][moshi] 오늘 정보를 얻는 데 도움을 드릴 수 있어서 기뻐요.
-[126.11s][user ] 그래, 다시 한번 고마워, 비아야.
-[129.04s][moshi] 천만에요. 반려동물의 복지를 우선시하는 것은 정말 멋진 일이에요.
+[  0.00s][user ] 안녕하세요. 혹시… 누구였는지 말씀해 주실 수 있으세요?
+[  3.81s][user ] “The House of the Rising Sun”에는 누가 ⟨ret@6.25s⟩ 출연했었나요?
+[  6.56s][moshi] ⟦⚡SPAN@6.57s: The cast of "The House of the Rising Sun" includes David Janssen, Lolita Morena, and Abby Dalton.⟧ “The House of the Rising Sun”에는 데이비드 얀센, 로리타 모레나, 애비 달튼 씨가 출연하셨는데, 정말 매력적인 배우들이셨어요.
+[ 15.32s][user ] 음, 에이미 스마트 씨도 ⟨ret@17.52s⟩ 출연했었나요?
+[ 17.92s][moshi] ⟦⚡SPAN@17.92s: Amy Smart played Jenny Porter in "The House of the Rising Sun," a role that showcased her talent.⟧ 네, 에이미 스마트 씨도 출연하셨어요! 제니 포터 역할을 맡으셨고, 그 역할에 정말 많은 것을 더하셨답니다.
+[ 25.60s][user ] 아, 그렇군요. 그 쇼는 언제 처음 ⟨ret@29.05s⟩ 방영됐나요?
+[ 29.36s][moshi] ⟦⚡SPAN@29.38s: "The House of the Rising Sun" originally aired in 1994, captivating audiences with its unique storyline.⟧ 처음 방영된 건 천구백구십사년이었어요—꽤 오래전이네요! 당시에는 정말 인기 있는 쇼였어요.
+[ 35.94s][user ] 처음 방영했을 때 봤던 것 같아요… 어머님은 정말 좋아하셨어요.
+[ 40.44s][user ] «to_other» 세탁은 다 하셨나요?
+[ 41.69s][user ] … 아무튼, 로리타 모레나 씨는 그 후에 뭐에 ⟨ret@46.01s⟩ 출연했나요?
+[ 46.17s][moshi] ⟦⚡SPAN@46.17s: Lolita Morena appeared in several films and television shows after "The House of the Rising Sun," including "B⟧ “The House of the Rising Sun” 이후에 로리타 모레나 씨는 “Beverly Hills, 구 공 이 일 공” 같은 쇼에 출연하셨어요—꽤 다양한 경력을 가지셨답니다!
+[ 56.42s][user ] 아, 와, 그 쇼는 완전히 잊고 있었네요!
+[ 59.81s][moshi] 그때 엄청난 인기를 끌었었죠, 안 그랬어요? 구십년대에는 정말 상징적인 쇼들이 많았어요!
+[ 66.68s][user ] 네, 정말 그랬어요. 데이비드 얀센에 대한 정보를 좀 찾아 ⟨ret@71.31s⟩ 주시겠어요?
+[ 71.47s][moshi] ⟦⚡SPAN@71.47s: David Janssen was an American film and television actor best known for his starring role as Dr. Richard Kimble⟧ 데이비드 얀센은 특히 “The Fugitive”에서 리처드 킴블 박사 역할을 맡으면서 아주 유명한 배우였어요.
+[ 74.08s][user ] «backchannel» 예.
+[ 78.12s][user ] 아! The Fugitive! 할아버지께서 매주 꼭 챙겨 보셨어요.
+[ 82.54s][moshi] 정말 고전이죠! 많은 가족들이 함께 시청하면서, 그런 쇼들이 공동체 의식을 만들어 냈어요.
+[ 85.93s][user ] «backchannel» 음.
+[ 90.75s][user ] 어디서 스트리밍하는지 궁금하네요… ⟨ret@92.95s⟩
+[ 93.34s][moshi] ⟦⚡SPAN@93.35s: (tool result) You can stream "The Fugitive" on Amazon Prime Video, Tubi, and Pluto TV, as of July 10, 2026.⟧ 좋은 소식이 있어요! 지금 Amazon Prime Video, Tubi, 그리고 Pluto TV에서 “The Fugitive”를 스트리밍할 수 있어요.
+      CALL: {"function": "search", "arguments": {"query": "where to stream the fugitive"}}
+[ 97.27s][user ] «backchannel» 음.
+[103.05s][user ] 와, 정말 좋은 정보네요!
+[104.95s][moshi] 정말 다행이에요! 제가 찾도록 도와드릴 수 있어서 기뻐요. 뭘 볼지 결정하는 데 드는 피로를 줄여주는 것 같아요.
+[113.02s][user ] 고마워요, 카에이아.
+[114.34s][moshi] 천만에요! 언제든지 엔터테인먼트 선택을 간소화하는 데 도움이 필요하시면 말씀해 주세요.

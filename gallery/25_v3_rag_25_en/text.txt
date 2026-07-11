@@ -1,89 +1,93 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Vona, a encouraging and non-judgmental counselor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Fiaia, a warm and attentive wellness coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Mia",
+    "name": "Charlie",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "50s",
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
+      "date": "2026-02-28",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-04-12",
-      "category": "home",
-      "text": "User's home address is 468 Elm Street."
-    },
-    {
-      "date": "2026-02-09",
+      "date": "2025-09-26",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-15",
+      "date": "2025-09-07",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-09-22",
+      "date": "2025-07-28",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-27",
+      "category": "home",
+      "text": "User's home address is 513 Oak Avenue."
+    },
+    {
+      "date": "2025-07-17",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-26",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-08-25",
+      "date": "2026-05-13",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to remember a tennis player… Italian, I think.
-[  3.59s][moshi] It’s wonderful you’re recalling happy memories! Sometimes a little nudge helps.
-[  5.23s][user ] «backchannel» Mhm.
-[  7.88s][user ] Yes, well, was it Chris Evert who was Italian?
-[ 10.64s][moshi] ⟨ret@10.56s⟩ ⟦⚡SPAN@10.64s: Chris Evert is an American former professional tennis player and one of the greatest of all time.⟧ Chris Evert is actually American, and considered one of the greatest players of all time.
-[ 16.37s][user ] Oh. Hmm. Okay, so not her then.
-[ 19.22s][moshi] It’s perfectly alright to adjust our thinking as we learn more, it’s part of the process.
-[ 22.36s][user ] «backchannel» Yeah.
-[ 23.22s][user ] Who was the Italian tennis player then? I’m drawing a blank.
-[ 26.46s][moshi] «interrupted» Let me see if I can find that for you—
-[ 27.56s][user ] «interrupts_prev» …Was Mara Santangelo ever highly ⟨ret@29.63s⟩ ranked?
-[ 29.95s][moshi] ⟦⚡SPAN@29.95s: Mara Santangelo is an Italian former professional tennis player who reached a career-high ranking of world No.⟧ Mara Santangelo is the Italian former professional tennis player you’re thinking of, and she reached a career-high ranking of world No. 25.
-[ 35.79s][user ] «backchannel» Mhm.
-[ 38.53s][user ] Oh! That’s right, Mara Santangelo! Thank you.
-[ 42.36s][moshi] You’re very welcome! It's lovely when those memories resurface, isn’t it?
+[  0.00s][user ] Hi Fiaia, I'm trying to settle in here.
+[  3.19s][moshi] Welcome to the city!
+[  4.72s][user ] I was reading about Trevor Prangley, the fighter?
+[  7.33s][moshi] ⟨ret@7.26s⟩ ⟦⚡SPAN@7.34s: Trevor Prangley competed in Lightweight and Welterweight divisions during his professional boxing career.⟧ He actually fought in two different weight classes—Lightweight and Welterweight—during his career.
+[ 10.47s][user ] «backchannel» Yeah.
+[ 13.07s][user ] Welterweight, okay. What’s the difference between those ⟨ret@15.79s⟩ two?
+[ 16.11s][moshi] ⟦⚡SPAN@16.11s: Lightweight is generally for boxers weighing between 135 and 140 pounds, while Welterweight is for those betwe⟧ Generally, Lightweight is for boxers weighing between one hundred and thirty-five and one hundred and forty pounds, while Welterweight is for those between one hundred and forty-seven and one hundred and fifty-four.
+[ 23.38s][user ] «backchannel» Yeah.
+[ 27.21s][user ] So, a good ten to fourteen pound difference.
+[ 29.79s][moshi] «interrupted» That's right, it can be quite a significant difference—
+[ 31.75s][user ] «interrupts_prev» …do you know if he ever fought any famous opponents ⟨ret@35.06s⟩ in Welterweight?
+[ 35.45s][moshi] ⟦⚡SPAN@35.46s: Trevor Prangley faced Vernon Forrest in a Welterweight bout on December 18, 1998, losing by unanimous decision⟧ He did face Vernon Forrest in a Welterweight bout on December eighteenth, nineteen ninety-eight, and unfortunately lost by unanimous decision.
+[ 43.61s][user ] Oh, okay. Good to know. Thanks, Fiaia.
+[ 45.64s][moshi] You’re very welcome!

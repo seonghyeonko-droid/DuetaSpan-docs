@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Camille",
+#     "name": "Oscar",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -12,81 +12,76 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "German",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "early 20s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-13",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-04-27",
+#       "category": "home",
+#       "text": "User's home address is 365 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-09-13",
+#       "date": "2026-01-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-10-14",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
 #       "date": "2025-08-26",
-#       "category": "home",
-#       "text": "User's home address is 704 Elm Street."
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-08-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "date": "2025-07-02",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-11",
+#       "date": "2026-04-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-09",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to request five dollars fro | S2 That’s great, thank you. Can you c | S3 …Actually, before you do that, cou | S4 No, that’s all for now, thanks Elu
 
-     0.00s  user  발화 시작: I need to request five dollars from David Lee, please.
-     3.34s  <ret> 발화 (turn1 첫 프레임)
-     3.42s  agent 발화 시작: <ret> I’ve sent a request for five dollars to David Lee. The
-     3.42s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.97s]: (tool result) Payment request sent to David Lee for $5.00. Transaction
-     3.51s  user  발화 끝
-     9.52s  user  발화 시작: Yeah.
-    10.15s  user  발화 끝
-    13.39s  agent 발화 끝
-    13.55s  user  발화 시작: That’s great, thank you. Can you check if he’s accepted it y
-    17.25s  user  발화 끝
-    17.33s  agent 발화 시작: Let me quickly check the status of that request for you—
-    19.32s  user  발화 시작: …Actually, before you do that, could you remind me what day 
-    20.01s  agent 발화 끝
-    22.45s  <ret> 발화 (turn6 첫 프레임)
-    22.69s  agent 발화 시작: <ret> David Lee has accepted the payment! Five dollars has b
-    22.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Payment of $5.00 to David Lee completed. Transaction ID:
-    22.83s  user  발화 끝
-    31.05s  user  발화 시작: No, that’s all for now, thanks Elunas.
-    31.08s  agent 발화 끝
-    33.74s  user  발화 끝
-    33.83s  agent 발화 시작: You’re very welcome. I’m glad I could help streamline that f
-    40.69s  agent 발화 끝
+     0.00s  user  발화 시작: I need to update the settings file. Overwrite it with theme 
+     7.45s  <ret> 발화 (turn1 첫 프레임)
+     7.53s  agent 발화 시작: <ret> I’ve just updated your settings file with those prefer
+     7.53s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.13s]: (tool result) File 'config/settings' overwritten successfully.
+     7.60s  user  발화 끝
+     9.80s  user  발화 시작: Mm-hmm.
+    10.43s  user  발화 끝
+    14.66s  agent 발화 끝
+    14.84s  user  발화 시작: Hmm, that's good. But can you also check what’s currently in
+    20.28s  <ret> 발화 (turn4 첫 프레임)
+    20.68s  agent 발화 시작: <ret> Anya. The profile file currently shows your name as An
+    20.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.96s]: (tool result) Anya Petrova\28\Seoul
+    20.71s  user  발화 끝
+    23.58s  user  발화 시작: Yeah.
+    24.21s  user  발화 끝
+    28.54s  agent 발화 시작: I’m glad to see your location is set to Seoul—it’s a fantast
+    28.65s  agent 발화 끝
+    36.72s  user  발화 시작: …Actually, could you change my age to twenty-nine in that pr
+    37.39s  agent 발화 끝
+    41.27s  <ret> 발화 (turn8 첫 프레임)
+    41.50s  agent 발화 시작: <ret> I’ve updated your age to twenty-nine in the profile fi
+    41.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) File 'profile' overwritten successfully.
+    41.54s  user  발화 끝
+    47.62s  agent 발화 끝

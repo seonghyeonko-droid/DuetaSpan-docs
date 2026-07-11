@@ -1,95 +1,72 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Broia, a warm and attentive personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Gelira, a grounded and empathetic life coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Manon",
+    "name": "Charlotte",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "German",
     "gender": "female",
-    "age_range": "50s",
-    "language": "English"
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
+      "date": "2026-06-17",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2026-05-09",
+      "date": "2026-05-18",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-03-05",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
+      "text": "User is planning a trip to Vietnam in March."
     },
     {
-      "date": "2026-02-15",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-01-24",
+      "category": "work",
+      "text": "User works as a nurse."
     },
     {
-      "date": "2025-09-26",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-06-29",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-11-02",
+      "category": "home",
+      "text": "User's home address is 745 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-27",
-      "title": "Booked a dentist appointment",
+      "date": "2025-09-16",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-20",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering, what is the movie *The Imitation Game* ⟨ret@3.36s⟩ about?
-[  3.59s][moshi] «interrupted» ⟦⚡SPAN@3.60s: The film depicts the life of British cryptanalyst Alan Turing, who led the team that cracked the Enigma code d⟧ It tells the story of Alan Turing, a brilliant mind—
-[  6.49s][user ] «interrupts_prev» …was he the only one working on ⟨ret@8.76s⟩ that?
-[  9.15s][moshi] ⟦⚡SPAN@9.16s: Bletchley Park was the central site for the United Kingdom's Government Code and Cypher School during World Wa⟧ Bletchley Park was where the UK’s codebreakers worked during the war.
-[ 10.93s][user ] «backchannel» Yeah.
-[ 13.56s][user ] That sounds incredibly ⟨ret@15.62s⟩ stressful.
-[ 15.93s][moshi] ⟦⚡SPAN@15.94s: Alan Turing developed a machine called the "Bombe" to help decipher the Enigma-encrypted messages.⟧ He developed a machine called the “Bombe” to help break the Enigma code.
-[ 17.53s][user ] «backchannel» Yeah, totally.
-[ 20.41s][moshi] It significantly sped up the process of cracking those complex codes.
-[ 23.13s][user ] «backchannel» Yeah, yeah.
-[ 24.76s][user ] Did cracking the code actually shorten the war?
-[ 27.84s][moshi] ⟨ret@27.60s⟩ ⟦⚡SPAN@27.84s: Historians estimate that the work at Bletchley Park shortened the war by two to four years.⟧ Many historians believe their work shortened the war by two to four years.
-[ 32.01s][user ] That’s a huge ⟨ret@33.34s⟩ impact!
-[ 33.74s][moshi] ⟦⚡SPAN IRRELEVANT@33.74s: The current temperature in Rome, Italy is 28.5°C with clear skies and a light breeze from the south at 6.2 km/⟧ It really was, saving countless lives in the process.
-[ 37.17s][moshi] It’s a story of immense courage and intellectual achievement, really.
-[ 40.49s][user ] I think I’ll add that to my ⟨ret@42.70s⟩ watchlist.
-[ 42.85s][moshi] ⟦⚡SPAN@42.86s: Benedict Cumberbatch received an Academy Award nomination for his portrayal of Alan Turing in *The Imitation G⟧ Benedict Cumberbatch was nominated for an Oscar for his role.
-[ 46.60s][user ] He’s such a talented actor.
-[ 48.63s][moshi] He truly captured Turing’s complexity, I think.
-[ 52.07s][user ] Thanks for telling me about it, Broia.
-[ 54.23s][moshi] You’re very welcome. It's a story that deserves to be remembered.
+[  0.00s][user ] Who plays Violet Baudelaire in the Netflix ⟨ret@3.05s⟩ series?
+[  3.26s][moshi] ⟦⚡SPAN@3.29s: Malina Weissman played Violet Baudelaire in the Netflix series *A Series of Unfortunate Events*.⟧ That would be Malina Weissman, she wonderfully portrayed Violet Baudelaire. It’s a role that really showcased her talent.
+[ 11.73s][user ] Oh, okay. Do you think Violet was a good role ⟨ret@15.18s⟩ model?
+[ 15.58s][moshi] ⟦⚡SPAN IRRELEVANT@15.58s: The current temperature in Ulaanbaatar, Mongolia is -18.2°C, with clear skies and a wind speed of 6.7 m/s.⟧ Violet certainly was! She’s incredibly resourceful and always puts her siblings first. Those are wonderful qualities, don’t you think?
+[ 24.67s][user ] I do, um, I think so. What about Klaus?
+[ 28.29s][moshi] ⟨ret@27.98s⟩ ⟦⚡SPAN@28.30s: Louis Hynes portrayed Klaus Baudelaire, Violet’s brother, in *A Series of Unfortunate Events*.⟧ Louis Hynes played Klaus, Violet's brother. He brought a lovely bookishness to the character, didn’t he?
+[ 32.86s][user ] «backchannel» Uh-huh.
+[ 34.93s][user ] Yes, he did.
+[ 36.27s][moshi] It’s nice to see siblings supporting each other, even in such difficult circumstances. It reminds us how important those bonds are.

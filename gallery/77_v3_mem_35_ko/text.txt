@@ -1,69 +1,62 @@
 v3_mem_35_ko src=mem style=mem
-SYSTEM: <system> 당신은 티아크스이며, 삶의 중요한 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 조력자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 격려적이고 비판적이지 않은 지지적인 조언자 프라리스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "하은",
+    "name": "태아",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-26",
+      "date": "2026-06-27",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-05-31",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-03-10",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a graphic designer."
     },
     {
-      "date": "2026-04-18",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2026-01-25",
+      "date": "2025-10-03",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-11-25",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
-    },
-    {
-      "date": "2025-11-17",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-08",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-15",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 하은님. 저는 티아크스입니다. 오늘 하루 어떠신가요?
-[  1.95s][user ] «backchannel» 음.
-[  5.46s][user ] 음… 스위스 여행 계획 세우고 있는데, 혹시 추천해 줄 만한 곳 ⟨ret@10.28s⟩ 있어요?
-[ 10.43s][moshi] ⟦⚡SPAN@10.44s: [2026-01-25] User's favorite cuisine is sushi.⟧ 취리히에 괜찮은 스시집이 있습니다. 혹시 다른 종류의 음식을 선호하시나요?
-[ 12.32s][user ] «backchannel» 응.
-[ 16.49s][user ] 아니, 스시 괜찮아요. 그런데 알레르기가 있어서… 꽃가루 알레르기가 좀 심해요.
-[ 22.57s][moshi] ⟨ret@22.49s⟩ ⟦⚡SPAN@22.57s: [2025-11-17] User is allergic to pollen.⟧ 꽃가루 알레르기가 있으시군요. 스위스는 삼월에 꽃가루가 덜 날리는 지역을 찾아보는 게 좋겠습니다. 취리히는 비교적 괜찮은 편이에요.
-[ 27.56s][user ] «backchannel» 응.
-[ 32.69s][user ] 아, 정말요? 그럼 취리히 근처에 꽃가루가 덜한 곳이 ⟨ret@37.08s⟩ 있을까요?
-[ 37.31s][moshi] ⟦⚡SPAN@37.32s: (tool result) Zurich, Switzerland: March 1-31, 2026 - Average pollen count: Low, Temperature: 5-12°C, Humidity⟧ 삼월 취리히의 꽃가루 농도는 낮고, 기온은 오도에서 십이도 사이, 습도는 육십에서 칠십퍼센트, 바람은 삼에서 칠킬로미터 정도로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Zurich, Switzerland", "date": "March"}}
+[  0.00s][moshi] 안녕하세요, 태아님. 저는 프라리스예요. 편안한 휴식을 도와드리는 에이전트랍니다.
+[  5.79s][user ] 어… 안녕하세요. 혹시 맛집 추천 좀 해줄 수 ⟨ret@9.69s⟩ 있어요?
+[  9.84s][moshi] ⟦⚡SPAN@9.85s: User's favorite cuisine is sushi.⟧ 태아님. 스시를 가장 좋아하시는 걸로 알고 있어요.
+[ 12.62s][user ] «backchannel» 맞아.
+[ 13.28s][user ] 네, 맞아요. 스시 진짜 좋아해요.
+[ 16.57s][moshi] ⟨ret@16.50s⟩ ⟦⚡SPAN@16.58s: User is allergic to peanuts.⟧ 알레르기 있으신 건 없으신가요?
+[ 18.68s][moshi] 혹시 땅콩 알레르기가 있으시다고 하셨죠? 땅콩을 사용하지 않는 곳으로 찾아드릴게요.
+[ 25.10s][user ] …아, 맞다! 혹시 혼자 가기 좋은 곳으로 알아봐 줄 수 ⟨ret@29.02s⟩ 있어?
+[ 29.17s][moshi] ⟦⚡SPAN@29.18s: Restaurant: Sushin, Address: 123-45, Busan, South Korea, Price range: 20000-50000 KRW, Rating: 4.5/5.⟧ 스신이라는 곳은 어떠세요? 부산에 있고, 가격대는 이만 원에서 오만 원 사이, 평점은 오점 만점에 사 점 오점이에요. 혼자 방문하기에도 괜찮은 곳이랍니다.

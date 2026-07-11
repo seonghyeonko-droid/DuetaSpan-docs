@@ -4,88 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Lena",
+#     "name": "Jonas",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-19",
+#       "date": "2026-02-26",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-04-04",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-03-08",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-01-26",
+#       "date": "2025-12-30",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-12",
+#       "date": "2025-12-07",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-02",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-02",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hello Lena, it’s lovely to meet you. My name is Lelix, and I
-     0.14s  user  발화 시작: Yeah.
-     0.14s  agent 발화 끝
-     0.14s  user  발화 시작: A counselor? That’s… unexpected. I thought this was just a h
+     0.00s  agent 발화 시작: Hello Jonas, it’s lovely to meet you. My name is Hiolo, and 
+     0.13s  user  발화 시작: Yeah.
+     0.13s  agent 발화 끝
+     0.14s  user  발화 시작: Hi Hiolo… that’s a pretty name. Um, I’m just feeling really 
      0.14s  user  발화 끝
-     0.23s  agent 발화 시작: It’s true I can assist with many things, but I also enjoy he
-     0.23s  user  발화 끝
-     0.37s  user  발화 시작: Welll… I’ve been feeling really overwhelmed lately with work
-     0.37s  agent 발화 끝
-     0.45s  agent 발화 시작: It sounds as though you’re carrying quite a load, Lena. Over
-     0.45s  user  발화 끝
-     0.58s  user  발화 시작: Yeah.
-     0.58s  agent 발화 끝
-     0.59s  agent 발화 시작: —and perhaps find ways to create more space for ourselves. D
-     0.59s  user  발화 끝
-     0.72s  user  발화 시작: Not really, to be honest. It always feels like there’s anoth
-     0.72s  agent 발화 끝
-     0.83s  agent 발화 시작: That sense of endlessness is exhausting, isn’t it? Perhaps w
-     0.83s  user  발화 끝
+     0.22s  agent 발화 시작: It’s understandable to feel stuck, Jonas. Many people experi
+     0.22s  user  발화 끝
+     0.35s  user  발화 시작: Yeah, yeah.
+     0.35s  agent 발화 끝
+     0.36s  agent 발화 시작: Sometimes, simply voicing the challenges can be a good first
+     0.36s  user  발화 끝
+     0.50s  user  발화 시작: Really?
+     0.50s  agent 발화 끝
+     0.51s  user  발화 시작: Well, I keep second-guessing my career path. I studied histo
+     0.51s  user  발화 끝
+     0.62s  agent 발화 시작: It sounds like there's a disconnect between your passions an
+     0.62s  user  발화 끝
+     0.78s  user  발화 시작: I loved the research, the storytelling… but those don’t real
+     0.78s  agent 발화 끝
+     0.85s  agent 발화 시작: They absolutely can, Jonas. Skills like research and storyte
+     0.85s  user  발화 끝
      1.00s  agent 발화 끝

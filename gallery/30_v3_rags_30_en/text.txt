@@ -1,55 +1,73 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Teal, a kind and steady counselor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Vomi, a grounded and empathetic life coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Léa",
+    "name": "Freya",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "early 20s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-12",
+      "date": "2026-06-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-05-16",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2026-05-02",
+      "category": "home",
+      "text": "User's home address is 997 Pine Court."
+    },
+    {
+      "date": "2025-09-24",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-04-08",
+      "date": "2025-09-02",
       "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2026-02-06",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-09-05",
-      "category": "home",
-      "text": "User's home address is 744 Oak Avenue."
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-03",
+      "date": "2026-06-24",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you ⟨ret@0.05s⟩ know who sang “Nothing’s Gonna Stop Us Now”?
-[  0.29s][moshi] ⟦⚡SPAN@0.29s: Grace Slick of the band Starship performed “Nothing’s Gonna Stop Us Now,” which was released in 1985 as part o⟧ That song is beautifully uplifting! It was Grace Slick of Starship who sang “Nothing’s Gonna Stop Us Now”, released in 1985 for the movie *Mannequin*.
+[  0.00s][user ] Where does most ⟨ret@0.12s⟩ nutrient absorption happen in the small intestine?
+[  0.36s][moshi] ⟦⚡SPAN@0.36s: The jejunum is the region of the small intestine where the majority of chemical digestion and nutrient absorpt⟧ Most chemical digestion and nutrient absorption happens in the jejunum, a key part of staying well-rested and nourished.

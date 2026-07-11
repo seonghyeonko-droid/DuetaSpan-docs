@@ -4,56 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "연재",
+#     "name": "수호",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-17",
+#       "date": "2026-06-05",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-05-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-08",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-04-05",
+#       "date": "2025-08-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-11-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
-#     },
-#     {
-#       "date": "2025-08-08",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-06-20",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2026-06-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -63,87 +55,93 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때요? | S2 혹시… 그 날짜에 서울에서… | S3 인터파크… 알겠습니다. 그럼, 그 축제장까지 가는 대중교통은  | S4 아니요, 지금은 괜찮아요. 정말 고마워요.
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 부산 갈 만한 곳 있을까요? | S2 아, 부산역에서 출발하는군요. | S3 살아있는 문어라… 조금 무서울 것 같아요. | S4 그럼 조금 더 저렴한 곳을 찾아봐 주세요.
 
-     0.00s  user  발화 시작: 오늘 날씨 어때요?
-     1.34s  user  발화 끝
-     1.52s  <ret> 발화 (turn1 첫 프레임)
-     1.83s  agent 발화 시작: <ret> 서울 날씨는 현재 이십팔도이고, 습도는 칠십팔퍼센트, 바람은 시속 사 점 일킬로미터입니다. 혹시 
-     1.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) The weather in Seoul is 28.0°C, humidity 78%, wind 4.1 k
-    11.38s  agent 발화 끝
-    11.50s  user  발화 시작: 그럼 이번 주 토요일 날씨는 어때요?
-    13.81s  <ret> 발화 (turn3 첫 프레임)
-    14.12s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십일일 서울 날씨는 삼십 점 이도, 습도 칠십이퍼센트, 바람은 시속 육 점
-    14.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) The weather in Seoul on July 11, 2026 is forecast to be 
-    14.22s  user  발화 끝
-    22.47s  agent 발화 끝
-    22.65s  user  발화 시작: 아, 칠월 십일일… 그날 중요한 약속이 있는데, 혹시 비 올 가능성은 없을까요?
-    28.51s  <ret> 발화 (turn5 첫 프레임)
-    28.63s  user  발화 끝
-    28.74s  agent 발화 시작: <ret> 칠월 십일일 서울의 강수 확률은 삼십퍼센트입니다. 크게 걱정하지 않으셔도 될 것 같아요.
-    28.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) The probability of precipitation in Seoul on July 11, 20
-    30.78s  user  발화 시작: 네.
-    31.28s  user  발화 끝
-    34.71s  agent 발화 끝
-    34.97s  user  발화 시작: 삼십퍼센트라면… 그래도 혹시 우산을 챙겨가는 게 좋겠죠?
-    38.88s  agent 발화 시작: 네, 혹시 모르니 우산을 챙겨가시는 게 좋겠어요. 대비하는 게 마음 편하실 거예요.
-    38.90s  user  발화 끝
-    44.39s  user  발화 시작: 혹시… 그 날짜에 서울에서…
-    44.54s  agent 발화 끝
-    47.43s  user  발화 끝
-    48.91s  user  발화 시작: …열리는 행사 같은 거 있을까요?
-    50.61s  user  발화 끝
-    50.95s  <ret> 발화 (turn11 첫 프레임)
-    51.10s  agent 발화 시작: <ret> 칠월 십일일에는 올림픽공원에서 서울 국제 음악 축제가 열릴 예정입니다. 혹시 관심 있으신가요?
-    51.11s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.62s]: (tool result) On July 11, 2026, the Seoul International Music Festival
-    55.88s  user  발화 시작: 그렇죠.
-    56.60s  user  발화 끝
-    57.73s  agent 발화 끝
-    58.85s  user  발화 시작: 서울 국제 음악 축제—
-    60.73s  user  발화 시작: …그 축제 티켓 예매는 어떻게 해요?
-    60.78s  user  발화 끝
-    62.76s  <ret> 발화 (turn15 첫 프레임)
-    62.99s  user  발화 끝
-    63.07s  agent 발화 시작: <ret> 칠월 십일일 서울 국제 음악 축제 티켓은 인터파크에서 온라인으로 예매하실 수 있습니다.
-    63.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) Tickets for the Seoul International Music Festival on Ju
-    68.59s  user  발화 시작: 인터파크… 알겠습니다. 그럼, 그 축제장까지 가는 대중교통은 어떻게 타면 좋을까요?
-    68.95s  agent 발화 끝
-    75.10s  <ret> 발화 (turn17 첫 프레임)
-    75.48s  agent 발화 시작: <ret> 현재 위치에서 지하철 오호선을 타고 올림픽공원역 삼번 출구로 나오시면 됩니다.
-    75.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) From your current location, take subway line 5 to Olympi
-    75.54s  user  발화 끝
-    79.35s  user  발화 시작: 정말요?
-    80.17s  user  발화 끝
-    80.90s  agent 발화 끝
-    81.56s  user  발화 시작: 오호선… 알았어요. 혹시 지금 제 주변에 맛있는 식당도 찾아볼까요?
-    86.28s  user  발화 끝
-    86.41s  <ret> 발화 (turn20 첫 프레임)
-    86.64s  agent 발화 시작: <ret> 주변에는 '비빔밥 하우스'라는 식당이 있는데, 평점이 사 점 오점입니다. 괜찮으시다면 안내해 드릴
-    86.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) There are several restaurants nearby, including 'Bibimba
-    94.52s  agent 발화 끝
-    94.79s  user  발화 시작: 비빔밥 하우스… 평점 괜찮네요. 거기는 예약이 가능한가요?
-    99.97s  user  발화 끝
-   100.03s  <ret> 발화 (turn22 첫 프레임)
-   100.09s  agent 발화 시작: <ret> 비빔밥 하우스에 칠월 십일 저녁 일곱시에 예약이 완료되었습니다. 확인 번호는 팔 칠 육 오 사 삼
-   100.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Reservation at Bibimbap House for July 10, 2026 at 7:00 
-   107.50s  agent 발화 끝
-   108.96s  user  발화 시작: 와, 정말 감사합니다. 예약까지 해주시고… 덕분에 너무 편하게 준비할 수 있겠어요.
-   114.28s  user  발화 끝
-   114.41s  agent 발화 시작: 천만에요. 도움이 되었다니 다행입니다. 혹시 다른 필요한 건 없으신가요?
-   116.27s  user  발화 시작: 네네.
-   116.77s  user  발화 끝
-   119.48s  user  발화 시작: 아니요, 지금은 괜찮아요. 정말 고마워요.
-   119.50s  agent 발화 끝
-   122.71s  user  발화 끝
-   123.13s  agent 발화 시작: 천만에요. 언제든 필요하시면 저를 찾아주세요. 힘든 시기이지만, 긍정적인 마음을 가지시는 게 중요합니다.
-   131.18s  agent 발화 끝
-   131.55s  user  발화 시작: 네, 노력해 볼게요.
-   132.84s  user  발화 끝
-   132.84s  agent 발화 시작: 네, 잘 하실 수 있을 거예요. 긍정적인 생각은 어려움을 이겨내는 데 큰 힘이 됩니다.
-   136.81s  user  발화 시작: 네.
-   137.27s  user  발화 끝
-   138.72s  agent 발화 끝
-   140.26s  user  발화 시작: 그럼, 이만…
-   141.49s  user  발화 끝
-   141.51s  agent 발화 시작: 네, 좋은 하루 보내세요.
-   142.98s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 부산 갈 만한 곳 있을까요?
+     2.88s  <ret> 발화 (turn1 첫 프레임)
+     2.91s  user  발화 끝
+     3.19s  agent 발화 시작: <ret> 부산은 해운대 해변과 감천문화마을로 유명한 한국의 두 번째로 큰 도시예요.
+     3.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: Busan is South Korea’s second-largest city, known for its beaches, col
+     8.38s  agent 발화 끝
+     8.54s  user  발화 시작: 감천문화마을이요? 거긴 어떤 곳이에요?
+    10.85s  <ret> 발화 (turn3 첫 프레임)
+    11.16s  agent 발화 시작: <ret> 감천문화마을은 부산에 있는 언덕 마을인데, 계단식으로 알록달록한 집들이 지어져 있어요.
+    11.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: Gamcheon Culture Village is a hillside village in Busan, South Korea, 
+    11.27s  user  발화 끝
+    18.48s  agent 발화 끝
+    18.62s  user  발화 시작: 사진 찍기 좋겠네요.
+    20.00s  user  발화 끝
+    20.27s  agent 발화 시작: 사진 찍기 정말 좋은 곳일 거예요.
+    22.38s  agent 발화 끝
+    22.76s  user  발화 시작: 혹시 거기 가는 버스 시간표 알 수 있을까요?
+    25.55s  <ret> 발화 (turn7 첫 프레임)
+    25.62s  agent 발화 시작: <ret> 감천문화마을로 가는 버스는 부산역에서 매 이십분 간격으로, 아침 여섯시부터 밤 열시까지 운행해요.
+    25.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.75s]: (tool result) Buses to Gamcheon Culture Village depart from Busan Stat
+    25.67s  user  발화 끝
+    30.90s  user  발화 시작: 맞아요.
+    31.54s  user  발화 끝
+    33.37s  agent 발화 끝
+    33.53s  user  발화 시작: 아, 부산역에서 출발하는군요.
+    36.30s  user  발화 끝
+    36.33s  agent 발화 시작: 네, 부산역에서 출발하는 버스가 있어요.
+    39.16s  user  발화 시작: 혹시 근처에 맛집도 있을까요? 해산물 먹고 싶어요.
+    39.25s  agent 발화 끝
+    42.96s  user  발화 끝
+    42.97s  <ret> 발화 (turn12 첫 프레임)
+    43.37s  agent 발화 시작: <ret> 부산의 자갈치시장은 한국에서 가장 큰 해산물 시장인데, 신선한 해산물과 식당이 다양하게 있어요.
+    43.37s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.18s]: Jagalchi Fish Market in Busan is South Korea’s largest seafood market,
+    50.54s  agent 발화 끝
+    50.71s  user  발화 시작: 자갈치시장! 거긴 가봐야겠네요.
+    53.57s  user  발화 끝
+    53.60s  agent 발화 시작: 자갈치시장은 꼭 가보셔야 할 곳이에요.
+    56.13s  user  발화 시작: 자갈치시장에서 뭘 먹어봐야 할까요?
+    56.19s  agent 발화 끝
+    58.86s  user  발화 끝
+    59.01s  <ret> 발화 (turn16 첫 프레임)
+    59.08s  agent 발화 시작: <ret> 자갈치시장에서 인기 있는 해산물 요리로는 살아있는 문어, 구운 조개, 그리고 다양한 종류의 회가 
+    59.09s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.23s]: Popular seafood dishes at Jagalchi Fish Market include live octopus, g
+    61.79s  user  발화 시작: 네.
+    62.34s  user  발화 끝
+    66.31s  agent 발화 끝
+    66.57s  user  발화 시작: 살아있는 문어라… 조금 무서울 것 같아요.
+    70.36s  user  발화 끝
+    70.50s  agent 발화 시작: 살아있는 문어는 조금 특별한 경험이 될 거예요.
+    73.73s  agent 발화 끝
+    75.30s  user  발화 시작: 혹시 거기 근처 호텔도 알아봐 줄 수 있을까요?
+    78.12s  <ret> 발화 (turn21 첫 프레임)
+    78.34s  agent 발화 시작: <ret> 롯데호텔 부산은 자갈치시장에서 영 점 오킬로미터 거리에 있고, 객실은 일박에 이십오만 원이에요.
+    78.35s  user  발화 끝
+    78.36s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.00s]: (tool result) The Lotte Hotel Busan is 0.5 km from Jagalchi Fish Marke
+    82.47s  user  발화 시작: 그렇군요.
+    83.30s  user  발화 끝
+    85.29s  user  발화 시작: 이십오만 원이면 괜찮네요. —
+    85.34s  agent 발화 끝
+    87.69s  user  발화 끝
+    87.75s  user  발화 시작: … 혹시 자갈치시장 말고 다른 해변 근처 호텔도 찾아볼 수 있을까요?
+    91.64s  <ret> 발화 (turn25 첫 프레임)
+    92.03s  agent 발화 시작: <ret> 파크 하얏트 부산은 해운대 해변에서 일 점 이킬로미터 거리에 있고, 객실은 일박에 삼십만 원이에요
+    92.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) The Park Hyatt Busan is 1.2 km from Haeundae Beach, with
+    92.10s  user  발화 끝
+    96.28s  user  발화 시작: 정말요?
+    97.10s  user  발화 끝
+    98.57s  agent 발화 시작: 파크 하얏트 부산은 조금 가격대가 높은 편이에요.
+    98.66s  agent 발화 끝
+    99.59s  user  발화 시작: 네.
+   100.18s  user  발화 끝
+   102.08s  agent 발화 끝
+   102.44s  user  발화 시작: 그럼 조금 더 저렴한 곳을 찾아봐 주세요.
+   104.89s  <ret> 발화 (turn30 첫 프레임)
+   105.20s  agent 발화 시작: <ret> 씨클라우드 호텔 해운대는 해운대 해변에서 영 점 삼킬로미터 거리에 있고, 객실은 일박에 십팔만 원
+   105.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) The Sea Cloud Hotel Haeundae is 0.3 km from Haeundae Bea
+   105.21s  user  발화 끝
+   113.54s  agent 발화 끝
+   114.65s  user  발화 시작: 십팔만 원이면 괜찮네요. 그럼 씨클라우드 호텔로 예약해 주세요.
+   118.75s  <ret> 발화 (turn32 첫 프레임)
+   118.95s  user  발화 끝
+   118.98s  agent 발화 시작: <ret> 씨클라우드 호텔 해운대 예약이 확정되었어요. 이인실이고, 이천이십육년 칠월 십이일부터 이천이십육년
+   118.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.75s]: (tool result) Reservation confirmed at Sea Cloud Hotel Haeundae for 2 
+   131.73s  agent 발화 끝
+   131.79s  user  발화 시작: 감사합니다!
+   133.07s  user  발화 끝
+   133.14s  agent 발화 시작: 즐거운 부산 여행 되세요.
+   134.90s  agent 발화 끝

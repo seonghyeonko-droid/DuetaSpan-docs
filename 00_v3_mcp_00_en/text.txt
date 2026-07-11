@@ -1,10 +1,10 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Kax, a kind and steady life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Bio, a practical and reassuring counselor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Ruby",
+    "name": "Paul",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,56 +12,61 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "female",
-    "age_range": "early 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-13",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-06-22",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2026-04-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-10-15",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-10-08",
+      "date": "2026-06-12",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-07-27",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-06-08",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
+    },
+    {
+      "date": "2025-10-02",
+      "category": "home",
+      "text": "User's home address is 711 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-09",
-      "title": "Planning a birthday dinner",
+      "date": "2026-02-12",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-10-09",
-      "title": "Setting up a home network",
+      "date": "2025-11-29",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-06-17",
+      "date": "2025-06-21",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -72,48 +77,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I ⟨ret@0.00s⟩ need to send three dollars and twenty cents to user alpha.
-[  0.03s][moshi] ⟦⚡SPAN@0.03s: (tool result) Payment successful. Transaction ID: 9876543210. Balance remaining: 96.80.⟧ Alright, I’ve just sent three dollars and twenty cents to user alpha from your app balance. Your transaction ID is 9876543210, and you have ninety-six dollars and eighty cents remaining.
-      CALL: {"function": "Payment_1_MakePayment", "arguments": {"to": "user alpha", "amount": "3.20", "from": "my app balance"}}
-[  0.09s][user ] Oh, good. That's a relief.
-[  0.10s][moshi] It’s wonderful to hear that it’s a relief! Managing finances can be stressful, and a little peace of mind is a great thing.
-[  0.15s][user ] «backchannel» Okay.
-[  0.15s][user ] Um, ⟨ret@0.08s⟩ what's the weather like today?
-[  0.16s][moshi] ⟦⚡SPAN@0.16s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.⟧ Right now, the weather is twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[  0.22s][user ] «backchannel» Right.
-[  0.22s][moshi] It *is* quite pleasant, isn’t it? A comfortable day like this is perfect for spending a little time outdoors with the family.
-[  0.27s][user ] I ⟨ret@0.00s⟩ need to find a good restaurant nearby.
-[  0.28s][moshi] ⟦⚡SPAN@0.28s: (tool result) "The Cozy Bistro", 4.5 stars, 0.5 km, Italian. "Spice Route", 4.2 stars, 1.2 km, Indian.⟧ I found a couple of options! "The Cozy Bistro" is four and a half stars, point five kilometers away, and serves Italian cuisine. "Spice Route" is four point two stars, one point two kilometers away, and offers Indian food.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[  0.37s][user ] What ⟨ret@0.05s⟩ about Thai?
-[  0.37s][moshi] ⟦⚡SPAN@0.37s: (tool result) "Siam Delight", 4.7 stars, 2.1 km. "Thai Emerald", 4.3 stars, 3.5 km.⟧ I see two Thai restaurants: "Siam Delight" has four point seven stars and is two point one kilometers away, while "Thai Emerald" has four point three stars and is three point five kilometers away.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Thai"}}
-[  0.45s][user ] Siam ⟨ret@0.16s⟩ Delight sounds good. Can you reserve a table there for four people at seven tonight?
-[  0.48s][moshi] ⟦⚡SPAN@0.48s: (tool result) Reservation confirmed. Name: Siam Delight. Time: 7:00 PM. Party size: 4. Confirmation ID: AB123C⟧ Wonderful! Your table for four at Siam Delight is confirmed for seven PM tonight. Your confirmation ID is AB123CD.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Siam Delight", "people": "4", "time": "7:00 PM"}}
-[  0.52s][user ] Perfect. Thanks!
-[  0.53s][moshi] You're very welcome. Planning a nice family dinner is a lovely way to connect.
-[  0.56s][user ] Do ⟨ret@0.50s⟩ you remember what I said about sending money to alpha?
-[  0.58s][moshi] ⟦⚡SPAN@0.58s: [2026-07-10] I need to send three dollars and twenty cents to user alpha.⟧ Yes, you mentioned earlier that you needed to send three dollars and twenty cents to user alpha.
-[  0.62s][user ] Good. I was worried you’d forget.
-[  0.63s][moshi] Oh, I assure you, I won’t forget. Sometimes it helps to write things down, though, doesn't it? A little external memory can be very freeing.
-[  0.68s][user ] Maybe. ⟨ret@0.61s⟩ What’s on TV tonight?
-[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) "Space Explorers", 8:00 PM, Action. "Cozy Cottage", 9:30 PM, Romance.⟧ Tonight, "Space Explorers" is on at eight PM—it’s an action film—and "Cozy Cottage," a romance, starts at nine thirty PM.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[  0.74s][user ] That sounds… boring.
-[  0.74s][moshi] It’s perfectly okay to not be excited about every option! Finding something everyone enjoys can be a challenge. Perhaps a family game night?
-[  0.79s][user ] That’s actually a good idea.
-[  0.80s][moshi] It often is! Simple, shared experiences are often the most rewarding.
-[  0.82s][user ] «backchannel» Mhm.
-[  0.83s][user ] What ⟨ret@0.44s⟩ time is it right now?
-[  0.84s][moshi] ⟦⚡SPAN@0.84s: (tool result) It is Friday, July 10, 2026 at 4:58 PM in Asia/Seoul right now.⟧ It is currently Friday, July tenth, two thousand twenty-six, at four fifty-eight PM in Asia/Seoul.
-      CALL: {"function": "get_time", "arguments": {}}
-[  0.87s][user ] Okay.
-[  0.87s][moshi] Time really does fly, doesn’t it? It’s important to savor these moments with loved ones.
-[  0.91s][user ] «backchannel» Yeah, yeah.
-[  0.91s][user ] I think I'll just relax tonight.
-[  0.92s][moshi] That sounds like a wonderful plan. Sometimes, the best thing we can do is simply rest and recharge.
-[  0.96s][user ] «backchannel» Yeah, yeah.
-[  0.97s][user ] Thanks, Kax.
-[  0.97s][moshi] You’re very welcome. Remember, taking care of yourself *is* taking care of your family.
+[  0.00s][user ] I ⟨ret@0.00s⟩ need to order three of the blue ceramic vases from that website.
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) Order created: 78923, $75.00, pending.⟧ Alright, I’ve created an order for three blue ceramic vases, order number 78923, totaling seventy-five dollars.
+      CALL: {"function": "create_order", "arguments": {"quantity": "3", "product_name": "blue ceramic vase"}}
+[  0.12s][user ] Great! ⟨ret@0.00s⟩ And can you check the weather in Seoul right now?
+[  0.16s][moshi] ⟦⚡SPAN@0.16s: (tool result) Seoul: 26.5°C, humidity 68%, wind 3.2 km/h, condition: partly cloudy.⟧ The weather in Seoul is currently twenty-six point five degrees Celsius, partly cloudy, with sixty-eight percent humidity.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[  0.23s][user ] That sounds pleasant.
+[  0.24s][moshi] It does, doesn’t it? A little warmth can be really uplifting.
+[  0.28s][user ] I'm thinking of going to a concert next week.
+[  0.32s][moshi] That sounds like fun! Do you have a specific artist or venue in mind?
+[  0.37s][user ] «backchannel» Mm-hmm.
+[  0.38s][user ] Uh, ⟨ret@0.09s⟩ I was hoping to see something… jazz, maybe?
+[  0.41s][moshi] ⟦⚡SPAN@0.41s: (tool result) Jazz Night at Sejong Center: July 17, 2026, 8:00 PM, tickets from $40.⟧ There’s a Jazz Night at the Sejong Center on July seventeenth, 2026, at eight PM, with tickets starting at forty dollars.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"keywords": "jazz concert", "date": "next week"}}
+[  0.50s][user ] «backchannel» Wow.
+[  0.50s][moshi] Wonderful! It’s a well-regarded venue, and the Sejong Center often hosts excellent musicians.
+[  0.55s][user ] «backchannel» Yeah.
+[  0.56s][user ] I ⟨ret@0.28s⟩ think I'll get tickets. Can you find them for me?
+[  0.60s][moshi] ⟦⚡SPAN@0.60s: (tool result) Tickets purchased: Jazz Night, 2026-07-17, 1, AX12BZ.⟧ I’ve purchased one ticket to Jazz Night at the Sejong Center on July seventeenth, 2026; your confirmation number is AX12BZ.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Jazz Night at Sejong Center", "date": "July 17, 2026"}}
+[  0.68s][user ] «backchannel» Right.
+[  0.69s][user ] Perfect, thank you.
+[  0.70s][moshi] You’re very welcome. It’s always good to have something to look forward to, isn't it?
+[  0.76s][user ] Definitely. I'm a little stressed…
+[  0.78s][user ] …about work, actually.
+[  0.79s][moshi] I understand. Work can be a significant source of stress. Sometimes just acknowledging it helps, you know?
+[  0.86s][user ] «backchannel» Yeah.
+[  0.86s][user ] Yeah, it does a little. I just feel overwhelmed.
+[  0.90s][moshi] Overwhelm is a common feeling, especially when facing many demands. Taking small steps can make a big difference. Perhaps we can explore some simple relaxation techniques?

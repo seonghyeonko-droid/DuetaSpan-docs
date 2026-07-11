@@ -4,171 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "우국",
+#     "name": "민람",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-27",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-12-17",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-10-29",
+#       "date": "2025-09-08",
 #       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-08-31",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-08-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "date": "2025-06-03",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-03",
+#       "date": "2025-11-22",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-06",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-18",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 누라 씨. 인도 철도에 역이 얼마나 있나요? | S2 좋아요. 추천 부탁드려요. | S3 사 점 오점이면 꽤 괜찮네요. | S4 …숙소도 추천해 줄 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 그 노래, '조지아의 불 꺼진 밤'을 누가 썼는지 궁금해. | S2 음… 사실 요즘 날씨가 제일 궁금하네요. | S3 오, 꽤 덥겠네요. | S4 아, 그렇군요.
 
-     0.00s  user  발화 시작: 안녕하세요, 누라 씨. 인도 철도에 역이 얼마나 있나요?
+     0.00s  user  발화 시작: 그 노래, '조지아의 불 꺼진 밤'을 누가 썼는지 궁금해.
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn7 첫 프레임)
-     0.00s  <ret> 발화 (turn9 첫 프레임)
-     0.03s  agent 발화 시작: <ret> 인도 철도망에는 대략 칠천삼백사십구개의 역이 연결되어 있습니다. 여행 계획에 도움이 될까요?
-     0.03s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The Indian railway network connects about 7,349 stations.
-     0.03s  user  발화 끝
-     0.07s  user  발화 시작: 네.
-     0.07s  agent 발화 끝
-     0.07s  user  발화 시작: 와, 정말 많네요.
-     0.07s  user  발화 끝
-     0.08s  <ret> 발화 (turn17 첫 프레임)
-     0.08s  agent 발화 시작: 네, 규모가 꽤 크죠. 인도 여행을 생각하고 계신가요?
+     0.08s  agent 발화 시작: <ret> 그 노래를 작사한 분은 바비 러셀 님입니다. 꽤 유명한 노래죠.
+     0.08s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Bobby Russell.
      0.08s  user  발화 끝
-     0.11s  user  발화 시작: 네.
-     0.11s  agent 발화 끝
-     0.11s  user  발화 시작: 음… 아직 잘 모르겠어요. 혹시 서울에서 가장 가까운 바닷가 알려줄 수 있을까요?
-     0.11s  user  발화 끝
-     0.15s  agent 발화 시작: <ret> 서울에서 가장 가까운 바닷가는 자동차로 약 칠십사 점 칠킬로미터 떨어져 있고, 한시간 이십이분 정
-     0.15s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"distance": "74.7 km", "duration": "1h 22m", "route": "
-     0.15s  user  발화 끝
-     0.22s  user  발화 시작: 한시간 이십이분이면 괜찮네요.
-     0.22s  agent 발화 끝
-     0.23s  agent 발화 시작: <ret> 네, 당일치기 여행도 충분히 가능하겠어요.
-     0.23s  ⚡SPAN 주입(IRRELEVANT) [d'=0.02s / d_lead=0.02s]: The average price of a barrel of Brent crude oil on July 9, 2026, was 
-     0.23s  user  발화 끝
-     0.25s  agent 발화 시작: 혹시 여행 스타일을 조금 더 자세히 말씀해 주실 수 있을까요?
-     0.25s  agent 발화 끝
-     0.27s  <ret> 발화 (turn26 첫 프레임)
-     0.29s  user  발화 시작: 저는 조용하고 한적한 곳을 좋아해요.
-     0.29s  agent 발화 끝
-     0.30s  agent 발화 시작: 조용하고 한적한 곳을 선호하시는군요. 그럼 좀 더 여유로운 여행지를 추천해 드릴게요.
-     0.30s  user  발화 끝
-     0.34s  user  발화 시작: 좋아요. 추천 부탁드려요.
-     0.34s  agent 발화 끝
-     0.35s  agent 발화 시작: 음… 그럼 강원도에 있는 작은 어촌마을을 추천해 드릴게요.
-     0.35s  user  발화 끝
-     0.38s  user  발화 시작: 예.
-     0.38s  agent 발화 끝
-     0.38s  <ret> 발화 (turn21 첫 프레임)
-     0.38s  user  발화 시작: 강원도요? 어떤 곳인데요?
-     0.38s  user  발화 끝
-     0.40s  agent 발화 시작: <ret> 강릉의 주문진항은 잔잔한 바다와 신선한 해산물로 유명한 아담한 어촌마을입니다. 주문진항 공식 웹사
-     0.40s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Jumunjin Port in Gangneung, Gangwon-do is a charming fis
-     0.40s  user  발화 끝
-     0.46s  user  발화 시작: 주문진항… 이름이 예쁘네요.
-     0.46s  agent 발화 끝
-     0.47s  agent 발화 시작: 네, 이름처럼 아름다운 곳이에요. 바다를 바라보며 여유로운 시간을 보내실 수 있을 거예요.
-     0.47s  user  발화 끝
-     0.47s  <ret> 발화 (turn32 첫 프레임)
-     0.51s  user  발화 시작: 혹시 그곳에서 맛있는 해산물 식당도 추천해 줄 수 있을까요?
-     0.51s  agent 발화 끝
-     0.54s  agent 발화 시작: <ret> 주문진항 근처에는 해산물 천국이라는 식당이 있습니다. 평점은 사 점 오점이고, 가격은 이만 원에서
-     0.54s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) {"name": "Seafood Paradise", "rating": 4.5, "price": "₩2
-     0.54s  user  발화 끝
-     0.60s  user  발화 시작: 진짜요?
-     0.60s  agent 발화 끝
-     0.60s  user  발화 시작: 사 점 오점이면 꽤 괜찮네요.
-     0.60s  user  발화 끝
-     0.62s  agent 발화 시작: 네, 현지인들에게도 인기가 많은 곳이에요. 신선한 해산물을 맛볼 수 있습니다.
-     0.62s  user  발화 끝
-     0.65s  user  발화 시작: 이번 주 토요일에 갈 수 있을까요?
-     0.65s  agent 발화 끝
-     0.67s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오전 열시 삼십삼분입니다. 이번 주 토요일은 칠월 십일일입니
-     0.67s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) It is Friday, July 10, 2026 at 10:33 AM in Asia/Seoul ri
-     0.67s  user  발화 끝
-     0.72s  user  발화 시작: 아, 맞네요. 칠월 십일일이군요.
-     0.72s  agent 발화 끝
-     0.73s  agent 발화 시작: 네, 토요일에 주문진항으로 여행을 떠나시는 건 어떠세요?
-     0.73s  user  발화 끝
-     0.76s  user  발화 시작: 그렇죠.
-     0.76s  agent 발화 끝
-     0.76s  user  발화 시작: 좋아요. 혹시 그 근처에…
-     0.76s  user  발화 끝
-     0.78s  user  발화 시작: …숙소도 추천해 줄 수 있을까요?
-     0.78s  user  발화 끝
-     0.79s  agent 발화 시작: <ret> 주문진항 근처에는 오션뷰 호텔이 있습니다. 평점은 사 점 이점이고, 일박에 십오만 원입니다. 바다
-     0.79s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) {"name": "Ocean View Hotel", "rating": 4.2, "price": "₩1
-     0.79s  user  발화 끝
-     0.85s  user  발화 시작: 그렇죠.
-     0.85s  agent 발화 끝
-     0.86s  user  발화 시작: 십오만 원이면 괜찮은 가격이네요.
-     0.86s  user  발화 끝
-     0.87s  agent 발화 시작: 네, 바다를 바라보며 편안하게 휴식을 취할 수 있을 거예요.
-     0.87s  user  발화 끝
-     0.90s  user  발화 시작: 혹시 그 호텔 예약도 도와줄 수 있을까요?
-     0.90s  agent 발화 끝
-     0.93s  agent 발화 시작: 호텔 예약을 도와드릴 수는 있지만, 직접 결제는 고객님께서 진행하셔야 합니다. 괜찮으시겠어요?
-     0.93s  user  발화 끝
-     0.97s  user  발화 시작: 네, 괜찮아요. 예약해 주세요.
-     0.97s  agent 발화 끝
-     0.98s  agent 발화 시작: 오션뷰 호텔 일박 예약 진행해 드리겠습니다.
-     0.98s  user  발화 끝
+     0.12s  <ret> 발화 (turn8 첫 프레임)
+     0.18s  user  발화 시작: 아, 네.
+     0.18s  agent 발화 끝
+     0.20s  agent 발화 시작: 혹시 다른 노래에 대해서도 궁금하신 점이 있으신가요?
+     0.20s  user  발화 끝
+     0.26s  agent 발화 시작: 지금은 다른 질문에 답변드릴 수 있습니다.
+     0.26s  agent 발화 끝
+     0.32s  user  발화 시작: 네.
+     0.32s  agent 발화 끝
+     0.33s  agent 발화 시작: 어떤 종류의 음악을 좋아하시는지 여쭤봐도 될까요?
+     0.33s  user  발화 끝
+     0.39s  user  발화 시작: 음… 사실 요즘 날씨가 제일 궁금하네요.
+     0.39s  agent 발화 끝
+     0.44s  agent 발화 시작: <ret> 현재 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+     0.44s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Current conditions: 23.0°C, humidity 74%, wind 5.5 km/h.
+     0.44s  user  발화 끝
+     0.54s  user  발화 시작: 오, 꽤 덥겠네요.
+     0.54s  agent 발화 끝
+     0.57s  agent 발화 시작: 네, 오늘 하루는 꽤 더울 것으로 예상됩니다. 자외선 차단제를 꼭 챙기세요.
+     0.57s  user  발화 끝
+     0.59s  <ret> 발화 (turn13 첫 프레임)
+     0.67s  user  발화 시작: 아.
+     0.67s  agent 발화 끝
+     0.68s  user  발화 시작: 알겠습니다. 혹시 이번 주 토요일에 비가 올까요?
+     0.68s  user  발화 끝
+     0.75s  agent 발화 시작: <ret> 토요일인 칠월 십이일에는 최고 기온이 이십오도로 예상되고, 비가 올 확률은 육십퍼센트입니다. 바람
+     0.75s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Forecast for July 12, 2026: 25.0°C, chance of rain 60%, 
+     0.75s  user  발화 끝
+     0.89s  user  발화 시작: 아, 그렇군요.
+     0.89s  agent 발화 끝
+     0.91s  agent 발화 시작: 날씨에 대한 정보가 도움이 되셨다니 기쁩니다. 혹시 다른 계획이 있으신가요?
+     0.91s  user  발화 끝
      1.00s  agent 발화 끝

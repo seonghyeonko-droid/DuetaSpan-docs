@@ -1,81 +1,92 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Tho, a practical and reassuring personal guide who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Kariia, a upbeat and supportive life coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Zoe",
+    "name": "Jordan",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-02-24",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2026-02-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-09-21",
+      "date": "2026-05-19",
       "category": "home",
-      "text": "User's home address is 513 Cedar Lane."
+      "text": "User's home address is 861 Pine Court."
     },
     {
-      "date": "2025-09-17",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-02-02",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-08-16",
+      "date": "2026-01-17",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-10-02",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-07-23",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
+      "text": "User is planning a trip to Switzerland in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-28",
+      "date": "2025-07-12",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-04-22",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-06-05",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, ⟨ret@0.00s⟩ welll… where, uh, were the Anzacs supposed to land at Gallipoli?
-[  0.12s][moshi] ⟦⚡SPAN@0.12s: The Anzac troops were intended to land at Ari Burnu, on the western side of the Gallipoli Peninsula.⟧ They were intended to land at Ari Burnu, on the western side of the Gallipoli Peninsula. It’s good to revisit important historical details, you know?
-[  0.37s][user ] Oh, ⟨ret@0.08s⟩ okay. And what date was that supposed to happen on?
-[  0.48s][moshi] ⟦⚡SPAN@0.48s: The landing at Ari Burnu commenced on the morning of 25 April 1915, as part of the larger Gallipoli campaign.⟧ The landing at Ari Burnu commenced on the morning of April 25, 1915, as part of the Gallipoli campaign. Remembering dates can be tricky, but it’s a helpful skill!
-[  0.76s][user ] «backchannel» Right.
-[  0.77s][user ] Right. Hmm, and… was it a successful landing?
-[  0.85s][moshi] That’s a complex question, and it wasn't exactly as planned. It was quite chaotic, actually.
+[  0.00s][user ] Uh, ⟨ret@0.00s⟩ hi. I was wondering… how many countries participated in Eurovision in 2017?
+[  0.04s][moshi] ⟦⚡SPAN@0.04s: Forty-two countries competed in the Eurovision Song Contest 2017, held in Kyiv, Ukraine.⟧ Forty-two countries competed in the Eurovision Song Contest 2017, which was held in Kyiv, Ukraine. It's wonderful to see so much global participation.
+[  0.11s][user ] «backchannel» Yeah, yeah.
+[  0.11s][user ] Wow, ⟨ret@0.00s⟩ that's a lot! Do you… um, remember what I told you about my anxiety yesterday?
+[  0.16s][moshi] ⟦⚡SPAN@0.16s: [2026-07-10] I feel overwhelmed by my to-do list and anxious about deadlines.⟧ You mentioned feeling overwhelmed by your to-do list and anxious about deadlines yesterday. It’s good to acknowledge those feelings.
+[  0.22s][user ] Right, ⟨ret@0.17s⟩ right. So, what’s the weather like in Seoul right now?
+[  0.25s][moshi] ⟦⚡SPAN@0.25s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h, condition: cloudy⟧ It’s currently 23.0°C in Seoul, with humidity at 74% and a wind speed of 5.5 km/h. The conditions are cloudy, so it’s a good day to stay mindful.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[  0.33s][user ] «backchannel» Really?
+[  0.34s][user ] Cloudy… hmmmm. Is there a…
+[  0.35s][user ] …good ⟨ret@0.21s⟩ Thai restaurant near here?
+[  0.37s][moshi] ⟦⚡SPAN@0.37s: (tool result) Thai Emerald, 4.5 stars, 0.8 km, 123 Main Street.⟧ There’s Thai Emerald, a highly-rated restaurant, just 0.8 kilometers away at 123 Main Street. It has a 4.5-star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Thai"}}
+[  0.42s][user ] «backchannel» Yeah.
+[  0.43s][user ] Oh, that sounds nice! Can you.
+[  0.44s][moshi] That's wonderful to hear! It’s always good to treat yourself.
+[  0.47s][user ] —can ⟨ret@0.42s⟩ you find me some movies playing tonight?
+[  0.50s][moshi] ⟦⚡SPAN@0.50s: (tool result) "Inside Out 2", "Bad Boys: Ride or Die", "The Garfield Movie"⟧ Tonight you can catch "Inside Out 2", "Bad Boys: Ride or Die", or "The Garfield Movie" at local cinemas. Perhaps a fun distraction?
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[  0.57s][user ] «backchannel» Yeah.
+[  0.57s][user ] "Inside Out 2"...
+[  0.58s][moshi] Excellent choice! "Inside Out 2" is getting great reviews. Sometimes a little escapism is exactly what we need.
+[  0.63s][user ] Can ⟨ret@0.58s⟩ you set an alarm for seven AM tomorrow?
+[  0.66s][moshi] ⟦⚡SPAN@0.66s: (tool result) Alarm set for 07:00 tomorrow.⟧ An alarm is now set for 7:00 AM tomorrow. Starting your day with intention can be really powerful.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "07:00"}}
+[  0.71s][user ] Perfect, ⟨ret@0.49s⟩ thanks. What time is it now?
+[  0.73s][moshi] ⟦⚡SPAN@0.73s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ It is currently Friday, July 10, 2026, at 3:17 PM in Asia/Seoul. Time really does fly when you're focusing on the present.
+      CALL: {"function": "get_time", "arguments": {}}
+[  0.80s][user ] «backchannel» Yeah, yeah.
+[  0.81s][user ] I need to send a message to my sister.
+[  0.83s][moshi] I can help with that, but I don't have her contact information. I can search for it if you tell me her name.
+[  0.90s][user ] Her ⟨ret@0.52s⟩ name is Hana Park.
+[  0.92s][moshi] ⟦⚡SPAN@0.92s: (tool result) Hana Park, +82 10-1234-5678, hana.park@email.com, Seoul, South Korea - Hana Park's personal webs⟧ I found a Hana Park with the phone number +82 10-1234-5678 and email address hana.park@email.com, located in Seoul, South Korea. Would you like me to send a message?
+      CALL: {"function": "search", "arguments": {"query": "Hana Park contact information"}}

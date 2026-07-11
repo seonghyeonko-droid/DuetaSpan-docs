@@ -4,71 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Kim",
+#     "name": "Adam",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
+#     "nationality": "Canadian",
+#     "gender": "male",
 #     "age_range": "early 30s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-07-11",
+#       "date": "2026-06-07",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-04-04",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "home",
+#       "text": "User's home address is 16 Pine Court."
+#     },
+#     {
+#       "date": "2025-12-01",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-26",
-#       "title": "Researching a used car",
+#       "date": "2026-05-03",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Symmetric federalism exist when? | S2 Maybe. What restaurants are near G | S3 Tosokchon Samgyetang sounds good.  | S4 Perfect. Thanks!
 
-     0.00s  user  발화 시작: To what era did the Museum of Fine Arts date?
-     2.53s  <ret> 발화 (turn1 첫 프레임)
-     2.61s  agent 발화 시작: <ret> Unfortunately, I don’t have information about the Muse
-     2.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (no information found)
-     2.91s  user  발화 끝
-     8.08s  agent 발화 끝
-     9.67s  user  발화 시작: Oh, um… well, that’s okay.
-    12.66s  agent 발화 시작: It is! Sometimes not knowing is peaceful, you know? It leave
-    12.90s  user  발화 끝
-    18.36s  user  발화 시작: Can you find me events happening this weekend?
-    18.46s  agent 발화 끝
-    20.87s  <ret> 발화 (turn5 첫 프레임)
-    20.95s  agent 발화 시작: <ret> I found a couple of events! There's a Jazz Festival on
-    20.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Events found: Jazz Festival - July 12, 2026, 7:00 PM, Ce
-    21.04s  user  발화 끝
-    28.27s  agent 발화 끝
+     0.00s  user  발화 시작: Symmetric federalism exist when?
+     2.28s  <ret> 발화 (turn1 첫 프레임)
+     2.36s  agent 발화 시작: <ret> And unfortunately, I don’t have information on when sy
+     2.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: (no information found)
+     2.58s  user  발화 끝
+     5.62s  user  발화 시작: Right.
+     6.25s  user  발화 끝
+     7.40s  agent 발화 끝
+     7.89s  user  발화 시작: Oh. Um, what about the weather in Seoul right now?
+    11.28s  <ret> 발화 (turn4 첫 프레임)
+    11.52s  agent 발화 시작: <ret> The weather in Seoul is currently 23.0 degrees Celsius
+    11.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    11.68s  user  발화 끝
+    17.02s  user  발화 시작: Oh.
+    17.46s  user  발화 끝
+    21.73s  agent 발화 시작: It’s quite pleasant, isn’t it? A good day to explore.
+    21.81s  agent 발화 끝
+    24.39s  user  발화 시작: Uh-huh.
+    24.89s  user  발화 끝
+    25.66s  agent 발화 끝
+    25.68s  user  발화 시작: Maybe. What restaurants are near Gyeongbokgung Palace?
+    29.61s  <ret> 발화 (turn9 첫 프레임)
+    29.85s  agent 발화 시작: <ret> I found three restaurants near Gyeongbokgung Palace: T
+    29.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.19s]: (tool result) Tosokchon Samgyetang (Korean, 4.5 stars, ₩20000), Hwangs
+    29.89s  user  발화 끝
+    46.05s  agent 발화 끝
+    47.53s  user  발화 시작: Tosokchon Samgyetang sounds good. Can I reserve a table ther
+    53.41s  <ret> 발화 (turn11 첫 프레임)
+    53.65s  agent 발화 시작: <ret> I’ve reserved a table for two at Tosokchon Samgyetang 
+    53.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Reservation confirmed for Tosokchon Samgyetang, July 12,
+    53.70s  user  발화 끝
+    64.23s  agent 발화 시작: That should be a lovely spot to try some traditional Korean 
+    64.27s  agent 발화 끝
+    66.91s  user  발화 시작: Yeah, totally.
+    68.33s  user  발화 끝
+    69.12s  user  발화 시작: Perfect. Thanks!
+    69.14s  agent 발화 끝
+    70.57s  agent 발화 시작: You’re very welcome. Settling into a new city can feel overw
+    70.74s  user  발화 끝
+    78.17s  agent 발화 끝

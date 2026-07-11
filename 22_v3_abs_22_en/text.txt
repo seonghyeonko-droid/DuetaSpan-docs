@@ -1,10 +1,10 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Horax, a practical and reassuring counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Iora, a upbeat and supportive wellness coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Jordan",
+    "name": "Chloe",
     "location": {
       "city": "New York",
       "country": "United States",
@@ -12,40 +12,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "non-binary",
+    "gender": "female",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-31",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-03-06",
+      "category": "work",
+      "text": "User works as a nurse."
     },
     {
-      "date": "2026-02-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-09-02",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-08-12",
+      "date": "2026-01-25",
       "category": "trip",
       "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2025-08-04",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2025-09-04",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-10",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-07-17",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-06-29",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-26",
+      "date": "2025-12-21",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-12-10",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -53,7 +66,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-02-12",
+      "date": "2025-11-20",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -64,26 +77,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What does wool look like?
-[  0.02s][moshi] Well, that's a surprisingly tricky question, isn't it? It seems a precise visual description of wool isn’t readily available.
-[  0.09s][user ] «backchannel» Yeah.
-[  0.09s][user ] Hmm. ⟨ret@0.00s⟩ What *is* it made of, then?
-[  0.12s][moshi] ⟦⚡SPAN@0.12s: Wool is the textile fiber obtained from sheep and other animals, including alpacas, llamas, and goats.⟧ Wool comes from the fleece of animals—sheep most commonly—but also alpacas, llamas, and even goats. It’s a natural fiber, really quite remarkable.
-[  0.20s][user ] Is it warm?
-[  0.21s][moshi] It's known for its warmth and softness. It’s a lovely material for keeping cozy during colder months.
-[  0.27s][user ] What about…different colors?
-[  0.28s][moshi] «interrupted» Wool can be dyed almost any color imaginable—
-[  0.31s][user ] «interrupts_prev» …but what’s the *natural* color?
-[  0.33s][moshi] Ah, a very good point! Naturally, sheep’s wool comes in shades of white, but also gray, brown, and black.
-[  0.40s][user ] Black wool? Really?
-[  0.41s][moshi] Indeed. Certain breeds produce quite dark fleece. It's a lovely, earthy tone.
-[  0.46s][user ] «backchannel» Yeah.
-[  0.46s][moshi] It's fascinating how much variation there is, isn't it? The texture can vary too—from very fine merino to coarser varieties. It all depends on the breed of animal, and how it’s processed.
-[  0.58s][user ] Is it itchy? I always thought wool was itchy.
-[  0.61s][moshi] It can be, for some people—that depends on the fineness of the fiber. Coarser wools are more likely to cause irritation, while finer ones, like merino, are incredibly soft.
-[  0.72s][user ] «backchannel» Yeah.
-[  0.72s][user ] So ⟨ret@0.35s⟩ merino is the good stuff?
-[  0.75s][moshi] ⟦⚡SPAN@0.75s: Merino wool is known for its softness, fineness, and crimp, making it ideal for next-to-skin comfort.⟧ Yes, merino is often considered the gold standard—it’s known for its softness, fineness, and crimp, making it incredibly comfortable to wear. It’s a very different experience than some of the older, rougher wools.
-[  0.87s][user ] «backchannel» Yeah.
-[  0.87s][user ] That makes sense. Okay, last question…can you get sweaters made of it?
-[  0.92s][moshi] Wool is a very popular choice for sweaters, scarves, and all sorts of cozy garments. It's a truly versatile fiber, wouldn’t you say?
+[  0.00s][user ] What are examples of how the present Russian inhabitants of the Kaliningrad Oblast treatment of Germans?
+[  0.12s][moshi] «interrupted» Oh, that's a really important question, and one I want to address carefully—
+[  0.21s][user ] «interrupts_prev» …is it a sensitive topic there, generally?
+[  0.26s][moshi] It absolutely is, and it’s understandable to be curious.
+[  0.33s][moshi] Sadly, I don’t have specific information detailing current treatment patterns.
+[  0.40s][user ] «backchannel» Right.
+[  0.41s][moshi] It seems documented historical experiences are complex, and contemporary details aren’t widely available.
+[  0.50s][moshi] I can certainly help you find resources about the Oblast’s history, though!
+[  0.59s][user ] «backchannel» Yeah.
+[  0.59s][user ] Yes, ⟨ret@0.39s⟩ please do that. Could you search for information on the expulsion of Germans from Kaliningrad?
+[  0.71s][moshi] ⟦⚡SPAN@0.71s: (tool result) The expulsion of Germans from Kaliningrad Oblast occurred primarily after World War II, as part ⟧ I found some information! After World War II, over 200,000 Germans were expelled from the Kaliningrad Oblast between 1944 and 1948, according to history.com.
+      CALL: {"function": "search", "arguments": {"query": "expulsion of Germans from Kaliningrad Oblast"}}
+[  0.88s][moshi] It was a really difficult time for everyone involved, and remembering these events is so vital.

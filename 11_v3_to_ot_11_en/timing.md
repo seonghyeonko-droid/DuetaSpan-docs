@@ -4,123 +4,165 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Rosa",
+#     "name": "Victor",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
+#     "nationality": "German",
+#     "gender": "male",
 #     "age_range": "early 30s",
-#     "language": "French"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-16",
+#       "date": "2026-06-26",
 #       "category": "home",
-#       "text": "User's home address is 986 Cedar Lane."
+#       "text": "User's home address is 322 Birch Road."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-03-17",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-01-25",
+#       "date": "2026-02-20",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-10-03",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-24",
+#       "date": "2025-08-16",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2025-08-15",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-05-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-29",
+#       "date": "2026-01-05",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-02",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I’m new to the city and feelin | S2 And the other side was… the Commun | S3 Wow, that *is* a long time. | S4 Oh, that’s okay. I can probably se
+# EXAMINER(FDB-v2) 단계: S1 Hey moshi, do you know anything ab | S2 Dan Tyminski… I think I’ve heard t | S3 Do they have any albums out? | S4 Okay, good to know. What about Ron
 
-     0.00s  user  발화 시작: Hi, I’m new to the city and feeling a little lost.
-     3.05s  user  발화 끝
-     3.22s  agent 발화 시작: Welcome! It’s perfectly normal to feel that way when settlin
-     5.54s  user  발화 시작: Right.
-     5.99s  user  발화 끝
-     7.63s  user  발화 시작: That’s good to hear. Um, I was reading about Chinese history
-     7.79s  agent 발화 끝
-    12.46s  <ret> 발화 (turn4 첫 프레임)
-    12.68s  agent 발화 시작: <ret> That’s a common point of confusion, actually—the Chine
-    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: The Chinese Civil War was fought between the Kuomintang-led Republic o
-    12.82s  user  발화 끝
-    21.40s  user  발화 시작: So, the Republic of China… was one of the sides?
-    21.67s  agent 발화 끝
-    24.99s  <ret> 발화 (turn6 첫 프레임)
-    25.30s  agent 발화 시작: <ret> Yes, the Republic of China, under the Kuomintang, held
-    25.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.84s]: The Republic of China, under the Kuomintang, held power in mainland Ch
-    25.43s  user  발화 끝
-    29.24s  user  발화 시작: Wow.
-    30.06s  user  발화 끝
-    33.02s  user  발화 시작: And the other side was… the Communists?
-    33.13s  agent 발화 끝
-    35.35s  <ret> 발화 (turn9 첫 프레임)
-    35.74s  agent 발화 시작: <ret> Exactly—the Communist Party of China, led by Mao Zedon
-    35.74s  user  발화 끝
-    35.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: The Communist Party of China, led by Mao Zedong, sought to overthrow t
-    45.75s  agent 발화 끝
-    46.04s  user  발화 시작: I see. Was it a really long war?
-    48.79s  <ret> 발화 (turn11 첫 프레임)
-    48.85s  agent 발화 시작: <ret> It was a rather lengthy conflict, actually, occurring 
-    48.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: The Chinese Civil War occurred intermittently from 1927 to 1949, with 
-    49.00s  user  발화 끝
-    53.49s  user  발화 시작: Mm-hmm.
-    53.95s  user  발화 끝
-    58.00s  user  발화 시작: Wow, that *is* a long time.
-    58.03s  agent 발화 끝
-    60.61s  agent 발화 시작: It certainly was. It’s a significant period in Chinese histo
-    60.72s  user  발화 끝
-    67.94s  agent 발화 끝
-    68.68s  user  발화 시작: You're right. I think I’ll look up some museums.
-    71.10s  <ret> 발화 (turn16 첫 프레임)
-    71.25s  agent 발화 시작: <ret> That’s a wonderful idea! I can help you find some muse
-    71.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (no information found)
-    71.27s  user  발화 끝
-    75.92s  agent 발화 시작: I'm sorry, I can't find attractions at the moment. My travel
-    76.11s  agent 발화 끝
-    81.30s  user  발화 시작: Oh, that’s okay. I can probably search for them myself.
-    81.39s  agent 발화 끝
-    83.88s  user  발화 끝
-    83.90s  agent 발화 시작: I can always assist with other things as you settle in—anyth
-    92.66s  user  발화 시작: That sounds great, thanks. I might need help with restaurant
-    92.71s  agent 발화 끝
-    96.36s  user  발화 끝
-    96.62s  agent 발화 시작: I’m happy to help whenever you need it. Perhaps we can discu
-   104.87s  agent 발화 끝
+     0.00s  user  발화 시작: Hey moshi, do you know anything about Alison Krauss?
+     2.68s  user  발화 끝
+     2.93s  agent 발화 시작: Alison Krauss is a phenomenal bluegrass singer and musician.
+     6.66s  user  발화 시작: Yeah.
+     7.47s  user  발화 끝
+     8.97s  user  발화 시작: I was listening to “Down to the River to Pray” and wondered 
+     9.18s  agent 발화 끝
+    12.15s  <ret> 발화 (turn4 첫 프레임)
+    12.37s  agent 발화 시작: <ret> That beautiful song, “Down to the River to Pray”, actu
+    12.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: The song "Down to the River to Pray" is a traditional American hymn da
+    12.58s  user  발화 끝
+    20.32s  user  발화 시작: Wow, that’s old! Is she the original singer then?
+    20.71s  agent 발화 끝
+    23.64s  user  발화 끝
+    23.70s  agent 발화 시작: Not originally, no. She popularized it with her rendition, b
+    31.67s  user  발화 시작: What about the band that played with her on that song?
+    31.77s  agent 발화 끝
+    34.72s  user  발화 끝
+    34.90s  <ret> 발화 (turn8 첫 프레임)
+    34.97s  agent 발화 시작: <ret> That recording features Alison Krauss and Union Statio
+    34.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.32s]: The song features Alison Krauss and Union Station, with Dan Tyminski o
+    41.26s  user  발화 시작: Yeah.
+    41.84s  user  발화 끝
+    46.29s  agent 발화 끝
+    46.48s  user  발화 시작: Dan Tyminski… I think I’ve heard that name before.
+    49.90s  agent 발화 시작: He’s incredibly talented! He’s also a successful solo artist
+    49.95s  user  발화 끝
+    54.47s  user  발화 시작: Uh-huh.
+    55.06s  user  발화 끝
+    58.62s  user  발화 시작: Is he in a band called Three Pickers?
+    58.66s  agent 발화 끝
+    60.29s  <ret> 발화 (turn14 첫 프레임)
+    60.60s  agent 발화 시작: <ret> You’re right to ask! He’s part of The Three Pickers, a
+    60.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: The Three Pickers are a bluegrass supergroup consisting of Dan Tyminsk
+    60.78s  user  발화 끝
+    68.44s  agent 발화 끝
+    69.16s  user  발화 시작: A supergroup, huh? Sounds interesting.
+    71.42s  user  발화 끝
+    71.48s  agent 발화 시작: It is! They blend incredible musicianship with a deep respec
+    80.34s  agent 발화 끝
+    80.72s  user  발화 시작: What kind of music do The Three Pickers play?
+    83.05s  <ret> 발화 (turn18 첫 프레임)
+    83.27s  agent 발화 시작: <ret> They primarily perform traditional bluegrass and acous
+    83.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.94s]: The Three Pickers primarily perform traditional bluegrass and acoustic
+    83.41s  user  발화 끝
+    86.57s  user  발화 시작: Right.
+    87.11s  user  발화 끝
+    91.97s  user  발화 시작: Do they have any albums out?
+    92.21s  agent 발화 끝
+    93.32s  <ret> 발화 (turn21 첫 프레임)
+    93.39s  agent 발화 시작: <ret> They’ve released three albums: their self-titled debut
+    93.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: The Three Pickers released their debut self-titled album in 2010, foll
+    93.58s  user  발화 끝
+   102.69s  user  발화 시작: “Gentlemen of the Road”... that sounds like a good one.
+   102.90s  agent 발화 끝
+   105.45s  agent 발화 시작: It is! Many fans consider it their best work—it really showc
+   105.64s  user  발화 끝
+   109.17s  user  발화 시작: Yeah.
+   109.80s  user  발화 끝
+   114.66s  user  발화 시작: I wonder if they’ve toured much?
+   114.77s  agent 발화 끝
+   116.32s  user  발화 끝
+   116.38s  agent 발화 시작: They have, though they don't tour consistently—
+   119.12s  user  발화 시작: …do they ever play around here, maybe in Tennessee?
+   119.95s  agent 발화 끝
+   121.60s  agent 발화 시작: Well, they’ve performed at several bluegrass festivals acros
+   121.71s  user  발화 끝
+   127.44s  user  발화 시작: Okay, good to know. What about Ron Block? What does *he* do 
+   128.28s  agent 발화 끝
+   133.49s  <ret> 발화 (turn30 첫 프레임)
+   133.71s  agent 발화 시작: <ret> Ron Block is a banjo player, guitarist, and vocalist, 
+   133.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: Ron Block is a banjo player, guitarist, and vocalist known for his wor
+   133.93s  user  발화 끝
+   143.12s  agent 발화 끝
+   144.80s  user  발화 시작: He’s pretty versatile, it sounds like.
+   146.92s  user  발화 끝
+   147.04s  agent 발화 시작: He's a true master of his craft, and a really generous colla
+   155.71s  agent 발화 끝
+   155.93s  user  발화 시작: Dudley Connell, you mentioned him earlier, what’s his backgr
+   158.99s  <ret> 발화 (turn34 첫 프레임)
+   159.12s  agent 발화 시작: <ret> Dudley Connell is a guitarist and vocalist, best known
+   159.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: Dudley Connell is a guitarist and vocalist, best known as a founding m
+   159.30s  user  발화 끝
+   167.69s  user  발화 시작: So he's been in bluegrass for a while then?
+   167.94s  agent 발화 끝
+   170.09s  user  발화 끝
+   170.32s  agent 발화 시작: A very long while! He has a lot of experience and brings a l
+   180.47s  agent 발화 끝

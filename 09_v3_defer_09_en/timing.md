@@ -4,48 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Ava",
+#     "name": "Jonas",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
+#       "date": "2026-06-11",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-05-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-01-28",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-09-24",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-26",
+#       "date": "2025-08-30",
 #       "category": "home",
-#       "text": "User's home address is 618 Birch Road."
+#       "text": "User's home address is 211 Pine Court."
 #     },
 #     {
-#       "date": "2025-07-13",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-08-04",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
+#       "date": "2025-07-07",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-11",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -55,22 +68,75 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Can you create a file named import | S2 Sounds perfect. Can you make a res | S3 Do you think a PMP certification w | S4 That sounds promising. Could you r
 
-     0.00s  user  발화 시작: Click today’s date in the calendar iframe.
-     2.23s  <ret> 발화 (turn1 첫 프레임)
-     2.46s  agent 발화 시작: <ret> Wonderful, I’ve clicked today’s date for you in the ca
-     2.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.85s]: (tool result) {"status": "success", "message": "Clicked today's date i
-     2.58s  user  발화 끝
-     5.56s  user  발화 시작: …can you find me some relaxing music for sleep now?
-     6.31s  agent 발화 끝
-     8.12s  <ret> 발화 (turn3 첫 프레임)
-     8.28s  agent 발화 시작: <ret> I found “Weightless Part 1” by Weightless, it’s eight 
-     8.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: {"artist": "Weightless", "title": "Weightless Part 1", "album": "Weigh
-     8.47s  user  발화 끝
-    16.18s  user  발화 시작: Play it, please.
-    16.34s  agent 발화 끝
-    17.29s  <ret> 발화 (turn5 첫 프레임)
-    17.61s  agent 발화 시작: <ret> “Weightless Part 1” is now playing. Sweet dreams!
-    17.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.11s]: (tool result) {"status": "playing", "message": "Now playing Weightless
-    17.70s  user  발화 끝
-    21.72s  agent 발화 끝
+     0.00s  user  발화 시작: Can you create a file named important data with the sentence
+     5.49s  <ret> 발화 (turn1 첫 프레임)
+     5.73s  agent 발화 시작: <ret> I’ve created a file named 'important data' with that s
+     5.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) File 'important data' created successfully.
+     5.88s  user  발화 끝
+    10.82s  user  발화 시작: That's great. What’s the weather like in Seoul right now?
+    10.91s  agent 발화 끝
+    13.37s  <ret> 발화 (turn3 첫 프레임)
+    13.52s  agent 발화 시작: <ret> It’s currently 26.0°C in Seoul, with 70% humidity and 
+    13.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: (tool result) The current weather in Seoul is 26.0°C, humidity 70%, wi
+    13.73s  user  발화 끝
+    17.05s  user  발화 시작: Nice.
+    17.87s  user  발화 끝
+    23.85s  agent 발화 끝
+    24.51s  user  발화 시작: I need to find a good Italian restaurant nearby.
+    26.72s  <ret> 발화 (turn6 첫 프레임)
+    27.10s  user  발화 끝
+    27.12s  agent 발화 시작: <ret> Bella Italia is nearby, about 0.8 kilometers away. It 
+    27.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Bella Italia is 0.8 km away, rated 4.5 stars, with avera
+    34.06s  user  발화 시작: Yeah.
+    34.56s  user  발화 끝
+    37.28s  agent 발화 끝
+    37.67s  user  발화 시작: Sounds perfect. Can you make a reservation there for two peo
+    43.17s  <ret> 발화 (turn9 첫 프레임)
+    43.41s  agent 발화 시작: <ret> Your reservation at Bella Italia is confirmed for two 
+    43.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.39s]: (tool result) Reservation confirmed at Bella Italia for 2 people tomor
+    43.46s  user  발화 끝
+    46.66s  user  발화 시작: Mhm.
+    47.20s  user  발화 끝
+    53.80s  agent 발화 끝
+    53.86s  user  발화 시작: That's fantastic. I’m thinking about taking a course to impr
+    59.09s  user  발화 끝
+    59.17s  agent 발화 시작: That’s a wonderful idea! Investing in your skills is always 
+    61.02s  user  발화 시작: Uh-huh.
+    61.79s  user  발화 끝
+    64.59s  agent 발화 끝
+    65.49s  user  발화 시작: —but I'm not sure where to even begin looking for something 
+    69.00s  user  발화 끝
+    69.09s  agent 발화 시작: It can feel overwhelming, certainly. There are so many optio
+    74.27s  agent 발화 끝
+    74.31s  user  발화 시작: Do you think a PMP certification would be a good starting po
+    77.43s  agent 발화 시작: A PMP certification is a widely recognized and respected cre
+    77.46s  user  발화 끝
+    81.59s  user  발화 시작: …is it really worth the time and money, though? I’ve heard i
+    82.33s  agent 발화 끝
+    84.99s  <ret> 발화 (turn19 첫 프레임)
+    85.39s  agent 발화 시작: <ret> It absolutely requires a commitment; the PMP certifica
+    85.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.05s]: The Project Management Professional (PMP) certification requires 35 ho
+    85.62s  user  발화 끝
+   101.31s  user  발화 시작: Okay, that’s helpful to know. What about online courses, are
+   101.44s  agent 발화 끝
+   105.03s  <ret> 발화 (turn21 첫 프레임)
+   105.27s  agent 발화 시작: <ret> There are many excellent online courses available. Let
+   105.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Coursera offers a Google Project Management Professional
+   105.38s  user  발화 끝
+   111.96s  agent 발화 시작: Coursera offers a Google Project Management Professional Cer
+   111.99s  agent 발화 끝
+   123.27s  user  발화 시작: That sounds promising. Could you remind me what time my rest
+   123.42s  agent 발화 끝
+   128.18s  agent 발화 시작: Your reservation at Bella Italia is tomorrow at 7:30 PM.
+   128.32s  user  발화 끝
+   130.72s  user  발화 시작: Exactly.
+   131.72s  user  발화 끝
+   132.89s  agent 발화 끝
+   133.62s  user  발화 시작: Great. And one last thing, can you set an alarm for 6:30 AM 
+   138.23s  <ret> 발화 (turn27 첫 프레임)
+   138.55s  agent 발화 시작: <ret> I’ve set an alarm for 6:30 AM tomorrow. I hope you hav
+   138.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Alarm set for 6:30 AM tomorrow.
+   138.71s  user  발화 끝
+   145.50s  agent 발화 끝

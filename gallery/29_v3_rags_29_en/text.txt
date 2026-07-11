@@ -1,71 +1,60 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Eloen, a curious and validating supportive advisor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Lulo, a grounded and empathetic life coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Andrea",
+    "name": "Caleb",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
+      "date": "2026-03-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-11-22",
+      "category": "home",
+      "text": "User's home address is 959 Oak Avenue."
+    },
+    {
+      "date": "2025-10-04",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-03-07",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-08-24",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-12-15",
+      "date": "2025-08-21",
       "category": "allergy",
       "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-07-25",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-04",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-23",
+      "date": "2025-10-02",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-28",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who originally sang the theme for 21 Jump ⟨ret@3.12s⟩ Street?
-[  3.44s][moshi] ⟦⚡SPAN@3.44s: Holly Robinson sang the theme song for the television series 21 Jump Street, released in 1987.⟧ Oh, that's a fun one! It was Holly Robinson who originally sang the theme song for 21 Jump Street, back in 1987. It's amazing how songs can take you right back, isn't it?
+[  0.00s][user ] What’s the highest number of stage wins in the Tour de ⟨ret@3.22s⟩ France?
+[  3.54s][moshi] ⟦⚡SPAN@3.54s: Eddy Merckx holds the record for the most Tour de France stage wins, with thirty-four individual stage victori⟧ That’s a fantastic question! Eddy Merckx truly dominated the Tour de France, achieving thirty-four individual stage victories. It’s a testament to dedication and skill.

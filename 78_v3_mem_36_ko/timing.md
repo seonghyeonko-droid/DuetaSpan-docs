@@ -4,161 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "가아",
+#     "name": "예희",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2026-03-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-10-27",
+#       "date": "2026-01-10",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-09-24",
+#       "date": "2025-12-18",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-25",
 #       "category": "home",
 #       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2025-06-29",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2025-10-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-11",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-01",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-08-23",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-29",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그냥 그래. 스위스 여행 계획 좀 다시 짜볼까 하는데. | S2 뭔데? | S3 아, 그리고 스위스 가는 항공권 좀 알아봐 줄 수 있어? | S4 음… 그럼 칠월 십구일은 어때?
+# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. | S2 음… 요즘 외식할 때 좀 불편하더라고요. | S3 그린 테이블… 가보고 싶네요. | S4 그냥 집에서 고양이랑 놀아요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 가아님. 저는 프리오나예요. 오늘 하루 어떠셨어요?
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.03s  user  발화 시작: 그냥 그래. 스위스 여행 계획 좀 다시 짜볼까 하는데.
-     0.03s  agent 발화 끝
-     0.06s  agent 발화 시작: <ret> 혹시 특별히 가고 싶은 곳이 있으세요?
-     0.06s  ⚡SPAN 주입 [d'=0.02s / d_lead=0.02s]: [2026-04-11] User is planning a trip to Switzerland in December.
-     0.06s  user  발화 끝
-     0.08s  user  발화 시작: 음.
-     0.08s  agent 발화 끝
-     0.09s  user  발화 시작: 음… 아직 딱히 정한 곳은 없는데, 뭔가 특별한 경험을 하고 싶어.
+     0.00s  agent 발화 시작: 안녕하세요, 예희님! 저는 크리스예요. 여행 계획이나 휴식에 대해 도와드릴 수 있는 라이프 코치랍니다.
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.07s  user  발화 시작: 맞아.
+     0.07s  agent 발화 끝
+     0.08s  user  발화 시작: 어… 안녕하세요.
+     0.08s  user  발화 끝
+     0.09s  agent 발화 시작: 혹시 전에 저희가 나눈 이야기 중에 기억나는 게 있으세요?
      0.09s  user  발화 끝
-     0.13s  agent 발화 시작: 특별한 경험이라… 스위스는 아름다운 자연 경관으로 유명하잖아요. 하이킹이나 트레킹을 좋아하시나요?
-     0.13s  user  발화 끝
-     0.17s  user  발화 시작: 좋아는 하는데, 겨울에 하이킹은 좀 힘들 것 같아.
-     0.17s  agent 발화 끝
-     0.20s  agent 발화 시작: 겨울 하이킹은 쉽지 않죠. 그렇다면 다른 활동을 찾아보는 건 어떨까요? 스위스에서는 겨울 스포츠도 인기 있어
-     0.20s  user  발화 끝
-     0.26s  user  발화 시작: 어.
-     0.26s  agent 발화 끝
-     0.26s  user  발화 시작: 겨울 스포츠는… 글쎄. 스키나 스노보드는 안 해봤어.
+     0.14s  user  발화 시작: 글루텐 프리 식단이요.
+     0.14s  agent 발화 끝
+     0.14s  <ret> 발화 (turn11 첫 프레임)
+     0.15s  agent 발화 시작: <ret> 아, 네 맞아요. 예희님께서는 글루텐 프리 식단을 챙기시는군요. 혹시 최근에 식단 때문에 고민이 
+     0.15s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2026-01-10] User is gluten-free.
+     0.15s  user  발화 끝
+     0.21s  <ret> 발화 (turn9 첫 프레임)
+     0.23s  user  발화 시작: 음… 요즘 외식할 때 좀 불편하더라고요.
+     0.23s  agent 발화 끝
+     0.26s  agent 발화 시작: 외식이 불편하시군요. 혹시 최근에 특별히 가고 싶었던 식당이 있으세요?
      0.26s  user  발화 끝
-     0.29s  agent 발화 시작: 스키나 스노보드는 처음이시군요. 그렇다면 좀 더 여유로운 활동을 추천해 드릴게요.
-     0.29s  user  발화 끝
-     0.29s  <ret> 발화 (turn23 첫 프레임)
-     0.33s  user  발화 시작: 어어.
-     0.33s  agent 발화 끝
-     0.33s  user  발화 시작: 뭔데?
-     0.33s  user  발화 끝
-     0.33s  agent 발화 시작: 스위스에는 아름다운 호수와 온천이 많아요. 호숫가를 따라 산책하거나 온천에서 휴식을 취하는 것도 좋은 방법이
-     0.33s  user  발화 끝
-     0.39s  user  발화 시작: 호수랑 온천… 괜찮네.
-     0.39s  agent 발화 끝
-     0.40s  agent 발화 시작: 또, 스위스는 초콜릿으로도 유명하죠. 초콜릿 공장을 방문해서 시식도 해볼 수 있어요.
-     0.40s  user  발화 끝
-     0.44s  user  발화 시작: 응.
-     0.44s  agent 발화 끝
-     0.45s  user  발화 시작: 초콜릿 공장! 완전 좋겠다.
-     0.45s  user  발화 끝
-     0.46s  agent 발화 시작: 스위스 초콜릿은 정말 맛있죠. 혹시 특별히 좋아하는 초콜릿 브랜드가 있으세요?
+     0.31s  user  발화 시작: 없는데… 전에 생일 파티 할 때 야외 좌석 있는 곳 찾았었죠.
+     0.31s  agent 발화 끝
+     0.37s  agent 발화 시작: <ret> 아, 네, 기억나요. 생일 파티를 위해 여섯 분이 앉을 수 있는 야외 좌석이 있는 곳을 찾으셨었죠
+     0.37s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: [2025-08-23] Past chat — Planning a birthday dinner: party of six; loo
+     0.37s  user  발화 끝
+     0.46s  user  발화 시작: 응.
+     0.46s  agent 발화 끝
+     0.46s  agent 발화 시작: <ret> 네, 부산에서 글루텐 프리 메뉴를 제공하고 야외 좌석이 있는 식당 두 곳을 찾았어요. 그린 테이블
+     0.46s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"restaurants": [{"name": "Green Table", "address": "해운대
      0.46s  user  발화 끝
-     0.46s  <ret> 발화 (turn27 첫 프레임)
-     0.50s  user  발화 시작: 어어.
-     0.50s  agent 발화 끝
-     0.50s  user  발화 시작: 음… 딱히 없는데, 너무 달지 않은 다크 초콜릿을 좋아해.
-     0.50s  user  발화 끝
-     0.54s  agent 발화 시작: 다크 초콜릿을 좋아하시는군요. 스위스에는 다양한 종류의 다크 초콜릿이 있어요.
-     0.54s  user  발화 끝
-     0.57s  <ret> 발화 (turn31 첫 프레임)
-     0.57s  user  발화 시작: 아, 그리고 스위스 가는 항공권 좀 알아봐 줄 수 있어?
-     0.57s  agent 발화 끝
-     0.61s  agent 발화 시작: <ret> 죄송해요, 현재 조건에 맞는 항공편은 찾을 수 없네요.
-     0.61s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) No flights found matching your criteria.
+     0.60s  user  발화 시작: 오.
+     0.60s  agent 발화 끝
+     0.61s  user  발화 시작: 그린 테이블… 가보고 싶네요.
      0.61s  user  발화 끝
-     0.64s  user  발화 시작: 언제 출발하는 항공편을 찾아봤는데?.
-     0.64s  agent 발화 끝
-     0.66s  agent 발화 시작: 십이월에 출발하는 항공편을 알아봤는데 —
-     0.66s  user  발화 끝
-     0.68s  user  발화 시작: … 이번 주 토요일 출발하는 항공편은 어때?
+     0.63s  agent 발화 시작: 그린 테이블에 가보고 싶으시군요. 혹시 그쪽으로 가는 길을 안내해 드릴까요?
+     0.63s  user  발화 끝
+     0.68s  user  발화 시작: 아니요, 괜찮아요. 그냥… 요즘 좀 지쳐서 쉬고 싶어요.
      0.68s  agent 발화 끝
-     0.70s  agent 발화 시작: <ret> 칠월 십이일 서울에서 취리히까지 가는 편도 항공권은 천이백오십달러이고, 열네시간 삼십분 소요됩니다
-     0.70s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) One-way flight from Seoul to Zurich on July 12, 2026: $1
-     0.70s  user  발화 끝
-     0.75s  user  발화 시작: 천이백오십달러나 해? 너무 비싸.
-     0.75s  agent 발화 끝
-     0.76s  agent 발화 시작: 가격이 조금 높네요. 다른 날짜를 알아보는 건 어떨까요?
-     0.76s  user  발화 끝
-     0.79s  user  발화 시작: 음… 그럼 칠월 십구일은 어때?
-     0.79s  agent 발화 끝
-     0.81s  agent 발화 시작: <ret> 칠월 십구일은 구백팔십달러이고, 열다섯시간 십오분 소요됩니다. 조금 더 저렴하네요.
-     0.81s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) One-way flight from Seoul to Zurich on July 19, 2026: $9
+     0.73s  agent 발화 시작: 지치셨군요. 충분히 쉬시는 게 중요해요. 혹시 요즘 스트레스 해소를 위해 특별히 하는 게 있으세요?
+     0.73s  user  발화 끝
+     0.75s  <ret> 발화 (turn19 첫 프레임)
+     0.80s  user  발화 시작: 음.
+     0.80s  agent 발화 끝
+     0.81s  user  발화 시작: 그냥 집에서 고양이랑 놀아요.
      0.81s  user  발화 끝
-     0.85s  user  발화 시작: 응.
-     0.85s  agent 발화 끝
-     0.85s  user  발화 시작: 그래도 좀 비싸다. 혹시 다른 공항으로 가는 건 어때?
-     0.85s  user  발화 끝
-     0.88s  agent 발화 시작: 다른 공항을 이용하면 더 저렴할 수도 있어요. 취리히 외에 다른 스위스 공항을 알아볼까요?
-     0.88s  user  발화 끝
-     0.93s  user  발화 시작: 좋아.
-     0.93s  agent 발화 끝
-     0.94s  agent 발화 시작: 스위스에는 제네바, 바젤 등 다른 공항도 있어요. 잠시만 알아보겠습니다.
-     0.94s  user  발화 끝
-     0.97s  agent 발화 시작: [happy] 스위스 여행 계획, 점점 구체화되어 가네요.
-     0.97s  agent 발화 끝
+     0.83s  agent 발화 시작: <ret> 아, 네. 벨라라는 이름의 시암 고양이와 함께 시간을 보내시는군요. 고양이는 정말 좋은 친구가 되
+     0.83s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2025-06-17] User has a Siamese cat named Bella.
+     0.83s  user  발화 끝
+     0.91s  user  발화 시작: 그렇죠…
+     0.91s  agent 발화 끝
+     0.92s  agent 발화 시작: 혹시 벨라와 함께 집에서 편안하게 보낼 수 있는 방법을 찾아볼까요? 예를 들어, 새로운 장난감을 사준다거나…
+     0.92s  user  발화 끝
      1.00s  agent 발화 끝

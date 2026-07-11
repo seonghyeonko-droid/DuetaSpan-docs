@@ -4,78 +4,72 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Lily",
+#     "name": "Louis",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-05-17",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-05-16",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
-#     },
-#     {
-#       "date": "2025-10-19",
+#       "date": "2026-03-16",
 #       "category": "home",
-#       "text": "User's home address is 276 Cedar Lane."
+#       "text": "User's home address is 171 Pine Court."
 #     },
 #     {
-#       "date": "2025-09-13",
+#       "date": "2026-02-14",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-12-16",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-02",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-22",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-13",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Lily, I'm Elolo. It's lovely to meet you.
-     0.08s  user  발화 시작: Um, yes, hello. I need to get to a florist, actually.
-     0.08s  agent 발화 끝
-     0.11s  <ret> 발화 (turn2 첫 프레임)
-     0.19s  agent 발화 시작: <ret> Before we map that out, I remember you mentioning Max,
-     0.19s  ⚡SPAN 주입 [d'=0.31s / d_lead=0.31s]: [2025-09-13] User has a Golden Retriever named Max.
-     0.19s  user  발화 끝
-     0.50s  user  발화 시작: For a friend. And could you use my home address?
-     0.50s  agent 발화 끝
-     0.50s  <ret> 발화 (turn5 첫 프레임)
-     0.51s  <ret> 발화 (turn4 첫 프레임)
-     0.59s  agent 발화 시작: <ret> Your home address is 276 Cedar Lane. Let me find flori
-     0.59s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: [2025-09-13] User's home address is 276 Cedar Lane.
-     0.59s  user  발화 끝
-     0.74s  agent 발화 시작: <ret> Bloom & Blossom on Bleecker Street is one point two mi
-     0.74s  ⚡SPAN 주입 [d'=0.26s / d_lead=0.26s]: (tool result) Destination: Bloom & Blossom, 145 Bleecker St, New York,
-     0.74s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Louis, I'm Brio. It's lovely to meet you. Is there anythi
+     0.18s  user  발화 시작: Um, yes, I need to get to the National Gallery.
+     0.18s  agent 발화 끝
+     0.20s  <ret> 발화 (turn2 첫 프레임)
+     0.28s  agent 발화 시작: <ret> Louis. Let's find the best route from your home at 171
+     0.28s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: [2026-03-16] User's home address is 171 Pine Court.
+     0.28s  user  발화 끝
+     0.41s  user  발화 시작: Yeah.
+     0.41s  agent 발화 끝
+     0.42s  user  발화 시작: Great, that sounds perfect.
+     0.42s  user  발화 끝
+     0.46s  agent 발화 시작: I'm checking for the quickest route now, considering current
+     0.46s  user  발화 끝
+     0.57s  user  발화 시작: …actually, how long would a taxi take?
+     0.57s  agent 발화 끝
+     0.64s  agent 발화 시작: A taxi to the National Gallery would likely take around 25 t
+     0.64s  user  발화 끝
+     0.81s  user  발화 시작: Really?
+     0.81s  agent 발화 끝
+     0.82s  agent 발화 시작: I can also show you bus and train options if you’d prefer, L
+     0.82s  user  발화 끝
      1.00s  agent 발화 끝

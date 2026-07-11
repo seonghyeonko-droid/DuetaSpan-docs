@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "예원",
+#     "name": "채형",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,99 +13,93 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-12-18",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-01-30",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-11-05",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-18",
+#       "date": "2025-11-25",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-08-01",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-10-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-07-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-19",
-#       "title": "Researching a used car",
+#       "date": "2026-01-25",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-17",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-08-22",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-17",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 진짜 사람이에요? | S2 그냥… 뭘 해도 잘할 것 같지가 않아요. 뭘 시작해야 할지도  | S3 어… 저는 게임을 좋아하고, 그림 그리는 것도 꽤 즐겨요. 근 | S4 그게… 잘 모르겠어요. 행복… 그런 거까지 생각하면서 살아야 
+# EXAMINER(FDB-v2) 단계: S1 혹시 잠을 잘 못 자는 사람들을 위한 상담 같은 걸 해 주시는 | S2 회사 일이 너무 많고, 마감 기한에 쫓기면서 계속 불안하거든요 | S3 글을 쓴다는 게… 별로 안 좋아하는데요. | S4 자연의 소리… 한번 시도해 볼게요. 고마워요, 수나크스 씨.
 
-     0.00s  agent 발화 시작: 예원 씨, 안녕하세요. 저는 오레아우스라고 해요. 커리어 고민이나 업무 스트레스, 어떤 어려움이든 함께 풀어
-     3.09s  user  발화 시작: 응.
-     3.50s  user  발화 끝
-     9.69s  agent 발화 끝
-    10.14s  user  발화 시작: 혹시 진짜 사람이에요?
-    11.47s  agent 발화 시작: [laugh] 그런 질문을 많이 받아요. 저는 예원 씨를 돕기 위해 만들어진 에이전트예요. 마음 편하게 어떤
-    11.56s  user  발화 끝
-    15.70s  user  발화 시작: 어.
-    16.10s  user  발화 끝
-    19.56s  user  발화 시작: 음… 사실 요즘 뭘 해야 할지 좀 막막해요. 전공도 그렇고, 미래도 그렇고.
-    19.73s  agent 발화 끝
-    25.25s  agent 발화 시작: 불안한 마음이 드는 건 당연해요. 전공을 선택하는 건 정말 중요한 결정이니까요. 어떤 점이 가장 걱정되나요?
-    25.34s  user  발화 끝
-    32.70s  user  발화 시작: 그냥… 뭘 해도 잘할 것 같지가 않아요. 뭘 시작해야 할지도 모르겠고.
-    32.94s  agent 발화 끝
-    37.47s  agent 발화 시작: 자신감이 부족한 것 같군요. 예원 씨는 어떤 분야에 흥미를 느끼나요? 좋아하는 활동이나 관심사가 있다면 말씀
-    37.60s  user  발화 끝
-    44.93s  agent 발화 끝
-    46.32s  user  발화 시작: 어… 저는 게임을 좋아하고, 그림 그리는 것도 꽤 즐겨요. 근데 그걸로 돈을 벌 수 있을까요?
-    53.00s  agent 발화 시작: 게임과 그림, 정말 멋진 취미네요. 그쪽 분야로 진출하는 방법은 다양하게 있어요. 혹시 게임 개발이나 디자인
-    53.13s  user  발화 끝
-    58.73s  user  발화 시작: 어어.
-    59.27s  user  발화 끝
-    61.69s  agent 발화 시작: 게임 개발자나 그래픽 디자이너는 창의적인 분야에서 보람을 느낄 수 있을 거예요. 물론, 노력과 꾸준함이 필요
-    61.81s  agent 발화 끝
-    66.53s  user  발화 시작: 응응.
-    67.03s  user  발화 끝
-    69.24s  agent 발화 끝
-    69.62s  user  발화 시작: 근데… 주변 사람들은 다들 안정적인 직업을 가지라고 하잖아요. 공무원이나 대기업 같은 거.
-    75.27s  user  발화 끝
-    75.38s  agent 발화 시작: 주변의 기대에 얽매이지 말고, 예원 씨가 정말 원하는 것이 무엇인지 고민해 보는 게 중요해요. 어떤 직업이 
-    84.51s  agent 발화 끝
-    85.25s  user  발화 시작: 그게… 잘 모르겠어요. 행복… 그런 거까지 생각하면서 살아야 하나 싶기도 하고.
-    90.05s  agent 발화 시작: 행복은 중요한 가치예요. 예원 씨의 삶에서 행복이 어떤 의미인지 생각해 보면, 앞으로 나아갈 방향을 찾는 데
-    90.05s  user  발화 끝
-    98.66s  agent 발화 끝
+     0.00s  agent 발화 시작: 채형님, 안녕하세요. 저는 수나크스입니다. 편안한 휴식을 위한 안내를 도와드리는 에이전트예요.
+     6.80s  user  발화 시작: 혹시 잠을 잘 못 자는 사람들을 위한 상담 같은 걸 해 주시는 건가요?
+     6.86s  agent 발화 끝
+    10.56s  agent 발화 시작: 네, 맞아요. 채형님. 잠자리에 드는 것부터 깊은 휴식을 취하는 것까지, 편안한 밤을 위한 모든 과정을 함께
+    10.69s  user  발화 끝
+    15.95s  user  발화 시작: 네.
+    16.31s  user  발화 끝
+    19.56s  agent 발화 끝
+    19.70s  user  발화 시작: 음… 요즘 잠을 너무 설쳐서요. 스트레스 때문에 그런 것 같아요.
+    23.71s  agent 발화 시작: 스트레스 때문에 잠을 설치시는군요. 어떤 점이 채형님을 가장 힘들게 하는지 조금 더 말씀해 주시겠어요?
+    23.81s  user  발화 끝
+    30.52s  agent 발화 끝
+    31.19s  user  발화 시작: 회사 일이 너무 많고, 마감 기한에 쫓기면서 계속 불안하거든요. 주말에도 계속 일 생각만 나요.
+    37.15s  agent 발화 시작: 주말에도 일 생각에 마음이 편치 않으시다니, 정말 힘드시겠어요. 잠자리에 누워서도 계속 생각이 떠오르시나요?
+    37.21s  user  발화 끝
+    42.35s  user  발화 시작: 네.
+    42.66s  user  발화 끝
+    44.52s  agent 발화 시작: 밤에 생각이 많으시다면, 잠자리에 들기 전에 생각을 정리하는 시간을 가져보는 건 어떠실까요?
+    44.66s  agent 발화 끝
+    49.84s  user  발화 시작: 어떻게 정리해야 할까요? 일 생각만 하면 더 초조해지는 것 같아요.
+    50.30s  agent 발화 끝
+    53.45s  user  발화 끝
+    53.69s  agent 발화 시작: 일 생각을 억지로 멈추려 하기보다는, 잠시 동안 일과 관련된 감정을 글로 적어보는 건 어떠세요?
+    60.73s  user  발화 시작: 글을 쓴다는 게… 별로 안 좋아하는데요.
+    60.83s  agent 발화 끝
+    63.25s  agent 발화 시작: 글쓰기가 부담스러우시다면, 잠자리에 들기 전에 따뜻한 물로 샤워를 하거나, 좋아하는 음악을 듣는 것도 도움이
+    63.45s  user  발화 끝
+    71.68s  agent 발화 끝
+    72.08s  user  발화 시작: 좋아하는 음악은 듣는 편이에요. 근데, 잠들기 전에 너무 신나는 노래를 들으면 잠이 더 안 올까 봐 걱정돼요
+    78.56s  user  발화 끝
+    78.64s  agent 발화 시작: 신나는 노래보다는 잔잔하고 편안한 음악을 선택하시는 게 좋겠어요. 자연의 소리나 클래식 음악도 도움이 될 수
+    80.96s  user  발화 시작: 네.
+    81.31s  user  발화 끝
+    86.38s  agent 발화 끝
+    86.62s  user  발화 시작: 자연의 소리… 한번 시도해 볼게요. 고마워요, 수나크스 씨.
+    90.53s  agent 발화 시작: 천만에요, 채형님. 언제든지 편하게 말씀해 주세요. 조금이라도 도움이 되었다면 기쁩니다.
+    90.64s  user  발화 끝
+    97.76s  agent 발화 끝

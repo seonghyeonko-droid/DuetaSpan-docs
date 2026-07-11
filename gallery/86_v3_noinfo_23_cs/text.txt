@@ -1,105 +1,95 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 호기심 많고 지지적이며 확인해주는 조언가 Drena입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 Borami이며, 현실적이고 공감적인 지원 조언가로서 사람들의 학업과 동기 부여 유지에 도움을 줍니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Rowan",
+    "name": "Louis",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-01-07",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-05-27",
+      "date": "2025-10-15",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2025-09-27",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-09-15",
       "category": "home",
-      "text": "User's home address is 957 Pine Court."
+      "text": "User's home address is 585 Elm Street."
     },
     {
-      "date": "2025-08-26",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-06-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-07-10",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-10",
-      "title": "Researching a used car",
+      "date": "2026-06-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-19",
-      "title": "Setting up a home network",
+      "date": "2025-05-31",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이선희 ⟨ret@0.00s⟩ 씨 연락처가 혹시 있으세요?
-[  0.02s][moshi] ⟦⚡SPAN@0.02s: (no information found)⟧ 죄송하지만, 이선희 씨의 공개된 연락처는 찾을 수 없었습니다. 개인 정보인 것 같습니다.
+[  0.00s][user ] 안녕하세요. ⟨ret@0.00s⟩ 이선희 님 연락처가 혹시 있을까요? 직접 감사 인사를 드리고 싶어서요.
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (no information found)⟧ 아, 죄송합니다. 이선희 님의 공개된 연락처 정보를 찾을 수 없었습니다. 이용이 제한되어 있는 것 같습니다.
       CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
-[  0.07s][user ] «backchannel» 네.
-[  0.07s][user ] 아, ⟨ret@0.00s⟩ 아쉽네요. 그럼 부산 내일 날씨는 어때요?
-[  0.10s][moshi] ⟦⚡SPAN@0.10s: (tool result) 26.1°C, humidity 68%, wind 7.2 km/h⟧ 내일 부산은 섭씨 26.1도이고, 습도는 68%, 풍속은 시속 7.2킬로미터입니다. 정말 좋겠네요!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
-[  0.15s][user ] «backchannel» 와.
-[  0.15s][user ] 그렇군요. 여기 정착하려고 하는데, 좀 정신이 없네요.
-[  0.18s][moshi] 새로운 도시에 정착하는 건 분명히 정신없을 수 있지만, 설레기도 하죠! 너무 걱정하지 마세요, 금방 적응하실 거예요.
-[  0.24s][user ] «backchannel» 네네.
-[  0.25s][user ] 근처에 ⟨ret@0.03s⟩ 괜찮은 식당 좀 찾아보고 싶어요.
-[  0.27s][moshi] ⟦⚡SPAN@0.27s: (tool result) 12 restaurants found within 5km radius.⟧ 현재 위치에서 5킬로미터 반경 안에 12개의 식당을 찾았습니다. 음식 종류별로 필터링해 드릴까요?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
-[  0.32s][user ] 네, ⟨ret@0.25s⟩ 한식으로 부탁드려요.
-[  0.33s][moshi] ⟦⚡SPAN@0.33s: (tool result) 6 Korean restaurants found within 5km radius.⟧ 5킬로미터 이내에 한식당이 6곳 있습니다. 평점과 리뷰를 보여 드릴까요?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "cuisine": "Korean"}}
-[  0.37s][user ] «backchannel» 네네.
-[  0.37s][user ] 그거 정말 도움이 될 것 같아요, 네.
-[  0.40s][moshi] «interrupted» 음… 국밥전주가 평점이 4.5점으로 아주 높습니다—
-[  0.43s][user ] «interrupts_prev» …혹시 ⟨ret@0.23s⟩ 근처에 공원 같은 곳도 있나요? 초록 공간이 좀 필요해요.
-[  0.47s][moshi] ⟦⚡SPAN@0.47s: (tool result) Taejongdae Park, 1.5km away, 4.6 stars.⟧ 태종대 공원은 1.5킬로미터 거리에 있고 평점은 4.6점입니다. 아름다운 해안 공원이에요.
-      CALL: {"function": "map_search_places", "arguments": {"query": "park near Busan"}}
-[  0.51s][user ] «backchannel» 그렇죠.
-[  0.51s][user ] 그거 ⟨ret@0.22s⟩ 정말 완벽하네요! 어떻게 가야 하죠?
-[  0.54s][moshi] ⟦⚡SPAN@0.54s: (tool result) Driving: 20 minutes, Public Transit: 45 minutes.⟧ 차로 가면 약 20분, 대중교통을 이용하면 45분 정도 걸립니다. 자세한 길 안내를 원하세요?
-      CALL: {"function": "map_directions", "arguments": {"origin": "Busan", "destination": "Taejongdae Park"}}
-[  0.59s][user ] «backchannel» 진짜요?
-[  0.59s][user ] 대중교통으로 부탁드려요.
-[  0.60s][moshi] 101번 버스를 30분 동안 타고, 133번 버스로 환승해서—
-[  0.63s][moshi] —또 15분 정도 가시면 됩니다. 경로를 등록된 휴대폰으로 보내 드릴까요?
-[  0.67s][user ] «backchannel» 네.
-[  0.68s][user ] 네, ⟨ret@0.37s⟩ 그렇게 해주세요.
-[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) Message sent to registered device.⟧ 버스 경로를 등록된 기기로 보냈습니다. 곧 도착할 거예요. 오후 산책하기 정말 좋은 곳입니다.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"message": "Bus route to Taejongdae Park", "location": "Busan"}}
-[  0.74s][user ] 좋아요! ⟨ret@0.68s⟩ 식료품점도 찾아야 해요.
-[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) Homeplus Busan Centum City, 800m away.⟧ 홈플러스 부산 센텀시티가 800미터 거리에 있습니다. 필요한 모든 것을 갖춘 대형 슈퍼마켓입니다.
-      CALL: {"function": "map_search_places", "arguments": {"query": "grocery store near Busan"}}
-[  0.81s][user ] «backchannel» 정말요?
-[  0.81s][user ] 훌륭하네요, ⟨ret@0.68s⟩ 정말 가깝네요. 지역 축제에 대해서도 궁금해요.
-[  0.84s][moshi] ⟦⚡SPAN@0.84s: (tool result) Busan International Film Festival, Oct 21-Oct 30, 2026.⟧ 부산국제영화제는 이천이십육 년 10월 21일부터 10월 30일까지 개최될 예정입니다. 아주 인기 있는 행사입니다.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Busan"}}
-[  0.89s][user ] 아직 좀 남았지만, 알아두면 좋겠네요. 도움 정말 감사합니다!
-[  0.93s][moshi] 천만에요. 정착하는 데 도움이 되어 기쁩니다. 그리고 천천히 하나씩 해나가세요. 아름다운 도시이고, 분명히 즐겁게 지내실 수 있을 거예요.
+[  0.11s][user ] 아, ⟨ret@0.00s⟩ 아쉽네요. 그럼 작년 칠월 십오일 부산 날씨는 어땠나요?
+[  0.15s][moshi] ⟦⚡SPAN@0.15s: (tool result) 27.2°C, humidity 78%, wind 3.1 km/h, condition: partly cloudy.⟧ 네, 작년 칠월 십오일 부산의 날씨는 섭씨 이십칠 점 이 기온에 습도는 칠십팔 퍼센트, 그리고 시속 삼 점 일 킬로미터의 약한 바람이 불었습니다. 부분적으로 흐렸습니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan", "date": "2023-07-15"}}
+[  0.26s][user ] 기분이 좋네요. 음… 역사 숙제가 너무 어려워요.
+[  0.29s][moshi] 아이고, 역사는 좀 까다로울 수 있죠. 어떤 부분이 특히 어려우신가요?
+[  0.33s][user ] 조선 ⟨ret@0.12s⟩ 시대, 특히 세종대왕에 대한 내용이에요.
+[  0.36s][moshi] ⟦⚡SPAN@0.36s: King Sejong the Great reigned from 1418 to 1450, overseeing the creation of the Korean alphabet, Hangul, in 14⟧ 세종대왕께서는 천사백십팔년부터 천사백오십년까지 통치하셨고, 특히 천사백사십삼년에 한글을 창제하신 것과 더불어 많은 중요한 개혁을 이루신 것으로 기억됩니다.
+[  0.43s][user ] «backchannel» 네.
+[  0.43s][moshi] 정말 대단한 지도자셨죠? 업적의 긍정적인 면에 집중하면 공부가 조금 덜 힘들 수도 있을 거예요.
+[  0.50s][user ] «backchannel» 네.
+[  0.50s][user ] 맞아요. ⟨ret@0.46s⟩ 한글에 집중해야겠어요. 한글의 기원에 대한 정보를 찾아 주시겠어요?
+[  0.54s][moshi] ⟦⚡SPAN@0.54s: (tool result) Hangul was proclaimed in 1443 by King Sejong, aiming to create a writing system accessible to al⟧ 네, 한글은 세종대왕께서 천사백사십삼년에 모든 사람이 쉽게 글을 읽고 쓸 수 있도록 복잡한 한자를 대체하기 위해 공포하셨습니다. 집현전 학자들이 완성하는 데 도움을 주었습니다.
+      CALL: {"function": "search", "arguments": {"query": "origins of Hangul"}}
+[  0.64s][user ] «backchannel» 네.
+[  0.64s][user ] 정말 흥미롭네요! 접근성을 위해 만들어졌다는 걸 몰랐어요.
+[  0.67s][moshi] 정말 사려 깊은 디자인이죠, 안 그래요? 세종대왕께서는 모든 사람이 읽고 쓸 수 있기를 진심으로 바라셨습니다.
+[  0.74s][user ] «backchannel» 네.
+[  0.74s][user ] 이제 ⟨ret@0.47s⟩ 휴식을 취해야 할 것 같아요. 편안한 음악 좀 틀어 주시겠어요?
+[  0.79s][moshi] ⟦⚡SPAN@0.79s: (tool result) Now playing: “Weightless” by Marconi Union.⟧ 네, Marconi Union의 “Weightless”를 재생합니다. 긴장을 푸는 데 도움이 되셨으면 좋겠습니다.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_type": "music", "genre": "relaxing"}}
+[  0.84s][user ] «backchannel» 네.
+[  0.84s][user ] 완벽해요, 감사합니다. 다음 주에 치과 예약도 해야 해요.
+[  0.88s][moshi] 네, 문제없습니다. 다음 주에 어느 날이 가장 좋으세요?
+[  0.91s][user ] 화요일은 ⟨ret@0.60s⟩ 어때요?
+[  0.92s][moshi] ⟦⚡SPAN@0.92s: (tool result) Appointment confirmed with Dr. Kim at Seoul Smile Dentistry on July 14, 2026, at 10:00 AM. Confi⟧ 잘 됐습니다! 김 선생님과의 서울 스마일 치과 예약이 칠월 십사일 화요일 오전 열 시로 확정되었습니다. 확인 ID는 칠팔엑스이구제트입니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"service_type": "dentist", "date": "2026-07-14"}}

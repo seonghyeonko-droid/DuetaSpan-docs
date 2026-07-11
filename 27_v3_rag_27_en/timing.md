@@ -4,99 +4,126 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Riley",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-01-23",
-#       "category": "home",
-#       "text": "User's home address is 670 Elm Street."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-09-30",
+#       "date": "2026-06-06",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-08-03",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-04-06",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-04",
+#       "date": "2026-02-04",
+#       "category": "home",
+#       "text": "User's home address is 674 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-07-17",
 #       "category": "trip",
 #       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-06",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-03",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m feeling a little lost… | S2 Yeah, um, what’s the weather like  | S3 Oh, that sounds lovely. | S4 Right. Okay. Thanks, Raris.
+# EXAMINER(FDB-v2) 단계: S1 Hi, I'm feeling a bit lost after m | S2 Wow, that's a long time ago. | S3 I'm trying to find out about his f | S4 Sushi sounds good. What's the weat
 
-     0.00s  user  발화 시작: I’m feeling a little lost…
-     1.66s  user  발화 끝
-     3.69s  user  발화 시작: …honestly. Just moved here.
-     5.49s  user  발화 끝
-     5.79s  agent 발화 시작: It's perfectly normal to feel that way when settling into a 
-    13.13s  user  발화 시작: Yeah, um, what’s the weather like today?
-    13.16s  agent 발화 끝
-    15.16s  <ret> 발화 (turn4 첫 프레임)
-    15.48s  user  발화 끝
-    15.55s  agent 발화 시작: <ret> The weather is currently 24.0 degrees Celsius, with 68
-    15.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) Current conditions are 24.0°C, humidity 68%, wind 3.2 km
-    19.64s  user  발화 시작: Mm-hmm.
-    20.28s  user  발화 끝
-    24.36s  agent 발화 끝
-    24.69s  user  발화 시작: That sounds…pleasant. Are there any good parks nearby?
-    28.09s  <ret> 발화 (turn7 첫 프레임)
-    28.17s  agent 발화 시작: <ret> Olympic Park is 2.3 kilometers away, and it has a 4.6-
-    28.17s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.61s]: (tool result) Olympic Park is 2.3 km away, with 4.6 stars from 1,234 r
-    28.30s  user  발화 끝
-    38.67s  user  발화 시작: Oh, that sounds lovely.
-    38.79s  agent 발화 끝
-    40.00s  agent 발화 시작: It is a beautiful space, and often a good place to meet peop
-    40.05s  user  발화 끝
-    47.00s  agent 발화 끝
-    47.22s  user  발화 시작: Do you know if Danny Shirley and James Dean Bradfield are in
-    51.20s  user  발화 끝
-    51.27s  <ret> 발화 (turn11 첫 프레임)
-    51.35s  agent 발화 시작: <ret> Actually, no, Danny Shirley and James Dean Bradfield p
-    51.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.50s]: Danny Shirley is the lead singer of Marmalade Skies, while James Dean 
-    62.68s  agent 발화 시작: Sometimes people assume connections where there aren't any.
-    62.85s  agent 발화 끝
-    65.20s  user  발화 시작: Yeah.
-    65.55s  user  발화 끝
-    66.29s  agent 발화 끝
-    67.54s  user  발화 시작: Right. Okay. Thanks, Raris.
-    69.89s  user  발화 끝
-    69.93s  agent 발화 시작: You’re very welcome. Remember, taking small steps, like expl
-    77.16s  agent 발화 끝
+     0.00s  user  발화 시작: Hi, I'm feeling a bit lost after my recent move.
+     3.23s  agent 발화 시작: Moving is a big transition, and it’s completely normal to fe
+     3.23s  user  발화 끝
+     6.93s  user  발화 시작: Mhm.
+     7.43s  user  발화 끝
+    11.06s  agent 발화 끝
+    13.18s  user  발화 시작: Yeah, it's… hard. I'm trying to learn about the history of t
+    17.48s  user  발화 끝
+    17.86s  agent 발화 시작: That's a wonderful way to connect with a new place! Explorin
+    24.63s  agent 발화 끝
+    25.68s  user  발화 시작: Do you know when this town was founded?
+    27.06s  <ret> 발화 (turn6 첫 프레임)
+    27.38s  agent 발화 시작: <ret> Millbrook was founded in sixteen ninety-two, by German
+    27.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: The town of Millbrook was founded in 1692 by German Palatine immigrant
+    27.52s  user  발화 끝
+    30.48s  user  발화 시작: Mm-hmm.
+    30.98s  user  발화 끝
+    34.75s  agent 발화 끝
+    34.82s  user  발화 시작: Wow, that's a long time ago.
+    36.35s  agent 발화 시작: It is, isn't it? It’s amazing to think about all the stories
+    36.48s  user  발화 끝
+    41.01s  user  발화 시작: Really?
+    41.69s  user  발화 끝
+    42.45s  user  발화 시작: Um, I was reading about James Henry Miller, a local figure.
+    42.52s  agent 발화 끝
+    45.83s  agent 발화 시작: Oh, yes, James Henry Miller was quite a prominent figure her
+    45.96s  user  발화 끝
+    48.60s  user  발화 시작: Uh-huh.
+    49.00s  user  발화 끝
+    51.99s  agent 발화 끝
+    53.38s  user  발화 시작: I'm trying to find out about his family. What was his wife's
+    57.14s  <ret> 발화 (turn15 첫 프레임)
+    57.22s  agent 발화 시작: <ret> Eliza Jane Thompson, James Henry Miller’s wife, was bo
+    57.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.34s]: James Henry Miller’s wife, Eliza Jane Thompson, was born in Pennsylvan
+    57.40s  user  발화 끝
+    59.80s  user  발화 시작: Yeah.
+    60.25s  user  발화 끝
+    65.57s  agent 발화 끝
+    65.70s  user  발화 시작: American, okay. That's good to know.
+    67.85s  agent 발화 시작: Sometimes understanding a person’s roots helps you understan
+    68.01s  user  발화 끝
+    74.98s  user  발화 시작: I guess so. Can you find me some restaurants nearby? I’m sta
+    75.13s  agent 발화 끝
+    78.38s  <ret> 발화 (turn20 첫 프레임)
+    78.69s  agent 발화 시작: <ret> I found three restaurants nearby: The Corner Bistro, I
+    78.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Found 3 restaurants: The Corner Bistro, Italian; Millbro
+    78.82s  user  발화 끝
+    82.40s  user  발화 시작: Mhm.
+    82.89s  user  발화 끝
+    87.21s  user  발화 시작: Sushi sounds good. What's the weather like tonight?
+    87.36s  agent 발화 끝
+    89.77s  <ret> 발화 (turn23 첫 프레임)
+    89.93s  agent 발화 시작: <ret> Tonight's weather will be eighteen point five degrees 
+    89.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.92s]: (tool result) The weather tonight will be 18.5°C, humidity 65%, wind 3
+    90.16s  user  발화 끝
+    94.82s  user  발화 시작: Uh-huh.
+    95.31s  user  발화 끝
+    99.44s  user  발화 시작: Perfect. Thanks, Liana.
+    99.85s  agent 발화 끝
+   101.11s  agent 발화 시작: You're very welcome. Remember, taking small steps, like expl
+   101.19s  user  발화 끝
+   109.69s  agent 발화 끝

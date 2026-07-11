@@ -1,65 +1,72 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Arux, a upbeat and supportive supportive advisor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Kior, a calm and patient wellness coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Kim",
+    "name": "Adam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
+    "nationality": "Canadian",
+    "gender": "male",
     "age_range": "early 30s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-04-21",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-12-03",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-11-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-07-11",
+      "date": "2026-06-07",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2026-04-04",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "home",
+      "text": "User's home address is 16 Pine Court."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-26",
-      "title": "Researching a used car",
+      "date": "2026-05-03",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] To what era did the Museum of Fine Arts ⟨ret@2.53s⟩ date?
-[  2.61s][moshi] ⟦⚡SPAN@2.61s: (no information found)⟧ Unfortunately, I don’t have information about the Museum of Fine Arts’ founding era right now.
-[  9.67s][user ] Oh, um… well, that’s okay.
-[ 12.66s][moshi] It is! Sometimes not knowing is peaceful, you know? It leaves space for curiosity.
-[ 18.36s][user ] Can you find me events happening this weekend?
-[ 20.95s][moshi] ⟨ret@20.87s⟩ ⟦⚡SPAN@20.95s: (tool result) Events found: Jazz Festival - July 12, 2026, 7:00 PM, Central Park; Art Fair - July 13, 2026, 10⟧ I found a couple of events! There's a Jazz Festival on July 12th, and an Art Fair on July 13th.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {}}
+[  0.00s][user ] Symmetric federalism exist when? ⟨ret@2.28s⟩
+[  2.36s][moshi] ⟦⚡SPAN@2.36s: (no information found)⟧ And unfortunately, I don’t have information on when symmetric federalism exists.
+[  5.62s][user ] «backchannel» Right.
+[  7.89s][user ] Oh. Um, what about the weather in Seoul right ⟨ret@11.28s⟩ now?
+[ 11.52s][moshi] ⟦⚡SPAN@11.52s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 17.02s][user ] «backchannel» Oh.
+[ 21.73s][moshi] It’s quite pleasant, isn’t it? A good day to explore.
+[ 24.39s][user ] «backchannel» Uh-huh.
+[ 25.68s][user ] Maybe. What restaurants are near Gyeongbokgung Palace? ⟨ret@29.61s⟩
+[ 29.85s][moshi] ⟦⚡SPAN@29.85s: (tool result) Tosokchon Samgyetang (Korean, 4.5 stars, ₩20000), Hwangsaengga Kalguksu (Korean, 4.2 stars, ₩150⟧ I found three restaurants near Gyeongbokgung Palace: Tosokchon Samgyetang, Hwangsaengga Kalguksu, and Le Grenier a Pain. They have ratings between 4.0 and 4.5 stars and price ranges from 8000 to 20000 won.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Gyeongbokgung Palace"}}
+[ 47.53s][user ] Tosokchon Samgyetang sounds good. Can I reserve a table there for two, for this Saturday?
+[ 53.65s][moshi] ⟨ret@53.41s⟩ ⟦⚡SPAN@53.65s: (tool result) Reservation confirmed for Tosokchon Samgyetang, July 12, 2026 at 7:00 PM, party of 2, confirmati⟧ I’ve reserved a table for two at Tosokchon Samgyetang for this Saturday, July 12th, at 7:00 PM; your confirmation ID is TS749X.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Tosokchon Samgyetang", "date": "2026-07-12", "time": "7:00 PM", "party_size": 2}}
+[ 64.23s][moshi] That should be a lovely spot to try some traditional Korean ginseng chicken soup.
+[ 66.91s][user ] «backchannel» Yeah, totally.
+[ 69.12s][user ] Perfect. Thanks!
+[ 70.57s][moshi] You’re very welcome. Settling into a new city can feel overwhelming, but discovering good food is a wonderful step.

@@ -4,84 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "정경",
+#     "name": "준담",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-03-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-02-17",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-02-03",
+#       "date": "2025-12-10",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-10-06",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-01-22",
+#       "date": "2025-09-12",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-10-15",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-11",
+#       "date": "2026-05-02",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-06",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-11-26",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-06",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 트히아르 씨. 콜로라도주 덴버에 있는 별점 네개  | S2 호스텔은 별로 안 좋아해요. | S3 백구십달러면 괜찮네요. 그 호텔 예약해 줄 수 있어요? | S4 아니요, 괜찮아요. 지금은 그만할게요.
 
-     0.00s  user  발화 시작: 비비씨 뉴스 좀 훑어봐 줄래? 깊이는 세 단계로 하고, 링크는 쉰개까지.
+     0.00s  user  발화 시작: 안녕하세요, 트히아르 씨. 콜로라도주 덴버에 있는 별점 네개 이상짜리 집을 한 명용으로 찾고 싶어요.
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.11s  agent 발화 시작: <ret> 비비씨 뉴스 웹사이트를 최대 깊이 삼단계, 링크 쉰개까지 훑어봤어요. 그 결과 상위 열개 링크를 
-     0.11s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: (tool result) {"url": "https://www.bbc.com/news", "max depth": 3, "max
-     0.11s  user  발화 끝
-     0.27s  user  발화 시작: 음… 그 중에서 중국 관련 뉴스 링크가 있어?
-     0.27s  agent 발화 끝
-     0.32s  <ret> 발화 (turn6 첫 프레임)
-     0.35s  agent 발화 시작: 네, 비비씨 뉴스에서 중국 관련 기사 링크는 이거예요. https://www.bbc.com/news/worl
-     0.35s  user  발화 끝
-     0.44s  user  발화 시작: 진짜요?
-     0.44s  agent 발화 끝
-     0.45s  user  발화 시작: 이번 주 토요일에 서울에서 재즈 콘서트 하는 곳 찾아줄 수 있어?
-     0.45s  user  발화 끝
-     0.56s  agent 발화 시작: <ret> 이번 주 토요일 서울에서 재즈 콘서트를 할 수 있는 곳은 서울 재즈 클럽과 원스 인 서울 두 곳을
-     0.56s  ⚡SPAN 주입 [d'=0.44s / d_lead=0.44s]: (tool result) {"restaurants": [{"name": "Seoul Jazz Club", "address": 
-     0.56s  user  발화 끝
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.07s  agent 발화 시작: <ret> 덴버, 콜로라도에서 별점 네개 이상, 한 명용 숙소를 찾아봤는데, 브라운스톤 인이라는 곳이 있어요
+     0.07s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) {"houses": [{"name": "The Brownstone Inn", "address": "1
+     0.07s  user  발화 끝
+     0.12s  <ret> 발화 (turn7 첫 프레임)
+     0.20s  user  발화 시작: 음, 이백오십달러는 좀 비싸네요. 더 저렴한 곳은 없을까요?
+     0.20s  agent 발화 끝
+     0.24s  agent 발화 시작: <ret> 조금 더 저렴한 곳을 찾아봤어요. 시티 센터 호스텔이라는 곳은 어떠세요? 십오번가 천이백십칠번지에
+     0.24s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) {"houses": [{"name": "City Center Hostel", "address": "1
+     0.24s  user  발화 끝
+     0.34s  user  발화 시작: 호스텔은 별로 안 좋아해요.
+     0.34s  agent 발화 끝
+     0.36s  agent 발화 시작: 호스텔은 좀 불편할 수 있죠—
+     0.36s  user  발화 끝
+     0.38s  user  발화 시작: …그럼 호텔은 어때요? 호텔 중에서 사성급 이상이고, 가격은 이백달러 이하인 곳을 찾아주세요.
+     0.38s  agent 발화 끝
+     0.44s  agent 발화 시작: <ret> 호텔 중에서 사성급 이상, 이백달러 이하인 곳을 찾아봤는데, 더 매븐 호텔 앳 데어리 블록이 있어
+     0.44s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"houses": [{"name": "The Maven Hotel at Dairy Block", "
+     0.44s  user  발화 끝
+     0.58s  user  발화 시작: 네.
+     0.58s  agent 발화 끝
+     0.59s  agent 발화 시작: 더 매븐 호텔은 데어리 블록에 위치하고 있어서 주변에 맛집도 많고, 분위기도 아주 좋은 곳이에요. 덴버에 처
+     0.59s  user  발화 끝
+     0.65s  <ret> 발화 (turn11 첫 프레임)
+     0.69s  user  발화 시작: 백구십달러면 괜찮네요. 그 호텔 예약해 줄 수 있어요?
+     0.69s  agent 발화 끝
+     0.73s  agent 발화 시작: <ret> 네, 더 매븐 호텔을 칠월 십이일부터 십사일까지 한 명으로 예약해 드렸습니다. 예약 확인 번호는 
+     0.73s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) {"confirmation id": "MX789", "status": "confirmed", "che
+     0.73s  user  발화 끝
+     0.83s  user  발화 시작: 확인 번호가 뭐였죠?
+     0.83s  agent 발화 끝
+     0.85s  agent 발화 시작: 예약 확인 번호는 엠 엑스 칠 팔 구입니다.
+     0.85s  user  발화 끝
+     0.89s  agent 발화 시작: 혹시 다른 필요한 정보가 있으신가요? 덴버는 처음이시라면서요, 혹시 주변 관광 명소도 알아봐 드릴까요?
+     0.89s  agent 발화 끝
+     0.95s  user  발화 시작: 그렇죠.
+     0.95s  agent 발화 끝
+     0.95s  user  발화 시작: 아니요, 괜찮아요. 지금은 그만할게요.
+     0.95s  user  발화 끝
+     0.97s  agent 발화 시작: 네, 알겠습니다. 즐거운 덴버 여행 되세요!
+     0.97s  user  발화 끝
      1.00s  agent 발화 끝

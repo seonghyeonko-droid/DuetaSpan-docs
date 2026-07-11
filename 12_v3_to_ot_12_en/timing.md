@@ -4,151 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Kim",
+#     "name": "Nora",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "home",
-#       "text": "User's home address is 28 Oak Avenue."
+#       "date": "2026-06-08",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-04-22",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-05-09",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-03-25",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-03-21",
+#       "category": "home",
+#       "text": "User's home address is 151 Oak Avenue."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-10-06",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-10-13",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-08-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-07",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What year is the animal slaughter  | S2 Right. So, is that act federal law | S3 Is there anything I should know ab | S4 I’m trying to be better about that
+# EXAMINER(FDB-v2) 단계: S1 Hey, could you tell me who was… | S2 I think I saw it when it first air | S3 Oh, wow, I totally forgot about th | S4 I wonder if it's on streaming anyw
 
-     0.00s  user  발화 시작: What year is the animal slaughter act that we follow?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.03s  agent 발화 시작: <ret> That would be August twenty-seventh, nineteen fifty-ei
-     0.03s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The Animal Welfare Act was first passed on August 27, 1958, and has be
-     0.03s  user  발화 끝
-     0.07s  user  발화 시작: Oh, okay. And uh, what does it actually *do*?
-     0.07s  agent 발화 끝
-     0.09s  <ret> 발화 (turn9 첫 프레임)
-     0.09s  agent 발화 시작: It sets standards of care for animals when they’re used in r
-     0.09s  user  발화 끝
-     0.10s  <ret> 발화 (turn16 첫 프레임)
-     0.14s  user  발화 시작: Did you remember to take the chicken out?
-     0.14s  agent 발화 끝
-     0.16s  user  발화 시작: …It’s just, I don't want it to spoil.
-     0.16s  user  발화 끝
-     0.19s  agent 발화 시작: Planning ahead is a wonderful habit, and it really minimizes
-     0.19s  user  발화 끝
-     0.22s  user  발화 시작: Yeah.
-     0.22s  agent 발화 끝
-     0.23s  user  발화 시작: Right. So, is that act federal law?
+     0.00s  user  발화 시작: Hey, could you tell me who was…
+     0.00s  <ret> 발화 (turn2 첫 프레임)
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.02s  user  발화 시작: …in "The House of the Rising Sun"?
+     0.02s  user  발화 끝
+     0.05s  agent 발화 시작: <ret> "The House of the Rising Sun" starred David Janssen, L
+     0.05s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The cast of "The House of the Rising Sun" includes David Janssen, Loli
+     0.05s  user  발화 끝
+     0.07s  <ret> 발화 (turn6 첫 프레임)
+     0.11s  user  발화 시작: Hmm, and was Amy Smart in it?
+     0.11s  agent 발화 끝
+     0.13s  agent 발화 시작: <ret> Yes, Amy Smart was indeed in it! She played Jenny Port
+     0.13s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Amy Smart played Jenny Porter in "The House of the Rising Sun," a role
+     0.13s  user  발화 끝
+     0.20s  user  발화 시작: Oh, okay. What year did that show come out?
+     0.20s  agent 발화 끝
+     0.23s  <ret> 발화 (turn10 첫 프레임)
+     0.23s  agent 발화 시작: <ret> It originally aired in 1994—quite a while ago now! It 
+     0.23s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: "The House of the Rising Sun" originally aired in 1994, captivating au
      0.23s  user  발화 끝
-     0.25s  agent 발화 시작: <ret> Yes, it *is* a United States federal law—regulating ho
-     0.25s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: The Animal Welfare Act is a United States federal law that regulates t
-     0.25s  user  발화 끝
-     0.28s  user  발화 시작: Mhm.
-     0.28s  agent 발화 끝
-     0.28s  agent 발화 시작: It’s designed to ensure certain standards are met for their 
-     0.28s  user  발화 끝
-     0.29s  <ret> 발화 (turn21 첫 프레임)
-     0.32s  user  발화 시작: Yeah, yeah.
-     0.32s  agent 발화 끝
-     0.32s  user  발화 시작: What about state laws? Do those exist too?
-     0.32s  user  발화 끝
-     0.34s  agent 발화 시작: Many states have their own animal welfare laws that often go
+     0.29s  user  발화 시작: I think I saw it when it first aired… uh, my mom loved it.
+     0.29s  agent 발화 끝
+     0.34s  user  발화 시작: Did you finish the laundry yet?
      0.34s  user  발화 끝
-     0.39s  user  발화 시작: Interesting. Can you find me some information about those in
-     0.39s  agent 발화 끝
-     0.42s  agent 발화 시작: <ret> California’s laws are quite comprehensive—they cover f
-     0.42s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) California’s animal welfare laws are among the most comp
-     0.42s  user  발화 끝
-     0.46s  user  발화 시작: Wow, that sounds…extensive.
+     0.34s  <ret> 발화 (turn14 첫 프레임)
+     0.36s  user  발화 시작: … anyway, what was Lolita Morena in after that?
+     0.36s  user  발화 끝
+     0.39s  agent 발화 시작: <ret> After "The House of the Rising Sun," Lolita Morena app
+     0.39s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Lolita Morena appeared in several films and television shows after "Th
+     0.39s  user  발화 끝
+     0.46s  user  발화 시작: Oh, wow, I totally forgot about that show!
      0.46s  agent 발화 끝
-     0.47s  agent 발화 시작: It reflects a strong commitment to animal welfare within the
-     0.47s  user  발화 끝
-     0.50s  user  발화 시작: Yeah, totally.
-     0.50s  agent 발화 끝
-     0.50s  user  발화 시작: Is there anything I should know about reporting abuse?
-     0.50s  user  발화 끝
-     0.53s  agent 발화 시작: <ret> In California, animal cruelty can lead to up to a year
-     0.53s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: In California, animal cruelty is a misdemeanor, punishable by up to on
-     0.53s  user  발화 끝
-     0.53s  <ret> 발화 (turn24 첫 프레임)
-     0.58s  user  발화 시작: Yeah.
-     0.58s  agent 발화 끝
-     0.58s  user  발화 시작: That's good to know. What about finding a vet nearby?
+     0.48s  agent 발화 시작: It was a huge hit back then, wasn't it? So many iconic shows
+     0.48s  user  발화 끝
+     0.54s  user  발화 시작: Yeah, it really was. Could you find me some information abou
+     0.54s  agent 발화 끝
+     0.58s  agent 발화 시작: <ret> David Janssen was a very well-known actor, especially 
+     0.58s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: David Janssen was an American film and television actor best known for
      0.58s  user  발화 끝
-     0.61s  agent 발화 시작: <ret> The Animal Medical Center of California is nearby—at o
-     0.61s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Veterinarian: Animal Medical Center of California, 123 M
-     0.61s  user  발화 끝
-     0.66s  user  발화 시작: Perfect! And their number is…?
-     0.66s  agent 발화 끝
-     0.67s  agent 발화 시작: Two one three, five five five, one two one two.
-     0.67s  user  발화 끝
-     0.70s  user  발화 시작: Yeah.
-     0.70s  agent 발화 끝
-     0.70s  user  발화 시작: Thanks. That’s really helpful.
-     0.70s  user  발화 끝
-     0.71s  agent 발화 시작: You're very welcome. Staying informed is a key step in respo
-     0.71s  user  발화 끝
-     0.75s  user  발화 시작: Uh-huh.
+     0.64s  user  발화 시작: Yeah.
+     0.64s  agent 발화 끝
+     0.65s  user  발화 시작: Oh! The Fugitive! My grandpa used to watch that every week.
+     0.65s  user  발화 끝
+     0.68s  agent 발화 시작: It was a classic! A lot of families enjoyed watching it toge
+     0.68s  user  발화 끝
+     0.70s  <ret> 발화 (turn20 첫 프레임)
+     0.75s  user  발화 시작: Mhm.
      0.75s  agent 발화 끝
-     0.75s  user  발화 시작: I’m trying to be better about that. It’s hard, sometimes.
+     0.75s  user  발화 시작: I wonder if it's on streaming anywhere…
      0.75s  user  발화 끝
-     0.78s  agent 발화 시작: It takes effort, certainly, but even small changes can make 
+     0.78s  agent 발화 시작: <ret> Good news! You can stream "The Fugitive" on Amazon Pri
+     0.78s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) You can stream "The Fugitive" on Amazon Prime Video, Tub
      0.78s  user  발화 끝
-     0.83s  user  발화 시작: Yeah.
-     0.83s  agent 발화 끝
-     0.83s  user  발화 시작: [sigh] You’re right. I need to schedule a checkup for Buster
-     0.83s  user  발화 끝
-     0.86s  agent 발화 시작: That's a wonderful idea. Would you like me to help you find 
+     0.84s  user  발화 시작: Yeah.
+     0.84s  agent 발화 끝
+     0.84s  user  발화 시작: Awesome, that’s great to know!
+     0.84s  user  발화 끝
+     0.86s  agent 발화 시작: That's fantastic! I'm glad I could help you find it. I find 
      0.86s  user  발화 끝
-     0.91s  user  발화 시작: No, thank you. I'll call them directly.
-     0.91s  agent 발화 끝
-     0.93s  agent 발화 시작: I’m glad I could assist you with some information today.
-     0.93s  user  발화 끝
-     0.96s  user  발화 시작: Yeah, thanks again, Viaia.
-     0.96s  agent 발화 끝
-     0.97s  agent 발화 시작: You’re most welcome. Prioritizing your pet's well-being is a
-     0.97s  user  발화 끝
+     0.93s  user  발화 시작: Thanks, Kaeia.
+     0.93s  agent 발화 끝
+     0.94s  agent 발화 시작: You're very welcome! If you ever need a little help streamli
+     0.94s  user  발화 끝
      1.00s  agent 발화 끝

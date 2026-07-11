@@ -4,147 +4,124 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Rowan",
+#     "name": "Louis",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-01-07",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-05-27",
+#       "date": "2025-10-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-09-27",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-09-15",
 #       "category": "home",
-#       "text": "User's home address is 957 Pine Court."
+#       "text": "User's home address is 585 Elm Street."
 #     },
 #     {
-#       "date": "2025-08-26",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-06-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-07-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
-#       "title": "Researching a used car",
+#       "date": "2026-06-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "title": "Setting up a home network",
+#       "date": "2025-05-31",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이선희 씨 연락처가 혹시 있으세요? | S2 네, 한식으로 부탁드려요. | S3 그거 정말 완벽하네요! 어떻게 가야 하죠? | S4 좋아요! 식료품점도 찾아야 해요.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 이선희 님 연락처가 혹시 있을까요? 직접 감사 인 | S2 조선 시대, 특히 세종대왕에 대한 내용이에요. | S3 정말 흥미롭네요! 접근성을 위해 만들어졌다는 걸 몰랐어요. | S4 완벽해요, 감사합니다. 다음 주에 치과 예약도 해야 해요.
 
-     0.00s  user  발화 시작: 이선희 씨 연락처가 혹시 있으세요?
+     0.00s  user  발화 시작: 안녕하세요. 이선희 님 연락처가 혹시 있을까요? 직접 감사 인사를 드리고 싶어서요.
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.02s  agent 발화 시작: <ret> 죄송하지만, 이선희 씨의 공개된 연락처는 찾을 수 없었습니다. 개인 정보인 것 같습니다.
-     0.02s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (no information found)
-     0.02s  user  발화 끝
-     0.03s  <ret> 발화 (turn10 첫 프레임)
-     0.07s  user  발화 시작: 네.
-     0.07s  agent 발화 끝
-     0.07s  user  발화 시작: 아, 아쉽네요. 그럼 부산 내일 날씨는 어때요?
-     0.07s  user  발화 끝
-     0.10s  agent 발화 시작: <ret> 내일 부산은 섭씨 26.1도이고, 습도는 68%, 풍속은 시속 7.2킬로미터입니다. 정말 좋겠네요
-     0.10s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) 26.1°C, humidity 68%, wind 7.2 km/h
-     0.10s  user  발화 끝
-     0.15s  user  발화 시작: 와.
-     0.15s  agent 발화 끝
-     0.15s  user  발화 시작: 그렇군요. 여기 정착하려고 하는데, 좀 정신이 없네요.
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.05s  agent 발화 시작: <ret> 아, 죄송합니다. 이선희 님의 공개된 연락처 정보를 찾을 수 없었습니다. 이용이 제한되어 있는 것
+     0.05s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (no information found)
+     0.05s  user  발화 끝
+     0.11s  user  발화 시작: 아, 아쉽네요. 그럼 작년 칠월 십오일 부산 날씨는 어땠나요?
+     0.11s  agent 발화 끝
+     0.12s  <ret> 발화 (turn7 첫 프레임)
+     0.15s  agent 발화 시작: <ret> 네, 작년 칠월 십오일 부산의 날씨는 섭씨 이십칠 점 이 기온에 습도는 칠십팔 퍼센트, 그리고 시
+     0.15s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) 27.2°C, humidity 78%, wind 3.1 km/h, condition: partly c
      0.15s  user  발화 끝
-     0.18s  agent 발화 시작: 새로운 도시에 정착하는 건 분명히 정신없을 수 있지만, 설레기도 하죠! 너무 걱정하지 마세요, 금방 적응하실
-     0.18s  user  발화 끝
-     0.22s  <ret> 발화 (turn20 첫 프레임)
-     0.23s  <ret> 발화 (turn17 첫 프레임)
-     0.24s  user  발화 시작: 네네.
-     0.24s  agent 발화 끝
-     0.25s  user  발화 시작: 근처에 괜찮은 식당 좀 찾아보고 싶어요.
-     0.25s  user  발화 끝
-     0.25s  <ret> 발화 (turn12 첫 프레임)
-     0.27s  agent 발화 시작: <ret> 현재 위치에서 5킬로미터 반경 안에 12개의 식당을 찾았습니다. 음식 종류별로 필터링해 드릴까요?
-     0.27s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 12 restaurants found within 5km radius.
-     0.27s  user  발화 끝
-     0.32s  user  발화 시작: 네, 한식으로 부탁드려요.
-     0.32s  agent 발화 끝
-     0.33s  agent 발화 시작: <ret> 5킬로미터 이내에 한식당이 6곳 있습니다. 평점과 리뷰를 보여 드릴까요?
-     0.33s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) 6 Korean restaurants found within 5km radius.
-     0.33s  user  발화 끝
-     0.37s  user  발화 시작: 네네.
-     0.37s  agent 발화 끝
-     0.37s  <ret> 발화 (turn27 첫 프레임)
-     0.37s  user  발화 시작: 그거 정말 도움이 될 것 같아요, 네.
-     0.37s  user  발화 끝
-     0.40s  agent 발화 시작: 음… 국밥전주가 평점이 4.5점으로 아주 높습니다—
-     0.40s  user  발화 끝
-     0.43s  user  발화 시작: …혹시 근처에 공원 같은 곳도 있나요? 초록 공간이 좀 필요해요.
+     0.26s  user  발화 시작: 기분이 좋네요. 음… 역사 숙제가 너무 어려워요.
+     0.26s  agent 발화 끝
+     0.29s  agent 발화 시작: 아이고, 역사는 좀 까다로울 수 있죠. 어떤 부분이 특히 어려우신가요?
+     0.29s  user  발화 끝
+     0.33s  user  발화 시작: 조선 시대, 특히 세종대왕에 대한 내용이에요.
+     0.33s  agent 발화 끝
+     0.36s  agent 발화 시작: <ret> 세종대왕께서는 천사백십팔년부터 천사백오십년까지 통치하셨고, 특히 천사백사십삼년에 한글을 창제하신 
+     0.36s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: King Sejong the Great reigned from 1418 to 1450, overseeing the creati
+     0.36s  user  발화 끝
+     0.43s  user  발화 시작: 네.
      0.43s  agent 발화 끝
-     0.47s  agent 발화 시작: <ret> 태종대 공원은 1.5킬로미터 거리에 있고 평점은 4.6점입니다. 아름다운 해안 공원이에요.
-     0.47s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Taejongdae Park, 1.5km away, 4.6 stars.
-     0.47s  user  발화 끝
-     0.51s  user  발화 시작: 그렇죠.
-     0.51s  agent 발화 끝
-     0.51s  user  발화 시작: 그거 정말 완벽하네요! 어떻게 가야 하죠?
-     0.51s  user  발화 끝
-     0.54s  agent 발화 시작: <ret> 차로 가면 약 20분, 대중교통을 이용하면 45분 정도 걸립니다. 자세한 길 안내를 원하세요?
-     0.54s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Driving: 20 minutes, Public Transit: 45 minutes.
+     0.43s  agent 발화 시작: 정말 대단한 지도자셨죠? 업적의 긍정적인 면에 집중하면 공부가 조금 덜 힘들 수도 있을 거예요.
+     0.43s  user  발화 끝
+     0.46s  <ret> 발화 (turn12 첫 프레임)
+     0.47s  <ret> 발화 (turn18 첫 프레임)
+     0.50s  user  발화 시작: 네.
+     0.50s  agent 발화 끝
+     0.50s  user  발화 시작: 맞아요. 한글에 집중해야겠어요. 한글의 기원에 대한 정보를 찾아 주시겠어요?
+     0.50s  user  발화 끝
+     0.54s  agent 발화 시작: <ret> 네, 한글은 세종대왕께서 천사백사십삼년에 모든 사람이 쉽게 글을 읽고 쓸 수 있도록 복잡한 한자를
+     0.54s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) Hangul was proclaimed in 1443 by King Sejong, aiming to 
      0.54s  user  발화 끝
-     0.59s  user  발화 시작: 진짜요?
-     0.59s  agent 발화 끝
-     0.59s  user  발화 시작: 대중교통으로 부탁드려요.
-     0.59s  user  발화 끝
-     0.60s  agent 발화 시작: 101번 버스를 30분 동안 타고, 133번 버스로 환승해서—
-     0.60s  user  발화 끝
-     0.63s  agent 발화 시작: —또 15분 정도 가시면 됩니다. 경로를 등록된 휴대폰으로 보내 드릴까요?
-     0.63s  agent 발화 끝
-     0.67s  user  발화 시작: 네.
-     0.67s  agent 발화 끝
-     0.68s  user  발화 시작: 네, 그렇게 해주세요.
-     0.68s  user  발화 끝
-     0.68s  <ret> 발화 (turn29 첫 프레임)
-     0.68s  <ret> 발화 (turn32 첫 프레임)
-     0.69s  agent 발화 시작: <ret> 버스 경로를 등록된 기기로 보냈습니다. 곧 도착할 거예요. 오후 산책하기 정말 좋은 곳입니다.
-     0.69s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Message sent to registered device.
-     0.69s  user  발화 끝
-     0.74s  user  발화 시작: 좋아요! 식료품점도 찾아야 해요.
+     0.60s  <ret> 발화 (turn23 첫 프레임)
+     0.64s  user  발화 시작: 네.
+     0.64s  agent 발화 끝
+     0.64s  user  발화 시작: 정말 흥미롭네요! 접근성을 위해 만들어졌다는 걸 몰랐어요.
+     0.64s  user  발화 끝
+     0.67s  agent 발화 시작: 정말 사려 깊은 디자인이죠, 안 그래요? 세종대왕께서는 모든 사람이 읽고 쓸 수 있기를 진심으로 바라셨습니다
+     0.67s  user  발화 끝
+     0.74s  user  발화 시작: 네.
      0.74s  agent 발화 끝
-     0.76s  agent 발화 시작: <ret> 홈플러스 부산 센텀시티가 800미터 거리에 있습니다. 필요한 모든 것을 갖춘 대형 슈퍼마켓입니다.
-     0.76s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Homeplus Busan Centum City, 800m away.
-     0.76s  user  발화 끝
-     0.81s  user  발화 시작: 정말요?
-     0.81s  agent 발화 끝
-     0.81s  user  발화 시작: 훌륭하네요, 정말 가깝네요. 지역 축제에 대해서도 궁금해요.
-     0.81s  user  발화 끝
-     0.84s  agent 발화 시작: <ret> 부산국제영화제는 이천이십육 년 10월 21일부터 10월 30일까지 개최될 예정입니다. 아주 인기 
-     0.84s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Busan International Film Festival, Oct 21-Oct 30, 2026.
+     0.74s  user  발화 시작: 이제 휴식을 취해야 할 것 같아요. 편안한 음악 좀 틀어 주시겠어요?
+     0.74s  user  발화 끝
+     0.79s  agent 발화 시작: <ret> 네, Marconi Union의 “Weightless”를 재생합니다. 긴장을 푸는 데 도움이 되셨
+     0.79s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Now playing: “Weightless” by Marconi Union.
+     0.79s  user  발화 끝
+     0.84s  user  발화 시작: 네.
+     0.84s  agent 발화 끝
+     0.84s  user  발화 시작: 완벽해요, 감사합니다. 다음 주에 치과 예약도 해야 해요.
      0.84s  user  발화 끝
-     0.89s  user  발화 시작: 아직 좀 남았지만, 알아두면 좋겠네요. 도움 정말 감사합니다!
-     0.89s  agent 발화 끝
-     0.93s  agent 발화 시작: 천만에요. 정착하는 데 도움이 되어 기쁩니다. 그리고 천천히 하나씩 해나가세요. 아름다운 도시이고, 분명히 
-     0.93s  user  발화 끝
+     0.88s  agent 발화 시작: 네, 문제없습니다. 다음 주에 어느 날이 가장 좋으세요?
+     0.88s  user  발화 끝
+     0.91s  user  발화 시작: 화요일은 어때요?
+     0.91s  agent 발화 끝
+     0.92s  agent 발화 시작: <ret> 잘 됐습니다! 김 선생님과의 서울 스마일 치과 예약이 칠월 십사일 화요일 오전 열 시로 확정되었습
+     0.92s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Appointment confirmed with Dr. Kim at Seoul Smile Dentis
+     0.92s  user  발화 끝
      1.00s  agent 발화 끝

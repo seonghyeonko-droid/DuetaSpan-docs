@@ -4,126 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Manon",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-06-17",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-05-09",
+#       "date": "2026-05-18",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-03-05",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-01-24",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-09-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-06-29",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-02",
+#       "category": "home",
+#       "text": "User's home address is 745 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-09-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-20",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, what is the movie | S2 That sounds incredibly stressful. | S3 That’s a huge impact! | S4 He’s such a talented actor.
+# EXAMINER(FDB-v2) 단계: S1 Who plays Violet Baudelaire in the | S2 Oh, okay. Do you think Violet was  | S3 I do, um, I think so. What about K | S4 Yes, he did.
 
-     0.00s  user  발화 시작: I was wondering, what is the movie *The Imitation Game* abou
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> It tells the story of Alan Turing, a brilliant mind—
-     3.60s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.56s]: The film depicts the life of British cryptanalyst Alan Turing, who led
-     3.74s  user  발화 끝
-     6.49s  user  발화 시작: …was he the only one working on that?
-     7.15s  agent 발화 끝
-     8.76s  <ret> 발화 (turn3 첫 프레임)
-     9.03s  user  발화 끝
-     9.15s  agent 발화 시작: <ret> Bletchley Park was where the UK’s codebreakers worked 
-     9.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.30s]: Bletchley Park was the central site for the United Kingdom's Governmen
-    10.93s  user  발화 시작: Yeah.
-    11.66s  user  발화 끝
-    13.45s  agent 발화 끝
-    13.56s  user  발화 시작: That sounds incredibly stressful.
-    15.62s  <ret> 발화 (turn6 첫 프레임)
-    15.93s  agent 발화 시작: <ret> He developed a machine called the “Bombe” to help brea
-    15.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.59s]: Alan Turing developed a machine called the "Bombe" to help decipher th
-    16.01s  user  발화 끝
-    17.53s  user  발화 시작: Yeah, totally.
-    18.90s  user  발화 끝
-    20.41s  agent 발화 시작: It significantly sped up the process of cracking those compl
-    20.51s  agent 발화 끝
-    23.13s  user  발화 시작: Yeah, yeah.
-    24.42s  user  발화 끝
-    24.76s  user  발화 시작: Did cracking the code actually shorten the war?
-    24.85s  agent 발화 끝
-    27.60s  <ret> 발화 (turn11 첫 프레임)
-    27.81s  user  발화 끝
-    27.84s  agent 발화 시작: <ret> Many historians believe their work shortened the war b
-    27.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.34s]: Historians estimate that the work at Bletchley Park shortened the war 
-    32.01s  user  발화 시작: That’s a huge impact!
-    32.19s  agent 발화 끝
-    33.34s  <ret> 발화 (turn13 첫 프레임)
-    33.74s  agent 발화 시작: <ret> It really was, saving countless lives in the process.
-    33.74s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=3.65s]: The current temperature in Rome, Italy is 28.5°C with clear skies and 
-    33.77s  user  발화 끝
-    37.17s  agent 발화 시작: It’s a story of immense courage and intellectual achievement
-    37.40s  agent 발화 끝
-    40.49s  user  발화 시작: I think I’ll add that to my watchlist.
-    40.78s  agent 발화 끝
-    42.70s  <ret> 발화 (turn16 첫 프레임)
-    42.85s  agent 발화 시작: <ret> Benedict Cumberbatch was nominated for an Oscar for hi
-    42.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.63s]: Benedict Cumberbatch received an Academy Award nomination for his port
-    43.08s  user  발화 끝
-    46.48s  agent 발화 끝
-    46.60s  user  발화 시작: He’s such a talented actor.
-    48.63s  agent 발화 시작: He truly captured Turing’s complexity, I think.
-    48.67s  user  발화 끝
-    51.88s  agent 발화 끝
-    52.07s  user  발화 시작: Thanks for telling me about it, Broia.
-    54.23s  agent 발화 시작: You’re very welcome. It's a story that deserves to be rememb
-    54.28s  user  발화 끝
-    57.70s  agent 발화 끝
+     0.00s  user  발화 시작: Who plays Violet Baudelaire in the Netflix series?
+     3.05s  <ret> 발화 (turn1 첫 프레임)
+     3.26s  agent 발화 시작: <ret> That would be Malina Weissman, she wonderfully portray
+     3.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: Malina Weissman played Violet Baudelaire in the Netflix series *A Seri
+     3.52s  user  발화 끝
+    10.30s  agent 발화 끝
+    11.73s  user  발화 시작: Oh, okay. Do you think Violet was a good role model?
+    15.18s  <ret> 발화 (turn3 첫 프레임)
+    15.43s  user  발화 끝
+    15.58s  agent 발화 시작: <ret> Violet certainly was! She’s incredibly resourceful and
+    15.58s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.11s]: The current temperature in Ulaanbaatar, Mongolia is -18.2°C, with clea
+    23.69s  agent 발화 끝
+    24.67s  user  발화 시작: I do, um, I think so. What about Klaus?
+    27.98s  <ret> 발화 (turn5 첫 프레임)
+    28.09s  user  발화 끝
+    28.29s  agent 발화 시작: <ret> Louis Hynes played Klaus, Violet's brother. He brought
+    28.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: Louis Hynes portrayed Klaus Baudelaire, Violet’s brother, in *A Series
+    32.86s  user  발화 시작: Uh-huh.
+    33.36s  user  발화 끝
+    34.93s  user  발화 시작: Yes, he did.
+    35.05s  agent 발화 끝
+    36.08s  user  발화 끝
+    36.27s  agent 발화 시작: It’s nice to see siblings supporting each other, even in suc
+    44.01s  agent 발화 끝

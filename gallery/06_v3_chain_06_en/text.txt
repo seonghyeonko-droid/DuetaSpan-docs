@@ -1,72 +1,56 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Tir, a curious and validating supportive advisor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Orox, a thoughtful and soft-spoken supportive advisor who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "Morgan",
+    "name": "Casey",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-23",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-05-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     },
     {
-      "date": "2026-03-10",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2026-03-03",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-12-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-10-01",
+      "date": "2026-05-05",
       "category": "home",
-      "text": "User's home address is 972 Cedar Lane."
+      "text": "User's home address is 26 Oak Avenue."
     },
     {
-      "date": "2025-05-31",
+      "date": "2026-04-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-01-31",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-07-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "work",
+      "text": "User works as a architect."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-06",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-04",
+      "date": "2026-04-14",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -77,11 +61,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you book me a regular ride for two people to sixteen ⟨ret@0.13s⟩ hundred Amphitheatre Parkway in Mountain View, California?
-[  0.21s][moshi] ⟦⚡SPAN@0.21s: (tool result) ride id: 789456, driver name: Alice Johnson, eta: 5 minutes, price: $18.50⟧ Your ride, number seven eight nine four five six, with Alice Johnson, arrives in five minutes and costs eighteen dollars and fifty cents.
-      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup_location": "current", "dropoff_location": "1600 Amphitheatre Parkway, Mountain View, California", "number_of_passengers": 2, "ride_type": "regular"}}
-[  0.46s][user ] «backchannel» Right.
-[  0.47s][user ] That ⟨ret@0.35s⟩ sounds great, thanks! What’s the weather like there right now?
-[  0.59s][moshi] ⟦⚡SPAN@0.59s: (tool result) The current weather in Mountain View, California is 24.0°C, humidity 68%, wind 7.2 km/h.⟧ It's a lovely day in Mountain View!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Mountain View, California"}}
-[  0.67s][moshi] The current temperature is twenty-four point zero degrees Celsius, with sixty-eight percent humidity and a seven point two kilometer per hour wind. Perfect weather for a visit, don't you think?
+[  0.00s][user ] Can ⟨ret@0.00s⟩ you clear the session labeled proj alpha version two?
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: (tool result) Session proj alpha version two cleared.⟧ The session has been cleared for you. It’s good to keep things tidy, isn’t it?
+      CALL: {"function": "browser", "arguments": {"session_label": "proj alpha version two"}}
+[  0.08s][user ] «backchannel» Yeah.
+[  0.08s][user ] Okay, ⟨ret@0.00s⟩ good. What’s the weather in Seoul right now?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: (tool result) Current weather in Seoul: 26.5°C, humidity 68%, wind 3.2 km/h.⟧ The weather in Seoul is currently 26.5 degrees Celsius, with 68 percent humidity and a 3.2 kilometer per hour wind. A pleasant day, it seems.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[  0.19s][user ] And ⟨ret@0.14s⟩ can you find me some Italian restaurants nearby?
+[  0.22s][moshi] ⟦⚡SPAN@0.22s: (tool result) Bella Italia (4.5 stars, 0.8 km), Pasta Paradise (4.2 stars, 1.2 km), Roma Trattoria (4.0 stars,⟧ I found three Italian restaurants near you: Bella Italia, Pasta Paradise, and Roma Trattoria. Bella Italia is closest, at 0.8 kilometers.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
+[  0.29s][user ] What ⟨ret@0.23s⟩ are the ratings for Bella Italia again?
+[  0.31s][moshi] ⟦⚡SPAN@0.31s: Bella Italia (4.5 stars, 0.8 km)⟧ Bella Italia has a rating of 4.5 stars and is 0.8 kilometers away.
+[  0.35s][user ] Um, ⟨ret@0.00s⟩ could you reserve a table there for two, for this Saturday?
+[  0.39s][moshi] «interrupted» ⟦⚡SPAN@0.39s: (tool result) Reservation confirmed for Bella Italia, July 12, 2026, 7:30 PM, party of 2, confirmation ID: BX8⟧ Yes, a table for two at Bella Italia is confirmed for this Saturday, July 12th, at 7:30 PM. Your confirmation ID is BX84ZP. –
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "2026-07-12", "party_size": 2}}
+[  0.47s][user ] «interrupts_prev» …Actually, ⟨ret@0.42s⟩ can we make that 8:00 PM instead?
+[  0.50s][moshi] ⟦⚡SPAN@0.50s: (tool result) Reservation updated for Bella Italia, July 12, 2026, 8:00 PM, party of 2, confirmation ID: BX84Z⟧ Your reservation at Bella Italia is now updated to 8:00 PM on Saturday, July 12th, still under confirmation ID BX84ZP. Sometimes small adjustments make all the difference.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "2026-07-12", "party_size": 2, "time": "8:00 PM"}}
+[  0.58s][user ] «backchannel» Yeah.
+[  0.58s][user ] Great, ⟨ret@0.38s⟩ thank you. What time is it in London right now?
+[  0.62s][moshi] ⟦⚡SPAN@0.62s: (tool result) It is Friday, July 10, 2026 at 11:47 AM in Europe/London right now.⟧ It is currently 11:47 AM in London, on Friday, July 10th. Quite a difference from Seoul’s time, isn’t it?
+      CALL: {"function": "get_time", "arguments": {"city": "London"}}
+[  0.68s][user ] Yes, ⟨ret@0.33s⟩ it is. Find me some flights from Seoul to London, one-way, next Tuesday.
+[  0.73s][moshi] ⟦⚡SPAN@0.73s: (tool result) Korean Air KE001, departs 14:30, arrives 18:00, price $1250; Asiana Airlines OZ521, departs 16:0⟧ I found two one-way flights from Seoul to London next Tuesday, July 14th. Korean Air has a flight departing at 2:30 PM, arriving at 6:00 PM for $1250.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"departure_city": "Seoul", "arrival_city": "London", "date": "2026-07-14"}}
+[  0.81s][user ] What’s ⟨ret@0.75s⟩ the cheapest option?
+[  0.83s][moshi] ⟦⚡SPAN@0.83s: Korean Air KE001, departs 14:30, arrives 18:00, price $1250; Asiana Airlines OZ521, departs 16:00, arrives 20:⟧ The Korean Air flight departing at 2:30 PM is the cheapest option, at $1250. It arrives in London at 6:00 PM.
+[  0.89s][user ] «backchannel» Exactly.
+[  0.90s][user ] Okay. ⟨ret@0.61s⟩ Find me some relaxing music to listen to.
+[  0.93s][moshi] ⟦⚡SPAN@0.93s: (tool result) “Weightless” by Marconi Union, “Nuvole Bianche” by Ludovico Einaudi, “Watermark” by Enya.⟧ I’ve found some relaxing music for you. Perhaps “Weightless” by Marconi Union, “Nuvole Bianche” by Ludovico Einaudi, or “Watermark” by Enya?
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "relaxing"}}
+[  0.99s][user ] Play “Weightless”.

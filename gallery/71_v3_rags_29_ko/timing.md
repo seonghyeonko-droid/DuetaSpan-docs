@@ -4,72 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "진현",
+#     "name": "보찬",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-02-15",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2026-01-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#     },
+#     {
+#       "date": "2025-10-16",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-15",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-08-21",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-07-25",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-07-12",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-26",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-23",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-30",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이십일 점프 스트리트 주제곡을 처음 부른 사람은 누구야?
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.56s  user  발화 끝
-     3.59s  agent 발화 시작: <ret> 음, 이십일 점프 스트리트 주제곡을 처음 부른 사람은 할리 로빈슨이라고 해요. 혹시 그 드라마 좋
-     3.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Holly Robinson is an American actress, singer, and television personal
-     9.84s  agent 발화 끝
+     0.00s  user  발화 시작: 투르 드 프랑스에서 가장 많은 스테이지 우승을 한 선수는 누구야?
+     4.48s  <ret> 발화 (turn1 첫 프레임)
+     4.64s  agent 발화 시작: <ret> 투르 드 프랑스에서 가장 많은 스테이지 우승을 한 선수는 에디 메르크스 선수인데, 총 삼십사번이나
+     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Eddy Merckx won 34 stages of the Tour de France, more than any other c
+     4.73s  user  발화 끝
+    12.19s  agent 발화 끝

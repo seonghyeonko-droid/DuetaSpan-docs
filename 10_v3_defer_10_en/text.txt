@@ -1,10 +1,10 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Fria, a encouraging and non-judgmental life coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Les, a kind and steady life coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Emma",
+    "name": "Remy",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -12,86 +12,58 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-10",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-03-01",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-02-23",
+      "date": "2026-04-29",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "text": "User is planning a trip to Kyoto in August."
     },
     {
-      "date": "2026-02-05",
+      "date": "2026-01-13",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-11-18",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-09-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-07-17",
+      "category": "work",
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-23",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-04",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Play ⟨ret@0.00s⟩ Watermelon Sugar by Harry Styles on the patio, please.
-[  0.03s][moshi] ⟦⚡SPAN@0.03s: (tool result) Playing Watermelon Sugar by Harry Styles on patio speakers.⟧ Watermelon Sugar is now playing on the patio speakers. Enjoy the sunshine!
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist_name": "Harry Styles", "track_name": "Watermelon Sugar", "location": "patio"}}
-[  0.07s][user ] What’s ⟨ret@0.00s⟩ the weather like right now?
-[  0.08s][moshi] ⟦⚡SPAN@0.08s: (tool result) The weather is 23.0°C, humidity 74%, wind 5.5 km/h.⟧ It’s currently 23.0°C with 74% humidity and a 5.5 km/h breeze. Perfect patio weather, wouldn't you say?
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[  0.14s][user ] Um, I need to book a restaurant for Saturday night… something Italian.
-[  0.17s][moshi] Saturday night, Italian… sounds lovely! Do you have a location or price range in mind?
-[  0.22s][user ] Near ⟨ret@0.07s⟩ Gangnam, not too expensive.
-[  0.23s][moshi] ⟦⚡SPAN@0.23s: (tool result) La Stella: Italian, Gangnam, average cost ₩30,000, rating 4.5/5.⟧ I found La Stella in Gangnam. It’s Italian, averages ₩30,000, and has a 4.5-star rating. Does that sound good?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Gangnam", "cuisine": "Italian", "price_range": "moderate"}}
-[  0.29s][user ] «backchannel» Right.
-[  0.29s][user ] That ⟨ret@0.10s⟩ sounds… pretty good, actually. Can you reserve a table for two at 7:30 PM?
-[  0.34s][moshi] ⟦⚡SPAN@0.34s: (tool result) Reservation confirmed at La Stella for 2 people on 2026-07-11 at 19:30. Confirmation ID: LS71119⟧ Wonderful! Your table for two at La Stella is confirmed for Saturday at 7:30 PM. Confirmation ID is LS7111930.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Stella", "date": "2026-07-11", "time": "19:30", "party_size": 2}}
-[  0.40s][user ] «backchannel» Really?
-[  0.40s][user ] Thanks! I was thinking about getting a new… uh… a new lamp.
-[  0.44s][moshi] A new lamp? That’s a nice little refresh. It’s amazing how a small change can brighten a space, isn’t it?
-[  0.50s][user ] Yeah, ⟨ret@0.36s⟩ I need to find one. Maybe something modern?
-[  0.52s][moshi] ⟦⚡SPAN@0.52s: (tool result) Modern floor lamps offer sleek designs and ambient lighting for contemporary spaces. Browse opti⟧ Modern floor lamps offer sleek designs. Wayfair, Amazon, and IKEA have some great options.
-      CALL: {"function": "search", "arguments": {"query": "modern floor lamps"}}
-[  0.56s][user ] Can ⟨ret@0.23s⟩ ⟨ret@0.51s⟩ you show me the prices at IKEA?
-[  0.59s][moshi] ⟦⚡SPAN@0.59s: (no information found)⟧ Give me a moment while I check IKEA’s current floor lamp prices.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.ikea.com/us/en/cat/floor-lamps-20876/"}}
-[  0.63s][moshi] I've been looking into IKEA’s current ⟦⚡SPAN@0.65s: IKEA floor lamps range from ₩29,900 for the RANARP to ₩199,000 for the PELLO. Availability varies by store. ik⟧ prices… IKEA floor lamps range from ₩29,900 for the RANARP to ₩199,000 for the PELLO. Availability varies by store. I hope that helps narrow down your search.
-[  0.73s][user ] «backchannel» Yeah.
-[  0.73s][user ] Wow, ⟨ret@0.68s⟩ that’s a big range! What time is it right now?
-[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) It is Friday, July 10, 2026 at 3:47 PM in Asia/Seoul right now.⟧ It’s currently 3:47 PM in Seoul. Time flies when you're planning a lovely weekend!
-      CALL: {"function": "get_time", "arguments": {}}
-[  0.80s][user ] «backchannel» Wow.
-[  0.81s][user ] Remind me to check my bank account tomorrow.
-[  0.83s][moshi] I’ve noted that for you. It's a good habit to stay on top of those things.
-[  0.88s][user ] What ⟨ret@0.75s⟩ did I say about checking my bank account?
-[  0.91s][moshi] ⟦⚡SPAN@0.91s: [2026-07-10] Remind me to check my bank account tomorrow.⟧ You said, “Remind me to check my bank account tomorrow.”
-[  0.94s][user ] [happy] Okay, good. That’s helpful.
-[  0.95s][moshi] I’m glad I could help! Remember, small steps toward financial awareness can make a big difference.
+[  0.00s][user ] I need to start a crawl of the BBC News website, only going one level deep, and ⟨ret@0.12s⟩ examine a maximum of five links per page, limited to twenty pages.
+[  0.20s][moshi] «interrupted» ⟦⚡SPAN@0.20s: (tool result) Crawl initiated: URL=https://www.bbc.com/news, Depth=1, MaxLinks=5, MaxPages=20, ID=craw-789213⟧ Alright, I’ve started that crawl for you—
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.bbc.com/news", "max_depth": 1, "max_links_per_page": 5, "max_pages": 20}}
+[  0.25s][user ] «interrupts_prev» …Can ⟨ret@0.19s⟩ you tell me about the current top story on BBC News while that's running?
+[  0.35s][moshi] ⟦⚡SPAN@0.35s: The BBC News website currently leads with the story of a heatwave impacting Southern Europe, with temperatures⟧ The BBC is currently leading with a heatwave impacting Southern Europe, with temperatures exceeding 40 degrees Celsius in Italy, Greece, and Spain.
+[  0.50s][moshi] It’s quite a significant situation there.
+[  0.54s][user ] «backchannel» Yeah.
+[  0.55s][user ] That sounds rough. How long will that crawl take, roughly?
+[  0.62s][moshi] It’s hard to say precisely, but crawls of that size usually complete within fifteen to twenty minutes. I’ll let you know as soon as it’s finished.
+[  0.79s][user ] Good, thank you. I'm trying to stay informed on world events.
+[  0.87s][moshi] That's a very healthy habit, staying informed. It helps us feel more connected and understand what’s happening around us.

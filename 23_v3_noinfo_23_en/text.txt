@@ -1,105 +1,95 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Drena, a curious and validating supportive advisor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Borami, a grounded and empathetic supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Rowan",
+    "name": "Louis",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-01-07",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-05-27",
+      "date": "2025-10-15",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2025-09-27",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-09-15",
       "category": "home",
-      "text": "User's home address is 957 Pine Court."
+      "text": "User's home address is 585 Elm Street."
     },
     {
-      "date": "2025-08-26",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-06-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-07-10",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-10",
-      "title": "Researching a used car",
+      "date": "2026-06-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-19",
-      "title": "Setting up a home network",
+      "date": "2025-05-31",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you have the contact information for ⟨ret@2.08s⟩ Lee Sun-hee?
-[  2.48s][moshi] ⟦⚡SPAN@2.48s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. It seems to be private.
+[  0.00s][user ] Do you happen to have Lee Sun-hee’s number? I’d like to thank ⟨ret@3.22s⟩ her personally.
+[  3.61s][moshi] ⟦⚡SPAN@3.62s: (no information found)⟧ I’m so sorry, I couldn’t find any publicly listed contact information for Lee Sun-hee. It seems that’s not available.
       CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
-[  5.75s][user ] «backchannel» Uh-huh.
-[  8.73s][user ] Oh, that’s a shame. Well, how about the weather in ⟨ret@12.20s⟩ Busan tomorrow?
-[ 12.60s][moshi] ⟦⚡SPAN@12.60s: (tool result) 26.1°C, humidity 68%, wind 7.2 km/h⟧ Tomorrow in Busan, it will be 26.1 degrees Celsius, with 68% humidity and a wind speed of 7.2 kilometers per hour. It sounds lovely!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
-[ 15.61s][user ] «backchannel» Really?
-[ 21.88s][user ] That does sound nice. I’m trying to get settled here, it’s a bit overwhelming.
-[ 26.27s][moshi] Settling into a new city can definitely be overwhelming, but it's also exciting! Don't worry, you'll find your rhythm.
-[ 28.90s][user ] «backchannel» Uh-huh.
-[ 32.79s][user ] I’m hoping to find some good restaurants ⟨ret@34.99s⟩ nearby.
-[ 35.30s][moshi] ⟦⚡SPAN@35.31s: (tool result) 12 restaurants found within 5km radius.⟧ I found 12 restaurants within a 5-kilometer radius of your current location. Would you like me to filter them by cuisine?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
-[ 41.86s][user ] Yes, Korean food would be ⟨ret@43.74s⟩ great.
-[ 44.06s][moshi] ⟦⚡SPAN@44.06s: (tool result) 6 Korean restaurants found within 5km radius.⟧ There are 6 Korean restaurants within 5 kilometers. I can show you their ratings and reviews if you’d like.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "cuisine": "Korean"}}
-[ 47.25s][user ] «backchannel» Yeah.
-[ 50.50s][user ] That would be really helpful, yes.
-[ 52.35s][moshi] «interrupted» Let's see… Gukbap Jeonju is highly rated, with 4.5 stars—
-[ 56.62s][user ] «interrupts_prev» …Actually, is there a nice park around here too? I need some green space.
-[ 60.95s][moshi] ⟨ret@60.80s⟩ ⟦⚡SPAN@60.96s: (tool result) Taejongdae Park, 1.5km away, 4.6 stars.⟧ Taejongdae Park is 1.5 kilometers away and has a 4.6-star rating. It's a beautiful coastal park.
-      CALL: {"function": "map_search_places", "arguments": {"query": "park near Busan"}}
-[ 63.06s][user ] «backchannel» Yeah.
-[ 68.96s][user ] That sounds perfect! How do I get there?
-[ 71.88s][moshi] ⟨ret@71.48s⟩ ⟦⚡SPAN@71.88s: (tool result) Driving: 20 minutes, Public Transit: 45 minutes.⟧ By car, it's about a 20-minute drive, or 45 minutes using public transportation. Would you like detailed directions?
-      CALL: {"function": "map_directions", "arguments": {"origin": "Busan", "destination": "Taejongdae Park"}}
-[ 76.27s][user ] «backchannel» Really?
-[ 79.03s][user ] Public transport sounds good, please.
-[ 81.25s][moshi] The route involves taking bus 101 for 30 minutes, then transferring to bus 133—
-[ 87.81s][moshi] —for another 15 minutes. I can send the route to your phone if you like.
-[ 89.74s][user ] «backchannel» Mm-hmm.
-[ 92.60s][user ] Yes, please do ⟨ret@93.89s⟩ that.
-[ 94.04s][moshi] ⟦⚡SPAN@94.05s: (tool result) Message sent to registered device.⟧ I've sent the bus route to your registered device. You should receive it shortly. It’s a really lovely spot for an afternoon walk.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"message": "Bus route to Taejongdae Park", "location": "Busan"}}
-[101.49s][user ] Great! I also need to find a ⟨ret@103.44s⟩ grocery store.
-[103.67s][moshi] ⟦⚡SPAN@103.68s: (tool result) Homeplus Busan Centum City, 800m away.⟧ Homeplus Busan Centum City is just 800 meters away. It’s a large supermarket with everything you might need.
-      CALL: {"function": "map_search_places", "arguments": {"query": "grocery store near Busan"}}
-[106.12s][user ] «backchannel» Really?
-[112.42s][user ] Wonderful, that’s very close. I'm also wondering about local festivals.
-[117.20s][moshi] ⟨ret@117.04s⟩ ⟦⚡SPAN@117.20s: (tool result) Busan International Film Festival, Oct 21-Oct 30, 2026.⟧ The Busan International Film Festival is scheduled for October 21st to October 30th, 2026. It's a very popular event.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Busan"}}
-[126.43s][user ] That's quite a ways off, but good to know. Thanks for all your help!
-[129.62s][moshi] You're very welcome. I'm happy to help you settle in, and remember to take things one step at a time. It's a beautiful city, and I think you'll really enjoy it here.
+[ 10.38s][user ] Oh, that’s a shame. Well, what about the weather in Busan on July 15th of ⟨ret@14.82s⟩ last year?
+[ 15.22s][moshi] ⟦⚡SPAN@15.22s: (tool result) 27.2°C, humidity 78%, wind 3.1 km/h, condition: partly cloudy.⟧ On July fifteenth of last year, the weather in Busan was 27.2°C, with seventy-eight percent humidity and a gentle breeze of 3.1 kilometers per hour. It was partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan", "date": "2023-07-15"}}
+[ 27.38s][user ] That sounds lovely. Um… I’m really struggling with my history assignment.
+[ 32.27s][moshi] Oh dear, history can be tricky. What part are you finding difficult?
+[ 36.65s][user ] It’s about the Joseon Dynasty, specifically King Sejong the ⟨ret@40.32s⟩ Great.
+[ 40.63s][moshi] ⟦⚡SPAN@40.64s: King Sejong the Great reigned from 1418 to 1450, overseeing the creation of the Korean alphabet, Hangul, in 14⟧ King Sejong the Great ruled from fourteen eighteen to fourteen fifty, and is remembered for creating Hangul in fourteen forty-three—the Korean alphabet—along with many important reforms.
+[ 46.45s][user ] «backchannel» Okay.
+[ 50.80s][moshi] He truly was a remarkable leader, wasn’t he? Focusing on the positive impact of his achievements can sometimes make studying feel less daunting.
+[ 56.65s][user ] «backchannel» Right.
+[ 58.35s][user ] You’re right. Maybe I should focus on Hangul. Can you find me some information about its origins?
+[ 63.80s][moshi] ⟨ret@63.73s⟩ ⟦⚡SPAN@63.81s: (tool result) Hangul was proclaimed in 1443 by King Sejong, aiming to create a writing system accessible to al⟧ Hangul was proclaimed in fourteen forty-three by King Sejong, to make writing accessible to everyone, replacing complicated Chinese characters. Scholars from the Jiphyeonjeon helped complete it.
+      CALL: {"function": "search", "arguments": {"query": "origins of Hangul"}}
+[ 69.27s][user ] «backchannel» Mm-hmm.
+[ 74.44s][user ] That’s really interesting! I didn’t know it was designed for accessibility.
+[ 78.11s][moshi] It's such a thoughtful design, isn't it? King Sejong really wanted everyone to be able to read and write.
+[ 81.83s][user ] «backchannel» Mm-hmm.
+[ 83.88s][user ] I think I need to take a break. Can you play some relaxing ⟨ret@86.84s⟩ music?
+[ 86.99s][moshi] ⟦⚡SPAN@87.00s: (tool result) Now playing: “Weightless” by Marconi Union.⟧ I’m now playing “Weightless” by Marconi Union. I hope it helps you unwind.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_type": "music", "genre": "relaxing"}}
+[ 88.98s][user ] «backchannel» Yeah, totally.
+[ 91.38s][user ] Perfect, thank you. I also need to book a dentist appointment for next week.
+[ 95.09s][moshi] No problem at all. Which day next week would work best for you?
+[ 99.31s][user ] How about ⟨ret@100.14s⟩ Tuesday?
+[100.54s][moshi] ⟦⚡SPAN@100.54s: (tool result) Appointment confirmed with Dr. Kim at Seoul Smile Dentistry on July 14, 2026, at 10:00 AM. Confi⟧ Great news! Your appointment with Dr. Kim at Seoul Smile Dentistry is confirmed for Tuesday, July fourteenth, at ten AM. Your confirmation ID is 78X29Z.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"service_type": "dentist", "date": "2026-07-14"}}

@@ -1,70 +1,63 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Elolo, a curious and validating personal guide who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Brio, a gentle and reflective wellness coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Lily",
+    "name": "Louis",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "50s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-05-17",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-05-16",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-05-08",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-10-19",
+      "date": "2026-03-16",
       "category": "home",
-      "text": "User's home address is 276 Cedar Lane."
+      "text": "User's home address is 171 Pine Court."
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-02-14",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-12-16",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-12-02",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-22",
-      "title": "Planning a birthday dinner",
+      "date": "2025-08-13",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Lily, I'm Elolo. It's lovely to meet you.
-[  0.08s][user ] Um, yes, ⟨ret@0.11s⟩ hello. I need to get to a florist, actually.
-[  0.19s][moshi] ⟦⚡SPAN@0.19s: [2025-09-13] User has a Golden Retriever named Max.⟧ Before we map that out, I remember you mentioning Max, your Golden Retriever. Are you planning to pick up flowers *for* him, or for someone else? It’s always good to have a little context!
-[  0.50s][user ] For ⟨ret@0.50s⟩ ⟨ret@0.51s⟩ a friend. And could you use my home address?
-[  0.59s][moshi] ⟦⚡SPAN@0.59s: [2025-09-13] User's home address is 276 Cedar Lane.⟧ Your home address is 276 Cedar Lane. Let me find florists nearby and give you directions.
-[  0.74s][moshi] ⟦⚡SPAN@0.74s: (tool result) Destination: Bloom & Blossom, 145 Bleecker St, New York, NY 10012. Distance: 1.2 miles. Estimate⟧ Bloom & Blossom on Bleecker Street is one point two miles from you, with an estimated drive time of seven minutes. I hope your friend enjoys the flowers!
-      CALL: {"function": "map_directions", "arguments": {"origin": "276 Cedar Lane", "destination": "florist"}}
+[  0.00s][moshi] Hi Louis, I'm Brio. It's lovely to meet you. Is there anything I can help you with today?
+[  0.18s][user ] Um, yes, ⟨ret@0.20s⟩ I need to get to the National Gallery.
+[  0.28s][moshi] ⟦⚡SPAN@0.28s: [2026-03-16] User's home address is 171 Pine Court.⟧ Louis. Let's find the best route from your home at 171 Pine Court.
+[  0.41s][user ] «backchannel» Yeah.
+[  0.42s][user ] Great, that sounds perfect.
+[  0.46s][moshi] «interrupted» I'm checking for the quickest route now, considering current traffic—
+[  0.57s][user ] «interrupts_prev» …actually, how long would a taxi take?
+[  0.64s][moshi] A taxi to the National Gallery would likely take around 25 to 30 minutes, depending on traffic.
+[  0.81s][user ] «backchannel» Really?
+[  0.82s][moshi] I can also show you bus and train options if you’d prefer, Louis. Perhaps a more scenic route?

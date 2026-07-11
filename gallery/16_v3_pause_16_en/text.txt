@@ -1,77 +1,79 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Liolo, a warm and attentive wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Riol, a encouraging and non-judgmental wellness coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Remy",
+    "name": "Leo",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "home",
-      "text": "User's home address is 346 Birch Road."
-    },
-    {
-      "date": "2026-05-20",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2026-03-27",
+      "date": "2026-06-14",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-08-23",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-05-25",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-06-13",
+      "date": "2026-04-17",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-10-03",
+      "category": "home",
+      "text": "User's home address is 873 Elm Street."
+    },
+    {
+      "date": "2025-07-21",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-13",
-      "title": "Setting up a home network",
+      "date": "2026-03-23",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering… how many…
-[  0.03s][user ] …episodes ⟨ret@0.00s⟩ are in the original season five?
-[  0.07s][moshi] ⟦⚡SPAN@0.07s: The fifth season of the original series contains eight episodes in total.⟧ It looks like the original season five has a total of eight episodes. Sometimes, endings can feel too short, don't they?
-[  0.19s][user ] «backchannel» Uh-huh.
-[  0.19s][user ] Eight, ⟨ret@0.00s⟩ okay. And… um… what was the first episode called?
-[  0.25s][moshi] ⟦⚡SPAN@0.25s: The first episode of the fifth season is titled "The Longest Day".⟧ The first episode of season five is titled “The Longest Day.” It's interesting how titles can set a tone, isn’t it?
-[  0.36s][user ] Hmm.
-[  0.37s][moshi] Is there anything else I can help you with regarding the show?
-[  0.44s][user ] Actually, ⟨ret@0.32s⟩ yes. Who directed that first episode?
-[  0.48s][moshi] ⟦⚡SPAN@0.48s: "The Longest Day" was directed by Stephen Hopkins, and written by Robert Doherty.⟧ Stephen Hopkins directed “The Longest Day,” and Robert Doherty wrote it. It’s fascinating how many people contribute to a single episode.
-[  0.59s][user ] «backchannel» Uh-huh.
-[  0.60s][moshi] It truly is a collaborative art form, wouldn't you agree?
-[  0.65s][user ] «backchannel» Okay.
-[  0.66s][user ] That’s true. Could you tell me…
-[  0.69s][user ] …when ⟨ret@0.63s⟩ it originally aired?
-[  0.71s][moshi] ⟦⚡SPAN@0.71s: "The Longest Day" originally aired on November 21, 2001, on CBS.⟧ "The Longest Day" originally aired on November twenty-first, two thousand and one, on CBS. It's amazing to think back to when these episodes first came out.
-[  0.86s][user ] «backchannel» Oh.
-[  0.86s][user ] Wow, that was a long time ago…
-[  0.90s][moshi] It certainly was. Sometimes revisiting those older stories can be comforting, a little like reconnecting with old friends.
+[  0.00s][user ] I was just wondering……
+[  0.05s][user ] …when ⟨ret@0.00s⟩ did St. Michael change to.
+[  0.13s][moshi] ⟦⚡SPAN@0.13s: In 2000, the British retailer Marks & Spencer acquired the St. Michael brand from its parent company, the Co-o⟧ It looks like St. Michael became Marks & Spencer in two thousand. That’s quite a change, isn’t it?
+[  0.35s][user ] Wow, 2000? That’s… a long time ago!
+[  0.44s][moshi] It really is! Sometimes big shifts feel gradual, but looking back, twenty years feels like a blink.
+[  0.66s][user ] I’m trying to remember…
+[  0.71s][user ] …shopping there back then…
+[  0.76s][moshi] It’s wonderful to reflect on memories tied to places we know. Settling in often brings that on, doesn't it?

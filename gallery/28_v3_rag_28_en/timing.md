@@ -4,82 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Remy",
+#     "name": "Jamie",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-17",
-#       "category": "home",
-#       "text": "User's home address is 365 Cedar Lane."
+#       "date": "2026-06-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-03-01",
+#       "date": "2026-05-10",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-11-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-05-04",
+#       "category": "home",
+#       "text": "User's home address is 361 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-09-01",
+#       "date": "2025-05-29",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-27",
+#       "date": "2025-11-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-18",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-05-28",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, how many members of parliament | S2 543? That seems like a lot. How ma | S3 Two… interesting. What about the N | S4 314, okay. That’s good to know. Th
 
-     0.00s  user  발화 시작: Hi, how many members of parliament are there in the Lok Sabh
+     0.00s  user  발화 시작: Hey, who did Permian High play in *Friday Night Lights*? I a
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.10s  agent 발화 시작: <ret> Well, the Lok Sabha has a total of 543 members of parl
-     0.10s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: The Lok Sabha (House of the People) has a total of 543 members of parl
-     0.10s  user  발화 끝
-     0.14s  <ret> 발화 (turn3 첫 프레임)
-     0.26s  <ret> 발화 (turn6 첫 프레임)
-     0.27s  user  발화 시작: 543? That seems like a lot. How many are nominated, not dire
-     0.27s  agent 발화 끝
-     0.38s  agent 발화 시작: <ret> Actually, of those 543 members, 2 are nominated by the
-     0.38s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Of the 543 members in the Lok Sabha, 2 are nominated by the President 
-     0.38s  user  발화 끝
-     0.55s  user  발화 시작: Nice.
-     0.55s  agent 발화 끝
-     0.55s  user  발화 시작: Two… interesting. What about the NDA? How many MPs do *they*
-     0.55s  user  발화 끝
-     0.66s  agent 발화 시작: <ret> the National Democratic Alliance currently holds 314 s
-     0.66s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: As of March 18, 2024, the National Democratic Alliance (NDA) has 314 m
-     0.66s  user  발화 끝
-     0.79s  user  발화 시작: Wow.
-     0.79s  agent 발화 끝
-     0.80s  user  발화 시작: 314, okay. That’s good to know. Thanks!
-     0.80s  user  발화 끝
-     0.86s  agent 발화 시작: You’re very welcome! Knowing those numbers can help you foll
-     0.86s  user  발화 끝
+     0.12s  agent 발화 시작: <ret> Permian High actually faced the Dallas Carter Cowboys 
+     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: Permian High School played against the Dallas Carter Cowboys in the 19
+     0.12s  user  발화 끝
+     0.37s  user  발화 시작: Dallas Carter, huh? That sounds…intense. What's the weather 
+     0.37s  agent 발화 끝
+     0.41s  <ret> 발화 (turn3 첫 프레임)
+     0.49s  agent 발화 시작: <ret> It’s 29.4°C in Dallas right now, with 68% humidity and
+     0.49s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Current conditions in Dallas, Texas are 29.4°C, humidity
+     0.49s  user  발화 끝
+     0.69s  user  발화 시작: Uh-huh.
+     0.69s  agent 발화 끝
+     0.70s  user  발화 시작: Wow, hot! I’m thinking of visiting my sister, she lives near
+     0.70s  user  발화 끝
+     0.81s  agent 발화 시작: That’s wonderful! Connecting with loved ones is so important
+     0.81s  user  발화 끝
      1.00s  agent 발화 끝

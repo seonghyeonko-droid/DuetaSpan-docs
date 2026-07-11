@@ -4,64 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Marie",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Canadian",
 #     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-06-20",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-13",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in May."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-10-30",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2025-10-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-08-20",
-#       "category": "home",
-#       "text": "User's home address is 670 Elm Street."
-#     },
-#     {
-#       "date": "2025-06-03",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-06-11",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-16",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-07",
+#       "date": "2026-02-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -71,65 +55,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How long will it take me to bike f | S2 The beer festival sounds fun! I'd  | S3 Perfect! I'm packing accordingly.  | S4 That sounds great! I think I'll he
+# EXAMINER(FDB-v2) 단계: S1 I’m hoping to find a house to rent | S2 That actually sounds lovely. | S3 …like to book it for next weekend. | S4 Perfect.
 
-     0.00s  user  발화 시작: How long will it take me to bike from Wuhou Temple to Jinli 
+     0.00s  user  발화 시작: I’m hoping to find a house to rent in Miami, Florida for jus
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.03s  <ret> 발화 (turn6 첫 프레임)
-     0.05s  agent 발화 시작: <ret> It will take about eighteen minutes to bike from Wuhou
-     0.05s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"distance": 4.2, "duration": 18, "units": "minutes"}
-     0.05s  user  발화 끝
-     0.13s  user  발화 시작: Uh, and are there any good teahouses near Jinli?
-     0.13s  agent 발화 끝
-     0.16s  agent 발화 시작: <ret> Jinli is quite famous for its teahouses, actually, bui
-     0.16s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Jinli is a famous historic street in Chengdu, Sichuan, China, known fo
-     0.16s  user  발화 끝
-     0.21s  user  발화 시작: Mm-hmm.
-     0.21s  agent 발화 끝
-     0.22s  user  발화 시작: [laugh] Oh, that's perfect! I'll check it out. Can you find 
-     0.22s  user  발화 끝
-     0.27s  agent 발화 시작: <ret> This weekend, Chengdu has the International Beer Festi
-     0.27s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"events": [{"name": "Chengdu International Beer Festiva
-     0.27s  user  발화 끝
-     0.31s  <ret> 발화 (turn8 첫 프레임)
-     0.35s  user  발화 시작: The beer festival sounds fun! I'd like to book tickets for t
-     0.35s  agent 발화 끝
-     0.36s  <ret> 발화 (turn16 첫 프레임)
-     0.39s  agent 발화 시작: <ret> Wonderful! I’ve booked two tickets for the Chengdu Int
-     0.39s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"confirmation id": "BEER260711", "event": "Chengdu Inte
+     0.04s  <ret> 발화 (turn3 첫 프레임)
+     0.06s  <ret> 발화 (turn5 첫 프레임)
+     0.06s  agent 발화 시작: <ret> Finding a place for just yourself in Miami, Florida—th
+     0.06s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Miami, Florida has many vacation homes available, with prices ranging 
+     0.06s  user  발화 끝
+     0.15s  user  발화 시작: That sounds good. Something with at least three stars, pleas
+     0.15s  agent 발화 끝
+     0.18s  <ret> 발화 (turn11 첫 프레임)
+     0.20s  agent 발화 시작: <ret> There are 27 houses in Miami, Florida with a 3-star ra
+     0.20s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: There are 27 houses in Miami, Florida with a 3-star rating or higher a
+     0.20s  user  발화 끝
+     0.27s  user  발화 시작: Hmm, could you show me the cheapest one?
+     0.27s  agent 발화 끝
+     0.30s  agent 발화 시작: <ret> The cheapest option fitting your criteria is the Cozy 
+     0.30s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"adults": 1, "city": "Miami", "currency": "USD", "locat
+     0.30s  user  발화 끝
+     0.37s  user  발화 시작: That actually sounds lovely.
+     0.37s  agent 발화 끝
+     0.39s  agent 발화 시작: It’s wonderful to find something that feels right, even from
      0.39s  user  발화 끝
-     0.44s  <ret> 발화 (turn11 첫 프레임)
-     0.47s  user  발화 시작: Yeah.
-     0.47s  agent 발화 끝
-     0.47s  user  발화 시작: That's amazing, thank you! What's the weather going to be li
-     0.47s  user  발화 끝
-     0.52s  agent 발화 시작: <ret> Saturday in Chengdu will be twenty-eight point zero de
-     0.52s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"temperature": 28.0, "humidity": 75, "wind": 6.0, "unit
-     0.52s  user  발화 끝
-     0.55s  <ret> 발화 (turn13 첫 프레임)
-     0.59s  user  발화 시작: Perfect! I'm packing accordingly. Do you have any recommenda
-     0.59s  agent 발화 끝
-     0.63s  agent 발화 시작: <ret> Jinli and its surroundings are famous for Sichuan cuis
-     0.63s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Jinli street and the surrounding area are known for Sichuan cuisine, i
-     0.63s  user  발화 끝
-     0.71s  user  발화 시작: Yeah.
-     0.71s  agent 발화 끝
-     0.71s  user  발화 시작: I love dan dan noodles! Can you find me a highly-rated place
-     0.71s  user  발화 끝
-     0.76s  agent 발화 시작: <ret> Shufeng Garden Restaurant on Jinli Street has a four p
-     0.76s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"name": "Shufeng Garden Restaurant", "rating": 4.5, "ad
-     0.76s  user  발화 끝
-     0.84s  user  발화 시작: Mm-hmm.
-     0.84s  agent 발화 끝
-     0.84s  user  발화 시작: That sounds great! I think I'll head there.
-     0.84s  user  발화 끝
-     0.87s  agent 발화 시작: Wonderful choice! I hope you have a delightful meal. It’s im
-     0.87s  user  발화 끝
-     0.93s  user  발화 시작: Yeah, yeah.
-     0.93s  agent 발화 끝
-     0.93s  user  발화 시작: Thanks, Ius. You've been really helpful!
-     0.93s  user  발화 끝
-     0.95s  agent 발화 시작: It’s my pleasure! Remember, a little planning goes a long wa
+     0.44s  user  발화 시작: Yeah.
+     0.44s  agent 발화 끝
+     0.45s  user  발화 시작: I think I’d…
+     0.45s  user  발화 끝
+     0.46s  user  발화 시작: …like to book it for next weekend.
+     0.46s  user  발화 끝
+     0.50s  agent 발화 시작: <ret> I’ve booked the Cozy Cottage for you next weekend, Jul
+     0.50s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"house id": "87654", "check in date": "2026-07-11", "ch
+     0.50s  user  발화 끝
+     0.58s  user  발화 시작: Wonderful! Thank you so much.
+     0.58s  agent 발화 끝
+     0.60s  agent 발화 시작: You’re very welcome. Sometimes, just having a small thing se
+     0.60s  user  발화 끝
+     0.64s  <ret> 발화 (turn15 첫 프레임)
+     0.67s  user  발화 시작: It really does. What’s the weather looking like there next w
+     0.67s  agent 발화 끝
+     0.72s  agent 발화 시작: <ret> Next weekend in Miami, Florida, the forecast is 30.5 d
+     0.72s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) {"location": "Miami, Florida", "date": "2026-07-11", "te
+     0.72s  user  발화 끝
+     0.83s  user  발화 시작: Perfect.
+     0.83s  agent 발화 끝
+     0.83s  agent 발화 시작: It sounds like a pleasant time to be there, a gentle warmth.
+     0.83s  user  발화 끝
+     0.89s  user  발화 시작: Mhm.
+     0.89s  agent 발화 끝
+     0.89s  user  발화 시작: I think it will be. I need to find some restaurants nearby, 
+     0.89s  user  발화 끝
+     0.95s  agent 발화 시작: It’s good to think ahead and plan for simple pleasures.
      0.95s  user  발화 끝
      1.00s  agent 발화 끝

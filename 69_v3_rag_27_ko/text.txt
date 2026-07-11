@@ -1,78 +1,79 @@
 v3_rag_27_ko src=hotpotqa style=v1
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 라리스입니다. <system>
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 실용적이고 안심시키는 웰니스 코치 리아나입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "윤준",
+    "name": "혜민",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
+    "gender": "female",
     "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-23",
+      "date": "2026-05-27",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-11-14",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-04",
+      "category": "home",
+      "text": "User's home address is 인천 연수구 송도동 12-5."
     },
     {
-      "date": "2025-08-03",
-      "category": "work",
-      "text": "User works as a physical therapist."
+      "date": "2026-02-03",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-06-04",
+      "date": "2025-09-02",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-05-27",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-03",
-      "title": "Setting up a home network",
+      "date": "2025-09-07",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-13",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-09",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 새로운 도시에 이사 왔는데, 적응하는 데 좀 어려움을 느끼고 있어요.
-[  5.21s][moshi] 안녕하세요. 새로운 곳에 오신 걸 환영해요. 라리스입니다. 혹시 어떤 점이 가장 힘드신가요?
-[  8.14s][user ] «backchannel» 예.
-[ 11.03s][user ] 음… 주변에 아는 사람이 하나도 없어서 외로운 것 같아요.
-[ 14.88s][moshi] 외로움은 새로운 시작에서 흔히 겪는 감정이에요. 괜찮아요, 시간이 지나면 나아질 거예요.
-[ 17.50s][user ] «backchannel» 아.
-[ 19.75s][moshi] ⟨ret@19.36s⟩ ⟦⚡SPAN@19.76s: Danny Shirley is the lead vocalist of the British rock band Fields of the Nephilim, while James Dean Bradfield⟧ 두 분은 서로 다른 밴드에서 활동하고 계세요. 대니 셜리는 밴드 Fields of the Nephilim의 보컬이고, 제임스 딘 브래드필드는 Manic Street Preachers의 보컬 겸 기타리스트입니다.
-[ 28.89s][user ] 아, 그렇군요. 두 분이 같은 밴드에 있는 줄 알았어요.
-[ 32.34s][moshi] 가끔 오해가 생길 수도 있죠. 새로운 사람들을 만나면서 즐거운 시간을 보내시길 바랍니다.
+[  0.00s][user ] 안녕하세요, 리아나 씨. 요즘 좀 힘든 시간을 보내고 있어요.
+[  4.63s][moshi] 안녕하세요. 힘든 시간을 보내고 계신다니 마음이 아프네요. 어떤 점이 가장 힘드신가요?
+[  9.41s][user ] 음… 갑자기 회사를 그만두게 돼서 뭘 해야 할지 모르겠어요.
+[ 14.12s][moshi] 갑작스러운 변화는 누구에게나 혼란스러울 수 있어요. 새로운 시작을 앞두고 불안한 건 당연해요.
+[ 18.05s][user ] «backchannel» 응.
+[ 19.48s][user ] 그래도 막막하네요. 뭘 해야 할지 감이 안 ⟨ret@22.48s⟩ 와요.
+[ 22.87s][moshi] ⟦⚡SPAN@22.88s: James Henry Miller's wife was named Sarah Louisa Barrett, and she was born in New York City in 1821.⟧ 밀러 씨의 부인은 새라 루이자 바렛이었는데, 천팔백이십일년에 뉴욕에서 태어났어요.
+[ 25.54s][user ] «backchannel» 응.
+[ 27.58s][user ] 아, 그렇군요.
+[ 28.92s][moshi] 새로운 길을 찾는 과정에서 잠시 멈춰 서서 자신을 돌아보는 시간을 가져보는 건 어떠세요? 무엇을 좋아하고, 무엇을 잘하는지 생각해보세요.
+[ 32.66s][user ] «backchannel» 응.
+[ 37.38s][user ] 그럴까요? 시간 내서 생각해 봐야겠네요.
+[ 40.31s][moshi] ⟨ret@40.08s⟩ ⟦⚡SPAN@40.32s: (tool result) Seoul, South Korea: 28.0°C, humidity 65%, wind 3.2 km/h⟧ 현재 서울의 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 46.76s][user ] 아, 그렇군요. 고맙습니다.
+[ 48.84s][moshi] 도움이 되었다니 다행이네요.

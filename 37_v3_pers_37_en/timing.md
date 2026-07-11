@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Ethan",
+#     "name": "Nathan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-07",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-09-08",
+#       "date": "2026-06-10",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "text": "User is planning a trip to Vietnam in August."
 #     },
 #     {
-#       "date": "2025-07-21",
+#       "date": "2026-05-30",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-05-29",
-#       "category": "home",
-#       "text": "User's home address is 504 Pine Court."
+#       "date": "2025-12-25",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-11",
+#       "date": "2026-06-21",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -56,7 +53,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-17",
+#       "date": "2026-03-21",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-13",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,49 +71,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Brimi? That’s… a unique name. What | S2 Cozy, definitely. Somewhere I can  | S3 Kensington Market… hmm, I’ve heard | S4 Wow, that’s perfect! Do you know i
+# EXAMINER(FDB-v2) 단계: S1 What exactly *can* you help me wit | S2 Welll… um, I’m just feeling really | S3 …do you think it’s okay to just… n | S4 I guess so. It’s just… my parents 
 
-     0.00s  agent 발화 시작: Hello Ethan, welcome to the city! I'm Brimi.
-     3.05s  agent 발화 끝
-     4.28s  user  발화 시작: Brimi? That’s… a unique name. What exactly *do* you help wit
-     9.10s  agent 발화 시작: I’m a settling-in advisor, Ethan. I can offer support with a
-     9.29s  user  발화 끝
-    20.00s  agent 발화 끝
-    20.10s  user  발화 시작: So, you're not, like, a real person? Just a… helper program?
-    23.89s  agent 발화 시작: That’s a fair question! I’m designed to provide guidance and
-    23.99s  user  발화 끝
-    33.11s  agent 발화 끝
-    33.40s  user  발화 시작: Okay. Well, I’m really struggling to find good coffee shops.
-    38.58s  user  발화 끝
-    38.78s  agent 발화 시작: Ah, a fellow coffee enthusiast! Toronto has some wonderful i
-    44.99s  user  발화 시작: Okay.
-    45.76s  user  발화 끝
-    48.56s  user  발화 시작: Cozy, definitely. Somewhere I can actually work for a few ho
-    48.93s  agent 발화 끝
-    52.66s  agent 발화 시작: A quiet corner is key for focus. It's important to find a sp
-    52.81s  user  발화 끝
-    59.02s  user  발화 시작: …Actually, before we get into specific cafes, is there a goo
-    59.62s  agent 발화 끝
-    66.44s  user  발화 끝
-    66.64s  agent 발화 시작: That’s a great point, Ethan! Kensington Market has a really 
-    75.21s  agent 발화 끝
-    76.32s  user  발화 시작: Kensington Market… hmm, I’ve heard of it. Is it safe there?
-    80.34s  user  발화 끝
-    80.42s  agent 발화 시작: Generally, yes. Like any urban area, it’s wise to be aware o
-    89.32s  agent 발화 끝
-    89.43s  user  발화 시작: Good to know. I'm also trying to meet people, but it’s hard 
-    93.99s  agent 발화 시작: It absolutely can be. Joining a local group based on your in
-    94.05s  user  발화 끝
-   102.75s  agent 발화 끝
-   102.84s  user  발화 시작: I used to play a lot of board games. Is there a board game s
-   106.82s  user  발화 끝
-   107.08s  agent 발화 시작: There's a really active board game scene in Toronto, Ethan, 
-   115.58s  user  발화 시작: Wow, that’s perfect! Do you know if they’re beginner-friendl
-   115.60s  agent 발화 끝
-   120.95s  user  발화 끝
-   121.16s  agent 발화 시작: Most groups are very welcoming to newcomers. It's all about 
-   129.60s  agent 발화 끝
-   130.09s  user  발화 시작: That’s encouraging. I think I will. Thanks, Brimi.
-   133.32s  user  발화 끝
-   133.50s  agent 발화 시작: You’re very welcome, Ethan. Remember, settling in takes time
-   141.52s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Nathan. I’m Eliaia, and I’m here to offer a littl
+     5.65s  agent 발화 끝
+     6.88s  user  발화 시작: What exactly *can* you help me with, though? It sounds… broa
+    10.57s  agent 발화 시작: It is quite open-ended, isn't it?
+    10.71s  user  발화 끝
+    12.70s  agent 발화 끝
+    12.77s  user  발화 시작: Welll… um, I’m just feeling really lost about what to do aft
+    17.18s  agent 발화 시작: That’s a very common feeling, Nathan. Many people feel unsur
+    17.39s  user  발화 끝
+    22.52s  user  발화 시작: …do you think it’s okay to just… not have a plan right away?
+    23.39s  agent 발화 끝
+    26.06s  agent 발화 시작: It's perfectly alright to not have everything figured out im
+    26.18s  user  발화 끝
+    34.03s  agent 발화 끝
+    34.24s  user  발화 시작: I guess so. It’s just… my parents keep asking, and it makes 
+    38.94s  agent 발화 시작: It sounds like their expectations are adding to your stress.
+    38.97s  user  발화 끝
+    48.12s  agent 발화 끝

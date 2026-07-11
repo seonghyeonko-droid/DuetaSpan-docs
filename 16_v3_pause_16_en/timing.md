@@ -4,102 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Remy",
+#     "name": "Leo",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "home",
-#       "text": "User's home address is 346 Birch Road."
-#     },
-#     {
-#       "date": "2026-05-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2026-06-14",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-23",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-25",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-13",
+#       "date": "2026-04-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "category": "home",
+#       "text": "User's home address is 873 Elm Street."
+#     },
+#     {
+#       "date": "2025-07-21",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-13",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-23",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… how many… | S2 Eight, okay. And… um… what was the | S3 Actually, yes. Who directed that f | S4 …when it originally aired?
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering…… | S2 Wow, 2000? That’s… a long time ago | S3 I’m trying to remember… | S4 …shopping there back then…
 
-     0.00s  user  발화 시작: I was just wondering… how many…
+     0.00s  user  발화 시작: I was just wondering……
      0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.03s  user  발화 시작: …episodes are in the original season five?
-     0.03s  user  발화 끝
-     0.07s  agent 발화 시작: <ret> It looks like the original season five has a total of 
-     0.07s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: The fifth season of the original series contains eight episodes in tot
-     0.07s  user  발화 끝
-     0.19s  user  발화 시작: Uh-huh.
-     0.19s  agent 발화 끝
-     0.19s  user  발화 시작: Eight, okay. And… um… what was the first episode called?
-     0.19s  user  발화 끝
-     0.25s  agent 발화 시작: <ret> The first episode of season five is titled “The Longes
-     0.25s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: The first episode of the fifth season is titled "The Longest Day".
-     0.25s  user  발화 끝
-     0.32s  <ret> 발화 (turn9 첫 프레임)
-     0.36s  user  발화 시작: Hmm.
-     0.36s  agent 발화 끝
-     0.37s  agent 발화 시작: Is there anything else I can help you with regarding the sho
-     0.37s  user  발화 끝
-     0.44s  user  발화 시작: Actually, yes. Who directed that first episode?
-     0.44s  agent 발화 끝
-     0.48s  agent 발화 시작: <ret> Stephen Hopkins directed “The Longest Day,” and Robert
-     0.48s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: "The Longest Day" was directed by Stephen Hopkins, and written by Robe
-     0.48s  user  발화 끝
-     0.59s  user  발화 시작: Uh-huh.
-     0.59s  agent 발화 끝
-     0.60s  agent 발화 시작: It truly is a collaborative art form, wouldn't you agree?
-     0.60s  user  발화 끝
-     0.63s  <ret> 발화 (turn15 첫 프레임)
-     0.65s  user  발화 시작: Okay.
-     0.65s  agent 발화 끝
-     0.66s  user  발화 시작: That’s true. Could you tell me…
-     0.66s  user  발화 끝
-     0.69s  user  발화 시작: …when it originally aired?
-     0.69s  user  발화 끝
-     0.71s  agent 발화 시작: <ret> "The Longest Day" originally aired on November twenty-
-     0.71s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: "The Longest Day" originally aired on November 21, 2001, on CBS.
+     0.05s  user  발화 시작: …when did St. Michael change to.
+     0.05s  user  발화 끝
+     0.13s  agent 발화 시작: <ret> It looks like St. Michael became Marks & Spencer in tw
+     0.13s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: In 2000, the British retailer Marks & Spencer acquired the St. Michael
+     0.13s  user  발화 끝
+     0.35s  user  발화 시작: Wow, 2000? That’s… a long time ago!
+     0.35s  agent 발화 끝
+     0.44s  agent 발화 시작: It really is! Sometimes big shifts feel gradual, but looking
+     0.44s  user  발화 끝
+     0.66s  user  발화 시작: I’m trying to remember…
+     0.66s  agent 발화 끝
+     0.71s  user  발화 시작: …shopping there back then…
      0.71s  user  발화 끝
-     0.86s  user  발화 시작: Oh.
-     0.86s  agent 발화 끝
-     0.86s  user  발화 시작: Wow, that was a long time ago…
-     0.86s  user  발화 끝
-     0.90s  agent 발화 시작: It certainly was. Sometimes revisiting those older stories c
-     0.90s  user  발화 끝
+     0.76s  agent 발화 시작: It’s wonderful to reflect on memories tied to places we know
+     0.76s  user  발화 끝
      1.00s  agent 발화 끝

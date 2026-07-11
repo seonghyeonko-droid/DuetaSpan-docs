@@ -4,84 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Robin",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-27",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-05-31",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-10",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2026-01-25",
-#       "category": "home",
-#       "text": "User's home address is 211 Maple Drive."
-#     },
-#     {
-#       "date": "2025-11-25",
+#       "date": "2025-10-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-11-17",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-11",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-15",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hi Fraris, nice to meet you too. I | S2 That’s great! — | S3 …actually, are there any places wi | S4 That sounds perfect, actually. Som
 
-     0.00s  agent 발화 시작: Hi Robin, I'm Tiax. It's lovely to connect with you today.
-     1.42s  user  발화 시작: Uh-huh.
-     2.05s  user  발화 끝
-     3.67s  user  발화 시작: um, yeah, I am. I'm going to Switzerland in October.
-     3.69s  agent 발화 끝
-     7.33s  <ret> 발화 (turn3 첫 프레임)
-     7.72s  agent 발화 시작: <ret> Switzerland in October sounds absolutely lovely. I see
-     7.84s  user  발화 끝
-     8.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.47s]: [2026-02-21] User is planning a trip to Switzerland in October.
-    10.35s  user  발화 시작: Yeah.
-    10.94s  user  발화 끝
-    15.93s  agent 발화 시작: As a supportive advisor, I find planning a journey can somet
-    15.97s  agent 발화 끝
-    19.78s  user  발화 시작: Uh-huh.
-    20.41s  user  발화 끝
-    23.30s  user  발화 시작: I was hoping you could recommend a city to visit. I really l
-    23.91s  agent 발화 끝
-    28.27s  <ret> 발화 (turn8 첫 프레임)
-    28.35s  user  발화 끝
-    28.43s  agent 발화 시작: <ret> Knowing you enjoy birdwatching, I can certainly sugges
-    28.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: [2025-11-17] User is into birdwatching.
-    36.36s  agent 발화 끝
-    36.63s  user  발화 시작: Oh, that’s great! What do you think?
-    39.17s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Taylor, I’m Fraris.
+     1.72s  user  발화 시작: Hi Fraris, nice to meet you too. I’m trying to plan a weeken
+     1.79s  agent 발화 끝
+     6.86s  user  발화 끝
+     6.96s  agent 발화 시작: A getaway sounds wonderful! Do you have anywhere specific in
+    13.45s  agent 발화 끝
+    15.85s  user  발화 시작: I’m open to suggestions, somewhere relaxing. I’m vegetarian,
+    20.56s  <ret> 발화 (turn4 첫 프레임)
+    20.71s  agent 발화 시작: <ret> Taylor. Knowing you’re vegetarian helps me narrow down
+    20.72s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.35s]: [2026-06-27] User is vegetarian.
+    20.86s  user  발화 끝
+    25.32s  user  발화 시작: Yeah, totally.
+    26.61s  user  발화 끝
+    27.06s  agent 발화 끝
+    27.48s  user  발화 시작: That’s great! —
+    28.62s  user  발화 시작: …actually, are there any places with really good sushi? I lo
+    28.62s  user  발화 끝
+    33.11s  <ret> 발화 (turn8 첫 프레임)
+    33.26s  agent 발화 시작: <ret> Ah, excellent! I remember your fondness for sushi, Tay
+    33.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: [2025-10-03] User's favorite cuisine is sushi.
+    33.30s  user  발화 끝
+    40.18s  user  발화 시작: Right.
+    40.58s  user  발화 끝
+    42.49s  user  발화 시작: That sounds perfect, actually. Somewhere by the sea.
+    42.58s  agent 발화 끝
+    45.53s  user  발화 끝

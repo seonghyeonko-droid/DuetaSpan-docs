@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Iris",
+#     "name": "Simon",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-03-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-09-12",
 #       "category": "diet",
 #       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-04-07",
-#       "category": "home",
-#       "text": "User's home address is 325 Birch Road."
-#     },
-#     {
-#       "date": "2026-01-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-10-15",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-22",
+#       "date": "2026-06-22",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-06",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -48,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-19",
+#       "date": "2025-10-02",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,33 +66,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m curious about the latest news  | S2 Hmm, okay. That's a little lower t | S3 Maybe. I need to send some money t | S4 Let’s say… two hundred and fifty d
+# EXAMINER(FDB-v2) 단계: S1 I need a house in Denver, Colorado | S2 What's the price per night? | S3 Great! Is there anything else I sh | S4 Perfect! Thanks…
 
-     0.00s  user  발화 시작: I’m curious about the latest news on the UK economy. Can you
+     0.00s  user  발화 시작: I need a house in Denver, Colorado rated at least four stars
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.01s  <ret> 발화 (turn4 첫 프레임)
-     0.10s  agent 발화 시작: <ret> The UK economy shrank by zero point one percent in Mar
-     0.10s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) UK economy shrinks by 0.1% in March 2024, according to t
-     0.10s  user  발화 끝
-     0.23s  user  발화 시작: Uh-huh.
-     0.23s  agent 발화 끝
-     0.24s  user  발화 시작: Oh, that's…not great. Um, can you check the current exchange
-     0.24s  user  발화 끝
-     0.33s  agent 발화 시작: <ret> Currently, one British pound is worth one point two se
-     0.33s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) GBP/USD: 1.2732
-     0.33s  user  발화 끝
-     0.41s  user  발화 시작: Hmm, okay. That's a little lower than I expected.
-     0.41s  agent 발화 끝
-     0.47s  agent 발화 시작: It can be unsettling when figures don't quite align with wha
-     0.47s  user  발화 끝
-     0.59s  user  발화 시작: Maybe. I need to send some money to my sister in London. Can
-     0.59s  agent 발화 끝
-     0.69s  agent 발화 시작: I can assist you with sending money. To get started, could y
-     0.69s  user  발화 끝
-     0.80s  user  발화 시작: Yeah, yeah.
-     0.80s  agent 발화 끝
-     0.82s  user  발화 시작: Let’s say… two hundred and fifty dollars.
-     0.82s  user  발화 끝
-     0.86s  agent 발화 시작: Alright. And to confirm, you wish to send two hundred and fi
-     0.86s  user  발화 끝
+     0.00s  <ret> 발화 (turn6 첫 프레임)
+     0.06s  agent 발화 시작: <ret> I found The Brownstone Inn in Denver—
+     0.06s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"houses": [{"id": "DEN-4567", "name": "The Brownstone I
+     0.06s  user  발화 끝
+     0.07s  <ret> 발화 (turn4 첫 프레임)
+     0.09s  user  발화 시작: …is it close to downtown?
+     0.09s  agent 발화 끝
+     0.11s  agent 발화 시작: The Brownstone Inn is about two miles from downtown Denver.
+     0.11s  user  발화 끝
+     0.15s  agent 발화 시작: <ret> Finding the perfect place is my favorite part! Denver’
+     0.15s  agent 발화 끝
+     0.18s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: Denver's downtown area covers 714 acres, with major attractions like t
+     0.30s  user  발화 시작: What's the price per night?
+     0.30s  agent 발화 끝
+     0.32s  agent 발화 시작: <ret> The price per night at The Brownstone Inn is two hundr
+     0.32s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The Brownstone Inn’s price is two hundred and fifty dollars per night,
+     0.32s  user  발화 끝
+     0.37s  user  발화 시작: Okay.
+     0.37s  agent 발화 끝
+     0.38s  agent 발화 시작: It also has amenities like wifi, a pool, and parking.
+     0.38s  <ret> 발화 (turn13 첫 프레임)
+     0.38s  user  발화 끝
+     0.38s  <ret> 발화 (turn10 첫 프레임)
+     0.42s  user  발화 시작: Can you book it for me for three nights, starting next Frida
+     0.42s  agent 발화 끝
+     0.46s  agent 발화 시작: <ret> Your booking is confirmed, with confirmation ID BH-987
+     0.46s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"confirmation id": "BH-9876", "check in": "2026-07-17",
+     0.46s  user  발화 끝
+     0.50s  agent 발화 시작: It’s for three nights, from July seventeenth to July twentie
+     0.50s  agent 발화 끝
+     0.50s  <ret> 발화 (turn15 첫 프레임)
+     0.58s  user  발화 시작: Great! Is there anything else I should know about Denver?
+     0.58s  agent 발화 끝
+     0.62s  agent 발화 시작: <ret> City Park spans three hundred and thirty acres, and it
+     0.62s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: City Park in Denver spans 330 acres and includes the Denver Zoo and th
+     0.62s  user  발화 끝
+     0.70s  user  발화 시작: That sounds nice. What's the weather like there next week?
+     0.70s  agent 발화 끝
+     0.74s  agent 발화 시작: <ret> Next Friday, July seventeenth, it’ll be sunny with a t
+     0.74s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) {"date": "2026-07-17", "temperature": "28.0°C", "humidit
+     0.74s  user  발화 끝
+     0.81s  agent 발화 시작: The humidity will be fifty-five percent, and the wind will b
+     0.81s  agent 발화 끝
+     0.88s  user  발화 시작: Perfect! Thanks…
+     0.88s  agent 발화 끝
+     0.88s  user  발화 시작: …so much for your help, Thiar.
+     0.88s  user  발화 끝
+     0.91s  agent 발화 시작: You’re very welcome! I’m happy to help you settle in. Denver
+     0.91s  user  발화 끝
      1.00s  agent 발화 끝

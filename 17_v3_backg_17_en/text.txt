@@ -1,10 +1,10 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Zami, a kind and steady personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Ria, a grounded and empathetic wellness coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Andrea",
+    "name": "Iris",
     "location": {
       "city": "New York",
       "country": "United States",
@@ -12,65 +12,80 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-24",
-      "category": "home",
-      "text": "User's home address is 35 Pine Court."
-    },
-    {
-      "date": "2026-05-21",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-01-19",
+      "date": "2026-04-08",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-12-01",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
+      "date": "2025-10-28",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-10-16",
+      "date": "2025-06-11",
+      "category": "home",
+      "text": "User's home address is 537 Oak Avenue."
+    },
+    {
+      "date": "2025-06-06",
       "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-06-09",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-08",
+      "date": "2026-06-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-02-18",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, when does Gotham season 4 episode ⟨ret@2.42s⟩ 12 air?
-[  2.82s][moshi] ⟦⚡SPAN@2.82s: Gotham's fourth season, episode 12, titled "Queen Takes King", aired on March 1, 2018.⟧ That episode, “Queen Takes King”, actually aired on March 1, 2018. It was quite a pivotal moment in the season, if I recall.
-[  6.21s][user ] «backchannel» Yeah.
-[ 11.30s][user ] March 1st, huh?
-[ 12.96s][moshi] Yes, that's right. March 1st, 2018, is the date for Gotham season 4, episode 12.
-[ 15.31s][user ] «backchannel» Nice.
-[ 21.22s][user ] «to_other» Did you remember to take the chicken out of the freezer?
-[ 23.78s][user ] Oh… um, I think I need to set a reminder for that.
-[ 26.81s][moshi] ⟨ret@26.65s⟩ ⟦⚡SPAN@26.81s: (tool result) Alarm set for July 11, 2026, 6:00 PM: take chicken out. ID: 87492.⟧ I’ve set an alarm for July 11th at 6:00 PM to remind you to take the chicken out. That should help!
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "2026-07-11T18:00:00", "message": "take chicken out"}}
-[ 30.23s][user ] «backchannel» Yeah, yeah.
-[ 32.86s][user ] Perfect, thanks Zami.
-[ 34.21s][moshi] You’re very welcome. I’m glad I could help with both your show question and the dinner prep.
+[  0.00s][user ] Hey Ria, do you know when the Taj Mahal in Atlantic City ⟨ret@3.06s⟩ was built?
+[  3.45s][moshi] ⟦⚡SPAN@3.46s: The Taj Mahal Casino Resort in Atlantic City, New Jersey, opened on April 6, 1990, and closed on September 10,⟧ The Taj Mahal Casino Resort in Atlantic City opened on April sixth, nineteen ninety, and closed September tenth, two thousand sixteen.
+[ 11.98s][user ] Oh, wow, I thought it was much older.
+[ 14.36s][moshi] It's easy to assume, given the name! It was intended to evoke a sense of grandeur, you know?
+[ 21.10s][user ] Uh huh… what about the original Taj ⟨ret@23.27s⟩ Mahal?
+[ 23.43s][moshi] ⟦⚡SPAN@23.43s: The Taj Mahal was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife⟧ The original Taj Mahal was commissioned in sixteen thirty-two by Mughal emperor Shah Jahan as a tomb for his wife, Mumtaz Mahal.
+[ 27.16s][user ] «backchannel» Yeah.
+[ 31.07s][moshi] It’s such a beautiful monument, a true testament to love and artistry.
+[ 37.45s][user ] What was Shah Jahan doing before he commissioned ⟨ret@39.67s⟩ it?.
+[ 39.98s][moshi] ⟦⚡SPAN@39.99s: Shah Jahan was the fifth Mughal emperor of India, and he reigned from 1628 to 1658, known for his architectura⟧ He was the fifth Mughal emperor of India, reigning from sixteen twenty-eight to sixteen fifty-eight, and he was known for his architectural achievements.
+[ 49.03s][user ] «to_other» Did you hear about the traffic on the Parkway? It's a nightmare!
+[ 51.90s][user ] Traffic? Oh…
+[ 53.60s][moshi] Sometimes it helps to focus on something beautiful when the world feels chaotic, you know?
+[ 58.52s][user ] Yeah, you're right. Could you find me some pictures of the original Taj ⟨ret@62.28s⟩ Mahal?
+[ 62.43s][moshi] ⟦⚡SPAN@62.44s: (tool result) Searching for “original Taj Mahal pictures” on Getty Images. 12,345 results found.⟧ I’ve found twelve thousand, three hundred forty-five pictures of the original Taj Mahal on Getty Images.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"query": "original Taj Mahal pictures"}}
+[ 66.43s][user ] «backchannel» Okay.
+[ 68.61s][user ] That's amazing. Can you send me a link?
+[ 70.60s][moshi] I’m sorry, I can't directly send links. I can describe the images if you like?
+[ 73.39s][user ] «backchannel» Yeah, yeah.
+[ 75.59s][user ] No, that's okay. Thanks, Ria.
+[ 77.55s][moshi] You're very welcome. Remember to take a moment for yourself today, okay? A little self-care goes a long way.

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "시온",
+#     "name": "하린",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,43 +12,53 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-09-08",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2026-05-30",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-05-29",
+#       "date": "2026-01-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-25",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-13",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-11",
+#       "date": "2025-12-04",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -58,47 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 브리미요? 이름이 좀 특이하네요. 부산은 처음이라 뭘 어 | S2 아, 그런 곳… 조용하고 아늑한 곳이 좋겠어요. 혼자 책 읽기 | S3 …근처에 한인마트는 어디에 있어요? 장 보기가 좀 걱정돼서요. | S4 그럼… 혹시 해운대에서 외국인들이 많이 가는 카페도 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 심리 상담 같은 것도 해 주시는 건가요? | S2 요즘 회사 일이 너무 힘들어서… 자꾸만 무기력해져요. 뭘 해야 | S3 …혹시 그런 기분을 떨쳐내는 데 도움이 되는 방법 같은 건 없 | S4 작은 성취감… 음, 그게 쉽지는 않네요. 뭘 해야 할지 감이 
 
-     0.00s  agent 발화 시작: 안녕하세요, 시온님. 저는 브리미라고 해요. 부산으로 이사 오시는 걸 도와드리는 조언가랍니다. 혹시 지금 부
-     8.99s  agent 발화 끝
-     9.85s  user  발화 시작: 어… 브리미요? 이름이 좀 특이하네요. 부산은 처음이라 뭘 어떻게 시작해야 할지 막막해요.
-    16.94s  user  발화 끝
-    17.15s  agent 발화 시작: 이름이 특이하다고 말씀해주셔서 감사해요. 부산은 정말 매력적인 곳이에요. 막막하다고 느끼시는 건 당연하죠. 
-    27.40s  agent 발화 끝
-    27.46s  user  발화 시작: 음… 아무래도 혼자 사는 게 제일 걱정돼요. 친구는 하나도 없고…
-    31.83s  agent 발화 시작: 혼자 사시는 게 걱정되시는군요. 새로운 곳에서 친구를 만드는 건 쉽지 않지만, 분명 좋은 인연을 만나실 수 
-    32.00s  user  발화 끝
-    41.47s  agent 발화 끝
-    41.79s  user  발화 시작: 저는… 영화 보는 거랑 카페 가는 거 좋아해요. 조용한 곳에서 책 읽는 것도 좋아하고요.
-    47.90s  user  발화 끝
-    48.12s  agent 발화 시작: 영화, 카페, 독서… 정말 여유로운 시간을 즐기시는군요. 부산에도 그런 취향을 만족시킬 수 있는 곳이 정말 
-    55.01s  user  발화 시작: 어어.
-    55.64s  user  발화 끝
-    59.39s  agent 발화 끝
-    59.52s  user  발화 시작: 아, 그런 곳… 조용하고 아늑한 곳이 좋겠어요. 혼자 책 읽기 좋은 곳.
-    64.67s  agent 발화 시작: 조용하고 아늑한 카페를 찾으시는군요. 부산에는 그런 숨겨진 보석 같은 곳들이 꽤 있답니다. 혹시 부산에서 어
-    64.70s  user  발화 끝
-    74.44s  user  발화 시작: 해운대에 살 거예요.
-    74.49s  agent 발화 끝
-    75.65s  agent 발화 시작: 해운대군요! 해운대는 바다도 아름답고, 다양한 편의시설도 갖춰져 있어서 정말 살기 좋은 곳이에요. 해운대 근
-    75.81s  user  발화 끝
-    84.10s  user  발화 시작: …근처에 한인마트는 어디에 있어요? 장 보기가 좀 걱정돼서요.
-    84.69s  agent 발화 끝
-    88.10s  agent 발화 시작: 해운구 세권로 이백사십오에 있는 ‘해운대시장’이 가장 가까울 거예요. 신선한 식재료와 다양한 물건을 저렴하게
-    88.17s  user  발화 끝
-    95.75s  agent 발화 끝
-    95.81s  user  발화 시작: 아, 해운대시장! 좋아요. 알려주셔서 감사합니다.
-    99.18s  agent 발화 시작: 천만에요. 해운대시장은 현지인들에게도 인기가 많은 곳이에요. 장 보시고 맛있는 해산물도 드셔보세요.
-    99.37s  user  발화 끝
-   105.80s  agent 발화 끝
-   106.02s  user  발화 시작: 그럼… 혹시 해운대에서 외국인들이 많이 가는 카페도 있을까요?
-   110.14s  user  발화 끝
-   110.15s  agent 발화 시작: 해운대에는 외국인 관광객들에게 인기가 많은 예쁜 카페들이 꽤 있답니다.
-   114.69s  agent 발화 끝
-   114.76s  agent 발화 시작: 달맞이길에 있는 ‘달콤커피 해운대점’은 바다를 보면서 커피를 즐길 수 있어서 외국인 손님들이 많이 찾으시는 
-   122.35s  agent 발화 끝
-   122.60s  user  발화 시작: 오, 달콤커피! 가봐야겠네요. 정말 감사합니다, 브리미님.
-   126.62s  agent 발화 시작: 천만에요, 시온님. 부산에서의 생활이 즐겁고 행복하시길 진심으로 응원할게요. 언제든 궁금한 점이 있으시면 저
-   126.81s  user  발화 끝
-   134.49s  agent 발화 끝
+     0.00s  agent 발화 시작: 하린 씨, 안녕하세요. 저는 에리아이아입니다. 힘든 일이 있으시면 언제든 편하게 말씀해주세요. 당신의 마음을
+     9.70s  agent 발화 끝
+    10.61s  user  발화 시작: 혹시 심리 상담 같은 것도 해 주시는 건가요?
+    13.24s  user  발화 끝
+    13.46s  agent 발화 시작: 네, 맞아요. 하린 씨의 생각과 감정을 편안하게 이야기할 수 있도록 돕는 역할을 합니다. 어떤 고민이 있으신
+    20.74s  agent 발화 끝
+    20.83s  user  발화 시작: 요즘 회사 일이 너무 힘들어서… 자꾸만 무기력해져요. 뭘 해야 할지 모르겠어요.
+    26.68s  agent 발화 시작: 무기력함은 누구에게나 찾아올 수 있는 자연스러운 감정이에요—
+    26.85s  user  발화 끝
+    29.67s  user  발화 시작: …혹시 그런 기분을 떨쳐내는 데 도움이 되는 방법 같은 건 없을까요?
+    30.28s  agent 발화 끝
+    33.69s  agent 발화 시작: 하린 씨, 그런 기분을 떨쳐내는 방법은 여러 가지가 있을 수 있어요. 우선, 자신에게 작은 성취감을 줄 수 
+    33.83s  user  발화 끝
+    42.50s  agent 발화 끝
+    43.03s  user  발화 시작: 작은 성취감… 음, 그게 쉽지는 않네요. 뭘 해야 할지 감이 안 와요.
+    49.72s  agent 발화 시작: 괜찮아요. 처음부터 큰 목표를 세우기보다는, 아주 작은 일부터 시작해보는 것도 좋은 방법이에요. 예를 들어,
+    49.80s  user  발화 끝
+    61.27s  agent 발화 끝

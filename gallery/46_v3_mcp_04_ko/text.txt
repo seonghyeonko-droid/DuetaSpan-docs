@@ -1,78 +1,93 @@
 v3_mcp_04_ko src=mcp style=v2
-SYSTEM: <system> 당신은 건강 및 일상 습관 관리를 돕는 부드럽고 사려 깊은 개인 가이드, 히오라입니다. <system>
+SYSTEM: <system> 당신은 트히아르이며, 새로운 도시에 정착하는 사람들을 돕는 긍정적이고 지지적인 개인 가이드입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "정경",
+    "name": "준담",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-16",
+      "date": "2026-03-17",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-22",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-02-17",
       "category": "home",
-      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+      "text": "User's home address is 인천 연수구 송도동 12-5."
     },
     {
-      "date": "2026-02-03",
+      "date": "2025-12-10",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-10-06",
       "category": "work",
-      "text": "User works as a high-school teacher."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-01-22",
+      "date": "2025-09-12",
       "category": "pet",
       "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-10-15",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-11",
+      "date": "2026-05-02",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-03-06",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-26",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-06",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 비비씨 ⟨ret@0.00s⟩ 뉴스 좀 훑어봐 줄래? 깊이는 세 단계로 하고, 링크는 쉰개까지.
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: (tool result) {"url": "https://www.bbc.com/news", "max depth": 3, "max links": 50, "results": https://www.bbc.⟧ 비비씨 뉴스 웹사이트를 최대 깊이 삼단계, 링크 쉰개까지 훑어봤어요. 그 결과 상위 열개 링크를 찾았습니다.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.bbc.com/news", "max_depth": 3, "max_links": 50}}
-[  0.27s][user ] 음… 그 중에서 중국 관련 뉴스 링크가 있어?
-[  0.35s][moshi] 네, 비비씨 뉴스에서 중국 관련 기사 링크는 이거예요. https://www.bbc.com/news/world-asia-china-66238094
-[  0.44s][user ] «backchannel» 진짜요?
-[  0.45s][user ] 이번 ⟨ret@0.32s⟩ 주 토요일에 서울에서 재즈 콘서트 하는 곳 찾아줄 수 있어?
-[  0.56s][moshi] ⟦⚡SPAN@0.56s: (tool result) {"restaurants": [{"name": "Seoul Jazz Club", "address": "64 Itaewon-ro 27gil, Itaewon-dong, Yong⟧ 이번 주 토요일 서울에서 재즈 콘서트를 할 수 있는 곳은 서울 재즈 클럽과 원스 인 서울 두 곳을 찾았습니다. 서울 재즈 클럽은 공 이 칠 구 칠 공 오 칠 칠이고, 원스 인 서울은 공 이 칠 삼 삼 팔 팔 오 팔입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul", "date": "2026-07-11", "cuisine": "Jazz concert"}}
+[  0.00s][user ] 안녕하세요, ⟨ret@0.00s⟩ 트히아르 씨. 콜로라도주 덴버에 있는 별점 네개 이상짜리 집을 한 명용으로 찾고 싶어요.
+[  0.07s][moshi] ⟦⚡SPAN@0.07s: (tool result) {"houses": [{"name": "The Brownstone Inn", "address": "1600 Blake Street, Denver, CO 80202", "st⟧ 덴버, 콜로라도에서 별점 네개 이상, 한 명용 숙소를 찾아봤는데, 브라운스톤 인이라는 곳이 있어요. 천육백 블레이크 스트리트에 있고, 별점은 사 점 오점이며, 일박에 이백오십달러이고, 와이파이, 주차, 아침 식사가 제공됩니다.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Denver, Colorado", "stars": "4", "guests": "1"}}
+[  0.20s][user ] 음, ⟨ret@0.00s⟩ 이백오십달러는 좀 비싸네요. 더 저렴한 곳은 없을까요?
+[  0.24s][moshi] ⟦⚡SPAN@0.24s: (tool result) {"houses": [{"name": "City Center Hostel", "address": "1217 15th Street, Denver, CO 80202", "sta⟧ 조금 더 저렴한 곳을 찾아봤어요. 시티 센터 호스텔이라는 곳은 어떠세요? 십오번가 천이백십칠번지에 있고, 별점은 사점이며, 일박에 백이십달러이고, 와이파이와 공용 주방이 제공됩니다.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Denver, Colorado", "stars": "4", "guests": "1", "max_price": "$150"}}
+[  0.34s][user ] 호스텔은 별로 안 좋아해요.
+[  0.36s][moshi] «interrupted» 호스텔은 좀 불편할 수 있죠—
+[  0.38s][user ] «interrupts_prev» …그럼 ⟨ret@0.12s⟩ 호텔은 어때요? 호텔 중에서 사성급 이상이고, 가격은 이백달러 이하인 곳을 찾아주세요.
+[  0.44s][moshi] ⟦⚡SPAN@0.44s: (tool result) {"houses": [{"name": "The Maven Hotel at Dairy Block", "address": "1882 Wazee Street, Denver, CO⟧ 호텔 중에서 사성급 이상, 이백달러 이하인 곳을 찾아봤는데, 더 매븐 호텔 앳 데어리 블록이 있어요. 와지 스트리트 천팔백팔십이번지에 있고, 별점은 사 점 오점이며, 일박에 백구십달러이고, 와이파이, 피트니스 센터, 레스토랑이 있습니다.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Denver, Colorado", "stars": "4", "guests": "1", "max_price": "$200", "property_type": "hotel"}}
+[  0.58s][user ] «backchannel» 네.
+[  0.59s][moshi] 더 매븐 호텔은 데어리 블록에 위치하고 있어서 주변에 맛집도 많고, 분위기도 아주 좋은 곳이에요. 덴버에 처음 오시는 분들께 특히 추천드리는 곳이랍니다.
+[  0.69s][user ] 백구십달러면 ⟨ret@0.65s⟩ 괜찮네요. 그 호텔 예약해 줄 수 있어요?
+[  0.73s][moshi] ⟦⚡SPAN@0.73s: (tool result) {"confirmation id": "MX789", "status": "confirmed", "check in date": "2026-07-12", "check out da⟧ 네, 더 매븐 호텔을 칠월 십이일부터 십사일까지 한 명으로 예약해 드렸습니다. 예약 확인 번호는 엠 엑스 칠 팔 구이고, 총 금액은 삼백팔십달러입니다.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"name": "The Maven Hotel at Dairy Block", "guests": "1", "check_in_date": "2026-07-12", "check_out_date": "2026-07-14"}}
+[  0.83s][user ] 확인 번호가 뭐였죠?
+[  0.85s][moshi] 예약 확인 번호는 엠 엑스 칠 팔 구입니다.
+[  0.89s][moshi] 혹시 다른 필요한 정보가 있으신가요? 덴버는 처음이시라면서요, 혹시 주변 관광 명소도 알아봐 드릴까요?
+[  0.95s][user ] «backchannel» 그렇죠.
+[  0.95s][user ] 아니요, 괜찮아요. 지금은 그만할게요.
+[  0.97s][moshi] 네, 알겠습니다. 즐거운 덴버 여행 되세요!

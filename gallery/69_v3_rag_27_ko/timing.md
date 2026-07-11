@@ -4,86 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "윤준",
+#     "name": "혜민",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-23",
+#       "date": "2026-05-27",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-11-14",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-04",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2025-08-03",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-02-03",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-06-04",
+#       "date": "2025-09-02",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-03",
-#       "title": "Setting up a home network",
+#       "date": "2025-09-07",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-09",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 리아나 씨. 요즘 좀 힘든 시간을 보내고 있어요. | S2 그래도 막막하네요. 뭘 해야 할지 감이 안 와요. | S3 아, 그렇군요. | S4 아, 그렇군요. 고맙습니다.
 
-     0.00s  user  발화 시작: 안녕하세요. 새로운 도시에 이사 왔는데, 적응하는 데 좀 어려움을 느끼고 있어요.
-     5.09s  user  발화 끝
-     5.21s  agent 발화 시작: 안녕하세요. 새로운 곳에 오신 걸 환영해요. 라리스입니다. 혹시 어떤 점이 가장 힘드신가요?
-     8.14s  user  발화 시작: 예.
-     8.58s  user  발화 끝
-    11.03s  user  발화 시작: 음… 주변에 아는 사람이 하나도 없어서 외로운 것 같아요.
-    11.14s  agent 발화 끝
-    14.88s  agent 발화 시작: 외로움은 새로운 시작에서 흔히 겪는 감정이에요. 괜찮아요, 시간이 지나면 나아질 거예요.
-    15.06s  user  발화 끝
-    17.50s  user  발화 시작: 아.
-    18.00s  user  발화 끝
-    19.36s  <ret> 발화 (turn6 첫 프레임)
-    19.75s  agent 발화 시작: <ret> 두 분은 서로 다른 밴드에서 활동하고 계세요. 대니 셜리는 밴드 Fields of the Neph
-    19.76s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.13s]: Danny Shirley is the lead vocalist of the British rock band Fields of 
-    19.92s  agent 발화 끝
-    28.88s  agent 발화 끝
-    28.89s  user  발화 시작: 아, 그렇군요. 두 분이 같은 밴드에 있는 줄 알았어요.
-    32.34s  agent 발화 시작: 가끔 오해가 생길 수도 있죠. 새로운 사람들을 만나면서 즐거운 시간을 보내시길 바랍니다.
-    32.50s  user  발화 끝
-    37.20s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 리아나 씨. 요즘 좀 힘든 시간을 보내고 있어요.
+     4.53s  user  발화 끝
+     4.63s  agent 발화 시작: 안녕하세요. 힘든 시간을 보내고 계신다니 마음이 아프네요. 어떤 점이 가장 힘드신가요?
+     9.35s  agent 발화 끝
+     9.41s  user  발화 시작: 음… 갑자기 회사를 그만두게 돼서 뭘 해야 할지 모르겠어요.
+    14.12s  agent 발화 시작: 갑작스러운 변화는 누구에게나 혼란스러울 수 있어요. 새로운 시작을 앞두고 불안한 건 당연해요.
+    14.12s  user  발화 끝
+    18.05s  user  발화 시작: 응.
+    18.50s  user  발화 끝
+    19.48s  user  발화 시작: 그래도 막막하네요. 뭘 해야 할지 감이 안 와요.
+    19.54s  agent 발화 끝
+    22.48s  <ret> 발화 (turn6 첫 프레임)
+    22.87s  agent 발화 시작: <ret> 밀러 씨의 부인은 새라 루이자 바렛이었는데, 천팔백이십일년에 뉴욕에서 태어났어요.
+    22.88s  ⚡SPAN 주입 [d'=0.88s / d_lead=4.68s]: James Henry Miller's wife was named Sarah Louisa Barrett, and she was 
+    23.09s  user  발화 끝
+    25.54s  user  발화 시작: 응.
+    25.89s  user  발화 끝
+    27.55s  agent 발화 끝
+    27.58s  user  발화 시작: 아, 그렇군요.
+    28.91s  user  발화 끝
+    28.92s  agent 발화 시작: 새로운 길을 찾는 과정에서 잠시 멈춰 서서 자신을 돌아보는 시간을 가져보는 건 어떠세요? 무엇을 좋아하고, 
+    32.66s  user  발화 시작: 응.
+    33.11s  user  발화 끝
+    37.31s  agent 발화 끝
+    37.38s  user  발화 시작: 그럴까요? 시간 내서 생각해 봐야겠네요.
+    40.08s  <ret> 발화 (turn12 첫 프레임)
+    40.28s  user  발화 끝
+    40.31s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어
+    40.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Seoul, South Korea: 28.0°C, humidity 65%, wind 3.2 km/h
+    46.76s  user  발화 시작: 아, 그렇군요. 고맙습니다.
+    46.80s  agent 발화 끝
+    48.69s  user  발화 끝
+    48.84s  agent 발화 시작: 도움이 되었다니 다행이네요.
+    50.45s  agent 발화 끝

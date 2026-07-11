@@ -1,10 +1,10 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Klelimi, a warm and attentive personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Kioen, a warm and attentive supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Ivy",
+    "name": "Paul",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,68 +12,66 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "female",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "late 20s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-06-19",
+      "category": "home",
+      "text": "User's home address is 745 Oak Avenue."
     },
     {
-      "date": "2026-05-05",
+      "date": "2026-04-15",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-04-09",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-02-14",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-01-28",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-05-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-07-23",
+      "date": "2025-06-28",
       "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-07-22",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-08",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to delete the profile for user ⟨ret@2.57s⟩ one two.
-[  2.95s][moshi] «interrupted» ⟦⚡SPAN@2.97s: (tool result) Profile for user ID 12 successfully deleted.⟧ Alright, the profile for user one two is now deleted—
-      CALL: {"function": "browser", "arguments": {"action": "delete", "user_id": "12"}}
-[  5.43s][user ] «interrupts_prev» …can you confirm that all their data is gone too?
-[  8.37s][moshi] Deletion includes all associated data, ensuring complete removal.
-[ 12.80s][user ] Good. I'm a bit worried about security, honestly.
-[ 16.20s][moshi] I understand your concern; data security is my top priority, always.
-[ 21.08s][user ] I was just looking at my budget, and I need to cut back.
-[ 24.53s][moshi] That's very proactive of you! We can definitely explore some options.
-[ 27.46s][user ] «backchannel» Yeah.
-[ 28.50s][user ] What’s the weather like in Seoul right ⟨ret@30.84s⟩ now?
-[ 31.01s][moshi] ⟦⚡SPAN@31.08s: (tool result) Current conditions in Seoul: 26.5°C, humidity 68%, wind 3.2 km/h.⟧ The weather in Seoul is currently 26.5 degrees Celsius, with 68% humidity and a 3.2 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 38.94s][user ] Hmm, that’s warmer than I thought.
-[ 41.19s][moshi] It is quite pleasant, isn't it? Perhaps a nice walk is in order.
-[ 42.44s][user ] «backchannel» Okay.
-[ 45.29s][user ] I need to send 50,000 won to my ⟨ret@47.76s⟩ sister.
-[ 48.15s][moshi] ⟦⚡SPAN@48.16s: (tool result) Payment request of 50,000 KRW to sister initiated. Confirmation ID: 7X9L2.⟧ A payment request of 50,000 Korean won to your sister has been initiated, with confirmation ID 7X9L2.
-      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": 50000, "recipient": "sister"}}
-[ 56.26s][user ] That’s great, thanks so much!
-[ 58.14s][moshi] You’re very welcome! I’m happy I could help streamline things for you.
+[  0.00s][user ] I want to view Riverbend Residences on August ⟨ret@3.00s⟩ twelfth.
+[  3.38s][moshi] «interrupted» ⟦⚡SPAN@3.40s: (tool result) Visit scheduled. Riverbend Residences, August 12, 2026, 10:00 AM. Confirmation ID: RVB-8742.⟧ I’ve scheduled a visit for you at Riverbend Residences on August twelfth at ten AM—
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "Riverbend Residences", "visit_date": "August 12, 2026"}}
+[  7.34s][user ] «interrupts_prev» …Is there parking available there?
+[  9.28s][moshi] ⟨ret@9.20s⟩ ⟦⚡SPAN@9.28s: (tool result) Riverbend Residences offers both covered and open-air parking to residents and visitors, with a ⟧ Riverbend Residences does offer parking—both covered and open-air—with guest spaces available first-come, first-served.
+      CALL: {"function": "search", "arguments": {"query": "Riverbend Residences parking"}}

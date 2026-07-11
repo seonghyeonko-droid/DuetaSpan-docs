@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Jordan",
+#     "name": "Nora",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -12,56 +12,56 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-04",
-#       "category": "home",
-#       "text": "User's home address is 796 Maple Drive."
+#       "date": "2026-03-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-11-30",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-10-05",
+#       "date": "2025-09-09",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
+#       "date": "2025-08-31",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-06-30",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-14",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-05-30",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who won the presidential election in Slovenia in 2017?
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.32s  agent 발화 시작: <ret> It was Borut Pahor who won the 2017 Slovenian presiden
-     4.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.50s]: Borut Pahor won the 2017 Slovenian presidential election, defeating Ma
-     4.49s  user  발화 끝
-    19.82s  agent 발화 끝
+     0.00s  user  발화 시작: Who voices all the minions in Despicable Me 3?
+     2.88s  <ret> 발화 (turn1 첫 프레임)
+     3.11s  agent 발화 시작: <ret> Well, it's quite a feat of voice work, isn’t it? Pierr
+     3.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: Pierre Coffin is the voice actor for all of the minions in the Despica
+     3.33s  user  발화 끝
+    10.67s  agent 발화 끝

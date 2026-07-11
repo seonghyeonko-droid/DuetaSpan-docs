@@ -1,51 +1,64 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Tora, a warm and attentive wellness coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Kiolo, a grounded and empathetic personal guide who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Ava",
+    "name": "Jonas",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "40s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-22",
+      "date": "2026-06-11",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2026-05-07",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2026-03-08",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-01-28",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2025-12-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2025-09-24",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-08-26",
+      "date": "2025-08-30",
       "category": "home",
-      "text": "User's home address is 618 Birch Road."
+      "text": "User's home address is 211 Pine Court."
     },
     {
-      "date": "2025-07-13",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-08-04",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-29",
+      "date": "2025-07-07",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-06-11",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -56,11 +69,37 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Click today’s date in the calendar ⟨ret@2.23s⟩ iframe.
-[  2.46s][moshi] «interrupted» ⟦⚡SPAN@2.47s: (tool result) {"status": "success", "message": "Clicked today's date in the calendar iframe."}⟧ Wonderful, I’ve clicked today’s date for you in the calendar—
-      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "calendar", "element_selector": "today"}}
-[  5.56s][user ] «interrupts_prev» …can you find me some relaxing music for sleep ⟨ret@8.12s⟩ now?
-[  8.28s][moshi] ⟦⚡SPAN@8.28s: {"artist": "Weightless", "title": "Weightless Part 1", "album": "Weightless", "duration": "8:06"}⟧ I found “Weightless Part 1” by Weightless, it’s eight minutes and six seconds long. It's often used for relaxation.
-[ 16.18s][user ] Play it, ⟨ret@17.29s⟩ please.
-[ 17.61s][moshi] ⟦⚡SPAN@17.61s: (tool result) {"status": "playing", "message": "Now playing Weightless Part 1."}⟧ “Weightless Part 1” is now playing. Sweet dreams!
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist_name": "Weightless", "track_name": "Weightless Part 1"}}
+[  0.00s][user ] Can you create a file named important data with the sentence the quick brown fox jumps over the lazy ⟨ret@5.49s⟩ dog?
+[  5.73s][moshi] ⟦⚡SPAN@5.73s: (tool result) File 'important data' created successfully.⟧ I’ve created a file named 'important data' with that sentence. It’s all set for you.
+      CALL: {"function": "write_file", "arguments": {"filename": "important data", "content": "the quick brown fox jumps over the lazy dog"}}
+[ 10.82s][user ] That's great. What’s the weather like in Seoul right ⟨ret@13.37s⟩ now?
+[ 13.52s][moshi] ⟦⚡SPAN@13.53s: (tool result) The current weather in Seoul is 26.0°C, humidity 70%, wind 3.2 km/h.⟧ It’s currently 26.0°C in Seoul, with 70% humidity and a 3.2 km/h wind. A pleasant summer day.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 17.05s][user ] «backchannel» Nice.
+[ 24.51s][user ] I need to find a good Italian restaurant ⟨ret@26.72s⟩ nearby.
+[ 27.12s][moshi] ⟦⚡SPAN@27.12s: (tool result) Bella Italia is 0.8 km away, rated 4.5 stars, with average cost ₩25,000.⟧ Bella Italia is nearby, about 0.8 kilometers away. It has a 4.5-star rating, and meals average ₩25,000.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
+[ 34.06s][user ] «backchannel» Yeah.
+[ 37.67s][user ] Sounds perfect. Can you make a reservation there for two people tomorrow evening at 7:30 ⟨ret@43.17s⟩ PM?
+[ 43.41s][moshi] ⟦⚡SPAN@43.41s: (tool result) Reservation confirmed at Bella Italia for 2 people tomorrow at 7:30 PM. Confirmation ID: BI7293.⟧ Your reservation at Bella Italia is confirmed for two people tomorrow at 7:30 PM. Your confirmation ID is BI7293.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "date": "tomorrow", "time": "7:30 PM", "party_size": 2}}
+[ 46.66s][user ] «backchannel» Mhm.
+[ 53.86s][user ] That's fantastic. I’m thinking about taking a course to improve my project management skills.
+[ 59.17s][moshi] That’s a wonderful idea! Investing in your skills is always a good step.
+[ 61.02s][user ] «backchannel» Uh-huh.
+[ 65.49s][user ] —but I'm not sure where to even begin looking for something suitable.
+[ 69.09s][moshi] It can feel overwhelming, certainly. There are so many options available.
+[ 74.31s][user ] Do you think a PMP certification would be a good starting point?
+[ 77.43s][moshi] «interrupted» A PMP certification is a widely recognized and respected credential—
+[ 81.59s][user ] «interrupts_prev» …is it really worth the time and money, though? I’ve heard it’s quite ⟨ret@84.99s⟩ a commitment.
+[ 85.39s][moshi] ⟦⚡SPAN@85.39s: The Project Management Professional (PMP) certification requires 35 hours of project management education and ⟧ It absolutely requires a commitment; the PMP certification needs 35 hours of education, and the exam costs $555 for PMI members. It’s a substantial investment, but it’s often seen as a key differentiator.
+[101.31s][user ] Okay, that’s helpful to know. What about online courses, are there any good ⟨ret@105.03s⟩ ones?
+[105.27s][moshi] ⟦⚡SPAN@105.27s: (tool result) Coursera offers a Google Project Management Professional Certificate, highly rated with over 50,⟧ There are many excellent online courses available. Let me search for highly-rated project management courses.
+      CALL: {"function": "search", "arguments": {"query": "best online project management courses"}}
+[111.96s][moshi] Coursera offers a Google Project Management Professional Certificate, with high ratings and over 50,000 students enrolled. You can find it at coursera.org.
+[123.27s][user ] That sounds promising. Could you remind me what time my restaurant reservation is tomorrow?
+[128.18s][moshi] Your reservation at Bella Italia is tomorrow at 7:30 PM.
+[130.72s][user ] «backchannel» Exactly.
+[133.62s][user ] Great. And one last thing, can you set an alarm for 6:30 AM ⟨ret@138.23s⟩ tomorrow?
+[138.55s][moshi] ⟦⚡SPAN@138.55s: (tool result) Alarm set for 6:30 AM tomorrow.⟧ I’ve set an alarm for 6:30 AM tomorrow. I hope you have a restful night and a productive day ahead.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "6:30 AM"}}

@@ -4,78 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Hannah",
+#     "name": "Elias",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-10",
+#       "date": "2026-06-26",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2026-06-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-05-03",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-11-19",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-01-10",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-09-22",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-11-21",
-#       "category": "home",
-#       "text": "User's home address is 197 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2025-07-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-06-05",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-19",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I am looking for a pharmacy near t | S2 Wow, it is. Could you find… | S3 …me some good Italian restaurants  | S4 Oh, that’s okay. Just tell me abou
+# EXAMINER(FDB-v2) 단계: S1 I’ve been having trouble falling a | S2 That sounds nice. What can I do to | S3 I think I stay up too late on my p | S4 …could you recommend an app for gu
 
-     0.00s  user  발화 시작: I am looking for a pharmacy near thirty-three point four fou
-    14.66s  user  발화 끝
-    14.72s  <ret> 발화 (turn1 첫 프레임)
-    14.80s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
-    14.80s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.53s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-    18.09s  user  발화 시작: Yeah.
-    18.58s  user  발화 끝
-    23.12s  user  발화 시작: Wow, it is. Could you find…
-    23.33s  agent 발화 끝
-    25.52s  user  발화 끝
-    26.72s  user  발화 시작: …me some good Italian restaurants nearby?
-    30.45s  <ret> 발화 (turn5 첫 프레임)
-    30.47s  user  발화 끝
-    30.69s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any Italian restaurants nea
-    30.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (no information found)
-    34.66s  user  발화 시작: Yeah, yeah.
-    36.08s  user  발화 끝
-    37.37s  user  발화 시작: Oh, that’s okay. Just tell me about yourself, Tumi.
-    37.55s  agent 발화 끝
-    40.74s  user  발화 끝
-    40.84s  agent 발화 시작: [happy] I'm Tumi, and I love helping people plan their time 
-    50.72s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been having trouble falling asleep lately.
+     2.96s  user  발화 끝
+     3.18s  agent 발화 시작: It’s completely normal to experience sleep difficulties from
+    12.20s  user  발화 시작: That sounds nice. What can I do tonight?
+    12.22s  agent 발화 끝
+    15.26s  <ret> 발화 (turn3 첫 프레임)
+    15.49s  agent 발화 시작: <ret> There are several things you could try tonight—practic
+    15.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.41s]: Practicing relaxation techniques, such as deep breathing or progressiv
+    15.53s  user  발화 끝
+    21.20s  user  발화 시작: Mm-hmm.
+    21.74s  user  발화 끝
+    26.81s  agent 발화 시작: It’s also helpful to create a consistent bedtime routine to 
+    26.90s  agent 발화 끝
+    32.42s  agent 발화 끝
+    32.51s  user  발화 시작: I think I stay up too late on my phone.
+    35.75s  user  발화 끝
+    36.17s  agent 발화 시작: Many people find that screen time before bed can disrupt sle
+    39.39s  user  발화 시작: …could you recommend an app for guided meditation?
+    40.06s  agent 발화 끝
+    42.44s  <ret> 발화 (turn9 첫 프레임)
+    42.68s  agent 발화 시작: <ret> Let me search for some well-regarded guided meditation
+    42.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.70s]: (tool result) Headspace and Calm are consistently ranked as top choice
+    42.91s  user  발화 끝
+    46.38s  agent 발화 끝
+    46.40s  agent 발화 시작: Headspace and Calm are consistently ranked as top choices, o
+    68.02s  agent 발화 끝

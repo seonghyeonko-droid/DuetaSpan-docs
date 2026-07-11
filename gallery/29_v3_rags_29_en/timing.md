@@ -4,72 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Andrea",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-03-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "home",
+#       "text": "User's home address is 959 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-10-04",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-08-24",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-15",
+#       "date": "2025-08-21",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-04",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-23",
+#       "date": "2025-10-02",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Do you know who originally sang the theme for 21 Jump Street
-     3.12s  <ret> 발화 (turn1 첫 프레임)
-     3.43s  user  발화 끝
-     3.44s  agent 발화 시작: <ret> Oh, that's a fun one! It was Holly Robinson who origin
-     3.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.82s]: Holly Robinson sang the theme song for the television series 21 Jump S
-    15.26s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the highest number of stage wins in the Tour de Franc
+     3.22s  <ret> 발화 (turn1 첫 프레임)
+     3.54s  agent 발화 시작: <ret> That’s a fantastic question! Eddy Merckx truly dominat
+     3.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.24s]: Eddy Merckx holds the record for the most Tour de France stage wins, w
+     3.61s  user  발화 끝
+    15.78s  agent 발화 끝

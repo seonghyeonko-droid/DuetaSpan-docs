@@ -4,56 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Léa",
+#     "name": "Freya",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 20s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-06-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-05-16",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-05-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2026-05-02",
+#       "category": "home",
+#       "text": "User's home address is 997 Pine Court."
+#     },
+#     {
+#       "date": "2025-09-24",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-08",
+#       "date": "2025-09-02",
 #       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-09-05",
-#       "category": "home",
-#       "text": "User's home address is 744 Oak Avenue."
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-03",
+#       "date": "2026-06-24",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Do you know who sang “Nothing’s Gonna Stop Us Now”?
-     0.05s  <ret> 발화 (turn1 첫 프레임)
-     0.29s  agent 발화 시작: <ret> That song is beautifully uplifting! It was Grace Slick
-     0.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.71s]: Grace Slick of the band Starship performed “Nothing’s Gonna Stop Us No
-     0.29s  user  발화 끝
+     0.00s  user  발화 시작: Where does most nutrient absorption happen in the small inte
+     0.12s  <ret> 발화 (turn1 첫 프레임)
+     0.36s  agent 발화 시작: <ret> Most chemical digestion and nutrient absorption happen
+     0.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.64s]: The jejunum is the region of the small intestine where the majority of
+     0.36s  user  발화 끝
      1.00s  agent 발화 끝

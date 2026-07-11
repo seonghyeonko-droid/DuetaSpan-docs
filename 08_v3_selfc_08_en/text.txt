@@ -1,10 +1,10 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Beno, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
+SYSTEM: <system> You are Riaen, a curious and validating life coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Marcus",
+    "name": "Nina",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -12,56 +12,51 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "GBP (£)"
     },
     "nationality": "British",
-    "gender": "male",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-11-08",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2026-06-10",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2025-08-26",
+      "date": "2026-05-05",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-06-25",
+      "date": "2026-02-23",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-02-22",
       "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-05-29",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-05-27",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-11",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-08",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-01-27",
-      "title": "Booked a dentist appointment",
+      "date": "2025-07-05",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-12-16",
+      "date": "2025-06-02",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -72,28 +67,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can ⟨ret@0.00s⟩ you find me an Italian place in Boston?
-[  0.04s][moshi] «interrupted» ⟦⚡SPAN@0.04s: (tool result) {"restaurant name": "Giacomo’s Ristorante", "address": "355 Hanover St, Boston, MA 02113", "phon⟧ I found Giacomo’s Ristorante in Boston—
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Boston"}}
-[  0.07s][user ] «interrupts_prev» …do ⟨ret@0.00s⟩ they take reservations?
-[  0.09s][moshi] ⟦⚡SPAN@0.09s: (tool result) {"reservation status": "unavailable", "message": "Giacomo’s Ristorante does not accept reservati⟧ Let me check their reservation policy.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Giacomo’s Ristorante", "party_size": "2"}}
-[  0.12s][moshi] Unfortunately, Giacomo’s doesn’t take reservations, but many people feel the wait is worth it.
-[  0.18s][user ] «backchannel» Yeah, totally.
-[  0.19s][moshi] It's known for its authentic, home-style Italian cooking, and the portions are quite generous.
-[  0.26s][user ] What’s ⟨ret@0.13s⟩ the weather like there right now?
-[  0.29s][moshi] ⟦⚡SPAN@0.29s: (tool result) "The current weather in Boston is 24.4°C, humidity 68%, wind 8.0 km/h."⟧ Right now in Boston, it’s 24.4 degrees Celsius, with 68% humidity and an 8.0 kilometer per hour breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Boston"}}
-[  0.38s][user ] «backchannel» Oh.
-[  0.38s][user ] That ⟨ret@0.18s⟩ sounds nice. What about this weekend?
-[  0.42s][moshi] ⟦⚡SPAN@0.42s: (tool result) "The forecast for Boston on July 12, 2026 is 27.8°C, humidity 72%, wind 11.3 km/h."⟧ This Saturday, July 12th, Boston is expected to be 27.8 degrees Celsius, with 72% humidity and winds at 11.3 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Boston", "date": "2026-07-12"}}
-[  0.52s][user ] I think I'd like to book a hotel near there.
-[  0.57s][moshi] That's a wonderful idea. To find a hotel, I'll need a little more information.
-[  0.64s][user ] Something ⟨ret@0.61s⟩ affordable, maybe around one hundred and fifty dollars a night?
-[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) {"hotel name": "The Farrington Inn", "address": "406 Massachusetts Ave, Boston, MA 02115", "pric⟧ The Farrington Inn is available for $145 a night, and it has a rating of 4.0. It’s on Massachusetts Avenue.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Boston", "max_price": "150"}}
-[  0.78s][user ] «backchannel» Mm-hmm.
-[  0.79s][user ] That ⟨ret@0.44s⟩ sounds perfect. Let’s book it for two nights, starting this Friday.
-[  0.84s][moshi] ⟦⚡SPAN@0.84s: (tool result) {"confirmation number": "FH7892"}⟧ Excellent. I've reserved a room for two at The Farrington Inn, checking in this Friday and out on Sunday, confirmation number FH7892. It’s important to be kind to yourself during transitions, you know?
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "The Farrington Inn", "check_in_date": "2026-07-10", "check_out_date": "2026-07-12", "number_of_guests": "2"}}
+[  0.00s][user ] I ⟨ret@0.00s⟩ need to find pharmacies within three kilometers of San Francisco.
+[  0.14s][moshi] ⟦⚡SPAN@0.14s: (tool result) {"results": [{"name": "Walgreens", "vicinity": "123 Main St, San Francisco, CA 94105", "geometry⟧ I found a Walgreens at 123 Main Street in San Francisco, about two kilometers away.
+      CALL: {"function": "map_search_places", "arguments": {"query": "pharmacies", "location": "San Francisco", "radius": 3}}
+[  0.33s][user ] «backchannel» Mm-hmm.
+[  0.34s][user ] Oh, ⟨ret@0.11s⟩ um, actually, make that five kilometers.
+[  0.43s][moshi] ⟦⚡SPAN@0.43s: (tool result) {"results": [{"name": "CVS Pharmacy", "vicinity": "456 Oak Ave, San Francisco, CA 94110", "geome⟧ No problem at all. Now, within five kilometers, there’s a CVS on Oak Avenue and the Walgreens we found earlier.
+      CALL: {"function": "map_search_places", "arguments": {"query": "pharmacies", "location": "San Francisco", "radius": 5}}
+[  0.68s][user ] «backchannel» Yeah.
+[  0.70s][moshi] It’s wonderful you’re thinking ahead about health needs—being prepared can really ease any worries.
+[  0.87s][user ] Can ⟨ret@0.73s⟩ you give me directions to the CVS?
+[  0.97s][moshi] ⟦⚡SPAN@0.97s: (tool result) {"routes": [{"legs": [{"distance": {"text": "4.8 km", "value": 4800}, "duration": {"text": "12 m⟧ It’s 4.
+      CALL: {"function": "map_directions", "arguments": {"origin": "San Francisco", "destination": "456 Oak Ave, San Francisco, CA 94110", "mode": "driving"}}

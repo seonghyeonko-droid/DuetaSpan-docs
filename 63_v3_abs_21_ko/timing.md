@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "연별",
+#     "name": "유빈",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,58 +13,71 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
+#       "date": "2026-06-21",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-04-04",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-12-01",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-07-11",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-26",
-#       "title": "Researching a used car",
+#       "date": "2025-12-13",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 미술관이 언제 지어졌는지 알 수 있을까?
-     2.10s  <ret> 발화 (turn1 첫 프레임)
-     2.33s  agent 발화 시작: <ret> 아, 죄송해요. 미술관이 언제 지어졌는지에 대한 정보는 찾을 수가 없네요.
-     2.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.84s]: (no information found)
-     2.35s  user  발화 끝
-     6.17s  agent 발화 끝
-     6.79s  user  발화 시작: 음… 다른 건 없는데, 혹시 오늘 날씨 어때?
-    10.38s  <ret> 발화 (turn3 첫 프레임)
-    10.62s  agent 발화 시작: <ret> 오늘 날씨는 기온이 이십육도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어
-    10.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) {"temperature": "26.0°C", "humidity": "68%", "wind speed
-    10.86s  user  발화 끝
-    18.03s  agent 발화 끝
+     0.00s  user  발화 시작: 대칭 연방제가 언제 존재했는지 궁금해.
+     2.87s  <ret> 발화 (turn1 첫 프레임)
+     3.05s  user  발화 끝
+     3.11s  agent 발화 시작: <ret> 죄송하지만, 대칭 연방제에 대한 정보는 찾을 수 없었어요. 관련 기록이 없는 것 같아요.
+     3.11s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.86s]: (no information found)
+     7.97s  agent 발화 끝
+     8.58s  user  발화 시작: 아, 그렇구나.
+     9.40s  user  발화 끝
+     9.43s  agent 발화 시작: 혹시 다른 주제에 대해 이야기해 볼까요?
+    10.15s  user  발화 시작: 응.
+    10.46s  user  발화 끝
+    11.40s  agent 발화 시작: 새로운 곳에 적응하는 건 쉽지 않지만, 제가 옆에서 함께 할게요.
+    11.41s  agent 발화 끝
+    13.62s  user  발화 시작: 어어.
+    14.26s  user  발화 끝
+    14.81s  agent 발화 끝
+    14.97s  user  발화 시작: 음… 이 동네에서 괜찮은 식당 좀 찾아줄래?
+    17.24s  <ret> 발화 (turn8 첫 프레임)
+    17.48s  agent 발화 시작: <ret> 서울 가든(한국 음식, 별점 사 점 오), 리틀 이탈리아(이탈리아 음식, 별점 사 점 이), 버거
+    17.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.72s]: (tool result) Restaurants found: Seoul Garden (Korean, 4.5 stars), Lit
+    17.55s  user  발화 끝
+    28.20s  agent 발화 끝

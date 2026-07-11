@@ -4,81 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "하은",
+#     "name": "태아",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-06-27",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-05-31",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-10",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2026-01-25",
+#       "date": "2025-10-03",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-11-25",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2025-11-17",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-08",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-15",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 하은님. 저는 티아크스입니다. 오늘 하루 어떠신가요?
-     1.95s  user  발화 시작: 음.
-     2.45s  user  발화 끝
-     4.90s  agent 발화 끝
-     5.46s  user  발화 시작: 음… 스위스 여행 계획 세우고 있는데, 혹시 추천해 줄 만한 곳 있어요?
-    10.28s  <ret> 발화 (turn3 첫 프레임)
-    10.43s  agent 발화 시작: <ret> 취리히에 괜찮은 스시집이 있습니다. 혹시 다른 종류의 음식을 선호하시나요?
-    10.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.03s]: [2026-01-25] User's favorite cuisine is sushi.
-    10.61s  user  발화 끝
-    12.32s  user  발화 시작: 응.
-    12.82s  user  발화 끝
-    16.45s  agent 발화 끝
-    16.49s  user  발화 시작: 아니, 스시 괜찮아요. 그런데 알레르기가 있어서… 꽃가루 알레르기가 좀 심해요.
-    22.49s  <ret> 발화 (turn6 첫 프레임)
-    22.55s  user  발화 끝
-    22.57s  agent 발화 시작: <ret> 꽃가루 알레르기가 있으시군요. 스위스는 삼월에 꽃가루가 덜 날리는 지역을 찾아보는 게 좋겠습니다.
-    22.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: [2025-11-17] User is allergic to pollen.
-    27.56s  user  발화 시작: 응.
-    28.06s  user  발화 끝
-    32.26s  agent 발화 끝
-    32.69s  user  발화 시작: 아, 정말요? 그럼 취리히 근처에 꽃가루가 덜한 곳이 있을까요?
-    37.08s  <ret> 발화 (turn9 첫 프레임)
-    37.31s  agent 발화 시작: <ret> 삼월 취리히의 꽃가루 농도는 낮고, 기온은 오도에서 십이도 사이, 습도는 육십에서 칠십퍼센트, 바
-    37.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: (tool result) Zurich, Switzerland: March 1-31, 2026 - Average pollen c
-    37.51s  user  발화 끝
-    47.97s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 태아님. 저는 프라리스예요. 편안한 휴식을 도와드리는 에이전트랍니다.
+     5.79s  user  발화 시작: 어… 안녕하세요. 혹시 맛집 추천 좀 해줄 수 있어요?
+     6.16s  agent 발화 끝
+     9.69s  <ret> 발화 (turn2 첫 프레임)
+     9.84s  agent 발화 시작: <ret> 태아님. 스시를 가장 좋아하시는 걸로 알고 있어요.
+     9.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: User's favorite cuisine is sushi.
+    10.10s  user  발화 끝
+    12.62s  user  발화 시작: 맞아.
+    13.25s  user  발화 끝
+    13.28s  user  발화 시작: 네, 맞아요. 스시 진짜 좋아해요.
+    13.68s  agent 발화 끝
+    16.42s  user  발화 끝
+    16.50s  <ret> 발화 (turn5 첫 프레임)
+    16.57s  agent 발화 시작: <ret> 알레르기 있으신 건 없으신가요?
+    16.58s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.35s]: User is allergic to peanuts.
+    18.68s  agent 발화 시작: 혹시 땅콩 알레르기가 있으시다고 하셨죠? 땅콩을 사용하지 않는 곳으로 찾아드릴게요.
+    18.91s  agent 발화 끝
+    25.07s  agent 발화 끝
+    25.10s  user  발화 시작: …아, 맞다! 혹시 혼자 가기 좋은 곳으로 알아봐 줄 수 있어?
+    29.02s  <ret> 발화 (turn8 첫 프레임)
+    29.17s  agent 발화 시작: <ret> 스신이라는 곳은 어떠세요? 부산에 있고, 가격대는 이만 원에서 오만 원 사이, 평점은 오점 만점에
+    29.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: Restaurant: Sushin, Address: 123-45, Busan, South Korea, Price range: 
+    29.35s  user  발화 끝
+    40.95s  agent 발화 끝
