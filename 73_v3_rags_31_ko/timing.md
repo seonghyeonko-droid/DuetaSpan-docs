@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "다진",
+#     "name": "노안",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,64 +12,74 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-03-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-21",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-09-26",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2025-11-30",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-11-29",
+#       "date": "2025-09-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-10-24",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-06-27",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-01",
+#       "date": "2026-03-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-31",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 닉 폴스가 이글스에서 뛴 해가 언제야?
-     1.97s  <ret> 발화 (turn1 첫 프레임)
-     2.19s  agent 발화 시작: <ret> 음, 닉 폴스는 이천십칠년부터 현재까지 필라델피아 이글스에서 뛰었어요. 힘든 시기에도 포기하지 않
-     2.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Nick Foles played for the Philadelphia Eagles from 2017–present.
-     2.40s  user  발화 끝
-    10.63s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 미녀와 야수 TV 쇼는 어디에서 촬영했어?
+     2.57s  <ret> 발화 (turn1 첫 프레임)
+     2.80s  agent 발화 시작: <ret> 미녀와 야수 TV 쇼는 주로 캐나다 토론토에서 촬영되었답니다. 촬영지로서 토론토는 정말 인기 있는
+     2.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: The series was primarily filmed in Toronto, Canada.
+     2.91s  user  발화 끝
+    10.72s  agent 발화 끝

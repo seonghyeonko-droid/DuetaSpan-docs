@@ -4,74 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "성서",
+#     "name": "현호",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-06-24",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-18",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-11-19",
+#       "date": "2026-06-11",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-08-05",
+#       "date": "2026-05-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2026-04-20",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-12-13",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-17",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-12",
+#       "date": "2025-10-18",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이천년대 애플 회계 관행 합법성 조사 누가 이끌었어?
-     4.30s  <ret> 발화 (turn1 첫 프레임)
-     4.45s  agent 발화 시작: <ret> 이천년대 애플 회계 관행 합법성 조사는 유럽연합 경쟁 담당 집행위원이 이끌었습니다.
-     4.46s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.64s]: The EU's competition commissioner led the investigation into the legal
-     4.58s  user  발화 끝
-     6.99s  user  발화 시작: 와.
-     8.13s  user  발화 끝
-    10.09s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사우스웨스트 항공이랑 코드쉐어 계약을…
+     0.24s  user  발화 시작: …제일 먼저 맺은 항공사는 어디였어?
+     0.24s  user  발화 끝
+     0.32s  <ret> 발화 (turn2 첫 프레임)
+     0.48s  agent 발화 시작: <ret> 사우스웨스트 항공과 코드쉐어 계약을 제일 먼저 맺은 항공사는 천구백구십사년에 ATA 항공이었어요.
+     0.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.52s]: ATA Airlines was the first airline to begin code-sharing agreements wi
+     0.48s  user  발화 끝
+     1.00s  agent 발화 끝

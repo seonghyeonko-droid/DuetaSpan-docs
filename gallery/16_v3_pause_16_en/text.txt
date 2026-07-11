@@ -1,92 +1,89 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Iano, a upbeat and supportive personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Orelina, a encouraging and non-judgmental wellness coach who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Hugo",
+    "name": "Casey",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
+    "nationality": "American",
+    "gender": "non-binary",
     "age_range": "50s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-05-20",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-02-11",
+      "date": "2026-03-09",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-02-06",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-10-09",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-12",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-09-15",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-08-30",
+      "date": "2025-06-17",
       "category": "home",
-      "text": "User's home address is 754 Birch Road."
-    },
-    {
-      "date": "2025-07-28",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User's home address is 795 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-13",
-      "title": "Booked a dentist appointment",
+      "date": "2026-06-14",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-09-07",
-      "title": "Setting up a home network",
+      "date": "2026-06-06",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-05-27",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Iano, do you know how many medals India won at the 2018 Asian ⟨ret@3.81s⟩ Games?
-[  4.11s][moshi] ⟦⚡SPAN@4.13s: India won a total of 69 medals at the 2018 Asian Games, including 16 gold medals, 23 silver medals, and 30 bro⟧ Well, India really shone at the 2018 Asian Games, taking home a total of sixty-nine medals! That’s a fantastic achievement, isn’t it?
-[ 14.61s][user ] Sixty-nine… wow. Uh, what about the weather in Seoul right ⟨ret@18.27s⟩ now?
-[ 18.66s][moshi] ⟦⚡SPAN@18.67s: The current weather in Seoul is 26.0°C, humidity 78%, wind 4.1 km/h.⟧ The weather in Seoul is currently twenty-six degrees Celsius, with seventy-eight percent humidity and a light breeze. Sounds pretty nice!
-[ 28.83s][user ] That does sound nice. I'm thinking of going to a ⟨ret@32.07s⟩ movie.
-[ 32.23s][moshi] ⟦⚡SPAN@32.23s: It is Friday, July 10, 2026 at 2:41 PM in Asia/Seoul right now.⟧ —but first, I was wondering, what time is it there right now? It's currently two forty-one PM in Seoul on Friday, July tenth. Plenty of time to catch a film!
-[ 43.98s][user ] Perfect. … I’m looking for action movies.
-[ 46.99s][moshi] ⟨ret@46.92s⟩ ⟦⚡SPAN@47.00s: "Mission: Impossible - Dead Reckoning Part One" is playing at Lotte Cinema World Tower at 3:00 PM, 6:00 PM, an⟧ "Mission: Impossible - Dead Reckoning Part One" is showing at Lotte Cinema World Tower at three, six, and nine PM.
-[ 50.82s][user ] «backchannel» Yeah.
-[ 55.39s][moshi] Thinking about the three o’clock showing? It’s a great option if you want to make the most of the afternoon.
-[ 58.91s][user ] «backchannel» Really?
-[ 61.95s][user ] Is there anything else…
-[ 65.35s][user ] …playing around that ⟨ret@66.34s⟩ time?
-[ 66.66s][moshi] ⟦⚡SPAN@66.66s: "Bad Boys: Ride or Die" is playing at Megabox Coex at 3:15 PM and 6:30 PM.⟧ Actually, “Bad Boys: Ride or Die” is playing at Megabox Coex at three fifteen and six thirty. A bit of a different vibe!
-[ 74.74s][user ] That sounds fun too. Iano…
-[ 77.78s][user ] …can you find restaurants ⟨ret@79.46s⟩ nearby?
-[ 79.85s][moshi] ⟦⚡SPAN@79.86s: There are many restaurants in Seoul, including Gaeseong Mandu Koong, known for its dumplings, and Hadongkwan, ⟧ Seoul is full of delicious options! You could try Gaeseong Mandu Koong for dumplings or Hadongkwan for Korean beef soup.
-[ 83.23s][user ] «backchannel» Yeah.
-[ 89.10s][user ] Korean beef soup sounds amazing. Can you make a reservation for me?
-[ 92.92s][moshi] ⟨ret@92.76s⟩ ⟦⚡SPAN@92.92s: Hadongkwan's contact number is +82 2-2266-4282. Their website is hadongkwan.co.kr, source: restaurantguru.com.⟧ I'm happy to help with that. But I cannot directly make reservations for restaurants. I can search for their contact information for you, though.
-[102.38s][moshi] I found that Hadongkwan's number is plus eighty-two two two two six six four two eight two.
+[  0.00s][user ] I ⟨ret@0.00s⟩ was just wondering… who sang Edelweiss in.
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: Theodore Bikel performed the song "Edelweiss" in the 1965 film *The Sound of Music*.⟧ It was Theodore Bikel who beautifully performed “Edelweiss” in the film. Such a classic, isn’t it?
+[  0.32s][user ] Oh, okay! That’s good to know. Um…
+[  0.41s][user ] …what’s the weather…
+[  0.45s][user ] …like ⟨ret@0.12s⟩ in Seoul right now?
+[  0.52s][moshi] ⟦⚡SPAN@0.52s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ Right now in Seoul, it’s 23.0°C with 74% humidity and a gentle breeze at 5.5 km/h.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[  0.73s][user ] «backchannel» Yeah.
+[  0.75s][user ] That sounds pretty nice actually.
+[  0.81s][moshi] It does, doesn’t it? A comfortable temperature can really boost your mood, you know.

@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "채슬",
+#     "name": "유담",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,72 +18,83 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-08",
+#       "date": "2026-05-20",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-03-09",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-09",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-12-12",
+#       "date": "2025-06-17",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-08-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-11",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-06",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 아시안 게임에서 인도팀이… | S2 아니, 금메달만 몇 개인지 궁금한… | S3 …거예요. 다시 한 번만 알려주세요. | S4 꽤 많이 땄네요.
+# EXAMINER(FDB-v2) 단계: S1 음… 혹시 ‘사운드 오브… | S2 …뮤직’에 나오는 ‘에델바이스’는 누가 불렀었는지… | S3 시오도어 비켈… 처음 들어보는 이름인데… | S4 …혹시 다른 노래도 많이 불렀어요?
 
-     0.00s  user  발화 시작: 음… 아시안 게임에서 인도팀이…
-     2.40s  user  발화 끝
-     3.83s  user  발화 시작: …이천십팔년에 금메달을 몇 개 땄더라…?
-     5.62s  <ret> 발화 (turn2 첫 프레임)
-     6.03s  agent 발화 시작: <ret> 이천십팔년 아시안 게임에서 인도팀은 총 예순아홉개의 메달을 획득했는데, 그중 금메달은 열여섯개였어
-     6.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: India won a total of 69 medals at the 2018 Asian Games, including 16 g
-     6.22s  user  발화 끝
-    11.62s  user  발화 시작: 정말요?
-    12.26s  user  발화 끝
-    13.86s  agent 발화 시작: 혹시 다른 메달 종류에 대해서도 궁금하신가요?
-    13.95s  agent 발화 끝
-    17.10s  agent 발화 끝
-    17.26s  user  발화 시작: 아니, 금메달만 몇 개인지 궁금한…
-    19.65s  user  발화 끝
-    20.64s  user  발화 시작: …거예요. 다시 한 번만 알려주세요.
-    22.85s  user  발화 끝
-    22.89s  agent 발화 시작: 이천십팔년 아시안 게임에서 인도팀은 금메달을 열여섯개 땄습니다.
-    27.98s  agent 발화 끝
-    28.01s  user  발화 시작: 아, 열여섯개였구나… 그럼 은메달은 몇 개였죠?
-    31.25s  user  발화 끝
-    31.34s  <ret> 발화 (turn9 첫 프레임)
-    31.50s  agent 발화 시작: <ret> 이천십팔년 아시안 게임에서 인도팀은 금메달 열여섯개와 함께 은메달 스물세개, 동메달 서른개를 획득
-    31.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.45s]: India won a total of 69 medals at the 2018 Asian Games, including 16 g
-    36.81s  user  발화 시작: 진짜요?
-    37.44s  user  발화 끝
-    40.89s  user  발화 시작: 꽤 많이 땄네요.
-    40.95s  agent 발화 끝
-    41.79s  agent 발화 시작: 네, 정말 대단한 성과였죠. 스포츠 정신이 빛나는 결과인 것 같아요.
-    41.89s  user  발화 끝
-    46.79s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 ‘사운드 오브…
+     0.00s  <ret> 발화 (turn2 첫 프레임)
+     0.08s  user  발화 시작: …뮤직’에 나오는 ‘에델바이스’는 누가 불렀었는지…
+     0.08s  user  발화 끝
+     0.18s  agent 발화 시작: <ret> ‘에델바이스’는 천구백육십오년 영화 ‘사운드 오브 뮤직’에서 시오도어 비켈이 부르셨답니다. 정말 
+     0.18s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.24s]: Theodore Bikel performed the song "Edelweiss" in the 1965 film The Sou
+     0.18s  user  발화 끝
+     0.32s  <ret> 발화 (turn6 첫 프레임)
+     0.42s  user  발화 시작: 네.
+     0.42s  agent 발화 끝
+     0.44s  user  발화 시작: 시오도어 비켈… 처음 들어보는 이름인데…
+     0.44s  user  발화 끝
+     0.54s  user  발화 시작: …혹시 다른 노래도 많이 불렀어요?
+     0.54s  user  발화 끝
+     0.64s  agent 발화 시작: <ret> 시오도어 비켈은 천구백이십사년 이월 이일에 태어나 이천십오년 십이월 십칠일에 세상을 떠나신 오스트
+     0.64s  ⚡SPAN 주입 [d'=0.34s / d_lead=0.34s]: (tool result) Theodore Bikel (born February 2, 1924 – died December 17
+     0.64s  user  발화 끝
+     0.98s  user  발화 시작: 네.
+     0.98s  agent 발화 끝
+     1.00s  user  발화 끝

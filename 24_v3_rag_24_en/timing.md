@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Stella",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-12-28",
+#       "date": "2026-06-04",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-03-30",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-13",
-#       "category": "home",
-#       "text": "User's home address is 528 Cedar Lane."
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2026-02-09",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2025-10-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-08",
+#       "date": "2025-12-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,85 +53,103 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-05",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-27",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Kea, I've been feeling really s | S2 Seven championships, wow! What yea | S3 I’m trying to focus on my breathin | S4 Maybe. That sounds nice.
+# EXAMINER(FDB-v2) 단계: S1 I’m thinking of visiting some pala | S2 Lavish, huh? Sounds fun. Which Tud | S3 What about before Wolsey? Was ther | S4 I suppose so. What’s the weather l
 
-     0.00s  user  발화 시작: Hi Kea, I've been feeling really stressed lately.
-     3.46s  user  발화 끝
-     3.61s  agent 발화 시작: Hello! It's completely understandable to feel stressed—life 
-     8.14s  user  발화 시작: Uh-huh.
-     8.63s  user  발화 끝
-     9.62s  user  발화 시작: That's good to hear. Do you have any quick tips?
-     9.63s  agent 발화 끝
-    13.13s  user  발화 끝
-    13.21s  agent 발화 시작: Even a few deep breaths can make a difference. Focusing on y
-    19.04s  agent 발화 끝
-    19.30s  user  발화 시작: Okay, I’ll try that. Who is the most successful snooker play
-    24.31s  <ret> 발화 (turn6 첫 프레임)
-    24.34s  user  발화 끝
-    24.47s  agent 발화 시작: <ret> Many consider Stephen Hendry the most successful snook
-    24.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: Stephen Hendry is widely regarded as the most successful snooker playe
-    30.96s  user  발화 시작: Yeah.
-    31.45s  user  발화 끝
-    33.11s  user  발화 시작: Seven championships, wow! What year did he win his first?
-    33.65s  agent 발화 끝
-    37.62s  <ret> 발화 (turn9 첫 프레임)
-    37.93s  agent 발화 시작: <ret> He won his very first World Championship in 1990, defe
-    37.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: Stephen Hendry won his first World Championship title in 1990, defeati
-    38.11s  user  발화 끝
-    40.31s  user  발화 시작: Oh.
-    40.80s  user  발화 끝
-    44.42s  agent 발화 끝
-    44.47s  user  발화 시작: Jimmy White? I've heard that name before.
-    47.32s  agent 발화 시작: He’s a legend in his own right, a very popular player—
-    47.43s  user  발화 끝
-    50.63s  user  발화 시작: …did Hendry win them all in a row?
-    51.25s  agent 발화 끝
-    53.29s  <ret> 발화 (turn14 첫 프레임)
-    53.31s  user  발화 끝
-    53.44s  agent 발화 시작: <ret> He won seven World Championships, but not all in a row
-    53.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.40s]: Although Stephen Hendry won seven World Championship titles, they were
-    60.82s  user  발화 시작: Right.
-    61.31s  user  발화 끝
-    64.69s  agent 발화 시작: It really is! Such dedication and skill—it takes years to re
-    64.84s  agent 발화 끝
-    66.69s  user  발화 시작: Yeah, yeah.
-    68.11s  user  발화 끝
-    69.64s  user  발화 시작: I’m trying to focus on my breathing like you said.
-    69.83s  agent 발화 끝
-    72.74s  user  발화 끝
-    72.84s  agent 발화 시작: Wonderful! Just close your eyes and take slow, deliberate br
-    77.05s  user  발화 시작: Mm-hmm.
-    77.55s  user  발화 끝
-    80.02s  agent 발화 끝
-    81.81s  user  발화 시작: It's…hard to quiet my mind.
-    84.39s  user  발화 끝
-    84.78s  agent 발화 시작: That’s very common. Thoughts will come and go—simply acknowl
-    87.94s  user  발화 시작: Mhm.
-    88.48s  user  발화 끝
-    90.34s  agent 발화 끝
-    90.90s  user  발화 시작: What's the weather like in Seoul right now?
-    93.16s  <ret> 발화 (turn25 첫 프레임)
-    93.39s  agent 발화 시작: <ret> It's currently 23.0°C in Seoul, with 74% humidity and 
-    93.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.97s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    93.62s  user  발화 끝
-   105.36s  agent 발화 끝
-   106.92s  user  발화 시작: Maybe. That sounds nice.
-   109.19s  agent 발화 시작: A change of scenery can do wonders for your mood. Connecting
-   109.27s  user  발화 끝
-   113.36s  user  발화 시작: Uh-huh.
-   113.85s  user  발화 끝
-   115.17s  agent 발화 끝
-   115.41s  user  발화 시작: Thanks, Kea. I feel a bit better already.
-   118.09s  agent 발화 시작: You're very welcome! Remember, even small steps can lead to 
-   118.21s  user  발화 끝
-   124.34s  agent 발화 끝
+     0.00s  user  발화 시작: I’m thinking of visiting some palaces. Which ones are really
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.00s  <ret> 발화 (turn9 첫 프레임)
+     0.03s  agent 발화 시작: That’s a lovely idea! Many palaces tell fascinating stories.
+     0.03s  user  발화 끝
+     0.05s  user  발화 시작: Yeah.
+     0.05s  agent 발화 끝
+     0.05s  user  발화 시작: Are there any in England that were built for someone…
+     0.05s  user  발화 끝
+     0.08s  user  발화 시작: …then taken over by a Tudor?
+     0.08s  user  발화 끝
+     0.09s  agent 발화 시작: <ret> Hampton Court Palace began as a home for Cardinal Wols
+     0.09s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Hampton Court Palace was originally built for Cardinal Thomas Wolsey, 
+     0.09s  user  발화 끝
+     0.11s  <ret> 발화 (turn7 첫 프레임)
+     0.15s  user  발화 시작: Oh, Wolsey! I’ve heard of him. What did Henry do with it onc
+     0.15s  agent 발화 끝
+     0.19s  agent 발화 시작: <ret> Henry the Eighth really expanded Hampton Court, using 
+     0.19s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Henry VIII greatly expanded Hampton Court Palace, using it as a showca
+     0.19s  user  발화 끝
+     0.23s  user  발화 시작: Lavish, huh? Sounds fun. Which Tudors actually *lived* there
+     0.23s  agent 발화 끝
+     0.26s  agent 발화 시작: <ret> Henry the Eighth, Edward the Sixth, Mary the First, an
+     0.26s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Henry VIII, Edward VI, Mary I, and Elizabeth I all resided at Hampton 
+     0.26s  user  발화 끝
+     0.32s  user  발화 시작: Wow, all of them! That’s quite a history.
+     0.32s  agent 발화 끝
+     0.33s  <ret> 발화 (turn13 첫 프레임)
+     0.34s  agent 발화 시작: It really is. A place can absorb so much energy over the cen
+     0.34s  user  발화 끝
+     0.38s  <ret> 발화 (turn21 첫 프레임)
+     0.38s  user  발화 시작: Did Elizabeth change much about it, or did she leave it as H
+     0.38s  agent 발화 끝
+     0.41s  agent 발화 시작: <ret> Elizabeth the First didn’t change much about the palac
+     0.41s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Elizabeth I made relatively few structural changes to Hampton Court Pa
+     0.41s  user  발화 끝
+     0.43s  <ret> 발화 (turn28 첫 프레임)
+     0.46s  user  발화 시작: Oh.
+     0.46s  agent 발화 끝
+     0.46s  user  발화 시작: So it was pretty much Henry’s vision she lived in?
+     0.46s  user  발화 끝
+     0.49s  agent 발화 시작: Largely, yes. She appreciated the existing magnificence of t
+     0.49s  user  발화 끝
+     0.51s  user  발화 시작: Yeah.
+     0.51s  agent 발화 끝
+     0.51s  user  발화 시작: What about before Wolsey? Was there something there before h
+     0.51s  user  발화 끝
+     0.55s  agent 발화 시작: Before Wolsey’s palace, the site was occupied by a manor hou
+     0.55s  user  발화 끝
+     0.59s  user  발화 시작: …Was it a really big manor house, or just a small one?
+     0.59s  agent 발화 끝
+     0.62s  agent 발화 시작: <ret> It was a relatively modest manor house, primarily used
+     0.62s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The manor house belonging to the Knights Hospitaller prior to Wolsey’s
+     0.62s  user  발화 끝
+     0.66s  agent 발화 시작: Before Wolsey built Hampton Court, the Knights Hospitaller h
+     0.66s  agent 발화 끝
+     0.70s  user  발화 시작: So Wolsey completely transformed the site, then.
+     0.70s  agent 발화 끝
+     0.72s  agent 발화 시작: He envisioned something grand, a statement of his own import
+     0.72s  user  발화 끝
+     0.74s  user  발화 시작: And Henry just… took it? That sounds a bit rude.
+     0.74s  agent 발화 끝
+     0.75s  <ret> 발화 (turn30 첫 프레임)
+     0.77s  agent 발화 시작: It was a common practice for monarchs of that era to acquire
+     0.77s  user  발화 끝
+     0.81s  user  발화 시작: I suppose so. What’s the weather like there today?
+     0.81s  agent 발화 끝
+     0.83s  agent 발화 시작: <ret> Right now at Hampton Court Palace, it’s 18.5 degrees C
+     0.83s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 18.5°C, humidity 62%, wind 7.2 km/h
+     0.83s  user  발화 끝
+     0.88s  user  발화 시작: Not bad at all. Is it open to the public currently?
+     0.88s  agent 발화 끝
+     0.91s  agent 발화 시작: <ret> Yes, Hampton Court Palace is open today from 10 AM to 
+     0.91s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Hampton Court Palace is open daily from 10:00 AM to 6:00
+     0.91s  user  발화 끝
+     0.98s  user  발화 시작: That’s good to know. Thanks, Frella.
+     0.98s  agent 발화 끝
+     0.99s  agent 발화 시작: You’re very welcome.
+     0.99s  user  발화 끝
+     1.00s  agent 발화 끝

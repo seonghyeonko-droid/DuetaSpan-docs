@@ -1,90 +1,81 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Freus, a curious and validating supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Zarien, a curious and validating personal guide who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Jack",
+    "name": "Paul",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
+      "date": "2026-03-28",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-18",
+      "date": "2025-10-21",
       "category": "home",
-      "text": "User's home address is 913 Pine Court."
+      "text": "User's home address is 837 Pine Court."
     },
     {
-      "date": "2025-10-09",
+      "date": "2025-10-01",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-06-20",
+      "date": "2025-08-06",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-07-03",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "text": "User is planning a trip to Vietnam in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-14",
-      "title": "Comparing gym memberships",
+      "date": "2026-04-26",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-06",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who is the Fire Lord in Legend of ⟨ret@2.70s⟩ Korra?
-[  2.94s][moshi] ⟦⚡SPAN@2.94s: Ozai was the Fire Lord before his son Zuko, ruling during the Hundred Year War.⟧ Well, that's a fascinating question! The Fire Lord in *Legend of Korra*’s time was actually Zuko's son, but before him, it was Ozai who ruled during a very difficult period.
-[  9.65s][user ] «backchannel» Yeah.
-[ 14.43s][user ] Oh, right. Zuko too, wasn't he?
-[ 17.43s][moshi] Exactly! Zuko had a remarkable journey to becoming Fire Lord, changing so much throughout his life. It’s really inspiring, don’t you think?
-[ 27.06s][user ] Um, yeah, I guess so. What about Aang's airbending ⟨ret@31.84s⟩ teacher?
-[ 32.00s][moshi] ⟦⚡SPAN@32.00s: Monk Gyatso was Aang’s mentor and a highly skilled airbending master.⟧ Aang’s airbending teacher was Monk Gyatso—a truly wise and skilled master who was deeply devoted to Aang’s well-being.
-[ 36.43s][user ] «backchannel» Yeah.
-[ 40.61s][moshi] He really guided Aang, helping him understand not just bending, but life itself.
-[ 47.21s][user ] Did Gyatso have any ⟨ret@48.80s⟩ siblings?
-[ 49.04s][moshi] ⟦⚡SPAN@49.04s: Monk Gyatso had a younger sister named Kya, who was also an airbending master.⟧ It's lovely you're asking about his family! Gyatso had a younger sister, Kya, and she was also a very accomplished airbending master.
-[ 55.66s][user ] «backchannel» Mm-hmm.
-[ 58.84s][user ] [sigh] It's hard to keep track of all these characters.
-[ 61.78s][moshi] It absolutely can be! There are so many wonderful characters in that world, each with their own stories. It’s okay to take your time.
-[ 71.21s][user ] What was the weather like in Republic City during the finale?
-[ 74.62s][moshi] ⟨ret@74.54s⟩ ⟦⚡SPAN@74.62s: (tool result) 26.0°C, humidity 68%, wind 7.2 km/h, clear skies⟧ The weather in Republic City during the finale was 26.0°C, with clear skies and a gentle breeze of 7.2 km/h.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Republic City"}}
-[ 85.03s][user ] That sounds…pleasant. ⟨ret@86.88s⟩
-[ 87.19s][moshi] ⟦⚡SPAN IRRELEVANT@87.20s: The average price of a barrel of West Texas Intermediate crude oil is $85.23 as of July 10, 2026.⟧ It does, doesn't it? A clear day can really lift your spirits, especially during intense moments.
-[ 89.29s][user ] «backchannel» Uh-huh.
-[ 94.18s][user ] What kind of tea did Iroh like?
-[ 96.69s][moshi] ⟨ret@96.53s⟩ ⟦⚡SPAN@96.69s: Iroh greatly enjoyed jasmine tea, often remarking on its calming and pleasant aroma.⟧ Oh, that's a great question! Uncle Iroh truly cherished jasmine tea, always commenting on its lovely aroma and calming effect.
-[105.62s][user ] He seemed like a really good guy.
-[107.64s][moshi] He absolutely was! Iroh had a beautiful soul and offered wisdom and kindness to everyone he met—a wonderful role model.
-[116.72s][user ] Do you…do you think I can finish my history paper?
-[120.40s][moshi] Of course you can! You’ve already come so far, and you’re clearly engaged with the material. I have faith in you—break it down into smaller steps.
-[124.10s][user ] «backchannel» Right.
-[130.88s][user ] I guess so. Thanks, Freus.
-[133.00s][moshi] You're very welcome. Remember, taking things one step at a time is a great strategy.
+[  0.00s][user ] When ⟨ret@0.00s⟩ was the last solar eclipse visible in North America?
+[  0.04s][moshi] ⟦⚡SPAN@0.04s: The most recent total solar eclipse visible in North America was on August 21, 2017.⟧ Well, that’s a fascinating question! The most recent total solar eclipse visible in North America was on August 21, 2017. It was quite a spectacle, I hear.
+[  0.16s][user ] Oh, wow, 2017… that feels like ages ago.
+[  0.19s][moshi] It does seem to fly by, doesn't it? Time has a funny way of doing that.
+[  0.26s][user ] «backchannel» Yeah.
+[  0.26s][user ] Was ⟨ret@0.14s⟩ it visible across all of North America?
+[  0.30s][moshi] ⟦⚡SPAN@0.30s: The path of totality for the August 21, 2017 eclipse crossed the entire continental United States, as well as ⟧ It wasn’t visible everywhere, but the path of totality crossed the entire continental United States, and parts of Canada and Mexico.
+[  0.39s][user ] «backchannel» Yeah, yeah.
+[  0.40s][user ] I think I remember hearing about that one.
+[  0.43s][moshi] «interrupted» It was a really big event, and widely covered! People traveled from all over—
+[  0.49s][user ] «interrupts_prev» …did ⟨ret@0.20s⟩ it affect flights at all?
+[  0.52s][moshi] ⟦⚡SPAN@0.52s: (no information found)⟧ That's a good point to consider.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {}}
+[  0.54s][moshi] I’m sorry, but I don’t have any information about flight disruptions related to that eclipse.
+[  0.61s][user ] «backchannel» Yeah, yeah.
+[  0.62s][moshi] Perhaps there weren't significant disruptions, or the data isn't readily available.
+[  0.66s][user ] Hmm, ⟨ret@0.54s⟩ interesting. What about the one before that?
+[  0.70s][moshi] ⟦⚡SPAN@0.70s: A partial solar eclipse was visible across North America on October 27, 2022, and an annular solar eclipse occ⟧ Before 2017, there was a partial solar eclipse visible across North America on October 27, 2022, and an annular one on October 14, 2023.
+[  0.80s][user ] An ⟨ret@0.42s⟩ annular eclipse? What’s that?
+[  0.82s][moshi] ⟦⚡SPAN IRRELEVANT@0.82s: The current price of Bitcoin is $67,385.80, with a 24-hour change of +2.5%.⟧ —and doesn't completely cover the sun, leaving a bright ring around it. It’s quite a different sight!
+[  0.89s][user ] «backchannel» Uh-huh.
+[  0.90s][user ] That sounds cool. I'd love to see one sometime.
+[  0.94s][moshi] That’s wonderful! Experiencing an eclipse is a truly unforgettable event, and I’m glad you’re interested.

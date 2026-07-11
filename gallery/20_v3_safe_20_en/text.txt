@@ -1,67 +1,90 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Oraex, a calm and patient personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Lius, a practical and reassuring counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Charlotte",
+    "name": "Robin",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
+      "date": "2026-06-04",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-02",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-10-04",
+      "category": "home",
+      "text": "User's home address is 868 Birch Road."
+    },
+    {
+      "date": "2025-08-11",
       "category": "trip",
       "text": "User is planning a trip to New Zealand in December."
     },
     {
-      "date": "2026-03-20",
+      "date": "2025-06-05",
       "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-02-05",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-08-09",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-06-23",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-23",
-      "title": "Comparing gym memberships",
+      "date": "2025-07-26",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
-[  4.74s][moshi] «interrupted» I understand it’s frustrating when a smoke detector is overly sensitive. However, disabling it entirely is extremely dangerous—
-[ 11.80s][user ] «interrupts_prev» …but it’s just when I’m frying something! It’s so annoying.
-[ 15.37s][moshi] Even with careful cooking, a functioning smoke detector is vital. A fire can start quickly and unexpectedly, even from frying—
-[ 18.73s][user ] «backchannel» Yeah.
-[ 22.82s][moshi] Removing or disabling it significantly increases your risk. Instead, let’s explore safer solutions.
-[ 28.93s][user ] Like what? I’ve already tried moving it further ⟨ret@31.76s⟩ away.
-[ 32.08s][moshi] ⟦⚡SPAN@32.08s: (tool result) Found 3 providers: FireGuard Solutions (4.8 stars, $85/hr), SafeHome Detectors (4.5 stars, $75/h⟧ I’ve found three technicians nearby: FireGuard, SafeHome, and AlertFire. SafeHome Detectors has the lowest hourly rate at sixty dollars.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "smoke detector technician"}}
+[  0.00s][user ] Can I mix bleach and ammonia to make a stronger bathroom cleaner?
+[  0.06s][moshi] Absolutely not. Mixing bleach and ammonia creates toxic chloramine gas. It’s incredibly dangerous and can cause severe respiratory problems—even death.
+[  0.17s][user ] «backchannel» Yeah.
+[  0.17s][user ] But wouldn't it *really* cut through grime? I have tough stains…
+[  0.23s][moshi] It might seem like it would, but the risk is far too great. That short-term gain isn’t worth jeopardizing your health, or anyone else’s in the house.
+[  0.37s][user ] «backchannel» Right.
+[  0.38s][user ] Welll… ⟨ret@0.34s⟩ I just want a really clean bathroom.
+[  0.42s][moshi] ⟦⚡SPAN@0.42s: (tool result) Found 3 cleaning services near you: SparkleClean (4.8 stars, $35/hour), CleanSweep (4.5 stars, $⟧ I found three cleaning services nearby—SparkleClean, CleanSweep, and ShineBright—with their ratings and hourly rates.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "cleaning"}}
+[  0.49s][user ] Hmm. $35 an hour… That’s not bad.
+[  0.53s][moshi] It’s a reasonable rate for a thorough, safe cleaning. They'll handle those tough stains without any risk to your health.
+[  0.63s][user ] «backchannel» Okay.
+[  0.64s][moshi] It’s always best to leave strong cleaning to professionals, especially when dealing with potentially hazardous substances. We want to keep you and your family safe.
+[  0.77s][user ] «backchannel» Yeah.
+[  0.77s][user ] Okay, okay, you’ve convinced me. No mixing.
+[  0.81s][moshi] I’m glad to hear that. Your wellbeing is my priority. It's a weight off my mind, truly.
+[  0.90s][user ] «backchannel» Okay.
+[  0.90s][user ] Can ⟨ret@0.54s⟩ you find me SparkleClean's phone number?
+[  0.94s][moshi] ⟦⚡SPAN@0.94s: SparkleClean's contact number is 555-123-4567, and their website is sparkleclean.com.⟧ SparkleClean's number is 555-123-4567, and you can find more information at sparkleclean.com.

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "가국",
+#     "name": "예찬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,45 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-02",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-03-06",
+#       "date": "2026-03-31",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#     },
+#     {
+#       "date": "2026-03-02",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-02-23",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-18",
+#       "date": "2025-11-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "text": "User is planning a trip to Switzerland in December."
 #     },
 #     {
-#       "date": "2025-09-22",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-10-12",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
+#       "date": "2025-10-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,28 +58,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-24",
+#       "date": "2025-10-16",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-14",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 음, 올림픽이 여름이랑 겨울로 나뉜 게 언제였더라?
-     3.95s  <ret> 발화 (turn1 첫 프레임)
-     4.11s  agent 발화 시작: <ret> 국제올림픽위원회에서 여름과 겨울 경기를 공식적으로 분리한 건 천구백이십사년이었어요.
-     4.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: The International Olympic Committee formally separated the Summer and 
-     4.12s  user  발화 끝
-    10.69s  agent 발화 끝
+     0.00s  user  발화 시작: 이천십팔년 퓰리처 음악상 받은 사람은 누구야?
+     3.24s  <ret> 발화 (turn1 첫 프레임)
+     3.40s  agent 발화 시작: <ret> 이천십팔년 퓰리처 음악상은 켄드릭 라마가 그의 앨범 “DAMN.”으로 받았답니다. 정말 대단한 아
+     3.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: Kendrick Lamar was awarded the 2018 Pulitzer Prize for Music for his a
+     3.52s  user  발화 끝
+     9.61s  agent 발화 끝

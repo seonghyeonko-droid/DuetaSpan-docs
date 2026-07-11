@@ -1,54 +1,64 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Melira, a gentle and reflective wellness coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Aren, a gentle and reflective supportive advisor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Sam",
+    "name": "Taylor",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
+    "nationality": "Canadian",
     "gender": "non-binary",
     "age_range": "late 30s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "home",
-      "text": "User's home address is 962 Maple Drive."
+      "date": "2026-06-19",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-05-15",
+      "date": "2026-04-10",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2026-03-03",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-01-05",
+      "date": "2025-12-28",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-10-22",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2025-12-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-10-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-31",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-06-12",
+      "date": "2025-09-08",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -56,53 +66,23 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-06-03",
-      "title": "Comparing gym memberships",
+      "date": "2025-06-23",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the first tv come out in the us?
-[  3.13s][moshi] ⟨ret@2.89s⟩ ⟦⚡SPAN@3.13s: The first public demonstration of television in the United States occurred on July 2, 1928.⟧ It’s fascinating to think about beginnings, isn’t it? The very first public television demonstration in the US happened on July 2, 1928.
-[  9.11s][user ] «backchannel» Wow.
-[ 12.12s][user ] Wow, that's earlier than I thought.
-[ 14.62s][moshi] It often surprises people! Technology evolves so quickly, it’s easy to forget how recent some innovations truly are.
-[ 21.80s][user ] What was shown on that first ⟨ret@24.17s⟩ broadcast?
-[ 24.46s][moshi] ⟦⚡SPAN@24.49s: The broadcast featured images of a Felix the Cat cartoon and a brief performance by a singer.⟧ That first broadcast was quite charming, actually. It included images of a Felix the Cat cartoon and a short singing performance.
-[ 31.83s][user ] Felix the Cat! That's fun.
-[ 34.04s][moshi] It really is a lovely piece of history. It shows how even early technology aimed to entertain.
-[ 37.98s][user ] «backchannel» Yeah.
-[ 41.62s][user ] I wonder how many people even *had* TVs then?
-[ 45.01s][moshi] Television was still incredibly expensive and rare in those early years.
-[ 49.77s][user ] What kind of resolution did those TVs have?
-[ 53.06s][moshi] ⟨ret@52.82s⟩ ⟦⚡SPAN@53.06s: Early televisions had very low resolution, typically around 30 scan lines or less.⟧ Early televisions had quite a limited picture quality, actually—typically around 30 scan lines or less.
-[ 56.50s][user ] «backchannel» Okay.
-[ 59.58s][user ] Thirty lines? That sounds…blurry.
-[ 62.92s][moshi] «interrupted» It was a far cry from what we’re used to today! —
-[ 64.88s][user ] «interrupts_prev» …did they broadcast in color right ⟨ret@67.14s⟩ away?
-[ 67.52s][moshi] ⟦⚡SPAN@67.54s: Commercial color broadcasting in the United States began on January 1, 1954.⟧ Commercial color broadcasts didn’t begin until January 1, 1954, a little over two decades later.
-[ 74.73s][user ] Oh, so black and white for a while.
-[ 77.29s][moshi] Exactly. Black and white television was the standard for many years before color became widespread.
-[ 80.65s][user ] «backchannel» Uh-huh.
-[ 83.11s][user ] What company made the first commercial ⟨ret@85.76s⟩ TV?
-[ 85.99s][moshi] ⟦⚡SPAN@86.00s: Philco is often credited with producing one of the first commercially available television sets in the United ⟧ Philco is frequently recognized for producing one of the very first televisions available for purchase in the United States.
-[ 88.72s][user ] «backchannel» Oh.
-[ 92.92s][moshi] It’s remarkable to trace these technological lineages, isn’t it? Seeing how things develop over time.
-[ 99.47s][user ] Was it expensive to buy ⟨ret@101.41s⟩ one?
-[101.46s][moshi] ⟦⚡SPAN@101.49s: In the late 1930s, televisions cost around $200 to $600, equivalent to $4,000 to $12,000 today.⟧ These early televisions were quite a luxury item. They cost between two hundred and six hundred dollars, which is about four to twelve thousand dollars today.
-[110.85s][user ] That’s… a lot of money!
-[113.12s][moshi] It truly was a significant investment. It really underscores how different things were then.
-[115.56s][user ] «backchannel» Yeah.
-[119.50s][user ] Did everyone want ⟨ret@120.93s⟩ one?
-[121.23s][moshi] ⟦⚡SPAN IRRELEVANT@121.25s: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cloudy skies and a wind speed of 7.1 m/s.⟧ The appeal grew steadily, but it wasn't instant. People were still adjusting to the idea of having moving images in their homes.
-[128.15s][moshi] It’s fascinating to consider how these innovations change our perceptions of the world.
-[129.90s][user ] «backchannel» Yeah.
-[133.03s][user ] What did people watch on TV in the ⟨ret@135.78s⟩ 50s?
-[136.01s][moshi] ⟦⚡SPAN@136.02s: Popular programs in the 1950s included "I Love Lucy", "The Honeymooners", and various westerns and quiz shows.⟧ The nineteen fifties saw a rise in popular programs like “I Love Lucy” and “The Honeymooners,” as well as westerns and quiz shows.
-[143.91s][user ] That sounds like a simpler time.
-[146.24s][moshi] In some ways, it was. Television offered a new form of shared experience, bringing families together. It's a lovely thought, isn't it?
+[  0.00s][user ] Do you know who sang "For Your Love" back in ⟨ret@2.74s⟩ the sixties?
+[  2.97s][moshi] «interrupted» ⟦⚡SPAN@2.98s: Keith Relf was the lead singer of the British rock band The Yardbirds, and he sang lead vocals on their 1965 h⟧ Well, that’s a lovely question. It was Keith Relf, actually—
+[  8.94s][user ] …was that his only…
+[ 11.98s][user ] …big hit with The Yardbirds?
+[ 13.76s][moshi] It wasn't, though "For Your Love" certainly brought them attention. They had several other charting songs, like "Heart Full of Soul."
+[ 17.52s][user ] «backchannel» Yeah, totally.
+[ 20.50s][moshi] ⟨ret@20.20s⟩ ⟦⚡SPAN IRRELEVANT@20.52s: The current temperature in Reykjavik, Iceland is 8.2°C with partly cloudy skies and a wind speed of 7.1 km/h.⟧ —inspiring many famous guitarists, like Eric Clapton and Jimmy Page. It’s fascinating to trace musical lineages, isn’t it?
+[ 28.66s][user ] That is really interesting. I appreciate you sharing that, Aren.
+[ 33.08s][moshi] It’s my pleasure. Exploring these connections often reveals hidden stories, and I find that quite fulfilling.

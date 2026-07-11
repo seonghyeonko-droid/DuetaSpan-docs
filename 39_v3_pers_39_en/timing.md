@@ -4,86 +4,111 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Milan",
+#     "name": "David",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
+#     "nationality": "British",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-05-24",
+#       "date": "2026-04-27",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-09-09",
+#       "date": "2026-04-20",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-04-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-07-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-09",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-19",
-#       "title": "Researching a used car",
+#       "date": "2026-01-16",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, uh, hello. A wellness coach fo | S2 I guess. I just feel like I don't  | S3 …but is it even worth it? I mean,  | S4 It just feels like so much effort 
+# EXAMINER(FDB-v2) 단계: S1 Felis? That's… unusual. What kind  | S2 I don’t even know what else I *cou | S3 I used to love photography. Haven' | S4 I guess I could dust off my old ca
 
-     0.00s  agent 발화 시작: Bonjour, Milan.
-     1.29s  agent 발화 끝
-     2.44s  user  발화 시작: Oh, uh, hello. A wellness coach for friends? That’s… specifi
-     7.96s  user  발화 끝
-     8.07s  agent 발화 시작: It can be tricky navigating relationships, can’t it? Many pe
-    10.45s  user  발화 시작: Right.
-    11.13s  user  발화 끝
-    15.21s  user  발화 시작: I guess. I just feel like I don't really *have* close friend
-    15.39s  agent 발화 끝
-    19.36s  agent 발화 시작: That feeling of distance is quite common, Milan. It takes wo
-    19.46s  user  발화 끝
-    24.58s  user  발화 시작: …but is it even worth it? I mean, people always move, change
-    25.20s  agent 발화 끝
-    28.09s  user  발화 끝
-    28.12s  agent 발화 시작: Milan. It's natural to wonder about the point when things sh
-    31.81s  user  발화 시작: Uh-huh.
-    32.30s  user  발화 끝
-    33.00s  user  발화 시작: It just feels like so much effort for something that might j
-    33.12s  agent 발화 끝
-    37.68s  agent 발화 시작: It’s understandable to feel hesitant when you’ve experienced
-    37.72s  user  발화 끝
-    46.26s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello David, it’s lovely to meet you. I’m Felis, and I help 
+     5.75s  agent 발화 끝
+     5.98s  user  발화 시작: Felis? That's… unusual. What kind of changes are you talking
+    11.38s  agent 발화 시작: All sorts, really. Career shifts, relationship adjustments, 
+    11.49s  user  발화 끝
+    19.07s  agent 발화 끝
+    20.16s  user  발화 시작: Well, I’m thinking of leaving my job. It’s just… a lot.
+    24.54s  agent 발화 시작: That takes courage, David. It’s perfectly normal to feel ove
+    24.60s  user  발화 끝
+    33.95s  agent 발화 끝
+    34.41s  user  발화 시작: I don’t even know what else I *could* do. I’ve been at the s
+    38.44s  agent 발화 시작: Ten years is a long time. It’s understandable to feel a bit 
+    38.67s  user  발화 끝
+    44.22s  user  발화 시작: …do you think I’m being silly? Leaving a stable job in this 
+    45.02s  agent 발화 끝
+    47.83s  user  발화 끝
+    47.85s  agent 발화 시작: Not at all. It’s wise to be thoughtful, but staying somewher
+    51.44s  user  발화 시작: Uh-huh.
+    51.84s  user  발화 끝
+    54.74s  agent 발화 시작: Sometimes, David, the biggest risk is *not* taking one. What
+    54.76s  agent 발화 끝
+    61.83s  agent 발화 끝
+    62.55s  user  발화 시작: I used to love photography. Haven't really picked up a camer
+    66.59s  agent 발화 시작: That’s a lovely creative outlet. Perhaps exploring that agai
+    66.80s  user  발화 끝
+    74.00s  agent 발화 끝
+    74.32s  user  발화 시작: It feels… impractical. How do you even *start* something lik
+    79.04s  user  발화 끝
+    79.23s  agent 발화 시작: Starting small is key. It’s not about instantly becoming a p
+    89.53s  agent 발화 끝
+    90.69s  user  발화 시작: I guess I could dust off my old camera. That’s… manageable.
+    94.23s  agent 발화 시작: That’s a wonderful first step, David. Remember, progress isn
+    94.39s  user  발화 끝
+   101.65s  agent 발화 끝

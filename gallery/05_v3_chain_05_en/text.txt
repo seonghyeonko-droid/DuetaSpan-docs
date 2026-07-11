@@ -1,90 +1,96 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Hena, a upbeat and supportive personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Kellaen, a thoughtful and soft-spoken life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Remy",
+    "name": "Manon",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
+    "nationality": "British",
+    "gender": "female",
     "age_range": "late 20s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-21",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-02-06",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in August."
-    },
-    {
-      "date": "2025-10-23",
+      "date": "2026-04-06",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-08-05",
+      "date": "2026-03-16",
       "category": "home",
-      "text": "User's home address is 875 Elm Street."
+      "text": "User's home address is 473 Cedar Lane."
+    },
+    {
+      "date": "2025-06-05",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-06-02",
+      "category": "work",
+      "text": "User works as a software engineer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-27",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-01",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-08-30",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-28",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you open the frequently asked questions page in a new ⟨ret@3.28s⟩ tab?
-[  3.52s][moshi] ⟦⚡SPAN@3.52s: (tool result) https://support.tavily.com/hc/en-us/sections/360000334591-FAQ - Tavily Help Center⟧ I’ve opened the Tavily FAQ page in a new tab for you.
-      CALL: {"function": "tavily-search", "arguments": {"query": "frequently asked questions"}}
-[  7.12s][moshi] Is there anything specific I can help you find there?
-[ 10.53s][user ] Um, what’s their refund policy?
-[ 12.77s][moshi] ⟨ret@12.69s⟩ ⟦⚡SPAN@12.77s: (tool result) Refunds are available within 14 days of purchase for unused credits, excluding custom plans. - T⟧ Tavily offers refunds for unused credits within fourteen days of purchase—
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://support.tavily.com/hc/en-us/sections/360000334591-FAQ"}}
-[ 15.99s][user ] «backchannel» Yeah, totally.
-[ 17.14s][user ] «interrupts_prev» Right. And can you check the weather in Seoul ⟨ret@19.84s⟩ right now?
-[ 20.08s][moshi] ⟦⚡SPAN@20.08s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0 degrees Celsius in Seoul, with 74 percent humidity and a 5.5 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 29.39s][moshi] Perfect weather for a little rest, don't you think?
-[ 32.71s][user ] Maybe. What time is it ⟨ret@34.58s⟩ there?
-[ 34.82s][moshi] ⟦⚡SPAN@34.82s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ Right now in Seoul, it’s Friday, July 10th, 2026, at 2:37 PM.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 41.14s][moshi] Plenty of daylight left to unwind!
-[ 44.53s][user ] Okay. I need to book a massage appointment next week.
-[ 48.54s][moshi] Oh, a massage sounds wonderful!
-[ 50.49s][moshi] Do you have a preferred day or time next week?
-[ 53.63s][user ] Tuesday afternoon, if possible.
-[ 55.64s][moshi] ⟨ret@55.48s⟩ ⟦⚡SPAN@55.64s: (tool result) Seoul Massage & Spa: Tue, Jul 14, 2:00 PM, ₩80000, 02-1234-5678⟧ I found Seoul Massage & Spa with an opening on Tuesday, July 14th, at 2:00 PM.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "massage", "location": "Seoul", "date": "2026-07-14", "time": "afternoon"}}
-[ 61.07s][moshi] The appointment is 80,000 won, and their number is 02-1234-5678.
-[ 65.13s][user ] «backchannel» Really?
-[ 68.15s][user ] Great, book it ⟨ret@69.17s⟩ for me.
-[ 69.56s][moshi] ⟦⚡SPAN@69.57s: (tool result) Appointment confirmed: Seoul Massage & Spa, Tue, Jul 14, 2:00 PM, confirmation ID: A7B2C9⟧ Excellent! Your massage appointment at Seoul Massage & Spa is confirmed for Tuesday, July 14th, at 2:00 PM.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Seoul Massage & Spa", "date": "2026-07-14", "time": "2:00 PM"}}
-[ 77.69s][moshi] Your confirmation ID is A7B2C9.
-[ 82.02s][user ] Perfect.
+[  0.00s][user ] I want to find a house in Miami Florida with at least a three-star rating for one ⟨ret@4.77s⟩ person.
+[  5.01s][moshi] ⟦⚡SPAN@5.01s: (tool result) 12 results found. Average price: $250/night. Check-in: today.⟧ I found twelve houses in Miami Florida, averaging two hundred fifty dollars a night, available to check in today.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Miami Florida", "stars": "3", "guests": "1"}}
+[ 13.40s][user ] That sounds good. Can you show me the cheapest ⟨ret@16.01s⟩ one?
+[ 16.23s][moshi] ⟦⚡SPAN@16.25s: The cheapest option is "Sunset View Villa", 3 stars, $180/night, 1 bedroom, 1 bath.⟧ The most affordable is "Sunset View Villa", a three-star house at one hundred eighty dollars a night, with one bedroom and bathroom.
+[ 25.07s][user ] Is it near South Beach?
+[ 26.70s][moshi] ⟨ret@26.54s⟩ ⟦⚡SPAN@26.70s: (tool result) 6.2 miles, approximately 15 minutes by car.⟧ It’s six point two miles from South Beach, about a fifteen-minute drive.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Sunset View Villa, Miami Florida", "destination": "South Beach, Miami Beach"}}
+[ 31.69s][user ] Hmm, that’s not too bad. What about houses with a ⟨ret@34.98s⟩ pool?
+[ 35.21s][moshi] ⟦⚡SPAN@35.22s: (tool result) 8 results found with a pool. Average price: $320/night.⟧ I found eight houses with a pool, averaging three hundred twenty dollars a night.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Miami Florida", "stars": "3", "guests": "1", "amenities": "pool"}}
+[ 38.94s][user ] «backchannel» Yeah.
+[ 40.23s][moshi] «interrupted» These options generally offer more space and privacy, which can be lovely for a relaxing getaway—
+[ 46.10s][user ] «interrupts_prev» …Actually, what's the weather like in Miami ⟨ret@48.71s⟩ right now?
+[ 49.10s][moshi] ⟦⚡SPAN@49.11s: (tool result) 30.1°C, humidity 78%, wind 8.2 km/h. Sunny.⟧ Currently in Miami, it’s thirty point one degrees Celsius, seventy-eight percent humidity, and sunny with an eight point two kilometer per hour breeze.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Miami Florida"}}
+[ 59.21s][user ] Perfect! Let’s go back to the houses with pools. Can you tell me about the one with the highest rating?
+[ 64.62s][moshi] ⟨ret@64.46s⟩ ⟦⚡SPAN@64.62s: "Ocean Breeze Estate" has 4.8 stars, $400/night, 2 bedrooms, pool, kitchen.⟧ "Ocean Breeze Estate" has a four point eight-star rating, costs four hundred dollars a night, and has two bedrooms, a pool, and a kitchen.
+[ 73.82s][user ] That sounds lovely. Could you show me some pictures of it?
+[ 77.09s][moshi] ⟨ret@76.94s⟩ ⟦⚡SPAN@77.09s: (tool result) Ocean Breeze Estate, Miami Florida: A luxurious villa with a private pool and ocean views. [http⟧ I found a gallery with pictures of "Ocean Breeze Estate" online; it looks like a luxurious villa with a private pool and ocean views.
+      CALL: {"function": "tavily-search", "arguments": {"query": "Ocean Breeze Estate Miami Florida photos"}}
+[ 86.10s][user ] Wonderful! I think I’d like to schedule a visit to see ⟨ret@89.09s⟩ it.
+[ 89.50s][moshi] ⟦⚡SPAN@89.50s: (tool result) Visit scheduled for July 12, 2026, at 10:00 AM. Confirmation ID: 87B29C.⟧ I’ve scheduled a visit for you to "Ocean Breeze Estate" on July twelfth at ten AM. Your confirmation ID is eight seven bee two nine see.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "Ocean Breeze Estate", "location": "Miami Florida"}}
+[ 92.87s][user ] «backchannel» Right.
+[ 99.04s][user ] Great, thank you so much for your help.
+[101.32s][moshi] You’re very welcome. Finding a space that feels right is so important, and I’m glad I could assist you in this step. It’s a lovely feeling when a place just *clicks*.

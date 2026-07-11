@@ -1,67 +1,59 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Oruen, a encouraging and non-judgmental life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Hia, a encouraging and non-judgmental personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Ada",
+    "name": "Julian",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "female",
+    "nationality": "French",
+    "gender": "male",
     "age_range": "50s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-02",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-02-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-04-17",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-20",
+      "date": "2026-02-14",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "text": "User is planning a trip to New Zealand in August."
     },
     {
-      "date": "2025-06-19",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-01-08",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-08-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-14",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-05",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-26",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-08-15",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-12",
+      "date": "2025-05-27",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -72,15 +64,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ada, I'm Oruen. It's lovely to connect with you today. How are you feeling?
-[  6.25s][user ] Um, a bit lost, to be honest. It's been a rough few months.
-[  9.34s][moshi] It's perfectly alright to feel lost after a difficult time, Ada. Grief and change can be disorienting.
-[ 16.07s][user ] Yeah, well… I was just remembering my trip to ⟨ret@19.21s⟩ Switzerland.
-[ 19.37s][moshi] ⟦⚡SPAN@19.37s: [2025-06-20] User is planning a trip to Switzerland in December.⟧ You're planning a trip to Switzerland this December, which sounds like a wonderful escape.
-[ 23.28s][user ] «backchannel» Mm-hmm.
-[ 25.01s][moshi] Perhaps focusing on that trip can give you something hopeful to look forward to. Is there anything specific you're planning?
-[ 28.65s][user ] «backchannel» Right.
-[ 32.21s][user ] I was thinking about what to pack. It'll be cold, I guess?
-[ 35.89s][moshi] ⟨ret@35.65s⟩ ⟦⚡SPAN@35.89s: (tool result) Weather in Switzerland: 5.0°C, humidity 85%, wind 7.2 km/h.⟧ The weather in Switzerland is currently 5 degrees Celsius, with high humidity and a bit of wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Switzerland"}}
-[ 42.25s][moshi] It’s a good idea to pack warm layers for December. It’s alright to prepare practically, Ada.
+[  0.00s][moshi] Hi Julian, I'm Hia. It's lovely to connect with you today. Is there anything on your mind?
+[  0.06s][user ] «backchannel» Okay.
+[  0.07s][user ] Um, ⟨ret@0.00s⟩ I was just thinking about our last chat… about finding an apartment.
+[  0.12s][moshi] ⟦⚡SPAN@0.12s: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ I recall you were looking for a pet-friendly, two-bedroom apartment downtown. Anything specific about that search I can help with now?
+[  0.19s][user ] «backchannel» Yeah.
+[  0.20s][user ] Yes, ⟨ret@0.00s⟩ actually. Do you remember what my budget was?
+[  0.23s][moshi] ⟦⚡SPAN@0.23s: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ Your note says you had a budget for a two-bedroom apartment.
+[  0.27s][user ] Right. ⟨ret@0.06s⟩ And I’m planning a trip, wasn’t I?
+[  0.30s][moshi] ⟦⚡SPAN@0.30s: [2026-02-14] User is planning a trip to New Zealand in August.⟧ You are planning a trip to New Zealand in August. Sounds wonderful! Are you starting to make arrangements?
+[  0.37s][user ] I am! I was wondering about the best time for alpine wildflower photography there.
+[  0.42s][moshi] That's a beautiful idea! The peak season for alpine wildflowers in New Zealand is generally November to January.
+[  0.49s][user ] «backchannel» Yeah.
+[  0.49s][user ] Oh, that's… a bit after my trip, then.
+[  0.52s][moshi] Yes, August is earlier in the season. You might still find some blooms at lower altitudes, though.
+[  0.59s][user ] «backchannel» Yeah.
+[  0.59s][user ] Hmm. ⟨ret@0.55s⟩ Maybe I should check the weather forecast for some areas.
+[  0.63s][moshi] ⟦⚡SPAN@0.63s: (tool result) Paris, France: 21.0°C, humidity 65%, wind 7.2 km/h, clear skies.⟧ The weather in Paris is currently 21.0°C and clear. Would you like the forecast for New Zealand instead?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  0.70s][user ] Yes, ⟨ret@0.55s⟩ please. For Queenstown.
+[  0.71s][moshi] ⟦⚡SPAN@0.71s: (tool result) Queenstown, New Zealand: 8.0°C, humidity 82%, wind 12.5 km/h, partly cloudy.⟧ It’s 8.0°C and partly cloudy in Queenstown, New Zealand.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Queenstown, New Zealand"}}
+[  0.75s][user ] «backchannel» Really?
+[  0.75s][user ] Brrr, chilly! I should pack warm clothes.
+[  0.78s][moshi] Definitely! Layers are always a good idea when traveling to mountainous regions.
+[  0.82s][user ] I ⟨ret@0.45s⟩ also need to remember I'm lactose intolerant.
+[  0.85s][moshi] ⟦⚡SPAN@0.85s: [2026-01-08] User is lactose-intolerant.⟧ You are lactose intolerant, and it’s good to keep that in mind when traveling.
+[  0.90s][user ] «backchannel» Yeah.
+[  0.91s][user ] Yes, it is. It’s easy to forget! Thank you, Hia.
+[  0.94s][moshi] You're very welcome, Julian. It’s all about being prepared and enjoying the journey, isn't it?

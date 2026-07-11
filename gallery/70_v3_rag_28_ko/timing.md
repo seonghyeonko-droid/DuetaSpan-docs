@@ -4,117 +4,144 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "윤현",
+#     "name": "현경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-03-14",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-12-28",
+#       "date": "2026-02-10",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-11-06",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-12-11",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2025-09-11",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-07-14",
+#       "date": "2025-11-03",
 #       "category": "work",
 #       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-01",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-27",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 오늘 날씨가 어때요? | S2 마이크 마이어스요? 그 배우 이름이 좀 낯설긴 한데… | S3 음… 그럼 혹시 다른 배우가 그 역할에 캐스팅될 뻔한 적은 없 | S4 소닉이라… 짐 캐리가 그런 역할도 한다니 신기하네요.
+# EXAMINER(FDB-v2) 단계: S1 유튜브 구독자 제일 많은 사람이 누구야? | S2 아, 그렇구나. 그럼 그 다음으로 구독자 많은 사람은 누구야? | S3 엄청난 사람이네. 구독자 수 계속 변하잖아, 지금 MrBeas | S4 요즘 날씨 어때?
 
-     0.00s  user  발화 시작: 안녕하세요. 오늘 날씨가 어때요?
-     1.90s  <ret> 발화 (turn1 첫 프레임)
-     2.21s  agent 발화 시작: <ret> 안녕하세요. 지금 기온은 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다
-     2.22s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.41s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     2.35s  user  발화 끝
-    11.62s  agent 발화 끝
-    11.65s  user  발화 시작: 음… 영화 한 편 보고 싶은데, 혹시 추천해 줄 만한 거 있어요?
-    16.52s  agent 발화 시작: 어떤 장르를 좋아하세요? 좋아하는 배우가 있으신가요?
-    16.60s  user  발화 끝
-    19.40s  user  발화 시작: 음… 그냥 재미있는 걸로요. 옛날 영화도 괜찮아요.
-    19.48s  agent 발화 끝
-    22.84s  <ret> 발화 (turn5 첫 프레임)
-    22.91s  agent 발화 시작: <ret> 이천삼년에 개봉한 영화에서 마이크 마이어스가 모자쓴 고양이 역할을 맡았답니다. 아주 유쾌한 영화예
-    22.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: Mike Myers played the role of the Cat in the Hat in the 2003 film.
-    23.01s  user  발화 끝
-    27.32s  user  발화 시작: 오.
-    27.95s  user  발화 끝
-    29.40s  user  발화 시작: 마이크 마이어스요? 그 배우 이름이 좀 낯설긴 한데…
-    29.44s  agent 발화 끝
-    32.80s  agent 발화 시작: 맞아요. 코미디 배우로 유명하죠. '오스틴 파워' 시리즈에 출연하기도 했어요.
-    33.05s  user  발화 끝
-    35.40s  user  발화 시작: 그렇죠.
-    35.94s  user  발화 끝
-    37.20s  agent 발화 끝
-    37.97s  user  발화 시작: 오스틴 파워! 아, 그건 알아요. 근데 '모자쓴 고양이'는 어땠어요?
-    42.64s  user  발화 끝
-    42.73s  agent 발화 시작: 호불호가 갈리는 영화지만, 독특한 분위기가 매력적이에요. 아이들과 함께 보기에도 괜찮을 거예요.
-    45.83s  user  발화 시작: 네.
-    46.38s  user  발화 끝
-    48.98s  agent 발화 끝
-    49.11s  user  발화 시작: 음… 그럼 혹시 다른 배우가 그 역할에 캐스팅될 뻔한 적은 없었어요?
-    53.20s  <ret> 발화 (turn14 첫 프레임)
-    53.28s  agent 발화 시작: <ret> 흥미로운 질문이네요.
-    53.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.38s]: Jim Carrey was initially considered for the role of the Cat in the Hat
-    53.50s  user  발화 끝
-    54.47s  agent 발화 시작: '모자쓴 고양이' 역할에는 처음에 짐 캐리가 고려되었지만, 최종적으로 마이크 마이어스가 캐스팅되었답니다.
-    54.66s  agent 발화 끝
-    60.92s  agent 발화 시작: 짐 캐리의 코믹 연기도 꽤 기대되었을 것 같아요.
-    61.09s  agent 발화 끝
-    64.11s  agent 발화 끝
-    64.12s  user  발화 시작: 짐 캐리였으면 또 다른 느낌이었겠네요. 아, 그런데 짐 캐리는 요즘 뭐 하고 있어요?
-    69.31s  <ret> 발화 (turn18 첫 프레임)
-    69.70s  agent 발화 시작: <ret> 짐 캐리는 이천이십이년에 '소닉 더 헤지혹 이'에 출연했고, 그림과 정치 만화에 집중하고 있다고 
-    69.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) Jim Carrey recently starred in Sonic the Hedgehog 2 (202
-    69.86s  user  발화 끝
-    75.90s  agent 발화 시작: 예술 활동도 꾸준히 하고 계신 것 같아요.
-    76.10s  agent 발화 끝
-    78.21s  user  발화 시작: 소닉이라… 짐 캐리가 그런 역할도 한다니 신기하네요.
-    78.34s  agent 발화 끝
-    81.80s  agent 발화 시작: 맞아요. 변신이 무궁무진한 배우인 것 같아요. 그런 다재다능함이 매력적이죠.
-    82.00s  user  발화 끝
-    86.39s  user  발화 시작: 아, 그러네요. 이야기를 나누니 기분이 좀 좋아지는 것 같아요.
-    86.52s  agent 발화 끝
-    90.12s  agent 발화 시작: 저도 기쁩니다. 긍정적인 대화는 정말 좋은 에너지인 것 같아요.
-    90.41s  user  발화 끝
-    93.95s  agent 발화 끝
+     0.00s  user  발화 시작: 유튜브 구독자 제일 많은 사람이 누구야?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.02s  agent 발화 시작: <ret> 현재 기준으로 유튜브에서 가장 많은 구독자를 보유한 개인은 PewDiePie인데, 구독자가 천백십
+     0.02s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: PewDiePie has 111 million subscribers, making him the most subscribed 
+     0.02s  user  발화 끝
+     0.06s  <ret> 발화 (turn11 첫 프레임)
+     0.07s  user  발화 시작: 천만 명 넘는다니, 진짜 대단하네. 근데 그 사람이 뭘로 유명해?
+     0.07s  agent 발화 끝
+     0.09s  <ret> 발화 (turn5 첫 프레임)
+     0.10s  agent 발화 시작: 그분은 원래 게임 해설 영상으로 시작해서, 지금은 다양한 콘텐츠를 올리고 있어요.
+     0.10s  user  발화 끝
+     0.14s  user  발화 시작: 게임 말고 다른 영상도 올려? 어떤 거?
+     0.14s  agent 발화 끝
+     0.17s  agent 발화 시작: <ret> 게임 외에도 일상 브이로그나 코미디 스케치, 반응 영상 같은 다양한 콘텐츠를 올리고 있대요.
+     0.17s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: PewDiePie's content includes vlogs, comedy sketches, and reaction vide
+     0.17s  user  발화 끝
+     0.22s  user  발화 시작: 응.
+     0.22s  agent 발화 끝
+     0.22s  user  발화 시작: 반응 영상? 그게 뭔데?
+     0.22s  user  발화 끝
+     0.23s  agent 발화 시작: 다른 사람의 영상이나 사건에 대한 자신의 반응을 보여주는 영상이에요.
+     0.23s  user  발화 끝
+     0.27s  user  발화 시작: 응.
+     0.27s  agent 발화 끝
+     0.27s  user  발화 시작: 아, 그렇구나. 그럼 그 다음으로 구독자 많은 사람은 누구야?
+     0.27s  user  발화 끝
+     0.30s  agent 발화 시작: <ret> 현재 유튜브에서 가장 많은 구독자를 보유한 채널은 MrBeast인데, 구독자가 일억 칠천팔백만 명
+     0.30s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: MrBeast, with over 178 million subscribers, is currently the most subs
+     0.30s  user  발화 끝
+     0.35s  user  발화 시작: 와, PewDiePie보다 더 많네? 그…
+     0.35s  agent 발화 끝
+     0.36s  <ret> 발화 (turn17 첫 프레임)
+     0.37s  user  발화 시작: …사람은 또 뭘 하는 사람이야?
+     0.37s  user  발화 끝
+     0.37s  <ret> 발화 (turn19 첫 프레임)
+     0.38s  agent 발화 시작: MrBeast는 주로 기부나 엄청난 규모의 도전 과제를 수행하는 영상으로 유명해요.
+     0.38s  user  발화 끝
+     0.42s  user  발화 시작: 응.
+     0.42s  agent 발화 끝
+     0.42s  user  발화 시작: 도전 과제? 예를 들면?
+     0.42s  user  발화 끝
+     0.44s  agent 발화 시작: <ret> 스퀴드 게임 재현이나, 수백만 달러를 기부하거나, 아프리카에 우물을 파는 등 엄청난 규모의 도전 
+     0.44s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: MrBeast has hosted challenges such as recreating Squid Game, giving aw
+     0.44s  user  발화 끝
+     0.49s  user  발화 시작: 엄청난 사람이네. 구독자 수 계속 변하잖아, 지금 MrBeast가 일위라는 거 확실해?
+     0.49s  agent 발화 끝
+     0.53s  agent 발화 시작: <ret> 포브스에 따르면 현재 MrBeast가 이억 사천사백만 명으로 일위이고, 그 다음이 티-Series
+     0.53s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) MrBeast currently holds the top spot with 244 million su
+     0.53s  user  발화 끝
+     0.60s  user  발화 시작: 그래.
+     0.60s  agent 발화 끝
+     0.60s  user  발화 시작: 잠깐만, T-Series가 더 많네? MrBeast가 일위가 아니었구나 —
+     0.60s  user  발화 끝
+     0.63s  user  발화 시작: …그럼 T-Series는 개인 채널이 아니야? 회사 채널인가?
+     0.63s  user  발화 끝
+     0.66s  agent 발화 시작: 네, T-Series는 인도 최대의 음반사 겸 영화 제작사 채널이에요.
+     0.66s  user  발화 끝
+     0.69s  user  발화 시작: 아, 그렇구나. 그럼 개인 채널 중에 제일 많은 구독자는 MrBeast겠네?
+     0.69s  agent 발화 끝
+     0.69s  <ret> 발화 (turn27 첫 프레임)
+     0.72s  agent 발화 시작: 네, 맞아요. 개인 채널 중에서는 MrBeast가 가장 많은 구독자를 보유하고 있어요.
+     0.72s  user  발화 끝
+     0.76s  user  발화 시작: 요즘 날씨 어때?
+     0.76s  agent 발화 끝
+     0.77s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+     0.77s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+     0.77s  user  발화 끝
+     0.82s  user  발화 시작: 그래.
+     0.82s  agent 발화 끝
+     0.82s  user  발화 시작: 덥네. 잠 좀 자려고 하는데, 좋은 잠자리 환경에 대해 알려줄까?
+     0.82s  user  발화 끝
+     0.86s  agent 발화 시작: 편안한 잠자리를 위해 몇 가지 팁을 드릴게요. 방 온도를 시원하게 유지하고, 빛을 차단하고, 조용한 환경을 
+     0.86s  user  발화 끝
+     0.92s  user  발화 시작: 응.
+     0.92s  agent 발화 끝
+     0.93s  user  발화 시작: 빛을 차단하는 건 어떻게 해? 암막 커튼 같은 거?
+     0.93s  user  발화 끝
+     0.96s  agent 발화 시작: 네, 암막 커튼이나 수면 안대를 사용하면 빛을 효과적으로 차단할 수 있어요.
+     0.96s  user  발화 끝
+     1.00s  agent 발화 끝

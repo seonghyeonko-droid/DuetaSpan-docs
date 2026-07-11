@@ -4,71 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Nora",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "date": "2026-05-28",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-06-16",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-03-15",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-05-25",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-03-28",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-09",
-#       "title": "Researching a used car",
+#       "date": "2026-03-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, do you know who sings the son | S2 …thought it was a cartoon soundtra | S3 Honey, did you take the trash out? | S4 So, what else does Green Jellÿ do?
+# EXAMINER(FDB-v2) 단계: S1 Who kept a famous diary… | S2 …about the Great Fire of London? | S3 Oh, interesting. Was he actually * | S4 …did he write about what caused th
 
-     0.00s  user  발화 시작: Hey, do you know who sings the song "Three Little Pigs"? It'
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.64s  agent 발화 시작: <ret> Oh, that's a fun one! It's actually performed by Green
-     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: Green Jellÿ is an American parody metal band formed in 1989.
-     4.86s  user  발화 끝
-     9.46s  agent 발화 끝
-    10.89s  user  발화 시작: Green Jellÿ? That's… unexpected. I…
-    14.58s  user  발화 끝
-    16.05s  user  발화 시작: …thought it was a cartoon soundtrack.
-    17.99s  agent 발화 시작: [laugh] It really is surprising, isn’t it? Sometimes the mos
-    18.03s  user  발화 끝
-    22.53s  agent 발화 끝
-    22.70s  user  발화 시작: Honey, did you take the trash out?
-    24.65s  user  발화 시작: So, what else does Green Jellÿ do? Are they known for other 
-    24.82s  user  발화 끝
-    28.68s  <ret> 발화 (turn7 첫 프레임)
-    29.07s  agent 발화 시작: <ret> They released their first album in nineteen ninety-two
-    29.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it
-    29.14s  user  발화 끝
-    34.71s  agent 발화 끝
+     0.00s  user  발화 시작: Who kept a famous diary…
+     0.00s  <ret> 발화 (turn2 첫 프레임)
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.04s  user  발화 시작: …about the Great Fire of London?
+     0.04s  user  발화 끝
+     0.09s  agent 발화 시작: <ret> It’s fascinating to look back at history through perso
+     0.09s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Samuel Pepys was an English naval administrator and Member of Parliame
+     0.09s  user  발화 끝
+     0.10s  <ret> 발화 (turn6 첫 프레임)
+     0.25s  user  발화 시작: Mm-hmm.
+     0.25s  agent 발화 끝
+     0.26s  user  발화 시작: Oh, interesting. Was he actually *there* during the fire?
+     0.26s  user  발화 끝
+     0.33s  agent 발화 시작: <ret> Yes, he was—Pepys recorded the events of the Great Fir
+     0.33s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Pepys recorded the events of the Great Fire of London in his diary, de
+     0.33s  user  발화 끝
+     0.50s  agent 발화 시작: <ret> It’s remarkable how vividly he captured the experience
+     0.50s  agent 발화 끝
+     0.50s  <ret> 발화 (turn8 첫 프레임)
+     0.56s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The diary covers the years 1660 to 1669, and provides a detailed and p
+     0.72s  user  발화 시작: …did he write about what caused the fire, or just what it *d
+     0.72s  agent 발화 끝
+     0.82s  agent 발화 시작: <ret> He didn't focus on the cause, but more on the unfoldin
+     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: Pepys’s diary entries about the fire do not specifically detail its ca
+     0.82s  user  발화 끝
+     1.00s  agent 발화 끝

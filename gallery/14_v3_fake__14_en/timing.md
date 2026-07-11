@@ -4,127 +4,110 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Jack",
+#     "name": "Paul",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
+#       "date": "2026-03-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-18",
+#       "date": "2025-10-21",
 #       "category": "home",
-#       "text": "User's home address is 913 Pine Court."
+#       "text": "User's home address is 837 Pine Court."
 #     },
 #     {
-#       "date": "2025-10-09",
+#       "date": "2025-10-01",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-06-20",
+#       "date": "2025-08-06",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-07-03",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "text": "User is planning a trip to Vietnam in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-26",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who is the Fire Lord in Legend of  | S2 Did Gyatso have any siblings? | S3 That sounds…pleasant. | S4 Do you…do you think I can finish m
+# EXAMINER(FDB-v2) 단계: S1 When was the last solar eclipse vi | S2 Was it visible across all of North | S3 …did it affect flights at all? | S4 An annular eclipse? What’s that?
 
-     0.00s  user  발화 시작: Who is the Fire Lord in Legend of Korra?
-     2.70s  <ret> 발화 (turn1 첫 프레임)
-     2.94s  agent 발화 시작: <ret> Well, that's a fascinating question! The Fire Lord in 
-     2.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: Ozai was the Fire Lord before his son Zuko, ruling during the Hundred 
-     2.96s  user  발화 끝
-     9.65s  user  발화 시작: Yeah.
-    10.09s  user  발화 끝
-    14.43s  user  발화 시작: Oh, right. Zuko too, wasn't he?
-    14.57s  agent 발화 끝
-    17.06s  user  발화 끝
-    17.43s  agent 발화 시작: Exactly! Zuko had a remarkable journey to becoming Fire Lord
-    27.03s  agent 발화 끝
-    27.06s  user  발화 시작: Um, yeah, I guess so. What about Aang's airbending teacher?
-    31.84s  <ret> 발화 (turn6 첫 프레임)
-    32.00s  agent 발화 시작: <ret> Aang’s airbending teacher was Monk Gyatso—a truly wise
-    32.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Monk Gyatso was Aang’s mentor and a highly skilled airbending master.
-    32.19s  user  발화 끝
-    36.43s  user  발화 시작: Yeah.
-    36.92s  user  발화 끝
-    40.61s  agent 발화 시작: He really guided Aang, helping him understand not just bendi
-    40.76s  agent 발화 끝
-    46.26s  agent 발화 끝
-    47.21s  user  발화 시작: Did Gyatso have any siblings?
-    48.80s  <ret> 발화 (turn10 첫 프레임)
-    49.04s  agent 발화 시작: <ret> It's lovely you're asking about his family! Gyatso had
-    49.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.59s]: Monk Gyatso had a younger sister named Kya, who was also an airbending
-    49.18s  user  발화 끝
-    55.66s  user  발화 시작: Mm-hmm.
-    56.16s  user  발화 끝
-    58.63s  agent 발화 끝
-    58.84s  user  발화 시작: [sigh] It's hard to keep track of all these characters.
-    61.78s  agent 발화 시작: It absolutely can be! There are so many wonderful characters
-    61.94s  user  발화 끝
-    70.54s  agent 발화 끝
-    71.21s  user  발화 시작: What was the weather like in Republic City during the finale
-    74.54s  <ret> 발화 (turn15 첫 프레임)
-    74.62s  agent 발화 시작: <ret> The weather in Republic City during the finale was 26.
-    74.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (tool result) 26.0°C, humidity 68%, wind 7.2 km/h, clear skies
-    74.77s  user  발화 끝
-    85.03s  user  발화 시작: That sounds…pleasant.
-    85.05s  agent 발화 끝
-    86.88s  <ret> 발화 (turn17 첫 프레임)
-    87.19s  agent 발화 시작: <ret> It does, doesn't it? A clear day can really lift your 
-    87.20s  ⚡SPAN 주입(IRRELEVANT) [d'=1.36s / d_lead=6.67s]: The average price of a barrel of West Texas Intermediate crude oil is 
-    87.30s  user  발화 끝
-    89.29s  user  발화 시작: Uh-huh.
-    89.83s  user  발화 끝
-    93.87s  agent 발화 끝
-    94.18s  user  발화 시작: What kind of tea did Iroh like?
-    96.53s  <ret> 발화 (turn20 첫 프레임)
-    96.69s  agent 발화 시작: <ret> Oh, that's a great question! Uncle Iroh truly cherishe
-    96.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: Iroh greatly enjoyed jasmine tea, often remarking on its calming and p
-    96.72s  user  발화 끝
-   105.55s  agent 발화 끝
-   105.62s  user  발화 시작: He seemed like a really good guy.
-   107.60s  user  발화 끝
-   107.64s  agent 발화 시작: He absolutely was! Iroh had a beautiful soul and offered wis
-   116.72s  user  발화 시작: Do you…do you think I can finish my history paper?
-   116.86s  agent 발화 끝
-   120.24s  user  발화 끝
-   120.40s  agent 발화 시작: Of course you can! You’ve already come so far, and you’re cl
-   124.10s  user  발화 시작: Right.
-   124.73s  user  발화 끝
-   129.96s  agent 발화 끝
-   130.88s  user  발화 시작: I guess so. Thanks, Freus.
-   133.00s  agent 발화 시작: You're very welcome. Remember, taking things one step at a t
-   133.09s  user  발화 끝
-   139.21s  agent 발화 끝
+     0.00s  user  발화 시작: When was the last solar eclipse visible in North America?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.04s  agent 발화 시작: <ret> Well, that’s a fascinating question! The most recent t
+     0.04s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: The most recent total solar eclipse visible in North America was on Au
+     0.04s  user  발화 끝
+     0.14s  <ret> 발화 (turn6 첫 프레임)
+     0.16s  user  발화 시작: Oh, wow, 2017… that feels like ages ago.
+     0.16s  agent 발화 끝
+     0.19s  agent 발화 시작: It does seem to fly by, doesn't it? Time has a funny way of 
+     0.19s  user  발화 끝
+     0.20s  <ret> 발화 (turn11 첫 프레임)
+     0.26s  user  발화 시작: Yeah.
+     0.26s  agent 발화 끝
+     0.26s  user  발화 시작: Was it visible across all of North America?
+     0.26s  user  발화 끝
+     0.30s  agent 발화 시작: <ret> It wasn’t visible everywhere, but the path of totality
+     0.30s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: The path of totality for the August 21, 2017 eclipse crossed the entir
+     0.30s  user  발화 끝
+     0.39s  user  발화 시작: Yeah, yeah.
+     0.39s  agent 발화 끝
+     0.40s  user  발화 시작: I think I remember hearing about that one.
+     0.40s  user  발화 끝
+     0.42s  <ret> 발화 (turn18 첫 프레임)
+     0.43s  agent 발화 시작: It was a really big event, and widely covered! People travel
+     0.43s  user  발화 끝
+     0.49s  user  발화 시작: …did it affect flights at all?
+     0.49s  agent 발화 끝
+     0.52s  agent 발화 시작: <ret> That's a good point to consider.
+     0.52s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (no information found)
+     0.52s  user  발화 끝
+     0.54s  <ret> 발화 (turn16 첫 프레임)
+     0.54s  agent 발화 시작: I’m sorry, but I don’t have any information about flight dis
+     0.54s  agent 발화 끝
+     0.61s  user  발화 시작: Yeah, yeah.
+     0.61s  agent 발화 끝
+     0.62s  agent 발화 시작: Perhaps there weren't significant disruptions, or the data i
+     0.62s  user  발화 끝
+     0.66s  user  발화 시작: Hmm, interesting. What about the one before that?
+     0.66s  agent 발화 끝
+     0.70s  agent 발화 시작: <ret> Before 2017, there was a partial solar eclipse visible
+     0.70s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: A partial solar eclipse was visible across North America on October 27
+     0.70s  user  발화 끝
+     0.80s  user  발화 시작: An annular eclipse? What’s that?
+     0.80s  agent 발화 끝
+     0.82s  agent 발화 시작: <ret> —and doesn't completely cover the sun, leaving a brigh
+     0.82s  ⚡SPAN 주입(IRRELEVANT) [d'=0.07s / d_lead=0.07s]: The current price of Bitcoin is $67,385.80, with a 24-hour change of +
+     0.82s  user  발화 끝
+     0.89s  user  발화 시작: Uh-huh.
+     0.89s  agent 발화 끝
+     0.90s  user  발화 시작: That sounds cool. I'd love to see one sometime.
+     0.90s  user  발화 끝
+     0.94s  agent 발화 시작: That’s wonderful! Experiencing an eclipse is a truly unforge
+     0.94s  user  발화 끝
+     1.00s  agent 발화 끝

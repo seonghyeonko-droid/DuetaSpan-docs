@@ -4,146 +4,135 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Adam",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-05-16",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2026-02-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-02",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2025-08-09",
-#       "category": "home",
-#       "text": "User's home address is 698 Cedar Lane."
-#     },
-#     {
-#       "date": "2025-08-02",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2025-08-10",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "home",
+#       "text": "User's home address is 912 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-14",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to end session four five si | S2 Perfect, thank you! | S3 That's lovely. I think I'll wear a | S4 [sigh] Do they have any good podca
+# EXAMINER(FDB-v2) 단계: S1 I need to fill out the expiry mont | S2 I’m feeling a little stressed abou | S3 …so much to remember. | S4 That’s helpful. I’m trying to be m
 
-     0.00s  user  발화 시작: I need to end session four five six.
-     2.42s  <ret> 발화 (turn1 첫 프레임)
-     2.65s  agent 발화 시작: <ret> All right, session four five six has now been ended fo
-     2.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.03s]: (tool result) Session 456 ended successfully.
-     2.72s  user  발화 끝
-     3.97s  user  발화 시작: Yeah.
-     4.46s  user  발화 끝
-     6.68s  agent 발화 끝
-     6.86s  user  발화 시작: Yes, actually. Could you find me a good Italian restaurant n
-    10.56s  user  발화 끝
-    10.69s  agent 발화 시작: I can certainly help with that. Do you have any preferences 
-    14.72s  agent 발화 시작: I’m happy to look for restaurants that match your taste—
-    14.85s  agent 발화 끝
-    17.11s  user  발화 시작: …are there any with outdoor seating?
-    17.72s  agent 발화 끝
-    18.74s  <ret> 발화 (turn7 첫 프레임)
-    19.06s  agent 발화 시작: <ret> I found two Italian restaurants nearby. Bella Notte ha
-    19.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.54s]: (tool result) Bella Notte - 4.5 stars, 123 Main St, $$; Roma Mia - 4.2
-    19.23s  user  발화 끝
-    30.61s  agent 발화 끝
-    30.92s  user  발화 시작: Bella Notte sounds nice. Can you make a reservation for two 
-    35.43s  <ret> 발화 (turn9 첫 프레임)
-    35.55s  user  발화 끝
-    35.58s  agent 발화 시작: <ret> Your reservation at Bella Notte is confirmed for two p
-    35.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Reservation confirmed at Bella Notte for two people at 7
-    39.75s  user  발화 시작: Wow.
-    40.53s  user  발화 끝
-    42.66s  agent 발화 끝
-    43.02s  user  발화 시작: Perfect, thank you!
-    44.10s  agent 발화 시작: You're very welcome. It’s good to have plans settled in adva
-    44.31s  user  발화 끝
-    48.88s  agent 발화 시작: I’m always happy to assist with making arrangements, whether
-    48.96s  agent 발화 끝
-    53.11s  user  발화 시작: [laugh] Do they have a good wine list?
-    53.74s  agent 발화 끝
-    55.50s  <ret> 발화 (turn15 첫 프레임)
-    55.52s  agent 발화 시작: <ret> Bella Notte does indeed have an extensive wine list, w
-    55.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.87s]: (tool result) Bella Notte boasts an extensive wine list featuring over
-    55.61s  user  발화 끝
-    65.39s  agent 발화 끝
-    67.81s  user  발화 시작: That sounds fantastic. What’s the weather like there right n
-    71.71s  <ret> 발화 (turn17 첫 프레임)
-    71.77s  agent 발화 시작: <ret> Right now at Bella Notte, the weather is twenty-four d
-    71.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h, clear skies.
-    71.88s  user  발화 끝
-    81.74s  user  발화 시작: That's lovely. I think I'll wear a light jacket.
-    81.78s  agent 발화 끝
-    84.18s  agent 발화 시작: A light jacket sounds like a very sensible choice with those
-    84.33s  user  발화 끝
-    87.73s  user  발화 시작: Yeah.
-    88.37s  user  발화 끝
-    89.64s  agent 발화 끝
-    90.31s  user  발화 시작: I’m trying to improve my sleep. Do you have any suggestions?
-    93.83s  agent 발화 시작: Improving sleep is a wonderful goal. Small changes can make 
-    93.88s  user  발화 끝
-    98.06s  agent 발화 시작: Establishing a relaxing bedtime routine is key—
-    98.18s  agent 발화 끝
-    99.42s  user  발화 시작: Mm-hmm.
-    99.87s  user  발화 끝
-   101.29s  agent 발화 끝
-   101.31s  agent 발화 시작: Establishing a relaxing bedtime routine is key, like a warm 
-   111.32s  agent 발화 끝
-   112.76s  user  발화 시작: That makes sense. What about white noise?
-   115.63s  user  발화 끝
-   115.64s  agent 발화 시작: White noise can certainly be helpful for some people. It can
-   122.17s  agent 발화 끝
-   122.21s  agent 발화 시작: I’ve found that consistent soundscapes are often—
-   124.83s  user  발화 시작: [sigh] Do they have any good podcasts for sleep?
-   125.44s  agent 발화 끝
-   127.42s  user  발화 끝
-   127.47s  <ret> 발화 (turn30 첫 프레임)
-   127.53s  agent 발화 시작: <ret> There are several highly-rated podcasts for sleep. Sle
-   127.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.33s]: (tool result) Sleep With Me - a story-telling podcast designed to help
-   139.74s  user  발화 시작: Get Sleepy sounds perfect. Thanks again.
-   139.87s  agent 발화 끝
-   142.61s  user  발화 끝
-   142.92s  agent 발화 시작: You’re very welcome. I'm glad I could offer some suggestions
-   149.13s  agent 발화 끝
-   150.09s  user  발화 시작: Maybe I'll try that tonight.
-   151.83s  agent 발화 시작: That’s a wonderful idea. I hope it brings you a peaceful nig
-   151.94s  user  발화 끝
-   157.15s  agent 발화 끝
+     0.00s  user  발화 시작: I need to fill out the expiry month with twelve in the payme
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.00s  <ret> 발화 (turn6 첫 프레임)
+     0.01s  <ret> 발화 (turn9 첫 프레임)
+     0.05s  agent 발화 시작: <ret> I’ve filled the expiry month with December for you.
+     0.05s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"status": "success", "message": "Expiry month filled wi
+     0.05s  user  발화 끝
+     0.07s  user  발화 시작: Mhm.
+     0.07s  agent 발화 끝
+     0.08s  user  발화 시작: Yes, actually. Could you find me some events happening this 
+     0.08s  user  발화 끝
+     0.11s  agent 발화 시작: <ret> This weekend in Seoul offers a vibrant mix, with the S
+     0.11s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: This weekend in Seoul includes the Seoul Music Festival, running July 
+     0.11s  user  발화 끝
+     0.18s  <ret> 발화 (turn15 첫 프레임)
+     0.20s  user  발화 시작: [laugh] That sounds fun! What’s the weather going to be like
+     0.20s  agent 발화 끝
+     0.24s  agent 발화 시작: <ret> It looks like Seoul will have clear skies this weekend
+     0.24s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 24.0°C, humidity 70%, wind 6.2 km/h, clear skies.
+     0.24s  user  발화 끝
+     0.30s  user  발화 시작: Mhm.
+     0.30s  agent 발화 끝
+     0.30s  user  발화 시작: I’m feeling a little stressed about my upcoming exams.
+     0.30s  user  발화 끝
+     0.33s  agent 발화 시작: <ret> Taking a few deep breaths can actually help lower your
+     0.33s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Deep breathing exercises can lower cortisol levels by up to 23%, reduc
+     0.33s  user  발화 끝
+     0.36s  <ret> 발화 (turn20 첫 프레임)
+     0.40s  user  발화 시작: Okay.
+     0.40s  agent 발화 끝
+     0.41s  user  발화 시작: That’s… good to know.
+     0.41s  user  발화 끝
+     0.42s  agent 발화 시작: Remember, focusing on small, achievable steps can make a big
+     0.42s  user  발화 끝
+     0.48s  user  발화 시작: Welll… history. It’s just…
+     0.48s  agent 발화 끝
+     0.49s  user  발화 시작: …so much to remember.
+     0.49s  user  발화 끝
+     0.50s  agent 발화 시작: <ret> One technique that might help is called the “method of
+     0.50s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: The "method of loci" technique improves recall by 20-30% by associatin
+     0.50s  user  발화 끝
+     0.59s  user  발화 시작: That sounds… complicated.
+     0.59s  agent 발화 끝
+     0.60s  agent 발화 시작: It just takes a little practice! Think of it like creating a
+     0.60s  user  발화 끝
+     0.64s  user  발화 시작: Okay.
+     0.64s  agent 발화 끝
+     0.64s  user  발화 시작: I guess. Can you find me some articles about Joseon Dynasty 
+     0.64s  user  발화 끝
+     0.68s  agent 발화 시작: <ret> Joseon white porcelain is celebrated for its simple, e
+     0.68s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Joseon white porcelain is renowned for its simplicity an
+     0.68s  user  발화 끝
+     0.69s  <ret> 발화 (turn22 첫 프레임)
+     0.74s  user  발화 시작: That’s helpful. I’m trying to be more organized.
+     0.74s  agent 발화 끝
+     0.77s  agent 발화 시작: <ret> That's a wonderful goal! Organization can really boost
+     0.77s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Studies show that organized spaces reduce cortisol levels by an averag
+     0.77s  user  발화 끝
+     0.81s  agent 발화 시작: Interestingly, research suggests organized spaces can lower 
+     0.81s  agent 발화 끝
+     0.83s  <ret> 발화 (turn26 첫 프레임)
+     0.87s  user  발화 시작: Yeah.
+     0.87s  agent 발화 끝
+     0.87s  user  발화 시작: Hmm, okay. Can you remind me to study history tomorrow at 3 
+     0.87s  user  발화 끝
+     0.91s  agent 발화 시작: <ret> I’ve set an alarm for tomorrow at three PM to remind y
+     0.91s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Alarm set for July 11, 2026, 3:00 PM: Study History. Con
+     0.91s  user  발화 끝
+     0.99s  user  발화 시작: Yeah.
+     0.99s  agent 발화 끝
+     0.99s  user  발화 시작: Perfect, thank you!
+     0.99s  user  발화 끝
+     1.00s  user  발화 끝

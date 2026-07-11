@@ -4,121 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Liam",
+#     "name": "Grace",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-30",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-06-10",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "home",
-#       "text": "User's home address is 170 Maple Drive."
+#       "date": "2026-05-14",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-11-24",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-11-22",
+#       "date": "2026-02-12",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-09-08",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2025-11-27",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2025-09-08",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "home",
+#       "text": "User's home address is 911 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-22",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-14",
+#       "date": "2026-06-07",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-08",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, well, I'm trying to find a goo | S2 Bulgogi House sounds good. What's  | S3 I'm actually planning a trip to Ky | S4 I'm also a little worried about th
 
-     0.00s  agent 발화 시작: Hi Liam, I'm Telis. It's wonderful to connect with you today
-     8.39s  agent 발화 끝
-     9.21s  user  발화 시작: Um, well, I'm trying to find a good Korean BBQ place in Sydn
-    15.07s  <ret> 발화 (turn2 첫 프레임)
-    15.47s  agent 발화 시작: <ret> It sounds like you're craving something familiar! I re
-    15.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [2025-11-24] User's favorite cuisine is Korean BBQ.
-    15.55s  user  발화 끝
-    21.58s  agent 발화 끝
-    21.64s  user  발화 시작: Right, yeah. Do you know any good ones around here?
-    24.54s  <ret> 발화 (turn4 첫 프레임)
-    24.62s  agent 발화 시작: <ret> There are a few highly-rated options! Bulgogi House ha
-    24.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (tool result) Korean BBQ restaurants in Sydney: Bulgogi House (4.5 sta
-    24.78s  user  발화 끝
-    31.06s  agent 발화 끝
-    31.56s  user  발화 시작: Bulgogi House sounds good. What's their address?
-    35.37s  <ret> 발화 (turn6 첫 프레임)
-    35.58s  user  발화 끝
-    35.61s  agent 발화 시작: <ret> Bulgogi House is located at 58 Oxford Street, in Darli
-    35.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.82s]: (tool result) Bulgogi House: 58 Oxford Street, Darlinghurst, NSW 2010.
-    42.42s  agent 발화 끝
-    42.77s  user  발화 시작: No, that's okay. I think I'll just walk in.
-    45.57s  agent 발화 시작: That sounds perfect, Liam. Spontaneity can be so refreshing!
-    45.77s  user  발화 끝
-    49.27s  agent 발화 끝
-    50.24s  user  발화 시작: I'm actually planning a trip to Kyoto in August, too.
-    53.57s  <ret> 발화 (turn10 첫 프레임)
-    53.80s  agent 발화 시작: <ret> Oh, Kyoto in August! You've been planning that for a w
-    53.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: [2025-06-07] User is planning a trip to Kyoto in August.
-    53.94s  user  발화 끝
-    55.50s  user  발화 시작: Yeah.
-    56.13s  user  발화 끝
-    59.23s  agent 발화 끝
-    59.51s  user  발화 시작: Yeah, I have. Is it going to be super crowded?
-    62.25s  <ret> 발화 (turn13 첫 프레임)
-    62.56s  user  발화 끝
-    62.57s  agent 발화 시작: <ret> August is a popular time to visit Kyoto, so it will be
-    62.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) August is peak season in Kyoto; expect large crowds at p
-    66.56s  user  발화 시작: Yeah.
-    67.19s  user  발화 끝
-    69.56s  agent 발화 시작: Sometimes a little planning can really help manage those big
-    69.66s  agent 발화 끝
-    77.62s  agent 발화 끝
-    77.77s  user  발화 시작: I'm also a little worried about the heat.
-    79.97s  <ret> 발화 (turn17 첫 프레임)
-    80.08s  user  발화 끝
-    80.20s  agent 발화 시작: <ret> It can get quite warm! The average high in Kyoto in Au
-    80.20s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.87s]: (tool result) Average high in Kyoto in August: 31.0°C, humidity 82%, c
-    88.08s  agent 발화 끝
-    88.13s  user  발화 시작: Wow, okay. That is hot.
-    91.15s  agent 발화 시작: It definitely is warm, Liam. Staying hydrated will be really
-    91.17s  user  발화 끝
-   101.50s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Grace, I'm Sios. It's lovely to meet you. I understand yo
+     5.98s  user  발화 시작: Um, welll… I’m planning a short trip, and I’d like a recomme
+     6.02s  agent 발화 끝
+    12.74s  user  발화 끝
+    12.85s  agent 발화 시작: A relaxing place sounds wonderful. Do you have any preferenc
+    14.81s  user  발화 시작: Mm-hmm.
+    15.58s  user  발화 끝
+    18.70s  <ret> 발화 (turn4 첫 프레임)
+    18.86s  agent 발화 시작: <ret> I recall you enjoy birdwatching.
+    18.86s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.26s]: [2026-05-14] User is into birdwatching. That could be a wonderful focu
+    18.96s  agent 발화 끝
+    20.12s  user  발화 시작: Yeah.
+    20.57s  user  발화 끝
+    21.12s  agent 발화 끝
+    22.52s  user  발화 시작: Oh, yes! That’s right, I do love birdwatching. Where would y
+    27.27s  <ret> 발화 (turn7 첫 프레임)
+    27.43s  agent 발화 시작: <ret> Corsica, France, is known for its diverse birdlife and
+    27.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Corsica, France: Known for its diverse birdlife, stunning landscapes, 
+    27.52s  user  발화 끝
+    30.76s  user  발화 시작: Okay.
+    31.25s  user  발화 끝
+    35.16s  agent 발화 끝
+    35.55s  user  발화 시작: Corsica… that sounds lovely!
+    38.80s  user  발화 끝

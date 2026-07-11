@@ -1,63 +1,61 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Friami, a practical and reassuring counselor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Dria, a practical and reassuring life coach who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Elsa",
+    "name": "Owen",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "late 30s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-29",
+      "date": "2026-03-31",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-03-02",
+      "category": "home",
+      "text": "User's home address is 450 Maple Drive."
+    },
+    {
+      "date": "2025-10-22",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-10-12",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-22",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-07-26",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-06-21",
+      "date": "2025-07-10",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in December."
+      "text": "User is planning a trip to Kyoto in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-05",
-      "title": "Comparing gym memberships",
+      "date": "2025-07-15",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-03-05",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the Olympic Games officially separate their summer and winter events?
-[  5.04s][moshi] ⟨ret@4.72s⟩ ⟦⚡SPAN@5.04s: The International Olympic Committee formally separated the Summer and Winter Olympic Games in 1924 after the C⟧ Well, it seems the International Olympic Committee officially made that split in nineteen twenty-four, following the Winter Games at Chamonix. It’s good to have clarity on these historical milestones, isn’t it?
+[  0.00s][user ] Who won the Pulitzer…
+[  2.85s][user ] …Prize for Music in ⟨ret@4.76s⟩ 2018?
+[  5.08s][moshi] ⟦⚡SPAN@5.08s: Kendrick Lamar was awarded the 2018 Pulitzer Prize for Music for his album “DAMN.”⟧ Well, it seems Kendrick Lamar received the 2018 Pulitzer Prize for Music, recognizing his album “DAMN.” It’s wonderful to see such artistry acknowledged.

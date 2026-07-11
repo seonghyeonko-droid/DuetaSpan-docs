@@ -1,66 +1,70 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Runaus, a warm and attentive counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Sellara, a thoughtful and soft-spoken personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Taylor",
+    "name": "Julia",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-01",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-05-16",
+      "category": "home",
+      "text": "User's home address is 51 Pine Court."
     },
     {
-      "date": "2026-01-21",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-09-06",
+      "date": "2026-03-02",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-07-27",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-12-25",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-11-20",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-05",
-      "title": "Comparing gym memberships",
+      "date": "2025-12-20",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-07-29",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Taylor, I'm Runaus. It's lovely to meet you.
-[  1.52s][user ] «backchannel» Yeah, yeah.
-[  3.26s][user ] Hi Runaus, it's good to meet you too. What time is it right now?
-[  7.33s][moshi] ⟨ret@7.17s⟩ ⟦⚡SPAN@7.33s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Toronto, Canada right now.⟧ It’s currently 2:37 PM in Toronto, Canada. A perfect time for a little self-care, perhaps?
+[  0.00s][moshi] Hi Julia, I'm Sellara. It’s lovely to connect with you today.
+[  4.22s][user ] Um, what time is it right now? I completely lost track.
+[  8.58s][moshi] ⟨ret@8.42s⟩ ⟦⚡SPAN@8.58s: (tool result) It is Friday, July 10, 2026 at 2:38 PM in America/Los Angeles right now.⟧ It’s currently 2:38 PM in San Francisco, Julia. A peaceful afternoon, wouldn’t you say?
       CALL: {"function": "get_time", "arguments": {}}
-[  9.34s][user ] «backchannel» Nice.
-[ 13.97s][user ] That's good to know. I was wondering, do you remember what I said about my ⟨ret@19.40s⟩ cat?
-[ 19.64s][moshi] ⟦⚡SPAN@19.64s: [2025-09-06] User has a tabby cat named Luna.⟧ Yes, I do! You have a beautiful tabby cat named Luna.
-[ 24.72s][user ] Luna's been getting into everything.
-[ 27.00s][moshi] «interrupted» It’s quite common for cats to explore—
-[ 29.00s][user ] «interrupts_prev» …do you have any advice for keeping a curious cat entertained?
-[ 33.52s][moshi] Ah, a very good question! Keeping a curious cat occupied is a common challenge. Enrichment is key—
-[ 40.70s][moshi] Providing Luna with puzzle toys, scratching posts, and dedicated playtime can really help redirect her energy and satisfy her natural instincts.
+[ 15.36s][user ] Oh, that’s good to know. And, uh, remind me… what was I planning for ⟨ret@20.50s⟩ March?
+[ 20.74s][moshi] ⟦⚡SPAN@20.74s: [2025-11-20] User is planning a trip to New Zealand in March.⟧ You're planning a trip to New Zealand in March, Julia. A beautiful destination for springtime.
+[ 22.60s][user ] «backchannel» Mm-hmm.
+[ 26.93s][user ] New Zealand… right. Is Bella doing ⟨ret@30.21s⟩ okay?
+[ 30.45s][moshi] ⟦⚡SPAN@30.45s: [2025-12-25] User has a Siamese cat named Bella.⟧ You have a Siamese cat named Bella. Such a lovely companion, I hope she’s well.

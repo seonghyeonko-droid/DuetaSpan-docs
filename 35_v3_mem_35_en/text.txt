@@ -1,95 +1,89 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Telis, a upbeat and supportive wellness coach who helps people with family and relationships. <system>
+SYSTEM: <system> You are Sios, a practical and reassuring life coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Liam",
+    "name": "Grace",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-03-30",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-06-10",
+      "category": "work",
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-03-15",
-      "category": "home",
-      "text": "User's home address is 170 Maple Drive."
+      "date": "2026-05-14",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-11-24",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-11-22",
+      "date": "2026-02-12",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-09-08",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2025-11-27",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-06-07",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
+      "date": "2025-09-08",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-07-24",
+      "category": "home",
+      "text": "User's home address is 911 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-22",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-14",
+      "date": "2026-06-07",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Liam, I'm Telis. It's wonderful to connect with you today! I'm here to support your well-being, especially when it comes to relationships.
-[  9.21s][user ] Um, well, I'm trying to find a good Korean BBQ place in ⟨ret@15.07s⟩ Sydney.
-[ 15.47s][moshi] ⟦⚡SPAN@15.47s: [2025-11-24] User's favorite cuisine is Korean BBQ.⟧ It sounds like you're craving something familiar! I remember you mentioned loving Korean BBQ.
-[ 21.64s][user ] Right, yeah. Do you know any good ones around here?
-[ 24.62s][moshi] ⟨ret@24.54s⟩ ⟦⚡SPAN@24.62s: (tool result) Korean BBQ restaurants in Sydney: Bulgogi House (4.5 stars, 120 reviews), Seoul Food (4.2 stars,⟧ There are a few highly-rated options! Bulgogi House has the most reviews, with a 4.5-star rating.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "location": "Sydney"}}
-[ 31.56s][user ] Bulgogi House sounds good. What's their address?
-[ 35.61s][moshi] ⟨ret@35.37s⟩ ⟦⚡SPAN@35.61s: (tool result) Bulgogi House: 58 Oxford Street, Darlinghurst, NSW 2010.⟧ Bulgogi House is located at 58 Oxford Street, in Darlinghurst. I can help you reserve a table if you'd like.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Bulgogi House", "location": "Sydney"}}
-[ 42.77s][user ] No, that's okay. I think I'll just walk in.
-[ 45.57s][moshi] That sounds perfect, Liam. Spontaneity can be so refreshing!
-[ 50.24s][user ] I'm actually planning a trip to Kyoto in August, ⟨ret@53.57s⟩ too.
-[ 53.80s][moshi] ⟦⚡SPAN@53.81s: [2025-06-07] User is planning a trip to Kyoto in August.⟧ Oh, Kyoto in August! You've been planning that for a while, which is great – preparation is key.
-[ 55.50s][user ] «backchannel» Yeah.
-[ 59.51s][user ] Yeah, I have. Is it going to be super ⟨ret@62.25s⟩ crowded?
-[ 62.57s][moshi] ⟦⚡SPAN@62.57s: (tool result) August is peak season in Kyoto; expect large crowds at popular temples and gardens. Consider vis⟧ August is a popular time to visit Kyoto, so it will be quite busy. Visiting early or on weekdays could help.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"city": "Kyoto", "month": "August", "year": "2026"}}
-[ 66.56s][user ] «backchannel» Yeah.
-[ 69.56s][moshi] Sometimes a little planning can really help manage those bigger crowds, don't you think? It allows you to enjoy the experience more fully.
-[ 77.77s][user ] I'm also a little worried about the heat.
-[ 80.20s][moshi] ⟨ret@79.97s⟩ ⟦⚡SPAN@80.20s: (tool result) Average high in Kyoto in August: 31.0°C, humidity 82%, chance of rain 20%.⟧ It can get quite warm! The average high in Kyoto in August is 31 degrees Celsius, with about 82% humidity.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Kyoto", "month": "August"}}
-[ 88.13s][user ] Wow, okay. That is hot.
-[ 91.15s][moshi] It definitely is warm, Liam. Staying hydrated will be really important, and seeking shade when you can. Perhaps plan indoor activities for the hottest parts of the day?
+[  0.00s][moshi] Hi Grace, I'm Sios. It's lovely to meet you. I understand you’re looking for a little guidance today?
+[  5.98s][user ] Um, welll… I’m planning a short trip, and I’d like a recommendation for a relaxing place.
+[ 12.85s][moshi] A relaxing place sounds wonderful. Do you have any preferences for the type of destination?
+[ 14.81s][user ] «backchannel» Mm-hmm.
+[ 18.86s][moshi] ⟨ret@18.70s⟩ ⟦⚡SPAN@18.86s: [2026-05-14] User is into birdwatching. That could be a wonderful focus for a relaxing trip, don't you think?⟧ I recall you enjoy birdwatching.
+[ 20.12s][user ] «backchannel» Yeah.
+[ 22.52s][user ] Oh, yes! That’s right, I do love birdwatching. Where would you ⟨ret@27.27s⟩ suggest?
+[ 27.43s][moshi] ⟦⚡SPAN@27.43s: Corsica, France: Known for its diverse birdlife, stunning landscapes, and peaceful atmosphere. Corsica Tourism⟧ Corsica, France, is known for its diverse birdlife and peaceful atmosphere. It offers a really stunning landscape as well.
+[ 30.76s][user ] «backchannel» Okay.
+[ 35.55s][user ] Corsica… that sounds lovely!

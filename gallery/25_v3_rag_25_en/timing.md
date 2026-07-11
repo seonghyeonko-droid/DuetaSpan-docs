@@ -4,43 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Hana",
+#     "name": "Henri",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-11-20",
-#       "category": "home",
-#       "text": "User's home address is 274 Cedar Lane."
+#       "date": "2026-02-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2025-10-04",
+#       "date": "2025-12-12",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-05-29",
+#       "date": "2025-12-04",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-11-01",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-28",
+#       "date": "2026-02-10",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-23",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -50,75 +63,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about the Walloon Le | S2 I wonder what the weather was like | S3 Stalingrad… that sounds awful. Was | S4 Sounds good. Is it playing anywher
+# EXAMINER(FDB-v2) 단계: S1 I’ve been thinking about intention | S2 That does sound nice. Um, what abo | S3 Yoga… hmm. I don’t know. What abou | S4 Huh. Interesting. Okay, one last t
 
-     0.00s  user  발화 시작: I was reading about the Walloon Legion. What war did they fi
-     2.71s  <ret> 발화 (turn1 첫 프레임)
-     2.87s  agent 발화 시작: <ret> That unit, the Walloon Legion, saw action during World
-     2.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: The Walloon Legion was a volunteer unit formed in 1941 that fought on 
-     3.05s  user  발화 끝
-     5.03s  user  발화 시작: Yeah.
-     5.33s  user  발화 끝
-     9.86s  agent 발화 끝
-    10.04s  user  발화 시작: Um, World War II… that was a big one. What year did it actua
-    14.30s  <ret> 발화 (turn4 첫 프레임)
-    14.46s  agent 발화 시작: <ret> World War II began on September 1, 1939, when Germany 
-    14.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: World War II is generally accepted to have begun on September 1, 1939,
-    14.76s  user  발화 끝
-    17.12s  user  발화 시작: Really?
-    17.75s  user  발화 끝
-    20.81s  agent 발화 끝
-    21.43s  user  발화 시작: September first… I think my grandmother always said she reme
-    25.44s  agent 발화 시작: It must have been a very impactful time for her, and for so 
-    25.54s  user  발화 끝
-    29.47s  agent 발화 끝
-    29.74s  user  발화 시작: I wonder what the weather was like that day? In Warsaw, spec
-    32.39s  <ret> 발화 (turn9 첫 프레임)
-    32.71s  agent 발화 시작: <ret> The weather in Warsaw on September 1, 1939, was 16.0°C
-    32.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Weather in Warsaw on September 1, 1939: 16.0°C, humidity
-    32.84s  user  발화 끝
-    40.12s  agent 발화 끝
-    40.96s  user  발화 시작: —Oh, that’s interesting. I didn’t realize it was so mild.
-    43.42s  agent 발화 시작: It’s often surprising how everyday conditions carry on even 
-    43.45s  user  발화 끝
-    46.79s  user  발화 시작: Yeah, yeah.
-    47.42s  user  발화 끝
-    48.51s  agent 발화 끝
-    48.70s  user  발화 시작: What about…uh…later in the war? What was the biggest battle?
-    52.83s  <ret> 발화 (turn14 첫 프레임)
-    53.15s  agent 발화 시작: <ret> The Battle of Stalingrad, from August 1942 to February
-    53.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: The Battle of Stalingrad, lasting from August 23, 1942, to February 2,
-    53.29s  user  발화 끝
-    55.65s  user  발화 시작: Exactly.
-    56.28s  user  발화 끝
-    61.18s  user  발화 시작: Stalingrad… that sounds awful. Was it really *that* much big
-    61.21s  agent 발화 끝
-    66.13s  <ret> 발화 (turn17 첫 프레임)
-    66.36s  user  발화 끝
-    66.44s  agent 발화 시작: <ret> Stalingrad involved over two million soldiers and roug
-    66.45s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.39s]: The Battle of Stalingrad involved over two million combatants and resu
-    74.83s  agent 발화 끝
-    75.27s  user  발화 시작: Wow. Two *million*? That’s… unbelievable.
-    79.99s  user  발화 끝
-    80.07s  agent 발화 시작: It truly was a conflict of immense scale and suffering, a tu
-    81.39s  user  발화 시작: Uh-huh.
-    81.80s  user  발화 끝
-    84.61s  agent 발화 끝
-    84.90s  user  발화 시작: Could you find me some movies about the Eastern Front?
-    86.75s  <ret> 발화 (turn22 첫 프레임)
-    87.15s  agent 발화 시작: <ret> I found "Enemy at the Gates" from 2001, a war drama wi
-    87.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) "Enemy at the Gates" (2001) - War, Drama, History - 131 
-    87.30s  user  발화 끝
-    92.05s  user  발화 시작: Wow.
-    92.87s  user  발화 끝
-    93.96s  agent 발화 끝
-    94.66s  user  발화 시작: Sounds good. Is it playing anywhere near me?
-    96.63s  <ret> 발화 (turn25 첫 프레임)
-    96.79s  agent 발화 시작: <ret> Unfortunately, “Enemy at the Gates” isn’t currently sh
-    96.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) No showings found for "Enemy at the Gates" within 25km.
-    96.92s  user  발화 끝
-   101.42s  agent 발화 끝
-   101.89s  user  발화 시작: Oh, that’s a shame. Well, thank you, Drul.
-   104.10s  agent 발화 시작: You’re very welcome. Planning a little remembrance can be a 
-   104.25s  user  발화 끝
-   109.24s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been thinking about intentional communities… what even 
+     4.17s  user  발화 끝
+     4.43s  agent 발화 시작: Cohousing is a collaborative housing model, designed and man
+    11.32s  user  발화 시작: Uh-huh.
+    11.77s  user  발화 끝
+    16.40s  agent 발화 끝
+    16.40s  user  발화 시작: That sounds… nice, I guess. Where did this idea even come fr
+    20.46s  <ret> 발화 (turn4 첫 프레임)
+    20.54s  agent 발화 시작: <ret> The idea for cohousing actually started in Denmark bac
+    20.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: Cohousing originated in Denmark in the 1960s as a response to increasi
+    20.56s  user  발화 끝
+    33.48s  agent 발화 끝
+    33.81s  user  발화 시작: Denmark? Huh. Is there a famous example I could look at?
+    37.08s  <ret> 발화 (turn6 첫 프레임)
+    37.40s  agent 발화 시작: <ret> One of the most well-known examples, Sættedammen, is l
+    37.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: Sættedammen in Denmark is often cited as the first modern cohousing co
+    37.41s  user  발화 끝
+    41.27s  user  발화 시작: Yeah, yeah.
+    41.99s  user  발화 끝
+    43.71s  user  발화 시작: 1972… that’s a long time ago. What’s the weather like there 
+    44.21s  agent 발화 끝
+    47.17s  <ret> 발화 (turn9 첫 프레임)
+    47.33s  agent 발화 시작: <ret> Currently in Denmark, it’s twenty-one degrees Celsius 
+    47.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Denmark: 21.0°C, humidity 68%, wind 4.1 km/h, clear skie
+    47.55s  user  발화 끝
+    57.63s  user  발화 시작: That does sound nice. Um, what about here? What time is it?
+    57.82s  agent 발화 끝
+    60.79s  <ret> 발화 (turn11 첫 프레임)
+    61.11s  agent 발화 시작: <ret> It is currently two forty-seven PM in Asia/Seoul on Fr
+    61.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul rig
+    61.33s  user  발화 끝
+    70.80s  agent 발화 끝
+    73.07s  user  발화 시작: Okay, good to know. I'm trying to get more sleep. Do you hav
+    76.54s  user  발화 끝
+    76.64s  agent 발화 시작: Creating a consistent bedtime routine is a wonderful start. 
+    79.69s  user  발화 시작: Okay.
+    81.25s  user  발화 끝
+    84.75s  user  발화 시작: Like what, exactly? I've tried reading, but I just end up re
+    84.94s  agent 발화 끝
+    88.88s  user  발화 끝
+    89.01s  agent 발화 시작: That’s quite common! Gentle stretching, a warm bath, or list
+    95.53s  user  발화 시작: Stretching sounds… okay. Is there a good guided stretching v
+    96.05s  agent 발화 끝
+   100.15s  <ret> 발화 (turn18 첫 프레임)
+   100.23s  agent 발화 시작: <ret> Yoga With Adriene has a twenty-minute evening yoga rou
+   100.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: Yoga With Adriene has a 20-minute evening yoga routine for better slee
+   100.44s  user  발화 끝
+   111.45s  agent 발화 끝
+   111.97s  user  발화 시작: Yoga… hmm. I don’t know. What about white noise?
+   115.34s  user  발화 끝
+   115.87s  agent 발화 시작: White noise can be incredibly effective for masking disrupti
+   123.51s  agent 발화 끝
+   123.87s  user  발화 시작: Can you *play* some white noise for me?
+   125.85s  <ret> 발화 (turn22 첫 프레임)
+   126.09s  agent 발화 시작: <ret> I found a ten-hour white noise track on YouTube from R
+   126.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.65s]: (tool result) Relaxing White Noise - 10 Hours | YouTube - A long-durat
+   126.32s  user  발화 끝
+   135.74s  agent 발화 끝
+   137.37s  user  발화 시작: That sounds good, I’ll look it up. What about… sleep scents?
+   142.28s  agent 발화 시작: Sleep scents are absolutely a thing! Lavender and chamomile 
+   142.36s  user  발화 끝
+   147.36s  user  발화 시작: Okay.
+   148.50s  user  발화 끝
+   149.97s  agent 발화 끝
+   150.27s  user  발화 시작: Lavender… I think my grandmother used to have lavender sache
+   155.59s  <ret> 발화 (turn27 첫 프레임)
+   155.84s  agent 발화 시작: <ret> According to the National Institutes of Health, studie
+   155.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.41s]: Studies show lavender essential oil can improve sleep quality and redu
+   156.01s  user  발화 끝
+   159.31s  user  발화 시작: Okay.
+   159.94s  user  발화 끝
+   167.25s  agent 발화 끝
+   167.84s  user  발화 시작: Huh. Interesting. Okay, one last thing… I keep waking up in 
+   174.10s  user  발화 끝
+   174.15s  agent 발화 시작: Waking during the night is common. Try to avoid looking at t
+   181.66s  agent 발화 끝
+   182.12s  user  발화 시작: That’s… good advice, actually. I always check the time.
+   185.08s  user  발화 끝
+   185.50s  agent 발화 시작: It’s a natural reaction, but often counterproductive. Focus 
+   187.44s  user  발화 시작: Yeah.
+   187.80s  user  발화 끝
+   191.85s  agent 발화 끝
+   192.62s  user  발화 시작: Deep breaths… okay. I’ll try that. Thanks, Klioen.
+   196.18s  user  발화 끝
+   196.60s  agent 발화 시작: You’re very welcome. Prioritizing restful sleep is a gift yo
+   206.43s  agent 발화 끝

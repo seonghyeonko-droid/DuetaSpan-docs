@@ -1,93 +1,71 @@
 v3_mcp_01_ko src=mcp style=v2
-SYSTEM: <system> 당신은 Elaeon이며, 여행 및 휴가 계획을 돕는 사려 깊고 부드러운 말투의 조력자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 대해 사람들을 돕는 호기심 많고 공감적인 웰니스 코치 크라리스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "재민",
+    "name": "혜온",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "male",
     "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-03-23",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     },
     {
-      "date": "2026-03-03",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-02-28",
+      "date": "2026-03-17",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-11-13",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-03-13",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-10-25",
+      "date": "2025-05-30",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-26",
-      "title": "Researching a used car",
+      "date": "2026-01-17",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 에이전트님, 아냐 샤르마 선생님이랑 이월 이십구일에 아침 아홉시에 예약 좀 ⟨ret@5.73s⟩ 부탁드려요.
-[  5.96s][moshi] ⟦⚡SPAN@5.97s: (tool result) {"appointment id": "AS22909", "provider name": "Anya Sharma", "date": "2026-02-29", "time": "09:⟧ 아냐 샤르마 선생님과 이월 이십구일 아침 아홉시에 예약이 확정되었습니다. 예약 번호는 에이 에스 이 이 구 공 구입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Anya Sharma", "date": "2026-02-29", "time": "09:00"}}
-[ 16.52s][user ] 네, 알겠습니다. 혹시 다른 선생님도 예약 가능한지 알아봐 주시겠어요?
-[ 22.32s][moshi] 다른 선생님의 예약 가능 여부를 확인해 드리겠습니다. 어떤 선생님을 찾으시나요?
-[ 27.56s][user ] 음… 피부과 전문의 중에서 괜찮은 분 있으면 추천해 주세요. ⟨ret@31.26s⟩
-[ 31.41s][moshi] ⟦⚡SPAN@31.42s: (tool result) {"providers": [{"name": "Dr. Lee Min-jun", "specialty": "dermatologist", "rating": 4.8}, {"name"⟧ 피부과 전문의로는 이민준 선생님과 박수진 선생님이 계십니다. 이민준 선생님은 별점 사 점 팔점이고, 박수진 선생님은 사 점 오점입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"specialty": "dermatologist"}}
-[ 37.00s][user ] «backchannel» 그래.
-[ 42.24s][user ] 이민준 선생님이 별점이 더 높네요. 그분으로 예약해 주세요. 다음 주 화요일 오후 두시에 부탁드려요.
-[ 48.98s][moshi] ⟨ret@48.91s⟩ ⟦⚡SPAN@48.99s: (tool result) {"appointment id": "LMJ030314", "provider name": "Lee Min-jun", "date": "2026-03-03", "time": "1⟧ 이민준 선생님과 다음 주 화요일 오후 두시에 예약이 확정되었습니다. 예약 번호는 엘 엠 제이 공 삼 공 삼 일 사입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Lee Min-jun", "date": "2026-03-03", "time": "14:00"}}
-[ 58.41s][user ] 좋아요. 그런데 혹시 예약 변경은 어떻게 해야 하죠?
-[ 62.83s][moshi] 예약 변경은 저희 웹사이트나 앱을 통해 직접 하실 수 있습니다. 아니면 저에게 다시 말씀해 주셔도 됩니다.
-[ 69.96s][user ] 웹사이트는 어디서 찾을 수 ⟨ret@72.01s⟩ 있나요?
-[ 72.40s][moshi] ⟦⚡SPAN@72.41s: (tool result) The official website for Services is https://www.services.com, providing booking, provider infor⟧ 서비스 웹사이트는 services.com입니다. 예약, 의료진 정보, 고객 지원을 이용하실 수 있습니다.
-      CALL: {"function": "search", "arguments": {"query": "services website"}}
-[ 76.89s][user ] «backchannel» 음.
-[ 78.44s][moshi] 웹사이트에서 ‘My Appointments’ 메뉴를 클릭하시면 예약 변경이 가능합니다.
-[ 83.80s][user ] 아, 그 메뉴가 있군요. 혹시 예약 취소하면 수수료가 있나요?
-[ 87.30s][moshi] 예약 취소 수수료는 예약 시간까지 남은 시간에 따라 달라집니다. 스물네시간 전까지 취소하시면 수수료는 없습니다.
-[ 95.05s][user ] 스물네시간 전이군요. 알겠습니다. 그럼, 혹시 예약 확인 메일도 받을 수 있나요?
-[101.00s][moshi] 네, 예약 확인 메일을 보내드리겠습니다. 이메일 주소를 알려주시겠어요?
-[105.73s][user ] 제 이메일 주소는 kim.minji@example.com입니다.
-[111.47s][moshi] kim.minji@example.com으로 예약 확인 메일을 발송했습니다. 메일이 도착하지 않으면 알려주세요.
-[118.51s][user ] 네, 감사합니다. 그런데—
-[120.62s][user ] … 혹시 이민준 선생님은 주로 어떤 치료를 전문으로 하시나요?
-[124.95s][moshi] 이민준 선생님은 피부 레이저 치료와 여드름 치료를 전문으로 하십니다. 특히 피부 탄력 개선에 효과가 좋다고 알려져 있습니다.
-[133.49s][user ] 피부 탄력 개선이요? 음… 제 피부가 좀 처지는 것 같아서 관심이 가네요.
-[139.24s][moshi] 피부 탄력 개선을 위한 다양한 레이저 시술을 받으실 수 있습니다. 이민준 선생님과 상담해 보시는 것을 추천드립니다.
-[144.37s][user ] «backchannel» 어.
-[146.76s][user ] 네, 알겠습니다. 예약 당일에 뭘 준비해 가야 할까요?
-[150.92s][moshi] 예약 당일에는 신분증과 현재 복용 중인 약이 있다면 약 정보나 처방전을 지참해 오시는 것이 좋습니다.
-[158.22s][user ] 신분증이랑 약 정보군요. 잊지 않도록 해야겠네요.
-[161.97s][moshi] 네, 예약 당일 편안하게 방문해 주세요.
+[  0.00s][user ] 상하이 좌표 삼십일 점 이 삼…
+[  3.75s][user ] …백이십일 점 사 칠 주변 교통 상황 좀 알려줄 수 ⟨ret@7.35s⟩ 있어?
+[  7.58s][moshi] ⟦⚡SPAN@7.59s: (tool result) Moderate traffic congestion. Estimated travel time is 25 minutes.⟧ 지금 상하이 그쪽은 교통이 약간 혼잡해요. 예상 이동 시간은 이십오분 정도 될 것 같아요.
+      CALL: {"function": "map_road_traffic", "arguments": {"latitude": "31.2304", "longitude": "121.4737"}}
+[ 11.59s][user ] «backchannel» 와.
+[ 14.43s][user ] 이십오분이라고? 지금 퇴근 시간인데, 더 걸릴 것 ⟨ret@18.18s⟩ 같은데…
+[ 18.57s][moshi] ⟦⚡SPAN@18.58s: (tool result) Route calculated. Distance: 0 km. Travel time: 25 minutes with moderate traffic.⟧ 네, 맞아요. 현재 계산된 경로대로면 이십오분 정도 걸릴 것 같아요. 교통 상황이 조금씩 변할 수 있으니 참고해 주세요.
+      CALL: {"function": "map_directions", "arguments": {"origin": "31.2304, 121.4737", "destination": "31.2304, 121.4737"}}
+[ 27.90s][user ] 음… 혹시 다른 길로 가면 더 빠를까?
+[ 30.64s][moshi] 지금 다른 길을 찾아서 비교해 보는 건 어떨까요? 더 빠른 경로가 있다면 알려드릴게요.

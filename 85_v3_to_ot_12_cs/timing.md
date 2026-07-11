@@ -4,71 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Nora",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "date": "2026-05-28",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-06-16",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-03-15",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-05-25",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-03-28",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-09",
-#       "title": "Researching a used car",
+#       "date": "2026-03-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, "Three Little Pigs"라는 노래를 부 | S2 만화 영화 사운드트랙인 줄 알았어요. | S3 여보, 쓰레기 버렸어요? | S4 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 
+# EXAMINER(FDB-v2) 단계: S1 어떤 사람이 유명한 일기를 썼어… | S2 …런던 대화재에 대해서? | S3 오, 흥미롭네. 그 사람이 화재 현장에 실제로 있었어? | S4 …화재 원인에 대해서는 안 썼어? 그냥 화재가 뭐 했는지 쓴 
 
-     0.00s  user  발화 시작: 안녕하세요, "Three Little Pigs"라는 노래를 부른 가수가 누구인지 아세요? 계속 생각나서요.
-     6.24s  <ret> 발화 (turn1 첫 프레임)
-     6.38s  user  발화 끝
-     6.55s  agent 발화 시작: <ret> 아, 그거 재미있는 노래죠! 사실 Green Jellÿ라는 패러디 메탈 밴드가 부른 노래예요.
-     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Green Jellÿ is an American parody metal band formed in 1989.
-    12.79s  user  발화 시작: Green Jellÿ요? 좀… 뜻밖인데요. 제가…
-    12.80s  agent 발화 끝
-    16.77s  user  발화 끝
-    18.62s  user  발화 시작: 만화 영화 사운드트랙인 줄 알았어요.
-    20.88s  agent 발화 시작: 하하, 정말 놀랍죠, 그렇지 않나요? 때로는 가장 기억에 남는 노래가 숨겨진 기원을 가지고 있기도 해요.
-    20.93s  user  발화 끝
-    28.58s  user  발화 시작: 여보, 쓰레기 버렸어요?
-    28.80s  agent 발화 끝
-    30.43s  user  발화 시작: 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 유명한가요?
-    30.57s  user  발화 끝
-    34.76s  <ret> 발화 (turn7 첫 프레임)
-    35.16s  agent 발화 시작: <ret> 음, 그들은 천구백구십이년에 첫 앨범을 발표했는데, “Three Little Pigs”와 “Cer
-    35.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it
-    35.29s  user  발화 끝
-    43.88s  agent 발화 끝
+     0.00s  user  발화 시작: 어떤 사람이 유명한 일기를 썼어…
+     3.10s  user  발화 끝
+     4.28s  user  발화 시작: …런던 대화재에 대해서?
+     5.65s  <ret> 발화 (turn2 첫 프레임)
+     5.97s  agent 발화 시작: <ret> 아, 정말 흥미로운 이야기네요. 사무엘 피피스가 17세기 런던의 삶을 자세히 기록한 아주 유명한 
+     5.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: Samuel Pepys was an English naval administrator and Member of Parliame
+     6.12s  user  발화 끝
+    10.74s  user  발화 시작: 응.
+    11.23s  user  발화 끝
+    14.11s  user  발화 시작: 오, 흥미롭네. 그 사람이 화재 현장에 실제로 있었어?
+    14.17s  agent 발화 끝
+    17.45s  <ret> 발화 (turn5 첫 프레임)
+    17.85s  agent 발화 시작: <ret> 네, 그랬어요. 피피스는 일기에 대화재 당시의 상황을 기록했고, 화재가 어떻게 진행되었고 도시에는
+    17.85s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.36s]: Pepys recorded the events of the Great Fire of London in his diary, de
+    18.05s  user  발화 끝
+    26.82s  <ret> 발화 (turn6 첫 프레임)
+    27.13s  agent 발화 시작: <ret> 정말 생생하게 경험을 담아낸 게 놀라워요. 일기는 천육백육십구 년부터 1669년까지의 기록을 담고
+    27.21s  agent 발화 끝
+    27.94s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.87s]: The diary covers the years 1660 to 1669, and provides a detailed and p
+    39.22s  user  발화 시작: …화재 원인에 대해서는 안 썼어? 그냥 화재가 뭐 했는지 쓴 거야?
+    39.93s  agent 발화 끝
+    43.28s  <ret> 발화 (turn8 첫 프레임)
+    43.44s  agent 발화 시작: <ret> 원인에 집중하지 않았고, 오히려 사건이 전개되는 과정, 사람들의 공포, 그리고 파괴에 대해 썼어요
+    43.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: Pepys’s diary entries about the fire do not specifically detail its ca
+    43.61s  user  발화 끝
+    52.43s  agent 발화 끝

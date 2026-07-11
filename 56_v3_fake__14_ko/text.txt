@@ -1,108 +1,86 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 학습 및 동기 부여 유지에 도움을 주는 호기심 많고 지지적이며 긍정적인 조언자 Freus입니다. <system>
+SYSTEM: <system> 당신은 자리엔이며, 생산성과 일상 루틴 관리를 돕는 호기심 많고 지지적인 개인 가이드입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "태경",
+    "name": "세린",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-05-18",
+      "date": "2026-03-28",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-12-07",
+      "date": "2025-10-21",
       "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
+      "text": "User's home address is 부산 해운대구 해운대로 570."
     },
     {
-      "date": "2025-11-25",
+      "date": "2025-10-01",
       "category": "pet",
       "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-11-14",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-08-06",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-06-20",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-07-03",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-10",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-02-02",
+      "date": "2026-04-26",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-27",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 아, 코라 전설에 나오는 불의 군주는 누구야? ⟨ret@2.41s⟩
-[  2.57s][moshi] ⟦⚡SPAN@2.57s: Ozai was the Lord of Fire and the tyrannical ruler of the Fire Nation during the Hundred Year War.⟧ 불의 군주는 오자이였는데, 백년 전쟁 동안 화국을 폭압적으로 다스렸다고 해. 꽤 강했던 분이시지.
-[  6.52s][user ] «backchannel» 응.
-[ 11.04s][user ] 백년 전쟁이 언제 끝났는데?
-[ 13.15s][moshi] ⟨ret@13.00s⟩ ⟦⚡SPAN@13.16s: The Hundred Year War officially ended on July 4, 176 AG, with Fire Lord Ozai’s defeat by Avatar Aang.⟧ 백년 전쟁은 서기 백칠십육년 칠월 사일에, 아앙 아바타가 오자이 군주를 물리치면서 공식적으로 끝났어.
-[ 21.01s][moshi] ⟨ret@20.61s⟩ ⟦⚡SPAN IRRELEVANT@21.01s: The current stock price of Tesla (TSLA) is $252.48 as of July 10, 2026, 2:47 PM PDT, with a daily change of -1⟧ 혹시 다른 궁금한 점이 있으신가요? 저는 언제든 도와드릴 준비가 되어 있어요.
-[ 28.56s][user ] 음… 아앙은 불을 어떻게 다루게 됐어?
-[ 31.45s][moshi] ⟨ret@31.29s⟩ ⟦⚡SPAN@31.45s: Aang mastered all four elements—water, earth, fire, and air—to become the Avatar, ultimately defeating Fire Lo⟧ 아앙은 물, 땅, 불, 공기 네 가지 원소를 모두 다루는 아바타가 돼서, 결국 오자이 군주를 물리쳤어.
-[ 34.89s][user ] «backchannel» 응.
-[ 38.27s][moshi] 아바타는 정말 어려운 수련을 거쳐야 한다고 들었어요. 꾸준히 노력하는 모습이 멋지죠.
-[ 44.30s][user ] 혹시 아바타 말고 다른 능력자들도 ⟨ret@46.64s⟩ 있었어?
-[ 46.96s][moshi] ⟦⚡SPAN@46.96s: Toph Beifong was a blind prodigy who became the first metalbending master, revolutionizing earthbending techni⟧ 토프 베이퐁이라는 뛰어난 재능을 가진 소녀가 있었는데, 앞이 보이지 않음에도 불구하고 금속을 다루는 기술을 처음으로 개발했어.
-[ 52.84s][user ] «backchannel» 어.
-[ 55.34s][user ] 금속을 다룬다고? 대단하다!
-[ 57.34s][moshi] 정말 놀랍지 않나요? 토프는 자신의 한계를 뛰어넘는 엄청난 노력을 했다고 해.
-[ 63.56s][user ] 아, 그럼 토프는 아앙이랑 같이 ⟨ret@65.32s⟩ 싸웠어?
-[ 65.47s][moshi] ⟦⚡SPAN@65.48s: Toph Beifong joined Team Avatar and played a crucial role in the final battle against Fire Lord Ozai, using he⟧ 네, 토프는 아앙의 팀에 합류해서 오자이 군주와의 최종 전투에서 금속을 다루는 기술을 활용해서 중요한 역할을 했어.
-[ 73.26s][user ] 오, 그렇구나. 아앙이랑 토프는 정말 잘 맞았겠다.
-[ 77.64s][moshi] 두 사람은 서로에게 큰 힘이 되어주는 좋은 친구였던 것 같아요. 함께 어려움을 헤쳐나가는 모습이 보기 좋았죠.
-[ 79.70s][user ] «backchannel» 그래.
-[ 84.07s][user ] 혹시 코라 전설은 몇 시즌으로 구성됐어?
-[ 86.85s][moshi] ⟨ret@86.53s⟩ ⟦⚡SPAN@86.85s: The Legend of Korra consists of four books, or seasons, each focusing on a different major conflict and Korra’⟧ 코라 전설은 총 네 개의 시즌으로 구성되어 있고, 각 시즌마다 다른 주요 갈등과 코라 아바타의 성장을 다루고 있어.
-[ 95.14s][user ] 네 시즌이라… 짧은 것 같네.
-[ 97.54s][moshi] 네, 아쉽게도 짧지만, 각 시즌마다 꽉 찬 이야기가 담겨 있어서 후회는 없을 거예요.
-[103.59s][user ] 혹시 코라가 아앙이랑 ⟨ret@105.25s⟩ 친척이야?
-[105.57s][moshi] ⟦⚡SPAN@105.57s: Korra is a descendant of Avatar Aang and Katara, born 170 years after the end of the Hundred Year War.⟧ 코라는 아앙과 카타라의 후손인데, 백년 전쟁이 끝난 지 백칠십년 후에 태어났어.
-[108.31s][user ] «backchannel» 응.
-[111.64s][user ] 아, 그렇구나. 먼 친척이네.
-[114.16s][moshi] 먼 친척이긴 하지만, 코라도 아앙처럼 아바타로서 세상을 지키는 중요한 역할을 했답니다.
+[  0.00s][user ] 북미에서 ⟨ret@0.00s⟩ 마지막으로 일식 본 게 언제였지?
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: August 21, 2017.⟧ 북미 대륙에서 마지막으로 일식이 관측된 건 이천십칠년 팔월 이십일일이었어요.
+[  0.08s][user ] 음, ⟨ret@0.00s⟩ 그 일식은 얼마나 많은 사람들이 봤을까?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: (no information found)⟧ 그 일식의 관람객 수에 대한 정확한 정보는 찾을 수 없었습니다.
+[  0.16s][user ] «backchannel» 네.
+[  0.17s][user ] 아, ⟨ret@0.00s⟩ 그렇구나. 다른 걸 물어볼게.
+[  0.20s][moshi] ⟦⚡SPAN IRRELEVANT@0.20s: The current temperature in Tokyo is 28.5°C, humidity is 65%, and wind speed is 3.2 km/h.⟧ 네, 어떤 걸 도와드릴까요?
+[  0.22s][moshi] «interrupted» 혹시 오늘 하루 일정을 정리해 드릴까요? 저는 자리엔이라고 해요. —
+[  0.27s][user ] «interrupts_prev» … 잠깐만, 그 일식은 미국에서만 보였어?
+[  0.30s][moshi] 아니요, 미국뿐만 아니라 캐나다와 멕시코에서도 관측 가능했어요.
+[  0.34s][user ] «backchannel» 네.
+[  0.34s][moshi] 이천십칠년의 그 일식은 북미 대륙 전체에서 큰 관심을 받았답니다. 많은 분들이 특별한 경험을 하셨을 거예요.
+[  0.42s][user ] «backchannel» 그렇죠.
+[  0.42s][user ] 그 ⟨ret@0.37s⟩ 일식 보려고 어디로 많이 갔어?
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: Oregon was in the path of totality, with Madras being a popular viewing location.⟧ 많은 분들이 완전 일식을 보기 위해 오리건 주로 가셨는데, 특히 매드라스가 인기 있는 관측 장소였답니다.
+[  0.53s][user ] 오리건 주구나. 완전 일식이란 게 뭔데?
+[  0.56s][moshi] 완전 일식은 달이 태양을 완전히 가리는 현상을 말해요. 아주 드물게 일어나는 특별한 천문 현상이랍니다.
+[  0.63s][user ] «backchannel» 네네.
+[  0.64s][user ] 아, ⟨ret@0.37s⟩ 그렇구나. 그럼 다음 일식은 언제쯤 볼 수 있어?
+[  0.69s][moshi] ⟦⚡SPAN@0.69s: The next total solar eclipse visible in North America will occur on April 8, 2024.⟧ 북미 대륙에서 다음 완전 일식은 이천이십사년 사월 팔일에 관측될 예정이라고 합니다.
+[  0.74s][user ] 이천이십사년이네. 꽤 기다려야겠다.
+[  0.76s][moshi] 네, 그렇네요. 그래도 그날을 위해 미리 계획을 세워보는 것도 좋겠죠.
+[  0.81s][user ] 좋은 ⟨ret@0.72s⟩ 생각이야. 혹시 그 일식 관련해서 사진이나 영상 같은 거 찾아볼 수 있어?
+[  0.88s][moshi] ⟦⚡SPAN@0.88s: (tool result) Here's a search result: The Great North American Eclipse of August 21, 2017 - Time and Date. tim⟧ 네, 이천십칠년 팔월 이십일일 북미 대륙 대일식에 대한 사진과 영상 자료를 찾았습니다. timeanddate.com에서 확인하실 수 있어요.
+      CALL: {"function": "search", "arguments": {"query": "2017 solar eclipse photos and videos"}}
+[  0.96s][user ] «backchannel» 어머.
+[  0.96s][user ] 고마워, 자리엔.
+[  0.97s][moshi] 천문 현상에 관심을 가져주셔서 감사합니다.

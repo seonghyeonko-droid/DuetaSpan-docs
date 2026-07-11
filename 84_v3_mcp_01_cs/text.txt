@@ -1,111 +1,82 @@
 v3_mcp_01_cs src=mcp style=v2
-SYSTEM: <system> 당신은 Elaeon이며, 사려 깊고 부드러운 말투의 지지적인 조언가로서 사람들의 여행 및 휴가 계획을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 친구 관계 및 사교 생활에 대해 사람들을 돕는 호기심 많고 공감적인 웰니스 코치 Klaris입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Nora",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "late 20s",
-    "language": "German"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-31",
+      "date": "2026-03-25",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2026-03-23",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-03-13",
+      "category": "home",
+      "text": "User's home address is 865 Pine Court."
+    },
+    {
+      "date": "2026-02-07",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-24",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-09-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2026-01-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-11-13",
+      "date": "2025-08-02",
       "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2025-05-30",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-28",
-      "title": "Setting up a home network",
+      "date": "2025-08-09",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-01-16",
+      "date": "2025-06-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-12-26",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 아냐 샤르마 씨 2월 29일 아홉 시에 예약해 ⟨ret@2.48s⟩ 줘.
-[  2.63s][moshi] ⟦⚡SPAN@2.64s: (tool result) Appointment confirmed with Anya Sharma on February 29 at 9:00 AM. Confirmation ID: 87b32-91a5d.⟧ 네, 섀르마 선생님과의 예약이 2월 29일 아홉 시로 확정됐습니다. 확인 코드는 87b32-91a5d예요.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Anya Sharma", "date": "February 29", "time": "9:00 AM"}}
-[ 11.33s][user ] 좋아! 그럼 시내 근처 피부과 전문의 다른 의사 찾아 ⟨ret@14.81s⟩ 줄래?
-[ 15.12s][moshi] «interrupted» ⟦⚡SPAN@15.13s: (tool result) Dr. Eleanor Vance practices dermatology at 14 Oak Street, downtown. Her number is 555-123-4567.⟧ 음, 오크 스트리트 14번지에 피부과 진료를 보는 엘레노어 밴스 선생님이 계세요.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"specialty": "dermatology", "location": "downtown"}}
-[ 19.94s][user ] «interrupts_prev» 그분 신규 환자 받으시려나?
-[ 21.86s][moshi] ⟨ret@21.79s⟩ ⟦⚡SPAN@21.86s: (tool result) Dr. Eleanor Vance is currently accepting new patients. Call 555-123-4567 to schedule.⟧ 네, 밴스 선생님은 현재 신규 환자를 받고 계십니다. 예약 문의는 555-123-4567로 전화하시면 됩니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Eleanor Vance", "query": "accepting new patients"}}
-[ 30.08s][user ] 잘 됐네. 지금 거기는 날씨가 ⟨ret@32.02s⟩ 어때?
-[ 32.33s][moshi] «interrupted» ⟦⚡SPAN@32.34s: (tool result) The current weather at 14 Oak Street is 18.5°C, humidity 62%, wind 7.2 km/h.⟧ 지금 오크 스트리트 14번지에서는 기온이 18.5도입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "14 Oak Street"}}
-[ 35.58s][user ] «interrupts_prev» 기분 좋겠네. 근처 이탈리아 식당 좀 찾아 봐 ⟨ret@38.45s⟩ 줘.
-[ 38.60s][moshi] ⟦⚡SPAN@38.61s: (tool result) Bella Notte is an Italian restaurant at 22 Pine Avenue, 0.8 km away, rated 4.5 stars.⟧ 네, 파인 애비뉴 22번지에 위치한 벨라 노테라는 이탈리아 식당이 있는데, 거리는 0.8킬로미터이고 평점은 4.5점입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "14 Oak Street"}}
-[ 48.26s][user ] 괜찮아 보이는데. 예약 받는데? ⟨ret@50.86s⟩
-[ 51.09s][moshi] ⟦⚡SPAN@51.10s: (tool result) Bella Notte accepts reservations online or by calling 555-987-6543.⟧ 네, 벨라 노테는 예약을 받습니다. 온라인이나 555-987-6543으로 전화해서 예약하실 수 있습니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "query": "accepts reservations"}}
-[ 58.87s][user ] 좋네. 지금 서울 시간은 몇 시야?
-[ 61.38s][moshi] ⟨ret@61.23s⟩ ⟦⚡SPAN@61.39s: (tool result) It is Friday, July 10, 2026 at 2:48 PM in Asia/Seoul right now.⟧ 현재 이천이십육 년 7월 10일 금요일, 아시아/서울 시간으로 오후 2시 48분입니다.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 65.25s][user ] «backchannel» 맞아.
-[ 67.45s][user ] 알았어. 섀르마 선생님 예약 다시 알려 줘.
-[ 70.36s][moshi] «interrupted» ⟨ret@70.13s⟩ ⟦⚡SPAN@70.37s: [2026-07-10] Appointment confirmed with Anya Sharma on February 29 at 9:00 AM. Confirmation ID: 87b32-91a5d.⟧ 네, 섀르마 선생님과의 예약은 2월 29일 아홉 시로 확정됐습니다.
-[ 74.39s][user ] «interrupts_prev» 다음 주 서울에서 도쿄 가는 제일 싼 왕복 항공권은 ⟨ret@77.72s⟩ 얼마야?
-[ 78.10s][moshi] ⟦⚡SPAN@78.12s: (tool result) The cheapest roundtrip flight from Seoul to Tokyo next week is $350 with Korean Air.⟧ 네, 다음 주 서울-도쿄 왕복 항공권은 대한항공으로 350달러가 제일 저렴합니다.
-      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seoul", "arrival_city": "Tokyo", "date": "next week"}}
-[ 84.10s][user ] 꽤 괜찮네. 편안한 음악 좀 틀어 줘.
-[ 86.70s][moshi] ⟨ret@86.47s⟩ ⟦⚡SPAN@86.71s: (tool result) Now playing "Weightless" by Marconi Union.⟧ 네, Marconi Union의 "Weightless"를 재생합니다. 편안하게 들으시길 바랍니다.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"genre": "relaxing"}}
-[ 93.05s][user ] 좋다, 고마워. 한국 원이랑 미국 달러 환율은 어떻게 ⟨ret@96.79s⟩ 돼?
-[ 97.02s][moshi] ⟦⚡SPAN@97.03s: (tool result) One US dollar is currently worth 1,385.50 Korean Won.⟧ 현재 1 미국 달러는 1385.50 한국 원입니다.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "KRWUSD"}}
-[101.15s][user ] 알아 둬야겠다. 다음 화요일에 엄마한테 꽃 사라고 알려 ⟨ret@104.68s⟩ 줘.
-[104.91s][moshi] ⟦⚡SPAN@104.92s: [2026-07-10] Remind me to buy flowers for my mother next Tuesday.⟧ 네, 다음 화요일에 엄마께 꽃을 사야 한다는 것을 기억하도록 하겠습니다.
-[110.72s][user ] 완벽해. 더 이상은 없어.
-[112.47s][moshi] 네, 도와드릴 수 있어서 기뻤습니다. 좋은 하루 보내세요.
+[  0.00s][user ] 안녕하세요. 교통 상황이 어떠신가요?
+[  0.05s][user ] 네, ⟨ret@0.01s⟩ 상하이의 해당 좌표, 31.23, 121.47 주변 교통 상황이 궁금합니다.
+[  0.17s][moshi] ⟦⚡SPAN@0.17s: (tool result) {"distance": 0, "duration": 0, "status": "OK", "traffic": "moderate"}⟧ 음, 해당 좌표 주변 상하이 교통 상황은 현재 보통입니다. 지금 시간대에는 평소와 비슷해 보여요.
+      CALL: {"function": "map_directions", "arguments": {"origin": "31.2304,121.4737", "destination": "31.2304,121.4737", "mode": "driving"}}
+[  0.33s][user ] «backchannel» 네.
+[  0.35s][user ] 흠, ⟨ret@0.29s⟩ 보통이군요… 지금 열려 있는 근처 식당을 찾아 주시겠어요?
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: (tool result) {"name": "Lost Heaven", "address": "Bund 27, Huangpu District, Shanghai", "cuisine": "Yunnan", "⟧ 글쎄요, 와이탄에 있는 윈난 음식점 로스트 헤븐이 지금 열려 있습니다. 정말 인기 있는 곳이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "31.2304, 121.4737"}}
+[  0.62s][user ] 윈난 ⟨ret@0.47s⟩ 음식이요… 흥미로운데요. 혹시 거기 두 명 자리를 7시 30분에 예약해 주실 수 있을까요?
+[  0.79s][moshi] ⟦⚡SPAN@0.79s: (tool result) {"confirmation id": "LH78923", "restaurant name": "Lost Heaven", "party size": 2, "time": "19:30⟧ 네, 로스트 헤븐에 두 명 자리를 7시 30분에 예약했습니다. 확인 번호는 LH78923입니다. 새로운 맛을 탐험하시는 모습이 정말 멋지네요.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Lost Heaven", "party_size": 2, "time": "19:30"}}

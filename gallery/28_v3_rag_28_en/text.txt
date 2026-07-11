@@ -1,10 +1,10 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Lon, a curious and validating wellness coach who helps people with family and relationships. <system>
+SYSTEM: <system> You are Ellas, a grounded and empathetic supportive advisor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Robin",
+    "name": "Thomas",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,78 +12,98 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-07",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
+      "date": "2026-04-04",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-12-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-11-06",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-10-16",
+      "date": "2026-02-10",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-09-11",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2025-12-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-07-14",
+      "date": "2025-11-03",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-10-09",
+      "category": "home",
+      "text": "User's home address is 793 Pine Court."
+    },
+    {
+      "date": "2025-07-05",
       "category": "work",
       "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-01",
+      "date": "2025-10-27",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-08-05",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, do you ever feel…
-[  2.75s][user ] …like you just need a break from everything?
-[  4.83s][moshi] Oh, absolutely. It's so important to recognize when you're feeling overwhelmed and to give yourself space. What’s been on your mind?
-[ 13.37s][user ] Well, I was just wondering… who played the Cat in the Hat in ⟨ret@16.85s⟩ that movie?
-[ 17.25s][moshi] ⟦⚡SPAN@17.25s: Mike Myers portrayed the Cat in the Hat in the 2003 film adaptation of the Dr. Seuss book.⟧ That role was wonderfully played by Mike Myers, in the 2003 movie. It’s a rather… unique performance, wouldn’t you say?
-[ 25.21s][user ] Um, yeah, unique is one word for it. Is it raining ⟨ret@28.58s⟩ right now?
-[ 28.98s][moshi] ⟦⚡SPAN@28.98s: (tool result) Current conditions are 22.0°C, humidity 88%, wind 3.1 km/h, and it is raining.⟧ It is currently raining, with a temperature of 22.0 degrees Celsius. Sounds cozy, actually.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 31.51s][user ] «backchannel» Uh-huh.
-[ 34.92s][user ] Cozy? It's kind of depressing, honestly.
-[ 37.30s][moshi] [sigh] I understand. Gray days can definitely affect your mood. Remember, acknowledging those feelings is the first step.
-[ 41.22s][user ] «backchannel» Okay.
-[ 45.24s][user ] I guess so. I need to find a good movie to watch. ⟨ret@48.44s⟩ Something funny.
-[ 48.84s][moshi] ⟦⚡SPAN@48.84s: (tool result) "Paddington 2" is a critically acclaimed comedy film released in 2017, directed by Paul King.⟧ I found "Paddington 2", a really well-loved comedy from 2017. It’s supposed to be wonderfully heartwarming.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[ 53.45s][user ] «backchannel» Exactly.
-[ 55.86s][user ] Paddington? I’ve heard of it. What about something… older? Like, from the nineties?
-[ 61.33s][moshi] ⟨ret@61.26s⟩ ⟦⚡SPAN@61.34s: (tool result) "Home Alone" is a 1990 American Christmas comedy film directed by Chris Columbus.⟧ There’s "Home Alone", a classic 1990 comedy directed by Chris Columbus. A real comfort film for many!
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[ 68.42s][user ] Oh, yeah, "Home Alone"! That’s a good one. My sister loved that movie.
-[ 72.40s][moshi] It’s funny how movies can bring back such strong memories of family. It sounds like you had a close relationship with your sister.
-[ 79.41s][user ] We did. We still do, mostly. She’s going through a rough patch, actually.
-[ 84.24s][moshi] That's really thoughtful of you to share that. It’s wonderful you’re still connected. Sometimes just knowing someone cares helps so much.
-[ 89.62s][user ] «backchannel» Yeah.
-[ 91.33s][user ] I want to send her flowers. Can you help with that?
-[ 94.19s][moshi] Of course I can. It's a lovely idea. What city does your sister live in?
+[  0.00s][user ] Hi, I'm having trouble sleeping lately.
+[  0.03s][moshi] It’s completely understandable to feel that way; sleep can be elusive.
+[  0.07s][user ] Yeah, I just feel so wired all the time.
+[  0.11s][moshi] That feeling of being wired is common, especially with modern life.
+[  0.16s][user ] Do you have any advice on how to calm my mind?
+[  0.21s][moshi] Creating a relaxing bedtime routine can be very helpful.
+[  0.24s][user ] «backchannel» Yeah.
+[  0.25s][user ] Like what kind of routine?
+[  0.27s][moshi] Gentle stretching, a warm bath, or reading a book—anything calming.
+[  0.31s][user ] «backchannel» Yeah.
+[  0.32s][user ] I tried reading, but my mind just races then too.
+[  0.36s][moshi] That's alright; finding what works takes time and experimentation.
+[  0.40s][user ] Is ⟨ret@0.03s⟩ there anything I can listen to?
+[  0.43s][moshi] ⟦⚡SPAN@0.43s: White noise is a random signal that has power spectral density which is equal across different frequencies, gi⟧ There are sounds designed to help, like white noise, which has a flat spectral profile.
+[  0.49s][user ] «backchannel» Yeah.
+[  0.50s][user ] White noise? What even *is* that?
+[  0.52s][moshi] It’s a blend of all frequencies, masking disruptive sounds around you.
+[  0.57s][user ] Hmm, interesting. What about meditation?.
+[  0.59s][moshi] «interrupted» Meditation is wonderful—it can really center you and quiet your thoughts—
+[  0.64s][user ] «interrupts_prev» …but ⟨ret@0.44s⟩ is there a specific type that's best for sleep?
+[  0.68s][moshi] ⟦⚡SPAN@0.68s: A 2019 meta-analysis of 18 studies found that mindfulness meditation significantly reduces symptoms of insomni⟧ Studies show mindfulness meditation can really reduce insomnia symptoms.
+[  0.72s][user ] «backchannel» Okay.
+[  0.73s][user ] That sounds promising. What about screen time before bed?
+[  0.76s][moshi] Reducing screen time before bed is a very good idea, I think.
+[  0.82s][user ] «backchannel» Yeah, totally.
+[  0.82s][user ] How ⟨ret@0.47s⟩ long before bed should I stop looking at screens?
+[  0.87s][moshi] ⟦⚡SPAN@0.87s: The National Sleep Foundation recommends stopping screen use at least one hour before bedtime.⟧ The National Sleep Foundation suggests stopping screens at least one hour before bed.
+[  0.92s][user ] «backchannel» Right.
+[  0.93s][user ] One hour, okay. Thanks, that's helpful.
+[  0.95s][moshi] You’re very welcome. Remember, small changes can make a big difference.

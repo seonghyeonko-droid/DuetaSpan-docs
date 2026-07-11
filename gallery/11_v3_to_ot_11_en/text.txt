@@ -1,86 +1,80 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Orax, a kind and steady life coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Dreli, a grounded and empathetic supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Henri",
+    "name": "Andrea",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "50s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-05-13",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-01-01",
+      "date": "2026-05-30",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
+      "text": "User is planning a trip to Switzerland in December."
     },
     {
-      "date": "2025-11-08",
+      "date": "2025-12-20",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-14",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-08-11",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-07-11",
-      "category": "home",
-      "text": "User's home address is 867 Birch Road."
+      "date": "2025-06-20",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-06-03",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-13",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-21",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when the final episode of season two of The Good ⟨ret@3.20s⟩ Place aired?
-[  3.59s][moshi] ⟦⚡SPAN@3.60s: The twelfth and final episode of The Good Place’s second season, titled “The Senate,” originally aired on Janu⟧ It looks like the last episode of that season aired on January twenty-fifth, two-thousand eighteen. It was called "The Senate".
-[ 12.72s][user ] That's good to know. I was wondering because I wanted to re-watch it.
-[ 16.46s][moshi] Re-watching a favorite is always a good idea, it can be quite comforting. It's a lovely show.
-[ 22.27s][user ] I’m trying to remember who directed that ⟨ret@24.40s⟩ episode.
-[ 24.62s][moshi] ⟦⚡SPAN@24.64s: (tool result) Morgan Sackett directed "The Senate", the twelfth episode of The Good Place’s second season, acc⟧ Morgan Sackett directed that episode, "The Senate", if I have the information correctly.
-      CALL: {"function": "search", "arguments": {"query": "who directed the good place season 2 episode 12"}}
-[ 30.49s][user ] Oh, right! Sackett. I knew it was a woman director.
-[ 33.85s][moshi] It's wonderful to remember those details, and to appreciate the creators behind the shows we love.
-[ 35.66s][user ] «backchannel» Yeah.
-[ 39.48s][user ] Do you remember what happened at the very end of that episode?
-[ 42.33s][moshi] «interrupted» That episode ended with Michael making a deal with the Judge—
-[ 45.85s][user ] «interrupts_prev» …Wait, before you go on, was that the episode where Eleanor and Chidi finally got together?
-[ 50.76s][moshi] Yes, it was! Eleanor and Chidi finally confessed their feelings for each other in that episode.
-[ 53.13s][user ] «backchannel» Okay.
-[ 56.96s][moshi] And as I was saying, Michael makes a deal with the Judge to save Eleanor, Chidi, Tahani, and Jason. It’s a pretty intense moment.
-[ 62.17s][user ] «backchannel» Yeah.
-[ 66.43s][user ] It really is. I remember being so stressed watching it.
-[ 69.37s][moshi] It's understandable to feel that way, the show does a great job of creating stakes. It’s a sign you were invested!
-[ 76.53s][user ] I was. I’m thinking of watching the whole series again, actually.
-[ 79.88s][moshi] That sounds like a wonderful plan. Sometimes revisiting familiar stories can offer new perspectives.
-[ 84.31s][user ] «backchannel» Uh-huh.
-[ 87.47s][user ] What was the viewership like for that episode?
-[ 89.93s][moshi] ⟨ret@89.86s⟩ ⟦⚡SPAN@89.94s: (tool result) “The Senate” garnered 3.83 million viewers when it originally aired on January 25, 2018, as repo⟧ Three point eight three million people watched it when it first aired on January twenty-fifth, two-thousand eighteen.
-      CALL: {"function": "search", "arguments": {"query": "The Good Place season 2 episode 12 viewership"}}
-[ 95.48s][user ] «backchannel» Uh-huh.
-[ 98.29s][user ] Not bad, considering it wasn't a network show.
-[101.20s][moshi] That's a solid number, especially for a show on a streaming platform like NBC. It shows a dedicated fanbase.
+[  0.00s][user ] I've been feeling a bit sluggish lately, and someone mentioned Andrews Liver Salts. What does it even ⟨ret@5.52s⟩ *do*?
+[  5.91s][moshi] ⟦⚡SPAN@5.92s: Andrews Liver Salts is a saline laxative used to relieve occasional constipation and indigestion.⟧ It’s understandable to feel sluggish, and Andrews Liver Salts is often used to gently encourage things along—it works as a saline laxative, helping with occasional constipation and indigestion.
+[ 14.08s][user ] «backchannel» Right.
+[ 18.41s][user ] Oh, a laxative? I wasn’t expecting that.
+[ 21.55s][moshi] It can be a helpful option when you're feeling off, but it's always wise to consider your overall wellness routine alongside something like that.
+[ 30.91s][user ] Did you remember to…
+[ 34.28s][user ] …take the bins out?
+[ 35.59s][user ] So, is it good for, like, a really blocked-up feeling, or just general ⟨ret@40.54s⟩ sluggishness?
+[ 40.78s][moshi] ⟦⚡SPAN@40.78s: Andrews Liver Salts can help relieve discomfort from overindulgence in food and drink, and associated headache⟧ Andrews Liver Salts can really help with discomfort from overindulgence, including headaches—it’s often used when you’ve enjoyed a bit too much, and need gentle support.

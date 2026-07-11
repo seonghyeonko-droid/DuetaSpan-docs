@@ -4,74 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Charlie",
+#     "name": "Elias",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-06-21",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-05-20",
+#       "date": "2026-05-25",
 #       "category": "home",
-#       "text": "User's home address is 380 Cedar Lane."
+#       "text": "User's home address is 44 Elm Street."
 #     },
 #     {
-#       "date": "2026-03-18",
+#       "date": "2026-05-19",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-12-13",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-12-03",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-08-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "date": "2025-10-16",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-19",
-#       "title": "Researching a used car",
+#       "date": "2026-03-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-01",
+#       "date": "2025-08-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who was in charge of looking into Apple's accounting back in
-     5.23s  <ret> 발화 (turn1 첫 프레임)
-     5.47s  agent 발화 시작: <ret> It was Mario Monti, the EU’s competition commissioner,
-     5.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: Mario Monti, as the European Union’s competition commissioner, led the
-     5.60s  user  발화 끝
-    15.02s  agent 발화 끝
+     0.00s  user  발화 시작: Which airline started code-sharing with Southwest first?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.21s  agent 발화 시작: <ret> Well, it looks like ATA Airlines was the very first, s
+     0.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.79s]: ATA Airlines was the first to begin code-sharing agreements with South
+     0.21s  user  발화 끝
+     1.00s  agent 발화 끝

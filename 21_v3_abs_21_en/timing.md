@@ -4,82 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Rowan",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-04-12",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-13",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-08-29",
+#       "date": "2026-04-02",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-08-27",
-#       "category": "home",
-#       "text": "User's home address is 397 Birch Road."
+#       "date": "2026-03-11",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-08",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-28",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What islands are not geographicall | S2 Um, well, could you tell me the cu | S3 No, not right now. Just… what’s th | S4 That does sound nice. Thanks, Bren
+# EXAMINER(FDB-v2) 단계: S1 What in combination with glass fib | S2 Hmm. What *are* glass fibers used  | S3 So, like, in boats? | S4 Wow, sawdust! That sounds…flammabl
 
-     0.00s  user  발화 시작: What islands are not geographically part of Southeast Asia?
-     3.65s  <ret> 발화 (turn1 첫 프레임)
-     3.73s  agent 발화 시작: <ret> But unfortunately, I don’t have information on islands
-     3.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.03s]: (no information found)
-     3.89s  user  발화 끝
-     9.76s  agent 발화 끝
-    10.06s  user  발화 시작: Um, well, could you tell me the current time in Tokyo?
-    13.53s  user  발화 끝
-    13.65s  <ret> 발화 (turn3 첫 프레임)
-    13.89s  agent 발화 시작: <ret> It's currently 2:38 PM in Tokyo. Quite a different tim
-    13.89s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.75s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Asia/Tokyo rig
-    17.11s  user  발화 시작: Really?
-    17.93s  user  발화 끝
-    19.48s  agent 발화 시작: Is there anything else I can help you with today? Perhaps we
-    19.64s  agent 발화 끝
-    25.74s  user  발화 시작: No, not right now. Just… what’s the weather like in Seoul?
-    25.82s  agent 발화 끝
-    30.03s  <ret> 발화 (turn7 첫 프레임)
-    30.43s  agent 발화 시작: <ret> It’s 23.0 degrees Celsius in Seoul, with 74% humidity 
-    30.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    30.66s  user  발화 끝
-    39.17s  user  발화 시작: That does sound nice. Thanks, Bren.
-    39.19s  agent 발화 끝
-    41.39s  agent 발화 시작: You’re very welcome. It’s good to hear you’re feeling a bit 
-    41.61s  user  발화 끝
-    48.66s  agent 발화 끝
+     0.00s  user  발화 시작: What in combination with glass fibers is used to make glass 
+     3.81s  <ret> 발화 (turn1 첫 프레임)
+     3.89s  agent 발화 시작: <ret> Well, that's a really interesting question! It seems w
+     3.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (no information found)
+     4.12s  user  발화 끝
+    14.32s  agent 발화 끝
+    15.93s  user  발화 시작: Oh. Is it a trade secret or something?
+    18.76s  agent 발화 시작: [curious] That’s a possibility, sometimes formulas are kept 
+    18.88s  user  발화 끝
+    21.14s  user  발화 시작: Okay.
+    21.77s  user  발화 끝
+    26.51s  user  발화 시작: Hmm. What *are* glass fibers used for, generally?
+    26.68s  agent 발화 끝
+    30.61s  <ret> 발화 (turn6 첫 프레임)
+    30.68s  agent 발화 시작: <ret> Glass fibers have many uses, particularly for thermal 
+    30.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.75s]: Glass fibers are used for thermal insulation, sound absorption, and fo
+    30.91s  user  발화 끝
+    36.67s  user  발화 시작: …are they expensive to produce?
+    37.43s  agent 발화 끝
+    38.74s  user  발화 끝
+    38.84s  agent 발화 시작: That's a great point to consider! Glass fiber production cos
+    43.19s  user  발화 시작: Yeah, yeah.
+    44.00s  user  발화 끝
+    44.60s  agent 발화 시작: …they are generally quite affordable, which is why they’re s
+    44.67s  agent 발화 끝
+    53.36s  agent 발화 끝
+    53.87s  user  발화 시작: So, like, in boats?
+    55.52s  user  발화 끝
+    55.65s  agent 발화 시작: Exactly! You'll find glass fibers in boats, cars, and even s
+    63.38s  agent 발화 끝
+    63.38s  user  발화 시작: That makes sense. What about older types of insulation?
+    67.34s  <ret> 발화 (turn14 첫 프레임)
+    67.42s  agent 발화 시작: <ret> Before fiberglass was popular, people used things like
+    67.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: Before fiberglass became common in the 1930s, materials like straw, sa
+    67.60s  user  발화 끝
+    78.64s  agent 발화 끝
+    80.28s  user  발화 시작: Wow, sawdust! That sounds…flammable.
+    83.69s  agent 발화 시작: [laugh] It really does! It’s amazing how much things have ch
+    83.85s  user  발화 끝
+    94.12s  agent 발화 끝
+    94.16s  user  발화 시작: I guess so. Do they still *use* mineral wool?
+    97.47s  <ret> 발화 (turn18 첫 프레임)
+    97.79s  agent 발화 시작: <ret> Yes, mineral wool is still used today, and it’s especi
+    97.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.25s]: Mineral wool, made from molten rock or slag, is still used as insulati
+    97.87s  user  발화 끝
+   105.04s  agent 발화 끝

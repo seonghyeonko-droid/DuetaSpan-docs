@@ -1,105 +1,114 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 실용적이고 안심시키는 개인 가이드인 Drul입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 크리오엔이며, 수면과 휴식에 대해 사람들을 돕는 현실적이고 공감적인 지원 조언자입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "민연",
+    "name": "다민",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
+      "date": "2026-02-02",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-12-26",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-06-07",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-02-16",
+      "date": "2025-12-12",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-09-15",
+      "date": "2025-11-24",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-11-01",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
+    },
+    {
+      "date": "2025-10-10",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-27",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-18",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-10-01",
-      "title": "Researching a used car",
+      "date": "2025-12-21",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-21",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 발롱 군단이 대체 언제 활동했던 ⟨ret@2.51s⟩ 부대야?
-[  2.66s][moshi] ⟦⚡SPAN@2.67s: The Walloon Legion was a volunteer unit formed in Wallonia and fought on the Eastern Front during World War II⟧ 발롱 군단은 제2차 세계 대전 동안 동부 전선에서 싸웠던 자원 부대였어요.
-[  4.25s][user ] «backchannel» 응.
-[  7.84s][user ] 잠깐만, 제2차 세계 대전이라고? 그게 좀 빠르잖아. 더 자세히 말해 줄 수 있어?
-[ 12.91s][moshi] ⟨ret@12.84s⟩ ⟦⚡SPAN@12.92s: The Walloon Legion was formed in July 1941 and fought with the German Wehrmacht on the Eastern Front until Dec⟧ 발롱 군단은 천구백사십일년 칠월에 창설되어 천구백사십이년 십이월까지 독일 베르마흐트와 함께 동부 전선에서 싸웠어요. 좀 더 자세히 알고 싶으셨나 봐요.
-[ 17.67s][user ] «backchannel» 우와.
-[ 24.08s][user ] 음, 천구백사십일년 칠월부터 천구백사십이년 십이월까지? 그 사이에 뭘 했는지 궁금하네.
-[ 30.57s][moshi] ⟨ret@30.42s⟩ ⟦⚡SPAN@30.58s: The Walloon Legion participated in Operation Barbarossa and subsequent battles, suffering heavy casualties dur⟧ 발롱 군단은 바르바로사 작전에 참여했고, 그 후 전투에서 많은 사상자를 냈어요. 특히 천구백사십일년에서 천구백사십이년 겨울에 피해가 컸다고 해요.
-[ 40.68s][user ] 바르바로사 작전이라… 그건 또 뭐고, 발롱 군단은 왜 거길 간 ⟨ret@44.55s⟩ 거야?
-[ 44.94s][moshi] ⟦⚡SPAN@44.95s: The Walloon Legion was a collaborationist unit composed of French-speaking Walloons who volunteered to fight f⟧ 발롱 군단은 나치 독일에 자원하여 싸우기 위해 프랑스어를 사용하는 발롱인들로 구성된 협력 부대였어요. 그 배경에는 여러 이유가 있었죠.
-[ 54.12s][user ] 협력 부대? 그럼 독일 편이었단 거네. ⟨ret@56.80s⟩ 좀 이상한데.
-[ 57.19s][moshi] ⟦⚡SPAN@57.20s: The Walloon Legion's motivations were complex, including anti-communism, regionalism, and a desire for autonom⟧ 발롱 군단의 동기는 복잡했어요. 반공주의, 지역주의, 그리고 벨기에로부터의 자치 욕구가 있었죠. 단순하게 독일 편이었다고만 할 수는 없어요.
-[ 62.54s][user ] «backchannel» 그래.
-[ 67.58s][user ] 자치 욕구라… 벨기에랑 무슨 관계가 있는 거야?
-[ 70.88s][moshi] ⟨ret@70.73s⟩ ⟦⚡SPAN@70.89s: Wallonia had a history of seeking greater autonomy within Belgium, and some saw collaboration with Germany as ⟧ 발롱은 벨기에 내에서 더 큰 자치권을 추구해 온 역사가 있었고, 일부는 독일과의 협력을 통해 이를 달성할 수 있다고 생각했어요. 배경에는 벨기에와의 관계도 있었던 거죠.
-[ 83.24s][user ] 아하, 그렇구나. 그럼 발롱 군단은 해체된 ⟨ret@85.75s⟩ 거야?
-[ 86.07s][moshi] ⟦⚡SPAN@86.07s: The Walloon Legion was largely destroyed during the Battle of Stalingrad in early 1943, with few survivors ret⟧ 발롱 군단은 천구백사십삼년 초 스탈린그라드 전투에서 대부분 파괴되었고, 생존자들은 거의 발롱으로 돌아가지 못했어요. 안타까운 일이죠.
-[ 89.19s][user ] «backchannel» 오.
-[ 96.16s][user ] 스탈린그라드 전투에서… 완전 망했겠네.
-[ 99.19s][moshi] 정말 끔찍한 전투였죠. 혹시 다른 전투에 대해 궁금하신가요?
-[103.37s][user ] 아니, 그만. 지금 날씨가 어때?
-[105.53s][moshi] ⟨ret@105.31s⟩ ⟦⚡SPAN@105.55s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 현재 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요. 야외 활동하기 좋은 날씨네요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[109.28s][user ] «backchannel» 응.
-[114.84s][user ] 이십삼도면 괜찮네. 이번 주 토요일에 영화 볼 만한 거 있어?
-[118.60s][moshi] ⟨ret@118.52s⟩ ⟦⚡SPAN@118.60s: (tool result) "Interstellar", "Inception", "The Dark Knight"⟧ 이번 주에 상영하는 영화로는 '인터스텔라', '인셉션', '다크 나이트'가 있어요. 어떤 장르를 좋아하세요?
+[  0.00s][user ] 요즘 계속 잠을 잘 못 자서 너무 힘들어. 혹시 잠 잘 자는 방법 같은 거 있을까요?
+[  4.98s][moshi] 편안한 잠자리를 위한 조언을 드릴 수 있어요. 수면 환경을 개선하거나 규칙적인 수면 습관을 만드는 것이 도움이 될 수 있습니다.
+[ 14.73s][user ] 음… 규칙적인 수면 습관은 알겠는데, 구체적으로 어떻게 해야 할까요?
+[ 19.32s][moshi] 매일 같은 시간에 잠자리에 들고 일어나는 것이 중요해요. 주말에도 최대한 그 시간을 지키는 것이 좋습니다.
+[ 23.33s][user ] «backchannel» 네네.
+[ 26.83s][user ] 그건 좀 어려울 것 같은데… 주말에는 늦잠 자고 싶을 때도 있잖아요.
+[ 31.20s][moshi] 하지만 규칙적인 수면 습관을 유지하면 생체 리듬이 안정되어 더 깊은 잠을 잘 수 있을 거예요.
+[ 37.30s][user ] 생체 리듬이 안정되면 뭐가 좋아지는 건데요?
+[ 40.08s][moshi] 생체 리듬이 안정되면 낮 동안의 집중력과 활력이 높아지고, 밤에는 더 쉽게 잠들 수 있게 됩니다.
+[ 46.72s][user ] 아, 그렇군요. 혹시 코하우징이라는 거 아세요? 요즘 좀 관심이 가던데.
+[ 51.15s][moshi] ⟨ret@51.08s⟩ ⟦⚡SPAN@51.16s: Cohousing is a community designed around a shared space, and residents often share activities and resources.⟧ 공동체 생활을 위한 디자인이라고 말씀드릴 수 있어요.
+[ 54.36s][moshi] 공동체 생활을 위한 디자인으로, 입주민들은 종종 활동과 자원을 공유한다고 합니다.
+[ 59.98s][user ] 활동과 자원을 공유한다니, 좀 신기하네요. 코하우징이 처음 시작된 곳이 ⟨ret@65.38s⟩ 어디였죠?
+[ 65.77s][moshi] ⟦⚡SPAN@65.78s: The first modern cohousing communities were established in Denmark in the 1960s, with Sættedammen being a nota⟧ 현대적인 코하우징 커뮤니티는 천구백육십년대 덴마크에서 처음 만들어졌고, 새테담멘이 대표적인 사례입니다.
+[ 70.47s][user ] «backchannel» 네.
+[ 73.62s][user ] 덴마크군요! 새테담멘이라는 곳도 있네요. 혹시 지금도 운영 중인가요?
+[ 78.48s][moshi] 네, 새테담멘은 현재도 운영되고 있으며, 코하우징의 성공적인 모델로 널리 알려져 있습니다.
+[ 84.51s][user ] 지금 시계가 몇 시죠?
+[ 85.91s][moshi] ⟨ret@85.76s⟩ ⟦⚡SPAN@85.92s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 세시 십칠분입니다.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 90.92s][user ] 덴마크 날씨는 ⟨ret@91.97s⟩ 어때요?
+[ 92.27s][moshi] ⟦⚡SPAN@92.29s: (tool result) 21.5°C, humidity 68%, wind 3.2 km/h⟧ 덴마크는 현재 섭씨 이십일 점 오도이고, 습도는 육십팔%, 풍속은 시속 삼 점 이킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denmark"}}
+[ 99.42s][user ] 아, 그렇군요. 코하우징에 대해 더 자세히 알고 싶어요.
+[102.65s][moshi] 코하우징은 개인 공간과 공동 공간을 적절히 조화시킨 주거 형태입니다. 이웃 간의 교류를 장려하고, 공동체 의식을 높이는 데 도움이 됩니다.
+[107.79s][user ] «backchannel» 그렇죠.
+[112.38s][user ] 공동체 의식이 높으면 좋은 점이 있을까요?
+[114.85s][moshi] 네, 공동체 의식이 높으면 서로 돕고 의지하며, 더욱 안전하고 행복한 삶을 누릴 수 있습니다.
+[118.98s][user ] «backchannel» 그렇죠.
+[121.29s][user ] 혹시 영화 예매도 도와줄 수 있나요?
+[123.30s][moshi] 영화 예매도 도와드릴 수 있어요. 어떤 영화를 보고 싶으신가요?
+[124.48s][user ] «backchannel» 맞아요.
+[127.79s][user ] 음… 아직 어떤 영화를 볼지 정하지 못했어요. 요즘 상영하는 영화 좀 ⟨ret@133.30s⟩ 알려주세요.
+[133.37s][moshi] ⟦⚡SPAN@133.38s: (tool result) "Inside Out 2" - Comedy/Animation - Showing at Lotte Cinema, Seoul, July 10, 2026 - 2:00 PM, 4:3⟧ 현재 롯데시네마에서 '인사이드 아웃 이'를 상영 중입니다. 오늘 오후 두시, 네시 삼십분, 일곱시에 상영됩니다.
       CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[123.48s][user ] «backchannel» 어.
-[125.02s][user ] 음… 인터스텔라 예매해 ⟨ret@126.75s⟩ 줘.
-[127.07s][moshi] ⟦⚡SPAN@127.07s: (tool result) Interstellar, July 13, 2026, 7:00 PM, 2 tickets, confirmation id: 987654⟧ '인터스텔라' 칠월 십삼일 저녁 일곱시에 두장 예매 완료되었습니다. 확인 번호는 구 팔 칠 육 오 사입니다. 즐거운 시간 보내세요.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {}}
-[136.40s][user ] 고마워. 혹시 내일 모레 잊지 않도록 알람 설정해 줄 수 ⟨ret@139.87s⟩ 있어?
-[140.10s][moshi] ⟦⚡SPAN@140.11s: (tool result) Alarm set for July 12, 2026, 9:00 AM⟧ 칠월 십이일 오전 아홉시에 알람이 설정되었습니다. 중요한 일 잊지 않도록 챙겨드릴게요.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {}}
-[146.93s][user ] 알람 고마워. 그럼 이만.
-[148.73s][moshi] 언제든지 필요하시면 다시 찾아주세요. 편안한 시간 보내세요.
+[141.92s][user ] '인사이드 아웃 이'가 재미있을까요?
+[144.02s][moshi] '인사이드 아웃 이'는 감정을 다룬 애니메이션으로, 많은 사람들에게 호평을 받고 있습니다. 특히 가족과 함께 보기 좋은 영화라고 하네요.
+[148.77s][user ] «backchannel» 와.
+[152.35s][user ] 그럼 '인사이드 아웃 이'로 예매해 주세요. 오늘 저녁 일곱시로 ⟨ret@156.36s⟩ 부탁드립니다.
+[156.68s][moshi] ⟦⚡SPAN@156.68s: (tool result) Booking confirmed for "Inside Out 2" at Lotte Cinema, Seoul, July 10, 2026, 7:00 PM. Confirmatio⟧ 롯데시네마 '인사이드 아웃 이' 저녁 일곱시 상영으로 예매가 완료되었습니다. 확인 번호는 에이 비 씨 일 이 삼 엑스 와이 제트입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Inside Out 2", "time": "7:00 PM"}}
+[164.86s][user ] 감사합니다. 덕분에 영화도 예매하고, 코하우징에 대해서도 많이 알게 됐네요.
+[169.50s][moshi] 도움이 되어 기쁩니다. 편안한 저녁 시간 보내시고, 영화 관람도 즐겁게 하세요.

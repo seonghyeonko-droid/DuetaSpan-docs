@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "채은",
+#     "name": "다원",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,82 +13,76 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 30s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-05-24",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-02-01",
+#       "date": "2026-04-27",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-04-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-11",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-01",
+#       "date": "2025-11-15",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-19",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그런데 정확히 뭘 도와주는 사람이세요? 그냥 심리 상담 같은  | S2 음… 사실 요즘 친구들과 연락을 잘 안 하게 돼서 좀 걱정이에 | S3 … 혹시 제가 너무 매달리는 것처럼 보일까 봐 그래요. 제가  | S4 그럼 어떻게 해야 할까요? 그냥 기다리기만 하는 게 좋을까요?
+# EXAMINER(FDB-v2) 단계: S1 뭘 도와주시는 분이세요? | S2 지금은 회사에서 너무 오래 일했어요. 그런데 뭘 해야 할지,  | S3 근데 뭘 시작해야 할지… 뭘 배우면 좋을지 감이 안 와요. | S4 어떤 식으로요? 구체적으로 뭘 할 수 있을까요?
 
-     0.00s  agent 발화 시작: 채은 씨, 안녕하세요. 저는 여러분의 관계와 사회생활을 돕는 헬레인이라고 해요. 혹시 오늘 어떤 점 때문에 
-     3.29s  user  발화 시작: 어어.
-     4.11s  user  발화 끝
-     9.57s  user  발화 시작: 그런데 정확히 뭘 도와주는 사람이세요? 그냥 심리 상담 같은 건가?
-    10.01s  agent 발화 끝
-    14.14s  agent 발화 시작: 심리 상담이라고 하기보다는, 친구 관계나 주변 사람들과의 소통에서 어려움을 느끼는 분들을 돕는 편이에요. 혼
-    14.34s  user  발화 끝
-    24.41s  user  발화 시작: 음.
-    24.86s  user  발화 끝
-    27.68s  user  발화 시작: 음… 사실 요즘 친구들과 연락을 잘 안 하게 돼서 좀 걱정이에요. 다들 바쁘기도 하고, 제가 먼저 연락하기가
-    27.77s  agent 발화 끝
-    36.39s  agent 발화 시작: 친구들과 연락이 줄어드는 건 흔한 일이에요. 바쁜 일상 속에서 자연스럽게 멀어지는 경우도 있고, 관계에 변화
-    36.58s  user  발화 끝
-    48.45s  user  발화 시작: … 혹시 제가 너무 매달리는 것처럼 보일까 봐 그래요. 제가 먼저 계속 연락하면 친구들이 부담스러워할까 봐…
-    49.19s  agent 발화 끝
-    55.66s  agent 발화 시작: 부담스러워할까 봐 걱정하시는군요. 관계에서 균형을 찾는 건 정말 중요해요. 하지만 먼저 연락하는 것이 항상 
-    55.77s  user  발화 끝
-    61.49s  user  발화 시작: 응.
-    61.94s  user  발화 끝
-    65.63s  user  발화 시작: 그럼 어떻게 해야 할까요? 그냥 기다리기만 하는 게 좋을까요? 아니면 용기를 내서 먼저 연락을 해보는 게 좋
-    65.81s  agent 발화 끝
-    73.05s  agent 발화 시작: 기다리기만 하는 것보다는, 먼저 작은 시도를 해보는 게 좋을 것 같아요. 부담스럽지 않게, 안부를 묻거나 가
-    73.28s  user  발화 끝
-    82.56s  agent 발화 끝
+     0.00s  agent 발화 시작: 다원님, 안녕하세요. 저는 여러분의 인생 전환을 돕는 페리스입니다. 편안하게 어떤 이야기든 말씀해 주세요.
+     7.96s  agent 발화 끝
+     8.08s  user  발화 시작: 뭘 도와주시는 분이세요?
+     9.68s  agent 발화 시작: 인생의 중요한 순간에 혼란스럽고 막막할 때, 제가 곁에서 함께 고민하고 길을 찾는 과정을 도와드릴 수 있어요
+     9.92s  user  발화 끝
+    17.61s  agent 발화 끝
+    17.71s  user  발화 시작: 음… 요즘 좀 많이 불안해요. 직장을 그만두고 새로운 일을 시작해야 할까 고민 중인데…
+    23.75s  agent 발화 시작: 새로운 시작을 앞두고 불안한 건 당연해요. 다원님께서는 어떤 일을 하고 싶으신가요? 지금 하고 계신 일의 어
+    23.77s  user  발화 끝
+    32.20s  user  발화 시작: 지금은 회사에서 너무 오래 일했어요. 그런데 뭘 해야 할지, 뭘 잘하는지 도통 모르겠어요.
+    32.70s  agent 발화 끝
+    38.12s  agent 발화 시작: 오랜 시간 한 곳에 계셨으니, 당연히 앞으로 뭘 해야 할지 막막하실 거예요. 자신에 대해 잘 모르는 건 —
+    38.31s  user  발화 끝
+    45.57s  user  발화 시작: …제가 너무 늙은 건 아닌가 싶기도 하고요. 새로운 걸 배우는 게 쉽지 않을 것 같기도 하고…
+    46.33s  agent 발화 끝
+    51.92s  agent 발화 시작: 나이는 숫자에 불과하다는 말도 있잖아요. 다원님은 여전히 배우고 성장할 수 있는 무한한 가능성이 있어요.
+    52.11s  user  발화 끝
+    55.99s  user  발화 시작: 음.
+    56.43s  user  발화 끝
+    59.53s  agent 발화 시작: 새로운 도전을 두려워하는 마음은 이해하지만, 변화는 성장의 기회가 될 수도 있다는 것을 기억해 주세요.
+    59.70s  agent 발화 끝
+    66.48s  agent 발화 끝
+    66.58s  user  발화 시작: 근데 뭘 시작해야 할지… 뭘 배우면 좋을지 감이 안 와요.
+    71.16s  user  발화 끝
+    71.21s  agent 발화 시작: 어떤 분야에 관심이 있으신가요? 혹시 평소에 즐겨 하시는 취미나 좋아하는 활동이 있으신가요?
+    77.39s  user  발화 시작: 글쎄요… 여행 가는 걸 좋아하고, 맛집 찾아다니는 것도 좋아해요.
+    77.46s  agent 발화 끝
+    82.35s  agent 발화 시작: 여행과 맛집 탐방이라… 즐거움을 추구하시는 분이시군요. 이런 취향을 살려서 새로운 일을 찾아보는 건 어떨까요
+    82.58s  user  발화 끝
+    90.19s  agent 발화 끝
+    90.33s  user  발화 시작: 어떤 식으로요? 구체적으로 뭘 할 수 있을까요?
+    93.50s  agent 발화 시작: 여행 관련 콘텐츠를 만들거나, 맛집 블로거로 활동하는 것도 좋은 방법일 수 있어요. 다원님의 경험과 지식을 
+    93.52s  user  발화 끝
+   101.93s  agent 발화 끝

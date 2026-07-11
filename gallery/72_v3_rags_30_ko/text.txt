@@ -1,72 +1,82 @@
 v3_rags_30_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 육아 및 가족 시간 관리에 도움을 주는 따뜻하고 세심한 라이프 코치 Mix입니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 긍정적이고 지지적인 웰니스 코치 지나입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "성서",
+    "name": "현호",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-21",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-06-24",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-03-18",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-11-19",
+      "date": "2026-06-11",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-08-05",
+      "date": "2026-05-19",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
+    },
+    {
+      "date": "2026-04-20",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-12-13",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
-      "title": "Apartment hunting downtown",
+      "date": "2025-11-17",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2026-02-20",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-12",
+      "date": "2025-10-18",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이천년대 애플 회계 관행 합법성 조사 누가 이끌었어?
-[  4.45s][moshi] ⟨ret@4.30s⟩ ⟦⚡SPAN@4.46s: The EU's competition commissioner led the investigation into the legality of Apple’s accounting practices duri⟧ 이천년대 애플 회계 관행 합법성 조사는 유럽연합 경쟁 담당 집행위원이 이끌었습니다.
-[  6.99s][user ] «backchannel» 와.
+[  0.00s][user ] 혹시 사우스웨스트 항공이랑 코드쉐어 계약을…
+[  0.24s][user ] …제일 먼저 ⟨ret@0.32s⟩ 맺은 항공사는 어디였어?
+[  0.48s][moshi] ⟦⚡SPAN@0.48s: ATA Airlines was the first airline to begin code-sharing agreements with Southwest Airlines in 1994.⟧ 사우스웨스트 항공과 코드쉐어 계약을 제일 먼저 맺은 항공사는 천구백구십사년에 ATA 항공이었어요.

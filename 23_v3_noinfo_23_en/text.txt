@@ -1,77 +1,84 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Huia, a warm and attentive personal guide who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Belo, a warm and attentive counselor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
     "name": "Remy",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-08",
+      "date": "2026-02-01",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-29",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-01-24",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-03-01",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-09-04",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-07-06",
+      "date": "2025-12-17",
       "category": "home",
-      "text": "User's home address is 816 Cedar Lane."
+      "text": "User's home address is 415 Oak Avenue."
     },
     {
-      "date": "2025-06-09",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2025-07-15",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2025-07-09",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-07",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know the phone number for Anya…
-[  3.94s][user ] …Sharma? I met her at the conference last ⟨ret@6.27s⟩ year.
-[  6.67s][moshi] ⟦⚡SPAN@6.67s: (no information found)⟧ I’ve looked, and unfortunately, I couldn’t find a publicly listed phone number for Anya Sharma.
-      CALL: {"function": "search", "arguments": {"query": "Anya Sharma phone number"}}
-[ 12.05s][user ] Oh, um… that’s a shame.
-[ 14.41s][moshi] It happens sometimes, especially with private contact details. Perhaps you could try reaching out through the conference organizers?
-[ 20.81s][user ] Maybe… what was the weather like in Seoul on July 10th of last ⟨ret@24.69s⟩ year?
-[ 25.09s][moshi] ⟦⚡SPAN@25.09s: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h⟧ Last July 10th in Seoul, it was quite warm—around twenty-eight point five degrees Celsius—with fairly high humidity and a gentle breeze of seven point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2025-07-10", "location": "Seoul"}}
-[ 31.04s][user ] «backchannel» Mm-hmm.
-[ 35.68s][moshi] It sounds like it was a lovely summer day.
-[ 38.02s][user ] Actually, yes. Find me some Italian restaurants ⟨ret@41.28s⟩ nearby.
-[ 41.59s][moshi] ⟦⚡SPAN@41.60s: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2 stars, 1.2 km; Roma Ristorante: 3.9 sta⟧ I found three Italian restaurants close by—Trattoria del Sole, with four and a half stars, is only point eight kilometers away. Bella Italia and Roma Ristorante are also excellent options!
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
+[  0.00s][user ] Do you have the contact information for ⟨ret@2.30s⟩ Lee Sun-hee?
+[  2.69s][moshi] ⟦⚡SPAN@2.70s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. That kind of data is usually kept private.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
+[  8.34s][user ] «backchannel» Yeah.
+[ 10.14s][user ] Oh, okay. Well, what about her most recent album release ⟨ret@13.71s⟩ date?
+[ 14.10s][moshi] ⟦⚡SPAN@14.11s: Lee Sun-hee released her fifteenth studio album, "My Christmas Story", on December 6, 2023.⟧ She released her fifteenth studio album, "My Christmas Story", on December sixth, twenty twenty-three. It's a lovely collection, I hear!
+[ 22.69s][user ] That's good to know.
+[ 23.82s][moshi] It’s wonderful to stay current with artists you enjoy. Music can be so uplifting, don’t you think?
+[ 29.15s][user ] Yeah, definitely. What's the weather like in Seoul right now?
+[ 32.55s][moshi] ⟨ret@32.47s⟩ ⟦⚡SPAN@32.55s: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h⟧ The weather in Seoul is currently twenty-six point one degrees Celsius, with humidity at sixty-eight percent and a wind speed of three point two kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 36.53s][user ] «backchannel» Mm-hmm.
+[ 41.53s][moshi] «interrupted» It sounds quite pleasant! Perhaps a good day to enjoy some music outdoors—
+[ 45.88s][user ] «interrupts_prev» …Do you think she does many concerts these ⟨ret@48.12s⟩ days?
+[ 48.28s][moshi] ⟦⚡SPAN@48.28s: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from February 23 to February 25, 2024, at the Olymp⟧ She held a concert series called “Re:Lee” from February twenty-third to twenty-fifth, twenty twenty-four, at the Olympic Hall in Seoul. There aren't any concerts scheduled right now, according to her official website.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee concerts 2024 2025"}}
+[ 60.55s][user ] Oh, that's a shame. I missed it.
+[ 62.18s][moshi] It’s disappointing to miss an event you’re looking forward to. Perhaps you could sign up for her newsletter to stay informed about future performances?

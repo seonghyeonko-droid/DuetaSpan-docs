@@ -4,64 +4,63 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Elsa",
+#     "name": "Owen",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-29",
+#       "date": "2026-03-31",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "home",
+#       "text": "User's home address is 450 Maple Drive."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-10-12",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-07-26",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-21",
+#       "date": "2025-07-10",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "text": "User is planning a trip to Kyoto in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-15",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-05",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the Olympic Games officially separate their summer 
-     4.67s  user  발화 끝
-     4.72s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  agent 발화 시작: <ret> Well, it seems the International Olympic Committee off
-     5.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.89s]: The International Olympic Committee formally separated the Summer and 
-    17.93s  agent 발화 끝
+     0.00s  user  발화 시작: Who won the Pulitzer…
+     1.57s  user  발화 끝
+     2.85s  user  발화 시작: …Prize for Music in 2018?
+     4.76s  <ret> 발화 (turn2 첫 프레임)
+     5.08s  agent 발화 시작: <ret> Well, it seems Kendrick Lamar received the 2018 Pulitz
+     5.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.72s]: Kendrick Lamar was awarded the 2018 Pulitzer Prize for Music for his a
+     5.15s  user  발화 끝
+    15.80s  agent 발화 끝

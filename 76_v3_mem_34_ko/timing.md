@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "현아",
+#     "name": "윤호",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,102 +13,116 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-05-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2025-09-17",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-10-27",
+#       "date": "2025-08-29",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-07-16",
+#       "date": "2025-08-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-27",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-03",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
+#       "date": "2026-05-04",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
 #       "date": "2026-03-22",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-01",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-27",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 네, 반갑습니다. | S2 지금은 강남역 근처에 있어. | S3 자가용으로 가는 게 더 빠를까? | S4 고마워, Frior.
+# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 혹시 제가 어디 가려면, 집에서 거기까지 얼 | S2 그럼요. 해운대는 제 집에서 얼마나 떨어져 있을까요? | S3 — 음, 잠깐만요. | S4 아니요, 괜찮아요. 감사합니다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 현아님. 저는 여러분의 창의적인 고민을 돕는 웰니스 코치, Frior입니다.
-     2.58s  user  발화 시작: 그래.
-     3.12s  user  발화 끝
-     5.19s  agent 발화 끝
-     5.85s  user  발화 시작: 아, 네, 반갑습니다.
-     7.36s  agent 발화 시작: 혹시 지금 어디로 가실 계획이 있으신가요?
-     7.59s  user  발화 끝
-     9.72s  agent 발화 끝
-    10.08s  user  발화 시작: 응, 집에 가려고.
-    11.48s  <ret> 발화 (turn5 첫 프레임)
-    11.63s  agent 발화 시작: <ret> 서울 마포구 성산동 사 오 육으로 돌아가시는군요.
-    11.64s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.75s]: [2025-12-27] User's home address is 서울 마포구 성산동 45-6.
-    11.82s  user  발화 끝
-    15.33s  agent 발화 시작: 혹시 현재 위치를 알려주시면 최적의 경로를 찾아드릴 수 있습니다.
-    15.38s  agent 발화 끝
-    19.03s  agent 발화 끝
-    19.22s  user  발화 시작: 지금은 강남역 근처에 있어.
-    21.22s  <ret> 발화 (turn8 첫 프레임)
-    21.46s  agent 발화 시작: <ret> 강남역에서 마포구 성산동까지는 십이 점 오킬로미터, 대략 이십오분 정도 소요됩니다. 이호선을 타고
-    21.46s  ⚡SPAN 주입 [d'=0.56s / d_lead=10.15s]: (tool result) {"distance": "12.5km", "duration": "25 minutes", "route"
-    21.71s  user  발화 끝
-    25.26s  user  발화 시작: 오.
-    25.90s  user  발화 끝
-    31.59s  agent 발화 시작: 대중교통 이용이 편하신가요? 아니면 다른 교통수단을 원하시는지 여쭤봐도 될까요?
-    31.61s  agent 발화 끝
-    36.50s  agent 발화 끝
-    36.57s  user  발화 시작: 자가용으로 가는 게 더 빠를까?
-    38.41s  <ret> 발화 (turn12 첫 프레임)
-    38.57s  agent 발화 시작: <ret> 자가용을 이용하시면 십일 점 팔킬로미터, 약 십팔분 정도 걸립니다—
-    38.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: (tool result) {"distance": "11.8km", "duration": "18 minutes", "route"
-    38.83s  user  발화 끝
-    42.84s  user  발화 시작: …혹시 지금 제일 빠른 길은 어디야?
-    43.39s  agent 발화 끝
-    45.45s  agent 발화 시작: 실시간 교통 상황을 고려하면, 올림픽로를 이용하시는 것이 가장 빠를 것으로 예상됩니다.
-    45.56s  user  발화 끝
-    50.63s  agent 발화 끝
-    50.66s  agent 발화 시작: 지금은 교통 체증이 심하지 않아서, 자가용이 대중교통보다 조금 더 빠를 수 있습니다.
-    53.16s  user  발화 시작: 그래.
-    53.66s  user  발화 끝
-    55.71s  agent 발화 끝
-    55.75s  user  발화 시작: 고마워, Frior.
-    56.94s  agent 발화 시작: 도움이 되었다니 기쁩니다. 운전 조심하시고, 안전하게 귀가하세요.
-    57.12s  user  발화 끝
-    61.15s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 윤호님. 저는 에룬이라고 해요. 편안하게 친구나 사회생활에 대해 이야기 나눠보시죠.
+     0.08s  <ret> 발화 (turn2 첫 프레임)
+     0.08s  user  발화 시작: 어… 안녕하세요. 혹시 제가 어디 가려면, 집에서 거기까지 얼마나 걸릴까요?
+     0.08s  agent 발화 끝
+     0.16s  agent 발화 시작: <ret> 생일 저녁 식사 장소를 찾으셨던 적이 있으시죠? 그쪽으로 가는 데 얼마나 걸릴지 알려드릴게요.
+     0.16s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: [2026-03-22] Past chat — Planning a birthday dinner: party of six; loo
+     0.16s  user  발화 끝
+     0.25s  user  발화 시작: 응.
+     0.25s  agent 발화 끝
+     0.26s  user  발화 시작: 아니, 그게 아니라. 그냥… 어제 친구랑 얘기했는데, 해운대에서 만나기로 했거든요.
+     0.26s  user  발화 끝
+     0.28s  <ret> 발화 (turn8 첫 프레임)
+     0.33s  agent 발화 시작: 해운대라면… 부산에 사시는 윤호님께서는 해운대가 가까우시겠네요.
+     0.33s  user  발화 끝
+     0.38s  user  발화 시작: 응응.
+     0.38s  agent 발화 끝
+     0.39s  user  발화 시작: 그럼요. 해운대는 제 집에서 얼마나 떨어져 있을까요?
+     0.39s  user  발화 끝
+     0.44s  agent 발화 시작: <ret> 자가용으로 약 십이 점 오킬로미터, 이십오분 정도 걸리겠어요.
+     0.44s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Distance: 12.5 km, Duration: 25 minutes by car.
+     0.44s  user  발화 끝
+     0.50s  user  발화 시작: 그치.
+     0.50s  agent 발화 끝
+     0.50s  agent 발화 시작: 대중교통을 이용하시면 조금 더 시간이 걸릴 수 있습니다. 혹시 어떤 교통수단을 선호하시나요?
+     0.50s  user  발화 끝
+     0.56s  <ret> 발화 (turn12 첫 프레임)
+     0.59s  user  발화 시작: 음… 버스가 편하긴 한데, 지하철이 더 빠를까요?
+     0.59s  agent 발화 끝
+     0.64s  agent 발화 시작: <ret> 지하철을 타시면 사십분 정도 걸리고, 백일번 버스를 타고 부산역에서 환승하시면 됩니다.
+     0.64s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Transit: 40 minutes, Bus route 101, transfer at Busan St
+     0.64s  user  발화 끝
+     0.66s  <ret> 발화 (turn16 첫 프레임)
+     0.73s  user  발화 시작: 그치.
+     0.73s  agent 발화 끝
+     0.73s  user  발화 시작: — 음, 잠깐만요.
+     0.73s  user  발화 끝
+     0.76s  user  발화 시작: … 혹시 그 버스, 지금 바로 탈 수 있어요?
+     0.76s  user  발화 끝
+     0.82s  agent 발화 시작: <ret> 네, 오분 뒤에 열네시 사십이분에 백일번 버스가 도착할 예정입니다.
+     0.82s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Route 101: Next bus in 5 minutes, estimated arrival 14:4
+     0.82s  user  발화 끝
+     0.89s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요?
+     0.89s  agent 발화 끝
+     0.93s  user  발화 시작: 아니요, 괜찮아요. 감사합니다.
+     0.93s  agent 발화 끝
+     0.95s  agent 발화 시작: 천만에요. 혹시 친구분과 즐거운 시간 보내시길 바랍니다.
+     0.95s  user  발화 끝
+     1.00s  agent 발화 끝

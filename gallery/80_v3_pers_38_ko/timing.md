@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "서린",
+#     "name": "채형",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,115 +12,78 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-04-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-03-11",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-01-07",
+#       "date": "2026-02-05",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2025-11-22",
+#       "date": "2026-01-30",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-10-12",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
-#     },
-#     {
-#       "date": "2025-08-03",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-06-02",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-05-24",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그런데 정확히 뭘 도와주는 사람이세요? | S2 …혹시 제가 잠들기 전에 뭘 마시면 안 될까요? 커피 말고 다 | S3 규칙적인 수면… 쉽지 않네요. 주말에는 특히 더. | S4 햇빛은 잘 쬐는 편이에요. 그런데 낮에 너무 피곤해서 운동하기
 
-     0.00s  agent 발화 시작: 서린 씨, 안녕하세요. 저는 여러분의 편안한 휴식을 돕는 오리아입니다. 오늘 하루는 어떠셨어요?
-     7.13s  agent 발화 끝
-     7.23s  user  발화 시작: 그런데 정확히 뭘 도와주는 사람이세요?
-     9.77s  agent 발화 시작: 저는 잠들기 어려움이나 스트레스 해소 등, 휴식과 관련된 고민을 함께 나누고 해결책을 찾아드리는 역할을 해요
-     9.81s  user  발화 끝
-    20.43s  agent 발화 끝
-    20.50s  user  발화 시작: 음… 요즘 잠을 너무 설쳐서 걱정이에요. 계속 생각에 잠겨서요.
-    25.68s  user  발화 끝
-    25.79s  agent 발화 시작: 밤에 잠들기 전에 여러 생각들이 떠오르는 건 흔한 일이에요. 그럴 땐 잠자리에 들기 전에 생각을 정리하는 시
-    29.18s  user  발화 시작: 음.
-    29.58s  user  발화 끝
-    34.67s  agent 발화 시작: 예를 들어, 하루 동안 있었던 일들을 짧게 기록하거나, 내일 할 일 목록을 미리 작성해 보는 것도 도움이 될
-    34.73s  agent 발화 끝
-    46.87s  agent 발화 끝
-    47.58s  user  발화 시작: 글쓰기는 좀 어렵고… 다른 방법은 없을까요?
-    51.73s  agent 발화 시작: 가벼운 스트레칭이나 명상도 좋은 방법이에요. 몸과 마음을 이완시켜 잠들기 좋은 상태로 만들어주거든요. —
-    51.74s  user  발화 끝
-    58.90s  user  발화 시작: …혹시 제가 잠들기 전에 뭘 마시면 안 될까요? 커피 말고 다른 거요.
-    59.65s  agent 발화 끝
-    63.43s  user  발화 끝
-    63.75s  agent 발화 시작: 아, 좋은 질문이에요. 잠들기 전에는 카페인이 함유된 음료나 알코올은 피하는 게 좋아요. 일시적으로 잠이 올
-    67.32s  user  발화 시작: 네.
-    67.82s  user  발화 끝
-    74.83s  agent 발화 끝
-    74.86s  user  발화 시작: 그럼 따뜻한 우유는 괜찮을까요?
-    77.54s  user  발화 끝
-    77.62s  agent 발화 시작: 따뜻한 우유는 트립토판이라는 성분이 들어있어 수면을 유도하는 데 도움이 될 수 있어요. 하지만 너무 많이 마
-    90.70s  user  발화 시작: 그렇군요. 혹시 잠자리에 들기 좋은 시간대가 있나요?
-    90.94s  agent 발화 끝
-    94.95s  user  발화 끝
-    94.97s  agent 발화 시작: 일반적으로 밤 열시에서 열한시 사이에 잠자리에 드는 것이 가장 좋다고 해요. 규칙적인 수면 습관을 유지하는 
-   104.47s  agent 발화 끝
-   104.57s  user  발화 시작: 규칙적인 수면… 쉽지 않네요. 주말에는 특히 더.
-   108.73s  user  발화 끝
-   108.86s  agent 발화 시작: 주말에 늦잠을 자는 것이 완전히 나쁜 건 아니지만, 평일과 너무 큰 차이가 나지 않도록 주의하는 것이 좋아요
-   120.09s  user  발화 시작: 생체 리듬… 그게 뭔데요?
-   120.22s  agent 발화 끝
-   122.45s  user  발화 끝
-   122.49s  agent 발화 시작: 생체 리듬은 우리 몸이 스물네시간 주기로 반복하는 자연스러운 패턴이에요. 수면-각성 주기, 호르몬 분비, 체
-   129.43s  user  발화 시작: 네네.
-   130.02s  user  발화 끝
-   134.32s  agent 발화 끝
-   134.42s  user  발화 시작: 아… 그런 거군요. 그럼 생체 리듬을 유지하려면 어떻게 해야 할까요?
-   140.53s  user  발화 끝
-   140.71s  agent 발화 시작: 규칙적인 식사 시간, 적절한 운동, 그리고 충분한 햇빛을 쬐는 것이 도움이 돼요. 특히 아침 햇빛은 생체 리
-   145.58s  user  발화 시작: 네.
-   145.90s  user  발화 끝
-   150.95s  agent 발화 끝
-   151.37s  user  발화 시작: 햇빛은 잘 쬐는 편이에요. 그런데 낮에 너무 피곤해서 운동하기가 힘들어요.
-   157.25s  user  발화 끝
-   157.29s  agent 발화 시작: 낮에 피곤하다면, 짧은 낮잠을 자는 것도 좋은 방법이에요. 이십분 정도의 짧은 낮잠은 피로를 해소하고 집중력
-   166.99s  agent 발화 끝
-   167.10s  user  발화 시작: 낮잠은 좋아해요. 그럼 저녁에는 뭘 하면 좋을까요?
-   170.94s  agent 발화 시작: 저녁에는 편안한 음악을 듣거나, 따뜻한 물에 몸을 담그는 것도 좋아요. 잠자리에 들기 전에 몸과 마음을 이완
-   170.94s  user  발화 끝
-   176.32s  user  발화 시작: 네.
-   176.72s  user  발화 끝
-   180.67s  agent 발화 끝
-   180.98s  user  발화 시작: 좋은 방법들이네요. 오리아 씨 덕분에 좀 마음이 놓여요.
-   185.19s  user  발화 끝
-   185.21s  agent 발화 시작: 다행이에요, 서린 씨. 언제든 편하게 이야기 나눠 주세요. 저는 여러분의 편안한 휴식을 항상 응원할게요.
-   192.44s  agent 발화 끝
+     0.00s  agent 발화 시작: 채형님, 안녕하세요. 저는 펠랜이라고 해요. 인생의 중요한 변화를 앞둔 분들을 돕는 역할을 하고 있답니다.
+     0.15s  user  발화 시작: 음.
+     0.15s  agent 발화 끝
+     0.16s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있을까요?
+     0.16s  user  발화 끝
+     0.22s  agent 발화 시작: 낯선 이름이시라니, 괜찮아요. 지금 어떤 마음이신지, 어떤 어려움이 있으신지 편하게 말씀해 주시면 돼요.
+     0.22s  user  발화 끝
+     0.36s  user  발화 시작: 음… 사실 다음 달부터 대학을 자퇴하고, 완전히 새로운 길을 가려고 하는데 너무 불안해요.
+     0.36s  agent 발화 끝
+     0.50s  agent 발화 시작: 새로운 길을 선택하는 건 정말 용기가 필요한 일이죠. 불안한 마음은 당연한 거예요. 무엇이 가장 걱정되시나요
+     0.50s  user  발화 끝
+     0.66s  user  발화 시작: 예.
+     0.66s  agent 발화 끝
+     0.67s  agent 발화 시작: 지금 당장 어떤 점이 가장 힘든지, 조금 더 자세히 말씀해 주시겠어요? 그래야 제가 채형님께 도움이 될 수 
+     0.67s  user  발화 끝
+     0.88s  user  발화 시작: 제가 뭘 잘하는지, 뭘 하고 싶은지 아직 잘 모르겠어요. 그냥… 막막해요.
+     0.88s  agent 발화 끝
+     1.00s  user  발화 끝

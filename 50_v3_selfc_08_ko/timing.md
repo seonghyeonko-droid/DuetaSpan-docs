@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "수담",
+#     "name": "하서",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,73 +12,115 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-05-12",
+#       "date": "2026-01-31",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2025-12-22",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-11-30",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-08-25",
+#       "date": "2025-09-28",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-21",
+#       "date": "2025-06-09",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-19",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래? | S2 아, 잠깐만— | S3 …혹시 그 열차 좌석은 얼마나 남았어? | S4 그럼, 예매해 줘.
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 가족들과 갈 만한 조용한 카페 있나요? | S2 숨은 정원이요? 분위기는 어때요? | S3 예약 번호는 알 칠 팔 구 공 일 이군요 — 혹시 그 카페 근 | S4 음… 커피 숲으로 예약해 주세요. 토요일 오후 두시, 가족 인
 
-     0.00s  user  발화 시작: 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래?
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     4.17s  user  발화 끝
-     4.20s  agent 발화 시작: <ret> 토요일 오후 두시 반에 출발하는 KTX 열차가 있어요. 부산까지 세 시간 십오 분 정도 걸리고, 
-     4.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 14:30 KTX 123, 3 hours 15 minutes, ₩59800
-     7.09s  user  발화 시작: 응.
-     7.59s  user  발화 끝
-    12.72s  agent 발화 끝
-    13.02s  user  발화 시작: 아, 잠깐만—
-    13.84s  user  발화 시작: …혹시 그 열차 좌석은 얼마나 남았어?
-    14.08s  user  발화 끝
-    16.03s  <ret> 발화 (turn5 첫 프레임)
-    16.42s  agent 발화 시작: <ret> KTX 백이십삼 열차의 일반석은 열두 자리 남아 있습니다. 지금 예약하시겠어요?
-    16.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: (tool result) 12 seats available, standard class
-    16.45s  user  발화 끝
-    21.93s  agent 발화 끝
-    22.02s  user  발화 시작: 그럼, 예매해 줘.
-    23.24s  <ret> 발화 (turn7 첫 프레임)
-    23.63s  agent 발화 시작: <ret> 네, 예매 완료되었습니다. KTX 백이십삼 열차, 서울에서 부산까지, 칠월 십일일 오후 두시 반,
-    23.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: (tool result) Confirmed: KTX 123, Seoul to Busan, 2026-07-11 14:30, st
-    23.68s  user  발화 끝
-    35.23s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 가족들과 갈 만한 조용한 카페 있나요?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn6 첫 프레임)
+     0.04s  agent 발화 시작: <ret> 토요일에 가족과 함께 가기 좋은 카페는 '별 헤는 밤'이에요. 강남구 도산대로에 있고, 평점은 사
+     0.04s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"restaurants": [{"name": "별 헤는 밤", "address": "서울 강남구 도
+     0.04s  user  발화 끝
+     0.13s  user  발화 시작: 맞아요.
+     0.13s  agent 발화 끝
+     0.14s  user  발화 시작: 아, 강남이요? 음… 좀 더 가까운 곳은 없을까요?
+     0.14s  user  발화 끝
+     0.17s  agent 발화 시작: 조금 더 가까운 곳을 찾으시는군요. 혹시 지금 계신 곳 근처를 말씀해 주시겠어요?
+     0.17s  user  발화 끝
+     0.22s  user  발화 시작: 저는 지금 역삼역 근처에 있어요.
+     0.22s  agent 발화 끝
+     0.23s  <ret> 발화 (turn13 첫 프레임)
+     0.24s  agent 발화 시작: <ret> 역삼역 근처에는 '숨은 정원'이라는 카페가 있어요. 평점은 사 점 이점이고, 가격대는 일만 오천 
+     0.24s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"restaurants": [{"name": "숨은 정원", "address": "서울 강남구 역삼
+     0.24s  user  발화 끝
+     0.32s  user  발화 시작: 숨은 정원이요? 분위기는 어때요?
+     0.32s  agent 발화 끝
+     0.34s  agent 발화 시작: '숨은 정원'은 아늑하고 조용한 분위기로 가족과 함께 편안하게 시간을 보내기에 좋을 것 같아요.
+     0.34s  user  발화 끝
+     0.39s  user  발화 시작: 네.
+     0.39s  agent 발화 끝
+     0.40s  agent 발화 시작: 손님들이 특히 식물 인테리어가 예쁘다고 많이 말씀하시더라고요. 차 종류도 다양하고요.
+     0.40s  user  발화 끝
+     0.43s  <ret> 발화 (turn18 첫 프레임)
+     0.44s  user  발화 시작: 예.
+     0.44s  agent 발화 끝
+     0.44s  user  발화 시작: 차 종류가 다양하다니 좋네요. 혹시 예약은 가능한가요?
+     0.44s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> 네, '숨은 정원'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 알 칠
+     0.47s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"reservation id": "R789012", "status": "confirmed", "re
+     0.47s  user  발화 끝
+     0.55s  user  발화 시작: 음.
+     0.55s  agent 발화 끝
+     0.56s  user  발화 시작: 예약 번호는 알 칠 팔 구 공 일 이군요 — 혹시 그 카페 근처에 주차는 편리한가요?
+     0.56s  user  발화 끝
+     0.63s  agent 발화 시작: '숨은 정원' 근처에는… —
+     0.63s  user  발화 끝
+     0.64s  user  발화 시작: …혹시 주차 공간이 부족하면 다른 카페로 알아볼까요?
+     0.64s  agent 발화 끝
+     0.65s  <ret> 발화 (turn23 첫 프레임)
+     0.67s  agent 발화 시작: <ret> 역삼역 근처에 주차 가능한 '커피 숲'이라는 카페가 있어요. 평점은 사점이고, 가격대는 일만 팔천
+     0.67s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"restaurants": [{"name": "커피 숲", "address": "서울 강남구 역삼동
+     0.67s  user  발화 끝
+     0.75s  user  발화 시작: 커피 숲이요? 거기는 분위기는 어떤가요?
+     0.75s  agent 발화 끝
+     0.77s  agent 발화 시작: '커피 숲'은 넓고 쾌적한 공간을 자랑하며, 가족 단위 손님들이 많이 찾는 곳이에요. 조용히 대화하기에도 괜
+     0.77s  user  발화 끝
+     0.84s  user  발화 시작: 네.
+     0.84s  agent 발화 끝
+     0.84s  user  발화 시작: 음… 커피 숲으로 예약해 주세요. 토요일 오후 두시, 가족 인원으로요.
+     0.84s  user  발화 끝
+     0.89s  agent 발화 시작: <ret> '커피 숲'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 씨 삼 사 오
+     0.89s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"reservation id": "C345678", "status": "confirmed", "re
+     0.89s  user  발화 끝
+     0.96s  user  발화 시작: 예약 감사합니다.
+     0.96s  agent 발화 끝
+     0.97s  agent 발화 시작: 천만에요. 가족과 함께 즐거운 시간 보내시길 바랍니다.
+     0.97s  user  발화 끝
+     1.00s  agent 발화 끝

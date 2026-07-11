@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "우슬",
+#     "name": "성민",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,105 +12,108 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-02-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2026-01-08",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-17",
+#       "date": "2025-08-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-14",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-08-02",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-06-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-06-19",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-06-12",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-15",
+#       "date": "2026-04-26",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-27",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-11-10",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 오루엔 씨. | S2 음… 그때 알프스 야생화 사진 찍으러 간다고 했었죠? | S3 혹시 스위스에서 야생화가 가장 예쁘게 피는 시기가 언제인지 알 | S4 아, 그렇군요.
+# EXAMINER(FDB-v2) 단계: S1 네, 잘 보냈어요. 그런데 혹시 제가 뉴질랜드 여행 계획 세운 | S2 으음… 그럼 구월 초는 어때요? | S3 아, 그리고 혹시 제가 예전에 집 구하는 거 도와달라고 했었죠 | S4 이야, 잘 됐네요. 히아 씨, 정말 고마워요!
 
-     0.00s  agent 발화 시작: 안녕하세요, 우슬님. 저는 여러분을 돕는 상담사 오루엔입니다.
-     4.35s  agent 발화 끝
-     5.07s  user  발화 시작: 안녕하세요, 오루엔 씨.
-     6.72s  user  발화 끝
-     6.91s  agent 발화 시작: 혹시 지난번에 스위스 여행 계획 세우셨던 거 기억하시나요?
-     8.84s  user  발화 시작: 네네.
-     9.46s  user  발화 끝
-    10.89s  agent 발화 끝
-    11.41s  user  발화 시작: 아, 네… 스위스요.
-    13.05s  <ret> 발화 (turn5 첫 프레임)
-    13.28s  agent 발화 시작: <ret> 스위스 여행을 시월에 계획하고 계셨던 걸로 기억하고 있어요.
-    13.29s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.83s]: [2025-06-20] User is planning a trip to Switzerland in October.
-    13.34s  user  발화 끝
-    15.64s  user  발화 시작: 그렇죠.
-    16.45s  user  발화 끝
-    16.95s  agent 발화 시작: 혹시 여행 준비하면서 특별히 궁금한 점이 있으신가요? 아니면 제가 기억해 드렸던 부분이 필요하신가요?
-    17.12s  agent 발화 끝
-    23.25s  agent 발화 끝
-    23.65s  user  발화 시작: 음… 그때 알프스 야생화 사진 찍으러 간다고 했었죠?
-    26.76s  <ret> 발화 (turn9 첫 프레임)
-    26.91s  agent 발화 시작: <ret> 맞아요, 알프스에서 야생화 사진을 찍는 걸 좋아하신다고 말씀하셨었죠.
-    26.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.68s]: [2025-08-02] User is into alpine wildflower photography.
-    27.16s  user  발화 끝
-    31.55s  user  발화 시작: 혹시 스위스에서 야생화가 가장 예쁘게 피는 시기가 언제인지 알 수 있을까요?
-    31.59s  agent 발화 끝
-    35.87s  <ret> 발화 (turn11 첫 프레임)
-    36.18s  agent 발화 시작: <ret> 스위스에서 야생화는 유월부터 구월 사이에 가장 아름답게 피는데, 특히 칠월과 팔월이 절정이라고 하
-    36.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) 스위스에서 야생화는 6월부터 9월 사이에 가장 아름답게 피며, 특히 7월과 8월이 절정입니다. 스위스
-    36.32s  user  발화 끝
-    38.63s  user  발화 시작: 오.
-    39.36s  user  발화 끝
-    43.53s  user  발화 시작: 아, 그렇군요.
-    43.64s  agent 발화 끝
-    44.70s  agent 발화 시작: 여행 계획 세우시는 데 조금이나마 도움이 되었으면 좋겠어요. 아름다운 사진 많이 찍으시고, 즐거운 시간 보내
-    44.81s  user  발화 끝
-    51.46s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 성민님! 저는 여러분을 도와드리는 히아입니다. 오늘 하루도 잘 보내셨나요?
+     0.01s  <ret> 발화 (turn3 첫 프레임)
+     0.02s  <ret> 발화 (turn7 첫 프레임)
+     0.07s  user  발화 시작: 네.
+     0.07s  agent 발화 끝
+     0.08s  user  발화 시작: 네, 잘 보냈어요. 그런데 혹시 제가 뉴질랜드 여행 계획 세운 거 기억하세요?
+     0.08s  user  발화 끝
+     0.16s  <ret> 발화 (turn5 첫 프레임)
+     0.17s  agent 발화 시작: <ret> 네, 성민님. 뉴질랜드 여행을 팔월에 계획하고 계시는군요.
+     0.17s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-02-14] User is planning a trip to New Zealand in August.
+     0.17s  user  발화 끝
+     0.20s  <ret> 발화 (turn10 첫 프레임)
+     0.22s  user  발화 시작: 아, 맞아요! 그때 항공권 예매하려고 했었는데… 혹시 지금 항공권 좀 알아봐 줄 수 있을까요?
+     0.22s  agent 발화 끝
+     0.32s  agent 발화 시작: <ret> 죄송해요, 성민님. 팔월 항공편은 지금 찾을 수 없네요.
+     0.32s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) No flights found for August 2026.
+     0.32s  user  발화 끝
+     0.35s  <ret> 발화 (turn13 첫 프레임)
+     0.38s  user  발화 시작: 으음… 그럼 구월 초는 어때요?
+     0.38s  agent 발화 끝
+     0.42s  agent 발화 시작: <ret> 구월 초 부산에서 오클랜드행 항공권은 천이백달러부터 있네요.
+     0.42s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Flights available from Busan to Auckland starting at $12
+     0.42s  user  발화 끝
+     0.47s  user  발화 시작: 어머.
+     0.47s  agent 발화 끝
+     0.48s  user  발화 시작: 그쪽 좌석은 통로 쪽으로 부탁드려도 될까요?
+     0.48s  user  발화 끝
+     0.52s  agent 발화 시작: <ret> 네, 성민님. 통로 쪽 좌석을 선호하시는 것을 기억하고 있어요.
+     0.52s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2025-08-21] User prefers an aisle seat when traveling.
+     0.52s  user  발화 끝
+     0.59s  user  발화 시작: 네.
+     0.59s  agent 발화 끝
+     0.60s  user  발화 시작: 아, 그리고 혹시 제가 예전에 집 구하는 거 도와달라고 했었죠?
+     0.60s  user  발화 끝
+     0.67s  agent 발화 시작: <ret> 네, 성민님. 시내에 반려동물과 함께 살 수 있는 이룸을 찾으셨었죠.
+     0.67s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-frie
+     0.67s  user  발화 끝
+     0.74s  user  발화 시작: 와.
+     0.74s  agent 발화 끝
+     0.75s  user  발화 시작: 맞아요. 혹시 지금 반려동물 허용되는 곳이 있는지 알아봐 주실 수 있나요?
+     0.75s  user  발화 끝
+     0.75s  <ret> 발화 (turn16 첫 프레임)
+     0.83s  agent 발화 시작: <ret> 시내에 반려동물 허용되는 이룸 아파트가 삼채 있고, 월세는 천오백달러부터 시작하네요.
+     0.83s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 3 pet-friendly 2-bedroom apartments available downtown, 
+     0.83s  user  발화 끝
+     0.90s  user  발화 시작: 진짜요?
+     0.90s  agent 발화 끝
+     0.91s  user  발화 시작: 이야, 잘 됐네요. 히아 씨, 정말 고마워요!
+     0.91s  user  발화 끝
+     0.96s  agent 발화 시작: 천만에요, 성민님! 도움이 되어서 기쁘네요.
+     0.96s  user  발화 끝
+     1.00s  agent 발화 끝

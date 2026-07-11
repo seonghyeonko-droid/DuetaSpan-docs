@@ -4,79 +4,80 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Taylor",
+#     "name": "Julia",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-01",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-05-16",
+#       "category": "home",
+#       "text": "User's home address is 51 Pine Court."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-03-02",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-07-27",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-12-25",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-20",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Runaus, it's good to meet you t | S2 That's good to know. I was wonderi | S3 Luna's been getting into everythin | S4 …do you have any advice for keepin
 
-     0.00s  agent 발화 시작: Hi Taylor, I'm Runaus. It's lovely to meet you.
-     1.52s  user  발화 시작: Yeah, yeah.
-     2.80s  user  발화 끝
-     3.26s  user  발화 시작: Hi Runaus, it's good to meet you too. What time is it right 
-     3.38s  agent 발화 끝
-     7.17s  <ret> 발화 (turn3 첫 프레임)
-     7.33s  agent 발화 시작: <ret> It’s currently 2:37 PM in Toronto, Canada. A perfect t
-     7.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Toronto, Canad
-     7.42s  user  발화 끝
-     9.34s  user  발화 시작: Nice.
-    10.07s  user  발화 끝
-    13.97s  user  발화 시작: That's good to know. I was wondering, do you remember what I
-    14.09s  agent 발화 끝
-    19.40s  <ret> 발화 (turn6 첫 프레임)
-    19.64s  agent 발화 시작: <ret> Yes, I do! You have a beautiful tabby cat named Luna.
-    19.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: [2025-09-06] User has a tabby cat named Luna.
-    19.77s  user  발화 끝
-    23.81s  agent 발화 끝
-    24.72s  user  발화 시작: Luna's been getting into everything.
-    26.98s  user  발화 끝
-    27.00s  agent 발화 시작: It’s quite common for cats to explore—
-    29.00s  user  발화 시작: …do you have any advice for keeping a curious cat entertaine
-    29.58s  agent 발화 끝
-    33.52s  agent 발화 시작: Ah, a very good question! Keeping a curious cat occupied is 
-    33.58s  user  발화 끝
-    40.70s  agent 발화 시작: Providing Luna with puzzle toys, scratching posts, and dedic
-    40.80s  agent 발화 끝
-    49.27s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Julia, I'm Sellara. It’s lovely to connect with you today
+     3.69s  agent 발화 끝
+     4.22s  user  발화 시작: Um, what time is it right now? I completely lost track.
+     8.42s  <ret> 발화 (turn2 첫 프레임)
+     8.58s  agent 발화 시작: <ret> It’s currently 2:38 PM in San Francisco, Julia. A peac
+     8.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in America/Los An
+     8.66s  user  발화 끝
+    14.93s  agent 발화 끝
+    15.36s  user  발화 시작: Oh, that’s good to know. And, uh, remind me… what was I plan
+    20.50s  <ret> 발화 (turn4 첫 프레임)
+    20.74s  agent 발화 시작: <ret> You're planning a trip to New Zealand in March, Julia.
+    20.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: [2025-11-20] User is planning a trip to New Zealand in March.
+    20.82s  user  발화 끝
+    22.60s  user  발화 시작: Mm-hmm.
+    23.23s  user  발화 끝
+    26.15s  agent 발화 끝
+    26.93s  user  발화 시작: New Zealand… right. Is Bella doing okay?
+    30.21s  <ret> 발화 (turn7 첫 프레임)
+    30.45s  agent 발화 시작: <ret> You have a Siamese cat named Bella. Such a lovely comp
+    30.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: [2025-12-25] User has a Siamese cat named Bella.
+    30.53s  user  발화 끝
+    35.78s  agent 발화 끝

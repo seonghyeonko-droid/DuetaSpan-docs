@@ -4,117 +4,125 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "Remy",
+#     "name": "Manon",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
+#     "nationality": "British",
+#     "gender": "female",
 #     "age_range": "late 20s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in August."
-#     },
-#     {
-#       "date": "2025-10-23",
+#       "date": "2026-04-06",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-05",
+#       "date": "2026-03-16",
 #       "category": "home",
-#       "text": "User's home address is 875 Elm Street."
+#       "text": "User's home address is 473 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-27",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-01",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-30",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-09-28",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-25",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you open the frequently aske | S2 Right. And can you check the weath | S3 Okay. I need to book a massage app | S4 Great, book it for me.
+# EXAMINER(FDB-v2) 단계: S1 I want to find a house in Miami Fl | S2 Hmm, that’s not too bad. What abou | S3 Perfect! Let’s go back to the hous | S4 Wonderful! I think I’d like to sch
 
-     0.00s  user  발화 시작: Could you open the frequently asked questions page in a new 
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> I’ve opened the Tavily FAQ page in a new tab for you.
-     3.52s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.75s]: (tool result) https://support.tavily.com/hc/en-us/sections/36000033459
-     3.70s  user  발화 끝
-     7.12s  agent 발화 시작: Is there anything specific I can help you find there?
-     7.27s  agent 발화 끝
-    10.50s  agent 발화 끝
-    10.53s  user  발화 시작: Um, what’s their refund policy?
-    12.69s  <ret> 발화 (turn4 첫 프레임)
-    12.77s  agent 발화 시작: <ret> Tavily offers refunds for unused credits within fourte
-    12.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) Refunds are available within 14 days of purchase for unu
-    12.93s  user  발화 끝
-    15.99s  user  발화 시작: Yeah, totally.
-    17.14s  user  발화 시작: Right. And can you check the weather in Seoul right now?
-    17.14s  user  발화 끝
-    17.87s  agent 발화 끝
-    19.84s  <ret> 발화 (turn7 첫 프레임)
-    20.08s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with 74 
-    20.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    20.28s  user  발화 끝
-    29.39s  agent 발화 시작: Perfect weather for a little rest, don't you think?
-    29.59s  agent 발화 끝
-    32.35s  agent 발화 끝
-    32.71s  user  발화 시작: Maybe. What time is it there?
-    34.58s  <ret> 발화 (turn10 첫 프레임)
-    34.82s  agent 발화 시작: <ret> Right now in Seoul, it’s Friday, July 10th, 2026, at 2
-    34.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-    35.06s  user  발화 끝
-    41.14s  agent 발화 시작: Plenty of daylight left to unwind!
-    41.26s  agent 발화 끝
-    44.10s  agent 발화 끝
-    44.53s  user  발화 시작: Okay. I need to book a massage appointment next week.
-    48.41s  user  발화 끝
-    48.54s  agent 발화 시작: Oh, a massage sounds wonderful!
-    50.49s  agent 발화 시작: Do you have a preferred day or time next week?
-    50.61s  agent 발화 끝
-    53.63s  user  발화 시작: Tuesday afternoon, if possible.
-    53.77s  agent 발화 끝
-    55.48s  <ret> 발화 (turn16 첫 프레임)
-    55.52s  user  발화 끝
-    55.64s  agent 발화 시작: <ret> I found Seoul Massage & Spa with an opening on Tuesday
-    55.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Seoul Massage & Spa: Tue, Jul 14, 2:00 PM, ₩80000, 02-12
-    61.07s  agent 발화 시작: The appointment is 80,000 won, and their number is 02-1234-5
-    61.29s  agent 발화 끝
-    65.13s  user  발화 시작: Really?
-    65.77s  user  발화 끝
-    68.15s  user  발화 시작: Great, book it for me.
-    68.53s  agent 발화 끝
-    69.17s  <ret> 발화 (turn20 첫 프레임)
-    69.56s  agent 발화 시작: <ret> Excellent! Your massage appointment at Seoul Massage &
-    69.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Appointment confirmed: Seoul Massage & Spa, Tue, Jul 14,
-    69.75s  user  발화 끝
-    77.69s  agent 발화 시작: Your confirmation ID is A7B2C9.
-    77.81s  agent 발화 끝
-    81.54s  agent 발화 끝
-    82.02s  user  발화 시작: Perfect.
-    82.51s  user  발화 끝
+     0.00s  user  발화 시작: I want to find a house in Miami Florida with at least a thre
+     4.77s  <ret> 발화 (turn1 첫 프레임)
+     5.01s  agent 발화 시작: <ret> I found twelve houses in Miami Florida, averaging two 
+     5.01s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.92s]: (tool result) 12 results found. Average price: $250/night. Check-in: t
+     5.14s  user  발화 끝
+    12.94s  agent 발화 끝
+    13.40s  user  발화 시작: That sounds good. Can you show me the cheapest one?
+    16.01s  <ret> 발화 (turn3 첫 프레임)
+    16.23s  agent 발화 시작: <ret> The most affordable is "Sunset View Villa", a three-st
+    16.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.81s]: The cheapest option is "Sunset View Villa", 3 stars, $180/night, 1 bed
+    16.45s  user  발화 끝
+    25.04s  agent 발화 끝
+    25.07s  user  발화 시작: Is it near South Beach?
+    26.54s  <ret> 발화 (turn5 첫 프레임)
+    26.70s  agent 발화 시작: <ret> It’s six point two miles from South Beach, about a fif
+    26.70s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.09s]: (tool result) 6.2 miles, approximately 15 minutes by car.
+    26.81s  user  발화 끝
+    31.69s  user  발화 시작: Hmm, that’s not too bad. What about houses with a pool?
+    31.78s  agent 발화 끝
+    34.98s  <ret> 발화 (turn7 첫 프레임)
+    35.21s  agent 발화 시작: <ret> I found eight houses with a pool, averaging three hund
+    35.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: (tool result) 8 results found with a pool. Average price: $320/night.
+    35.39s  user  발화 끝
+    38.94s  user  발화 시작: Yeah.
+    39.44s  user  발화 끝
+    40.23s  agent 발화 시작: These options generally offer more space and privacy, which 
+    40.31s  agent 발화 끝
+    46.10s  user  발화 시작: …Actually, what's the weather like in Miami right now?
+    46.86s  agent 발화 끝
+    48.71s  <ret> 발화 (turn11 첫 프레임)
+    49.10s  agent 발화 시작: <ret> Currently in Miami, it’s thirty point one degrees Cels
+    49.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.82s]: (tool result) 30.1°C, humidity 78%, wind 8.2 km/h. Sunny.
+    49.24s  user  발화 끝
+    58.93s  agent 발화 끝
+    59.21s  user  발화 시작: Perfect! Let’s go back to the houses with pools. Can you tel
+    64.46s  <ret> 발화 (turn13 첫 프레임)
+    64.62s  agent 발화 시작: <ret> "Ocean Breeze Estate" has a four point eight-star rati
+    64.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: "Ocean Breeze Estate" has 4.8 stars, $400/night, 2 bedrooms, pool, kit
+    64.72s  user  발화 끝
+    73.82s  user  발화 시작: That sounds lovely. Could you show me some pictures of it?
+    74.03s  agent 발화 끝
+    76.94s  <ret> 발화 (turn15 첫 프레임)
+    77.05s  user  발화 끝
+    77.09s  agent 발화 시작: <ret> I found a gallery with pictures of "Ocean Breeze Estat
+    77.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) Ocean Breeze Estate, Miami Florida: A luxurious villa wi
+    86.10s  user  발화 시작: Wonderful! I think I’d like to schedule a visit to see it.
+    86.14s  agent 발화 끝
+    89.09s  <ret> 발화 (turn17 첫 프레임)
+    89.48s  user  발화 끝
+    89.50s  agent 발화 시작: <ret> I’ve scheduled a visit for you to "Ocean Breeze Estate
+    89.50s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.69s]: (tool result) Visit scheduled for July 12, 2026, at 10:00 AM. Confirma
+    92.87s  user  발화 시작: Right.
+    93.64s  user  발화 끝
+    99.04s  user  발화 시작: Great, thank you so much for your help.
+    99.18s  agent 발화 끝
+   101.16s  user  발화 끝
+   101.32s  agent 발화 시작: You’re very welcome. Finding a space that feels right is so 
+   112.12s  agent 발화 끝

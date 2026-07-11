@@ -6,87 +6,100 @@
 #     "user_id": "v3_noinfo_23",
 #     "name": "Remy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
+#       "date": "2026-02-01",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-01-24",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-07-06",
+#       "date": "2025-12-17",
 #       "category": "home",
-#       "text": "User's home address is 816 Cedar Lane."
+#       "text": "User's home address is 415 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-07-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-07-09",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-11",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아냐… 전화번호 알아? | S2 어… 아쉽네. | S3 글쎄… 작년 7월 10일 서울 날씨는 어땠어? | S4 근데, 응. 근처에 이탈리아 식당 좀 찾아 줘.
+# EXAMINER(FDB-v2) 단계: S1 이선희 씨 연락처 있어? | S2 알아둬서 좋네. | S3 응, 완전 그렇지. 지금 서울 날씨는 어때? | S4 아, 아쉽다. 놓쳤네.
 
-     0.00s  user  발화 시작: 아냐… 전화번호 알아?
-     1.86s  user  발화 시작: …샤르마? 작년 컨퍼런스에서 만났어.
-     2.03s  user  발화 끝
-     4.68s  user  발화 끝
-     4.77s  <ret> 발화 (turn2 첫 프레임)
-     4.93s  agent 발화 시작: <ret> 아냐 샤르마 님의 전화번호는 공개적으로 찾을 수 없었습니다. 죄송합니다.
-     4.93s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.53s]: (no information found)
-     9.46s  agent 발화 끝
-     9.78s  user  발화 시작: 어… 아쉽네.
-    11.21s  user  발화 끝
-    11.39s  agent 발화 시작: 그럴 때가 있어요, 특히 개인 연락처는 잘 공개되지 않거든요. 혹시 컨퍼런스 주최측에 연락해 보시는 건 어떠
-    18.46s  user  발화 시작: 글쎄… 작년 7월 10일 서울 날씨는 어땠어?
-    18.48s  agent 발화 끝
-    21.47s  <ret> 발화 (turn6 첫 프레임)
-    21.79s  agent 발화 시작: <ret> 작년 7월 10일 서울 날씨는 섭씨 28.5도 정도로 꽤 더웠고, 습도도 높고 바람은 시속 7.2
-    21.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h
-    21.92s  user  발화 끝
-    26.75s  user  발화 시작: 응.
-    27.11s  user  발화 끝
-    30.64s  agent 발화 끝
-    30.77s  agent 발화 시작: 날씨가 좋았던 여름날이었던 것 같네요.
-    33.07s  agent 발화 끝
-    33.23s  user  발화 시작: 근데, 응. 근처에 이탈리아 식당 좀 찾아 줘.
-    36.68s  <ret> 발화 (turn10 첫 프레임)
-    36.76s  agent 발화 시작: <ret> 근처에 이탈리아 식당 세 곳을 찾았습니다. 별점 4.5점인 트라토리아 델 솔레는 0.8킬로미터 거
-    36.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2
-    37.02s  user  발화 끝
-    47.52s  agent 발화 끝
+     0.00s  user  발화 시작: 이선희 씨 연락처 있어?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.03s  agent 발화 시작: <ret> 죄송하지만, 이선희 씨의 공개된 연락처 정보는 찾을 수 없었어요. 그런 정보는 보통 개인적으로 관
+     0.03s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (no information found)
+     0.03s  user  발화 끝
+     0.13s  user  발화 시작: 응응.
+     0.13s  agent 발화 끝
+     0.14s  user  발화 시작: 그럼, 최근 앨범 발매일은 언제야?
+     0.14s  user  발화 끝
+     0.18s  agent 발화 시작: <ret> 그녀는 열다섯 번째 스튜디오 앨범, "My Christmas Story"를 이천이십삼 년 십이월 
+     0.18s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: Lee Sun-hee released her fifteenth studio album, "My Christmas Story",
+     0.18s  user  발화 끝
+     0.26s  <ret> 발화 (turn8 첫 프레임)
+     0.31s  user  발화 시작: 알아둬서 좋네.
+     0.31s  agent 발화 끝
+     0.33s  agent 발화 시작: 좋아하는 아티스트 소식을 꾸준히 듣는 건 정말 좋은 일이에요. 음악은 정말 기분을 좋게 해 주잖아요, 그렇지
+     0.33s  user  발화 끝
+     0.45s  user  발화 시작: 응, 완전 그렇지. 지금 서울 날씨는 어때?
+     0.45s  agent 발화 끝
+     0.50s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 26.1도이고, 습도는 68퍼센트, 풍속은 시속 3.2킬로미터예요.
+     0.50s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h
+     0.50s  user  발화 끝
+     0.58s  user  발화 시작: 응.
+     0.58s  agent 발화 끝
+     0.59s  agent 발화 시작: 날씨가 꽤 좋네요! 밖에서 음악을 즐기기에 좋은 날씨일 것 같아요—
+     0.59s  user  발화 끝
+     0.61s  <ret> 발화 (turn12 첫 프레임)
+     0.66s  user  발화 시작: …요즘 콘서트 많이 해?
+     0.66s  agent 발화 끝
+     0.69s  agent 발화 시작: <ret> 그녀는 이천이십사 년 이월 스물셋째 날부터 스물다섯째 날까지 서울 올림픽홀에서 “Re:Lee”라는
+     0.69s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from Februa
+     0.69s  user  발화 끝
+     0.85s  user  발화 시작: 아, 아쉽다. 놓쳤네.
+     0.85s  agent 발화 끝
+     0.87s  agent 발화 시작: 기대했던 행사를 놓치는 건 정말 아쉽네요. 앞으로의 공연 정보를 계속 얻으려면 그녀의 뉴스레터에 가입해 보시
+     0.87s  user  발화 끝
+     1.00s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "가국",
+#     "name": "혜완",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,83 +12,85 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-04-06",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in August."
-#     },
-#     {
-#       "date": "2025-10-23",
+#       "date": "2026-03-16",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-05",
+#       "date": "2026-02-25",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-27",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-19",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-30",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래? | S2 음… 그럼 다음 주 화요일은 어때? | S3 응. | S4 그럼 KTX 오전 열한시 특실로 예매해 줘.
+# EXAMINER(FDB-v2) 단계: S1 마이애미 플로리다에 별점 세개 이상이고… | S2 가장 저렴한 집은 어디야? | S3 음, 괜찮아 보이네. | S4 … 조스 스톤 크랩 예약해 줄 수 있어?
 
-     0.00s  user  발화 시작: 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래?
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.12s  user  발화 끝
-     4.40s  agent 발화 시작: <ret> 죄송해요. 현재 그 날짜에 대한 기차표 정보가 없네요. 다른 날짜를 알아볼까요?
-     4.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.31s]: (no information found)
-     9.71s  agent 발화 끝
-    10.24s  user  발화 시작: 음… 그럼 다음 주 화요일은 어때?
-    13.38s  <ret> 발화 (turn3 첫 프레임)
-    13.66s  user  발화 끝
-    13.71s  agent 발화 시작: <ret> 다음 주 화요일, 칠월 십사일에 서울에서 부산 가는 기차편이 있습니다. 지금 바로 확인해 드릴까요
-    13.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: {"date": "2026-07-14", "departure": "Seoul", "arrival": "Busan"}
-    20.17s  user  발화 시작: 응.
-    20.24s  agent 발화 끝
-    20.66s  user  발화 끝
-    20.79s  agent 발화 시작: 어떤 시간대 기차를 선호하시나요? 좀 더 자세히 말씀해 주시면 더 정확하게 찾아드릴 수 있어요.
-    24.84s  user  발화 시작: 아.
-    25.38s  user  발화 끝
-    26.92s  <ret> 발화 (turn7 첫 프레임)
-    26.99s  agent 발화 시작: <ret> KTX는 오전 여덟시, 열한시, 오후 두시, 다섯시에 출발하는 편이 있네요. 좌석 등급은 일반실과
-    27.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.82s]: [2026-07-10] 기차표를 알아봐 달라고 하셨어요.
-    27.14s  agent 발화 끝
-    36.56s  agent 발화 시작: 혹시 기차표 예매를 도와드릴까요? 특실은 좌석이 빨리 소진될 수 있으니 서두르는 게 좋겠어요.
-    36.81s  agent 발화 끝
-    43.00s  agent 발화 끝
-    43.35s  user  발화 시작: 그럼 KTX 오전 열한시 특실로 예매해 줘.
-    46.04s  <ret> 발화 (turn10 첫 프레임)
-    46.40s  user  발화 끝
-    46.42s  agent 발화 시작: <ret> KTX 오전 열한시 특실로 예매 완료되었습니다. 확인번호는 에이 비 일 이 씨 디입니다. 즐거운 
-    46.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.90s]: (tool result) {"confirmation id": "AB12CD"}
-    55.33s  agent 발화 끝
-    55.43s  agent 발화 시작: 혹시 여행 중에 필요한 다른 정보가 있으신가요? 편안한 여행을 위한 팁도 알려드릴 수 있어요.
-    61.08s  agent 발화 끝
+     0.00s  user  발화 시작: 마이애미 플로리다에 별점 세개 이상이고…
+     2.91s  user  발화 끝
+     5.13s  user  발화 시작: …한 명만 가는 집을 찾아줄 수 있어?
+     7.28s  <ret> 발화 (turn2 첫 프레임)
+     7.38s  user  발화 끝
+     7.59s  agent 발화 시작: <ret> 마이애미 플로리다에서 별점 세개 이상이고 한 분이 묵을 수 있는 집 십이채를 찾았어요. 숙박 요금
+     7.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Found 12 houses matching your criteria in Miami, Florida
+    13.10s  user  발화 시작: 그렇죠.
+    13.74s  user  발화 끝
+    17.59s  user  발화 시작: 가장 저렴한 집은 어디야?
+    17.75s  agent 발화 끝
+    19.11s  <ret> 발화 (turn5 첫 프레임)
+    19.42s  agent 발화 시작: <ret> 가장 저렴한 집은 마이애미 비치의 오션 드라이브 백이십삼번지에 있고, 밤에 백오십달러예요.
+    19.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: The cheapest house is located at 123 Ocean Drive, Miami Beach, and cos
+    19.47s  user  발화 끝
+    26.88s  agent 발화 끝
+    27.11s  user  발화 시작: 그 집 사진 좀 볼 수 있을까?
+    28.87s  <ret> 발화 (turn7 첫 프레임)
+    29.05s  user  발화 끝
+    29.11s  agent 발화 시작: <ret> 오션 드라이브 백이십삼번지에 있는 집 사진은 여기 있어요 — [이미지 링크 일], [이미지 링크 
+    29.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: (tool result) Here are some photos of the house at 123 Ocean Drive, Mi
+    40.11s  user  발화 시작: 음, 괜찮아 보이네.
+    40.24s  agent 발화 끝
+    41.86s  user  발화 끝
+    41.96s  agent 발화 시작: 다행이네요. 마음에 드신다니 기뻐요. 편안하고 즐거운 휴가가 되길 바라요. 가족과 함께라면 더욱 특별한 시간
+    50.99s  agent 발화 끝
+    51.09s  user  발화 시작: 그 집 주변에 괜찮은 식당도 있을까?
+    53.53s  <ret> 발화 (turn11 첫 프레임)
+    53.67s  user  발화 끝
+    53.68s  agent 발화 시작: <ret> 백이십삼 오션 드라이브 근처에는 조스 스톤 크랩(별점 사 점 오개)과 스미스 앤 월렌스키(별점 네
+    53.69s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.81s]: (tool result) There are several restaurants near 123 Ocean Drive, Miam
+    61.78s  user  발화 시작: … 조스 스톤 크랩 예약해 줄 수 있어?
+    62.50s  agent 발화 끝
+    64.26s  <ret> 발화 (turn13 첫 프레임)
+    64.27s  user  발화 끝
+    64.57s  agent 발화 시작: <ret> 조스 스톤 크랩에 이천이십육년 칠월 십일일 저녁 일곱시에 한명으로 예약이 완료되었어요. 확인 번호
+    64.58s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.25s]: (tool result) Reservation confirmed for 1 person at Joe's Stone Crab o
+    74.35s  user  발화 시작: 고마워.
+    74.82s  agent 발화 끝
+    74.98s  user  발화 끝
+    75.02s  agent 발화 시작: 천만에요. 즐거운 식사 되세요.
+    77.51s  agent 발화 끝

@@ -1,56 +1,51 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Kea, a upbeat and supportive wellness coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Frella, a practical and reassuring life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Stella",
+    "name": "Ruby",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "40s",
-    "language": "French"
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-21",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-03-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-12-28",
+      "date": "2026-06-04",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-12-22",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-03-30",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-13",
-      "category": "home",
-      "text": "User's home address is 528 Cedar Lane."
-    },
-    {
-      "date": "2025-07-21",
+      "date": "2026-02-09",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2025-10-25",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-07-23",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-08",
+      "date": "2025-12-22",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -58,46 +53,57 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-10-01",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-05",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Kea, I've been feeling really stressed lately.
-[  3.61s][moshi] Hello! It's completely understandable to feel stressed—life throws a lot at us.
-[  8.14s][user ] «backchannel» Uh-huh.
-[  9.62s][user ] That's good to hear. Do you have any quick tips?
-[ 13.21s][moshi] Even a few deep breaths can make a difference. Focusing on your breath anchors you to the present.
-[ 19.30s][user ] Okay, I’ll try that. Who is the most successful snooker player ever?
-[ 24.47s][moshi] ⟨ret@24.31s⟩ ⟦⚡SPAN@24.47s: Stephen Hendry is widely regarded as the most successful snooker player in history, having won seven World Cha⟧ Many consider Stephen Hendry the most successful snooker player—he’s won seven World Championship titles. It's a remarkable record, isn’t it?
-[ 30.96s][user ] «backchannel» Yeah.
-[ 33.11s][user ] Seven championships, wow! What year did he win his ⟨ret@37.62s⟩ first?
-[ 37.93s][moshi] ⟦⚡SPAN@37.94s: Stephen Hendry won his first World Championship title in 1990, defeating Jimmy White in the final.⟧ He won his very first World Championship in 1990, defeating Jimmy White in that final match.
-[ 40.31s][user ] «backchannel» Oh.
-[ 44.47s][user ] Jimmy White? I've heard that name before.
-[ 47.32s][moshi] «interrupted» He’s a legend in his own right, a very popular player—
-[ 50.63s][user ] «interrupts_prev» …did Hendry win them all in a row?
-[ 53.44s][moshi] ⟨ret@53.29s⟩ ⟦⚡SPAN@53.45s: Although Stephen Hendry won seven World Championship titles, they were not all consecutive; his wins came in 1⟧ He won seven World Championships, but not all in a row—they came in 1990, 1992, 1993, 1994, 1995, 1996, and 1999.
-[ 60.82s][user ] «backchannel» Right.
-[ 64.69s][moshi] It really is! Such dedication and skill—it takes years to reach that level.
-[ 66.69s][user ] «backchannel» Yeah, yeah.
-[ 69.64s][user ] I’m trying to focus on my breathing like you said.
-[ 72.84s][moshi] Wonderful! Just close your eyes and take slow, deliberate breaths. Allow your shoulders to relax.
-[ 77.05s][user ] «backchannel» Mm-hmm.
-[ 81.81s][user ] It's…hard to quiet my mind.
-[ 84.78s][moshi] That’s very common. Thoughts will come and go—simply acknowledge them without judgment.
-[ 87.94s][user ] «backchannel» Mhm.
-[ 90.90s][user ] What's the weather like in Seoul right ⟨ret@93.16s⟩ now?
-[ 93.39s][moshi] ⟦⚡SPAN@93.40s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0°C in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour. Perhaps a walk outside could help clear your head?
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[106.92s][user ] Maybe. That sounds nice.
-[109.19s][moshi] A change of scenery can do wonders for your mood. Connecting with nature is very grounding.
-[113.36s][user ] «backchannel» Uh-huh.
-[115.41s][user ] Thanks, Kea. I feel a bit better already.
-[118.09s][moshi] You're very welcome! Remember, even small steps can lead to big improvements in your wellbeing.
+[  0.00s][user ] I’m thinking of visiting some palaces. Which ones are really historically important?
+[  0.03s][moshi] That’s a lovely idea! Many palaces tell fascinating stories.
+[  0.05s][user ] «backchannel» Yeah.
+[  0.05s][user ] Are there any in England that were built for someone…
+[  0.08s][user ] …then ⟨ret@0.00s⟩ taken over by a Tudor?
+[  0.09s][moshi] ⟦⚡SPAN@0.09s: Hampton Court Palace was originally built for Cardinal Thomas Wolsey, chief minister to Henry VIII, and was la⟧ Hampton Court Palace began as a home for Cardinal Wolsey, a key figure for Henry the Eighth, and then became royal property.
+[  0.15s][user ] Oh, ⟨ret@0.11s⟩ Wolsey! I’ve heard of him. What did Henry do with it once he took it?
+[  0.19s][moshi] ⟦⚡SPAN@0.19s: Henry VIII greatly expanded Hampton Court Palace, using it as a showcase for his power and hosting lavish even⟧ Henry the Eighth really expanded Hampton Court, using it to show off his wealth and throwing big parties.
+[  0.23s][user ] Lavish, ⟨ret@0.00s⟩ huh? Sounds fun. Which Tudors actually *lived* there, then?
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: Henry VIII, Edward VI, Mary I, and Elizabeth I all resided at Hampton Court Palace during their reigns.⟧ Henry the Eighth, Edward the Sixth, Mary the First, and Elizabeth the First all lived at Hampton Court during their time as rulers.
+[  0.32s][user ] Wow, all of them! That’s quite a history.
+[  0.34s][moshi] It really is. A place can absorb so much energy over the centuries, don’t you think?
+[  0.38s][user ] Did ⟨ret@0.33s⟩ Elizabeth change much about it, or did she leave it as Henry made it?
+[  0.41s][moshi] ⟦⚡SPAN@0.41s: Elizabeth I made relatively few structural changes to Hampton Court Palace, preferring to maintain its existin⟧ Elizabeth the First didn’t change much about the palace, preferring to keep the grandeur Henry the Eighth created.
+[  0.46s][user ] «backchannel» Oh.
+[  0.46s][user ] So it was pretty much Henry’s vision she lived in?
+[  0.49s][moshi] Largely, yes. She appreciated the existing magnificence of the palace.
+[  0.51s][user ] «backchannel» Yeah.
+[  0.51s][user ] What about before Wolsey? Was there something there before he built Hampton Court?.
+[  0.55s][moshi] «interrupted» Before Wolsey’s palace, the site was occupied by a manor house belonging to the Knights Hospitaller—
+[  0.59s][user ] «interrupts_prev» …Was ⟨ret@0.38s⟩ it a really big manor house, or just a small one?
+[  0.62s][moshi] ⟦⚡SPAN@0.62s: The manor house belonging to the Knights Hospitaller prior to Wolsey’s construction was a comparatively small ⟧ It was a relatively modest manor house, primarily used for administrative purposes by the Knights Hospitaller.
+[  0.66s][moshi] Before Wolsey built Hampton Court, the Knights Hospitaller had a smaller manor house there, mostly for managing things.
+[  0.70s][user ] So Wolsey completely transformed the site, then.
+[  0.72s][moshi] He envisioned something grand, a statement of his own importance.
+[  0.74s][user ] And Henry just… took it? That sounds a bit rude.
+[  0.77s][moshi] It was a common practice for monarchs of that era to acquire properties from powerful figures.
+[  0.81s][user ] I ⟨ret@0.43s⟩ suppose so. What’s the weather like there today?
+[  0.83s][moshi] ⟦⚡SPAN@0.83s: (tool result) 18.5°C, humidity 62%, wind 7.2 km/h⟧ Right now at Hampton Court Palace, it’s 18.5 degrees Celsius, with 62 percent humidity and a 7.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Hampton Court Palace"}}
+[  0.88s][user ] Not ⟨ret@0.75s⟩ bad at all. Is it open to the public currently?
+[  0.91s][moshi] ⟦⚡SPAN@0.91s: (tool result) Hampton Court Palace is open daily from 10:00 AM to 6:00 PM, with last entry at 5:00 PM. Histori⟧ Yes, Hampton Court Palace is open today from 10 AM to 6 PM, with the last entry at 5 PM. You can find more details at hrp.org.uk.
+      CALL: {"function": "search", "arguments": {"query": "Hampton Court Palace opening hours"}}
+[  0.98s][user ] That’s good to know. Thanks, Frella.
+[  0.99s][moshi] You’re very welcome.

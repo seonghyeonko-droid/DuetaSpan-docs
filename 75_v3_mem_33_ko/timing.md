@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "서진",
+#     "name": "연완",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,85 +12,62 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-06-08",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-05-21",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-05-16",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-07-05",
+#       "date": "2026-03-02",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2025-06-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-12-11",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-09",
-#       "title": "Researching a used car",
+#       "date": "2025-07-29",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-23",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-18",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 서진님. 저는 여러분의 시간을 좀 더 편안하게 만들어 드릴 루나우스예요.
-     2.35s  user  발화 시작: 어.
-     2.75s  user  발화 끝
-     4.95s  agent 발화 끝
-     5.06s  user  발화 시작: 어, 안녕하세요.
-     6.46s  <ret> 발화 (turn3 첫 프레임)
-     6.54s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십팔분이에요. 오늘 하루도 잘 보내고 계
-     6.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Asia/Seoul rig
-     6.58s  user  발화 끝
-     8.51s  user  발화 시작: 우와.
-     9.14s  user  발화 끝
-    13.03s  agent 발화 끝
-    13.24s  user  발화 시작: 아, 네. 그런데 제가 다음 주 화요일에 중요한 회의가 있는데.
-    17.30s  user  발화 끝
-    17.38s  agent 발화 시작: 다음 주 화요일이요? 혹시 회의 준비에 특별히 신경 쓰이는 부분이 있으신가요 —
-    21.39s  user  발화 시작: …아니, 그게 아니라, 그날 날씨가 어떨지 궁금해서요.
-    22.01s  agent 발화 끝
-    24.57s  <ret> 발화 (turn8 첫 프레임)
-    24.89s  agent 발화 시작: <ret> 다음 주 화요일 서울 날씨는 이십육도, 습도 육십팔%, 바람은 시속 칠 점 이킬로미터로 대체로 맑
-    24.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) 26.0°C, humidity 68%, wind 7.2 km/h, condition: partly c
-    24.95s  user  발화 끝
-    35.14s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 연완님. 저는 셀라라예요. 오늘 하루 어떠신가요?
+     3.46s  agent 발화 끝
+     3.99s  user  발화 시작: 안녕하세요, 셀라라님. 지금 몇 시예요?
+     6.99s  <ret> 발화 (turn2 첫 프레임)
+     7.07s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십칠분이에요. 편안한 오후 보내세요.
+     7.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+     7.12s  user  발화 끝
+    11.19s  user  발화 시작: 그렇죠.
+    11.87s  user  발화 끝
+    13.92s  agent 발화 끝
+    14.85s  user  발화 시작: 고맙습니다. 저, 혹시 고양이 이름이 뭐였죠? 기억이 잘 안 나네요.
+    19.50s  <ret> 발화 (turn5 첫 프레임)
+    19.71s  user  발화 끝
+    19.73s  agent 발화 시작: <ret> 연완님은 샴 고양이 벨라를 키우고 계세요. 이천이십육년 유월 팔일에 말씀해주셨어요.
+    19.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: [2026-06-08] User has a Siamese cat named Bella.
+    22.15s  user  발화 시작: 예.
+    22.79s  user  발화 끝
+    25.04s  agent 발화 시작: 벨라가 연완님께 큰 즐거움을 주길 바라요.
+    25.06s  agent 발화 끝
+    27.40s  agent 발화 끝

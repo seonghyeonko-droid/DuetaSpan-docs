@@ -6,87 +6,100 @@
 #     "user_id": "v3_noinfo_23",
 #     "name": "Remy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
+#       "date": "2026-02-01",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-01-24",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-07-06",
+#       "date": "2025-12-17",
 #       "category": "home",
-#       "text": "User's home address is 816 Cedar Lane."
+#       "text": "User's home address is 415 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-07-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-07-09",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-11",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know the phone number for A | S2 Oh, um… that’s a shame. | S3 Maybe… what was the weather like i | S4 Actually, yes. Find me some Italia
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 That's good to know. | S3 Yeah, definitely. What's the weath | S4 Oh, that's a shame. I missed it.
 
-     0.00s  user  발화 시작: Do you know the phone number for Anya…
-     1.94s  user  발화 끝
-     3.94s  user  발화 시작: …Sharma? I met her at the conference last year.
-     6.27s  <ret> 발화 (turn2 첫 프레임)
-     6.67s  agent 발화 시작: <ret> I’ve looked, and unfortunately, I couldn’t find a publ
-     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.24s]: (no information found)
-     6.71s  user  발화 끝
-    11.90s  agent 발화 끝
-    12.05s  user  발화 시작: Oh, um… that’s a shame.
-    14.31s  user  발화 끝
-    14.41s  agent 발화 시작: It happens sometimes, especially with private contact detail
-    20.81s  user  발화 시작: Maybe… what was the weather like in Seoul on July 10th of la
-    20.90s  agent 발화 끝
-    24.69s  <ret> 발화 (turn6 첫 프레임)
-    25.09s  agent 발화 시작: <ret> Last July 10th in Seoul, it was quite warm—around twen
-    25.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.75s]: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h
-    25.12s  user  발화 끝
-    31.04s  user  발화 시작: Mm-hmm.
-    31.73s  user  발화 끝
-    35.68s  agent 발화 시작: It sounds like it was a lovely summer day.
-    35.84s  agent 발화 끝
-    38.02s  user  발화 시작: Actually, yes. Find me some Italian restaurants nearby.
-    38.03s  agent 발화 끝
-    41.28s  <ret> 발화 (turn10 첫 프레임)
-    41.59s  agent 발화 시작: <ret> I found three Italian restaurants close by—Trattoria d
-    41.60s  ⚡SPAN 주입 [d'=1.60s / d_lead=11.69s]: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2
-    41.68s  user  발화 끝
-    53.28s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
+     2.30s  <ret> 발화 (turn1 첫 프레임)
+     2.69s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
+     2.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (no information found)
+     2.87s  user  발화 끝
+     8.34s  user  발화 시작: Yeah.
+     8.73s  user  발화 끝
+    10.14s  user  발화 시작: Oh, okay. Well, what about her most recent album release dat
+    10.20s  agent 발화 끝
+    13.71s  <ret> 발화 (turn4 첫 프레임)
+    14.10s  agent 발화 시작: <ret> She released her fifteenth studio album, "My Christmas
+    14.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: Lee Sun-hee released her fifteenth studio album, "My Christmas Story",
+    14.16s  user  발화 끝
+    22.68s  agent 발화 끝
+    22.69s  user  발화 시작: That's good to know.
+    23.78s  user  발화 끝
+    23.82s  agent 발화 시작: It’s wonderful to stay current with artists you enjoy. Music
+    29.15s  user  발화 시작: Yeah, definitely. What's the weather like in Seoul right now
+    29.56s  agent 발화 끝
+    32.47s  <ret> 발화 (turn8 첫 프레임)
+    32.55s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-six point one
+    32.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.14s]: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h
+    32.66s  user  발화 끝
+    36.53s  user  발화 시작: Mm-hmm.
+    36.93s  user  발화 끝
+    41.53s  agent 발화 시작: It sounds quite pleasant! Perhaps a good day to enjoy some m
+    41.69s  agent 발화 끝
+    45.88s  user  발화 시작: …Do you think she does many concerts these days?
+    46.58s  agent 발화 끝
+    48.12s  <ret> 발화 (turn12 첫 프레임)
+    48.28s  agent 발화 시작: <ret> She held a concert series called “Re:Lee” from Februar
+    48.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.06s]: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from Februa
+    48.41s  user  발화 끝
+    60.34s  agent 발화 끝
+    60.55s  user  발화 시작: Oh, that's a shame. I missed it.
+    62.18s  agent 발화 시작: It’s disappointing to miss an event you’re looking forward t
+    62.25s  user  발화 끝
+    70.10s  agent 발화 끝

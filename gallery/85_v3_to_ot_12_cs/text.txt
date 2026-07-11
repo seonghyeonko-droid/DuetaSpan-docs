@@ -1,61 +1,62 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 격려적이고 비판적이지 않은 라이프 코치 Elena입니다. <system>
+SYSTEM: <system> 당신은 진로 선택 및 직장 스트레스에 대한 도움을 주는, 현실적이고 공감 능력이 뛰어난 상담사 Thael입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Nora",
+    "name": "Ruby",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
+      "date": "2026-05-28",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-06-16",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2026-03-15",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-08-27",
+      "date": "2026-05-25",
       "category": "allergy",
       "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-03-28",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-08-09",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-09",
-      "title": "Researching a used car",
+      "date": "2026-03-01",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, "Three Little Pigs"라는 노래를 부른 가수가 누구인지 아세요? 계속 생각나서요.
-[  6.55s][moshi] ⟨ret@6.24s⟩ ⟦⚡SPAN@6.56s: Green Jellÿ is an American parody metal band formed in 1989.⟧ 아, 그거 재미있는 노래죠! 사실 Green Jellÿ라는 패러디 메탈 밴드가 부른 노래예요.
-[ 12.79s][user ] Green Jellÿ요? 좀… 뜻밖인데요. 제가…
-[ 18.62s][user ] 만화 영화 사운드트랙인 줄 알았어요.
-[ 20.88s][moshi] 하하, 정말 놀랍죠, 그렇지 않나요? 때로는 가장 기억에 남는 노래가 숨겨진 기원을 가지고 있기도 해요.
-[ 28.58s][user ] «to_other» 여보, 쓰레기 버렸어요?
-[ 30.43s][user ] 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 ⟨ret@34.76s⟩ 유명한가요?
-[ 35.16s][moshi] ⟦⚡SPAN@35.16s: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it featured songs like "Three Little Pigs"⟧ 음, 그들은 천구백구십이년에 첫 앨범을 발표했는데, “Three Little Pigs”와 “Cereal Killer” 같은 곡들이 수록되어 있어요.
+[  0.00s][user ] 어떤 사람이 유명한 일기를 썼어…
+[  4.28s][user ] …런던 대화재에 ⟨ret@5.65s⟩ 대해서?
+[  5.97s][moshi] ⟦⚡SPAN@5.97s: Samuel Pepys was an English naval administrator and Member of Parliament who is also known for the diary he ke⟧ 아, 정말 흥미로운 이야기네요. 사무엘 피피스가 17세기 런던의 삶을 자세히 기록한 아주 유명한 일기를 썼어요.
+[ 10.74s][user ] «backchannel» 응.
+[ 14.11s][user ] 오, 흥미롭네. 그 사람이 화재 현장에 실제로 ⟨ret@17.45s⟩ 있었어?
+[ 17.85s][moshi] ⟦⚡SPAN@17.85s: Pepys recorded the events of the Great Fire of London in his diary, describing the progress of the blaze and i⟧ 네, 그랬어요. 피피스는 일기에 대화재 당시의 상황을 기록했고, 화재가 어떻게 진행되었고 도시에는 어떤 영향을 미쳤는지 묘사했어요.
+[ 27.13s][moshi] «interrupted» ⟨ret@26.82s⟩ ⟦⚡SPAN@27.94s: The diary covers the years 1660 to 1669, and provides a detailed and personal account of events such as the Gr⟧ 정말 생생하게 경험을 담아낸 게 놀라워요. 일기는 천육백육십구 년부터 1669년까지의 기록을 담고 있는데, 대역병 같은 사건에 대한 자세한 내용도 담겨 있어요—
+[ 39.22s][user ] «interrupts_prev» …화재 원인에 대해서는 안 썼어? 그냥 화재가 뭐 했는지 쓴 ⟨ret@43.28s⟩ 거야?
+[ 43.44s][moshi] ⟦⚡SPAN@43.44s: Pepys’s diary entries about the fire do not specifically detail its cause, but rather focus on the unfolding e⟧ 원인에 집중하지 않았고, 오히려 사건이 전개되는 과정, 사람들의 공포, 그리고 파괴에 대해 썼어요. 정말 감동적인 글이에요.

@@ -4,64 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Jordan",
+#     "name": "Emilia",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "German",
+#     "gender": "female",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-03-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-01-04",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2025-11-30",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-01-03",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-11-19",
+#       "date": "2025-09-25",
 #       "category": "home",
-#       "text": "User's home address is 247 Maple Drive."
+#       "text": "User's home address is 506 Pine Court."
 #     },
 #     {
-#       "date": "2025-07-03",
+#       "date": "2025-06-27",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-01",
+#       "date": "2025-08-28",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -72,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: When did Nick Foles last play for the Eagles?
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.50s  agent 발화 시작: <ret> Well, it seems Nick Foles last played for the Eagles i
-     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: Nick Foles last played for the Philadelphia Eagles in 2019, during the
-     3.61s  user  발화 끝
-    12.77s  agent 발화 끝
+     0.00s  user  발화 시작: Where was the Beauty and the Beast TV show filmed?
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  agent 발화 시작: <ret> Oh, that's a lovely show! It was mostly filmed in Toro
+     3.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: The live-action Beauty and the Beast television series was primarily f
+     3.33s  user  발화 끝
+    14.92s  agent 발화 끝

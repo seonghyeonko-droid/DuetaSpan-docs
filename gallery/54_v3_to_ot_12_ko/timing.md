@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "재찬",
+#     "name": "성진",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,47 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-06-09",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-11-23",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-07-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2026-05-28",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#     },
+#     {
+#       "date": "2026-05-24",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-12-17",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-10",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-29",
+#       "date": "2025-06-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -68,16 +55,33 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 런던 대화재에 대해 일기를 쓴 사람이 누구였지? | S2 음, 그 피피스라는 사람이 뭘 특별히 했길래 유명한 거야? | S3 …그 일기에서 대화재에 대해 얼마나 자세히 썼어? | S4 아, 그렇구나. 그 일기를 지금 읽어볼 수 있는 데가 있을까?
 
-     0.00s  user  발화 시작: 혹시 ‘Three Little Pigs’라는 노래 누가 불렀는지 알아요?
-     2.82s  <ret> 발화 (turn1 첫 프레임)
-     2.95s  user  발화 끝
-     3.13s  agent 발화 시작: <ret> 그 노래는 Green Jellÿ라는 밴드가 불렀어요. 신나는 곡이죠?
-     3.14s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.79s]: Green Jellÿ performs the rock song “Three Little Pigs”.
-     6.92s  agent 발화 끝
-     7.07s  user  발화 시작: 잠깐만, 아까 말했던 거…
-     9.13s  user  발화 끝
-    10.07s  user  발화 시작: 아, 죄송해요. 다시 질문할게요. 그 밴드는 다른 노래도 많이 했어요?
-    14.75s  agent 발화 시작: Green Jellÿ는 다양한 곡을 발표했답니다. 즐거운 음악을 많이 만들어낸 밴드예요.
-    14.93s  user  발화 끝
-    19.76s  agent 발화 끝
+     0.00s  user  발화 시작: 런던 대화재에 대해 일기를 쓴 사람이 누구였지?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.08s  agent 발화 시작: <ret> 런던 대화재 당시 일기를 쓴 사람은 사무엘 피피스였어요. 그 시대의 기록을 남긴 중요한 인물이죠.
+     0.08s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Samuel Pepys kept a diary during the Great Fire of London in 1666.
+     0.08s  user  발화 끝
+     0.24s  user  발화 시작: 음.
+     0.24s  agent 발화 끝
+     0.25s  user  발화 시작: 음, 그 피피스라는 사람이 뭘 특별히 했길래 유명한 거야?
+     0.25s  user  발화 끝
+     0.25s  <ret> 발화 (turn6 첫 프레임)
+     0.28s  <ret> 발화 (turn4 첫 프레임)
+     0.36s  agent 발화 시작: <ret> 사무엘 피피스는 해군 행정관이자 국회의원이었는데—
+     0.36s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Samuel Pepys was a naval administrator and Member of Parliament, noted
+     0.36s  user  발화 끝
+     0.41s  user  발화 시작: …그 일기에서 대화재에 대해 얼마나 자세히 썼어?
+     0.41s  agent 발화 끝
+     0.49s  agent 발화 시작: <ret> 피피스의 일기는 런던 대화재의 확산과 영향에 대한 자세한 기록을 담고 있어요. 당시 상황을 생생하
+     0.49s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.24s]: Pepys' diary provides a detailed account of the Great Fire of London, 
+     0.49s  user  발화 끝
+     0.54s  <ret> 발화 (turn9 첫 프레임)
+     0.74s  user  발화 시작: 그치.
+     0.74s  agent 발화 끝
+     0.75s  user  발화 시작: 아, 그렇구나. 그 일기를 지금 읽어볼 수 있는 데가 있을까?
+     0.75s  user  발화 끝
+     0.86s  agent 발화 시작: <ret> 사무엘 피피스의 일기는 구텐베르크 프로젝트에서 무료로 온라인에서 볼 수 있어요. 링크는 이쪽입니다
+     0.86s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Project Gutenberg offers Samuel Pepys' diary online for 
+     0.86s  user  발화 끝
+     1.00s  agent 발화 끝

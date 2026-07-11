@@ -1,10 +1,10 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Orelius, a gentle and reflective wellness coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Iona, a thoughtful and soft-spoken wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Rosa",
+    "name": "Ivy",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -13,70 +13,74 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "Canadian",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-04-25",
+      "date": "2026-03-22",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2026-03-21",
+      "date": "2025-12-06",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
+      "text": "User is planning a trip to Kyoto in May."
     },
     {
-      "date": "2025-09-03",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2025-10-09",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-06-27",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-07-21",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-07-18",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-02",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-06",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-05-30",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-26",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me the first three logs relating to a timeout issue.
-[  3.62s][moshi] ⟨ret@3.54s⟩ ⟦⚡SPAN@3.62s: (no information found)⟧ Give me a moment while I broaden the search to find those logs for you.
-      CALL: {"function": "tavily-search", "arguments": {"query": "browser console logs timeout issue"}}
-[  7.68s][user ] That sounds good. Um, are there any good Italian restaurants ⟨ret@11.55s⟩ nearby?
-[ 11.71s][moshi] ⟦⚡SPAN@11.71s: {"location": "current", "cuisine": "Italian"}⟧ I’m finding Italian restaurants near your current location. There are several options within a few miles.
-[ 17.84s][user ] [laugh] Oh, perfect timing! I was just thinking about lunch.
-[ 21.36s][moshi] It seems we're on the same wavelength. A shared enjoyment of good food is a lovely thing.
-  ⟦⚡지연 SPAN 도착@25.35s: tavily-search: "Here are three relevant log entries:\n1. 2026-07-09T14:32:15.234Z - Timeout error during API c⟧
-[ 26.13s][moshi] «deferred_result» ⟨ret@26.13s⟩ I have those logs now, after expanding the search. I found three logs indicating timeout errors during API calls, occurring yesterday afternoon.
-[ 36.55s][user ] Oh, okay. That's... helpful. Maybe the network *is* unstable.
-[ 42.37s][moshi] It's good to identify a potential cause. Perhaps checking your connection would be a good step?
+[  0.00s][user ] How ⟨ret@0.00s⟩ many images are on this webpage?
+[  0.07s][moshi] ⟦⚡SPAN@0.07s: (tool result) {"images": 12, "links": 25, "text content": "Example domain."}⟧ There are twelve images on this page, according to my search. It seems a fairly simple website.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.example.com"}}
+[  0.24s][user ] «backchannel» Uh-huh.
+[  0.26s][user ] Um, that's good to know. Could you find me some restaurants nearby?
+[  0.38s][moshi] Do you have a particular type of cuisine in mind, or a price range?
+[  0.52s][user ] «backchannel» Yeah, totally.
+[  0.54s][user ] Just ⟨ret@0.28s⟩ anything open now, I guess.
+[  0.60s][moshi] ⟦⚡SPAN@0.60s: (tool result) {"restaurants": [{"name": "Pasta Paradise", "address": "123 Main St", "cuisine": "Italian", "rat⟧ Pasta Paradise and Spice Route are both open now. Pasta Paradise is Italian, with a four point five star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"open_now": true}}
+[  0.81s][user ] Spice Route sounds nice.
+[  0.85s][moshi] That sounds lovely. Perhaps a little spice is just what you need to feel inspired.

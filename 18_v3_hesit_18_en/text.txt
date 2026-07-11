@@ -1,51 +1,51 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Gellami, a grounded and empathetic wellness coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Driaia, a thoughtful and soft-spoken wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Emma",
+    "name": "Sam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-11-13",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-04",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2025-11-09",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-09-04",
+      "date": "2026-03-17",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-08-03",
+      "date": "2025-10-31",
       "category": "work",
       "text": "User works as a chef."
     },
     {
-      "date": "2025-06-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-09-02",
+      "category": "home",
+      "text": "User's home address is 258 Elm Street."
+    },
+    {
+      "date": "2025-05-28",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-22",
+      "date": "2026-04-29",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -53,7 +53,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-08-15",
+      "date": "2026-02-19",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-08",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -64,45 +72,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, I was just wondering… who did the first free throw ⟨ret@3.23s⟩ line dunk?
-[  3.47s][moshi] ⟦⚡SPAN@3.47s: Wilt Chamberlain is widely credited with performing the first free throw line dunk in 1962 during an exhibitio⟧ It’s a fascinating bit of basketball history! Wilt Chamberlain is credited with the very first free throw line dunk, back in 1962 during an exhibition.
-[  7.63s][user ] «backchannel» Really?
-[ 13.62s][user ] Wow, really? That's… incredible.
-[ 16.52s][moshi] It truly is a remarkable feat of athleticism, isn’t it? Chamberlain was an extraordinary player.
-[ 22.80s][user ] I’ve heard his stats are pretty unbelievable. Can you tell me how many points he scored in that one game where he got a hundred?
-[ 29.08s][moshi] ⟨ret@29.01s⟩ ⟦⚡SPAN@29.09s: Wilt Chamberlain scored 100 points in a single NBA game on March 2, 1962, playing for the Philadelphia Warrior⟧ He certainly left his mark on the game. On March 2nd, 1962, playing for the Philadelphia Warriors, Wilt Chamberlain scored one hundred points in a single game against the Knicks.
-[ 39.65s][user ] One hundred! That’s… that’s just wild.
-[ 42.48s][moshi] It’s a record that still stands today, and many believe it will never be broken.
-[ 48.60s][user ] So, um, I’m new to the city, and I’m trying to find a good Korean restaurant.
-[ 53.34s][moshi] Welcome to the city! I’m happy to help you find a great Korean restaurant. Do you have a particular area in mind?
-[ 60.23s][user ] Not really, just somewhere… good.
-[ 62.95s][moshi] ⟨ret@62.87s⟩ ⟦⚡SPAN@62.95s: (tool result) Korean BBQ: 4.5 stars, 123 Main Street; Bibimbap House: 4.2 stars, 456 Oak Avenue; Seoul Garden:⟧ There are a few highly rated options. Korean BBQ has 4.5 stars at 123 Main Street, Bibimbap House has 4.2 stars at 456 Oak Avenue, and Seoul Garden has 4.0 stars at 789 Pine Lane.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 67.97s][user ] «backchannel» Mm-hmm.
-[ 78.42s][user ] Hmm, Korean BBQ sounds good.
-[ 80.75s][moshi] Excellent choice! Korean BBQ is very popular here.
-[ 82.22s][user ] «backchannel» Uh-huh.
-[ 85.63s][user ] Can you… maybe make a reservation for me there for, uh, two people, tomorrow evening?
-[ 91.43s][moshi] ⟨ret@91.36s⟩ ⟦⚡SPAN@91.44s: (tool result) Reservation confirmed for 2 people at Korean BBQ tomorrow, July 11, 2026, at 7:00 PM. Confirmati⟧ I’ve made a reservation for two people at Korean BBQ tomorrow, July 11th, at 7:00 PM. Your confirmation ID is KB829X.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Korean BBQ", "date": "tomorrow evening", "party_size": "2"}}
-[ 96.53s][user ] «backchannel» Mhm.
-[102.01s][moshi] Wonderful! I’m glad I could help with that. Settling into a new city can be overwhelming, so I’m here to ease the transition.
-[105.22s][user ] «backchannel» Yeah.
-[110.58s][user ] Yeah, it is a little overwhelming. What’s the weather going to be like ⟨ret@114.37s⟩ tomorrow?
-[114.51s][moshi] ⟦⚡SPAN@114.53s: (tool result) Tomorrow's forecast is 26.0°C, humidity 68%, wind 7.2 km/h, with partly cloudy skies.⟧ The forecast for tomorrow is 26.0 degrees Celsius with 68% humidity, a 7.2 kilometer per hour wind, and partly cloudy skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[125.75s][user ] That sounds… nice.
-[127.76s][moshi] It does, doesn't it? A pleasant day to explore a little more of the city, perhaps.
-[129.59s][user ] «backchannel» Mm-hmm.
-[134.20s][user ] I should probably find a gym. Can you search for gyms ⟨ret@137.91s⟩ nearby?
-[138.14s][moshi] ⟦⚡SPAN@138.15s: (tool result) Fitness First - 4.7 stars - 0.5 km - Offers classes and personal training. Anytime Fitness - 4.3⟧ Fitness First is 0.5 kilometers away with 4.7 stars, offering classes. Anytime Fitness is 1.2 kilometers away with 24/7 access.
-      CALL: {"function": "search", "arguments": {"query": "gyms nearby"}}
-[141.42s][user ] «backchannel» Really?
-[149.19s][user ] Fitness First sounds good.
-[151.04s][moshi] A great choice! It’s a well-equipped gym with a lot to offer.
-[153.44s][user ] «backchannel» Mm-hmm.
-[155.53s][user ] Do you know if they have any open enrollment right ⟨ret@158.27s⟩ now?
-[158.59s][moshi] ⟦⚡SPAN@158.59s: (tool result) Fitness First is currently offering a limited-time promotion: new members receive a 20% discount⟧ Yes, Fitness First is offering a 20% discount on the first month’s membership for new members right now!
-      CALL: {"function": "search", "arguments": {"query": "Fitness First open enrollment"}}
-[164.84s][user ] That’s… perfect.
-[166.33s][moshi] It sounds like everything is coming together nicely. Remember, taking care of your wellbeing is just as important as exploring a new place.
+[  0.00s][user ] uh, ⟨ret@0.00s⟩ I was just wondering… what’s the most populated region in Ghana?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: The Ashanti Region of Ghana is the country’s most populous region, with a population of 5,791,324 in 2021.⟧ Well, it sounds like you’re exploring Ghana, which is lovely. The Ashanti Region is the most populated, with five million, seven hundred ninety-one thousand, three hundred twenty-four people as of 2021.
+[  0.40s][user ] [surprised] Wow, that’s a lot of people!
+[  0.47s][moshi] It truly is. Sometimes understanding the scale of things helps us appreciate the vibrancy of a place, doesn’t it?
+[  0.64s][user ] «backchannel» Yeah.
+[  0.65s][user ] Um, ⟨ret@0.41s⟩ do you know when Ghana became independent?
+[  0.73s][moshi] ⟦⚡SPAN@0.73s: (tool result) Ghana gained its independence from the United Kingdom on March 6, 1957, becoming the first sub-S⟧ Ghana’s independence is a significant moment in history. It became independent from the United Kingdom on March sixth, nineteen fifty-seven, as the first sub-Saharan African nation to do so.
+      CALL: {"function": "search", "arguments": {"query": "when did ghana gain independence"}}
