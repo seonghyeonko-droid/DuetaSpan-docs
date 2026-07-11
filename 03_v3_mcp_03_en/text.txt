@@ -1,77 +1,89 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Kioen, a warm and attentive supportive advisor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Zios, a upbeat and supportive counselor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Paul",
+    "name": "Alex",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "male",
+    "nationality": "Canadian",
+    "gender": "non-binary",
     "age_range": "late 20s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
-      "category": "home",
-      "text": "User's home address is 745 Oak Avenue."
+      "date": "2026-06-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2026-04-15",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-04-09",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-02-14",
+      "date": "2025-10-21",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-01-28",
+      "date": "2025-10-05",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-28",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2025-10-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-02",
+      "date": "2026-06-24",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-26",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I want to view Riverbend Residences on August ⟨ret@3.00s⟩ twelfth.
-[  3.38s][moshi] «interrupted» ⟦⚡SPAN@3.40s: (tool result) Visit scheduled. Riverbend Residences, August 12, 2026, 10:00 AM. Confirmation ID: RVB-8742.⟧ I’ve scheduled a visit for you at Riverbend Residences on August twelfth at ten AM—
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "Riverbend Residences", "visit_date": "August 12, 2026"}}
-[  7.34s][user ] «interrupts_prev» …Is there parking available there?
-[  9.28s][moshi] ⟨ret@9.20s⟩ ⟦⚡SPAN@9.28s: (tool result) Riverbend Residences offers both covered and open-air parking to residents and visitors, with a ⟧ Riverbend Residences does offer parking—both covered and open-air—with guest spaces available first-come, first-served.
-      CALL: {"function": "search", "arguments": {"query": "Riverbend Residences parking"}}
+[  0.00s][user ] I need to find a good family movie to watch tonight.
+[  0.04s][moshi] Finding a movie everyone enjoys is so important.
+[  0.07s][user ] «backchannel» Yeah.
+[  0.07s][user ] Something animated, maybe? My kids love cartoons.
+[  0.10s][moshi] Animated films are a wonderful choice for family night!
+[  0.13s][user ] «backchannel» Yeah.
+[  0.13s][user ] Can ⟨ret@0.08s⟩ you search for animated movies playing near me?
+[  0.16s][moshi] ⟦⚡SPAN@0.16s: (tool result) "Showing 'Elemental', 'Spider-Man: Across the Spider-Verse', and 'Ruby Gillman, Teenage Kraken' ⟧ There are several animated movies playing near you—'Elemental', 'Spider-Man: Across the Spider-Verse', and 'Ruby Gillman, Teenage Kraken' at AMC Boston Common 19.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "animated", "location": "current"}}
+[  0.24s][user ] What ⟨ret@0.00s⟩ are the showtimes for 'Spider-Man'?
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: (tool result) "Showtimes for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19: 6:30 PM, 9:15 PM."⟧ Showtimes for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19 are 6:30 PM and 9:15 PM.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Spider-Man: Across the Spider-Verse", "location": "AMC Boston Common 19"}}
+[  0.32s][user ] «backchannel» Really?
+[  0.33s][user ] Hmm, ⟨ret@0.00s⟩ 6:30 might work. Could we buy tickets for that?
+[  0.36s][moshi] ⟦⚡SPAN@0.36s: (tool result) "Confirmed: 4 tickets for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19, 6:30 PM⟧ Wonderful! Four tickets for ‘Spider-Man: Across the Spider-Verse’ at 6:30 PM are confirmed—your confirmation ID is ZX92AB.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Spider-Man: Across the Spider-Verse", "time": "6:30 PM", "location": "AMC Boston Common 19", "quantity": "4"}}
+[  0.42s][user ] «backchannel» Wow.
+[  0.43s][user ] Perfect! That's fantastic.
+[  0.44s][moshi] It's so nice to have everything planned in advance—less stress for everyone!
+[  0.48s][user ] Do they have any good snacks there? —
+[  0.51s][user ] …Is ⟨ret@0.22s⟩ there parking nearby, though? That's important.
+[  0.54s][moshi] ⟦⚡SPAN@0.54s: Parking at AMC Boston Common 19: Several garages nearby, rates from $20-$40 for 2 hours.⟧ There are several garages near AMC Boston Common 19, with rates ranging from twenty to forty dollars for two hours.
+[  0.61s][user ] Okay, good to know. That's reasonable.
+[  0.63s][moshi] Knowing the parking situation ahead of time can make things much smoother.
+[  0.67s][user ] «backchannel» Yeah.
+[  0.67s][moshi] A relaxed arrival sets a positive tone for the whole evening, don't you think?
+[  0.72s][user ] «backchannel» Yeah.
+[  0.73s][user ] Definitely. We need to leave around 5:45 then, to be safe.
+[  0.77s][moshi] That sounds like a very sensible plan. Leaving with plenty of time is always wise.
+[  0.82s][user ] «backchannel» Yeah.
+[  0.82s][user ] Is ⟨ret@0.69s⟩ the weather going to be nice tonight?
+[  0.85s][moshi] ⟦⚡SPAN@0.85s: (tool result) "Boston, MA: 22.2°C, humidity 65%, wind 8.9 km/h, clear skies."⟧ The weather in Boston tonight is looking lovely—22.2 degrees Celsius, with clear skies and a gentle breeze.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Boston"}}
+[  0.91s][user ] «backchannel» Uh-huh.
+[  0.92s][user ] Great! That’s perfect for a walk after the movie.
+[  0.95s][moshi] A post-movie walk sounds delightful! It’s a wonderful way to extend the family time.

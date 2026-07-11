@@ -1,82 +1,80 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Thuon, a gentle and reflective counselor who helps people with grief and change. <system>
+SYSTEM: <system> You are Tien, a warm and attentive personal guide who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Nora",
+    "name": "Ella",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "French",
     "gender": "female",
-    "age_range": "early 30s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-06-23",
+      "category": "home",
+      "text": "User's home address is 40 Cedar Lane."
     },
     {
-      "date": "2026-01-13",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
-    },
-    {
-      "date": "2025-10-30",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-03-30",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
       "date": "2025-10-06",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-06-11",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-08-07",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-06-20",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-02",
+      "date": "2026-02-08",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m ⟨ret@0.00s⟩ hoping to find a house to rent in Miami, Florida for just myself.
-[  0.06s][moshi] ⟦⚡SPAN@0.06s: Miami, Florida has many vacation homes available, with prices ranging from $150 to $800 per night.⟧ Finding a place for just yourself in Miami, Florida—there are many options, ranging from $150 to $800 per night.
-[  0.15s][user ] That ⟨ret@0.04s⟩ sounds good. Something with at least three stars, please.
-[  0.20s][moshi] ⟦⚡SPAN@0.20s: There are 27 houses in Miami, Florida with a 3-star rating or higher available for rent.⟧ There are 27 houses in Miami, Florida with a 3-star rating or higher currently available.
-[  0.27s][user ] Hmm, ⟨ret@0.06s⟩ could you show me the cheapest one?
-[  0.30s][moshi] ⟦⚡SPAN@0.30s: (tool result) {"adults": 1, "city": "Miami", "currency": "USD", "location": "Florida", "min stars": 3, "sort b⟧ The cheapest option fitting your criteria is the Cozy Cottage, priced at $155 per night.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"adults": 1, "city": "Miami", "currency": "USD", "location": "Florida", "min_stars": 3, "sort_by": "price"}}
-[  0.37s][user ] That actually sounds lovely.
-[  0.39s][moshi] It’s wonderful to find something that feels right, even from a list.
-[  0.44s][user ] «backchannel» Yeah.
-[  0.45s][user ] I think I’d…
-[  0.46s][user ] …like ⟨ret@0.18s⟩ to book it for next weekend.
-[  0.50s][moshi] ⟦⚡SPAN@0.50s: (tool result) {"house id": "87654", "check in date": "2026-07-11", "check out date": "2026-07-12", "confirmati⟧ I’ve booked the Cozy Cottage for you next weekend, July 11th to 12th; your confirmation ID is AB12CD.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"house_id": "87654", "check_in_date": "2026-07-11", "check_out_date": "2026-07-12"}}
-[  0.58s][user ] Wonderful! Thank you so much.
-[  0.60s][moshi] You’re very welcome. Sometimes, just having a small thing settled can bring a bit of peace.
-[  0.67s][user ] It ⟨ret@0.64s⟩ really does. What’s the weather looking like there next weekend?
-[  0.72s][moshi] ⟦⚡SPAN@0.72s: (tool result) {"location": "Miami, Florida", "date": "2026-07-11", "temperature": 30.5, "humidity": 78, "wind ⟧ Next weekend in Miami, Florida, the forecast is 30.5 degrees Celsius, with 78% humidity and a wind speed of 12.3 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Miami, Florida", "date": "2026-07-11"}}
-[  0.83s][user ] Perfect.
-[  0.83s][moshi] It sounds like a pleasant time to be there, a gentle warmth.
-[  0.89s][user ] «backchannel» Mhm.
-[  0.89s][user ] I think it will be. I need to find some restaurants nearby, too.
-[  0.95s][moshi] It’s good to think ahead and plan for simple pleasures.
+[  0.00s][user ] Could ⟨ret@0.00s⟩ you please go to amazon dot com?
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) Navigation to https://www.amazon.com successful.⟧ I’ve navigated to Amazon for you. Is there anything specific you're hoping to find?
+      CALL: {"function": "playwright_navigate", "arguments": {"url": "https://www.amazon.com"}}
+[  0.14s][user ] Yes, ⟨ret@0.05s⟩ actually. I'm looking for a good white noise machine.
+[  0.21s][moshi] ⟦⚡SPAN@0.21s: (no information found)⟧ I’m sorry, I don’t have specific recommendations for white noise machines at this moment.
+[  0.30s][user ] «backchannel» Right.
+[  0.30s][user ] Hmm, ⟨ret@0.13s⟩ okay. Well, what’s the weather like in Seattle right now?
+[  0.37s][moshi] «interrupted» ⟦⚡SPAN@0.37s: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition: partly cloudy.⟧ It’s currently 18.3 degrees Celsius and partly cloudy in Seattle, with a gentle breeze of 2.9 kilometers per hour—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
+[  0.50s][user ] «interrupts_prev» …actually, ⟨ret@0.50s⟩ can you search for “best white noise machine for sleep” on Amazon?
+[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tavily-search result) The Hatch Restore 2 is consistently ranked as a top pick for sleep, offering sound and ⟧ A search on Amazon shows the Hatch Restore 2 is a highly-rated option for sleep, with sound and light therapy. It’s reviewed on cnet.com.
+[  0.74s][user ] Oh, ⟨ret@0.74s⟩ that sounds promising. Could you find me some events happening this weekend?
+[  0.82s][moshi] ⟦⚡SPAN@0.82s: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Arts Festival, Seattle Center; Mariners vs⟧ This weekend in Seattle, July 11th and 12th, you have Bumbershoot at the Seattle Center and a Mariners game at T-Mobile Park. It sounds like a lovely weekend!
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "2026-07-11", "location": "Seattle"}}

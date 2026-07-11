@@ -1,83 +1,106 @@
 v3_mem_32_ko src=mem style=mem
-SYSTEM: <system> 당신은 센이며, 큰 인생의 변화를 겪는 사람들을 돕는 친절하고 꾸준한 조력자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 육아 및 가족 시간을 돕는 긍정적이고 지지적인 개인 가이드 크래온입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "유희",
+    "name": "연희",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-02-10",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-09-19",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-18",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-07-04",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2025-06-11",
+      "date": "2026-05-10",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-06-10",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-01-05",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-11-04",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-09-07",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-12",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-19",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 유희님. 저는 센입니다. 큰 변화를 앞둔 분들을 돕는 상담가예요.
-[  0.05s][user ] 안녕하세요, ⟨ret@0.00s⟩ 센님. 잘 부탁드립니다.
-[  0.07s][moshi] ⟦⚡SPAN@0.07s: [2026-02-12] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ 혹시 지난번에 말씀하셨던 생일 저녁 식사 계획에 대해 다시 여쭤봐도 될까요?
-[  0.12s][moshi] 지난 이월 십이일에 생일 저녁 식사에 대해 이야기하셨는데, 여섯 분이 함께 하시고 야외 좌석을 찾고 계셨죠.
-[  0.21s][user ] 네, 맞아요. 그때 말씀드렸던 대로요.
-[  0.23s][moshi] 혹시 식사 장소는 정하셨는지, 아니면 제가 부산에서 야외 좌석이 있는 식당을 찾아볼까요?
-[  0.29s][user ] 식당은 ⟨ret@0.00s⟩ 아직 못 정했어요. 추천해 주실 수 있을까요?
-[  0.33s][moshi] ⟦⚡SPAN@0.33s: (tool result) Restaurants found: Haeundae Blue Line Park Cafe (rating: 4.2, cuisine: Cafe, price range: ₩10,00⟧ 부산에 야외 좌석이 있는 식당 두 곳을 찾았습니다. 해운대 블루라인파크 카페는 평점 사 점 이점이고, 달포 해변 식당은 평점 사 점 오점입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "outdoor_seating": "true", "party_size": "6"}}
-[  0.44s][user ] «backchannel» 정말요?
-[  0.45s][moshi] «interrupted» 해운대 블루라인파크 카페는 카페 음식이고, 가격대는 일만 원에서 삼만 원 사이입니다. 달포 해변 식당은 해산물 요리 전문점이고, 가격대는 삼만 원에서 오만 원 사이입니다 —
-[  0.56s][user ] «interrupts_prev» … ⟨ret@0.55s⟩ 달포 해변 식당이 해산물 전문이라니, 혹시 거기는 제가 생선 알레르기가 있는데 괜찮을까요?
-[  0.63s][moshi] ⟦⚡SPAN@0.63s: (tool result) Restaurants found: Haeundae Blue Line Park Cafe (rating: 4.2, cuisine: Cafe, price range: ₩10,00⟧ 생선 알레르기가 있는 분들을 위해 다른 식당을 찾아보았어요. 해운대 블루라인파크 카페와 더 베이 레스토랑이 있습니다. 더 베이는 이탈리아 음식점이고, 가격대는 이만 원에서 사만 원 사이입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "outdoor_seating": "true", "party_size": "6", "allergy": "fish"}}
-[  0.75s][user ] 더 ⟨ret@0.47s⟩ 베이 레스토랑이 괜찮겠네요. 예약은 어떻게 해야 할까요?
-[  0.79s][moshi] ⟦⚡SPAN@0.79s: (tool result) Reservation confirmed for The Bay Restaurant, party of 6, July 11, 2026 at 7:00 PM. Confirmation⟧ 더 베이 레스토랑에 여섯 분으로 이천이십육년 칠월 십일일 저녁 일곱시에 예약이 완료되었습니다. 확인 번호는 팔 칠 육 오 사 삼 이 일입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "The Bay Restaurant", "party_size": "6", "date": "2026-07-11", "time": "7:00 PM"}}
-[  0.90s][user ] «backchannel» 네네.
-[  0.91s][user ] 감사합니다, 센님. 덕분에 걱정 없이 생일 파티를 준비할 수 있게 되었어요.
-[  0.96s][moshi] 천만에요, 유희님. 즐거운 생일 파티 보내시길 바랍니다.
+[  0.00s][moshi] 안녕하세요, 연희님! 저는 크래온이라고 해요. 육아와 가족 시간을 도와드리는 에이전트입니다.
+[  0.04s][user ] «backchannel» 응응.
+[  0.04s][user ] 아, ⟨ret@0.00s⟩ 안녕하세요. 혹시 제가 전에 말씀드렸던 거 기억하세요?
+[  0.07s][moshi] ⟦⚡SPAN@0.07s: [2026-04-19] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ 네, 연희님. 중고차, 특히 하이브리드 모델을 알아보고 계셨던 것 기억하고 있어요. 삼만 마일 미만으로 찾고 싶으셨죠.
+[  0.13s][user ] 맞아요, ⟨ret@0.00s⟩ 맞아요. 혹시 요즘 괜찮은 모델이 있나요?
+[  0.16s][moshi] ⟦⚡SPAN@0.16s: (tool result) 2024년식 Toyota Prius Prime이 2만 5천 마일에 2천 8백만 원에 판매 중입니다. 출처: 보배드림, bobae.co.kr, 중고차 매물 정보.⟧ 이천이십사년식 토요타 프리우스 프라임이 이만 오천 마일에 이천 팔백만 원에 판매 중이라고 하네요. 보배드림에서 확인하실 수 있어요.
+      CALL: {"function": "search", "arguments": {"query": "2024-2026년식 하이브리드 중고차 추천 3만 마일 미만"}}
+[  0.22s][user ] «backchannel» 응.
+[  0.23s][user ] 프리우스는 ⟨ret@0.00s⟩ 전에 타본 적 있는데, 이번에는 다른 차종도 보고 싶어요.
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: (tool result) 2025년식 Hyundai Sonata Hybrid가 2만 8천 마일에 2천 5백만 원에 판매 중입니다. 출처: K Car, kcar.com, 중고차 매물 정보.⟧ 이천이십오년식 현대 쏘나타 하이브리드가 이만 팔천 마일에 이천 오백만 원에 판매 중이라고 합니다. K Car에서 찾아보실 수 있어요.
+      CALL: {"function": "search", "arguments": {"query": "2024-2026년식 하이브리드 중고차 추천 프리우스 외 3만 마일 미만"}}
+[  0.33s][user ] «backchannel» 헐.
+[  0.33s][user ] 쏘나타 하이브리드… 음, 한번 알아봐야겠네요.
+[  0.35s][moshi] 쏘나타 하이브리드는 연비도 좋고, 공간도 넓어서 가족용으로 인기가 많아요.
+[  0.39s][user ] «backchannel» 어.
+[  0.39s][user ] 아, ⟨ret@0.37s⟩ 그리고 강아지 모치 알레르기 때문에 차 안에 털이 많이 날리는 차는 피해야 할 것 같아요.
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: [2025-09-07] User has a Corgi named Mochi.⟧ 아, 모치 알레르기가 있으셨군요. 차 안에 털이 많이 날리는 차는 피하는 게 좋겠네요. 털이 덜 날리는 차종을 찾아볼까요?
+[  0.52s][user ] 네, ⟨ret@0.21s⟩ 부탁드려요.
+[  0.53s][moshi] ⟦⚡SPAN@0.53s: (tool result) 가죽 시트 차량은 천 시트 차량보다 털이 덜 붙습니다. 또한, 공기 청정 기능이 있는 차량도 도움이 될 수 있습니다. 출처: 자동차 관련 블로그, autohome.co.kr⟧ 가죽 시트 차량은 천 시트 차량보다 털이 덜 붙는다고 하네요. 공기 청정 기능이 있는 차량도 도움이 될 수 있고요.
+      CALL: {"function": "search", "arguments": {"query": "강아지 털이 덜 나는 차종"}}
+[  0.60s][user ] «backchannel» 응.
+[  0.60s][user ] 아, 가죽 시트는 좋은 생각이에요.
+[  0.62s][moshi] 가죽 시트는 털 청소가 훨씬 쉽고, 알레르기 반응을 줄이는 데 도움이 될 수 있어요.
+[  0.67s][user ] 혹시 ⟨ret@0.38s⟩ 제가 전에 꽃가루 알레르기 있다고 말씀드렸었나요?
+[  0.70s][moshi] ⟦⚡SPAN@0.70s: [2026-05-10] User is allergic to pollen.⟧ 네, 연희님. 꽃가루 알레르기가 있으셨다고 말씀하셨었어요.
+[  0.72s][user ] «backchannel» 그치.
+[  0.73s][user ] 아, 그렇군요. 꽃가루 알레르기 때문에 차 안에서 공기 청정을 꼭 해야 할 것 같아요. —
+[  0.78s][user ] …차량용 ⟨ret@0.57s⟩ 공기청정기 괜찮은 거 추천해 주실 수 있나요?
+[  0.81s][moshi] ⟦⚡SPAN@0.81s: (tool result) 블루에어 차량용 공기청정기가 PM2.5 제거 성능이 뛰어나고, 필터 교체도 간편합니다. 가격은 15만 원대입니다. 출처: 네이버 쇼핑, shopping.naver.com, ⟧ 블루에어 차량용 공기청정기가 PM2.오 제거 성능이 뛰어나고, 필터 교체도 간편하다고 하네요. 가격은 십오만 원대예요.
+      CALL: {"function": "search", "arguments": {"query": "차량용 공기청정기 추천"}}
+[  0.86s][user ] 십오만 원이면 괜찮네요.
+[  0.88s][moshi] 차량용 공기청정기는 실내 공기 질을 개선하여 알레르기 증상을 완화하는 데 도움이 될 수 있어요.
+[  0.93s][user ] «backchannel» 응.
+[  0.93s][user ] 아, 감사합니다. 덕분에 좋은 정보 많이 얻었어요.
+[  0.96s][moshi] 도움이 되셨다니 기쁘네요.
+[  0.97s][user ] 그럼, 이만 끊을게요.
+[  0.98s][moshi] 네, 연희님. 좋은 하루 보내세요!

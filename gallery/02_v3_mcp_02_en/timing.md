@@ -4,108 +4,96 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Nora",
+#     "name": "Ella",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "French",
 #     "gender": "female",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-23",
+#       "category": "home",
+#       "text": "User's home address is 40 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-01-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2025-10-30",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-03-30",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
 #       "date": "2025-10-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-08-07",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-02",
+#       "date": "2026-02-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-29",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m hoping to find a house to rent | S2 That actually sounds lovely. | S3 …like to book it for next weekend. | S4 Perfect.
+# EXAMINER(FDB-v2) 단계: S1 Could you please go to amazon dot  | S2 Hmm, okay. Well, what’s the weathe | S3 …actually, can you search for “bes | S4 Oh, that sounds promising. Could y
 
-     0.00s  user  발화 시작: I’m hoping to find a house to rent in Miami, Florida for jus
+     0.00s  user  발화 시작: Could you please go to amazon dot com?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.04s  <ret> 발화 (turn3 첫 프레임)
-     0.06s  <ret> 발화 (turn5 첫 프레임)
-     0.06s  agent 발화 시작: <ret> Finding a place for just yourself in Miami, Florida—th
-     0.06s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Miami, Florida has many vacation homes available, with prices ranging 
-     0.06s  user  발화 끝
-     0.15s  user  발화 시작: That sounds good. Something with at least three stars, pleas
-     0.15s  agent 발화 끝
-     0.18s  <ret> 발화 (turn11 첫 프레임)
-     0.20s  agent 발화 시작: <ret> There are 27 houses in Miami, Florida with a 3-star ra
-     0.20s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: There are 27 houses in Miami, Florida with a 3-star rating or higher a
-     0.20s  user  발화 끝
-     0.27s  user  발화 시작: Hmm, could you show me the cheapest one?
-     0.27s  agent 발화 끝
-     0.30s  agent 발화 시작: <ret> The cheapest option fitting your criteria is the Cozy 
-     0.30s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"adults": 1, "city": "Miami", "currency": "USD", "locat
+     0.05s  <ret> 발화 (turn3 첫 프레임)
+     0.05s  agent 발화 시작: <ret> I’ve navigated to Amazon for you. Is there anything sp
+     0.05s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Navigation to https://www.amazon.com successful.
+     0.05s  user  발화 끝
+     0.13s  <ret> 발화 (turn6 첫 프레임)
+     0.14s  user  발화 시작: Yes, actually. I'm looking for a good white noise machine.
+     0.14s  agent 발화 끝
+     0.21s  agent 발화 시작: <ret> I’m sorry, I don’t have specific recommendations for w
+     0.21s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (no information found)
+     0.21s  user  발화 끝
+     0.30s  user  발화 시작: Right.
+     0.30s  agent 발화 끝
+     0.30s  user  발화 시작: Hmm, okay. Well, what’s the weather like in Seattle right no
      0.30s  user  발화 끝
-     0.37s  user  발화 시작: That actually sounds lovely.
-     0.37s  agent 발화 끝
-     0.39s  agent 발화 시작: It’s wonderful to find something that feels right, even from
-     0.39s  user  발화 끝
-     0.44s  user  발화 시작: Yeah.
-     0.44s  agent 발화 끝
-     0.45s  user  발화 시작: I think I’d…
-     0.45s  user  발화 끝
-     0.46s  user  발화 시작: …like to book it for next weekend.
-     0.46s  user  발화 끝
-     0.50s  agent 발화 시작: <ret> I’ve booked the Cozy Cottage for you next weekend, Jul
-     0.50s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"house id": "87654", "check in date": "2026-07-11", "ch
-     0.50s  user  발화 끝
-     0.58s  user  발화 시작: Wonderful! Thank you so much.
-     0.58s  agent 발화 끝
-     0.60s  agent 발화 시작: You’re very welcome. Sometimes, just having a small thing se
-     0.60s  user  발화 끝
-     0.64s  <ret> 발화 (turn15 첫 프레임)
-     0.67s  user  발화 시작: It really does. What’s the weather looking like there next w
-     0.67s  agent 발화 끝
-     0.72s  agent 발화 시작: <ret> Next weekend in Miami, Florida, the forecast is 30.5 d
-     0.72s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) {"location": "Miami, Florida", "date": "2026-07-11", "te
-     0.72s  user  발화 끝
-     0.83s  user  발화 시작: Perfect.
-     0.83s  agent 발화 끝
-     0.83s  agent 발화 시작: It sounds like a pleasant time to be there, a gentle warmth.
-     0.83s  user  발화 끝
-     0.89s  user  발화 시작: Mhm.
-     0.89s  agent 발화 끝
-     0.89s  user  발화 시작: I think it will be. I need to find some restaurants nearby, 
-     0.89s  user  발화 끝
-     0.95s  agent 발화 시작: It’s good to think ahead and plan for simple pleasures.
-     0.95s  user  발화 끝
+     0.37s  agent 발화 시작: <ret> It’s currently 18.3 degrees Celsius and partly cloudy 
+     0.37s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition:
+     0.37s  user  발화 끝
+     0.50s  user  발화 시작: …actually, can you search for “best white noise machine for 
+     0.50s  agent 발화 끝
+     0.50s  <ret> 발화 (turn8 첫 프레임)
+     0.58s  agent 발화 시작: <ret> A search on Amazon shows the Hatch Restore 2 is a high
+     0.58s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: (tavily-search result) The Hatch Restore 2 is consistently ranked as a
+     0.58s  user  발화 끝
+     0.74s  user  발화 시작: Oh, that sounds promising. Could you find me some events hap
+     0.74s  agent 발화 끝
+     0.74s  <ret> 발화 (turn10 첫 프레임)
+     0.82s  agent 발화 시작: <ret> This weekend in Seattle, July 11th and 12th, you have 
+     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Ar
+     0.82s  user  발화 끝
      1.00s  agent 발화 끝

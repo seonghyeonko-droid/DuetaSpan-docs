@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "세완",
+#     "name": "혜희",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,58 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-03-15",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-02",
+#       "date": "2026-06-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2025-08-03",
+#       "date": "2026-06-07",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-09-15",
 #       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#     },
+#     {
+#       "date": "2025-09-03",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-08-21",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-29",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-27",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 소장의 어디에서 흡수가 가장 많이 일어나나요?
-     0.19s  <ret> 발화 (turn1 첫 프레임)
-     0.35s  agent 발화 시작: <ret> 영양소 흡수는 주로 융모와 미세융모 덕분에 표면적이 넓은 회장 부분에서 일어납니다.
-     0.35s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.65s]: The majority of nutrient absorption occurs in the jejunum, which has a
-     0.35s  user  발화 끝
+     0.00s  user  발화 시작: 에일리언 커버넌트에서 어머니 목소리를 연기한 배우가 누구야?
+     0.31s  <ret> 발화 (turn1 첫 프레임)
+     0.47s  agent 발화 시작: <ret> 에일리언 커버넌트에서 어머니 목소리는 로럴레이 킹 배우가 연기하셨습니다.
+     0.47s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.53s]: Lorelei King is an American actress known for her voice work in film a
+     0.47s  user  발화 끝
      1.00s  agent 발화 끝

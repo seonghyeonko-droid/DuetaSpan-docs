@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "노린",
+#     "name": "정호",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,73 +13,81 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2026-04-25",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     },
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-04-24",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-04-02",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-03-19",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2025-10-10",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-09-15",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-08",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-11-20",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-10-21",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-02",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-15",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 약국 좀 찾아줘, 샌프란시스코에서 삼킬로미터 이내로—아, 오킬로미터로 해 줘.
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.18s  agent 발화 시작: <ret> 샌프란시스코에서 오킬로미터 이내에 Walgreens, CVS Pharmacy, Rite Aid 약
-     0.18s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) pharmacies: Walgreens (34.0522,-118.2437), CVS Pharmacy 
-     0.18s  user  발화 끝
-     0.37s  user  발화 시작: 와.
-     0.37s  agent 발화 끝
-     0.39s  agent 발화 시작: 혹시 어떤 약국을 더 자세히 알아보고 싶으신가요?
+     0.00s  user  발화 시작: 이번 주 토요일에 영화 보러 가고 싶은데…
+     0.14s  user  발화 시작: …혹시 근처에 괜찮은 영화관 있어요? — 아니, 이번 주 일요일로 바꿔야겠어요. 일요일에 보여주세요.
+     0.14s  user  발화 끝
+     0.23s  <ret> 발화 (turn3 첫 프레임)
+     0.39s  agent 발화 시작: 어떤 영화를 보고 싶으세요?
      0.39s  user  발화 끝
-     0.41s  <ret> 발화 (turn5 첫 프레임)
-     0.53s  user  발화 시작: Walgreens가 제일 가까운 곳 같네. 그곳으로 가는 길 좀 알려줘.
-     0.53s  agent 발화 끝
-     0.73s  agent 발화 시작: <ret> 현재 위치에서 Walgreens까지 차로 일 점 이마일, 약 오분 정도 걸립니다. 마켓 스트리트에
-     0.73s  ⚡SPAN 주입 [d'=0.27s / d_lead=0.27s]: (tool result) Directions: Drive 1.2 miles, approximately 5 minutes. Tu
-     0.73s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> 일요일에 상영하는 영화는 '인사이드 아웃 이'가 있고, 상영 시간은 열시, 열두시 삼십분, 세시,
+     0.47s  ⚡SPAN 주입 [d'=0.31s / d_lead=0.31s]: (tool result) {"movies": [{"title": "Inside Out 2", "times": 10:00, 12
+     0.47s  agent 발화 끝
+     0.78s  user  발화 시작: 와.
+     0.78s  agent 발화 끝
+     0.80s  agent 발화 시작: 혹시 다른 영화도 찾아볼까요? 아니면 '인사이드 아웃 이' 예매를 도와드릴까요?
+     0.80s  user  발화 끝
      1.00s  agent 발화 끝

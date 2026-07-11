@@ -4,78 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Lucia",
+#     "name": "Hugo",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
+#       "date": "2026-06-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-03-13",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "category": "home",
-#       "text": "User's home address is 67 Pine Court."
-#     },
-#     {
-#       "date": "2025-11-30",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-11-15",
+#       "date": "2026-01-02",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-06-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-10-23",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2025-07-17",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-18",
+#       "date": "2026-06-05",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-03",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just feeling… stuck, I guess.  | S2 Welll… it’s my painting. I haven’t | S3 …do you think it's just age? I mea | S4 It just feels… pointless, if I’m n
+# EXAMINER(FDB-v2) 단계: S1 Is that… is that a counselor thing | S2 I was thinking maybe… Italy? I’ve  | S3 …But is it even realistic with my  | S4 Hmm, maybe. I’m just… overwhelmed 
 
-     0.00s  agent 발화 시작: Hello Lucia, it’s lovely to meet you. I'm Della.
-     0.91s  user  발화 시작: Okay.
-     1.46s  user  발화 끝
-     2.97s  user  발화 시작: I’m just feeling… stuck, I guess. Like I’ve lost my spark.
-     3.09s  agent 발화 끝
-     7.78s  agent 발화 시작: It’s very common to feel that way, Lucia. Losing touch with 
-     7.87s  user  발화 끝
-    18.40s  agent 발화 끝
-    19.13s  user  발화 시작: Welll… it’s my painting. I haven’t touched a brush in months
-    22.74s  agent 발화 시작: Months can feel like a long time when a passion is quiet—
-    22.83s  user  발화 끝
-    25.48s  user  발화 시작: …do you think it's just age? I mean, maybe I'm just not as g
-    26.15s  agent 발화 끝
-    30.01s  user  발화 끝
-    30.43s  agent 발화 시작: That’s a very natural worry, Lucia. It’s easy to measure our
-    36.95s  user  발화 시작: Mm-hmm.
-    37.35s  user  발화 끝
-    40.17s  agent 발화 끝
-    40.69s  user  발화 시작: It just feels… pointless, if I’m not improving. I used to ge
-    46.29s  agent 발화 시작: Perhaps the joy wasn't tied to improvement, but to the act o
-    46.30s  user  발화 끝
-    55.33s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Hugo. I'm Joras.
+     0.02s  user  발화 시작: Is that… is that a counselor thing? I’m just a bit stressed 
+     0.02s  agent 발화 끝
+     0.09s  agent 발화 시작: It is, actually. I chose it hoping it conveys a sense of cal
+     0.09s  user  발화 끝
+     0.24s  user  발화 시작: Uh, welll… I think I just need a break. A real one. Somewher
+     0.24s  agent 발화 끝
+     0.31s  agent 발화 시작: A change of scenery can be incredibly helpful. Do you have a
+     0.31s  user  발화 끝
+     0.45s  user  발화 시작: I was thinking maybe… Italy? I’ve never been. —
+     0.45s  agent 발화 끝
+     0.49s  user  발화 시작: …But is it even realistic with my vacation days?
+     0.49s  user  발화 끝
+     0.53s  agent 발화 시작: Calculating your available time, it appears you have five da
+     0.53s  user  발화 끝
+     0.62s  user  발화 시작: Yeah, yeah.
+     0.62s  agent 발화 끝
+     0.62s  agent 발화 시작: That does limit a trip to Italy somewhat, but it's certainly
+     0.62s  user  발화 끝
+     0.74s  user  발화 시작: Right.
+     0.74s  agent 발화 끝
+     0.74s  user  발화 시작: Hmm, maybe. I’m just… overwhelmed with choices, I guess. It'
+     0.74s  user  발화 끝
+     0.81s  agent 발화 시작: That’s perfectly understandable, Hugo. Feeling overwhelmed i
+     0.81s  user  발화 끝
+     1.00s  agent 발화 끝

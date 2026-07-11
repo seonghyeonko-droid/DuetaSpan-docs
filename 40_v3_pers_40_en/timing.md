@@ -4,51 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Quinn",
+#     "name": "Robin",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
+#       "date": "2026-05-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-08-13",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-05-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-03-30",
-#       "category": "home",
-#       "text": "User's home address is 20 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-10-27",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-18",
-#       "title": "Researching a used car",
+#       "date": "2026-06-22",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-16",
+#       "date": "2026-03-18",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-13",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,25 +71,16 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just feeling really stuck righ | S2 …Is it okay if I just vent for a m | S3 It’s just… the pressure, you know? | S4 Honestly? Not many. I try to handl
 
-     0.00s  agent 발화 시작: Hello Quinn, welcome. I'm Dreara.
-     0.03s  user  발화 시작: I’m just feeling really stuck right now, honestly.
-     0.03s  agent 발화 끝
-     0.08s  agent 발화 시작: It’s completely understandable to feel stuck, Quinn. Many pe
-     0.08s  user  발화 끝
-     0.21s  user  발화 시작: Welll…, it’s my job, I think. I don’t even really *like* wha
-     0.21s  agent 발화 끝
-     0.29s  agent 발화 시작: That’s a big realization, and it takes courage to admit that
-     0.29s  user  발화 끝
-     0.44s  user  발화 시작: …Is it okay if I just vent for a minute? I’m just so overwhe
-     0.44s  agent 발화 끝
-     0.52s  agent 발화 시작: Quinn. Absolutely. Take all the time you need to share what’
-     0.52s  user  발화 끝
-     0.62s  user  발화 시작: It’s just… the pressure, you know? My boss expects so much, 
-     0.62s  agent 발화 끝
-     0.73s  agent 발화 시작: It sounds like you’re carrying a heavy load of responsibilit
+     0.00s  agent 발화 시작: Hello Robin, it’s lovely to meet you. I’m Hena, and I help p
+     0.25s  user  발화 시작: I'm just feeling really stuck with a painting, actually.
+     0.25s  agent 발화 끝
+     0.37s  agent 발화 시작: It's completely understandable to feel stuck, Robin. What pa
+     0.37s  user  발화 끝
+     0.58s  user  발화 시작: Wow.
+     0.58s  agent 발화 끝
+     0.59s  user  발화 시작: Well, the colors. I keep second-guessing everything, and it 
+     0.59s  user  발화 끝
+     0.73s  agent 발화 시작: That sounds frustrating. Sometimes, letting go of control wi
      0.73s  user  발화 끝
-     0.91s  user  발화 시작: Honestly? Not many. I try to handle everything myself, but I
-     0.91s  agent 발화 끝
-     1.00s  user  발화 끝
+     1.00s  agent 발화 끝

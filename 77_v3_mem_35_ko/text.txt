@@ -1,62 +1,86 @@
 v3_mem_35_ko src=mem style=mem
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 격려적이고 비판적이지 않은 지지적인 조언자 프라리스입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 제아온이며, 여행 및 휴가 계획을 돕는 호기심 많고 지지적이며 확인해주는 조언자입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "태아",
+    "name": "도영",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
+      "date": "2026-06-07",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2026-05-31",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-03-10",
+      "date": "2026-04-30",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-10-03",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-07-28",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-06-01",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-15",
-      "title": "Researching a used car",
+      "date": "2026-06-28",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 태아님. 저는 프라리스예요. 편안한 휴식을 도와드리는 에이전트랍니다.
-[  5.79s][user ] 어… 안녕하세요. 혹시 맛집 추천 좀 해줄 수 ⟨ret@9.69s⟩ 있어요?
-[  9.84s][moshi] ⟦⚡SPAN@9.85s: User's favorite cuisine is sushi.⟧ 태아님. 스시를 가장 좋아하시는 걸로 알고 있어요.
-[ 12.62s][user ] «backchannel» 맞아.
-[ 13.28s][user ] 네, 맞아요. 스시 진짜 좋아해요.
-[ 16.57s][moshi] ⟨ret@16.50s⟩ ⟦⚡SPAN@16.58s: User is allergic to peanuts.⟧ 알레르기 있으신 건 없으신가요?
-[ 18.68s][moshi] 혹시 땅콩 알레르기가 있으시다고 하셨죠? 땅콩을 사용하지 않는 곳으로 찾아드릴게요.
-[ 25.10s][user ] …아, 맞다! 혹시 혼자 가기 좋은 곳으로 알아봐 줄 수 ⟨ret@29.02s⟩ 있어?
-[ 29.17s][moshi] ⟦⚡SPAN@29.18s: Restaurant: Sushin, Address: 123-45, Busan, South Korea, Price range: 20000-50000 KRW, Rating: 4.5/5.⟧ 스신이라는 곳은 어떠세요? 부산에 있고, 가격대는 이만 원에서 오만 원 사이, 평점은 오점 만점에 사 점 오점이에요. 혼자 방문하기에도 괜찮은 곳이랍니다.
+[  0.00s][moshi] 안녕하세요, 도영님! 저는 제아온이라고 해요. 여행 계획이나 휴식에 대해 도와드리는 에이전트입니다.
+[  0.08s][user ] 어… ⟨ret@0.00s⟩ 안녕하세요. 요즘 여행 가고 싶은데, 어디가 좋을까요?
+[  0.14s][moshi] ⟦⚡SPAN@0.14s: [2026-06-07] User is gluten-free.⟧ 혹시 전에 말씀해주셨던 글루텐 프리 식단에 맞춰서 추천해 드릴까요?
+[  0.21s][moshi] 글루텐 프리 식단을 고려하면, 이탈리아 남부의 풀리아 지역을 추천해 드리고 싶어요.
+[  0.29s][user ] 풀리아요? 거긴 어떤 곳인데요?
+[  0.32s][moshi] 풀리아는 아름다운 해변과 역사적인 도시, 그리고 맛있는 글루텐 프리 파스타로 유명해요.
+[  0.40s][user ] 오, 파스타! 맛있겠네요.
+[  0.42s][moshi] 풀리아 지역의 레스토랑들은 글루텐 프리 옵션을 많이 제공하고, 신선한 재료를 사용해서 음식을 만들어요.
+[  0.51s][user ] «backchannel» 음.
+[  0.52s][moshi] 게다가 풀리아는 다른 유명한 관광지에 비해 비교적 물가가 저렴해서, 부담 없이 여행을 즐길 수 있다는 장점도 있어요. 숙소도 다양하게 준비되어 있고요.
+[  0.68s][user ] 숙소는… 호텔 말고 다른 곳도 있을까요?
+[  0.72s][moshi] 네, 풀리아에는 '마사(Massa)'라고 하는 전통 가옥을 개조한 숙소들이 많이 있어요. 현지인의 삶을 체험할 수 있어서 특별한 경험이 될 거예요.
+[  0.86s][user ] «backchannel» 아.
+[  0.87s][user ] 마사… 재밌겠네요.
+[  0.88s][moshi] 마사는 풀리아의 독특한 건축 양식을 보여주는 곳이라, 사진 찍기에도 정말 좋아요.
+[  0.96s][user ] «backchannel» 응.
+[  0.97s][user ] 좋아요, 풀리아 한번 알아봐야겠어요.

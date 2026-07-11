@@ -1,72 +1,90 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Gelira, a grounded and empathetic life coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Kal, a upbeat and supportive supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Charlotte",
+    "name": "Morgan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "late 20s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-17",
+      "date": "2026-06-27",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-05-26",
+      "category": "home",
+      "text": "User's home address is 41 Oak Avenue."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-02-09",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-01-15",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
+    },
+    {
+      "date": "2025-08-08",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-05-18",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-05-06",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-03-05",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2026-01-24",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-11-02",
-      "category": "home",
-      "text": "User's home address is 745 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-16",
-      "title": "Comparing gym memberships",
+      "date": "2026-04-14",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who plays Violet Baudelaire in the Netflix ⟨ret@3.05s⟩ series?
-[  3.26s][moshi] ⟦⚡SPAN@3.29s: Malina Weissman played Violet Baudelaire in the Netflix series *A Series of Unfortunate Events*.⟧ That would be Malina Weissman, she wonderfully portrayed Violet Baudelaire. It’s a role that really showcased her talent.
-[ 11.73s][user ] Oh, okay. Do you think Violet was a good role ⟨ret@15.18s⟩ model?
-[ 15.58s][moshi] ⟦⚡SPAN IRRELEVANT@15.58s: The current temperature in Ulaanbaatar, Mongolia is -18.2°C, with clear skies and a wind speed of 6.7 m/s.⟧ Violet certainly was! She’s incredibly resourceful and always puts her siblings first. Those are wonderful qualities, don’t you think?
-[ 24.67s][user ] I do, um, I think so. What about Klaus?
-[ 28.29s][moshi] ⟨ret@27.98s⟩ ⟦⚡SPAN@28.30s: Louis Hynes portrayed Klaus Baudelaire, Violet’s brother, in *A Series of Unfortunate Events*.⟧ Louis Hynes played Klaus, Violet's brother. He brought a lovely bookishness to the character, didn’t he?
-[ 32.86s][user ] «backchannel» Uh-huh.
-[ 34.93s][user ] Yes, he did.
-[ 36.27s][moshi] It’s nice to see siblings supporting each other, even in such difficult circumstances. It reminds us how important those bonds are.
+[  0.00s][user ] Hi ⟨ret@0.00s⟩ Kal, do you know when the World Cup was last held in the UK?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: The United Kingdom hosted the FIFA World Cup tournament once, in the year 1966.⟧ Well, that’s a great question! The UK last hosted the FIFA World Cup way back in 1966. It was a really exciting time for football fans!
+[  0.30s][user ] Oh, ⟨ret@0.07s⟩ right.
+[  0.31s][moshi] ⟦⚡SPAN IRRELEVANT@0.31s: The average high temperature in Reykjavik, Iceland in February is -1.8°C, with an average low of -4.3°C.⟧ It’s amazing how long ago that was, isn’t it? That tournament really put English football on the map.
+[  0.45s][moshi] Speaking of big events, are you working towards any personal goals right now? — I find focusing on something can really help with motivation.
+[  0.62s][user ] «backchannel» Yeah.
+[  0.63s][user ] I am, actually. I’m studying for my exams.
+[  0.69s][moshi] That's fantastic! Exams can be tough, but you've got this. Remember to break down your studying into smaller chunks.
+[  0.82s][user ] «backchannel» Uh-huh.
+[  0.83s][user ] That’s a good idea, thanks.
+[  0.87s][moshi] You’re very welcome! I’m always here to help you stay on track and feel confident about your studies.

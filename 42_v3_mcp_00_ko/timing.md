@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "노린",
+#     "name": "하린",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,115 +12,97 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-06-18",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-06-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-04-28",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-06-08",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-03-09",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-22",
+#       "date": "2025-10-06",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-12-07",
+#       "date": "2025-07-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
+#       "text": "User is planning a trip to Kyoto in May."
 #     },
 #     {
-#       "date": "2025-10-02",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "date": "2025-07-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-21",
+#       "date": "2026-06-17",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영화 좀 찾 | S2 크레이지 리치 아시안즈 예매해 줘. 이번 주 토요일 오후 두시 | S3 그렇겠네. 아, 그리고 내일 모레 친구 생일인데, 선물 뭐 해 | S4 좋은 생각인데, 어떤 커피 선물을 해야 할까?
+# EXAMINER(FDB-v2) 단계: S1 음… 피자 먹고 싶은데. 삼십사 점 영 오 위도, -백십팔 점 | S2 캘리포니아 피자 키친까지 어떻게 가? | S3 잠깐만, 팔분이나 걸려? 좀 더 빠른 길은 없어? | S4 삼십육분은 너무 길어. 그럼 그냥 지금 있는 곳 주변에 괜찮은
 
-     0.00s  user  발화 시작: 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영화 좀 찾아줄래?
-     0.00s  <ret> 발화 (turn6 첫 프레임)
-     0.06s  agent 발화 시작: 어떤 장르를 좋아하시는지 말씀해 주시면 더 좋을 것 같아요.
-     0.06s  user  발화 끝
-     0.11s  user  발화 시작: 어.
-     0.11s  agent 발화 끝
-     0.11s  user  발화 시작: 음… 로맨틱 코미디? 요즘…
-     0.11s  user  발화 끝
-     0.13s  user  발화 시작: …재밌는 거 있으면 추천해 줘.
-     0.13s  user  발화 끝
-     0.16s  agent 발화 시작: 로맨틱 코미디 좋아하시는군요. 지금 상영 중인 영화를 한번 검색해 볼게요.
+     0.00s  user  발화 시작: 음… 피자 먹고 싶은데. 삼십사 점 영 오 위도, -백십팔 점 이 사 경도 주변에 피자집 좀 찾아줘.
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.11s  <ret> 발화 (turn3 첫 프레임)
+     0.16s  agent 발화 시작: <ret> 주변에 피자 가게 두 곳이 있어요. 캘리포니아 피자 키친 평점은 사 점 이점이고, 블레이즈 피자는
+     0.16s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"results": [{"name": "California Pizza Kitchen", "vicin
      0.16s  user  발화 끝
-     0.20s  <ret> 발화 (turn11 첫 프레임)
-     0.21s  agent 발화 시작: <ret> 로맨틱 코미디 영화로는 "프로포즈"(이천구), "스물일곱개의 드레스"(이천팔), 그리고 "크레이지
-     0.21s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) The Proposal (2009), 27 Dresses (2008), Crazy Rich Asian
-     0.21s  agent 발화 끝
-     0.25s  <ret> 발화 (turn8 첫 프레임)
-     0.27s  user  발화 시작: 크레이지 리치 아시안즈 예매해 줘. 이번 주 토요일 오후 두시, 두명.
-     0.27s  agent 발화 끝
-     0.33s  agent 발화 시작: <ret> 네, "크레이지 리치 아시안즈" 영화, 이번 주 토요일 오후 두시에 두명 예매 완료되었습니다. 확
-     0.33s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Confirmation ID: 87654321
-     0.33s  user  발화 끝
-     0.45s  agent 발화 시작: 혹시 다른 영화도 같이 예매해 드릴까요?
-     0.45s  agent 발화 끝
-     0.48s  user  발화 시작: 아니, 됐어. 근데, 이번 주말 날씨는 어때?
-     0.48s  agent 발화 끝
-     0.52s  agent 발화 시작: <ret> 이번 주말 날씨는 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 예상
-     0.52s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 28.5°C, humidity 65%, wind 3.2 km/h
-     0.52s  user  발화 끝
-     0.59s  agent 발화 시작: 주말에 야외 활동하기 좋겠네요.
-     0.59s  agent 발화 끝
-     0.61s  user  발화 시작: 그렇겠네. 아, 그리고 내일 모레 친구 생일인데, 선물 뭐 해줘야 할까?
-     0.61s  agent 발화 끝
-     0.67s  agent 발화 시작: 친구 생일이 다가오네요. 친구분이 평소에 뭘 좋아하시는지 아세요?
-     0.67s  user  발화 끝
-     0.71s  user  발화 시작: 음… 친구는 평소에 커피를 엄청 좋아해.
-     0.71s  agent 발화 끝
-     0.74s  agent 발화 시작: 커피를 좋아하시는군요. 그럼 커피 관련 선물을 해 드리는 건 어떠세요?
-     0.74s  user  발화 끝
-     0.79s  user  발화 시작: 어.
-     0.79s  agent 발화 끝
-     0.80s  user  발화 시작: 좋은 생각인데, 어떤 커피 선물을 해야 할까?
-     0.80s  user  발화 끝
-     0.84s  agent 발화 시작: 커피 원두나, 커피 메이커, 아니면 예쁜 텀블러도 좋을 것 같아요.
-     0.84s  user  발화 끝
-     0.89s  agent 발화 시작: 친구분의 취향을 고려해서 선택하시면 좋을 거예요.
-     0.89s  agent 발화 끝
-     0.92s  user  발화 시작: 응.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: 텀블러가 괜찮겠다. 예쁜 텀블러 좀 찾아줘.
-     0.93s  user  발화 끝
-     0.96s  agent 발화 시작: 어떤 디자인을 좋아하시는지 알려주시면 더 좋을 것 같아요.
-     0.96s  user  발화 끝
+     0.31s  user  발화 시작: 캘리포니아 피자 키친까지 어떻게 가?
+     0.31s  agent 발화 끝
+     0.35s  agent 발화 시작: <ret> 캘리포니아 피자 키친까지는 이 점 삼마일, 약 팔분 정도 걸리고요, S 플라워 스트리트에서 북쪽으
+     0.35s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"distance": "2.3 miles", "duration": "8 minutes", "inst
+     0.35s  user  발화 끝
+     0.42s  <ret> 발화 (turn9 첫 프레임)
+     0.50s  user  발화 시작: 대박.
+     0.50s  agent 발화 끝
+     0.50s  <ret> 발화 (turn6 첫 프레임)
+     0.50s  user  발화 시작: 잠깐만, 팔분이나 걸려? 좀 더 빠른 길은 없어?
+     0.50s  user  발화 끝
+     0.58s  agent 발화 시작: <ret> 도보로 가시면 일 점 팔마일, 약 삼십육분이 걸리는데, S 플라워 스트리트에서 북쪽으로 가시는 길
+     0.58s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) {"distance": "1.8 miles", "duration": "36 minutes", "ins
+     0.58s  user  발화 끝
+     0.70s  user  발화 시작: 와.
+     0.70s  agent 발화 끝
+     0.71s  user  발화 시작: 삼십육분은 너무 길어. 그럼 그냥 지금 있는 곳 주변에 괜찮은 스테이크집은 어디야?
+     0.71s  user  발화 끝
+     0.82s  agent 발화 시작: <ret> 지금 계신 곳 주변에는 컷 바이 볼프강 퍽 평점 사 점 오점, 플레밍스 프라임 스테이크하우스 평점
+     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) {"results": [{"name": "CUT by Wolfgang Puck", "vicinity"
+     0.82s  user  발화 끝
      1.00s  agent 발화 끝

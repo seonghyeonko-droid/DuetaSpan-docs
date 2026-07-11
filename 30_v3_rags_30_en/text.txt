@@ -1,73 +1,66 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Vomi, a grounded and empathetic life coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Tol, a practical and reassuring personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Freya",
+    "name": "Morgan",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-06-26",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-05-16",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-05-04",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
-    },
-    {
-      "date": "2026-05-02",
+      "date": "2026-05-07",
       "category": "home",
-      "text": "User's home address is 997 Pine Court."
+      "text": "User's home address is 223 Oak Avenue."
     },
     {
-      "date": "2025-09-24",
+      "date": "2026-02-14",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-02",
+      "date": "2026-01-22",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-08-21",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
-      "title": "Setting up a home network",
+      "date": "2026-04-16",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-03",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where does most ⟨ret@0.12s⟩ nutrient absorption happen in the small intestine?
-[  0.36s][moshi] ⟦⚡SPAN@0.36s: The jejunum is the region of the small intestine where the majority of chemical digestion and nutrient absorpt⟧ Most chemical digestion and nutrient absorption happens in the jejunum, a key part of staying well-rested and nourished.
+[  0.00s][user ] Who voiced mother in…
+[  0.14s][user ] …the ⟨ret@0.04s⟩ film Alien Covenant?
+[  0.28s][moshi] ⟦⚡SPAN@0.28s: Lorelei King provided the voice of the Neomorph, also known as Mother, in Alien: Covenant.⟧ The voice you’re hearing as Mother in Alien Covenant is Lorelei King. She’s done a lot of creature and character vocalizations!

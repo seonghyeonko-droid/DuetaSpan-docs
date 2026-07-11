@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "준진",
+#     "name": "윤원",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2026-02-10",
+#       "date": "2026-04-01",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-10-03",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2025-12-07",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-06-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,28 +53,43 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-20",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 포일의 전쟁에 제인 밀너… | S2 음, 그 배우 다른 작품에도 나왔나? | S3 잠깐만… 혹시 그 드라마… | S4 …그 시대 배경이 궁금하네요.
 
-     0.00s  user  발화 시작: 혹시 세인트 마이클이 막스앤스펜서로 바뀐 게 언제였더라…?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.25s  agent 발화 시작: <ret> 세인트 마이클이 막스앤스펜서로 바뀌게 된 건, 이천년 칠월이었답니다.
-     0.25s  ⚡SPAN 주입 [d'=0.29s / d_lead=0.29s]: In July 2000, the department store chain Saint Michael was rebranded a
-     0.25s  user  발화 끝
-     0.43s  <ret> 발화 (turn3 첫 프레임)
-     0.54s  user  발화 시작: 음, 그게 아니라… 막스앤스펜서로 바뀐 게…
-     0.54s  agent 발화 끝
-     0.75s  agent 발화 시작: <ret> 다시 말씀드리면, 이천년 칠월에 막스앤스펜서로 바뀌었습니다.
-     0.75s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: In July 2000, the department store chain Saint Michael was rebranded a
-     0.75s  user  발화 끝
-     0.96s  user  발화 시작: 맞아.
-     0.96s  agent 발화 끝
-     1.00s  user  발화 끝
+     0.00s  user  발화 시작: 포일의 전쟁에 제인 밀너…
+     0.00s  <ret> 발화 (turn2 첫 프레임)
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.05s  user  발화 시작: …역을 맡은 사람이 누구였지?
+     0.05s  user  발화 끝
+     0.10s  agent 발화 시작: <ret> 제인 밀너 역은 말리 해리스 배우가 맡았답니다.
+     0.10s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Mali Harries played Jane Milner in the British television drama Foyle'
+     0.10s  user  발화 끝
+     0.19s  user  발화 시작: 음, 그 배우 다른 작품에도 나왔나?
+     0.19s  agent 발화 끝
+     0.27s  agent 발화 시작: <ret> 말리 해리스는 다양한 작품에 출연했는데요 — 말리 해리스는 웨일스 출신의 배우로, '바이 애니 민
+     0.27s  user  발화 끝
+     0.35s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Mali Harries is a Welsh actress, known for her roles in television dra
+     0.51s  user  발화 시작: 응.
+     0.51s  agent 발화 끝
+     0.53s  user  발화 시작: 잠깐만… 혹시 그 드라마…
+     0.53s  user  발화 끝
+     0.53s  <ret> 발화 (turn9 첫 프레임)
+     0.58s  user  발화 시작: …배경이 이차 세계대전 때였나? —
+     0.58s  user  발화 끝
+     0.64s  user  발화 시작: …그 시대 배경이 궁금하네요.
+     0.64s  user  발화 끝
+     0.69s  agent 발화 시작: <ret> 그 드라마는… 이차 세계 대전 중과 직후를 배경으로 하고 있습니다.
+     0.69s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: Foyle's War is set during and immediately after World War II, primaril
+     0.69s  user  발화 끝
+     0.82s  agent 발화 시작: '포일의 전쟁'은 주로 영국 남부에서, 이차 세계 대전 중 그리고 직후를 배경으로 이야기가 전개된답니다.
+     0.82s  agent 발화 끝
+     1.00s  agent 발화 끝

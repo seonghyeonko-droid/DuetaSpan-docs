@@ -1,54 +1,51 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Bami, a gentle and reflective life coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Koraon, a calm and patient life coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Alex",
+    "name": "Léa",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-29",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-04-22",
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2026-02-07",
+      "date": "2026-03-10",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2026-01-01",
-      "category": "home",
-      "text": "User's home address is 536 Birch Road."
+      "date": "2025-12-15",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-06-08",
+      "date": "2025-09-17",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-06-05",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-09-13",
+      "date": "2025-12-01",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -59,59 +56,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Schedule a showing for Sunset Ridge Townhomes on February ⟨ret@4.27s⟩ twenty-ninth.
-[  4.51s][moshi] ⟦⚡SPAN@4.51s: (tool result) Showing scheduled for Sunset Ridge Townhomes on February 29, 2026 at 10:00 AM. Confirmation ID: ⟧ I’ve scheduled a showing for you at Sunset Ridge Townhomes on February twenty-ninth, two thousand twenty-six, at ten AM. Your confirmation ID is SR29-8742. It’s wonderful you’re taking this step towards finding a new home.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "Sunset Ridge Townhomes", "date": "February 29th"}}
-[ 14.73s][user ] «backchannel» Yeah.
-[ 20.80s][user ] What's the weather going to be like then?
-[ 22.82s][moshi] ⟨ret@22.66s⟩ ⟦⚡SPAN@22.82s: (tool result) The forecast for February 29, 2026 is partly cloudy with a high of 8.3°C and a low of -1.7°C.⟧ On February twenty-ninth, two thousand twenty-six, it will be partly cloudy, with a high of eight point three degrees Celsius and a low of minus one point seven degrees Celsius.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "February 29th, 2026"}}
-[ 35.35s][user ] Can you find me some restaurants nearby?
-[ 37.68s][moshi] ⟨ret@37.45s⟩ ⟦⚡SPAN@37.69s: (tool result) There are 12 restaurants near Sunset Ridge Townhomes. The highest-rated is “Bella Italia”, with ⟧ There are twelve restaurants near Sunset Ridge Townhomes. Bella Italia has the highest rating, at four and a half stars. Perhaps we could discuss healthy dining choices afterward?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Sunset Ridge Townhomes"}}
-[ 45.10s][user ] «backchannel» Yeah.
-[ 49.71s][user ] What kind of food does Bella Italia ⟨ret@52.12s⟩ serve?
-[ 52.28s][moshi] ⟦⚡SPAN@52.28s: (tool result) Bella Italia serves Italian cuisine, specializing in pasta and pizza. They have vegetarian optio⟧ Bella Italia serves Italian cuisine, specializing in pasta and pizza, and they do have vegetarian options available. It’s good to have choices that align with your well-being.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Bella Italia"}}
-[ 64.36s][user ] Book a table there for two on February twenty-ninth at seven ⟨ret@68.27s⟩ PM.
-[ 68.67s][moshi] ⟦⚡SPAN@68.67s: (tool result) Reservation confirmed at Bella Italia for two people on February 29, 2026 at 7:00 PM. Confirmati⟧ I’ve made a reservation at Bella Italia for two people on February twenty-ninth, two thousand twenty-six, at seven PM. Your confirmation ID is BI-2902-7PM.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "February 29th", "time": "7:00 PM", "party_size": "2"}}
-[ 81.62s][user ] Uh, actually, make that eight PM.
-[ 84.26s][moshi] ⟨ret@84.02s⟩ ⟦⚡SPAN@84.26s: (tool result) Reservation updated at Bella Italia for two people on February 29, 2026 at 8:00 PM. Confirmation⟧ The reservation at Bella Italia has been updated to eight PM on February twenty-ninth, two thousand twenty-six. Your new confirmation ID is BI-2902-8PM.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "February 29th", "time": "8:00 PM", "party_size": "2"}}
-[ 97.02s][user ] [laugh] That was close! What’s the fastest…
-[102.41s][user ] …way to get there from Sunset Ridge Townhomes?
-[105.13s][moshi] ⟨ret@104.98s⟩ ⟦⚡SPAN@105.14s: (tool result) The fastest route to Bella Italia from Sunset Ridge Townhomes is by car, taking approximately 12⟧ The fastest route to Bella Italia from Sunset Ridge Townhomes is by car, taking about twelve minutes. It’s important to factor travel time into your plans, to avoid feeling rushed.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Sunset Ridge Townhomes", "destination": "Bella Italia"}}
-[109.98s][user ] «backchannel» Uh-huh.
-[117.18s][user ] Okay, good. Is there anything else I should know about ⟨ret@119.69s⟩ that area?
-[120.00s][moshi] ⟦⚡SPAN@120.01s: (tool result) Sunset Ridge Townhomes is near Pine Ridge Park, known for its hiking trails, and the local art g⟧ Sunset Ridge Townhomes is close to Pine Ridge Park, known for its hiking trails, and a local art gallery. Source: localguide.com.
-      CALL: {"function": "search", "arguments": {"query": "things to do near Sunset Ridge Townhomes"}}
-[129.07s][user ] What time is sunset on February twenty-ninth? ⟨ret@131.95s⟩
-[132.02s][moshi] ⟦⚡SPAN@132.03s: (tool result) Sunset on February 29, 2026 will be at 6:15 PM local time.⟧ Sunset on February twenty-ninth, two thousand twenty-six, will be at six fifteen PM local time. It’s nice to be aware of the natural rhythms around us.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "February 29th, 2026"}}
-[135.25s][user ] «backchannel» Right.
-[143.61s][user ] Can you remind me about my doctor's ⟨ret@145.77s⟩ appointment?
-[146.00s][moshi] ⟦⚡SPAN@146.01s: [2024-07-10] I have a doctor's appointment next Tuesday.⟧ You have a note: I have a doctor's appointment next Tuesday.
-[149.88s][user ] What's the weather forecast for next Tuesday?
-[152.69s][moshi] ⟨ret@152.53s⟩ ⟦⚡SPAN@152.69s: (tool result) The weather next Tuesday, July 15, 2026, will be sunny with a high of 27.5°C and a low of 18.9°C⟧ Next Tuesday, July fifteenth, two thousand twenty-six, will be sunny, with a high of twenty-seven point five degrees Celsius and a low of eighteen point nine degrees Celsius.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "next Tuesday"}}
-[157.63s][user ] «backchannel» Yeah.
-[164.56s][user ] That sounds lovely. — Do they have outdoor seating at Bella ⟨ret@168.47s⟩ Italia?
-[168.71s][moshi] ⟦⚡SPAN@168.71s: (tool result) Bella Italia does have a patio with outdoor seating, as seen in recent customer photos. Source: ⟧ Yes, Bella Italia has a patio with outdoor seating, according to recent customer photos. Source: tripadvisor.com. Enjoying a meal outdoors can be very restorative.
-      CALL: {"function": "search", "arguments": {"query": "Bella Italia outdoor seating"}}
-[181.43s][user ] [curious] What's the air quality like there?
-[183.77s][moshi] ⟨ret@183.53s⟩ ⟦⚡SPAN@183.77s: (tool result) The air quality index near Bella Italia is currently 48, considered good.⟧ The air quality index near Bella Italia is currently forty-eight, which is considered good. Fresh air is so important for overall wellness.
-      CALL: {"function": "map_weather", "arguments": {"location": "Bella Italia"}}
-[192.40s][user ] Play some relaxing music.
-[194.60s][moshi] ⟨ret@194.36s⟩ ⟦⚡SPAN@194.60s: (no information found)⟧ I’m sorry, I couldn't find a specific playlist for "relaxing music." I can search for artists or genres if you'd like.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_type": "relaxing music"}}
-[197.02s][user ] «backchannel» Uh-huh.
-[202.34s][user ] Play Enya.
-[203.36s][moshi] ⟨ret@203.28s⟩ ⟦⚡SPAN@203.36s: (tool result) Now playing Enya.⟧ Now playing Enya. Music can be a wonderful way to center yourself and find a moment of peace.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist": "Enya"}}
-[210.00s][user ] Can you set an alarm for six thirty AM tomorrow?
-[213.19s][moshi] ⟨ret@213.03s⟩ ⟦⚡SPAN@213.19s: (tool result) Alarm set for 6:30 AM tomorrow, July 11, 2026.⟧ I've set an alarm for six thirty AM tomorrow, July eleventh, two thousand twenty-six. Starting your day with intention can set a positive tone.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "6:30 AM"}}
-[223.59s][user ] What's on my schedule for tomorrow?
-[225.60s][moshi] I don’t have any information
+[  0.00s][user ] Set ⟨ret@0.00s⟩ an alarm for twelve fifteen PM.
+[  0.02s][moshi] ⟦⚡SPAN@0.02s: (tool result) Alarm set for 12:15 PM, ID 947283.⟧ I’ve set an alarm for twelve fifteen PM, with ID nine four seven two eight three.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "12:15 PM"}}
+[  0.07s][user ] What’s ⟨ret@0.00s⟩ the weather like in Busan tomorrow?
+[  0.09s][moshi] ⟦⚡SPAN@0.09s: (tool result) Busan: 28.5°C, humidity 68%, wind 7.2 km/h, partly cloudy.⟧ The weather in Busan tomorrow will be twenty-eight point five degrees Celsius, with sixty-eight percent humidity and a seven point two kilometer per hour wind, and it will be partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan", "date": "tomorrow"}}
+[  0.19s][user ] That sounds nice.
+[  0.20s][moshi] It does, doesn’t it? Sometimes a little sunshine can really lift the spirits. I’m glad I could share that with you.
+[  0.26s][user ] Find ⟨ret@0.21s⟩ me a good Italian restaurant near Seoul Station.
+[  0.29s][moshi] ⟦⚡SPAN@0.29s: (tool result) Bella Italia: 4.5 stars, ₩25,000 average, 500m from Seoul Station.⟧ I found Bella Italia, an Italian restaurant four point five stars, with an average price of twenty-five thousand won, five hundred meters from Seoul Station. Would you like to see its menu?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Seoul Station"}}
+[  0.38s][user ] No, ⟨ret@0.17s⟩ but can you check if it’s open right now?
+[  0.41s][moshi] «interrupted» ⟦⚡SPAN@0.41s: (tool result) Bella Italia: currently open, closes 10:00 PM.⟧ Bella Italia is currently open and closes at ten PM tonight. It’s always good to confirm those details, especially when you’re planning an evening out—
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Seoul Station"}}
+[  0.49s][user ] «interrupts_prev» …Actually, ⟨ret@0.37s⟩ can you reserve a table for two there at eight o’clock?
+[  0.53s][moshi] ⟦⚡SPAN@0.53s: (tool result) Reservation confirmed at Bella Italia, 8:00 PM, party of 2, confirmation ID 1A9Z3B.⟧ A table for two at Bella Italia is now reserved for eight PM, confirmation ID one A nine Z three B.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "8:00 PM", "party_size": "2"}}
+[  0.59s][user ] Perfect. ⟨ret@0.21s⟩ What movies are playing near there?
+[  0.61s][moshi] ⟦⚡SPAN@0.61s: (tool result) "Oppenheimer", "Barbie", "Mission: Impossible - Dead Reckoning Part One".⟧ Currently playing near Seoul Station are "Oppenheimer", "Barbie", and "Mission: Impossible - Dead Reckoning Part One". They’re all quite popular at the moment.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "Seoul Station"}}
+[  0.68s][user ] Get ⟨ret@0.47s⟩ me tickets for Barbie at 8:30 PM.
+[  0.71s][moshi] ⟦⚡SPAN@0.71s: (tool result) 2 tickets for Barbie, 8:30 PM, Seoul Station, ₩30,000, confirmation 4C2D6E.⟧ Two tickets for "Barbie" at eight thirty PM at Seoul Station have been purchased for thirty thousand won, confirmation four C two D six E.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Barbie", "time": "8:30 PM", "location": "Seoul Station"}}
+[  0.78s][user ] Great. ⟨ret@0.73s⟩ Remind me to leave at eight fifteen.
+[  0.81s][moshi] ⟦⚡SPAN@0.81s: (tool result) Alarm set for 8:15 PM, label "Leave for Barbie", ID 7F5G8H.⟧ I’ve added an alarm for eight fifteen PM, labeled “Leave for Barbie”, with ID seven F five G eight H. That should give you enough time to get there comfortably.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "8:15 PM", "label": "Leave for Barbie"}}
+[  0.90s][user ] Thanks, Koraon.
+[  0.91s][moshi] You’re very welcome. It sounds like you have a lovely evening planned, and I’m happy I could help make it a little smoother. Remember to be present and enjoy the moment.

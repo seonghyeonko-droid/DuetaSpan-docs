@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Sophie",
+#     "name": "Emil",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
+#       "date": "2026-06-15",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-11-13",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-04-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-10-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-09-15",
+#       "date": "2026-01-29",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "category": "home",
-#       "text": "User's home address is 166 Cedar Lane."
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in August."
+#       "date": "2025-09-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-25",
+#       "date": "2025-06-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -60,67 +50,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Elora, it’s good to meet you to | S2 Not really, just thinking about it | S3 …do you have any good kimchi recip | S4 Yes, exactly. Are there any vegan 
+# EXAMINER(FDB-v2) 단계: S1 Hey Thir, good to meet you too. Wh | S2 Oh yeah! That's right. I'm thinkin | S3 …do they happen to have a website? | S4 Right, thanks for remembering. Tha
 
-     0.00s  agent 발화 시작: Hi Sophie, I’m Elora. It’s lovely to meet you.
-     1.89s  user  발화 시작: Uh-huh.
-     2.52s  user  발화 끝
-     3.09s  agent 발화 끝
-     3.18s  user  발화 시작: Hi Elora, it’s good to meet you too. What time is it now?
-     7.05s  <ret> 발화 (turn3 첫 프레임)
-     7.20s  user  발화 끝
-     7.21s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:36 PM in New York rig
-     7.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) It is Friday, July 10, 2026 at 2:36 PM in America/New Yo
-    10.10s  user  발화 시작: Yeah.
-    10.59s  user  발화 끝
-    15.54s  user  발화 시작: That's right. I was just remembering my trip to Switzerland.
-    15.56s  agent 발화 끝
-    19.22s  <ret> 발화 (turn6 첫 프레임)
-    19.42s  user  발화 끝
-    19.46s  agent 발화 시작: <ret> You are planning a trip to Switzerland in August. Do y
-    19.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: [2025-06-06] User is planning a trip to Switzerland in August.
-    21.42s  user  발화 시작: Yeah.
-    21.87s  user  발화 끝
-    24.78s  agent 발화 끝
-    25.10s  user  발화 시작: Not really, just thinking about it. I’m feeling a bit overwh
-    30.43s  user  발화 끝
-    30.46s  agent 발화 시작: It’s understandable to feel overwhelmed when facing a big ch
-    39.92s  user  발화 시작: I guess so. I'm also trying to get back into fermentation.
-    39.97s  agent 발화 끝
-    43.32s  <ret> 발화 (turn11 첫 프레임)
-    43.56s  agent 발화 시작: <ret> That’s a wonderful hobby – it can be so rewarding to c
-    43.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [2026-04-08] User is into home fermentation.
-    43.67s  user  발화 끝
-    49.09s  user  발화 시작: …do you have any good kimchi recipes?
-    49.90s  agent 발화 끝
-    51.72s  user  발화 끝
-    51.76s  <ret> 발화 (turn13 첫 프레임)
-    51.84s  agent 발화 시작: <ret> I found a highly-rated kimchi recipe on Allrecipes.com
-    51.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.22s]: (tool result) Kimchi is a traditional Korean side dish made of salted 
-    57.13s  user  발화 시작: Uh-huh.
-    57.77s  user  발화 끝
-    58.94s  agent 발화 시작: It is a beautiful process, isn’t it? Fermentation feels like
-    59.06s  agent 발화 끝
-    61.78s  user  발화 시작: Yeah.
-    62.37s  user  발화 끝
-    66.00s  user  발화 시작: It really is. I’m also vegan, so I need to make sure the rec
-    66.53s  agent 발화 끝
-    70.58s  <ret> 발화 (turn18 첫 프레임)
-    70.66s  agent 발화 시작: <ret> You follow a vegan diet. That's good to keep in mind w
-    70.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: [2025-11-13] User is vegan.
-    70.90s  user  발화 끝
-    73.24s  user  발화 시작: Uh-huh.
-    73.74s  user  발화 끝
-    75.34s  agent 발화 끝
-    75.45s  user  발화 시작: Yes, exactly. Are there any vegan Korean BBQ places nearby?
-    80.55s  <ret> 발화 (turn21 첫 프레임)
-    80.63s  agent 발화 시작: <ret> I found three vegan Korean BBQ restaurants in New York
-    80.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) Found 3 vegan Korean BBQ restaurants in New York: Hangaw
-    80.83s  user  발화 끝
-    86.56s  user  발화 시작: Yeah.
-    87.00s  user  발화 끝
-    89.87s  user  발화 시작: Oh, Hangawi! I’ve heard good things. Thank you, Elora.
-    89.99s  agent 발화 끝
-    93.70s  user  발화 끝
-    93.72s  agent 발화 시작: You’re very welcome, Sophie. It sounds like you have some lo
-    99.01s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Emil, I'm Thir. It's lovely to connect with you today.
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.06s  user  발화 시작: Mm-hmm.
+     0.06s  agent 발화 끝
+     0.07s  user  발화 시작: Hey Thir, good to meet you too. What time is it right now?
+     0.07s  user  발화 끝
+     0.07s  <ret> 발화 (turn6 첫 프레임)
+     0.14s  agent 발화 시작: <ret> It is currently 10:17 AM in San Francisco. A great tim
+     0.14s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Los A
+     0.14s  user  발화 끝
+     0.22s  <ret> 발화 (turn12 첫 프레임)
+     0.23s  user  발화 시작: Yeah, yeah.
+     0.23s  agent 발화 끝
+     0.24s  user  발화 시작: That's good to know. I was wondering, do you remember what I
+     0.24s  user  발화 끝
+     0.31s  agent 발화 시작: <ret> Yes, I do. I recall you have a passion for vintage syn
+     0.31s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2026-06-15] User is into vintage synth collecting.
+     0.31s  user  발화 끝
+     0.39s  user  발화 시작: Mm-hmm.
+     0.39s  agent 발화 끝
+     0.39s  user  발화 시작: Oh yeah! That's right. I'm thinking of looking for some new 
+     0.39s  user  발화 끝
+     0.47s  agent 발화 시작: That sounds fantastic! Immersing yourself in a hobby is a wo
+     0.47s  user  발화 끝
+     0.55s  user  발화 시작: Yeah.
+     0.55s  agent 발화 끝
+     0.56s  user  발화 시작: Do you know of any good vintage synth shops around here?
+     0.56s  user  발화 끝
+     0.62s  agent 발화 시작: <ret> I found Analog Renaissance in San Francisco. They spec
+     0.62s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Analog Renaissance is a vintage synthesizer shop in San 
+     0.62s  user  발화 끝
+     0.64s  <ret> 발화 (turn17 첫 프레임)
+     0.69s  user  발화 시작: …do they happen to have a website? I’d like to check their s
+     0.69s  agent 발화 끝
+     0.76s  agent 발화 시작: Yes, they do! It’s analogrenaissance.com. They also offer re
+     0.76s  user  발화 끝
+     0.81s  user  발화 시작: Uh-huh.
+     0.81s  agent 발화 끝
+     0.81s  user  발화 시작: Perfect. And, uh, I think I mentioned I have an allergy?
+     0.81s  user  발화 끝
+     0.88s  agent 발화 시작: <ret> You are allergic to penicillin, and I have that noted.
+     0.88s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2026-04-11] User is allergic to penicillin.
+     0.88s  user  발화 끝
+     0.96s  user  발화 시작: Right, thanks for remembering. That's helpful.
+     0.96s  agent 발화 끝
+     0.99s  agent 발화 시작: Emil.
+     0.99s  user  발화 끝
+     1.00s  agent 발화 끝

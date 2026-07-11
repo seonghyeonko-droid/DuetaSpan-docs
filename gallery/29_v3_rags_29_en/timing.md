@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Caleb",
+#     "name": "Theo",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -13,52 +13,55 @@
 #     },
 #     "nationality": "British",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-11-22",
-#       "category": "home",
-#       "text": "User's home address is 959 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-10-04",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-24",
+#       "date": "2026-01-14",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-21",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-02",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-23",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-02",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What’s the highest number of stage wins in the Tour de Franc
-     3.22s  <ret> 발화 (turn1 첫 프레임)
-     3.54s  agent 발화 시작: <ret> That’s a fantastic question! Eddy Merckx truly dominat
-     3.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.24s]: Eddy Merckx holds the record for the most Tour de France stage wins, w
-     3.61s  user  발화 끝
-    15.78s  agent 발화 끝
+     0.00s  user  발화 시작: When does the new real l word season start?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.24s  agent 발화 시작: <ret> The third season of The Real L Word premiered on July 
+     0.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.76s]: The Real L Word’s third season premiered on Showtime on July 12, 2012.
+     0.24s  user  발화 끝
+     1.00s  agent 발화 끝

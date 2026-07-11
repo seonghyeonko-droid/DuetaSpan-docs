@@ -4,133 +4,162 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Nora",
+#     "name": "Ella",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-06-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-03-21",
-#       "category": "home",
-#       "text": "User's home address is 151 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-08-05",
+#       "date": "2026-01-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "text": "User is planning a trip to Lisbon in May."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "home",
+#       "text": "User's home address is 102 Pine Court."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-03-25",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-26",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 혹시… 누구였는지 말씀해 주실 수 있으세요? | S2 처음 방영했을 때 봤던 것 같아요… 어머님은 정말 좋아하셨어요 | S3 아, 와, 그 쇼는 완전히 잊고 있었네요! | S4 어디서 스트리밍하는지 궁금하네요…
+# EXAMINER(FDB-v2) 단계: S1 안녕, 가온아, 오늘 기분은 어때? | S2 와, 진짜 덥네.… | S3 아, 있네. 오늘 해는 몇 시에 지지? | S4 수면 위생에 대한 정보 좀 찾아 줄래?
 
-     0.00s  user  발화 시작: 안녕하세요. 혹시… 누구였는지 말씀해 주실 수 있으세요?
-     3.81s  user  발화 시작: “The House of the Rising Sun”에는 누가 출연했었나요?
-     4.02s  user  발화 끝
-     6.25s  <ret> 발화 (turn2 첫 프레임)
-     6.56s  agent 발화 시작: <ret> “The House of the Rising Sun”에는 데이비드 얀센, 로리타 모레나, 애비 달
-     6.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: The cast of "The House of the Rising Sun" includes David Janssen, Loli
-     6.76s  user  발화 끝
-    14.80s  agent 발화 끝
-    15.32s  user  발화 시작: 음, 에이미 스마트 씨도 출연했었나요?
-    17.52s  <ret> 발화 (turn4 첫 프레임)
-    17.92s  agent 발화 시작: <ret> 네, 에이미 스마트 씨도 출연하셨어요! 제니 포터 역할을 맡으셨고, 그 역할에 정말 많은 것을 더
-    17.92s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.61s]: Amy Smart played Jenny Porter in "The House of the Rising Sun," a role
-    18.00s  user  발화 끝
-    25.52s  agent 발화 끝
-    25.60s  user  발화 시작: 아, 그렇군요. 그 쇼는 언제 처음 방영됐나요?
-    29.05s  <ret> 발화 (turn6 첫 프레임)
-    29.36s  agent 발화 시작: <ret> 처음 방영된 건 천구백구십사년이었어요—꽤 오래전이네요! 당시에는 정말 인기 있는 쇼였어요.
-    29.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.72s]: "The House of the Rising Sun" originally aired in 1994, captivating au
-    29.53s  user  발화 끝
-    35.94s  user  발화 시작: 처음 방영했을 때 봤던 것 같아요… 어머님은 정말 좋아하셨어요.
-    36.08s  agent 발화 끝
-    40.44s  user  발화 시작: 세탁은 다 하셨나요?
-    40.62s  user  발화 끝
-    41.69s  user  발화 시작: … 아무튼, 로리타 모레나 씨는 그 후에 뭐에 출연했나요?
-    41.91s  user  발화 끝
-    46.01s  <ret> 발화 (turn10 첫 프레임)
-    46.17s  agent 발화 시작: <ret> “The House of the Rising Sun” 이후에 로리타 모레나 씨는 “Beverly 
-    46.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: Lolita Morena appeared in several films and television shows after "Th
-    46.37s  user  발화 끝
-    56.32s  agent 발화 끝
-    56.42s  user  발화 시작: 아, 와, 그 쇼는 완전히 잊고 있었네요!
-    59.65s  user  발화 끝
-    59.81s  agent 발화 시작: 그때 엄청난 인기를 끌었었죠, 안 그랬어요? 구십년대에는 정말 상징적인 쇼들이 많았어요!
-    66.20s  agent 발화 끝
-    66.68s  user  발화 시작: 네, 정말 그랬어요. 데이비드 얀센에 대한 정보를 좀 찾아 주시겠어요?
-    71.31s  <ret> 발화 (turn14 첫 프레임)
-    71.47s  agent 발화 시작: <ret> 데이비드 얀센은 특히 “The Fugitive”에서 리처드 킴블 박사 역할을 맡으면서 아주 유명한
-    71.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: David Janssen was an American film and television actor best known for
-    71.68s  user  발화 끝
-    74.08s  user  발화 시작: 예.
-    74.58s  user  발화 끝
-    77.95s  agent 발화 끝
-    78.12s  user  발화 시작: 아! The Fugitive! 할아버지께서 매주 꼭 챙겨 보셨어요.
-    82.54s  agent 발화 시작: 정말 고전이죠! 많은 가족들이 함께 시청하면서, 그런 쇼들이 공동체 의식을 만들어 냈어요.
-    82.78s  user  발화 끝
-    85.93s  user  발화 시작: 음.
-    86.56s  user  발화 끝
-    90.75s  user  발화 시작: 어디서 스트리밍하는지 궁금하네요…
-    90.84s  agent 발화 끝
-    92.95s  <ret> 발화 (turn20 첫 프레임)
-    93.33s  user  발화 끝
-    93.34s  agent 발화 시작: <ret> 좋은 소식이 있어요! 지금 Amazon Prime Video, Tubi, 그리고 Pluto TV에
-    93.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: (tool result) You can stream "The Fugitive" on Amazon Prime Video, Tub
-    97.27s  user  발화 시작: 음.
-    97.72s  user  발화 끝
-   102.00s  agent 발화 끝
-   103.05s  user  발화 시작: 와, 정말 좋은 정보네요!
-   104.95s  agent 발화 시작: 정말 다행이에요! 제가 찾도록 도와드릴 수 있어서 기뻐요. 뭘 볼지 결정하는 데 드는 피로를 줄여주는 것 같
-   105.17s  user  발화 끝
-   113.02s  user  발화 시작: 고마워요, 카에이아.
-   113.06s  agent 발화 끝
-   114.34s  agent 발화 시작: 천만에요! 언제든지 엔터테인먼트 선택을 간소화하는 데 도움이 필요하시면 말씀해 주세요.
-   114.63s  user  발화 끝
-   120.74s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕, 가온아, 오늘 기분은 어때?
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.00s  <ret> 발화 (turn9 첫 프레임)
+     0.02s  agent 발화 시작: 기분 아주 좋아. 물어봐 줘서 고마워. 조용히 생각하고 편히 쉴 수 있는 날씨네. 넌 어때?
+     0.02s  user  발화 끝
+     0.07s  user  발화 시작: 그럭저럭 괜찮아! 음… 혹시 마스터스 토너먼트 골프 코스 이름이 뭐였지?
+     0.07s  agent 발화 끝
+     0.10s  agent 발화 시작: <ret> 마스터스 토너먼트가 열리는 골프 코스는 조지아주 오거스타에 있는 오거스타 내셔널 골프 클럽이야. 
+     0.10s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Augusta National Golf Club in Augusta, Georgia, is the annual host of 
+     0.10s  user  발화 끝
+     0.13s  <ret> 발화 (turn24 첫 프레임)
+     0.15s  <ret> 발화 (turn19 첫 프레임)
+     0.15s  user  발화 시작: 어.
+     0.15s  agent 발화 끝
+     0.16s  user  발화 시작: 아, 맞아! 오거스타. 알고 있었어.
+     0.16s  user  발화 끝
+     0.17s  agent 발화 시작: 가끔은 세부 사항을 잊기 쉽지.
+     0.17s  user  발화 끝
+     0.19s  <ret> 발화 (turn27 첫 프레임)
+     0.19s  user  발화 시작: 어.
+     0.19s  agent 발화 끝
+     0.19s  user  발화 시작: 근데 지금 오거스타 날씨는 어때?
+     0.19s  user  발화 끝
+     0.21s  agent 발화 시작: <ret> 지금 조지아주 오거스타는 화씨 팔십육도이고, 습도는 육십오퍼센트, 남풍이 시속 팔마일로 불어. 여
+     0.21s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Current conditions in Augusta, Georgia are 86.0°F, humid
+     0.21s  user  발화 끝
+     0.27s  user  발화 시작: 어어.
+     0.27s  agent 발화 끝
+     0.27s  user  발화 시작: 와, 진짜 덥네.…
+     0.27s  user  발화 끝
+     0.28s  user  발화 시작: …나는 그냥 집에 있을래.
+     0.28s  user  발화 끝
+     0.30s  agent 발화 시작: 좋은 선택이야! 때로는 편안한 실내 공간을 즐기는 것만큼 좋은 휴식이 없어.
+     0.30s  user  발화 끝
+     0.33s  user  발화 시작: 여보, 쓰레기 버렸어?
+     0.33s  agent 발화 끝
+     0.34s  user  발화 시작: …됐어.
+     0.34s  user  발화 끝
+     0.35s  agent 발화 시작: 지금 내가 뭐 도와줄 거 있어?
+     0.35s  user  발화 끝
+     0.37s  user  발화 시작: 그치.
+     0.37s  agent 발화 끝
+     0.37s  user  발화 시작: 아, 있네. 오늘 해는 몇 시에 지지?
+     0.37s  user  발화 끝
+     0.39s  agent 발화 시작: <ret> 지금이 이천이십육년 칠월 십일 금요일 오후 세시 십칠분이고, 서울 시간으로 해가 여덟시 삼십이분에
+     0.39s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     0.39s  user  발화 끝
+     0.46s  user  발화 시작: 오.
+     0.46s  agent 발화 끝
+     0.46s  agent 발화 시작: 기분 좋네. 해가 질 때 편안한 음료 한 잔 하는 것도 괜찮겠어?
+     0.46s  user  발화 끝
+     0.50s  user  발화 시작: 응.
+     0.50s  agent 발화 끝
+     0.50s  user  발화 시작: 음, 어쩌면. 편안한 피아노 음악 좀 찾아 줄래?
+     0.50s  user  발화 끝
+     0.53s  agent 발화 시작: <ret> 마로니 유니온의 “Weightless”가 가장 편안한 피아노 곡 중 하나로 자주 언급돼. 원한다면
+     0.53s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) “Weightless” by Marconi Union is consistently ranked as 
+     0.53s  user  발화 끝
+     0.58s  user  발화 시작: 응.
+     0.58s  agent 발화 끝
+     0.58s  user  발화 시작: 응, 틀어 줘!
+     0.58s  user  발화 끝
+     0.59s  agent 발화 시작: <ret> 마로니 유니온의 “Weightless” 재생 중. 음악에 몸을 맡기고 마음을 편안하게 해 봐.
+     0.59s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Playing “Weightless” by Marconi Union.
+     0.59s  user  발화 끝
+     0.61s  <ret> 발화 (turn33 첫 프레임)
+     0.63s  user  발화 시작: 아.
+     0.63s  agent 발화 끝
+     0.63s  user  발화 시작: 정말 좋다, 고마워.
+     0.63s  user  발화 끝
+     0.64s  agent 발화 시작: 천만에. 평화로운 순간을 만드는 데 도움이 되도록 설계됐어.
+     0.64s  user  발화 끝
+     0.67s  user  발화 시작: 응.
+     0.67s  agent 발화 끝
+     0.67s  user  발화 시작: 수면 위생에 대한 정보 좀 찾아 줄래?
+     0.67s  user  발화 끝
+     0.69s  agent 발화 시작: <ret> 수면 위생은 규칙적으로 잘 자기 위해 지켜야 할 습관과 관행을 말해. 일정한 수면 스케줄을 지키고
+     0.69s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Sleep hygiene involves habits and practices that are conducive to slee
+     0.69s  user  발화 끝
+     0.70s  <ret> 발화 (turn38 첫 프레임)
+     0.77s  user  발화 시작: 응.
+     0.77s  agent 발화 끝
+     0.78s  user  발화 시작: 그래, 말이 되네. 나한테 좋은 잠자리는 몇 시쯤이야?
+     0.78s  user  발화 끝
+     0.80s  agent 발화 시작: 그건 정말 개인적인 질문이고, 네 스케줄에 따라 달라져. 보통 몇 시에 일어나?
+     0.80s  user  발화 끝
+     0.84s  user  발화 시작: 보통 아침 일곱시쯤에 일어나.
+     0.84s  agent 발화 끝
+     0.86s  agent 발화 시작: <ret> 아침 일곱시에 일어나는 사람에게는 칠~아홉시간의 수면을 취하기 위해 밤 열시에서 자정 사이에 잠자
+     0.86s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Experts recommend 7-9 hours of sleep per night for adults, meaning a b
+     0.86s  user  발화 끝
+     0.93s  user  발화 시작: 그치.
+     0.93s  agent 발화 끝
+     0.94s  user  발화 시작: 알았어, 밤 열시. 한번 해볼게. 고마워, 가온아.
+     0.94s  user  발화 끝
+     0.96s  agent 발화 시작: 천만에. 더 나은 휴식을 위한 여정을 응원할게. 좋은 꿈 꿔, 때가 되면.
+     0.96s  user  발화 끝
+     1.00s  agent 발화 끝

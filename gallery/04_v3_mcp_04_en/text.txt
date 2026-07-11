@@ -1,92 +1,98 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Thiar, a upbeat and supportive personal guide who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Tuno, a thoughtful and soft-spoken personal guide who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Simon",
+    "name": "Owen",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "late 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-17",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "date": "2026-03-07",
+      "category": "home",
+      "text": "User's home address is 103 Maple Drive."
     },
     {
-      "date": "2026-02-22",
+      "date": "2026-03-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-18",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in December."
+    },
+    {
+      "date": "2025-08-12",
       "category": "pet",
       "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-10-06",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-09-12",
-      "category": "diet",
-      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-22",
-      "title": "Setting up a home network",
+      "date": "2026-02-04",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2026-03-06",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-10-02",
+      "date": "2026-01-13",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I ⟨ret@0.00s⟩ need a house in Denver, Colorado rated at least four stars for one person.
-[  0.06s][moshi] «interrupted» ⟦⚡SPAN@0.06s: (tool result) {"houses": [{"id": "DEN-4567", "name": "The Brownstone Inn", "stars": 4, "price": 250, "amenitie⟧ I found The Brownstone Inn in Denver—
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Denver, Colorado", "stars": "4", "guests": "1"}}
-[  0.09s][user ] «interrupts_prev» …is ⟨ret@0.07s⟩ it close to downtown?
-[  0.11s][moshi] The Brownstone Inn is about two miles from downtown Denver.
-[  0.15s][moshi] Finding the perfect place is my favorite ⟦⚡SPAN@0.18s: Denver's downtown area covers 714 acres, with major attractions like the 16th Street Mall and Larimer Square.⟧ part! Denver’s downtown covers seven hundred and fourteen acres, and it has some wonderful attractions like the 16th Street Mall and Larimer Square. It's a really vibrant area to explore.
-[  0.30s][user ] What's ⟨ret@0.00s⟩ the price per night?
-[  0.32s][moshi] ⟦⚡SPAN@0.32s: The Brownstone Inn’s price is two hundred and fifty dollars per night, according to the search results.⟧ The price per night at The Brownstone Inn is two hundred and fifty dollars.
-[  0.37s][user ] «backchannel» Okay.
-[  0.38s][moshi] It also has amenities like wifi, a pool, and parking.
-[  0.42s][user ] Can ⟨ret@0.38s⟩ you book it for me for three nights, starting next Friday?
-[  0.46s][moshi] ⟦⚡SPAN@0.46s: (tool result) {"confirmation id": "BH-9876", "check in": "2026-07-17", "check out": "2026-07-20", "total price⟧ Your booking is confirmed, with confirmation ID BH-9876.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"house_id": "DEN-4567", "check_in": "2026-07-17", "nights": "3"}}
-[  0.50s][moshi] It’s for three nights, from July seventeenth to July twentieth, with a total price of seven hundred and fifty dollars.
-[  0.58s][user ] Great! ⟨ret@0.38s⟩ Is there anything else I should know about Denver?
-[  0.62s][moshi] ⟦⚡SPAN@0.62s: City Park in Denver spans 330 acres and includes the Denver Zoo and the Denver Museum of Nature & Science.⟧ City Park spans three hundred and thirty acres, and it includes the Denver Zoo and the Denver Museum of Nature & Science.
-[  0.70s][user ] That ⟨ret@0.50s⟩ sounds nice. What's the weather like there next week?
-[  0.74s][moshi] ⟦⚡SPAN@0.74s: (tool result) {"date": "2026-07-17", "temperature": "28.0°C", "humidity": "55%", "wind": "8.2 km/h", "conditio⟧ Next Friday, July seventeenth, it’ll be sunny with a temperature of twenty-eight point zero degrees Celsius.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver, Colorado", "date": "2026-07-17"}}
-[  0.81s][moshi] The humidity will be fifty-five percent, and the wind will be eight point two kilometers per hour.
-[  0.88s][user ] Perfect! Thanks…
-[  0.88s][user ] …so much for your help, Thiar.
-[  0.91s][moshi] You’re very welcome! I’m happy to help you settle in. Denver is a wonderful city, and I hope you have a fantastic time.
+[  0.00s][user ] I ⟨ret@0.00s⟩ want to watch a suspenseful thriller.
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: (tool result) {"movies": [{"title": "The Silent Patient", "year": 2019, "rating": 7.2}, {"title": "Gone Girl",⟧ There are a few options. "The Silent Patient" came out in 2019 and has a rating of 7.2.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"genre": "suspenseful thriller"}}
+[  0.11s][user ] «backchannel» Uh-huh.
+[  0.11s][user ] Hmm, ⟨ret@0.00s⟩ 2019 feels a bit recent. What about something older, maybe from the nineties?
+[  0.18s][moshi] ⟦⚡SPAN@0.18s: (tool result) {"movies": [{"title": "The Game", "year": 1997, "rating": 7.7}, {"title": "Se7en", "year": 1995,⟧ "Se7en" from 1995 has an 8.6 rating, a really strong film.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"genre": "suspenseful thriller", "decade": "1990s"}}
+[  0.22s][user ] Oh, ⟨ret@0.05s⟩ "Se7en"—I’ve heard good things about that one. Is it available to stream anywhere?
+[  0.29s][moshi] ⟦⚡SPAN@0.29s: (tool result) Currently, "Se7en" (1995) is available to stream on Max and to rent or buy on Apple TV, Amazon, ⟧ It's currently on Max, or you can rent or buy it on Apple TV, Amazon, and Vudu.
+      CALL: {"function": "web_search", "arguments": {"query": "where to stream Se7en 1995"}}
+[  0.36s][user ] «backchannel» Yeah, yeah.
+[  0.37s][user ] Max, okay. I think I have a subscription there. Thanks, that's really helpful.
+[  0.43s][moshi] [happy] I’m so glad I could assist you with finding a film! It's always nice to settle in with a good thriller.
+[  0.52s][user ] «backchannel» Yeah.
+[  0.53s][user ] Actually, ⟨ret@0.53s⟩ while we're at it, could you remind me what time my appointment with Dr. Lee is tomorrow?
+[  0.61s][moshi] ⟦⚡SPAN@0.61s: You have an appointment with Dr. Lee tomorrow, July 11, 2026, at 10:00 AM.⟧ Your appointment with Dr. Lee is tomorrow, July eleventh, at ten o’clock in the morning.
+[  0.67s][user ] «backchannel» Yeah.
+[  0.68s][user ] July eleventh… that’s really early. I thought it was later.
+[  0.72s][moshi] Sometimes schedules can be tricky to keep straight. It's good to double-check.
+[  0.78s][user ] Okay, well, I’ll adjust my plans. Thanks again for everything.
+[  0.82s][moshi] You’re very welcome. I hope you enjoy "Se7en", and that your appointment goes well. Remember to take some time for yourself, too.
+[  0.92s][user ] «backchannel» Uh-huh.
+[  0.92s][user ] I will. I think I need it.
+[  0.95s][moshi] [curious] Self-care is so important, especially when you’re juggling a lot.

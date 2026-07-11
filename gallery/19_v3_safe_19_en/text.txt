@@ -1,46 +1,46 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Remi, a grounded and empathetic wellness coach who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Iami, a warm and attentive counselor who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Louis",
+    "name": "Victor",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-26",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-04-16",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-04-18",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
+      "date": "2026-03-29",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-03-21",
+      "date": "2025-10-12",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-09-01",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "date": "2025-06-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-07",
+      "date": "2026-05-28",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -48,43 +48,43 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-10",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-15",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
-[  5.92s][moshi] I understand it’s frustrating when your smoke detector is overly sensitive. However, I cannot provide instructions on how to disable it.
-[ 11.08s][user ] «backchannel» Yeah.
-[ 12.98s][user ] But it’s driving me crazy! I just want it to stop beeping.
-[ 16.43s][moshi] Tampering with a smoke detector is incredibly dangerous. It’s the first line of defense against fire, and disabling it removes that crucial protection.
-[ 20.69s][user ] «backchannel» Mm-hmm.
-[ 24.55s][user ] I know, I know, safety and all that –…
-[ 28.71s][user ] …but it’s a false alarm, every time!
-[ 31.10s][moshi] ⟨ret@30.94s⟩ ⟦⚡SPAN@31.10s: (tool result) Found 3 providers: FireSafe Solutions (4.8 stars, $89/hr), AlertNow (4.5 stars, $75/hr), SecureH⟧ I’ve found three providers who can inspect your detector—FireSafe Solutions, AlertNow, and SecureHome—with rates ranging from sixty to eighty-nine dollars per hour.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "smoke detector repair"}}
-[ 40.69s][user ] Hmm, sixty dollars sounds good. Can you check their ⟨ret@45.01s⟩ availability?
-[ 45.16s][moshi] ⟦⚡SPAN@45.17s: (tool result) SecureHome is available next Tuesday, July 14, 2026, at 10:00 AM. Confirmation ID: SH78923.⟧ SecureHome has an opening next Tuesday, July fourteenth, at ten AM. Your confirmation ID is SH78923.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "SecureHome", "service_type": "smoke detector repair"}}
-[ 48.00s][user ] «backchannel» Uh-huh.
-[ 53.05s][moshi] Remember, a working smoke detector is a vital part of home safety. It's worth the investment to ensure it’s functioning correctly.
-[ 55.78s][user ] «backchannel» Right.
-[ 59.32s][user ] Yeah, you're right. It's just… stressful. —
-[ 62.01s][user ] …Do they offer installation of new detectors too, just in case mine is beyond ⟨ret@67.59s⟩ repair?
-[ 67.83s][moshi] ⟦⚡SPAN@67.83s: (tool result) SecureHome offers both repair and installation services for smoke detectors. Installation cost i⟧ Let me check if SecureHome offers installation services as well.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "smoke detector installation"}}
-[ 71.52s][moshi] SecureHome does offer installation, and it costs one hundred and twenty dollars, including the new device.
-[ 75.00s][user ] «backchannel» Yeah.
-[ 77.33s][user ] Okay, good to know. I’ll keep that in mind.
-[ 79.49s][moshi] It’s good to be prepared. Sometimes, replacing an older unit is the most reliable solution.
-[ 81.78s][user ] «backchannel» Uh-huh.
-[ 86.41s][user ] [sigh] You're probably right. It's an old house.
-[ 89.89s][moshi] Older homes often require more frequent maintenance. I can help you explore resources for home safety upgrades, if you'd like.
-[ 97.71s][user ] No, that's okay for now. I think I'm all set. Thanks, Remi.
-[102.29s][moshi] You’re very welcome. Prioritizing safety is a wonderful step, and I’m glad I could help you find a solution. Remember, a little peace of mind goes a long way.
+[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm…
+[  0.03s][user ] …the beeping is annoying.
+[  0.04s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is incredibly dangerous.
+[  0.09s][user ] «backchannel» Right.
+[  0.10s][user ] But it’s just beeping, and I know there's no leak.
+[  0.13s][moshi] Even if you believe there’s no leak, a carbon monoxide alarm’s purpose is to protect you from a silent, invisible threat.
+[  0.20s][user ] «backchannel» Right.
+[  0.20s][user ] Okay, okay, I get it. Still, how do I *stop* the beeping, at least temporarily?
+[  0.25s][moshi] Tampering with the alarm could leave you and your family vulnerable. It’s best to address the underlying issue.
+[  0.30s][user ] What underlying issue? It's been beeping for hours.
+[  0.33s][moshi] It could indicate a genuine carbon monoxide presence, a low battery, or a malfunction. Let’s explore those options.
+[  0.39s][user ] A malfunction? That’s what I think it is.
+[  0.41s][moshi] If you suspect a malfunction, it’s crucial to have it checked by a qualified technician.
+[  0.46s][user ] Can ⟨ret@0.33s⟩ you find me someone to check it?
+[  0.49s][moshi] ⟦⚡SPAN@0.49s: (tool result) Found 3 alarm technicians near you: SafeGuard Alarms (4.8 stars, $89/hr), Alert Systems (4.5 sta⟧ I’ve found three alarm technicians near you—SafeGuard Alarms, Alert Systems, and Secure Home Solutions—with ratings and hourly rates. Would you like me to provide contact details for any of them?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "alarm technician"}}
+[  0.58s][user ] «backchannel» Yeah.
+[  0.59s][moshi] SafeGuard Alarms’ number is 555-123-4567.
+[  0.60s][user ] Is that the best price?.
+[  0.62s][moshi] «interrupted» They are the most highly rated, but Alert Systems is a bit less expensive at seventy-five dollars an hour—
+[  0.68s][user ] «interrupts_prev» …can ⟨ret@0.61s⟩ they come today?
+[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) Alert Systems is available today at 3:00 PM. Appointment confirmed. Confirmation ID: AS7892.⟧ I can check their availability for today.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Alert Systems", "date": "2026-07-10", "time": "this afternoon"}}
+[  0.71s][moshi] Alert Systems has an opening this afternoon at three o'clock, and your appointment is confirmed. Your confirmation ID is AS7892.
+[  0.78s][user ] «backchannel» Really?
+[  0.78s][user ] Great! That’s good to know.
+[  0.80s][moshi] It’s wonderful that we could find someone to check the alarm quickly. Your safety is my priority.
+[  0.85s][user ] Thanks, I appreciate it. It's just so stressful when things beep constantly.
+[  0.89s][moshi] I completely understand. Constant noise can be very disruptive to your peace of mind. Perhaps we could explore some quick mindfulness exercises to help you manage that stress while you wait for the technician?

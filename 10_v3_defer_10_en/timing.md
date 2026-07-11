@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Remy",
+#     "name": "Charlie",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -13,39 +13,42 @@
 #     },
 #     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2026-05-31",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-01-13",
+#       "date": "2026-04-26",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-11-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-09-01",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-07-17",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2025-06-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-24",
+#       "date": "2026-01-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-16",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -55,29 +58,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to start a crawl of the BBC | S2 …Can you tell me about the current | S3 That sounds rough. How long will t | S4 Good, thank you. I'm trying to sta
+# EXAMINER(FDB-v2) 단계: S1 I’m hoping to find a house in New  | S2 That sounds… nice. What’s the weat | S3 Hmm, maybe a little warm. | S4 Can you find me some restaurants n
 
-     0.00s  user  발화 시작: I need to start a crawl of the BBC News website, only going 
-     0.12s  <ret> 발화 (turn1 첫 프레임)
-     0.19s  <ret> 발화 (turn3 첫 프레임)
-     0.20s  agent 발화 시작: <ret> Alright, I’ve started that crawl for you—
-     0.20s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Crawl initiated: URL=https://www.bbc.com/news, Depth=1, 
-     0.20s  user  발화 끝
-     0.25s  user  발화 시작: …Can you tell me about the current top story on BBC News whi
-     0.25s  agent 발화 끝
-     0.35s  agent 발화 시작: <ret> The BBC is currently leading with a heatwave impacting
-     0.35s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: The BBC News website currently leads with the story of a heatwave impa
-     0.35s  user  발화 끝
-     0.50s  agent 발화 시작: It’s quite a significant situation there.
-     0.50s  agent 발화 끝
-     0.54s  user  발화 시작: Yeah.
-     0.54s  agent 발화 끝
-     0.55s  user  발화 시작: That sounds rough. How long will that crawl take, roughly?
-     0.55s  user  발화 끝
-     0.62s  agent 발화 시작: It’s hard to say precisely, but crawls of that size usually 
-     0.62s  user  발화 끝
-     0.79s  user  발화 시작: Good, thank you. I'm trying to stay informed on world events
-     0.79s  agent 발화 끝
-     0.87s  agent 발화 시작: That's a very healthy habit, staying informed. It helps us f
-     0.87s  user  발화 끝
+     0.00s  user  발화 시작: I’m hoping to find a house in New Orleans, Louisiana for fou
+     0.04s  <ret> 발화 (turn1 첫 프레임)
+     0.12s  agent 발화 시작: <ret> I found a lovely cottage, the Bayou Breeze Cottage, at
+     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: (tool result) {"houses": [{"id": "NOLA-007", "name": "Bayou Breeze Cot
+     0.12s  user  발화 끝
+     0.29s  <ret> 발화 (turn3 첫 프레임)
+     0.36s  user  발화 시작: That sounds… nice. What’s the weather like there right now?
+     0.36s  agent 발화 끝
+     0.45s  agent 발화 시작: <ret> Right now in New Orleans, it’s 31.1 degrees Celsius, w
+     0.45s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: (tool result) {"temperature": 31.1, "humidity": 82, "wind speed": 8.9,
+     0.45s  user  발화 끝
+     0.68s  user  발화 시작: Yeah, yeah.
+     0.68s  agent 발화 끝
+     0.70s  user  발화 시작: Hmm, maybe a little warm.
+     0.70s  user  발화 끝
+     0.75s  agent 발화 시작: It is a bit toasty! But think of all the delicious iced coff
+     0.75s  user  발화 끝
+     0.83s  <ret> 발화 (turn9 첫 프레임)
+     0.89s  user  발화 시작: Yeah.
+     0.89s  agent 발화 끝
+     0.90s  user  발화 시작: Can you find me some restaurants nearby that serve seafood?
+     0.90s  user  발화 끝
+     0.99s  agent 발화 시작: <ret> Absolutely!
+     0.99s  ⚡SPAN 주입 [d'=0.01s / d_lead=0.01s]: (tool result) {"restaurants": [{"name": "Felix's Restaurant & Oyster B
+     0.99s  user  발화 끝
      1.00s  agent 발화 끝

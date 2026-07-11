@@ -4,43 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Nina",
+#     "name": "Harry",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-04-01",
+#       "category": "home",
+#       "text": "User's home address is 185 Elm Street."
+#     },
+#     {
+#       "date": "2026-02-19",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2025-10-05",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2025-09-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-05-29",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-08",
+#       "date": "2026-04-29",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,46 +61,55 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-26",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-02",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 Great, thanks. What’s the weather  | S3 Sounds pleasant. Is it far to walk | S4 Perfect, that’s very helpful.
 
-     0.00s  user  발화 시작: I need to find pharmacies within three kilometers of San Fra
+     0.00s  user  발화 시작: I need to find a good Italian restaurant nearby, maybe aroun
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.11s  <ret> 발화 (turn4 첫 프레임)
-     0.14s  agent 발화 시작: <ret> I found a Walgreens at 123 Main Street in San Francisc
-     0.14s  ⚡SPAN 주입 [d'=0.19s / d_lead=0.19s]: (tool result) {"results": [{"name": "Walgreens", "vicinity": "123 Main
-     0.14s  user  발화 끝
-     0.33s  user  발화 시작: Mm-hmm.
-     0.33s  agent 발화 끝
-     0.34s  user  발화 시작: Oh, um, actually, make that five kilometers.
-     0.34s  user  발화 끝
-     0.43s  agent 발화 시작: <ret> No problem at all. Now, within five kilometers, there’
-     0.43s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: (tool result) {"results": [{"name": "CVS Pharmacy", "vicinity": "456 O
-     0.43s  user  발화 끝
-     0.68s  user  발화 시작: Yeah.
-     0.68s  agent 발화 끝
-     0.70s  agent 발화 시작: It’s wonderful you’re thinking ahead about health needs—bein
-     0.70s  user  발화 끝
-     0.73s  <ret> 발화 (turn8 첫 프레임)
-     0.87s  user  발화 시작: Can you give me directions to the CVS?
-     0.87s  agent 발화 끝
-     0.97s  agent 발화 시작: <ret> It’s 4.
-     0.97s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"routes": [{"legs": [{"distance": {"text": "4.8 km", "v
-     0.97s  user  발화 끝
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.10s  agent 발화 시작: <ret> Trattoria Romana has openings at six thirty this eveni
+     0.10s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: There are many Italian restaurants in the vicinity, with Trattoria Rom
+     0.10s  user  발화 끝
+     0.20s  user  발화 시작: Yeah.
+     0.20s  agent 발화 끝
+     0.21s  user  발화 시작: Um, six thirty— no, make that seven.
+     0.21s  user  발화 끝
+     0.22s  <ret> 발화 (turn7 첫 프레임)
+     0.26s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for two at Trattoria 
+     0.26s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Confirmation: Trattoria Romana, July 10, 2026, 7:00 PM, 
+     0.26s  user  발화 끝
+     0.38s  user  발화 시작: Yeah, totally.
+     0.38s  agent 발화 끝
+     0.40s  user  발화 시작: Great, thanks. What’s the weather like there right now?
+     0.40s  user  발화 끝
+     0.46s  agent 발화 시작: <ret> It's currently 24.0 degrees Celsius, with 68% humidity
+     0.46s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) The weather at Trattoria Romana is currently 24.0°C, hum
+     0.46s  user  발화 끝
+     0.47s  <ret> 발화 (turn9 첫 프레임)
+     0.57s  <ret> 발화 (turn12 첫 프레임)
+     0.58s  user  발화 시작: Sounds pleasant. Is it far to walk?
+     0.58s  agent 발화 끝
+     0.63s  agent 발화 시작: <ret> It’s about 1.2 kilometers, a fifteen-minute walk from 
+     0.63s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: Trattoria Romana is located 1.2 kilometers from your current location,
+     0.63s  user  발화 끝
+     0.78s  user  발화 시작: Yeah, totally.
+     0.78s  agent 발화 끝
+     0.79s  user  발화 시작: Yes, please do.
+     0.79s  user  발화 끝
+     0.81s  agent 발화 시작: <ret> Head north on Main Street for half a kilometer, then t
+     0.81s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Directions to Trattoria Romana: Head north on Main Stree
+     0.81s  user  발화 끝
+     0.95s  user  발화 시작: Perfect, that’s very helpful.
+     0.95s  agent 발화 끝
+     0.98s  agent 발화 시작: You’re very welcome!
+     0.98s  user  발화 끝
      1.00s  agent 발화 끝

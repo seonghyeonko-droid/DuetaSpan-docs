@@ -1,95 +1,70 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Liana, a practical and reassuring wellness coach who helps people with big life transitions. <system>
+SYSTEM: <system> You are Kuon, a curious and validating counselor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Andrea",
+    "name": "Jamie",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-06",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-04-06",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-02-04",
-      "category": "home",
-      "text": "User's home address is 674 Oak Avenue."
-    },
-    {
-      "date": "2025-08-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-07-17",
+      "date": "2026-02-03",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
+      "text": "User is planning a trip to Switzerland in August."
+    },
+    {
+      "date": "2025-10-28",
+      "category": "home",
+      "text": "User's home address is 23 Cedar Lane."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-08-11",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-06",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-11-03",
+      "date": "2026-01-05",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm feeling a bit lost after my recent move.
-[  3.23s][moshi] Moving is a big transition, and it’s completely normal to feel unsettled. It takes time to build a new routine, you know?
-[  6.93s][user ] «backchannel» Mhm.
-[ 13.18s][user ] Yeah, it's… hard. I'm trying to learn about the history of this town, though.
-[ 17.86s][moshi] That's a wonderful way to connect with a new place! Exploring the past can really help you feel grounded.
-[ 25.68s][user ] Do you know when this town ⟨ret@27.06s⟩ was founded?
-[ 27.38s][moshi] ⟦⚡SPAN@27.38s: The town of Millbrook was founded in 1692 by German Palatine immigrants seeking religious freedom.⟧ Millbrook was founded in sixteen ninety-two, by German Palatine immigrants—people seeking religious freedom.
-[ 30.48s][user ] «backchannel» Mm-hmm.
-[ 34.82s][user ] Wow, that's a long time ago.
-[ 36.35s][moshi] It is, isn't it? It’s amazing to think about all the stories a place holds after centuries.
-[ 41.01s][user ] «backchannel» Really?
-[ 42.45s][user ] Um, I was reading about James Henry Miller, a local figure.
-[ 45.83s][moshi] Oh, yes, James Henry Miller was quite a prominent figure here. He contributed a lot to the community.
-[ 48.60s][user ] «backchannel» Uh-huh.
-[ 53.38s][user ] I'm trying to find out about his family. What was his wife's nationality?
-[ 57.22s][moshi] ⟨ret@57.14s⟩ ⟦⚡SPAN@57.22s: James Henry Miller’s wife, Eliza Jane Thompson, was born in Pennsylvania and was of American nationality.⟧ Eliza Jane Thompson, James Henry Miller’s wife, was born in Pennsylvania and was, specifically, of American nationality.
-[ 59.80s][user ] «backchannel» Yeah.
-[ 65.70s][user ] American, okay. That's good to know.
-[ 67.85s][moshi] Sometimes understanding a person’s roots helps you understand their choices. It can provide context, don’t you think?
-[ 74.98s][user ] I guess so. Can you find me some restaurants nearby? I’m ⟨ret@78.38s⟩ starving.
-[ 78.69s][moshi] ⟦⚡SPAN@78.70s: (tool result) Found 3 restaurants: The Corner Bistro, Italian; Millbrook Diner, American; Sakura Sushi, Japane⟧ I found three restaurants nearby: The Corner Bistro, Italian; Millbrook Diner, American; and Sakura Sushi, Japanese.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 82.40s][user ] «backchannel» Mhm.
-[ 87.21s][user ] Sushi sounds good. What's the weather like ⟨ret@89.77s⟩ tonight?
-[ 89.93s][moshi] ⟦⚡SPAN@89.93s: (tool result) The weather tonight will be 18.5°C, humidity 65%, wind 3.2 km/h, clear skies.⟧ Tonight's weather will be eighteen point five degrees Celsius, with sixty-five percent humidity, clear skies, and a three point two kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 94.82s][user ] «backchannel» Uh-huh.
-[ 99.44s][user ] Perfect. Thanks, Liana.
-[101.11s][moshi] You're very welcome. Remember, taking small steps, like exploring the town or enjoying a good meal, can make a big difference.
+[  0.00s][user ] I’m ⟨ret@0.00s⟩ trying to trace my family history. Do you know anything about the early governors of Maryland?
+[  0.21s][moshi] ⟦⚡SPAN@0.21s: Leonard Calvert became the first Governor of the Province of Maryland in 1634, serving until his death in 1647⟧ It appears Leonard Calvert was the first Governor of Maryland, serving from 1634 until 1647.
+[  0.40s][user ] «backchannel» Yeah.
+[  0.41s][user ] That’s ⟨ret@0.19s⟩ interesting. Who was the fifth governor, then?
+[  0.51s][moshi] «interrupted» ⟦⚡SPAN@0.51s: Cecil Calvert, the second Lord Baltimore, served as the fifth governor of the Province of Maryland from 1661 t⟧ Cecil Calvert, the second Lord Baltimore, was the fifth governor—
+[  0.64s][user ] «interrupts_prev» …was he ⟨ret@0.66s⟩ related to the first governor, Leonard?
+[  0.74s][moshi] ⟦⚡SPAN@0.74s: Cecil Calvert was the son of George Calvert, the first Lord Baltimore, and therefore the son of the founder of⟧ Cecil Calvert was the son of George Calvert, the founder of the Maryland colony.
+[  0.91s][user ] «backchannel» Right.
+[  0.93s][moshi] ⟨ret@0.85s⟩ ⟦⚡SPAN@0.93s: Cecil Calvert was born in 1605.⟧ Cecil Calvert was born in 1605.

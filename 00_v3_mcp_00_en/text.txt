@@ -1,108 +1,84 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Bio, a practical and reassuring counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Fuus, a thoughtful and soft-spoken counselor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Paul",
+    "name": "Louis",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "early 30s",
-    "language": "French"
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2026-06-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-06-08",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-01-22",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-12-07",
+      "date": "2026-04-28",
       "category": "trip",
       "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2025-10-02",
-      "category": "home",
-      "text": "User's home address is 711 Birch Road."
+      "date": "2026-02-15",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-12",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-16",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-11-29",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-21",
+      "date": "2026-03-29",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-05-27",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I ⟨ret@0.00s⟩ need to order three of the blue ceramic vases from that website.
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) Order created: 78923, $75.00, pending.⟧ Alright, I’ve created an order for three blue ceramic vases, order number 78923, totaling seventy-five dollars.
-      CALL: {"function": "create_order", "arguments": {"quantity": "3", "product_name": "blue ceramic vase"}}
-[  0.12s][user ] Great! ⟨ret@0.00s⟩ And can you check the weather in Seoul right now?
-[  0.16s][moshi] ⟦⚡SPAN@0.16s: (tool result) Seoul: 26.5°C, humidity 68%, wind 3.2 km/h, condition: partly cloudy.⟧ The weather in Seoul is currently twenty-six point five degrees Celsius, partly cloudy, with sixty-eight percent humidity.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[  0.23s][user ] That sounds pleasant.
-[  0.24s][moshi] It does, doesn’t it? A little warmth can be really uplifting.
-[  0.28s][user ] I'm thinking of going to a concert next week.
-[  0.32s][moshi] That sounds like fun! Do you have a specific artist or venue in mind?
-[  0.37s][user ] «backchannel» Mm-hmm.
-[  0.38s][user ] Uh, ⟨ret@0.09s⟩ I was hoping to see something… jazz, maybe?
-[  0.41s][moshi] ⟦⚡SPAN@0.41s: (tool result) Jazz Night at Sejong Center: July 17, 2026, 8:00 PM, tickets from $40.⟧ There’s a Jazz Night at the Sejong Center on July seventeenth, 2026, at eight PM, with tickets starting at forty dollars.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"keywords": "jazz concert", "date": "next week"}}
-[  0.50s][user ] «backchannel» Wow.
-[  0.50s][moshi] Wonderful! It’s a well-regarded venue, and the Sejong Center often hosts excellent musicians.
-[  0.55s][user ] «backchannel» Yeah.
-[  0.56s][user ] I ⟨ret@0.28s⟩ think I'll get tickets. Can you find them for me?
-[  0.60s][moshi] ⟦⚡SPAN@0.60s: (tool result) Tickets purchased: Jazz Night, 2026-07-17, 1, AX12BZ.⟧ I’ve purchased one ticket to Jazz Night at the Sejong Center on July seventeenth, 2026; your confirmation number is AX12BZ.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Jazz Night at Sejong Center", "date": "July 17, 2026"}}
-[  0.68s][user ] «backchannel» Right.
-[  0.69s][user ] Perfect, thank you.
-[  0.70s][moshi] You’re very welcome. It’s always good to have something to look forward to, isn't it?
-[  0.76s][user ] Definitely. I'm a little stressed…
-[  0.78s][user ] …about work, actually.
-[  0.79s][moshi] I understand. Work can be a significant source of stress. Sometimes just acknowledging it helps, you know?
-[  0.86s][user ] «backchannel» Yeah.
-[  0.86s][user ] Yeah, it does a little. I just feel overwhelmed.
-[  0.90s][moshi] Overwhelm is a common feeling, especially when facing many demands. Taking small steps can make a big difference. Perhaps we can explore some simple relaxation techniques?
+[  0.00s][user ] I'm craving pizza. What's around thirty-four point zero five two two latitude…
+[  0.10s][user ] …negative ⟨ret@0.00s⟩ one hundred eighteen point two four three seven?
+[  0.17s][moshi] ⟦⚡SPAN@0.17s: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014",⟧ There are a couple of options nearby. Doughy Joe's Pizza is just zero point three miles away.
+      CALL: {"function": "maps_around_search", "arguments": {"latitude": "34.0522", "longitude": "-118.2437", "query": "pizza"}}
+[  0.32s][user ] «backchannel» Uh-huh.
+[  0.33s][user ] Uh, ⟨ret@0.00s⟩ is Doughy Joe's open right now?
+[  0.38s][moshi] ⟦⚡SPAN@0.38s: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014", "open now", ⟧ Let me check their current hours for you.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Doughy Joe's Pizza", "location": "725 S Spring St, Los Angeles, CA 90014"}}
+[  0.45s][moshi] Yes, Doughy Joe’s is currently open, from eleven AM to ten PM every day.
+[  0.57s][user ] «backchannel» Mm-hmm.
+[  0.57s][moshi] It’s good to know you have options when a craving strikes. Sometimes, just knowing that helps ease a little stress.
+[  0.74s][user ] «backchannel» Yeah.
+[  0.75s][user ] Can ⟨ret@0.48s⟩ you get me directions there?
+[  0.80s][moshi] ⟦⚡SPAN@0.80s: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "Head north on Spring St… Turn left onto 8t⟧ The drive to Doughy Joe’s is two point one miles and should take about eight minutes. The route starts heading north on Spring Street.
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Doughy Joe's Pizza, 725 S Spring St, Los Angeles, CA 90014", "mode": "driving"}}

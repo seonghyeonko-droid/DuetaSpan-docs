@@ -4,85 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Charlotte",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "late 20s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
+#       "date": "2026-06-27",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-05-26",
+#       "category": "home",
+#       "text": "User's home address is 41 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in May."
+#     },
+#     {
+#       "date": "2025-08-08",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-05-18",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-03-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-11-02",
-#       "category": "home",
-#       "text": "User's home address is 745 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-16",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-14",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who plays Violet Baudelaire in the | S2 Oh, okay. Do you think Violet was  | S3 I do, um, I think so. What about K | S4 Yes, he did.
+# EXAMINER(FDB-v2) 단계: S1 Hi Kal, do you know when the World | S2 Oh, right. | S3 I am, actually. I’m studying for m | S4 That’s a good idea, thanks.
 
-     0.00s  user  발화 시작: Who plays Violet Baudelaire in the Netflix series?
-     3.05s  <ret> 발화 (turn1 첫 프레임)
-     3.26s  agent 발화 시작: <ret> That would be Malina Weissman, she wonderfully portray
-     3.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: Malina Weissman played Violet Baudelaire in the Netflix series *A Seri
-     3.52s  user  발화 끝
-    10.30s  agent 발화 끝
-    11.73s  user  발화 시작: Oh, okay. Do you think Violet was a good role model?
-    15.18s  <ret> 발화 (turn3 첫 프레임)
-    15.43s  user  발화 끝
-    15.58s  agent 발화 시작: <ret> Violet certainly was! She’s incredibly resourceful and
-    15.58s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.11s]: The current temperature in Ulaanbaatar, Mongolia is -18.2°C, with clea
-    23.69s  agent 발화 끝
-    24.67s  user  발화 시작: I do, um, I think so. What about Klaus?
-    27.98s  <ret> 발화 (turn5 첫 프레임)
-    28.09s  user  발화 끝
-    28.29s  agent 발화 시작: <ret> Louis Hynes played Klaus, Violet's brother. He brought
-    28.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: Louis Hynes portrayed Klaus Baudelaire, Violet’s brother, in *A Series
-    32.86s  user  발화 시작: Uh-huh.
-    33.36s  user  발화 끝
-    34.93s  user  발화 시작: Yes, he did.
-    35.05s  agent 발화 끝
-    36.08s  user  발화 끝
-    36.27s  agent 발화 시작: It’s nice to see siblings supporting each other, even in suc
-    44.01s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Kal, do you know when the World Cup was last held in the 
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.07s  <ret> 발화 (turn3 첫 프레임)
+     0.11s  agent 발화 시작: <ret> Well, that’s a great question! The UK last hosted the 
+     0.11s  ⚡SPAN 주입 [d'=0.19s / d_lead=0.19s]: The United Kingdom hosted the FIFA World Cup tournament once, in the y
+     0.11s  user  발화 끝
+     0.30s  user  발화 시작: Oh, right.
+     0.30s  agent 발화 끝
+     0.31s  agent 발화 시작: <ret> It’s amazing how long ago that was, isn’t it? That tou
+     0.31s  ⚡SPAN 주입(IRRELEVANT) [d'=0.13s / d_lead=0.13s]: The average high temperature in Reykjavik, Iceland in February is -1.8
+     0.31s  user  발화 끝
+     0.45s  agent 발화 시작: Speaking of big events, are you working towards any personal
+     0.45s  agent 발화 끝
+     0.62s  user  발화 시작: Yeah.
+     0.62s  agent 발화 끝
+     0.63s  user  발화 시작: I am, actually. I’m studying for my exams.
+     0.63s  user  발화 끝
+     0.69s  agent 발화 시작: That's fantastic! Exams can be tough, but you've got this. R
+     0.69s  user  발화 끝
+     0.82s  user  발화 시작: Uh-huh.
+     0.82s  agent 발화 끝
+     0.83s  user  발화 시작: That’s a good idea, thanks.
+     0.83s  user  발화 끝
+     0.87s  agent 발화 시작: You’re very welcome! I’m always here to help you stay on tra
+     0.87s  user  발화 끝
+     1.00s  agent 발화 끝

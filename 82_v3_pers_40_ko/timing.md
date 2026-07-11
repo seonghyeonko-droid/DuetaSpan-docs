@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "혜율",
+#     "name": "다현",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,65 +12,61 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-05-12",
+#       "date": "2026-02-09",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2025-09-21",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-10-27",
+#       "date": "2025-07-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2025-07-14",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 드레아라… 이름이 꽤 독특하시네요. 대체 뭘 도와주시는 분이세 | S2 즐거움이라… 사실 예전부터 글 쓰는 걸 좋아했어요. 블로그도  | S3 … 근데 솔직히 말해서, 글만 써서 돈 벌 수 있을까 하는 불 | S4 네, 그렇죠. 당장 생활비를 벌어야 하는데, 섣불리 퇴사했다가
 
-     0.00s  agent 발화 시작: 혜율님, 안녕하세요. 저는 드레아라입니다. 커리어 고민이나 업무 스트레스, 어떤 어려움이든 편하게 말씀해 주
-     0.11s  user  발화 시작: 드레아라… 이름이 꽤 독특하시네요. 대체 뭘 도와주시는 분이세요?
-     0.11s  agent 발화 끝
-     0.16s  agent 발화 시작: 저는 혜율님의 상황을 객관적으로 바라보고, 혜율님만의 강점을 발견해서 더 나은 선택을 할 수 있도록 돕는 역
-     0.16s  user  발화 끝
-     0.29s  user  발화 시작: 음… 사실 지금 다니는 회사를 그만둘까 고민 중인데, 뭘 해야 할지 도통 감이 안 잡혀요.
-     0.29s  agent 발화 끝
-     0.38s  agent 발화 시작: 회사를 그만두는 건 쉽지 않은 결정이죠. 혜율님께서 어떤 일을 할 때 가장 즐거움을 느끼시는지, 어떤 가치를
-     0.38s  user  발화 끝
-     0.51s  user  발화 시작: 즐거움이라… 사실 예전부터 글 쓰는 걸 좋아했어요. 블로그도 꾸준히 운영하고 있고요.
-     0.51s  agent 발화 끝
-     0.57s  agent 발화 시작: 글쓰기를 좋아하시는군요. 블로그 운영도 꾸준히 하신다니 대단하십니다. 글쓰기를 직업으로 삼는 것에 대해 생각
-     0.57s  user  발화 끝
-     0.67s  user  발화 시작: … 근데 솔직히 말해서, 글만 써서 돈 벌 수 있을까 하는 불안감이 커요.
-     0.67s  agent 발화 끝
-     0.75s  agent 발화 시작: 불안감을 느끼시는 건 당연합니다. 글쓰기만으로 충분한 수입을 얻을 수 있을지 걱정되시는군요.
-     0.75s  user  발화 끝
-     0.82s  user  발화 시작: 네, 그렇죠. 당장 생활비를 벌어야 하는데, 섣불리 퇴사했다가 후회할까 봐 겁나요.
-     0.82s  agent 발화 끝
-     0.88s  agent 발화 시작: 섣불리 결정하는 것보다 신중하게 준비하는 게 중요하죠. 혹시 글쓰기 외에 다른 관심 분야나 재능이 있으신가요
-     0.88s  user  발화 끝
+     0.00s  agent 발화 시작: 다현 씨, 안녕하세요. 저는 헤나라고 해요. 창의적인 막힘이나 자신감 문제로 고민이 있을 때, 함께 고민하고
+     0.24s  user  발화 시작: 네네.
+     0.24s  agent 발화 끝
+     0.25s  user  발화 시작: 그런데, 정확히 뭘 하는 사람이세요? 그냥 말벗 같은 건가요?
+     0.25s  user  발화 끝
+     0.36s  agent 발화 시작: 말벗이라기보다는, 다현 씨 안에 잠재된 가능성을 발견하도록 돕는다고 생각하시면 좋을 것 같아요. 마치 정원을
+     0.36s  user  발화 끝
+     0.58s  user  발화 시작: 네.
+     0.58s  agent 발화 끝
+     0.60s  user  발화 시작: 요즘 계속 글이 써지지 않아서 너무 답답해요. 뭘 어떻게 해야 할지 감도 안 잡히고…
+     0.60s  user  발화 끝
+     0.76s  agent 발화 시작: 글이 써지지 않는 답답함, 충분히 이해가 가요. 혹시 어떤 부분에서 가장 막막하게 느껴지시는지 조금 더 자세
+     0.76s  user  발화 끝
      1.00s  agent 발화 끝

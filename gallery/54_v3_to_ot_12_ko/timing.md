@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "재완",
+#     "name": "태서",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,116 +12,133 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
+#       "date": "2026-06-15",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-08",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-12-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-10-06",
+#       "date": "2026-01-08",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2025-08-05",
+#       "date": "2025-12-03",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-07-25",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-27",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-06",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-22",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 '하우스 오브 더 라이징 선'에 출연한 배우들 알 수 있 | S2 아, 네, 계속해서요. 다른 배우도 알려주세요. | S3 덥네요. 그럼 내일 서울 날씨는 어때요? | S4 해운대 해변 좋죠. 부산 가는 기차표 예매해 줄 수 있어요?
+# EXAMINER(FDB-v2) 단계: S1 마스터스 토너먼트가 열리는 골프장 이름이 뭐예요? | S2 잠깐만, 누구한테 전화 왔어? | S3 …잘 자려면 어떻게 해야 할까요? | S4 명상요? 잘 모르겠어요.
 
-     0.00s  user  발화 시작: 혹시 '하우스 오브 더 라이징 선'에 출연한 배우들 알 수 있을까요?
+     0.00s  user  발화 시작: 마스터스 토너먼트가 열리는 골프장 이름이 뭐예요?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.05s  agent 발화 시작: <ret> '하우스 오브 더 라이징 선'에서 제니 포터 역은 에이미 스마트 씨가 맡았답니다. 혹시 다른 배우
-     0.05s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Amy Smart played Jenny Porter in The House of the Rising Sun.
-     0.05s  user  발화 끝
-     0.13s  <ret> 발화 (turn5 첫 프레임)
-     0.13s  user  발화 시작: 음… 다른 사람도 궁금하긴 한데… 잠깐만요.
+     0.03s  agent 발화 시작: <ret> 마스터스 토너먼트는 미국 조지아주 어거스타에 있는 어거스타 내셔널 골프 클럽에서 열립니다.
+     0.03s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Augusta National Golf Club is a private golf club in Augusta, Georgia,
+     0.03s  user  발화 끝
+     0.08s  user  발화 시작: 응.
+     0.08s  agent 발화 끝
+     0.08s  agent 발화 시작: 골프 좋아하세요? 저는 편안한 밤을 위한 최적의 온도를 찾아드릴 수 있어요.
+     0.08s  user  발화 끝
+     0.13s  user  발화 시작: 음… 요즘 잠을 잘 못 자서요.
      0.13s  agent 발화 끝
-     0.16s  user  발화 시작: 오늘 저녁 뭐 먹을까?
+     0.15s  <ret> 발화 (turn17 첫 프레임)
+     0.16s  agent 발화 시작: 잠자리에 들기 전에 따뜻한 차 한 잔은 어떠세요? 숙면에 도움이 될 수 있답니다.
      0.16s  user  발화 끝
-     0.18s  user  발화 시작: 아, 네, 계속해서요. 다른 배우도 알려주세요.
-     0.18s  user  발화 끝
-     0.20s  <ret> 발화 (turn11 첫 프레임)
-     0.21s  agent 발화 시작: <ret> 다시 말씀드리지만, 제니 포터 역은 에이미 스마트 씨가 연기하셨어요.
-     0.21s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Amy Smart played Jenny Porter in The House of the Rising Sun.
-     0.21s  user  발화 끝
-     0.25s  user  발화 시작: 예.
-     0.25s  agent 발화 끝
-     0.26s  agent 발화 시작: 혹시 다른 캐릭터에 대해 알고 싶으신가요? 제가 더 자세히 알아봐 드릴 수 있어요.
-     0.26s  user  발화 끝
-     0.32s  user  발화 시작: 아니, 그건 됐어요. 그냥 궁금해서 물어본 거예요.
-     0.32s  agent 발화 끝
-     0.35s  agent 발화 시작: 괜찮습니다. 궁금한 점이 생기면 언제든지 저에게 말씀해 주세요. 저는 캐이아, 여러분의 든든한 조력자니까요.
-     0.35s  user  발화 끝
-     0.42s  user  발화 시작: 고마워요. 혹시 지금 서울 날씨 어때요?
-     0.42s  agent 발화 끝
-     0.44s  <ret> 발화 (turn17 첫 프레임)
-     0.44s  agent 발화 시작: <ret> 지금 서울 날씨는 기온 이십팔도, 습도 육십오퍼센트, 바람은 시속 사킬로미터로 측정되었어요. 꽤 
-     0.44s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Current conditions are 28.0°C, humidity 65%, wind 4.0 km
-     0.44s  user  발화 끝
-     0.46s  <ret> 발화 (turn14 첫 프레임)
-     0.51s  user  발화 시작: 와.
-     0.51s  agent 발화 끝
-     0.51s  user  발화 시작: 덥네요. 그럼 내일 서울 날씨는 어때요?
-     0.51s  user  발화 끝
-     0.51s  <ret> 발화 (turn23 첫 프레임)
-     0.54s  agent 발화 시작: <ret> 내일 서울 날씨는 기온 삼십도, 습도 칠십퍼센트, 바람은 시속 삼 점 오킬로미터로 예상됩니다. 내
-     0.54s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Tomorrow's forecast is 30.0°C, humidity 70%, wind 3.5 km
-     0.54s  user  발화 끝
-     0.62s  user  발화 시작: 알겠습니다. 그럼 이번 주 토요일에 부산…
+     0.22s  user  발화 시작: 차는 괜찮은데, 뭔가 더 좋은 방법이 있을까요?
+     0.22s  agent 발화 끝
+     0.25s  agent 발화 시작: 혹시 잠들기 전 스마트폰 사용은 안 하시죠? 블루라이트가 수면을 방해할 수 있어요.
+     0.25s  user  발화 끝
+     0.31s  user  발화 시작: 응.
+     0.31s  agent 발화 끝
+     0.31s  user  발화 시작: 아, 그거… 잘 안 돼요. 습관이라.
+     0.31s  user  발화 끝
+     0.34s  agent 발화 시작: 습관을 고치려면 시간이 걸리죠. 그래도 조금씩 줄여보는 건 어떠세요?
+     0.34s  user  발화 끝
+     0.38s  user  발화 시작: 응.
+     0.38s  agent 발화 끝
+     0.39s  user  발화 시작: 잠깐만, 누구한테 전화 왔어?
+     0.39s  user  발화 끝
+     0.40s  <ret> 발화 (turn20 첫 프레임)
+     0.41s  user  발화 시작: 아, 죄송합니다. 잠시만요.
+     0.41s  user  발화 끝
+     0.42s  agent 발화 시작: 천천히 말씀해주세요.
+     0.42s  user  발화 끝
+     0.43s  user  발화 시작: 지금 다시 말씀드릴게요. 잠을…
+     0.43s  agent 발화 끝
+     0.45s  user  발화 시작: …잘 자려면 어떻게 해야 할까요?
+     0.45s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> 잠을 조절하는 뇌에서 생성되는 호르몬인 멜라토닌을 섭취하는 것도 도움이 될 수 있습니다.
+     0.47s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Melatonin is a hormone that the brain produces that helps regulate sle
+     0.47s  user  발화 끝
+     0.49s  <ret> 발화 (turn23 첫 프레임)
+     0.53s  user  발화 시작: 어어.
+     0.53s  agent 발화 끝
+     0.53s  user  발화 시작: 멜라토닌이요? 그거 어디서 살 수 있어요?
+     0.53s  user  발화 끝
+     0.56s  agent 발화 시작: <ret> 대부분의 약국과 건강식품점, 그리고 아마존이나 아이허브 같은 온라인 쇼핑몰에서 멜라토닌을 구매할 
+     0.56s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Melatonin is available at most drugstores and health foo
+     0.56s  user  발화 끝
+     0.62s  user  발화 시작: 어어.
      0.62s  agent 발화 끝
-     0.65s  user  발화 시작: …갈 만한 곳 추천해 줄 수 있을까요?
+     0.63s  user  발화 시작: 아하, 그렇군요. 그럼 오늘 날씨는 어때요?
+     0.63s  user  발화 끝
+     0.65s  agent 발화 시작: <ret> 현재 서울의 날씨는 기온 이십팔 점 삼도, 습도 칠십팔퍼센트, 풍속은 시속 삼 점 이킬로미터입니다
+     0.65s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Current weather in Seoul is 28.3°C, humidity 78%, wind 3
      0.65s  user  발화 끝
-     0.68s  agent 발화 시작: <ret> 이번 주 토요일 부산에 가신다면 해운대 해변을 추천해 드립니다. 아름다운 모래사장이 유명한 곳이에
-     0.68s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Haeundae Beach is a popular attraction in Busan, known f
-     0.68s  user  발화 끝
-     0.75s  user  발화 시작: 네.
+     0.72s  agent 발화 시작: 오늘 밤은 멜라토닌과 함께 시원하게 주무시겠어요?
+     0.72s  agent 발화 끝
+     0.73s  <ret> 발화 (turn32 첫 프레임)
+     0.75s  user  발화 시작: 네, 한번 시도해 볼게요. 고마워요.
      0.75s  agent 발화 끝
-     0.75s  user  발화 시작: 해운대 해변 좋죠. 부산 가는 기차표 예매해 줄 수 있어요?
-     0.75s  user  발화 끝
-     0.80s  agent 발화 시작: 죄송하지만, 기차표 예매 기능은 아직 지원하지 않습니다. 검색 기능으로 부산행 기차 정보를 찾아 드릴 수는 
-     0.80s  user  발화 끝
-     0.88s  user  발화 시작: 네네.
+     0.77s  agent 발화 시작: 언제든 편안한 휴식을 위해 도와드릴게요. 혹시 잠들기 전 명상을 해보셨나요?
+     0.77s  user  발화 끝
+     0.81s  user  발화 시작: 응.
+     0.81s  agent 발화 끝
+     0.82s  user  발화 시작: 명상요? 잘 모르겠어요.
+     0.82s  user  발화 끝
+     0.83s  agent 발화 시작: 명상은 마음을 차분하게 해주고 스트레스 해소에 도움이 될 수 있답니다.
+     0.83s  user  발화 끝
+     0.88s  user  발화 시작: 응.
      0.88s  agent 발화 끝
-     0.88s  user  발화 시작: 아, 그렇군요. 그럼 부산행 기차 검색해 주세요.
+     0.88s  user  발화 시작: 한번 찾아볼까요?
      0.88s  user  발화 끝
-     0.91s  agent 발화 시작: <ret> 서울에서 부산으로 가는 기차는 매 삼십분 간격으로, 오전 일곱시부터 운행되고 있습니다. 시간표를 
-     0.91s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Trains depart Seoul for Busan every 30 minutes, starting
-     0.91s  user  발화 끝
+     0.89s  agent 발화 시작: <ret> 캄과 헤드스페이스 같은 가이드 명상 앱에서 수면, 불안, 스트레스 해소를 위한 다양한 명상을 제공
+     0.89s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Guided meditation apps like Calm and Headspace offer a v
+     0.89s  user  발화 끝
+     0.96s  user  발화 시작: 캄… 한번 다운로드해 봐야겠네요.
+     0.96s  agent 발화 끝
+     0.98s  agent 발화 시작: 좋은 선택이에요. 편안한 밤 보내세요.
+     0.98s  user  발화 끝
      1.00s  agent 발화 끝

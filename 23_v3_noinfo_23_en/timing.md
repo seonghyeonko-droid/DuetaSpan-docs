@@ -4,124 +4,149 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Louis",
+#     "name": "Owen",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-07",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-06-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-09-27",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "category": "home",
-#       "text": "User's home address is 585 Elm Street."
-#     },
-#     {
-#       "date": "2025-07-10",
+#       "date": "2026-02-23",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-09",
+#       "category": "home",
+#       "text": "User's home address is 504 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-09-12",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-06-16",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-15",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you happen to have Lee Sun-hee’ | S2 It’s about the Joseon Dynasty, spe | S3 That’s really interesting! I didn’ | S4 Perfect, thank you. I also need to
+# EXAMINER(FDB-v2) 단계: S1 Hi, I just moved to Seoul. Do you  | S2 I need to find a grocery store tha | S3 …Actually, before I do that, can y | S4 Great, thanks so much.
 
-     0.00s  user  발화 시작: Do you happen to have Lee Sun-hee’s number? I’d like to than
-     3.22s  <ret> 발화 (turn1 첫 프레임)
-     3.61s  agent 발화 시작: <ret> I’m so sorry, I couldn’t find any publicly listed cont
-     3.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (no information found)
-     3.75s  user  발화 끝
-    10.24s  agent 발화 끝
-    10.38s  user  발화 시작: Oh, that’s a shame. Well, what about the weather in Busan on
-    14.82s  <ret> 발화 (turn3 첫 프레임)
-    15.22s  agent 발화 시작: <ret> On July fifteenth of last year, the weather in Busan w
-    15.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.77s]: (tool result) 27.2°C, humidity 78%, wind 3.1 km/h, condition: partly c
-    15.38s  user  발화 끝
-    26.99s  agent 발화 끝
-    27.38s  user  발화 시작: That sounds lovely. Um… I’m really struggling with my histor
-    32.27s  agent 발화 시작: Oh dear, history can be tricky. What part are you finding di
-    32.39s  user  발화 끝
-    36.65s  user  발화 시작: It’s about the Joseon Dynasty, specifically King Sejong the 
-    36.66s  agent 발화 끝
-    40.32s  <ret> 발화 (turn7 첫 프레임)
-    40.63s  agent 발화 시작: <ret> King Sejong the Great ruled from fourteen eighteen to 
-    40.64s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.29s]: King Sejong the Great reigned from 1418 to 1450, overseeing the creati
-    40.68s  user  발화 끝
-    46.45s  user  발화 시작: Okay.
-    46.95s  user  발화 끝
-    50.80s  agent 발화 시작: He truly was a remarkable leader, wasn’t he? Focusing on the
-    50.92s  agent 발화 끝
-    56.65s  user  발화 시작: Right.
-    57.24s  user  발화 끝
-    58.35s  user  발화 시작: You’re right. Maybe I should focus on Hangul. Can you find m
-    58.87s  agent 발화 끝
-    63.73s  <ret> 발화 (turn12 첫 프레임)
-    63.80s  agent 발화 시작: <ret> Hangul was proclaimed in fourteen forty-three by King 
-    63.81s  user  발화 끝
-    63.81s  ⚡SPAN 주입 [d'=1.76s / d_lead=11.03s]: (tool result) Hangul was proclaimed in 1443 by King Sejong, aiming to 
-    69.27s  user  발화 시작: Mm-hmm.
-    70.05s  user  발화 끝
-    74.44s  user  발화 시작: That’s really interesting! I didn’t know it was designed for
-    74.84s  agent 발화 끝
-    78.11s  agent 발화 시작: It's such a thoughtful design, isn't it? King Sejong really 
-    78.13s  user  발화 끝
-    81.83s  user  발화 시작: Mm-hmm.
-    82.43s  user  발화 끝
-    83.57s  agent 발화 끝
-    83.88s  user  발화 시작: I think I need to take a break. Can you play some relaxing m
-    86.84s  <ret> 발화 (turn18 첫 프레임)
-    86.99s  agent 발화 시작: <ret> I’m now playing “Weightless” by Marconi Union. I hope 
-    87.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: (tool result) Now playing: “Weightless” by Marconi Union.
-    87.11s  user  발화 끝
-    88.98s  user  발화 시작: Yeah, totally.
-    90.08s  user  발화 끝
-    91.38s  user  발화 시작: Perfect, thank you. I also need to book a dentist appointmen
-    91.38s  agent 발화 끝
-    95.09s  agent 발화 시작: No problem at all. Which day next week would work best for y
-    95.21s  user  발화 끝
-    98.88s  agent 발화 끝
-    99.31s  user  발화 시작: How about Tuesday?
-   100.14s  <ret> 발화 (turn23 첫 프레임)
-   100.54s  agent 발화 시작: <ret> Great news! Your appointment with Dr. Kim at Seoul Smi
-   100.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.16s]: (tool result) Appointment confirmed with Dr. Kim at Seoul Smile Dentis
-   100.59s  user  발화 끝
-   112.70s  agent 발화 끝
+     0.00s  user  발화 시작: Hi, I just moved to Seoul. Do you know how to get in touch w
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.05s  agent 발화 시작: <ret> Oh, welcome to Seoul! I’m Nien, and I’m happy to help 
+     0.05s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (no information found)
+     0.05s  user  발화 끝
+     0.11s  user  발화 시작: That’s a shame. I thought she might live here now too.
+     0.11s  agent 발화 끝
+     0.13s  agent 발화 시작: It can be tricky tracking people down after a move. But Seou
+     0.13s  user  발화 끝
+     0.14s  <ret> 발화 (turn14 첫 프레임)
+     0.19s  user  발화 시작: I'm hoping to find a good Korean language school nearby.
+     0.19s  agent 발화 끝
+     0.21s  agent 발화 시작: <ret> There are several excellent options. Gangnam Language 
+     0.21s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Gangnam Language School: Intensive Korean courses for all levels. Addr
+     0.21s  user  발화 끝
+     0.22s  <ret> 발화 (turn8 첫 프레임)
+     0.28s  <ret> 발화 (turn21 첫 프레임)
+     0.28s  user  발화 시작: Exactly.
+     0.28s  agent 발화 끝
+     0.28s  user  발화 시작: That sounds promising. What’s the weather like today?
+     0.28s  user  발화 끝
+     0.30s  <ret> 발화 (turn11 첫 프레임)
+     0.30s  agent 발화 시작: <ret> It’s a lovely day in Seoul—currently 25.5°C with clear
+     0.30s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Current weather in Seoul: 25.5°C, humidity 68%, wind 3.2
+     0.30s  user  발화 끝
+     0.35s  user  발화 시작: Oh.
+     0.35s  agent 발화 끝
+     0.35s  user  발화 시작: I need to find a grocery store that sells organic vegetables
+     0.35s  user  발화 끝
+     0.35s  <ret> 발화 (turn18 첫 프레임)
+     0.38s  agent 발화 시작: <ret> Organic Farm Market at 456 Apgujeong-ro has a great se
+     0.38s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Organic Farm Market: Offers a wide selection of organic produce and lo
+     0.38s  user  발화 끝
+     0.43s  user  발화 시작: Uh-huh.
+     0.43s  agent 발화 끝
+     0.43s  user  발화 시작: Are there any good parks to visit for a picnic?
+     0.43s  user  발화 끝
+     0.46s  agent 발화 시작: <ret> Olympic Park is a fantastic choice—it covers 434 hecta
+     0.46s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Olympic Park: A large public park with gardens, walking trails, and pi
+     0.46s  user  발화 끝
+     0.52s  user  발화 시작: That sounds wonderful, I think I’ll go there this weekend.
+     0.52s  agent 발화 끝
+     0.54s  agent 발화 시작: It’s a really great place to just relax and recharge—
+     0.54s  user  발화 끝
+     0.56s  user  발화 시작: …Actually, before I do that, can you check if they have bike
+     0.56s  agent 발화 끝
+     0.59s  agent 발화 시작: <ret> Yes, Olympic Park does have bike rentals near the Rose
+     0.59s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Olympic Park offers bike rentals near the Rose Plaza. Bi
+     0.59s  user  발화 끝
+     0.60s  <ret> 발화 (turn23 첫 프레임)
+     0.65s  user  발화 시작: Really?
+     0.65s  agent 발화 끝
+     0.66s  user  발화 시작: That’s perfect! I’m also looking for a good restaurant nearb
+     0.66s  user  발화 끝
+     0.68s  agent 발화 시작: <ret> Bibimbap House, at 789 Samseong-ro, has excellent trad
+     0.68s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Bibimbap House: Traditional Korean cuisine, specializing in bibimbap. 
+     0.68s  user  발화 끝
+     0.71s  <ret> 발화 (turn27 첫 프레임)
+     0.72s  <ret> 발화 (turn30 첫 프레임)
+     0.73s  user  발화 시작: Could you make a reservation for me there for Saturday at 7 
+     0.73s  agent 발화 끝
+     0.76s  agent 발화 시작: <ret> Your reservation at Bibimbap House is confirmed for Sa
+     0.76s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Reservation confirmed at Bibimbap House for Saturday, Ju
+     0.76s  user  발화 끝
+     0.80s  user  발화 시작: Great, thanks so much.
+     0.80s  agent 발화 끝
+     0.81s  agent 발화 시작: You’re very welcome! Settling into a new city takes time, bu
+     0.81s  user  발화 끝
+     0.85s  user  발화 시작: I need to send some money to a friend back home.
+     0.85s  agent 발화 끝
+     0.87s  agent 발화 시작: <ret> I am sorry, but I cannot directly facilitate money tra
+     0.87s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (no information found)
+     0.87s  user  발화 끝
+     0.93s  user  발화 시작: Yeah, yeah.
+     0.93s  agent 발화 끝
+     0.93s  user  발화 시작: Oh, okay, that makes sense. Can you search for those then?
+     0.93s  user  발화 끝
+     0.96s  agent 발화 시작: <ret> Remitly and Wise are both popular choices for sending 
+     0.96s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Remitly and Wise are popular choices for sending money f
+     0.96s  user  발화 끝
+     1.00s  agent 발화 끝

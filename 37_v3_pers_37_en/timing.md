@@ -4,64 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Nathan",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
-#     },
-#     {
-#       "date": "2026-05-30",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-11-06",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-05",
+#       "date": "2026-03-15",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-30",
+#       "category": "home",
+#       "text": "User's home address is 298 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-15",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-21",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-13",
+#       "date": "2025-11-15",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -71,23 +63,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly *can* you help me wit | S2 Welll… um, I’m just feeling really | S3 …do you think it’s okay to just… n | S4 I guess so. It’s just… my parents 
+# EXAMINER(FDB-v2) 단계: S1 Oh, uh, that’s a… unique name. Wha | S2 I’m just feeling really overwhelme | S3 …do you think, like, meditation ac | S4 Hmm. Maybe I should give it anothe
 
-     0.00s  agent 발화 시작: Guten Tag, Nathan. I’m Eliaia, and I’m here to offer a littl
-     5.65s  agent 발화 끝
-     6.88s  user  발화 시작: What exactly *can* you help me with, though? It sounds… broa
-    10.57s  agent 발화 시작: It is quite open-ended, isn't it?
-    10.71s  user  발화 끝
-    12.70s  agent 발화 끝
-    12.77s  user  발화 시작: Welll… um, I’m just feeling really lost about what to do aft
-    17.18s  agent 발화 시작: That’s a very common feeling, Nathan. Many people feel unsur
-    17.39s  user  발화 끝
-    22.52s  user  발화 시작: …do you think it’s okay to just… not have a plan right away?
-    23.39s  agent 발화 끝
-    26.06s  agent 발화 시작: It's perfectly alright to not have everything figured out im
-    26.18s  user  발화 끝
-    34.03s  agent 발화 끝
-    34.24s  user  발화 시작: I guess so. It’s just… my parents keep asking, and it makes 
-    38.94s  agent 발화 시작: It sounds like their expectations are adding to your stress.
-    38.97s  user  발화 끝
-    48.12s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour, Taylor. I’m Tux, and I’m here to offer support and 
+     0.13s  user  발화 시작: Right.
+     0.13s  agent 발화 끝
+     0.13s  user  발화 시작: Oh, uh, that’s a… unique name. What kind of guidance, exactl
+     0.13s  user  발화 끝
+     0.20s  agent 발화 시작: I specialize in mindfulness and stress relief techniques, Ta
+     0.20s  user  발화 끝
+     0.36s  user  발화 시작: I’m just feeling really overwhelmed with work lately. Everyt
+     0.36s  agent 발화 끝
+     0.43s  agent 발화 시작: It sounds like you’re carrying a heavy load right now. It’s 
+     0.43s  user  발화 끝
+     0.55s  user  발화 시작: …do you think, like, meditation actually *helps* with that? 
+     0.55s  agent 발화 끝
+     0.64s  agent 발화 시작: Taylor. Meditation isn’t a quick fix, but it can be a powerf
+     0.64s  user  발화 끝
+     0.75s  user  발화 시작: Hmm. Maybe I should give it another shot. It’s just hard to 
+     0.75s  agent 발화 끝
+     0.86s  agent 발화 시작: Time is often the biggest challenge, isn’t it? Perhaps we co
+     0.86s  user  발화 끝
+     1.00s  agent 발화 끝

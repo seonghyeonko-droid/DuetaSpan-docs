@@ -4,82 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Jonas",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-26",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2025-11-06",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-26",
+#       "date": "2026-06-01",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-07-10",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-05-03",
+#       "category": "home",
+#       "text": "User's home address is 598 Elm Street."
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-05",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-09",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hello Jonas, it’s lovely to meet you. My name is Hiolo, and 
-     0.13s  user  발화 시작: Yeah.
-     0.13s  agent 발화 끝
-     0.14s  user  발화 시작: Hi Hiolo… that’s a pretty name. Um, I’m just feeling really 
-     0.14s  user  발화 끝
-     0.22s  agent 발화 시작: It’s understandable to feel stuck, Jonas. Many people experi
-     0.22s  user  발화 끝
-     0.35s  user  발화 시작: Yeah, yeah.
-     0.35s  agent 발화 끝
-     0.36s  agent 발화 시작: Sometimes, simply voicing the challenges can be a good first
-     0.36s  user  발화 끝
-     0.50s  user  발화 시작: Really?
-     0.50s  agent 발화 끝
-     0.51s  user  발화 시작: Well, I keep second-guessing my career path. I studied histo
-     0.51s  user  발화 끝
-     0.62s  agent 발화 시작: It sounds like there's a disconnect between your passions an
-     0.62s  user  발화 끝
-     0.78s  user  발화 시작: I loved the research, the storytelling… but those don’t real
-     0.78s  agent 발화 끝
-     0.85s  agent 발화 시작: They absolutely can, Jonas. Skills like research and storyte
-     0.85s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Morgan, it’s lovely to connect with you. I'm Elaen.
+     0.07s  user  발화 시작: I’m just feeling completely overwhelmed lately, to be honest
+     0.07s  agent 발화 끝
+     0.13s  agent 발화 시작: It’s understandable to feel that way, Morgan. Overwhelm is s
+     0.13s  user  발화 끝
+     0.27s  user  발화 시작: Yeah.
+     0.27s  agent 발화 끝
+     0.28s  agent 발화 시작: Often, when things feel chaotic, it’s helpful to identify on
+     0.28s  user  발화 끝
+     0.47s  user  발화 시작: But there are *so* many things! I don't even know where to b
+     0.47s  agent 발화 끝
+     0.56s  agent 발화 시작: That’s a very valid feeling. It sounds like you're caught in
+     0.56s  user  발화 끝
+     0.75s  user  발화 시작: I guess... maybe. I just feel like I'm constantly playing ca
+     0.75s  agent 발화 끝
+     0.83s  agent 발화 시작: It's okay to feel like you’re playing catch-up, Morgan. It's
+     0.83s  user  발화 끝
      1.00s  agent 발화 끝

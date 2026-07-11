@@ -4,80 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "유빈",
+#     "name": "현율",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-05-18",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-04-04",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2026-04-15",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2026-01-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-09-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-01",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-06-16",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-12-01",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is planning a trip to Iceland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-13",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-18",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-06-26",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 대칭 연방제가 언제 존재했는지 궁금해.
-     2.87s  <ret> 발화 (turn1 첫 프레임)
-     3.05s  user  발화 끝
-     3.11s  agent 발화 시작: <ret> 죄송하지만, 대칭 연방제에 대한 정보는 찾을 수 없었어요. 관련 기록이 없는 것 같아요.
-     3.11s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.86s]: (no information found)
-     7.97s  agent 발화 끝
-     8.58s  user  발화 시작: 아, 그렇구나.
-     9.40s  user  발화 끝
-     9.43s  agent 발화 시작: 혹시 다른 주제에 대해 이야기해 볼까요?
-    10.15s  user  발화 시작: 응.
-    10.46s  user  발화 끝
-    11.40s  agent 발화 시작: 새로운 곳에 적응하는 건 쉽지 않지만, 제가 옆에서 함께 할게요.
-    11.41s  agent 발화 끝
-    13.62s  user  발화 시작: 어어.
-    14.26s  user  발화 끝
-    14.81s  agent 발화 끝
-    14.97s  user  발화 시작: 음… 이 동네에서 괜찮은 식당 좀 찾아줄래?
-    17.24s  <ret> 발화 (turn8 첫 프레임)
-    17.48s  agent 발화 시작: <ret> 서울 가든(한국 음식, 별점 사 점 오), 리틀 이탈리아(이탈리아 음식, 별점 사 점 이), 버거
-    17.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.72s]: (tool result) Restaurants found: Seoul Garden (Korean, 4.5 stars), Lit
-    17.55s  user  발화 끝
-    28.20s  agent 발화 끝
+     0.00s  user  발화 시작: 로마 문명이 왜 멸망했는지 궁금해.
+     0.13s  agent 발화 시작: 로마 문명의 멸망 원인은 아직 명확하게 밝혀지지 않았어요.
+     0.13s  user  발화 끝
+     0.34s  user  발화 시작: 네.
+     0.34s  agent 발화 끝
+     0.37s  user  발화 시작: 아, 그렇군요. 그럼 요즘 날씨는 어때요?
+     0.37s  user  발화 끝
+     0.45s  <ret> 발화 (turn4 첫 프레임)
+     0.53s  agent 발화 시작: <ret> 지금 서울은 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터예요.
+     0.53s  ⚡SPAN 주입 [d'=0.26s / d_lead=0.26s]: (tool result) {"city": "Seoul", "temperature": "28.0°C", "humidity": "
+     0.53s  user  발화 끝
+     0.79s  user  발화 시작: 정말요?
+     0.79s  agent 발화 끝
+     0.82s  user  발화 시작: 꽤 덥네요.
+     0.82s  user  발화 끝
+     0.87s  agent 발화 시작: 네, 정말 덥죠. 더위 조심하시고요.
+     0.87s  user  발화 끝
+     1.00s  agent 발화 끝

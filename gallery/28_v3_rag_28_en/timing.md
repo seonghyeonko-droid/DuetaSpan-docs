@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Jamie",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-05-20",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-20",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-05-10",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2025-12-19",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "home",
-#       "text": "User's home address is 361 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-05-29",
+#       "date": "2025-11-25",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-10",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-18",
+#       "date": "2025-08-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -56,32 +53,75 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-05-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-05",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling a bit lost latel | S2 Hmm, that makes sense. I used to l | S3 That's… actually really close! | S4 …it just feels awkward.
 
-     0.00s  user  발화 시작: Hey, who did Permian High play in *Friday Night Lights*? I a
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.12s  agent 발화 시작: <ret> Permian High actually faced the Dallas Carter Cowboys 
-     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: Permian High School played against the Dallas Carter Cowboys in the 19
-     0.12s  user  발화 끝
-     0.37s  user  발화 시작: Dallas Carter, huh? That sounds…intense. What's the weather 
-     0.37s  agent 발화 끝
-     0.41s  <ret> 발화 (turn3 첫 프레임)
-     0.49s  agent 발화 시작: <ret> It’s 29.4°C in Dallas right now, with 68% humidity and
-     0.49s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Current conditions in Dallas, Texas are 29.4°C, humidity
-     0.49s  user  발화 끝
-     0.69s  user  발화 시작: Uh-huh.
-     0.69s  agent 발화 끝
-     0.70s  user  발화 시작: Wow, hot! I’m thinking of visiting my sister, she lives near
+     0.00s  user  발화 시작: I’ve been feeling a bit lost lately, like I don’t really con
+     0.02s  <ret> 발화 (turn5 첫 프레임)
+     0.04s  agent 발화 시작: It's completely natural to feel that way sometimes. Building
+     0.04s  user  발화 끝
+     0.10s  user  발화 시작: Well, it's just… everyone seems to have their groups, and I’
+     0.10s  agent 발화 끝
+     0.14s  <ret> 발화 (turn12 첫 프레임)
+     0.14s  agent 발화 시작: It sounds like you’re experiencing a sense of exclusion, and
+     0.14s  user  발화 끝
+     0.21s  user  발화 시작: I guess I want friends who share my interests, but I don't e
+     0.21s  agent 발화 끝
+     0.26s  agent 발화 시작: <ret> Discovering friends with shared passions often happens
+     0.26s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Common interests are often found through hobbies, volunteering, or joi
+     0.26s  user  발화 끝
+     0.31s  user  발화 시작: Hmm, that makes sense. I used to love astronomy…
+     0.31s  agent 발화 끝
+     0.34s  agent 발화 시작: Oh, astronomy is wonderful! It's a fantastic way to feel con
+     0.34s  user  발화 끝
+     0.40s  user  발화 시작: Uh-huh.
+     0.40s  agent 발화 끝
+     0.40s  user  발화 시작: Yeah, but it's been years since I looked through a telescope
+     0.40s  user  발화 끝
+     0.44s  agent 발화 시작: It’s alright to feel a little rusty after a break. Rediscove
+     0.44s  user  발화 끝
+     0.51s  user  발화 시작: Maybe… I wonder if there are any astronomy clubs nearby?
+     0.51s  agent 발화 끝
+     0.54s  agent 발화 시작: <ret> The Seoul Astronomical Society meets every second Satu
+     0.54s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) The Seoul Astronomical Society meets every second Saturd
+     0.54s  user  발화 끝
+     0.60s  user  발화 시작: Yeah.
+     0.60s  agent 발화 끝
+     0.61s  user  발화 시작: That's… actually really close!
+     0.61s  user  발화 끝
+     0.62s  agent 발화 시작: [happy] Isn’t it wonderful when opportunities present themse
+     0.62s  user  발화 끝
+     0.67s  user  발화 시작: I guess so. But what if I go…
+     0.67s  agent 발화 끝
+     0.70s  user  발화 시작: …and everyone already knows each other?
      0.70s  user  발화 끝
-     0.81s  agent 발화 시작: That’s wonderful! Connecting with loved ones is so important
-     0.81s  user  발화 끝
+     0.71s  agent 발화 시작: That’s a very valid concern. It can be intimidating joining 
+     0.71s  user  발화 끝
+     0.76s  user  발화 시작: …it just feels awkward.
+     0.76s  agent 발화 끝
+     0.77s  agent 발화 시작: It *is* awkward, and it’s okay to acknowledge that feeling. 
+     0.77s  user  발화 끝
+     0.79s  <ret> 발화 (turn23 첫 프레임)
+     0.84s  user  발화 시작: Mm-hmm.
+     0.84s  agent 발화 끝
+     0.84s  user  발화 시작: That’s a good idea, actually. What’s the weather like this w
+     0.84s  user  발화 끝
+     0.87s  agent 발화 시작: <ret> The current conditions in Seoul are 24.0°C, with 65% h
+     0.87s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Current conditions in Seoul: 24.0°C, humidity 65%, wind 
+     0.87s  user  발화 끝
+     0.94s  user  발화 시작: Yeah.
+     0.94s  agent 발화 끝
+     0.94s  user  발화 시작: Perfect! Thanks, Larimi.
+     0.94s  user  발화 끝
+     0.95s  agent 발화 시작: You're very welcome. Remember, taking that first step can be
+     0.95s  user  발화 끝
      1.00s  agent 발화 끝

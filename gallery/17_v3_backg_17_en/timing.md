@@ -4,59 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Iris",
+#     "name": "Mason",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2026-05-16",
 #       "category": "home",
-#       "text": "User's home address is 537 Oak Avenue."
+#       "text": "User's home address is 279 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-06-06",
+#       "date": "2026-03-23",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-05",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-02",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-02",
+#       "date": "2025-07-05",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -66,55 +63,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Ria, do you know when the Taj  | S2 What was Shah Jahan doing before h | S3 Traffic? Oh… | S4 That's amazing. Can you send me a 
+# EXAMINER(FDB-v2) 단계: S1 What is the frequency of a DC volt | S2 …So, does that mean it doesn't rea | S3 …like AC? | S4 What about if it’s pulsing DC? Doe
 
-     0.00s  user  발화 시작: Hey Ria, do you know when the Taj Mahal in Atlantic City was
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.45s  agent 발화 시작: <ret> The Taj Mahal Casino Resort in Atlantic City opened on
-     3.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: The Taj Mahal Casino Resort in Atlantic City, New Jersey, opened on Ap
-     3.56s  user  발화 끝
-    11.61s  agent 발화 끝
-    11.98s  user  발화 시작: Oh, wow, I thought it was much older.
-    14.20s  user  발화 끝
-    14.36s  agent 발화 시작: It's easy to assume, given the name! It was intended to evok
-    20.20s  agent 발화 끝
-    21.10s  user  발화 시작: Uh huh… what about the original Taj Mahal?
-    23.27s  <ret> 발화 (turn5 첫 프레임)
-    23.43s  agent 발화 시작: <ret> The original Taj Mahal was commissioned in sixteen thi
-    23.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: The Taj Mahal was commissioned in 1632 by the Mughal emperor Shah Jaha
-    23.59s  user  발화 끝
-    27.16s  user  발화 시작: Yeah.
-    27.61s  user  발화 끝
-    31.07s  agent 발화 시작: It’s such a beautiful monument, a true testament to love and
-    31.17s  agent 발화 끝
-    35.93s  agent 발화 끝
-    37.45s  user  발화 시작: What was Shah Jahan doing before he commissioned it?.
-    39.67s  <ret> 발화 (turn9 첫 프레임)
-    39.98s  user  발화 끝
-    39.98s  agent 발화 시작: <ret> He was the fifth Mughal emperor of India, reigning fro
-    39.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Shah Jahan was the fifth Mughal emperor of India, and he reigned from 
-    49.03s  agent 발화 끝
-    49.03s  user  발화 시작: Did you hear about the traffic on the Parkway? It's a nightm
-    51.90s  user  발화 시작: Traffic? Oh…
-    51.99s  user  발화 끝
-    53.60s  agent 발화 시작: Sometimes it helps to focus on something beautiful when the 
-    53.61s  user  발화 끝
-    58.46s  agent 발화 끝
-    58.52s  user  발화 시작: Yeah, you're right. Could you find me some pictures of the o
-    62.28s  <ret> 발화 (turn14 첫 프레임)
-    62.43s  agent 발화 시작: <ret> I’ve found twelve thousand, three hundred forty-five p
-    62.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.31s]: (tool result) Searching for “original Taj Mahal pictures” on Getty Ima
-    62.59s  user  발화 끝
-    66.43s  user  발화 시작: Okay.
-    67.06s  user  발화 끝
-    68.61s  user  발화 시작: That's amazing. Can you send me a link?
-    68.74s  agent 발화 끝
-    70.55s  user  발화 끝
-    70.60s  agent 발화 시작: I’m sorry, I can't directly send links. I can describe the i
-    73.39s  user  발화 시작: Yeah, yeah.
-    74.73s  user  발화 끝
-    75.18s  agent 발화 끝
-    75.59s  user  발화 시작: No, that's okay. Thanks, Ria.
-    77.48s  user  발화 끝
-    77.55s  agent 발화 시작: You're very welcome. Remember to take a moment for yourself 
-    84.17s  agent 발화 끝
+     0.00s  user  발화 시작: What is the frequency of a DC voltage?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.07s  agent 발화 시작: <ret> Direct current, as it’s defined, has a frequency of ze
+     0.07s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Direct current (DC) is an electric current flowing in one direction, a
+     0.07s  user  발화 끝
+     0.17s  user  발화 시작: Yeah.
+     0.17s  agent 발화 끝
+     0.17s  user  발화 시작: Zero? That sounds… weird.
+     0.17s  user  발화 끝
+     0.21s  agent 발화 시작: It can seem a little counterintuitive, yes. But DC flows ste
+     0.21s  user  발화 끝
+     0.31s  user  발화 시작: …So, does that mean it doesn't really *have* a wave…
+     0.31s  agent 발화 끝
+     0.40s  user  발화 시작: …like AC?
+     0.40s  user  발화 끝
+     0.42s  agent 발화 시작: That’s right. Alternating current, or AC, oscillates, creati
+     0.42s  user  발화 끝
+     0.51s  <ret> 발화 (turn11 첫 프레임)
+     0.57s  user  발화 시작: Mm-hmm.
+     0.57s  agent 발화 끝
+     0.58s  agent 발화 시작: I’m glad I could explain that for you. It’s a key difference
+     0.58s  user  발화 끝
+     0.73s  user  발화 시작: What about if it’s pulsing DC? Does *that* have a frequency?
+     0.73s  agent 발화 끝
+     0.83s  agent 발화 시작: <ret> Pulsating direct current, or PDC, *does* have a freque
+     0.83s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Pulsating direct current (PDC) is a direct current which varies in mag
+     0.83s  user  발화 끝
+     1.00s  agent 발화 끝

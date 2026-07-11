@@ -4,91 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Adam",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2025-09-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-04-04",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-09-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "home",
-#       "text": "User's home address is 16 Pine Court."
-#     },
-#     {
-#       "date": "2025-12-01",
+#       "date": "2025-07-10",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "home",
+#       "text": "User's home address is 559 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-03",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-03-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Symmetric federalism exist when? | S2 Maybe. What restaurants are near G | S3 Tosokchon Samgyetang sounds good.  | S4 Perfect. Thanks!
+# EXAMINER(FDB-v2) 단계: S1 What caused the Roman civilization | S2 Oh, um, well… that’s… disappointin | S3 [sigh] Do you help people with, li | S4 That sounds… good. Can you tell me
 
-     0.00s  user  발화 시작: Symmetric federalism exist when?
-     2.28s  <ret> 발화 (turn1 첫 프레임)
-     2.36s  agent 발화 시작: <ret> And unfortunately, I don’t have information on when sy
-     2.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: (no information found)
-     2.58s  user  발화 끝
-     5.62s  user  발화 시작: Right.
-     6.25s  user  발화 끝
-     7.40s  agent 발화 끝
-     7.89s  user  발화 시작: Oh. Um, what about the weather in Seoul right now?
-    11.28s  <ret> 발화 (turn4 첫 프레임)
-    11.52s  agent 발화 시작: <ret> The weather in Seoul is currently 23.0 degrees Celsius
-    11.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    11.68s  user  발화 끝
-    17.02s  user  발화 시작: Oh.
-    17.46s  user  발화 끝
-    21.73s  agent 발화 시작: It’s quite pleasant, isn’t it? A good day to explore.
-    21.81s  agent 발화 끝
-    24.39s  user  발화 시작: Uh-huh.
-    24.89s  user  발화 끝
-    25.66s  agent 발화 끝
-    25.68s  user  발화 시작: Maybe. What restaurants are near Gyeongbokgung Palace?
-    29.61s  <ret> 발화 (turn9 첫 프레임)
-    29.85s  agent 발화 시작: <ret> I found three restaurants near Gyeongbokgung Palace: T
-    29.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.19s]: (tool result) Tosokchon Samgyetang (Korean, 4.5 stars, ₩20000), Hwangs
-    29.89s  user  발화 끝
-    46.05s  agent 발화 끝
-    47.53s  user  발화 시작: Tosokchon Samgyetang sounds good. Can I reserve a table ther
-    53.41s  <ret> 발화 (turn11 첫 프레임)
-    53.65s  agent 발화 시작: <ret> I’ve reserved a table for two at Tosokchon Samgyetang 
-    53.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Reservation confirmed for Tosokchon Samgyetang, July 12,
-    53.70s  user  발화 끝
-    64.23s  agent 발화 시작: That should be a lovely spot to try some traditional Korean 
-    64.27s  agent 발화 끝
-    66.91s  user  발화 시작: Yeah, totally.
-    68.33s  user  발화 끝
-    69.12s  user  발화 시작: Perfect. Thanks!
-    69.14s  agent 발화 끝
-    70.57s  agent 발화 시작: You’re very welcome. Settling into a new city can feel overw
-    70.74s  user  발화 끝
-    78.17s  agent 발화 끝
+     0.00s  user  발화 시작: What caused the Roman civilization to collapse?
+     0.06s  agent 발화 시작: That’s a question historians still debate, honestly. There i
+     0.06s  user  발화 끝
+     0.21s  user  발화 시작: Yeah.
+     0.21s  agent 발화 끝
+     0.22s  user  발화 시작: Oh, um, well… that’s… disappointing.
+     0.22s  user  발화 끝
+     0.26s  agent 발화 시작: It can be, yes. Often, the most interesting stories are the 
+     0.26s  user  발화 끝
+     0.40s  user  발화 시작: Oh.
+     0.40s  agent 발화 끝
+     0.41s  user  발화 시작: [sigh] Do you help people with, like, financial stress?
+     0.41s  user  발화 끝
+     0.49s  agent 발화 시작: I do. As Ari, I work with people to build a calmer relations
+     0.49s  user  발화 끝
+     0.56s  <ret> 발화 (turn9 첫 프레임)
+     0.69s  user  발화 시작: That sounds… good. Can you tell me the current time in Seoul
+     0.69s  agent 발화 끝
+     0.80s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
+     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+     0.80s  user  발화 끝
+     1.00s  agent 발화 끝

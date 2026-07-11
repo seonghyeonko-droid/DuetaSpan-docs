@@ -4,102 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Chloe",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-06",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-01-25",
+#       "date": "2026-01-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
 #       "date": "2025-07-17",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-06-29",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-06-11",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-06-03",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-21",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-20",
+#       "date": "2025-07-25",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 In which year CE did Muhammad get  | S2 What was the cause of his illness, | S3 Interesting. What about his family | S4 That’s good to know. I’m thinking 
 
-     0.00s  user  발화 시작: What are examples of how the present Russian inhabitants of 
-     0.12s  agent 발화 시작: Oh, that's a really important question, and one I want to ad
-     0.12s  user  발화 끝
-     0.21s  user  발화 시작: …is it a sensitive topic there, generally?
-     0.21s  agent 발화 끝
-     0.26s  agent 발화 시작: It absolutely is, and it’s understandable to be curious.
-     0.26s  user  발화 끝
-     0.33s  agent 발화 시작: Sadly, I don’t have specific information detailing current t
-     0.33s  agent 발화 끝
-     0.39s  <ret> 발화 (turn10 첫 프레임)
-     0.40s  user  발화 시작: Right.
-     0.40s  agent 발화 끝
-     0.41s  agent 발화 시작: It seems documented historical experiences are complex, and 
+     0.00s  user  발화 시작: In which year CE did Muhammad get sick?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.00s  <ret> 발화 (turn8 첫 프레임)
+     0.03s  agent 발화 시작: <ret> It’s understandable to wonder about such details, but 
+     0.03s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (no information found)
+     0.03s  user  발화 끝
+     0.09s  user  발화 시작: Yeah.
+     0.09s  agent 발화 끝
+     0.09s  user  발화 시작: That’s a shame. Do you know when he died, though?
+     0.09s  user  발화 끝
+     0.13s  agent 발화 시작: <ret> Muhammad passed away on Monday, June eighth, six thirt
+     0.13s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Muhammad died on Monday, 8 June 632 CE, in Medina.
+     0.13s  user  발화 끝
+     0.19s  user  발화 시작: Six thirty-two… so he wasn't very old, was he?
+     0.19s  agent 발화 끝
+     0.22s  agent 발화 시작: It’s true, his life was relatively short, though impactful. 
+     0.22s  user  발화 끝
+     0.27s  user  발화 시작: What was the cause of his illness, if it’s not known when he
+     0.27s  agent 발화 끝
+     0.32s  agent 발화 시작: <ret> Again, a precise cause remains unknown to historians—i
+     0.32s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (no information found)
+     0.32s  user  발화 끝
+     0.34s  <ret> 발화 (turn13 첫 프레임)
+     0.37s  <ret> 발화 (turn17 첫 프레임)
+     0.37s  user  발화 시작: …But was it poison, do you think? I read something about tha
+     0.37s  agent 발화 끝
+     0.41s  agent 발화 시작: That’s a question that’s been debated for centuries, actuall
      0.41s  user  발화 끝
-     0.50s  agent 발화 시작: I can certainly help you find resources about the Oblast’s h
-     0.50s  agent 발화 끝
-     0.59s  user  발화 시작: Yeah.
-     0.59s  agent 발화 끝
-     0.59s  user  발화 시작: Yes, please do that. Could you search for information on the
-     0.59s  user  발화 끝
-     0.71s  agent 발화 시작: <ret> I found some information! After World War II, over 200
-     0.71s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) The expulsion of Germans from Kaliningrad Oblast occurre
-     0.71s  user  발화 끝
-     0.88s  agent 발화 시작: It was a really difficult time for everyone involved, and re
-     0.88s  agent 발화 끝
+     0.47s  user  발화 시작: Yeah.
+     0.47s  agent 발화 끝
+     0.47s  user  발화 시작: Interesting. What about his family? Did he have many childre
+     0.47s  user  발화 끝
+     0.50s  agent 발화 시작: <ret> He did, in fact, have at least seven children—six sons
+     0.50s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Muhammad had at least seven children, including six sons and four daug
+     0.50s  user  발화 끝
+     0.57s  user  발화 시작: Wow, that’s a lot.
+     0.57s  agent 발화 끝
+     0.58s  agent 발화 시작: Yes, it is. Raising a family alongside leading a religious a
+     0.58s  user  발화 끝
+     0.66s  user  발화 시작: I can imagine! Was one of his daughters particularly well-kn
+     0.66s  agent 발화 끝
+     0.69s  agent 발화 시작: <ret> Fatima, his daughter, is deeply revered in Islam as a 
+     0.69s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Fatima, Muhammad's daughter, is highly revered in Islam as a role mode
+     0.69s  user  발화 끝
+     0.77s  user  발화 시작: That’s good to know. I’m thinking about a career change, act
+     0.77s  agent 발화 끝
+     0.80s  agent 발화 시작: Oh, that’s a big step! It’s very brave of you to consider su
+     0.80s  user  발화 끝
+     0.89s  user  발화 시작: Yes, please. I feel really stuck in my current job.
+     0.89s  agent 발화 끝
+     0.92s  agent 발화 시작: Feeling stuck is a common experience, and it's good you're a
+     0.92s  user  발화 끝
      1.00s  agent 발화 끝

@@ -4,84 +4,123 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Oscar",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
-#       "category": "home",
-#       "text": "User's home address is 365 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-01-29",
+#       "date": "2026-05-23",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2025-11-13",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-04-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-10-14",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-26",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-07-02",
+#       "date": "2026-03-29",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "home",
+#       "text": "User's home address is 150 Pine Court."
+#     },
+#     {
+#       "date": "2025-08-22",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-09-29",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 How long would a road trip be from | S2 That sounds pretty good. Can you c | S3 Okay, now back to that hotel. Can  | S4 I think so too. One last thing…
 
-     0.00s  user  발화 시작: I need to update the settings file. Overwrite it with theme 
-     7.45s  <ret> 발화 (turn1 첫 프레임)
-     7.53s  agent 발화 시작: <ret> I’ve just updated your settings file with those prefer
-     7.53s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.13s]: (tool result) File 'config/settings' overwritten successfully.
-     7.60s  user  발화 끝
-     9.80s  user  발화 시작: Mm-hmm.
-    10.43s  user  발화 끝
-    14.66s  agent 발화 끝
-    14.84s  user  발화 시작: Hmm, that's good. But can you also check what’s currently in
-    20.28s  <ret> 발화 (turn4 첫 프레임)
-    20.68s  agent 발화 시작: <ret> Anya. The profile file currently shows your name as An
-    20.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.96s]: (tool result) Anya Petrova\28\Seoul
-    20.71s  user  발화 끝
-    23.58s  user  발화 시작: Yeah.
-    24.21s  user  발화 끝
-    28.54s  agent 발화 시작: I’m glad to see your location is set to Seoul—it’s a fantast
-    28.65s  agent 발화 끝
-    36.72s  user  발화 시작: …Actually, could you change my age to twenty-nine in that pr
-    37.39s  agent 발화 끝
-    41.27s  <ret> 발화 (turn8 첫 프레임)
-    41.50s  agent 발화 시작: <ret> I’ve updated your age to twenty-nine in the profile fi
-    41.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) File 'profile' overwritten successfully.
-    41.54s  user  발화 끝
-    47.62s  agent 발화 끝
+     0.00s  user  발화 시작: How long would a road trip be from Hangzhou to Xi'an?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.03s  agent 발화 시작: <ret> A road trip from Hangzhou to Xi'an is about eleven hun
+     0.03s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"distance": "1161.3 km", "duration": "13 hr 37 min"}
+     0.03s  user  발화 끝
+     0.07s  <ret> 발화 (turn10 첫 프레임)
+     0.11s  user  발화 시작: Wow, that's a long drive. Is there anything interesting to s
+     0.11s  agent 발화 끝
+     0.15s  agent 발화 시작: That is quite a distance, yes. It's good to plan some stops 
+     0.15s  user  발화 끝
+     0.20s  <ret> 발화 (turn6 첫 프레임)
+     0.23s  user  발화 시작: Uh-huh.
+     0.23s  agent 발화 끝
+     0.23s  user  발화 시작: Actually, before we plan stops, could you find hotels in Zhe
+     0.23s  user  발화 끝
+     0.28s  agent 발화 시작: <ret> The Hyatt Regency Zhengzhou is available, located at N
+     0.28s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"hotel name": "Hyatt Regency Zhengzhou", "address": "No
+     0.28s  user  발화 끝
+     0.29s  <ret> 발화 (turn15 첫 프레임)
+     0.35s  user  발화 시작: That sounds pretty good. Can you check if they have availabi
+     0.35s  agent 발화 끝
+     0.39s  agent 발화 시작: Let me check availability for next Saturday, July 18th, at t
+     0.39s  user  발화 끝
+     0.43s  user  발화 시작: …Actually, forget the hotel for now. What's the weather fore
+     0.43s  agent 발화 끝
+     0.47s  agent 발화 시작: <ret> Next Saturday in Xi'an, July eighteenth, will be sunny
+     0.47s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) {"temperature": "32.5°C", "humidity": "65%", "wind speed
+     0.47s  user  발화 끝
+     0.56s  user  발화 시작: Uh-huh.
+     0.56s  agent 발화 끝
+     0.57s  agent 발화 시작: It does sound pleasant! A bit warm, perhaps, but ideal for e
+     0.57s  user  발화 끝
+     0.64s  user  발화 시작: Right.
+     0.64s  agent 발화 끝
+     0.64s  user  발화 시작: Okay, now back to that hotel. Can you reserve a room at the 
+     0.64s  user  발화 끝
+     0.69s  agent 발화 시작: <ret> Your room at the Hyatt Regency Zhengzhou is reserved f
+     0.69s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"confirmation number": "ZXH78945", "check in date": "20
+     0.69s  user  발화 끝
+     0.76s  user  발화 시작: Oh.
+     0.76s  agent 발화 끝
+     0.77s  user  발화 시작: Great! That's perfect. Thanks for your help with everything.
+     0.77s  user  발화 끝
+     0.79s  agent 발화 시작: You're very welcome. I'm glad I could help you get everythin
+     0.79s  user  발화 끝
+     0.85s  user  발화 시작: I think so too. One last thing…
+     0.85s  agent 발화 끝
+     0.87s  user  발화 시작: …can you remind me what the drive time is again?
+     0.87s  user  발화 끝
+     0.90s  agent 발화 시작: The drive from Hangzhou to Xi'an is approximately thirteen h
+     0.90s  user  발화 끝
+     0.96s  agent 발화 시작: Don’t forget to factor in time for breaks and exploring alon
+     0.96s  agent 발화 끝
+     1.00s  agent 발화 끝

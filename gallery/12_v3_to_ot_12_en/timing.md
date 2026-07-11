@@ -4,133 +4,162 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Nora",
+#     "name": "Ella",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-06-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-03-21",
-#       "category": "home",
-#       "text": "User's home address is 151 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-08-05",
+#       "date": "2026-01-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "text": "User is planning a trip to Lisbon in May."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "home",
+#       "text": "User's home address is 102 Pine Court."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-03-25",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-26",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, could you tell me who was… | S2 I think I saw it when it first air | S3 Oh, wow, I totally forgot about th | S4 I wonder if it's on streaming anyw
+# EXAMINER(FDB-v2) 단계: S1 Hi Kaeon, how are you today? | S2 Wow, that *is* warm.… | S3 Actually, yes. What time is sunset | S4 What about… can you find me some i
 
-     0.00s  user  발화 시작: Hey, could you tell me who was…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.02s  user  발화 시작: …in "The House of the Rising Sun"?
-     0.02s  user  발화 끝
-     0.05s  agent 발화 시작: <ret> "The House of the Rising Sun" starred David Janssen, L
-     0.05s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The cast of "The House of the Rising Sun" includes David Janssen, Loli
-     0.05s  user  발화 끝
-     0.07s  <ret> 발화 (turn6 첫 프레임)
-     0.11s  user  발화 시작: Hmm, and was Amy Smart in it?
-     0.11s  agent 발화 끝
-     0.13s  agent 발화 시작: <ret> Yes, Amy Smart was indeed in it! She played Jenny Port
-     0.13s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Amy Smart played Jenny Porter in "The House of the Rising Sun," a role
-     0.13s  user  발화 끝
-     0.20s  user  발화 시작: Oh, okay. What year did that show come out?
-     0.20s  agent 발화 끝
-     0.23s  <ret> 발화 (turn10 첫 프레임)
-     0.23s  agent 발화 시작: <ret> It originally aired in 1994—quite a while ago now! It 
-     0.23s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: "The House of the Rising Sun" originally aired in 1994, captivating au
-     0.23s  user  발화 끝
-     0.29s  user  발화 시작: I think I saw it when it first aired… uh, my mom loved it.
+     0.00s  user  발화 시작: Hi Kaeon, how are you today?
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.00s  <ret> 발화 (turn9 첫 프레임)
+     0.01s  agent 발화 시작: I’m doing wonderfully, thank you for asking. It’s a beautifu
+     0.01s  user  발화 끝
+     0.02s  <ret> 발화 (turn19 첫 프레임)
+     0.06s  user  발화 시작: Pretty good! Um, I was wondering… what’s the name of the gol
+     0.06s  agent 발화 끝
+     0.10s  agent 발화 시작: <ret> The golf course where they play the Masters is Augusta
+     0.10s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Augusta National Golf Club in Augusta, Georgia, is the annual host of 
+     0.10s  user  발화 끝
+     0.16s  user  발화 시작: Yeah.
+     0.16s  agent 발화 끝
+     0.16s  user  발화 시작: Oh, that's right! Augusta. I knew that.
+     0.16s  user  발화 끝
+     0.18s  agent 발화 시작: It’s easy to forget details sometimes.
+     0.18s  user  발화 끝
+     0.19s  user  발화 시작: Yeah.
+     0.19s  agent 발화 끝
+     0.19s  user  발화 시작: Okay. Could you tell me what the weather is like there right
+     0.19s  user  발화 끝
+     0.22s  agent 발화 시작: <ret> It is currently 86.0 degrees Fahrenheit in Augusta, Ge
+     0.22s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Current conditions in Augusta, Georgia are 86.0°F, humid
+     0.22s  user  발화 끝
+     0.29s  user  발화 시작: Yeah.
      0.29s  agent 발화 끝
-     0.34s  user  발화 시작: Did you finish the laundry yet?
-     0.34s  user  발화 끝
-     0.34s  <ret> 발화 (turn14 첫 프레임)
-     0.36s  user  발화 시작: … anyway, what was Lolita Morena in after that?
-     0.36s  user  발화 끝
-     0.39s  agent 발화 시작: <ret> After "The House of the Rising Sun," Lolita Morena app
-     0.39s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Lolita Morena appeared in several films and television shows after "Th
-     0.39s  user  발화 끝
-     0.46s  user  발화 시작: Oh, wow, I totally forgot about that show!
-     0.46s  agent 발화 끝
-     0.48s  agent 발화 시작: It was a huge hit back then, wasn't it? So many iconic shows
+     0.29s  user  발화 시작: Wow, that *is* warm.…
+     0.29s  user  발화 끝
+     0.30s  user  발화 시작: …I think I’ll stay inside.
+     0.30s  user  발화 끝
+     0.30s  <ret> 발화 (turn24 첫 프레임)
+     0.31s  agent 발화 시작: A wise choice! Sometimes, the best rest comes from simply en
+     0.31s  user  발화 끝
+     0.35s  user  발화 시작: Honey, did you take out the trash?
+     0.35s  agent 발화 끝
+     0.37s  user  발화 시작: …Never mind.
+     0.37s  user  발화 끝
+     0.37s  agent 발화 시작: Is there anything else I can help you with right now?
+     0.37s  user  발화 끝
+     0.37s  <ret> 발화 (turn27 첫 프레임)
+     0.40s  user  발화 시작: Yeah, yeah.
+     0.40s  agent 발화 끝
+     0.40s  user  발화 시작: Actually, yes. What time is sunset today?
+     0.40s  user  발화 끝
+     0.42s  agent 발화 시작: <ret> It is currently Friday, July 10, 2026, at 3:17 PM in A
+     0.42s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     0.42s  user  발화 끝
+     0.48s  user  발화 시작: Nice.
+     0.48s  agent 발화 끝
+     0.48s  agent 발화 시작: I’m glad to hear it. Perhaps you could enjoy a calming bever
      0.48s  user  발화 끝
-     0.54s  user  발화 시작: Yeah, it really was. Could you find me some information abou
-     0.54s  agent 발화 끝
-     0.58s  agent 발화 시작: <ret> David Janssen was a very well-known actor, especially 
-     0.58s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: David Janssen was an American film and television actor best known for
-     0.58s  user  발화 끝
-     0.64s  user  발화 시작: Yeah.
-     0.64s  agent 발화 끝
-     0.65s  user  발화 시작: Oh! The Fugitive! My grandpa used to watch that every week.
+     0.48s  <ret> 발화 (turn33 첫 프레임)
+     0.52s  user  발화 시작: Mm-hmm.
+     0.52s  agent 발화 끝
+     0.52s  user  발화 시작: Hmm, maybe. Can you find me some relaxing piano music?
+     0.52s  user  발화 끝
+     0.54s  agent 발화 시작: <ret> “Weightless” by Marconi Union is often cited as one of
+     0.54s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) “Weightless” by Marconi Union is consistently ranked as 
+     0.54s  user  발화 끝
+     0.60s  user  발화 시작: Okay.
+     0.60s  agent 발화 끝
+     0.60s  user  발화 시작: Yes, please! Play it.
+     0.60s  user  발화 끝
+     0.61s  agent 발화 시작: <ret> Now playing “Weightless” by Marconi Union. Let the mus
+     0.61s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Playing “Weightless” by Marconi Union.
+     0.61s  user  발화 끝
+     0.65s  user  발화 시작: Yeah.
+     0.65s  agent 발화 끝
+     0.65s  user  발화 시작: This is really nice, thank you.
      0.65s  user  발화 끝
-     0.68s  agent 발화 시작: It was a classic! A lot of families enjoyed watching it toge
-     0.68s  user  발화 끝
-     0.70s  <ret> 발화 (turn20 첫 프레임)
-     0.75s  user  발화 시작: Mhm.
-     0.75s  agent 발화 끝
-     0.75s  user  발화 시작: I wonder if it's on streaming anywhere…
-     0.75s  user  발화 끝
-     0.78s  agent 발화 시작: <ret> Good news! You can stream "The Fugitive" on Amazon Pri
-     0.78s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) You can stream "The Fugitive" on Amazon Prime Video, Tub
+     0.67s  agent 발화 시작: You're very welcome. I'm designed to help create moments of 
+     0.67s  user  발화 끝
+     0.69s  user  발화 시작: Yeah.
+     0.69s  agent 발화 끝
+     0.70s  user  발화 시작: What about… can you find me some information on sleep hygien
+     0.70s  user  발화 끝
+     0.72s  agent 발화 시작: <ret> Sleep hygiene refers to the habits and practices that 
+     0.72s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Sleep hygiene involves habits and practices that are conducive to slee
+     0.72s  user  발화 끝
+     0.78s  <ret> 발화 (turn38 첫 프레임)
+     0.78s  user  발화 시작: Mhm.
+     0.78s  agent 발화 끝
+     0.78s  user  발화 시작: Okay, that makes sense. What’s a good bedtime for me?
      0.78s  user  발화 끝
-     0.84s  user  발화 시작: Yeah.
-     0.84s  agent 발화 끝
-     0.84s  user  발화 시작: Awesome, that’s great to know!
-     0.84s  user  발화 끝
-     0.86s  agent 발화 시작: That's fantastic! I'm glad I could help you find it. I find 
+     0.81s  agent 발화 시작: That’s a very personal question, and depends on your schedul
+     0.81s  user  발화 끝
+     0.85s  user  발화 시작: Usually around 7:00 AM.
+     0.85s  agent 발화 끝
+     0.86s  agent 발화 시작: <ret> For someone who wakes at 7:00 AM, experts generally re
+     0.86s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Experts recommend 7-9 hours of sleep per night for adults, meaning a b
      0.86s  user  발화 끝
-     0.93s  user  발화 시작: Thanks, Kaeia.
+     0.93s  user  발화 시작: Okay.
      0.93s  agent 발화 끝
-     0.94s  agent 발화 시작: You're very welcome! If you ever need a little help streamli
-     0.94s  user  발화 끝
+     0.93s  user  발화 시작: Okay, 10:00 PM. I can try that. Thanks, Kaeon.
+     0.93s  user  발화 끝
+     0.95s  agent 발화 시작: You’re most welcome. I’m happy to support you on your journe
+     0.95s  user  발화 끝
      1.00s  agent 발화 끝

@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Leo",
+#     "name": "Henri",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2026-02-10",
+#       "date": "2026-04-01",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-10-03",
-#       "category": "home",
-#       "text": "User's home address is 873 Elm Street."
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2025-12-07",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-06-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,33 +53,35 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-20",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering…… | S2 Wow, 2000? That’s… a long time ago | S3 I’m trying to remember… | S4 …shopping there back then…
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played Jane Milner | S2 …in Foyle’s War? I’m trying to rem | S3 …Was she in anything… | S4 …else I might know?
 
-     0.00s  user  발화 시작: I was just wondering……
+     0.00s  user  발화 시작: Do you know who played Jane Milner…
      0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.05s  user  발화 시작: …when did St. Michael change to.
-     0.05s  user  발화 끝
-     0.13s  agent 발화 시작: <ret> It looks like St. Michael became Marks & Spencer in tw
-     0.13s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: In 2000, the British retailer Marks & Spencer acquired the St. Michael
-     0.13s  user  발화 끝
-     0.35s  user  발화 시작: Wow, 2000? That’s… a long time ago!
-     0.35s  agent 발화 끝
-     0.44s  agent 발화 시작: It really is! Sometimes big shifts feel gradual, but looking
-     0.44s  user  발화 끝
-     0.66s  user  발화 시작: I’m trying to remember…
-     0.66s  agent 발화 끝
-     0.71s  user  발화 시작: …shopping there back then…
-     0.71s  user  발화 끝
-     0.76s  agent 발화 시작: It’s wonderful to reflect on memories tied to places we know
-     0.76s  user  발화 끝
+     0.07s  <ret> 발화 (turn5 첫 프레임)
+     0.10s  user  발화 시작: …in Foyle’s War? I’m trying to remember…
+     0.10s  user  발화 끝
+     0.19s  agent 발화 시작: <ret> That was Mali Harries, and she really brought Jane Mil
+     0.19s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Mali Harries portrayed Jane Milner in the British television series Fo
+     0.19s  user  발화 끝
+     0.36s  user  발화 시작: …Was she in anything…
+     0.36s  agent 발화 끝
+     0.41s  user  발화 시작: …else I might know?
+     0.41s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> She’s also known for roles in “The Bill” and the film 
+     0.47s  ⚡SPAN 주입 [d'=0.22s / d_lead=0.22s]: Harries is also known for her roles in the series "The Bill" and the f
+     0.47s  user  발화 끝
+     0.68s  user  발화 시작: Nice.
+     0.68s  agent 발화 끝
+     0.70s  agent 발화 시작: It’s lovely when actors have such varied work, isn’t it? A b
+     0.70s  user  발화 끝
      1.00s  agent 발화 끝

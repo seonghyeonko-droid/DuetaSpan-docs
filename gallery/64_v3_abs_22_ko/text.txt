@@ -1,89 +1,90 @@
 v3_abs_22_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 이오라로, 사람들의 일상적인 결정과 감정에 대해 도움을 주는 긍정적이고 지지적인 웰니스 코치입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 프라나이며, 사람들의 진로 선택과 업무 스트레스에 대해 실질적인 도움과 안심을 주는 상담가입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "혜경",
+    "name": "세우",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-06",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2026-01-25",
+      "date": "2026-01-26",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
-    },
-    {
-      "date": "2025-09-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-08-10",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
       "date": "2025-07-17",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2025-06-29",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-06-11",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-06-03",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-09",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-12-10",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-20",
+      "date": "2025-07-25",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 칼리닌그라드에 ⟨ret@0.00s⟩ 사는 러시아 사람들이 독일인들을 어떻게 대하는지에 대한 예시가 있을까요?
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: (no information found)⟧ 아, 그 부분에 대한 정보는 현재로서는 찾을 수 없네요. 기록이 남아있지 않아서 알려드리기 어려운 점 양해 부탁드립니다.
-[  0.28s][user ] 음…
-[  0.29s][moshi] 혹시 다른 지역이나 다른 민족 간의 관계에 대해 궁금하신 점이 있으신가요? 다른 이야기를 찾아볼 수도 있습니다.
-[  0.46s][user ] «backchannel» 네.
-[  0.47s][user ] 잠깐만요, 러시아와 독일의 관계에 대한 일반적인 역사적 배경을 좀 알려주실 수 있나요?.
-[  0.60s][moshi] «interrupted» 러시아와 독일의 관계는—
-[  0.63s][user ] … 그건 지금 말고…
-[  0.67s][user ] …칼리닌그라드 ⟨ret@0.43s⟩ 지역 자체의 역사부터 간단하게 설명해 주시겠어요?
-[  0.75s][moshi] ⟦⚡SPAN@0.75s: The city of Königsberg, now Kaliningrad, was founded in 1255 by the Teutonic Knights and was historically part⟧ 칼리닌그라드, 옛 케니히스베르크는 천이백오십오년에 독일 기사단에 의해 세워졌고, 역사적으로 독일어를 사용하는 동프로이센 지역의 일부였습니다. 그래서 독일과의 연결고리가 깊은 곳이죠. 혹시 더 자세한 연대기를 원하시나요?
+[  0.00s][user ] 무함마드가 ⟨ret@0.00s⟩ 언제 아팠는지 알 수 있을까요?
+[  0.04s][moshi] ⟦⚡SPAN@0.04s: (no information found)⟧ 안타깝게도, 무함마드께서 언제 아프셨는지에 대한 정확한 기록은 찾을 수 없었습니다.
+[  0.11s][user ] «backchannel» 그래.
+[  0.11s][user ] 아, ⟨ret@0.00s⟩ 그렇군요. 그럼, 이슬람교 창시자는 누구인가요?
+[  0.15s][moshi] ⟦⚡SPAN@0.15s: Muhammad is recognized as the founder of Islam, and Muslims believe him to be the last prophet sent by God (Al⟧ 이슬람교 창시자는 무함마드이며, 무슬림들은 그가 신(알라)께서 인류에게 보낸 마지막 예언자라고 믿습니다.
+[  0.23s][user ] «backchannel» 응.
+[  0.23s][user ] 그분이 ⟨ret@0.18s⟩ 살았던 시대는 언제쯤이었나요?
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: Muhammad lived from approximately 570 CE to 632 CE, born in Mecca and dying in Medina.⟧ 무함마드는 대략 서기 오백칠십년부터 육백삼십이년까지 살았는데, 메카에서 태어나 메디나에서 세상을 떠나셨습니다.
+[  0.33s][user ] «backchannel» 진짜?
+[  0.34s][user ] 메카와 ⟨ret@0.29s⟩ 메디나는 지금 어디에 있나요?
+[  0.37s][moshi] ⟦⚡SPAN@0.37s: Mecca is located in the Makkah Province of western Saudi Arabia, while Medina is located northeast of Jeddah i⟧ 메카는 사우디아라비아 서부의 메카 주에 위치하고, 메디나는 사우디아라비아의 알마디나 주 제다 북동쪽에 있습니다.
+[  0.46s][user ] 아, 사우디아라비아군요. 그런데 —
+[  0.48s][user ] … ⟨ret@0.24s⟩ 그분이 아프셨을 때, 어떤 병이었을까요? 혹시 기록에 남아있는 게 있나요?
+[  0.56s][moshi] ⟦⚡SPAN@0.56s: (no information found)⟧ 정확히 어떤 병이었는지는 기록이 부족해서 알 수 없지만, 당시에는 전염병이나 열병이 유행했을 가능성이 있습니다.
+[  0.65s][user ] 그렇군요. ⟨ret@0.60s⟩ 그럼, 그분의 가르침은 무엇이었나요?
+[  0.68s][moshi] ⟦⚡SPAN@0.68s: Muhammad’s teachings emphasize the belief in one God, submission to His will, and the importance of compassion⟧ 무함마드의 가르침은 유일신에 대한 믿음, 그의 뜻에 대한 복종, 그리고 연민, 정의, 도덕적 책임의 중요성을 강조합니다.
+[  0.79s][user ] 좋은 ⟨ret@0.53s⟩ 가르침이네요. 혹시 그분에 대한 책을 추천해 주실 수 있나요?
+[  0.85s][moshi] ⟦⚡SPAN@0.85s: (tool result) "무함마드"는 카렐 아만드 저, 2004년 출판된 책으로, 이슬람 창시자 무함마드의 삶을 심도 있게 다룬 전기입니다. 출처: yes24.com⟧ 무함마드에 대한 책으로는 카렐 아만드 님의 "무함마드"가 있습니다. 이천사년에 출판되었고, 이슬람 창시자의 삶을 자세히 다룬 전기입니다.
+      CALL: {"function": "search", "arguments": {"query": "무함마드 전기"}}
+[  0.96s][user ] 한번 찾아봐야겠네요. 감사합니다.
+[  0.98s][moshi] 도움이 되었다니 다행입니다.

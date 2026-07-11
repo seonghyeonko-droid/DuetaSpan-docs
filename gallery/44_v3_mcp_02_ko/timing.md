@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "은율",
+#     "name": "유희",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,98 +18,75 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-19",
+#       "date": "2026-03-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-08-07",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-10-11",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-25",
+#       "date": "2025-10-29",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-26",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 마이애미 플로리다에 성인 한명, 최소 삼성급 호텔 좀 찾 | S2 음… 거긴 좀 작을 것 같아. 좀 더 넓은 곳으로 찾아봐 줄래 | S3 그중에서 바닷가 근처에 있는 곳이 있으면 좋겠어. | S4 고마워. 혹시 이번 주 토요일에 날씨는 어때?
+# EXAMINER(FDB-v2) 단계: S1 혹시 아마존에 접속해 줄 수 있어? | S2 음… 사실 잠이 잘 안 와서, 편안하게 잘 수 있는 걸 좀 찾 | S3 어, 좋지— 잠깐만, 혹시 지금 서울 날씨는 어때? | S4 …아, 그래도 잠자리랑은 상관없는 얘기니까, 다시 아마존 얘기
 
-     0.00s  user  발화 시작: 음… 마이애미 플로리다에 성인 한명, 최소 삼성급 호텔 좀 찾아줄 수 있어?
+     0.00s  user  발화 시작: 혹시 아마존에 접속해 줄 수 있어?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.06s  agent 발화 시작: <ret> 마이애미 플로리다에 성인 한명 기준, 최소 삼성급 호텔 백삼십이채가 있어요. 밤당 팔십구달러부터 
-     0.06s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: There are 132 houses available in Miami, Florida with a minimum of 3 s
-     0.06s  user  발화 끝
-     0.14s  user  발화 시작: 오, 생각보다 많네. 제일 저렴한 곳은 어디야?
-     0.14s  agent 발화 끝
-     0.16s  <ret> 발화 (turn9 첫 프레임)
-     0.18s  agent 발화 시작: <ret> 가장 저렴한 곳은 "Bright and Cozy Studio"인데, 밤당 팔십구달러이고, 백이십삼
-     0.18s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: The cheapest house available is "Bright and Cozy Studio" priced at $89
-     0.18s  user  발화 끝
-     0.27s  <ret> 발화 (turn7 첫 프레임)
-     0.29s  user  발화 시작: 진짜?
-     0.29s  agent 발화 끝
-     0.29s  agent 발화 시작: 그곳은 아늑하고 밝은 스튜디오 타입으로, 혼자 지내기에 충분할 거예요. 주변 관광지와의 거리도 가깝고요.
-     0.29s  user  발화 끝
-     0.36s  user  발화 시작: 음… 거긴 좀 작을 것 같아. 좀 더 넓은 곳으로 찾아봐 줄래?
-     0.36s  agent 발화 끝
-     0.39s  <ret> 발화 (turn13 첫 프레임)
-     0.41s  <ret> 발화 (turn11 첫 프레임)
-     0.43s  agent 발화 시작: <ret> 마이애미 플로리다에 침실이 두 개 이상인 곳은 사십오채가 있고, 밤당 이백달러에서 육백달러 사이입
-     0.43s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: There are 45 houses with at least two bedrooms available in Miami, Flo
-     0.43s  user  발화 끝
-     0.50s  user  발화 시작: 아, 좋네. 이백달러에서 삼백달러 사이로 좀 더 좁혀 줄 수 있어?
-     0.50s  agent 발화 끝
-     0.56s  agent 발화 시작: <ret> 침실이 두 개 이상이고 밤당 이백달러에서 삼백달러 사이인 곳은 십팔채가 있습니다.
-     0.56s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: There are 18 houses available in Miami, Florida with at least two bedr
-     0.56s  user  발화 끝
-     0.61s  user  발화 시작: 그중에서 바닷가 근처에 있는 곳이 있으면 좋겠어.
-     0.61s  agent 발화 끝
-     0.65s  agent 발화 시작: <ret> "Ocean View Apartment"는 사우스 비치에서 영 점 이마일 거리에 있고, 밤당 이백
-     0.65s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: "Ocean View Apartment" is located 0.2 miles from South Beach and is pr
-     0.65s  user  발화 끝
-     0.75s  user  발화 시작: 오, 그거 괜찮네. 예약 좀 해 줘.
-     0.75s  agent 발화 끝
-     0.79s  agent 발화 시작: <ret> "Ocean View Apartment" 예약이 완료되었습니다. 확인 번호는 칠 팔 구 이 삼 사
-     0.79s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Booking confirmed for "Ocean View Apartment", confirmati
-     0.79s  user  발화 끝
-     0.82s  <ret> 발화 (turn16 첫 프레임)
-     0.86s  user  발화 시작: 응.
-     0.86s  agent 발화 끝
-     0.87s  user  발화 시작: 고마워. 혹시 이번 주 토요일에 날씨는 어때?
-     0.87s  user  발화 끝
-     0.90s  agent 발화 시작: <ret> 칠월 십일일 토요일 마이애미 플로리다의 날씨는 섭씨 삼십 점 오도, 습도 칠십팔퍼센트, 바람은 시
-     0.90s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: The weather in Miami, Florida on Saturday, July 11, 2026, will be 30.5
-     0.90s  user  발화 끝
+     0.09s  agent 발화 시작: <ret> 네, 아마존에 접속했습니다. 혹시 찾으시는 물건이 있으신가요?
+     0.09s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) Navigation completed successfully to https://www.amazon.
+     0.09s  user  발화 끝
+     0.19s  user  발화 시작: 음… 사실 잠이 잘 안 와서, 편안하게 잘 수 있는 걸 좀 찾아보려고.
+     0.19s  agent 발화 끝
+     0.27s  <ret> 발화 (turn6 첫 프레임)
+     0.39s  agent 발화 시작: 편안한 잠을 위한 물건을 찾으시는군요. 제가 몇 가지 추천해 드릴까요?
+     0.39s  user  발화 끝
+     0.54s  user  발화 시작: 어어.
+     0.54s  agent 발화 끝
+     0.55s  user  발화 시작: 어, 좋지— 잠깐만, 혹시 지금 서울 날씨는 어때?
+     0.55s  user  발화 끝
+     0.67s  agent 발화 시작: <ret> 현재 서울 날씨는 이십육도, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터입니다.
+     0.67s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Current weather in Seoul is 26.0°C, humidity 68%, wind 3.2 km/h.
+     0.67s  user  발화 끝
+     0.84s  user  발화 시작: …아, 그래도 잠자리랑은 상관없는 얘기니까, 다시 아마존 얘기로 돌아가자.
+     0.84s  agent 발화 끝
+     0.97s  agent 발화 시작: 네, 알겠습니다.
+     0.97s  user  발화 끝
      1.00s  agent 발화 끝

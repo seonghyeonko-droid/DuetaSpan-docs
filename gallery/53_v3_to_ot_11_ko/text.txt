@@ -1,94 +1,62 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 긍정적이고 지지적인 라이프 코치인 미오스입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 실용적이고 안심시키는 개인 가이드인 쿠이아입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "현율",
+    "name": "재민",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-05-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-03-17",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-05-29",
+      "date": "2026-03-29",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-11-29",
+      "category": "home",
+      "text": "User's home address is 부산 해운대구 해운대로 570."
+    },
+    {
+      "date": "2025-11-20",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-28",
+      "date": "2026-06-08",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-08",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-10-01",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 요즘 뭔가 좀 정체된 느낌이 들어. 새로운 영감을 얻고 싶은데, 혹시 좋은 노래 추천해 줄 수 있어?
-[  6.84s][moshi] 새로운 시작을 응원하는 노래들을 찾아드릴게요. 어떤 분위기를 좋아하세요?
-[  9.76s][user ] «backchannel» 음.
-[ 10.96s][user ] 음… 잔잔하고 따뜻한 느낌? 위로가 되는 그런 노래면 ⟨ret@14.87s⟩ 좋겠어.
-[ 15.19s][moshi] ⟦⚡SPAN@15.19s: Alison Krauss is an American bluegrass singer and musician.⟧ 그럼 Alison Krauss의 노래를 한번 들어보시는 건 어떠세요?
-[ 18.89s][moshi] 앨리슨 크라우스는 미국의 블루그래스 싱어이자 뮤지션이에요. 그녀의 음악은 잔잔하고 따뜻한 분위기로 위로를 받을 수 있을 거예요.
-[ 28.74s][user ] 오, 블루그래스라… 잘 모르는데 한번 들어볼게.
-[ 32.30s][moshi] ⟨ret@31.98s⟩ ⟦⚡SPAN@32.30s: The Three Pickers is a bluegrass supergroup consisting of Alison Krauss, Dan Tyminski, and Jerry Douglas.⟧ 좋아요! 그녀는 여러 팀과 함께 활동했는데, 그중 'The Three Pickers'라는 팀도 있어요.
-[ 37.97s][moshi] 앨리슨 크라우스는 댄 티민스키, 제리 더글러스와 함께 'The Three Pickers'라는 블루그래스 슈퍼그룹으로 활동하기도 했답니다.
-[ 42.46s][user ] «backchannel» 응.
-[ 46.30s][user ] The Three Pickers? 이름이 독특하네. 그 팀은 어떤 음악을 ⟨ret@49.93s⟩ 해?
-[ 50.33s][moshi] ⟦⚡SPAN@50.33s: The Three Pickers released their self-titled debut album in 2002, which won a Grammy Award for Best Country Pe⟧ 그 팀은 이천이년에 데뷔 앨범을 발매했는데, 그래미 어워드에서 최고의 컨트리 공연상을 수상하기도 했어요.
-[ 52.62s][user ] «backchannel» 응.
-[ 57.15s][moshi] «interrupted» 네, 정말 실력 있는 팀이에요. 앨리슨 크라우스의 목소리와 다른 멤버들의 연주가 환상적인 조화를 이루죠—
-[ 62.93s][user ] «interrupts_prev» … 혹시 그 앨범 어디서 들을 수 있는지 알려줄 수 ⟨ret@65.59s⟩ 있어?
-[ 65.83s][moshi] ⟦⚡SPAN@65.83s: (tool result) Playing "The Three Pickers" by The Three Pickers on Spotify.⟧ 스포티파이에서 'The Three Pickers'의 노래를 재생해 드릴게요. 지금 바로 들으실 수 있습니다.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist_name": "The Three Pickers", "song_name": "The Three Pickers"}}
-[ 68.63s][user ] «backchannel» 그래.
-[ 71.25s][user ] 와, 정말 좋은데? 뭔가 마음이 편안해지는 것 같아.
-[ 74.93s][moshi] 다행이에요. 음악이 당신에게 위로가 되었으면 좋겠어요.
-[ 79.81s][user ] 혹시 비슷한 느낌의 다른 가수도 추천해 줄 수 있어?
-[ 83.35s][moshi] ⟨ret@83.03s⟩ ⟦⚡SPAN@83.35s: Union Station is a bluegrass band founded by Alison Krauss in 1989.⟧ Union Station이라는 밴드도 앨리슨 크라우스와 함께 활동했던 팀이에요.
-[ 87.73s][moshi] 유니언 스테이션은 천구백팔십구년에 앨리슨 크라우스가 설립한 블루그래스 밴드예요. 그녀와 함께 활동하면서 많은 사랑을 받았답니다.
-[ 96.81s][user ] 유니언 스테이션이라… 한번 찾아봐야겠다. 고마워, 미오스!
-[100.90s][moshi] 천만에요! 언제든지 새로운 영감을 찾고 싶을 때 저를 찾아주세요. 당신의 창작 활동을 항상 응원할게요.
+[  0.00s][user ] 세상에서 ⟨ret@0.00s⟩ 돌아가는 일들에서 잭 스나이더를 연기한 사람은 누구였지?
+[  0.14s][moshi] ⟦⚡SPAN@0.14s: Michael Frank Park.⟧ 세상에서 돌아가는 일들에서 잭 스나이더 역할을 맡은 사람은 마이클 프랭크 파크였습니다. 혹시 다른 배우에 대해서도 궁금하신가요?
+[  0.41s][user ] «backchannel» 응.
+[  0.43s][user ] … ⟨ret@0.37s⟩ 그 배우, 다른 드라마에도 나왔어?
+[  0.53s][moshi] «interrupted» ⟦⚡SPAN@0.53s: Michael Frank Park.⟧ 마이클 프랭크 파크는… —
+[  0.60s][user ] «interrupts_prev» 다른 드라마에도 나왔어?
+[  0.66s][moshi] 네, 마이클 프랭크 파크는 여러 드라마에 출연했습니다.
+[  0.78s][user ] «backchannel» 어.
+[  0.79s][moshi] 그는 '로앤오더'나 '데드 우드' 같은 작품에서도 활약하셨어요. 혹시 특정 드라마를 찾으시는 건가요?

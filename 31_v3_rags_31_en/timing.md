@@ -4,64 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Nora",
+#     "name": "William",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2026-03-04",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
+#     },
+#     {
+#       "date": "2025-11-18",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-09",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-03",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who voices all the minions in Despicable Me 3?
-     2.88s  <ret> 발화 (turn1 첫 프레임)
-     3.11s  agent 발화 시작: <ret> Well, it's quite a feat of voice work, isn’t it? Pierr
-     3.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: Pierre Coffin is the voice actor for all of the minions in the Despica
-     3.33s  user  발화 끝
-    10.67s  agent 발화 끝
+     0.00s  user  발화 시작: Who was the first woman judge of the High Court in India?
+     0.08s  <ret> 발화 (turn1 첫 프레임)
+     0.32s  agent 발화 시작: <ret> It was Justice Anna Chandy, appointed to the Kerala Hi
+     0.32s  ⚡SPAN 주입 [d'=0.64s / d_lead=0.68s]: Justice Anna Chandy was the first woman judge in India, appointed to t
+     0.32s  user  발화 끝
+     1.00s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "주서",
+#     "name": "태빈",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,133 +12,119 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2025-10-29",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-10-12",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to Lisbon in May."
 #     },
 #     {
-#       "date": "2026-04-22",
+#       "date": "2025-08-06",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-08-04",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-04-14",
+#       "date": "2025-06-16",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-03-21",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-04",
+#       "date": "2026-05-11",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-11-16",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 로라라님. 오늘 하루는 어떠셨어요? | S2 이십오분 일하고 잠깐 쉬는 거군요. 괜찮아 보이는데… 실제로  | S3 그런데, 그 포모도로 기법… – | S4 오늘 날씨는 어때요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 요즘 좀 힘든 일이 있어서… | S2 엄마는 항상 제 의견을 무시하는 것 같아요. | S3 음… 저는 음악을 하고 싶은데, 엄마는 공부를 더 하라고 하세 | S4 가끔 야구도 봐요.
 
-     0.00s  user  발화 시작: 안녕하세요, 로라라님. 오늘 하루는 어떠셨어요?
-     0.00s  <ret> 발화 (turn8 첫 프레임)
-     0.02s  agent 발화 시작: 안녕하세요. 오늘 하루도 평안하시길 바랍니다. 혹시 오늘 특별히 도와드릴 일이 있으신가요?
-     0.02s  user  발화 끝
-     0.05s  user  발화 시작: 맞아요.
-     0.05s  agent 발화 끝
-     0.06s  <ret> 발화 (turn6 첫 프레임)
-     0.06s  user  발화 시작: 음, 요즘 좀 집중이 안 돼서요. 뭔가 생산성을 높일 방법을 찾고 있는데…
-     0.06s  user  발화 끝
-     0.10s  agent 발화 시작: 집중력 향상에 도움이 될 만한 방법을 찾으시는군요. 규칙적인 생활 습관이나 짧은 휴식을 취하는 것이 도움이 
-     0.10s  user  발화 끝
-     0.16s  user  발화 시작: 규칙적인 생활 습관은 알고 있는데, 실천이 잘 안 돼요. 혹시 좋은 시간 관리 방법 같은 거 있을까요?
-     0.16s  agent 발화 끝
-     0.22s  agent 발화 시작: <ret> 시간 관리 방법으로는 포모도로 기법이 있는데, Francesco Cirillo가 천구백팔십년대 후
-     0.22s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The Pomodoro Technique is a time management method developed by France
-     0.22s  user  발화 끝
-     0.24s  <ret> 발화 (turn13 첫 프레임)
-     0.26s  user  발화 시작: 포모도로 기법이요? 그게 뭔데요?
-     0.26s  agent 발화 끝
-     0.27s  agent 발화 시작: <ret> 이십오분 동안 집중해서 일하고 짧은 휴식을 반복하는 기법입니다.
-     0.27s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: The Pomodoro Technique involves working in 25-minute intervals, separa
-     0.27s  user  발화 끝
-     0.30s  user  발화 시작: 이십오분 일하고 잠깐 쉬는 거군요. 괜찮아 보이는데… 실제로 효과가 있나요?
-     0.30s  agent 발화 끝
-     0.33s  agent 발화 시작: 많은 분들이 포모도로 기법을 통해 집중력을 높이고 업무 효율을 개선했다고 말씀하십니다.
-     0.33s  user  발화 끝
-     0.37s  user  발화 시작: 그렇죠.
-     0.37s  agent 발화 끝
-     0.37s  user  발화 시작: 혹시 레알 마드리드의 감독은 누구예요? 갑자기 궁금해졌어요.
-     0.37s  user  발화 끝
-     0.40s  agent 발화 시작: <ret> 현재 레알 마드리드의 감독은 Carlo Ancelotti입니다.
-     0.40s  ⚡SPAN 주입 [d'=0.02s / d_lead=0.02s]: Carlo Ancelotti is the current head coach of Real Madrid.
-     0.40s  user  발화 끝
-     0.42s  user  발화 시작: 음.
-     0.42s  agent 발화 끝
-     0.42s  user  발화 시작: Carlo Ancelotti요? 이탈리아 분이시죠?
-     0.42s  user  발화 끝
-     0.43s  agent 발화 시작: 네, Carlo Ancelotti 감독님은 이탈리아 출신이십니다.
-     0.43s  user  발화 끝
-     0.45s  user  발화 시작: 이탈리아 축구는 정말 유명하잖아요.
+     0.00s  user  발화 시작: 안녕하세요. 요즘 좀 힘든 일이 있어서…
+     0.03s  agent 발화 시작: 안녕하세요. 어떤 힘든 일이 있으신가요? 편하게 말씀해 주세요. 제가 곁에서 응원할게요.
+     0.03s  user  발화 끝
+     0.08s  user  발화 시작: 가족과의 관계가 좀 안 좋은 것 같아요.
+     0.08s  agent 발화 끝
+     0.12s  agent 발화 시작: 가족과의 관계 때문에 힘드시군요. 그런 문제는 정말 마음이 무거울 수 있어요.
+     0.12s  user  발화 끝
+     0.17s  user  발화 시작: 네, 엄마랑 자주 다투게 돼요.
+     0.17s  agent 발화 끝
+     0.20s  <ret> 발화 (turn8 첫 프레임)
+     0.20s  agent 발화 시작: 어머님과 자주 다투신다고요. 어떤 점이 가장 힘드신가요?
+     0.20s  user  발화 끝
+     0.23s  user  발화 시작: 네.
+     0.23s  agent 발화 끝
+     0.24s  user  발화 시작: 엄마는 항상 제 의견을 무시하는 것 같아요.
+     0.24s  user  발화 끝
+     0.28s  agent 발화 시작: <ret> 부모님은 자녀의 관점을 이해하기 어려워하는 경우가 많아서, 자주 의견 충돌이 생기고 마음이 상할 
+     0.28s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Parents often struggle to understand their children's perspectives, le
+     0.28s  user  발화 끝
+     0.35s  user  발화 시작: 네.
+     0.35s  agent 발화 끝
+     0.36s  user  발화 시작: 맞아요, 그런 것 같아요.
+     0.36s  user  발화 끝
+     0.38s  agent 발화 시작: 혹시 어떤 상황에서 주로 다투게 되나요? 구체적으로 말씀해 주시면 더 도움이 될 것 같아요.
+     0.38s  user  발화 끝
+     0.45s  user  발화 시작: 제가 하고 싶은 일이 있는데, 엄마는 반대하시고…
      0.45s  agent 발화 끝
-     0.47s  agent 발화 시작: 이탈리아 축구는 오랜 역사와 전통을 자랑하며 세계적으로 많은 팬을 보유하고 있습니다.
-     0.47s  user  발화 끝
-     0.50s  user  발화 시작: 그런데, 그 포모도로 기법… –
-     0.50s  agent 발화 끝
-     0.52s  user  발화 시작: …혹시 그 기법을 이용해서 공부 계획을 세우는 데 도움을 받을 수 있을까요?
-     0.52s  user  발화 끝
-     0.53s  <ret> 발화 (turn28 첫 프레임)
-     0.56s  agent 발화 시작: 포모도로 기법은 공부 계획 세우는 데 아주 유용합니다. 이십오분 집중 후 오분 휴식으로 계획을 세워보세요.
-     0.56s  user  발화 끝
-     0.61s  user  발화 시작: 오분 휴식에는 뭘 하는 게 좋을까요?
-     0.61s  agent 발화 끝
-     0.63s  agent 발화 시작: 오분 휴식 시간에는 스트레칭을 하거나 가벼운 산책을 하는 것이 좋습니다. 눈을 감고 휴식을 취하는 것도 도움
-     0.63s  user  발화 끝
-     0.64s  <ret> 발화 (turn33 첫 프레임)
-     0.69s  user  발화 시작: 스트레칭은 좀 해야겠네요. 오래 앉아 있으니까 몸이 뻐근해요.
-     0.69s  agent 발화 끝
-     0.72s  agent 발화 시작: 오래 앉아 있으면 몸이 뻐근해지기 쉽습니다. 틈틈이 스트레칭을 해주시면 건강에도 좋습니다.
-     0.72s  user  발화 끝
-     0.75s  user  발화 시작: 맞아요.
-     0.75s  agent 발화 끝
-     0.76s  user  발화 시작: 오늘 날씨는 어때요?
-     0.76s  user  발화 끝
-     0.77s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십육 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터입니다
-     0.77s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Seoul: 26.5°C, humidity 68%, wind 3.2 km/h.
-     0.77s  user  발화 끝
-     0.81s  user  발화 시작: 꽤 덥네요. 에어컨을 켜야겠어요.
-     0.81s  agent 발화 끝
-     0.82s  agent 발화 시작: 더운 날씨에는 에어컨을 켜서 시원하게 지내는 것이 좋습니다.
+     0.48s  agent 발화 시작: 하고 싶은 일이 있는데 어머님께서 반대하시는군요. 어떤 일인지 여쭤봐도 될까요?
+     0.48s  user  발화 끝
+     0.53s  user  발화 시작: 네.
+     0.53s  agent 발화 끝
+     0.54s  user  발화 시작: 음… 저는 음악을 하고 싶은데, 엄마는 공부를 더 하라고 하세요.
+     0.54s  user  발화 끝
+     0.59s  agent 발화 시작: 음악을 하고 싶으신데 어머님은 공부를 더 하시길 바라시는군요.
+     0.59s  user  발화 끝
+     0.62s  <ret> 발화 (turn19 첫 프레임)
+     0.63s  agent 발화 시작: 어머님께서 걱정하시는 마음도 이해가 되지만 —
+     0.63s  agent 발화 끝
+     0.66s  user  발화 시작: …근데 엄마는 제가 음악으로는 성공할 수 없을 거라고 하세요.
+     0.66s  agent 발화 끝
+     0.70s  agent 발화 시작: <ret> 로욜라 시카고 대학교는 천구백육십삼년에 NCAA Division I 남자 농구 토너먼트에서 신시내
+     0.70s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: Loyola University Chicago won the NCAA Division I Men's Basketball Tou
+     0.70s  user  발화 끝
+     0.80s  user  발화 시작: 아, 네. 농구 좋아해요.
+     0.80s  agent 발화 끝
+     0.82s  agent 발화 시작: 농구를 좋아하시는군요! 혹시 다른 스포츠도 즐겨 보시나요?
      0.82s  user  발화 끝
-     0.85s  user  발화 시작: 예.
+     0.85s  user  발화 시작: 네.
      0.85s  agent 발화 끝
-     0.85s  user  발화 시작: 혹시 내일 아침 일곱시에 알람을 맞춰줄 수 있나요?
-     0.85s  user  발화 끝
-     0.88s  agent 발화 시작: <ret> 네, 내일 아침 일곱시에 알람을 맞춰드렸습니다. 확인 번호는 구 에이 칠 비 이 씨입니다.
-     0.88s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Alarm set for 07:00. Confirmation ID: 9a7b2c.
-     0.88s  user  발화 끝
-     0.93s  user  발화 시작: 고마워요, 로라라님. 덕분에 오늘 하루도 잘 정리할 수 있을 것 같아요.
-     0.93s  agent 발화 끝
-     0.97s  agent 발화 시작: 천만에요. 언제든지 필요한 일이 있으시면 말씀해주세요. 편안한 저녁 시간 보내세요.
-     0.97s  user  발화 끝
+     0.86s  user  발화 시작: 가끔 야구도 봐요.
+     0.86s  user  발화 끝
+     0.87s  agent 발화 시작: 야구도 즐겨 보시는군요. 가족과 함께 야구 보러 가기도 하시나요?
+     0.87s  user  발화 끝
+     0.92s  user  발화 시작: 네, 가끔 같이 가요.
+     0.92s  agent 발화 끝
+     0.94s  agent 발화 시작: 가족과 함께 야구를 보러 가시는군요. 함께 시간을 보내면서 관계가 조금 더 좋아지길 바라요.
+     0.94s  user  발화 끝
      1.00s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "예람",
+#     "name": "연훈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,106 +12,108 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-11-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2026-01-08",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-06-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-12-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-11-20",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
+#       "date": "2025-11-01",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-20",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 네, 안녕하세요. 에로라님. 잘 지냈어요. 그런데 지금 시계가 | S2 음… 혹시 제가 좋아하는 에티오피아 음식점 근처에 괜찮은 곳이 | S3 …거기 비건 메뉴도 있나요? | S4 와, 감사합니다!
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 트히르님. 잘 부탁드립니다. | S2 앗, 벌써 시간이 이렇게 됐어요? | S3 여행요? 아이슬란드 여행 말씀하시는 건가요? | S4 …혹시 아이슬란드 여행 전에 필요한 준비물 같은 거 알려주실 
 
-     0.00s  agent 발화 시작: 안녕하세요, 예람님. 저는 에로라입니다. 오늘 하루 잘 보내셨나요?
-     2.67s  user  발화 시작: 네네.
-     3.39s  user  발화 끝
-     4.17s  agent 발화 끝
-     4.67s  user  발화 시작: 네, 안녕하세요. 에로라님. 잘 지냈어요. 그런데 지금 시계가 몇 시예요?
-     9.67s  <ret> 발화 (turn3 첫 프레임)
-     9.74s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다.
-     9.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-     9.86s  user  발화 끝
-    11.46s  user  발화 시작: 네.
-    12.04s  user  발화 끝
-    14.54s  user  발화 시작: 아, 그러네요. 이번 주 토요일 저녁에 뭘 할까요?
-    14.65s  agent 발화 끝
-    17.82s  agent 발화 시작: 토요일 저녁에 뭘 할지 고민이시군요. 혹시 특별히 하고 싶은 것이 있으세요?
-    17.96s  user  발화 끝
-    19.49s  user  발화 시작: 네.
-    20.12s  user  발화 끝
-    22.26s  agent 발화 끝
-    22.36s  user  발화 시작: 음… 혹시 제가 좋아하는 에티오피아 음식점 근처에 괜찮은 곳이 있을까요?
-    26.85s  <ret> 발화 (turn9 첫 프레임)
-    27.17s  agent 발화 시작: <ret> 에티오피아 음식을 좋아하시는군요. 제가 기억하기로는, 예람님께서 에티오피아 음식을 가장 좋아하셨죠
-    27.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: [2025-06-06] User's favorite cuisine is Ethiopian.
-    27.36s  user  발화 끝
-    32.95s  agent 발화 끝
-    33.06s  user  발화 시작: 맞아요!
-    33.82s  <ret> 발화 (turn11 첫 프레임)
-    33.88s  user  발화 끝
-    33.90s  agent 발화 시작: <ret> 서울에 괜찮은 에티오피아 음식점이 몇 군데 있어요. 한 곳을 추천해 드릴까요?
-    33.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [2025-06-06] User's favorite cuisine is Ethiopian.
-    38.21s  agent 발화 시작: 제가 기억하는 바로는, 예람님께서는 에티오피아 음식을 아주 좋아하셨습니다.
-    38.25s  agent 발화 끝
-    41.51s  user  발화 시작: 네네.
-    42.05s  user  발화 끝
-    42.64s  agent 발화 시작: '아프리카 궁전'이라는 곳이 평이 좋고, 예람님께서 계신 곳에서 가까워요. —
-    42.74s  agent 발화 끝
-    46.37s  user  발화 시작: …거기 비건 메뉴도 있나요?
-    46.99s  agent 발화 끝
-    47.82s  <ret> 발화 (turn16 첫 프레임)
-    47.89s  agent 발화 시작: <ret> 네, 물론입니다. '아프리카 궁전'에는 비건 메뉴도 다양하게 준비되어 있습니다.
-    47.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [2026-04-08] User is vegan.
-    48.03s  user  발화 끝
-    53.35s  agent 발화 끝
-    53.41s  agent 발화 시작: 예람님께서 비건이시라는 점을 고려하면, 비건 메뉴가 있는 곳을 찾는 것이 중요하겠죠.
-    55.29s  user  발화 시작: 네.
-    55.78s  user  발화 끝
-    58.41s  agent 발화 끝
-    58.97s  user  발화 시작: 아, 정말 다행이네요. 그럼 혹시 예약해 주실 수 있을까요?
-    63.23s  <ret> 발화 (turn20 첫 프레임)
-    63.54s  agent 발화 시작: <ret> '아프리카 궁전'에 토요일 저녁 일곱시에 두 분으로 예약이 완료되었습니다. 확인 번호는 팔 구 엑
-    63.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) Reservation confirmed at 아프리카 궁전 for 2 people on Saturda
-    63.73s  user  발화 끝
-    66.44s  user  발화 시작: 예.
-    67.02s  user  발화 끝
-    70.95s  agent 발화 끝
-    71.61s  user  발화 시작: 와, 감사합니다!
-    73.06s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되시길 바랍니다.
-    73.08s  user  발화 끝
-    76.89s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 연훈님! 저는 여러분의 건강과 생산성을 돕는 트히르예요.
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.06s  user  발화 시작: 음.
+     0.06s  agent 발화 끝
+     0.07s  user  발화 시작: 안녕하세요, 트히르님. 잘 부탁드립니다.
+     0.07s  user  발화 끝
+     0.10s  agent 발화 시작: 오늘 하루 어떻게 지내셨어요? 혹시 특별한 계획이 있으신가요?
+     0.10s  user  발화 끝
+     0.16s  user  발화 시작: 그냥 그래요. 근데 지금 몇 시예요?
+     0.16s  agent 발화 끝
+     0.21s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십칠분이에요.
+     0.21s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+     0.21s  user  발화 끝
+     0.28s  user  발화 시작: 예.
+     0.28s  agent 발화 끝
+     0.28s  user  발화 시작: 앗, 벌써 시간이 이렇게 됐어요?
+     0.28s  user  발화 끝
+     0.32s  agent 발화 시작: 시간이 참 빠르죠. 혹시 오늘 하루의 목표를 세우셨나요?
+     0.32s  user  발화 끝
+     0.38s  user  발화 시작: 네.
+     0.38s  agent 발화 끝
+     0.39s  user  발화 시작: 목표는… 음, 아직 잘 모르겠어요.
+     0.39s  <ret> 발화 (turn16 첫 프레임)
+     0.39s  user  발화 끝
+     0.40s  <ret> 발화 (turn13 첫 프레임)
+     0.43s  agent 발화 시작: 목표를 정하는 데 어려움을 느끼시는군요. 혹시 최근에 계획했던 여행에 대해 이야기해 볼까요?
+     0.43s  user  발화 끝
+     0.52s  user  발화 시작: 여행요? 아이슬란드 여행 말씀하시는 건가요?
+     0.52s  agent 발화 끝
+     0.56s  agent 발화 시작: <ret> 네, 맞아요. 이천이십오년 십이월 이십칠일에 아이슬란드 여행을 계획하고 있다고 말씀하셨어요.
+     0.56s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2025-12-27] User is planning a trip to Iceland in December.
+     0.56s  user  발화 끝
+     0.64s  user  발화 시작: 아, 맞아요! 근데 여행 준비는 아직 하나도 안 했어요—
+     0.64s  agent 발화 끝
+     0.71s  user  발화 시작: …혹시 아이슬란드 여행 전에 필요한 준비물 같은 거 알려주실 수 있나요?
+     0.71s  user  발화 끝
+     0.79s  agent 발화 시작: <ret> 이천이십오년 십이월에 아이슬란드 여행을 가신다고 하셨으니, 따뜻한 옷과 방수 기능이 있는 외투가 
+     0.79s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: [2025-12-27] User is planning a trip to Iceland in December.
+     0.79s  user  발화 끝
+     0.89s  user  발화 시작: 진짜요?
+     0.89s  agent 발화 끝
+     0.90s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 아니면, 오늘 하루를 좀 더 구체적으로 계획해 볼까요?
+     0.90s  user  발화 끝
+     1.00s  agent 발화 끝

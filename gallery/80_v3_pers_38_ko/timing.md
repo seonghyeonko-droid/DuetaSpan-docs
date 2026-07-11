@@ -4,88 +4,80 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "도별",
+#     "name": "진우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-10",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2025-09-06",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-02-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-07-14",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-12-30",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-07-10",
+#       "date": "2025-10-04",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-07",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User is planning a trip to Iceland in August."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-09",
-#       "title": "Researching a used car",
+#       "date": "2026-04-01",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-27",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-27",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 도별님, 안녕하세요. 저는 히오로입니다. 혹시 지금 어떤 고민 때문에 저를 찾아주셨는지 여쭤봐도 될까요?
-     0.12s  user  발화 시작: 네.
-     0.12s  agent 발화 끝
-     0.13s  user  발화 시작: 혹시 제가 뭘 어떻게 해야 할지 알려주시는 분이신가요?
-     0.13s  user  발화 끝
-     0.20s  agent 발화 시작: 네, 도별님. 제가 도별님의 상황을 잘 들어드리고, 함께 고민하면서 앞으로 나아갈 방향을 찾는 것을 도와드릴
-     0.20s  user  발화 끝
-     0.35s  user  발화 시작: 예.
-     0.35s  agent 발화 끝
-     0.36s  agent 발화 시작: 혹시 최근에 직장에서 특별히 힘든 일이 있으셨는지, 아니면 전반적인 커리어에 대한 고민이신가요? 어떤 이야기
-     0.36s  user  발화 끝
-     0.51s  user  발화 시작: 네.
-     0.51s  agent 발화 끝
-     0.52s  user  발화 시작: 음… 사실 요즘 회사에서 자꾸 새로운 업무만 던져주고, 제가 뭘 잘하는지, 뭘 하고 싶은지 모르겠어요.
-     0.52s  user  발화 끝
-     0.65s  agent 발화 시작: 새로운 업무가 계속 주어진다는 건 도별님의 능력을 인정받고 있다는 뜻이기도 하지만, 동시에 혼란스러울 수 있
-     0.65s  user  발화 끝
-     0.86s  user  발화 시작: 네네.
-     0.86s  agent 발화 끝
-     0.87s  user  발화 시작: 네, 완전히 달라요. 제가 원래는 디자인 쪽이었는데, 요즘은 마케팅 업무도 해야 하고… 정말 혼란스럽습니다.
-     0.87s  user  발화 끝
-     1.00s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 진우님. 저는 에랜이라고 해요. 혹시 오늘 하루 어떻게 지내셨는지 여쭤봐도 될까요?
+     0.11s  user  발화 시작: 그래.
+     0.11s  agent 발화 끝
+     0.12s  user  발화 시작: 뭘 도와주시는 분이세요?
+     0.12s  user  발화 끝
+     0.15s  agent 발화 시작: 저는 진우님의 일상과 생산성을 응원하는 웰니스 코치랍니다. 어떤 어려움이 있으신가요, 편하게 말씀해 주세요.
+     0.15s  user  발화 끝
+     0.27s  user  발화 시작: 음.
+     0.27s  agent 발화 끝
+     0.28s  agent 발화 시작: 요즘 뭔가 스트레스받는 일이 있으신가요? 아니면 하루하루를 좀 더 효율적으로 보내고 싶으신가요? 무엇이든 괜
+     0.28s  user  발화 끝
+     0.41s  user  발화 시작: 음… 사실 요즘 일이 너무 많아서 뭘 먼저 해야 할지 모르겠어요. 그냥 막막해요.
+     0.41s  agent 발화 끝
+     0.53s  agent 발화 시작: 일이 많아서 막막하다니, 충분히 그럴 수 있어요. 우선 가장 중요하다고 생각되는 일 세 가지를 적어보는 건 
+     0.53s  user  발화 끝
+     0.69s  user  발화 시작: 세 가지요? 음… 일단 프로젝트 마감일, 다음 주 발표 준비, 그리고… 아, 팀 회의 준비요.
+     0.69s  agent 발화 끝
+     0.82s  agent 발화 시작: 좋은 시작이에요, 진우님. 이제 그 세 가지를 중요도와 긴급성에 따라 분류해 보면 어떨까요? 우선순위를 정하
+     0.82s  user  발화 끝
+     1.00s  agent 발화 끝

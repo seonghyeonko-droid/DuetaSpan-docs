@@ -4,95 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Elias",
+#     "name": "Aiden",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "German"
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-02-01",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-06-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-11-19",
+#       "date": "2025-10-13",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-09-22",
+#       "date": "2025-08-16",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-06-02",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-07-21",
+#       "date": "2025-05-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "text": "User is planning a trip to Kyoto in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-28",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-26",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been having trouble falling a | S2 That sounds nice. What can I do to | S3 I think I stay up too late on my p | S4 …could you recommend an app for gu
 
-     0.00s  user  발화 시작: I’ve been having trouble falling asleep lately.
-     2.96s  user  발화 끝
-     3.18s  agent 발화 시작: It’s completely normal to experience sleep difficulties from
-    12.20s  user  발화 시작: That sounds nice. What can I do tonight?
-    12.22s  agent 발화 끝
-    15.26s  <ret> 발화 (turn3 첫 프레임)
-    15.49s  agent 발화 시작: <ret> There are several things you could try tonight—practic
-    15.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.41s]: Practicing relaxation techniques, such as deep breathing or progressiv
-    15.53s  user  발화 끝
-    21.20s  user  발화 시작: Mm-hmm.
-    21.74s  user  발화 끝
-    26.81s  agent 발화 시작: It’s also helpful to create a consistent bedtime routine to 
-    26.90s  agent 발화 끝
-    32.42s  agent 발화 끝
-    32.51s  user  발화 시작: I think I stay up too late on my phone.
-    35.75s  user  발화 끝
-    36.17s  agent 발화 시작: Many people find that screen time before bed can disrupt sle
-    39.39s  user  발화 시작: …could you recommend an app for guided meditation?
-    40.06s  agent 발화 끝
-    42.44s  <ret> 발화 (turn9 첫 프레임)
-    42.68s  agent 발화 시작: <ret> Let me search for some well-regarded guided meditation
-    42.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.70s]: (tool result) Headspace and Calm are consistently ranked as top choice
-    42.91s  user  발화 끝
-    46.38s  agent 발화 끝
-    46.40s  agent 발화 시작: Headspace and Calm are consistently ranked as top choices, o
-    68.02s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the latest on artificial intelligence? I was reading 
+     0.07s  <ret> 발화 (turn4 첫 프레임)
+     0.10s  agent 발화 시작: It’s a fascinating field, isn’t it? So much is happening all
+     0.10s  user  발화 끝
+     0.22s  user  발화 시작: Yeah.
+     0.22s  agent 발화 끝
+     0.23s  user  발화 시작: Yeah, well, um, what’s the newest breakthrough, specifically
+     0.23s  user  발화 끝
+     0.29s  <ret> 발화 (turn8 첫 프레임)
+     0.31s  agent 발화 시작: <ret> The newest breakthrough comes from Google DeepMind wit
+     0.31s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) Researchers at Google DeepMind have developed Gemma, a n
+     0.31s  user  발화 끝
+     0.47s  user  발화 시작: Uh-huh.
+     0.47s  agent 발화 끝
+     0.48s  agent 발화 시작: It’s quite exciting, isn’t it? Open-weights models mean more
+     0.48s  user  발화 끝
+     0.59s  user  발화 시작: Is it any good for, like, helping with kids' homework?
+     0.59s  agent 발화 끝
+     0.69s  agent 발화 시작: <ret> I’m checking on that for you, but unfortunately, I hav
+     0.69s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (no information found)
+     0.69s  user  발화 끝
+     0.89s  agent 발화 시작: However, it’s a powerful language model, so it could potenti
+     0.89s  agent 발화 끝
+     1.00s  agent 발화 끝

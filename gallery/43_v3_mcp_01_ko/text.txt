@@ -1,72 +1,102 @@
 v3_mcp_01_ko src=mcp style=v2
-SYSTEM: <system> 당신은 우호적이고 지지적인 조언가 리올이며, 사람들의 우정과 사교 생활을 돕습니다. <system>
+SYSTEM: <system> 당신은 케스이며, 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 현실적이고 공감적인 조력자입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "주은",
+    "name": "성슬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-27",
-      "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
-    },
-    {
-      "date": "2026-01-29",
+      "date": "2026-04-05",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2025-11-13",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2026-03-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-10-14",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-08-26",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-07-02",
+      "date": "2025-08-27",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-06-22",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-05-29",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-25",
+      "date": "2026-05-27",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 설정 파일 좀 덮어쓰고 싶은데, config 폴더 안에 있는 거고, 테마는 어둡게, 글꼴 크기는 십이 언어는 영어로 해 ⟨ret@8.22s⟩ 줘.
-[  8.45s][moshi] ⟦⚡SPAN@8.46s: (tool result) file write result: {"status": "success", "file path": "/Users/user/config/settings", "message": ⟧ 네, 설정 파일을 덮어쓰는 데 성공했습니다. config 폴더 안에 있는 settings 파일이 어둡게 테마로, 십이 크기의 글꼴, 영어로 설정되었어요.
-      CALL: {"function": "write_file", "arguments": {"directory_path": "config", "file_name": "settings", "file_content": "theme=dark font_size=12 language=en"}}
-[ 11.65s][user ] «backchannel» 와.
-[ 16.63s][user ] 혹시 그 파일이 언제 마지막으로 수정됐는지도 알려줄 수 있어?
-[ 20.99s][moshi] «interrupted» ⟨ret@20.76s⟩ ⟦⚡SPAN@21.00s: (tool result) file info: {"file name": "settings", "file path": "/Users/user/config/settings", "file size": "1⟧ settings 파일은 이천이십육년 칠월 구일 오후 두시 삼십분에 마지막으로 수정되었답니다. —
-      CALL: {"function": "get_file_info", "arguments": {"file_path": "/Users/user/config/settings"}}
-[ 26.37s][user ] «interrupts_prev» … 잠깐만, 그 파일 말고 다른 설정 파일들도 비슷한 방식으로 수정할 수 있어?
-[ 32.00s][moshi] 네, 물론입니다. 다른 설정 파일들의 정보도 알려주시면 같은 방식으로 수정해 드릴 수 있어요. 어떤 파일을 수정해 드릴까요?
+[  0.00s][user ] 항저우에서 ⟨ret@0.00s⟩ 시안까지 차로 가면 얼마나 걸릴까요?
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: (tool result) {"distance": "1178.3 km", "duration": "13 hr 32 min"}⟧ 항저우에서 시안까지 차로 가려면 약 천백칠십팔 점 삼킬로미터를 이동해야 하며, 예상 소요 시간은 열세시간 삼십이분입니다.
+      CALL: {"function": "maps_direction_driving", "arguments": {"origin": "Hangzhou", "destination": "Xi'an"}}
+[  0.12s][user ] 열세시간 넘게 운전해야 한다니, 좀 부담스럽네요.
+[  0.15s][moshi] 장거리 운전은 피로도가 높을 수 있죠. 중간에 휴식 시간을 충분히 갖는 것이 중요합니다.
+[  0.22s][user ] «backchannel» 네네.
+[  0.23s][user ] 혹시 ⟨ret@0.02s⟩ 중간에 들를 만한 도시가 있을까요?
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: (tool result) {"results": [{"name": "Nanjing", "vicinity": "Jiangsu, China"}, {"name": "Zhengzhou", "vicinity"⟧ 항저우와 시안 사이에 난징과 정저우가 있습니다. 난징은 장강 하류에 위치한 역사적인 도시이고, 정저우는 중국의 교통 중심지입니다.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "cities between Hangzhou and Xi'an", "types": ["city"]}}
+[  0.35s][user ] «backchannel» 네네.
+[  0.35s][moshi] «interrupted» 난징은 예로부터 문화와 교육의 중심지였으며, 아름다운 풍경과 유적지가 많습니다—
+[  0.40s][user ] «interrupts_prev» …정저우는 어떤 곳이에요? 혹시 맛집이 유명한가요?
+[  0.43s][moshi] 정저우는 중국 내륙 교통의 요충지이며, 다양한 먹거리가 유명합니다. 특히 샤오러우차오가 대표적입니다.
+[  0.49s][user ] 샤오러우차오요? 그게 뭔데요?
+[  0.51s][moshi] 샤오러우차오는 정저우의 대표적인 길거리 음식으로, 얇게 썬 소고기를 매콤한 양념에 볶아 만든 요리입니다.
+[  0.58s][user ] 맛있겠네요. 그럼 정저우에서 하루 정도…
+[  0.61s][user ] …머물면서 맛집 탐방을 하는 것도 괜찮겠어요.
+[  0.64s][moshi] 좋은 생각이에요. 정저우는 다양한 종류의 현지 음식을 맛볼 수 있는 매력적인 도시입니다.
+[  0.71s][user ] «backchannel» 그렇죠.
+[  0.71s][user ] 혹시 ⟨ret@0.67s⟩ 정저우의 호텔을 예약해 줄 수 있을까요?
+[  0.75s][moshi] ⟦⚡SPAN@0.75s: (tool result) {"hotels": [{"name": "Shangri-La Hotel Zhengzhou", "price": "850 CNY"}, {"name": "Hilton Zhengzh⟧ 정저우의 상그릴라 호텔은 팔백오십위안, 힐튼 정저우는 칠백이십위안입니다. 둘 중 어디로 예약해 드릴까요?
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Zhengzhou", "checkInDate": "2026-07-11", "checkOutDate": "2026-07-12"}}
+[  0.82s][user ] «backchannel» 와.
+[  0.82s][user ] 힐튼 ⟨ret@0.45s⟩ 정저우로 예약해 주세요.
+[  0.85s][moshi] ⟦⚡SPAN@0.85s: (tool result) {"confirmationId": "ZH26071112"}⟧ 힐튼 정저우 예약이 완료되었습니다. 확인 번호는 제트 에이치 이 육 공 칠 일 일 일 이입니다. 즐거운 여행 되세요!
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotelName": "Hilton Zhengzhou", "checkInDate": "2026-07-11", "checkOutDate": "2026-07-12"}}
+[  0.95s][user ] 감사합니다. 덕분에 여행 계획이 훨씬 수월해졌어요.
+[  0.98s][moshi] 도움이 되었다니 기쁩니다.

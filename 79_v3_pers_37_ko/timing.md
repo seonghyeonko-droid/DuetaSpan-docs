@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "하린",
+#     "name": "정재",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,79 +12,79 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-03-15",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-10-05",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-07-25",
+#       "date": "2026-02-01",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
-#     },
-#     {
-#       "date": "2025-06-05",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-13",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-28",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-04",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-14",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 심리 상담 같은 것도 해 주시는 건가요? | S2 요즘 회사 일이 너무 힘들어서… 자꾸만 무기력해져요. 뭘 해야 | S3 …혹시 그런 기분을 떨쳐내는 데 도움이 되는 방법 같은 건 없 | S4 작은 성취감… 음, 그게 쉽지는 않네요. 뭘 해야 할지 감이 
+# EXAMINER(FDB-v2) 단계: S1 어… 투크스요? 이름이 좀 특이하네요. 대체 뭘 도와주는 건데 | S2 요즘 회사 일이 너무 많아서 계속 불안하고, 잠도 제대로 못  | S3 … 혹시 제가 마음을 좀 가라앉히는 데 도움이 될 만한 간단한 | S4 음, 네. 한번 해볼게요. 감사합니다, 투크스 씨.
 
-     0.00s  agent 발화 시작: 하린 씨, 안녕하세요. 저는 에리아이아입니다. 힘든 일이 있으시면 언제든 편하게 말씀해주세요. 당신의 마음을
-     9.70s  agent 발화 끝
-    10.61s  user  발화 시작: 혹시 심리 상담 같은 것도 해 주시는 건가요?
-    13.24s  user  발화 끝
-    13.46s  agent 발화 시작: 네, 맞아요. 하린 씨의 생각과 감정을 편안하게 이야기할 수 있도록 돕는 역할을 합니다. 어떤 고민이 있으신
-    20.74s  agent 발화 끝
-    20.83s  user  발화 시작: 요즘 회사 일이 너무 힘들어서… 자꾸만 무기력해져요. 뭘 해야 할지 모르겠어요.
-    26.68s  agent 발화 시작: 무기력함은 누구에게나 찾아올 수 있는 자연스러운 감정이에요—
-    26.85s  user  발화 끝
-    29.67s  user  발화 시작: …혹시 그런 기분을 떨쳐내는 데 도움이 되는 방법 같은 건 없을까요?
-    30.28s  agent 발화 끝
-    33.69s  agent 발화 시작: 하린 씨, 그런 기분을 떨쳐내는 방법은 여러 가지가 있을 수 있어요. 우선, 자신에게 작은 성취감을 줄 수 
-    33.83s  user  발화 끝
-    42.50s  agent 발화 끝
-    43.03s  user  발화 시작: 작은 성취감… 음, 그게 쉽지는 않네요. 뭘 해야 할지 감이 안 와요.
-    49.72s  agent 발화 시작: 괜찮아요. 처음부터 큰 목표를 세우기보다는, 아주 작은 일부터 시작해보는 것도 좋은 방법이에요. 예를 들어,
-    49.80s  user  발화 끝
-    61.27s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 정재님. 저는 투크스예요. 스트레스 해소와 마음 챙김을 돕는 상담사 역할을 하는 에이전트입니다.
+     0.11s  user  발화 시작: 응응.
+     0.11s  agent 발화 끝
+     0.12s  user  발화 시작: 어… 투크스요? 이름이 좀 특이하네요. 대체 뭘 도와주는 건데요?
+     0.12s  user  발화 끝
+     0.20s  agent 발화 시작: 힘든 일이 있으실 때, 감정을 다스리고 편안함을 찾도록 돕는 역할을 해요. 혹시 지금 어떤 점이 가장 힘드신
+     0.20s  user  발화 끝
+     0.35s  user  발화 시작: 요즘 회사 일이 너무 많아서 계속 불안하고, 잠도 제대로 못 자요.
+     0.35s  agent 발화 끝
+     0.45s  agent 발화 시작: 일이 많아서 불안하시군요. 잠까지 설치신다니, 얼마나 힘드실지 짐작이 갑니다. —
+     0.45s  user  발화 끝
+     0.54s  user  발화 시작: … 혹시 제가 마음을 좀 가라앉히는 데 도움이 될 만한 간단한 방법이라도 있나요?
+     0.54s  agent 발화 끝
+     0.65s  agent 발화 시작: 숨을 깊게 쉬는 연습은 불안감을 줄이는 데 효과적이에요. 사초 동안 숨을 들이마시고, 육초 동안 내쉬는 걸 
+     0.65s  user  발화 끝
+     0.81s  user  발화 시작: 음, 네. 한번 해볼게요. 감사합니다, 투크스 씨.
+     0.81s  agent 발화 끝
+     0.87s  agent 발화 시작: 천천히, 편안하게 해보세요. 혹시 숨을 쉬는 동안 떠오르는 생각들이 있다면, 억지로 막지 말고 그냥 흘려보내
+     0.87s  user  발화 끝
+     1.00s  agent 발화 끝

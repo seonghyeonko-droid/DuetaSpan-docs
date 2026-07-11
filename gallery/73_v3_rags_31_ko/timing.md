@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "정서",
+#     "name": "수정",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2026-04-03",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
+#       "date": "2026-02-14",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-11",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,20 +56,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "title": "Setting up a home network",
+#       "date": "2025-07-25",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 미니언즈 삼에서 미니언즈 목소리를 누가 연기했는지 궁금해요.
-     3.40s  <ret> 발화 (turn1 첫 프레임)
-     3.56s  user  발화 끝
-     3.63s  agent 발화 시작: <ret> 미니언즈 목소리는 프랑스 애니메이터이자 성우인 피에르 코팽이 연기했어요. [happy] 정말 귀여
-     3.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: Pierre Coffin is a French animator and voice actor who notably voices 
-    10.67s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 대법원의 최초 여성 판사는 누구였나요?
+     0.14s  <ret> 발화 (turn1 첫 프레임)
+     0.38s  agent 발화 시작: <ret> 인도 고등법 최초의 여성 판사는 안나 찬디 판사였으며, 천구백삼십칠년에 임명되었습니다.
+     0.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.62s]: Justice Anna Chandy was the first woman judge in India’s High Court, a
+     0.38s  user  발화 끝
+     1.00s  agent 발화 끝

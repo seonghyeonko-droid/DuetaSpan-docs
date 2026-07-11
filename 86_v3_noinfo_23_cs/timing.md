@@ -4,124 +4,149 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Louis",
+#     "name": "Owen",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-07",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-06-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-09-27",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "category": "home",
-#       "text": "User's home address is 585 Elm Street."
-#     },
-#     {
-#       "date": "2025-07-10",
+#       "date": "2026-02-23",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-09",
+#       "category": "home",
+#       "text": "User's home address is 504 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-09-12",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-06-16",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-15",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 이선희 님 연락처가 혹시 있을까요? 직접 감사 인 | S2 조선 시대, 특히 세종대왕에 대한 내용이에요. | S3 정말 흥미롭네요! 접근성을 위해 만들어졌다는 걸 몰랐어요. | S4 완벽해요, 감사합니다. 다음 주에 치과 예약도 해야 해요.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 서울로 이사 왔어요. 예전에 살던 이웃인 이민지  | S2 유기농 채소를 파는 식료품점을 찾아야 해요. | S3 그런데, 그곳에 자전거 대여가 있는지 확인해 주시겠어요? | S4 좋아요, 정말 감사합니다.
 
-     0.00s  user  발화 시작: 안녕하세요. 이선희 님 연락처가 혹시 있을까요? 직접 감사 인사를 드리고 싶어서요.
+     0.00s  user  발화 시작: 안녕하세요. 서울로 이사 왔어요. 예전에 살던 이웃인 이민지 씨 연락처를 아시나요?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.05s  agent 발화 시작: <ret> 아, 죄송합니다. 이선희 님의 공개된 연락처 정보를 찾을 수 없었습니다. 이용이 제한되어 있는 것
-     0.05s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (no information found)
-     0.05s  user  발화 끝
-     0.11s  user  발화 시작: 아, 아쉽네요. 그럼 작년 칠월 십오일 부산 날씨는 어땠나요?
-     0.11s  agent 발화 끝
-     0.12s  <ret> 발화 (turn7 첫 프레임)
-     0.15s  agent 발화 시작: <ret> 네, 작년 칠월 십오일 부산의 날씨는 섭씨 이십칠 점 이 기온에 습도는 칠십팔 퍼센트, 그리고 시
-     0.15s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) 27.2°C, humidity 78%, wind 3.1 km/h, condition: partly c
-     0.15s  user  발화 끝
-     0.26s  user  발화 시작: 기분이 좋네요. 음… 역사 숙제가 너무 어려워요.
-     0.26s  agent 발화 끝
-     0.29s  agent 발화 시작: 아이고, 역사는 좀 까다로울 수 있죠. 어떤 부분이 특히 어려우신가요?
-     0.29s  user  발화 끝
-     0.33s  user  발화 시작: 조선 시대, 특히 세종대왕에 대한 내용이에요.
-     0.33s  agent 발화 끝
-     0.36s  agent 발화 시작: <ret> 세종대왕께서는 천사백십팔년부터 천사백오십년까지 통치하셨고, 특히 천사백사십삼년에 한글을 창제하신 
-     0.36s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: King Sejong the Great reigned from 1418 to 1450, overseeing the creati
-     0.36s  user  발화 끝
-     0.43s  user  발화 시작: 네.
-     0.43s  agent 발화 끝
-     0.43s  agent 발화 시작: 정말 대단한 지도자셨죠? 업적의 긍정적인 면에 집중하면 공부가 조금 덜 힘들 수도 있을 거예요.
-     0.43s  user  발화 끝
-     0.46s  <ret> 발화 (turn12 첫 프레임)
-     0.47s  <ret> 발화 (turn18 첫 프레임)
-     0.50s  user  발화 시작: 네.
-     0.50s  agent 발화 끝
-     0.50s  user  발화 시작: 맞아요. 한글에 집중해야겠어요. 한글의 기원에 대한 정보를 찾아 주시겠어요?
-     0.50s  user  발화 끝
-     0.54s  agent 발화 시작: <ret> 네, 한글은 세종대왕께서 천사백사십삼년에 모든 사람이 쉽게 글을 읽고 쓸 수 있도록 복잡한 한자를
-     0.54s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) Hangul was proclaimed in 1443 by King Sejong, aiming to 
-     0.54s  user  발화 끝
-     0.60s  <ret> 발화 (turn23 첫 프레임)
-     0.64s  user  발화 시작: 네.
-     0.64s  agent 발화 끝
-     0.64s  user  발화 시작: 정말 흥미롭네요! 접근성을 위해 만들어졌다는 걸 몰랐어요.
-     0.64s  user  발화 끝
-     0.67s  agent 발화 시작: 정말 사려 깊은 디자인이죠, 안 그래요? 세종대왕께서는 모든 사람이 읽고 쓸 수 있기를 진심으로 바라셨습니다
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.04s  agent 발화 시작: <ret> 아, 서울에 오신 걸 환영해요! 저는 니엔이고, 도와드릴 수 있어서 기뻐요. 확인해 봤는데, 아쉽
+     0.04s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (no information found)
+     0.04s  user  발화 끝
+     0.07s  <ret> 발화 (turn14 첫 프레임)
+     0.08s  <ret> 발화 (turn8 첫 프레임)
+     0.10s  user  발화 시작: 아쉽네요. 혹시 이민지 씨도 여기 살고 있을까 생각했는데.
+     0.10s  agent 발화 끝
+     0.13s  agent 발화 시작: 이사 후에는 사람 찾기가 쉽지 않을 수 있어요. 하지만 서울은 정말 멋진 도시니까, 곧 새로운 친구들을 사귀
+     0.13s  user  발화 끝
+     0.19s  user  발화 시작: 근처에 괜찮은 한국어 학원을 찾아보고 싶어요.
+     0.19s  agent 발화 끝
+     0.21s  agent 발화 시작: <ret> 괜찮은 곳이 여러 군데 있어요. 강남랭귀지스쿨은 테헤란로 백이십삼번지에 위치하고 있고, 전화번호는
+     0.21s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: Gangnam Language School: Intensive Korean courses for all levels. Addr
+     0.21s  user  발화 끝
+     0.27s  <ret> 발화 (turn21 첫 프레임)
+     0.28s  <ret> 발화 (turn18 첫 프레임)
+     0.30s  user  발화 시작: 정말요?
+     0.30s  agent 발화 끝
+     0.31s  user  발화 시작: 오늘 날씨는 어떤가요?
+     0.31s  user  발화 끝
+     0.32s  agent 발화 시작: <ret> 지금 서울은 맑은 하늘에 기온이 이십오 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이
+     0.32s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Current weather in Seoul: 25.5°C, humidity 68%, wind 3.2
+     0.32s  user  발화 끝
+     0.32s  <ret> 발화 (turn11 첫 프레임)
+     0.38s  user  발화 시작: 그렇군요.
+     0.38s  agent 발화 끝
+     0.38s  user  발화 시작: 유기농 채소를 파는 식료품점을 찾아야 해요.
+     0.38s  user  발화 끝
+     0.40s  agent 발화 시작: <ret> 압구정로 사백오십육번지에 있는 오가닉팜마켓에 유기농 농산물이 다양하게 준비되어 있어요. 매일 오전
+     0.40s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Organic Farm Market: Offers a wide selection of organic produce and lo
+     0.40s  user  발화 끝
+     0.43s  <ret> 발화 (turn23 첫 프레임)
+     0.45s  user  발화 시작: 네.
+     0.45s  agent 발화 끝
+     0.45s  user  발화 시작: 피크닉을 하기에 좋은 공원이 있나요?
+     0.45s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> 올림픽공원이 아주 좋은 선택이에요. 팔십팔올림픽로에 위치하고 있고, 사백삼십사헥타르 규모에 아름다
+     0.47s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Olympic Park: A large public park with gardens, walking trails, and pi
+     0.47s  user  발화 끝
+     0.54s  user  발화 시작: 정말 멋지네요. 이번 주말에 가볼까 생각 중이에요.
+     0.54s  agent 발화 끝
+     0.56s  agent 발화 시작: 정말 편안하게 휴식을 취하기에 좋은 곳이에요—
+     0.56s  user  발화 끝
+     0.58s  user  발화 시작: 그런데, 그곳에 자전거 대여가 있는지 확인해 주시겠어요?
+     0.58s  agent 발화 끝
+     0.60s  agent 발화 시작: <ret> 네, 올림픽공원에는 로즈플라자 근처에 자전거 대여소가 있어요. 오전 아홉시부터 오후 다섯시까지 이
+     0.60s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Olympic Park offers bike rentals near the Rose Plaza. Bi
+     0.60s  user  발화 끝
+     0.66s  user  발화 시작: 와.
+     0.66s  agent 발화 끝
+     0.66s  user  발화 시작: 좋은 식당도 근처에 있을까요?
+     0.66s  user  발화 끝
+     0.67s  agent 발화 시작: <ret> 삼성로 칠백팔십구번지에 있는 비빔밥하우스는 훌륭한 전통 한국 음식을 제공하고 평점도 사 점 오점이
+     0.67s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Bibimbap House: Traditional Korean cuisine, specializing in bibimbap. 
      0.67s  user  발화 끝
-     0.74s  user  발화 시작: 네.
-     0.74s  agent 발화 끝
-     0.74s  user  발화 시작: 이제 휴식을 취해야 할 것 같아요. 편안한 음악 좀 틀어 주시겠어요?
-     0.74s  user  발화 끝
-     0.79s  agent 발화 시작: <ret> 네, Marconi Union의 “Weightless”를 재생합니다. 긴장을 푸는 데 도움이 되셨
-     0.79s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Now playing: “Weightless” by Marconi Union.
-     0.79s  user  발화 끝
-     0.84s  user  발화 시작: 네.
-     0.84s  agent 발화 끝
-     0.84s  user  발화 시작: 완벽해요, 감사합니다. 다음 주에 치과 예약도 해야 해요.
-     0.84s  user  발화 끝
-     0.88s  agent 발화 시작: 네, 문제없습니다. 다음 주에 어느 날이 가장 좋으세요?
-     0.88s  user  발화 끝
-     0.91s  user  발화 시작: 화요일은 어때요?
-     0.91s  agent 발화 끝
-     0.92s  agent 발화 시작: <ret> 잘 됐습니다! 김 선생님과의 서울 스마일 치과 예약이 칠월 십사일 화요일 오전 열 시로 확정되었습
-     0.92s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Appointment confirmed with Dr. Kim at Seoul Smile Dentis
-     0.92s  user  발화 끝
+     0.71s  <ret> 발화 (turn30 첫 프레임)
+     0.71s  <ret> 발화 (turn27 첫 프레임)
+     0.73s  user  발화 시작: 거기 토요일 저녁 일곱시에 예약해 주시겠어요?
+     0.73s  agent 발화 끝
+     0.75s  agent 발화 시작: <ret> 비빔밥하우스에 이천이십육년 칠월 십이일 토요일 저녁 일곱시에 예약이 확정되었습니다. 확인 ID는 
+     0.75s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Reservation confirmed at Bibimbap House for Saturday, Ju
+     0.75s  user  발화 끝
+     0.80s  user  발화 시작: 좋아요, 정말 감사합니다.
+     0.80s  agent 발화 끝
+     0.81s  agent 발화 시작: 천만에요! 새로운 도시에 정착하는 데는 시간이 걸리지만, 이미 좋은 진행을 하고 계세요.
+     0.81s  user  발화 끝
+     0.85s  user  발화 시작: 친구에게 돈을 보내야 해요.
+     0.85s  agent 발화 끝
+     0.87s  agent 발화 시작: <ret> 죄송하지만, 저는 직접 돈을 이체해 드릴 수는 없어요. 하지만 한국에서 이용 가능한 최고의 송금 
+     0.87s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (no information found)
+     0.87s  user  발화 끝
+     0.93s  user  발화 시작: 예.
+     0.93s  agent 발화 끝
+     0.93s  user  발화 시작: 아, 알겠어요. 그럼 그걸 찾아주시겠어요?
+     0.93s  user  발화 끝
+     0.95s  agent 발화 시작: <ret> 레미틀리와 와이즈는 한국에서 돈을 보낼 때 인기 있는 선택지로, 경쟁력 있는 환율과 낮은 수수료를
+     0.95s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Remitly and Wise are popular choices for sending money f
+     0.95s  user  발화 끝
      1.00s  agent 발화 끝

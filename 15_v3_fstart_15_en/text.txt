@@ -1,83 +1,91 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Fae, a calm and patient wellness coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Klioen, a warm and attentive supportive advisor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Elias",
+    "name": "Aiden",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "40s",
-    "language": "German"
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-02-01",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-06-20",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2026-05-03",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-11-19",
+      "date": "2025-10-13",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-09-22",
+      "date": "2025-08-16",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-06-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-06-02",
       "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-07-21",
+      "date": "2025-05-27",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "text": "User is planning a trip to Kyoto in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-28",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-02-19",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-26",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been having trouble falling asleep lately.
-[  3.18s][moshi] It’s completely normal to experience sleep difficulties from time to time. Perhaps we can explore some gentle techniques to help you rest easier.
-[ 12.20s][user ] That sounds nice. What can I do tonight?
-[ 15.49s][moshi] ⟨ret@15.26s⟩ ⟦⚡SPAN@15.50s: Practicing relaxation techniques, such as deep breathing or progressive muscle relaxation, can help calm the m⟧ There are several things you could try tonight—practicing relaxation techniques, such as deep breathing or progressive muscle relaxation, can help calm the mind and prepare the body for sleep.
-[ 21.20s][user ] «backchannel» Mm-hmm.
-[ 26.81s][moshi] It’s also helpful to create a consistent bedtime routine to signal your body it’s time to wind down.
-[ 32.51s][user ] I think I stay up too late on my phone.
-[ 36.17s][moshi] «interrupted» Many people find that screen time before bed can disrupt sleep—
-[ 39.39s][user ] «interrupts_prev» …could you recommend an app for guided ⟨ret@42.44s⟩ meditation?
-[ 42.68s][moshi] ⟦⚡SPAN@42.68s: (tool result) Headspace and Calm are consistently ranked as top choices for guided meditation, offering a vari⟧ Let me search for some well-regarded guided meditation apps.
-      CALL: {"function": "search", "arguments": {"query": "best guided meditation apps for sleep"}}
-[ 46.40s][moshi] Headspace and Calm are consistently ranked as top choices, offering a variety of programs to improve sleep quality, with Headspace having 4.9 stars from 1.1 million reviews and Calm with 4.8 stars from 856,000 reviews on the Apple App Store. Both offer free trials, so you can explore what feels best for you.
+[  0.00s][user ] What’s the latest on artificial intelligence? I was reading something about.
+[  0.10s][moshi] It’s a fascinating field, isn’t it? So much is happening all the time.
+[  0.22s][user ] «backchannel» Yeah.
+[  0.23s][user ] Yeah, ⟨ret@0.07s⟩ well, um, what’s the newest breakthrough, specifically?
+[  0.31s][moshi] ⟦⚡SPAN@0.31s: (tool result) Researchers at Google DeepMind have developed Gemma, a new open-weights AI assistant, released o⟧ The newest breakthrough comes from Google DeepMind with Gemma, an open-weights AI assistant, released on February twenty-second, twenty-four.
+      CALL: {"function": "tavily-extract", "arguments": {"query": "newest breakthrough in artificial intelligence"}}
+[  0.47s][user ] «backchannel» Uh-huh.
+[  0.48s][moshi] It’s quite exciting, isn’t it? Open-weights models mean more accessibility for developers.
+[  0.59s][user ] Is ⟨ret@0.29s⟩ it any good for, like, helping with kids' homework?
+[  0.69s][moshi] ⟦⚡SPAN@0.69s: (no information found)⟧ I’m checking on that for you, but unfortunately, I haven’t found specific information about Gemma’s performance with kids’ homework at this time.
+      CALL: {"function": "tavily-search", "arguments": {"query": "Gemma AI assistant for kids homework"}}
+[  0.89s][moshi] However, it’s a powerful language model, so it could potentially be helpful.

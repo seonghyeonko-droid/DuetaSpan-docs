@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "보찬",
+#     "name": "유훈",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,65 +13,55 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-15",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-01-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-11-22",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2025-10-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-21",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-07-12",
+#       "date": "2026-04-10",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-13",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-02",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-30",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-01",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 투르 드 프랑스에서 가장 많은 스테이지 우승을 한 선수는 누구야?
-     4.48s  <ret> 발화 (turn1 첫 프레임)
-     4.64s  agent 발화 시작: <ret> 투르 드 프랑스에서 가장 많은 스테이지 우승을 한 선수는 에디 메르크스 선수인데, 총 삼십사번이나
-     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Eddy Merckx won 34 stages of the Tour de France, more than any other c
-     4.73s  user  발화 끝
-    12.19s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 리얼 월드 시즌이 언제 시작하는지 알 수 있을까요?
+     0.27s  <ret> 발화 (turn1 첫 프레임)
+     0.43s  agent 발화 시작: <ret> 새로운 시즌은 이천십이년 칠월 십이일에 시작되었답니다. 스트레스 해소에 도움이 되는 명상법도 찾아
+     0.43s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.57s]: The new season of The Real World began airing on July 12, 2012.
+     0.43s  user  발화 끝
+     1.00s  agent 발화 끝

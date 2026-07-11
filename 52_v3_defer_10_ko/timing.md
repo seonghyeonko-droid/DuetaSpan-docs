@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "가안",
+#     "name": "진우",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,82 +13,64 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-01",
+#       "date": "2026-05-31",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-04-26",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-01-13",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-10-14",
+#       "date": "2025-06-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
-#     },
-#     {
-#       "date": "2025-10-09",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-06",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-27",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 비비씨 뉴스 웹사이트를 크롤링해서, 깊이는 한 단계만, 페이지 | S2 알겠어. | S3 …그 크롤링 결과는 언제쯤 알 수 있을까? 지금 당장 보고 싶 | S4 아니, 괜찮아. 그냥 오늘 하루 어땠는지 물어보는 건 좀… 뜬
 
-     0.00s  user  발화 시작: 비비씨 뉴스 웹사이트를 크롤링해서, 깊이는 한 단계만, 페이지당 최대 다섯 개 링크, 총 스무 페이지까지 조
-     0.08s  <ret> 발화 (turn1 첫 프레임)
-     0.10s  <ret> 발화 (turn6 첫 프레임)
-     0.16s  agent 발화 시작: <ret> 크롤링을 시작했어요. 작업 아이디는 팔 구 삼 칠 사 이 일번이고, 지금은 진행 중이에요. 잠시만
-     0.16s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) Crawl initiated. Task ID: 8937421. Status: pending.
-     0.16s  user  발화 끝
-     0.31s  user  발화 시작: 정말요?
-     0.31s  agent 발화 끝
-     0.32s  user  발화 시작: 알겠어.
-     0.32s  user  발화 끝
-     0.33s  agent 발화 시작: 오늘 하루는 어떠셨어요? 혹시 힘든 일은 없으셨는지—
-     0.33s  user  발화 끝
-     0.39s  user  발화 시작: …그 크롤링 결과는 언제쯤 알 수 있을까? 지금 당장 보고 싶어.
-     0.39s  agent 발화 끝
-     0.50s  agent 발화 시작: <ret> 크롤링이 완료되었어요. 작업 아이디 팔 구 삼 칠 사 이 일번이고, 총 백이십삼개의 기사를 찾았답
-     0.50s  ⚡SPAN 주입 [d'=0.30s / d_lead=0.30s]: Crawl completed. Task ID: 8937421. Results: 123 articles found. Summar
-     0.50s  user  발화 끝
-     0.80s  user  발화 시작: 아니, 괜찮아. 그냥 오늘 하루 어땠는지 물어보는 건 좀… 뜬금없었나?
-     0.80s  agent 발화 끝
-     0.89s  agent 발화 시작: 아니에요, 괜찮아요. 저는 레스라고 해요. 가끔은 일상적인 이야기를 나누는 것도 좋다고 생각하거든요.
-     0.89s  user  발화 끝
-     1.00s  agent 발화 끝
+     0.00s  user  발화 시작: 뉴올리언스 루이지애나에 있는 집을 네 명분으로 찾아줘.
+     0.00s  ⚡지연 SPAN 주입(선제발표 직전): The least expensive house is a 2-bedroom bungalow at 123 Bourbon Stree
+     0.04s  <ret> 발화 (turn1 첫 프레임)
+     0.12s  agent 발화 시작: <ret> 뉴올리언스 루이지애나에서 네 분이 머물 수 있는 집 삼채를 찾았어요. 숙박료는 밤에 백오십달러에서
+     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: (tool result) Found 3 houses matching your criteria in New Orleans, Lo
+     0.12s  user  발화 끝
+     0.37s  user  발화 시작: 음, 그 중에서 제일 싼 데 좀 더 자세히 알려줄래?
+     0.37s  agent 발화 끝
+     0.53s  agent 발화 시작: 지금 확인해 보고요.
+     0.53s  user  발화 끝
+     0.58s  agent 발화 시작: <ret> 잠깐만 기다려 주세요. 제일 저렴한 곳은 버번 스트리트 백이십삼번지에 있는 침실 두개짜리 방갈로인
+     0.58s  agent 발화 끝
+     0.98s  user  발화 시작: 네.
+     0.98s  agent 발화 끝
+     1.00s  user  발화 끝

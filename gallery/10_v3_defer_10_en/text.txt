@@ -1,10 +1,10 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Les, a kind and steady life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Vas, a upbeat and supportive life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Remy",
+    "name": "Charlie",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -13,39 +13,42 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "American",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-29",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
+      "date": "2026-05-31",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2026-01-13",
+      "date": "2026-04-26",
       "category": "allergy",
       "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-11-18",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-18",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-09-01",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-07-17",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2025-06-21",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-24",
+      "date": "2026-01-10",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-16",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -56,14 +59,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to start a crawl of the BBC News website, only going one level deep, and ⟨ret@0.12s⟩ examine a maximum of five links per page, limited to twenty pages.
-[  0.20s][moshi] «interrupted» ⟦⚡SPAN@0.20s: (tool result) Crawl initiated: URL=https://www.bbc.com/news, Depth=1, MaxLinks=5, MaxPages=20, ID=craw-789213⟧ Alright, I’ve started that crawl for you—
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.bbc.com/news", "max_depth": 1, "max_links_per_page": 5, "max_pages": 20}}
-[  0.25s][user ] «interrupts_prev» …Can ⟨ret@0.19s⟩ you tell me about the current top story on BBC News while that's running?
-[  0.35s][moshi] ⟦⚡SPAN@0.35s: The BBC News website currently leads with the story of a heatwave impacting Southern Europe, with temperatures⟧ The BBC is currently leading with a heatwave impacting Southern Europe, with temperatures exceeding 40 degrees Celsius in Italy, Greece, and Spain.
-[  0.50s][moshi] It’s quite a significant situation there.
-[  0.54s][user ] «backchannel» Yeah.
-[  0.55s][user ] That sounds rough. How long will that crawl take, roughly?
-[  0.62s][moshi] It’s hard to say precisely, but crawls of that size usually complete within fifteen to twenty minutes. I’ll let you know as soon as it’s finished.
-[  0.79s][user ] Good, thank you. I'm trying to stay informed on world events.
-[  0.87s][moshi] That's a very healthy habit, staying informed. It helps us feel more connected and understand what’s happening around us.
+[  0.00s][user ] I’m hoping to find ⟨ret@0.04s⟩ a house in New Orleans, Louisiana for four people.
+[  0.12s][moshi] ⟦⚡SPAN@0.12s: (tool result) {"houses": [{"id": "NOLA-007", "name": "Bayou Breeze Cottage", "price": 245.00, "amenities": wif⟧ I found a lovely cottage, the Bayou Breeze Cottage, at 701 Dauphine Street, for $245 a night. It sleeps four and has wifi, a kitchen, and parking.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "New Orleans, Louisiana", "number_of_guests": 4}}
+[  0.36s][user ] That ⟨ret@0.29s⟩ sounds… nice. What’s the weather like there right now?
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: (tool result) {"temperature": 31.1, "humidity": 82, "wind speed": 8.9, "condition": "Partly Cloudy"}⟧ Right now in New Orleans, it’s 31.1 degrees Celsius, with 82 percent humidity and a light breeze at 8.9 kilometers per hour. It’s partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New Orleans, Louisiana"}}
+[  0.68s][user ] «backchannel» Yeah, yeah.
+[  0.70s][user ] Hmm, maybe a little warm.
+[  0.75s][moshi] It is a bit toasty! But think of all the delicious iced coffee you could enjoy.
+[  0.89s][user ] «backchannel» Yeah.
+[  0.90s][user ] Can ⟨ret@0.83s⟩ you find me some restaurants nearby that serve seafood?
+[  0.99s][moshi] ⟦⚡SPAN@0.99s: (tool result) {"restaurants": [{"name": "Felix's Restaurant & Oyster Bar", "address": "739 Iberville St, New O⟧ Absolutely!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "701 Dauphine St, New Orleans, LA 70116", "cuisine": "Seafood"}}

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "수온",
+#     "name": "준별",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-03-05",
+#       "date": "2026-06-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2026-01-24",
+#       "date": "2026-05-26",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2025-11-02",
+#       "date": "2026-02-24",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-08-08",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-30",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-19",
+#       "date": "2026-04-14",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -61,35 +58,46 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-12",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-15",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 넷플릭스 '위대한 개츠비'에… | S2 …나오는 바이올렛을 누가 연기했는지 알아요? | S3 아, 맞아요. '기묘한 가족'이었죠. | S4 그럼, 영화 추천 좀 해줄 수 있어요? 요즘 볼 만한 거요.
 
-     0.00s  user  발화 시작: 혹시 넷플릭스 '위대한 개츠비'에…
-     2.91s  user  발화 끝
-     4.22s  user  발화 시작: …나오는 바이올렛을 누가 연기했는지 알아요?
-     7.21s  <ret> 발화 (turn2 첫 프레임)
-     7.37s  agent 발화 시작: <ret> '위대한 개츠비'가 아니라 '기묘한 가족'이었네요. 바이올렛 보들레르는 말리나 와이스먼 씨가 연기
-     7.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: Malina Weissman played Violet Baudelaire in A Series of Unfortunate Ev
-     7.45s  user  발화 끝
-    13.57s  agent 발화 끝
-    14.72s  user  발화 시작: 아, 맞아요. '기묘한 가족'이었죠.
-    17.26s  <ret> 발화 (turn4 첫 프레임)
-    17.49s  user  발화 끝
-    17.66s  agent 발화 시작: <ret> 네, 맞아요. 가끔 제목이 헷갈릴 때가 있죠. 저는 게리라라고 해요. 혹시 사회생활에 대한 고민도
-    17.66s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.83s]: The current temperature in Reykjavik, Iceland is 7.0°C, with clear ski
-    25.49s  agent 발화 끝
-    25.95s  user  발화 시작: 그럼, 영화 추천 좀 해줄 수 있어요? 요즘 볼 만한 거요.
-    30.01s  <ret> 발화 (turn6 첫 프레임)
-    30.33s  agent 발화 시작: <ret> 지금 상영 중인 인기 영화는 '오펜하이머', '바비', '플라워 킬링 문'이에요. 취향에 맞는 영
-    30.33s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.64s]: (tool result) Results: Oppenheimer, Barbie, Killers of the Flower Moon
-    30.35s  user  발화 끝
-    37.97s  agent 발화 끝
+     0.00s  user  발화 시작: 영국에서 월드컵이 마지막으로 열린 건 언제였지?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.10s  agent 발화 시작: <ret> 영국에서 월드컵이 열린 마지막 해는 천구백육십육년이었답니다. 그때가 유일하게 영국에서 열린 월드컵
+     0.10s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: The 1966 FIFA World Cup was hosted in England, and it remains the only
+     0.10s  user  발화 끝
+     0.16s  <ret> 발화 (turn3 첫 프레임)
+     0.28s  user  발화 시작: 아, 그렇구나.
+     0.28s  agent 발화 끝
+     0.32s  agent 발화 시작: <ret> 혹시 다른 궁금한 점이 있으세요? 제가 또 도와드릴 수 있어요.
+     0.32s  ⚡SPAN 주입(IRRELEVANT) [d'=0.17s / d_lead=0.17s]: The average high temperature in Reykjavik, Iceland in July is 13.1°C, 
+     0.32s  user  발화 끝
+     0.48s  user  발화 시작: 응.
+     0.48s  agent 발화 끝
+     0.50s  agent 발화 시작: 공부에 지칠 때면 잠깐 쉬면서 좋아하는 음악을 듣는 것도 좋은 방법이에요.
+     0.50s  user  발화 끝
+     0.68s  user  발화 시작: 그래.
+     0.68s  agent 발화 끝
+     0.70s  user  발화 시작: 좋은 생각인데. 혹시 오늘 날씨 어때?
+     0.70s  user  발화 끝
+     0.72s  <ret> 발화 (turn8 첫 프레임)
+     0.80s  agent 발화 시작: <ret> 지금은 기온이 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Current conditions are 23.0°C, humidity 74%, wind 5.5 km
+     0.80s  user  발화 끝
+     1.00s  agent 발화 끝

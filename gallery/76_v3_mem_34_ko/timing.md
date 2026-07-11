@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "윤은",
+#     "name": "지안",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,69 +13,83 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-16",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "date": "2026-04-04",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2025-11-28",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-12-02",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-23",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-22",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-25",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 마온님. 요즘 좀 답답해서요. | S2 음… 바다가 좋을 것 같아요. — | S3 …근데, 차는 없어요. 대중교통으로 갈 수 있는 곳이면 좋겠어 | S4 오, 가까운 곳에 있네요. 한번 가볼까요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 윤은님. 저는 브리오입니다. 오늘 하루는 어떠셨어요?
-     0.10s  user  발화 시작: 안녕하세요, 브리오님. 잘 지냈어요. 혹시 지금 제 집에서 강남역까지 얼마나 걸릴까요?
-     0.10s  agent 발화 끝
-     0.19s  <ret> 발화 (turn2 첫 프레임)
-     0.27s  agent 발화 시작: <ret> 네, 윤은님. 저장된 주소 기준으로 강남역까지 가는 데는 대략 이십분 정도 소요될 것 같아요.
-     0.27s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: User's home address is 서울 강남구 역삼동 678-9.
-     0.27s  user  발화 끝
-     0.33s  <ret> 발화 (turn5 첫 프레임)
-     0.48s  user  발화 시작: 네.
-     0.48s  agent 발화 끝
-     0.49s  user  발화 시작: … 지금 교통 상황은 어떤가요?
-     0.49s  user  발화 끝
-     0.57s  agent 발화 시작: <ret> 강남역까지 거리는 육 점 이킬로미터이고, 현재 교통 상황 때문에 이십삼분 정도 걸릴 것으로 예상됩
-     0.57s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: (tool result) {"distance": "6.2 km", "duration": "23 minutes", "status
-     0.57s  user  발화 끝
-     0.78s  user  발화 시작: 진짜요?
-     0.78s  agent 발화 끝
-     0.79s  agent 발화 시작: 혹시 지금 출발하시면, 딱 저녁 시간대에 도착하실 것 같네요. 오늘 하루 마무리 잘 하세요.
-     0.79s  user  발화 끝
-     1.00s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 지안님. 저는 마온이라고 해요. 오늘 하루는 어떠셨어요?
+     0.09s  user  발화 시작: 안녕하세요, 마온님. 요즘 좀 답답해서요.
+     0.09s  agent 발화 끝
+     0.15s  agent 발화 시작: 답답함을 느끼시는군요. 뭔가 막히는 부분이 있으신 건가요?
+     0.15s  user  발화 끝
+     0.18s  <ret> 발화 (turn5 첫 프레임)
+     0.22s  user  발화 시작: 네네.
+     0.22s  agent 발화 끝
+     0.24s  user  발화 시작: 네, 그러게요. 어디론가 떠나고 싶은데, 어디로 가야 할지 모르겠어요.
+     0.24s  user  발화 끝
+     0.34s  agent 발화 시작: <ret> 집이 부산 해운대구에 있으시군요. 혹시 어디든 괜찮다면, 가까운 곳부터 시작해 볼까요?
+     0.34s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: [2026-07-13] User's home address is 부산 해운대구 해운대로 570.
+     0.34s  user  발화 끝
+     0.46s  user  발화 시작: 맞아요.
+     0.46s  agent 발화 끝
+     0.47s  agent 발화 시작: 그럼, 지금 계신 곳에서 출발해서 갈 만한 곳을 찾아볼까요? 어디를 선호하시나요? 바다, 산, 아니면 도시?
+     0.47s  user  발화 끝
+     0.57s  <ret> 발화 (turn10 첫 프레임)
+     0.64s  user  발화 시작: 음… 바다가 좋을 것 같아요. —
+     0.64s  agent 발화 끝
+     0.71s  user  발화 시작: …근데, 차는 없어요. 대중교통으로 갈 수 있는 곳이면 좋겠어요.
+     0.71s  user  발화 끝
+     0.81s  agent 발화 시작: <ret> 해운대에서 송정해수욕장까지 버스로 이십오분 정도 걸리고, 거리는 오 점 이킬로미터네요. 괜찮으시겠
+     0.81s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) {"distance": "5.2 km", "duration": "25 minutes", "direct
+     0.81s  user  발화 끝
+     0.93s  user  발화 시작: 오, 가까운 곳에 있네요. 한번 가볼까요?
+     0.93s  agent 발화 끝
+     1.00s  user  발화 끝

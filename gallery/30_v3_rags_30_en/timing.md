@@ -4,74 +4,68 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Freya",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-06-26",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2026-05-02",
+#       "date": "2026-05-07",
 #       "category": "home",
-#       "text": "User's home address is 997 Pine Court."
+#       "text": "User's home address is 223 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-09-24",
+#       "date": "2026-02-14",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-02",
+#       "date": "2026-01-22",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-09-15",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-08-21",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-16",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where does most nutrient absorption happen in the small inte
-     0.12s  <ret> 발화 (turn1 첫 프레임)
-     0.36s  agent 발화 시작: <ret> Most chemical digestion and nutrient absorption happen
-     0.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.64s]: The jejunum is the region of the small intestine where the majority of
-     0.36s  user  발화 끝
+     0.00s  user  발화 시작: Who voiced mother in…
+     0.04s  <ret> 발화 (turn2 첫 프레임)
+     0.14s  user  발화 시작: …the film Alien Covenant?
+     0.14s  user  발화 끝
+     0.28s  agent 발화 시작: <ret> The voice you’re hearing as Mother in Alien Covenant i
+     0.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.72s]: Lorelei King provided the voice of the Neomorph, also known as Mother,
+     0.28s  user  발화 끝
      1.00s  agent 발화 끝

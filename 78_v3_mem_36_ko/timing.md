@@ -4,121 +4,112 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "예희",
+#     "name": "윤아",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-10",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-12-18",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-10-25",
+#       "date": "2025-12-27",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     },
 #     {
-#       "date": "2025-10-10",
+#       "date": "2025-12-24",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-11-30",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2025-11-04",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-12",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-06-17",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-11",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-13",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-23",
+#       "date": "2026-04-27",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-30",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. | S2 음… 요즘 외식할 때 좀 불편하더라고요. | S3 그린 테이블… 가보고 싶네요. | S4 그냥 집에서 고양이랑 놀아요.
+# EXAMINER(FDB-v2) 단계: S1 음… 요즘 좀 답답해요. 뭔가 새로운 자극이 필요한 것 같아요 | S2 응, 아직 생각하고 있어. 근데 베트남에 대해서 아는 게 별로 | S3 음… 저는 맛있는 음식을 먹는 걸 좋아하고, 예쁜 풍경을 보는 | S4 오, 좋아요. 한번 알아봐야겠네요. 고마워요, 파미.
 
-     0.00s  agent 발화 시작: 안녕하세요, 예희님! 저는 크리스예요. 여행 계획이나 휴식에 대해 도와드릴 수 있는 라이프 코치랍니다.
+     0.00s  agent 발화 시작: 안녕하세요, 윤아님. 저는 파미예요. 오늘 하루는 어떠셨어요?
      0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.07s  user  발화 시작: 맞아.
-     0.07s  agent 발화 끝
-     0.08s  user  발화 시작: 어… 안녕하세요.
-     0.08s  user  발화 끝
-     0.09s  agent 발화 시작: 혹시 전에 저희가 나눈 이야기 중에 기억나는 게 있으세요?
-     0.09s  user  발화 끝
-     0.14s  user  발화 시작: 글루텐 프리 식단이요.
-     0.14s  agent 발화 끝
-     0.14s  <ret> 발화 (turn11 첫 프레임)
-     0.15s  agent 발화 시작: <ret> 아, 네 맞아요. 예희님께서는 글루텐 프리 식단을 챙기시는군요. 혹시 최근에 식단 때문에 고민이 
-     0.15s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2026-01-10] User is gluten-free.
-     0.15s  user  발화 끝
-     0.21s  <ret> 발화 (turn9 첫 프레임)
-     0.23s  user  발화 시작: 음… 요즘 외식할 때 좀 불편하더라고요.
-     0.23s  agent 발화 끝
-     0.26s  agent 발화 시작: 외식이 불편하시군요. 혹시 최근에 특별히 가고 싶었던 식당이 있으세요?
-     0.26s  user  발화 끝
-     0.31s  user  발화 시작: 없는데… 전에 생일 파티 할 때 야외 좌석 있는 곳 찾았었죠.
+     0.04s  user  발화 시작: 응.
+     0.04s  agent 발화 끝
+     0.05s  user  발화 시작: 음… 요즘 좀 답답해요. 뭔가 새로운 자극이 필요한 것 같아요.
+     0.05s  user  발화 끝
+     0.11s  agent 발화 시작: 새로운 자극이라… 마음이 조금 지쳐있으신 것 같네요. 혹시 지금 떠오르는 건 없으세요?
+     0.11s  user  발화 끝
+     0.18s  user  발화 시작: 글쎄요… 여행을 가고 싶은데, 어디로 가야 할지 모르겠어요.
+     0.18s  agent 발화 끝
+     0.23s  agent 발화 시작: <ret> 전에 말씀하신 대로, 오월에 베트남 여행을 계획하고 계셨죠? 혹시 그때 계획은 아직 유효하신가요?
+     0.23s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: User is planning a trip to Vietnam in May.
+     0.23s  user  발화 끝
+     0.31s  user  발화 시작: 와.
      0.31s  agent 발화 끝
-     0.37s  agent 발화 시작: <ret> 아, 네, 기억나요. 생일 파티를 위해 여섯 분이 앉을 수 있는 야외 좌석이 있는 곳을 찾으셨었죠
-     0.37s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: [2025-08-23] Past chat — Planning a birthday dinner: party of six; loo
-     0.37s  user  발화 끝
-     0.46s  user  발화 시작: 응.
-     0.46s  agent 발화 끝
-     0.46s  agent 발화 시작: <ret> 네, 부산에서 글루텐 프리 메뉴를 제공하고 야외 좌석이 있는 식당 두 곳을 찾았어요. 그린 테이블
-     0.46s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"restaurants": [{"name": "Green Table", "address": "해운대
-     0.46s  user  발화 끝
-     0.60s  user  발화 시작: 오.
-     0.60s  agent 발화 끝
-     0.61s  user  발화 시작: 그린 테이블… 가보고 싶네요.
-     0.61s  user  발화 끝
-     0.63s  agent 발화 시작: 그린 테이블에 가보고 싶으시군요. 혹시 그쪽으로 가는 길을 안내해 드릴까요?
-     0.63s  user  발화 끝
-     0.68s  user  발화 시작: 아니요, 괜찮아요. 그냥… 요즘 좀 지쳐서 쉬고 싶어요.
-     0.68s  agent 발화 끝
-     0.73s  agent 발화 시작: 지치셨군요. 충분히 쉬시는 게 중요해요. 혹시 요즘 스트레스 해소를 위해 특별히 하는 게 있으세요?
-     0.73s  user  발화 끝
-     0.75s  <ret> 발화 (turn19 첫 프레임)
-     0.80s  user  발화 시작: 음.
-     0.80s  agent 발화 끝
-     0.81s  user  발화 시작: 그냥 집에서 고양이랑 놀아요.
-     0.81s  user  발화 끝
-     0.83s  agent 발화 시작: <ret> 아, 네. 벨라라는 이름의 시암 고양이와 함께 시간을 보내시는군요. 고양이는 정말 좋은 친구가 되
-     0.83s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2025-06-17] User has a Siamese cat named Bella.
-     0.83s  user  발화 끝
-     0.91s  user  발화 시작: 그렇죠…
-     0.91s  agent 발화 끝
-     0.92s  agent 발화 시작: 혹시 벨라와 함께 집에서 편안하게 보낼 수 있는 방법을 찾아볼까요? 예를 들어, 새로운 장난감을 사준다거나…
-     0.92s  user  발화 끝
+     0.31s  user  발화 시작: 응, 아직 생각하고 있어. 근데 베트남에 대해서 아는 게 별로 없어서…
+     0.31s  user  발화 끝
+     0.38s  agent 발화 시작: 베트남은 정말 매력적인 곳이죠. 어떤 스타일의 여행을 좋아하시나요? 조용히 휴식을 취하는 걸 선호하시는지, 
+     0.38s  user  발화 끝
+     0.41s  <ret> 발화 (turn11 첫 프레임)
+     0.43s  <ret> 발화 (turn14 첫 프레임)
+     0.49s  user  발화 시작: 응.
+     0.49s  agent 발화 끝
+     0.50s  user  발화 시작: 음… 저는 맛있는 음식을 먹는 걸 좋아하고, 예쁜 풍경을 보는 것도 좋아해요.
+     0.50s  user  발화 끝
+     0.57s  agent 발화 시작: <ret> 태국 음식 좋아하시는 걸로 알고 있는데, 베트남 음식도 정말 맛있답니다. 특히 현지 식재료로 만든
+     0.57s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: User's favorite cuisine is Thai.
+     0.57s  user  발화 끝
+     0.70s  user  발화 시작: 아.
+     0.70s  agent 발화 끝
+     0.70s  user  발화 시작: 아, 정말요? 그럼 혹시 베트남에서 추천하는 음식점이 있을까요?
+     0.70s  user  발화 끝
+     0.75s  agent 발화 시작: <ret> 하노이에 있는 포 십 리 꿟 수라는 식당은 평점이 사 점 오점이고, 가격은 십달러에서 이십달러 사
+     0.75s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Restaurant: Pho 10 Ly Quoc Su, Hanoi; Rating: 4.5 stars;
+     0.75s  user  발화 끝
+     0.87s  user  발화 시작: 오, 좋아요. 한번 알아봐야겠네요. 고마워요, 파미.
+     0.87s  agent 발화 끝
+     0.91s  agent 발화 시작: 천만에요, 윤아님. 언제든 편하게 말씀해 주세요. 작은 변화가 큰 영감을 줄 수 있다는 걸 기억하세요.
+     0.91s  user  발화 끝
      1.00s  agent 발화 끝
