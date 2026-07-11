@@ -1,109 +1,112 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Ellas, a grounded and empathetic supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Dellaia, a calm and patient personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Thomas",
+    "name": "Nora",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-04",
+      "date": "2026-06-21",
+      "category": "home",
+      "text": "User's home address is 819 Pine Court."
+    },
+    {
+      "date": "2026-03-10",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-02-11",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-01-05",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-02-10",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-10-13",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-12-11",
+      "date": "2025-08-10",
       "category": "cuisine",
       "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-11-03",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-10-09",
-      "category": "home",
-      "text": "User's home address is 793 Pine Court."
-    },
-    {
-      "date": "2025-07-05",
-      "category": "work",
-      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-27",
+      "date": "2026-01-22",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-21",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-08-05",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-06",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm having trouble sleeping lately.
-[  0.03s][moshi] It’s completely understandable to feel that way; sleep can be elusive.
-[  0.07s][user ] Yeah, I just feel so wired all the time.
-[  0.11s][moshi] That feeling of being wired is common, especially with modern life.
-[  0.16s][user ] Do you have any advice on how to calm my mind?
-[  0.21s][moshi] Creating a relaxing bedtime routine can be very helpful.
-[  0.24s][user ] «backchannel» Yeah.
-[  0.25s][user ] Like what kind of routine?
-[  0.27s][moshi] Gentle stretching, a warm bath, or reading a book—anything calming.
-[  0.31s][user ] «backchannel» Yeah.
-[  0.32s][user ] I tried reading, but my mind just races then too.
-[  0.36s][moshi] That's alright; finding what works takes time and experimentation.
-[  0.40s][user ] Is ⟨ret@0.03s⟩ there anything I can listen to?
-[  0.43s][moshi] ⟦⚡SPAN@0.43s: White noise is a random signal that has power spectral density which is equal across different frequencies, gi⟧ There are sounds designed to help, like white noise, which has a flat spectral profile.
-[  0.49s][user ] «backchannel» Yeah.
-[  0.50s][user ] White noise? What even *is* that?
-[  0.52s][moshi] It’s a blend of all frequencies, masking disruptive sounds around you.
-[  0.57s][user ] Hmm, interesting. What about meditation?.
-[  0.59s][moshi] «interrupted» Meditation is wonderful—it can really center you and quiet your thoughts—
-[  0.64s][user ] «interrupts_prev» …but ⟨ret@0.44s⟩ is there a specific type that's best for sleep?
-[  0.68s][moshi] ⟦⚡SPAN@0.68s: A 2019 meta-analysis of 18 studies found that mindfulness meditation significantly reduces symptoms of insomni⟧ Studies show mindfulness meditation can really reduce insomnia symptoms.
-[  0.72s][user ] «backchannel» Okay.
-[  0.73s][user ] That sounds promising. What about screen time before bed?
-[  0.76s][moshi] Reducing screen time before bed is a very good idea, I think.
-[  0.82s][user ] «backchannel» Yeah, totally.
-[  0.82s][user ] How ⟨ret@0.47s⟩ long before bed should I stop looking at screens?
-[  0.87s][moshi] ⟦⚡SPAN@0.87s: The National Sleep Foundation recommends stopping screen use at least one hour before bedtime.⟧ The National Sleep Foundation suggests stopping screens at least one hour before bed.
-[  0.92s][user ] «backchannel» Right.
-[  0.93s][user ] One hour, okay. Thanks, that's helpful.
-[  0.95s][moshi] You’re very welcome. Remember, small changes can make a big difference.
+[  0.00s][user ] Hey, what island was the movie…
+[  0.02s][user ] …Moana ⟨ret@0.00s⟩ based on? I always wondered.
+[  0.04s][moshi] ⟦⚡SPAN@0.04s: Moana is largely inspired by the Polynesian islands, and specifically draws heavily from the culture, people, ⟧ The movie Moana is largely inspired by Polynesian islands, and specifically draws heavily from the culture, people, and mythology of Tonga.
+[  0.11s][user ] «backchannel» Right.
+[  0.12s][user ] Tonga? Huh. I thought it was Hawaii, honestly.
+[  0.14s][moshi] It's a common misconception, as many Polynesian cultures share similarities.
+[  0.18s][user ] Okay, ⟨ret@0.00s⟩ well, what’s the weather like in Tonga right now?
+[  0.21s][moshi] ⟦⚡SPAN@0.21s: (tool result) Temperature: 24.0°C, humidity: 78%, wind: 11.2 km/h, condition: partly cloudy.⟧ The temperature in Tonga is currently 24.0°C, with humidity at 78% and a wind speed of 11.2 kilometers per hour; it’s partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tonga"}}
+[  0.29s][user ] That sounds…nice.
+[  0.30s][moshi] It really does. A lovely escape, I imagine.
+[  0.32s][user ] I'm ⟨ret@0.12s⟩ trying to plan a trip, actually. What are some attractions there?
+[  0.36s][moshi] ⟦⚡SPAN@0.36s: (tool result) Ha'atafu Beach, Royal Palace, Mapu 'a Vaea Blowholes, Tonga National Museum.⟧ Some attractions in Tonga include Ha'atafu Beach, the Royal Palace, Mapu 'a Vaea Blowholes, and the Tonga National Museum.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Tonga"}}
+[  0.43s][user ] «backchannel» Yeah.
+[  0.43s][moshi] They have a rich history and beautiful natural landscapes.
+[  0.46s][user ] «backchannel» Yeah.
+[  0.47s][user ] Blowholes, huh? That sounds interesting. Is there anything else I should know before I go?
+[  0.52s][moshi] It’s good to be aware of local customs and traditions.
+[  0.55s][user ] «backchannel» Yeah.
+[  0.55s][user ] Like ⟨ret@0.18s⟩ what? I don’t want to be rude.
+[  0.58s][moshi] ⟦⚡SPAN@0.58s: Tongan culture places a high value on respect, especially for elders and the royal family, and modest dress is⟧ Tongan culture places a high value on respect, especially for elders and the royal family, and modest dress is appreciated.
+[  0.65s][user ] That's ⟨ret@0.28s⟩ good to know. What's the currency there?
+[  0.68s][moshi] ⟦⚡SPAN@0.68s: The currency of Tonga is the paʻanga, and one United States dollar is equivalent to approximately 2.12 paʻanga⟧ The currency of Tonga is the paʻanga, and one United States dollar is currently equivalent to approximately 2.12 paʻanga.
+[  0.74s][user ] «backchannel» Really?
+[  0.74s][user ] Okay, so about two paʻanga to the dollar?
+[  0.77s][moshi] Roughly, yes. It fluctuates, of course, but that’s a good approximation for now.
+[  0.82s][user ] [sigh] This is a lot to take in.
+[  0.84s][moshi] Planning can feel overwhelming, but it’s worth it for a smooth trip.
+[  0.88s][user ] «backchannel» Right.
+[  0.89s][user ] I ⟨ret@0.52s⟩ appreciate that. Maybe I should look at hotels now?
+[  0.92s][moshi] ⟦⚡SPAN@0.92s: (tool result) The Shoreline Grill & Resort - $150/night, Hakauveli Beach Resort & Spa - $220/night.⟧ The Shoreline Grill & Resort is available for around $150 per night, and Hakauveli Beach Resort & Spa is about $220 per night.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Tonga"}}

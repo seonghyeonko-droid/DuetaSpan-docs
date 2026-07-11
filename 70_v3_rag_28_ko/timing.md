@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "현경",
+#     "name": "재국",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,136 +12,143 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-14",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-02-10",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-12-11",
+#       "date": "2026-06-21",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2025-11-03",
+#       "date": "2026-03-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-11",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-10-09",
+#       "date": "2026-01-05",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-10",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-27",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-22",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-06",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 유튜브 구독자 제일 많은 사람이 누구야? | S2 아, 그렇구나. 그럼 그 다음으로 구독자 많은 사람은 누구야? | S3 엄청난 사람이네. 구독자 수 계속 변하잖아, 지금 MrBeas | S4 요즘 날씨 어때?
+# EXAMINER(FDB-v2) 단계: S1 모아나 영화가 배경으로 한 섬이 어디야? | S2 아, 마우이가 나오는구나. 그럼 모아나에 나오는 다른 신화 요 | S3 꽤 덥네. 이번 주말에 갈만한 곳 추천해 줄 수 있어? | S4 오, 좋아 보이는데. 그럼 거기 가는 버스 시간표 좀 알아봐 
 
-     0.00s  user  발화 시작: 유튜브 구독자 제일 많은 사람이 누구야?
+     0.00s  user  발화 시작: 모아나 영화가 배경으로 한 섬이 어디야?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.02s  agent 발화 시작: <ret> 현재 기준으로 유튜브에서 가장 많은 구독자를 보유한 개인은 PewDiePie인데, 구독자가 천백십
-     0.02s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: PewDiePie has 111 million subscribers, making him the most subscribed 
-     0.02s  user  발화 끝
-     0.06s  <ret> 발화 (turn11 첫 프레임)
-     0.07s  user  발화 시작: 천만 명 넘는다니, 진짜 대단하네. 근데 그 사람이 뭘로 유명해?
-     0.07s  agent 발화 끝
-     0.09s  <ret> 발화 (turn5 첫 프레임)
-     0.10s  agent 발화 시작: 그분은 원래 게임 해설 영상으로 시작해서, 지금은 다양한 콘텐츠를 올리고 있어요.
+     0.03s  agent 발화 시작: <ret> 모아나 영화는 폴리네시아 섬들을 배경으로 하는데, 특히 통가, 피지, 사모아, 그리고 타히티가 주
+     0.03s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Moana is based on the islands of Polynesia, particularly Tonga, Fiji, 
+     0.03s  user  발화 끝
+     0.09s  user  발화 시작: 응응.
+     0.09s  agent 발화 끝
+     0.10s  user  발화 시작: 음, 통가라고? 좀 더 자세히 말해줄 수 있어?
      0.10s  user  발화 끝
-     0.14s  user  발화 시작: 게임 말고 다른 영상도 올려? 어떤 거?
-     0.14s  agent 발화 끝
-     0.17s  agent 발화 시작: <ret> 게임 외에도 일상 브이로그나 코미디 스케치, 반응 영상 같은 다양한 콘텐츠를 올리고 있대요.
-     0.17s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: PewDiePie's content includes vlogs, comedy sketches, and reaction vide
-     0.17s  user  발화 끝
-     0.22s  user  발화 시작: 응.
-     0.22s  agent 발화 끝
-     0.22s  user  발화 시작: 반응 영상? 그게 뭔데?
-     0.22s  user  발화 끝
-     0.23s  agent 발화 시작: 다른 사람의 영상이나 사건에 대한 자신의 반응을 보여주는 영상이에요.
-     0.23s  user  발화 끝
-     0.27s  user  발화 시작: 응.
-     0.27s  agent 발화 끝
-     0.27s  user  발화 시작: 아, 그렇구나. 그럼 그 다음으로 구독자 많은 사람은 누구야?
-     0.27s  user  발화 끝
-     0.30s  agent 발화 시작: <ret> 현재 유튜브에서 가장 많은 구독자를 보유한 채널은 MrBeast인데, 구독자가 일억 칠천팔백만 명
-     0.30s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: MrBeast, with over 178 million subscribers, is currently the most subs
-     0.30s  user  발화 끝
-     0.35s  user  발화 시작: 와, PewDiePie보다 더 많네? 그…
-     0.35s  agent 발화 끝
-     0.36s  <ret> 발화 (turn17 첫 프레임)
-     0.37s  user  발화 시작: …사람은 또 뭘 하는 사람이야?
+     0.12s  <ret> 발화 (turn6 첫 프레임)
+     0.13s  agent 발화 시작: 폴리네시아 문화 전반을 담고 있지만, 통가의 신화와 전통이 큰 영향을 주었답니다.
+     0.13s  user  발화 끝
+     0.13s  <ret> 발화 (turn10 첫 프레임)
+     0.18s  user  발화 시작: 신화? 어떤 신화가 제일 중요해?
+     0.18s  agent 발화 끝
+     0.20s  agent 발화 시작: <ret> 통가 신화에서 마우이는 섬을 낚아 올리고 태양의 속도를 늦춘 반신반인으로 알려져 있어요.
+     0.20s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: In Tongan mythology, Maui is a demigod known for fishing up islands an
+     0.20s  user  발화 끝
+     0.25s  user  발화 시작: 응.
+     0.25s  agent 발화 끝
+     0.26s  agent 발화 시작: 마우이는 모아나 이야기에서도 중요한 역할을 하죠. 통가 신화 속 마우이의 이야기가 모아나의 여정에 영감을 준
+     0.26s  user  발화 끝
+     0.33s  user  발화 시작: 아, 마우이가 나오는구나. 그럼 모아나에 나오는 다른 신화 요소들도 있어?
+     0.33s  agent 발화 끝
+     0.37s  agent 발화 시작: <ret> 어머니 섬 테 피티 이야기는 폴리네시아 창조 신화와 자연의 중요성을 담고 있어요.
+     0.37s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: The story of Te Fiti, the mother island, draws from Polynesian creatio
      0.37s  user  발화 끝
-     0.37s  <ret> 발화 (turn19 첫 프레임)
-     0.38s  agent 발화 시작: MrBeast는 주로 기부나 엄청난 규모의 도전 과제를 수행하는 영상으로 유명해요.
-     0.38s  user  발화 끝
-     0.42s  user  발화 시작: 응.
-     0.42s  agent 발화 끝
-     0.42s  user  발화 시작: 도전 과제? 예를 들면?
-     0.42s  user  발화 끝
-     0.44s  agent 발화 시작: <ret> 스퀴드 게임 재현이나, 수백만 달러를 기부하거나, 아프리카에 우물을 파는 등 엄청난 규모의 도전 
-     0.44s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: MrBeast has hosted challenges such as recreating Squid Game, giving aw
-     0.44s  user  발화 끝
-     0.49s  user  발화 시작: 엄청난 사람이네. 구독자 수 계속 변하잖아, 지금 MrBeast가 일위라는 거 확실해?
-     0.49s  agent 발화 끝
-     0.53s  agent 발화 시작: <ret> 포브스에 따르면 현재 MrBeast가 이억 사천사백만 명으로 일위이고, 그 다음이 티-Series
-     0.53s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) MrBeast currently holds the top spot with 244 million su
-     0.53s  user  발화 끝
-     0.60s  user  발화 시작: 그래.
-     0.60s  agent 발화 끝
-     0.60s  user  발화 시작: 잠깐만, T-Series가 더 많네? MrBeast가 일위가 아니었구나 —
-     0.60s  user  발화 끝
-     0.63s  user  발화 시작: …그럼 T-Series는 개인 채널이 아니야? 회사 채널인가?
-     0.63s  user  발화 끝
-     0.66s  agent 발화 시작: 네, T-Series는 인도 최대의 음반사 겸 영화 제작사 채널이에요.
-     0.66s  user  발화 끝
-     0.69s  user  발화 시작: 아, 그렇구나. 그럼 개인 채널 중에 제일 많은 구독자는 MrBeast겠네?
-     0.69s  agent 발화 끝
-     0.69s  <ret> 발화 (turn27 첫 프레임)
-     0.72s  agent 발화 시작: 네, 맞아요. 개인 채널 중에서는 MrBeast가 가장 많은 구독자를 보유하고 있어요.
-     0.72s  user  발화 끝
-     0.76s  user  발화 시작: 요즘 날씨 어때?
-     0.76s  agent 발화 끝
-     0.77s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-     0.77s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     0.77s  user  발화 끝
-     0.82s  user  발화 시작: 그래.
-     0.82s  agent 발화 끝
-     0.82s  user  발화 시작: 덥네. 잠 좀 자려고 하는데, 좋은 잠자리 환경에 대해 알려줄까?
-     0.82s  user  발화 끝
-     0.86s  agent 발화 시작: 편안한 잠자리를 위해 몇 가지 팁을 드릴게요. 방 온도를 시원하게 유지하고, 빛을 차단하고, 조용한 환경을 
-     0.86s  user  발화 끝
-     0.92s  user  발화 시작: 응.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: 빛을 차단하는 건 어떻게 해? 암막 커튼 같은 거?
-     0.93s  user  발화 끝
-     0.96s  agent 발화 시작: 네, 암막 커튼이나 수면 안대를 사용하면 빛을 효과적으로 차단할 수 있어요.
+     0.43s  user  발화 시작: 테 피티… 그 섬은 진짜 존재하는 거야?
+     0.43s  agent 발화 끝
+     0.46s  <ret> 발화 (turn15 첫 프레임)
+     0.46s  agent 발화 시작: 테 피티는 신화 속 섬이지만, 폴리네시아의 여러 섬들이 그 모티브가 되었어요.
+     0.46s  user  발화 끝
+     0.49s  <ret> 발화 (turn18 첫 프레임)
+     0.50s  user  발화 시작: 응.
+     0.50s  agent 발화 끝
+     0.51s  user  발화 시작: 지금 날씨 어때? 서울 날씨 궁금해.
+     0.51s  user  발화 끝
+     0.54s  agent 발화 시작: <ret> 현재 서울 날씨는 섭씨 이십팔 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로
+     0.54s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Current conditions in Seoul are 28.5°C, humidity 68%, wi
+     0.54s  user  발화 끝
+     0.57s  <ret> 발화 (turn24 첫 프레임)
+     0.59s  <ret> 발화 (turn26 첫 프레임)
+     0.61s  user  발화 시작: 헐.
+     0.61s  agent 발화 끝
+     0.61s  user  발화 시작: 꽤 덥네. 이번 주말에 갈만한 곳 추천해 줄 수 있어?
+     0.61s  user  발화 끝
+     0.65s  agent 발화 시작: <ret> 서울에서 인기 있는 관광 명소로는 경복궁, 남산타워, 그리고 북촌한옥마을이 있어요.
+     0.65s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Popular attractions in Seoul include Gyeongbokgung Palac
+     0.65s  user  발화 끝
+     0.70s  user  발화 시작: 응.
+     0.70s  agent 발화 끝
+     0.70s  user  발화 시작: 경복궁… 거기는 가봤어. 다른 데 없을까?
+     0.70s  user  발화 끝
+     0.73s  agent 발화 시작: 음… 좀 더 색다른 곳을 원하시면 인사동이나 익선동 같은 한옥 거리도 괜찮을 것 같아요.
+     0.73s  user  발화 끝
+     0.79s  user  발화 시작: 음.
+     0.79s  agent 발화 끝
+     0.79s  user  발화 시작: 익선동? 거긴 어떤 곳인데?
+     0.79s  user  발화 끝
+     0.81s  agent 발화 시작: <ret> 익선동 한옥마을은 전통 한옥에 트렌디한 카페, 레스토랑, 상점들이 모여 있는 곳이에요.
+     0.81s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Ikseon-dong Hanok Village is known for its trendy cafes, restaurants, 
+     0.81s  user  발화 끝
+     0.86s  user  발화 시작: 오, 좋아 보이는데. 그럼 거기 가는 버스 시간표 좀 알아봐 줄래?
+     0.86s  agent 발화 끝
+     0.91s  agent 발화 시작: <ret> 백구번 버스가 서울역에서 오후 두시 삼십오분에 출발해서 익선동에 오후 두시 오십분에 도착해요.
+     0.91s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Bus route 109 departs from Seoul Station at 14:35 and ar
+     0.91s  user  발화 끝
+     0.96s  user  발화 시작: 오.
+     0.96s  agent 발화 끝
+     0.96s  user  발화 시작: 고마워. 덕분에 주말 계획 세울 수 있겠네.
      0.96s  user  발화 끝
+     1.00s  agent 발화 시작: 천만에요.
+     1.00s  user  발화 끝
      1.00s  agent 발화 끝

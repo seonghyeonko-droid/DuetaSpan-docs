@@ -4,48 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Ruby",
+#     "name": "Grace",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-02-15",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-30",
+#       "date": "2025-12-02",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-08-16",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-05",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-06-03",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-10-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-07-23",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-22",
+#       "date": "2026-05-13",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-14",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,103 +66,37 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-29",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-27",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m thinking of visiting some pala | S2 Lavish, huh? Sounds fun. Which Tud | S3 What about before Wolsey? Was ther | S4 I suppose so. What’s the weather l
+# EXAMINER(FDB-v2) 단계: S1 Hi, I'm planning a vacation and fe | S2 I was wondering, where does *Need  | S3 What’s the weather like there righ | S4 That sounds…nice. Maybe I should g
 
-     0.00s  user  발화 시작: I’m thinking of visiting some palaces. Which ones are really
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.00s  <ret> 발화 (turn9 첫 프레임)
-     0.03s  agent 발화 시작: That’s a lovely idea! Many palaces tell fascinating stories.
-     0.03s  user  발화 끝
-     0.05s  user  발화 시작: Yeah.
-     0.05s  agent 발화 끝
-     0.05s  user  발화 시작: Are there any in England that were built for someone…
-     0.05s  user  발화 끝
-     0.08s  user  발화 시작: …then taken over by a Tudor?
-     0.08s  user  발화 끝
-     0.09s  agent 발화 시작: <ret> Hampton Court Palace began as a home for Cardinal Wols
-     0.09s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Hampton Court Palace was originally built for Cardinal Thomas Wolsey, 
-     0.09s  user  발화 끝
-     0.11s  <ret> 발화 (turn7 첫 프레임)
-     0.15s  user  발화 시작: Oh, Wolsey! I’ve heard of him. What did Henry do with it onc
-     0.15s  agent 발화 끝
-     0.19s  agent 발화 시작: <ret> Henry the Eighth really expanded Hampton Court, using 
-     0.19s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Henry VIII greatly expanded Hampton Court Palace, using it as a showca
-     0.19s  user  발화 끝
-     0.23s  user  발화 시작: Lavish, huh? Sounds fun. Which Tudors actually *lived* there
-     0.23s  agent 발화 끝
-     0.26s  agent 발화 시작: <ret> Henry the Eighth, Edward the Sixth, Mary the First, an
-     0.26s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Henry VIII, Edward VI, Mary I, and Elizabeth I all resided at Hampton 
+     0.00s  user  발화 시작: Hi, I'm planning a vacation and feeling a bit overwhelmed.
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.11s  agent 발화 시작: Oh, hello!
+     0.11s  user  발화 끝
+     0.13s  user  발화 시작: I was wondering, where does *Need for Speed Payback* take pl
+     0.13s  agent 발화 끝
+     0.26s  agent 발화 시작: <ret> Well, *Need for Speed Payback* is primarily set in For
+     0.26s  ⚡SPAN 주입 [d'=0.22s / d_lead=0.22s]: The game *Need for Speed Payback* is largely set in Fortune Valley, a 
      0.26s  user  발화 끝
-     0.32s  user  발화 시작: Wow, all of them! That’s quite a history.
-     0.32s  agent 발화 끝
-     0.33s  <ret> 발화 (turn13 첫 프레임)
-     0.34s  agent 발화 시작: It really is. A place can absorb so much energy over the cen
-     0.34s  user  발화 끝
-     0.38s  <ret> 발화 (turn21 첫 프레임)
-     0.38s  user  발화 시작: Did Elizabeth change much about it, or did she leave it as H
-     0.38s  agent 발화 끝
-     0.41s  agent 발화 시작: <ret> Elizabeth the First didn’t change much about the palac
-     0.41s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Elizabeth I made relatively few structural changes to Hampton Court Pa
-     0.41s  user  발화 끝
-     0.43s  <ret> 발화 (turn28 첫 프레임)
-     0.46s  user  발화 시작: Oh.
-     0.46s  agent 발화 끝
-     0.46s  user  발화 시작: So it was pretty much Henry’s vision she lived in?
-     0.46s  user  발화 끝
-     0.49s  agent 발화 시작: Largely, yes. She appreciated the existing magnificence of t
+     0.48s  user  발화 시작: Uh-huh.
+     0.48s  agent 발화 끝
+     0.49s  <ret> 발화 (turn6 첫 프레임)
+     0.49s  user  발화 시작: What’s the weather like there right now?
      0.49s  user  발화 끝
-     0.51s  user  발화 시작: Yeah.
-     0.51s  agent 발화 끝
-     0.51s  user  발화 시작: What about before Wolsey? Was there something there before h
-     0.51s  user  발화 끝
-     0.55s  agent 발화 시작: Before Wolsey’s palace, the site was occupied by a manor hou
-     0.55s  user  발화 끝
-     0.59s  user  발화 시작: …Was it a really big manor house, or just a small one?
-     0.59s  agent 발화 끝
-     0.62s  agent 발화 시작: <ret> It was a relatively modest manor house, primarily used
-     0.62s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The manor house belonging to the Knights Hospitaller prior to Wolsey’s
-     0.62s  user  발화 끝
-     0.66s  agent 발화 시작: Before Wolsey built Hampton Court, the Knights Hospitaller h
-     0.66s  agent 발화 끝
-     0.70s  user  발화 시작: So Wolsey completely transformed the site, then.
-     0.70s  agent 발화 끝
-     0.72s  agent 발화 시작: He envisioned something grand, a statement of his own import
-     0.72s  user  발화 끝
-     0.74s  user  발화 시작: And Henry just… took it? That sounds a bit rude.
-     0.74s  agent 발화 끝
-     0.75s  <ret> 발화 (turn30 첫 프레임)
-     0.77s  agent 발화 시작: It was a common practice for monarchs of that era to acquire
-     0.77s  user  발화 끝
-     0.81s  user  발화 시작: I suppose so. What’s the weather like there today?
-     0.81s  agent 발화 끝
-     0.83s  agent 발화 시작: <ret> Right now at Hampton Court Palace, it’s 18.5 degrees C
-     0.83s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 18.5°C, humidity 62%, wind 7.2 km/h
-     0.83s  user  발화 끝
-     0.88s  user  발화 시작: Not bad at all. Is it open to the public currently?
-     0.88s  agent 발화 끝
-     0.91s  agent 발화 시작: <ret> Yes, Hampton Court Palace is open today from 10 AM to 
-     0.91s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Hampton Court Palace is open daily from 10:00 AM to 6:00
-     0.91s  user  발화 끝
-     0.98s  user  발화 시작: That’s good to know. Thanks, Frella.
-     0.98s  agent 발화 끝
-     0.99s  agent 발화 시작: You’re very welcome.
-     0.99s  user  발화 끝
+     0.57s  agent 발화 시작: <ret> Currently in Fortune Valley, Nevada, it’s 28.3 degrees
+     0.57s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) Fortune Valley, Nevada: 28.3°C, humidity 21%, wind 13.4 
+     0.57s  user  발화 끝
+     0.73s  user  발화 시작: That sounds…nice. Maybe I should go in October?
+     0.73s  agent 발화 끝
+     0.82s  agent 발화 시작: October sounds lovely! It's a great time to enjoy pleasant w
+     0.82s  user  발화 끝
      1.00s  agent 발화 끝

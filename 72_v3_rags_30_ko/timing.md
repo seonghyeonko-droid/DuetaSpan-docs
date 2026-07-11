@@ -4,84 +4,58 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "현호",
+#     "name": "소서",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-06-11",
+#       "date": "2026-03-17",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2025-12-05",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-04-20",
+#       "date": "2025-11-26",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-10-16",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2025-09-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-17",
+#       "date": "2026-01-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-28",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 사우스웨스트 항공이랑 코드쉐어 계약을…
-     0.24s  user  발화 시작: …제일 먼저 맺은 항공사는 어디였어?
-     0.24s  user  발화 끝
-     0.32s  <ret> 발화 (turn2 첫 프레임)
-     0.48s  agent 발화 시작: <ret> 사우스웨스트 항공과 코드쉐어 계약을 제일 먼저 맺은 항공사는 천구백구십사년에 ATA 항공이었어요.
-     0.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.52s]: ATA Airlines was the first airline to begin code-sharing agreements wi
-     0.48s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 쇼크 탑 벨기에안…
+     0.18s  user  발화 시작: …위트 맥주는 어떤 스타일의 맥주야?
+     0.18s  user  발화 끝
+     0.25s  <ret> 발화 (turn2 첫 프레임)
+     0.41s  agent 발화 시작: <ret> 쇼크 탑 벨기에안 위트 맥주는 오렌지 껍질과 고수를 넣어 만든 미국식 밀 맥주랍니다.
+     0.41s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.59s]: Shock Top Belgian Wheat is an American-style wheat ale brewed with ora
+     0.41s  user  발화 끝
      1.00s  agent 발화 끝

@@ -4,89 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Sam",
+#     "name": "Nina",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-09-02",
-#       "category": "home",
-#       "text": "User's home address is 258 Elm Street."
-#     },
-#     {
-#       "date": "2025-05-28",
+#       "date": "2026-02-07",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 42 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-19",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-02-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-08",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 uhhh… who makes the most money in  | S2 welll… how about second place? | S3 um… can you find me a picture of L | S4 that's perfect, thanks.
 
-     0.00s  user  발화 시작: uh, I was just wondering… what’s the most populated region i
+     0.00s  user  발화 시작: uhhh… who makes the most money in the NBA?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.11s  agent 발화 시작: <ret> Well, it sounds like you’re exploring Ghana, which is 
-     0.11s  ⚡SPAN 주입 [d'=0.29s / d_lead=0.29s]: The Ashanti Region of Ghana is the country’s most populous region, wit
-     0.11s  user  발화 끝
-     0.40s  user  발화 시작: [surprised] Wow, that’s a lot of people!
-     0.40s  agent 발화 끝
-     0.41s  <ret> 발화 (turn6 첫 프레임)
-     0.47s  agent 발화 시작: It truly is. Sometimes understanding the scale of things hel
-     0.47s  user  발화 끝
-     0.64s  user  발화 시작: Yeah.
-     0.64s  agent 발화 끝
-     0.65s  user  발화 시작: Um, do you know when Ghana became independent?
-     0.65s  user  발화 끝
-     0.73s  agent 발화 시작: <ret> Ghana’s independence is a significant moment in histor
-     0.73s  ⚡SPAN 주입 [d'=0.27s / d_lead=0.27s]: (tool result) Ghana gained its independence from the United Kingdom on
-     0.73s  user  발화 끝
+     0.06s  agent 발화 시작: <ret> It’s wonderful you’re curious about success! LeBron Ja
+     0.06s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: LeBron James earned $128.2 million in the 2023–24 NBA season, making h
+     0.06s  user  발화 끝
+     0.07s  <ret> 발화 (turn5 첫 프레임)
+     0.21s  user  발화 시작: wow, that's… a lot.
+     0.21s  agent 발화 끝
+     0.24s  agent 발화 시작: It truly is a remarkable amount, isn't it? Sometimes acknowl
+     0.24s  user  발화 끝
+     0.36s  user  발화 시작: welll… how about second place?
+     0.36s  agent 발화 끝
+     0.39s  agent 발화 시작: <ret> Discovering who else is achieving great things is a fa
+     0.39s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: Joel Embiid was the second-highest paid NBA player in the 2023–24 seas
+     0.39s  user  발화 끝
+     0.55s  <ret> 발화 (turn9 첫 프레임)
+     0.57s  user  발화 시작: Yeah, yeah.
+     0.57s  agent 발화 끝
+     0.59s  agent 발화 시작: Seeing different paths to achievement can be really motivati
+     0.59s  user  발화 끝
+     0.65s  user  발화 시작: um… can you find me a picture of LeBron?
+     0.65s  agent 발화 끝
+     0.71s  agent 발화 시작: <ret> I found something! It’s LeBron James, from IMDb, a wel
+     0.71s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) LeBron James (2023) - IMDb - https://www.imdb.com/name/n
+     0.71s  user  발화 끝
+     0.83s  user  발화 시작: that's perfect, thanks.
+     0.83s  agent 발화 끝
+     0.85s  agent 발화 시작: You're very welcome! I’m glad I could help you find what you
+     0.85s  user  발화 끝
      1.00s  agent 발화 끝

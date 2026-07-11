@@ -1,105 +1,72 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Thari, a kind and steady supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Keen, a gentle and reflective counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Riley",
+    "name": "Marie",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-05-31",
-      "category": "work",
-      "text": "User works as a architect."
-    },
-    {
-      "date": "2026-04-03",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-06-27",
+      "date": "2026-05-05",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in May."
+      "text": "User is planning a trip to Iceland in August."
     },
     {
-      "date": "2025-06-16",
+      "date": "2026-05-01",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-04-04",
+      "category": "home",
+      "text": "User's home address is 495 Elm Street."
+    },
+    {
+      "date": "2025-10-23",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-10-06",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-19",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-28",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-02",
+      "date": "2025-11-20",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-31",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me about the application config ⟨ret@2.43s⟩ file.
-[  2.65s][moshi] ⟦⚡SPAN@2.67s: (tool result) File: /home/user/app/config.json, Size: 2.3KB, Last Modified: 2026-07-09 18:52:00⟧ That file is located at /home/user/app/config.json. It’s two point three kilobytes in size, and was last modified on July ninth, 2026.
-      CALL: {"function": "get_file_info", "arguments": {"file_path": "application config"}}
-[ 12.36s][user ] «backchannel» Yeah.
-[ 15.11s][user ] And what about the database schema file?
-[ 17.44s][moshi] ⟨ret@17.29s⟩ ⟦⚡SPAN@17.45s: (tool result) File: /home/user/db/schema.sql, Size: 15.7KB, Last Modified: 2026-07-01 10:15:00⟧ The database schema file is at /home/user/db/schema.sql. It’s fifteen point seven kilobytes, last changed on July first.
-      CALL: {"function": "get_file_info", "arguments": {"file_path": "database schema"}}
-[ 20.60s][user ] «backchannel» Mm-hmm.
-[ 27.76s][user ] That’s helpful. I’m trying to remember when I last touched that config file.
-[ 32.08s][moshi] «interrupted» It's a good practice to keep track of changes, especially with configuration files—
-[ 36.17s][user ] «interrupts_prev» …actually, can you just find me all files modified yesterday?
-[ 40.06s][moshi] ⟨ret@39.98s⟩ ⟦⚡SPAN@40.06s: (tool result) Found 12 files modified on 2026-07-09: /home/user/app/config.json, /home/user/docs/report.pdf, /⟧ I found twelve files modified yesterday, July ninth. That includes the application config file and a report PDF.
-      CALL: {"function": "search_files", "arguments": {"date": "2026-07-09"}}
-[ 44.18s][user ] «backchannel» Uh-huh.
-[ 47.84s][moshi] Knowing when files were updated can be very useful for troubleshooting, as a restful sleep is when you can process your day.
-[ 53.12s][user ] «backchannel» Uh-huh.
-[ 55.15s][user ] Can you search for any news articles about sleep optimization techniques?
-[ 59.41s][moshi] ⟨ret@59.02s⟩ ⟦⚡SPAN@59.42s: (tool result) "10 Tips to Optimize Your Sleep" - Healthline.com - Discover evidence-based strategies to improv⟧ Healthline has an article with ten tips for better sleep. It suggests a routine and a regular schedule.
-      CALL: {"function": "web_search", "arguments": {"query": "sleep optimization techniques"}}
-[ 66.00s][user ] Hmm, that sounds good. What’s the weather like in Seoul right now?
-[ 70.52s][moshi] ⟨ret@70.36s⟩ ⟦⚡SPAN@70.52s: (tool result) Seoul: 26.5°C, humidity 68%, wind 7.2 km/h, clear skies.⟧ It’s twenty-six point five degrees Celsius in Seoul, with clear skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 77.48s][user ] That's nice. Book me a restaurant reservation for two people at seven PM tonight.
-[ 82.65s][moshi] I can certainly help with that. Do you have a particular restaurant in mind?
-[ 84.45s][user ] «backchannel» Yeah.
-[ 87.35s][user ] Uh, welll… any Italian place near City ⟨ret@90.38s⟩ Hall.
-[ 90.62s][moshi] ⟦⚡SPAN@90.62s: (tool result) Found "Bella Italia" - Italian, 4.5 stars, near City Hall. Available at 7:00 PM.⟧ I found "Bella Italia" near City Hall. It’s Italian, has four and a half stars, and has availability at seven.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "City Hall"}}
-[ 97.99s][user ] Book ⟨ret@98.31s⟩ it.
-[ 98.55s][moshi] ⟦⚡SPAN@98.55s: (tool result) Reservation confirmed at Bella Italia for 2 people at 19:00. Confirmation ID: BI7492.⟧ Your reservation at Bella Italia is confirmed for two people at seven PM. Your confirmation ID is BI7492. Enjoy your evening!
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "19:00", "party_size": "2"}}
+[  0.00s][user ] Get me two bus tickets from Los Angeles to San Francisco for March eighteenth at four fifteen PM—no, make that March nineteenth at four fifteen ⟨ret@8.48s⟩ PM.
+[  8.72s][moshi] ⟦⚡SPAN@8.72s: (tool result) Confirmation: LAX-SFO, 03/19/2026 16:15, 2 tickets, ID: 87gh45⟧ I’ve secured two bus tickets from Los Angeles to San Francisco for March nineteenth at four fifteen PM. Your confirmation ID is 87gh45.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"from_city": "Los Angeles", "to_city": "San Francisco", "date": "March 19", "time": "4:15 PM", "number_of_tickets": 2}}
+[ 19.92s][user ] That’s good. What’s the weather like in San Francisco on that ⟨ret@23.66s⟩ day?
+[ 23.82s][moshi] ⟦⚡SPAN@23.82s: (tool result) The forecast for San Francisco on March 19, 2026 is 16.7°C, humidity 68%, wind 8.2 km/h.⟧ On March nineteenth, San Francisco will have a temperature of 16.7°C, with 68% humidity and an 8.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco", "date": "March 19, 2026"}}
+[ 30.55s][user ] «backchannel» Yeah.
+[ 34.76s][user ] Sounds pleasant.
+[ 35.95s][moshi] It does, doesn’t it? A gentle day can be so restorative, offering a peaceful rhythm for the spirit.

@@ -4,48 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Hana",
+#     "name": "Isla",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "40s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-31",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-09-18",
+#       "date": "2026-04-24",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "date": "2026-02-28",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-08-16",
+#       "date": "2025-12-01",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "home",
+#       "text": "User's home address is 288 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-14",
+#       "date": "2026-03-13",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,15 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-10",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-08",
+#       "date": "2026-02-02",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -71,51 +63,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, I was wondering… how old  | S2 Did you remember to take the chick | S3 Is there an age limit for that? | S4 Maybe. Do they… like, prefer a hig
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, where do arteries | S2 Did you hear about the concert dow | S3 Oh, that’s good to know. Are there | S4 That's interesting! And what about
 
-     0.00s  user  발화 시작: Hey, uh, I was wondering… how old do you have to be to legal
-     5.10s  <ret> 발화 (turn1 첫 프레임)
-     5.50s  agent 발화 시작: <ret> Well, that's a really important question! Generally, y
-     5.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: In most states, a student can legally drop out of school between the a
-     5.65s  user  발화 끝
-    11.16s  user  발화 시작: Yeah.
-    11.89s  user  발화 끝
-    13.98s  agent 발화 끝
-    14.04s  user  발화 시작: Sixteen, huh? That’s… younger than I thought.
-    17.23s  user  발화 끝
-    17.55s  agent 발화 시작: It can feel like a big step, and it’s smart to be prepared. 
-    23.66s  agent 발화 끝
-    23.85s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    26.24s  user  발화 끝
-    26.25s  user  발화 시작: Actually, I'm also curious about getting my GED.
-    29.09s  <ret> 발화 (turn7 첫 프레임)
-    29.23s  agent 발화 시작: <ret> That's a great idea! The GED is a high school equivale
-    29.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: The General Educational Development (GED) test is a high school equiva
-    29.34s  user  발화 끝
-    35.16s  user  발화 시작: Yeah, yeah.
-    36.54s  user  발화 끝
-    37.94s  agent 발화 끝
-    37.98s  user  발화 시작: Is there an age limit for that?
-    39.31s  <ret> 발화 (turn10 첫 프레임)
-    39.71s  agent 발화 시작: <ret> No, there isn't an upper age limit, but most states as
-    39.71s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.71s]: There is no upper age limit to take the GED test; however, most states
-    39.74s  user  발화 끝
-    45.19s  user  발화 시작: Okay.
-    45.82s  user  발화 끝
-    48.27s  user  발화 시작: Okay, good. So sixteen for both. What about… finding a job a
-    48.42s  agent 발화 끝
-    52.24s  agent 발화 시작: That's a wonderful next thought!
-    52.30s  user  발화 끝
-    53.72s  user  발화 시작: Maybe. Do they… like, prefer a high school diploma?
-    54.08s  agent 발화 끝
-    56.44s  <ret> 발화 (turn15 첫 프레임)
-    56.83s  agent 발화 시작: <ret> Some employers do prefer a diploma, but a lot are happ
-    56.84s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.72s]: While some employers may prefer candidates with a high school diploma,
-    57.01s  user  발화 끝
-    60.82s  user  발화 시작: Yeah.
-    61.32s  user  발화 끝
-    65.23s  user  발화 시작: That's… reassuring, actually. Thanks, Jeliia.
-    65.55s  agent 발화 끝
-    68.14s  agent 발화 시작: You’re very welcome! It’s completely normal to feel unsure, 
-    68.14s  user  발화 끝
-    75.97s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering, where do arteries connect with each other?
+     2.14s  <ret> 발화 (turn1 첫 프레임)
+     2.54s  agent 발화 시작: <ret> Arterial anastomoses are most commonly found between a
+     2.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: Arterial anastomoses are most commonly found between arteries, providi
+     2.63s  user  발화 끝
+    12.78s  agent 발화 끝
+    13.23s  user  발화 시작: Did you hear about the concert downtown next week?
+    15.56s  user  발화 시작: Oh, that’s good to know. Are there any near the elbow?
+    15.77s  user  발화 끝
+    18.27s  <ret> 발화 (turn4 첫 프레임)
+    18.51s  agent 발화 시작: <ret> The elbow region contains a prominent arterial arcade 
+    18.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.86s]: The elbow region contains a prominent arterial arcade formed by the an
+    18.52s  user  발화 끝
+    29.37s  agent 발화 끝
+    29.52s  user  발화 시작: That's interesting! And what about in the feet?
+    31.70s  <ret> 발화 (turn6 첫 프레임)
+    32.02s  agent 발화 시작: <ret> In the feet, the dorsal pedis artery and posterior tib
+    32.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.24s]: In the feet, the dorsal pedis artery and posterior tibial artery contr
+    32.15s  user  발화 끝
+    44.27s  agent 발화 끝

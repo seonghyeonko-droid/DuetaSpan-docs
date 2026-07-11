@@ -1,86 +1,84 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 자리엔이며, 생산성과 일상 루틴 관리를 돕는 호기심 많고 지지적인 개인 가이드입니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 부드럽고 사려 깊은 상담가 펠랜입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "세린",
+    "name": "다원",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-28",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-10-21",
+      "date": "2026-04-30",
       "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
+      "text": "User's home address is 대구 중구 동인동 88-1."
     },
     {
-      "date": "2025-10-01",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-04-27",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-08-06",
+      "date": "2026-04-11",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2025-07-03",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in October."
+      "date": "2025-08-18",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-26",
-      "title": "Setting up a home network",
+      "date": "2026-03-24",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-08-24",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 북미에서 ⟨ret@0.00s⟩ 마지막으로 일식 본 게 언제였지?
-[  0.03s][moshi] ⟦⚡SPAN@0.03s: August 21, 2017.⟧ 북미 대륙에서 마지막으로 일식이 관측된 건 이천십칠년 팔월 이십일일이었어요.
-[  0.08s][user ] 음, ⟨ret@0.00s⟩ 그 일식은 얼마나 많은 사람들이 봤을까?
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: (no information found)⟧ 그 일식의 관람객 수에 대한 정확한 정보는 찾을 수 없었습니다.
-[  0.16s][user ] «backchannel» 네.
-[  0.17s][user ] 아, ⟨ret@0.00s⟩ 그렇구나. 다른 걸 물어볼게.
-[  0.20s][moshi] ⟦⚡SPAN IRRELEVANT@0.20s: The current temperature in Tokyo is 28.5°C, humidity is 65%, and wind speed is 3.2 km/h.⟧ 네, 어떤 걸 도와드릴까요?
-[  0.22s][moshi] «interrupted» 혹시 오늘 하루 일정을 정리해 드릴까요? 저는 자리엔이라고 해요. —
-[  0.27s][user ] «interrupts_prev» … 잠깐만, 그 일식은 미국에서만 보였어?
-[  0.30s][moshi] 아니요, 미국뿐만 아니라 캐나다와 멕시코에서도 관측 가능했어요.
-[  0.34s][user ] «backchannel» 네.
-[  0.34s][moshi] 이천십칠년의 그 일식은 북미 대륙 전체에서 큰 관심을 받았답니다. 많은 분들이 특별한 경험을 하셨을 거예요.
-[  0.42s][user ] «backchannel» 그렇죠.
-[  0.42s][user ] 그 ⟨ret@0.37s⟩ 일식 보려고 어디로 많이 갔어?
-[  0.45s][moshi] ⟦⚡SPAN@0.45s: Oregon was in the path of totality, with Madras being a popular viewing location.⟧ 많은 분들이 완전 일식을 보기 위해 오리건 주로 가셨는데, 특히 매드라스가 인기 있는 관측 장소였답니다.
-[  0.53s][user ] 오리건 주구나. 완전 일식이란 게 뭔데?
-[  0.56s][moshi] 완전 일식은 달이 태양을 완전히 가리는 현상을 말해요. 아주 드물게 일어나는 특별한 천문 현상이랍니다.
-[  0.63s][user ] «backchannel» 네네.
-[  0.64s][user ] 아, ⟨ret@0.37s⟩ 그렇구나. 그럼 다음 일식은 언제쯤 볼 수 있어?
-[  0.69s][moshi] ⟦⚡SPAN@0.69s: The next total solar eclipse visible in North America will occur on April 8, 2024.⟧ 북미 대륙에서 다음 완전 일식은 이천이십사년 사월 팔일에 관측될 예정이라고 합니다.
-[  0.74s][user ] 이천이십사년이네. 꽤 기다려야겠다.
-[  0.76s][moshi] 네, 그렇네요. 그래도 그날을 위해 미리 계획을 세워보는 것도 좋겠죠.
-[  0.81s][user ] 좋은 ⟨ret@0.72s⟩ 생각이야. 혹시 그 일식 관련해서 사진이나 영상 같은 거 찾아볼 수 있어?
-[  0.88s][moshi] ⟦⚡SPAN@0.88s: (tool result) Here's a search result: The Great North American Eclipse of August 21, 2017 - Time and Date. tim⟧ 네, 이천십칠년 팔월 이십일일 북미 대륙 대일식에 대한 사진과 영상 자료를 찾았습니다. timeanddate.com에서 확인하실 수 있어요.
-      CALL: {"function": "search", "arguments": {"query": "2017 solar eclipse photos and videos"}}
-[  0.96s][user ] «backchannel» 어머.
-[  0.96s][user ] 고마워, 자리엔.
-[  0.97s][moshi] 천문 현상에 관심을 가져주셔서 감사합니다.
+[  0.00s][user ] 가장 ⟨ret@0.00s⟩ 많은 남우주연상 수상자를 알고 싶어요.
+[  0.04s][moshi] ⟦⚡SPAN@0.04s: Amitabh Bachchan.⟧ 많은 영화인들이 연기력을 인정받았지만, 아미타브 바찬 배우가 가장 많은 남우주연상을 수상했습니다.
+[  0.11s][user ] «backchannel» 예.
+[  0.12s][user ] 아, 그렇군요. 그 배우에…
+[  0.14s][user ] …대해 ⟨ret@0.00s⟩ 더 자세히 알려주시겠어요?
+[  0.17s][moshi] ⟦⚡SPAN@0.17s: He is widely regarded as one of the greatest and most influential actors in the history of Indian cinema.⟧ 아미타브 바찬은 인도의 대표적인 배우로, 수많은 영화에서 주연을 맡았습니다.
+[  0.23s][moshi] 그는 인도 영화 역사상 가장 위대하고 영향력 있는 배우 중 한 명으로 널리 인정받고 있습니다.
+[  0.33s][user ] «backchannel» 음.
+[  0.33s][user ] …그분이 ⟨ret@0.07s⟩ 출연한 영화 중에 추천해 주실 만한 게 있을까요?
+[  0.39s][moshi] ⟦⚡SPAN@0.39s: Sholay, released in 1975, is widely considered one of the greatest Indian films ever made.⟧ 천구백칠십오년에 개봉한 '쇼레이'는 인도 영화 역사상 최고의 영화 중 하나로 널리 여겨집니다.
+[  0.47s][user ] «backchannel» 음.
+[  0.48s][user ] '쇼레이'요, ⟨ret@0.44s⟩ 알겠습니다. 그 영화는 어떤 장르인가요?
+[  0.52s][moshi] ⟦⚡SPAN@0.52s: The film is a remake of the 1960 American Western film *Seven Samurai*.⟧ 이 영화는 천구백육십년 미국 서부 영화 '칠인의 사무라이'를 리메이크한 작품입니다.
+[  0.58s][user ] 재미있겠네요. ⟨ret@0.22s⟩ 혹시 다른 추천 영화도 있을까요?
+[  0.62s][moshi] ⟦⚡SPAN IRRELEVANT@0.62s: The current weather in London, United Kingdom is 18.5°C, humidity 82%, wind 7.2 km/h.⟧ '데와르'도 훌륭한 영화입니다. 가족애와 희생을 다룬 감동적인 이야기입니다.
+[  0.67s][user ] «backchannel» 네.
+[  0.68s][user ] 가족애와 ⟨ret@0.64s⟩ 희생이라… 어떤 배우가 함께 출연했나요?
+[  0.72s][moshi] ⟦⚡SPAN@0.72s: Shah Rukh Khan played the role of Raj Aryan, a non-resident Indian (NRI).⟧ '데와르'에는 샤루크 칸 배우도 출연했습니다.
+[  0.75s][moshi] 샤루크 칸 배우는 비거주 인도인인 라지 아리안 역할을 맡았습니다.
+[  0.81s][user ] 샤루크 칸도 출연했군요. 두 분의 연기 합이 궁금해지네요.
+[  0.86s][moshi] 두 배우의 연기 앙상블은 정말 환상적입니다.
+[  0.90s][user ] 영화를 봐야겠어요. 좋은 정보를 알려주셔서 감사합니다.
+[  0.94s][moshi] 도움이 되었다니 기쁩니다. 영화를 보시고 또 이야기 나누면 좋겠네요.

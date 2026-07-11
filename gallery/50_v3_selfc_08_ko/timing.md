@@ -4,123 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "하서",
+#     "name": "태훈",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-31",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-12",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "date": "2026-04-01",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-11-30",
+#       "date": "2026-03-21",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-03-18",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-28",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-08-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2025-08-23",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-08-06",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-09",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-02",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-16",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 가족들과 갈 만한 조용한 카페 있나요? | S2 숨은 정원이요? 분위기는 어때요? | S3 예약 번호는 알 칠 팔 구 공 일 이군요 — 혹시 그 카페 근 | S4 음… 커피 숲으로 예약해 주세요. 토요일 오후 두시, 가족 인
+# EXAMINER(FDB-v2) 단계: S1 도쿄역에서 시부야 크로싱까지 대중교통으로 제일 빠른 길은 어디 | S2 이번 주 토요일에 친구랑 같이 갈 건데, 혹시 그날 날씨는 어 | S3 아, 맞아! 이번 주말에 친구 생일인데, 시부야에서 맛있는 저 | S4 칠 팔 엑스 구 이 엘… 알았어. 고마워, 크레르!
 
-     0.00s  user  발화 시작: 이번 주 토요일에 가족들과 갈 만한 조용한 카페 있나요?
+     0.00s  user  발화 시작: 도쿄역에서 시부야 크로싱까지 대중교통으로 제일 빠른 길은 어디야?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn6 첫 프레임)
-     0.04s  agent 발화 시작: <ret> 토요일에 가족과 함께 가기 좋은 카페는 '별 헤는 밤'이에요. 강남구 도산대로에 있고, 평점은 사
-     0.04s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"restaurants": [{"name": "별 헤는 밤", "address": "서울 강남구 도
-     0.04s  user  발화 끝
-     0.13s  user  발화 시작: 맞아요.
-     0.13s  agent 발화 끝
-     0.14s  user  발화 시작: 아, 강남이요? 음… 좀 더 가까운 곳은 없을까요?
-     0.14s  user  발화 끝
-     0.17s  agent 발화 시작: 조금 더 가까운 곳을 찾으시는군요. 혹시 지금 계신 곳 근처를 말씀해 주시겠어요?
-     0.17s  user  발화 끝
-     0.22s  user  발화 시작: 저는 지금 역삼역 근처에 있어요.
-     0.22s  agent 발화 끝
-     0.23s  <ret> 발화 (turn13 첫 프레임)
-     0.24s  agent 발화 시작: <ret> 역삼역 근처에는 '숨은 정원'이라는 카페가 있어요. 평점은 사 점 이점이고, 가격대는 일만 오천 
-     0.24s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"restaurants": [{"name": "숨은 정원", "address": "서울 강남구 역삼
-     0.24s  user  발화 끝
-     0.32s  user  발화 시작: 숨은 정원이요? 분위기는 어때요?
-     0.32s  agent 발화 끝
-     0.34s  agent 발화 시작: '숨은 정원'은 아늑하고 조용한 분위기로 가족과 함께 편안하게 시간을 보내기에 좋을 것 같아요.
-     0.34s  user  발화 끝
-     0.39s  user  발화 시작: 네.
-     0.39s  agent 발화 끝
-     0.40s  agent 발화 시작: 손님들이 특히 식물 인테리어가 예쁘다고 많이 말씀하시더라고요. 차 종류도 다양하고요.
-     0.40s  user  발화 끝
-     0.43s  <ret> 발화 (turn18 첫 프레임)
-     0.44s  user  발화 시작: 예.
-     0.44s  agent 발화 끝
-     0.44s  user  발화 시작: 차 종류가 다양하다니 좋네요. 혹시 예약은 가능한가요?
-     0.44s  user  발화 끝
-     0.47s  agent 발화 시작: <ret> 네, '숨은 정원'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 알 칠
-     0.47s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"reservation id": "R789012", "status": "confirmed", "re
-     0.47s  user  발화 끝
-     0.55s  user  발화 시작: 음.
-     0.55s  agent 발화 끝
-     0.56s  user  발화 시작: 예약 번호는 알 칠 팔 구 공 일 이군요 — 혹시 그 카페 근처에 주차는 편리한가요?
-     0.56s  user  발화 끝
-     0.63s  agent 발화 시작: '숨은 정원' 근처에는… —
-     0.63s  user  발화 끝
-     0.64s  user  발화 시작: …혹시 주차 공간이 부족하면 다른 카페로 알아볼까요?
-     0.64s  agent 발화 끝
-     0.65s  <ret> 발화 (turn23 첫 프레임)
-     0.67s  agent 발화 시작: <ret> 역삼역 근처에 주차 가능한 '커피 숲'이라는 카페가 있어요. 평점은 사점이고, 가격대는 일만 팔천
-     0.67s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"restaurants": [{"name": "커피 숲", "address": "서울 강남구 역삼동
-     0.67s  user  발화 끝
-     0.75s  user  발화 시작: 커피 숲이요? 거기는 분위기는 어떤가요?
-     0.75s  agent 발화 끝
-     0.77s  agent 발화 시작: '커피 숲'은 넓고 쾌적한 공간을 자랑하며, 가족 단위 손님들이 많이 찾는 곳이에요. 조용히 대화하기에도 괜
+     0.00s  <ret> 발화 (turn7 첫 프레임)
+     0.05s  agent 발화 시작: <ret> 도쿄역에서 시부야 크로싱까지 대중교통으로 가는 가장 빠른 길은 약 삼십삼분 정도 걸리고, JR 야
+     0.05s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) The quickest route from Tokyo Station to Shibuya Crossin
+     0.05s  user  발화 끝
+     0.15s  user  발화 시작: 응.
+     0.15s  agent 발화 끝
+     0.16s  user  발화 시작: 삼십삼분이라… 음, 좀 길겠네.
+     0.16s  user  발화 끝
+     0.18s  agent 발화 시작: 시간은 조금 걸리지만, 환승 없이 한 번에 갈 수 있어서 편리하실 거예요.
+     0.18s  user  발화 끝
+     0.25s  user  발화 시작: 그래.
+     0.25s  agent 발화 끝
+     0.26s  user  발화 시작: 이번 주 토요일에 친구랑 같이 갈 건데, 혹시 그날 날씨는 어때?
+     0.26s  user  발화 끝
+     0.32s  agent 발화 시작: <ret> 이천이십육년 칠월 십일일 토요일 시부야 날씨는 이십팔 점 오도이고, 습도는 육십팔퍼센트이며, 비가
+     0.32s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) The weather forecast for Shibuya, Tokyo on Saturday, Jul
+     0.32s  user  발화 끝
+     0.37s  <ret> 발화 (turn14 첫 프레임)
+     0.41s  user  발화 시작: 와.
+     0.41s  agent 발화 끝
+     0.42s  agent 발화 시작: 우산을 챙기시는 게 좋겠네요. 그래도 야외 활동하기에 아주 나쁘지는 않을 거예요.
+     0.42s  user  발화 끝
+     0.49s  user  발화 시작: 음.
+     0.49s  agent 발화 끝
+     0.49s  user  발화 시작: 아, 맞아! 이번 주말에 친구 생일인데, 시부야에서 맛있는 저녁 먹을 만한 곳 좀 추천해 줄래?
+     0.49s  user  발화 끝
+     0.50s  <ret> 발화 (turn12 첫 프레임)
+     0.58s  agent 발화 시작: <ret> 시부야에는 한 노 다이도코로 베테이—와규 소고기로 유명한 곳—와 우오베이 시부야 도겐자카—가성비 
+     0.58s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) There are several highly-rated restaurants in Shibuya, i
+     0.58s  user  발화 끝
+     0.68s  user  발화 시작: 와규… 맛있겠다! 한 노 다이도코로 베테이 예약해 줘. 이번 주 토요일 저녁 일곱시에 두 명.
+     0.68s  agent 발화 끝
+     0.77s  agent 발화 시작: <ret> 한 노 다이도코로 베테이에 이천이십육년 칠월 십일일 토요일 저녁 일곱시에 두 분 예약이 완료되었습
+     0.77s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Reservation confirmed at Han no Daidokoro Bettei for 2 p
      0.77s  user  발화 끝
-     0.84s  user  발화 시작: 네.
-     0.84s  agent 발화 끝
-     0.84s  user  발화 시작: 음… 커피 숲으로 예약해 주세요. 토요일 오후 두시, 가족 인원으로요.
-     0.84s  user  발화 끝
-     0.89s  agent 발화 시작: <ret> '커피 숲'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 씨 삼 사 오
-     0.89s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"reservation id": "C345678", "status": "confirmed", "re
-     0.89s  user  발화 끝
-     0.96s  user  발화 시작: 예약 감사합니다.
-     0.96s  agent 발화 끝
-     0.97s  agent 발화 시작: 천만에요. 가족과 함께 즐거운 시간 보내시길 바랍니다.
-     0.97s  user  발화 끝
+     0.90s  user  발화 시작: 와.
+     0.90s  agent 발화 끝
+     0.91s  user  발화 시작: 칠 팔 엑스 구 이 엘… 알았어. 고마워, 크레르!
+     0.91s  user  발화 끝
+     0.96s  agent 발화 시작: 천만에요! 친구분과 즐거운 생일 저녁 보내세요.
+     0.96s  user  발화 끝
      1.00s  agent 발화 끝

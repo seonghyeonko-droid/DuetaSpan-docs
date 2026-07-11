@@ -1,51 +1,56 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Belo, a warm and attentive counselor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Oriomi, a warm and attentive life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Remy",
+    "name": "Kim",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-01",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-01-24",
+      "date": "2026-06-03",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-12-17",
-      "category": "home",
-      "text": "User's home address is 415 Oak Avenue."
+      "date": "2026-03-23",
+      "category": "work",
+      "text": "User works as a graphic designer."
     },
     {
-      "date": "2025-07-15",
+      "date": "2026-02-17",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-09-28",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "text": "User is planning a trip to Kyoto in August."
     },
     {
-      "date": "2025-07-09",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2025-06-14",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-11",
+      "date": "2026-05-25",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -53,32 +58,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-11-29",
-      "title": "Comparing gym memberships",
+      "date": "2025-06-14",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you have the contact information for ⟨ret@2.30s⟩ Lee Sun-hee?
-[  2.69s][moshi] ⟦⚡SPAN@2.70s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. That kind of data is usually kept private.
-      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
-[  8.34s][user ] «backchannel» Yeah.
-[ 10.14s][user ] Oh, okay. Well, what about her most recent album release ⟨ret@13.71s⟩ date?
-[ 14.10s][moshi] ⟦⚡SPAN@14.11s: Lee Sun-hee released her fifteenth studio album, "My Christmas Story", on December 6, 2023.⟧ She released her fifteenth studio album, "My Christmas Story", on December sixth, twenty twenty-three. It's a lovely collection, I hear!
-[ 22.69s][user ] That's good to know.
-[ 23.82s][moshi] It’s wonderful to stay current with artists you enjoy. Music can be so uplifting, don’t you think?
-[ 29.15s][user ] Yeah, definitely. What's the weather like in Seoul right now?
-[ 32.55s][moshi] ⟨ret@32.47s⟩ ⟦⚡SPAN@32.55s: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h⟧ The weather in Seoul is currently twenty-six point one degrees Celsius, with humidity at sixty-eight percent and a wind speed of three point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 36.53s][user ] «backchannel» Mm-hmm.
-[ 41.53s][moshi] «interrupted» It sounds quite pleasant! Perhaps a good day to enjoy some music outdoors—
-[ 45.88s][user ] «interrupts_prev» …Do you think she does many concerts these ⟨ret@48.12s⟩ days?
-[ 48.28s][moshi] ⟦⚡SPAN@48.28s: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from February 23 to February 25, 2024, at the Olymp⟧ She held a concert series called “Re:Lee” from February twenty-third to twenty-fifth, twenty twenty-four, at the Olympic Hall in Seoul. There aren't any concerts scheduled right now, according to her official website.
-      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee concerts 2024 2025"}}
-[ 60.55s][user ] Oh, that's a shame. I missed it.
-[ 62.18s][moshi] It’s disappointing to miss an event you’re looking forward to. Perhaps you could sign up for her newsletter to stay informed about future performances?
+[  0.00s][user ] Do you happen to know Sarah Miller's ⟨ret@1.92s⟩ phone number?
+[  2.32s][moshi] ⟦⚡SPAN@2.32s: (no information found)⟧ I’ve checked everywhere, but I couldn’t find a phone number for Sarah Miller. It seems that information isn’t publicly available.
+      CALL: {"function": "search", "arguments": {"query": "Sarah Miller phone number"}}
+[  8.94s][user ] Oh, okay. Well, what about the weather in Seoul ⟨ret@12.09s⟩ last Tuesday?
+[ 12.48s][moshi] ⟦⚡SPAN@12.49s: (no information found)⟧ I’m sorry, I can only provide current weather information, not historical data. I wish I could help with that!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-08"}}
+[ 15.96s][user ] «backchannel» Exactly.
+[ 18.95s][user ] Hmm, that’s a shame.
+[ 20.30s][moshi] It is, isn’t it? Sometimes getting the information we need isn’t possible. Perhaps we could focus on planning for a lovely weekend instead?
+[ 27.12s][user ] That sounds nice. What movies are playing nearby right ⟨ret@31.07s⟩ now?
+[ 31.39s][moshi] ⟦⚡SPAN@31.39s: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The Garfield Movie'. Regal Edwards Irvine Spe⟧ Right now, ‘Inside Out 2’, ‘Bad Boys: Ride or Die’, and ‘The Garfield Movie’ are playing at Regal Edwards Irvine Spectrum 21. Would you like me to check showtimes for any of those?
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}

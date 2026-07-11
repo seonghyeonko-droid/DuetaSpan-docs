@@ -1,51 +1,64 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Frella, a practical and reassuring life coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Frari, a encouraging and non-judgmental supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Ruby",
+    "name": "Grace",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "German",
     "gender": "female",
-    "age_range": "late 30s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-02-15",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-03-30",
+      "date": "2025-12-02",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-08-16",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-08-08",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-08-05",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-06-03",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-02-09",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
-    },
-    {
-      "date": "2025-10-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-07-23",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-22",
+      "date": "2026-05-13",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-04-14",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -53,57 +66,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-05",
-      "title": "Booked a dentist appointment",
+      "date": "2025-10-29",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m thinking of visiting some palaces. Which ones are really historically important?
-[  0.03s][moshi] That’s a lovely idea! Many palaces tell fascinating stories.
-[  0.05s][user ] «backchannel» Yeah.
-[  0.05s][user ] Are there any in England that were built for someone…
-[  0.08s][user ] …then ⟨ret@0.00s⟩ taken over by a Tudor?
-[  0.09s][moshi] ⟦⚡SPAN@0.09s: Hampton Court Palace was originally built for Cardinal Thomas Wolsey, chief minister to Henry VIII, and was la⟧ Hampton Court Palace began as a home for Cardinal Wolsey, a key figure for Henry the Eighth, and then became royal property.
-[  0.15s][user ] Oh, ⟨ret@0.11s⟩ Wolsey! I’ve heard of him. What did Henry do with it once he took it?
-[  0.19s][moshi] ⟦⚡SPAN@0.19s: Henry VIII greatly expanded Hampton Court Palace, using it as a showcase for his power and hosting lavish even⟧ Henry the Eighth really expanded Hampton Court, using it to show off his wealth and throwing big parties.
-[  0.23s][user ] Lavish, ⟨ret@0.00s⟩ huh? Sounds fun. Which Tudors actually *lived* there, then?
-[  0.26s][moshi] ⟦⚡SPAN@0.26s: Henry VIII, Edward VI, Mary I, and Elizabeth I all resided at Hampton Court Palace during their reigns.⟧ Henry the Eighth, Edward the Sixth, Mary the First, and Elizabeth the First all lived at Hampton Court during their time as rulers.
-[  0.32s][user ] Wow, all of them! That’s quite a history.
-[  0.34s][moshi] It really is. A place can absorb so much energy over the centuries, don’t you think?
-[  0.38s][user ] Did ⟨ret@0.33s⟩ Elizabeth change much about it, or did she leave it as Henry made it?
-[  0.41s][moshi] ⟦⚡SPAN@0.41s: Elizabeth I made relatively few structural changes to Hampton Court Palace, preferring to maintain its existin⟧ Elizabeth the First didn’t change much about the palace, preferring to keep the grandeur Henry the Eighth created.
-[  0.46s][user ] «backchannel» Oh.
-[  0.46s][user ] So it was pretty much Henry’s vision she lived in?
-[  0.49s][moshi] Largely, yes. She appreciated the existing magnificence of the palace.
-[  0.51s][user ] «backchannel» Yeah.
-[  0.51s][user ] What about before Wolsey? Was there something there before he built Hampton Court?.
-[  0.55s][moshi] «interrupted» Before Wolsey’s palace, the site was occupied by a manor house belonging to the Knights Hospitaller—
-[  0.59s][user ] «interrupts_prev» …Was ⟨ret@0.38s⟩ it a really big manor house, or just a small one?
-[  0.62s][moshi] ⟦⚡SPAN@0.62s: The manor house belonging to the Knights Hospitaller prior to Wolsey’s construction was a comparatively small ⟧ It was a relatively modest manor house, primarily used for administrative purposes by the Knights Hospitaller.
-[  0.66s][moshi] Before Wolsey built Hampton Court, the Knights Hospitaller had a smaller manor house there, mostly for managing things.
-[  0.70s][user ] So Wolsey completely transformed the site, then.
-[  0.72s][moshi] He envisioned something grand, a statement of his own importance.
-[  0.74s][user ] And Henry just… took it? That sounds a bit rude.
-[  0.77s][moshi] It was a common practice for monarchs of that era to acquire properties from powerful figures.
-[  0.81s][user ] I ⟨ret@0.43s⟩ suppose so. What’s the weather like there today?
-[  0.83s][moshi] ⟦⚡SPAN@0.83s: (tool result) 18.5°C, humidity 62%, wind 7.2 km/h⟧ Right now at Hampton Court Palace, it’s 18.5 degrees Celsius, with 62 percent humidity and a 7.2 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Hampton Court Palace"}}
-[  0.88s][user ] Not ⟨ret@0.75s⟩ bad at all. Is it open to the public currently?
-[  0.91s][moshi] ⟦⚡SPAN@0.91s: (tool result) Hampton Court Palace is open daily from 10:00 AM to 6:00 PM, with last entry at 5:00 PM. Histori⟧ Yes, Hampton Court Palace is open today from 10 AM to 6 PM, with the last entry at 5 PM. You can find more details at hrp.org.uk.
-      CALL: {"function": "search", "arguments": {"query": "Hampton Court Palace opening hours"}}
-[  0.98s][user ] That’s good to know. Thanks, Frella.
-[  0.99s][moshi] You’re very welcome.
+[  0.00s][user ] Hi, I'm planning a vacation and feeling a bit overwhelmed.
+[  0.11s][moshi] Oh, hello!
+[  0.13s][user ] I ⟨ret@0.00s⟩ was wondering, where does *Need for Speed Payback* take place?
+[  0.26s][moshi] ⟦⚡SPAN@0.26s: The game *Need for Speed Payback* is largely set in Fortune Valley, a fictional open world inspired by the lan⟧ Well, *Need for Speed Payback* is primarily set in Fortune Valley—it’s a fictional area inspired by Nevada and California landscapes.
+[  0.48s][user ] «backchannel» Uh-huh.
+[  0.49s][user ] What’s ⟨ret@0.49s⟩ the weather like there right now?
+[  0.57s][moshi] ⟦⚡SPAN@0.57s: (tool result) Fortune Valley, Nevada: 28.3°C, humidity 21%, wind 13.4 km/h, clear skies.⟧ Currently in Fortune Valley, Nevada, it’s 28.3 degrees Celsius, with 21% humidity and clear skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Fortune Valley, Nevada"}}
+[  0.73s][user ] That sounds…nice. Maybe I should go in October?
+[  0.82s][moshi] October sounds lovely! It's a great time to enjoy pleasant weather without the scorching summer heat.

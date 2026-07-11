@@ -1,10 +1,10 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Nox, a grounded and empathetic supportive advisor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Drio, a thoughtful and soft-spoken personal guide who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Casey",
+    "name": "Avery",
     "location": {
       "city": "New York",
       "country": "United States",
@@ -18,93 +18,66 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
   },
   "saved_memories": [
     {
-      "date": "2026-04-13",
+      "date": "2026-05-22",
       "category": "pet",
       "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-03-16",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2026-02-06",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-01-14",
+      "date": "2026-03-07",
       "category": "home",
-      "text": "User's home address is 581 Pine Court."
+      "text": "User's home address is 734 Pine Court."
     },
     {
-      "date": "2025-09-14",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-03-03",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-11",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2025-09-25",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-27",
-      "title": "Researching a used car",
+      "date": "2026-06-25",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-03-13",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-19",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-06-06",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you make a subscription plan for weekly…
-[  0.02s][user ] …access ⟨ret@0.00s⟩ to product two four six eight zero?
-[  0.04s][moshi] ⟦⚡SPAN@0.04s: (tool result) Subscription created: plan ID 93721, weekly, product 24680, $19.99.⟧ I’ve set up a weekly subscription for product two four six eight zero. It’s plan ID nine three seven two one, at nineteen ninety-nine dollars.
-      CALL: {"function": "create_subscription_plan", "arguments": {"product_id": "24680", "interval": "weekly"}}
-[  0.10s][user ] That's… a lot for weekly, isn’t it?
-[  0.11s][moshi] It can feel that way, but pricing is set by the product team. Perhaps we could look at alternatives if you’d like?
-[  0.16s][user ] Um, yeah, are there any cheaper options? Maybe monthly?
-[  0.18s][moshi] Let’s see what’s available. A monthly subscription for the same product is thirty-nine ninety-nine dollars.
-[  0.22s][user ] That's ⟨ret@0.00s⟩ better. Can we switch to monthly instead?
-[  0.24s][moshi] ⟦⚡SPAN@0.24s: (tool result) Subscription updated: plan ID 93721, monthly, product 24680, $39.99.⟧ I’ve updated your plan to monthly access for thirty-nine ninety-nine dollars. It's still plan ID nine three seven two one.
-      CALL: {"function": "create_subscription_plan", "arguments": {"product_id": "24680", "interval": "monthly"}}
-[  0.29s][user ] Great. So, uh, what’s the weather like today?
-[  0.30s][moshi] It’s currently twenty-three point zero degrees Celsius, with seventy-four percent humidity and a light breeze of five point five kilometers per hour.
-[  0.36s][user ] Five point five? That's… specific.
-[  0.37s][moshi] I aim to be thorough! It's good to have a precise picture when you're settling into a new place, isn’t it?
-[  0.42s][user ] I guess. Say, can you find me a good Italian restaurant nearby?
-[  0.44s][moshi] I can certainly help with that. Do you have a preferred price range or neighborhood?
-[  0.48s][user ] Not ⟨ret@0.41s⟩ really, just… good food.
-[  0.49s][moshi] ⟦⚡SPAN@0.49s: "Ristorante Bellissimo is a highly-rated Italian restaurant located at 123 Main Street, known for its authenti⟧ Ristorante Bellissimo has excellent reviews, located on one two three Main Street. People love their pasta and cozy vibe—it has four and a half stars from eighty-seven reviewers.
-[  0.56s][user ] «backchannel» Yeah.
-[  0.56s][user ] Hmm, ⟨ret@0.34s⟩ that sounds nice. Can you show me directions there?
-[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tool result) Driving: 1.2 km, 5 min. Walking: 1.7 km, 22 min. Transit: 2.1 km, 28 min.⟧ By car it’s one point two kilometers, about five minutes. Walking would take twenty-two minutes, or twenty-eight by transit.
-      CALL: {"function": "map_directions", "arguments": {"destination": "Ristorante Bellissimo, 123 Main Street"}}
-[  0.63s][user ] Walking sounds good.
-[  0.63s][moshi] A lovely walk it is! Enjoy the fresh air and take your time exploring.
-[  0.67s][user ] [happy] Thanks. Okay, one last thing. What time is it right now?
-[  0.69s][moshi] It is Friday, July tenth, two thousand twenty-six at two thirty-three PM in Asia/Seoul.
-[  0.73s][user ] Seoul? I didn’t say anything about Seoul.
-[  0.74s][moshi] My apologies. I seem to have defaulted to a location. Where are you currently located?
-[  0.78s][user ] «backchannel» Right.
-[  0.78s][user ] I’m in… well, I’m not saying.
-[  0.79s][moshi] That’s perfectly alright. I respect your privacy. I will refrain from asking for location details going forward.
-[  0.83s][user ] Good. ⟨ret@0.78s⟩ Can you remind me what the subscription plan is?
-[  0.86s][moshi] ⟦⚡SPAN@0.86s: [2026-07-10] Subscription created: plan ID 93721, monthly, product 24680, $39.99.⟧ You have a monthly subscription, plan ID nine three seven two one, for product two four six eight zero, costing thirty-nine ninety-nine dollars.
-[  0.91s][user ] Right. That’s good.
-[  0.92s][moshi] It’s reassuring to have those details readily available, especially when you’re getting settled.
-[  0.95s][user ] «backchannel» Right.
-[  0.95s][user ] Yeah, it is. Thanks, Nox.
-[  0.96s][moshi] You're very welcome. I’m glad I could help with getting things set up for you today.
+[  0.00s][user ] Start ⟨ret@0.00s⟩ a code generation session and save tests to my documents folder.
+[  0.06s][moshi] ⟦⚡SPAN@0.06s: (tool result) Directory "tests" created successfully in /Users/drio/Documents.⟧ I’ve started a code generation session and created a “tests” folder in your Documents. It’s a good practice to keep things organized, especially when working with code.
+      CALL: {"function": "create_directory", "arguments": {"directory_name": "tests"}}
+[  0.21s][user ] That’s ⟨ret@0.00s⟩ good, but can you find me some information on the Python unittest framework?
+[  0.28s][moshi] ⟦⚡SPAN@0.28s: The `unittest` module in Python supports automated testing of software, offering a comprehensive framework wit⟧ The Python `unittest` framework supports automated testing, offering discovery, fixtures, and assertion methods—you can find more details at docs.python.org.
+[  0.39s][user ] That sounds… complicated. —
+[  0.41s][user ] …Is there an easier way to write tests…
+[  0.45s][user ] …maybe ⟨ret@0.23s⟩ with something visual?
+[  0.47s][moshi] ⟦⚡SPAN@0.47s: (tool result) Playwright is a popular end-to-end testing framework that supports visual testing, allowing deve⟧ I understand feeling overwhelmed; new frameworks often seem that way. There are visual testing tools available, yes. Let me search for some popular options.
+      CALL: {"function": "tavily-search", "arguments": {"query": "visual testing tools python"}}
+[  0.60s][moshi] Playwright is a popular option for visual testing in Python, letting you compare screenshots and detect UI changes. You can find more at playwright.dev. Perhaps that would be a good fit?
+[  0.76s][user ] «backchannel» Uh-huh.
+[  0.77s][user ] That sounds promising. ⟨ret@0.79s⟩ Can you show me an example of how to use Playwright to take a screenshot?
+[  0.87s][moshi] ⟦⚡SPAN@0.87s: (no information found)⟧ I’m sorry, I don’t have a specific example for taking a screenshot with Playwright readily available. I can search for a tutorial if you’d like.

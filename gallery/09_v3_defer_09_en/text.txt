@@ -1,118 +1,79 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Tealo, a practical and reassuring life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Jomi, a practical and reassuring supportive advisor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Marcus",
+    "name": "Morgan",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "late 30s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-16",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
+      "date": "2026-02-03",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-11",
+      "date": "2026-01-31",
       "category": "home",
-      "text": "User's home address is 813 Birch Road."
+      "text": "User's home address is 616 Oak Avenue."
     },
     {
-      "date": "2025-07-25",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-01-09",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in May."
     },
     {
-      "date": "2025-06-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-12-31",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-09-07",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-07-30",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-25",
+      "date": "2026-04-19",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-08-27",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-20",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you find a bus going from Chicago to Denver on March twenty-second for three ⟨ret@4.59s⟩ passengers?
-[  4.82s][moshi] ⟦⚡SPAN@4.83s: (tool result) Chicago to Denver, 2026-03-22, 3 passengers: Greyhound, $225, departs 8:00 AM, arrives 10:00 PM.⟧ There’s a Greyhound option for two hundred and twenty-five dollars. It leaves at eight AM and arrives ten PM.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "2026-03-22", "passengers": 3}}
-[ 10.12s][user ] «backchannel» Yeah.
-[ 11.84s][user ] That sounds…long.
-[ 13.93s][moshi] Long journeys can offer a different kind of space for reflection, you know?
-[ 16.42s][user ] «backchannel» Right.
-[ 18.34s][user ] [laugh] Maybe. What about flights instead? One way, same ⟨ret@23.99s⟩ date.
-[ 24.15s][moshi] ⟦⚡SPAN@24.15s: (tool result) Chicago to Denver, 2026-03-22: United, $189, departs 9:15 AM, arrives 11:30 AM. Southwest, $210,⟧ United has a flight for one hundred and eighty-nine dollars, departing at nine fifteen AM. Southwest is two-ten.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "2026-03-22"}}
-[ 30.09s][user ] «backchannel» Yeah, yeah.
-[ 32.77s][user ] Hmm, United sounds better. Can I book ⟨ret@35.89s⟩ that?
-[ 36.21s][moshi] ⟦⚡SPAN@36.21s: (tool result) No seats available on United flight from Chicago to Denver on 2026-03-22.⟧ Oh, dear. It seems that United flight is fully booked.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "2026-03-22"}}
-[ 40.31s][user ] Seriously? That's frustrating.
-[ 42.73s][moshi] Disappointment is a part of life, isn't it? It’s how we learn to adapt.
-[ 47.27s][user ] Easier said than done. What’s the weather in Denver on the ⟨ret@50.87s⟩ twenty-second?
-[ 51.19s][moshi] ⟦⚡SPAN@51.19s: (tool result) Denver, 2026-03-22: 15.5°C, partly cloudy, wind 8.2 km/h.⟧ It’ll be fifteen point five degrees Celsius, partly cloudy, with a light breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver", "date": "2026-03-22"}}
-[ 58.18s][user ] Not bad. Okay, let’s look at Southwest ⟨ret@61.07s⟩ then.
-[ 61.30s][moshi] ⟦⚡SPAN@61.31s: (tool result) Southwest flight from Chicago to Denver, 2026-03-22, $210, departs 1:00 PM, arrives 3:15 PM.⟧ Southwest has a flight departing at one PM, arriving at three fifteen, for two hundred and ten dollars.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "2026-03-22"}}
-[ 69.49s][user ] Book that one for ⟨ret@70.80s⟩ me, please.
-[ 71.20s][moshi] ⟦⚡SPAN@71.20s: (tool result) Booking confirmed: Southwest, Chicago to Denver, 2026-03-22, $210, confirmation ID: 7X9K2L.⟧ Your Southwest flight is booked! Confirmation ID is seven X nine K two L.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "2026-03-22"}}
-[ 76.13s][user ] «backchannel» Mm-hmm.
-[ 77.72s][user ] Great. I also need to find a hotel in Denver. Something near the convention ⟨ret@82.19s⟩ center.
-[ 82.50s][moshi] ⟦⚡SPAN@82.51s: (tool result) Denver convention center hotels: Hyatt Regency, $200/night; Embassy Suites, $180/night.⟧ The Hyatt Regency is two hundred dollars a night, and Embassy Suites is one eighty. Both are near the convention center.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Denver", "keywords": "convention center"}}
-[ 86.46s][user ] «backchannel» Yeah.
-[ 90.53s][user ] Embassy Suites sounds good. Can you check availability for March ⟨ret@94.60s⟩ twenty-second?
-[ 94.68s][moshi] ⟦⚡SPAN@94.68s: (tool result) Embassy Suites, Denver, 2026-03-22: One room available, $180/night, confirmation ID: 4R6P8Q.⟧ One room is available at Embassy Suites for one hundred and eighty dollars. Confirmation ID is four R six P eight Q.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel": "Embassy Suites", "location": "Denver", "date": "2026-03-22"}}
-[100.73s][user ] «backchannel» Mm-hmm.
-[103.37s][user ] Perfect. I'm starting to feel a little less stressed, actually.
-[107.17s][moshi] That’s wonderful to hear. Sometimes, just taking action can shift our perspective.
-[111.47s][user ] «backchannel» Right.
-[113.90s][user ] You’re right. I completely forgot to schedule a ride from the ⟨ret@117.16s⟩ airport.
-[117.32s][moshi] ⟦⚡SPAN@117.32s: (tool result) UberX estimate: $35, 20 minutes. Lyft estimate: $30, 25 minutes.⟧ An UberX will cost about thirty-five dollars and take twenty minutes. Lyft is thirty dollars, but twenty-five minutes.
-      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup": "Denver Airport", "destination": "Embassy Suites Denver"}}
-[125.76s][user ] Let’s go with Lyft.
-[127.08s][moshi] ⟨ret@127.00s⟩ ⟦⚡SPAN@127.08s: (tool result) Lyft ride scheduled: Pickup at Denver Airport, destination Embassy Suites Denver.⟧ Your Lyft ride is scheduled to pick you up at the airport.
-      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup": "Denver Airport", "destination": "Embassy Suites Denver"}}
-[128.18s][user ] «backchannel» Yeah.
-[130.27s][user ] This is all so much easier with your help.
-[132.35s][moshi] I’m glad I could help ease the load a little. Sometimes a little support makes all the difference.
-[134.13s][user ] «backchannel» Right.
-[137.87s][user ] I need to remember to send a thank-you gift to my sister.
-[140.55s][moshi] That’s very thoughtful of you. A small gesture can mean so much.
-[146.10s][user ] I should probably write that down.
-[148.01s][moshi] A good idea. Capturing those intentions helps ensure they come to life.
-[149.96s][user ] «backchannel» Uh-huh.
-[153.10s][user ] Could you remind me on March ⟨ret@155.03s⟩ twenty-first?
-[155.26s][moshi] ⟦⚡SPAN@155.27s: (tool result) Alarm set: 2026-03-21, 9:00 AM, "Send thank-you gift to sister".⟧ I’ve set an alarm for nine AM on March twenty-first to remind you to send a gift.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"date": "2026-03-21", "time": "9:00 AM", "message": "Send thank-you gift to sister"}}
-[161.29s][user ] Thank you, Tealo.
-[162.23s][moshi] You’re very welcome. Remember, even amidst change, there’s always room for gratitude.
+[  0.00s][user ] What details do you have about the ⟨ret@2.00s⟩ Colosseum?
+[  2.24s][moshi] ⟦⚡SPAN@2.24s: (tool result) The Colosseum is a large amphitheater in central Rome, Italy, built of travertine limestone, tuf⟧ The Colosseum is a large amphitheater in central Rome, Italy, built of travertine limestone, tuff, and brick-faced concrete; it measures 189 meters long, 156 meters wide, and 48 meters high.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJdd4hrwugEmsRUzYKhkxvERc"}}
+[  7.61s][user ] «backchannel» Yeah.
+[ 18.44s][user ] That’s incredible. I’m planning a trip to Italy next month.
+[ 21.68s][moshi] That sounds wonderful!
+[ 24.29s][user ] Um, welll… do you think I should book a hotel near the Spanish Steps?
+[ 28.74s][moshi] Booking near the Spanish Steps would be lovely – it’s a very vibrant area. I can certainly search for hotels there for you.

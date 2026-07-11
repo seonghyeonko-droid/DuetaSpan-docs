@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Julian",
+#     "name": "Lukas",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -18,116 +18,71 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-02-14",
+#       "date": "2026-05-17",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2026-02-28",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-02-26",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-04",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "title": "Setting up a home network",
+#       "date": "2025-07-09",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, I was just thinking about our  | S2 I am! I was wondering about the be | S3 Hmm. Maybe I should check the weat | S4 I also need to remember I'm lactos
 
-     0.00s  agent 발화 시작: Hi Julian, I'm Hia. It's lovely to connect with you today. I
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.00s  <ret> 발화 (turn6 첫 프레임)
-     0.06s  <ret> 발화 (turn8 첫 프레임)
-     0.06s  user  발화 시작: Okay.
-     0.06s  agent 발화 끝
-     0.07s  user  발화 시작: Um, I was just thinking about our last chat… about finding a
-     0.07s  user  발화 끝
-     0.12s  agent 발화 시작: <ret> I recall you were looking for a pet-friendly, two-bedr
-     0.12s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.12s  user  발화 끝
-     0.19s  user  발화 시작: Yeah.
-     0.19s  agent 발화 끝
-     0.20s  user  발화 시작: Yes, actually. Do you remember what my budget was?
-     0.20s  user  발화 끝
-     0.23s  agent 발화 시작: <ret> Your note says you had a budget for a two-bedroom apar
-     0.23s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.23s  user  발화 끝
-     0.27s  user  발화 시작: Right. And I’m planning a trip, wasn’t I?
-     0.27s  agent 발화 끝
-     0.30s  agent 발화 시작: <ret> You are planning a trip to New Zealand in August. Soun
-     0.30s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2026-02-14] User is planning a trip to New Zealand in August.
-     0.30s  user  발화 끝
-     0.37s  user  발화 시작: I am! I was wondering about the best time for alpine wildflo
-     0.37s  agent 발화 끝
-     0.42s  agent 발화 시작: That's a beautiful idea! The peak season for alpine wildflow
-     0.42s  user  발화 끝
-     0.45s  <ret> 발화 (turn23 첫 프레임)
-     0.49s  user  발화 시작: Yeah.
-     0.49s  agent 발화 끝
-     0.49s  user  발화 시작: Oh, that's… a bit after my trip, then.
-     0.49s  user  발화 끝
-     0.52s  agent 발화 시작: Yes, August is earlier in the season. You might still find s
-     0.52s  user  발화 끝
-     0.55s  <ret> 발화 (turn16 첫 프레임)
-     0.55s  <ret> 발화 (turn18 첫 프레임)
-     0.59s  user  발화 시작: Yeah.
-     0.59s  agent 발화 끝
-     0.59s  user  발화 시작: Hmm. Maybe I should check the weather forecast for some area
-     0.59s  user  발화 끝
-     0.63s  agent 발화 시작: <ret> The weather in Paris is currently 21.0°C and clear. Wo
-     0.63s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Paris, France: 21.0°C, humidity 65%, wind 7.2 km/h, clea
-     0.63s  user  발화 끝
-     0.70s  user  발화 시작: Yes, please. For Queenstown.
-     0.70s  agent 발화 끝
-     0.71s  agent 발화 시작: <ret> It’s 8.0°C and partly cloudy in Queenstown, New Zealan
-     0.71s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) Queenstown, New Zealand: 8.0°C, humidity 82%, wind 12.5 
-     0.71s  user  발화 끝
-     0.75s  user  발화 시작: Really?
-     0.75s  agent 발화 끝
-     0.75s  user  발화 시작: Brrr, chilly! I should pack warm clothes.
-     0.75s  user  발화 끝
-     0.78s  agent 발화 시작: Definitely! Layers are always a good idea when traveling to 
-     0.78s  user  발화 끝
-     0.82s  user  발화 시작: I also need to remember I'm lactose intolerant.
-     0.82s  agent 발화 끝
-     0.85s  agent 발화 시작: <ret> You are lactose intolerant, and it’s good to keep that
-     0.85s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-01-08] User is lactose-intolerant.
-     0.85s  user  발화 끝
-     0.90s  user  발화 시작: Yeah.
-     0.90s  agent 발화 끝
-     0.91s  user  발화 시작: Yes, it is. It’s easy to forget! Thank you, Hia.
-     0.91s  user  발화 끝
-     0.94s  agent 발화 시작: You're very welcome, Julian. It’s all about being prepared a
-     0.94s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Lukas, I'm Jear. It's lovely to connect with you today. H
+     0.17s  user  발화 시작: Um, welll… I'm trying to stay motivated, but it's tough.
+     0.17s  agent 발화 끝
+     0.26s  agent 발화 시작: I understand completely. It's normal to feel that way someti
+     0.26s  user  발화 끝
+     0.39s  <ret> 발화 (turn5 첫 프레임)
+     0.44s  <ret> 발화 (turn8 첫 프레임)
+     0.46s  user  발화 시작: Yeah.
+     0.46s  agent 발화 끝
+     0.47s  user  발화 시작: Actually, yes! I'm going to New Zealand in August.
+     0.47s  user  발화 끝
+     0.55s  agent 발화 시작: <ret> That’s wonderful, Lukas! I recall you’re planning a tr
+     0.55s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: [2026-05-17] User is planning a trip to New Zealand in August.
+     0.55s  user  발화 끝
+     0.71s  user  발화 시작: Uh-huh.
+     0.71s  agent 발화 끝
+     0.72s  user  발화 시작: Do you remember if I mentioned anything about food allergies
+     0.72s  user  발화 끝
+     0.84s  agent 발화 시작: <ret> Yes, I do. You mentioned you are gluten-free, so we ca
+     0.84s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: [2026-02-28] User is gluten-free.
+     0.84s  user  발화 끝
      1.00s  agent 발화 끝

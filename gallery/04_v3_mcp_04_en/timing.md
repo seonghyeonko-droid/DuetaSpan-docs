@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Casey",
+#     "name": "Avery",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -18,137 +18,85 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-05-22",
 #       "category": "pet",
 #       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-01-14",
+#       "date": "2026-03-07",
 #       "category": "home",
-#       "text": "User's home address is 581 Pine Court."
+#       "text": "User's home address is 734 Pine Court."
 #     },
 #     {
-#       "date": "2025-09-14",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-03-03",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-09-11",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2025-09-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Researching a used car",
+#       "date": "2026-06-25",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-19",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you make a subscription plan f | S2 Great. So, uh, what’s the weather  | S3 Hmm, that sounds nice. Can you sho | S4 I’m in… well, I’m not saying.
+# EXAMINER(FDB-v2) 단계: S1 Start a code generation session an | S2 That sounds… complicated. — | S3 …Is there an easier way to write t | S4 That sounds promising. Can you sho
 
-     0.00s  user  발화 시작: Can you make a subscription plan for weekly…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn8 첫 프레임)
-     0.02s  user  발화 시작: …access to product two four six eight zero?
-     0.02s  user  발화 끝
-     0.04s  agent 발화 시작: <ret> I’ve set up a weekly subscription for product two four
-     0.04s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Subscription created: plan ID 93721, weekly, product 246
-     0.04s  user  발화 끝
-     0.10s  user  발화 시작: That's… a lot for weekly, isn’t it?
-     0.10s  agent 발화 끝
-     0.11s  agent 발화 시작: It can feel that way, but pricing is set by the product team
-     0.11s  user  발화 끝
-     0.16s  user  발화 시작: Um, yeah, are there any cheaper options? Maybe monthly?
-     0.16s  agent 발화 끝
-     0.18s  agent 발화 시작: Let’s see what’s available. A monthly subscription for the s
-     0.18s  user  발화 끝
-     0.22s  user  발화 시작: That's better. Can we switch to monthly instead?
-     0.22s  agent 발화 끝
-     0.24s  agent 발화 시작: <ret> I’ve updated your plan to monthly access for thirty-ni
-     0.24s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Subscription updated: plan ID 93721, monthly, product 24
-     0.24s  user  발화 끝
-     0.29s  user  발화 시작: Great. So, uh, what’s the weather like today?
-     0.29s  agent 발화 끝
-     0.30s  agent 발화 시작: It’s currently twenty-three point zero degrees Celsius, with
-     0.30s  user  발화 끝
-     0.34s  <ret> 발화 (turn19 첫 프레임)
-     0.36s  user  발화 시작: Five point five? That's… specific.
-     0.36s  agent 발화 끝
-     0.37s  agent 발화 시작: I aim to be thorough! It's good to have a precise picture wh
-     0.37s  user  발화 끝
-     0.41s  <ret> 발화 (turn16 첫 프레임)
-     0.42s  user  발화 시작: I guess. Say, can you find me a good Italian restaurant near
-     0.42s  agent 발화 끝
-     0.44s  agent 발화 시작: I can certainly help with that. Do you have a preferred pric
-     0.44s  user  발화 끝
-     0.48s  user  발화 시작: Not really, just… good food.
-     0.48s  agent 발화 끝
-     0.49s  agent 발화 시작: <ret> Ristorante Bellissimo has excellent reviews, located o
-     0.49s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: "Ristorante Bellissimo is a highly-rated Italian restaurant located at
-     0.49s  user  발화 끝
-     0.56s  user  발화 시작: Yeah.
-     0.56s  agent 발화 끝
-     0.56s  user  발화 시작: Hmm, that sounds nice. Can you show me directions there?
-     0.56s  user  발화 끝
-     0.58s  agent 발화 시작: <ret> By car it’s one point two kilometers, about five minut
-     0.58s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Driving: 1.2 km, 5 min. Walking: 1.7 km, 22 min. Transit
-     0.58s  user  발화 끝
-     0.63s  user  발화 시작: Walking sounds good.
-     0.63s  agent 발화 끝
-     0.63s  agent 발화 시작: A lovely walk it is! Enjoy the fresh air and take your time 
-     0.63s  user  발화 끝
-     0.67s  user  발화 시작: [happy] Thanks. Okay, one last thing. What time is it right 
-     0.67s  agent 발화 끝
-     0.69s  agent 발화 시작: It is Friday, July tenth, two thousand twenty-six at two thi
-     0.69s  user  발화 끝
-     0.73s  user  발화 시작: Seoul? I didn’t say anything about Seoul.
-     0.73s  agent 발화 끝
-     0.74s  agent 발화 시작: My apologies. I seem to have defaulted to a location. Where 
-     0.74s  user  발화 끝
-     0.78s  <ret> 발화 (turn30 첫 프레임)
-     0.78s  user  발화 시작: Right.
-     0.78s  agent 발화 끝
-     0.78s  user  발화 시작: I’m in… well, I’m not saying.
-     0.78s  user  발화 끝
-     0.79s  agent 발화 시작: That’s perfectly alright. I respect your privacy. I will ref
-     0.79s  user  발화 끝
-     0.83s  user  발화 시작: Good. Can you remind me what the subscription plan is?
-     0.83s  agent 발화 끝
-     0.86s  agent 발화 시작: <ret> You have a monthly subscription, plan ID nine three se
-     0.86s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-07-10] Subscription created: plan ID 93721, monthly, product 246
-     0.86s  user  발화 끝
-     0.91s  user  발화 시작: Right. That’s good.
-     0.91s  agent 발화 끝
-     0.92s  agent 발화 시작: It’s reassuring to have those details readily available, esp
-     0.92s  user  발화 끝
-     0.95s  user  발화 시작: Right.
-     0.95s  agent 발화 끝
-     0.95s  user  발화 시작: Yeah, it is. Thanks, Nox.
-     0.95s  user  발화 끝
-     0.96s  agent 발화 시작: You're very welcome. I’m glad I could help with getting thin
-     0.96s  user  발화 끝
+     0.00s  user  발화 시작: Start a code generation session and save tests to my documen
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.06s  agent 발화 시작: <ret> I’ve started a code generation session and created a “
+     0.06s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Directory "tests" created successfully in /Users/drio/Do
+     0.06s  user  발화 끝
+     0.21s  user  발화 시작: That’s good, but can you find me some information on the Pyt
+     0.21s  agent 발화 끝
+     0.23s  <ret> 발화 (turn7 첫 프레임)
+     0.28s  agent 발화 시작: <ret> The Python `unittest` framework supports automated tes
+     0.28s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: The `unittest` module in Python supports automated testing of software
+     0.28s  user  발화 끝
+     0.39s  user  발화 시작: That sounds… complicated. —
+     0.39s  agent 발화 끝
+     0.41s  user  발화 시작: …Is there an easier way to write tests…
+     0.41s  user  발화 끝
+     0.45s  user  발화 시작: …maybe with something visual?
+     0.45s  user  발화 끝
+     0.47s  agent 발화 시작: <ret> I understand feeling overwhelmed; new frameworks often
+     0.47s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Playwright is a popular end-to-end testing framework tha
+     0.47s  user  발화 끝
+     0.60s  agent 발화 시작: Playwright is a popular option for visual testing in Python,
+     0.60s  agent 발화 끝
+     0.76s  user  발화 시작: Uh-huh.
+     0.76s  agent 발화 끝
+     0.77s  user  발화 시작: That sounds promising. Can you show me an example of how to 
+     0.77s  user  발화 끝
+     0.79s  <ret> 발화 (turn11 첫 프레임)
+     0.87s  agent 발화 시작: <ret> I’m sorry, I don’t have a specific example for taking 
+     0.87s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (no information found)
+     0.87s  user  발화 끝
      1.00s  agent 발화 끝

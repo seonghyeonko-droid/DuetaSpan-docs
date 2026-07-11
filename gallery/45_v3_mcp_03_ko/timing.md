@@ -4,91 +4,106 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "서형",
+#     "name": "윤준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-11",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     },
 #     {
-#       "date": "2026-03-06",
+#       "date": "2026-01-24",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-08-22",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2025-08-10",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-07-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-07-05",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-30",
+#       "date": "2026-03-27",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 아이들하고 갈 만한 곳 없을까요? | S2 큰애는 일곱 살이고, 작은애는 네 살이에요. | S3 …혹시 좀 더 저렴한 곳은 없을까요? | S4 꼬마정원은 괜찮겠네요. 가격은 얼마예요?
+# EXAMINER(FDB-v2) 단계: S1 달러 환율 좀 알려줄 수 있어? | S2 혹시 환율 변동 추이도 볼 수 있을까? | S3 … 환전할 때 제일 좋은 은행은 어디야? | S4 고마워, 누우스.
 
-     0.00s  user  발화 시작: 이번 주 토요일에 아이들하고 갈 만한 곳 없을까요?
-     3.31s  agent 발화 시작: 특별히 관심 있는 장소가 있나요?
-     3.37s  user  발화 끝
-     5.20s  user  발화 시작: 음… 실내에서 놀 수 있는 곳이면 좋겠어요. 날씨가 너무 더울 것 같아서요.
-     5.29s  agent 발화 끝
-    10.32s  agent 발화 시작: 아이들의 연령대는 어떻게 되나요?
-    10.34s  user  발화 끝
-    12.58s  agent 발화 끝
-    13.04s  user  발화 시작: 큰애는 일곱 살이고, 작은애는 네 살이에요.
-    16.09s  agent 발화 시작: 일곱 살, 네 살 아이들과 함께 즐길 수 있는 실내 놀이터를 알아볼게요.
-    16.23s  user  발화 끝
-    20.63s  <ret> 발화 (turn6 첫 프레임)
-    20.94s  agent 발화 시작: <ret> 서울에 있는 키자니아 서울은 다양한 직업 체험을 할 수 있는 어린이 테마파크라고 하네요. 아이들이
-    20.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) 서울 키자니아 서울은 다양한 직업 체험 시설과 교육 프로그램을 갖춘 어린이 테마파크입니다. 키자니아 
-    20.96s  agent 발화 끝
-    24.03s  user  발화 시작: 네.
-    24.47s  user  발화 끝
-    28.40s  agent 발화 끝
-    30.36s  user  발화 시작: 키자니아는 좀 비싼 것 같던데… 다른 곳은 없을까요? —
-    34.18s  user  발화 시작: …혹시 좀 더 저렴한 곳은 없을까요?
-    34.38s  user  발화 끝
-    36.62s  agent 발화 시작: 혹시 특정 지역을 선호하시나요?
-    36.63s  user  발화 끝
-    38.55s  agent 발화 끝
-    38.85s  user  발화 시작: 강남 쪽이면 더 좋겠어요.
-    40.74s  user  발화 끝
-    41.06s  agent 발화 시작: 강남 근처의 저렴한 실내 놀이터를 찾아볼게요.
-    44.07s  <ret> 발화 (turn13 첫 프레임)
-    44.43s  agent 발화 끝
-    44.47s  agent 발화 시작: <ret> 강남구에 있는 꼬마정원 어린이집 실내놀이터가 저렴하고 인기가 많다고 하네요. 아이들이 안전하게 놀
-    44.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) 강남구에는 꼬마정원 어린이집 실내놀이터가 있으며, 다양한 놀이 시설과 저렴한 가격으로 인기가 많습니다
-    48.32s  user  발화 시작: 네.
-    48.86s  user  발화 끝
-    51.52s  user  발화 시작: 꼬마정원은 괜찮겠네요. 가격은 얼마예요?
-    51.61s  agent 발화 끝
-    54.19s  <ret> 발화 (turn16 첫 프레임)
-    54.50s  agent 발화 시작: <ret> 꼬마정원의 가격 정보는 현재 찾을 수 없네요. 직접 문의해 보시는 것이 좋겠습니다.
-    54.51s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (no information found)
-    54.76s  user  발화 끝
-    58.85s  agent 발화 끝
+     0.00s  user  발화 시작: 달러 환율 좀 알려줄 수 있어?
+     1.66s  <ret> 발화 (turn1 첫 프레임)
+     1.98s  agent 발화 시작: <ret> 현재 달러 대 유로 환율은, 이천이십육년 칠월 십일 오후 두시 삼십오분 기준으로 유로 일당 영 점
+     1.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) The current exchange rate for the US dollar to the euro 
+     2.22s  user  발화 끝
+     7.58s  user  발화 시작: 정말요?
+     8.40s  user  발화 끝
+    10.37s  agent 발화 끝
+    10.69s  user  발화 시작: 음, 그럼 유로로 백달러를 바꾸면 얼마를 받을 수 있지?
+    14.62s  user  발화 끝
+    14.87s  agent 발화 시작: 백달러를 유로로 환전하면, 현재 환율로는 약 구십이유로를 받으실 수 있습니다.
+    19.96s  user  발화 시작: 혹시 환율 변동 추이도 볼 수 있을까?
+    20.01s  agent 발화 끝
+    22.38s  <ret> 발화 (turn6 첫 프레임)
+    22.78s  agent 발화 시작: <ret> 지난 한 주 동안 달러 대 유로 환율은 영 점 구 일에서 영 점 구 삼 사이로 변동했으며, 약간 
+    22.78s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.08s]: (tool result) Google Finance shows the USD to EUR exchange rate has fl
+    22.92s  user  발화 끝
+    28.46s  user  발화 시작: 네네.
+    29.18s  user  발화 끝
+    33.87s  agent 발화 끝
+    33.90s  agent 발화 시작: 환율 변동은 여러 요인에 의해 영향을 받기 때문에, 환전 시점과 금액에 따라 달라질 수 있습니다.
+    40.24s  agent 발화 끝
+    40.71s  user  발화 시작: 혹시 환전 수수료는 얼마나 해? —
+    43.11s  user  발화 시작: … 환전할 때 제일 좋은 은행은 어디야?
+    43.20s  user  발화 끝
+    45.44s  <ret> 발화 (turn11 첫 프레임)
+    45.52s  agent 발화 시작: <ret> 최근 코리아 헤럴드 기사에 따르면, 우리은행과 신한은행이 가장 낮은 환전 수수료와 경쟁력 있는 환
+    45.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: (tool result) A recent article by The Korea Herald lists Woori Bank an
+    45.69s  user  발화 끝
+    56.33s  agent 발화 끝
+    56.34s  agent 발화 시작: 환전 수수료는 은행마다 다를 수 있으니, 직접 확인해 보시는 것이 좋습니다.
+    59.03s  user  발화 시작: 아.
+    59.34s  user  발화 끝
+    60.64s  agent 발화 끝
+    61.40s  user  발화 시작: 알았어, 우리은행에 가봐야겠다.
+    63.99s  user  발화 끝
+    64.17s  agent 발화 시작: 좋은 선택이세요. 환전 전에 환율을 다시 한번 확인하시면 더욱 유리할 거예요.
+    69.03s  agent 발화 끝
+    69.19s  user  발화 시작: 고마워, 누우스.
+    70.69s  agent 발화 시작: 언제든지 도움이 필요하시면 말씀해 주세요. 앞으로의 여정에도 행운이 함께 하기를 바랍니다.
+    70.94s  user  발화 끝
+    76.62s  agent 발화 끝

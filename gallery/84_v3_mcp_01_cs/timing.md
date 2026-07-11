@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Sky",
+#     "name": "Bruno",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-25",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-06-18",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-23",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-05-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "home",
-#       "text": "User's home address is 865 Pine Court."
-#     },
-#     {
-#       "date": "2026-02-07",
+#       "date": "2026-03-20",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2026-01-17",
+#       "category": "home",
+#       "text": "User's home address is 366 Birch Road."
 #     },
 #     {
-#       "date": "2025-08-02",
+#       "date": "2025-09-24",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-09",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-27",
+#       "date": "2026-02-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -68,27 +60,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 교통 상황이 어떠신가요? | S2 네, 상하이의 해당 좌표, 31.23, 121.47 주변 교통 | S3 흠, 보통이군요… 지금 열려 있는 근처 식당을 찾아 주시겠어요 | S4 윈난 음식이요… 흥미로운데요. 혹시 거기 두 명 자리를 7시 
 
-     0.00s  user  발화 시작: 안녕하세요. 교통 상황이 어떠신가요?
-     0.01s  <ret> 발화 (turn2 첫 프레임)
-     0.05s  user  발화 시작: 네, 상하이의 해당 좌표, 31.23, 121.47 주변 교통 상황이 궁금합니다.
-     0.05s  user  발화 끝
-     0.17s  agent 발화 시작: <ret> 음, 해당 좌표 주변 상하이 교통 상황은 현재 보통입니다. 지금 시간대에는 평소와 비슷해 보여요.
-     0.17s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) {"distance": 0, "duration": 0, "status": "OK", "traffic"
-     0.17s  user  발화 끝
-     0.29s  <ret> 발화 (turn5 첫 프레임)
-     0.33s  user  발화 시작: 네.
-     0.33s  agent 발화 끝
-     0.35s  user  발화 시작: 흠, 보통이군요… 지금 열려 있는 근처 식당을 찾아 주시겠어요?
-     0.35s  user  발화 끝
-     0.45s  agent 발화 시작: <ret> 글쎄요, 와이탄에 있는 윈난 음식점 로스트 헤븐이 지금 열려 있습니다. 정말 인기 있는 곳이에요.
-     0.45s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) {"name": "Lost Heaven", "address": "Bund 27, Huangpu Dis
-     0.45s  user  발화 끝
-     0.47s  <ret> 발화 (turn7 첫 프레임)
-     0.62s  user  발화 시작: 윈난 음식이요… 흥미로운데요. 혹시 거기 두 명 자리를 7시 30분에 예약해 주실 수 있을까요?
-     0.62s  agent 발화 끝
-     0.79s  agent 발화 시작: <ret> 네, 로스트 헤븐에 두 명 자리를 7시 30분에 예약했습니다. 확인 번호는 LH78923입니다. 
-     0.79s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: (tool result) {"confirmation id": "LH78923", "restaurant name": "Lost 
-     0.79s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 문서 새 탭으로 열어 주실 수 있을까요?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.13s  agent 발화 시작: <ret> 네, Tavily 문서가 이천이십사 년 7월 9일에 새 탭으로 열렸습니다.
+     0.13s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) Documentation - Tavily 2024-07-09 Documentation is a key
+     0.13s  user  발화 끝
+     0.23s  <ret> 발화 (turn3 첫 프레임)
+     0.30s  user  발화 시작: 음, 그게 아니라 Playwright 문서가 필요해요.
+     0.30s  agent 발화 끝
+     0.39s  agent 발화 시작: <ret> 아, 죄송합니다. Microsoft Learn에서 Playwright 문서를 찾았습니다. 안정적인
+     0.39s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Playwright - Documentation - Microsoft Learn Playwright 
+     0.39s  user  발화 끝
+     0.59s  user  발화 시작: 네.
+     0.59s  agent 발화 끝
+     0.61s  user  발화 시작: 정말 좋네요, 감사합니다. 지금 서울 날씨는 어떤가요?
+     0.61s  user  발화 끝
+     0.72s  agent 발화 시작: 서울 날씨 확인 중입니다… 현재 기온은 섭씨 23.0도이고, 습도는 74%, 풍속은 시속 5.5킬로미터입니다
+     0.72s  user  발화 끝
      1.00s  agent 발화 끝

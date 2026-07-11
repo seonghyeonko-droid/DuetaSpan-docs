@@ -1,94 +1,93 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 드로라라입니다. 드로라라는 사람들의 진로 선택과 업무 스트레스에 대해 부드럽고 사려 깊게 지지하는 조언자입니다. <system>
+SYSTEM: <system> 당신은 크레르이며, 돈과 예산 관리에 대해 사람들을 돕는 긍정적이고 지지적인 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "하서",
+    "name": "태훈",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-31",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-06-12",
+      "category": "work",
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-12-22",
-      "category": "home",
-      "text": "User's home address is 대구 중구 동인동 88-1."
+      "date": "2026-04-01",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-11-30",
+      "date": "2026-03-21",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-03-18",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-09-28",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-08-29",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2025-08-23",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-08-06",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-06-08",
+      "category": "home",
+      "text": "User's home address is 서울 용산구 이태원로 200."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-09",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-02",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이번 ⟨ret@0.00s⟩ 주 토요일에 가족들과 갈 만한 조용한 카페 있나요?
-[  0.04s][moshi] ⟦⚡SPAN@0.04s: (tool result) {"restaurants": [{"name": "별 헤는 밤", "address": "서울 강남구 도산대로 51길 23", "phone": "02-543-1234", "ra⟧ 토요일에 가족과 함께 가기 좋은 카페는 '별 헤는 밤'이에요. 강남구 도산대로에 있고, 평점은 사 점 오점, 가격대는 이만 원에서 삼만 원 정도예요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"date": "July 12, 2026", "party_size": "family", "atmosphere": "quiet", "meal_type": "cafe"}}
-[  0.13s][user ] «backchannel» 맞아요.
-[  0.14s][user ] 아, 강남이요? 음… 좀 더 가까운 곳은 없을까요?
-[  0.17s][moshi] 조금 더 가까운 곳을 찾으시는군요. 혹시 지금 계신 곳 근처를 말씀해 주시겠어요?
-[  0.22s][user ] 저는 ⟨ret@0.00s⟩ 지금 역삼역 근처에 있어요.
-[  0.24s][moshi] ⟦⚡SPAN@0.24s: (tool result) {"restaurants": [{"name": "숨은 정원", "address": "서울 강남구 역삼동 123-45", "phone": "02-123-4567", "rati⟧ 역삼역 근처에는 '숨은 정원'이라는 카페가 있어요. 평점은 사 점 이점이고, 가격대는 일만 오천 원에서 이만 오천 원 정도입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "역삼역", "date": "July 12, 2026", "party_size": "family", "atmosphere": "quiet", "meal_type": "cafe"}}
-[  0.32s][user ] 숨은 정원이요? 분위기는 어때요?
-[  0.34s][moshi] '숨은 정원'은 아늑하고 조용한 분위기로 가족과 함께 편안하게 시간을 보내기에 좋을 것 같아요.
-[  0.39s][user ] «backchannel» 네.
-[  0.40s][moshi] 손님들이 특히 식물 인테리어가 예쁘다고 많이 말씀하시더라고요. 차 종류도 다양하고요.
-[  0.44s][user ] «backchannel» 예.
-[  0.44s][user ] 차 ⟨ret@0.23s⟩ 종류가 다양하다니 좋네요. 혹시 예약은 가능한가요?
-[  0.47s][moshi] ⟦⚡SPAN@0.47s: (tool result) {"reservation id": "R789012", "status": "confirmed", "restaurant name": "숨은 정원", "date": "July 1⟧ 네, '숨은 정원'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 알 칠 팔 구 공 일 이입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "숨은 정원", "date": "July 12, 2026", "time": "2:00 PM", "party_size": "family"}}
-[  0.55s][user ] «backchannel» 음.
-[  0.56s][user ] 예약 번호는 알 칠 팔 구 공 일 이군요 — 혹시 그 카페 근처에 주차는 편리한가요?
-[  0.63s][moshi] «interrupted» '숨은 정원' 근처에는… —
-[  0.64s][user ] «interrupts_prev» …혹시 ⟨ret@0.43s⟩ 주차 공간이 부족하면 다른 카페로 알아볼까요?
-[  0.67s][moshi] ⟦⚡SPAN@0.67s: (tool result) {"restaurants": [{"name": "커피 숲", "address": "서울 강남구 역삼동 456-78", "phone": "02-987-6543", "ratin⟧ 역삼역 근처에 주차 가능한 '커피 숲'이라는 카페가 있어요. 평점은 사점이고, 가격대는 일만 팔천 원에서 이만 팔천 원 정도입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "역삼역", "date": "July 12, 2026", "party_size": "family", "atmosphere": "quiet", "meal_type": "cafe", "parking": "available"}}
-[  0.75s][user ] 커피 숲이요? 거기는 분위기는 어떤가요?
-[  0.77s][moshi] '커피 숲'은 넓고 쾌적한 공간을 자랑하며, 가족 단위 손님들이 많이 찾는 곳이에요. 조용히 대화하기에도 괜찮을 거예요.
-[  0.84s][user ] «backchannel» 네.
-[  0.84s][user ] 음… ⟨ret@0.65s⟩ 커피 숲으로 예약해 주세요. 토요일 오후 두시, 가족 인원으로요.
-[  0.89s][moshi] ⟦⚡SPAN@0.89s: (tool result) {"reservation id": "C345678", "status": "confirmed", "restaurant name": "커피 숲", "date": "July 12⟧ '커피 숲'에 토요일 오후 두시에 가족 인원으로 예약이 완료되었습니다. 예약 번호는 씨 삼 사 오 육 칠 팔입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "커피 숲", "date": "July 12, 2026", "time": "2:00 PM", "party_size": "family"}}
-[  0.96s][user ] 예약 감사합니다.
-[  0.97s][moshi] 천만에요. 가족과 함께 즐거운 시간 보내시길 바랍니다.
+[  0.00s][user ] 도쿄역에서 ⟨ret@0.00s⟩ 시부야 크로싱까지 대중교통으로 제일 빠른 길은 어디야?
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) The quickest route from Tokyo Station to Shibuya Crossing using public transport is approximatel⟧ 도쿄역에서 시부야 크로싱까지 대중교통으로 가는 가장 빠른 길은 약 삼십삼분 정도 걸리고, JR 야마노테 선을 이용하면 됩니다.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "Tokyo Station", "destination": "Shibuya Crossing", "mode": "transit"}}
+[  0.15s][user ] «backchannel» 응.
+[  0.16s][user ] 삼십삼분이라… 음, 좀 길겠네.
+[  0.18s][moshi] 시간은 조금 걸리지만, 환승 없이 한 번에 갈 수 있어서 편리하실 거예요.
+[  0.25s][user ] «backchannel» 그래.
+[  0.26s][user ] 이번 ⟨ret@0.00s⟩ 주 토요일에 친구랑 같이 갈 건데, 혹시 그날 날씨는 어때?
+[  0.32s][moshi] ⟦⚡SPAN@0.32s: (tool result) The weather forecast for Shibuya, Tokyo on Saturday, July 11, 2026 is 28.5°C, humidity 68%, with⟧ 이천이십육년 칠월 십일일 토요일 시부야 날씨는 이십팔 점 오도이고, 습도는 육십팔퍼센트이며, 비가 올 확률은 삼십퍼센트입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-11"}}
+[  0.41s][user ] «backchannel» 와.
+[  0.42s][moshi] 우산을 챙기시는 게 좋겠네요. 그래도 야외 활동하기에 아주 나쁘지는 않을 거예요.
+[  0.49s][user ] «backchannel» 음.
+[  0.49s][user ] 아, 맞아! ⟨ret@0.50s⟩ 이번 주말에 친구 생일인데, 시부야에서 맛있는 저녁 먹을 만한 곳 좀 추천해 줄래?
+[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tool result) There are several highly-rated restaurants in Shibuya, including Han no Daidokoro Bettei, known ⟧ 시부야에는 한 노 다이도코로 베테이—와규 소고기로 유명한 곳—와 우오베이 시부야 도겐자카—가성비 좋은 회전 초밥집—같은 인기 맛집이 많습니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Shibuya", "cuisine": "any"}}
+[  0.68s][user ] 와규… ⟨ret@0.37s⟩ 맛있겠다! 한 노 다이도코로 베테이 예약해 줘. 이번 주 토요일 저녁 일곱시에 두 명.
+[  0.77s][moshi] ⟦⚡SPAN@0.77s: (tool result) Reservation confirmed at Han no Daidokoro Bettei for 2 people on July 11, 2026 at 7:00 PM. Confi⟧ 한 노 다이도코로 베테이에 이천이십육년 칠월 십일일 토요일 저녁 일곱시에 두 분 예약이 완료되었습니다. 확인 번호는 칠 팔 엑스 구 이 엘입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Han no Daidokoro Bettei", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
+[  0.90s][user ] «backchannel» 와.
+[  0.91s][user ] 칠 팔 엑스 구 이 엘… 알았어. 고마워, 크레르!
+[  0.96s][moshi] 천만에요! 친구분과 즐거운 생일 저녁 보내세요.

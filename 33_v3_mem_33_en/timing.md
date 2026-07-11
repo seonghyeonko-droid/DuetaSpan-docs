@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Julia",
+#     "name": "Anton",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "home",
-#       "text": "User's home address is 51 Pine Court."
+#       "date": "2026-06-26",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-02",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-12-25",
+#       "date": "2026-01-17",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "date": "2026-01-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-20",
+#       "date": "2026-03-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2025-10-11",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-26",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,26 +66,43 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Um, what time is it right now? I c | S2 Actually, I'm trying to book a den | S3 Yes, exactly. Can you check if Dr. | S4 That’s perfect, thank you so much.
 
-     0.00s  agent 발화 시작: Hi Julia, I'm Sellara. It’s lovely to connect with you today
-     3.69s  agent 발화 끝
-     4.22s  user  발화 시작: Um, what time is it right now? I completely lost track.
-     8.42s  <ret> 발화 (turn2 첫 프레임)
-     8.58s  agent 발화 시작: <ret> It’s currently 2:38 PM in San Francisco, Julia. A peac
-     8.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in America/Los An
-     8.66s  user  발화 끝
-    14.93s  agent 발화 끝
-    15.36s  user  발화 시작: Oh, that’s good to know. And, uh, remind me… what was I plan
-    20.50s  <ret> 발화 (turn4 첫 프레임)
-    20.74s  agent 발화 시작: <ret> You're planning a trip to New Zealand in March, Julia.
-    20.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: [2025-11-20] User is planning a trip to New Zealand in March.
-    20.82s  user  발화 끝
-    22.60s  user  발화 시작: Mm-hmm.
-    23.23s  user  발화 끝
-    26.15s  agent 발화 끝
-    26.93s  user  발화 시작: New Zealand… right. Is Bella doing okay?
-    30.21s  <ret> 발화 (turn7 첫 프레임)
-    30.45s  agent 발화 시작: <ret> You have a Siamese cat named Bella. Such a lovely comp
-    30.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: [2025-12-25] User has a Siamese cat named Bella.
-    30.53s  user  발화 끝
-    35.78s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Anton, I'm Brien. It's lovely to connect with you today.
+     2.05s  user  발화 시작: Yeah, yeah.
+     3.16s  user  발화 끝
+     3.77s  user  발화 시작: Um, what time is it right now? I completely lost track.
+     3.79s  agent 발화 끝
+     7.78s  <ret> 발화 (turn3 첫 프레임)
+     7.94s  agent 발화 시작: <ret> It’s currently ten seventeen AM in Paris. A fresh star
+     7.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Paris 
+     8.03s  user  발화 끝
+    11.99s  user  발화 시작: Yeah.
+    12.62s  user  발화 끝
+    14.18s  user  발화 시작: That's good to know. I was thinking about my trip to Kyoto…
+    14.20s  agent 발화 끝
+    18.33s  <ret> 발화 (turn6 첫 프레임)
+    18.57s  agent 발화 시작: <ret> You mentioned your interest in vintage synths back on 
+    18.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [2026-06-26] User is into vintage synth collecting.
+    18.62s  user  발화 끝
+    20.32s  user  발화 시작: Right.
+    20.81s  user  발화 끝
+    24.09s  agent 발화 시작: Is there something specific about synths you’d like to explo
+    24.22s  agent 발화 끝
+    28.22s  user  발화 시작: Actually, I'm trying to book a dentist appointment. I really
+    28.30s  agent 발화 끝
+    32.78s  <ret> 발화 (turn10 첫 프레임)
+    33.02s  agent 발화 시작: <ret> I see you previously requested an early-morning appoin
+    33.02s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.56s]: [2026-03-16] Past chat — Booked a dentist appointment: asked for an ea
+    33.09s  user  발화 끝
+    40.37s  user  발화 시작: Yes, exactly. Can you check if Dr. Han has anything availabl
+    40.58s  agent 발화 끝
+    45.39s  <ret> 발화 (turn12 첫 프레임)
+    45.47s  agent 발화 시작: <ret> Wonderful! Dr. Han has you scheduled for Monday, July 
+    45.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.39s]: (tool result) Appointment confirmed with Dr. Han for Monday, July 13, 
+    45.55s  user  발화 끝
+    55.86s  agent 발화 끝
+    57.06s  user  발화 시작: That’s perfect, thank you so much.
+    59.78s  user  발화 끝
+    60.11s  agent 발화 시작: You’re very welcome, Anton. Taking care of those practical t
+    66.78s  agent 발화 끝

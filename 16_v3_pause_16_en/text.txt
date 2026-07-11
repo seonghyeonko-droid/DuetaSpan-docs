@@ -1,89 +1,75 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Orelina, a encouraging and non-judgmental wellness coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Ororalo, a curious and validating wellness coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
     "name": "Casey",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "French",
     "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "age_range": "early 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
+      "date": "2026-04-12",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-03-09",
+      "date": "2026-02-15",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-02-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2025-11-12",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-12-22",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-10-08",
+      "category": "work",
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2025-10-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-06-17",
+      "date": "2025-10-04",
       "category": "home",
-      "text": "User's home address is 795 Elm Street."
+      "text": "User's home address is 232 Elm Street."
+    },
+    {
+      "date": "2025-08-20",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
+      "date": "2025-12-26",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-06-06",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-05-27",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I ⟨ret@0.00s⟩ was just wondering… who sang Edelweiss in.
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: Theodore Bikel performed the song "Edelweiss" in the 1965 film *The Sound of Music*.⟧ It was Theodore Bikel who beautifully performed “Edelweiss” in the film. Such a classic, isn’t it?
-[  0.32s][user ] Oh, okay! That’s good to know. Um…
-[  0.41s][user ] …what’s the weather…
-[  0.45s][user ] …like ⟨ret@0.12s⟩ in Seoul right now?
-[  0.52s][moshi] ⟦⚡SPAN@0.52s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ Right now in Seoul, it’s 23.0°C with 74% humidity and a gentle breeze at 5.5 km/h.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[  0.73s][user ] «backchannel» Yeah.
-[  0.75s][user ] That sounds pretty nice actually.
-[  0.81s][moshi] It does, doesn’t it? A comfortable temperature can really boost your mood, you know.
+[  0.00s][user ] Um, in the Mahabharata…
+[  0.04s][user ] …who was the father of Chitrasena…
+[  0.10s][user ] …and ⟨ret@0.00s⟩ Vrishsena…?
+[  0.12s][moshi] ⟦⚡SPAN@0.12s: Karna was the father of Chitrasena and Vrishsena, sons born to him and Varna during his time in disguise.⟧ Oh, that’s a lovely question! It was Karna who was the father of Chitrasena and Vrishsena, born during his time in disguise.
+[  0.33s][user ] «backchannel» Okay.
+[  0.34s][moshi] It’s interesting how lineage plays out in those epic stories, isn’t it? Family ties are so complex.
+[  0.50s][user ] And, ⟨ret@0.37s⟩ uh, can you find me a good Italian restaurant nearby?
+[  0.61s][moshi] ⟦⚡SPAN@0.61s: (tool result) Restaurants found: Bella Italia (4.5 stars, 0.5 km), Pasta Paradise (4.2 stars, 1.2 km), Roma Ri⟧ I found three Italian restaurants close by: Bella Italia, Pasta Paradise, and Roma Ristorante.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[  0.75s][user ] What ⟨ret@0.40s⟩ are Bella Italia’s hours?
+[  0.80s][moshi] ⟦⚡SPAN@0.80s: (tool result) Bella Italia is open today from 11:30 AM to 10:00 PM.⟧ Bella Italia is open today from eleven thirty AM to ten PM. They seem to have a pretty long service window.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia"}}

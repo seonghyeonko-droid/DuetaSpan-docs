@@ -4,118 +4,101 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Charlotte",
+#     "name": "Lily",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-05-04",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-04-09",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
+#       "text": "User is planning a trip to Iceland in December."
 #     },
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-02-08",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-11-20",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-04-02",
+#       "date": "2025-10-16",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2025-08-10",
 #       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-10-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-28",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-29",
+#       "date": "2025-11-08",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-22",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What in combination with glass fib | S2 Hmm. What *are* glass fibers used  | S3 So, like, in boats? | S4 Wow, sawdust! That sounds…flammabl
+# EXAMINER(FDB-v2) 단계: S1 How many of Southwestern’s 19 vars | S2 Oh, that's too bad. Do you know wh | S3 …is that the same as saying they’v | S4 Wow, twelve times! That’s impressi
 
-     0.00s  user  발화 시작: What in combination with glass fibers is used to make glass 
-     3.81s  <ret> 발화 (turn1 첫 프레임)
-     3.89s  agent 발화 시작: <ret> Well, that's a really interesting question! It seems w
-     3.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (no information found)
-     4.12s  user  발화 끝
-    14.32s  agent 발화 끝
-    15.93s  user  발화 시작: Oh. Is it a trade secret or something?
-    18.76s  agent 발화 시작: [curious] That’s a possibility, sometimes formulas are kept 
-    18.88s  user  발화 끝
-    21.14s  user  발화 시작: Okay.
-    21.77s  user  발화 끝
-    26.51s  user  발화 시작: Hmm. What *are* glass fibers used for, generally?
-    26.68s  agent 발화 끝
-    30.61s  <ret> 발화 (turn6 첫 프레임)
-    30.68s  agent 발화 시작: <ret> Glass fibers have many uses, particularly for thermal 
-    30.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.75s]: Glass fibers are used for thermal insulation, sound absorption, and fo
-    30.91s  user  발화 끝
-    36.67s  user  발화 시작: …are they expensive to produce?
-    37.43s  agent 발화 끝
-    38.74s  user  발화 끝
-    38.84s  agent 발화 시작: That's a great point to consider! Glass fiber production cos
-    43.19s  user  발화 시작: Yeah, yeah.
-    44.00s  user  발화 끝
-    44.60s  agent 발화 시작: …they are generally quite affordable, which is why they’re s
-    44.67s  agent 발화 끝
-    53.36s  agent 발화 끝
-    53.87s  user  발화 시작: So, like, in boats?
-    55.52s  user  발화 끝
-    55.65s  agent 발화 시작: Exactly! You'll find glass fibers in boats, cars, and even s
-    63.38s  agent 발화 끝
-    63.38s  user  발화 시작: That makes sense. What about older types of insulation?
-    67.34s  <ret> 발화 (turn14 첫 프레임)
-    67.42s  agent 발화 시작: <ret> Before fiberglass was popular, people used things like
-    67.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: Before fiberglass became common in the 1930s, materials like straw, sa
-    67.60s  user  발화 끝
-    78.64s  agent 발화 끝
-    80.28s  user  발화 시작: Wow, sawdust! That sounds…flammable.
-    83.69s  agent 발화 시작: [laugh] It really does! It’s amazing how much things have ch
-    83.85s  user  발화 끝
-    94.12s  agent 발화 끝
-    94.16s  user  발화 시작: I guess so. Do they still *use* mineral wool?
-    97.47s  <ret> 발화 (turn18 첫 프레임)
-    97.79s  agent 발화 시작: <ret> Yes, mineral wool is still used today, and it’s especi
-    97.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.25s]: Mineral wool, made from molten rock or slag, is still used as insulati
-    97.87s  user  발화 끝
-   105.04s  agent 발화 끝
+     0.00s  user  발화 시작: How many of Southwestern’s 19 varsity programs had NCAA or b
+     6.68s  agent 발화 시작: Well, it appears that information isn’t readily available to
+     6.86s  user  발화 끝
+    11.49s  agent 발화 끝
+    13.09s  user  발화 시작: Oh, that's too bad. Do you know what their most successful p
+    17.02s  <ret> 발화 (turn3 첫 프레임)
+    17.18s  agent 발화 시작: <ret> Their most successful program has been football, havin
+    17.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: Southwestern University’s football program has been its most successfu
+    17.38s  user  발화 끝
+    24.05s  user  발화 시작: …is that the same as saying they’ve had a lot of postseason 
+    24.78s  agent 발화 끝
+    27.70s  <ret> 발화 (turn5 첫 프레임)
+    27.78s  agent 발화 시작: <ret> The football team has made twelve NCAA Division III pl
+    27.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: The Southwestern Pirates football team has made 12 NCAA Division III p
+    27.88s  user  발화 끝
+    33.72s  user  발화 시작: Yeah, totally.
+    34.91s  user  발화 끝
+    35.66s  agent 발화 끝
+    35.90s  user  발화 시작: Wow, twelve times! That’s impressive for Division III. What 
+    41.76s  <ret> 발화 (turn8 첫 프레임)
+    42.16s  agent 발화 시작: <ret> Unfortunately, I don’t have specific details about the
+    42.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (no information found)
+    42.34s  user  발화 끝
+    51.34s  agent 발화 끝

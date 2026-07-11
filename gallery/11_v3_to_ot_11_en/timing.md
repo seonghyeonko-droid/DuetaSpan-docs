@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Andrea",
+#     "name": "Aiden",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -12,53 +12,48 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2025-12-20",
+#       "date": "2026-05-02",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-09-14",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-08-11",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-06-20",
+#       "date": "2026-03-27",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-06-03",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-01-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "home",
+#       "text": "User's home address is 505 Pine Court."
+#     },
+#     {
+#       "date": "2025-06-04",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-21",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-25",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-10-23",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -68,27 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I've been feeling a bit sluggish l | S2 Did you remember to… | S3 …take the bins out? | S4 So, is it good for, like, a really
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote the song “Sh | S2 Oh, interesting. What genre would  | S3 Wow, that’s quite a gap in time! W | S4 Oh, that’s okay. Maybe I can look 
 
-     0.00s  user  발화 시작: I've been feeling a bit sluggish lately, and someone mention
-     5.52s  <ret> 발화 (turn1 첫 프레임)
-     5.91s  agent 발화 시작: <ret> It’s understandable to feel sluggish, and Andrews Live
-     5.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.67s]: Andrews Liver Salts is a saline laxative used to relieve occasional co
-     5.93s  user  발화 끝
-    14.08s  user  발화 시작: Right.
-    14.57s  user  발화 끝
-    18.41s  user  발화 시작: Oh, a laxative? I wasn’t expecting that.
-    18.58s  agent 발화 끝
-    21.55s  agent 발화 시작: It can be a helpful option when you're feeling off, but it's
-    21.65s  user  발화 끝
-    30.91s  user  발화 시작: Did you remember to…
-    31.25s  agent 발화 끝
-    32.29s  user  발화 끝
-    34.28s  user  발화 시작: …take the bins out?
-    35.59s  user  발화 시작: So, is it good for, like, a really blocked-up feeling, or ju
-    35.71s  user  발화 끝
-    40.54s  <ret> 발화 (turn8 첫 프레임)
-    40.78s  agent 발화 시작: <ret> Andrews Liver Salts can really help with discomfort fr
-    40.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: Andrews Liver Salts can help relieve discomfort from overindulgence in
-    41.01s  user  발화 끝
-    51.58s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote the song “Show Me the Way to Amarillo”
+     2.53s  <ret> 발화 (turn1 첫 프레임)
+     2.91s  user  발화 끝
+     2.92s  agent 발화 시작: <ret> That song was written by Howard Greenfield, along with
+     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Howard Greenfield co-wrote "Show Me the Way to Amarillo" with Burt Bac
+     7.69s  user  발화 시작: …was it a big hit when it first came out?
+     8.39s  agent 발화 끝
+    10.04s  user  발화 끝
+    10.05s  agent 발화 시작: It wasn't initially a major hit in 1968, but it gained popul
+    16.07s  user  발화 시작: Oh, interesting. What genre would you classify it as?
+    16.16s  agent 발화 끝
+    19.52s  user  발화 끝
+    19.93s  agent 발화 시작: It’s generally considered a pop song, with elements of count
+    22.50s  user  발화 시작: Yeah.
+    23.14s  user  발화 끝
+    25.77s  user  발화 시작: I see. I’m trying to remember who covered it later on.
+    25.91s  agent 발화 끝
+    29.00s  <ret> 발화 (turn8 첫 프레임)
+    29.05s  user  발화 끝
+    29.32s  agent 발화 시작: <ret> Tony Christie had a very successful cover of that song
+    29.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.56s]: Tony Christie released a successful cover of "Show Me the Way to Amari
+    34.85s  user  발화 시작: Oh.
+    35.44s  user  발화 끝
+    36.88s  agent 발화 끝
+    37.16s  user  발화 시작: Wow, that’s quite a gap in time! Was it different than the o
+    41.12s  agent 발화 시작: It was a more upbeat, orchestral arrangement than the origin
+    41.14s  user  발화 끝
+    43.07s  user  발화 시작: Uh-huh.
+    43.71s  user  발화 끝
+    45.93s  user  발화 시작: That sounds nice. Do you know if he ever performed it live?
+    45.98s  agent 발화 끝
+    48.85s  <ret> 발화 (turn14 첫 프레임)
+    49.08s  agent 발화 시작: <ret> I’m afraid I don’t have information about specific liv
+    49.09s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.47s]: (no information found)
+    49.30s  user  발화 끝
+    54.55s  agent 발화 끝
+    55.22s  user  발화 시작: Oh, that’s okay. Maybe I can look that up myself.
+    57.81s  user  발화 끝
+    57.93s  agent 발화 시작: It can be lovely to discover a song's history on your own. S
+    65.30s  agent 발화 끝
+    65.53s  user  발화 시작: That’s true. I appreciate your help, Laris.
+    68.43s  user  발화 끝
+    68.51s  agent 발화 시작: It’s my pleasure to offer what I can. Music often connects u
+    75.22s  agent 발화 끝

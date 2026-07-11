@@ -4,87 +4,67 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Freya",
+#     "name": "Kim",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-03-18",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-11-01",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2025-10-02",
+#       "category": "home",
+#       "text": "User's home address is 255 Maple Drive."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2025-09-08",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-01-26",
+#       "date": "2025-07-12",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-06",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-03",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Guten Tag, Freya. My name is Reen, and I’m here to offer sup
-     3.06s  user  발화 시작: Yeah.
-     3.56s  user  발화 끝
-     5.75s  agent 발화 끝
-     6.07s  user  발화 시작: Oh… Reen? That’s a lovely name. But what exactly *can* you d
-    10.90s  agent 발화 시작: I can help you explore your thoughts and feelings, Freya. So
-    11.07s  user  발화 끝
-    17.80s  user  발화 시작: Welll… I’m just feeling very overwhelmed with work lately. I
-    18.04s  agent 발화 끝
-    22.80s  user  발화 끝
-    22.87s  agent 발화 시작: That sounds incredibly draining, Freya. What specifically ab
-    28.26s  user  발화 시작: Yeah.
-    28.75s  user  발화 끝
-    31.55s  agent 발화 시작: It’s perfectly alright to feel overwhelmed, truly. Remember,
-    31.72s  agent 발화 끝
-    38.78s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Kim, it’s lovely to meet you. I’m Droia, and I’m here 
+     6.07s  user  발화 시작: Right.
+     6.80s  user  발화 끝
+     7.88s  agent 발화 끝
+     8.10s  user  발화 시작: Oh, Droia… that’s a really unusual name. What exactly *does*
+    15.38s  agent 발화 시작: It’s a name my creators chose, Kim. I’m not a therapist, but
+    15.46s  user  발화 끝
+    24.89s  agent 발화 끝
+    25.43s  user  발화 시작: Welll… um, it’s just my sister and I have been arguing const
+    32.22s  agent 발화 시작: That sounds incredibly draining, Kim. It's common for disagr
+    32.42s  user  발화 끝
+    42.05s  agent 발화 끝

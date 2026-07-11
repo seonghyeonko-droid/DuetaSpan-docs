@@ -6,97 +6,85 @@
 #     "user_id": "v3_pause_16",
 #     "name": "Casey",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "early 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-04-12",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-09",
+#       "date": "2026-02-15",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-11-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-10-08",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-10-09",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-17",
+#       "date": "2025-10-04",
 #       "category": "home",
-#       "text": "User's home address is 795 Elm Street."
+#       "text": "User's home address is 232 Elm Street."
+#     },
+#     {
+#       "date": "2025-08-20",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
+#       "date": "2025-12-26",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-06-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-27",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… who sang Ede | S2 …what’s the weather… | S3 …like in Seoul right now? | S4 That sounds pretty nice actually.
+# EXAMINER(FDB-v2) 단계: S1 Um, in the Mahabharata… | S2 …and Vrishsena…? | S3 And, uh, can you find me a good It | S4 What are Bella Italia’s hours?
 
-     0.00s  user  발화 시작: I was just wondering… who sang Edelweiss in.
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.11s  agent 발화 시작: <ret> It was Theodore Bikel who beautifully performed “Edelw
-     0.11s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: Theodore Bikel performed the song "Edelweiss" in the 1965 film *The So
-     0.11s  user  발화 끝
-     0.12s  <ret> 발화 (turn5 첫 프레임)
-     0.32s  user  발화 시작: Oh, okay! That’s good to know. Um…
-     0.32s  agent 발화 끝
-     0.41s  user  발화 시작: …what’s the weather…
-     0.41s  user  발화 끝
-     0.45s  user  발화 시작: …like in Seoul right now?
-     0.45s  user  발화 끝
-     0.52s  agent 발화 시작: <ret> Right now in Seoul, it’s 23.0°C with 74% humidity and 
-     0.52s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     0.52s  user  발화 끝
-     0.73s  user  발화 시작: Yeah.
-     0.73s  agent 발화 끝
-     0.75s  user  발화 시작: That sounds pretty nice actually.
-     0.75s  user  발화 끝
-     0.81s  agent 발화 시작: It does, doesn’t it? A comfortable temperature can really bo
-     0.81s  user  발화 끝
+     0.00s  user  발화 시작: Um, in the Mahabharata…
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.04s  user  발화 시작: …who was the father of Chitrasena…
+     0.04s  user  발화 끝
+     0.10s  user  발화 시작: …and Vrishsena…?
+     0.10s  user  발화 끝
+     0.12s  agent 발화 시작: <ret> Oh, that’s a lovely question! It was Karna who was the
+     0.12s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: Karna was the father of Chitrasena and Vrishsena, sons born to him and
+     0.12s  user  발화 끝
+     0.33s  user  발화 시작: Okay.
+     0.33s  agent 발화 끝
+     0.34s  agent 발화 시작: It’s interesting how lineage plays out in those epic stories
+     0.34s  user  발화 끝
+     0.37s  <ret> 발화 (turn7 첫 프레임)
+     0.40s  <ret> 발화 (turn9 첫 프레임)
+     0.50s  user  발화 시작: And, uh, can you find me a good Italian restaurant nearby?
+     0.50s  agent 발화 끝
+     0.61s  agent 발화 시작: <ret> I found three Italian restaurants close by: Bella Ital
+     0.61s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Restaurants found: Bella Italia (4.5 stars, 0.5 km), Pas
+     0.61s  user  발화 끝
+     0.75s  user  발화 시작: What are Bella Italia’s hours?
+     0.75s  agent 발화 끝
+     0.80s  agent 발화 시작: <ret> Bella Italia is open today from eleven thirty AM to te
+     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Bella Italia is open today from 11:30 AM to 10:00 PM.
+     0.80s  user  발화 끝
      1.00s  agent 발화 끝

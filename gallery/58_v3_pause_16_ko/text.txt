@@ -1,88 +1,75 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴 관리를 돕는 격려적이고 비판적이지 않은 웰니스 코치, 오레리나입니다. <system>
+SYSTEM: <system> 당신은 호기심 많고 공감적인 웰니스 코치 오로라로이며, 사람들의 일상적인 결정과 감정을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "유담",
+    "name": "세슬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
+      "date": "2026-06-08",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
+    },
+    {
+      "date": "2026-06-02",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into marathon training."
     },
     {
-      "date": "2026-03-09",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-02-15",
+      "category": "work",
+      "text": "User works as a chef."
     },
     {
-      "date": "2026-02-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2025-10-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-22",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-10-09",
+      "date": "2025-10-04",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-06-17",
-      "category": "home",
-      "text": "User's home address is 부산 수영구 광안동 210-3."
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
-      "title": "Researching a used car",
+      "date": "2026-06-21",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-06-06",
-      "title": "Planning a birthday dinner",
+      "date": "2026-02-25",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-05-27",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음… 혹시 ‘사운드 오브…
-[  0.08s][user ] …뮤직’에 ⟨ret@0.00s⟩ 나오는 ‘에델바이스’는 누가 불렀었는지…
-[  0.18s][moshi] ⟦⚡SPAN@0.18s: Theodore Bikel performed the song "Edelweiss" in the 1965 film The Sound of Music.⟧ ‘에델바이스’는 천구백육십오년 영화 ‘사운드 오브 뮤직’에서 시오도어 비켈이 부르셨답니다. 정말 아름다운 노래죠.
-[  0.42s][user ] «backchannel» 네.
-[  0.44s][user ] 시오도어 비켈… 처음 들어보는 이름인데…
-[  0.54s][user ] …혹시 ⟨ret@0.32s⟩ 다른 노래도 많이 불렀어요?
-[  0.64s][moshi] ⟦⚡SPAN@0.64s: (tool result) Theodore Bikel (born February 2, 1924 – died December 17, 2015) was an Austrian-American folk si⟧ 시오도어 비켈은 천구백이십사년 이월 이일에 태어나 이천십오년 십이월 십칠일에 세상을 떠나신 오스트리아-미국 포크 가수이자 배우, 영화 감독이셨어요.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Theodore Bikel"}}
-[  0.98s][user ] «backchannel» 네.
+[  0.00s][user ] 음… ⟨ret@0.00s⟩ 마하바라타에 나오는 치트라세나랑 브리슈세나 아버지가 누구였더라…
+[  0.12s][moshi] ⟦⚡SPAN@0.12s: Karna was the father of Chitrasena and Vrishsena, as mentioned in the epic Mahabharata.⟧ 마하바라타에 따르면, 치트라세나와 브리슈세나의 아버지는 카르나였답니다.
+[  0.23s][user ] «backchannel» 그치.
+[  0.25s][user ] …아, 맞다…
+[  0.29s][user ] …카르나였지. 그 사람 되게 용감했던가 봐.
+[  0.39s][moshi] 카르나의 용맹함은 여러 이야기에서 묘사되고 있어요. 어려운 환경 속에서도 굴하지 않았죠.
+[  0.59s][user ] 요즘 ⟨ret@0.50s⟩ 날씨 어때? 서울은?
+[  0.66s][moshi] ⟦⚡SPAN@0.66s: (tool result) Current weather in Seoul is 28.3°C, humidity 68%, wind 4.1 km/h.⟧ 지금 서울 날씨는 이십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 사 점 일킬로미터로 불고 있어요. 오늘 하루도 활기차게 보내세요!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}

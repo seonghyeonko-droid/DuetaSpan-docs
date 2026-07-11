@@ -1,90 +1,120 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Zoras, a encouraging and non-judgmental wellness coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Toraus, a kind and steady counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Emma",
+    "name": "Hannah",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-06",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-12-13",
-      "category": "home",
-      "text": "User's home address is 573 Maple Drive."
-    },
-    {
-      "date": "2025-09-23",
+      "date": "2026-06-22",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
+      "text": "User is planning a trip to Kyoto in May."
     },
     {
-      "date": "2025-07-13",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-06-19",
+      "category": "home",
+      "text": "User's home address is 957 Birch Road."
+    },
+    {
+      "date": "2026-03-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-30",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-04",
+      "date": "2026-02-05",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-17",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you send a payment request for one hundred fifty dollars and twenty cents to Electricity Bill?
-[  6.21s][moshi] ⟨ret@6.18s⟩ ⟦⚡SPAN@6.26s: (tool result) Payment request created. Request ID: 8729461.⟧ I’ve created a payment request for one hundred fifty dollars and twenty cents to Electricity Bill. The request ID is 8729461.
-      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "150.20", "payee": "Electricity Bill"}}
-[ 11.13s][user ] «backchannel» Really?
-[ 15.91s][user ] Great. What’s the weather like in Seoul right now?
-[ 19.23s][moshi] ⟨ret@18.99s⟩ ⟦⚡SPAN@19.23s: (tool result) The current weather in Seoul is 23.0°C, humidity 74%, wind 5.5 km/h.⟧ Right now in Seoul, it's 23.0°C with 74% humidity and a 5.5 km/h wind. Sounds quite pleasant!
+[  0.00s][user ] Can you hover over the button to sort by price?
+[  3.37s][moshi] ⟨ret@3.29s⟩ ⟦⚡SPAN@3.37s: (no information found)⟧ I’m sorry, I wasn’t able to complete that action for you. The site didn’t respond as expected.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.example.com", "query": "hover over the button to sort by price"}}
+[  9.10s][user ] Oh. Okay, well, what’s the weather in Seoul right now?
+[ 12.99s][moshi] ⟨ret@12.75s⟩ ⟦⚡SPAN@12.99s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 29.09s][user ] That does sound nice. I’m thinking about taking a class… maybe something to help with work.
-[ 34.83s][moshi] That’s wonderful! Investing in yourself is always a great step. What kind of work are you doing now?
-[ 42.26s][user ] I’m a software engineer, but I feel a bit stuck.
-[ 45.63s][moshi] It’s common to feel that way. Software engineering is demanding. What part of your work feels the most challenging?
-[ 54.09s][user ] Uh, welll… it's the team communication, I think.
-[ 57.59s][moshi] «interrupted» Team communication can certainly be tricky—
-[ 59.60s][user ] «interrupts_prev» …Do you think there are any online courses that could help with that?
-[ 62.99s][moshi] ⟨ret@62.91s⟩ ⟦⚡SPAN@62.99s: (tool result) Coursera offers "Effective Communication for Collaboration", rated 4.8 stars, coursera.org. This⟧ I found a course on Coursera, "Effective Communication for Collaboration", rated 4.8 stars. It focuses on teamwork and conflict resolution.
-      CALL: {"function": "search", "arguments": {"query": "online courses team communication software engineers"}}
-[ 73.24s][user ] That sounds promising. What does it ⟨ret@75.96s⟩ cost?
-[ 76.20s][moshi] ⟦⚡SPAN@76.20s: (tool result) The course is available through a subscription, costing $49 per month, or a one-time purchase of⟧ The course is available for $49 a month, or you can purchase it outright for $299.
-      CALL: {"function": "search", "arguments": {"query": "Coursera Effective Communication for Collaboration price"}}
-[ 82.61s][user ] Hmm, the monthly subscription seems better.
-[ 85.91s][moshi] It's smart to consider what best fits your budget. Taking small steps like this is key.
-[ 87.76s][user ] «backchannel» Uh-huh.
-[ 92.38s][user ] I also need to book a dentist appointment.
-[ 95.48s][moshi] Okay, I can help with that. Do you have a preferred dentist?
-[ 99.33s][user ] Dr. Kim, she's really ⟨ret@100.94s⟩ good.
-[101.34s][moshi] ⟦⚡SPAN@101.34s: (tool result) Dr. Kim is available on July 15th at 10:00 AM and July 22nd at 2:00 PM.⟧ Dr. Kim has openings on July 15th at 10:00 AM and July 22nd at 2:00 PM.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"provider_name": "Dr. Kim", "service_type": "dentist"}}
-[107.02s][user ] Let’s do the 15th at 10 AM.
-[109.94s][moshi] ⟨ret@109.70s⟩ ⟦⚡SPAN@109.94s: (tool result) Appointment with Dr. Kim booked for July 15th at 10:00 AM. Confirmation ID: 9876543.⟧ Wonderful! Your appointment with Dr. Kim is booked for July 15th at 10:00 AM. The confirmation ID is 9876543.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Dr. Kim", "date": "July 15", "time": "10:00 AM"}}
-[121.75s][user ] Perfect. And can you find me some Italian restaurants nearby?
-[126.07s][moshi] ⟨ret@125.67s⟩ ⟦⚡SPAN@126.07s: (tool result) "Bella Italia" is 0.5 km away, rated 4.5 stars. "Pasta Paradise" is 1 km away, rated 4.2 stars.⟧ There’s "Bella Italia", 0.5 km away with a 4.5-star rating, and "Pasta Paradise", 1 km away at 4.2 stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "current"}}
-[136.08s][user ] Bella Italia sounds good.
-[138.17s][moshi] I’m glad you found something that appeals to you. Remember, small pleasures can make a big difference.
-[143.65s][user ] Thanks, Zoras. You've been really helpful.
-[146.13s][moshi] You're very welcome. I'm happy to support you on your journey, and remember to be kind to yourself.
+[ 22.22s][moshi] It’s quite pleasant, isn’t it?
+[ 23.67s][user ] Yeah, it sounds nice. Um, do you remember what I said about my sister last ⟨ret@29.12s⟩ week?
+[ 29.36s][moshi] ⟦⚡SPAN@29.36s: [2026-07-03] My sister is really struggling with her new job.⟧ You mentioned on July 3rd that your sister is really struggling with her new job.
+[ 31.66s][user ] «backchannel» Oh.
+[ 34.24s][user ] Right. That’s it. I’m worried about her.
+[ 36.45s][moshi] It’s natural to feel worried when loved ones are facing difficulties. It shows you care deeply.
+[ 38.94s][user ] «backchannel» Yeah.
+[ 43.25s][user ] I guess so. What's the capital of ⟨ret@46.52s⟩ Australia?
+[ 46.60s][moshi] ⟦⚡SPAN@46.60s: Canberra is the capital city of Australia, officially becoming the capital in 1913, replacing Melbourne, with ⟧ Canberra is the capital city of Australia, officially becoming the capital in 1913. It had a population of 462,773 as of June 2023.
+[ 54.15s][user ] «backchannel» Mm-hmm.
+[ 58.91s][user ] Huh. I always forget that.
+[ 61.10s][moshi] It’s a common mistake, many people think it’s Sydney or Melbourne.
+[ 62.52s][user ] «backchannel» Yeah.
+[ 64.61s][user ] I need to book a restaurant for two people on Saturday evening.
+[ 68.58s][moshi] Do you have a cuisine preference or a specific location in mind?
+[ 70.56s][user ] «backchannel» Yeah.
+[ 73.05s][user ] Italian, somewhere near Gangnam.
+[ 75.85s][moshi] ⟨ret@75.45s⟩ ⟦⚡SPAN@75.85s: (tool result) Ristorante Como, Gangnam-gu, Seoul - 4.5 stars, price range: ₩₩₩⟧ Ristorante Como in Gangnam-gu has 4.5 stars and a price range of ₩₩₩. Would you like me to check availability?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Gangnam", "people": "2", "time": "Saturday evening"}}
+[ 84.19s][user ] Yes, please. ⟨ret@85.28s⟩
+[ 85.52s][moshi] ⟦⚡SPAN@85.52s: (tool result) Reservation confirmed for Ristorante Como, Saturday, 7:30 PM, 2 people, confirmation ID: 8X9L2⟧ Your reservation at Ristorante Como is confirmed for Saturday at 7:30 PM for two people. Your confirmation ID is 8X9L2.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Ristorante Como", "date": "Saturday", "time": "evening", "people": "2"}}
+[ 94.67s][user ] Perfect. Thank you.
+[ 96.20s][moshi] You’re very welcome. I’m glad I could help with that.
+[101.59s][user ] What’s the exchange rate between the Korean Won and the US dollar?
+[106.15s][moshi] ⟨ret@105.92s⟩ ⟦⚡SPAN@106.16s: (tool result) 1  1,307.25 KRW as of July 10, 2026, 2:45 PM KST.⟧ As of 2:45 PM KST today, one US dollar equals 1,307.25 Korean Won.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "KRW/USD"}}
+[114.78s][user ] Wow, that’s… a lot.
+[117.24s][moshi] It can certainly feel that way when converting larger amounts.
+[120.67s][user ] Could you find me some information about ⟨ret@124.17s⟩ mindfulness?
+[124.33s][moshi] ⟦⚡SPAN@124.33s: (tool result) Mindfulness is the basic human capacity to be fully present, aware of where we are and what we’r⟧ Mindfulness is the basic human capacity to be fully present, aware of our surroundings and not overwhelmed by what's happening, according to mindful.org.
+      CALL: {"function": "search", "arguments": {"query": "what is mindfulness"}}
+[129.36s][user ] «backchannel» Mm-hmm.
+[133.77s][user ] That sounds… good. I think I need that.
+[137.56s][moshi] It's a valuable practice, especially when life feels overwhelming. Taking a moment to simply be present can make a big difference.
+[145.37s][user ] I wonder if my sister knows about that…
+[148.28s][moshi] It might be something to share with her, if you think she’d be open to it. Sometimes, just knowing there are tools available can be comforting.
+[155.43s][user ] Maybe you're right. What time is it in London?
+[159.43s][moshi] ⟨ret@159.19s⟩ ⟦⚡SPAN@159.43s: (tool result) It is Wednesday, July 10, 2026 at 7:45 AM in Europe/London right now.⟧ It is currently Wednesday, July 10th, 2026, at 7:45 AM in London.
+      CALL: {"function": "get_time", "arguments": {"location": "London"}}
+[163.33s][user ] «backchannel» Right.
+[165.32s][user ] Oh, still early there.
+[167.18s][moshi] Yes, quite a bit earlier than here. It’s a good time for a quiet start to the day, perhaps.
+[172.82s][user ] I think I'll call her later.
+[174.49s][moshi] That sounds like a thoughtful plan. Reaching out can make all the difference.

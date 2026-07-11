@@ -1,64 +1,56 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Sios, a practical and reassuring life coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Ura, a practical and reassuring life coach who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Grace",
+    "name": "Jamie",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "work",
-      "text": "User works as a physical therapist."
+      "date": "2026-05-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-14",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-02-12",
+      "date": "2026-04-11",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-11-27",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-03-29",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-09-08",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-24",
+      "date": "2026-03-16",
       "category": "home",
-      "text": "User's home address is 911 Oak Avenue."
+      "text": "User's home address is 490 Pine Court."
+    },
+    {
+      "date": "2025-11-19",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-07-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-07",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-04-18",
+      "date": "2026-04-14",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -66,7 +58,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-08",
+      "date": "2025-11-16",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -77,13 +69,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Grace, I'm Sios. It's lovely to meet you. I understand you’re looking for a little guidance today?
-[  5.98s][user ] Um, welll… I’m planning a short trip, and I’d like a recommendation for a relaxing place.
-[ 12.85s][moshi] A relaxing place sounds wonderful. Do you have any preferences for the type of destination?
-[ 14.81s][user ] «backchannel» Mm-hmm.
-[ 18.86s][moshi] ⟨ret@18.70s⟩ ⟦⚡SPAN@18.86s: [2026-05-14] User is into birdwatching. That could be a wonderful focus for a relaxing trip, don't you think?⟧ I recall you enjoy birdwatching.
-[ 20.12s][user ] «backchannel» Yeah.
-[ 22.52s][user ] Oh, yes! That’s right, I do love birdwatching. Where would you ⟨ret@27.27s⟩ suggest?
-[ 27.43s][moshi] ⟦⚡SPAN@27.43s: Corsica, France: Known for its diverse birdlife, stunning landscapes, and peaceful atmosphere. Corsica Tourism⟧ Corsica, France, is known for its diverse birdlife and peaceful atmosphere. It offers a really stunning landscape as well.
-[ 30.76s][user ] «backchannel» Okay.
-[ 35.55s][user ] Corsica… that sounds lovely!
+[  0.00s][moshi] Hi Jamie, I'm Ura. It's lovely to meet you.
+[  2.80s][user ] um, I’m trying to decide where to go for ⟨ret@5.58s⟩ dinner tonight.
+[  5.99s][moshi] ⟦⚡SPAN@5.99s: [2025-07-26] User's favorite cuisine is Mexican.⟧ You told me back on July twenty-sixth, two thousand and twenty-five, that your favorite cuisine is Mexican.
+[ 14.56s][user ] Oh, right! That’s true. Do you have any recommendations in Sydney?
+[ 19.23s][moshi] ⟨ret@19.15s⟩ ⟦⚡SPAN@19.23s: (tool result) Name: El Paso Mexican Restaurant, Address: 32 Oxford Street, Darlinghurst, Sydney, NSW 2010, Pho⟧ El Paso Mexican Restaurant on Oxford Street has a four-point-five-star rating, and their phone number is zero-two, nine-two-eight-one, five-eight-hundred.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Mexican", "location": "Sydney"}}
+[ 25.02s][user ] «backchannel» Mm-hmm.
+[ 28.28s][user ] That sounds perfect, thanks!
+[ 30.18s][moshi] Wonderful! It’s great to revisit your preferences to make choices easier. A little planning can bring a lot of peace of mind.

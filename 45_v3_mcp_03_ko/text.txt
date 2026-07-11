@@ -1,72 +1,87 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 히아스이며, 육아 및 가족 시간과 관련하여 사람들을 돕는 격려적이고 비판적이지 않은 지지적인 조언자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 누우스이며, 인생의 중요한 변화를 겪는 사람들을 돕는 부드럽고 사려 깊은 조력자입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "서형",
+    "name": "윤준",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-18",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-06-11",
+      "category": "home",
+      "text": "User's home address is 서울 마포구 성산동 45-6."
     },
     {
-      "date": "2026-03-06",
+      "date": "2026-01-24",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-08-22",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-07",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2025-08-10",
+      "category": "work",
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-07-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-07-05",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-05-30",
+      "date": "2026-03-27",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-21",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이번 주 토요일에 아이들하고 갈 만한 곳 없을까요?
-[  3.31s][moshi] 특별히 관심 있는 장소가 있나요?
-[  5.20s][user ] 음… 실내에서 놀 수 있는 곳이면 좋겠어요. 날씨가 너무 더울 것 같아서요.
-[ 10.32s][moshi] 아이들의 연령대는 어떻게 되나요?
-[ 13.04s][user ] 큰애는 일곱 살이고, 작은애는 네 살이에요.
-[ 16.09s][moshi] 일곱 살, 네 살 아이들과 함께 즐길 수 있는 실내 놀이터를 알아볼게요.
-[ 20.94s][moshi] ⟨ret@20.63s⟩ ⟦⚡SPAN@20.95s: (tool result) 서울 키자니아 서울은 다양한 직업 체험 시설과 교육 프로그램을 갖춘 어린이 테마파크입니다. 키자니아 서울 공식 웹사이트, seoul.kidzania.com, 키자니아 서울은⟧ 서울에 있는 키자니아 서울은 다양한 직업 체험을 할 수 있는 어린이 테마파크라고 하네요. 아이들이 정말 좋아할 것 같아요.
-      CALL: {"function": "search", "arguments": {"query": "서울 실내 놀이터 7세 4세"}}
-[ 24.03s][user ] «backchannel» 네.
-[ 30.36s][user ] 키자니아는 좀 비싼 것 같던데… 다른 곳은 없을까요? —
-[ 34.18s][user ] …혹시 좀 더 저렴한 곳은 없을까요?
-[ 36.62s][moshi] 혹시 특정 지역을 선호하시나요?
-[ 38.85s][user ] 강남 쪽이면 더 좋겠어요.
-[ 41.06s][moshi] 강남 근처의 저렴한 실내 놀이터를 찾아볼게요.
-[ 44.47s][moshi] ⟨ret@44.07s⟩ ⟦⚡SPAN@44.47s: (tool result) 강남구에는 꼬마정원 어린이집 실내놀이터가 있으며, 다양한 놀이 시설과 저렴한 가격으로 인기가 많습니다. 꼬마정원 어린이집 실내놀이터, blog.naver.com/PostVi⟧ 강남구에 있는 꼬마정원 어린이집 실내놀이터가 저렴하고 인기가 많다고 하네요. 아이들이 안전하게 놀 수 있는 곳 같아요.
-      CALL: {"function": "search", "arguments": {"query": "강남 실내 놀이터 저렴"}}
-[ 48.32s][user ] «backchannel» 네.
-[ 51.52s][user ] 꼬마정원은 괜찮겠네요. 가격은 ⟨ret@54.19s⟩ 얼마예요?
-[ 54.50s][moshi] ⟦⚡SPAN@54.51s: (no information found)⟧ 꼬마정원의 가격 정보는 현재 찾을 수 없네요. 직접 문의해 보시는 것이 좋겠습니다.
+[  0.00s][user ] 달러 환율 좀 알려줄 ⟨ret@1.66s⟩ 수 있어?
+[  1.98s][moshi] ⟦⚡SPAN@1.98s: (tool result) The current exchange rate for the US dollar to the euro is 1 euro equals 0.92 US dollars, as of ⟧ 현재 달러 대 유로 환율은, 이천이십육년 칠월 십일 오후 두시 삼십오분 기준으로 유로 일당 영 점 구 이달러입니다.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "USD/EUR"}}
+[  7.58s][user ] «backchannel» 정말요?
+[ 10.69s][user ] 음, 그럼 유로로 백달러를 바꾸면 얼마를 받을 수 있지?
+[ 14.87s][moshi] 백달러를 유로로 환전하면, 현재 환율로는 약 구십이유로를 받으실 수 있습니다.
+[ 19.96s][user ] 혹시 환율 변동 추이도 볼 수 ⟨ret@22.38s⟩ 있을까?
+[ 22.78s][moshi] ⟦⚡SPAN@22.78s: (tool result) Google Finance shows the USD to EUR exchange rate has fluctuated between 0.91 and 0.93 over the ⟧ 지난 한 주 동안 달러 대 유로 환율은 영 점 구 일에서 영 점 구 삼 사이로 변동했으며, 약간 하락하는 추세를 보입니다. 자세한 내용은 google.com/finance에서 확인하실 수 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "USD to EUR exchange rate history"}}
+[ 28.46s][user ] «backchannel» 네네.
+[ 33.90s][moshi] 환율 변동은 여러 요인에 의해 영향을 받기 때문에, 환전 시점과 금액에 따라 달라질 수 있습니다.
+[ 40.71s][user ] 혹시 환전 수수료는 얼마나 해? —
+[ 43.11s][user ] … 환전할 때 제일 좋은 은행은 어디야?
+[ 45.52s][moshi] ⟨ret@45.44s⟩ ⟦⚡SPAN@45.52s: (tool result) A recent article by The Korea Herald lists Woori Bank and Shinhan Bank as offering the lowest cu⟧ 최근 코리아 헤럴드 기사에 따르면, 우리은행과 신한은행이 가장 낮은 환전 수수료와 경쟁력 있는 환율을 제공합니다. 기사는 이천이십육년 칠월 구일에 게시되었습니다.
+      CALL: {"function": "search", "arguments": {"query": "best bank for currency exchange in Korea"}}
+[ 56.34s][moshi] 환전 수수료는 은행마다 다를 수 있으니, 직접 확인해 보시는 것이 좋습니다.
+[ 59.03s][user ] «backchannel» 아.
+[ 61.40s][user ] 알았어, 우리은행에 가봐야겠다.
+[ 64.17s][moshi] 좋은 선택이세요. 환전 전에 환율을 다시 한번 확인하시면 더욱 유리할 거예요.
+[ 69.19s][user ] 고마워, 누우스.
+[ 70.69s][moshi] 언제든지 도움이 필요하시면 말씀해 주세요. 앞으로의 여정에도 행운이 함께 하기를 바랍니다.

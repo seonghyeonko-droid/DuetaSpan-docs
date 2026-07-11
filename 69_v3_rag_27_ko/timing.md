@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "수진",
+#     "name": "유아",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,142 +18,106 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-10-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-10-09",
+#       "date": "2026-01-07",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-10-08",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-11-29",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-06-19",
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-08-03",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-07-12",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-03",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-16",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때요? | S2 그분이 폴 매카트니 앨범 작업에도 참여했나요? | S3 제가 이번 주 토요일에 영화를 보려고 하는데, 좋은 영화 추천 | S4 다음 주 화요일 오후 세시에 예약 가능한 곳을 찾아주세요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 아, 그래? 천구백팔년이라고? | S3 오, 인사이드 아웃 이? 그거 재밌어 보이던데. | S4 혹시 내일 모레 날씨는 어때?
 
-     0.00s  user  발화 시작: 오늘 날씨 어때요?
-     1.46s  <ret> 발화 (turn1 첫 프레임)
-     1.53s  agent 발화 시작: <ret> 지금 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요. 오늘 
-     1.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     1.61s  user  발화 끝
-     8.48s  user  발화 시작: 음, 좋아요.
-     8.49s  agent 발화 끝
-     9.81s  user  발화 끝
-     9.84s  agent 발화 시작: 혹시 다른 궁금한 점이 있으세요?
-    11.69s  agent 발화 끝
-    12.54s  user  발화 시작: 브라이언 키스 허비 플라워스라는 분이 누구세요?
-    15.79s  <ret> 발화 (turn5 첫 프레임)
-    15.86s  agent 발화 시작: <ret> 브라이언 키스 허비 플라워스는 첼로와 더블 베이스, 튜바를 전문으로 하는 영국의 음악가예요.
-    15.87s  ⚡SPAN 주입 [d'=0.72s / d_lead=5.84s]: Brian Keith "Herbie" Flowers is an English musician specialising in el
-    16.10s  user  발화 끝
-    21.70s  agent 발화 끝
-    21.78s  user  발화 시작: 아, 그렇군요.
-    23.14s  agent 발화 시작: 음악 분야에 관심이 많으신가 봐요.
-    23.16s  user  발화 끝
-    24.92s  user  발화 시작: 그분이 폴 매카트니 앨범 작업에도 참여했나요?
-    25.08s  agent 발화 끝
-    27.54s  <ret> 발화 (turn9 첫 프레임)
-    27.94s  agent 발화 시작: <ret> 네, 'Give My Regards to Broad Street'은 폴 매카트니의 다섯 번째 스튜
-    27.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: Give My Regards to Broad Street is the fifth studio album by Paul McCa
-    28.04s  user  발화 끝
-    30.75s  user  발화 시작: 어머.
-    31.48s  user  발화 끝
-    35.83s  agent 발화 시작: 폴 매카트니와 함께 작업한 음악가들이 정말 많죠. —
-    35.87s  agent 발화 끝
-    37.92s  user  발화 시작: 그 앨범 말고 다른 앨범에도 참여했나요?
-    38.70s  agent 발화 끝
-    40.80s  agent 발화 시작: 폴 매카트니와 관련된 다른 앨범에 대한 정보는 지금 바로 확인해 볼게요.
-    40.93s  user  발화 끝
-    42.94s  user  발화 시작: 음.
-    43.33s  user  발화 끝
-    44.43s  user  발화 시작: 네, 부탁드려요.
-    44.91s  agent 발화 끝
-    45.91s  user  발화 끝
-    45.96s  <ret> 발화 (turn16 첫 프레임)
-    46.03s  agent 발화 시작: <ret> 브라이언 키스 허비 플라워스는 'All the Best!' (천구백팔십칠)과 'Chaos and 
-    46.04s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.41s]: (tool result) Brian Keith "Herbie" Flowers played bass on many recordi
-    55.44s  user  발화 시작: 아, 그렇군요. 정말 다양한 앨범에 참여했네요.
-    55.44s  agent 발화 끝
-    59.40s  agent 발화 시작: 음악가의 세계는 넓고 깊어서, 끊임없이 새로운 발견이 있는 것 같아요.
-    59.46s  user  발화 끝
-    63.43s  agent 발화 끝
-    63.52s  user  발화 시작: 제가 이번 주 토요일에 영화를 보려고 하는데, 좋은 영화 추천해 주실 수 있나요?
-    68.52s  <ret> 발화 (turn20 첫 프레임)
-    68.60s  agent 발화 시작: <ret> 이번 주 토요일에 상영하는 영화로는 '오펜하이머', '바비', '미션 임파서블: 데드 레코닝 파트
-    68.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Oppenheimer, Barbie, Mission: Impossible - Dead Reckonin
-    68.71s  user  발화 끝
-    72.88s  user  발화 시작: 네.
-    73.36s  user  발화 끝
-    75.03s  user  발화 시작: 오펜하이머는 어떤 영화인가요?
-    75.04s  agent 발화 끝
-    76.68s  <ret> 발화 (turn23 첫 프레임)
-    77.07s  agent 발화 시작: <ret> '오펜하이머'는 크리스토퍼 놀란 감독의 이천이십삼년 전기 스릴러 영화예요. 제이차 세계 대전 중 
-    77.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) Oppenheimer is a 2023 epic biographical thriller film di
-    77.29s  user  발화 끝
-    81.98s  user  발화 시작: 정말요?
-    82.79s  user  발화 끝
-    88.15s  agent 발화 끝
-    88.50s  user  발화 시작: 흥미롭네요.
-    89.42s  agent 발화 시작: 영화를 통해 역사를 배우는 것도 좋은 경험이 될 수 있겠죠.
-    89.60s  user  발화 끝
-    91.48s  user  발화 시작: 음.
-    91.97s  user  발화 끝
-    92.37s  agent 발화 끝
-    93.61s  user  발화 시작: 혹시 제가 다음 주 화요일에 예약 가능한 마사지샵을 알아봐 주실 수 있나요?
-    98.82s  agent 발화 시작: 마사지샵 예약은 제가 도와드릴 수 있지만, 정확한 날짜와 시간을 알려주셔야 해요.
-    98.93s  user  발화 끝
-   102.60s  user  발화 시작: 네.
-   103.14s  user  발화 끝
-   104.28s  agent 발화 끝
-   105.67s  user  발화 시작: 다음 주 화요일 오후 세시에 예약 가능한 곳을 찾아주세요.
-   109.83s  <ret> 발화 (turn32 첫 프레임)
-   110.20s  user  발화 끝
-   110.22s  agent 발화 시작: <ret> 'Serenity Spa'에서 다음 주 화요일 오후 세시에 예약이 가능하고, 확인 번호는 칠 에이
-   110.23s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.93s]: (tool result) Serenity Spa - Available at 3:00 PM, confirmation ID: 7A
-   113.31s  user  발화 시작: 네.
-   113.95s  user  발화 끝
-   115.94s  user  발화 시작: 감사합니다. 예약해 주세요.
-   116.16s  agent 발화 끝
-   117.74s  <ret> 발화 (turn35 첫 프레임)
-   118.05s  agent 발화 시작: <ret> 'Serenity Spa'에서 이천이십육년 칠월 십사일 오후 세시에 예약이 확정되었고, 확인 번호
-   118.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Appointment confirmed at Serenity Spa for July 14, 2026,
-   118.19s  user  발화 끝
-   125.25s  user  발화 시작: 정말 감사합니다. 덕분에 편안한 시간을 보낼 수 있겠네요.
-   125.28s  agent 발화 끝
-   129.14s  agent 발화 시작: 도움이 되었다니 다행이에요. 가끔은 자신을 위한 시간을 갖는 것이 중요하죠.
-   129.41s  user  발화 끝
-   133.49s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨 어때?
+     1.25s  <ret> 발화 (turn1 첫 프레임)
+     1.32s  agent 발화 시작: <ret> 지금 기온은 이십삼°C이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+     1.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Current conditions are 23.0°C, humidity 74%, wind 5.5 km
+     1.51s  user  발화 끝
+     7.50s  agent 발화 시작: 오늘 외출하실 계획 있으세요?
+     7.57s  agent 발화 끝
+     9.21s  agent 발화 끝
+     9.83s  user  발화 시작: 응, 잠깐 산책할까 생각 중이야.
+    12.23s  agent 발화 시작: 산책하기 좋은 날씨네요. 햇볕도 적당하고 바람도 살랑살랑 불 것 같아요.
+    12.41s  user  발화 끝
+    16.25s  user  발화 시작: 혹시 피터 토마스 워드가 뛰었던 팀 이름이 언제 바뀌었는지 알아?
+    16.62s  agent 발화 끝
+    19.89s  <ret> 발화 (turn6 첫 프레임)
+    20.05s  agent 발화 시작: <ret> 피터 토마스 워드는 보스턴 레드 스타킹스라는 팀에서 뛰었는데, 공식적으로 천구백팔년에 보스턴 아메
+    20.05s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.52s]: Peter Thomas Ward played for the Boston Red Stockings, a team which wa
+    20.14s  user  발화 끝
+    28.57s  agent 발화 끝
+    28.80s  user  발화 시작: 아, 그래? 천구백팔년이라고?
+    31.11s  user  발화 끝
+    31.25s  agent 발화 시작: 네, 천구백팔년에 팀 이름이 바뀌었어요. 기억해 두시겠어요?
+    34.44s  user  발화 시작: 음… 기억해야겠네.
+    34.58s  agent 발화 끝
+    36.55s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 야구 관련해서 더 알고 싶으신 건 없으세요?
+    36.66s  user  발화 끝
+    40.55s  user  발화 시작: 아니, 괜찮아. 이번 주 토요일에 영화 보러 갈 건데, 혹시 괜찮은 영화 있어?
+    40.72s  agent 발화 끝
+    45.43s  <ret> 발화 (turn12 첫 프레임)
+    45.83s  agent 발화 시작: <ret> 현재 메가박스 코엑스에서 '인사이드 아웃 이'가 상영 중이고, 상영 시간은 오후 두시, 네시 삼십
+    45.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) "Inside Out 2" is currently showing at Megabox COEX, wit
+    46.02s  user  발화 끝
+    50.29s  user  발화 시작: 음.
+    50.74s  user  발화 끝
+    52.60s  user  발화 시작: 오, 인사이드 아웃 이? 그거 재밌어 보이던데.
+    52.68s  agent 발화 끝
+    56.20s  user  발화 끝
+    56.31s  agent 발화 시작: 네, 많은 분들이 재미있다고 하시더라고요. 가족 영화로도 좋고요.
+    60.14s  agent 발화 끝
+    60.32s  user  발화 시작: 그럼 토요일 일곱시 티켓 예매해 줘.
+    62.67s  <ret> 발화 (turn17 첫 프레임)
+    62.75s  agent 발화 시작: <ret> 메가박스 코엑스에서 토요일 일곱시에 '인사이드 아웃 이' 티켓 예매가 완료되었습니다. 확인 번호는
+    62.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.32s]: (tool result) Booking confirmed for "Inside Out 2" at Megabox COEX, Sa
+    62.91s  user  발화 끝
+    70.07s  agent 발화 끝
+    70.28s  user  발화 시작: 고마워, 바노.
+    71.61s  user  발화 끝
+    71.74s  agent 발화 시작: 천만에요.
+    72.53s  user  발화 시작: 혹시 내일 모레 날씨는 어때?
+    72.56s  agent 발화 끝
+    74.52s  <ret> 발화 (turn21 첫 프레임)
+    74.58s  agent 발화 시작: <ret> 일요일, 칠월 십이일의 예상 기온은 이십오°C이고, 부분적으로 흐리며, 비가 올 확률은 이십퍼센트
+    74.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.22s]: (tool result) The forecast for Sunday, July 12, 2026, is 25.0°C, partl
+    74.80s  user  발화 끝
+    77.62s  user  발화 시작: 와.
+    78.26s  user  발화 끝
+    81.71s  user  발화 시작: 흐리다고?
+    81.81s  agent 발화 끝
+    82.67s  user  발화 끝
+    82.77s  agent 발화 시작: 네, 일요일에는 구름이 조금 끼겠지만, 비가 올 가능성은 낮습니다.
+    86.47s  agent 발화 끝
+    86.76s  user  발화 시작: 알았어.
+    87.42s  agent 발화 시작: 혹시 다른 궁금한 점은 없으신가요? 제가 도와드릴 수 있는 다른 일이 있을까요?
+    87.58s  user  발화 끝
+    91.87s  agent 발화 끝

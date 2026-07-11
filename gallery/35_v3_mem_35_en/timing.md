@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Grace",
+#     "name": "Jamie",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-05-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-02-12",
+#       "date": "2026-04-11",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-11-27",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-03-29",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-08",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-24",
+#       "date": "2026-03-16",
 #       "category": "home",
-#       "text": "User's home address is 911 Oak Avenue."
+#       "text": "User's home address is 490 Pine Court."
+#     },
+#     {
+#       "date": "2025-11-19",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-07-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-18",
+#       "date": "2026-04-14",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-08",
+#       "date": "2025-11-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -77,27 +69,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Grace, I'm Sios. It's lovely to meet you. I understand yo
-     5.98s  user  발화 시작: Um, welll… I’m planning a short trip, and I’d like a recomme
-     6.02s  agent 발화 끝
-    12.74s  user  발화 끝
-    12.85s  agent 발화 시작: A relaxing place sounds wonderful. Do you have any preferenc
-    14.81s  user  발화 시작: Mm-hmm.
-    15.58s  user  발화 끝
-    18.70s  <ret> 발화 (turn4 첫 프레임)
-    18.86s  agent 발화 시작: <ret> I recall you enjoy birdwatching.
-    18.86s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.26s]: [2026-05-14] User is into birdwatching. That could be a wonderful focu
-    18.96s  agent 발화 끝
-    20.12s  user  발화 시작: Yeah.
-    20.57s  user  발화 끝
-    21.12s  agent 발화 끝
-    22.52s  user  발화 시작: Oh, yes! That’s right, I do love birdwatching. Where would y
-    27.27s  <ret> 발화 (turn7 첫 프레임)
-    27.43s  agent 발화 시작: <ret> Corsica, France, is known for its diverse birdlife and
-    27.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Corsica, France: Known for its diverse birdlife, stunning landscapes, 
-    27.52s  user  발화 끝
-    30.76s  user  발화 시작: Okay.
-    31.25s  user  발화 끝
-    35.16s  agent 발화 끝
-    35.55s  user  발화 시작: Corsica… that sounds lovely!
-    38.80s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Jamie, I'm Ura. It's lovely to meet you.
+     2.80s  user  발화 시작: um, I’m trying to decide where to go for dinner tonight.
+     2.87s  agent 발화 끝
+     5.58s  <ret> 발화 (turn2 첫 프레임)
+     5.99s  agent 발화 시작: <ret> You told me back on July twenty-sixth, two thousand an
+     5.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [2025-07-26] User's favorite cuisine is Mexican.
+     6.03s  user  발화 끝
+    12.00s  agent 발화 끝
+    14.56s  user  발화 시작: Oh, right! That’s true. Do you have any recommendations in S
+    19.15s  <ret> 발화 (turn4 첫 프레임)
+    19.23s  agent 발화 시작: <ret> El Paso Mexican Restaurant on Oxford Street has a four
+    19.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Name: El Paso Mexican Restaurant, Address: 32 Oxford Str
+    19.37s  user  발화 끝
+    25.02s  user  발화 시작: Mm-hmm.
+    25.79s  user  발화 끝
+    28.00s  agent 발화 끝
+    28.28s  user  발화 시작: That sounds perfect, thanks!
+    30.18s  agent 발화 시작: Wonderful! It’s great to revisit your preferences to make ch
+    30.22s  user  발화 끝
+    37.82s  agent 발화 끝

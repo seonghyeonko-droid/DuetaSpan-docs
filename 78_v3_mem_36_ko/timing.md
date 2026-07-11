@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "성민",
+#     "name": "도완",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,107 +13,85 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-02-14",
+#       "date": "2026-02-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2026-02-26",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-08-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-02-19",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 네, 잘 보냈어요. 그런데 혹시 제가 뉴질랜드 여행 계획 세운 | S2 으음… 그럼 구월 초는 어때요? | S3 아, 그리고 혹시 제가 예전에 집 구하는 거 도와달라고 했었죠 | S4 이야, 잘 됐네요. 히아 씨, 정말 고마워요!
 
-     0.00s  agent 발화 시작: 안녕하세요, 성민님! 저는 여러분을 도와드리는 히아입니다. 오늘 하루도 잘 보내셨나요?
-     0.01s  <ret> 발화 (turn3 첫 프레임)
-     0.02s  <ret> 발화 (turn7 첫 프레임)
-     0.07s  user  발화 시작: 네.
-     0.07s  agent 발화 끝
-     0.08s  user  발화 시작: 네, 잘 보냈어요. 그런데 혹시 제가 뉴질랜드 여행 계획 세운 거 기억하세요?
-     0.08s  user  발화 끝
-     0.16s  <ret> 발화 (turn5 첫 프레임)
-     0.17s  agent 발화 시작: <ret> 네, 성민님. 뉴질랜드 여행을 팔월에 계획하고 계시는군요.
-     0.17s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-02-14] User is planning a trip to New Zealand in August.
-     0.17s  user  발화 끝
-     0.20s  <ret> 발화 (turn10 첫 프레임)
-     0.22s  user  발화 시작: 아, 맞아요! 그때 항공권 예매하려고 했었는데… 혹시 지금 항공권 좀 알아봐 줄 수 있을까요?
-     0.22s  agent 발화 끝
-     0.32s  agent 발화 시작: <ret> 죄송해요, 성민님. 팔월 항공편은 지금 찾을 수 없네요.
-     0.32s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) No flights found for August 2026.
-     0.32s  user  발화 끝
-     0.35s  <ret> 발화 (turn13 첫 프레임)
-     0.38s  user  발화 시작: 으음… 그럼 구월 초는 어때요?
-     0.38s  agent 발화 끝
-     0.42s  agent 발화 시작: <ret> 구월 초 부산에서 오클랜드행 항공권은 천이백달러부터 있네요.
-     0.42s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) Flights available from Busan to Auckland starting at $12
-     0.42s  user  발화 끝
-     0.47s  user  발화 시작: 어머.
-     0.47s  agent 발화 끝
-     0.48s  user  발화 시작: 그쪽 좌석은 통로 쪽으로 부탁드려도 될까요?
-     0.48s  user  발화 끝
-     0.52s  agent 발화 시작: <ret> 네, 성민님. 통로 쪽 좌석을 선호하시는 것을 기억하고 있어요.
-     0.52s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2025-08-21] User prefers an aisle seat when traveling.
-     0.52s  user  발화 끝
-     0.59s  user  발화 시작: 네.
-     0.59s  agent 발화 끝
-     0.60s  user  발화 시작: 아, 그리고 혹시 제가 예전에 집 구하는 거 도와달라고 했었죠?
-     0.60s  user  발화 끝
-     0.67s  agent 발화 시작: <ret> 네, 성민님. 시내에 반려동물과 함께 살 수 있는 이룸을 찾으셨었죠.
-     0.67s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.67s  user  발화 끝
-     0.74s  user  발화 시작: 와.
-     0.74s  agent 발화 끝
-     0.75s  user  발화 시작: 맞아요. 혹시 지금 반려동물 허용되는 곳이 있는지 알아봐 주실 수 있나요?
-     0.75s  user  발화 끝
-     0.75s  <ret> 발화 (turn16 첫 프레임)
-     0.83s  agent 발화 시작: <ret> 시내에 반려동물 허용되는 이룸 아파트가 삼채 있고, 월세는 천오백달러부터 시작하네요.
-     0.83s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 3 pet-friendly 2-bedroom apartments available downtown, 
-     0.83s  user  발화 끝
-     0.90s  user  발화 시작: 진짜요?
-     0.90s  agent 발화 끝
-     0.91s  user  발화 시작: 이야, 잘 됐네요. 히아 씨, 정말 고마워요!
-     0.91s  user  발화 끝
-     0.96s  agent 발화 시작: 천만에요, 성민님! 도움이 되어서 기쁘네요.
-     0.96s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 도완님. 저는 제아르입니다. 오늘 하루도 활기차게 시작하셨나요?
+     0.08s  <ret> 발화 (turn2 첫 프레임)
+     0.10s  user  발화 시작: 네, 안녕하세요. 제아르님. 혹시 제가 예전에 아이슬란드 여행 계획 세우는 거 말씀드렸었죠?
+     0.10s  agent 발화 끝
+     0.24s  <ret> 발화 (turn6 첫 프레임)
+     0.24s  agent 발화 시작: <ret> 네, 오월에 아이슬란드 여행을 계획하고 계셨던 걸 기억하고 있어요.
+     0.24s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: [2026-02-28] User is planning a trip to Iceland in May.
+     0.24s  user  발화 끝
+     0.35s  user  발화 시작: 그 여행에 대해 좀 더 자세히 얘기해 볼까요?
+     0.35s  agent 발화 끝
+     0.45s  agent 발화 시작: 도완님. 어떤 점이 궁금하신가요? 여행 준비는 잘 되어가고 있으신가요?
+     0.45s  user  발화 끝
+     0.55s  user  발화 시작: 아이슬란드 여행하면서 혹시 꽃가루 알레르기 때문에 걱정될까요?
+     0.55s  agent 발화 끝
+     0.64s  agent 발화 시작: <ret> 꽃가루 알레르기가 있으시군요. 오월의 아이슬란드 꽃가루 농도를 확인해 드릴게요. 오월 일일 아이슬
+     0.64s  ⚡SPAN 주입 [d'=0.36s / d_lead=0.36s]: [2025-07-24] User is allergic to pollen.
+     0.64s  user  발화 끝
      1.00s  agent 발화 끝

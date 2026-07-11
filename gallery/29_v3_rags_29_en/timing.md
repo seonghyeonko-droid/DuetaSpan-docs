@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Owen",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-31",
+#       "date": "2026-06-09",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-03-11",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-03-02",
-#       "category": "home",
-#       "text": "User's home address is 450 Maple Drive."
-#     },
-#     {
-#       "date": "2025-10-22",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-10-12",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-10",
+#       "date": "2026-01-10",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-06-10",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-15",
+#       "date": "2025-10-29",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -56,11 +51,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Who won the Pulitzer…
-     1.57s  user  발화 끝
-     2.85s  user  발화 시작: …Prize for Music in 2018?
-     4.76s  <ret> 발화 (turn2 첫 프레임)
-     5.08s  agent 발화 시작: <ret> Well, it seems Kendrick Lamar received the 2018 Pulitz
-     5.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.72s]: Kendrick Lamar was awarded the 2018 Pulitzer Prize for Music for his a
-     5.15s  user  발화 끝
-    15.80s  agent 발화 끝
+     0.00s  user  발화 시작: Who wrote the most wonderful time of the year?
+     2.40s  <ret> 발화 (turn1 첫 프레임)
+     2.72s  agent 발화 시작: <ret> That lovely song was written by Edward Pola, who craft
+     2.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: Edward Pola wrote the lyrics to "It's the Most Wonderful Time of the Y
+     2.82s  user  발화 끝
+    11.89s  agent 발화 끝

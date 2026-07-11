@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "채형",
+#     "name": "윤찬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,78 +12,65 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-04-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-02-05",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-12-31",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2026-02-14",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "text": "User is planning a trip to Kyoto in August."
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-02",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-26",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-24",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 아, 태 씨군요. 웰니스 코치라… 혹시 제가 뭘 해야 할지 콕 | S2 그렇군요. 요즘 그림을 그리는데 자꾸 머릿속이 하얘서… 뭘 그 | S3 …그런데 태 씨, 혹시 저도 정말 그림을 계속해야 할까요? | S4 음… 솔직히 즐겁다는 느낌보다는, 해야 한다는 압박감이 더 큰
 
-     0.00s  agent 발화 시작: 채형님, 안녕하세요. 저는 펠랜이라고 해요. 인생의 중요한 변화를 앞둔 분들을 돕는 역할을 하고 있답니다.
-     0.15s  user  발화 시작: 음.
-     0.15s  agent 발화 끝
-     0.16s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있을까요?
-     0.16s  user  발화 끝
-     0.22s  agent 발화 시작: 낯선 이름이시라니, 괜찮아요. 지금 어떤 마음이신지, 어떤 어려움이 있으신지 편하게 말씀해 주시면 돼요.
-     0.22s  user  발화 끝
-     0.36s  user  발화 시작: 음… 사실 다음 달부터 대학을 자퇴하고, 완전히 새로운 길을 가려고 하는데 너무 불안해요.
-     0.36s  agent 발화 끝
-     0.50s  agent 발화 시작: 새로운 길을 선택하는 건 정말 용기가 필요한 일이죠. 불안한 마음은 당연한 거예요. 무엇이 가장 걱정되시나요
-     0.50s  user  발화 끝
-     0.66s  user  발화 시작: 예.
-     0.66s  agent 발화 끝
-     0.67s  agent 발화 시작: 지금 당장 어떤 점이 가장 힘든지, 조금 더 자세히 말씀해 주시겠어요? 그래야 제가 채형님께 도움이 될 수 
-     0.67s  user  발화 끝
-     0.88s  user  발화 시작: 제가 뭘 잘하는지, 뭘 하고 싶은지 아직 잘 모르겠어요. 그냥… 막막해요.
-     0.88s  agent 발화 끝
-     1.00s  user  발화 끝
+     0.00s  agent 발화 시작: 윤찬 씨, 안녕하세요. 저는 태예요. 창의적인 막힘이나 자신감 문제로 고민하시는 분들을 돕는 웰니스 코치랍니
+     0.10s  user  발화 시작: 아, 태 씨군요. 웰니스 코치라… 혹시 제가 뭘 해야 할지 콕 집어주는 그런 건가요?
+     0.10s  agent 발화 끝
+     0.20s  agent 발화 시작: 음, 딱 정해진 답을 드리진 않아요. 오히려 윤찬 씨 스스로 답을 찾을 수 있도록, 생각을 정리하고 마음을 
+     0.20s  user  발화 끝
+     0.34s  user  발화 시작: 네.
+     0.34s  agent 발화 끝
+     0.35s  user  발화 시작: 그렇군요. 요즘 그림을 그리는데 자꾸 머릿속이 하얘서… 뭘 그려야 할지, 뭘 하고 싶은지 모르겠어요.
+     0.35s  user  발화 끝
+     0.45s  agent 발화 시작: 그림을 그릴 때 막힘을 느끼시는군요. 빈 캔버스 앞에서 막막함을 느끼는 건 흔한 일이에요. 스스로에 대한 의
+     0.45s  user  발화 끝
+     0.60s  user  발화 시작: …그런데 태 씨, 혹시 저도 정말 그림을 계속해야 할까요?
+     0.60s  agent 발화 끝
+     0.66s  agent 발화 시작: 윤찬 씨, 지금 중요한 건 그림을 계속해야 할지 아닐지가 아니라, 그림을 그리는 행위 자체에서 어떤 감정을 
+     0.66s  user  발화 끝
+     0.78s  user  발화 시작: 음.
+     0.78s  agent 발화 끝
+     0.79s  user  발화 시작: 음… 솔직히 즐겁다는 느낌보다는, 해야 한다는 압박감이 더 큰 것 같아요.
+     0.79s  user  발화 끝
+     0.87s  agent 발화 시작: 압박감을 느끼시는군요. 그림을 그리는 이유를 다시 한번 생각해 보시는 것도 좋을 것 같아요. 처음 그림을 시
+     0.87s  user  발화 끝
+     1.00s  agent 발화 끝

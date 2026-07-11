@@ -4,143 +4,149 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Thomas",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-04",
+#       "date": "2026-06-21",
+#       "category": "home",
+#       "text": "User's home address is 819 Pine Court."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-11",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2026-01-05",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-02-10",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-10-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-12-11",
+#       "date": "2025-08-10",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-10-09",
-#       "category": "home",
-#       "text": "User's home address is 793 Pine Court."
-#     },
-#     {
-#       "date": "2025-07-05",
-#       "category": "work",
-#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-27",
+#       "date": "2026-01-22",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-05",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I'm having trouble sleeping la | S2 Like what kind of routine? | S3 White noise? What even *is* that? | S4 That sounds promising. What about 
+# EXAMINER(FDB-v2) 단계: S1 Hey, what island was the movie… | S2 Okay, well, what’s the weather lik | S3 Blowholes, huh? That sounds intere | S4 Okay, so about two paʻanga to the 
 
-     0.00s  user  발화 시작: Hi, I'm having trouble sleeping lately.
-     0.03s  agent 발화 시작: It’s completely understandable to feel that way; sleep can b
-     0.03s  user  발화 끝
-     0.03s  <ret> 발화 (turn13 첫 프레임)
-     0.07s  user  발화 시작: Yeah, I just feel so wired all the time.
-     0.07s  agent 발화 끝
-     0.11s  agent 발화 시작: That feeling of being wired is common, especially with moder
-     0.11s  user  발화 끝
-     0.16s  user  발화 시작: Do you have any advice on how to calm my mind?
-     0.16s  agent 발화 끝
-     0.21s  agent 발화 시작: Creating a relaxing bedtime routine can be very helpful.
+     0.00s  user  발화 시작: Hey, what island was the movie…
+     0.00s  <ret> 발화 (turn2 첫 프레임)
+     0.00s  <ret> 발화 (turn7 첫 프레임)
+     0.02s  user  발화 시작: …Moana based on? I always wondered.
+     0.02s  user  발화 끝
+     0.04s  agent 발화 시작: <ret> The movie Moana is largely inspired by Polynesian isla
+     0.04s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Moana is largely inspired by the Polynesian islands, and specifically 
+     0.04s  user  발화 끝
+     0.11s  user  발화 시작: Right.
+     0.11s  agent 발화 끝
+     0.12s  user  발화 시작: Tonga? Huh. I thought it was Hawaii, honestly.
+     0.12s  user  발화 끝
+     0.12s  <ret> 발화 (turn11 첫 프레임)
+     0.14s  agent 발화 시작: It's a common misconception, as many Polynesian cultures sha
+     0.14s  user  발화 끝
+     0.18s  user  발화 시작: Okay, well, what’s the weather like in Tonga right now?
+     0.18s  agent 발화 끝
+     0.18s  <ret> 발화 (turn19 첫 프레임)
+     0.21s  agent 발화 시작: <ret> The temperature in Tonga is currently 24.0°C, with hum
+     0.21s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Temperature: 24.0°C, humidity: 78%, wind: 11.2 km/h, con
      0.21s  user  발화 끝
-     0.24s  user  발화 시작: Yeah.
-     0.24s  agent 발화 끝
-     0.25s  user  발화 시작: Like what kind of routine?
-     0.25s  user  발화 끝
-     0.27s  agent 발화 시작: Gentle stretching, a warm bath, or reading a book—anything c
-     0.27s  user  발화 끝
-     0.31s  user  발화 시작: Yeah.
-     0.31s  agent 발화 끝
-     0.32s  user  발화 시작: I tried reading, but my mind just races then too.
-     0.32s  user  발화 끝
-     0.36s  agent 발화 시작: That's alright; finding what works takes time and experiment
+     0.28s  <ret> 발화 (turn21 첫 프레임)
+     0.29s  user  발화 시작: That sounds…nice.
+     0.29s  agent 발화 끝
+     0.30s  agent 발화 시작: It really does. A lovely escape, I imagine.
+     0.30s  user  발화 끝
+     0.32s  user  발화 시작: I'm trying to plan a trip, actually. What are some attractio
+     0.32s  agent 발화 끝
+     0.36s  agent 발화 시작: <ret> Some attractions in Tonga include Ha'atafu Beach, the 
+     0.36s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Ha'atafu Beach, Royal Palace, Mapu 'a Vaea Blowholes, To
      0.36s  user  발화 끝
-     0.40s  user  발화 시작: Is there anything I can listen to?
-     0.40s  agent 발화 끝
-     0.43s  agent 발화 시작: <ret> There are sounds designed to help, like white noise, w
-     0.43s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: White noise is a random signal that has power spectral density which i
+     0.43s  user  발화 시작: Yeah.
+     0.43s  agent 발화 끝
+     0.43s  agent 발화 시작: They have a rich history and beautiful natural landscapes.
      0.43s  user  발화 끝
-     0.44s  <ret> 발화 (turn20 첫 프레임)
-     0.47s  <ret> 발화 (turn26 첫 프레임)
-     0.49s  user  발화 시작: Yeah.
-     0.49s  agent 발화 끝
-     0.50s  user  발화 시작: White noise? What even *is* that?
-     0.50s  user  발화 끝
-     0.52s  agent 발화 시작: It’s a blend of all frequencies, masking disruptive sounds a
+     0.46s  user  발화 시작: Yeah.
+     0.46s  agent 발화 끝
+     0.47s  user  발화 시작: Blowholes, huh? That sounds interesting. Is there anything e
+     0.47s  user  발화 끝
+     0.52s  agent 발화 시작: It’s good to be aware of local customs and traditions.
      0.52s  user  발화 끝
-     0.57s  user  발화 시작: Hmm, interesting. What about meditation?.
-     0.57s  agent 발화 끝
-     0.59s  agent 발화 시작: Meditation is wonderful—it can really center you and quiet y
-     0.59s  user  발화 끝
-     0.64s  user  발화 시작: …but is there a specific type that's best for sleep?
-     0.64s  agent 발화 끝
-     0.68s  agent 발화 시작: <ret> Studies show mindfulness meditation can really reduce 
-     0.68s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: A 2019 meta-analysis of 18 studies found that mindfulness meditation s
+     0.52s  <ret> 발화 (turn29 첫 프레임)
+     0.55s  user  발화 시작: Yeah.
+     0.55s  agent 발화 끝
+     0.55s  user  발화 시작: Like what? I don’t want to be rude.
+     0.55s  user  발화 끝
+     0.58s  agent 발화 시작: <ret> Tongan culture places a high value on respect, especia
+     0.58s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Tongan culture places a high value on respect, especially for elders a
+     0.58s  user  발화 끝
+     0.65s  user  발화 시작: That's good to know. What's the currency there?
+     0.65s  agent 발화 끝
+     0.68s  agent 발화 시작: <ret> The currency of Tonga is the paʻanga, and one United S
+     0.68s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The currency of Tonga is the paʻanga, and one United States dollar is 
      0.68s  user  발화 끝
-     0.72s  user  발화 시작: Okay.
-     0.72s  agent 발화 끝
-     0.73s  user  발화 시작: That sounds promising. What about screen time before bed?
-     0.73s  user  발화 끝
-     0.76s  agent 발화 시작: Reducing screen time before bed is a very good idea, I think
-     0.76s  user  발화 끝
-     0.82s  user  발화 시작: Yeah, totally.
+     0.74s  user  발화 시작: Really?
+     0.74s  agent 발화 끝
+     0.74s  user  발화 시작: Okay, so about two paʻanga to the dollar?
+     0.74s  user  발화 끝
+     0.77s  agent 발화 시작: Roughly, yes. It fluctuates, of course, but that’s a good ap
+     0.77s  user  발화 끝
+     0.82s  user  발화 시작: [sigh] This is a lot to take in.
      0.82s  agent 발화 끝
-     0.82s  user  발화 시작: How long before bed should I stop looking at screens?
-     0.82s  user  발화 끝
-     0.87s  agent 발화 시작: <ret> The National Sleep Foundation suggests stopping screen
-     0.87s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The National Sleep Foundation recommends stopping screen use at least 
-     0.87s  user  발화 끝
-     0.92s  user  발화 시작: Right.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: One hour, okay. Thanks, that's helpful.
-     0.93s  user  발화 끝
-     0.95s  agent 발화 시작: You’re very welcome. Remember, small changes can make a big 
-     0.95s  user  발화 끝
+     0.84s  agent 발화 시작: Planning can feel overwhelming, but it’s worth it for a smoo
+     0.84s  user  발화 끝
+     0.88s  user  발화 시작: Right.
+     0.88s  agent 발화 끝
+     0.89s  user  발화 시작: I appreciate that. Maybe I should look at hotels now?
+     0.89s  user  발화 끝
+     0.92s  agent 발화 시작: <ret> The Shoreline Grill & Resort is available for around $
+     0.92s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) The Shoreline Grill & Resort - $150/night, Hakauveli Bea
+     0.92s  user  발화 끝
      1.00s  agent 발화 끝

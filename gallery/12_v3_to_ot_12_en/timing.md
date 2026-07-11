@@ -4,43 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Ruby",
+#     "name": "Sam",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-05-25",
+#       "date": "2026-03-26",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-02-21",
+#       "category": "home",
+#       "text": "User's home address is 332 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-08-09",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-12-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-10-29",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-10-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in May."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
+#       "date": "2026-03-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,31 +68,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who kept a famous diary… | S2 …about the Great Fire of London? | S3 Oh, interesting. Was he actually * | S4 …did he write about what caused th
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played Wally in La | S2 I wonder if they still show it any | S3 Did you hear that? | S4 Pennine Way… is that a long walk?
 
-     0.00s  user  발화 시작: Who kept a famous diary…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.04s  user  발화 시작: …about the Great Fire of London?
-     0.04s  user  발화 끝
-     0.09s  agent 발화 시작: <ret> It’s fascinating to look back at history through perso
-     0.09s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Samuel Pepys was an English naval administrator and Member of Parliame
-     0.09s  user  발화 끝
-     0.10s  <ret> 발화 (turn6 첫 프레임)
-     0.25s  user  발화 시작: Mm-hmm.
-     0.25s  agent 발화 끝
-     0.26s  user  발화 시작: Oh, interesting. Was he actually *there* during the fire?
-     0.26s  user  발화 끝
-     0.33s  agent 발화 시작: <ret> Yes, he was—Pepys recorded the events of the Great Fir
-     0.33s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Pepys recorded the events of the Great Fire of London in his diary, de
-     0.33s  user  발화 끝
-     0.50s  agent 발화 시작: <ret> It’s remarkable how vividly he captured the experience
-     0.50s  agent 발화 끝
-     0.50s  <ret> 발화 (turn8 첫 프레임)
-     0.56s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The diary covers the years 1660 to 1669, and provides a detailed and p
-     0.72s  user  발화 시작: …did he write about what caused the fire, or just what it *d
-     0.72s  agent 발화 끝
-     0.82s  agent 발화 시작: <ret> He didn't focus on the cause, but more on the unfoldin
-     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: Pepys’s diary entries about the fire do not specifically detail its ca
+     0.00s  user  발화 시작: Do you know who played Wally in Last of the Summer Wine?
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.00s  <ret> 발화 (turn7 첫 프레임)
+     0.00s  <ret> 발화 (turn9 첫 프레임)
+     0.05s  agent 발화 시작: <ret> Oh, that’s a good one! Joseph Gladwin is the actor who
+     0.05s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Joseph Gladwin portrayed Wally Featherstone in the British sitcom Last
+     0.05s  user  발화 끝
+     0.12s  user  발화 시작: Right, good. Um, what about Compo?
+     0.12s  agent 발화 끝
+     0.14s  agent 발화 시작: <ret> Bill Owen played Compo Simmonds, and he was in all thi
+     0.14s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Bill Owen played Compo Simmonds in all 31 series of Last of the Summer
+     0.14s  user  발화 끝
+     0.21s  user  발화 시작: That's a lot of episodes.
+     0.21s  agent 발화 끝
+     0.23s  agent 발화 시작: It really is! That’s dedication to a role, isn’t it? I admir
+     0.23s  user  발화 끝
+     0.29s  user  발화 시작: I wonder if they still show it anywhere?
+     0.29s  agent 발화 끝
+     0.32s  agent 발화 시작: <ret> It looks like you can stream Last of the Summer Wine o
+     0.32s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Last of the Summer Wine is available to stream on BritBox.
+     0.32s  user  발화 끝
+     0.34s  <ret> 발화 (turn16 첫 프레임)
+     0.38s  user  발화 시작: BritBox, okay. Is that a monthly thing?
+     0.38s  agent 발화 끝
+     0.40s  agent 발화 시작: <ret> I'm sorry, I can’t find details about BritBox subscrip
+     0.40s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (no information found)
+     0.40s  user  발화 끝
+     0.45s  user  발화 시작: Yeah, totally.
+     0.45s  agent 발화 끝
+     0.46s  user  발화 시작: Oh.
+     0.46s  user  발화 끝
+     0.46s  agent 발화 시작: Perhaps you could check their website directly? I’m happy to
+     0.46s  user  발화 끝
+     0.53s  user  발화 시작: Okay.
+     0.53s  agent 발화 끝
+     0.53s  user  발화 시작: Did you hear that?
+     0.53s  user  발화 끝
+     0.55s  user  발화 시작: No, that’s alright. What’s the weather like in Holmfirth tod
+     0.55s  user  발화 끝
+     0.58s  agent 발화 시작: <ret> Right now in Holmfirth, it's 18.3 degrees Celsius with
+     0.58s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 18.3°C, humidity 68%, wind 8.2 km/h
+     0.58s  user  발화 끝
+     0.60s  <ret> 발화 (turn23 첫 프레임)
+     0.65s  user  발화 시작: Mm-hmm.
+     0.65s  agent 발화 끝
+     0.66s  agent 발화 시작: It sounds quite pleasant, actually! Perfect weather for a wa
+     0.66s  user  발화 끝
+     0.68s  <ret> 발화 (turn20 첫 프레임)
+     0.71s  user  발화 시작: That does sound nice. Can you find me some local walking rou
+     0.71s  agent 발화 끝
+     0.76s  agent 발화 시작: <ret> Holmfirth has some great walking routes, including the
+     0.76s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Holmfirth has several walking routes, including the Penn
+     0.76s  user  발화 끝
+     0.81s  user  발화 시작: Yeah.
+     0.81s  agent 발화 끝
+     0.82s  user  발화 시작: Pennine Way… is that a long walk?
      0.82s  user  발화 끝
+     0.84s  agent 발화 시작: <ret> The Pennine Way is a National Trail stretching 268 mil
+     0.84s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: The Pennine Way is a National Trail in England, stretching 268 miles f
+     0.84s  user  발화 끝
+     0.91s  user  발화 시작: Wow, okay. Maybe not that one.
+     0.91s  agent 발화 끝
+     0.94s  agent 발화 시작: Perhaps the Holmfirth Circular Walk would be a better starti
+     0.94s  user  발화 끝
      1.00s  agent 발화 끝

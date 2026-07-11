@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Remy",
+#     "name": "Kim",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-24",
+#       "date": "2026-06-03",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "home",
-#       "text": "User's home address is 415 Oak Avenue."
+#       "date": "2026-03-23",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-07-15",
+#       "date": "2026-02-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2025-07-09",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-06-14",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-11",
+#       "date": "2026-05-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,53 +58,47 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-11-29",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-06-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이선희 씨 연락처 있어? | S2 알아둬서 좋네. | S3 응, 완전 그렇지. 지금 서울 날씨는 어때? | S4 아, 아쉽다. 놓쳤네.
+# EXAMINER(FDB-v2) 단계: S1 어, 혹시 사라 밀러 전화번호 알아? | S2 아, 그래? 그럼 서울 지난 화요일 날씨는 어땠어? | S3 흠, 아쉽다. | S4 좋은 생각인데. 지금 근처에서 상영하는 영화가 뭔데?
 
-     0.00s  user  발화 시작: 이선희 씨 연락처 있어?
+     0.00s  user  발화 시작: 어, 혹시 사라 밀러 전화번호 알아?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.03s  agent 발화 시작: <ret> 죄송하지만, 이선희 씨의 공개된 연락처 정보는 찾을 수 없었어요. 그런 정보는 보통 개인적으로 관
-     0.03s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (no information found)
-     0.03s  user  발화 끝
-     0.13s  user  발화 시작: 응응.
-     0.13s  agent 발화 끝
-     0.14s  user  발화 시작: 그럼, 최근 앨범 발매일은 언제야?
-     0.14s  user  발화 끝
-     0.18s  agent 발화 시작: <ret> 그녀는 열다섯 번째 스튜디오 앨범, "My Christmas Story"를 이천이십삼 년 십이월 
-     0.18s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: Lee Sun-hee released her fifteenth studio album, "My Christmas Story",
-     0.18s  user  발화 끝
-     0.26s  <ret> 발화 (turn8 첫 프레임)
-     0.31s  user  발화 시작: 알아둬서 좋네.
-     0.31s  agent 발화 끝
-     0.33s  agent 발화 시작: 좋아하는 아티스트 소식을 꾸준히 듣는 건 정말 좋은 일이에요. 음악은 정말 기분을 좋게 해 주잖아요, 그렇지
-     0.33s  user  발화 끝
-     0.45s  user  발화 시작: 응, 완전 그렇지. 지금 서울 날씨는 어때?
-     0.45s  agent 발화 끝
-     0.50s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 26.1도이고, 습도는 68퍼센트, 풍속은 시속 3.2킬로미터예요.
-     0.50s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h
-     0.50s  user  발화 끝
-     0.58s  user  발화 시작: 응.
-     0.58s  agent 발화 끝
-     0.59s  agent 발화 시작: 날씨가 꽤 좋네요! 밖에서 음악을 즐기기에 좋은 날씨일 것 같아요—
-     0.59s  user  발화 끝
-     0.61s  <ret> 발화 (turn12 첫 프레임)
-     0.66s  user  발화 시작: …요즘 콘서트 많이 해?
-     0.66s  agent 발화 끝
-     0.69s  agent 발화 시작: <ret> 그녀는 이천이십사 년 이월 스물셋째 날부터 스물다섯째 날까지 서울 올림픽홀에서 “Re:Lee”라는
-     0.69s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from Februa
-     0.69s  user  발화 끝
-     0.85s  user  발화 시작: 아, 아쉽다. 놓쳤네.
-     0.85s  agent 발화 끝
-     0.87s  agent 발화 시작: 기대했던 행사를 놓치는 건 정말 아쉽네요. 앞으로의 공연 정보를 계속 얻으려면 그녀의 뉴스레터에 가입해 보시
-     0.87s  user  발화 끝
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.06s  agent 발화 시작: <ret> 아쉽지만, 사라 밀러 님 전화번호는 찾을 수가 없었어요. 그 정보는 공개되지 않은 것 같아요.
+     0.06s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (no information found)
+     0.06s  user  발화 끝
+     0.20s  user  발화 시작: 아, 그래? 그럼 서울 지난 화요일 날씨는 어땠어?
+     0.20s  agent 발화 끝
+     0.28s  agent 발화 시작: <ret> 죄송하지만, 현재 날씨 정보만 제공할 수 있고, 과거 데이터는 제공하지 못해요. 도와드리고 싶지만
+     0.28s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (no information found)
+     0.28s  user  발화 끝
+     0.44s  user  발화 시작: 와.
+     0.44s  agent 발화 끝
+     0.45s  user  발화 시작: 흠, 아쉽다.
+     0.45s  user  발화 끝
+     0.46s  <ret> 발화 (turn8 첫 프레임)
+     0.47s  agent 발화 시작: 그렇죠, 그렇죠? 가끔 필요한 정보를 얻을 수 없는 때가 있어요. 대신 멋진 주말 계획을 세워보는 건 어떠세
+     0.47s  user  발화 끝
+     0.63s  user  발화 시작: 좋은 생각인데. 지금 근처에서 상영하는 영화가 뭔데?
+     0.63s  agent 발화 끝
+     0.70s  agent 발화 시작: <ret> 지금 Regal Edwards Irvine Spectrum 21에서 ‘인사이드 아웃 2’, ‘Ba
+     0.70s  ⚡SPAN 주입 [d'=0.30s / d_lead=0.30s]: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The G
+     0.70s  user  발화 끝
      1.00s  agent 발화 끝

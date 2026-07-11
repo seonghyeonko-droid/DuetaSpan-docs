@@ -1,51 +1,51 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Jeliia, a upbeat and supportive counselor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Orami, a thoughtful and soft-spoken supportive advisor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Hana",
+    "name": "Isla",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "40s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-03-31",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2025-09-18",
+      "date": "2026-04-24",
       "category": "diet",
       "text": "User is gluten-free."
     },
     {
-      "date": "2025-08-26",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in March."
+      "date": "2026-02-28",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-08-16",
+      "date": "2025-12-01",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-07-07",
+      "category": "home",
+      "text": "User's home address is 288 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-14",
+      "date": "2026-03-13",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -53,15 +53,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-10-10",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-08",
+      "date": "2026-02-02",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -72,22 +64,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, uh, I was wondering… how old do you have to be to legally just… ⟨ret@5.10s⟩ quit school?
-[  5.50s][moshi] ⟦⚡SPAN@5.50s: In most states, a student can legally drop out of school between the ages of sixteen and eighteen, though some⟧ Well, that's a really important question! Generally, you can legally leave school between sixteen and eighteen years old. It's good you're thinking ahead.
-[ 11.16s][user ] «backchannel» Yeah.
-[ 14.04s][user ] Sixteen, huh? That’s… younger than I thought.
-[ 17.55s][moshi] It can feel like a big step, and it’s smart to be prepared. I’m happy to chat about that more if you’d like.
-[ 23.85s][user ] «to_other» Did you remember to take the chicken out of the freezer?
-[ 26.25s][user ] Actually, I'm also curious about getting my GED.
-[ 29.23s][moshi] ⟨ret@29.09s⟩ ⟦⚡SPAN@29.25s: The General Educational Development (GED) test is a high school equivalency test that can be taken by individu⟧ That's a great idea! The GED is a high school equivalency test for people who didn’t finish school. It opens up a lot of possibilities.
-[ 35.16s][user ] «backchannel» Yeah, yeah.
-[ 37.98s][user ] Is there an age limit ⟨ret@39.31s⟩ for that?
-[ 39.71s][moshi] ⟦⚡SPAN@39.71s: There is no upper age limit to take the GED test; however, most states require test takers to be at least sixt⟧ No, there isn't an upper age limit, but most states ask you to be at least sixteen to take it. It's fantastic you're exploring options.
-[ 45.19s][user ] «backchannel» Okay.
-[ 48.27s][user ] Okay, good. So sixteen for both. What about… finding a job after?
-[ 52.24s][moshi] That's a wonderful next thought!
-[ 53.72s][user ] Maybe. Do they… like, prefer a high ⟨ret@56.44s⟩ school diploma?
-[ 56.83s][moshi] ⟦⚡SPAN@56.84s: While some employers may prefer candidates with a high school diploma, many are willing to consider applicants⟧ Some employers do prefer a diploma, but a lot are happy to consider a GED, especially for starting jobs. Don't let that hold you back.
-[ 60.82s][user ] «backchannel» Yeah.
-[ 65.23s][user ] That's… reassuring, actually. Thanks, Jeliia.
-[ 68.14s][moshi] You’re very welcome! It’s completely normal to feel unsure, but you’re clearly a thoughtful person making plans. I’m proud of you.
+[  0.00s][user ] I was wondering, where do arteries connect with ⟨ret@2.14s⟩ each other?
+[  2.54s][moshi] ⟦⚡SPAN@2.54s: Arterial anastomoses are most commonly found between arteries, providing alternate routes for blood flow.⟧ Arterial anastomoses are most commonly found between arteries, providing alternate routes for blood flow. It’s wonderful your curiosity leads you to learn about your body.
+[ 13.23s][user ] «to_other» Did you hear about the concert downtown next week?
+[ 15.56s][user ] Oh, that’s good to know. Are there any near the elbow?
+[ 18.51s][moshi] ⟨ret@18.27s⟩ ⟦⚡SPAN@18.51s: The elbow region contains a prominent arterial arcade formed by the anterior and posterior ulnar recurrent art⟧ The elbow region contains a prominent arterial arcade formed by the anterior and posterior ulnar recurrent arteries. That area has a particularly well-developed network.
+[ 29.52s][user ] That's interesting! And what about in the ⟨ret@31.70s⟩ feet?
+[ 32.02s][moshi] ⟦⚡SPAN@32.02s: In the feet, the dorsal pedis artery and posterior tibial artery contribute to a plantar arch, creating an imp⟧ In the feet, the dorsal pedis artery and posterior tibial artery contribute to a plantar arch, creating an important anastomosis. It’s reassuring to know our bodies have built-in redundancies.

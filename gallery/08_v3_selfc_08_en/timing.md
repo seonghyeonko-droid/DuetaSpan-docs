@@ -4,119 +4,147 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Simon",
+#     "name": "Mia",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-08",
-#       "category": "home",
-#       "text": "User's home address is 860 Pine Court."
+#       "date": "2026-06-12",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-01",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-10-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "date": "2026-03-21",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-09-28",
+#       "date": "2026-03-18",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-08-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 595 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-13",
+#       "date": "2026-05-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-16",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a quiet café with g | S2 Great. I'm meeting a friend there  | S3 Yeah, that would be good. I haven' | S4 So, how do I break that cycle?
+# EXAMINER(FDB-v2) 단계: S1 What is the quickest way to get fr | S2 What's the weather like in Shibuya | S3 [laugh] Sounds perfect. Can you ma | S4 Can you remind me of that reservat
 
-     0.00s  user  발화 시작: I need to find a quiet café with good Wi-Fi near the Nationa
+     0.00s  user  발화 시작: What is the quickest way to get from Tokyo Station to Shibuy
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.00s  <ret> 발화 (turn6 첫 프레임)
-     0.04s  agent 발화 시작: <ret> I can help with that. There are several cafés near the
-     0.04s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: The National Museum of Korea is located at 161, Seonrin-dong, Jongno-g
-     0.04s  user  발화 끝
-     0.08s  user  발화 시작: …actually, does that museum have a café itself?
-     0.08s  agent 발화 끝
-     0.11s  agent 발화 시작: <ret> Yes, the National Museum of Korea does have a café. It
-     0.11s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) The National Museum of Korea operates a café called "Mus
-     0.11s  user  발화 끝
-     0.17s  user  발화 시작: Mm-hmm.
-     0.17s  agent 발화 끝
-     0.17s  user  발화 시작: Oh, perfect! What are their hours today?
-     0.17s  user  발화 끝
-     0.19s  agent 발화 시작: <ret> Museum Madang is open today from ten in the morning un
-     0.19s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Museum Madang is open today, July 10, 2026, from 10:00 A
-     0.19s  user  발화 끝
-     0.23s  user  발화 시작: Great. I'm meeting a friend there next Tuesday.
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.03s  <ret> 발화 (turn10 첫 프레임)
+     0.06s  agent 발화 시작: <ret> The quickest route is about 9.6 kilometers and takes a
+     0.06s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) {"distance": 9.6, "duration": 1800, "route": "JR Yamanot
+     0.06s  user  발화 끝
+     0.10s  agent 발화 시작: That’s using the JR Yamanote Line to Shibuya Station, then a
+     0.10s  agent 발화 끝
+     0.14s  user  발화 시작: Uh, actually, I meant to say Shinjuku Station, not Tokyo Sta
+     0.14s  agent 발화 끝
+     0.18s  agent 발화 시작: <ret> From Shinjuku Station to Shibuya Crossing, it's about 
+     0.18s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) {"distance": 4.8, "duration": 600, "route": "JR Yamanote
+     0.18s  user  발화 끝
+     0.23s  agent 발화 시작: Again, taking the JR Yamanote Line to Shibuya Station, then 
      0.23s  agent 발화 끝
-     0.26s  agent 발화 시작: That sounds lovely. A meeting at a museum café is a very pea
-     0.26s  user  발화 끝
-     0.30s  user  발화 시작: I’m feeling a bit stressed about a presentation I have to gi
-     0.30s  agent 발화 끝
-     0.34s  agent 발화 시작: It's perfectly natural to feel stressed before a presentatio
-     0.34s  user  발화 끝
-     0.38s  user  발화 시작: I’m worried I’ll forget what I want to say.
-     0.38s  agent 발화 끝
-     0.41s  agent 발화 시작: That's a common worry. Perhaps we could explore some strateg
-     0.41s  user  발화 끝
-     0.46s  user  발화 시작: Mm-hmm.
-     0.46s  agent 발화 끝
-     0.46s  user  발화 시작: Yeah, that would be good. I haven't even started writing it 
-     0.46s  user  발화 끝
-     0.49s  agent 발화 시작: It’s alright to feel overwhelmed. Starting is often the hard
+     0.25s  <ret> 발화 (turn17 첫 프레임)
+     0.27s  user  발화 시작: Yeah.
+     0.27s  agent 발화 끝
+     0.28s  agent 발화 시작: It’s great to get the details right—planning ahead makes eve
+     0.28s  user  발화 끝
+     0.32s  user  발화 시작: Uh-huh.
+     0.32s  agent 발화 끝
+     0.32s  user  발화 시작: What's the weather like in Shibuya right now?
+     0.32s  user  발화 끝
+     0.35s  agent 발화 시작: <ret> It's currently 28.0 degrees Celsius in Shibuya, with 6
+     0.35s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) "28.0°C, humidity 65%, wind 3.2 km/h, condition: partly 
+     0.35s  user  발화 끝
+     0.41s  <ret> 발화 (turn13 첫 프레임)
+     0.41s  agent 발화 시작: The conditions are partly cloudy, so it looks like a nice da
+     0.41s  agent 발화 끝
+     0.45s  user  발화 시작: That sounds good. Is there a good ramen place nearby?
+     0.45s  agent 발화 끝
+     0.49s  agent 발화 시작: <ret> Ichiran Shibuya has 4.5 stars with 120 reviews, and th
+     0.49s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) "Ichiran Shibuya, 4.5 stars, 120 reviews, price range: ¥
      0.49s  user  발화 끝
-     0.54s  user  발화 시작: Yeah.
+     0.54s  agent 발화 시작: It’s a really popular spot, perfect for a quick and tasty me
      0.54s  agent 발화 끝
-     0.54s  agent 발화 시작: Sometimes, simply outlining your main points can ease that f
-     0.54s  user  발화 끝
-     0.60s  user  발화 시작: I keep putting it off, though. I always find something else 
-     0.60s  agent 발화 끝
-     0.63s  agent 발화 시작: Procrastination is a very human tendency. It often stems fro
-     0.63s  user  발화 끝
-     0.68s  user  발화 시작: Mhm.
-     0.68s  agent 발화 끝
-     0.68s  user  발화 시작: I think you're right. I’m a perfectionist, I guess.
-     0.68s  user  발화 끝
-     0.71s  agent 발화 시작: That's insightful of you. Perfectionism can be a double-edge
-     0.71s  user  발화 끝
-     0.76s  user  발화 시작: Okay.
-     0.76s  agent 발화 끝
-     0.76s  user  발화 시작: So, how do I break that cycle?
-     0.76s  user  발화 끝
-     0.78s  agent 발화 시작: Perhaps try reframing your goal. Instead of aiming for perfe
-     0.78s  user  발화 끝
-     0.83s  user  발화 시작: Mm-hmm.
-     0.83s  agent 발화 끝
-     0.83s  user  발화 시작: That makes sense. It’s about communication, not flawless exe
-     0.83s  user  발화 끝
-     0.86s  agent 발화 시작: Exactly. And remember, your audience wants you to succeed. T
+     0.59s  user  발화 시작: Uh-huh.
+     0.59s  agent 발화 끝
+     0.59s  user  발화 시작: [laugh] Sounds perfect. Can you make a reservation for me th
+     0.59s  user  발화 끝
+     0.65s  agent 발화 시작: <ret> Your reservation at Ichiran Shibuya is confirmed for t
+     0.65s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) "Reservation confirmed for Ichiran Shibuya, 2026-07-10 a
+     0.65s  user  발화 끝
+     0.69s  agent 발화 시작: Your confirmation ID is 7A9B2—enjoy your ramen!
+     0.69s  agent 발화 끝
+     0.71s  user  발화 시작: Mhm.
+     0.71s  agent 발화 끝
+     0.72s  user  발화 시작: Great, thanks so much!
+     0.72s  user  발화 끝
+     0.73s  agent 발화 시작: You’re very welcome! It’s wonderful you're taking the time t
+     0.73s  user  발화 끝
+     0.78s  agent 발화 시작: Remember, small pleasures like that really add up to a happi
+     0.78s  agent 발화 끝
+     0.82s  user  발화 시작: Yeah.
+     0.82s  agent 발화 끝
+     0.82s  user  발화 시작: Can you remind me of that reservation tomorrow morning?
+     0.82s  user  발화 끝
+     0.86s  agent 발화 시작: I can. What time would you like the reminder?
      0.86s  user  발화 끝
-     0.91s  user  발화 시작: I should probably write down a few bullet points then.
-     0.91s  agent 발화 끝
-     0.94s  agent 발화 시작: That’s a wonderful first step. Just a few key ideas will giv
-     0.94s  user  발화 끝
+     0.89s  user  발화 시작: Yeah.
+     0.89s  agent 발화 끝
+     0.89s  user  발화 시작: 9 AM.
+     0.89s  user  발화 끝
+     0.90s  agent 발화 시작: Okay, I’ve set a reminder for your Ichiran Shibuya reservati
+     0.90s  user  발화 끝
+     0.94s  agent 발화 시작: It’s all about staying on track and making the most of your 
+     0.94s  agent 발화 끝
      1.00s  agent 발화 끝

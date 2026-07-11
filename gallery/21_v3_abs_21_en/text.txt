@@ -1,93 +1,88 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Bar, a curious and validating personal guide who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Brelil, a thoughtful and soft-spoken supportive advisor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Charlotte",
+    "name": "Lily",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-22",
+      "date": "2026-05-04",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2026-04-09",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
+      "text": "User is planning a trip to Iceland in December."
     },
     {
-      "date": "2026-04-12",
+      "date": "2026-02-08",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-11-20",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-04-02",
+      "date": "2025-10-16",
       "category": "diet",
       "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-11",
+      "date": "2025-08-10",
       "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-10-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
-      "title": "Comparing gym memberships",
+      "date": "2025-12-19",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-07-28",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2025-11-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What in combination with glass fibers is used to make glass ⟨ret@3.81s⟩ wool?
-[  3.89s][moshi] ⟦⚡SPAN@3.89s: (no information found)⟧ Well, that's a really interesting question! It seems we don't have specific information on exactly what's combined with glass fibers to create glass wool right now.
-[ 15.93s][user ] Oh. Is it a trade secret or something?
-[ 18.76s][moshi] [curious] That’s a possibility, sometimes formulas are kept confidential! It could also simply be a detail that isn't widely documented.
-[ 21.14s][user ] «backchannel» Okay.
-[ 26.51s][user ] Hmm. What *are* glass fibers used for, generally?
-[ 30.68s][moshi] «interrupted» ⟨ret@30.61s⟩ ⟦⚡SPAN@30.69s: Glass fibers are used for thermal insulation, sound absorption, and for reinforcing composite materials, such ⟧ Glass fibers have many uses, particularly for thermal insulation, sound absorption, and—
-[ 36.67s][user ] «interrupts_prev» …are they expensive to produce?
-[ 38.84s][moshi] That's a great point to consider! Glass fiber production costs can vary, but—
-[ 43.19s][user ] «backchannel» Yeah, yeah.
-[ 44.60s][moshi] …they are generally quite affordable, which is why they’re so popular. Their high tensile strength makes them ideal for reinforcing materials.
-[ 53.87s][user ] So, like, in boats?
-[ 55.65s][moshi] Exactly! You'll find glass fibers in boats, cars, and even sporting equipment. They add strength without a lot of weight.
-[ 63.38s][user ] That makes sense. What about older types of insulation?
-[ 67.42s][moshi] ⟨ret@67.34s⟩ ⟦⚡SPAN@67.42s: Before fiberglass became common in the 1930s, materials like straw, sawdust, and mineral wool were used for in⟧ Before fiberglass was popular, people used things like straw, sawdust, and mineral wool for insulation, but— …those materials weren't as effective and could be fire risks.
-[ 80.28s][user ] Wow, sawdust! That sounds…flammable.
-[ 83.69s][moshi] [laugh] It really does! It’s amazing how much things have changed in terms of building safety and efficiency. It's a reminder that innovation always looks for improvements.
-[ 94.16s][user ] I guess so. Do they still *use* mineral ⟨ret@97.47s⟩ wool?
-[ 97.79s][moshi] ⟦⚡SPAN@97.79s: Mineral wool, made from molten rock or slag, is still used as insulation today, known for its fire resistance ⟧ Yes, mineral wool is still used today, and it’s especially known for its fire resistance and soundproofing—
+[  0.00s][user ] How many of Southwestern’s 19 varsity programs had NCAA or bowl postseason appearances?
+[  6.68s][moshi] Well, it appears that information isn’t readily available to me at this time.
+[ 13.09s][user ] Oh, that's too bad. Do you know what their most successful program is, ⟨ret@17.02s⟩ then?
+[ 17.18s][moshi] «interrupted» ⟦⚡SPAN@17.18s: Southwestern University’s football program has been its most successful, winning 14 Southern Collegiate Athlet⟧ Their most successful program has been football, having won fourteen Southern Collegiate Athletic Conference championships—
+[ 24.05s][user ] «interrupts_prev» …is that the same as saying they’ve had a lot of postseason play?
+[ 27.78s][moshi] ⟨ret@27.70s⟩ ⟦⚡SPAN@27.78s: The Southwestern Pirates football team has made 12 NCAA Division III playoff appearances in program history, m⟧ The football team has made twelve NCAA Division III playoff appearances, most recently in two thousand twenty-two.
+[ 33.72s][user ] «backchannel» Yeah, totally.
+[ 35.90s][user ] Wow, twelve times! That’s impressive for Division III. What about their basketball ⟨ret@41.76s⟩ teams?
+[ 42.16s][moshi] ⟦⚡SPAN@42.16s: (no information found)⟧ Unfortunately, I don’t have specific details about the basketball teams’ postseason appearances right now. Perhaps we could look at other sports?

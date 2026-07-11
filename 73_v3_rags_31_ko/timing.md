@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "노안",
+#     "name": "우영",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,73 +13,60 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-10-21",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-09-26",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2025-09-25",
+#       "date": "2025-12-09",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-06-27",
+#       "date": "2025-11-10",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-09-22",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
+#       "date": "2025-07-25",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-08",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 미녀와 야수 TV 쇼는 어디에서 촬영했어?
-     2.57s  <ret> 발화 (turn1 첫 프레임)
-     2.80s  agent 발화 시작: <ret> 미녀와 야수 TV 쇼는 주로 캐나다 토론토에서 촬영되었답니다. 촬영지로서 토론토는 정말 인기 있는
-     2.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: The series was primarily filmed in Toronto, Canada.
-     2.91s  user  발화 끝
-    10.72s  agent 발화 끝
+     0.00s  user  발화 시작: 베이크 오프 첫 시즌 우승자는 누구였어?
+     1.89s  <ret> 발화 (turn1 첫 프레임)
+     2.12s  agent 발화 시작: <ret> 첫 번째 베이크 오프 우승자는 에드 킴버였어요. 정말 실력 있는 분이시죠.
+     2.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: Edd Kimber won the first series of The Great British Bake Off, which a
+     2.25s  user  발화 끝
+     7.16s  agent 발화 끝

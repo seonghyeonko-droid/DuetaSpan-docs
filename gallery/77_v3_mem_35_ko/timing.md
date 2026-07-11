@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "은국",
+#     "name": "성별",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,93 +13,69 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-05-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-04-11",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-03-29",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-11-27",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-09-08",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-24",
+#       "date": "2025-11-19",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
-#       "title": "Researching a used car",
+#       "date": "2026-01-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 은국님. 저는 시오스입니다. 편안한 휴식을 도와드리는 에이전트예요.
-     5.81s  user  발화 시작: 어… 안녕하세요. 혹시 여행 추천 좀 해 줄 수 있어요?
-     6.20s  agent 발화 끝
-     9.86s  <ret> 발화 (turn2 첫 프레임)
-    10.01s  agent 발화 시작: <ret> 창가 자리를 선호하시는 걸로 기억하고 있어요. 그래서 바닷가 근처의 조용한 호텔을 추천해 드릴게요
-    10.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: [2025-09-08] User prefers a window seat when traveling.
-    10.25s  user  발화 끝
-    12.55s  user  발화 시작: 어.
-    13.18s  user  발화 끝
-    17.75s  agent 발화 시작: 부산에서 가까운 거제도에 있는 호텔인데, 객실에서 바다가 한눈에 보인대요.
-    17.98s  agent 발화 끝
-    21.27s  user  발화 시작: 응.
-    21.68s  user  발화 끝
-    23.06s  user  발화 시작: 거제도요? 음… 전에 가 봤는데 별로였던 것 같아.
-    23.45s  agent 발화 끝
-    27.31s  <ret> 발화 (turn7 첫 프레임)
-    27.54s  agent 발화 시작: <ret> 유당불내증이 있으시죠? 거제도 말고는 통영에 유제품을 사용하지 않는 건강한 식당들이 많아요.
-    27.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: [2026-02-12] User is lactose-intolerant.
-    27.59s  user  발화 끝
-    30.73s  user  발화 시작: 그치.
-    31.23s  user  발화 끝
-    35.06s  user  발화 시작: 통영이면 괜찮겠네요.
-    35.09s  agent 발화 끝
-    37.06s  agent 발화 시작: 통영의 한려수호텔은 아름다운 정원과 함께 편안한 휴식을 제공한답니다.
-    37.14s  user  발화 끝
-    42.99s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 성별님. 저는 우라입니다. 오늘 하루는 어떠셨어요?
+     4.03s  agent 발화 끝
+     4.31s  user  발화 시작: 어… 안녕하세요. 요즘 좀 바빠서 정신이 없네요.
+     8.56s  user  발화 끝
+     8.70s  agent 발화 시작: 바쁘신 와중에도 저를 찾아주셔서 감사합니다. 혹시 저에게 도움을 요청하시려는 특별한 이유가 있으신가요?
+    16.10s  user  발화 시작: 음… 이탈리아 음식을 좋아하잖아요. 혹시 부산에서 분위기 좋은 이탈리아 레스토랑 추천해 줄 수 있어요?
+    16.26s  agent 발화 끝
+    22.53s  <ret> 발화 (turn4 첫 프레임)
+    22.68s  agent 발화 시작: <ret> 이탈리아 음식을 좋아하시는군요. 성별님께 딱 맞는 곳을 찾아드릴게요. 부산에는 분위기 좋은 이탈리
+    22.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: User's favorite cuisine is Italian.
+    22.87s  user  발화 끝
+    29.25s  user  발화 시작: 음.
+    29.75s  user  발화 끝
+    32.60s  user  발화 시작: 오, 정말요? 어디가 제일 좋을까요?
+    32.65s  agent 발화 끝
+    35.62s  <ret> 발화 (turn7 첫 프레임)
+    35.69s  agent 발화 시작: <ret> "라 돌체 비타"라는 곳이 평점이 사 점 오에 가격대도 괜찮다고 하네요. 해운대구 동백로 십에 위
+    35.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) {"restaurants": [{"name": "La Dolce Vita", "address": "해
+    35.84s  user  발화 끝
+    44.22s  agent 발화 끝

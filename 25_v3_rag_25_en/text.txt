@@ -1,105 +1,87 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Klioen, a grounded and empathetic supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Tal, a gentle and reflective life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Henri",
+    "name": "David",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "late 30s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-03-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-02-02",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
+      "date": "2026-05-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
       "date": "2025-12-12",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-12-04",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-11-01",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-12-05",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-11-27",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-10",
+      "date": "2026-03-29",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-26",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-23",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been thinking about intentional communities… what even *is* cohousing?
-[  4.43s][moshi] Cohousing is a collaborative housing model, designed and managed by its residents. It’s really about building a supportive community alongside private homes. It can be a lovely way to foster connection.
-[ 11.32s][user ] «backchannel» Uh-huh.
-[ 16.40s][user ] That sounds… nice, I guess. Where did this idea even come from?
-[ 20.54s][moshi] ⟨ret@20.46s⟩ ⟦⚡SPAN@20.54s: Cohousing originated in Denmark in the 1960s as a response to increasing social isolation.⟧ The idea for cohousing actually started in Denmark back in the 1960s, as people sought ways to combat feelings of isolation. It’s interesting how needs like that can spark such innovative living arrangements.
-[ 33.81s][user ] Denmark? Huh. Is there a famous example I could look ⟨ret@37.08s⟩ at?
-[ 37.40s][moshi] ⟦⚡SPAN@37.40s: Sættedammen in Denmark is often cited as the first modern cohousing community, established in 1972.⟧ One of the most well-known examples, Sættedammen, is located in Denmark and was established in nineteen seventy-two.
-[ 41.27s][user ] «backchannel» Yeah, yeah.
-[ 43.71s][user ] 1972… that’s a long time ago. What’s the weather like there right ⟨ret@47.17s⟩ now?
-[ 47.33s][moshi] ⟦⚡SPAN@47.33s: (tool result) Denmark: 21.0°C, humidity 68%, wind 4.1 km/h, clear skies.⟧ Currently in Denmark, it’s twenty-one degrees Celsius and clear, with sixty-eight percent humidity and a light breeze. A beautiful day, perhaps, to explore a cohousing community!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denmark"}}
-[ 57.63s][user ] That does sound nice. Um, what about here? What time ⟨ret@60.79s⟩ is it?
-[ 61.11s][moshi] ⟦⚡SPAN@61.11s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It is currently two forty-seven PM in Asia/Seoul on Friday, July tenth, twenty twenty-six. A good time to pause and consider what brings you peace.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 73.07s][user ] Okay, good to know. I'm trying to get more sleep. Do you have any tips?
-[ 76.64s][moshi] Creating a consistent bedtime routine is a wonderful start. A relaxing activity before bed can signal your body it’s time to rest.
-[ 79.69s][user ] «backchannel» Okay.
-[ 84.75s][user ] Like what, exactly? I've tried reading, but I just end up reading *more*.
-[ 89.01s][moshi] That’s quite common! Gentle stretching, a warm bath, or listening to calming music can be helpful alternatives.
-[ 95.53s][user ] Stretching sounds… okay. Is there a good guided stretching video you’d ⟨ret@100.15s⟩ recommend?
-[100.23s][moshi] ⟦⚡SPAN@100.23s: Yoga With Adriene has a 20-minute evening yoga routine for better sleep, published on YouTube July 12, 2020.⟧ Yoga With Adriene has a twenty-minute evening yoga routine for better sleep, which you can find on YouTube, published on July twelfth, twenty twenty. It’s a popular resource, and many people find it very soothing.
-[111.97s][user ] Yoga… hmm. I don’t know. What about white noise?
-[115.87s][moshi] White noise can be incredibly effective for masking disruptive sounds and promoting relaxation. It’s worth exploring!
-[123.87s][user ] Can you *play* some white noise ⟨ret@125.85s⟩ for me?
-[126.09s][moshi] ⟦⚡SPAN@126.09s: (tool result) Relaxing White Noise - 10 Hours | YouTube - A long-duration white noise track for sleep, study, ⟧ I found a ten-hour white noise track on YouTube from Relaxing White Noise, designed for sleep or relaxation. It looks like a popular choice if you’d like to check it out.
-      CALL: {"function": "search", "arguments": {"query": "white noise online"}}
-[137.37s][user ] That sounds good, I’ll look it up. What about… sleep scents? Are those a thing?
-[142.28s][moshi] Sleep scents are absolutely a thing! Lavender and chamomile are particularly well-known for their calming properties.
-[147.36s][user ] «backchannel» Okay.
-[150.27s][user ] Lavender… I think my grandmother used to have lavender sachets. Does it actually ⟨ret@155.59s⟩ *work*?
-[155.84s][moshi] ⟦⚡SPAN@155.84s: Studies show lavender essential oil can improve sleep quality and reduce anxiety, according to the National In⟧ According to the National Institutes of Health, studies suggest that lavender essential oil can improve sleep quality and reduce anxiety. It’s more than just a pleasant scent, it appears to have genuine benefits.
-[159.31s][user ] «backchannel» Okay.
-[167.84s][user ] Huh. Interesting. Okay, one last thing… I keep waking up in the middle of the night. Any thoughts?
-[174.15s][moshi] Waking during the night is common. Try to avoid looking at the clock, as that can increase anxiety and make it harder to fall back asleep.
-[182.12s][user ] That’s… good advice, actually. I always check the time.
-[185.50s][moshi] It’s a natural reaction, but often counterproductive. Focus on slow, deep breaths instead.
-[187.44s][user ] «backchannel» Yeah.
-[192.62s][user ] Deep breaths… okay. I’ll try that. Thanks, Klioen.
-[196.60s][moshi] You’re very welcome. Prioritizing restful sleep is a gift you give to yourself, and I’m happy to have offered some support. Remember, small changes can make a big difference.
+[  0.00s][user ] I’m trying to get my finances in order, and feel overwhelmed.
+[  3.79s][moshi] It’s completely understandable to feel that way when starting out. Taking that first step is often the hardest part, you know?
+[ 10.15s][user ] Well, I keep hearing about budgeting, but… what even *is* a budget?
+[ 14.05s][moshi] ⟨ret@13.97s⟩ ⟦⚡SPAN@14.05s: A budget is a plan for how to spend your money, typically over a month, and it helps you manage your finances ⟧ A budget is essentially a plan for how to spend your money, typically over a month, and it helps you manage your finances effectively. It's about making conscious choices, rather than letting your money disappear.
+[ 24.94s][user ] Hmm… so it’s not about *restricting* myself?
+[ 28.20s][moshi] Not at all! It's about understanding where your money goes, and making sure it aligns with what truly matters to you.
+[ 31.87s][user ] «backchannel» Mm-hmm.
+[ 35.12s][moshi] It’s empowering, really.
+[ 36.39s][user ] Okay. I think I get that. Say…
+[ 39.61s][user ] …does Emprise Bank have branches near the Neosho ⟨ret@42.37s⟩ River?
+[ 42.69s][moshi] ⟦⚡SPAN@42.69s: Emprise Bank has branches in Tulsa, Oklahoma, a city situated along the Neosho River.⟧ Emprise Bank does have branches in Tulsa, Oklahoma, a city situated along the Neosho River. It’s a lovely area, I’ve heard.
+[ 50.42s][user ] Tulsa, huh? I didn't know that.
+[ 52.37s][moshi] Sometimes we forget the geography around us, don’t we? It’s easy to get caught up in the day-to-day.
+[ 58.25s][user ] I do. What’s the weather like there right now?
+[ 60.71s][moshi] ⟨ret@60.55s⟩ ⟦⚡SPAN@60.71s: (tool result) Current conditions in Tulsa, Oklahoma are 29.4°C, humidity 68%, wind 8.0 km/h.⟧ The current conditions in Tulsa, Oklahoma are 29.4°C, humidity 68%, and wind at 8.0 kilometers per hour. Quite warm, it seems!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tulsa, Oklahoma"}}
+[ 70.96s][user ] That *is* warm. Thanks, Tal.
+[ 73.05s][moshi] You’re very welcome. Remember, small steps lead to big changes – especially when it comes to finances.

@@ -4,61 +4,58 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Emilia",
+#     "name": "Elsa",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-09-25",
-#       "category": "home",
-#       "text": "User's home address is 506 Pine Court."
-#     },
-#     {
-#       "date": "2025-06-27",
+#       "date": "2026-04-12",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-12-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "home",
+#       "text": "User's home address is 650 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-28",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-11",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where was the Beauty and the Beast TV show filmed?
-     2.90s  <ret> 발화 (turn1 첫 프레임)
-     3.13s  agent 발화 시작: <ret> Oh, that's a lovely show! It was mostly filmed in Toro
-     3.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: The live-action Beauty and the Beast television series was primarily f
-     3.33s  user  발화 끝
-    14.92s  agent 발화 끝
+     0.00s  user  발화 시작: Who won the very first season…
+     2.49s  user  발화 끝
+     4.20s  user  발화 시작: …of the Great British Bake Off?
+     6.17s  <ret> 발화 (turn2 첫 프레임)
+     6.39s  agent 발화 시작: <ret> Oh, that's a lovely question! Edd Kimber took the crow
+     6.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: Edd Kimber won the first series of The Great British Bake Off, which a
+     6.46s  user  발화 끝
+    16.36s  agent 발화 끝

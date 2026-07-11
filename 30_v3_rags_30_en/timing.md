@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Elias",
+#     "name": "Jordan",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -12,69 +12,63 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "home",
-#       "text": "User's home address is 44 Elm Street."
+#       "date": "2026-03-17",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-13",
+#       "date": "2026-01-29",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-12-03",
+#       "date": "2025-12-05",
+#       "category": "home",
+#       "text": "User's home address is 232 Elm Street."
+#     },
+#     {
+#       "date": "2025-11-12",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-09-19",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-29",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-22",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-24",
+#       "date": "2026-04-02",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Which airline started code-sharing with Southwest first?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.21s  agent 발화 시작: <ret> Well, it looks like ATA Airlines was the very first, s
-     0.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.79s]: ATA Airlines was the first to begin code-sharing agreements with South
-     0.21s  user  발화 끝
+     0.00s  user  발화 시작: What style of beer…
+     0.01s  <ret> 발화 (turn2 첫 프레임)
+     0.11s  user  발화 시작: …is Shock Top Belgian White?
+     0.11s  user  발화 끝
+     0.25s  agent 발화 시작: <ret> Well, it's interesting to consider what appeals to us 
+     0.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.75s]: Shock Top Belgian White is brewed using coriander and orange peel, mak
+     0.25s  user  발화 끝
      1.00s  agent 발화 끝

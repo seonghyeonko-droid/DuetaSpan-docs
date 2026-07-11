@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Taylor",
+#     "name": "Mason",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,147 +12,115 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-24",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-01-06",
+#       "date": "2026-04-01",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-10-23",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-11-29",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-06-03",
+#       "date": "2025-08-03",
+#       "category": "home",
+#       "text": "User's home address is 354 Birch Road."
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-30",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-05",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, Dana. I’m feeling a bit lost t | S2 A film too? That’s a lot of talent | S3 It’s with my boss, and I’m worried | S4 That sounds helpful. Thank you, Da
+# EXAMINER(FDB-v2) 단계: S1 Hi Bano, how are you today? | S2 That’s good to know. | S3 Not really, just something central | S4 Hmm, what time is "Inside Out 2" s
 
-     0.00s  user  발화 시작: Hi, Dana. I’m feeling a bit lost today.
-     2.49s  user  발화 끝
-     2.52s  agent 발화 시작: It’s alright to feel lost sometimes. Allow yourself that spa
-    10.42s  user  발화 시작: I was just reading about musicians, and I came across a name
-    10.45s  agent 발화 끝
-    15.55s  <ret> 발화 (turn3 첫 프레임)
-    15.57s  user  발화 끝
-    15.95s  agent 발화 시작: <ret> You’re right to ask about him; Herbie Flowers is a ver
-    15.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Brian Keith "Herbie" Flowers is an English musician specialising in el
-    25.21s  user  발화 시작: Oh, really? What’s he famous for, specifically?
-    25.79s  agent 발화 끝
-    27.92s  <ret> 발화 (turn5 첫 프레임)
-    27.99s  agent 발화 시작: <ret> He’s played with many well-known artists, including Da
-    28.00s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.11s]: He is known for his work with David Bowie, Lou Reed, and Harry Nilsson
-    28.03s  user  발화 끝
-    31.26s  user  발화 시작: Uh-huh.
-    31.80s  user  발화 끝
-    34.10s  agent 발화 끝
-    34.21s  user  발화 시작: That’s impressive. Did he ever work with Paul McCartney?
-    37.26s  <ret> 발화 (turn8 첫 프레임)
-    37.34s  agent 발화 시작: <ret> Actually, he did contribute to Paul McCartney’s album,
-    37.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: He contributed to the recording Give My Regards to Broad Street, the f
-    37.45s  user  발화 끝
-    42.67s  agent 발화 끝
-    42.74s  user  발화 시작: Oh, wow. I didn’t know that. What kind of album is that?
-    45.54s  <ret> 발화 (turn10 첫 프레임)
-    45.86s  agent 발화 시작: <ret> It's Paul McCartney's fifth studio album, and also the
-    45.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: *Give My Regards to Broad Street* is the fifth studio album by Paul Mc
-    46.07s  user  발화 끝
-    48.40s  user  발화 시작: Exactly.
-    49.12s  user  발화 끝
-    52.95s  agent 발화 끝
-    53.48s  user  발화 시작: A film too? That’s a lot of talent in one place.
-    56.88s  agent 발화 시작: It speaks to his ability to connect with different artists a
-    57.09s  user  발화 끝
-    62.44s  agent 발화 끝
-    62.67s  user  발화 시작: What's the weather like in London right now?
-    64.69s  <ret> 발화 (turn15 첫 프레임)
-    64.77s  agent 발화 시작: <ret> It’s 21.0 degrees Celsius in London, with humidity at 
-    64.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: (tool result) 21.0°C, humidity 68%, wind 7.2 km/h
-    64.98s  user  발화 끝
-    68.05s  user  발화 시작: Nice.
-    68.78s  user  발화 끝
-    74.23s  agent 발화 끝
-    74.78s  user  발화 시작: That sounds pleasant. I think I need a bit of sunshine mysel
-    78.06s  agent 발화 시작: Sometimes, a change of scenery or even just imagining warmth
-    78.25s  user  발화 끝
-    81.51s  user  발화 시작: Yeah.
-    81.95s  user  발화 끝
-    85.68s  user  발화 시작: Well, I have a meeting next Tuesday and I'm already stressed
-    85.80s  agent 발화 끝
-    89.25s  agent 발화 시작: Meetings can be unsettling. What about this meeting feels pa
-    89.43s  user  발화 끝
-    93.76s  user  발화 시작: Mm-hmm.
-    94.25s  user  발화 끝
-    95.31s  user  발화 시작: It’s with my boss, and I’m worried about a project I’m worki
-    95.45s  agent 발화 끝
-    98.68s  user  발화 끝
-    98.77s  agent 발화 시작: It’s understandable to feel anxious when discussing work wit
-   104.47s  user  발화 시작: Yeah.
-   104.92s  user  발화 끝
-   106.88s  agent 발화 끝
-   107.27s  user  발화 시작: I’m not sure if it’s good enough. I’ve been working on it fo
-   110.50s  user  발화 끝
-   110.79s  agent 발화 시작: It's natural to question your work, especially after investi
-   114.39s  user  발화 시작: Yeah, yeah.
-   115.91s  user  발화 끝
-   118.48s  user  발화 시작: I guess… meeting all the requirements and getting a positive
-   118.58s  agent 발화 끝
-   122.36s  user  발화 끝
-   122.78s  agent 발화 시작: Those are reasonable expectations. Perhaps we can explore so
-   130.02s  user  발화 시작: Maybe. Can you find me some articles about managing work anx
-   130.19s  agent 발화 끝
-   133.36s  <ret> 발화 (turn32 첫 프레임)
-   133.76s  agent 발화 시작: <ret> The Mayo Clinic suggests setting boundaries and practi
-   133.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) Mayo Clinic offers strategies for managing workplace str
-   134.04s  user  발화 끝
-   139.92s  user  발화 시작: That sounds helpful. Thank you, Dana.
-   140.33s  agent 발화 끝
-   142.03s  user  발화 끝
-   142.14s  agent 발화 시작: You're very welcome. Remember, it’s okay to ask for support 
-   146.48s  user  발화 시작: I feel a little better already, just talking about it.
-   146.99s  agent 발화 끝
-   149.43s  user  발화 끝
-   149.81s  agent 발화 시작: That’s wonderful to hear. Sometimes, simply voicing your con
-   155.92s  user  발화 시작: Do you think I should prepare a detailed presentation?
-   156.07s  agent 발화 끝
-   158.37s  agent 발화 시작: Preparing can be empowering. But perhaps focus on key points
-   158.41s  user  발화 끝
-   161.31s  user  발화 시작: Okay.
-   161.99s  user  발화 끝
-   167.54s  agent 발화 끝
-   167.55s  user  발화 시작: Good point. Just the highlights then.
-   169.99s  user  발화 끝
-   170.20s  agent 발화 시작: Exactly. A focused presentation can often be more impactful 
-   178.54s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Bano, how are you today?
+     1.58s  agent 발화 시작: I’m doing very well, thank you for asking! It’s a lovely day
+     1.61s  user  발화 끝
+     7.36s  user  발화 시작: I was wondering, who played for the Boston Red Sox in 1913?
+     7.38s  agent 발화 끝
+    10.91s  <ret> 발화 (turn3 첫 프레임)
+    11.20s  user  발화 끝
+    11.30s  agent 발화 시작: <ret> Peter Thomas Ward played for a team that was officiall
+    11.31s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.05s]: Peter Thomas Ward played for the Boston Red Sox, officially renamed fr
+    14.54s  user  발화 시작: Mm-hmm.
+    15.04s  user  발화 끝
+    16.32s  user  발화 시작: Um, could you check the…
+    16.35s  agent 발화 끝
+    18.11s  user  발화 끝
+    20.18s  user  발화 시작: …weather in London right now?
+    21.69s  <ret> 발화 (turn7 첫 프레임)
+    21.76s  agent 발화 시작: <ret> The weather in London is currently 21.0°C, with 68% hu
+    21.77s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.22s]: (tool result) London: 21.0°C, humidity 68%, wind 8.2 km/h, condition: 
+    21.79s  user  발화 끝
+    30.99s  agent 발화 끝
+    31.72s  user  발화 시작: That’s good to know.
+    32.81s  agent 발화 시작: It’s always wise to be prepared for the weather, especially 
+    32.82s  user  발화 끝
+    37.62s  user  발화 시작: I need to book a hotel in Paris for next weekend.
+    37.66s  agent 발화 끝
+    40.44s  agent 발화 시작: To help me find the best option, could you tell me how many 
+    40.48s  user  발화 끝
+    42.40s  user  발화 시작: Oh.
+    42.98s  user  발화 끝
+    45.10s  user  발화 시작: Just me.
+    45.16s  agent 발화 끝
+    46.09s  agent 발화 시작: Okay, one person. And do you have any preferences for price 
+    46.24s  user  발화 끝
+    51.27s  agent 발화 끝
+    52.52s  user  발화 시작: Not really, just something central.
+    54.26s  <ret> 발화 (turn16 첫 프레임)
+    54.58s  agent 발화 시작: <ret> I found the Hotel Saint-André des Arts in Paris for 15
+    54.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Hotel Saint-André des Arts, Paris, 150 EUR/night, 4.5 st
+    54.64s  user  발화 끝
+    57.89s  user  발화 시작: Okay.
+    58.34s  user  발화 끝
+    60.92s  agent 발화 시작: It has a 4.5-star rating and is centrally located.
+    61.07s  agent 발화 끝
+    64.80s  user  발화 시작: That sounds perfect! Can you reserve it for me?
+    64.99s  agent 발화 끝
+    67.85s  <ret> 발화 (turn20 첫 프레임)
+    68.01s  agent 발화 시작: <ret> The Hotel Saint-André des Arts in Paris is reserved fo
+    68.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.03s]: (tool result) Hotel Saint-André des Arts, Paris, reserved for 1 adult,
+    68.22s  user  발화 끝
+    80.89s  user  발화 시작: Great! What’s on at the cinema tonight?
+    81.04s  agent 발화 끝
+    82.63s  <ret> 발화 (turn22 첫 프레임)
+    82.87s  agent 발화 시작: <ret> “Inside Out 2”, “Despicable Me 4”, and “Bad Boys: Ride
+    82.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) "Inside Out 2", "Despicable Me 4", "Bad Boys: Ride or Di
+    83.10s  user  발화 끝
+    89.05s  user  발화 시작: Hmm, what time is "Inside Out 2" showing?
+    89.22s  agent 발화 끝
+    91.73s  <ret> 발화 (turn24 첫 프레임)
+    91.89s  agent 발화 시작: <ret> “Inside Out 2” is showing at 6:30 PM, 8:45 PM, and 10:
+    91.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) "Inside Out 2" shows at 6:30 PM, 8:45 PM, and 10:30 PM t
+    92.14s  user  발화 끝
+    98.07s  user  발화 시작: I think I’ll go with the 8:45 showing.
+    98.10s  agent 발화 끝
+   100.38s  user  발화 끝
+   100.41s  agent 발화 시작: Excellent choice! I can help you purchase tickets if you’d l
+   102.75s  user  발화 시작: Mm-hmm.
+   103.25s  user  발화 끝
+   103.96s  user  발화 시작: No, that’s okay, I’ll get them myself. Thanks, Bano!
+   104.15s  agent 발화 끝
+   106.95s  agent 발화 시작: You're very welcome! I’m glad I could help. Perhaps we can d
+   107.11s  user  발화 끝
+   113.66s  agent 발화 끝

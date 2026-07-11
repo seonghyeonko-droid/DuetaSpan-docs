@@ -1,81 +1,102 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Zarien, a curious and validating personal guide who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Fellaen, a gentle and reflective counselor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Paul",
+    "name": "Thomas",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "early 30s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-03-28",
+      "date": "2026-04-30",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2026-04-11",
+      "category": "home",
+      "text": "User's home address is 233 Oak Avenue."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
+    },
+    {
+      "date": "2025-09-15",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-10-21",
-      "category": "home",
-      "text": "User's home address is 837 Pine Court."
+      "date": "2025-08-18",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-10-01",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-08-06",
-      "category": "work",
-      "text": "User works as a architect."
-    },
-    {
-      "date": "2025-07-03",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in October."
+      "date": "2025-07-06",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-26",
-      "title": "Setting up a home network",
+      "date": "2026-05-10",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When ⟨ret@0.00s⟩ was the last solar eclipse visible in North America?
-[  0.04s][moshi] ⟦⚡SPAN@0.04s: The most recent total solar eclipse visible in North America was on August 21, 2017.⟧ Well, that’s a fascinating question! The most recent total solar eclipse visible in North America was on August 21, 2017. It was quite a spectacle, I hear.
-[  0.16s][user ] Oh, wow, 2017… that feels like ages ago.
-[  0.19s][moshi] It does seem to fly by, doesn't it? Time has a funny way of doing that.
-[  0.26s][user ] «backchannel» Yeah.
-[  0.26s][user ] Was ⟨ret@0.14s⟩ it visible across all of North America?
-[  0.30s][moshi] ⟦⚡SPAN@0.30s: The path of totality for the August 21, 2017 eclipse crossed the entire continental United States, as well as ⟧ It wasn’t visible everywhere, but the path of totality crossed the entire continental United States, and parts of Canada and Mexico.
-[  0.39s][user ] «backchannel» Yeah, yeah.
-[  0.40s][user ] I think I remember hearing about that one.
-[  0.43s][moshi] «interrupted» It was a really big event, and widely covered! People traveled from all over—
-[  0.49s][user ] «interrupts_prev» …did ⟨ret@0.20s⟩ it affect flights at all?
-[  0.52s][moshi] ⟦⚡SPAN@0.52s: (no information found)⟧ That's a good point to consider.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {}}
-[  0.54s][moshi] I’m sorry, but I don’t have any information about flight disruptions related to that eclipse.
-[  0.61s][user ] «backchannel» Yeah, yeah.
-[  0.62s][moshi] Perhaps there weren't significant disruptions, or the data isn't readily available.
-[  0.66s][user ] Hmm, ⟨ret@0.54s⟩ interesting. What about the one before that?
-[  0.70s][moshi] ⟦⚡SPAN@0.70s: A partial solar eclipse was visible across North America on October 27, 2022, and an annular solar eclipse occ⟧ Before 2017, there was a partial solar eclipse visible across North America on October 27, 2022, and an annular one on October 14, 2023.
-[  0.80s][user ] An ⟨ret@0.42s⟩ annular eclipse? What’s that?
-[  0.82s][moshi] ⟦⚡SPAN IRRELEVANT@0.82s: The current price of Bitcoin is $67,385.80, with a 24-hour change of +2.5%.⟧ —and doesn't completely cover the sun, leaving a bright ring around it. It’s quite a different sight!
-[  0.89s][user ] «backchannel» Uh-huh.
-[  0.90s][user ] That sounds cool. I'd love to see one sometime.
-[  0.94s][moshi] That’s wonderful! Experiencing an eclipse is a truly unforgettable event, and I’m glad you’re interested.
+[  0.00s][user ] Who ⟨ret@0.00s⟩ has won the most national awards for best actor?
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: Amitabh Bachchan has won the most national awards for best actor, with a total of four awards.⟧ It seems you're pondering accolades— Amitabh Bachchan has won the most national awards for best actor, with four awards. It's a testament to a remarkable career.
+[  0.10s][user ] «backchannel» Yeah.
+[  0.11s][user ] Four ⟨ret@0.00s⟩ awards, wow. What was his first one for?
+[  0.13s][moshi] ⟦⚡SPAN@0.13s: Amitabh Bachchan first won the National Film Award for Best Actor in 1969 for the film "Saat Hindustani".⟧ His first win came in 1969 for the film “Saat Hindustani”, a significant moment early in his career.
+[  0.18s][user ] And ⟨ret@0.05s⟩ what about Dilip Kumar? Was he up there?
+[  0.21s][moshi] ⟦⚡SPAN@0.21s: Dilip Kumar won the National Film Award for Best Actor three times, for "Shakti" (1975), "Mashaal" (1984), and⟧ Dilip Kumar received the award three times—for “Shakti” in 1975, “Mashaal” in 1984, and “Saudagar” in 1991.
+[  0.26s][user ] Those are some classic films.
+[  0.27s][moshi] They truly are. It's lovely to reflect on such enduring performances, isn’t it?
+[  0.31s][user ] «backchannel» Okay.
+[  0.32s][user ] Who ⟨ret@0.09s⟩ won in, say, 2000?
+[  0.33s][moshi] ⟦⚡SPAN@0.33s: The National Film Award for Best Actor in 2000 was awarded to Manisha Koirala for her performance in "Kartoos"⟧ In the year 2000, the award went to Manisha Koirala for her performance in “Kartoos”.
+[  0.37s][user ] That's a surprise. I thought it was always men.
+[  0.40s][moshi] It's a good reminder that talent knows no gender, and the awards reflect a diversity of powerful performances.
+[  0.45s][user ] What ⟨ret@0.40s⟩ about more recently? Like in the last five years?
+[  0.48s][moshi] ⟦⚡SPAN@0.48s: The winners of the National Film Award for Best Actor in the last five years are: 2019 - Ayushmann Khurrana, 2⟧ Over the last five years, the winners were Ayushmann Khurrana in 2019, Suriya in both 2020 and 2021, Allu Arjun in 2022, and Vicky Kaushal in 2023.
+[  0.56s][user ] «backchannel» Nice.
+[  0.56s][user ] Suriya won twice in a row? That’s impressive—
+[  0.58s][user ] …Is ⟨ret@0.30s⟩ there anyone who's ever won *three* times in a row?
+[  0.62s][moshi] ⟦⚡SPAN@0.62s: No actor has ever won the National Film Award for Best Actor three times consecutively.⟧ No actor has ever achieved three consecutive wins for that award.
+[  0.65s][user ] Oh, ⟨ret@0.58s⟩ okay. That's good to know.
+[  0.66s][moshi] ⟦⚡SPAN IRRELEVANT@0.66s: The current temperature in London is 18.5°C, with a humidity of 68% and wind speed of 7.2 km/h.⟧ It speaks to the incredible level of competition, doesn’t it? Each year brings such strong contenders.
+[  0.71s][moshi] It’s interesting to consider the longevity of these actors’ careers, and the impact they’ve had.
+[  0.75s][user ] «backchannel» Yeah.
+[  0.76s][user ] It really is. They've given us so many memories.
+[  0.78s][moshi] Yes, and the power of film to create those lasting memories is something quite special.
+[  0.83s][user ] Do you think awards really matter, though?
+[  0.85s][moshi] That's a profound question. They can be a form of recognition, certainly, but true impact lies in how art touches the heart.
+[  0.91s][user ] «backchannel» Yeah, yeah.
+[  0.92s][user ] You're right. It's about the connection, isn't it?
+[  0.94s][moshi] Precisely. It’s about the resonance a performance has within us, and how it stays with us long after the credits roll.

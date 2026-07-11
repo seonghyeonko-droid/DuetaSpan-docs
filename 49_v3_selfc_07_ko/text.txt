@@ -1,82 +1,85 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 친절하고 안정적인 조언자 트하리입니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 어려워하는 사람들을 돕는 부드럽고 사색적인 상담사 케엔입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "소찬",
+    "name": "연훈",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-05-05",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-05-31",
+      "date": "2026-05-01",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-04-04",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-04-03",
+      "date": "2025-12-17",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2025-09-19",
       "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-06-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-08",
-      "title": "Comparing gym memberships",
+      "date": "2025-12-27",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-08",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-09",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어플리케이션 설정 파일에 대해 ⟨ret@1.95s⟩ 알려줘.
-[  2.18s][moshi] ⟦⚡SPAN@2.19s: (tool result) /home/user/app/config.ini, 12.3 KB, last modified 2026-07-09 10:15:32⟧ 설정 파일은 사용자 폴더 앱 안에 있고, 크기는 십이 점 삼킬로바이트이며, 마지막 수정일은 이천이십육년 칠월 구일 열시 십오분 삼십이초입니다.
-      CALL: {"function": "get_file_info", "arguments": {"file_path": "application config file"}}
-[ 10.29s][user ] «backchannel» 응.
-[ 14.21s][user ] 음… 그 파일, 혹시 백업해 둔 적 ⟨ret@17.71s⟩ 있어?
-[ 18.02s][moshi] ⟦⚡SPAN@18.03s: (tool result) No information found regarding backups of the application config file.⟧ 아쉽게도 설정 파일의 백업 기록은 찾을 수 없습니다.
-      CALL: {"function": "search", "arguments": {"query": "backup application config file"}}
-[ 20.06s][user ] «backchannel» 어.
-[ 21.60s][user ] 아, 그래? 그럼 혹시 그…
-[ 24.70s][user ] …파일 내용 좀 볼 수 ⟨ret@25.82s⟩ 있을까?
-[ 25.98s][moshi] ⟦⚡SPAN@25.98s: (tool result) [file content: localhost:5432, abcdef123456, 30]⟧ 파일 내용은 데이터베이스 주소, API 키, 타임아웃 설정으로 이루어져 있습니다.
-      CALL: {"function": "read_file", "arguments": {"file_path": "/home/user/app/config.ini"}}
-[ 29.06s][user ] «backchannel» 응.
-[ 30.98s][user ] API 키가 뭐였지? — 잠깐만, 그보다…
-[ 35.00s][user ] …이 파일이 정확히 어떤 앱 설정 파일이야?
-[ 38.18s][moshi] 이 파일은 저희가 제공하는 수면 관리 앱의 설정 파일입니다—
-[ 42.24s][moshi] —앱의 데이터베이스 연결 정보와 API 접근 권한을 담고 있어서, 앱의 원활한 작동에 중요한 역할을 합니다.
-[ 46.22s][user ] «backchannel» 그래.
-[ 49.81s][moshi] 앱의 데이터베이스 연결 정보와 API 접근 권한을 담고 있어서, 앱의 원활한 작동에 중요한 역할을 합니다.
-[ 58.14s][user ] API 키는 어떻게 변경할 수 ⟨ret@59.94s⟩ 있어?
-[ 60.26s][moshi] ⟦⚡SPAN@60.26s: (tool result) To change your API key, navigate to Settings > API Access > Generate New Key. The old key will b⟧ API 키 변경은 앱 내 설정 메뉴에서 가능합니다.
-      CALL: {"function": "search", "arguments": {"query": "how to change api key in sleep management app"}}
-[ 63.60s][moshi] 앱 설정에서 API 접근 메뉴로 이동하여 새 키를 생성하면 됩니다. 기존 키는 즉시 비활성화됩니다.
-[ 70.58s][user ] 알았어. 그럼, 이번 주 토요일에 수면 코칭 세션 예약할 수 있을까?
-[ 75.54s][moshi] ⟨ret@75.47s⟩ ⟦⚡SPAN@75.55s: (tool result) Available: Dr. Lee (14:00, 15:00), Ms. Park (16:00, 17:00)⟧ 토요일에는 이 선생님 열네시나 열다섯시에, 박 선생님 열여섯시나 열일곱시에 예약 가능합니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "sleep coaching", "date": "2026-07-11"}}
-[ 82.07s][user ] 이 선생님 열다섯시로 예약해 줘.
-[ 84.31s][moshi] ⟨ret@84.16s⟩ ⟦⚡SPAN@84.32s: (tool result) Appointment confirmed with Dr. Lee on July 11, 2026 at 15:00. Confirmation ID: SLEEP71115⟧ 이 선생님과 이천이십육년 칠월 십일일 열다섯시에 수면 코칭 세션 예약이 완료되었습니다. 확인 번호는 에스 엘 이 이 피 칠 일 일 일 오입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Lee", "time": "15:00", "date": "2026-07-11", "service_type": "sleep coaching"}}
+[  0.00s][user ] 부산에서 서울 가는 버스 티켓 두 장…
+[  4.77s][user ] …삼월 십팔일 오후 네시 십오분으로 해주세요.
+[  8.24s][moshi] ⟨ret@8.01s⟩ ⟦⚡SPAN@8.25s: (tool result) Confirmation: B29X7Q, 2 tickets, Busan to Seoul, March 18, 2026, 4:15 PM, total $68.⟧ 부산에서 서울 가는 버스 티켓 두 장이 확인되었습니다. 확인 번호는 비 이 구 엑스 칠 큐이고, 총 금액은 육십팔달러입니다.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"destination": "Seoul", "origin": "Busan", "date": "2026-03-18", "time": "16:15", "num_tickets": 2}}
+[ 19.61s][user ] 아, 삼월 십팔일이 아니라 십구일로 ⟨ret@21.86s⟩ 바꿔주세요.
+[ 22.18s][moshi] ⟦⚡SPAN@22.18s: Confirmation: Y81Z3P, 2 tickets, Busan to Seoul, March 19, 2026, 4:15 PM, total $72.⟧ 네, 날짜를 삼월 십구일로 변경해 드렸습니다. 새로운 확인 번호는 와이 팔 일 제트 삼 피이고, 총 금액은 칠십이달러입니다.

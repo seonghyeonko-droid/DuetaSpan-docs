@@ -1,62 +1,85 @@
 v3_mem_33_ko src=mem style=mem
-SYSTEM: <system> 당신은 사려 깊고 부드러운 말투의 개인 가이드인 셀라라입니다. 사람들의 일상적인 결정과 감정에 도움을 줍니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 라이프 코치 브리엔입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "연완",
+    "name": "연현",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "male",
     "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-08",
+      "date": "2025-12-06",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-10-27",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-05-16",
+      "date": "2025-10-19",
       "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
+      "text": "User's home address is 부산 해운대구 우동 123-4."
     },
     {
-      "date": "2026-03-02",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
+      "date": "2025-09-11",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-12-11",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-08-03",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-29",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-26",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 연완님. 저는 셀라라예요. 오늘 하루 어떠신가요?
-[  3.99s][user ] 안녕하세요, 셀라라님. 지금 몇 시예요?
-[  7.07s][moshi] ⟨ret@6.99s⟩ ⟦⚡SPAN@7.07s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십칠분이에요. 편안한 오후 보내세요.
+[  0.00s][moshi] 안녕하세요, 연현님! 저는 여러분을 도와드리는 브리엔이라고 해요. 오늘 하루 잘 보내셨나요?
+[  5.55s][user ] 안녕하세요, 브리엔 씨. 지금 부산 시간 몇 시예요?
+[  9.04s][moshi] ⟨ret@8.96s⟩ ⟦⚡SPAN@9.04s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분이에요. 혹시 오늘 특별한 계획 있으신가요?
       CALL: {"function": "get_time", "arguments": {}}
-[ 11.19s][user ] «backchannel» 그렇죠.
-[ 14.85s][user ] 고맙습니다. 저, 혹시 고양이 이름이 뭐였죠? 기억이 잘 안 나네요.
-[ 19.73s][moshi] ⟨ret@19.50s⟩ ⟦⚡SPAN@19.74s: [2026-06-08] User has a Siamese cat named Bella.⟧ 연완님은 샴 고양이 벨라를 키우고 계세요. 이천이십육년 유월 팔일에 말씀해주셨어요.
-[ 22.15s][user ] «backchannel» 예.
-[ 25.04s][moshi] 벨라가 연완님께 큰 즐거움을 주길 바라요.
+[ 15.11s][user ] 아, 네. 지난번에 얘기했던 마라톤 훈련… 오늘 저녁에 할 예정이에요.
+[ 19.85s][moshi] 아, 마라톤 훈련이요! 정말 멋지네요. 꾸준히 하시면 분명 좋은 결과가 있을 거예요.
+[ 23.11s][user ] «backchannel» 네.
+[ 26.55s][user ] 음… 혹시 제가 고양이 이름이 뭐였죠? 기억이 잘 ⟨ret@29.66s⟩ 안 나네요.
+[ 29.98s][moshi] ⟦⚡SPAN@29.98s: [2025-10-27] User has a tabby cat named Luna.⟧ 고양이 이름이 루나였어요. 예쁜 이름이죠. 루나와 함께 즐거운 시간 보내세요.
+[ 35.12s][user ] 아, 맞다! 루나! 고맙습니다.
+[ 37.23s][moshi] 천만에요. 언제든 궁금한 점이 있으시면 저에게 말씀해 주세요. 제가 항상 곁에서 응원할게요.

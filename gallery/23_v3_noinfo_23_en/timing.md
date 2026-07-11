@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Remy",
+#     "name": "Kim",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-24",
+#       "date": "2026-06-03",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "home",
-#       "text": "User's home address is 415 Oak Avenue."
+#       "date": "2026-03-23",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-07-15",
+#       "date": "2026-02-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2025-07-09",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-06-14",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-11",
+#       "date": "2026-05-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,53 +58,47 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-11-29",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-06-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 That's good to know. | S3 Yeah, definitely. What's the weath | S4 Oh, that's a shame. I missed it.
+# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Oh, okay. Well, what about the wea | S3 Hmm, that’s a shame. | S4 That sounds nice. What movies are 
 
-     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
-     2.30s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
-     2.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (no information found)
-     2.87s  user  발화 끝
-     8.34s  user  발화 시작: Yeah.
-     8.73s  user  발화 끝
-    10.14s  user  발화 시작: Oh, okay. Well, what about her most recent album release dat
-    10.20s  agent 발화 끝
-    13.71s  <ret> 발화 (turn4 첫 프레임)
-    14.10s  agent 발화 시작: <ret> She released her fifteenth studio album, "My Christmas
-    14.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: Lee Sun-hee released her fifteenth studio album, "My Christmas Story",
-    14.16s  user  발화 끝
-    22.68s  agent 발화 끝
-    22.69s  user  발화 시작: That's good to know.
-    23.78s  user  발화 끝
-    23.82s  agent 발화 시작: It’s wonderful to stay current with artists you enjoy. Music
-    29.15s  user  발화 시작: Yeah, definitely. What's the weather like in Seoul right now
-    29.56s  agent 발화 끝
-    32.47s  <ret> 발화 (turn8 첫 프레임)
-    32.55s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-six point one
-    32.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.14s]: (tool result) 26.1°C, humidity 68%, wind 3.2 km/h
-    32.66s  user  발화 끝
-    36.53s  user  발화 시작: Mm-hmm.
-    36.93s  user  발화 끝
-    41.53s  agent 발화 시작: It sounds quite pleasant! Perhaps a good day to enjoy some m
-    41.69s  agent 발화 끝
-    45.88s  user  발화 시작: …Do you think she does many concerts these days?
-    46.58s  agent 발화 끝
-    48.12s  <ret> 발화 (turn12 첫 프레임)
-    48.28s  agent 발화 시작: <ret> She held a concert series called “Re:Lee” from Februar
-    48.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.06s]: (tool result) Lee Sun-hee held a concert series, “Re:Lee”, from Februa
-    48.41s  user  발화 끝
-    60.34s  agent 발화 끝
-    60.55s  user  발화 시작: Oh, that's a shame. I missed it.
-    62.18s  agent 발화 시작: It’s disappointing to miss an event you’re looking forward t
-    62.25s  user  발화 끝
-    70.10s  agent 발화 끝
+     0.00s  user  발화 시작: Do you happen to know Sarah Miller's phone number?
+     1.92s  <ret> 발화 (turn1 첫 프레임)
+     2.32s  agent 발화 시작: <ret> I’ve checked everywhere, but I couldn’t find a phone n
+     2.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (no information found)
+     2.49s  user  발화 끝
+     8.76s  agent 발화 끝
+     8.94s  user  발화 시작: Oh, okay. Well, what about the weather in Seoul last Tuesday
+    12.09s  <ret> 발화 (turn3 첫 프레임)
+    12.48s  agent 발화 시작: <ret> I’m sorry, I can only provide current weather informat
+    12.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (no information found)
+    12.64s  user  발화 끝
+    15.96s  user  발화 시작: Exactly.
+    16.88s  user  발화 끝
+    18.91s  agent 발화 끝
+    18.95s  user  발화 시작: Hmm, that’s a shame.
+    20.24s  user  발화 끝
+    20.30s  agent 발화 시작: It is, isn’t it? Sometimes getting the information we need i
+    27.12s  user  발화 시작: That sounds nice. What movies are playing nearby right now?
+    27.53s  agent 발화 끝
+    31.07s  <ret> 발화 (turn8 첫 프레임)
+    31.38s  user  발화 끝
+    31.39s  agent 발화 시작: <ret> Right now, ‘Inside Out 2’, ‘Bad Boys: Ride or Die’, an
+    31.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.58s]: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The G
+    41.97s  agent 발화 끝

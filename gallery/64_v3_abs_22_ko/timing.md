@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "현진",
+#     "name": "서안",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,67 +12,93 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-09-10",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-11-17",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-10-20",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-08-15",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-07-04",
+#       "category": "home",
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     },
 #     {
-#       "date": "2025-07-09",
+#       "date": "2025-06-25",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-08",
-#       "title": "Researching a used car",
+#       "date": "2026-01-15",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 제임스 리브먼은 무엇을 거부했나요? | S2 …더 아는 게 있나요? | S3 …혹시 법학자 제임스 리브먼 말씀하시는 건가요? | S4 그렇군요. 사형제도 폐지 운동을 많이 하셨나요?
+# EXAMINER(FDB-v2) 단계: S1 세아르 씨, 최고법원에 법안을 제출할 수 있는 사람은 삼주 후 | S2 [happy] 아, 인사이드 아웃 이는 이미 봤어요! 재밌더라 | S3 네, 맞아요. 이번 주 토요일에 영화 보러 갈 건데, 혹시 근 | S4 레드 로브스터, 괜찮겠네요. 예약은 어떻게 해야 할까요?
 
-     0.00s  user  발화 시작: 제임스 리브먼은 무엇을 거부했나요?
+     0.00s  user  발화 시작: 세아르 씨, 최고법원에 법안을 제출할 수 있는 사람은 삼주 후면 누구일까요?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.05s  agent 발화 시작: <ret> 죄송합니다, 지금으로서는 제임스 리브먼이 무엇을 거부했는지 알 수 있는 정보가 없습니다.
-     0.05s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (no information found)
-     0.05s  user  발화 끝
-     0.19s  user  발화 시작: 음… 그 분에 대해…
+     0.09s  agent 발화 시작: <ret> 죄송해요, 그 정보는 찾을 수가 없네요. 제가 아는 선에서는 정확히 말씀드리기 어려워요.
+     0.09s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (no information found)
+     0.09s  user  발화 끝
+     0.13s  <ret> 발화 (turn4 첫 프레임)
+     0.19s  user  발화 시작: 네.
      0.19s  agent 발화 끝
-     0.24s  user  발화 시작: …더 아는 게 있나요?
-     0.24s  user  발화 끝
-     0.29s  agent 발화 시작: 제임스 리브먼이라는 이름을 가진 분들에 대한 정보는 여러 건이 있습니다—
+     0.20s  user  발화 시작: 아, 그렇군요. 그럼 혹시 요즘 가장 인기 있는 영화가 뭐예요?
+     0.20s  user  발화 끝
+     0.29s  agent 발화 시작: <ret> 요즘 가장 인기 있는 영화는 '인사이드 아웃 이', '배드 보이즈: 라이드 오어 다이', 그리고 
+     0.29s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Top movies now: 'Inside Out 2', 'Bad Boys: Ride or Die',
      0.29s  user  발화 끝
-     0.42s  user  발화 시작: …혹시 법학자 제임스 리브먼 말씀하시는 건가요?
+     0.42s  user  발화 시작: 음.
      0.42s  agent 발화 끝
-     0.50s  agent 발화 시작: 아, 법학자 제임스 리브먼 말씀이시군요. 그는 하버드 법대 교수셨습니다.
+     0.43s  user  발화 시작: [happy] 아, 인사이드 아웃 이는 이미 봤어요! 재밌더라고요.
+     0.43s  user  발화 끝
+     0.50s  agent 발화 시작: 정말요? 잘 보셨다니 저도 기쁘네요. 감정 표현이 정말 섬세한 영화죠.
      0.50s  user  발화 끝
-     0.62s  user  발화 시작: 네.
-     0.62s  agent 발화 끝
-     0.63s  agent 발화 시작: 그의 연구 분야는 헌법법과 형사법이었고, 특히 사형제도 폐지에 힘쓰셨습니다.
-     0.63s  user  발화 끝
-     0.74s  user  발화 시작: 그렇군요. 사형제도 폐지 운동을 많이 하셨나요?
-     0.74s  agent 발화 끝
-     0.82s  agent 발화 시작: 네, 사형제도 폐지에 대한 그의 저술과 활동은 매우 활발했습니다. 그 분야에서 큰 영향을 주셨죠.
-     0.82s  user  발화 끝
+     0.55s  <ret> 발화 (turn11 첫 프레임)
+     0.58s  user  발화 시작: 네, 맞아요. 이번 주 토요일에 영화 보러 갈 건데, 혹시 근처에 맛있는 식당도 추천해 줄 수 있을까요?
+     0.58s  agent 발화 끝
+     0.64s  <ret> 발화 (turn9 첫 프레임)
+     0.72s  agent 발화 시작: <ret> 근처에는 올리브 가든, 치즈케이크 팩토리, 레드 로브스터가 있어요. 식사하기 좋을 거예요.
+     0.72s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Restaurants near you: 'Olive Garden', 'The Cheesecake Fa
+     0.72s  user  발화 끝
+     0.82s  user  발화 시작: 레드 로브스터, 괜찮겠네요. 예약은 어떻게 해야 할까요?
+     0.82s  agent 발화 끝
+     0.87s  agent 발화 시작: <ret> 레드 로브스터에 토요일 일곱시에 두명으로 예약 완료됐습니다. 확인 번호는 알 엘 칠 팔 구 공이에
+     0.87s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Reservation confirmed for 2 people at Red Lobster on Sat
+     0.87s  user  발화 끝
      1.00s  agent 발화 끝

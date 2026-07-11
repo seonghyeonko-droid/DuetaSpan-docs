@@ -4,131 +4,73 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Oliver",
+#     "name": "Casey",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-09",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-12-30",
+#       "date": "2026-05-16",
 #       "category": "home",
-#       "text": "User's home address is 582 Oak Avenue."
+#       "text": "User's home address is 441 Birch Road."
 #     },
 #     {
-#       "date": "2025-11-20",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
 #     },
 #     {
-#       "date": "2025-11-16",
+#       "date": "2025-11-03",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-03",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-07-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2025-08-10",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-05",
+#       "date": "2025-07-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-05",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the weather like in Seoul r | S2 Do you have any advice for someone | S3 …but what about weekends? Should I | S4 Okay, morning light. And is there 
+# EXAMINER(FDB-v2) 단계: S1 I’m having trouble sleeping lately | S2 …you suggest some restaurants near | S3 …actually, before we talk about sl | S4 Sushi Spot sounds nice. What are t
 
-     0.00s  user  발화 시작: What's the weather like in Seoul right now?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.03s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with 74 
-     0.03s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     0.03s  user  발화 끝
-     0.09s  user  발화 시작: Wow.
-     0.09s  agent 발화 끝
-     0.10s  user  발화 시작: That sounds pleasant. I’m trying to get a better sleep sched
+     0.00s  user  발화 시작: I’m having trouble sleeping lately. Could…
+     0.02s  <ret> 발화 (turn2 첫 프레임)
+     0.05s  user  발화 시작: …you suggest some restaurants near me?
+     0.05s  user  발화 끝
+     0.10s  agent 발화 시작: <ret> Oh, I'm so sorry to hear that sleep is being difficult
+     0.10s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (no information found)
      0.10s  user  발화 끝
-     0.14s  agent 발화 시작: That’s wonderful! Prioritizing sleep is a really great step 
-     0.14s  user  발화 끝
-     0.20s  user  발화 시작: Yeah, totally.
-     0.20s  agent 발화 끝
-     0.20s  user  발화 시작: I keep waking up feeling tired, even after eight hours.
-     0.20s  user  발화 끝
-     0.24s  agent 발화 시작: It’s frustrating when sleep doesn’t feel restorative, even w
-     0.24s  user  발화 끝
-     0.30s  user  발화 시작: Do you have any advice for someone who struggles with that?
-     0.30s  agent 발화 끝
-     0.31s  <ret> 발화 (turn17 첫 프레임)
-     0.35s  agent 발화 시작: Sometimes, consistent wake times are more important than tot
-     0.35s  user  발화 끝
-     0.39s  user  발화 시작: Oh, really? –
-     0.39s  agent 발화 끝
-     0.40s  user  발화 시작: …but what about weekends? Should I still wake up at the same
-     0.40s  user  발화 끝
-     0.46s  agent 발화 시작: Ideally, keeping a consistent wake time, even on weekends, h
-     0.46s  user  발화 끝
-     0.48s  <ret> 발화 (turn14 첫 프레임)
-     0.52s  user  발화 시작: That sounds…difficult. Is there anything else I can do?
-     0.52s  agent 발화 끝
-     0.56s  agent 발화 시작: <ret> Creating a relaxing bedtime routine can really help si
-     0.56s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: A regular bedtime routine can signal to your body that it’s time to wi
-     0.56s  user  발화 끝
-     0.67s  user  발화 시작: Yeah, yeah.
-     0.67s  agent 발화 끝
-     0.67s  user  발화 시작: A warm bath… that’s a good idea. What about light?
-     0.67s  user  발화 끝
-     0.71s  agent 발화 시작: <ret> Getting bright light exposure, particularly in the mor
-     0.71s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Exposure to bright light, especially in the morning, helps regulate yo
-     0.71s  user  발화 끝
-     0.75s  <ret> 발화 (turn19 첫 프레임)
-     0.78s  user  발화 시작: Okay, morning light. And is there a good app for tracking sl
-     0.78s  agent 발화 끝
-     0.83s  agent 발화 시작: <ret> Sleep Cycle is a well-known app that tracks your sleep
-     0.83s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Sleep Cycle is a popular app that tracks your sleep patterns using you
-     0.83s  user  발화 끝
-     0.92s  user  발화 시작: Yeah, totally.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: Sleep Cycle, got it. Thanks, Jiax.
-     0.93s  user  발화 끝
-     0.96s  agent 발화 시작: You’re very welcome! Remember, small changes can make a big 
-     0.96s  user  발화 끝
+     0.12s  <ret> 발화 (turn4 첫 프레임)
+     0.26s  user  발화 시작: …actually, before we talk about sleep, can you find those re
+     0.26s  agent 발화 끝
+     0.36s  agent 발화 시작: <ret> I found twelve restaurants within three kilometers of 
+     0.36s  ⚡SPAN 주입 [d'=0.26s / d_lead=0.26s]: (tool result) Restaurants found: 12. "Pizza Palace", 0.5km, Italian; "
+     0.36s  user  발화 끝
+     0.60s  <ret> 발화 (turn6 첫 프레임)
+     0.62s  user  발화 시작: Sushi Spot sounds nice. What are their hours?
+     0.62s  agent 발화 끝
+     0.68s  agent 발화 시작: <ret> Sushi Spot is open every day from eleven thirty AM to 
+     0.68s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Sushi Spot is open from 11:30 AM to 10:00 PM daily.
+     0.68s  user  발화 끝
+     0.85s  agent 발화 시작: I hope you enjoy your meal, and we can return to your sleep 
+     0.85s  agent 발화 끝
      1.00s  agent 발화 끝

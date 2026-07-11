@@ -1,80 +1,80 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Boras, a grounded and empathetic life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Sear, a curious and validating personal guide who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Avery",
+    "name": "Nathan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-01-20",
+      "date": "2026-06-20",
       "category": "home",
-      "text": "User's home address is 472 Oak Avenue."
+      "text": "User's home address is 456 Maple Drive."
     },
     {
-      "date": "2025-09-10",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-09-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-08-25",
+      "date": "2026-03-11",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-08-15",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-07-09",
+      "date": "2025-10-20",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-07-04",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-06-25",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-02",
-      "title": "Planning a birthday dinner",
+      "date": "2026-03-23",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-08-23",
-      "title": "Setting up a home network",
+      "date": "2025-10-31",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What does James Liebman reject?
-[  0.05s][moshi] It appears there’s no readily available information detailing what James Liebman specifically rejects.
-[  0.19s][user ] Oh. ⟨ret@0.02s⟩ Well, who *is* James Liebman?
-[  0.26s][moshi] «interrupted» ⟦⚡SPAN@0.26s: James Liebman is the Simeon E. Baldwin Professor of Law at Columbia Law School, specializing in statutory inte⟧ James Liebman is a professor at Columbia Law School—
-[  0.35s][user ] «interrupts_prev» …Is he known for any particular cases?
-[  0.43s][moshi] He's a highly respected scholar, and his work focuses more on legal theory than specific case outcomes.
-[  0.61s][user ] «backchannel» Yeah.
-[  0.62s][moshi] It’s common to find fulfillment in contributing to the broader understanding of a field, rather than focusing solely on individual instances—a path that often brings a different kind of peace.
-[  0.94s][user ] That's a good point. Thanks, Boras.
+[  0.00s][user ] After ⟨ret@0.00s⟩ a three-week period, who could submit a proposed measure to the Supreme Court?
+[  0.10s][moshi] ⟦⚡SPAN@0.10s: (no information found)⟧ It seems that information isn't readily available, unfortunately. It’s a bit of a legal puzzle!
+[  0.21s][user ] «backchannel» Yeah.
+[  0.22s][user ] Oh. ⟨ret@0.06s⟩ Well, can you find me a good Italian restaurant nearby?
+[  0.30s][moshi] ⟦⚡SPAN@0.30s: (tool result) 4.6 stars, $$$, 123 Main Street, Italian, 0.5 miles away.⟧ There’s a highly-rated Italian place, just half a mile from here. It’s called… well, it doesn’t have a name in this result.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[  0.46s][user ] «backchannel» Mm-hmm.
+[  0.47s][user ] [laugh] That’s… unusual.
+[  0.49s][moshi] It does sound a little mysterious, doesn’t it? Perhaps a hidden gem!
+[  0.58s][user ] Maybe. ⟨ret@0.31s⟩ What’s the weather like right now?
+[  0.63s][moshi] ⟦⚡SPAN@0.63s: (tool result) 24.0°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s a lovely 24.0 degrees Celsius with clear skies and a gentle breeze of 3.2 kilometers per hour. Perfect for finding that nameless Italian place!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  0.81s][user ] It does sound nice. Thanks, Sear.
+[  0.85s][moshi] You’re very welcome! It’s my pleasure to help you discover little joys, even if they involve restaurants with no names.

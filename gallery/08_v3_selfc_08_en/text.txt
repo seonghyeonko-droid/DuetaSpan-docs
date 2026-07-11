@@ -1,86 +1,114 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Drorara, a gentle and reflective supportive advisor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Kler, a upbeat and supportive life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Simon",
+    "name": "Mia",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-08",
-      "category": "home",
-      "text": "User's home address is 860 Pine Court."
+      "date": "2026-06-12",
+      "category": "work",
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-12-03",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-01",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-10-26",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
+      "date": "2026-03-21",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-09-28",
+      "date": "2026-03-18",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-08-29",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "home",
+      "text": "User's home address is 595 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-13",
+      "date": "2026-05-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I ⟨ret@0.00s⟩ need to find a quiet café with good Wi-Fi near the National Museum.
-[  0.04s][moshi] «interrupted» ⟦⚡SPAN@0.04s: The National Museum of Korea is located at 161, Seonrin-dong, Jongno-gu, Seoul, 03172, South Korea.⟧ I can help with that. There are several cafés near the National Museum of Korea—
-[  0.08s][user ] «interrupts_prev» …actually, ⟨ret@0.00s⟩ does that museum have a café itself?
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: (tool result) The National Museum of Korea operates a café called "Museum Madang" on its grounds, offering cof⟧ Yes, the National Museum of Korea does have a café. It’s called Museum Madang and offers coffee and light meals.
-      CALL: {"function": "search", "arguments": {"query": "National Museum of Korea café"}}
-[  0.17s][user ] «backchannel» Mm-hmm.
-[  0.17s][user ] Oh, ⟨ret@0.00s⟩ perfect! What are their hours today?
-[  0.19s][moshi] ⟦⚡SPAN@0.19s: (tool result) Museum Madang is open today, July 10, 2026, from 10:00 AM to 6:00 PM. source: museum.go.kr⟧ Museum Madang is open today from ten in the morning until six in the evening.
-      CALL: {"function": "search", "arguments": {"query": "Museum Madang hours today"}}
-[  0.23s][user ] Great. I'm meeting a friend there next Tuesday.
-[  0.26s][moshi] That sounds lovely. A meeting at a museum café is a very peaceful setting.
-[  0.30s][user ] I’m feeling a bit stressed about a presentation I have to give next week.
-[  0.34s][moshi] It's perfectly natural to feel stressed before a presentation. It shows you care about doing well.
-[  0.38s][user ] I’m worried I’ll forget what I want to say.
-[  0.41s][moshi] That's a common worry. Perhaps we could explore some strategies to help you feel more prepared?
-[  0.46s][user ] «backchannel» Mm-hmm.
-[  0.46s][user ] Yeah, that would be good. I haven't even started writing it yet…
-[  0.49s][moshi] It’s alright to feel overwhelmed. Starting is often the hardest part. Remember, small steps add up.
-[  0.54s][user ] «backchannel» Yeah.
-[  0.54s][moshi] «interrupted» Sometimes, simply outlining your main points can ease that feeling of being lost. It gives you a structure—
-[  0.60s][user ] «interrupts_prev» I keep putting it off, though. I always find something else to do.
-[  0.63s][moshi] Procrastination is a very human tendency. It often stems from a fear of not being perfect.
-[  0.68s][user ] «backchannel» Mhm.
-[  0.68s][user ] I think you're right. I’m a perfectionist, I guess.
-[  0.71s][moshi] That's insightful of you. Perfectionism can be a double-edged sword; it drives excellence, but also creates pressure.
-[  0.76s][user ] «backchannel» Okay.
-[  0.76s][user ] So, how do I break that cycle?
-[  0.78s][moshi] Perhaps try reframing your goal. Instead of aiming for perfection, focus on delivering your message clearly.
-[  0.83s][user ] «backchannel» Mm-hmm.
-[  0.83s][user ] That makes sense. It’s about communication, not flawless execution.
-[  0.86s][moshi] Exactly. And remember, your audience wants you to succeed. They are there to learn from you, not to judge.
-[  0.91s][user ] I should probably write down a few bullet points then.
-[  0.94s][moshi] That’s a wonderful first step. Just a few key ideas will give you a solid foundation. I believe in you.
+[  0.00s][user ] What ⟨ret@0.00s⟩ is the quickest way to get from Tokyo Station to Shibuya Crossing using public transport?
+[  0.06s][moshi] ⟦⚡SPAN@0.06s: (tool result) {"distance": 9.6, "duration": 1800, "route": "JR Yamanote Line to Shibuya Station, walk 10 minut⟧ The quickest route is about 9.6 kilometers and takes around 1800 seconds.
+      CALL: {"function": "maps_directions_transit_integrated", "arguments": {"origin": "Tokyo Station", "destination": "Shibuya Crossing", "mode": "transit"}}
+[  0.10s][moshi] That’s using the JR Yamanote Line to Shibuya Station, then a ten-minute walk.
+[  0.14s][user ] Uh, ⟨ret@0.00s⟩ actually, I meant to say Shinjuku Station, not Tokyo Station.
+[  0.18s][moshi] ⟦⚡SPAN@0.18s: (tool result) {"distance": 4.8, "duration": 600, "route": "JR Yamanote Line to Shibuya Station, walk 10 minute⟧ From Shinjuku Station to Shibuya Crossing, it's about 4.8 kilometers and takes 600 seconds.
+      CALL: {"function": "maps_directions_transit_integrated", "arguments": {"origin": "Shinjuku Station", "destination": "Shibuya Crossing", "mode": "transit"}}
+[  0.23s][moshi] Again, taking the JR Yamanote Line to Shibuya Station, then a ten-minute walk.
+[  0.27s][user ] «backchannel» Yeah.
+[  0.28s][moshi] It’s great to get the details right—planning ahead makes everything smoother, you know?
+[  0.32s][user ] «backchannel» Uh-huh.
+[  0.32s][user ] What's ⟨ret@0.03s⟩ the weather like in Shibuya right now?
+[  0.35s][moshi] ⟦⚡SPAN@0.35s: (tool result) "28.0°C, humidity 65%, wind 3.2 km/h, condition: partly cloudy"⟧ It's currently 28.0 degrees Celsius in Shibuya, with 65% humidity and a 3.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Shibuya"}}
+[  0.41s][moshi] The conditions are partly cloudy, so it looks like a nice day!
+[  0.45s][user ] That ⟨ret@0.41s⟩ sounds good. Is there a good ramen place nearby?
+[  0.49s][moshi] ⟦⚡SPAN@0.49s: (tool result) "Ichiran Shibuya, 4.5 stars, 120 reviews, price range: ¥800-¥1500"⟧ Ichiran Shibuya has 4.5 stars with 120 reviews, and the price range is between ¥800 and ¥1500.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Shibuya", "cuisine": "ramen"}}
+[  0.54s][moshi] It’s a really popular spot, perfect for a quick and tasty meal.
+[  0.59s][user ] «backchannel» Uh-huh.
+[  0.59s][user ] [laugh] ⟨ret@0.25s⟩ Sounds perfect. Can you make a reservation for me there for one person at 7 PM?
+[  0.65s][moshi] ⟦⚡SPAN@0.65s: (tool result) "Reservation confirmed for Ichiran Shibuya, 2026-07-10 at 19:00, party of 1, confirmation ID: 7A⟧ Your reservation at Ichiran Shibuya is confirmed for tonight at 7 PM.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Ichiran Shibuya", "date": "2026-07-10", "time": "19:00", "party_size": 1}}
+[  0.69s][moshi] Your confirmation ID is 7A9B2—enjoy your ramen!
+[  0.71s][user ] «backchannel» Mhm.
+[  0.72s][user ] Great, thanks so much!
+[  0.73s][moshi] You’re very welcome! It’s wonderful you're taking the time to enjoy a good meal.
+[  0.78s][moshi] Remember, small pleasures like that really add up to a happier life.
+[  0.82s][user ] «backchannel» Yeah.
+[  0.82s][user ] Can you remind me of that reservation tomorrow morning?
+[  0.86s][moshi] I can. What time would you like the reminder?
+[  0.89s][user ] «backchannel» Yeah.
+[  0.89s][user ] 9 AM.
+[  0.90s][moshi] Okay, I’ve set a reminder for your Ichiran Shibuya reservation at 9 AM tomorrow.
+[  0.94s][moshi] It’s all about staying on track and making the most of your day, wouldn’t you say?
