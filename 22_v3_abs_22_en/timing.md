@@ -4,94 +4,114 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Nathan",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "home",
-#       "text": "User's home address is 456 Maple Drive."
+#       "date": "2026-05-31",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-02-22",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-10-20",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2025-09-02",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-06-25",
+#       "date": "2025-08-12",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-06-26",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 After a three-week period, who cou | S2 [laugh] That’s… unusual. | S3 Maybe. What’s the weather like rig | S4 It does sound nice. Thanks, Sear.
+# EXAMINER(FDB-v2) 단계: S1 What does wool look like? | S2 What about…different colors? | S3 Black wool? Really? | S4 So merino is the good stuff?
 
-     0.00s  user  발화 시작: After a three-week period, who could submit a proposed measu
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.06s  <ret> 발화 (turn4 첫 프레임)
-     0.10s  agent 발화 시작: <ret> It seems that information isn't readily available, unf
-     0.10s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (no information found)
-     0.10s  user  발화 끝
-     0.21s  user  발화 시작: Yeah.
-     0.21s  agent 발화 끝
-     0.22s  user  발화 시작: Oh. Well, can you find me a good Italian restaurant nearby?
-     0.22s  user  발화 끝
-     0.30s  agent 발화 시작: <ret> There’s a highly-rated Italian place, just half a mile
-     0.30s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) 4.6 stars, $$$, 123 Main Street, Italian, 0.5 miles away
-     0.30s  user  발화 끝
-     0.31s  <ret> 발화 (turn9 첫 프레임)
-     0.46s  user  발화 시작: Mm-hmm.
+     0.00s  user  발화 시작: What does wool look like?
+     0.00s  <ret> 발화 (turn4 첫 프레임)
+     0.02s  agent 발화 시작: Well, that's a surprisingly tricky question, isn't it? It se
+     0.02s  user  발화 끝
+     0.09s  user  발화 시작: Yeah.
+     0.09s  agent 발화 끝
+     0.09s  user  발화 시작: Hmm. What *is* it made of, then?
+     0.09s  user  발화 끝
+     0.12s  agent 발화 시작: <ret> Wool comes from the fleece of animals—sheep most commo
+     0.12s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Wool is the textile fiber obtained from sheep and other animals, inclu
+     0.12s  user  발화 끝
+     0.20s  user  발화 시작: Is it warm?
+     0.20s  agent 발화 끝
+     0.21s  agent 발화 시작: It's known for its warmth and softness. It’s a lovely materi
+     0.21s  user  발화 끝
+     0.27s  user  발화 시작: What about…different colors?
+     0.27s  agent 발화 끝
+     0.28s  agent 발화 시작: Wool can be dyed almost any color imaginable—
+     0.28s  user  발화 끝
+     0.31s  user  발화 시작: …but what’s the *natural* color?
+     0.31s  agent 발화 끝
+     0.33s  agent 발화 시작: Ah, a very good point! Naturally, sheep’s wool comes in shad
+     0.33s  user  발화 끝
+     0.35s  <ret> 발화 (turn19 첫 프레임)
+     0.40s  user  발화 시작: Black wool? Really?
+     0.40s  agent 발화 끝
+     0.41s  agent 발화 시작: Indeed. Certain breeds produce quite dark fleece. It's a lov
+     0.41s  user  발화 끝
+     0.46s  user  발화 시작: Yeah.
      0.46s  agent 발화 끝
-     0.47s  user  발화 시작: [laugh] That’s… unusual.
-     0.47s  user  발화 끝
-     0.49s  agent 발화 시작: It does sound a little mysterious, doesn’t it? Perhaps a hid
-     0.49s  user  발화 끝
-     0.58s  user  발화 시작: Maybe. What’s the weather like right now?
+     0.46s  agent 발화 시작: It's fascinating how much variation there is, isn't it? The 
+     0.46s  user  발화 끝
+     0.58s  user  발화 시작: Is it itchy? I always thought wool was itchy.
      0.58s  agent 발화 끝
-     0.63s  agent 발화 시작: <ret> It’s a lovely 24.0 degrees Celsius with clear skies an
-     0.63s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) 24.0°C, humidity 68%, wind 3.2 km/h, clear skies.
-     0.63s  user  발화 끝
-     0.81s  user  발화 시작: It does sound nice. Thanks, Sear.
-     0.81s  agent 발화 끝
-     0.85s  agent 발화 시작: You’re very welcome! It’s my pleasure to help you discover l
-     0.85s  user  발화 끝
+     0.61s  agent 발화 시작: It can be, for some people—that depends on the fineness of t
+     0.61s  user  발화 끝
+     0.72s  user  발화 시작: Yeah.
+     0.72s  agent 발화 끝
+     0.72s  user  발화 시작: So merino is the good stuff?
+     0.72s  user  발화 끝
+     0.75s  agent 발화 시작: <ret> Yes, merino is often considered the gold standard—it’s
+     0.75s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: Merino wool is known for its softness, fineness, and crimp, making it 
+     0.75s  user  발화 끝
+     0.87s  user  발화 시작: Yeah.
+     0.87s  agent 발화 끝
+     0.87s  user  발화 시작: That makes sense. Okay, last question…can you get sweaters m
+     0.87s  user  발화 끝
+     0.92s  agent 발화 시작: Wool is a very popular choice for sweaters, scarves, and all
+     0.92s  user  발화 끝
      1.00s  agent 발화 끝

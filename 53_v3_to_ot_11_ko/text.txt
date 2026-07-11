@@ -1,86 +1,87 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 당신은 라리스이며, 양육 및 가족 시간과 관련하여 사람들을 돕는 사려 깊고 부드러운 목소리의 상담가입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 따뜻하고 세심한 상담사 주난입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "시담",
+    "name": "소온",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-05-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-27",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-14",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-11-06",
+      "date": "2026-05-16",
       "category": "home",
-      "text": "User's home address is 서울 종로구 세종대로 175."
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     },
     {
-      "date": "2025-06-04",
+      "date": "2026-02-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-01-25",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-10-03",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-06-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-17",
-      "title": "Planning a birthday dinner",
+      "date": "2025-12-01",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-06-25",
-      "title": "Researching a used car",
+      "date": "2025-09-29",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 그 노래… “Show Me the Way to Amarillo” 부른 사람 누구였죠?
-[  3.61s][moshi] ⟨ret@3.37s⟩ ⟦⚡SPAN@3.61s: Howard Greenfield co-wrote the song "Show Me the Way to Amarillo" with Charles Strouse.⟧ “Show Me the Way to Amarillo”는 하워드 그린필드 씨가 찰스 스트라우스 씨와 함께 작사하셨답니다.
-[  5.89s][user ] «backchannel» 네.
-[  9.80s][user ] 아, 그렇군요. 그분 다른 노래도 아세요?
-[ 12.66s][moshi] 하워드 그린필드 씨는 정말 많은 곡을 작사하셨어요.
-[ 14.40s][user ] «backchannel» 맞아요.
-[ 16.67s][user ] 혹시… 그분이 한국 노래도 ⟨ret@18.98s⟩ 작사했나요?
-[ 19.30s][moshi] ⟦⚡SPAN@19.30s: (no information found)⟧ 죄송하지만, 하워드 그린필드 씨가 한국 노래를 작사했다는 정보는 찾을 수 없었어요.
-[ 25.15s][user ] 아… 그렇군요. 그럼, 그분이 작사한 노래 중에 제일 유명한 건 ⟨ret@29.62s⟩ 뭐예요?
-[ 29.93s][moshi] ⟦⚡SPAN@29.94s: Howard Greenfield's most famous song is "Hound Dog," originally recorded by Big Mama Thornton in 1952.⟧ 하워드 그린필드 씨가 작사한 노래 중 가장 유명한 건 천구백오십이년에 빅 마마 손튼 씨가 처음 녹음한 “Hound Dog”이에요.
-[ 33.99s][user ] «backchannel» 그렇죠.
-[ 37.84s][user ] “Hound Dog”요? 엘비스 프레슬리도 불렀잖아요? —
-[ 41.25s][user ] …그 노래 엘비스 프레슬리는 언제 불렀어요?
-[ 43.78s][moshi] ⟨ret@43.70s⟩ ⟦⚡SPAN@43.78s: Elvis Presley recorded "Hound Dog" in 1956, and it became one of his signature songs.⟧ 엘비스 프레슬리 씨는 천구백오십육년에 “Hound Dog”를 녹음하셨고, 그 노래는 엘비스 씨의 대표곡이 되었답니다.
-[ 46.59s][user ] «backchannel» 정말요?
-[ 51.48s][moshi] 두 분 모두 훌륭한 가수를 통해 많은 사랑을 받은 노래인 것 같아요.
-[ 55.34s][user ] 그쵸. 라리스 씨는 노래 좋아하세요?
-[ 58.01s][moshi] 저는 사람들의 마음을 움직이는 노래를 듣는 걸 좋아해요. 음악은 위로가 되기도 하니까요.
-[ 63.74s][user ] 맞아요. 저도 그래요. 힘든 일이 있을 때 노래를 들으면 마음이 편안해져요.
-[ 68.04s][moshi] 힘들 때 음악에 기대는 건 정말 좋은 방법인 것 같아요. 마음을 다스리는 데 도움이 될 수 있거든요.
+[  0.00s][user ] 중국 내전에서 맞붙었던 양쪽 세력은 무엇이었나요?
+[  3.35s][moshi] ⟨ret@3.11s⟩ ⟦⚡SPAN@3.35s: The Chinese Civil War was fought between the Kuomintang-led Republic of China and the Chinese Communist Party.⟧ 중국 내전은 국민당이 이끄는 중화민국과 중국 공산당 사이에서 벌어졌습니다.
+[  5.98s][user ] «backchannel» 네.
+[  8.52s][user ] 아, 그렇군요.
+[  9.74s][moshi] 새로운 도시에 정착하시는 분들이 가장 어려워하는 점이 뭔지 여쭤봐도 될까요?
+[ 12.24s][user ] «backchannel» 네네.
+[ 15.63s][user ] 음… 뭐랄까, 괜찮은 동네를 찾는 게 제일 어렵죠.
+[ 19.37s][moshi] ⟨ret@19.07s⟩ 동네를 ⟦⚡SPAN@20.11s: Gangnam-gu is considered one of the most affluent districts of Seoul, known for its high-end shopping and ente⟧ 찾는 게 어려우시다고 하셨죠. 강남구는 서울에서 가장 부유한 지역 중 하나로, 고급 쇼핑과 엔터테인먼트로 유명합니다.
+[ 27.39s][user ] 강남구… 거기는 집값이 비싼가요? ⟨ret@29.57s⟩
+[ 29.89s][moshi] ⟦⚡SPAN@29.89s: (tool result) Found 123 houses in Gangnam-gu, average price ₩2,500,000,000.⟧ 강남구에는 현재 백이십삼채의 매물이 있고, 평균 가격은 이십오억 원입니다.
+      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area": "Gangnam-gu"}}
+[ 35.09s][user ] 이십오억 원이라니, 정말 비싸네요.
+[ 37.56s][moshi] 다른 지역도 한번 알아보실까요? 좀 더 합리적인 가격대의 동네도 많습니다.
+[ 40.23s][user ] «backchannel» 아.
+[ 43.54s][user ] 이번 주 토요일에 강남구 말고 다른 동네를 좀 둘러보고 싶어요.
+[ 47.43s][moshi] 이번 주 토요일에 다른 동네를 둘러보시겠군요. 제가 몇 군데 추천해 드릴까요?

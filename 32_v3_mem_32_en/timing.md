@@ -4,104 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Ivy",
+#     "name": "Olivia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-12",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-02",
-#       "category": "home",
-#       "text": "User's home address is 386 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-08-03",
+#       "date": "2026-04-18",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "home",
+#       "text": "User's home address is 139 Birch Road."
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-30",
+#       "date": "2026-06-04",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, well, I'm a bit stressed about | S2 Right. And I’m gluten-free, do you | S3 Oh, Kikunoi sounds fancy. | S4 Shoraian sounds good. I'm also all
 
-     0.00s  agent 발화 시작: Hi Ivy, I'm Klioon. It's lovely to meet you. How are you fee
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.07s  user  발화 시작: Um, well, I'm a bit stressed about my trip to Kyoto.
-     0.07s  agent 발화 끝
-     0.12s  agent 발화 시작: It’s perfectly normal to feel that way when planning somethi
-     0.12s  user  발화 끝
-     0.20s  user  발화 시작: I was wondering if you remembered when I said I was planning
-     0.20s  agent 발화 끝
-     0.27s  agent 발화 시작: <ret> Yes, I do recall you mentioning your plans for a trip 
-     0.27s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: [2025-08-03] User is planning a trip to Kyoto in December.
-     0.27s  user  발화 끝
-     0.31s  <ret> 발화 (turn6 첫 프레임)
-     0.35s  user  발화 시작: Right. And I’m gluten-free, do you remember that?
+     0.00s  agent 발화 시작: Hi Olivia, I'm Los! It's so lovely to meet you.
+     0.09s  user  발화 시작: Uh-huh.
+     0.09s  agent 발화 끝
+     0.10s  user  발화 시작: Oh, hello! That sounds…nice. Um, I was just thinking about m
+     0.10s  user  발화 끝
+     0.15s  <ret> 발화 (turn3 첫 프레임)
+     0.23s  agent 발화 시작: <ret> You mentioned you're planning a trip to Switzerland in
+     0.23s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: [2026-04-18] User is planning a trip to Switzerland in October.
+     0.23s  user  발화 끝
+     0.35s  user  발화 시작: Uh-huh.
      0.35s  agent 발화 끝
-     0.37s  <ret> 발화 (turn9 첫 프레임)
-     0.39s  agent 발화 시작: <ret> I have a note that you follow a gluten-free diet. That
-     0.39s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: [2025-08-10] User is gluten-free.
-     0.39s  user  발화 끝
-     0.48s  user  발화 시작: Yeah.
-     0.48s  agent 발화 끝
-     0.48s  user  발화 시작: It is. I’m trying to find some good restaurants there.
-     0.48s  user  발화 끝
-     0.49s  <ret> 발화 (turn16 첫 프레임)
-     0.53s  agent 발화 시작: <ret> I found three restaurants in Kyoto: Kikunoi, Honke Owa
-     0.53s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Restaurants found: Kikunoi (Japanese, $$$), Honke Owariy
-     0.53s  user  발화 끝
-     0.59s  user  발화 시작: Oh, Kikunoi sounds fancy.
-     0.59s  agent 발화 끝
-     0.61s  agent 발화 시작: —it is quite renowned, known for its traditional Kaiseki cui
-     0.61s  user  발화 끝
-     0.61s  <ret> 발화 (turn13 첫 프레임)
-     0.67s  user  발화 시작: …do they have gluten-free options?
-     0.67s  agent 발화 끝
-     0.69s  agent 발화 시작: <ret> I found two restaurants with gluten-free options: Shor
-     0.69s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Restaurants found: Shoraian (Japanese, $$), Towzen (Japa
-     0.69s  user  발화 끝
-     0.77s  user  발화 시작: Yeah.
-     0.77s  agent 발화 끝
-     0.77s  user  발화 시작: Shoraian sounds good. I'm also allergic to pollen, right?
-     0.77s  user  발화 끝
-     0.81s  agent 발화 시작: <ret> Yes, you are allergic to pollen. December might be a g
-     0.81s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: [2025-11-12] User is allergic to pollen.
-     0.81s  user  발화 끝
-     0.91s  user  발화 시작: That’s good to know. Thank you, Klioon.
-     0.91s  agent 발화 끝
-     0.94s  agent 발화 시작: You’re very welcome, Ivy. Remember, planning can be stressfu
-     0.94s  user  발화 끝
+     0.36s  user  발화 시작: Yes! I was wondering…do you remember if I said anything abou
+     0.36s  user  발화 끝
+     0.43s  <ret> 발화 (turn6 첫 프레임)
+     0.51s  agent 발화 시작: <ret> I have a note from a past chat about a dentist appoint
+     0.51s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: [2025-08-17] Past chat — Booked a dentist appointment: asked for an ea
+     0.51s  user  발화 끝
+     0.68s  <ret> 발화 (turn8 첫 프레임)
+     0.72s  user  발화 시작: Oh, right. Never mind that then. What’s the weather like in 
+     0.72s  agent 발화 끝
+     0.84s  agent 발화 시작: <ret> Right now in London, it's 23.0°C with 74% humidity and
+     0.84s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+     0.84s  user  발화 끝
      1.00s  agent 발화 끝

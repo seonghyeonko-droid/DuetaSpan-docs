@@ -1,86 +1,94 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Laris, a thoughtful and soft-spoken counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Zunan, a warm and attentive counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Aiden",
+    "name": "Rosa",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-05-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-27",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-14",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-11-06",
+      "date": "2026-05-16",
       "category": "home",
-      "text": "User's home address is 505 Pine Court."
+      "text": "User's home address is 986 Cedar Lane."
     },
     {
-      "date": "2025-06-04",
+      "date": "2026-02-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-01-25",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-10-03",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-06-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-25",
-      "title": "Researching a used car",
+      "date": "2025-12-01",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-10-23",
-      "title": "Apartment hunting downtown",
+      "date": "2025-09-29",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who wrote the song “Show Me the Way ⟨ret@2.53s⟩ to Amarillo”?
-[  2.92s][moshi] «interrupted» ⟦⚡SPAN@2.93s: Howard Greenfield co-wrote "Show Me the Way to Amarillo" with Burt Bacharach, and it was originally released i⟧ That song was written by Howard Greenfield, along with Burt Bacharach—
-[  7.69s][user ] «interrupts_prev» …was it a big hit when it first came out?
-[ 10.05s][moshi] It wasn't initially a major hit in 1968, but it gained popularity later.
-[ 16.07s][user ] Oh, interesting. What genre would you classify it as?
-[ 19.93s][moshi] It’s generally considered a pop song, with elements of country and easy listening.
-[ 22.50s][user ] «backchannel» Yeah.
-[ 25.77s][user ] I see. I’m trying to remember who covered it later on.
-[ 29.32s][moshi] ⟨ret@29.00s⟩ ⟦⚡SPAN@29.32s: Tony Christie released a successful cover of "Show Me the Way to Amarillo" in 1971, reaching number one in the⟧ Tony Christie had a very successful cover of that song, reaching number one in the UK in 1971.
-[ 34.85s][user ] «backchannel» Oh.
-[ 37.16s][user ] Wow, that’s quite a gap in time! Was it different than the original?
-[ 41.12s][moshi] It was a more upbeat, orchestral arrangement than the original version.
-[ 43.07s][user ] «backchannel» Uh-huh.
-[ 45.93s][user ] That sounds nice. Do you know if he ever performed ⟨ret@48.85s⟩ it live?
-[ 49.08s][moshi] ⟦⚡SPAN@49.09s: (no information found)⟧ I’m afraid I don’t have information about specific live performances right now.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"event_name": "Tony Christie Show Me the Way to Amarillo"}}
-[ 55.22s][user ] Oh, that’s okay. Maybe I can look that up myself.
-[ 57.93s][moshi] It can be lovely to discover a song's history on your own. Sometimes, that journey feels more personal.
-[ 65.53s][user ] That’s true. I appreciate your help, Laris.
-[ 68.51s][moshi] It’s my pleasure to offer what I can. Music often connects us to cherished memories, doesn't it?
+[  0.00s][user ] Hi, I’m new to the city and feeling a little lost.
+[  3.22s][moshi] Welcome! It’s perfectly normal to feel that way when settling in.
+[  5.54s][user ] «backchannel» Right.
+[  7.63s][user ] That’s good to hear. Um, I was reading about Chinese history and got ⟨ret@12.46s⟩ confused.
+[ 12.68s][moshi] ⟦⚡SPAN@12.70s: The Chinese Civil War was fought between the Kuomintang-led Republic of China and the Communist Party of China⟧ That’s a common point of confusion, actually—the Chinese Civil War was fought between the Kuomintang-led Republic of China and the Communist Party of China.
+[ 21.40s][user ] So, the Republic of China… was one of the ⟨ret@24.99s⟩ sides?
+[ 25.30s][moshi] ⟦⚡SPAN@25.31s: The Republic of China, under the Kuomintang, held power in mainland China from 1928 until 1949.⟧ Yes, the Republic of China, under the Kuomintang, held power in mainland China from 1928 until 1949.
+[ 29.24s][user ] «backchannel» Wow.
+[ 33.02s][user ] And the other side was… the ⟨ret@35.35s⟩ Communists?
+[ 35.74s][moshi] ⟦⚡SPAN@35.75s: The Communist Party of China, led by Mao Zedong, sought to overthrow the Republic of China’s government.⟧ Exactly—the Communist Party of China, led by Mao Zedong, sought to overthrow the Republic of China’s government. It was a long and complex conflict, of course.
+[ 46.04s][user ] I see. Was it a really long war?
+[ 48.85s][moshi] ⟨ret@48.79s⟩ ⟦⚡SPAN@48.87s: The Chinese Civil War occurred intermittently from 1927 to 1949, with a major pause during World War II.⟧ It was a rather lengthy conflict, actually, occurring intermittently from 1927 to 1949, with a major pause during World War II.
+[ 53.49s][user ] «backchannel» Mm-hmm.
+[ 58.00s][user ] Wow, that *is* a long time.
+[ 60.61s][moshi] It certainly was. It’s a significant period in Chinese history, and understanding it can really help you connect with the city’s past.
+[ 68.68s][user ] You're right. I think I’ll look up some museums.
+[ 71.25s][moshi] ⟨ret@71.10s⟩ ⟦⚡SPAN@71.26s: (no information found)⟧ That’s a wonderful idea! I can help you find some museums nearby if you’d like.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {}}
+[ 75.92s][moshi] I'm sorry, I can't find attractions at the moment. My travel tools seem to be unavailable.
+[ 81.30s][user ] Oh, that’s okay. I can probably search for them myself.
+[ 83.90s][moshi] I can always assist with other things as you settle in—anything from finding restaurants to understanding local customs.
+[ 92.66s][user ] That sounds great, thanks. I might need help with restaurants later.
+[ 96.62s][moshi] I’m happy to help whenever you need it. Perhaps we can discuss your culinary preferences then, so I can offer some tailored recommendations?

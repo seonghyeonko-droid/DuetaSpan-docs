@@ -4,135 +4,151 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Sam",
+#     "name": "Kim",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-26",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-05-20",
+#       "category": "home",
+#       "text": "User's home address is 28 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
 #       "date": "2026-02-21",
-#       "category": "home",
-#       "text": "User's home address is 332 Cedar Lane."
-#     },
-#     {
-#       "date": "2025-12-23",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-02-08",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
+#       "date": "2026-01-07",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-06",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-10-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-20",
+#       "date": "2026-06-08",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 혹시 'Last of the Summer Wine | S2 아직도 방송하는 곳이 있을까 궁금하네요. | S3 혹시 그거 들으셨어요? | S4 페닌 웨이는 얼마나 긴 산책로인가요?
+# EXAMINER(FDB-v2) 단계: S1 동물보호법이 언제 만들어졌는지 궁금해. | S2 그 법은 연방 법이야? | S3 학대 신고하면 어떻게 해야 돼? | S4 나도 그거 좀 더 신경 쓰려고 노력 중이야. 가끔 힘들지만.
 
-     0.00s  user  발화 시작: 안녕하세요. 혹시 'Last of the Summer Wine'에서 월리 역을 맡은 배우가 누구였는지 아세요
-     6.00s  <ret> 발화 (turn1 첫 프레임)
-     6.31s  agent 발화 시작: <ret> 아, 그거 좋은 질문인데요! 조셉 글래드윈 배우가 'Last of the Summer Wine'에
-     6.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: Joseph Gladwin portrayed Wally Featherstone in the British sitcom Last
-     6.49s  user  발화 끝
-    13.49s  agent 발화 끝
-    13.53s  user  발화 시작: 네, 잘 아시네요. 음, 컴포는요?
-    16.15s  <ret> 발화 (turn3 첫 프레임)
-    16.53s  user  발화 끝
-    16.55s  agent 발화 시작: <ret> 빌 오웬 배우가 컴포 시몬즈 역을 맡았는데, 무려 서른한 시즌 동안 출연했대요— 정말 대단하네요!
-    16.55s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.41s]: Bill Owen played Compo Simmonds in all 31 series of Last of the Summer
-    23.92s  user  발화 시작: 정말 많은 에피소드네요.
-    23.96s  agent 발화 끝
-    25.76s  agent 발화 시작: 정말 그렇죠! 역할에 대한 헌신이 느껴지네요. 그런 열정에 감탄스러워요.
-    25.99s  user  발화 끝
-    31.46s  agent 발화 끝
-    31.53s  user  발화 시작: 아직도 방송하는 곳이 있을까 궁금하네요.
-    34.48s  <ret> 발화 (turn7 첫 프레임)
-    34.70s  agent 발화 시작: <ret> 지금은 BritBox에서 'Last of the Summer Wine'을 스트리밍할 수 있는 것 
-    34.72s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.49s]: Last of the Summer Wine is available to stream on BritBox.
-    34.91s  user  발화 끝
-    38.73s  user  발화 시작: BritBox, 알겠습니다. 그거 월 구독인가요?
-    39.20s  agent 발화 끝
-    42.26s  <ret> 발화 (turn9 첫 프레임)
-    42.65s  agent 발화 시작: <ret> 죄송하지만, 현재 BritBox 구독 요금제에 대한 자세한 정보를 찾을 수 없네요.
-    42.65s  user  발화 끝
-    42.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (no information found)
-    46.12s  user  발화 시작: 네.
-    46.62s  user  발화 끝
-    47.98s  user  발화 시작: 아.
-    48.10s  agent 발화 끝
-    48.75s  user  발화 끝
-    48.76s  agent 발화 시작: 혹시 웹사이트에서 직접 확인해 보시는 건 어떠세요? 원하시면 제가 찾아 드릴 수도 있어요.
-    52.84s  user  발화 시작: 예.
-    53.37s  user  발화 끝
-    54.46s  agent 발화 끝
-    54.92s  user  발화 시작: 혹시 그거 들으셨어요?
-    56.49s  user  발화 시작: 아니요, 괜찮아요. 오늘 홀머스퍼스의 날씨는 어떤가요?
-    56.66s  user  발화 끝
-    60.08s  <ret> 발화 (turn16 첫 프레임)
-    60.23s  agent 발화 시작: <ret> 지금 홀머스퍼스에서는 기온이 섭씨 18.3도이고 습도는 68퍼센트, 풍속은 시속 8.2킬로미터예요
-    60.24s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.48s]: (tool result) 18.3°C, humidity 68%, wind 8.2 km/h
-    60.32s  user  발화 끝
-    64.00s  user  발화 시작: 맞아요.
-    64.82s  user  발화 끝
-    68.51s  agent 발화 시작: 실제로 꽤 쾌적한 날씨인 것 같아요! 어쩌면 시골길을 산책하기에 완벽한 날씨일지도 모르겠네요?
-    68.71s  agent 발화 끝
-    75.37s  agent 발화 끝
-    75.68s  user  발화 시작: 그렇네요. 근처에 산책로 좀 찾아 주시겠어요?
-    78.34s  <ret> 발화 (turn20 첫 프레임)
-    78.65s  agent 발화 시작: <ret> 홀머스퍼스에는 페닌 웨이와 홀머스퍼스 순환 산책로를 포함하여 훌륭한 산책로가 많이 있답니다.
-    78.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Holmfirth has several walking routes, including the Penn
-    78.86s  user  발화 끝
-    82.09s  user  발화 시작: 네.
-    82.39s  user  발화 끝
-    86.11s  agent 발화 끝
-    86.44s  user  발화 시작: 페닌 웨이는 얼마나 긴 산책로인가요?
-    89.11s  <ret> 발화 (turn23 첫 프레임)
-    89.27s  agent 발화 시작: <ret> 페닌 웨이는 에데일에서 커크 예솔름까지 268마일(약 431킬로미터)에 달하는 국립 트레일인데— 
-    89.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: The Pennine Way is a National Trail in England, stretching 268 miles f
-    89.45s  user  발화 끝
-    99.35s  user  발화 시작: 와, 알겠습니다. 그럼 그건 아닌 것 같네요.
-    99.56s  agent 발화 끝
-   102.07s  user  발화 끝
-   102.41s  agent 발화 시작: 그렇다면 좀 더 관리하기 쉬운 홀머스퍼스 순환 산책로가 더 나은 시작점이 될 수도 있겠네요?
-   109.04s  agent 발화 끝
+     0.00s  user  발화 시작: 동물보호법이 언제 만들어졌는지 궁금해.
+     2.57s  <ret> 발화 (turn1 첫 프레임)
+     2.89s  agent 발화 시작: <ret> 음, 구월 이십칠일 천구백오십팔년이 그 법이 만들어진 날짜인데, 그 이후로 여러 번 수정됐어요.
+     2.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: The Animal Welfare Act was first passed on August 27, 1958, and has be
+     3.09s  user  발화 끝
+    10.30s  agent 발화 끝
+    10.35s  user  발화 시작: 아, 그렇구나. 그 법은 대체 뭘 하는 거야?
+    13.09s  agent 발화 시작: 그 법은 연구, 전시, 운송, 그리고 판매업체에서 동물을 사용할 때 동물의 복지 기준을 정하고 있어요.
+    13.25s  user  발화 끝
+    20.09s  user  발화 시작: 치킨 꺼냈어?
+    20.50s  agent 발화 끝
+    21.10s  user  발화 시작: …상하면 안 되니까.
+    21.33s  user  발화 끝
+    22.57s  agent 발화 시작: 미리 계획하는 습관은 정말 좋은 거 같아요. 나중에 스트레스를 줄여주거든요.
+    22.58s  user  발화 끝
+    25.45s  user  발화 시작: 어어.
+    26.26s  user  발화 끝
+    27.90s  user  발화 시작: 그 법은 연방 법이야?
+    27.99s  agent 발화 끝
+    29.13s  <ret> 발화 (turn9 첫 프레임)
+    29.37s  agent 발화 시작: <ret> 네, 맞아요. 미국 연방 법이고, 동물의 대우를 규제하는 법이에요.
+    29.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: The Animal Welfare Act is a United States federal law that regulates t
+    29.50s  user  발화 끝
+    31.82s  user  발화 시작: 음.
+    32.27s  user  발화 끝
+    33.62s  agent 발화 시작: 동물의 복지를 위해 특정 기준을 충족하도록 설계됐어요.
+    33.81s  agent 발화 끝
+    35.58s  user  발화 시작: 응.
+    36.03s  user  발화 끝
+    37.88s  agent 발화 끝
+    38.88s  user  발화 시작: 주 법은 어때? 그것도 있어?
+    41.20s  agent 발화 시작: 많은 주에서 연방 법보다 더 엄격한 동물 복지 법을 가지고 있어요.
+    41.23s  user  발화 끝
+    46.30s  agent 발화 끝
+    46.53s  user  발화 시작: 흥미롭네. 캘리포니아 주에 대한 정보 좀 찾아줄래?
+    50.61s  <ret> 발화 (turn16 첫 프레임)
+    50.69s  agent 발화 시작: <ret> 캘리포니아 주는 농장 동물, 펫샵, 동물 실험 등 다양한 분야를 포괄하는 법이 아주 잘 되어 있어
+    50.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: (tool result) California’s animal welfare laws are among the most comp
+    50.70s  user  발화 끝
+    58.64s  user  발화 시작: 와, 그거…꽤 포괄적이네.
+    58.70s  agent 발화 끝
+    61.75s  agent 발화 시작: 그것은 주 내 동물 복지에 대한 강한 의지를 반영하는 것이에요.
+    61.78s  user  발화 끝
+    64.06s  user  발화 시작: 그래.
+    64.65s  user  발화 끝
+    66.20s  user  발화 시작: 학대 신고하면 어떻게 해야 돼?
+    66.24s  agent 발화 끝
+    67.58s  <ret> 발화 (turn21 첫 프레임)
+    67.98s  agent 발화 시작: <ret> 캘리포니아 주에서는 동물 학대에 대해 최대 1년의 징역형과 이만 달러의 벌금이 부과될 수 있어요.
+    67.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: In California, animal cruelty is a misdemeanor, punishable by up to on
+    68.22s  user  발화 끝
+    71.94s  user  발화 시작: 응.
+    72.53s  user  발화 끝
+    74.84s  agent 발화 끝
+    75.16s  user  발화 시작: 알아두면 좋네. 근처에 수의사 찾는 방법은?
+    78.91s  user  발화 끝
+    79.06s  <ret> 발화 (turn24 첫 프레임)
+    79.13s  agent 발화 시작: <ret> 캘리포니아 동물 의료 센터가 근처에 있는데, 로스앤젤레스 메인 스트리트 123번지에 있어요.
+    79.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Veterinarian: Animal Medical Center of California, 123 M
+    85.57s  agent 발화 끝
+    85.81s  user  발화 시작: 좋아! 전화번호는?
+    87.70s  user  발화 끝
+    87.83s  agent 발화 시작: 213-555-1212예요.
+    89.67s  user  발화 시작: 응.
+    90.16s  user  발화 끝
+    91.76s  agent 발화 끝
+    93.45s  user  발화 시작: 고마워. 정말 도움이 됐어.
+    95.64s  agent 발화 시작: 천만에요. 정보를 잘 아는 것이 책임감 있는 반려동물 소유의 중요한 단계예요.
+    95.80s  user  발화 끝
+    97.41s  user  발화 시작: 맞아.
+    98.04s  user  발화 끝
+   101.58s  user  발화 시작: 나도 그거 좀 더 신경 쓰려고 노력 중이야. 가끔 힘들지만.
+   101.62s  agent 발화 끝
+   105.28s  user  발화 끝
+   105.30s  agent 발화 시작: 물론 노력은 필요하지만, 작은 변화라도 동물의 삶에 큰 영향을 줄 수 있어요.
+   107.69s  user  발화 시작: 응.
+   108.27s  user  발화 끝
+   111.27s  agent 발화 끝
+   111.41s  user  발화 시작: 아…맞아. 버스터 검진 예약해야겠다.
+   114.66s  agent 발화 시작: 정말 좋은 생각이에요. 예약 가능한 시간을 찾아 드릴까요?
+   114.83s  user  발화 끝
+   118.57s  user  발화 시작: 아니, 괜찮아. 직접 전화할게.
+   118.74s  agent 발화 끝
+   121.02s  user  발화 끝
+   121.02s  agent 발화 시작: 오늘 정보를 얻는 데 도움을 드릴 수 있어서 기뻐요.
+   124.25s  agent 발화 끝
+   126.11s  user  발화 시작: 그래, 다시 한번 고마워, 비아야.
+   128.74s  user  발화 끝
+   129.04s  agent 발화 시작: 천만에요. 반려동물의 복지를 우선시하는 것은 정말 멋진 일이에요.
+   134.46s  agent 발화 끝

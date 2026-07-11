@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "소서",
+#     "name": "민은",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,50 +12,74 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-17",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-12-05",
+#       "date": "2025-12-22",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-11-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-12-13",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2025-09-19",
+#       "date": "2025-12-02",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-08",
-#       "title": "Researching a used car",
+#       "date": "2026-06-14",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-28",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 쇼크 탑 벨기에안…
-     0.18s  user  발화 시작: …위트 맥주는 어떤 스타일의 맥주야?
-     0.18s  user  발화 끝
-     0.25s  <ret> 발화 (turn2 첫 프레임)
-     0.41s  agent 발화 시작: <ret> 쇼크 탑 벨기에안 위트 맥주는 오렌지 껍질과 고수를 넣어 만든 미국식 밀 맥주랍니다.
-     0.41s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.59s]: Shock Top Belgian Wheat is an American-style wheat ale brewed with ora
-     0.41s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 'Nothing's Gonna Stop Us Now' 노래 부른 사람이 누구예요?
+     0.32s  <ret> 발화 (turn1 첫 프레임)
+     0.48s  agent 발화 시작: <ret> 그 노래는 천구백팔십오년에 스타쉽의 그레이스 슬릭이 불렀어요, 여러 나라에서 일위를 했답니다.
+     0.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.52s]: Grace Slick sang "Nothing's Gonna Stop Us Now" with Starship in 1985, 
+     0.48s  user  발화 끝
      1.00s  agent 발화 끝

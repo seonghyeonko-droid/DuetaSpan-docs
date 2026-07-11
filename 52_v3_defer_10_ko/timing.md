@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "다은",
+#     "name": "정연",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,132 +12,133 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
+#       "date": "2026-03-10",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-03-01",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-09",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-03",
+#       "date": "2026-02-23",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2025-09-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-02-05",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-04",
-#       "title": "Researching a used car",
+#       "date": "2025-11-23",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 영화 예매 좀 해 줄 수 있어? | S2 와, 진짜 고마워. | S3 구십이퍼센트라니, 엄청 높네. 그럼 예약 좀 해 줘. | S4 베개 높이라…
+# EXAMINER(FDB-v2) 단계: S1 해리 스타일스 워터멜론 슈가 틀어줘, 파티오에서. | S2 아, 맞아. 근데 프리아, 혹시… 어제 저녁에 뭐 먹었어? | S3 응, 그래야지. 근데 프리아, 혹시 내가 칠월 십오일에 중요한 | S4 정말 그래. 아, 프리아, 오늘 저녁에 영화 볼까 하는데, 볼
 
-     0.00s  user  발화 시작: 이번 주 토요일에 영화 예매 좀 해 줄 수 있어?
+     0.00s  user  발화 시작: 해리 스타일스 워터멜론 슈가 틀어줘, 파티오에서.
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn5 첫 프레임)
      0.00s  <ret> 발화 (turn7 첫 프레임)
-     0.01s  <ret> 발화 (turn4 첫 프레임)
-     0.03s  <ret> 발화 (turn16 첫 프레임)
-     0.04s  agent 발화 시작: 어떤 영화를 보고 싶으세요?
-     0.04s  user  발화 끝
-     0.06s  user  발화 시작: 음… 요즘 제일 인기…
-     0.06s  agent 발화 끝
-     0.07s  user  발화 시작: …있는 거 아무거나 괜찮아.
-     0.07s  user  발화 끝
-     0.09s  agent 발화 시작: <ret> 요즘 제일 인기 있는 영화는 크리스토퍼 놀란 감독의 SF 드라마 "인터스텔라"예요.
-     0.09s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) The most popular movie currently playing is "인터스텔라", a s
-     0.09s  user  발화 끝
-     0.13s  user  발화 시작: 음.
-     0.13s  agent 발화 끝
-     0.13s  user  발화 시작: 오, 그거 좋지. 그럼 이번 주 토요일 저녁 일곱시에 예매해 줘.
-     0.13s  user  발화 끝
-     0.18s  agent 발화 시작: <ret> "인터스텔라" 칠월 십일일 저녁 일곱시, A12와 A13 좌석으로 예매 완료되었고, 확인 번호는 
-     0.18s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Reservation confirmed for "인터스텔라" on July 11, 2026, at 7
-     0.18s  user  발화 끝
-     0.25s  user  발화 시작: 와, 진짜 고마워.
-     0.25s  agent 발화 끝
-     0.26s  agent 발화 시작: 천만에요. 혹시 다른 영화도 알아봐 드릴까요?
-     0.26s  user  발화 끝
-     0.28s  user  발화 시작: 아니, 됐어. 잠 좀 잘 자고 싶어서…
-     0.28s  agent 발화 끝
-     0.31s  agent 발화 시작: 수면 환경을 개선하는 데 도움을 드릴 수 있어요.
-     0.31s  user  발화 끝
-     0.34s  user  발화 시작: 응.
-     0.34s  agent 발화 끝
-     0.35s  user  발화 시작: 어떻게?
+     0.02s  agent 발화 시작: <ret> 네, 해리 스타일스의 워터멜론 슈가를 파티오에서 틀어 드릴게요. 신나는 노래죠?
+     0.02s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) Playing "Watermelon Sugar" by Harry Styles on the patio.
+     0.02s  user  발화 끝
+     0.05s  user  발화 시작: 응, 완전 좋아. 근데 프리아, 다음 주 화요일에 김민지 씨랑 저녁 약속 잡고 싶은데, 괜찮은 레스토랑 알아
+     0.05s  agent 발화 끝
+     0.11s  agent 발화 시작: 다음 주 화요일 저녁 식사 장소를 찾아 드릴게요. 김민지 씨와 즐거운 시간 보내세요.
+     0.11s  user  발화 끝
+     0.14s  user  발화 시작: 고마워. 아, 그리고 이번 주 금요일 날씨 어때?
+     0.14s  agent 발화 끝
+     0.17s  agent 발화 시작: <ret> 이번 주 금요일 날씨는 섭씨 이십육 점 오도, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터
+     0.17s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) The weather on Friday, July 11, 2026 will be 26.5°C, hum
+     0.17s  user  발화 끝
+     0.22s  user  발화 시작: 으음… 잠깐만, 지난달에 제가 적금 넣었던 거 기억나?
+     0.22s  agent 발화 끝
+     0.25s  agent 발화 시작: <ret> [이 공 이 육 공 칠 공 일] 적금 오십만 원 넣기로 했어.
+     0.25s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: [2026-07-01] 적금 50만 원 넣기로 했어.
+     0.25s  user  발화 끝
+     0.27s  <ret> 발화 (turn14 첫 프레임)
+     0.29s  agent 발화 시작: 네, 칠월 일일에 오십만 원 적금에 넣기로 하셨던 거 기억하고 있어요.
+     0.29s  agent 발화 끝
+     0.32s  user  발화 시작: 그래.
+     0.32s  agent 발화 끝
+     0.32s  user  발화 시작: 아, 맞아. 근데 프리아, 혹시… 어제 저녁에 뭐 먹었어?
+     0.32s  user  발화 끝
+     0.34s  <ret> 발화 (turn19 첫 프레임)
+     0.35s  <ret> 발화 (turn24 첫 프레임)
+     0.35s  agent 발화 시작: 저는 음식을 먹지 않아서 어제 저녁은… 특별히 없었어요. 대신 사용자님께 좋은 정보를 드릴 수 있어서 기뻤답
      0.35s  user  발화 끝
-     0.35s  agent 발화 시작: 편안한 잠자리를 위한 몇 가지 팁을 알려드릴게요. —
-     0.35s  user  발화 끝
-     0.38s  user  발화 시작: … 잠깐만, 지금 내 수면 패턴이 어떤지 먼저 알아볼 수 있을까?
-     0.38s  agent 발화 끝
-     0.43s  agent 발화 시작: <ret> 수면 패턴을 분석해 드리겠습니다.
-     0.43s  ⚡SPAN 주입 [d'=0.02s / d_lead=0.02s]: (tool result) We found a sleep analysis service offered by Dr. Lee Ji-
+     0.40s  user  발화 시작: 응.
+     0.40s  agent 발화 끝
+     0.40s  user  발화 시작: [surprised] 어… 그렇구나. 혹시 서울에서 가장 유명한 빵집 좀 찾아줄 수 있어?
+     0.40s  user  발화 끝
+     0.43s  agent 발화 시작: <ret> 서울에서 가장 유명한 빵집은 파리바게트예요. 강남구 강남대로 백이십삼에 위치하고 있으며, 평점은 
+     0.43s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) The most famous bakery in Seoul is “Paris Baguette”, wit
      0.43s  user  발화 끝
-     0.44s  agent 발화 시작: 서울 수면 클리닉의 이지훈 선생님께서 개인 맞춤형 수면 계획을 전문으로 하는 수면 분석 서비스를 제공하고 계
-     0.44s  agent 발화 끝
-     0.51s  user  발화 시작: 어.
-     0.51s  agent 발화 끝
-     0.51s  agent 발화 시작: 이 선생님은 수면의 질을 높이는 데 아주 뛰어난 전문가이십니다. 지난 십년간 오백명이 넘는 환자분들을 도왔고
+     0.48s  user  발화 시작: 맞아.
+     0.48s  agent 발화 끝
+     0.48s  user  발화 시작: 파리바게트? 아, 거기 가봐야겠다. 이번 주 토요일에 갈까?
+     0.48s  user  발화 끝
+     0.51s  <ret> 발화 (turn27 첫 프레임)
+     0.51s  agent 발화 시작: 이번 주 토요일은 칠월 십일일이네요. 파리바게트에서 맛있는 빵 많이 드세요!
      0.51s  user  발화 끝
-     0.52s  <ret> 발화 (turn27 첫 프레임)
-     0.54s  <ret> 발화 (turn22 첫 프레임)
-     0.59s  user  발화 시작: 응.
-     0.59s  agent 발화 끝
-     0.59s  user  발화 시작: 구십이퍼센트라니, 엄청 높네. 그럼 예약 좀 해 줘.
-     0.59s  user  발화 끝
-     0.62s  agent 발화 시작: <ret> 이지훈 선생님과의 수면 분석 예약이 칠월 십오일 오전 열시에 확정되었고, 확인 번호는 사 오 육 
-     0.62s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Appointment with Dr. Lee Ji-hoon booked for July 15, 202
-     0.62s  user  발화 끝
-     0.70s  user  발화 시작: 와.
-     0.70s  agent 발화 끝
-     0.70s  user  발화 시작: 알았어. 고마워.
-     0.70s  user  발화 끝
-     0.71s  agent 발화 시작: 좋은 꿈 꾸세요. 혹시 수면 음악을 추천해 드릴까요?
-     0.71s  user  발화 끝
-     0.74s  user  발화 시작: 음… 좋아, 잔잔한 거 아무거나 틀어줘.
-     0.74s  agent 발화 끝
-     0.76s  agent 발화 시작: <ret> 브라이언 이노의 잔잔한 앰비언트 트랙 "Evening Calm"을 재생합니다.
-     0.76s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) Now playing a calming ambient track titled "Evening Calm
-     0.76s  user  발화 끝
-     0.79s  user  발화 시작: 응.
-     0.79s  agent 발화 끝
-     0.80s  user  발화 시작: 아, 너무 좋다.
-     0.80s  user  발화 끝
-     0.81s  agent 발화 시작: 편안하게 휴식을 취하세요. 혹시 베개 높이를 조절하는 방법이 궁금하신가요?
-     0.81s  user  발화 끝
-     0.85s  user  발화 시작: 베개 높이라…
-     0.85s  agent 발화 끝
-     0.85s  agent 발화 시작: 일반적으로 옆으로 누울 때는 어깨 높이, 똑바로 누울 때는 십센티미터 정도가 적절하다고 합니다. —
-     0.85s  user  발화 끝
-     0.91s  user  발화 시작: 아, 그렇구나.
-     0.91s  agent 발화 끝
-     0.92s  agent 발화 시작: 너무 높거나 낮은 베개는 목과 어깨에 부담을 줄 수 있습니다.
-     0.92s  user  발화 끝
-     0.96s  user  발화 시작: 고마워. 덕분에 좀 안심되네.
+     0.54s  user  발화 시작: 응, 그래야지. 근데 프리아, 혹시 내가 칠월 십오일에 중요한 회의가 있는 거 기억해?
+     0.54s  agent 발화 끝
+     0.58s  agent 발화 시작: <ret> 네, 칠월 십오일 오후 두시에 중요한 회의가 있다고 메모해 뒀어요. 잊지 않도록 미리 알림 설정해
+     0.58s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-07-08] 7월 15일 오후 2시에 중요한 회의가 있다고 적어 뒀어.
+     0.58s  user  발화 끝
+     0.58s  <ret> 발화 (turn29 첫 프레임)
+     0.62s  user  발화 시작: 진짜?
+     0.62s  agent 발화 끝
+     0.63s  user  발화 시작: 음… 알림은 됐어. 근데 프리아, 혹시 나 요즘 너무 돈을 많이 쓰는 것 같아.
+     0.63s  user  발화 끝
+     0.67s  agent 발화 시작: 돈을 많이 쓰시는 것 같아 걱정이시군요. 예산을 세우고 지출을 관리하는 걸 도와드릴 수 있어요. 함께 계획을
+     0.67s  user  발화 끝
+     0.72s  user  발화 시작: 좋아, 한번 해보자. 근데 프리아, 오늘이 몇 월 며칠이지?
+     0.72s  agent 발화 끝
+     0.75s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 오십이분이에요. 시간이 정말 빠르네요.
+     0.75s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) It is Friday, July 10, 2026 at 3:52 PM in Asia/Seoul rig
+     0.75s  user  발화 끝
+     0.78s  user  발화 시작: 음.
+     0.78s  agent 발화 끝
+     0.78s  user  발화 시작: 정말 그래. 아, 프리아, 오늘 저녁에 영화 볼까 하는데, 볼만한 영화 추천해 줄 수 있어?
+     0.78s  user  발화 끝
+     0.83s  agent 발화 시작: <ret> 현재 평점이 가장 높은 영화는 인사이드 아웃 이인데, 이천삼백사십오개의 리뷰에서 팔 점 오점을 받
+     0.83s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) The highest-rated movie currently playing is "Inside Out
+     0.83s  user  발화 끝
+     0.88s  user  발화 시작: 인사이드 아웃 이? 오, 괜찮다. 그럼 예매해줘.
+     0.88s  agent 발화 끝
+     0.90s  agent 발화 시작: <ret> 네, 인사이드 아웃 이 오늘 저녁 일곱시에 메가박스 강남에서 두석 예매 완료되었습니다. 확인 번호
+     0.90s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Two tickets for "Inside Out 2" at 7:00 PM on July 10, 20
+     0.90s  user  발화 끝
+     0.96s  user  발화 시작: 진짜?
      0.96s  agent 발화 끝
-     0.97s  agent 발화 시작: 언제든 편하게 말씀해 주세요. 편안한 밤 보내세요.
-     0.97s  user  발화 끝
+     0.96s  user  발화 시작: 고마워, 프리아. 덕분에 오늘 저녁은 즐거울 것 같아.
+     0.96s  user  발화 끝
+     0.98s  agent 발화 시작: 저도 사용자님께서 즐거운 시간 보내시길 바랍니다.
+     0.98s  user  발화 끝
      1.00s  agent 발화 끝

@@ -1,64 +1,46 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Oriomi, a warm and attentive life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Drena, a curious and validating supportive advisor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Kim",
+    "name": "Rowan",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
+      "date": "2026-06-28",
       "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-03-23",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-05-27",
+      "category": "home",
+      "text": "User's home address is 957 Pine Court."
     },
     {
-      "date": "2026-02-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-09-28",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-06-14",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-11",
+      "date": "2025-08-26",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-06-28",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-25",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-14",
+      "date": "2026-01-10",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -66,26 +48,58 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-05",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-19",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you happen to know Sarah Miller's ⟨ret@1.92s⟩ phone number?
-[  2.32s][moshi] ⟦⚡SPAN@2.32s: (no information found)⟧ I’ve checked everywhere, but I couldn’t find a phone number for Sarah Miller. It seems that information isn’t publicly available.
-      CALL: {"function": "search", "arguments": {"query": "Sarah Miller phone number"}}
-[  8.94s][user ] Oh, okay. Well, what about the weather in Seoul ⟨ret@12.09s⟩ last Tuesday?
-[ 12.48s][moshi] ⟦⚡SPAN@12.49s: (no information found)⟧ I’m sorry, I can only provide current weather information, not historical data. I wish I could help with that!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-08"}}
-[ 15.96s][user ] «backchannel» Exactly.
-[ 18.95s][user ] Hmm, that’s a shame.
-[ 20.30s][moshi] It is, isn’t it? Sometimes getting the information we need isn’t possible. Perhaps we could focus on planning for a lovely weekend instead?
-[ 27.12s][user ] That sounds nice. What movies are playing nearby right ⟨ret@31.07s⟩ now?
-[ 31.39s][moshi] ⟦⚡SPAN@31.39s: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The Garfield Movie'. Regal Edwards Irvine Spe⟧ Right now, ‘Inside Out 2’, ‘Bad Boys: Ride or Die’, and ‘The Garfield Movie’ are playing at Regal Edwards Irvine Spectrum 21. Would you like me to check showtimes for any of those?
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[  0.00s][user ] Do you have the contact information for ⟨ret@2.08s⟩ Lee Sun-hee?
+[  2.48s][moshi] ⟦⚡SPAN@2.48s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. It seems to be private.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
+[  5.75s][user ] «backchannel» Uh-huh.
+[  8.73s][user ] Oh, that’s a shame. Well, how about the weather in ⟨ret@12.20s⟩ Busan tomorrow?
+[ 12.60s][moshi] ⟦⚡SPAN@12.60s: (tool result) 26.1°C, humidity 68%, wind 7.2 km/h⟧ Tomorrow in Busan, it will be 26.1 degrees Celsius, with 68% humidity and a wind speed of 7.2 kilometers per hour. It sounds lovely!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
+[ 15.61s][user ] «backchannel» Really?
+[ 21.88s][user ] That does sound nice. I’m trying to get settled here, it’s a bit overwhelming.
+[ 26.27s][moshi] Settling into a new city can definitely be overwhelming, but it's also exciting! Don't worry, you'll find your rhythm.
+[ 28.90s][user ] «backchannel» Uh-huh.
+[ 32.79s][user ] I’m hoping to find some good restaurants ⟨ret@34.99s⟩ nearby.
+[ 35.30s][moshi] ⟦⚡SPAN@35.31s: (tool result) 12 restaurants found within 5km radius.⟧ I found 12 restaurants within a 5-kilometer radius of your current location. Would you like me to filter them by cuisine?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
+[ 41.86s][user ] Yes, Korean food would be ⟨ret@43.74s⟩ great.
+[ 44.06s][moshi] ⟦⚡SPAN@44.06s: (tool result) 6 Korean restaurants found within 5km radius.⟧ There are 6 Korean restaurants within 5 kilometers. I can show you their ratings and reviews if you’d like.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "cuisine": "Korean"}}
+[ 47.25s][user ] «backchannel» Yeah.
+[ 50.50s][user ] That would be really helpful, yes.
+[ 52.35s][moshi] «interrupted» Let's see… Gukbap Jeonju is highly rated, with 4.5 stars—
+[ 56.62s][user ] «interrupts_prev» …Actually, is there a nice park around here too? I need some green space.
+[ 60.95s][moshi] ⟨ret@60.80s⟩ ⟦⚡SPAN@60.96s: (tool result) Taejongdae Park, 1.5km away, 4.6 stars.⟧ Taejongdae Park is 1.5 kilometers away and has a 4.6-star rating. It's a beautiful coastal park.
+      CALL: {"function": "map_search_places", "arguments": {"query": "park near Busan"}}
+[ 63.06s][user ] «backchannel» Yeah.
+[ 68.96s][user ] That sounds perfect! How do I get there?
+[ 71.88s][moshi] ⟨ret@71.48s⟩ ⟦⚡SPAN@71.88s: (tool result) Driving: 20 minutes, Public Transit: 45 minutes.⟧ By car, it's about a 20-minute drive, or 45 minutes using public transportation. Would you like detailed directions?
+      CALL: {"function": "map_directions", "arguments": {"origin": "Busan", "destination": "Taejongdae Park"}}
+[ 76.27s][user ] «backchannel» Really?
+[ 79.03s][user ] Public transport sounds good, please.
+[ 81.25s][moshi] The route involves taking bus 101 for 30 minutes, then transferring to bus 133—
+[ 87.81s][moshi] —for another 15 minutes. I can send the route to your phone if you like.
+[ 89.74s][user ] «backchannel» Mm-hmm.
+[ 92.60s][user ] Yes, please do ⟨ret@93.89s⟩ that.
+[ 94.04s][moshi] ⟦⚡SPAN@94.05s: (tool result) Message sent to registered device.⟧ I've sent the bus route to your registered device. You should receive it shortly. It’s a really lovely spot for an afternoon walk.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"message": "Bus route to Taejongdae Park", "location": "Busan"}}
+[101.49s][user ] Great! I also need to find a ⟨ret@103.44s⟩ grocery store.
+[103.67s][moshi] ⟦⚡SPAN@103.68s: (tool result) Homeplus Busan Centum City, 800m away.⟧ Homeplus Busan Centum City is just 800 meters away. It’s a large supermarket with everything you might need.
+      CALL: {"function": "map_search_places", "arguments": {"query": "grocery store near Busan"}}
+[106.12s][user ] «backchannel» Really?
+[112.42s][user ] Wonderful, that’s very close. I'm also wondering about local festivals.
+[117.20s][moshi] ⟨ret@117.04s⟩ ⟦⚡SPAN@117.20s: (tool result) Busan International Film Festival, Oct 21-Oct 30, 2026.⟧ The Busan International Film Festival is scheduled for October 21st to October 30th, 2026. It's a very popular event.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Busan"}}
+[126.43s][user ] That's quite a ways off, but good to know. Thanks for all your help!
+[129.62s][moshi] You're very welcome. I'm happy to help you settle in, and remember to take things one step at a time. It's a beautiful city, and I think you'll really enjoy it here.

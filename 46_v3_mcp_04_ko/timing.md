@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "현영",
+#     "name": "정경",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,79 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-03-05",
+#       "date": "2026-06-16",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-10-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-02-03",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-07-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-22",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-25",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-11",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-26",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 코드 생성 세션 시작해서 테스트 파일들을 내 문서 폴더에 저장 | S2 이번 주 토요일에 영화 볼 만한 거 있어? | S3 …혹시 '인사이드 아웃 이'… | S4 …예매해 줄 수 있어?
 
-     0.00s  user  발화 시작: 코드 생성 세션 시작해서 테스트 파일들을 내 문서 폴더에 저장해 줘.
+     0.00s  user  발화 시작: 비비씨 뉴스 좀 훑어봐 줄래? 깊이는 세 단계로 하고, 링크는 쉰개까지.
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.12s  agent 발화 시작: <ret> 코드 생성 세션을 시작하고 테스트 파일들을 문서 폴더에 저장해 드렸습니다.
-     0.12s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) Directory "Documents/tests" created successfully.
-     0.12s  user  발화 끝
-     0.17s  <ret> 발화 (turn5 첫 프레임)
-     0.22s  user  발화 시작: 혹시 지금 서울 날씨 어때?
-     0.22s  agent 발화 끝
-     0.27s  agent 발화 시작: <ret> 현재 서울 날씨는 이십팔 점 삼도이고, 습도는 육십오퍼센트, 풍속은 시속 사 점 일킬로미터입니다.
-     0.27s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Current weather in Seoul: 28.3°C, humidity 65%, wind 4.1
-     0.27s  user  발화 끝
-     0.41s  user  발화 시작: 이번 주 토요일에 영화 볼 만한 거 있어?
-     0.41s  agent 발화 끝
-     0.49s  agent 발화 시작: <ret> 이번 주 토요일에는 '인사이드 아웃 이'가 오후 두시, 다섯시, 여덟시에 상영하고, '배드 보이 
-     0.49s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: (tool result) Showing "Inside Out 2" at 14:00, 17:00, 20:00. "Bad Boys
-     0.49s  user  발화 끝
-     0.59s  <ret> 발화 (turn8 첫 프레임)
-     0.75s  user  발화 시작: …혹시 '인사이드 아웃 이'…
-     0.75s  agent 발화 끝
-     0.79s  user  발화 시작: …예매해 줄 수 있어?
-     0.79s  user  발화 끝
-     0.83s  agent 발화 시작: <ret> '인사이드 아웃 이' 오후 두시 티켓 두장이 확정되었습니다. 확인 코드는 칠 팔 구 이 에이 비입
-     0.83s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) 2 tickets for "Inside Out 2" at 14:00 confirmed. Confirm
-     0.83s  user  발화 끝
+     0.11s  agent 발화 시작: <ret> 비비씨 뉴스 웹사이트를 최대 깊이 삼단계, 링크 쉰개까지 훑어봤어요. 그 결과 상위 열개 링크를 
+     0.11s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: (tool result) {"url": "https://www.bbc.com/news", "max depth": 3, "max
+     0.11s  user  발화 끝
+     0.27s  user  발화 시작: 음… 그 중에서 중국 관련 뉴스 링크가 있어?
+     0.27s  agent 발화 끝
+     0.32s  <ret> 발화 (turn6 첫 프레임)
+     0.35s  agent 발화 시작: 네, 비비씨 뉴스에서 중국 관련 기사 링크는 이거예요. https://www.bbc.com/news/worl
+     0.35s  user  발화 끝
+     0.44s  user  발화 시작: 진짜요?
+     0.44s  agent 발화 끝
+     0.45s  user  발화 시작: 이번 주 토요일에 서울에서 재즈 콘서트 하는 곳 찾아줄 수 있어?
+     0.45s  user  발화 끝
+     0.56s  agent 발화 시작: <ret> 이번 주 토요일 서울에서 재즈 콘서트를 할 수 있는 곳은 서울 재즈 클럽과 원스 인 서울 두 곳을
+     0.56s  ⚡SPAN 주입 [d'=0.44s / d_lead=0.44s]: (tool result) {"restaurants": [{"name": "Seoul Jazz Club", "address": 
+     0.56s  user  발화 끝
      1.00s  agent 발화 끝

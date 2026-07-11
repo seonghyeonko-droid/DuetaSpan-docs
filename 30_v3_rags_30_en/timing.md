@@ -4,71 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Jordan",
+#     "name": "Léa",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-17",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-29",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "home",
-#       "text": "User's home address is 232 Elm Street."
-#     },
-#     {
-#       "date": "2025-11-12",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-09-19",
+#       "date": "2026-05-12",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-04-08",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-09-05",
+#       "category": "home",
+#       "text": "User's home address is 744 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-02",
-#       "title": "Researching a used car",
+#       "date": "2026-02-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-11",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What style of beer…
-     0.01s  <ret> 발화 (turn2 첫 프레임)
-     0.11s  user  발화 시작: …is Shock Top Belgian White?
-     0.11s  user  발화 끝
-     0.25s  agent 발화 시작: <ret> Well, it's interesting to consider what appeals to us 
-     0.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.75s]: Shock Top Belgian White is brewed using coriander and orange peel, mak
-     0.25s  user  발화 끝
+     0.00s  user  발화 시작: Do you know who sang “Nothing’s Gonna Stop Us Now”?
+     0.05s  <ret> 발화 (turn1 첫 프레임)
+     0.29s  agent 발화 시작: <ret> That song is beautifully uplifting! It was Grace Slick
+     0.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.71s]: Grace Slick of the band Starship performed “Nothing’s Gonna Stop Us No
+     0.29s  user  발화 끝
      1.00s  agent 발화 끝

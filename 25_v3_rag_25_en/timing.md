@@ -4,57 +4,46 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "David",
+#     "name": "Mia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
+#       "date": "2026-06-04",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "category": "home",
+#       "text": "User's home address is 468 Elm Street."
+#     },
+#     {
+#       "date": "2026-02-09",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-01-15",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-11-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "date": "2025-09-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
-#     {
-#       "date": "2026-03-29",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
 #     {
 #       "date": "2025-10-26",
 #       "title": "Booked a dentist appointment",
@@ -62,49 +51,59 @@
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-12",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-25",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to get my finances in o | S2 Hmm… so it’s not about *restrictin | S3 …does Emprise Bank have branches n | S4 I do. What’s the weather like ther
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to remember a tennis pl | S2 Oh. Hmm. Okay, so not her then. | S3 Who was the Italian tennis player  | S4 Oh! That’s right, Mara Santangelo!
 
-     0.00s  user  발화 시작: I’m trying to get my finances in order, and feel overwhelmed
+     0.00s  user  발화 시작: I’m trying to remember a tennis player… Italian, I think.
      3.47s  user  발화 끝
-     3.79s  agent 발화 시작: It’s completely understandable to feel that way when startin
-    10.05s  agent 발화 끝
-    10.15s  user  발화 시작: Well, I keep hearing about budgeting, but… what even *is* a 
-    13.97s  <ret> 발화 (turn3 첫 프레임)
-    14.05s  agent 발화 시작: <ret> A budget is essentially a plan for how to spend your m
-    14.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: A budget is a plan for how to spend your money, typically over a month
-    14.18s  user  발화 끝
-    24.94s  user  발화 시작: Hmm… so it’s not about *restricting* myself?
-    25.04s  agent 발화 끝
-    28.20s  agent 발화 시작: Not at all! It's about understanding where your money goes, 
-    28.31s  user  발화 끝
-    31.87s  user  발화 시작: Mm-hmm.
-    32.50s  user  발화 끝
-    35.12s  agent 발화 시작: It’s empowering, really.
-    35.15s  agent 발화 끝
-    36.39s  user  발화 시작: Okay. I think I get that. Say…
-    36.59s  agent 발화 끝
-    38.60s  user  발화 끝
-    39.61s  user  발화 시작: …does Emprise Bank have branches near the Neosho River?
-    42.37s  <ret> 발화 (turn10 첫 프레임)
-    42.69s  agent 발화 시작: <ret> Emprise Bank does have branches in Tulsa, Oklahoma, a 
-    42.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: Emprise Bank has branches in Tulsa, Oklahoma, a city situated along th
-    42.84s  user  발화 끝
-    50.42s  user  발화 시작: Tulsa, huh? I didn't know that.
-    50.48s  agent 발화 끝
-    52.22s  user  발화 끝
-    52.37s  agent 발화 시작: Sometimes we forget the geography around us, don’t we? It’s 
-    58.21s  agent 발화 끝
-    58.25s  user  발화 시작: I do. What’s the weather like there right now?
-    60.55s  <ret> 발화 (turn14 첫 프레임)
-    60.71s  agent 발화 시작: <ret> The current conditions in Tulsa, Oklahoma are 29.4°C, 
-    60.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.75s]: (tool result) Current conditions in Tulsa, Oklahoma are 29.4°C, humidi
-    60.74s  user  발화 끝
-    70.96s  user  발화 시작: That *is* warm. Thanks, Tal.
-    71.46s  agent 발화 끝
-    73.05s  agent 발화 시작: You’re very welcome. Remember, small steps lead to big chang
-    73.26s  user  발화 끝
-    79.02s  agent 발화 끝
+     3.59s  agent 발화 시작: It’s wonderful you’re recalling happy memories! Sometimes a 
+     5.23s  user  발화 시작: Mhm.
+     5.77s  user  발화 끝
+     7.85s  agent 발화 끝
+     7.88s  user  발화 시작: Yes, well, was it Chris Evert who was Italian?
+    10.56s  <ret> 발화 (turn4 첫 프레임)
+    10.64s  agent 발화 시작: <ret> Chris Evert is actually American, and considered one o
+    10.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: Chris Evert is an American former professional tennis player and one o
+    10.70s  user  발화 끝
+    16.11s  agent 발화 끝
+    16.37s  user  발화 시작: Oh. Hmm. Okay, so not her then.
+    19.18s  user  발화 끝
+    19.22s  agent 발화 시작: It’s perfectly alright to adjust our thinking as we learn mo
+    22.36s  user  발화 시작: Yeah.
+    22.67s  user  발화 끝
+    23.22s  user  발화 시작: Who was the Italian tennis player then? I’m drawing a blank.
+    23.71s  agent 발화 끝
+    26.46s  agent 발화 시작: Let me see if I can find that for you—
+    26.59s  user  발화 끝
+    27.56s  user  발화 시작: …Was Mara Santangelo ever highly ranked?
+    28.26s  agent 발화 끝
+    29.63s  <ret> 발화 (turn11 첫 프레임)
+    29.95s  agent 발화 시작: <ret> Mara Santangelo is the Italian former professional ten
+    29.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Mara Santangelo is an Italian former professional tennis player who re
+    30.10s  user  발화 끝
+    35.79s  user  발화 시작: Mhm.
+    36.28s  user  발화 끝
+    38.53s  user  발화 시작: Oh! That’s right, Mara Santangelo! Thank you.
+    38.71s  agent 발화 끝
+    42.05s  user  발화 끝
+    42.36s  agent 발화 시작: You’re very welcome! It's lovely when those memories resurfa
+    46.52s  agent 발화 끝

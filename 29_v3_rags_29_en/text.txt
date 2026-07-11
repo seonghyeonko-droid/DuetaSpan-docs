@@ -1,55 +1,71 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Jea, a encouraging and non-judgmental life coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Eloen, a curious and validating supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Jordan",
+    "name": "Andrea",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-09",
+      "date": "2026-06-05",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-03-11",
+      "date": "2026-03-07",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-15",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-07-25",
       "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-10",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
-    },
-    {
-      "date": "2025-06-10",
-      "category": "work",
-      "text": "User works as a chef."
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-29",
-      "title": "Setting up a home network",
+      "date": "2025-12-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-28",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who wrote the most wonderful time of the ⟨ret@2.40s⟩ year?
-[  2.72s][moshi] ⟦⚡SPAN@2.72s: Edward Pola wrote the lyrics to "It's the Most Wonderful Time of the Year," and George Wyle composed the music⟧ That lovely song was written by Edward Pola, who crafted the lyrics, and George Wyle, who composed the music back in 1963. It’s a classic!
+[  0.00s][user ] Do you know who originally sang the theme for 21 Jump ⟨ret@3.12s⟩ Street?
+[  3.44s][moshi] ⟦⚡SPAN@3.44s: Holly Robinson sang the theme song for the television series 21 Jump Street, released in 1987.⟧ Oh, that's a fun one! It was Holly Robinson who originally sang the theme song for 21 Jump Street, back in 1987. It's amazing how songs can take you right back, isn't it?

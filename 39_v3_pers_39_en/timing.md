@@ -4,142 +4,140 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Rowan",
+#     "name": "Rosa",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
+#       "date": "2026-04-06",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-02-13",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-01-31",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-09-30",
-#       "category": "home",
-#       "text": "User's home address is 865 Pine Court."
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-08-09",
+#       "date": "2025-09-29",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-30",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-29",
+#       "date": "2026-06-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-11",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Les? That’s…an unusual name for an | S2 Easy for you to say. You're not th | S3 That’s…actually a good idea. I wro | S4 Thirty minutes? I don’t know… that
+# EXAMINER(FDB-v2) 단계: S1 What exactly *is* guidance from yo | S2 And it’s a management role, which  | S3 Well, the salary is significantly  | S4 That sounds… good, actually. Where
 
-     0.00s  agent 발화 시작: Hello Rowan, it’s lovely to meet you. I'm Les.
-     2.06s  user  발화 시작: Yeah.
-     2.60s  user  발화 끝
-     2.85s  user  발화 시작: Les? That’s…an unusual name for an assistant. What exactly *
-     2.91s  agent 발화 끝
-     9.08s  agent 발화 시작: It’s a pleasure to be called unusual, Rowan. I help people l
-     9.10s  user  발화 끝
-    11.96s  user  발화 시작: Yeah.
-    12.40s  user  발화 끝
-    17.79s  agent 발화 끝
-    17.93s  user  발화 시작: Flourish? Sounds a bit…much. I just need to get through my d
-    23.25s  user  발화 끝
-    23.43s  agent 발화 시작: That's perfectly understandable. A dissertation can feel inc
-    27.10s  user  발화 시작: Mm-hmm.
-    27.55s  user  발화 끝
-    32.33s  agent 발화 끝
-    32.94s  user  발화 시작: Um, well, I'm just…stuck. I've got all this research, but I 
-    39.95s  user  발화 끝
-    40.23s  agent 발화 시작: That’s a very common experience, Rowan. Feeling overwhelmed 
-    48.94s  user  발화 시작: Smaller steps… I guess. It just all feels so important, I’m 
-    49.13s  agent 발화 끝
-    54.74s  agent 발화 시작: That fear of imperfection is powerful, isn’t it? But sometim
-    54.92s  user  발화 끝
-    56.77s  user  발화 시작: Oh.
-    57.27s  user  발화 끝
-    61.65s  user  발화 시작: Easy for you to say. You're not the one being graded on it.
-    61.83s  agent 발화 끝
-    64.98s  user  발화 끝
-    65.23s  agent 발화 시작: You’re right, I’m not. But I can offer a different perspecti
-    71.68s  user  발화 시작: Mm-hmm.
-    72.13s  user  발화 끝
-    74.46s  agent 발화 끝
-    74.58s  user  발화 시작: It’s…on the history of textile production in Manchester. Ver
-    80.04s  user  발화 끝
-    80.05s  agent 발화 시작: Niche is good! It shows passion. It sounds like a fascinatin
-    84.58s  user  발화 시작: Yeah.
-    85.03s  user  발화 끝
-    88.11s  agent 발화 끝
-    89.78s  user  발화 시작: I *thought* I had. But now I’m wondering if it’s too ambitio
-    95.67s  user  발화 끝
-    95.88s  agent 발화 시작: It's easy to get swept away. Perhaps revisiting your initial
-   100.83s  user  발화 시작: Yeah.
-   101.36s  user  발화 끝
-   103.11s  agent 발화 끝
-   103.44s  user  발화 시작: That’s…actually a good idea. I wrote it down somewhere. [sig
-   109.59s  agent 발화 시작: It’s okay to feel that way. Sometimes taking a step back to 
-   109.69s  user  발화 끝
-   112.90s  user  발화 시작: Yeah.
-   113.48s  user  발화 끝
-   116.17s  agent 발화 끝
-   116.43s  user  발화 시작: I remember now. It was… "To what extent did the mechanisatio
-   126.58s  user  발화 끝
-   127.00s  agent 발화 시작: That’s a strong starting point, Rowan. "To what extent did t
-   138.27s  user  발화 시작: Okay, yeah. That does sound…manageable, actually.
-   138.36s  agent 발화 끝
-   141.91s  agent 발화 시작: Wonderful. Now, what’s one small, achievable task you could 
-   142.11s  user  발화 끝
-   145.15s  user  발화 시작: Yeah.
-   145.55s  user  발화 끝
-   149.23s  agent 발화 끝
-   149.42s  user  발화 시작: Hmm… maybe just outlining the first chapter?
-   152.49s  agent 발화 시작: That sounds like a perfect first step. A clear structure can
-   152.66s  user  발화 끝
-   160.93s  agent 발화 끝
-   162.25s  user  발화 시작: Thirty minutes? I don’t know… that feels really short.
-   166.14s  user  발화 끝
-   166.43s  agent 발화 시작: It’s about starting small, Rowan. Thirty focused minutes can
-   171.62s  user  발화 시작: Mm-hmm.
-   172.16s  user  발화 끝
-   174.31s  agent 발화 끝
-   175.08s  user  발화 시작: Alright, alright. Thirty minutes it is. I’ll give it a go.
-   178.46s  user  발화 끝
-   178.59s  agent 발화 시작: Excellent. Remember, this isn’t about perfection, it’s about
-   182.94s  agent 발화 끝
-   183.05s  user  발화 시작: Thanks, Les. I appreciate that.
-   184.81s  user  발화 끝
-   184.82s  agent 발화 시작: You’re very welcome, Rowan. I’m confident you can do this. J
-   191.40s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Rosa, it’s wonderful to connect with you. I’m Haia, an
+     6.86s  agent 발화 끝
+     7.18s  user  발화 시작: What exactly *is* guidance from you, though?
+     9.69s  agent 발화 시작: That’s a lovely thing to say, thank you!
+     9.76s  user  발화 끝
+    10.44s  user  발화 시작: Mm-hmm.
+    10.89s  user  발화 끝
+    12.18s  agent 발화 끝
+    12.86s  user  발화 시작: Overwhelming is… a good word for it, actually. I’m just feel
+    17.98s  agent 발화 시작: Oh, I completely understand. Decisions can be so tricky, esp
+    18.04s  user  발화 끝
+    26.69s  agent 발화 끝
+    27.13s  user  발화 시작: It’s about a job offer. A really good one, actually. But… it
+    31.38s  agent 발화 시작: That sounds like a complex situation. It’s wonderful you rec
+    31.57s  user  발화 끝
+    39.97s  user  발화 시작: It’s in Seattle. I love San Francisco! All my friends are he
+    40.00s  agent 발화 끝
+    45.30s  user  발화 끝
+    45.43s  agent 발화 시작: Moving away from your support network is a big consideration
+    53.63s  agent 발화 끝
+    53.74s  user  발화 시작: And it’s a management role, which I… I don’t know if I *want
+    58.60s  user  발화 끝
+    58.82s  agent 발화 시작: It’s wise to question whether a role truly suits your aspira
+    64.51s  user  발화 시작: Okay.
+    65.06s  user  발화 끝
+    68.56s  agent 발화 끝
+    69.25s  user  발화 시작: I keep going back and forth. One minute I think it's amazing
+    75.40s  user  발화 끝
+    75.65s  agent 발화 시작: That back-and-forth is so common when facing big choices. It
+    81.53s  user  발화 시작: …but what if I regret *not* taking it? What if this is my on
+    82.27s  agent 발화 끝
+    85.84s  agent 발화 시작: That’s a very valid fear, Rosa. It’s understandable to worry
+    85.97s  user  발화 끝
+    95.22s  user  발화 시작: Really?
+    96.05s  user  발화 끝
+    98.27s  agent 발화 끝
+    98.67s  user  발화 시작: Well, the salary is significantly higher, and it's a really 
+   105.41s  agent 발화 시작: Security is important, absolutely. It sounds like the financ
+   105.53s  user  발화 끝
+   116.49s  agent 발화 끝
+   117.03s  user  발화 시작: I guess so. I’ve been freelancing for a while, and it’s… unp
+   121.05s  user  발화 끝
+   121.43s  agent 발화 시작: Freelancing can be freeing, but also bring uncertainty. It’s
+   129.55s  user  발화 시작: Exactly! But then I think about the long hours managers work
+   129.63s  agent 발화 끝
+   134.49s  agent 발화 시작: It’s good you’re considering the potential downsides too. Of
+   134.55s  user  발화 끝
+   138.13s  user  발화 시작: Okay.
+   138.76s  user  발화 끝
+   143.02s  agent 발화 끝
+   143.46s  user  발화 시작: It's just… a lot to think about. I feel like I'm spinning.
+   147.44s  user  발화 끝
+   147.60s  agent 발화 시작: It absolutely is a lot, Rosa. It’s okay to feel overwhelmed 
+   158.03s  agent 발화 끝
+   158.10s  user  발화 시작: That sounds… good, actually. Where do we even start?
+   161.99s  user  발화 끝
+   162.06s  agent 발화 시작: Let’s start with your values. What’s truly important to you 
+   164.19s  user  발화 시작: Yeah.
+   164.59s  user  발화 끝
+   168.92s  user  발화 시작: Hmm… I value creativity, and having a good work-life balance
+   168.96s  agent 발화 끝
+   175.07s  agent 발화 시작: Those are wonderful values, Rosa. It sounds like you want a 
+   175.08s  user  발화 끝
+   186.13s  user  발화 시작: I don’t know if a management role *allows* for creativity, h
+   186.34s  agent 발화 끝
+   192.14s  agent 발화 시작: That’s a very insightful observation. It’s important to cons
+   192.19s  user  발화 끝
+   200.53s  agent 발화 끝

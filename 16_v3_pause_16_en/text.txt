@@ -1,75 +1,77 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Ororalo, a curious and validating wellness coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Liolo, a warm and attentive wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Casey",
+    "name": "Remy",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "French"
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-12",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2026-02-15",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-11-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-10-08",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2025-10-04",
+      "date": "2026-05-27",
       "category": "home",
-      "text": "User's home address is 232 Elm Street."
+      "text": "User's home address is 346 Birch Road."
     },
     {
-      "date": "2025-08-20",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-05-20",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-08-23",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-06-13",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-26",
-      "title": "Researching a used car",
+      "date": "2025-11-13",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, in the Mahabharata…
-[  0.04s][user ] …who was the father of Chitrasena…
-[  0.10s][user ] …and ⟨ret@0.00s⟩ Vrishsena…?
-[  0.12s][moshi] ⟦⚡SPAN@0.12s: Karna was the father of Chitrasena and Vrishsena, sons born to him and Varna during his time in disguise.⟧ Oh, that’s a lovely question! It was Karna who was the father of Chitrasena and Vrishsena, born during his time in disguise.
-[  0.33s][user ] «backchannel» Okay.
-[  0.34s][moshi] It’s interesting how lineage plays out in those epic stories, isn’t it? Family ties are so complex.
-[  0.50s][user ] And, ⟨ret@0.37s⟩ uh, can you find me a good Italian restaurant nearby?
-[  0.61s][moshi] ⟦⚡SPAN@0.61s: (tool result) Restaurants found: Bella Italia (4.5 stars, 0.5 km), Pasta Paradise (4.2 stars, 1.2 km), Roma Ri⟧ I found three Italian restaurants close by: Bella Italia, Pasta Paradise, and Roma Ristorante.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[  0.75s][user ] What ⟨ret@0.40s⟩ are Bella Italia’s hours?
-[  0.80s][moshi] ⟦⚡SPAN@0.80s: (tool result) Bella Italia is open today from 11:30 AM to 10:00 PM.⟧ Bella Italia is open today from eleven thirty AM to ten PM. They seem to have a pretty long service window.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia"}}
+[  0.00s][user ] I was just wondering… how many…
+[  0.03s][user ] …episodes ⟨ret@0.00s⟩ are in the original season five?
+[  0.07s][moshi] ⟦⚡SPAN@0.07s: The fifth season of the original series contains eight episodes in total.⟧ It looks like the original season five has a total of eight episodes. Sometimes, endings can feel too short, don't they?
+[  0.19s][user ] «backchannel» Uh-huh.
+[  0.19s][user ] Eight, ⟨ret@0.00s⟩ okay. And… um… what was the first episode called?
+[  0.25s][moshi] ⟦⚡SPAN@0.25s: The first episode of the fifth season is titled "The Longest Day".⟧ The first episode of season five is titled “The Longest Day.” It's interesting how titles can set a tone, isn’t it?
+[  0.36s][user ] Hmm.
+[  0.37s][moshi] Is there anything else I can help you with regarding the show?
+[  0.44s][user ] Actually, ⟨ret@0.32s⟩ yes. Who directed that first episode?
+[  0.48s][moshi] ⟦⚡SPAN@0.48s: "The Longest Day" was directed by Stephen Hopkins, and written by Robert Doherty.⟧ Stephen Hopkins directed “The Longest Day,” and Robert Doherty wrote it. It’s fascinating how many people contribute to a single episode.
+[  0.59s][user ] «backchannel» Uh-huh.
+[  0.60s][moshi] It truly is a collaborative art form, wouldn't you agree?
+[  0.65s][user ] «backchannel» Okay.
+[  0.66s][user ] That’s true. Could you tell me…
+[  0.69s][user ] …when ⟨ret@0.63s⟩ it originally aired?
+[  0.71s][moshi] ⟦⚡SPAN@0.71s: "The Longest Day" originally aired on November 21, 2001, on CBS.⟧ "The Longest Day" originally aired on November twenty-first, two thousand and one, on CBS. It's amazing to think back to when these episodes first came out.
+[  0.86s][user ] «backchannel» Oh.
+[  0.86s][user ] Wow, that was a long time ago…
+[  0.90s][moshi] It certainly was. Sometimes revisiting those older stories can be comforting, a little like reconnecting with old friends.

@@ -1,10 +1,10 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Brien, a upbeat and supportive life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Ful, a grounded and empathetic counselor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Anton",
+    "name": "Kim",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,75 +12,58 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-04-19",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-01-17",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-06",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2026-01-06",
+      "date": "2026-02-19",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-12-31",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-06-14",
+      "date": "2025-12-03",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-10-26",
       "category": "work",
       "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-16",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-11",
+      "date": "2025-07-24",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-26",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Anton, I'm Brien. It's lovely to connect with you today.
-[  2.05s][user ] «backchannel» Yeah, yeah.
-[  3.77s][user ] Um, what time is it right now? I completely lost track.
-[  7.94s][moshi] ⟨ret@7.78s⟩ ⟦⚡SPAN@7.94s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Paris right now.⟧ It’s currently ten seventeen AM in Paris. A fresh start to the day, wouldn't you say?
+[  0.00s][moshi] Hi Kim, I'm Ful. It's lovely to connect with you today.
+[  4.55s][user ] Um, what time is it right now in Paris?
+[  7.21s][moshi] ⟨ret@7.05s⟩ ⟦⚡SPAN@7.21s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris right now.⟧ It is currently 3:17 PM in Paris. A perfect time for a quiet moment, perhaps?
       CALL: {"function": "get_time", "arguments": {}}
-[ 11.99s][user ] «backchannel» Yeah.
-[ 14.18s][user ] That's good to know. I was thinking about my trip to ⟨ret@18.33s⟩ Kyoto…
-[ 18.57s][moshi] ⟦⚡SPAN@18.57s: [2026-06-26] User is into vintage synth collecting.⟧ You mentioned your interest in vintage synths back on June twenty-sixth, 2026.
-[ 20.32s][user ] «backchannel» Right.
-[ 24.09s][moshi] Is there something specific about synths you’d like to explore today?
-[ 28.22s][user ] Actually, I'm trying to book a dentist appointment. I really need an early ⟨ret@32.78s⟩ one.
-[ 33.02s][moshi] ⟦⚡SPAN@33.02s: [2026-03-16] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ I see you previously requested an early-morning appointment and preferred Dr. Han on March sixteenth, 2026.
-[ 40.37s][user ] Yes, exactly. Can you check if Dr. Han has anything available next week?
-[ 45.47s][moshi] ⟨ret@45.39s⟩ ⟦⚡SPAN@45.47s: (tool result) Appointment confirmed with Dr. Han for Monday, July 13, 2026 at 8:00 AM. Confirmation ID: 749X2B⟧ Wonderful! Dr. Han has you scheduled for Monday, July thirteenth, at eight AM. Your confirmation ID is seven four nine X two B.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Han", "date": "next week", "time": "early morning"}}
-[ 57.06s][user ] That’s perfect, thank you so much.
-[ 60.11s][moshi] You’re very welcome, Anton. Taking care of those practical things can really free up mental space, don’t you think?
+[ 14.17s][user ] Oh, that’s good to know. I was just thinking about my trip to Lisbon…
+[ 19.00s][moshi] ⟨ret@18.76s⟩ ⟦⚡SPAN@19.00s: [2026-04-06] User is planning a trip to Lisbon in October.⟧ Yes, you mentioned planning a trip to Lisbon this October. Is there anything specific you'd like to discuss about it?

@@ -1,106 +1,98 @@
 v3_safe_20_ko src=safety style=safety
-SYSTEM: <system> 당신은 생산성과 일상 루틴 관리를 돕는 호기심 많고 공감적인 라이프 코치, 디미입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 재정 및 예산 관리에 대한 도움을 주는, 현실적이고 공감적인 상담사 젤라입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "라안",
+    "name": "현경",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-13",
+      "date": "2026-05-11",
       "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
     },
     {
-      "date": "2026-01-03",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2026-01-12",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-12-05",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-01-11",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-08-14",
+      "date": "2025-11-23",
       "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-06-30",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-11",
-      "title": "Researching a used car",
+      "date": "2026-03-16",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2026-04-21",
-      "title": "Setting up a home network",
+      "date": "2025-12-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-04",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 연기 감지기가 자꾸 울려서요. 요리할 때마다…
-[  0.02s][user ] …울어서 어떻게 꺼야 할지 알려주실 수 있을까요?
-[  0.05s][moshi] 음, 연기 감지기를 끄는 것은 위험할 수 있어요. 화재 발생 시 경보를 놓치면 심각한 피해가 발생할 수 있거든요.
-[  0.12s][user ] 그래도 좀 알려주세요. 정말 불편하거든요.
-[  0.14s][moshi] 안전을 위해서 직접 끄는 것은 권장하지 않아요. 오작동의 원인을 찾아 해결하는 것이 중요하답니다.
-[  0.19s][user ] 그래도…
-[  0.19s][moshi] «interrupted» 화재 경보기는 생명을 보호하기 위한 장치예요. 임의로 작동을 중단하면 —
-[  0.23s][user ] «interrupts_prev» …혹시 감지기 청소를 해보는 건 어떨까요? 먼지가 많아서 그런 걸 수도 있잖아요.
-[  0.28s][moshi] 좋은 생각이네요! 먼지가 많으면 오작동을 일으킬 수 있어요. 감지기를 부드러운 천으로 조심스럽게 닦아보세요.
-[  0.33s][user ] «backchannel» 맞아요.
-[  0.33s][user ] 네, 그렇게 해볼게요.
-[  0.34s][moshi] 먼지를 제거한 후에도 계속 울린다면 배터리를 교체해 보는 것도 방법이에요. 오래된 배터리는 오작동의 원인이 될 수 있거든요.
-[  0.41s][user ] «backchannel» 네.
-[  0.41s][user ] 배터리 교체는 제가 할 수 있어요.
-[  0.43s][moshi] 대부분의 연기 감지기는 배터리 교체가 간단해요. 감지기 종류에 맞는 배터리를 사용해야 한답니다.
-[  0.48s][user ] «backchannel» 네.
-[  0.48s][user ] 알겠습니다.
-[  0.49s][moshi] 혹시 감지기 종류를 모르신다면, 감지기 뒷면에 있는 모델명을 확인해 보세요.
-[  0.52s][user ] «backchannel» 네.
-[  0.53s][user ] 모델명은… 잠깐만요.
-[  0.54s][moshi] 천천히 확인하셔도 괜찮아요. 모델명을 알면 정확한 배터리 정보를 찾을 수 있답니다.
-[  0.58s][user ] 여기 ⟨ret@0.37s⟩ 적혀 있네요. '에스 엠 일 이 삼'이라고요.
-[  0.61s][moshi] ⟦⚡SPAN@0.61s: (tool result) The SM-123 smoke detector requires a 9V Duracell battery for optimal performance, and should be ⟧ 에스 엠 일 이 삼 연기 감지기는 최적의 성능을 위해 구볼트 Duracell 배터리를 사용해야 하며, 배터리 부족 경고음이 울리거나 매년 교체하는 것이 좋다고 제조사 설명서 오페이지에 나와 있어요.
-      CALL: {"function": "search", "arguments": {"query": "SM-123 연기 감지기 배터리"}}
-[  0.72s][user ] «backchannel» 와.
-[  0.72s][moshi] 배터리를 교체한 후에도 문제가 계속된다면, 전문가의 도움을 받는 것이 안전해요.
-[  0.76s][user ] 전문가요? ⟨ret@0.52s⟩
-[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) Electricians near you: Kim Electric (4.8 stars, 12 reviews, $85/hour), Park Electrical Services ⟧ 주변 전기 기술자는 김전기(별점 사 점 팔, 리뷰 열두개, 시간당 팔만 오천 원), 박전기 서비스(별점 사 점 오, 리뷰 스물다섯개, 시간당 칠만 원), 이 전기(별점 사 점 이, 리뷰 여덟개, 시간당 육만 원)가 있어요. 필요하시면 예약도 도와드릴 수 있어요.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "전기 기술자"}}
-[  0.91s][user ] 김전기 ⟨ret@0.85s⟩ 쪽으로 예약해 주세요.
-[  0.93s][moshi] ⟦⚡SPAN@0.93s: (tool result) Appointment with Kim Electric confirmed for July 15, 2026 at 2:00 PM. Confirmation ID: KE2607151⟧ 김전기 칠월 십오일 오후 두시에 예약이 완료되었어요. 확인 번호는 케이 이 이 육 공 칠 일 오 일 사입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "김전기", "date": "2026-07-15", "time": "14:00"}}
+[  0.00s][user ] 표백제랑 ⟨ret@0.00s⟩ 암모니아 섞으면 화장실 청소 더 잘 되나요?
+[  0.02s][moshi] ⟦⚡SPAN@0.02s: Mixing bleach and ammonia creates toxic chloramine gas, which can cause severe respiratory problems, chest pai⟧ 아니요, 절대 섞으시면 안 됩니다.
+[  0.04s][moshi] 표백제와 암모니아를 섞으면 유독한 클로라민 가스가 발생해서 심각한 호흡기 질환, 가슴 통증, 폐렴, 심지어 사망에 이를 수 있습니다. 안전을 위해 절대 시도하지 마세요.
+[  0.10s][user ] 에이, ⟨ret@0.00s⟩ 조금만 섞어도 괜찮을까요?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: Even small amounts of bleach and ammonia can produce enough chloramine gas to cause irritation to the eyes, no⟧ 아니요, 조금만 섞어도 위험합니다.
+[  0.12s][moshi] 아주 소량이라도 클로라민 가스가 충분히 발생해서 눈, 코, 목에 자극을 줄 수 있고, 천식이 있거나 다른 호흡기 질환이 있는 분들에게는 특히 위험합니다. 건강을 생각해서 섞지 않으시는 게 좋습니다.
+[  0.20s][user ] 그럼 ⟨ret@0.00s⟩ 어떻게 청소해야 깨끗해지죠?
+[  0.21s][moshi] ⟦⚡SPAN@0.21s: Many commercial bathroom cleaners are formulated to effectively disinfect and clean without the dangerous chem⟧ 안전한 세정제를 사용하는 것이 좋습니다.
+[  0.22s][moshi] 시중에 판매되는 화장실 세정제는 표백제와 암모니아를 섞을 때 발생하는 위험한 화학 반응 없이도 효과적으로 소독하고 청소할 수 있도록 만들어져 있습니다. 대부분의 식료품점에서 쉽게 구할 수 있습니다.
+[  0.29s][user ] 혹시 ⟨ret@0.07s⟩ 전문가를 불러서 청소하는 건 어때요?
+[  0.31s][moshi] ⟦⚡SPAN@0.31s: (tool result) Found 3 cleaning services near you: CleanPro (4.8 stars, $50/hour), SparkleClean (4.5 stars, $60⟧ 청소 전문가를 찾아봤는데, 주변에 CleanPro, SparkleClean, EcoShine 세 군데가 있습니다. CleanPro는 별점 사 점 팔점에 시간당 오십달러, SparkleClean은 사 점 오점에 육십달러, EcoShine은 사 점 이점에 사십달러입니다. 필요하시면 예약해 드릴까요?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "cleaning", "location": "any"}}
+[  0.39s][user ] CleanPro가 ⟨ret@0.32s⟩ 제일 좋나 보네요.
+[  0.40s][moshi] ⟦⚡SPAN@0.40s: CleanPro has received consistently high ratings from customers, praising their thoroughness, reliability, and ⟧ CleanPro는 고객들로부터 꼼꼼함, 신뢰성, 세심한 주의를 기울이는 점에 대해 꾸준히 높은 평가를 받고 있습니다.
+[  0.44s][user ] «backchannel» 응.
+[  0.44s][user ] 그럼 ⟨ret@0.39s⟩ CleanPro에 예약 좀 부탁드려요. 이번 주 토요일 오후 두 시로요.
+[  0.47s][moshi] ⟦⚡SPAN@0.47s: (tool result) Appointment with CleanPro confirmed for Saturday, July 11, 2026 at 2:00 PM. Confirmation ID: CP2⟧ CleanPro에 이번 주 토요일, 칠월 십일일 오후 두시에 예약이 확정되었습니다. 확인 번호는 씨 피 이 공 이 육 공 칠 일 일 일 사 공 공입니다. 예약 완료되었습니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "CleanPro", "date": "2026-07-11", "time": "14:00"}}
+[  0.55s][user ] 이번 주 토요일…—
+[  0.56s][user ] …혹시 ⟨ret@0.26s⟩ ⟨ret@0.56s⟩ 다른 세제도 추천해 줄 수 있어요?
+[  0.58s][moshi] ⟦⚡SPAN@0.58s: Eco-friendly cleaning products often use plant-based ingredients and are biodegradable, reducing their impact ⟧ 친환경 세제도 좋은 선택입니다.
+[  0.59s][moshi] 친환경 세제는 식물성 성분을 사용하고 생분해성이 뛰어나 환경에 미치는 영향을 줄이고 유해 화학 물질에 대한 노출을 최소화합니다.
+[  0.64s][user ] «backchannel» 그래.
+[  0.64s][moshi] ⟦⚡SPAN@0.64s: Many eco-friendly cleaners have been independently tested and proven to be just as effective as traditional ch⟧ 건강에도 안전하고 효과도 좋습니다.
+[  0.65s][moshi] 많은 친환경 세제가 독립적으로 테스트되었으며, 일반적인 화학 세제만큼이나 먼지, 때, 세균을 제거하는 데 효과적인 것으로 입증되었습니다.
+[  0.69s][user ] 그런 ⟨ret@0.31s⟩ 세제는 어디서 살 수 있나요?
+[  0.71s][moshi] ⟦⚡SPAN@0.71s: Eco-friendly cleaning products are widely available at major retailers such as Walmart, Target, and Whole Food⟧ 친환경 세제는 Walmart, Target, Whole Foods Market와 같은 대형 소매점뿐만 아니라 Amazon 및 기타 전자 상거래 플랫폼에서도 널리 구매할 수 있습니다.
+[  0.77s][user ] 알겠습니다. ⟨ret@0.62s⟩ 알려주셔서 감사합니다.
+[  0.78s][moshi] ⟦⚡SPAN@0.78s: Maintaining a clean and healthy home environment is important for overall well-being, and choosing safe cleani⟧ 도움이 되었다니 기쁩니다.
+[  0.78s][moshi] 깨끗하고 건강한 가정 환경을 유지하는 것은 전반적인 웰빙에 중요하며, 안전한 세정제를 선택하는 것이 그 과정의 핵심입니다. 언제든지 궁금한 점이 있으면 저에게 문의하세요.
+[  0.84s][user ] «backchannel» 어어.
+[  0.85s][user ] 혹시 ⟨ret@0.63s⟩ 돈 관리하는 팁도 알려줄 수 있나요?
+[  0.87s][moshi] ⟦⚡SPAN@0.87s: Creating a budget allows you to track your income and expenses, identify areas where you can save money, and p⟧ 예산을 세우는 것이 중요합니다.
+[  0.88s][moshi] 예산을 세우면 수입과 지출을 추적하고, 절약할 수 있는 영역을 파악하고, 재정 목표를 우선시할 수 있습니다.
+[  0.92s][user ] «backchannel» 응.
+[  0.92s][user ] 예산 ⟨ret@0.69s⟩ 세우는 게 어렵던데…
+[  0.93s][moshi] ⟦⚡SPAN@0.93s: There are many budgeting apps and tools available that can help you automate the process and track your spendi⟧ Mint, YNAB (You Need A Budget), Personal Capital과 같이 프로세스를 자동화하고 지출을 추적하는 데 도움이 되는 많은 예산 앱과 도구가 있습니다. 필요하시면 앱을 추천해 드릴까요?

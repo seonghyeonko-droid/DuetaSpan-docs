@@ -4,84 +4,89 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Isla",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-05-24",
+#       "category": "home",
+#       "text": "User's home address is 35 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-28",
+#       "date": "2026-05-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-19",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
 #       "date": "2025-12-01",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     },
 #     {
-#       "date": "2025-07-31",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2025-10-16",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-07-07",
-#       "category": "home",
-#       "text": "User's home address is 288 Elm Street."
+#       "date": "2025-06-09",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-13",
-#       "title": "Researching a used car",
+#       "date": "2025-11-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, where do arteries | S2 Did you hear about the concert dow | S3 Oh, that’s good to know. Are there | S4 That's interesting! And what about
+# EXAMINER(FDB-v2) 단계: S1 Hey, when does Gotham season 4 epi | S2 Did you remember to take the chick | S3 Oh… um, I think I need to set a re | S4 Perfect, thanks Zami.
 
-     0.00s  user  발화 시작: I was wondering, where do arteries connect with each other?
-     2.14s  <ret> 발화 (turn1 첫 프레임)
-     2.54s  agent 발화 시작: <ret> Arterial anastomoses are most commonly found between a
-     2.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: Arterial anastomoses are most commonly found between arteries, providi
-     2.63s  user  발화 끝
-    12.78s  agent 발화 끝
-    13.23s  user  발화 시작: Did you hear about the concert downtown next week?
-    15.56s  user  발화 시작: Oh, that’s good to know. Are there any near the elbow?
-    15.77s  user  발화 끝
-    18.27s  <ret> 발화 (turn4 첫 프레임)
-    18.51s  agent 발화 시작: <ret> The elbow region contains a prominent arterial arcade 
-    18.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.86s]: The elbow region contains a prominent arterial arcade formed by the an
-    18.52s  user  발화 끝
-    29.37s  agent 발화 끝
-    29.52s  user  발화 시작: That's interesting! And what about in the feet?
-    31.70s  <ret> 발화 (turn6 첫 프레임)
-    32.02s  agent 발화 시작: <ret> In the feet, the dorsal pedis artery and posterior tib
-    32.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.24s]: In the feet, the dorsal pedis artery and posterior tibial artery contr
-    32.15s  user  발화 끝
-    44.27s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, when does Gotham season 4 episode 12 air?
+     2.42s  <ret> 발화 (turn1 첫 프레임)
+     2.82s  agent 발화 시작: <ret> That episode, “Queen Takes King”, actually aired on Ma
+     2.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: Gotham's fourth season, episode 12, titled "Queen Takes King", aired o
+     2.96s  user  발화 끝
+     6.21s  user  발화 시작: Yeah.
+     6.62s  user  발화 끝
+    11.20s  agent 발화 끝
+    11.30s  user  발화 시작: March 1st, huh?
+    12.68s  user  발화 끝
+    12.96s  agent 발화 시작: Yes, that's right. March 1st, 2018, is the date for Gotham s
+    15.31s  user  발화 시작: Nice.
+    15.94s  user  발화 끝
+    20.34s  agent 발화 끝
+    21.22s  user  발화 시작: Did you remember to take the chicken out of the freezer?
+    23.77s  user  발화 끝
+    23.78s  user  발화 시작: Oh… um, I think I need to set a reminder for that.
+    26.65s  <ret> 발화 (turn8 첫 프레임)
+    26.74s  user  발화 끝
+    26.81s  agent 발화 시작: <ret> I’ve set an alarm for July 11th at 6:00 PM to remind y
+    26.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Alarm set for July 11, 2026, 6:00 PM: take chicken out. 
+    30.23s  user  발화 시작: Yeah, yeah.
+    31.05s  user  발화 끝
+    32.83s  agent 발화 끝
+    32.86s  user  발화 시작: Perfect, thanks Zami.
+    34.21s  agent 발화 시작: You’re very welcome. I’m glad I could help with both your sh
+    34.24s  user  발화 끝
+    39.30s  agent 발화 끝

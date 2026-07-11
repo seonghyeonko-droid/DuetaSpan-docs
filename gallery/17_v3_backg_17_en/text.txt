@@ -1,73 +1,76 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Orami, a thoughtful and soft-spoken supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Zami, a kind and steady personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Isla",
+    "name": "Andrea",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "40s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-24",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-05-24",
+      "category": "home",
+      "text": "User's home address is 35 Pine Court."
     },
     {
-      "date": "2026-02-28",
+      "date": "2026-05-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-19",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
       "date": "2025-12-01",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in December."
     },
     {
-      "date": "2025-07-31",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2025-10-16",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-07-07",
-      "category": "home",
-      "text": "User's home address is 288 Elm Street."
+      "date": "2025-06-09",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-13",
-      "title": "Researching a used car",
+      "date": "2025-11-08",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering, where do arteries connect with ⟨ret@2.14s⟩ each other?
-[  2.54s][moshi] ⟦⚡SPAN@2.54s: Arterial anastomoses are most commonly found between arteries, providing alternate routes for blood flow.⟧ Arterial anastomoses are most commonly found between arteries, providing alternate routes for blood flow. It’s wonderful your curiosity leads you to learn about your body.
-[ 13.23s][user ] «to_other» Did you hear about the concert downtown next week?
-[ 15.56s][user ] Oh, that’s good to know. Are there any near the elbow?
-[ 18.51s][moshi] ⟨ret@18.27s⟩ ⟦⚡SPAN@18.51s: The elbow region contains a prominent arterial arcade formed by the anterior and posterior ulnar recurrent art⟧ The elbow region contains a prominent arterial arcade formed by the anterior and posterior ulnar recurrent arteries. That area has a particularly well-developed network.
-[ 29.52s][user ] That's interesting! And what about in the ⟨ret@31.70s⟩ feet?
-[ 32.02s][moshi] ⟦⚡SPAN@32.02s: In the feet, the dorsal pedis artery and posterior tibial artery contribute to a plantar arch, creating an imp⟧ In the feet, the dorsal pedis artery and posterior tibial artery contribute to a plantar arch, creating an important anastomosis. It’s reassuring to know our bodies have built-in redundancies.
+[  0.00s][user ] Hey, when does Gotham season 4 episode ⟨ret@2.42s⟩ 12 air?
+[  2.82s][moshi] ⟦⚡SPAN@2.82s: Gotham's fourth season, episode 12, titled "Queen Takes King", aired on March 1, 2018.⟧ That episode, “Queen Takes King”, actually aired on March 1, 2018. It was quite a pivotal moment in the season, if I recall.
+[  6.21s][user ] «backchannel» Yeah.
+[ 11.30s][user ] March 1st, huh?
+[ 12.96s][moshi] Yes, that's right. March 1st, 2018, is the date for Gotham season 4, episode 12.
+[ 15.31s][user ] «backchannel» Nice.
+[ 21.22s][user ] «to_other» Did you remember to take the chicken out of the freezer?
+[ 23.78s][user ] Oh… um, I think I need to set a reminder for that.
+[ 26.81s][moshi] ⟨ret@26.65s⟩ ⟦⚡SPAN@26.81s: (tool result) Alarm set for July 11, 2026, 6:00 PM: take chicken out. ID: 87492.⟧ I’ve set an alarm for July 11th at 6:00 PM to remind you to take the chicken out. That should help!
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "2026-07-11T18:00:00", "message": "take chicken out"}}
+[ 30.23s][user ] «backchannel» Yeah, yeah.
+[ 32.86s][user ] Perfect, thanks Zami.
+[ 34.21s][moshi] You’re very welcome. I’m glad I could help with both your show question and the dinner prep.

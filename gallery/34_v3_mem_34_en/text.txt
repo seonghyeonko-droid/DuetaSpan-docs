@@ -1,84 +1,70 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Klealo, a warm and attentive personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Elolo, a curious and validating personal guide who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Henri",
+    "name": "Lily",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-25",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-06-05",
+      "category": "work",
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2026-05-22",
+      "date": "2026-05-17",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-02-27",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-01-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-12-24",
+      "date": "2026-05-16",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-05-08",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2025-10-19",
+      "category": "home",
+      "text": "User's home address is 276 Cedar Lane."
+    },
+    {
+      "date": "2025-09-13",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-21",
-      "title": "Comparing gym memberships",
+      "date": "2026-05-22",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-03-25",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-23",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Henri, I'm Klealo. It's lovely to connect with you. Are you thinking about a change of scenery today?
-[  0.16s][user ] Um, yeah, I need ⟨ret@0.19s⟩ to get to Bondi Beach. How long will that take?
-[  0.27s][moshi] ⟦⚡SPAN@0.27s: [2026-03-25] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ I see you're in Sydney, Henri. Let me check the current traffic to Bondi Beach for you. The drive to Bondi Beach is about 9.9 kilometers and should take around 22 minutes right now.
-[  0.55s][user ] «backchannel» Uh-huh.
-[  0.56s][user ] And ⟨ret@0.56s⟩ can you find me a parking garage near there?
-[  0.64s][moshi] ⟦⚡SPAN@0.64s: (tool result) Bondi Beach Car Park: 120 Hall St, Bondi Beach NSW 2026, Australia. Rating: 4.2 stars (1,876 rev⟧ Bondi Beach Car Park at 120 Hall Street has a 4.2-star rating with over 1,800 reviews.
-      CALL: {"function": "map_search_places", "arguments": {"query": "parking garage near Bondi Beach, Australia", "location": "Bondi Beach, Australia"}}
-[  0.77s][user ] «backchannel» Oh.
-[  0.78s][user ] Perfect, thanks.
-[  0.80s][moshi] You're very welcome, Henri. I'm glad I could help with your trip to Bondi. Perhaps we can discuss travel planning further when you have time?
+[  0.00s][moshi] Hi Lily, I'm Elolo. It's lovely to meet you.
+[  0.08s][user ] Um, yes, ⟨ret@0.11s⟩ hello. I need to get to a florist, actually.
+[  0.19s][moshi] ⟦⚡SPAN@0.19s: [2025-09-13] User has a Golden Retriever named Max.⟧ Before we map that out, I remember you mentioning Max, your Golden Retriever. Are you planning to pick up flowers *for* him, or for someone else? It’s always good to have a little context!
+[  0.50s][user ] For ⟨ret@0.50s⟩ ⟨ret@0.51s⟩ a friend. And could you use my home address?
+[  0.59s][moshi] ⟦⚡SPAN@0.59s: [2025-09-13] User's home address is 276 Cedar Lane.⟧ Your home address is 276 Cedar Lane. Let me find florists nearby and give you directions.
+[  0.74s][moshi] ⟦⚡SPAN@0.74s: (tool result) Destination: Bloom & Blossom, 145 Bleecker St, New York, NY 10012. Distance: 1.2 miles. Estimate⟧ Bloom & Blossom on Bleecker Street is one point two miles from you, with an estimated drive time of seven minutes. I hope your friend enjoys the flowers!
+      CALL: {"function": "map_directions", "arguments": {"origin": "276 Cedar Lane", "destination": "florist"}}

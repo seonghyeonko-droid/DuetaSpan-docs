@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "성별",
+#     "name": "하은",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-04-11",
+#       "date": "2026-04-26",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-04-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2025-11-19",
+#       "date": "2026-01-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-11-25",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-24",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-16",
+#       "date": "2026-01-08",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -59,23 +56,29 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 성별님. 저는 우라입니다. 오늘 하루는 어떠셨어요?
-     4.03s  agent 발화 끝
-     4.31s  user  발화 시작: 어… 안녕하세요. 요즘 좀 바빠서 정신이 없네요.
-     8.56s  user  발화 끝
-     8.70s  agent 발화 시작: 바쁘신 와중에도 저를 찾아주셔서 감사합니다. 혹시 저에게 도움을 요청하시려는 특별한 이유가 있으신가요?
-    16.10s  user  발화 시작: 음… 이탈리아 음식을 좋아하잖아요. 혹시 부산에서 분위기 좋은 이탈리아 레스토랑 추천해 줄 수 있어요?
-    16.26s  agent 발화 끝
-    22.53s  <ret> 발화 (turn4 첫 프레임)
-    22.68s  agent 발화 시작: <ret> 이탈리아 음식을 좋아하시는군요. 성별님께 딱 맞는 곳을 찾아드릴게요. 부산에는 분위기 좋은 이탈리
-    22.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: User's favorite cuisine is Italian.
-    22.87s  user  발화 끝
-    29.25s  user  발화 시작: 음.
-    29.75s  user  발화 끝
-    32.60s  user  발화 시작: 오, 정말요? 어디가 제일 좋을까요?
-    32.65s  agent 발화 끝
-    35.62s  <ret> 발화 (turn7 첫 프레임)
-    35.69s  agent 발화 시작: <ret> "라 돌체 비타"라는 곳이 평점이 사 점 오에 가격대도 괜찮다고 하네요. 해운대구 동백로 십에 위
-    35.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) {"restaurants": [{"name": "La Dolce Vita", "address": "해
-    35.84s  user  발화 끝
-    44.22s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 하은님. 저는 티아크스입니다. 오늘 하루 어떠신가요?
+     1.95s  user  발화 시작: 음.
+     2.45s  user  발화 끝
+     4.90s  agent 발화 끝
+     5.46s  user  발화 시작: 음… 스위스 여행 계획 세우고 있는데, 혹시 추천해 줄 만한 곳 있어요?
+    10.28s  <ret> 발화 (turn3 첫 프레임)
+    10.43s  agent 발화 시작: <ret> 취리히에 괜찮은 스시집이 있습니다. 혹시 다른 종류의 음식을 선호하시나요?
+    10.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.03s]: [2026-01-25] User's favorite cuisine is sushi.
+    10.61s  user  발화 끝
+    12.32s  user  발화 시작: 응.
+    12.82s  user  발화 끝
+    16.45s  agent 발화 끝
+    16.49s  user  발화 시작: 아니, 스시 괜찮아요. 그런데 알레르기가 있어서… 꽃가루 알레르기가 좀 심해요.
+    22.49s  <ret> 발화 (turn6 첫 프레임)
+    22.55s  user  발화 끝
+    22.57s  agent 발화 시작: <ret> 꽃가루 알레르기가 있으시군요. 스위스는 삼월에 꽃가루가 덜 날리는 지역을 찾아보는 게 좋겠습니다.
+    22.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: [2025-11-17] User is allergic to pollen.
+    27.56s  user  발화 시작: 응.
+    28.06s  user  발화 끝
+    32.26s  agent 발화 끝
+    32.69s  user  발화 시작: 아, 정말요? 그럼 취리히 근처에 꽃가루가 덜한 곳이 있을까요?
+    37.08s  <ret> 발화 (turn9 첫 프레임)
+    37.31s  agent 발화 시작: <ret> 삼월 취리히의 꽃가루 농도는 낮고, 기온은 오도에서 십이도 사이, 습도는 육십에서 칠십퍼센트, 바
+    37.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: (tool result) Zurich, Switzerland: March 1-31, 2026 - Average pollen c
+    37.51s  user  발화 끝
+    47.97s  agent 발화 끝

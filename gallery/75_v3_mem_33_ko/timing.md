@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "연현",
+#     "name": "노영",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,88 +12,66 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-19",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-10-27",
+#       "date": "2026-04-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2026-02-19",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-10-19",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2025-12-31",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-09-11",
+#       "date": "2025-12-03",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-08-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-10-26",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-26",
+#       "date": "2025-07-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-04",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 브리엔 씨. 지금 부산 시간 몇 시예요? | S2 아, 네. 지난번에 얘기했던 마라톤 훈련… 오늘 저녁에 할 예 | S3 음… 혹시 제가 고양이 이름이 뭐였죠? 기억이 잘 안 나네요. | S4 아, 맞다! 루나! 고맙습니다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 연현님! 저는 여러분을 도와드리는 브리엔이라고 해요. 오늘 하루 잘 보내셨나요?
-     5.33s  agent 발화 끝
-     5.55s  user  발화 시작: 안녕하세요, 브리엔 씨. 지금 부산 시간 몇 시예요?
-     8.96s  <ret> 발화 (turn2 첫 프레임)
-     9.01s  user  발화 끝
-     9.04s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분이에요. 혹시 오늘 특별한 계획 있으신가요?
-     9.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-    15.01s  agent 발화 끝
-    15.11s  user  발화 시작: 아, 네. 지난번에 얘기했던 마라톤 훈련… 오늘 저녁에 할 예정이에요.
-    19.85s  agent 발화 시작: 아, 마라톤 훈련이요! 정말 멋지네요. 꾸준히 하시면 분명 좋은 결과가 있을 거예요.
-    20.06s  user  발화 끝
-    23.11s  user  발화 시작: 네.
-    23.70s  user  발화 끝
-    26.28s  agent 발화 끝
-    26.55s  user  발화 시작: 음… 혹시 제가 고양이 이름이 뭐였죠? 기억이 잘 안 나네요.
-    29.66s  <ret> 발화 (turn7 첫 프레임)
-    29.98s  agent 발화 시작: <ret> 고양이 이름이 루나였어요. 예쁜 이름이죠. 루나와 함께 즐거운 시간 보내세요.
-    29.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [2025-10-27] User has a tabby cat named Luna.
-    30.24s  user  발화 끝
-    35.12s  user  발화 시작: 아, 맞다! 루나! 고맙습니다.
-    35.16s  agent 발화 끝
-    37.23s  agent 발화 시작: 천만에요. 언제든 궁금한 점이 있으시면 저에게 말씀해 주세요. 제가 항상 곁에서 응원할게요.
-    37.38s  user  발화 끝
-    44.33s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 노영님. 저는 풀이에요. 건강과 일상 습관을 도와드리는 상담사입니다.
+     5.05s  agent 발화 끝
+     5.57s  user  발화 시작: 아, 네, 안녕하세요. 지금 부산 시간 몇 시예요?
+     8.69s  <ret> 발화 (turn2 첫 프레임)
+     8.77s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분이에요. 오늘 하루도 잘 보내세요.
+     8.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     8.80s  user  발화 끝
+    14.54s  user  발화 시작: 혹시 제가 시월에 리스본 여행을 간다고 말씀드렸었죠?
+    14.57s  agent 발화 끝
+    17.75s  <ret> 발화 (turn4 첫 프레임)
+    17.98s  agent 발화 시작: <ret> 네, 시월에 리스본 여행을 계획하고 있다고 말씀해주셨어요. 즐거운 여행 준비하세요.
+    17.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: [2026-04-06] User is planning a trip to Lisbon in October.
+    18.19s  user  발화 끝
+    22.93s  agent 발화 끝

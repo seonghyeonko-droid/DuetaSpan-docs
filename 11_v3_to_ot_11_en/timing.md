@@ -4,108 +4,123 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Aiden",
+#     "name": "Rosa",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-05-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-05-16",
 #       "category": "home",
-#       "text": "User's home address is 505 Pine Court."
+#       "text": "User's home address is 986 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-06-04",
+#       "date": "2026-02-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-25",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Researching a used car",
+#       "date": "2025-12-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-23",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-09-29",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote the song “Sh | S2 Oh, interesting. What genre would  | S3 Wow, that’s quite a gap in time! W | S4 Oh, that’s okay. Maybe I can look 
+# EXAMINER(FDB-v2) 단계: S1 Hi, I’m new to the city and feelin | S2 And the other side was… the Commun | S3 Wow, that *is* a long time. | S4 Oh, that’s okay. I can probably se
 
-     0.00s  user  발화 시작: Do you know who wrote the song “Show Me the Way to Amarillo”
-     2.53s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  user  발화 끝
-     2.92s  agent 발화 시작: <ret> That song was written by Howard Greenfield, along with
-     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Howard Greenfield co-wrote "Show Me the Way to Amarillo" with Burt Bac
-     7.69s  user  발화 시작: …was it a big hit when it first came out?
-     8.39s  agent 발화 끝
-    10.04s  user  발화 끝
-    10.05s  agent 발화 시작: It wasn't initially a major hit in 1968, but it gained popul
-    16.07s  user  발화 시작: Oh, interesting. What genre would you classify it as?
-    16.16s  agent 발화 끝
-    19.52s  user  발화 끝
-    19.93s  agent 발화 시작: It’s generally considered a pop song, with elements of count
-    22.50s  user  발화 시작: Yeah.
-    23.14s  user  발화 끝
-    25.77s  user  발화 시작: I see. I’m trying to remember who covered it later on.
-    25.91s  agent 발화 끝
-    29.00s  <ret> 발화 (turn8 첫 프레임)
-    29.05s  user  발화 끝
-    29.32s  agent 발화 시작: <ret> Tony Christie had a very successful cover of that song
-    29.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.56s]: Tony Christie released a successful cover of "Show Me the Way to Amari
-    34.85s  user  발화 시작: Oh.
-    35.44s  user  발화 끝
-    36.88s  agent 발화 끝
-    37.16s  user  발화 시작: Wow, that’s quite a gap in time! Was it different than the o
-    41.12s  agent 발화 시작: It was a more upbeat, orchestral arrangement than the origin
-    41.14s  user  발화 끝
-    43.07s  user  발화 시작: Uh-huh.
-    43.71s  user  발화 끝
-    45.93s  user  발화 시작: That sounds nice. Do you know if he ever performed it live?
-    45.98s  agent 발화 끝
-    48.85s  <ret> 발화 (turn14 첫 프레임)
-    49.08s  agent 발화 시작: <ret> I’m afraid I don’t have information about specific liv
-    49.09s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.47s]: (no information found)
-    49.30s  user  발화 끝
-    54.55s  agent 발화 끝
-    55.22s  user  발화 시작: Oh, that’s okay. Maybe I can look that up myself.
-    57.81s  user  발화 끝
-    57.93s  agent 발화 시작: It can be lovely to discover a song's history on your own. S
-    65.30s  agent 발화 끝
-    65.53s  user  발화 시작: That’s true. I appreciate your help, Laris.
-    68.43s  user  발화 끝
-    68.51s  agent 발화 시작: It’s my pleasure to offer what I can. Music often connects u
-    75.22s  agent 발화 끝
+     0.00s  user  발화 시작: Hi, I’m new to the city and feeling a little lost.
+     3.05s  user  발화 끝
+     3.22s  agent 발화 시작: Welcome! It’s perfectly normal to feel that way when settlin
+     5.54s  user  발화 시작: Right.
+     5.99s  user  발화 끝
+     7.63s  user  발화 시작: That’s good to hear. Um, I was reading about Chinese history
+     7.79s  agent 발화 끝
+    12.46s  <ret> 발화 (turn4 첫 프레임)
+    12.68s  agent 발화 시작: <ret> That’s a common point of confusion, actually—the Chine
+    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: The Chinese Civil War was fought between the Kuomintang-led Republic o
+    12.82s  user  발화 끝
+    21.40s  user  발화 시작: So, the Republic of China… was one of the sides?
+    21.67s  agent 발화 끝
+    24.99s  <ret> 발화 (turn6 첫 프레임)
+    25.30s  agent 발화 시작: <ret> Yes, the Republic of China, under the Kuomintang, held
+    25.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.84s]: The Republic of China, under the Kuomintang, held power in mainland Ch
+    25.43s  user  발화 끝
+    29.24s  user  발화 시작: Wow.
+    30.06s  user  발화 끝
+    33.02s  user  발화 시작: And the other side was… the Communists?
+    33.13s  agent 발화 끝
+    35.35s  <ret> 발화 (turn9 첫 프레임)
+    35.74s  agent 발화 시작: <ret> Exactly—the Communist Party of China, led by Mao Zedon
+    35.74s  user  발화 끝
+    35.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: The Communist Party of China, led by Mao Zedong, sought to overthrow t
+    45.75s  agent 발화 끝
+    46.04s  user  발화 시작: I see. Was it a really long war?
+    48.79s  <ret> 발화 (turn11 첫 프레임)
+    48.85s  agent 발화 시작: <ret> It was a rather lengthy conflict, actually, occurring 
+    48.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: The Chinese Civil War occurred intermittently from 1927 to 1949, with 
+    49.00s  user  발화 끝
+    53.49s  user  발화 시작: Mm-hmm.
+    53.95s  user  발화 끝
+    58.00s  user  발화 시작: Wow, that *is* a long time.
+    58.03s  agent 발화 끝
+    60.61s  agent 발화 시작: It certainly was. It’s a significant period in Chinese histo
+    60.72s  user  발화 끝
+    67.94s  agent 발화 끝
+    68.68s  user  발화 시작: You're right. I think I’ll look up some museums.
+    71.10s  <ret> 발화 (turn16 첫 프레임)
+    71.25s  agent 발화 시작: <ret> That’s a wonderful idea! I can help you find some muse
+    71.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (no information found)
+    71.27s  user  발화 끝
+    75.92s  agent 발화 시작: I'm sorry, I can't find attractions at the moment. My travel
+    76.11s  agent 발화 끝
+    81.30s  user  발화 시작: Oh, that’s okay. I can probably search for them myself.
+    81.39s  agent 발화 끝
+    83.88s  user  발화 끝
+    83.90s  agent 발화 시작: I can always assist with other things as you settle in—anyth
+    92.66s  user  발화 시작: That sounds great, thanks. I might need help with restaurant
+    92.71s  agent 발화 끝
+    96.36s  user  발화 끝
+    96.62s  agent 발화 시작: I’m happy to help whenever you need it. Perhaps we can discu
+   104.87s  agent 발화 끝

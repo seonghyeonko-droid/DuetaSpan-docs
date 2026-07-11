@@ -4,112 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "시담",
+#     "name": "소온",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-05-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-05-16",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
-#       "date": "2025-06-04",
+#       "date": "2026-02-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-25",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-25",
-#       "title": "Researching a used car",
+#       "date": "2025-09-29",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그 노래… “Show Me the Way to Amarillo | S2 혹시… 그분이 한국 노래도 작사했나요? | S3 “Hound Dog”요? 엘비스 프레슬리도 불렀잖아요? — | S4 그쵸. 라리스 씨는 노래 좋아하세요?
+# EXAMINER(FDB-v2) 단계: S1 중국 내전에서 맞붙었던 양쪽 세력은 무엇이었나요? | S2 음… 뭐랄까, 괜찮은 동네를 찾는 게 제일 어렵죠. | S3 강남구… 거기는 집값이 비싼가요? | S4 이번 주 토요일에 강남구 말고 다른 동네를 좀 둘러보고 싶어요
 
-     0.00s  user  발화 시작: 그 노래… “Show Me the Way to Amarillo” 부른 사람 누구였죠?
-     3.37s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  user  발화 끝
-     3.61s  agent 발화 시작: <ret> “Show Me the Way to Amarillo”는 하워드 그린필드 씨가 찰스 스트라우스 씨와
-     3.61s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.70s]: Howard Greenfield co-wrote the song "Show Me the Way to Amarillo" with
-     5.89s  user  발화 시작: 네.
-     6.39s  user  발화 끝
-     9.30s  agent 발화 끝
-     9.80s  user  발화 시작: 아, 그렇군요. 그분 다른 노래도 아세요?
-    12.47s  user  발화 끝
-    12.66s  agent 발화 시작: 하워드 그린필드 씨는 정말 많은 곡을 작사하셨어요.
-    14.40s  user  발화 시작: 맞아요.
-    15.04s  user  발화 끝
-    16.36s  agent 발화 끝
-    16.67s  user  발화 시작: 혹시… 그분이 한국 노래도 작사했나요?
-    18.98s  <ret> 발화 (turn7 첫 프레임)
-    19.30s  agent 발화 시작: <ret> 죄송하지만, 하워드 그린필드 씨가 한국 노래를 작사했다는 정보는 찾을 수 없었어요.
-    19.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (no information found)
-    19.35s  user  발화 끝
-    24.91s  agent 발화 끝
-    25.15s  user  발화 시작: 아… 그렇군요. 그럼, 그분이 작사한 노래 중에 제일 유명한 건 뭐예요?
-    29.62s  <ret> 발화 (turn9 첫 프레임)
-    29.93s  agent 발화 시작: <ret> 하워드 그린필드 씨가 작사한 노래 중 가장 유명한 건 천구백오십이년에 빅 마마 손튼 씨가 처음 녹
-    29.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: Howard Greenfield's most famous song is "Hound Dog," originally record
-    30.14s  user  발화 끝
-    33.99s  user  발화 시작: 그렇죠.
-    34.63s  user  발화 끝
-    37.72s  agent 발화 끝
-    37.84s  user  발화 시작: “Hound Dog”요? 엘비스 프레슬리도 불렀잖아요? —
-    41.25s  user  발화 시작: …그 노래 엘비스 프레슬리는 언제 불렀어요?
-    41.31s  user  발화 끝
-    43.70s  <ret> 발화 (turn13 첫 프레임)
-    43.78s  agent 발화 시작: <ret> 엘비스 프레슬리 씨는 천구백오십육년에 “Hound Dog”를 녹음하셨고, 그 노래는 엘비스 씨의 
-    43.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: Elvis Presley recorded "Hound Dog" in 1956, and it became one of his s
-    43.89s  user  발화 끝
-    46.59s  user  발화 시작: 정말요?
-    47.32s  user  발화 끝
-    51.33s  agent 발화 끝
-    51.48s  agent 발화 시작: 두 분 모두 훌륭한 가수를 통해 많은 사랑을 받은 노래인 것 같아요.
-    55.27s  agent 발화 끝
-    55.34s  user  발화 시작: 그쵸. 라리스 씨는 노래 좋아하세요?
-    57.92s  user  발화 끝
-    58.01s  agent 발화 시작: 저는 사람들의 마음을 움직이는 노래를 듣는 걸 좋아해요. 음악은 위로가 되기도 하니까요.
-    63.58s  agent 발화 끝
-    63.74s  user  발화 시작: 맞아요. 저도 그래요. 힘든 일이 있을 때 노래를 들으면 마음이 편안해져요.
-    68.04s  agent 발화 시작: 힘들 때 음악에 기대는 건 정말 좋은 방법인 것 같아요. 마음을 다스리는 데 도움이 될 수 있거든요.
-    68.19s  user  발화 끝
-    74.34s  agent 발화 끝
+     0.00s  user  발화 시작: 중국 내전에서 맞붙었던 양쪽 세력은 무엇이었나요?
+     3.11s  <ret> 발화 (turn1 첫 프레임)
+     3.23s  user  발화 끝
+     3.35s  agent 발화 시작: <ret> 중국 내전은 국민당이 이끄는 중화민국과 중국 공산당 사이에서 벌어졌습니다.
+     3.35s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.18s]: The Chinese Civil War was fought between the Kuomintang-led Republic o
+     5.98s  user  발화 시작: 네.
+     6.80s  user  발화 끝
+     8.52s  user  발화 시작: 아, 그렇군요.
+     8.53s  agent 발화 끝
+     9.66s  user  발화 끝
+     9.74s  agent 발화 시작: 새로운 도시에 정착하시는 분들이 가장 어려워하는 점이 뭔지 여쭤봐도 될까요?
+    12.24s  user  발화 시작: 네네.
+    13.07s  user  발화 끝
+    14.51s  agent 발화 끝
+    15.63s  user  발화 시작: 음… 뭐랄까, 괜찮은 동네를 찾는 게 제일 어렵죠.
+    19.07s  <ret> 발화 (turn7 첫 프레임)
+    19.34s  user  발화 끝
+    19.37s  agent 발화 시작: <ret> 동네를 찾는 게 어려우시다고 하셨죠. 강남구는 서울에서 가장 부유한 지역 중 하나로, 고급 쇼핑과
+    20.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.37s]: Gangnam-gu is considered one of the most affluent districts of Seoul, 
+    26.97s  agent 발화 끝
+    27.39s  user  발화 시작: 강남구… 거기는 집값이 비싼가요?
+    29.57s  <ret> 발화 (turn9 첫 프레임)
+    29.89s  user  발화 끝
+    29.89s  agent 발화 시작: <ret> 강남구에는 현재 백이십삼채의 매물이 있고, 평균 가격은 이십오억 원입니다.
+    29.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) Found 123 houses in Gangnam-gu, average price ₩2,500,000
+    35.09s  user  발화 시작: 이십오억 원이라니, 정말 비싸네요.
+    35.17s  agent 발화 끝
+    37.56s  agent 발화 시작: 다른 지역도 한번 알아보실까요? 좀 더 합리적인 가격대의 동네도 많습니다.
+    37.68s  user  발화 끝
+    40.23s  user  발화 시작: 아.
+    40.63s  user  발화 끝
+    42.42s  agent 발화 끝
+    43.54s  user  발화 시작: 이번 주 토요일에 강남구 말고 다른 동네를 좀 둘러보고 싶어요.
+    47.43s  agent 발화 시작: 이번 주 토요일에 다른 동네를 둘러보시겠군요. 제가 몇 군데 추천해 드릴까요?
+    47.51s  user  발화 끝
+    52.71s  agent 발화 끝

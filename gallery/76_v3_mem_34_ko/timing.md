@@ -4,87 +4,70 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "연국",
+#     "name": "은찬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-06-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-05-25",
+#       "date": "2026-05-17",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-05-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-01-22",
+#       "date": "2026-05-16",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-09-04",
+#       "date": "2026-05-08",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-09-13",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-02",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 혹시 지금 제 집에서 해운대까지 얼마나 걸릴 | S2 사십분? 음… 지금 출발하면 좀 막히겠네요. | S3 아니요, 괜찮아요. 그냥 대략적인 시간만 알면 됐어요. | S4 그냥 바람 쐬러 가려고요. 코코도 데리고 갈 건데, 강아지 동
 
-     0.00s  agent 발화 시작: 안녕하세요, 연국님. 저는 크레아로입니다. 오늘 하루를 편안하게 만들어 드릴게요.
-     0.09s  user  발화 시작: 어… 안녕하세요. 혹시 지금 제 집에서 해운대까지 얼마나 걸릴까요?
-     0.09s  agent 발화 끝
-     0.09s  <ret> 발화 (turn2 첫 프레임)
-     0.17s  agent 발화 시작: <ret> 연국님, 제가 확인해 보니, 저장된 주소 기준으로 해운대까지 가는 데는 대략 사십분 정도 걸릴 것
-     0.17s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: [2026-06-21] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.17s  user  발화 끝
-     0.33s  user  발화 시작: 사십분? 음… 지금 출발하면 좀 막히겠네요.
-     0.33s  agent 발화 끝
-     0.38s  agent 발화 시작: 네, 지금 출발하시면 교통 상황 때문에 조금 더 걸릴 수도 있어요. 혹시 다른 경로를 알아볼까요?
-     0.38s  user  발화 끝
-     0.53s  user  발화 시작: 음.
-     0.53s  agent 발화 끝
-     0.54s  user  발화 시작: 아니요, 괜찮아요. 그냥 대략적인 시간만 알면 됐어요.
-     0.54s  user  발화 끝
-     0.59s  <ret> 발화 (turn10 첫 프레임)
-     0.61s  agent 발화 시작: 혹시 해운대에 가시는 이유가 있으신가요? 특별한 계획이라도 있으신 건가요?
-     0.61s  user  발화 끝
-     0.69s  user  발화 시작: 응.
-     0.69s  agent 발화 끝
-     0.70s  user  발화 시작: 그냥 바람 쐬러 가려고요. 코코도 데리고 갈 건데, 강아지 동반 가능한 해변 있나요?
-     0.70s  user  발화 끝
-     0.83s  agent 발화 시작: <ret> 네, 부산에는 코코와 함께 갈 수 있는 해운대 다대포 해변이 있어요. 평점이 사 점 오점이고, 가
-     0.83s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) {"restaurants": [{"name": "Dadaepo Beach", "address": "D
-     0.83s  user  발화 끝
-     1.00s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 은찬님! 저는 에이전트 에로로라고 해요. 오늘 하루는 어떠신가요?
+     0.20s  user  발화 시작: 안녕하세요, 에로로 씨. 집에서 강남역까지 어떻게 가야 할까요?
+     0.20s  agent 발화 끝
+     0.31s  <ret> 발화 (turn2 첫 프레임)
+     0.39s  agent 발화 시작: <ret> 은찬님 댁 주소는 대구 중구 동인동 팔 팔 일번지시네요. 강남역까지 가는 길을 찾아드릴게요. 강남
+     0.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.59s]: [2025-12-02] User's home address is 대구 중구 동인동 88-1.
+     0.39s  user  발화 끝
+     0.98s  user  발화 시작: 진짜요?
+     0.98s  agent 발화 끝
+     1.00s  user  발화 끝

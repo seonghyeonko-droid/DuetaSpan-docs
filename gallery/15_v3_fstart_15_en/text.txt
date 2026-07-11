@@ -1,62 +1,51 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Toraus, a kind and steady counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Tumi, a grounded and empathetic personal guide who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
     "name": "Hannah",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "40s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in May."
+      "date": "2026-04-10",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-06-19",
-      "category": "home",
-      "text": "User's home address is 957 Birch Road."
+      "date": "2026-01-27",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-03-05",
+      "date": "2026-01-10",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-12-30",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-11-21",
+      "category": "home",
+      "text": "User's home address is 197 Oak Avenue."
+    },
+    {
+      "date": "2025-11-06",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-17",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-28",
+      "date": "2026-06-03",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -67,54 +56,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you hover over the button to sort by price?
-[  3.37s][moshi] ⟨ret@3.29s⟩ ⟦⚡SPAN@3.37s: (no information found)⟧ I’m sorry, I wasn’t able to complete that action for you. The site didn’t respond as expected.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.example.com", "query": "hover over the button to sort by price"}}
-[  9.10s][user ] Oh. Okay, well, what’s the weather in Seoul right now?
-[ 12.99s][moshi] ⟨ret@12.75s⟩ ⟦⚡SPAN@12.99s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 22.22s][moshi] It’s quite pleasant, isn’t it?
-[ 23.67s][user ] Yeah, it sounds nice. Um, do you remember what I said about my sister last ⟨ret@29.12s⟩ week?
-[ 29.36s][moshi] ⟦⚡SPAN@29.36s: [2026-07-03] My sister is really struggling with her new job.⟧ You mentioned on July 3rd that your sister is really struggling with her new job.
-[ 31.66s][user ] «backchannel» Oh.
-[ 34.24s][user ] Right. That’s it. I’m worried about her.
-[ 36.45s][moshi] It’s natural to feel worried when loved ones are facing difficulties. It shows you care deeply.
-[ 38.94s][user ] «backchannel» Yeah.
-[ 43.25s][user ] I guess so. What's the capital of ⟨ret@46.52s⟩ Australia?
-[ 46.60s][moshi] ⟦⚡SPAN@46.60s: Canberra is the capital city of Australia, officially becoming the capital in 1913, replacing Melbourne, with ⟧ Canberra is the capital city of Australia, officially becoming the capital in 1913. It had a population of 462,773 as of June 2023.
-[ 54.15s][user ] «backchannel» Mm-hmm.
-[ 58.91s][user ] Huh. I always forget that.
-[ 61.10s][moshi] It’s a common mistake, many people think it’s Sydney or Melbourne.
-[ 62.52s][user ] «backchannel» Yeah.
-[ 64.61s][user ] I need to book a restaurant for two people on Saturday evening.
-[ 68.58s][moshi] Do you have a cuisine preference or a specific location in mind?
-[ 70.56s][user ] «backchannel» Yeah.
-[ 73.05s][user ] Italian, somewhere near Gangnam.
-[ 75.85s][moshi] ⟨ret@75.45s⟩ ⟦⚡SPAN@75.85s: (tool result) Ristorante Como, Gangnam-gu, Seoul - 4.5 stars, price range: ₩₩₩⟧ Ristorante Como in Gangnam-gu has 4.5 stars and a price range of ₩₩₩. Would you like me to check availability?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Gangnam", "people": "2", "time": "Saturday evening"}}
-[ 84.19s][user ] Yes, please. ⟨ret@85.28s⟩
-[ 85.52s][moshi] ⟦⚡SPAN@85.52s: (tool result) Reservation confirmed for Ristorante Como, Saturday, 7:30 PM, 2 people, confirmation ID: 8X9L2⟧ Your reservation at Ristorante Como is confirmed for Saturday at 7:30 PM for two people. Your confirmation ID is 8X9L2.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Ristorante Como", "date": "Saturday", "time": "evening", "people": "2"}}
-[ 94.67s][user ] Perfect. Thank you.
-[ 96.20s][moshi] You’re very welcome. I’m glad I could help with that.
-[101.59s][user ] What’s the exchange rate between the Korean Won and the US dollar?
-[106.15s][moshi] ⟨ret@105.92s⟩ ⟦⚡SPAN@106.16s: (tool result) 1  1,307.25 KRW as of July 10, 2026, 2:45 PM KST.⟧ As of 2:45 PM KST today, one US dollar equals 1,307.25 Korean Won.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "KRW/USD"}}
-[114.78s][user ] Wow, that’s… a lot.
-[117.24s][moshi] It can certainly feel that way when converting larger amounts.
-[120.67s][user ] Could you find me some information about ⟨ret@124.17s⟩ mindfulness?
-[124.33s][moshi] ⟦⚡SPAN@124.33s: (tool result) Mindfulness is the basic human capacity to be fully present, aware of where we are and what we’r⟧ Mindfulness is the basic human capacity to be fully present, aware of our surroundings and not overwhelmed by what's happening, according to mindful.org.
-      CALL: {"function": "search", "arguments": {"query": "what is mindfulness"}}
-[129.36s][user ] «backchannel» Mm-hmm.
-[133.77s][user ] That sounds… good. I think I need that.
-[137.56s][moshi] It's a valuable practice, especially when life feels overwhelming. Taking a moment to simply be present can make a big difference.
-[145.37s][user ] I wonder if my sister knows about that…
-[148.28s][moshi] It might be something to share with her, if you think she’d be open to it. Sometimes, just knowing there are tools available can be comforting.
-[155.43s][user ] Maybe you're right. What time is it in London?
-[159.43s][moshi] ⟨ret@159.19s⟩ ⟦⚡SPAN@159.43s: (tool result) It is Wednesday, July 10, 2026 at 7:45 AM in Europe/London right now.⟧ It is currently Wednesday, July 10th, 2026, at 7:45 AM in London.
-      CALL: {"function": "get_time", "arguments": {"location": "London"}}
-[163.33s][user ] «backchannel» Right.
-[165.32s][user ] Oh, still early there.
-[167.18s][moshi] Yes, quite a bit earlier than here. It’s a good time for a quiet start to the day, perhaps.
-[172.82s][user ] I think I'll call her later.
-[174.49s][moshi] That sounds like a thoughtful plan. Reaching out can make all the difference.
+[  0.00s][user ] I am looking for a pharmacy near thirty-three point four four eight four latitude and negative one hundred twelve point zero seven four longitude. uh, actually, never mind that. What time is it in Seoul right now?
+[ 14.80s][moshi] ⟨ret@14.72s⟩ ⟦⚡SPAN@14.80s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now. That’s a big time difference, isn’t it?
+      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
+[ 18.09s][user ] «backchannel» Yeah.
+[ 23.12s][user ] Wow, it is. Could you find…
+[ 26.72s][user ] …me some good Italian restaurants nearby?
+[ 30.69s][moshi] ⟨ret@30.45s⟩ ⟦⚡SPAN@30.69s: (no information found)⟧ I’m sorry, I couldn’t find any Italian restaurants near your current location. Perhaps you could share a city or address?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 34.66s][user ] «backchannel» Yeah, yeah.
+[ 37.37s][user ] Oh, that’s okay. Just tell me about yourself, Tumi.
+[ 40.84s][moshi] [happy] I'm Tumi, and I love helping people plan their time off and trips! I find it really rewarding to assist with everything from finding a quick bite to mapping out a whole adventure.

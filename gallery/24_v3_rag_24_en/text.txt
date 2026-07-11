@@ -1,72 +1,46 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Frari, a encouraging and non-judgmental supportive advisor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Drael, a practical and reassuring supportive advisor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Grace",
+    "name": "Rosa",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "early 20s",
-    "language": "German"
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-15",
+      "date": "2026-05-03",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-12-02",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-08-16",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-08-08",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-08-05",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-06-03",
+      "date": "2026-03-12",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-13",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-13",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-04-14",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-29",
+      "date": "2025-09-26",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -77,13 +51,48 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm planning a vacation and feeling a bit overwhelmed.
-[  0.11s][moshi] Oh, hello!
-[  0.13s][user ] I ⟨ret@0.00s⟩ was wondering, where does *Need for Speed Payback* take place?
-[  0.26s][moshi] ⟦⚡SPAN@0.26s: The game *Need for Speed Payback* is largely set in Fortune Valley, a fictional open world inspired by the lan⟧ Well, *Need for Speed Payback* is primarily set in Fortune Valley—it’s a fictional area inspired by Nevada and California landscapes.
-[  0.48s][user ] «backchannel» Uh-huh.
-[  0.49s][user ] What’s ⟨ret@0.49s⟩ the weather like there right now?
-[  0.57s][moshi] ⟦⚡SPAN@0.57s: (tool result) Fortune Valley, Nevada: 28.3°C, humidity 21%, wind 13.4 km/h, clear skies.⟧ Currently in Fortune Valley, Nevada, it’s 28.3 degrees Celsius, with 21% humidity and clear skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Fortune Valley, Nevada"}}
-[  0.73s][user ] That sounds…nice. Maybe I should go in October?
-[  0.82s][moshi] October sounds lovely! It's a great time to enjoy pleasant weather without the scorching summer heat.
+[  0.00s][user ] Good afternoon. I’m trying to understand how the Indian budget process works.
+[  0.02s][moshi] Good afternoon to you too.
+[  0.03s][user ] What’s ⟨ret@0.00s⟩ the first step in creating the budget?
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: The Union budget preparation begins around September-October, with ministries submitting their initial estimat⟧ The Union budget preparation actually begins around September or October, with ministries submitting their initial estimates.
+[  0.08s][user ] And ⟨ret@0.02s⟩ who ultimately decides the final budget details?
+[  0.10s][moshi] ⟦⚡SPAN@0.10s: The final budget is decided by the Union Cabinet, led by the Prime Minister and the Finance Minister.⟧ The final budget details are decided by the Union Cabinet, led by the Prime Minister and the Finance Minister.
+[  0.14s][user ] Is the Finance Minister always the key person?
+[  0.15s][moshi] Yes, the Finance Minister plays a central role in the budget process. It’s a significant responsibility.
+[  0.18s][user ] When ⟨ret@0.00s⟩ is the budget usually presented to Parliament?
+[  0.20s][moshi] ⟦⚡SPAN@0.20s: The Union Budget is typically presented to Parliament on the last working day of February.⟧ The Union Budget is typically presented to Parliament on the last working day of February.
+[  0.23s][user ] What happens if that day falls on a weekend?
+[  0.25s][moshi] The presentation is shifted to the preceding working day if the last day of February is a weekend.
+[  0.28s][user ] [happy] So it’s always *in* February?
+[  0.29s][moshi] Yes, it’s consistently presented in February, though the exact date shifts slightly each year.
+[  0.32s][user ] Is ⟨ret@0.00s⟩ there a fixed date, or does it vary?
+[  0.34s][moshi] ⟦⚡SPAN@0.34s: While usually the last working day of February, the date can be changed by the government.⟧ While it’s usually the last working day of February, the date can be changed by the government.
+[  0.37s][user ] «backchannel» Yeah, totally.
+[  0.38s][user ] Who decides when to change that date, though?
+[  0.39s][moshi] The decision to alter the presentation date rests with the Union Cabinet, guided by the Finance Ministry.
+[  0.43s][user ] What ⟨ret@0.05s⟩ about the timing of the budget presentation itself? What time?
+[  0.45s][moshi] ⟦⚡SPAN@0.45s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It is currently Friday, July 10, 2026 at 2:47 PM in Asia/Seoul. The budget is usually presented around 11 AM.
+      CALL: {"function": "get_time", "arguments": {}}
+[  0.49s][user ] 11 AM… that's quite early. Is that a tradition?
+[  0.51s][moshi] It is a long-standing convention, allowing time for debate and scrutiny throughout the parliamentary session.
+[  0.54s][user ] And ⟨ret@0.39s⟩ who actually delivers the budget speech?
+[  0.55s][moshi] ⟦⚡SPAN@0.55s: The Finance Minister traditionally presents the Union Budget speech in Parliament.⟧ The Finance Minister traditionally presents the Union Budget speech in Parliament.
+[  0.57s][user ] Does the Prime Minister ever present it?
+[  0.59s][moshi] While rare, the Prime Minister has occasionally presented the budget speech in the past.
+[  0.62s][user ] [curious] What were the circumstances then?
+[  0.63s][moshi] It usually happens when a new government is formed or during times of significant economic change.
+[  0.66s][user ] So, the Finance Minister is the usual one, but.
+[  0.68s][moshi] «interrupted» —the Prime Minister can step in when needed, yes. It demonstrates the government’s commitment—
+[  0.71s][user ] «interrupts_prev» …but ⟨ret@0.65s⟩ what about before India became independent? Who presented the budget then?
+[  0.73s][moshi] ⟦⚡SPAN@0.73s: Before 1947, the budget was presented by the Viceroy of India, representing the British Crown.⟧ Before 1947, the budget was presented by the Viceroy of India, representing the British Crown.
+[  0.76s][user ] So, it wasn’t an Indian official at all?
+[  0.77s][moshi] Correct. The Viceroy acted as the financial representative of the British government in India.
+[  0.80s][user ] «backchannel» Uh-huh.
+[  0.80s][user ] Interesting. And what role did Parliament play then?
+[  0.82s][moshi] Before independence, the Legislative Council had limited powers regarding the budget; it could debate, but not fully control it.
+[  0.86s][user ] [sigh] It’s so different now.
+[  0.87s][moshi] It truly is. The Indian Parliament now holds full authority over the budget process. It’s a testament to our sovereignty.
+[  0.91s][user ] Okay, ⟨ret@0.69s⟩ one last question. What determines the financial year itself?
+[  0.93s][moshi] ⟦⚡SPAN@0.93s: India’s financial year runs from April 1st to March 31st, established in 1866.⟧ India’s financial year runs from April 1st to March 31st, a system established back in 1866.
+[  0.96s][user ] 1866! That's a long time ago.
+[  0.97s][moshi] Yes, it’s a tradition with deep historical roots. It's a fairly standard practice, though.

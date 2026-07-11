@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "연훈",
+#     "name": "진호",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,82 +12,123 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-02-15",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-14",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-05-01",
+#       "date": "2025-07-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-06-24",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2026-04-04",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-12-17",
+#       "date": "2025-06-11",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-09-19",
-#       "category": "diet",
-#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-08",
+#       "date": "2025-10-04",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-09",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 영화 보러 갈 건데, 혹시 근처에 상영하는  | S2 잠깐만, 강남관 말고 다른 곳으로 바꿔줘. | S3 아, 빕스 좋아! 빕스 예약해줘. | S4 혹시… 칠월 십오일에 중요한 약속이 있었던 것 같은데…
 
-     0.00s  user  발화 시작: 부산에서 서울 가는 버스 티켓 두 장…
-     2.73s  user  발화 끝
-     4.77s  user  발화 시작: …삼월 십팔일 오후 네시 십오분으로 해주세요.
-     8.00s  user  발화 끝
-     8.01s  <ret> 발화 (turn2 첫 프레임)
-     8.24s  agent 발화 시작: <ret> 부산에서 서울 가는 버스 티켓 두 장이 확인되었습니다. 확인 번호는 비 이 구 엑스 칠 큐이고, 
-     8.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: (tool result) Confirmation: B29X7Q, 2 tickets, Busan to Seoul, March 1
-    19.23s  agent 발화 끝
-    19.61s  user  발화 시작: 아, 삼월 십팔일이 아니라 십구일로 바꿔주세요.
-    21.86s  <ret> 발화 (turn4 첫 프레임)
-    22.18s  agent 발화 시작: <ret> 네, 날짜를 삼월 십구일로 변경해 드렸습니다. 새로운 확인 번호는 와이 팔 일 제트 삼 피이고, 
-    22.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Confirmation: Y81Z3P, 2 tickets, Busan to Seoul, March 19, 2026, 4:15 
-    22.19s  user  발화 끝
-    30.93s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 영화 보러 갈 건데, 혹시 근처에 상영하는 영화 있어요?
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     3.94s  agent 발화 시작: <ret> 음, 지금은 상영 정보가 없네요. 혹시 다른 날짜나 영화를 생각해 보실까요? 영화 고르는 건 정말
+     3.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (no information found)
+     4.02s  user  발화 끝
+    12.56s  user  발화 시작: 아니, 토요일 맞는데… 음, 일요일로 바꿔볼게요. 일요일에 상영하는 영화 알려줘.
+    12.56s  agent 발화 끝
+    17.23s  <ret> 발화 (turn3 첫 프레임)
+    17.51s  user  발화 끝
+    17.54s  agent 발화 시작: <ret> 일요일에 상영하는 영화는 스파이더맨: 어크로스 더 유니버스, 바비, 오펜하이머, 미션 임파서블: 
+    17.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: {"query": "movies playing on Sunday", "results": "Spider-Man: Across t
+    20.92s  user  발화 시작: 응응.
+    21.56s  user  발화 끝
+    28.36s  user  발화 시작: 바비 예매해 줘.
+    28.44s  agent 발화 끝
+    29.28s  <ret> 발화 (turn6 첫 프레임)
+    29.44s  agent 발화 시작: <ret> 네, 바비 영화, CGV 강남관, 칠월 십이일 오후 두시에 두석 예매 완료되었습니다. 확인번호는 
+    29.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) {"confirmation id": "AX7892", "movie": "Barbie", "theate
+    29.55s  user  발화 끝
+    39.74s  user  발화 시작: 잠깐만, 강남관 말고 다른 곳으로 바꿔줘.
+    39.82s  agent 발화 끝
+    42.32s  user  발화 끝
+    42.33s  agent 발화 시작: 네, 알겠습니다. 어디로 바꿔드릴까요? 혹시 다른 지역을 생각하고 계신가요?
+    46.01s  user  발화 시작: 어.
+    46.32s  user  발화 끝
+    47.20s  user  발화 시작: 음… 메가박스 코엑스로 바꿔줘.
+    47.62s  agent 발화 끝
+    49.68s  agent 발화 시작: <ret> 네, 바비 영화, 메가박스 코엑스관, 칠월 십이일 오후 네시 삼십분에 두석 예매 완료되었습니다. 
+    49.69s  <ret> 발화 (turn11 첫 프레임)
+    49.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.83s]: (tool result) {"confirmation id": "BX3456", "movie": "Barbie", "theate
+    49.78s  user  발화 끝
+    59.51s  agent 발화 끝
+    60.14s  user  발화 시작: 혹시 지금 코엑스 주변에 맛있는 식당도 찾아줄 수 있어?
+    63.19s  <ret> 발화 (turn13 첫 프레임)
+    63.50s  agent 발화 시작: <ret> 코엑스 주변에는 VIP, 아웃백 스테이크하우스, 보니파시오 레스토랑이 있어요. 뷔페, 스테이크, 
+    63.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) {"restaurants": VIPS Coex Branch, Outback Steakhouse Coe
+    63.52s  user  발화 끝
+    73.19s  user  발화 시작: 아, 빕스 좋아! 빕스 예약해줘.
+    73.19s  agent 발화 끝
+    75.08s  <ret> 발화 (turn15 첫 프레임)
+    75.26s  user  발화 끝
+    75.31s  agent 발화 시작: <ret> 네, 빕스 코엑스점, 칠월 십이일 오후 한시에 두명 예약 완료되었습니다. 확인번호는 알 브이 일 
+    75.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) {"confirmation id": "RV1234", "restaurant": "VIPS Coex B
+    83.65s  agent 발화 끝
+    84.70s  user  발화 시작: 혹시 내일 날씨는 어때?
+    86.22s  <ret> 발화 (turn17 첫 프레임)
+    86.38s  agent 발화 시작: <ret> 내일 날씨는 이십육 점 오도, 습도 육십팔퍼센트, 풍속은 시속 사 점 이킬로미터로 예상됩니다. 야
+    86.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) "The weather tomorrow will be 26.5°C, humidity 68%, wind
+    86.45s  user  발화 끝
+    95.56s  agent 발화 끝
+    95.63s  user  발화 시작: 아, 고마워.
+    97.00s  user  발화 끝
+    97.11s  agent 발화 시작: 천만에요! 언제든지 필요한 일이 있으면 말씀해 주세요. 긍정적인 에너지를 충전하는 하루 보내시길 바랍니다.
+   104.88s  user  발화 시작: 혹시… 칠월 십오일에 중요한 약속이 있었던 것 같은데…
+   104.98s  agent 발화 끝
+   108.81s  <ret> 발화 (turn21 첫 프레임)
+   109.13s  agent 발화 시작: <ret> 이천이십육년 칠월 십오일 오후 세시에 중요한 고객 미팅이 예정되어 있습니다.
+   109.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: [2026-07-15] 중요한 고객 미팅이 오후 3시에 예정되어 있습니다.
+   109.28s  user  발화 끝
+   111.01s  user  발화 시작: 와.
+   111.60s  user  발화 끝
+   114.52s  user  발화 시작: 아, 맞아! 그 미팅 준비해야겠다.
+   114.69s  agent 발화 끝
+   116.59s  user  발화 끝
+   116.97s  agent 발화 시작: 네, 중요한 미팅이니 꼼꼼하게 준비하셔서 좋은 결과 있으시길 바랍니다. 혹시 준비 과정에서 제가 도울 일이 
+   125.90s  user  발화 시작: 아니, 괜찮아. 고마워.
+   125.94s  agent 발화 끝
+   127.21s  agent 발화 시작: 천만에요. 언제든 힘든 일이 있거나, 도움이 필요하면 저를 찾아주세요. 항상 응원하겠습니다!
+   127.28s  user  발화 끝
+   134.34s  agent 발화 끝

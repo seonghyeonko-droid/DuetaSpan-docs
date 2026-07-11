@@ -1,86 +1,87 @@
 v3_abs_22_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 가족 및 관계에 대해 사람들을 돕는 호기심 많고 공감적인 개인 가이드인 세아르입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 실용적이고 안심시키는 상담가 호라크스입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "서안",
+    "name": "민형",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-14",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-05-31",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-11-17",
+      "date": "2026-02-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-09-02",
       "category": "diet",
       "text": "User is vegetarian."
     },
     {
-      "date": "2025-10-20",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-07-04",
-      "category": "home",
-      "text": "User's home address is 부산 수영구 광안동 210-3."
-    },
-    {
-      "date": "2025-06-25",
+      "date": "2025-08-12",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in August."
+      "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2025-06-13",
+      "date": "2025-08-04",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a graphic designer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-15",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-26",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-07-30",
-      "title": "Setting up a home network",
+      "date": "2026-02-12",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 세아르 ⟨ret@0.00s⟩ 씨, 최고법원에 법안을 제출할 수 있는 사람은 삼주 후면 누구일까요?
-[  0.09s][moshi] ⟦⚡SPAN@0.09s: (no information found)⟧ 죄송해요, 그 정보는 찾을 수가 없네요. 제가 아는 선에서는 정확히 말씀드리기 어려워요.
-[  0.19s][user ] «backchannel» 네.
-[  0.20s][user ] 아, ⟨ret@0.13s⟩ 그렇군요. 그럼 혹시 요즘 가장 인기 있는 영화가 뭐예요?
-[  0.29s][moshi] ⟦⚡SPAN@0.29s: (tool result) Top movies now: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The Garfield Movie'.⟧ 요즘 가장 인기 있는 영화는 '인사이드 아웃 이', '배드 보이즈: 라이드 오어 다이', 그리고 '가필드 무비'예요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[  0.42s][user ] «backchannel» 음.
-[  0.43s][user ] [happy] 아, 인사이드 아웃 이는 이미 봤어요! 재밌더라고요.
-[  0.50s][moshi] 정말요? 잘 보셨다니 저도 기쁘네요. 감정 표현이 정말 섬세한 영화죠.
-[  0.58s][user ] 네, 맞아요. 이번 주 토요일에 영화 보러 ⟨ret@0.64s⟩ 갈 건데, 혹시 근처에 맛있는 식당도 추천해 줄 수 있을까요?
-[  0.72s][moshi] ⟦⚡SPAN@0.72s: (tool result) Restaurants near you: 'Olive Garden', 'The Cheesecake Factory', 'Red Lobster'.⟧ 근처에는 올리브 가든, 치즈케이크 팩토리, 레드 로브스터가 있어요. 식사하기 좋을 거예요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[  0.82s][user ] 레드 ⟨ret@0.55s⟩ 로브스터, 괜찮겠네요. 예약은 어떻게 해야 할까요?
-[  0.87s][moshi] ⟦⚡SPAN@0.87s: (tool result) Reservation confirmed for 2 people at Red Lobster on Saturday, July 11, 2026 at 7:00 PM. Confirm⟧ 레드 로브스터에 토요일 일곱시에 두명으로 예약 완료됐습니다. 확인 번호는 알 엘 칠 팔 구 공이에요.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {}}
+[  0.00s][user ] 양털이 ⟨ret@0.00s⟩ 어떻게 생겼는지 궁금해.
+[  0.02s][moshi] ⟦⚡SPAN@0.02s: (no information found)⟧ 양털이 어떻게 생겼는지에 대한 정보는 찾을 수 없었어요. 죄송합니다.
+[  0.07s][user ] «backchannel» 응.
+[  0.07s][user ] 아, ⟨ret@0.00s⟩ 그렇군요. 혹시 다른 종류의 섬유에 대해선 어때요?
+[  0.11s][moshi] ⟦⚡SPAN@0.11s: (no information found)⟧ 다른 섬유에 대한 정보도 지금은 찾을 수 없네요. 좀 더 구체적으로 어떤 섬유를 알고 싶으세요?
+[  0.19s][user ] 음… ⟨ret@0.12s⟩ 실크는 어때?
+[  0.20s][moshi] ⟦⚡SPAN@0.20s: Silk is a natural protein fiber produced by certain insect larvae to form cocoons. It is known for its luster,⟧ 실크는 특정 곤충 유충이 만드는 천연 단백질 섬유로, 광택과 부드러움, 강도로 유명하며 특히 의류에 사용됩니다.
+[  0.28s][user ] «backchannel» 응.
+[  0.28s][moshi] 실크는 고급스러운 느낌을 주는 섬유죠. 옷을 만들 때 많이 사용되고, 촉감도 정말 부드럽다고 하더라고요.
+[  0.35s][user ] 맞아요, 부드러운 건 알고 있어요. 근데…—
+[  0.38s][user ] …혹시 ⟨ret@0.09s⟩ ⟨ret@0.27s⟩ 실크가 어디서 많이 생산되는지 알아요?
+[  0.41s][moshi] ⟦⚡SPAN@0.41s: China is the world's largest producer of silk, accounting for approximately 51% of global production in 2022, ⟧ 세계에서 가장 큰 실크 생산국은 중국으로, 이천이십이년 전 세계 생산량의 약 오십일퍼센트를 차지하며, 인도(십사퍼센트)가 그 뒤를 잇고 있습니다.
+[  0.51s][moshi] 실크는 오랜 역사를 가진 귀한 ⟦⚡SPAN@0.54s: The history of silk production dates back to ancient China, with evidence of silk cultivation found as early a⟧ 섬유입니다. 실크 생산 역사는 고대 중국으로 거슬러 올라가며, 신석기 시대부터 실크 재배의 증거가 발견되었습니다. 정말 오랜 시간 동안 사랑받아 온 섬유죠.
+[  0.64s][user ] 와, ⟨ret@0.44s⟩ 정말 오래됐네요. 실크 옷 가격은 얼마나 해요?
+[  0.68s][moshi] ⟦⚡SPAN@0.68s: (tool result) Silk dresses typically range from $50 to $500 depending on the style, quality, and brand, with s⟧ 실크 드레스는 스타일, 품질, 브랜드에 따라 보통 오십달러에서 오백달러 사이이며, 일부 디자이너 제품은 천달러 이상입니다. 노드스트롬, 메이시스, ASOS에서 구매할 수 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "silk dress price"}}
+[  0.78s][user ] 꽤 비싸네요. 다른 천연 섬유는 저렴한 게 없을까요?
+[  0.82s][moshi] 면이나 리넨 같은 천연 섬유는 실크보다 훨씬 저렴하게 구할 수 있습니다.
+[  0.88s][user ] «backchannel» 응.
+[  0.88s][user ] 면은 ⟨ret@0.82s⟩ 어떤 느낌이에요?
+[  0.90s][moshi] ⟦⚡SPAN@0.90s: Cotton is a soft, fluffy staple fiber that grows in a boll around the seeds of cotton plants. It is used to ma⟧ 면은 면화 식물의 씨앗 주위에 자라는 부드럽고 솜털 같은 섬유로, 의류, 침구, 수건 등 많은 섬유 제품을 만드는 데 사용됩니다.

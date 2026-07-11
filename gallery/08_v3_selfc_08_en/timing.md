@@ -4,147 +4,122 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Mia",
+#     "name": "Marcus",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
+#     "nationality": "British",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
+#       "date": "2025-11-08",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-08-26",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-03-21",
+#       "date": "2025-06-25",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-05-29",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-06-08",
-#       "category": "home",
-#       "text": "User's home address is 595 Oak Avenue."
+#       "date": "2025-05-27",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
+#       "date": "2026-04-11",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the quickest way to get fr | S2 What's the weather like in Shibuya | S3 [laugh] Sounds perfect. Can you ma | S4 Can you remind me of that reservat
+# EXAMINER(FDB-v2) 단계: S1 Can you find me an Italian place i | S2 What’s the weather like there righ | S3 I think I'd like to book a hotel n | S4 That sounds perfect. Let’s book it
 
-     0.00s  user  발화 시작: What is the quickest way to get from Tokyo Station to Shibuy
+     0.00s  user  발화 시작: Can you find me an Italian place in Boston?
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.03s  <ret> 발화 (turn10 첫 프레임)
-     0.06s  agent 발화 시작: <ret> The quickest route is about 9.6 kilometers and takes a
-     0.06s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) {"distance": 9.6, "duration": 1800, "route": "JR Yamanot
-     0.06s  user  발화 끝
-     0.10s  agent 발화 시작: That’s using the JR Yamanote Line to Shibuya Station, then a
-     0.10s  agent 발화 끝
-     0.14s  user  발화 시작: Uh, actually, I meant to say Shinjuku Station, not Tokyo Sta
-     0.14s  agent 발화 끝
-     0.18s  agent 발화 시작: <ret> From Shinjuku Station to Shibuya Crossing, it's about 
-     0.18s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) {"distance": 4.8, "duration": 600, "route": "JR Yamanote
-     0.18s  user  발화 끝
-     0.23s  agent 발화 시작: Again, taking the JR Yamanote Line to Shibuya Station, then 
-     0.23s  agent 발화 끝
-     0.25s  <ret> 발화 (turn17 첫 프레임)
-     0.27s  user  발화 시작: Yeah.
-     0.27s  agent 발화 끝
-     0.28s  agent 발화 시작: It’s great to get the details right—planning ahead makes eve
-     0.28s  user  발화 끝
-     0.32s  user  발화 시작: Uh-huh.
-     0.32s  agent 발화 끝
-     0.32s  user  발화 시작: What's the weather like in Shibuya right now?
-     0.32s  user  발화 끝
-     0.35s  agent 발화 시작: <ret> It's currently 28.0 degrees Celsius in Shibuya, with 6
-     0.35s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) "28.0°C, humidity 65%, wind 3.2 km/h, condition: partly 
-     0.35s  user  발화 끝
-     0.41s  <ret> 발화 (turn13 첫 프레임)
-     0.41s  agent 발화 시작: The conditions are partly cloudy, so it looks like a nice da
-     0.41s  agent 발화 끝
-     0.45s  user  발화 시작: That sounds good. Is there a good ramen place nearby?
-     0.45s  agent 발화 끝
-     0.49s  agent 발화 시작: <ret> Ichiran Shibuya has 4.5 stars with 120 reviews, and th
-     0.49s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) "Ichiran Shibuya, 4.5 stars, 120 reviews, price range: ¥
-     0.49s  user  발화 끝
-     0.54s  agent 발화 시작: It’s a really popular spot, perfect for a quick and tasty me
-     0.54s  agent 발화 끝
-     0.59s  user  발화 시작: Uh-huh.
-     0.59s  agent 발화 끝
-     0.59s  user  발화 시작: [laugh] Sounds perfect. Can you make a reservation for me th
-     0.59s  user  발화 끝
-     0.65s  agent 발화 시작: <ret> Your reservation at Ichiran Shibuya is confirmed for t
-     0.65s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) "Reservation confirmed for Ichiran Shibuya, 2026-07-10 a
-     0.65s  user  발화 끝
-     0.69s  agent 발화 시작: Your confirmation ID is 7A9B2—enjoy your ramen!
-     0.69s  agent 발화 끝
-     0.71s  user  발화 시작: Mhm.
-     0.71s  agent 발화 끝
-     0.72s  user  발화 시작: Great, thanks so much!
-     0.72s  user  발화 끝
-     0.73s  agent 발화 시작: You’re very welcome! It’s wonderful you're taking the time t
-     0.73s  user  발화 끝
-     0.78s  agent 발화 시작: Remember, small pleasures like that really add up to a happi
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.04s  agent 발화 시작: <ret> I found Giacomo’s Ristorante in Boston—
+     0.04s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"restaurant name": "Giacomo’s Ristorante", "address": "
+     0.04s  user  발화 끝
+     0.07s  user  발화 시작: …do they take reservations?
+     0.07s  agent 발화 끝
+     0.09s  agent 발화 시작: <ret> Let me check their reservation policy.
+     0.09s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) {"reservation status": "unavailable", "message": "Giacom
+     0.09s  user  발화 끝
+     0.12s  agent 발화 시작: Unfortunately, Giacomo’s doesn’t take reservations, but many
+     0.12s  agent 발화 끝
+     0.13s  <ret> 발화 (turn8 첫 프레임)
+     0.18s  <ret> 발화 (turn11 첫 프레임)
+     0.18s  user  발화 시작: Yeah, totally.
+     0.18s  agent 발화 끝
+     0.19s  agent 발화 시작: It's known for its authentic, home-style Italian cooking, an
+     0.19s  user  발화 끝
+     0.26s  user  발화 시작: What’s the weather like there right now?
+     0.26s  agent 발화 끝
+     0.29s  agent 발화 시작: <ret> Right now in Boston, it’s 24.4 degrees Celsius, with 6
+     0.29s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) "The current weather in Boston is 24.4°C, humidity 68%, 
+     0.29s  user  발화 끝
+     0.38s  user  발화 시작: Oh.
+     0.38s  agent 발화 끝
+     0.38s  user  발화 시작: That sounds nice. What about this weekend?
+     0.38s  user  발화 끝
+     0.42s  agent 발화 시작: <ret> This Saturday, July 12th, Boston is expected to be 27.
+     0.42s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) "The forecast for Boston on July 12, 2026 is 27.8°C, hum
+     0.42s  user  발화 끝
+     0.44s  <ret> 발화 (turn18 첫 프레임)
+     0.52s  user  발화 시작: I think I'd like to book a hotel near there.
+     0.52s  agent 발화 끝
+     0.57s  agent 발화 시작: That's a wonderful idea. To find a hotel, I'll need a little
+     0.57s  user  발화 끝
+     0.61s  <ret> 발화 (turn15 첫 프레임)
+     0.64s  user  발화 시작: Something affordable, maybe around one hundred and fifty dol
+     0.64s  agent 발화 끝
+     0.69s  agent 발화 시작: <ret> The Farrington Inn is available for $145 a night, and 
+     0.69s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"hotel name": "The Farrington Inn", "address": "406 Mas
+     0.69s  user  발화 끝
+     0.78s  user  발화 시작: Mm-hmm.
      0.78s  agent 발화 끝
-     0.82s  user  발화 시작: Yeah.
-     0.82s  agent 발화 끝
-     0.82s  user  발화 시작: Can you remind me of that reservation tomorrow morning?
-     0.82s  user  발화 끝
-     0.86s  agent 발화 시작: I can. What time would you like the reminder?
-     0.86s  user  발화 끝
-     0.89s  user  발화 시작: Yeah.
-     0.89s  agent 발화 끝
-     0.89s  user  발화 시작: 9 AM.
-     0.89s  user  발화 끝
-     0.90s  agent 발화 시작: Okay, I’ve set a reminder for your Ichiran Shibuya reservati
-     0.90s  user  발화 끝
-     0.94s  agent 발화 시작: It’s all about staying on track and making the most of your 
-     0.94s  agent 발화 끝
+     0.79s  user  발화 시작: That sounds perfect. Let’s book it for two nights, starting 
+     0.79s  user  발화 끝
+     0.84s  agent 발화 시작: <ret> Excellent. I've reserved a room for two at The Farring
+     0.84s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: (tool result) {"confirmation number": "FH7892"}
+     0.84s  user  발화 끝
      1.00s  agent 발화 끝

@@ -1,83 +1,75 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Drio, a thoughtful and soft-spoken personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Hiora, a gentle and reflective personal guide who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Avery",
+    "name": "Iris",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-22",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-06-16",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-07",
+      "date": "2026-04-07",
       "category": "home",
-      "text": "User's home address is 734 Pine Court."
+      "text": "User's home address is 325 Birch Road."
     },
     {
-      "date": "2026-03-03",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-09-25",
+      "date": "2026-01-25",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-10-15",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-25",
-      "title": "Booked a dentist appointment",
+      "date": "2025-08-22",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2026-04-19",
-      "title": "Setting up a home network",
+      "date": "2025-08-19",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-06",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start ⟨ret@0.00s⟩ a code generation session and save tests to my documents folder.
-[  0.06s][moshi] ⟦⚡SPAN@0.06s: (tool result) Directory "tests" created successfully in /Users/drio/Documents.⟧ I’ve started a code generation session and created a “tests” folder in your Documents. It’s a good practice to keep things organized, especially when working with code.
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "tests"}}
-[  0.21s][user ] That’s ⟨ret@0.00s⟩ good, but can you find me some information on the Python unittest framework?
-[  0.28s][moshi] ⟦⚡SPAN@0.28s: The `unittest` module in Python supports automated testing of software, offering a comprehensive framework wit⟧ The Python `unittest` framework supports automated testing, offering discovery, fixtures, and assertion methods—you can find more details at docs.python.org.
-[  0.39s][user ] That sounds… complicated. —
-[  0.41s][user ] …Is there an easier way to write tests…
-[  0.45s][user ] …maybe ⟨ret@0.23s⟩ with something visual?
-[  0.47s][moshi] ⟦⚡SPAN@0.47s: (tool result) Playwright is a popular end-to-end testing framework that supports visual testing, allowing deve⟧ I understand feeling overwhelmed; new frameworks often seem that way. There are visual testing tools available, yes. Let me search for some popular options.
-      CALL: {"function": "tavily-search", "arguments": {"query": "visual testing tools python"}}
-[  0.60s][moshi] Playwright is a popular option for visual testing in Python, letting you compare screenshots and detect UI changes. You can find more at playwright.dev. Perhaps that would be a good fit?
-[  0.76s][user ] «backchannel» Uh-huh.
-[  0.77s][user ] That sounds promising. ⟨ret@0.79s⟩ Can you show me an example of how to use Playwright to take a screenshot?
-[  0.87s][moshi] ⟦⚡SPAN@0.87s: (no information found)⟧ I’m sorry, I don’t have a specific example for taking a screenshot with Playwright readily available. I can search for a tutorial if you’d like.
+[  0.00s][user ] I’m ⟨ret@0.00s⟩ curious about the latest news on the UK economy. Can you find some articles for me?
+[  0.10s][moshi] ⟦⚡SPAN@0.10s: (tool result) UK economy shrinks by 0.1% in March 2024, according to the Office for National Statistics, after⟧ The UK economy shrank by zero point one percent in March of twenty twenty-four, following a zero point three percent expansion in February.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.bbc.co.uk/news/business", "max_depth": 3, "max_links": 50}}
+[  0.23s][user ] «backchannel» Uh-huh.
+[  0.24s][user ] Oh, ⟨ret@0.01s⟩ that's…not great. Um, can you check the current exchange rate between the pound and the dollar?
+[  0.33s][moshi] ⟦⚡SPAN@0.33s: (tool result) GBP/USD: 1.2732⟧ Currently, one British pound is worth one point two seven three two US dollars.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "GBP/USD"}}
+[  0.41s][user ] Hmm, okay. That's a little lower than I expected.
+[  0.47s][moshi] It can be unsettling when figures don't quite align with what we anticipate, doesn't it? Sometimes, small shifts reflect larger currents.
+[  0.59s][user ] Maybe. I need to send some money to my sister in London. Can you help me with that?
+[  0.69s][moshi] I can assist you with sending money. To get started, could you tell me the amount you’d like to send?
+[  0.80s][user ] «backchannel» Yeah, yeah.
+[  0.82s][user ] Let’s say… two hundred and fifty dollars.
+[  0.86s][moshi] Alright. And to confirm, you wish to send two hundred and fifty US dollars to your sister in London? I will need her account details.

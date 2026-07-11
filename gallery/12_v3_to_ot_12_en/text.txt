@@ -1,100 +1,105 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Neal, a practical and reassuring supportive advisor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Viaia, a practical and reassuring wellness coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Sam",
+    "name": "Kim",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-26",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-05-20",
+      "category": "home",
+      "text": "User's home address is 28 Oak Avenue."
+    },
+    {
+      "date": "2026-04-22",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
       "date": "2026-02-21",
-      "category": "home",
-      "text": "User's home address is 332 Cedar Lane."
-    },
-    {
-      "date": "2025-12-23",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-10-29",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2026-02-08",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-10-01",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
+      "date": "2026-01-07",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-06",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2025-10-13",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-20",
+      "date": "2026-06-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-12",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do ⟨ret@0.00s⟩ you know who played Wally in Last of the Summer Wine?
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: Joseph Gladwin portrayed Wally Featherstone in the British sitcom Last of the Summer Wine.⟧ Oh, that’s a good one! Joseph Gladwin is the actor who played Wally Featherstone in Last of the Summer Wine.
-[  0.12s][user ] Right, ⟨ret@0.00s⟩ good. Um, what about Compo?
-[  0.14s][moshi] ⟦⚡SPAN@0.14s: Bill Owen played Compo Simmonds in all 31 series of Last of the Summer Wine.⟧ Bill Owen played Compo Simmonds, and he was in all thirty-one series of the show— quite a run!
-[  0.21s][user ] That's a lot of episodes.
-[  0.23s][moshi] It really is! That’s dedication to a role, isn’t it? I admire that sort of commitment.
-[  0.29s][user ] I ⟨ret@0.00s⟩ wonder if they still show it anywhere?
-[  0.32s][moshi] ⟦⚡SPAN@0.32s: Last of the Summer Wine is available to stream on BritBox.⟧ It looks like you can stream Last of the Summer Wine on BritBox right now.
-[  0.38s][user ] BritBox, ⟨ret@0.00s⟩ okay. Is that a monthly thing?
-[  0.40s][moshi] ⟦⚡SPAN@0.40s: (no information found)⟧ I'm sorry, I can’t find details about BritBox subscription plans at the moment.
-      CALL: {"function": "create_subscription_plan", "arguments": {}}
-[  0.45s][user ] «backchannel» Yeah, totally.
-[  0.46s][user ] Oh.
-[  0.46s][moshi] Perhaps you could check their website directly? I’m happy to find it for you if you like.
-[  0.53s][user ] «backchannel» Okay.
-[  0.53s][user ] «to_other» Did you hear that?
-[  0.55s][user ] No, ⟨ret@0.34s⟩ that’s alright. What’s the weather like in Holmfirth today?
-[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tool result) 18.3°C, humidity 68%, wind 8.2 km/h⟧ Right now in Holmfirth, it's 18.3 degrees Celsius with 68 percent humidity and an 8.2 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Holmfirth"}}
-[  0.65s][user ] «backchannel» Mm-hmm.
-[  0.66s][moshi] It sounds quite pleasant, actually! Perfect weather for a walk in the countryside, perhaps?
-[  0.71s][user ] That ⟨ret@0.68s⟩ does sound nice. Can you find me some local walking routes?
-[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) Holmfirth has several walking routes, including the Pennine Way and the Holmfirth Circular Walk.⟧ Holmfirth has some great walking routes, including the Pennine Way and the Holmfirth Circular Walk.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Holmfirth", "type": "walking routes"}}
-[  0.81s][user ] «backchannel» Yeah.
-[  0.82s][user ] Pennine ⟨ret@0.60s⟩ Way… is that a long walk?
-[  0.84s][moshi] ⟦⚡SPAN@0.84s: The Pennine Way is a National Trail in England, stretching 268 miles from Edale to Kirk Yetholm.⟧ The Pennine Way is a National Trail stretching 268 miles from Edale to Kirk Yetholm— it's a substantial hike!
-[  0.91s][user ] Wow, okay. Maybe not that one.
-[  0.94s][moshi] Perhaps the Holmfirth Circular Walk would be a better starting point then, something a little more manageable?
+[  0.00s][user ] What ⟨ret@0.00s⟩ year is the animal slaughter act that we follow?
+[  0.03s][moshi] ⟦⚡SPAN@0.03s: The Animal Welfare Act was first passed on August 27, 1958, and has been amended several times.⟧ That would be August twenty-seventh, nineteen fifty-eight—it’s been updated since then, of course.
+[  0.07s][user ] Oh, okay. And uh, what does it actually *do*?
+[  0.09s][moshi] It sets standards of care for animals when they’re used in research, exhibition, transport, and for dealers.
+[  0.14s][user ] «to_other» Did you remember to take the chicken out?
+[  0.16s][user ] …It’s just, I don't want it to spoil.
+[  0.19s][moshi] Planning ahead is a wonderful habit, and it really minimizes stress later on.
+[  0.22s][user ] «backchannel» Yeah.
+[  0.23s][user ] Right. ⟨ret@0.09s⟩ So, is that act federal law?
+[  0.25s][moshi] ⟦⚡SPAN@0.25s: The Animal Welfare Act is a United States federal law that regulates the treatment of animals.⟧ Yes, it *is* a United States federal law—regulating how animals are treated.
+[  0.28s][user ] «backchannel» Mhm.
+[  0.28s][moshi] It’s designed to ensure certain standards are met for their well-being.
+[  0.32s][user ] «backchannel» Yeah, yeah.
+[  0.32s][user ] What about state laws? Do those exist too?
+[  0.34s][moshi] Many states have their own animal welfare laws that often go *beyond* the federal act.
+[  0.39s][user ] Interesting. ⟨ret@0.10s⟩ Can you find me some information about those in California?
+[  0.42s][moshi] ⟦⚡SPAN@0.42s: (tool result) California’s animal welfare laws are among the most comprehensive in the US, covering topics fro⟧ California’s laws are quite comprehensive—they cover farm animals, pet stores, and animal testing.
+      CALL: {"function": "search", "arguments": {"query": "California animal welfare laws"}}
+[  0.46s][user ] Wow, that sounds…extensive.
+[  0.47s][moshi] It reflects a strong commitment to animal welfare within the state.
+[  0.50s][user ] «backchannel» Yeah, totally.
+[  0.50s][user ] Is ⟨ret@0.29s⟩ there anything I should know about reporting abuse?
+[  0.53s][moshi] ⟦⚡SPAN@0.53s: In California, animal cruelty is a misdemeanor, punishable by up to one year in county jail and a $20,000 fine⟧ In California, animal cruelty can lead to up to a year in jail and a twenty-thousand-dollar fine.
+[  0.58s][user ] «backchannel» Yeah.
+[  0.58s][user ] That's ⟨ret@0.53s⟩ good to know. What about finding a vet nearby?
+[  0.61s][moshi] ⟦⚡SPAN@0.61s: (tool result) Veterinarian: Animal Medical Center of California, 123 Main St, Los Angeles, CA 90012, (213) 555⟧ The Animal Medical Center of California is nearby—at one two three Main Street in Los Angeles.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "veterinarian"}}
+[  0.66s][user ] Perfect! And their number is…?
+[  0.67s][moshi] Two one three, five five five, one two one two.
+[  0.70s][user ] «backchannel» Yeah.
+[  0.70s][user ] Thanks. That’s really helpful.
+[  0.71s][moshi] You're very welcome. Staying informed is a key step in responsible pet ownership.
+[  0.75s][user ] «backchannel» Uh-huh.
+[  0.75s][user ] I’m trying to be better about that. It’s hard, sometimes.
+[  0.78s][moshi] It takes effort, certainly, but even small changes can make a big difference in an animal’s life.
+[  0.83s][user ] «backchannel» Yeah.
+[  0.83s][user ] [sigh] You’re right. I need to schedule a checkup for Buster.
+[  0.86s][moshi] That's a wonderful idea. Would you like me to help you find available appointment times?
+[  0.91s][user ] No, thank you. I'll call them directly.
+[  0.93s][moshi] I’m glad I could assist you with some information today.
+[  0.96s][user ] Yeah, thanks again, Viaia.
+[  0.97s][moshi] You’re most welcome. Prioritizing your pet's well-being is a beautiful thing.

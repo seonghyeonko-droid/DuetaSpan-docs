@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "민정",
+#     "name": "진현",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,34 +13,34 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-06-05",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-01-29",
+#       "date": "2026-03-07",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-25",
 #       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-02",
+#       "date": "2025-12-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,28 +48,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-09",
+#       "date": "2025-09-23",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-28",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 그 '가장 멋진 시간'이라는 노래, 누가 썼어?
-     3.15s  user  발화 끝
-     3.23s  <ret> 발화 (turn1 첫 프레임)
-     3.39s  agent 발화 시작: <ret> 그 노래는 에드워드 폴라와 조지 와일이 천구백육십삼년에 썼답니다. 즐거운 노래죠, 그렇죠?
-     3.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Edward Pola and George Wyle wrote "It's the Most Wonderful Time of the
-    10.07s  agent 발화 끝
+     0.00s  user  발화 시작: 이십일 점프 스트리트 주제곡을 처음 부른 사람은 누구야?
+     3.43s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  user  발화 끝
+     3.59s  agent 발화 시작: <ret> 음, 이십일 점프 스트리트 주제곡을 처음 부른 사람은 할리 로빈슨이라고 해요. 혹시 그 드라마 좋
+     3.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Holly Robinson is an American actress, singer, and television personal
+     9.84s  agent 발화 끝

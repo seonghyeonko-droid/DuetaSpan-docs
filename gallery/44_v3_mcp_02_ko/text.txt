@@ -1,117 +1,105 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 것을 돕는 실용적이고 안심시키는 라이프 코치 해나입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 호기심 많고 지지적인 웰니스 코치 이우스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "가준",
+    "name": "연별",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-12-03",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-11-04",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-09-24",
+      "date": "2026-06-09",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
+      "text": "User is planning a trip to Switzerland in May."
+    },
+    {
+      "date": "2026-04-30",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-04-28",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-08-20",
+      "category": "home",
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
+    },
+    {
+      "date": "2025-06-03",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-07",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-16",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-01-28",
+      "date": "2026-05-08",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-07",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-25",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 여기 ⟨ret@0.00s⟩ 좌표 백십삼 점 사 육, 이십삼 점 일 삼이 어디쯤이야? 주소 좀 알려줘.
-[  0.04s][moshi] ⟦⚡SPAN@0.04s: (tool result) {"address": "广东省深圳市龙华区梅龙大道", "latitude": "23.1333", "longitude": "113.4667"}⟧ 좌표 백십삼 점 사 육, 이십삼 점 일 삼은 중국 광둥성 선전시 룽화구 메이롱다다오에 위치하고 있습니다.
-      CALL: {"function": "maps_regeocode", "arguments": {"latitude": "23.1333", "longitude": "113.4667"}}
-[  0.09s][user ] «backchannel» 응.
-[  0.09s][user ] 아, ⟨ret@0.00s⟩ 그래? 그럼 거기서 제일 가까운 버스 정류장이 어디지?
-[  0.12s][moshi] ⟦⚡SPAN@0.12s: (tool result) {"name": "梅龙大道站", "latitude": "23.1338", "longitude": "113.4662", "distance": "0.2 km"}⟧ 근처 버스 정류장은 메이롱다다오잔이고, 거리는 영 점 이킬로미터 정도 됩니다.
-      CALL: {"function": "maps_search_places", "arguments": {"query": "bus stop near 广东省深圳市龙华区梅龙大道", "latitude": "23.1333", "longitude": "113.4667"}}
-[  0.15s][user ] «backchannel» 응.
-[  0.15s][user ] 음… ⟨ret@0.11s⟩ 그 버스 정류장에서 시내까지 가는 버스 노선 좀 알려줄 수 있어?
-[  0.19s][moshi] ⟦⚡SPAN@0.19s: (tool result) {"bus lines": M359, M436, K336, "estimated time": "45 minutes"}⟧ 메이롱다다오잔에서 선전 시내까지 가는 버스 노선은 엠 삼 오 구, 엠 사 삼 육, 케이 삼 삼 육번이고, 예상 소요 시간은 사십오분입니다.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"start": "梅龙大道站", "end": "深圳 市中心"}}
-[  0.25s][user ] «backchannel» 음.
-[  0.26s][user ] 사십오분이면 ⟨ret@0.04s⟩ 좀 걸리겠네. 택시비는 대충 얼마 정도 나올까?
-[  0.28s][moshi] ⟦⚡SPAN@0.28s: (tool result) {"estimated fare": "¥40-¥50", "estimated time": "20 minutes"}⟧ 택시 요금은 대략 사십위안에서 오십위안 정도 예상되고, 소요 시간은 이십분 정도입니다.
-      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"start": "广东省深圳市龙华区梅龙大道", "end": "深圳 市中心"}}
-[  0.31s][user ] «backchannel» 아.
-[  0.32s][user ] 오, 그럼 택시가 훨씬 빠르겠네.
-[  0.33s][moshi] 네, 시간이 좀 더 절약될 수 있겠어요.
-[  0.35s][user ] «backchannel» 응.
-[  0.36s][moshi] 새로운 곳에 정착하는 건 설레면서도 걱정될 수 있어요. 하지만 교통 정보 정도는 미리 알아두면 훨씬 안심이 되죠.
-[  0.41s][user ] 맞아, ⟨ret@0.04s⟩ 맞아. 근데 그 근처에 맛있는 식당 있으면 추천해 줄 수 있어?
-[  0.44s][moshi] ⟦⚡SPAN@0.44s: (tool result) {"name": "翠园餐厅", "cuisine": "Cantonese", "rating": "4.5 stars", "price range": "¥¥¥"}⟧ 그 근처에 평점 사 점 오점의 광둥 요리 전문점 취위엔찬당이 있습니다. 가격대는 조금 높은 편이에요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "广东省深圳市龙华区梅龙大道", "cuisine": "Chinese"}}
-[  0.49s][user ] «backchannel» 진짜?
-[  0.49s][user ] 광둥 요리 좋아하는데, 괜찮겠다.
-[  0.50s][moshi] 취향에 맞으실 것 같아요. 그 식당은 현지인들에게도 인기가 많다고 들었어요.
-[  0.53s][user ] 혹시 ⟨ret@0.41s⟩ 그 식당 예약해 줄 수 있어? 이번 주 토요일 저녁 일곱시에.
-[  0.57s][moshi] ⟦⚡SPAN@0.57s: (tool result) {"confirmation id": "RC492837"}⟧ 네, 翠园餐厅을 이번 주 토요일 저녁 일곱시에 예약했습니다. 확인 코드는 알 씨 사 구 이 팔 삼 칠입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "翠园餐厅", "date": "2026-07-11", "time": "19:00"}}
-[  0.62s][user ] 와, 진짜 고마워! —
-[  0.63s][user ] …근데 ⟨ret@0.35s⟩ 혹시 그 식당까지 가는 길도 알려줄 수 있어? 버스 말고 지하철로.
-[  0.67s][moshi] ⟦⚡SPAN@0.67s: (tool result) {"instructions": "Take Metro Line 4 from Longhua Station to Futian Station, then walk 500m.", "e⟧ 룽화역에서 사호선을 타고 푸톈역까지 가신 다음, 오백미터 정도 걸어가시면 됩니다. 예상 소요 시간은 삼십분 정도예요.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "广东省深圳市龙华区梅龙大道", "destination": "翠园餐厅", "mode": "transit"}}
-[  0.71s][user ] «backchannel» 음.
-[  0.72s][user ] 삼십분이면 괜찮네.
-[  0.72s][moshi] 네, 비교적 편리하게 이동하실 수 있을 거예요.
-[  0.74s][user ] 아, ⟨ret@0.62s⟩ 그리고 혹시 거기 근처에 괜찮은 호텔 있으면 추천해 줄 수 있어?
-[  0.78s][moshi] ⟦⚡SPAN@0.78s: (tool result) {"name": "深圳龙华区维也纳国际酒店", "price": "¥400/night", "rating": "4.2 stars"}⟧ 그 근처에 선전 룽화구 비엔나 인터내셔널 호텔이 있는데, 일박에 사백위안이고 평점은 사 점 이점입니다.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "广东省深圳市龙华区梅龙大道", "check_in_date": "2026-07-12", "check_out_date": "2026-07-14"}}
-[  0.82s][user ] «backchannel» 음.
-[  0.82s][user ] 가격도 괜찮고, 평점도 좋네.
-[  0.84s][moshi] 네, 만족하실 만한 선택이 될 것 같아요.
-[  0.86s][user ] 그럼 ⟨ret@0.57s⟩ 그 호텔 예약도 좀 해 줄 수 있을까? 칠월 십이일부터 십사일까지.
-[  0.89s][moshi] ⟦⚡SPAN@0.89s: (tool result) {"confirmation id": "HT839274"}⟧ 네, 深圳龙华区维也纳国际酒店을 칠월 십이일부터 십사일까지 예약했습니다. 확인 코드는 에이치 티 팔 삼 구 이 칠 사입니다.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "深圳龙华区维也纳国际酒店", "check_in_date": "2026-07-12", "check_out_date": "2026-07-14"}}
-[  0.94s][user ] «backchannel» 어어.
-[  0.94s][user ] 정말 고마워, 해나. 덕분에 너무 편하게 준비할 수 있었어.
-[  0.97s][moshi] 도움이 되어서 기쁩니다. 새로운 곳에서의 생활이 즐거워지도록 제가 더 도와드릴게요.
+[  0.00s][user ] 어, ⟨ret@0.00s⟩ 안녕하세요. 오늘 진리에서 우후사까지 자전거로 가면 얼마나 걸릴까요?
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) {"distance": 3.2, "duration": 14, "route": "https://maps.google.com/?cid=12345"}⟧ 우후사에서 진리까지 자전거로는 약 삼 점 이킬로미터, 십사분 정도 걸릴 거예요. 길은 이 링크에서 확인해 보세요.
+      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Wuhou Temple", "destination": "Jinli, Chengdu"}}
+[  0.13s][user ] 십사분 ⟨ret@0.00s⟩ 정도면 괜찮네. 근데 지금 날씨는 어때?
+[  0.17s][moshi] ⟦⚡SPAN@0.17s: (tool result) {"temperature": 28.0, "humidity": 65, "wind": 7.2}⟧ 현재 청두의 기온은 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 칠 점 이킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chengdu"}}
+[  0.23s][user ] «backchannel» 응.
+[  0.24s][user ] 으음… 그럼 이번 주 토요일에 영화 보러 갈까요? 혹시 괜찮은 영화 있나요?
+[  0.30s][moshi] 이번 주 토요일에 영화를 보시는군요! 어떤 장르를 좋아하세요?
+[  0.34s][user ] «backchannel» 응.
+[  0.35s][user ] 음… ⟨ret@0.21s⟩ 액션 영화요.
+[  0.37s][moshi] ⟦⚡SPAN@0.37s: (tool result) Mission: Impossible - Dead Reckoning Part One, Oppenheimer, The Flash⟧ 이번 주 토요일에 상영하는 액션 영화는 '미션 임파서블: 데드 레코닝 파트 원', '오펜하이머', '플래시'가 있습니다.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "action", "date": "2026-07-11"}}
+[  0.45s][user ] «backchannel» 어어.
+[  0.45s][user ] '미션 ⟨ret@0.08s⟩ 임파서블' 시간 좀 알려주세요.
+[  0.48s][moshi] ⟦⚡SPAN@0.48s: (tool result) 14:00, 17:00, 20:00⟧ '미션 임파서블'은 토요일에 오후 두시, 다섯시, 여덟시에 상영합니다.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Mission: Impossible - Dead Reckoning Part One", "date": "2026-07-11"}}
+[  0.52s][user ] «backchannel» 응.
+[  0.53s][user ] 그럼 ⟨ret@0.31s⟩ 다섯시 표 예매해 줘.
+[  0.55s][moshi] ⟦⚡SPAN@0.55s: (tool result) {"confirmation id": "AX789YZ"}⟧ 네, '미션 임파서블' 토요일 다섯시 표 예매 완료되었습니다. 확인 번호는 에이 엑스 칠 팔 구 와이 제트입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Mission: Impossible - Dead Reckoning Part One", "time": "17:00", "date": "2026-07-11"}}
+[  0.65s][user ] 고마워요! 아, 그리고 다음 주 화요일에 병원 예약 좀 해 줄 수 있을까요?
+[  0.72s][moshi] 다음 주 화요일에 병원 예약을 도와드릴게요. 어떤 진료를 받으시려고요?
+[  0.76s][user ] «backchannel» 응.
+[  0.77s][user ] 그냥 ⟨ret@0.62s⟩ 일반 검진이요.
+[  0.78s][moshi] ⟦⚡SPAN@0.78s: (tool result) Seoul General Hospital, Kangnam Medical Center⟧ 다음 주 화요일에 일반 검진이 가능한 병원은 서울대학교병원과 강남의료센터가 있습니다. 어느 병원을 선호하세요?
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service": "general checkup", "date": "2026-07-15"}}
+[  0.85s][user ] «backchannel» 음.
+[  0.86s][user ] 서울대학교병원으로 ⟨ret@0.56s⟩ 예약해 줘.
+[  0.88s][moshi] ⟦⚡SPAN@0.88s: (tool result) {"confirmation id": "BH345CD"}⟧ 네, 서울대학교병원 다음 주 화요일 일반 검진 예약 완료되었습니다. 확인 번호는 비 에이치 삼 사 오 씨 디입니다. 건강 관리에 항상 신경 쓰세요!
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Seoul General Hospital", "service": "general checkup", "date": "2026-07-15"}}

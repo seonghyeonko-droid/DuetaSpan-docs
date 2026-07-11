@@ -4,99 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Avery",
+#     "name": "Iris",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-06-16",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2026-04-07",
 #       "category": "home",
-#       "text": "User's home address is 734 Pine Court."
+#       "text": "User's home address is 325 Birch Road."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-09-25",
+#       "date": "2026-01-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-25",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-22",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-19",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start a code generation session an | S2 That sounds… complicated. — | S3 …Is there an easier way to write t | S4 That sounds promising. Can you sho
+# EXAMINER(FDB-v2) 단계: S1 I’m curious about the latest news  | S2 Hmm, okay. That's a little lower t | S3 Maybe. I need to send some money t | S4 Let’s say… two hundred and fifty d
 
-     0.00s  user  발화 시작: Start a code generation session and save tests to my documen
+     0.00s  user  발화 시작: I’m curious about the latest news on the UK economy. Can you
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.06s  agent 발화 시작: <ret> I’ve started a code generation session and created a “
-     0.06s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Directory "tests" created successfully in /Users/drio/Do
-     0.06s  user  발화 끝
-     0.21s  user  발화 시작: That’s good, but can you find me some information on the Pyt
-     0.21s  agent 발화 끝
-     0.23s  <ret> 발화 (turn7 첫 프레임)
-     0.28s  agent 발화 시작: <ret> The Python `unittest` framework supports automated tes
-     0.28s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: The `unittest` module in Python supports automated testing of software
-     0.28s  user  발화 끝
-     0.39s  user  발화 시작: That sounds… complicated. —
-     0.39s  agent 발화 끝
-     0.41s  user  발화 시작: …Is there an easier way to write tests…
-     0.41s  user  발화 끝
-     0.45s  user  발화 시작: …maybe with something visual?
-     0.45s  user  발화 끝
-     0.47s  agent 발화 시작: <ret> I understand feeling overwhelmed; new frameworks often
-     0.47s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Playwright is a popular end-to-end testing framework tha
+     0.01s  <ret> 발화 (turn4 첫 프레임)
+     0.10s  agent 발화 시작: <ret> The UK economy shrank by zero point one percent in Mar
+     0.10s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) UK economy shrinks by 0.1% in March 2024, according to t
+     0.10s  user  발화 끝
+     0.23s  user  발화 시작: Uh-huh.
+     0.23s  agent 발화 끝
+     0.24s  user  발화 시작: Oh, that's…not great. Um, can you check the current exchange
+     0.24s  user  발화 끝
+     0.33s  agent 발화 시작: <ret> Currently, one British pound is worth one point two se
+     0.33s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) GBP/USD: 1.2732
+     0.33s  user  발화 끝
+     0.41s  user  발화 시작: Hmm, okay. That's a little lower than I expected.
+     0.41s  agent 발화 끝
+     0.47s  agent 발화 시작: It can be unsettling when figures don't quite align with wha
      0.47s  user  발화 끝
-     0.60s  agent 발화 시작: Playwright is a popular option for visual testing in Python,
-     0.60s  agent 발화 끝
-     0.76s  user  발화 시작: Uh-huh.
-     0.76s  agent 발화 끝
-     0.77s  user  발화 시작: That sounds promising. Can you show me an example of how to 
-     0.77s  user  발화 끝
-     0.79s  <ret> 발화 (turn11 첫 프레임)
-     0.87s  agent 발화 시작: <ret> I’m sorry, I don’t have a specific example for taking 
-     0.87s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (no information found)
-     0.87s  user  발화 끝
+     0.59s  user  발화 시작: Maybe. I need to send some money to my sister in London. Can
+     0.59s  agent 발화 끝
+     0.69s  agent 발화 시작: I can assist you with sending money. To get started, could y
+     0.69s  user  발화 끝
+     0.80s  user  발화 시작: Yeah, yeah.
+     0.80s  agent 발화 끝
+     0.82s  user  발화 시작: Let’s say… two hundred and fifty dollars.
+     0.82s  user  발화 끝
+     0.86s  agent 발화 시작: Alright. And to confirm, you wish to send two hundred and fi
+     0.86s  user  발화 끝
      1.00s  agent 발화 끝

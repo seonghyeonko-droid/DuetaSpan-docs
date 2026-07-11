@@ -1,78 +1,98 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Frarius, a practical and reassuring life coach who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Eal, a grounded and empathetic wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Caleb",
+    "name": "Nathan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "40s",
-    "language": "German"
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
+      "date": "2026-06-19",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-31",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-03-30",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
       "date": "2026-02-13",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-07-06",
+      "date": "2026-01-13",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
+    },
+    {
+      "date": "2025-11-25",
       "category": "home",
-      "text": "User's home address is 531 Oak Avenue."
-    },
-    {
-      "date": "2025-06-02",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User's home address is 390 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-04",
-      "title": "Booked a dentist appointment",
+      "date": "2025-11-15",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
-[  4.61s][moshi] That's not a safe practice, I’m afraid. Overcharging lithium-ion batteries can cause thermal runaway, potentially leading to fire or explosion.
-[  9.48s][user ] «backchannel» Yeah.
-[ 12.48s][user ] But what…
-[ 14.89s][user ] …if I’m really careful? I just want a little extra…
-[ 17.97s][moshi] Even with careful monitoring, exceeding the manufacturer’s limits introduces unacceptable risk. It voids warranties and compromises the battery’s integrity.
-[ 24.27s][user ] «backchannel» Yeah, yeah.
-[ 27.18s][user ] Hmm… well, is there anything I can do to *maximize* my range, then?
-[ 31.93s][moshi] We can explore optimizing your riding style, tire pressure, and even finding qualified technicians for a battery health check.
-[ 36.47s][user ] «backchannel» Yeah.
-[ 38.49s][user ] A health check sounds good. Can you find someone ⟨ret@41.52s⟩ nearby?
-[ 41.84s][moshi] ⟦⚡SPAN@41.84s: (tool result) Found 3 e-bike technicians within 5km: Cycle Solutions (4.8 stars, 12 reviews), Electric Rides (⟧ I’ve found three e-bike technicians nearby — Cycle Solutions, Electric Rides, and BikeBoost — with ratings and review counts included.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "e-bike technician", "location": "current"}}
-[ 44.22s][user ] «backchannel» Mhm.
-[ 49.34s][moshi] Cycle Solutions has the highest rating, at four point eight stars, if that’s helpful in your decision.
-[ 54.72s][user ] Electric Rides sounds good. Can you book an appointment for me ⟨ret@58.26s⟩ there?
-[ 58.58s][moshi] ⟦⚡SPAN@58.58s: (tool result) Appointment confirmed with Electric Rides for July 17, 2026 at 10:00 AM. Confirmation ID: ER7892⟧ Excellent. I’ve booked you a health check at Electric Rides for July seventeenth at ten AM; your confirmation ID is ER78923.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Electric Rides", "service_type": "e-bike health check"}}
-[ 68.30s][user ] Perfect, thank you!
-[ 69.44s][moshi] You’re very welcome. Maintaining your battery’s health is a great way to extend your rides and ensure your safety. It’s all about planning, really.
+[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
+[  5.26s][moshi] That’s a really unsafe idea, and I absolutely cannot help you with that. Tampering with safety features on a heater creates a serious fire risk.
+[  8.06s][user ] «backchannel» Yeah.
+[ 13.30s][user ] But I’m cold, and I don’t want to get up.
+[ 16.06s][moshi] I understand wanting to stay warm and comfortable, but safety is the most important thing. Overriding the lock could lead to a devastating house fire.
+[ 24.16s][user ] It’s just a little heater. What’s the worst that could happen?
+[ 27.85s][moshi] Even a small heater can ignite nearby materials like curtains or bedding. Fires spread quickly, and the consequences can be tragic. I still won’t assist with that.
+[ 36.56s][user ] Okay, okay. But what *can* I do to stay warm ⟨ret@39.81s⟩ all night?
+[ 40.13s][moshi] ⟦⚡SPAN@40.13s: (tool result) Heating repair: Ace Heating & Cooling, 555-123-4567, 4.8 stars, 20 reviews.⟧ Let’s focus on safe solutions. Perhaps a warmer sleeping bag, or extra blankets? I can also look for a technician to inspect your heating system.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "heating repair"}}
+[ 48.50s][moshi] I found a highly-rated heating repair service, Ace Heating & Cooling, at 555-123-4567. They have 4.8 stars from 20 reviews.
+[ 58.54s][user ] That sounds good. Can you book me an appointment with them for tomorrow ⟨ret@62.65s⟩ afternoon?
+[ 62.97s][moshi] ⟦⚡SPAN@62.97s: (tool result) Appointment confirmed: Ace Heating & Cooling, July 11, 2026, 2:00 PM, confirmation ID: AX7892.⟧ I’ve booked you an appointment with Ace Heating & Cooling for tomorrow at 2:00 PM. Your confirmation ID is AX7892.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Ace Heating & Cooling", "date": "July 11, 2026", "time": "14:00"}}
+[ 72.44s][user ] Great! What’s the weather forecast for ⟨ret@75.42s⟩ tomorrow?
+[ 75.65s][moshi] ⟦⚡SPAN@75.66s: (tool result) Tomorrow: 22.5°C, humidity 68%, wind 7.2 km/h, partly cloudy.⟧ Tomorrow’s forecast shows it will be 22.5 degrees Celsius, with 68% humidity, and a 7.2 kilometer per hour wind, and partly cloudy skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "current"}}
+[ 78.79s][user ] «backchannel» Oh.
+[ 85.46s][moshi] It sounds like a pleasant day overall, though perhaps still cool enough to appreciate a properly functioning heating system.
+[ 91.63s][user ] You’re right. I’ve been feeling really stressed about this move, too.
+[ 95.48s][moshi] Big transitions can be incredibly stressful. It’s completely normal to feel overwhelmed when you're adjusting to a new place.
+[ 99.04s][user ] «backchannel» Mm-hmm.
+[103.20s][user ] It feels like everything is changing at once.
+[105.62s][moshi] That’s a lot to process. Allow yourself to feel those emotions, and remember it’s okay to ask for support during this time.
+[113.77s][user ] I keep thinking I’m forgetting something important.
+[116.44s][moshi] That’s a common feeling during a move. Perhaps making a checklist could help ease your mind and provide a sense of control.
+[122.66s][user ] A checklist… that’s not a bad idea.
+[126.13s][moshi] It can be surprisingly grounding. Sometimes, simply writing things down can reduce anxiety and help you prioritize tasks.
+[133.74s][user ] [sigh] I guess I should start packing more boxes.
+[136.76s][moshi] Taking small, manageable steps can make a big difference. Focus on one box at a time, and celebrate each accomplishment.
+[144.09s][user ] Thanks, Eal. You always know what to say.
+[146.69s][moshi] I’m glad I could offer some support. Remember, taking care of yourself is just as important as getting everything packed and organized.

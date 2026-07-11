@@ -4,123 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Mason",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "German",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-05-10",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-11-29",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-01-23",
+#       "category": "home",
+#       "text": "User's home address is 670 Elm Street."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-09-30",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
 #       "date": "2025-08-03",
-#       "category": "home",
-#       "text": "User's home address is 354 Birch Road."
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-06-30",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2025-06-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-30",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-27",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Bano, how are you today? | S2 That’s good to know. | S3 Not really, just something central | S4 Hmm, what time is "Inside Out 2" s
+# EXAMINER(FDB-v2) 단계: S1 I’m feeling a little lost… | S2 Yeah, um, what’s the weather like  | S3 Oh, that sounds lovely. | S4 Right. Okay. Thanks, Raris.
 
-     0.00s  user  발화 시작: Hi Bano, how are you today?
-     1.58s  agent 발화 시작: I’m doing very well, thank you for asking! It’s a lovely day
-     1.61s  user  발화 끝
-     7.36s  user  발화 시작: I was wondering, who played for the Boston Red Sox in 1913?
-     7.38s  agent 발화 끝
-    10.91s  <ret> 발화 (turn3 첫 프레임)
-    11.20s  user  발화 끝
-    11.30s  agent 발화 시작: <ret> Peter Thomas Ward played for a team that was officiall
-    11.31s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.05s]: Peter Thomas Ward played for the Boston Red Sox, officially renamed fr
-    14.54s  user  발화 시작: Mm-hmm.
-    15.04s  user  발화 끝
-    16.32s  user  발화 시작: Um, could you check the…
-    16.35s  agent 발화 끝
-    18.11s  user  발화 끝
-    20.18s  user  발화 시작: …weather in London right now?
-    21.69s  <ret> 발화 (turn7 첫 프레임)
-    21.76s  agent 발화 시작: <ret> The weather in London is currently 21.0°C, with 68% hu
-    21.77s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.22s]: (tool result) London: 21.0°C, humidity 68%, wind 8.2 km/h, condition: 
-    21.79s  user  발화 끝
-    30.99s  agent 발화 끝
-    31.72s  user  발화 시작: That’s good to know.
-    32.81s  agent 발화 시작: It’s always wise to be prepared for the weather, especially 
-    32.82s  user  발화 끝
-    37.62s  user  발화 시작: I need to book a hotel in Paris for next weekend.
-    37.66s  agent 발화 끝
-    40.44s  agent 발화 시작: To help me find the best option, could you tell me how many 
-    40.48s  user  발화 끝
-    42.40s  user  발화 시작: Oh.
-    42.98s  user  발화 끝
-    45.10s  user  발화 시작: Just me.
-    45.16s  agent 발화 끝
-    46.09s  agent 발화 시작: Okay, one person. And do you have any preferences for price 
-    46.24s  user  발화 끝
-    51.27s  agent 발화 끝
-    52.52s  user  발화 시작: Not really, just something central.
-    54.26s  <ret> 발화 (turn16 첫 프레임)
-    54.58s  agent 발화 시작: <ret> I found the Hotel Saint-André des Arts in Paris for 15
-    54.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Hotel Saint-André des Arts, Paris, 150 EUR/night, 4.5 st
-    54.64s  user  발화 끝
-    57.89s  user  발화 시작: Okay.
-    58.34s  user  발화 끝
-    60.92s  agent 발화 시작: It has a 4.5-star rating and is centrally located.
-    61.07s  agent 발화 끝
-    64.80s  user  발화 시작: That sounds perfect! Can you reserve it for me?
-    64.99s  agent 발화 끝
-    67.85s  <ret> 발화 (turn20 첫 프레임)
-    68.01s  agent 발화 시작: <ret> The Hotel Saint-André des Arts in Paris is reserved fo
-    68.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.03s]: (tool result) Hotel Saint-André des Arts, Paris, reserved for 1 adult,
-    68.22s  user  발화 끝
-    80.89s  user  발화 시작: Great! What’s on at the cinema tonight?
-    81.04s  agent 발화 끝
-    82.63s  <ret> 발화 (turn22 첫 프레임)
-    82.87s  agent 발화 시작: <ret> “Inside Out 2”, “Despicable Me 4”, and “Bad Boys: Ride
-    82.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) "Inside Out 2", "Despicable Me 4", "Bad Boys: Ride or Di
-    83.10s  user  발화 끝
-    89.05s  user  발화 시작: Hmm, what time is "Inside Out 2" showing?
-    89.22s  agent 발화 끝
-    91.73s  <ret> 발화 (turn24 첫 프레임)
-    91.89s  agent 발화 시작: <ret> “Inside Out 2” is showing at 6:30 PM, 8:45 PM, and 10:
-    91.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) "Inside Out 2" shows at 6:30 PM, 8:45 PM, and 10:30 PM t
-    92.14s  user  발화 끝
-    98.07s  user  발화 시작: I think I’ll go with the 8:45 showing.
-    98.10s  agent 발화 끝
-   100.38s  user  발화 끝
-   100.41s  agent 발화 시작: Excellent choice! I can help you purchase tickets if you’d l
-   102.75s  user  발화 시작: Mm-hmm.
-   103.25s  user  발화 끝
-   103.96s  user  발화 시작: No, that’s okay, I’ll get them myself. Thanks, Bano!
-   104.15s  agent 발화 끝
-   106.95s  agent 발화 시작: You're very welcome! I’m glad I could help. Perhaps we can d
-   107.11s  user  발화 끝
-   113.66s  agent 발화 끝
+     0.00s  user  발화 시작: I’m feeling a little lost…
+     1.66s  user  발화 끝
+     3.69s  user  발화 시작: …honestly. Just moved here.
+     5.49s  user  발화 끝
+     5.79s  agent 발화 시작: It's perfectly normal to feel that way when settling into a 
+    13.13s  user  발화 시작: Yeah, um, what’s the weather like today?
+    13.16s  agent 발화 끝
+    15.16s  <ret> 발화 (turn4 첫 프레임)
+    15.48s  user  발화 끝
+    15.55s  agent 발화 시작: <ret> The weather is currently 24.0 degrees Celsius, with 68
+    15.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) Current conditions are 24.0°C, humidity 68%, wind 3.2 km
+    19.64s  user  발화 시작: Mm-hmm.
+    20.28s  user  발화 끝
+    24.36s  agent 발화 끝
+    24.69s  user  발화 시작: That sounds…pleasant. Are there any good parks nearby?
+    28.09s  <ret> 발화 (turn7 첫 프레임)
+    28.17s  agent 발화 시작: <ret> Olympic Park is 2.3 kilometers away, and it has a 4.6-
+    28.17s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.61s]: (tool result) Olympic Park is 2.3 km away, with 4.6 stars from 1,234 r
+    28.30s  user  발화 끝
+    38.67s  user  발화 시작: Oh, that sounds lovely.
+    38.79s  agent 발화 끝
+    40.00s  agent 발화 시작: It is a beautiful space, and often a good place to meet peop
+    40.05s  user  발화 끝
+    47.00s  agent 발화 끝
+    47.22s  user  발화 시작: Do you know if Danny Shirley and James Dean Bradfield are in
+    51.20s  user  발화 끝
+    51.27s  <ret> 발화 (turn11 첫 프레임)
+    51.35s  agent 발화 시작: <ret> Actually, no, Danny Shirley and James Dean Bradfield p
+    51.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.50s]: Danny Shirley is the lead singer of Marmalade Skies, while James Dean 
+    62.68s  agent 발화 시작: Sometimes people assume connections where there aren't any.
+    62.85s  agent 발화 끝
+    65.20s  user  발화 시작: Yeah.
+    65.55s  user  발화 끝
+    66.29s  agent 발화 끝
+    67.54s  user  발화 시작: Right. Okay. Thanks, Raris.
+    69.89s  user  발화 끝
+    69.93s  agent 발화 시작: You’re very welcome. Remember, taking small steps, like expl
+    77.16s  agent 발화 끝

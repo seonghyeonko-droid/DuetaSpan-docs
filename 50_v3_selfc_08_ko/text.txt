@@ -1,93 +1,90 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 크레르이며, 돈과 예산 관리에 대해 사람들을 돕는 긍정적이고 지지적인 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치, 베노입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "태훈",
+    "name": "현서",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2025-08-26",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-04-01",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "date": "2025-08-23",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-21",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-05-29",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-18",
+      "date": "2025-05-27",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2025-08-29",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2025-06-08",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
+      "date": "2026-04-11",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-12-16",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-16",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 도쿄역에서 ⟨ret@0.00s⟩ 시부야 크로싱까지 대중교통으로 제일 빠른 길은 어디야?
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) The quickest route from Tokyo Station to Shibuya Crossing using public transport is approximatel⟧ 도쿄역에서 시부야 크로싱까지 대중교통으로 가는 가장 빠른 길은 약 삼십삼분 정도 걸리고, JR 야마노테 선을 이용하면 됩니다.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "Tokyo Station", "destination": "Shibuya Crossing", "mode": "transit"}}
-[  0.15s][user ] «backchannel» 응.
-[  0.16s][user ] 삼십삼분이라… 음, 좀 길겠네.
-[  0.18s][moshi] 시간은 조금 걸리지만, 환승 없이 한 번에 갈 수 있어서 편리하실 거예요.
-[  0.25s][user ] «backchannel» 그래.
-[  0.26s][user ] 이번 ⟨ret@0.00s⟩ 주 토요일에 친구랑 같이 갈 건데, 혹시 그날 날씨는 어때?
-[  0.32s][moshi] ⟦⚡SPAN@0.32s: (tool result) The weather forecast for Shibuya, Tokyo on Saturday, July 11, 2026 is 28.5°C, humidity 68%, with⟧ 이천이십육년 칠월 십일일 토요일 시부야 날씨는 이십팔 점 오도이고, 습도는 육십팔퍼센트이며, 비가 올 확률은 삼십퍼센트입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-11"}}
-[  0.41s][user ] «backchannel» 와.
-[  0.42s][moshi] 우산을 챙기시는 게 좋겠네요. 그래도 야외 활동하기에 아주 나쁘지는 않을 거예요.
-[  0.49s][user ] «backchannel» 음.
-[  0.49s][user ] 아, 맞아! ⟨ret@0.50s⟩ 이번 주말에 친구 생일인데, 시부야에서 맛있는 저녁 먹을 만한 곳 좀 추천해 줄래?
-[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tool result) There are several highly-rated restaurants in Shibuya, including Han no Daidokoro Bettei, known ⟧ 시부야에는 한 노 다이도코로 베테이—와규 소고기로 유명한 곳—와 우오베이 시부야 도겐자카—가성비 좋은 회전 초밥집—같은 인기 맛집이 많습니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Shibuya", "cuisine": "any"}}
-[  0.68s][user ] 와규… ⟨ret@0.37s⟩ 맛있겠다! 한 노 다이도코로 베테이 예약해 줘. 이번 주 토요일 저녁 일곱시에 두 명.
-[  0.77s][moshi] ⟦⚡SPAN@0.77s: (tool result) Reservation confirmed at Han no Daidokoro Bettei for 2 people on July 11, 2026 at 7:00 PM. Confi⟧ 한 노 다이도코로 베테이에 이천이십육년 칠월 십일일 토요일 저녁 일곱시에 두 분 예약이 완료되었습니다. 확인 번호는 칠 팔 엑스 구 이 엘입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Han no Daidokoro Bettei", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
-[  0.90s][user ] «backchannel» 와.
-[  0.91s][user ] 칠 팔 엑스 구 이 엘… 알았어. 고마워, 크레르!
-[  0.96s][moshi] 천만에요! 친구분과 즐거운 생일 저녁 보내세요.
+[  0.00s][user ] 베노님, ⟨ret@0.00s⟩ 보스턴에서 괜찮은 이탈리아 식당 좀 찾아주실 수 있을까요?
+[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) Restaurants in Boston serving Italian cuisine include Giacomo's Ristorante at 335 Hanover Street⟧ 보스턴에서 이탈리아 음식을 맛볼 수 있는 식당으로는, 하노버 스트리트 삼백삼십오번지에 있는 지아코모스 리스토란테가 있습니다. 분위기가 아주 좋다고 하네요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Boston", "cuisine": "Italian"}}
+[  0.15s][user ] 지아코모스, ⟨ret@0.00s⟩ 음… 거긴 좀 시끄러울까 봐 걱정되는데, 다른 곳도 있을까요? 좀 조용한 곳으로요.
+[  0.22s][moshi] ⟦⚡SPAN@0.22s: (tool result) Trattoria Il Panino, located at 11 Parmenter Street, is a quieter Italian restaurant in Boston, ⟧ 좀 더 조용한 분위기를 원하신다면, 파멘터 스트리트 십일번지에 있는 트라토리아 일 파니노를 추천해 드립니다. 좀 더 아늑한 식사를 즐기실 수 있을 거예요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Boston", "cuisine": "Italian", "attributes": "quiet"}}
+[  0.35s][user ] «backchannel» 와.
+[  0.35s][user ] 트라토리아 ⟨ret@0.11s⟩ 일 파니노… 거기는 예약이 가능한가요? 이번 주 토요일 저녁에 두 명으로 예약하고 싶어요.
+[  0.43s][moshi] ⟦⚡SPAN@0.43s: (tool result) Reservation confirmed at Trattoria Il Panino for July 11, 2026 at 7:00 PM for 2 people. Confirma⟧ 트라토리아 일 파니노에 이번 주 토요일 저녁 일곱시에 두 분으로 예약이 완료되었습니다. 확인 번호는 팔 칠 에이 이 비 구입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Trattoria Il Panino", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
+[  0.54s][user ] 토요일이요? 아, 이번 주 토요일이 아니라 다음 주 토요일로 부탁드려도 될까요?
+[  0.61s][moshi] «interrupted» 다음 주 토요일로 변경해 드릴까요? —
+[  0.64s][user ] …혹시 거기 파스타 종류가…
+[  0.66s][user ] …뭐가 ⟨ret@0.29s⟩ 있는지 알 수 있을까요?
+[  0.69s][moshi] ⟦⚡SPAN@0.69s: (tool result) Trattoria Il Panino's menu features classic pasta dishes like Spaghetti Carbonara, Fettuccine Al⟧ 트라토리아 일 파니노의 메뉴에는 스파게티 카르보나라, 페투치네 알프레도, 랍스터 라비올리와 같은 클래식 파스타와 계절별 특별 메뉴가 준비되어 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "Trattoria Il Panino pasta menu"}}
+[  0.79s][user ] «backchannel» 아.
+[  0.80s][moshi] 파스타 종류가 다양해서 선택의 폭이 넓으실 거예요.
+[  0.84s][user ] 아니요, ⟨ret@0.64s⟩ 괜찮아요. 예약 변경은 다음 주 토요일로 해주세요.
+[  0.88s][moshi] ⟦⚡SPAN@0.88s: (tool result) Reservation updated at Trattoria Il Panino for July 18, 2026 at 7:00 PM for 2 people. Confirmati⟧ 트라토리아 일 파니노 예약이 다음 주 토요일 저녁 일곱시, 두 분으로 변경되었습니다. 새로운 확인 번호는 씨 사 에프 일 디 오입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Trattoria Il Panino", "date": "2026-07-18", "time": "19:00", "party_size": 2}}

@@ -4,56 +4,72 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Jordan",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-06-05",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-03-07",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-25",
 #       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-29",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-23",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-28",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who wrote the most wonderful time of the year?
-     2.40s  <ret> 발화 (turn1 첫 프레임)
-     2.72s  agent 발화 시작: <ret> That lovely song was written by Edward Pola, who craft
-     2.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: Edward Pola wrote the lyrics to "It's the Most Wonderful Time of the Y
-     2.82s  user  발화 끝
-    11.89s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who originally sang the theme for 21 Jump Street
+     3.12s  <ret> 발화 (turn1 첫 프레임)
+     3.43s  user  발화 끝
+     3.44s  agent 발화 시작: <ret> Oh, that's a fun one! It was Holly Robinson who origin
+     3.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.82s]: Holly Robinson sang the theme song for the television series 21 Jump S
+    15.26s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Nina",
+#     "name": "Zoe",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -13,85 +13,80 @@
 #     },
 #     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-07",
+#       "date": "2026-02-24",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-02-05",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-02-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-10-22",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-08",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-08",
+#       "date": "2025-09-21",
 #       "category": "home",
-#       "text": "User's home address is 42 Pine Court."
+#       "text": "User's home address is 513 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-09-17",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-08-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-28",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-22",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-05",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 uhhh… who makes the most money in  | S2 welll… how about second place? | S3 um… can you find me a picture of L | S4 that's perfect, thanks.
 
-     0.00s  user  발화 시작: uhhh… who makes the most money in the NBA?
+     0.00s  user  발화 시작: Um, welll… where, uh, were the Anzacs supposed to land at Ga
      0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.06s  agent 발화 시작: <ret> It’s wonderful you’re curious about success! LeBron Ja
-     0.06s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: LeBron James earned $128.2 million in the 2023–24 NBA season, making h
-     0.06s  user  발화 끝
-     0.07s  <ret> 발화 (turn5 첫 프레임)
-     0.21s  user  발화 시작: wow, that's… a lot.
-     0.21s  agent 발화 끝
-     0.24s  agent 발화 시작: It truly is a remarkable amount, isn't it? Sometimes acknowl
-     0.24s  user  발화 끝
-     0.36s  user  발화 시작: welll… how about second place?
-     0.36s  agent 발화 끝
-     0.39s  agent 발화 시작: <ret> Discovering who else is achieving great things is a fa
-     0.39s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: Joel Embiid was the second-highest paid NBA player in the 2023–24 seas
-     0.39s  user  발화 끝
-     0.55s  <ret> 발화 (turn9 첫 프레임)
-     0.57s  user  발화 시작: Yeah, yeah.
-     0.57s  agent 발화 끝
-     0.59s  agent 발화 시작: Seeing different paths to achievement can be really motivati
-     0.59s  user  발화 끝
-     0.65s  user  발화 시작: um… can you find me a picture of LeBron?
-     0.65s  agent 발화 끝
-     0.71s  agent 발화 시작: <ret> I found something! It’s LeBron James, from IMDb, a wel
-     0.71s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) LeBron James (2023) - IMDb - https://www.imdb.com/name/n
-     0.71s  user  발화 끝
-     0.83s  user  발화 시작: that's perfect, thanks.
-     0.83s  agent 발화 끝
-     0.85s  agent 발화 시작: You're very welcome! I’m glad I could help you find what you
+     0.08s  <ret> 발화 (turn3 첫 프레임)
+     0.12s  agent 발화 시작: <ret> They were intended to land at Ari Burnu, on the wester
+     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: The Anzac troops were intended to land at Ari Burnu, on the western si
+     0.12s  user  발화 끝
+     0.37s  user  발화 시작: Oh, okay. And what date was that supposed to happen on?
+     0.37s  agent 발화 끝
+     0.48s  agent 발화 시작: <ret> The landing at Ari Burnu commenced on the morning of A
+     0.48s  ⚡SPAN 주입 [d'=0.29s / d_lead=0.29s]: The landing at Ari Burnu commenced on the morning of 25 April 1915, as
+     0.48s  user  발화 끝
+     0.76s  user  발화 시작: Right.
+     0.76s  agent 발화 끝
+     0.77s  user  발화 시작: Right. Hmm, and… was it a successful landing?
+     0.77s  user  발화 끝
+     0.85s  agent 발화 시작: That’s a complex question, and it wasn't exactly as planned.
      0.85s  user  발화 끝
      1.00s  agent 발화 끝

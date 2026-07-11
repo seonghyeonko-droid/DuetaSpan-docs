@@ -1,82 +1,95 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Droralo, a calm and patient personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Broia, a warm and attentive personal guide who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Taylor",
+    "name": "Manon",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-16",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2026-06-20",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-12-27",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-10-10",
+      "date": "2026-05-09",
       "category": "trip",
       "text": "User is planning a trip to New Zealand in March."
     },
     {
-      "date": "2025-09-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-02-15",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-09-26",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-06-29",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-09",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-22",
+      "date": "2026-05-27",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering, how much did it cost to make “Solo: A Star Wars ⟨ret@4.29s⟩ Story”?
-[  4.50s][moshi] ⟦⚡SPAN@4.53s: “Solo: A Star Wars Story” had a production budget of approximately $275 million, according to reports.⟧ The production of “Solo: A Star Wars Story” cost around $275 million, if reports are accurate. It was a sizable undertaking, certainly.
-[ 16.92s][user ] Wow, that’s a lot of ⟨ret@18.67s⟩ money.
-[ 18.91s][moshi] ⟦⚡SPAN IRRELEVANT@18.91s: The average high temperature in Reykjavik, Iceland in July is 13.1°C, with a low of 8.3°C, and an average rain⟧ It is a significant investment, yes. Film production costs can quickly add up with visual effects and talent.
-[ 25.61s][moshi] I also assist with budgeting if you’d like to discuss managing your own funds—
-[ 28.09s][user ] «backchannel» Right.
-[ 29.02s][user ] «interrupts_prev» Maybe later. Was that the final cost, or were there overruns?
-[ 33.87s][moshi] ⟨ret@33.79s⟩ ⟦⚡SPAN@33.87s: Reports indicate that “Solo” underwent extensive reshoots which added at least $30 million to the final cost.⟧ There were reports of substantial reshoots, adding at least $30 million to the initial $275 million budget.
-[ 36.44s][user ] «backchannel» Oh.
-[ 42.11s][user ] So, over $300 million total then?
-[ 45.70s][moshi] That is correct. The total cost rose above $300 million, factoring in those additional production expenses.
-[ 49.05s][user ] «backchannel» Uh-huh.
-[ 53.08s][user ] That’s… a risk.
-[ 54.56s][moshi] It is a considerable financial commitment, and studios weigh those risks carefully when greenlighting projects.
-[ 61.94s][user ] What about marketing ⟨ret@63.56s⟩ costs?
-[ 63.95s][moshi] ⟦⚡SPAN@63.96s: Marketing and distribution costs for “Solo: A Star Wars Story” were estimated to be around $180 million.⟧ Marketing and distribution added around $180 million to the overall expenditure for “Solo”.
-[ 71.05s][user ] So, almost half the production cost again?
-[ 74.07s][moshi] It’s a significant amount, yes. Marketing is essential to reach audiences and ensure a film’s success.
-[ 78.55s][user ] «backchannel» Yeah, yeah.
-[ 80.82s][user ] That’s incredible.
-[ 82.22s][moshi] It demonstrates the scale of investment involved in these large-scale cinematic releases, certainly.
+[  0.00s][user ] I was wondering, what is the movie *The Imitation Game* ⟨ret@3.36s⟩ about?
+[  3.59s][moshi] «interrupted» ⟦⚡SPAN@3.60s: The film depicts the life of British cryptanalyst Alan Turing, who led the team that cracked the Enigma code d⟧ It tells the story of Alan Turing, a brilliant mind—
+[  6.49s][user ] «interrupts_prev» …was he the only one working on ⟨ret@8.76s⟩ that?
+[  9.15s][moshi] ⟦⚡SPAN@9.16s: Bletchley Park was the central site for the United Kingdom's Government Code and Cypher School during World Wa⟧ Bletchley Park was where the UK’s codebreakers worked during the war.
+[ 10.93s][user ] «backchannel» Yeah.
+[ 13.56s][user ] That sounds incredibly ⟨ret@15.62s⟩ stressful.
+[ 15.93s][moshi] ⟦⚡SPAN@15.94s: Alan Turing developed a machine called the "Bombe" to help decipher the Enigma-encrypted messages.⟧ He developed a machine called the “Bombe” to help break the Enigma code.
+[ 17.53s][user ] «backchannel» Yeah, totally.
+[ 20.41s][moshi] It significantly sped up the process of cracking those complex codes.
+[ 23.13s][user ] «backchannel» Yeah, yeah.
+[ 24.76s][user ] Did cracking the code actually shorten the war?
+[ 27.84s][moshi] ⟨ret@27.60s⟩ ⟦⚡SPAN@27.84s: Historians estimate that the work at Bletchley Park shortened the war by two to four years.⟧ Many historians believe their work shortened the war by two to four years.
+[ 32.01s][user ] That’s a huge ⟨ret@33.34s⟩ impact!
+[ 33.74s][moshi] ⟦⚡SPAN IRRELEVANT@33.74s: The current temperature in Rome, Italy is 28.5°C with clear skies and a light breeze from the south at 6.2 km/⟧ It really was, saving countless lives in the process.
+[ 37.17s][moshi] It’s a story of immense courage and intellectual achievement, really.
+[ 40.49s][user ] I think I’ll add that to my ⟨ret@42.70s⟩ watchlist.
+[ 42.85s][moshi] ⟦⚡SPAN@42.86s: Benedict Cumberbatch received an Academy Award nomination for his portrayal of Alan Turing in *The Imitation G⟧ Benedict Cumberbatch was nominated for an Oscar for his role.
+[ 46.60s][user ] He’s such a talented actor.
+[ 48.63s][moshi] He truly captured Turing’s complexity, I think.
+[ 52.07s][user ] Thanks for telling me about it, Broia.
+[ 54.23s][moshi] You’re very welcome. It's a story that deserves to be remembered.

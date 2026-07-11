@@ -1,80 +1,89 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Sear, a curious and validating personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Horax, a practical and reassuring counselor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Nathan",
+    "name": "Jordan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
-      "category": "home",
-      "text": "User's home address is 456 Maple Drive."
+      "date": "2026-05-31",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-03-11",
+      "date": "2026-02-22",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-10-20",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2025-09-02",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-07-04",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-06-25",
+      "date": "2025-08-12",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-08-04",
+      "category": "work",
+      "text": "User works as a graphic designer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-23",
+      "date": "2026-06-26",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-02-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-31",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] After ⟨ret@0.00s⟩ a three-week period, who could submit a proposed measure to the Supreme Court?
-[  0.10s][moshi] ⟦⚡SPAN@0.10s: (no information found)⟧ It seems that information isn't readily available, unfortunately. It’s a bit of a legal puzzle!
-[  0.21s][user ] «backchannel» Yeah.
-[  0.22s][user ] Oh. ⟨ret@0.06s⟩ Well, can you find me a good Italian restaurant nearby?
-[  0.30s][moshi] ⟦⚡SPAN@0.30s: (tool result) 4.6 stars, $$$, 123 Main Street, Italian, 0.5 miles away.⟧ There’s a highly-rated Italian place, just half a mile from here. It’s called… well, it doesn’t have a name in this result.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[  0.46s][user ] «backchannel» Mm-hmm.
-[  0.47s][user ] [laugh] That’s… unusual.
-[  0.49s][moshi] It does sound a little mysterious, doesn’t it? Perhaps a hidden gem!
-[  0.58s][user ] Maybe. ⟨ret@0.31s⟩ What’s the weather like right now?
-[  0.63s][moshi] ⟦⚡SPAN@0.63s: (tool result) 24.0°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s a lovely 24.0 degrees Celsius with clear skies and a gentle breeze of 3.2 kilometers per hour. Perfect for finding that nameless Italian place!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[  0.81s][user ] It does sound nice. Thanks, Sear.
-[  0.85s][moshi] You’re very welcome! It’s my pleasure to help you discover little joys, even if they involve restaurants with no names.
+[  0.00s][user ] What does wool look like?
+[  0.02s][moshi] Well, that's a surprisingly tricky question, isn't it? It seems a precise visual description of wool isn’t readily available.
+[  0.09s][user ] «backchannel» Yeah.
+[  0.09s][user ] Hmm. ⟨ret@0.00s⟩ What *is* it made of, then?
+[  0.12s][moshi] ⟦⚡SPAN@0.12s: Wool is the textile fiber obtained from sheep and other animals, including alpacas, llamas, and goats.⟧ Wool comes from the fleece of animals—sheep most commonly—but also alpacas, llamas, and even goats. It’s a natural fiber, really quite remarkable.
+[  0.20s][user ] Is it warm?
+[  0.21s][moshi] It's known for its warmth and softness. It’s a lovely material for keeping cozy during colder months.
+[  0.27s][user ] What about…different colors?
+[  0.28s][moshi] «interrupted» Wool can be dyed almost any color imaginable—
+[  0.31s][user ] «interrupts_prev» …but what’s the *natural* color?
+[  0.33s][moshi] Ah, a very good point! Naturally, sheep’s wool comes in shades of white, but also gray, brown, and black.
+[  0.40s][user ] Black wool? Really?
+[  0.41s][moshi] Indeed. Certain breeds produce quite dark fleece. It's a lovely, earthy tone.
+[  0.46s][user ] «backchannel» Yeah.
+[  0.46s][moshi] It's fascinating how much variation there is, isn't it? The texture can vary too—from very fine merino to coarser varieties. It all depends on the breed of animal, and how it’s processed.
+[  0.58s][user ] Is it itchy? I always thought wool was itchy.
+[  0.61s][moshi] It can be, for some people—that depends on the fineness of the fiber. Coarser wools are more likely to cause irritation, while finer ones, like merino, are incredibly soft.
+[  0.72s][user ] «backchannel» Yeah.
+[  0.72s][user ] So ⟨ret@0.35s⟩ merino is the good stuff?
+[  0.75s][moshi] ⟦⚡SPAN@0.75s: Merino wool is known for its softness, fineness, and crimp, making it ideal for next-to-skin comfort.⟧ Yes, merino is often considered the gold standard—it’s known for its softness, fineness, and crimp, making it incredibly comfortable to wear. It’s a very different experience than some of the older, rougher wools.
+[  0.87s][user ] «backchannel» Yeah.
+[  0.87s][user ] That makes sense. Okay, last question…can you get sweaters made of it?
+[  0.92s][moshi] Wool is a very popular choice for sweaters, scarves, and all sorts of cozy garments. It's a truly versatile fiber, wouldn’t you say?

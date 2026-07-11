@@ -4,71 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Freya",
+#     "name": "Lena",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "late 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-05-19",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-05-14",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-04-04",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-01-26",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-02-14",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-09-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-26",
-#       "title": "Researching a used car",
+#       "date": "2026-06-02",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just feeling really stuck righ | S2 Self-compassion? It just feels lik | S3 …But is it okay if it *never* come | S4 So it's not a failure if I want to
 
-     0.00s  agent 발화 시작: Hello Freya, it’s lovely to meet you. I’m Tae, and I help pe
-     0.12s  user  발화 시작: I’m just feeling really stuck right now, honestly. I haven’t
-     0.12s  agent 발화 끝
-     0.20s  agent 발화 시작: It’s completely understandable to feel that way, Freya. Crea
-     0.20s  user  발화 끝
-     0.33s  user  발화 시작: Yeah.
-     0.33s  agent 발화 끝
-     0.34s  user  발화 시작: Self-compassion? It just feels like I’ve lost the joy in it,
-     0.34s  user  발화 끝
-     0.42s  agent 발화 시작: That loss of joy is a key thing to explore—it’s often linked
-     0.42s  user  발화 끝
-     0.57s  user  발화 시작: …But is it okay if it *never* comes back? What if I just… do
-     0.57s  agent 발화 끝
-     0.68s  agent 발화 시작: Freya. It's perfectly alright to allow your interests to shi
-     0.68s  user  발화 끝
-     0.77s  user  발화 시작: So it's not a failure if I want to try something else?
-     0.77s  agent 발화 끝
-     0.84s  agent 발화 시작: Absolutely not. It’s a sign of self-awareness and courage to
-     0.84s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Lena, it’s lovely to meet you. My name is Lelix, and I
+     0.14s  user  발화 시작: Yeah.
+     0.14s  agent 발화 끝
+     0.14s  user  발화 시작: A counselor? That’s… unexpected. I thought this was just a h
+     0.14s  user  발화 끝
+     0.23s  agent 발화 시작: It’s true I can assist with many things, but I also enjoy he
+     0.23s  user  발화 끝
+     0.37s  user  발화 시작: Welll… I’ve been feeling really overwhelmed lately with work
+     0.37s  agent 발화 끝
+     0.45s  agent 발화 시작: It sounds as though you’re carrying quite a load, Lena. Over
+     0.45s  user  발화 끝
+     0.58s  user  발화 시작: Yeah.
+     0.58s  agent 발화 끝
+     0.59s  agent 발화 시작: —and perhaps find ways to create more space for ourselves. D
+     0.59s  user  발화 끝
+     0.72s  user  발화 시작: Not really, to be honest. It always feels like there’s anoth
+     0.72s  agent 발화 끝
+     0.83s  agent 발화 시작: That sense of endlessness is exhausting, isn’t it? Perhaps w
+     0.83s  user  발화 끝
      1.00s  agent 발화 끝

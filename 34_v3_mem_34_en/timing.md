@@ -4,93 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Henri",
+#     "name": "Lily",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-06-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-05-22",
+#       "date": "2026-05-17",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-12-24",
+#       "date": "2026-05-16",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-05-08",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "category": "home",
+#       "text": "User's home address is 276 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-22",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-23",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Henri, I'm Klealo. It's lovely to connect with you. Are y
-     0.16s  user  발화 시작: Um, yeah, I need to get to Bondi Beach. How long will that t
-     0.16s  agent 발화 끝
-     0.19s  <ret> 발화 (turn2 첫 프레임)
-     0.27s  agent 발화 시작: <ret> I see you're in Sydney, Henri. Let me check the curren
-     0.27s  ⚡SPAN 주입 [d'=0.28s / d_lead=0.28s]: [2026-03-25] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.27s  user  발화 끝
-     0.55s  user  발화 시작: Uh-huh.
-     0.55s  agent 발화 끝
-     0.56s  user  발화 시작: And can you find me a parking garage near there?
-     0.56s  user  발화 끝
-     0.56s  <ret> 발화 (turn5 첫 프레임)
-     0.64s  agent 발화 시작: <ret> Bondi Beach Car Park at 120 Hall Street has a 4.2-star
-     0.64s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) Bondi Beach Car Park: 120 Hall St, Bondi Beach NSW 2026,
-     0.64s  user  발화 끝
-     0.77s  user  발화 시작: Oh.
-     0.77s  agent 발화 끝
-     0.78s  user  발화 시작: Perfect, thanks.
-     0.78s  user  발화 끝
-     0.80s  agent 발화 시작: You're very welcome, Henri. I'm glad I could help with your 
-     0.80s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Lily, I'm Elolo. It's lovely to meet you.
+     0.08s  user  발화 시작: Um, yes, hello. I need to get to a florist, actually.
+     0.08s  agent 발화 끝
+     0.11s  <ret> 발화 (turn2 첫 프레임)
+     0.19s  agent 발화 시작: <ret> Before we map that out, I remember you mentioning Max,
+     0.19s  ⚡SPAN 주입 [d'=0.31s / d_lead=0.31s]: [2025-09-13] User has a Golden Retriever named Max.
+     0.19s  user  발화 끝
+     0.50s  user  발화 시작: For a friend. And could you use my home address?
+     0.50s  agent 발화 끝
+     0.50s  <ret> 발화 (turn5 첫 프레임)
+     0.51s  <ret> 발화 (turn4 첫 프레임)
+     0.59s  agent 발화 시작: <ret> Your home address is 276 Cedar Lane. Let me find flori
+     0.59s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: [2025-09-13] User's home address is 276 Cedar Lane.
+     0.59s  user  발화 끝
+     0.74s  agent 발화 시작: <ret> Bloom & Blossom on Bleecker Street is one point two mi
+     0.74s  ⚡SPAN 주입 [d'=0.26s / d_lead=0.26s]: (tool result) Destination: Bloom & Blossom, 145 Bleecker St, New York,
+     0.74s  agent 발화 끝
      1.00s  agent 발화 끝

@@ -4,73 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "윤찬",
+#     "name": "가영",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-04-04",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-03-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-14",
+#       "date": "2026-01-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User is planning a trip to Switzerland in December."
 #     },
 #     {
-#       "date": "2025-11-17",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2025-09-12",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-26",
-#       "title": "Researching a used car",
+#       "date": "2026-02-07",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-02",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 태 씨군요. 웰니스 코치라… 혹시 제가 뭘 해야 할지 콕 | S2 그렇군요. 요즘 그림을 그리는데 자꾸 머릿속이 하얘서… 뭘 그 | S3 …그런데 태 씨, 혹시 저도 정말 그림을 계속해야 할까요? | S4 음… 솔직히 즐겁다는 느낌보다는, 해야 한다는 압박감이 더 큰
 
-     0.00s  agent 발화 시작: 윤찬 씨, 안녕하세요. 저는 태예요. 창의적인 막힘이나 자신감 문제로 고민하시는 분들을 돕는 웰니스 코치랍니
-     0.10s  user  발화 시작: 아, 태 씨군요. 웰니스 코치라… 혹시 제가 뭘 해야 할지 콕 집어주는 그런 건가요?
-     0.10s  agent 발화 끝
-     0.20s  agent 발화 시작: 음, 딱 정해진 답을 드리진 않아요. 오히려 윤찬 씨 스스로 답을 찾을 수 있도록, 생각을 정리하고 마음을 
-     0.20s  user  발화 끝
-     0.34s  user  발화 시작: 네.
-     0.34s  agent 발화 끝
-     0.35s  user  발화 시작: 그렇군요. 요즘 그림을 그리는데 자꾸 머릿속이 하얘서… 뭘 그려야 할지, 뭘 하고 싶은지 모르겠어요.
-     0.35s  user  발화 끝
-     0.45s  agent 발화 시작: 그림을 그릴 때 막힘을 느끼시는군요. 빈 캔버스 앞에서 막막함을 느끼는 건 흔한 일이에요. 스스로에 대한 의
-     0.45s  user  발화 끝
-     0.60s  user  발화 시작: …그런데 태 씨, 혹시 저도 정말 그림을 계속해야 할까요?
-     0.60s  agent 발화 끝
-     0.66s  agent 발화 시작: 윤찬 씨, 지금 중요한 건 그림을 계속해야 할지 아닐지가 아니라, 그림을 그리는 행위 자체에서 어떤 감정을 
-     0.66s  user  발화 끝
-     0.78s  user  발화 시작: 음.
-     0.78s  agent 발화 끝
-     0.79s  user  발화 시작: 음… 솔직히 즐겁다는 느낌보다는, 해야 한다는 압박감이 더 큰 것 같아요.
-     0.79s  user  발화 끝
-     0.87s  agent 발화 시작: 압박감을 느끼시는군요. 그림을 그리는 이유를 다시 한번 생각해 보시는 것도 좋을 것 같아요. 처음 그림을 시
-     0.87s  user  발화 끝
-     1.00s  agent 발화 끝
+     0.00s  agent 발화 시작: 가영님, 안녕하세요. 저는 레리크스라고 해요. 건강과 일상 습관에 대해 함께 이야기 나누는 상담가랍니다.
+     0.15s  user  발화 시작: 네.
+     0.15s  agent 발화 끝
+     0.16s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있을까요?
+     0.16s  user  발화 끝
+     0.23s  agent 발화 시작: 무엇이든 편하게 말씀해 주세요. 가영님께서 지금 어떤 점이 가장 마음을 무겁게 하고 계신가요?
+     0.23s  user  발화 끝
+     0.38s  user  발화 시작: 네.
+     0.38s  agent 발화 끝
+     0.39s  agent 발화 시작: 때로는 말하는 것만으로도 조금은 가벼워질 수 있답니다. 어떤 이야기든 괜찮아요. —
+     0.39s  user  발화 끝
+     0.52s  user  발화 시작: … 요즘 계속 피로해서 걱정이에요. 잠도 잘 못 자고, 뭘 해도 힘이 없어요.
+     0.52s  agent 발화 끝
+     0.67s  agent 발화 시작: 피로 때문에 힘드시군요. 잠을 제대로 못 자는 건 정말 괴로운 일이죠. 혹시 최근에 특별히 스트레스를 받는 
+     0.67s  user  발화 끝
+     0.87s  user  발화 시작: 딱히 특별한 일은 없는데… 그냥 모든 게 다 귀찮고 재미가 없어요.
+     0.87s  agent 발화 끝
+     1.00s  user  발화 끝

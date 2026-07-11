@@ -4,14 +4,14 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Jamie",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "non-binary",
 #     "age_range": "early 20s",
 #     "language": "English"
@@ -23,69 +23,65 @@
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "category": "home",
-#       "text": "User's home address is 490 Pine Court."
-#     },
-#     {
-#       "date": "2025-11-19",
+#       "date": "2026-04-26",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-07-26",
+#       "date": "2026-02-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "home",
+#       "text": "User's home address is 211 Maple Drive."
+#     },
+#     {
+#       "date": "2025-11-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-14",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-11",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-16",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Jamie, I'm Ura. It's lovely to meet you.
-     2.80s  user  발화 시작: um, I’m trying to decide where to go for dinner tonight.
-     2.87s  agent 발화 끝
-     5.58s  <ret> 발화 (turn2 첫 프레임)
-     5.99s  agent 발화 시작: <ret> You told me back on July twenty-sixth, two thousand an
-     5.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [2025-07-26] User's favorite cuisine is Mexican.
-     6.03s  user  발화 끝
-    12.00s  agent 발화 끝
-    14.56s  user  발화 시작: Oh, right! That’s true. Do you have any recommendations in S
-    19.15s  <ret> 발화 (turn4 첫 프레임)
-    19.23s  agent 발화 시작: <ret> El Paso Mexican Restaurant on Oxford Street has a four
-    19.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Name: El Paso Mexican Restaurant, Address: 32 Oxford Str
-    19.37s  user  발화 끝
-    25.02s  user  발화 시작: Mm-hmm.
-    25.79s  user  발화 끝
-    28.00s  agent 발화 끝
-    28.28s  user  발화 시작: That sounds perfect, thanks!
-    30.18s  agent 발화 시작: Wonderful! It’s great to revisit your preferences to make ch
-    30.22s  user  발화 끝
-    37.82s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Robin, I'm Tiax. It's lovely to connect with you today.
+     1.42s  user  발화 시작: Uh-huh.
+     2.05s  user  발화 끝
+     3.67s  user  발화 시작: um, yeah, I am. I'm going to Switzerland in October.
+     3.69s  agent 발화 끝
+     7.33s  <ret> 발화 (turn3 첫 프레임)
+     7.72s  agent 발화 시작: <ret> Switzerland in October sounds absolutely lovely. I see
+     7.84s  user  발화 끝
+     8.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.47s]: [2026-02-21] User is planning a trip to Switzerland in October.
+    10.35s  user  발화 시작: Yeah.
+    10.94s  user  발화 끝
+    15.93s  agent 발화 시작: As a supportive advisor, I find planning a journey can somet
+    15.97s  agent 발화 끝
+    19.78s  user  발화 시작: Uh-huh.
+    20.41s  user  발화 끝
+    23.30s  user  발화 시작: I was hoping you could recommend a city to visit. I really l
+    23.91s  agent 발화 끝
+    28.27s  <ret> 발화 (turn8 첫 프레임)
+    28.35s  user  발화 끝
+    28.43s  agent 발화 시작: <ret> Knowing you enjoy birdwatching, I can certainly sugges
+    28.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: [2025-11-17] User is into birdwatching.
+    36.36s  agent 발화 끝
+    36.63s  user  발화 시작: Oh, that’s great! What do you think?
+    39.17s  user  발화 끝

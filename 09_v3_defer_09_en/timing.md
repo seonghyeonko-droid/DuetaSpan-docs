@@ -4,84 +4,73 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Morgan",
+#     "name": "Ava",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-03",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "home",
-#       "text": "User's home address is 616 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-01-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-09-07",
+#       "date": "2026-05-22",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-07-30",
+#       "date": "2025-12-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-24",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-26",
+#       "category": "home",
+#       "text": "User's home address is 618 Birch Road."
+#     },
+#     {
+#       "date": "2025-07-13",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-19",
+#       "date": "2026-05-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-27",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What details do you have about the Colosseum?
-     2.00s  <ret> 발화 (turn1 첫 프레임)
-     2.24s  agent 발화 시작: <ret> The Colosseum is a large amphitheater in central Rome,
-     2.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.05s]: (tool result) The Colosseum is a large amphitheater in central Rome, I
-     2.35s  user  발화 끝
-     7.61s  user  발화 시작: Yeah.
-     8.11s  user  발화 끝
-    18.29s  agent 발화 끝
-    18.44s  user  발화 시작: That’s incredible. I’m planning a trip to Italy next month.
-    21.68s  agent 발화 시작: That sounds wonderful!
-    21.86s  user  발화 끝
-    23.52s  agent 발화 끝
-    24.29s  user  발화 시작: Um, welll… do you think I should book a hotel near the Spani
-    28.64s  user  발화 끝
-    28.74s  agent 발화 시작: Booking near the Spanish Steps would be lovely – it’s a very
-    36.39s  agent 발화 끝
+     0.00s  user  발화 시작: Click today’s date in the calendar iframe.
+     2.23s  <ret> 발화 (turn1 첫 프레임)
+     2.46s  agent 발화 시작: <ret> Wonderful, I’ve clicked today’s date for you in the ca
+     2.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.85s]: (tool result) {"status": "success", "message": "Clicked today's date i
+     2.58s  user  발화 끝
+     5.56s  user  발화 시작: …can you find me some relaxing music for sleep now?
+     6.31s  agent 발화 끝
+     8.12s  <ret> 발화 (turn3 첫 프레임)
+     8.28s  agent 발화 시작: <ret> I found “Weightless Part 1” by Weightless, it’s eight 
+     8.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: {"artist": "Weightless", "title": "Weightless Part 1", "album": "Weigh
+     8.47s  user  발화 끝
+    16.18s  user  발화 시작: Play it, please.
+    16.34s  agent 발화 끝
+    17.29s  <ret> 발화 (turn5 첫 프레임)
+    17.61s  agent 발화 시작: <ret> “Weightless Part 1” is now playing. Sweet dreams!
+    17.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.11s]: (tool result) {"status": "playing", "message": "Now playing Weightless
+    17.70s  user  발화 끝
+    21.72s  agent 발화 끝

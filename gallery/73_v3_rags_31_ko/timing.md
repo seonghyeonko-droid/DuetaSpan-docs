@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "우영",
+#     "name": "민훈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,61 +12,48 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-11-10",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2025-07-29",
+#       "date": "2026-06-24",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-06-13",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-05-26",
+#       "category": "home",
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#     },
+#     {
+#       "date": "2025-11-30",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-05-31",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-25",
-#       "title": "Researching a used car",
+#       "date": "2026-03-04",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-30",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 베이크 오프 첫 시즌 우승자는 누구였어?
-     1.89s  <ret> 발화 (turn1 첫 프레임)
-     2.12s  agent 발화 시작: <ret> 첫 번째 베이크 오프 우승자는 에드 킴버였어요. 정말 실력 있는 분이시죠.
-     2.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: Edd Kimber won the first series of The Great British Bake Off, which a
-     2.25s  user  발화 끝
-     7.16s  agent 발화 끝
+     0.00s  user  발화 시작: 이천십칠년 슬로베니아 대통령 선거에서 누가 이겼는지 알려주시겠어요?
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.89s  agent 발화 시작: <ret> 이천십칠년 슬로베니아 대통령 선거에서는 보루트 파호르 님이 마르얀 샤레츠 님을 이겨서 당선되셨습니
+     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.67s]: Borut Pahor won the 2017 Slovenian presidential election, defeating Ma
+     4.02s  user  발화 끝
+    11.56s  agent 발화 끝

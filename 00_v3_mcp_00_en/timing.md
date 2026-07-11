@@ -4,117 +4,164 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Paul",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-04-14",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-11-26",
+#       "date": "2026-04-13",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-08-27",
+#       "date": "2026-04-06",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-07-27",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-07",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-09",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-04",
+#       "date": "2025-10-09",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a hotel in Seoul fo | S2 Can you show me some restaurants n | S3 That sounds lovely. | S4 Thank you, Moon.
+# EXAMINER(FDB-v2) 단계: S1 I need to send three dollars and t | S2 What about Thai? | S3 Good. I was worried you’d forget. | S4 What time is it right now?
 
-     0.00s  user  발화 시작: I need to find a hotel in Seoul for next weekend.
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.06s  agent 발화 시작: I can certainly help with that.
-     0.06s  user  발화 끝
-     0.10s  user  발화 시작: Something near Myeongdong would be great.
-     0.10s  agent 발화 끝
-     0.10s  <ret> 발화 (turn9 첫 프레임)
-     0.13s  agent 발화 시작: <ret> I found the L7 Myeongdong, it’s located at 76 Eulji-ro
-     0.13s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) {"hotel name": "L7 Myeongdong", "address": "76 Eulji-ro,
-     0.13s  user  발화 끝
-     0.19s  user  발화 시작: …Is breakfast included with that one?
-     0.19s  agent 발화 끝
-     0.22s  agent 발화 시작: <ret> Yes, breakfast is included with your stay at the L7 My
-     0.22s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"confirmation id": "LX927J", "hotel name": "L7 Myeongdo
+     0.00s  user  발화 시작: I need to send three dollars and twenty cents to user alpha.
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn10 첫 프레임)
+     0.03s  agent 발화 시작: <ret> Alright, I’ve just sent three dollars and twenty cents
+     0.03s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Payment successful. Transaction ID: 9876543210. Balance 
+     0.03s  user  발화 끝
+     0.05s  <ret> 발화 (turn12 첫 프레임)
+     0.08s  <ret> 발화 (turn6 첫 프레임)
+     0.09s  user  발화 시작: Oh, good. That's a relief.
+     0.09s  agent 발화 끝
+     0.10s  agent 발화 시작: It’s wonderful to hear that it’s a relief! Managing finances
+     0.10s  user  발화 끝
+     0.15s  user  발화 시작: Okay.
+     0.15s  agent 발화 끝
+     0.15s  user  발화 시작: Um, what's the weather like today?
+     0.15s  user  발화 끝
+     0.16s  <ret> 발화 (turn14 첫 프레임)
+     0.16s  agent 발화 시작: <ret> Right now, the weather is twenty-three point zero degr
+     0.16s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.
+     0.16s  user  발화 끝
+     0.22s  user  발화 시작: Right.
+     0.22s  agent 발화 끝
+     0.22s  agent 발화 시작: It *is* quite pleasant, isn’t it? A comfortable day like thi
      0.22s  user  발화 끝
-     0.26s  <ret> 발화 (turn12 첫 프레임)
-     0.31s  user  발화 시작: Yeah.
-     0.31s  agent 발화 끝
-     0.32s  agent 발화 시작: I’m glad to hear that. The total will be 180000 Korean Won.
-     0.32s  user  발화 끝
-     0.38s  user  발화 시작: Can you show me some restaurants nearby?
-     0.38s  agent 발화 끝
-     0.42s  agent 발화 시작: <ret> Wangbijib Myeongdong Main Store serves Korean BBQ, it 
-     0.42s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) {"restaurant name": "Wangbijib Myeongdong Main Store", "
-     0.42s  user  발화 끝
-     0.53s  user  발화 시작: Mm-hmm.
-     0.53s  agent 발화 끝
-     0.53s  <ret> 발화 (turn18 첫 프레임)
-     0.53s  user  발화 시작: What are the current weather conditions in Seoul?
+     0.27s  user  발화 시작: I need to find a good restaurant nearby.
+     0.27s  agent 발화 끝
+     0.28s  agent 발화 시작: <ret> I found a couple of options! "The Cozy Bistro" is four
+     0.28s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) "The Cozy Bistro", 4.5 stars, 0.5 km, Italian. "Spice Ro
+     0.28s  user  발화 끝
+     0.37s  user  발화 시작: What about Thai?
+     0.37s  agent 발화 끝
+     0.37s  agent 발화 시작: <ret> I see two Thai restaurants: "Siam Delight" has four po
+     0.37s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) "Siam Delight", 4.7 stars, 2.1 km. "Thai Emerald", 4.3 s
+     0.37s  user  발화 끝
+     0.44s  <ret> 발화 (turn29 첫 프레임)
+     0.45s  user  발화 시작: Siam Delight sounds good. Can you reserve a table there for 
+     0.45s  agent 발화 끝
+     0.48s  agent 발화 시작: <ret> Wonderful! Your table for four at Siam Delight is conf
+     0.48s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Reservation confirmed. Name: Siam Delight. Time: 7:00 PM
+     0.48s  user  발화 끝
+     0.50s  <ret> 발화 (turn18 첫 프레임)
+     0.52s  user  발화 시작: Perfect. Thanks!
+     0.52s  agent 발화 끝
+     0.53s  agent 발화 시작: You're very welcome. Planning a nice family dinner is a love
      0.53s  user  발화 끝
-     0.58s  agent 발화 시작: <ret> The weather in Seoul is currently 28.0 degrees Celsius
-     0.58s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed
+     0.56s  user  발화 시작: Do you remember what I said about sending money to alpha?
+     0.56s  agent 발화 끝
+     0.58s  agent 발화 시작: <ret> Yes, you mentioned earlier that you needed to send thr
+     0.58s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: [2026-07-10] I need to send three dollars and twenty cents to user alp
      0.58s  user  발화 끝
-     0.71s  user  발화 시작: Yeah, yeah.
-     0.71s  agent 발화 끝
-     0.72s  user  발화 시작: That sounds lovely.
-     0.72s  user  발화 끝
-     0.73s  agent 발화 시작: It does, doesn’t it? Enjoy the sunshine while you can.
-     0.73s  user  발화 끝
-     0.79s  user  발화 시작: Yeah.
+     0.61s  <ret> 발화 (turn22 첫 프레임)
+     0.62s  user  발화 시작: Good. I was worried you’d forget.
+     0.62s  agent 발화 끝
+     0.63s  agent 발화 시작: Oh, I assure you, I won’t forget. Sometimes it helps to writ
+     0.63s  user  발화 끝
+     0.68s  user  발화 시작: Maybe. What’s on TV tonight?
+     0.68s  agent 발화 끝
+     0.69s  agent 발화 시작: <ret> Tonight, "Space Explorers" is on at eight PM—it’s an a
+     0.69s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) "Space Explorers", 8:00 PM, Action. "Cozy Cottage", 9:30
+     0.69s  user  발화 끝
+     0.74s  user  발화 시작: That sounds… boring.
+     0.74s  agent 발화 끝
+     0.74s  agent 발화 시작: It’s perfectly okay to not be excited about every option! Fi
+     0.74s  user  발화 끝
+     0.79s  user  발화 시작: That’s actually a good idea.
      0.79s  agent 발화 끝
-     0.80s  user  발화 시작: Could you set an alarm for 7:00 AM tomorrow?
+     0.80s  agent 발화 시작: It often is! Simple, shared experiences are often the most r
      0.80s  user  발화 끝
-     0.85s  agent 발화 시작: <ret> I’ve set an alarm for 7:00 AM tomorrow. The alarm ID i
-     0.85s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"alarm id": "A739KL", "time": "07:00"}
-     0.85s  user  발화 끝
-     0.92s  user  발화 시작: Oh.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: Thank you, Moon.
-     0.93s  user  발화 끝
-     0.94s  agent 발화 시작: You’re very welcome.
-     0.94s  user  발화 끝
-     0.96s  user  발화 시작: I think that's all for now.
+     0.82s  user  발화 시작: Mhm.
+     0.82s  agent 발화 끝
+     0.83s  user  발화 시작: What time is it right now?
+     0.83s  user  발화 끝
+     0.84s  agent 발화 시작: <ret> It is currently Friday, July tenth, two thousand twent
+     0.84s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: (tool result) It is Friday, July 10, 2026 at 4:58 PM in Asia/Seoul rig
+     0.84s  user  발화 끝
+     0.87s  user  발화 시작: Okay.
+     0.87s  agent 발화 끝
+     0.87s  agent 발화 시작: Time really does fly, doesn’t it? It’s important to savor th
+     0.87s  user  발화 끝
+     0.91s  user  발화 시작: Yeah, yeah.
+     0.91s  agent 발화 끝
+     0.91s  user  발화 시작: I think I'll just relax tonight.
+     0.91s  user  발화 끝
+     0.92s  agent 발화 시작: That sounds like a wonderful plan. Sometimes, the best thing
+     0.92s  user  발화 끝
+     0.96s  user  발화 시작: Yeah, yeah.
      0.96s  agent 발화 끝
-     0.99s  agent 발화 시작: Wonderful.
-     0.99s  user  발화 끝
+     0.97s  user  발화 시작: Thanks, Kax.
+     0.97s  user  발화 끝
+     0.97s  agent 발화 시작: You’re very welcome. Remember, taking care of yourself *is* 
+     0.97s  user  발화 끝
      1.00s  agent 발화 끝

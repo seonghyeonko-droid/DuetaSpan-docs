@@ -1,106 +1,94 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Drellar, a calm and patient supportive advisor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Sioia, a encouraging and non-judgmental supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Hana",
+    "name": "Liam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-24",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-04-10",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-03-09",
+      "date": "2026-06-03",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-16",
+      "date": "2026-02-22",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-02-04",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-11-04",
       "category": "cuisine",
       "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-10-11",
+      "date": "2025-08-06",
       "category": "home",
-      "text": "User's home address is 124 Maple Drive."
-    },
-    {
-      "date": "2025-07-01",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User's home address is 473 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-23",
-      "title": "Researching a used car",
+      "date": "2026-02-09",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm feeling pretty stressed lately.
-[  0.01s][moshi] It’s completely understandable to feel that way sometimes. Taking a moment for yourself can make a big difference.
-[  0.05s][user ] «backchannel» Yeah.
-[  0.05s][user ] I guess so. I've been wondering…
-[  0.06s][user ] …about minimum wage, actually.
-[  0.07s][moshi] That's a practical concern, and one many people share. What specifically about minimum wage were you hoping to learn?
-[  0.10s][user ] Well, ⟨ret@0.00s⟩ which state has the lowest?
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: Georgia currently has a state minimum wage of $5.15 per hour, which is lower than the federal minimum wage of ⟧ Georgia currently has a state minimum wage of $5.15 per hour, which is lower than the federal minimum wage of $7.25 per hour. Knowing these figures can sometimes offer a small sense of perspective.
-[  0.18s][user ] That's… surprisingly low. Is that even legal?
-[  0.19s][moshi] It is, as Georgia’s wage is permitted under federal law because it applies to a narrower range of employees.
-[  0.23s][user ] «backchannel» Yeah.
-[  0.23s][user ] Huh. ⟨ret@0.00s⟩ I need to look into that more later. What’s the weather like today?
-[  0.26s][moshi] ⟦⚡SPAN@0.26s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It is currently 23.0°C, with humidity at 74% and a wind speed of 5.5 km/h. Perhaps a walk outside would be calming, if the conditions are agreeable.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[  0.31s][user ] That ⟨ret@0.09s⟩ sounds nice. Do other states have minimum wages below the federal level?
-[  0.33s][moshi] ⟦⚡SPAN@0.33s: Mississippi and Tennessee also have state minimum wages below the federal level, at $7.25 per hour and $7.25 p⟧ Mississippi and Tennessee also have state minimum wages below the federal level, at $7.25 per hour and $7.25 per hour respectively.
-[  0.37s][user ] So, it's mostly southern states?
-[  0.38s][moshi] Generally, yes. Lower minimum wages are more prevalent in the Southeastern United States.
-[  0.41s][user ] «backchannel» Uh-huh.
-[  0.41s][user ] I'm trying to remember where I read something about this… um…
-[  0.43s][moshi] «interrupted» It's alright to pause and gather your thoughts. Sometimes, simply acknowledging that you're searching for something is enough—
-[  0.46s][user ] «interrupts_prev» …Actually, ⟨ret@0.26s⟩ is there a big difference in the cost of living in Georgia compared to, say, California?
-[  0.50s][moshi] ⟦⚡SPAN@0.50s: The cost of living in Georgia is 36.8% lower than in California, with housing costs being 54.4% lower in Georg⟧ The cost of living in Georgia is 36.8% lower than in California, with housing costs being 54.4% lower in Georgia. Understanding these differences can provide useful context.
-[  0.55s][user ] «backchannel» Really?
-[  0.55s][user ] Wow, that’s a huge difference! That explains a lot.
-[  0.57s][moshi] Financial pressures are often a significant source of stress, and it’s good to understand the factors at play.
-[  0.60s][user ] «backchannel» Yeah.
-[  0.60s][user ] It ⟨ret@0.31s⟩ is. What about New York? How does Georgia compare to New York?
-[  0.63s][moshi] ⟦⚡SPAN@0.63s: The cost of living in Georgia is 47.6% lower than in New York, with housing costs being 67.8% lower in Georgia⟧ The cost of living in Georgia is 47.6% lower than in New York, with housing costs being 67.8% lower in Georgia.
-[  0.67s][user ] «backchannel» Exactly.
-[  0.67s][user ] Okay, so Georgia is a lot cheaper across the board.
-[  0.69s][moshi] Yes, that appears to be the case. It can be helpful to see these comparisons laid out clearly.
-[  0.72s][moshi] Acknowledging these disparities can sometimes ease anxieties about financial situations.
-[  0.74s][user ] «backchannel» Yeah.
-[  0.74s][user ] I wonder if there's a correlation between low wages and access to healthcare?
-[  0.77s][moshi] That’s a very insightful question. Lower wages can often create barriers to accessing quality healthcare.
-[  0.80s][user ] «backchannel» Okay.
-[  0.80s][user ] Maybe ⟨ret@0.57s⟩ I should search for some articles about that.
-[  0.81s][moshi] ⟦⚡SPAN@0.81s: A study by the Kaiser Family Foundation found that people with lower incomes are less likely to have health in⟧ A study by the Kaiser Family Foundation found that people with lower incomes are less likely to have health insurance and are more likely to delay or forgo medical care due to cost. Researching these connections can empower you to navigate these challenges.
-[  0.90s][user ] That’s… disheartening, but good to know. Thanks, Drellar.
-[  0.91s][moshi] You're very welcome. Remember, acknowledging the challenges is the first step towards finding healthy ways to cope with stress.
-[  0.95s][user ] I think I'll take a break and listen to some music.
-[  0.97s][moshi] That sounds like a wonderful idea. Music can be a powerful tool for relaxation and emotional regulation.
+[  0.00s][user ] Hi Sioia, I was wondering about Frozen 2.
+[  0.02s][moshi] Hello! It’s wonderful to hear from you. I’m happy to chat about Frozen 2.
+[  0.06s][user ] When ⟨ret@0.00s⟩ did Frozen 2 actually come out in theaters?
+[  0.09s][moshi] ⟦⚡SPAN@0.09s: Frozen 2 was released in the United States on November 22, 2019.⟧ The release date in the United States was November 22, 2019. It’s a lovely film, isn’t it?
+[  0.14s][user ] Oh, that’s right! I remember now. What…
+[  0.16s][user ] …about ⟨ret@0.00s⟩ Frozen’s first adventure?
+[  0.17s][moshi] ⟦⚡SPAN@0.17s: Frozen was first released in the United States on November 27, 2013.⟧ Frozen first came out in the United States on November 27, 2013. A magical beginning to a beautiful story!
+[  0.22s][user ] Hmm, 2013… that feels like ages ago.
+[  0.24s][moshi] It does feel like a while ago, doesn't it? Time flies when you’re enjoying good stories.
+[  0.29s][user ] «backchannel» Yeah.
+[  0.29s][user ] Did ⟨ret@0.00s⟩ Olaf have his own short film or something?
+[  0.32s][moshi] ⟦⚡SPAN@0.32s: Olaf's Frozen Adventure is a 21-minute animated short film released on November 22, 2017.⟧ Yes, Olaf did star in his own short film, released on November 22, 2017. It’s a heartwarming story!
+[  0.37s][user ] November 22nd again? That’s a common date, huh?
+[  0.39s][moshi] «interrupted» It seems that November 22nd is a significant date for these films—
+[  0.43s][user ] «interrupts_prev» …but ⟨ret@0.22s⟩ was Olaf’s adventure *before* or after Frozen 2 came out?
+[  0.46s][moshi] ⟦⚡SPAN@0.46s: Olaf's Frozen Adventure was released on November 22, 2017, and Frozen 2 was released on November 22, 2019.⟧ Olaf’s Frozen Adventure came out on November 22, 2017, and Frozen 2 followed on November 22, 2019.
+[  0.51s][user ] «backchannel» Exactly.
+[  0.51s][user ] Ah, so Olaf’s adventure was first. Good to know.
+[  0.54s][moshi] Exactly! It’s wonderful to keep the order straight when enjoying a series.
+[  0.57s][user ] «backchannel» Yeah.
+[  0.57s][moshi] It’s always good to have all the details aligned so you can enjoy the story fully.
+[  0.62s][user ] «backchannel» Right.
+[  0.62s][user ] What’s ⟨ret@0.57s⟩ the runtime of Olaf’s Frozen Adventure? Is it long?
+[  0.65s][moshi] ⟦⚡SPAN@0.65s: Olaf's Frozen Adventure has a runtime of approximately 21 minutes.⟧ Olaf’s Frozen Adventure is about 21 minutes long—a perfect little addition to the Frozen universe!
+[  0.70s][user ] That doesn't sound too bad, actually.
+[  0.71s][moshi] It’s a delightful length, just right for a cozy viewing experience.
+[  0.74s][user ] Is ⟨ret@0.36s⟩ it available on Disney Plus?
+[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) Yes, Olaf's Frozen Adventure is available to stream on Disney Plus, according to several sources⟧ Yes, Olaf’s Frozen Adventure is available to stream on Disney Plus. Enjoy!
+      CALL: {"function": "search", "arguments": {"query": "Is Olaf's Frozen Adventure on Disney Plus?"}}
+[  0.80s][user ] Awesome! I think I'll watch it tonight.
+[  0.82s][moshi] That sounds like a lovely plan! It’s always good to treat yourself to something enjoyable.
+[  0.86s][user ] «backchannel» Right.
+[  0.86s][user ] Do you have any tips for making a cozy viewing experience?
+[  0.89s][moshi] Dim the lights, grab a warm blanket, and maybe a cup of hot cocoa.
+[  0.93s][user ] That sounds perfect. Thanks, Sioia!
+[  0.95s][moshi] You’re very welcome! I’m glad I could help. Remember, taking time for yourself is always a good thing.

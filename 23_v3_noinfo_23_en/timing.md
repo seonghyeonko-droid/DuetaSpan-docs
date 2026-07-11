@@ -4,61 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Kim",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-06-28",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-23",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-05-27",
+#       "category": "home",
+#       "text": "User's home address is 957 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-09-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2025-06-14",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2025-08-26",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-25",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-01-10",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -66,39 +48,103 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-05",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-19",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Oh, okay. Well, what about the wea | S3 Hmm, that’s a shame. | S4 That sounds nice. What movies are 
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 Yes, Korean food would be great. | S3 That sounds perfect! How do I get  | S4 Great! I also need to find a groce
 
-     0.00s  user  발화 시작: Do you happen to know Sarah Miller's phone number?
-     1.92s  <ret> 발화 (turn1 첫 프레임)
-     2.32s  agent 발화 시작: <ret> I’ve checked everywhere, but I couldn’t find a phone n
-     2.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (no information found)
-     2.49s  user  발화 끝
-     8.76s  agent 발화 끝
-     8.94s  user  발화 시작: Oh, okay. Well, what about the weather in Seoul last Tuesday
-    12.09s  <ret> 발화 (turn3 첫 프레임)
-    12.48s  agent 발화 시작: <ret> I’m sorry, I can only provide current weather informat
-    12.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (no information found)
-    12.64s  user  발화 끝
-    15.96s  user  발화 시작: Exactly.
-    16.88s  user  발화 끝
-    18.91s  agent 발화 끝
-    18.95s  user  발화 시작: Hmm, that’s a shame.
-    20.24s  user  발화 끝
-    20.30s  agent 발화 시작: It is, isn’t it? Sometimes getting the information we need i
-    27.12s  user  발화 시작: That sounds nice. What movies are playing nearby right now?
-    27.53s  agent 발화 끝
-    31.07s  <ret> 발화 (turn8 첫 프레임)
-    31.38s  user  발화 끝
-    31.39s  agent 발화 시작: <ret> Right now, ‘Inside Out 2’, ‘Bad Boys: Ride or Die’, an
-    31.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.58s]: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The G
-    41.97s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
+     2.08s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
+     2.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (no information found)
+     2.58s  user  발화 끝
+     5.75s  user  발화 시작: Uh-huh.
+     6.34s  user  발화 끝
+     8.73s  user  발화 시작: Oh, that’s a shame. Well, how about the weather in Busan tom
+     8.83s  agent 발화 끝
+    12.20s  <ret> 발화 (turn4 첫 프레임)
+    12.60s  agent 발화 시작: <ret> Tomorrow in Busan, it will be 26.1 degrees Celsius, wi
+    12.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) 26.1°C, humidity 68%, wind 7.2 km/h
+    12.76s  user  발화 끝
+    15.61s  user  발화 시작: Really?
+    16.38s  user  발화 끝
+    21.88s  user  발화 시작: That does sound nice. I’m trying to get settled here, it’s a
+    21.97s  agent 발화 끝
+    25.90s  user  발화 끝
+    26.27s  agent 발화 시작: Settling into a new city can definitely be overwhelming, but
+    28.90s  user  발화 시작: Uh-huh.
+    29.49s  user  발화 끝
+    32.79s  user  발화 시작: I’m hoping to find some good restaurants nearby.
+    33.13s  agent 발화 끝
+    34.99s  <ret> 발화 (turn10 첫 프레임)
+    35.29s  user  발화 끝
+    35.30s  agent 발화 시작: <ret> I found 12 restaurants within a 5-kilometer radius of 
+    35.31s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.91s]: (tool result) 12 restaurants found within 5km radius.
+    41.86s  user  발화 시작: Yes, Korean food would be great.
+    42.21s  agent 발화 끝
+    43.74s  <ret> 발화 (turn12 첫 프레임)
+    44.06s  agent 발화 시작: <ret> There are 6 Korean restaurants within 5 kilometers. I 
+    44.06s  ⚡SPAN 주입 [d'=0.80s / d_lead=6.21s]: (tool result) 6 Korean restaurants found within 5km radius.
+    44.17s  user  발화 끝
+    47.25s  user  발화 시작: Yeah.
+    47.84s  user  발화 끝
+    50.27s  agent 발화 끝
+    50.50s  user  발화 시작: That would be really helpful, yes.
+    52.35s  agent 발화 시작: Let's see… Gukbap Jeonju is highly rated, with 4.5 stars—
+    52.43s  user  발화 끝
+    56.62s  user  발화 시작: …Actually, is there a nice park around here too? I need some
+    57.36s  agent 발화 끝
+    60.80s  <ret> 발화 (turn17 첫 프레임)
+    60.95s  agent 발화 시작: <ret> Taejongdae Park is 1.5 kilometers away and has a 4.6-s
+    60.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Taejongdae Park, 1.5km away, 4.6 stars.
+    60.97s  user  발화 끝
+    63.06s  user  발화 시작: Yeah.
+    63.70s  user  발화 끝
+    68.08s  agent 발화 끝
+    68.96s  user  발화 시작: That sounds perfect! How do I get there?
+    71.48s  <ret> 발화 (turn20 첫 프레임)
+    71.73s  user  발화 끝
+    71.88s  agent 발화 시작: <ret> By car, it's about a 20-minute drive, or 45 minutes us
+    71.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Driving: 20 minutes, Public Transit: 45 minutes.
+    76.27s  user  발화 시작: Really?
+    77.04s  user  발화 끝
+    79.00s  agent 발화 끝
+    79.03s  user  발화 시작: Public transport sounds good, please.
+    81.25s  agent 발화 시작: The route involves taking bus 101 for 30 minutes, then trans
+    81.29s  user  발화 끝
+    87.81s  agent 발화 시작: —for another 15 minutes. I can send the route to your phone 
+    87.83s  agent 발화 끝
+    89.74s  user  발화 시작: Mm-hmm.
+    90.37s  user  발화 끝
+    91.65s  agent 발화 끝
+    92.60s  user  발화 시작: Yes, please do that.
+    93.89s  <ret> 발화 (turn27 첫 프레임)
+    94.04s  agent 발화 시작: <ret> I've sent the bus route to your registered device. You
+    94.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) Message sent to registered device.
+    94.26s  user  발화 끝
+   101.04s  agent 발화 끝
+   101.49s  user  발화 시작: Great! I also need to find a grocery store.
+   103.44s  <ret> 발화 (turn29 첫 프레임)
+   103.67s  agent 발화 시작: <ret> Homeplus Busan Centum City is just 800 meters away. It
+   103.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Homeplus Busan Centum City, 800m away.
+   103.85s  user  발화 끝
+   106.12s  user  발화 시작: Really?
+   106.85s  user  발화 끝
+   111.13s  agent 발화 끝
+   112.42s  user  발화 시작: Wonderful, that’s very close. I'm also wondering about local
+   117.04s  <ret> 발화 (turn32 첫 프레임)
+   117.20s  agent 발화 시작: <ret> The Busan International Film Festival is scheduled for
+   117.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) Busan International Film Festival, Oct 21-Oct 30, 2026.
+   117.29s  user  발화 끝
+   125.54s  agent 발화 끝
+   126.43s  user  발화 시작: That's quite a ways off, but good to know. Thanks for all yo
+   129.62s  agent 발화 시작: You're very welcome. I'm happy to help you settle in, and re
+   129.66s  user  발화 끝
+   138.52s  agent 발화 끝

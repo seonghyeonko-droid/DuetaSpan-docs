@@ -4,93 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "서람",
+#     "name": "민우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
+#       "date": "2026-02-24",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-10-02",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-26",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-01-17",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-24",
+#       "date": "2025-07-16",
 #       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-07-12",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-02-23",
-#       "title": "Apartment hunting downtown",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-20",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 데이비드 리한테 오달러 보내줘. | S2 아니, 그만. 근데 지금 시애틀 날씨 어때? | S3 … 잠깐만, 근데 그 돈은 내 계좌에서 바로 빠지는 거야? | S4 알았어. 고마워.
 
-     0.00s  user  발화 시작: 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줘.
-     3.63s  <ret> 발화 (turn1 첫 프레임)
-     3.86s  agent 발화 시작: <ret> 이천이십육년 칠월 십일일 서울에서 부산 가는 기차편은 KTX가 오전 열시에 출발해서 열두시 삼십분
-     3.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.09s]: (tool result) Trains from Seoul to Busan on July 11, 2026: KTX 10:00-1
-     3.89s  user  발화 끝
-    16.48s  user  발화 시작: 예.
-    17.02s  user  발화 끝
-    21.37s  user  발화 시작: KTX로 예매해 줘.
-    21.95s  agent 발화 끝
-    22.90s  <ret> 발화 (turn4 첫 프레임)
-    22.98s  user  발화 끝
-    23.13s  agent 발화 시작: <ret> KTX로 예매 완료되었어요. 이천이십육년 칠월 십일일 오전 열시에 출발하는 KTX, 삼호차 십오번
-    23.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.43s]: (tool result) KTX Seoul to Busan, July 11, 2026, 10:00 departure, car 
-    35.56s  agent 발화 끝
-    36.10s  user  발화 시작: 혹시, 그 기차에 와이파이 있어요?
-    39.00s  agent 발화 시작: 기차 내 와이파이 정보는 제가 지금 바로 확인해 드릴 수는 없어요. 제가 알 수 있는 정보는 기차 시간과 좌
-    39.06s  user  발화 끝
-    41.73s  user  발화 시작: 그렇죠.
-    42.55s  user  발화 끝
-    46.43s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 아니면, 여행 준비를 더 도와드릴까요?
-    46.46s  agent 발화 끝
-    50.96s  agent 발화 끝
+     0.00s  user  발화 시작: 데이비드 리한테 오달러 보내줘.
+     2.05s  <ret> 발화 (turn1 첫 프레임)
+     2.26s  user  발화 끝
+     2.28s  agent 발화 시작: <ret> 데이비드 리 님께 오달러 요청이 시작됐습니다. 거래 아이디는 구 이 팔 칠 사 오 비입니다. 혹시
+     2.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) Payment request to David Lee for $5.00 initiated. Transa
+     7.59s  user  발화 시작: 응.
+     7.90s  user  발화 끝
+    10.49s  user  발화 시작: 아니, 그만. 근데 지금 시애틀 날씨 어때?
+    10.85s  agent 발화 끝
+    13.26s  <ret> 발화 (turn4 첫 프레임)
+    13.49s  agent 발화 시작: <ret> 시애틀은 현재 십팔 점 삼도이고, 습도는 육십이퍼센트, 바람은 시속 칠 점 이킬로미터입니다. 맑은
+    13.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Seattle, WA: 18.3°C, humidity 62%, wind 7.2 km/h, clear 
+    13.54s  user  발화 끝
+    21.48s  user  발화 시작: … 잠깐만, 근데 그 돈은 내 계좌에서 바로 빠지는 거야?
+    22.16s  agent 발화 끝
+    24.79s  agent 발화 시작: 네, 요청이 승인되면 바로 계좌에서 차감됩니다. 안전하게 처리되니 걱정 마세요.
+    24.86s  user  발화 끝
+    30.80s  agent 발화 끝
+    31.26s  user  발화 시작: 알았어. 고마워.
+    33.00s  user  발화 끝

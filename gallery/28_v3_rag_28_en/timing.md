@@ -4,149 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Nora",
+#     "name": "Remy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-03-17",
 #       "category": "home",
-#       "text": "User's home address is 819 Pine Court."
+#       "text": "User's home address is 365 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-11",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-10-13",
+#       "date": "2026-03-01",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-08-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-11-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-09-01",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-22",
+#       "date": "2026-03-27",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-01",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-21",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, what island was the movie… | S2 Okay, well, what’s the weather lik | S3 Blowholes, huh? That sounds intere | S4 Okay, so about two paʻanga to the 
+# EXAMINER(FDB-v2) 단계: S1 Hi, how many members of parliament | S2 543? That seems like a lot. How ma | S3 Two… interesting. What about the N | S4 314, okay. That’s good to know. Th
 
-     0.00s  user  발화 시작: Hey, what island was the movie…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn7 첫 프레임)
-     0.02s  user  발화 시작: …Moana based on? I always wondered.
-     0.02s  user  발화 끝
-     0.04s  agent 발화 시작: <ret> The movie Moana is largely inspired by Polynesian isla
-     0.04s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Moana is largely inspired by the Polynesian islands, and specifically 
-     0.04s  user  발화 끝
-     0.11s  user  발화 시작: Right.
-     0.11s  agent 발화 끝
-     0.12s  user  발화 시작: Tonga? Huh. I thought it was Hawaii, honestly.
-     0.12s  user  발화 끝
-     0.12s  <ret> 발화 (turn11 첫 프레임)
-     0.14s  agent 발화 시작: It's a common misconception, as many Polynesian cultures sha
-     0.14s  user  발화 끝
-     0.18s  user  발화 시작: Okay, well, what’s the weather like in Tonga right now?
-     0.18s  agent 발화 끝
-     0.18s  <ret> 발화 (turn19 첫 프레임)
-     0.21s  agent 발화 시작: <ret> The temperature in Tonga is currently 24.0°C, with hum
-     0.21s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Temperature: 24.0°C, humidity: 78%, wind: 11.2 km/h, con
-     0.21s  user  발화 끝
-     0.28s  <ret> 발화 (turn21 첫 프레임)
-     0.29s  user  발화 시작: That sounds…nice.
-     0.29s  agent 발화 끝
-     0.30s  agent 발화 시작: It really does. A lovely escape, I imagine.
-     0.30s  user  발화 끝
-     0.32s  user  발화 시작: I'm trying to plan a trip, actually. What are some attractio
-     0.32s  agent 발화 끝
-     0.36s  agent 발화 시작: <ret> Some attractions in Tonga include Ha'atafu Beach, the 
-     0.36s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Ha'atafu Beach, Royal Palace, Mapu 'a Vaea Blowholes, To
-     0.36s  user  발화 끝
-     0.43s  user  발화 시작: Yeah.
-     0.43s  agent 발화 끝
-     0.43s  agent 발화 시작: They have a rich history and beautiful natural landscapes.
-     0.43s  user  발화 끝
-     0.46s  user  발화 시작: Yeah.
-     0.46s  agent 발화 끝
-     0.47s  user  발화 시작: Blowholes, huh? That sounds interesting. Is there anything e
-     0.47s  user  발화 끝
-     0.52s  agent 발화 시작: It’s good to be aware of local customs and traditions.
-     0.52s  user  발화 끝
-     0.52s  <ret> 발화 (turn29 첫 프레임)
-     0.55s  user  발화 시작: Yeah.
+     0.00s  user  발화 시작: Hi, how many members of parliament are there in the Lok Sabh
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.10s  agent 발화 시작: <ret> Well, the Lok Sabha has a total of 543 members of parl
+     0.10s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: The Lok Sabha (House of the People) has a total of 543 members of parl
+     0.10s  user  발화 끝
+     0.14s  <ret> 발화 (turn3 첫 프레임)
+     0.26s  <ret> 발화 (turn6 첫 프레임)
+     0.27s  user  발화 시작: 543? That seems like a lot. How many are nominated, not dire
+     0.27s  agent 발화 끝
+     0.38s  agent 발화 시작: <ret> Actually, of those 543 members, 2 are nominated by the
+     0.38s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Of the 543 members in the Lok Sabha, 2 are nominated by the President 
+     0.38s  user  발화 끝
+     0.55s  user  발화 시작: Nice.
      0.55s  agent 발화 끝
-     0.55s  user  발화 시작: Like what? I don’t want to be rude.
+     0.55s  user  발화 시작: Two… interesting. What about the NDA? How many MPs do *they*
      0.55s  user  발화 끝
-     0.58s  agent 발화 시작: <ret> Tongan culture places a high value on respect, especia
-     0.58s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Tongan culture places a high value on respect, especially for elders a
-     0.58s  user  발화 끝
-     0.65s  user  발화 시작: That's good to know. What's the currency there?
-     0.65s  agent 발화 끝
-     0.68s  agent 발화 시작: <ret> The currency of Tonga is the paʻanga, and one United S
-     0.68s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: The currency of Tonga is the paʻanga, and one United States dollar is 
-     0.68s  user  발화 끝
-     0.74s  user  발화 시작: Really?
-     0.74s  agent 발화 끝
-     0.74s  user  발화 시작: Okay, so about two paʻanga to the dollar?
-     0.74s  user  발화 끝
-     0.77s  agent 발화 시작: Roughly, yes. It fluctuates, of course, but that’s a good ap
-     0.77s  user  발화 끝
-     0.82s  user  발화 시작: [sigh] This is a lot to take in.
-     0.82s  agent 발화 끝
-     0.84s  agent 발화 시작: Planning can feel overwhelming, but it’s worth it for a smoo
-     0.84s  user  발화 끝
-     0.88s  user  발화 시작: Right.
-     0.88s  agent 발화 끝
-     0.89s  user  발화 시작: I appreciate that. Maybe I should look at hotels now?
-     0.89s  user  발화 끝
-     0.92s  agent 발화 시작: <ret> The Shoreline Grill & Resort is available for around $
-     0.92s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) The Shoreline Grill & Resort - $150/night, Hakauveli Bea
-     0.92s  user  발화 끝
+     0.66s  agent 발화 시작: <ret> the National Democratic Alliance currently holds 314 s
+     0.66s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: As of March 18, 2024, the National Democratic Alliance (NDA) has 314 m
+     0.66s  user  발화 끝
+     0.79s  user  발화 시작: Wow.
+     0.79s  agent 발화 끝
+     0.80s  user  발화 시작: 314, okay. That’s good to know. Thanks!
+     0.80s  user  발화 끝
+     0.86s  agent 발화 시작: You’re very welcome! Knowing those numbers can help you foll
+     0.86s  user  발화 끝
      1.00s  agent 발화 끝

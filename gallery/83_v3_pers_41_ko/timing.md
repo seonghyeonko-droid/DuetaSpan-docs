@@ -4,82 +4,108 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "하연",
+#     "name": "예원",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
+#       "date": "2026-03-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-11-05",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-10-18",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-31",
+#       "date": "2025-08-01",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-10-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-09",
+#       "date": "2026-03-19",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시, 심리 상담 같은 걸 해 주시는 건가요? | S2 음… 사실 요즘 회사 일이 너무 많아서 계속 불안하고 초조해요 | S3 멈춰서 자신을 돌아본다고요? 그게… 어떻게 하는 건데요? | S4 숨을 깊게 쉬는 거요… 그건 좀 해 볼 수 있을 것 같아요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 진짜 사람이에요? | S2 그냥… 뭘 해도 잘할 것 같지가 않아요. 뭘 시작해야 할지도  | S3 어… 저는 게임을 좋아하고, 그림 그리는 것도 꽤 즐겨요. 근 | S4 그게… 잘 모르겠어요. 행복… 그런 거까지 생각하면서 살아야 
 
-     0.00s  agent 발화 시작: 하연 씨, 안녕하세요. 저는 제노라고 해요. 힘든 일 있으시면 언제든 편하게 말씀해주세요. 함께 마음의 평화
-    10.06s  agent 발화 끝
-    10.18s  user  발화 시작: 혹시, 심리 상담 같은 걸 해 주시는 건가요?
-    12.79s  agent 발화 시작: 네, 하연 씨. 맞아요. 저는 스트레스 해소와 마음 챙김을 통해 삶의 균형을 찾도록 돕는 역할을 하고 있답니
-    13.00s  user  발화 끝
-    18.88s  user  발화 시작: 예.
-    19.29s  user  발화 끝
-    22.31s  user  발화 시작: 음… 사실 요즘 회사 일이 너무 많아서 계속 불안하고 초조해요. 잠도 제대로 못 자고…
-    22.48s  agent 발화 끝
-    28.36s  agent 발화 시작: 회사 일이 많아서 불안하고 잠도 못 자신다니, 정말 힘드시겠어요. 혹시 어떤 부분이 특히 더 불안하신지 조금
-    28.43s  user  발화 끝
-    31.27s  user  발화 시작: 예.
-    31.63s  user  발화 끝
-    37.89s  agent 발화 시작: 하연 씨, 불안한 감정은 자연스러운 반응이에요. 하지만 그 감정에 휩쓸리지 않고, 잠시 멈춰서 자신을 돌아보
-    38.01s  agent 발화 끝
-    47.82s  agent 발화 끝
-    48.71s  user  발화 시작: 멈춰서 자신을 돌아본다고요? 그게… 어떻게 하는 건데요?
-    52.78s  user  발화 끝
-    53.03s  agent 발화 시작: 지금 당장 모든 걸 해결하려고 애쓰기보다는, 숨을 깊게 쉬고 현재에 집중해 보세요. 작은 것부터 시작하는 것
-    58.45s  user  발화 시작: 음.
-    58.81s  user  발화 끝
-    61.61s  agent 발화 끝
-    61.77s  user  발화 시작: 숨을 깊게 쉬는 거요… 그건 좀 해 볼 수 있을 것 같아요.
-    64.83s  agent 발화 시작: 그래요, 하연 씨. 숨쉬기는 언제 어디서든 할 수 있는 가장 간단하면서도 효과적인 방법이랍니다. 꾸준히 연습
-    64.91s  user  발화 끝
-    74.57s  agent 발화 끝
+     0.00s  agent 발화 시작: 예원 씨, 안녕하세요. 저는 오레아우스라고 해요. 커리어 고민이나 업무 스트레스, 어떤 어려움이든 함께 풀어
+     3.09s  user  발화 시작: 응.
+     3.50s  user  발화 끝
+     9.69s  agent 발화 끝
+    10.14s  user  발화 시작: 혹시 진짜 사람이에요?
+    11.47s  agent 발화 시작: [laugh] 그런 질문을 많이 받아요. 저는 예원 씨를 돕기 위해 만들어진 에이전트예요. 마음 편하게 어떤
+    11.56s  user  발화 끝
+    15.70s  user  발화 시작: 어.
+    16.10s  user  발화 끝
+    19.56s  user  발화 시작: 음… 사실 요즘 뭘 해야 할지 좀 막막해요. 전공도 그렇고, 미래도 그렇고.
+    19.73s  agent 발화 끝
+    25.25s  agent 발화 시작: 불안한 마음이 드는 건 당연해요. 전공을 선택하는 건 정말 중요한 결정이니까요. 어떤 점이 가장 걱정되나요?
+    25.34s  user  발화 끝
+    32.70s  user  발화 시작: 그냥… 뭘 해도 잘할 것 같지가 않아요. 뭘 시작해야 할지도 모르겠고.
+    32.94s  agent 발화 끝
+    37.47s  agent 발화 시작: 자신감이 부족한 것 같군요. 예원 씨는 어떤 분야에 흥미를 느끼나요? 좋아하는 활동이나 관심사가 있다면 말씀
+    37.60s  user  발화 끝
+    44.93s  agent 발화 끝
+    46.32s  user  발화 시작: 어… 저는 게임을 좋아하고, 그림 그리는 것도 꽤 즐겨요. 근데 그걸로 돈을 벌 수 있을까요?
+    53.00s  agent 발화 시작: 게임과 그림, 정말 멋진 취미네요. 그쪽 분야로 진출하는 방법은 다양하게 있어요. 혹시 게임 개발이나 디자인
+    53.13s  user  발화 끝
+    58.73s  user  발화 시작: 어어.
+    59.27s  user  발화 끝
+    61.69s  agent 발화 시작: 게임 개발자나 그래픽 디자이너는 창의적인 분야에서 보람을 느낄 수 있을 거예요. 물론, 노력과 꾸준함이 필요
+    61.81s  agent 발화 끝
+    66.53s  user  발화 시작: 응응.
+    67.03s  user  발화 끝
+    69.24s  agent 발화 끝
+    69.62s  user  발화 시작: 근데… 주변 사람들은 다들 안정적인 직업을 가지라고 하잖아요. 공무원이나 대기업 같은 거.
+    75.27s  user  발화 끝
+    75.38s  agent 발화 시작: 주변의 기대에 얽매이지 말고, 예원 씨가 정말 원하는 것이 무엇인지 고민해 보는 게 중요해요. 어떤 직업이 
+    84.51s  agent 발화 끝
+    85.25s  user  발화 시작: 그게… 잘 모르겠어요. 행복… 그런 거까지 생각하면서 살아야 하나 싶기도 하고.
+    90.05s  agent 발화 시작: 행복은 중요한 가치예요. 예원 씨의 삶에서 행복이 어떤 의미인지 생각해 보면, 앞으로 나아갈 방향을 찾는 데
+    90.05s  user  발화 끝
+    98.66s  agent 발화 끝

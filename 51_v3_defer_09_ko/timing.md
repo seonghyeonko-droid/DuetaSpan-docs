@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "준진",
+#     "name": "우빈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,40 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2025-11-26",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-01-09",
+#       "date": "2025-09-24",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-12-31",
+#       "date": "2025-09-10",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-07-30",
+#       "date": "2025-08-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-07-13",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-31",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-01",
+#       "date": "2025-12-10",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -61,35 +53,34 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-18",
-#       "title": "Researching a used car",
+#       "date": "2025-05-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 콜로세움에 대한 자세한 정보를 알려줄 수 있을까요?
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> 콜로세움은 이탈리아 로마 중심부에 있는 타원형 원형 경기장이에요. 오만 명 이상을 수용할 수 있는
-     3.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.94s]: (tool result) The Colosseum, also known as the Flavian Amphitheatre, i
-     3.83s  user  발화 끝
-     7.26s  user  발화 시작: 네.
-     7.80s  user  발화 끝
-    14.54s  agent 발화 끝
-    16.28s  user  발화 시작: 음, 그럼 지금 날씨는 어때요?
-    17.60s  <ret> 발화 (turn4 첫 프레임)
-    17.92s  agent 발화 시작: <ret> 지금 로마는 섭씨 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 칠 점 이킬로미터로 맑은 하늘이
-    17.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) 28.0°C, humidity 65%, wind 7.2 km/h, clear skies
-    18.12s  user  발화 끝
-    25.44s  user  발화 시작: 이번 주 토요일에 맛있는 파스타 집을 예약해 줄 수 있을까요?
-    25.75s  agent 발화 끝
-    29.09s  agent 발화 시작: 이번 주 토요일 파스타 집 예약은 잠시만 기다려 주세요. 확인해 볼게요.
-    29.28s  user  발화 끝
-    32.60s  ⚡지연 SPAN 주입(선제발표 직전): Restaurant 'La Taverna dei Fori Imperiali' confirmed for Saturday, Jul
-    33.30s  agent 발화 끝
-    33.32s  agent 발화 시작: <ret> 예약 가능한 파스타 집을 찾아봤어요. 토요일 칠월 십일일 저녁 여덟시에 '라 타베르나 데이 포리 
-    45.85s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 달력에서 날짜 좀 클릭해 줘.
+     2.49s  user  발화 끝
+     2.66s  <ret> 발화 (turn1 첫 프레임)
+     2.82s  agent 발화 시작: <ret> 네, 달력 iframe 안의 오늘 날짜를 클릭해 드렸습니다. 혹시 다른 날짜도 클릭해 드릴까요?
+     2.82s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.90s]: (tool result) Clicked element with selector '#calendar .today'.
+     9.72s  agent 발화 끝
+     9.80s  user  발화 시작: 이번 주 토요일에 영화 예매 좀 해 볼까 하는데…
+    12.76s  user  발화 끝
+    12.80s  agent 발화 시작: 토요일에 영화를 보시려고요? 어떤 영화를 보고 싶으신가요?
+    16.13s  agent 발화 끝
+    16.23s  agent 발화 시작: 요즘 개봉한 영화 중에서 평점이 좋은 영화들을 찾아드릴까요—
+    19.50s  user  발화 시작: … 아니, 혹시 '인터스텔라' 상영하는 곳 있으면 찾아줘.
+    20.06s  agent 발화 끝
+    22.91s  <ret> 발화 (turn6 첫 프레임)
+    22.99s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+    22.99s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.42s]: (tool result) Showing times for 'Interstellar' at Megabox Coex: 14:00,
+    23.01s  user  발화 끝
+    24.39s  agent 발화 시작: '인터스텔라'는 메가박스 코엑스에서 오후 두시, 다섯시, 여덟시에 상영되고 있습니다. 괜찮으신 시간대가 있으
+    24.42s  agent 발화 끝
+    31.34s  agent 발화 끝
