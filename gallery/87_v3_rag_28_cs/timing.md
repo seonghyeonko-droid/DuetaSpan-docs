@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Ruby",
+#     "name": "Maya",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-23",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2025-10-16",
+#       "category": "home",
+#       "text": "User's home address is 198 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-11-25",
+#       "date": "2025-09-29",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-07-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-09-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-12",
+#       "date": "2026-05-17",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,75 +48,55 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-06",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 좀 길을 잃은 기분이에요. 사람들과 잘 연결되지 않는 것 | S2 흠, 그 말이 맞네요. 예전에 천문학을 정말 좋아했었는데… | S3 정말… 가까운 곳에 있네요! | S4 …그냥 어색할 것 같아요.
+# EXAMINER(FDB-v2) 단계: S1 음, 뭘 해야 할지 좀 헷갈려. 완전 정신 없어. | S2 시애틀을 생각하고 있었는데, 거긴 날씨가 어떤지 잘 모르겠어. | S3 음, 그건… 괜찮은 것 같기도 하고. 그럼 시애틀 물가는 어때 | S4 알아둬서 좋네. 좀 더 알아봐야 할 것 같아…
 
-     0.00s  user  발화 시작: 요즘 좀 길을 잃은 기분이에요. 사람들과 잘 연결되지 않는 것 같아서요.
-     4.49s  agent 발화 시작: 그렇게 느끼시는 건 완전히 자연스러운 일이에요. 진정한 관계를 맺는 데는 시간과 노력이 필요하고, 불안하게 
-     4.72s  user  발화 끝
-    14.04s  agent 발화 끝
-    14.15s  user  발화 시작: 음… 다들 자기들 그룹이 있는 것 같고, 저는 항상 밖에서 서성이네요.
-    18.84s  agent 발화 시작: 소외감을 느끼시는 것 같아서 마음이 아프네요. 혹시 그 그룹들이 왜 그렇게 매력적으로 느껴지는지 함께 알아볼
-    19.01s  user  발화 끝
-    26.82s  user  발화 시작: 아마 제 관심사를 공유하는 친구들을 원하는데, 어디서 찾아야 할지 모르겠어요.
-    27.03s  agent 발화 끝
-    31.52s  <ret> 발화 (turn5 첫 프레임)
-    31.68s  agent 발화 시작: <ret> 공통의 열정을 가진 친구들을 찾는 건 취미 활동을 하거나, 자원봉사를 하거나, 관심사에 맞는 클럽
-    31.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: Common interests are often found through hobbies, volunteering, or joi
-    31.97s  user  발화 끝
-    44.37s  user  발화 시작: 흠, 그 말이 맞네요. 예전에 천문학을 정말 좋아했었는데…
-    44.62s  agent 발화 끝
-    49.84s  user  발화 끝
-    49.87s  agent 발화 시작: 오, 천문학은 정말 멋진 분야죠! 우리 자신보다 더 큰 것에 연결되어 있다는 느낌을 받게 해주고, 분명히 공
-    58.80s  user  발화 시작: 네.
-    59.24s  user  발화 끝
-    62.39s  agent 발화 끝
-    63.62s  user  발화 시작: 네, 하지만 망원경을 들여다본 지 몇 년이나 됐어요. 감이 떨어졌을 것 같아요.
-    69.00s  user  발화 끝
-    69.28s  agent 발화 시작: 잠시 쉬었다가 다시 시작하면 감이 떨어지는 건 괜찮아요. 예전의 열정을 되찾는 것은 정말 보람 있는 일이고,
-    81.53s  agent 발화 끝
-    81.64s  user  발화 시작: 그러면… 근처에 천문학 클럽이 있는지 궁금하네요.
-    84.90s  <ret> 발화 (turn12 첫 프레임)
-    84.97s  agent 발화 시작: <ret> 서울천문동호회는 매달 둘째 토요일에 한국천문과학교육원에서 만나고, 더 자세한 정보는 sas.or.
-    84.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=14.84s]: (tool result) The Seoul Astronomical Society meets every second Saturd
-    85.15s  user  발화 끝
-    93.94s  user  발화 시작: 네.
-    94.39s  user  발화 끝
-    99.81s  agent 발화 끝
-   100.05s  user  발화 시작: 정말… 가까운 곳에 있네요!
-   102.20s  agent 발화 시작: [happy] 기회가 그렇게 편리하게 찾아올 때 얼마나 멋진지, 그렇지 않나요? 관심사를 다시 불러일으키기에
-   102.31s  user  발화 끝
-   112.12s  agent 발화 끝
-   112.51s  user  발화 시작: 그렇겠죠. 그런데 만약 제가 가서…
-   115.93s  user  발화 끝
-   117.86s  user  발화 시작: …이미 다들 서로 알고 있다면 어떡하죠?
-   120.03s  agent 발화 시작: 그건 정말 타당한 걱정이에요. 이미 관계가 형성된 그룹에 합류하는 것은 부담스러울 수 있어요.
-   120.25s  user  발화 끝
-   127.91s  agent 발화 끝
-   128.39s  user  발화 시작: …그냥 어색할 것 같아요.
-   129.76s  agent 발화 시작: 어색하죠, 그리고 그 느낌을 인정하는 건 괜찮아요. 천문학 경험에 대한 간단한 소개를 준비하면 도움이 될까요
-   129.95s  user  발화 끝
-   134.13s  user  발화 시작: 아.
-   134.94s  user  발화 끝
-   137.69s  agent 발화 끝
-   138.65s  user  발화 시작: 좋은 생각이네요, 실제로. 이번 주말 날씨는 어떤가요?
-   141.85s  <ret> 발화 (turn23 첫 프레임)
-   142.17s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십사도이고, 습도는 육십오퍼센트, 풍속은 시속 삼킬로미터이며, 하늘은 
-   142.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.22s]: (tool result) Current conditions in Seoul: 24.0°C, humidity 65%, wind 
-   142.31s  user  발화 끝
-   150.77s  user  발화 시작: 네.
-   151.27s  user  발화 끝
-   155.38s  agent 발화 끝
-   155.41s  user  발화 시작: 완벽하네요! 고마워요, 라리미.
-   158.09s  agent 발화 시작: 천만에요. 첫걸음을 내딛는 것이 가장 어려울 수 있지만, 종종 가장 보람 있는 일이라는 것을 기억하세요.
-   158.18s  user  발화 끝
-   166.67s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 뭘 해야 할지 좀 헷갈려. 완전 정신 없어.
+     4.71s  agent 발화 시작: 변화가 크면 그럴 수 있어. 지금 제일 급한 게 뭔데?
+     4.71s  user  발화 끝
+     9.95s  user  발화 시작: 응.
+     9.95s  agent 발화 끝
+    10.47s  user  발화 시작: 뭐, 새로운 도시로 이사 가는 걸 생각 중인데, 뭘 먼저 해야 할지 도통 모르겠어.
+    10.47s  user  발화 끝
+    17.80s  agent 발화 시작: 좋은 생각이야! 새로운 가능성을 생각하는 건 정말 설레는 일이지. 어디로 가고 싶은데?
+    17.80s  user  발화 끝
+    24.09s  user  발화 시작: 음.
+    24.09s  agent 발화 끝
+    24.61s  user  발화 시작: 시애틀을 생각하고 있었는데, 거긴 날씨가 어떤지 잘 모르겠어.
+    24.61s  user  발화 끝
+    28.64s  <ret> 발화 (turn7 첫 프레임)
+    28.80s  agent 발화 시작: <ret> 지금 시애틀 날씨는 십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 팔 킬로미터야.
+    28.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.28s]: (tool result) The current weather in Seattle, Washington is 18.3°C, wi
+    28.80s  user  발화 끝
+    35.08s  agent 발화 시작: 온화한 날씨를 좋아하면 방문하기 좋은 시기야!
+    35.08s  agent 발화 끝
+    38.22s  user  발화 시작: 음, 그건… 괜찮은 것 같기도 하고. 그럼 시애틀 물가는 어때?
+    38.22s  agent 발화 끝
+    43.30s  <ret> 발화 (turn10 첫 프레임)
+    43.46s  agent 발화 시작: <ret> 시애틀 물가는 전국 평균보다 이십삼퍼센트 더 비싼데, 특히 주택 비용 때문에 그래.
+    43.46s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.28s]: (tool result) The cost of living in Seattle, Washington is 23% higher 
+    43.46s  user  발화 끝
+    49.74s  user  발화 시작: 오.
+    49.74s  agent 발화 끝
+    50.27s  user  발화 시작: 이십삼퍼센트? 와, 진짜 많이 차이 나는구나. 덴버랑 비교하면 얼마나 달라?
+    50.27s  user  발화 끝
+    55.18s  <ret> 발화 (turn13 첫 프레임)
+    55.50s  agent 발화 시작: <ret> 덴버 물가는 전국 평균보다 칠퍼센트 더 비싼데, 주택 비용이 주된 이유야.
+    55.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.76s]: (tool result) Denver, Colorado’s cost of living is 7% higher than the 
+    55.50s  user  발화 끝
+    61.26s  agent 발화 시작: 그러니까 시애틀보다 훨씬 저렴한 편인 것 같아.
+    61.26s  agent 발화 끝
+    64.93s  user  발화 시작: 알아둬서 좋네. 좀 더 알아봐야 할 것 같아…
+    64.93s  agent 발화 끝
+    69.12s  agent 발화 시작: 시간을 갖고 정보를 모으는 건 정말 현명한 방법이야. 특히 큰 결정을 내릴 때는 더 그렇지.
+    69.12s  user  발화 끝
+    76.97s  agent 발화 끝

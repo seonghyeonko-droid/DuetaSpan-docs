@@ -1,10 +1,10 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Fuus, a thoughtful and soft-spoken counselor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Vera, a calm and patient supportive advisor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Louis",
+    "name": "William",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -13,42 +13,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "Canadian",
     "gender": "male",
-    "age_range": "late 30s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-28",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
+      "date": "2026-04-03",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2026-02-15",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-02-12",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-02-10",
+      "date": "2025-11-14",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-06-18",
       "category": "hobby",
       "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-07-08",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-16",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-03-29",
+      "date": "2025-08-07",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -56,29 +48,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-05-27",
+      "date": "2025-06-25",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-13",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm craving pizza. What's around thirty-four point zero five two two latitude…
-[  6.69s][user ] …negative one hundred eighteen point two four three ⟨ret@10.10s⟩ seven?
-[ 10.32s][moshi] ⟦⚡SPAN@10.34s: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014",⟧ There are a couple of options nearby. Doughy Joe's Pizza is just zero point three miles away.
-      CALL: {"function": "maps_around_search", "arguments": {"latitude": "34.0522", "longitude": "-118.2437", "query": "pizza"}}
-[ 13.75s][user ] «backchannel» Uh-huh.
-[ 15.10s][user ] Uh, is Doughy Joe's open ⟨ret@16.83s⟩ right now?
-[ 17.22s][moshi] ⟦⚡SPAN@17.23s: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014", "open now", ⟧ Let me check their current hours for you.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Doughy Joe's Pizza", "location": "725 S Spring St, Los Angeles, CA 90014"}}
-[ 19.76s][moshi] Yes, Doughy Joe’s is currently open, from eleven AM to ten PM every day.
-[ 22.56s][user ] «backchannel» Mm-hmm.
-[ 26.11s][moshi] It’s good to know you have options when a craving strikes. Sometimes, just knowing that helps ease a little stress.
-[ 28.19s][user ] «backchannel» Yeah.
-[ 32.13s][user ] Can you get me directions ⟨ret@33.57s⟩ there?
-[ 33.88s][moshi] ⟦⚡SPAN@33.89s: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "Head north on Spring St… Turn left onto 8t⟧ The drive to Doughy Joe’s is two point one miles and should take about eight minutes. The route starts heading north on Spring Street.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Doughy Joe's Pizza, 725 S Spring St, Los Angeles, CA 90014", "mode": "driving"}}
+[  0.00s][user ] What city is the IP address ninety three dot one eighty four dot two one six dot thirty four ⟨ret@6.12s⟩ in?
+[  6.36s][moshi] ⟦⚡SPAN@6.36s: (tool result) City: Stockholm, Country: Sweden⟧ That IP address resolves to Stockholm, Sweden. It’s a beautiful city, known for its design.
+      CALL: {"function": "map_ip_location", "arguments": {"ip_address": "93.184.216.34"}}
+[ 11.13s][user ] «backchannel» Yeah.
+[ 11.45s][user ] Oh, uh, really? I've always wanted to go there.
+[ 14.31s][moshi] I understand that feeling! A change of scenery can be so restorative, and Stockholm offers a lot of tranquility.
+[ 20.35s][user ] Could you find me some hotels there for next ⟨ret@23.37s⟩ week?
+[ 23.53s][moshi] ⟦⚡SPAN@23.53s: (tool result) Hotels: Hotel Diplomat (4.5 stars, $250/night), Grand Hôtel Stockholm (5 stars, $400/night), Rad⟧ I found several hotels in Stockholm for next week, starting around two hundred dollars a night.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Stockholm", "check_in_date": "2026-07-17", "check_out_date": "2026-07-24"}}

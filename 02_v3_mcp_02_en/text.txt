@@ -1,80 +1,87 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Tien, a warm and attentive personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Lior, a grounded and empathetic life coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Ella",
+    "name": "Rosa",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "40s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "home",
-      "text": "User's home address is 40 Cedar Lane."
-    },
-    {
-      "date": "2026-03-30",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-10-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-08-07",
+      "date": "2026-01-16",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-11-05",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-08-25",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2025-07-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
       "date": "2025-06-20",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-08",
-      "title": "Setting up a home network",
+      "date": "2026-05-02",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-29",
-      "title": "Apartment hunting downtown",
+      "date": "2025-11-21",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-03",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please go to amazon dot ⟨ret@2.29s⟩ com?
-[  2.53s][moshi] ⟦⚡SPAN@2.53s: (tool result) Navigation to https://www.amazon.com successful.⟧ I’ve navigated to Amazon for you. Is there anything specific you're hoping to find?
-      CALL: {"function": "playwright_navigate", "arguments": {"url": "https://www.amazon.com"}}
-[  9.49s][user ] Yes, actually. I'm looking for a good white noise machine.
-[ 13.35s][moshi] ⟨ret@13.19s⟩ ⟦⚡SPAN@13.35s: (no information found)⟧ I’m sorry, I don’t have specific recommendations for white noise machines at this moment.
-[ 16.78s][user ] «backchannel» Right.
-[ 18.39s][user ] Hmm, okay. Well, what’s the weather like in Seattle right ⟨ret@22.02s⟩ now?
-[ 22.42s][moshi] «interrupted» ⟦⚡SPAN@22.42s: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition: partly cloudy.⟧ It’s currently 18.3 degrees Celsius and partly cloudy in Seattle, with a gentle breeze of 2.9 kilometers per hour—
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
-[ 30.79s][user ] «interrupts_prev» …actually, can you search for “best white noise machine for sleep” on Amazon?
-[ 35.43s][moshi] ⟨ret@35.35s⟩ ⟦⚡SPAN@35.43s: (tavily-search result) The Hatch Restore 2 is consistently ranked as a top pick for sleep, offering sound and ⟧ A search on Amazon shows the Hatch Restore 2 is a highly-rated option for sleep, with sound and light therapy. It’s reviewed on cnet.com.
-[ 45.11s][user ] Oh, that sounds promising. Could you find me some events happening this weekend?
-[ 49.51s][moshi] ⟨ret@49.44s⟩ ⟦⚡SPAN@49.52s: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Arts Festival, Seattle Center; Mariners vs⟧ This weekend in Seattle, July 11th and 12th, you have Bumbershoot at the Seattle Center and a Mariners game at T-Mobile Park. It sounds like a lovely weekend!
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "2026-07-11", "location": "Seattle"}}
+[  0.00s][user ] I need to accept the terms and conditions on that website. Can you click the accept button inside the iframe? The ID is ⟨ret@10.19s⟩ “myIframe”.
+[ 10.43s][moshi] ⟦⚡SPAN@10.43s: (tool result) {"status": "success", "message": "Button 'accept' clicked within iframe 'myIframe'."}⟧ I’ve just clicked the accept button within the iframe, and it appears successful.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_id": "myIframe", "button_text": "accept"}}
+[ 16.08s][user ] «backchannel» Uh-huh.
+[ 16.51s][user ] Oh, great! That’s a relief. Um…
+[ 19.12s][user ] …what’s the weather like in Seoul right now? ⟨ret@22.44s⟩
+[ 22.60s][moshi] ⟦⚡SPAN@22.60s: (tool result) {"temperature": 28.5, "humidity": 78, "wind speed": 6.2, "condition": "Cloudy"}⟧ The weather in Seoul is currently 28.5 degrees Celsius, with 78 percent humidity and a 6.2 kilometer per hour breeze. It’s cloudy there.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}

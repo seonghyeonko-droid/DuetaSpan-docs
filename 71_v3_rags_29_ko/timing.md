@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "유훈",
+#     "name": "유호",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-10",
+#       "date": "2026-02-15",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2025-11-08",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-09-03",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2025-08-13",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-05-28",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-02",
+#       "date": "2026-02-22",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,20 +48,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-01",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-09-07",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 리얼 월드 시즌이 언제 시작하는지 알 수 있을까요?
-     3.75s  <ret> 발화 (turn1 첫 프레임)
-     3.91s  agent 발화 시작: <ret> 새로운 시즌은 이천십이년 칠월 십이일에 시작되었답니다. 스트레스 해소에 도움이 되는 명상법도 찾아
-     3.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: The new season of The Real World began airing on July 12, 2012.
-     4.03s  user  발화 끝
-    10.67s  agent 발화 끝
+     0.00s  user  발화 시작: 엔 씨 아이 에스 뉴올리언스에서 로렐 프라이드는 누가 연기해?
+     3.36s  <ret> 발화 (turn1 첫 프레임)
+     3.52s  agent 발화 시작: <ret> 엔 씨 아이 에스 뉴올리언스에서 로렐 프라이드 역은 섀늘리 캐스웰 씨가 맡았어요.
+     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: Shanley Caswell plays Laurel Pride in NCIS: New Orleans.
+     3.52s  user  발화 끝
+     8.22s  agent 발화 끝

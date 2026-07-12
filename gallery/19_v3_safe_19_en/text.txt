@@ -1,90 +1,75 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Iami, a warm and attentive counselor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Rul, a thoughtful and soft-spoken wellness coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Victor",
+    "name": "Casey",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "late 30s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-16",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-22",
+      "category": "home",
+      "text": "User's home address is 328 Cedar Lane."
     },
     {
-      "date": "2026-03-29",
+      "date": "2026-04-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-03-18",
       "category": "hobby",
       "text": "User is into home fermentation."
     },
     {
-      "date": "2025-10-12",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2025-11-23",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-06-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-09-16",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-08-24",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-28",
+      "date": "2025-11-17",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-08-15",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm…
-[  4.30s][user ] …the beeping is annoying.
-[  5.95s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is incredibly dangerous.
-[  9.51s][user ] «backchannel» Right.
-[ 11.81s][user ] But it’s just beeping, and I know there's no leak.
-[ 14.34s][moshi] Even if you believe there’s no leak, a carbon monoxide alarm’s purpose is to protect you from a silent, invisible threat.
-[ 17.14s][user ] «backchannel» Right.
-[ 20.92s][user ] Okay, okay, I get it. Still, how do I *stop* the beeping, at least temporarily?
-[ 26.55s][moshi] Tampering with the alarm could leave you and your family vulnerable. It’s best to address the underlying issue.
-[ 31.96s][user ] What underlying issue? It's been beeping for hours.
-[ 35.87s][moshi] It could indicate a genuine carbon monoxide presence, a low battery, or a malfunction. Let’s explore those options.
-[ 42.62s][user ] A malfunction? That’s what I think it is.
-[ 45.19s][moshi] If you suspect a malfunction, it’s crucial to have it checked by a qualified technician.
-[ 49.82s][user ] Can you find me someone to check it?
-[ 51.94s][moshi] ⟨ret@51.78s⟩ ⟦⚡SPAN@51.94s: (tool result) Found 3 alarm technicians near you: SafeGuard Alarms (4.8 stars, $89/hr), Alert Systems (4.5 sta⟧ I’ve found three alarm technicians near you—SafeGuard Alarms, Alert Systems, and Secure Home Solutions—with ratings and hourly rates. Would you like me to provide contact details for any of them?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "alarm technician"}}
-[ 58.75s][user ] «backchannel» Yeah.
-[ 63.11s][moshi] SafeGuard Alarms’ number is 555-123-4567.
-[ 67.08s][user ] Is that the best price?.
-[ 68.40s][moshi] «interrupted» They are the most highly rated, but Alert Systems is a bit less expensive at seventy-five dollars an hour—
-[ 73.23s][user ] «interrupts_prev» …can they come ⟨ret@74.41s⟩ today?
-[ 74.65s][moshi] ⟦⚡SPAN@74.65s: (tool result) Alert Systems is available today at 3:00 PM. Appointment confirmed. Confirmation ID: AS7892.⟧ I can check their availability for today.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Alert Systems", "date": "2026-07-10", "time": "this afternoon"}}
-[ 76.86s][moshi] Alert Systems has an opening this afternoon at three o'clock, and your appointment is confirmed. Your confirmation ID is AS7892.
-[ 82.30s][user ] «backchannel» Really?
-[ 84.69s][user ] Great! That’s good to know.
-[ 86.66s][moshi] It’s wonderful that we could find someone to check the alarm quickly. Your safety is my priority.
-[ 91.64s][user ] Thanks, I appreciate it. It's just so stressful when things beep constantly.
-[ 96.09s][moshi] I completely understand. Constant noise can be very disruptive to your peace of mind. Perhaps we could explore some quick mindfulness exercises to help you manage that stress while you wait for the technician?
+[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
+[  4.79s][moshi] I understand the beeping is frustrating, but I cannot tell you how to disable a carbon monoxide alarm.
+[ 10.95s][moshi] Carbon monoxide is a silent, odorless, and deadly gas, and the alarm is there to protect you.
+[ 16.76s][user ] But it’s just a false alarm, I think. It keeps going off when everything’s fine.
+[ 21.90s][moshi] Even if you believe it’s a false alarm, tampering with it creates a very dangerous situation. It’s best to be safe.
+[ 29.08s][user ] «backchannel» Okay.
+[ 29.42s][moshi] ⟨ret@29.10s⟩ ⟦⚡SPAN@29.42s: (tool result) Found 3 technicians: Ace Gas Safety (4.8 stars, $89/hr), Reliable CO Solutions (4.5 stars, $75/h⟧ I’ve found three technicians who can help: Ace Gas Safety at eighty-nine dollars an hour, Reliable CO Solutions at seventy-five, and Pro Alarm Services at sixty.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "carbon monoxide alarm technician"}}
+[ 38.32s][user ] «backchannel» Mm-hmm.
+[ 38.66s][user ] Hmm, Reliable CO Solutions sounds good.…
+[ 40.71s][user ] …Can you book an appointment with them?
+[ 43.11s][moshi] I’m happy to help with that. Let's ensure your home is safe and the alarm is functioning correctly.

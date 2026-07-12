@@ -4,109 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "수빈",
+#     "name": "우진",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
+#       "date": "2026-03-26",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2026-02-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-12-11",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-12-15",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2025-10-13",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2025-06-05",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-30",
+#       "date": "2026-06-12",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-27",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 알람 열두시 십오 분으로 맞춰 줘. | S2 이번 주 토요일에 갈 영화 있나 찾아 봐 줘. | S3 … 그 영화 예매해 줘. 두 장. | S4 주말에 부산 갈 건데, 부산 날씨는 어때?
 
-     0.00s  user  발화 시작: 알람 열두시 십오 분으로 맞춰 줘.
-     2.32s  <ret> 발화 (turn1 첫 프레임)
-     2.56s  agent 발화 시작: <ret> 알람이 오후 열두시 십오 분으로 설정되었어요. 확인 번호는 팔 구 엑스 제트 사 이입니다.
-     2.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Alarm set for 12:15 PM. Confirmation ID: 89xz42.
-     2.63s  user  발화 끝
-     9.19s  agent 발화 끝
-    10.46s  user  발화 시작: 음… 내일 아침 여섯 시로 바꿔 줘.
-    12.61s  <ret> 발화 (turn3 첫 프레임)
-    12.93s  agent 발화 시작: <ret> 알람을 내일 아침 여섯 시로 변경했어요. 확인 번호는 이 칠 에이 비 구 일입니다.
-    12.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: (tool result) Alarm set for 6:00 AM. Confirmation ID: 27ab91.
-    12.99s  user  발화 끝
-    18.38s  user  발화 시작: 이번 주 토요일에 갈 영화 있나 찾아 봐 줘.
-    18.48s  agent 발화 끝
-    20.82s  user  발화 끝
-    20.86s  <ret> 발화 (turn5 첫 프레임)
-    21.02s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십이일에 롯데월드타워에서 '인사이드 아웃 이'가 상영돼요. 저녁 일곱시 삼
-    21.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) Showing 'Inside Out 2' at 7:30 PM, Lotte Cinema World To
-    24.74s  user  발화 시작: 맞아요.
-    25.19s  user  발화 끝
-    27.78s  agent 발화 시작: 혹시 다른 영화나 시간을 원하시면 말씀해 주세요—
-    27.87s  agent 발화 끝
-    30.44s  user  발화 시작: … 그 영화 예매해 줘. 두 장.
-    31.20s  agent 발화 끝
-    32.52s  <ret> 발화 (turn9 첫 프레임)
-    32.59s  agent 발화 시작: <ret> '인사이드 아웃 이' 두 장, 롯데월드타워 저녁 일곱시 삼십분 상영으로 예매 완료되었습니다. 확인
-    32.59s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.83s]: (tool result) Tickets confirmed. Two tickets for 'Inside Out 2' at Lot
-    32.70s  user  발화 끝
-    42.41s  agent 발화 끝
-    43.00s  user  발화 시작: 고마워. 그건 됐고, 지금 날씨 어때?
-    45.51s  <ret> 발화 (turn11 첫 프레임)
-    45.82s  agent 발화 시작: <ret> 현재 기온은 이십사 점 오도, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있습니다
-    45.83s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.34s]: (tool result) It is 24.5°C, humidity 68%, wind 3.2 km/h.
-    45.91s  user  발화 끝
-    52.16s  agent 발화 끝
-    53.00s  user  발화 시작: 주말에 부산 갈 건데, 부산 날씨는 어때?
-    55.57s  <ret> 발화 (turn13 첫 프레임)
-    55.81s  agent 발화 시작: <ret> 부산은 현재 기온이 이십육 점 일도, 습도는 칠십이퍼센트, 바람은 시속 사 점 팔킬로미터입니다. 
-    55.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.80s]: (tool result) Busan: 26.1°C, humidity 72%, wind 4.8 km/h.
-    55.96s  user  발화 끝
-    64.61s  agent 발화 끝
+     0.00s  user  발화 시작: 달라스에서 휴스턴까지 버스 티켓 두 장 예매해 줘, 칠월 사일 정오에.
+     4.81s  <ret> 발화 (turn1 첫 프레임)
+     5.05s  agent 발화 시작: <ret> 달라스에서 휴스턴까지 칠월 사일 정오에 출발하는 버스 티켓 두 장이 예매되었습니다, 확인 번호는 
+     5.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.56s]: (tool result) Confirmation: TX94L2-HP7G. Two bus tickets from Dallas, 
+     5.05s  user  발화 끝
+    15.61s  user  발화 시작: 와.
+    15.61s  agent 발화 끝
+    16.07s  user  발화 시작: 그… 이번 주말에 영화 볼 만한 거 있어?
+    16.07s  user  발화 끝
+    19.42s  <ret> 발화 (turn4 첫 프레임)
+    19.74s  agent 발화 시작: <ret> 현재 가장 인기 있는 영화는 "엘리멘탈"인데, 피터 손 감독이 연출하고 픽사 애니메이션 스튜디오와
+    19.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.48s]: The most popular movie currently playing is "Elemental," a 2023 Americ
+    19.74s  user  발화 끝
+    31.22s  user  발화 시작: …어, 잠깐만. 칠월 사일에 휴스턴에서 출발하는 버스는 몇 시에 다시 달라스로 돌아오는 게 있어?
+    31.22s  agent 발화 끝
+    37.49s  <ret> 발화 (turn6 첫 프레임)
+    37.65s  agent 발화 시작: <ret> 칠월 사일 휴스턴에서 달라스로 돌아가는 버스는 오후 두시 삼십분, 다섯시, 여덟시, 열한시에 있습
+    37.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) 14:30, 17:00, 20:00, 23:00
+    37.65s  user  발화 끝
+    46.83s  agent 발화 끝

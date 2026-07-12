@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Ruby",
+#     "name": "Maya",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-23",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2025-10-16",
+#       "category": "home",
+#       "text": "User's home address is 198 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-11-25",
+#       "date": "2025-09-29",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-07-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-09-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-12",
+#       "date": "2026-05-17",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,75 +48,55 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-06",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling a bit lost latel | S2 Hmm, that makes sense. I used to l | S3 That's… actually really close! | S4 …it just feels awkward.
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to figure out my next s | S2 I was considering Seattle, um, but | S3 Hmm, that sounds…okay. What about  | S4 That's good to know. I think I nee
 
-     0.00s  user  발화 시작: I’ve been feeling a bit lost lately, like I don’t really con
-     4.05s  agent 발화 시작: It's completely natural to feel that way sometimes. Building
-     4.16s  user  발화 끝
-    12.49s  agent 발화 끝
-    12.98s  user  발화 시작: Well, it's just… everyone seems to have their groups, and I’
-    17.80s  user  발화 끝
-    18.17s  agent 발화 시작: It sounds like you’re experiencing a sense of exclusion, and
-    26.65s  user  발화 시작: I guess I want friends who share my interests, but I don't e
-    26.70s  agent 발화 끝
-    30.91s  user  발화 끝
-    30.94s  <ret> 발화 (turn5 첫 프레임)
-    31.18s  agent 발화 시작: <ret> Discovering friends with shared passions often happens
-    31.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: Common interests are often found through hobbies, volunteering, or joi
-    39.39s  agent 발화 끝
-    39.68s  user  발화 시작: Hmm, that makes sense. I used to love astronomy…
-    42.60s  agent 발화 시작: Oh, astronomy is wonderful! It's a fantastic way to feel con
-    42.69s  user  발화 끝
-    48.59s  user  발화 시작: Uh-huh.
-    49.09s  user  발화 끝
-    51.18s  agent 발화 끝
-    51.18s  user  발화 시작: Yeah, but it's been years since I looked through a telescope
-    55.02s  agent 발화 시작: It’s alright to feel a little rusty after a break. Rediscove
-    55.11s  user  발화 끝
-    63.45s  user  발화 시작: Maybe… I wonder if there are any astronomy clubs nearby?
-    63.45s  agent 발화 끝
-    67.24s  <ret> 발화 (turn12 첫 프레임)
-    67.32s  agent 발화 시작: <ret> The Seoul Astronomical Society meets every second Satu
-    67.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) The Seoul Astronomical Society meets every second Saturd
-    67.47s  user  발화 끝
-    75.64s  user  발화 시작: Yeah.
-    76.28s  user  발화 끝
-    81.23s  agent 발화 끝
-    81.30s  user  발화 시작: That's… actually really close!
-    83.08s  agent 발화 시작: [happy] Isn’t it wonderful when opportunities present themse
-    83.24s  user  발화 끝
-    90.44s  user  발화 시작: I guess so. But what if I go…
-    90.49s  agent 발화 끝
-    92.55s  user  발화 끝
-    94.35s  user  발화 시작: …and everyone already knows each other?
-    96.28s  agent 발화 시작: That’s a very valid concern. It can be intimidating joining 
-    96.47s  user  발화 끝
-   102.55s  user  발화 시작: …it just feels awkward.
-   102.91s  agent 발화 끝
-   104.06s  user  발화 끝
-   104.19s  agent 발화 시작: It *is* awkward, and it’s okay to acknowledge that feeling. 
-   109.07s  user  발화 시작: Mm-hmm.
-   109.80s  user  발화 끝
-   113.08s  agent 발화 끝
-   113.56s  user  발화 시작: That’s a good idea, actually. What’s the weather like this w
-   116.34s  <ret> 발화 (turn23 첫 프레임)
-   116.74s  agent 발화 시작: <ret> The current conditions in Seoul are 24.0°C, with 65% h
-   116.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.53s]: (tool result) Current conditions in Seoul: 24.0°C, humidity 65%, wind 
-   116.98s  user  발화 끝
-   123.52s  user  발화 시작: Yeah.
-   124.01s  user  발화 끝
-   127.27s  agent 발화 끝
-   127.88s  user  발화 시작: Perfect! Thanks, Larimi.
-   129.42s  agent 발화 시작: You're very welcome. Remember, taking that first step can be
-   129.50s  user  발화 끝
-   135.53s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to figure out my next steps, it’s all a bit overw
+     4.79s  agent 발화 시작: It’s completely natural to feel that way when facing big cha
+     4.79s  user  발화 끝
+    11.05s  user  발화 시작: Mm-hmm.
+    11.05s  agent 발화 끝
+    11.42s  user  발화 시작: Well, I’m thinking about moving to a new city, but I don’t e
+    11.42s  user  발화 끝
+    17.69s  agent 발화 시작: That’s a wonderful starting point! It’s exciting to consider
+    17.69s  user  발화 끝
+    23.95s  user  발화 시작: Uh-huh.
+    23.95s  agent 발화 끝
+    24.32s  user  발화 시작: I was considering Seattle, um, but I don’t know what the wea
+    24.32s  user  발화 끝
+    29.60s  <ret> 발화 (turn7 첫 프레임)
+    29.84s  agent 발화 시작: <ret> Seattle’s weather is currently 18.3 degrees Celsius, w
+    29.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) The current weather in Seattle, Washington is 18.3°C, wi
+    29.84s  user  발화 끝
+    36.48s  agent 발화 시작: It’s a lovely time of year to visit, if you enjoy mild tempe
+    36.48s  agent 발화 끝
+    41.27s  user  발화 시작: Hmm, that sounds…okay. What about the cost of living there?
+    41.27s  agent 발화 끝
+    44.55s  <ret> 발화 (turn10 첫 프레임)
+    44.95s  agent 발화 시작: <ret> Seattle’s cost of living is 23 percent higher than the
+    44.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) The cost of living in Seattle, Washington is 23% higher 
+    44.95s  user  발화 끝
+    51.21s  user  발화 시작: Exactly.
+    51.21s  agent 발화 끝
+    51.58s  user  발화 시작: Twenty-three percent? Wow, that’s a lot. Is it really that d
+    51.58s  user  발화 끝
+    56.50s  <ret> 발화 (turn13 첫 프레임)
+    56.74s  agent 발화 시작: <ret> Denver’s cost of living is 7 percent higher than the n
+    56.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.90s]: (tool result) Denver, Colorado’s cost of living is 7% higher than the 
+    56.74s  user  발화 끝
+    62.64s  agent 발화 시작: So, it’s significantly more affordable than Seattle, it seem
+    62.64s  agent 발화 끝
+    65.95s  user  발화 시작: That's good to know. I think I need to do a bit more researc
+    65.95s  agent 발화 끝
+    71.11s  agent 발화 시작: Taking your time and gathering information is a very wise ap
+    71.11s  user  발화 끝
+    77.37s  agent 발화 끝

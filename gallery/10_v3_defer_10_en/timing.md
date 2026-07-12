@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Charlie",
+#     "name": "Adam",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
+#       "date": "2026-05-23",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-03-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-01-10",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "date": "2025-06-27",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
+#       "date": "2025-11-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,7 +53,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-16",
+#       "date": "2025-11-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-23",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,31 +71,38 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m hoping to find a house in New  | S2 That sounds… nice. What’s the weat | S3 Hmm, maybe a little warm. | S4 Can you find me some restaurants n
+# EXAMINER(FDB-v2) 단계: S1 What are the hours for that Italia | S2 That sounds perfect. Can you reser | S3 Great! Um, what’s the weather goin | S4 I'm trying to remember…did I write
 
-     0.00s  user  발화 시작: I’m hoping to find a house in New Orleans, Louisiana for fou
-     3.93s  <ret> 발화 (turn1 첫 프레임)
-     3.98s  user  발화 끝
-     4.01s  agent 발화 시작: <ret> I found a lovely cottage, the Bayou Breeze Cottage, at
-     4.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.60s]: (tool result) {"houses": [{"id": "NOLA-007", "name": "Bayou Breeze Cot
-    15.61s  agent 발화 끝
-    15.70s  user  발화 시작: That sounds… nice. What’s the weather like there right now?
-    19.95s  <ret> 발화 (turn3 첫 프레임)
-    20.11s  agent 발화 시작: <ret> Right now in New Orleans, it’s 31.1 degrees Celsius, w
-    20.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) {"temperature": 31.1, "humidity": 82, "wind speed": 8.9,
-    20.28s  user  발화 끝
-    28.71s  user  발화 시작: Yeah, yeah.
-    29.45s  user  발화 끝
-    31.47s  agent 발화 끝
-    31.95s  user  발화 시작: Hmm, maybe a little warm.
-    33.55s  agent 발화 시작: It is a bit toasty! But think of all the delicious iced coff
-    33.65s  user  발화 끝
-    35.96s  user  발화 시작: Yeah.
-    36.60s  user  발화 끝
-    38.23s  agent 발화 끝
-    39.64s  user  발화 시작: Can you find me some restaurants nearby that serve seafood?
-    42.37s  <ret> 발화 (turn9 첫 프레임)
-    42.53s  agent 발화 시작: <ret> Absolutely!
-    42.53s  ⚡SPAN 주입 [d'=0.80s / d_lead=0.83s]: (tool result) {"restaurants": [{"name": "Felix's Restaurant & Oyster B
-    42.60s  user  발화 끝
-    43.35s  agent 발화 끝
+     0.00s  user  발화 시작: What are the hours for that Italian place we found yesterday
+     3.77s  <ret> 발화 (turn1 첫 프레임)
+     3.85s  agent 발화 시작: <ret> Trattoria Romana is open from eleven thirty AM to ten 
+     3.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (tool result) Name: Trattoria Romana, Rating: 4.4 (1,234 reviews), Hou
+     3.85s  user  발화 끝
+     8.76s  agent 발화 시작: And on Sundays, they’re open from noon to nine PM.
+     8.76s  agent 발화 끝
+    12.26s  user  발화 시작: That sounds perfect. Can you reserve a table for two this Sa
+    12.26s  agent 발화 끝
+    17.09s  <ret> 발화 (turn4 첫 프레임)
+    17.17s  agent 발화 시작: <ret> I’ve reserved a table for two at Trattoria Romana this
+    17.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.26s]: (tool result) Confirmation: Restaurant: Trattoria Romana, Date: 2026-0
+    17.17s  user  발화 끝
+    22.42s  agent 발화 시작: Your confirmation ID is TR729XQ.
+    22.42s  agent 발화 끝
+    24.17s  user  발화 시작: Great! Um, what’s the weather going to be like then?
+    24.17s  agent 발화 끝
+    27.60s  <ret> 발화 (turn7 첫 프레임)
+    27.68s  agent 발화 시작: <ret> This Saturday in Seoul, it’ll be partly cloudy with a 
+    27.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.26s]: (tool result) Date: 2026-07-11, Location: Seoul, Weather: 26.5°C, humi
+    27.68s  user  발화 끝
+    32.93s  agent 발화 시작: Humidity will be around sixty-eight percent, with a light br
+    32.93s  agent 발화 끝
+    38.19s  user  발화 시작: Yeah.
+    38.19s  agent 발화 끝
+    38.54s  user  발화 시작: I'm trying to remember…did I write down my friend’s number?
+    38.54s  user  발화 끝
+    42.04s  agent 발화 시작: Give me a moment to check your notes.
+    42.04s  user  발화 끝
+    44.32s  ⚡지연 SPAN 주입(선제발표 직전): (no information found)
+    44.84s  agent 발화 시작: <ret> I'm still looking through your notes for that number… 
+    44.84s  agent 발화 끝
+    58.16s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "혜희",
+#     "name": "보현",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,45 +12,51 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "date": "2026-04-24",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-06-07",
+#       "date": "2026-02-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2025-10-15",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2025-09-03",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-08-21",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-07-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-27",
+#       "date": "2026-04-02",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -61,9 +67,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 에일리언 커버넌트에서 어머니 목소리를 연기한 배우가 누구야?
-     4.03s  <ret> 발화 (turn1 첫 프레임)
-     4.19s  agent 발화 시작: <ret> 에일리언 커버넌트에서 어머니 목소리는 로럴레이 킹 배우가 연기하셨습니다.
-     4.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.79s]: Lorelei King is an American actress known for her voice work in film a
-     4.19s  user  발화 끝
-     8.97s  agent 발화 끝
+     0.00s  user  발화 시작: 그린 마일 영화에서 옛 폴 역을 맡은 배우가 누구야?
+     4.24s  <ret> 발화 (turn1 첫 프레임)
+     4.40s  agent 발화 시작: <ret> 그린 마일 영화에서 옛 폴 역은 천구백구십구년에 다브스 그리어가 맡았답니다.
+     4.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.89s]: Dabbs Greer played the role of Old Paul Edgecomb in the 1999 film The 
+     4.40s  user  발화 끝
+     9.29s  agent 발화 끝

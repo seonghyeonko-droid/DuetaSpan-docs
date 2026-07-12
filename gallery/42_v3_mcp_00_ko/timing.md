@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "하린",
+#     "name": "유준",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,45 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
+#       "date": "2026-03-06",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2025-12-18",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-08-14",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2025-07-29",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-06",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-07-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2025-06-18",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
+#       "date": "2026-04-24",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,15 +58,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-09-22",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-03",
+#       "date": "2025-08-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -76,33 +76,18 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 피자 먹고 싶은데. 삼십사 점 영 오 위도, -백십팔 점 | S2 캘리포니아 피자 키친까지 어떻게 가? | S3 잠깐만, 팔분이나 걸려? 좀 더 빠른 길은 없어? | S4 삼십육분은 너무 길어. 그럼 그냥 지금 있는 곳 주변에 괜찮은
 
-     0.00s  user  발화 시작: 음… 피자 먹고 싶은데. 삼십사 점 영 오 위도, -백십팔 점 이 사 경도 주변에 피자집 좀 찾아줘.
-     8.41s  <ret> 발화 (turn1 첫 프레임)
-     8.65s  agent 발화 시작: <ret> 주변에 피자 가게 두 곳이 있어요. 캘리포니아 피자 키친 평점은 사 점 이점이고, 블레이즈 피자는
-     8.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) {"results": [{"name": "California Pizza Kitchen", "vicin
-     8.81s  user  발화 끝
-    16.54s  agent 발화 끝
-    17.19s  user  발화 시작: 캘리포니아 피자 키친까지 어떻게 가?
-    19.71s  <ret> 발화 (turn3 첫 프레임)
-    20.03s  agent 발화 시작: <ret> 캘리포니아 피자 키친까지는 이 점 삼마일, 약 팔분 정도 걸리고요, S 플라워 스트리트에서 북쪽으
-    20.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) {"distance": "2.3 miles", "duration": "8 minutes", "inst
-    20.10s  user  발화 끝
-    25.55s  user  발화 시작: 대박.
-    26.18s  user  발화 끝
-    27.87s  agent 발화 끝
-    28.50s  user  발화 시작: 잠깐만, 팔분이나 걸려? 좀 더 빠른 길은 없어?
-    32.00s  <ret> 발화 (turn6 첫 프레임)
-    32.38s  user  발화 끝
-    32.40s  agent 발화 시작: <ret> 도보로 가시면 일 점 팔마일, 약 삼십육분이 걸리는데, S 플라워 스트리트에서 북쪽으로 가시는 길
-    32.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) {"distance": "1.8 miles", "duration": "36 minutes", "ins
-    35.51s  user  발화 시작: 와.
-    36.15s  user  발화 끝
-    39.63s  agent 발화 끝
-    39.94s  user  발화 시작: 삼십육분은 너무 길어. 그럼 그냥 지금 있는 곳 주변에 괜찮은 스테이크집은 어디야?
-    46.04s  <ret> 발화 (turn9 첫 프레임)
-    46.19s  user  발화 끝
-    46.28s  agent 발화 시작: <ret> 지금 계신 곳 주변에는 컷 바이 볼프강 퍽 평점 사 점 오점, 플레밍스 프라임 스테이크하우스 평점
-    46.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) {"results": [{"name": "CUT by Wolfgang Puck", "vicinity"
-    54.53s  agent 발화 끝
+     0.00s  user  발화 시작: 아이피 주소 구십삼 점 일 팔.이백십육 점 삼 사가 어느 도시인가요?
+     4.44s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  agent 발화 시작: <ret> 그 아이피 주소는 독일 베를린에 위치해 있습니다. 혹시 다른 아이피 주소도 확인해 드릴까요?
+     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.53s]: (tool result) City: Berlin, Country: Germany
+     4.68s  user  발화 끝
+    10.21s  user  발화 시작: 네.
+    10.21s  agent 발화 끝
+    10.63s  user  발화 시작: 아, 네, 그럼 백구십이 점 일 육.일 점 일은 어디에요?
+    10.63s  user  발화 끝
+    14.57s  <ret> 발화 (turn4 첫 프레임)
+    14.89s  agent 발화 시작: <ret> 백구십이 점 일 육.일 점 일 아이피 주소는 미국 뉴욕에 있습니다.
+    14.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: (tool result) City: New York, Country: United States
+    14.89s  user  발화 끝
+    19.56s  agent 발화 끝

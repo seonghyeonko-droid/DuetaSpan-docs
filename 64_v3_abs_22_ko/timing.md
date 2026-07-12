@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "세우",
+#     "name": "시경",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2026-05-27",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-07-17",
+#       "date": "2026-05-10",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-03-31",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-10-08",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-06-11",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-06-03",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-09",
+#       "date": "2026-04-03",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-25",
+#       "date": "2025-09-05",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -56,69 +61,55 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-26",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-11",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 무함마드가 언제 아팠는지 알 수 있을까요? | S2 메카와 메디나는 지금 어디에 있나요? | S3 … 그분이 아프셨을 때, 어떤 병이었을까요? 혹시 기록에 남아 | S4 좋은 가르침이네요. 혹시 그분에 대한 책을 추천해 주실 수 있
+# EXAMINER(FDB-v2) 단계: S1 커패시터 연결 리드가 정돈되지 않은 구성이 어떤 게 있어? | S2 이번 주 토요일 날씨 어때? | S3 새로운 시작이라… 뭐, 그런 걸로 할까. | S4 음… 좀 복잡해서.
 
-     0.00s  user  발화 시작: 무함마드가 언제 아팠는지 알 수 있을까요?
-     3.65s  <ret> 발화 (turn1 첫 프레임)
-     3.97s  agent 발화 시작: <ret> 안타깝게도, 무함마드께서 언제 아프셨는지에 대한 정확한 기록은 찾을 수 없었습니다.
-     3.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: (no information found)
-     3.97s  user  발화 끝
-    10.58s  user  발화 시작: 그래.
-    10.58s  agent 발화 끝
-    11.24s  user  발화 시작: 아, 그렇군요. 그럼, 이슬람교 창시자는 누구인가요?
-    11.24s  user  발화 끝
-    14.89s  <ret> 발화 (turn4 첫 프레임)
-    15.21s  agent 발화 시작: <ret> 이슬람교 창시자는 무함마드이며, 무슬림들은 그가 신(알라)께서 인류에게 보낸 마지막 예언자라고 믿
-    15.21s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.27s]: Muhammad is recognized as the founder of Islam, and Muslims believe hi
-    15.21s  user  발화 끝
-    22.48s  user  발화 시작: 응.
-    22.48s  agent 발화 끝
-    23.14s  user  발화 시작: 그분이 살았던 시대는 언제쯤이었나요?
-    23.14s  user  발화 끝
-    25.71s  <ret> 발화 (turn7 첫 프레임)
-    25.79s  agent 발화 시작: <ret> 무함마드는 대략 서기 오백칠십년부터 육백삼십이년까지 살았는데, 메카에서 태어나 메디나에서 세상을 
-    25.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: Muhammad lived from approximately 570 CE to 632 CE, born in Mecca and 
-    25.79s  user  발화 끝
-    33.06s  user  발화 시작: 진짜?
-    33.06s  agent 발화 끝
-    33.72s  user  발화 시작: 메카와 메디나는 지금 어디에 있나요?
-    33.72s  user  발화 끝
-    36.95s  <ret> 발화 (turn10 첫 프레임)
-    37.03s  agent 발화 시작: <ret> 메카는 사우디아라비아 서부의 메카 주에 위치하고, 메디나는 사우디아라비아의 알마디나 주 제다 북동
-    37.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.60s]: Mecca is located in the Makkah Province of western Saudi Arabia, while
-    37.03s  user  발화 끝
-    45.62s  user  발화 시작: 아, 사우디아라비아군요. 그런데 —
-    45.62s  agent 발화 끝
-    48.27s  user  발화 시작: … 그분이 아프셨을 때, 어떤 병이었을까요? 혹시 기록에 남아있는 게 있나요?
-    48.27s  user  발화 끝
-    55.46s  <ret> 발화 (turn13 첫 프레임)
-    55.54s  agent 발화 시작: <ret> 정확히 어떤 병이었는지는 기록이 부족해서 알 수 없지만, 당시에는 전염병이나 열병이 유행했을 가능
-    55.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.26s]: (no information found)
-    55.54s  user  발화 끝
-    64.79s  user  발화 시작: 그렇군요. 그럼, 그분의 가르침은 무엇이었나요?
-    64.79s  agent 발화 끝
-    67.94s  <ret> 발화 (turn15 첫 프레임)
-    68.10s  agent 발화 시작: <ret> 무함마드의 가르침은 유일신에 대한 믿음, 그의 뜻에 대한 복종, 그리고 연민, 정의, 도덕적 책임
-    68.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.58s]: Muhammad’s teachings emphasize the belief in one God, submission to Hi
-    68.10s  user  발화 끝
-    78.68s  user  발화 시작: 좋은 가르침이네요. 혹시 그분에 대한 책을 추천해 주실 수 있나요?
-    78.68s  agent 발화 끝
-    85.13s  <ret> 발화 (turn17 첫 프레임)
-    85.29s  agent 발화 시작: <ret> 무함마드에 대한 책으로는 카렐 아만드 님의 "무함마드"가 있습니다. 이천사년에 출판되었고, 이슬람
-    85.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.58s]: (tool result) "무함마드"는 카렐 아만드 저, 2004년 출판된 책으로, 이슬람 창시자 무함마드의 삶을 심도 있게 
-    85.29s  user  발화 끝
-    95.87s  user  발화 시작: 한번 찾아봐야겠네요. 감사합니다.
-    95.87s  agent 발화 끝
-    97.85s  agent 발화 시작: 도움이 되었다니 다행입니다.
-    97.85s  user  발화 끝
-    99.84s  agent 발화 끝
+     0.00s  user  발화 시작: 커패시터 연결 리드가 정돈되지 않은 구성이 어떤 게 있어?
+     3.89s  <ret> 발화 (turn1 첫 프레임)
+     4.21s  agent 발화 시작: <ret> 음, 죄송하지만 그 질문에 대한 정보를 찾을 수 없었어요. 좀 더 쉽게 설명해 주시겠어요?
+     4.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (no information found)
+     4.21s  user  발화 끝
+    10.75s  user  발화 시작: 아.
+    10.75s  agent 발화 끝
+    11.22s  user  발화 시작: 아, 그냥 궁금해서.
+    11.22s  user  발화 끝
+    12.62s  agent 발화 시작: 네, 괜찮아요. 궁금한 건 언제든 물어보세요. 제가 도울 수 있는 다른 일이 있을까요?
+    12.62s  user  발화 끝
+    18.70s  user  발화 시작: 이번 주 토요일 날씨 어때?
+    18.70s  agent 발화 끝
+    20.95s  <ret> 발화 (turn6 첫 프레임)
+    21.03s  agent 발화 시작: <ret> 토요일 날씨는 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 예상됩니다.
+    21.03s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.14s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    21.03s  user  발화 끝
+    26.18s  user  발화 시작: 헐.
+    26.18s  agent 발화 끝
+    26.64s  agent 발화 시작: 날씨가 좋으면 야외 활동하기 딱 좋겠네요. 혹시 주말 계획 있으세요?
+    26.64s  user  발화 끝
+    31.32s  user  발화 시작: 아직은 딱히…
+    31.32s  agent 발화 끝
+    32.25s  agent 발화 시작: 음, 저는 큰 변화를 앞둔 분들을 돕는 일을 하고 있거든요. 혹시 새로운 시작을 준비하고 계신 건가요?
+    32.25s  user  발화 끝
+    39.73s  user  발화 시작: 새로운 시작이라… 뭐, 그런 걸로 할까.
+    39.73s  agent 발화 끝
+    42.54s  agent 발화 시작: [happy] 새로운 시작은 언제나 설레는 일이죠. 혹시 어떤 분야에 관심을 두고 계신지 여쭤봐도 될까요?
+    42.54s  user  발화 끝
+    49.08s  user  발화 시작: 응.
+    49.08s  agent 발화 끝
+    49.55s  user  발화 시작: 그냥… 좀 더 편안한 삶을 살고 싶어.
+    49.55s  user  발화 끝
+    52.82s  agent 발화 시작: [curious] 편안한 삶을 추구하시는군요. 어떤 점이 가장 불편하신가요? 좀 더 자세히 말씀해 주시면 제
+    52.82s  user  발화 끝
+    62.17s  user  발화 시작: 음… 좀 복잡해서.
+    62.17s  agent 발화 끝
+    63.57s  agent 발화 시작: [sigh] 복잡한 문제일수록 차근차근 풀어가는 게 중요하죠. 제가 옆에서 함께 고민해 드릴게요.
+    63.57s  user  발화 끝
+    69.18s  agent 발화 끝

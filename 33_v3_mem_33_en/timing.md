@@ -4,99 +4,75 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Emil",
+#     "name": "Adam",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-17",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-03-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2026-01-29",
+#       "date": "2026-03-13",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2026-02-08",
+#       "category": "home",
+#       "text": "User's home address is 816 Birch Road."
+#     },
+#     {
+#       "date": "2025-09-11",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-20",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Thir, good to meet you too. Wh | S2 Oh yeah! That's right. I'm thinkin | S3 …do they happen to have a website? | S4 Right, thanks for remembering. Tha
 
-     0.00s  agent 발화 시작: Hi Emil, I'm Thir. It's lovely to connect with you today.
-     1.50s  user  발화 시작: Mm-hmm.
-     2.22s  user  발화 끝
-     3.70s  agent 발화 끝
-     4.90s  user  발화 시작: Hey Thir, good to meet you too. What time is it right now?
-     9.09s  <ret> 발화 (turn3 첫 프레임)
-     9.25s  agent 발화 시작: <ret> It is currently 10:17 AM in San Francisco. A great tim
-     9.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Los A
-     9.44s  user  발화 끝
-    13.36s  user  발화 시작: Yeah, yeah.
-    14.78s  user  발화 끝
-    15.68s  agent 발화 끝
-    16.53s  user  발화 시작: That's good to know. I was wondering, do you remember what I
-    20.84s  <ret> 발화 (turn6 첫 프레임)
-    21.08s  agent 발화 시작: <ret> Yes, I do. I recall you have a passion for vintage syn
-    21.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [2026-06-15] User is into vintage synth collecting.
-    21.25s  user  발화 끝
-    23.44s  user  발화 시작: Mm-hmm.
-    23.98s  user  발화 끝
-    25.57s  agent 발화 끝
-    25.69s  user  발화 시작: Oh yeah! That's right. I'm thinking of looking for some new 
-    30.62s  agent 발화 시작: That sounds fantastic! Immersing yourself in a hobby is a wo
-    30.79s  user  발화 끝
-    32.93s  user  발화 시작: Yeah.
-    33.57s  user  발화 끝
-    36.59s  agent 발화 끝
-    37.39s  user  발화 시작: Do you know of any good vintage synth shops around here?
-    40.61s  <ret> 발화 (turn12 첫 프레임)
-    40.85s  agent 발화 시작: <ret> I found Analog Renaissance in San Francisco. They spec
-    40.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Analog Renaissance is a vintage synthesizer shop in San 
-    40.95s  user  발화 끝
-    46.18s  user  발화 시작: …do they happen to have a website? I’d like to check their s
-    46.83s  agent 발화 끝
-    50.34s  agent 발화 시작: Yes, they do! It’s analogrenaissance.com. They also offer re
-    50.44s  user  발화 끝
-    53.57s  user  발화 시작: Uh-huh.
-    54.16s  user  발화 끝
-    55.45s  user  발화 시작: Perfect. And, uh, I think I mentioned I have an allergy?
-    55.51s  agent 발화 끝
-    59.37s  <ret> 발화 (turn17 첫 프레임)
-    59.45s  agent 발화 시작: <ret> You are allergic to penicillin, and I have that noted.
-    59.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: [2026-04-11] User is allergic to penicillin.
-    59.56s  user  발화 끝
-    64.59s  agent 발화 끝
-    64.65s  user  발화 시작: Right, thanks for remembering. That's helpful.
-    67.12s  agent 발화 시작: Emil.
-    67.25s  user  발화 끝
-    67.76s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Adam, I'm Mora!
+     1.49s  user  발화 시작: Hi Mora, it's nice to meet you too. What time is it right no
+     1.49s  agent 발화 끝
+     6.56s  <ret> 발화 (turn2 첫 프레임)
+     6.72s  agent 발화 시작: <ret> It is currently 10:17 AM in Paris. A perfect time to s
+     6.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Paris 
+     6.72s  user  발화 끝
+    11.57s  user  발화 시작: Yeah, yeah.
+    11.57s  agent 발화 끝
+    12.32s  user  발화 시작: That’s good to know. I was looking at used cars last month…
+    12.32s  user  발화 끝
+    16.80s  agent 발화 시작: Ah, yes! I recall you were researching hybrid models—
+    16.80s  user  발화 끝
+    20.16s  user  발화 시작: …do you know if there are any vegan restaurants nearby?
+    20.16s  agent 발화 끝
+    23.49s  <ret> 발화 (turn7 첫 프레임)
+    23.89s  agent 발화 시작: <ret> I found three vegan restaurants: Gentle Gourmet, VG Pâ
+    23.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) Found 3 vegan restaurants: Gentle Gourmet (4.5 stars, 12
+    23.89s  user  발화 끝
+    28.74s  agent 발화 끝

@@ -1,98 +1,80 @@
 v3_rag_24_ko src=nq style=v1
-SYSTEM: <system> 당신은 가족 및 관계에 대한 조언을 해주는 격려적이고 비판적이지 않은 조력자 소노입니다. <system>
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 웰니스 코치, 투나크스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "태빈",
+    "name": "태담",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 30s",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2025-10-29",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-10-12",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-09-20",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
-    },
-    {
-      "date": "2025-08-06",
+      "date": "2026-05-08",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-08-04",
+      "date": "2026-05-06",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-06-16",
+      "date": "2026-03-28",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-09-24",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-11",
-      "title": "Booked a dentist appointment",
+      "date": "2025-10-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-16",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 요즘 좀 힘든 일이 있어서…
-[  2.88s][moshi] 안녕하세요. 어떤 힘든 일이 있으신가요? 편하게 말씀해 주세요. 제가 곁에서 응원할게요.
-[  8.16s][user ] 가족과의 관계가 좀 안 좋은 것 같아요.
-[ 11.52s][moshi] 가족과의 관계 때문에 힘드시군요. 그런 문제는 정말 마음이 무거울 수 있어요.
-[ 16.81s][user ] 네, 엄마랑 자주 다투게 돼요.
-[ 19.21s][moshi] 어머님과 자주 다투신다고요. 어떤 점이 가장 힘드신가요?
-[ 22.57s][user ] «backchannel» 네.
-[ 23.05s][user ] 엄마는 항상 제 의견을 무시하는 것 같아요. ⟨ret@26.33s⟩
-[ 26.41s][moshi] ⟦⚡SPAN@26.41s: Parents often struggle to understand their children's perspectives, leading to frequent disagreements and hurt⟧ 부모님은 자녀의 관점을 이해하기 어려워하는 경우가 많아서, 자주 의견 충돌이 생기고 마음이 상할 수 있어요.
-[ 33.61s][user ] «backchannel» 네.
-[ 34.09s][user ] 맞아요, 그런 것 같아요.
-[ 36.01s][moshi] 혹시 어떤 상황에서 주로 다투게 되나요? 구체적으로 말씀해 주시면 더 도움이 될 것 같아요.
-[ 42.73s][user ] 제가 하고 싶은 일이 있는데, 엄마는 반대하시고…
-[ 46.10s][moshi] 하고 싶은 일이 있는데 어머님께서 반대하시는군요. 어떤 일인지 여쭤봐도 될까요?
-[ 50.90s][user ] «backchannel» 네.
-[ 51.38s][user ] 음… 저는 음악을 하고 싶은데, 엄마는 공부를 더 하라고 하세요.
-[ 56.18s][moshi] 음악을 하고 싶으신데 어머님은 공부를 더 하시길 바라시는군요.
-[ 60.02s][moshi] «interrupted» 어머님께서 걱정하시는 마음도 이해가 되지만 —
-[ 62.90s][user ] «interrupts_prev» …근데 엄마는 제가 음악으로는 성공할 수 없을 거라고 하세요. ⟨ret@67.14s⟩
-[ 67.22s][moshi] ⟦⚡SPAN@67.22s: Loyola University Chicago won the NCAA Division I Men's Basketball Tournament in 1963, defeating Cincinnati in⟧ 로욜라 시카고 대학교는 천구백육십삼년에 NCAA Division I 남자 농구 토너먼트에서 신시내티를 연장전 끝에 꺾고 우승했어요. 혹시 스포츠에 관심이 있으신가요?
-[ 76.35s][user ] 아, 네. 농구 좋아해요.
-[ 78.27s][moshi] 농구를 좋아하시는군요! 혹시 다른 스포츠도 즐겨 보시나요?
-[ 81.63s][user ] «backchannel» 네.
-[ 82.11s][user ] 가끔 야구도 봐요.
-[ 83.55s][moshi] 야구도 즐겨 보시는군요. 가족과 함께 야구 보러 가기도 하시나요?
-[ 87.87s][user ] 네, 가끔 같이 가요.
-[ 89.79s][moshi] 가족과 함께 야구를 보러 가시는군요. 함께 시간을 보내면서 관계가 조금 더 좋아지길 바라요.
+[  0.00s][user ] 요즘 너무 힘들어요. 뭔가 변화가 필요할 것 같아요.
+[  4.29s][moshi] 변화를 꿈꾸시는군요. 새로운 시작을 응원할게요. 어떤 변화를 생각하고 계신가요?
+[  9.12s][user ] «backchannel» 그래.
+[  9.66s][user ] 글쎄요… 뭐부터 시작해야 할지 모르겠어요.
+[ 12.34s][moshi] 막막하게 느껴지시는 마음, 충분히 이해해요. 작은 것부터 시작해보는 건 어떠세요?
+[ 17.71s][user ] 작은 거요? 예를 들면 뭘요?
+[ 20.39s][moshi] 새로운 취미를 시작하거나, 평소에 가보고 싶었던 곳을 방문해보는 것도 좋겠네요.
+[ 25.76s][user ] «backchannel» 응.
+[ 26.29s][user ] 아, 맞다. 위스콘신에서 술 마시는 나이가 언제 이십일세로 바뀌었는지 궁금하네요. ⟨ret@31.58s⟩
+[ 31.66s][moshi] ⟦⚡SPAN@31.66s: On September 1, 1986, Wisconsin raised its drinking age to 21, aligning with the National Minimum Drinking Age⟧ 위스콘신에서 술 마시는 나이가 이십일세로 바뀐 건, 천구백팔십사년 전국 최저 음주 연령법에 발맞춰 천구백팔십육년 구월 일일이에요. 변화를 위한 작은 질문이라니, 멋지네요.
+[ 42.93s][user ] «backchannel» 아.
+[ 43.47s][user ] 아, 그렇군요. 천구백팔십육년이네요.
+[ 45.08s][moshi] 맞아요. 새로운 사실을 알아가는 것도 변화의 시작이 될 수 있답니다.
+[ 50.44s][user ] 이번 주 토요일에 영화 보러 갈까요? 혹시 괜찮은 영화 있어요? ⟨ret@55.73s⟩
+[ 55.81s][moshi] ⟦⚡SPAN@55.81s: (tool result) Showing: "Inside Out 2" (PG) - 2:00 PM, 5:30 PM, 8:00 PM at CGV Gangnam, Seoul.⟧ 이번 주 토요일에 영화 보시는군요! 씨 지 브이 강남에서 '인사이드 아웃 이'가 오후 두시, 다섯시 삼십분, 여덟시에 상영되고 있어요. 즐거운 시간 보내시길 바랄게요.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {}}
+[ 68.15s][user ] «backchannel» 대박.
+[ 68.69s][user ] 오, 인사이드 아웃 이 좋네요.
+[ 71.37s][moshi] [happy] 좋은 선택이에요! 마음껏 웃고 즐기다 오세요.
+[ 75.13s][user ] 혹시 내일 날씨 ⟨ret@76.87s⟩ 어때요?
+[ 77.27s][moshi] ⟦⚡SPAN@77.27s: (tool result) Weather in Seoul: 28.5°C, humidity 65%, wind 4.2 km/h, partly cloudy.⟧ 내일 서울 날씨는 이십팔 점 오도, 습도는 육십오퍼센트, 바람은 시속 사 점 이킬로미터로, 부분적으로 흐릴 것으로 예상돼요. 따뜻한 햇살 아래 산책하기 좋은 날씨네요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}

@@ -4,59 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "도영",
+#     "name": "우담",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-10-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2025-08-05",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-28",
+#       "date": "2025-06-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-06-02",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-28",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-19",
+#       "date": "2025-07-22",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -66,41 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 요즘 여행 가고 싶은데, 어디가 좋을까요? | S2 오, 파스타! 맛있겠네요. | S3 숙소는… 호텔 말고 다른 곳도 있을까요? | S4 좋아요, 풀리아 한번 알아봐야겠어요.
+# EXAMINER(FDB-v2) 단계: S1 음… 요즘 뭔가 새로운 걸 시작하고 싶은데, 뭘 해야 할지 모 | S2 어, 맞아. 베트남 여행 가기로 했어. 근데 어디로 가면 좋을 | S3 하롱베이? 거긴 너무 관광객 많지 않아? 좀 조용한 곳 없을까 | S4 오, 한국 바비큐? 완전 좋아! 그럼 랑비엔에 있는 한국식 바
 
-     0.00s  agent 발화 시작: 안녕하세요, 도영님! 저는 제아온이라고 해요. 여행 계획이나 휴식에 대해 도와드리는 에이전트입니다.
-     7.50s  agent 발화 끝
-     7.71s  user  발화 시작: 어… 안녕하세요. 요즘 여행 가고 싶은데, 어디가 좋을까요?
-    12.45s  <ret> 발화 (turn2 첫 프레임)
-    12.57s  user  발화 끝
-    12.61s  agent 발화 시작: <ret> 혹시 전에 말씀해주셨던 글루텐 프리 식단에 맞춰서 추천해 드릴까요?
-    12.61s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.60s]: [2026-06-07] User is gluten-free.
-    18.09s  agent 발화 시작: 글루텐 프리 식단을 고려하면, 이탈리아 남부의 풀리아 지역을 추천해 드리고 싶어요.
-    18.21s  agent 발화 끝
-    23.91s  user  발화 시작: 풀리아요? 거긴 어떤 곳인데요?
-    24.15s  agent 발화 끝
-    26.02s  agent 발화 시작: 풀리아는 아름다운 해변과 역사적인 도시, 그리고 맛있는 글루텐 프리 파스타로 유명해요.
-    26.26s  user  발화 끝
-    32.72s  user  발화 시작: 오, 파스타! 맛있겠네요.
-    32.97s  agent 발화 끝
-    35.26s  user  발화 끝
-    35.38s  agent 발화 시작: 풀리아 지역의 레스토랑들은 글루텐 프리 옵션을 많이 제공하고, 신선한 재료를 사용해서 음식을 만들어요.
-    39.61s  user  발화 시작: 음.
-    40.24s  user  발화 끝
-    43.34s  agent 발화 시작: 게다가 풀리아는 다른 유명한 관광지에 비해 비교적 물가가 저렴해서, 부담 없이 여행을 즐길 수 있다는 장점도
-    43.39s  agent 발화 끝
-    55.03s  user  발화 시작: 숙소는… 호텔 말고 다른 곳도 있을까요?
-    55.07s  agent 발화 끝
-    58.73s  agent 발화 시작: 네, 풀리아에는 '마사(Massa)'라고 하는 전통 가옥을 개조한 숙소들이 많이 있어요. 현지인의 삶을 체험
-    58.73s  user  발화 끝
-    65.46s  user  발화 시작: 아.
-    66.23s  user  발화 끝
-    69.61s  user  발화 시작: 마사… 재밌겠네요.
-    69.67s  agent 발화 끝
-    71.45s  user  발화 끝
-    71.47s  agent 발화 시작: 마사는 풀리아의 독특한 건축 양식을 보여주는 곳이라, 사진 찍기에도 정말 좋아요.
-    74.92s  user  발화 시작: 응.
-    75.42s  user  발화 끝
-    77.37s  user  발화 시작: 좋아요, 풀리아 한번 알아봐야겠어요.
-    77.50s  agent 발화 끝
-    80.36s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 우담님. 저는 트호온이라고 해요.
+     2.93s  user  발화 시작: 음… 요즘 뭔가 새로운 걸 시작하고 싶은데, 뭘 해야 할지 모르겠어.
+     2.93s  agent 발화 끝
+     9.23s  <ret> 발화 (turn2 첫 프레임)
+     9.39s  agent 발화 시작: <ret> 새로운 시작을 위한 고민이시군요. 혹시 최근에 계획하고 계신 여행이 있으신가요?
+     9.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.87s]: [2025-10-12] User is planning a trip to Vietnam in December.
+     9.39s  user  발화 끝
+    15.26s  agent 발화 시작: 베트남 여행을 십이월에 계획하고 계시는군요. 여행 계획을 세우는 데 도움을 드릴 수 있을까요?
+    15.26s  agent 발화 끝
+    22.89s  user  발화 시작: 어.
+    22.89s  agent 발화 끝
+    23.47s  user  발화 시작: 어, 맞아. 베트남 여행 가기로 했어. 근데 어디로 가면 좋을지…
+    23.47s  user  발화 끝
+    29.10s  <ret> 발화 (turn6 첫 프레임)
+    29.34s  agent 발화 시작: <ret> 베트남 여행이라면 정말 멋지겠네요. 혹시 어떤 스타일의 여행을 선호하시나요? 액티비티를 좋아하시는
+    29.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.22s]: [2025-06-02] User is into rock climbing.
+    29.34s  user  발화 끝
+    37.56s  agent 발화 시작: 암벽 등반에 관심이 많으시군요. 베트남에는 멋진 암벽 등반 장소가 꽤 있답니다.
+    37.56s  agent 발화 끝
+    44.01s  user  발화 시작: 그래.
+    44.01s  agent 발화 끝
+    44.60s  agent 발화 시작: 네, 정말이에요. 하롱베이 근처에 암벽 등반을 즐길 수 있는 곳이 유명해요.
+    44.60s  user  발화 끝
+    51.05s  user  발화 시작: 응.
+    51.05s  agent 발화 끝
+    51.64s  user  발화 시작: 하롱베이? 거긴 너무 관광객 많지 않아? 좀 조용한 곳 없을까?
+    51.64s  user  발화 끝
+    57.35s  <ret> 발화 (turn12 첫 프레임)
+    57.51s  agent 발화 시작: <ret> 하롱베이는 관광객이 많은 편이죠. 좀 더 조용한 곳을 원하신다면, 랑비엔 지역을 추천해 드릴게요.
+    57.51s  ⚡SPAN 주입 [d'=1.84s / d_lead=7.63s]: {"location": "Lang Bien, Vietnam", "cuisine": "Korean BBQ", "outdoor_s
+    57.51s  user  발화 끝
+    65.14s  agent 발화 시작: 랑비엔 지역에서 야외 좌석이 있는 한국식 바비큐 식당 여섯 곳을 찾았습니다. 괜찮으시다면 자세한 정보를 알려
+    65.14s  agent 발화 끝
+    73.94s  user  발화 시작: 오, 한국 바비큐? 완전 좋아! 그럼 랑비엔에 있는 한국식 바비큐 식당 정보 좀 알려줘.
+    73.94s  agent 발화 끝
+    82.16s  agent 발화 시작: 한국식 바비큐를 좋아하시는군요. 랑비엔 지역에 있는 식당들을 살펴볼까요?
+    82.16s  user  발화 끝
+    86.85s  agent 발화 끝

@@ -4,105 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Grace",
+#     "name": "Bruno",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-05-23",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-12-23",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-22",
+#       "date": "2025-12-05",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-07-03",
 #       "category": "home",
-#       "text": "User's home address is 712 Elm Street."
+#       "text": "User's home address is 457 Birch Road."
 #     },
 #     {
-#       "date": "2025-09-03",
+#       "date": "2025-05-30",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-06-24",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-10",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-06-05",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-12",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you open the New York Times  | S2 Uh, good. And what’s the weather l | S3 Yes, actually. Can you find me res | S4 That sounds good.
 
-     0.00s  user  발화 시작: Could you open the New York Times using Firefox with a fifte
-     4.46s  <ret> 발화 (turn1 첫 프레임)
-     4.53s  user  발화 끝
-     4.54s  agent 발화 시작: <ret> I’ve opened the New York Times for you in Firefox. It 
-     4.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) {"status": "success", "url": "https://www.nytimes.com"}
-     8.52s  agent 발화 끝
-     9.24s  user  발화 시작: Uh, good. And what’s the weather like in Seoul right now?
-    11.82s  <ret> 발화 (turn3 첫 프레임)
-    12.06s  agent 발화 시작: <ret> It sounds like a lovely day in Seoul—the current tempe
-    12.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.43s]: (tool result) The current weather in Seoul is 26.0°C, with humidity at
-    12.20s  user  발화 끝
-    15.31s  user  발화 시작: Mhm.
-    15.76s  user  발화 끝
-    22.49s  agent 발화 끝
-    22.50s  agent 발화 시작: I’m glad to hear that sounds pleasant.
-    23.36s  user  발화 시작: Yeah.
-    23.72s  user  발화 끝
-    24.58s  agent 발화 끝
-    24.59s  user  발화 시작: Yes, actually. Can you find me restaurants near the Lotte Wo
-    29.06s  <ret> 발화 (turn8 첫 프레임)
-    29.14s  agent 발화 시작: <ret> Vatos Urban Tacos, located at 300 Olympic-ro, Songpa-g
-    29.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) [Restaurant Name: Vatos Urban Tacos, Address: 300 Olympi
-    29.27s  user  발화 끝
-    36.47s  user  발화 시작: Wow.
-    37.10s  user  발화 끝
-    38.69s  agent 발화 끝
-    38.81s  user  발화 시작: That sounds good.
-    39.81s  user  발화 끝
+     0.00s  user  발화 시작: I’m feeling a bit stressed about work lately. Any good drama
+     4.83s  <ret> 발화 (turn1 첫 프레임)
+     4.91s  agent 발화 시작: <ret> At Landmark Chez Artiste in Denver, Colorado, “All of 
+     4.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.41s]: (tool result) Showing drama movies at Landmark Chez Artiste Theatre in
+     4.91s  user  발화 끝
+    13.31s  user  발화 시작: Right.
+    13.31s  agent 발화 끝
+    13.66s  agent 발화 시작: It sounds like you could use a distraction. Perhaps a movie 
+    13.66s  user  발화 끝
+    19.97s  user  발화 시작: Actually, let’s get tickets for “All of Us Strangers” at sev
+    19.97s  agent 발화 끝
+    23.75s  <ret> 발화 (turn5 첫 프레임)
+    23.83s  agent 발화 시작: <ret> Wonderful. I’ve secured two tickets for “All of Us Str
+    23.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Confirmed: 2 tickets for “All of Us Strangers” at Landma
+    23.83s  user  발화 끝
+    32.59s  agent 발화 시작: That should be a lovely evening. I’m glad I could help take 
+    32.59s  agent 발화 끝
+    38.19s  agent 발화 끝

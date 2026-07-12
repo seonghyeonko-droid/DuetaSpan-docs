@@ -1,56 +1,56 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Kal, a upbeat and supportive supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Giaen, a kind and steady personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Morgan",
+    "name": "Lukas",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-05-26",
-      "category": "home",
-      "text": "User's home address is 41 Oak Avenue."
-    },
-    {
-      "date": "2026-02-24",
+      "date": "2026-06-22",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-02-09",
+      "date": "2026-04-11",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-03-19",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-01-15",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
+      "date": "2025-11-08",
+      "category": "home",
+      "text": "User's home address is 65 Pine Court."
     },
     {
-      "date": "2025-08-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-11-03",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-10-07",
+      "category": "work",
+      "text": "User works as a nurse."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-14",
+      "date": "2026-04-19",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -58,15 +58,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-11-04",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-06",
+      "date": "2026-03-26",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -77,14 +69,41 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Kal, do you know when the World Cup was last held in the ⟨ret@3.97s⟩ UK?
-[  4.20s][moshi] ⟦⚡SPAN@4.21s: The United Kingdom hosted the FIFA World Cup tournament once, in the year 1966.⟧ Well, that’s a great question! The UK last hosted the FIFA World Cup way back in 1966. It was a really exciting time for football fans!
-[ 13.74s][user ] Oh, ⟨ret@14.20s⟩ right.
-[ 14.59s][moshi] ⟦⚡SPAN IRRELEVANT@14.60s: The average high temperature in Reykjavik, Iceland in February is -1.8°C, with an average low of -4.3°C.⟧ It’s amazing how long ago that was, isn’t it? That tournament really put English football on the map.
-[ 20.05s][moshi] Speaking of big events, are you working towards any personal goals right now? — I find focusing on something can really help with motivation.
-[ 22.73s][user ] «backchannel» Yeah.
-[ 28.41s][user ] I am, actually. I’m studying for my exams.
-[ 32.05s][moshi] That's fantastic! Exams can be tough, but you've got this. Remember to break down your studying into smaller chunks.
-[ 35.03s][user ] «backchannel» Uh-huh.
-[ 39.54s][user ] That’s a good idea, thanks.
-[ 41.49s][moshi] You’re very welcome! I’m always here to help you stay on track and feel confident about your studies.
+[  0.00s][user ] Hi Giaen, how are you doing today?
+[  2.69s][moshi] I’m doing very well, thank you for asking. It’s a lovely day for spending time with family, don’t you think?
+[ 10.37s][user ] That sounds nice. Uh, who pays for ⟨ret@13.20s⟩ Medicaid?
+[ 13.44s][moshi] ⟦⚡SPAN@13.44s: States and the federal government share the costs of Medicaid, with states contributing at least half of the f⟧ The costs of Medicaid are shared by states and the federal government, with states contributing at least half of the funding.
+[ 21.50s][user ] «backchannel» Yeah.
+[ 21.89s][user ] Oh, okay. And what about childcare costs these days?
+[ 25.34s][moshi] Childcare costs can certainly be a worry for families. Are you looking for information on average costs in a specific area?
+[ 33.41s][user ] Just generally, how much does it cost on ⟨ret@36.54s⟩ average?
+[ 36.86s][moshi] ⟦⚡SPAN@36.86s: The average annual cost of center-based infant care is $10,810, according to Child Care Aware of America in 20⟧ According to Child Care Aware of America in 2023, the average annual cost of center-based infant care is $10,810.
+[ 44.16s][user ] Wow, that's… a lot.
+[ 45.69s][moshi] It is a significant expense, yes. Many families find it helpful to explore all available options and resources.
+[ 52.60s][user ] «backchannel» Uh-huh.
+[ 52.99s][user ] Do you know about summer camps?
+[ 55.29s][moshi] Summer camps can be a wonderful experience for children! I can help you find some if you’d like.
+[ 62.20s][user ] Yeah, could you search for camps near ⟨ret@64.88s⟩ me?
+[ 65.28s][moshi] ⟦⚡SPAN@65.28s: (tool result) YMCA of the USA offers a wide variety of summer camps across the country; ymca.net. Summer camps⟧ YMCA of the USA offers a wide variety of summer camps across the country, available at ymca.net.
+      CALL: {"function": "search", "arguments": {"query": "summer camps near me"}}
+[ 71.80s][user ] Oh, the YMCA. That’s good.
+[ 73.72s][moshi] They often have programs tailored to different age groups and interests, which can be a really positive thing.
+[ 80.64s][user ] What about, um, activities we can do at home?
+[ 84.09s][moshi] There are so many fun and engaging activities you can do at home with your children! What ages are we talking about?
+[ 92.54s][user ] «backchannel» Yeah.
+[ 92.92s][user ] My daughter is six. ⟨ret@94.38s⟩
+[ 94.46s][moshi] ⟦⚡SPAN IRRELEVANT@94.46s: The current price of Bitcoin is $62,843.78 USD, as of July 10, 2026, 2:45 PM EST.⟧ At six, she’s at a wonderful age for imaginative play and learning. Have you considered building a fort?
+[101.37s][moshi] Building a fort can foster creativity and problem-solving skills – and it’s just plain fun!
+[107.13s][user ] «backchannel» Yeah.
+[107.51s][user ] That's a good idea! Is there anything educational we could do?
+[111.74s][moshi] You could try simple science experiments, like making a volcano with baking soda and vinegar.
+[117.50s][user ] «backchannel» Yeah, totally.
+[118.26s][user ] [laugh] That sounds messy!
+[119.80s][moshi] It can be, but that’s part of the fun! Learning through hands-on experiences often sticks with children.
+[126.33s][user ] «backchannel» Okay.
+[126.71s][user ] What's the weather like in Seattle? ⟨ret@128.94s⟩
+[129.02s][moshi] ⟦⚡SPAN@129.02s: (tool result) Seattle, WA: 21.1°C, humidity 68%, wind 3.1 km/h, clear skies.⟧ In Seattle, Washington, it’s currently 21.1°C, with humidity at 68% and a wind speed of 3.1 km/h, and clear skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
+[136.70s][user ] «backchannel» Wow.
+[137.08s][user ] Oh, that’s nice.
+[138.23s][moshi] A pleasant day for a picnic, perhaps? It’s lovely when the weather cooperates with family plans.

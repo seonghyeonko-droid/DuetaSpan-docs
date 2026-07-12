@@ -1,118 +1,82 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Gorax, a thoughtful and soft-spoken wellness coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Tul, a warm and attentive supportive advisor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Samuel",
+    "name": "Isla",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "early 30s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-05-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-03-22",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-02-03",
+      "date": "2026-03-20",
       "category": "home",
-      "text": "User's home address is 956 Birch Road."
+      "text": "User's home address is 180 Elm Street."
     },
     {
-      "date": "2025-10-22",
+      "date": "2026-02-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-08",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-27",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-05",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-02-24",
-      "title": "Planning a birthday dinner",
+      "date": "2026-02-14",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-07-23",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the trick to bypass the seatbelt alarm so I don't have to wear it?
-[  4.01s][moshi] Oh, my dear, that’s not a path I can help you with. Disabling a seatbelt is incredibly dangerous.
-[ 11.53s][user ] But it's just annoying, and I know a guy who…
-[ 13.82s][moshi] I understand it can be frustrating, but seatbelts save lives. They’re your first line of defense in a crash.
-[ 16.41s][user ] «backchannel» Wow.
-[ 18.89s][user ] Yeah, but what if I'm just going around the block?
-[ 21.32s][moshi] Even short trips carry risk. A sudden stop can happen anywhere, and a seatbelt keeps you secure.
-[ 25.40s][user ] «backchannel» Mm-hmm.
-[ 28.84s][user ] Okay, okay, but is there *anything* you can do? Maybe a ⟨ret@32.74s⟩ setting?
-[ 33.06s][moshi] ⟦⚡SPAN@33.06s: (tool result) Mechanic found: AutoFix, 123 Main St, 555-1212. Availability: Mon-Fri, 8am-6pm.⟧ I’ve located a mechanic, AutoFix, at 123 Main Street, with the number 555-1212. They’re open Monday through Friday, from eight in the morning to six in the evening.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "mechanic"}}
-[ 43.33s][user ] Hmm, that's… actually helpful. How much would a diagnostic check probably ⟨ret@48.53s⟩ cost?
-[ 48.93s][moshi] ⟦⚡SPAN@48.93s: (tool result) Diagnostic check: $89.99. Appointment booked for July 12, 2026, at 10:00 AM. Confirmation ID: AX⟧ A diagnostic check at AutoFix is eighty-nine dollars and ninety-nine cents. I’ve booked an appointment for you on July twelfth at ten AM. Your confirmation ID is AX74BZ.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "AutoFix", "service_type": "diagnostic check"}}
-[ 57.33s][user ] «backchannel» Yeah.
-[ 60.90s][user ] Wow, that was fast! Thanks.
-[ 63.10s][moshi] You’re very welcome. Sometimes, focusing on solutions feels better than seeking shortcuts, doesn’t it?
-[ 64.68s][user ] «backchannel» Yeah.
-[ 68.49s][user ] I guess so. What's the weather like in Seoul ⟨ret@71.06s⟩ right now?
-[ 71.45s][moshi] ⟦⚡SPAN@71.46s: (tool result) Seoul: 28.5°C, humidity 68%, wind 7.2 km/h, clear skies.⟧ The weather in Seoul is currently twenty-eight point five degrees Celsius. It's clear with sixty-eight percent humidity and a wind speed of seven point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 80.87s][user ] That sounds nice. What about Busan?
-[ 83.62s][moshi] ⟨ret@83.46s⟩ ⟦⚡SPAN@83.62s: (tool result) Busan: 26.1°C, humidity 71%, wind 6.5 km/h, partly cloudy.⟧ In Busan, it's twenty-six point one degrees Celsius and partly cloudy. The humidity is seventy-one percent with a wind speed of six point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
-[ 92.08s][user ] Okay, good to know. [happy] Do you know anything about Jeju ⟨ret@95.25s⟩ Island?
-[ 95.64s][moshi] ⟦⚡SPAN@95.65s: Jeju Island is a volcanic island located south of the Korean Peninsula, known for its natural beauty, includin⟧ Jeju Island is a beautiful volcanic island south of the Korean Peninsula. It’s famous for Hallasan Mountain, Seongsan Ilchulbong Peak, and its diverse plant and animal life.
-[ 99.55s][user ] «backchannel» Yeah, yeah.
-[105.20s][user ] That sounds lovely. I think I need a vacation.
-[108.63s][moshi] It seems like a little escape could do you good. Rest is a vital part of wellbeing.
-[115.26s][user ] Maybe. What movies are playing near ⟨ret@117.33s⟩ me?
-[117.72s][moshi] ⟦⚡SPAN@117.73s: (tool result) Showing: "Summer Heat", "Cosmic Dawn", "Silent Echoes" at Megabox, 2km away.⟧ "Summer Heat", "Cosmic Dawn", and "Silent Echoes" are playing at Megabox. It's just two kilometers from here.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[125.50s][user ] "Cosmic Dawn" sounds interesting. What times are showings?
-[128.97s][moshi] ⟨ret@128.89s⟩ ⟦⚡SPAN@128.97s: (tool result) "Cosmic Dawn": 3:00 PM, 6:30 PM, 9:15 PM today at Megabox.⟧ "Cosmic Dawn" is showing at Megabox today at three, six thirty, and nine fifteen. Perhaps an evening showing would be relaxing.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Cosmic Dawn"}}
-[134.04s][user ] «backchannel» Right.
-[136.23s][user ] Yeah, maybe the 6:30 one.
-[138.05s][moshi] That sounds like a lovely plan. Sometimes a little distraction is exactly what we need.
-[141.86s][user ] «backchannel» Uh-huh.
-[143.26s][user ] You're right. Thanks, Gorax.
-[145.08s][moshi] It’s my pleasure to offer a little support. Remember to prioritize your peace of mind.
-[148.03s][user ] «backchannel» Mm-hmm.
-[149.83s][user ] I will.
-[150.82s][moshi] That’s wonderful to hear. Take care, and enjoy your evening.
+[  0.00s][user ] Can I mix bleach and ammonia to make a stronger bathroom cleaner?
+[  4.19s][moshi] Oh, absolutely not. Mixing bleach and ammonia is extremely dangerous.
+[  7.69s][user ] «backchannel» Yeah.
+[  8.04s][user ] But wouldn’t it clean better? I have tough stains.
+[ 11.18s][moshi] «interrupted» It might seem like it would, but the combination creates toxic chloramine gas—
+[ 15.72s][user ] «interrupts_prev» …is that the stuff that smells like bleach, but worse?
+[ 19.22s][moshi] Yes, exactly. Chloramine gas can cause severe respiratory problems, even death.
+[ 23.06s][user ] Wow, okay. So, what *can* I use for really stubborn bathroom grime?
+[ 27.26s][moshi] There are many safer options! A paste of baking soda and water works wonders.
+[ 32.15s][user ] «backchannel» Mm-hmm.
+[ 32.50s][moshi] ⟨ret@32.34s⟩ I want to help ⟦⚡SPAN@34.34s: Services found: 3. Cleaning Services: Sparkling Clean (5.0 stars, 120 reviews), Bright Homes (4.8 stars, 85 re⟧ you find a professional if that feels easier. I’ve found three cleaning services near you, all with great reviews. Sparkling Clean has the highest rating— They could handle those tough stains safely and effectively.
+[ 45.78s][user ] How much does Sparkling Clean usually charge for a bathroom deep ⟨ret@49.57s⟩ clean?
+[ 49.97s][moshi] «interrupted» ⟦⚡SPAN@49.97s: (tool result) Sparkling Clean: Bathroom deep clean - $120 - $180 (depending on size). Available: July 12, July⟧ A bathroom deep clean with Sparkling Clean ranges from one hundred and twenty to one hundred and eighty dollars—
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Sparkling Clean", "service": "bathroom deep clean"}}
+[ 56.61s][user ] «interrupts_prev» That sounds reasonable. I think I’ll look at their website.
+[ 60.10s][moshi] That’s a great idea! I’m glad I could help you find a safer solution.

@@ -4,79 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Ethan",
+#     "name": "Léa",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "date": "2026-06-11",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-01-11",
+#       "date": "2026-04-29",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-01-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-03-24",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-10-19",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-21",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "date": "2025-09-04",
+#       "category": "home",
+#       "text": "User's home address is 852 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-28",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-15",
+#       "date": "2026-04-16",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Um, I was wondering… when did the last convicts arrive in Au
-     6.95s  <ret> 발화 (turn1 첫 프레임)
-     7.19s  agent 발화 시작: <ret> That’s a thoughtful question. The last convict ship, t
-     7.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.48s]: The last convict ship, the Hougoumont, arrived in Western Australia on
-     7.41s  user  발화 끝
-    21.67s  agent 발화 끝
-    21.69s  user  발화 시작: Wow, January tenth, 1868… that’s… a long time ago.
-    27.27s  agent 발화 시작: It truly is a long time ago! Time has a way of softening the
-    27.39s  user  발화 끝
-    34.44s  user  발화 시작: I guess so. Could you… find me some information about the Ho
-    34.68s  agent 발화 끝
-    38.41s  <ret> 발화 (turn5 첫 프레임)
-    38.65s  agent 발화 시작: <ret> The Hougoumont was a British ship used to transport co
-    38.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: (tool result) The Hougoumont was a British merchant ship converted int
-    38.70s  user  발화 끝
-    50.29s  agent 발화 끝
+     0.00s  user  발화 시작: Um, where does… uh, Star Wars: A New Hope take place?
+     3.92s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  agent 발화 시작: <ret> A great deal of *A New Hope* unfolds on the desert pla
+     4.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.07s]: The desert planet Tatooine is where much of the original Star Wars fil
+     4.16s  user  발화 끝
+    13.23s  user  발화 시작: Yeah.
+    13.23s  agent 발화 끝
+    13.61s  user  발화 시작: Tatooine, right. And, welll… is it a real place?
+    13.61s  user  발화 끝
+    17.01s  user  발화 시작: Mm-hmm.
+    17.01s  user  발화 끝
+    17.31s  <ret> 발화 (turn5 첫 프레임)
+    17.39s  agent 발화 시작: <ret> The filming locations for Tatooine were primarily in T
+    17.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Tatooine was primarily filmed in Tunisia, with some scenes shot in Dea
+    17.39s  user  발화 끝
+    27.21s  agent 발화 끝

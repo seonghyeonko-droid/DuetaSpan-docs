@@ -1,78 +1,85 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Munan, a kind and steady personal guide who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Naen, a upbeat and supportive life coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Mason",
+    "name": "Camille",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "late 30s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
-      "category": "home",
-      "text": "User's home address is 279 Cedar Lane."
-    },
-    {
-      "date": "2026-03-23",
+      "date": "2026-02-25",
       "category": "diet",
       "text": "User is gluten-free."
     },
     {
-      "date": "2025-12-19",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-01-29",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-09-11",
+      "date": "2025-11-02",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-05",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-07-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-02",
-      "title": "Booked a dentist appointment",
+      "date": "2025-11-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-05",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the frequency of a DC ⟨ret@2.10s⟩ voltage?
-[  2.50s][moshi] ⟦⚡SPAN@2.50s: Direct current (DC) is an electric current flowing in one direction, and therefore has a frequency of zero.⟧ Direct current, as it’s defined, has a frequency of zero.
-[  3.62s][user ] «backchannel» Yeah.
-[  6.43s][user ] Zero? That sounds… weird.
-[  8.91s][moshi] «interrupted» It can seem a little counterintuitive, yes. But DC flows steadily—
-[ 14.10s][user ] …So, does that mean it doesn't really *have* a wave…
-[ 18.42s][user ] …like AC?
-[ 19.36s][moshi] That’s right. Alternating current, or AC, oscillates, creating a wave, while DC maintains a constant voltage.
-[ 23.01s][user ] «backchannel» Mm-hmm.
-[ 26.92s][moshi] I’m glad I could explain that for you. It’s a key difference when working with electrical systems.
-[ 32.28s][user ] What about if it’s pulsing DC? Does *that* have a ⟨ret@35.43s⟩ frequency?
-[ 35.75s][moshi] ⟦⚡SPAN@35.75s: Pulsating direct current (PDC) is a direct current which varies in magnitude over time, and thus possesses a f⟧ Pulsating direct current, or PDC, *does* have a frequency, because its magnitude varies over time—it's not perfectly steady.
+[  0.00s][user ] Hey Naen, who plays Davy Jones in Pirates of the ⟨ret@3.64s⟩ Caribbean?
+[  4.04s][moshi] ⟦⚡SPAN@4.04s: Bill Nighy initially turned down the role of Davy Jones in Pirates of the Caribbean: Dead Man's Chest, but eve⟧ That would be Bill Nighy, actually—he initially hesitated, but Gore Verbinski convinced him to take on the role.
+[ 10.65s][user ] Oh, really? That’s surprising.
+[ 12.11s][moshi] It is quite a twist! Sometimes the most memorable performances almost don't happen, doesn’t it?
+[ 17.62s][user ] Um, what about Jack Sparrow? Who plays him? ⟨ret@20.40s⟩
+[ 20.56s][moshi] ⟦⚡SPAN@20.56s: Johnny Depp played Captain Jack Sparrow in all five films of the Pirates of the Caribbean franchise, from The ⟧ Johnny Depp brilliantly plays Captain Jack Sparrow in all five Pirates of the Caribbean films, starting in 2003.
+[ 27.17s][moshi] It truly is! He really made the character his own, didn’t he? A very iconic role.
+[ 33.04s][user ] «backchannel» Uh-huh.
+[ 33.41s][user ] «to_other» Did you remember to take the recycling out?
+[ 36.34s][user ] Oh, sorry, what were you saying?
+[ 38.55s][moshi] «interrupted» I was just saying Johnny Depp really made Captain Jack Sparrow iconic—
+[ 42.95s][user ] «interrupts_prev» Right, right. Okay. Can you find me some info on Keira Knightley? ⟨ret@47.28s⟩
+[ 47.36s][moshi] ⟦⚡SPAN@47.36s: Keira Knightley is an English actress who rose to prominence portraying Elizabeth Swann in the Pirates of the ⟧ Keira Knightley is a fantastic English actress, best known for playing Elizabeth Swann in Pirates of the Caribbean.
+[ 53.96s][user ] «backchannel» Yeah.
+[ 54.33s][user ] What other movies has she been in? ⟨ret@56.74s⟩
+[ 56.90s][moshi] ⟦⚡SPAN@56.90s: Keira Knightley has starred in numerous films, including Pride & Prejudice (2005), Atonement (2007), and Begin⟧ She’s also starred in films like Pride & Prejudice, Atonement, and Begin Again—a very diverse filmography.
+[ 62.78s][user ] That’s a good range. Could you tell me the weather in London right now? ⟨ret@67.75s⟩
+[ 67.91s][moshi] ⟦⚡SPAN@67.91s: (tool result) Current conditions in London are 21.3°C, humidity 68%, wind 8.2 km/h, with partly cloudy skies.⟧ The current weather in London is 21.3 degrees Celsius, with 68% humidity and partly cloudy skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[ 73.79s][user ] Sounds pleasant. Can you…
+[ 75.26s][user ] …search for restaurants near ⟨ret@76.85s⟩ me?
+[ 77.09s][moshi] ⟦⚡SPAN@77.09s: (no information found)⟧ I’m sorry, I don’t have your location to search for nearby restaurants. I need permission to access that.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 83.70s][user ] «backchannel» Yeah.
+[ 84.07s][user ] Oh, right. I forgot. Never mind the restaurants then.
+[ 87.37s][moshi] That's alright! We can always come back to that later when you're ready to share your location.
+[ 93.61s][user ] «backchannel» Yeah.
+[ 93.98s][user ] What time is it in ⟨ret@95.86s⟩ Tokyo?
+[ 96.18s][moshi] ⟦⚡SPAN@96.18s: (tool result) It is Friday, July 10, 2026 at 10:42 PM in Asia/Tokyo right now.⟧ It’s currently 10:42 PM in Tokyo, on Friday, July 10th, 2026. Quite a bit ahead of us!
+      CALL: {"function": "get_time", "arguments": {"location": "Asia/Tokyo"}}
+[102.42s][user ] Wow, late already. Okay, thanks Naen.
+[104.63s][moshi] You’re very welcome! Remember, even small steps forward are still progress. Don't be too hard on yourself.

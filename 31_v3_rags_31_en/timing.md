@@ -4,69 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "William",
+#     "name": "Anna",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
+#     "nationality": "German",
+#     "gender": "female",
 #     "age_range": "late 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-04",
+#       "date": "2025-11-11",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-10-24",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-12-20",
+#       "date": "2025-07-08",
+#       "category": "home",
+#       "text": "User's home address is 238 Birch Road."
+#     },
+#     {
+#       "date": "2025-06-18",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-10-26",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is planning a trip to Lisbon in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-09",
-#       "title": "Researching a used car",
+#       "date": "2026-05-31",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-03",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-18",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who was the first woman judge of the High Court in India?
-     3.29s  <ret> 발화 (turn1 첫 프레임)
-     3.37s  user  발화 끝
-     3.52s  agent 발화 시작: <ret> It was Justice Anna Chandy, appointed to the Kerala Hi
-     3.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: Justice Anna Chandy was the first woman judge in India, appointed to t
-    13.07s  agent 발화 끝
+     0.00s  user  발화 시작: Where exactly are the Earth’s tectonic plates located?
+     2.69s  <ret> 발화 (turn1 첫 프레임)
+     2.93s  agent 발화 시작: <ret> Those plates are located within the Earth’s lithospher
+     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: The Earth’s lithosphere, which includes the crust and the upper part o
+     2.93s  user  발화 끝
+    13.18s  agent 발화 끝

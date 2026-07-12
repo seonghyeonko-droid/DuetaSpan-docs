@@ -1,46 +1,51 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Frana, a practical and reassuring counselor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Dean, a upbeat and supportive supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Charlie",
+    "name": "Maya",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-26",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
+      "date": "2026-05-27",
+      "category": "work",
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-07-17",
+      "date": "2026-05-10",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-03-31",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2026-02-06",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-08",
       "category": "hobby",
       "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-06-11",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-06-03",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-09",
+      "date": "2026-04-03",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -48,7 +53,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-25",
+      "date": "2025-09-05",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -56,36 +61,36 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-26",
-      "title": "Setting up a home network",
+      "date": "2025-08-11",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] In which year CE did Muhammad get ⟨ret@2.55s⟩ sick?
-[  2.70s][moshi] ⟦⚡SPAN@2.71s: (no information found)⟧ It’s understandable to wonder about such details, but unfortunately, the exact year Muhammad fell ill isn’t definitively recorded for us.
-[  5.47s][user ] «backchannel» Yeah.
-[ 11.53s][user ] That’s a shame. Do you know when he died, ⟨ret@13.75s⟩ though?
-[ 13.91s][moshi] ⟦⚡SPAN@13.91s: Muhammad died on Monday, 8 June 632 CE, in Medina.⟧ Muhammad passed away on Monday, June eighth, six thirty-two CE, in Medina. It must be difficult when historical records are incomplete.
-[ 23.31s][user ] Six thirty-two… so he wasn't very old, was he?
-[ 27.15s][moshi] It’s true, his life was relatively short, though impactful. He left behind a lasting legacy.
-[ 33.55s][user ] What was the cause of his illness, if it’s not known when he got sick?
-[ 37.93s][moshi] «interrupted» ⟨ret@37.77s⟩ ⟦⚡SPAN@37.93s: (no information found)⟧ Again, a precise cause remains unknown to historians—it’s a detail lost to time, I'm afraid. —
-[ 43.50s][user ] «interrupts_prev» …But was it poison, do you think? I read something about that.
-[ 47.15s][moshi] That’s a question that’s been debated for centuries, actually. Some accounts suggest poisoning, but there's no conclusive evidence.
-[ 51.09s][user ] «backchannel» Yeah.
-[ 55.20s][user ] Interesting. What about his family? Did he have many ⟨ret@58.93s⟩ children?
-[ 59.17s][moshi] ⟦⚡SPAN@59.17s: Muhammad had at least seven children, including six sons and four daughters.⟧ He did, in fact, have at least seven children—six sons and four daughters. It's a large family by many standards.
-[ 67.21s][user ] Wow, that’s a lot.
-[ 68.82s][moshi] Yes, it is. Raising a family alongside leading a religious and political movement must have presented many challenges. It’s a lot to balance.
-[ 78.24s][user ] I can imagine! Was one of his daughters particularly well-known?
-[ 82.38s][moshi] ⟨ret@82.22s⟩ ⟦⚡SPAN@82.38s: Fatima, Muhammad's daughter, is highly revered in Islam as a role model for women.⟧ Fatima, his daughter, is deeply revered in Islam as a significant role model, particularly for women. She’s often seen as an example of piety.
-[ 91.57s][user ] That’s good to know. I’m thinking about a career change, actually…
-[ 95.92s][moshi] Oh, that’s a big step! It’s very brave of you to consider such a change. I’m happy to talk through some options with you, if you’d like.
-[105.61s][user ] Yes, please. I feel really stuck in my current job.
-[108.90s][moshi] Feeling stuck is a common experience, and it's good you're acknowledging it. What aspects of your current job are causing you the most dissatisfaction?
+[  0.00s][user ] What is one type of configuration in which a capacitor doesn’t have its connecting leads organized?
+[  6.29s][moshi] That’s a really specific question, and I’m not finding any information about capacitor lead configurations right now.
+[ 12.96s][user ] «backchannel» Yeah, totally.
+[ 13.75s][user ] Oh, okay. Well…
+[ 14.93s][user ] …what time is it in ⟨ret@17.04s⟩ Seoul?
+[ 17.28s][moshi] ⟦⚡SPAN@17.28s: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul right now.⟧ It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul right now. That’s late afternoon over there!
+      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
+[ 24.36s][user ] Hmm.
+[ 24.75s][moshi] Is there anything I can help you with regarding time zones or planning a call with someone in Seoul?
+[ 32.21s][user ] No, that’s alright. I’m just curious about the weather in ⟨ret@36.21s⟩ London.
+[ 36.53s][moshi] ⟦⚡SPAN@36.53s: (tool result) The weather in London is 19.0°C, humidity 62%, wind 8.2 km/h.⟧ The weather in London is 19.0°C, humidity 62%, and the wind is moving at 8.2 kilometers per hour. Sounds quite pleasant, actually!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[ 45.18s][user ] «backchannel» Wow.
+[ 45.57s][moshi] It really is! A lovely day for a walk in one of London’s parks, perhaps?
+[ 51.46s][user ] Maybe. Can you find me some Italian restaurants ⟨ret@54.60s⟩ nearby?
+[ 55.00s][moshi] ⟦⚡SPAN@55.00s: (tool result) Bella Italia - Covent Garden, 4.5 stars, 0.8 km away.⟧ I found Bella Italia in Covent Garden, which has 4.5 stars and is 0.8 kilometers away. Would you like to see more options?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
+[ 64.03s][user ] «backchannel» Exactly.
+[ 64.42s][user ] No, that sounds good.
+[ 66.00s][moshi] Great! Sometimes, a simple and well-reviewed choice is all you need.
+[ 70.32s][user ] Thanks, Dean.
+[ 71.10s][moshi] You’re very welcome. It’s what I’m here for – helping you navigate those little life decisions.

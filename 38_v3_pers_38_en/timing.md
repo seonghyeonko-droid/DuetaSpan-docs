@@ -4,76 +4,125 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Morgan",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-06-15",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-03-20",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-03-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2025-12-18",
 #       "category": "home",
-#       "text": "User's home address is 598 Elm Street."
+#       "text": "User's home address is 685 Elm Street."
 #     },
 #     {
-#       "date": "2025-09-07",
+#       "date": "2025-11-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-05-29",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-07-21",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-05",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-24",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "title": "Researching a used car",
+#       "date": "2026-01-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Oh, uh, Teal? That’s… a different  | S2 That… actually makes a lot of sens | S3 We’ve read a couple of books, but  | S4 Like what kind of small steps? I f
 
-     0.00s  agent 발화 시작: Hello Morgan, it’s lovely to connect with you. I'm Elaen.
-     3.70s  agent 발화 끝
-     3.96s  user  발화 시작: I’m just feeling completely overwhelmed lately, to be honest
-     7.28s  agent 발화 시작: It’s understandable to feel that way, Morgan. Overwhelm is s
-     7.34s  user  발화 끝
-    10.11s  user  발화 시작: Yeah.
-    10.66s  user  발화 끝
-    16.14s  agent 발화 시작: Often, when things feel chaotic, it’s helpful to identify on
-    16.18s  agent 발화 끝
-    25.42s  user  발화 시작: But there are *so* many things! I don't even know where to b
-    26.15s  agent 발화 끝
-    29.72s  user  발화 끝
-    29.90s  agent 발화 시작: That’s a very valid feeling. It sounds like you're caught in
-    39.60s  user  발화 시작: I guess... maybe. I just feel like I'm constantly playing ca
-    39.68s  agent 발화 끝
-    43.77s  user  발화 끝
-    43.85s  agent 발화 시작: It's okay to feel like you’re playing catch-up, Morgan. It's
-    53.21s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Samuel, it’s wonderful to connect with you. I'm Teal.
+     3.92s  user  발화 시작: Yeah, yeah.
+     3.92s  agent 발화 끝
+     4.70s  user  발화 시작: Oh, uh, Teal? That’s… a different name for an assistant. Wha
+     4.70s  user  발화 끝
+    10.96s  agent 발화 시작: I specialize in helping parents build stronger connections w
+    10.96s  user  발화 끝
+    21.14s  user  발화 시작: Yeah.
+    21.14s  agent 발화 끝
+    21.53s  user  발화 시작: Well, my little one, Leo, is starting preschool next month, 
+    21.53s  user  발화 끝
+    27.01s  agent 발화 시작: That’s completely understandable, Samuel! It's a big transit
+    27.01s  user  발화 끝
+    36.02s  user  발화 시작: It’s just… I feel like I should be handling this better. Lik
+    36.02s  agent 발화 끝
+    43.46s  agent 발화 시작: It sounds like you’re putting a lot of pressure on yourself,
+    43.46s  user  발화 끝
+    54.81s  user  발화 시작: That… actually makes a lot of sense. I guess I’m worried abo
+    54.81s  agent 발화 끝
+    61.08s  agent 발화 시작: It’s natural to worry about his happiness, and it’s wonderfu
+    61.08s  user  발화 끝
+    72.04s  user  발화 시작: I don't know! He's usually so attached to me. I’m afraid he'
+    72.04s  agent 발화 끝
+    79.48s  agent 발화 시작: That’s a very common fear, Samuel. Have you talked to Leo ab
+    79.48s  user  발화 끝
+    88.48s  user  발화 시작: Yeah.
+    88.48s  agent 발화 끝
+    88.87s  user  발화 시작: We’ve read a couple of books, but he doesn’t really seem to…
+    88.87s  user  발화 끝
+    96.70s  agent 발화 시작: That’s perfectly normal for his age. He’s processing it in h
+    96.70s  user  발화 끝
+   105.32s  user  발화 시작: Uh-huh.
+   105.32s  agent 발화 끝
+   105.71s  user  발화 시작: Maybe. He *does* love playing with other kids. It's just the
+   105.71s  user  발화 끝
+   110.80s  agent 발화 시작: It’s all about building his confidence in his ability to cop
+   110.80s  user  발화 끝
+   119.02s  user  발화 시작: Like what kind of small steps? I feel… lost.
+   119.02s  agent 발화 끝
+   122.54s  agent 발화 시작: Perhaps practice short separations now? A quick trip to the 
+   122.54s  user  발화 끝
+   134.68s  user  발화 시작: Uh-huh.
+   134.68s  agent 발화 끝
+   135.07s  user  발화 시작: [sigh] That sounds… doable, actually. I think I can manage t
+   135.07s  user  발화 끝
+   140.16s  agent 발화 시작: You’re very welcome, Samuel. Remember, you’re doing a great 
+   140.16s  user  발화 끝
+   150.73s  agent 발화 끝

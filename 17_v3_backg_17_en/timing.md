@@ -4,92 +4,123 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Mason",
+#     "name": "Camille",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "home",
-#       "text": "User's home address is 279 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-03-23",
+#       "date": "2026-02-25",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-01-29",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-09-11",
+#       "date": "2025-11-02",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-05",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-07-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-11-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-05",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the frequency of a DC volt | S2 …So, does that mean it doesn't rea | S3 …like AC? | S4 What about if it’s pulsing DC? Doe
+# EXAMINER(FDB-v2) 단계: S1 Hey Naen, who plays Davy Jones in  | S2 Oh, sorry, what were you saying? | S3 That’s a good range. Could you tel | S4 Oh, right. I forgot. Never mind th
 
-     0.00s  user  발화 시작: What is the frequency of a DC voltage?
-     2.10s  <ret> 발화 (turn1 첫 프레임)
-     2.50s  agent 발화 시작: <ret> Direct current, as it’s defined, has a frequency of ze
-     2.50s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.75s]: Direct current (DC) is an electric current flowing in one direction, a
-     2.54s  user  발화 끝
-     3.62s  user  발화 시작: Yeah.
-     4.25s  user  발화 끝
-     6.25s  agent 발화 끝
-     6.43s  user  발화 시작: Zero? That sounds… weird.
-     8.91s  agent 발화 시작: It can seem a little counterintuitive, yes. But DC flows ste
-     8.97s  user  발화 끝
-    13.54s  agent 발화 끝
-    14.10s  user  발화 시작: …So, does that mean it doesn't really *have* a wave…
-    17.06s  user  발화 끝
-    18.42s  user  발화 시작: …like AC?
-    19.36s  agent 발화 시작: That’s right. Alternating current, or AC, oscillates, creati
-    19.52s  user  발화 끝
-    23.01s  user  발화 시작: Mm-hmm.
-    23.45s  user  발화 끝
-    26.91s  agent 발화 끝
-    26.92s  agent 발화 시작: I’m glad I could explain that for you. It’s a key difference
-    32.25s  agent 발화 끝
-    32.28s  user  발화 시작: What about if it’s pulsing DC? Does *that* have a frequency?
-    35.43s  <ret> 발화 (turn11 첫 프레임)
-    35.75s  agent 발화 시작: <ret> Pulsating direct current, or PDC, *does* have a freque
-    35.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: Pulsating direct current (PDC) is a direct current which varies in mag
-    35.93s  user  발화 끝
-    45.16s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Naen, who plays Davy Jones in Pirates of the Caribbean?
+     3.64s  <ret> 발화 (turn1 첫 프레임)
+     4.04s  agent 발화 시작: <ret> That would be Bill Nighy, actually—he initially hesita
+     4.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Bill Nighy initially turned down the role of Davy Jones in Pirates of 
+     4.04s  user  발화 끝
+    10.65s  user  발화 시작: Oh, really? That’s surprising.
+    10.65s  agent 발화 끝
+    12.11s  agent 발화 시작: It is quite a twist! Sometimes the most memorable performanc
+    12.11s  user  발화 끝
+    17.62s  user  발화 시작: Um, what about Jack Sparrow? Who plays him?
+    17.62s  agent 발화 끝
+    20.40s  <ret> 발화 (turn5 첫 프레임)
+    20.56s  agent 발화 시작: <ret> Johnny Depp brilliantly plays Captain Jack Sparrow in 
+    20.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Johnny Depp played Captain Jack Sparrow in all five films of the Pirat
+    20.56s  user  발화 끝
+    27.17s  agent 발화 시작: It truly is! He really made the character his own, didn’t he
+    27.17s  agent 발화 끝
+    33.04s  user  발화 시작: Uh-huh.
+    33.04s  agent 발화 끝
+    33.41s  user  발화 시작: Did you remember to take the recycling out?
+    33.41s  user  발화 끝
+    36.34s  user  발화 시작: Oh, sorry, what were you saying?
+    36.34s  user  발화 끝
+    38.55s  agent 발화 시작: I was just saying Johnny Depp really made Captain Jack Sparr
+    38.55s  user  발화 끝
+    42.95s  user  발화 시작: Right, right. Okay. Can you find me some info on Keira Knigh
+    42.95s  agent 발화 끝
+    47.28s  <ret> 발화 (turn12 첫 프레임)
+    47.36s  agent 발화 시작: <ret> Keira Knightley is a fantastic English actress, best k
+    47.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Keira Knightley is an English actress who rose to prominence portrayin
+    47.36s  user  발화 끝
+    53.96s  user  발화 시작: Yeah.
+    53.96s  agent 발화 끝
+    54.33s  user  발화 시작: What other movies has she been in?
+    54.33s  user  발화 끝
+    56.74s  <ret> 발화 (turn15 첫 프레임)
+    56.90s  agent 발화 시작: <ret> She’s also starred in films like Pride & Prejudice, At
+    56.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: Keira Knightley has starred in numerous films, including Pride & Preju
+    56.90s  user  발화 끝
+    62.78s  user  발화 시작: That’s a good range. Could you tell me the weather in London
+    62.78s  agent 발화 끝
+    67.75s  <ret> 발화 (turn17 첫 프레임)
+    67.91s  agent 발화 시작: <ret> The current weather in London is 21.3 degrees Celsius,
+    67.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: (tool result) Current conditions in London are 21.3°C, humidity 68%, w
+    67.91s  user  발화 끝
+    73.79s  user  발화 시작: Sounds pleasant. Can you…
+    73.79s  agent 발화 끝
+    75.26s  user  발화 시작: …search for restaurants near me?
+    75.26s  user  발화 끝
+    76.85s  <ret> 발화 (turn20 첫 프레임)
+    77.09s  agent 발화 시작: <ret> I’m sorry, I don’t have your location to search for ne
+    77.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: (no information found)
+    77.09s  user  발화 끝
+    83.70s  user  발화 시작: Yeah.
+    83.70s  agent 발화 끝
+    84.07s  user  발화 시작: Oh, right. I forgot. Never mind the restaurants then.
+    84.07s  user  발화 끝
+    87.37s  agent 발화 시작: That's alright! We can always come back to that later when y
+    87.37s  user  발화 끝
+    93.61s  user  발화 시작: Yeah.
+    93.61s  agent 발화 끝
+    93.98s  user  발화 시작: What time is it in Tokyo?
+    93.98s  user  발화 끝
+    95.86s  <ret> 발화 (turn26 첫 프레임)
+    96.18s  agent 발화 시작: <ret> It’s currently 10:42 PM in Tokyo, on Friday, July 10th
+    96.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) It is Friday, July 10, 2026 at 10:42 PM in Asia/Tokyo ri
+    96.18s  user  발화 끝
+   102.42s  user  발화 시작: Wow, late already. Okay, thanks Naen.
+   102.42s  agent 발화 끝
+   104.63s  agent 발화 시작: You’re very welcome! Remember, even small steps forward are 
+   104.63s  user  발화 끝
+   110.87s  agent 발화 끝

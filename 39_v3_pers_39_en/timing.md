@@ -4,103 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Hugo",
+#     "name": "Noa",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-06-13",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-03-30",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-23",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-02-25",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2025-07-17",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2025-12-06",
+#       "category": "home",
+#       "text": "User's home address is 961 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-02",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-17",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Is that… is that a counselor thing | S2 I was thinking maybe… Italy? I’ve  | S3 …But is it even realistic with my  | S4 Hmm, maybe. I’m just… overwhelmed 
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi Harina. That’s… a lot, actu | S2 I did a media degree, but the indu | S3 That’s… a relief to hear. I was wo | S4 Yeah, that sounds… good. But how d
 
-     0.00s  agent 발화 시작: Guten Tag, Hugo. I'm Joras.
-     2.26s  agent 발화 끝
-     2.73s  user  발화 시작: Is that… is that a counselor thing? I’m just a bit stressed 
-     7.41s  user  발화 끝
-     7.46s  agent 발화 시작: It is, actually. I chose it hoping it conveys a sense of cal
-    18.92s  agent 발화 끝
-    18.97s  user  발화 시작: Uh, welll… I think I just need a break. A real one. Somewher
-    23.56s  agent 발화 시작: A change of scenery can be incredibly helpful. Do you have a
-    23.83s  user  발화 끝
-    35.76s  agent 발화 끝
-    37.22s  user  발화 시작: I was thinking maybe… Italy? I’ve never been. —
-    40.19s  user  발화 시작: …But is it even realistic with my vacation days?
-    40.32s  user  발화 끝
-    43.02s  agent 발화 시작: Calculating your available time, it appears you have five da
-    43.15s  user  발화 끝
-    48.65s  user  발화 시작: Yeah, yeah.
-    50.03s  user  발화 끝
-    50.59s  agent 발화 시작: That does limit a trip to Italy somewhat, but it's certainly
-    50.71s  agent 발화 끝
-    56.28s  user  발화 시작: Right.
-    56.77s  user  발화 끝
-    58.76s  user  발화 시작: Hmm, maybe. I’m just… overwhelmed with choices, I guess. It'
-    58.79s  agent 발화 끝
-    65.75s  user  발화 끝
-    65.87s  agent 발화 시작: That’s perfectly understandable, Hugo. Feeling overwhelmed i
-    82.25s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Noa, it’s lovely to meet you. I’m Harina, and I’m here
+     8.13s  user  발화 시작: Right.
+     8.13s  agent 발화 끝
+     8.52s  user  발화 시작: Oh, hi Harina. That’s… a lot, actually. I’m just feeling rea
+     8.52s  user  발화 끝
+    15.10s  agent 발화 시작: It’s completely understandable to feel lost, Noa. Many peopl
+    15.10s  user  발화 끝
+    23.63s  user  발화 시작: Well, I finished uni last year, and I still haven’t found an
+    23.63s  agent 발화 끝
+    30.21s  agent 발화 시작: That’s a common feeling after graduation. It takes time to f
+    30.21s  user  발화 끝
+    41.05s  user  발화 시작: I’ve looked at a few things, but nothing really clicks. Ever
+    41.05s  agent 발화 끝
+    46.86s  agent 발화 시작: Pointlessness is a heavy feeling. It sounds like you might b
+    46.86s  user  발화 끝
+    57.32s  user  발화 시작: Right.
+    57.32s  agent 발화 끝
+    57.71s  user  발화 시작: I did a media degree, but the industry seems so competitive,
+    57.71s  user  발화 끝
+    63.91s  agent 발화 시작: The media industry can be challenging, yes. It’s good you re
+    63.91s  user  발화 끝
+    73.98s  user  발화 시작: I think it’s—
+    73.98s  agent 발화 끝
+    75.14s  user  발화 시작: …do you think it’s okay to just… take a break and work a ran
+    75.14s  user  발화 끝
+    82.11s  agent 발화 시작: Noa. Taking a break to recharge and gain different experienc
+    82.11s  user  발화 끝
+    91.02s  user  발화 시작: That’s… a relief to hear. I was worried I’d be falling behin
+    91.02s  agent 발화 끝
+    95.66s  agent 발화 시작: Falling behind is a feeling, not a fact. Everyone’s journey 
+    95.66s  user  발화 끝
+   104.18s  user  발화 시작: Maybe. I just don't want to end up stuck in something I hate
+   104.18s  agent 발화 끝
+   109.22s  agent 발화 시작: It’s wise to be mindful of that. What would a “hate” job loo
+   109.22s  user  발화 끝
+   118.13s  user  발화 시작: Yeah.
+   118.13s  agent 발화 끝
+   118.52s  user  발화 시작: Probably something really rigid, with no creativity. And def
+   118.52s  user  발화 끝
+   125.49s  agent 발화 시작: So, a role that allows for independent work and creative exp
+   125.49s  user  발화 끝
+   133.23s  user  발화 시작: Yeah, that sounds… good. But how do I even *find* something 
+   133.23s  agent 발화 끝
+   138.27s  agent 발화 시작: We can explore resources for identifying roles that align wi
+   138.27s  user  발화 끝
+   146.79s  user  발화 시작: Okay. That actually sounds helpful. Thanks, Harina.
+   146.79s  agent 발화 끝
+   149.50s  user  발화 끝

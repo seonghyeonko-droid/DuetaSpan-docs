@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Emma",
+#     "name": "Sam",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,78 +12,80 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "category": "home",
-#       "text": "User's home address is 418 Elm Street."
-#     },
-#     {
-#       "date": "2026-04-30",
+#       "date": "2026-05-30",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-03-31",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2025-08-06",
+#       "date": "2026-03-24",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-09-28",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "home",
+#       "text": "User's home address is 505 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-23",
+#       "date": "2025-10-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been trying to make more frie | S2 Hmm. Maybe. But what if I just don | S3 …Wait, what were you just saying a | S4 That’s…a really specific example.
+# EXAMINER(FDB-v2) 단계: S1 Hi, I was wondering who directed t | S2 Actually, before that, what's the  | S3 Sounds nice… | S4 …but a bit warm. Thanks, Friia.
 
-     0.00s  user  발화 시작: I’ve been trying to make more friends, and it’s just…hard.
-     3.27s  agent 발화 시작: It absolutely can be, and you're not alone in feeling that w
-     3.37s  user  발화 끝
-     5.39s  user  발화 시작: Mm-hmm.
-     5.98s  user  발화 끝
-    10.04s  user  발화 시작: Easy for you to say! I feel like everyone already *has* thei
-    10.17s  agent 발화 끝
-    14.39s  user  발화 끝
-    14.46s  agent 발화 시작: It’s a common feeling, truly. Often, we overestimate how set
-    16.71s  user  발화 시작: Mm-hmm.
-    17.35s  user  발화 끝
-    19.67s  user  발화 시작: Hmm. Maybe. But what if I just don’t know where to even *sta
-    19.79s  agent 발화 끝
-    23.81s  <ret> 발화 (turn7 첫 프레임)
-    23.97s  agent 발화 시작: <ret> When thinking about where to start, consider your inte
-    23.97s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.91s]: Camassia and Chelone are both native flowering plants of North America
-    24.16s  user  발화 끝
-    26.25s  user  발화 시작: …Wait, what were you just saying about flowers?
-    26.88s  agent 발화 끝
-    28.63s  agent 발화 시작: I was drawing an analogy to finding friends; look where your
-    28.74s  user  발화 끝
-    31.80s  user  발화 시작: Mm-hmm.
-    32.29s  user  발화 끝
-    33.54s  agent 발화 시작: It’s like Camassia and Chelone, both native to North America
-    33.62s  agent 발화 끝
-    39.33s  agent 발화 끝
-    39.58s  user  발화 시작: That’s…a really specific example.
-    41.74s  agent 발화 시작: Sometimes a little specificity can spark ideas, right? What 
-    41.93s  user  발화 끝
-    46.70s  agent 발화 끝
+     0.00s  user  발화 시작: Hi, I was wondering who directed the new Benji movie?
+     3.16s  <ret> 발화 (turn1 첫 프레임)
+     3.32s  agent 발화 시작: <ret> Well, that would be Brandon Camp — he wrote, co-produc
+     3.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: Brandon Camp wrote, co-produced, and directed the upcoming American dr
+     3.32s  user  발화 끝
+    11.30s  user  발화 시작: Hmm, Brandon Camp… I haven’t heard of him.
+    11.30s  agent 발화 끝
+    13.95s  agent 발화 시작: [curious] That’s alright! Many talented people work behind t
+    13.95s  user  발화 끝
+    21.60s  user  발화 시작: Actually, before that, what's the weather like in Seoul righ
+    21.60s  agent 발화 끝
+    25.01s  <ret> 발화 (turn5 첫 프레임)
+    25.25s  agent 발화 시작: <ret> It’s currently 26.0°C in Seoul, with 76% humidity and 
+    25.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.98s]: (tool result) Current conditions in Seoul are 26.0°C, humidity 76%, wi
+    25.25s  user  발화 끝
+    32.23s  user  발화 시작: Yeah, yeah.
+    32.23s  agent 발화 끝
+    32.89s  user  발화 시작: Sounds nice…
+    32.89s  user  발화 끝
+    33.56s  user  발화 시작: …but a bit warm. Thanks, Friia.
+    33.56s  user  발화 끝
+    35.55s  agent 발화 시작: You’re very welcome! I’m glad I could help. Staying comforta
+    35.55s  user  발화 끝
+    41.53s  agent 발화 끝

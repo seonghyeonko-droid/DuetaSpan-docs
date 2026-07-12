@@ -1,89 +1,110 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Zios, a upbeat and supportive counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Araia, a calm and patient wellness coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Alex",
+    "name": "Sky",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "French",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2025-10-21",
+      "date": "2026-04-28",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegan."
     },
     {
-      "date": "2025-10-05",
+      "date": "2026-04-12",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2026-03-10",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-10-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-14",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-30",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a good family movie to watch tonight.
-[  3.10s][moshi] Finding a movie everyone enjoys is so important.
-[  5.04s][user ] «backchannel» Yeah.
-[  5.79s][user ] Something animated, maybe? My kids love cartoons.
-[  9.22s][moshi] Animated films are a wonderful choice for family night!
-[ 10.79s][user ] «backchannel» Yeah.
-[ 12.24s][user ] Can you search for animated movies playing near me?
-[ 15.86s][moshi] ⟨ret@15.78s⟩ ⟦⚡SPAN@15.86s: (tool result) "Showing 'Elemental', 'Spider-Man: Across the Spider-Verse', and 'Ruby Gillman, Teenage Kraken' ⟧ There are several animated movies playing near you—'Elemental', 'Spider-Man: Across the Spider-Verse', and 'Ruby Gillman, Teenage Kraken' at AMC Boston Common 19.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "animated", "location": "current"}}
-[ 26.20s][user ] What are the showtimes for ⟨ret@28.17s⟩ 'Spider-Man'?
-[ 28.32s][moshi] ⟦⚡SPAN@28.33s: (tool result) "Showtimes for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19: 6:30 PM, 9:15 PM."⟧ Showtimes for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19 are 6:30 PM and 9:15 PM.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Spider-Man: Across the Spider-Verse", "location": "AMC Boston Common 19"}}
-[ 33.18s][user ] «backchannel» Really?
-[ 35.34s][user ] Hmm, 6:30 might work. Could we buy tickets for ⟨ret@38.67s⟩ that?
-[ 39.07s][moshi] ⟦⚡SPAN@39.07s: (tool result) "Confirmed: 4 tickets for 'Spider-Man: Across the Spider-Verse' at AMC Boston Common 19, 6:30 PM⟧ Wonderful! Four tickets for ‘Spider-Man: Across the Spider-Verse’ at 6:30 PM are confirmed—your confirmation ID is ZX92AB.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Spider-Man: Across the Spider-Verse", "time": "6:30 PM", "location": "AMC Boston Common 19", "quantity": "4"}}
-[ 43.77s][user ] «backchannel» Wow.
-[ 46.93s][user ] Perfect! That's fantastic.
-[ 49.14s][moshi] It's so nice to have everything planned in advance—less stress for everyone!
-[ 54.06s][user ] Do they have any good snacks there? —
-[ 55.81s][user ] …Is there parking nearby, though? That's ⟨ret@58.49s⟩ important.
-[ 58.89s][moshi] ⟦⚡SPAN@58.89s: Parking at AMC Boston Common 19: Several garages nearby, rates from $20-$40 for 2 hours.⟧ There are several garages near AMC Boston Common 19, with rates ranging from twenty to forty dollars for two hours.
-[ 65.74s][user ] Okay, good to know. That's reasonable.
-[ 67.99s][moshi] Knowing the parking situation ahead of time can make things much smoother.
-[ 69.55s][user ] «backchannel» Yeah.
-[ 71.37s][moshi] A relaxed arrival sets a positive tone for the whole evening, don't you think?
-[ 72.82s][user ] «backchannel» Yeah.
-[ 74.75s][user ] Definitely. We need to leave around 5:45 then, to be safe.
-[ 78.78s][moshi] That sounds like a very sensible plan. Leaving with plenty of time is always wise.
-[ 80.47s][user ] «backchannel» Yeah.
-[ 84.19s][user ] Is the weather going to be nice ⟨ret@86.10s⟩ tonight?
-[ 86.40s][moshi] ⟦⚡SPAN@86.42s: (tool result) "Boston, MA: 22.2°C, humidity 65%, wind 8.9 km/h, clear skies."⟧ The weather in Boston tonight is looking lovely—22.2 degrees Celsius, with clear skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Boston"}}
-[ 90.40s][user ] «backchannel» Uh-huh.
-[ 93.23s][user ] Great! That’s perfect for a walk after the movie.
-[ 96.29s][moshi] A post-movie walk sounds delightful! It’s a wonderful way to extend the family time.
+[  0.00s][user ] I need to find a good hotel in Seoul for next ⟨ret@3.69s⟩ weekend.
+[  4.09s][moshi] ⟦⚡SPAN@4.09s: Seoul has many hotels, ranging from budget-friendly to luxurious, with average prices between ₩150,000 and ₩35⟧ Seoul offers a wide range of hotels, generally costing between one hundred fifty thousand and three hundred fifty thousand won per night.
+[ 11.58s][user ] «backchannel» Right.
+[ 11.92s][user ] Uh, can you search for hotels with a pool? ⟨ret@14.90s⟩
+[ 14.98s][moshi] ⟦⚡SPAN@14.98s: (tool result) {"hotels": [{"name": "The Shilla Seoul", "address": "249 Dongho-ro, Jangchung-dong, Jung-gu, Seo⟧ I can refine the search to include hotels that have a swimming pool.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Seoul", "amenities": "pool"}}
+[ 19.41s][moshi] I found The Shilla Seoul, located at 249 Dongho-ro, with a price of three hundred twenty thousand won and a rating of four point six. It also has a spa and a gym.
+[ 30.64s][user ] That sounds nice. What’s the weather like there next ⟨ret@33.65s⟩ Saturday?
+[ 34.05s][moshi] ⟦⚡SPAN@34.05s: (tool result) {"temperature": 28.5, "humidity": 65, "wind speed": 7.2, "condition": "partly cloudy"}⟧ Next Saturday, July eleventh in Seoul, the weather will be partly cloudy with a temperature of 28.5 degrees Celsius. The humidity will be sixty-five percent, and the wind speed, seven point two kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-11"}}
+[ 45.97s][user ] Hmm…
+[ 46.31s][moshi] Is there anything else I can help you with regarding your trip?
+[ 50.39s][user ] Actually, can you book a reservation there for two nights? ⟨ret@53.64s⟩
+[ 53.80s][moshi] ⟦⚡SPAN@53.80s: (tool result) {"confirmation id": "SHL20260711-2", "check in date": "2026-07-11", "check out date": "2026-07-1⟧ Your reservation at The Shilla Seoul is confirmed for two nights, checking in on July eleventh and checking out on July thirteenth. The total price is six hundred forty thousand won, and your confirmation ID is SHL20260711-2.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "The Shilla Seoul", "check_in_date": "2026-07-11", "check_out_date": "2026-07-13", "number_of_guests": "2"}}
+[ 66.40s][user ] Perfect!
+[ 66.74s][moshi] [happy] Wonderful! I’m glad I could help with that.
+[ 69.80s][user ] «backchannel» Yeah.
+[ 70.14s][user ] I also need to set an alarm for seven am on ⟨ret@73.83s⟩ Saturday.
+[ 74.23s][moshi] ⟦⚡SPAN@74.23s: (tool result) {"alarm id": "ALM20260711-7", "time": "07:00", "date": "2026-07-11", "status": "active"}⟧ I’ve set an alarm for seven AM on Saturday, July eleventh, with the ID ALM20260711-7. It is now active.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "07:00", "date": "2026-07-11"}}
+[ 80.70s][user ] «backchannel» Exactly.
+[ 81.04s][moshi] Is there anything else on your mind this morning?
+[ 84.10s][user ] «backchannel» Yeah.
+[ 84.44s][user ] I’m trying to remember if I made a note of my flight number.
+[ 88.87s][moshi] Let's see if I can find a record of that for you. Do you recall when you might have mentioned it?
+[ 96.02s][user ] I think it was last week, maybe around the tenth? ⟨ret@99.26s⟩
+[ 99.42s][moshi] ⟦⚡SPAN@99.42s: [2026-07-07] I have a flight to Jeju on Korean Air flight KE123.⟧ On July seventh, you noted you have a flight to Jeju on Korean Air flight KE123.
+[104.87s][user ] «backchannel» Yeah.
+[105.21s][user ] Oh yes, that's it! Thank you.
+[107.26s][moshi] You're very welcome. It's easy to forget details when planning a trip.
+[111.34s][user ] «backchannel» Mm-hmm.
+[111.68s][user ] I need to find a nice restaurant near the hotel. ⟨ret@114.93s⟩
+[115.09s][moshi] ⟦⚡SPAN@115.09s: (tool result) {"restaurants": [{"name": "La Cuisine", "cuisine": "French", "rating": 4.5, "distance": 0.5}, {"⟧ I can search for restaurants near The Shilla Seoul.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "The Shilla Seoul"}}
+[118.15s][moshi] I found La Cuisine, a French restaurant, rated four point five, just point five kilometers away. Myeongdong Kyoja, Korean cuisine, is rated four point two and is one point two kilometers away.
+[129.05s][user ] «backchannel» Yeah.
+[129.39s][user ] La Cuisine sounds lovely. Can you make a reservation there for Saturday evening?
+[133.81s][moshi] I can certainly try. What time would you like the reservation for?
+[137.90s][user ] Seven thirty PM.
+[138.92s][moshi] And for how many people?
+[140.62s][user ] Two. ⟨ret@140.88s⟩
+[140.96s][moshi] ⟦⚡SPAN@140.96s: (tool result) {"confirmation id": "LC20260711-730", "restaurant name": "La Cuisine", "date": "2026-07-11", "ti⟧ Your reservation at La Cuisine is confirmed for Saturday, July eleventh, at seven thirty PM for two people. The confirmation ID is LC20260711-730.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Cuisine", "date": "2026-07-11", "time": "19:30", "number_of_guests": "2"}}
+[148.80s][user ] That’s fantastic!
+[149.48s][moshi] [surprised] Excellent. It sounds like your trip is coming together nicely.
+[153.22s][user ] «backchannel» Mm-hmm.
+[153.56s][user ] It is, thank you. I think that’s all for now.
+[156.97s][moshi] You're most welcome. Remember to prioritize rest during your travels; it’s key to enjoying everything.

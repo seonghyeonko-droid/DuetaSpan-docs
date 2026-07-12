@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "서희",
+#     "name": "진연",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,79 +12,67 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2026-05-30",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-05-06",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-03-31",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-08-06",
+#       "date": "2026-03-24",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-09-28",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-25",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-12",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 프라 씨, 카마시아하고 첼론이라는 꽃이 둘 다 북미 자생종이에 | S2 잠깐만요, 첼론이 플로리다에도 있어요? | S3 …플로리다는 좀 의외인데요. 첼론은 습지에서 자라는 꽃이잖아요 | S4 아, 파란색 꽃이 피는군요. 보기 예쁠 것 같아요.
 
-     0.00s  user  발화 시작: 프라 씨, 카마시아하고 첼론이라는 꽃이 둘 다 북미 자생종이에요?
-     4.25s  user  발화 끝
-     4.43s  agent 발화 시작: 북미 자생종인지 궁금하시군요. 두 꽃 모두 북미가 원산지입니다.
-     5.86s  user  발화 시작: 음.
-     6.36s  user  발화 끝
-     9.15s  agent 발화 끝
-    10.16s  user  발화 시작: 음, 그렇군요. 근데 카마시아는 좀 더 흔하게 보이던데, 첼론은 잘 안 보이는 것 같아요.
-    15.21s  <ret> 발화 (turn4 첫 프레임)
-    15.44s  user  발화 끝
-    15.60s  agent 발화 시작: <ret> 카마시아는 브리티시컬럼비아부터 캘리포니아, 그리고 로키산맥 동쪽까지 서부 북미에 널리 분포하고, 
-    15.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: Camassia quamash is widespread across western North America, from Brit
-    24.12s  user  발화 시작: 음.
-    24.47s  user  발화 끝
-    28.54s  user  발화 시작: 잠깐만요, 첼론이 플로리다에도 있어요?
-    28.54s  agent 발화 끝
-    31.26s  user  발화 끝
-    31.28s  agent 발화 시작: 첼론이 플로리다에도 분포한다고 말씀드렸는데—
-    33.66s  user  발화 시작: …플로리다는 좀 의외인데요. 첼론은 습지에서 자라는 꽃이잖아요.
-    34.42s  agent 발화 끝
-    37.85s  <ret> 발화 (turn9 첫 프레임)
-    37.86s  user  발화 끝
-    38.01s  agent 발화 시작: <ret> 맞아요, 첼론은 습지에서 자라는 꽃입니다. 플로리다의 습한 지역에서 발견되죠.
-    38.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: Chelone glabra, commonly known as turtlehead, is a perennial plant tha
-    43.55s  agent 발화 시작: 첼론, 흔히 거북머리라고도 불리는 이 식물은 습지, 늪, 개울가, 연못과 같은 습한 서식지에서 자라는 다년생
-    43.70s  agent 발화 끝
-    47.42s  user  발화 시작: 어.
-    47.82s  user  발화 끝
-    52.50s  agent 발화 끝
-    52.50s  user  발화 시작: 거북머리라니, 재밌는 이름이네요. 카마시아는 어떤 종류의 꽃이에요?
-    56.65s  <ret> 발화 (turn13 첫 프레임)
-    57.04s  user  발화 끝
-    57.04s  agent 발화 시작: <ret> 카마시아는 풀과 같은 잎과 푸른색에서 보라색 꽃이 피는 다년생 구근 식물입니다.
-    57.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: Camassia quamash is a perennial bulbous herb with grass-like leaves an
-    62.83s  agent 발화 끝
-    63.64s  user  발화 시작: 아, 파란색 꽃이 피는군요. 보기 예쁠 것 같아요.
-    66.73s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 벤지 영화에 대해 아세요? 최근에 나온 영화 같은데.
+     5.01s  <ret> 발화 (turn1 첫 프레임)
+     5.17s  agent 발화 시작: <ret> 벤지는 브랜든 캠프가 쓰고 연출하고 공동 제작한 미국 드라마 영화예요. 천구백칠십사년 영화의 리부
+     5.17s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.47s]: Brandon Camp wrote, co-produced and directed the upcoming American dra
+     5.17s  user  발화 끝
+    12.64s  user  발화 시작: 아, 브랜든 캠프군요. 근데 그 영화가 언제 개봉하는지는 아세요?
+    12.64s  agent 발화 끝
+    17.66s  <ret> 발화 (turn3 첫 프레임)
+    17.82s  agent 발화 시작: <ret> 벤지는 이천십팔년 삼월 이십삼일에 개봉했어요. 가족, 모험, 드라마 장르입니다.
+    17.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.17s]: (tool result) Benji (2018) - Drama, Family, Adventure - Release date: 
+    17.82s  user  발화 끝
+    22.99s  agent 발화 끝

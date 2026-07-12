@@ -1,76 +1,94 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Lial, a practical and reassuring personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Arunaia, a upbeat and supportive personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Louis",
+    "name": "Liam",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "home",
-      "text": "User's home address is 728 Elm Street."
+      "date": "2026-05-11",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-05-10",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-04-11",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2026-03-19",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-11-21",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-07-24",
       "category": "work",
       "text": "User works as a software engineer."
-    },
-    {
-      "date": "2026-04-17",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
-    },
-    {
-      "date": "2025-06-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-18",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-10-14",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-19",
+      "date": "2026-02-02",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Oh, um, I was just wondering… who plays Professor Snape in the Harry Potter films?
-[  6.56s][moshi] ⟨ret@6.33s⟩ ⟦⚡SPAN@6.57s: Alan Sidney Patrick Rickman was an English actor and director known for playing Severus Snape in the Harry Pot⟧ That would be Alan Sidney Patrick Rickman, he was well-known for playing Severus Snape. It’s a very memorable role, isn’t it?
-[  9.31s][user ] «backchannel» Yeah.
-[ 15.21s][user ] Yes, it really is! Actually, what time is it right now?
-[ 19.82s][moshi] ⟨ret@19.59s⟩ ⟦⚡SPAN@19.83s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now. Finding a moment of calm can be difficult with a busy schedule.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 30.30s][user ] That's right. Thank you, Lial.
+[  0.00s][user ] Hi Arunaia, do you know who sings that song, “I’m Getting Closer to My Home”? It’s been stuck in my head all ⟨ret@8.67s⟩ day.
+[  8.91s][moshi] «interrupted» ⟦⚡SPAN@8.91s: Jacques Dutronc released the song “Et moi, entre deux câlins” in 1964, which translates to “And me, between tw⟧ That song is actually called “Et moi, entre deux câlins”, and it was released in nineteen sixty-four by Jacques Dutronc—
+[ 16.66s][user ] «interrupts_prev» …Is he French? I always thought it sounded French!
+[ 20.15s][moshi] Yes, he is! Jacques Dutronc is a very famous French singer, songwriter, and actor. He’s quite iconic, really.
+[ 27.12s][user ] «backchannel» Yeah.
+[ 27.51s][user ] Oh, that makes sense. I’m trying to introduce my son to more music, maybe something similar.
+[ 33.71s][moshi] That’s lovely! Exploring music together is a wonderful way to bond. What kind of music does your son usually enjoy?
+[ 41.46s][user ] «backchannel» Yeah.
+[ 41.85s][user ] He likes upbeat stuff, a bit retro, like The Beatles. ⟨ret@45.56s⟩
+[ 45.72s][moshi] ⟦⚡SPAN@45.72s: Serge Gainsbourg, a contemporary of Jacques Dutronc, collaborated with Jane Birkin on several popular songs in⟧ If he likes The Beatles, he might enjoy Serge Gainsbourg, who was a contemporary of Jacques Dutronc—
+[ 52.31s][user ] «backchannel» Mm-hmm.
+[ 52.70s][moshi] —and often had that same upbeat, retro feel, especially his collaborations with Jane Birkin.
+[ 58.12s][user ] «backchannel» Yeah.
+[ 58.51s][user ] Gainsbourg, okay…
+[ 59.28s][user ] …I’ll write that down. What's the weather like ⟨ret@62.53s⟩ today?
+[ 62.77s][moshi] ⟦⚡SPAN@62.77s: (tool result) Current conditions are 22.7°C, humidity 68%, wind 4.1 km/h, with partly cloudy skies.⟧ Right now, it’s twenty-two point seven degrees Celsius and partly cloudy, with a humidity of sixty-eight percent and a gentle breeze.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 70.91s][user ] «backchannel» Mm-hmm.
+[ 71.29s][user ] That sounds nice. Do you have any ideas for a quick family activity this afternoon?
+[ 77.11s][moshi] Oh, absolutely! A quick scavenger hunt around the house can be lots of fun, and it’s easy to set up. It encourages teamwork and problem-solving.
+[ 86.79s][user ] «backchannel» Yeah.
+[ 87.18s][user ] That's a good idea, thanks Arunaia. I think we'll try that.
+[ 91.44s][moshi] Wonderful! It’s so rewarding to find those little moments for connection.

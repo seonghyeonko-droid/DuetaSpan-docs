@@ -4,84 +4,96 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Quinn",
+#     "name": "Lukas",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
+#       "date": "2026-06-18",
+#       "category": "home",
+#       "text": "User's home address is 207 Elm Street."
+#     },
+#     {
+#       "date": "2026-05-30",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-22",
+#       "date": "2025-12-09",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-10-21",
+#       "date": "2025-12-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-11-29",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
 #       "date": "2025-07-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-21",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-24",
+#       "date": "2026-03-07",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-09",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: I need a regular ride for three people to one Infinite Loop,
-     4.63s  <ret> 발화 (turn1 첫 프레임)
-     4.86s  agent 발화 시작: <ret> Alright, a ride has been booked for you. Driver Anya S
-     4.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Ride confirmed. Driver: Anya Sharma. ETA: 7 minutes. Veh
-     5.00s  user  발화 끝
-    10.29s  user  발화 시작: …Is that the quickest route, or are there options?
-    10.97s  agent 발화 끝
-    12.50s  <ret> 발화 (turn3 첫 프레임)
-    12.66s  agent 발화 시작: <ret> There is a slightly faster route using Highway 85, it 
-    12.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.19s]: Alternative route found. Estimated time: 6 minutes. Route involves Hig
-    12.88s  user  발화 끝
-    16.67s  user  발화 시작: Wow.
-    17.31s  user  발화 끝
-    21.65s  agent 발화 시작: I’m glad to help you with your commute today. Planning ahead
-    21.84s  agent 발화 끝
-    27.36s  agent 발화 시작: Remember, a little preparation goes a long way.
-    27.59s  agent 발화 끝
-    31.29s  agent 발화 끝
+     0.00s  user  발화 시작: I need a house with laundry in Portland, Oregon with a ratin
+     5.77s  <ret> 발화 (turn1 첫 프레임)
+     6.01s  agent 발화 시작: <ret> There are two houses matching your request! The Rose C
+     6.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.67s]: (tool result) {"houses": [{"id": "H12345", "name": "The Rose Cottage",
+     6.01s  user  발화 끝
+    17.68s  user  발화 시작: Yeah.
+    17.68s  agent 발화 끝
+    18.03s  user  발화 시작: That Pearl District Loft sounds nice. Can you book it for me
+    18.03s  user  발화 끝
+    23.18s  <ret> 발화 (turn4 첫 프레임)
+    23.34s  agent 발화 시작: <ret> The Pearl District Loft is booked for July eleventh to
+    23.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) {"confirmation id": "BK98765", "house name": "Pearl Dist
+    23.34s  user  발화 끝
+    32.88s  user  발화 시작: Really?
+    32.88s  agent 발화 끝
+    33.23s  user  발화 시작: Great, thank you so much!
+    33.23s  user  발화 끝
+    35.00s  agent 발화 시작: You’re very welcome! It’s wonderful you’re planning a little
+    35.00s  user  발화 끝
+    42.07s  agent 발화 끝

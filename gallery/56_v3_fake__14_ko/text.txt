@@ -1,68 +1,98 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 페엔이며, 사람들의 여행 및 휴가 계획을 돕는 긍정적이고 지지적인 라이프 코치입니다. <system>
+SYSTEM: <system> 당신은 노노이며, 여행 및 휴가 계획을 세우는 것을 도와주는 따뜻하고 세심한 라이프 코치입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "주온",
+    "name": "준경",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-13",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-03-08",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
     },
     {
-      "date": "2026-04-02",
+      "date": "2025-10-10",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-09-25",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-02-02",
+      "date": "2025-07-29",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-09-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-09-17",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-02",
-      "title": "Apartment hunting downtown",
+      "date": "2025-06-08",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음… 뭄바이 이름이 공식적으로 바뀐 게 언제였죠? ⟨ret@3.85s⟩
-[  4.00s][moshi] ⟦⚡SPAN@4.01s: In 1995, the city of Bombay was officially renamed Mumbai by the Maharashtra state government.⟧ 뭄바이의 이름이 공식적으로 바뀐 건 천구백구십오년이에요. 마하라슈트라 주 정부에서 그렇게 변경했답니다.
-[  7.76s][user ] «backchannel» 정말요?
-[ 12.59s][user ] 아, 그럼 그 전 이름은 정확히 뭐였죠?
-[ 15.26s][moshi] «interrupted» ⟨ret@15.11s⟩ ⟦⚡SPAN IRRELEVANT@15.27s: The average high temperature in Reykjavik, Iceland in January is -1.9°C, with an average low of -3.9°C and 102⟧ 그 전 이름은 뭄바이—
-[ 16.54s][user ] «interrupts_prev» … 근데 그 이름 바꾼 이유가 있었나요?
-[ 18.89s][moshi] 이름 바꾼 이유는… 뭄바이는 포르투갈식 이름이었고, 뭄바이는 마라티어에 더 가깝기 때문이라고 해요.
-[ 26.04s][moshi] 뭄바이라는 이름이 현지 문화와 언어를 반영하는 것이 중요하다고 생각했답니다.
-[ 28.09s][user ] «backchannel» 맞아요.
-[ 31.15s][user ] 아하, 그렇군요. 뭔가 의미가 있었네요.
+[  0.00s][user ] 밥 말리 때문에 유명해진 음악 장르는 뭐야? ⟨ret@3.11s⟩
+[  3.27s][moshi] ⟦⚡SPAN@3.27s: Roots reggae.⟧ 밥 말리 때문에 유명해진 음악 장르는 레게의 뿌리라고 할 수 있는 루트 레게예요.
+[  9.35s][user ] 루트 레게가 뭐길래 그렇게 인기 있는 거야?
+[ 12.62s][moshi] 루트 레게는 자메이카에서 시작된 음악 장르인데, 사회 비판적인 메시지와 강렬한 리듬이 특징이에요.
+[ 18.23s][user ] «backchannel» 어.
+[ 18.70s][user ] 아, 그렇구나. 혹시 루트 레게의 대표적인 가수 또 ⟨ret@22.59s⟩ 있어?
+[ 22.91s][moshi] ⟦⚡SPAN@22.91s: Bob Marley and the Wailers, Peter Tosh, and Burning Spear.⟧ 루트 레게의 대표적인 가수는 밥 말리와 더 웨일러스, 피터 토시, 그리고 버닝 스피어 같은 분들이 있어요.
+[ 30.39s][user ] 버닝 스피어는 처음 듣는 이름인데, 어떤 음악을 해?
+[ 34.13s][moshi] 버닝 스피어는 루트 레게의 정신을 잘 담아낸 가수로, 깊이 있는 가사와 독특한 보컬이 특징이에요.
+[ 40.67s][user ] «backchannel» 어.
+[ 41.14s][user ] 음, 재밌는 정보네. 밥 말리는 언제부터 음악을 시작했어? ⟨ret@44.80s⟩
+[ 44.88s][moshi] ⟦⚡SPAN@44.88s: Marley began his career in 1963.⟧ 밥 말리는 천구백육십삼년에 음악 활동을 시작했어요.
+[ 47.68s][user ] «backchannel» 응.
+[ 48.15s][user ] 천구백육십삼년이라니, 꽤 오래됐네.
+[ 49.55s][moshi] 네, 밥 말리는 어린 시절부터 음악에 재능을 보였고, 꾸준히 음악 활동을 이어갔어요.
+[ 55.16s][user ] «backchannel» 어.
+[ 55.63s][user ] 혹시 밥 말리가 가장 좋아하는 악기가 뭐였어?
+[ 58.90s][moshi] 밥 말리는 기타를 가장 좋아했고, 기타 연주 실력도 뛰어났다고 해요.
+[ 63.58s][user ] 기타 잘 치는 모습 상상되네.
+[ 65.91s][moshi] 네, 밥 말리는 기타를 통해 자신의 음악 세계를 표현하고, 많은 사람들에게 감동을 선사했어요.
+[ 71.99s][user ] 밥 말리가 만든 노래 중에 제일 유명한 건 ⟨ret@75.88s⟩ 뭐야?
+[ 76.20s][moshi] ⟦⚡SPAN@76.20s: "One Love" is one of Marley's most famous songs.⟧ 밥 말리가 만든 노래 중 가장 유명한 곡은 “원 러브”라고 할 수 있어요.
+[ 82.28s][user ] “원 러브”는 정말 명곡이지.
+[ 84.14s][moshi] 네, “원 러브”는 평화와 사랑의 메시지를 담고 있어서 전 세계적으로 많은 사랑을 받고 있어요.
+[ 90.69s][user ] 밥 말리 음악 들으면서 힐링해야겠다.
+[ 93.03s][moshi] 좋은 생각이에요. 밥 말리의 음악은 듣는 사람에게 위로와 희망을 줄 수 있어요.
+[ 98.64s][user ] 요즘 날씨가 너무 더운데, 서울 날씨 ⟨ret@101.59s⟩ 어때?
+[101.91s][moshi] ⟦⚡SPAN@101.91s: (tool result) 28.3°C, humidity 68%, wind 3.2 km/h.⟧ 지금 서울 날씨는 섭씨 이십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[109.39s][user ] «backchannel» 그치.
+[109.86s][user ] 꽤 덥겠네.
+[110.79s][moshi] 네, 오늘 서울은 꽤 더울 것 같아요. 시원한 물 많이 드시고, 더위 조심하세요.
+[116.87s][user ] 이번 주말에 갈 만한 곳 추천해 줄 수 있어?
+[121.08s][moshi] 이번 주말에 어디를 가고 싶으세요? 혹시 특별히 생각하신 곳이 있으신가요?
+[125.75s][user ] 음… 그냥 조용하고 자연이 좋은 곳이면 좋겠어 —
+[129.49s][user ] …근데 레게 음악 틀어주는 곳이면 더 ⟨ret@132.36s⟩ 좋겠다!
+[132.76s][moshi] ⟦⚡SPAN@132.76s: Jeju Island has several reggae bars and beautiful natural scenery.⟧ 레게 음악을 틀어주는 조용하고 자연이 좋은 곳이라…
+[136.03s][moshi] 제주도에는 레게 음악을 틀어주는 바도 있고, 아름다운 자연 경관도 즐길 수 있어요.
+[141.64s][user ] «backchannel» 아.
+[142.11s][moshi] 네, 제주도는 휴식을 취하기에 아주 좋은 곳이에요. 바다도 아름답고, 공기도 맑아요.
+[147.25s][user ] 제주도 괜찮네. 항공권 좀 알아봐 줄래?
+[150.06s][moshi] 출발 날짜와 시간을 알려주시면 항공권을 알아봐 드릴게요.
+[153.33s][user ] «backchannel» 맞아.
+[153.80s][user ] 이번 주 토요일 오후 출발하는 항공권으로 알아봐 줘.
+[157.54s][moshi] 이번 주 토요일 오후 출발하는 항공권을 알아보고 있어요. 잠시만 기다려 주세요.

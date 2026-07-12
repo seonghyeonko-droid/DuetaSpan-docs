@@ -1,93 +1,101 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Sono, a encouraging and non-judgmental supportive advisor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Tunax, a upbeat and supportive wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Casey",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "German"
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-02",
+      "date": "2026-05-08",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-04-27",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-03-26",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2026-02-11",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-20",
+      "date": "2026-03-28",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-08-22",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-01-28",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2025-06-22",
+      "category": "home",
+      "text": "User's home address is 545 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-03",
-      "title": "Setting up a home network",
+      "date": "2026-06-06",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-31",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Sono, I'm feeling a bit down about a fight with my sister.
-[  4.62s][moshi] Oh dear, that sounds difficult. Family relationships can be so complex, can't they?
-[  7.66s][user ] «backchannel» Yeah.
-[ 10.13s][user ] Yeah, it is. We argued about something silly, but now it feels bigger.
-[ 15.91s][moshi] It’s common for small disagreements to snowball, especially with those we’re closest to.
-[ 18.57s][user ] «backchannel» Yeah.
-[ 21.39s][user ] Do you think I should just give her space?
-[ 23.49s][moshi] Sometimes, a little distance can be helpful. It allows everyone to cool down and reflect.
-[ 28.65s][user ] I guess so. I just want things to go back to normal.
-[ 32.26s][moshi] That's a very natural desire. It shows you value your connection with her.
-[ 35.04s][user ] «backchannel» Yeah.
-[ 37.21s][user ] Do you have any advice on how to start a conversation after an argument?
-[ 41.56s][moshi] Starting with “I feel” statements can be really effective.
-[ 47.16s][user ] Like what, ⟨ret@48.51s⟩ exactly?
-[ 48.74s][moshi] It’s about expressing ⟦⚡SPAN@50.11s: “I” statements involve expressing your feelings and needs without accusing the other person, such as saying “I⟧ your emotions without blaming. A good approach is to express how you feel without placing blame—for example, saying “I feel hurt when…” instead of “You always…”.
-[ 56.17s][user ] «backchannel» Yeah.
-[ 61.78s][user ] Hmm, that makes sense.
-[ 63.91s][moshi] It's about taking ownership of your emotions, which can really shift the dynamic.
-[ 69.00s][user ] I wonder if she'll even be receptive to that.
-[ 71.92s][moshi] That’s a valid concern. It's about choosing the right time and setting—a calm moment.
-[ 78.89s][user ] What if she’s still really angry? —
-[ 81.27s][user ] …do you think I should apologize even if I don’t think I’m totally wrong?
-[ 85.12s][moshi] ⟨ret@85.05s⟩ ⟦⚡SPAN@85.13s: Offering a sincere apology, even for your part in the conflict, demonstrates humility and willingness to repai⟧ Offering a sincere apology, even for your part in the conflict, demonstrates humility and willingness to repair the relationship.
-[ 89.12s][user ] «backchannel» Mm-hmm.
-[ 92.33s][moshi] It doesn’t mean you're admitting complete wrongdoing, just acknowledging the hurt caused.
-[ 95.53s][user ] «backchannel» Mhm.
-[ 97.61s][user ] That’s a good way to look at it. Maybe I should try that.
-[101.31s][moshi] It takes courage to be vulnerable, but it can lead to deeper understanding.
-[106.17s][user ] What if she doesn’t forgive me?
-[107.80s][moshi] That’s a possibility, and it's okay to acknowledge that. You can only control your actions.
-[112.00s][user ] «backchannel» Wow.
-[113.69s][user ] So, just focus on what *I* can do?
-[116.83s][moshi] Precisely. Focus on expressing yourself clearly and respectfully, and then allow her the space to process.
-[125.01s][user ] Okay. That’s…helpful. Thank you, Sono.
-[129.04s][moshi] You’re very welcome. Remember, healing takes time, and you’re already taking positive steps.
+[  0.00s][user ] Hi, Tunax! I’m feeling a little lost about this career change.
+[  4.55s][moshi] Hello! It's perfectly normal to feel lost during big transitions—that’s where I come in. We'll navigate this together, step by step.
+[ 13.25s][user ] «backchannel» Uh-huh.
+[ 13.66s][user ] I was thinking of becoming a software engineer, but it seems really hard.
+[ 19.04s][moshi] It can seem daunting, absolutely! But you’re already considering it, and that’s a fantastic first step. What specifically feels hard about it?
+[ 28.15s][user ] Um, well… the coding, mostly. And all the different languages. ⟨ret@32.13s⟩
+[ 32.29s][moshi] ⟦⚡SPAN@32.29s: Python is a widely used high-level, general-purpose programming language known for its readability.⟧ Many people start with Python because it’s a widely used, high-level programming language—and it's known for being very readable. It's a great place to begin your coding journey!
+[ 43.88s][user ] That actually sounds… less scary.
+[ 45.95s][moshi] Wonderful! Small steps are key, and finding the right starting point can make all the difference. What’s your background like?
+[ 54.23s][user ] I used to be a teacher, actually.
+[ 57.13s][moshi] That's wonderful! Teaching builds incredible problem-solving and communication skills—those are hugely valuable in tech.
+[ 62.93s][moshi] ⟨ret@62.85s⟩ ⟦⚡SPAN@62.93s: The median annual wage for software developers was $123,980 in May 2023.⟧ The median annual wage for software developers was $123,980 in May 2023, according to the Bureau of Labor Statistics. It's a field with lots of opportunities.
+[ 73.69s][user ] «backchannel» Mhm.
+[ 74.10s][user ] Wow, that’s a pretty good salary!
+[ 76.59s][moshi] It is! But remember, a career isn't just about the money. What aspects of software engineering appeal to you beyond the financial side?
+[ 86.11s][user ] I think I'd like the challenge of building things.
+[ 89.84s][moshi] That’s a fantastic reason! The creative aspect of building something from nothing is really fulfilling.
+[ 96.05s][moshi] ⟨ret@95.65s⟩ To ⟦⚡SPAN@96.93s: (tool result) Codecademy offers interactive Python courses for beginners, with a focus on hands-on learning; c⟧ help you explore… Codecademy offers interactive Python courses for beginners, with a focus on hands-on learning; you can find them at codecademy.com. It’s a great place to start experimenting.
+      CALL: {"function": "search", "arguments": {"query": "best online resources for learning python"}}
+[108.47s][user ] «backchannel» Yeah.
+[108.88s][user ] That sounds perfect, thanks Tunax!
+[110.95s][moshi] You're very welcome! Remember, I'm here to support you as you explore. Focus on one small step at a time, and you'll be amazed at what you can achieve.

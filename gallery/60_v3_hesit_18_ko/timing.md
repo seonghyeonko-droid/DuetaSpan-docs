@@ -4,53 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "지재",
+#     "name": "노경",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-11",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-10-07",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-06-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-06-06",
+#       "date": "2026-06-17",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
+#     },
+#     {
+#       "date": "2026-06-11",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-04-29",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-03-24",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-04-16",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-28",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,34 +56,26 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-07",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 호주에 마지막 죄수들이 언제 도착했는지 궁금해.
-     2.90s  <ret> 발화 (turn1 첫 프레임)
-     3.22s  agent 발화 시작: <ret> 호주에 마지막 죄수들이 도착한 건, 천팔백육십팔년 일월 십일이었어요. 힘든 시간이었겠죠?
-     3.22s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.36s]: The last convicts arrived in Australia on 10 January 1868.
-     3.22s  user  발화 끝
-     8.58s  user  발화 시작: 어.
-     8.58s  agent 발화 끝
-     9.12s  user  발화 시작: 그럴 것 같아… 그 당시 상황이 어땠을까?
-     9.12s  user  발화 끝
-    12.87s  agent 발화 시작: 그 시기는 변화의 물결 속에서 많은 이들이 새로운 삶을 시작하려 애썼을 거예요. 괜찮으시다면, 그 마음을 조
-    12.87s  user  발화 끝
-    23.07s  agent 발화 끝
+     0.00s  user  발화 시작: 스타워즈 에피소드 사는 어디에서 벌어지는 영화야?
+     2.81s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  agent 발화 시작: <ret> 스타워즈 에피소드 사는 원래 천구백칠십칠년에 개봉한 영화에서 두드러지게 등장하는 타투인이라는 사막
+     3.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.78s]: Tatooine is a desert planet in the Star Wars universe, featured promin
+     3.13s  user  발화 끝
+     9.91s  user  발화 시작: 타투인이 어디 있는지 더 자세히 알려줘.
+     9.91s  agent 발화 끝
+    12.88s  <ret> 발화 (turn3 첫 프레임)
+    13.04s  agent 발화 시작: <ret> 타투인은 쌍성인 타투 일과 타투 이를 공전하는 스타워즈 세계관의 가상 행성입니다.
+    13.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.74s]: Tatooine is a fictional planet in the Star Wars universe, orbiting the
+    13.04s  user  발화 끝
+    18.78s  agent 발화 끝

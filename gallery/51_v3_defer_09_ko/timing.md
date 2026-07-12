@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "예아",
+#     "name": "도우",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,91 +12,60 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-04-11",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-12-09",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-01-03",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-12-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-10-10",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-10-06",
+#       "date": "2025-08-11",
 #       "category": "work",
 #       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "category": "diet",
-#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-07",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-25",
+#       "date": "2025-11-29",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-20",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 오후 세시에 캘리포니아 쿠퍼티노의 원 인피니트… | S2 …루프까지 세 명 태워갈 일반 차량 불러줘. | S3 지금 바로 출발하는 건 안 돼? | S4 …혹시 지금 근처에 다른 택시 서비스는 어때?
 
-     0.00s  user  발화 시작: 오늘 오후 세시에 캘리포니아 쿠퍼티노의 원 인피니트…
-     4.02s  user  발화 끝
-     5.75s  user  발화 시작: …루프까지 세 명 태워갈 일반 차량 불러줘.
-     8.70s  user  발화 끝
-     8.75s  <ret> 발화 (turn2 첫 프레임)
-     8.91s  agent 발화 시작: <ret> 네, 쿠퍼티노 원 인피니트 루프까지 일반 차량을 예약해 드렸습니다. 예약 번호는 알 에스 이 공 
-     8.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: (tool result) {"ride id": "RS202607101500A", "status": "scheduled", "e
-    18.69s  agent 발화 끝
-    19.56s  user  발화 시작: 지금 바로 출발하는 건 안 돼?
-    21.24s  agent 발화 시작: 지금 바로 출발하는 차량은 없습니다. 예약된 차량이 오후 세시에 도착 예정입니다.
-    21.40s  user  발화 끝
-    23.35s  user  발화 시작: 정말요?
-    24.41s  user  발화 끝
-    26.10s  agent 발화 시작: 혹시 다른 시간으로 변경해 드릴까요? 아니면 다른 종류의 차량을 알아볼까요—
-    26.16s  agent 발화 끝
-    30.59s  user  발화 시작: …혹시 지금 근처에 다른 택시 서비스는 어때?
-    31.20s  agent 발화 끝
-    33.74s  <ret> 발화 (turn8 첫 프레임)
-    33.82s  agent 발화 시작: <ret> 주변에 FastCab 택시 서비스가 있으며, 예상 대기 시간은 오분이고 예상 요금은 칠십달러입니다
-    33.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: {"provider": "FastCab", "estimated_wait_time": "5 minutes", "estimated
-    34.09s  user  발화 끝
-    41.84s  agent 발화 끝
+     0.00s  user  발화 시작: 포틀랜드 오리건에 세탁 시설이 있고 평점 사성 이상인 집을 찾고 싶어요.
+     5.01s  <ret> 발화 (turn1 첫 프레임)
+     5.17s  agent 발화 시작: <ret> 포틀랜드 오리건에서 세탁 시설이 있는 평점 사성 이상 집 두 곳을 찾았습니다. 로즈 코티지는 평점
+     5.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.69s]: (tool result) {"houses": [{"id": "PDX-123", "name": "The Rose Cottage"
+     5.17s  user  발화 끝
+    17.86s  user  발화 시작: 와.
+    17.86s  agent 발화 끝
+    18.33s  user  발화 시작: 로즈 코티지에 대해 좀 더 자세히 알려주세요.
+    18.33s  user  발화 끝
+    21.30s  <ret> 발화 (turn4 첫 프레임)
+    21.62s  agent 발화 시작: <ret> 로즈 코티지는 조용하고 아늑한 동네에 위치한 매력적인 코티지입니다. 편안한 휴식을 위한 완벽한 장
+    21.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.22s]: {"houses": [{"id": "PDX-123", "name": "The Rose Cottage", "rating": 4.
+    21.62s  user  발화 끝
+    33.84s  user  발화 시작: 네.
+    33.84s  agent 발화 끝
+    34.31s  user  발화 시작: 이번 주 토요일에 예약할 수 있는지 확인해 주세요.
+    34.31s  user  발화 끝
+    38.07s  user  발화 끝

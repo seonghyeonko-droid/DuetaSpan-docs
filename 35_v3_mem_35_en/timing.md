@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Emilia",
+#     "name": "Emil",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,48 +12,43 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
+#       "date": "2025-10-12",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2025-08-05",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-28",
-#       "category": "home",
-#       "text": "User's home address is 531 Cedar Lane."
+#       "date": "2025-06-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-07-28",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-06-02",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-28",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-07-22",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -63,53 +58,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hello! I’m hoping you can give | S2 Um, yeah. I’ve been looking at pla | S3 Oh, that sounds perfect! | S4 That’s really convenient. Thanks, 
+# EXAMINER(FDB-v2) 단계: S1 Uh, yeah, sometimes. I'm planning  | S2 That’s right! Any ideas? | S3 Seoul… hmm. Is there good climbing | S4 I remember, I told you I’m lactose
 
-     0.00s  agent 발화 시작: Hi Emilia, I'm Jeaon! It’s lovely to meet you.
-     2.83s  user  발화 시작: Oh, hello! I’m hoping you can give me some ideas for restaur
-     3.05s  agent 발화 끝
-     7.57s  <ret> 발화 (turn2 첫 프레임)
-     7.97s  agent 발화 시작: <ret> Emilia! Knowing you’re pescatarian, I can certainly su
-     7.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: [2026-06-07] User is pescatarian.
-     8.02s  user  발화 끝
-    14.05s  user  발화 시작: That would be great. I’m going in December, I think.
-    14.18s  agent 발화 끝
-    16.99s  <ret> 발화 (turn4 첫 프레임)
-    17.07s  agent 발화 시작: <ret> Wonderful! You’re already thinking ahead to December i
-    17.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.71s]: [2026-04-30] User is planning a trip to Lisbon in December.
-    17.25s  user  발화 끝
-    21.65s  user  발화 시작: Um, yeah. I’ve been looking at places, but…
-    21.78s  agent 발화 끝
-    25.30s  user  발화 끝
-    25.55s  agent 발화 시작: It can be a bit overwhelming, I understand. Lisbon has so mu
-    28.07s  user  발화 시작: Mm-hmm.
-    28.52s  user  발화 끝
-    30.26s  agent 발화 시작: Perhaps we could start with a highly-rated spot known for fr
-    30.41s  agent 발화 끝
-    34.41s  agent 발화 끝
-    35.20s  user  발화 시작: That sounds good. Something not too touristy, if possible.
-    38.77s  <ret> 발화 (turn10 첫 프레임)
-    39.16s  agent 발화 시작: <ret> I found Restaurante Cervejaria Ramiro, located on Aven
-    39.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.83s]: (tool result) Restaurante Cervejaria Ramiro, Avenida Almirante Reis nº
-    39.17s  user  발화 끝
-    42.92s  user  발화 시작: Uh-huh.
-    43.55s  user  발화 끝
-    48.95s  user  발화 시작: Oh, that sounds perfect!
-    48.99s  agent 발화 끝
-    50.66s  user  발화 끝
-    50.99s  agent 발화 시작: I’m so glad you like it! It's known for its incredibly fresh
-    52.41s  user  발화 시작: Mm-hmm.
-    53.14s  user  발화 끝
-    54.93s  user  발화 시작: Is it easy to get to from the city center?
-    55.19s  agent 발화 끝
-    57.76s  <ret> 발화 (turn16 첫 프레임)
-    57.91s  agent 발화 시작: <ret> It’s about a 20-minute trip by metro; take the Red Lin
-    57.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Approximately 20 minutes by metro; take the Red Line fro
-    58.02s  user  발화 끝
-    61.74s  user  발화 시작: Yeah.
-    62.19s  user  발화 끝
-    64.68s  agent 발화 끝
-    64.81s  user  발화 시작: That’s really convenient. Thanks, Jeaon!
-    67.26s  user  발화 끝
-    67.38s  agent 발화 시작: You’re very welcome, Emilia! I’m happy to help you make the 
-    73.54s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Emil, I'm Thoon. It's lovely to connect with you today. I
+     7.38s  user  발화 시작: Yeah, yeah.
+     7.38s  agent 발화 끝
+     8.12s  user  발화 시작: Uh, yeah, sometimes. I'm planning a trip and just… can't dec
+     8.12s  user  발화 끝
+    13.29s  agent 발화 시작: That feeling of being overwhelmed is perfectly normal when f
+    13.29s  user  발화 끝
+    22.52s  user  발화 시작: Yeah.
+    22.52s  agent 발화 끝
+    22.89s  user  발화 시작: Welll… I really enjoy Korean food. And I’ve been wanting to 
+    22.89s  user  발화 끝
+    29.01s  <ret> 발화 (turn6 첫 프레임)
+    29.17s  agent 발화 시작: <ret> It sounds like you're looking for a destination that c
+    29.17s  ⚡SPAN 주입 [d'=1.92s / d_lead=9.23s]: [2025-06-26] User is into rock climbing.
+    29.17s  user  발화 끝
+    38.40s  user  발화 시작: Right.
+    38.40s  agent 발화 끝
+    38.77s  user  발화 시작: That’s right! Any ideas?
+    38.77s  user  발화 끝
+    40.09s  <ret> 발화 (turn9 첫 프레임)
+    40.25s  agent 발화 시작: <ret> Considering your preference for Korean BBQ, I wonder i
+    40.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.75s]: [2025-06-02] User's favorite cuisine is Korean BBQ.
+    40.25s  user  발화 끝
+    48.00s  user  발화 시작: Yeah.
+    48.00s  agent 발화 끝
+    48.37s  user  발화 시작: Seoul… hmm. Is there good climbing around there?
+    48.37s  user  발화 끝
+    51.08s  <ret> 발화 (turn12 첫 프레임)
+    51.32s  agent 발화 시작: <ret> Bukhansan National Park, just north of Seoul, offers f
+    51.32s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.54s]: (tool result) Bukhansan National Park offers excellent rock climbing w
+    51.32s  user  발화 끝
+    56.86s  user  발화 시작: Uh-huh.
+    56.86s  agent 발화 끝
+    57.23s  agent 발화 시작: It’s wonderful to hear you’re feeling excited about it. Expl
+    57.23s  user  발화 끝
+    63.14s  user  발화 시작: Mm-hmm.
+    63.14s  agent 발화 끝
+    63.51s  user  발화 시작: I remember, I told you I’m lactose intolerant, right?
+    63.51s  user  발화 끝
+    66.67s  <ret> 발화 (turn17 첫 프레임)
+    66.83s  agent 발화 시작: <ret> Yes, you did. I recall you mentioning your lactose int
+    66.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.91s]: [2025-10-12] User is lactose-intolerant.
+    66.83s  user  발화 끝
+    72.74s  agent 발화 시작: Knowing that, we can easily find restaurants in Seoul that c
+    72.74s  agent 발화 끝
+    80.86s  agent 발화 끝

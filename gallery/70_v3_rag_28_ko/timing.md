@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "수안",
+#     "name": "혜훈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,53 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-23",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-11-25",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-07-07",
+#       "date": "2026-03-26",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2025-09-28",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-09-19",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-12",
-#       "title": "Researching a used car",
+#       "date": "2025-12-09",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-05",
+#       "date": "2025-06-14",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -63,63 +68,37 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 별들이 주계열성에서 에너지를 만드는 방법이 궁금해요. | S2 와, 육억 톤이라니… 엄청나네요. | S3 흥미로운데요. 오늘 날씨는 어때요? | S4 …영화 볼 만한 거 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 남북전쟁이 시작됐을 때 대통령이 누구였는지 알아요? | S2 음, 링컨이 맞긴 한데, 좀 더 자세히 설명해 줄 수 있어요? | S3 아, 그 전쟁이 지금의 미국에 큰 영향을 줬죠? | S4 어… 혹시 지금 서울 날씨 알려줄 수 있어요?
 
-     0.00s  user  발화 시작: 별들이 주계열성에서 에너지를 만드는 방법이 궁금해요.
-     2.88s  <ret> 발화 (turn1 첫 프레임)
-     3.20s  agent 발화 시작: <ret> 별은 정말 신비로운 존재예요.
-     3.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.13s]: Main sequence stars generate energy by converting hydrogen to helium i
-     3.20s  user  발화 끝
-     5.34s  agent 발화 시작: 주계열성 별은 핵융합이라는 과정을 통해 수소를 헬륨으로 변환하여 에너지를 만들어 냅니다.
-     5.34s  agent 발화 끝
-    11.21s  user  발화 시작: 음, 헬륨이요? 그게 무슨 뜻이에요?
-    11.21s  agent 발화 끝
-    13.79s  <ret> 발화 (turn4 첫 프레임)
-    13.87s  agent 발화 시작: <ret> 헬륨은 아주 가벼운 기체인데, 별 안에서 수소가 헬륨으로 바뀌면서 엄청난 에너지가 나오는 거예요.
-    13.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.94s]: Nuclear fusion is a reaction in which two or more atomic nuclei are co
-    13.87s  user  발화 끝
-    20.81s  agent 발화 시작: 핵융합은 두 개 이상의 원자핵이 결합하여 다른 원자핵과 아원자 입자를 형성하는 반응입니다.
-    20.81s  agent 발화 끝
-    27.21s  user  발화 시작: 네.
-    27.21s  agent 발화 끝
-    27.75s  agent 발화 시작: 별은 마치 거대한 에너지 공장과 같아요. 끊임없이 수소를 헬륨으로 바꾸면서 빛과 열을 내뿜는 거죠.
-    27.75s  user  발화 끝
-    35.22s  user  발화 시작: 그럼 태양도 같은 방식으로 에너지를 만들어요?
-    35.22s  agent 발화 끝
-    38.34s  <ret> 발화 (turn9 첫 프레임)
-    38.42s  agent 발화 시작: <ret> 태양은 주계열성 별이고, 핵융합 반응을 통해 에너지를 얻는데, 매초 약 육억 톤의 수소를 헬륨으로
-    38.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.00s]: The Sun is a main-sequence star and is powered by nuclear fusion react
-    38.42s  user  발화 끝
-    46.42s  user  발화 시작: 와, 육억 톤이라니… 엄청나네요.
-    46.42s  agent 발화 끝
-    48.56s  agent 발화 시작: 네, 그렇죠? 상상하기 어려울 정도로 많은 양이에요. 별의 에너지가 얼마나 큰지 짐작할 수 있겠죠?
-    48.56s  user  발화 끝
-    56.03s  user  발화 시작: 네네.
-    56.03s  agent 발화 끝
-    56.56s  user  발화 시작: 그런데 그 헬륨은 어디로 가요?
-    56.56s  user  발화 끝
-    58.83s  <ret> 발화 (turn14 첫 프레임)
-    59.23s  agent 발화 시작: <ret> 헬륨은 별의 중심부에 쌓이게 돼요. 별이 수명을 다하면 헬륨을 이용해서 더 무거운 원소를 만들기도
-    59.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.00s]: As a star ages, it begins to fuse helium into heavier elements like ca
-    59.23s  user  발화 끝
-    67.23s  agent 발화 시작: 별이 늙어감에 따라 중심부에서 헬륨을 탄소나 산소 같은 더 무거운 원소로 융합하기 시작합니다.
-    67.23s  agent 발화 끝
-    74.17s  user  발화 시작: 흥미로운데요. 오늘 날씨는 어때요?
-    74.17s  agent 발화 끝
-    76.22s  <ret> 발화 (turn17 첫 프레임)
-    76.30s  agent 발화 시작: <ret> 지금 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 불고 있습니다.
-    76.30s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.40s]: (tool result) Current conditions: 23.0°C, humidity 74%, wind 5.5 km/h.
-    76.30s  user  발화 끝
-    82.71s  user  발화 시작: 고마워요. 혹시 이번 주 토요일에…
-    82.71s  agent 발화 끝
-    85.37s  user  발화 시작: …영화 볼 만한 거 있을까요?
-    85.37s  user  발화 끝
-    87.64s  <ret> 발화 (turn20 첫 프레임)
-    88.04s  agent 발화 시작: <ret> 칠월 십일일 토요일에 롯데시네마 서울에서 “인터스텔라”가 오후 일곱시와 아홉시 삼십분에 상영됩니다
-    88.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: (tool result) “Interstellar” is playing at Lotte Cinema Seoul at 7:00 
-    88.04s  user  발화 끝
-    93.91s  user  발화 시작: 인터스텔라요? 좋아요. 예매해 주세요.
-    93.91s  agent 발화 끝
-    96.04s  agent 발화 시작: 예매를 도와드리겠습니다. 인터스텔라, 롯데시네마 서울, 칠월 십일일 토요일 오후 일곱시, 맞으신가요?
-    96.04s  user  발화 끝
-   101.91s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 남북전쟁이 시작됐을 때 대통령이 누구였는지 알아요?
+     3.04s  <ret> 발화 (turn1 첫 프레임)
+     3.36s  agent 발화 시작: <ret> 남북전쟁이 시작된 건 천팔백육십일년 사월 십이일인데, 그 때 미국 대통령은 에이브러햄 링컨이었어요
+     3.36s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.60s]: Abraham Lincoln was the president of the United States when the Civil 
+     3.36s  user  발화 끝
+    12.97s  user  발화 시작: 음, 링컨이 맞긴 한데, 좀 더 자세히 설명해 줄 수 있어요? 그 전쟁이 왜 시작됐는지도 궁금하고.
+    12.97s  agent 발화 끝
+    20.33s  <ret> 발화 (turn3 첫 프레임)
+    20.65s  agent 발화 시작: <ret> 전환기에는 궁금한 점이 많을 수밖에 없죠. 전쟁의 배경을 설명해 드릴게요.
+    20.65s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.80s]: The American Civil War began as a result of a long-standing dispute ov
+    20.65s  user  발화 끝
+    25.45s  agent 발화 시작: 아메리카 남북전쟁은 노예 제도와 주 권리 문제로 오랫동안 빚어진 갈등 때문에 시작됐어요.
+    25.45s  agent 발화 끝
+    31.21s  user  발화 시작: 응.
+    31.21s  agent 발화 끝
+    31.69s  user  발화 시작: 아, 그 전쟁이 지금의 미국에 큰 영향을 줬죠?
+    31.69s  user  발화 끝
+    35.29s  <ret> 발화 (turn7 첫 프레임)
+    35.53s  agent 발화 시작: <ret> 네, 전쟁은 미국 역사에 큰 족적을 남겼어요.
+    35.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.36s]: The Civil War resulted in the abolition of slavery, the preservation o
+    35.53s  user  발화 끝
+    38.90s  agent 발화 시작: 남북전쟁은 노예 제도를 폐지하고, 미국을 하나의 국가로 유지하며, 연방 정부를 강화하는 결과를 가져왔어요.
+    38.90s  agent 발화 끝
+    45.14s  user  발화 시작: 맞아.
+    45.14s  agent 발화 끝
+    45.62s  user  발화 시작: 어… 혹시 지금 서울 날씨 알려줄 수 있어요?
+    45.62s  user  발화 끝
+    49.30s  <ret> 발화 (turn11 첫 프레임)
+    49.46s  agent 발화 시작: <ret> 지금 서울의 날씨는 섭씨 이십팔도, 습도는 육십오퍼센트, 풍속은 시속 삼 점 이킬로미터예요. 앞으
+    49.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.12s]: (tool result) Current conditions in Seoul are 28.0°C, humidity 65%, wi
+    49.46s  user  발화 끝
+    58.58s  agent 발화 끝

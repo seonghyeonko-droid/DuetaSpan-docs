@@ -1,54 +1,51 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Nien, a upbeat and supportive life coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Nunan, a kind and steady wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Owen",
+    "name": "Charlie",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "late 20s",
-    "language": "German"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-02-23",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-23",
+      "date": "2026-04-29",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-07-09",
+      "date": "2026-03-28",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-21",
       "category": "home",
-      "text": "User's home address is 504 Elm Street."
+      "text": "User's home address is 845 Elm Street."
+    },
+    {
+      "date": "2025-10-20",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-06-10",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-12",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-16",
+      "date": "2026-06-17",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -56,7 +53,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-15",
+      "date": "2026-01-24",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -67,39 +64,43 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I just moved to Seoul. Do you know how to get in touch with my old neighbor, ⟨ret@4.18s⟩ Lee Min-ji?
-[  4.58s][moshi] ⟦⚡SPAN@4.58s: (no information found)⟧ Oh, welcome to Seoul! I’m Nien, and I’m happy to help you settle in. I’ve checked, but unfortunately, I couldn’t find any contact information for Lee Min-ji.
-[ 14.04s][user ] That’s a shame. I thought she might live here now too.
-[ 17.27s][moshi] It can be tricky tracking people down after a move. But Seoul is a wonderful city—you'll make new friends in no time!
-[ 24.86s][user ] I'm hoping to find a good Korean language ⟨ret@27.44s⟩ school nearby.
-[ 27.84s][moshi] ⟦⚡SPAN@27.84s: Gangnam Language School: Intensive Korean courses for all levels. Address: 123 Teheran-ro, Gangnam-gu, Seoul. ⟧ There are several excellent options. Gangnam Language School offers intensive courses at 123 Teheran-ro, and you can reach them at 02-1234-5678. Their website is www.gangnamlang.kr if you’d like to learn more.
-[ 39.70s][user ] «backchannel» Exactly.
-[ 44.32s][user ] That sounds promising. What’s the weather like ⟨ret@46.98s⟩ today?
-[ 47.30s][moshi] ⟦⚡SPAN@47.30s: (tool result) Current weather in Seoul: 25.5°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s a lovely day in Seoul—currently 25.5°C with clear skies, humidity at 68%, and a gentle breeze of 3.2 km/h.
+[  0.00s][user ] Do you have the contact information for Lee ⟨ret@2.93s⟩ Sun-hee?
+[  3.33s][moshi] ⟦⚡SPAN@3.33s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. It appears to be private.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
+[  9.98s][user ] Oh, that’s too bad.
+[ 11.45s][moshi] It’s understandable to want to reach out, but respecting someone’s privacy is important. Is there something specific you were hoping to discuss with her?
+[ 20.32s][user ] «backchannel» Uh-huh.
+[ 20.69s][user ] I just wanted to thank her for her music.
+[ 24.02s][moshi] That’s a very kind thought. Music can be so deeply meaningful, and expressing gratitude is a wonderful thing.
+[ 30.67s][user ] What’s the weather going to be like ⟨ret@33.22s⟩ tomorrow?
+[ 33.62s][moshi] ⟦⚡SPAN@33.62s: (tool result) 26.0°C, humidity 68%, wind 4.2 km/h⟧ Tomorrow in Seoul, the weather will be 26.0 degrees Celsius, with humidity at 68 percent and a wind speed of 4.2 kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 52.91s][user ] «backchannel» Oh.
-[ 57.00s][user ] I need to find a grocery store that sells organic ⟨ret@60.05s⟩ vegetables.
-[ 60.37s][moshi] ⟦⚡SPAN@60.37s: Organic Farm Market: Offers a wide selection of organic produce and locally sourced goods. Address: 456 Apguje⟧ Organic Farm Market at 456 Apgujeong-ro has a great selection of organic produce. They’re open from 10 AM to 8 PM every day.
-[ 64.35s][user ] «backchannel» Uh-huh.
-[ 69.68s][user ] Are there any good parks to visit for a picnic?
-[ 72.16s][moshi] ⟨ret@72.08s⟩ ⟦⚡SPAN@72.16s: Olympic Park: A large public park with gardens, walking trails, and picnic areas. Area: 434 hectares. Address:⟧ Olympic Park is a fantastic choice—it covers 434 hectares and has lovely gardens and picnic areas at 88 Olympic-ro. It’s a really popular spot with locals.
-[ 83.28s][user ] That sounds wonderful, I think I’ll go there this weekend.
-[ 85.93s][moshi] «interrupted» It’s a really great place to just relax and recharge—
-[ 88.69s][user ] «interrupts_prev» …Actually, before I do that, can you check if they have bike ⟨ret@91.80s⟩ rentals?
-[ 91.88s][moshi] ⟦⚡SPAN@91.88s: (tool result) Olympic Park offers bike rentals near the Rose Plaza. Bikes are available for rent from 9 AM to ⟧ Yes, Olympic Park does have bike rentals near the Rose Plaza. They’re available from 9 AM to 5 PM, and it costs 3,000 won per hour.
-      CALL: {"function": "search", "arguments": {"query": "Olympic Park Seoul bike rentals"}}
-[ 97.41s][user ] «backchannel» Really?
-[101.09s][user ] That’s perfect! I’m also looking for a good restaurant ⟨ret@104.78s⟩ nearby.
-[105.17s][moshi] ⟦⚡SPAN@105.19s: Bibimbap House: Traditional Korean cuisine, specializing in bibimbap. Rating: 4.5 stars. Address: 789 Samseong⟧ Bibimbap House, at 789 Samseong-ro, has excellent traditional Korean cuisine and a 4.5-star rating. It’s known for its delicious bibimbap!
-[116.04s][user ] Could you make a reservation for me there for Saturday at 7 PM?
-[120.25s][moshi] ⟨ret@120.09s⟩ ⟦⚡SPAN@120.25s: (tool result) Reservation confirmed at Bibimbap House for Saturday, July 12, 2026, at 7:00 PM. Confirmation ID⟧ Your reservation at Bibimbap House is confirmed for Saturday, July 12, 2026, at 7:00 PM. Your confirmation ID is BX49Z2.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bibimbap House", "date": "Saturday", "time": "7 PM"}}
-[130.19s][user ] Great, thanks so much.
-[131.74s][moshi] You’re very welcome! Settling into a new city takes time, but you're already making great progress.
-[137.67s][user ] I need to send some money to a friend back home.
-[140.49s][moshi] ⟨ret@140.25s⟩ ⟦⚡SPAN@140.49s: (no information found)⟧ I am sorry, but I cannot directly facilitate money transfers. I can, however, search for the best money transfer services available in Korea.
-      CALL: {"function": "Payment_1_RequestPayment", "arguments": {}}
-[144.53s][user ] «backchannel» Yeah, yeah.
-[150.12s][user ] Oh, okay, that makes sense. Can you search for those then?
-[153.56s][moshi] ⟨ret@153.33s⟩ ⟦⚡SPAN@153.57s: (tool result) Remitly and Wise are popular choices for sending money from Korea, offering competitive exchange⟧ Remitly and Wise are both popular choices for sending money from Korea, offering competitive rates and low fees.
-      CALL: {"function": "search", "arguments": {"query": "best money transfer services Korea"}}
+[ 42.49s][user ] «backchannel» Yeah.
+[ 42.86s][moshi] It does sound quite pleasant, doesn't it? A day like that might be perfect for a walk in the park.
+[ 50.25s][user ] I need to book a restaurant for Friday night.
+[ 53.57s][moshi] Do you have a particular cuisine or area of Seoul in mind for your Friday night dinner?
+[ 59.85s][user ] «backchannel» Mm-hmm.
+[ 60.22s][user ] Italian, near Gangnam station. ⟨ret@61.62s⟩
+[ 61.70s][moshi] ⟦⚡SPAN@61.70s: (tool result) Ristorante Verona - Italian, 4.5 stars, Gangnam-gu, Seoul. Available 7:30 PM, 8:00 PM.⟧ Ristorante Verona, an Italian restaurant with 4.5 stars, is available near Gangnam station at 7:30 PM or 8:00 PM.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Gangnam Station"}}
+[ 68.72s][user ] «backchannel» Yeah, yeah.
+[ 69.46s][user ] Book it for 8:00 PM. ⟨ret@71.15s⟩
+[ 71.31s][moshi] ⟦⚡SPAN@71.31s: (tool result) Reservation confirmed. Ristorante Verona, Friday 8:00 PM, party of 2. Confirmation ID: 7X9L2⟧ Your reservation at Ristorante Verona is confirmed for Friday at 8:00 PM for a party of two. Your confirmation ID is 7X9L2.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Ristorante Verona", "time": "8:00 PM", "date": "Friday"}}
+[ 79.43s][user ] …Actually, could we change that to 7:30 ⟨ret@81.99s⟩ instead?
+[ 82.39s][moshi] ⟦⚡SPAN@82.39s: (tool result) Reservation updated. Ristorante Verona, Friday 7:30 PM, party of 2. Confirmation ID: 7X9L2⟧ The reservation is now updated to 7:30 PM. Your confirmation ID remains 7X9L2.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Ristorante Verona", "time": "7:30 PM", "date": "Friday", "confirmation_id": "7X9L2"}}
+[ 87.19s][user ] That’s great, thank you. What time is it in London right now? ⟨ret@91.47s⟩
+[ 91.63s][moshi] ⟦⚡SPAN@91.63s: (tool result) It is Friday, July 10, 2026 at 11:17 AM in Europe/London right now.⟧ It is currently Friday, July 10th, 2026, at 11:17 AM in London.
+      CALL: {"function": "get_time", "arguments": {"city": "London"}}
+[ 96.06s][user ] «backchannel» Really?
+[ 96.43s][user ] I'm feeling a little anxious about the upcoming move.
+[ 99.76s][moshi] Moving can be a very stressful time, full of uncertainty. It’s perfectly normal to feel anxious. What part of the move feels most challenging right now?
+[109.36s][user ] «backchannel» Nice.
+[109.73s][user ] Just everything, really. Leaving my friends, a new city…
+[113.06s][moshi] It’s completely valid to feel overwhelmed when facing so many changes all at once. Letting go of familiar connections and adapting to a new environment takes courage. Remember to be kind to yourself during this transition.
+[126.36s][user ] Do you know anything about grief counseling?
+[128.94s][moshi] As a wellness coach, I do. Grief takes many forms, and it's important to allow yourself to feel and process those emotions. There are many resources available, and it's a sign of strength to seek support. Would you like me to search for grief counseling services in Seoul?
+[146.68s][user ] That would be helpful, ⟨ret@148.28s⟩ yes.
+[148.52s][moshi] ⟦⚡SPAN@148.52s: (tool result) Seoul Counseling Center - Grief Specialists, Gangnam-gu. 02-1234-5678.⟧ Seoul Counseling Center, specializing in grief, is located in Gangnam-gu. Their number is 02-1234-5678.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "grief counseling", "location": "Seoul"}}

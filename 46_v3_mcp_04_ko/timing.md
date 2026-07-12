@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "예영",
+#     "name": "성훈",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-01",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2025-08-18",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-08-12",
+#       "date": "2026-05-23",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-05-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-12-30",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-08",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-04",
+#       "date": "2026-05-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -56,81 +58,77 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-27",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 밤에 볼 만한 스릴러 영화 좀 찾아줘. | S2 아, "Missing"은 예전에 봤어. 이번에는 좀 더… 독특 | S3 아니, 됐어. 그런데… 혹시 이번 주말에 서울 날씨 어때? | S4 아, 그 카페는 가봤어. 다른 데 좀 더 조용한 곳 없을까? 
+# EXAMINER(FDB-v2) 단계: S1 음… 혹시 아이피 주소 백칠십이 점 이 일.백육십 점 일 사가 | S2 아, 그렇구나. 그럼, 시애틀에서 가장 유명한 관광지는 어디야 | S3 오, 그렇구나. 그럼, 지금 당장 스페이스 니들 입장권을 예매 | S4 아, 좋아. 그럼 그 콘서트 티켓도 예매해 줘. 두장.
 
-     0.00s  user  발화 시작: 오늘 밤에 볼 만한 스릴러 영화 좀 찾아줘.
-     2.48s  <ret> 발화 (turn1 첫 프레임)
-     2.58s  user  발화 끝
-     2.87s  agent 발화 시작: <ret> 오늘 밤에 보실 만한 스릴러 영화로는 이천십구년에 개봉한 "The Silent Patient"를 
-     2.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: The movie "The Silent Patient" is a 2019 psychological thriller direct
-     8.27s  user  발화 시작: 네.
-     8.57s  user  발화 끝
-    13.12s  agent 발화 끝
-    13.49s  user  발화 시작: 음… 그 영화는 좀 봤는데, 다른 거 없을까? 좀 더 최근에 나온 걸로.
-    17.64s  <ret> 발화 (turn4 첫 프레임)
-    17.83s  user  발화 끝
-    17.87s  agent 발화 시작: <ret> 최근에 나온 스릴러 영화는 제가 지금 바로 찾을 수 없습니다. 다른 장르로 찾아볼까요?
-    17.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (no information found)
-    23.38s  agent 발화 끝
-    23.55s  user  발화 시작: 아니, 스릴러로 계속 찾아봐 줘. 좀 더 깊이 파고들어 봐.
-    26.92s  user  발화 끝
-    26.95s  <ret> 발화 (turn6 첫 프레임)
-    27.00s  agent 발화 시작: <ret> 그럼, 이천이십삼년에 개봉한 "Missing"이라는 영화는 어떠세요? 니콜라스 매카시 감독에 스톰
-    27.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: The movie "Missing" is a 2023 American psychological thriller film dir
-    30.06s  user  발화 시작: 진짜요?
-    30.74s  user  발화 끝
-    35.96s  user  발화 시작: 아, "Missing"은 예전에 봤어. 이번에는 좀 더… 독특한 걸로 찾아줘. 평점이 좋은 걸로.
-    36.04s  agent 발화 끝
-    40.81s  <ret> 발화 (turn9 첫 프레임)
-    40.88s  agent 발화 시작: <ret> 평점이 좋은 독특한 스릴러 영화로는 이천이십이년에 개봉한 "Barbarian"이 있습니다. IMD
-    40.89s  ⚡SPAN 주입 [d'=1.12s / d_lead=12.38s]: The movie "Barbarian" (2022) has a rating of 7.0/10 on IMDb, directed 
-    40.96s  user  발화 끝
-    46.93s  user  발화 시작: 그렇죠.
-    47.34s  user  발화 끝
-    53.23s  user  발화 시작: "Barbarian"… 괜찮겠다. 지금 바로 예매해 줘. 이번 주 토요일 오후 두시에.
-    53.26s  agent 발화 끝
-    58.05s  user  발화 끝
-    58.07s  <ret> 발화 (turn12 첫 프레임)
-    58.31s  agent 발화 시작: <ret> 네, "Barbarian" 영화, 이번 주 토요일 오후 두시, 시네마랜드에서 네장 예매 완료되었습
-    58.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Confirmation: Barbarian, Saturday, July 11, 2026, 2:00 P
-    63.79s  user  발화 시작: 진짜요?
-    64.47s  user  발화 끝
-    67.10s  agent 발화 시작: 예매가 완료되어 다행입니다. 혹시 다른 영화도 함께 예매해 드릴까요?
-    67.21s  agent 발화 끝
-    71.41s  agent 발화 끝
-    71.65s  user  발화 시작: 아니, 됐어. 그런데… 혹시 이번 주말에 서울 날씨 어때?
-    75.31s  <ret> 발화 (turn16 첫 프레임)
-    75.38s  agent 발화 시작: <ret> 이번 주말 서울 날씨는 이십팔 점 오도, 습도 육십오퍼센트, 풍속은 시속 삼 점 이킬로미터, 부분
-    75.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) Seoul: 28.5°C, humidity 65%, wind 3.2 km/h, partly cloud
-    75.58s  user  발화 끝
-    83.28s  user  발화 시작: 음, 괜찮네. 그럼… 이번 주말에 갈 만한 서울 근교 카페 좀 추천해 줘.
-    83.35s  agent 발화 끝
-    88.23s  user  발화 끝
-    88.33s  <ret> 발화 (turn18 첫 프레임)
-    88.56s  agent 발화 시작: <ret> 서울 근교 카페로는 연남동 이 삼 구 이 공에 있는 카페가 인기가 많습니다. 독특한 미술 작품과 
-    88.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: The cafe "Cafe Yeonnam-dong 239-20" is a popular choice in Seoul, know
-    94.59s  user  발화 시작: 네.
-    94.90s  user  발화 끝
-    97.17s  agent 발화 끝
-    97.47s  user  발화 시작: 아, 그 카페는 가봤어. 다른 데 좀 더 조용한 곳 없을까? 공부하기 좋은 곳으로.
-   102.53s  <ret> 발화 (turn21 첫 프레임)
-   102.73s  agent 발화 시작: <ret> 공부하기 좋은 조용한 카페로는 성수동에 있는 "Forest Within"을 추천드립니다. 식물이 
-   102.75s  user  발화 끝
-   102.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.06s]: The "Forest Within" cafe in Seongsu-dong is known for its quiet atmosp
-   109.79s  agent 발화 끝
-   111.17s  user  발화 시작: 오, 좋아 보이는데. 위치 좀 알려줘.
-   113.36s  <ret> 발화 (turn23 첫 프레임)
-   113.75s  agent 발화 시작: <ret> "Forest Within"은 서울 성동구 성수동이가 이 칠 칠 일 삼 오에 위치하고 있습니다.
-   113.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.50s]: "Forest Within" is located at 277-135 Seongsu-dong 2(i)-ga, Seongdong-
-   113.90s  user  발화 끝
-   119.25s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 아이피 주소 백칠십이 점 이 일.백육십 점 일 사가 어디인지 알아볼 수 있어?
+     6.80s  <ret> 발화 (turn1 첫 프레임)
+     7.20s  agent 발화 시작: <ret> 그 아이피 주소는 미국 워싱턴주 시애틀에 위치해 있습니다. 혹시 다른 아이피 주소도 확인해 드릴까
+     7.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) The IP address 172.217.160.142 is located in Seattle, Wa
+     7.20s  user  발화 끝
+    13.91s  user  발화 시작: 응.
+    13.91s  agent 발화 끝
+    14.39s  user  발화 시작: 아니, 그건 됐어. 근데 시애틀 날씨는 어때?
+    14.39s  user  발화 끝
+    17.51s  <ret> 발화 (turn4 첫 프레임)
+    17.75s  agent 발화 시작: <ret> 현재 시애틀 날씨는 십팔 점 삼도이고, 습도는 육십이퍼센트, 바람은 시속 팔킬로미터, 맑습니다. 
+    17.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.67s]: (tool result) Current conditions in Seattle, WA are: 18.3°C, humidity 
+    17.75s  user  발화 끝
+    25.42s  user  발화 시작: 그래.
+    25.42s  agent 발화 끝
+    25.90s  agent 발화 시작: 네, 아주 쾌적한 날씨예요. 시애틀은 아름다운 도시기도 하죠.
+    25.90s  user  발화 끝
+    29.74s  user  발화 시작: 응.
+    29.74s  agent 발화 끝
+    30.22s  user  발화 시작: 아, 그렇구나. 그럼, 시애틀에서 가장 유명한 관광지는 어디야?
+    30.22s  user  발화 끝
+    33.98s  <ret> 발화 (turn9 첫 프레임)
+    34.06s  agent 발화 시작: <ret> 시애틀에서 가장 유명한 관광지는 파이크 플레이스 마켓, 스페이스 니들, 그리고 팝 컬처 박물관입니
+    34.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.72s]: (tool result) Pike Place Market, Space Needle, and Museum of Pop Cultu
+    34.06s  user  발화 끝
+    40.77s  user  발화 시작: … 아니, 근데 스페이스 니들 입장권은 얼마야?
+    40.77s  agent 발화 끝
+    43.73s  <ret> 발화 (turn11 첫 프레임)
+    44.13s  agent 발화 시작: <ret> 스페이스 니들 일반 입장료는 성인 삼십오달러, 어린이 이십오달러입니다. 온라인 예매하시면 좀 더 
+    44.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.20s]: General admission to the Space Needle costs $35.00 for adults and $25.
+    44.13s  user  발화 끝
+    51.33s  user  발화 시작: 오, 그렇구나. 그럼, 지금 당장 스페이스 니들 입장권을 예매해 줘. 성인 두명.
+    51.33s  agent 발화 끝
+    56.68s  <ret> 발화 (turn13 첫 프레임)
+    57.08s  agent 발화 시작: <ret> 스페이스 니들 입장권 이매가 칠월 십일일 오전 열시에 예약되었습니다. 확인 아이디는 팔 칠 비 이
+    57.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.11s]: (tool result) Booking confirmed for 2 adult tickets to the Space Needl
+    57.08s  user  발화 끝
+    66.19s  user  발화 시작: 좋아. 고마워. 혹시 이번 주 토요일에 시애틀에서 열리는 콘서트가 있어?
+    66.19s  agent 발화 끝
+    70.59s  <ret> 발화 (turn15 첫 프레임)
+    70.99s  agent 발화 시작: <ret> 네, 칠월 십일일 토요일에 '더 루미니어스'라는 밴드가 시애틀 클라이밋 플레지 아레나에서 공연을 
+    70.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) The band "The Lumineers" will be performing at Climate P
+    70.99s  user  발화 끝
+    77.23s  user  발화 시작: 아, 좋아. 그럼 그 콘서트 티켓도 예매해 줘. 두장.
+    77.23s  agent 발화 끝
+    81.30s  <ret> 발화 (turn17 첫 프레임)
+    81.54s  agent 발화 시작: <ret> '더 루미니어스' 콘서트 티켓 두장이 칠월 십일일에 예약되었습니다. 확인 번호는 사 구 제트 일 
+    81.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.63s]: (tool result) Two tickets for The Lumineers concert on July 11, 2026, 
+    81.54s  user  발화 끝
+    90.18s  user  발화 시작: 알았어. 정말 고마워.
+    90.18s  agent 발화 끝
+    91.62s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요!
+    91.62s  user  발화 끝
+    93.54s  agent 발화 끝

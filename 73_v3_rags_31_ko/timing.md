@@ -4,43 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "수정",
+#     "name": "다훈",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-06-05",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-12-20",
+#       "date": "2026-03-06",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2026-01-16",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-02",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-10-26",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-07-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-07-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2025-06-10",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-14",
+#       "date": "2025-12-17",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,28 +58,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-11",
+#       "date": "2025-12-07",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-19",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 인도 대법원의 최초 여성 판사는 누구였나요?
-     2.30s  <ret> 발화 (turn1 첫 프레임)
-     2.54s  agent 발화 시작: <ret> 인도 고등법 최초의 여성 판사는 안나 찬디 판사였으며, 천구백삼십칠년에 임명되었습니다.
-     2.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Justice Anna Chandy was the first woman judge in India’s High Court, a
-     2.72s  user  발화 끝
-     9.53s  agent 발화 끝
+     0.00s  user  발화 시작: 지각판은 지구 어디에 있는 건가요?
+     2.01s  <ret> 발화 (turn1 첫 프레임)
+     2.25s  agent 발화 시작: <ret> 지구의 딱딱한 바깥층인 지각권은 여러 개의 지각판으로 나뉘어져 있어요.
+     2.25s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.04s]: The Earth's lithosphere, which is the rigid outer layer, is broken up 
+     2.25s  user  발화 끝
+     6.29s  agent 발화 끝

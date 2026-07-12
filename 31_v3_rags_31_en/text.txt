@@ -1,68 +1,63 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Foraus, a kind and steady personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Gaes, a upbeat and supportive personal guide who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "William",
+    "name": "Anna",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "German",
+    "gender": "female",
     "age_range": "late 30s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-03-04",
+      "date": "2025-11-11",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-10-24",
       "category": "work",
-      "text": "User works as a nurse."
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-12-20",
+      "date": "2025-07-08",
+      "category": "home",
+      "text": "User's home address is 238 Birch Road."
+    },
+    {
+      "date": "2025-06-18",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-11-18",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-10-26",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-13",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-09",
-      "title": "Researching a used car",
+      "date": "2026-05-31",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-11-03",
-      "title": "Booked a dentist appointment",
+      "date": "2025-10-18",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who was the first woman judge of the High Court in India?
-[  3.52s][moshi] ⟨ret@3.29s⟩ ⟦⚡SPAN@3.53s: Justice Anna Chandy was the first woman judge in India, appointed to the Kerala High Court on February 5, 1959⟧ It was Justice Anna Chandy, appointed to the Kerala High Court on February fifth, nineteen fifty-nine. It takes a certain courage to be first, doesn’t it?
+[  0.00s][user ] Where exactly are the Earth’s tectonic plates ⟨ret@2.69s⟩ located?
+[  2.93s][moshi] ⟦⚡SPAN@2.93s: The Earth’s lithosphere, which includes the crust and the upper part of the mantle, is divided into several te⟧ Those plates are located within the Earth’s lithosphere — that’s the crust and the upper part of the mantle! It’s amazing how they all fit together, isn't it?
