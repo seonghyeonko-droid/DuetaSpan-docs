@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Dylan",
+#     "name": "Grace",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2026-03-09",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-02-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-07-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-09-29",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "home",
+#       "text": "User's home address is 94 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-02",
+#       "date": "2026-03-27",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,28 +53,30 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-10",
-#       "title": "Setting up a home network",
+#       "date": "2025-10-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-12",
-#       "title": "Researching a used car",
+#       "date": "2025-08-28",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who played old Paul Edgecomb in The Green Mile?
-     2.73s  <ret> 발화 (turn1 첫 프레임)
-     2.97s  agent 발화 시작: <ret> That would be Dabbs Greer, he wonderfully played Old P
-     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.25s]: Dabbs Greer portrayed the character of Old Paul Edgecomb in the 1999 f
-     2.97s  user  발화 끝
-    10.21s  agent 발화 끝
+     0.00s  user  발화 시작: When did the Vegas Golden Knights…
+     2.54s  user  발화 시작: …first join the National Hockey League?
+     2.54s  user  발화 끝
+     4.83s  <ret> 발화 (turn2 첫 프레임)
+     5.07s  agent 발화 시작: <ret> Well, that’s a good question. The Vegas Golden Knights
+     5.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.14s]: The Vegas Golden Knights joined the National Hockey League as an expan
+     5.07s  user  발화 끝
+    15.22s  agent 발화 끝

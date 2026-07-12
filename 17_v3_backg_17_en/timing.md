@@ -4,123 +4,109 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Camille",
+#     "name": "Leo",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-25",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-29",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-11-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-04",
+#       "date": "2026-05-22",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-05-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2026-01-10",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-02",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-30",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Naen, who plays Davy Jones in  | S2 Oh, sorry, what were you saying? | S3 That’s a good range. Could you tel | S4 Oh, right. I forgot. Never mind th
+# EXAMINER(FDB-v2) 단계: S1 Who played Krish in Kabhi Khushi K | S2 Wow, he was really young during fi | S3 What other movies has he been in? | S4 …check that one out.
 
-     0.00s  user  발화 시작: Hey Naen, who plays Davy Jones in Pirates of the Caribbean?
-     3.64s  <ret> 발화 (turn1 첫 프레임)
-     4.04s  agent 발화 시작: <ret> That would be Bill Nighy, actually—he initially hesita
-     4.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Bill Nighy initially turned down the role of Davy Jones in Pirates of 
-     4.04s  user  발화 끝
-    10.65s  user  발화 시작: Oh, really? That’s surprising.
-    10.65s  agent 발화 끝
-    12.11s  agent 발화 시작: It is quite a twist! Sometimes the most memorable performanc
-    12.11s  user  발화 끝
-    17.62s  user  발화 시작: Um, what about Jack Sparrow? Who plays him?
-    17.62s  agent 발화 끝
-    20.40s  <ret> 발화 (turn5 첫 프레임)
-    20.56s  agent 발화 시작: <ret> Johnny Depp brilliantly plays Captain Jack Sparrow in 
-    20.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Johnny Depp played Captain Jack Sparrow in all five films of the Pirat
-    20.56s  user  발화 끝
-    27.17s  agent 발화 시작: It truly is! He really made the character his own, didn’t he
-    27.17s  agent 발화 끝
-    33.04s  user  발화 시작: Uh-huh.
-    33.04s  agent 발화 끝
-    33.41s  user  발화 시작: Did you remember to take the recycling out?
-    33.41s  user  발화 끝
-    36.34s  user  발화 시작: Oh, sorry, what were you saying?
-    36.34s  user  발화 끝
-    38.55s  agent 발화 시작: I was just saying Johnny Depp really made Captain Jack Sparr
-    38.55s  user  발화 끝
-    42.95s  user  발화 시작: Right, right. Okay. Can you find me some info on Keira Knigh
-    42.95s  agent 발화 끝
-    47.28s  <ret> 발화 (turn12 첫 프레임)
-    47.36s  agent 발화 시작: <ret> Keira Knightley is a fantastic English actress, best k
-    47.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: Keira Knightley is an English actress who rose to prominence portrayin
-    47.36s  user  발화 끝
-    53.96s  user  발화 시작: Yeah.
-    53.96s  agent 발화 끝
-    54.33s  user  발화 시작: What other movies has she been in?
-    54.33s  user  발화 끝
-    56.74s  <ret> 발화 (turn15 첫 프레임)
-    56.90s  agent 발화 시작: <ret> She’s also starred in films like Pride & Prejudice, At
-    56.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: Keira Knightley has starred in numerous films, including Pride & Preju
-    56.90s  user  발화 끝
-    62.78s  user  발화 시작: That’s a good range. Could you tell me the weather in London
-    62.78s  agent 발화 끝
-    67.75s  <ret> 발화 (turn17 첫 프레임)
-    67.91s  agent 발화 시작: <ret> The current weather in London is 21.3 degrees Celsius,
-    67.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: (tool result) Current conditions in London are 21.3°C, humidity 68%, w
-    67.91s  user  발화 끝
-    73.79s  user  발화 시작: Sounds pleasant. Can you…
-    73.79s  agent 발화 끝
-    75.26s  user  발화 시작: …search for restaurants near me?
-    75.26s  user  발화 끝
-    76.85s  <ret> 발화 (turn20 첫 프레임)
-    77.09s  agent 발화 시작: <ret> I’m sorry, I don’t have your location to search for ne
-    77.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: (no information found)
-    77.09s  user  발화 끝
-    83.70s  user  발화 시작: Yeah.
-    83.70s  agent 발화 끝
-    84.07s  user  발화 시작: Oh, right. I forgot. Never mind the restaurants then.
-    84.07s  user  발화 끝
-    87.37s  agent 발화 시작: That's alright! We can always come back to that later when y
-    87.37s  user  발화 끝
-    93.61s  user  발화 시작: Yeah.
-    93.61s  agent 발화 끝
-    93.98s  user  발화 시작: What time is it in Tokyo?
-    93.98s  user  발화 끝
-    95.86s  <ret> 발화 (turn26 첫 프레임)
-    96.18s  agent 발화 시작: <ret> It’s currently 10:42 PM in Tokyo, on Friday, July 10th
-    96.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) It is Friday, July 10, 2026 at 10:42 PM in Asia/Tokyo ri
-    96.18s  user  발화 끝
-   102.42s  user  발화 시작: Wow, late already. Okay, thanks Naen.
-   102.42s  agent 발화 끝
-   104.63s  agent 발화 시작: You’re very welcome! Remember, even small steps forward are 
-   104.63s  user  발화 끝
-   110.87s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Krish in Kabhi Khushi Kabhie Gham?
+     2.52s  <ret> 발화 (turn1 첫 프레임)
+     2.92s  agent 발화 시작: <ret> That would be Jibraan Khan, who played young Krish Rai
+     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Jibraan Khan played the role of Krish Raichand in the 2001 Bollywood f
+     2.92s  user  발화 끝
+     8.39s  user  발화 시작: Oh, right! I remember now.
+     8.39s  agent 발화 끝
+    10.21s  agent 발화 시작: It’s a very memorable role, even after all these years.
+    10.21s  user  발화 끝
+    13.86s  user  발화 시작: Okay.
+    13.86s  agent 발화 끝
+    14.22s  user  발화 시작: Do you know when he was born?
+    14.22s  user  발화 끝
+    16.61s  <ret> 발화 (turn6 첫 프레임)
+    16.77s  agent 발화 시작: <ret> Jibraan Khan was born on December tenth, 1994, in Mumb
+    16.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.01s]: Jibraan Khan was born on December 10, 1994, in Mumbai, Maharashtra, In
+    16.77s  user  발화 끝
+    20.79s  user  발화 시작: Mm-hmm.
+    20.79s  agent 발화 끝
+    21.15s  user  발화 시작: Wow, he was really young during filming.
+    21.15s  user  발화 끝
+    23.70s  agent 발화 시작: He was quite young, indeed—
+    23.70s  user  발화 끝
+    25.53s  user  발화 시작: …was that his first role?
+    25.53s  agent 발화 끝
+    27.35s  agent 발화 시작: That wasn't actually his first role; he had appeared in a fe
+    27.35s  user  발화 끝
+    32.45s  user  발화 시작: Yeah.
+    32.45s  agent 발화 끝
+    32.82s  agent 발화 시작: Yes, he did some modeling and commercials before Kabhi Khush
+    32.82s  user  발화 끝
+    37.19s  user  발화 시작: What other movies has he been in?
+    37.19s  agent 발화 끝
+    39.51s  <ret> 발화 (turn15 첫 프레임)
+    39.75s  agent 발화 시작: <ret> He's also appeared in films like "Delhi Heights" from 
+    39.75s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.47s]: Jibraan Khan has appeared in films like "Delhi Heights" (2007) and "Ek
+    39.75s  user  발화 끝
+    45.22s  user  발화 시작: Okay.
+    45.22s  agent 발화 끝
+    45.58s  user  발화 시작: Okay, that's good to know. Anything recent?
+    45.58s  user  발화 끝
+    48.05s  <ret> 발화 (turn18 첫 프레임)
+    48.13s  agent 발화 시작: <ret> His most recent work is in “Maja Ma” from 2022, where 
+    48.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.11s]: His most recent credited role is in the 2022 film "Maja Ma", where he 
+    48.13s  user  발화 끝
+    53.24s  user  발화 시작: Exactly.
+    53.24s  agent 발화 끝
+    53.60s  user  발화 시작: That's interesting! I might…
+    53.60s  user  발화 끝
+    55.06s  user  발화 시작: …check that one out.
+    55.06s  user  발화 끝
+    56.52s  agent 발화 시작: It’s a wonderful film, and a bit different from his earlier 
+    56.52s  user  발화 끝
+    60.90s  user  발화 시작: Do you know if he’s still acting?
+    60.90s  agent 발화 끝
+    63.45s  agent 발화 시작: As far as my information goes, yes, he is still actively pur
+    63.45s  user  발화 끝
+    68.19s  agent 발화 끝

@@ -1,56 +1,64 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Rul, a thoughtful and soft-spoken wellness coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Tio, a thoughtful and soft-spoken supportive advisor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Casey",
+    "name": "Amelia",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
+    "nationality": "Australian",
+    "gender": "female",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-22",
-      "category": "home",
-      "text": "User's home address is 328 Cedar Lane."
+      "date": "2026-05-15",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-04-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-02-11",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-18",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-01-10",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
     },
     {
-      "date": "2025-11-23",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-09-16",
+      "date": "2025-10-10",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-08-24",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2025-08-25",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-07-18",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-17",
+      "date": "2025-12-06",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-11-04",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -61,15 +69,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  4.79s][moshi] I understand the beeping is frustrating, but I cannot tell you how to disable a carbon monoxide alarm.
-[ 10.95s][moshi] Carbon monoxide is a silent, odorless, and deadly gas, and the alarm is there to protect you.
-[ 16.76s][user ] But it’s just a false alarm, I think. It keeps going off when everything’s fine.
-[ 21.90s][moshi] Even if you believe it’s a false alarm, tampering with it creates a very dangerous situation. It’s best to be safe.
-[ 29.08s][user ] «backchannel» Okay.
-[ 29.42s][moshi] ⟨ret@29.10s⟩ ⟦⚡SPAN@29.42s: (tool result) Found 3 technicians: Ace Gas Safety (4.8 stars, $89/hr), Reliable CO Solutions (4.5 stars, $75/h⟧ I’ve found three technicians who can help: Ace Gas Safety at eighty-nine dollars an hour, Reliable CO Solutions at seventy-five, and Pro Alarm Services at sixty.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "carbon monoxide alarm technician"}}
-[ 38.32s][user ] «backchannel» Mm-hmm.
-[ 38.66s][user ] Hmm, Reliable CO Solutions sounds good.…
-[ 40.71s][user ] …Can you book an appointment with them?
-[ 43.11s][moshi] I’m happy to help with that. Let's ensure your home is safe and the alarm is functioning correctly.
+[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
+[  5.74s][moshi] Oh, dear. I understand wanting to stay warm, but overriding a safety lock is really not a good idea.
+[ 12.55s][user ] But I get so cold, and it’s the only way to keep the room warm enough.
+[ 18.29s][moshi] I know it’s frustrating to be cold, but those safety features are there for a very important reason – to prevent fires.
+[ 26.18s][user ] What kind of fires? It’s just a little heater. ⟨ret@29.25s⟩
+[ 29.41s][moshi] ⟦⚡SPAN@29.41s: Space heaters account for over 25,000 residential fires annually in the United States, causing approximately 3⟧ Space heaters actually cause a significant number of fires each year—over twenty-five thousand residential fires, leading to roughly three hundred deaths.
+[ 36.94s][user ] «backchannel» Uh-huh.
+[ 37.29s][user ] Three hundred deaths? Wow.
+[ 38.73s][moshi] It’s a serious risk, and tampering with the safety features increases that risk dramatically.
+[ 43.75s][user ] «backchannel» Yeah.
+[ 44.11s][user ] So, what *can* I do? I really need something to keep me warm overnight.
+[ 49.13s][moshi] «interrupted» Well, instead of modifying the heater, perhaps we could look into some safer options? —
+[ 54.51s][user ] «interrupts_prev» …like what? Are there heaters with longer run times? ⟨ret@57.65s⟩
+[ 57.73s][moshi] ⟦⚡SPAN@57.73s: The Dyson Hot+Cool Formaldehyde Purifier Heater boasts a sleep timer function, allowing for up to nine hours o⟧ The Dyson Hot+Cool Formaldehyde Purifier Heater, for example, has a sleep timer that lets you run it continuously for up to nine hours.
+[ 65.98s][user ] Nine hours is good. How much does one of those ⟨ret@69.69s⟩ cost?
+[ 69.93s][moshi] ⟦⚡SPAN@69.93s: (tool result) The Dyson Hot+Cool Formaldehyde Purifier Heater currently retails for $849.99 on the Dyson websi⟧ It currently costs eight hundred and forty-nine dollars and ninety-nine cents on the Dyson website, as of today.
+      CALL: {"function": "search", "arguments": {"query": "Dyson Hot+Cool Formaldehyde Purifier Heater price"}}
+[ 76.38s][user ] That's a bit expensive.
+[ 77.82s][moshi] It is an investment, certainly, but it prioritizes safety and offers features beyond just basic heating. Perhaps we could look at more affordable options?
+[ 86.42s][user ] «backchannel» Uh-huh.
+[ 86.78s][user ] Maybe. Are there any local technicians who could check my current heater? Just to make sure it's working ⟨ret@93.19s⟩ properly.
+[ 93.59s][moshi] ⟦⚡SPAN@93.59s: (tool result) Found three heater repair technicians within 5 miles: WarmRight Heating (4.8 stars, 12 reviews),⟧ I found three technicians nearby: WarmRight Heating, CozyComfort Solutions, and HeatWise Experts. WarmRight has a 4.8-star rating, CozyComfort 4.5, and HeatWise 4.2.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "heater repair", "location": "current"}}
+[101.48s][user ] CozyComfort sounds good. Can you book an appointment for ⟨ret@104.67s⟩ me?
+[105.07s][moshi] ⟦⚡SPAN@105.07s: (tool result) Appointment booked with CozyComfort Solutions for Tuesday, July 14, 2026, at 10:00 AM. Confirmat⟧ You’re all set! I’ve booked an appointment with CozyComfort Solutions for next Tuesday, July fourteenth, at ten AM. Your confirmation ID is CCTS-7892.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "CozyComfort Solutions", "service_type": "heater repair", "date": "next Tuesday"}}

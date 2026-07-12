@@ -4,105 +4,110 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Adam",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-05-09",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-13",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-01-10",
+#       "date": "2026-01-28",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-06-27",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-11-30",
+#       "category": "home",
+#       "text": "User's home address is 53 Pine Court."
+#     },
+#     {
+#       "date": "2025-10-20",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-25",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-08",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-08",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-23",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the hours for that Italia | S2 That sounds perfect. Can you reser | S3 Great! Um, what’s the weather goin | S4 I'm trying to remember…did I write
+# EXAMINER(FDB-v2) 단계: S1 Can you set the user agent to Slac | S2 Maybe the one at Sejong Center. | S3 Oh, right, the dentist. | S4 No, that's okay. Just checking.
 
-     0.00s  user  발화 시작: What are the hours for that Italian place we found yesterday
-     3.77s  <ret> 발화 (turn1 첫 프레임)
-     3.85s  agent 발화 시작: <ret> Trattoria Romana is open from eleven thirty AM to ten 
-     3.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (tool result) Name: Trattoria Romana, Rating: 4.4 (1,234 reviews), Hou
-     3.85s  user  발화 끝
-     8.76s  agent 발화 시작: And on Sundays, they’re open from noon to nine PM.
-     8.76s  agent 발화 끝
-    12.26s  user  발화 시작: That sounds perfect. Can you reserve a table for two this Sa
-    12.26s  agent 발화 끝
-    17.09s  <ret> 발화 (turn4 첫 프레임)
-    17.17s  agent 발화 시작: <ret> I’ve reserved a table for two at Trattoria Romana this
-    17.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.26s]: (tool result) Confirmation: Restaurant: Trattoria Romana, Date: 2026-0
-    17.17s  user  발화 끝
-    22.42s  agent 발화 시작: Your confirmation ID is TR729XQ.
-    22.42s  agent 발화 끝
-    24.17s  user  발화 시작: Great! Um, what’s the weather going to be like then?
-    24.17s  agent 발화 끝
-    27.60s  <ret> 발화 (turn7 첫 프레임)
-    27.68s  agent 발화 시작: <ret> This Saturday in Seoul, it’ll be partly cloudy with a 
-    27.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.26s]: (tool result) Date: 2026-07-11, Location: Seoul, Weather: 26.5°C, humi
-    27.68s  user  발화 끝
-    32.93s  agent 발화 시작: Humidity will be around sixty-eight percent, with a light br
-    32.93s  agent 발화 끝
-    38.19s  user  발화 시작: Yeah.
-    38.19s  agent 발화 끝
-    38.54s  user  발화 시작: I'm trying to remember…did I write down my friend’s number?
-    38.54s  user  발화 끝
-    42.04s  agent 발화 시작: Give me a moment to check your notes.
-    42.04s  user  발화 끝
-    44.32s  ⚡지연 SPAN 주입(선제발표 직전): (no information found)
-    44.84s  agent 발화 시작: <ret> I'm still looking through your notes for that number… 
-    44.84s  agent 발화 끝
-    58.16s  agent 발화 끝
+     0.00s  user  발화 시작: Can you set the user agent to Slackbot LinkExpanding version
+     4.53s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  agent 발화 시작: <ret> I’ve set your user agent to Slackbot LinkExpanding ver
+     4.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) User agent set to Slackbot LinkExpanding version 1.0.
+     4.61s  user  발화 끝
+    11.69s  user  발화 시작: That’s great, thanks. What's the weather in Seoul right now?
+    11.69s  agent 발화 끝
+    14.91s  <ret> 발화 (turn3 첫 프레임)
+    15.23s  agent 발화 시작: <ret> The current weather in Seoul is twenty-seven point eig
+    15.23s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.50s]: (tool result) The current weather in Seoul is 27.8°C, humidity 68%, wi
+    15.23s  user  발화 끝
+    23.74s  user  발화 시작: Yeah.
+    23.74s  agent 발화 끝
+    24.09s  user  발화 시작: Um, could you find me some jazz concerts happening this week
+    24.09s  user  발화 끝
+    27.83s  <ret> 발화 (turn6 첫 프레임)
+    27.99s  agent 발화 시작: <ret> I found three jazz concerts happening this weekend – a
+    27.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.21s]: (tool result) There are three jazz concerts this weekend: at Sejong Ce
+    27.99s  user  발화 끝
+    37.20s  user  발화 시작: Maybe the one at Sejong Center.
+    37.20s  agent 발화 끝
+    39.09s  <ret> 발화 (turn8 첫 프레임)
+    39.33s  agent 발화 시작: <ret> Two tickets for the jazz concert at Sejong Center are 
+    39.33s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.79s]: (tool result) Two tickets for jazz concert at Sejong Center confirmed.
+    39.33s  user  발화 끝
+    47.12s  user  발화 시작: Mm-hmm.
+    47.12s  agent 발화 끝
+    47.48s  user  발화 시작: Excellent. And can you remind me what my schedule looks like
+    47.48s  user  발화 끝
+    52.08s  agent 발화 시작: I can definitely help with that. Let me just access your cal
+    52.08s  user  발화 끝
+    56.87s  ⚡지연 SPAN 주입(선제발표 직전): [2026-07-11] Dentist appointment at 10:00 AM, meeting with team at 2:0
+    57.75s  agent 발화 시작: <ret> I'm checking your schedule now. Tomorrow, July elevent
+    57.75s  agent 발화 끝
+    72.63s  user  발화 시작: Oh, right, the dentist.
+    72.63s  agent 발화 끝
+    74.05s  agent 발화 시작: It's wonderful you're prioritizing your health. Routine chec
+    74.05s  user  발화 끝
+    79.72s  user  발화 시작: Yeah.
+    79.72s  agent 발화 끝
+    80.07s  user  발화 시작: Can you find me a good Italian restaurant nearby?
+    80.07s  user  발화 끝
+    83.02s  <ret> 발화 (turn17 첫 프레임)
+    83.26s  agent 발화 시작: <ret> Bella Pasta is a highly-rated Italian restaurant just 
+    83.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Bella Pasta is a highly-rated Italian restaurant 1.2 km 
+    83.26s  user  발화 끝
+    90.35s  user  발화 시작: No, that's okay. Just checking.
+    90.35s  agent 발화 끝
+    92.12s  agent 발화 시작: Sometimes just knowing your options is enough. It’s helpful 
+    92.12s  user  발화 끝
+    98.50s  user  발화 시작: Yeah.
+    98.50s  agent 발화 끝
+    98.85s  user  발화 시작: What time is it in Tokyo right now?
+    98.85s  user  발화 끝
+   101.60s  <ret> 발화 (turn22 첫 프레임)
+   101.68s  agent 발화 시작: <ret> It is Saturday, July eleventh, two thousand twenty-six
+   101.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) It is Saturday, July 11, 2026 at 3:38 PM in Asia/Tokyo r
+   101.68s  user  발화 끝
+   109.48s  agent 발화 끝

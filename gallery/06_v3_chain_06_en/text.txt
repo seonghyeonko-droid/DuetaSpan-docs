@@ -1,72 +1,67 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Dorar, a thoughtful and soft-spoken personal guide who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Axra, a practical and reassuring life coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "Bruno",
+    "name": "Remy",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "50s",
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-23",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-02-26",
+      "date": "2026-04-03",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-12-23",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-02-24",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-12-05",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-10-20",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
     },
     {
-      "date": "2025-07-03",
-      "category": "home",
-      "text": "User's home address is 457 Birch Road."
-    },
-    {
-      "date": "2025-05-30",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-07-01",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-05",
-      "title": "Apartment hunting downtown",
+      "date": "2025-11-27",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling a bit stressed about work lately. Any good dramas playing near me? ⟨ret@4.83s⟩
-[  4.91s][moshi] ⟦⚡SPAN@4.91s: (tool result) Showing drama movies at Landmark Chez Artiste Theatre in Denver, Colorado: “All of Us Strangers”⟧ At Landmark Chez Artiste in Denver, Colorado, “All of Us Strangers” is showing at seven and nine-thirty, and “Past Lives” at six-forty-five and nine-fifteen.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "Denver, Colorado", "genre": "drama", "theater": "Landmark Chez Artiste Theatre"}}
-[ 13.31s][user ] «backchannel» Right.
-[ 13.66s][moshi] It sounds like you could use a distraction. Perhaps a movie would be a good way to unwind?
-[ 19.97s][user ] Actually, let’s get tickets for “All of Us Strangers” at seven. ⟨ret@23.75s⟩
-[ 23.83s][moshi] ⟦⚡SPAN@23.83s: (tool result) Confirmed: 2 tickets for “All of Us Strangers” at Landmark Chez Artiste Theatre, Denver, Colorad⟧ Wonderful. I’ve secured two tickets for “All of Us Strangers” at seven PM at Landmark Chez Artiste in Denver, Colorado. Your confirmation ID is eight-four-nine-two-seven-six.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "All of Us Strangers", "time": "7:00 PM", "theater": "Landmark Chez Artiste Theatre", "location": "Denver, Colorado"}}
-[ 32.59s][moshi] That should be a lovely evening. I’m glad I could help take something off your plate.
+[  0.00s][user ] I'm looking for museums in London. ⟨ret@1.93s⟩
+[  2.01s][moshi] ⟦⚡SPAN@2.01s: (tool result) The British Museum in London holds a collection of over eight million works, and the National Ga⟧ London has some wonderful museums; the British Museum holds over eight million works, and the National Gallery over two thousand paintings.
+      CALL: {"function": "maps_text_search", "arguments": {"query": "museums in London"}}
+[  9.04s][moshi] That should give you a great start with your exploration!
+[ 12.38s][user ] Which one is closest to Buckingham Palace? ⟨ret@14.56s⟩
+[ 14.72s][moshi] ⟦⚡SPAN@14.72s: (tool result) Distance: 3.3 km, Duration: 13 mins (driving), 45 mins (walking).⟧ The British Museum is about three point three kilometers from Buckingham Palace, taking thirteen minutes by car.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Buckingham Palace", "destination": "The British Museum"}}
+[ 20.41s][user ] «backchannel» Okay.
+[ 20.75s][user ] And what about the National Gallery? ⟨ret@22.67s⟩
+[ 22.75s][moshi] «interrupted» ⟦⚡SPAN@22.75s: (tool result) Distance: 2.5 km, Duration: 10 mins (driving), 30 mins (walking).⟧ The National Gallery is closer — two point five kilometers, or about ten minutes if you drive—
+      CALL: {"function": "map_directions", "arguments": {"origin": "Buckingham Palace", "destination": "The National Gallery"}}
+[ 28.44s][user ] «interrupts_prev» …is either of them free to ⟨ret@30.39s⟩ enter?
+[ 30.79s][moshi] ⟦⚡SPAN@30.79s: General admission to the British Museum is free, while the National Gallery also offers free general admission⟧ Thankfully, general admission to both the British Museum and the National Gallery is free.
+[ 35.47s][moshi] It’s lovely when culture is accessible to everyone, isn’t it?

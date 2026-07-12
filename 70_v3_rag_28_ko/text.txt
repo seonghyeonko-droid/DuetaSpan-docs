@@ -1,84 +1,97 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 당신은 큰 인생 변화를 겪는 사람들을 돕는 호기심 많고 공감적인 개인 가이드인 렐라우스입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 태이며, 육아 및 가족 시간과 관련하여 사람들을 돕는 실용적이고 안심시키는 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "혜훈",
+    "name": "정경",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2026-03-26",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-03-01",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-09-29",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-09-28",
+      "date": "2026-06-16",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-09-19",
+      "date": "2026-05-18",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-01-27",
       "category": "diet",
       "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-09",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-14",
+      "date": "2026-05-31",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 남북전쟁이 시작됐을 때 대통령이 누구였는지 ⟨ret@3.04s⟩ 알아요?
-[  3.36s][moshi] ⟦⚡SPAN@3.36s: Abraham Lincoln was the president of the United States when the Civil War began on April 12, 1861.⟧ 남북전쟁이 시작된 건 천팔백육십일년 사월 십이일인데, 그 때 미국 대통령은 에이브러햄 링컨이었어요. 인생의 중요한 전환기에 도움이 될 수 있어서 기뻐요.
-[ 12.97s][user ] 음, 링컨이 맞긴 한데, 좀 더 자세히 설명해 줄 수 있어요? 그 전쟁이 왜 시작됐는지도 ⟨ret@20.33s⟩ 궁금하고.
-[ 20.65s][moshi] ⟦⚡SPAN@20.65s: The American Civil War began as a result of a long-standing dispute over the institution of slavery and states⟧ 전환기에는 궁금한 점이 많을 수밖에 없죠. 전쟁의 배경을 설명해 드릴게요.
-[ 25.45s][moshi] 아메리카 남북전쟁은 노예 제도와 주 권리 문제로 오랫동안 빚어진 갈등 때문에 시작됐어요.
-[ 31.21s][user ] «backchannel» 응.
-[ 31.69s][user ] 아, 그 전쟁이 지금의 미국에 큰 영향을 줬죠? ⟨ret@35.29s⟩
-[ 35.53s][moshi] ⟦⚡SPAN@35.53s: The Civil War resulted in the abolition of slavery, the preservation of the United States as a single nation, ⟧ 네, 전쟁은 미국 역사에 큰 족적을 남겼어요.
-[ 38.90s][moshi] 남북전쟁은 노예 제도를 폐지하고, 미국을 하나의 국가로 유지하며, 연방 정부를 강화하는 결과를 가져왔어요.
-[ 45.14s][user ] «backchannel» 맞아.
-[ 45.62s][user ] 어… 혹시 지금 서울 날씨 알려줄 수 있어요? ⟨ret@49.30s⟩
-[ 49.46s][moshi] ⟦⚡SPAN@49.46s: (tool result) Current conditions in Seoul are 28.0°C, humidity 65%, wind 3.2 km/h.⟧ 지금 서울의 날씨는 섭씨 이십팔도, 습도는 육십오퍼센트, 풍속은 시속 삼 점 이킬로미터예요. 앞으로 나아가는 여정에 날씨도 함께 고려하면 좋겠어요.
+[  0.00s][user ] 혹시 '프린세스 브라이드'에 나온 엄마 역할을 누가 맡았는지 ⟨ret@4.23s⟩ 아세요?
+[  4.55s][moshi] ⟦⚡SPAN@4.55s: Betsy Brantley played the role of the mother in the 1987 American fantasy adventure film The Princess Bride.⟧ 천구백팔십칠년에 개봉한 '프린세스 브라이드'에서 엄마 역할을 맡은 배우는 베티 브랜틀리예요. 기억하시는 분들이 많으시죠.
+[ 11.13s][user ] «backchannel» 와.
+[ 11.63s][user ] 베티 브랜틀리… 이름이 낯설긴 하네요. 다른 작품에도 나왔어요? ⟨ret@15.60s⟩
+[ 15.68s][moshi] ⟦⚡SPAN@15.68s: (no information found)⟧ 죄송해요, 다른 작품에 대한 정보는 찾을 수 없었어요.
+[ 19.72s][user ] 아, 그렇군요. 그럼 '프린세스 브라이드'는 혹시 상을 받았어요? ⟨ret@23.69s⟩
+[ 23.77s][moshi] ⟦⚡SPAN@23.77s: (tool result) The Princess Bride won one Primetime Emmy Award and was nominated for three additional awards, i⟧ '프린세스 브라이드'는 프라임타임 에미상을 한 번 받았고, 로빈 라이트가 골든 글로브상 후보에 오르는 등 총 세 번 후보에 올랐어요.
+      CALL: {"function": "search", "arguments": {"query": "princess bride awards"}}
+[ 33.38s][user ] «backchannel» 어.
+[ 33.88s][user ] 오, 에미상까지 받았군요. —
+[ 35.91s][user ] 혹시 그 영화 감독은 ⟨ret@38.12s⟩ 누구였어요?
+[ 38.44s][moshi] ⟦⚡SPAN@38.44s: Rob Reiner directed the 1987 American fantasy adventure film The Princess Bride, based on the 1973 novel by Wi⟧ '프린세스 브라이드'의 감독은 롭 라이너예요. 천구백칠십삼년에 윌리엄 골드먼의 소설을 바탕으로 만들었어요.
+[ 44.00s][user ] 롭 라이너요? 그분 다른 영화도 많이 만들었죠? ⟨ret@47.38s⟩
+[ 47.54s][moshi] ⟦⚡SPAN@47.54s: (tool result) Rob Reiner is an American director, producer, and actor, known for directing films such as This ⟧ 롭 라이너는 'This Is Spinal Tap', 'Stand by Me', 'When Harry Met Sally' 같은 영화를 연출한 미국의 영화감독이에요.
+      CALL: {"function": "search", "arguments": {"query": "Rob Reiner films"}}
+[ 56.64s][user ] 'Stand by Me'도 재밌게 봤는데. 혹시 지금 한국 날씨는 어때요? ⟨ret@61.54s⟩
+[ 61.70s][moshi] ⟦⚡SPAN@61.70s: (tool result) Current conditions in Seoul are 27.3°C, humidity 78%, wind 4.1 km/h.⟧ 지금 서울의 날씨는 기온이 이십칠 점 삼도이고, 습도는 칠십팔퍼센트, 바람은 시속 사 점 일킬로미터로 불고 있어요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 69.79s][user ] «backchannel» 응.
+[ 70.30s][user ] 꽤 덥네요. 아이들 데리고…
+[ 72.32s][user ] …어디 놀러 가면 좋을까요?
+[ 74.34s][moshi] 아이들과 함께라면 시원한 곳을 찾는 게 좋겠네요. 실내 놀이터나 박물관은 어떠세요?
+[ 79.91s][user ] «backchannel» 어.
+[ 80.41s][user ] 박물관은 괜찮겠네요. 아이들이 좋아할 만한 곳 추천해 주실 수 있어요?
+[ 85.47s][moshi] 아이들의 연령대에 따라 추천이 달라질 수 있어요. 어떤 나이의 아이들이신가요?
+[ 90.53s][user ] «backchannel» 음.
+[ 91.03s][user ] 일곱 살, 다섯 살이요.
+[ 93.06s][moshi] 일곱 살, 다섯 살이라면 국립어린이과학관이나 국립중앙박물관의 어린이박물관이 좋을 것 같아요.

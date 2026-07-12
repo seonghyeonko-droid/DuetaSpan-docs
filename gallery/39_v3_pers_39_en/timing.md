@@ -4,99 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Noa",
+#     "name": "Oscar",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
+#       "date": "2025-12-07",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-04",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-06-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "home",
-#       "text": "User's home address is 961 Cedar Lane."
+#       "date": "2025-06-09",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-11",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi Harina. That’s… a lot, actu | S2 I did a media degree, but the indu | S3 That’s… a relief to hear. I was wo | S4 Yeah, that sounds… good. But how d
+# EXAMINER(FDB-v2) 단계: S1 What exactly does a life coach *do | S2 It’s just… repetitive. No room to  | S3 That’s good to hear. I’ve always b | S4 Maybe. It’s scary, though. Leaving
 
-     0.00s  agent 발화 시작: Hello Noa, it’s lovely to meet you. I’m Harina, and I’m here
-     8.13s  user  발화 시작: Right.
-     8.13s  agent 발화 끝
-     8.52s  user  발화 시작: Oh, hi Harina. That’s… a lot, actually. I’m just feeling rea
-     8.52s  user  발화 끝
-    15.10s  agent 발화 시작: It’s completely understandable to feel lost, Noa. Many peopl
-    15.10s  user  발화 끝
-    23.63s  user  발화 시작: Well, I finished uni last year, and I still haven’t found an
-    23.63s  agent 발화 끝
-    30.21s  agent 발화 시작: That’s a common feeling after graduation. It takes time to f
-    30.21s  user  발화 끝
-    41.05s  user  발화 시작: I’ve looked at a few things, but nothing really clicks. Ever
-    41.05s  agent 발화 끝
-    46.86s  agent 발화 시작: Pointlessness is a heavy feeling. It sounds like you might b
-    46.86s  user  발화 끝
-    57.32s  user  발화 시작: Right.
-    57.32s  agent 발화 끝
-    57.71s  user  발화 시작: I did a media degree, but the industry seems so competitive,
-    57.71s  user  발화 끝
-    63.91s  agent 발화 시작: The media industry can be challenging, yes. It’s good you re
-    63.91s  user  발화 끝
-    73.98s  user  발화 시작: I think it’s—
-    73.98s  agent 발화 끝
-    75.14s  user  발화 시작: …do you think it’s okay to just… take a break and work a ran
-    75.14s  user  발화 끝
-    82.11s  agent 발화 시작: Noa. Taking a break to recharge and gain different experienc
-    82.11s  user  발화 끝
-    91.02s  user  발화 시작: That’s… a relief to hear. I was worried I’d be falling behin
-    91.02s  agent 발화 끝
-    95.66s  agent 발화 시작: Falling behind is a feeling, not a fact. Everyone’s journey 
-    95.66s  user  발화 끝
-   104.18s  user  발화 시작: Maybe. I just don't want to end up stuck in something I hate
-   104.18s  agent 발화 끝
-   109.22s  agent 발화 시작: It’s wise to be mindful of that. What would a “hate” job loo
-   109.22s  user  발화 끝
-   118.13s  user  발화 시작: Yeah.
-   118.13s  agent 발화 끝
-   118.52s  user  발화 시작: Probably something really rigid, with no creativity. And def
-   118.52s  user  발화 끝
-   125.49s  agent 발화 시작: So, a role that allows for independent work and creative exp
-   125.49s  user  발화 끝
-   133.23s  user  발화 시작: Yeah, that sounds… good. But how do I even *find* something 
-   133.23s  agent 발화 끝
-   138.27s  agent 발화 시작: We can explore resources for identifying roles that align wi
-   138.27s  user  발화 끝
-   146.79s  user  발화 시작: Okay. That actually sounds helpful. Thanks, Harina.
-   146.79s  agent 발화 끝
-   149.50s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Oscar, it’s lovely to connect with you. I'm Falo.
+     3.65s  user  발화 시작: Yeah.
+     3.65s  agent 발화 끝
+     4.01s  user  발화 시작: What exactly does a life coach *do*?
+     4.01s  user  발화 끝
+     6.57s  agent 발화 시작: I help you explore your thoughts and feelings, identify what
+     6.57s  user  발화 끝
+    14.96s  user  발화 시작: Yeah.
+    14.96s  agent 발화 끝
+    15.32s  user  발화 시작: Sounds… intense. I'm just feeling a bit stuck lately, you kn
+    15.32s  user  발화 끝
+    19.34s  agent 발화 시작: It's completely normal to feel stuck sometimes, Oscar. It ta
+    19.34s  user  발화 끝
+    28.09s  user  발화 시작: Probably work. I’ve been at the same company for fifteen yea
+    28.09s  agent 발화 끝
+    34.66s  agent 발화 시작: Fifteen years is a significant commitment. It’s understandab
+    34.66s  user  발화 끝
+    42.68s  user  발화 시작: Yeah.
+    42.68s  agent 발화 끝
+    43.05s  user  발화 시작: It’s just… repetitive. No room to grow. I feel like I’m just
+    43.05s  user  발화 끝
+    50.35s  agent 발화 시작: It sounds like you’re craving a sense of purpose and challen
+    50.35s  user  발화 끝
+    56.55s  user  발화 시작: …do you think it’s too late to change careers at my age?
+    56.55s  agent 발화 끝
+    60.93s  agent 발화 시작: Absolutely not! It's never too late to pursue something that
+    60.93s  user  발화 끝
+    68.95s  user  발화 시작: That’s good to hear. I’ve always been interested in photogra
+    68.95s  agent 발화 끝
+    75.15s  agent 발화 시작: Photography is a wonderful creative outlet. What draws you t
+    75.15s  user  발화 끝
+    83.91s  user  발화 시작: Right.
+    83.91s  agent 발화 끝
+    84.27s  user  발화 시작: I think… capturing a moment. Preserving a feeling. It feels 
+    84.27s  user  발화 끝
+    88.29s  agent 발화 시작: That’s a beautiful way to put it. It sounds like photography
+    88.29s  user  발화 끝
+    98.14s  user  발화 시작: Yeah, yeah.
+    98.14s  agent 발화 끝
+    98.87s  user  발화 시작: Maybe. It’s scary, though. Leaving the security of a steady 
+    98.87s  user  발화 끝
+   102.88s  agent 발화 시작: It’s perfectly natural to feel apprehensive about change, Os
+   102.88s  user  발화 끝
+   112.37s  user  발화 시작: I guess… having a plan. Knowing I could actually make a livi
+   112.37s  agent 발화 끝
+   117.47s  agent 발화 시작: That’s a very practical approach. A solid plan can definitel
+   117.47s  user  발화 끝
+   127.32s  agent 발화 끝

@@ -1,113 +1,78 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Klellaus, a upbeat and supportive counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Arion, a thoughtful and soft-spoken personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Anton",
+    "name": "Quinn",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "American",
+    "gender": "non-binary",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-04-07",
+      "category": "home",
+      "text": "User's home address is 644 Elm Street."
     },
     {
-      "date": "2026-05-22",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-03-18",
+      "category": "work",
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-01-29",
+      "date": "2025-12-08",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-26",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
-    },
-    {
-      "date": "2026-01-03",
-      "category": "home",
-      "text": "User's home address is 685 Cedar Lane."
-    },
-    {
-      "date": "2025-06-10",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-06-11",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-01",
-      "title": "Booked a dentist appointment",
+      "date": "2025-08-18",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-21",
-      "title": "Researching a used car",
+      "date": "2025-06-14",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-08",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, Klellaus, how are things going?
-[  2.44s][moshi] Things are wonderful, thank you! I'm really glad to be here to help you today. Is there anything on your mind?
-[ 10.96s][user ] «backchannel» Mm-hmm.
-[ 11.37s][user ] Um, yeah, actually. I was wondering about that song, "Boom"...
-[ 15.43s][moshi] Ah, "Boom"! A very popular song. What specifically about it were you curious about?
-[ 21.11s][user ] The artist... what’s his real ⟨ret@23.22s⟩ name?
-[ 23.54s][moshi] ⟦⚡SPAN@23.54s: Jonathan Smith was born on January 17, 1971, and is known professionally as Jon Secada.⟧ The artist you’re thinking of is Jonathan Smith, though he’s professionally known as Jon Secada.
-[ 29.63s][user ] Oh, Secada, right! I always forget.
-[ 32.07s][moshi] It happens! Remembering names can be tricky. Don’t worry about it too much.
-[ 37.35s][user ] «backchannel» Uh-huh.
-[ 37.75s][user ] It's just… things are tight right now, you know?
-[ 41.40s][moshi] I understand. Financial stress can definitely cloud your mind. We can certainly talk about budgeting if you’d like.
-[ 48.71s][user ] «backchannel» Right.
-[ 49.12s][user ] Yeah, maybe later. What’s the weather like today? ⟨ret@52.28s⟩
-[ 52.36s][moshi] ⟦⚡SPAN@52.36s: (tool result) Current conditions are 24.0°C, humidity 68%, wind 3.0 km/h.⟧ Right now, it’s 24.0°C with 68% humidity and a 3.0 km/h wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 57.24s][user ] «backchannel» Nice.
-[ 57.64s][user ] That sounds… pleasant.
-[ 58.86s][moshi] It does, doesn't it? A little sunshine can really lift your spirits.
-[ 63.73s][user ] I need to find a good restaurant nearby. ⟨ret@66.82s⟩
-[ 66.98s][moshi] ⟦⚡SPAN@66.98s: (tool result) Found: "The Golden Spoon", 4.5 stars, 1.2km away, Italian cuisine.⟧ I found “The Golden Spoon”, an Italian restaurant 1.2 kilometers away with 4.5 stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 72.66s][user ] Oh, that sounds good!
-[ 74.28s][moshi] Excellent! Sometimes a nice meal is just what you need.
-[ 78.34s][user ] «backchannel» Yeah.
-[ 78.75s][user ] I need to book an appointment with my doctor.
-[ 82.40s][moshi] I can help with that! Do you have a preferred doctor or specialty?
-[ 87.68s][user ] «backchannel» Mhm.
-[ 88.09s][user ] Dr. Lee. ⟨ret@88.74s⟩
-[ 88.90s][moshi] ⟦⚡SPAN@88.90s: (tool result) Dr. Lee, Cardiology, 123 Main Street, (555) 123-4567.⟧ Dr. Lee is a cardiologist at 123 Main Street, and their number is (555) 123-4567.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Lee"}}
-[ 94.99s][user ] «backchannel» Uh-huh.
-[ 95.39s][user ] Thanks!
-[ 95.80s][moshi] You're very welcome! Remember, taking care of your health is a key part of financial well-being too.
+[  0.00s][user ] I’m trying to remember a British comedy show, it’s on the radio.
+[  4.73s][moshi] It sounds like you might be thinking of a show called “The News Quiz.”
+[ 10.25s][user ] That’s it! Who was one of the early hosts, a comedian born in ⟨ret@15.36s⟩ 1969?
+[ 15.76s][moshi] «interrupted» ⟦⚡SPAN@15.76s: Born in East Dulwich, London, on 26 June 1969, Jimmy Carr is an English-Irish comedian and television personal⟧ One of the early hosts was Jimmy Carr, born—
+[ 19.31s][user ] …did he start on the show right away…
+[ 22.46s][user ] …or was he on other things first?
+[ 25.22s][moshi] Before “The News Quiz,” Jimmy Carr was building a career in television.
+[ 29.95s][user ] «backchannel» Mhm.
+[ 30.35s][moshi] He began as a joke writer for established comedians, then did stand-up.
+[ 35.08s][user ] It's good to know how people get their start. Do you have any advice for encouraging my child's creativity?
+[ 42.56s][moshi] Fostering creativity is wonderful; offering open-ended materials is a great start.
+[ 46.90s][user ] «backchannel» Mm-hmm.
+[ 47.29s][user ] Like what kind of materials?
+[ 49.26s][moshi] Things like building blocks, paints, or even just cardboard boxes can inspire imagination.
+[ 54.39s][user ] [happy] That sounds easy enough! What’s the weather like in London today? ⟨ret@59.04s⟩
+[ 59.12s][moshi] ⟦⚡SPAN@59.12s: (tool result) London: 21.0°C, humidity 68%, wind 6.2 km/h, condition: Partly Cloudy⟧ The weather in London is currently 21.0°C, with partly cloudy conditions. Perhaps a good day for building a fort with those cardboard boxes!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}

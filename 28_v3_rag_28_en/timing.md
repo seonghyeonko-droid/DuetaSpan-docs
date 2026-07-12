@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Maya",
+#     "name": "Ella",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-06-23",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "home",
-#       "text": "User's home address is 198 Cedar Lane."
+#       "date": "2026-06-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-29",
+#       "date": "2026-05-30",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-09-14",
+#       "date": "2026-05-18",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Lisbon in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-02-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,45 +60,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to figure out my next s | S2 I was considering Seattle, um, but | S3 Hmm, that sounds…okay. What about  | S4 That's good to know. I think I nee
+# EXAMINER(FDB-v2) 단계: S1 Hey Tae, do you have any advice fo | S2 That makes sense. But what if they | S3 …Do you think a points system woul | S4 Okay, logical consequences. That’s
 
-     0.00s  user  발화 시작: I’m trying to figure out my next steps, it’s all a bit overw
-     4.79s  agent 발화 시작: It’s completely natural to feel that way when facing big cha
-     4.79s  user  발화 끝
-    11.05s  user  발화 시작: Mm-hmm.
-    11.05s  agent 발화 끝
-    11.42s  user  발화 시작: Well, I’m thinking about moving to a new city, but I don’t e
-    11.42s  user  발화 끝
-    17.69s  agent 발화 시작: That’s a wonderful starting point! It’s exciting to consider
-    17.69s  user  발화 끝
-    23.95s  user  발화 시작: Uh-huh.
-    23.95s  agent 발화 끝
-    24.32s  user  발화 시작: I was considering Seattle, um, but I don’t know what the wea
-    24.32s  user  발화 끝
-    29.60s  <ret> 발화 (turn7 첫 프레임)
-    29.84s  agent 발화 시작: <ret> Seattle’s weather is currently 18.3 degrees Celsius, w
-    29.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) The current weather in Seattle, Washington is 18.3°C, wi
-    29.84s  user  발화 끝
-    36.48s  agent 발화 시작: It’s a lovely time of year to visit, if you enjoy mild tempe
-    36.48s  agent 발화 끝
-    41.27s  user  발화 시작: Hmm, that sounds…okay. What about the cost of living there?
-    41.27s  agent 발화 끝
-    44.55s  <ret> 발화 (turn10 첫 프레임)
-    44.95s  agent 발화 시작: <ret> Seattle’s cost of living is 23 percent higher than the
-    44.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) The cost of living in Seattle, Washington is 23% higher 
-    44.95s  user  발화 끝
-    51.21s  user  발화 시작: Exactly.
-    51.21s  agent 발화 끝
-    51.58s  user  발화 시작: Twenty-three percent? Wow, that’s a lot. Is it really that d
-    51.58s  user  발화 끝
-    56.50s  <ret> 발화 (turn13 첫 프레임)
-    56.74s  agent 발화 시작: <ret> Denver’s cost of living is 7 percent higher than the n
-    56.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.90s]: (tool result) Denver, Colorado’s cost of living is 7% higher than the 
-    56.74s  user  발화 끝
-    62.64s  agent 발화 시작: So, it’s significantly more affordable than Seattle, it seem
-    62.64s  agent 발화 끝
-    65.95s  user  발화 시작: That's good to know. I think I need to do a bit more researc
-    65.95s  agent 발화 끝
-    71.11s  agent 발화 시작: Taking your time and gathering information is a very wise ap
-    71.11s  user  발화 끝
-    77.37s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Tae, do you have any advice for dealing with a teenager 
+     6.25s  agent 발화 시작: Oh, that’s a really common challenge! It's about finding the
+     6.25s  user  발화 끝
+    12.87s  user  발화 시작: Yeah.
+    12.87s  agent 발화 끝
+    13.23s  user  발화 시작: Easier said than done, honestly. It feels like I’m constantl
+    13.23s  user  발화 끝
+    17.28s  agent 발화 시작: I understand that feeling completely—it can be draining. Let
+    17.28s  user  발화 끝
+    23.89s  user  발화 시작: Uh-huh.
+    23.89s  agent 발화 끝
+    24.26s  user  발화 시작: Okay, good. What's the best way to even *start* that convers
+    24.26s  user  발화 끝
+    28.06s  <ret> 발화 (turn7 첫 프레임)
+    28.30s  agent 발화 시작: <ret> It’s best to start by acknowledging your teen's feelin
+    28.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: Experts suggest beginning by acknowledging your teen’s feelings and av
+    28.30s  user  발화 끝
+    34.19s  user  발화 시작: That makes sense. But what if they just shut down and won't 
+    34.19s  agent 발화 끝
+    38.96s  agent 발화 시작: Sometimes, teens need a little space before they’re ready to
+    38.96s  user  발화 끝
+    44.11s  user  발화 시작: Yeah, totally.
+    44.11s  agent 발화 끝
+    44.85s  user  발화 시작: Right… it's just frustrating. What about rewards? Do those w
+    44.85s  user  발화 끝
+    48.52s  agent 발화 시작: Rewards can be helpful, but they need to be approached caref
+    48.52s  user  발화 끝
+    52.56s  user  발화 시작: …Do you think a points system would be too childish for a fi
+    52.56s  agent 발화 끝
+    57.26s  <ret> 발화 (turn14 첫 프레임)
+    57.34s  agent 발화 시작: <ret> The American Psychological Association found positive 
+    57.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.78s]: A study by the American Psychological Association found that positive 
+    57.34s  user  발화 끝
+    62.12s  user  발화 시작: Yeah, totally.
+    62.12s  agent 발화 끝
+    62.86s  user  발화 시작: Interesting. So, focus on the positive… what about consequen
+    62.86s  user  발화 끝
+    67.64s  agent 발화 시작: Consequences are important, but they should be logical and r
+    67.64s  user  발화 끝
+    73.52s  user  발화 시작: Okay, logical consequences. That’s…
+    73.52s  agent 발화 끝
+    74.99s  user  발화 시작: …good to remember. Thanks, Tae.
+    74.99s  user  발화 끝
+    76.83s  agent 발화 시작: You’re very welcome. Remember, consistency is key, and be pa
+    76.83s  user  발화 끝
+    82.34s  agent 발화 끝

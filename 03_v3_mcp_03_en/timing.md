@@ -4,161 +4,146 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Sky",
+#     "name": "Maya",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-04-25",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-02-11",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-10-08",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-03-10",
+#       "date": "2025-06-06",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-14",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-30",
+#       "date": "2025-11-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-17",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a good hotel in Seo | S2 Actually, can you book a reservati | S3 I think it was last week, maybe ar | S4 Seven thirty PM.
+# EXAMINER(FDB-v2) 단계: S1 Can you summarize Google’s LinkedI | S2 Yeah, it's a lot of work. I’m feel | S3 I need to book a doctor's appointm | S4 I think I’ll start working on that
 
-     0.00s  user  발화 시작: I need to find a good hotel in Seoul for next weekend.
-     3.69s  <ret> 발화 (turn1 첫 프레임)
-     4.09s  agent 발화 시작: <ret> Seoul offers a wide range of hotels, generally costing
-     4.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.49s]: Seoul has many hotels, ranging from budget-friendly to luxurious, with
-     4.09s  user  발화 끝
-    11.58s  user  발화 시작: Right.
-    11.58s  agent 발화 끝
-    11.92s  user  발화 시작: Uh, can you search for hotels with a pool?
-    11.92s  user  발화 끝
-    14.90s  <ret> 발화 (turn4 첫 프레임)
-    14.98s  agent 발화 시작: <ret> I can refine the search to include hotels that have a 
-    14.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.43s]: (tool result) {"hotels": [{"name": "The Shilla Seoul", "address": "249
-    14.98s  user  발화 끝
-    19.41s  agent 발화 시작: I found The Shilla Seoul, located at 249 Dongho-ro, with a p
-    19.41s  agent 발화 끝
-    30.64s  user  발화 시작: That sounds nice. What’s the weather like there next Saturda
-    30.64s  agent 발화 끝
-    33.65s  <ret> 발화 (turn7 첫 프레임)
-    34.05s  agent 발화 시작: <ret> Next Saturday, July eleventh in Seoul, the weather wil
-    34.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: (tool result) {"temperature": 28.5, "humidity": 65, "wind speed": 7.2,
-    34.05s  user  발화 끝
-    45.97s  user  발화 시작: Hmm…
-    45.97s  agent 발화 끝
-    46.31s  agent 발화 시작: Is there anything else I can help you with regarding your tr
-    46.31s  user  발화 끝
-    50.39s  user  발화 시작: Actually, can you book a reservation there for two nights?
-    50.39s  agent 발화 끝
-    53.64s  <ret> 발화 (turn11 첫 프레임)
-    53.80s  agent 발화 시작: <ret> Your reservation at The Shilla Seoul is confirmed for 
-    53.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.60s]: (tool result) {"confirmation id": "SHL20260711-2", "check in date": "2
-    53.80s  user  발화 끝
-    66.40s  user  발화 시작: Perfect!
-    66.40s  agent 발화 끝
-    66.74s  agent 발화 시작: [happy] Wonderful! I’m glad I could help with that.
-    66.74s  user  발화 끝
-    69.80s  user  발화 시작: Yeah.
-    69.80s  agent 발화 끝
-    70.14s  user  발화 시작: I also need to set an alarm for seven am on Saturday.
-    70.14s  user  발화 끝
-    73.83s  <ret> 발화 (turn16 첫 프레임)
-    74.23s  agent 발화 시작: <ret> I’ve set an alarm for seven AM on Saturday, July eleve
-    74.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.47s]: (tool result) {"alarm id": "ALM20260711-7", "time": "07:00", "date": "
-    74.23s  user  발화 끝
-    80.70s  user  발화 시작: Exactly.
-    80.70s  agent 발화 끝
-    81.04s  agent 발화 시작: Is there anything else on your mind this morning?
-    81.04s  user  발화 끝
-    84.10s  user  발화 시작: Yeah.
-    84.10s  agent 발화 끝
-    84.44s  user  발화 시작: I’m trying to remember if I made a note of my flight number.
-    84.44s  user  발화 끝
-    88.87s  agent 발화 시작: Let's see if I can find a record of that for you. Do you rec
-    88.87s  user  발화 끝
-    96.02s  user  발화 시작: I think it was last week, maybe around the tenth?
-    96.02s  agent 발화 끝
-    99.26s  <ret> 발화 (turn23 첫 프레임)
-    99.42s  agent 발화 시작: <ret> On July seventh, you noted you have a flight to Jeju o
-    99.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.45s]: [2026-07-07] I have a flight to Jeju on Korean Air flight KE123.
-    99.42s  user  발화 끝
-   104.87s  user  발화 시작: Yeah.
-   104.87s  agent 발화 끝
-   105.21s  user  발화 시작: Oh yes, that's it! Thank you.
-   105.21s  user  발화 끝
-   107.26s  agent 발화 시작: You're very welcome. It's easy to forget details when planni
-   107.26s  user  발화 끝
-   111.34s  user  발화 시작: Mm-hmm.
-   111.34s  agent 발화 끝
-   111.68s  user  발화 시작: I need to find a nice restaurant near the hotel.
-   111.68s  user  발화 끝
-   114.93s  <ret> 발화 (turn29 첫 프레임)
-   115.09s  agent 발화 시작: <ret> I can search for restaurants near The Shilla Seoul.
-   115.09s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.06s]: (tool result) {"restaurants": [{"name": "La Cuisine", "cuisine": "Fren
-   115.09s  user  발화 끝
-   118.15s  agent 발화 시작: I found La Cuisine, a French restaurant, rated four point fi
-   118.15s  agent 발화 끝
-   129.05s  user  발화 시작: Yeah.
-   129.05s  agent 발화 끝
-   129.39s  user  발화 시작: La Cuisine sounds lovely. Can you make a reservation there f
-   129.39s  user  발화 끝
-   133.81s  agent 발화 시작: I can certainly try. What time would you like the reservatio
-   133.81s  user  발화 끝
-   137.90s  user  발화 시작: Seven thirty PM.
-   137.90s  agent 발화 끝
-   138.92s  agent 발화 시작: And for how many people?
-   138.92s  user  발화 끝
-   140.62s  user  발화 시작: Two.
-   140.62s  agent 발화 끝
-   140.88s  <ret> 발화 (turn37 첫 프레임)
-   140.96s  agent 발화 시작: <ret> Your reservation at La Cuisine is confirmed for Saturd
-   140.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) {"confirmation id": "LC20260711-730", "restaurant name":
-   140.96s  user  발화 끝
-   148.80s  user  발화 시작: That’s fantastic!
-   148.80s  agent 발화 끝
-   149.48s  agent 발화 시작: [surprised] Excellent. It sounds like your trip is coming to
-   149.48s  user  발화 끝
-   153.22s  user  발화 시작: Mm-hmm.
-   153.22s  agent 발화 끝
-   153.56s  user  발화 시작: It is, thank you. I think that’s all for now.
-   153.56s  user  발화 끝
-   156.97s  agent 발화 시작: You're most welcome. Remember to prioritize rest during your
-   156.97s  user  발화 끝
-   162.08s  agent 발화 끝
+     0.00s  user  발화 시작: Can you summarize Google’s LinkedIn company page for me, and
+     3.86s  <ret> 발화 (turn1 첫 프레임)
+     4.26s  agent 발화 시작: <ret> Google’s LinkedIn page focuses on organizing informati
+     4.26s  ⚡SPAN 주입 [d'=1.52s / d_lead=12.78s]: (tool result) Google’s LinkedIn page showcases its mission to organize
+     4.26s  user  발화 끝
+    17.04s  user  발화 시작: Hmm, that’s good to know.
+    17.04s  agent 발화 끝
+    18.81s  agent 발화 시작: It’s wonderful you’re taking the time to explore different c
+    18.81s  user  발화 끝
+    23.42s  user  발화 시작: Yeah.
+    23.42s  agent 발화 끝
+    23.78s  user  발화 시작: I’m trying to decide where I might want to apply for an inte
+    23.78s  user  발화 끝
+    28.39s  agent 발화 시작: That’s a big decision, and I’m happy to help you think throu
+    28.39s  user  발화 끝
+    34.43s  user  발화 시작: Yeah.
+    34.43s  agent 발화 끝
+    34.78s  user  발화 시작: Computer science, mostly focusing on machine learning.
+    34.78s  user  발화 끝
+    37.26s  agent 발화 시작: Machine learning is a fascinating field. It requires dedicat
+    37.26s  user  발화 끝
+    42.23s  user  발화 시작: Yeah, it's a lot of work. I’m feeling a little overwhelmed w
+    42.23s  agent 발화 끝
+    47.20s  agent 발화 시작: It’s completely normal to feel overwhelmed sometimes, especi
+    47.20s  user  발화 끝
+    54.65s  user  발화 시작: I keep putting things off, though. It's a bad habit.
+    54.65s  agent 발화 끝
+    58.20s  agent 발화 시작: Procrastination is something many students struggle with. We
+    58.20s  user  발화 끝
+    64.24s  user  발화 시작: Yeah.
+    64.24s  agent 발화 끝
+    64.59s  agent 발화 시작: Perhaps focusing on small, achievable steps could help you f
+    64.59s  user  발화 끝
+    69.92s  user  발화 시작: That makes sense. What’s the weather like in Mountain View, 
+    69.92s  agent 발화 끝
+    73.42s  <ret> 발화 (turn17 첫 프레임)
+    73.82s  agent 발화 시작: <ret> Right now in Mountain View, California, it’s twenty-tw
+    73.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.58s]: (tool result) The current weather in Mountain View, California is 22.2
+    73.82s  user  발화 끝
+    83.40s  user  발화 시작: Yeah, yeah.
+    83.40s  agent 발화 끝
+    84.11s  user  발화 시작: That sounds nice.
+    84.11s  user  발화 끝
+    85.18s  agent 발화 시작: A comfortable temperature can certainly make focusing a litt
+    85.18s  user  발화 끝
+    89.79s  user  발화 시작: Mhm.
+    89.79s  agent 발화 끝
+    90.15s  user  발화 시작: I need to book a doctor's appointment.
+    90.15s  user  발화 끝
+    92.63s  agent 발화 시작: I can help with that. Do you have a preferred doctor or clin
+    92.63s  user  발화 끝
+    97.24s  user  발화 시작: Dr. Anya Sharma.
+    97.24s  agent 발화 끝
+    98.31s  agent 발화 시작: Okay. And what date are you hoping to schedule this appointm
+    98.31s  user  발화 끝
+   102.57s  user  발화 시작: Okay.
+   102.57s  agent 발화 끝
+   102.92s  user  발화 시작: Next Tuesday.
+   102.92s  user  발화 끝
+   103.23s  <ret> 발화 (turn28 첫 프레임)
+   103.63s  agent 발화 시작: <ret> Your appointment with Dr. Anya Sharma is confirmed for
+   103.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.81s]: (tool result) Appointment with Dr. Anya Sharma confirmed for Tuesday, 
+   103.63s  user  발화 끝
+   111.44s  user  발화 시작: Great, thank you!
+   111.44s  agent 발화 끝
+   112.50s  agent 발화 시작: You’re very welcome. Taking care of your health is so import
+   112.50s  user  발화 끝
+   118.18s  user  발화 시작: I think I’ll start working on that assignment now.
+   118.18s  agent 발화 끝
+   121.38s  agent 발화 시작: That sounds like a wonderful idea. Breaking it down into sma
+   121.38s  user  발화 끝
+   127.76s  user  발화 시작: Right.
+   127.76s  agent 발화 끝
+   128.12s  user  발화 시작: I’ll try.
+   128.12s  user  발화 끝
+   128.83s  agent 발화 시작: Remember, even small progress is still progress. Be patient 
+   128.83s  user  발화 끝
+   132.73s  user  발화 시작: Thanks, Nami.
+   132.73s  agent 발화 끝
+   133.44s  agent 발화 시작: Anytime. I’m here to support you on your journey.
+   133.44s  user  발화 끝
+   136.64s  agent 발화 끝

@@ -4,137 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Remy",
+#     "name": "Leo",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "home",
-#       "text": "User's home address is 730 Pine Court."
+#       "date": "2026-05-30",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-05-11",
+#       "date": "2026-01-12",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2025-06-26",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-10-14",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-10-01",
+#       "date": "2025-05-27",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-26",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-27",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly *is* guidance, though | S2 It is. And I feel guilty even *thi | S3 Exactly! And if I don’t answer, it | S4 “I” statements… like what?
+# EXAMINER(FDB-v2) 단계: S1 Um, wow, that's… a really unusual  | S2 I don’t know… just… me, I think. | S3 I… I don’t know. Maybe just life,  | S4 That doesn’t sound… terrible, actu
 
-     0.00s  agent 발화 시작: Hello Remy, it’s lovely to meet you. I’m Relina, and I’m her
-     9.01s  user  발화 시작: What exactly *is* guidance, though? Sounds… vague.
-     9.01s  agent 발화 끝
-    11.63s  agent 발화 시작: It’s about finding clarity within yourself, Remy. Helping yo
-    11.63s  user  발화 끝
-    18.39s  user  발화 시작: Yeah.
-    18.39s  agent 발화 끝
-    18.77s  user  발화 시작: Okay, well, I’m feeling pretty stuck right now, actually. It
-    18.77s  user  발화 끝
-    23.64s  agent 발화 시작: Family dynamics can be so complex. What feels particularly c
-    23.64s  user  발화 끝
-    29.27s  user  발화 시작: Yeah.
-    29.27s  agent 발화 끝
-    29.65s  user  발화 시작: Um, my mum, mostly. She’s… a lot. Always has been.
-    29.65s  user  발화 끝
-    33.40s  agent 발화 시작: It sounds like your relationship with your mother carries a 
-    33.40s  user  발화 끝
-    40.91s  user  발화 시작: Yeah.
-    40.91s  agent 발화 끝
-    41.28s  user  발화 시작: She just… expects things. All the time. And gets really upse
-    41.28s  user  발화 끝
-    47.29s  agent 발화 시작: That sounds incredibly draining, Remy. Constant expectations
-    47.29s  user  발화 끝
-    52.54s  user  발화 시작: It is. And I feel guilty even *thinking* about being upset w
-    52.54s  agent 발화 끝
-    58.17s  agent 발화 시작: That’s a very common feeling, wanting to honour your mother'
-    58.17s  user  발화 끝
-    64.55s  user  발화 시작: Boundaries… that's what I need to work on, I guess. But how?
-    64.55s  agent 발화 끝
-    69.06s  agent 발화 시작: It’s a process, definitely. It starts with identifying what 
-    69.06s  user  발화 끝
-    75.44s  user  발화 시작: …Is it normal to still feel this way in your late twenties?
-    75.44s  agent 발화 끝
-    79.94s  agent 발화 시작: It’s perfectly normal to grapple with family relationships a
-    79.94s  user  발화 끝
-    85.57s  user  발화 시작: Yeah.
-    85.57s  agent 발화 끝
-    85.95s  agent 발화 시작: It’s also common to carry patterns from childhood into adult
-    85.95s  user  발화 끝
-    92.70s  user  발화 시작: Probably just… her wanting to know everything about my life.
-    92.70s  agent 발화 끝
-    97.21s  agent 발화 시작: That level of inquiry can feel intrusive, especially when yo
-    97.21s  user  발화 끝
-   103.96s  user  발화 시작: Exactly! And if I don’t answer, it’s a whole thing. Guilt tr
-   103.96s  agent 발화 끝
-   109.59s  agent 발화 시작: Those are manipulative tactics, Remy, and it's understandabl
-   109.59s  user  발화 끝
-   114.85s  user  발화 시작: Uh-huh.
-   114.85s  agent 발화 끝
-   115.22s  user  발화 시작: Manipulative… yeah, that’s a strong word, but… it fits.
-   115.22s  user  발화 끝
-   118.60s  agent 발화 시작: It’s important to acknowledge those patterns. What happens w
-   118.60s  user  발화 끝
-   124.61s  user  발화 시작: I usually just give in. It's easier. But then I feel resentf
-   124.61s  agent 발화 끝
-   129.11s  agent 발화 시작: That's a very understandable cycle. Giving in avoids conflic
-   129.11s  user  발화 끝
-   135.11s  user  발화 시작: So, what do I do? I can't just keep doing this.
-   135.11s  agent 발화 끝
-   139.24s  agent 발화 시작: We can explore some gentle ways to communicate your needs, s
-   139.24s  user  발화 끝
-   144.50s  user  발화 시작: “I” statements… like what?
-   144.50s  agent 발화 끝
-   146.00s  agent 발화 시작: Instead of saying “You always ask too many questions,” you c
-   146.00s  user  발화 끝
-   154.26s  user  발화 시작: Hmm. That sounds… less confrontational, I guess.
-   154.26s  agent 발화 끝
-   156.88s  agent 발화 시작: It focuses on your experience, rather than blaming her. It’s
-   156.88s  user  발화 끝
-   163.26s  user  발화 시작: Right.
-   163.26s  agent 발화 끝
-   163.64s  user  발화 시작: I think I could try that. It feels scary, though.
-   163.64s  user  발화 끝
-   167.39s  agent 발화 시작: It *is* brave, Remy. Stepping outside of established pattern
-   167.39s  user  발화 끝
-   174.90s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Leo, it’s lovely to meet you. I’m Zaelo, and I help pe
+     7.93s  user  발화 시작: Um, wow, that's… a really unusual name. What exactly does th
+     7.93s  agent 발화 끝
+    13.34s  agent 발화 시작: It’s a name I’ve always resonated with, Leo. Often, a lack o
+    13.34s  user  발화 끝
+    22.71s  user  발화 시작: Stuck how? I just feel… overwhelmed, I guess. Everything fee
+    22.71s  agent 발화 끝
+    26.68s  agent 발화 시작: Overwhelm is a very common feeling, especially when facing a
+    26.68s  user  발화 끝
+    35.33s  user  발화 시작: Yeah.
+    35.33s  agent 발화 끝
+    35.69s  user  발화 시작: I don't even know *where* to start. It’s like my brain is ju
+    35.69s  user  발화 끝
+    40.74s  agent 발화 시작: That fuzziness is your mind’s way of signaling it needs a pa
+    40.74s  user  발화 끝
+    49.39s  user  발화 시작: Not really, no. Work’s been crazy busy.
+    49.39s  agent 발화 끝
+    51.92s  agent 발화 시작: It sounds like you’re prioritizing work over your own well-b
+    51.92s  user  발화 끝
+    60.93s  user  발화 시작: I don’t know… just… me, I think.
+    60.93s  agent 발화 끝
+    63.45s  agent 발화 시작: It's easy to lose sight of yourself when you’re constantly f
+    63.45s  user  발화 끝
+    73.19s  user  발화 시작: Right.
+    73.19s  agent 발화 끝
+    73.55s  agent 발화 시작: Sometimes, simply acknowledging that feeling of loss—allowin
+    73.55s  user  발화 끝
+    81.12s  user  발화 시작: I tried once, years ago. Didn’t stick.
+    81.12s  agent 발화 끝
+    83.64s  agent 발화 시작: That’s perfectly alright. Not every method works for everyon
+    83.64s  user  발화 끝
+    91.58s  user  발화 시작: It just feels… pointless, you know? Like nothing I do matter
+    91.58s  agent 발화 끝
+    95.54s  agent 발화 시작: That thought—that nothing matters—is a powerful one, Leo. Wh
+    95.54s  user  발화 끝
+   103.83s  user  발화 시작: I… I don’t know. Maybe just life, generally? It feels like e
+   103.83s  agent 발화 끝
+   109.96s  agent 발화 시작: That’s a very common illusion, Leo. Everyone struggles with 
+   109.96s  user  발화 끝
+   119.34s  user  발화 시작: Mhm.
+   119.34s  agent 발화 끝
+   119.70s  user  발화 시작: Easier said than done, I guess.
+   119.70s  user  발화 끝
+   121.86s  agent 발화 시작: It is, absolutely. But recognizing that illusion is the firs
+   121.86s  user  발화 끝
+   130.51s  user  발화 시작: Oh.
+   130.51s  agent 발화 끝
+   130.87s  user  발화 시작: Hmm… I used to love photography. Haven’t picked up a camera 
+   130.87s  user  발화 끝
+   135.56s  agent 발화 시작: Photography! That’s wonderful. It’s a beautiful way to captu
+   135.56s  user  발화 끝
+   144.93s  user  발화 시작: Mm-hmm.
+   144.93s  agent 발화 끝
+   145.29s  user  발화 시작: Maybe. I'm just worried I’ve lost the… the spark.
+   145.29s  user  발화 끝
+   148.54s  agent 발화 시작: The spark isn't lost, Leo, it's simply dimmed. Sometimes, al
+   148.54s  user  발화 끝
+   157.91s  user  발화 시작: That doesn’t sound… terrible, actually.
+   157.91s  agent 발화 끝
+   159.72s  agent 발화 시작: It doesn't have to be grand or ambitious. Just a small act o
+   159.72s  user  발화 끝
+   170.53s  user  발화 시작: I suppose so. It's just hard to find the time.
+   170.53s  agent 발화 끝
+   174.14s  agent 발화 시작: Time is a precious resource, Leo. But prioritizing your well
+   174.14s  user  발화 끝
+   184.23s  user  발화 시작: You make it sound so simple.
+   184.23s  agent 발화 끝
+   186.40s  agent 발화 시작: It's not always simple, but it is possible. And I’m here to 
+   186.40s  user  발화 끝
+   196.49s  agent 발화 끝

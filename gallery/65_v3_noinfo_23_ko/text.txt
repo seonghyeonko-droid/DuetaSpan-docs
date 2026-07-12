@@ -1,102 +1,65 @@
 v3_noinfo_23_ko src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 누난이며, 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치입니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 통해 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치, 오리올입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "주빈",
+    "name": "재아",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-06-21",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
     },
     {
-      "date": "2025-11-21",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-01-10",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-10-02",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2025-09-04",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     },
     {
       "date": "2025-07-10",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-17",
-      "title": "Setting up a home network",
+      "date": "2025-07-31",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-24",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 엄마 친구분 연락처 알 수 ⟨ret@2.66s⟩ 있을까요?
-[  3.06s][moshi] ⟦⚡SPAN@3.06s: (no information found)⟧ 죄송하지만, 찾을 수 있는 정보가 없네요. 개인적인 연락처는 제가 접근할 수 없어요.
-      CALL: {"function": "search", "arguments": {"query": "엄마 친구 연락처"}}
-[  9.17s][user ] 아, 그렇군요. 그럼 오늘 날씨는 어때요? ⟨ret@11.99s⟩
-[ 12.23s][moshi] ⟦⚡SPAN@12.23s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 현재 서울의 날씨는 기온 이십삼도, 습도 칠십사퍼센트, 풍속은 시속 오 점 오킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울"}}
-[ 18.34s][moshi] 오늘 하루도 활기차게 보내세요.
-[ 20.38s][user ] 이번 주 토요일에 영화 보러 갈까요?
-[ 23.43s][moshi] 좋은 생각이에요. 어떤 영화를 보고 싶으세요?
-[ 26.49s][user ] «backchannel» 네네.
-[ 27.00s][user ] 음… 액션 영화가 보고 싶어요. ⟨ret@29.30s⟩
-[ 29.54s][moshi] ⟦⚡SPAN@29.54s: (tool result) “범죄도시 4” – 2024년 4월 24일 개봉, 마동석, 이준혁 주연. CGV, 롯데시네마, 메가박스에서 상영 중.⟧ “범죄도시 사”가 현재 상영 중인데, 마동석 씨와 이준혁 씨가 출연합니다.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "액션"}}
-[ 34.64s][user ] «backchannel» 네.
-[ 35.15s][user ] 그럼 “범죄도시 사” 예매해 줘. ⟨ret@37.45s⟩
-[ 37.69s][moshi] ⟦⚡SPAN@37.69s: (tool result) CGV 강남점, 7월 13일 토요일 14:00, 성인 2석 확정. 예약번호: 9876543210⟧ 네, 씨 지 브이 강남점에서 칠월 십삼일 토요일 오후 두시에 성인 두석으로 예매 완료되었습니다. 예약번호는 구 팔 칠 육 오 사 삼 이 일 공입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "범죄도시 4"}}
-[ 50.43s][moshi] 즐거운 시간 보내세요.
-[ 51.96s][user ] 고마워요. 혹시… —
-[ 53.49s][user ] … 지난번에 말씀하신 명상 앱 다시 알려줄 수 있어요? ⟨ret@57.91s⟩
-[ 58.07s][moshi] ⟦⚡SPAN@58.07s: Calm is a popular meditation and sleep app, offering guided meditations, sleep stories, and relaxing music. It⟧ 아, 네, 물론이죠. 그때 말씀드렸던 앱은 ‘Calm’이었어요.
-[ 61.64s][moshi] ‘Calm’이라는 명상 앱인데, 가이드 명상이나 수면 유도 콘텐츠가 다양하게 준비되어 있어요. iOS와 Android에서 모두 사용하실 수 있습니다. 편안한 휴식에 도움이 될 거예요.
-[ 72.84s][user ] 아, ‘Calm’이었구나. 다시 한번 알려줘서 고마워.
-[ 75.90s][moshi] 언제든지 필요하시면 말씀해 주세요.
-[ 77.94s][user ] 이번 주말에 등산 갈 만한 곳 추천해 줄 수 있어? ⟨ret@82.95s⟩
-[ 83.03s][moshi] ⟦⚡SPAN@83.03s: (tool result) 북한산 국립공원 – 서울, 난이도 중, 약 3시간 소요.⟧ 서울에 있는 북한산 국립공원이 등산하기 좋겠네요, 난이도는 중간 정도이고 약 세시간 정도 걸립니다.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"type": "등산"}}
-[ 89.65s][moshi] 아름다운 자연을 만끽하시길 바랍니다.
-[ 91.69s][user ] 북한산은 가봤는데, 다른 곳 없을까? ⟨ret@94.16s⟩
-[ 94.24s][moshi] ⟦⚡SPAN@94.24s: (tool result) 도봉산 – 서울, 난이도 상, 약 4시간 소요.⟧ 서울의 도봉산도 괜찮겠네요, 난이도는 높은 편이고 약 네시간 정도 걸립니다.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"type": "등산", "exclude": "북한산 국립공원"}}
-[ 99.33s][user ] 도봉산은 좀 힘들어 보이네.
-[101.37s][moshi] 등산 경험이 많으시다면 도전해 볼 만하죠.
-[104.42s][user ] «backchannel» 예.
-[104.93s][user ] 그럼 그냥 집에서 쉬어야겠다.
-[106.97s][moshi] 휴식도 정말 중요하죠. 충분히 쉬면서 재충전하는 시간 가지세요.
-[111.05s][user ] «backchannel» 예.
-[111.56s][user ] 혹시 내일 모레가 무슨 요일이야? ⟨ret@113.86s⟩
-[114.10s][moshi] ⟦⚡SPAN@114.10s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ 현재 이천이십육년 칠월 십일 금요일 오후 두시 삼십삼분이고, 내일 모레는 일요일입니다.
-      CALL: {"function": "get_time", "arguments": {}}
-[119.71s][user ] 고마워.
+[  0.00s][user ] 혹시 김민지 씨 연락처 알 수 ⟨ret@2.97s⟩ 있을까요?
+[  3.37s][moshi] ⟦⚡SPAN@3.37s: (no information found)⟧ 죄송합니다. 김민지 씨의 연락처는 찾을 수 없었습니다. 개인 정보 보호 때문에 제가 접근할 수 없는 정보일 수도 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "김민지 연락처"}}
+[ 12.05s][user ] «backchannel» 네네.
+[ 12.53s][user ] 음… 그렇군요.
+[ 13.50s][moshi] 혹시 다른 분의 정보를 찾아드릴까요?
+[ 15.91s][user ] 그럼, 이번 주 토요일 날씨는 어때요? ⟨ret@18.56s⟩
+[ 18.80s][moshi] ⟦⚡SPAN@18.80s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 이번 주 토요일인 칠월 십일일 날씨는 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 예상됩니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-11"}}
+[ 26.03s][user ] «backchannel» 진짜요?
+[ 26.51s][user ] 아, 그렇군요.
+[ 27.48s][moshi] 맑은 날씨에 좋은 계획 세우시길 바랍니다.

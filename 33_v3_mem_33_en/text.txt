@@ -1,68 +1,89 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Mora, a upbeat and supportive personal guide who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Kluon, a curious and validating life coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Adam",
+    "name": "Jordan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-17",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2025-12-31",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-03-14",
+      "date": "2025-10-25",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "text": "User is planning a trip to Vietnam in August."
     },
     {
-      "date": "2026-03-13",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2025-10-01",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-02-08",
-      "category": "home",
-      "text": "User's home address is 816 Birch Road."
+      "date": "2025-08-08",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-09-11",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-07-21",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-20",
-      "title": "Researching a used car",
+      "date": "2026-05-24",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-09-29",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Adam, I'm Mora!
-[  1.49s][user ] Hi Mora, it's nice to meet you too. What time is it right now? ⟨ret@6.56s⟩
-[  6.72s][moshi] ⟦⚡SPAN@6.72s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Paris right now.⟧ It is currently 10:17 AM in Paris. A perfect time to start exploring!
+[  0.00s][moshi] Hi Jordan, I'm Kluon. It's lovely to connect with you today.
+[  3.86s][user ] «backchannel» Yeah, totally.
+[  4.57s][user ] Hello! It is good to meet you too. What’s the time in London right now? ⟨ret@9.67s⟩
+[  9.83s][moshi] ⟦⚡SPAN@9.83s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/London right now.⟧ It is currently ten seventeen in the morning in London. A perfect time for a mindful moment, don't you think?
       CALL: {"function": "get_time", "arguments": {}}
-[ 11.57s][user ] «backchannel» Yeah, yeah.
-[ 12.32s][user ] That’s good to know. I was looking at used cars last month…
-[ 16.80s][moshi] «interrupted» Ah, yes! I recall you were researching hybrid models—
-[ 20.16s][user ] «interrupts_prev» …do you know if there are any vegan restaurants ⟨ret@23.49s⟩ nearby?
-[ 23.89s][moshi] ⟦⚡SPAN@23.89s: (tool result) Found 3 vegan restaurants: Gentle Gourmet (4.5 stars, 12 Rue des Plantes), VG Pâtisserie (4.2 st⟧ I found three vegan restaurants: Gentle Gourmet, VG Pâtisserie, and Hank Vegan Burger.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "vegan", "location": "Paris"}}
+[ 16.86s][user ] Yes, absolutely. I’ve been feeling quite stressed lately.
+[ 19.67s][moshi] I understand. Stress is so common, and it's wonderful that you’re acknowledging it. We can explore some techniques to help.
+[ 26.69s][user ] «backchannel» Mhm.
+[ 27.04s][moshi] Sometimes, just naming the stressor can take some of its power away — what specifically has been weighing on you lately?
+[ 34.42s][user ] Well, I’m trying to plan a birthday dinner.
+[ 37.23s][moshi] «interrupted» That sounds lovely! Planning can sometimes feel overwhelming, though —
+[ 40.74s][user ] «interrupts_prev» … actually, do you remember how many people I said I was ⟨ret@44.98s⟩ inviting?
+[ 45.30s][moshi] ⟦⚡SPAN@45.30s: [2026-05-24] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ You mentioned a party of six, looking for outdoor seating, back in May. It's good to revisit those details.
+[ 51.98s][user ] Right, six people. And I’m still looking for somewhere with outdoor space.
+[ 56.19s][moshi] Perfect! Perhaps we can explore restaurants with patios. Would you like me to find some options?

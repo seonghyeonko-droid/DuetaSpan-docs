@@ -4,64 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Anna",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-11",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-10-24",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "category": "home",
-#       "text": "User's home address is 238 Birch Road."
-#     },
-#     {
-#       "date": "2025-06-18",
+#       "date": "2026-04-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2026-03-05",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-31",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-02",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where exactly are the Earth’s tectonic plates located?
-     2.69s  <ret> 발화 (turn1 첫 프레임)
-     2.93s  agent 발화 시작: <ret> Those plates are located within the Earth’s lithospher
-     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: The Earth’s lithosphere, which includes the crust and the upper part o
-     2.93s  user  발화 끝
-    13.18s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who sang “The End of the Rainbow”?
+     2.95s  <ret> 발화 (turn1 첫 프레임)
+     3.19s  agent 발화 시작: <ret> That was Earl Grant, actually—he released it in ninete
+     3.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.33s]: Earl Grant released the song “The End of the Rainbow” in 1958, and it 
+     3.19s  user  발화 끝
+    10.52s  agent 발화 끝

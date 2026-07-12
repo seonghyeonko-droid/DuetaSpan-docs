@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "도경",
+#     "name": "지국",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,140 +13,131 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-04-11",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-03-19",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-11-08",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2025-11-03",
+#       "date": "2026-05-03",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-07",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "date": "2025-08-19",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Researching a used car",
+#       "date": "2026-05-02",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 메디케이드 자금의 절반 이상을 부담하는 곳은 어디인가요? | S2 …가려면 어떻게 가야 할까요? | S3 어떤 노래를 틀어줄까요? | S4 좋은 생각이에요. 과자와 주스를 챙겨가야겠네요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 오레오 쿠키가 미국에서 처음 팔린 곳이 어디였는지 아세요 | S2 음... 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영 | S3 아니요, 됐어요. 그럼, 혹시 내일 날씨 어때요? | S4 아, 맞아요. 그때 그랬었죠.
 
-     0.00s  user  발화 시작: 메디케이드 자금의 절반 이상을 부담하는 곳은 어디인가요?
-     3.60s  <ret> 발화 (turn1 첫 프레임)
-     3.76s  agent 발화 시작: <ret> 메디케이드 자금의 절반 이상은 주로 주에서 부담합니다. 아이들의 건강을 챙기는 것도 중요하죠.
-     3.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.45s]: states.
-     3.76s  user  발화 끝
-    10.21s  user  발화 시작: 음… 그건 그렇고, 이번 주 토요일에 아이들과 함께 갈 만한 곳이 있을까요?
-    10.21s  agent 발화 끝
-    16.66s  agent 발화 시작: 아이들이 좋아할 만한 곳을 찾아볼까요?
-    16.66s  user  발화 끝
-    19.35s  user  발화 시작: 네, 부탁드려요.
-    19.35s  agent 발화 끝
-    20.35s  <ret> 발화 (turn5 첫 프레임)
-    20.43s  agent 발화 시작: <ret> 이번 주 토요일, 중앙공원에서 어린이 음악 축제가 열립니다. 이천이십육년 칠월 십일일이에요.
-    20.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.91s]: (tool result) 2026-07-11, Children's Music Festival, Central Park, New
-    20.43s  user  발화 끝
-    26.34s  user  발화 시작: 진짜요?
-    26.34s  agent 발화 끝
-    26.88s  user  발화 시작: 오, 재밌겠네요! 그런데 축제에…
-    26.88s  user  발화 끝
-    29.03s  user  발화 시작: …가려면 어떻게 가야 할까요?
-    29.03s  user  발화 끝
-    31.18s  agent 발화 시작: 축제 장소까지 가는 길을 찾아볼까요?
-    31.18s  user  발화 끝
-    33.86s  user  발화 시작: 네, 찾아주세요.
-    33.86s  agent 발화 끝
-    34.54s  <ret> 발화 (turn11 첫 프레임)
-    34.94s  agent 발화 시작: <ret> 자동차로는 십오분, 지하철로는 이십오분 정도 걸립니다.
-    34.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.23s]: (tool result) Driving: 15 minutes, Subway: 25 minutes
-    34.94s  user  발화 끝
-    38.17s  user  발화 시작: 자동차가 더 빠르겠네요.
-    38.17s  agent 발화 끝
-    39.78s  agent 발화 시작: 맞아요. 아이들과 함께라면 편안하게 가는 게 좋겠죠.
-    39.78s  user  발화 끝
-    43.54s  user  발화 시작: 네네.
-    43.54s  agent 발화 끝
-    44.08s  user  발화 시작: 맞아요. 아이들이 차에서 심심해하지 않도록 노래를 틀어줄까요?
-    44.08s  user  발화 끝
-    47.84s  agent 발화 시작: 좋은 생각이네요. 아이들이 좋아하는 노래를 틀어주면 좋겠죠.
-    47.84s  user  발화 끝
-    51.60s  user  발화 시작: 어떤 노래를 틀어줄까요?
-    51.60s  agent 발화 끝
-    52.98s  <ret> 발화 (turn18 첫 프레임)
-    53.22s  agent 발화 시작: <ret> '아기 상어 댄스'가 아이들에게 인기가 많아요. 핑크퐁 노래입니다.
-    53.22s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.30s]: (tool result) "Baby Shark Dance", Pinkfong
-    53.22s  user  발화 끝
-    57.52s  user  발화 시작: 아, 그거 아이들이 정말 좋아하죠!
-    57.52s  agent 발화 끝
-    59.88s  <ret> 발화 (turn20 첫 프레임)
-    60.20s  agent 발화 시작: <ret> 네, 아이들이 정말 좋아하는 노래죠.
-    60.20s  ⚡SPAN 주입(IRRELEVANT) [d'=1.20s / d_lead=2.69s]: The current temperature in London is 18.5°C, with a humidity of 65% an
-    60.20s  user  발화 끝
-    62.89s  agent 발화 시작: 주말 계획을 세우는 건 정말 즐거운 일이죠.
-    62.89s  agent 발화 끝
-    66.65s  user  발화 시작: 맞아요. 아이들과 함께하는 시간은 소중하죠.
-    66.65s  agent 발화 끝
-    69.34s  agent 발화 시작: 네, 아이들과 함께하는 시간은 정말 소중하죠.
-    69.34s  user  발화 끝
-    72.57s  user  발화 시작: 네.
-    72.57s  agent 발화 끝
-    73.11s  user  발화 시작: 혹시, 아이들 간식을 미리 준비해 가는 게 좋을까요?
-    73.11s  user  발화 끝
-    77.41s  agent 발화 시작: 네, 아이들이 좋아하는 간식을 챙겨가면 좋을 거예요.
-    77.41s  user  발화 끝
-    81.17s  user  발화 시작: 네.
-    81.17s  agent 발화 끝
-    81.71s  user  발화 시작: 좋은 생각이에요. 과자와 주스를 챙겨가야겠네요.
-    81.71s  user  발화 끝
-    84.39s  agent 발화 시작: 네, 과자와 주스는 아이들이 정말 좋아하는 간식이니까 꼭 챙겨가세요.
-    84.39s  user  발화 끝
-    89.23s  user  발화 시작: 아.
-    89.23s  agent 발화 끝
-    89.77s  user  발화 시작: 그런데 축제에 사람이 많을까요?
-    89.77s  user  발화 끝
-    91.92s  agent 발화 시작: 축제에는 많은 사람들이 올 것으로 예상됩니다.
-    91.92s  user  발화 끝
-    95.14s  user  발화 시작: 그렇죠.
-    95.14s  agent 발화 끝
-    95.68s  user  발화 시작: 사람이 많으면 아이들이 길을 잃을 수도 있잖아요.
-    95.68s  user  발화 끝
-    99.44s  agent 발화 시작: 네, 사람이 많으면 아이들이 길을 잃을 수도 있으니 주의해야 합니다. 아이 손을 꼭 잡고 다니세요.
-    99.44s  user  발화 끝
-   107.51s  user  발화 시작: 네.
-   107.51s  agent 발화 끝
-   108.05s  user  발화 시작: 네, 꼭 손을 잡고 다녀야겠네요.
-   108.05s  user  발화 끝
-   110.73s  agent 발화 시작: 맞아요. 아이들의 안전이 가장 중요하니까요.
-   110.73s  user  발화 끝
-   113.42s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 오레오 쿠키가 미국에서 처음 팔린 곳이 어디였는지 아세요?
+     4.39s  <ret> 발화 (turn1 첫 프레임)
+     4.55s  agent 발화 시작: <ret> 오레오 쿠키가 미국에서 처음 판매된 곳은 뉴저지 주 호보켄이었답니다.
+     4.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: Hoboken, New Jersey.
+     4.55s  user  발화 끝
+     9.01s  <ret> 발화 (turn2 첫 프레임)
+     9.09s  agent 발화 시작: <ret> 저는 여러분의 일정을 관리하고, 생산성을 높이는 데 도움을 드릴 수 있어요.
+     9.09s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.56s]: The current price of Tesla stock is $253.87 as of 2:27 PM PDT.
+     9.09s  agent 발화 끝
+    14.65s  user  발화 시작: 그치.
+    14.65s  agent 발화 끝
+    15.16s  user  발화 시작: 아, 그렇군요. 그럼 호보켄은 어떤 곳이에요?
+    15.16s  user  발화 끝
+    17.87s  <ret> 발화 (turn5 첫 프레임)
+    18.19s  agent 발화 시작: <ret> 호보켄은 뉴저지 주 허드슨 카운티에 있는 도시이고, 뉴욕 대도시권에 속해 있어요.
+    18.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.56s]: Hoboken is a city in Hudson County, New Jersey, United States, part of
+    18.19s  user  발화 끝
+    23.75s  user  발화 시작: 뉴욕이랑 가까운 곳이네요?
+    23.75s  agent 발화 끝
+    25.26s  agent 발화 시작: 네, 뉴욕과 아주 가까운 곳이랍니다. 멋진 곳이죠.
+    25.26s  user  발화 끝
+    28.80s  user  발화 시작: 응.
+    28.80s  agent 발화 끝
+    29.30s  user  발화 시작: 음... 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영화 있을까요?
+    29.30s  user  발화 끝
+    34.54s  <ret> 발화 (turn10 첫 프레임)
+    34.86s  agent 발화 시작: <ret> 이번 주 토요일에 볼 만한 영화로는 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', '가
+    34.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.59s]: (tool result) MovieFinder: Searching for movies now. Results: 'Inside 
+    34.86s  user  발화 끝
+    43.45s  user  발화 시작: '인사이드 아웃 이'가 제일 끌리네요. 영화 시간 좀 알아봐 주시겠어요?
+    43.45s  agent 발화 끝
+    48.26s  <ret> 발화 (turn12 첫 프레임)
+    48.50s  agent 발화 시작: <ret> '인사이드 아웃 이'는 메가박스 코엑스에서 오후 두시 삼십분, 다섯시, 일곱시 삼십분에 상영된답니
+    48.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) MovieTimes: 'Inside Out 2' showings at 2:30 PM, 5:00 PM,
+    48.50s  user  발화 끝
+    54.56s  user  발화 시작: 맞아.
+    54.56s  agent 발화 끝
+    55.07s  agent 발화 시작: 혹시 지금 바로 예매해 드릴까요?
+    55.07s  user  발화 끝
+    57.59s  user  발화 시작: 아니요, 아직은요. 그냥 알아만 봐 주세요.
+    57.59s  agent 발화 끝
+    60.63s  agent 발화 시작: 네, 알겠습니다. 혹시 다른 영화를 알아볼까요?
+    60.63s  user  발화 끝
+    63.66s  user  발화 시작: 아니요, 됐어요. 그럼, 혹시 내일 날씨 어때요?
+    63.66s  agent 발화 끝
+    67.03s  <ret> 발화 (turn18 첫 프레임)
+    67.19s  agent 발화 시작: <ret> 내일 서울 날씨는 섭씨 이십팔도, 습도 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 예상됩니다.
+    67.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) Weather: Tomorrow in Seoul will be 28.0°C, humidity 65%,
+    67.19s  user  발화 끝
+    73.76s  user  발화 시작: 꽤 덥겠네요.
+    73.76s  agent 발화 끝
+    74.77s  agent 발화 시작: 네, 꽤 더울 것 같아요. 시원한 물을 많이 드세요.
+    74.77s  user  발화 끝
+    79.32s  user  발화 시작: 알겠습니다. 혹시 제가 지난번에 뭐라고 말씀드렸었죠?
+    79.32s  agent 발화 끝
+    82.19s  <ret> 발화 (turn22 첫 프레임)
+    82.35s  agent 발화 시작: <ret> 이천이십사년 칠월 삼일에 "저는 오늘 너무 피곤해요"라고 말씀하셨어요.
+    82.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.04s]: [2024-07-03] 저는 오늘 너무 피곤해요.
+    82.35s  user  발화 끝
+    86.39s  user  발화 시작: 아, 맞아요. 그때 그랬었죠.
+    86.39s  agent 발화 끝
+    88.41s  agent 발화 시작: 힘든 하루였군요. 충분히 쉬셨기를 바랍니다.
+    88.41s  user  발화 끝
+    90.94s  user  발화 시작: 네, 덕분에 좀 쉬었어요.
+    90.94s  agent 발화 끝
+    92.96s  agent 발화 시작: 다행이에요. 저는 여러분이 편안하게 휴식을 취하실 수 있도록 도와드릴 수 있어요.
+    92.96s  user  발화 끝
+    98.52s  agent 발화 끝

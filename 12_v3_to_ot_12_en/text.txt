@@ -1,73 +1,112 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Ali, a kind and steady supportive advisor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Thiaen, a upbeat and supportive supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Rowan",
+    "name": "Ruby",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-14",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
-    },
-    {
-      "date": "2026-02-10",
+      "date": "2026-05-30",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-09",
+      "date": "2026-04-25",
       "category": "hobby",
       "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-09-18",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-03-01",
+      "category": "home",
+      "text": "User's home address is 332 Cedar Lane."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-10-19",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Ali, I was wondering about basketball players.
-[  2.56s][moshi] Hello! It's lovely to connect with you.
-[  4.80s][user ] «backchannel» Okay.
-[  5.12s][user ] What’s the average height of someone in the ⟨ret@7.61s⟩ NBA?
-[  8.01s][moshi] «interrupted» ⟦⚡SPAN@8.01s: The average height of an NBA player is approximately 6 feet 7 inches, or 2.01 meters.⟧ The average height of an NBA player is approximately 6 feet 7 inches—
-[ 12.17s][user ] «interrupts_prev» …do players get taller over time, or is that pretty stable?
-[ 15.69s][moshi] «interrupted» It appears the average height has increased slightly—
-[ 18.26s][user ] «interrupts_prev» Oh, really?
-[ 18.90s][moshi] Yes, over the years, the average NBA player's height has gradually increased, though not dramatically. It's thought to be related to evolving player development and genetics.
-[ 27.23s][user ] «backchannel» Yeah.
-[ 27.55s][user ] That makes sense. Thanks for the information!
-[ 29.79s][moshi] You're very welcome. It’s wonderful to hear this is helpful, and I’m glad I could provide some insight.
+[  0.00s][user ] Hi, how are you today?
+[  1.72s][moshi] I’m doing wonderfully, thank you for asking! It’s a lovely day to connect and chat about whatever’s on your mind.
+[  8.61s][user ] «backchannel» Okay.
+[  8.96s][user ] Good. I was wondering, how many pounds are in a ⟨ret@12.35s⟩ stone?
+[ 12.75s][moshi] ⟦⚡SPAN@12.75s: A stone is equal to fourteen pounds—that's one of those traditional units of weight.⟧ A stone is equal to fourteen pounds.
+[ 15.16s][user ] Oh, okay. That’s good to know.
+[ 17.22s][moshi] It certainly is! Knowing these conversions can be surprisingly useful, especially when you're following recipes or reading older texts.
+[ 23.77s][user ] [laugh] True! I saw it in an old book.
+[ 26.87s][moshi] [happy] Those old books do love their stones, don't they? It's a bit of a charming quirk of the past.
+[ 33.76s][user ] «backchannel» Uh-huh.
+[ 34.11s][user ] So, if something weighs three stones, how much is that in ⟨ret@37.92s⟩ pounds?
+[ 38.24s][moshi] ⟦⚡SPAN@38.24s: One stone is equivalent to fourteen pounds, so three stones would equal forty-two pounds.⟧ If something weighs three stones, that’s equal to forty-two pounds.
+[ 41.68s][user ] Wow, forty-two! That’s a lot.
+[ 43.41s][moshi] It is! It really puts things into perspective when you think about it that way.
+[ 48.57s][user ] I wonder if they still use stones much in ⟨ret@51.62s⟩ Britain?
+[ 52.02s][moshi] ⟦⚡SPAN@52.02s: While pounds and kilograms are more common now, stones are still often used in Britain for measuring body weig⟧ They don’t use it as much as they used to, but stones are still often used in Britain for body weight.
+[ 59.25s][user ] Really? For weight? That’s interesting.
+[ 60.98s][moshi] It’s a bit of a cultural holdover—many people still state their weight in stones, even if other measurements are available.
+[ 67.87s][user ] «backchannel» Yeah.
+[ 68.21s][user ] That’s… well, I was reading about boxing.
+[ 70.62s][moshi] «interrupted» Boxing often uses stones to categorize weight classes—
+[ 73.38s][user ] «interrupts_prev» …wait, do different boxing organizations use different stone weights?
+[ 76.48s][user ] «backchannel» Yeah.
+[ 76.82s][moshi] ⟨ret@76.58s⟩ ⟦⚡SPAN@76.82s: The weight classes in boxing vary slightly between organizations, but generally include weight limits at 8 sto⟧ Different boxing organizations do indeed use slightly different weight limits, though they all still operate within the stone system.
+[ 83.37s][moshi] Weight classes vary, but generally include limits at 8 stone 6 pounds, 9 stone 9 pounds, and 10 stone 7 pounds.
+[ 90.60s][user ] That’s a lot of fractions!
+[ 92.32s][moshi] It can be a bit tricky, yes! It reflects the need for very precise divisions within the sport.
+[ 98.53s][user ] «backchannel» Mm-hmm.
+[ 98.87s][user ] So, if I weighed eleven stone, would that be… ⟨ret@101.81s⟩
+[101.97s][moshi] ⟦⚡SPAN@101.97s: Eleven stones is equal to one hundred and fifty-four pounds—simply by multiplying eleven by fourteen.⟧ Eleven stones is equal to one hundred and fifty-four pounds.
+[105.42s][user ] «backchannel» Yeah.
+[105.76s][user ] Okay, that makes sense. Thanks for helping me with this!
+[109.21s][moshi] You’re very welcome!

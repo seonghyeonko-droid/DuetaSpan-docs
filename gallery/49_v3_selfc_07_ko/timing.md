@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "우진",
+#     "name": "소온",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,80 +12,96 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-02-17",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-12",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-12-11",
+#       "date": "2026-01-20",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-10-13",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-08-05",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-06-05",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2025-07-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-06-19",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-12",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-01",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-27",
-#       "title": "Setting up a home network",
+#       "date": "2025-09-25",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 케빈 리 선생님이랑 일월 이십일 오후 한시 삼십분에 예약하고  | S2 이번 주 토요일에 마사지… | S3 …예약도 하고 싶은데, 괜찮을까요? | S4 네, 그렇게 해주세요.
 
-     0.00s  user  발화 시작: 달라스에서 휴스턴까지 버스 티켓 두 장 예매해 줘, 칠월 사일 정오에.
-     4.81s  <ret> 발화 (turn1 첫 프레임)
-     5.05s  agent 발화 시작: <ret> 달라스에서 휴스턴까지 칠월 사일 정오에 출발하는 버스 티켓 두 장이 예매되었습니다, 확인 번호는 
-     5.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.56s]: (tool result) Confirmation: TX94L2-HP7G. Two bus tickets from Dallas, 
-     5.05s  user  발화 끝
-    15.61s  user  발화 시작: 와.
-    15.61s  agent 발화 끝
-    16.07s  user  발화 시작: 그… 이번 주말에 영화 볼 만한 거 있어?
-    16.07s  user  발화 끝
-    19.42s  <ret> 발화 (turn4 첫 프레임)
-    19.74s  agent 발화 시작: <ret> 현재 가장 인기 있는 영화는 "엘리멘탈"인데, 피터 손 감독이 연출하고 픽사 애니메이션 스튜디오와
-    19.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.48s]: The most popular movie currently playing is "Elemental," a 2023 Americ
+     0.00s  user  발화 시작: 케빈 리 선생님이랑 일월 이십일 오후 한시 삼십분에 예약하고 싶어요.
+     4.57s  <ret> 발화 (turn1 첫 프레임)
+     4.81s  agent 발화 시작: <ret> 케빈 리 선생님과의 예약이 일월 이십일 오후 한시 삼십분으로 확정되었습니다. 확인 번호는 팔 이 
+     4.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: (tool result) Appointment with Kevin Lee confirmed for January 20 at 1
+     4.81s  user  발화 끝
+    13.48s  user  발화 시작: 아, 네.
+    13.48s  agent 발화 끝
+    14.44s  agent 발화 시작: 혹시 다른 예약이 필요하시면 말씀해 주세요. 제가 도와드릴 수 있습니다.
+    14.44s  user  발화 끝
+    19.25s  user  발화 시작: 응.
+    19.25s  agent 발화 끝
+    19.74s  user  발화 시작: 이번 주 토요일에 마사지…
     19.74s  user  발화 끝
-    31.22s  user  발화 시작: …어, 잠깐만. 칠월 사일에 휴스턴에서 출발하는 버스는 몇 시에 다시 달라스로 돌아오는 게 있어?
-    31.22s  agent 발화 끝
-    37.49s  <ret> 발화 (turn6 첫 프레임)
-    37.65s  agent 발화 시작: <ret> 칠월 사일 휴스턴에서 달라스로 돌아가는 버스는 오후 두시 삼십분, 다섯시, 여덟시, 열한시에 있습
-    37.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) 14:30, 17:00, 20:00, 23:00
-    37.65s  user  발화 끝
-    46.83s  agent 발화 끝
+    21.66s  user  발화 시작: …예약도 하고 싶은데, 괜찮을까요?
+    21.66s  user  발화 끝
+    23.35s  <ret> 발화 (turn7 첫 프레임)
+    23.59s  agent 발화 시작: <ret> 죄송하지만, 이번 주 토요일은 예약이 마감되었습니다. 일요일 오전 열시에 예약 가능합니다.
+    23.59s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.30s]: No appointments available on Saturday, July 11, 2026. Earliest availab
+    23.59s  user  발화 끝
+    28.88s  user  발화 시작: 응응.
+    28.88s  agent 발화 끝
+    29.36s  user  발화 시작: …아니요, 그럼 그냥 다음 주 월요일로 할게요.
+    29.36s  user  발화 끝
+    32.49s  <ret> 발화 (turn10 첫 프레임)
+    32.73s  agent 발화 시작: <ret> 다음 주 월요일 오후 두시에 예약 가능합니다. 괜찮으시면 예약 진행해 드릴까요?
+    32.73s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.30s]: Monday, July 20, 2026 at 2:00 PM is available.
+    32.73s  user  발화 끝
+    38.03s  user  발화 시작: 네, 그렇게 해주세요.
+    38.03s  agent 발화 끝
+    39.47s  agent 발화 시작: 네, 다음 주 월요일 오후 두시로 마사지 예약을 완료했습니다. 즐거운 시간 보내세요.
+    39.47s  user  발화 끝
+    45.25s  agent 발화 끝

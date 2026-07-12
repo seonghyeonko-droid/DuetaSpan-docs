@@ -4,101 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "혜훈",
+#     "name": "정경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-03-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
-#     },
-#     {
-#       "date": "2025-09-28",
+#       "date": "2026-06-16",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-09-19",
+#       "date": "2026-05-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-01-27",
 #       "category": "diet",
 #       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-09",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-05-31",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-04",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 남북전쟁이 시작됐을 때 대통령이 누구였는지 알아요? | S2 음, 링컨이 맞긴 한데, 좀 더 자세히 설명해 줄 수 있어요? | S3 아, 그 전쟁이 지금의 미국에 큰 영향을 줬죠? | S4 어… 혹시 지금 서울 날씨 알려줄 수 있어요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 '프린세스 브라이드'에 나온 엄마 역할을 누가 맡았는지  | S2 오, 에미상까지 받았군요. — | S3 'Stand by Me'도 재밌게 봤는데. 혹시 지금 한국 날 | S4 박물관은 괜찮겠네요. 아이들이 좋아할 만한 곳 추천해 주실 수
 
-     0.00s  user  발화 시작: 혹시 남북전쟁이 시작됐을 때 대통령이 누구였는지 알아요?
-     3.04s  <ret> 발화 (turn1 첫 프레임)
-     3.36s  agent 발화 시작: <ret> 남북전쟁이 시작된 건 천팔백육십일년 사월 십이일인데, 그 때 미국 대통령은 에이브러햄 링컨이었어요
-     3.36s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.60s]: Abraham Lincoln was the president of the United States when the Civil 
-     3.36s  user  발화 끝
-    12.97s  user  발화 시작: 음, 링컨이 맞긴 한데, 좀 더 자세히 설명해 줄 수 있어요? 그 전쟁이 왜 시작됐는지도 궁금하고.
-    12.97s  agent 발화 끝
-    20.33s  <ret> 발화 (turn3 첫 프레임)
-    20.65s  agent 발화 시작: <ret> 전환기에는 궁금한 점이 많을 수밖에 없죠. 전쟁의 배경을 설명해 드릴게요.
-    20.65s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.80s]: The American Civil War began as a result of a long-standing dispute ov
-    20.65s  user  발화 끝
-    25.45s  agent 발화 시작: 아메리카 남북전쟁은 노예 제도와 주 권리 문제로 오랫동안 빚어진 갈등 때문에 시작됐어요.
-    25.45s  agent 발화 끝
-    31.21s  user  발화 시작: 응.
-    31.21s  agent 발화 끝
-    31.69s  user  발화 시작: 아, 그 전쟁이 지금의 미국에 큰 영향을 줬죠?
-    31.69s  user  발화 끝
-    35.29s  <ret> 발화 (turn7 첫 프레임)
-    35.53s  agent 발화 시작: <ret> 네, 전쟁은 미국 역사에 큰 족적을 남겼어요.
-    35.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.36s]: The Civil War resulted in the abolition of slavery, the preservation o
-    35.53s  user  발화 끝
-    38.90s  agent 발화 시작: 남북전쟁은 노예 제도를 폐지하고, 미국을 하나의 국가로 유지하며, 연방 정부를 강화하는 결과를 가져왔어요.
-    38.90s  agent 발화 끝
-    45.14s  user  발화 시작: 맞아.
-    45.14s  agent 발화 끝
-    45.62s  user  발화 시작: 어… 혹시 지금 서울 날씨 알려줄 수 있어요?
-    45.62s  user  발화 끝
-    49.30s  <ret> 발화 (turn11 첫 프레임)
-    49.46s  agent 발화 시작: <ret> 지금 서울의 날씨는 섭씨 이십팔도, 습도는 육십오퍼센트, 풍속은 시속 삼 점 이킬로미터예요. 앞으
-    49.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.12s]: (tool result) Current conditions in Seoul are 28.0°C, humidity 65%, wi
-    49.46s  user  발화 끝
-    58.58s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 '프린세스 브라이드'에 나온 엄마 역할을 누가 맡았는지 아세요?
+     4.23s  <ret> 발화 (turn1 첫 프레임)
+     4.55s  agent 발화 시작: <ret> 천구백팔십칠년에 개봉한 '프린세스 브라이드'에서 엄마 역할을 맡은 배우는 베티 브랜틀리예요. 기억
+     4.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: Betsy Brantley played the role of the mother in the 1987 American fant
+     4.55s  user  발화 끝
+    11.13s  user  발화 시작: 와.
+    11.13s  agent 발화 끝
+    11.63s  user  발화 시작: 베티 브랜틀리… 이름이 낯설긴 하네요. 다른 작품에도 나왔어요?
+    11.63s  user  발화 끝
+    15.60s  <ret> 발화 (turn4 첫 프레임)
+    15.68s  agent 발화 시작: <ret> 죄송해요, 다른 작품에 대한 정보는 찾을 수 없었어요.
+    15.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.05s]: (no information found)
+    15.68s  user  발화 끝
+    19.72s  user  발화 시작: 아, 그렇군요. 그럼 '프린세스 브라이드'는 혹시 상을 받았어요?
+    19.72s  agent 발화 끝
+    23.69s  <ret> 발화 (turn6 첫 프레임)
+    23.77s  agent 발화 시작: <ret> '프린세스 브라이드'는 프라임타임 에미상을 한 번 받았고, 로빈 라이트가 골든 글로브상 후보에 오
+    23.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.61s]: (tool result) The Princess Bride won one Primetime Emmy Award and was 
+    23.77s  user  발화 끝
+    33.38s  user  발화 시작: 어.
+    33.38s  agent 발화 끝
+    33.88s  user  발화 시작: 오, 에미상까지 받았군요. —
+    33.88s  user  발화 끝
+    35.91s  user  발화 시작: 혹시 그 영화 감독은 누구였어요?
+    35.91s  user  발화 끝
+    38.12s  <ret> 발화 (turn10 첫 프레임)
+    38.44s  agent 발화 시작: <ret> '프린세스 브라이드'의 감독은 롭 라이너예요. 천구백칠십삼년에 윌리엄 골드먼의 소설을 바탕으로 만
+    38.44s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.56s]: Rob Reiner directed the 1987 American fantasy adventure film The Princ
+    38.44s  user  발화 끝
+    44.00s  user  발화 시작: 롭 라이너요? 그분 다른 영화도 많이 만들었죠?
+    44.00s  agent 발화 끝
+    47.38s  <ret> 발화 (turn12 첫 프레임)
+    47.54s  agent 발화 시작: <ret> 롭 라이너는 'This Is Spinal Tap', 'Stand by Me', 'When Harr
+    47.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.10s]: (tool result) Rob Reiner is an American director, producer, and actor,
+    47.54s  user  발화 끝
+    56.64s  user  발화 시작: 'Stand by Me'도 재밌게 봤는데. 혹시 지금 한국 날씨는 어때요?
+    56.64s  agent 발화 끝
+    61.54s  <ret> 발화 (turn14 첫 프레임)
+    61.70s  agent 발화 시작: <ret> 지금 서울의 날씨는 기온이 이십칠 점 삼도이고, 습도는 칠십팔퍼센트, 바람은 시속 사 점 일킬로미
+    61.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.09s]: (tool result) Current conditions in Seoul are 27.3°C, humidity 78%, wi
+    61.70s  user  발화 끝
+    69.79s  user  발화 시작: 응.
+    69.79s  agent 발화 끝
+    70.30s  user  발화 시작: 꽤 덥네요. 아이들 데리고…
+    70.30s  user  발화 끝
+    72.32s  user  발화 시작: …어디 놀러 가면 좋을까요?
+    72.32s  user  발화 끝
+    74.34s  agent 발화 시작: 아이들과 함께라면 시원한 곳을 찾는 게 좋겠네요. 실내 놀이터나 박물관은 어떠세요?
+    74.34s  user  발화 끝
+    79.91s  user  발화 시작: 어.
+    79.91s  agent 발화 끝
+    80.41s  user  발화 시작: 박물관은 괜찮겠네요. 아이들이 좋아할 만한 곳 추천해 주실 수 있어요?
+    80.41s  user  발화 끝
+    85.47s  agent 발화 시작: 아이들의 연령대에 따라 추천이 달라질 수 있어요. 어떤 나이의 아이들이신가요?
+    85.47s  user  발화 끝
+    90.53s  user  발화 시작: 음.
+    90.53s  agent 발화 끝
+    91.03s  user  발화 시작: 일곱 살, 다섯 살이요.
+    91.03s  user  발화 끝
+    93.06s  agent 발화 시작: 일곱 살, 다섯 살이라면 국립어린이과학관이나 국립중앙박물관의 어린이박물관이 좋을 것 같아요.
+    93.06s  user  발화 끝
+    98.11s  agent 발화 끝

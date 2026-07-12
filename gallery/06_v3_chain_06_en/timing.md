@@ -4,78 +4,81 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Bruno",
+#     "name": "Remy",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-02-26",
+#       "date": "2026-04-03",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-02-24",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "date": "2025-10-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
 #     },
 #     {
-#       "date": "2025-07-03",
-#       "category": "home",
-#       "text": "User's home address is 457 Birch Road."
-#     },
-#     {
-#       "date": "2025-05-30",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-07-01",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-05",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-27",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm looking for museums in London. | S2 Which one is closest to Buckingham | S3 And what about the National Galler | S4 …is either of them free to enter?
 
-     0.00s  user  발화 시작: I’m feeling a bit stressed about work lately. Any good drama
-     4.83s  <ret> 발화 (turn1 첫 프레임)
-     4.91s  agent 발화 시작: <ret> At Landmark Chez Artiste in Denver, Colorado, “All of 
-     4.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.41s]: (tool result) Showing drama movies at Landmark Chez Artiste Theatre in
-     4.91s  user  발화 끝
-    13.31s  user  발화 시작: Right.
-    13.31s  agent 발화 끝
-    13.66s  agent 발화 시작: It sounds like you could use a distraction. Perhaps a movie 
-    13.66s  user  발화 끝
-    19.97s  user  발화 시작: Actually, let’s get tickets for “All of Us Strangers” at sev
-    19.97s  agent 발화 끝
-    23.75s  <ret> 발화 (turn5 첫 프레임)
-    23.83s  agent 발화 시작: <ret> Wonderful. I’ve secured two tickets for “All of Us Str
-    23.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Confirmed: 2 tickets for “All of Us Strangers” at Landma
-    23.83s  user  발화 끝
-    32.59s  agent 발화 시작: That should be a lovely evening. I’m glad I could help take 
-    32.59s  agent 발화 끝
-    38.19s  agent 발화 끝
+     0.00s  user  발화 시작: I'm looking for museums in London.
+     1.93s  <ret> 발화 (turn1 첫 프레임)
+     2.01s  agent 발화 시작: <ret> London has some wonderful museums; the British Museum 
+     2.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.03s]: (tool result) The British Museum in London holds a collection of over 
+     2.01s  user  발화 끝
+     9.04s  agent 발화 시작: That should give you a great start with your exploration!
+     9.04s  agent 발화 끝
+    12.38s  user  발화 시작: Which one is closest to Buckingham Palace?
+    12.38s  agent 발화 끝
+    14.56s  <ret> 발화 (turn4 첫 프레임)
+    14.72s  agent 발화 시작: <ret> The British Museum is about three point three kilomete
+    14.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) Distance: 3.3 km, Duration: 13 mins (driving), 45 mins (
+    14.72s  user  발화 끝
+    20.41s  user  발화 시작: Okay.
+    20.41s  agent 발화 끝
+    20.75s  user  발화 시작: And what about the National Gallery?
+    20.75s  user  발화 끝
+    22.67s  <ret> 발화 (turn7 첫 프레임)
+    22.75s  agent 발화 시작: <ret> The National Gallery is closer — two point five kilome
+    22.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) Distance: 2.5 km, Duration: 10 mins (driving), 30 mins (
+    22.75s  user  발화 끝
+    28.44s  user  발화 시작: …is either of them free to enter?
+    28.44s  agent 발화 끝
+    30.39s  <ret> 발화 (turn9 첫 프레임)
+    30.79s  agent 발화 시작: <ret> Thankfully, general admission to both the British Muse
+    30.79s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.68s]: General admission to the British Museum is free, while the National Ga
+    30.79s  user  발화 끝
+    35.47s  agent 발화 시작: It’s lovely when culture is accessible to everyone, isn’t it
+    35.47s  agent 발화 끝
+    38.82s  agent 발화 끝

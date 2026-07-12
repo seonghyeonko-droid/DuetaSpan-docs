@@ -1,67 +1,72 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Thoraen, a calm and patient life coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Klaeen, a warm and attentive life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Léa",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "50s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-04-29",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-03-24",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-09-04",
+      "date": "2026-06-19",
       "category": "home",
-      "text": "User's home address is 852 Cedar Lane."
+      "text": "User's home address is 515 Elm Street."
+    },
+    {
+      "date": "2026-06-02",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-07-25",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-16",
-      "title": "Researching a used car",
+      "date": "2025-08-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-02-28",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, where does… uh, Star Wars: A New Hope take ⟨ret@3.92s⟩ place?
-[  4.16s][moshi] ⟦⚡SPAN@4.16s: The desert planet Tatooine is where much of the original Star Wars film, A New Hope, was set.⟧ A great deal of *A New Hope* unfolds on the desert planet Tatooine, a rather harsh environment. It's a place of beginnings, isn't it?
-[ 13.23s][user ] «backchannel» Yeah.
-[ 13.61s][user ] Tatooine, right. And, welll… is it a real place?
-[ 17.01s][user ] «backchannel» Mm-hmm.
-[ 17.39s][moshi] ⟨ret@17.31s⟩ ⟦⚡SPAN@17.39s: Tatooine was primarily filmed in Tunisia, with some scenes shot in Death Valley, California, and Guatemala.⟧ The filming locations for Tatooine were primarily in Tunisia, with additional scenes in Death Valley, California, and Guatemala. It's amazing what locations can create another world.
+[  0.00s][user ] Uh, I was wondering… what’s the highest score ever in ice ⟨ret@4.78s⟩ skating?
+[  5.02s][moshi] ⟦⚡SPAN@5.02s: The highest score in ice skating is 330.43, achieved by Nathan Chen at the 2022 Winter Olympics.⟧ Well, it seems Nathan Chen holds that record with a remarkable score of 330.43, at the 2022 Winter Olympics.
+[ 12.97s][user ] Wow. That’s… really high.
+[ 14.65s][user ] «backchannel» Yeah.
+[ 15.06s][moshi] ⟨ret@14.98s⟩ ⟦⚡SPAN@15.06s: Yuzuru Hanyu is a two-time Olympic champion and one of the most popular figure skaters in history.⟧ Speaking of incredible skaters, Yuzuru Hanyu is another name you’ll often hear—a two-time Olympic champion, and a very beloved athlete.
+[ 23.43s][user ] «backchannel» Mm-hmm.
+[ 23.85s][user ] Hmm, so, um, is he still ⟨ret@26.38s⟩ competing?
+[ 26.78s][moshi] ⟦⚡SPAN@26.78s: Yuzuru Hanyu retired from competitive figure skating in July 2022 and now performs in professional shows.⟧ He actually retired from competitive skating in July of 2022, but now focuses on professional shows—still sharing his gift with the world.
+[ 35.99s][user ] That's good to hear. He sounds wonderful.

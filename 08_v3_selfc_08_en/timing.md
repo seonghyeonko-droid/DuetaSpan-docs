@@ -4,134 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Quinn",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2026-05-26",
+#       "date": "2026-03-21",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "category": "home",
-#       "text": "User's home address is 262 Elm Street."
+#       "date": "2025-09-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-07-31",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-08-10",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-07-16",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-29",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-03-25",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What alarms are scheduled, includi | S2 Hmm, that sounds pleasant. Do you  | S3 …Actually, could you find me some  | S4 Perfect! Thanks so much.
+# EXAMINER(FDB-v2) 단계: S1 What theater events are there in R | S2 …Do any of those theaters have acc | S3 That's good to know. What's the we | S4 Could you look up opening hours fo
 
-     0.00s  user  발화 시작: What alarms are scheduled, including disabled ones?
-     2.26s  <ret> 발화 (turn1 첫 프레임)
-     2.66s  agent 발화 시작: <ret> You have three alarms set—at seven AM, nine AM, and si
-     2.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) 07:00 AM, Kitchen Timer, Enabled; 09:00 AM, Meeting Remi
-     2.66s  user  발화 끝
-     9.89s  user  발화 시작: Yeah.
-     9.89s  agent 발화 끝
-    10.27s  user  발화 시작: And can you add one for tomorrow at eight thirty?
-    10.27s  user  발화 끝
-    13.83s  <ret> 발화 (turn4 첫 프레임)
-    14.07s  agent 발화 시작: <ret> I’ve added an alarm for tomorrow at eight thirty AM, l
-    14.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.47s]: (tool result) Alarm set for 08:30 AM tomorrow, labeled "Workout". Conf
-    14.07s  user  발화 끝
-    20.54s  user  발화 시작: Wow.
-    20.54s  agent 발화 끝
-    20.92s  user  발화 시작: That's great, thanks. What's the weather like in Seoul right
-    20.92s  user  발화 끝
-    24.94s  <ret> 발화 (turn7 첫 프레임)
-    25.10s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-three point z
-    25.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.37s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h, clear skies.
-    25.10s  user  발화 끝
-    33.47s  user  발화 시작: Hmm, that sounds pleasant. Do you think I'll be able to focu
-    33.47s  agent 발화 끝
-    40.32s  agent 발화 시작: It’s understandable to feel distracted by lovely weather! Pe
-    40.32s  user  발화 끝
-    47.17s  user  발화 시작: A café does sound nice… but I really should get started on t
-    47.17s  agent 발화 끝
-    54.01s  agent 발화 시작: Prioritizing your report is a good plan. Breaking it down in
-    54.01s  user  발화 끝
-    61.24s  user  발화 시작: Yeah, smaller tasks… I always end up procrastinating though.
-    61.24s  agent 발화 끝
-    67.33s  agent 발화 시작: It's common to fall into procrastination—it’s a signal that 
-    67.33s  user  발화 끝
-    71.89s  user  발화 시작: …Actually, could you find me some articles on time managemen
-    71.89s  agent 발화 끝
-    76.00s  <ret> 발화 (turn15 첫 프레임)
-    76.08s  agent 발화 시작: <ret> Let me search for articles on time management techniqu
-    76.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.42s]: (tool result) Time management: the art of arranging tasks to maximize 
-    76.08s  user  발화 끝
-    79.50s  agent 발화 시작: I found several articles on time management. Verywell Mind, 
-    79.50s  agent 발화 끝
-    86.73s  user  발화 시작: Yeah.
-    86.73s  agent 발화 끝
-    87.11s  agent 발화 시작: Many techniques focus on prioritizing tasks and setting real
-    87.11s  user  발화 끝
-    93.19s  user  발화 시작: Okay, good. Maybe I'll read those later. What about restaura
-    93.19s  agent 발화 끝
-    98.12s  <ret> 발화 (turn20 첫 프레임)
-    98.52s  agent 발화 시작: <ret> There's an Italian restaurant point five kilometers aw
-    98.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.03s]: (tool result) Italian, 0.5 km, 4.5 stars; Korean BBQ, 1.2 km, 4.2 star
-    98.52s  user  발화 끝
-   109.55s  user  발화 시작: Yeah.
-   109.55s  agent 발화 끝
-   109.93s  user  발화 시작: Hmm, Korean BBQ sounds good. Can you make a reservation for 
-   109.93s  user  발화 끝
-   115.23s  <ret> 발화 (turn23 첫 프레임)
-   115.63s  agent 발화 시작: <ret> I’ve made a reservation for you at the Korean BBQ for 
-   115.63s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.99s]: (tool result) Reservation confirmed at Korean BBQ for two people at 7:
-   115.63s  user  발화 끝
-   123.62s  user  발화 시작: Uh-huh.
-   123.62s  agent 발화 끝
-   124.00s  user  발화 시작: Perfect! Thanks so much.
-   124.00s  user  발화 끝
-   125.52s  agent 발화 시작: You’re very welcome. Remember, even small steps forward are 
-   125.52s  user  발화 끝
-   132.37s  user  발화 시작: Yeah, you’re right. I should probably get back to it.
-   132.37s  agent 발화 끝
-   136.18s  agent 발화 시작: That's the spirit. Focusing on manageable chunks will make i
-   136.18s  user  발화 끝
-   140.74s  agent 발화 끝
+     0.00s  user  발화 시작: What theater events are there in Rome, Italy on March twenty
+     3.84s  <ret> 발화 (turn1 첫 프레임)
+     4.24s  agent 발화 시작: <ret> There are two theater events in Rome on March twenty-f
+     4.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.43s]: (tool result) {"events": [{"name": "La Traviata", "venue": "Teatro del
+     4.24s  user  발화 끝
+    19.67s  user  발화 시작: That sounds lovely. Can you find me restaurants nearby the T
+    19.67s  agent 발화 끝
+    24.83s  <ret> 발화 (turn3 첫 프레임)
+    25.07s  agent 발화 시작: <ret> Near Teatro dell'Opera di Roma, “La Pergola” serves It
+    25.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: (tool result) {"restaurants": [{"name": "La Pergola", "cuisine": "Ital
+    25.07s  user  발화 끝
+    35.87s  user  발화 시작: Um, actually, make that Florence, Italy, not Rome.
+    35.87s  agent 발화 끝
+    38.80s  <ret> 발화 (turn5 첫 프레임)
+    38.96s  agent 발화 시작: <ret> Let’s look for theater events in Florence, Italy on Ma
+    38.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) {"events": [{"name": "Don Giovanni", "venue": "Maggio Mu
+    38.96s  user  발화 끝
+    43.59s  agent 발화 시작: In Florence on March twenty-fifth, you’ll find “Don Giovanni
+    43.59s  agent 발화 끝
+    57.86s  user  발화 시작: …Do any of those theaters have accessible seating?
+    57.86s  agent 발화 끝
+    60.94s  agent 발화 시작: That’s a very thoughtful question—
+    60.94s  user  발화 끝
+    62.87s  user  발화 시작: I’m trying to plan for my mother.
+    62.87s  agent 발화 끝
+    65.49s  <ret> 발화 (turn10 첫 프레임)
+    65.57s  agent 발화 시작: <ret> It's wonderful you're considering your mother’s needs.
+    65.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.17s]: (tool result) Maggio Musicale Fiorentino offers wheelchair access, des
+    65.57s  user  발화 끝
+    71.34s  <ret> 발화 (turn11 첫 프레임)
+    71.74s  agent 발화 시작: <ret> Maggio Musicale Fiorentino provides wheelchair access,
+    71.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: (tool result) Teatro del Maggio also offers wheelchair access, accessi
+    71.74s  agent 발화 끝
+    79.84s  agent 발화 시작: Teatro del Maggio similarly has wheelchair access, accessibl
+    79.84s  agent 발화 끝
+    87.94s  user  발화 시작: That's good to know. What's the weather like in Florence on 
+    87.94s  agent 발화 끝
+    92.64s  <ret> 발화 (turn14 첫 프레임)
+    92.96s  agent 발화 시작: <ret> On March twenty-fifth in Florence, the weather will be
+    92.96s  ⚡SPAN 주입 [d'=1.52s / d_lead=10.80s]: (tool result) {"temperature": "15.5°C", "humidity": "70%", "wind": "12
+    92.96s  user  발화 끝
+   103.76s  user  발화 시작: That sounds quite pleasant, actually. Perhaps a walk in the 
+   103.76s  agent 발화 끝
+   109.54s  agent 발화 시작: That sounds like a lovely idea. A stroll through the Boboli 
+   109.54s  user  발화 끝
+   120.73s  user  발화 시작: Could you look up opening hours for the Boboli Gardens on Ma
+   120.73s  agent 발화 끝
+   125.58s  <ret> 발화 (turn18 첫 프레임)
+   125.74s  agent 발화 시작: <ret> The Boboli Gardens will be open from 8:15 AM to 6:30 P
+   125.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: (tool result) The Boboli Gardens are open from 8:15 AM to 6:30 PM on M
+   125.74s  user  발화 끝
+   133.84s  user  발화 시작: Perfect. Thank you, Sio.
+   133.84s  agent 발화 끝
+   135.38s  agent 발화 시작: You’re most welcome.
+   135.38s  user  발화 끝
+   136.54s  agent 발화 끝

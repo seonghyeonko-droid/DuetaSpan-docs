@@ -1,10 +1,10 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Vera, a calm and patient supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Sellal, a gentle and reflective counselor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "William",
+    "name": "Thomas",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -13,66 +13,70 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "Canadian",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-03",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-04-25",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-12",
+      "date": "2026-04-21",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-11-14",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-03-23",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-06-18",
+      "date": "2026-02-20",
       "category": "hobby",
       "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-10-08",
+      "category": "home",
+      "text": "User's home address is 703 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-07",
-      "title": "Apartment hunting downtown",
+      "date": "2025-09-28",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-06-25",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-13",
+      "date": "2025-08-16",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What city is the IP address ninety three dot one eighty four dot two one six dot thirty four ⟨ret@6.12s⟩ in?
-[  6.36s][moshi] ⟦⚡SPAN@6.36s: (tool result) City: Stockholm, Country: Sweden⟧ That IP address resolves to Stockholm, Sweden. It’s a beautiful city, known for its design.
-      CALL: {"function": "map_ip_location", "arguments": {"ip_address": "93.184.216.34"}}
-[ 11.13s][user ] «backchannel» Yeah.
-[ 11.45s][user ] Oh, uh, really? I've always wanted to go there.
-[ 14.31s][moshi] I understand that feeling! A change of scenery can be so restorative, and Stockholm offers a lot of tranquility.
-[ 20.35s][user ] Could you find me some hotels there for next ⟨ret@23.37s⟩ week?
-[ 23.53s][moshi] ⟦⚡SPAN@23.53s: (tool result) Hotels: Hotel Diplomat (4.5 stars, $250/night), Grand Hôtel Stockholm (5 stars, $400/night), Rad⟧ I found several hotels in Stockholm for next week, starting around two hundred dollars a night.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Stockholm", "check_in_date": "2026-07-17", "check_out_date": "2026-07-24"}}
+[  0.00s][user ] What location is at one hundred four point zero six six nine eight nine latitude, and thirty point six five five eight nine one ⟨ret@7.77s⟩ longitude?
+[  8.01s][moshi] ⟦⚡SPAN@8.01s: (tool result) {"address": "Chengdu, Sichuan, China"}⟧ That location is Chengdu, in Sichuan province, China. It sounds like a beautiful place to visit.
+      CALL: {"function": "maps_regeocode", "arguments": {"latitude": "104.066989", "longitude": "30.655891"}}
+[ 13.13s][user ] Uh, could you find hotels there for next ⟨ret@15.61s⟩ week?
+[ 16.01s][moshi] ⟦⚡SPAN@16.01s: (tool result) [{"name": "Jinjiang Inn Chengdu Chunxi Road", "price": "¥288", "rating": "4.2"}, {"name": "Holid⟧ I found two options: the Jinjiang Inn for two hundred eighty-eight yuan, rated four point two stars, and the Holiday Inn Express for three hundred fifty yuan, four point zero stars.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Chengdu, Sichuan, China", "check_in_date": "2026-07-17", "check_out_date": "2026-07-24"}}
+[ 25.94s][user ] [sigh] The Holiday Inn sounds nice.
+[ 27.86s][moshi] It does seem like a comfortable choice. I’m glad we found something that appeals to you. Perhaps we could look at some things to do while you're there?

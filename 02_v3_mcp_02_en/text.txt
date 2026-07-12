@@ -1,87 +1,67 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Lior, a grounded and empathetic life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Drara, a calm and patient supportive advisor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Rosa",
+    "name": "Amelia",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "French",
     "gender": "female",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-01-16",
+      "date": "2026-03-10",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-12-12",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-11-05",
+      "date": "2026-02-09",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-25",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-07-30",
+      "date": "2026-02-07",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-06-20",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-11-12",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-07-22",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-21",
+      "date": "2025-12-07",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-08-03",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to accept the terms and conditions on that website. Can you click the accept button inside the iframe? The ID is ⟨ret@10.19s⟩ “myIframe”.
-[ 10.43s][moshi] ⟦⚡SPAN@10.43s: (tool result) {"status": "success", "message": "Button 'accept' clicked within iframe 'myIframe'."}⟧ I’ve just clicked the accept button within the iframe, and it appears successful.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_id": "myIframe", "button_text": "accept"}}
-[ 16.08s][user ] «backchannel» Uh-huh.
-[ 16.51s][user ] Oh, great! That’s a relief. Um…
-[ 19.12s][user ] …what’s the weather like in Seoul right now? ⟨ret@22.44s⟩
-[ 22.60s][moshi] ⟦⚡SPAN@22.60s: (tool result) {"temperature": 28.5, "humidity": 78, "wind speed": 6.2, "condition": "Cloudy"}⟧ The weather in Seoul is currently 28.5 degrees Celsius, with 78 percent humidity and a 6.2 kilometer per hour breeze. It’s cloudy there.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[  0.00s][user ] Uh, could you locate any image files within my Projects directory? I’m trying to find that logo I ⟨ret@7.50s⟩ made.
+[  7.74s][moshi] ⟦⚡SPAN@7.74s: (tool result) “/Users/user/Projects/logo final.png”, “/Users/user/Projects/mockups/image1.jpg”⟧ I found two image files in your Projects directory: logo_final.png and image1.jpg within the mockups folder.
+      CALL: {"function": "search_files", "arguments": {"directory": "Projects", "file_type": "image"}}
+[ 14.25s][user ] «backchannel» Really?
+[ 14.66s][user ] Oh, actually, could you read the contents of logo_final.png for me? Just… see what’s in it. ⟨ret@21.01s⟩
+[ 21.17s][moshi] ⟦⚡SPAN@21.17s: (tool result) “PNG image data, 1920x1080 pixels”⟧ The file is a PNG image, with dimensions of 1920 by 1080 pixels. It appears to be a standard image format.
+      CALL: {"function": "read_file", "arguments": {"file_path": "/Users/user/Projects/logo_final.png"}}
+[ 29.73s][user ] That’s helpful, thanks. I need to book a dentist appointment, next week would be ideal.
+[ 35.83s][moshi] I can help with that. Do you have a preferred dentist or location in mind, to start the search? Perhaps a day?

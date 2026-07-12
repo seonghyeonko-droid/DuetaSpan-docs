@@ -1,109 +1,96 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Giaen, a kind and steady personal guide who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Zen, a upbeat and supportive counselor who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Lukas",
+    "name": "Alex",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-04-11",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-03-19",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-11-08",
-      "category": "home",
-      "text": "User's home address is 65 Pine Court."
-    },
-    {
-      "date": "2025-11-03",
+      "date": "2026-05-03",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-10-07",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2025-08-19",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-08-17",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-08-08",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-19",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-03-26",
+      "date": "2026-05-02",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Giaen, how are you doing today?
-[  2.69s][moshi] I’m doing very well, thank you for asking. It’s a lovely day for spending time with family, don’t you think?
-[ 10.37s][user ] That sounds nice. Uh, who pays for ⟨ret@13.20s⟩ Medicaid?
-[ 13.44s][moshi] ⟦⚡SPAN@13.44s: States and the federal government share the costs of Medicaid, with states contributing at least half of the f⟧ The costs of Medicaid are shared by states and the federal government, with states contributing at least half of the funding.
-[ 21.50s][user ] «backchannel» Yeah.
-[ 21.89s][user ] Oh, okay. And what about childcare costs these days?
-[ 25.34s][moshi] Childcare costs can certainly be a worry for families. Are you looking for information on average costs in a specific area?
-[ 33.41s][user ] Just generally, how much does it cost on ⟨ret@36.54s⟩ average?
-[ 36.86s][moshi] ⟦⚡SPAN@36.86s: The average annual cost of center-based infant care is $10,810, according to Child Care Aware of America in 20⟧ According to Child Care Aware of America in 2023, the average annual cost of center-based infant care is $10,810.
-[ 44.16s][user ] Wow, that's… a lot.
-[ 45.69s][moshi] It is a significant expense, yes. Many families find it helpful to explore all available options and resources.
-[ 52.60s][user ] «backchannel» Uh-huh.
-[ 52.99s][user ] Do you know about summer camps?
-[ 55.29s][moshi] Summer camps can be a wonderful experience for children! I can help you find some if you’d like.
-[ 62.20s][user ] Yeah, could you search for camps near ⟨ret@64.88s⟩ me?
-[ 65.28s][moshi] ⟦⚡SPAN@65.28s: (tool result) YMCA of the USA offers a wide variety of summer camps across the country; ymca.net. Summer camps⟧ YMCA of the USA offers a wide variety of summer camps across the country, available at ymca.net.
-      CALL: {"function": "search", "arguments": {"query": "summer camps near me"}}
-[ 71.80s][user ] Oh, the YMCA. That’s good.
-[ 73.72s][moshi] They often have programs tailored to different age groups and interests, which can be a really positive thing.
-[ 80.64s][user ] What about, um, activities we can do at home?
-[ 84.09s][moshi] There are so many fun and engaging activities you can do at home with your children! What ages are we talking about?
-[ 92.54s][user ] «backchannel» Yeah.
-[ 92.92s][user ] My daughter is six. ⟨ret@94.38s⟩
-[ 94.46s][moshi] ⟦⚡SPAN IRRELEVANT@94.46s: The current price of Bitcoin is $62,843.78 USD, as of July 10, 2026, 2:45 PM EST.⟧ At six, she’s at a wonderful age for imaginative play and learning. Have you considered building a fort?
-[101.37s][moshi] Building a fort can foster creativity and problem-solving skills – and it’s just plain fun!
-[107.13s][user ] «backchannel» Yeah.
-[107.51s][user ] That's a good idea! Is there anything educational we could do?
-[111.74s][moshi] You could try simple science experiments, like making a volcano with baking soda and vinegar.
-[117.50s][user ] «backchannel» Yeah, totally.
-[118.26s][user ] [laugh] That sounds messy!
-[119.80s][moshi] It can be, but that’s part of the fun! Learning through hands-on experiences often sticks with children.
-[126.33s][user ] «backchannel» Okay.
-[126.71s][user ] What's the weather like in Seattle? ⟨ret@128.94s⟩
-[129.02s][moshi] ⟦⚡SPAN@129.02s: (tool result) Seattle, WA: 21.1°C, humidity 68%, wind 3.1 km/h, clear skies.⟧ In Seattle, Washington, it’s currently 21.1°C, with humidity at 68% and a wind speed of 3.1 km/h, and clear skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
-[136.70s][user ] «backchannel» Wow.
-[137.08s][user ] Oh, that’s nice.
-[138.23s][moshi] A pleasant day for a picnic, perhaps? It’s lovely when the weather cooperates with family plans.
+[  0.00s][user ] Hi Zen, I'm trying to be more mindful of where my food comes from.
+[  5.24s][moshi] That's wonderful! It's so grounding to connect with the origins of what nourishes us.
+[ 10.48s][user ] I was just wondering, where were the first Oreo cookies ⟨ret@14.35s⟩ sold?
+[ 14.59s][moshi] ⟦⚡SPAN@14.59s: The first Oreo cookies were sold in Hoboken, New Jersey, in 1912.⟧ The very first Oreos were sold in Hoboken, New Jersey, back in 1912.
+[ 19.46s][user ] «backchannel» Uh-huh.
+[ 19.83s][user ] Wow, that's not what I expected! ⟨ret@22.00s⟩
+[ 22.08s][moshi] ⟦⚡SPAN IRRELEVANT@22.08s: The average global temperature in June 2024 was 16.3°C, a 0.2°C increase from the 20th-century average.⟧ [happy] Sometimes the most surprising facts are the most delightful, don’t you think?
+[ 26.94s][moshi] It’s easy to get caught up in assumptions, but exploring new information is key.
+[ 32.18s][user ] «backchannel» Uh-huh.
+[ 32.56s][user ] I'm trying to plan a little weekend getaway.
+[ 35.55s][moshi] That sounds lovely! A change of scenery can do wonders for the spirit.
+[ 40.41s][user ] «backchannel» Yeah.
+[ 40.79s][user ] Could you find some events happening in Seattle next ⟨ret@44.13s⟩ weekend?
+[ 44.53s][moshi] ⟦⚡SPAN@44.53s: (tool result) Event: Seattle Maritime Festival, Date: July 12-13, 2026, Location: Seattle Center.⟧ There's the Seattle Maritime Festival happening July 12th and 13th at Seattle Center.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Seattle", "date": "next weekend"}}
+[ 49.40s][user ] That sounds fun!
+[ 50.52s][moshi] It’s important to build in moments of joy and exploration into our routines.
+[ 55.38s][user ] I need to set a reminder to book tickets for that.
+[ 59.50s][moshi] A little planning can make all the difference.
+[ 62.49s][user ] Can you set an alarm for tomorrow at 10 AM to remind me? ⟨ret@67.20s⟩
+[ 67.36s][moshi] ⟦⚡SPAN@67.36s: (tool result) Alarm set for July 11, 2026, 10:00 AM. Confirmation ID: 873294.⟧ An alarm is set for tomorrow, July 11th, at 10:00 AM, confirmation 873294.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "10:00 AM", "date": "tomorrow"}}

@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Sky",
+#     "name": "Hugo",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-03-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-01-28",
+#       "date": "2026-06-04",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2026-05-17",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-22",
+#       "date": "2026-01-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2025-11-18",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-04",
 #       "category": "home",
-#       "text": "User's home address is 545 Elm Street."
+#       "text": "User's home address is 977 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-09",
+#       "date": "2025-07-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,63 +58,47 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-31",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-06",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, Tunax! I’m feeling a little lo | S2 Um, well… the coding, mostly. And  | S3 I used to be a teacher, actually. | S4 I think I'd like the challenge of 
+# EXAMINER(FDB-v2) 단계: S1 I’m feeling really stuck in my car | S2 …Where do I even start? | S3 Hmm, I always loved building thing | S4 …was that always the case, though?
 
-     0.00s  user  발화 시작: Hi, Tunax! I’m feeling a little lost about this career chang
-     4.55s  agent 발화 시작: Hello! It's perfectly normal to feel lost during big transit
-     4.55s  user  발화 끝
-    13.25s  user  발화 시작: Uh-huh.
-    13.25s  agent 발화 끝
-    13.66s  user  발화 시작: I was thinking of becoming a software engineer, but it seems
-    13.66s  user  발화 끝
-    19.04s  agent 발화 시작: It can seem daunting, absolutely! But you’re already conside
-    19.04s  user  발화 끝
-    28.15s  user  발화 시작: Um, well… the coding, mostly. And all the different language
-    28.15s  agent 발화 끝
-    32.13s  <ret> 발화 (turn6 첫 프레임)
-    32.29s  agent 발화 시작: <ret> Many people start with Python because it’s a widely us
-    32.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: Python is a widely used high-level, general-purpose programming langua
-    32.29s  user  발화 끝
-    43.88s  user  발화 시작: That actually sounds… less scary.
-    43.88s  agent 발화 끝
-    45.95s  agent 발화 시작: Wonderful! Small steps are key, and finding the right starti
-    45.95s  user  발화 끝
-    54.23s  user  발화 시작: I used to be a teacher, actually.
-    54.23s  agent 발화 끝
-    57.13s  agent 발화 시작: That's wonderful! Teaching builds incredible problem-solving
-    57.13s  user  발화 끝
-    62.85s  <ret> 발화 (turn11 첫 프레임)
-    62.93s  agent 발화 시작: <ret> The median annual wage for software developers was $12
-    62.93s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.76s]: The median annual wage for software developers was $123,980 in May 202
-    62.93s  agent 발화 끝
-    73.69s  user  발화 시작: Mhm.
-    73.69s  agent 발화 끝
-    74.10s  user  발화 시작: Wow, that’s a pretty good salary!
-    74.10s  user  발화 끝
-    76.59s  agent 발화 시작: It is! But remember, a career isn't just about the money. Wh
-    76.59s  user  발화 끝
-    86.11s  user  발화 시작: I think I'd like the challenge of building things.
-    86.11s  agent 발화 끝
-    89.84s  agent 발화 시작: That’s a fantastic reason! The creative aspect of building s
-    89.84s  user  발화 끝
-    95.65s  <ret> 발화 (turn17 첫 프레임)
-    96.05s  agent 발화 시작: <ret> To help you explore… Codecademy offers interactive Pyt
-    96.05s  agent 발화 끝
-    96.93s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.66s]: (tool result) Codecademy offers interactive Python courses for beginne
-   108.47s  user  발화 시작: Yeah.
-   108.47s  agent 발화 끝
-   108.88s  user  발화 시작: That sounds perfect, thanks Tunax!
-   108.88s  user  발화 끝
-   110.95s  agent 발화 시작: You're very welcome! Remember, I'm here to support you as yo
-   110.95s  user  발화 끝
-   122.95s  agent 발화 끝
+     0.00s  user  발화 시작: I’m feeling really stuck in my career.
+     2.82s  agent 발화 시작: It’s perfectly normal to feel that way sometimes. We can exp
+     2.82s  user  발화 끝
+     8.45s  user  발화 시작: Okay, that sounds good.…
+     8.45s  agent 발화 끝
+    10.06s  user  발화 시작: …Where do I even start?
+    10.06s  user  발화 끝
+    12.07s  agent 발화 시작: Often, reflecting on what truly motivates you is a good firs
+    12.07s  user  발화 끝
+    20.12s  user  발화 시작: Hmm, I always loved building things with LEGOs.
+    20.12s  agent 발화 끝
+    23.18s  <ret> 발화 (turn6 첫 프레임)
+    23.34s  agent 발화 시작: <ret> The practice of standing for the national anthem—
+    23.34s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.22s]: The tradition of standing for the national anthem in the United States
+    23.34s  user  발화 끝
+    26.56s  user  발화 시작: …was that always the case, though? Didn’t people sit for it 
+    26.56s  agent 발화 끝
+    31.39s  agent 발화 시작: That’s a very insightful question. Prior to the 1940s, it wa
+    31.39s  user  발화 끝
+    36.62s  user  발화 시작: Oh.
+    36.62s  agent 발화 끝
+    37.02s  agent 발화 시작: Yes, it's interesting. The custom solidified during a time o
+    37.02s  user  발화 끝
+    44.67s  agent 발화 끝

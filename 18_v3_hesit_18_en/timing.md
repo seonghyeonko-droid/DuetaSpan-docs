@@ -4,74 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Léa",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-04-29",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-03-24",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-04",
+#       "date": "2026-06-19",
 #       "category": "home",
-#       "text": "User's home address is 852 Cedar Lane."
+#       "text": "User's home address is 515 Elm Street."
+#     },
+#     {
+#       "date": "2026-06-02",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-04-23",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-16",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-16",
-#       "title": "Researching a used car",
+#       "date": "2025-08-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-28",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Uh, I was wondering… what’s the hi | S2 Wow. That’s… really high. | S3 Hmm, so, um, is he still competing | S4 That's good to hear. He sounds won
 
-     0.00s  user  발화 시작: Um, where does… uh, Star Wars: A New Hope take place?
-     3.92s  <ret> 발화 (turn1 첫 프레임)
-     4.16s  agent 발화 시작: <ret> A great deal of *A New Hope* unfolds on the desert pla
-     4.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.07s]: The desert planet Tatooine is where much of the original Star Wars fil
-     4.16s  user  발화 끝
-    13.23s  user  발화 시작: Yeah.
-    13.23s  agent 발화 끝
-    13.61s  user  발화 시작: Tatooine, right. And, welll… is it a real place?
-    13.61s  user  발화 끝
-    17.01s  user  발화 시작: Mm-hmm.
-    17.01s  user  발화 끝
-    17.31s  <ret> 발화 (turn5 첫 프레임)
-    17.39s  agent 발화 시작: <ret> The filming locations for Tatooine were primarily in T
-    17.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Tatooine was primarily filmed in Tunisia, with some scenes shot in Dea
-    17.39s  user  발화 끝
-    27.21s  agent 발화 끝
+     0.00s  user  발화 시작: Uh, I was wondering… what’s the highest score ever in ice sk
+     4.78s  <ret> 발화 (turn1 첫 프레임)
+     5.02s  agent 발화 시작: <ret> Well, it seems Nathan Chen holds that record with a re
+     5.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.95s]: The highest score in ice skating is 330.43, achieved by Nathan Chen at
+     5.02s  user  발화 끝
+    12.97s  user  발화 시작: Wow. That’s… really high.
+    12.97s  agent 발화 끝
+    14.65s  user  발화 시작: Yeah.
+    14.65s  user  발화 끝
+    14.98s  <ret> 발화 (turn4 첫 프레임)
+    15.06s  agent 발화 시작: <ret> Speaking of incredible skaters, Yuzuru Hanyu is anothe
+    15.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.37s]: Yuzuru Hanyu is a two-time Olympic champion and one of the most popula
+    15.06s  user  발화 끝
+    23.43s  user  발화 시작: Mm-hmm.
+    23.43s  agent 발화 끝
+    23.85s  user  발화 시작: Hmm, so, um, is he still competing?
+    23.85s  user  발화 끝
+    26.38s  <ret> 발화 (turn7 첫 프레임)
+    26.78s  agent 발화 시작: <ret> He actually retired from competitive skating in July o
+    26.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.21s]: Yuzuru Hanyu retired from competitive figure skating in July 2022 and 
+    26.78s  user  발화 끝
+    35.99s  user  발화 시작: That's good to hear. He sounds wonderful.
+    35.99s  agent 발화 끝
+    38.92s  user  발화 끝

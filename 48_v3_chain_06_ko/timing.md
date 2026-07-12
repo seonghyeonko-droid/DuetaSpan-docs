@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "우찬",
+#     "name": "예민",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,68 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-03-15",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-03-12",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "date": "2026-02-27",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-05-30",
+#       "date": "2026-02-14",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2025-11-27",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-11-25",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-17",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-14",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-25",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이번 주 토요일에 랜드마크 chez 아티스트 극장에서 상영하는 드라마 영화가 뭐 있는지 알려줄 수 있어?
-     6.86s  <ret> 발화 (turn1 첫 프레임)
-     7.10s  agent 발화 시작: <ret> 랜드마크 chez 아티스트 극장에서는 칠월 십이일 토요일에 드라마 영화 “패스트 라이브스”와 “인
-     7.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.10s]: (tool result) The Landmark Chez Artiste Theatre in Denver, Colorado is
-     7.10s  user  발화 끝
-    14.21s  user  발화 시작: “패스트 라이브스” 상영 시간 좀 알려줄래?
-    14.21s  agent 발화 끝
-    16.89s  <ret> 발화 (turn3 첫 프레임)
-    17.05s  agent 발화 시작: <ret> “패스트 라이브스”는 칠월 십이일 토요일에 오후 한시 삼십분, 네시 십오분, 그리고 일곱시에 상영
-    17.05s  ⚡SPAN 주입 [d'=0.64s / d_lead=6.16s]: (tool result) “Past Lives” will be shown at Landmark Chez Artiste Thea
-    17.05s  user  발화 끝
-    23.21s  user  발화 시작: 네네.
-    23.21s  agent 발화 끝
-    23.68s  user  발화 시작: 음… 그럼 혹시 그 영화 티켓 예매도 도와줄 수 있어?
-    23.68s  user  발화 끝
-    28.41s  agent 발화 시작: 네, 영화 티켓 예매도 도와드릴 수 있습니다. 어떤 시간대로 예매하시겠어요?
-    28.41s  user  발화 끝
-    33.15s  agent 발화 끝
+     0.00s  user  발화 시작: 런던에 있는 박물관 좀 찾아줘.
+     2.07s  <ret> 발화 (turn1 첫 프레임)
+     2.31s  agent 발화 시작: <ret> 런던에는 정말 멋진 박물관들이 많은데요, 특히 대영 박물관은 세계 예술품과 유물을 소장하고 있고,
+     2.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: (tool result) The British Museum in London houses a vast collection of
+     2.31s  user  발화 끝
+    13.86s  user  발화 시작: … 혹시 대영 박물관에서 가장 유명한 건 뭐야?
+    13.86s  agent 발화 끝
+    17.56s  agent 발화 시작: 대영 박물관에서 가장 유명한 것은 로제타석이라고 할 수 있습니다.
+    17.56s  user  발화 끝
+    21.72s  user  발화 시작: 그치.
+    21.72s  agent 발화 끝
+    22.18s  agent 발화 시작: 네, 로제타석은 고대 이집트 문자를 해독하는 데 중요한 역할을 했죠. 공부하시는 데 도움이 되셨으면 좋겠어요
+    22.18s  user  발화 끝
+    29.12s  user  발화 시작: 그럼, 거기 가는 가장 빠른 길은 어떻게 찾아?
+    29.12s  agent 발화 끝
+    32.81s  user  발화 끝

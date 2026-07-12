@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "하훈",
+#     "name": "보진",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-15",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-05-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-04-20",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-11-16",
+#       "date": "2026-05-12",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-10",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-29",
+#       "date": "2025-07-30",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -50,91 +50,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 캐리비안의 해적에 나오는 데이비 존스 역을 누가 맡았는지 | S2 와, 진짜 빠르다! 고마워, 낸. | S3 아니, 저기 봐. 강아지가 뛰어노네. | S4 …아까 집중력에 대해 얘기하고 있었지?
+# EXAMINER(FDB-v2) 단계: S1 카비 쿠시 카비 gham에 나오는 크리쉬는 누구야? | S2 … 지브란 칸은 그 영화 말고 다른 작품에도 나왔어? | S3 그렇구나. 그럼 그 영화는 언제 개봉했어? | S4 아니, 괜찮아. 그냥 생각나는 대로 물어본 거야.
 
-     0.00s  user  발화 시작: 혹시 캐리비안의 해적에 나오는 데이비 존스 역을 누가 맡았는지 알아요?
-     4.63s  <ret> 발화 (turn1 첫 프레임)
-     4.79s  agent 발화 시작: <ret> 데이비 존스 역은 빌 나이 배우가 맡았답니다. 영화 시리즈에서 정말 인상적인 연기를 보여주셨죠.
-     4.79s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.23s]: Bill Nighy played Davy Jones in the Pirates of the Caribbean film seri
-     4.79s  user  발화 끝
-    11.02s  user  발화 시작: 그래.
-    11.02s  agent 발화 끝
-    11.50s  user  발화 시작: 빌 나이요? 음… 다른 영화에도 나왔었나?
-    11.50s  user  발화 끝
-    14.13s  <ret> 발화 (turn4 첫 프레임)
-    14.37s  agent 발화 시작: <ret> 네, 빌 나이 배우는 “러브 액츄얼리”, “더 베스트 이그조틱 마리골드 호텔”, 그리고 “리빙” 
-    14.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.66s]: Bill Nighy has appeared in films such as "Love Actually", "The Best Ex
-    14.37s  user  발화 끝
-    22.03s  user  발화 시작: 어.
-    22.03s  agent 발화 끝
-    22.51s  user  발화 시작: 아, 맞다. 저 이번 주 토요일에 친구랑 영화 보려고 하는데, 혹시 괜찮은 영화 추천해 줄 수 있어?
-    22.51s  user  발화 끝
-    30.50s  <ret> 발화 (turn7 첫 프레임)
-    30.66s  agent 발화 시작: <ret> 이번 주말에 볼 만한 영화로는 “엘리멘탈”, “스파이더맨: 어크로스 더 유니버스”, “오펜하이머”
-    30.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: Movies: "Elemental", "Spider-Man: Across the Spider-Verse", "Oppenheim
-    30.66s  user  발화 끝
-    37.36s  user  발화 시작: 그래.
-    37.36s  agent 발화 끝
-    37.84s  user  발화 시작: 스파이더맨이 재미있어 보이는데… 지금 바로 예매해 줄 수 있어?
-    37.84s  user  발화 끝
-    41.75s  <ret> 발화 (turn10 첫 프레임)
-    42.15s  agent 발화 시작: <ret> 네, “스파이더맨: 어크로스 더 유니버스” 예매 완료되었습니다. 확인 번호는 팔 칠 육 오 사 삼
-    42.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.14s]: (tool result) Confirmation ID: 87654321.
-    42.15s  user  발화 끝
-    50.30s  user  발화 시작: 와, 진짜 빠르다! 고마워, 낸.
-    50.30s  agent 발화 끝
-    52.69s  agent 발화 시작: 천만에요. 언제든지 도움이 필요하면 말씀하세요. 영화 즐겁게 보세요!
-    52.69s  user  발화 끝
-    56.52s  user  발화 시작: 아, 그런데 내일 모레 날씨 어때?
-    56.52s  agent 발화 끝
-    59.32s  <ret> 발화 (turn14 첫 프레임)
-    59.40s  agent 발화 시작: <ret> 내일 모레, 칠월 십이일 날씨는 이십팔 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이
-    59.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) Weather: 28.5°C, humidity 68%, wind 7.2 km/h, sunny.
-    59.40s  user  발화 끝
-    68.02s  user  발화 시작: 덥겠네… 혹시, 공부할 때 집중하는 방법 좀 알려줄 수 있을까?
-    68.02s  agent 발화 끝
-    72.81s  agent 발화 시작: 집중력을 높이는 방법은 여러 가지가 있어요. 우선 조용한 환경을 만들고, 목표를 세우는 것이 중요해요.
-    72.81s  user  발화 끝
-    79.51s  user  발화 시작: 응.
-    79.51s  agent 발화 끝
-    79.99s  user  발화 시작: 목표 설정은… 어떻게 해야 할까?
-    79.99s  user  발화 끝
-    82.39s  agent 발화 시작: 작은 목표부터 시작해서 하나씩 달성해 나가는 것이 좋아요. 예를 들어, ‘삼십분 동안 책 읽기’처럼 구체적으
-    82.39s  user  발화 끝
-    90.53s  user  발화 시작: 우와.
-    90.53s  agent 발화 끝
-    91.01s  user  발화 시작: 아니, 저기 봐. 강아지가 뛰어노네.
-    91.01s  user  발화 끝
-    93.41s  user  발화 시작: 아, 잠깐만.
-    93.41s  user  발화 끝
-    94.36s  agent 발화 시작: 그리고 타이머를 활용해서 집중하는 시간을 정해두면 도움이 —
-    94.36s  user  발화 끝
-    98.20s  user  발화 시작: 잠깐만, 지금 전화 좀 받아야 할 것 같아.
-    98.20s  agent 발화 끝
-   102.03s  agent 발화 시작: 네, 천천히 통화하세요.
-   102.03s  user  발화 끝
-   103.46s  user  발화 시작: 미안, 잠깐 급한 일이 있었어.…
-   103.46s  agent 발화 끝
-   105.86s  user  발화 시작: …아까 집중력에 대해 얘기하고 있었지?
-   105.86s  user  발화 끝
-   108.25s  agent 발화 시작: 네, 집중력을 높이는 방법에 대해 이야기하고 있었어요. 작은 목표부터 시작해서 달성해 나가는 것이 중요하다고
-   108.25s  user  발화 끝
-   115.44s  user  발화 시작: 아.
-   115.44s  agent 발화 끝
-   115.92s  user  발화 시작: 아, 맞아. 그럼 오늘 할 공부 목표를 세워볼게.
-   115.92s  user  발화 끝
-   119.75s  agent 발화 시작: 아주 잘 생각하셨어요. 목표를 세우고 꾸준히 실천하면 분명 좋은 결과가 있을 거예요.
-   119.75s  user  발화 끝
-   125.50s  user  발화 시작: 응응.
-   125.50s  agent 발화 끝
-   125.98s  user  발화 시작: 고마워, 낸. 덕분에 힘이 난다.
-   125.98s  user  발화 끝
-   128.37s  agent 발화 시작: 저도 기쁘네요. 언제든지 힘이 필요하면 저를 찾아주세요. 응원할게요!
-   128.37s  user  발화 끝
-   132.21s  user  발화 시작: 응.
-   132.21s  agent 발화 끝
-   132.68s  user  발화 시작: 그럼, 나중에 또 연락할게.
-   132.68s  user  발화 끝
-   134.60s  agent 발화 시작: 네, 다음에 또 이야기 나눠요. 좋은 하루 보내세요!
-   134.60s  user  발화 끝
-   138.43s  agent 발화 끝
+     0.00s  user  발화 시작: 카비 쿠시 카비 gham에 나오는 크리쉬는 누구야?
+     3.20s  <ret> 발화 (turn1 첫 프레임)
+     3.36s  agent 발화 시작: <ret> 영화 카비 쿠시 카비 gham에서 크리쉬 역할을 맡은 배우는 지브란 칸입니다.
+     3.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.27s]: Jibraan Khan played the role of Krish in the 2001 Bollywood film Kabhi
+     3.36s  user  발화 끝
+     8.63s  user  발화 시작: 음, 그 영화 진짜 좋아했어.
+     8.63s  agent 발화 끝
+    11.03s  agent 발화 시작: 즐겁게 보셨다니 다행이네요. 혹시 다른 영화에 대해서도 궁금한 점이 있으신가요?
+    11.03s  user  발화 끝
+    15.82s  user  발화 시작: 그치.
+    15.82s  agent 발화 끝
+    16.30s  user  발화 시작: 아, 잠깐만.
+    16.30s  user  발화 끝
+    17.26s  agent 발화 시작: 그 영화는 샤룩 칸과 카졸이 출연해서—
+    17.26s  user  발화 끝
+    20.13s  user  발화 시작: … 지브란 칸은 그 영화 말고 다른 작품에도 나왔어?
+    20.13s  agent 발화 끝
+    24.05s  <ret> 발화 (turn8 첫 프레임)
+    24.45s  agent 발화 시작: <ret> 네, 지브란 칸은 이천사년 영화 '허니문 트래블스 프라이빗 리미티드'와 이천육년 영화 '델리 하이
+    24.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: Jibraan Khan also appeared in the 2004 film "Honeymoon Travels Pvt. Lt
+    24.45s  user  발화 끝
+    31.16s  user  발화 시작: 응.
+    31.16s  agent 발화 끝
+    31.64s  agent 발화 시작: 그는 아역 배우로 활동을 시작했고, 꾸준히 연기 활동을 이어오고 있습니다. 혹시 그의 최근 활동에 대해 알아
+    31.64s  user  발화 끝
+    39.79s  user  발화 시작: 어.
+    39.79s  agent 발화 끝
+    40.27s  user  발화 시작: 최근 활동은 말고, 그 영화에서 크리쉬 역할 말고 다른 역할도 맡았었어?
+    40.27s  user  발화 끝
+    45.22s  <ret> 발화 (turn13 첫 프레임)
+    45.54s  agent 발화 시작: <ret> 카비 쿠시 카비 gham에서는 어린 크리쉬 라이찬드 역을 맡았습니다. 다른 역할을 맡지는 않았습니
+    45.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: Jibraan Khan portrayed the young Krish Raichand in Kabhi Khushi Kabhie
+    45.54s  user  발화 끝
+    51.77s  user  발화 시작: 음.
+    51.77s  agent 발화 끝
+    52.25s  user  발화 시작: 그렇구나. 그럼 그 영화는 언제 개봉했어?
+    52.25s  user  발화 끝
+    54.81s  <ret> 발화 (turn16 첫 프레임)
+    55.13s  agent 발화 시작: <ret> 카비 쿠시 카비 gham은 이천일년 십이월 십사일에 개봉했습니다.
+    55.13s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.84s]: Kabhi Khushi Kabhie Gham was released on December 14, 2001.
+    55.13s  user  발화 끝
+    58.96s  user  발화 시작: 이천일년이구나. 시간이 정말 빠르다.
+    58.96s  agent 발화 끝
+    60.88s  agent 발화 시작: 시간이 참 빠르게 흐르는 것 같아요. 혹시 다른 영화에 대해 알아볼까요?
+    60.88s  user  발화 끝
+    66.16s  user  발화 시작: 아니, 괜찮아. 그냥 생각나는 대로 물어본 거야.
+    66.16s  agent 발화 끝
+    69.51s  agent 발화 시작: 네, 편하게 말씀해주세요. 언제든지 도와드릴 준비가 되어 있습니다.
+    69.51s  user  발화 끝
+    73.35s  user  발화 시작: 응.
+    73.35s  agent 발화 끝
+    73.83s  user  발화 시작: 고마워, 브랠.
+    73.83s  user  발화 끝
+    74.78s  agent 발화 시작: 천만에요.
+    74.78s  user  발화 끝
+    75.26s  agent 발화 끝

@@ -4,127 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "노별",
+#     "name": "우우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-06-14",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-07-26",
+#       "date": "2026-03-17",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-07-19",
+#       "date": "2026-01-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2025-06-07",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-06-08",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 블루맨 그룹 라스베가스 티켓 다섯 장, 사월 이십이일에 구매하 | S2 카본이 제일 맛있어 보이는데, 예약해 줄 수 있어? | S3 아직 숙소는 안 잡았어. | S4 이박 삼일로 할게.
+# EXAMINER(FDB-v2) 단계: S1 혹시 베를린 브란덴부르크 문 좌표 좀 알려줄 수 있을까요? 음 | S2 아, 그렇군요. 이번 주 토요일에 아이들과 갈 만한 곳이 있을 | S3 독일 기술 박물관이요? 거기 주소 좀 알려주시겠어요? | S4 감사합니다.
 
-     0.00s  user  발화 시작: 블루맨 그룹 라스베가스 티켓 다섯 장, 사월 이십이일에 구매하고 싶어.
-     4.62s  <ret> 발화 (turn1 첫 프레임)
-     4.70s  agent 발화 시작: <ret> 블루맨 그룹 라스베가스 공연 티켓 다섯 장, 이천이십육년 사월 이십이일 예매가 완료되었습니다. 확
-     4.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.58s]: (tool result) Confirmation: BMG-LV-20260422-5839
-     4.70s  user  발화 끝
-    19.29s  user  발화 시작: 헐.
-    19.29s  agent 발화 끝
-    19.76s  user  발화 시작: 혹시 그날 저녁에 괜찮은 레스토랑도 추천해 줄 수 있어?
-    19.76s  user  발화 끝
-    23.99s  agent 발화 시작: 어떤 종류의 음식을 선호하시나요?
-    23.99s  user  발화 끝
-    25.87s  user  발화 시작: 음… 이탈리안 음식이 좋을 것 같아.
-    25.87s  agent 발화 끝
-    28.30s  <ret> 발화 (turn6 첫 프레임)
-    28.70s  agent 발화 시작: <ret> 이탈리안 음식을 좋아하시는군요. 라스베가스에는 훌륭한 이탈리안 레스토랑이 많이 있습니다.
-    28.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.23s]: (tool result) Italian restaurants in Las Vegas: Bellagio, Spago, Carbo
-    28.70s  user  발화 끝
-    32.93s  agent 발화 시작: 벨라지오, 스파고, 카본 레스토랑이 괜찮은 이탈리안 레스토랑으로 검색됩니다.
-    32.93s  agent 발화 끝
-    36.69s  user  발화 시작: 카본이 제일 맛있어 보이는데, 예약해 줄 수 있어?
-    36.69s  agent 발화 끝
-    40.46s  agent 발화 시작: 카본 레스토랑을 예약해 드리겠습니다. 몇 시로 예약하시겠어요?
-    40.46s  user  발화 끝
-    43.75s  user  발화 시작: 저녁 일곱시로 부탁해.
-    43.75s  agent 발화 끝
-    45.00s  <ret> 발화 (turn11 첫 프레임)
-    45.16s  agent 발화 시작: <ret> 카본 레스토랑, 이천이십육년 사월 이십이일 저녁 일곱시 예약이 완료되었습니다. 확인 번호는 씨 알
-    45.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.17s]: (tool result) Reservation confirmed at Carbone, Las Vegas, April 22, 2
-    45.16s  user  발화 끝
-    58.34s  user  발화 시작: 우와.
-    58.34s  agent 발화 끝
-    58.81s  user  발화 시작: 와, 정말 고마워.
-    58.81s  user  발화 끝
-    60.22s  agent 발화 시작: 도움이 되어 기쁩니다. 여행 준비는 잘 되어 가시나요?
-    60.22s  user  발화 끝
-    63.98s  user  발화 시작: 응.
-    63.98s  agent 발화 끝
-    64.45s  user  발화 시작: 아직 숙소는 안 잡았어.
-    64.45s  user  발화 끝
-    66.33s  agent 발화 시작: 숙소는 아직 예약하지 않으셨군요? —
-    66.33s  user  발화 끝
-    68.69s  user  발화 시작: … 혹시 벨라지오 호텔도 예약해 줄 수 있어?
-    68.69s  agent 발화 끝
-    72.45s  agent 발화 시작: 벨라지오 호텔 예약도 도와드릴 수 있습니다. 어떤 종류의 방을 원하시나요?
-    72.45s  user  발화 끝
-    76.99s  <ret> 발화 (turn20 첫 프레임)
-    77.15s  agent 발화 시작: <ret> 호텔 예약은 여행의 중요한 부분이죠. 벨라지오 호텔은 스탠다드룸, 스위트룸, 펜트하우스 스위트룸을
-    77.15s  agent 발화 끝
-    78.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.35s]: Bellagio Hotel offers standard rooms, suites, and penthouse suites. Pr
-    89.38s  user  발화 시작: 스위트룸으로 부탁해.
-    89.38s  agent 발화 끝
-    90.33s  agent 발화 시작: 스위트룸으로 예약해 드리겠습니다. 며칠 동안 숙박하시겠어요?
-    90.33s  user  발화 끝
-    93.15s  user  발화 시작: 응.
-    93.15s  agent 발화 끝
-    93.62s  user  발화 시작: 이박 삼일로 할게.
-    93.62s  user  발화 끝
-    94.87s  <ret> 발화 (turn25 첫 프레임)
-    95.03s  agent 발화 시작: <ret> 벨라지오 호텔 스위트룸, 이천이십육년 사월 이십이일부터 이십사일까지 이박 삼일 숙박이 확정되었습니
-    95.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.52s]: (tool result) Suite at Bellagio confirmed for April 22-24, 2026. Confi
-    95.03s  user  발화 끝
-   110.55s  user  발화 시작: 정말 수고했어. 덕분에 여행 계획이 거의 다 끝났네.
-   110.55s  agent 발화 끝
-   114.32s  agent 발화 시작: 여행 계획을 마무리하는 데 도움이 되어 기쁩니다. 즐거운 여행 되세요!
-   114.32s  user  발화 끝
-   119.02s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 베를린 브란덴부르크 문 좌표 좀 알려줄 수 있을까요? 음… 아니, 됐어요. 그냥 지금 날씨가 어때요?
+     7.57s  <ret> 발화 (turn1 첫 프레임)
+     7.65s  agent 발화 시작: <ret> 베를린의 현재 날씨는 기온 이십삼도, 습도 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다. 날
+     7.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.17s]: {"city": "Berlin", "temperature": "23.0°C", "humidity": "74%", "wind":
+     7.65s  user  발화 끝
+    14.82s  user  발화 시작: 예.
+    14.82s  agent 발화 끝
+    15.29s  user  발화 시작: 아, 그렇군요. 이번 주 토요일에 아이들과 갈 만한 곳이 있을까요?
+    15.29s  user  발화 끝
+    19.67s  <ret> 발화 (turn4 첫 프레임)
+    20.07s  agent 발화 시작: <ret> 베를린에는 가족과 함께 가기 좋은 곳이 많아요. 베를린 동물원, 레고랜드 디스커버리 센터 베를린,
+    20.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.60s]: (tool result) Berlin has many attractions for families, including the 
+    20.07s  user  발화 끝
+    28.68s  user  발화 시작: 독일 기술 박물관이요? 거기 주소 좀 알려주시겠어요?
+    28.68s  agent 발화 끝
+    31.70s  <ret> 발화 (turn6 첫 프레임)
+    32.02s  agent 발화 시작: <ret> 독일 기술 박물관 주소는 독일 베를린 트레비너 거리 구번지, 우편번호는 일 공 구 육 삼입니다. 
+    32.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.08s]: The Deutsches Technikmuseum Berlin is located at Trebbiner Straße 9, 1
+    32.02s  user  발화 끝
+    41.10s  user  발화 시작: 어머.
+    41.10s  agent 발화 끝
+    41.58s  user  발화 시작: 감사합니다.
+    41.58s  user  발화 끝
+    42.06s  agent 발화 시작: 천만에요.
+    42.06s  user  발화 끝
+    42.54s  agent 발화 끝

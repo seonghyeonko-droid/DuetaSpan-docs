@@ -1,89 +1,85 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Thara, a encouraging and non-judgmental counselor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Kloraen, a warm and attentive life coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Bruno",
+    "name": "Noa",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
+      "date": "2026-06-28",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-12-30",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-11-19",
+      "category": "home",
+      "text": "User's home address is 230 Oak Avenue."
+    },
+    {
+      "date": "2025-07-23",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "text": "User is planning a trip to Switzerland in March."
     },
     {
-      "date": "2026-04-23",
+      "date": "2025-07-08",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-04",
+      "date": "2025-06-21",
       "category": "allergy",
       "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "hobby",
-      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-18",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-05",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Bruno, I'm Thara. It's lovely to meet you.
-[  3.49s][user ] um, I was just thinking about my trip…
-[  6.60s][moshi] It sounds like you're already starting to think ahead. That's a great first step when planning something.
-[ 13.20s][user ] to New Zealand. Do you remember anything about that? ⟨ret@16.54s⟩
-[ 16.70s][moshi] ⟦⚡SPAN@16.70s: [2026-06-19] User is planning a trip to New Zealand in August.⟧ Yes, I do. You mentioned you were planning a trip to New Zealand in August.
-[ 22.52s][user ] «backchannel» Yeah.
-[ 22.91s][user ] right. August. What’s the weather like there ⟨ret@25.62s⟩ then?
-[ 26.02s][moshi] ⟦⚡SPAN@26.02s: (tool result) Current weather in New Zealand: 15.2°C, humidity 82%, wind 7.1 km/h.⟧ The current weather in New Zealand is 15.2°C, with 82% humidity and a 7.1 km/h wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New Zealand"}}
-[ 32.23s][user ] oh, that’s…chilly.
-[ 33.01s][moshi] It does sound a bit cool. Packing layers might be a good idea, just to be prepared.
-[ 39.61s][user ] I guess so. I’m also thinking about what to do there.
-[ 43.88s][moshi] That’s wonderful! New Zealand offers so many incredible experiences. Do you have any interests I could help brainstorm with?
-[ 51.26s][user ] I really like rock climbing. ⟨ret@53.04s⟩
-[ 53.20s][moshi] ⟦⚡SPAN@53.20s: [2025-08-02] User is into rock climbing.⟧ That’s fantastic! I have a note that you enjoy rock climbing.
-[ 57.47s][user ] «backchannel» Uh-huh.
-[ 57.86s][user ] yeah, that’s me. Are there good spots in New Zealand? ⟨ret@61.66s⟩
-[ 61.74s][moshi] ⟦⚡SPAN@61.74s: (tool result) Popular rock climbing spots in New Zealand include Piha, Castle Hill, and Arapaki.⟧ Piha, Castle Hill, and Arapaki are popular rock climbing spots in New Zealand.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"category": "rock climbing", "location": "New Zealand"}}
-[ 66.79s][user ] «backchannel» Mhm.
-[ 67.18s][moshi] They're all quite stunning locations. Piha has beautiful coastal climbs, if that appeals to you.
-[ 73.01s][user ] I also need to book a hotel.
-[ 75.72s][moshi] That’s a practical step. Do you have a city in mind within New Zealand to start with?
-[ 82.33s][user ] somewhere near Auckland, ⟨ret@83.48s⟩ maybe.
-[ 83.88s][moshi] ⟦⚡SPAN@83.88s: (tool result) Found 123 hotels in Auckland. Average price: $210/night.⟧ I found 123 hotels in Auckland, with an average price of $210 per night.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Auckland"}}
-[ 89.32s][user ] «backchannel» Oh.
-[ 89.70s][user ] okay, that's… good to know.
-[ 91.65s][moshi] It’s good to have a starting point, isn't it? We can refine the search with more details if you like.
-[ 99.41s][user ] I had a birthday dinner planned once… do you ⟨ret@103.06s⟩ recall?
-[103.30s][moshi] ⟦⚡SPAN@103.30s: [2025-06-18] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ Yes, you were planning a birthday dinner for six people, with a preference for outdoor seating.
-[109.51s][user ] «backchannel» Uh-huh.
-[109.90s][user ] right! I think I need to focus on New Zealand for now though.
-[114.95s][moshi] That’s perfectly alright. Sometimes, focusing on one thing at a time helps reduce stress.
-[120.38s][user ] thanks, Thara.
-[121.16s][moshi] You're very welcome, Bruno. Remember, planning should be enjoyable, so let’s take things at your pace.
+[  0.00s][moshi] Hi Noa, I'm Kloraen. It’s lovely to meet you.
+[  3.32s][user ] «backchannel» Yeah.
+[  3.69s][user ] Um, well, I was hoping you could help me remember ⟨ret@7.51s⟩ something.
+[  7.75s][moshi] ⟦⚡SPAN@7.75s: [2025-07-23] User is planning a trip to Switzerland in March.⟧ You are planning a trip to Switzerland in March, according to my notes.
+[ 12.54s][user ] «backchannel» Yeah.
+[ 12.91s][user ] That's right! And I was also looking at cars, wasn't ⟨ret@16.57s⟩ I?
+[ 16.97s][moshi] «interrupted» ⟦⚡SPAN@16.97s: [2026-06-05] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ You were researching used cars, specifically hybrid models with under thirty thousand miles—
+[ 21.76s][user ] «interrupts_prev» …actually, do you think a hybrid is the right choice for city driving?
+[ 26.56s][moshi] Hybrids are often fantastic for city driving, offering better fuel economy—
+[ 30.61s][user ] «backchannel» Yeah.
+[ 30.98s][moshi] …because of the electric motor assisting at lower speeds. It can really reduce your carbon footprint too, which is something many people value.
+[ 39.47s][user ] «backchannel» Yeah.
+[ 39.84s][user ] That sounds good. I’m also allergic to something, right? ⟨ret@43.00s⟩
+[ 43.16s][moshi] ⟦⚡SPAN@43.16s: [2025-06-21] User is allergic to pollen.⟧ Yes, my notes indicate you are allergic to pollen. Perhaps Switzerland in March will be better for that, since pollen counts are lower then.

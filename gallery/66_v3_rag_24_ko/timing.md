@@ -4,48 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "태담",
+#     "name": "혜찬",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-05-06",
+#       "date": "2026-06-09",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-10-29",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-09-24",
+#       "date": "2026-06-04",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2025-11-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-04",
+#       "date": "2025-07-24",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -55,51 +71,26 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 너무 힘들어요. 뭔가 변화가 필요할 것 같아요. | S2 작은 거요? 예를 들면 뭘요? | S3 아, 그렇군요. 천구백팔십육년이네요. | S4 오, 인사이드 아웃 이 좋네요.
 
-     0.00s  user  발화 시작: 요즘 너무 힘들어요. 뭔가 변화가 필요할 것 같아요.
-     4.29s  agent 발화 시작: 변화를 꿈꾸시는군요. 새로운 시작을 응원할게요. 어떤 변화를 생각하고 계신가요?
-     4.29s  user  발화 끝
-     9.12s  user  발화 시작: 그래.
-     9.12s  agent 발화 끝
-     9.66s  user  발화 시작: 글쎄요… 뭐부터 시작해야 할지 모르겠어요.
-     9.66s  user  발화 끝
-    12.34s  agent 발화 시작: 막막하게 느껴지시는 마음, 충분히 이해해요. 작은 것부터 시작해보는 건 어떠세요?
-    12.34s  user  발화 끝
-    17.71s  user  발화 시작: 작은 거요? 예를 들면 뭘요?
-    17.71s  agent 발화 끝
-    20.39s  agent 발화 시작: 새로운 취미를 시작하거나, 평소에 가보고 싶었던 곳을 방문해보는 것도 좋겠네요.
-    20.39s  user  발화 끝
-    25.76s  user  발화 시작: 응.
-    25.76s  agent 발화 끝
-    26.29s  user  발화 시작: 아, 맞다. 위스콘신에서 술 마시는 나이가 언제 이십일세로 바뀌었는지 궁금하네요.
-    26.29s  user  발화 끝
-    31.58s  <ret> 발화 (turn9 첫 프레임)
-    31.66s  agent 발화 시작: <ret> 위스콘신에서 술 마시는 나이가 이십일세로 바뀐 건, 천구백팔십사년 전국 최저 음주 연령법에 발맞춰
-    31.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: On September 1, 1986, Wisconsin raised its drinking age to 21, alignin
-    31.66s  user  발화 끝
-    42.93s  user  발화 시작: 아.
-    42.93s  agent 발화 끝
-    43.47s  user  발화 시작: 아, 그렇군요. 천구백팔십육년이네요.
-    43.47s  user  발화 끝
-    45.08s  agent 발화 시작: 맞아요. 새로운 사실을 알아가는 것도 변화의 시작이 될 수 있답니다.
-    45.08s  user  발화 끝
-    50.44s  user  발화 시작: 이번 주 토요일에 영화 보러 갈까요? 혹시 괜찮은 영화 있어요?
-    50.44s  agent 발화 끝
-    55.73s  <ret> 발화 (turn14 첫 프레임)
-    55.81s  agent 발화 시작: <ret> 이번 주 토요일에 영화 보시는군요! 씨 지 브이 강남에서 '인사이드 아웃 이'가 오후 두시, 다섯
-    55.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: (tool result) Showing: "Inside Out 2" (PG) - 2:00 PM, 5:30 PM, 8:00 PM
-    55.81s  user  발화 끝
-    68.15s  user  발화 시작: 대박.
-    68.15s  agent 발화 끝
-    68.69s  user  발화 시작: 오, 인사이드 아웃 이 좋네요.
-    68.69s  user  발화 끝
-    71.37s  agent 발화 시작: [happy] 좋은 선택이에요! 마음껏 웃고 즐기다 오세요.
-    71.37s  user  발화 끝
-    75.13s  user  발화 시작: 혹시 내일 날씨 어때요?
-    75.13s  agent 발화 끝
-    76.87s  <ret> 발화 (turn19 첫 프레임)
-    77.27s  agent 발화 시작: <ret> 내일 서울 날씨는 이십팔 점 오도, 습도는 육십오퍼센트, 바람은 시속 사 점 이킬로미터로, 부분적
-    77.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: (tool result) Weather in Seoul: 28.5°C, humidity 65%, wind 4.2 km/h, p
-    77.27s  user  발화 끝
-    89.61s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 좀 힘든데, 커리어 때문에 고민이 많아요. 뭘 해야 할지 모르겠어요.
+     4.79s  agent 발화 시작: 힘든 시간을 보내고 계시는군요. 커리어 고민은 누구에게나 찾아올 수 있어요. 어떤 점이 가장 어렵게 느껴지세
+     4.79s  user  발화 끝
+    11.32s  user  발화 시작: 뭘 잘하는지도 모르겠고, 뭘 하면 좋을지도 모르겠어요. 그냥 막막해요.
+    11.32s  agent 발화 끝
+    14.83s  <ret> 발화 (turn3 첫 프레임)
+    15.23s  agent 발화 시작: <ret> 막막한 마음, 충분히 이해가 갑니다. 스스로를 잘 아는 건 시간이 걸리는 일이죠. 혹시 전에 어떤
+    15.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.14s]: The tradition of standing for the national anthem in the United States
+    15.23s  user  발화 끝
+    24.38s  agent 발화 시작: 국가를 위한 경례를 서서 하는 전통은—
+    24.38s  agent 발화 끝
+    26.99s  user  발화 시작: …혹시 제가 좋아하는 일을 찾는 데 도움이 될 만한 테스트 같은 게 있을까요?
+    26.99s  agent 발화 끝
+    32.65s  agent 발화 시작: 아, 네, 물론입니다. 좋아하는 일을 찾는 데 도움이 되는 다양한 심리 테스트들이 있어요.
+    32.65s  user  발화 끝
+    38.30s  user  발화 시작: 응.
+    38.30s  agent 발화 끝
+    38.74s  agent 발화 시작: 그런 테스트를 통해 자신의 강점과 흥미를 파악하는 데 도움이 될 수 있습니다. 혹시 어떤 분야에 관심이 있으
+    38.74s  user  발화 끝
+    46.14s  agent 발화 시작: 좀 더 구체적으로 말씀해 주시면 더 적절한 테스트를 추천해 드릴 수 있어요.
+    46.14s  agent 발화 끝
+    51.36s  agent 발화 끝

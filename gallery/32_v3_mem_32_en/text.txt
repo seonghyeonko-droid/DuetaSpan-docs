@@ -1,10 +1,10 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Lien, a calm and patient wellness coach who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Marien, a grounded and empathetic personal guide who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Manon",
+    "name": "Casey",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -12,88 +12,62 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "GBP (£)"
     },
     "nationality": "British",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-09",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-05-02",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-03-17",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-03-11",
+      "date": "2026-06-11",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-03-26",
+      "category": "home",
+      "text": "User's home address is 834 Maple Drive."
+    },
+    {
+      "date": "2026-03-23",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-09-22",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-06-25",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-30",
+      "date": "2025-10-02",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Manon, I’m Lien.
-[  1.42s][user ] Hi Lien, nice to meet you too. I'm a bit stressed about an upcoming accounting exam.
-[  7.08s][moshi] That’s understandable, accounting can be demanding. What specifically is causing you the most stress?
-[ 12.03s][user ] «backchannel» Yeah.
-[ 12.38s][user ] Well, I just feel really overwhelmed by all the information.
-[ 15.92s][moshi] It's easy to feel that way when facing a lot of material. We can break it down into smaller, manageable steps.
-[ 23.35s][user ] «backchannel» Yeah.
-[ 23.71s][user ] That sounds good. I was also wondering, do you remember what I mentioned about my ⟨ret@29.05s⟩ hobbies?
-[ 29.37s][moshi] ⟦⚡SPAN@29.37s: [2026-03-17] User is into home fermentation.⟧ Yes, I recall you mentioned you enjoy home fermentation—a wonderful and engaging hobby.
-[ 33.97s][user ] «backchannel» Uh-huh.
-[ 34.32s][moshi] It’s great to have hobbies that help you relax and focus, especially during busy times.
-[ 39.63s][user ] I was thinking of making kombucha this weekend.
-[ 42.46s][moshi] That sounds like a lovely plan! Perhaps scheduling it in can give you something to look forward to.
-[ 48.83s][user ] Yeah, maybe. I also wanted to ask about something from a while ⟨ret@53.03s⟩ ago.
-[ 53.43s][moshi] ⟦⚡SPAN@53.43s: [2026-03-11] User's favorite cuisine is Ethiopian.⟧ You mentioned that your favorite cuisine is Ethiopian—I remember you saying how much you enjoy it.
-[ 59.09s][user ] Right. Are there any good Ethiopian restaurants around here in London? ⟨ret@62.82s⟩
-[ 62.98s][moshi] ⟦⚡SPAN@62.98s: (tool result) Ethiopian restaurant Zeren Kitchen, 229 Portobello Rd, London W11 1LT; 4.5 stars, £20 per person⟧ Zeren Kitchen in Portobello Road has 4.5 stars and costs around £20 per person.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Ethiopian", "location": "London"}}
-[ 67.93s][user ] Oh, that sounds perfect! I’ve heard good things.
-[ 70.76s][moshi] It’s always good to have a reliable place to go for a favorite meal.
-[ 75.72s][user ] Do you remember what I was looking at car-wise, a while ⟨ret@79.64s⟩ back?
-[ 79.96s][moshi] ⟦⚡SPAN@79.96s: [2026-03-30] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ You were researching used hybrid cars, looking for models with under 30,000 miles.
-[ 84.56s][user ] Yes! I haven’t really gotten back to that.
-[ 87.39s][moshi] It’s okay to put things on hold, but it’s good to revisit them when you have the energy.
-[ 93.76s][user ] I think I'd like to look again now. Can you find some ⟨ret@98.12s⟩ options?
-[ 98.36s][moshi] ⟦⚡SPAN@98.36s: (tool result) Toyota Prius and Hyundai Ioniq are popular choices for used hybrid cars in London, offering good⟧ Toyota Prius and Hyundai Ioniq are popular choices in London, with good fuel economy, according to Auto Trader.
-      CALL: {"function": "search", "arguments": {"query": "used hybrid cars under 30000 miles London"}}
-[104.73s][user ] That’s helpful. What about my apartment search? ⟨ret@107.13s⟩
-[107.21s][moshi] ⟦⚡SPAN@107.21s: [2025-09-15] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ You were looking for a pet-friendly, two-bedroom apartment downtown, within a certain budget.
-[111.81s][user ] «backchannel» Yeah.
-[112.16s][user ] Yes, exactly. I still haven’t found anything suitable.
-[114.99s][moshi] Finding the right place can take time. Don't get discouraged—it will happen.
-[119.24s][user ] «backchannel» Okay.
-[119.59s][user ] [sigh] It's just a lot to manage, everything at once.
-[123.13s][moshi] It absolutely is, Manon. Taking things one step at a time is the key. And remember your fermentation!
-[129.50s][user ] «backchannel» Uh-huh.
-[129.85s][user ] You're right. Thanks, Lien.
-[131.27s][moshi] You’re very welcome. I'm here whenever you need to talk or brainstorm.
+[  0.00s][moshi] Hi Casey, I'm Marien.
+[  1.38s][user ] Hi Marien, nice to meet you too. Could you remind me what I said about my travel preferences? ⟨ret@7.52s⟩
+[  7.60s][moshi] ⟦⚡SPAN@7.60s: [2025-10-02] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ I have a note from October second of last year, where you mentioned preferring a window seat when traveling.
+[ 14.16s][user ] «backchannel» Right.
+[ 14.51s][user ] Oh, right! That’s helpful. And what did I say about food? ⟨ret@18.22s⟩
+[ 18.30s][moshi] ⟦⚡SPAN@18.30s: [2026-06-11] User's favorite cuisine is sushi.⟧ You told me on June eleventh that your favorite cuisine is sushi.
+[ 22.45s][user ] «backchannel» Okay.
+[ 22.79s][moshi] That’s wonderful! Knowing your preferences helps me tailor suggestions. Perhaps we could explore some sushi restaurants in London?
+[ 29.01s][user ] Actually, I was thinking more about a trip. Do you remember if I mentioned anything about wanting to go somewhere specific?
+[ 36.26s][moshi] «interrupted» Let me check my notes for any travel destinations you discussed—
+[ 40.06s][user ] «interrupts_prev» …Actually, scratch that. I was wondering about my car search. What did I want in a used car? ⟨ret@46.20s⟩
+[ 46.28s][moshi] ⟦⚡SPAN@46.28s: [2025-10-02] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ You were researching used hybrid cars with under thirty thousand miles on them.
+[ 50.77s][user ] «backchannel» Okay.
+[ 51.12s][user ] Perfect! That’s exactly what I needed a reminder of. Thanks, Marien.
+[ 54.91s][moshi] You’re very welcome, Casey. I'm glad I could help jog your memory.

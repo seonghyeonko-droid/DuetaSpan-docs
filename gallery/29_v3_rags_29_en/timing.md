@@ -4,64 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Kim",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-04-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-23",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-08-15",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-09-27",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-07-09",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-07-31",
+#       "category": "home",
+#       "text": "User's home address is 822 Birch Road."
 #     },
 #     {
-#       "date": "2025-06-12",
+#       "date": "2025-07-04",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-17",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2026-06-10",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-03",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who plays Laurel Pride on NCIS: New Orleans?
-     3.25s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> Well, that would be Shanley Caswell, an American actre
-     3.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.04s]: Shanley Caswell is an American actress known for portraying Laurel Pri
-     3.57s  user  발화 끝
-    15.61s  agent 발화 끝
+     0.00s  user  발화 시작: Who do you think won…
+     2.17s  user  발화 시작: …So You Think You Can Dance in 2016?
+     2.17s  user  발화 끝
+     5.32s  <ret> 발화 (turn2 첫 프레임)
+     5.64s  agent 발화 시작: <ret> Oh, that’s a fun one! Leon "Kida" Burns was declared t
+     5.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.44s]: Leon "Kida" Burns was declared the winner of the thirteenth season of 
+     5.64s  user  발화 끝
+    19.08s  agent 발화 끝

@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Maya",
+#     "name": "Ella",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-06-23",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-10-16",
-#       "category": "home",
-#       "text": "User's home address is 198 Cedar Lane."
+#       "date": "2026-06-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-29",
+#       "date": "2026-05-30",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-09-14",
+#       "date": "2026-05-18",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Lisbon in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-02-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,45 +60,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 뭘 해야 할지 좀 헷갈려. 완전 정신 없어. | S2 시애틀을 생각하고 있었는데, 거긴 날씨가 어떤지 잘 모르겠어. | S3 음, 그건… 괜찮은 것 같기도 하고. 그럼 시애틀 물가는 어때 | S4 알아둬서 좋네. 좀 더 알아봐야 할 것 같아…
+# EXAMINER(FDB-v2) 단계: S1 야, 태야, 청소 같은 거 안 하려는 십대 애랑 어떻게 지내야 | S2 그건 알겠는데, 만약 그냥 닫혀 버리고 말 안 하면 어떡해? | S3 포인트 시스템 같은 거, 열다섯 살한테 너무 유치하게 보일까? | S4 알겠어, 논리적인 처벌. 그건…
 
-     0.00s  user  발화 시작: 음, 뭘 해야 할지 좀 헷갈려. 완전 정신 없어.
-     4.71s  agent 발화 시작: 변화가 크면 그럴 수 있어. 지금 제일 급한 게 뭔데?
-     4.71s  user  발화 끝
-     9.95s  user  발화 시작: 응.
-     9.95s  agent 발화 끝
-    10.47s  user  발화 시작: 뭐, 새로운 도시로 이사 가는 걸 생각 중인데, 뭘 먼저 해야 할지 도통 모르겠어.
-    10.47s  user  발화 끝
-    17.80s  agent 발화 시작: 좋은 생각이야! 새로운 가능성을 생각하는 건 정말 설레는 일이지. 어디로 가고 싶은데?
-    17.80s  user  발화 끝
-    24.09s  user  발화 시작: 음.
-    24.09s  agent 발화 끝
-    24.61s  user  발화 시작: 시애틀을 생각하고 있었는데, 거긴 날씨가 어떤지 잘 모르겠어.
-    24.61s  user  발화 끝
-    28.64s  <ret> 발화 (turn7 첫 프레임)
-    28.80s  agent 발화 시작: <ret> 지금 시애틀 날씨는 십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 팔 킬로미터야.
-    28.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.28s]: (tool result) The current weather in Seattle, Washington is 18.3°C, wi
-    28.80s  user  발화 끝
-    35.08s  agent 발화 시작: 온화한 날씨를 좋아하면 방문하기 좋은 시기야!
-    35.08s  agent 발화 끝
-    38.22s  user  발화 시작: 음, 그건… 괜찮은 것 같기도 하고. 그럼 시애틀 물가는 어때?
-    38.22s  agent 발화 끝
-    43.30s  <ret> 발화 (turn10 첫 프레임)
-    43.46s  agent 발화 시작: <ret> 시애틀 물가는 전국 평균보다 이십삼퍼센트 더 비싼데, 특히 주택 비용 때문에 그래.
-    43.46s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.28s]: (tool result) The cost of living in Seattle, Washington is 23% higher 
-    43.46s  user  발화 끝
-    49.74s  user  발화 시작: 오.
-    49.74s  agent 발화 끝
-    50.27s  user  발화 시작: 이십삼퍼센트? 와, 진짜 많이 차이 나는구나. 덴버랑 비교하면 얼마나 달라?
-    50.27s  user  발화 끝
-    55.18s  <ret> 발화 (turn13 첫 프레임)
-    55.50s  agent 발화 시작: <ret> 덴버 물가는 전국 평균보다 칠퍼센트 더 비싼데, 주택 비용이 주된 이유야.
-    55.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.76s]: (tool result) Denver, Colorado’s cost of living is 7% higher than the 
-    55.50s  user  발화 끝
-    61.26s  agent 발화 시작: 그러니까 시애틀보다 훨씬 저렴한 편인 것 같아.
-    61.26s  agent 발화 끝
-    64.93s  user  발화 시작: 알아둬서 좋네. 좀 더 알아봐야 할 것 같아…
-    64.93s  agent 발화 끝
-    69.12s  agent 발화 시작: 시간을 갖고 정보를 모으는 건 정말 현명한 방법이야. 특히 큰 결정을 내릴 때는 더 그렇지.
-    69.12s  user  발화 끝
-    76.97s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 태야, 청소 같은 거 안 하려는 십대 애랑 어떻게 지내야 할지 조언 좀 해 줘.
+     8.46s  agent 발화 시작: 어휴, 그거 진짜 흔한 고민이야! 기대하는 거랑 애들 생각하는 거랑 적절한 선을 찾는 게 중요해.
+     8.46s  user  발화 끝
+    16.39s  user  발화 시작: 어.
+    16.39s  agent 발화 끝
+    16.92s  user  발화 시작: 솔직히 말하면, 말하기만 하면 잔소리하는 기분이야.
+    16.92s  user  발화 끝
+    20.09s  agent 발화 시작: 그 기분 완전 이해해—힘들 수 있어. 그런 상황을 바꿀 수 있는 몇 가지 방법을 찾아보자.
+    20.09s  user  발화 끝
+    28.02s  user  발화 시작: 어.
+    28.02s  agent 발화 끝
+    28.55s  user  발화 시작: 좋아. 그럼 그 대화는 어떻게 시작하는 게 제일 좋을까?
+    28.55s  user  발화 끝
+    33.15s  <ret> 발화 (turn7 첫 프레임)
+    33.31s  agent 발화 시작: <ret> 일단 애들 감정을 인정하고, 비난하는 것처럼 들리는 말은 피하는 게 좋아.
+    33.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.82s]: Experts suggest beginning by acknowledging your teen’s feelings and av
+    33.31s  user  발화 끝
+    39.13s  user  발화 시작: 그건 알겠는데, 만약 그냥 닫혀 버리고 말 안 하면 어떡해?
+    39.13s  agent 발화 끝
+    44.42s  agent 발화 시작: 애들은 가끔 속마음을 털어놓기 전에 시간이 필요할 수도 있어—그건 당연한 거야.
+    44.42s  user  발화 끝
+    50.23s  user  발화 시작: 그치.
+    50.23s  agent 발화 끝
+    50.76s  user  발화 시작: 아… 짜증나네. 보상은 어때? 효과 있어?
+    50.76s  user  발화 끝
+    53.93s  agent 발화 시작: 보상이 도움이 될 수도 있지만, 신중하게 접근해야 해—
+    53.93s  user  발화 끝
+    58.16s  user  발화 시작: 포인트 시스템 같은 거, 열다섯 살한테 너무 유치하게 보일까?
+    58.16s  agent 발화 끝
+    62.60s  <ret> 발화 (turn14 첫 프레임)
+    62.92s  agent 발화 시작: <ret> 미국 심리학회에서 긍정적인 강화가 처벌보다 더 효과적이라고 밝혔어.
+    62.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.23s]: A study by the American Psychological Association found that positive 
+    62.92s  user  발화 끝
+    67.15s  user  발화 시작: 어.
+    67.15s  agent 발화 끝
+    67.68s  user  발화 시작: 흥미롭네. 그럼 긍정적인 면에 집중하는 거고… 청소를 안 하면 어떻게 해야 할까?
+    67.68s  user  발화 끝
+    74.03s  agent 발화 시작: 처벌도 중요하지만, 임의적인 게 아니라 청소 자체와 관련이 있어야 해.
+    74.03s  user  발화 끝
+    79.31s  user  발화 시작: 알겠어, 논리적인 처벌. 그건…
+    79.31s  agent 발화 끝
+    81.43s  user  발화 시작: 기억해야겠다. 고마워, 태야.
+    81.43s  user  발화 끝
+    83.02s  agent 발화 시작: 천만에. 꾸준히 하는 게 중요하고, 너 자신과 애한테도 인내심을 가져.
+    83.02s  user  발화 끝
+    88.30s  agent 발화 끝

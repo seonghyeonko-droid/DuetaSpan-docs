@@ -1,54 +1,56 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Lellaus, a curious and validating personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Tae, a practical and reassuring life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Maya",
+    "name": "Ella",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
+    "nationality": "British",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-06-23",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-10-16",
-      "category": "home",
-      "text": "User's home address is 198 Cedar Lane."
+      "date": "2026-06-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-09-29",
+      "date": "2026-05-30",
       "category": "diet",
       "text": "User is vegan."
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-05-18",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-07-19",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-06-11",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Lisbon in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-17",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-06",
+      "date": "2026-02-14",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -59,23 +61,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to figure out my next steps, it’s all a bit overwhelming.
-[  4.79s][moshi] It’s completely natural to feel that way when facing big changes. What feels most pressing right now?
-[ 11.05s][user ] «backchannel» Mm-hmm.
-[ 11.42s][user ] Well, I’m thinking about moving to a new city, but I don’t even know where to start.
-[ 17.69s][moshi] That’s a wonderful starting point! It’s exciting to consider new possibilities. Where are you thinking of going?
-[ 23.95s][user ] «backchannel» Uh-huh.
-[ 24.32s][user ] I was considering Seattle, um, but I don’t know what the weather is like ⟨ret@29.60s⟩ there.
-[ 29.84s][moshi] ⟦⚡SPAN@29.84s: (tool result) The current weather in Seattle, Washington is 18.3°C, with humidity at 68% and a wind speed of 8⟧ Seattle’s weather is currently 18.3 degrees Celsius, with 68 percent humidity and an 8.0 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
-[ 36.48s][moshi] It’s a lovely time of year to visit, if you enjoy mild temperatures!
-[ 41.27s][user ] Hmm, that sounds…okay. What about the cost of living ⟨ret@44.55s⟩ there?
-[ 44.95s][moshi] ⟦⚡SPAN@44.95s: (tool result) The cost of living in Seattle, Washington is 23% higher than the national average, with housing ⟧ Seattle’s cost of living is 23 percent higher than the national average, largely due to housing costs.
-      CALL: {"function": "search", "arguments": {"query": "cost of living in Seattle Washington"}}
-[ 51.21s][user ] «backchannel» Exactly.
-[ 51.58s][user ] Twenty-three percent? Wow, that’s a lot. Is it really that different from, say, ⟨ret@56.50s⟩ Denver?
-[ 56.74s][moshi] ⟦⚡SPAN@56.74s: (tool result) Denver, Colorado’s cost of living is 7% higher than the national average, with housing costs bei⟧ Denver’s cost of living is 7 percent higher than the national average, primarily driven by housing.
-      CALL: {"function": "search", "arguments": {"query": "cost of living in Denver Colorado"}}
-[ 62.64s][moshi] So, it’s significantly more affordable than Seattle, it seems.
-[ 65.95s][user ] That's good to know. I think I need to do a bit more research…
-[ 71.11s][moshi] Taking your time and gathering information is a very wise approach, especially with such a big decision.
+[  0.00s][user ] Hey Tae, do you have any advice for dealing with a teenager who refuses to do chores?
+[  6.25s][moshi] Oh, that’s a really common challenge! It's about finding the right balance between expectations and understanding their perspective.
+[ 12.87s][user ] «backchannel» Yeah.
+[ 13.23s][user ] Easier said than done, honestly. It feels like I’m constantly nagging.
+[ 17.28s][moshi] I understand that feeling completely—it can be draining. Let's explore some strategies that might help shift that dynamic.
+[ 23.89s][user ] «backchannel» Uh-huh.
+[ 24.26s][user ] Okay, good. What's the best way to even *start* that ⟨ret@28.06s⟩ conversation?
+[ 28.30s][moshi] ⟦⚡SPAN@28.30s: Experts suggest beginning by acknowledging your teen’s feelings and avoiding accusatory language.⟧ It’s best to start by acknowledging your teen's feelings and avoiding any language that sounds accusatory.
+[ 34.19s][user ] That makes sense. But what if they just shut down and won't talk?
+[ 38.96s][moshi] Sometimes, teens need a little space before they’re ready to open up—that’s perfectly normal.
+[ 44.11s][user ] «backchannel» Yeah, totally.
+[ 44.85s][user ] Right… it's just frustrating. What about rewards? Do those work?
+[ 48.52s][moshi] «interrupted» Rewards can be helpful, but they need to be approached carefully—
+[ 52.56s][user ] «interrupts_prev» …Do you think a points system would be too childish for a fifteen-year-old? ⟨ret@57.26s⟩
+[ 57.34s][moshi] ⟦⚡SPAN@57.34s: A study by the American Psychological Association found that positive reinforcement is more effective than pun⟧ The American Psychological Association found positive reinforcement to be more effective than punishment.
+[ 62.12s][user ] «backchannel» Yeah, totally.
+[ 62.86s][user ] Interesting. So, focus on the positive… what about consequences for *not* doing chores?
+[ 67.64s][moshi] Consequences are important, but they should be logical and related to the chore itself, not arbitrary.
+[ 73.52s][user ] Okay, logical consequences. That’s…
+[ 74.99s][user ] …good to remember. Thanks, Tae.
+[ 76.83s][moshi] You’re very welcome. Remember, consistency is key, and be patient with yourself and your teen.

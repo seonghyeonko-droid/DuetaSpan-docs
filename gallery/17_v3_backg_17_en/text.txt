@@ -1,85 +1,78 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Naen, a upbeat and supportive life coach who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Brael, a kind and steady personal guide who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Camille",
+    "name": "Leo",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-02-25",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-29",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-11-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-07-04",
+      "date": "2026-05-22",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-05-12",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
+    },
+    {
+      "date": "2026-01-10",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-06-02",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-02",
-      "title": "Comparing gym memberships",
+      "date": "2025-07-30",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Naen, who plays Davy Jones in Pirates of the ⟨ret@3.64s⟩ Caribbean?
-[  4.04s][moshi] ⟦⚡SPAN@4.04s: Bill Nighy initially turned down the role of Davy Jones in Pirates of the Caribbean: Dead Man's Chest, but eve⟧ That would be Bill Nighy, actually—he initially hesitated, but Gore Verbinski convinced him to take on the role.
-[ 10.65s][user ] Oh, really? That’s surprising.
-[ 12.11s][moshi] It is quite a twist! Sometimes the most memorable performances almost don't happen, doesn’t it?
-[ 17.62s][user ] Um, what about Jack Sparrow? Who plays him? ⟨ret@20.40s⟩
-[ 20.56s][moshi] ⟦⚡SPAN@20.56s: Johnny Depp played Captain Jack Sparrow in all five films of the Pirates of the Caribbean franchise, from The ⟧ Johnny Depp brilliantly plays Captain Jack Sparrow in all five Pirates of the Caribbean films, starting in 2003.
-[ 27.17s][moshi] It truly is! He really made the character his own, didn’t he? A very iconic role.
-[ 33.04s][user ] «backchannel» Uh-huh.
-[ 33.41s][user ] «to_other» Did you remember to take the recycling out?
-[ 36.34s][user ] Oh, sorry, what were you saying?
-[ 38.55s][moshi] «interrupted» I was just saying Johnny Depp really made Captain Jack Sparrow iconic—
-[ 42.95s][user ] «interrupts_prev» Right, right. Okay. Can you find me some info on Keira Knightley? ⟨ret@47.28s⟩
-[ 47.36s][moshi] ⟦⚡SPAN@47.36s: Keira Knightley is an English actress who rose to prominence portraying Elizabeth Swann in the Pirates of the ⟧ Keira Knightley is a fantastic English actress, best known for playing Elizabeth Swann in Pirates of the Caribbean.
-[ 53.96s][user ] «backchannel» Yeah.
-[ 54.33s][user ] What other movies has she been in? ⟨ret@56.74s⟩
-[ 56.90s][moshi] ⟦⚡SPAN@56.90s: Keira Knightley has starred in numerous films, including Pride & Prejudice (2005), Atonement (2007), and Begin⟧ She’s also starred in films like Pride & Prejudice, Atonement, and Begin Again—a very diverse filmography.
-[ 62.78s][user ] That’s a good range. Could you tell me the weather in London right now? ⟨ret@67.75s⟩
-[ 67.91s][moshi] ⟦⚡SPAN@67.91s: (tool result) Current conditions in London are 21.3°C, humidity 68%, wind 8.2 km/h, with partly cloudy skies.⟧ The current weather in London is 21.3 degrees Celsius, with 68% humidity and partly cloudy skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 73.79s][user ] Sounds pleasant. Can you…
-[ 75.26s][user ] …search for restaurants near ⟨ret@76.85s⟩ me?
-[ 77.09s][moshi] ⟦⚡SPAN@77.09s: (no information found)⟧ I’m sorry, I don’t have your location to search for nearby restaurants. I need permission to access that.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 83.70s][user ] «backchannel» Yeah.
-[ 84.07s][user ] Oh, right. I forgot. Never mind the restaurants then.
-[ 87.37s][moshi] That's alright! We can always come back to that later when you're ready to share your location.
-[ 93.61s][user ] «backchannel» Yeah.
-[ 93.98s][user ] What time is it in ⟨ret@95.86s⟩ Tokyo?
-[ 96.18s][moshi] ⟦⚡SPAN@96.18s: (tool result) It is Friday, July 10, 2026 at 10:42 PM in Asia/Tokyo right now.⟧ It’s currently 10:42 PM in Tokyo, on Friday, July 10th, 2026. Quite a bit ahead of us!
-      CALL: {"function": "get_time", "arguments": {"location": "Asia/Tokyo"}}
-[102.42s][user ] Wow, late already. Okay, thanks Naen.
-[104.63s][moshi] You’re very welcome! Remember, even small steps forward are still progress. Don't be too hard on yourself.
+[  0.00s][user ] Who played Krish in Kabhi Khushi Kabhie ⟨ret@2.52s⟩ Gham?
+[  2.92s][moshi] ⟦⚡SPAN@2.92s: Jibraan Khan played the role of Krish Raichand in the 2001 Bollywood film Kabhi Khushi Kabhie Gham.⟧ That would be Jibraan Khan, who played young Krish Raichand in Kabhi Khushi Kabhie Gham.
+[  8.39s][user ] Oh, right! I remember now.
+[ 10.21s][moshi] It’s a very memorable role, even after all these years.
+[ 13.86s][user ] «backchannel» Okay.
+[ 14.22s][user ] Do you know when he was born? ⟨ret@16.61s⟩
+[ 16.77s][moshi] ⟦⚡SPAN@16.77s: Jibraan Khan was born on December 10, 1994, in Mumbai, Maharashtra, India.⟧ Jibraan Khan was born on December tenth, 1994, in Mumbai, India.
+[ 20.79s][user ] «backchannel» Mm-hmm.
+[ 21.15s][user ] Wow, he was really young during filming.
+[ 23.70s][moshi] «interrupted» He was quite young, indeed—
+[ 25.53s][user ] «interrupts_prev» …was that his first role?
+[ 27.35s][moshi] That wasn't actually his first role; he had appeared in a few commercials beforehand.
+[ 32.45s][user ] «backchannel» Yeah.
+[ 32.82s][moshi] Yes, he did some modeling and commercials before Kabhi Khushi Kabhie Gham.
+[ 37.19s][user ] What other movies has he been ⟨ret@39.51s⟩ in?
+[ 39.75s][moshi] ⟦⚡SPAN@39.75s: Jibraan Khan has appeared in films like "Delhi Heights" (2007) and "Ek Villain" (2013).⟧ He's also appeared in films like "Delhi Heights" from 2007 and "Ek Villain" in 2013.
+[ 45.22s][user ] «backchannel» Okay.
+[ 45.58s][user ] Okay, that's good to know. Anything recent? ⟨ret@48.05s⟩
+[ 48.13s][moshi] ⟦⚡SPAN@48.13s: His most recent credited role is in the 2022 film "Maja Ma", where he plays Tejas.⟧ His most recent work is in “Maja Ma” from 2022, where he plays Tejas.
+[ 53.24s][user ] «backchannel» Exactly.
+[ 53.60s][user ] That's interesting! I might…
+[ 55.06s][user ] …check that one out.
+[ 56.52s][moshi] It’s a wonderful film, and a bit different from his earlier roles.
+[ 60.90s][user ] Do you know if he’s still acting?
+[ 63.45s][moshi] As far as my information goes, yes, he is still actively pursuing acting.

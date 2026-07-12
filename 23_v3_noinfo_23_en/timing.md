@@ -4,144 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Charlie",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-29",
+#       "date": "2026-06-26",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-06-24",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-06-21",
+#       "category": "home",
+#       "text": "User's home address is 65 Elm Street."
+#     },
+#     {
+#       "date": "2025-09-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2025-07-10",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-21",
-#       "category": "home",
-#       "text": "User's home address is 845 Elm Street."
-#     },
-#     {
-#       "date": "2025-10-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-06-10",
+#       "date": "2025-06-15",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-13",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 I need to book a restaurant for Fr | S3 …Actually, could we change that to | S4 Just everything, really. Leaving m
 
-     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
-     2.93s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
-     3.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.65s]: (no information found)
-     3.33s  user  발화 끝
-     9.98s  user  발화 시작: Oh, that’s too bad.
-     9.98s  agent 발화 끝
-    11.45s  agent 발화 시작: It’s understandable to want to reach out, but respecting som
-    11.45s  user  발화 끝
-    20.32s  user  발화 시작: Uh-huh.
-    20.32s  agent 발화 끝
-    20.69s  user  발화 시작: I just wanted to thank her for her music.
-    20.69s  user  발화 끝
-    24.02s  agent 발화 시작: That’s a very kind thought. Music can be so deeply meaningfu
-    24.02s  user  발화 끝
-    30.67s  user  발화 시작: What’s the weather going to be like tomorrow?
-    30.67s  agent 발화 끝
-    33.22s  <ret> 발화 (turn8 첫 프레임)
-    33.62s  agent 발화 시작: <ret> Tomorrow in Seoul, the weather will be 26.0 degrees Ce
-    33.62s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.87s]: (tool result) 26.0°C, humidity 68%, wind 4.2 km/h
-    33.62s  user  발화 끝
-    42.49s  user  발화 시작: Yeah.
-    42.49s  agent 발화 끝
-    42.86s  agent 발화 시작: It does sound quite pleasant, doesn't it? A day like that mi
-    42.86s  user  발화 끝
-    50.25s  user  발화 시작: I need to book a restaurant for Friday night.
-    50.25s  agent 발화 끝
-    53.57s  agent 발화 시작: Do you have a particular cuisine or area of Seoul in mind fo
-    53.57s  user  발화 끝
-    59.85s  user  발화 시작: Mm-hmm.
-    59.85s  agent 발화 끝
-    60.22s  user  발화 시작: Italian, near Gangnam station.
-    60.22s  user  발화 끝
-    61.62s  <ret> 발화 (turn15 첫 프레임)
-    61.70s  agent 발화 시작: <ret> Ristorante Verona, an Italian restaurant with 4.5 star
-    61.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.02s]: (tool result) Ristorante Verona - Italian, 4.5 stars, Gangnam-gu, Seou
-    61.70s  user  발화 끝
-    68.72s  user  발화 시작: Yeah, yeah.
-    68.72s  agent 발화 끝
-    69.46s  user  발화 시작: Book it for 8:00 PM.
-    69.46s  user  발화 끝
-    71.15s  <ret> 발화 (turn18 첫 프레임)
-    71.31s  agent 발화 시작: <ret> Your reservation at Ristorante Verona is confirmed for
-    71.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.13s]: (tool result) Reservation confirmed. Ristorante Verona, Friday 8:00 PM
-    71.31s  user  발화 끝
-    79.43s  user  발화 시작: …Actually, could we change that to 7:30 instead?
-    79.43s  agent 발화 끝
-    81.99s  <ret> 발화 (turn20 첫 프레임)
-    82.39s  agent 발화 시작: <ret> The reservation is now updated to 7:30 PM. Your confir
-    82.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.80s]: (tool result) Reservation updated. Ristorante Verona, Friday 7:30 PM, 
-    82.39s  user  발화 끝
-    87.19s  user  발화 시작: That’s great, thank you. What time is it in London right now
-    87.19s  agent 발화 끝
-    91.47s  <ret> 발화 (turn22 첫 프레임)
-    91.63s  agent 발화 시작: <ret> It is currently Friday, July 10th, 2026, at 11:17 AM i
-    91.63s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.43s]: (tool result) It is Friday, July 10, 2026 at 11:17 AM in Europe/London
-    91.63s  user  발화 끝
-    96.06s  user  발화 시작: Really?
-    96.06s  agent 발화 끝
-    96.43s  user  발화 시작: I'm feeling a little anxious about the upcoming move.
-    96.43s  user  발화 끝
-    99.76s  agent 발화 시작: Moving can be a very stressful time, full of uncertainty. It
-    99.76s  user  발화 끝
-   109.36s  user  발화 시작: Nice.
-   109.36s  agent 발화 끝
-   109.73s  user  발화 시작: Just everything, really. Leaving my friends, a new city…
-   109.73s  user  발화 끝
-   113.06s  agent 발화 시작: It’s completely valid to feel overwhelmed when facing so man
-   113.06s  user  발화 끝
-   126.36s  user  발화 시작: Do you know anything about grief counseling?
-   126.36s  agent 발화 끝
-   128.94s  agent 발화 시작: As a wellness coach, I do. Grief takes many forms, and it's 
-   128.94s  user  발화 끝
-   146.68s  user  발화 시작: That would be helpful, yes.
-   146.68s  agent 발화 끝
-   148.28s  <ret> 발화 (turn32 첫 프레임)
-   148.52s  agent 발화 시작: <ret> Seoul Counseling Center, specializing in grief, is loc
-   148.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.17s]: (tool result) Seoul Counseling Center - Grief Specialists, Gangnam-gu.
-   148.52s  user  발화 끝
-   153.70s  agent 발화 끝
+     0.00s  user  발화 시작: Oriol, do you happen to know Sarah Miller's phone number?
+     3.02s  <ret> 발화 (turn1 첫 프레임)
+     3.42s  agent 발화 시작: <ret> I’ve checked, and unfortunately, a phone number for Sa
+     3.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.12s]: (no information found)
+     3.42s  user  발화 끝
+     8.54s  user  발화 시작: Oh, okay. That's a shame.
+     8.54s  agent 발화 끝
+    10.25s  agent 발화 시작: It’s understandable to want to reconnect; sometimes people p
+    10.25s  user  발화 끝
+    15.03s  user  발화 시작: Yeah.
+    15.03s  agent 발화 끝
+    15.37s  agent 발화 시작: Perhaps you could try reaching out through social media or a
+    15.37s  user  발화 끝
+    19.82s  user  발화 시작: Right.
+    19.82s  agent 발화 끝
+    20.16s  user  발화 시작: Hmm, maybe. What’s the weather like in Seoul right now?
+    20.16s  user  발화 끝
+    23.49s  <ret> 발화 (turn8 첫 프레임)
+    23.57s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-three point z
+    23.57s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.59s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    23.57s  user  발화 끝
+    34.17s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "시경",
+#     "name": "우율",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,103 +13,130 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-05-10",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-31",
+#       "date": "2026-04-06",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-10-08",
+#       "date": "2025-11-30",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-11-11",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#     },
+#     {
+#       "date": "2025-11-01",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-02",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-05",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-11",
+#       "date": "2026-06-15",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 커패시터 연결 리드가 정돈되지 않은 구성이 어떤 게 있어? | S2 이번 주 토요일 날씨 어때? | S3 새로운 시작이라… 뭐, 그런 걸로 할까. | S4 음… 좀 복잡해서.
+# EXAMINER(FDB-v2) 단계: S1 국제 질서에서 소국과 대국의 구분을 공식적으로 만든 균형이 뭘 | S2 고마워요. | S3 주말에 서울 날씨는 어때요? | S4 글쎄요… 그냥 맛있는 거 먹고 싶어요.
 
-     0.00s  user  발화 시작: 커패시터 연결 리드가 정돈되지 않은 구성이 어떤 게 있어?
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     4.21s  agent 발화 시작: <ret> 음, 죄송하지만 그 질문에 대한 정보를 찾을 수 없었어요. 좀 더 쉽게 설명해 주시겠어요?
-     4.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (no information found)
-     4.21s  user  발화 끝
-    10.75s  user  발화 시작: 아.
-    10.75s  agent 발화 끝
-    11.22s  user  발화 시작: 아, 그냥 궁금해서.
-    11.22s  user  발화 끝
-    12.62s  agent 발화 시작: 네, 괜찮아요. 궁금한 건 언제든 물어보세요. 제가 도울 수 있는 다른 일이 있을까요?
-    12.62s  user  발화 끝
-    18.70s  user  발화 시작: 이번 주 토요일 날씨 어때?
-    18.70s  agent 발화 끝
-    20.95s  <ret> 발화 (turn6 첫 프레임)
-    21.03s  agent 발화 시작: <ret> 토요일 날씨는 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 예상됩니다.
-    21.03s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.14s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    21.03s  user  발화 끝
-    26.18s  user  발화 시작: 헐.
-    26.18s  agent 발화 끝
-    26.64s  agent 발화 시작: 날씨가 좋으면 야외 활동하기 딱 좋겠네요. 혹시 주말 계획 있으세요?
-    26.64s  user  발화 끝
-    31.32s  user  발화 시작: 아직은 딱히…
-    31.32s  agent 발화 끝
-    32.25s  agent 발화 시작: 음, 저는 큰 변화를 앞둔 분들을 돕는 일을 하고 있거든요. 혹시 새로운 시작을 준비하고 계신 건가요?
-    32.25s  user  발화 끝
-    39.73s  user  발화 시작: 새로운 시작이라… 뭐, 그런 걸로 할까.
-    39.73s  agent 발화 끝
-    42.54s  agent 발화 시작: [happy] 새로운 시작은 언제나 설레는 일이죠. 혹시 어떤 분야에 관심을 두고 계신지 여쭤봐도 될까요?
-    42.54s  user  발화 끝
-    49.08s  user  발화 시작: 응.
-    49.08s  agent 발화 끝
-    49.55s  user  발화 시작: 그냥… 좀 더 편안한 삶을 살고 싶어.
-    49.55s  user  발화 끝
-    52.82s  agent 발화 시작: [curious] 편안한 삶을 추구하시는군요. 어떤 점이 가장 불편하신가요? 좀 더 자세히 말씀해 주시면 제
-    52.82s  user  발화 끝
-    62.17s  user  발화 시작: 음… 좀 복잡해서.
-    62.17s  agent 발화 끝
-    63.57s  agent 발화 시작: [sigh] 복잡한 문제일수록 차근차근 풀어가는 게 중요하죠. 제가 옆에서 함께 고민해 드릴게요.
-    63.57s  user  발화 끝
-    69.18s  agent 발화 끝
+     0.00s  user  발화 시작: 국제 질서에서 소국과 대국의 구분을 공식적으로 만든 균형이 뭘까요?
+     4.25s  <ret> 발화 (turn1 첫 프레임)
+     4.57s  agent 발화 시작: <ret> 아, 그 부분에 대한 정보는 아직 찾을 수 없네요. 제가 더 자세히 알아봐도 괜찮을까요?
+     4.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.10s]: (no information found)
+     4.57s  user  발화 끝
+    11.67s  user  발화 시작: 음… 좀 더 쉽게 설명해 줄 수 있어요?
+    11.67s  agent 발화 끝
+    15.73s  agent 발화 시작: 혹시 어떤 부분에서 어려움을 느끼시는지 좀 더 자세히 말씀해 주시겠어요?
+    15.73s  user  발화 끝
+    20.80s  user  발화 시작: 응.
+    20.80s  agent 발화 끝
+    21.31s  user  발화 시작: 그냥… 좀 복잡하게 느껴져서요.
+    21.31s  user  발화 끝
+    23.34s  agent 발화 시작: 복잡하게 느껴지시는군요. 괜찮아요, 천천히 함께 알아가면 돼요. 편안하게 생각하세요.
+    23.34s  user  발화 끝
+    27.90s  user  발화 시작: 맞아.
+    27.90s  agent 발화 끝
+    28.41s  user  발화 시작: 고마워요.
+    28.41s  user  발화 끝
+    28.92s  agent 발화 시작: 도움이 되었다니 다행이에요. 저는 항상 당신의 편안한 휴식을 돕고 싶답니다.
+    28.92s  user  발화 끝
+    33.99s  user  발화 시작: 이번 주 토요일에 영화 보러 갈까요?
+    33.99s  agent 발화 끝
+    36.71s  <ret> 발화 (turn11 첫 프레임)
+    37.03s  agent 발화 시작: <ret> 이번 주 토요일에 '범죄도시 사' 상영 시간이 오후 두시, 다섯시, 여덟시에 있네요.
+    37.03s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.09s]: (tool result) {"movies": [{"title": "범죄도시 4", "times": 14:00, 17:00, 2
+    37.03s  user  발화 끝
+    43.12s  user  발화 시작: 응.
+    43.12s  agent 발화 끝
+    43.63s  agent 발화 시작: 마음에 드시는 시간대가 있으신가요? 혹시 다른 영화도 찾아볼까요?
+    43.63s  user  발화 끝
+    47.69s  user  발화 시작: 다섯시로 해요.
+    47.69s  agent 발화 끝
+    48.38s  <ret> 발화 (turn15 첫 프레임)
+    48.70s  agent 발화 시작: <ret> 네, '범죄도시 사' 오후 다섯시 영화 티켓 두장이 예약되었습니다. 확인 번호는 에이 칠 엑스 구
+    48.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) {"confirmation id": "A7X92B", "movie": "범죄도시 4", "time":
+    48.70s  user  발화 끝
+    57.32s  user  발화 시작: 그래.
+    57.32s  agent 발화 끝
+    57.83s  user  발화 시작: 주말에 서울 날씨는 어때요?
+    57.83s  user  발화 끝
+    59.62s  <ret> 발화 (turn18 첫 프레임)
+    59.86s  agent 발화 시작: <ret> 이번 주말 서울 날씨는 이십팔 점 오도, 습도는 칠십이퍼센트, 바람은 시속 사 점 일킬로미터로 맑
+    59.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) {"temperature": 28.5, "humidity": 72, "wind speed": 4.1,
+    59.86s  user  발화 끝
+    68.48s  user  발화 시작: 아, 좋네요.
+    68.48s  agent 발화 끝
+    69.50s  agent 발화 시작: 날씨가 좋으면 기분도 좋아지죠. 주말에 즐거운 시간 보내시길 바랍니다.
+    69.50s  user  발화 끝
+    74.07s  user  발화 시작: 어어.
+    74.07s  agent 발화 끝
+    74.57s  user  발화 시작: 오늘 저녁 뭐 먹을까요?
+    74.57s  user  발화 끝
+    76.60s  agent 발화 시작: 저녁 메뉴 고민이시군요. 혹시 특별히 드시고 싶은 음식이 있으신가요?
+    76.60s  user  발화 끝
+    81.17s  user  발화 시작: 글쎄요… 그냥 맛있는 거 먹고 싶어요.
+    81.17s  agent 발화 끝
+    84.21s  agent 발화 시작: 맛있는 거요? 그럼 근처 맛집을 찾아볼까요? 어떤 종류의 음식을 좋아하시나요?
+    84.21s  user  발화 끝
+    89.28s  user  발화 시작: 한식으로요.
+    89.28s  agent 발화 끝
+    89.47s  <ret> 발화 (turn27 첫 프레임)
+    89.79s  agent 발화 시작: <ret> 근처 한식 맛집 '고궁' 평점이 사 점 오점이고, 주소는 서울 강남구 테헤란로 백이십삼번지입니다.
+    89.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.59s]: (tool result) {"restaurants": [{"name": "고궁", "rating": 4.5, "address"
+    89.79s  user  발화 끝
+    96.39s  user  발화 시작: 오, 가볼 만하겠네요.
+    96.39s  agent 발화 끝
+    97.91s  agent 발화 시작: '고궁' 괜찮은 선택 같아요. 맛있는 식사 하시길 바랍니다.
+    97.91s  user  발화 끝
+   101.97s  agent 발화 끝

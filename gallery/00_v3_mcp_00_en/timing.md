@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "William",
+#     "name": "Thomas",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -13,75 +13,78 @@
 #     },
 #     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-04-25",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2026-04-21",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-11-14",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-03-23",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-06-18",
+#       "date": "2026-02-20",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-10-08",
+#       "category": "home",
+#       "text": "User's home address is 703 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-07",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-09-28",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-25",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-13",
+#       "date": "2025-08-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What city is the IP address ninety three dot one eighty four
-     6.12s  <ret> 발화 (turn1 첫 프레임)
-     6.36s  agent 발화 시작: <ret> That IP address resolves to Stockholm, Sweden. It’s a 
-     6.36s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.77s]: (tool result) City: Stockholm, Country: Sweden
-     6.36s  user  발화 끝
-    11.13s  user  발화 시작: Yeah.
-    11.13s  agent 발화 끝
-    11.45s  user  발화 시작: Oh, uh, really? I've always wanted to go there.
-    11.45s  user  발화 끝
-    14.31s  agent 발화 시작: I understand that feeling! A change of scenery can be so res
-    14.31s  user  발화 끝
-    20.35s  user  발화 시작: Could you find me some hotels there for next week?
-    20.35s  agent 발화 끝
-    23.37s  <ret> 발화 (turn6 첫 프레임)
-    23.53s  agent 발화 시작: <ret> I found several hotels in Stockholm for next week, sta
-    23.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) Hotels: Hotel Diplomat (4.5 stars, $250/night), Grand Hô
-    23.53s  user  발화 끝
-    28.61s  agent 발화 끝
+     0.00s  user  발화 시작: What location is at one hundred four point zero six six nine
+     7.77s  <ret> 발화 (turn1 첫 프레임)
+     8.01s  agent 발화 시작: <ret> That location is Chengdu, in Sichuan province, China. 
+     8.01s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.12s]: (tool result) {"address": "Chengdu, Sichuan, China"}
+     8.01s  user  발화 끝
+    13.13s  user  발화 시작: Uh, could you find hotels there for next week?
+    13.13s  agent 발화 끝
+    15.61s  <ret> 발화 (turn3 첫 프레임)
+    16.01s  agent 발화 시작: <ret> I found two options: the Jinjiang Inn for two hundred 
+    16.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.93s]: (tool result) [{"name": "Jinjiang Inn Chengdu Chunxi Road", "price": "
+    16.01s  user  발화 끝
+    25.94s  user  발화 시작: [sigh] The Holiday Inn sounds nice.
+    25.94s  agent 발화 끝
+    27.86s  agent 발화 시작: It does seem like a comfortable choice. I’m glad we found so
+    27.86s  user  발화 끝
+    36.83s  agent 발화 끝

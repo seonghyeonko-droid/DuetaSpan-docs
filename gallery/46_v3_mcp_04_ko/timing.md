@@ -4,69 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "성훈",
+#     "name": "정율",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-05-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-12-30",
+#       "date": "2026-03-25",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-08-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-02-21",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-09-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-12",
+#       "date": "2025-11-11",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -76,59 +50,89 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 혹시 아이피 주소 백칠십이 점 이 일.백육십 점 일 사가 | S2 아, 그렇구나. 그럼, 시애틀에서 가장 유명한 관광지는 어디야 | S3 오, 그렇구나. 그럼, 지금 당장 스페이스 니들 입장권을 예매 | S4 아, 좋아. 그럼 그 콘서트 티켓도 예매해 줘. 두장.
+# EXAMINER(FDB-v2) 단계: S1 혹시 이번 주 토요일 날씨 어때? | S2 글쎄… 아직 확실히 정하진 못했어. 영화 볼까 생각 중이야. | S3 잘 됐네. 고마워. | S4 맞아. 혹시… 내가 예전에 서울역 근처 맛집 메모해둔 거 있어
 
-     0.00s  user  발화 시작: 음… 혹시 아이피 주소 백칠십이 점 이 일.백육십 점 일 사가 어디인지 알아볼 수 있어?
-     6.80s  <ret> 발화 (turn1 첫 프레임)
-     7.20s  agent 발화 시작: <ret> 그 아이피 주소는 미국 워싱턴주 시애틀에 위치해 있습니다. 혹시 다른 아이피 주소도 확인해 드릴까
-     7.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) The IP address 172.217.160.142 is located in Seattle, Wa
-     7.20s  user  발화 끝
-    13.91s  user  발화 시작: 응.
-    13.91s  agent 발화 끝
-    14.39s  user  발화 시작: 아니, 그건 됐어. 근데 시애틀 날씨는 어때?
-    14.39s  user  발화 끝
-    17.51s  <ret> 발화 (turn4 첫 프레임)
-    17.75s  agent 발화 시작: <ret> 현재 시애틀 날씨는 십팔 점 삼도이고, 습도는 육십이퍼센트, 바람은 시속 팔킬로미터, 맑습니다. 
-    17.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.67s]: (tool result) Current conditions in Seattle, WA are: 18.3°C, humidity 
-    17.75s  user  발화 끝
-    25.42s  user  발화 시작: 그래.
-    25.42s  agent 발화 끝
-    25.90s  agent 발화 시작: 네, 아주 쾌적한 날씨예요. 시애틀은 아름다운 도시기도 하죠.
-    25.90s  user  발화 끝
-    29.74s  user  발화 시작: 응.
-    29.74s  agent 발화 끝
-    30.22s  user  발화 시작: 아, 그렇구나. 그럼, 시애틀에서 가장 유명한 관광지는 어디야?
-    30.22s  user  발화 끝
-    33.98s  <ret> 발화 (turn9 첫 프레임)
-    34.06s  agent 발화 시작: <ret> 시애틀에서 가장 유명한 관광지는 파이크 플레이스 마켓, 스페이스 니들, 그리고 팝 컬처 박물관입니
-    34.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.72s]: (tool result) Pike Place Market, Space Needle, and Museum of Pop Cultu
-    34.06s  user  발화 끝
-    40.77s  user  발화 시작: … 아니, 근데 스페이스 니들 입장권은 얼마야?
-    40.77s  agent 발화 끝
-    43.73s  <ret> 발화 (turn11 첫 프레임)
-    44.13s  agent 발화 시작: <ret> 스페이스 니들 일반 입장료는 성인 삼십오달러, 어린이 이십오달러입니다. 온라인 예매하시면 좀 더 
-    44.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.20s]: General admission to the Space Needle costs $35.00 for adults and $25.
-    44.13s  user  발화 끝
-    51.33s  user  발화 시작: 오, 그렇구나. 그럼, 지금 당장 스페이스 니들 입장권을 예매해 줘. 성인 두명.
-    51.33s  agent 발화 끝
-    56.68s  <ret> 발화 (turn13 첫 프레임)
-    57.08s  agent 발화 시작: <ret> 스페이스 니들 입장권 이매가 칠월 십일일 오전 열시에 예약되었습니다. 확인 아이디는 팔 칠 비 이
-    57.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.11s]: (tool result) Booking confirmed for 2 adult tickets to the Space Needl
-    57.08s  user  발화 끝
-    66.19s  user  발화 시작: 좋아. 고마워. 혹시 이번 주 토요일에 시애틀에서 열리는 콘서트가 있어?
-    66.19s  agent 발화 끝
-    70.59s  <ret> 발화 (turn15 첫 프레임)
-    70.99s  agent 발화 시작: <ret> 네, 칠월 십일일 토요일에 '더 루미니어스'라는 밴드가 시애틀 클라이밋 플레지 아레나에서 공연을 
-    70.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) The band "The Lumineers" will be performing at Climate P
-    70.99s  user  발화 끝
-    77.23s  user  발화 시작: 아, 좋아. 그럼 그 콘서트 티켓도 예매해 줘. 두장.
-    77.23s  agent 발화 끝
-    81.30s  <ret> 발화 (turn17 첫 프레임)
-    81.54s  agent 발화 시작: <ret> '더 루미니어스' 콘서트 티켓 두장이 칠월 십일일에 예약되었습니다. 확인 번호는 사 구 제트 일 
-    81.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.63s]: (tool result) Two tickets for The Lumineers concert on July 11, 2026, 
-    81.54s  user  발화 끝
-    90.18s  user  발화 시작: 알았어. 정말 고마워.
-    90.18s  agent 발화 끝
-    91.62s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요!
-    91.62s  user  발화 끝
-    93.54s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 이번 주 토요일 날씨 어때?
+     2.40s  <ret> 발화 (turn1 첫 프레임)
+     2.80s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 이십칠 점 오도, 습도 육십팔퍼센트, 바람은 사 점 이킬로미터로 흐리
+     2.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.33s]: (tool result) {"temperature": 27.5, "humidity": 68, "wind speed": 4.2,
+     2.80s  user  발화 끝
+    12.13s  user  발화 시작: 응.
+    12.13s  agent 발화 끝
+    12.60s  user  발화 시작: 음… 좀 덥겠네. 일요일은?
+    12.60s  user  발화 끝
+    14.22s  <ret> 발화 (turn4 첫 프레임)
+    14.46s  agent 발화 시작: <ret> 일요일은 이십구 점 일도까지 올라가고, 습도는 칠십이퍼센트로 조금 더 습해질 것 같아요. 화창한 
+    14.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) {"temperature": 29.1, "humidity": 72, "wind speed": 3.8,
+    14.46s  user  발화 끝
+    21.46s  user  발화 시작: 아, 더워지겠네. 그럼 혹시 다음 주 화요일은 어때?
+    21.46s  agent 발화 끝
+    24.95s  <ret> 발화 (turn6 첫 프레임)
+    25.19s  agent 발화 시작: <ret> 다음 주 화요일은 이십오 점 팔도 정도이고, 가벼운 비가 올 가능성이 있습니다. 습도는 칠십퍼센트
+    25.19s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.46s]: (tool result) {"temperature": 25.8, "humidity": 70, "wind speed": 5.1,
+    25.19s  user  발화 끝
+    32.66s  user  발화 시작: 응.
+    32.66s  agent 발화 끝
+    33.13s  user  발화 시작: 비 오면… 공연 보러 가려는데.
+    33.13s  user  발화 끝
+    35.46s  agent 발화 시작: 공연 보러 가신다니 정말 멋지네요. 혹시 어떤 공연인지 여쭤봐도 될까요?
+    35.46s  user  발화 끝
+    40.12s  user  발화 시작: 글쎄… 아직 확실히 정하진 못했어. 영화 볼까 생각 중이야.
+    40.12s  agent 발화 끝
+    44.32s  agent 발화 시작: 영화를 보시는 것도 좋은 생각이에요. 혹시 보고 싶은 영화가 있으신가요?
+    44.32s  user  발화 끝
+    48.99s  user  발화 시작: 음… 요즘 상영하는 영화 좀 찾아줄래?
+    48.99s  agent 발화 끝
+    51.55s  <ret> 발화 (turn13 첫 프레임)
+    51.79s  agent 발화 시작: <ret> 서울에서 현재 상영 중인 영화는 ‘인사이드 아웃 이’, ‘배드 보이 라이드 오어 다이’, ‘가필드
+    51.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.20s]: (tool result) "Currently playing in Seoul: 'Inside Out 2', 'Bad Boys: 
+    51.79s  user  발화 끝
+    62.98s  user  발화 시작: ‘인사이드 아웃 이’… 평점 좀 찾아봐 줘.
+    62.98s  agent 발화 끝
+    65.85s  <ret> 발화 (turn15 첫 프레임)
+    66.25s  agent 발화 시작: <ret> 네이버 영화에서 ‘인사이드 아웃 이’는 구 점 이 삼점을 받고 있습니다. 많은 분들이 감동과 재미
+    66.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.40s]: (tool result) "인사이드 아웃 2는 현재 네이버 영화에서 9.23점을 받고 있습니다. 많은 관객들이 감동과 재미를 
+    66.25s  user  발화 끝
+    74.65s  user  발화 시작: 오… 생각보다 높네. 그럼 예매 좀 해 줘. 이번 주 토요일 오후 두 시로.
+    74.65s  agent 발화 끝
+    80.94s  <ret> 발화 (turn17 첫 프레임)
+    81.18s  agent 발화 시작: <ret> 네, ‘인사이드 아웃 이’ 이번 주 토요일 오후 두 시 서울에서 이인석 에이 일 에이 이 좌석으로
+    81.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.66s]: (tool result) "Reservation confirmed: 'Inside Out 2', July 11, 2026, 2
+    81.18s  user  발화 끝
+    92.84s  user  발화 시작: 잘 됐네. 고마워.
+    92.84s  agent 발화 끝
+    94.24s  agent 발화 시작: 천만에요. 영화 즐겁게 보세요.
+    94.24s  user  발화 끝
+    96.11s  user  발화 시작: 아, 잠깐만. 이번 주 토요일에 가는 길, 대중교통으로 가장 빠른 길 알려줄래?
+    96.11s  agent 발화 끝
+   101.47s  <ret> 발화 (turn21 첫 프레임)
+   101.71s  agent 발화 시작: <ret> 현재 위치에서 이호선을 타고 시청역에서 일호선으로 환승해서 서울역에서 내리세요. 영화관까지 걸어서
+   101.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.33s]: (tool result) "Fastest route: Take subway line 2 from your current loc
+   101.71s  user  발화 끝
+   111.04s  user  발화 시작: 사십오분… 꽤 걸리네. 버스는 어때?
+   111.04s  agent 발화 끝
+   112.97s  <ret> 발화 (turn23 첫 프레임)
+   113.37s  agent 발화 시작: <ret> 백구번 버스를 타면 영화관까지 육십분 정도 걸립니다. 카카오맵에서 확인했습니다.
+   113.37s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.20s]: (tool result) "Fastest bus route: Take bus number 109 from your curren
+   113.37s  user  발화 끝
+   117.57s  user  발화 시작: 오.
+   117.57s  agent 발화 끝
+   118.04s  user  발화 시작: 흠… 지하철이 더 빠르겠네.
+   118.04s  user  발화 끝
+   119.90s  agent 발화 시작: 네, 지하철이 조금 더 빠르겠네요. 영화 시간 맞춰서 서두르시는 게 좋겠어요.
+   119.90s  user  발화 끝
+   125.04s  user  발화 시작: 맞아. 혹시… 내가 예전에 서울역 근처 맛집 메모해둔 거 있어?
+   125.04s  agent 발화 끝
+   129.30s  <ret> 발화 (turn28 첫 프레임)
+   129.70s  agent 발화 시작: <ret> 이천이십육년 삼월 십오일에 서울역 근처 칼국수 맛집 ‘진대감’을 추천해 드린 적이 있습니다.
+   129.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.60s]: [2026-03-15] 서울역 근처 칼국수 맛집 '진대감' 추천.
+   129.70s  user  발화 끝
+   135.30s  user  발화 시작: 아, 맞아! 거기 맛있었지.
+   135.30s  agent 발화 끝
+   137.17s  agent 발화 시작: 기억하고 계시다니 다행이네요. 맛있는 식사 하시고 영화도 즐겁게 보시길 바랍니다.
+   137.17s  user  발화 끝
+   141.83s  user  발화 시작: 고마워, 오레아라.
+   141.83s  agent 발화 끝
+   142.77s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해주세요. 즐거운 시간 보내세요.
+   142.77s  user  발화 끝
+   146.03s  agent 발화 끝

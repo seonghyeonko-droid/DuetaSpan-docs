@@ -1,73 +1,112 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 큰 인생 변화를 겪는 사람들을 돕는 친절하고 꾸준하며 지지적인 조언자 Ali입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 인간관계 및 사교 생활에 대해 사람들을 돕는 긍정적이고 지지적인 조언자 Thiaen입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Rowan",
+    "name": "Ruby",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-14",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
-    },
-    {
-      "date": "2026-02-10",
+      "date": "2026-05-30",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-09",
+      "date": "2026-04-25",
       "category": "hobby",
       "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-09-18",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-03-01",
+      "category": "home",
+      "text": "User's home address is 332 Cedar Lane."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-10-19",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, 알리. 농구 선수에 대해 궁금한 게 있어서요.
-[  3.84s][moshi] 안녕! 연결되어서 반가워.
-[  5.28s][user ] «backchannel» 음.
-[  5.76s][user ] 엔 비 에이 선수들의 평균 키가 어떻게 ⟨ret@9.20s⟩ 돼요?
-[  9.60s][moshi] «interrupted» ⟦⚡SPAN@9.60s: The average height of an NBA player is approximately 6 feet 7 inches, or 2.01 meters.⟧ 음, 엔 비 에이 선수 평균 키는 대략 육피트 칠인치 정도 돼—
-[ 15.36s][user ] «interrupts_prev» 선수들이 시간이 지나면서 키가 커지는 건가요, 아니면 거의 그대로 유지되는 건가요?
-[ 20.64s][moshi] «interrupted» 평균 키가 조금씩 늘어난 것 같아—
-[ 23.52s][user ] «interrupts_prev» 아, 진짜요?
-[ 24.48s][moshi] 응, 수년에 걸쳐 엔 비 에이 선수들의 평균 키가 점진적으로 증가했는데, 아주 드라마틱하게 늘어난 건 아니야. 선수 개발 방식과 유전적인 요인이 관련이 있다고 생각해.
-[ 36.00s][user ] «backchannel» 음.
-[ 36.48s][user ] 그러네요. 정보 감사합니다!
-[ 37.92s][moshi] 천만에. 도움이 됐다니 기쁘고, 뭔가 통찰력을 제공할 수 있어서 다행이야.
+[  0.00s][user ] 안녕, 오늘 기분 어때?
+[  2.08s][moshi] 정말 잘 지내요, 물어봐 주셔서 감사합니다! 이야기하고 싶은 게 있다면 언제든지 편하게 말씀해 주세요.
+[  9.36s][user ] «backchannel» 그래.
+[  9.88s][user ] 근데, 일 stone이 몇 파운드인지 ⟨ret@12.60s⟩ 궁금해.
+[ 13.00s][moshi] ⟦⚡SPAN@13.00s: A stone is equal to fourteen pounds—that's one of those traditional units of weight.⟧ 일 stone은 십사 파운드와 같아요.
+[ 15.60s][user ] 아, 그래. 알아두면 좋네.
+[ 17.68s][moshi] 정말 그렇죠! 요리 레시피를 보거나 오래된 글을 읽을 때 꽤 유용할 수 있어요.
+[ 24.44s][user ] [laugh] 진짜! 옛날 책에서 봤어.
+[ 27.04s][moshi] [happy] 옛날 책들은 stone을 정말 좋아하죠, 그렇지 않나요? 과거의 매력적인 특징 중 하나예요.
+[ 33.80s][user ] «backchannel» 어.
+[ 34.32s][user ] 그럼, 삼 stone이면 파운드로 얼마나 ⟨ret@37.12s⟩ 돼?
+[ 37.44s][moshi] ⟦⚡SPAN@37.44s: One stone is equivalent to fourteen pounds, so three stones would equal forty-two pounds.⟧ 삼 stone이면 사십이 파운드와 같아요.
+[ 40.04s][user ] 와, 사십이! 엄청 많네.
+[ 42.12s][moshi] 정말 그렇죠! 그렇게 생각하면 꽤 큰 무게라는 걸 알 수 있어요.
+[ 47.84s][user ] 궁금한데, 영국 사람들은 아직도 stone을 많이 ⟨ret@51.08s⟩ 쓰나?
+[ 51.48s][moshi] ⟦⚡SPAN@51.48s: While pounds and kilograms are more common now, stones are still often used in Britain for measuring body weig⟧ 예전만큼 많이 쓰지는 않지만, 영국에서는 여전히 체중을 잴 때 stone을 자주 사용해요.
+[ 57.72s][user ] 정말? 체중으로? 흥미롭네.
+[ 59.28s][moshi] 약간의 문화적 잔재 같은 거예요. 다른 측정 단위도 있지만, 많은 사람들이 여전히 stone으로 체중을 말해요.
+[ 67.08s][user ] «backchannel» 어.
+[ 67.60s][user ] 그건… 음, 복싱에 대해 읽고 있었거든.
+[ 70.72s][moshi] «interrupted» 복싱에서는 체급을 분류할 때 stone을 자주 사용합니다—
+[ 74.36s][user ] «interrupts_prev» …잠깐, 복싱 단체마다 stone 무게가 다른가?
+[ 77.48s][user ] «backchannel» 그래.
+[ 78.00s][moshi] ⟨ret@77.68s⟩ ⟦⚡SPAN@78.00s: The weight classes in boxing vary slightly between organizations, but generally include weight limits at 8 sto⟧ 네, 복싱 단체마다 약간씩 무게 제한이 다르지만, 여전히 stone 시스템을 사용합니다.
+[ 83.72s][moshi] 체급은 다양하지만, 일반적으로 팔 stone 육 파운드, 구 stone 구 파운드, 십 stone 칠 파운드 정도의 제한이 있어요.
+[ 93.08s][user ] 분수도 엄청 많네!
+[ 94.64s][moshi] 조금 복잡할 수 있죠! 스포츠 내에서 매우 정확한 구분이 필요하기 때문이에요.
+[100.36s][user ] «backchannel» 어어.
+[100.88s][user ] 그럼, 내가 십일 ⟨ret@102.64s⟩ stone이면…
+[102.96s][moshi] ⟦⚡SPAN@102.96s: Eleven stones is equal to one hundred and fifty-four pounds—simply by multiplying eleven by fourteen.⟧ 십일 stone은 백오십사 파운드와 같아요.
+[105.56s][user ] «backchannel» 맞아.
+[106.08s][user ] 알겠어. 도와줘서 고마워!
+[107.64s][moshi] 천만에요!

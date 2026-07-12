@@ -4,72 +4,66 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "유호",
+#     "name": "주람",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-15",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-11-08",
+#       "date": "2026-01-23",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-03",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "date": "2026-01-19",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-05-28",
+#       "date": "2025-12-20",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-08",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-29",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-22",
-#       "title": "Researching a used car",
+#       "date": "2025-08-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 엔 씨 아이 에스 뉴올리언스에서 로렐 프라이드는 누가 연기해?
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 엔 씨 아이 에스 뉴올리언스에서 로렐 프라이드 역은 섀늘리 캐스웰 씨가 맡았어요.
-     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: Shanley Caswell plays Laurel Pride in NCIS: New Orleans.
-     3.52s  user  발화 끝
-     8.22s  agent 발화 끝
+     0.00s  user  발화 시작: 이천십육년 소유 댄스에서 누가 우승했는지 알려줘.
+     3.27s  <ret> 발화 (turn1 첫 프레임)
+     3.43s  agent 발화 시작: <ret> 이천십육년 소유 댄스 우승자는 레온 "키다" 번스라고 하네요. 춤 실력이 정말 대단했죠.
+     3.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Leon "Kida" Burns won the twelfth season of So You Think You Can Dance
+     3.43s  user  발화 끝
+    10.29s  agent 발화 끝

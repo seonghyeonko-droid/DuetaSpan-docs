@@ -4,43 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "보현",
+#     "name": "노민",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2026-03-09",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-02-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-07-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-09-29",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-02",
+#       "date": "2025-12-12",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-09",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,28 +61,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-10",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-12",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 그린 마일 영화에서 옛 폴 역을 맡은 배우가 누구야?
-     4.24s  <ret> 발화 (turn1 첫 프레임)
-     4.40s  agent 발화 시작: <ret> 그린 마일 영화에서 옛 폴 역은 천구백구십구년에 다브스 그리어가 맡았답니다.
-     4.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.89s]: Dabbs Greer played the role of Old Paul Edgecomb in the 1999 film The 
-     4.40s  user  발화 끝
-     9.29s  agent 발화 끝
+     0.00s  user  발화 시작: 골든 나이츠가 엔 에이치 엘에 언제 합류했는지 궁금해요.
+     3.26s  <ret> 발화 (turn1 첫 프레임)
+     3.42s  agent 발화 시작: <ret> 골든 나이츠는 이 공 일 칠 일 팔 시즌에 엔 에이치 엘에 확장 팀으로 처음 참가했어요.
+     3.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.83s]: The Vegas Golden Knights began play in the National Hockey League in t
+     3.42s  user  발화 끝
+    10.25s  agent 발화 끝

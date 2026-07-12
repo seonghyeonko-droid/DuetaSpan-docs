@@ -1,98 +1,84 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 노노이며, 여행 및 휴가 계획을 세우는 것을 도와주는 따뜻하고 세심한 라이프 코치입니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 실용적이고 안심시키는 상담사 푸온입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "준경",
+    "name": "정진",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-08",
+      "date": "2026-05-20",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
+      "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2025-10-10",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-03-09",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-09-25",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-12-20",
+      "category": "home",
+      "text": "User's home address is 서울 종로구 세종대로 175."
     },
     {
-      "date": "2025-07-29",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-07-16",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-08",
-      "title": "Researching a used car",
+      "date": "2025-08-06",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 밥 말리 때문에 유명해진 음악 장르는 뭐야? ⟨ret@3.11s⟩
-[  3.27s][moshi] ⟦⚡SPAN@3.27s: Roots reggae.⟧ 밥 말리 때문에 유명해진 음악 장르는 레게의 뿌리라고 할 수 있는 루트 레게예요.
-[  9.35s][user ] 루트 레게가 뭐길래 그렇게 인기 있는 거야?
-[ 12.62s][moshi] 루트 레게는 자메이카에서 시작된 음악 장르인데, 사회 비판적인 메시지와 강렬한 리듬이 특징이에요.
-[ 18.23s][user ] «backchannel» 어.
-[ 18.70s][user ] 아, 그렇구나. 혹시 루트 레게의 대표적인 가수 또 ⟨ret@22.59s⟩ 있어?
-[ 22.91s][moshi] ⟦⚡SPAN@22.91s: Bob Marley and the Wailers, Peter Tosh, and Burning Spear.⟧ 루트 레게의 대표적인 가수는 밥 말리와 더 웨일러스, 피터 토시, 그리고 버닝 스피어 같은 분들이 있어요.
-[ 30.39s][user ] 버닝 스피어는 처음 듣는 이름인데, 어떤 음악을 해?
-[ 34.13s][moshi] 버닝 스피어는 루트 레게의 정신을 잘 담아낸 가수로, 깊이 있는 가사와 독특한 보컬이 특징이에요.
-[ 40.67s][user ] «backchannel» 어.
-[ 41.14s][user ] 음, 재밌는 정보네. 밥 말리는 언제부터 음악을 시작했어? ⟨ret@44.80s⟩
-[ 44.88s][moshi] ⟦⚡SPAN@44.88s: Marley began his career in 1963.⟧ 밥 말리는 천구백육십삼년에 음악 활동을 시작했어요.
-[ 47.68s][user ] «backchannel» 응.
-[ 48.15s][user ] 천구백육십삼년이라니, 꽤 오래됐네.
-[ 49.55s][moshi] 네, 밥 말리는 어린 시절부터 음악에 재능을 보였고, 꾸준히 음악 활동을 이어갔어요.
-[ 55.16s][user ] «backchannel» 어.
-[ 55.63s][user ] 혹시 밥 말리가 가장 좋아하는 악기가 뭐였어?
-[ 58.90s][moshi] 밥 말리는 기타를 가장 좋아했고, 기타 연주 실력도 뛰어났다고 해요.
-[ 63.58s][user ] 기타 잘 치는 모습 상상되네.
-[ 65.91s][moshi] 네, 밥 말리는 기타를 통해 자신의 음악 세계를 표현하고, 많은 사람들에게 감동을 선사했어요.
-[ 71.99s][user ] 밥 말리가 만든 노래 중에 제일 유명한 건 ⟨ret@75.88s⟩ 뭐야?
-[ 76.20s][moshi] ⟦⚡SPAN@76.20s: "One Love" is one of Marley's most famous songs.⟧ 밥 말리가 만든 노래 중 가장 유명한 곡은 “원 러브”라고 할 수 있어요.
-[ 82.28s][user ] “원 러브”는 정말 명곡이지.
-[ 84.14s][moshi] 네, “원 러브”는 평화와 사랑의 메시지를 담고 있어서 전 세계적으로 많은 사랑을 받고 있어요.
-[ 90.69s][user ] 밥 말리 음악 들으면서 힐링해야겠다.
-[ 93.03s][moshi] 좋은 생각이에요. 밥 말리의 음악은 듣는 사람에게 위로와 희망을 줄 수 있어요.
-[ 98.64s][user ] 요즘 날씨가 너무 더운데, 서울 날씨 ⟨ret@101.59s⟩ 어때?
-[101.91s][moshi] ⟦⚡SPAN@101.91s: (tool result) 28.3°C, humidity 68%, wind 3.2 km/h.⟧ 지금 서울 날씨는 섭씨 이십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[109.39s][user ] «backchannel» 그치.
-[109.86s][user ] 꽤 덥겠네.
-[110.79s][moshi] 네, 오늘 서울은 꽤 더울 것 같아요. 시원한 물 많이 드시고, 더위 조심하세요.
-[116.87s][user ] 이번 주말에 갈 만한 곳 추천해 줄 수 있어?
-[121.08s][moshi] 이번 주말에 어디를 가고 싶으세요? 혹시 특별히 생각하신 곳이 있으신가요?
-[125.75s][user ] 음… 그냥 조용하고 자연이 좋은 곳이면 좋겠어 —
-[129.49s][user ] …근데 레게 음악 틀어주는 곳이면 더 ⟨ret@132.36s⟩ 좋겠다!
-[132.76s][moshi] ⟦⚡SPAN@132.76s: Jeju Island has several reggae bars and beautiful natural scenery.⟧ 레게 음악을 틀어주는 조용하고 자연이 좋은 곳이라…
-[136.03s][moshi] 제주도에는 레게 음악을 틀어주는 바도 있고, 아름다운 자연 경관도 즐길 수 있어요.
-[141.64s][user ] «backchannel» 아.
-[142.11s][moshi] 네, 제주도는 휴식을 취하기에 아주 좋은 곳이에요. 바다도 아름답고, 공기도 맑아요.
-[147.25s][user ] 제주도 괜찮네. 항공권 좀 알아봐 줄래?
-[150.06s][moshi] 출발 날짜와 시간을 알려주시면 항공권을 알아봐 드릴게요.
-[153.33s][user ] «backchannel» 맞아.
-[153.80s][user ] 이번 주 토요일 오후 출발하는 항공권으로 알아봐 줘.
-[157.54s][moshi] 이번 주 토요일 오후 출발하는 항공권을 알아보고 있어요. 잠시만 기다려 주세요.
+[  0.00s][user ] 혹시 '유령의 위협'에 나오는 나탈리 포트먼 역할이 뭔지 알아요? ⟨ret@4.18s⟩
+[  4.34s][moshi] ⟦⚡SPAN@4.34s: Padmé Amidala.⟧ 아, 나탈리 포트먼은 '유령의 위협'에서 파드메 아미달라 역을 맡았답니다. 스타워즈 팬이시군요?
+[  9.65s][user ] «backchannel» 음.
+[ 10.14s][user ] 네, 엄청 좋아해요. ⟨ret@11.43s⟩
+[ 11.59s][moshi] ⟦⚡SPAN IRRELEVANT@11.59s: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cloudy skies and a wind speed of 7.1 km/h.⟧ 저도 스타워즈 시리즈를 좋아하는데, 특히 파드메 아미달라 캐릭터는 강인하고 아름다운 모습이 인상적이에요.
+[ 17.38s][moshi] 혹시 다른 스타워즈 캐릭터에 대해서도 궁금한 점이 있으신가요? —
+[ 21.72s][user ] «backchannel» 응.
+[ 22.21s][moshi] 아니면 다른 영화나 배우에 대한 정보도 찾아드릴 수 있습니다.
+[ 26.55s][user ] 이번 주 토요일에 영화 보러 가려고 하는데…
+[ 29.93s][user ] …괜찮은 영화 있나요? ⟨ret@31.22s⟩
+[ 31.38s][moshi] ⟦⚡SPAN@31.38s: (tool result) [‘Oppenheimer’, ‘Barbie’, ‘Mission: Impossible – Dead Reckoning Part One’]⟧ 이번 주말에 볼 만한 영화로는 '오펜하이머', '바비', '미션 임파서블: 데드 레코닝 피 에이 알 티 오 엔 이'이 있습니다.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {}}
+[ 40.55s][user ] «backchannel» 맞아.
+[ 41.03s][user ] '바비' 영화 예매 좀 해 ⟨ret@43.53s⟩ 주세요.
+[ 43.93s][moshi] ⟦⚡SPAN@43.93s: (tool result) 바비 영화, 7월 13일 토요일 오후 2시, 메가박스 코엑스, A열 7번 좌석 확정. 예약번호: BX9274.⟧ '바비' 영화, 토요일 오후 두시에 메가박스 코엑스 A열 칠번 좌석으로 예매 완료되었습니다. 예약번호는 비 엑스 구 이 칠 사입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "바비"}}
+[ 53.10s][user ] «backchannel» 음.
+[ 53.58s][user ] 감사합니다! 혹시 다음 주 금요일에 예약해둔 병원 예약 확인해 줄 수 있나요?
+[ 59.38s][moshi] 네, 다음 주 금요일 병원 예약 확인해 드리겠습니다. 혹시 병원 이름이나 예약 시간을 말씀해 주시겠어요?
+[ 66.62s][user ] «backchannel» 음.
+[ 67.10s][user ] 서울대학교 병원, 오후 세시요. ⟨ret@68.87s⟩
+[ 69.03s][moshi] ⟦⚡SPAN@69.03s: (tool result) 서울대학교병원, 7월 19일 금요일 오후 3시, 신경과 진료 예약 확인.⟧ 서울대학교병원 신경과 진료, 다음 주 금요일 오후 세시로 예약되어 있습니다.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "서울대학교 병원"}}
+[ 73.86s][user ] «backchannel» 진짜?
+[ 74.34s][user ] 아, 다행이다.
+[ 75.31s][moshi] 혹시 다른 예약이나 일정 관리도 도와드릴까요? 예산을 짜는 것도 도와드릴 수 있습니다.
+[ 81.10s][user ] «backchannel» 응.
+[ 81.58s][user ] 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요.
+[ 83.99s][moshi] 궁금한 점이 있으시면 언제든지 저를 찾아주세요. 언제나 도와드릴 준비가 되어 있습니다.
+[ 89.30s][user ] 네, 알겠습니다.
+[ 90.27s][moshi] 건강 관리에 유념하시고, 즐거운 주말 보내세요.

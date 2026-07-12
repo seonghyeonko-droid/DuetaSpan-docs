@@ -1,63 +1,82 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Theax, a encouraging and non-judgmental supportive advisor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Niaen, a curious and validating personal guide who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Kim",
+    "name": "Alice",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-12",
+      "date": "2026-04-01",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-23",
       "category": "allergy",
       "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-08-15",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-09-27",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-07-09",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2025-07-31",
+      "category": "home",
+      "text": "User's home address is 822 Birch Road."
     },
     {
-      "date": "2025-06-12",
+      "date": "2025-07-04",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-17",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-08",
+      "date": "2026-06-10",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-08-03",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who plays Laurel Pride on NCIS: New ⟨ret@3.25s⟩ Orleans?
-[  3.57s][moshi] ⟦⚡SPAN@3.57s: Shanley Caswell is an American actress known for portraying Laurel Pride in the CBS television series NCIS: Ne⟧ Well, that would be Shanley Caswell, an American actress—she’s the one who plays Laurel Pride on NCIS: New Orleans. It’s wonderful to see you exploring different shows!
+[  0.00s][user ] Who do you think won…
+[  2.17s][user ] …So You Think You Can Dance in ⟨ret@5.32s⟩ 2016?
+[  5.64s][moshi] ⟦⚡SPAN@5.64s: Leon "Kida" Burns was declared the winner of the thirteenth season of So You Think You Can Dance on September ⟧ Oh, that’s a fun one! Leon "Kida" Burns was declared the winner of the thirteenth season on September thirteenth, 2016. It’s wonderful to revisit those moments of pure artistry, isn't it?

@@ -1,95 +1,72 @@
 v3_fstart_15_ko src=mcp style=mcp_falsestart
-SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 친절하고 꾸준한 웰니스 코치, 트호나입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 토라입니다. 토라는 사려 깊고 부드러운 말투를 사용하는 라이프 코치로서, 사람들의 육아 및 가족 시간 문제 해결을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "노별",
+    "name": "우우",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-06-14",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-08-12",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-07-26",
+      "date": "2026-03-17",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-07-19",
+      "date": "2026-01-10",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2025-06-07",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-07-16",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-06-08",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-04",
-      "title": "Setting up a home network",
+      "date": "2026-02-16",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-03",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 블루맨 그룹 라스베가스 티켓 다섯 장, 사월 이십이일에 구매하고 싶어. ⟨ret@4.62s⟩
-[  4.70s][moshi] ⟦⚡SPAN@4.70s: (tool result) Confirmation: BMG-LV-20260422-5839⟧ 블루맨 그룹 라스베가스 공연 티켓 다섯 장, 이천이십육년 사월 이십이일 예매가 완료되었습니다. 확인 번호는 비 엠 지 엘 브이 이 공 이 육 공 사 이 이 오 팔 삼 구입니다.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Blue Man Group", "location": "Las Vegas", "date": "2026-04-22", "number_of_tickets": 5}}
-[ 19.29s][user ] «backchannel» 헐.
-[ 19.76s][user ] 혹시 그날 저녁에 괜찮은 레스토랑도 추천해 줄 수 있어?
-[ 23.99s][moshi] 어떤 종류의 음식을 선호하시나요?
-[ 25.87s][user ] 음… 이탈리안 음식이 좋을 것 ⟨ret@28.30s⟩ 같아.
-[ 28.70s][moshi] ⟦⚡SPAN@28.70s: (tool result) Italian restaurants in Las Vegas: Bellagio, Spago, Carbone.⟧ 이탈리안 음식을 좋아하시는군요. 라스베가스에는 훌륭한 이탈리안 레스토랑이 많이 있습니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Las Vegas"}}
-[ 32.93s][moshi] 벨라지오, 스파고, 카본 레스토랑이 괜찮은 이탈리안 레스토랑으로 검색됩니다.
-[ 36.69s][user ] 카본이 제일 맛있어 보이는데, 예약해 줄 수 있어?
-[ 40.46s][moshi] 카본 레스토랑을 예약해 드리겠습니다. 몇 시로 예약하시겠어요?
-[ 43.75s][user ] 저녁 일곱시로 부탁해. ⟨ret@45.00s⟩
-[ 45.16s][moshi] ⟦⚡SPAN@45.16s: (tool result) Reservation confirmed at Carbone, Las Vegas, April 22, 2026, 7:00 PM. Confirmation number: CRB-L⟧ 카본 레스토랑, 이천이십육년 사월 이십이일 저녁 일곱시 예약이 완료되었습니다. 확인 번호는 씨 알 비 엘 브이 이 공 이 육 공 사 이 이 일 이 사 칠입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Carbone", "time": "19:00", "date": "2026-04-22"}}
-[ 58.34s][user ] «backchannel» 우와.
-[ 58.81s][user ] 와, 정말 고마워.
-[ 60.22s][moshi] 도움이 되어 기쁩니다. 여행 준비는 잘 되어 가시나요?
-[ 63.98s][user ] «backchannel» 응.
-[ 64.45s][user ] 아직 숙소는 안 잡았어.
-[ 66.33s][moshi] «interrupted» 숙소는 아직 예약하지 않으셨군요? —
-[ 68.69s][user ] «interrupts_prev» … 혹시 벨라지오 호텔도 예약해 줄 수 있어?
-[ 72.45s][moshi] 벨라지오 호텔 예약도 도와드릴 수 있습니다. 어떤 종류의 방을 원하시나요?
-[ 77.15s][moshi] ⟨ret@76.99s⟩ 호텔 ⟦⚡SPAN@78.11s: Bellagio Hotel offers standard rooms, suites, and penthouse suites. Prices range from $300 to $2000 per night.⟧ 예약은 여행의 중요한 부분이죠. 벨라지오 호텔은 스탠다드룸, 스위트룸, 펜트하우스 스위트룸을 제공하며, 일박당 삼백달러에서 이천달러까지 가격대가 형성되어 있습니다. 원하는 방의 종류를 알려주시면 자세한 내용을 확인해 드리겠습니다.
-[ 89.38s][user ] 스위트룸으로 부탁해.
-[ 90.33s][moshi] 스위트룸으로 예약해 드리겠습니다. 며칠 동안 숙박하시겠어요?
-[ 93.15s][user ] «backchannel» 응.
-[ 93.62s][user ] 이박 삼일로 할게. ⟨ret@94.87s⟩
-[ 95.03s][moshi] ⟦⚡SPAN@95.03s: (tool result) Suite at Bellagio confirmed for April 22-24, 2026. Confirmation: BLG-SUITE-20260422-9876⟧ 벨라지오 호텔 스위트룸, 이천이십육년 사월 이십이일부터 이십사일까지 이박 삼일 숙박이 확정되었습니다. 확인 번호는 비 엘 지 에스 유 아이 티 이 이 공 이 육 공 사 이 이 구 팔 칠 육입니다.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Bellagio", "room_type": "suite", "duration": "3 days/2 nights", "date": "2026-04-22"}}
-[110.55s][user ] 정말 수고했어. 덕분에 여행 계획이 거의 다 끝났네.
-[114.32s][moshi] 여행 계획을 마무리하는 데 도움이 되어 기쁩니다. 즐거운 여행 되세요!
+[  0.00s][user ] 혹시 베를린 브란덴부르크 문 좌표 좀 알려줄 수 있을까요? 음… 아니, 됐어요. 그냥 지금 날씨가 어때요? ⟨ret@7.57s⟩
+[  7.65s][moshi] ⟦⚡SPAN@7.65s: {"city": "Berlin", "temperature": "23.0°C", "humidity": "74%", "wind": "5.5 km/h"}⟧ 베를린의 현재 날씨는 기온 이십삼도, 습도 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다. 날씨가 꽤 좋네요.
+[ 14.82s][user ] «backchannel» 예.
+[ 15.29s][user ] 아, 그렇군요. 이번 주 토요일에 아이들과 갈 만한 곳이 ⟨ret@19.67s⟩ 있을까요?
+[ 20.07s][moshi] ⟦⚡SPAN@20.07s: (tool result) Berlin has many attractions for families, including the Berlin Zoo, LEGOLAND Discovery Centre Be⟧ 베를린에는 가족과 함께 가기 좋은 곳이 많아요. 베를린 동물원, 레고랜드 디스커버리 센터 베를린, 독일 기술 박물관 등이 있습니다.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"city": "Berlin", "date": "2026-07-11"}}
+[ 28.68s][user ] 독일 기술 박물관이요? 거기 주소 좀 ⟨ret@31.70s⟩ 알려주시겠어요?
+[ 32.02s][moshi] ⟦⚡SPAN@32.02s: The Deutsches Technikmuseum Berlin is located at Trebbiner Straße 9, 10963 Berlin, Germany.⟧ 독일 기술 박물관 주소는 독일 베를린 트레비너 거리 구번지, 우편번호는 일 공 구 육 삼입니다. 아이들이 정말 좋아할 거예요.
+[ 41.10s][user ] «backchannel» 어머.
+[ 41.58s][user ] 감사합니다.
+[ 42.06s][moshi] 천만에요.

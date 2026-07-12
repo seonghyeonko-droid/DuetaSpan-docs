@@ -1,102 +1,105 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Kleli, a thoughtful and soft-spoken counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Telius, a kind and steady supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Lena",
+    "name": "Iris",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "early 20s",
-    "language": "French"
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-06-08",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2026-05-19",
-      "category": "home",
-      "text": "User's home address is 642 Maple Drive."
+      "date": "2026-04-20",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-04-26",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2025-11-11",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-14",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "date": "2025-09-16",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-07-28",
+      "date": "2025-09-03",
       "category": "work",
-      "text": "User works as a chef."
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-04",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-01-03",
+      "date": "2025-11-05",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-08-29",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about the Canterbury Tales… ⟨ret@3.01s⟩ um…
-[  3.33s][moshi] ⟦⚡SPAN@3.33s: The Knight is the first pilgrim to tell a tale in Geoffrey Chaucer’s *The Canterbury Tales*.⟧ It's wonderful you're exploring classic literature. The Knight is actually the first to share a story in *The Canterbury Tales*.
-[ 11.65s][user ] «backchannel» Mhm.
-[ 12.07s][user ] Oh, that's right! I knew that, I think. What kind of story does he ⟨ret@17.91s⟩ tell?
-[ 18.31s][moshi] ⟦⚡SPAN@18.31s: The Knight’s Tale is a chivalric romance about two cousins, Palamon and Arcite, who fall in love with Emilye.⟧ He tells a chivalric romance, a tale of two cousins, Palamon and Arcite, and their love for Emilye. It's quite a story.
-[ 27.46s][user ] A romance, huh? Sounds…different from what I expect.
-[ 30.79s][moshi] Sometimes the oldest stories surprise us, don't they? It's interesting to consider what people sought in tales long ago.
-[ 38.70s][user ] [happy] I guess so. Can you find me some information about the author, ⟨ret@44.12s⟩ Chaucer?
-[ 44.52s][moshi] ⟦⚡SPAN@44.52s: (tool result) Geoffrey Chaucer was an English writer and poet, widely regarded as the greatest English poet of⟧ Geoffrey Chaucer was a celebrated English poet of the Middle Ages, best known for writing *The Canterbury Tales*.
-      CALL: {"function": "search", "arguments": {"query": "Geoffrey Chaucer"}}
-[ 52.01s][user ] «backchannel» Yeah.
-[ 52.43s][user ] Middle Ages…that’s a long time ago. What years are we talking about? ⟨ret@57.34s⟩
-[ 57.42s][moshi] ⟦⚡SPAN@57.42s: Geoffrey Chaucer was born around 1343 and died in 1400, living throughout the 14th century.⟧ He lived throughout the 14th century, born around thirteen forty-three and passing away in fourteen hundred.
-[ 64.08s][user ] Wow. That’s…a really long time.
-[ 66.16s][moshi] It's humbling to think about the centuries that have passed since then, isn’t it? Time changes everything.
-[ 73.23s][user ] It is. Uh…
-[ 74.48s][user ] …I’m trying to get back into writing, but I’m stuck.
-[ 78.64s][moshi] Creative blocks are so common. Sometimes just knowing that others experience them can be a comfort.
-[ 85.30s][user ] I suppose. I feel like everything I write is…terrible.
-[ 89.04s][moshi] That feeling is so valid. It’s like a shadow that often accompanies creativity. What kind of writing are you working on?
-[ 97.78s][user ] «backchannel» Yeah, totally.
-[ 98.61s][user ] Just…stories, mostly. Short ones. I can’t seem to finish anything.
-[102.77s][moshi] Finishing can be the hardest part. Perhaps breaking your stories into even smaller segments could help you gain momentum?
-[110.68s][user ] …Maybe. It's just hard to believe in myself…
-[114.01s][user ] …you know?
-[114.84s][moshi] Self-doubt is a powerful opponent. Remember, every story starts with a single word, and every writer feels unsure at times.
-[123.16s][user ] Thank you, Kleli. That's…actually really helpful.
-[125.66s][moshi] You're very welcome. It’s a privilege to offer a little support, and I believe in your potential to create beautiful things.
+[  0.00s][user ] I was just wondering…
+[  1.74s][moshi] It’s alright to wonder, truly. What’s on your mind today?
+[  6.10s][user ] «backchannel» Mm-hmm.
+[  6.54s][user ] …who voices Woody in Toy Story? ⟨ret@8.99s⟩
+[  9.15s][moshi] ⟦⚡SPAN@9.15s: Tom Hanks has provided the voice for the character of Woody in all of the Toy Story films.⟧ It’s Tom Hanks who has provided the voice for Woody in all of the Toy Story films.
+[ 16.56s][user ] Oh, wow, really? I always thought it sounded familiar.
+[ 20.48s][moshi] It’s a very recognizable voice, isn’t it? He truly brings Woody to life.
+[ 26.14s][user ] Do you think he’s done other voice work? ⟨ret@29.55s⟩
+[ 29.63s][moshi] ⟦⚡SPAN@29.63s: Tom Hanks voiced Woody in Toy Story (1995), Toy Story 2 (1999), Toy Story 3 (2010), and Toy Story 4 (2019).⟧ He voiced Woody in Toy Story, 1995, and continued through Toy Story 4 in 2019.
+[ 36.16s][user ] «backchannel» Yeah, totally.
+[ 37.03s][moshi] It is quite a commitment, and a beloved one at that. A wonderful legacy.
+[ 43.13s][user ] «backchannel» Yeah.
+[ 43.57s][user ] What about the weather…
+[ 45.31s][user ] …in Seoul right ⟨ret@46.81s⟩ now?
+[ 47.05s][moshi] ⟦⚡SPAN@47.05s: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wind 3.1 km/h.⟧ The current conditions in Seoul are 26.0°C, with 68% humidity and a 3.1 km/h wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 53.59s][user ] That sounds quite pleasant.
+[ 55.33s][moshi] It does sound lovely, doesn’t it? A very comfortable temperature.
+[ 59.69s][user ] «backchannel» Right.
+[ 60.12s][user ] Is there a good Italian restaurant ⟨ret@62.93s⟩ nearby?
+[ 63.17s][moshi] ⟦⚡SPAN@63.17s: (tool result) Bella Italia: 4.5 stars, 0.8 km, Italian, $$; Pasta Paradise: 4.2 stars, 1.2 km, Italian, $$$.⟧ Bella Italia is 0.8 km away, with 4.5 stars, and Pasta Paradise is 1.2 km, with 4.2 stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
+[ 71.02s][user ] «backchannel» Uh-huh.
+[ 71.45s][user ] Hmm, Bella Italia sounds good. Can you make a reservation for two? ⟨ret@76.52s⟩
+[ 76.68s][moshi] ⟦⚡SPAN@76.68s: (tool result) Reservation confirmed at Bella Italia for 2 people on July 10, 2026 at 7:00 PM. Confirmation ID:⟧ Your reservation at Bella Italia for two is confirmed for 7:00 PM tonight, confirmation BI72839.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "party_size": "2"}}
+[ 83.21s][user ] «backchannel» Mm-hmm.
+[ 83.65s][user ] Fantastic! Thank you so much.
+[ 85.83s][moshi] You are very welcome. I’m glad I could help with that.
+[ 90.62s][user ] «backchannel» Uh-huh.
+[ 91.06s][user ] What time is it in Tokyo right ⟨ret@94.14s⟩ now?
+[ 94.54s][moshi] ⟦⚡SPAN@94.54s: (tool result) It is Friday, July 10, 2026 at 8:38 PM in Asia/Tokyo right now.⟧ It is currently 8:38 PM in Asia/Tokyo, on Friday, July 10, 2026.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 99.77s][user ] Wow, so much later than here.
+[102.38s][moshi] Time truly does move at different paces depending on where you are.
+[107.61s][user ] «backchannel» Yeah.
+[108.05s][user ] [sigh] I need to remember to call my sister.
+[111.97s][moshi] That's a very thoughtful thing to do. Staying connected is so important.
+[117.20s][user ] «backchannel» Yeah.
+[117.63s][user ] Do you know what…
+[119.38s][user ] …the capital of Australia ⟨ret@121.31s⟩ is?
+[121.55s][moshi] ⟦⚡SPAN@121.55s: Canberra is the capital city of Australia; Sydney and Melbourne are more well known, but Canberra was chosen a⟧ Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne.
+[128.09s][user ] «backchannel» Yeah.
+[128.53s][user ] That’s interesting, I always thought it was Sydney.
+[132.01s][moshi] It’s a common misconception, you’re not alone. It’s a beautiful city, though.
+[137.24s][user ] I think I’ll look up some pictures of Canberra.
+[141.16s][moshi] That sounds like a lovely idea. Sometimes a visual helps bring a place to life.
