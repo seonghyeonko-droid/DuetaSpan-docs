@@ -1,59 +1,54 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Lariia, a encouraging and non-judgmental supportive advisor who helps people with grief and change. <system>
+SYSTEM: <system> You are Zeen, a encouraging and non-judgmental life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Mia",
+    "name": "Ava",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "40s",
-    "language": "German"
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-14",
+      "date": "2026-02-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-07-14",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
+    },
+    {
+      "date": "2025-06-11",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-11-17",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2025-10-02",
-      "category": "home",
-      "text": "User's home address is 546 Pine Court."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-07-25",
-      "category": "hobby",
-      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-27",
-      "title": "Booked a dentist appointment",
+      "date": "2025-11-21",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-06-28",
+      "date": "2025-10-02",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -64,41 +59,19 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm just feeling a little down today.
-[  3.15s][moshi] It’s alright to feel down sometimes; allowing yourself those feelings is a healthy step. Remember, things shift and change, and you have strength within you.
-[ 12.98s][user ] Thanks, Lariia. I was wondering… when did the Steelers last win the Super ⟨ret@18.25s⟩ Bowl?
-[ 18.49s][moshi] ⟦⚡SPAN@18.49s: The Pittsburgh Steelers won their sixth Super Bowl title on February 3, 2009, defeating the Arizona Cardinals ⟧ The Pittsburgh Steelers last won the Super Bowl on February 3, 2009, defeating the Arizona Cardinals 27–23 in Super Bowl XLIII. It was a really exciting game, wasn’t it?
-[ 29.90s][user ] Wow, 2009… that feels like ages ago.
-[ 32.66s][moshi] Time does have a way of slipping away from us, doesn't it? It’s natural to reflect on times past.
-[ 40.13s][user ] I’ve been trying to remember some good times, actually.
-[ 43.68s][moshi] That’s a wonderful idea; focusing on positive memories can be really uplifting. What comes to mind?
-[ 49.97s][user ] Well, I was thinking about sports, and… uh…
-[ 53.12s][moshi] It’s okay to pause and gather your thoughts; sometimes the best memories take a moment to surface.
-[ 59.81s][user ] «backchannel» Oh.
-[ 60.20s][user ] Do you think remembering wins is a good way to feel better?
-[ 64.92s][moshi] Celebrating achievements, big or small, can remind us of our resilience and capabilities.
-[ 70.04s][user ] «backchannel» Yeah.
-[ 70.43s][user ] I remember watching that Super Bowl with my dad.
-[ 73.97s][moshi] Those shared experiences with loved ones are especially precious; they create lasting bonds.
-[ 79.09s][user ] It was really special. What was the score ⟨ret@82.39s⟩ again?
-[ 82.63s][moshi] ⟦⚡SPAN@82.63s: The Pittsburgh Steelers won their sixth Super Bowl title on February 3, 2009, defeating the Arizona Cardinals ⟧ The Steelers defeated the Arizona Cardinals 27–23 in Super Bowl XLIII. It was a close game, a real nail-biter.
-[ 90.11s][user ] Twenty-seven to twenty-three… yeah, I think I remember that.
-[ 93.65s][moshi] It’s lovely when memories return like that, isn’t it? It feels like reconnecting with a part of yourself.
-[100.73s][user ] What about the one before ⟨ret@102.77s⟩ that?
-[103.09s][moshi] ⟦⚡SPAN@103.09s: The Pittsburgh Steelers defeated the Seattle Seahawks 21–10 in Super Bowl XL on February 5, 2006, at Ford Fiel⟧ Before 2009, the Steelers won Super Bowl XL, defeating the Seattle Seahawks 21–10 on February 5, 2006.
-[109.78s][user ] «backchannel» Uh-huh.
-[110.17s][user ] 2006… that’s…
-[110.96s][moshi] «interrupted» It’s alright if the dates feel a bit distant—
-[114.50s][user ] «interrupts_prev» …do you know who the MVP was in that ⟨ret@118.04s⟩ game?
-[118.44s][moshi] ⟦⚡SPAN@118.44s: Hines Ward, wide receiver for the Pittsburgh Steelers, was named the MVP of Super Bowl XL after recording five⟧ Hines Ward, the Steelers’ wide receiver, was named MVP after recording five receptions for 123 yards and one touchdown. He had a fantastic game that day.
-[128.67s][user ] «backchannel» Yeah.
-[129.06s][user ] Hines Ward! I completely forgot about him. He was good.
-[132.99s][moshi] He really was; a truly remarkable player, and a key part of those winning teams.
-[138.90s][user ] I think I need to look at some old photos.
-[142.83s][moshi] That sounds like a wonderful way to revisit those happy memories; visual reminders can be very powerful.
-[149.52s][user ] I might do that later. What’s the weather like ⟨ret@153.21s⟩ today?
-[153.45s][moshi] ⟦⚡SPAN@153.45s: (tool result) Current conditions: 23.0°C, humidity 74%, wind 5.5 km/h. Forecast: Partly cloudy.⟧ Currently, it’s 23.0°C with 74% humidity and a 5.5 km/h wind; the forecast is partly cloudy. Hopefully, it’s a comfortable day for you.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[162.50s][user ] «backchannel» Right.
-[162.90s][user ] That sounds nice. Thank you, Lariia.
-[165.26s][moshi] You're very welcome. Remember, acknowledging your feelings and revisiting positive memories are both wonderful ways to navigate difficult times.
+[  0.00s][user ] Hi Zeen, I'm trying to get a better handle on my spending.
+[  4.87s][moshi] Hello! It’s wonderful you’re taking this step. Small changes can really add up, you know?
+[ 10.95s][user ] Yeah, I’m hoping to. I was wondering, how many people actually work at ⟨ret@16.38s⟩ Starbucks?
+[ 16.62s][moshi] ⟦⚡SPAN@16.62s: Starbucks employs approximately 238,000 people in the United States as of February 2024.⟧ Starbucks currently employs around 238,000 people in the US.
+[ 20.27s][user ] «backchannel» Yeah, yeah.
+[ 21.08s][user ] Wow, that's a lot of people. Do they all get free coffee?
+[ 25.95s][moshi] That’s a really good point to consider – employee benefits are important!
+[ 30.81s][user ] I'm thinking of starting a small side hustle…
+[ 34.06s][user ] …maybe selling crafts online. —
+[ 36.08s][user ] …but would it be hard to compete with a company that big?
+[ 40.95s][moshi] That's a valid concern. It *can* be challenging, but there’s room for everyone!
+[ 46.22s][user ] I guess so. What about their ⟨ret@48.66s⟩ revenue?
+[ 49.06s][moshi] ⟦⚡SPAN@49.06s: Starbucks reported a total revenue of 36.03 billion U.S. dollars in the fiscal year 2023.⟧ Their revenue is quite significant, actually—Starbucks reported 36.03 billion US dollars in revenue for 2023. That’s a really successful business model, isn’t it?
+[ 58.38s][user ] «backchannel» Wow.
+[ 58.79s][user ] That *is* a lot of money. Maybe I should just stick to budgeting for now.
+[ 64.87s][moshi] That’s a perfectly reasonable approach! Budgeting is the foundation of financial wellness, truly.

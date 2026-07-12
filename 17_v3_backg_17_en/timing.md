@@ -4,109 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Leo",
+#     "name": "Bruno",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Australian",
 #     "gender": "male",
 #     "age_range": "50s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-05-12",
+#       "date": "2026-06-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2026-01-10",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-02-22",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-06-02",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-12-30",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-06-15",
+#       "category": "home",
+#       "text": "User's home address is 82 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-30",
+#       "date": "2026-01-20",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-26",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-02",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who played Krish in Kabhi Khushi K | S2 Wow, he was really young during fi | S3 What other movies has he been in? | S4 …check that one out.
+# EXAMINER(FDB-v2) 단계: S1 Hi Daeen, I was wondering about th | S2 Oh, wow, I didn't know that. Was i | S3 So, those counties just… formed th | S4 That makes sense. It sounds pretty
 
-     0.00s  user  발화 시작: Who played Krish in Kabhi Khushi Kabhie Gham?
-     2.52s  <ret> 발화 (turn1 첫 프레임)
-     2.92s  agent 발화 시작: <ret> That would be Jibraan Khan, who played young Krish Rai
-     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Jibraan Khan played the role of Krish Raichand in the 2001 Bollywood f
-     2.92s  user  발화 끝
-     8.39s  user  발화 시작: Oh, right! I remember now.
-     8.39s  agent 발화 끝
-    10.21s  agent 발화 시작: It’s a very memorable role, even after all these years.
-    10.21s  user  발화 끝
-    13.86s  user  발화 시작: Okay.
-    13.86s  agent 발화 끝
-    14.22s  user  발화 시작: Do you know when he was born?
-    14.22s  user  발화 끝
-    16.61s  <ret> 발화 (turn6 첫 프레임)
-    16.77s  agent 발화 시작: <ret> Jibraan Khan was born on December tenth, 1994, in Mumb
-    16.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.01s]: Jibraan Khan was born on December 10, 1994, in Mumbai, Maharashtra, In
-    16.77s  user  발화 끝
-    20.79s  user  발화 시작: Mm-hmm.
-    20.79s  agent 발화 끝
-    21.15s  user  발화 시작: Wow, he was really young during filming.
-    21.15s  user  발화 끝
-    23.70s  agent 발화 시작: He was quite young, indeed—
-    23.70s  user  발화 끝
-    25.53s  user  발화 시작: …was that his first role?
-    25.53s  agent 발화 끝
-    27.35s  agent 발화 시작: That wasn't actually his first role; he had appeared in a fe
-    27.35s  user  발화 끝
-    32.45s  user  발화 시작: Yeah.
-    32.45s  agent 발화 끝
-    32.82s  agent 발화 시작: Yes, he did some modeling and commercials before Kabhi Khush
-    32.82s  user  발화 끝
-    37.19s  user  발화 시작: What other movies has he been in?
-    37.19s  agent 발화 끝
-    39.51s  <ret> 발화 (turn15 첫 프레임)
-    39.75s  agent 발화 시작: <ret> He's also appeared in films like "Delhi Heights" from 
-    39.75s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.47s]: Jibraan Khan has appeared in films like "Delhi Heights" (2007) and "Ek
-    39.75s  user  발화 끝
-    45.22s  user  발화 시작: Okay.
-    45.22s  agent 발화 끝
-    45.58s  user  발화 시작: Okay, that's good to know. Anything recent?
-    45.58s  user  발화 끝
-    48.05s  <ret> 발화 (turn18 첫 프레임)
-    48.13s  agent 발화 시작: <ret> His most recent work is in “Maja Ma” from 2022, where 
-    48.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.11s]: His most recent credited role is in the 2022 film "Maja Ma", where he 
-    48.13s  user  발화 끝
-    53.24s  user  발화 시작: Exactly.
-    53.24s  agent 발화 끝
-    53.60s  user  발화 시작: That's interesting! I might…
-    53.60s  user  발화 끝
-    55.06s  user  발화 시작: …check that one out.
-    55.06s  user  발화 끝
-    56.52s  agent 발화 시작: It’s a wonderful film, and a bit different from his earlier 
-    56.52s  user  발화 끝
-    60.90s  user  발화 시작: Do you know if he’s still acting?
-    60.90s  agent 발화 끝
-    63.45s  agent 발화 시작: As far as my information goes, yes, he is still actively pur
-    63.45s  user  발화 끝
-    68.19s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Daeen, I was wondering about the Civil War.
+     3.32s  agent 발화 시작: Hello! It’s lovely to explore history with you. What specifi
+     3.32s  user  발화 끝
+     8.48s  user  발화 시작: Which state actually split apart because of it?
+     8.48s  agent 발화 끝
+    11.03s  <ret> 발화 (turn3 첫 프레임)
+    11.43s  agent 발화 시작: <ret> A new state was actually formed during the Civil War—W
+    11.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.27s]: West Virginia was formed as a new state during the American Civil War,
+    11.43s  user  발화 끝
+    17.70s  user  발화 시작: Oh, wow, I didn't know that. Was it a difficult process?
+    17.70s  agent 발화 끝
+    21.75s  agent 발화 시작: It certainly was a complex time, politically and socially. I
+    21.75s  user  발화 끝
+    28.02s  user  발화 시작: That'd be great. Tell me a bit more about why Virginia split
+    28.02s  agent 발화 끝
+    32.29s  <ret> 발화 (turn7 첫 프레임)
+    32.45s  agent 발화 시작: <ret> Virginia seceded in April of eighteen sixty-one, but w
+    32.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.64s]: Virginia seceded from the Union in April 1861, but many counties in th
+    32.45s  user  발화 끝
+    39.08s  user  발화 시작: Mm-hmm.
+    39.08s  agent 발화 끝
+    39.45s  user  발화 시작: So, those counties just… formed their own state?
+    39.45s  user  발화 끝
+    42.40s  agent 발화 시작: Well, it wasn't quite that simple—
+    42.40s  user  발화 끝
+    44.61s  user  발화 시작: …did Virginia fight back against that at all?
+    44.61s  agent 발화 끝
+    47.24s  <ret> 발화 (turn12 첫 프레임)
+    47.56s  agent 발화 시작: <ret> Virginia’s Confederate government did initially oppose
+    47.56s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.53s]: Virginia’s Confederate government initially opposed the creation of We
+    47.56s  user  발화 끝
+    53.09s  user  발화 시작: That makes sense. It sounds pretty messy.
+    53.09s  agent 발화 끝
+    55.67s  agent 발화 시작: History often is, isn’t it? It’s fascinating how these event
+    55.67s  user  발화 끝
+    63.42s  agent 발화 끝

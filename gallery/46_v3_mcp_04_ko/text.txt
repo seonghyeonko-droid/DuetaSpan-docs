@@ -1,94 +1,89 @@
 v3_mcp_04_ko src=mcp style=v2
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 격려적이고 비판적이지 않은 상담사 오레아라입니다. <system>
+SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 차분하고 공감적인 라이프 코치, 노미입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "정율",
+    "name": "채은",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "early 30s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-25",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-04-21",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-02-21",
+      "date": "2026-04-05",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-01-01",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-09-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-10-11",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-08-19",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in March."
+      "date": "2025-09-22",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-11",
-      "title": "Planning a birthday dinner",
+      "date": "2025-11-30",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 이번 주 토요일 날씨 ⟨ret@2.40s⟩ 어때?
-[  2.80s][moshi] ⟦⚡SPAN@2.80s: (tool result) {"temperature": 27.5, "humidity": 68, "wind speed": 4.2, "condition": "partly cloudy"}⟧ 이번 주 토요일 서울 날씨는 이십칠 점 오도, 습도 육십팔퍼센트, 바람은 사 점 이킬로미터로 흐리고 구름이 조금 낄 것 같아요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-11"}}
-[ 12.13s][user ] «backchannel» 응.
-[ 12.60s][user ] 음… 좀 덥겠네. ⟨ret@14.22s⟩ 일요일은?
-[ 14.46s][moshi] ⟦⚡SPAN@14.46s: (tool result) {"temperature": 29.1, "humidity": 72, "wind speed": 3.8, "condition": "sunny"}⟧ 일요일은 이십구 점 일도까지 올라가고, 습도는 칠십이퍼센트로 조금 더 습해질 것 같아요. 화창한 날씨가 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-12"}}
-[ 21.46s][user ] 아, 더워지겠네. 그럼 혹시 다음 주 화요일은 ⟨ret@24.95s⟩ 어때?
-[ 25.19s][moshi] ⟦⚡SPAN@25.19s: (tool result) {"temperature": 25.8, "humidity": 70, "wind speed": 5.1, "condition": "light rain"}⟧ 다음 주 화요일은 이십오 점 팔도 정도이고, 가벼운 비가 올 가능성이 있습니다. 습도는 칠십퍼센트 정도 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2026-07-14"}}
-[ 32.66s][user ] «backchannel» 응.
-[ 33.13s][user ] 비 오면… 공연 보러 가려는데.
-[ 35.46s][moshi] 공연 보러 가신다니 정말 멋지네요. 혹시 어떤 공연인지 여쭤봐도 될까요?
-[ 40.12s][user ] 글쎄… 아직 확실히 정하진 못했어. 영화 볼까 생각 중이야.
-[ 44.32s][moshi] 영화를 보시는 것도 좋은 생각이에요. 혹시 보고 싶은 영화가 있으신가요?
-[ 48.99s][user ] 음… 요즘 상영하는 영화 좀 ⟨ret@51.55s⟩ 찾아줄래?
-[ 51.79s][moshi] ⟦⚡SPAN@51.79s: (tool result) "Currently playing in Seoul: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The Garfield Movie', 'Kin⟧ 서울에서 현재 상영 중인 영화는 ‘인사이드 아웃 이’, ‘배드 보이 라이드 오어 다이’, ‘가필드 무비’, ‘킹덤 오브 더 플래닛 오브 더 에이프스’입니다. 시네플렉스에서 확인했어요.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"location": "Seoul"}}
-[ 62.98s][user ] ‘인사이드 아웃 이’… 평점 좀 찾아봐 ⟨ret@65.85s⟩ 줘.
-[ 66.25s][moshi] ⟦⚡SPAN@66.25s: (tool result) "인사이드 아웃 2는 현재 네이버 영화에서 9.23점을 받고 있습니다. 많은 관객들이 감동과 재미를 동시에 느낄 수 있는 영화라고 평가하고 있습니다. 출처: 네이버 영화, ⟧ 네이버 영화에서 ‘인사이드 아웃 이’는 구 점 이 삼점을 받고 있습니다. 많은 분들이 감동과 재미를 느꼈다고 평가하고 계세요.
-      CALL: {"function": "search", "arguments": {"query": "인사이드 아웃 2 평점"}}
-[ 74.65s][user ] 오… 생각보다 높네. 그럼 예매 좀 해 줘. 이번 주 토요일 오후 두 ⟨ret@80.94s⟩ 시로.
-[ 81.18s][moshi] ⟦⚡SPAN@81.18s: (tool result) "Reservation confirmed: 'Inside Out 2', July 11, 2026, 2:00 PM, Seoul, 2 adult tickets, seat A1-⟧ 네, ‘인사이드 아웃 이’ 이번 주 토요일 오후 두 시 서울에서 이인석 에이 일 에이 이 좌석으로 예매 완료되었습니다. 확인번호는 칠 비 구 엑스 이입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "인사이드 아웃 2", "date": "2026-07-11", "time": "14:00", "location": "Seoul"}}
-[ 92.84s][user ] 잘 됐네. 고마워.
-[ 94.24s][moshi] 천만에요. 영화 즐겁게 보세요.
-[ 96.11s][user ] 아, 잠깐만. 이번 주 토요일에 가는 길, 대중교통으로 가장 빠른 길 ⟨ret@101.47s⟩ 알려줄래?
-[101.71s][moshi] ⟦⚡SPAN@101.71s: (tool result) "Fastest route: Take subway line 2 from your current location to City Hall Station, then transfe⟧ 현재 위치에서 이호선을 타고 시청역에서 일호선으로 환승해서 서울역에서 내리세요. 영화관까지 걸어서 오분 정도 걸리고, 총 예상 시간은 사십오분입니다. 카카오맵에서 확인했습니다.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "My Location", "destination": "Seoul Cinema"}}
-[111.04s][user ] 사십오분… 꽤 걸리네. 버스는 ⟨ret@112.97s⟩ 어때?
-[113.37s][moshi] ⟦⚡SPAN@113.37s: (tool result) "Fastest bus route: Take bus number 109 from your current location to Seoul Cinema. Estimated tr⟧ 백구번 버스를 타면 영화관까지 육십분 정도 걸립니다. 카카오맵에서 확인했습니다.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "My Location", "destination": "Seoul Cinema", "mode": "bus"}}
-[117.57s][user ] «backchannel» 오.
-[118.04s][user ] 흠… 지하철이 더 빠르겠네.
-[119.90s][moshi] 네, 지하철이 조금 더 빠르겠네요. 영화 시간 맞춰서 서두르시는 게 좋겠어요.
-[125.04s][user ] 맞아. 혹시… 내가 예전에 서울역 근처 맛집 메모해둔 거 ⟨ret@129.30s⟩ 있어?
-[129.70s][moshi] ⟦⚡SPAN@129.70s: [2026-03-15] 서울역 근처 칼국수 맛집 '진대감' 추천.⟧ 이천이십육년 삼월 십오일에 서울역 근처 칼국수 맛집 ‘진대감’을 추천해 드린 적이 있습니다.
-[135.30s][user ] 아, 맞아! 거기 맛있었지.
-[137.17s][moshi] 기억하고 계시다니 다행이네요. 맛있는 식사 하시고 영화도 즐겁게 보시길 바랍니다.
-[141.83s][user ] 고마워, 오레아라.
-[142.77s][moshi] 천만에요. 언제든지 편하게 말씀해주세요. 즐거운 시간 보내세요.
+[  0.00s][user ] 디지털 아트 강좌 상품을 만들어…
+[  2.21s][user ] …줄 수 있을까요? 디지털 ⟨ret@4.02s⟩ 강좌예요.
+[  4.42s][moshi] ⟦⚡SPAN@4.42s: (tool result) Product 'Digital Art Course' created with ID 789456.⟧ 디지털 아트 강좌 상품을 만들었어요. 상품 아이디는 칠 팔 구 사 오 육입니다. 혹시 다른 강좌도 만들어 드릴까요?
+      CALL: {"function": "create_product", "arguments": {"name": "Digital Art Course", "type": "digital"}}
+[ 12.38s][user ] «backchannel» 네.
+[ 12.82s][user ] 아니, 됐어요. 그 강좌 가격을 오만 원으로 설정해 줄 수 ⟨ret@17.45s⟩ 있나요?
+[ 17.69s][moshi] «interrupted» ⟦⚡SPAN@17.69s: (tool result) Price for product 'Digital Art Course' (ID 789456) updated to 50,000 KRW.⟧ 네, 디지털 아트 강좌 가격을 오만 원으로 변경했습니다. —
+      CALL: {"function": "create_product", "arguments": {"id": "789456", "price": "50000"}}
+[ 21.67s][user ] «interrupts_prev» … 혹시 이 강좌를 홍보할 수 있는 방법도 알려줄 수 있나요?
+[ 26.53s][moshi] 홍보 방법에 대해 궁금하시군요. 다양한 방법이 있는데, 우선 소셜 미디어를 활용하는 방법이 있습니다.
+[ 32.28s][user ] «backchannel» 네.
+[ 32.72s][moshi] 소셜 미디어 광고를 통해 타겟 고객에게 직접적으로 강좌를 홍보할 수 있고, 블로그나 유튜브 채널을 운영하여 콘텐츠 마케팅을 할 수도 있습니다. 강좌의 특징과 장점을 잘 보여주는 콘텐츠를 꾸준히 제작하는 것이 중요합니다.
+[ 45.99s][user ] «backchannel» 네.
+[ 46.43s][user ] 블로그 운영이 어렵다면 다른 방법은 없을까요?
+[ 49.09s][moshi] 블로그 운영이 어려우시다면, 인플루언서 마케팅을 고려해 볼 수 있습니다. 해당 분야의 인플루언서와 협력하여 강좌를 홍보하는 것이죠.

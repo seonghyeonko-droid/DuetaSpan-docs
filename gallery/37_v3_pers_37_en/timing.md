@@ -4,94 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Riley",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-05-12",
+#       "category": "home",
+#       "text": "User's home address is 587 Elm Street."
 #     },
 #     {
-#       "date": "2026-03-31",
+#       "date": "2025-09-23",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-03-24",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-10",
+#       "date": "2025-08-13",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-29",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-06",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-30",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-26",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh… Froraus. That’s… an unusual na | S2 Welll… um, it doesn't feel meaning | S3 They’re supportive, but worried ab | S4 That’s a good question. I think… I
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi Zella. That's… a lot. I was | S2 I think… it started after my grand | S3 Yeah, exactly. It’s like… one minu | S4 Like what? I don’t even know where
 
-     0.00s  agent 발화 시작: Bonjour, Riley. I’m Froraus, and I’m here to gently guide yo
-     5.70s  user  발화 시작: Yeah, yeah.
-     5.70s  agent 발화 끝
-     6.46s  user  발화 시작: Oh… Froraus. That’s… an unusual name. What exactly does a “g
-     6.46s  user  발화 끝
-    11.02s  agent 발화 시작: I offer a space to explore what’s on your mind, Riley, espec
-    11.02s  user  발화 끝
-    20.14s  user  발화 시작: Change is exactly what I'm facing. I’m thinking of leaving m
-    20.14s  agent 발화 끝
-    25.84s  agent 발화 시작: It’s very common to feel pulled between security and the des
-    25.84s  user  발화 끝
-    34.21s  user  발화 시작: Welll… um, it doesn't feel meaningful anymore. I used to lov
-    34.21s  agent 발화 끝
-    41.05s  agent 발화 시작: That sense of emptiness is a powerful signal, Riley. It sugg
-    41.05s  user  발화 끝
-    47.13s  user  발화 시작: …Is it okay if I talk about my partner? It feels connected t
-    47.13s  agent 발화 끝
-    52.83s  agent 발화 시작: Relationships often play a significant role in our career ch
-    52.83s  user  발화 끝
-    61.19s  user  발화 시작: Mm-hmm.
-    61.19s  agent 발화 끝
-    61.57s  user  발화 시작: They’re supportive, but worried about the financial side. We
-    61.57s  user  발화 끝
-    67.65s  agent 발화 시작: It’s understandable that finances are a concern. It shows re
-    67.65s  user  발화 끝
-    76.01s  user  발화 시작: Uh-huh.
-    76.01s  agent 발화 끝
-    76.39s  user  발화 시작: A little. I’ve looked at savings, but it’s not enough to las
-    76.39s  user  발화 끝
-    82.85s  agent 발화 시작: Fear is a natural response to uncertainty, Riley. It’s a sig
-    82.85s  user  발화 끝
-    93.12s  user  발화 시작: Yeah, yeah.
-    93.12s  agent 발화 끝
-    93.88s  user  발화 시작: That’s a good question. I think… I’ve always equated enough 
-    93.88s  user  발화 끝
-   100.34s  agent 발화 시작: Often, we internalize societal expectations about success an
-   100.34s  user  발화 끝
-   107.56s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Zoe, it’s lovely to connect with you. My name is Zella
+     9.68s  user  발화 시작: Oh, hi Zella. That's… a lot. I wasn't expecting a coach, exa
+     9.68s  agent 발화 끝
+    16.14s  agent 발화 시작: It’s understandable to feel lost when life shifts unexpected
+    16.14s  user  발화 끝
+    23.31s  user  발화 시작: Uh-huh.
+    23.31s  agent 발화 끝
+    23.67s  user  발화 시작: Um, well, everything feels… pointless. I used to love my job
+    23.67s  user  발화 끝
+    31.20s  agent 발화 시작: That sense of meaning fading can be really disheartening. Ha
+    31.20s  user  발화 끝
+    38.38s  user  발화 시작: Yeah, yeah.
+    38.38s  agent 발화 끝
+    39.09s  user  발화 시작: I think… it started after my grandmother passed away last mo
+    39.09s  user  발화 끝
+    44.47s  agent 발화 시작: I’m so sorry for your loss, Zoe. Grief can colour everything
+    44.47s  user  발화 끝
+    51.65s  user  발화 시작: Uh-huh.
+    51.65s  agent 발화 끝
+    52.00s  user  발화 시작: It just feels like it shouldn’t be this hard, you know? Ever
+    52.00s  user  발화 끝
+    57.74s  agent 발화 시작: It’s alright to feel that time isn't a simple fix, Zoe. Grie
+    57.74s  user  발화 끝
+    64.91s  user  발화 시작: Yeah, totally.
+    64.91s  agent 발화 끝
+    65.63s  user  발화 시작: Yeah, exactly. It’s like… one minute I’m okay, and the next 
+    65.63s  user  발화 끝
+    70.65s  agent 발화 시작: Those waves are completely normal, and it’s brave of you to 
+    70.65s  user  발화 끝
+    81.41s  user  발화 시작: Uh-huh.
+    81.41s  agent 발화 끝
+    81.77s  user  발화 시작: I’ve been trying to distract myself, mostly. Work, seeing fr
+    81.77s  user  발화 끝
+    88.23s  agent 발화 시작: Distraction can be helpful in small doses, but it doesn’t ad
+    88.23s  user  발화 끝
+    97.19s  user  발화 시작: Yeah, totally.
+    97.19s  agent 발화 끝
+    97.91s  user  발화 시작: Like what? I don’t even know where to begin. I feel so silly
+    97.91s  user  발화 끝
+   103.65s  agent 발화 시작: It’s not silly at all, Zoe. Talking is a beautiful first ste
+   103.65s  user  발화 끝
+   113.69s  user  발화 시작: Yeah.
+   113.69s  agent 발화 끝
+   114.05s  user  발화 시작: That sounds… intense. Maybe just the talking for now?
+   114.05s  user  발화 끝
+   117.28s  agent 발화 시작: We can take things at your pace, Zoe. Just sharing your feel
+   117.28s  user  발화 끝
+   123.73s  agent 발화 끝

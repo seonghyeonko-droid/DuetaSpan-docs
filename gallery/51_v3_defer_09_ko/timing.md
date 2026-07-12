@@ -4,82 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "서경",
+#     "name": "예슬",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-05-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-11-05",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-12",
+#       "date": "2026-04-24",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-08-27",
+#       "date": "2026-03-09",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-10",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-09-02",
 #       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-30",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 덕덕고로 이동해서 십초 정도 로딩 시간을 줘. | S2 지금 날씨 어때? | S3 이번 주 토요일에 비 올 가능성 있어? | S4 …혹시 일요일은 어때?
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 뉴욕 근처에서 괜찮은 호텔 좀 찾아줘. | S2 오, 괜찮은데. 혹시 그 호텔 주변에 맛있는 식당도 알아봐 줄 | S3 … 혹시 그 호텔에서… | S4 아니, 지금은 괜찮아. 고마워.
 
-     0.00s  user  발화 시작: 덕덕고로 이동해서 십초 정도 로딩 시간을 줘.
-     3.11s  <ret> 발화 (turn1 첫 프레임)
-     3.27s  agent 발화 시작: <ret> 네, 덕덕고로 이동했고, 페이지는 팔 점 이초 만에 완전히 로딩되었습니다. 아주 빠르네요.
-     3.27s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.61s]: (tool result) Navigation to https://duckduckgo.com successful. Page lo
-     3.27s  user  발화 끝
-     8.88s  user  발화 시작: 정말요?
-     8.88s  agent 발화 끝
-     9.35s  user  발화 시작: 지금 날씨 어때?
-     9.35s  user  발화 끝
-    10.43s  <ret> 발화 (turn4 첫 프레임)
-    10.75s  agent 발화 시작: <ret> 현재 기온은 이십육 점 칠도이고, 습도는 육십팔퍼센트, 바람은 시속 사 점 일킬로미터로 맑은 하늘
-    10.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.42s]: (tool result) Current conditions: 26.7°C, humidity 68%, wind 4.1 km/h,
-    10.75s  user  발화 끝
-    19.17s  user  발화 시작: 이번 주 토요일에 비 올 가능성 있어?
-    19.17s  agent 발화 끝
-    22.04s  <ret> 발화 (turn6 첫 프레임)
-    22.44s  agent 발화 시작: <ret> 토요일, 칠월 십일일은 십팔 점 삼도이고 습도는 팔십오퍼센트, 바람은 시속 십일 점 이킬로미터로 
-    22.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.55s]: (tool result) Saturday, July 11, 2026: Forecast is 18.3°C, 85% humidit
-    22.44s  user  발화 끝
-    28.99s  user  발화 시작: …혹시 일요일은 어때?
-    28.99s  agent 발화 끝
-    30.39s  agent 발화 시작: 일요일은 이십 점 일도, 습도는 칠십퍼센트, 바람은 시속 칠 점 팔킬로미터로 대체로 맑을 것으로 예상됩니다.
-    30.39s  user  발화 끝
-    37.40s  agent 발화 시작: 주말 계획 세우시는 데 도움이 되었으면 좋겠네요. 저는 건강한 습관을 만드는 것도 도와드릴 수 있어요.
-    37.40s  agent 발화 끝
-    44.42s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 뉴욕 근처에서 괜찮은 호텔 좀 찾아줘.
+     4.33s  agent 발화 시작: 어떤 종류의 호텔을 선호하시나요?
+     4.33s  user  발화 끝
+     6.26s  user  발화 시작: 음… 너무 비싸지 않고, 수영장이 있으면 좋겠어.
+     6.26s  agent 발화 끝
+     9.55s  <ret> 발화 (turn3 첫 프레임)
+     9.63s  agent 발화 시작: <ret> 뉴욕에 있는 제인 호텔은 일박에 이백오십달러이고, 수영장과 무료 와이파이, 레스토랑이 있습니다.
+     9.63s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.30s]: (tool result) {"hotel name": "The Jane Hotel", "address": "113 Jane St
+     9.63s  user  발화 끝
+    14.93s  user  발화 시작: 응.
+    14.93s  agent 발화 끝
+    15.41s  user  발화 시작: 오, 괜찮은데. 혹시 그 호텔 주변에 맛있는 식당도 알아봐 줄 수 있어?
+    15.41s  user  발화 끝
+    21.03s  <ret> 발화 (turn6 첫 프레임)
+    21.19s  agent 발화 시작: <ret> 제인 호텔 근처에 미네타 태번이라는 미국식 레스토랑이 있는데, 평점이 사 점 오점이고 가격대는 조
+    21.19s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.70s]: (tool result) {"restaurant name": "Minetta Tavern", "cuisine": "Americ
+    21.19s  user  발화 끝
+    28.89s  user  발화 시작: 대박.
+    28.89s  agent 발화 끝
+    29.37s  user  발화 시작: 아, 미네타 태번? 거기 되게 유명한 곳이잖아. —
+    29.37s  user  발화 끝
+    33.22s  user  발화 시작: … 혹시 그 호텔에서…
+    33.22s  user  발화 끝
+    35.15s  user  발화 시작: …센트럴 파크까지 얼마나 걸려?
+    35.15s  user  발화 끝
+    37.08s  agent 발화 시작: 센트럴 파크까지는 약 삼십분 정도 걸립니다.
+    37.08s  user  발화 끝
+    39.80s  <ret> 발화 (turn12 첫 프레임)
+    39.96s  agent 발화 시작: <ret> 교통 상황에 따라 조금 더 걸릴 수도 있습니다. 거리는 오 점 이마일이고, 예상 소요 시간은 삼십
+    39.96s  agent 발화 끝
+    40.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.85s]: {"distance": "5.2 miles", "duration": "30 minutes"}
+    47.67s  user  발화 시작: 대박.
+    47.67s  agent 발화 끝
+    48.15s  agent 발화 시작: 여행 계획 세우는 데 도움이 되도록, 혹시 다른 필요한 정보가 있을까요?
+    48.15s  user  발화 끝
+    53.45s  user  발화 시작: 음.
+    53.45s  agent 발화 끝
+    53.93s  user  발화 시작: 아니, 지금은 괜찮아. 고마워.
+    53.93s  user  발화 끝
+    55.85s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해 주세요. 즐거운 여행 되세요!
+    55.85s  user  발화 끝
+    59.71s  agent 발화 끝

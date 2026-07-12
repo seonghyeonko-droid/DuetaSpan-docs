@@ -4,56 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Sky",
+#     "name": "Remy",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "early 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-05-22",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-02-22",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-04-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2026-04-12",
+#       "date": "2026-02-11",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-04-07",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2025-08-29",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-11-12",
+#       "date": "2025-08-12",
 #       "category": "home",
-#       "text": "User's home address is 248 Birch Road."
+#       "text": "User's home address is 273 Maple Drive."
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-11",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-05",
+#       "date": "2026-02-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,81 +66,51 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-06",
-#       "title": "Researching a used car",
+#       "date": "2025-08-04",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Larius… that's a bit different. Wh | S2 Hmm. What about when things come u | S3 The Henderson report. It’s due nex | S4 And then schedule time for each on
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi. Finances… that’s exactly w | S2 …But isn’t that really time-consum | S3 That makes sense. So, it's not abo | S4 Yeah, that sounds… good. Maybe we 
 
-     0.00s  agent 발화 시작: Hello Sky, welcome. I'm Larius.
-     2.23s  user  발화 시작: Larius… that's a bit different. What exactly *can* you do?
-     2.23s  agent 발화 끝
-     6.69s  agent 발화 시작: I assist with organization, planning, and staying on track w
-     6.69s  user  발화 끝
-    16.94s  user  발화 시작: Uh, welll… I’m just feeling really overwhelmed lately with w
-    16.94s  agent 발화 끝
-    21.40s  agent 발화 시작: It’s understandable to feel that way. Overwhelm often comes 
-    21.40s  user  발화 끝
-    32.54s  user  발화 시작: Deadlines, mostly. So many projects, all due around the same
-    32.54s  agent 발화 끝
-    37.44s  agent 발화 시작: That sounds stressful. Perhaps we could break down those pro
-    37.44s  user  발화 끝
-    44.13s  user  발화 시작: Yeah, yeah.
-    44.13s  agent 발화 끝
-    45.02s  user  발화 시작: I’ve tried that, but then I just feel like I have a lot of *
-    45.02s  user  발화 끝
-    52.15s  agent 발화 시작: It’s a common feeling, Sky. Sometimes, seeing everything lai
-    52.15s  user  발화 끝
-    59.73s  user  발화 시작: Yeah.
-    59.73s  agent 발화 끝
-    60.18s  agent 발화 시작: We could explore prioritizing tasks, focusing on what truly 
-    60.18s  user  발화 끝
-    70.43s  user  발화 시작: Hmm. What about when things come up unexpectedly?
-    70.43s  agent 발화 끝
-    73.99s  agent 발화 시작: Unexpected events are inevitable, aren't they? We can build 
-    73.99s  user  발화 끝
-    83.80s  user  발화 시작: That… actually sounds good. I always feel guilty taking brea
-    83.80s  agent 발화 끝
-    88.26s  agent 발화 시작: Taking breaks isn't a luxury, Sky; it's essential for mainta
-    88.26s  user  발화 끝
-    97.62s  user  발화 시작: Okay, you're right. Maybe I *do* need to rethink how I sched
-    97.62s  agent 발화 끝
-   103.41s  agent 발화 시작: It's a journey, not a race. Small, consistent adjustments ca
-   103.41s  user  발화 끝
-   113.66s  user  발화 시작: Yeah.
-   113.66s  agent 발화 끝
-   114.11s  user  발화 시작: The Henderson report. It’s due next Friday, and it’s huge.
-   114.11s  user  발화 끝
-   118.57s  agent 발화 시작: Let's tackle the Henderson report, due next Friday, July 17t
-   118.57s  user  발화 끝
-   127.93s  user  발화 시작: Yeah.
-   127.93s  agent 발화 끝
-   128.37s  user  발화 시작: July 17th? I thought it was earlier…
-   128.37s  user  발화 끝
-   131.49s  agent 발화 시작: You mentioned on July 10th that the Henderson report is due 
-   131.49s  user  발화 끝
-   138.18s  user  발화 시작: Right, sorry. So, how do we break it down?
-   138.18s  agent 발화 끝
-   142.19s  agent 발화 시작: We could divide it into sections – market research, competit
-   142.19s  user  발화 끝
-   151.11s  user  발화 시작: And then schedule time for each one?
-   151.11s  agent 발화 끝
-   154.23s  agent 발화 시작: Precisely. We can allocate specific blocks in your calendar,
-   154.23s  user  발화 끝
-   162.25s  user  발화 시작: Mhm.
-   162.25s  agent 발화 끝
-   162.70s  user  발화 시작: That sounds… manageable. Is that something you can help me w
-   162.70s  user  발화 끝
-   167.60s  agent 발화 시작: I've scheduled "Henderson Report - Market Research" for July
-   167.60s  user  발화 끝
-   176.96s  user  발화 시작: Wow, that was fast. Okay, that's a good start.
-   176.96s  agent 발화 끝
-   180.97s  agent 발화 시작: It is, Sky. Remember, it's about progress, not perfection. W
-   180.97s  user  발화 끝
-   186.77s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour, Remy. I'm Kara.
+     1.62s  user  발화 시작: Oh, hi. Finances… that’s exactly what I need help with, actu
+     1.62s  agent 발화 끝
+     8.52s  agent 발화 시작: It’s very common to feel that way, Remy. Many people find ma
+     8.52s  user  발화 끝
+    16.63s  user  발화 시작: Welll… I just don’t know where to start. I have several diff
+    16.63s  agent 발화 끝
+    25.96s  agent 발화 시작: That's a great place to begin—getting a clear picture of eve
+    25.96s  user  발화 끝
+    36.10s  user  발화 시작: Mm-hmm.
+    36.10s  agent 발화 끝
+    36.51s  agent 발화 시작: It can reveal a lot about where your money is going, and hel
+    36.51s  user  발화 끝
+    49.89s  user  발화 시작: …But isn’t that really time-consuming? I barely have time to
+    49.89s  agent 발화 끝
+    57.20s  agent 발화 시작: That’s a valid concern, Remy. It doesn’t have to be super de
+    57.20s  user  발화 끝
+    65.31s  user  발화 시작: Yeah.
+    65.31s  agent 발화 끝
+    65.71s  user  발화 시작: Okay, maybe. I guess I'm just worried about feeling restrict
+    65.71s  user  발화 끝
+    72.61s  agent 발화 시작: Budgeting isn’t about deprivation, it’s about making conscio
+    72.61s  user  발화 끝
+    79.51s  user  발화 시작: That makes sense. So, it's not about saying 'no' to everythi
+    79.51s  agent 발화 끝
+    87.62s  agent 발화 시작: Exactly! It's about intentionality. When you understand wher
+    87.62s  user  발화 끝
+    95.33s  user  발화 시작: Yeah.
+    95.33s  agent 발화 끝
+    95.73s  user  발화 시작: I think I need to figure out what those priorities *are* fir
+    95.73s  user  발화 끝
+   102.22s  agent 발화 시작: That’s perfectly okay, Remy. Self-reflection is a powerful t
+   102.22s  user  발화 끝
+   111.96s  user  발화 시작: Yeah, that sounds… good. Maybe we can start there.
+   111.96s  agent 발화 끝
+   115.61s  user  발화 끝

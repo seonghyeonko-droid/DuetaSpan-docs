@@ -1,75 +1,63 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Lox, a encouraging and non-judgmental supportive advisor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Brean, a gentle and reflective supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Maya",
+    "name": "Quinn",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-12-30",
-      "category": "home",
-      "text": "User's home address is 678 Maple Drive."
+      "date": "2026-03-25",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-12-03",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-07-12",
+      "date": "2026-01-20",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-05-31",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2025-11-25",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-06-29",
+      "category": "home",
+      "text": "User's home address is 278 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-04",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-08",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-02-25",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-15",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who is a Civil Rights leader that the CIA targeted?
-[  3.87s][moshi] That’s a really important question, and honestly, it’s not something widely known or documented. I haven’t been able to find any specific information about that.
-[ 13.56s][user ] Oh, um… that’s… surprising.
-[ 15.11s][moshi] It can be disheartening when history doesn't offer clear answers. Sometimes, the stories aren't fully told yet. It's okay to feel that.
-[ 23.64s][user ] I guess so. Maybe we could talk about something else?
-[ 27.51s][moshi] Perhaps we could explore a mindfulness exercise to help ground you in the present moment? It can be a helpful tool when facing difficult thoughts.
+[  0.00s][user ] Fighting outside Guam left how many militants dead? ⟨ret@3.55s⟩
+[  3.63s][moshi] ⟦⚡SPAN@3.63s: (no information found)⟧ I’ve checked, and unfortunately, there’s no reliable information available about that event right now. It’s a difficult situation when details are unclear.
+[ 13.60s][user ] Um, welll… that’s frustrating.
+[ 15.41s][moshi] It certainly is. Sometimes, news takes time to surface, or accurate reports are hard to come by. Perhaps we could look at something else?
+[ 26.28s][user ] «backchannel» Yeah.
+[ 26.74s][user ] Maybe. What’s the weather in Seoul today? ⟨ret@29.83s⟩
+[ 29.91s][moshi] ⟦⚡SPAN@29.91s: (tool result) Current conditions in Seoul are 26.0°C, humidity 70%, wind 4.0 km/h.⟧ The weather in Seoul is currently 26.0°C, with 70% humidity and a wind speed of 4.0 kilometers per hour. A warm day, it seems.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 40.79s][user ] Sounds nice. I think…
+[ 42.60s][user ] …I'll go for a walk.

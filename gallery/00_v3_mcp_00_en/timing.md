@@ -4,87 +4,120 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Thomas",
+#     "name": "Nathan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-25",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-03-23",
+#       "date": "2025-12-30",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2025-11-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-03",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-03",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-10-08",
-#       "category": "home",
-#       "text": "User's home address is 703 Birch Road."
+#       "date": "2025-09-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-28",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-16",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-24",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-23",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I need to book an appointment with | S2 …do you know if she takes my insur | S3 She's been complaining about a ras | S4 I'm hoping Ms. Sharma can figure o
 
-     0.00s  user  발화 시작: What location is at one hundred four point zero six six nine
-     7.77s  <ret> 발화 (turn1 첫 프레임)
-     8.01s  agent 발화 시작: <ret> That location is Chengdu, in Sichuan province, China. 
-     8.01s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.12s]: (tool result) {"address": "Chengdu, Sichuan, China"}
-     8.01s  user  발화 끝
-    13.13s  user  발화 시작: Uh, could you find hotels there for next week?
-    13.13s  agent 발화 끝
-    15.61s  <ret> 발화 (turn3 첫 프레임)
-    16.01s  agent 발화 시작: <ret> I found two options: the Jinjiang Inn for two hundred 
-    16.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.93s]: (tool result) [{"name": "Jinjiang Inn Chengdu Chunxi Road", "price": "
-    16.01s  user  발화 끝
-    25.94s  user  발화 시작: [sigh] The Holiday Inn sounds nice.
-    25.94s  agent 발화 끝
-    27.86s  agent 발화 시작: It does seem like a comfortable choice. I’m glad we found so
-    27.86s  user  발화 끝
-    36.83s  agent 발화 끝
+     0.00s  user  발화 시작: I need to book an appointment with Ms. Anya Sharma for Febru
+     6.17s  <ret> 발화 (turn1 첫 프레임)
+     6.41s  agent 발화 시작: <ret> I’ve booked your appointment with Ms. Sharma for Febru
+     6.41s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.41s]: (tool result) Appointment with Anya Sharma confirmed for February 29, 
+     6.41s  user  발화 끝
+    12.82s  user  발화 시작: Yeah, totally.
+    12.82s  agent 발화 끝
+    13.53s  user  발화 시작: That's great, thank you. Is she a dermatologist?
+    13.53s  user  발화 끝
+    15.98s  <ret> 발화 (turn4 첫 프레임)
+    16.38s  agent 발화 시작: <ret> Yes, Ms. Sharma is a board-certified dermatologist spe
+    16.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.12s]: Anya Sharma is a board-certified dermatologist specializing in pediatr
+    16.38s  user  발화 끝
+    23.50s  user  발화 시작: Yeah, yeah.
+    23.50s  agent 발화 끝
+    24.21s  user  발화 시작: Oh, good. Um, I've been having some trouble with…
+    24.21s  user  발화 끝
+    27.42s  agent 발화 시작: It’s understandable to feel anxious about skin concerns—many
+    27.42s  user  발화 끝
+    31.69s  user  발화 시작: …do you know if she takes my insurance, Blue Cross Blue Shie
+    31.69s  agent 발화 끝
+    35.80s  <ret> 발화 (turn9 첫 프레임)
+    35.96s  agent 발화 시작: <ret> Yes, Ms. Sharma is in-network with Blue Cross Blue Shi
+    35.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Anya Sharma is in-network with Blue Cross Blue Shield PP
+    35.96s  user  발화 끝
+    42.73s  user  발화 시작: Yeah.
+    42.73s  agent 발화 끝
+    43.08s  agent 발화 시작: I'm glad I could confirm that for you; navigating insurance 
+    43.08s  user  발화 끝
+    50.56s  user  발화 시작: Actually, my daughter is the one with the issue. She's ten y
+    50.56s  agent 발화 끝
+    55.19s  agent 발화 시작: Ah, that’s helpful to know. Pediatric dermatology is Ms. Sha
+    55.19s  user  발화 끝
+    61.60s  user  발화 시작: She's been complaining about a rash on her arms for a few we
+    61.60s  agent 발화 끝
+    66.58s  agent 발화 시작: Rashes can be caused by many things, from allergies to simpl
+    66.58s  user  발화 끝
+    72.99s  user  발화 시작: It’s really itchy…
+    72.99s  agent 발화 끝
+    74.06s  user  발화 시작: …and it seems to be spreading.
+    74.06s  user  발화 끝
+    76.20s  agent 발화 시작: Itchy rashes that spread can be quite distressing for a chil
+    76.20s  user  발화 끝
+    82.61s  user  발화 시작: Yeah.
+    82.61s  agent 발화 끝
+    82.96s  user  발화 시작: I'm hoping Ms. Sharma can figure out what it is.
+    82.96s  user  발화 끝
+    86.52s  agent 발화 시작: I'm confident Ms. Sharma will provide a thorough evaluation 
+    86.52s  user  발화 끝
+    93.29s  user  발화 시작: Could you remind me of the address for her office?
+    93.29s  agent 발화 끝
+    96.77s  <ret> 발화 (turn23 첫 프레임)
+    96.85s  agent 발화 시작: <ret> Her office is at 789 Oak Street, Suite 200, Anytown, C
+    96.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.27s]: Anya Sharma's office is located at 789 Oak Street, Suite 200, Anytown,
+    96.85s  user  발화 끝
+   101.12s  agent 발화 끝

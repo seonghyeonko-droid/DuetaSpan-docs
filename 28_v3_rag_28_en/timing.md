@@ -4,107 +4,145 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Ella",
+#     "name": "Paul",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-06-16",
+#       "date": "2026-02-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-05-30",
+#       "date": "2025-10-14",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-05-18",
+#       "date": "2025-09-20",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-07-19",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2025-09-14",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-06-30",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-14",
+#       "date": "2026-01-21",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Tae, do you have any advice fo | S2 That makes sense. But what if they | S3 …Do you think a points system woul | S4 Okay, logical consequences. That’s
+# EXAMINER(FDB-v2) 단계: S1 Hi Frael, I’m trying to remember w | S2 Okay, but did she open studios in  | S3 I remember some legal trouble. | S4 Wow, that's serious. What about th
 
-     0.00s  user  발화 시작: Hey Tae, do you have any advice for dealing with a teenager 
-     6.25s  agent 발화 시작: Oh, that’s a really common challenge! It's about finding the
-     6.25s  user  발화 끝
-    12.87s  user  발화 시작: Yeah.
-    12.87s  agent 발화 끝
-    13.23s  user  발화 시작: Easier said than done, honestly. It feels like I’m constantl
-    13.23s  user  발화 끝
-    17.28s  agent 발화 시작: I understand that feeling completely—it can be draining. Let
-    17.28s  user  발화 끝
-    23.89s  user  발화 시작: Uh-huh.
-    23.89s  agent 발화 끝
-    24.26s  user  발화 시작: Okay, good. What's the best way to even *start* that convers
-    24.26s  user  발화 끝
-    28.06s  <ret> 발화 (turn7 첫 프레임)
-    28.30s  agent 발화 시작: <ret> It’s best to start by acknowledging your teen's feelin
-    28.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: Experts suggest beginning by acknowledging your teen’s feelings and av
-    28.30s  user  발화 끝
-    34.19s  user  발화 시작: That makes sense. But what if they just shut down and won't 
-    34.19s  agent 발화 끝
-    38.96s  agent 발화 시작: Sometimes, teens need a little space before they’re ready to
-    38.96s  user  발화 끝
-    44.11s  user  발화 시작: Yeah, totally.
-    44.11s  agent 발화 끝
-    44.85s  user  발화 시작: Right… it's just frustrating. What about rewards? Do those w
-    44.85s  user  발화 끝
-    48.52s  agent 발화 시작: Rewards can be helpful, but they need to be approached caref
-    48.52s  user  발화 끝
-    52.56s  user  발화 시작: …Do you think a points system would be too childish for a fi
-    52.56s  agent 발화 끝
-    57.26s  <ret> 발화 (turn14 첫 프레임)
-    57.34s  agent 발화 시작: <ret> The American Psychological Association found positive 
-    57.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.78s]: A study by the American Psychological Association found that positive 
-    57.34s  user  발화 끝
-    62.12s  user  발화 시작: Yeah, totally.
-    62.12s  agent 발화 끝
-    62.86s  user  발화 시작: Interesting. So, focus on the positive… what about consequen
-    62.86s  user  발화 끝
-    67.64s  agent 발화 시작: Consequences are important, but they should be logical and r
-    67.64s  user  발화 끝
-    73.52s  user  발화 시작: Okay, logical consequences. That’s…
-    73.52s  agent 발화 끝
-    74.99s  user  발화 시작: …good to remember. Thanks, Tae.
-    74.99s  user  발화 끝
-    76.83s  agent 발화 시작: You’re very welcome. Remember, consistency is key, and be pa
-    76.83s  user  발화 끝
-    82.34s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Frael, I’m trying to remember where Abby Lee Dance Compan
+     4.88s  agent 발화 시작: It's wonderful you're reflecting on those memories! Sometime
+     4.88s  user  발화 끝
+     9.76s  user  발화 시작: That's nice, but I just want to know the city and state.
+     9.76s  agent 발화 끝
+    13.54s  <ret> 발화 (turn3 첫 프레임)
+    13.94s  agent 발화 시작: <ret> The original Abby Lee Dance Company was located in Pit
+    13.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: The original Abby Lee Dance Company was located in Pittsburgh, Pennsyl
+    13.94s  user  발화 끝
+    19.16s  user  발화 시작: Yeah, totally.
+    19.16s  agent 발화 끝
+    19.86s  user  발화 시작: Hmm, I thought it was somewhere else. Did she have other stu
+    19.86s  user  발화 끝
+    24.74s  agent 발화 시작: It’s very common for our perceptions of the past to shift a 
+    24.74s  user  발화 끝
+    32.06s  user  발화 시작: Okay, but did she open studios in other places?
+    32.06s  agent 발화 끝
+    34.79s  <ret> 발화 (turn8 첫 프레임)
+    35.19s  agent 발화 시작: <ret> She did open a second studio in Los Angeles, Californi
+    35.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Abby Lee Miller opened a second studio in Los Angeles, California, in 
+    35.19s  user  발화 끝
+    41.12s  user  발화 시작: Yeah.
+    41.12s  agent 발화 끝
+    41.47s  user  발화 시작: Did that LA studio have the same kind of reputation?
+    41.47s  user  발화 끝
+    44.95s  agent 발화 시작: How spaces shape experiences. It shows you're thinking about
+    44.95s  user  발화 끝
+    48.43s  user  발화 시작: I mean, was it as…intense as the Pittsburgh one?
+    48.43s  agent 발화 끝
+    51.33s  <ret> 발화 (turn13 첫 프레임)
+    51.57s  agent 발화 시작: <ret> The Los Angeles studio received similar criticism for 
+    51.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.58s]: The Los Angeles studio of Abby Lee Dance Company received similar crit
+    51.57s  user  발화 끝
+    57.15s  user  발화 시작: I remember some legal trouble.
+    57.15s  agent 발화 끝
+    58.89s  agent 발화 시작: That's a natural part of processing experiences, acknowledgi
+    58.89s  user  발화 끝
+    63.77s  user  발화 시작: …wasn't she in trouble with the law about something related 
+    63.77s  agent 발화 끝
+    67.90s  <ret> 발화 (turn17 첫 프레임)
+    68.30s  agent 발화 시작: <ret> She was indicted on charges of bankruptcy fraud in two
+    68.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Abby Lee Miller was indicted on charges of bankruptcy fraud in 2015, r
+    68.30s  user  발화 끝
+    74.22s  user  발화 시작: Oh right, fraud. What happened with that?
+    74.22s  agent 발화 끝
+    76.26s  <ret> 발화 (turn19 첫 프레임)
+    76.66s  agent 발화 시작: <ret> She pleaded guilty in two thousand sixteen and was sen
+    76.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: Abby Lee Miller pleaded guilty to bankruptcy fraud in 2016 and was sen
+    76.66s  user  발화 끝
+    84.67s  user  발화 시작: Mm-hmm.
+    84.67s  agent 발화 끝
+    85.02s  user  발화 시작: Wow, that's serious. What about the dancers from the origina
+    85.02s  user  발화 끝
+    89.20s  agent 발화 시작: It's good to consider the impact on everyone involved. Somet
+    89.20s  user  발화 끝
+    95.82s  user  발화 시작: Do you know what some of them are doing now?
+    95.82s  agent 발화 끝
+    99.31s  agent 발화 시작: I am here to help you reflect on your social connections and
+    99.31s  user  발화 끝
+   107.67s  user  발화 시작: Okay.
+   107.67s  agent 발화 끝
+   108.02s  user  발화 시작: That’s disappointing. Can you at least tell me the current w
+   108.02s  user  발화 끝
+   112.23s  <ret> 발화 (turn27 첫 프레임)
+   112.55s  agent 발화 시작: <ret> Currently in Pittsburgh, Pennsylvania, it is seventy-f
+   112.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) Current conditions in Pittsburgh, PA are 75.0°F, humidit
+   112.55s  user  발화 끝
+   121.96s  agent 발화 끝

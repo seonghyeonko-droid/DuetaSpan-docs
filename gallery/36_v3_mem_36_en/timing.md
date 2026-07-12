@@ -4,103 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Noa",
+#     "name": "Ivy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
+#       "date": "2026-04-01",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-11-19",
-#       "category": "home",
-#       "text": "User's home address is 230 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-07-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2025-07-08",
+#       "date": "2026-03-29",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-06-21",
+#       "date": "2025-12-01",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-10-27",
+#       "category": "home",
+#       "text": "User's home address is 918 Birch Road."
+#     },
+#     {
+#       "date": "2025-05-31",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-05-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-02-16",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, well, I was hoping you could h | S2 That's right! And I was also looki | S3 …actually, do you think a hybrid i | S4 That sounds good. I’m also allergi
+# EXAMINER(FDB-v2) 단계: S1 Um, hi Velix. I was just thinking  | S2 I was also looking at cars, actual | S3 Yes! That’s right. Do you think yo | S4 Oh, that's good to know. Thanks.
 
-     0.00s  agent 발화 시작: Hi Noa, I'm Kloraen. It’s lovely to meet you.
-     3.32s  user  발화 시작: Yeah.
-     3.32s  agent 발화 끝
-     3.69s  user  발화 시작: Um, well, I was hoping you could help me remember something.
-     3.69s  user  발화 끝
-     7.51s  <ret> 발화 (turn3 첫 프레임)
-     7.75s  agent 발화 시작: <ret> You are planning a trip to Switzerland in March, accor
-     7.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.80s]: [2025-07-23] User is planning a trip to Switzerland in March.
-     7.75s  user  발화 끝
-    12.54s  user  발화 시작: Yeah.
-    12.54s  agent 발화 끝
-    12.91s  user  발화 시작: That's right! And I was also looking at cars, wasn't I?
-    12.91s  user  발화 끝
-    16.57s  <ret> 발화 (turn6 첫 프레임)
-    16.97s  agent 발화 시작: <ret> You were researching used cars, specifically hybrid mo
-    16.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.80s]: [2026-06-05] Past chat — Researching a used car: comparing hybrid mode
-    16.97s  user  발화 끝
-    21.76s  user  발화 시작: …actually, do you think a hybrid is the right choice for cit
-    21.76s  agent 발화 끝
-    26.56s  agent 발화 시작: Hybrids are often fantastic for city driving, offering bette
-    26.56s  user  발화 끝
-    30.61s  user  발화 시작: Yeah.
-    30.61s  agent 발화 끝
-    30.98s  agent 발화 시작: …because of the electric motor assisting at lower speeds. It
-    30.98s  user  발화 끝
-    39.47s  user  발화 시작: Yeah.
-    39.47s  agent 발화 끝
-    39.84s  user  발화 시작: That sounds good. I’m also allergic to something, right?
-    39.84s  user  발화 끝
-    43.00s  <ret> 발화 (turn13 첫 프레임)
-    43.16s  agent 발화 시작: <ret> Yes, my notes indicate you are allergic to pollen. Per
-    43.16s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.85s]: [2025-06-21] User is allergic to pollen.
-    43.16s  user  발화 끝
-    52.01s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ivy, I'm Velix. It's lovely to connect with you today.
+     4.38s  user  발화 시작: Um, hi Velix. I was just thinking about that trip I took las
+     4.38s  agent 발화 끝
+     9.72s  <ret> 발화 (turn2 첫 프레임)
+     9.96s  agent 발화 시작: <ret> I have a note from May sixth about your gym preference
+     9.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: [2026-05-06] Past chat — Comparing gym memberships: wants a pool; clos
+     9.96s  user  발화 끝
+    17.93s  user  발화 시작: Yeah, yeah.
+    17.93s  agent 발화 끝
+    18.72s  user  발화 시작: Oh, right! That's what I meant. And I think I mentioned I'm 
+    18.72s  user  발화 끝
+    24.30s  <ret> 발화 (turn5 첫 프레임)
+    24.70s  agent 발화 시작: <ret> You did, Ivy. My notes show you are vegetarian, record
+    24.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [2026-04-01] User is vegetarian.
+    24.70s  user  발화 끝
+    29.88s  user  발화 시작: Oh.
+    29.88s  agent 발화 끝
+    30.28s  agent 발화 시작: It's wonderful you prioritize your dietary needs when planni
+    30.28s  user  발화 끝
+    33.86s  user  발화 시작: I was also looking at cars, actually… a hybrid, I think.
+    33.86s  agent 발화 끝
+    37.93s  <ret> 발화 (turn9 첫 프레임)
+    38.25s  agent 발화 시작: <ret> I see you were researching a used hybrid car with unde
+    38.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: [2025-06-30] Past chat — Researching a used car: comparing hybrid mode
+    38.25s  user  발화 끝
+    45.02s  user  발화 시작: Yes! That’s right. Do you think you can find me some Thai re
+    45.02s  agent 발화 끝
+    50.44s  <ret> 발화 (turn11 첫 프레임)
+    50.60s  agent 발화 시작: <ret> I found three Thai restaurants in Berlin: Krung Thep, 
+    50.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Found 3 Thai restaurants in Berlin: Krung Thep (4.5 star
+    50.60s  user  발화 끝
+    56.57s  user  발화 시작: Yeah.
+    56.57s  agent 발화 끝
+    56.97s  user  발화 시작: Oh, that's good to know. Thanks.
+    56.97s  user  발화 끝
+    59.36s  agent 발화 시작: You're very welcome, Ivy.
+    59.36s  user  발화 끝
+    60.95s  agent 발화 끝

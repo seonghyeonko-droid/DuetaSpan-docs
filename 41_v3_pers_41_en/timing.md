@@ -4,79 +4,137 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Riley",
+#     "name": "Marcus",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-02-20",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-04-27",
+#       "date": "2025-08-24",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-02-13",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-08-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-07",
+#       "date": "2025-07-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-07-18",
 #       "category": "home",
-#       "text": "User's home address is 936 Birch Road."
+#       "text": "User's home address is 31 Elm Street."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
-#       "title": "Researching a used car",
+#       "date": "2026-05-30",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Is that… a traditional Korean name | S2 …But everyone else seems to have a | S3 It just feels like I'm doing somet | S4 That's… actually a really good poi
+# EXAMINER(FDB-v2) 단계: S1 Deliia… that’s a really unusual na | S2 The ocean, I think. I haven’t been | S3 Oh. That… actually sounds good. Ma | S4 Three and a half hours… not bad.
 
-     0.00s  agent 발화 시작: Guten Tag, Riley. I’m Zaes, and I help people explore and st
-     5.98s  user  발화 시작: Is that… a traditional Korean name? I'm feeling a bit lost, 
-     5.98s  agent 발화 끝
-    10.46s  agent 발화 시작: It is, yes. It means “wisdom” or “talent.” It sounds like yo
-    10.46s  user  발화 끝
-    18.30s  user  발화 시작: Well, I moved here six months ago, and I still don’t really 
-    18.30s  agent 발화 끝
-    23.91s  agent 발화 시작: Berlin can be a vibrant city, but finding your people takes 
-    23.91s  user  발화 끝
-    31.75s  user  발화 시작: …But everyone else seems to have already settled in so easil
-    31.75s  agent 발화 끝
-    35.86s  agent 발화 시작: That’s a common feeling, Riley. It's easy to compare our jou
-    35.86s  user  발화 끝
-    40.71s  user  발화 시작: It just feels like I'm doing something wrong. Like, am I not
-    40.71s  agent 발화 끝
-    47.06s  agent 발화 시작: Sometimes, the effort *feels* bigger than the results. What 
-    47.06s  user  발화 끝
-    54.16s  user  발화 시작: Um… I joined a few Meetup groups. Went to a language exchang
-    54.16s  agent 발화 끝
-    60.14s  agent 발화 시작: Superficial connections are a start, though. They can be ste
-    60.14s  user  발화 끝
-    70.59s  user  발화 시작: Yeah.
-    70.59s  agent 발화 끝
-    70.97s  user  발화 시작: That's… actually a really good point. I always feel like I n
-    70.97s  user  발화 끝
-    78.81s  agent 발화 시작: It’s tempting to try to fit in, isn’t it? But genuine connec
-    78.81s  user  발화 끝
-    87.78s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Marcus, it’s lovely to meet you. I’m Deliia, and I hel
+    10.89s  user  발화 시작: Right.
+    10.89s  agent 발화 끝
+    11.31s  user  발화 시작: Deliia… that’s a really unusual name. What exactly do you *d
+    11.31s  user  발화 끝
+    15.91s  agent 발화 시작: I assist with shaping time off, Marcus – thinking through wh
+    15.91s  user  발화 끝
+    25.13s  user  발화 시작: Restorative… uh, well, I’m just completely overwhelmed right
+    25.13s  agent 발화 끝
+    30.57s  agent 발화 시작: It sounds as though you’re carrying quite a weight, Marcus. 
+    30.57s  user  발화 끝
+    38.95s  user  발화 시작: Yeah.
+    38.95s  agent 발화 끝
+    39.37s  user  발화 시작: I need a break. A real one. Somewhere I can just… disconnect
+    39.37s  user  발화 끝
+    44.39s  agent 발화 시작: Disconnecting is vital. What does “disconnect” look like for
+    44.39s  user  발화 끝
+    51.51s  user  발화 시작: I don't know! Somewhere warm, I guess. Definitely warm. And 
+    51.51s  agent 발화 끝
+    56.96s  agent 발화 시작: Warmth and space… a wonderful starting point. Do you find yo
+    56.96s  user  발화 끝
+    64.50s  user  발화 시작: The ocean, I think. I haven’t been to the ocean in years.
+    64.50s  agent 발화 끝
+    69.52s  agent 발화 시작: The ocean has a remarkable way of calming the spirit. Have y
+    69.52s  user  발화 끝
+    76.22s  user  발화 시작: The Caribbean is… expensive, isn’t it? And probably full of 
+    76.22s  agent 발화 끝
+    80.83s  agent 발화 시작: It can be, yes. Perhaps we could explore some smaller island
+    80.83s  user  발화 끝
+    88.79s  user  발화 시작: Right.
+    88.79s  agent 발화 끝
+    89.21s  user  발화 시작: Shoulder seasons? What are those?
+    89.21s  user  발화 끝
+    91.30s  agent 발화 시작: Those are the sweet spots between busy and quiet, Marcus – A
+    91.30s  user  발화 끝
+   100.93s  user  발화 시작: Oh. That… actually sounds good. Maybe September.
+   100.93s  agent 발화 끝
+   103.86s  agent 발화 시작: September is beautiful. Are there any particular islands you
+   103.86s  user  발화 끝
+   109.31s  user  발화 시작: Mm-hmm.
+   109.31s  agent 발화 끝
+   109.73s  user  발화 시작: Hmm… I read something about Turks and Caicos once.
+   109.73s  user  발화 끝
+   113.50s  agent 발화 시작: Turks and Caicos is a lovely choice, Marcus, spanning 238 sq
+   113.50s  user  발화 끝
+   122.29s  user  발화 시작: Beaches sound perfect. But is it safe there?
+   122.29s  agent 발화 끝
+   125.64s  agent 발화 시작: The U.S. State Department currently advises normal precautio
+   125.64s  user  발화 끝
+   133.60s  user  발화 시작: That’s… reassuring. How far is it from New York?
+   133.60s  agent 발화 끝
+   137.37s  agent 발화 시작: From New York, it’s about 1,534 miles to Providenciales, Mar
+   137.37s  user  발화 끝
+   143.65s  user  발화 시작: Three and a half hours… not bad.
+   143.65s  agent 발화 끝
+   146.58s  agent 발화 시작: Not at all. It’s a manageable journey for a significant shif
+   146.58s  user  발화 끝
+   154.54s  user  발화 시작: Yeah.
+   154.54s  agent 발화 끝
+   154.96s  user  발화 시작: [happy] It really does. I think… I think it might.
+   154.96s  user  발화 끝
+   159.15s  agent 발화 시작: Wonderful. Perhaps we could explore some accommodations ther
+   159.15s  user  발화 끝
+   165.85s  user  발화 시작: Yeah, let’s do that. Somewhere small, quiet… a little bungal
+   165.85s  agent 발화 끝
+   170.45s  agent 발화 시작: A bungalow sounds idyllic. I can certainly look into options
+   170.45s  user  발화 끝
+   178.41s  agent 발화 끝

@@ -1,75 +1,75 @@
 v3_mcp_01_ko src=mcp style=v2
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 긍정적이고 지지적인 웰니스 코치 모미입니다. <system>
+SYSTEM: <system> 당신은 네온이며, 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 안정적인 조언자입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "준은",
+    "name": "시재",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2025-11-16",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-12-12",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-11-10",
+      "category": "home",
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
     },
     {
-      "date": "2025-11-24",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-11-07",
+      "date": "2025-07-14",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-28",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-03",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 보스턴에 있는 미술관 좀 찾아줄래? ⟨ret@2.36s⟩
-[  2.60s][moshi] ⟦⚡SPAN@2.60s: (tool result) Boston has several museums, including the Museum of Fine Arts, which houses over 450,000 works o⟧ 보스턴에는 미술관이 여러 곳 있는데, 미술관은 사십오만 점 이상의 작품을 소장하고 있고, 이사벨라 스튜어트 가드너 미술관은 예술과 정원으로 유명해요.
-      CALL: {"function": "map_search_places", "arguments": {"query": "museum", "location": "Boston"}}
-[ 12.48s][user ] 음, 가드너 미술관이 더 끌리는데, 거기는 어떻게 가? ⟨ret@16.40s⟩
-[ 16.64s][moshi] ⟦⚡SPAN@16.64s: (tool result) Directions to Isabella Stewart Gardner Museum, 25 Evans Way, Boston, MA 02115: 2.3 miles, approx⟧ 이사벨라 스튜어트 가드너 미술관까지는 삼 점 칠킬로미터, 자동차로 약 팔분, 대중교통으로는 삼십오분 정도 걸려요.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Isabella Stewart Gardner Museum, Boston"}}
-[ 23.91s][user ] 팔분이면 괜찮은데, 지금 당장 길 안내 시작해 줘.
-[ 28.07s][moshi] 지금 바로 길 안내를 시작할게요.
-[ 30.67s][user ] 잠깐만, 혹시 그 미술관에 한국어 오디오 가이드가 ⟨ret@34.51s⟩ 있어?
-[ 34.83s][moshi] 길 ⟦⚡SPAN@35.87s: The Isabella Stewart Gardner Museum offers audio guides in English, Spanish, French, German, Italian, Japanese⟧ 안내 전에 알아두면 좋을 것 같아요. 이사벨라 스튜어트 가드너 미술관에서는 영어, 스페인어, 프랑스어, 독일어, 이탈리아어, 일본어, 중국어 오디오 가이드를 제공하지만 한국어는 없어요.
-[ 46.79s][user ] 아, 그렇구나… —
-[ 48.35s][user ] …그럼, 혹시 근처에 한국 음식점은 ⟨ret@51.07s⟩ 있어?
-[ 51.47s][moshi] ⟦⚡SPAN@51.47s: (tool result) Nearby Korean restaurants include Han Il Kwan (0.8 miles, 4.6 stars) and Shabu-Zen Boston (1.2 m⟧ 근처 한국 음식점으로는 한일관이 일 점 삼킬로미터, 별점 사 점 육점이고, 샤부젠 보스턴이 일 점 구킬로미터, 별점 사 점 이점이에요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Isabella Stewart Gardner Museum, Boston", "cuisine": "Korean"}}
-[ 61.87s][user ] «backchannel» 어.
-[ 62.39s][moshi] 맛있는 식사 하실 수 있겠네요.
-[ 64.99s][user ] 한일관이 좀 더 가깝네, 거기 예약해 줄 수 있어? ⟨ret@69.58s⟩
-[ 69.66s][moshi] ⟦⚡SPAN@69.66s: (tool result) Reservation confirmed for 2 people at Han Il Kwan, Boston, on July 10, 2026 at 7:00 PM. Confirma⟧ 한일관 보스턴에 칠월 십일 저녁 일곱시에 두명 예약이 확정되었습니다. 확인 번호는 팔 이 구 엑스 큐입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Han Il Kwan", "location": "Boston", "party_size": "2", "time": "7:00 PM"}}
-[ 77.98s][user ] «backchannel» 진짜?
-[ 78.50s][user ] 고마워, 덕분에 오늘 계획 잘 세운 것 같아!
-[ 82.66s][moshi] 제가 도와드릴 수 있어서 기뻐요. 즐거운 시간 보내세요!
+[  0.00s][user ] 이번 주 토요일에 영화 보러 가고 싶은데, 혹시 괜찮은 거 있어?
+[  5.81s][moshi] 음, 아직 어떤 영화를 보고 싶으신지 말씀해 주시지 않으셨어요. 어떤 장르를 좋아하시나요?
+[ 12.14s][user ] 음… 액션 영화 보고 싶은데…
+[ 14.78s][user ] …최신 개봉작 중에서 찾아봐 줘. ⟨ret@17.18s⟩
+[ 17.42s][moshi] ⟦⚡SPAN@17.42s: (tool result) "Top Gun: Maverick (2022) - Action, Adventure, Drama. Showing at CGV Gangnam, Lotte Cinema World⟧ 최신 개봉작 중에서 액션 영화는 '탑건: 매버릭'이 있네요. 씨 지 브이 강남, 롯데시네마 월드, 메가박스 코엑스에서 상영 중이고, 티켓 가격은 만 삼천 원부터 시작합니다.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "action", "release_date": "this weekend"}}

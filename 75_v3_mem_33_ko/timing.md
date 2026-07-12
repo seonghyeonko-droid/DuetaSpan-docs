@@ -4,103 +4,139 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "민찬",
+#     "name": "유안",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-31",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-10-25",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-01",
+#       "date": "2026-04-23",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2025-08-08",
+#       "date": "2026-03-30",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-09",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-07",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-24",
+#       "date": "2026-06-25",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-30",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-13",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2026-05-14",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 크루온님. | S2 다음 주에 아이슬란드 여행을 가는데. | S3 … 혹시 아이슬란드에서 꼭 가봐야 할 곳 있을까요? | S4 블루라군은 가봤는데, 다른 곳도 추천해 주실 수 있나요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 테크스. 만나서 반가워요. | S2 페루 음식도 좋아해요. 그런데… | S3 호텔 Lisboa Plaza가 괜찮겠네요. | S4 좋아요. 벨라가 산책하기 좋겠네요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 민찬님. 저는 크루온이라고 해요. 스트레스 해소와 마음 챙김을 도와드리는 상담사입니다.
-     5.27s  user  발화 시작: 안녕하세요, 크루온님.
-     5.27s  agent 발화 끝
-     6.15s  <ret> 발화 (turn2 첫 프레임)
-     6.23s  agent 발화 시작: <ret> 지금 부산에서는 이천이십육년 칠월 십일 금요일 오후 두시 삼십팔분입니다.
-     6.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Asia/Busan rig
-     6.23s  user  발화 끝
-    10.54s  user  발화 시작: 예.
-    10.54s  agent 발화 끝
-    11.02s  user  발화 시작: 지금 저녁에 해가 몇 시쯤 지죠?
-    11.02s  user  발화 끝
-    13.66s  <ret> 발화 (turn5 첫 프레임)
-    13.90s  agent 발화 시작: <ret> 부산의 오늘 일몰 시간은 오후 일곱시 삼십이분입니다.
-    13.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: (tool result) Busan, South Korea: 28.7°C, humidity 68%, wind 7.2 km/h,
-    13.90s  user  발화 끝
-    17.25s  user  발화 시작: 네네.
-    17.25s  agent 발화 끝
-    17.73s  agent 발화 시작: 혹시 오늘 하루를 어떻게 보내실 계획이 있으신가요? 아니면 특별히 스트레스 받는 일이 있으신가요?
-    17.73s  user  발화 끝
-    23.96s  user  발화 시작: 다음 주에 아이슬란드 여행을 가는데.
-    23.96s  agent 발화 끝
-    26.19s  <ret> 발화 (turn9 첫 프레임)
-    26.35s  agent 발화 시작: <ret> 아이슬란드 여행 준비 때문에 걱정이 많으신 것 같네요— 아이슬란드 십이월 여행 계획을 세우고 계시
-    26.35s  user  발화 끝
-    28.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: [2025-10-01] User is planning a trip to Iceland in December.
-    33.06s  user  발화 시작: … 혹시 아이슬란드에서 꼭 가봐야 할 곳 있을까요?
-    33.06s  agent 발화 끝
-    36.90s  agent 발화 시작: 아이슬란드에는 정말 아름다운 곳이 많죠. 블루라군이나 골든 서클은 꼭 방문해보시길 추천드려요.
-    36.90s  user  발화 끝
-    42.17s  user  발화 시작: 네.
-    42.17s  agent 발화 끝
-    42.65s  user  발화 시작: 블루라군은 가봤는데, 다른 곳도 추천해 주실 수 있나요?
-    42.65s  user  발화 끝
-    46.48s  agent 발화 시작: 그럼, 혹시 오로라 관측에 관심 있으신가요? 십이월은 오로라를 보기 좋은 시기거든요.
-    46.48s  user  발화 끝
-    51.75s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 유안님! 저는 테크스예요. 서울에 정착하는 걸 도와드릴게요.
+     3.91s  user  발화 시작: 안녕하세요, 테크스. 만나서 반가워요.
+     3.91s  agent 발화 끝
+     5.79s  <ret> 발화 (turn2 첫 프레임)
+     5.87s  agent 발화 시작: <ret> 지금 서울은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분이에요.
+     5.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     5.87s  user  발화 끝
+    10.28s  user  발화 시작: 오.
+    10.28s  agent 발화 끝
+    10.76s  user  발화 시작: 아, 그렇군요. 리스본 여행 계획은 잘 되어 가요?
+    10.76s  user  발화 끝
+    14.44s  <ret> 발화 (turn5 첫 프레임)
+    14.68s  agent 발화 시작: <ret> 네, 시월에 리스본 여행을 계획하고 계시죠.
+    14.68s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.94s]: [2026-04-23] User is planning a trip to Lisbon in October.
+    14.68s  user  발화 끝
+    17.61s  user  발화 시작: 네, 맞아요. 혹시 리스본에서 추천하는 맛집이 있을까요?
+    17.61s  agent 발화 끝
+    20.80s  <ret> 발화 (turn7 첫 프레임)
+    21.04s  agent 발화 시작: <ret> Cervejaria Ramiro는 해산물 전문이고, Time Out Market Lisboa는 다
+    21.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.32s]: (tool result) Cervejaria Ramiro: Seafood, €20-€40; Time Out Market Lis
+    21.04s  user  발화 끝
+    29.36s  user  발화 시작: 네.
+    29.36s  agent 발화 끝
+    29.85s  agent 발화 시작: Time Out Market Lisboa는 여러 종류의 음식을 한 곳에서 즐길 수 있어서 편리할 거예요.
+    29.85s  user  발화 끝
+    36.70s  user  발화 시작: 네.
+    36.70s  agent 발화 끝
+    37.19s  user  발화 시작: 페루 음식도 좋아해요. 그런데…
+    37.19s  user  발화 끝
+    39.14s  agent 발화 시작: 페루 음식점 A Cevicheria는 삼십유로에서 오십유로 정도 —
+    39.14s  user  발화 끝
+    43.06s  user  발화 시작: …혹시 벨라를 데려갈 수 있는 호텔도 알아봐 주실 수 있나요?
+    43.06s  agent 발화 끝
+    47.87s  <ret> 발화 (turn14 첫 프레임)
+    47.95s  agent 발화 시작: <ret> 벨라는 시암 고양이시죠?
+    47.95s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.47s]: [2026-03-30] User has a Siamese cat named Bella.
+    47.95s  user  발화 끝
+    49.34s  <ret> 발화 (turn15 첫 프레임)
+    49.42s  agent 발화 시작: <ret> Hotel Lisboa Plaza는 일박에 백오십유로이고, The Independente Host
+    49.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) Hotel Lisboa Plaza: €150/night, pets allowed; The Indepe
+    49.42s  agent 발화 끝
+    56.27s  user  발화 시작: 그렇죠.
+    56.27s  agent 발화 끝
+    56.76s  user  발화 시작: 호텔 Lisboa Plaza가 괜찮겠네요.
+    56.76s  user  발화 끝
+    58.72s  agent 발화 시작: Hotel Lisboa Plaza는 반려동물 동반이 가능하고, 평점이 좋은 곳이에요.
+    58.72s  user  발화 끝
+    63.12s  user  발화 시작: 혹시 그 호텔 주변에 공원도 있나요?
+    63.12s  agent 발화 끝
+    65.74s  <ret> 발화 (turn20 첫 프레임)
+    66.06s  agent 발화 시작: <ret> Hotel Lisboa Plaza에서 일 점 오킬로미터 거리에 Eduardo 브이 아이 아이 공원
+    66.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Parque Eduardo VII is 1.5 km from Hotel Lisboa Plaza; Ja
+    66.06s  user  발화 끝
+    76.82s  user  발화 시작: 좋아요. 벨라가 산책하기 좋겠네요.
+    76.82s  agent 발화 끝
+    78.78s  agent 발화 시작: 벨라가 즐겁게 산책할 수 있을 거예요. 혹시 다른 필요한 정보가 있으신가요?
+    78.78s  user  발화 끝
+    84.16s  user  발화 시작: 아니요, 괜찮아요. 감사합니다, 테크스.
+    84.16s  agent 발화 끝
+    86.12s  agent 발화 시작: 도움이 되었다니 기쁘네요.
+    86.12s  user  발화 끝
+    87.59s  agent 발화 끝

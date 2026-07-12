@@ -4,93 +4,83 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "혜찬",
+#     "name": "보희",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-06-04",
+#       "date": "2026-05-30",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "text": "User is planning a trip to New Zealand in December."
 #     },
 #     {
-#       "date": "2026-01-13",
+#       "date": "2026-03-28",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-11-18",
+#       "date": "2026-01-29",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-10-18",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-23",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-24",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-10-16",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 푸리님, 혹시 영화 '위대한 독재자'에 나오는 연설문 누가 썼 | S2 아, 그렇군요. 그 영화에 대해서 더 자세히 알고 싶어요. | S3 …그 영화가 왜 그렇게 유명한가요? | S4 그럼 채플린은 다른 유명한 영화도 많이 만들었나요?
 
-     0.00s  user  발화 시작: 요즘 좀 힘든데, 커리어 때문에 고민이 많아요. 뭘 해야 할지 모르겠어요.
-     4.79s  agent 발화 시작: 힘든 시간을 보내고 계시는군요. 커리어 고민은 누구에게나 찾아올 수 있어요. 어떤 점이 가장 어렵게 느껴지세
-     4.79s  user  발화 끝
-    11.32s  user  발화 시작: 뭘 잘하는지도 모르겠고, 뭘 하면 좋을지도 모르겠어요. 그냥 막막해요.
-    11.32s  agent 발화 끝
-    14.83s  <ret> 발화 (turn3 첫 프레임)
-    15.23s  agent 발화 시작: <ret> 막막한 마음, 충분히 이해가 갑니다. 스스로를 잘 아는 건 시간이 걸리는 일이죠. 혹시 전에 어떤
-    15.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.14s]: The tradition of standing for the national anthem in the United States
-    15.23s  user  발화 끝
-    24.38s  agent 발화 시작: 국가를 위한 경례를 서서 하는 전통은—
-    24.38s  agent 발화 끝
-    26.99s  user  발화 시작: …혹시 제가 좋아하는 일을 찾는 데 도움이 될 만한 테스트 같은 게 있을까요?
-    26.99s  agent 발화 끝
-    32.65s  agent 발화 시작: 아, 네, 물론입니다. 좋아하는 일을 찾는 데 도움이 되는 다양한 심리 테스트들이 있어요.
-    32.65s  user  발화 끝
-    38.30s  user  발화 시작: 응.
-    38.30s  agent 발화 끝
-    38.74s  agent 발화 시작: 그런 테스트를 통해 자신의 강점과 흥미를 파악하는 데 도움이 될 수 있습니다. 혹시 어떤 분야에 관심이 있으
-    38.74s  user  발화 끝
-    46.14s  agent 발화 시작: 좀 더 구체적으로 말씀해 주시면 더 적절한 테스트를 추천해 드릴 수 있어요.
-    46.14s  agent 발화 끝
-    51.36s  agent 발화 끝
+     0.00s  user  발화 시작: 푸리님, 혹시 영화 '위대한 독재자'에 나오는 연설문 누가 썼는지 아세요?
+     5.13s  agent 발화 시작: 찰리 채플린이 직접 썼다고 알려져 있어요. 그 영화는 정말 유명하죠.
+     5.13s  user  발화 끝
+    10.26s  user  발화 시작: 아, 그렇군요. 그 영화에 대해서 더 자세히 알고 싶어요.
+    10.26s  agent 발화 끝
+    14.88s  agent 발화 시작: '위대한 독재자'는 천구백사십년에 개봉한 찰리 채플린 감독의 풍자 영화예요—
+    14.88s  user  발화 끝
+    19.50s  user  발화 시작: …그 영화가 왜 그렇게 유명한가요?
+    19.50s  agent 발화 끝
+    22.06s  agent 발화 시작: 그 영화는 아돌프 히틀러를 풍자하며, 전체주의에 대한 강렬한 비판을 담고 있어서예요. 채플린은 이 영화를 통
+    22.06s  user  발화 끝
+    33.35s  user  발화 시작: 네.
+    33.35s  agent 발화 끝
+    33.86s  agent 발화 시작: 네, 정말 그렇죠. 이 영화는 개봉 당시에도 큰 논란을 불러일으켰지만, 지금은 영화사에서 중요한 작품으로 평
+    33.86s  user  발화 끝
+    46.69s  user  발화 시작: 그럼 채플린은 다른 유명한 영화도 많이 만들었나요?
+    46.69s  agent 발화 끝
+    49.88s  <ret> 발화 (turn9 첫 프레임)
+    50.28s  agent 발화 시작: <ret> 찰리 채플린은 영화 산업 역사상 가장 중요한 인물 중 한 명으로 널리 알려진 영국 코미디 배우, 
+    50.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.85s]: Charles Chaplin was an English comic actor, filmmaker, and composer wh
+    50.28s  user  발화 끝
+    64.13s  agent 발화 끝

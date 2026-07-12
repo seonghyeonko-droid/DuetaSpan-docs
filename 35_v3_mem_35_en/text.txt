@@ -1,126 +1,73 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Laelo, a grounded and empathetic wellness coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Momi, a practical and reassuring counselor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Ruby",
+    "name": "Charlotte",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "late 30s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-04-18",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2026-04-21",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "date": "2026-03-27",
+      "category": "home",
+      "text": "User's home address is 583 Cedar Lane."
     },
     {
-      "date": "2026-04-01",
+      "date": "2025-12-07",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-12-07",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
+      "date": "2025-09-17",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-08-01",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-06-28",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-12",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-10-19",
+      "date": "2025-12-04",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-08",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ruby, I'm Laelo. It's lovely to meet you.
-[  3.61s][user ] Um, hi Laelo. I was hoping you could recommend a restaurant for dinner ⟨ret@8.82s⟩ tonight.
-[  9.22s][moshi] ⟦⚡SPAN@9.22s: [2026-04-25] User's favorite cuisine is Mexican.⟧ I recall you enjoy Mexican cuisine, so I can certainly help with that.
-[ 14.43s][user ] «backchannel» Uh-huh.
-[ 14.83s][user ] Oh, that's right! I totally forgot I mentioned that.
-[ 18.43s][moshi] It’s wonderful to tailor suggestions to your preferences.
-[ 21.64s][user ] Do you know any good Mexican places near here? ⟨ret@25.08s⟩
-[ 25.24s][moshi] ⟦⚡SPAN@25.24s: (tool result) {"restaurants": [{"name": "La Taqueria", "address": "2889 Mission St, San Francisco, CA 94110", ⟧ La Taqueria on Mission Street has a 4.5-star rating, and it’s 2.3 miles away.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Mexican", "location": "San Francisco"}}
-[ 30.85s][user ] «backchannel» Exactly.
-[ 31.25s][user ] Hmm, La Taqueria sounds good.
-[ 33.26s][moshi] It's a very popular choice, known for its authentic tacos.
-[ 37.26s][user ] What's the wait time like there right ⟨ret@40.23s⟩ now?
-[ 40.47s][moshi] ⟦⚡SPAN@40.47s: (tool result) {"wait time": "25-35 minutes"}⟧ Currently, the wait time at La Taqueria is estimated to be between 25 and 35 minutes.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "La Taqueria", "location": "San Francisco"}}
-[ 46.88s][user ] Oh, wow. That’s a little long.
-[ 49.29s][moshi] Sometimes a little patience is needed for truly great food.
-[ 53.29s][user ] «backchannel» Right.
-[ 53.69s][user ] Yeah, I guess. Is Nopalito any less busy? ⟨ret@56.74s⟩
-[ 56.90s][moshi] ⟦⚡SPAN@56.90s: (tool result) {"wait time": "15-20 minutes"}⟧ Nopalito currently has a wait time of 15 to 20 minutes.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "Nopalito", "location": "San Francisco"}}
-[ 61.31s][user ] «backchannel» Really?
-[ 61.71s][moshi] It seems like a slightly quicker option for tonight.
-[ 65.31s][user ] «backchannel» Yeah.
-[ 65.71s][user ] That sounds better. Do they take ⟨ret@68.28s⟩ reservations?
-[ 68.52s][moshi] ⟦⚡SPAN@68.52s: (tool result) {"confirmation id": "NP4892", "status": "confirmed", "date": "2026-07-10", "time": "7:00 PM", "p⟧ Yes, I’ve reserved a table for two at Nopalito for 7:00 PM. Your confirmation ID is NP4892.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"name": "Nopalito", "date": "2026-07-10", "time": "7:00 PM", "party_size": "2"}}
-[ 75.33s][user ] «backchannel» Mm-hmm.
-[ 75.73s][user ] Perfect! Thank you so much, Laelo.
-[ 78.14s][moshi] You’re very welcome, Ruby.
-[ 79.74s][user ] I'm planning a trip to Kyoto in October, remember? ⟨ret@83.27s⟩
-[ 83.35s][moshi] ⟦⚡SPAN@83.35s: [2025-12-07] User is planning a trip to Kyoto in October.⟧ Yes, I do recall your planned trip to Kyoto this October.
-[ 87.75s][user ] I was wondering if you could find some information on alpine wildflower photography there. ⟨ret@93.20s⟩
-[ 93.36s][moshi] ⟦⚡SPAN@93.36s: (tool result) Kyoto's alpine wildflowers bloom from September to November, peaking in October. The best locati⟧ Kyoto’s alpine wildflowers typically bloom from September to November, peaking in October.
-      CALL: {"function": "search", "arguments": {"query": "Kyoto alpine wildflower photography October"}}
-[ 98.17s][user ] «backchannel» Yeah.
-[ 98.57s][user ] That’s great to hear!
-[100.17s][moshi] Mount Hiei and the surrounding hills offer beautiful vistas for photography.
-[104.58s][user ] «backchannel» Uh-huh.
-[104.98s][user ] I also have a Beagle named ⟨ret@107.39s⟩ Rusty.
-[107.79s][moshi] ⟦⚡SPAN@107.79s: [2026-04-21] User has a Beagle named Rusty.⟧ Yes, I remember you mentioned your Beagle, Rusty.
-[110.99s][user ] «backchannel» Uh-huh.
-[111.39s][user ] I was thinking about taking him on a hike next weekend.
-[115.80s][moshi] That sounds like a wonderful outing for you and Rusty!
-[119.81s][user ] «backchannel» Yeah.
-[120.21s][user ] Do you know of any dog-friendly trails near San ⟨ret@123.98s⟩ Francisco?
-[124.22s][moshi] ⟦⚡SPAN@124.22s: (tool result) Lands End Trail in San Francisco allows dogs on leash, offering stunning coastal views. Mount Ta⟧ Lands End Trail allows dogs on leash and has beautiful coastal views.
-      CALL: {"function": "search", "arguments": {"query": "dog friendly hiking trails near San Francisco"}}
-[129.02s][user ] Oh, Lands End! I've heard good things.
-[131.83s][moshi] It’s a very popular choice for both locals and visitors.
-[135.84s][user ] Maybe we'll check that out. Thanks again, Laelo.
-[139.04s][moshi] You’re most welcome, Ruby. Enjoy your time with Rusty!
+[  0.00s][moshi] Hi Charlotte, I'm Moshi. It's lovely to meet you. I'm a counselor here to help with your financial wellbeing.
+[  7.01s][user ] Um, well, I'm planning a trip to Kyoto in December, and I'm trying to decide where to ⟨ret@13.25s⟩ stay.
+[ 13.65s][moshi] ⟦⚡SPAN@13.65s: [2026-04-18] User is planning a trip to Kyoto in December.⟧ I see you’re planning a trip to Kyoto in December, which is wonderful!
+[ 18.45s][user ] «backchannel» Mm-hmm.
+[ 18.82s][moshi] To help me narrow down some options, do you have any preferences for the type of accommodation?
+[ 25.09s][user ] I'd prefer a traditional Ryokan, if possible. Something a bit quiet. ⟨ret@28.99s⟩
+[ 29.15s][moshi] ⟦⚡SPAN@29.15s: (tool result) {"hotel name": "Tawaraya", "address": "Anekoji Agaru, Fuyacho, Nakagyo-ku, Kyoto 604-8091, Japan⟧ Tawaraya is a highly-rated Ryokan in Kyoto, costing 80,000 Japanese Yen per night, with a rating of 4.8 out of 5. It features an onsen and garden.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Kyoto", "type": "Ryokan"}}
+[ 39.12s][user ] That sounds… perfect, actually.
+[ 40.59s][moshi] I’m so glad to hear you think so! It’s known for its exceptional service and peaceful atmosphere.

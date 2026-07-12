@@ -4,61 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Thomas",
+#     "name": "Isla",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "date": "2025-12-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-09",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2025-10-07",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-12-13",
+#       "date": "2025-08-13",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-29",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-07-12",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-02",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-25",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Do you know who sang “The End of the Rainbow”?
-     2.95s  <ret> 발화 (turn1 첫 프레임)
-     3.19s  agent 발화 시작: <ret> That was Earl Grant, actually—he released it in ninete
-     3.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.33s]: Earl Grant released the song “The End of the Rainbow” in 1958, and it 
-     3.19s  user  발화 끝
-    10.52s  agent 발화 끝
+     0.00s  user  발화 시작: Where does Air Force One typically fly out of?
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.88s  agent 발화 시작: <ret> It’s interesting how places become symbolic, isn’t it?
+     2.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.76s]: Joint Base Andrews is the home base for both Air Force One and the 89t
+     2.88s  user  발화 끝
+     8.64s  agent 발화 끝

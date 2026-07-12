@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "정진",
+#     "name": "서은",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -18,103 +18,141 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2026-03-09",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2025-07-16",
+#       "date": "2025-12-08",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-06",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 '유령의 위협'에 나오는 나탈리 포트먼 역할이 뭔지 알아 | S2 …괜찮은 영화 있나요? | S3 감사합니다! 혹시 다음 주 금요일에 예약해둔 병원 예약 확인해 | S4 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요.
+# EXAMINER(FDB-v2) 단계: S1 천칠백구십육년 대통령 선거에서 연방주의자 후보는 누구였나요? | S2 아, 그렇군요. | S3 맞아요. | S4 고마워요.
 
-     0.00s  user  발화 시작: 혹시 '유령의 위협'에 나오는 나탈리 포트먼 역할이 뭔지 알아요?
-     4.18s  <ret> 발화 (turn1 첫 프레임)
-     4.34s  agent 발화 시작: <ret> 아, 나탈리 포트먼은 '유령의 위협'에서 파드메 아미달라 역을 맡았답니다. 스타워즈 팬이시군요?
-     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.31s]: Padmé Amidala.
-     4.34s  user  발화 끝
-     9.65s  user  발화 시작: 음.
-     9.65s  agent 발화 끝
-    10.14s  user  발화 시작: 네, 엄청 좋아해요.
-    10.14s  user  발화 끝
-    11.43s  <ret> 발화 (turn4 첫 프레임)
-    11.59s  agent 발화 시작: <ret> 저도 스타워즈 시리즈를 좋아하는데, 특히 파드메 아미달라 캐릭터는 강인하고 아름다운 모습이 인상적
-    11.59s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.79s]: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cl
-    11.59s  user  발화 끝
-    17.38s  agent 발화 시작: 혹시 다른 스타워즈 캐릭터에 대해서도 궁금한 점이 있으신가요? —
-    17.38s  agent 발화 끝
-    21.72s  user  발화 시작: 응.
-    21.72s  agent 발화 끝
-    22.21s  agent 발화 시작: 아니면 다른 영화나 배우에 대한 정보도 찾아드릴 수 있습니다.
-    22.21s  user  발화 끝
-    26.55s  user  발화 시작: 이번 주 토요일에 영화 보러 가려고 하는데…
-    26.55s  agent 발화 끝
-    29.93s  user  발화 시작: …괜찮은 영화 있나요?
-    29.93s  user  발화 끝
-    31.22s  <ret> 발화 (turn10 첫 프레임)
-    31.38s  agent 발화 시작: <ret> 이번 주말에 볼 만한 영화로는 '오펜하이머', '바비', '미션 임파서블: 데드 레코닝 피 에이 
-    31.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: (tool result) [‘Oppenheimer’, ‘Barbie’, ‘Mission: Impossible – Dead Re
-    31.38s  user  발화 끝
-    40.55s  user  발화 시작: 맞아.
-    40.55s  agent 발화 끝
-    41.03s  user  발화 시작: '바비' 영화 예매 좀 해 주세요.
-    41.03s  user  발화 끝
-    43.53s  <ret> 발화 (turn13 첫 프레임)
-    43.93s  agent 발화 시작: <ret> '바비' 영화, 토요일 오후 두시에 메가박스 코엑스 A열 칠번 좌석으로 예매 완료되었습니다. 예약
-    43.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: (tool result) 바비 영화, 7월 13일 토요일 오후 2시, 메가박스 코엑스, A열 7번 좌석 확정. 예약번호: BX
-    43.93s  user  발화 끝
-    53.10s  user  발화 시작: 음.
-    53.10s  agent 발화 끝
-    53.58s  user  발화 시작: 감사합니다! 혹시 다음 주 금요일에 예약해둔 병원 예약 확인해 줄 수 있나요?
-    53.58s  user  발화 끝
-    59.38s  agent 발화 시작: 네, 다음 주 금요일 병원 예약 확인해 드리겠습니다. 혹시 병원 이름이나 예약 시간을 말씀해 주시겠어요?
-    59.38s  user  발화 끝
-    66.62s  user  발화 시작: 음.
-    66.62s  agent 발화 끝
-    67.10s  user  발화 시작: 서울대학교 병원, 오후 세시요.
-    67.10s  user  발화 끝
-    68.87s  <ret> 발화 (turn19 첫 프레임)
-    69.03s  agent 발화 시작: <ret> 서울대학교병원 신경과 진료, 다음 주 금요일 오후 세시로 예약되어 있습니다.
-    69.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.83s]: (tool result) 서울대학교병원, 7월 19일 금요일 오후 3시, 신경과 진료 예약 확인.
-    69.03s  user  발화 끝
-    73.86s  user  발화 시작: 진짜?
-    73.86s  agent 발화 끝
-    74.34s  user  발화 시작: 아, 다행이다.
-    74.34s  user  발화 끝
-    75.31s  agent 발화 시작: 혹시 다른 예약이나 일정 관리도 도와드릴까요? 예산을 짜는 것도 도와드릴 수 있습니다.
-    75.31s  user  발화 끝
-    81.10s  user  발화 시작: 응.
-    81.10s  agent 발화 끝
-    81.58s  user  발화 시작: 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요.
-    81.58s  user  발화 끝
-    83.99s  agent 발화 시작: 궁금한 점이 있으시면 언제든지 저를 찾아주세요. 언제나 도와드릴 준비가 되어 있습니다.
-    83.99s  user  발화 끝
-    89.30s  user  발화 시작: 네, 알겠습니다.
-    89.30s  agent 발화 끝
-    90.27s  agent 발화 시작: 건강 관리에 유념하시고, 즐거운 주말 보내세요.
-    90.27s  user  발화 끝
-    93.17s  agent 발화 끝
+     0.00s  user  발화 시작: 천칠백구십육년 대통령 선거에서 연방주의자 후보는 누구였나요?
+     3.23s  <ret> 발화 (turn1 첫 프레임)
+     3.39s  agent 발화 시작: <ret> 천칠백구십육년 대통령 선거에서 연방주의자 후보는 존 애덤스였습니다.
+     3.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.95s]: John Adams was the Federalist candidate for president in the election 
+     3.39s  user  발화 끝
+     7.34s  user  발화 시작: 음, 그 당시 정치 상황은 어땠어요?
+     7.34s  agent 발화 끝
+    10.56s  <ret> 발화 (turn3 첫 프레임)
+    10.72s  agent 발화 시작: <ret> 그 시대는 격동기였죠. 중앙 집권적인 정부를 지지하는 연방주의자들과, 주 정부의 권한을 강조하는 
+    10.72s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.03s]: The average high temperature in Reykjavik, Iceland in July is 13.1°C, 
+    10.72s  user  발화 끝
+    19.76s  agent 발화 시작: 혹시 최근에 스트레스 받는 일이 있으셨나요? 관계에서 어려움을 겪고 계신 것 같아서요.
+    19.76s  agent 발화 끝
+    26.53s  user  발화 시작: 네, 조금 있어요.
+    26.53s  agent 발화 끝
+    28.22s  agent 발화 시작: 그런 어려움은 누구에게나 찾아올 수 있어요. 지금 느끼는 감정을 솔직하게 표현하는 것이 중요해요.
+    28.22s  user  발화 끝
+    35.56s  user  발화 시작: 그렇겠죠.
+    35.56s  agent 발화 끝
+    36.12s  agent 발화 시작: 혹시 배우자와의 관계에서 어떤 점이 가장 힘든지 말씀해 주실 수 있으신가요?
+    36.12s  user  발화 끝
+    42.33s  agent 발화 시작: 관계 개선을 위해 노력하는 모습이 보기 좋아요. 서로의 감정을 이해하고 존중하는 것이 중요하죠.
+    42.33s  agent 발화 끝
+    49.67s  user  발화 시작: 그렇죠.
+    49.67s  agent 발화 끝
+    50.23s  user  발화 시작: 그런데, 존 애덤스는 어떤 사람이었어요?
+    50.23s  user  발화 끝
+    52.90s  <ret> 발화 (turn12 첫 프레임)
+    53.06s  agent 발화 시작: <ret> 존 애덤스는 변호사이자 외교관, 정치가로, 미국의 두 번째 대통령을 역임했습니다. 천칠백구십칠년부
+    53.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: John Adams was a lawyer, diplomat, and statesman who served as the sec
+    53.06s  user  발화 끝
+    59.83s  user  발화 시작: 아, 그렇군요.
+    59.83s  agent 발화 끝
+    60.96s  agent 발화 시작: 어려운 시기에 리더십을 발휘해야 했던 인물이죠. 그의 업적에 대해 더 자세히 알아보고 싶으신가요?
+    60.96s  user  발화 끝
+    68.30s  user  발화 시작: 네.
+    68.30s  agent 발화 끝
+    68.86s  user  발화 시작: 음, 그 시대의 다른 주요 인물들도 궁금해요.
+    68.86s  user  발화 끝
+    72.81s  agent 발화 시작: 토머스 제퍼슨이나 알렉산더 해밀턴 같은 인물들도 중요한 역할을 했어요. 그들과 애덤스의 관계는 복잡했죠.
+    72.81s  user  발화 끝
+    80.15s  user  발화 시작: 해밀턴은 어떤 역할을 했죠?
+    80.15s  agent 발화 끝
+    82.25s  <ret> 발화 (turn19 첫 프레임)
+    82.41s  agent 발화 시작: <ret> 알렉산더 해밀턴은 건국 아버지 중 한 명이자 경제학자, 변호사, 언론인이었습니다. 그는 미국의 금
+    82.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: Alexander Hamilton was a Founding Father, economist, lawyer, journalis
+    82.41s  user  발화 끝
+    92.57s  user  발화 시작: 흥미롭네요.
+    92.57s  agent 발화 끝
+    93.13s  agent 발화 시작: 관계 속에서 갈등은 피할 수 없지만, 건설적인 대화를 통해 해결해 나가는 것이 중요해요.
+    93.13s  user  발화 끝
+   100.47s  user  발화 시작: 맞아요.
+   100.47s  agent 발화 끝
+   101.03s  agent 발화 시작: 혹시 배우자와의 대화에서 어려움을 느낄 때가 있으신가요? 어떤 방식으로 대화하는 것이 좋을까요?
+   101.03s  user  발화 끝
+   107.81s  user  발화 시작: 잘 모르겠어요.
+   107.81s  agent 발화 끝
+   108.94s  agent 발화 시작: 서로의 입장을 이해하려고 노력하고, 비난보다는 감정을 표현하는 것이 도움이 될 수 있어요.
+   108.94s  user  발화 끝
+   115.71s  user  발화 시작: 음.
+   115.71s  agent 발화 끝
+   116.27s  user  발화 시작: 그래야겠네요.
+   116.27s  user  발화 끝
+   116.84s  agent 발화 시작: 때로는 전문가의 도움을 받는 것도 좋은 방법이에요. 혹시 상담을 고려해 보셨나요?
+   116.84s  user  발화 끝
+   123.05s  user  발화 시작: 음, 생각해 봐야겠어요.
+   123.05s  agent 발화 끝
+   124.74s  agent 발화 시작: 어떤 결정을 내리시든, 저는 항상 당신을 응원할게요. 스스로에게 친절하게 대하는 것을 잊지 마세요.
+   124.74s  user  발화 끝
+   132.08s  user  발화 시작: 고마워요.
+   132.08s  agent 발화 끝
+   132.64s  agent 발화 시작: 지금 느끼는 감정은 당연한 거예요. 자신을 비난하지 마세요.
+   132.64s  user  발화 끝
+   137.16s  user  발화 시작: 아.
+   137.16s  agent 발화 끝
+   137.72s  user  발화 시작: 그럴게요.
+   137.72s  user  발화 끝
+   138.29s  agent 발화 시작: 혹시 오늘 하루 동안 스스로에게 해 줄 수 있는 작은 선물을 생각해 보셨나요?
+   138.29s  user  발화 끝
+   145.62s  user  발화 시작: 아직요.
+   145.62s  agent 발화 끝
+   146.19s  agent 발화 시작: 작은 것이라도 괜찮아요. 좋아하는 음악을 듣거나, 따뜻한 차를 마시는 것도 좋겠죠.
+   146.19s  user  발화 끝
+   152.40s  user  발화 시작: 좋은 생각이네요.
+   152.40s  agent 발화 끝
+   153.53s  agent 발화 시작: 관계 속에서 자신을 잃지 않는 것도 중요해요. 자신만의 시간을 갖는 것을 잊지 마세요.
+   153.53s  user  발화 끝
+   160.86s  agent 발화 끝

@@ -6,111 +6,96 @@
 #     "user_id": "v3_mcp_01",
 #     "name": "Hugo",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-06-20",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-16",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-11-10",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-11-24",
+#       "date": "2025-07-14",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-07-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 312 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-28",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-20",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 보스턴에 있는 미술관 좀 찾아 봐 줘. | S2 삼백오십달러는 좀 비싸네. | S3 워번은… 멀리 떨어져 있네. 거긴 오늘 날씨 어때? | S4 …미술관 근처에 있는 커피숍 좀 찾아 줘.
 
-     0.00s  user  발화 시작: 어, 보스턴에 있는 미술관 좀 찾아 봐 줘.
-     3.86s  <ret> 발화 (turn1 첫 프레임)
-     4.02s  agent 발화 시작: <ret> 네, 보스턴 미술관을 찾았는데, 헌팅턴 애비뉴 사백육십오번지에 있고, 평점은 사 점 육점이에요.
-     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.04s]: (tool result) {"place id": "ChIJj61dQgKoEmsRUUlDHuW7W0U", "name": "Mus
-     4.02s  user  발화 끝
-    10.06s  user  발화 시작: 어어.
-    10.06s  agent 발화 끝
-    10.56s  user  발화 시작: 음, 근처에 괜찮은 식당 있어?
-    10.56s  user  발화 끝
-    12.76s  <ret> 발화 (turn4 첫 프레임)
-    13.08s  agent 발화 시작: <ret> 네, 몇 군데 있어요! 이벤트타이드 펜웨이는 해산물 요리를 제공하고, 타이거 마마는 아시안 퓨전 
-    13.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.56s]: (tool result) {"restaurants": [{"name": "Eventide Fenway", "address": 
-    13.08s  user  발화 끝
-    22.64s  user  발화 시작: 응.
-    22.64s  agent 발화 끝
-    23.14s  agent 발화 시작: 그렇게 생각하시니 정말 다행이에요! 관심 있는 곳 근처의 좋은 장소를 찾는 건 정말 좋은 방법인 것 같아요.
-    23.14s  user  발화 끝
-    31.69s  user  발화 시작: 음.
-    31.69s  agent 발화 끝
-    32.19s  user  발화 시작: 좋아, 미술관 근처 호텔은 어때?
-    32.19s  user  발화 끝
-    34.55s  <ret> 발화 (turn9 첫 프레임)
-    34.71s  agent 발화 시작: <ret> 네, 페어몬트 코플리 플라자는 럭셔리한 옵션인데, 밤에 삼백오십달러 정도이고 평점은 사 점 오점이
-    34.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.57s]: (tool result) {"hotels": [{"name": "The Fairmont Copley Plaza", "addre
-    34.71s  user  발화 끝
-    46.28s  user  발화 시작: 진짜?
-    46.28s  agent 발화 끝
-    46.78s  user  발화 시작: 삼백오십달러는 좀 비싸네.
-    46.78s  user  발화 끝
-    48.29s  agent 발화 시작: 네, 특히 정착할 때는 그럴 수 있어요—
-    48.29s  user  발화 끝
-    51.81s  user  발화 시작: …사실, 좀 더 멀리 떨어진 곳, 주차도 무료인 곳 좀 알아 봐 줄래?
-    51.81s  agent 발화 끝
-    57.95s  <ret> 발화 (turn14 첫 프레임)
-    58.35s  agent 발화 시작: <ret> 네, 힐튼 보스턴 백 베이는 무료 주차를 제공하고, 밤에 이백이십달러이고 평점은 사점이고요, 더블
-    58.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.56s]: (tool result) {"hotels": [{"name": "Hilton Boston Back Bay", "address"
-    58.35s  user  발화 끝
-    67.91s  user  발화 시작: 워번은… 멀리 떨어져 있네. 거긴 오늘 날씨 어때?
-    67.91s  agent 발화 끝
-    71.69s  <ret> 발화 (turn16 첫 프레임)
-    71.93s  agent 발화 시작: <ret> 네, 현재 워번은 섭씨 이십사도이고 맑고, 습도는 육십오퍼센트이며, 바람은 시속 칠킬로미터로 불고
-    71.93s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.54s]: (tool result) {"temperature": "24.0°C", "humidity": "65%", "wind": "7.
-    71.93s  user  발화 끝
-    78.47s  user  발화 시작: 와.
-    78.47s  agent 발화 끝
-    78.98s  user  발화 시작: 좋네. 당분간은 보스턴 시내 주변만 둘러볼래.
-    78.98s  user  발화 끝
-    81.99s  agent 발화 시작: 네, 괜찮아요! 새로운 도시에 적응하려면 천천히 하는 게 중요해요.
-    81.99s  user  발화 끝
-    86.52s  user  발화 시작: 커피…
-    86.52s  agent 발화 끝
-    87.02s  user  발화 시작: …미술관 근처에 있는 커피숍 좀 찾아 줘.
-    87.02s  user  발화 끝
-    90.39s  <ret> 발화 (turn22 첫 프레임)
-    90.55s  agent 발화 시작: <ret> 네, 사실 미술관 바로 옆에 피츠 커피가 있어요—헌팅턴 애비뉴 사백육십오번지에 있고, 평점은 사 
-    90.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) {"place id": "ChIJ51j5tKRoEmsR q4b O61I9g", "name": "Pee
-    90.55s  user  발화 끝
-    98.09s  user  발화 시작: 완벽해! 고마워, 모미.
-    98.09s  agent 발화 끝
-    99.60s  agent 발화 시작: 천만에요! 제가 몇 군데 탐험할 곳을 찾는 데 도움이 되어서 정말 기뻐요.
-    99.60s  user  발화 끝
-   105.64s  agent 발화 끝
+     0.00s  user  발화 시작: 어떤 데이터 프레임에서 삭제된 거 맞는지 확인해 줘, 그 페이지에 있는 거.
+     5.28s  <ret> 발화 (turn1 첫 프레임)
+     5.44s  agent 발화 시작: <ret> iframe 안에서 삭제된 게 확인됐어요. 그렇게 해결되어서 다행이지 않아요?
+     5.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.08s]: (tool result) {"status": "success", "message": "Deletion confirmed wit
+     5.44s  user  발화 끝
+     9.53s  user  발화 시작: 음, 좋아, 응. 지금 서울 날씨는 어때?
+     9.53s  agent 발화 끝
+    12.38s  <ret> 발화 (turn3 첫 프레임)
+    12.70s  agent 발화 시작: <ret> 지금 서울은 기온이 스물여덟 점 영도이고, 습도는 육십오 퍼센트, 풍속은 시속 일곱 점 이 킬로미
+    12.70s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.26s]: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed
+    12.70s  user  발화 끝
+    19.96s  user  발화 시작: 그치.
+    19.96s  agent 발화 끝
+    20.41s  user  발화 시작: 그거…좋네. 이번 주말에 뭐 하는 거 있어 찾아 줘.
+    20.41s  user  발화 끝
+    24.33s  <ret> 발화 (turn6 첫 프레임)
+    24.49s  agent 발화 시작: <ret> 칠월 십일 일, 십이 일 주말에 예정된 이벤트를 알아볼게요.
+    24.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.08s]: (tool result) {"events": [{"name": "Seoul Music Festival", "date": "Ju
+    24.49s  user  발화 끝
+    28.58s  agent 발화 시작: 이번 주말, 칠월 십일 일, 십이 일에는 올림픽공원에서 서울 뮤직 페스티벌이 있고, 경복궁 야간 투어도 있어
+    28.58s  agent 발화 끝
+    37.19s  agent 발화 끝

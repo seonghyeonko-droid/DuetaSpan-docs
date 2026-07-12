@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "하서",
+#     "name": "주안",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,35 +12,51 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-04",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-18",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-07-29",
+#       "date": "2026-04-11",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-03-25",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-11-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-25",
+#       "date": "2026-03-14",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-17",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-28",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -51,13 +67,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 음… 혹시 씨 아이 에이가 표적으로 삼았던 흑인 인권 운동가는 누구예요?
-     4.87s  <ret> 발화 (turn1 첫 프레임)
-     5.11s  agent 발화 시작: <ret> 아쉽게도, 로크스예요. 현재로서는 씨 아이 에이가 표적으로 삼았던 흑인 인권 운동가에 대한 정보가
-     5.11s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.43s]: (no information found)
-     5.11s  user  발화 끝
-    12.54s  user  발화 시작: 아, 그렇군요… 다른 걸 물어볼게요.
-    12.54s  agent 발화 끝
-    14.87s  agent 발화 시작: 어떤 점이든 편하게 말씀해 주세요.
-    14.87s  user  발화 끝
-    17.19s  agent 발화 끝
+     0.00s  user  발화 시작: 괌 근처에서 벌어진 전투로 사상자가…
+     1.94s  user  발화 시작: …얼마나 나왔는지 알 수 있을까요?
+     1.94s  user  발화 끝
+     3.65s  <ret> 발화 (turn2 첫 프레임)
+     3.89s  agent 발화 시작: <ret> 죄송합니다, 그에 대한 정보는 찾을 수 없었어요. 아직 알려진 바가 없는 것 같아요.
+     3.89s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.05s]: (no information found)
+     3.89s  user  발화 끝
+     8.94s  user  발화 시작: 응.
+     8.94s  agent 발화 끝
+     9.33s  user  발화 시작: 아, 그렇군요.
+     9.33s  user  발화 끝
+    10.11s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 제가 도와드릴 수 있는 다른 일이 있을까요?
+    10.11s  user  발화 끝
+    14.77s  user  발화 시작: 응응.
+    14.77s  agent 발화 끝
+    15.16s  user  발화 끝

@@ -1,10 +1,10 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Limi, a calm and patient personal guide who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Relis, a practical and reassuring life coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Camille",
+    "name": "Olivia",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -18,34 +18,37 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
   },
   "saved_memories": [
     {
-      "date": "2025-09-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-09-17",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-08-25",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-07-20",
+      "date": "2026-01-12",
       "category": "pet",
       "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-06-24",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-10-12",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-09-13",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-05-31",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-03",
+      "date": "2025-06-29",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-05-31",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -56,45 +59,52 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to learn about modern dance. Who was Martha Graham? ⟨ret@4.12s⟩
-[  4.28s][moshi] ⟦⚡SPAN@4.28s: Martha Graham was an American modern dancer and choreographer, and her style reshaped American dance.⟧ Martha Graham was an American modern dancer and choreographer, and her style truly reshaped American dance. It’s a fascinating field, isn’t it?
-[ 12.85s][user ] «backchannel» Uh-huh.
-[ 13.24s][user ] What exactly *is* the Graham technique? ⟨ret@15.42s⟩
-[ 15.58s][moshi] ⟦⚡SPAN@15.58s: The Graham technique is a modern dance movement style and pedagogy created by Martha Graham.⟧ The Graham technique is a modern dance movement style and pedagogy, all created by Martha Graham herself. It’s quite influential still.
-[ 23.76s][user ] So, she invented a whole system of dance?
-[ 26.87s][moshi] She did, a very specific approach to movement and expression. It’s still taught widely today, you know.
-[ 33.49s][user ] When was she born? I’m curious about her ⟨ret@36.68s⟩ life.
-[ 37.00s][moshi] ⟦⚡SPAN@37.00s: Martha Graham was born on May 11, 1894.⟧ She was born on May 11, 1894. It’s incredible to think about the impact she would have.
-[ 43.62s][user ] 1894… that's a long time ago! What was happening then?
-[ 47.51s][moshi] That was the late Victorian era, a period of significant social and cultural change.
-[ 52.97s][user ] Was she famous during her ⟨ret@54.98s⟩ lifetime?
-[ 55.30s][moshi] ⟦⚡SPAN@55.30s: Martha Graham achieved international recognition for her work, becoming a major figure in American dance.⟧ She achieved international recognition for her work, becoming a major figure in American dance. People really took notice.
-[ 62.31s][user ] Did she work with other famous dancers?
-[ 65.04s][moshi] She collaborated with many artists and choreographers throughout her career.
-[ 68.93s][user ] «backchannel» Yeah.
-[ 69.32s][user ] What kind of performances did she create?
-[ 72.05s][moshi] Her performances often explored themes of mythology, psychology, and American history.
-[ 76.33s][user ] «backchannel» Yeah.
-[ 76.72s][user ] That sounds…intense. What was her most famous ⟨ret@79.44s⟩ piece?
-[ 79.84s][moshi] «interrupted» ⟦⚡SPAN@79.84s: “Appalachian Spring” is considered Martha Graham’s most celebrated work, premiering in 1944.⟧ “Appalachian Spring” is considered her most celebrated work, premiering in 1944. It’s a really beautiful piece—
-[ 86.07s][user ] «interrupts_prev» …was it set to music by Aaron Copland?
-[ 89.19s][moshi] Yes, it was! It’s a really wonderful collaboration, actually.
-[ 92.69s][user ] Oh, okay. I've heard of Copland.
-[ 95.03s][moshi] He was a very important composer, and his music perfectly complements Graham’s choreography.
-[100.09s][user ] «backchannel» Yeah, yeah.
-[100.87s][user ] What made her style so ⟨ret@102.97s⟩ different?
-[103.21s][moshi] ⟦⚡SPAN@103.21s: Graham’s technique emphasizes contraction and release, creating a powerful and expressive movement vocabulary.⟧ Graham’s technique emphasizes contraction and release, creating a powerful and expressive movement vocabulary. It’s very distinctive.
-[109.44s][user ] Contraction and release… can you explain that a bit?
-[112.94s][moshi] It involves a specific way of breathing and moving that creates a very grounded, emotional quality.
-[119.17s][user ] So it's very physical?
-[120.73s][moshi] It is, very demanding physically and emotionally. It requires a lot of strength and control.
-[126.57s][user ] Did she teach a lot of ⟨ret@128.90s⟩ students?
-[129.30s][moshi] ⟦⚡SPAN@129.30s: Martha Graham established a dance school and company that trained generations of dancers.⟧ She established a dance school and company that trained generations of dancers. Her legacy continues through them.
-[135.92s][user ] Is her technique still used today?
-[138.26s][moshi] The Graham technique remains a foundational element in modern dance training worldwide.
-[142.93s][user ] «backchannel» Okay.
-[143.32s][user ] Where could I find a school that teaches ⟨ret@146.43s⟩ it?
-[146.83s][moshi] ⟦⚡SPAN@146.83s: (tool result) New York City Center offers classes in the Graham technique, as do several universities with dan⟧ New York City Center offers classes in the Graham technique, as do several universities with dance programs. You can find more information at nycitycenter.org.
-      CALL: {"function": "search", "arguments": {"query": "Martha Graham technique dance schools"}}
-[156.17s][user ] That’s helpful, thank you.
-[157.73s][moshi] You’re very welcome. It’s wonderful you’re exploring modern dance. It’s a truly beautiful art form.
+[  0.00s][user ] I'm trying to decide on a liqueur for a party. What's Kerrygold Irish Cream Liqueur mostly known for? ⟨ret@6.84s⟩
+[  7.00s][moshi] ⟦⚡SPAN@7.00s: Kerrygold Irish Cream Liqueur is a blend of Irish whiskey, Irish cream, and chocolate—making it a popular choi⟧ It’s a lovely choice! Kerrygold Irish Cream Liqueur is a blend of Irish whiskey, Irish cream, and chocolate—making it a popular choice for dessert drinks. It's quite versatile.
+[ 17.89s][user ] Chocolate, huh? Is it actually made *in* Ireland? ⟨ret@20.85s⟩
+[ 21.01s][moshi] ⟦⚡SPAN@21.01s: Kerrygold is a brand owned by the Irish Dairy Board, established in 1962, and is now known as Ornua.⟧ Yes, it is! Kerrygold is a brand owned by the Irish Dairy Board, established in 1962, and is now known as Ornua. That's a bit of history for you.
+[ 32.29s][user ] «backchannel» Oh.
+[ 32.68s][user ] Ornua? Never heard of them. What…
+[ 35.01s][user ] …kind of products does Ornua actually ⟨ret@37.41s⟩ sell?
+[ 37.73s][moshi] ⟦⚡SPAN@37.73s: Ornua is a global Irish food company that produces and markets a range of dairy products, including cheese, bu⟧ Ornua is a global Irish food company that produces and markets a range of dairy products, including cheese, butter, and ingredients. They're quite big in the dairy world.
+[ 48.62s][user ] So, primarily dairy products then?
+[ 50.57s][moshi] That’s right. It’s a very dairy-focused company, yes. You're thinking ahead, which is good.
+[ 56.01s][user ] «backchannel» Yeah.
+[ 56.40s][user ] I'm thinking of mixing it with coffee. Is that a common thing to do?
+[ 61.85s][moshi] It's delicious in coffee, actually. A very popular combination.
+[ 65.35s][user ] Okay, good. What's the alcohol percentage, ⟨ret@67.83s⟩ roughly?
+[ 68.07s][moshi] ⟦⚡SPAN@68.07s: Kerrygold Irish Cream Liqueur contains 17% alcohol by volume.⟧ It contains 17% alcohol by volume. A moderate strength, perfect for sipping or mixing.
+[ 73.52s][user ] «backchannel» Really?
+[ 73.91s][user ] Seventeen percent… that's not too bad. Is it a recent product, or has it been around a ⟨ret@80.51s⟩ while?
+[ 80.91s][moshi] ⟦⚡SPAN@80.91s: Kerrygold Irish Cream Liqueur was first introduced in 1999, becoming a popular addition to the Kerrygold portf⟧ It was first introduced in 1999, becoming a popular addition to the Kerrygold portfolio. It’s relatively new compared to some liqueurs.
+[ 89.08s][user ] 1999? That *is* recent. Is it widely available in the ⟨ret@92.96s⟩ US?
+[ 93.36s][moshi] ⟦⚡SPAN@93.36s: Kerrygold Irish Cream Liqueur is available in select US states, including California, Florida, and Massachuset⟧ It's available in select US states, including California, Florida, and Massachusetts. Availability can vary, though.
+[ 99.19s][user ] «backchannel» Yeah.
+[ 99.58s][user ] Okay, so not everywhere. What about Canada? ⟨ret@102.22s⟩
+[102.30s][moshi] ⟦⚡SPAN@102.30s: Kerrygold Irish Cream Liqueur is widely available across Canada, particularly in liquor stores in Ontario and ⟧ It's widely available across Canada, particularly in liquor stores in Ontario and British Columbia. Much easier to find there!
+[109.70s][user ] «backchannel» Mm-hmm.
+[110.08s][user ] Good to know. I wonder if they ship directly…
+[113.59s][moshi] «interrupted» I can check if they offer direct shipping. One moment—
+[117.48s][user ] «interrupts_prev» …Actually, what other flavors do they make? ⟨ret@120.04s⟩
+[120.20s][moshi] ⟦⚡SPAN@120.20s: Kerrygold Irish Cream Liqueur is currently only available in its original flavor; there are no other official ⟧ It’s currently only available in its original flavor; there are no other official flavor variations. It seems they’ve stuck with the classic.
+[128.76s][user ] «backchannel» Yeah.
+[129.15s][user ] Oh, just the original, huh? That’s a shame. Is it expensive, ⟨ret@133.57s⟩ roughly?
+[133.81s][moshi] ⟦⚡SPAN@133.81s: A 750ml bottle of Kerrygold Irish Cream Liqueur typically retails for around $29.99 in the United States.⟧ A 750ml bottle typically retails for around $29.99 in the United States. It's fairly reasonably priced, I’d say.
+[140.81s][user ] Thirty dollars… not terrible. What about online retailers? Are there any good ⟨ret@145.63s⟩ deals?
+[145.87s][moshi] ⟦⚡SPAN@145.87s: (tool result) Drizly offers Kerrygold Irish Cream Liqueur for $32.99 with delivery options; Total Wine & More ⟧ Drizly offers it for $32.99 with delivery, while Total Wine & More lists it for $27.99 for in-store pickup.
+      CALL: {"function": "search", "arguments": {"query": "buy Kerrygold Irish Cream Liqueur online"}}
+[153.26s][user ] «backchannel» Uh-huh.
+[153.65s][user ] Total Wine sounds better. Do they have locations near me? ⟨ret@157.46s⟩
+[157.54s][moshi] ⟦⚡SPAN@157.54s: (tool result) Total Wine & More - Northridge, 9301 De Soto Ave, Chatsworth, CA 91311. 1.2 miles away.⟧ There's a Total Wine & More at 9301 De Soto Ave, Chatsworth, CA 91311, just 1.2 miles away.
+      CALL: {"function": "map_search_places", "arguments": {"query": "Total Wine & More"}}
+[164.54s][user ] «backchannel» Mm-hmm.
+[164.93s][user ] Perfect! Thanks. Do you have any advice for throwing a good party?
+[169.60s][moshi] Planning is key, of course. Remember to have a good mix of music and snacks.
+[175.44s][user ] Music, right. Any recommendations? Something upbeat?
+[177.77s][moshi] Upbeat music always sets a good mood! Consider a playlist with classic hits.
+[182.83s][user ] «backchannel» Yeah.
+[183.21s][user ] Good idea. I always forget about the playlist. What's the weather going to be like on Saturday? ⟨ret@189.67s⟩
+[189.83s][moshi] ⟦⚡SPAN@189.83s: (tool result) Saturday: High 82°F, low 68°F, sunny. Wind 5 mph from the west.⟧ Saturday will be sunny with a high of 82°F and a low of 68°F. A lovely day for a party!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chatsworth, CA"}}
+[197.61s][user ] Sounds perfect. Thanks, Relis.
+[199.16s][moshi] You’re very welcome. Remember, a relaxed host makes for relaxed guests.

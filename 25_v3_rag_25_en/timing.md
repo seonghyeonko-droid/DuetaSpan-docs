@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Camille",
+#     "name": "Olivia",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -18,34 +18,37 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-09-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-09-17",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-08-25",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2026-01-12",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-10-12",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-05-31",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-03",
+#       "date": "2025-06-29",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-31",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -55,103 +58,121 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to learn about modern d | S2 Was she famous during her lifetime | S3 …was it set to music by Aaron Copl | S4 Did she teach a lot of students?
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to decide on a liqueur  | S2 I'm thinking of mixing it with cof | S3 Good to know. I wonder if they shi | S4 Perfect! Thanks. Do you have any a
 
-     0.00s  user  발화 시작: I’m trying to learn about modern dance. Who was Martha Graha
-     4.12s  <ret> 발화 (turn1 첫 프레임)
-     4.28s  agent 발화 시작: <ret> Martha Graham was an American modern dancer and choreo
-     4.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: Martha Graham was an American modern dancer and choreographer, and her
-     4.28s  user  발화 끝
-    12.85s  user  발화 시작: Uh-huh.
-    12.85s  agent 발화 끝
-    13.24s  user  발화 시작: What exactly *is* the Graham technique?
-    13.24s  user  발화 끝
-    15.42s  <ret> 발화 (turn4 첫 프레임)
-    15.58s  agent 발화 시작: <ret> The Graham technique is a modern dance movement style 
-    15.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.18s]: The Graham technique is a modern dance movement style and pedagogy cre
-    15.58s  user  발화 끝
-    23.76s  user  발화 시작: So, she invented a whole system of dance?
-    23.76s  agent 발화 끝
-    26.87s  agent 발화 시작: She did, a very specific approach to movement and expression
-    26.87s  user  발화 끝
-    33.49s  user  발화 시작: When was she born? I’m curious about her life.
-    33.49s  agent 발화 끝
-    36.68s  <ret> 발화 (turn8 첫 프레임)
-    37.00s  agent 발화 시작: <ret> She was born on May 11, 1894. It’s incredible to think
-    37.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: Martha Graham was born on May 11, 1894.
-    37.00s  user  발화 끝
-    43.62s  user  발화 시작: 1894… that's a long time ago! What was happening then?
-    43.62s  agent 발화 끝
-    47.51s  agent 발화 시작: That was the late Victorian era, a period of significant soc
-    47.51s  user  발화 끝
-    52.97s  user  발화 시작: Was she famous during her lifetime?
-    52.97s  agent 발화 끝
-    54.98s  <ret> 발화 (turn12 첫 프레임)
-    55.30s  agent 발화 시작: <ret> She achieved international recognition for her work, b
-    55.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.01s]: Martha Graham achieved international recognition for her work, becomin
-    55.30s  user  발화 끝
-    62.31s  user  발화 시작: Did she work with other famous dancers?
-    62.31s  agent 발화 끝
-    65.04s  agent 발화 시작: She collaborated with many artists and choreographers throug
-    65.04s  user  발화 끝
-    68.93s  user  발화 시작: Yeah.
-    68.93s  agent 발화 끝
-    69.32s  user  발화 시작: What kind of performances did she create?
-    69.32s  user  발화 끝
-    72.05s  agent 발화 시작: Her performances often explored themes of mythology, psychol
-    72.05s  user  발화 끝
-    76.33s  user  발화 시작: Yeah.
-    76.33s  agent 발화 끝
-    76.72s  user  발화 시작: That sounds…intense. What was her most famous piece?
-    76.72s  user  발화 끝
-    79.44s  <ret> 발화 (turn20 첫 프레임)
-    79.84s  agent 발화 시작: <ret> “Appalachian Spring” is considered her most celebrated
-    79.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: “Appalachian Spring” is considered Martha Graham’s most celebrated wor
-    79.84s  user  발화 끝
-    86.07s  user  발화 시작: …was it set to music by Aaron Copland?
-    86.07s  agent 발화 끝
-    89.19s  agent 발화 시작: Yes, it was! It’s a really wonderful collaboration, actually
-    89.19s  user  발화 끝
-    92.69s  user  발화 시작: Oh, okay. I've heard of Copland.
-    92.69s  agent 발화 끝
-    95.03s  agent 발화 시작: He was a very important composer, and his music perfectly co
-    95.03s  user  발화 끝
-   100.09s  user  발화 시작: Yeah, yeah.
-   100.09s  agent 발화 끝
-   100.87s  user  발화 시작: What made her style so different?
-   100.87s  user  발화 끝
-   102.97s  <ret> 발화 (turn27 첫 프레임)
-   103.21s  agent 발화 시작: <ret> Graham’s technique emphasizes contraction and release,
-   103.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: Graham’s technique emphasizes contraction and release, creating a powe
-   103.21s  user  발화 끝
-   109.44s  user  발화 시작: Contraction and release… can you explain that a bit?
-   109.44s  agent 발화 끝
-   112.94s  agent 발화 시작: It involves a specific way of breathing and moving that crea
-   112.94s  user  발화 끝
-   119.17s  user  발화 시작: So it's very physical?
-   119.17s  agent 발화 끝
-   120.73s  agent 발화 시작: It is, very demanding physically and emotionally. It require
-   120.73s  user  발화 끝
-   126.57s  user  발화 시작: Did she teach a lot of students?
-   126.57s  agent 발화 끝
-   128.90s  <ret> 발화 (turn33 첫 프레임)
-   129.30s  agent 발화 시작: <ret> She established a dance school and company that traine
-   129.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: Martha Graham established a dance school and company that trained gene
-   129.30s  user  발화 끝
-   135.92s  user  발화 시작: Is her technique still used today?
-   135.92s  agent 발화 끝
-   138.26s  agent 발화 시작: The Graham technique remains a foundational element in moder
-   138.26s  user  발화 끝
-   142.93s  user  발화 시작: Okay.
-   142.93s  agent 발화 끝
-   143.32s  user  발화 시작: Where could I find a school that teaches it?
-   143.32s  user  발화 끝
-   146.43s  <ret> 발화 (turn38 첫 프레임)
-   146.83s  agent 발화 시작: <ret> New York City Center offers classes in the Graham tech
-   146.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.35s]: (tool result) New York City Center offers classes in the Graham techni
-   146.83s  user  발화 끝
-   156.17s  user  발화 시작: That’s helpful, thank you.
-   156.17s  agent 발화 끝
-   157.73s  agent 발화 시작: You’re very welcome. It’s wonderful you’re exploring modern 
-   157.73s  user  발화 끝
-   163.57s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to decide on a liqueur for a party. What's Kerryg
+     6.84s  <ret> 발화 (turn1 첫 프레임)
+     7.00s  agent 발화 시작: <ret> It’s a lovely choice! Kerrygold Irish Cream Liqueur is
+     7.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.89s]: Kerrygold Irish Cream Liqueur is a blend of Irish whiskey, Irish cream
+     7.00s  user  발화 끝
+    17.89s  user  발화 시작: Chocolate, huh? Is it actually made *in* Ireland?
+    17.89s  agent 발화 끝
+    20.85s  <ret> 발화 (turn3 첫 프레임)
+    21.01s  agent 발화 시작: <ret> Yes, it is! Kerrygold is a brand owned by the Irish Da
+    21.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.28s]: Kerrygold is a brand owned by the Irish Dairy Board, established in 19
+    21.01s  user  발화 끝
+    32.29s  user  발화 시작: Oh.
+    32.29s  agent 발화 끝
+    32.68s  user  발화 시작: Ornua? Never heard of them. What…
+    32.68s  user  발화 끝
+    35.01s  user  발화 시작: …kind of products does Ornua actually sell?
+    35.01s  user  발화 끝
+    37.41s  <ret> 발화 (turn7 첫 프레임)
+    37.73s  agent 발화 시작: <ret> Ornua is a global Irish food company that produces and
+    37.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.89s]: Ornua is a global Irish food company that produces and markets a range
+    37.73s  user  발화 끝
+    48.62s  user  발화 시작: So, primarily dairy products then?
+    48.62s  agent 발화 끝
+    50.57s  agent 발화 시작: That’s right. It’s a very dairy-focused company, yes. You're
+    50.57s  user  발화 끝
+    56.01s  user  발화 시작: Yeah.
+    56.01s  agent 발화 끝
+    56.40s  user  발화 시작: I'm thinking of mixing it with coffee. Is that a common thin
+    56.40s  user  발화 끝
+    61.85s  agent 발화 시작: It's delicious in coffee, actually. A very popular combinati
+    61.85s  user  발화 끝
+    65.35s  user  발화 시작: Okay, good. What's the alcohol percentage, roughly?
+    65.35s  agent 발화 끝
+    67.83s  <ret> 발화 (turn14 첫 프레임)
+    68.07s  agent 발화 시작: <ret> It contains 17% alcohol by volume. A moderate strength
+    68.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.45s]: Kerrygold Irish Cream Liqueur contains 17% alcohol by volume.
+    68.07s  user  발화 끝
+    73.52s  user  발화 시작: Really?
+    73.52s  agent 발화 끝
+    73.91s  user  발화 시작: Seventeen percent… that's not too bad. Is it a recent produc
+    73.91s  user  발화 끝
+    80.51s  <ret> 발화 (turn17 첫 프레임)
+    80.91s  agent 발화 시작: <ret> It was first introduced in 1999, becoming a popular ad
+    80.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.17s]: Kerrygold Irish Cream Liqueur was first introduced in 1999, becoming a
+    80.91s  user  발화 끝
+    89.08s  user  발화 시작: 1999? That *is* recent. Is it widely available in the US?
+    89.08s  agent 발화 끝
+    92.96s  <ret> 발화 (turn19 첫 프레임)
+    93.36s  agent 발화 시작: <ret> It's available in select US states, including Californ
+    93.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: Kerrygold Irish Cream Liqueur is available in select US states, includ
+    93.36s  user  발화 끝
+    99.19s  user  발화 시작: Yeah.
+    99.19s  agent 발화 끝
+    99.58s  user  발화 시작: Okay, so not everywhere. What about Canada?
+    99.58s  user  발화 끝
+   102.22s  <ret> 발화 (turn22 첫 프레임)
+   102.30s  agent 발화 시작: <ret> It's widely available across Canada, particularly in l
+   102.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.39s]: Kerrygold Irish Cream Liqueur is widely available across Canada, parti
+   102.30s  user  발화 끝
+   109.70s  user  발화 시작: Mm-hmm.
+   109.70s  agent 발화 끝
+   110.08s  user  발화 시작: Good to know. I wonder if they ship directly…
+   110.08s  user  발화 끝
+   113.59s  agent 발화 시작: I can check if they offer direct shipping. One moment—
+   113.59s  user  발화 끝
+   117.48s  user  발화 시작: …Actually, what other flavors do they make?
+   117.48s  agent 발화 끝
+   120.04s  <ret> 발화 (turn27 첫 프레임)
+   120.20s  agent 발화 시작: <ret> It’s currently only available in its original flavor; 
+   120.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.56s]: Kerrygold Irish Cream Liqueur is currently only available in its origi
+   120.20s  user  발화 끝
+   128.76s  user  발화 시작: Yeah.
+   128.76s  agent 발화 끝
+   129.15s  user  발화 시작: Oh, just the original, huh? That’s a shame. Is it expensive,
+   129.15s  user  발화 끝
+   133.57s  <ret> 발화 (turn30 첫 프레임)
+   133.81s  agent 발화 시작: <ret> A 750ml bottle typically retails for around $29.99 in 
+   133.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: A 750ml bottle of Kerrygold Irish Cream Liqueur typically retails for 
+   133.81s  user  발화 끝
+   140.81s  user  발화 시작: Thirty dollars… not terrible. What about online retailers? A
+   140.81s  agent 발화 끝
+   145.63s  <ret> 발화 (turn32 첫 프레임)
+   145.87s  agent 발화 시작: <ret> Drizly offers it for $32.99 with delivery, while Total
+   145.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.39s]: (tool result) Drizly offers Kerrygold Irish Cream Liqueur for $32.99 w
+   145.87s  user  발화 끝
+   153.26s  user  발화 시작: Uh-huh.
+   153.26s  agent 발화 끝
+   153.65s  user  발화 시작: Total Wine sounds better. Do they have locations near me?
+   153.65s  user  발화 끝
+   157.46s  <ret> 발화 (turn35 첫 프레임)
+   157.54s  agent 발화 시작: <ret> There's a Total Wine & More at 9301 De Soto Ave, Chats
+   157.54s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.00s]: (tool result) Total Wine & More - Northridge, 9301 De Soto Ave, Chatsw
+   157.54s  user  발화 끝
+   164.54s  user  발화 시작: Mm-hmm.
+   164.54s  agent 발화 끝
+   164.93s  user  발화 시작: Perfect! Thanks. Do you have any advice for throwing a good 
+   164.93s  user  발화 끝
+   169.60s  agent 발화 시작: Planning is key, of course. Remember to have a good mix of m
+   169.60s  user  발화 끝
+   175.44s  user  발화 시작: Music, right. Any recommendations? Something upbeat?
+   175.44s  agent 발화 끝
+   177.77s  agent 발화 시작: Upbeat music always sets a good mood! Consider a playlist wi
+   177.77s  user  발화 끝
+   182.83s  user  발화 시작: Yeah.
+   182.83s  agent 발화 끝
+   183.21s  user  발화 시작: Good idea. I always forget about the playlist. What's the we
+   183.21s  user  발화 끝
+   189.67s  <ret> 발화 (turn43 첫 프레임)
+   189.83s  agent 발화 시작: <ret> Saturday will be sunny with a high of 82°F and a low o
+   189.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Saturday: High 82°F, low 68°F, sunny. Wind 5 mph from th
+   189.83s  user  발화 끝
+   197.61s  user  발화 시작: Sounds perfect. Thanks, Relis.
+   197.61s  agent 발화 끝
+   199.16s  agent 발화 시작: You’re very welcome. Remember, a relaxed host makes for rela
+   199.16s  user  발화 끝
+   203.44s  agent 발화 끝

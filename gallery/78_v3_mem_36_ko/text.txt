@@ -1,63 +1,69 @@
 v3_mem_36_ko src=mem style=mem
-SYSTEM: <system> 당신은 크로랜이며, 사람들의 우정과 사교 생활을 돕는 따뜻하고 세심한 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 베리크스이며, 건강 및 일상 습관에 대해 사람들을 돕는 현실적이고 공감적인 지원 조언자입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "시람",
+    "name": "세민",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
+      "date": "2026-04-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-03-29",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-10-27",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
+      "text": "User is planning a trip to Switzerland in August."
     },
     {
-      "date": "2025-12-05",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-11-13",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-07-08",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-05-31",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-26",
-      "title": "Researching a used car",
+      "date": "2025-07-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 시람님. 저는 크로랜이라고 해요. 오늘 시람님의 하루를 좀 더 즐겁게 만들어 드릴 수 있을까요?
-[  7.70s][user ] «backchannel» 음.
-[  8.22s][user ] 안녕하세요, 크로랜 씨. 전에 리스본 여행 계획에 대해 말씀드렸었죠? ⟨ret@12.68s⟩
-[ 12.84s][moshi] ⟦⚡SPAN@12.84s: [2026-06-28] User is planning a trip to Lisbon in October.⟧ 네, 맞아요. 시람님께서 올해 시월에 리스본 여행을 계획하고 계신다는 걸 기억하고 있어요.
-[ 19.00s][user ] «backchannel» 네.
-[ 19.52s][user ] 아, 맞아요! 그 리스본 여행… 혹시 괜찮은 호텔 좀 알아봐 주실 수 ⟨ret@25.79s⟩ 있을까요?
-[ 26.19s][moshi] ⟦⚡SPAN@26.19s: (tool result) Found 12 hotels in Lisbon. Prices range from $75 to $350 per night.⟧ 리스본에서 열두 곳의 호텔을 찾았어요. 숙박 요금은 한밤에 칠십오달러부터 삼백오십달러까지 다양합니다.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Lisbon"}}
-[ 31.84s][user ] …근데, 혹시 포도 알레르기가 있는 사람에게 괜찮은 호텔일까요?
-[ 35.95s][moshi] 아, 그 점은 미처 확인하지 못했네요—
+[  0.00s][moshi] 안녕하세요, 세민님. 저는 베리크스입니다. 건강과 일상 습관을 도와드리는 에이전트예요.
+[  4.57s][user ] 음… 전에 스위스 여행 계획 얘기했었죠? ⟨ret@7.45s⟩
+[  7.61s][moshi] ⟦⚡SPAN@7.61s: [2025-10-27] User is planning a trip to Switzerland in August.⟧ 네, 세민님. 팔월에 스위스 여행을 계획하고 계신다고 말씀하셨었어요.
+[ 11.68s][user ] «backchannel» 맞아.
+[ 12.18s][user ] 그럼 혹시 그 여행에 대해 제가 뭘 더 얘기했었는지 ⟨ret@16.86s⟩ 기억나요?
+[ 17.26s][moshi] ⟦⚡SPAN@17.26s: [2025-10-27] User is planning a trip to Switzerland in August.⟧ 아, 스위스 여행 계획에 대해서는 팔월에 가신다는 것만 기록되어 있네요. 다른 내용은 없어요.
+[ 23.86s][user ] «backchannel» 진짜?
+[ 24.37s][moshi] 혹시 여행 준비는 잘 되어 가시나요? 스위스는 정말 아름다운 곳이죠.
+[ 29.44s][user ] 최근에 새 취미가 생겼는데, 제가 뭘 좋아하는지 ⟨ret@33.18s⟩ 기억하세요?
+[ 33.50s][moshi] ⟦⚡SPAN@33.50s: [2025-05-31] User is into birdwatching.⟧ 네, 세민님. 새 관찰에 관심이 많다고 말씀하셨었죠. 요즘도 즐겨 하시는지 궁금하네요. — 새 관찰은 마음을 편안하게 해주는 좋은 취미 같아요.
+[ 43.66s][user ] «backchannel» 응.
+[ 44.16s][user ] 맞아요, 정말 힐링 돼요. 아, 그리고 생일 파티도 곧 있을 텐데… ⟨ret@49.59s⟩
+[ 49.75s][moshi] ⟦⚡SPAN@49.75s: [2025-07-04] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ 네, 여섯명으로 야외 좌석이 있는 생일 저녁 식사를 계획하고 계셨었죠. 혹시 예약은 다 되셨나요?
+[ 56.85s][user ] 아직 예약은 못 했어요. 괜찮은 곳 좀 찾아줄 수 있을까요? ⟨ret@61.77s⟩
+[ 61.93s][moshi] ⟦⚡SPAN@61.93s: (tool result) Restaurants found: 'Garden Terrace', Italian, outdoor seating, 4.5 stars, ₩50,000 average cost; ⟧ 네, 야외 좌석이 있는 괜찮은 식당 두 곳을 찾았어요. '가든 테라스'는 이탈리아 음식점이고, '마운틴 뷰'는 한국 바비큐 식당이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}

@@ -4,107 +4,80 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Oscar",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-07",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     },
 #     {
-#       "date": "2025-09-04",
+#       "date": "2025-12-18",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2025-11-27",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-11-18",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-11",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-14",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-07",
+#       "date": "2025-08-02",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly does a life coach *do | S2 It’s just… repetitive. No room to  | S3 That’s good to hear. I’ve always b | S4 Maybe. It’s scary, though. Leaving
 
-     0.00s  agent 발화 시작: Hello Oscar, it’s lovely to connect with you. I'm Falo.
-     3.65s  user  발화 시작: Yeah.
-     3.65s  agent 발화 끝
-     4.01s  user  발화 시작: What exactly does a life coach *do*?
-     4.01s  user  발화 끝
-     6.57s  agent 발화 시작: I help you explore your thoughts and feelings, identify what
-     6.57s  user  발화 끝
-    14.96s  user  발화 시작: Yeah.
-    14.96s  agent 발화 끝
-    15.32s  user  발화 시작: Sounds… intense. I'm just feeling a bit stuck lately, you kn
-    15.32s  user  발화 끝
-    19.34s  agent 발화 시작: It's completely normal to feel stuck sometimes, Oscar. It ta
-    19.34s  user  발화 끝
-    28.09s  user  발화 시작: Probably work. I’ve been at the same company for fifteen yea
-    28.09s  agent 발화 끝
-    34.66s  agent 발화 시작: Fifteen years is a significant commitment. It’s understandab
-    34.66s  user  발화 끝
-    42.68s  user  발화 시작: Yeah.
-    42.68s  agent 발화 끝
-    43.05s  user  발화 시작: It’s just… repetitive. No room to grow. I feel like I’m just
-    43.05s  user  발화 끝
-    50.35s  agent 발화 시작: It sounds like you’re craving a sense of purpose and challen
-    50.35s  user  발화 끝
-    56.55s  user  발화 시작: …do you think it’s too late to change careers at my age?
-    56.55s  agent 발화 끝
-    60.93s  agent 발화 시작: Absolutely not! It's never too late to pursue something that
-    60.93s  user  발화 끝
-    68.95s  user  발화 시작: That’s good to hear. I’ve always been interested in photogra
-    68.95s  agent 발화 끝
-    75.15s  agent 발화 시작: Photography is a wonderful creative outlet. What draws you t
-    75.15s  user  발화 끝
-    83.91s  user  발화 시작: Right.
-    83.91s  agent 발화 끝
-    84.27s  user  발화 시작: I think… capturing a moment. Preserving a feeling. It feels 
-    84.27s  user  발화 끝
-    88.29s  agent 발화 시작: That’s a beautiful way to put it. It sounds like photography
-    88.29s  user  발화 끝
-    98.14s  user  발화 시작: Yeah, yeah.
-    98.14s  agent 발화 끝
-    98.87s  user  발화 시작: Maybe. It’s scary, though. Leaving the security of a steady 
-    98.87s  user  발화 끝
-   102.88s  agent 발화 시작: It’s perfectly natural to feel apprehensive about change, Os
-   102.88s  user  발화 끝
-   112.37s  user  발화 시작: I guess… having a plan. Knowing I could actually make a livi
-   112.37s  agent 발화 끝
-   117.47s  agent 발화 시작: That’s a very practical approach. A solid plan can definitel
-   117.47s  user  발화 끝
-   127.32s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Taylor, welcome. I'm Doralo.
+     2.01s  user  발화 시작: Um, I’ve just been feeling so wired lately, even at night.
+     2.01s  agent 발화 끝
+     6.43s  agent 발화 시작: It’s understandable to feel that way, Taylor. What does “wir
+     6.43s  user  발화 끝
+    12.46s  user  발화 시작: Welll… just like my brain won’t *stop*. I keep replaying thi
+    12.46s  agent 발화 끝
+    17.29s  agent 발화 시작: That’s a common experience when stress builds up. Have you t
+    17.29s  user  발화 끝
+    23.72s  user  발화 시작: Mm-hmm.
+    23.72s  agent 발화 끝
+    24.12s  user  발화 시작: No, not really. I usually just… scroll on my phone until I p
+    24.12s  user  발화 끝
+    31.36s  user  발화 끝

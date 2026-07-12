@@ -4,66 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "주람",
+#     "name": "민완",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-23",
+#       "date": "2026-06-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-06-19",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-05-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2026-04-14",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-10-08",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-08-29",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "date": "2026-03-19",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-18",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-18",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이천십육년 소유 댄스에서 누가 우승했는지 알려줘.
-     3.27s  <ret> 발화 (turn1 첫 프레임)
-     3.43s  agent 발화 시작: <ret> 이천십육년 소유 댄스 우승자는 레온 "키다" 번스라고 하네요. 춤 실력이 정말 대단했죠.
-     3.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Leon "Kida" Burns won the twelfth season of So You Think You Can Dance
-     3.43s  user  발화 끝
-    10.29s  agent 발화 끝
+     0.00s  user  발화 시작: 리버데일 시즌 일의 십이화는 언제 방영됐어요?
+     3.18s  <ret> 발화 (turn1 첫 프레임)
+     3.34s  agent 발화 시작: <ret> 리버데일 시즌 일의 십이화는 이천십칠년 오월 사일에 방영됐어요. 혹시 다른 에피소드에 대해서도 궁
+     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.24s]: The twelfth episode of Riverdale’s first season aired on May 4, 2017.
+     3.34s  user  발화 끝
+    10.58s  agent 발화 끝

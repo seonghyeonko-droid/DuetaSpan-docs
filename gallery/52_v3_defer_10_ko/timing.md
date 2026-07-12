@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "다아",
+#     "name": "연율",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,118 +13,132 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
+#       "date": "2026-06-13",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-02-28",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-10-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-09-15",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-11-30",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-11-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-13",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-10-20",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-09",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-18",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 슬랙봇 사용자 에이전트로 설정해 줄 수 있어? 링크 확장 버전 | S2 잊혀진 메아리? 음… 평점은 얼마나 돼? | S3 칠월 십이일 오후 두시 정도로 부탁해. | S4 혹시… 지난달에 내가 뭐라고 메모해 뒀었지?
+# EXAMINER(FDB-v2) 단계: S1 아델의 Someone Like You를 거실에서 틀어줘. | S2 고마워. 혹시… 내일 모레 알람 맞춰줄 수 있어? | S3 …혹시 집 근처에 분위기 좋은… | S4 음… 이번 주말에 부산 갈까 생각 중인데, 기차표 예매해 줄 
 
-     0.00s  user  발화 시작: 슬랙봇 사용자 에이전트로 설정해 줄 수 있어? 링크 확장 버전 일으로.
-     4.98s  <ret> 발화 (turn1 첫 프레임)
-     5.06s  agent 발화 시작: <ret> 사용자 에이전트를 슬랙봇 링크 확장 버전 일으로 설정했습니다. 혹시 다른 설정도 도와드릴까요?
-     5.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: (tool result) User agent set to Slackbot LinkExpanding version 1.0.
-     5.06s  user  발화 끝
-    10.59s  user  발화 시작: 음, 그건 됐어. 이번 주 토요일에 서울 날씨 알려줘.
-    10.59s  agent 발화 끝
-    14.33s  <ret> 발화 (turn3 첫 프레임)
-    14.73s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 맑고, 기온은 이십오 점 오도, 습도는 육십팔퍼센트, 바람은 시속 삼
-    14.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: (tool result) 25.5°C, humidity 68%, wind 3.2 km/h, clear skies.
-    14.73s  user  발화 끝
-    23.02s  user  발화 시작: 그렇군요.
-    23.02s  agent 발화 끝
-    23.48s  user  발화 시작: 고마워. 그럼… 요즘 제일 인기 있는 영화가 뭐야?
-    23.48s  user  발화 끝
-    26.84s  <ret> 발화 (turn6 첫 프레임)
-    27.16s  agent 발화 시작: <ret> 현재 가장 인기 있는 영화는 이천이십육년 유월 이십일에 개봉한 에스 에프 스릴러 “잊혀진 메아리”
-    27.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.45s]: (tool result) The top-rated movie currently is "Echoes of the Forgotte
-    27.16s  user  발화 끝
-    33.61s  user  발화 시작: 음.
-    33.61s  agent 발화 끝
-    34.07s  user  발화 시작: 잊혀진 메아리? 음… 평점은 얼마나 돼?
-    34.07s  user  발화 끝
-    36.43s  <ret> 발화 (turn9 첫 프레임)
-    36.83s  agent 발화 시작: <ret> “잊혀진 메아리”는 로튼 토마토에서 십점 만점에 팔 점 칠점, 관객 평점은 구십이퍼센트입니다.
-    36.83s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.52s]: (tool result) "Echoes of the Forgotten" has a rating of 8.7 out of 10 
-    36.83s  user  발화 끝
-    42.36s  user  발화 시작: 와.
-    42.36s  agent 발화 끝
-    42.82s  user  발화 시작: 꽤 높네. — 혹시 내일 모레 부산 가는 기차표 예매해 줄 수 있어?
-    42.82s  user  발화 끝
-    48.80s  agent 발화 시작: 부산 가는 기차표 예매를 도와드릴 수 있습니다. 정확한 날짜와 시간을 알려주시겠어요?
-    48.80s  user  발화 끝
-    53.86s  user  발화 시작: 네.
-    53.86s  agent 발화 끝
-    54.33s  user  발화 시작: 칠월 십이일 오후 두시 정도로 부탁해.
-    54.33s  user  발화 끝
-    56.85s  <ret> 발화 (turn15 첫 프레임)
-    57.09s  agent 발화 시작: <ret> 칠월 십이일 오후 두시 오분에 서울역에서 출발하여 오후 다섯시 삼십분에 부산역에 도착하는 케이 티
-    57.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.97s]: (tool result) KTX train #123 departs Seoul Station at 14:05 and arrive
-    57.09s  user  발화 끝
-    69.06s  user  발화 시작: 와, 빠르다. 확인해 줘서 고마워.
-    69.06s  agent 발화 끝
-    71.36s  agent 발화 시작: 천만에요. 언제든지 필요한 일이 있다면 저에게 말씀해주세요.
-    71.36s  user  발화 끝
-    74.58s  user  발화 시작: 혹시… 지난달에 내가 뭐라고 메모해 뒀었지?
-    74.58s  agent 발화 끝
-    77.34s  agent 발화 시작: 이 공 이 육 공 육 일 오] 다음 주 화요일에 치과 예약해야 해.
-    77.34s  user  발화 끝
-    83.79s  agent 발화 시작: 이천이십육년 유월 십오일에 “다음 주 화요일에 치과 예약해야 해”라고 메모해 두셨습니다. 혹시 예약 도와드릴
-    83.79s  agent 발화 끝
-    90.23s  user  발화 시작: 아, 맞아! 그럼 치과 예약 좀 부탁해. 다음 주 화요일 오전 열시로.
-    90.23s  agent 발화 끝
-    95.44s  <ret> 발화 (turn22 첫 프레임)
-    95.76s  agent 발화 시작: <ret> 칠월 십오일 오전 열시에 김 선생님의 서울 치과 예약이 완료되었습니다. 예약번호는 일 이 씨 디 
-    95.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) Appointment with Dr. Kim at Seoul Dental Clinic booked f
-    95.76s  user  발화 끝
-   103.59s  agent 발화 끝
+     0.00s  user  발화 시작: 아델의 Someone Like You를 거실에서 틀어줘.
+     2.58s  <ret> 발화 (turn1 첫 프레임)
+     2.66s  agent 발화 시작: <ret> 아델의 Someone Like You를 거실에서 재생합니다. 확인 번호는 팔 구 엑스 제트 이 삼
+     2.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.54s]: (tool result) Playing "Someone Like You" by Adele in the living room. 
+     2.66s  user  발화 끝
+    10.21s  user  발화 시작: 오늘 날씨 어때?
+    10.21s  agent 발화 끝
+    11.14s  <ret> 발화 (turn3 첫 프레임)
+    11.54s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십팔 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터입니다
+    11.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.66s]: (tool result) The current weather in Seoul is 28.5°C, humidity 68%, wi
+    11.54s  user  발화 끝
+    18.19s  user  발화 시작: 이번 주 토요일에 영화 보러 갈 만한 곳 있어?
+    18.19s  agent 발화 끝
+    21.79s  <ret> 발화 (turn5 첫 프레임)
+    22.19s  agent 발화 시작: <ret> 이번 주 토요일에 롯데시네마 월드타워에서 '인사이드 아웃 이'를 상영합니다. 두시, 다섯시 삼십분
+    22.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) "Inside Out 2" is playing at Lotte Cinema World Tower, s
+    22.19s  user  발화 끝
+    28.40s  user  발화 시작: 응.
+    28.40s  agent 발화 끝
+    28.84s  user  발화 시작: 다섯시 삼십분으로 예매해 줘.
+    28.84s  user  발화 끝
+    30.22s  <ret> 발화 (turn8 첫 프레임)
+    30.62s  agent 발화 시작: <ret> '인사이드 아웃 이' 다섯시 삼십분 상영 티켓 두 장 예매 완료되었습니다. 확인 번호는 와이 칠 
+    30.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.76s]: (tool result) Two tickets for "Inside Out 2" at Lotte Cinema World Tow
+    30.62s  user  발화 끝
+    40.38s  user  발화 시작: 고마워. 혹시… 내일 모레 알람 맞춰줄 수 있어?
+    40.38s  agent 발화 끝
+    43.93s  agent 발화 시작: 몇 시로 맞춰드릴까요?
+    43.93s  user  발화 끝
+    45.26s  user  발화 시작: 아, 일곱시에 맞춰줘.
+    45.26s  agent 발화 끝
+    46.36s  <ret> 발화 (turn12 첫 프레임)
+    46.60s  agent 발화 시작: <ret> 내일 오전 일곱시에 알람을 설정했습니다. 푹 주무세요.
+    46.60s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.11s]: (tool result) Alarm set for 7:00 AM tomorrow.
+    46.60s  user  발화 끝
+    49.70s  user  발화 시작: 오늘 저녁 메뉴 추천해 줘.
+    49.70s  agent 발화 끝
+    51.68s  <ret> 발화 (turn14 첫 프레임)
+    51.92s  agent 발화 시작: <ret> 명동 고궁이라는 한식집이 평점 사 점 오점에, 이백미터 거리에 있습니다. 괜찮으시겠어요?
+    51.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.88s]: (tool result) "Gogung Myeongdong" serves Korean cuisine, rated 4.5 sta
+    51.92s  user  발화 끝
+    56.80s  user  발화 시작: 맞아.
+    56.80s  agent 발화 끝
+    57.25s  user  발화 시작: 음… 거기는 좀 멀리 떨어져 있네. —
+    57.25s  user  발화 끝
+    60.35s  user  발화 시작: …혹시 집 근처에 분위기 좋은…
+    60.35s  user  발화 끝
+    62.57s  user  발화 시작: …카페 알아봐 줄 수 있어?
+    62.57s  user  발화 끝
+    64.55s  <ret> 발화 (turn19 첫 프레임)
+    64.79s  agent 발화 시작: <ret> 집 근처에 카페 레이어드가 평점 사 점 이점에 오백미터 거리에 있습니다. 분위기가 좋다고 합니다.
+    64.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) "Cafe Layered" is a popular cafe, 500m away, with a 4.2-
+    64.79s  user  발화 끝
+    71.00s  user  발화 시작: 응.
+    71.00s  agent 발화 끝
+    71.45s  user  발화 시작: 오, 거기는 가보고 싶었는데.
+    71.45s  user  발화 끝
+    73.22s  agent 발화 시작: 전에 말씀하신 적이 있으셨나요? 기억이 잘 안 나네요.
+    73.22s  user  발화 끝
+    76.77s  user  발화 시작: 아니, 그냥 처음 듣는 얘기야.
+    76.77s  agent 발화 끝
+    78.99s  agent 발화 시작: 아, 그러셨군요. 혹시 다른 계획은 없으신가요?
+    78.99s  user  발화 끝
+    81.65s  user  발화 시작: 응.
+    81.65s  agent 발화 끝
+    82.10s  user  발화 시작: 음… 이번 주말에 부산 갈까 생각 중인데, 기차표 예매해 줄 수 있어?
+    82.10s  user  발화 끝
+    87.26s  <ret> 발화 (turn27 첫 프레임)
+    87.42s  agent 발화 시작: <ret> 부산행 기차는 서울역에서 오전 아홉시, 열두시, 오후 세시에 출발합니다.
+    87.42s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.99s]: (tool result) Trains to Busan depart from Seoul Station at 9:00 AM, 12
+    87.42s  user  발화 끝
+    91.42s  user  발화 시작: 열두시 기차로 예매해 줘.
+    91.42s  agent 발화 끝
+    92.95s  <ret> 발화 (turn29 첫 프레임)
+    93.19s  agent 발화 시작: <ret> 부산행 열두시 기차 티켓 한 장 예매 완료되었습니다. 확인 번호는 큐 삼 팔 알 오 이입니다. 즐
+    93.19s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.43s]: (tool result) One ticket to Busan on the 12:00 PM train, confirmed. Co
+    93.19s  user  발화 끝
+   101.62s  user  발화 시작: 고마워, 패라.
+   101.62s  agent 발화 끝
+   102.51s  agent 발화 시작: 천만에요.
+   102.51s  user  발화 끝
+   102.95s  agent 발화 끝

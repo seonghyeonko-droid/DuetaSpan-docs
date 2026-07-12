@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "다현",
+#     "name": "민정",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,53 +12,40 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-22",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-01-12",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-03-05",
+#       "date": "2025-12-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-10-25",
+#       "date": "2025-11-09",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-09-18",
+#       "date": "2025-10-07",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-07-29",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-07-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-09",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-11",
+#       "date": "2026-05-31",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -66,20 +53,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-31",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-09",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 무지개 끝에서 노래한 사람은 누구였어?
-     2.45s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> 무지개 끝에서 노래한 사람은 얼 그랜트였어요. 그는 천구백오십팔년에 '무지개의 끝'이라는 곡으로 
-     2.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.61s]: Earl Grant was an American baritone and bass singer, best known for hi
-     2.69s  user  발화 끝
-    11.31s  agent 발화 끝
+     0.00s  user  발화 시작: 공군력이 어디서 출발하는지 궁금해.
+     2.09s  <ret> 발화 (turn1 첫 프레임)
+     2.33s  agent 발화 시작: <ret> 공군력은 메릴랜드 주에 있는 앤드루스 공군 기지에서 출발해요. 그곳은 프린스 조지스 카운티에 위치
+     2.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: Andrews Air Force Base is a United States Air Force base located in Pr
+     2.33s  user  발화 끝
+    10.49s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "하온",
+#     "name": "서람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,133 +13,150 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-09-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-09-17",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-08-25",
+#       "date": "2026-01-12",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-07-20",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2025-09-13",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-06-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2025-05-31",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-03",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-24",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 혹시 마사 그레이엄에 대해 아세요? | S2 천팔백구십사년이라니, 엄청 오래전이네요. | S3 독특하다니, 어떤 점이 독특한데요? | S4 와, 정말 대단한 사람이었네요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 케리골드 아이리쉬 크림 리큐어, 그거 어떤 회사가 만드는 | S2 풀을 먹고 자란 소라… 그래서 맛이 다른 건가 보네요. 그럼  | S3 그 오르누아 회사, 버터 말고 다른 제품도 많이 만드나요? | S4 근데 그 오르누아 회사, 한국에도 진출해 있나요?
 
-     0.00s  user  발화 시작: 안녕하세요, 혹시 마사 그레이엄에 대해 아세요?
-     3.00s  agent 발화 시작: 안녕하세요. 마사 그레이엄은 미국의 모던 댄서이자 안무가였습니다.
-     3.00s  user  발화 끝
-     6.49s  user  발화 시작: 네네.
-     6.49s  agent 발화 끝
-     6.99s  user  발화 시작: 아, 모던 댄스요? 그게 뭔데요?
-     6.99s  user  발화 끝
-     9.49s  agent 발화 시작: 모던 댄스는 전통적인 발레의 틀에서 벗어나 자유로운 움직임을 추구하는 춤입니다.
-     9.49s  user  발화 끝
-    14.48s  user  발화 시작: 그렇군요. 마사 그레이엄은 어떤 스타일의 춤을 췄나요?
-    14.48s  agent 발화 끝
-    17.90s  <ret> 발화 (turn6 첫 프레임)
-    17.98s  agent 발화 시작: <ret> 마사 그레이엄은 미국의 춤을 완전히 바꾸었고, 그녀의 기법은 —
-    17.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.50s]: Martha Graham reshaped American dance and is still taught worldwide, a
-    17.98s  user  발화 끝
-    22.48s  user  발화 시작: …그 기법이 지금도 배우는 사람들이 있어요?
-    22.48s  agent 발화 끝
-    25.47s  agent 발화 시작: 네, 그녀의 기법은 전 세계적으로 여전히 가르쳐지고 있습니다.
-    25.47s  user  발화 끝
-    29.47s  user  발화 시작: 오, 정말 대단하네요. 마사 그레이엄은 언제 태어났나요?
-    29.47s  agent 발화 끝
-    32.80s  <ret> 발화 (turn10 첫 프레임)
-    32.96s  agent 발화 시작: <ret> 그녀는 천팔백구십사년 오월 십일일에 태어났습니다.
-    32.96s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.50s]: Martha Graham was born on May 11, 1894.
-    32.96s  user  발화 끝
-    35.46s  user  발화 시작: 천팔백구십사년이라니, 엄청 오래전이네요.
-    35.46s  agent 발화 끝
-    36.96s  agent 발화 시작: 네, 꽤 오래전이죠. 그 시대에는 춤에 대한 인식이 지금과는 달랐을 거예요.
-    36.96s  user  발화 끝
-    42.45s  user  발화 시작: 혹시 마사 그레이엄이 만든 작품 중에 유명한 게 있을까요?
-    42.45s  agent 발화 끝
-    46.95s  agent 발화 시작: 그녀의 작품은 매우 많지만, 'Lamentation'이 특히 유명합니다.
-    46.95s  user  발화 끝
-    50.44s  user  발화 시작: Lamentation요? 그건 어떤 춤인가요?
-    50.44s  agent 발화 끝
-    52.44s  agent 발화 시작: 'Lamentation'은 슬픔과 고통을 표현하는 추상적인 솔로 춤입니다.
-    52.44s  user  발화 끝
-    55.94s  user  발화 시작: 네.
-    55.94s  agent 발화 끝
-    56.44s  agent 발화 시작: 춤을 통해 인간의 깊은 감정을 표현하려고 노력했습니다.
-    56.44s  user  발화 끝
-    59.93s  user  발화 시작: 네.
-    59.93s  agent 발화 끝
-    60.43s  user  발화 시작: 마사 그레이엄의 춤은 다른 춤들과 어떤 점이 다른가요?
-    60.43s  user  발화 끝
-    64.03s  <ret> 발화 (turn21 첫 프레임)
-    64.43s  agent 발화 시작: <ret> 그레이엄 기법은 마사 그레이엄이 창안한 독특한 모던 댄스 운동 스타일이자 교육법입니다.
-    64.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.49s]: The Graham technique is a modern dance movement style and pedagogy cre
-    64.43s  user  발화 끝
-    69.92s  user  발화 시작: 네.
-    69.92s  agent 발화 끝
-    70.42s  user  발화 시작: 독특하다니, 어떤 점이 독특한데요?
-    70.42s  user  발화 끝
-    72.42s  agent 발화 시작: 그녀의 기법은 수축과 이완, 땅에 대한 연결, 그리고 감정의 표현에 중점을 둡니다.
-    72.42s  user  발화 끝
-    78.41s  user  발화 시작: 수축과 이완이라… 좀 더 자세히 설명해 주실 수 있나요?
-    78.41s  agent 발화 끝
-    82.91s  agent 발화 시작: 수축은 몸을 안으로 굽히는 동작이고, 이완은 몸을 풀어주는 동작입니다.
-    82.91s  user  발화 끝
-    87.40s  user  발화 시작: 아, 이해했어요. 마치 숨을 쉬는 것과 비슷하네요.
-    87.40s  agent 발화 끝
-    90.90s  agent 발화 시작: 네, 맞아요. 호흡과 움직임이 긴밀하게 연결되어 있습니다.
-    90.90s  user  발화 끝
-    94.40s  user  발화 시작: 마사 그레이엄의 춤은 현대 춤에 어떤 영향을 미쳤나요?
-    94.40s  agent 발화 끝
-    98.39s  agent 발화 시작: 그녀의 춤은 미국 춤의 지형을 완전히 바꿔 놓았다고 평가받고 있습니다.
-    98.39s  user  발화 끝
-   103.39s  user  발화 시작: 와, 정말 대단한 사람이었네요.
-   103.39s  agent 발화 끝
-   105.38s  agent 발화 시작: 네, 그녀는 춤 역사에 큰 발자취를 남겼습니다.
-   105.38s  user  발화 끝
-   108.88s  user  발화 시작: 혹시 마사 그레이엄의 춤을 볼 수 있는 곳이 있을까요?
-   108.88s  agent 발화 끝
-   113.38s  agent 발화 시작: 지금은 라이브 공연을 찾기 어렵지만, 영상 자료는 많이 있습니다.
-   113.38s  user  발화 끝
-   117.87s  user  발화 시작: 그렇죠.
-   117.87s  agent 발화 끝
-   118.37s  user  발화 시작: 영상 자료요? 어디서 찾아볼 수 있을까요?
-   118.37s  user  발화 끝
-   121.37s  agent 발화 시작: 유튜브나 Vimeo 같은 영상 공유 사이트에서 찾아보실 수 있습니다.
-   121.37s  user  발화 끝
-   125.86s  user  발화 시작: 알겠습니다. 한번 찾아봐야겠네요. 감사합니다.
-   125.86s  agent 발화 끝
-   127.86s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
-   127.86s  user  발화 끝
-   129.86s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 케리골드 아이리쉬 크림 리큐어, 그거 어떤 회사가 만드는지 아세요?
+     4.74s  <ret> 발화 (turn1 첫 프레임)
+     4.90s  agent 발화 시작: <ret> 케리골드는 아일랜드 유제품 브랜드인데, 아일랜드 낙농업자 협동조합인 오르누아에서 만들고 있어요.
+     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: Kerrygold is an Irish dairy products brand owned by Ornua, a cooperati
+     4.90s  user  발화 끝
+     9.80s  user  발화 시작: 오르누아요? 그 회사는 주로 뭘 파는 회사예요?
+     9.80s  agent 발화 끝
+    13.15s  <ret> 발화 (turn3 첫 프레임)
+    13.23s  agent 발화 시작: <ret> 오르누아는 매년 약 이억 이천만 킬로그램의 유제품을 생산해서 백삼십개국 이상에 수출하고 있대요.
+    13.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: Ornua produces approximately 220 million kilograms of dairy products a
+    13.23s  user  발화 끝
+    19.11s  user  발화 시작: 정말요?
+    19.11s  agent 발화 끝
+    19.60s  user  발화 시작: 꽤 많이 수출하네요. 그…
+    19.60s  user  발화 끝
+    21.55s  user  발화 시작: …유제품 종류가 구체적으로 뭐가 있나요?
+    21.55s  user  발화 끝
+    23.92s  <ret> 발화 (turn7 첫 프레임)
+    24.00s  agent 발화 시작: <ret> 오르누아의 제품 포트폴리오에는 버터, 치즈, 분유, 그리고 식품 제조 및 외식 산업용 원료가 포함
+    24.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.35s]: Ornua’s product portfolio includes butter, cheese, milk powders, and i
+    24.00s  user  발화 끝
+    31.35s  user  발화 시작: 버터랑 치즈는 당연하고, 분유도 파는군요. 혹시 케리골드 버터가 유명한 이유가 있나요?
+    31.35s  agent 발화 끝
+    36.34s  <ret> 발화 (turn9 첫 프레임)
+    36.74s  agent 발화 시작: <ret> 케리골드 버터는 아일랜드 소들이 풀을 먹고 자라면서 베타카로틴 함량이 높아져서 풍부하고 크리미한 
+    36.74s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.86s]: (tool result) Kerrygold butter is renowned for its rich, creamy flavor
+    36.74s  user  발화 끝
+    43.60s  user  발화 시작: 네.
+    43.60s  agent 발화 끝
+    44.09s  user  발화 시작: 풀을 먹고 자란 소라… 그래서 맛이 다른 건가 보네요. 그럼 그 소들은 어디에서 키워요?
+    44.09s  user  발화 끝
+    50.55s  <ret> 발화 (turn12 첫 프레임)
+    50.95s  agent 발화 시작: <ret> 케리골드 버터의 우유는 아일랜드의 푸른 초원에서 위치한 아일랜드 낙농장에서 나온다고 해요.
+    50.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: The milk for Kerrygold butter comes from Irish dairy farms located acr
+    50.95s  user  발화 끝
+    56.34s  user  발화 시작: 아일랜드 전역이군요. 혹시 그 버터, 가격은 어느 정도 해요?
+    56.34s  agent 발화 끝
+    60.59s  <ret> 발화 (turn14 첫 프레임)
+    60.75s  agent 발화 시작: <ret> 미국 슈퍼마켓에서 백십삼그램짜리 케리골드 순수 아이리쉬 버터는 보통 오 점 구 구달러에서 육 점 
+    60.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.82s]: (tool result) A 4-ounce package of Kerrygold Pure Irish Butter typical
+    60.75s  user  발화 끝
+    69.56s  user  발화 시작: 진짜요?
+    69.56s  agent 발화 끝
+    70.05s  user  발화 시작: 육달러 정도면 생각보다 비싸네요. 다른 버터보다 훨씬 비싼가요?
+    70.05s  user  발화 끝
+    73.73s  <ret> 발화 (turn17 첫 프레임)
+    73.97s  agent 발화 시작: <ret> 케리골드 버터는 독특한 생산 과정과 수입품이라는 점 때문에 일반 미국 버터 브랜드보다 보통 이십~
+    73.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.33s]: (tool result) Kerrygold butter is generally 20-30% more expensive than
+    73.97s  user  발화 끝
+    82.30s  user  발화 시작: 이십~삼십퍼센트나 더 비싸다니, 확실히 고급 버터인가 보네요.
+    82.30s  agent 발화 끝
+    85.73s  agent 발화 시작: 맞아요, 품질 면에서는 꽤 인정받는 버터라고 하네요.
+    85.73s  user  발화 끝
+    89.16s  user  발화 시작: 네.
+    89.16s  agent 발화 끝
+    89.65s  user  발화 시작: 그 오르누아 회사, 버터 말고 다른 제품도 많이 만드나요?
+    89.65s  user  발화 끝
+    93.74s  <ret> 발화 (turn22 첫 프레임)
+    94.06s  agent 발화 시작: <ret> 오르누아는 더블리너 치즈, 필그림스 초이스 치즈, 그리고 밴든 베일 치즈 등 다른 브랜드도 소유하
+    94.06s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.35s]: Ornua also owns the brands Dubliner cheese, Pilgrims Choice cheese, an
+    94.06s  user  발화 끝
+   101.41s  user  발화 시작: 예.
+   101.41s  agent 발화 끝
+   101.90s  user  발화 시작: 치즈도 많이 만드는군요. 그럼 그 회사 매출은 어느 정도 돼요?
+   101.90s  user  발화 끝
+   106.71s  <ret> 발화 (turn25 첫 프레임)
+   106.79s  agent 발화 시작: <ret> 이천이십이년에 오르누아는 이십억 육천만 유로의 매출을 기록했는데, 전년도보다 상당히 증가한 수치예
+   106.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: (tool result) In 2022, Ornua reported a turnover of €2.06 billion, a s
+   106.79s  user  발화 끝
+   112.18s  user  발화 시작: 네.
+   112.18s  agent 발화 끝
+   112.67s  user  발화 시작: 이십억 유로면 엄청나네요!
+   112.67s  user  발화 끝
+   114.14s  agent 발화 시작: 네, 꽤 큰 규모의 회사인 것 같아요.
+   114.14s  user  발화 끝
+   117.57s  user  발화 시작: 그 회사는 아일랜드 경제에 얼마나 영향을 미치나요?
+   117.57s  agent 발화 끝
+   120.84s  <ret> 발화 (turn30 첫 프레임)
+   121.00s  agent 발화 시작: <ret> 오르누아는 매년 아일랜드 경제에 삼십억 유로 이상을 기여하고, 직접 및 간접적으로 약 일만 팔천 
+   121.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.82s]: (tool result) Ornua contributes over €3 billion annually to the Irish 
+   121.00s  user  발화 끝
+   129.82s  user  발화 시작: 음.
+   129.82s  agent 발화 끝
+   130.31s  user  발화 시작: 일만 팔천 개의 일자리라니, 정말 큰 역할을 하는 회사군요.
+   130.31s  user  발화 끝
+   134.72s  agent 발화 시작: 네, 아일랜드 경제에 중요한 역할을 하는 회사라고 할 수 있겠네요.
+   134.72s  user  발화 끝
+   139.62s  user  발화 시작: 예.
+   139.62s  agent 발화 끝
+   140.11s  user  발화 시작: 근데 그 오르누아 회사, 한국에도 진출해 있나요?
+   140.11s  user  발화 끝
+   143.38s  <ret> 발화 (turn36 첫 프레임)
+   143.54s  agent 발화 시작: <ret> 케리골드 제품은 한국에서도 판매되고 있지만, 오르누아는 한국에 직접적인 자회사나 제조 시설을 가지
+   143.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.35s]: (tool result) While Kerrygold products are available in South Korea, O
+   143.54s  user  발화 끝
+   150.88s  user  발화 시작: 직접 자회사는 없군요. 그럼 수입해서 파는 건가요? —
+   150.88s  agent 발화 끝
+   154.80s  user  발화 시작: … 혹시 그 케리골드 버터, 유기농인가요?
+   154.80s  user  발화 끝
+   157.34s  <ret> 발화 (turn39 첫 프레임)
+   157.74s  agent 발화 시작: <ret> 유기농 인증 여부에 대해 말씀드리려고 했는데요 — 케리골드 버터는 유기농 인증은 받지 않았지만, 
+   157.74s  user  발화 끝
+   159.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.43s]: Kerrygold butter is not certified organic, but the cows are grass-fed 
+   170.48s  user  발화 시작: 유기농은 아니지만 풀을 먹고 자란 소라니, 괜찮네요.
+   170.48s  agent 발화 끝
+   173.91s  agent 발화 시작: 네, 풀을 먹고 자란 소에서 나오는 우유는 맛과 영양 면에서 더 좋다고 알려져 있어요.
+   173.91s  user  발화 끝
+   180.77s  agent 발화 끝

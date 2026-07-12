@@ -1,77 +1,63 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Borax, a practical and reassuring counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Brina, a encouraging and non-judgmental wellness coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Grace",
+    "name": "Emilia",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "late 30s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-03-09",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-02-11",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-09-29",
+      "date": "2026-05-06",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a chef."
     },
     {
-      "date": "2025-07-31",
+      "date": "2026-02-14",
       "category": "home",
-      "text": "User's home address is 94 Birch Road."
+      "text": "User's home address is 386 Pine Court."
+    },
+    {
+      "date": "2025-09-30",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-09-12",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-27",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-19",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-10-09",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-18",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-08-28",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the Vegas Golden Knights…
-[  2.54s][user ] …first join the National Hockey ⟨ret@4.83s⟩ League?
-[  5.07s][moshi] ⟦⚡SPAN@5.07s: The Vegas Golden Knights joined the National Hockey League as an expansion team for the 2017–18 season.⟧ Well, that’s a good question. The Vegas Golden Knights first joined the NHL for the 2017–18 season, which was quite exciting for hockey fans.
+[  0.00s][user ] When does the Disneyland electric light parade ⟨ret@3.04s⟩ end?
+[  3.28s][moshi] ⟦⚡SPAN@3.28s: The Disneyland Electric Light Parade concluded its run on August 20, 2017.⟧ That wonderful parade ended on August twentieth, 2017. It's okay to feel a little wistful about things changing, you know?

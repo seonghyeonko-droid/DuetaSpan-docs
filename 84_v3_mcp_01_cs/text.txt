@@ -1,84 +1,90 @@
 v3_mcp_01_cs src=mcp style=v2
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 긍정적이고 지지적인 웰니스 코치인 모미입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준한 조력자 Neon입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
     "name": "Hugo",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
+      "date": "2026-06-20",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-16",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2025-12-12",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-11-10",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-11-24",
+      "date": "2025-07-14",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-11-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-07-10",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "home",
+      "text": "User's home address is 312 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-28",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-20",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-10",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어, 보스턴에 있는 미술관 좀 찾아 봐 줘. ⟨ret@3.86s⟩
-[  4.02s][moshi] ⟦⚡SPAN@4.02s: (tool result) {"place id": "ChIJj61dQgKoEmsRUUlDHuW7W0U", "name": "Museum of Fine Arts", "address": "465 Hunti⟧ 네, 보스턴 미술관을 찾았는데, 헌팅턴 애비뉴 사백육십오번지에 있고, 평점은 사 점 육점이에요.
-      CALL: {"function": "map_search_places", "arguments": {"query": "museum", "location": "Boston"}}
-[ 10.06s][user ] «backchannel» 어어.
-[ 10.56s][user ] 음, 근처에 괜찮은 식당 ⟨ret@12.76s⟩ 있어?
-[ 13.08s][moshi] ⟦⚡SPAN@13.08s: (tool result) {"restaurants": [{"name": "Eventide Fenway", "address": "1321 Boylston St, Boston, MA 02215", "c⟧ 네, 몇 군데 있어요! 이벤트타이드 펜웨이는 해산물 요리를 제공하고, 타이거 마마는 아시안 퓨전 요리인데, 두 곳 모두 평점이 높아요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Museum of Fine Arts, Boston"}}
-[ 22.64s][user ] «backchannel» 응.
-[ 23.14s][moshi] 그렇게 생각하시니 정말 다행이에요! 관심 있는 곳 근처의 좋은 장소를 찾는 건 정말 좋은 방법인 것 같아요.
-[ 31.69s][user ] «backchannel» 음.
-[ 32.19s][user ] 좋아, 미술관 근처 호텔은 어때? ⟨ret@34.55s⟩
-[ 34.71s][moshi] ⟦⚡SPAN@34.71s: (tool result) {"hotels": [{"name": "The Fairmont Copley Plaza", "address": "138 St James Ave, Boston, MA 02116⟧ 네, 페어몬트 코플리 플라자는 럭셔리한 옵션인데, 밤에 삼백오십달러 정도이고 평점은 사 점 오점이고요, 코트야드 바이 메리어트는 밤에 이백팔십달러 정도이고 평점은 사 점 이점이에요.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Museum of Fine Arts, Boston"}}
-[ 46.28s][user ] «backchannel» 진짜?
-[ 46.78s][user ] 삼백오십달러는 좀 비싸네.
-[ 48.29s][moshi] «interrupted» 네, 특히 정착할 때는 그럴 수 있어요—
-[ 51.81s][user ] «interrupts_prev» …사실, 좀 더 멀리 떨어진 곳, 주차도 무료인 곳 좀 알아 봐 ⟨ret@57.95s⟩ 줄래?
-[ 58.35s][moshi] ⟦⚡SPAN@58.35s: (tool result) {"hotels": [{"name": "Hilton Boston Back Bay", "address": "40 Dalton St, Boston, MA 02115", "pri⟧ 네, 힐튼 보스턴 백 베이는 무료 주차를 제공하고, 밤에 이백이십달러이고 평점은 사점이고요, 더블트리는 워번에서 백팔십달러이고 평점은 삼 점 팔점이에요.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Boston", "parking": "free"}}
-[ 67.91s][user ] 워번은… 멀리 떨어져 있네. 거긴 오늘 날씨 어때? ⟨ret@71.69s⟩
-[ 71.93s][moshi] ⟦⚡SPAN@71.93s: (tool result) {"temperature": "24.0°C", "humidity": "65%", "wind": "7.0 km/h", "condition": "Sunny"}⟧ 네, 현재 워번은 섭씨 이십사도이고 맑고, 습도는 육십오퍼센트이며, 바람은 시속 칠킬로미터로 불고 있어요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Woburn, MA"}}
-[ 78.47s][user ] «backchannel» 와.
-[ 78.98s][user ] 좋네. 당분간은 보스턴 시내 주변만 둘러볼래.
-[ 81.99s][moshi] 네, 괜찮아요! 새로운 도시에 적응하려면 천천히 하는 게 중요해요.
-[ 86.52s][user ] 커피…
-[ 87.02s][user ] …미술관 근처에 있는 커피숍 좀 찾아 줘. ⟨ret@90.39s⟩
-[ 90.55s][moshi] ⟦⚡SPAN@90.55s: (tool result) {"place id": "ChIJ51j5tKRoEmsR q4b O61I9g", "name": "Peet's Coffee", "address": "465 Huntington ⟧ 네, 사실 미술관 바로 옆에 피츠 커피가 있어요—헌팅턴 애비뉴 사백육십오번지에 있고, 평점은 사 점 삼점이에요.
-      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shop", "location": "Museum of Fine Arts, Boston"}}
-[ 98.09s][user ] 완벽해! 고마워, 모미.
-[ 99.60s][moshi] 천만에요! 제가 몇 군데 탐험할 곳을 찾는 데 도움이 되어서 정말 기뻐요.
+[  0.00s][user ] 어떤 데이터 프레임에서 삭제된 거 맞는지 확인해 줘, 그 페이지에 있는 거. ⟨ret@5.28s⟩
+[  5.44s][moshi] ⟦⚡SPAN@5.44s: (tool result) {"status": "success", "message": "Deletion confirmed within the iframe."}⟧ iframe 안에서 삭제된 게 확인됐어요. 그렇게 해결되어서 다행이지 않아요?
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "data frame"}}
+[  9.53s][user ] 음, 좋아, 응. 지금 서울 날씨는 ⟨ret@12.38s⟩ 어때?
+[ 12.70s][moshi] ⟦⚡SPAN@12.70s: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed": "7.2 km/h", "condition": "Sunny"}⟧ 지금 서울은 기온이 스물여덟 점 영도이고, 습도는 육십오 퍼센트, 풍속은 시속 일곱 점 이 킬로미터예요—날씨가 맑아요!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 19.96s][user ] «backchannel» 그치.
+[ 20.41s][user ] 그거…좋네. 이번 주말에 뭐 하는 거 있어 찾아 줘. ⟨ret@24.33s⟩
+[ 24.49s][moshi] ⟦⚡SPAN@24.49s: (tool result) {"events": [{"name": "Seoul Music Festival", "date": "July 11, 2026", "location": "Olympic Park"⟧ 칠월 십일 일, 십이 일 주말에 예정된 이벤트를 알아볼게요.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "July 11-12, 2026"}}
+[ 28.58s][moshi] 이번 주말, 칠월 십일 일, 십이 일에는 올림픽공원에서 서울 뮤직 페스티벌이 있고, 경복궁 야간 투어도 있어요. 뭐가 더 끌려요?

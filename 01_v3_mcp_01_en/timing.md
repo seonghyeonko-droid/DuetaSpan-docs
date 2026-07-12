@@ -6,111 +6,96 @@
 #     "user_id": "v3_mcp_01",
 #     "name": "Hugo",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-06-20",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-16",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-11-10",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-11-24",
+#       "date": "2025-07-14",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-07-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 312 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-28",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-20",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm looking for a museum in Boston | S2 Three-fifty is a bit steep. | S3 Woburn sounds… far. What’s the wea | S4 …shop near the Museum of Fine Arts
 
-     0.00s  user  발화 시작: I'm looking for a museum in Boston.
-     2.71s  <ret> 발화 (turn1 첫 프레임)
-     2.79s  agent 발화 시작: <ret> I found the Museum of Fine Arts in Boston—it’s at 465 
-     2.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.58s]: (tool result) {"place id": "ChIJj61dQgKoEmsRUUlDHuW7W0U", "name": "Mus
-     2.79s  user  발화 끝
-    10.37s  user  발화 시작: Mhm.
-    10.37s  agent 발화 끝
-    10.77s  user  발화 시작: Hmm, is it close to any good restaurants?
-    10.77s  user  발화 끝
-    13.56s  <ret> 발화 (turn4 첫 프레임)
-    13.96s  agent 발화 시작: <ret> There are a few! Eventide Fenway offers seafood, and T
-    13.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.78s]: (tool result) {"restaurants": [{"name": "Eventide Fenway", "address": 
-    13.96s  user  발화 끝
-    20.74s  user  발화 시작: Mhm.
-    20.74s  agent 발화 끝
-    21.14s  agent 발화 시작: I'm glad you think so! Finding great spots near your interes
-    21.14s  user  발화 끝
-    28.72s  user  발화 시작: Yeah.
-    28.72s  agent 발화 끝
-    29.11s  user  발화 시작: Okay, what about hotels near the museum?
-    29.11s  user  발화 끝
-    31.51s  <ret> 발화 (turn9 첫 프레임)
-    31.91s  agent 발화 시작: <ret> The Fairmont Copley Plaza is a luxurious option—around
-    31.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.37s]: (tool result) {"hotels": [{"name": "The Fairmont Copley Plaza", "addre
-    31.91s  user  발화 끝
-    42.28s  user  발화 시작: Oh.
-    42.28s  agent 발화 끝
-    42.68s  user  발화 시작: Three-fifty is a bit steep.
-    42.68s  user  발화 끝
-    44.67s  agent 발화 시작: It can be, especially when you're getting settled—
-    44.67s  user  발화 끝
-    47.86s  user  발화 시작: …actually, could you check for something a little further ou
-    47.86s  agent 발화 끝
-    53.04s  <ret> 발화 (turn14 첫 프레임)
-    53.44s  agent 발화 시작: <ret> Okay, the Hilton Boston Back Bay offers free parking, 
-    53.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.37s]: (tool result) {"hotels": [{"name": "Hilton Boston Back Bay", "address"
-    53.44s  user  발화 끝
-    63.81s  user  발화 시작: Woburn sounds… far. What’s the weather like there today?
-    63.81s  agent 발화 끝
-    67.16s  <ret> 발화 (turn16 첫 프레임)
-    67.40s  agent 발화 시작: <ret> It’s currently 24.0 degrees Celsius and sunny in Wobur
-    67.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.58s]: (tool result) {"temperature": "24.0°C", "humidity": "65%", "wind": "7.
-    67.40s  user  발화 끝
-    74.98s  user  발화 시작: Oh.
-    74.98s  agent 발화 끝
-    75.38s  user  발화 시작: That’s nice. I think I’ll stick to looking around Boston pro
-    75.38s  user  발화 끝
-    80.56s  agent 발화 시작: That’s perfectly alright! Taking things at your own pace is 
-    80.56s  user  발화 끝
-    87.74s  user  발화 시작: Could you find me a coffee…
-    87.74s  agent 발화 끝
-    90.14s  user  발화 시작: …shop near the Museum of Fine Arts?
-    90.14s  user  발화 끝
-    92.53s  <ret> 발화 (turn22 첫 프레임)
-    92.93s  agent 발화 시작: <ret> There’s a Peet’s Coffee right at the museum, actually—
-    92.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.78s]: (tool result) {"place id": "ChIJ51j5tKRoEmsR q4b O61I9g", "name": "Pee
-    92.93s  user  발화 끝
-    99.71s  user  발화 시작: Perfect! Thanks, Momi.
-    99.71s  agent 발화 끝
-   100.90s  agent 발화 시작: You’re very welcome! I’m so glad I could help you find a few
-   100.90s  user  발화 끝
-   107.68s  agent 발화 끝
+     0.00s  user  발화 시작: I need to confirm a deletion inside that data frame, the one
+     5.35s  <ret> 발화 (turn1 첫 프레임)
+     5.43s  agent 발화 시작: <ret> Deletion confirmed within the iframe, just as you aske
+     5.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.16s]: (tool result) {"status": "success", "message": "Deletion confirmed wit
+     5.43s  user  발화 끝
+    11.59s  user  발화 시작: Um, good, yeah. What's the weather like in Seoul right now?
+    11.59s  agent 발화 끝
+    15.17s  <ret> 발화 (turn3 첫 프레임)
+    15.57s  agent 발화 시작: <ret> Right now in Seoul, it’s twenty-eight point zero degre
+    15.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed
+    15.57s  user  발화 끝
+    24.98s  user  발화 시작: Right.
+    24.98s  agent 발화 끝
+    25.34s  user  발화 시작: That sounds…nice. Can you find me some events happening this
+    25.34s  user  발화 끝
+    28.93s  <ret> 발화 (turn6 첫 프레임)
+    29.33s  agent 발화 시작: <ret> Let’s see what events are scheduled for July eleventh 
+    29.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) {"events": [{"name": "Seoul Music Festival", "date": "Ju
+    29.33s  user  발화 끝
+    33.31s  agent 발화 시작: This weekend, July eleventh and twelfth, there’s the Seoul M
+    33.31s  agent 발화 끝
+    42.72s  agent 발화 끝

@@ -1,74 +1,96 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Oriol, a thoughtful and soft-spoken life coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Ororaia, a encouraging and non-judgmental wellness coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Riley",
+    "name": "Anna",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
+    "nationality": "British",
+    "gender": "female",
     "age_range": "late 20s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
+      "date": "2026-04-13",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegan."
     },
     {
-      "date": "2026-06-24",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-03-14",
+      "category": "work",
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-06-21",
-      "category": "home",
-      "text": "User's home address is 65 Elm Street."
+      "date": "2025-06-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-02",
+      "date": "2025-06-19",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-07-10",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-06-15",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-13",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-07",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Oriol, do you happen to know Sarah Miller's phone ⟨ret@3.02s⟩ number?
-[  3.42s][moshi] ⟦⚡SPAN@3.42s: (no information found)⟧ I’ve checked, and unfortunately, a phone number for Sarah Miller isn’t publicly available to me.
-      CALL: {"function": "search", "arguments": {"query": "Sarah Miller phone number"}}
-[  8.54s][user ] Oh, okay. That's a shame.
-[ 10.25s][moshi] It’s understandable to want to reconnect; sometimes people prefer to keep that information private.
-[ 15.03s][user ] «backchannel» Yeah.
-[ 15.37s][moshi] Perhaps you could try reaching out through social media or a mutual friend?
-[ 19.82s][user ] «backchannel» Right.
-[ 20.16s][user ] Hmm, maybe. What’s the weather like in Seoul right now? ⟨ret@23.49s⟩
-[ 23.57s][moshi] ⟦⚡SPAN@23.57s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour. It sounds quite pleasant, actually.
+[  0.00s][user ] Do you have the phone number for Anya ⟨ret@2.71s⟩ Sharma?
+[  3.11s][moshi] ⟦⚡SPAN@3.11s: (no information found)⟧ I’m sorry, I couldn’t find a phone number for Anya Sharma in my search results.
+      CALL: {"function": "search", "arguments": {"query": "Anya Sharma phone number"}}
+[  8.29s][user ] Oh, that's okay. Maybe she doesn't list it publicly.
+[ 11.39s][moshi] That’s perfectly alright. Many people prefer to keep that information private.
+[ 15.19s][user ] «backchannel» Yeah, yeah.
+[ 15.88s][user ] What’s the weather like in Seoul ⟨ret@17.98s⟩ today?
+[ 18.30s][moshi] ⟦⚡SPAN@18.30s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0°C in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 24.17s][user ] «backchannel» Oh.
+[ 24.52s][user ] That sounds nice.
+[ 25.55s][moshi] It does, doesn’t it? A comfortable day for being outdoors.
+[ 29.01s][user ] «backchannel» Yeah, yeah.
+[ 29.70s][user ] I’m trying to save for a down payment on a house.
+[ 33.49s][moshi] That’s a wonderful goal! It takes discipline, but it’s so rewarding to work towards homeownership.
+[ 38.67s][user ] «backchannel» Mm-hmm.
+[ 39.02s][user ] Do you have any advice on creating a budget? ⟨ret@42.05s⟩
+[ 42.13s][moshi] Ororaia ⟦⚡SPAN@42.93s: A budget is a plan for your money, allocating income to expenses and savings, ensuring you spend less than you⟧ can help with that. A budget is a plan for your money, allocating income to expenses and savings, ensuring you spend less than you earn to achieve financial goals. We can start with tracking your current spending to see where your money is going.
+[ 57.67s][user ] «backchannel» Yeah.
+[ 58.01s][user ] That sounds… complicated. —
+[ 59.39s][user ] …could you maybe break it down into really simple steps?
+[ 62.84s][moshi] Let’s start with listing your income, then your fixed expenses – rent, bills – and then your variable ones.
+[ 69.41s][user ] Like groceries and entertainment?
+[ 70.79s][moshi] Exactly. After that, we’ll see what’s left over for savings and fun.
+[ 74.93s][user ] What's the average down payment in ⟨ret@76.95s⟩ Seoul?
+[ 77.35s][moshi] ⟦⚡SPAN@77.35s: (tool result) The average down payment for a home in Seoul is approximately ₩200 million, though this varies g⟧ The average down payment for a home in Seoul is approximately ₩200 million, though this varies greatly depending on location and property size, according to a recent report by the Korea Real Estate Board.
+      CALL: {"function": "search", "arguments": {"query": "average down payment Seoul"}}
+[ 89.09s][user ] Wow, that's a lot of money.
+[ 91.16s][moshi] It is a significant amount, but remember, we can break down your savings goals into smaller, manageable steps.
+[ 97.37s][user ] Can you help me find some resources for first-time homebuyers? ⟨ret@100.67s⟩
+[100.83s][moshi] ⟦⚡SPAN@100.83s: (tool result) The Korea Housing Finance Association offers various programs for first-time homebuyers, includi⟧ The Korea Housing Finance Association offers various programs for first-time homebuyers, including low-interest loans and subsidies, detailed on their website at .
+      CALL: {"function": "search", "arguments": {"query": "first time homebuyer resources Korea"}}
+[108.42s][user ] «backchannel» Really?
+[108.77s][user ] That’s great, thank you!
+[110.15s][moshi] You’re very welcome! Remember, I’m here to support you every step of the way.

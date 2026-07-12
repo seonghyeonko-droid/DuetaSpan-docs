@@ -1,98 +1,110 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Fuon, a practical and reassuring counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Biana, a curious and validating counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Leo",
+    "name": "Sam",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
+      "date": "2026-06-05",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-03-09",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-12-20",
-      "category": "home",
-      "text": "User's home address is 490 Cedar Lane."
-    },
-    {
-      "date": "2025-07-16",
+      "date": "2025-12-08",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-07-20",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-05-27",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-27",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-24",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-26",
-      "title": "Setting up a home network",
+      "date": "2025-06-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-15",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who Natalie Portman plays in The Phantom ⟨ret@4.15s⟩ Menace?
-[  4.39s][moshi] ⟦⚡SPAN@4.39s: Natalie Portman portrays Padmé Amidala in Star Wars: Episode I – The Phantom Menace, a role she reprises in th⟧ She plays Padmé Amidala, a young queen chosen to represent her planet. It’s a really iconic role, isn’t it?
-[ 11.97s][user ] «backchannel» Yeah.
-[ 12.36s][user ] Oh, okay, that makes sense.
-[ 14.36s][moshi] It's wonderful when a performance really connects with a character.
-[ 18.35s][user ] Um, what about Hayden Christensen? ⟨ret@20.18s⟩
-[ 20.34s][moshi] ⟦⚡SPAN@20.34s: Hayden Christensen is known for playing Anakin Skywalker in Star Wars: Episode II – Attack of the Clones and E⟧ He’s best known for playing Anakin Skywalker, who later becomes Darth Vader. A pretty significant part in the saga!
-[ 27.92s][user ] Right.
-[ 28.32s][moshi] It's interesting to see how those characters develop over the course of the films, don’t you think?
-[ 35.10s][user ] I suppose so. Is there a…
-[ 37.49s][user ] …new Star Wars movie coming out ⟨ret@39.97s⟩ soon?
-[ 40.29s][moshi] ⟦⚡SPAN@40.29s: (tool result) Star Wars: The Acolyte (2024) - Streaming on Disney+, June 4, 2024. Star Wars: Episode I - The P⟧ There’s *The Acolyte*, streaming on Disney+ since June 4th, 2024. And of course, the classics are still available.
-      CALL: {"function": "Movies_3_FindMovies", "arguments": {"title": "Star Wars"}}
-[ 47.46s][user ] «backchannel» Right.
-[ 47.86s][user ] That's good to ⟨ret@49.06s⟩ know.
-[ 49.46s][moshi] ⟦⚡SPAN IRRELEVANT@49.46s: The current temperature in Reykjavik, Iceland is 8.2°C, with a humidity of 88% and wind speed of 7.1 km/h.⟧ The weather can certainly affect your mood, can’t it?
-[ 53.05s][user ] It can, yeah. I'm trying to stick to a budget this month.
-[ 57.83s][moshi] That's a very sensible goal. It's good to be mindful of your spending.
-[ 63.02s][user ] It is, but it's hard.
-[ 65.01s][moshi] It can be challenging, absolutely. Small steps can make a big difference, though.
-[ 70.20s][user ] «backchannel» Yeah.
-[ 70.60s][user ] I guess so. What's a good way to track expenses?
-[ 74.59s][moshi] There are many apps available, or simply a notebook and pen. Whatever works for you!
-[ 80.57s][user ] «backchannel» Yeah.
-[ 80.97s][user ] Hmm, maybe an app.
-[ 82.56s][moshi] An app can be really convenient, with automatic categorization.
-[ 86.15s][user ] «backchannel» Uh-huh.
-[ 86.55s][user ] That sounds good. Thanks!
-[ 88.15s][moshi] You’re very welcome. I’m glad I could offer a little help with that.
+[  0.00s][user ] Hi Biana, I was wondering about the 1796 election.
+[  3.89s][moshi] Hello! It’s lovely to explore history with you. What specifically are you curious about?
+[  9.94s][user ] Who was the Federalist candidate that ⟨ret@12.64s⟩ year?
+[ 12.96s][moshi] ⟦⚡SPAN@12.96s: John Adams was the Federalist candidate in the 1796 presidential election, and he defeated Thomas Jefferson.⟧ The Federalist candidate in 1796 was, in fact, John Adams, and he defeated Thomas Jefferson.
+[ 19.44s][user ] Oh, okay.
+[ 20.31s][moshi] It’s good to have that clarified. Elections can be quite complex, don't you think?
+[ 26.36s][user ] Yeah, they really are. What about the election of 1800? ⟨ret@30.52s⟩
+[ 30.68s][moshi] ⟦⚡SPAN@30.68s: In the 1800 election, Thomas Jefferson of the Democratic-Republican Party defeated incumbent John Adams.⟧ In 1800, Thomas Jefferson defeated incumbent John Adams, representing the Democratic-Republican Party.
+[ 35.86s][user ] Interesting.
+[ 36.30s][moshi] Political shifts are always fascinating, aren’t they? It's a story of changing ideas.
+[ 41.91s][user ] «backchannel» Yeah.
+[ 42.34s][user ] So, Adams lost his re-election ⟨ret@44.62s⟩ bid?
+[ 44.94s][moshi] ⟦⚡SPAN IRRELEVANT@44.94s: The current temperature in London is 18.5°C with clear skies and a gentle breeze from the southwest.⟧ Yes, that is correct. He served only one term as president.
+[ 49.69s][moshi] It's often difficult for leaders to hold onto power, even when they've done well.
+[ 55.74s][user ] «backchannel» Okay.
+[ 56.17s][moshi] It can be a very stressful time for anyone in a position like that. A lot of pressure.
+[ 63.95s][user ] I can imagine. Were there…
+[ 66.11s][user ] …any major issues driving that election? ⟨ret@68.54s⟩
+[ 68.70s][moshi] ⟦⚡SPAN@68.70s: The Alien and Sedition Acts, passed under Adams, were a major point of contention in the 1800 election.⟧ The Alien and Sedition Acts, passed during Adams’ presidency, were a major issue, driving much of the debate.
+[ 76.48s][user ] What were those acts about? ⟨ret@78.48s⟩
+[ 78.64s][moshi] ⟦⚡SPAN@78.64s: The Alien and Sedition Acts restricted immigration and limited criticism of the government.⟧ Those Acts restricted immigration and limited criticism of the government, stirring up considerable controversy.
+[ 84.69s][user ] Wow, that sounds… restrictive.
+[ 86.42s][moshi] It was a very controversial period, and understandably so. It felt like a limitation to many.
+[ 93.33s][user ] Do you think that hurt his chances?
+[ 96.36s][moshi] Many historians believe so. They were quite unpopular with a large segment of the population.
+[102.84s][user ] «backchannel» Uh-huh.
+[103.27s][user ] That makes sense.
+[104.57s][moshi] It's interesting how decisions can have such long-lasting effects, isn't it?
+[109.32s][user ] It really is. Um, what about Jefferson's platform? ⟨ret@112.62s⟩
+[112.78s][moshi] ⟦⚡SPAN@112.78s: Thomas Jefferson campaigned on a platform of limited government and states' rights in 1800.⟧ Jefferson campaigned on a platform of limited government and advocating for states’ rights.
+[118.39s][user ] So, a very different approach.
+[120.55s][moshi] Quite a contrast, yes. Different visions for the country’s future, certainly.
+[125.31s][user ] «backchannel» Yeah, totally.
+[126.17s][user ] It seems like a pretty big shift in philosophy.
+[130.06s][moshi] It was a significant turning point. A real change in direction for the nation.
+[136.11s][user ] I wonder if Adams saw it coming.
+[139.13s][moshi] It’s hard to say what anyone truly anticipates. It’s a complex thing, isn't it?
+[145.18s][user ] Yeah.
+[145.61s][moshi] Sometimes, even with careful planning, things don’t unfold as expected.
+[149.93s][user ] That’s life, I guess.
+[151.66s][moshi] It certainly is. It's about how we adapt and move forward, don't you think?
+[157.71s][user ] «backchannel» Yeah.
+[158.14s][user ] I suppose so.
+[159.44s][moshi] And knowing that history offers valuable lessons for us today.

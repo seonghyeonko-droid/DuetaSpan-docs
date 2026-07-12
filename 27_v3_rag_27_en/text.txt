@@ -1,54 +1,56 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Arion, a thoughtful and soft-spoken personal guide who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Tuna, a encouraging and non-judgmental life coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Quinn",
+    "name": "Jack",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
+    "nationality": "Canadian",
+    "gender": "male",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
-      "category": "home",
-      "text": "User's home address is 644 Elm Street."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-12-08",
+      "date": "2026-06-24",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-11",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-01-26",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-12-25",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
+    },
+    {
+      "date": "2025-09-02",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-08-16",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "home",
+      "text": "User's home address is 953 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-18",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-14",
+      "date": "2026-01-27",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -59,20 +61,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to remember a British comedy show, it’s on the radio.
-[  4.73s][moshi] It sounds like you might be thinking of a show called “The News Quiz.”
-[ 10.25s][user ] That’s it! Who was one of the early hosts, a comedian born in ⟨ret@15.36s⟩ 1969?
-[ 15.76s][moshi] «interrupted» ⟦⚡SPAN@15.76s: Born in East Dulwich, London, on 26 June 1969, Jimmy Carr is an English-Irish comedian and television personal⟧ One of the early hosts was Jimmy Carr, born—
-[ 19.31s][user ] …did he start on the show right away…
-[ 22.46s][user ] …or was he on other things first?
-[ 25.22s][moshi] Before “The News Quiz,” Jimmy Carr was building a career in television.
-[ 29.95s][user ] «backchannel» Mhm.
-[ 30.35s][moshi] He began as a joke writer for established comedians, then did stand-up.
-[ 35.08s][user ] It's good to know how people get their start. Do you have any advice for encouraging my child's creativity?
-[ 42.56s][moshi] Fostering creativity is wonderful; offering open-ended materials is a great start.
-[ 46.90s][user ] «backchannel» Mm-hmm.
-[ 47.29s][user ] Like what kind of materials?
-[ 49.26s][moshi] Things like building blocks, paints, or even just cardboard boxes can inspire imagination.
-[ 54.39s][user ] [happy] That sounds easy enough! What’s the weather like in London today? ⟨ret@59.04s⟩
-[ 59.12s][moshi] ⟦⚡SPAN@59.12s: (tool result) London: 21.0°C, humidity 68%, wind 6.2 km/h, condition: Partly Cloudy⟧ The weather in London is currently 21.0°C, with partly cloudy conditions. Perhaps a good day for building a fort with those cardboard boxes!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[  0.00s][user ] Hi Tuna, I’m feeling a bit lost about moving to Seoul.
+[  4.32s][moshi] Welcome to Seoul! It's wonderful you're taking this step. Feeling lost is completely normal when starting somewhere new.
+[ 11.39s][user ] Yeah, it’s just… a lot. What’s the weather like there right ⟨ret@15.71s⟩ now?
+[ 16.11s][moshi] ⟦⚡SPAN@16.11s: (tool result) Current conditions in Seoul are 23.0°C, humidity 74%, wind 5.5 km/h.⟧ Right now in Seoul, it’s 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 24.75s][user ] «backchannel» Yeah.
+[ 25.14s][user ] That sounds… nice.
+[ 26.32s][moshi] It does, doesn’t it? A comfortable temperature can really help with settling in.
+[ 31.43s][user ] «backchannel» Okay.
+[ 31.82s][user ] Um, I was reading about Korean history, and I got curious. Who founded the chamber ensemble that won a Grammy in ⟨ret@40.22s⟩ 1985?
+[ 40.46s][moshi] ⟦⚡SPAN@40.46s: Joh Bruce Yeh founded the Chamber Music Society of Lincoln Center, which won a Grammy Award in 1985 for Best C⟧ That would be Joh Bruce Yeh, who founded the Chamber Music Society of Lincoln Center—they won a Grammy in 1985 for Best Chamber Music Performance.
+[ 50.28s][user ] «backchannel» Really?
+[ 50.67s][moshi] Isn’t it fascinating how music can connect us to different cultures and stories?
+[ 55.78s][user ] «backchannel» Yeah.
+[ 56.17s][user ] It is. What was the recording *based* ⟨ret@59.08s⟩ on?
+[ 59.32s][moshi] ⟦⚡SPAN@59.32s: The Grammy-winning recording was based on the Russian folk tale, "The Runaway Soldier and the Devil."⟧ The recording was actually based on the Russian folk tale, “The Runaway Soldier and the Devil.” It’s quite a story!
+[ 67.17s][user ] «backchannel» Right.
+[ 67.57s][user ] That’s interesting. Maybe I should look into that.
+[ 70.71s][moshi] That's a great idea! Exploring local folklore can be a beautiful way to connect with a new place.

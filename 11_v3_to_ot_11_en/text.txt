@@ -1,60 +1,113 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Thellaus, a kind and steady life coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Doral, a encouraging and non-judgmental wellness coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Julia",
+    "name": "Lena",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "female",
-    "age_range": "early 30s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-06-12",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-03-22",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-26",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2025-08-25",
+      "category": "home",
+      "text": "User's home address is 627 Oak Avenue."
     },
     {
-      "date": "2025-12-19",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-08-24",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-06-27",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-11",
-      "title": "Researching a used car",
+      "date": "2026-03-27",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, uh, do you know what category Hurricane Charley was when it hit Orlando back in ⟨ret@6.25s⟩ 2004?
-[  6.65s][moshi] ⟦⚡SPAN@6.65s: Hurricane Charley made landfall in Florida on August 13, 2004, as a Category 4 hurricane on the Saffir–Simpson⟧ Well, it seems Hurricane Charley hit Orlando as a Category 4 hurricane on August thirteenth, two-thousand and four. That’s quite a storm.
-[ 15.26s][user ] «to_other» Did you remember to take the trash out?
-[ 18.39s][user ] So, uh, category four… that’s pretty strong, right?
-[ 21.52s][moshi] It absolutely is. A Category 4 hurricane brings winds between one-hundred-thirty and one-hundred-fifty-six miles per hour.
-[ 27.78s][user ] «backchannel» Oh.
-[ 28.17s][moshi] It’s good to be prepared when facing such powerful weather events; planning ahead can really ease the stress.
+[  0.00s][user ] Who wrote the first five books of the ⟨ret@3.30s⟩ Bible?
+[  3.70s][moshi] ⟦⚡SPAN@3.70s: Traditionally, the first five books of the Hebrew Bible—Genesis, Exodus, Leviticus, Numbers, and Deuteronomy—a⟧ That’s a question people have pondered for a long time! Traditionally, the first five books are attributed to Moses, though modern scholarship suggests multiple authors contributed over centuries. It’s a fascinating topic, really.
+[ 17.25s][user ] Multiple authors? That’s surprising.
+[ 18.90s][moshi] It is quite a shift in perspective, isn’t it? For centuries, tradition held Moses as the sole author. It's a journey of discovery when you explore the scholarship around it.
+[ 31.22s][user ] «backchannel» Yeah.
+[ 31.63s][user ] Can you tell me more about those other ⟨ret@35.09s⟩ authors?
+[ 35.33s][moshi] ⟦⚡SPAN@35.33s: Documentary Hypothesis proposes that the Pentateuch—the first five books—was composed from four main sources: ⟧ The Documentary Hypothesis suggests four main sources—J, E, D, and P—contributed to the Pentateuch, each with unique characteristics and written at different times.
+[ 44.78s][user ] J, E, D, and P… what do those stand for?
+[ 48.88s][moshi] Those are simply labels scholars use for the different source traditions. J likely comes from the Yahwist, E from the Elohist, D from the Deuteronomist, and P from the Priestly source.
+[ 61.62s][user ] «backchannel» Yeah.
+[ 62.03s][user ] So, it wasn’t just one person sitting down and writing everything?
+[ 66.55s][moshi] It’s believed the stories were passed down orally for generations before being written down, and then compiled and edited over time by different authors. It’s quite a process, really.
+[ 78.46s][user ] Wow, that's a lot more complicated than I thought.
+[ 82.16s][moshi] It often is when we delve into ancient texts. The process of how these stories came to be is just as compelling as the stories themselves.
+[ 92.84s][user ] What about the book of Genesis specifically? Who wrote that ⟨ret@97.12s⟩ part?
+[ 97.36s][moshi] ⟦⚡SPAN@97.36s: Scholars suggest the story of Genesis likely drew from multiple ancient Near Eastern traditions and was compil⟧ Scholars suggest Genesis drew from various ancient traditions, compiled over time. The J and P sources seem to have played a significant role in its formation.
+[108.04s][user ] «backchannel» Mhm.
+[108.45s][user ] And Exodus? Was that also pieced together?
+[111.32s][moshi] Yes, Exodus, like the other books, is thought to have been assembled from those different sources – J, E, D, and P – each bringing its own focus and perspective.
+[123.65s][user ] «backchannel» Mm-hmm.
+[124.06s][user ] It sounds like it was a collaborative effort, almost.
+[127.75s][moshi] In a way, it was! Think of it as a long, evolving conversation across generations, shaped by different voices and perspectives. It's truly remarkable.
+[137.61s][user ] «backchannel» Yeah.
+[138.02s][user ] What does the “P” source focus ⟨ret@140.66s⟩ on?
+[140.90s][moshi] ⟦⚡SPAN@140.90s: The P source, or Priestly source, in the Pentateuch is characterized by its focus on ritual law, genealogies, ⟧ The P source, or Priestly source, focuses on ritual law, genealogies, and detailed religious practices, particularly concerning the tabernacle.
+[148.71s][user ] And the “J” source?
+[150.35s][moshi] The J source tends to use the name Yahweh for God and focuses on narrative storytelling, often portraying God in a more anthropomorphic way.
+[160.21s][user ] «backchannel» Yeah, yeah.
+[161.03s][user ] That’s interesting. So different styles…
+[163.08s][moshi] «interrupted» Exactly. Identifying those different styles is how scholars developed the Documentary Hypothesis. It’s like recognizing different fingerprints in the text—
+[171.30s][user ] «interrupts_prev» …but if so many people wrote it, how can we be sure it’s even accurate?
+[177.46s][moshi] That’s a very insightful question! It’s a matter of understanding the intent—
+[182.39s][user ] «backchannel» Yeah, totally.
+[183.21s][moshi] —and the context. The texts weren’t necessarily intended as strict historical records in the modern sense, but rather as theological statements and expressions of faith. They convey meaning and truth through story and symbolism.
+[197.18s][user ] «backchannel» Mhm.
+[197.59s][user ] So it's more about the message than the literal events?
+[201.70s][moshi] Precisely. The stories themselves are powerful, regardless of whether every detail is historically verifiable. They offer profound insights into the human condition and our relationship with the divine.
+[213.20s][user ] Do scholars agree on all of this, though?
+[216.49s][moshi] There’s ongoing debate, certainly. The Documentary Hypothesis isn’t universally accepted, and there are other theories about the Pentateuch’s authorship. It’s a complex field of study.
+[226.75s][user ] «backchannel» Yeah, yeah.
+[227.58s][user ] What are some other theories then? ⟨ret@229.96s⟩
+[230.04s][moshi] ⟦⚡SPAN@230.04s: Some scholars propose the Final Form Criticism, which suggests the Pentateuch should be understood as a unifie⟧ Some scholars propose Final Form Criticism, suggesting the Pentateuch is a unified work shaped by a final editor, rather than just a compilation of sources.
+[240.31s][user ] «backchannel» Right.
+[240.72s][user ] So, one person really did put it all together, in that view?
+[245.65s][moshi] In that view, yes. The final editor would have woven together existing traditions and shaped them into the cohesive whole we have today. It's a different way to look at it.
+[258.39s][user ] That makes sense. It's a lot to think about.
+[262.08s][moshi] It is, isn’t it? Exploring these questions can deepen our appreciation for the scriptures and the rich history behind them. Remember, questioning isn't doubting, it’s exploring.

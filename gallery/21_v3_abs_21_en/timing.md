@@ -4,78 +4,73 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Maya",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-30",
-#       "category": "home",
-#       "text": "User's home address is 678 Maple Drive."
+#       "date": "2026-03-25",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-12",
+#       "date": "2026-01-20",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-11-25",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "home",
+#       "text": "User's home address is 278 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-04",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-25",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-15",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Fighting outside Guam left how man | S2 Maybe. What’s the weather in Seoul | S3 Sounds nice. I think… | S4 …I'll go for a walk.
 
-     0.00s  user  발화 시작: Who is a Civil Rights leader that the CIA targeted?
-     3.87s  agent 발화 시작: That’s a really important question, and honestly, it’s not s
-     3.87s  user  발화 끝
-    13.56s  user  발화 시작: Oh, um… that’s… surprising.
-    13.56s  agent 발화 끝
-    15.11s  agent 발화 시작: It can be disheartening when history doesn't offer clear ans
-    15.11s  user  발화 끝
-    23.64s  user  발화 시작: I guess so. Maybe we could talk about something else?
-    23.64s  agent 발화 끝
-    27.51s  agent 발화 시작: Perhaps we could explore a mindfulness exercise to help grou
-    27.51s  user  발화 끝
-    37.20s  agent 발화 끝
+     0.00s  user  발화 시작: Fighting outside Guam left how many militants dead?
+     3.55s  <ret> 발화 (turn1 첫 프레임)
+     3.63s  agent 발화 시작: <ret> I’ve checked, and unfortunately, there’s no reliable i
+     3.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (no information found)
+     3.63s  user  발화 끝
+    13.60s  user  발화 시작: Um, welll… that’s frustrating.
+    13.60s  agent 발화 끝
+    15.41s  agent 발화 시작: It certainly is. Sometimes, news takes time to surface, or a
+    15.41s  user  발화 끝
+    26.28s  user  발화 시작: Yeah.
+    26.28s  agent 발화 끝
+    26.74s  user  발화 시작: Maybe. What’s the weather in Seoul today?
+    26.74s  user  발화 끝
+    29.83s  <ret> 발화 (turn6 첫 프레임)
+    29.91s  agent 발화 시작: <ret> The weather in Seoul is currently 26.0°C, with 70% hum
+    29.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.88s]: (tool result) Current conditions in Seoul are 26.0°C, humidity 70%, wi
+    29.91s  user  발화 끝
+    40.79s  user  발화 시작: Sounds nice. I think…
+    40.79s  agent 발화 끝
+    42.60s  user  발화 시작: …I'll go for a walk.
+    42.60s  user  발화 끝
+    44.87s  user  발화 끝

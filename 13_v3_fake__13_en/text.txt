@@ -1,67 +1,56 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Zen, a upbeat and supportive counselor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Thios, a curious and validating supportive advisor who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Alex",
+    "name": "Emma",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-03",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-08-19",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-08-17",
+      "date": "2026-06-27",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-08-08",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-05-09",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-07-31",
+      "date": "2026-05-06",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-04-18",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-11-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-09-16",
+      "category": "home",
+      "text": "User's home address is 594 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-03-29",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-03-27",
+      "date": "2025-06-03",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -72,25 +61,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Zen, I'm trying to be more mindful of where my food comes from.
-[  5.24s][moshi] That's wonderful! It's so grounding to connect with the origins of what nourishes us.
-[ 10.48s][user ] I was just wondering, where were the first Oreo cookies ⟨ret@14.35s⟩ sold?
-[ 14.59s][moshi] ⟦⚡SPAN@14.59s: The first Oreo cookies were sold in Hoboken, New Jersey, in 1912.⟧ The very first Oreos were sold in Hoboken, New Jersey, back in 1912.
-[ 19.46s][user ] «backchannel» Uh-huh.
-[ 19.83s][user ] Wow, that's not what I expected! ⟨ret@22.00s⟩
-[ 22.08s][moshi] ⟦⚡SPAN IRRELEVANT@22.08s: The average global temperature in June 2024 was 16.3°C, a 0.2°C increase from the 20th-century average.⟧ [happy] Sometimes the most surprising facts are the most delightful, don’t you think?
-[ 26.94s][moshi] It’s easy to get caught up in assumptions, but exploring new information is key.
-[ 32.18s][user ] «backchannel» Uh-huh.
-[ 32.56s][user ] I'm trying to plan a little weekend getaway.
-[ 35.55s][moshi] That sounds lovely! A change of scenery can do wonders for the spirit.
-[ 40.41s][user ] «backchannel» Yeah.
-[ 40.79s][user ] Could you find some events happening in Seattle next ⟨ret@44.13s⟩ weekend?
-[ 44.53s][moshi] ⟦⚡SPAN@44.53s: (tool result) Event: Seattle Maritime Festival, Date: July 12-13, 2026, Location: Seattle Center.⟧ There's the Seattle Maritime Festival happening July 12th and 13th at Seattle Center.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Seattle", "date": "next weekend"}}
-[ 49.40s][user ] That sounds fun!
-[ 50.52s][moshi] It’s important to build in moments of joy and exploration into our routines.
-[ 55.38s][user ] I need to set a reminder to book tickets for that.
-[ 59.50s][moshi] A little planning can make all the difference.
-[ 62.49s][user ] Can you set an alarm for tomorrow at 10 AM to remind me? ⟨ret@67.20s⟩
-[ 67.36s][moshi] ⟦⚡SPAN@67.36s: (tool result) Alarm set for July 11, 2026, 10:00 AM. Confirmation ID: 873294.⟧ An alarm is set for tomorrow, July 11th, at 10:00 AM, confirmation 873294.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "10:00 AM", "date": "tomorrow"}}
+[  0.00s][user ] Hey Thios, when did the Bengals last make the ⟨ret@3.24s⟩ playoffs?
+[  3.48s][moshi] ⟦⚡SPAN@3.48s: The Cincinnati Bengals most recently made the playoffs in the 2021–2022 season, reaching Super Bowl LVI.⟧ The Bengals last made the playoffs in the 2021–2022 season, reaching Super Bowl LVI.
+[  8.35s][user ] «backchannel» Uh-huh.
+[  8.70s][user ] Oh, wow, that ⟨ret@9.69s⟩ recent!
+[ 10.09s][moshi] ⟦⚡SPAN IRRELEVANT@10.09s: The average high temperature in Reykjavik, Iceland in July is 13.0°C, with average rainfall of 59 mm.⟧ It really was a fantastic run for them, wasn’t it? I’m glad you asked about that.
+[ 15.66s][moshi] «interrupted» It's always inspiring to see a team achieve such success—
+[ 19.14s][user ] «interrupts_prev» …but before that, how long was it since their previous playoff appearance?
+[ 23.31s][moshi] Before 2022, the Bengals hadn’t reached the playoffs since the 2015 season, a gap of six years.
+[ 29.23s][user ] «backchannel» Oh.
+[ 29.58s][moshi] It’s interesting how long those droughts can be, isn’t it? A lot can change in six years for a team.

@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Rowan",
+#     "name": "Clara",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-21",
+#       "date": "2026-04-16",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-04-15",
+#       "category": "home",
+#       "text": "User's home address is 703 Birch Road."
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-01-30",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-09-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2025-07-31",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-07-16",
+#       "date": "2025-11-27",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-09-12",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-25",
+#       "date": "2026-06-18",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,61 +60,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What theater events are there in R | S2 …Do any of those theaters have acc | S3 That's good to know. What's the we | S4 Could you look up opening hours fo
+# EXAMINER(FDB-v2) 단계: S1 Just remind me of what alarms I ha | S2 Hmm, actually, I think I need to f | S3 Perfect, thank you. And what’s the | S4 Yeah, you’re right. Um, what time 
 
-     0.00s  user  발화 시작: What theater events are there in Rome, Italy on March twenty
-     3.84s  <ret> 발화 (turn1 첫 프레임)
-     4.24s  agent 발화 시작: <ret> There are two theater events in Rome on March twenty-f
-     4.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.43s]: (tool result) {"events": [{"name": "La Traviata", "venue": "Teatro del
-     4.24s  user  발화 끝
-    19.67s  user  발화 시작: That sounds lovely. Can you find me restaurants nearby the T
-    19.67s  agent 발화 끝
-    24.83s  <ret> 발화 (turn3 첫 프레임)
-    25.07s  agent 발화 시작: <ret> Near Teatro dell'Opera di Roma, “La Pergola” serves It
-    25.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: (tool result) {"restaurants": [{"name": "La Pergola", "cuisine": "Ital
-    25.07s  user  발화 끝
-    35.87s  user  발화 시작: Um, actually, make that Florence, Italy, not Rome.
-    35.87s  agent 발화 끝
-    38.80s  <ret> 발화 (turn5 첫 프레임)
-    38.96s  agent 발화 시작: <ret> Let’s look for theater events in Florence, Italy on Ma
-    38.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) {"events": [{"name": "Don Giovanni", "venue": "Maggio Mu
-    38.96s  user  발화 끝
-    43.59s  agent 발화 시작: In Florence on March twenty-fifth, you’ll find “Don Giovanni
-    43.59s  agent 발화 끝
-    57.86s  user  발화 시작: …Do any of those theaters have accessible seating?
-    57.86s  agent 발화 끝
-    60.94s  agent 발화 시작: That’s a very thoughtful question—
-    60.94s  user  발화 끝
-    62.87s  user  발화 시작: I’m trying to plan for my mother.
-    62.87s  agent 발화 끝
-    65.49s  <ret> 발화 (turn10 첫 프레임)
-    65.57s  agent 발화 시작: <ret> It's wonderful you're considering your mother’s needs.
-    65.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.17s]: (tool result) Maggio Musicale Fiorentino offers wheelchair access, des
-    65.57s  user  발화 끝
-    71.34s  <ret> 발화 (turn11 첫 프레임)
-    71.74s  agent 발화 시작: <ret> Maggio Musicale Fiorentino provides wheelchair access,
-    71.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: (tool result) Teatro del Maggio also offers wheelchair access, accessi
-    71.74s  agent 발화 끝
-    79.84s  agent 발화 시작: Teatro del Maggio similarly has wheelchair access, accessibl
-    79.84s  agent 발화 끝
-    87.94s  user  발화 시작: That's good to know. What's the weather like in Florence on 
-    87.94s  agent 발화 끝
-    92.64s  <ret> 발화 (turn14 첫 프레임)
-    92.96s  agent 발화 시작: <ret> On March twenty-fifth in Florence, the weather will be
-    92.96s  ⚡SPAN 주입 [d'=1.52s / d_lead=10.80s]: (tool result) {"temperature": "15.5°C", "humidity": "70%", "wind": "12
-    92.96s  user  발화 끝
-   103.76s  user  발화 시작: That sounds quite pleasant, actually. Perhaps a walk in the 
-   103.76s  agent 발화 끝
-   109.54s  agent 발화 시작: That sounds like a lovely idea. A stroll through the Boboli 
-   109.54s  user  발화 끝
-   120.73s  user  발화 시작: Could you look up opening hours for the Boboli Gardens on Ma
-   120.73s  agent 발화 끝
-   125.58s  <ret> 발화 (turn18 첫 프레임)
-   125.74s  agent 발화 시작: <ret> The Boboli Gardens will be open from 8:15 AM to 6:30 P
-   125.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: (tool result) The Boboli Gardens are open from 8:15 AM to 6:30 PM on M
-   125.74s  user  발화 끝
-   133.84s  user  발화 시작: Perfect. Thank you, Sio.
-   133.84s  agent 발화 끝
-   135.38s  agent 발화 시작: You’re most welcome.
-   135.38s  user  발화 끝
-   136.54s  agent 발화 끝
+     0.00s  user  발화 시작: Just remind me of what alarms I have.
+     2.52s  <ret> 발화 (turn1 첫 프레임)
+     2.92s  agent 발화 시작: <ret> You have three alarms set: six thirty AM to wake up, e
+     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.04s]: (tool result) 6:30 AM - Wake up; 8:00 AM - Meeting reminder; 6:00 PM -
+     2.92s  user  발화 끝
+    10.96s  user  발화 시작: Yeah.
+    10.96s  agent 발화 끝
+    11.33s  user  발화 시작: Oh, that six PM one… make it seven thirty instead.
+    11.33s  user  발화 끝
+    14.74s  <ret> 발화 (turn4 첫 프레임)
+    14.98s  agent 발화 시작: <ret> I’ve updated that alarm to seven thirty PM.
+    14.98s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.92s]: (tool result) Alarm updated to 7:30 PM.
+    14.98s  user  발화 끝
+    17.90s  user  발화 시작: Hmm, actually, I think I need to find a good Italian restaur
+    17.90s  agent 발화 끝
+    22.49s  <ret> 발화 (turn6 첫 프레임)
+    22.65s  agent 발화 시작: <ret> I found a few options for Italian restaurants nearby—B
+    22.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.27s]: Italian restaurants within 5km: Bella Italia (4.2 stars, 0.8km), Luigi
+    22.65s  user  발화 끝
+    40.92s  user  발화 시작: Right.
+    40.92s  agent 발화 끝
+    41.28s  user  발화 시작: Luigi’s sounds nice. Can you reserve a table for two at eigh
+    41.28s  user  발화 끝
+    45.63s  <ret> 발화 (turn9 첫 프레임)
+    46.03s  agent 발화 시작: <ret> Excellent! I've reserved a table for two at Luigi’s at
+    46.03s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.58s]: (tool result) Reservation confirmed at Luigi’s for two people at 8:00 
+    46.03s  user  발화 끝
+    52.61s  user  발화 시작: Perfect, thank you. And what’s the weather like tomorrow?
+    52.61s  agent 발화 끝
+    55.50s  <ret> 발화 (turn11 첫 프레임)
+    55.90s  agent 발화 시작: <ret> Tomorrow, July eleventh, will be twenty-five point fiv
+    55.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.33s]: (tool result) Tomorrow will be 25.5°C, humidity 68%, wind 7.2 km/h, wi
+    55.90s  user  발화 끝
+    67.22s  user  발화 시작: That’s good to know. Maybe I should pack an umbrella…
+    67.22s  agent 발화 끝
+    70.87s  agent 발화 시작: That's a wise idea, just in case. Planning ahead can really 
+    70.87s  user  발화 끝
+    76.35s  user  발화 시작: Yeah, you’re right. Um, what time is it in Tokyo right now?
+    76.35s  agent 발화 끝
+    80.34s  <ret> 발화 (turn15 첫 프레임)
+    80.74s  agent 발화 시작: <ret> It is Saturday, July eleventh, two thousand twenty-six
+    80.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.85s]: (tool result) It is Saturday, July 11, 2026 at 9:33 AM in Asia/Tokyo r
+    80.74s  user  발화 끝
+    86.58s  user  발화 시작: Yeah.
+    86.58s  agent 발화 끝
+    86.95s  user  발화 시작: Oh wow, already?
+    86.95s  user  발화 끝
+    88.04s  agent 발화 시작: Time really does fly when you're planning a lovely evening! 
+    88.04s  user  발화 끝
+    93.52s  agent 발화 끝

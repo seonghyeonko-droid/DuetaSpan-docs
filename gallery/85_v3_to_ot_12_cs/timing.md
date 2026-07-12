@@ -4,153 +4,101 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Ruby",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
+#       "date": "2026-04-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-04-25",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-10-16",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "home",
-#       "text": "User's home address is 332 Cedar Lane."
+#       "date": "2025-09-26",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-23",
+#       "date": "2025-08-21",
 #       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-12-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-11",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-07",
+#       "date": "2026-05-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕, 오늘 기분 어때? | S2 그럼, 삼 stone이면 파운드로 얼마나 돼? | S3 정말? 체중으로? 흥미롭네. | S4 분수도 엄청 많네!
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 버커니어스가 슈퍼볼 우승했을 때 쿼터백이 누구였는 | S2 저기요, 잠깐만 여쭤볼게요. 지금 탬파의 날씨는 어떤가요? | S3 죄송하지만, 방금 습도에 대해 말씀하신 내용을 다시 한번 말씀 | S4 흠, 울렐레가 흥미로운 것 같아요. 그곳에 대해 더 자세히 알
 
-     0.00s  user  발화 시작: 안녕, 오늘 기분 어때?
-     2.08s  agent 발화 시작: 정말 잘 지내요, 물어봐 주셔서 감사합니다! 이야기하고 싶은 게 있다면 언제든지 편하게 말씀해 주세요.
-     2.08s  user  발화 끝
-     9.36s  user  발화 시작: 그래.
-     9.36s  agent 발화 끝
-     9.88s  user  발화 시작: 근데, 일 stone이 몇 파운드인지 궁금해.
-     9.88s  user  발화 끝
-    12.60s  <ret> 발화 (turn4 첫 프레임)
-    13.00s  agent 발화 시작: <ret> 일 stone은 십사 파운드와 같아요.
-    13.00s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.60s]: A stone is equal to fourteen pounds—that's one of those traditional un
-    13.00s  user  발화 끝
-    15.60s  user  발화 시작: 아, 그래. 알아두면 좋네.
-    15.60s  agent 발화 끝
-    17.68s  agent 발화 시작: 정말 그렇죠! 요리 레시피를 보거나 오래된 글을 읽을 때 꽤 유용할 수 있어요.
-    17.68s  user  발화 끝
-    24.44s  user  발화 시작: [laugh] 진짜! 옛날 책에서 봤어.
-    24.44s  agent 발화 끝
-    27.04s  agent 발화 시작: [happy] 옛날 책들은 stone을 정말 좋아하죠, 그렇지 않나요? 과거의 매력적인 특징 중 하나예요.
-    27.04s  user  발화 끝
-    33.80s  user  발화 시작: 어.
-    33.80s  agent 발화 끝
-    34.32s  user  발화 시작: 그럼, 삼 stone이면 파운드로 얼마나 돼?
-    34.32s  user  발화 끝
-    37.12s  <ret> 발화 (turn11 첫 프레임)
-    37.44s  agent 발화 시작: <ret> 삼 stone이면 사십이 파운드와 같아요.
-    37.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.60s]: One stone is equivalent to fourteen pounds, so three stones would equa
-    37.44s  user  발화 끝
-    40.04s  user  발화 시작: 와, 사십이! 엄청 많네.
-    40.04s  agent 발화 끝
-    42.12s  agent 발화 시작: 정말 그렇죠! 그렇게 생각하면 꽤 큰 무게라는 걸 알 수 있어요.
-    42.12s  user  발화 끝
-    47.84s  user  발화 시작: 궁금한데, 영국 사람들은 아직도 stone을 많이 쓰나?
-    47.84s  agent 발화 끝
-    51.08s  <ret> 발화 (turn15 첫 프레임)
-    51.48s  agent 발화 시작: <ret> 예전만큼 많이 쓰지는 않지만, 영국에서는 여전히 체중을 잴 때 stone을 자주 사용해요.
-    51.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: While pounds and kilograms are more common now, stones are still often
-    51.48s  user  발화 끝
-    57.72s  user  발화 시작: 정말? 체중으로? 흥미롭네.
-    57.72s  agent 발화 끝
-    59.28s  agent 발화 시작: 약간의 문화적 잔재 같은 거예요. 다른 측정 단위도 있지만, 많은 사람들이 여전히 stone으로 체중을 말해
-    59.28s  user  발화 끝
-    67.08s  user  발화 시작: 어.
-    67.08s  agent 발화 끝
-    67.60s  user  발화 시작: 그건… 음, 복싱에 대해 읽고 있었거든.
-    67.60s  user  발화 끝
-    70.72s  agent 발화 시작: 복싱에서는 체급을 분류할 때 stone을 자주 사용합니다—
-    70.72s  user  발화 끝
-    74.36s  user  발화 시작: …잠깐, 복싱 단체마다 stone 무게가 다른가?
-    74.36s  agent 발화 끝
-    77.48s  user  발화 시작: 그래.
-    77.48s  user  발화 끝
-    77.68s  <ret> 발화 (turn23 첫 프레임)
-    78.00s  agent 발화 시작: <ret> 네, 복싱 단체마다 약간씩 무게 제한이 다르지만, 여전히 stone 시스템을 사용합니다.
-    78.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.72s]: The weight classes in boxing vary slightly between organizations, but 
-    78.00s  user  발화 끝
-    83.72s  agent 발화 시작: 체급은 다양하지만, 일반적으로 팔 stone 육 파운드, 구 stone 구 파운드, 십 stone 칠 파운드
-    83.72s  agent 발화 끝
-    93.08s  user  발화 시작: 분수도 엄청 많네!
-    93.08s  agent 발화 끝
-    94.64s  agent 발화 시작: 조금 복잡할 수 있죠! 스포츠 내에서 매우 정확한 구분이 필요하기 때문이에요.
-    94.64s  user  발화 끝
-   100.36s  user  발화 시작: 어어.
-   100.36s  agent 발화 끝
-   100.88s  user  발화 시작: 그럼, 내가 십일 stone이면…
-   100.88s  user  발화 끝
-   102.64s  <ret> 발화 (turn29 첫 프레임)
-   102.96s  agent 발화 시작: <ret> 십일 stone은 백오십사 파운드와 같아요.
-   102.96s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.60s]: Eleven stones is equal to one hundred and fifty-four pounds—simply by 
-   102.96s  user  발화 끝
-   105.56s  user  발화 시작: 맞아.
-   105.56s  agent 발화 끝
-   106.08s  user  발화 시작: 알겠어. 도와줘서 고마워!
-   106.08s  user  발화 끝
-   107.64s  agent 발화 시작: 천만에요!
-   107.64s  user  발화 끝
-   108.16s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 버커니어스가 슈퍼볼 우승했을 때 쿼터백이 누구였는지 궁금해요.
+     4.05s  <ret> 발화 (turn1 첫 프레임)
+     4.37s  agent 발화 시작: <ret> 음, 브래드 존슨이었어. 이천삼년 일월 이십육일, 슈퍼볼 삼십칠에서 레이더스를 마흔여덟대 이십일로
+     4.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.55s]: Brad Johnson quarterbacked the Tampa Bay Buccaneers to a 48–21 victory
+     4.37s  user  발화 끝
+    10.92s  user  발화 시작: 아, 그렇군요. 음, 톰 브래디는요? 톰 브래디가 버커니어스와 함께 슈퍼볼을 몇 번이나 우승했는지 궁금해요.
+    10.92s  agent 발화 끝
+    18.16s  <ret> 발화 (turn3 첫 프레임)
+    18.56s  agent 발화 시작: <ret> 톰 브래디는 버커니어스와 함께 슈퍼볼 딱 한 번 우승했어. 이천이십일년 이월 칠일, 슈퍼볼 오십오
+    18.56s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.37s]: Tom Brady won one Super Bowl with the Tampa Bay Buccaneers, leading th
+    18.56s  user  발화 끝
+    28.93s  user  발화 시작: 음.
+    28.93s  agent 발화 끝
+    29.47s  agent 발화 시작: 강력한 쿼터백이 팀의 성적을 정말 끌어올릴 수 있다는 게 얼마나 멋진지, 그렇지 않아?
+    29.47s  user  발화 끝
+    36.57s  user  발화 시작: 음.
+    36.57s  agent 발화 끝
+    37.12s  user  발화 시작: 저기요, 잠깐만 여쭤볼게요. 지금 탬파의 날씨는 어떤가요?
+    37.12s  user  발화 끝
+    40.70s  <ret> 발화 (turn8 첫 프레임)
+    40.94s  agent 발화 시작: <ret> 지금 탬파는 기온이 삼십일 점 일도이고, 습도는 칠십팔퍼센트, 풍속은 시속 팔 점 이킬로미터야. 
+    40.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.73s]: (tool result) Temperature: 31.1°C, Humidity: 78%, Wind: 8.2 km/h, Cond
+    40.94s  user  발화 끝
+    49.67s  user  발화 시작: 아, 듣기만 해도 좋네요…
+    49.67s  agent 발화 끝
+    51.85s  user  발화 시작: 죄송하지만, 방금 습도에 대해 말씀하신 내용을 다시 한번 말씀해 주시겠어요?
+    51.85s  user  발화 끝
+    57.31s  agent 발화 시작: 그냥 탬파의 현재 날씨를 말씀드린 건데, 습도가 칠십팔퍼센트라서 기온이 삼십일 점 일도인 만큼 꽤 더울 수 
+    57.31s  user  발화 끝
+    66.59s  user  발화 시작: 아, 네. 근처에 괜찮은 식당 좀 찾아주시겠어요?
+    66.59s  agent 발화 끝
+    70.17s  <ret> 발화 (turn13 첫 프레임)
+    70.41s  agent 발화 시작: <ret> 몇 군데 찾아봤는데, 콜롬비아 레스토랑, 번스 스테이크 하우스, 울렐레, 로스터 앤 더 틸이 있어
+    70.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) Columbia Restaurant, Bern's Steak House, Ulele, Rooster 
+    70.41s  user  발화 끝
+    78.05s  user  발화 시작: 흠, 울렐레가 흥미로운 것 같아요. 그곳에 대해 더 자세히 알려주시겠어요?
+    78.05s  agent 발화 끝
+    83.35s  <ret> 발화 (turn15 첫 프레임)
+    83.51s  agent 발화 시작: <ret> 울렐레는 탬파 리버워크에 위치해 있고, 플로리다 원주민 요리에서 영감을 받은 메뉴를 제공하며, 신
+    83.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.92s]: Ulele is a restaurant located on the Tampa Riverwalk, offering a menu 
+    83.51s  user  발화 끝
+    94.43s  agent 발화 끝

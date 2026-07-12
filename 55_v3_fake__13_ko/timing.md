@@ -4,56 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "지국",
+#     "name": "은현",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-19",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-08-08",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-07-31",
+#       "date": "2026-06-27",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-06-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in May."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-02",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-29",
+#       "date": "2025-12-01",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -61,83 +48,47 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-09-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 오레오 쿠키가 미국에서 처음 팔린 곳이 어디였는지 아세요 | S2 음... 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영 | S3 아니요, 됐어요. 그럼, 혹시 내일 날씨 어때요? | S4 아, 맞아요. 그때 그랬었죠.
+# EXAMINER(FDB-v2) 단계: S1 방갈로스가 마지막으로 플레이오프에 진출한 게 언제였죠? | S2 아, 그렇군요. | S3 …근데, 그 이천십오년 이후로는 한 번도 못 나갔나요? | S4 기대해 봐야겠네요.
 
-     0.00s  user  발화 시작: 혹시 오레오 쿠키가 미국에서 처음 팔린 곳이 어디였는지 아세요?
-     4.39s  <ret> 발화 (turn1 첫 프레임)
-     4.55s  agent 발화 시작: <ret> 오레오 쿠키가 미국에서 처음 판매된 곳은 뉴저지 주 호보켄이었답니다.
-     4.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: Hoboken, New Jersey.
-     4.55s  user  발화 끝
-     9.01s  <ret> 발화 (turn2 첫 프레임)
-     9.09s  agent 발화 시작: <ret> 저는 여러분의 일정을 관리하고, 생산성을 높이는 데 도움을 드릴 수 있어요.
-     9.09s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.56s]: The current price of Tesla stock is $253.87 as of 2:27 PM PDT.
-     9.09s  agent 발화 끝
-    14.65s  user  발화 시작: 그치.
-    14.65s  agent 발화 끝
-    15.16s  user  발화 시작: 아, 그렇군요. 그럼 호보켄은 어떤 곳이에요?
-    15.16s  user  발화 끝
-    17.87s  <ret> 발화 (turn5 첫 프레임)
-    18.19s  agent 발화 시작: <ret> 호보켄은 뉴저지 주 허드슨 카운티에 있는 도시이고, 뉴욕 대도시권에 속해 있어요.
-    18.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.56s]: Hoboken is a city in Hudson County, New Jersey, United States, part of
-    18.19s  user  발화 끝
-    23.75s  user  발화 시작: 뉴욕이랑 가까운 곳이네요?
-    23.75s  agent 발화 끝
-    25.26s  agent 발화 시작: 네, 뉴욕과 아주 가까운 곳이랍니다. 멋진 곳이죠.
-    25.26s  user  발화 끝
-    28.80s  user  발화 시작: 응.
-    28.80s  agent 발화 끝
-    29.30s  user  발화 시작: 음... 이번 주 토요일에 영화 보러 가고 싶은데, 괜찮은 영화 있을까요?
-    29.30s  user  발화 끝
-    34.54s  <ret> 발화 (turn10 첫 프레임)
-    34.86s  agent 발화 시작: <ret> 이번 주 토요일에 볼 만한 영화로는 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', '가
-    34.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.59s]: (tool result) MovieFinder: Searching for movies now. Results: 'Inside 
-    34.86s  user  발화 끝
-    43.45s  user  발화 시작: '인사이드 아웃 이'가 제일 끌리네요. 영화 시간 좀 알아봐 주시겠어요?
-    43.45s  agent 발화 끝
-    48.26s  <ret> 발화 (turn12 첫 프레임)
-    48.50s  agent 발화 시작: <ret> '인사이드 아웃 이'는 메가박스 코엑스에서 오후 두시 삼십분, 다섯시, 일곱시 삼십분에 상영된답니
-    48.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) MovieTimes: 'Inside Out 2' showings at 2:30 PM, 5:00 PM,
-    48.50s  user  발화 끝
-    54.56s  user  발화 시작: 맞아.
-    54.56s  agent 발화 끝
-    55.07s  agent 발화 시작: 혹시 지금 바로 예매해 드릴까요?
-    55.07s  user  발화 끝
-    57.59s  user  발화 시작: 아니요, 아직은요. 그냥 알아만 봐 주세요.
-    57.59s  agent 발화 끝
-    60.63s  agent 발화 시작: 네, 알겠습니다. 혹시 다른 영화를 알아볼까요?
-    60.63s  user  발화 끝
-    63.66s  user  발화 시작: 아니요, 됐어요. 그럼, 혹시 내일 날씨 어때요?
-    63.66s  agent 발화 끝
-    67.03s  <ret> 발화 (turn18 첫 프레임)
-    67.19s  agent 발화 시작: <ret> 내일 서울 날씨는 섭씨 이십팔도, 습도 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 예상됩니다.
-    67.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) Weather: Tomorrow in Seoul will be 28.0°C, humidity 65%,
-    67.19s  user  발화 끝
-    73.76s  user  발화 시작: 꽤 덥겠네요.
-    73.76s  agent 발화 끝
-    74.77s  agent 발화 시작: 네, 꽤 더울 것 같아요. 시원한 물을 많이 드세요.
-    74.77s  user  발화 끝
-    79.32s  user  발화 시작: 알겠습니다. 혹시 제가 지난번에 뭐라고 말씀드렸었죠?
-    79.32s  agent 발화 끝
-    82.19s  <ret> 발화 (turn22 첫 프레임)
-    82.35s  agent 발화 시작: <ret> 이천이십사년 칠월 삼일에 "저는 오늘 너무 피곤해요"라고 말씀하셨어요.
-    82.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.04s]: [2024-07-03] 저는 오늘 너무 피곤해요.
-    82.35s  user  발화 끝
-    86.39s  user  발화 시작: 아, 맞아요. 그때 그랬었죠.
-    86.39s  agent 발화 끝
-    88.41s  agent 발화 시작: 힘든 하루였군요. 충분히 쉬셨기를 바랍니다.
-    88.41s  user  발화 끝
-    90.94s  user  발화 시작: 네, 덕분에 좀 쉬었어요.
-    90.94s  agent 발화 끝
-    92.96s  agent 발화 시작: 다행이에요. 저는 여러분이 편안하게 휴식을 취하실 수 있도록 도와드릴 수 있어요.
-    92.96s  user  발화 끝
-    98.52s  agent 발화 끝
+     0.00s  user  발화 시작: 방갈로스가 마지막으로 플레이오프에 진출한 게 언제였죠?
+     3.06s  <ret> 발화 (turn1 첫 프레임)
+     3.22s  agent 발화 시작: <ret> 방갈로스가 마지막으로 플레이오프에 진출한 건 이천십오년이었어요. 에이 에프 씨 북부에서 십이승 사
+     3.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.60s]: The Cincinnati Bengals last made the playoffs in 2015, winning the AFC
+     3.22s  user  발화 끝
+    11.82s  user  발화 시작: 와.
+    11.82s  agent 발화 끝
+    12.36s  user  발화 시작: 아, 그렇군요.
+    12.36s  user  발화 끝
+    13.35s  <ret> 발화 (turn4 첫 프레임)
+    13.43s  agent 발화 시작: <ret> 팀의 성적을 꾸준히 살펴보시는군요. 혹시 다른 팀의 플레이오프 진출 기록도 궁금하신가요?
+    13.43s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.91s]: The average temperature in Reykjavik, Iceland in July is 13.1°C, with 
+    13.43s  user  발화 끝
+    19.34s  agent 발화 시작: 혹시 최근에 관심 있는 스포츠가 있으신가요 —
+    19.34s  agent 발화 끝
+    23.10s  user  발화 시작: …근데, 그 이천십오년 이후로는 한 번도 못 나갔나요?
+    23.10s  agent 발화 끝
+    27.40s  agent 발화 시작: 네, 이천십오년 이후로는 플레이오프에 진출하지 못했답니다. 오랜 기다림이었죠.
+    27.40s  user  발화 끝
+    31.70s  agent 발화 시작: 하지만 최근에 다시 좋은 성적을 내고 있어서 다음 시즌에는 꼭 진출할 수 있을 거예요.
+    31.70s  agent 발화 끝
+    39.22s  user  발화 시작: 기대해 봐야겠네요.
+    39.22s  agent 발화 끝
+    40.29s  user  발화 끝

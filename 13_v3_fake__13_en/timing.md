@@ -4,64 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Alex",
+#     "name": "Emma",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-19",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-17",
+#       "date": "2026-06-27",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-08-08",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-05-09",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-07-31",
+#       "date": "2026-05-06",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-04-18",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-16",
+#       "category": "home",
+#       "text": "User's home address is 594 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-02",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2025-06-03",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -71,53 +60,28 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Zen, I'm trying to be more mind | S2 Wow, that's not what I expected! | S3 Could you find some events happeni | S4 I need to set a reminder to book t
 
-     0.00s  user  발화 시작: Hi Zen, I'm trying to be more mindful of where my food comes
-     5.24s  agent 발화 시작: That's wonderful! It's so grounding to connect with the orig
-     5.24s  user  발화 끝
-    10.48s  user  발화 시작: I was just wondering, where were the first Oreo cookies sold
-    10.48s  agent 발화 끝
-    14.35s  <ret> 발화 (turn3 첫 프레임)
-    14.59s  agent 발화 시작: <ret> The very first Oreos were sold in Hoboken, New Jersey,
-    14.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: The first Oreo cookies were sold in Hoboken, New Jersey, in 1912.
-    14.59s  user  발화 끝
-    19.46s  user  발화 시작: Uh-huh.
-    19.46s  agent 발화 끝
-    19.83s  user  발화 시작: Wow, that's not what I expected!
-    19.83s  user  발화 끝
-    22.00s  <ret> 발화 (turn6 첫 프레임)
-    22.08s  agent 발화 시작: <ret> [happy] Sometimes the most surprising facts are the mo
-    22.08s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.86s]: The average global temperature in June 2024 was 16.3°C, a 0.2°C increa
-    22.08s  user  발화 끝
-    26.94s  agent 발화 시작: It’s easy to get caught up in assumptions, but exploring new
-    26.94s  agent 발화 끝
-    32.18s  user  발화 시작: Uh-huh.
-    32.18s  agent 발화 끝
-    32.56s  user  발화 시작: I'm trying to plan a little weekend getaway.
-    32.56s  user  발화 끝
-    35.55s  agent 발화 시작: That sounds lovely! A change of scenery can do wonders for t
-    35.55s  user  발화 끝
-    40.41s  user  발화 시작: Yeah.
-    40.41s  agent 발화 끝
-    40.79s  user  발화 시작: Could you find some events happening in Seattle next weekend
-    40.79s  user  발화 끝
-    44.13s  <ret> 발화 (turn13 첫 프레임)
-    44.53s  agent 발화 시작: <ret> There's the Seattle Maritime Festival happening July 1
-    44.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Event: Seattle Maritime Festival, Date: July 12-13, 2026
-    44.53s  user  발화 끝
-    49.40s  user  발화 시작: That sounds fun!
-    49.40s  agent 발화 끝
-    50.52s  agent 발화 시작: It’s important to build in moments of joy and exploration in
-    50.52s  user  발화 끝
-    55.38s  user  발화 시작: I need to set a reminder to book tickets for that.
-    55.38s  agent 발화 끝
-    59.50s  agent 발화 시작: A little planning can make all the difference.
-    59.50s  user  발화 끝
-    62.49s  user  발화 시작: Can you set an alarm for tomorrow at 10 AM to remind me?
-    62.49s  agent 발화 끝
-    67.20s  <ret> 발화 (turn19 첫 프레임)
-    67.36s  agent 발화 시작: <ret> An alarm is set for tomorrow, July 11th, at 10:00 AM, 
-    67.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Alarm set for July 11, 2026, 10:00 AM. Confirmation ID: 
-    67.36s  user  발화 끝
-    72.22s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Thios, when did the Bengals last make the playoffs?
+     3.24s  <ret> 발화 (turn1 첫 프레임)
+     3.48s  agent 발화 시작: <ret> The Bengals last made the playoffs in the 2021–2022 se
+     3.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: The Cincinnati Bengals most recently made the playoffs in the 2021–202
+     3.48s  user  발화 끝
+     8.35s  user  발화 시작: Uh-huh.
+     8.35s  agent 발화 끝
+     8.70s  user  발화 시작: Oh, wow, that recent!
+     8.70s  user  발화 끝
+     9.69s  <ret> 발화 (turn4 첫 프레임)
+    10.09s  agent 발화 시작: <ret> It really was a fantastic run for them, wasn’t it? I’m
+    10.09s  ⚡SPAN 주입(IRRELEVANT) [d'=1.52s / d_lead=5.57s]: The average high temperature in Reykjavik, Iceland in July is 13.0°C, 
+    10.09s  user  발화 끝
+    15.66s  agent 발화 시작: It's always inspiring to see a team achieve such success—
+    15.66s  agent 발화 끝
+    19.14s  user  발화 시작: …but before that, how long was it since their previous playo
+    19.14s  agent 발화 끝
+    23.31s  agent 발화 시작: Before 2022, the Bengals hadn’t reached the playoffs since t
+    23.31s  user  발화 끝
+    29.23s  user  발화 시작: Oh.
+    29.23s  agent 발화 끝
+    29.58s  agent 발화 시작: It’s interesting how long those droughts can be, isn’t it? A
+    29.58s  user  발화 끝
+    36.54s  agent 발화 끝

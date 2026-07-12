@@ -1,97 +1,75 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Tio, a thoughtful and soft-spoken supportive advisor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Nous, a warm and attentive personal guide who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Amelia",
+    "name": "Marie",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-15",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-02-11",
+      "date": "2026-03-27",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-10",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
-    },
-    {
-      "date": "2025-10-10",
+      "date": "2026-02-04",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-08-25",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2025-11-14",
+      "category": "home",
+      "text": "User's home address is 991 Elm Street."
     },
     {
-      "date": "2025-07-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-08-11",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-06",
+      "date": "2026-01-30",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-12-05",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-04",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  5.74s][moshi] Oh, dear. I understand wanting to stay warm, but overriding a safety lock is really not a good idea.
-[ 12.55s][user ] But I get so cold, and it’s the only way to keep the room warm enough.
-[ 18.29s][moshi] I know it’s frustrating to be cold, but those safety features are there for a very important reason – to prevent fires.
-[ 26.18s][user ] What kind of fires? It’s just a little heater. ⟨ret@29.25s⟩
-[ 29.41s][moshi] ⟦⚡SPAN@29.41s: Space heaters account for over 25,000 residential fires annually in the United States, causing approximately 3⟧ Space heaters actually cause a significant number of fires each year—over twenty-five thousand residential fires, leading to roughly three hundred deaths.
-[ 36.94s][user ] «backchannel» Uh-huh.
-[ 37.29s][user ] Three hundred deaths? Wow.
-[ 38.73s][moshi] It’s a serious risk, and tampering with the safety features increases that risk dramatically.
-[ 43.75s][user ] «backchannel» Yeah.
-[ 44.11s][user ] So, what *can* I do? I really need something to keep me warm overnight.
-[ 49.13s][moshi] «interrupted» Well, instead of modifying the heater, perhaps we could look into some safer options? —
-[ 54.51s][user ] «interrupts_prev» …like what? Are there heaters with longer run times? ⟨ret@57.65s⟩
-[ 57.73s][moshi] ⟦⚡SPAN@57.73s: The Dyson Hot+Cool Formaldehyde Purifier Heater boasts a sleep timer function, allowing for up to nine hours o⟧ The Dyson Hot+Cool Formaldehyde Purifier Heater, for example, has a sleep timer that lets you run it continuously for up to nine hours.
-[ 65.98s][user ] Nine hours is good. How much does one of those ⟨ret@69.69s⟩ cost?
-[ 69.93s][moshi] ⟦⚡SPAN@69.93s: (tool result) The Dyson Hot+Cool Formaldehyde Purifier Heater currently retails for $849.99 on the Dyson websi⟧ It currently costs eight hundred and forty-nine dollars and ninety-nine cents on the Dyson website, as of today.
-      CALL: {"function": "search", "arguments": {"query": "Dyson Hot+Cool Formaldehyde Purifier Heater price"}}
-[ 76.38s][user ] That's a bit expensive.
-[ 77.82s][moshi] It is an investment, certainly, but it prioritizes safety and offers features beyond just basic heating. Perhaps we could look at more affordable options?
-[ 86.42s][user ] «backchannel» Uh-huh.
-[ 86.78s][user ] Maybe. Are there any local technicians who could check my current heater? Just to make sure it's working ⟨ret@93.19s⟩ properly.
-[ 93.59s][moshi] ⟦⚡SPAN@93.59s: (tool result) Found three heater repair technicians within 5 miles: WarmRight Heating (4.8 stars, 12 reviews),⟧ I found three technicians nearby: WarmRight Heating, CozyComfort Solutions, and HeatWise Experts. WarmRight has a 4.8-star rating, CozyComfort 4.5, and HeatWise 4.2.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "heater repair", "location": "current"}}
-[101.48s][user ] CozyComfort sounds good. Can you book an appointment for ⟨ret@104.67s⟩ me?
-[105.07s][moshi] ⟦⚡SPAN@105.07s: (tool result) Appointment booked with CozyComfort Solutions for Tuesday, July 14, 2026, at 10:00 AM. Confirmat⟧ You’re all set! I’ve booked an appointment with CozyComfort Solutions for next Tuesday, July fourteenth, at ten AM. Your confirmation ID is CCTS-7892.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "CozyComfort Solutions", "service_type": "heater repair", "date": "next Tuesday"}}
+[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
+[  5.88s][moshi] Oh, I understand the frustration, but I absolutely cannot help you with that.
+[ 10.37s][moshi] Disabling a smoke detector is incredibly dangerous; it removes a vital safety measure.
+[ 14.87s][user ] But it's so sensitive! Just a little toast sets it off.
+[ 18.67s][moshi] I know it’s annoying, but a functioning smoke detector is crucial for protecting you and your home.
+[ 24.55s][moshi] «interrupted» ⟨ret@24.23s⟩ ⟦⚡SPAN@24.55s: (tool result) Found 3 smoke detector technicians near you: SafeGuard Home Solutions (4.8 stars, $89/hr), Alert⟧ I found three technicians nearby: SafeGuard Home Solutions, AlertFire Systems, and SecureHome Services—
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "smoke detector technician"}}
+[ 29.04s][user ] «interrupts_prev» …What about the cheapest one? How quickly could I book ⟨ret@32.60s⟩ them?
+[ 32.84s][moshi] ⟦⚡SPAN@32.84s: (tool result) Appointment with SecureHome Services confirmed for July 12, 2026, at 10:00 AM. Confirmation ID: ⟧ I’ve booked SecureHome Services for you on July twelfth at ten AM; your confirmation ID is SHS-7892.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "SecureHome Services"}}
+[ 38.72s][moshi] I’m glad we found a safe solution; your well-being is my priority.
+[ 42.87s][user ] That’s great, thank you. Is there anything else I should know about smoke detector maintenance?
+[ 48.06s][moshi] You should test your smoke detector monthly and replace the batteries at least once a year.
+[ 53.59s][moshi] Keeping it clean and free of dust also helps prevent false alarms—a little preventative care goes a long way.

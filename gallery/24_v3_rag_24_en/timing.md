@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Hugo",
+#     "name": "Nathan",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "male",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-05-17",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-08-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-08-04",
+#       "date": "2026-05-30",
 #       "category": "home",
-#       "text": "User's home address is 977 Maple Drive."
+#       "text": "User's home address is 623 Pine Court."
+#     },
+#     {
+#       "date": "2026-03-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-10-18",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-07-23",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-24",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
+#       "date": "2025-11-09",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -66,39 +58,47 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-09-06",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m feeling really stuck in my car | S2 …Where do I even start? | S3 Hmm, I always loved building thing | S4 …was that always the case, though?
+# EXAMINER(FDB-v2) 단계: S1 I’ve been thinking a lot about mak | S2 I was watching *The Great Dictator | S3 …do you know if he had any formal  | S4 That's amazing. So, he just…figure
 
-     0.00s  user  발화 시작: I’m feeling really stuck in my career.
-     2.82s  agent 발화 시작: It’s perfectly normal to feel that way sometimes. We can exp
-     2.82s  user  발화 끝
-     8.45s  user  발화 시작: Okay, that sounds good.…
-     8.45s  agent 발화 끝
-    10.06s  user  발화 시작: …Where do I even start?
-    10.06s  user  발화 끝
-    12.07s  agent 발화 시작: Often, reflecting on what truly motivates you is a good firs
-    12.07s  user  발화 끝
-    20.12s  user  발화 시작: Hmm, I always loved building things with LEGOs.
-    20.12s  agent 발화 끝
-    23.18s  <ret> 발화 (turn6 첫 프레임)
-    23.34s  agent 발화 시작: <ret> The practice of standing for the national anthem—
-    23.34s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.22s]: The tradition of standing for the national anthem in the United States
-    23.34s  user  발화 끝
-    26.56s  user  발화 시작: …was that always the case, though? Didn’t people sit for it 
-    26.56s  agent 발화 끝
-    31.39s  agent 발화 시작: That’s a very insightful question. Prior to the 1940s, it wa
-    31.39s  user  발화 끝
-    36.62s  user  발화 시작: Oh.
-    36.62s  agent 발화 끝
-    37.02s  agent 발화 시작: Yes, it's interesting. The custom solidified during a time o
-    37.02s  user  발화 끝
-    44.67s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been thinking a lot about making a big change, and it’s
+     5.81s  agent 발화 시작: It’s wonderful you’re acknowledging that, and fear is a natu
+     5.81s  user  발화 끝
+    13.56s  user  발화 시작: I’m thinking about a career shift, actually. Something compl
+    13.56s  agent 발화 끝
+    17.44s  agent 발화 시작: That’s a significant step! It’s brave to consider a path tha
+    17.44s  user  발화 끝
+    24.80s  user  발화 시작: Yeah.
+    24.80s  agent 발화 끝
+    25.19s  user  발화 시작: I was watching *The Great Dictator* last night, and it got m
+    25.19s  user  발화 끝
+    30.06s  <ret> 발화 (turn6 첫 프레임)
+    30.22s  agent 발화 시작: <ret> It’s fascinating how art can inspire reflection, and *
+    30.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.24s]: Charlie Chaplin wrote, directed, scored, and starred in *The Great Dic
+    30.22s  user  발화 끝
+    41.46s  user  발화 시작: Oh.
+    41.46s  agent 발화 끝
+    41.85s  agent 발화 시작: Chaplin’s work often tackles complex themes with both humor 
+    41.85s  user  발화 끝
+    46.50s  user  발화 시작: …do you know if he had any formal training as a writer?
+    46.50s  agent 발화 끝
+    50.75s  <ret> 발화 (turn10 첫 프레임)
+    51.15s  agent 발화 시작: <ret> Actually, Charlie Chaplin began performing at a young 
+    51.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: Charlie Chaplin began performing at a young age and largely developed 
+    51.15s  user  발화 끝
+    60.83s  user  발화 시작: Mhm.
+    60.83s  agent 발화 끝
+    61.22s  user  발화 시작: That's amazing. So, he just…figured it out?
+    61.22s  user  발화 끝
+    63.93s  agent 발화 시작: It seems so! Many creatives blossom through dedication and a
+    63.93s  user  발화 끝
+    73.23s  agent 발화 끝

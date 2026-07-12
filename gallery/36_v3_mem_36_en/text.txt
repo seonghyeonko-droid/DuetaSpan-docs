@@ -1,85 +1,82 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Kloraen, a warm and attentive life coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Velix, a grounded and empathetic supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Noa",
+    "name": "Ivy",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
+      "date": "2026-04-01",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-12-30",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-11-19",
-      "category": "home",
-      "text": "User's home address is 230 Oak Avenue."
-    },
-    {
-      "date": "2025-07-23",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2025-07-08",
+      "date": "2026-03-29",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-06-21",
+      "date": "2025-12-01",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-10-27",
+      "category": "home",
+      "text": "User's home address is 918 Birch Road."
+    },
+    {
+      "date": "2025-05-31",
+      "category": "work",
+      "text": "User works as a software engineer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
+      "date": "2026-05-06",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-06-30",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-02-16",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Noa, I'm Kloraen. It’s lovely to meet you.
-[  3.32s][user ] «backchannel» Yeah.
-[  3.69s][user ] Um, well, I was hoping you could help me remember ⟨ret@7.51s⟩ something.
-[  7.75s][moshi] ⟦⚡SPAN@7.75s: [2025-07-23] User is planning a trip to Switzerland in March.⟧ You are planning a trip to Switzerland in March, according to my notes.
-[ 12.54s][user ] «backchannel» Yeah.
-[ 12.91s][user ] That's right! And I was also looking at cars, wasn't ⟨ret@16.57s⟩ I?
-[ 16.97s][moshi] «interrupted» ⟦⚡SPAN@16.97s: [2026-06-05] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ You were researching used cars, specifically hybrid models with under thirty thousand miles—
-[ 21.76s][user ] «interrupts_prev» …actually, do you think a hybrid is the right choice for city driving?
-[ 26.56s][moshi] Hybrids are often fantastic for city driving, offering better fuel economy—
-[ 30.61s][user ] «backchannel» Yeah.
-[ 30.98s][moshi] …because of the electric motor assisting at lower speeds. It can really reduce your carbon footprint too, which is something many people value.
-[ 39.47s][user ] «backchannel» Yeah.
-[ 39.84s][user ] That sounds good. I’m also allergic to something, right? ⟨ret@43.00s⟩
-[ 43.16s][moshi] ⟦⚡SPAN@43.16s: [2025-06-21] User is allergic to pollen.⟧ Yes, my notes indicate you are allergic to pollen. Perhaps Switzerland in March will be better for that, since pollen counts are lower then.
+[  0.00s][moshi] Hi Ivy, I'm Velix. It's lovely to connect with you today.
+[  4.38s][user ] Um, hi Velix. I was just thinking about that trip I took last ⟨ret@9.72s⟩ year.
+[  9.96s][moshi] ⟦⚡SPAN@9.96s: [2026-05-06] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ I have a note from May sixth about your gym preferences—you wanted a pool and something close to your office.
+[ 17.93s][user ] «backchannel» Yeah, yeah.
+[ 18.72s][user ] Oh, right! That's what I meant. And I think I mentioned I'm vegetarian, didn't ⟨ret@24.30s⟩ I?
+[ 24.70s][moshi] ⟦⚡SPAN@24.70s: [2026-04-01] User is vegetarian.⟧ You did, Ivy. My notes show you are vegetarian, recorded on April first.
+[ 29.88s][user ] «backchannel» Oh.
+[ 30.28s][moshi] It's wonderful you prioritize your dietary needs when planning.
+[ 33.86s][user ] I was also looking at cars, actually… a hybrid, I ⟨ret@37.93s⟩ think.
+[ 38.25s][moshi] ⟦⚡SPAN@38.25s: [2025-06-30] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ I see you were researching a used hybrid car with under thirty thousand miles, noted June thirtieth.
+[ 45.02s][user ] Yes! That’s right. Do you think you can find me some Thai restaurants nearby? ⟨ret@50.44s⟩
+[ 50.60s][moshi] ⟦⚡SPAN@50.60s: (tool result) Found 3 Thai restaurants in Berlin: Krung Thep (4.5 stars, 1.2 km), Bangkok Street Food (4.2 sta⟧ I found three Thai restaurants in Berlin: Krung Thep, Bangkok Street Food, and Little Siam.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Thai", "location": "Berlin"}}
+[ 56.57s][user ] «backchannel» Yeah.
+[ 56.97s][user ] Oh, that's good to know. Thanks.
+[ 59.36s][moshi] You're very welcome, Ivy.

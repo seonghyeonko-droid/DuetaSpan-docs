@@ -1,10 +1,10 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Klaeen, a warm and attentive life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Rellalo, a gentle and reflective counselor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Sky",
+    "name": "Oliver",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,61 +12,99 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
-      "category": "home",
-      "text": "User's home address is 515 Elm Street."
+      "date": "2026-05-17",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
-      "date": "2026-06-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-03-29",
+      "category": "work",
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-04-23",
+      "date": "2025-11-09",
       "category": "diet",
       "text": "User is pescatarian."
     },
     {
-      "date": "2025-12-31",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-07-25",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-10-25",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
       "date": "2025-06-16",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "category": "home",
+      "text": "User's home address is 245 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-04",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-29",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, I was wondering… what’s the highest score ever in ice ⟨ret@4.78s⟩ skating?
-[  5.02s][moshi] ⟦⚡SPAN@5.02s: The highest score in ice skating is 330.43, achieved by Nathan Chen at the 2022 Winter Olympics.⟧ Well, it seems Nathan Chen holds that record with a remarkable score of 330.43, at the 2022 Winter Olympics.
-[ 12.97s][user ] Wow. That’s… really high.
-[ 14.65s][user ] «backchannel» Yeah.
-[ 15.06s][moshi] ⟨ret@14.98s⟩ ⟦⚡SPAN@15.06s: Yuzuru Hanyu is a two-time Olympic champion and one of the most popular figure skaters in history.⟧ Speaking of incredible skaters, Yuzuru Hanyu is another name you’ll often hear—a two-time Olympic champion, and a very beloved athlete.
-[ 23.43s][user ] «backchannel» Mm-hmm.
-[ 23.85s][user ] Hmm, so, um, is he still ⟨ret@26.38s⟩ competing?
-[ 26.78s][moshi] ⟦⚡SPAN@26.78s: Yuzuru Hanyu retired from competitive figure skating in July 2022 and now performs in professional shows.⟧ He actually retired from competitive skating in July of 2022, but now focuses on professional shows—still sharing his gift with the world.
-[ 35.99s][user ] That's good to hear. He sounds wonderful.
+[  0.00s][user ] Hi, I was wondering about plate tectonics.
+[  2.72s][moshi] It’s good to explore such fundamental forces, isn’t it? Sometimes, understanding the bigger picture helps us feel more grounded.
+[ 10.12s][user ] Yeah, uh, what kind of boundary is between the Pacific and North American ⟨ret@15.25s⟩ plates?
+[ 15.57s][moshi] ⟦⚡SPAN@15.57s: The boundary between the Pacific and North American plates is a transform boundary, where plates slide past ea⟧ That boundary is a transform boundary, where plates slide past each other horizontally. It’s a fascinating example of how the earth’s surface is constantly shifting.
+[ 25.30s][user ] Transform… okay. What causes earthquakes there? ⟨ret@27.55s⟩
+[ 27.63s][moshi] ⟦⚡SPAN@27.63s: Earthquakes along transform boundaries are caused by the build-up and sudden release of stress as the plates s⟧ Earthquakes occur because of stress building, and then the sudden release as the plates slide past one another.
+[ 34.64s][user ] «backchannel» Yeah.
+[ 35.03s][user ] So it's like… they get stuck and then slip?
+[ 38.53s][moshi] Precisely. It’s much like trying to slide a heavy box across a rough floor – friction builds until it overcomes the resistance.
+[ 47.09s][user ] [laugh] That’s a good way to explain it. What’s the San Andreas Fault got to do with ⟨ret@53.69s⟩ this?
+[ 54.09s][moshi] ⟦⚡SPAN@54.09s: The San Andreas Fault is a geologic fault located in California that is the boundary between the Pacific Plate⟧ The San Andreas Fault is a geologic fault in California, and it’s the boundary between those two plates.
+[ 61.10s][user ] Oh, so it *is* a transform boundary too?
+[ 64.21s][moshi] Yes, absolutely. It’s the most famous example of a transform plate boundary, and a very active one.
+[ 70.83s][user ] «backchannel» Nice.
+[ 71.22s][user ] Hmmm, is it always sliding, or does it stop and start?
+[ 75.50s][moshi] «interrupted» It doesn’t move continuously; it accumulates stress over time—
+[ 79.00s][user ] «interrupts_prev» …is that why some sections are more prone to big quakes than others? ⟨ret@83.98s⟩
+[ 84.06s][moshi] ⟦⚡SPAN@84.06s: Areas along the fault that accumulate stress more quickly are more prone to larger earthquakes when that stres⟧ Areas that accumulate stress more quickly are more prone to larger earthquakes when that stress is released. It's a complex system, and predicting exactly when and where an earthquake will strike is still a challenge.
+[ 97.68s][user ] Wow, okay. Are there any other transform boundaries like that ⟨ret@101.72s⟩ one?
+[101.96s][moshi] ⟦⚡SPAN@101.96s: Other examples of transform boundaries include the Alpine Fault in New Zealand and several smaller faults thro⟧ Other examples include the Alpine Fault in New Zealand and smaller faults in California and Turkey.
+[108.19s][user ] New Zealand, huh? Interesting. What about subduction zones?
+[111.30s][moshi] Subduction zones are quite different. They involve one plate sliding *under* another, creating very different types of geological activity.
+[118.70s][user ] «backchannel» Okay.
+[119.09s][user ] Right, volcanoes and stuff. Are those more common than transform ⟨ret@122.97s⟩ boundaries?
+[123.37s][moshi] ⟦⚡SPAN@123.37s: Subduction zones are more common globally than transform boundaries, accounting for approximately 80% of the E⟧ Subduction zones are more common, accounting for approximately 80% of the Earth’s volcanic activity.
+[128.81s][user ] Eighty percent! That’s a lot. So, transform boundaries are rarer?
+[132.71s][moshi] They are relatively rarer, yes. Though they are still incredibly important in shaping our planet’s surface.
+[138.93s][user ] «backchannel» Yeah.
+[139.32s][user ] Do transform boundaries ever cause tsunamis? ⟨ret@141.58s⟩
+[141.66s][moshi] ⟦⚡SPAN@141.66s: While transform boundaries typically do not generate large tsunamis like subduction zones, underwater landslid⟧ They don’t usually create large tsunamis, but underwater landslides from earthquakes can cause smaller, localized ones.
+[147.88s][user ] Okay, good to know. It’s all a bit scary, honestly.
+[151.78s][moshi] It’s natural to feel a little apprehensive when considering such powerful forces. Acknowledging that can be the first step toward finding peace with it.
+[161.12s][user ] [sigh] I guess so. Can you tell me about the rate of movement on the San Andreas Fault? ⟨ret@167.96s⟩
+[168.12s][moshi] ⟦⚡SPAN@168.12s: The Pacific Plate moves northwest relative to the North American Plate at an average rate of about 5 centimete⟧ The Pacific Plate moves northwest at an average rate of about 5 centimeters per year along the fault.
+[175.13s][user ] Five centimeters… that doesn't sound like much.
+[177.85s][moshi] It doesn't seem like much in a human lifetime, but over millions of years, those centimeters add up to significant changes. It's a reminder of the slow, relentless power of nature.

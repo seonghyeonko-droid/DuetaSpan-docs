@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Quinn",
+#     "name": "Jack",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
+#     "nationality": "Canadian",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "home",
-#       "text": "User's home address is 644 Elm Street."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2026-06-24",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-01-26",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-12-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-09-02",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-08-16",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "home",
+#       "text": "User's home address is 953 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-18",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-01-27",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,41 +60,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to remember a British c | S2 …did he start on the show right aw | S3 It's good to know how people get t | S4 [happy] That sounds easy enough! W
+# EXAMINER(FDB-v2) 단계: S1 Hi Tuna, I’m feeling a bit lost ab | S2 That sounds… nice. | S3 Um, I was reading about Korean his | S4 That’s interesting. Maybe I should
 
-     0.00s  user  발화 시작: I’m trying to remember a British comedy show, it’s on the ra
-     4.73s  agent 발화 시작: It sounds like you might be thinking of a show called “The N
-     4.73s  user  발화 끝
-    10.25s  user  발화 시작: That’s it! Who was one of the early hosts, a comedian born i
-    10.25s  agent 발화 끝
-    15.36s  <ret> 발화 (turn3 첫 프레임)
-    15.76s  agent 발화 시작: <ret> One of the early hosts was Jimmy Carr, born—
-    15.76s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.55s]: Born in East Dulwich, London, on 26 June 1969, Jimmy Carr is an Englis
-    15.76s  user  발화 끝
-    19.31s  user  발화 시작: …did he start on the show right away…
-    19.31s  agent 발화 끝
-    22.46s  user  발화 시작: …or was he on other things first?
-    22.46s  user  발화 끝
-    25.22s  agent 발화 시작: Before “The News Quiz,” Jimmy Carr was building a career in 
-    25.22s  user  발화 끝
-    29.95s  user  발화 시작: Mhm.
-    29.95s  agent 발화 끝
-    30.35s  agent 발화 시작: He began as a joke writer for established comedians, then di
-    30.35s  user  발화 끝
-    35.08s  user  발화 시작: It's good to know how people get their start. Do you have an
-    35.08s  agent 발화 끝
-    42.56s  agent 발화 시작: Fostering creativity is wonderful; offering open-ended mater
-    42.56s  user  발화 끝
-    46.90s  user  발화 시작: Mm-hmm.
-    46.90s  agent 발화 끝
-    47.29s  user  발화 시작: Like what kind of materials?
-    47.29s  user  발화 끝
-    49.26s  agent 발화 시작: Things like building blocks, paints, or even just cardboard 
-    49.26s  user  발화 끝
-    54.39s  user  발화 시작: [happy] That sounds easy enough! What’s the weather like in 
-    54.39s  agent 발화 끝
-    59.04s  <ret> 발화 (turn15 첫 프레임)
-    59.12s  agent 발화 시작: <ret> The weather in London is currently 21.0°C, with partly
-    59.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.06s]: (tool result) London: 21.0°C, humidity 68%, wind 6.2 km/h, condition: 
-    59.12s  user  발화 끝
-    68.18s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Tuna, I’m feeling a bit lost about moving to Seoul.
+     4.32s  agent 발화 시작: Welcome to Seoul! It's wonderful you're taking this step. Fe
+     4.32s  user  발화 끝
+    11.39s  user  발화 시작: Yeah, it’s just… a lot. What’s the weather like there right 
+    11.39s  agent 발화 끝
+    15.71s  <ret> 발화 (turn3 첫 프레임)
+    16.11s  agent 발화 시작: <ret> Right now in Seoul, it’s 23.0 degrees Celsius, with hu
+    16.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.64s]: (tool result) Current conditions in Seoul are 23.0°C, humidity 74%, wi
+    16.11s  user  발화 끝
+    24.75s  user  발화 시작: Yeah.
+    24.75s  agent 발화 끝
+    25.14s  user  발화 시작: That sounds… nice.
+    25.14s  user  발화 끝
+    26.32s  agent 발화 시작: It does, doesn’t it? A comfortable temperature can really he
+    26.32s  user  발화 끝
+    31.43s  user  발화 시작: Okay.
+    31.43s  agent 발화 끝
+    31.82s  user  발화 시작: Um, I was reading about Korean history, and I got curious. W
+    31.82s  user  발화 끝
+    40.22s  <ret> 발화 (turn9 첫 프레임)
+    40.46s  agent 발화 시작: <ret> That would be Joh Bruce Yeh, who founded the Chamber M
+    40.46s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.82s]: Joh Bruce Yeh founded the Chamber Music Society of Lincoln Center, whi
+    40.46s  user  발화 끝
+    50.28s  user  발화 시작: Really?
+    50.28s  agent 발화 끝
+    50.67s  agent 발화 시작: Isn’t it fascinating how music can connect us to different c
+    50.67s  user  발화 끝
+    55.78s  user  발화 시작: Yeah.
+    55.78s  agent 발화 끝
+    56.17s  user  발화 시작: It is. What was the recording *based* on?
+    56.17s  user  발화 끝
+    59.08s  <ret> 발화 (turn14 첫 프레임)
+    59.32s  agent 발화 시작: <ret> The recording was actually based on the Russian folk t
+    59.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.86s]: The Grammy-winning recording was based on the Russian folk tale, "The 
+    59.32s  user  발화 끝
+    67.17s  user  발화 시작: Right.
+    67.17s  agent 발화 끝
+    67.57s  user  발화 시작: That’s interesting. Maybe I should look into that.
+    67.57s  user  발화 끝
+    70.71s  agent 발화 시작: That's a great idea! Exploring local folklore can be a beaut
+    70.71s  user  발화 끝
+    77.78s  agent 발화 끝

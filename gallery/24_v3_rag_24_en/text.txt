@@ -1,64 +1,56 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Kleaon, a kind and steady life coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Fuli, a curious and validating wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Hugo",
+    "name": "Nathan",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "male",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-05-17",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-01-13",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-11-18",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-08-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-08-04",
+      "date": "2026-05-30",
       "category": "home",
-      "text": "User's home address is 977 Maple Drive."
+      "text": "User's home address is 623 Pine Court."
+    },
+    {
+      "date": "2026-03-28",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
+    },
+    {
+      "date": "2025-12-13",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-10-18",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-07-23",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-07-12",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-24",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-06",
+      "date": "2025-11-09",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -66,25 +58,28 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-04",
-      "title": "Planning a birthday dinner",
+      "date": "2025-09-06",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling really stuck in my career.
-[  2.82s][moshi] It’s perfectly normal to feel that way sometimes. We can explore some options together.
-[  8.45s][user ] Okay, that sounds good.…
-[ 10.06s][user ] …Where do I even start?
-[ 12.07s][moshi] Often, reflecting on what truly motivates you is a good first step. What did you enjoy doing as a child?
-[ 20.12s][user ] Hmm, I always loved building things with LEGOs. ⟨ret@23.18s⟩
-[ 23.34s][moshi] «interrupted» ⟦⚡SPAN@23.34s: The tradition of standing for the national anthem in the United States began during World War II, specifically⟧ The practice of standing for the national anthem—
-[ 26.56s][user ] «interrupts_prev» …was that always the case, though? Didn’t people sit for it before?
-[ 31.39s][moshi] That’s a very insightful question. Prior to the 1940s, it wasn’t universally expected.
-[ 36.62s][user ] «backchannel» Oh.
-[ 37.02s][moshi] Yes, it's interesting. The custom solidified during a time of national unity. It’s a good reminder that traditions evolve.
+[  0.00s][user ] I’ve been thinking a lot about making a big change, and it’s a little scary.
+[  5.81s][moshi] It’s wonderful you’re acknowledging that, and fear is a natural part of growth. What kind of change are you considering?
+[ 13.56s][user ] I’m thinking about a career shift, actually. Something completely different.
+[ 17.44s][moshi] That’s a significant step! It’s brave to consider a path that truly excites you, even if it feels unfamiliar.
+[ 24.80s][user ] «backchannel» Yeah.
+[ 25.19s][user ] I was watching *The Great Dictator* last night, and it got me thinking… ⟨ret@30.06s⟩
+[ 30.22s][moshi] ⟦⚡SPAN@30.22s: Charlie Chaplin wrote, directed, scored, and starred in *The Great Dictator*, released in 1940, which satirize⟧ It’s fascinating how art can inspire reflection, and *The Great Dictator* was actually written, directed, scored, and starred in by Charlie Chaplin, released in 1940, which satirizes Adolf Hitler.
+[ 41.46s][user ] «backchannel» Oh.
+[ 41.85s][moshi] «interrupted» Chaplin’s work often tackles complex themes with both humor and heartfelt emotion—
+[ 46.50s][user ] «interrupts_prev» …do you know if he had any formal training as a ⟨ret@50.75s⟩ writer?
+[ 51.15s][moshi] ⟦⚡SPAN@51.15s: Charlie Chaplin began performing at a young age and largely developed his skills through practical experience ⟧ Actually, Charlie Chaplin began performing at a young age and largely developed his skills through practical experience rather than formal education. He was largely self-taught.
+[ 60.83s][user ] «backchannel» Mhm.
+[ 61.22s][user ] That's amazing. So, he just…figured it out?
+[ 63.93s][moshi] It seems so! Many creatives blossom through dedication and a willingness to experiment. It sounds like you're thinking about that kind of leap yourself.

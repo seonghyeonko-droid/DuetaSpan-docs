@@ -1,84 +1,90 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Momi, a upbeat and supportive wellness coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Neon, a kind and steady supportive advisor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
     "name": "Hugo",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
+      "date": "2026-06-20",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-16",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2025-12-12",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-11-10",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-11-24",
+      "date": "2025-07-14",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-11-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-07-10",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "home",
+      "text": "User's home address is 312 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-28",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-20",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-10",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm looking for a museum in Boston. ⟨ret@2.71s⟩
-[  2.79s][moshi] ⟦⚡SPAN@2.79s: (tool result) {"place id": "ChIJj61dQgKoEmsRUUlDHuW7W0U", "name": "Museum of Fine Arts", "address": "465 Hunti⟧ I found the Museum of Fine Arts in Boston—it’s at 465 Huntington Avenue, and has a 4.6 star rating.
-      CALL: {"function": "map_search_places", "arguments": {"query": "museum", "location": "Boston"}}
-[ 10.37s][user ] «backchannel» Mhm.
-[ 10.77s][user ] Hmm, is it close to any good ⟨ret@13.56s⟩ restaurants?
-[ 13.96s][moshi] ⟦⚡SPAN@13.96s: (tool result) {"restaurants": [{"name": "Eventide Fenway", "address": "1321 Boylston St, Boston, MA 02215", "c⟧ There are a few! Eventide Fenway offers seafood, and Tiger Mama has Asian fusion—both are highly rated.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Museum of Fine Arts, Boston"}}
-[ 20.74s][user ] «backchannel» Mhm.
-[ 21.14s][moshi] I'm glad you think so! Finding great spots near your interests is a really nice way to settle in.
-[ 28.72s][user ] «backchannel» Yeah.
-[ 29.11s][user ] Okay, what about hotels near the ⟨ret@31.51s⟩ museum?
-[ 31.91s][moshi] ⟦⚡SPAN@31.91s: (tool result) {"hotels": [{"name": "The Fairmont Copley Plaza", "address": "138 St James Ave, Boston, MA 02116⟧ The Fairmont Copley Plaza is a luxurious option—around $350 a night with a 4.5-star rating—or the Courtyard by Marriott is around $280, with a 4.2-star rating.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Museum of Fine Arts, Boston"}}
-[ 42.28s][user ] «backchannel» Oh.
-[ 42.68s][user ] Three-fifty is a bit steep.
-[ 44.67s][moshi] «interrupted» It can be, especially when you're getting settled—
-[ 47.86s][user ] «interrupts_prev» …actually, could you check for something a little further out, maybe with free ⟨ret@53.04s⟩ parking?
-[ 53.44s][moshi] ⟦⚡SPAN@53.44s: (tool result) {"hotels": [{"name": "Hilton Boston Back Bay", "address": "40 Dalton St, Boston, MA 02115", "pri⟧ Okay, the Hilton Boston Back Bay offers free parking, at $220 a night, with a 4.0-star rating—or the DoubleTree in Woburn is $180, rated 3.8 stars.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Boston", "parking": "free"}}
-[ 63.81s][user ] Woburn sounds… far. What’s the weather like there ⟨ret@67.16s⟩ today?
-[ 67.40s][moshi] ⟦⚡SPAN@67.40s: (tool result) {"temperature": "24.0°C", "humidity": "65%", "wind": "7.0 km/h", "condition": "Sunny"}⟧ It’s currently 24.0 degrees Celsius and sunny in Woburn, with 65% humidity and a 7.0 kilometer per hour breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Woburn, MA"}}
-[ 74.98s][user ] «backchannel» Oh.
-[ 75.38s][user ] That’s nice. I think I’ll stick to looking around Boston proper for now.
-[ 80.56s][moshi] That’s perfectly alright! Taking things at your own pace is key to feeling comfortable in a new city.
-[ 87.74s][user ] Could you find me a coffee…
-[ 90.14s][user ] …shop near the Museum of Fine ⟨ret@92.53s⟩ Arts?
-[ 92.93s][moshi] ⟦⚡SPAN@92.93s: (tool result) {"place id": "ChIJ51j5tKRoEmsR q4b O61I9g", "name": "Peet's Coffee", "address": "465 Huntington ⟧ There’s a Peet’s Coffee right at the museum, actually—at 465 Huntington Avenue, with a 4.3 star rating.
-      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shop", "location": "Museum of Fine Arts, Boston"}}
-[ 99.71s][user ] Perfect! Thanks, Momi.
-[100.90s][moshi] You’re very welcome! I’m so glad I could help you find a few places to start exploring.
+[  0.00s][user ] I need to confirm a deletion inside that data frame, the one on the page. ⟨ret@5.35s⟩
+[  5.43s][moshi] ⟦⚡SPAN@5.43s: (tool result) {"status": "success", "message": "Deletion confirmed within the iframe."}⟧ Deletion confirmed within the iframe, just as you asked. That feels good to have resolved, doesn’t it?
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "data frame"}}
+[ 11.59s][user ] Um, good, yeah. What's the weather like in Seoul right ⟨ret@15.17s⟩ now?
+[ 15.57s][moshi] ⟦⚡SPAN@15.57s: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed": "7.2 km/h", "condition": "Sunny"}⟧ Right now in Seoul, it’s twenty-eight point zero degrees Celsius, with sixty-five percent humidity and a wind speed of seven point two kilometers per hour—it’s sunny!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 24.98s][user ] «backchannel» Right.
+[ 25.34s][user ] That sounds…nice. Can you find me some events happening this ⟨ret@28.93s⟩ weekend?
+[ 29.33s][moshi] ⟦⚡SPAN@29.33s: (tool result) {"events": [{"name": "Seoul Music Festival", "date": "July 11, 2026", "location": "Olympic Park"⟧ Let’s see what events are scheduled for July eleventh and twelfth.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "July 11-12, 2026"}}
+[ 33.31s][moshi] This weekend, July eleventh and twelfth, there’s the Seoul Music Festival at Olympic Park and a night tour of Gyeongbokgung Palace. Which one sounds more appealing?

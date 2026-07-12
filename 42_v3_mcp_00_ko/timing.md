@@ -4,69 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "서민",
+#     "name": "주담",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-25",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-07-27",
+#       "date": "2025-12-30",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-11-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-03",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-09-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-25",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-11",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-13",
+#       "date": "2025-10-24",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -76,23 +63,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 삼십칠 점 오 육, 백이십칠 점 영 육 좌표가 어디쯤인지 | S2 아, 종로구나. 그럼 거기서 가장 가까운 지하철역이 어디야? | S3 종각역… 거기는 예전에 자주 갔던 곳인데. | S4 음… 옛날에 친구랑 영화 보러 갔던 기억이 나.
+# EXAMINER(FDB-v2) 단계: S1 트후님, 다음 주 화요일에 피부과 예약 좀 부탁드려요. | S2 오전 열시쯤으로 부탁드려요. | S3 … 혹시 김민지 선생님은 예약 가능한가요? | S4 예약해 주셔서 감사합니다.
 
-     0.00s  user  발화 시작: 혹시 삼십칠 점 오 육, 백이십칠 점 영 육 좌표가 어디쯤인지 알려줄 수 있어?
-     7.21s  <ret> 발화 (turn1 첫 프레임)
-     7.45s  agent 발화 시작: <ret> 그 좌표는 대한민국 서울특별시 종로구 종로오길 십팔번지에 위치하고 있어요. 서울의 중심부라고 할 
-     7.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.45s]: (tool result) {"address": "18, Jongno 5(o)-gil, Jongno-gu, Seoul, Sout
-     7.45s  user  발화 끝
-    14.91s  user  발화 시작: 아, 종로구나. 그럼 거기서 가장 가까운 지하철역이 어디야?
-    14.91s  agent 발화 끝
-    19.17s  agent 발화 시작: 그 근처에는 종각역이 가장 가깝습니다. 도보로 오분 정도면 갈 수 있을 거예요.
-    19.17s  user  발화 끝
-    25.55s  user  발화 시작: 종각역… 거기는 예전에 자주 갔던 곳인데.
-    25.55s  agent 발화 끝
-    28.75s  agent 발화 시작: 그곳은 오랜 추억이 있는 곳이군요. 기억에 남는 일이 있으셨던가요?
-    28.75s  user  발화 끝
-    33.54s  user  발화 시작: 음… 옛날에 친구랑 영화 보러 갔던 기억이 나.
-    33.54s  agent 발화 끝
-    37.80s  agent 발화 시작: 친구분과 함께 좋은 시간을 보내셨군요. 함께하는 추억은 언제나 소중하죠.
-    37.80s  user  발화 끝
-    42.59s  agent 발화 끝
+     0.00s  user  발화 시작: 트후님, 다음 주 화요일에 피부과 예약 좀 부탁드려요.
+     4.18s  agent 발화 시작: 네, 피부과 예약 도와드릴게요. 혹시 선호하는 의사 선생님이 있으신가요?
+     4.18s  user  발화 끝
+     8.89s  user  발화 시작: 아니요, 괜찮아요. 아무 선생님이나 괜찮아요.
+     8.89s  agent 발화 끝
+    11.50s  agent 발화 시작: 다음 주 화요일은 칠월 십사일이네요. 시간은 어떻게 원하세요?
+    11.50s  user  발화 끝
+    15.68s  user  발화 시작: 오전 열시쯤으로 부탁드려요.
+    15.68s  agent 발화 끝
+    17.01s  <ret> 발화 (turn5 첫 프레임)
+    17.25s  agent 발화 시작: <ret> 다음 주 화요일 칠월 십사일 오전 열시에 아냐 샤르마 선생님으로 예약이 완료되었습니다. 확인 번호
+    17.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.46s]: (tool result) {"provider": "Anya Sharma", "date": "2026-07-14", "time"
+    17.25s  user  발화 끝
+    27.71s  user  발화 시작: 아, 됐어요. 다른 선생님으로 바꿔 주세요.
+    27.71s  agent 발화 끝
+    30.84s  agent 발화 시작: 네, 알겠습니다. 다시 다른 선생님으로 찾아볼까요? —
+    30.84s  user  발화 끝
+    34.50s  user  발화 시작: … 혹시 김민지 선생님은 예약 가능한가요?
+    34.50s  agent 발화 끝
+    37.24s  <ret> 발화 (turn9 첫 프레임)
+    37.64s  agent 발화 시작: <ret> 김민지 선생님은 칠월 십오일 오후 두시, 칠월 십육일 오전 열한시 또는 오후 세시에 예약 가능합니
+    37.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) {"provider name": "김민지", "availability": 2026-07-15 14:0
+    37.64s  user  발화 끝
+    45.48s  user  발화 시작: 진짜?
+    45.48s  agent 발화 끝
+    46.00s  user  발화 시작: 네, 그렇게 해주세요.
+    46.00s  user  발화 끝
+    47.25s  <ret> 발화 (turn12 첫 프레임)
+    47.57s  agent 발화 시작: <ret> 김민지 선생님으로 칠월 십오일 오후 두시로 예약이 완료되었습니다. 확인 번호는 엘 제트 일 칠 엑
+    47.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.36s]: (tool result) {"provider": "김민지", "date": "2026-07-15", "time": "14:00
+    47.57s  user  발화 끝
+    55.94s  user  발화 시작: 응.
+    55.94s  agent 발화 끝
+    56.46s  user  발화 시작: 예약해 주셔서 감사합니다.
+    56.46s  user  발화 끝
+    58.03s  agent 발화 시작: 천만에요. 피부 건강 관리에 도움이 되셨으면 좋겠네요.
+    58.03s  user  발화 끝
+    61.69s  agent 발화 끝

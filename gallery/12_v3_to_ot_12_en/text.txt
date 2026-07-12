@@ -1,112 +1,79 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Thiaen, a upbeat and supportive supportive advisor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Drunaen, a calm and patient supportive advisor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Ruby",
+    "name": "Riley",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "late 20s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-30",
+      "date": "2026-04-03",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2026-04-25",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-10-16",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-03-01",
-      "category": "home",
-      "text": "User's home address is 332 Cedar Lane."
+      "date": "2025-09-26",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-01-20",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-12-23",
+      "date": "2025-08-21",
       "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-12-01",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-11",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-07",
+      "date": "2026-05-14",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, how are you today?
-[  1.72s][moshi] I’m doing wonderfully, thank you for asking! It’s a lovely day to connect and chat about whatever’s on your mind.
-[  8.61s][user ] «backchannel» Okay.
-[  8.96s][user ] Good. I was wondering, how many pounds are in a ⟨ret@12.35s⟩ stone?
-[ 12.75s][moshi] ⟦⚡SPAN@12.75s: A stone is equal to fourteen pounds—that's one of those traditional units of weight.⟧ A stone is equal to fourteen pounds.
-[ 15.16s][user ] Oh, okay. That’s good to know.
-[ 17.22s][moshi] It certainly is! Knowing these conversions can be surprisingly useful, especially when you're following recipes or reading older texts.
-[ 23.77s][user ] [laugh] True! I saw it in an old book.
-[ 26.87s][moshi] [happy] Those old books do love their stones, don't they? It's a bit of a charming quirk of the past.
-[ 33.76s][user ] «backchannel» Uh-huh.
-[ 34.11s][user ] So, if something weighs three stones, how much is that in ⟨ret@37.92s⟩ pounds?
-[ 38.24s][moshi] ⟦⚡SPAN@38.24s: One stone is equivalent to fourteen pounds, so three stones would equal forty-two pounds.⟧ If something weighs three stones, that’s equal to forty-two pounds.
-[ 41.68s][user ] Wow, forty-two! That’s a lot.
-[ 43.41s][moshi] It is! It really puts things into perspective when you think about it that way.
-[ 48.57s][user ] I wonder if they still use stones much in ⟨ret@51.62s⟩ Britain?
-[ 52.02s][moshi] ⟦⚡SPAN@52.02s: While pounds and kilograms are more common now, stones are still often used in Britain for measuring body weig⟧ They don’t use it as much as they used to, but stones are still often used in Britain for body weight.
-[ 59.25s][user ] Really? For weight? That’s interesting.
-[ 60.98s][moshi] It’s a bit of a cultural holdover—many people still state their weight in stones, even if other measurements are available.
-[ 67.87s][user ] «backchannel» Yeah.
-[ 68.21s][user ] That’s… well, I was reading about boxing.
-[ 70.62s][moshi] «interrupted» Boxing often uses stones to categorize weight classes—
-[ 73.38s][user ] «interrupts_prev» …wait, do different boxing organizations use different stone weights?
-[ 76.48s][user ] «backchannel» Yeah.
-[ 76.82s][moshi] ⟨ret@76.58s⟩ ⟦⚡SPAN@76.82s: The weight classes in boxing vary slightly between organizations, but generally include weight limits at 8 sto⟧ Different boxing organizations do indeed use slightly different weight limits, though they all still operate within the stone system.
-[ 83.37s][moshi] Weight classes vary, but generally include limits at 8 stone 6 pounds, 9 stone 9 pounds, and 10 stone 7 pounds.
-[ 90.60s][user ] That’s a lot of fractions!
-[ 92.32s][moshi] It can be a bit tricky, yes! It reflects the need for very precise divisions within the sport.
-[ 98.53s][user ] «backchannel» Mm-hmm.
-[ 98.87s][user ] So, if I weighed eleven stone, would that be… ⟨ret@101.81s⟩
-[101.97s][moshi] ⟦⚡SPAN@101.97s: Eleven stones is equal to one hundred and fifty-four pounds—simply by multiplying eleven by fourteen.⟧ Eleven stones is equal to one hundred and fifty-four pounds.
-[105.42s][user ] «backchannel» Yeah.
-[105.76s][user ] Okay, that makes sense. Thanks for helping me with this!
-[109.21s][moshi] You’re very welcome!
+[  0.00s][user ] Hey, who was the quarterback for the Buccaneers when they won the Super ⟨ret@4.65s⟩ Bowl?
+[  4.89s][moshi] ⟦⚡SPAN@4.89s: Brad Johnson quarterbacked the Tampa Bay Buccaneers to a 48–21 victory over the Oakland Raiders in Super Bowl ⟧ That would be Brad Johnson, actually. He led the Tampa Bay Buccaneers to victory—a 48–21 win over the Raiders in Super Bowl XXXVII on January 26, 2003.
+[ 14.32s][user ] Oh, okay. Um, what about Tom Brady? How many Super Bowls did *he* win with the ⟨ret@19.85s⟩ Bucs?
+[ 20.25s][moshi] ⟦⚡SPAN@20.25s: Tom Brady won one Super Bowl with the Tampa Bay Buccaneers, leading them to a 31–9 victory over the Kansas Cit⟧ Tom Brady won one Super Bowl with the Buccaneers, a 31–9 victory over the Kansas City Chiefs in Super Bowl LV on February 7, 2021.
+[ 28.98s][user ] «backchannel» Yeah, totally.
+[ 29.68s][moshi] It’s wonderful how a strong quarterback can truly elevate a team’s performance, don't you think?
+[ 34.92s][user ] «backchannel» Mm-hmm.
+[ 35.26s][user ] Yeah, I guess so. Hey, quick question—what’s the weather like in Tampa right ⟨ret@39.83s⟩ now?
+[ 40.15s][moshi] ⟦⚡SPAN@40.15s: (tool result) Temperature: 31.1°C, Humidity: 78%, Wind: 8.2 km/h, Condition: Partly Cloudy⟧ Currently in Tampa, it’s 31.1°C, with humidity at 78% and a wind speed of 8.2 kilometers per hour. The conditions are partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tampa"}}
+[ 48.18s][user ] «to_other» Oh, that sounds nice…
+[ 49.58s][user ] Sorry, what were you saying about the humidity?
+[ 52.37s][moshi] «interrupted» I was just sharing the current conditions in Tampa—the humidity is 78%, which can feel quite warm, especially with the temperature at 31.1°C. —
+[ 60.75s][user ] «interrupts_prev» Oh, right. Can you find me some good restaurants ⟨ret@63.84s⟩ nearby?
+[ 64.24s][moshi] ⟦⚡SPAN@64.24s: (tool result) Columbia Restaurant, Bern's Steak House, Ulele, Rooster & the Till⟧ I found a few options for you: Columbia Restaurant, Bern's Steak House, Ulele, and Rooster & the Till.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Tampa"}}
+[ 70.53s][user ] Hmm, Ulele sounds interesting. Can you tell me more about that ⟨ret@74.32s⟩ one?
+[ 74.72s][moshi] ⟦⚡SPAN@74.72s: Ulele is a restaurant located on the Tampa Riverwalk, offering a menu inspired by Florida’s Native American cu⟧ Ulele is located on the Tampa Riverwalk, offering a menu inspired by Florida’s Native American cuisine, focusing on fresh, local ingredients and craft beer.
