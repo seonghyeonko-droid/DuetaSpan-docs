@@ -73,14 +73,14 @@
 
 
      0.00s  agent 발화 시작: Hello Robin, it’s lovely to meet you. I’m Hena, and I help p
-     0.25s  user  발화 시작: I'm just feeling really stuck with a painting, actually.
-     0.25s  agent 발화 끝
-     0.37s  agent 발화 시작: It's completely understandable to feel stuck, Robin. What pa
-     0.37s  user  발화 끝
-     0.58s  user  발화 시작: Wow.
-     0.58s  agent 발화 끝
-     0.59s  user  발화 시작: Well, the colors. I keep second-guessing everything, and it 
-     0.59s  user  발화 끝
-     0.73s  agent 발화 시작: That sounds frustrating. Sometimes, letting go of control wi
-     0.73s  user  발화 끝
-     1.00s  agent 발화 끝
+     6.23s  user  발화 시작: I'm just feeling really stuck with a painting, actually.
+     6.25s  agent 발화 끝
+     9.09s  user  발화 끝
+     9.46s  agent 발화 시작: It's completely understandable to feel stuck, Robin. What pa
+    11.21s  user  발화 시작: Wow.
+    12.18s  user  발화 끝
+    15.07s  agent 발화 끝
+    17.06s  user  발화 시작: Well, the colors. I keep second-guessing everything, and it 
+    23.04s  user  발화 끝
+    23.25s  agent 발화 시작: That sounds frustrating. Sometimes, letting go of control wi
+    30.15s  agent 발화 끝

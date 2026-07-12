@@ -66,50 +66,50 @@
 # EXAMINER(FDB-v2) 단계: S1 Oh, hello! I’m hoping you can give | S2 Um, yeah. I’ve been looking at pla | S3 Oh, that sounds perfect! | S4 That’s really convenient. Thanks, 
 
      0.00s  agent 발화 시작: Hi Emilia, I'm Jeaon! It’s lovely to meet you.
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.04s  user  발화 시작: Oh, hello! I’m hoping you can give me some ideas for restaur
-     0.04s  agent 발화 끝
-     0.11s  agent 발화 시작: <ret> Emilia! Knowing you’re pescatarian, I can certainly su
-     0.11s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: [2026-06-07] User is pescatarian.
-     0.11s  user  발화 끝
-     0.18s  user  발화 시작: That would be great. I’m going in December, I think.
-     0.18s  agent 발화 끝
-     0.23s  agent 발화 시작: <ret> Wonderful! You’re already thinking ahead to December i
-     0.23s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: [2026-04-30] User is planning a trip to Lisbon in December.
-     0.23s  user  발화 끝
-     0.26s  <ret> 발화 (turn10 첫 프레임)
-     0.28s  user  발화 시작: Um, yeah. I’ve been looking at places, but…
-     0.28s  agent 발화 끝
-     0.32s  agent 발화 시작: It can be a bit overwhelming, I understand. Lisbon has so mu
-     0.32s  user  발화 끝
-     0.36s  <ret> 발화 (turn16 첫 프레임)
-     0.39s  user  발화 시작: Mm-hmm.
-     0.39s  agent 발화 끝
-     0.40s  agent 발화 시작: Perhaps we could start with a highly-rated spot known for fr
-     0.40s  user  발화 끝
-     0.46s  user  발화 시작: That sounds good. Something not too touristy, if possible.
-     0.46s  agent 발화 끝
-     0.50s  agent 발화 시작: <ret> I found Restaurante Cervejaria Ramiro, located on Aven
-     0.50s  ⚡SPAN 주입 [d'=0.11s / d_lead=0.11s]: (tool result) Restaurante Cervejaria Ramiro, Avenida Almirante Reis nº
-     0.50s  user  발화 끝
-     0.62s  user  발화 시작: Uh-huh.
-     0.62s  agent 발화 끝
-     0.62s  user  발화 시작: Oh, that sounds perfect!
-     0.62s  user  발화 끝
-     0.64s  agent 발화 시작: I’m so glad you like it! It's known for its incredibly fresh
-     0.64s  user  발화 끝
-     0.71s  user  발화 시작: Mm-hmm.
-     0.71s  agent 발화 끝
-     0.71s  user  발화 시작: Is it easy to get to from the city center?
-     0.71s  user  발화 끝
-     0.76s  agent 발화 시작: <ret> It’s about a 20-minute trip by metro; take the Red Lin
-     0.76s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: (tool result) Approximately 20 minutes by metro; take the Red Line fro
-     0.76s  user  발화 끝
-     0.86s  user  발화 시작: Yeah.
-     0.86s  agent 발화 끝
-     0.87s  user  발화 시작: That’s really convenient. Thanks, Jeaon!
-     0.87s  user  발화 끝
-     0.89s  agent 발화 시작: You’re very welcome, Emilia! I’m happy to help you make the 
-     0.89s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.83s  user  발화 시작: Oh, hello! I’m hoping you can give me some ideas for restaur
+     3.05s  agent 발화 끝
+     7.57s  <ret> 발화 (turn2 첫 프레임)
+     7.97s  agent 발화 시작: <ret> Emilia! Knowing you’re pescatarian, I can certainly su
+     7.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: [2026-06-07] User is pescatarian.
+     8.02s  user  발화 끝
+    14.05s  user  발화 시작: That would be great. I’m going in December, I think.
+    14.18s  agent 발화 끝
+    16.99s  <ret> 발화 (turn4 첫 프레임)
+    17.07s  agent 발화 시작: <ret> Wonderful! You’re already thinking ahead to December i
+    17.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.71s]: [2026-04-30] User is planning a trip to Lisbon in December.
+    17.25s  user  발화 끝
+    21.65s  user  발화 시작: Um, yeah. I’ve been looking at places, but…
+    21.78s  agent 발화 끝
+    25.30s  user  발화 끝
+    25.55s  agent 발화 시작: It can be a bit overwhelming, I understand. Lisbon has so mu
+    28.07s  user  발화 시작: Mm-hmm.
+    28.52s  user  발화 끝
+    30.26s  agent 발화 시작: Perhaps we could start with a highly-rated spot known for fr
+    30.41s  agent 발화 끝
+    34.41s  agent 발화 끝
+    35.20s  user  발화 시작: That sounds good. Something not too touristy, if possible.
+    38.77s  <ret> 발화 (turn10 첫 프레임)
+    39.16s  agent 발화 시작: <ret> I found Restaurante Cervejaria Ramiro, located on Aven
+    39.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.83s]: (tool result) Restaurante Cervejaria Ramiro, Avenida Almirante Reis nº
+    39.17s  user  발화 끝
+    42.92s  user  발화 시작: Uh-huh.
+    43.55s  user  발화 끝
+    48.95s  user  발화 시작: Oh, that sounds perfect!
+    48.99s  agent 발화 끝
+    50.66s  user  발화 끝
+    50.99s  agent 발화 시작: I’m so glad you like it! It's known for its incredibly fresh
+    52.41s  user  발화 시작: Mm-hmm.
+    53.14s  user  발화 끝
+    54.93s  user  발화 시작: Is it easy to get to from the city center?
+    55.19s  agent 발화 끝
+    57.76s  <ret> 발화 (turn16 첫 프레임)
+    57.91s  agent 발화 시작: <ret> It’s about a 20-minute trip by metro; take the Red Lin
+    57.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Approximately 20 minutes by metro; take the Red Line fro
+    58.02s  user  발화 끝
+    61.74s  user  발화 시작: Yeah.
+    62.19s  user  발화 끝
+    64.68s  agent 발화 끝
+    64.81s  user  발화 시작: That’s really convenient. Thanks, Jeaon!
+    67.26s  user  발화 끝
+    67.38s  agent 발화 시작: You’re very welcome, Emilia! I’m happy to help you make the 
+    73.54s  agent 발화 끝

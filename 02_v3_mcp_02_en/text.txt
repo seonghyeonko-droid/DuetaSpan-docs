@@ -64,17 +64,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could ⟨ret@0.00s⟩ you please go to amazon dot com?
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: (tool result) Navigation to https://www.amazon.com successful.⟧ I’ve navigated to Amazon for you. Is there anything specific you're hoping to find?
+[  0.00s][user ] Could you please go to amazon dot ⟨ret@2.29s⟩ com?
+[  2.53s][moshi] ⟦⚡SPAN@2.53s: (tool result) Navigation to https://www.amazon.com successful.⟧ I’ve navigated to Amazon for you. Is there anything specific you're hoping to find?
       CALL: {"function": "playwright_navigate", "arguments": {"url": "https://www.amazon.com"}}
-[  0.14s][user ] Yes, ⟨ret@0.05s⟩ actually. I'm looking for a good white noise machine.
-[  0.21s][moshi] ⟦⚡SPAN@0.21s: (no information found)⟧ I’m sorry, I don’t have specific recommendations for white noise machines at this moment.
-[  0.30s][user ] «backchannel» Right.
-[  0.30s][user ] Hmm, ⟨ret@0.13s⟩ okay. Well, what’s the weather like in Seattle right now?
-[  0.37s][moshi] «interrupted» ⟦⚡SPAN@0.37s: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition: partly cloudy.⟧ It’s currently 18.3 degrees Celsius and partly cloudy in Seattle, with a gentle breeze of 2.9 kilometers per hour—
+[  9.49s][user ] Yes, actually. I'm looking for a good white noise machine.
+[ 13.35s][moshi] ⟨ret@13.19s⟩ ⟦⚡SPAN@13.35s: (no information found)⟧ I’m sorry, I don’t have specific recommendations for white noise machines at this moment.
+[ 16.78s][user ] «backchannel» Right.
+[ 18.39s][user ] Hmm, okay. Well, what’s the weather like in Seattle right ⟨ret@22.02s⟩ now?
+[ 22.42s][moshi] «interrupted» ⟦⚡SPAN@22.42s: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition: partly cloudy.⟧ It’s currently 18.3 degrees Celsius and partly cloudy in Seattle, with a gentle breeze of 2.9 kilometers per hour—
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
-[  0.50s][user ] «interrupts_prev» …actually, ⟨ret@0.50s⟩ can you search for “best white noise machine for sleep” on Amazon?
-[  0.58s][moshi] ⟦⚡SPAN@0.58s: (tavily-search result) The Hatch Restore 2 is consistently ranked as a top pick for sleep, offering sound and ⟧ A search on Amazon shows the Hatch Restore 2 is a highly-rated option for sleep, with sound and light therapy. It’s reviewed on cnet.com.
-[  0.74s][user ] Oh, ⟨ret@0.74s⟩ that sounds promising. Could you find me some events happening this weekend?
-[  0.82s][moshi] ⟦⚡SPAN@0.82s: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Arts Festival, Seattle Center; Mariners vs⟧ This weekend in Seattle, July 11th and 12th, you have Bumbershoot at the Seattle Center and a Mariners game at T-Mobile Park. It sounds like a lovely weekend!
+[ 30.79s][user ] «interrupts_prev» …actually, can you search for “best white noise machine for sleep” on Amazon?
+[ 35.43s][moshi] ⟨ret@35.35s⟩ ⟦⚡SPAN@35.43s: (tavily-search result) The Hatch Restore 2 is consistently ranked as a top pick for sleep, offering sound and ⟧ A search on Amazon shows the Hatch Restore 2 is a highly-rated option for sleep, with sound and light therapy. It’s reviewed on cnet.com.
+[ 45.11s][user ] Oh, that sounds promising. Could you find me some events happening this weekend?
+[ 49.51s][moshi] ⟨ret@49.44s⟩ ⟦⚡SPAN@49.52s: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Arts Festival, Seattle Center; Mariners vs⟧ This weekend in Seattle, July 11th and 12th, you have Bumbershoot at the Seattle Center and a Mariners game at T-Mobile Park. It sounds like a lovely weekend!
       CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "2026-07-11", "location": "Seattle"}}

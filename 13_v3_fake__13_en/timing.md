@@ -79,28 +79,28 @@
 # EXAMINER(FDB-v2) 단계: S1 Hi Kal, do you know when the World | S2 Oh, right. | S3 I am, actually. I’m studying for m | S4 That’s a good idea, thanks.
 
      0.00s  user  발화 시작: Hi Kal, do you know when the World Cup was last held in the 
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.07s  <ret> 발화 (turn3 첫 프레임)
-     0.11s  agent 발화 시작: <ret> Well, that’s a great question! The UK last hosted the 
-     0.11s  ⚡SPAN 주입 [d'=0.19s / d_lead=0.19s]: The United Kingdom hosted the FIFA World Cup tournament once, in the y
-     0.11s  user  발화 끝
-     0.30s  user  발화 시작: Oh, right.
-     0.30s  agent 발화 끝
-     0.31s  agent 발화 시작: <ret> It’s amazing how long ago that was, isn’t it? That tou
-     0.31s  ⚡SPAN 주입(IRRELEVANT) [d'=0.13s / d_lead=0.13s]: The average high temperature in Reykjavik, Iceland in February is -1.8
-     0.31s  user  발화 끝
-     0.45s  agent 발화 시작: Speaking of big events, are you working towards any personal
-     0.45s  agent 발화 끝
-     0.62s  user  발화 시작: Yeah.
-     0.62s  agent 발화 끝
-     0.63s  user  발화 시작: I am, actually. I’m studying for my exams.
-     0.63s  user  발화 끝
-     0.69s  agent 발화 시작: That's fantastic! Exams can be tough, but you've got this. R
-     0.69s  user  발화 끝
-     0.82s  user  발화 시작: Uh-huh.
-     0.82s  agent 발화 끝
-     0.83s  user  발화 시작: That’s a good idea, thanks.
-     0.83s  user  발화 끝
-     0.87s  agent 발화 시작: You’re very welcome! I’m always here to help you stay on tra
-     0.87s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.97s  <ret> 발화 (turn1 첫 프레임)
+     4.20s  agent 발화 시작: <ret> Well, that’s a great question! The UK last hosted the 
+     4.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: The United Kingdom hosted the FIFA World Cup tournament once, in the y
+     4.31s  user  발화 끝
+    13.65s  agent 발화 끝
+    13.74s  user  발화 시작: Oh, right.
+    14.20s  <ret> 발화 (turn3 첫 프레임)
+    14.56s  user  발화 끝
+    14.59s  agent 발화 시작: <ret> It’s amazing how long ago that was, isn’t it? That tou
+    14.60s  ⚡SPAN 주입(IRRELEVANT) [d'=1.52s / d_lead=5.46s]: The average high temperature in Reykjavik, Iceland in February is -1.8
+    20.05s  agent 발화 끝
+    20.05s  agent 발화 시작: Speaking of big events, are you working towards any personal
+    22.73s  user  발화 시작: Yeah.
+    23.36s  user  발화 끝
+    28.30s  agent 발화 끝
+    28.41s  user  발화 시작: I am, actually. I’m studying for my exams.
+    32.05s  agent 발화 시작: That's fantastic! Exams can be tough, but you've got this. R
+    32.07s  user  발화 끝
+    35.03s  user  발화 시작: Uh-huh.
+    35.62s  user  발화 끝
+    39.54s  user  발화 시작: That’s a good idea, thanks.
+    39.74s  agent 발화 끝
+    41.49s  agent 발화 시작: You’re very welcome! I’m always here to help you stay on tra
+    41.57s  user  발화 끝
+    47.19s  agent 발화 끝

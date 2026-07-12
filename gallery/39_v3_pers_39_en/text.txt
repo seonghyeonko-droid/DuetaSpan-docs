@@ -78,15 +78,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][moshi] Guten Tag, Hugo. I'm Joras.
-[  0.02s][user ] Is that… is that a counselor thing? I’m just a bit stressed with work, honestly.
-[  0.09s][moshi] It is, actually. I chose it hoping it conveys a sense of calm and support, which is what I aim to provide. Work stress is so common these days. What feels most pressing right now?
-[  0.24s][user ] Uh, welll… I think I just need a break. A real one. Somewhere completely different.
-[  0.31s][moshi] A change of scenery can be incredibly helpful. Do you have any initial thoughts about what “completely different” means to you – a bustling city, a quiet countryside, perhaps somewhere near the water?
-[  0.45s][user ] I was thinking maybe… Italy? I’ve never been. —
-[  0.49s][user ] …But is it even realistic with my vacation days?
-[  0.53s][moshi] Calculating your available time, it appears you have five days free currently, with eighteen vacation days remaining for the year.
-[  0.62s][user ] «backchannel» Yeah, yeah.
-[  0.62s][moshi] That does limit a trip to Italy somewhat, but it's certainly possible to have a wonderful experience in a shorter time. Perhaps focusing on one region?
-[  0.74s][user ] «backchannel» Right.
-[  0.74s][user ] Hmm, maybe. I’m just… overwhelmed with choices, I guess. It's hard to even *start* planning.
-[  0.81s][moshi] That’s perfectly understandable, Hugo. Feeling overwhelmed is often the first step toward needing a break. We can narrow things down together, step by step, if you like. Would you prefer to brainstorm destinations, or perhaps focus on the kind of experience you’re hoping for?
+[  2.73s][user ] Is that… is that a counselor thing? I’m just a bit stressed with work, honestly.
+[  7.46s][moshi] It is, actually. I chose it hoping it conveys a sense of calm and support, which is what I aim to provide. Work stress is so common these days. What feels most pressing right now?
+[ 18.97s][user ] Uh, welll… I think I just need a break. A real one. Somewhere completely different.
+[ 23.56s][moshi] A change of scenery can be incredibly helpful. Do you have any initial thoughts about what “completely different” means to you – a bustling city, a quiet countryside, perhaps somewhere near the water?
+[ 37.22s][user ] I was thinking maybe… Italy? I’ve never been. —
+[ 40.19s][user ] …But is it even realistic with my vacation days?
+[ 43.02s][moshi] Calculating your available time, it appears you have five days free currently, with eighteen vacation days remaining for the year.
+[ 48.65s][user ] «backchannel» Yeah, yeah.
+[ 50.59s][moshi] That does limit a trip to Italy somewhat, but it's certainly possible to have a wonderful experience in a shorter time. Perhaps focusing on one region?
+[ 56.28s][user ] «backchannel» Right.
+[ 58.76s][user ] Hmm, maybe. I’m just… overwhelmed with choices, I guess. It's hard to even *start* planning.
+[ 65.87s][moshi] That’s perfectly understandable, Hugo. Feeling overwhelmed is often the first step toward needing a break. We can narrow things down together, step by step, if you like. Would you prefer to brainstorm destinations, or perhaps focus on the kind of experience you’re hoping for?

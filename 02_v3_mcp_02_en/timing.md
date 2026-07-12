@@ -66,34 +66,34 @@
 # EXAMINER(FDB-v2) 단계: S1 Could you please go to amazon dot  | S2 Hmm, okay. Well, what’s the weathe | S3 …actually, can you search for “bes | S4 Oh, that sounds promising. Could y
 
      0.00s  user  발화 시작: Could you please go to amazon dot com?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.05s  <ret> 발화 (turn3 첫 프레임)
-     0.05s  agent 발화 시작: <ret> I’ve navigated to Amazon for you. Is there anything sp
-     0.05s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Navigation to https://www.amazon.com successful.
-     0.05s  user  발화 끝
-     0.13s  <ret> 발화 (turn6 첫 프레임)
-     0.14s  user  발화 시작: Yes, actually. I'm looking for a good white noise machine.
-     0.14s  agent 발화 끝
-     0.21s  agent 발화 시작: <ret> I’m sorry, I don’t have specific recommendations for w
-     0.21s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (no information found)
-     0.21s  user  발화 끝
-     0.30s  user  발화 시작: Right.
-     0.30s  agent 발화 끝
-     0.30s  user  발화 시작: Hmm, okay. Well, what’s the weather like in Seattle right no
-     0.30s  user  발화 끝
-     0.37s  agent 발화 시작: <ret> It’s currently 18.3 degrees Celsius and partly cloudy 
-     0.37s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition:
-     0.37s  user  발화 끝
-     0.50s  user  발화 시작: …actually, can you search for “best white noise machine for 
-     0.50s  agent 발화 끝
-     0.50s  <ret> 발화 (turn8 첫 프레임)
-     0.58s  agent 발화 시작: <ret> A search on Amazon shows the Hatch Restore 2 is a high
-     0.58s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: (tavily-search result) The Hatch Restore 2 is consistently ranked as a
-     0.58s  user  발화 끝
-     0.74s  user  발화 시작: Oh, that sounds promising. Could you find me some events hap
-     0.74s  agent 발화 끝
-     0.74s  <ret> 발화 (turn10 첫 프레임)
-     0.82s  agent 발화 시작: <ret> This weekend in Seattle, July 11th and 12th, you have 
-     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Ar
-     0.82s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.29s  <ret> 발화 (turn1 첫 프레임)
+     2.53s  agent 발화 시작: <ret> I’ve navigated to Amazon for you. Is there anything sp
+     2.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Navigation to https://www.amazon.com successful.
+     2.58s  user  발화 끝
+     8.13s  agent 발화 끝
+     9.49s  user  발화 시작: Yes, actually. I'm looking for a good white noise machine.
+    13.19s  <ret> 발화 (turn3 첫 프레임)
+    13.32s  user  발화 끝
+    13.35s  agent 발화 시작: <ret> I’m sorry, I don’t have specific recommendations for w
+    13.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (no information found)
+    16.78s  user  발화 시작: Right.
+    17.41s  user  발화 끝
+    18.35s  agent 발화 끝
+    18.39s  user  발화 시작: Hmm, okay. Well, what’s the weather like in Seattle right no
+    22.02s  <ret> 발화 (turn6 첫 프레임)
+    22.42s  agent 발화 시작: <ret> It’s currently 18.3 degrees Celsius and partly cloudy 
+    22.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: (tool result) Seattle: 18.3°C, humidity 62%, wind 2.9 km/h, condition:
+    22.47s  user  발화 끝
+    30.79s  user  발화 시작: …actually, can you search for “best white noise machine for 
+    31.42s  agent 발화 끝
+    35.35s  <ret> 발화 (turn8 첫 프레임)
+    35.43s  agent 발화 시작: <ret> A search on Amazon shows the Hatch Restore 2 is a high
+    35.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.55s]: (tavily-search result) The Hatch Restore 2 is consistently ranked as a
+    35.47s  user  발화 끝
+    44.98s  agent 발화 끝
+    45.11s  user  발화 시작: Oh, that sounds promising. Could you find me some events hap
+    49.44s  <ret> 발화 (turn10 첫 프레임)
+    49.51s  agent 발화 시작: <ret> This weekend in Seattle, July 11th and 12th, you have 
+    49.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) Seattle events, July 11-12, 2026: Bumbershoot Music & Ar
+    49.64s  user  발화 끝
+    59.76s  agent 발화 끝

@@ -68,8 +68,8 @@
 
 
      0.00s  user  발화 시작: 인도 대법원의 최초 여성 판사는 누구였나요?
-     0.14s  <ret> 발화 (turn1 첫 프레임)
-     0.38s  agent 발화 시작: <ret> 인도 고등법 최초의 여성 판사는 안나 찬디 판사였으며, 천구백삼십칠년에 임명되었습니다.
-     0.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.62s]: Justice Anna Chandy was the first woman judge in India’s High Court, a
-     0.38s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.30s  <ret> 발화 (turn1 첫 프레임)
+     2.54s  agent 발화 시작: <ret> 인도 고등법 최초의 여성 판사는 안나 찬디 판사였으며, 천구백삼십칠년에 임명되었습니다.
+     2.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Justice Anna Chandy was the first woman judge in India’s High Court, a
+     2.72s  user  발화 끝
+     9.53s  agent 발화 끝

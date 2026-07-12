@@ -74,28 +74,28 @@
 # EXAMINER(FDB-v2) 단계: S1 What's the biking route from Pekin | S2 Uh, and what’s the weather like th | S3 That sounds…nice. Can you find me  | S4 …Italian?
 
      0.00s  user  발화 시작: What's the biking route from Peking University to the Summer
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.08s  agent 발화 시작: <ret> The biking route is eleven point two kilometers, takin
-     0.08s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) {"distance": 11.2, "duration": 45.3, "route": "https://m
-     0.08s  user  발화 끝
-     0.26s  <ret> 발화 (turn4 첫 프레임)
-     0.26s  user  발화 시작: Yeah.
-     0.26s  agent 발화 끝
-     0.27s  user  발화 시작: Uh, and what’s the weather like there right now?
-     0.27s  user  발화 끝
-     0.33s  <ret> 발화 (turn9 첫 프레임)
-     0.34s  agent 발화 시작: <ret> It’s currently thirty-two point five degrees Celsius a
-     0.34s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: (tool result) {"temperature": 32.5, "humidity": 68, "wind": 7.2, "cond
-     0.34s  user  발화 끝
-     0.55s  user  발화 시작: Yeah.
-     0.55s  agent 발화 끝
-     0.56s  user  발화 시작: That sounds…nice. Can you find me some restaurants near the 
-     0.56s  user  발화 끝
-     0.65s  agent 발화 시작: Finding restaurants is something I can definitely help with—
-     0.65s  user  발화 끝
-     0.72s  user  발화 시작: …Italian?
-     0.72s  agent 발화 끝
-     0.73s  agent 발화 시작: <ret> There's Pizza Saporita, rated four point five stars wi
-     0.73s  ⚡SPAN 주입 [d'=0.27s / d_lead=0.27s]: (tool result) [{"name": "Pizza Saporita", "rating": 4.5, "price": "¥15
-     0.73s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.39s  <ret> 발화 (turn1 첫 프레임)
+     3.63s  agent 발화 시작: <ret> The biking route is eleven point two kilometers, takin
+     3.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.59s]: (tool result) {"distance": 11.2, "duration": 45.3, "route": "https://m
+     3.70s  user  발화 끝
+     8.02s  user  발화 시작: Yeah.
+     8.52s  user  발화 끝
+    17.06s  user  발화 시작: Uh, and what’s the weather like there right now?
+    17.22s  agent 발화 끝
+    18.89s  <ret> 발화 (turn4 첫 프레임)
+    19.12s  agent 발화 시작: <ret> It’s currently thirty-two point five degrees Celsius a
+    19.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=11.78s]: (tool result) {"temperature": 32.5, "humidity": 68, "wind": 7.2, "cond
+    19.32s  user  발화 끝
+    23.70s  user  발화 시작: Yeah.
+    24.20s  user  발화 끝
+    30.90s  agent 발화 끝
+    31.26s  user  발화 시작: That sounds…nice. Can you find me some restaurants near the 
+    35.97s  agent 발화 시작: Finding restaurants is something I can definitely help with—
+    36.16s  user  발화 끝
+    38.81s  user  발화 시작: …Italian?
+    39.25s  <ret> 발화 (turn9 첫 프레임)
+    39.49s  agent 발화 시작: <ret> There's Pizza Saporita, rated four point five stars wi
+    39.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.87s]: (tool result) [{"name": "Pizza Saporita", "rating": 4.5, "price": "¥15
+    39.57s  agent 발화 끝
+    39.59s  user  발화 끝
+    55.35s  agent 발화 끝

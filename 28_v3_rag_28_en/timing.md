@@ -66,62 +66,62 @@
 # EXAMINER(FDB-v2) 단계: S1 I’ve been feeling a bit lost latel | S2 Hmm, that makes sense. I used to l | S3 That's… actually really close! | S4 …it just feels awkward.
 
      0.00s  user  발화 시작: I’ve been feeling a bit lost lately, like I don’t really con
-     0.02s  <ret> 발화 (turn5 첫 프레임)
-     0.04s  agent 발화 시작: It's completely natural to feel that way sometimes. Building
-     0.04s  user  발화 끝
-     0.10s  user  발화 시작: Well, it's just… everyone seems to have their groups, and I’
-     0.10s  agent 발화 끝
-     0.14s  <ret> 발화 (turn12 첫 프레임)
-     0.14s  agent 발화 시작: It sounds like you’re experiencing a sense of exclusion, and
-     0.14s  user  발화 끝
-     0.21s  user  발화 시작: I guess I want friends who share my interests, but I don't e
-     0.21s  agent 발화 끝
-     0.26s  agent 발화 시작: <ret> Discovering friends with shared passions often happens
-     0.26s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: Common interests are often found through hobbies, volunteering, or joi
-     0.26s  user  발화 끝
-     0.31s  user  발화 시작: Hmm, that makes sense. I used to love astronomy…
-     0.31s  agent 발화 끝
-     0.34s  agent 발화 시작: Oh, astronomy is wonderful! It's a fantastic way to feel con
-     0.34s  user  발화 끝
-     0.40s  user  발화 시작: Uh-huh.
-     0.40s  agent 발화 끝
-     0.40s  user  발화 시작: Yeah, but it's been years since I looked through a telescope
-     0.40s  user  발화 끝
-     0.44s  agent 발화 시작: It’s alright to feel a little rusty after a break. Rediscove
-     0.44s  user  발화 끝
-     0.51s  user  발화 시작: Maybe… I wonder if there are any astronomy clubs nearby?
-     0.51s  agent 발화 끝
-     0.54s  agent 발화 시작: <ret> The Seoul Astronomical Society meets every second Satu
-     0.54s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) The Seoul Astronomical Society meets every second Saturd
-     0.54s  user  발화 끝
-     0.60s  user  발화 시작: Yeah.
-     0.60s  agent 발화 끝
-     0.61s  user  발화 시작: That's… actually really close!
-     0.61s  user  발화 끝
-     0.62s  agent 발화 시작: [happy] Isn’t it wonderful when opportunities present themse
-     0.62s  user  발화 끝
-     0.67s  user  발화 시작: I guess so. But what if I go…
-     0.67s  agent 발화 끝
-     0.70s  user  발화 시작: …and everyone already knows each other?
-     0.70s  user  발화 끝
-     0.71s  agent 발화 시작: That’s a very valid concern. It can be intimidating joining 
-     0.71s  user  발화 끝
-     0.76s  user  발화 시작: …it just feels awkward.
-     0.76s  agent 발화 끝
-     0.77s  agent 발화 시작: It *is* awkward, and it’s okay to acknowledge that feeling. 
-     0.77s  user  발화 끝
-     0.79s  <ret> 발화 (turn23 첫 프레임)
-     0.84s  user  발화 시작: Mm-hmm.
-     0.84s  agent 발화 끝
-     0.84s  user  발화 시작: That’s a good idea, actually. What’s the weather like this w
-     0.84s  user  발화 끝
-     0.87s  agent 발화 시작: <ret> The current conditions in Seoul are 24.0°C, with 65% h
-     0.87s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Current conditions in Seoul: 24.0°C, humidity 65%, wind 
-     0.87s  user  발화 끝
-     0.94s  user  발화 시작: Yeah.
-     0.94s  agent 발화 끝
-     0.94s  user  발화 시작: Perfect! Thanks, Larimi.
-     0.94s  user  발화 끝
-     0.95s  agent 발화 시작: You're very welcome. Remember, taking that first step can be
-     0.95s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.05s  agent 발화 시작: It's completely natural to feel that way sometimes. Building
+     4.16s  user  발화 끝
+    12.49s  agent 발화 끝
+    12.98s  user  발화 시작: Well, it's just… everyone seems to have their groups, and I’
+    17.80s  user  발화 끝
+    18.17s  agent 발화 시작: It sounds like you’re experiencing a sense of exclusion, and
+    26.65s  user  발화 시작: I guess I want friends who share my interests, but I don't e
+    26.70s  agent 발화 끝
+    30.91s  user  발화 끝
+    30.94s  <ret> 발화 (turn5 첫 프레임)
+    31.18s  agent 발화 시작: <ret> Discovering friends with shared passions often happens
+    31.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: Common interests are often found through hobbies, volunteering, or joi
+    39.39s  agent 발화 끝
+    39.68s  user  발화 시작: Hmm, that makes sense. I used to love astronomy…
+    42.60s  agent 발화 시작: Oh, astronomy is wonderful! It's a fantastic way to feel con
+    42.69s  user  발화 끝
+    48.59s  user  발화 시작: Uh-huh.
+    49.09s  user  발화 끝
+    51.18s  agent 발화 끝
+    51.18s  user  발화 시작: Yeah, but it's been years since I looked through a telescope
+    55.02s  agent 발화 시작: It’s alright to feel a little rusty after a break. Rediscove
+    55.11s  user  발화 끝
+    63.45s  user  발화 시작: Maybe… I wonder if there are any astronomy clubs nearby?
+    63.45s  agent 발화 끝
+    67.24s  <ret> 발화 (turn12 첫 프레임)
+    67.32s  agent 발화 시작: <ret> The Seoul Astronomical Society meets every second Satu
+    67.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) The Seoul Astronomical Society meets every second Saturd
+    67.47s  user  발화 끝
+    75.64s  user  발화 시작: Yeah.
+    76.28s  user  발화 끝
+    81.23s  agent 발화 끝
+    81.30s  user  발화 시작: That's… actually really close!
+    83.08s  agent 발화 시작: [happy] Isn’t it wonderful when opportunities present themse
+    83.24s  user  발화 끝
+    90.44s  user  발화 시작: I guess so. But what if I go…
+    90.49s  agent 발화 끝
+    92.55s  user  발화 끝
+    94.35s  user  발화 시작: …and everyone already knows each other?
+    96.28s  agent 발화 시작: That’s a very valid concern. It can be intimidating joining 
+    96.47s  user  발화 끝
+   102.55s  user  발화 시작: …it just feels awkward.
+   102.91s  agent 발화 끝
+   104.06s  user  발화 끝
+   104.19s  agent 발화 시작: It *is* awkward, and it’s okay to acknowledge that feeling. 
+   109.07s  user  발화 시작: Mm-hmm.
+   109.80s  user  발화 끝
+   113.08s  agent 발화 끝
+   113.56s  user  발화 시작: That’s a good idea, actually. What’s the weather like this w
+   116.34s  <ret> 발화 (turn23 첫 프레임)
+   116.74s  agent 발화 시작: <ret> The current conditions in Seoul are 24.0°C, with 65% h
+   116.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.53s]: (tool result) Current conditions in Seoul: 24.0°C, humidity 65%, wind 
+   116.98s  user  발화 끝
+   123.52s  user  발화 시작: Yeah.
+   124.01s  user  발화 끝
+   127.27s  agent 발화 끝
+   127.88s  user  발화 시작: Perfect! Thanks, Larimi.
+   129.42s  agent 발화 시작: You're very welcome. Remember, taking that first step can be
+   129.50s  user  발화 끝
+   135.53s  agent 발화 끝

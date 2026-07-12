@@ -52,24 +52,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][moshi] Hi Emil, I'm Thir. It's lovely to connect with you today.
-[  0.06s][user ] «backchannel» Mm-hmm.
-[  0.07s][user ] Hey ⟨ret@0.00s⟩ Thir, good to meet you too. What time is it right now?
-[  0.14s][moshi] ⟦⚡SPAN@0.14s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Los Angeles right now.⟧ It is currently 10:17 AM in San Francisco. A great time to start planning your day!
+[  1.50s][user ] «backchannel» Mm-hmm.
+[  4.90s][user ] Hey Thir, good to meet you too. What time is it right ⟨ret@9.09s⟩ now?
+[  9.25s][moshi] ⟦⚡SPAN@9.25s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Los Angeles right now.⟧ It is currently 10:17 AM in San Francisco. A great time to start planning your day!
       CALL: {"function": "get_time", "arguments": {}}
-[  0.23s][user ] «backchannel» Yeah, yeah.
-[  0.24s][user ] That's ⟨ret@0.07s⟩ good to know. I was wondering, do you remember what I'm into?
-[  0.31s][moshi] ⟦⚡SPAN@0.31s: [2026-06-15] User is into vintage synth collecting.⟧ Yes, I do. I recall you have a passion for vintage synth collecting.
-[  0.39s][user ] «backchannel» Mm-hmm.
-[  0.39s][user ] Oh yeah! That's right. I'm thinking of looking for some new pieces this weekend.
-[  0.47s][moshi] That sounds fantastic! Immersing yourself in a hobby is a wonderful way to recharge.
-[  0.55s][user ] «backchannel» Yeah.
-[  0.56s][user ] Do ⟨ret@0.22s⟩ you know of any good vintage synth shops around here?
-[  0.62s][moshi] «interrupted» ⟦⚡SPAN@0.62s: (tool result) Analog Renaissance is a vintage synthesizer shop in San Francisco specializing in rare and colle⟧ I found Analog Renaissance in San Francisco. They specialize in rare synths—
+[ 13.36s][user ] «backchannel» Yeah, yeah.
+[ 16.53s][user ] That's good to know. I was wondering, do you remember what I'm ⟨ret@20.84s⟩ into?
+[ 21.08s][moshi] ⟦⚡SPAN@21.08s: [2026-06-15] User is into vintage synth collecting.⟧ Yes, I do. I recall you have a passion for vintage synth collecting.
+[ 23.44s][user ] «backchannel» Mm-hmm.
+[ 25.69s][user ] Oh yeah! That's right. I'm thinking of looking for some new pieces this weekend.
+[ 30.62s][moshi] That sounds fantastic! Immersing yourself in a hobby is a wonderful way to recharge.
+[ 32.93s][user ] «backchannel» Yeah.
+[ 37.39s][user ] Do you know of any good vintage synth shops around ⟨ret@40.61s⟩ here?
+[ 40.85s][moshi] «interrupted» ⟦⚡SPAN@40.85s: (tool result) Analog Renaissance is a vintage synthesizer shop in San Francisco specializing in rare and colle⟧ I found Analog Renaissance in San Francisco. They specialize in rare synths—
       CALL: {"function": "search", "arguments": {"query": "vintage synth shops San Francisco"}}
-[  0.69s][user ] «interrupts_prev» …do they happen to have a website? I’d like to check their stock.
-[  0.76s][moshi] Yes, they do! It’s analogrenaissance.com. They also offer repairs.
-[  0.81s][user ] «backchannel» Uh-huh.
-[  0.81s][user ] Perfect. ⟨ret@0.64s⟩ And, uh, I think I mentioned I have an allergy?
-[  0.88s][moshi] ⟦⚡SPAN@0.88s: [2026-04-11] User is allergic to penicillin.⟧ You are allergic to penicillin, and I have that noted. It's good to be prepared.
-[  0.96s][user ] Right, thanks for remembering. That's helpful.
-[  0.99s][moshi] Emil.
+[ 46.18s][user ] «interrupts_prev» …do they happen to have a website? I’d like to check their stock.
+[ 50.34s][moshi] Yes, they do! It’s analogrenaissance.com. They also offer repairs.
+[ 53.57s][user ] «backchannel» Uh-huh.
+[ 55.45s][user ] Perfect. And, uh, I think I mentioned I have an allergy?
+[ 59.45s][moshi] ⟨ret@59.37s⟩ ⟦⚡SPAN@59.45s: [2026-04-11] User is allergic to penicillin.⟧ You are allergic to penicillin, and I have that noted. It's good to be prepared.
+[ 64.65s][user ] Right, thanks for remembering. That's helpful.
+[ 67.12s][moshi] Emil.

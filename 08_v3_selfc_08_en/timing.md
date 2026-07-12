@@ -74,42 +74,42 @@
 # EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 Great, thanks. What’s the weather  | S3 Sounds pleasant. Is it far to walk | S4 Perfect, that’s very helpful.
 
      0.00s  user  발화 시작: I need to find a good Italian restaurant nearby, maybe aroun
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.10s  agent 발화 시작: <ret> Trattoria Romana has openings at six thirty this eveni
-     0.10s  ⚡SPAN 주입 [d'=0.10s / d_lead=0.10s]: There are many Italian restaurants in the vicinity, with Trattoria Rom
-     0.10s  user  발화 끝
-     0.20s  user  발화 시작: Yeah.
-     0.20s  agent 발화 끝
-     0.21s  user  발화 시작: Um, six thirty— no, make that seven.
-     0.21s  user  발화 끝
-     0.22s  <ret> 발화 (turn7 첫 프레임)
-     0.26s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for two at Trattoria 
-     0.26s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) Confirmation: Trattoria Romana, July 10, 2026, 7:00 PM, 
-     0.26s  user  발화 끝
-     0.38s  user  발화 시작: Yeah, totally.
-     0.38s  agent 발화 끝
-     0.40s  user  발화 시작: Great, thanks. What’s the weather like there right now?
-     0.40s  user  발화 끝
-     0.46s  agent 발화 시작: <ret> It's currently 24.0 degrees Celsius, with 68% humidity
-     0.46s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) The weather at Trattoria Romana is currently 24.0°C, hum
-     0.46s  user  발화 끝
-     0.47s  <ret> 발화 (turn9 첫 프레임)
-     0.57s  <ret> 발화 (turn12 첫 프레임)
-     0.58s  user  발화 시작: Sounds pleasant. Is it far to walk?
-     0.58s  agent 발화 끝
-     0.63s  agent 발화 시작: <ret> It’s about 1.2 kilometers, a fifteen-minute walk from 
-     0.63s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: Trattoria Romana is located 1.2 kilometers from your current location,
-     0.63s  user  발화 끝
-     0.78s  user  발화 시작: Yeah, totally.
-     0.78s  agent 발화 끝
-     0.79s  user  발화 시작: Yes, please do.
-     0.79s  user  발화 끝
-     0.81s  agent 발화 시작: <ret> Head north on Main Street for half a kilometer, then t
-     0.81s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) Directions to Trattoria Romana: Head north on Main Stree
-     0.81s  user  발화 끝
-     0.95s  user  발화 시작: Perfect, that’s very helpful.
-     0.95s  agent 발화 끝
-     0.98s  agent 발화 시작: You’re very welcome!
-     0.98s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.50s  <ret> 발화 (turn1 첫 프레임)
+     4.89s  agent 발화 시작: <ret> Trattoria Romana has openings at six thirty this eveni
+     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: There are many Italian restaurants in the vicinity, with Trattoria Rom
+     5.00s  user  발화 끝
+     6.39s  user  발화 시작: Yeah.
+     6.93s  user  발화 끝
+     9.61s  agent 발화 끝
+     9.71s  user  발화 시작: Um, six thirty— no, make that seven.
+    12.29s  <ret> 발화 (turn4 첫 프레임)
+    12.53s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for two at Trattoria 
+    12.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Confirmation: Trattoria Romana, July 10, 2026, 7:00 PM, 
+    12.67s  user  발화 끝
+    15.93s  user  발화 시작: Yeah, totally.
+    17.39s  user  발화 끝
+    20.55s  agent 발화 끝
+    20.64s  user  발화 시작: Great, thanks. What’s the weather like there right now?
+    24.23s  <ret> 발화 (turn7 첫 프레임)
+    24.38s  agent 발화 시작: <ret> It's currently 24.0 degrees Celsius, with 68% humidity
+    24.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) The weather at Trattoria Romana is currently 24.0°C, hum
+    24.57s  user  발화 끝
+    31.94s  agent 발화 끝
+    33.02s  user  발화 시작: Sounds pleasant. Is it far to walk?
+    35.48s  <ret> 발화 (turn9 첫 프레임)
+    35.87s  agent 발화 시작: <ret> It’s about 1.2 kilometers, a fifteen-minute walk from 
+    35.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.07s]: Trattoria Romana is located 1.2 kilometers from your current location,
+    35.92s  user  발화 끝
+    39.52s  user  발화 시작: Yeah, totally.
+    40.85s  user  발화 끝
+    41.89s  user  발화 시작: Yes, please do.
+    41.93s  agent 발화 끝
+    43.06s  <ret> 발화 (turn12 첫 프레임)
+    43.45s  agent 발화 시작: <ret> Head north on Main Street for half a kilometer, then t
+    43.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Directions to Trattoria Romana: Head north on Main Stree
+    43.50s  user  발화 끝
+    49.94s  user  발화 시작: Perfect, that’s very helpful.
+    50.12s  agent 발화 끝
+    52.05s  agent 발화 시작: You’re very welcome!
+    52.10s  user  발화 끝
+    53.33s  agent 발화 끝

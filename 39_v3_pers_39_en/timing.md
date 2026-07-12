@@ -79,28 +79,28 @@
 # EXAMINER(FDB-v2) 단계: S1 Is that… is that a counselor thing | S2 I was thinking maybe… Italy? I’ve  | S3 …But is it even realistic with my  | S4 Hmm, maybe. I’m just… overwhelmed 
 
      0.00s  agent 발화 시작: Guten Tag, Hugo. I'm Joras.
-     0.02s  user  발화 시작: Is that… is that a counselor thing? I’m just a bit stressed 
-     0.02s  agent 발화 끝
-     0.09s  agent 발화 시작: It is, actually. I chose it hoping it conveys a sense of cal
-     0.09s  user  발화 끝
-     0.24s  user  발화 시작: Uh, welll… I think I just need a break. A real one. Somewher
-     0.24s  agent 발화 끝
-     0.31s  agent 발화 시작: A change of scenery can be incredibly helpful. Do you have a
-     0.31s  user  발화 끝
-     0.45s  user  발화 시작: I was thinking maybe… Italy? I’ve never been. —
-     0.45s  agent 발화 끝
-     0.49s  user  발화 시작: …But is it even realistic with my vacation days?
-     0.49s  user  발화 끝
-     0.53s  agent 발화 시작: Calculating your available time, it appears you have five da
-     0.53s  user  발화 끝
-     0.62s  user  발화 시작: Yeah, yeah.
-     0.62s  agent 발화 끝
-     0.62s  agent 발화 시작: That does limit a trip to Italy somewhat, but it's certainly
-     0.62s  user  발화 끝
-     0.74s  user  발화 시작: Right.
-     0.74s  agent 발화 끝
-     0.74s  user  발화 시작: Hmm, maybe. I’m just… overwhelmed with choices, I guess. It'
-     0.74s  user  발화 끝
-     0.81s  agent 발화 시작: That’s perfectly understandable, Hugo. Feeling overwhelmed i
-     0.81s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.26s  agent 발화 끝
+     2.73s  user  발화 시작: Is that… is that a counselor thing? I’m just a bit stressed 
+     7.41s  user  발화 끝
+     7.46s  agent 발화 시작: It is, actually. I chose it hoping it conveys a sense of cal
+    18.92s  agent 발화 끝
+    18.97s  user  발화 시작: Uh, welll… I think I just need a break. A real one. Somewher
+    23.56s  agent 발화 시작: A change of scenery can be incredibly helpful. Do you have a
+    23.83s  user  발화 끝
+    35.76s  agent 발화 끝
+    37.22s  user  발화 시작: I was thinking maybe… Italy? I’ve never been. —
+    40.19s  user  발화 시작: …But is it even realistic with my vacation days?
+    40.32s  user  발화 끝
+    43.02s  agent 발화 시작: Calculating your available time, it appears you have five da
+    43.15s  user  발화 끝
+    48.65s  user  발화 시작: Yeah, yeah.
+    50.03s  user  발화 끝
+    50.59s  agent 발화 시작: That does limit a trip to Italy somewhat, but it's certainly
+    50.71s  agent 발화 끝
+    56.28s  user  발화 시작: Right.
+    56.77s  user  발화 끝
+    58.76s  user  발화 시작: Hmm, maybe. I’m just… overwhelmed with choices, I guess. It'
+    58.79s  agent 발화 끝
+    65.75s  user  발화 끝
+    65.87s  agent 발화 시작: That’s perfectly understandable, Hugo. Feeling overwhelmed i
+    82.25s  agent 발화 끝

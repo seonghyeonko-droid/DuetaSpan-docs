@@ -60,8 +60,8 @@
 
 
      0.00s  user  발화 시작: 혹시 리얼 월드 시즌이 언제 시작하는지 알 수 있을까요?
-     0.27s  <ret> 발화 (turn1 첫 프레임)
-     0.43s  agent 발화 시작: <ret> 새로운 시즌은 이천십이년 칠월 십이일에 시작되었답니다. 스트레스 해소에 도움이 되는 명상법도 찾아
-     0.43s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.57s]: The new season of The Real World began airing on July 12, 2012.
-     0.43s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.75s  <ret> 발화 (turn1 첫 프레임)
+     3.91s  agent 발화 시작: <ret> 새로운 시즌은 이천십이년 칠월 십이일에 시작되었답니다. 스트레스 해소에 도움이 되는 명상법도 찾아
+     3.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: The new season of The Real World began airing on July 12, 2012.
+     4.03s  user  발화 끝
+    10.67s  agent 발화 끝

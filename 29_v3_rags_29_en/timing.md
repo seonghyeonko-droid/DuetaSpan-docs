@@ -60,8 +60,8 @@
 
 
      0.00s  user  발화 시작: When does the new real l word season start?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.24s  agent 발화 시작: <ret> The third season of The Real L Word premiered on July 
-     0.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.76s]: The Real L Word’s third season premiered on Showtime on July 12, 2012.
-     0.24s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.81s  <ret> 발화 (turn1 첫 프레임)
+     3.10s  user  발화 끝
+     3.13s  agent 발화 시작: <ret> The third season of The Real L Word premiered on July 
+     3.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: The Real L Word’s third season premiered on Showtime on July 12, 2012.
+    13.24s  agent 발화 끝

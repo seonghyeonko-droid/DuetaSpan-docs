@@ -78,26 +78,26 @@
 
 
      0.00s  user  발화 시작: What’s the latest on artificial intelligence? I was reading 
-     0.07s  <ret> 발화 (turn4 첫 프레임)
-     0.10s  agent 발화 시작: It’s a fascinating field, isn’t it? So much is happening all
-     0.10s  user  발화 끝
-     0.22s  user  발화 시작: Yeah.
-     0.22s  agent 발화 끝
-     0.23s  user  발화 시작: Yeah, well, um, what’s the newest breakthrough, specifically
-     0.23s  user  발화 끝
-     0.29s  <ret> 발화 (turn8 첫 프레임)
-     0.31s  agent 발화 시작: <ret> The newest breakthrough comes from Google DeepMind wit
-     0.31s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: (tool result) Researchers at Google DeepMind have developed Gemma, a n
-     0.31s  user  발화 끝
-     0.47s  user  발화 시작: Uh-huh.
-     0.47s  agent 발화 끝
-     0.48s  agent 발화 시작: It’s quite exciting, isn’t it? Open-weights models mean more
-     0.48s  user  발화 끝
-     0.59s  user  발화 시작: Is it any good for, like, helping with kids' homework?
-     0.59s  agent 발화 끝
-     0.69s  agent 발화 시작: <ret> I’m checking on that for you, but unfortunately, I hav
-     0.69s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (no information found)
-     0.69s  user  발화 끝
-     0.89s  agent 발화 시작: However, it’s a powerful language model, so it could potenti
-     0.89s  agent 발화 끝
-     1.00s  agent 발화 끝
+     5.37s  user  발화 끝
+     5.39s  agent 발화 시작: It’s a fascinating field, isn’t it? So much is happening all
+     7.16s  user  발화 시작: Yeah.
+     7.70s  user  발화 끝
+     9.88s  agent 발화 끝
+    10.34s  user  발화 시작: Yeah, well, um, what’s the newest breakthrough, specifically
+    13.99s  <ret> 발화 (turn4 첫 프레임)
+    14.23s  agent 발화 시작: <ret> The newest breakthrough comes from Google DeepMind wit
+    14.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Researchers at Google DeepMind have developed Gemma, a n
+    14.51s  user  발화 끝
+    17.95s  user  발화 시작: Uh-huh.
+    18.35s  user  발화 끝
+    22.28s  agent 발화 시작: It’s quite exciting, isn’t it? Open-weights models mean more
+    22.44s  agent 발화 끝
+    27.51s  agent 발화 끝
+    28.03s  user  발화 시작: Is it any good for, like, helping with kids' homework?
+    31.28s  <ret> 발화 (turn8 첫 프레임)
+    31.36s  agent 발화 시작: <ret> I’m checking on that for you, but unfortunately, I hav
+    31.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (no information found)
+    31.41s  user  발화 끝
+    39.16s  agent 발화 시작: However, it’s a powerful language model, so it could potenti
+    39.24s  agent 발화 끝
+    43.47s  agent 발화 끝

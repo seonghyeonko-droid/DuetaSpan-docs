@@ -66,22 +66,22 @@
 # EXAMINER(FDB-v2) 단계: S1 Oh, uh, that’s a… unique name. Wha | S2 I’m just feeling really overwhelme | S3 …do you think, like, meditation ac | S4 Hmm. Maybe I should give it anothe
 
      0.00s  agent 발화 시작: Bonjour, Taylor. I’m Tux, and I’m here to offer support and 
-     0.13s  user  발화 시작: Right.
-     0.13s  agent 발화 끝
-     0.13s  user  발화 시작: Oh, uh, that’s a… unique name. What kind of guidance, exactl
-     0.13s  user  발화 끝
-     0.20s  agent 발화 시작: I specialize in mindfulness and stress relief techniques, Ta
-     0.20s  user  발화 끝
-     0.36s  user  발화 시작: I’m just feeling really overwhelmed with work lately. Everyt
-     0.36s  agent 발화 끝
-     0.43s  agent 발화 시작: It sounds like you’re carrying a heavy load right now. It’s 
-     0.43s  user  발화 끝
-     0.55s  user  발화 시작: …do you think, like, meditation actually *helps* with that? 
-     0.55s  agent 발화 끝
-     0.64s  agent 발화 시작: Taylor. Meditation isn’t a quick fix, but it can be a powerf
-     0.64s  user  발화 끝
-     0.75s  user  발화 시작: Hmm. Maybe I should give it another shot. It’s just hard to 
-     0.75s  agent 발화 끝
-     0.86s  agent 발화 시작: Time is often the biggest challenge, isn’t it? Perhaps we co
-     0.86s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.70s  user  발화 시작: Right.
+     5.09s  user  발화 끝
+     6.66s  user  발화 시작: Oh, uh, that’s a… unique name. What kind of guidance, exactl
+     6.95s  agent 발화 끝
+    11.06s  agent 발화 시작: I specialize in mindfulness and stress relief techniques, Ta
+    11.24s  user  발화 끝
+    20.43s  agent 발화 끝
+    23.28s  user  발화 시작: I’m just feeling really overwhelmed with work lately. Everyt
+    28.79s  agent 발화 시작: It sounds like you’re carrying a heavy load right now. It’s 
+    28.98s  user  발화 끝
+    34.82s  user  발화 시작: …do you think, like, meditation actually *helps* with that? 
+    35.37s  agent 발화 끝
+    39.40s  agent 발화 시작: Taylor. Meditation isn’t a quick fix, but it can be a powerf
+    39.59s  user  발화 끝
+    45.83s  agent 발화 끝
+    46.06s  user  발화 시작: Hmm. Maybe I should give it another shot. It’s just hard to 
+    50.58s  agent 발화 시작: Time is often the biggest challenge, isn’t it? Perhaps we co
+    50.69s  user  발화 끝
+    58.55s  agent 발화 끝

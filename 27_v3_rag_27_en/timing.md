@@ -60,28 +60,28 @@
 
 
      0.00s  user  발화 시작: I’m trying to trace my family history. Do you know anything 
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.19s  <ret> 발화 (turn4 첫 프레임)
-     0.21s  agent 발화 시작: <ret> It appears Leonard Calvert was the first Governor of M
-     0.21s  ⚡SPAN 주입 [d'=0.19s / d_lead=0.19s]: Leonard Calvert became the first Governor of the Province of Maryland 
-     0.21s  user  발화 끝
-     0.40s  user  발화 시작: Yeah.
-     0.40s  agent 발화 끝
-     0.41s  user  발화 시작: That’s interesting. Who was the fifth governor, then?
-     0.41s  user  발화 끝
-     0.51s  agent 발화 시작: <ret> Cecil Calvert, the second Lord Baltimore, was the fift
-     0.51s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: Cecil Calvert, the second Lord Baltimore, served as the fifth governor
-     0.51s  user  발화 끝
-     0.64s  user  발화 시작: …was he related to the first governor, Leonard?
-     0.64s  agent 발화 끝
-     0.66s  <ret> 발화 (turn6 첫 프레임)
-     0.74s  agent 발화 시작: <ret> Cecil Calvert was the son of George Calvert, the found
-     0.74s  ⚡SPAN 주입 [d'=0.17s / d_lead=0.17s]: Cecil Calvert was the son of George Calvert, the first Lord Baltimore,
-     0.74s  user  발화 끝
-     0.85s  <ret> 발화 (turn8 첫 프레임)
-     0.91s  user  발화 시작: Right.
-     0.91s  agent 발화 끝
-     0.93s  agent 발화 시작: <ret> Cecil Calvert was born in 1605.
-     0.93s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Cecil Calvert was born in 1605.
-     0.93s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.64s  <ret> 발화 (turn1 첫 프레임)
+     4.88s  agent 발화 시작: <ret> It appears Leonard Calvert was the first Governor of M
+     4.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: Leonard Calvert became the first Governor of the Province of Maryland 
+     4.95s  user  발화 끝
+     8.81s  user  발화 시작: Yeah.
+     9.21s  user  발화 끝
+    12.86s  agent 발화 끝
+    13.36s  user  발화 시작: That’s interesting. Who was the fifth governor, then?
+    15.90s  <ret> 발화 (turn4 첫 프레임)
+    15.97s  agent 발화 시작: <ret> Cecil Calvert, the second Lord Baltimore, was the fift
+    15.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: Cecil Calvert, the second Lord Baltimore, served as the fifth governor
+    16.09s  user  발화 끝
+    19.73s  user  발화 시작: …was he related to the first governor, Leonard?
+    20.42s  agent 발화 끝
+    21.99s  <ret> 발화 (turn6 첫 프레임)
+    22.06s  agent 발화 시작: <ret> Cecil Calvert was the son of George Calvert, the found
+    22.07s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.27s]: Cecil Calvert was the son of George Calvert, the first Lord Baltimore,
+    22.32s  user  발화 끝
+    25.04s  user  발화 시작: Right.
+    25.54s  user  발화 끝
+    27.20s  <ret> 발화 (turn8 첫 프레임)
+    27.27s  agent 발화 시작: <ret> Cecil Calvert was born in 1605.
+    27.28s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.28s]: Cecil Calvert was born in 1605.
+    27.33s  agent 발화 끝
+    30.55s  agent 발화 끝

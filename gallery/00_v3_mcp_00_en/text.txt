@@ -68,17 +68,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] I'm craving pizza. What's around thirty-four point zero five two two latitude…
-[  0.10s][user ] …negative ⟨ret@0.00s⟩ one hundred eighteen point two four three seven?
-[  0.17s][moshi] ⟦⚡SPAN@0.17s: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014",⟧ There are a couple of options nearby. Doughy Joe's Pizza is just zero point three miles away.
+[  6.69s][user ] …negative one hundred eighteen point two four three ⟨ret@10.10s⟩ seven?
+[ 10.32s][moshi] ⟦⚡SPAN@10.34s: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014",⟧ There are a couple of options nearby. Doughy Joe's Pizza is just zero point three miles away.
       CALL: {"function": "maps_around_search", "arguments": {"latitude": "34.0522", "longitude": "-118.2437", "query": "pizza"}}
-[  0.32s][user ] «backchannel» Uh-huh.
-[  0.33s][user ] Uh, ⟨ret@0.00s⟩ is Doughy Joe's open right now?
-[  0.38s][moshi] ⟦⚡SPAN@0.38s: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014", "open now", ⟧ Let me check their current hours for you.
+[ 13.75s][user ] «backchannel» Uh-huh.
+[ 15.10s][user ] Uh, is Doughy Joe's open ⟨ret@16.83s⟩ right now?
+[ 17.22s][moshi] ⟦⚡SPAN@17.23s: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring St, Los Angeles, CA 90014", "open now", ⟧ Let me check their current hours for you.
       CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Doughy Joe's Pizza", "location": "725 S Spring St, Los Angeles, CA 90014"}}
-[  0.45s][moshi] Yes, Doughy Joe’s is currently open, from eleven AM to ten PM every day.
-[  0.57s][user ] «backchannel» Mm-hmm.
-[  0.57s][moshi] It’s good to know you have options when a craving strikes. Sometimes, just knowing that helps ease a little stress.
-[  0.74s][user ] «backchannel» Yeah.
-[  0.75s][user ] Can ⟨ret@0.48s⟩ you get me directions there?
-[  0.80s][moshi] ⟦⚡SPAN@0.80s: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "Head north on Spring St… Turn left onto 8t⟧ The drive to Doughy Joe’s is two point one miles and should take about eight minutes. The route starts heading north on Spring Street.
+[ 19.76s][moshi] Yes, Doughy Joe’s is currently open, from eleven AM to ten PM every day.
+[ 22.56s][user ] «backchannel» Mm-hmm.
+[ 26.11s][moshi] It’s good to know you have options when a craving strikes. Sometimes, just knowing that helps ease a little stress.
+[ 28.19s][user ] «backchannel» Yeah.
+[ 32.13s][user ] Can you get me directions ⟨ret@33.57s⟩ there?
+[ 33.88s][moshi] ⟦⚡SPAN@33.89s: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "Head north on Spring St… Turn left onto 8t⟧ The drive to Doughy Joe’s is two point one miles and should take about eight minutes. The route starts heading north on Spring Street.
       CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Doughy Joe's Pizza, 725 S Spring St, Los Angeles, CA 90014", "mode": "driving"}}

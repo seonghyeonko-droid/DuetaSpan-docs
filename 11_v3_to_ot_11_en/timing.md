@@ -57,22 +57,22 @@
 
 
      0.00s  user  발화 시작: Hi Kuia, do you know who played Jack Snyder on As the World 
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.17s  <ret> 발화 (turn3 첫 프레임)
-     0.19s  agent 발화 시작: <ret> Michael Frank Park portrayed Jack Snyder on that show—
-     0.19s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: Michael Frank Park played Jack Snyder on As the World Turns from 1997 
-     0.19s  user  발화 끝
-     0.31s  user  발화 시작: …did he play any other well-known roles?
-     0.31s  agent 발화 끝
-     0.41s  agent 발화 시작: <ret> He’s also recognized for playing Detective Chris LaSal
-     0.41s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: Michael Frank Park is also known for his roles as Detective Chris LaSa
-     0.41s  user  발화 끝
-     0.64s  user  발화 시작: Yeah, yeah.
-     0.64s  agent 발화 끝
-     0.66s  agent 발화 시작: It’s wonderful to discover more about actors we enjoy, isn’t
-     0.66s  user  발화 끝
-     0.92s  user  발화 시작: Yeah.
-     0.92s  agent 발화 끝
-     0.93s  user  발화 시작: That’s really interesting, thanks Kuia.
-     0.93s  user  발화 끝
-     1.00s  user  발화 끝
+     3.17s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  agent 발화 시작: <ret> Michael Frank Park portrayed Jack Snyder on that show—
+     3.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: Michael Frank Park played Jack Snyder on As the World Turns from 1997 
+     3.66s  user  발화 끝
+     7.18s  user  발화 시작: …did he play any other well-known roles?
+     8.24s  agent 발화 끝
+     9.67s  <ret> 발화 (turn3 첫 프레임)
+     9.90s  agent 발화 시작: <ret> He’s also recognized for playing Detective Chris LaSal
+     9.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Michael Frank Park is also known for his roles as Detective Chris LaSa
+    10.09s  user  발화 끝
+    13.53s  user  발화 시작: Yeah, yeah.
+    14.76s  user  발화 끝
+    17.08s  agent 발화 시작: It’s wonderful to discover more about actors we enjoy, isn’t
+    17.27s  agent 발화 끝
+    20.29s  user  발화 시작: Yeah.
+    20.74s  user  발화 끝
+    23.65s  agent 발화 끝
+    23.76s  user  발화 시작: That’s really interesting, thanks Kuia.
+    26.30s  user  발화 끝

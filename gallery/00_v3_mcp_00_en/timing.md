@@ -69,32 +69,32 @@
 # EXAMINER(FDB-v2) 단계: S1 I'm craving pizza. What's around t | S2 …negative one hundred eighteen poi | S3 Uh, is Doughy Joe's open right now | S4 Can you get me directions there?
 
      0.00s  user  발화 시작: I'm craving pizza. What's around thirty-four point zero five
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.10s  user  발화 시작: …negative one hundred eighteen point two four three seven?
-     0.10s  user  발화 끝
-     0.17s  agent 발화 시작: <ret> There are a couple of options nearby. Doughy Joe's Piz
-     0.17s  ⚡SPAN 주입 [d'=0.14s / d_lead=0.14s]: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "
-     0.17s  user  발화 끝
-     0.32s  user  발화 시작: Uh-huh.
-     0.32s  agent 발화 끝
-     0.33s  user  발화 시작: Uh, is Doughy Joe's open right now?
-     0.33s  user  발화 끝
-     0.38s  agent 발화 시작: <ret> Let me check their current hours for you.
-     0.38s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring 
-     0.38s  user  발화 끝
-     0.45s  agent 발화 시작: Yes, Doughy Joe’s is currently open, from eleven AM to ten P
-     0.45s  agent 발화 끝
-     0.48s  <ret> 발화 (turn11 첫 프레임)
-     0.57s  user  발화 시작: Mm-hmm.
-     0.57s  agent 발화 끝
-     0.57s  agent 발화 시작: It’s good to know you have options when a craving strikes. S
-     0.57s  user  발화 끝
-     0.74s  user  발화 시작: Yeah.
-     0.74s  agent 발화 끝
-     0.75s  user  발화 시작: Can you get me directions there?
-     0.75s  user  발화 끝
-     0.80s  agent 발화 시작: <ret> The drive to Doughy Joe’s is two point one miles and s
-     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "He
-     0.80s  user  발화 끝
-     1.00s  agent 발화 끝
+     5.33s  user  발화 끝
+     6.69s  user  발화 시작: …negative one hundred eighteen point two four three seven?
+    10.10s  <ret> 발화 (turn2 첫 프레임)
+    10.32s  agent 발화 시작: <ret> There are a couple of options nearby. Doughy Joe's Piz
+    10.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.00s]: (tool result) {"results": [{"name": "Doughy Joe's Pizza", "address": "
+    10.44s  user  발화 끝
+    13.75s  user  발화 시작: Uh-huh.
+    14.24s  user  발화 끝
+    15.10s  user  발화 시작: Uh, is Doughy Joe's open right now?
+    15.32s  agent 발화 끝
+    16.83s  <ret> 발화 (turn5 첫 프레임)
+    17.22s  agent 발화 시작: <ret> Let me check their current hours for you.
+    17.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.54s]: (tool result) {"name": "Doughy Joe's Pizza", "address": "725 S Spring 
+    17.41s  user  발화 끝
+    19.76s  agent 발화 시작: Yes, Doughy Joe’s is currently open, from eleven AM to ten P
+    19.77s  agent 발화 끝
+    22.56s  user  발화 시작: Mm-hmm.
+    23.15s  user  발화 끝
+    26.11s  agent 발화 끝
+    26.11s  agent 발화 시작: It’s good to know you have options when a craving strikes. S
+    28.19s  user  발화 시작: Yeah.
+    28.69s  user  발화 끝
+    32.13s  user  발화 시작: Can you get me directions there?
+    32.13s  agent 발화 끝
+    33.57s  <ret> 발화 (turn11 첫 프레임)
+    33.88s  agent 발화 시작: <ret> The drive to Doughy Joe’s is two point one miles and s
+    33.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) {"distance": "2.1 mi", "duration": "8 min", "route": "He
+    33.93s  user  발화 끝
+    41.16s  agent 발화 끝

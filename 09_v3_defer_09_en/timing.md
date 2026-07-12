@@ -68,20 +68,20 @@
 
 
      0.00s  user  발화 시작: I need a regular ride for three people to one Infinite Loop,
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.15s  <ret> 발화 (turn3 첫 프레임)
-     0.16s  agent 발화 시작: <ret> Alright, a ride has been booked for you. Driver Anya S
-     0.16s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Ride confirmed. Driver: Anya Sharma. ETA: 7 minutes. Veh
-     0.16s  user  발화 끝
-     0.36s  user  발화 시작: …Is that the quickest route, or are there options?
-     0.36s  agent 발화 끝
-     0.47s  agent 발화 시작: <ret> There is a slightly faster route using Highway 85, it 
-     0.47s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.24s]: Alternative route found. Estimated time: 6 minutes. Route involves Hig
-     0.47s  user  발화 끝
-     0.71s  user  발화 시작: Wow.
-     0.71s  agent 발화 끝
-     0.72s  agent 발화 시작: I’m glad to help you with your commute today. Planning ahead
-     0.72s  user  발화 끝
-     0.91s  agent 발화 시작: Remember, a little preparation goes a long way.
-     0.91s  agent 발화 끝
-     1.00s  agent 발화 끝
+     4.63s  <ret> 발화 (turn1 첫 프레임)
+     4.86s  agent 발화 시작: <ret> Alright, a ride has been booked for you. Driver Anya S
+     4.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Ride confirmed. Driver: Anya Sharma. ETA: 7 minutes. Veh
+     5.00s  user  발화 끝
+    10.29s  user  발화 시작: …Is that the quickest route, or are there options?
+    10.97s  agent 발화 끝
+    12.50s  <ret> 발화 (turn3 첫 프레임)
+    12.66s  agent 발화 시작: <ret> There is a slightly faster route using Highway 85, it 
+    12.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.19s]: Alternative route found. Estimated time: 6 minutes. Route involves Hig
+    12.88s  user  발화 끝
+    16.67s  user  발화 시작: Wow.
+    17.31s  user  발화 끝
+    21.65s  agent 발화 시작: I’m glad to help you with your commute today. Planning ahead
+    21.84s  agent 발화 끝
+    27.36s  agent 발화 시작: Remember, a little preparation goes a long way.
+    27.59s  agent 발화 끝
+    31.29s  agent 발화 끝

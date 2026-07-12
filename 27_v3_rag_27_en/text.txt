@@ -59,12 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m ⟨ret@0.00s⟩ trying to trace my family history. Do you know anything about the early governors of Maryland?
-[  0.21s][moshi] ⟦⚡SPAN@0.21s: Leonard Calvert became the first Governor of the Province of Maryland in 1634, serving until his death in 1647⟧ It appears Leonard Calvert was the first Governor of Maryland, serving from 1634 until 1647.
-[  0.40s][user ] «backchannel» Yeah.
-[  0.41s][user ] That’s ⟨ret@0.19s⟩ interesting. Who was the fifth governor, then?
-[  0.51s][moshi] «interrupted» ⟦⚡SPAN@0.51s: Cecil Calvert, the second Lord Baltimore, served as the fifth governor of the Province of Maryland from 1661 t⟧ Cecil Calvert, the second Lord Baltimore, was the fifth governor—
-[  0.64s][user ] «interrupts_prev» …was he ⟨ret@0.66s⟩ related to the first governor, Leonard?
-[  0.74s][moshi] ⟦⚡SPAN@0.74s: Cecil Calvert was the son of George Calvert, the first Lord Baltimore, and therefore the son of the founder of⟧ Cecil Calvert was the son of George Calvert, the founder of the Maryland colony.
-[  0.91s][user ] «backchannel» Right.
-[  0.93s][moshi] ⟨ret@0.85s⟩ ⟦⚡SPAN@0.93s: Cecil Calvert was born in 1605.⟧ Cecil Calvert was born in 1605.
+[  0.00s][user ] I’m trying to trace my family history. Do you know anything about the early governors of ⟨ret@4.64s⟩ Maryland?
+[  4.88s][moshi] ⟦⚡SPAN@4.88s: Leonard Calvert became the first Governor of the Province of Maryland in 1634, serving until his death in 1647⟧ It appears Leonard Calvert was the first Governor of Maryland, serving from 1634 until 1647.
+[  8.81s][user ] «backchannel» Yeah.
+[ 13.36s][user ] That’s interesting. Who was the fifth governor, then?
+[ 15.97s][moshi] «interrupted» ⟨ret@15.90s⟩ ⟦⚡SPAN@15.98s: Cecil Calvert, the second Lord Baltimore, served as the fifth governor of the Province of Maryland from 1661 t⟧ Cecil Calvert, the second Lord Baltimore, was the fifth governor—
+[ 19.73s][user ] «interrupts_prev» …was he related to the first governor, ⟨ret@21.99s⟩ Leonard?
+[ 22.06s][moshi] ⟦⚡SPAN@22.07s: Cecil Calvert was the son of George Calvert, the first Lord Baltimore, and therefore the son of the founder of⟧ Cecil Calvert was the son of George Calvert, the founder of the Maryland colony.
+[ 25.04s][user ] «backchannel» Right.
+[ 27.27s][moshi] ⟨ret@27.20s⟩ ⟦⚡SPAN@27.28s: Cecil Calvert was born in 1605.⟧ Cecil Calvert was born in 1605.

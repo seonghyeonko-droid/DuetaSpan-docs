@@ -66,22 +66,22 @@
 # EXAMINER(FDB-v2) 단계: S1 Do you know who played Jane Milner | S2 …in Foyle’s War? I’m trying to rem | S3 …Was she in anything… | S4 …else I might know?
 
      0.00s  user  발화 시작: Do you know who played Jane Milner…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.07s  <ret> 발화 (turn5 첫 프레임)
-     0.10s  user  발화 시작: …in Foyle’s War? I’m trying to remember…
-     0.10s  user  발화 끝
-     0.19s  agent 발화 시작: <ret> That was Mali Harries, and she really brought Jane Mil
-     0.19s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Mali Harries portrayed Jane Milner in the British television series Fo
-     0.19s  user  발화 끝
-     0.36s  user  발화 시작: …Was she in anything…
-     0.36s  agent 발화 끝
-     0.41s  user  발화 시작: …else I might know?
-     0.41s  user  발화 끝
-     0.47s  agent 발화 시작: <ret> She’s also known for roles in “The Bill” and the film 
-     0.47s  ⚡SPAN 주입 [d'=0.22s / d_lead=0.22s]: Harries is also known for her roles in the series "The Bill" and the f
-     0.47s  user  발화 끝
-     0.68s  user  발화 시작: Nice.
-     0.68s  agent 발화 끝
-     0.70s  agent 발화 시작: It’s lovely when actors have such varied work, isn’t it? A b
-     0.70s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.17s  user  발화 끝
+     3.81s  user  발화 시작: …in Foyle’s War? I’m trying to remember…
+     5.88s  <ret> 발화 (turn2 첫 프레임)
+     6.19s  agent 발화 시작: <ret> That was Mali Harries, and she really brought Jane Mil
+     6.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: Mali Harries portrayed Jane Milner in the British television series Fo
+     6.40s  user  발화 끝
+    10.77s  agent 발화 끝
+    10.78s  user  발화 시작: …Was she in anything…
+    12.25s  user  발화 끝
+    13.22s  user  발화 시작: …else I might know?
+    13.87s  <ret> 발화 (turn5 첫 프레임)
+    14.26s  agent 발화 시작: <ret> She’s also known for roles in “The Bill” and the film 
+    14.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Harries is also known for her roles in the series "The Bill" and the f
+    14.31s  user  발화 끝
+    18.94s  user  발화 시작: Nice.
+    19.43s  user  발화 끝
+    20.41s  agent 발화 시작: It’s lovely when actors have such varied work, isn’t it? A b
+    20.51s  agent 발화 끝
+    29.54s  agent 발화 끝

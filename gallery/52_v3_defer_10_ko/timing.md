@@ -60,17 +60,17 @@
 
 
      0.00s  user  발화 시작: 뉴올리언스 루이지애나에 있는 집을 네 명분으로 찾아줘.
-     0.00s  ⚡지연 SPAN 주입(선제발표 직전): The least expensive house is a 2-bedroom bungalow at 123 Bourbon Stree
-     0.04s  <ret> 발화 (turn1 첫 프레임)
-     0.12s  agent 발화 시작: <ret> 뉴올리언스 루이지애나에서 네 분이 머물 수 있는 집 삼채를 찾았어요. 숙박료는 밤에 백오십달러에서
-     0.12s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: (tool result) Found 3 houses matching your criteria in New Orleans, Lo
-     0.12s  user  발화 끝
-     0.37s  user  발화 시작: 음, 그 중에서 제일 싼 데 좀 더 자세히 알려줄래?
-     0.37s  agent 발화 끝
-     0.53s  agent 발화 시작: 지금 확인해 보고요.
-     0.53s  user  발화 끝
-     0.58s  agent 발화 시작: <ret> 잠깐만 기다려 주세요. 제일 저렴한 곳은 버번 스트리트 백이십삼번지에 있는 침실 두개짜리 방갈로인
-     0.58s  agent 발화 끝
-     0.98s  user  발화 시작: 네.
-     0.98s  agent 발화 끝
-     1.00s  user  발화 끝
+     3.61s  <ret> 발화 (turn1 첫 프레임)
+     3.69s  agent 발화 시작: <ret> 뉴올리언스 루이지애나에서 네 분이 머물 수 있는 집 삼채를 찾았어요. 숙박료는 밤에 백오십달러에서
+     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Found 3 houses matching your criteria in New Orleans, Lo
+     3.75s  user  발화 끝
+    12.59s  agent 발화 끝
+    12.70s  user  발화 시작: 음, 그 중에서 제일 싼 데 좀 더 자세히 알려줄래?
+    15.89s  user  발화 끝
+    16.17s  agent 발화 시작: 지금 확인해 보고요.
+    16.67s  ⚡지연 SPAN 주입(선제발표 직전): The least expensive house is a 2-bedroom bungalow at 123 Bourbon Stree
+    17.39s  agent 발화 시작: <ret> 잠깐만 기다려 주세요. 제일 저렴한 곳은 버번 스트리트 백이십삼번지에 있는 침실 두개짜리 방갈로인
+    17.64s  agent 발화 끝
+    26.22s  user  발화 시작: 네.
+    26.57s  user  발화 끝
+    31.44s  agent 발화 끝

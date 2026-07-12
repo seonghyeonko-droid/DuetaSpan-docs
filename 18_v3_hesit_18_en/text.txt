@@ -64,10 +64,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, ⟨ret@0.00s⟩ I was wondering… when did the last convicts arrive in Australia? It's just, I’ve been thinking about history…
-[  0.16s][moshi] ⟦⚡SPAN@0.16s: The last convict ship, the Hougoumont, arrived in Western Australia on January 10, 1868, carrying 263 convicts⟧ That’s a thoughtful question. The last convict ship, the Hougoumont, arrived on January 10, 1868, bringing 263 people to Western Australia. It’s amazing how much history is held within those journeys.
-[  0.41s][user ] Wow, January tenth, 1868… that’s… a long time ago.
-[  0.48s][moshi] It truly is a long time ago! Time has a way of softening the edges of even the most difficult stories, doesn’t it?
-[  0.67s][user ] I ⟨ret@0.45s⟩ guess so. Could you… find me some information about the Hougoumont?
-[  0.77s][moshi] ⟦⚡SPAN@0.77s: (tool result) The Hougoumont was a British merchant ship converted into a prison transport, making seven voyag⟧ The Hougoumont was a British ship used to transport convicts, making seven voyages until 1868, and is now a museum in Fremantle. It's wonderful that it’s been preserved.
+[  0.00s][user ] Um, I was wondering… when did the last convicts arrive in Australia? It's just, I’ve been thinking about ⟨ret@6.95s⟩ history…
+[  7.19s][moshi] ⟦⚡SPAN@7.19s: The last convict ship, the Hougoumont, arrived in Western Australia on January 10, 1868, carrying 263 convicts⟧ That’s a thoughtful question. The last convict ship, the Hougoumont, arrived on January 10, 1868, bringing 263 people to Western Australia. It’s amazing how much history is held within those journeys.
+[ 21.69s][user ] Wow, January tenth, 1868… that’s… a long time ago.
+[ 27.27s][moshi] It truly is a long time ago! Time has a way of softening the edges of even the most difficult stories, doesn’t it?
+[ 34.44s][user ] I guess so. Could you… find me some information about the ⟨ret@38.41s⟩ Hougoumont?
+[ 38.65s][moshi] ⟦⚡SPAN@38.65s: (tool result) The Hougoumont was a British merchant ship converted into a prison transport, making seven voyag⟧ The Hougoumont was a British ship used to transport convicts, making seven voyages until 1868, and is now a museum in Fremantle. It's wonderful that it’s been preserved.
       CALL: {"function": "search", "arguments": {"query": "Hougoumont convict ship"}}

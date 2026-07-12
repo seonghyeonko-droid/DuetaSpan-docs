@@ -57,24 +57,24 @@
 
 
      0.00s  user  발화 시작: Hi Feen, I was wondering when Bombay officially became Mumba
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.09s  <ret> 발화 (turn3 첫 프레임)
-     0.11s  agent 발화 시작: <ret> The city officially became Mumbai in nineteen ninety-f
-     0.11s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: The city of Bombay was officially renamed Mumbai in 1995 by the Mahara
-     0.11s  user  발화 끝
-     0.23s  user  발화 시작: …was there a particular reason for the name change?
-     0.23s  agent 발화 끝
-     0.33s  agent 발화 시작: <ret> The name “Mumbai” actually comes from Mumba, a local n
-     0.33s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: The name "Mumbai" is derived from Mumba, the local Koli name for the i
-     0.33s  user  발화 끝
-     0.41s  <ret> 발화 (turn5 첫 프레임)
-     0.56s  user  발화 시작: Yeah.
-     0.56s  agent 발화 끝
-     0.57s  agent 발화 시작: <ret> It’s wonderful when cities honor their history, isn’t 
-     0.57s  ⚡SPAN 주입(IRRELEVANT) [d'=0.21s / d_lead=0.21s]: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cl
-     0.57s  user  발화 끝
-     0.78s  agent 발화 시작: Sometimes a fresh start is just what’s needed, whether it’s 
-     0.78s  agent 발화 끝
-     0.94s  user  발화 시작: That’s a good point. Thanks, Feen.
-     0.94s  agent 발화 끝
-     1.00s  user  발화 끝
+     4.31s  <ret> 발화 (turn1 첫 프레임)
+     4.54s  agent 발화 시작: <ret> The city officially became Mumbai in nineteen ninety-f
+     4.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: The city of Bombay was officially renamed Mumbai in 1995 by the Mahara
+     4.63s  user  발화 끝
+     9.40s  user  발화 시작: …was there a particular reason for the name change?
+    10.15s  agent 발화 끝
+    12.09s  <ret> 발화 (turn3 첫 프레임)
+    12.33s  agent 발화 시작: <ret> The name “Mumbai” actually comes from Mumba, a local n
+    12.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: The name "Mumbai" is derived from Mumba, the local Koli name for the i
+    12.49s  user  발화 끝
+    16.73s  user  발화 시작: Yeah.
+    17.18s  user  발화 끝
+    20.27s  <ret> 발화 (turn5 첫 프레임)
+    20.58s  agent 발화 끝
+    20.59s  agent 발화 시작: <ret> It’s wonderful when cities honor their history, isn’t 
+    20.59s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.99s]: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cl
+    27.50s  agent 발화 시작: Sometimes a fresh start is just what’s needed, whether it’s 
+    27.58s  agent 발화 끝
+    32.39s  user  발화 시작: That’s a good point. Thanks, Feen.
+    32.40s  agent 발화 끝
+    34.79s  user  발화 끝

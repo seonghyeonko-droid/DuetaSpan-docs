@@ -62,10 +62,10 @@
 
 
      0.00s  user  발화 시작: Who voiced mother in…
-     0.04s  <ret> 발화 (turn2 첫 프레임)
-     0.14s  user  발화 시작: …the film Alien Covenant?
-     0.14s  user  발화 끝
-     0.28s  agent 발화 시작: <ret> The voice you’re hearing as Mother in Alien Covenant i
-     0.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.72s]: Lorelei King provided the voice of the Neomorph, also known as Mother,
-     0.28s  user  발화 끝
-     1.00s  agent 발화 끝
+     1.80s  user  발화 끝
+     3.51s  user  발화 시작: …the film Alien Covenant?
+     5.59s  <ret> 발화 (turn2 첫 프레임)
+     5.82s  user  발화 끝
+     5.83s  agent 발화 시작: <ret> The voice you’re hearing as Mother in Alien Covenant i
+     5.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Lorelei King provided the voice of the Neomorph, also known as Mother,
+    14.26s  agent 발화 끝

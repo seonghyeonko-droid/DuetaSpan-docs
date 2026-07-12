@@ -79,24 +79,24 @@
 # EXAMINER(FDB-v2) 단계: S1 오늘 오후 세시에 캘리포니아 쿠퍼티노의 원 인피니트… | S2 …루프까지 세 명 태워갈 일반 차량 불러줘. | S3 지금 바로 출발하는 건 안 돼? | S4 …혹시 지금 근처에 다른 택시 서비스는 어때?
 
      0.00s  user  발화 시작: 오늘 오후 세시에 캘리포니아 쿠퍼티노의 원 인피니트…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.07s  user  발화 시작: …루프까지 세 명 태워갈 일반 차량 불러줘.
-     0.07s  user  발화 끝
-     0.15s  agent 발화 시작: <ret> 네, 쿠퍼티노 원 인피니트 루프까지 일반 차량을 예약해 드렸습니다. 예약 번호는 알 에스 이 공 
-     0.15s  ⚡SPAN 주입 [d'=0.31s / d_lead=0.31s]: (tool result) {"ride id": "RS202607101500A", "status": "scheduled", "e
-     0.15s  user  발화 끝
-     0.45s  user  발화 시작: 지금 바로 출발하는 건 안 돼?
-     0.45s  agent 발화 끝
-     0.52s  agent 발화 시작: 지금 바로 출발하는 차량은 없습니다. 예약된 차량이 오후 세시에 도착 예정입니다.
-     0.52s  user  발화 끝
-     0.63s  user  발화 시작: 정말요?
-     0.63s  agent 발화 끝
-     0.64s  agent 발화 시작: 혹시 다른 시간으로 변경해 드릴까요? 아니면 다른 종류의 차량을 알아볼까요—
-     0.64s  user  발화 끝
-     0.74s  <ret> 발화 (turn8 첫 프레임)
-     0.75s  user  발화 시작: …혹시 지금 근처에 다른 택시 서비스는 어때?
-     0.75s  agent 발화 끝
-     0.82s  agent 발화 시작: <ret> 주변에 FastCab 택시 서비스가 있으며, 예상 대기 시간은 오분이고 예상 요금은 칠십달러입니다
-     0.82s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: {"provider": "FastCab", "estimated_wait_time": "5 minutes", "estimated
-     0.82s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.02s  user  발화 끝
+     5.75s  user  발화 시작: …루프까지 세 명 태워갈 일반 차량 불러줘.
+     8.70s  user  발화 끝
+     8.75s  <ret> 발화 (turn2 첫 프레임)
+     8.91s  agent 발화 시작: <ret> 네, 쿠퍼티노 원 인피니트 루프까지 일반 차량을 예약해 드렸습니다. 예약 번호는 알 에스 이 공 
+     8.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: (tool result) {"ride id": "RS202607101500A", "status": "scheduled", "e
+    18.69s  agent 발화 끝
+    19.56s  user  발화 시작: 지금 바로 출발하는 건 안 돼?
+    21.24s  agent 발화 시작: 지금 바로 출발하는 차량은 없습니다. 예약된 차량이 오후 세시에 도착 예정입니다.
+    21.40s  user  발화 끝
+    23.35s  user  발화 시작: 정말요?
+    24.41s  user  발화 끝
+    26.10s  agent 발화 시작: 혹시 다른 시간으로 변경해 드릴까요? 아니면 다른 종류의 차량을 알아볼까요—
+    26.16s  agent 발화 끝
+    30.59s  user  발화 시작: …혹시 지금 근처에 다른 택시 서비스는 어때?
+    31.20s  agent 발화 끝
+    33.74s  <ret> 발화 (turn8 첫 프레임)
+    33.82s  agent 발화 시작: <ret> 주변에 FastCab 택시 서비스가 있으며, 예상 대기 시간은 오분이고 예상 요금은 칠십달러입니다
+    33.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: {"provider": "FastCab", "estimated_wait_time": "5 minutes", "estimated
+    34.09s  user  발화 끝
+    41.84s  agent 발화 끝

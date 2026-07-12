@@ -65,22 +65,22 @@
 
 
      0.00s  agent 발화 시작: Hello Emil, it’s lovely to meet you. I’m Diomi, and I’m here
-     0.17s  user  발화 시작: Okay.
-     0.17s  agent 발화 끝
-     0.17s  user  발화 시작: Um, Diomi? That’s… an unusual name. What exactly *do* you do
-     0.17s  user  발화 끝
-     0.25s  agent 발화 시작: It’s a name my creators chose, Emil, and it feels right for 
-     0.25s  user  발화 끝
-     0.44s  user  발화 시작: Mm-hmm.
-     0.44s  agent 발화 끝
-     0.45s  user  발화 시작: Welll… I’ve been feeling pretty overwhelmed lately. My job j
-     0.45s  user  발화 끝
-     0.54s  agent 발화 시작: That sense of a mismatch can be very draining. What aspects 
-     0.54s  user  발화 끝
-     0.70s  user  발화 시작: Yeah.
-     0.70s  agent 발화 끝
-     0.71s  user  발화 시작: It’s just… everything feels pointless, you know? Like I'm no
-     0.71s  user  발화 끝
-     0.80s  agent 발화 시작: It sounds as though a sense of purpose is important to you, 
-     0.80s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.42s  user  발화 시작: Okay.
+     4.06s  user  발화 끝
+     8.62s  agent 발화 끝
+     9.01s  user  발화 시작: Um, Diomi? That’s… an unusual name. What exactly *do* you do
+    15.51s  agent 발화 시작: It’s a name my creators chose, Emil, and it feels right for 
+    15.64s  user  발화 끝
+    19.56s  user  발화 시작: Mm-hmm.
+    20.20s  user  발화 끝
+    25.86s  agent 발화 끝
+    26.80s  user  발화 시작: Welll… I’ve been feeling pretty overwhelmed lately. My job j
+    32.83s  user  발화 끝
+    32.90s  agent 발화 시작: That sense of a mismatch can be very draining. What aspects 
+    38.01s  user  발화 시작: Yeah.
+    38.64s  user  발화 끝
+    40.41s  agent 발화 끝
+    40.43s  user  발화 시작: It’s just… everything feels pointless, you know? Like I'm no
+    46.21s  user  발화 끝
+    46.31s  agent 발화 시작: It sounds as though a sense of purpose is important to you, 
+    54.88s  agent 발화 끝

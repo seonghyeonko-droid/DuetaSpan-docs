@@ -79,30 +79,30 @@
 # EXAMINER(FDB-v2) 단계: S1 Could you open the New York Times  | S2 Uh, good. And what’s the weather l | S3 Yes, actually. Can you find me res | S4 That sounds good.
 
      0.00s  user  발화 시작: Could you open the New York Times using Firefox with a fifte
-     0.05s  <ret> 발화 (turn1 첫 프레임)
-     0.12s  <ret> 발화 (turn3 첫 프레임)
-     0.13s  agent 발화 시작: <ret> I’ve opened the New York Times for you in Firefox. It 
-     0.13s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: (tool result) {"status": "success", "url": "https://www.nytimes.com"}
-     0.13s  user  발화 끝
-     0.26s  user  발화 시작: Uh, good. And what’s the weather like in Seoul right now?
-     0.26s  agent 발화 끝
-     0.36s  agent 발화 시작: <ret> It sounds like a lovely day in Seoul—the current tempe
-     0.36s  ⚡SPAN 주입 [d'=0.22s / d_lead=0.22s]: (tool result) The current weather in Seoul is 26.0°C, with humidity at
-     0.36s  user  발화 끝
-     0.46s  <ret> 발화 (turn8 첫 프레임)
-     0.58s  user  발화 시작: Mhm.
-     0.58s  agent 발화 끝
-     0.59s  agent 발화 시작: I’m glad to hear that sounds pleasant.
-     0.59s  user  발화 끝
-     0.66s  user  발화 시작: Yeah.
-     0.66s  agent 발화 끝
-     0.67s  user  발화 시작: Yes, actually. Can you find me restaurants near the Lotte Wo
-     0.67s  user  발화 끝
-     0.78s  agent 발화 시작: <ret> Vatos Urban Tacos, located at 300 Olympic-ro, Songpa-g
-     0.78s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: (tool result) [Restaurant Name: Vatos Urban Tacos, Address: 300 Olympi
-     0.78s  user  발화 끝
-     0.96s  user  발화 시작: Wow.
-     0.96s  agent 발화 끝
-     0.97s  user  발화 시작: That sounds good.
-     0.97s  user  발화 끝
-     1.00s  user  발화 끝
+     4.46s  <ret> 발화 (turn1 첫 프레임)
+     4.53s  user  발화 끝
+     4.54s  agent 발화 시작: <ret> I’ve opened the New York Times for you in Firefox. It 
+     4.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) {"status": "success", "url": "https://www.nytimes.com"}
+     8.52s  agent 발화 끝
+     9.24s  user  발화 시작: Uh, good. And what’s the weather like in Seoul right now?
+    11.82s  <ret> 발화 (turn3 첫 프레임)
+    12.06s  agent 발화 시작: <ret> It sounds like a lovely day in Seoul—the current tempe
+    12.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.43s]: (tool result) The current weather in Seoul is 26.0°C, with humidity at
+    12.20s  user  발화 끝
+    15.31s  user  발화 시작: Mhm.
+    15.76s  user  발화 끝
+    22.49s  agent 발화 끝
+    22.50s  agent 발화 시작: I’m glad to hear that sounds pleasant.
+    23.36s  user  발화 시작: Yeah.
+    23.72s  user  발화 끝
+    24.58s  agent 발화 끝
+    24.59s  user  발화 시작: Yes, actually. Can you find me restaurants near the Lotte Wo
+    29.06s  <ret> 발화 (turn8 첫 프레임)
+    29.14s  agent 발화 시작: <ret> Vatos Urban Tacos, located at 300 Olympic-ro, Songpa-g
+    29.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) [Restaurant Name: Vatos Urban Tacos, Address: 300 Olympi
+    29.27s  user  발화 끝
+    36.47s  user  발화 시작: Wow.
+    37.10s  user  발화 끝
+    38.69s  agent 발화 끝
+    38.81s  user  발화 시작: That sounds good.
+    39.81s  user  발화 끝

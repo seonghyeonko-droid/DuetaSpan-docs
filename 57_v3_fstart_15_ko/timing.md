@@ -79,30 +79,30 @@
 # EXAMINER(FDB-v2) 단계: S1 요즘 기술 분야에서 무슨 일들이 일어나고 있어? 좀 알려줘. | S2 …어떤 회사들이 앞서나가고 있어? | S3 오픈AI… 그 회사는 뭐하는 데? | S4 아, 챗GPT 말하는 건가? 그거 써봤는데 신기하더라.
 
      0.00s  user  발화 시작: 요즘 기술 분야에서 무슨 일들이 일어나고 있어? 좀 알려줘.
-     0.01s  <ret> 발화 (turn1 첫 프레임)
-     0.07s  <ret> 발화 (turn4 첫 프레임)
-     0.09s  agent 발화 시작: <ret> 요즘 기술 분야에서는 인공지능, 특히 생성형 모델의 발전이 가장 큰 화두이고, 양자 컴퓨팅과 지속
-     0.09s  ⚡SPAN 주입 [d'=0.21s / d_lead=0.21s]: (tool result) Recent advancements in AI, particularly generative model
-     0.09s  user  발화 끝
-     0.25s  <ret> 발화 (turn7 첫 프레임)
-     0.31s  user  발화 시작: 음… 인공지능이 그렇게 중요해?…
-     0.31s  agent 발화 끝
-     0.35s  user  발화 시작: …어떤 회사들이 앞서나가고 있어?
-     0.35s  user  발화 끝
-     0.39s  agent 발화 시작: <ret> 구글의 딥마인드, 오픈AI, 메타가 인공지능 연구와 개발을 선도하고 있고, 대규모 언어 모델과 머
-     0.39s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) Google’s DeepMind, OpenAI, and Meta are leading AI resea
-     0.39s  user  발화 끝
-     0.59s  user  발화 시작: 어.
-     0.59s  agent 발화 끝
-     0.60s  user  발화 시작: 오픈AI… 그 회사는 뭐하는 데?
-     0.60s  user  발화 끝
-     0.65s  agent 발화 시작: <ret> 오픈AI는 지 피 티 사, DALL-E, ChatGPT 같은 모델을 개발하는 인공지능 연구 및 개
-     0.65s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: OpenAI is an artificial intelligence research and deployment company, 
-     0.65s  user  발화 끝
-     0.81s  user  발화 시작: 그치.
-     0.81s  agent 발화 끝
-     0.82s  user  발화 시작: 아, 챗GPT 말하는 건가? 그거 써봤는데 신기하더라.
-     0.82s  user  발화 끝
-     0.89s  agent 발화 시작: 챗GPT는 정말 놀랍죠. 혹시 다른 기술 분야에 대해서도 궁금한 점이 있으세요?
-     0.89s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.94s  <ret> 발화 (turn1 첫 프레임)
+     4.02s  agent 발화 시작: <ret> 요즘 기술 분야에서는 인공지능, 특히 생성형 모델의 발전이 가장 큰 화두이고, 양자 컴퓨팅과 지속
+     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.87s]: (tool result) Recent advancements in AI, particularly generative model
+     4.02s  user  발화 끝
+    13.82s  user  발화 시작: 음… 인공지능이 그렇게 중요해?…
+    13.89s  agent 발화 끝
+    16.27s  user  발화 끝
+    17.38s  user  발화 시작: …어떤 회사들이 앞서나가고 있어?
+    19.00s  <ret> 발화 (turn4 첫 프레임)
+    19.39s  agent 발화 시작: <ret> 구글의 딥마인드, 오픈AI, 메타가 인공지능 연구와 개발을 선도하고 있고, 대규모 언어 모델과 머
+    19.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) Google’s DeepMind, OpenAI, and Meta are leading AI resea
+    19.55s  user  발화 끝
+    22.89s  user  발화 시작: 어.
+    23.62s  user  발화 끝
+    29.68s  agent 발화 끝
+    30.07s  user  발화 시작: 오픈AI… 그 회사는 뭐하는 데?
+    32.11s  <ret> 발화 (turn7 첫 프레임)
+    32.51s  agent 발화 시작: <ret> 오픈AI는 지 피 티 사, DALL-E, ChatGPT 같은 모델을 개발하는 인공지능 연구 및 개
+    32.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: OpenAI is an artificial intelligence research and deployment company, 
+    32.66s  user  발화 끝
+    36.15s  user  발화 시작: 그치.
+    36.88s  user  발화 끝
+    39.79s  agent 발화 끝
+    41.14s  user  발화 시작: 아, 챗GPT 말하는 건가? 그거 써봤는데 신기하더라.
+    44.70s  user  발화 끝
+    45.01s  agent 발화 시작: 챗GPT는 정말 놀랍죠. 혹시 다른 기술 분야에 대해서도 궁금한 점이 있으세요?
+    49.83s  agent 발화 끝

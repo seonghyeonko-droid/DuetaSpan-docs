@@ -53,38 +53,38 @@
 # EXAMINER(FDB-v2) 단계: S1 프라 씨, 카마시아하고 첼론이라는 꽃이 둘 다 북미 자생종이에 | S2 잠깐만요, 첼론이 플로리다에도 있어요? | S3 …플로리다는 좀 의외인데요. 첼론은 습지에서 자라는 꽃이잖아요 | S4 아, 파란색 꽃이 피는군요. 보기 예쁠 것 같아요.
 
      0.00s  user  발화 시작: 프라 씨, 카마시아하고 첼론이라는 꽃이 둘 다 북미 자생종이에요?
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.08s  agent 발화 시작: 북미 자생종인지 궁금하시군요. 두 꽃 모두 북미가 원산지입니다.
-     0.08s  user  발화 끝
-     0.14s  user  발화 시작: 음.
-     0.14s  agent 발화 끝
-     0.15s  user  발화 시작: 음, 그렇군요. 근데 카마시아는 좀 더 흔하게 보이던데, 첼론은 잘 안 보이는 것 같아요.
-     0.15s  user  발화 끝
-     0.27s  agent 발화 시작: <ret> 카마시아는 브리티시컬럼비아부터 캘리포니아, 그리고 로키산맥 동쪽까지 서부 북미에 널리 분포하고, 
-     0.27s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.16s]: Camassia quamash is widespread across western North America, from Brit
-     0.27s  user  발화 끝
-     0.43s  user  발화 시작: 음.
-     0.43s  agent 발화 끝
-     0.44s  user  발화 시작: 잠깐만요, 첼론이 플로리다에도 있어요?
-     0.44s  user  발화 끝
-     0.44s  <ret> 발화 (turn13 첫 프레임)
-     0.47s  agent 발화 시작: 첼론이 플로리다에도 분포한다고 말씀드렸는데—
-     0.47s  user  발화 끝
-     0.48s  <ret> 발화 (turn9 첫 프레임)
-     0.50s  user  발화 시작: …플로리다는 좀 의외인데요. 첼론은 습지에서 자라는 꽃이잖아요.
-     0.50s  agent 발화 끝
-     0.56s  agent 발화 시작: <ret> 맞아요, 첼론은 습지에서 자라는 꽃입니다. 플로리다의 습한 지역에서 발견되죠.
-     0.56s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Chelone glabra, commonly known as turtlehead, is a perennial plant tha
-     0.56s  user  발화 끝
-     0.64s  agent 발화 시작: 첼론, 흔히 거북머리라고도 불리는 이 식물은 습지, 늪, 개울가, 연못과 같은 습한 서식지에서 자라는 다년생
-     0.64s  agent 발화 끝
-     0.77s  user  발화 시작: 어.
-     0.77s  agent 발화 끝
-     0.78s  user  발화 시작: 거북머리라니, 재밌는 이름이네요. 카마시아는 어떤 종류의 꽃이에요?
-     0.78s  user  발화 끝
-     0.84s  agent 발화 시작: <ret> 카마시아는 풀과 같은 잎과 푸른색에서 보라색 꽃이 피는 다년생 구근 식물입니다.
-     0.84s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Camassia quamash is a perennial bulbous herb with grass-like leaves an
-     0.84s  user  발화 끝
-     0.93s  user  발화 시작: 아, 파란색 꽃이 피는군요. 보기 예쁠 것 같아요.
-     0.93s  agent 발화 끝
-     1.00s  user  발화 끝
+     4.25s  user  발화 끝
+     4.43s  agent 발화 시작: 북미 자생종인지 궁금하시군요. 두 꽃 모두 북미가 원산지입니다.
+     5.86s  user  발화 시작: 음.
+     6.36s  user  발화 끝
+     9.15s  agent 발화 끝
+    10.16s  user  발화 시작: 음, 그렇군요. 근데 카마시아는 좀 더 흔하게 보이던데, 첼론은 잘 안 보이는 것 같아요.
+    15.21s  <ret> 발화 (turn4 첫 프레임)
+    15.44s  user  발화 끝
+    15.60s  agent 발화 시작: <ret> 카마시아는 브리티시컬럼비아부터 캘리포니아, 그리고 로키산맥 동쪽까지 서부 북미에 널리 분포하고, 
+    15.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: Camassia quamash is widespread across western North America, from Brit
+    24.12s  user  발화 시작: 음.
+    24.47s  user  발화 끝
+    28.54s  user  발화 시작: 잠깐만요, 첼론이 플로리다에도 있어요?
+    28.54s  agent 발화 끝
+    31.26s  user  발화 끝
+    31.28s  agent 발화 시작: 첼론이 플로리다에도 분포한다고 말씀드렸는데—
+    33.66s  user  발화 시작: …플로리다는 좀 의외인데요. 첼론은 습지에서 자라는 꽃이잖아요.
+    34.42s  agent 발화 끝
+    37.85s  <ret> 발화 (turn9 첫 프레임)
+    37.86s  user  발화 끝
+    38.01s  agent 발화 시작: <ret> 맞아요, 첼론은 습지에서 자라는 꽃입니다. 플로리다의 습한 지역에서 발견되죠.
+    38.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: Chelone glabra, commonly known as turtlehead, is a perennial plant tha
+    43.55s  agent 발화 시작: 첼론, 흔히 거북머리라고도 불리는 이 식물은 습지, 늪, 개울가, 연못과 같은 습한 서식지에서 자라는 다년생
+    43.70s  agent 발화 끝
+    47.42s  user  발화 시작: 어.
+    47.82s  user  발화 끝
+    52.50s  agent 발화 끝
+    52.50s  user  발화 시작: 거북머리라니, 재밌는 이름이네요. 카마시아는 어떤 종류의 꽃이에요?
+    56.65s  <ret> 발화 (turn13 첫 프레임)
+    57.04s  user  발화 끝
+    57.04s  agent 발화 시작: <ret> 카마시아는 풀과 같은 잎과 푸른색에서 보라색 꽃이 피는 다년생 구근 식물입니다.
+    57.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: Camassia quamash is a perennial bulbous herb with grass-like leaves an
+    62.83s  agent 발화 끝
+    63.64s  user  발화 시작: 아, 파란색 꽃이 피는군요. 보기 예쁠 것 같아요.
+    66.73s  user  발화 끝

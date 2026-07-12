@@ -78,20 +78,20 @@
 
 
      0.00s  user  발화 시작: 로마 문명이 왜 멸망했는지 궁금해.
-     0.13s  agent 발화 시작: 로마 문명의 멸망 원인은 아직 명확하게 밝혀지지 않았어요.
-     0.13s  user  발화 끝
-     0.34s  user  발화 시작: 네.
-     0.34s  agent 발화 끝
-     0.37s  user  발화 시작: 아, 그렇군요. 그럼 요즘 날씨는 어때요?
-     0.37s  user  발화 끝
-     0.45s  <ret> 발화 (turn4 첫 프레임)
-     0.53s  agent 발화 시작: <ret> 지금 서울은 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터예요.
-     0.53s  ⚡SPAN 주입 [d'=0.26s / d_lead=0.26s]: (tool result) {"city": "Seoul", "temperature": "28.0°C", "humidity": "
-     0.53s  user  발화 끝
-     0.79s  user  발화 시작: 정말요?
-     0.79s  agent 발화 끝
-     0.82s  user  발화 시작: 꽤 덥네요.
-     0.82s  user  발화 끝
-     0.87s  agent 발화 시작: 네, 정말 덥죠. 더위 조심하시고요.
-     0.87s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.31s  user  발화 끝
+     2.39s  agent 발화 시작: 로마 문명의 멸망 원인은 아직 명확하게 밝혀지지 않았어요.
+     4.40s  user  발화 시작: 네.
+     4.70s  user  발화 끝
+     5.76s  agent 발화 끝
+     5.80s  user  발화 시작: 아, 그렇군요. 그럼 요즘 날씨는 어때요?
+     8.64s  <ret> 발화 (turn4 첫 프레임)
+     8.72s  agent 발화 시작: <ret> 지금 서울은 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터예요.
+     8.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) {"city": "Seoul", "temperature": "28.0°C", "humidity": "
+     8.89s  user  발화 끝
+    11.21s  user  발화 시작: 정말요?
+    12.02s  user  발화 끝
+    14.04s  agent 발화 끝
+    15.55s  user  발화 시작: 꽤 덥네요.
+    16.70s  user  발화 끝
+    16.97s  agent 발화 시작: 네, 정말 덥죠. 더위 조심하시고요.
+    19.27s  agent 발화 끝

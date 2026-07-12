@@ -74,52 +74,52 @@
 # EXAMINER(FDB-v2) 단계: S1 I want to watch a suspenseful thri | S2 Oh, "Se7en"—I’ve heard good things | S3 Actually, while we're at it, could | S4 Okay, well, I’ll adjust my plans. 
 
      0.00s  user  발화 시작: I want to watch a suspenseful thriller.
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.03s  agent 발화 시작: <ret> There are a few options. "The Silent Patient" came out
-     0.03s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) {"movies": [{"title": "The Silent Patient", "year": 2019
-     0.03s  user  발화 끝
-     0.05s  <ret> 발화 (turn6 첫 프레임)
-     0.11s  user  발화 시작: Uh-huh.
-     0.11s  agent 발화 끝
-     0.11s  user  발화 시작: Hmm, 2019 feels a bit recent. What about something older, ma
-     0.11s  user  발화 끝
-     0.18s  agent 발화 시작: <ret> "Se7en" from 1995 has an 8.6 rating, a really strong f
-     0.18s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: (tool result) {"movies": [{"title": "The Game", "year": 1997, "rating"
-     0.18s  user  발화 끝
-     0.22s  user  발화 시작: Oh, "Se7en"—I’ve heard good things about that one. Is it ava
-     0.22s  agent 발화 끝
-     0.29s  agent 발화 시작: <ret> It's currently on Max, or you can rent or buy it on Ap
-     0.29s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Currently, "Se7en" (1995) is available to stream on Max 
-     0.29s  user  발화 끝
-     0.36s  user  발화 시작: Yeah, yeah.
-     0.36s  agent 발화 끝
-     0.37s  user  발화 시작: Max, okay. I think I have a subscription there. Thanks, that
-     0.37s  user  발화 끝
-     0.43s  agent 발화 시작: [happy] I’m so glad I could assist you with finding a film! 
-     0.43s  user  발화 끝
-     0.52s  user  발화 시작: Yeah.
-     0.52s  agent 발화 끝
-     0.53s  <ret> 발화 (turn12 첫 프레임)
-     0.53s  user  발화 시작: Actually, while we're at it, could you remind me what time m
-     0.53s  user  발화 끝
-     0.61s  agent 발화 시작: <ret> Your appointment with Dr. Lee is tomorrow, July eleven
-     0.61s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: You have an appointment with Dr. Lee tomorrow, July 11, 2026, at 10:00
-     0.61s  user  발화 끝
-     0.67s  user  발화 시작: Yeah.
-     0.67s  agent 발화 끝
-     0.68s  user  발화 시작: July eleventh… that’s really early. I thought it was later.
-     0.68s  user  발화 끝
-     0.72s  agent 발화 시작: Sometimes schedules can be tricky to keep straight. It's goo
-     0.72s  user  발화 끝
-     0.78s  user  발화 시작: Okay, well, I’ll adjust my plans. Thanks again for everythin
-     0.78s  agent 발화 끝
-     0.82s  agent 발화 시작: You’re very welcome. I hope you enjoy "Se7en", and that your
-     0.82s  user  발화 끝
-     0.92s  user  발화 시작: Uh-huh.
-     0.92s  agent 발화 끝
-     0.92s  user  발화 시작: I will. I think I need it.
-     0.92s  user  발화 끝
-     0.95s  agent 발화 시작: [curious] Self-care is so important, especially when you’re 
-     0.95s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.03s  <ret> 발화 (turn1 첫 프레임)
+     2.35s  agent 발화 시작: <ret> There are a few options. "The Silent Patient" came out
+     2.35s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.46s]: (tool result) {"movies": [{"title": "The Silent Patient", "year": 2019
+     2.45s  user  발화 끝
+     5.86s  user  발화 시작: Uh-huh.
+     6.30s  user  발화 끝
+     9.81s  agent 발화 끝
+    10.59s  user  발화 시작: Hmm, 2019 feels a bit recent. What about something older, ma
+    16.27s  <ret> 발화 (turn4 첫 프레임)
+    16.50s  agent 발화 시작: <ret> "Se7en" from 1995 has an 8.6 rating, a really strong f
+    16.51s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.25s]: (tool result) {"movies": [{"title": "The Game", "year": 1997, "rating"
+    16.61s  user  발화 끝
+    22.75s  agent 발화 끝
+    23.16s  user  발화 시작: Oh, "Se7en"—I’ve heard good things about that one. Is it ava
+    28.38s  <ret> 발화 (turn6 첫 프레임)
+    28.46s  agent 발화 시작: <ret> It's currently on Max, or you can rent or buy it on Ap
+    28.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Currently, "Se7en" (1995) is available to stream on Max 
+    28.63s  user  발화 끝
+    32.76s  user  발화 시작: Yeah, yeah.
+    33.72s  user  발화 끝
+    34.99s  agent 발화 끝
+    36.61s  user  발화 시작: Max, okay. I think I have a subscription there. Thanks, that
+    40.88s  agent 발화 시작: [happy] I’m so glad I could assist you with finding a film! 
+    41.01s  user  발화 끝
+    44.51s  user  발화 시작: Yeah.
+    45.01s  user  발화 끝
+    47.13s  agent 발화 끝
+    47.39s  user  발화 시작: Actually, while we're at it, could you remind me what time m
+    52.18s  <ret> 발화 (turn12 첫 프레임)
+    52.25s  agent 발화 시작: <ret> Your appointment with Dr. Lee is tomorrow, July eleven
+    52.25s  user  발화 끝
+    52.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: You have an appointment with Dr. Lee tomorrow, July 11, 2026, at 10:00
+    55.25s  user  발화 시작: Yeah.
+    55.75s  user  발화 끝
+    57.58s  user  발화 시작: July eleventh… that’s really early. I thought it was later.
+    57.62s  agent 발화 끝
+    61.09s  user  발화 끝
+    61.15s  agent 발화 시작: Sometimes schedules can be tricky to keep straight. It's goo
+    65.82s  agent 발화 끝
+    66.27s  user  발화 시작: Okay, well, I’ll adjust my plans. Thanks again for everythin
+    69.64s  user  발화 끝
+    70.22s  agent 발화 시작: You’re very welcome. I hope you enjoy "Se7en", and that your
+    74.11s  user  발화 시작: Uh-huh.
+    74.58s  user  발화 끝
+    78.47s  agent 발화 끝
+    78.47s  user  발화 시작: I will. I think I need it.
+    80.44s  agent 발화 시작: [curious] Self-care is so important, especially when you’re 
+    80.46s  user  발화 끝
+    84.75s  agent 발화 끝

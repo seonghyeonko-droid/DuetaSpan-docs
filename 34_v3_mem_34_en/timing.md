@@ -69,38 +69,38 @@
 # EXAMINER(FDB-v2) 단계: S1 Uh, well, I need to get to a new a | S2 It’s at 18 Avenue de la Bourdonnai | S3 …is there usually a lot of traffic | S4 That’s true. Thanks, Maon.
 
      0.00s  agent 발화 시작: Hi Ethan, I’m Maon. It’s lovely to meet you.
-     0.06s  user  발화 시작: Uh, well, I need to get to a new apartment I saw. Can you he
-     0.06s  agent 발화 끝
-     0.06s  <ret> 발화 (turn7 첫 프레임)
-     0.09s  <ret> 발화 (turn2 첫 프레임)
-     0.17s  agent 발화 시작: <ret> I recall you were apartment hunting downtown, and I ca
-     0.17s  ⚡SPAN 주입 [d'=0.12s / d_lead=0.12s]: [2026-04-06] Past chat — Apartment hunting downtown: wanted a pet-frie
-     0.17s  user  발화 끝
-     0.29s  user  발화 시작: Uh-huh.
-     0.29s  agent 발화 끝
-     0.30s  user  발화 시작: Yes, that’s right. I’m at 24 Rue du Faubourg Saint-Antoine.
-     0.30s  user  발화 끝
-     0.36s  agent 발화 시작: Perfect. And where are you hoping to go today?
-     0.36s  user  발화 끝
-     0.38s  <ret> 발화 (turn9 첫 프레임)
-     0.42s  user  발화 시작: It’s at 18 Avenue de la Bourdonnais.
-     0.42s  agent 발화 끝
-     0.46s  agent 발화 시작: <ret> The quickest route is about six point two kilometers, 
-     0.46s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"routes": [{"legs": [{"distance": {"text": "6.2 km", "v
-     0.46s  user  발화 끝
-     0.56s  user  발화 시작: …is there usually a lot of traffic on that route?
-     0.56s  agent 발화 끝
-     0.62s  agent 발화 시작: <ret> That’s a very practical question, Ethan. Let me check 
-     0.62s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) {"routes": [{"legs": [{"distance": {"text": "6.2 km", "v
-     0.62s  user  발화 끝
-     0.71s  agent 발화 시작: With current traffic, it looks like the journey will take ar
-     0.71s  agent 발화 끝
-     0.79s  user  발화 시작: Mhm.
-     0.79s  agent 발화 끝
-     0.80s  agent 발화 시작: It’s good to be prepared, isn’t it? Knowing what to expect c
-     0.80s  user  발화 끝
-     0.90s  user  발화 시작: That’s true. Thanks, Maon.
-     0.90s  agent 발화 끝
-     0.93s  agent 발화 시작: You’re very welcome, Ethan. Remember, even small steps forwa
-     0.93s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.63s  agent 발화 끝
+     2.67s  user  발화 시작: Uh, well, I need to get to a new apartment I saw. Can you he
+     6.79s  <ret> 발화 (turn2 첫 프레임)
+     6.86s  agent 발화 시작: <ret> I recall you were apartment hunting downtown, and I ca
+     6.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: [2026-04-06] Past chat — Apartment hunting downtown: wanted a pet-frie
+     6.93s  user  발화 끝
+    10.60s  user  발화 시작: Uh-huh.
+    11.24s  user  발화 끝
+    13.77s  user  발화 시작: Yes, that’s right. I’m at 24 Rue du Faubourg Saint-Antoine.
+    14.14s  agent 발화 끝
+    17.93s  user  발화 끝
+    18.29s  agent 발화 시작: Perfect. And where are you hoping to go today?
+    21.99s  agent 발화 끝
+    22.45s  user  발화 시작: It’s at 18 Avenue de la Bourdonnais.
+    25.04s  user  발화 끝
+    25.07s  <ret> 발화 (turn7 첫 프레임)
+    25.23s  agent 발화 시작: <ret> The quickest route is about six point two kilometers, 
+    25.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) {"routes": [{"legs": [{"distance": {"text": "6.2 km", "v
+    30.66s  user  발화 시작: …is there usually a lot of traffic on that route?
+    31.35s  agent 발화 끝
+    33.46s  <ret> 발화 (turn9 첫 프레임)
+    33.86s  agent 발화 시작: <ret> That’s a very practical question, Ethan. Let me check 
+    33.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.63s]: (tool result) {"routes": [{"legs": [{"distance": {"text": "6.2 km", "v
+    33.90s  user  발화 끝
+    38.30s  agent 발화 시작: With current traffic, it looks like the journey will take ar
+    38.49s  agent 발화 끝
+    41.46s  user  발화 시작: Mhm.
+    41.91s  user  발화 끝
+    42.86s  agent 발화 시작: It’s good to be prepared, isn’t it? Knowing what to expect c
+    42.98s  agent 발화 끝
+    47.53s  agent 발화 끝
+    47.92s  user  발화 시작: That’s true. Thanks, Maon.
+    50.00s  agent 발화 시작: You’re very welcome, Ethan. Remember, even small steps forwa
+    50.23s  user  발화 끝
+    55.19s  agent 발화 끝

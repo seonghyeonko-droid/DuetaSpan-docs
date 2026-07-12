@@ -77,14 +77,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi ⟨ret@0.00s⟩ Kal, do you know when the World Cup was last held in the UK?
-[  0.11s][moshi] ⟦⚡SPAN@0.11s: The United Kingdom hosted the FIFA World Cup tournament once, in the year 1966.⟧ Well, that’s a great question! The UK last hosted the FIFA World Cup way back in 1966. It was a really exciting time for football fans!
-[  0.30s][user ] Oh, ⟨ret@0.07s⟩ right.
-[  0.31s][moshi] ⟦⚡SPAN IRRELEVANT@0.31s: The average high temperature in Reykjavik, Iceland in February is -1.8°C, with an average low of -4.3°C.⟧ It’s amazing how long ago that was, isn’t it? That tournament really put English football on the map.
-[  0.45s][moshi] Speaking of big events, are you working towards any personal goals right now? — I find focusing on something can really help with motivation.
-[  0.62s][user ] «backchannel» Yeah.
-[  0.63s][user ] I am, actually. I’m studying for my exams.
-[  0.69s][moshi] That's fantastic! Exams can be tough, but you've got this. Remember to break down your studying into smaller chunks.
-[  0.82s][user ] «backchannel» Uh-huh.
-[  0.83s][user ] That’s a good idea, thanks.
-[  0.87s][moshi] You’re very welcome! I’m always here to help you stay on track and feel confident about your studies.
+[  0.00s][user ] Hi Kal, do you know when the World Cup was last held in the ⟨ret@3.97s⟩ UK?
+[  4.20s][moshi] ⟦⚡SPAN@4.21s: The United Kingdom hosted the FIFA World Cup tournament once, in the year 1966.⟧ Well, that’s a great question! The UK last hosted the FIFA World Cup way back in 1966. It was a really exciting time for football fans!
+[ 13.74s][user ] Oh, ⟨ret@14.20s⟩ right.
+[ 14.59s][moshi] ⟦⚡SPAN IRRELEVANT@14.60s: The average high temperature in Reykjavik, Iceland in February is -1.8°C, with an average low of -4.3°C.⟧ It’s amazing how long ago that was, isn’t it? That tournament really put English football on the map.
+[ 20.05s][moshi] Speaking of big events, are you working towards any personal goals right now? — I find focusing on something can really help with motivation.
+[ 22.73s][user ] «backchannel» Yeah.
+[ 28.41s][user ] I am, actually. I’m studying for my exams.
+[ 32.05s][moshi] That's fantastic! Exams can be tough, but you've got this. Remember to break down your studying into smaller chunks.
+[ 35.03s][user ] «backchannel» Uh-huh.
+[ 39.54s][user ] That’s a good idea, thanks.
+[ 41.49s][moshi] You’re very welcome! I’m always here to help you stay on track and feel confident about your studies.

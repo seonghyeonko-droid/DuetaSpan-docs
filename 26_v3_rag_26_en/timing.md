@@ -68,18 +68,18 @@
 
 
      0.00s  user  발화 시작: Oh, um, I was just wondering… who plays Professor Snape in t
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.19s  agent 발화 시작: <ret> That would be Alan Sidney Patrick Rickman, he was well
-     0.19s  ⚡SPAN 주입 [d'=0.27s / d_lead=0.27s]: Alan Sidney Patrick Rickman was an English actor and director known fo
-     0.19s  user  발화 끝
-     0.38s  <ret> 발화 (turn4 첫 프레임)
-     0.46s  user  발화 시작: Yeah.
-     0.46s  agent 발화 끝
-     0.47s  user  발화 시작: Yes, it really is! Actually, what time is it right now?
-     0.47s  user  발화 끝
-     0.62s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
-     0.62s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.32s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-     0.62s  user  발화 끝
-     0.94s  user  발화 시작: That's right. Thank you, Lial.
-     0.94s  agent 발화 끝
-     1.00s  user  발화 끝
+     6.33s  <ret> 발화 (turn1 첫 프레임)
+     6.49s  user  발화 끝
+     6.56s  agent 발화 시작: <ret> That would be Alan Sidney Patrick Rickman, he was well
+     6.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: Alan Sidney Patrick Rickman was an English actor and director known fo
+     9.31s  user  발화 시작: Yeah.
+     9.66s  user  발화 끝
+    13.04s  agent 발화 끝
+    15.21s  user  발화 시작: Yes, it really is! Actually, what time is it right now?
+    19.59s  <ret> 발화 (turn4 첫 프레임)
+    19.74s  user  발화 끝
+    19.82s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
+    19.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+    29.32s  agent 발화 끝
+    30.30s  user  발화 시작: That's right. Thank you, Lial.
+    32.28s  user  발화 끝

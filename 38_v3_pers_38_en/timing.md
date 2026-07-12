@@ -60,20 +60,20 @@
 
 
      0.00s  agent 발화 시작: Hello Morgan, it’s lovely to connect with you. I'm Elaen.
-     0.07s  user  발화 시작: I’m just feeling completely overwhelmed lately, to be honest
-     0.07s  agent 발화 끝
-     0.13s  agent 발화 시작: It’s understandable to feel that way, Morgan. Overwhelm is s
-     0.13s  user  발화 끝
-     0.27s  user  발화 시작: Yeah.
-     0.27s  agent 발화 끝
-     0.28s  agent 발화 시작: Often, when things feel chaotic, it’s helpful to identify on
-     0.28s  user  발화 끝
-     0.47s  user  발화 시작: But there are *so* many things! I don't even know where to b
-     0.47s  agent 발화 끝
-     0.56s  agent 발화 시작: That’s a very valid feeling. It sounds like you're caught in
-     0.56s  user  발화 끝
-     0.75s  user  발화 시작: I guess... maybe. I just feel like I'm constantly playing ca
-     0.75s  agent 발화 끝
-     0.83s  agent 발화 시작: It's okay to feel like you’re playing catch-up, Morgan. It's
-     0.83s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.70s  agent 발화 끝
+     3.96s  user  발화 시작: I’m just feeling completely overwhelmed lately, to be honest
+     7.28s  agent 발화 시작: It’s understandable to feel that way, Morgan. Overwhelm is s
+     7.34s  user  발화 끝
+    10.11s  user  발화 시작: Yeah.
+    10.66s  user  발화 끝
+    16.14s  agent 발화 시작: Often, when things feel chaotic, it’s helpful to identify on
+    16.18s  agent 발화 끝
+    25.42s  user  발화 시작: But there are *so* many things! I don't even know where to b
+    26.15s  agent 발화 끝
+    29.72s  user  발화 끝
+    29.90s  agent 발화 시작: That’s a very valid feeling. It sounds like you're caught in
+    39.60s  user  발화 시작: I guess... maybe. I just feel like I'm constantly playing ca
+    39.68s  agent 발화 끝
+    43.77s  user  발화 끝
+    43.85s  agent 발화 시작: It's okay to feel like you’re playing catch-up, Morgan. It's
+    53.21s  agent 발화 끝

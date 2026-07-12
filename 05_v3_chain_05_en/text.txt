@@ -72,16 +72,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's ⟨ret@0.00s⟩ the biking route from Peking University to the Summer Palace?
-[  0.08s][moshi] ⟦⚡SPAN@0.08s: (tool result) {"distance": 11.2, "duration": 45.3, "route": "https://maps.google.com/?cid=18146499988110321102⟧ The biking route is eleven point two kilometers, taking about forty-five and a half minutes. You can find a detailed map here: https://maps.google.com/?cid=18146499988110321102.
+[  0.00s][user ] What's the biking route from Peking University to the Summer Palace?
+[  3.63s][moshi] ⟨ret@3.39s⟩ ⟦⚡SPAN@3.63s: (tool result) {"distance": 11.2, "duration": 45.3, "route": "https://maps.google.com/?cid=18146499988110321102⟧ The biking route is eleven point two kilometers, taking about forty-five and a half minutes. You can find a detailed map here: https://maps.google.com/?cid=18146499988110321102.
       CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Peking University", "destination": "Summer Palace"}}
-[  0.26s][user ] «backchannel» Yeah.
-[  0.27s][user ] Uh, ⟨ret@0.26s⟩ and what’s the weather like there right now?
-[  0.34s][moshi] ⟦⚡SPAN@0.34s: (tool result) {"temperature": 32.5, "humidity": 68, "wind": 7.2, "condition": "Sunny"}⟧ It’s currently thirty-two point five degrees Celsius and sunny at the Summer Palace, with sixty-eight percent humidity. The wind is blowing at seven point two kilometers per hour.
+[  8.02s][user ] «backchannel» Yeah.
+[ 17.06s][user ] Uh, and what’s the weather like there ⟨ret@18.89s⟩ right now?
+[ 19.12s][moshi] ⟦⚡SPAN@19.12s: (tool result) {"temperature": 32.5, "humidity": 68, "wind": 7.2, "condition": "Sunny"}⟧ It’s currently thirty-two point five degrees Celsius and sunny at the Summer Palace, with sixty-eight percent humidity. The wind is blowing at seven point two kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Summer Palace"}}
-[  0.55s][user ] «backchannel» Yeah.
-[  0.56s][user ] That sounds…nice. Can you find me some restaurants near the Summer Palace?
-[  0.65s][moshi] «interrupted» Finding restaurants is something I can definitely help with—
-[  0.72s][user ] «interrupts_prev» …Italian? ⟨ret@0.33s⟩
-[  0.73s][moshi] ⟦⚡SPAN@0.73s: (tool result) [{"name": "Pizza Saporita", "rating": 4.5, "price": "¥150-300"}, {"name": "Bella Italia", "ratin⟧ There's Pizza Saporita, rated four point five stars with prices from one hundred fifty to three hundred yuan. Bella Italia is another option, rated four point two stars, costing one hundred to two hundred fifty yuan.
+[ 23.70s][user ] «backchannel» Yeah.
+[ 31.26s][user ] That sounds…nice. Can you find me some restaurants near the Summer Palace?
+[ 35.97s][moshi] «interrupted» Finding restaurants is something I can definitely help with—
+[ 38.81s][user ] «interrupts_prev» …Italian? ⟨ret@39.25s⟩
+[ 39.49s][moshi] ⟦⚡SPAN@39.49s: (tool result) [{"name": "Pizza Saporita", "rating": 4.5, "price": "¥150-300"}, {"name": "Bella Italia", "ratin⟧ There's Pizza Saporita, rated four point five stars with prices from one hundred fifty to three hundred yuan. Bella Italia is another option, rated four point two stars, costing one hundred to two hundred fifty yuan.
       CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Summer Palace", "cuisine": "Italian"}}

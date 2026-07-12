@@ -79,28 +79,28 @@
 # EXAMINER(FDB-v2) 단계: S1 안녕하세요. 혹시 메릴랜드 주를 세운 사람에 대해 아세요? | S2 그럼 그 사람의 출생 연도는 언제예요? | S3 … 그분이 영국 귀족이었던 건 알고 있는데… | S4 …그 식민지를 세우게 된 특별한 이유가 있었나요?
 
      0.00s  user  발화 시작: 안녕하세요. 혹시 메릴랜드 주를 세운 사람에 대해 아세요?
-     0.10s  agent 발화 시작: 안녕하세요. 어떤 분에 대해 궁금하신가요? 도와드릴 수 있을 것 같아요.
-     0.10s  user  발화 끝
-     0.12s  <ret> 발화 (turn3 첫 프레임)
-     0.22s  user  발화 시작: 메릴랜드 주를 세운 사람 말이에요.
-     0.22s  agent 발화 끝
-     0.28s  agent 발화 시작: <ret> 메릴랜드 식민지를 세운 사람은 세실 칼버트 두대 볼티모어 남작으로, 천육백삼십이년에 식민지 헌장을
-     0.28s  ⚡SPAN 주입 [d'=0.18s / d_lead=0.18s]: Cecil Calvert, 2nd Baron Baltimore, was granted the charter for the Pr
-     0.28s  user  발화 끝
-     0.38s  <ret> 발화 (turn6 첫 프레임)
-     0.46s  user  발화 시작: 음.
-     0.46s  agent 발화 끝
-     0.47s  user  발화 시작: 그럼 그 사람의 출생 연도는 언제예요?
-     0.47s  user  발화 끝
-     0.54s  agent 발화 시작: <ret> 세실 칼버트는 천육백오년 팔월 팔일에 영국에서 태어났습니다—
-     0.54s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Cecil Calvert was born on August 8, 1605, in England.
-     0.54s  user  발화 끝
-     0.63s  user  발화 시작: … 그분이 영국 귀족이었던 건 알고 있는데…
-     0.63s  agent 발화 끝
-     0.64s  <ret> 발화 (turn9 첫 프레임)
-     0.71s  user  발화 시작: …그 식민지를 세우게 된 특별한 이유가 있었나요?
-     0.71s  user  발화 끝
-     0.80s  agent 발화 시작: <ret> 메릴랜드는 천육백삼십사년에 잉글랜드에서 박해를 받던 잉글랜드 가톨릭 신자들을 위한 피난처로 세실 
-     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: Maryland was established in 1634 as a haven for English Catholics, who
-     0.80s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.67s  user  발화 끝
+     4.85s  agent 발화 시작: 안녕하세요. 어떤 분에 대해 궁금하신가요? 도와드릴 수 있을 것 같아요.
+     8.79s  user  발화 시작: 메릴랜드 주를 세운 사람 말이에요.
+     8.92s  agent 발화 끝
+    10.67s  <ret> 발화 (turn3 첫 프레임)
+    10.83s  agent 발화 시작: <ret> 메릴랜드 식민지를 세운 사람은 세실 칼버트 두대 볼티모어 남작으로, 천육백삼십이년에 식민지 헌장을
+    10.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.45s]: Cecil Calvert, 2nd Baron Baltimore, was granted the charter for the Pr
+    10.91s  user  발화 끝
+    14.34s  user  발화 시작: 음.
+    14.84s  user  발화 끝
+    18.29s  agent 발화 끝
+    18.49s  user  발화 시작: 그럼 그 사람의 출생 연도는 언제예요?
+    20.73s  <ret> 발화 (turn6 첫 프레임)
+    20.80s  agent 발화 시작: <ret> 세실 칼버트는 천육백오년 팔월 팔일에 영국에서 태어났습니다—
+    20.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.55s]: Cecil Calvert was born on August 8, 1605, in England.
+    20.99s  user  발화 끝
+    24.36s  agent 발화 끝
+    24.46s  user  발화 시작: … 그분이 영국 귀족이었던 건 알고 있는데…
+    27.50s  user  발화 끝
+    29.17s  user  발화 시작: …그 식민지를 세우게 된 특별한 이유가 있었나요?
+    32.04s  <ret> 발화 (turn9 첫 프레임)
+    32.12s  agent 발화 시작: <ret> 메릴랜드는 천육백삼십사년에 잉글랜드에서 박해를 받던 잉글랜드 가톨릭 신자들을 위한 피난처로 세실 
+    32.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: Maryland was established in 1634 as a haven for English Catholics, who
+    32.22s  user  발화 끝
+    42.13s  agent 발화 끝

@@ -60,22 +60,22 @@
 
 
      0.00s  user  발화 시작: 자전거로 베이징 대학교에서 이화원을 가는 길 좀 알려줄래?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.12s  agent 발화 시작: <ret> 자전거로 베이징 대학교에서 이화원까지는 약 삼십일 점 사킬로미터, 한시간 이십사분 정도 걸립니다.
-     0.12s  ⚡SPAN 주입 [d'=0.27s / d_lead=0.27s]: (tool result) {"distance": "31.4 km", "duration": "1 hr 24 min", "rout
-     0.12s  user  발화 끝
-     0.39s  user  발화 시작: 응.
-     0.39s  agent 발화 끝
-     0.40s  user  발화 시작: 그 경로에 지하철역이 많이 보여. 지하철역 근처로 조금만 바꿔줄 수 있어?
-     0.40s  user  발화 끝
-     0.49s  <ret> 발화 (turn4 첫 프레임)
-     0.57s  agent 발화 시작: <ret> 네, 지하철역 근처로 경로를 변경했습니다. 거리는 삼십삼 점 이킬로미터, 소요 시간은 한시간 삼십
-     0.57s  ⚡SPAN 주입 [d'=0.19s / d_lead=0.19s]: (tool result) {"distance": "33.2 km", "duration": "1 hr 35 min", "rout
-     0.57s  user  발화 끝
-     0.76s  user  발화 시작: 와.
-     0.76s  agent 발화 끝
-     0.78s  user  발화 시작: 음… 그래도 좀 먼 것 같네.
-     0.78s  user  발화 끝
-     0.87s  agent 발화 시작: 혹시 다른 경로를 원하시나요? 아니면 다른 교통 수단을 알아보실까요?
-     0.87s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.56s  <ret> 발화 (turn1 첫 프레임)
+     3.71s  user  발화 끝
+     3.87s  agent 발화 시작: <ret> 자전거로 베이징 대학교에서 이화원까지는 약 삼십일 점 사킬로미터, 한시간 이십사분 정도 걸립니다.
+     3.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: (tool result) {"distance": "31.4 km", "duration": "1 hr 24 min", "rout
+     7.31s  user  발화 시작: 응.
+     7.71s  user  발화 끝
+    14.53s  agent 발화 끝
+    14.57s  user  발화 시작: 그 경로에 지하철역이 많이 보여. 지하철역 근처로 조금만 바꿔줄 수 있어?
+    19.27s  <ret> 발화 (turn4 첫 프레임)
+    19.47s  user  발화 끝
+    19.59s  agent 발화 시작: <ret> 네, 지하철역 근처로 경로를 변경했습니다. 거리는 삼십삼 점 이킬로미터, 소요 시간은 한시간 삼십
+    19.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) {"distance": "33.2 km", "duration": "1 hr 35 min", "rout
+    23.62s  user  발화 시작: 와.
+    24.12s  user  발화 끝
+    27.09s  agent 발화 끝
+    28.58s  user  발화 시작: 음… 그래도 좀 먼 것 같네.
+    31.53s  user  발화 끝
+    31.56s  agent 발화 시작: 혹시 다른 경로를 원하시나요? 아니면 다른 교통 수단을 알아보실까요?
+    36.05s  agent 발화 끝

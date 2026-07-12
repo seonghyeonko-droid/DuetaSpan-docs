@@ -58,32 +58,32 @@
 # EXAMINER(FDB-v2) 단계: S1 I’ve been trying to make more frie | S2 Hmm. Maybe. But what if I just don | S3 …Wait, what were you just saying a | S4 That’s…a really specific example.
 
      0.00s  user  발화 시작: I’ve been trying to make more friends, and it’s just…hard.
-     0.08s  agent 발화 시작: It absolutely can be, and you're not alone in feeling that w
-     0.08s  user  발화 끝
-     0.21s  user  발화 시작: Mm-hmm.
-     0.21s  agent 발화 끝
-     0.22s  user  발화 시작: Easy for you to say! I feel like everyone already *has* thei
-     0.22s  user  발화 끝
-     0.32s  agent 발화 시작: It’s a common feeling, truly. Often, we overestimate how set
-     0.32s  user  발화 끝
-     0.37s  <ret> 발화 (turn7 첫 프레임)
-     0.42s  user  발화 시작: Mm-hmm.
-     0.42s  agent 발화 끝
-     0.42s  user  발화 시작: Hmm. Maybe. But what if I just don’t know where to even *sta
-     0.42s  user  발화 끝
-     0.53s  agent 발화 시작: <ret> When thinking about where to start, consider your inte
-     0.53s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: Camassia and Chelone are both native flowering plants of North America
-     0.53s  user  발화 끝
-     0.60s  user  발화 시작: …Wait, what were you just saying about flowers?
-     0.60s  agent 발화 끝
-     0.66s  agent 발화 시작: I was drawing an analogy to finding friends; look where your
-     0.66s  user  발화 끝
-     0.76s  user  발화 시작: Mm-hmm.
-     0.76s  agent 발화 끝
-     0.77s  agent 발화 시작: It’s like Camassia and Chelone, both native to North America
-     0.77s  user  발화 끝
-     0.87s  user  발화 시작: That’s…a really specific example.
-     0.87s  agent 발화 끝
-     0.90s  agent 발화 시작: Sometimes a little specificity can spark ideas, right? What 
-     0.90s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.27s  agent 발화 시작: It absolutely can be, and you're not alone in feeling that w
+     3.37s  user  발화 끝
+     5.39s  user  발화 시작: Mm-hmm.
+     5.98s  user  발화 끝
+    10.04s  user  발화 시작: Easy for you to say! I feel like everyone already *has* thei
+    10.17s  agent 발화 끝
+    14.39s  user  발화 끝
+    14.46s  agent 발화 시작: It’s a common feeling, truly. Often, we overestimate how set
+    16.71s  user  발화 시작: Mm-hmm.
+    17.35s  user  발화 끝
+    19.67s  user  발화 시작: Hmm. Maybe. But what if I just don’t know where to even *sta
+    19.79s  agent 발화 끝
+    23.81s  <ret> 발화 (turn7 첫 프레임)
+    23.97s  agent 발화 시작: <ret> When thinking about where to start, consider your inte
+    23.97s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.91s]: Camassia and Chelone are both native flowering plants of North America
+    24.16s  user  발화 끝
+    26.25s  user  발화 시작: …Wait, what were you just saying about flowers?
+    26.88s  agent 발화 끝
+    28.63s  agent 발화 시작: I was drawing an analogy to finding friends; look where your
+    28.74s  user  발화 끝
+    31.80s  user  발화 시작: Mm-hmm.
+    32.29s  user  발화 끝
+    33.54s  agent 발화 시작: It’s like Camassia and Chelone, both native to North America
+    33.62s  agent 발화 끝
+    39.33s  agent 발화 끝
+    39.58s  user  발화 시작: That’s…a really specific example.
+    41.74s  agent 발화 시작: Sometimes a little specificity can spark ideas, right? What 
+    41.93s  user  발화 끝
+    46.70s  agent 발화 끝

@@ -65,8 +65,8 @@
 
 
      0.00s  user  발화 시작: Who was the first woman judge of the High Court in India?
-     0.08s  <ret> 발화 (turn1 첫 프레임)
-     0.32s  agent 발화 시작: <ret> It was Justice Anna Chandy, appointed to the Kerala Hi
-     0.32s  ⚡SPAN 주입 [d'=0.64s / d_lead=0.68s]: Justice Anna Chandy was the first woman judge in India, appointed to t
-     0.32s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.29s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  user  발화 끝
+     3.52s  agent 발화 시작: <ret> It was Justice Anna Chandy, appointed to the Kerala Hi
+     3.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: Justice Anna Chandy was the first woman judge in India, appointed to t
+    13.07s  agent 발화 끝

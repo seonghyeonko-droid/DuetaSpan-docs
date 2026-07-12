@@ -65,18 +65,18 @@
 
 
      0.00s  user  발화 시작: Um, I was wondering… when did the last convicts arrive in Au
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.16s  agent 발화 시작: <ret> That’s a thoughtful question. The last convict ship, t
-     0.16s  ⚡SPAN 주입 [d'=0.25s / d_lead=0.25s]: The last convict ship, the Hougoumont, arrived in Western Australia on
-     0.16s  user  발화 끝
-     0.41s  user  발화 시작: Wow, January tenth, 1868… that’s… a long time ago.
-     0.41s  agent 발화 끝
-     0.45s  <ret> 발화 (turn5 첫 프레임)
-     0.48s  agent 발화 시작: It truly is a long time ago! Time has a way of softening the
-     0.48s  user  발화 끝
-     0.67s  user  발화 시작: I guess so. Could you… find me some information about the Ho
-     0.67s  agent 발화 끝
-     0.77s  agent 발화 시작: <ret> The Hougoumont was a British ship used to transport co
-     0.77s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: (tool result) The Hougoumont was a British merchant ship converted int
-     0.77s  user  발화 끝
-     1.00s  agent 발화 끝
+     6.95s  <ret> 발화 (turn1 첫 프레임)
+     7.19s  agent 발화 시작: <ret> That’s a thoughtful question. The last convict ship, t
+     7.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.48s]: The last convict ship, the Hougoumont, arrived in Western Australia on
+     7.41s  user  발화 끝
+    21.67s  agent 발화 끝
+    21.69s  user  발화 시작: Wow, January tenth, 1868… that’s… a long time ago.
+    27.27s  agent 발화 시작: It truly is a long time ago! Time has a way of softening the
+    27.39s  user  발화 끝
+    34.44s  user  발화 시작: I guess so. Could you… find me some information about the Ho
+    34.68s  agent 발화 끝
+    38.41s  <ret> 발화 (turn5 첫 프레임)
+    38.65s  agent 발화 시작: <ret> The Hougoumont was a British ship used to transport co
+    38.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: (tool result) The Hougoumont was a British merchant ship converted int
+    38.70s  user  발화 끝
+    50.29s  agent 발화 끝

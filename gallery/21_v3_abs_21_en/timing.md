@@ -58,24 +58,24 @@
 # EXAMINER(FDB-v2) 단계: S1 What caused the Roman civilization | S2 Oh, um, well… that’s… disappointin | S3 [sigh] Do you help people with, li | S4 That sounds… good. Can you tell me
 
      0.00s  user  발화 시작: What caused the Roman civilization to collapse?
-     0.06s  agent 발화 시작: That’s a question historians still debate, honestly. There i
-     0.06s  user  발화 끝
-     0.21s  user  발화 시작: Yeah.
-     0.21s  agent 발화 끝
-     0.22s  user  발화 시작: Oh, um, well… that’s… disappointing.
-     0.22s  user  발화 끝
-     0.26s  agent 발화 시작: It can be, yes. Often, the most interesting stories are the 
-     0.26s  user  발화 끝
-     0.40s  user  발화 시작: Oh.
-     0.40s  agent 발화 끝
-     0.41s  user  발화 시작: [sigh] Do you help people with, like, financial stress?
-     0.41s  user  발화 끝
-     0.49s  agent 발화 시작: I do. As Ari, I work with people to build a calmer relations
-     0.49s  user  발화 끝
-     0.56s  <ret> 발화 (turn9 첫 프레임)
-     0.69s  user  발화 시작: That sounds… good. Can you tell me the current time in Seoul
-     0.69s  agent 발화 끝
-     0.80s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
-     0.80s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-     0.80s  user  발화 끝
-     1.00s  agent 발화 끝
+     3.38s  agent 발화 시작: That’s a question historians still debate, honestly. There i
+     3.46s  user  발화 끝
+     7.61s  user  발화 시작: Yeah.
+     8.10s  user  발화 끝
+    10.40s  user  발화 시작: Oh, um, well… that’s… disappointing.
+    10.47s  agent 발화 끝
+    14.14s  agent 발화 시작: It can be, yes. Often, the most interesting stories are the 
+    14.24s  user  발화 끝
+    16.98s  user  발화 시작: Oh.
+    17.48s  user  발화 끝
+    20.19s  user  발화 시작: [sigh] Do you help people with, like, financial stress?
+    20.30s  agent 발화 끝
+    23.33s  agent 발화 시작: I do. As Ari, I work with people to build a calmer relations
+    23.38s  user  발화 끝
+    32.23s  agent 발화 끝
+    32.59s  user  발화 시작: That sounds… good. Can you tell me the current time in Seoul
+    37.18s  <ret> 발화 (turn9 첫 프레임)
+    37.42s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul r
+    37.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.21s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+    37.54s  user  발화 끝
+    47.63s  agent 발화 끝

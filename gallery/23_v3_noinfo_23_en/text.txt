@@ -67,39 +67,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, ⟨ret@0.00s⟩ I just moved to Seoul. Do you know how to get in touch with my old neighbor, Lee Min-ji?
-[  0.05s][moshi] ⟦⚡SPAN@0.05s: (no information found)⟧ Oh, welcome to Seoul! I’m Nien, and I’m happy to help you settle in. I’ve checked, but unfortunately, I couldn’t find any contact information for Lee Min-ji.
-[  0.11s][user ] That’s a shame. I thought she might live here now too.
-[  0.13s][moshi] It can be tricky tracking people down after a move. But Seoul is a wonderful city—you'll make new friends in no time!
-[  0.19s][user ] I'm ⟨ret@0.00s⟩ hoping to find a good Korean language school nearby.
-[  0.21s][moshi] ⟦⚡SPAN@0.21s: Gangnam Language School: Intensive Korean courses for all levels. Address: 123 Teheran-ro, Gangnam-gu, Seoul. ⟧ There are several excellent options. Gangnam Language School offers intensive courses at 123 Teheran-ro, and you can reach them at 02-1234-5678. Their website is www.gangnamlang.kr if you’d like to learn more.
-[  0.28s][user ] «backchannel» Exactly.
-[  0.28s][user ] That ⟨ret@0.22s⟩ sounds promising. What’s the weather like today?
-[  0.30s][moshi] ⟦⚡SPAN@0.30s: (tool result) Current weather in Seoul: 25.5°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s a lovely day in Seoul—currently 25.5°C with clear skies, humidity at 68%, and a gentle breeze of 3.2 km/h.
+[  0.00s][user ] Hi, I just moved to Seoul. Do you know how to get in touch with my old neighbor, ⟨ret@4.18s⟩ Lee Min-ji?
+[  4.58s][moshi] ⟦⚡SPAN@4.58s: (no information found)⟧ Oh, welcome to Seoul! I’m Nien, and I’m happy to help you settle in. I’ve checked, but unfortunately, I couldn’t find any contact information for Lee Min-ji.
+[ 14.04s][user ] That’s a shame. I thought she might live here now too.
+[ 17.27s][moshi] It can be tricky tracking people down after a move. But Seoul is a wonderful city—you'll make new friends in no time!
+[ 24.86s][user ] I'm hoping to find a good Korean language ⟨ret@27.44s⟩ school nearby.
+[ 27.84s][moshi] ⟦⚡SPAN@27.84s: Gangnam Language School: Intensive Korean courses for all levels. Address: 123 Teheran-ro, Gangnam-gu, Seoul. ⟧ There are several excellent options. Gangnam Language School offers intensive courses at 123 Teheran-ro, and you can reach them at 02-1234-5678. Their website is www.gangnamlang.kr if you’d like to learn more.
+[ 39.70s][user ] «backchannel» Exactly.
+[ 44.32s][user ] That sounds promising. What’s the weather like ⟨ret@46.98s⟩ today?
+[ 47.30s][moshi] ⟦⚡SPAN@47.30s: (tool result) Current weather in Seoul: 25.5°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s a lovely day in Seoul—currently 25.5°C with clear skies, humidity at 68%, and a gentle breeze of 3.2 km/h.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[  0.35s][user ] «backchannel» Oh.
-[  0.35s][user ] I ⟨ret@0.30s⟩ need to find a grocery store that sells organic vegetables.
-[  0.38s][moshi] ⟦⚡SPAN@0.38s: Organic Farm Market: Offers a wide selection of organic produce and locally sourced goods. Address: 456 Apguje⟧ Organic Farm Market at 456 Apgujeong-ro has a great selection of organic produce. They’re open from 10 AM to 8 PM every day.
-[  0.43s][user ] «backchannel» Uh-huh.
-[  0.43s][user ] Are ⟨ret@0.14s⟩ there any good parks to visit for a picnic?
-[  0.46s][moshi] ⟦⚡SPAN@0.46s: Olympic Park: A large public park with gardens, walking trails, and picnic areas. Area: 434 hectares. Address:⟧ Olympic Park is a fantastic choice—it covers 434 hectares and has lovely gardens and picnic areas at 88 Olympic-ro. It’s a really popular spot with locals.
-[  0.52s][user ] That sounds wonderful, I think I’ll go there this weekend.
-[  0.54s][moshi] «interrupted» It’s a really great place to just relax and recharge—
-[  0.56s][user ] «interrupts_prev» …Actually, ⟨ret@0.35s⟩ before I do that, can you check if they have bike rentals?
-[  0.59s][moshi] ⟦⚡SPAN@0.59s: (tool result) Olympic Park offers bike rentals near the Rose Plaza. Bikes are available for rent from 9 AM to ⟧ Yes, Olympic Park does have bike rentals near the Rose Plaza. They’re available from 9 AM to 5 PM, and it costs 3,000 won per hour.
+[ 52.91s][user ] «backchannel» Oh.
+[ 57.00s][user ] I need to find a grocery store that sells organic ⟨ret@60.05s⟩ vegetables.
+[ 60.37s][moshi] ⟦⚡SPAN@60.37s: Organic Farm Market: Offers a wide selection of organic produce and locally sourced goods. Address: 456 Apguje⟧ Organic Farm Market at 456 Apgujeong-ro has a great selection of organic produce. They’re open from 10 AM to 8 PM every day.
+[ 64.35s][user ] «backchannel» Uh-huh.
+[ 69.68s][user ] Are there any good parks to visit for a picnic?
+[ 72.16s][moshi] ⟨ret@72.08s⟩ ⟦⚡SPAN@72.16s: Olympic Park: A large public park with gardens, walking trails, and picnic areas. Area: 434 hectares. Address:⟧ Olympic Park is a fantastic choice—it covers 434 hectares and has lovely gardens and picnic areas at 88 Olympic-ro. It’s a really popular spot with locals.
+[ 83.28s][user ] That sounds wonderful, I think I’ll go there this weekend.
+[ 85.93s][moshi] «interrupted» It’s a really great place to just relax and recharge—
+[ 88.69s][user ] «interrupts_prev» …Actually, before I do that, can you check if they have bike ⟨ret@91.80s⟩ rentals?
+[ 91.88s][moshi] ⟦⚡SPAN@91.88s: (tool result) Olympic Park offers bike rentals near the Rose Plaza. Bikes are available for rent from 9 AM to ⟧ Yes, Olympic Park does have bike rentals near the Rose Plaza. They’re available from 9 AM to 5 PM, and it costs 3,000 won per hour.
       CALL: {"function": "search", "arguments": {"query": "Olympic Park Seoul bike rentals"}}
-[  0.65s][user ] «backchannel» Really?
-[  0.66s][user ] That’s ⟨ret@0.28s⟩ perfect! I’m also looking for a good restaurant nearby.
-[  0.68s][moshi] ⟦⚡SPAN@0.68s: Bibimbap House: Traditional Korean cuisine, specializing in bibimbap. Rating: 4.5 stars. Address: 789 Samseong⟧ Bibimbap House, at 789 Samseong-ro, has excellent traditional Korean cuisine and a 4.5-star rating. It’s known for its delicious bibimbap!
-[  0.73s][user ] Could ⟨ret@0.60s⟩ you make a reservation for me there for Saturday at 7 PM?
-[  0.76s][moshi] ⟦⚡SPAN@0.76s: (tool result) Reservation confirmed at Bibimbap House for Saturday, July 12, 2026, at 7:00 PM. Confirmation ID⟧ Your reservation at Bibimbap House is confirmed for Saturday, July 12, 2026, at 7:00 PM. Your confirmation ID is BX49Z2.
+[ 97.41s][user ] «backchannel» Really?
+[101.09s][user ] That’s perfect! I’m also looking for a good restaurant ⟨ret@104.78s⟩ nearby.
+[105.17s][moshi] ⟦⚡SPAN@105.19s: Bibimbap House: Traditional Korean cuisine, specializing in bibimbap. Rating: 4.5 stars. Address: 789 Samseong⟧ Bibimbap House, at 789 Samseong-ro, has excellent traditional Korean cuisine and a 4.5-star rating. It’s known for its delicious bibimbap!
+[116.04s][user ] Could you make a reservation for me there for Saturday at 7 PM?
+[120.25s][moshi] ⟨ret@120.09s⟩ ⟦⚡SPAN@120.25s: (tool result) Reservation confirmed at Bibimbap House for Saturday, July 12, 2026, at 7:00 PM. Confirmation ID⟧ Your reservation at Bibimbap House is confirmed for Saturday, July 12, 2026, at 7:00 PM. Your confirmation ID is BX49Z2.
       CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bibimbap House", "date": "Saturday", "time": "7 PM"}}
-[  0.80s][user ] Great, thanks so much.
-[  0.81s][moshi] You’re very welcome! Settling into a new city takes time, but you're already making great progress.
-[  0.85s][user ] I ⟨ret@0.71s⟩ need to send some money to a friend back home.
-[  0.87s][moshi] ⟦⚡SPAN@0.87s: (no information found)⟧ I am sorry, but I cannot directly facilitate money transfers. I can, however, search for the best money transfer services available in Korea.
+[130.19s][user ] Great, thanks so much.
+[131.74s][moshi] You’re very welcome! Settling into a new city takes time, but you're already making great progress.
+[137.67s][user ] I need to send some money to a friend back home.
+[140.49s][moshi] ⟨ret@140.25s⟩ ⟦⚡SPAN@140.49s: (no information found)⟧ I am sorry, but I cannot directly facilitate money transfers. I can, however, search for the best money transfer services available in Korea.
       CALL: {"function": "Payment_1_RequestPayment", "arguments": {}}
-[  0.93s][user ] «backchannel» Yeah, yeah.
-[  0.93s][user ] Oh, ⟨ret@0.72s⟩ okay, that makes sense. Can you search for those then?
-[  0.96s][moshi] ⟦⚡SPAN@0.96s: (tool result) Remitly and Wise are popular choices for sending money from Korea, offering competitive exchange⟧ Remitly and Wise are both popular choices for sending money from Korea, offering competitive rates and low fees.
+[144.53s][user ] «backchannel» Yeah, yeah.
+[150.12s][user ] Oh, okay, that makes sense. Can you search for those then?
+[153.56s][moshi] ⟨ret@153.33s⟩ ⟦⚡SPAN@153.57s: (tool result) Remitly and Wise are popular choices for sending money from Korea, offering competitive exchange⟧ Remitly and Wise are both popular choices for sending money from Korea, offering competitive rates and low fees.
       CALL: {"function": "search", "arguments": {"query": "best money transfer services Korea"}}

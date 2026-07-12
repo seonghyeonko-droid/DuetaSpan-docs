@@ -53,28 +53,28 @@
 # EXAMINER(FDB-v2) 단계: S1 혹시… 직류 전압의 주파수는 어떻게 되나요? | S2 아, 그렇군요. | S3 … 그럼 교류 전압은요? | S4 얼마인지 궁금해요.
 
      0.00s  user  발화 시작: 혹시… 직류 전압의 주파수는 어떻게 되나요?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.13s  agent 발화 시작: <ret> 직류 전압의 주파수는 영 즉 영 헤르츠입니다.
-     0.13s  ⚡SPAN 주입 [d'=0.15s / d_lead=0.15s]: The frequency of a direct current (DC) voltage is zero.
-     0.13s  user  발화 끝
-     0.28s  user  발화 시작: 어머.
-     0.28s  agent 발화 끝
-     0.30s  user  발화 시작: 아, 그렇군요.
-     0.30s  user  발화 끝
-     0.35s  agent 발화 시작: 전압의 종류에 따라 주파수가 달라질 수 있습니다.
-     0.35s  user  발화 끝
-     0.43s  <ret> 발화 (turn8 첫 프레임)
-     0.50s  user  발화 시작: … 그럼 교류 전압은요?
-     0.50s  agent 발화 끝
-     0.59s  agent 발화 시작: 교류 전압은—
-     0.59s  user  발화 끝
-     0.63s  user  발화 시작: 얼마인지 궁금해요.
-     0.63s  agent 발화 끝
-     0.67s  agent 발화 시작: <ret> 대부분의 국가에서 교류 전압의 주파수는 오십 또는 육십 헤르츠입니다.
-     0.67s  ⚡SPAN 주입 [d'=0.20s / d_lead=0.20s]: Alternating current (AC) in most countries has a frequency of 50 or 60
-     0.67s  user  발화 끝
-     0.87s  user  발화 시작: 네.
-     0.87s  agent 발화 끝
-     0.89s  agent 발화 시작: 한국에서는 육십 헤르츠를 사용하고 있습니다.
-     0.89s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.96s  user  발화 끝
+     3.01s  <ret> 발화 (turn1 첫 프레임)
+     3.17s  agent 발화 시작: <ret> 직류 전압의 주파수는 영 즉 영 헤르츠입니다.
+     3.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.70s]: The frequency of a direct current (DC) voltage is zero.
+     4.46s  user  발화 시작: 어머.
+     4.95s  user  발화 끝
+     6.66s  user  발화 시작: 아, 그렇군요.
+     6.87s  agent 발화 끝
+     7.61s  agent 발화 시작: 전압의 종류에 따라 주파수가 달라질 수 있습니다.
+     7.66s  user  발화 끝
+    10.66s  agent 발화 끝
+    10.76s  user  발화 시작: … 그럼 교류 전압은요?
+    12.18s  user  발화 끝
+    12.21s  agent 발화 시작: 교류 전압은—
+    12.62s  user  발화 시작: 얼마인지 궁금해요.
+    13.18s  agent 발화 끝
+    13.89s  <ret> 발화 (turn8 첫 프레임)
+    14.04s  user  발화 끝
+    14.28s  agent 발화 시작: <ret> 대부분의 국가에서 교류 전압의 주파수는 오십 또는 육십 헤르츠입니다.
+    14.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: Alternating current (AC) in most countries has a frequency of 50 or 60
+    16.06s  user  발화 시작: 네.
+    16.55s  user  발화 끝
+    18.62s  agent 발화 시작: 한국에서는 육십 헤르츠를 사용하고 있습니다.
+    18.81s  agent 발화 끝
+    21.44s  agent 발화 끝
