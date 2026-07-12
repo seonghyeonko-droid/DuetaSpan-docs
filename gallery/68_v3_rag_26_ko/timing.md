@@ -52,18 +52,18 @@
 
 
      0.00s  user  발화 시작: 안녕하세요, 혹시 스네이프 교수 역할을 맡은 배우가 누구인지 아세요?
-     0.07s  <ret> 발화 (turn1 첫 프레임)
-     0.15s  agent 발화 시작: <ret> 안녕하세요. 스네이프 교수 역할을 맡은 배우에 대해 알아볼게요.
-     0.15s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: Alan Sidney Patrick Rickman was an English actor and director known fo
-     0.15s  user  발화 끝
-     0.27s  agent 발화 시작: 스네이프 교수 역할을 맡은 배우는 앨런 시드니 패트릭 리크먼입니다. 그는 해리 포터 영화 시리즈에서 세베루스
-     0.27s  agent 발화 끝
-     0.55s  <ret> 발화 (turn5 첫 프레임)
-     0.61s  user  발화 시작: 네.
-     0.61s  agent 발화 끝
-     0.63s  user  발화 시작: 아, 그렇군요. 오늘 날씨가 어때요?
-     0.63s  user  발화 끝
-     0.71s  agent 발화 시작: <ret> 지금 기온은 이십육 점 일도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터입니다. 오늘
-     0.71s  ⚡SPAN 주입 [d'=0.29s / d_lead=0.29s]: (tool result) Current conditions: 26.1°C, humidity 68%, wind 3.2 km/h.
-     0.71s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.78s  <ret> 발화 (turn1 첫 프레임)
+     4.86s  agent 발화 시작: <ret> 안녕하세요. 스네이프 교수 역할을 맡은 배우에 대해 알아볼게요.
+     4.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.32s]: Alan Sidney Patrick Rickman was an English actor and director known fo
+     4.86s  user  발화 끝
+     9.18s  agent 발화 시작: 스네이프 교수 역할을 맡은 배우는 앨런 시드니 패트릭 리크먼입니다. 그는 해리 포터 영화 시리즈에서 세베루스
+     9.18s  agent 발화 끝
+    20.52s  user  발화 시작: 네.
+    20.52s  agent 발화 끝
+    21.06s  user  발화 시작: 아, 그렇군요. 오늘 날씨가 어때요?
+    21.06s  user  발화 끝
+    23.60s  <ret> 발화 (turn5 첫 프레임)
+    23.76s  agent 발화 시작: <ret> 지금 기온은 이십육 점 일도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터입니다. 오늘
+    23.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.72s]: (tool result) Current conditions: 26.1°C, humidity 68%, wind 3.2 km/h.
+    23.76s  user  발화 끝
+    33.47s  agent 발화 끝

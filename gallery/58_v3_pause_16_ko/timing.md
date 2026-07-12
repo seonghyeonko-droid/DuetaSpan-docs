@@ -66,30 +66,30 @@
 # EXAMINER(FDB-v2) 단계: S1 포일의 전쟁에 제인 밀너… | S2 음, 그 배우 다른 작품에도 나왔나? | S3 잠깐만… 혹시 그 드라마… | S4 …그 시대 배경이 궁금하네요.
 
      0.00s  user  발화 시작: 포일의 전쟁에 제인 밀너…
-     0.00s  <ret> 발화 (turn2 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.05s  user  발화 시작: …역을 맡은 사람이 누구였지?
-     0.05s  user  발화 끝
-     0.10s  agent 발화 시작: <ret> 제인 밀너 역은 말리 해리스 배우가 맡았답니다.
-     0.10s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: Mali Harries played Jane Milner in the British television drama Foyle'
-     0.10s  user  발화 끝
-     0.19s  user  발화 시작: 음, 그 배우 다른 작품에도 나왔나?
-     0.19s  agent 발화 끝
-     0.27s  agent 발화 시작: <ret> 말리 해리스는 다양한 작품에 출연했는데요 — 말리 해리스는 웨일스 출신의 배우로, '바이 애니 민
-     0.27s  user  발화 끝
-     0.35s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: Mali Harries is a Welsh actress, known for her roles in television dra
-     0.51s  user  발화 시작: 응.
-     0.51s  agent 발화 끝
-     0.53s  user  발화 시작: 잠깐만… 혹시 그 드라마…
-     0.53s  user  발화 끝
-     0.53s  <ret> 발화 (turn9 첫 프레임)
-     0.58s  user  발화 시작: …배경이 이차 세계대전 때였나? —
-     0.58s  user  발화 끝
-     0.64s  user  발화 시작: …그 시대 배경이 궁금하네요.
-     0.64s  user  발화 끝
-     0.69s  agent 발화 시작: <ret> 그 드라마는… 이차 세계 대전 중과 직후를 배경으로 하고 있습니다.
-     0.69s  ⚡SPAN 주입 [d'=0.13s / d_lead=0.13s]: Foyle's War is set during and immediately after World War II, primaril
-     0.69s  user  발화 끝
-     0.82s  agent 발화 시작: '포일의 전쟁'은 주로 영국 남부에서, 이차 세계 대전 중 그리고 직후를 배경으로 이야기가 전개된답니다.
-     0.82s  agent 발화 끝
-     1.00s  agent 발화 끝
+     2.05s  user  발화 시작: …역을 맡은 사람이 누구였지?
+     2.05s  user  발화 끝
+     3.69s  <ret> 발화 (turn2 첫 프레임)
+     4.09s  agent 발화 시작: <ret> 제인 밀너 역은 말리 해리스 배우가 맡았답니다.
+     4.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.58s]: Mali Harries played Jane Milner in the British television drama Foyle'
+     4.09s  user  발화 끝
+     7.67s  user  발화 시작: 음, 그 배우 다른 작품에도 나왔나?
+     7.67s  agent 발화 끝
+    10.42s  <ret> 발화 (turn4 첫 프레임)
+    10.74s  agent 발화 시작: <ret> 말리 해리스는 다양한 작품에 출연했는데요 — 말리 해리스는 웨일스 출신의 배우로, '바이 애니 민
+    10.74s  user  발화 끝
+    12.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.07s]: Mali Harries is a Welsh actress, known for her roles in television dra
+    20.45s  user  발화 시작: 응.
+    20.45s  agent 발화 끝
+    20.96s  user  발화 시작: 잠깐만… 혹시 그 드라마…
+    20.96s  user  발화 끝
+    23.01s  user  발화 시작: …배경이 이차 세계대전 때였나? —
+    23.01s  user  발화 끝
+    25.56s  user  발화 시작: …그 시대 배경이 궁금하네요.
+    25.56s  user  발화 끝
+    27.45s  <ret> 발화 (turn9 첫 프레임)
+    27.61s  agent 발화 시작: <ret> 그 드라마는… 이차 세계 대전 중과 직후를 배경으로 하고 있습니다.
+    27.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.11s]: Foyle's War is set during and immediately after World War II, primaril
+    27.61s  user  발화 끝
+    32.72s  agent 발화 시작: '포일의 전쟁'은 주로 영국 남부에서, 이차 세계 대전 중 그리고 직후를 배경으로 이야기가 전개된답니다.
+    32.72s  agent 발화 끝
+    39.88s  agent 발화 끝

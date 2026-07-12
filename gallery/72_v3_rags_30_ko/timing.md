@@ -62,8 +62,8 @@
 
 
      0.00s  user  발화 시작: 에일리언 커버넌트에서 어머니 목소리를 연기한 배우가 누구야?
-     0.31s  <ret> 발화 (turn1 첫 프레임)
-     0.47s  agent 발화 시작: <ret> 에일리언 커버넌트에서 어머니 목소리는 로럴레이 킹 배우가 연기하셨습니다.
-     0.47s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.53s]: Lorelei King is an American actress known for her voice work in film a
-     0.47s  user  발화 끝
-     1.00s  agent 발화 끝
+     4.03s  <ret> 발화 (turn1 첫 프레임)
+     4.19s  agent 발화 시작: <ret> 에일리언 커버넌트에서 어머니 목소리는 로럴레이 킹 배우가 연기하셨습니다.
+     4.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.79s]: Lorelei King is an American actress known for her voice work in film a
+     4.19s  user  발화 끝
+     8.97s  agent 발화 끝

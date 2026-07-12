@@ -78,14 +78,14 @@
 
 
      0.00s  user  발화 시작: 호주에 마지막 죄수들이 언제 도착했는지 궁금해.
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.14s  agent 발화 시작: <ret> 호주에 마지막 죄수들이 도착한 건, 천팔백육십팔년 일월 십일이었어요. 힘든 시간이었겠죠?
-     0.14s  ⚡SPAN 주입 [d'=0.23s / d_lead=0.23s]: The last convicts arrived in Australia on 10 January 1868.
-     0.14s  user  발화 끝
-     0.37s  user  발화 시작: 어.
-     0.37s  agent 발화 끝
-     0.40s  user  발화 시작: 그럴 것 같아… 그 당시 상황이 어땠을까?
-     0.40s  user  발화 끝
-     0.56s  agent 발화 시작: 그 시기는 변화의 물결 속에서 많은 이들이 새로운 삶을 시작하려 애썼을 거예요. 괜찮으시다면, 그 마음을 조
-     0.56s  user  발화 끝
-     1.00s  agent 발화 끝
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.22s  agent 발화 시작: <ret> 호주에 마지막 죄수들이 도착한 건, 천팔백육십팔년 일월 십일이었어요. 힘든 시간이었겠죠?
+     3.22s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.36s]: The last convicts arrived in Australia on 10 January 1868.
+     3.22s  user  발화 끝
+     8.58s  user  발화 시작: 어.
+     8.58s  agent 발화 끝
+     9.12s  user  발화 시작: 그럴 것 같아… 그 당시 상황이 어땠을까?
+     9.12s  user  발화 끝
+    12.87s  agent 발화 시작: 그 시기는 변화의 물결 속에서 많은 이들이 새로운 삶을 시작하려 애썼을 거예요. 괜찮으시다면, 그 마음을 조
+    12.87s  user  발화 끝
+    23.07s  agent 발화 끝
