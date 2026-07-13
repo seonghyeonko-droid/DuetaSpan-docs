@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Remy",
+#     "name": "Olivia",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,105 +12,115 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-12-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2025-11-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-08-29",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-12",
-#       "category": "home",
-#       "text": "User's home address is 273 Maple Drive."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2025-10-23",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-14",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-16",
+#       "date": "2025-12-03",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi. Finances… that’s exactly w | S2 …But isn’t that really time-consum | S3 That makes sense. So, it's not abo | S4 Yeah, that sounds… good. Maybe we 
+# EXAMINER(FDB-v2) 단계: S1 Uh, Frellara? That’s… an unusual n | S2 I’ve *heard* that’s helpful, but I | S3 No, not really. I just check it wh | S4 It’s easy to say, but… I often fee
 
-     0.00s  agent 발화 시작: Bonjour, Remy. I'm Kara.
-     1.62s  user  발화 시작: Oh, hi. Finances… that’s exactly what I need help with, actu
-     1.62s  agent 발화 끝
-     8.52s  agent 발화 시작: It’s very common to feel that way, Remy. Many people find ma
-     8.52s  user  발화 끝
-    16.63s  user  발화 시작: Welll… I just don’t know where to start. I have several diff
-    16.63s  agent 발화 끝
-    25.96s  agent 발화 시작: That's a great place to begin—getting a clear picture of eve
-    25.96s  user  발화 끝
-    36.10s  user  발화 시작: Mm-hmm.
-    36.10s  agent 발화 끝
-    36.51s  agent 발화 시작: It can reveal a lot about where your money is going, and hel
-    36.51s  user  발화 끝
-    49.89s  user  발화 시작: …But isn’t that really time-consuming? I barely have time to
-    49.89s  agent 발화 끝
-    57.20s  agent 발화 시작: That’s a valid concern, Remy. It doesn’t have to be super de
-    57.20s  user  발화 끝
-    65.31s  user  발화 시작: Yeah.
-    65.31s  agent 발화 끝
-    65.71s  user  발화 시작: Okay, maybe. I guess I'm just worried about feeling restrict
-    65.71s  user  발화 끝
-    72.61s  agent 발화 시작: Budgeting isn’t about deprivation, it’s about making conscio
-    72.61s  user  발화 끝
-    79.51s  user  발화 시작: That makes sense. So, it's not about saying 'no' to everythi
-    79.51s  agent 발화 끝
-    87.62s  agent 발화 시작: Exactly! It's about intentionality. When you understand wher
-    87.62s  user  발화 끝
-    95.33s  user  발화 시작: Yeah.
-    95.33s  agent 발화 끝
-    95.73s  user  발화 시작: I think I need to figure out what those priorities *are* fir
-    95.73s  user  발화 끝
-   102.22s  agent 발화 시작: That’s perfectly okay, Remy. Self-reflection is a powerful t
-   102.22s  user  발화 끝
-   111.96s  user  발화 시작: Yeah, that sounds… good. Maybe we can start there.
-   111.96s  agent 발화 끝
-   115.61s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour, Olivia. I'm Frellara.
+     1.72s  user  발화 시작: Uh, Frellara? That’s… an unusual name. What exactly do you *
+     1.72s  agent 발화 끝
+     6.45s  agent 발화 시작: I support people in building routines and habits that nurtur
+     6.45s  user  발화 끝
+    14.62s  user  발화 시작: Welll… I’m just feeling so overwhelmed lately. Work is crazy
+    14.62s  agent 발화 끝
+    20.64s  agent 발화 시작: That’s completely understandable. Many people feel that way.
+    20.64s  user  발화 끝
+    27.09s  user  발화 시작: Right.
+    27.09s  agent 발화 끝
+    27.52s  user  발화 시작: It’s just… everything piling up. Emails, meetings, errands. 
+    27.52s  user  발화 끝
+    33.55s  agent 발화 시작: It sounds like you’re carrying a heavy mental load. Have you
+    33.55s  user  발화 끝
+    41.29s  user  발화 시작: Mm-hmm.
+    41.29s  agent 발화 끝
+    41.72s  user  발화 시작: I’ve *heard* that’s helpful, but I never seem to actually do
+    41.72s  user  발화 끝
+    48.60s  agent 발화 시작: It’s a common hurdle. Sometimes, simply acknowledging the ov
+    48.60s  user  발화 끝
+    55.48s  user  발화 시작: Uh-huh.
+    55.48s  agent 발화 끝
+    55.91s  agent 발화 시작: It’s like trying to hold water in your hands—the tighter you
+    55.91s  user  발화 끝
+    67.09s  user  발화 시작: That’s… a nice image. Maybe. I don’t know if it’ll work for 
+    67.09s  agent 발화 끝
+    72.68s  agent 발화 시작: It’s okay to be skeptical. We’ll experiment. What’s one smal
+    72.68s  user  발화 끝
+    79.56s  user  발화 시작: Right.
+    79.56s  agent 발화 끝
+    79.99s  user  발화 시작: Hmm… maybe responding to that email from Jean-Pierre? It’s b
+    79.99s  user  발화 끝
+    86.01s  agent 발화 시작: That’s a wonderful starting point. A small win can create mo
+    86.01s  user  발화 끝
+    94.18s  user  발화 시작: No, not really. I just check it whenever I have a free momen
+    94.18s  agent 발화 끝
+   101.07s  agent 발화 시작: That can contribute to feeling overwhelmed. Perhaps setting 
+   101.07s  user  발화 끝
+   107.52s  user  발화 시작: I guess so. But what if something urgent comes up during tha
+   107.52s  agent 발화 끝
+   113.11s  agent 발화 시작: We can build in flexibility. Maybe designate a quick check-i
+   113.11s  user  발화 끝
+   121.71s  user  발화 시작: That sounds… less stressful, actually. Okay, I can try that.
+   121.71s  agent 발화 끝
+   126.01s  agent 발화 시작: Excellent. Remember, it’s about progress, not perfection. Sm
+   126.01s  user  발화 끝
+   131.17s  user  발화 시작: It’s easy to say, but… I often feel guilty taking time for m
+   131.17s  agent 발화 끝
+   136.76s  agent 발화 시작: That guilt is something we can address, Olivia. Self-care is
+   136.76s  user  발화 끝
+   144.93s  user  발화 시작: Mhm.
+   144.93s  agent 발화 끝
+   145.36s  user  발화 시작: [sigh] I know, I know. It's just hard to internalize.
+   145.36s  user  발화 끝
+   149.66s  agent 발화 시작: It takes practice. Perhaps we could explore what activities 
+   149.66s  user  발화 끝
+   157.40s  user  발화 시작: Mm-hmm.
+   157.40s  agent 발화 끝
+   157.83s  user  발화 시작: I used to paint, years ago. I haven’t touched a brush in age
+   157.83s  user  발화 끝
+   163.43s  agent 발화 시작: That sounds lovely. Perhaps rediscovering that creative outl
+   163.43s  user  발화 끝
+   171.60s  agent 발화 끝

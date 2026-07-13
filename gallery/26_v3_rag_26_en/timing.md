@@ -4,95 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Ava",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-05-11",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-07-31",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-03-03",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-07-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2025-10-15",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-09-01",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-21",
+#       "date": "2025-11-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-02",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Zeen, I'm trying to get a bette | S2 Wow, that's a lot of people. Do th | S3 …maybe selling crafts online. — | S4 I guess so. What about their reven
+# EXAMINER(FDB-v2) 단계: S1 Hi Elius, good to talk to you. I w | S2 Wow, six thousand! That’s a lot of | S3 [happy] That makes sense. Do they  | S4 Okay, so like, the actors vote on 
 
-     0.00s  user  발화 시작: Hi Zeen, I'm trying to get a better handle on my spending.
-     4.87s  agent 발화 시작: Hello! It’s wonderful you’re taking this step. Small changes
-     4.87s  user  발화 끝
-    10.95s  user  발화 시작: Yeah, I’m hoping to. I was wondering, how many people actual
-    10.95s  agent 발화 끝
-    16.38s  <ret> 발화 (turn3 첫 프레임)
-    16.62s  agent 발화 시작: <ret> Starbucks currently employs around 238,000 people in t
-    16.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: Starbucks employs approximately 238,000 people in the United States as
-    16.62s  user  발화 끝
-    20.27s  user  발화 시작: Yeah, yeah.
-    20.27s  agent 발화 끝
-    21.08s  user  발화 시작: Wow, that's a lot of people. Do they all get free coffee?
-    21.08s  user  발화 끝
-    25.95s  agent 발화 시작: That’s a really good point to consider – employee benefits a
-    25.95s  user  발화 끝
-    30.81s  user  발화 시작: I'm thinking of starting a small side hustle…
-    30.81s  agent 발화 끝
-    34.06s  user  발화 시작: …maybe selling crafts online. —
-    34.06s  user  발화 끝
-    36.08s  user  발화 시작: …but would it be hard to compete with a company that big?
-    36.08s  user  발화 끝
-    40.95s  agent 발화 시작: That's a valid concern. It *can* be challenging, but there’s
-    40.95s  user  발화 끝
-    46.22s  user  발화 시작: I guess so. What about their revenue?
-    46.22s  agent 발화 끝
-    48.66s  <ret> 발화 (turn12 첫 프레임)
-    49.06s  agent 발화 시작: <ret> Their revenue is quite significant, actually—Starbucks
-    49.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.33s]: Starbucks reported a total revenue of 36.03 billion U.S. dollars in th
-    49.06s  user  발화 끝
-    58.38s  user  발화 시작: Wow.
-    58.38s  agent 발화 끝
-    58.79s  user  발화 시작: That *is* a lot of money. Maybe I should just stick to budge
-    58.79s  user  발화 끝
-    64.87s  agent 발화 시작: That’s a perfectly reasonable approach! Budgeting is the fou
-    64.87s  user  발화 끝
-    70.14s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Elius, good to talk to you. I was wondering, who actually
+     6.65s  agent 발화 시작: It's a pleasure speaking with you as well. That's a good que
+     6.65s  user  발화 끝
+    13.30s  user  발화 시작: Uh-huh.
+    13.30s  agent 발화 끝
+    13.69s  user  발화 시작: Yeah, I always figured it was just…people in the industry, b
+    13.69s  user  발화 끝
+    18.53s  <ret> 발화 (turn4 첫 프레임)
+    18.77s  agent 발화 시작: <ret> The Academy of Motion Picture Arts and Sciences is mad
+    18.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.65s]: The Academy of Motion Picture Arts and Sciences is comprised of over 6
+    18.77s  user  발화 끝
+    25.42s  user  발화 시작: Right.
+    25.42s  agent 발화 끝
+    25.81s  user  발화 시작: Wow, six thousand! That’s a lot of people. Uh, what kind of 
+    25.81s  user  발화 끝
+    32.46s  agent 발화 시작: All sorts, really – actors, directors, writers, and many oth
+    32.46s  user  발화 끝
+    37.54s  user  발화 시작: [happy] That makes sense. Do they all vote on everything, or
+    37.54s  agent 발화 끝
+    43.48s  <ret> 발화 (turn9 첫 프레임)
+    43.80s  agent 발화 시작: <ret> Voting within the Academy is done by members of specif
+    43.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: Academy voting is done by members of specific branches, with all membe
+    43.80s  user  발화 끝
+    50.84s  user  발화 시작: Okay, so like, the actors vote on the acting categories? Tha
+    50.84s  agent 발화 끝
+    55.92s  agent 발화 시작: Exactly! It ensures those with direct experience have a sign
+    55.92s  user  발화 끝
+    61.40s  agent 발화 끝

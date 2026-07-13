@@ -1,73 +1,77 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Thios, a curious and validating supportive advisor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Deus, a practical and reassuring life coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Emma",
+    "name": "Manon",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "early 30s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-05-09",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-05-06",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-04-18",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-11-22",
+      "date": "2026-06-17",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-16",
-      "category": "home",
-      "text": "User's home address is 594 Cedar Lane."
+      "date": "2026-01-16",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-09-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-08-31",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-03",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-23",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Thios, when did the Bengals last make the ⟨ret@3.24s⟩ playoffs?
-[  3.48s][moshi] ⟦⚡SPAN@3.48s: The Cincinnati Bengals most recently made the playoffs in the 2021–2022 season, reaching Super Bowl LVI.⟧ The Bengals last made the playoffs in the 2021–2022 season, reaching Super Bowl LVI.
-[  8.35s][user ] «backchannel» Uh-huh.
-[  8.70s][user ] Oh, wow, that ⟨ret@9.69s⟩ recent!
-[ 10.09s][moshi] ⟦⚡SPAN IRRELEVANT@10.09s: The average high temperature in Reykjavik, Iceland in July is 13.0°C, with average rainfall of 59 mm.⟧ It really was a fantastic run for them, wasn’t it? I’m glad you asked about that.
-[ 15.66s][moshi] «interrupted» It's always inspiring to see a team achieve such success—
-[ 19.14s][user ] «interrupts_prev» …but before that, how long was it since their previous playoff appearance?
-[ 23.31s][moshi] Before 2022, the Bengals hadn’t reached the playoffs since the 2015 season, a gap of six years.
-[ 29.23s][user ] «backchannel» Oh.
-[ 29.58s][moshi] It’s interesting how long those droughts can be, isn’t it? A lot can change in six years for a team.
+[  0.00s][user ] Who defied the treaty of versailles by sending troops into the ⟨ret@4.28s⟩ Rhineland?
+[  4.52s][moshi] ⟦⚡SPAN@4.52s: In March 1936, Adolf Hitler defied the Treaty of Versailles by sending troops into the Rhineland.⟧ That was Adolf Hitler, actually, in March of nineteen thirty-six. It was a direct challenge to the treaty’s terms.
+[ 11.67s][user ] «backchannel» Yeah.
+[ 12.05s][user ] Oh, right. And what were the consequences of that ⟨ret@15.41s⟩ action?
+[ 15.81s][moshi] ⟦⚡SPAN@15.81s: The League of Nations condemned Hitler’s actions, but took no concrete military action against Germany.⟧ The League of Nations did issue a condemnation, but ultimately, no real military action was taken against Germany.
+[ 22.59s][user ] «backchannel» Okay.
+[ 22.96s][user ] That seems… ⟨ret@23.77s⟩ weak.
+[ 24.09s][moshi] ⟦⚡SPAN IRRELEVANT@24.09s: The current temperature in Buenos Aires is 18.2°C, with a humidity of 65% and winds from the north at 7.1 km/h⟧ It's understandable to feel that way; appeasement was a common strategy at the time, though it's often debated now.
+[ 31.24s][user ] I see. Welll… what about the Spanish Civil War?
+[ 34.63s][moshi] That's a complex event, certainly. It began in 1936, fueled by deep political divisions within Spain.
+[ 40.65s][user ] «backchannel» Wow.
+[ 41.03s][user ] And did Hitler get involved in ⟨ret@43.43s⟩ that?
+[ 43.67s][moshi] ⟦⚡SPAN@43.67s: Hitler provided military support to the Nationalist forces led by General Francisco Franco during the Spanish ⟧ Yes, he did; Hitler provided military support to General Franco and the Nationalist forces, of course.
+[ 49.69s][user ] What was his motivation for doing that?
+[ 52.32s][moshi] He saw it as a chance to test new weapons and strategies, and to support a regime aligned with his ideology. It was a proving ground.
+[ 62.11s][user ] [sigh] It all feels so… connected.
+[ 64.37s][moshi] History often is, isn't it? Each event builds upon the last, creating a complex web of cause and effect. That’s what makes understanding it so vital.
+[ 74.16s][user ] You're right. It's good to talk this through.
+[ 77.17s][moshi] I'm glad I could help you think it through. Sometimes, just articulating these connections can lessen the weight of it all.

@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "서은",
+#     "name": "윤완",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-08",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-01-26",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-10-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2025-10-14",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-05-27",
+#       "date": "2025-09-18",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-08-02",
 #       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
+#       "date": "2026-01-18",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,15 +48,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-22",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-24",
+#       "date": "2025-07-28",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -66,93 +66,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 천칠백구십육년 대통령 선거에서 연방주의자 후보는 누구였나요? | S2 아, 그렇군요. | S3 맞아요. | S4 고마워요.
+# EXAMINER(FDB-v2) 단계: S1 르브론 제임스가 다시 캐벌리어스로 돌아간 건 언제였지? | S2 그가 캐벌리어스로 돌아왔을 때, 팀에 어떤 변화가 있었어? | S3 그럼, 그가 처음 캐벌리어스에 입단한 건 언제였지? — | S4 이천삼년 드래프트에는 또 누가 있었어?
 
-     0.00s  user  발화 시작: 천칠백구십육년 대통령 선거에서 연방주의자 후보는 누구였나요?
-     3.23s  <ret> 발화 (turn1 첫 프레임)
-     3.39s  agent 발화 시작: <ret> 천칠백구십육년 대통령 선거에서 연방주의자 후보는 존 애덤스였습니다.
-     3.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.95s]: John Adams was the Federalist candidate for president in the election 
-     3.39s  user  발화 끝
-     7.34s  user  발화 시작: 음, 그 당시 정치 상황은 어땠어요?
-     7.34s  agent 발화 끝
-    10.56s  <ret> 발화 (turn3 첫 프레임)
-    10.72s  agent 발화 시작: <ret> 그 시대는 격동기였죠. 중앙 집권적인 정부를 지지하는 연방주의자들과, 주 정부의 권한을 강조하는 
-    10.72s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.03s]: The average high temperature in Reykjavik, Iceland in July is 13.1°C, 
-    10.72s  user  발화 끝
-    19.76s  agent 발화 시작: 혹시 최근에 스트레스 받는 일이 있으셨나요? 관계에서 어려움을 겪고 계신 것 같아서요.
-    19.76s  agent 발화 끝
-    26.53s  user  발화 시작: 네, 조금 있어요.
-    26.53s  agent 발화 끝
-    28.22s  agent 발화 시작: 그런 어려움은 누구에게나 찾아올 수 있어요. 지금 느끼는 감정을 솔직하게 표현하는 것이 중요해요.
-    28.22s  user  발화 끝
-    35.56s  user  발화 시작: 그렇겠죠.
-    35.56s  agent 발화 끝
-    36.12s  agent 발화 시작: 혹시 배우자와의 관계에서 어떤 점이 가장 힘든지 말씀해 주실 수 있으신가요?
-    36.12s  user  발화 끝
-    42.33s  agent 발화 시작: 관계 개선을 위해 노력하는 모습이 보기 좋아요. 서로의 감정을 이해하고 존중하는 것이 중요하죠.
-    42.33s  agent 발화 끝
-    49.67s  user  발화 시작: 그렇죠.
-    49.67s  agent 발화 끝
-    50.23s  user  발화 시작: 그런데, 존 애덤스는 어떤 사람이었어요?
-    50.23s  user  발화 끝
-    52.90s  <ret> 발화 (turn12 첫 프레임)
-    53.06s  agent 발화 시작: <ret> 존 애덤스는 변호사이자 외교관, 정치가로, 미국의 두 번째 대통령을 역임했습니다. 천칠백구십칠년부
-    53.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: John Adams was a lawyer, diplomat, and statesman who served as the sec
-    53.06s  user  발화 끝
-    59.83s  user  발화 시작: 아, 그렇군요.
-    59.83s  agent 발화 끝
-    60.96s  agent 발화 시작: 어려운 시기에 리더십을 발휘해야 했던 인물이죠. 그의 업적에 대해 더 자세히 알아보고 싶으신가요?
-    60.96s  user  발화 끝
-    68.30s  user  발화 시작: 네.
-    68.30s  agent 발화 끝
-    68.86s  user  발화 시작: 음, 그 시대의 다른 주요 인물들도 궁금해요.
-    68.86s  user  발화 끝
-    72.81s  agent 발화 시작: 토머스 제퍼슨이나 알렉산더 해밀턴 같은 인물들도 중요한 역할을 했어요. 그들과 애덤스의 관계는 복잡했죠.
-    72.81s  user  발화 끝
-    80.15s  user  발화 시작: 해밀턴은 어떤 역할을 했죠?
-    80.15s  agent 발화 끝
-    82.25s  <ret> 발화 (turn19 첫 프레임)
-    82.41s  agent 발화 시작: <ret> 알렉산더 해밀턴은 건국 아버지 중 한 명이자 경제학자, 변호사, 언론인이었습니다. 그는 미국의 금
-    82.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: Alexander Hamilton was a Founding Father, economist, lawyer, journalis
-    82.41s  user  발화 끝
-    92.57s  user  발화 시작: 흥미롭네요.
-    92.57s  agent 발화 끝
-    93.13s  agent 발화 시작: 관계 속에서 갈등은 피할 수 없지만, 건설적인 대화를 통해 해결해 나가는 것이 중요해요.
-    93.13s  user  발화 끝
-   100.47s  user  발화 시작: 맞아요.
-   100.47s  agent 발화 끝
-   101.03s  agent 발화 시작: 혹시 배우자와의 대화에서 어려움을 느낄 때가 있으신가요? 어떤 방식으로 대화하는 것이 좋을까요?
-   101.03s  user  발화 끝
-   107.81s  user  발화 시작: 잘 모르겠어요.
-   107.81s  agent 발화 끝
-   108.94s  agent 발화 시작: 서로의 입장을 이해하려고 노력하고, 비난보다는 감정을 표현하는 것이 도움이 될 수 있어요.
-   108.94s  user  발화 끝
-   115.71s  user  발화 시작: 음.
-   115.71s  agent 발화 끝
-   116.27s  user  발화 시작: 그래야겠네요.
-   116.27s  user  발화 끝
-   116.84s  agent 발화 시작: 때로는 전문가의 도움을 받는 것도 좋은 방법이에요. 혹시 상담을 고려해 보셨나요?
-   116.84s  user  발화 끝
-   123.05s  user  발화 시작: 음, 생각해 봐야겠어요.
-   123.05s  agent 발화 끝
-   124.74s  agent 발화 시작: 어떤 결정을 내리시든, 저는 항상 당신을 응원할게요. 스스로에게 친절하게 대하는 것을 잊지 마세요.
-   124.74s  user  발화 끝
-   132.08s  user  발화 시작: 고마워요.
-   132.08s  agent 발화 끝
-   132.64s  agent 발화 시작: 지금 느끼는 감정은 당연한 거예요. 자신을 비난하지 마세요.
-   132.64s  user  발화 끝
-   137.16s  user  발화 시작: 아.
-   137.16s  agent 발화 끝
-   137.72s  user  발화 시작: 그럴게요.
-   137.72s  user  발화 끝
-   138.29s  agent 발화 시작: 혹시 오늘 하루 동안 스스로에게 해 줄 수 있는 작은 선물을 생각해 보셨나요?
-   138.29s  user  발화 끝
-   145.62s  user  발화 시작: 아직요.
-   145.62s  agent 발화 끝
-   146.19s  agent 발화 시작: 작은 것이라도 괜찮아요. 좋아하는 음악을 듣거나, 따뜻한 차를 마시는 것도 좋겠죠.
-   146.19s  user  발화 끝
-   152.40s  user  발화 시작: 좋은 생각이네요.
-   152.40s  agent 발화 끝
-   153.53s  agent 발화 시작: 관계 속에서 자신을 잃지 않는 것도 중요해요. 자신만의 시간을 갖는 것을 잊지 마세요.
-   153.53s  user  발화 끝
-   160.86s  agent 발화 끝
+     0.00s  user  발화 시작: 르브론 제임스가 다시 캐벌리어스로 돌아간 건 언제였지?
+     3.18s  <ret> 발화 (turn1 첫 프레임)
+     3.34s  agent 발화 시작: <ret> 르브론 제임스가 고향팀인 클리블랜드 캐벌리어스로 돌아온 건 이천십사년 칠월 십일일이에요. 다시 한
+     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: LeBron James signed with the Cleveland Cavaliers on July 11, 2014, ret
+     3.34s  user  발화 끝
+    10.03s  user  발화 시작: 와.
+    10.03s  agent 발화 끝
+    10.50s  user  발화 시작: 음, 그가 마이애미 히트에서 몇 시즌 뛰었는지도 알려줄 수 있어?
+    10.50s  user  발화 끝
+    15.12s  <ret> 발화 (turn4 첫 프레임)
+    15.28s  agent 발화 시작: <ret> 마이애미 히트에서 네 시즌 동안 뛰면서 두 번의 엔 비 에이 우승을 했어요. 그 후에 이천십사년에
+    15.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.07s]: LeBron James played four seasons with the Miami Heat, winning two NBA 
+    15.28s  user  발화 끝
+    23.95s  <ret> 발화 (turn5 첫 프레임)
+    24.35s  agent 발화 시작: <ret> 혹시 여행 계획 세우시는 데 도움이 필요하시면 언제든 말씀해주세요.
+    24.35s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.30s]: The current temperature in Reykjavik, Iceland is 8.2°C, with a wind sp
+    24.35s  agent 발화 끝
+    28.64s  user  발화 시작: 어.
+    28.64s  agent 발화 끝
+    29.12s  user  발화 시작: 그가 캐벌리어스로 돌아왔을 때, 팀에 어떤 변화가 있었어?
+    29.12s  user  발화 끝
+    32.78s  <ret> 발화 (turn8 첫 프레임)
+    32.94s  agent 발화 시작: <ret> 르브론 제임스가 이천십사년에 캐벌리어스로 돌아오자마자 팀의 리더가 되었고, 사번 연속 엔 비 에이
+    32.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.16s]: When LeBron James returned to the Cleveland Cavaliers in 2014, he imme
+    32.94s  user  발화 끝
+    40.10s  user  발화 시작: 사번 연속이라고? 대단하네.
+    40.10s  agent 발화 끝
+    41.54s  agent 발화 시작: 네, 정말 놀라운 기록이죠. 르브론 제임스는 팀에 큰 영향을 미쳤어요.
+    41.54s  user  발화 끝
+    46.31s  user  발화 시작: 그럼, 그가 처음 캐벌리어스에 입단한 건 언제였지? —
+    46.31s  agent 발화 끝
+    50.13s  user  발화 시작: …그가 처음 캐벌리어스에 입단했을 때 드래프트 순위가 어떻게 됐었는지 궁금해.
+    50.13s  user  발화 끝
+    54.58s  <ret> 발화 (turn13 첫 프레임)
+    54.90s  agent 발화 시작: <ret> 르브론 제임스는 이천삼년 엔 비 에이 드래프트에서 클리블랜드 캐벌리어스에 일순위로 지명되었고, 팀
+    54.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.16s]: LeBron James was selected as the first overall pick in the 2003 NBA dr
+    54.90s  user  발화 끝
+    62.06s  user  발화 시작: 음.
+    62.06s  agent 발화 끝
+    62.46s  <ret> 발화 (turn15 첫 프레임)
+    62.54s  agent 발화 시작: <ret> 르브론 제임스의 루키 시즌이었던 이천삼 이천사 시즌에 캐벌리어스는 삼십오승 사십칠패의 기록을 세웠
+    62.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.12s]: The Cleveland Cavaliers had a record of 35–47 in the 2003–2004 season,
+    62.54s  user  발화 끝
+    70.66s  user  발화 시작: 이천삼년 드래프트에는 또 누가 있었어?
+    70.66s  agent 발화 끝
+    72.64s  <ret> 발화 (turn17 첫 프레임)
+    73.04s  agent 발화 시작: <ret> 이천삼년 엔 비 에이 드래프트에는 르브론 제임스와 함께 드웨인 웨이드, 카멜로 앤서니, 크리스 보
+    73.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.59s]: The 2003 NBA draft class included Dwyane Wade, Carmelo Anthony, and Ch
+    73.04s  user  발화 끝
+    81.64s  user  발화 시작: 르브론 제임스 관련 다큐멘터리 추천해 줄 수 있어?
+    81.64s  agent 발화 끝
+    85.14s  <ret> 발화 (turn19 첫 프레임)
+    85.46s  agent 발화 시작: <ret> "More Than a Game"이라는 이천구년 다큐멘터리가 있어요. 르브론 제임스의 고등학교 시
+    85.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.16s]: (tool result) "More Than a Game" is a 2009 documentary film focusing o
+    85.46s  user  발화 끝
+    92.62s  agent 발화 끝

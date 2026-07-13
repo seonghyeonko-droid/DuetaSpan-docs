@@ -1,99 +1,69 @@
 v3_chain_05_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 사람들의 우정과 사교 생활을 돕는 격려적이고 비판적이지 않은 라이프 코치, 하리크스입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 따뜻하고 세심한 상담사 제리입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "혜서",
+    "name": "도연",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-03-01",
+      "date": "2026-06-09",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2026-02-04",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-03-02",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-11-30",
+      "date": "2026-01-09",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-01-02",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-11-28",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-13",
+      "date": "2025-10-03",
       "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-31",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-23",
+      "date": "2025-11-23",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-09-03",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이번 주 토요일에 친구랑 영화 보려고 하는데, 괜찮은 거 있을까?
-[  5.56s][moshi] 음, 어떤 영화를 좋아하세요? 혹시 특별히 보고 싶은 장르가 있나요? 친구분과 함께 즐거운 시간 보내시길 바라요.
-[ 14.45s][user ] 액션 영화! 요즘 인기 있는 거 찾아줘. ⟨ret@18.10s⟩
-[ 18.34s][moshi] ⟦⚡SPAN@18.34s: (tool result) {"movies": [{"title": "Extraction 2", "year": 2023, "rating": 7.0}, {"title": "John Wick: Chapte⟧ 요즘 인기 있는 액션 영화는 '익스트랙션 이', '존 윅 사', '더 이퀄라이저 삼'가 있어요. 평점은 각각 칠점, 칠 점 칠점, 육 점 팔점입니다.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "action"}}
-[ 31.12s][user ] «backchannel» 응응.
-[ 31.68s][user ] '존 윅 사' 예고편 좀 보여줘. ⟨ret@34.77s⟩
-[ 35.01s][moshi] ⟦⚡SPAN@35.01s: (tool result) https://www.youtube.com/watch?v=j2ICJeeXw-w | YouTube | John Wick: Chapter 4 - Official Trailer⟧ 네, '존 윅 사' 예고편은 유튜브에서 확인하실 수 있습니다. 링크는 이쪽이에요: https://www.youtube.com/watch?v=j2ICJeeXw-w
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"movie_name": "John Wick: Chapter 4"}}
-[ 41.68s][user ] «backchannel» 우와.
-[ 42.23s][user ] 예고편 진짜 멋있다! 그럼 이번 주 토요일에 '존 윅 사' 예매해 줘. ⟨ret@48.82s⟩
-[ 48.90s][moshi] ⟦⚡SPAN@48.90s: (tool result) {"confirmation id": "AX789", "movie": "John Wick: Chapter 4", "date": "2026-07-11", "time": "7:0⟧ 네, '존 윅 사' 예매 완료되었습니다. 이천이십육년 칠월 십일일 저녁 일곱시에 씨 지 브이 강남에서 두석 예매되었고, 확인번호는 에이 엑스 칠 팔 구입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "John Wick: Chapter 4", "date": "2026-07-11"}}
-[ 61.68s][user ] 혹시 예매한 영화관까지 가는 버스 정보도 알아봐 줄 수 있어? ⟨ret@67.08s⟩
-[ 67.24s][moshi] ⟦⚡SPAN@67.24s: (tool result) Bus 420 from Seoul Station, estimated time: 45 minutes, cost: 2500 KRW⟧ 서울역에서 씨 지 브이 강남까지 가는 사백이십번 버스가 있어요. 예상 시간은 사십오분이고, 요금은 이천오백원입니다.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "CGV Gangnam"}}
-[ 75.02s][user ] «backchannel» 응.
-[ 75.58s][user ] 고마워! 덕분에 영화 데이트…
-[ 77.80s][user ] …잘 준비할 수 있겠어.
-[ 80.02s][moshi] 천만에요! 친구분과 즐거운 시간 보내세요.
-[ 82.80s][user ] 혹시 그 영화 감독 이름이 뭐였지? ⟨ret@86.06s⟩
-[ 86.14s][moshi] ⟦⚡SPAN@86.14s: Chad Stahelski and David Leitch directed John Wick: Chapter 4, which was released in 2023.⟧ '존 윅 사'는 이천이십삼년에 개봉했고, Chad Stahelski와 David Leitch 감독이 연출했습니다.
-[ 92.25s][user ] «backchannel» 응.
-[ 92.80s][user ] 아, 맞다. 걔네 유명하더라.
-[ 95.03s][moshi] 네, 두 분 다 액션 영화 연출로 유명하시죠. 좋은 영화 선택하신 것 같아요.
+[  0.00s][user ] 혹시… 저번 주 토요일에 봤던 영화 있잖아, 그거 다시 보고 싶은데… 제목이 ⟨ret@6.25s⟩ 뭐였더라?
+[  6.57s][moshi] ⟦⚡SPAN@6.57s: [2026-07-03] I said I wanted to rewatch the movie I saw last Saturday.⟧ 혹시 지난 토요일에 보셨던 영화를 다시 보고 싶으시군요. 제목이 기억나지 않으시는 건가요?
+[ 12.63s][user ] 응, 기억이 안 나… 그냥 좀 신났던 ⟨ret@16.36s⟩ 영화였어.
+[ 16.68s][moshi] ⟦⚡SPAN@16.68s: (tool result) "2024년 5월 17일에 개봉한 '퓨리오사: 매드맥스 사가'는 조지 밀러 감독의 액션 블록버스터 영화입니다. 아냐 테일러-조이가 퓨리오사 역을 맡았으며, 크리스 헤임스워스⟧ 혹시 이천이십사년 오월 십칠일에 개봉한 '퓨리오사: 매드맥스 사가' 말씀하시는 건가요? 조지 밀러 감독님의 액션 영화입니다.
+      CALL: {"function": "search", "arguments": {"query": "신났던 영화"}}
+[ 24.26s][user ] «backchannel» 어.

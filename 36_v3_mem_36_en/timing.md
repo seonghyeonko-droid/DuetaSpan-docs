@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Ivy",
+#     "name": "Stella",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "female",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-01",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-02-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-02-07",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-12-01",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-10-27",
-#       "category": "home",
-#       "text": "User's home address is 918 Birch Road."
-#     },
-#     {
-#       "date": "2025-05-31",
+#       "date": "2026-01-14",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
+#       "date": "2026-03-21",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -53,53 +48,46 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-30",
-#       "title": "Researching a used car",
+#       "date": "2026-01-31",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, hi Velix. I was just thinking  | S2 I was also looking at cars, actual | S3 Yes! That’s right. Do you think yo | S4 Oh, that's good to know. Thanks.
 
-     0.00s  agent 발화 시작: Hi Ivy, I'm Velix. It's lovely to connect with you today.
-     4.38s  user  발화 시작: Um, hi Velix. I was just thinking about that trip I took las
-     4.38s  agent 발화 끝
-     9.72s  <ret> 발화 (turn2 첫 프레임)
-     9.96s  agent 발화 시작: <ret> I have a note from May sixth about your gym preference
-     9.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: [2026-05-06] Past chat — Comparing gym memberships: wants a pool; clos
-     9.96s  user  발화 끝
-    17.93s  user  발화 시작: Yeah, yeah.
-    17.93s  agent 발화 끝
-    18.72s  user  발화 시작: Oh, right! That's what I meant. And I think I mentioned I'm 
-    18.72s  user  발화 끝
-    24.30s  <ret> 발화 (turn5 첫 프레임)
-    24.70s  agent 발화 시작: <ret> You did, Ivy. My notes show you are vegetarian, record
-    24.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [2026-04-01] User is vegetarian.
-    24.70s  user  발화 끝
-    29.88s  user  발화 시작: Oh.
-    29.88s  agent 발화 끝
-    30.28s  agent 발화 시작: It's wonderful you prioritize your dietary needs when planni
-    30.28s  user  발화 끝
-    33.86s  user  발화 시작: I was also looking at cars, actually… a hybrid, I think.
-    33.86s  agent 발화 끝
-    37.93s  <ret> 발화 (turn9 첫 프레임)
-    38.25s  agent 발화 시작: <ret> I see you were researching a used hybrid car with unde
-    38.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: [2025-06-30] Past chat — Researching a used car: comparing hybrid mode
-    38.25s  user  발화 끝
-    45.02s  user  발화 시작: Yes! That’s right. Do you think you can find me some Thai re
-    45.02s  agent 발화 끝
-    50.44s  <ret> 발화 (turn11 첫 프레임)
-    50.60s  agent 발화 시작: <ret> I found three Thai restaurants in Berlin: Krung Thep, 
-    50.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Found 3 Thai restaurants in Berlin: Krung Thep (4.5 star
-    50.60s  user  발화 끝
-    56.57s  user  발화 시작: Yeah.
-    56.57s  agent 발화 끝
-    56.97s  user  발화 시작: Oh, that's good to know. Thanks.
-    56.97s  user  발화 끝
-    59.36s  agent 발화 시작: You're very welcome, Ivy.
-    59.36s  user  발화 끝
-    60.95s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Stella, I'm Nunar. It's lovely to meet you.
+     3.46s  user  발화 시작: Um, hi Nunar. I was just thinking about my New Zealand trip.
+     3.46s  agent 발화 끝
+     7.84s  <ret> 발화 (turn2 첫 프레임)
+     8.08s  agent 발화 시작: <ret> You're planning a trip to New Zealand in December, tha
+     8.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.47s]: [2026-02-18] User is planning a trip to New Zealand in December.
+     8.08s  user  발화 끝
+    16.55s  user  발화 시작: Yeah.
+    16.55s  agent 발화 끝
+    16.93s  user  발화 시작: I remember I mentioned wanting to photograph wildflowers the
+    16.93s  user  발화 끝
+    19.99s  <ret> 발화 (turn5 첫 프레임)
+    20.39s  agent 발화 시작: <ret> Ah, yes, you're passionate about alpine wildflower pho
+    20.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: [2026-02-07] User is into alpine wildflower photography.
+    20.39s  user  발화 끝
+    26.94s  user  발화 시작: Right.
+    26.94s  agent 발화 끝
+    27.32s  agent 발화 시작: It really does. Perhaps we could brainstorm some locations p
+    27.32s  user  발화 끝
+    33.09s  user  발화 시작: That’d be great, but also I’m a bit worried about being alon
+    33.09s  agent 발화 끝
+    38.10s  agent 발화 시작: It's completely normal to feel that way before a big trip, e
+    38.10s  user  발화 끝
+    51.56s  agent 발화 끝

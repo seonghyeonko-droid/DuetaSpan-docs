@@ -1,73 +1,67 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Momi, a practical and reassuring counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Thura, a curious and validating personal guide who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Charlotte",
+    "name": "Amelia",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "40s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-18",
+      "date": "2026-06-15",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "text": "User is planning a trip to Vietnam in May."
     },
     {
-      "date": "2026-03-27",
-      "category": "home",
-      "text": "User's home address is 583 Cedar Lane."
+      "date": "2026-05-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-07",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-11",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-09-17",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-06-28",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-06-11",
+      "date": "2026-03-22",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-04",
-      "title": "Comparing gym memberships",
+      "date": "2025-11-29",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Charlotte, I'm Moshi. It's lovely to meet you. I'm a counselor here to help with your financial wellbeing.
-[  7.01s][user ] Um, well, I'm planning a trip to Kyoto in December, and I'm trying to decide where to ⟨ret@13.25s⟩ stay.
-[ 13.65s][moshi] ⟦⚡SPAN@13.65s: [2026-04-18] User is planning a trip to Kyoto in December.⟧ I see you’re planning a trip to Kyoto in December, which is wonderful!
-[ 18.45s][user ] «backchannel» Mm-hmm.
-[ 18.82s][moshi] To help me narrow down some options, do you have any preferences for the type of accommodation?
-[ 25.09s][user ] I'd prefer a traditional Ryokan, if possible. Something a bit quiet. ⟨ret@28.99s⟩
-[ 29.15s][moshi] ⟦⚡SPAN@29.15s: (tool result) {"hotel name": "Tawaraya", "address": "Anekoji Agaru, Fuyacho, Nakagyo-ku, Kyoto 604-8091, Japan⟧ Tawaraya is a highly-rated Ryokan in Kyoto, costing 80,000 Japanese Yen per night, with a rating of 4.8 out of 5. It features an onsen and garden.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Kyoto", "type": "Ryokan"}}
-[ 39.12s][user ] That sounds… perfect, actually.
-[ 40.59s][moshi] I’m so glad to hear you think so! It’s known for its exceptional service and peaceful atmosphere.
+[  0.00s][moshi] Hi Amelia, I'm Thura! It's lovely to meet you.
+[  3.56s][user ] Um, well, I’m planning a trip and could use some ⟨ret@7.52s⟩ ideas.
+[  7.92s][moshi] ⟦⚡SPAN@7.92s: [2026-06-15] User is planning a trip to Vietnam in May.⟧ I see you’re planning a trip to Vietnam in May – that sounds wonderful!
+[ 13.46s][user ] «backchannel» Okay.
+[ 13.86s][moshi] ⟨ret@13.78s⟩ ⟦⚡SPAN@13.86s: Cat Tien National Park is a protected area in Vietnam, known for its biodiversity, including over 320 bird spe⟧ Cat Tien National Park is a protected area, known for over 320 bird species, and offers guided tours – it’s about 90 miles northeast of Ho Chi Minh City.
+[ 25.35s][user ] «backchannel» Oh.
+[ 25.74s][user ] That sounds… really interesting. What's the weather like there in ⟨ret@29.86s⟩ May?
+[ 30.10s][moshi] ⟦⚡SPAN@30.10s: (tool result) Cat Tien National Park, Vietnam: May 28, 2026, 30.2°C, humidity 81%, wind 6.8 km/h, chance of ra⟧ For Cat Tien National Park, Vietnam on May 28th, 2026, it will be 30.2°C with 81% humidity, 6.8 km/h winds, and a 65% chance of rain.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Cat Tien National Park, Vietnam", "date": "May"}}

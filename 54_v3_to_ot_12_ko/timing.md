@@ -4,97 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "라서",
+#     "name": "혜진",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-10-16",
+#       "date": "2026-06-16",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-26",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-21",
+#       "date": "2026-04-01",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-20",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-19",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 슈퍼볼에서 버크스 팀이 우승했을 때 쿼터백이 누구였는지 궁금해 | S2 음… 그 경기에서 버크스 팀은 누구와 맞붙었죠? | S3 아, 아니에요. 그런데 드루낸 씨, 잠들기 전에 긴장을 푸는  | S4 아, 죄송해요. 다시 말씀해 주시겠어요?
 
-     0.00s  user  발화 시작: 슈퍼볼에서 버크스 팀이 우승했을 때 쿼터백이 누구였는지 궁금해요.
-     3.72s  <ret> 발화 (turn1 첫 프레임)
-     4.04s  agent 발화 시작: <ret> 슈퍼볼 삼십칠에서 버크스 팀이 우승했을 때, 쿼터백은 브래드 존슨 선수였습니다.
-     4.04s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.05s]: Brad Johnson was the quarterback for the Tampa Bay Buccaneers when the
-     4.04s  user  발화 끝
-     9.09s  user  발화 시작: 아, 그렇군요. 혹시 그 경기는 언제였죠?
-     9.09s  agent 발화 끝
-    11.97s  <ret> 발화 (turn3 첫 프레임)
-    12.13s  agent 발화 시작: <ret> 말씀하신 슈퍼볼 삼십칠은 이천삼년에 열렸습니다.
-    12.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.53s]: Brad Johnson was the quarterback for the Tampa Bay Buccaneers when the
-    12.13s  user  발화 끝
-    14.65s  user  발화 시작: 네.
-    14.65s  agent 발화 끝
-    15.16s  user  발화 시작: 음… 그 경기에서 버크스 팀은 누구와 맞붙었죠?
-    15.16s  user  발화 끝
-    18.37s  <ret> 발화 (turn6 첫 프레임)
-    18.69s  agent 발화 시작: <ret> 버크스 팀은 이천삼년 일월 이십육일 샌디에이고 퀄컴 스타디움에서 오클랜드 레이더스를 마흔여덟대 이
-    18.69s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.57s]: The Tampa Bay Buccaneers defeated the Oakland Raiders 48–21 in Super B
-    18.69s  user  발화 끝
-    25.26s  user  발화 시작: 아.
-    25.26s  agent 발화 끝
-    25.77s  agent 발화 시작: 슈퍼볼은 정말 짜릿한 경험을 선사하죠. 혹시 다른 스포츠 경기 정보도 필요하신가요?
-    25.77s  user  발화 끝
-    31.32s  user  발화 시작: 아, 아니에요. 그런데 드루낸 씨, 잠들기 전에 긴장을 푸는 데 도움이 되는 방법 좀 알려주시겠어요?
-    31.32s  agent 발화 끝
-    38.90s  agent 발화 시작: 잠들기 전에 따뜻한 물로 샤워를 하거나, 잔잔한 음악을 듣는 것이 도움이 될 수 있습니다.
-    38.90s  user  발화 끝
-    45.97s  user  발화 시작: 잠깐만, 아내가 전화하네…
-    45.97s  agent 발화 끝
-    47.49s  user  발화 시작: 아, 죄송해요. 다시 말씀해 주시겠어요?
-    47.49s  user  발화 끝
-    50.02s  agent 발화 시작: 괜찮습니다. 잠들기 전에 따뜻한 물로 샤워를 하거나, 잔잔한 음악을 듣는 것이 도움이 될 수 있다고 말씀드렸
-    50.02s  user  발화 끝
-    57.70s  <ret> 발화 (turn14 첫 프레임)
-    58.10s  agent 발화 시작: <ret> 편안한 밤을 보내시길 바랍니다. 점진적 근육 이완은 몸 전체의 다양한 근육 그룹을 긴장시킨 다음 
-    58.10s  agent 발화 끝
-    58.66s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: Progressive muscle relaxation is a technique that involves tensing and
-    67.70s  agent 발화 끝
+     0.00s  user  발화 시작: 캐나다에서 가장 오래 재임한 총리는 누구였나요?
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.28s  agent 발화 시작: <ret> 캐나다에서 가장 오래 재임한 총리는 윌리엄 라이언 매켄지 킹이셨습니다. 그는 정말 존경받는 분이셨
+     3.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.11s]: William Lyon Mackenzie King was Canada's longest-serving prime ministe
+     3.28s  user  발화 끝
+    10.39s  user  발화 시작: 네.
+    10.39s  agent 발화 끝
+    10.78s  <ret> 발화 (turn3 첫 프레임)
+    10.94s  agent 발화 시작: <ret> 윌리엄 라이언 매켄지 킹 총리는 총 이십일년 하고 백오십사일 동안 캐나다 총리를 지냈습니다 — 정
+    10.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.30s]: William Lyon Mackenzie King served as Prime Minister of Canada for 21 
+    10.94s  user  발화 끝
+    20.23s  user  발화 시작: 그분이 어떤 정당 소속이었는지도 궁금하네요.
+    20.23s  agent 발화 끝
+    22.97s  agent 발화 시작: 매켄지 킹 총리는 자유당 소속이셨습니다 —
+    22.97s  user  발화 끝
+    26.25s  user  발화 시작: …그분은 제이차 세계대전 때 총리였었나요?
+    26.25s  agent 발화 끝
+    28.90s  <ret> 발화 (turn7 첫 프레임)
+    28.98s  agent 발화 시작: <ret> 네, 맞습니다. 매켄지 킹 총리는 제이차 세계대전 기간 동안 캐나다를 이끌었습니다.
+    28.98s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.01s]: William Lyon Mackenzie King led Canada through most of World War II.
+    28.98s  user  발화 끝
+    35.00s  agent 발화 시작: 윌리엄 라이언 매켄지 킹 총리는 제이차 세계대전 기간 대부분을 이끌었습니다. 그 시기는 정말 힘든 시기였죠.
+    35.00s  agent 발화 끝
+    43.20s  agent 발화 끝

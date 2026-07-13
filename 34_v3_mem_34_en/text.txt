@@ -1,79 +1,67 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Aroralo, a practical and reassuring counselor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Bio, a kind and steady counselor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Adam",
+    "name": "Charlotte",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "early 30s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-27",
+      "date": "2026-02-15",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-02-13",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-02-09",
+      "date": "2026-02-03",
       "category": "work",
-      "text": "User works as a chef."
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-12-12",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2025-08-31",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-10-14",
+      "date": "2025-08-04",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-06-01",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-26",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-01-21",
+      "date": "2025-06-21",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-30",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Adam, I'm Aroralo. It's lovely to meet you. Are you planning any trips at the moment?
-[  5.07s][user ] «backchannel» Yeah.
-[  5.37s][user ] Um, yeah, actually. I was hoping to go to Manly Beach. How far is that from where I live?
-[ 11.04s][user ] «backchannel» Oh.
-[ 11.33s][moshi] ⟨ret@11.25s⟩ ⟦⚡SPAN@11.33s: [2026-01-21] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ That's roughly a 30 to 45 minute trip, depending on how you get there. Perhaps I could help you look at transport options?
+[  0.00s][moshi] Hi Charlotte, I’m Bio. It’s lovely to meet you.
+[  3.32s][user ] «backchannel» Right.
+[  3.69s][user ] Hi Bio, that's good to hear. I need to get to a new restaurant—El Sol—from my place. ⟨ret@9.89s⟩
+[  9.97s][moshi] ⟦⚡SPAN@9.97s: [2025-06-01] User has a Golden Retriever named Max.⟧ I see you have a Golden Retriever named Max. To start, I'll need your current location.
+[ 15.87s][user ] Oh, right. I live at 300 Page Street, San Francisco, California. ⟨ret@19.85s⟩
+[ 19.93s][moshi] «interrupted» ⟦⚡SPAN@19.93s: 300 Page Street, San Francisco, California.⟧ Thank you. Let me find directions to El Sol from 300 Page Street—
+[ 24.73s][user ] «interrupts_prev» …is there parking near the restaurant? I'm ⟨ret@27.44s⟩ driving.
+[ 27.68s][moshi] ⟦⚡SPAN@27.68s: (tool result) Parking: Public parking lots available within 0.5 miles; estimated cost $6/hour.⟧ There are public parking lots within half a mile, costing about six dollars an hour. Now, back to those directions…
+      CALL: {"function": "maps_search_places", "arguments": {"query": "parking near El Sol, San Francisco"}}

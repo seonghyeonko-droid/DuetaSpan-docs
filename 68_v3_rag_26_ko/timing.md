@@ -4,106 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "세은",
+#     "name": "라정",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-05-11",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-03-03",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-12-09",
+#       "date": "2025-10-15",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2025-09-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2025-09-24",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-09-01",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-17",
-#       "title": "Researching a used car",
+#       "date": "2025-11-25",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 스타벅스 미국 직원 수가 궁금해요. | S2 아, 그렇군요. 그럼 스타벅스… | S3 일만 육천 개가 넘는다니, 정말 많네요! — | S4 학비 지원까지 해준다니, 좋은 회사네요.
+# EXAMINER(FDB-v2) 단계: S1 아카데미 시상식, 그… 멤버들은 누가 뽑아요? | S2 여섯 천 명이나 돼요? 다 영화감독들이에요? | S3 아, 그렇군요. 그럼 배우들도 뽑아요? | S4 혹시 이번 주 금요일 날씨 어때요?
 
-     0.00s  user  발화 시작: 스타벅스 미국 직원 수가 궁금해요.
-     2.73s  <ret> 발화 (turn1 첫 프레임)
-     2.81s  agent 발화 시작: <ret> 스타벅스는 미국에서 대략 이십삼만 팔천 명의 직원을 고용하고 있어요. 일자리를 찾는 분들께 좋은 
-     2.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.86s]: Starbucks employs approximately 238,000 people in the United States as
-     2.81s  user  발화 끝
-    10.66s  user  발화 시작: 와, 생각보다 많네요. 그 숫자에는 파트타임 직원도 포함인가요?
-    10.66s  agent 발화 끝
-    14.99s  <ret> 발화 (turn3 첫 프레임)
-    15.15s  agent 발화 시작: <ret> 네, 파트타임 직원도 모두 포함된 숫자예요.
-    15.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: The 238,000 figure includes both full-time and part-time employees wor
-    15.15s  user  발화 끝
-    18.52s  agent 발화 시작: 그 이십삼만 팔천 명에는 회사 운영 매장과 유통 센터에서 일하는 정규직과 파트타임 직원이 모두 포함되어 있어
-    18.52s  agent 발화 끝
-    27.50s  user  발화 시작: 아, 그렇군요. 그럼 스타벅스…
-    27.50s  agent 발화 끝
-    29.74s  user  발화 시작: …매장 수는 얼마나 되나요?.
-    29.74s  user  발화 끝
-    31.82s  <ret> 발화 (turn7 첫 프레임)
-    31.98s  agent 발화 시작: <ret> 이천이십사년 칠월 십일 기준으로 스타벅스는 미국 내에 일만 육천 삼백오십사개의 매장을 운영하고 있
-    31.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.29s]: (tool result) As of July 10, 2024, Starbucks operates 16,354 stores in
-    31.98s  user  발화 끝
-    39.28s  user  발화 시작: 일만 육천 개가 넘는다니, 정말 많네요! —
-    39.28s  agent 발화 끝
-    43.21s  user  발화 시작: 근데 그 직원들 평균 연봉은 얼마나 될까요?
-    43.21s  user  발화 끝
-    46.89s  <ret> 발화 (turn10 첫 프레임)
-    47.13s  agent 발화 시작: <ret> 미국 내 스타벅스 직원의 평균 연봉은 연간 약 삼만 삼천 사백팔십이달러 정도예요.
-    47.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.73s]: The average Starbucks employee in the United States earns around $33,4
-    47.13s  user  발화 끝
-    53.87s  user  발화 시작: 네.
-    53.87s  agent 발화 끝
-    54.35s  <ret> 발화 (turn12 첫 프레임)
-    54.43s  agent 발화 시작: <ret> 맞아요. 안정적인 수입을 얻을 수 있는 기회인 것 같아요.
-    54.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: Starbucks offers competitive benefits, including health insurance, ret
-    54.43s  user  발화 끝
-    59.48s  agent 발화 시작: 스타벅스는 건강 보험, 연금 계획, 학비 지원을 포함한 경쟁력 있는 복리후생도 제공하고 있어요.
-    59.48s  agent 발화 끝
-    66.77s  user  발화 시작: 학비 지원까지 해준다니, 좋은 회사네요.
-    66.77s  agent 발화 끝
-    69.58s  agent 발화 시작: 그렇죠? 직원들의 성장을 돕는 회사인 것 같아요.
-    69.58s  user  발화 끝
-    73.51s  agent 발화 끝
+     0.00s  user  발화 시작: 아카데미 시상식, 그… 멤버들은 누가 뽑아요?
+     2.88s  <ret> 발화 (turn1 첫 프레임)
+     2.96s  agent 발화 시작: <ret> 아카데미 시상식은 영화계 전문가들이 결정하는 걸로 알고 있어요.
+     2.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.95s]: The Academy of Motion Picture Arts and Sciences has over 6,000 voting 
+     2.96s  user  발화 끝
+     6.91s  agent 발화 시작: 아카데미 시상식은 영화계 전문가 여섯 천 명 이상이 투표해서 결정한다고 합니다.
+     6.91s  agent 발화 끝
+    12.34s  user  발화 시작: 응.
+    12.34s  agent 발화 끝
+    12.84s  user  발화 시작: 여섯 천 명이나 돼요? 다 영화감독들이에요?
+    12.84s  user  발화 끝
+    15.64s  <ret> 발화 (turn5 첫 프레임)
+    15.80s  agent 발화 시작: <ret> 꼭 그렇지는 않아요. 다양한 분야의 전문가들이 참여하고 있어요.
+    15.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.95s]: Membership is divided into seventeen branches representing the various
+    15.80s  user  발화 끝
+    19.75s  agent 발화 시작: 멤버십은 영화 제작의 다양한 분야를 대표하는 열일곱 개 지부로 나뉘는데, 배우, 촬영감독, 감독, 편집자, 
+    19.75s  agent 발화 끝
+    28.15s  user  발화 시작: 응.
+    28.15s  agent 발화 끝
+    28.64s  user  발화 시작: 아, 그렇군요. 그럼 배우들도 뽑아요?
+    28.64s  user  발화 끝
+    30.95s  <ret> 발화 (turn9 첫 프레임)
+    31.11s  agent 발화 시작: <ret> 네, 배우 지부에서 배우들이 직접 투표에 참여합니다.
+    31.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.46s]: Actors constitute the largest of the seventeen branches, with over one
+    31.11s  user  발화 끝
+    34.57s  agent 발화 시작: 배우들은 열일곱 지부 중 가장 큰 규모로, 천 명 이상이 넘는 멤버들이 후보와 수상자를 선정하는 데 중요한 
+    34.57s  agent 발화 끝
+    43.95s  user  발화 시작: 혹시 이번 주 금요일 날씨 어때요?
+    43.95s  agent 발화 끝
+    46.51s  <ret> 발화 (turn12 첫 프레임)
+    46.91s  agent 발화 시작: <ret> 이번 주 금요일 서울 날씨는 기온이 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로
+    46.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.91s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    46.91s  user  발화 끝
+    53.82s  agent 발화 시작: 주말 계획은 세우셨나요?
+    53.82s  agent 발화 끝
+    55.30s  agent 발화 끝

@@ -1,55 +1,81 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Eleal, a gentle and reflective supportive advisor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Kora, a warm and attentive supportive advisor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Andrea",
+    "name": "Olivia",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "non-binary",
+    "nationality": "American",
+    "gender": "female",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-11",
+      "date": "2026-02-19",
+      "category": "home",
+      "text": "User's home address is 415 Maple Drive."
+    },
+    {
+      "date": "2026-02-09",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-01-05",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-07-06",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-06-17",
+      "date": "2026-01-14",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-11-28",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-06-10",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-17",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-07",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-08",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-25",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the twelfth episode of Riverdale first ⟨ret@3.28s⟩ air?
-[  3.60s][moshi] ⟦⚡SPAN@3.60s: The twelfth episode of Riverdale, titled “The Dark Circle”, originally aired on May 4, 2017.⟧ It seems that episode aired on May fourth, two thousand and seventeen. Sometimes, waiting for a story to unfold feels a little like navigating a relationship, doesn't it?
+[  0.00s][user ] Do you know who wrote the song "Send Em On Down the ⟨ret@4.19s⟩ Road"?
+[  4.51s][moshi] ⟦⚡SPAN@4.51s: Marc Beeson wrote and originally performed “Send ‘Em On Down the Road”, released in 1976.⟧ That song was written and first performed by Marc Beeson, back in 1976. It’s a lovely piece, isn't it?

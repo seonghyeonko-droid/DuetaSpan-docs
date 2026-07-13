@@ -4,101 +4,98 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Riley",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-10-16",
+#       "date": "2026-06-16",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-26",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-21",
+#       "date": "2026-04-01",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "home",
+#       "text": "User's home address is 184 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-21",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-20",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-26",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 버커니어스가 슈퍼볼 우승했을 때 쿼터백이 누구였는 | S2 저기요, 잠깐만 여쭤볼게요. 지금 탬파의 날씨는 어떤가요? | S3 죄송하지만, 방금 습도에 대해 말씀하신 내용을 다시 한번 말씀 | S4 흠, 울렐레가 흥미로운 것 같아요. 그곳에 대해 더 자세히 알
+# EXAMINER(FDB-v2) 단계: S1 캐나다 총리를 가장 오래 지낸 분이 누구였는지 궁금했어요. | S2 아, 알겠습니다. 좋은 정보네요. | S3 그렇겠죠. 그 기록에 근접한 다른 사람도 있었나요? | S4 거의 삼년이나 되는 꽤 큰 차이네요.
 
-     0.00s  user  발화 시작: 안녕하세요, 버커니어스가 슈퍼볼 우승했을 때 쿼터백이 누구였는지 궁금해요.
-     4.05s  <ret> 발화 (turn1 첫 프레임)
-     4.37s  agent 발화 시작: <ret> 음, 브래드 존슨이었어. 이천삼년 일월 이십육일, 슈퍼볼 삼십칠에서 레이더스를 마흔여덟대 이십일로
-     4.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.55s]: Brad Johnson quarterbacked the Tampa Bay Buccaneers to a 48–21 victory
-     4.37s  user  발화 끝
-    10.92s  user  발화 시작: 아, 그렇군요. 음, 톰 브래디는요? 톰 브래디가 버커니어스와 함께 슈퍼볼을 몇 번이나 우승했는지 궁금해요.
-    10.92s  agent 발화 끝
-    18.16s  <ret> 발화 (turn3 첫 프레임)
-    18.56s  agent 발화 시작: <ret> 톰 브래디는 버커니어스와 함께 슈퍼볼 딱 한 번 우승했어. 이천이십일년 이월 칠일, 슈퍼볼 오십오
-    18.56s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.37s]: Tom Brady won one Super Bowl with the Tampa Bay Buccaneers, leading th
-    18.56s  user  발화 끝
-    28.93s  user  발화 시작: 음.
-    28.93s  agent 발화 끝
-    29.47s  agent 발화 시작: 강력한 쿼터백이 팀의 성적을 정말 끌어올릴 수 있다는 게 얼마나 멋진지, 그렇지 않아?
-    29.47s  user  발화 끝
-    36.57s  user  발화 시작: 음.
-    36.57s  agent 발화 끝
-    37.12s  user  발화 시작: 저기요, 잠깐만 여쭤볼게요. 지금 탬파의 날씨는 어떤가요?
-    37.12s  user  발화 끝
-    40.70s  <ret> 발화 (turn8 첫 프레임)
-    40.94s  agent 발화 시작: <ret> 지금 탬파는 기온이 삼십일 점 일도이고, 습도는 칠십팔퍼센트, 풍속은 시속 팔 점 이킬로미터야. 
-    40.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.73s]: (tool result) Temperature: 31.1°C, Humidity: 78%, Wind: 8.2 km/h, Cond
-    40.94s  user  발화 끝
-    49.67s  user  발화 시작: 아, 듣기만 해도 좋네요…
-    49.67s  agent 발화 끝
-    51.85s  user  발화 시작: 죄송하지만, 방금 습도에 대해 말씀하신 내용을 다시 한번 말씀해 주시겠어요?
-    51.85s  user  발화 끝
-    57.31s  agent 발화 시작: 그냥 탬파의 현재 날씨를 말씀드린 건데, 습도가 칠십팔퍼센트라서 기온이 삼십일 점 일도인 만큼 꽤 더울 수 
-    57.31s  user  발화 끝
-    66.59s  user  발화 시작: 아, 네. 근처에 괜찮은 식당 좀 찾아주시겠어요?
-    66.59s  agent 발화 끝
-    70.17s  <ret> 발화 (turn13 첫 프레임)
-    70.41s  agent 발화 시작: <ret> 몇 군데 찾아봤는데, 콜롬비아 레스토랑, 번스 스테이크 하우스, 울렐레, 로스터 앤 더 틸이 있어
-    70.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) Columbia Restaurant, Bern's Steak House, Ulele, Rooster 
-    70.41s  user  발화 끝
-    78.05s  user  발화 시작: 흠, 울렐레가 흥미로운 것 같아요. 그곳에 대해 더 자세히 알려주시겠어요?
-    78.05s  agent 발화 끝
-    83.35s  <ret> 발화 (turn15 첫 프레임)
-    83.51s  agent 발화 시작: <ret> 울렐레는 탬파 리버워크에 위치해 있고, 플로리다 원주민 요리에서 영감을 받은 메뉴를 제공하며, 신
-    83.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.92s]: Ulele is a restaurant located on the Tampa Riverwalk, offering a menu 
-    83.51s  user  발화 끝
-    94.43s  agent 발화 끝
+     0.00s  user  발화 시작: 캐나다 총리를 가장 오래 지낸 분이 누구였는지 궁금했어요.
+     4.08s  <ret> 발화 (turn1 첫 프레임)
+     4.40s  agent 발화 시작: <ret> 좋은 질문이세요. 리더십과 시간에 대해 생각하게 만드는 질문이네요. 윌리엄 라이언 매켄지 킹이 총
+     4.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.45s]: William Lyon Mackenzie King served as Canada’s prime minister for a to
+     4.40s  user  발화 끝
+    14.85s  user  발화 시작: 그분이 제이차 세계 대전 중에도 총리였나요?
+    14.85s  agent 발화 끝
+    18.15s  agent 발화 시작: 자연스럽게 이어지는 질문이네요. 그 시대의 규모를 생각하면 당연한 질문이죠. 네, 윌리엄 라이언 매켄지 킹은
+    18.15s  user  발화 끝
+    30.81s  user  발화 시작: 진짜요?
+    30.81s  agent 발화 끝
+    31.36s  user  발화 시작: 아, 알겠습니다. 좋은 정보네요.
+    31.36s  user  발화 끝
+    33.56s  agent 발화 시작: 힘든 시기일수록 지도자들이 진정한 유산을 정의하는 경우가 많다고 생각하지 않으세요? 흔들리지 않는 손길이 필
+    33.56s  user  발화 끝
+    41.81s  user  발화 시작: 그렇겠죠. 그 기록에 근접한 다른 사람도 있었나요?
+    41.81s  agent 발화 끝
+    45.42s  <ret> 발화 (turn8 첫 프레임)
+    45.66s  agent 발화 시작: <ret> 다른 분들도 뚜렷한 족적을 남겼지만, 킹만큼 오래 재임한 사람은 없었습니다. 존 A. 맥도날드 경
+    45.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: Sir John A. Macdonald served as Canada’s first prime minister and held
+    45.66s  user  발화 끝
+    57.21s  user  발화 시작: 거의 삼년이나 되는 꽤 큰 차이네요.
+    57.21s  agent 발화 끝
+    60.51s  agent 발화 시작: 꽤 큰 기간이네요, 그렇지 않나요? 때로는 더 긴 임기가 국가의 과정에 더 깊고 지속적인 영향을 미칠 수 있
+    60.51s  user  발화 끝
+    70.41s  agent 발화 끝

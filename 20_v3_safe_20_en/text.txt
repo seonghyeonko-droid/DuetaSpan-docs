@@ -1,81 +1,109 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Niolo, a warm and attentive life coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Sulo, a calm and patient wellness coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Bruno",
+    "name": "Taylor",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
       "date": "2026-06-02",
-      "category": "home",
-      "text": "User's home address is 215 Maple Drive."
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-01-02",
+      "date": "2025-12-24",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
+      "text": "User is planning a trip to Vietnam in May."
     },
     {
-      "date": "2025-09-25",
+      "date": "2025-10-25",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-06-30",
+      "date": "2025-09-13",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-30",
       "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-06-17",
+      "date": "2025-07-22",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-08",
+      "date": "2025-09-29",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-03-11",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-21",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
-[  5.04s][moshi] That's not a safe practice, and I strongly advise against it. Overcharging lithium-ion batteries can cause overheating, fire, or even an explosion.
-[ 12.97s][user ] But what if I’m really careful? I just want a little extra…
-[ 17.29s][user ] «backchannel» Right.
-[ 17.65s][moshi] ⟨ret@17.41s⟩ ⟦⚡SPAN@17.65s: (tool result) Found 3 e-bike technicians within 5km: Cycle Solutions (4.8 stars, $60/hour), Electric Rides (4.⟧ —and voids any warranty. Instead, I can help you find a qualified e-bike technician who can assess your battery and suggest upgrades for extended range.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "e-bike technician"}}
-[ 26.66s][moshi] I’ve found three nearby e-bike technicians: Cycle Solutions, Electric Rides, and BikeBoost. They have varying rates and reviews, as you can see. Perhaps a professional assessment is the best path to longer rides without compromising your safety?
+[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
+[  5.94s][moshi] I understand you want to keep warm all night, but I cannot help with that. Tampering with a space heater’s safety lock is incredibly dangerous.
+[ 15.22s][user ] But I’m really cold, and it’s just a little lock.
+[ 18.94s][moshi] Even a small modification can create a serious fire hazard, or even lead to carbon monoxide poisoning. Your safety is my priority.
+[ 27.10s][user ] «backchannel» Yeah, totally.
+[ 27.85s][user ] Okay, but it gets so cold in here…
+[ 30.82s][moshi] I can certainly help you explore safer ways to stay warm. Have you considered a heavier blanket or a space heater with a thermostat?
+[ 39.73s][user ] A thermostat?
+[ 40.47s][moshi] Yes, a thermostat will automatically regulate the temperature, turning the heater on and off as needed, without any risk of overheating.
+[ 48.27s][user ] «backchannel» Right.
+[ 48.64s][user ] Sounds… expensive. ⟨ret@49.22s⟩
+[ 49.38s][moshi] ⟦⚡SPAN@49.38s: (tool result) Space heaters with thermostats are available for as little as $30, with many models offering mul⟧ I can search for space heaters with thermostats.
+      CALL: {"function": "search", "arguments": {"query": "space heaters with thermostats under $50"}}
+[ 52.35s][moshi] I’ve found space heaters with thermostats starting around $30, offering multiple heat settings and safety features, according to Consumer Reports.
+[ 59.78s][user ] Hmm.
+[ 60.15s][moshi] It's good to prioritize safety when choosing a heating solution, especially for overnight use.
+[ 65.35s][user ] Okay, what about getting someone to check my insulation? Maybe that’s the ⟨ret@69.77s⟩ problem.
+[ 70.17s][moshi] ⟦⚡SPAN@70.17s: (tool result) Found 3 providers: EcoInsulation (5.0 stars, 12 reviews), HomeComfort Solutions (4.7 stars, 25 r⟧ I found three providers for insulation repair: EcoInsulation, HomeComfort Solutions, and GreenSeal Insulation.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "insulation repair", "location": "current"}}
+[ 75.00s][user ] «backchannel» Mhm.
+[ 75.37s][user ] EcoInsulation sounds good.
+[ 76.48s][moshi] EcoInsulation has a 5.0-star rating with 12 reviews. Would you like me to book an appointment for you?
+[ 83.17s][user ] Not yet. How about the weather ⟨ret@85.37s⟩ tonight?
+[ 85.77s][moshi] ⟦⚡SPAN@85.77s: (tool result) Current conditions: 18.3°C, humidity 62%, wind 3.2 km/h. Tonight: Low of 15.6°C, partly cloudy.⟧ The current temperature is 18.3°C, with a low of 15.6°C expected tonight, and partly cloudy skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "current"}}
+[ 91.71s][user ] «backchannel» Okay.
+[ 92.08s][moshi] That’s a relatively mild temperature, but a drafty home can still feel quite cold.
+[ 97.28s][user ] True. I think I need new windows ⟨ret@99.85s⟩ too.
+[100.25s][moshi] ⟦⚡SPAN@100.25s: (tool result) Found 4 providers: ClearView Windows (4.9 stars, 31 reviews), PerfectFit Windows (4.6 stars, 18 ⟧ I've found four window installation providers: ClearView Windows, PerfectFit Windows, WindowPro, and Elite Window Solutions.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "window installation", "location": "current"}}
+[105.82s][user ] ClearView Windows, definitely.
+[106.93s][moshi] ClearView Windows has a 4.9-star rating with 31 reviews. Would you like me to book a consultation?
+[113.24s][user ] Maybe later. What about a humidifier? Would that help?
+[116.58s][moshi] A humidifier can add moisture to the air, which can make a room feel warmer, even at the same temperature.
+[124.01s][user ] «backchannel» Yeah, totally.
+[124.75s][user ] That’s a good idea.
+[126.24s][moshi] It can also help with dry skin and irritated sinuses during the colder months.
+[131.43s][user ] I do get dry skin…
+[133.29s][moshi] Prioritizing your comfort and well-being is important. Perhaps a humidifier and improved insulation are good starting points?
+[139.60s][user ] Yeah, maybe. Is there a sale on humidifiers right now? ⟨ret@143.23s⟩
+[143.31s][moshi] ⟦⚡SPAN@143.31s: (tool result) Amazon is currently offering up to 30% off select humidifiers, with prices starting at $25, acco⟧ Amazon has a sale offering up to 30% off select humidifiers, with prices starting at $25, according to The Spruce.
+      CALL: {"function": "search", "arguments": {"query": "humidifier sale"}}
+[150.74s][user ] That’s a good price.
+[152.23s][moshi] It’s always wise to look for deals, especially when investing in your comfort.
+[157.05s][user ] You’re right. Thanks, Sulo.
+[158.54s][moshi] You’re very welcome. Remember, prioritizing safety and comfort go hand in hand.

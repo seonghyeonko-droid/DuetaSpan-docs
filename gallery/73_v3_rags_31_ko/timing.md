@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "민정",
+#     "name": "정국",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,55 +18,47 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-05-15",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2025-11-09",
+#       "date": "2026-01-18",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-10-07",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-12-20",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-07-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-09-14",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-31",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-09",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 공군력이 어디서 출발하는지 궁금해.
-     2.09s  <ret> 발화 (turn1 첫 프레임)
-     2.33s  agent 발화 시작: <ret> 공군력은 메릴랜드 주에 있는 앤드루스 공군 기지에서 출발해요. 그곳은 프린스 조지스 카운티에 위치
-     2.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: Andrews Air Force Base is a United States Air Force base located in Pr
-     2.33s  user  발화 끝
-    10.49s  agent 발화 끝
+     0.00s  user  발화 시작: aba가 nba랑 합쳐진 게 언제였지?
+     2.83s  <ret> 발화 (turn1 첫 프레임)
+     3.07s  agent 발화 시작: <ret> aba가 nba랑 합쳐진 건 천구백칠십육년이었어요. 새로운 변화가 많았다고 하네요.
+     3.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: The American Basketball Association merged with the National Basketbal
+     3.07s  user  발화 끝
+     8.59s  agent 발화 끝

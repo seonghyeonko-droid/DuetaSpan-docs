@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "유민",
+#     "name": "수진",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-27",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-02-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     },
 #     {
-#       "date": "2025-12-19",
+#       "date": "2026-01-27",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-08-04",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
-#       "date": "2025-11-05",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-14",
+#       "date": "2025-06-01",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-28",
+#       "date": "2026-01-10",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -53,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-22",
+#       "date": "2025-12-07",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-10",
+#       "date": "2025-06-21",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -71,22 +66,31 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 비오 씨. 요즘 이사 갈 집을 찾고 있는데, 혹시 | S2 네, 맞아요. 혹시 강남역 근처에 괜찮은 곳이 있을까요? | S3 이백오십만 원이면 괜찮은데, 혹시 그 집 주변에 공원 같은 게 | S4 …혹시 반려동물과 함께 산책할 수 있는 공원이 가까운 곳에 있
 
-     0.00s  agent 발화 시작: 안녕하세요, 유민님. 저는 아로라로입니다. 여행 계획이나 휴식에 대한 상담을 도와드리는 에이전트예요.
-     5.54s  user  발화 시작: 응.
-     5.54s  agent 발화 끝
-     6.04s  user  발화 시작: 어… 안녕하세요. 혹시 제가 사는 곳에서 해운대까지 얼마나 걸릴까요?
-     6.04s  user  발화 끝
-    10.49s  <ret> 발화 (turn3 첫 프레임)
-    10.57s  agent 발화 시작: <ret> 유민님, 저장된 정보에 따르면 부산에 거주하시는군요. 해운대까지의 거리는 대략 십이 점 오킬로미터
-    10.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.04s]: [2025-10-28] Past chat — Apartment hunting downtown: wanted a pet-frie
-    10.57s  user  발화 끝
-    16.62s  user  발화 시작: 진짜?
-    16.62s  agent 발화 끝
-    17.12s  user  발화 시작: 아, 그렇군요. 차로 가면 얼마나 걸릴까요?
-    17.12s  user  발화 끝
-    19.98s  <ret> 발화 (turn6 첫 프레임)
-    20.14s  agent 발화 시작: <ret> 차로 이동하시면 약 이십분 정도 소요될 것으로 예상됩니다. 교통 상황에 따라 달라질 수 있어요.
-    20.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: (tool result) {"distance": "12.5 km", "duration": "20 minutes", "statu
-    20.14s  user  발화 끝
-    27.19s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 수진님. 저는 비오예요. 친구 관계나 사회생활에 대해 편하게 이야기 나눌 수 있도록 도와드릴게요
+     6.05s  user  발화 시작: 안녕하세요, 비오 씨. 요즘 이사 갈 집을 찾고 있는데, 혹시 반려동물과 함께 살 수 있는 곳을 추천해 주실
+     6.05s  agent 발화 끝
+    14.62s  <ret> 발화 (turn2 첫 프레임)
+    14.70s  agent 발화 시작: <ret> 두개의 방이 있는 집을 원하셨죠.
+    14.70s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.16s]: [2026-01-10] Past chat — Apartment hunting downtown: wanted a pet-frie
+    14.70s  user  발화 끝
+    16.86s  user  발화 시작: 네, 맞아요. 혹시 강남역 근처에 괜찮은 곳이 있을까요?
+    16.86s  agent 발화 끝
+    20.08s  <ret> 발화 (turn4 첫 프레임)
+    20.32s  agent 발화 시작: <ret> 강남역 근처에 반려동물과 함께 살 수 있는 두개의 방이 있는 집이 있습니다. 월세는 이백오십만 원
+    20.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) {"area": "Gangnam Station", "pet friendly", "bedrooms": 
+    20.32s  user  발화 끝
+    30.70s  user  발화 시작: 이백오십만 원이면 괜찮은데, 혹시 그 집 주변에 공원 같은 게 있을까요? —
+    30.70s  agent 발화 끝
+    35.89s  user  발화 시작: …혹시 반려동물과 함께 산책할 수 있는 공원이 가까운 곳에 있으면 좋을 것 같아요.
+    35.89s  user  발화 끝
+    41.43s  <ret> 발화 (turn7 첫 프레임)
+    41.51s  agent 발화 시작: <ret> 서울숲이 그 집에서 사 점 이킬로미터 거리에 있습니다. 평점은 사 점 사점이에요.
+    41.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) {"place id": "ChIJjYk0g-w9EJORB N6R6E4LhQ", "name": "Seo
+    41.51s  user  발화 끝
+    46.70s  user  발화 시작: 그렇군요.
+    46.70s  agent 발화 끝
+    47.13s  agent 발화 시작: 서울숲은 반려동물과 함께 산책하기 좋은 곳으로 알려져 있어요. 넓고 깨끗해서 많은 분들이 찾으시는 곳이죠.
+    47.13s  user  발화 끝
+    53.18s  agent 발화 끝

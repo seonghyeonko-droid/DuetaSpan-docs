@@ -4,164 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Sam",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-06-03",
+#       "category": "home",
+#       "text": "User's home address is 591 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2026-01-26",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-10-14",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-18",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-14",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-29",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Biana, I was wondering about th | S2 So, Adams lost his re-election bid | S3 Do you think that hurt his chances | S4 I wonder if Adams saw it coming.
+# EXAMINER(FDB-v2) 단계: S1 Hey Oreaon, when did LeBron James  | S2 Was Dwyane Wade involved in convin | S3 What was his jersey number when he | S4 Wow, that sounds intense. Okay, ba
 
-     0.00s  user  발화 시작: Hi Biana, I was wondering about the 1796 election.
-     3.89s  agent 발화 시작: Hello! It’s lovely to explore history with you. What specifi
-     3.89s  user  발화 끝
-     9.94s  user  발화 시작: Who was the Federalist candidate that year?
-     9.94s  agent 발화 끝
-    12.64s  <ret> 발화 (turn3 첫 프레임)
-    12.96s  agent 발화 시작: <ret> The Federalist candidate in 1796 was, in fact, John Ad
-    12.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: John Adams was the Federalist candidate in the 1796 presidential elect
-    12.96s  user  발화 끝
-    19.44s  user  발화 시작: Oh, okay.
-    19.44s  agent 발화 끝
-    20.31s  agent 발화 시작: It’s good to have that clarified. Elections can be quite com
-    20.31s  user  발화 끝
-    26.36s  user  발화 시작: Yeah, they really are. What about the election of 1800?
-    26.36s  agent 발화 끝
-    30.52s  <ret> 발화 (turn7 첫 프레임)
-    30.68s  agent 발화 시작: <ret> In 1800, Thomas Jefferson defeated incumbent John Adam
-    30.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: In the 1800 election, Thomas Jefferson of the Democratic-Republican Pa
-    30.68s  user  발화 끝
-    35.86s  user  발화 시작: Interesting.
-    35.86s  agent 발화 끝
-    36.30s  agent 발화 시작: Political shifts are always fascinating, aren’t they? It's a
-    36.30s  user  발화 끝
-    41.91s  user  발화 시작: Yeah.
-    41.91s  agent 발화 끝
-    42.34s  user  발화 시작: So, Adams lost his re-election bid?
-    42.34s  user  발화 끝
-    44.62s  <ret> 발화 (turn12 첫 프레임)
-    44.94s  agent 발화 시작: <ret> Yes, that is correct. He served only one term as presi
-    44.94s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.75s]: The current temperature in London is 18.5°C with clear skies and a gen
-    44.94s  user  발화 끝
-    49.69s  agent 발화 시작: It's often difficult for leaders to hold onto power, even wh
-    49.69s  agent 발화 끝
-    55.74s  user  발화 시작: Okay.
-    55.74s  agent 발화 끝
-    56.17s  agent 발화 시작: It can be a very stressful time for anyone in a position lik
-    56.17s  user  발화 끝
-    63.95s  user  발화 시작: I can imagine. Were there…
-    63.95s  agent 발화 끝
-    66.11s  user  발화 시작: …any major issues driving that election?
-    66.11s  user  발화 끝
-    68.54s  <ret> 발화 (turn18 첫 프레임)
-    68.70s  agent 발화 시작: <ret> The Alien and Sedition Acts, passed during Adams’ pres
-    68.70s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.78s]: The Alien and Sedition Acts, passed under Adams, were a major point of
-    68.70s  user  발화 끝
-    76.48s  user  발화 시작: What were those acts about?
-    76.48s  agent 발화 끝
-    78.48s  <ret> 발화 (turn20 첫 프레임)
-    78.64s  agent 발화 시작: <ret> Those Acts restricted immigration and limited criticis
-    78.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.05s]: The Alien and Sedition Acts restricted immigration and limited critici
-    78.64s  user  발화 끝
-    84.69s  user  발화 시작: Wow, that sounds… restrictive.
-    84.69s  agent 발화 끝
-    86.42s  agent 발화 시작: It was a very controversial period, and understandably so. I
-    86.42s  user  발화 끝
-    93.33s  user  발화 시작: Do you think that hurt his chances?
-    93.33s  agent 발화 끝
-    96.36s  agent 발화 시작: Many historians believe so. They were quite unpopular with a
-    96.36s  user  발화 끝
-   102.84s  user  발화 시작: Uh-huh.
-   102.84s  agent 발화 끝
-   103.27s  user  발화 시작: That makes sense.
-   103.27s  user  발화 끝
-   104.57s  agent 발화 시작: It's interesting how decisions can have such long-lasting ef
-   104.57s  user  발화 끝
-   109.32s  user  발화 시작: It really is. Um, what about Jefferson's platform?
-   109.32s  agent 발화 끝
-   112.62s  <ret> 발화 (turn29 첫 프레임)
-   112.78s  agent 발화 시작: <ret> Jefferson campaigned on a platform of limited governme
-   112.78s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.62s]: Thomas Jefferson campaigned on a platform of limited government and st
-   112.78s  user  발화 끝
-   118.39s  user  발화 시작: So, a very different approach.
-   118.39s  agent 발화 끝
-   120.55s  agent 발화 시작: Quite a contrast, yes. Different visions for the country’s f
-   120.55s  user  발화 끝
-   125.31s  user  발화 시작: Yeah, totally.
-   125.31s  agent 발화 끝
-   126.17s  user  발화 시작: It seems like a pretty big shift in philosophy.
-   126.17s  user  발화 끝
-   130.06s  agent 발화 시작: It was a significant turning point. A real change in directi
-   130.06s  user  발화 끝
-   136.11s  user  발화 시작: I wonder if Adams saw it coming.
-   136.11s  agent 발화 끝
-   139.13s  agent 발화 시작: It’s hard to say what anyone truly anticipates. It’s a compl
-   139.13s  user  발화 끝
-   145.18s  user  발화 시작: Yeah.
-   145.18s  agent 발화 끝
-   145.61s  agent 발화 시작: Sometimes, even with careful planning, things don’t unfold a
-   145.61s  user  발화 끝
-   149.93s  user  발화 시작: That’s life, I guess.
-   149.93s  agent 발화 끝
-   151.66s  agent 발화 시작: It certainly is. It's about how we adapt and move forward, d
-   151.66s  user  발화 끝
-   157.71s  user  발화 시작: Yeah.
-   157.71s  agent 발화 끝
-   158.14s  user  발화 시작: I suppose so.
-   158.14s  user  발화 끝
-   159.44s  agent 발화 시작: And knowing that history offers valuable lessons for us toda
-   159.44s  user  발화 끝
-   163.76s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Oreaon, when did LeBron James go back to play for the Ca
+     4.55s  <ret> 발화 (turn1 첫 프레임)
+     4.79s  agent 발화 시작: <ret> He signed with the Cavaliers on July eleventh, 2014, r
+     4.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: LeBron James signed with the Cleveland Cavaliers on July 11, 2014, ret
+     4.79s  user  발화 끝
+    13.64s  user  발화 시작: That's right, it was a huge deal. Do you think he'll ever go
+    13.64s  agent 발화 끝
+    19.17s  agent 발화 시작: It's hard to predict the future, but anything is possible in
+    19.17s  user  발화 끝
+    23.60s  user  발화 시작: Yeah.
+    23.60s  agent 발화 끝
+    23.97s  user  발화 시작: What was the biggest reason he left the first time?
+    23.97s  user  발화 끝
+    27.49s  <ret> 발화 (turn6 첫 프레임)
+    27.65s  agent 발화 시작: <ret> He left in 2010, because he felt the Cavaliers’ owners
+    27.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: LeBron James left the Cleveland Cavaliers in 2010, largely due to a pe
+    27.65s  user  발화 끝
+    36.13s  user  발화 시작: Yeah.
+    36.13s  agent 발화 끝
+    36.50s  user  발화 시작: Was Dwyane Wade involved in convincing him to go to Miami?
+    36.50s  user  발화 끝
+    40.32s  <ret> 발화 (turn9 첫 프레임)
+    40.56s  agent 발화 시작: <ret> Yes, Dwyane Wade and Chris Bosh were key in getting hi
+    40.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Dwyane Wade and Chris Bosh were both instrumental in recruiting LeBron
+    40.56s  user  발화 끝
+    48.30s  user  발화 시작: Mhm.
+    48.30s  agent 발화 끝
+    48.67s  user  발화 시작: So, it was a pretty coordinated effort then?
+    48.67s  user  발화 끝
+    51.62s  agent 발화 시작: It was a very deliberate and well-planned move by all three 
+    51.62s  user  발화 끝
+    58.62s  user  발화 시작: What was his jersey number when he first played for the Cavs
+    58.62s  agent 발화 끝
+    62.97s  <ret> 발화 (turn14 첫 프레임)
+    63.05s  agent 발화 시작: <ret> He wore number 23 during his first time with Cleveland
+    63.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.64s]: LeBron James wore jersey number 23 during his first stint with the Cle
+    63.05s  user  발화 끝
+    69.68s  user  발화 시작: And did he wear the same number when he came back? —
+    69.68s  agent 발화 끝
+    74.11s  user  발화 시작: … actually, before you finish, how did the fans react when h
+    74.11s  user  발화 끝
+    80.79s  <ret> 발화 (turn17 첫 프레임)
+    81.11s  agent 발화 시작: <ret> Many fans felt betrayed and were very angry, even burn
+    81.11s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.69s]: When LeBron James announced his decision to leave the Cleveland Cavali
+    81.11s  user  발화 끝
+    91.81s  user  발화 시작: Wow, that sounds intense. Okay, back to the jersey number.
+    91.81s  agent 발화 끝
+    95.33s  <ret> 발화 (turn19 첫 프레임)
+    95.49s  agent 발화 시작: <ret> He switched to number 6 when he returned in 2014, want
+    95.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: When LeBron James returned to the Cleveland Cavaliers in 2014, he swit
+    95.49s  user  발화 끝
+   102.92s  <ret> 발화 (turn20 첫 프레임)
+   103.24s  agent 발화 시작: <ret> It’s great we got to talk about LeBron’s career. Plann
+   103.24s  ⚡SPAN 주입(IRRELEVANT) [d'=1.60s / d_lead=5.16s]: The current temperature in Rome, Italy is 28.5°C with clear skies and 
+   103.24s  agent 발화 끝
+   108.40s  user  발화 시작: Yeah.
+   108.40s  agent 발화 끝
+   108.77s  user  발화 시작: That's a good idea, actually. Maybe a trip to see a game!
+   108.77s  user  발화 끝
+   113.19s  agent 발화 시작: That sounds fantastic! I can definitely help you plan a trip
+   113.19s  user  발화 끝
+   120.56s  agent 발화 끝

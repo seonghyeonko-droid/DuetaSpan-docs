@@ -4,56 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Jordan",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-10-09",
+#       "date": "2026-05-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-04-02",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-12-05",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-10-07",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-08-11",
+#       "date": "2025-06-10",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-14",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User is planning a trip to Vietnam in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-15",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-08",
+#       "date": "2026-02-21",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -63,65 +50,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who didn't sign the decree suspend | S2 That sounds... nice. What time is  | S3 Yes, it is. I'm a little anxious a | S4 French sounds good. Can you reserv
+# EXAMINER(FDB-v2) 단계: S1 Why wasn't philosophy taught in Ot | S2 Oh, um… that’s a shame. | S3 Well, what *was* taught there? | S4 Do you think that limited their pr
 
-     0.00s  user  발화 시작: Who didn't sign the decree suspending the Communist Party of
-     5.26s  <ret> 발화 (turn1 첫 프레임)
-     5.42s  agent 발화 시작: <ret> That’s a difficult question, and unfortunately, I don’
-     5.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (no information found)
-     5.42s  user  발화 끝
-    12.93s  user  발화 시작: Yeah.
-    12.93s  agent 발화 끝
-    13.35s  user  발화 시작: Oh. Well, what’s the weather like in Seoul right now?
-    13.35s  user  발화 끝
-    17.36s  <ret> 발화 (turn4 첫 프레임)
-    17.52s  agent 발화 시작: <ret> It’s currently 23.0°C in Seoul, with humidity at 74% a
-    17.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    17.52s  user  발화 끝
-    26.69s  user  발화 시작: Hmm, maybe I should plan a trip. Are there any good movies p
-    26.69s  agent 발화 끝
-    31.95s  <ret> 발화 (turn6 첫 프레임)
-    32.11s  agent 발화 시작: <ret> "Inside Out 2" is playing nearby, and it’s getting gre
-    32.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) "Inside Out 2" is currently playing in theaters near you
-    32.11s  user  발화 끝
-    41.29s  user  발화 시작: Yeah.
-    41.29s  agent 발화 끝
-    41.71s  user  발화 시작: That sounds... nice. What time is it there, exactly?
-    41.71s  user  발화 끝
-    45.30s  <ret> 발화 (turn9 첫 프레임)
-    45.46s  agent 발화 시작: <ret> It is Friday, July 10, 2026, at 2:47 PM in Asia/Seoul 
-    45.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul rig
-    45.46s  user  발화 끝
-    53.38s  user  발화 시작: That's right, July 10th. Um, do you remember what I said abo
-    53.38s  agent 발화 끝
-    59.14s  <ret> 발화 (turn11 첫 프레임)
-    59.22s  agent 발화 시작: <ret> You mentioned on July 5th that your daughter is starti
-    59.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: [2026-07-05] My daughter is starting kindergarten next month.
-    59.22s  user  발화 끝
-    66.31s  user  발화 시작: Yes, it is. I'm a little anxious about it.
-    66.31s  agent 발화 끝
-    70.07s  agent 발화 시작: It’s completely normal to feel anxious when your child is be
-    70.07s  user  발화 끝
-    79.24s  user  발화 시작: Okay.
-    79.24s  agent 발화 끝
-    79.66s  user  발화 시작: I guess so. Could you find some restaurants near City Hall?
-    79.66s  user  발화 끝
-    84.09s  <ret> 발화 (turn16 첫 프레임)
-    84.25s  agent 발화 시작: <ret> I found 47 restaurants near City Hall—'Gogung Myeongga
-    84.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.34s]: (tool result) There are 47 restaurants near City Hall, including 'Gogu
-    84.25s  user  발화 끝
-    92.59s  user  발화 시작: Exactly.
-    92.59s  agent 발화 끝
-    93.01s  user  발화 시작: French sounds good. Can you reserve a table for two at La Cu
-    93.01s  user  발화 끝
-   100.02s  <ret> 발화 (turn19 첫 프레임)
-   100.10s  agent 발화 시작: <ret> A table for two at La Cuisine is confirmed for 7:00 PM
-   100.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Reservation confirmed at La Cuisine for two people at 7:
-   100.10s  user  발화 끝
-   107.19s  user  발화 시작: Mm-hmm.
-   107.19s  agent 발화 끝
-   107.60s  user  발화 시작: Perfect! Thank you.
-   107.60s  user  발화 끝
-   108.85s  agent 발화 시작: You're very welcome. It’s good to have a nice evening planne
-   108.85s  user  발화 끝
-   116.78s  agent 발화 끝
+     0.00s  user  발화 시작: Why wasn't philosophy taught in Ottoman madaris?
+     2.60s  <ret> 발화 (turn1 첫 프레임)
+     2.76s  agent 발화 시작: <ret> But unfortunately, I haven’t been able to find any inf
+     2.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: (no information found)
+     2.76s  user  발화 끝
+    11.05s  user  발화 시작: Oh, um… that’s a shame.
+    11.05s  agent 발화 끝
+    13.03s  agent 발화 시작: It is a bit of a mystery, isn’t it? Perhaps it’s a topic tha
+    13.03s  user  발화 끝
+    21.71s  user  발화 시작: Yeah.
+    21.71s  agent 발화 끝
+    22.11s  user  발화 시작: Well, what *was* taught there?
+    22.11s  user  발화 끝
+    24.00s  <ret> 발화 (turn6 첫 프레임)
+    24.08s  agent 발화 시작: <ret> Ottoman madrasas mainly taught Islamic theology, law, 
+    24.08s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.71s]: The curriculum in Ottoman madrasas generally focused on Islamic theolo
+    24.08s  user  발화 끝
+    30.79s  user  발화 시작: Mhm.
+    30.79s  agent 발화 끝
+    31.19s  agent 발화 시작: It sounds like a very rigorous education, focused on religio
+    31.19s  user  발화 끝
+    40.27s  user  발화 시작: Do you think that limited their progress?
+    40.27s  agent 발화 끝
+    43.03s  agent 발화 시작: That’s a thoughtful question. A focused curriculum can have 
+    43.03s  user  발화 끝
+    53.69s  agent 발화 끝

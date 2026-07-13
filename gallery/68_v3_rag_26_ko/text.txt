@@ -1,83 +1,73 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 제엔이며, 돈과 예산 관리에 대해 사람들을 돕는 격려적이고 비판적이지 않은 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 인생의 큰 변화를 겪는 사람들을 돕는 친절하고 침착한 개인 가이드, 에리우스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "세은",
+    "name": "라정",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-23",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-05-11",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-02-19",
+      "date": "2026-03-03",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-12-09",
+      "date": "2025-10-15",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-10-23",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2025-09-19",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
     },
     {
-      "date": "2025-09-24",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2025-09-01",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-17",
-      "title": "Researching a used car",
+      "date": "2025-11-25",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-03-16",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 스타벅스 미국 직원 수가 궁금해요. ⟨ret@2.73s⟩
-[  2.81s][moshi] ⟦⚡SPAN@2.81s: Starbucks employs approximately 238,000 people in the United States as of December 31, 2023.⟧ 스타벅스는 미국에서 대략 이십삼만 팔천 명의 직원을 고용하고 있어요. 일자리를 찾는 분들께 좋은 소식이죠?
-[ 10.66s][user ] 와, 생각보다 많네요. 그 숫자에는 파트타임 직원도 포함인가요? ⟨ret@14.99s⟩
-[ 15.15s][moshi] ⟦⚡SPAN@15.15s: The 238,000 figure includes both full-time and part-time employees working at company-operated stores and dist⟧ 네, 파트타임 직원도 모두 포함된 숫자예요.
-[ 18.52s][moshi] 그 이십삼만 팔천 명에는 회사 운영 매장과 유통 센터에서 일하는 정규직과 파트타임 직원이 모두 포함되어 있어요.
-[ 27.50s][user ] 아, 그렇군요. 그럼 스타벅스…
-[ 29.74s][user ] …매장 수는 얼마나 되나요?. ⟨ret@31.82s⟩
-[ 31.98s][moshi] ⟦⚡SPAN@31.98s: (tool result) As of July 10, 2024, Starbucks operates 16,354 stores in the United States.⟧ 이천이십사년 칠월 십일 기준으로 스타벅스는 미국 내에 일만 육천 삼백오십사개의 매장을 운영하고 있어요.
-      CALL: {"function": "search", "arguments": {"query": "number of starbucks stores in the us"}}
-[ 39.28s][user ] 일만 육천 개가 넘는다니, 정말 많네요! —
-[ 43.21s][user ] 근데 그 직원들 평균 연봉은 얼마나 될까요? ⟨ret@46.89s⟩
-[ 47.13s][moshi] ⟦⚡SPAN@47.13s: The average Starbucks employee in the United States earns around $33,482 per year.⟧ 미국 내 스타벅스 직원의 평균 연봉은 연간 약 삼만 삼천 사백팔십이달러 정도예요.
-[ 53.87s][user ] «backchannel» 네.
-[ 54.43s][moshi] ⟨ret@54.35s⟩ ⟦⚡SPAN@54.43s: Starbucks offers competitive benefits, including health insurance, retirement plans, and tuition reimbursement⟧ 맞아요. 안정적인 수입을 얻을 수 있는 기회인 것 같아요.
-[ 59.48s][moshi] 스타벅스는 건강 보험, 연금 계획, 학비 지원을 포함한 경쟁력 있는 복리후생도 제공하고 있어요.
-[ 66.77s][user ] 학비 지원까지 해준다니, 좋은 회사네요.
-[ 69.58s][moshi] 그렇죠? 직원들의 성장을 돕는 회사인 것 같아요.
+[  0.00s][user ] 아카데미 시상식, 그… 멤버들은 누가 뽑아요? ⟨ret@2.88s⟩
+[  2.96s][moshi] ⟦⚡SPAN@2.96s: The Academy of Motion Picture Arts and Sciences has over 6,000 voting members who are motion picture professio⟧ 아카데미 시상식은 영화계 전문가들이 결정하는 걸로 알고 있어요.
+[  6.91s][moshi] 아카데미 시상식은 영화계 전문가 여섯 천 명 이상이 투표해서 결정한다고 합니다.
+[ 12.34s][user ] «backchannel» 응.
+[ 12.84s][user ] 여섯 천 명이나 돼요? 다 영화감독들이에요? ⟨ret@15.64s⟩
+[ 15.80s][moshi] ⟦⚡SPAN@15.80s: Membership is divided into seventeen branches representing the various crafts of filmmaking, including actors,⟧ 꼭 그렇지는 않아요. 다양한 분야의 전문가들이 참여하고 있어요.
+[ 19.75s][moshi] 멤버십은 영화 제작의 다양한 분야를 대표하는 열일곱 개 지부로 나뉘는데, 배우, 촬영감독, 감독, 편집자, 작가 등이 포함됩니다.
+[ 28.15s][user ] «backchannel» 응.
+[ 28.64s][user ] 아, 그렇군요. 그럼 배우들도 뽑아요? ⟨ret@30.95s⟩
+[ 31.11s][moshi] ⟦⚡SPAN@31.11s: Actors constitute the largest of the seventeen branches, with over one thousand members, and they have a signi⟧ 네, 배우 지부에서 배우들이 직접 투표에 참여합니다.
+[ 34.57s][moshi] 배우들은 열일곱 지부 중 가장 큰 규모로, 천 명 이상이 넘는 멤버들이 후보와 수상자를 선정하는 데 중요한 역할을 합니다.
+[ 43.95s][user ] 혹시 이번 주 금요일 날씨 ⟨ret@46.51s⟩ 어때요?
+[ 46.91s][moshi] ⟦⚡SPAN@46.91s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 이번 주 금요일 서울 날씨는 기온이 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 53.82s][moshi] 주말 계획은 세우셨나요?

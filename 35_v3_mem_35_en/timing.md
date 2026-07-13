@@ -4,82 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Charlotte",
+#     "name": "Amelia",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-06-15",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "home",
-#       "text": "User's home address is 583 Cedar Lane."
+#       "date": "2026-05-30",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-09-17",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-06-28",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2026-03-22",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-11-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Charlotte, I'm Moshi. It's lovely to meet you. I'm a coun
-     7.01s  user  발화 시작: Um, well, I'm planning a trip to Kyoto in December, and I'm 
-     7.01s  agent 발화 끝
-    13.25s  <ret> 발화 (turn2 첫 프레임)
-    13.65s  agent 발화 시작: <ret> I see you’re planning a trip to Kyoto in December, whi
-    13.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.80s]: [2026-04-18] User is planning a trip to Kyoto in December.
-    13.65s  user  발화 끝
-    18.45s  user  발화 시작: Mm-hmm.
-    18.45s  agent 발화 끝
-    18.82s  agent 발화 시작: To help me narrow down some options, do you have any prefere
-    18.82s  user  발화 끝
-    25.09s  user  발화 시작: I'd prefer a traditional Ryokan, if possible. Something a bi
-    25.09s  agent 발화 끝
-    28.99s  <ret> 발화 (turn6 첫 프레임)
-    29.15s  agent 발화 시작: <ret> Tawaraya is a highly-rated Ryokan in Kyoto, costing 80
-    29.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.96s]: (tool result) {"hotel name": "Tawaraya", "address": "Anekoji Agaru, Fu
-    29.15s  user  발화 끝
-    39.12s  user  발화 시작: That sounds… perfect, actually.
-    39.12s  agent 발화 끝
-    40.59s  agent 발화 시작: I’m so glad to hear you think so! It’s known for its excepti
-    40.59s  user  발화 끝
-    46.86s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Amelia, I'm Thura! It's lovely to meet you.
+     3.56s  user  발화 시작: Um, well, I’m planning a trip and could use some ideas.
+     3.56s  agent 발화 끝
+     7.52s  <ret> 발화 (turn2 첫 프레임)
+     7.92s  agent 발화 시작: <ret> I see you’re planning a trip to Vietnam in May – that 
+     7.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.54s]: [2026-06-15] User is planning a trip to Vietnam in May.
+     7.92s  user  발화 끝
+    13.46s  user  발화 시작: Okay.
+    13.46s  agent 발화 끝
+    13.78s  <ret> 발화 (turn4 첫 프레임)
+    13.86s  agent 발화 시작: <ret> Cat Tien National Park is a protected area, known for 
+    13.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.48s]: Cat Tien National Park is a protected area in Vietnam, known for its b
+    13.86s  user  발화 끝
+    25.35s  user  발화 시작: Oh.
+    25.35s  agent 발화 끝
+    25.74s  user  발화 시작: That sounds… really interesting. What's the weather like the
+    25.74s  user  발화 끝
+    29.86s  <ret> 발화 (turn7 첫 프레임)
+    30.10s  agent 발화 시작: <ret> For Cat Tien National Park, Vietnam on May 28th, 2026,
+    30.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: (tool result) Cat Tien National Park, Vietnam: May 28, 2026, 30.2°C, h
+    30.10s  user  발화 끝
+    40.39s  agent 발화 끝

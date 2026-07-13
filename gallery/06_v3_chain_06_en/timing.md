@@ -4,141 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Elias",
+#     "name": "Harry",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "male",
 #     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-03-28",
-#       "category": "home",
-#       "text": "User's home address is 630 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-09-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2026-04-05",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-10-24",
+#       "category": "home",
+#       "text": "User's home address is 491 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-26",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-22",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-18",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Please create an order for one lea | S2 That’s warmer. – Is there… | S3 Driving sounds good. | S4 That's a good thought. I need to s
+# EXAMINER(FDB-v2) 단계: S1 I’m planning a trip to London next | S2 …like for, say, three nights start | S3 Um, yeah, maybe something a little | S4 Perfect. That sounds much better.
 
-     0.00s  user  발화 시작: Please create an order for one leather jacket that costs one
-     9.12s  <ret> 발화 (turn1 첫 프레임)
-     9.20s  agent 발화 시작: <ret> Your order has been created, order ID eight six seven 
-     9.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Order ID: 8675309. Total: $214.99.
-     9.20s  user  발화 끝
-    18.04s  user  발화 시작: Can you remind me what my order total was?
-    18.04s  agent 발화 끝
-    21.07s  <ret> 발화 (turn3 첫 프레임)
-    21.23s  agent 발화 시작: <ret> On July tenth, two thousand twenty-six, you created an
-    21.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.20s]: [YYYY-MM-DD] Your order has been created, order ID eight six seven fiv
-    21.23s  user  발화 끝
-    30.43s  user  발화 시작: That’s right, thank you. Uh, what's the weather like in Seou
-    30.43s  agent 발화 끝
-    34.95s  <ret> 발화 (turn5 첫 프레임)
-    35.03s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-three point z
-    35.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.20s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.
-    35.03s  user  발화 끝
-    44.23s  user  발화 시작: Okay.
-    44.23s  agent 발화 끝
-    44.58s  agent 발화 시작: I hope that’s comfortable weather for you. Sometimes, just k
-    44.58s  user  발화 끝
-    50.95s  user  발화 시작: That’s helpful. What about Busan?
-    50.95s  agent 발화 끝
-    52.40s  <ret> 발화 (turn9 첫 프레임)
-    52.72s  agent 발화 시작: <ret> In Busan, the temperature is twenty-six point five deg
-    52.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) 26.5°C, humidity 68%, wind 8.2 km/h.
-    52.72s  user  발화 끝
-    62.27s  user  발화 시작: Mhm.
-    62.27s  agent 발화 끝
-    62.62s  user  발화 시작: That’s warmer. – Is there…
-    62.62s  user  발화 끝
-    64.39s  user  발화 시작: …a good Italian restaurant nearby?
-    64.39s  user  발화 끝
-    65.92s  <ret> 발화 (turn13 첫 프레임)
-    66.16s  agent 발화 시작: <ret> There’s Bella Italia, which has a four point five-star
-    66.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.37s]: (tool result) Bella Italia - 4.5 stars, 0.5 km away.
-    66.16s  user  발화 끝
-    72.53s  user  발화 시작: Can you get me directions there?
-    72.53s  agent 발화 끝
-    74.25s  <ret> 발화 (turn15 첫 프레임)
-    74.65s  agent 발화 시작: <ret> Walking will take about seven minutes, while driving w
-    74.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.60s]: (tool result) Walking: 7 min. Driving: 3 min.
-    74.65s  user  발화 끝
-    79.25s  user  발화 시작: Okay.
-    79.25s  agent 발화 끝
-    79.61s  user  발화 시작: Driving sounds good.
-    79.61s  user  발화 끝
-    80.59s  <ret> 발화 (turn18 첫 프레임)
-    80.67s  agent 발화 시작: <ret> Take Elm Street to Oak Avenue, then turn right onto Pi
-    80.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Take Elm St to Oak Ave. Turn right onto Pine Ln. Destina
-    80.67s  user  발화 끝
-    87.39s  user  발화 시작: Yeah.
-    87.39s  agent 발화 끝
-    87.74s  user  발화 시작: Perfect. What time is it in Tokyo right now?
-    87.74s  user  발화 끝
-    90.61s  <ret> 발화 (turn21 첫 프레임)
-    90.93s  agent 발화 시작: <ret> It’s Saturday, July eleventh, two thousand twenty-six,
-    90.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) It is Saturday, July 11, 2026 at 8:15 AM in Asia/Tokyo r
-    90.93s  user  발화 끝
-    98.01s  user  발화 시작: Oh, it's already Saturday there.
-    98.01s  agent 발화 끝
-    99.77s  agent 발화 시작: Yes, time moves at its own pace. Perhaps a moment to simply 
-    99.77s  user  발화 끝
-   105.44s  user  발화 시작: That's a good thought. I need to send a message to my friend
-   105.44s  agent 발화 끝
-   110.39s  agent 발화 시작: Taking a moment for mindfulness is always a good choice. And
-   110.39s  user  발화 끝
-   117.11s  user  발화 시작: Yeah.
-   117.11s  agent 발화 끝
-   117.46s  user  발화 시작: Can you share my location with him?
-   117.46s  user  발화 끝
-   119.62s  <ret> 발화 (turn28 첫 프레임)
-   119.94s  agent 발화 시작: <ret> Your location has been shared with Ji-hoon successfull
-   119.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.60s]: (tool result) Location shared successfully.
-   119.94s  user  발화 끝
-   124.54s  user  발화 시작: Thanks. I think that’s all for now.
-   124.54s  agent 발화 끝
-   127.02s  agent 발화 시작: You are most welcome. Remember, even small moments of calm c
-   127.02s  user  발화 끝
-   133.03s  agent 발화 끝
+     0.00s  user  발화 시작: I’m planning a trip to London next week. Can you find me a f
+     8.60s  <ret> 발화 (turn1 첫 프레임)
+     8.68s  agent 발화 시작: <ret> The Langham, London, is a five-star hotel that doesn't
+     8.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) The Langham, London, Regent Street, London, W1B 5SA, Uni
+     8.68s  user  발화 끝
+    17.77s  user  발화 시작: Oh, that sounds lovely. What’s the price…
+    17.77s  agent 발화 끝
+    20.66s  user  발화 시작: …like for, say, three nights starting next Tuesday?
+    20.66s  user  발화 끝
+    23.81s  <ret> 발화 (turn4 첫 프레임)
+    23.97s  agent 발화 시작: <ret> For three nights starting next Tuesday, July fourteent
+    23.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.44s]: (tool result) The Langham, London. Check-in: July 14, 2026. Length of 
+    23.97s  user  발화 끝
+    31.40s  user  발화 시작: That’s… a bit more than I expected.
+    31.40s  agent 발화 끝
+    34.30s  agent 발화 시작: I understand. Travel can sometimes be unexpectedly pricey, e
+    34.30s  user  발화 끝
+    42.15s  user  발화 시작: Um, yeah, maybe something a little less expensive. Still fiv
+    42.15s  agent 발화 끝
+    47.61s  <ret> 발화 (turn8 첫 프레임)
+    47.93s  agent 발화 시작: <ret> It’s important to find a place that feels right for *y
+    47.93s  user  발화 끝
+    49.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: The Corinthia London offers five-star luxury with non-smoking rooms, a
+    61.98s  user  발화 시작: Oh.
+    61.98s  agent 발화 끝
+    62.40s  agent 발화 시작: That would be £1650 for three nights, a significant saving c
+    62.40s  user  발화 끝
+    71.07s  user  발화 시작: Yes, please. Check availability for the Corinthia for those 
+    71.07s  agent 발화 끝
+    75.38s  <ret> 발화 (turn12 첫 프레임)
+    75.62s  agent 발화 시작: <ret> Good news! The Corinthia London has availability. The 
+    75.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.26s]: (tool result) The Corinthia London. Check-in: July 14, 2026. Length of
+    75.62s  user  발화 끝
+    83.88s  user  발화 시작: Perfect. That sounds much better.
+    83.88s  agent 발화 끝
+    85.95s  agent 발화 시작: Wonderful. I’m glad we found something that fits your needs 
+    85.95s  user  발화 끝
+    95.87s  user  발화 시작: Mm-hmm.
+    95.87s  agent 발화 끝
+    96.28s  user  발화 시작: Could you also find me some highly-rated restaurants near th
+    96.28s  user  발화 끝
+   100.75s  <ret> 발화 (turn17 첫 프레임)
+   100.83s  agent 발화 시작: <ret> Near the Corinthia, The Northall has 4.6 stars, Kerrid
+   100.83s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.50s]: (tool result) Closest restaurants: The Northall (British, 4.6 stars), 
+   100.83s  user  발화 끝
+   110.33s  agent 발화 끝

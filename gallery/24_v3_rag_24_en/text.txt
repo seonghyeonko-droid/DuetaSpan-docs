@@ -1,85 +1,83 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Fuli, a curious and validating wellness coach who helps people with big life transitions. <system>
+SYSTEM: <system> You are Lea, a gentle and reflective personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Nathan",
+    "name": "Hana",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "50s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-30",
-      "category": "home",
-      "text": "User's home address is 623 Pine Court."
-    },
-    {
       "date": "2026-03-28",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
-    },
-    {
-      "date": "2025-12-13",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-10-18",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-07-23",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-07-12",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-12-29",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-10-28",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-06-18",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-09",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-06",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-09-06",
+      "date": "2025-10-15",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been thinking a lot about making a big change, and it’s a little scary.
-[  5.81s][moshi] It’s wonderful you’re acknowledging that, and fear is a natural part of growth. What kind of change are you considering?
-[ 13.56s][user ] I’m thinking about a career shift, actually. Something completely different.
-[ 17.44s][moshi] That’s a significant step! It’s brave to consider a path that truly excites you, even if it feels unfamiliar.
-[ 24.80s][user ] «backchannel» Yeah.
-[ 25.19s][user ] I was watching *The Great Dictator* last night, and it got me thinking… ⟨ret@30.06s⟩
-[ 30.22s][moshi] ⟦⚡SPAN@30.22s: Charlie Chaplin wrote, directed, scored, and starred in *The Great Dictator*, released in 1940, which satirize⟧ It’s fascinating how art can inspire reflection, and *The Great Dictator* was actually written, directed, scored, and starred in by Charlie Chaplin, released in 1940, which satirizes Adolf Hitler.
-[ 41.46s][user ] «backchannel» Oh.
-[ 41.85s][moshi] «interrupted» Chaplin’s work often tackles complex themes with both humor and heartfelt emotion—
-[ 46.50s][user ] «interrupts_prev» …do you know if he had any formal training as a ⟨ret@50.75s⟩ writer?
-[ 51.15s][moshi] ⟦⚡SPAN@51.15s: Charlie Chaplin began performing at a young age and largely developed his skills through practical experience ⟧ Actually, Charlie Chaplin began performing at a young age and largely developed his skills through practical experience rather than formal education. He was largely self-taught.
-[ 60.83s][user ] «backchannel» Mhm.
-[ 61.22s][user ] That's amazing. So, he just…figured it out?
-[ 63.93s][moshi] It seems so! Many creatives blossom through dedication and a willingness to experiment. It sounds like you're thinking about that kind of leap yourself.
+[  0.00s][user ] I was wondering about the International Day of the World’s Indigenous Peoples.
+[  4.51s][moshi] It’s a day to recognize and celebrate the rights and cultures of indigenous peoples worldwide.
+[ 10.15s][user ] When did it first start being ⟨ret@12.39s⟩ observed?
+[ 12.79s][moshi] «interrupted» ⟦⚡SPAN@12.79s: The United Nations General Assembly decided in 1990 to observe 9 August each year as the International Day of ⟧ The United Nations General Assembly first decided to observe August 9th each year—
+[ 17.68s][user ] «interrupts_prev» …is it celebrated much in South ⟨ret@20.07s⟩ Korea?
+[ 20.31s][moshi] ⟦⚡SPAN@20.31s: (tool result) South Korea marks the International Day of the World’s Indigenous Peoples with various events pr⟧ South Korea marks the day with events promoting understanding—
+      CALL: {"function": "search", "arguments": {"query": "International Day of the World’s Indigenous Peoples celebration South Korea"}}
+[ 23.69s][user ] «backchannel» Mhm.
+[ 24.07s][moshi] —and respect for indigenous cultures, according to reports. It's a time for reflection, really.

@@ -1,84 +1,99 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 당신은 프랠이며, 우정과 사교 생활에 어려움을 겪는 사람들을 돕는 호기심 많고 지지적인 상담사입니다. <system>
+SYSTEM: <system> 당신은 스트레스 해소 및 마음챙김을 통해 사람들을 돕는 따뜻하고 주의 깊은 조력자 바리엔입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "소진",
+    "name": "가완",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-02-18",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
+      "date": "2026-05-30",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-05-03",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+    },
+    {
+      "date": "2025-07-17",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-08-24",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-07-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-06-30",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2025-06-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-03",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-20",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-28",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 애비 리 댄스 컴퍼니가 처음 시작한 곳이 어디였는지 ⟨ret@4.60s⟩ 알아요?
-[  4.92s][moshi] ⟦⚡SPAN@4.92s: The original Abby Lee Dance Company was located in Pittsburgh, Pennsylvania, and was founded by Abby Lee Mille⟧ 원래 애비 리 댄스 컴퍼니는 천구백팔십칠년에 애비 리 밀러가 설립했는데, 페닌슐레이니아주 피츠버그에 있었어요. 혹시 댄스에 관심 있으세요?
-[ 13.30s][user ] 피츠버그라고요? 음…
-[ 14.28s][user ] …그건 좀 의외네요. 혹시 그곳에서 얼마나 오래 ⟨ret@17.90s⟩ 있었어요?
-[ 18.22s][moshi] ⟦⚡SPAN@18.22s: Abby Lee Dance Company operated in Pittsburgh for approximately twenty years before relocating to Los Angeles,⟧ 애비 리 댄스 컴퍼니는 이천팔년에 캘리포니아주 로스앤젤레스로 옮기기 전까지, 피츠버그에서 대략 이십년 동안 운영되었어요. 춤을 가르치는 일은 정말 보람 있을 것 같아요.
-[ 29.05s][user ] «backchannel» 응.
-[ 29.55s][user ] 로스앤젤레스로 옮겼다고요? 왜 그랬어요? ⟨ret@31.28s⟩
-[ 31.52s][moshi] ⟦⚡SPAN@31.52s: Abby Lee Miller relocated the dance company to Los Angeles to pursue opportunities in the entertainment indust⟧ 애비 리 밀러는 엔터테인먼트 산업에서 기회를 찾고 브랜드를 확장하기 위해서 댄스 컴퍼니를 로스앤젤레스로 옮겼다고 해요. 좋은 기회를 잡으려고 한 것 같아요.
-[ 41.86s][user ] 엔터테인먼트 산업이라… 혹시 유명한 댄서들을 많이 ⟨ret@44.98s⟩ 배출했어요?
-[ 45.30s][moshi] ⟦⚡SPAN@45.30s: The Abby Lee Dance Company has trained numerous dancers who have appeared on television shows like Dance Moms ⟧ 애비 리 댄스 컴퍼니는 Dance Moms 같은 티 브이 프로그램에 출연했고, 프로 댄서로 진출한 많은 댄서들을 배출했어요. 재능 있는 아이들이 많았나 봐요.
-[ 56.14s][user ] Dance Moms에 나왔던 댄서들이요? 아, 맞다. 그 프로그램 봤었는데.
-[ 60.57s][moshi] «interrupted» 그 프로그램은 춤에 대한 열정을 보여주는—
-[ 63.52s][user ] «interrupts_prev» 잠깐만요, 혹시 애비 리 밀러 선생님은 원래 피츠버그에서 다른 댄스 스튜디오를 ⟨ret@69.03s⟩ 운영했었어요?
-[ 69.43s][moshi] ⟦⚡SPAN@69.43s: Before establishing the Abby Lee Dance Company, Abby Lee Miller owned and operated a smaller dance studio call⟧ 애비 리 밀러 선생님은 애비 리 댄스 컴퍼니를 설립하기 전에, 피츠버그에서 Marilyn Horne Dance Center라는 작은 댄스 스튜디오를 운영했어요. 먼저 작은 스튜디오부터 시작했군요.
-[ 80.76s][user ] «backchannel» 음.
-[ 81.25s][moshi] 작은 스튜디오에서 실력을 쌓고 더 큰 꿈을 꾸게 된 것 같아요. 저도 사람들과 소통하는 일을 하면서 비슷한 느낌을 받아요.
-[ 90.61s][user ] Marilyn Horne Dance Center는 언제부터 운영했어요? ⟨ret@93.32s⟩
-[ 93.56s][moshi] ⟦⚡SPAN@93.56s: Marilyn Horne Dance Center was founded by Abby Lee Miller in 1987 and later evolved into the Abby Lee Dance Co⟧ Marilyn Horne Dance Center는 천구백팔십칠년에 애비 리 밀러 선생님이 설립했고, 나중에 애비 리 댄스 컴퍼니로 발전했어요. 초창기부터 춤에 대한 열정이 대단했던 것 같아요.
-[104.89s][user ] «backchannel» 어.
-[105.38s][user ] 그럼 애비 리 댄스 컴퍼니는 천구백팔십칠년부터 시작된 거네요?
-[109.32s][moshi] 네, 맞아요. 천구백팔십칠년부터 시작해서 피츠버그에서 오랜 시간 동안 운영되었죠.
-[113.75s][user ] «backchannel» 응.
-[114.24s][user ] 혹시 그 시절에 어떤 스타일의 춤을 주로 가르쳤는지 알 수 ⟨ret@119.26s⟩ 있을까요?
-[119.66s][moshi] ⟦⚡SPAN@119.66s: The Abby Lee Dance Company initially focused on teaching lyrical and contemporary dance styles, later incorpor⟧ 애비 리 댄스 컴퍼니는 처음에는 리리컬과 컨템퍼러리 댄스 스타일을 중심으로 가르쳤고, 나중에는 재즈, 힙합, 발레도 추가했어요. 다양한 스타일을 가르쳤군요.
-[129.02s][user ] 다양한 스타일을 가르쳤군요. 그럼 애비 리 선생님은 발레도 직접 가르쳤어요?
-[133.94s][moshi] 그런 것 같아요. 다양한 스타일을 가르치면서 학생들의 재능을 키워주신 것 같아요.
+[  0.00s][user ] 음, 돈에 “In God We Trust”가 언제 처음 새겨졌는지 ⟨ret@5.16s⟩ 궁금해.
+[  5.48s][moshi] ⟦⚡SPAN@5.48s: The United States first authorized the use of “In God We Trust” on coins in 1864, during the Civil War.⟧ 돈에 “In God We Trust”가 처음 새겨진 건, 남북전쟁 시기인 천팔백육십사년이에요. 당시 동전에 사용하도록 허가되었답니다.
+[ 13.70s][user ] «backchannel» 응.
+[ 14.25s][user ] 천팔백육십사년이라고? 그게 왜 갑자기 나타난 건데?
+[ 17.53s][moshi] 그건 당시 전쟁 중에 국민적인 믿음을 강화하려는 의도였던 것 같아요.
+[ 23.01s][user ] 믿음 강화라… 좀 이상한데. 그전에는 없었잖아? ⟨ret@26.22s⟩
+[ 26.30s][moshi] ⟦⚡SPAN@26.30s: Prior to 1864, the motto “E Pluribus Unum” (“Out of Many, One”) appeared on United States coins.⟧ 천팔백육십사년 이전에는 “E Pluribus Unum”, 즉 “다수로부터 하나”라는 문구가 미국 동전에 새겨져 있었어요.
+[ 33.42s][user ] 아, 그건 알지. 그럼 “In…
+[ 36.16s][user ] …God We Trust”가 완전히 대체한 거야?
+[ 39.45s][moshi] 완전히 대체하기까지는 시간이 좀 걸렸어요. 점차적으로 사용이 확대되었답니다.
+[ 43.84s][user ] 점차적으로? 얼마나 걸렸는데? —
+[ 46.03s][user ] …근데 그게 진짜 돈에 영향을 줬을까? 경제적으로?
+[ 49.86s][user ] «backchannel» 어.
+[ 50.41s][moshi] ⟨ret@50.09s⟩ ⟦⚡SPAN@50.41s: In 1956, “In God We Trust” became the official motto of the United States, replacing “E Pluribus Unum”.⟧ 천구백오십육년에 “In God We Trust”가 미국의 공식 모토가 되었고, “E Pluribus Unum”을 대체했어요.
+[ 57.53s][user ] 공식 모토라… 그럼 지금도 계속 쓰고 있는 거야?
+[ 61.92s][moshi] 네, 지금도 미국 동전과 지폐에 “In God We Trust”가 새겨져 있습니다.
+[ 67.94s][user ] 신기하네. 계속 유지되고 있다니.
+[ 70.14s][moshi] 그런 역사가 있는 거죠. 마음의 평화를 찾는데 도움이 되었으면 좋겠어요.
+[ 75.62s][user ] «backchannel» 그래.
+[ 76.16s][user ] 마음의 평화라… 고마워, 바리엔.

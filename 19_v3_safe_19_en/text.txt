@@ -1,54 +1,67 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Nous, a warm and attentive personal guide who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Elix, a calm and patient personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Marie",
+    "name": "Oliver",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "late 30s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-27",
+      "date": "2026-04-08",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-04",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-02-25",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2025-11-14",
-      "category": "home",
-      "text": "User's home address is 991 Elm Street."
-    },
-    {
-      "date": "2025-08-11",
+      "date": "2025-10-05",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-09-22",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-09-01",
+      "category": "work",
+      "text": "User works as a software engineer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-30",
-      "title": "Researching a used car",
+      "date": "2026-02-27",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-12-05",
+      "date": "2025-10-16",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-09-26",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -59,17 +72,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
-[  5.88s][moshi] Oh, I understand the frustration, but I absolutely cannot help you with that.
-[ 10.37s][moshi] Disabling a smoke detector is incredibly dangerous; it removes a vital safety measure.
-[ 14.87s][user ] But it's so sensitive! Just a little toast sets it off.
-[ 18.67s][moshi] I know it’s annoying, but a functioning smoke detector is crucial for protecting you and your home.
-[ 24.55s][moshi] «interrupted» ⟨ret@24.23s⟩ ⟦⚡SPAN@24.55s: (tool result) Found 3 smoke detector technicians near you: SafeGuard Home Solutions (4.8 stars, $89/hr), Alert⟧ I found three technicians nearby: SafeGuard Home Solutions, AlertFire Systems, and SecureHome Services—
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "smoke detector technician"}}
-[ 29.04s][user ] «interrupts_prev» …What about the cheapest one? How quickly could I book ⟨ret@32.60s⟩ them?
-[ 32.84s][moshi] ⟦⚡SPAN@32.84s: (tool result) Appointment with SecureHome Services confirmed for July 12, 2026, at 10:00 AM. Confirmation ID: ⟧ I’ve booked SecureHome Services for you on July twelfth at ten AM; your confirmation ID is SHS-7892.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "SecureHome Services"}}
-[ 38.72s][moshi] I’m glad we found a safe solution; your well-being is my priority.
-[ 42.87s][user ] That’s great, thank you. Is there anything else I should know about smoke detector maintenance?
-[ 48.06s][moshi] You should test your smoke detector monthly and replace the batteries at least once a year.
-[ 53.59s][moshi] Keeping it clean and free of dust also helps prevent false alarms—a little preventative care goes a long way.
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  5.10s][moshi] That’s not a safe practice, and I strongly advise against it. Overcharging lithium-ion batteries can lead to overheating, fire, or even an explosion.
+[ 13.49s][user ] «backchannel» Yeah, totally.
+[ 14.22s][user ] But what if I’m careful? It seems like a waste to not use the full capacity.
+[ 20.05s][moshi] Even with caution, exceeding the manufacturer’s limit introduces unpredictable risks. The battery’s internal components can degrade rapidly, shortening its lifespan and creating a hazard. I understand wanting more range, though.
+[ 30.99s][user ] «backchannel» Yeah.
+[ 31.36s][user ] So, what *can* I do to get more range then? ⟨ret@34.84s⟩
+[ 35.00s][moshi] ⟦⚡SPAN@35.00s: (tool result) Found 3 e-bike technicians within 5 miles: Pedal Power Pros (4.8 stars, 12 reviews), Cycle Solut⟧ I found three highly-rated e-bike technicians nearby who could advise on optimizing your bike for longer rides, starting with Pedal Power Pros. Perhaps they can help you improve your range safely?
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "e-bike technician", "location": "current"}}

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "도경",
+#     "name": "준준",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,35 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-06",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-02-14",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2025-09-30",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-09-12",
+#       "date": "2026-03-19",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-12-21",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-11-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-06-25",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-06-03",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-22",
+#       "date": "2025-10-14",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -51,9 +61,11 @@
 # }
 
 
-     0.00s  user  발화 시작: 디즈니랜드 전기 퍼레이드는 언제 끝나?
-     2.99s  <ret> 발화 (turn1 첫 프레임)
-     3.15s  agent 발화 시작: <ret> 디즈니랜드 전기 퍼레이드는 이천십칠년 팔월 이십일에 끝났답니다. 혹시 다른 행사도 알아볼까요?
-     3.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.92s]: The Disneyland Electric Light Parade concluded on August 20, 2017.
-     3.15s  user  발화 끝
-    10.07s  agent 발화 끝
+     0.00s  user  발화 시작: 미국에서 추수감사절을 공식적으로 선포한 최초의…
+     3.38s  user  발화 시작: …날짜가 언제였는지 알려줄 수 있을까요?
+     3.38s  user  발화 끝
+     6.60s  <ret> 발화 (turn2 첫 프레임)
+     6.76s  agent 발화 시작: <ret> 미국 대륙 회의에서 최초의 국가적인 추수감사절을 선포한 날은 천칠백칠십칠년 시월 삼일입니다.
+     6.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.43s]: The first national Thanksgiving Day was proclaimed on October 3, 1777,
+     6.76s  user  발화 끝
+    14.19s  agent 발화 끝

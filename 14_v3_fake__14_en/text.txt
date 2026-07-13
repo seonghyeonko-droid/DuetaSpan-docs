@@ -1,110 +1,95 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Biana, a curious and validating counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Oreaon, a upbeat and supportive personal guide who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Sam",
+    "name": "Jordan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "French"
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-06-03",
+      "category": "home",
+      "text": "User's home address is 591 Cedar Lane."
     },
     {
-      "date": "2025-12-08",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-10-06",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-07-20",
+      "date": "2026-01-26",
       "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-05-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-10-14",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-09-18",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2025-09-11",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-14",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-06-24",
-      "title": "Apartment hunting downtown",
+      "date": "2026-04-29",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Biana, I was wondering about the 1796 election.
-[  3.89s][moshi] Hello! It’s lovely to explore history with you. What specifically are you curious about?
-[  9.94s][user ] Who was the Federalist candidate that ⟨ret@12.64s⟩ year?
-[ 12.96s][moshi] ⟦⚡SPAN@12.96s: John Adams was the Federalist candidate in the 1796 presidential election, and he defeated Thomas Jefferson.⟧ The Federalist candidate in 1796 was, in fact, John Adams, and he defeated Thomas Jefferson.
-[ 19.44s][user ] Oh, okay.
-[ 20.31s][moshi] It’s good to have that clarified. Elections can be quite complex, don't you think?
-[ 26.36s][user ] Yeah, they really are. What about the election of 1800? ⟨ret@30.52s⟩
-[ 30.68s][moshi] ⟦⚡SPAN@30.68s: In the 1800 election, Thomas Jefferson of the Democratic-Republican Party defeated incumbent John Adams.⟧ In 1800, Thomas Jefferson defeated incumbent John Adams, representing the Democratic-Republican Party.
-[ 35.86s][user ] Interesting.
-[ 36.30s][moshi] Political shifts are always fascinating, aren’t they? It's a story of changing ideas.
-[ 41.91s][user ] «backchannel» Yeah.
-[ 42.34s][user ] So, Adams lost his re-election ⟨ret@44.62s⟩ bid?
-[ 44.94s][moshi] ⟦⚡SPAN IRRELEVANT@44.94s: The current temperature in London is 18.5°C with clear skies and a gentle breeze from the southwest.⟧ Yes, that is correct. He served only one term as president.
-[ 49.69s][moshi] It's often difficult for leaders to hold onto power, even when they've done well.
-[ 55.74s][user ] «backchannel» Okay.
-[ 56.17s][moshi] It can be a very stressful time for anyone in a position like that. A lot of pressure.
-[ 63.95s][user ] I can imagine. Were there…
-[ 66.11s][user ] …any major issues driving that election? ⟨ret@68.54s⟩
-[ 68.70s][moshi] ⟦⚡SPAN@68.70s: The Alien and Sedition Acts, passed under Adams, were a major point of contention in the 1800 election.⟧ The Alien and Sedition Acts, passed during Adams’ presidency, were a major issue, driving much of the debate.
-[ 76.48s][user ] What were those acts about? ⟨ret@78.48s⟩
-[ 78.64s][moshi] ⟦⚡SPAN@78.64s: The Alien and Sedition Acts restricted immigration and limited criticism of the government.⟧ Those Acts restricted immigration and limited criticism of the government, stirring up considerable controversy.
-[ 84.69s][user ] Wow, that sounds… restrictive.
-[ 86.42s][moshi] It was a very controversial period, and understandably so. It felt like a limitation to many.
-[ 93.33s][user ] Do you think that hurt his chances?
-[ 96.36s][moshi] Many historians believe so. They were quite unpopular with a large segment of the population.
-[102.84s][user ] «backchannel» Uh-huh.
-[103.27s][user ] That makes sense.
-[104.57s][moshi] It's interesting how decisions can have such long-lasting effects, isn't it?
-[109.32s][user ] It really is. Um, what about Jefferson's platform? ⟨ret@112.62s⟩
-[112.78s][moshi] ⟦⚡SPAN@112.78s: Thomas Jefferson campaigned on a platform of limited government and states' rights in 1800.⟧ Jefferson campaigned on a platform of limited government and advocating for states’ rights.
-[118.39s][user ] So, a very different approach.
-[120.55s][moshi] Quite a contrast, yes. Different visions for the country’s future, certainly.
-[125.31s][user ] «backchannel» Yeah, totally.
-[126.17s][user ] It seems like a pretty big shift in philosophy.
-[130.06s][moshi] It was a significant turning point. A real change in direction for the nation.
-[136.11s][user ] I wonder if Adams saw it coming.
-[139.13s][moshi] It’s hard to say what anyone truly anticipates. It’s a complex thing, isn't it?
-[145.18s][user ] Yeah.
-[145.61s][moshi] Sometimes, even with careful planning, things don’t unfold as expected.
-[149.93s][user ] That’s life, I guess.
-[151.66s][moshi] It certainly is. It's about how we adapt and move forward, don't you think?
-[157.71s][user ] «backchannel» Yeah.
-[158.14s][user ] I suppose so.
-[159.44s][moshi] And knowing that history offers valuable lessons for us today.
+[  0.00s][user ] Hey Oreaon, when did LeBron James go back to play for the ⟨ret@4.55s⟩ Cavaliers?
+[  4.79s][moshi] ⟦⚡SPAN@4.79s: LeBron James signed with the Cleveland Cavaliers on July 11, 2014, returning to his home state team after four⟧ He signed with the Cavaliers on July eleventh, 2014, returning to Ohio after playing for the Heat. It’s a big moment in basketball history!
+[ 13.64s][user ] That's right, it was a huge deal. Do you think he'll ever go back again?
+[ 19.17s][moshi] It's hard to predict the future, but anything is possible in sports.
+[ 23.60s][user ] «backchannel» Yeah.
+[ 23.97s][user ] What was the biggest reason he left the first time? ⟨ret@27.49s⟩
+[ 27.65s][moshi] ⟦⚡SPAN@27.65s: LeBron James left the Cleveland Cavaliers in 2010, largely due to a perceived lack of support from the Cavalie⟧ He left in 2010, because he felt the Cavaliers’ ownership wasn’t building a team that could win championships. It was a tough decision.
+[ 36.13s][user ] «backchannel» Yeah.
+[ 36.50s][user ] Was Dwyane Wade involved in convincing him to go to ⟨ret@40.32s⟩ Miami?
+[ 40.56s][moshi] ⟦⚡SPAN@40.56s: Dwyane Wade and Chris Bosh were both instrumental in recruiting LeBron James to join the Miami Heat in the sum⟧ Yes, Dwyane Wade and Chris Bosh were key in getting him to join the Heat in 2010, forming a powerful trio.
+[ 48.30s][user ] «backchannel» Mhm.
+[ 48.67s][user ] So, it was a pretty coordinated effort then?
+[ 51.62s][moshi] It was a very deliberate and well-planned move by all three players. They envisioned a lot of success together.
+[ 58.62s][user ] What was his jersey number when he first played for the Cavs? ⟨ret@62.97s⟩
+[ 63.05s][moshi] ⟦⚡SPAN@63.05s: LeBron James wore jersey number 23 during his first stint with the Cleveland Cavaliers, from 2003 to 2010.⟧ He wore number 23 during his first time with Cleveland, from 2003 to 2010. It became iconic, really.
+[ 69.68s][user ] And did he wear the same number when he came back? —
+[ 74.11s][user ] … actually, before you finish, how did the fans react when he announced he was leaving the first ⟨ret@80.79s⟩ time?
+[ 81.11s][moshi] ⟦⚡SPAN@81.11s: When LeBron James announced his decision to leave the Cleveland Cavaliers in 2010, many fans felt betrayed and⟧ Many fans felt betrayed and were very angry, even burning his jerseys, when he announced he was leaving in 2010. It was a really difficult time for the city.
+[ 91.81s][user ] Wow, that sounds intense. Okay, back to the jersey number. ⟨ret@95.33s⟩
+[ 95.49s][moshi] ⟦⚡SPAN@95.49s: When LeBron James returned to the Cleveland Cavaliers in 2014, he switched his jersey number from 23 to 6, cit⟧ He switched to number 6 when he returned in 2014, wanting a fresh start. It was a symbolic change for him.
+[103.24s][moshi] ⟨ret@102.92s⟩ ⟦⚡SPAN IRRELEVANT@103.24s: The current temperature in Rome, Italy is 28.5°C with clear skies and a gentle breeze from the south at 7.2 km⟧ It’s great we got to talk about LeBron’s career. Planning a basketball trip sometime?
+[108.40s][user ] «backchannel» Yeah.
+[108.77s][user ] That's a good idea, actually. Maybe a trip to see a game!
+[113.19s][moshi] That sounds fantastic! I can definitely help you plan a trip centered around basketball. Where would you like to go?

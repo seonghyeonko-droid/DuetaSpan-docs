@@ -1,110 +1,78 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Relis, a practical and reassuring life coach who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Temi, a calm and patient counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Olivia",
+    "name": "Casey",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-12",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-06-26",
+      "category": "home",
+      "text": "User's home address is 188 Cedar Lane."
     },
     {
-      "date": "2025-10-12",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-09-13",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-05-31",
+      "date": "2026-04-23",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-04-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-08-14",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-07-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-06-23",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-29",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-05-31",
+      "date": "2025-08-21",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-13",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to decide on a liqueur for a party. What's Kerrygold Irish Cream Liqueur mostly known for? ⟨ret@6.84s⟩
-[  7.00s][moshi] ⟦⚡SPAN@7.00s: Kerrygold Irish Cream Liqueur is a blend of Irish whiskey, Irish cream, and chocolate—making it a popular choi⟧ It’s a lovely choice! Kerrygold Irish Cream Liqueur is a blend of Irish whiskey, Irish cream, and chocolate—making it a popular choice for dessert drinks. It's quite versatile.
-[ 17.89s][user ] Chocolate, huh? Is it actually made *in* Ireland? ⟨ret@20.85s⟩
-[ 21.01s][moshi] ⟦⚡SPAN@21.01s: Kerrygold is a brand owned by the Irish Dairy Board, established in 1962, and is now known as Ornua.⟧ Yes, it is! Kerrygold is a brand owned by the Irish Dairy Board, established in 1962, and is now known as Ornua. That's a bit of history for you.
-[ 32.29s][user ] «backchannel» Oh.
-[ 32.68s][user ] Ornua? Never heard of them. What…
-[ 35.01s][user ] …kind of products does Ornua actually ⟨ret@37.41s⟩ sell?
-[ 37.73s][moshi] ⟦⚡SPAN@37.73s: Ornua is a global Irish food company that produces and markets a range of dairy products, including cheese, bu⟧ Ornua is a global Irish food company that produces and markets a range of dairy products, including cheese, butter, and ingredients. They're quite big in the dairy world.
-[ 48.62s][user ] So, primarily dairy products then?
-[ 50.57s][moshi] That’s right. It’s a very dairy-focused company, yes. You're thinking ahead, which is good.
-[ 56.01s][user ] «backchannel» Yeah.
-[ 56.40s][user ] I'm thinking of mixing it with coffee. Is that a common thing to do?
-[ 61.85s][moshi] It's delicious in coffee, actually. A very popular combination.
-[ 65.35s][user ] Okay, good. What's the alcohol percentage, ⟨ret@67.83s⟩ roughly?
-[ 68.07s][moshi] ⟦⚡SPAN@68.07s: Kerrygold Irish Cream Liqueur contains 17% alcohol by volume.⟧ It contains 17% alcohol by volume. A moderate strength, perfect for sipping or mixing.
-[ 73.52s][user ] «backchannel» Really?
-[ 73.91s][user ] Seventeen percent… that's not too bad. Is it a recent product, or has it been around a ⟨ret@80.51s⟩ while?
-[ 80.91s][moshi] ⟦⚡SPAN@80.91s: Kerrygold Irish Cream Liqueur was first introduced in 1999, becoming a popular addition to the Kerrygold portf⟧ It was first introduced in 1999, becoming a popular addition to the Kerrygold portfolio. It’s relatively new compared to some liqueurs.
-[ 89.08s][user ] 1999? That *is* recent. Is it widely available in the ⟨ret@92.96s⟩ US?
-[ 93.36s][moshi] ⟦⚡SPAN@93.36s: Kerrygold Irish Cream Liqueur is available in select US states, including California, Florida, and Massachuset⟧ It's available in select US states, including California, Florida, and Massachusetts. Availability can vary, though.
-[ 99.19s][user ] «backchannel» Yeah.
-[ 99.58s][user ] Okay, so not everywhere. What about Canada? ⟨ret@102.22s⟩
-[102.30s][moshi] ⟦⚡SPAN@102.30s: Kerrygold Irish Cream Liqueur is widely available across Canada, particularly in liquor stores in Ontario and ⟧ It's widely available across Canada, particularly in liquor stores in Ontario and British Columbia. Much easier to find there!
-[109.70s][user ] «backchannel» Mm-hmm.
-[110.08s][user ] Good to know. I wonder if they ship directly…
-[113.59s][moshi] «interrupted» I can check if they offer direct shipping. One moment—
-[117.48s][user ] «interrupts_prev» …Actually, what other flavors do they make? ⟨ret@120.04s⟩
-[120.20s][moshi] ⟦⚡SPAN@120.20s: Kerrygold Irish Cream Liqueur is currently only available in its original flavor; there are no other official ⟧ It’s currently only available in its original flavor; there are no other official flavor variations. It seems they’ve stuck with the classic.
-[128.76s][user ] «backchannel» Yeah.
-[129.15s][user ] Oh, just the original, huh? That’s a shame. Is it expensive, ⟨ret@133.57s⟩ roughly?
-[133.81s][moshi] ⟦⚡SPAN@133.81s: A 750ml bottle of Kerrygold Irish Cream Liqueur typically retails for around $29.99 in the United States.⟧ A 750ml bottle typically retails for around $29.99 in the United States. It's fairly reasonably priced, I’d say.
-[140.81s][user ] Thirty dollars… not terrible. What about online retailers? Are there any good ⟨ret@145.63s⟩ deals?
-[145.87s][moshi] ⟦⚡SPAN@145.87s: (tool result) Drizly offers Kerrygold Irish Cream Liqueur for $32.99 with delivery options; Total Wine & More ⟧ Drizly offers it for $32.99 with delivery, while Total Wine & More lists it for $27.99 for in-store pickup.
-      CALL: {"function": "search", "arguments": {"query": "buy Kerrygold Irish Cream Liqueur online"}}
-[153.26s][user ] «backchannel» Uh-huh.
-[153.65s][user ] Total Wine sounds better. Do they have locations near me? ⟨ret@157.46s⟩
-[157.54s][moshi] ⟦⚡SPAN@157.54s: (tool result) Total Wine & More - Northridge, 9301 De Soto Ave, Chatsworth, CA 91311. 1.2 miles away.⟧ There's a Total Wine & More at 9301 De Soto Ave, Chatsworth, CA 91311, just 1.2 miles away.
-      CALL: {"function": "map_search_places", "arguments": {"query": "Total Wine & More"}}
-[164.54s][user ] «backchannel» Mm-hmm.
-[164.93s][user ] Perfect! Thanks. Do you have any advice for throwing a good party?
-[169.60s][moshi] Planning is key, of course. Remember to have a good mix of music and snacks.
-[175.44s][user ] Music, right. Any recommendations? Something upbeat?
-[177.77s][moshi] Upbeat music always sets a good mood! Consider a playlist with classic hits.
-[182.83s][user ] «backchannel» Yeah.
-[183.21s][user ] Good idea. I always forget about the playlist. What's the weather going to be like on Saturday? ⟨ret@189.67s⟩
-[189.83s][moshi] ⟦⚡SPAN@189.83s: (tool result) Saturday: High 82°F, low 68°F, sunny. Wind 5 mph from the west.⟧ Saturday will be sunny with a high of 82°F and a low of 68°F. A lovely day for a party!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chatsworth, CA"}}
-[197.61s][user ] Sounds perfect. Thanks, Relis.
-[199.16s][moshi] You’re very welcome. Remember, a relaxed host makes for relaxed guests.
+[  0.00s][user ] I’m trying to settle in here, and I love music. Who was born first, John Tardy or Tom Barman? ⟨ret@6.10s⟩
+[  6.26s][moshi] ⟦⚡SPAN@6.26s: John Tardy was born on September 26, 1973, while Tom Barman was born on October 12, 1970.⟧ Well, it appears John Tardy was born a little later; Tom Barman arrived on October twelfth, nineteen seventy. It's nice to find common ground through music when you’re new to a place.
+[ 16.80s][user ] Uh, nineteen seventy? That doesn’t sound right. Are you sure about that date? ⟨ret@20.92s⟩
+[ 21.08s][moshi] ⟦⚡SPAN@21.08s: Tom Barman was born on October 12, 1970, in Antwerp, Belgium, and is known as the frontman for the band dEUS.⟧ You’re right to question me! My apologies. Tom Barman was indeed born on October twelfth, nineteen seventy, in Antwerp. I double-checked the information for you.
+[ 29.31s][user ] Okay, good. So, what's the weather like ⟨ret@31.63s⟩ today?
+[ 31.95s][moshi] ⟦⚡SPAN@31.95s: (tool result) Current conditions: 22.0°C, humidity 65%, wind 3.1 km/h.⟧ Right now, it’s twenty-two degrees Celsius, with sixty-five percent humidity and a gentle breeze of three point one kilometers per hour. A pleasant day to explore the city, perhaps?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}

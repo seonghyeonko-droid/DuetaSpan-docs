@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "민완",
+#     "name": "서서",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,39 +13,44 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-06-19",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-05-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2026-04-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-19",
+#       "date": "2026-02-19",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-11-28",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-06-10",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-05-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,20 +58,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-18",
+#       "date": "2026-01-11",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-08",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 리버데일 시즌 일의 십이화는 언제 방영됐어요?
-     3.18s  <ret> 발화 (turn1 첫 프레임)
-     3.34s  agent 발화 시작: <ret> 리버데일 시즌 일의 십이화는 이천십칠년 오월 사일에 방영됐어요. 혹시 다른 에피소드에 대해서도 궁
-     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.24s]: The twelfth episode of Riverdale’s first season aired on May 4, 2017.
-     3.34s  user  발화 끝
-    10.58s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 'Send Em On Down The Road'라는 곡을 누가 썼는지 알 수 있을까요?
+     5.72s  <ret> 발화 (turn1 첫 프레임)
+     5.88s  agent 발화 시작: <ret> 그 곡은 천구백칠십오년에 마크 비슨 씨가 쓰시고 발표하셨답니다.
+     5.88s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.62s]: Marc Beeson wrote and released “Send Em On Down The Road” in 1975.
+     5.88s  user  발화 끝
+     9.50s  agent 발화 끝

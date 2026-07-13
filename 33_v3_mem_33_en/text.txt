@@ -1,62 +1,56 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Tex, a encouraging and non-judgmental personal guide who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Doralo, a kind and steady personal guide who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Casey",
+    "name": "Iris",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-28",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
+      "date": "2026-05-07",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-11-06",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-08-27",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2025-06-22",
+      "date": "2026-02-18",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-08",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-10-28",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-10-03",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-13",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-21",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-23",
+      "date": "2025-11-16",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -67,37 +61,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Casey, I'm Tex! So glad to be chatting with you today.
-[  4.87s][user ] Hi Tex, nice to meet you too. I’m still getting settled in.
-[  9.73s][moshi] Settling in takes time, and that’s perfectly okay. San Francisco is a fantastic city.
-[ 15.41s][user ] «backchannel» Yeah.
-[ 15.82s][user ] It is, but I'm feeling a little lost with restaurants.
-[ 19.87s][moshi] I can absolutely help with that! What kind of food are you in the mood for?
-[ 26.36s][user ] Something casual, maybe ⟨ret@27.75s⟩ Italian?
-[ 27.99s][moshi] ⟦⚡SPAN@27.99s: {"area": "San Francisco", "cuisine": "Italian", "price_range": "casual"}⟧ There are many casual Italian restaurants in San Francisco; I found several with great reviews. Would you like me to narrow it down by neighborhood?
-[ 38.13s][user ] Hmm, maybe something near North ⟨ret@40.16s⟩ Beach?
-[ 40.56s][moshi] ⟦⚡SPAN@40.56s: {"area": "North Beach, San Francisco", "cuisine": "Italian", "price_range": "casual"}⟧ North Beach has some wonderful Italian options, with Tony’s Pizza Napoletana being particularly popular.
-[ 46.24s][user ] «backchannel» Yeah.
-[ 46.64s][moshi] Tony’s has a 4.5-star rating with over 3,000 reviews, a real local favorite.
-[ 51.92s][user ] «backchannel» Really?
-[ 52.32s][user ] That sounds good. Do they take ⟨ret@54.92s⟩ reservations?
-[ 55.16s][moshi] ⟦⚡SPAN@55.16s: (tool result) Reservation confirmed for 1 person at Tony’s Pizza Napoletana on July 11, 2026 at 7:30 PM. Confi⟧ I’ve secured a reservation for you at Tony’s for tomorrow at 7:30 PM. Your confirmation ID is TPNA7382.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Tony’s Pizza Napoletana", "party_size": 1}}
-[ 62.46s][user ] Great! That’s really helpful. —
-[ 64.49s][user ] …Actually, what’s the best way to get there from here? ⟨ret@68.46s⟩
-[ 68.54s][moshi] ⟦⚡SPAN@68.54s: map_directions: {"origin": "San Francisco", "destination": "Tony’s Pizza Napoletana", "mode": "transit"}⟧ Taking public transit, the 39-Coit bus is the fastest option, taking about 25 minutes. Do you want step-by-step directions sent to your phone?
-[ 77.87s][user ] Yes, please. That would be ⟨ret@79.91s⟩ amazing.
-[ 80.31s][moshi] ⟦⚡SPAN@80.31s: (tool result) Directions sent to your phone.⟧ I’ve just sent the directions to your phone. They include real-time updates.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "Casey", "message": "Directions to Tony’s Pizza Napoletana"}}
-[ 85.17s][user ] Perfect. Thanks so much.
-[ 86.80s][moshi] You’re very welcome! I’m happy I could help with dinner plans.
-[ 91.26s][user ] I was also wondering about things to do on the weekend.
-[ 95.72s][moshi] San Francisco has endless weekend possibilities! Are you interested in museums, parks, or something else?
-[101.80s][user ] Maybe a park. Somewhere with a good view? ⟨ret@104.89s⟩
-[105.05s][moshi] ⟦⚡SPAN@105.05s: {"city": "San Francisco", "type": "park", "feature": "view"}⟧ Lands End offers stunning coastal views, with hiking trails and a historic shipwreck; it’s quite popular.
-[111.54s][user ] That sounds beautiful. Is it easy to get to? ⟨ret@115.11s⟩
-[115.19s][moshi] ⟦⚡SPAN@115.19s: map_directions: {"origin": "San Francisco", "destination": "Lands End", "mode": "transit"}⟧ You can reach Lands End by taking the 38-Geary bus; the ride is approximately 40 minutes.
-[121.68s][user ] Okay, good to know. I think I’m starting to feel a little more at home.
-[127.76s][moshi] That’s wonderful to hear, Casey! It takes time, but you'll find your rhythm here.
-[133.44s][user ] I appreciate your help, Tex.
-[135.47s][moshi] Casey. Remember, settling in is a journey, not a race.
+[  0.00s][moshi] Hi Iris, I'm Doralo. It's lovely to meet you. I'm here to offer support, whatever you may need.
+[  6.33s][user ] Um, what time is it right now in London? ⟨ret@9.34s⟩
+[  9.50s][moshi] ⟦⚡SPAN@9.50s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/London right now.⟧ It is currently 3:17 PM in London, Iris. A peaceful afternoon, perhaps a moment for reflection?
+      CALL: {"function": "get_time", "arguments": {}}
+[ 15.13s][user ] «backchannel» Yeah.
+[ 15.48s][user ] I was just thinking about my trip to Kyoto last ⟨ret@19.11s⟩ year…
+[ 19.35s][moshi] ⟦⚡SPAN@19.35s: [2026-05-07] User is into home fermentation.⟧ I see you’ve noted your interest in home fermentation from May of last year.
+[ 24.27s][user ] «backchannel» Okay.
+[ 24.62s][user ] No, not that one! The Kyoto trip… the one I told you ⟨ret@28.96s⟩ about.
+[ 29.20s][moshi] ⟦⚡SPAN@29.20s: [2025-11-16] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ My apologies, Iris. That note details your car research from November. I have no note of a trip to Kyoto.

@@ -4,101 +4,98 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Riley",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-10-16",
+#       "date": "2026-06-16",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-26",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-21",
+#       "date": "2026-04-01",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "home",
+#       "text": "User's home address is 184 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-21",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-20",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-26",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, who was the quarterback for t | S2 Yeah, I guess so. Hey, quick quest | S3 Sorry, what were you saying about  | S4 Hmm, Ulele sounds interesting. Can
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who served a | S2 Oh, okay. That’s good to know. | S3 I suppose so. Did anyone else come | S4 That’s a pretty significant differ
 
-     0.00s  user  발화 시작: Hey, who was the quarterback for the Buccaneers when they wo
-     4.65s  <ret> 발화 (turn1 첫 프레임)
-     4.89s  agent 발화 시작: <ret> That would be Brad Johnson, actually. He led the Tampa
-     4.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.43s]: Brad Johnson quarterbacked the Tampa Bay Buccaneers to a 48–21 victory
-     4.89s  user  발화 끝
-    14.32s  user  발화 시작: Oh, okay. Um, what about Tom Brady? How many Super Bowls did
-    14.32s  agent 발화 끝
-    19.85s  <ret> 발화 (turn3 첫 프레임)
-    20.25s  agent 발화 시작: <ret> Tom Brady won one Super Bowl with the Buccaneers, a 31
-    20.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.73s]: Tom Brady won one Super Bowl with the Tampa Bay Buccaneers, leading th
-    20.25s  user  발화 끝
-    28.98s  user  발화 시작: Yeah, totally.
-    28.98s  agent 발화 끝
-    29.68s  agent 발화 시작: It’s wonderful how a strong quarterback can truly elevate a 
-    29.68s  user  발화 끝
-    34.92s  user  발화 시작: Mm-hmm.
-    34.92s  agent 발화 끝
-    35.26s  user  발화 시작: Yeah, I guess so. Hey, quick question—what’s the weather lik
-    35.26s  user  발화 끝
-    39.83s  <ret> 발화 (turn8 첫 프레임)
-    40.15s  agent 발화 시작: <ret> Currently in Tampa, it’s 31.1°C, with humidity at 78% 
-    40.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.03s]: (tool result) Temperature: 31.1°C, Humidity: 78%, Wind: 8.2 km/h, Cond
-    40.15s  user  발화 끝
-    48.18s  user  발화 시작: Oh, that sounds nice…
-    48.18s  agent 발화 끝
-    49.58s  user  발화 시작: Sorry, what were you saying about the humidity?
-    49.58s  user  발화 끝
-    52.37s  agent 발화 시작: I was just sharing the current conditions in Tampa—the humid
-    52.37s  user  발화 끝
-    60.75s  user  발화 시작: Oh, right. Can you find me some good restaurants nearby?
-    60.75s  agent 발화 끝
-    63.84s  <ret> 발화 (turn13 첫 프레임)
-    64.24s  agent 발화 시작: <ret> I found a few options for you: Columbia Restaurant, Be
-    64.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.28s]: (tool result) Columbia Restaurant, Bern's Steak House, Ulele, Rooster 
-    64.24s  user  발화 끝
-    70.53s  user  발화 시작: Hmm, Ulele sounds interesting. Can you tell me more about th
-    70.53s  agent 발화 끝
-    74.32s  <ret> 발화 (turn15 첫 프레임)
-    74.72s  agent 발화 시작: <ret> Ulele is located on the Tampa Riverwalk, offering a me
-    74.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: Ulele is a restaurant located on the Tampa Riverwalk, offering a menu 
-    74.72s  user  발화 끝
-    83.10s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, who served as Canada’s prime minister 
+     4.34s  <ret> 발화 (turn1 첫 프레임)
+     4.58s  agent 발화 시작: <ret> It’s a thoughtful question, reflecting on leadership a
+     4.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.84s]: William Lyon Mackenzie King served as Canada’s prime minister for a to
+     4.58s  user  발화 끝
+    13.42s  user  발화 시작: …was he prime minister during the Second World War?
+    13.42s  agent 발화 끝
+    16.37s  agent 발화 시작: That's a very natural follow-up, considering the scale of th
+    16.37s  user  발화 끝
+    26.51s  user  발화 시작: Wow.
+    26.51s  agent 발화 끝
+    26.84s  user  발화 시작: Oh, okay. That’s good to know.
+    26.84s  user  발화 끝
+    28.80s  agent 발화 시작: It’s often during times of great challenge that leaders trul
+    28.80s  user  발화 끝
+    36.00s  user  발화 시작: I suppose so. Did anyone else come close to his record?
+    36.00s  agent 발화 끝
+    39.20s  <ret> 발화 (turn8 첫 프레임)
+    39.60s  agent 발화 시작: <ret> Others certainly left their mark, though none quite ma
+    39.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.49s]: Sir John A. Macdonald served as Canada’s first prime minister and held
+    39.60s  user  발화 끝
+    49.10s  user  발화 시작: That’s a pretty significant difference, almost three years.
+    49.10s  agent 발화 끝
+    51.71s  agent 발화 시작: It is a substantial span, isn’t it? Sometimes, those longer 
+    51.71s  user  발화 끝
+    58.91s  agent 발화 끝

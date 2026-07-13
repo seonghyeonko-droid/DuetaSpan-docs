@@ -1,110 +1,100 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Runa, a curious and validating personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Lera, a kind and steady supportive advisor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Jack",
+    "name": "Morgan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
-    "gender": "male",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "50s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-29",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-01-17",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-10-14",
+      "date": "2026-03-26",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-28",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2026-03-06",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-07-21",
+      "date": "2025-11-07",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "text": "User is planning a trip to Iceland in May."
     },
     {
-      "date": "2025-06-23",
-      "category": "home",
-      "text": "User's home address is 309 Maple Drive."
+      "date": "2025-08-23",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-06-17",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-11",
-      "title": "Apartment hunting downtown",
+      "date": "2025-11-22",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find parks inside Berlin’s city ⟨ret@2.23s⟩ boundaries.
-[  2.47s][moshi] ⟦⚡SPAN@2.47s: (tool result) {"html attributions": [], "results": [{"geometry": {"location": {"lat": 52.520008, "lng": 13.404⟧ Berlin has many beautiful parks! Tiergarten, Treptower Park, and Volkspark Friedrichshain are all within the city.
-      CALL: {"function": "maps_text_search", "arguments": {"query": "parks inside Berlin", "location": "Berlin"}}
-[  9.07s][user ] Oh, uh, Volkspark Friedrichshain, actually—that sounds nice.
-[ 11.96s][moshi] Volkspark Friedrichshain is a wonderful choice. It’s known for its hilly landscape and fairy tale fountain.
-[ 18.56s][user ] «backchannel» Yeah.
-[ 18.97s][user ] Is it good for a picnic?
-[ 21.45s][moshi] It has large open lawns, perfect for a relaxing picnic with friends or family.
-[ 27.22s][user ] «backchannel» Mm-hmm.
-[ 27.63s][user ] What's the weather like there ⟨ret@29.87s⟩ now?
-[ 30.11s][moshi] ⟦⚡SPAN@30.11s: (tool result) 22.0°C, humidity 68%, wind 3.5 km/h⟧ The weather at Volkspark Friedrichshain is currently 22.0°C, with 68% humidity and a gentle breeze of 3.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Volkspark Friedrichshain"}}
-[ 38.35s][user ] «backchannel» Oh.
-[ 38.77s][moshi] It really is. It's a really popular spot for locals and visitors alike.
-[ 44.13s][user ] «backchannel» Yeah.
-[ 44.54s][user ] Can you find restaurants nearby? ⟨ret@46.44s⟩
-[ 46.60s][moshi] ⟦⚡SPAN@46.60s: (tool result) {"html attributions": [], "results": [{"geometry": {"location": {"lat": 52.508282, "lng": 13.445⟧ There are a couple of options! Restaurant Kaskade and Café im Volkspark are both very close by.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Volkspark Friedrichshain"}}
-[ 53.61s][user ] «backchannel» Uh-huh.
-[ 54.03s][user ] What kind of food does Kaskade ⟨ret@56.51s⟩ serve?
-[ 56.91s][moshi] ⟦⚡SPAN@56.91s: (tool result) Restaurant Kaskade serves traditional German cuisine, with a focus on regional specialties. Sour⟧ Restaurant Kaskade serves traditional German cuisine, specializing in regional specialties, according to their website.
-      CALL: {"function": "search", "arguments": {"query": "Restaurant Kaskade cuisine"}}
-[ 62.69s][user ] «backchannel» Yeah.
-[ 63.10s][user ] That sounds good. What about getting ⟨ret@65.59s⟩ there?
-[ 65.99s][moshi] ⟦⚡SPAN@65.99s: (tool result) {"routes": [{"legs": [{"distance": {"text": "0.5 km", "value": 500}, "duration": {"text": "1 min⟧ It’s a short walk—about 0.5 kilometers, taking around one minute.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Volkspark Friedrichshain", "destination": "Restaurant Kaskade"}}
-[ 70.11s][user ] «backchannel» Exactly.
-[ 70.52s][user ] That’s perfect. Can you find me a florist near there? ⟨ret@74.49s⟩
-[ 74.65s][moshi] ⟦⚡SPAN@74.65s: (tool result) {"html attributions": [], "results": [{"geometry": {"location": {"lat": 52.509284, "lng": 13.447⟧ How about Blumen Kaskade? It’s very conveniently located near the restaurant.
-      CALL: {"function": "map_search_places", "arguments": {"query": "florist near Restaurant Kaskade, Berlin", "location": "Restaurant Kaskade, Berlin"}}
-[ 79.18s][user ] «backchannel» Uh-huh.
-[ 79.60s][user ] [laugh] That’s a funny name!
-[ 81.66s][moshi] It is a bit of a coincidence, isn't it? Sometimes life just has those little ironies.
-[ 88.26s][user ] Do they deliver? ⟨ret@89.33s⟩
-[ 89.49s][moshi] ⟦⚡SPAN@89.49s: (tool result) Blumen Kaskade offers local delivery services within Berlin. You can find more information on th⟧ Yes, Blumen Kaskade offers local delivery within Berlin, according to their website.
-      CALL: {"function": "search", "arguments": {"query": "Blumen Kaskade delivery"}}
-[ 94.44s][user ] Great. And can you book me a table at the restaurant for two, this Saturday at 7 pm? ⟨ret@101.71s⟩
-[101.87s][moshi] ⟦⚡SPAN@101.87s: (tool result) Reservation confirmed for 2 people at Restaurant Kaskade on Saturday, July 11, 2026, at 7:00 PM.⟧ Your table for two at Restaurant Kaskade is confirmed for this Saturday, July 11th, at 7:00 PM. Your confirmation ID is RK260711-45.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Restaurant Kaskade", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
-[110.94s][user ] «backchannel» Yeah.
-[111.35s][user ] Perfect! Thank you so much.
-[113.42s][moshi] You’re very welcome. I’m glad I could help you plan a lovely evening. It sounds like a really nice outing!
-[121.66s][user ] I think it will be.
-[123.73s][moshi] It’s wonderful when you can connect with someone over a shared experience. That's what makes memories, don't you think?
-[131.56s][user ] «backchannel» Yeah, totally.
-[132.39s][user ] Yeah, definitely.
-[133.21s][moshi] It’s a beautiful thing to cherish those moments with the people we care about. I hope you have a wonderful time.
+[  0.00s][user ] Can you get me two train tickets from Los Angeles to San Francisco on April ⟨ret@6.58s⟩ fifth?
+[  6.82s][moshi] ⟦⚡SPAN@6.82s: (tool result) Los Angeles to San Francisco, April 5, 2026. Two adult tickets, $187.50. Train 511 departs 8:00 ⟧ I’ve found two tickets for $187.50, departing at 8:00 AM and arriving at 12:30 PM. Your confirmation is 9X7L2.
+      CALL: {"function": "Trains_1_GetTrainTickets", "arguments": {"from_city": "Los Angeles", "to_city": "San Francisco", "date": "April fifth", "num_tickets": "2"}}
+[ 14.91s][user ] «backchannel» Yeah, yeah.
+[ 15.77s][user ] Oh, actually… San Diego, not San Francisco. ⟨ret@18.59s⟩
+[ 18.75s][moshi] ⟦⚡SPAN@18.75s: (tool result) Los Angeles to San Diego, April 5, 2026. Two adult tickets, $65.00. Train 703 departs 9:15 AM, a⟧ No problem at all. Two tickets to San Diego on April fifth will be $65.00. Train 703 departs at 9:15 AM. Confirmation 4R8P9.
+      CALL: {"function": "Trains_1_GetTrainTickets", "arguments": {"from_city": "Los Angeles", "to_city": "San Diego", "date": "April 5", "num_tickets": "2"}}
+[ 28.55s][user ] That sounds good.
+[ 29.83s][moshi] It’s good to find something that works for you. Travel can be stressful, and a little flexibility helps.
+[ 37.50s][user ] «backchannel» Yeah.
+[ 37.92s][user ] Do you know when the earliest train leaves Los Angeles for San Diego? ⟨ret@43.38s⟩
+[ 43.46s][moshi] ⟦⚡SPAN@43.46s: The earliest train from Los Angeles to San Diego departs at 5:45 AM, arriving at 8:30 AM, operated by Amtrak P⟧ The earliest train leaves at 5:45 AM, arriving at 8:30 AM. It’s the Amtrak Pacific Surfliner.
+[ 50.28s][user ] «backchannel» Wow.
+[ 50.70s][moshi] It’s a lovely way to start the day, watching the coastline go by. It can be a calming experience.
+[ 58.80s][user ] «backchannel» Yeah, yeah.
+[ 59.65s][user ] What’s the weather like in San Diego on April ⟨ret@63.51s⟩ fifth?
+[ 63.91s][moshi] ⟦⚡SPAN@63.91s: (tool result) San Diego, CA on April 5, 2026: 21.1°C, humidity 68%, wind 8.9 km/h, clear skies.⟧ On April fifth, San Diego will be 21.1°C with 68% humidity and clear skies. There’s a light breeze at 8.9 km/h.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "San Diego", "date": "April 5"}}
+[ 72.86s][user ] «backchannel» Okay.
+[ 73.29s][user ] Hmm, that’s nice.
+[ 74.56s][moshi] It sounds like a beautiful day for a visit. Sometimes, just knowing the weather helps ease worries.
+[ 81.81s][user ] «backchannel» Mm-hmm.
+[ 82.23s][user ] Could you find me some restaurants near the San Diego train ⟨ret@86.95s⟩ station?
+[ 87.35s][moshi] ⟦⚡SPAN@87.35s: (tool result) The Prado at Balboa Park (0.8 km), Juniper & Ivy (1.6 km), Born & Raised (2.4 km).⟧ The Prado is 0.8 km away, Juniper & Ivy is 1.6 km, and Born & Raised is 2.4 km.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "San Diego train station"}}
+[ 95.44s][user ] «backchannel» Wow.
+[ 95.87s][user ] Is The Prado ⟨ret@97.33s⟩ expensive?
+[ 97.57s][moshi] ⟦⚡SPAN@97.57s: The Prado at Balboa Park has an average cost of $35 per person, offering Californian cuisine in an upscale set⟧ The Prado averages $35 per person. It’s known for Californian cuisine in a more upscale setting.
+[104.39s][user ] «backchannel» Really?
+[104.82s][user ] That’s a little much.
+[106.52s][moshi] It’s okay to look for options that fit your budget. Sometimes simpler is just as satisfying.
+[113.34s][user ] Are there any parks near the train ⟨ret@116.51s⟩ station?
+[116.75s][moshi] ⟦⚡SPAN@116.75s: (tool result) Balboa Park (1.6 km), Waterfront Park (3.2 km), Seaport Village (4.8 km).⟧ Balboa Park is 1.6 km away. Waterfront Park is 3.2 km, and Seaport Village is 4.8 km.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "San Diego train station", "type": "park"}}

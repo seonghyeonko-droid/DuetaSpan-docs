@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "세서",
+#     "name": "준원",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,119 +18,81 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-05-18",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-04-22",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-04-15",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-12-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     },
 #     {
-#       "date": "2026-03-17",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-30",
+#       "date": "2025-08-25",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-11-27",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-09-12",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User has a Poodle named Coco."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-25",
+#       "date": "2025-09-20",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 알람이 뭐뭐 설정되어 있는지 알려줘. | S2 …여덟시 반 알람은 완전히 삭제해 줘. | S3 음… 최신 개봉작 중에… 아, '아메리칸 그래피티' 보고 싶어 | S4 그럼, '범죄도시 사' 예매해 줘.
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 친구랑 영화 보러 가려고 하는데… | S2 아, '엘리멘탈' 봤어. 다른 거 찾아줘. 좀 더… 액션 같은 | S3 톰 크루즈 좋아하는데… 예매해 줘. 혹시, 저번에 얘기했던 거 | S4 영화 예매해 줘. '미션 임파서블' 두 장.
 
-     0.00s  user  발화 시작: 알람이 뭐뭐 설정되어 있는지 알려줘.
-     2.19s  <ret> 발화 (turn1 첫 프레임)
-     2.51s  agent 발화 시작: <ret> 알람은 두 개가 설정되어 있어요. 아침 일곱시에 기상 알람, 그리고 여덟시 삼십분에 회의 알람이요
-     2.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.02s]: (tool result) 07:00 AM - Wake up, 08:30 AM - Meeting reminder
-     2.51s  user  발화 끝
-     9.52s  user  발화 시작: 오.
-     9.52s  agent 발화 끝
-    10.02s  user  발화 시작: 아, 일곱시 알람은… 일곱시 반으로 바꿔줘.
-    10.02s  user  발화 끝
-    12.63s  <ret> 발화 (turn4 첫 프레임)
-    13.03s  agent 발화 시작: <ret> 네, 알람 시간을 일곱시 반으로 변경했고, 아이 디는 팔 오 구 이 일이에요.
-    13.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.52s]: (tool result) Alarm updated: 07:30 AM - Wake up, ID: 85921
-    13.03s  user  발화 끝
-    19.55s  user  발화 시작: 팔 오 구 이 일… 아, 그게 아니라…
-    19.55s  agent 발화 끝
-    23.56s  user  발화 시작: …여덟시 반 알람은 완전히 삭제해 줘.
-    23.56s  user  발화 끝
-    26.16s  <ret> 발화 (turn7 첫 프레임)
-    26.56s  agent 발화 시작: <ret> 회의 알람은 삭제했고, 아이 디는 이 구 사 칠 삼이었어요.
-    26.56s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.01s]: (tool result) Alarm deleted: 08:30 AM - Meeting reminder, ID: 29473
-    26.56s  user  발화 끝
-    31.58s  user  발화 시작: 어어.
-    31.58s  agent 발화 끝
-    32.08s  agent 발화 시작: 혹시 다른 알람도 수정하거나 추가할까요?
-    32.08s  user  발화 끝
-    34.58s  user  발화 시작: 아니, 지금은 괜찮아. 이번 주 토요일에 영화 예매 좀 해줘.
-    34.58s  agent 발화 끝
-    39.60s  agent 발화 시작: 이번 주 토요일 영화 예매요? 어떤 영화를 보고 싶으세요?
-    39.60s  user  발화 끝
-    44.11s  user  발화 시작: 음… 최신 개봉작 중에… 아, '아메리칸 그래피티' 보고 싶어.
-    44.11s  agent 발화 끝
-    48.38s  <ret> 발화 (turn13 첫 프레임)
-    48.62s  agent 발화 시작: <ret> '아메리칸 그래피티'는 천구백칠십삼년 팔월 십일일에 개봉한 조지 루카스 감독의 영화예요.
-    48.62s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.01s]: '아메리칸 그래피티'는 1973년 8월 11일에 개봉한 조지 루카스 감독의 영화입니다.
-    48.62s  user  발화 끝
-    53.63s  user  발화 시작: 진짜?
-    53.63s  agent 발화 끝
-    54.13s  user  발화 시작: 천구백칠십삼년이 아니라, 지금 상영하는 영화 말하는 거야.
-    54.13s  user  발화 끝
-    57.64s  agent 발화 시작: 아, 죄송해요. 현재 상영 중인 '아메리칸 그래피티'는 없네요. 다른 영화를 찾으시겠어요?
-    57.64s  user  발화 끝
-    63.15s  user  발화 시작: 맞아.
-    63.15s  agent 발화 끝
-    63.65s  user  발화 시작: 그럼, '범죄도시 사' 예매해 줘.
-    63.65s  user  발화 끝
-    65.92s  <ret> 발화 (turn19 첫 프레임)
-    66.16s  agent 발화 시작: <ret> '범죄도시 사'는 씨 지 브이 강남에서 오후 두시, 다섯시, 여덟시에 상영돼요.
-    66.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) 범죄도시 4 - CGV 강남, 14:00, 17:00, 20:00
-    66.16s  user  발화 끝
-    71.67s  user  발화 시작: 다섯시로 예매해 줘.
-    71.67s  agent 발화 끝
-    73.10s  <ret> 발화 (turn21 첫 프레임)
-    73.18s  agent 발화 시작: <ret> 네, '범죄도시 사' 씨 지 브이 강남 오후 다섯시 두석 예매가 완료됐어요. 확인 아이 디는 오 
-    73.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: (tool result) Booking confirmed: 범죄도시 4, CGV 강남, 17:00, 2 seats, confi
-    73.18s  user  발화 끝
-    83.20s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 친구랑 영화 보러 가려고 하는데…
+     3.60s  user  발화 시작: …괜찮은 영화 있을까?
+     3.60s  user  발화 끝
+     4.63s  <ret> 발화 (turn2 첫 프레임)
+     4.95s  agent 발화 시작: <ret> '엘리멘탈'이 평점 구 점 이로 가장 인기 있는 영화입니다.
+     4.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: {"query": "영화", "location": "서울", "date": "2026-07-11"}
+     4.95s  user  발화 끝
+     9.00s  user  발화 시작: 아, '엘리멘탈' 봤어. 다른 거 찾아줘. 좀 더… 액션 같은 거.
+     9.00s  agent 발화 끝
+    13.54s  <ret> 발화 (turn4 첫 프레임)
+    13.94s  agent 발화 시작: <ret> 액션 영화를 원하시는군요. '미션 임파서블: 데드 레코닝 PART ONE'이 평점 팔 점 팔로 상
+    13.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.75s]: {"query": "액션 영화", "location": "서울", "date": "2026-07-11"}
+    13.94s  user  발화 끝
+    20.69s  user  발화 시작: 어머.
+    20.69s  agent 발화 끝
+    21.14s  agent 발화 시작: 이 영화는 톰 크루즈 주연의 스릴 넘치는 액션 영화예요.
+    21.14s  user  발화 끝
+    25.19s  user  발화 시작: 응.
+    25.19s  agent 발화 끝
+    25.64s  user  발화 시작: 톰 크루즈 좋아하는데… 예매해 줘. 혹시, 저번에 얘기했던 거 기억나?
+    25.64s  user  발화 끝
+    30.06s  <ret> 발화 (turn9 첫 프레임)
+    30.14s  agent 발화 시작: <ret> 네, 명상 앱 찾는다고 말씀하셨죠. 지금은 영화 예매부터 할까요?
+    30.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: [2026-07-07] 저는 스트레스 해소에 도움이 되는 명상 앱을 찾고 있어요.
+    30.14s  user  발화 끝
+    34.19s  user  발화 시작: 응, 영화 예매 먼저. 근데… 예매 전에 잠깐만. 이번 주말에 부산 가는 기차표 있나? — 아니, 잠깐만, 
+    34.19s  agent 발화 끝
+    48.34s  <ret> 발화 (turn11 첫 프레임)
+    48.58s  agent 발화 시작: <ret> 토요일 오후 세시 이십분에 매진 직전이에요.
+    48.58s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.70s]: {"departure_station": "수서역", "arrival_station": "부산역", "date": "2026-0
+    48.58s  user  발화 끝
+    51.28s  agent 발화 시작: 기차표 예매는 잠시 후에 하시고, 지금은 영화 예매를 계속할까요?
+    51.28s  agent 발화 끝
+    55.33s  user  발화 시작: 응.
+    55.33s  agent 발화 끝
+    55.78s  user  발화 시작: 영화 예매해 줘. '미션 임파서블' 두 장.
+    55.78s  user  발화 끝
+    58.69s  <ret> 발화 (turn15 첫 프레임)
+    58.93s  agent 발화 시작: <ret> 영화 '미션 임파서블: 데드 레코닝 PART ONE' 두 장 예매가 완료되었습니다. 예매번호는 에
+    58.93s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.20s]: (tool result) 영화 '미션 임파서블: 데드 레코닝 PART ONE' 2인 예매 완료되었습니다. 예매번호는 A7B9입
+    58.93s  user  발화 끝
+    66.12s  agent 발화 시작: 스트레스 해소에 도움이 되는 명상 앱도 다시 알아봐 드릴까요?
+    66.12s  agent 발화 끝
+    70.17s  agent 발화 끝

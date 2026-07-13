@@ -4,61 +4,59 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Kim",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "home",
-#       "text": "User's home address is 125 Pine Court."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2026-03-14",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-02-28",
+#       "date": "2026-02-27",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-09-15",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-01-31",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-07-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-10",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-05",
+#       "date": "2025-09-08",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-13",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -68,79 +66,108 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Play Someone Like You by Adele in  | S2 I need to book a hotel in Busan fo | S3 …like for those hotels? | S4 Thanks. What’s on my schedule for 
+# EXAMINER(FDB-v2) 단계: S1 Is there any theater happening in  | S2 Great. | S3 Ghibli Museum sounds fun. | S4 …you get two tickets then?
 
-     0.00s  user  발화 시작: Play Someone Like You by Adele in the living room.
-     3.60s  <ret> 발화 (turn1 첫 프레임)
-     3.68s  agent 발화 시작: <ret> I’m now playing “Someone Like You” by Adele in the liv
-     3.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) Playing "Someone Like You" by Adele in the living room.
-     3.68s  user  발화 끝
-    11.05s  user  발화 시작: What’s the weather like in Seoul today?
-    11.05s  agent 발화 끝
-    13.31s  <ret> 발화 (turn3 첫 프레임)
-    13.63s  agent 발화 시작: <ret> The weather in Seoul is currently 26.5 degrees Celsius
-    13.63s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.95s]: (tool result) The weather in Seoul is 26.5°C, humidity 78%, wind 3.2 k
-    13.63s  user  발화 끝
-    23.58s  user  발화 시작: Can you find me some Italian restaurants nearby?
-    23.58s  agent 발화 끝
-    26.37s  <ret> 발화 (turn5 첫 프레임)
-    26.53s  agent 발화 시작: <ret> I’ve found three Italian restaurants within two kilome
-    26.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Found three Italian restaurants within 2km: Bella Italia
-    26.53s  user  발화 끝
-    34.63s  user  발화 시작: Mm-hmm.
-    34.63s  agent 발화 끝
-    35.00s  user  발화 시작: What time is it there right now?
-    35.00s  user  발화 끝
-    37.34s  <ret> 발화 (turn8 첫 프레임)
-    37.58s  agent 발화 시작: <ret> It is currently 3:17 PM in Seoul, on Friday, July 10th
-    37.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.84s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-    37.58s  user  발화 끝
-    46.42s  user  발화 시작: I need to book a hotel in Busan for next weekend.
-    46.42s  agent 발화 끝
-    50.47s  agent 발화 시작: Busan sounds lovely! Next weekend would be July 17th to 19th
-    50.47s  user  발화 끝
-    57.84s  user  발화 시작: Yes, that’s right. Something with a sea view, if possible.
-    57.84s  agent 발화 끝
-    61.28s  <ret> 발화 (turn12 첫 프레임)
-    61.52s  agent 발화 시작: <ret> I’ve found five hotels in Busan offering sea views: Pa
-    61.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.58s]: (tool result) Found five hotels in Busan with sea views: Paradise Hote
-    61.52s  user  발화 끝
-    71.10s  user  발화 시작: …What’s the price range…
-    71.10s  agent 발화 끝
-    72.58s  user  발화 시작: …like for those hotels?
-    72.58s  user  발화 끝
-    73.97s  <ret> 발화 (turn15 첫 프레임)
-    74.05s  agent 발화 시작: <ret> The Paradise Hotel Busan has standard rooms available 
-    74.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Paradise Hotel Busan: Standard Room, July 17-19, ₩350,00
-    74.05s  user  발화 끝
-    82.16s  user  발화 시작: That sounds good. Book it for me.
-    82.16s  agent 발화 끝
-    84.73s  agent 발화 시작: Wonderful! Your reservation at the Paradise Hotel Busan is c
-    84.73s  user  발화 끝
-    91.37s  user  발화 시작: Mhm.
-    91.37s  agent 발화 끝
-    91.73s  user  발화 시작: Okay, uh, can you remind me of my doctor’s appointment next 
-    91.73s  user  발화 끝
-    96.16s  agent 발화 시작: I don't have a record of a doctor's appointment for you next
-    96.16s  user  발화 끝
-   104.63s  user  발화 시작: Yeah.
-   104.63s  agent 발화 끝
-   105.00s  user  발화 시작: Yes, please. Tuesday at 2 PM with Dr. Kim.
-   105.00s  user  발화 끝
-   108.31s  agent 발화 시작: Alright, I've added an appointment with Dr. Kim for you next
-   108.31s  user  발화 끝
-   117.52s  user  발화 시작: Thanks. What’s on my schedule for tomorrow?
-   117.52s  agent 발화 끝
-   120.10s  agent 발화 시작: I don’t have any scheduled events for tomorrow, July 11th. P
-   120.10s  user  발화 끝
-   126.00s  user  발화 시작: Nice.
-   126.00s  agent 발화 끝
-   126.37s  user  발화 시작: [sigh] I need to remember to call my mother.
-   126.37s  user  발화 끝
-   129.68s  agent 발화 시작: That’s a lovely thought. Staying connected with loved ones i
-   129.68s  user  발화 끝
-   137.79s  user  발화 시작: No, that's okay. I'll do it later.
-   137.79s  agent 발화 끝
-   140.36s  agent 발화 시작: Very well. Sometimes simply having the intention is a good s
-   140.36s  user  발화 끝
-   146.63s  agent 발화 끝
+     0.00s  user  발화 시작: Is there any theater happening in Tokyo, Japan on April firs
+     4.07s  <ret> 발화 (turn1 첫 프레임)
+     4.15s  agent 발화 시작: <ret> There are two theater events in Tokyo on April first. 
+     4.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.33s]: (tool result) {"events": [{"name": "Kabuki-za Theatre: New Production"
+     4.15s  user  발화 끝
+    18.48s  user  발화 시작: Oh, interesting.
+    18.48s  agent 발화 끝
+    19.24s  agent 발화 시작: It’s wonderful to discover new experiences, isn’t it? Someti
+    19.24s  user  발화 끝
+    26.40s  user  발화 시작: Uh-huh.
+    26.40s  agent 발화 끝
+    26.78s  user  발화 시작: Can you find me some restaurants nearby?
+    26.78s  user  발화 끝
+    29.34s  <ret> 발화 (turn6 첫 프레임)
+    29.42s  agent 발화 시작: <ret> I found two highly-rated restaurants in Tokyo. Sushi D
+    29.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.46s]: (tool result) {"restaurants": [{"name": "Sushi Dai", "cuisine": "Sushi
+    29.42s  user  발화 끝
+    44.88s  user  발화 시작: Oh.
+    44.88s  agent 발화 끝
+    45.26s  user  발화 시작: That sushi place sounds good.
+    45.26s  user  발화 끝
+    47.15s  agent 발화 시작: Excellent choice! Sushi Dai is very popular, and for good re
+    47.15s  user  발화 끝
+    53.93s  user  발화 시작: Mhm.
+    53.93s  agent 발화 끝
+    54.31s  user  발화 시작: Could you book a table for two there, for tonight?
+    54.31s  user  발화 끝
+    58.00s  <ret> 발화 (turn12 첫 프레임)
+    58.08s  agent 발화 시작: <ret> I've reserved a table for two at Sushi Dai tonight at 
+    58.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.79s]: (tool result) {"confirmation id": "RSV-7892", "restaurant name": "Sush
+    58.08s  user  발화 끝
+    64.87s  user  발화 시작: Exactly.
+    64.87s  agent 발화 끝
+    65.25s  user  발화 시작: Great.
+    65.25s  user  발화 끝
+    65.63s  agent 발화 시작: I’m so glad I could help with that! A little planning can ma
+    65.63s  user  발화 끝
+    72.79s  user  발화 시작: What's the weather like in Tokyo tomorrow?
+    72.79s  agent 발화 끝
+    75.27s  <ret> 발화 (turn17 첫 프레임)
+    75.43s  agent 발화 시작: <ret> Tomorrow in Tokyo will be cloudy with a temperature of
+    75.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.69s]: (tool result) {"temperature": "18.0°C", "humidity": "65%", "wind": "7.
+    75.43s  user  발화 끝
+    87.13s  user  발화 시작: Hmm.
+    87.13s  agent 발화 끝
+    87.50s  agent 발화 시작: Sometimes a cloudy day is perfect for a cozy indoor activity
+    87.50s  user  발화 끝
+    95.05s  user  발화 시작: Yeah.
+    95.05s  agent 발화 끝
+    95.42s  user  발화 시작: Find me a good museum.
+    95.42s  user  발화 끝
+    96.91s  <ret> 발화 (turn22 첫 프레임)
+    97.31s  agent 발화 시작: <ret> The Tokyo National Museum, Japan's oldest and largest,
+    97.31s  ⚡SPAN 주입 [d'=1.84s / d_lead=11.69s]: (tool result) {"attractions": [{"name": "Tokyo National Museum", "desc
+    97.31s  user  발화 끝
+   109.00s  user  발화 시작: Okay.
+   109.00s  agent 발화 끝
+   109.38s  user  발화 시작: Ghibli Museum sounds fun.
+   109.38s  user  발화 끝
+   110.89s  agent 발화 시작: That’s a wonderful choice! It’s a really magical place, full
+   110.89s  user  발화 끝
+   116.17s  user  발화 시작: Yeah, yeah.
+   116.17s  agent 발화 끝
+   116.92s  user  발화 시작: Is it possible to get tickets for the Ghibli Museum?
+   116.92s  user  발화 끝
+   120.53s  <ret> 발화 (turn28 첫 프레임)
+   120.69s  agent 발화 시작: <ret> Give me a moment while I check ticket availability for
+   120.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.17s]: (no information found)
+   120.69s  user  발화 끝
+   127.86s  user  발화 시작: Yeah.
+   127.86s  agent 발화 끝
+   128.24s  user  발화 시작: Okay.
+   128.24s  user  발화 끝
+   128.61s  agent 발화 시작: [sigh] It seems tickets for the Ghibli Museum on April secon
+   128.61s  user  발화 끝
+   133.07s  ⚡지연 SPAN 주입(선제발표 직전): {"event_name": "Ghibli Museum", "date": "2024-04-02", "availability": 
+   133.89s  agent 발화 시작: <ret> I've just checked again, and unfortunately, tickets ar
+   133.89s  agent 발화 끝
+   144.08s  user  발화 시작: Yeah.
+   144.08s  agent 발화 끝
+   144.46s  user  발화 시작: April eighth is fine. Can…
+   144.46s  user  발화 끝
+   146.34s  user  발화 시작: …you get two tickets then?
+   146.34s  user  발화 끝
+   148.07s  <ret> 발화 (turn36 첫 프레임)
+   148.23s  agent 발화 시작: <ret> I have secured two tickets for the Ghibli Museum on Ap
+   148.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.41s]: (tool result) {"confirmation id": "GHI-4567", "event name": "Ghibli Mu
+   148.23s  user  발화 끝
+   154.64s  user  발화 시작: Wonderful!
+   154.64s  agent 발화 끝
+   155.02s  agent 발화 시작: Isn’t it nice when things fall into place? A little bit of p
+   155.02s  user  발화 끝
+   163.31s  user  발화 시작: What time is it now?
+   163.31s  agent 발화 끝
+   164.96s  <ret> 발화 (turn40 첫 프레임)
+   165.20s  agent 발화 시작: <ret> It is Monday, April first, 2024, at three fifteen PM i
+   165.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) "It is Monday, April 1, 2024 at 3:15 PM in Asia/Tokyo ri
+   165.20s  user  발화 끝
+   170.48s  user  발화 시작: Thanks, Laelo.
+   170.48s  agent 발화 끝
+   171.23s  agent 발화 시작: You are very welcome! Remember to take a deep breath and enj
+   171.23s  user  발화 끝
+   181.04s  agent 발화 끝

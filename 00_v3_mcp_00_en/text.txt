@@ -1,92 +1,87 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Thu, a practical and reassuring counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Rean, a warm and attentive life coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Nathan",
+    "name": "Samuel",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-12-30",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-11-21",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-11-03",
-      "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2025-10-03",
+      "date": "2026-06-21",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-05-15",
+      "category": "home",
+      "text": "User's home address is 906 Oak Avenue."
+    },
+    {
+      "date": "2026-04-14",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2026-02-28",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-24",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-24",
+      "date": "2026-01-24",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-06-08",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to book an appointment with Ms. Anya Sharma for February twenty-ninth at nine in the ⟨ret@6.17s⟩ morning.
-[  6.41s][moshi] ⟦⚡SPAN@6.41s: (tool result) Appointment with Anya Sharma confirmed for February 29, 2024, at 9:00 AM. Confirmation ID: AS789⟧ I’ve booked your appointment with Ms. Sharma for February twenty-ninth at nine AM. Your confirmation ID is AS7892.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Anya Sharma", "date": "2024-02-29", "time": "09:00"}}
-[ 12.82s][user ] «backchannel» Yeah, totally.
-[ 13.53s][user ] That's great, thank you. Is she a ⟨ret@15.98s⟩ dermatologist?
-[ 16.38s][moshi] ⟦⚡SPAN@16.38s: Anya Sharma is a board-certified dermatologist specializing in pediatric dermatology and acne treatment, with ⟧ Yes, Ms. Sharma is a board-certified dermatologist specializing in pediatric dermatology and acne treatment, with over fifteen years of experience.
-[ 23.50s][user ] «backchannel» Yeah, yeah.
-[ 24.21s][user ] Oh, good. Um, I've been having some trouble with…
-[ 27.42s][moshi] «interrupted» It’s understandable to feel anxious about skin concerns—many people experience that. —
-[ 31.69s][user ] «interrupts_prev» …do you know if she takes my insurance, Blue Cross Blue Shield? ⟨ret@35.80s⟩
-[ 35.96s][moshi] ⟦⚡SPAN@35.96s: (tool result) Anya Sharma is in-network with Blue Cross Blue Shield PPO and HMO plans.⟧ Yes, Ms. Sharma is in-network with Blue Cross Blue Shield PPO and HMO plans, so your coverage should apply.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Anya Sharma", "insurance": "Blue Cross Blue Shield"}}
-[ 42.73s][user ] «backchannel» Yeah.
-[ 43.08s][moshi] I'm glad I could confirm that for you; navigating insurance can be frustrating. Perhaps we could discuss your skin concerns briefly?
-[ 50.56s][user ] Actually, my daughter is the one with the issue. She's ten years old.
-[ 55.19s][moshi] Ah, that’s helpful to know. Pediatric dermatology is Ms. Sharma’s specialty, so you’ve come to the right place.
-[ 61.60s][user ] She's been complaining about a rash on her arms for a few weeks now.
-[ 66.58s][moshi] Rashes can be caused by many things, from allergies to simple irritation. It’s good you're addressing it now.
-[ 72.99s][user ] It’s really itchy…
-[ 74.06s][user ] …and it seems to be spreading.
-[ 76.20s][moshi] Itchy rashes that spread can be quite distressing for a child, and understandably worrying for you as well.
-[ 82.61s][user ] «backchannel» Yeah.
-[ 82.96s][user ] I'm hoping Ms. Sharma can figure out what it is.
-[ 86.52s][moshi] I'm confident Ms. Sharma will provide a thorough evaluation and recommend the best course of action for your daughter.
-[ 93.29s][user ] Could you remind me of the address for her office? ⟨ret@96.77s⟩
-[ 96.85s][moshi] ⟦⚡SPAN@96.85s: Anya Sharma's office is located at 789 Oak Street, Suite 200, Anytown, CA 91234.⟧ Her office is at 789 Oak Street, Suite 200, Anytown, California, 91234.
+[  0.00s][user ] I need directions to the Oriental Pearl Tower, ⟨ret@3.23s⟩ please.
+[  3.47s][moshi] «interrupted» ⟦⚡SPAN@3.47s: (tool result) {"directions": "Head west on Nanjing Road East, turn right onto Shiji Dadao, and continue to the⟧ I can help with that. Head west on Nanjing Road East, turn right onto Shiji Dadao, and continue to the Oriental Pearl Tower—
+      CALL: {"function": "maps_schema_navi", "arguments": {"destination": "Oriental Pearl Tower"}}
+[ 12.34s][user ] «interrupts_prev» …Is parking available ⟨ret@13.48s⟩ nearby?
+[ 13.88s][moshi] ⟦⚡SPAN@13.88s: The Oriental Pearl Tower has a parking garage with 800 spaces, costing 20 yuan per hour. Nearby public parking⟧ That's a good question to consider. Parking near the Oriental Pearl Tower can be quite limited, especially during peak hours.
+[ 21.59s][moshi] The tower itself has a garage with 800 spaces, at 20 yuan per hour, and there are public lots nearby averaging 15 yuan an hour.
+[ 31.22s][user ] That's helpful, thank you. Could you find me some restaurants in that area, too? ⟨ret@36.46s⟩
+[ 36.62s][moshi] ⟦⚡SPAN@36.62s: (tool result) {"restaurants": [{"name": "Lu Bo Lang Restaurant", "cuisine": "Shanghai", "rating": 4.5}, {"name⟧ Lu Bo Lang offers Shanghai cuisine and has a 4.5-star rating, while Mr & Mrs Bund serves French food with a 4.2-star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Oriental Pearl Tower"}}
+[ 45.49s][user ] Hmm, Mr & Mrs Bund sounds nice. Can you reserve a table there for two, this ⟨ret@51.72s⟩ evening?
+[ 52.04s][moshi] ⟦⚡SPAN@52.04s: (tool result) {"confirmation number": "MRB20260710-2245", "reservation time": "7:30 PM", "party size": 2}⟧ I’ve reserved a table for two at Mr & Mrs Bund for 7:30 PM tonight; your confirmation number is MRB20260710-2245.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Mr & Mrs Bund", "party_size": 2, "time": "this evening"}}
+[ 59.75s][user ] Excellent. What’s the weather like there right now? ⟨ret@62.68s⟩
+[ 62.84s][moshi] ⟦⚡SPAN@62.84s: (tool result) {"temperature": "28.5°C", "humidity": "70%", "wind speed": "7.2 km/h", "condition": "Cloudy"}⟧ The current weather at the Oriental Pearl Tower is 28.5 degrees Celsius, with 70 percent humidity, a 7.2 kilometer per hour wind, and cloudy conditions.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Oriental Pearl Tower"}}
+[ 72.47s][user ] That sounds pleasant. Thanks…
+[ 74.01s][user ] …for all your help, Rean.
+[ 75.94s][moshi] You're very welcome. It’s my pleasure to assist you in planning a lovely evening. Remember to enjoy the view!

@@ -1,90 +1,111 @@
 v3_noinfo_23_ko src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 재정과 예산 관리를 통해 사람들을 돕는 격려적이고 비판적이지 않은 웰니스 코치, 오로라이아입니다. <system>
+SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 통해 사람들을 돕는 실용적이고 안심시키는 웰니스 코치 비오나입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "다아",
+    "name": "정훈",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "non-binary",
     "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-21",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-03-11",
+      "date": "2026-04-18",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-01-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-01-25",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-10-04",
+      "date": "2025-12-31",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-10-24",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2025-06-19",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-06-24",
+      "category": "home",
+      "text": "User's home address is 부산 해운대구 해운대로 570."
     },
     {
-      "date": "2025-05-29",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-06-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-15",
+      "date": "2026-01-29",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-12-17",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 엄마 생신 선물 뭐 드려야 할까?
-[  2.81s][moshi] 어떤 선물을 좋아하시는지 생각해 보셨어요?
-[  5.16s][user ] 글쎄… 평소에 뭘 원하시는지 잘 모르겠어.
-[  7.97s][moshi] 엄마가 평소에 즐겨 하시는 취미나 관심사가 있으세요?
-[ 11.25s][user ] 음… 정원 가꾸는 거랑 요리하는 걸 좋아하시는데.
-[ 14.53s][moshi] 정원 가꾸는 걸 좋아하신다면, 예쁜 꽃이나 식물을 선물하는 건 어떠세요?
-[ 19.22s][user ] «backchannel» 어.
-[ 19.69s][user ] 꽃은 너무 흔한가? 좀 특별한 걸 주고 ⟨ret@23.20s⟩ 싶어.
-[ 23.44s][moshi] ⟦⚡SPAN@23.44s: The largest flower arrangement, created by the Dutch company Bloemenweelde, measured 12.2 meters (40 feet) in ⟧ 세상에서 가장 큰 꽃꽂이는 네덜란드 회사인 블루멘벨데에서 만들었는데, 높이가 십이 점 이미터, 폭이 오 점 육미터나 된대요.
-[ 31.41s][user ] «backchannel» 와.
-[ 31.88s][user ] 와, 엄청 크네! 그래도 엄마는 꽃을 좋아하시니까 괜찮을지도.
-[ 35.63s][moshi] 엄마가 요리를 좋아하신다면, 고급 식재료나 요리 강좌를 선물하는 것도 좋은 선택일 수 있어요.
-[ 41.72s][user ] «backchannel» 어.
-[ 42.19s][user ] 요리 강좌는 좋은 아이디어인데, 혹시 근처에 괜찮은 곳 ⟨ret@46.17s⟩ 있어?
-[ 46.41s][moshi] ⟦⚡SPAN@46.41s: (tool result) {"restaurants": [{"name": "쿠킹클래스 쿡앤베이크", "address": "서울특별시 강남구 테헤란로 123", "phone": "02-1234-5678⟧ 근처에 '쿡앤베이크'랑 '프랑스 요리 아카데미' 두 군데가 있어요. '쿡앤베이크'는 공 이 일 이 삼 사 오 육 칠 팔이고, '프랑스 요리 아카데미'는 공 이 구 팔 칠 육 오 사 삼 이입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "요리 강좌"}}
-[ 61.41s][user ] «backchannel» 응.
-[ 61.88s][user ] 쿡앤베이크… 거긴 어떤 수업이 있나?
-[ 64.22s][moshi] «interrupted» 다양한 종류의 요리 수업이 있는데—
-[ 66.56s][user ] «interrupts_prev» …혹시 엄마가 좋아하는 프랑스 요리 수업도 있나?
-[ 69.84s][moshi] 네, 프랑스 요리 수업도 있어요. 다음 주 화요일 오후 두시에 파이와 마카롱 만드는 수업이 있답니다.
-[ 76.88s][user ] «backchannel» 어어.
-[ 77.34s][user ] 오, 마카롱 좋아하시는데! 그럼 그걸로 예약해 ⟨ret@80.39s⟩ 줘.
-[ 80.63s][moshi] ⟦⚡SPAN@80.63s: (tool result) {"confirmation id": "B7X9Z2"}⟧ '쿡앤베이크'에 다음 주 화요일 오후 두시에 파이와 마카롱 만들기 수업을 예약했습니다. 확인번호는 비 칠 엑스 구 제트 이입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "쿠킹클래스 쿡앤베이크", "date": "2026-07-15", "time": "14:00", "course": "파이와 마카롱 만들기"}}
-[ 89.06s][user ] 고마워, 덕분에 좋은 선물 찾은 것 같아.
-[ 92.34s][moshi] 제가 도와드릴 수 있어서 기뻐요. 엄마가 정말 좋아하실 거예요.
+[  0.00s][user ] 김민지 씨 연락처 좀 알려줄 수 ⟨ret@3.22s⟩ 있어?
+[  3.62s][moshi] ⟦⚡SPAN@3.62s: (no information found)⟧ 죄송하지만, 김민지 씨의 연락처는 찾을 수 없었어요. 개인 정보라서 공개되어 있지 않나 봐요. 혹시 다른 분을 찾으시나요?
+      CALL: {"function": "search", "arguments": {"query": "김민지 연락처"}}
+[ 12.41s][user ] 아니, 그냥… 혹시 지난주 금요일 날씨 어땠어? ⟨ret@15.79s⟩
+[ 16.03s][moshi] ⟦⚡SPAN@16.03s: (tool result) The weather on Friday, July 3rd, 2026 was 26.1°C, humidity 68%, wind 7.2 km/h.⟧ 지난 금요일, 칠월 삼일 날씨는 섭씨 이십육 점 일도에 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터였어요. 꽤 맑은 날이었겠네요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-03"}}
+[ 25.86s][user ] «backchannel» 와.
+[ 26.38s][user ] 고마워. 이번 주 토요일에 영화 볼 만한 거 ⟨ret@30.71s⟩ 있어?
+[ 31.03s][moshi] ⟦⚡SPAN@31.03s: (tool result) Now showing: '범죄도시 4', '인사이드 아웃 2', '퓨리오사: 매드맥스 사가'.⟧ 이번 주 토요일에는 '범죄도시 사', '인사이드 아웃 이', '퓨리오사: 매드맥스 사가'가 상영 중이에요. 어떤 장르를 좋아하세요?
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-07-11"}}
+[ 39.31s][user ] 음… 액션 영화 보고 싶은데, '퓨리오사' 평점 좀 알려줘. ⟨ret@43.72s⟩
+[ 43.96s][moshi] ⟦⚡SPAN@43.96s: (tool result) '퓨리오사: 매드맥스 사가'는 현재 네이버 영화에서 8.13점, 다음 영화에서 7.8점입니다. Variety는 이 영화를 "강렬하고 시각적으로 놀라운 영화"라고 평가했습니다⟧ '퓨리오사: 매드맥스 사가'는 네이버에서 팔 점 일 삼점, 다음에서 칠 점 팔점이에요. Variety에서는 "강렬하고 시각적으로 놀라운 영화"라고 평가했답니다.
+      CALL: {"function": "search", "arguments": {"query": "퓨리오사 매드맥스 사가 평점"}}
+[ 53.27s][user ] 팔점대면 괜찮네. 그럼 예매해 줘. 이번 주 토요일 오후 두시, 두명. ⟨ret@58.80s⟩
+[ 58.96s][moshi] ⟦⚡SPAN@58.96s: (tool result) Booking confirmed: '퓨리오사: 매드맥스 사가', Saturday, July 11th, 2:00 PM, 2 seats. Confirmation ID: 7A9X⟧ 네, '퓨리오사: 매드맥스 사가' 이번 주 토요일 오후 두시에 두명으로 예매 완료되었어요. 확인 번호는 칠 에이 구 엑스 이 비입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"date": "2026-07-11", "time": "14:00", "seats": 2}}
+[ 69.31s][user ] «backchannel» 대박.
+[ 69.82s][user ] 알았어. 혹시 스트레스 해소하는 데 좋은 음악 추천해 줄 수 있어?. ⟨ret@75.27s⟩
+[ 75.51s][moshi] 스트레스 ⟦⚡SPAN@76.63s: Studies show that listening to calming music can reduce cortisol levels, a hormone associated with stress. Amb⟧ 해소에 음악만큼 좋은 게 없죠. 연구에 따르면, 잔잔한 음악을 듣는 건 스트레스 호르몬인 코르티솔 수치를 낮추는 데 도움이 된다고 해요. 특히 주변 소리나 클래식 음악이 효과적이라고 하네요. 편안하게 휴식을 취하는 데 도움이 될 거예요.
+[ 93.62s][user ] …근데 혹시 명상 앱 추천도 해줄 수 있어? ⟨ret@97.59s⟩
+[ 97.75s][moshi] ⟦⚡SPAN@97.75s: (tool result) Headspace, Calm, and Insight Timer are popular meditation apps. Headspace offers guided meditati⟧ Headspace, Calm, Insight Timer가 인기 있는 명상 앱이에요. Headspace는 가이드 명상을, Calm은 수면 이야기와 휴식을, Insight Timer는 다양한 무료 명상을 제공한답니다.
+      CALL: {"function": "search", "arguments": {"query": "명상 앱 추천"}}
+[108.62s][user ] «backchannel» 어어.
+[109.13s][user ] 오, 캄(Calm)이 수면 이야기もある구나. 그거 괜찮겠는데.
+[112.24s][moshi] 캄(Calm)은 수면 이야기가 있어서 잠들기 전에 듣기 좋다고 하네요. 숙면을 취하는 데 도움이 될 거예요.
+[120.00s][user ] 고마워, 비오나. 덕분에 마음이 좀 편안해지는 것 같아.
+[124.13s][moshi] 다행이에요. 언제든 스트레스가 느껴지면 저에게 말씀해주세요. 제가 옆에서 도와드릴게요.
+[128.79s][user ] 오늘 날씨는 ⟨ret@130.02s⟩ 어때?
+[130.34s][moshi] ⟦⚡SPAN@130.34s: (tool result) The current weather in Seoul is 28.3°C, humidity 70%, wind 4.8 km/h.⟧ 지금 서울 날씨는 섭씨 이십팔 점 삼도이고, 습도는 칠십퍼센트, 바람은 시속 사 점 팔킬로미터예요. 오늘 하루도 건강하게 보내세요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[139.65s][user ] 알았어. 비오나, 고마워.
+[141.20s][moshi] 천만에요.

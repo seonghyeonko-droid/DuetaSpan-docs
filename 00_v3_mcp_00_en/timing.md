@@ -4,120 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Nathan",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-30",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-11-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-10-03",
+#       "date": "2026-06-21",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-09-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-15",
+#       "category": "home",
+#       "text": "User's home address is 906 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-04-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-24",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-24",
+#       "date": "2026-01-24",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-20",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to book an appointment with | S2 …do you know if she takes my insur | S3 She's been complaining about a ras | S4 I'm hoping Ms. Sharma can figure o
+# EXAMINER(FDB-v2) 단계: S1 I need directions to the Oriental  | S2 That's helpful, thank you. Could y | S3 Excellent. What’s the weather like | S4 …for all your help, Rean.
 
-     0.00s  user  발화 시작: I need to book an appointment with Ms. Anya Sharma for Febru
-     6.17s  <ret> 발화 (turn1 첫 프레임)
-     6.41s  agent 발화 시작: <ret> I’ve booked your appointment with Ms. Sharma for Febru
-     6.41s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.41s]: (tool result) Appointment with Anya Sharma confirmed for February 29, 
-     6.41s  user  발화 끝
-    12.82s  user  발화 시작: Yeah, totally.
-    12.82s  agent 발화 끝
-    13.53s  user  발화 시작: That's great, thank you. Is she a dermatologist?
-    13.53s  user  발화 끝
-    15.98s  <ret> 발화 (turn4 첫 프레임)
-    16.38s  agent 발화 시작: <ret> Yes, Ms. Sharma is a board-certified dermatologist spe
-    16.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.12s]: Anya Sharma is a board-certified dermatologist specializing in pediatr
-    16.38s  user  발화 끝
-    23.50s  user  발화 시작: Yeah, yeah.
-    23.50s  agent 발화 끝
-    24.21s  user  발화 시작: Oh, good. Um, I've been having some trouble with…
-    24.21s  user  발화 끝
-    27.42s  agent 발화 시작: It’s understandable to feel anxious about skin concerns—many
-    27.42s  user  발화 끝
-    31.69s  user  발화 시작: …do you know if she takes my insurance, Blue Cross Blue Shie
-    31.69s  agent 발화 끝
-    35.80s  <ret> 발화 (turn9 첫 프레임)
-    35.96s  agent 발화 시작: <ret> Yes, Ms. Sharma is in-network with Blue Cross Blue Shi
-    35.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Anya Sharma is in-network with Blue Cross Blue Shield PP
-    35.96s  user  발화 끝
-    42.73s  user  발화 시작: Yeah.
-    42.73s  agent 발화 끝
-    43.08s  agent 발화 시작: I'm glad I could confirm that for you; navigating insurance 
-    43.08s  user  발화 끝
-    50.56s  user  발화 시작: Actually, my daughter is the one with the issue. She's ten y
-    50.56s  agent 발화 끝
-    55.19s  agent 발화 시작: Ah, that’s helpful to know. Pediatric dermatology is Ms. Sha
-    55.19s  user  발화 끝
-    61.60s  user  발화 시작: She's been complaining about a rash on her arms for a few we
-    61.60s  agent 발화 끝
-    66.58s  agent 발화 시작: Rashes can be caused by many things, from allergies to simpl
-    66.58s  user  발화 끝
-    72.99s  user  발화 시작: It’s really itchy…
-    72.99s  agent 발화 끝
-    74.06s  user  발화 시작: …and it seems to be spreading.
-    74.06s  user  발화 끝
-    76.20s  agent 발화 시작: Itchy rashes that spread can be quite distressing for a chil
-    76.20s  user  발화 끝
-    82.61s  user  발화 시작: Yeah.
-    82.61s  agent 발화 끝
-    82.96s  user  발화 시작: I'm hoping Ms. Sharma can figure out what it is.
-    82.96s  user  발화 끝
-    86.52s  agent 발화 시작: I'm confident Ms. Sharma will provide a thorough evaluation 
-    86.52s  user  발화 끝
-    93.29s  user  발화 시작: Could you remind me of the address for her office?
-    93.29s  agent 발화 끝
-    96.77s  <ret> 발화 (turn23 첫 프레임)
-    96.85s  agent 발화 시작: <ret> Her office is at 789 Oak Street, Suite 200, Anytown, C
-    96.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.27s]: Anya Sharma's office is located at 789 Oak Street, Suite 200, Anytown,
-    96.85s  user  발화 끝
-   101.12s  agent 발화 끝
+     0.00s  user  발화 시작: I need directions to the Oriental Pearl Tower, please.
+     3.23s  <ret> 발화 (turn1 첫 프레임)
+     3.47s  agent 발화 시작: <ret> I can help with that. Head west on Nanjing Road East, 
+     3.47s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.87s]: (tool result) {"directions": "Head west on Nanjing Road East, turn rig
+     3.47s  user  발화 끝
+    12.34s  user  발화 시작: …Is parking available nearby?
+    12.34s  agent 발화 끝
+    13.48s  <ret> 발화 (turn3 첫 프레임)
+    13.88s  agent 발화 시작: <ret> That's a good question to consider. Parking near the O
+    13.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.71s]: The Oriental Pearl Tower has a parking garage with 800 spaces, costing
+    13.88s  user  발화 끝
+    21.59s  agent 발화 시작: The tower itself has a garage with 800 spaces, at 20 yuan pe
+    21.59s  agent 발화 끝
+    31.22s  user  발화 시작: That's helpful, thank you. Could you find me some restaurant
+    31.22s  agent 발화 끝
+    36.46s  <ret> 발화 (turn6 첫 프레임)
+    36.62s  agent 발화 시작: <ret> Lu Bo Lang offers Shanghai cuisine and has a 4.5-star 
+    36.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.87s]: (tool result) {"restaurants": [{"name": "Lu Bo Lang Restaurant", "cuis
+    36.62s  user  발화 끝
+    45.49s  user  발화 시작: Hmm, Mr & Mrs Bund sounds nice. Can you reserve a table ther
+    45.49s  agent 발화 끝
+    51.72s  <ret> 발화 (turn8 첫 프레임)
+    52.04s  agent 발화 시작: <ret> I’ve reserved a table for two at Mr & Mrs Bund for 7:3
+    52.04s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.71s]: (tool result) {"confirmation number": "MRB20260710-2245", "reservation
+    52.04s  user  발화 끝
+    59.75s  user  발화 시작: Excellent. What’s the weather like there right now?
+    59.75s  agent 발화 끝
+    62.68s  <ret> 발화 (turn10 첫 프레임)
+    62.84s  agent 발화 시작: <ret> The current weather at the Oriental Pearl Tower is 28.
+    62.84s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.64s]: (tool result) {"temperature": "28.5°C", "humidity": "70%", "wind speed
+    62.84s  user  발화 끝
+    72.47s  user  발화 시작: That sounds pleasant. Thanks…
+    72.47s  agent 발화 끝
+    74.01s  user  발화 시작: …for all your help, Rean.
+    74.01s  user  발화 끝
+    75.94s  agent 발화 시작: You're very welcome. It’s my pleasure to assist you in plann
+    75.94s  user  발화 끝
+    83.27s  agent 발화 끝

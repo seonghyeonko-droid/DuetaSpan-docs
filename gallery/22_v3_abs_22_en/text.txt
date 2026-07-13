@@ -1,59 +1,46 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Arelix, a practical and reassuring counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Jelo, a warm and attentive wellness coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Jordan",
+    "name": "Charlie",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "age_range": "50s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-10-09",
+      "date": "2026-05-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-04-02",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-12-05",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-10-07",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-08-11",
+      "date": "2025-06-10",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-08-10",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-06-14",
-      "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User is planning a trip to Vietnam in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-15",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-04-08",
+      "date": "2026-02-21",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -64,31 +51,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who didn't sign the decree suspending the Communist Party of the Russian SFSR? ⟨ret@5.26s⟩
-[  5.42s][moshi] ⟦⚡SPAN@5.42s: (no information found)⟧ That’s a difficult question, and unfortunately, I don’t have information on who specifically refused to sign that decree.
-[ 12.93s][user ] «backchannel» Yeah.
-[ 13.35s][user ] Oh. Well, what’s the weather like in Seoul right now? ⟨ret@17.36s⟩
-[ 17.52s][moshi] ⟦⚡SPAN@17.52s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0°C in Seoul, with humidity at 74% and a wind speed of 5.5 kilometers per hour. It sounds quite pleasant!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 26.69s][user ] Hmm, maybe I should plan a trip. Are there any good movies playing? ⟨ret@31.95s⟩
-[ 32.11s][moshi] ⟦⚡SPAN@32.11s: (tool result) "Inside Out 2" is currently playing in theaters near you, with a rating of 7.3/10, according to ⟧ "Inside Out 2" is playing nearby, and it’s getting great reviews—a 7.3 out of 10 on IMDb. Perhaps a good family outing?
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 41.29s][user ] «backchannel» Yeah.
-[ 41.71s][user ] That sounds... nice. What time is it there, exactly? ⟨ret@45.30s⟩
-[ 45.46s][moshi] ⟦⚡SPAN@45.46s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It is Friday, July 10, 2026, at 2:47 PM in Asia/Seoul right now. A lovely afternoon for considering plans.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 53.38s][user ] That's right, July 10th. Um, do you remember what I said about my daughter? ⟨ret@59.14s⟩
-[ 59.22s][moshi] ⟦⚡SPAN@59.22s: [2026-07-05] My daughter is starting kindergarten next month.⟧ You mentioned on July 5th that your daughter is starting kindergarten next month. That’s a big milestone!
-[ 66.31s][user ] Yes, it is. I'm a little anxious about it.
-[ 70.07s][moshi] It’s completely normal to feel anxious when your child is beginning a new chapter. It's a big adjustment for both of you.
-[ 79.24s][user ] «backchannel» Okay.
-[ 79.66s][user ] I guess so. Could you find some restaurants near City Hall? ⟨ret@84.09s⟩
-[ 84.25s][moshi] ⟦⚡SPAN@84.25s: (tool result) There are 47 restaurants near City Hall, including 'Gogung Myeongga', Korean, 4.2 stars, and 'La⟧ I found 47 restaurants near City Hall—'Gogung Myeongga', Korean, 4.2 stars, and ‘La Cuisine’, French, 4.5 stars, are two options.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "City Hall"}}
-[ 92.59s][user ] «backchannel» Exactly.
-[ 93.01s][user ] French sounds good. Can you reserve a table for two at La Cuisine for, say, 7 pm? ⟨ret@100.02s⟩
-[100.10s][moshi] ⟦⚡SPAN@100.10s: (tool result) Reservation confirmed at La Cuisine for two people at 7:00 PM. Confirmation ID: LC260710-83⟧ A table for two at La Cuisine is confirmed for 7:00 PM. Your confirmation ID is LC260710-83.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "La Cuisine", "time": "7:00 PM", "party_size": 2}}
-[107.19s][user ] «backchannel» Mm-hmm.
-[107.60s][user ] Perfect! Thank you.
-[108.85s][moshi] You're very welcome. It’s good to have a nice evening planned—sometimes a little treat is exactly what we need.
+[  0.00s][user ] Why wasn't philosophy taught in Ottoman madaris? ⟨ret@2.60s⟩
+[  2.76s][moshi] ⟦⚡SPAN@2.76s: (no information found)⟧ But unfortunately, I haven’t been able to find any information about why philosophy wasn’t a part of the Ottoman madaris curriculum.
+[ 11.05s][user ] Oh, um… that’s a shame.
+[ 13.03s][moshi] It is a bit of a mystery, isn’t it? Perhaps it’s a topic that hasn’t been widely documented in easily accessible sources.
+[ 21.71s][user ] «backchannel» Yeah.
+[ 22.11s][user ] Well, what *was* taught there? ⟨ret@24.00s⟩
+[ 24.08s][moshi] ⟦⚡SPAN@24.08s: The curriculum in Ottoman madrasas generally focused on Islamic theology, law, Arabic language, and literature⟧ Ottoman madrasas mainly taught Islamic theology, law, Arabic language, literature, and a bit of mathematics and astronomy.
+[ 30.79s][user ] «backchannel» Mhm.
+[ 31.19s][moshi] It sounds like a very rigorous education, focused on religious and scholarly pursuits. Sometimes, concentrating on core subjects is the most effective path.
+[ 40.27s][user ] Do you think that limited their progress?
+[ 43.03s][moshi] That’s a thoughtful question. A focused curriculum can have strengths and weaknesses—it really depends on the goals. It’s something to consider when we think about long-term development.

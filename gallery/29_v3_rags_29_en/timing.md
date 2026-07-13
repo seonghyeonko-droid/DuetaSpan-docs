@@ -4,56 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Andrea",
+#     "name": "Olivia",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "female",
 #     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
+#       "date": "2026-02-19",
+#       "category": "home",
+#       "text": "User's home address is 415 Maple Drive."
+#     },
+#     {
+#       "date": "2026-02-09",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-07-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-17",
+#       "date": "2026-01-14",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-11-28",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-06-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-07",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-08",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the twelfth episode of Riverdale first air?
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  agent 발화 시작: <ret> It seems that episode aired on May fourth, two thousan
-     3.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.19s]: The twelfth episode of Riverdale, titled “The Dark Circle”, originally
-     3.60s  user  발화 끝
-    14.79s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote the song "Send Em On Down the Road"?
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> That song was written and first performed by Marc Bees
+     4.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Marc Beeson wrote and originally performed “Send ‘Em On Down the Road”
+     4.51s  user  발화 끝
+    11.09s  agent 발화 끝

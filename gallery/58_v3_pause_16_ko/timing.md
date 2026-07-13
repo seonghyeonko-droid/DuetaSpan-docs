@@ -4,93 +4,161 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "현진",
+#     "name": "지안",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-06-04",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-11-17",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2026-02-10",
+#       "date": "2025-09-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in August."
-#     },
-#     {
-#       "date": "2025-09-30",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-01",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-03",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-23",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-25",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시… '어 도그스 퍼포스'에 나오는… | S2 아, 그렇군요… | S3 음… 조시 갯 씨가… | S4 아, '겨울왕국'에도 나왔었구나…
+# EXAMINER(FDB-v2) 단계: S1 음… 미니애폴리스에 흑인 인구가 얼마나 되는지 궁금해서… | S2 와, 진짜 많이 늘었네. 거의 두 배 가까이? | S3 그럼 지금은 어때? 이천이십년 이후로 또 변동이 있었어? | S4 맞아. 혹시 지금 시간 알려줄 수 있어?
 
-     0.00s  user  발화 시작: 혹시… '어 도그스 퍼포스'에 나오는…
-     2.93s  user  발화 시작: …베일리 목소리를 낸 사람이 누구였지?
-     2.93s  user  발화 끝
-     5.46s  <ret> 발화 (turn2 첫 프레임)
-     5.86s  agent 발화 시작: <ret> '어 도그스 퍼포스'에서 베일리 목소리는 조시 갯이 연기했습니다.
-     5.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.69s]: Josh Gad was the voice of Bailey in A Dog's Purpose.
-     5.86s  user  발화 끝
-    10.55s  user  발화 시작: 네.
-    10.55s  agent 발화 끝
-    11.13s  user  발화 시작: 아, 그렇군요…
-    11.13s  user  발화 끝
-    11.99s  <ret> 발화 (turn5 첫 프레임)
-    12.31s  agent 발화 시작: <ret> 혹시 다른 궁금한 점이 있으신가요? 영화 관련해서 도와드릴 수 있습니다.
-    12.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.86s]: Josh Gad is an American actor and comedian.
-    12.31s  user  발화 끝
-    18.17s  user  발화 시작: 아.
-    18.17s  agent 발화 끝
-    18.75s  agent 발화 시작: 조시 갯은 미국의 배우이자 코미디언이기도 합니다.
-    18.75s  user  발화 끝
-    22.27s  user  발화 시작: 음… 조시 갯 씨가…
-    22.27s  agent 발화 끝
-    24.61s  user  발화 시작: …출연한 다른 영화도 알고 싶어요.
-    24.61s  user  발화 끝
-    27.22s  <ret> 발화 (turn10 첫 프레임)
-    27.54s  agent 발화 시작: <ret> 조시 갯 씨는 '레고 무비', '겨울왕국', '북스마트'에 출연했습니다.
-    27.54s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.69s]: (tool result) "Josh Gad - The Lego Movie (2014), Frozen (2013), Booksm
-    27.54s  user  발화 끝
-    32.23s  user  발화 시작: 네.
-    32.23s  agent 발화 끝
-    32.82s  user  발화 시작: 아, '겨울왕국'에도 나왔었구나…
-    32.82s  user  발화 끝
-    34.57s  agent 발화 시작: 네, '겨울왕국'에서 오라프 목소리를 맡았죠. 정말 귀여운 캐릭터입니다.
-    34.57s  user  발화 끝
-    39.26s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 미니애폴리스에 흑인 인구가 얼마나 되는지 궁금해서…
+     3.01s  <ret> 발화 (turn1 첫 프레임)
+     3.41s  agent 발화 시작: <ret> 미니애폴리스, 미네소타의 흑인 인구는 이천이십년 기준으로 십팔 점 육퍼센트입니다.
+     3.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.38s]: As of 2020, the African American population in Minneapolis, Minnesota,
+     3.41s  user  발화 끝
+     7.79s  user  발화 시작: 십팔 점 육퍼센트나 돼? 생각보다 많네.
+     7.79s  agent 발화 끝
+    10.71s  agent 발화 시작: 변화는 때때로 예상치 못한 방향으로 우리를 이끌기도 하죠.
+    10.71s  user  발화 끝
+    14.61s  user  발화 시작: 근데 그게… 옛날에도 그랬어?…
+    14.61s  agent 발화 끝
+    16.55s  user  발화 시작: …아니면 최근에 많이 늘어난 거야?
+    16.55s  user  발화 끝
+    18.67s  <ret> 발화 (turn6 첫 프레임)
+    18.99s  agent 발화 시작: <ret> 천구백구십년 미니애폴리스의 흑인 인구는 구 점 칠퍼센트였습니다.
+    18.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.41s]: In 1990, the African American population of Minneapolis was 9.7%.
+    18.99s  user  발화 끝
+    22.40s  user  발화 시작: 와, 진짜 많이 늘었네. 거의 두 배 가까이?
+    22.40s  agent 발화 끝
+    26.29s  agent 발화 시작: 삶은 끊임없이 변화하는 흐름 속에서 펼쳐지니까요.
+    26.29s  user  발화 끝
+    29.21s  user  발화 시작: 혹시 그 이유가 뭐 때문인지 알 수 있을까?
+    29.21s  agent 발화 끝
+    33.03s  <ret> 발화 (turn10 첫 프레임)
+    33.11s  agent 발화 시작: <ret> 미네소타 대학교 보고서에 따르면, 이십세기 후반 경제적 기회와 시민권 향상으로 남부 주에서 이주해
+    33.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Increased migration from southern states, driven by econ
+    33.11s  user  발화 끝
+    42.85s  user  발화 시작: 응응.
+    42.85s  agent 발화 끝
+    43.33s  user  발화 시작: 아, 경제적인 이유랑 시민권…
+    43.33s  user  발화 끝
+    45.28s  user  발화 시작: …때문이었구나. 그럴 수도 있겠네.
+    45.28s  user  발화 끝
+    47.23s  agent 발화 시작: 변화의 씨앗은 종종 예상치 못한 곳에서 움트기도 합니다.
+    47.23s  user  발화 끝
+    51.12s  user  발화 시작: 그럼 지금은 어때? 이천이십년 이후로 또 변동이 있었어?
+    51.12s  agent 발화 끝
+    54.78s  <ret> 발화 (turn16 첫 프레임)
+    55.02s  agent 발화 시작: <ret> 이천이십삼년 자료에 따르면 미니애폴리스의 흑인 인구는 약 십구 점 일퍼센트로, 소폭 증가 추세를 
+    55.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.30s]: (tool result) Recent data from 2023 estimates the African American pop
+    55.02s  user  발화 끝
+    62.32s  user  발화 시작: 조금씩 계속 늘고 있구나.
+    62.32s  agent 발화 끝
+    64.27s  agent 발화 시작: 성장은 때로는 미미하지만 꾸준하게 이루어지곤 합니다.
+    64.27s  user  발화 끝
+    67.19s  user  발화 시작: 혹시 미니애폴리스에서 흑인 커뮤니티를 지원하는 단체가 있을까?
+    67.19s  agent 발화 끝
+    70.52s  <ret> 발화 (turn20 첫 프레임)
+    70.60s  agent 발화 시작: <ret> 미니애폴리스 엔 에이 에이 씨 피와 도시 리그 트윈 시티는 미니애폴리스 흑인 커뮤니티를 지원하는 
+    70.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.25s]: (tool result) The Minneapolis NAACP and the Urban League Twin Cities a
+    70.60s  user  발화 끝
+    79.85s  user  발화 시작: 응.
+    79.85s  agent 발화 끝
+    80.34s  user  발화 시작: 오, 엔 에이 에이 씨 피랑 도시 리그가 있구나. 한번 알아봐야겠다.
+    80.34s  user  발화 끝
+    85.69s  agent 발화 시작: 도움이 필요할 때, 손을 내밀 곳이 있다는 건 큰 힘이 되죠.
+    85.69s  user  발화 끝
+    91.05s  user  발화 시작: 응.
+    91.05s  agent 발화 끝
+    91.54s  user  발화 시작: 맞아. 혹시 지금 시간 알려줄 수 있어?
+    91.54s  user  발화 끝
+    94.78s  <ret> 발화 (turn26 첫 프레임)
+    94.94s  agent 발화 시작: <ret> 지금은 아시아 서울 기준으로 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다.
+    94.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.36s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    94.94s  user  발화 끝
+   100.30s  user  발화 시작: 응.
+   100.30s  agent 발화 끝
+   100.79s  user  발화 시작: 고마워.
+   100.79s  user  발화 끝
+   101.27s  agent 발화 시작: 시간을 아는 것은 현재를 살아가는 한 가지 방법입니다.
+   101.27s  user  발화 끝
+   105.17s  user  발화 시작: 응응.
+   105.17s  agent 발화 끝
+   105.66s  user  발화 시작: 오늘 날씨는 어때?
+   105.66s  user  발화 끝
+   107.04s  <ret> 발화 (turn32 첫 프레임)
+   107.12s  agent 발화 시작: <ret> 서울의 현재 날씨는 기온 이십팔 점 삼도, 습도 육십이퍼센트, 풍속은 시속 삼 점 일킬로미터입니다
+   107.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.82s]: (tool result) 28.3°C, humidity 62%, wind 3.1 km/h.
+   107.12s  user  발화 끝
+   113.93s  user  발화 시작: 덥겠네.
+   113.93s  agent 발화 끝
+   114.42s  agent 발화 시작: 더위는 때로는 성장의 계기가 되기도 합니다.
+   114.42s  user  발화 끝
+   117.34s  agent 발화 끝

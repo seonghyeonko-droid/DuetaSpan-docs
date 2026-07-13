@@ -4,61 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Paul",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-30",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-14",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-20",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-09-14",
+#       "date": "2026-03-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2025-07-01",
+#       "date": "2025-12-09",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-06-30",
+#       "date": "2025-07-23",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "home",
+#       "text": "User's home address is 575 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-21",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-15",
+#       "date": "2025-08-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -66,83 +61,75 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-23",
-#       "title": "Researching a used car",
+#       "date": "2025-07-28",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Frael, I’m trying to remember w | S2 Okay, but did she open studios in  | S3 I remember some legal trouble. | S4 Wow, that's serious. What about th
+# EXAMINER(FDB-v2) 단계: S1 Hi Barien, how are you today? | S2 So, it was a Civil War thing then? | S3 So, it was actually *challenged* a | S4 That's true. What's the weather…
 
-     0.00s  user  발화 시작: Hi Frael, I’m trying to remember where Abby Lee Dance Compan
-     4.88s  agent 발화 시작: It's wonderful you're reflecting on those memories! Sometime
-     4.88s  user  발화 끝
-     9.76s  user  발화 시작: That's nice, but I just want to know the city and state.
-     9.76s  agent 발화 끝
-    13.54s  <ret> 발화 (turn3 첫 프레임)
-    13.94s  agent 발화 시작: <ret> The original Abby Lee Dance Company was located in Pit
-    13.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: The original Abby Lee Dance Company was located in Pittsburgh, Pennsyl
-    13.94s  user  발화 끝
-    19.16s  user  발화 시작: Yeah, totally.
-    19.16s  agent 발화 끝
-    19.86s  user  발화 시작: Hmm, I thought it was somewhere else. Did she have other stu
-    19.86s  user  발화 끝
-    24.74s  agent 발화 시작: It’s very common for our perceptions of the past to shift a 
-    24.74s  user  발화 끝
-    32.06s  user  발화 시작: Okay, but did she open studios in other places?
-    32.06s  agent 발화 끝
-    34.79s  <ret> 발화 (turn8 첫 프레임)
-    35.19s  agent 발화 시작: <ret> She did open a second studio in Los Angeles, Californi
-    35.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Abby Lee Miller opened a second studio in Los Angeles, California, in 
-    35.19s  user  발화 끝
-    41.12s  user  발화 시작: Yeah.
-    41.12s  agent 발화 끝
-    41.47s  user  발화 시작: Did that LA studio have the same kind of reputation?
-    41.47s  user  발화 끝
-    44.95s  agent 발화 시작: How spaces shape experiences. It shows you're thinking about
-    44.95s  user  발화 끝
-    48.43s  user  발화 시작: I mean, was it as…intense as the Pittsburgh one?
-    48.43s  agent 발화 끝
-    51.33s  <ret> 발화 (turn13 첫 프레임)
-    51.57s  agent 발화 시작: <ret> The Los Angeles studio received similar criticism for 
-    51.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.58s]: The Los Angeles studio of Abby Lee Dance Company received similar crit
-    51.57s  user  발화 끝
-    57.15s  user  발화 시작: I remember some legal trouble.
-    57.15s  agent 발화 끝
-    58.89s  agent 발화 시작: That's a natural part of processing experiences, acknowledgi
-    58.89s  user  발화 끝
-    63.77s  user  발화 시작: …wasn't she in trouble with the law about something related 
-    63.77s  agent 발화 끝
-    67.90s  <ret> 발화 (turn17 첫 프레임)
-    68.30s  agent 발화 시작: <ret> She was indicted on charges of bankruptcy fraud in two
-    68.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Abby Lee Miller was indicted on charges of bankruptcy fraud in 2015, r
-    68.30s  user  발화 끝
-    74.22s  user  발화 시작: Oh right, fraud. What happened with that?
-    74.22s  agent 발화 끝
-    76.26s  <ret> 발화 (turn19 첫 프레임)
-    76.66s  agent 발화 시작: <ret> She pleaded guilty in two thousand sixteen and was sen
-    76.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: Abby Lee Miller pleaded guilty to bankruptcy fraud in 2016 and was sen
-    76.66s  user  발화 끝
-    84.67s  user  발화 시작: Mm-hmm.
-    84.67s  agent 발화 끝
-    85.02s  user  발화 시작: Wow, that's serious. What about the dancers from the origina
-    85.02s  user  발화 끝
-    89.20s  agent 발화 시작: It's good to consider the impact on everyone involved. Somet
-    89.20s  user  발화 끝
-    95.82s  user  발화 시작: Do you know what some of them are doing now?
-    95.82s  agent 발화 끝
-    99.31s  agent 발화 시작: I am here to help you reflect on your social connections and
-    99.31s  user  발화 끝
-   107.67s  user  발화 시작: Okay.
-   107.67s  agent 발화 끝
-   108.02s  user  발화 시작: That’s disappointing. Can you at least tell me the current w
-   108.02s  user  발화 끝
-   112.23s  <ret> 발화 (turn27 첫 프레임)
-   112.55s  agent 발화 시작: <ret> Currently in Pittsburgh, Pennsylvania, it is seventy-f
-   112.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) Current conditions in Pittsburgh, PA are 75.0°F, humidit
-   112.55s  user  발화 끝
-   121.96s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Barien, how are you today?
+     2.22s  agent 발화 시작: I’m doing wonderfully, thank you for asking. It’s a lovely d
+     2.22s  user  발화 끝
+     9.24s  user  발화 시작: Maybe later. I was wondering… when did “In God We Trust” fir
+     9.24s  agent 발화 끝
+    14.76s  <ret> 발화 (turn3 첫 프레임)
+    15.16s  agent 발화 시작: <ret> The United States first authorized the use of “In God 
+    15.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.42s]: The United States first authorized the use of “In God We Trust” on coi
+    15.16s  user  발화 끝
+    29.58s  user  발화 시작: 1864? Wow, that’s… earlier than I expected. Was that during 
+    29.58s  agent 발화 끝
+    33.62s  <ret> 발화 (turn5 첫 프레임)
+    34.02s  agent 발화 시작: <ret> Yes, Abraham Lincoln was president from March fourth, 
+    34.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.61s]: Abraham Lincoln was president of the United States from March 4, 1861,
+    34.02s  user  발화 끝
+    43.63s  user  발화 시작: Right.
+    43.63s  agent 발화 끝
+    44.00s  user  발화 시작: So, it was a Civil War thing then? Like a patriotic response
+    44.00s  user  발화 끝
+    48.44s  agent 발화 시작: It seems to have been a response to the increasing seculariz
+    48.44s  user  발화 끝
+    58.80s  user  발화 시작: Hmm. I wonder if there was much debate about it back then?
+    58.80s  agent 발화 끝
+    62.83s  <ret> 발화 (turn10 첫 프레임)
+    63.23s  agent 발화 시작: <ret> While the phrase appeared on coins in eighteen sixty-f
+    63.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.66s]: Although the phrase "In God We Trust" appeared on coins in 1864, it wa
+    63.23s  user  발화 끝
+    69.89s  user  발화 시작: …but wasn’t that a really divisive issue even in the fifties
+    69.89s  agent 발화 끝
+    76.10s  <ret> 발화 (turn12 첫 프레임)
+    76.18s  agent 발화 시작: <ret> The nineteen fifty-eight Supreme Court case *Blau v. F
+    76.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.20s]: In 1958, the Supreme Court case *Blau v. Fortier* upheld the constitut
+    76.18s  user  발화 끝
+    88.38s  user  발화 시작: So, it was actually *challenged* all the way to the Supreme 
+    88.38s  agent 발화 끝
+    92.82s  agent 발화 시작: Yes, it was. It’s interesting how legal interpretations can 
+    92.82s  user  발화 끝
+   101.69s  user  발화 시작: What about other countries? Do they have similar mottos on t
+   101.69s  agent 발화 끝
+   106.05s  <ret> 발화 (turn16 첫 프레임)
+   106.13s  agent 발화 시작: <ret> Many nations include mottos on their currency, such as
+   106.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.42s]: (tool result) Many nations include national mottos on their currency, 
+   106.13s  user  발화 끝
+   120.55s  user  발화 시작: “Dieu et mon droit”? That sounds… very regal.
+   120.55s  agent 발화 끝
+   123.51s  agent 발화 시작: It does, doesn’t it? It reflects a long tradition of monarch
+   123.51s  user  발화 끝
+   131.64s  user  발화 시작: That's true. What's the weather…
+   131.64s  agent 발화 끝
+   133.49s  user  발화 시작: …like in London right now?
+   133.49s  user  발화 끝
+   135.10s  <ret> 발화 (turn21 첫 프레임)
+   135.34s  agent 발화 시작: <ret> The weather in London is twenty-one point zero degrees
+   135.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.68s]: (tool result) London: 21.0°C, humidity 68%, wind 8.2 km/h, condition: 
+   135.34s  user  발화 끝
+   149.02s  user  발화 시작: Sounds nice. Thanks, Barien.
+   149.02s  agent 발화 끝
+   150.50s  agent 발화 시작: You are very welcome. Remember to take a few moments for you
+   150.50s  user  발화 끝
+   160.86s  agent 발화 끝

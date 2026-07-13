@@ -4,123 +4,109 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "우우",
+#     "name": "가우",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
+#       "date": "2026-03-27",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-04-16",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-08-23",
+#       "date": "2026-02-16",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-08",
+#       "date": "2025-11-24",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
+#     },
+#     {
+#       "date": "2025-10-17",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-09-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-15",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-15",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-13",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 상담사라고 하시니까, 뭔가 좀 불안한데요. 제가 뭘 말씀드려야 | S2 그냥… 뭘 해도 재미가 없고, 뭘 시작해야 할지도 모르겠어요. | S3 그래도… 뭘 해야 할지 모르겠어요. 그냥 이렇게 시간을 보내는 | S4 쉬는 거… 쉬는 게 과연 도움이 될까요? 뭔가 해야 할 것 같
+# EXAMINER(FDB-v2) 단계: S1 혹시 여행 경험이 많으신가요? | S2 … 사실 저는 조용하고 한적한 곳을 좋아해요. 사람들 많은 곳 | S3 태종대… 거기는 어렸을 때 가족이랑 가본 적 있는데, 그때보다 | S4 아, 블루힐 펜션… 한번 알아봐야겠네요. 감사합니다, 크리온 
 
-     0.00s  agent 발화 시작: 안녕하세요, 우우 씨. 저는 젤라예요. 힘든 시간을 보내고 계신 분들을 돕는 상담사랍니다. 혹시 오늘 어떤 
-     9.21s  user  발화 시작: 상담사라고 하시니까, 뭔가 좀 불안한데요. 제가 뭘 말씀드려야 할지 잘 모르겠어요.
-     9.21s  agent 발화 끝
-    14.55s  agent 발화 시작: 불안하신 마음은 당연해요. 새로운 분을 만나면, 또 힘든 이야기를 꺼내면 그런 감정이 들 수 있죠. 어떤 점
-    14.55s  user  발화 끝
-    25.22s  user  발화 시작: 맞아.
-    25.22s  agent 발화 끝
-    25.70s  user  발화 시작: 음… 사실은, 얼마 전에 갑자기 회사를 그만뒀어요. 뭘 해야 할지, 앞으로 어떻게 살아야 할지 너무 막막해요
-    25.70s  user  발화 끝
-    33.46s  agent 발화 시작: 갑작스러운 변화는 누구에게나 큰 혼란을 가져다주죠. 회사를 그만두셨다는 소식에 마음이 아프네요. 지금 느끼는
-    33.46s  user  발화 끝
-    41.70s  user  발화 시작: 응.
-    41.70s  agent 발화 끝
-    42.19s  user  발화 시작: 그냥… 뭘 해도 재미가 없고, 뭘 시작해야 할지도 모르겠어요. 친구들을 만나도 웃을 수가 없고, 계속 혼자 
-    42.19s  user  발화 끝
-    50.92s  agent 발화 시작: 혼자 있고 싶어지는 건, 마음이 지쳐서 스스로를 보호하려는 자연스러운 반응일 수 있어요. 우우 씨는 지금 슬
-    50.92s  user  발화 끝
-    63.04s  user  발화 시작: 그런가요… 근데, 제가 너무 나약한 건 아닐까요? 다른 사람들은 이렇게 힘들어하지 않던데.
-    63.04s  agent 발화 끝
-    68.86s  agent 발화 시작: 다른 사람과 비교하는 건 자신을 더욱 힘들게 할 수 있어요. 각자 자신만의 속도와 방식으로 슬픔을 이겨내고,
-    68.86s  user  발화 끝
-    82.44s  user  발화 시작: 그래.
-    82.44s  agent 발화 끝
-    82.92s  user  발화 시작: 그래도… 뭘 해야 할지 모르겠어요. 그냥 이렇게 시간을 보내는 게 맞는 걸까요?
-    82.92s  user  발화 끝
-    88.74s  agent 발화 시작: 시간을 보내는 것 자체는 나쁜 게 아니에요. 다만, 시간을 보내면서 자신을 돌보는 것을 잊지 않아야 해요. 
-    88.74s  user  발화 끝
-   101.83s  user  발화 시작: 아.
-   101.83s  agent 발화 끝
-   102.32s  user  발화 시작: 좋아하는 음악… 예전에는 정말 좋아했는데, 요즘은 아무것도 듣고 싶지 않아요.
-   102.32s  user  발화 끝
-   107.17s  agent 발화 시작: 음악을 듣고 싶지 않은 마음도 괜찮아요. 억지로 무언가를 하려고 애쓰지 않아도 돼요. 지금은 그냥 편안하게 
-   107.17s  user  발화 끝
-   116.87s  user  발화 시작: 그래.
-   116.87s  agent 발화 끝
-   117.35s  user  발화 시작: 쉬는 거… 쉬는 게 과연 도움이 될까요? 뭔가 해야 할 것 같은 기분이 계속 드는데.
-   117.35s  user  발화 끝
-   124.63s  agent 발화 시작: 해야 할 것 같은 기분은 불안감에서 비롯되는 경우가 많아요. 잠시 멈춰서서, 자신에게 정말 필요한 것이 무엇
-   124.63s  user  발화 끝
-   137.72s  user  발화 시작: 아.
-   137.72s  agent 발화 끝
-   138.20s  user  발화 시작: 잘 모르겠어요… 그냥… 좀 나아졌으면 좋겠어요.
-   138.20s  user  발화 끝
-   141.11s  agent 발화 시작: 나아지기를 바라는 마음, 정말 소중해요. 그 마음을 믿고, 천천히 자신을 돌보면서 앞으로 나아가면 분명 좋은
-   141.11s  user  발화 끝
-   153.24s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 가우님. 저는 크리온이라고 해요. 여행 계획이나 휴식에 대해 함께 고민하는 라이프 코치입니다.
+     6.42s  user  발화 시작: 그치.
+     6.42s  agent 발화 끝
+     6.92s  user  발화 시작: 혹시 여행 경험이 많으신가요?
+     6.92s  user  발화 끝
+     8.89s  agent 발화 시작: 여행 경험보다는, 가우님의 여행을 더 편안하고 의미 있게 만드는 방법을 찾는 걸 좋아해요. 어떤 여행을 생각
+     8.89s  user  발화 끝
+    17.29s  user  발화 시작: 음… 사실 요즘 회사 일이 너무 힘들어서, 그냥 푹 쉬고 싶어요. 어디론가 훌쩍 떠나고 싶은데, 어디가 좋을
+    17.29s  agent 발화 끝
+    25.69s  agent 발화 시작: 힘든 시간을 보내고 계시는군요. 잠시 모든 걸 잊고 재충전할 수 있는 곳을 찾는 게 중요하겠어요. 어떤 스타
+    25.69s  user  발화 끝
+    40.52s  user  발화 시작: 음.
+    40.52s  agent 발화 끝
+    41.01s  agent 발화 시작: 가우님께 딱 맞는 곳을 찾아드릴 수 있도록, 조금 더 자세히 말씀해 주시겠어요? 평소에 어떤 활동을 즐기시는
+    41.01s  user  발화 끝
+    51.88s  user  발화 시작: … 사실 저는 조용하고 한적한 곳을 좋아해요. 사람들 많은 곳은 별로 안 좋아하고요.
+    51.88s  agent 발화 끝
+    58.31s  agent 발화 시작: 조용하고 한적한 곳을 선호하시는군요. 혼자만의 시간을 보내면서 마음을 차분히 가다듬을 수 있는 곳을 찾으시는
+    58.31s  user  발화 끝
+    68.68s  user  발화 시작: 부산 근처요? 어디가 있을까요? 너무 멀리 가고 싶진 않아요.
+    68.68s  agent 발화 끝
+    73.13s  agent 발화 시작: 부산 근처라면, 기장이나 해운대 바닷길 쪽도 괜찮을 것 같아요. 조금 더 조용한 곳을 원하신다면, 태종대나 
+    73.13s  user  발화 끝
+    84.49s  user  발화 시작: 태종대… 거기는 어렸을 때 가족이랑 가본 적 있는데, 그때보다 많이 변했을까요?
+    84.49s  agent 발화 끝
+    89.93s  agent 발화 시작: 시간이 흐르면서 조금씩 변화는 있겠지만, 태종대의 아름다운 자연 경관은 여전히 그대로일 거예요. 예전의 추억
+    89.93s  user  발화 끝
+    99.81s  user  발화 시작: 어.
+    99.81s  agent 발화 끝
+   100.31s  user  발화 시작: 흐음… 그럼 혹시 태종대 근처에 조용히 묵을 수 있는 숙소 같은 곳은 없을까요?
+   100.31s  user  발화 끝
+   106.73s  agent 발화 시작: 태종대 근처에는 오션뷰를 자랑하는 작은 펜션들이 많이 있습니다. 평균 가격은 일박에 팔만 원에서 십오만 원 
+   106.73s  user  발화 끝
+   118.09s  user  발화 시작: 대박.
+   118.09s  agent 발화 끝
+   118.59s  user  발화 시작: 아, 블루힐 펜션… 한번 알아봐야겠네요. 감사합니다, 크리온 씨.
+   118.59s  user  발화 끝
+   122.54s  agent 발화 시작: 천만에요, 가우님. 언제든지 편하게 말씀해 주세요. 가우님의 휴식이 더욱 편안하고 행복해지도록 제가 함께 고
+   122.54s  user  발화 끝
+   129.95s  agent 발화 끝

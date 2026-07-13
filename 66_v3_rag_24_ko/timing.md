@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "보희",
+#     "name": "시정",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,75 +12,79 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
 #       "date": "2026-03-28",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2025-10-29",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-07-23",
+#       "date": "2025-10-28",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-16",
+#       "date": "2026-01-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-10",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-01",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 푸리님, 혹시 영화 '위대한 독재자'에 나오는 연설문 누가 썼 | S2 아, 그렇군요. 그 영화에 대해서 더 자세히 알고 싶어요. | S3 …그 영화가 왜 그렇게 유명한가요? | S4 그럼 채플린은 다른 유명한 영화도 많이 만들었나요?
+# EXAMINER(FDB-v2) 단계: S1 요즘 아이들 키우는 게 참 어렵다. | S2 이번 주말에 아이들이랑 특별한 시간을 보내고 싶은데, 혹시 좋 | S3 …원주민의 날이 언제라고요? | S4 좋은 생각이다. 아이들이랑 같이 박물관에 가볼까?
 
-     0.00s  user  발화 시작: 푸리님, 혹시 영화 '위대한 독재자'에 나오는 연설문 누가 썼는지 아세요?
-     5.13s  agent 발화 시작: 찰리 채플린이 직접 썼다고 알려져 있어요. 그 영화는 정말 유명하죠.
-     5.13s  user  발화 끝
-    10.26s  user  발화 시작: 아, 그렇군요. 그 영화에 대해서 더 자세히 알고 싶어요.
-    10.26s  agent 발화 끝
-    14.88s  agent 발화 시작: '위대한 독재자'는 천구백사십년에 개봉한 찰리 채플린 감독의 풍자 영화예요—
-    14.88s  user  발화 끝
-    19.50s  user  발화 시작: …그 영화가 왜 그렇게 유명한가요?
-    19.50s  agent 발화 끝
-    22.06s  agent 발화 시작: 그 영화는 아돌프 히틀러를 풍자하며, 전체주의에 대한 강렬한 비판을 담고 있어서예요. 채플린은 이 영화를 통
-    22.06s  user  발화 끝
-    33.35s  user  발화 시작: 네.
-    33.35s  agent 발화 끝
-    33.86s  agent 발화 시작: 네, 정말 그렇죠. 이 영화는 개봉 당시에도 큰 논란을 불러일으켰지만, 지금은 영화사에서 중요한 작품으로 평
-    33.86s  user  발화 끝
-    46.69s  user  발화 시작: 그럼 채플린은 다른 유명한 영화도 많이 만들었나요?
-    46.69s  agent 발화 끝
-    49.88s  <ret> 발화 (turn9 첫 프레임)
-    50.28s  agent 발화 시작: <ret> 찰리 채플린은 영화 산업 역사상 가장 중요한 인물 중 한 명으로 널리 알려진 영국 코미디 배우, 
-    50.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.85s]: Charles Chaplin was an English comic actor, filmmaker, and composer wh
-    50.28s  user  발화 끝
-    64.13s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 아이들 키우는 게 참 어렵다.
+     2.81s  agent 발화 시작: 아이들은 정말 소중하지만, 또 걱정도 많이 되죠. 부모님 마음은 다 똑같을 거예요.
+     2.81s  user  발화 끝
+     8.42s  user  발화 시작: 이번 주말에 아이들이랑 특별한 시간을 보내고 싶은데, 혹시 좋은 아이디어 있을까?
+     8.42s  agent 발화 끝
+    13.17s  <ret> 발화 (turn3 첫 프레임)
+    13.57s  agent 발화 시작: <ret> 특별한 시간을 보내고 싶으시다면, 팔월 구일은 세계 원주민의 날인데 —
+    13.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: The International Day of the World’s Indigenous Peoples is observed an
+    13.57s  user  발화 끝
+    18.25s  user  발화 시작: …원주민의 날이 언제라고요?
+    18.25s  agent 발화 끝
+    19.65s  agent 발화 시작: 팔월 구일입니다. 이 날은 원주민들의 필요에 대한 인식을 높이기 위해 기념하는 날이죠.
+    19.65s  user  발화 끝
+    25.26s  user  발화 시작: 그래.
+    25.26s  agent 발화 끝
+    25.73s  agent 발화 시작: 아이들과 함께 원주민 문화에 대해 배우는 건 어떠세요? 다양한 문화 경험은 아이들에게 좋은 영향을 줄 수 있
+    25.73s  user  발화 끝
+    33.69s  user  발화 시작: 좋은 생각이다. 아이들이랑 같이 박물관에 가볼까?
+    33.69s  agent 발화 끝
+    36.49s  user  발화 끝

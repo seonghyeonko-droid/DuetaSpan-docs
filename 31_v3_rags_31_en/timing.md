@@ -4,69 +4,66 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Isla",
+#     "name": "Noa",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-09",
+#       "date": "2026-01-18",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "home",
+#       "text": "User's home address is 459 Maple Drive."
+#     },
+#     {
+#       "date": "2025-12-20",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-10-07",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-09-14",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-08-13",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-12",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-06-14",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-03-03",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where does Air Force One typically fly out of?
-     2.64s  <ret> 발화 (turn1 첫 프레임)
-     2.88s  agent 발화 시작: <ret> It’s interesting how places become symbolic, isn’t it?
-     2.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.76s]: Joint Base Andrews is the home base for both Air Force One and the 89t
-     2.88s  user  발화 끝
-     8.64s  agent 발화 끝
+     0.00s  user  발화 시작: When did the American Basketball Association merge with the 
+     4.78s  <ret> 발화 (turn1 첫 프레임)
+     5.02s  agent 발화 시작: <ret> That happened in June of nineteen seventy-six, with fo
+     5.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.62s]: The American Basketball Association merged with the National Basketbal
+     5.02s  user  발화 끝
+    14.64s  agent 발화 끝

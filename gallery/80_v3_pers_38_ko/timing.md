@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "가민",
+#     "name": "태경",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,45 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-02-11",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-08-29",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-12",
+#       "date": "2026-05-09",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2025-06-11",
+#       "date": "2026-04-30",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-10-23",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-07-17",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-08",
+#       "date": "2026-04-20",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,49 +58,91 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-23",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 어떤 식으로 도와주시는 건가요? | S2 특별히 뭘 하고 있지는 않아요. 그냥 조금씩 저축하는 정도인데 | S3 … 혹시 제가 지금부터 뭘 해야 할지, 간단하게라도 알려주실  | S4 음… 생각해 볼게요. 정말 감사합니다, 카라님.
+# EXAMINER(FDB-v2) 단계: S1 그런데 정확히 뭘 도와주시는 분이세요? | S2 그냥… 다요. 해야 할 일이 너무 많고, 뭘 먼저 해야 할지  | S3 사소한 일까지요? 칫솔질 같은 것도요? | S4 그렇군요. 앱은 그냥 참고만 해야 하는 거군요.
 
-     0.00s  agent 발화 시작: 가민님, 안녕하세요. 저는 카라예요. 돈과 예산 관리를 도와드리는 웰니스 코치랍니다.
-     5.37s  user  발화 시작: 혹시 어떤 식으로 도와주시는 건가요?
-     5.37s  agent 발화 끝
-     8.05s  agent 발화 시작: 재정적인 목표를 설정하고, 습관을 개선하고, 더 편안하게 돈을 관리할 수 있도록 돕는 거예요. 지금 가장 고
-     8.05s  user  발화 끝
-    17.71s  user  발화 시작: 네.
-    17.71s  agent 발화 끝
-    18.25s  user  발화 시작: 음… 사실 요즘 돈 때문에 좀 불안하거든요. 쉰대이고, 은퇴 준비도 해야 하는데…
-    18.25s  user  발화 끝
-    24.69s  agent 발화 시작: 은퇴 준비는 정말 중요한 문제죠. 막막하게 느껴지실 수 있어요. 혹시 현재 어떤 준비를 하고 계신지, 어떤 
-    24.69s  user  발화 끝
-    36.50s  user  발화 시작: 특별히 뭘 하고 있지는 않아요. 그냥 조금씩 저축하는 정도인데, 충분할지 걱정돼요.
-    36.50s  agent 발화 끝
-    42.40s  agent 발화 시작: 조금씩 저축하는 것도 좋은 시작이에요. 하지만 은퇴 후 생활을 위해서는 좀 더 체계적인 계획이 필요할 수도 
-    42.40s  user  발화 끝
-    52.06s  user  발화 시작: … 혹시 제가 지금부터 뭘 해야 할지, 간단하게라도 알려주실 수 있나요?
-    52.06s  agent 발화 끝
-    57.97s  agent 발화 시작: 지금부터라도 가계부를 써보시는 건 어떠세요? 수입과 지출을 정확히 파악하면 불필요한 부분을 줄이고 저축을 늘
-    57.97s  user  발화 끝
-    66.55s  user  발화 시작: 음.
-    66.55s  agent 발화 끝
-    67.09s  agent 발화 시작: 가계부를 쓰는 게 처음이라면, 앱을 활용하는 것도 좋은 방법이에요. 다양한 앱들이 편리한 기능을 제공하고 있
-    67.09s  user  발화 끝
-    79.97s  user  발화 시작: 네.
-    79.97s  agent 발화 끝
-    80.51s  user  발화 시작: 앱은 잘 모르겠어요. 그냥 간단하게 쓸 수 있는 게 있으면 좋겠어요.
-    80.51s  user  발화 끝
-    86.41s  agent 발화 시작: 간단한 앱이라면, 수기 가계부도 좋은 선택이에요. 직접 쓰는 과정에서 돈에 대한 감각을 키울 수 있고, 좀 
-    86.41s  user  발화 끝
-    98.22s  user  발화 시작: 음… 생각해 볼게요. 정말 감사합니다, 카라님.
-    98.22s  agent 발화 끝
-   101.44s  agent 발화 시작: 천만에요, 가민님. 언제든 궁금한 점이 있으면 편하게 말씀해주세요. 함께 고민하고 해결해나가도록 노력할게요.
-   101.44s  user  발화 끝
-   107.88s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 태경 씨. 저는 프렐라라예요. 혹시 오늘 하루, 어떤 점이 좀 답답하신가요?
+     5.67s  user  발화 시작: 그런데 정확히 뭘 도와주시는 분이세요?
+     5.67s  agent 발화 끝
+     8.04s  agent 발화 시작: 저는 주로 일상생활에서 조금 더 편안하게, 그리고 효율적으로 지낼 수 있도록 도와드리는 웰니스 코치예요.
+     8.04s  user  발화 끝
+    14.65s  user  발화 시작: 웰니스 코치요? 그게 뭔데요? 그냥 상담 같은 건가요?
+    14.65s  agent 발화 끝
+    18.43s  agent 발화 시작: 상담과는 조금 달라요. 태경 씨의 하루를 좀 더 가볍고 즐겁게 만들 수 있는 방법을 함께 찾아보는 거죠.
+    18.43s  user  발화 끝
+    26.47s  user  발화 시작: 네네.
+    26.47s  agent 발화 끝
+    26.94s  user  발화 시작: 음… 요즘 계속 피곤하고 뭘 해야 할지 모르겠어요. 뭘 시작해야 할지 감이 안 잡혀요.
+    26.94s  user  발화 끝
+    33.56s  agent 발화 시작: 피곤하고 막막한 기분이 드시는군요. 그런 상태에서는 뭘 시작하기가 더 어렵죠. 혹시 어떤 부분에서 가장 힘드
+    33.56s  user  발화 끝
+    40.65s  user  발화 시작: 네.
+    40.65s  agent 발화 끝
+    41.12s  user  발화 시작: 그냥… 다요. 해야 할 일이 너무 많고, 뭘 먼저 해야 할지 모르겠어요. 시간 관리가 안 되는 것 같아요.
+    41.12s  user  발화 끝
+    49.63s  agent 발화 시작: 해야 할 일이 많다고 느끼시는군요. 시간 관리가 잘 안 되어서 힘드신 것 같아요. 우선, 하루 일과를 간단하
+    49.63s  user  발화 끝
+    59.09s  user  발화 시작: 예.
+    59.09s  agent 발화 끝
+    59.56s  agent 발화 시작: 하루 일과를 적어보면, 어떤 일에 시간을 많이 쓰는지, 어떤 일을 빼거나 줄일 수 있는지 파악하는 데 도움이
+    59.56s  user  발화 끝
+    68.54s  user  발화 시작: 그렇죠.
+    68.54s  agent 발화 끝
+    69.01s  user  발화 시작: 그건… 좀 귀찮은데요.
+    69.01s  user  발화 끝
+    70.43s  agent 발화 시작: 네, 귀찮을 수도 있죠. 하지만 작은 변화가 큰 차이를 만들 수 있답니다. 너무 부담 갖지 마시고, 아주 간
+    70.43s  user  발화 끝
+    79.41s  user  발화 시작: 알겠어요. 그럼, 뭐부터 적어야 할까요?
+    79.41s  agent 발화 끝
+    81.78s  agent 발화 시작: 아침에 일어나서 잠들기 전까지, 하시는 모든 일을 적어보세요. 아주 사소한 일이라도 괜찮아요.
+    81.78s  user  발화 끝
+    87.45s  user  발화 시작: 그렇죠.
+    87.45s  agent 발화 끝
+    87.92s  user  발화 시작: 사소한 일까지요? 칫솔질 같은 것도요?
+    87.92s  user  발화 끝
+    90.28s  agent 발화 시작: 네, 칫솔질도 포함해서, 하루 동안 하시는 모든 행동을 기록해보세요. 그러면 시간 사용 패턴이 보일 거예요.
+    90.28s  user  발화 끝
+    97.37s  user  발화 시작: 흐음… 생각보다 시간이 많이 걸리겠네요.
+    97.37s  agent 발화 끝
+    99.74s  agent 발화 시작: 처음에는 조금 힘들 수 있지만, 익숙해지면 습관이 될 거예요. 그리고 시간을 효율적으로 사용하는 방법을 찾는
+    99.74s  user  발화 끝
+   108.72s  user  발화 시작: 혹시… 시간 관리에 도움이 되는 앱 같은 건 없을까요?
+   108.72s  agent 발화 끝
+   112.97s  agent 발화 시작: 시간 관리에 도움이 되는 앱은 많이 있어요. 하지만 앱에 의존하기보다는, 스스로 시간을 관리하는 습관을 들이
+   112.97s  user  발화 끝
+   121.48s  user  발화 시작: 맞아요.
+   121.48s  agent 발화 끝
+   121.95s  user  발화 시작: 그렇군요. 앱은 그냥 참고만 해야 하는 거군요.
+   121.95s  user  발화 끝
+   125.26s  agent 발화 시작: 네, 앱은 도구일 뿐이에요. 중요한 건 태경 씨 스스로 시간을 어떻게 사용할지 결정하는 거죠.
+   125.26s  user  발화 끝
+   131.88s  user  발화 시작: 음.
+   131.88s  agent 발화 끝
+   132.35s  user  발화 시작: 알았어요. 일단 하루 일과부터 적어볼게요.
+   132.35s  user  발화 끝
+   134.72s  agent 발화 시작: 아주 좋은 생각이에요. 작은 것부터 시작하는 것이 중요하답니다. 힘내세요, 태경 씨!
+   134.72s  user  발화 끝
+   139.92s  user  발화 시작: 네.
+   139.92s  agent 발화 끝
+   140.39s  user  발화 시작: 감사합니다, 프렐라라 씨.
+   140.39s  user  발화 끝
+   141.81s  agent 발화 시작: 천만에요. 언제든지 도움이 필요하면 저를 찾아주세요. 저는 항상 태경 씨를 응원하고 있답니다.
+   141.81s  user  발화 끝
+   147.48s  agent 발화 끝

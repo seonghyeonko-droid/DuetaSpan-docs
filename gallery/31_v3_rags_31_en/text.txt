@@ -1,68 +1,65 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Lias, a gentle and reflective life coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Thio, a practical and reassuring counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Isla",
+    "name": "Noa",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "late 30s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-12-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2026-05-15",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-09",
+      "date": "2026-01-18",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "home",
+      "text": "User's home address is 459 Maple Drive."
+    },
+    {
+      "date": "2025-12-20",
       "category": "allergy",
       "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-10-07",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-09-14",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-08-13",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-07-12",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2025-06-14",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-25",
-      "title": "Planning a birthday dinner",
+      "date": "2026-03-03",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-03-18",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where does Air Force One typically fly out ⟨ret@2.64s⟩ of?
-[  2.88s][moshi] ⟦⚡SPAN@2.88s: Joint Base Andrews is the home base for both Air Force One and the 89th Airlift Wing.⟧ It’s interesting how places become symbolic, isn’t it? Air Force One generally flies out of Joint Base Andrews.
+[  0.00s][user ] When did the American Basketball Association merge with the National Basketball ⟨ret@4.78s⟩ Association?
+[  5.02s][moshi] ⟦⚡SPAN@5.02s: The American Basketball Association merged with the National Basketball Association in June of 1976, resulting⟧ That happened in June of nineteen seventy-six, with four ABA teams joining the NBA. It was a big moment for professional basketball, really.
