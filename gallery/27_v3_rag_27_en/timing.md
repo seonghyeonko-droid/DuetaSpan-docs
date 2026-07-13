@@ -4,150 +4,156 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Liam",
+#     "name": "Adam",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-05-25",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-12-21",
+#       "date": "2026-04-20",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "date": "2026-04-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-02-13",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-09",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-13",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just thinking… | S2 I'm trying to remember... was he i | S3 Seoul? I'm not in Seoul. I'm in To | S4 That’s not bad at all. I think I’l
+# EXAMINER(FDB-v2) 단계: S1 Hi Orox, I'm trying to get a bette | S2 That sounds like a lot of money! | S3 Okay, that makes sense. What about | S4 I'm also curious about setting fin
 
-     0.00s  user  발화 시작: I was just thinking…
-     1.50s  user  발화 시작: …about old movies. Do you know who directed Splendor in the 
-     1.50s  user  발화 끝
-     5.81s  <ret> 발화 (turn2 첫 프레임)
-     6.01s  agent 발화 시작: <ret> That would be Elia Kazan – he was really a pivotal fig
-     6.01s  user  발화 끝
-     6.21s  ⚡SPAN 주입 [d'=0.40s / d_lead=6.38s]: Elia Kazan was a Greek-American film and stage director, and one of th
-    12.39s  user  발화 시작: Oh, Kazan. I think I've heard that name. What else did he di
-    12.39s  agent 발화 끝
-    16.70s  <ret> 발화 (turn4 첫 프레임)
-    17.27s  agent 발화 시작: <ret> He directed some fantastic films, like "Gentleman's Ag
-    17.27s  user  발화 끝
-    17.40s  ⚡SPAN 주입 [d'=0.70s / d_lead=6.01s]: Elia Kazan directed several acclaimed films, including "Gentleman's Ag
-    23.27s  user  발화 시작: Yeah.
-    23.27s  agent 발화 끝
-    23.65s  user  발화 시작: "A Streetcar Named Desire" is a classic! Marlon Brando was i
-    23.65s  user  발화 끝
-    28.53s  agent 발화 시작: Yes, Marlon Brando starred in "A Streetcar Named Desire" alo
-    28.53s  user  발화 끝
-    34.91s  user  발화 시작: I'm trying to remember... was he in anything else good?
-    34.91s  agent 발화 끝
-    38.04s  <ret> 발화 (turn9 첫 프레임)
-    38.66s  agent 발화 시작: <ret> Oh, absolutely! He’s unforgettable in "The Godfather" 
-    38.66s  user  발화 끝
-    39.10s  ⚡SPAN 주입 [d'=1.06s / d_lead=5.63s]: Marlon Brando also starred in "The Godfather" (1972), widely considere
-    44.29s  user  발화 시작: Wow, those are both amazing. Speaking of classics, what's th
-    44.29s  agent 발화 끝
-    49.15s  <ret> 발화 (turn11 첫 프레임)
-    49.17s  agent 발화 시작: <ret> It's currently twenty-six point zero degrees Celsius, 
-    49.17s  user  발화 끝
-    49.74s  ⚡SPAN 주입 [d'=0.59s / d_lead=7.51s]: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.
-    56.68s  user  발화 시작: That sounds lovely. Maybe I should go for a walk.
-    56.68s  agent 발화 끝
-    60.43s  agent 발화 시작: That’s a wonderful idea! Fresh air is always good for the sp
-    60.43s  user  발화 끝
-    64.94s  user  발화 시작: Yeah.
-    64.94s  agent 발화 끝
-    65.31s  user  발화 시작: You're right. I’ve been meaning to find a new park to walk i
-    65.31s  user  발화 끝
-    70.17s  <ret> 발화 (turn16 첫 프레임)
-    70.19s  agent 발화 시작: <ret> Have you considered Olympic Park in Seoul? It was buil
-    70.19s  user  발화 끝
-    70.71s  ⚡SPAN 주입 [d'=0.55s / d_lead=6.01s]: Olympic Park, located in Seoul, South Korea, is a large public park bu
-    76.20s  user  발화 시작: Uh-huh.
-    76.20s  agent 발화 끝
-    76.57s  user  발화 시작: Seoul? I'm not in Seoul. I'm in Toronto.
-    76.57s  user  발화 끝
-    79.58s  agent 발화 시작: My apologies! I seem to have gotten my locations mixed up. L
-    79.58s  user  발화 끝
-    86.71s  user  발화 시작: Yes, please. Something with a nice walking trail.
-    86.71s  agent 발화 끝
-    89.17s  <ret> 발화 (turn21 첫 프레임)
-    89.65s  ⚡SPAN 주입 [d'=1.37s / d_lead=5.63s]: High Park in Toronto offers extensive walking trails, gardens, a zoo, 
-    89.71s  agent 발화 시작: <ret> High Park in Toronto has great walking trails, beautif
-    89.71s  user  발화 끝
-    95.34s  user  발화 시작: Yeah.
-    95.34s  agent 발화 끝
-    95.72s  user  발화 시작: That sounds perfect! Is it easy to get to by public transit?
-    95.72s  user  발화 끝
-   100.22s  agent 발화 시작: Mhm.
-   100.22s  user  발화 끝
-   100.55s  <ret> 발화 (turn25 첫 프레임)
-   100.60s  agent 발화 시작: <ret> Yes, the three hundred bus towards Bloor Street West s
-   100.60s  agent 발화 끝
-   101.00s  ⚡SPAN 주입 [d'=0.45s / d_lead=5.63s]: (tool result) Bus 300 towards Bloor St West stops at High Park Station
-   106.23s  user  발화 시작: Yeah.
-   106.23s  agent 발화 끝
-   106.60s  user  발화 시작: Great! How long does that bus ride take from downtown?
-   106.60s  user  발화 끝
-   109.85s  <ret> 발화 (turn28 첫 프레임)
-   110.19s  ⚡SPAN 주입 [d'=0.35s / d_lead=6.01s]: The 300 bus from Union Station to High Park Station takes approximatel
-   110.36s  agent 발화 시작: <ret> From Union Station, the three hundred bus takes roughl
-   110.36s  user  발화 끝
-   116.36s  user  발화 시작: That’s not bad at all. I think I’ll plan to go tomorrow.
-   116.36s  agent 발화 끝
-   120.87s  agent 발화 시작: Okay.
-   120.87s  user  발화 끝
-   121.24s  agent 발화 시작: That sounds like a lovely plan! Getting outdoors will be a g
-   121.24s  agent 발화 끝
-   126.12s  user  발화 시작: I've been feeling a bit stressed about my budget lately.
-   126.12s  agent 발화 끝
-   129.87s  agent 발화 시작: Uh-huh.
-   129.87s  user  발화 끝
-   130.25s  agent 발화 시작: I understand. Many people find budgeting challenging. It's a
-   130.25s  agent 발화 끝
-   135.88s  user  발화 시작: It just feels overwhelming, you know? Where do I even start?
-   135.88s  agent 발화 끝
-   140.01s  agent 발화 시작: [sigh] It can feel that way, absolutely. We can start small,
-   140.01s  user  발화 끝
-   149.39s  user  발화 시작: Yes, that sounds like a good idea. Maybe I should write ever
-   149.39s  agent 발화 끝
-   154.27s  agent 발화 시작: Exactly! Or, we could use an app to help. There are many bud
-   154.27s  user  발화 끝
-   161.03s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Orox, I'm trying to get a better handle on my finances.
+     4.43s  agent 발화 시작: Hello! I’m Orox, and I’m happy to help you with that. It's a
+     4.43s  user  발화 끝
+    12.19s  user  발화 시작: I've heard about the 50/30/20 rule. Can you explain it?
+    12.19s  agent 발화 끝
+    15.88s  agent 발화 시작: Okay.
+    15.88s  user  발화 끝
+    15.96s  <ret> 발화 (turn4 첫 프레임)
+    16.25s  agent 발화 시작: <ret> That’s a really popular method – it suggests you divid
+    16.25s  agent 발화 끝
+    17.36s  ⚡SPAN 주입 [d'=1.40s / d_lead=9.97s]: The 50/30/20 rule suggests allocating 50% of your after-tax income to 
+    26.23s  user  발화 시작: Oh.
+    26.23s  agent 발화 끝
+    26.59s  user  발화 시작: Needs versus wants… that sounds tricky.
+    26.59s  user  발화 끝
+    28.81s  agent 발화 시작: It can be! Needs are essentials like housing, food, and tran
+    28.81s  user  발화 끝
+    37.68s  user  발화 시작: Yeah, yeah.
+    37.68s  agent 발화 끝
+    38.41s  user  발화 시작: What about an emergency fund? Is that part of the savings?
+    38.41s  user  발화 끝
+    41.94s  <ret> 발화 (turn10 첫 프레임)
+    42.42s  ⚡SPAN 주입 [d'=0.51s / d_lead=8.50s]: An emergency fund is cash set aside to cover unexpected expenses, idea
+    42.48s  agent 발화 시작: <ret> An emergency fund falls under savings – it’s really ab
+    42.48s  user  발화 끝
+    50.97s  user  발화 시작: That sounds like a lot of money!
+    50.97s  agent 발화 끝
+    53.56s  agent 발화 시작: [curious] It can seem that way, but it provides huge peace o
+    53.56s  user  발화 끝
+    61.69s  user  발화 시작: Yeah.
+    61.69s  agent 발화 끝
+    62.05s  user  발화 시작: I'm also trying to pay off some credit card debt.
+    62.05s  user  발화 끝
+    65.75s  agent 발화 시작: Paying down debt is a smart move! Prioritizing high-interest
+    65.75s  user  발화 끝
+    73.51s  user  발화 시작: Should I focus on the highest interest rate first?
+    73.51s  agent 발화 끝
+    76.83s  agent 발화 시작: Wow.
+    76.83s  user  발화 끝
+    77.18s  <ret> 발화 (turn18 첫 프레임)
+    77.20s  agent 발화 시작: <ret> Many people find success using the debt avalanche meth
+    77.20s  agent 발화 끝
+    77.72s  ⚡SPAN 주입 [d'=0.55s / d_lead=7.76s]: The debt avalanche method prioritizes debts with the highest interest 
+    84.96s  user  발화 시작: Yeah.
+    84.96s  agent 발화 끝
+    85.33s  user  발화 시작: Okay, that makes sense. What about investing?
+    85.33s  user  발화 끝
+    87.91s  agent 발화 시작: Investing is a great way to grow your wealth over time, but 
+    87.91s  user  발화 끝
+    96.78s  user  발화 시작: Okay.
+    96.78s  agent 발화 끝
+    97.15s  user  발화 시작: I’ve been seeing a lot about compound interest.
+    97.15s  user  발화 끝
+    99.56s  <ret> 발화 (turn24 첫 프레임)
+   100.04s  ⚡SPAN 주입 [d'=1.37s / d_lead=7.39s]: Compound interest is interest earned not only on the initial principal
+   100.10s  agent 발화 시작: <ret> Compound interest is truly powerful – it’s earning int
+   100.10s  user  발화 끝
+   107.49s  user  발화 시작: That sounds…complicated.
+   107.49s  agent 발화 끝
+   108.23s  agent 발화 시작: It is a bit at first, but it really adds up over time. –
+   108.23s  user  발화 끝
+   113.40s  user  발화 시작: …But how does that actually affect my day-to-day budgeting?
+   113.40s  agent 발화 끝
+   116.72s  agent 발화 시작: It means prioritizing savings even if it’s small amounts, as
+   116.72s  user  발화 끝
+   123.74s  user  발화 시작: Yeah.
+   123.74s  agent 발화 끝
+   124.11s  agent 발화 시작: Thinking of your budget as a tool to reach long-term goals, 
+   124.11s  user  발화 끝
+   130.76s  user  발화 시작: I'm also curious about setting financial goals.
+   130.76s  agent 발화 끝
+   133.34s  agent 발화 시작: Setting clear goals is key! Make them SMART: Specific, Measu
+   133.34s  user  발화 끝
+   138.52s  user  발화 시작: Okay.
+   138.52s  agent 발화 끝
+   138.88s  user  발화 시작: SMART goals… I’ll have to write that down.
+   138.88s  user  발화 끝
+   141.84s  agent 발화 시작: [happy] Absolutely! It’s a helpful framework. Perhaps we cou
+   141.84s  user  발화 끝
+   147.75s  user  발화 시작: No, that's okay for now. Thanks for your help, Orox!
+   147.75s  agent 발화 끝
+   151.44s  agent 발화 시작: You’re very welcome! Remember, small steps can make a big di
+   151.44s  user  발화 끝
+   159.20s  agent 발화 끝

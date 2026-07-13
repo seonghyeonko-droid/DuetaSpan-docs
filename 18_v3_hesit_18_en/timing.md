@@ -4,91 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Samuel",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-05-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-16",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
 #       "date": "2026-05-06",
-#       "category": "home",
-#       "text": "User's home address is 725 Oak Avenue."
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2026-02-22",
+#       "date": "2026-03-27",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-13",
+#       "date": "2026-05-24",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-29",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, who has the most three-po | S2 Hmm, so Curry is pretty close. | S3 …do you know how… | S4 …many LeBron James has made?
+# EXAMINER(FDB-v2) 단계: S1 Um, I was wondering… who does Broo | S2 Hmm, I think I remember her marryi | S3 …do they ever stay married for mor | S4 That’s nice. Is RJ on the show now
 
-     0.00s  user  발화 시작: Hey, uh, who has the most three-pointers in NBA history? I a
-     5.03s  <ret> 발화 (turn1 첫 프레임)
-     5.19s  agent 발화 시작: <ret> That would be Ray Allen, who made a total of two thous
-     5.19s  user  발화 끝
-     5.33s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.99s]: Ray Allen holds the National Basketball Association record for most th
-    15.18s  user  발화 시작: Uh-huh.
-    15.18s  agent 발화 끝
-    15.58s  user  발화 시작: Wow, that's a lot!
-    15.58s  user  발화 끝
-    16.65s  <ret> 발화 (turn4 첫 프레임)
-    17.12s  ⚡SPAN 주입 [d'=0.81s / d_lead=9.19s]: Stephen Curry currently ranks second in NBA history with two thousand,
-    17.18s  agent 발화 시작: <ret> Stephen Curry is right behind him, having made two tho
-    17.18s  user  발화 끝
-    26.36s  user  발화 시작: Wow.
-    26.36s  agent 발화 끝
-    26.76s  user  발화 시작: Hmm, so Curry is pretty close.
-    26.76s  user  발화 끝
-    29.16s  agent 발화 시작: It's fascinating to see how—
-    29.16s  user  발화 끝
-    31.16s  user  발화 시작: …do you know how…
-    31.16s  agent 발화 끝
-    32.75s  user  발화 시작: …many LeBron James has made?
-    32.75s  user  발화 끝
-    34.75s  agent 발화 시작: Yeah.
-    34.75s  user  발화 끝
-    35.02s  <ret> 발화 (turn11 첫 프레임)
-    35.12s  ⚡SPAN 주입 [d'=0.99s / d_lead=8.79s]: LeBron James has made one thousand, nine hundred and seventy-eight thr
-    35.15s  agent 발화 시작: <ret> LeBron James has made one thousand, nine hundred and s
-    35.15s  agent 발화 끝
-    43.94s  agent 발화 시작: It’s amazing how those top players continue to redefine the 
-    43.94s  agent 발화 끝
-    48.33s  agent 발화 끝
+     0.00s  user  발화 시작: Um, I was wondering… who does Brooke marry on Bold and the B
+     8.05s  <ret> 발화 (turn1 첫 프레임)
+     8.21s  agent 발화 시작: <ret> It’s a bit complicated, as relationships often are on 
+     8.21s  user  발화 끝
+     8.35s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.47s]: Brooke Logan has been married to Ridge Forrester on and off throughout
+    15.68s  user  발화 시작: Oh, really? How many times, exactly?
+    15.68s  agent 발화 끝
+    17.39s  <ret> 발화 (turn3 첫 프레임)
+    17.92s  agent 발화 시작: <ret> Well, as of November twenty twenty-three, Brooke and R
+    17.92s  user  발화 끝
+    18.20s  ⚡SPAN 주입 [d'=0.81s / d_lead=9.33s]: Brooke Logan and Ridge Forrester have married a total of seven times a
+    27.25s  user  발화 시작: Okay.
+    27.25s  agent 발화 끝
+    27.62s  user  발화 시작: Wow, seven times! That’s… a lot. Is Ridge her most frequent 
+    27.62s  user  발화 끝
+    32.33s  <ret> 발화 (turn7 첫 프레임)
+    32.47s  agent 발화 시작: Mm-hmm.
+    32.47s  user  발화 끝
+    32.85s  agent 발화 시작: <ret> Yes, Ridge is definitely her most frequent partner in 
+    32.85s  agent 발화 끝
+    33.16s  ⚡SPAN 주입 [d'=1.06s / d_lead=7.84s]: While Brooke has been married to other men, including Eric Forrester a
+    40.69s  user  발화 시작: Wow.
+    40.69s  agent 발화 끝
+    41.06s  user  발화 시작: Hmm, I think I remember her marrying someone else… maybe a d
+    41.06s  user  발화 끝
+    45.49s  <ret> 발화 (turn10 첫 프레임)
+    45.54s  agent 발화 시작: <ret> You're right to recall another marriage! She briefly m
+    45.54s  user  발화 끝
+    46.99s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.09s]: Brooke Logan was also briefly married to Dr. Taylor Hayes’s husband, D
+    52.63s  user  발화 시작: Okay, that rings a bell. But is Ridge always the one she end
+    52.63s  agent 발화 끝
+    58.60s  agent 발화 시작: And a core part of the show’s drama…
+    58.60s  user  발화 끝
+    61.59s  user  발화 시작: Yeah.
+    61.59s  agent 발화 끝
+    61.96s  user  발화 시작: …do they ever stay married for more than, like, a year at a 
+    61.96s  user  발화 끝
+    67.16s  <ret> 발화 (turn15 첫 프레임)
+    67.19s  agent 발화 시작: <ret> It seems lasting happiness is elusive for them! Their 
+    67.19s  user  발화 끝
+    67.65s  ⚡SPAN 주입 [d'=0.49s / d_lead=8.21s]: Brooke and Ridge’s marriages are often short-lived due to ongoing dram
+    75.40s  user  발화 시작: Oh, that explains a lot. So, it's a cycle of marrying, divor
+    75.40s  agent 발화 끝
+    80.62s  agent 발화 시작: Exactly. It’s a pretty classic storyline for them—a constant
+    80.62s  user  발화 끝
+    85.10s  user  발화 시작: Welll… do they have any children together?
+    85.10s  agent 발화 끝
+    87.24s  <ret> 발화 (turn19 첫 프레임)
+    87.72s  agent 발화 시작: <ret> Yes, they share one son, RJ Forrester, born in two tho
+    87.72s  user  발화 끝
+    88.59s  ⚡SPAN 주입 [d'=1.35s / d_lead=4.85s]: Brooke Logan and Ridge Forrester have one son together, named RJ Forre
+    92.57s  user  발화 시작: Yeah, yeah.
+    92.57s  agent 발화 끝
+    93.32s  user  발화 시작: That’s nice. Is RJ on the show now?
+    93.32s  user  발화 끝
+    96.15s  <ret> 발화 (turn22 첫 프레임)
+    96.30s  agent 발화 시작: <ret> He recently returned to the show in December twenty tw
+    96.30s  user  발화 끝
+    96.89s  ⚡SPAN 주입 [d'=0.74s / d_lead=7.84s]: RJ Forrester recently returned to the show in December 2023, after bei
+   104.14s  user  발화 시작: Wow, that’s a long time! Thanks for all the info, Gious.
+   104.14s  agent 발화 끝
+   108.25s  user  발화 끝

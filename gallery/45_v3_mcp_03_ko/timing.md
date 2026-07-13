@@ -4,122 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "주현",
+#     "name": "정찬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2026-03-15",
+#       "date": "2026-04-22",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-12-13",
+#       "date": "2026-04-01",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2025-12-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-09",
+#       "date": "2026-05-04",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-19",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-28",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 파리에서 암스테르담까지 차로 가면 얼마나 걸릴까요? | S2 벨기에 음식은 맛있을 것 같은데, 브뤼헤에 있는 곳으로 가볼까 | S3 …혹시 브뤼헤에 있는 다른 맥주 양조장도 추천해 주실 수 있나 | S4 감사합니다, 오라리미. 덕분에 여행 계획이 훨씬 수월해졌어요.
+# EXAMINER(FDB-v2) 단계: S1 수제 가죽 지갑을 만들어 줘. 실물 제품이야. | S2 아니, 그건 됐고… 혹시 다른 가죽 제품도 만들 수 있어? | S3 벨트도 만들어 줘. 검정색 가죽 벨트. | S4 … 잠깐만, 혹시 가죽 종류도 선택할 수 있어?
 
-     0.00s  user  발화 시작: 파리에서 암스테르담까지 차로 가면 얼마나 걸릴까요?
+     0.00s  user  발화 시작: 수제 가죽 지갑을 만들어 줘. 실물 제품이야.
      2.58s  <ret> 발화 (turn1 첫 프레임)
-     3.05s  agent 발화 시작: <ret> 파리에서 암스테르담까지는 대략 오백이킬로미터이고, 교통 상황에 따라 네시간 사십오분 정도 걸립니다
-     3.05s  user  발화 끝
-     3.33s  ⚡SPAN 주입 [d'=0.76s / d_lead=5.58s]: (tool result) The drive from Paris to Amsterdam is approximately 312 m
-     8.63s  agent 발화 시작: 운전 중에 잠시 들를 만한 곳을 찾아드릴까요?
-     8.63s  agent 발화 끝
-    12.18s  user  발화 시작: 네, 중간에 잠시 들러서 점심을 먹을 만한 곳이 있을까요?
-    12.18s  agent 발화 끝
-    16.15s  <ret> 발화 (turn4 첫 프레임)
-    16.75s  agent 발화 시작: <ret> 파리에서 암스테르담 가는 길에는 맛집이 많아요. 브뤼셀의 르 렐레 드 랑트르코트는 스테이크 프라이
-    16.75s  user  발화 끝
-    17.44s  ⚡SPAN 주입 [d'=1.28s / d_lead=12.18s]: (tool result) There are many restaurants along the route from Paris to
-    28.94s  agent 발화 시작: 혹시 특별히 선호하는 종류의 음식이 있으신가요?
-    28.94s  agent 발화 끝
-    31.98s  user  발화 시작: 네.
-    31.98s  agent 발화 끝
-    32.49s  user  발화 시작: 벨기에 음식은 맛있을 것 같은데, 브뤼헤에 있는 곳으로 가볼까요?
-    32.49s  user  발화 끝
-    36.71s  <ret> 발화 (turn8 첫 프레임)
-    37.06s  agent 발화 시작: <ret> 브뤼흐의 드 할베 만 양조장은 벨기에 브뤼흐 월플레인 이십육번지에 있고, 오전 열한시부터 오후 여
-    37.06s  user  발화 끝
-    37.26s  ⚡SPAN 주입 [d'=0.55s / d_lead=7.61s]: De Halve Maan brewery in Bruges is located at Walplein 26, 8000 Brugge
-    44.67s  agent 발화 시작: 지금 출발하면 점심시간에 맞춰 도착할 수 있을 것 같아요.
-    44.67s  agent 발화 끝
-    49.24s  user  발화 시작: 좋아요, 그럼 바로 브뤼헤로 가는 길 안내를 받을 수 있을까요?
-    49.24s  agent 발화 끝
-    54.04s  <ret> 발화 (turn11 첫 프레임)
-    54.32s  agent 발화 시작: <ret> 파리에서 브뤼흐 드 할베 만 양조장까지는 대략 삼백이십킬로미터이고, 통행료와 연료비가 사십유로에서
-    54.32s  user  발화 끝
-    54.59s  ⚡SPAN 주입 [d'=0.55s / d_lead=10.66s]: (tool result) The driving route from Paris to De Halve Maan brewery in
-    64.98s  agent 발화 시작: 실시간 교통 상황을 반영한 최적의 경로를 안내해 드릴게요—
-    64.98s  agent 발화 끝
-    69.04s  user  발화 시작: …혹시 브뤼헤에 있는 다른 맥주 양조장도 추천해 주실 수 있나요?
-    69.04s  agent 발화 끝
-    74.11s  agent 발화 시작: 네.
-    74.11s  user  발화 끝
-    74.54s  <ret> 발화 (turn15 첫 프레임)
-    74.62s  agent 발화 시작: <ret> 드 할베 만 외에도 브뤼헤에는 과일 에일이 유명한 부르고뉴 데 플랑드르와 다양한 맥주와 플랑드르 
-    74.62s  agent 발화 끝
-    74.89s  ⚡SPAN 주입 [d'=0.35s / d_lead=9.65s]: In addition to De Halve Maan, Bruges boasts Bourgogne des Flandres, kn
-    84.27s  agent 발화 시작: 캄브리누스는 맥주 종류가 아주 많다고 하네요.
-    84.27s  agent 발화 끝
-    87.31s  user  발화 시작: 캄브리누스도 괜찮겠네요. 그럼 드 할베 만 양조장과 캄브리누스 두 곳 모두 경로에 포함해 주시겠어요?
-    87.31s  agent 발화 끝
-    94.00s  <ret> 발화 (turn18 첫 프레임)
-    94.41s  ⚡SPAN 주입 [d'=0.41s / d_lead=10.66s]: (tool result) The driving route from Paris to both De Halve Maan and C
-    94.42s  agent 발화 시작: <ret> 파리에서 브뤼흐의 드 할베 만과 캄브리누스까지는 대략 삼백이십오킬로미터이고, 통행료와 연료비가 사
-    94.42s  user  발화 끝
-   105.08s  agent 발화 시작: 두 곳 모두 즐거운 시간 보내시길 바랍니다.
-   105.08s  agent 발화 끝
-   108.63s  user  발화 시작: 네.
-   108.63s  agent 발화 끝
-   109.14s  user  발화 시작: 감사합니다, 오라리미. 덕분에 여행 계획이 훨씬 수월해졌어요.
-   109.14s  user  발화 끝
-   112.69s  agent 발화 시작: 천만에요. 여행 계획을 짜는 데 도움을 드릴 수 있어서 기쁩니다.
-   112.69s  user  발화 끝
-   117.77s  agent 발화 끝
+     3.04s  agent 발화 시작: <ret> 수제 가죽 지갑이 만들어졌어요. 제품 아이디는 칠 팔 구 삼 사 오입니다. 지금 바로 확인해 보실
+     3.04s  user  발화 끝
+     3.33s  ⚡SPAN 주입 [d'=0.76s / d_lead=6.96s]: (tool result) {"product id": "789345", "product name": "Handmade Leath
+    10.00s  user  발화 시작: 어.
+    10.00s  agent 발화 끝
+    10.43s  user  발화 시작: 아니, 그건 됐고… 혹시 다른 가죽 제품도 만들 수 있어?
+    10.43s  user  발화 끝
+    14.78s  agent 발화 시작: 네.
+    14.78s  user  발화 끝
+    15.22s  agent 발화 시작: 네, 물론이죠. 가죽 벨트나 가방도 만들 수 있습니다. 어떤 제품을 원하시나요?
+    15.22s  agent 발화 끝
+    20.00s  user  발화 시작: 그래.
+    20.00s  agent 발화 끝
+    20.43s  user  발화 시작: 벨트도 만들어 줘. 검정색 가죽 벨트.
+    20.43s  user  발화 끝
+    22.44s  <ret> 발화 (turn8 첫 프레임)
+    23.04s  agent 발화 시작: <ret> 검정색 가죽 벨트도 만들어졌습니다. 제품 아이디는 이 사 육 팔 일 삼번이고요 —
+    23.04s  user  발화 끝
+    23.73s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.65s]: (tool result) {"product id": "246813", "product name": "Black Leather 
+    28.69s  user  발화 시작: … 잠깐만, 혹시 가죽 종류도 선택할 수 있어?
+    28.69s  agent 발화 끝
+    32.17s  agent 발화 시작: 아, 네, 물론입니다. 어떤 가죽을 선호하시나요? 소가죽, 양가죽, 염소가죽 등 다양한 종류가 있습니다.
+    32.17s  user  발화 끝
+    37.82s  agent 발화 끝

@@ -4,77 +4,66 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "가린",
+#     "name": "예호",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-19",
+#       "date": "2026-05-08",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-02-25",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-02-23",
+#       "date": "2026-02-13",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "date": "2026-01-10",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-24",
-#       "title": "Researching a used car",
+#       "date": "2026-01-21",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-05",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 조직이 갈등을 효과적으로 관리하도록 돕는 변화는 무엇인가요?
-     3.03s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 조직은 변화를 통해 갈등을 효과적으로 관리함으로써 이점을 얻을 수 있습니다.
-     3.52s  user  발화 끝
-     3.67s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.02s]: Effectively managing conflict is one way organizations can benefit fro
-     8.54s  agent 발화 끝
+     0.00s  user  발화 시작: 영화에 집착하는 아기는 누구야?
+     1.96s  <ret> 발화 (turn1 첫 프레임)
+     2.44s  agent 발화 시작: <ret> 영화에 집착하는 아기는 네이선과 니콜라스 마이어스예요. [happy] 귀여운 아기들이죠?
+     2.44s  user  발화 끝
+     2.60s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.50s]: Nathan and Nicolas Myers are the babies obsessed in the movie.
+     7.94s  agent 발화 끝

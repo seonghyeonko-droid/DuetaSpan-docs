@@ -4,119 +4,155 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Elias",
+#     "name": "Maya",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2026-03-06",
+#       "date": "2026-06-15",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-31",
+#       "category": "home",
+#       "text": "User's home address is 48 Pine Court."
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "date": "2026-03-17",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-23",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-02",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-29",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when the Luxor Hotel i | S2 What was happening in Vegas around | S3 I'm planning a trip there next mon | S4 That sounds amazing! Is it family-
+# EXAMINER(FDB-v2) 단계: S1 Hi Brol, I was wondering when the  | S2 Was it difficult to build the Whit | S3 Do they have records of who built  | S4 Wow, it was burned down? That's cr
 
-     0.00s  user  발화 시작: Do you know when the Luxor Hotel in Las Vegas was built?
-     4.44s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.96s]: The Luxor Hotel and Casino opened in Las Vegas, Nevada, on March 31, 1
-     4.64s  agent 발화 시작: <ret> The Luxor Hotel and Casino officially opened its doors
-     4.64s  user  발화 끝
-    11.60s  user  발화 시작: Yeah.
-    11.60s  agent 발화 끝
-    11.99s  user  발화 시작: Oh, 1993. I thought it was a little earlier.
-    11.99s  user  발화 끝
-    15.47s  agent 발화 시작: Wow.
-    15.47s  user  발화 끝
-    15.85s  agent 발화 시작: It's easy to get those dates mixed up with so many exciting 
-    15.85s  agent 발화 끝
-    22.04s  user  발화 시작: Uh-huh.
-    22.04s  agent 발화 끝
-    22.43s  user  발화 시작: What was happening in Vegas around that time, anyway?
-    22.43s  user  발화 끝
-    25.74s  <ret> 발화 (turn8 첫 프레임)
-    25.91s  agent 발화 시작: <ret> The early nineties were a boom time for Las Vegas, wit
-    25.91s  user  발화 끝
-    26.64s  ⚡SPAN 주입 [d'=0.90s / d_lead=8.12s]: Las Vegas experienced significant growth in the early 1990s, with seve
-    34.03s  user  발화 시작: So, both opened in the same year?
-    34.03s  agent 발화 끝
-    36.74s  agent 발화 시작: Yes, it was quite the year for new resorts on the strip—both
-    36.74s  user  발화 끝
-    44.86s  user  발화 시작: I'm planning a trip there next month. –
-    44.86s  agent 발화 끝
-    47.95s  user  발화 시작: …Are there any shows I should definitely see?
-    47.95s  user  발화 끝
-    50.87s  <ret> 발화 (turn14 첫 프레임)
-    51.04s  agent 발화 시작: Yeah.
-    51.04s  user  발화 끝
-    51.43s  agent 발화 시작: <ret> "O" by Cirque du Soleil at the Bellagio has shows from
-    51.43s  agent 발화 끝
-    51.55s  ⚡SPAN 주입 [d'=0.68s / d_lead=8.89s]: (tool result) Event: "O" by Cirque du Soleil, Location: Bellagio, Date
-    60.32s  user  발화 시작: Oh.
-    60.32s  agent 발화 끝
-    60.71s  agent 발화 시작: It's a very popular show, known for its stunning water acrob
-    60.71s  user  발화 끝
-    64.96s  user  발화 시작: That sounds amazing! Is it family-friendly?
-    64.96s  agent 발화 끝
-    67.04s  <ret> 발화 (turn18 첫 프레임)
-    67.28s  agent 발화 시작: <ret> "O" is usually fine for families, though some scenes m
-    67.28s  user  발화 끝
-    67.34s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.57s]: "O" by Cirque du Soleil is generally considered family-friendly, thoug
-    73.86s  user  발화 시작: Yeah, totally.
-    73.86s  agent 발화 끝
-    74.63s  user  발화 시작: Okay, good to know. Thanks for the information!
-    74.63s  user  발화 끝
-    77.72s  agent 발화 시작: Yeah.
-    77.72s  user  발화 끝
-    77.96s  <ret> 발화 (turn22 첫 프레임)
-    78.11s  agent 발화 시작: <ret> You're very welcome! It's my pleasure to help you plan
-    78.11s  agent 발화 끝
-    78.26s  ⚡SPAN 주입(IRRELEVANT) [d'=0.30s / d_lead=5.03s]: The current temperature in Reykjavik, Iceland is 8.2°C, humidity 88%, 
-    83.14s  agent 발화 시작: I'm glad I could offer some suggestions, and I hope you have
-    83.14s  agent 발화 끝
-    90.10s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Brol, I was wondering when the White House became the off
+     5.04s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.05s]: The White House became the official residence of the President of the 
+     5.24s  agent 발화 시작: <ret> The White House officially became the presidential res
+     5.24s  user  발화 끝
+    13.29s  user  발화 시작: Uh-huh.
+    13.29s  agent 발화 끝
+    13.69s  user  발화 시작: Wow, that's earlier than I thought.
+    13.69s  user  발화 끝
+    16.11s  agent 발화 시작: It is! It's easy to assume it was always the center of power
+    16.11s  user  발화 끝
+    22.15s  user  발화 시작: Mm-hmm.
+    22.15s  agent 발화 끝
+    22.55s  user  발화 시작: What was there before that, though? Where did presidents liv
+    22.55s  user  발화 끝
+    26.20s  <ret> 발화 (turn7 첫 프레임)
+    26.52s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.65s]: Before the White House, presidents primarily resided in Philadelphia, 
+    26.58s  agent 발화 시작: <ret> Before the White House, presidents primarily lived in 
+    26.58s  user  발화 끝
+    34.23s  user  발화 시작: Yeah, totally.
+    34.23s  agent 발화 끝
+    35.04s  user  발화 시작: Philadelphia, huh? That's a change of scenery.
+    35.04s  user  발화 끝
+    37.69s  <ret> 발화 (turn10 첫 프레임)
+    37.86s  agent 발화 시작: <ret> Sometimes a change of scenery can be really refreshing
+    37.86s  user  발화 끝
+    38.86s  ⚡SPAN 주입(IRRELEVANT) [d'=1.16s / d_lead=3.62s]: The current price of Brent crude oil is $85.25 per barrel, with a dail
+    41.48s  user  발화 시작: Mm-hmm.
+    41.48s  agent 발화 끝
+    41.89s  user  발화 시작: Was it difficult to build the White House back then?
+    41.89s  user  발화 끝
+    45.35s  <ret> 발화 (turn13 첫 프레임)
+    45.82s  ⚡SPAN 주입 [d'=0.47s / d_lead=4.83s]: Construction of the White House began in 1792, following a design comp
+    45.91s  agent 발화 시작: <ret> Construction began in 1792, designed by James Hoban, a
+    45.91s  user  발화 끝
+    50.75s  user  발화 시작: …did they use enslaved people to build it?
+    50.75s  agent 발화 끝
+    53.52s  <ret> 발화 (turn15 첫 프레임)
+    53.91s  ⚡SPAN 주입 [d'=0.99s / d_lead=7.65s]: Historical records confirm that enslaved African Americans, along with
+    53.97s  agent 발화 시작: <ret> Historical records confirm that enslaved African Ameri
+    53.97s  user  발화 끝
+    61.62s  user  발화 시작: That’s awful. It’s hard to think about the history sometimes
+    61.62s  agent 발화 끝
+    65.65s  agent 발화 시작: Right.
+    65.65s  user  발화 끝
+    66.05s  agent 발화 시작: It absolutely is. Acknowledging the difficult parts is impor
+    66.05s  agent 발화 끝
+    69.68s  user  발화 시작: Mm-hmm.
+    69.68s  agent 발화 끝
+    70.08s  agent 발화 시작: We can learn from those past injustices to build a better fu
+    70.08s  user  발화 끝
+    74.91s  user  발화 시작: Right.
+    74.91s  agent 발화 끝
+    75.31s  user  발화 시작: Do they have records of who built it, names and everything?
+    75.31s  user  발화 끝
+    79.46s  <ret> 발화 (turn23 첫 프레임)
+    79.68s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.86s]: While a complete list of all workers remains unavailable, historical r
+    79.74s  agent 발화 시작: <ret> While a complete list isn’t available, research has id
+    79.74s  user  발화 끝
+    88.60s  user  발화 시작: Yeah.
+    88.60s  agent 발화 끝
+    89.01s  user  발화 시작: That’s good to know their stories are being remembered.
+    89.01s  user  발화 끝
+    92.63s  agent 발화 시작: It is. Their contributions deserve to be recognized.
+    92.63s  user  발화 끝
+    95.85s  user  발화 시작: So, after the Adams moved in, was it immediately popular?
+    95.85s  agent 발화 끝
+    99.35s  <ret> 발화 (turn28 첫 프레임)
+    99.82s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.44s]: Initially, the White House faced criticism for its unfinished state an
+    99.88s  agent 발화 시작: <ret> Initially, the White House faced criticism for being u
+    99.88s  user  발화 끝
+   106.32s  user  발화 시작: What kind of renovations?
+   106.32s  agent 발화 끝
+   107.72s  <ret> 발화 (turn30 첫 프레임)
+   107.94s  agent 발화 시작: <ret> Major changes included rebuilding after the 1814 fire,
+   107.94s  user  발화 끝
+   108.96s  ⚡SPAN 주입 [d'=1.24s / d_lead=7.25s]: Significant renovations included the reconstruction after the British 
+   115.19s  user  발화 시작: Oh.
+   115.19s  agent 발화 끝
+   115.59s  user  발화 시작: Wow, it was burned down? That's crazy!
+   115.59s  user  발화 끝
+   118.41s  agent 발화 시작: [surprised] It really was! A very difficult time in its hist
+   118.41s  user  발화 끝
+   122.84s  user  발화 시작: Yeah.
+   122.84s  agent 발화 끝
+   123.24s  user  발화 시작: So it's been through a lot, that building.
+   123.24s  user  발화 끝
+   126.46s  agent 발화 시작: It's a symbol of resilience, wouldn't you say?
+   126.46s  user  발화 끝
+   129.68s  agent 발화 시작: It has certainly seen a lot of history unfold within its wal
+   129.68s  agent 발화 끝
+   134.52s  user  발화 시작: I guess so. Thanks for all the info, Brol.
+   134.52s  agent 발화 끝
+   138.14s  agent 발화 시작: You're very welcome! I'm glad I could share some of that his
+   138.14s  user  발화 끝
+   147.00s  agent 발화 끝

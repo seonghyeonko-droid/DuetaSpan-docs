@@ -1,64 +1,80 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Arami, a kind and steady wellness coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Jeon, a thoughtful and soft-spoken personal guide who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Alice",
+    "name": "Felix",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "early 20s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-13",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-05-16",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-03-11",
+      "date": "2026-04-21",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-02-06",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-04-17",
+      "category": "home",
+      "text": "User's home address is 972 Maple Drive."
     },
     {
-      "date": "2026-01-26",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2026-01-05",
+      "date": "2026-03-08",
       "category": "diet",
       "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-01-25",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
+    },
+    {
+      "date": "2025-12-28",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-23",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-22",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to settle in, and I’m wondering about things to do this weekend.
-[  5.37s][moshi] Welcome to the city! It's wonderful you're thinking about exploring so soon.
-[  9.97s][user ] Yeah, but I feel a bit lost. Is there a good museum ⟨ret@14.73s⟩ nearby?
-[ 14.96s][moshi] ⟦⚡SPAN@15.03s: The National Museum of Korea houses over 400,000 artifacts and artworks spanning Korean history, from prehisto⟧ There is a wonderful museum quite close by—the National Museum of Korea houses over four hundred thousand artifacts and artworks, spanning Korean history from prehistoric times to the Joseon dynasty.
-[ 26.46s][user ] Four hundred thousand? That sounds… huge. What are the little things that go around inside an atom called? I always ⟨ret@34.20s⟩ forget.
-[ 34.52s][moshi] ⟦⚡SPAN@34.98s: Electrons orbit the nucleus of an atom in specific pathways, or energy levels, which are often referred to as ⟧ Those little things orbiting the atom are called electron shells—they’re specific pathways, or energy levels, for the electrons.
+[  0.00s][user ] I was just humming a song, and I can’t remember who sang it. It goes “Ain’t too proud to ⟨ret@6.34s⟩ beg…”
+[  6.59s][moshi] ⟦⚡SPAN@6.85s: The Temptations released the song "Ain't Too Proud to Beg" in 1966, and it became their eighth single to reach⟧ That song, "Ain't Too Proud to Beg", was originally released by The Temptations back in nineteen sixty-six.
+[ 12.18s][user ] «backchannel» Yeah.
+[ 12.51s][user ] The Temptations… hmm. I thought it might be someone else. Are they still performing?
+[ 17.12s][moshi] [curious] They are! The Temptations still tour, though the lineup has changed over the years.
+[ 22.06s][user ] «backchannel» Yeah.
+[ 22.39s][user ] Oh, that's good to hear. What kind of music do they play now?
+[ 26.68s][moshi] «backchannel» Yeah.
+[ 27.00s][moshi] They mostly perform their classic hits, but also include some newer material in their shows.

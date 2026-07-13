@@ -4,105 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Riley",
+#     "name": "Hana",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-06-26",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-06-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-02-08",
+#       "date": "2026-03-09",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-20",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
-#       "title": "Researching a used car",
+#       "date": "2026-04-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 심리 상담사 덴버 콜로라도에서 찾아야 하는데, 현금으로 결제할 | S2 칠월 십칠일은 좀 멀다. 더 빨리 예약 가능한 다른 곳은 없어 | S3 생각보다 좀 비싸네. | S4 훨씬 합리적인 것 같아. 전화번호 좀 알려줄래?
+# EXAMINER(FDB-v2) 단계: S1 근처에 괜찮은 이탈리아 식당 좀 찾아 줘. 야외 테이블 있는  | S2 음… 그거 좀 비싼 것 같아. 좀 더 싼 데 없어? | S3 벨라 파스타… 그거 괜찮겠다. 거기 두 명 자리 예약해 줘… | S4 …이번 토요일 저녁 일곱시에?
 
-     0.00s  user  발화 시작: 심리 상담사 덴버 콜로라도에서 찾아야 하는데, 현금으로 결제할 수 있으면 좋겠어.
-     5.18s  agent 발화 시작: 예.
-     5.18s  user  발화 끝
-     5.64s  <ret> 발화 (turn2 첫 프레임)
-     5.66s  agent 발화 시작: <ret> 음, 덴버에서 불안, 우울증, 트라우마를 전문으로 하는 엘리너 밴스 박사님을 찾았는데, 전화번호는
-     5.66s  agent 발화 끝
-     5.94s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.37s]: (tool result) {"provider name": "Dr. Eleanor Vance", "address": "1600 
-    16.02s  user  발화 시작: 음.
-    16.02s  agent 발화 끝
-    16.49s  user  발화 시작: 괜찮아 보이는데. 신규 환자를 받으시려나?
-    16.49s  user  발화 끝
-    18.78s  <ret> 발화 (turn6 첫 프레임)
-    18.85s  agent 발화 시작: 네.
-    18.85s  user  발화 끝
-    19.32s  agent 발화 시작: <ret> 뭐, 밴스 박사님은 칠월 십칠일 오후 두시에 예약이 가능합니다. 산악 일광 절약 시간 기준이에요.
-    19.32s  agent 발화 끝
-    19.91s  ⚡SPAN 주입 [d'=1.14s / d_lead=6.60s]: (tool result) {"availability": "Next available appointment is July 17t
-    25.92s  user  발화 시작: 칠월 십칠일은 좀 멀다. 더 빨리 예약 가능한 다른 곳은 없어?
-    25.92s  agent 발화 끝
-    31.09s  <ret> 발화 (turn9 첫 프레임)
-    31.10s  agent 발화 시작: 정말요?
-    31.10s  user  발화 끝
-    31.39s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.37s]: (tool result) {"provider name": "Dr. Marcus Bell", "address": "2200 We
-    31.58s  agent 발화 시작: <ret> 음, 덴버에 마커스 벨 박사님도 찾았는데, 스트레스와 관계 문제를 전문으로 하시고, 전화번호는 삼
-    31.58s  agent 발화 끝
-    41.94s  user  발화 시작: 벨 박사님도 괜찮아 보이는데. 진료비는 얼마야?
-    41.94s  agent 발화 끝
-    44.62s  <ret> 발화 (turn11 첫 프레임)
-    44.77s  agent 발화 시작: <ret> 싸이콜로지투데이닷컴에 따르면 벨 박사님은 오십분 세션당 백오십달러를 받으십니다.
-    44.77s  user  발화 끝
-    45.60s  ⚡SPAN 주입 [d'=0.97s / d_lead=3.77s]: (tool result) Dr. Marcus Bell, PhD, offers individual therapy sessions
-    48.54s  user  발화 시작: 생각보다 좀 비싸네.
-    48.54s  agent 발화 끝
-    49.96s  agent 발화 시작: 예산에 맞는 좋은 상담사를 찾는 건 당연한 거고, 알아보고—
-    49.96s  user  발화 끝
-    54.20s  user  발화 시작: …세션당 백달러 정도 되는 곳으로 다시 찾아줄래?
-    54.20s  agent 발화 끝
-    57.30s  <ret> 발화 (turn15 첫 프레임)
-    57.50s  agent 발화 시작: <ret> 덴버 카운슬링 서비스는 덴버카운슬링서비스스닷컴에 따르면 세션당 팔십오달러부터 시작합니다.
-    57.50s  user  발화 끝
-    58.15s  ⚡SPAN 주입 [d'=0.85s / d_lead=3.77s]: (tool result) Several therapists in Denver offer sessions around $100.
-    61.27s  user  발화 시작: 훨씬 합리적인 것 같아. 전화번호 좀 알려줄래?
-    61.27s  agent 발화 끝
-    63.97s  <ret> 발화 (turn17 첫 프레임)
-    64.50s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.01s]: (tool result) The phone number for Denver Counseling Services is (303)
-    64.57s  agent 발화 시작: <ret> 전화번호는 삼 공 삼 오 오 오 육 칠 팔 구입니다. [happy] 더 저렴한 옵션을 찾아서 기쁩
-    64.57s  user  발화 끝
-    72.58s  user  발화 시작: 어어.
-    72.58s  agent 발화 끝
-    73.05s  user  발화 시작: 좋아. 도와줘서 고마워.
-    73.05s  user  발화 끝
-    74.46s  agent 발화 시작: 천만에요.
-    74.46s  user  발화 끝
-    74.93s  agent 발화 끝
+     0.00s  user  발화 시작: 근처에 괜찮은 이탈리아 식당 좀 찾아 줘. 야외 테이블 있는 곳으로.
+     4.24s  <ret> 발화 (turn1 첫 프레임)
+     4.85s  agent 발화 시작: <ret> 응, 당연하지! 찾아줄게. 주변 이탈리아 식당 중에 야외 테이블 있는 데 찾아볼게.
+     4.85s  user  발화 끝
+     5.53s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.29s]: Restaurants_2_FindRestaurants
+     9.62s  <ret> 발화 (turn2 첫 프레임)
+    10.14s  agent 발화 시작: <ret> 라 타볼라라는 곳이 있는데, 강남대로 백칠길 이십삼에 있고, 평점은 사 점 오점이고 가격대는 보통
+    10.14s  agent 발화 끝
+    10.55s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.50s]: (tool result) {"restaurant name": "La Tavola", "address": "23 Gangnam-
+    17.64s  user  발화 시작: 음… 그거 좀 비싼 것 같아. 좀 더 싼 데 없어?
+    17.64s  agent 발화 끝
+    22.26s  <ret> 발화 (turn4 첫 프레임)
+    22.49s  agent 발화 시작: <ret> 벨라 파스타라는 곳은 평점이 사 점 이점이고, 가격대는 달러로 저렴한 편이야.
+    22.49s  user  발화 끝
+    23.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.85s]: Restaurants_2_FindRestaurants
+    27.35s  user  발화 시작: 벨라 파스타… 그거 괜찮겠다. 거기 두 명 자리 예약해 줘…
+    27.35s  agent 발화 끝
+    31.76s  user  발화 시작: …이번 토요일 저녁 일곱시에?
+    31.76s  user  발화 끝
+    33.04s  <ret> 발화 (turn7 첫 프레임)
+    33.52s  agent 발화 시작: <ret> 그래! 이번 토요일 저녁 일곱시에 벨라 파스타 두 명 자리로 예약됐어. 확인 코드는 비 피 칠 일
+    33.52s  user  발화 끝
+    33.77s  ⚡SPAN 주입 [d'=0.73s / d_lead=10.14s]: (tool result) {"confirmation id": "BP7111902", "restaurant name": "Bel
+    43.67s  agent 발화 끝

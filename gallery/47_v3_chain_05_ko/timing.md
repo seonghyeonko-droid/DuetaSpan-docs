@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "지찬",
+#     "name": "다별",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,165 +12,105 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-02",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-04-12",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-16",
+#       "date": "2026-01-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-12-04",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-22",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-26",
+#       "date": "2026-05-02",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 파리에서 연극 볼만한 게 있을까요? | S2 …극장 근처에 괜찮은 레스토랑도 있을까요? | S3 음… 에펠탑은 꼭 가보고 싶은데, 예약해야 할까요? | S4 몽마르뜨 언덕은 어떤 곳인가요?
+# EXAMINER(FDB-v2) 단계: S1 창사에서 닝보까지 차로 가면 얼마나 걸릴까? | S2 서울은 너무 오래 걸리네. 좀 더 가까운 데는 어디가 있을까? | S3 아, 큰애는 일곱 살이고, 작은애는 네 살이에요. | S4 거기는 입장료가 얼마야?
 
-     0.00s  user  발화 시작: 이번 주 토요일에 파리에서 연극 볼만한 게 있을까요?
-     4.25s  agent 발화 시작: 그렇죠.
-     4.25s  user  발화 끝
-     4.75s  <ret> 발화 (turn2 첫 프레임)
-     4.78s  agent 발화 시작: <ret> 이번 주 토요일, 그러니까 칠월 십이일에 파리에서 연극을 볼 수 있는 작품들이 몇 가지 있어요. 
-     4.78s  agent 발화 끝
-     5.05s  ⚡SPAN 주입 [d'=0.30s / d_lead=13.81s]: There are several plays showing in Paris, France on Saturday, July 12,
-    18.58s  user  발화 시작: "미산트로프"가 제일 끌리네요. 티켓 예매 좀 해 주시겠어요?
-    18.58s  agent 발화 끝
-    22.83s  agent 발화 시작: 그렇죠.
-    22.83s  user  발화 끝
-    22.89s  <ret> 발화 (turn5 첫 프레임)
-    23.36s  agent 발화 시작: <ret> 네, "미산트로프" 티켓 예매 완료되었습니다. 확인 번호는 칠 사 구 이 엑스 제트 엘 팔이고, 
-    23.36s  agent 발화 끝
-    24.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.03s]: (tool result) Confirmation ID: 7492-XZL8. Event: Le Misanthrope. Date:
-    32.39s  user  발화 시작: 팔십오유로는 얼마예요? 지금 환율이 어떻게 되죠?
-    32.39s  agent 발화 끝
-    35.02s  <ret> 발화 (turn7 첫 프레임)
-    35.58s  agent 발화 시작: <ret> 현재 환율은 일유로당 천사백십이 점 오원입니다. 따라서 팔십오유로는 약 십이만 원 정도 됩니다.
-    35.58s  user  발화 끝
-    36.36s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.90s]: As of 2:45 PM on Friday, July 10, 2026, the exchange rate is 1 EUR = 1
-    42.48s  user  발화 시작: 어머.
-    42.48s  agent 발화 끝
-    43.01s  user  발화 시작: 음, 괜찮네요. 그럼 혹시 그…
-    43.01s  user  발화 끝
-    45.67s  user  발화 시작: …극장 근처에 괜찮은 레스토랑도 있을까요?
-    45.67s  user  발화 끝
-    47.70s  <ret> 발화 (turn11 첫 프레임)
-    48.32s  agent 발화 시작: <ret> 코메디 프랑세즈 극장 근처에는 르 부용 샤르티에라는 전통 프랑스 요리점과 라 부르스 에 라 비라는
-    48.32s  user  발화 끝
-    48.48s  ⚡SPAN 주입 [d'=0.77s / d_lead=9.03s]: There are several restaurants near the Comédie-Française, including Le
-    57.35s  user  발화 시작: 르 부용 샤르티에가 더 끌리는데, 예약이 가능할까요?
-    57.35s  agent 발화 끝
-    60.67s  <ret> 발화 (turn13 첫 프레임)
-    61.06s  agent 발화 시작: <ret> 네, 르 부용 샤르티에에 칠월 십이일 저녁 일곱시에 예약이 완료되었습니다. 확인 번호는 비 씨 티
-    61.06s  user  발화 끝
-    62.17s  ⚡SPAN 주입 [d'=1.50s / d_lead=10.09s]: (tool result) Reservation confirmed at Le Bouillon Chartier, Paris for
-    71.15s  user  발화 시작: 아.
-    71.15s  agent 발화 끝
-    71.68s  user  발화 시작: 저녁 일곱시라… 공연 시작 전에 충분하겠네요.
-    71.68s  user  발화 끝
-    74.87s  agent 발화 시작: 네, 공연 시작 전에 여유롭게 식사하실 수 있을 거예요. 혹시 파리 여행은 처음이신가요?
-    74.87s  user  발화 끝
-    81.77s  user  발화 시작: 아니요, 몇 번 와 봤어요. 이번에는 친구와 함께인데.
-    81.77s  agent 발화 끝
-    86.02s  agent 발화 시작: 네.
-    86.02s  user  발화 끝
-    86.55s  agent 발화 시작: 친구분과 함께하시는군요. 파리에 오신 것을 환영합니다! 혹시 특별히 보고 싶으신 다른 관광 명소는 없으신가요
-    86.55s  agent 발화 끝
-    93.99s  user  발화 시작: 음… 에펠탑은 꼭 가보고 싶은데, 예약해야 할까요?
-    93.99s  agent 발화 끝
-    97.51s  <ret> 발화 (turn21 첫 프레임)
-    97.70s  agent 발화 시작: <ret> 에펠탑은 특히 성수기에는 예약하는 것이 좋습니다. 미리 온라인으로 티켓을 예매하실 수 있습니다.
-    97.70s  user  발화 끝
-    98.45s  ⚡SPAN 주입 [d'=0.93s / d_lead=6.37s]: Reservations are highly recommended for the Eiffel Tower, especially d
-   104.07s  user  발화 시작: 그렇죠.
-   104.07s  agent 발화 끝
-   104.61s  user  발화 시작: 온라인으로 예매하는 방법 좀 알려주시겠어요?
-   104.61s  user  발화 끝
-   107.06s  <ret> 발화 (turn24 첫 프레임)
-   107.26s  agent 발화 시작: <ret> 에펠탑 공식 웹사이트에서 온라인으로 티켓을 예매하실 수 있습니다.
-   107.26s  user  발화 끝
-   107.91s  ⚡SPAN 주입 [d'=0.86s / d_lead=4.25s]: You can book Eiffel Tower tickets online at the official website: http
-   111.51s  user  발화 시작: 네.
-   111.51s  agent 발화 끝
-   112.04s  user  발화 시작: 잠깐만요, 그 웹사이트 주소 다시 한 번만 말씀해 주시겠어요?
-   112.04s  user  발화 끝
-   116.82s  agent 발화 시작: 네.
-   116.82s  user  발화 끝
-   117.35s  agent 발화 시작: 네, 공식 웹사이트 주소는…—
-   117.35s  agent 발화 끝
-   119.47s  user  발화 시작: …혹시 에펠탑 말고 다른 야경 명소도 추천해 주실 수 있나요?
-   119.47s  agent 발화 끝
-   124.78s  agent 발화 시작: 에펠탑 외에도 몽마르뜨 언덕이나 센 강 유람선도 아름다운 야경을 감상할 수 있는 곳입니다.
-   124.78s  user  발화 끝
-   131.69s  user  발화 시작: 몽마르뜨 언덕은 어떤 곳인가요?
-   131.69s  agent 발화 끝
-   133.59s  <ret> 발화 (turn32 첫 프레임)
-   133.81s  agent 발화 시작: <ret> 몽마르뜨 언덕은 사크레쾨르 대성당과 예술적인 유산, 그리고 파리 시내를 조망할 수 있는 탁 트인 
-   133.81s  user  발화 끝
-   133.89s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.09s]: Montmartre is a historic district in Paris known for the Sacré-Cœur Ba
-   143.90s  user  발화 시작: 예.
-   143.90s  agent 발화 끝
-   144.43s  user  발화 시작: 아, 멋지네요. 그럼 몽마르뜨 언덕 가는 방법 좀 알려주세요.
-   144.43s  user  발화 끝
-   149.21s  agent 발화 시작: 네.
-   149.21s  user  발화 끝
-   149.35s  <ret> 발화 (turn36 첫 프레임)
-   149.74s  agent 발화 시작: <ret> 몽마르뜨 언덕에 가려면 십이호선 아베스 역에서 내리거나 언덕 아래에서 푸니쿨라를 타실 수 있습니다
-   149.74s  agent 발화 끝
-   150.03s  ⚡SPAN 주입 [d'=0.68s / d_lead=6.90s]: To get to Montmartre, you can take the metro line 12 to Abbesses stati
-   156.64s  user  발화 시작: 정말요?
-   156.64s  agent 발화 끝
-   157.17s  user  발화 시작: 푸니쿨라가 뭐예요?
-   157.17s  user  발화 끝
-   158.24s  agent 발화 시작: 푸니쿨라는 경사가 가파른 언덕을 오르내리는 작은 케이블카 같은 거예요.
-   158.24s  user  발화 끝
-   163.02s  user  발화 시작: 아, 그렇군요. 그럼 몽마르뜨 언덕에서 저녁 식사도 할 수 있을까요?
-   163.02s  agent 발화 끝
-   168.21s  <ret> 발화 (turn41 첫 프레임)
-   168.33s  agent 발화 시작: <ret> 몽마르뜨 언덕에는 전통 프랑스 비스트로부터 세계 각국의 요리까지, 모든 예산에 맞는 다양한 레스토
-   168.33s  user  발화 끝
-   169.29s  ⚡SPAN 주입 [d'=1.07s / d_lead=7.43s]: Montmartre offers a variety of restaurants, from traditional French bi
-   175.76s  agent 발화 끝
+     0.00s  user  발화 시작: 창사에서 닝보까지 차로 가면 얼마나 걸릴까?
+     3.28s  <ret> 발화 (turn1 첫 프레임)
+     3.57s  agent 발화 시작: <ret> 창사에서 닝보까지 차로 가려면 대략 칠백팔십삼킬로미터 정도이고, 교통 상황에 따라 아홉시간 삼십분
+     3.57s  user  발화 끝
+     4.57s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.94s]: The driving distance between Changsha and Ningbo is approximately 783 
+    12.51s  user  발화 시작: 음… 부산까지는?
+    12.51s  agent 발화 끝
+    13.12s  <ret> 발화 (turn3 첫 프레임)
+    13.70s  agent 발화 시작: <ret> 창사에서 부산까지는 대략 천백팔십킬로미터이고, 교통 상황에 따라 열세시간 삼십분 정도 예상돼요. 
+    13.70s  user  발화 끝
+    14.09s  ⚡SPAN 주입 [d'=0.97s / d_lead=7.74s]: The driving distance between Changsha and Busan is approximately 1,180
+    21.45s  user  발화 시작: 어휴, 너무 멀다. 그럼 서울은?
+    21.45s  agent 발화 끝
+    24.26s  <ret> 발화 (turn5 첫 프레임)
+    24.42s  agent 발화 시작: <ret> 창사에서 서울까지는 약 천사백사십킬로미터이고, 교통에 따라 열여섯시간 삼십분 정도 걸릴 거예요. 
+    24.42s  user  발화 끝
+    25.12s  ⚡SPAN 주입 [d'=0.86s / d_lead=7.74s]: The driving distance between Changsha and Seoul is approximately 1,440
+    32.17s  user  발화 시작: 서울은 너무 오래 걸리네. 좀 더 가까운 데는 어디가 있을까?
+    32.17s  agent 발화 끝
+    38.13s  agent 발화 시작: 서울보다는 가까운 곳을 찾으시는군요. 혹시 특별히 가고 싶은 도시가 있으세요?
+    38.13s  user  발화 끝
+    44.08s  user  발화 시작: 아니, 그냥… 아이들 데리고 당일치기 갈 만한 곳.
+    44.08s  agent 발화 끝
+    48.85s  agent 발화 시작: 아이들과 당일치기로 가기 좋은 곳을 찾으시는군요. 아이들 연령대는 어떻게 되세요?
+    48.85s  user  발화 끝
+    54.81s  user  발화 시작: 아, 큰애는 일곱 살이고, 작은애는 네 살이에요.
+    54.81s  agent 발화 끝
+    58.36s  <ret> 발화 (turn11 첫 프레임)
+    58.66s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.72s]: (tool result) {"results": [{"name": "Changsha Happy World", "address":
+    58.98s  agent 발화 시작: <ret> 창샤 근처에 창샤 해피월드라는 테마파크가 있어요. 카이푸구 잉빈로 이백번지에 있고, 평점은 사 점
+    58.98s  user  발화 끝
+    69.70s  user  발화 시작: 오, 테마파크 좋겠다! 거기는 뭐 탈 수 있는 게 많아?
+    69.70s  agent 발화 끝
+    75.66s  agent 발화 시작: 창샤 해피월드는 다양한 놀이기구와 볼거리가 있는 테마파크예요. [curious] 아이들이 좋아할 만한 것들이
+    75.66s  user  발화 끝
+    84.59s  user  발화 시작: 거기는 입장료가 얼마야?
+    84.59s  agent 발화 끝
+    86.37s  <ret> 발화 (turn15 첫 프레임)
+    86.38s  agent 발화 시작: <ret> 창샤 해피월드 입장료는 계절과 티켓 종류에 따라 백팔십위안에서 이백팔십위안 정도예요.
+    86.38s  user  발화 끝
+    87.47s  ⚡SPAN 주입 [d'=1.10s / d_lead=5.96s]: (tool result) Changsha Happy World ticket prices range from 180 to 280
+    92.33s  user  발화 시작: 음, 얼마인지 알려줘서 고마워.
+    92.33s  agent 발화 끝
+    94.72s  agent 발화 시작: 천만에요. 아이들과 즐거운 시간 보내시길 바랍니다.
+    94.72s  user  발화 끝
+    98.29s  agent 발화 끝

@@ -4,125 +4,104 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Olivia",
+#     "name": "Marie",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-05-06",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-02-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-01-19",
+#       "date": "2026-02-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "text": "User is planning a trip to Iceland in August."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-02-03",
+#       "category": "home",
+#       "text": "User's home address is 694 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-24",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-03",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-31",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to request three hundred do | S2 Sounds good. What’s the weather li | S3 Perfect. What other activities cou | S4 I think so. Can you add an alarm f
+# EXAMINER(FDB-v2) 단계: S1 I'm really struggling to get start | S2 Hmm, okay. I've heard of Simon Sch | S3 That sounds promising. I get easil | S4 Oh, like, set a timer for 25 minut
 
-     0.00s  user  발화 시작: I need to request three hundred dollars from David Lee.
-     3.49s  <ret> 발화 (turn1 첫 프레임)
-     3.90s  agent 발화 시작: <ret> I’ve requested three hundred dollars from David Lee fo
-     3.90s  user  발화 끝
-     4.99s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.85s]: (tool result) Payment request to David Lee for $300.00 initiated. Tran
-     9.74s  user  발화 시작: Yeah.
-     9.74s  agent 발화 끝
-    10.13s  user  발화 시작: That's great, thank you. Can you find me a good Italian rest
-    10.13s  user  발화 끝
-    15.20s  agent 발화 시작: [happy] Of course. I can help with that. Do you have a parti
-    15.20s  user  발화 끝
-    21.82s  user  발화 시작: Something moderate, not too expensive.
-    21.82s  agent 발화 끝
-    23.19s  <ret> 발화 (turn6 첫 프레임)
-    23.71s  ⚡SPAN 주입 [d'=1.15s / d_lead=11.69s]: There are several moderate-priced Italian restaurants nearby. Bella No
-    23.77s  agent 발화 시작: <ret> There are a few moderate options nearby—Bella Notte of
-    23.77s  user  발화 끝
-    35.46s  user  발화 시작: Sounds good. What’s the weather like there right now?
-    35.46s  agent 발화 끝
-    38.93s  <ret> 발화 (turn8 첫 프레임)
-    38.97s  agent 발화 시작: <ret> The weather at Bella Notte is currently 25.5 degrees C
-    38.97s  user  발화 끝
-    39.03s  ⚡SPAN 주입 [d'=0.71s / d_lead=7.01s]: (tool result) The current weather at Bella Notte is 25.5°C, humidity 6
-    45.99s  user  발화 시작: That's nice. Can you tell me about family time activities?
-    45.99s  agent 발화 끝
-    49.88s  agent 발화 시작: Family time is so important for building strong bonds. It’s 
-    49.88s  user  발화 끝
-    55.34s  user  발화 시작: …do they have outdoor seating at Bella Notte?
-    55.34s  agent 발화 끝
-    58.46s  agent 발화 시작: Yeah.
-    58.46s  user  발화 끝
-    58.85s  agent 발화 시작: [curious] Yes, Bella Notte does have outdoor seating. They h
-    58.85s  agent 발화 끝
-    64.30s  user  발화 시작: Yeah.
-    64.30s  agent 발화 끝
-    64.69s  user  발화 시작: Perfect. What other activities could we do with the kids thi
-    64.69s  user  발화 끝
-    69.37s  agent 발화 시작: Yeah.
-    69.37s  user  발화 끝
-    69.75s  <ret> 발화 (turn17 첫 프레임)
-    69.76s  agent 발화 시작: <ret> This weekend, the City Park is hosting a free family f
-    69.76s  agent 발화 끝
-    69.85s  ⚡SPAN 주입 [d'=0.55s / d_lead=8.96s]: This weekend, July 11-12, 2026, the City Park is hosting a free family
-    78.72s  user  발화 시작: Uh-huh.
-    78.72s  agent 발화 끝
-    79.11s  agent 발화 시작: It does sound lovely! It's a wonderful way to make lasting m
-    79.11s  user  발화 끝
-    83.79s  user  발화 시작: Can you find me movie times for tomorrow at the Grand Cinema
-    83.79s  agent 발화 끝
-    87.92s  <ret> 발화 (turn21 첫 프레임)
-    88.47s  agent 발화 시작: <ret> Tomorrow at the Grand Cinema, "Adventureland" is showi
-    88.47s  user  발화 끝
-    88.48s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.24s]: (tool result) At the Grand Cinema tomorrow, July 11th, 2026, "Adventur
-    94.70s  user  발화 시작: What about “Mystery Mansion”?
-    94.70s  agent 발화 끝
-    96.26s  agent 발화 시작: "Mystery Mansion" is playing at 3:30 PM and 7:00 PM at the G
-    96.26s  user  발화 끝
-   102.11s  user  발화 시작: Yeah.
-   102.11s  agent 발화 끝
-   102.50s  agent 발화 시작: [sigh] Sometimes, just knowing your options can make things 
-   102.50s  user  발화 끝
-   107.17s  user  발화 시작: Yeah.
-   107.17s  agent 발화 끝
-   107.56s  user  발화 시작: I think so. Can you add an alarm for 7:30 AM tomorrow?
-   107.56s  user  발화 끝
-   111.63s  <ret> 발화 (turn28 첫 프레임)
-   111.95s  ⚡SPAN 주입 [d'=0.32s / d_lead=3.12s]: (tool result) Alarm set for 7:30 AM tomorrow, July 11, 2026.
-   112.24s  agent 발화 시작: <ret> I’ve set an alarm for 7:30 AM tomorrow.
-   112.24s  user  발화 끝
-   115.36s  user  발화 시작: Great. Thank you, Gelil.
-   115.36s  agent 발화 끝
-   116.92s  agent 발화 시작: [happy] You're very welcome. Remember, a little planning can
-   116.92s  user  발화 끝
-   123.93s  agent 발화 끝
+     0.00s  user  발화 시작: I'm really struggling to get started on this history paper. 
+     5.58s  agent 발화 시작: [happy] Oh, that's totally understandable! Papers can feel h
+     5.58s  user  발화 끝
+    13.95s  user  발화 시작: Well, it's about the French Revolution, and I don’t even kno
+    13.95s  agent 발화 끝
+    19.90s  <ret> 발화 (turn3 첫 프레임)
+    19.94s  agent 발화 시작: <ret> The French Revolution can feel daunting, but lots of g
+    19.94s  user  발화 끝
+    20.00s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.77s]: (tool result) The French Revolution is a complex period, with many con
+    30.70s  user  발화 시작: Hmm, okay. I've heard of Simon Schama. Is there a specific b
+    30.70s  agent 발화 끝
+    37.08s  agent 발화 시작: Yeah.
+    37.08s  user  발화 끝
+    37.43s  <ret> 발화 (turn6 첫 프레임)
+    37.48s  agent 발화 시작: <ret> Simon Schama’s *Citizens* is considered his best work 
+    37.48s  agent 발화 끝
+    37.53s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.77s]: (tool result) Simon Schama’s *Citizens: A Chronicle of the French Revo
+    46.25s  user  발화 시작: Yeah.
+    46.25s  agent 발화 끝
+    46.65s  user  발화 시작: That sounds promising. I get easily distracted though.
+    46.65s  user  발화 끝
+    49.84s  agent 발화 시작: Uh-huh.
+    49.84s  user  발화 끝
+    50.24s  agent 발화 시작: [curious] I know that feeling! Perhaps the Pomodoro Techniqu
+    50.24s  agent 발화 끝
+    59.01s  user  발화 시작: Mm-hmm.
+    59.01s  agent 발화 끝
+    59.41s  user  발화 시작: Oh, like, set a timer for 25 minutes and just *work*?
+    59.41s  user  발화 끝
+    63.79s  agent 발화 시작: Exactly! It’s all about focused effort, then rewarding yours
+    63.79s  user  발화 끝
+    71.77s  agent 발화 끝

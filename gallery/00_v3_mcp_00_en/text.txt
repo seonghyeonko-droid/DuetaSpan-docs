@@ -1,110 +1,63 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Ariar, a practical and reassuring supportive advisor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Baia, a kind and steady life coach who helps people with everyday decisions and feelings. You can explain weighing pros and cons, choosing by your values, sleeping on a big choice. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Kim",
+    "name": "Riley",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-06",
+      "date": "2026-06-25",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-06-12",
       "category": "home",
-      "text": "User's home address is 616 Elm Street."
+      "text": "User's home address is 409 Maple Drive."
     },
     {
-      "date": "2026-02-25",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-01-31",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     },
     {
       "date": "2025-12-29",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-12-28",
-      "category": "work",
-      "text": "User works as a accountant."
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-18",
+      "date": "2026-01-13",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-22",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-01-16",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to find a good play to take my daughter to. She loves musicals, especially ones with strong female leads.
-[  7.62s][moshi] «backchannel» Mm-hmm.
-[  7.98s][moshi] That sounds lovely! A shared experience like that can be so special.
-[ 12.33s][user ] Yeah, she's been asking to see something live for ages.
-[ 15.96s][moshi] «backchannel» Uh-huh.
-[ 16.32s][moshi] [happy] I'm happy to help with that. Are you looking for something playing nearby?
-[ 21.40s][user ] Um, well, ideally in Seoul. We're visiting next ⟨ret@24.40s⟩ week.
-[ 24.67s][moshi] There ⟦⚡SPAN@25.27s: (tool result) {"events": [{"name": "Wicked", "date": "2026-07-18", "venue": "Charlotte Theater", "description"⟧ are a couple of musicals playing in Seoul next week. “Wicked” starts on July eighteenth at the Charlotte Theater, and tickets range from ₩100,000 to ₩180,000. There’s also “Matilda” from July twentieth at the D-Cube Arts Center, costing ₩70,000 to ₩140,000.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"city": "Seoul", "keywords": "musical, female lead"}}
-[ 39.90s][user ] Matilda sounds perfect! How do the reviews look?
-[ 42.81s][moshi] «backchannel» Uh-huh.
-[ 43.17s][moshi] ⟨ret@42.90s⟩ ⟦⚡SPAN@43.49s: (tool result) Matilda the Musical at D-Cube Arts Center receives overwhelmingly positive reviews, praised for ⟧ [curious] Let me quickly check the customer reviews for "Matilda" at the D-Cube Arts Center.
-      CALL: {"function": "search", "arguments": {"query": "Matilda musical D-Cube Arts Center reviews"}}
-[ 48.61s][moshi] The reviews for "Matilda" are overwhelmingly positive, with praise for the energetic performances and faithful adaptation of the book. People particularly enjoyed the young actresses.
-[ 57.68s][user ] «backchannel» Okay.
-[ 58.04s][moshi] It seems like a really well-received production.
-[ 60.58s][user ] «backchannel» Yeah, yeah.
-[ 61.31s][user ] That sounds amazing. Could you find out if there are still tickets available for ⟨ret@66.55s⟩ next Saturday?
-[ 67.11s][moshi] Great news! ⟦⚡SPAN@68.05s: (tool result) {"confirmation id": "MTL250726-42B", "event name": "Matilda", "date": "2026-07-25", "venue": "D-⟧ I’ve secured two tickets for “Matilda” on July twenty-fifth at the D-Cube Arts Center. Your total cost is ₩200,000, and your seats are A10 and A11. Your confirmation ID is MTL250726-42B.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Matilda", "date": "2026-07-25", "venue": "D-Cube Arts Center", "num_tickets": "2"}}
-[ 79.08s][user ] That's fantastic, thank you so much!
-[ 81.26s][moshi] You're very welcome! I'm glad I could help.
-[ 84.16s][user ] Do you think we should make a dinner reservation nearby?
-[ 87.79s][moshi] «backchannel» Yeah, yeah.
-[ 88.51s][moshi] That’s a wonderful idea! It’s always nice to make an evening of it.
-[ 93.23s][moshi] ⟨ret@93.01s⟩ There are ⟦⚡SPAN@94.24s: (tool result) {"restaurants": [{"name": "Olive Young Kitchen", "cuisine": "Italian", "rating": "4.2", "distanc⟧ a few options nearby. Olive Young Kitchen serves Italian food and has a rating of four point two, it’s point three kilometers away. Bornga is Korean BBQ, rated four point five, and point five kilometers distant.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "D-Cube Arts Center", "cuisine": "any"}}
-[107.02s][user ] Bornga sounds good. Can you reserve a table for two at 7 ⟨ret@111.50s⟩ PM?
-[111.73s][moshi] Wonderful! Your reservation ⟦⚡SPAN@113.00s: (tool result) {"confirmation id": "BRN-2507-7PM-08", "restaurant name": "Bornga", "date": "2026-07-25", "time"⟧ at Bornga for two people at seven PM on July twenty-fifth is confirmed. The confirmation ID is BRN-2507-7PM-08.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bornga", "date": "2026-07-25", "time": "19:00", "num_people": "2"}}
-[119.35s][user ] «backchannel» Oh.
-[119.71s][user ] Perfect! You've been a huge help.
-[121.89s][moshi] I'm so pleased to hear that. Enjoy the show and dinner with your daughter! It sounds like a delightful evening.
-[129.14s][user ] «backchannel» Okay.
-[129.51s][user ] Thanks again. I think we're all set.
-[132.05s][moshi] You’re most welcome. It’s moments like these that create lasting memories.
+[  0.00s][user ] I need to find a really good Italian restaurant near my hotel.
+[  4.21s][moshi] To help me find the perfect spot, could you tell me the name of your hotel?
+[  9.82s][user ] It’s the Grand Seoul ⟨ret@11.20s⟩ Hotel.
+[ 11.57s][moshi] I ⟦⚡SPAN@12.28s: {"location": "Grand Seoul Hotel", "cuisine": "Italian", "results": [{"name": "Bella Notte", "address": "123 Ma⟧ found two Italian restaurants near the Grand Seoul Hotel—Bella Notte, at 123 Maple Street, has a 4.5-star rating and is moderately priced, and Trattoria Roma, at 456 Oak Avenue, is also moderately priced with 4.2 stars.
+[ 24.55s][user ] «backchannel» Oh.
+[ 24.90s][moshi] Bella Notte seems to be the higher-rated of the two. [happy] Would you like me to check if they have any available reservations for tonight?
+[ 33.66s][user ] Yes, please. For two people, around 7:30 PM.
+[ 36.47s][moshi] «backchannel» Wow.
+[ 36.82s][moshi] ⟨ret@36.71s⟩ Wonderful! ⟦⚡SPAN@37.61s: (tool result) {"restaurant name": "Bella Notte", "date": "2026-07-10", "time": "19:30", "party size": 2, "conf⟧ I’ve reserved a table for two at Bella Notte tonight at 7:30 PM. Your confirmation ID is BN78923. [sigh] It’s always nice to have a good meal planned.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "date": "2026-07-10", "time": "19:30", "party_size": 2}}

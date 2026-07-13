@@ -4,139 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Sky",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
-#     },
-#     {
-#       "date": "2026-03-30",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-03-04",
+#       "date": "2026-06-12",
 #       "category": "home",
-#       "text": "User's home address is 349 Maple Drive."
+#       "text": "User's home address is 571 Elm Street."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-04-14",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-02-06",
+#       "date": "2026-02-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-02-02",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2025-12-10",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Researching a used car",
+#       "date": "2026-04-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-11",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to Seoul nex | S2 That sounds pretty nice. I wonder  | S3 Perfect. — | S4 …Village. What’s a good time to vi
+# EXAMINER(FDB-v2) 단계: S1 I’ve been having trouble falling a | S2 I think I tried that once, but I w | S3 …but my friend told me about a sle | S4 Non-looping? That sounds good, I h
 
-     0.00s  user  발화 시작: I’m thinking of going to Seoul next week. Can you crawl the 
-     8.86s  <ret> 발화 (turn1 첫 프레임)
-     9.07s  agent 발화 시작: <ret> ESPN.com currently contains twelve thousand, seven hun
-     9.07s  user  발화 끝
-     9.90s  ⚡SPAN 주입 [d'=1.03s / d_lead=7.10s]: (tool result) ESPN.com contains 12,783 links as of July 10, 2026, 2:38
-    16.17s  user  발화 시작: Mhm.
-    16.17s  agent 발화 끝
-    16.57s  user  발화 시작: Wow, that’s a lot. I’m trying to decide if I should go to N 
-    16.57s  user  발화 끝
-    24.06s  agent 발화 시작: That sounds lovely. N Seoul Tower is a popular destination, 
-    24.06s  user  발화 끝
-    30.37s  user  발화 시작: Yeah.
-    30.37s  agent 발화 끝
-    30.77s  user  발화 시작: What’s the weather forecast for Seoul next Tuesday?
-    30.77s  user  발화 끝
-    33.52s  <ret> 발화 (turn7 첫 프레임)
-    33.92s  agent 발화 시작: <ret> Next Tuesday in Seoul, the forecast is 25.5 degrees Ce
-    33.92s  user  발화 끝
-    34.15s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.68s]: (tool result) Seoul: July 14, 2026, 25.5°C, humidity 78%, wind 7.2 km/
-    42.60s  user  발화 시작: Wow.
-    42.60s  agent 발화 끝
-    42.99s  user  발화 시작: That sounds pretty nice. I wonder if there are any good Kore
-    42.99s  user  발화 끝
-    49.69s  <ret> 발화 (turn10 첫 프레임)
-    49.70s  agent 발화 시작: <ret> There are three Korean barbecue restaurants near N Seo
-    49.70s  user  발화 끝
-    50.40s  ⚡SPAN 주입 [d'=0.71s / d_lead=7.89s]: (tool result) 3 Korean BBQ restaurants near N Seoul Tower: Maple Tree 
-    57.59s  user  발화 시작: Maple Tree House sounds good. Can you reserve a table for tw
-    57.59s  agent 발화 끝
-    64.51s  <ret> 발화 (turn13 첫 프레임)
-    64.69s  agent 발화 시작: Yeah.
-    64.69s  user  발화 끝
-    65.08s  agent 발화 시작: <ret> Your reservation at Maple Tree House Namsan is confirm
-    65.08s  agent 발화 끝
-    65.42s  ⚡SPAN 주입 [d'=1.02s / d_lead=8.28s]: (tool result) Reservation confirmed at Maple Tree House Namsan for 2 p
-    73.37s  user  발화 시작: Perfect. —
-    73.37s  agent 발화 끝
-    74.15s  user  발화 시작: …Actually, what’s the best way to get there from the Myeongd
-    74.15s  user  발화 끝
-    78.89s  agent 발화 시작: Oh.
-    78.89s  user  발화 끝
-    79.28s  agent 발화 시작: From Myeongdong, you can take bus number 02 or 05 to Namsan 
-    79.28s  agent 발화 끝
-    90.72s  user  발화 시작: Yeah.
-    90.72s  agent 발화 끝
-    91.12s  agent 발화 시작: [happy] It’s a fairly easy journey, and many people enjoy th
-    91.12s  user  발화 끝
-    97.03s  user  발화 시작: Mm-hmm.
-    97.03s  agent 발화 끝
-    97.43s  user  발화 시작: Sounds good. I think I’ll also check out the Bukchon Hanok…
-    97.43s  user  발화 끝
-   101.76s  user  발화 시작: …Village. What’s a good time to visit to avoid the crowds?
-   101.76s  user  발화 끝
-   105.91s  <ret> 발화 (turn23 첫 프레임)
-   106.04s  ⚡SPAN 주입 [d'=1.00s / d_lead=10.26s]: (tool result) Bukchon Hanok Village is least crowded on weekdays befor
-   106.10s  agent 발화 시작: <ret> Bukchon Hanok Village is generally least crowded on we
-   106.10s  user  발화 끝
-   116.36s  user  발화 시작: That’s helpful. Thanks, Horax.
-   116.36s  agent 발화 끝
-   117.94s  agent 발화 시작: You’re very welcome. I'm glad I could assist you in planning
-   117.94s  user  발화 끝
-   128.59s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been having trouble falling asleep lately.
+     2.76s  agent 발화 시작: It’s very common to experience sleep challenges, and I’m hap
+     2.76s  user  발화 끝
+     9.45s  user  발화 시작: Yeah.
+     9.45s  agent 발화 끝
+     9.84s  user  발화 시작: Well, I keep scrolling on my phone before bed.
+     9.84s  user  발화 끝
+    13.39s  agent 발화 시작: That blue light can definitely interfere with melatonin prod
+    13.39s  user  발화 끝
+    18.90s  user  발화 시작: Maybe you’re right. I need to start something.
+    18.90s  agent 발화 끝
+    22.05s  agent 발화 시작: [happy] We could explore some calming activities. Perhaps re
+    22.05s  user  발화 끝
+    26.77s  user  발화 시작: Stretching sounds good. What kind?
+    26.77s  agent 발화 끝
+    28.74s  agent 발화 시작: Simple stretches, focusing on releasing tension. Neck rolls,
+    28.74s  user  발화 끝
+    33.86s  user  발화 시작: Yeah.
+    33.86s  agent 발화 끝
+    34.25s  user  발화 시작: I think I tried that once, but I wasn't consistent.
+    34.25s  user  발화 끝
+    38.19s  agent 발화 시작: Consistency is key, it takes time to build a habit. Start sm
+    38.19s  user  발화 끝
+    44.10s  user  발화 시작: Five minutes… that’s doable. What about a consistent bedtime
+    44.10s  agent 발화 끝
+    47.64s  agent 발화 시작: A regular sleep schedule is wonderful. Aim for the same bedt
+    47.64s  user  발화 끝
+    54.33s  user  발화 시작: That’s the hard part, honestly. I usually sleep in on Saturd
+    54.33s  agent 발화 끝
+    58.66s  agent 발화 시작: —which can disrupt your body’s natural rhythm…
+    58.66s  user  발화 끝
+    61.42s  user  발화 시작: …but my friend told me about a sleep mask.
+    61.42s  agent 발화 끝
+    64.96s  agent 발화 시작: Uh-huh.
+    64.96s  user  발화 끝
+    65.36s  agent 발화 시작: A sleep mask can be very beneficial, blocking out light sign
+    65.36s  agent 발화 끝
+    70.69s  <ret> 발화 (turn20 첫 프레임)
+    70.87s  user  발화 시작: Yeah.
+    70.87s  agent 발화 끝
+    71.02s  ⚡SPAN 주입 [d'=0.32s / d_lead=7.48s]: (tool result) The Mzooeyy Silk Sleep Mask receives consistently high r
+    71.26s  agent 발화 시작: <ret> I found the Mzooeyy Silk Sleep Mask; it has over twent
+    71.26s  user  발화 끝
+    78.74s  user  발화 시작: Silk sounds nice. How much does it cost?
+    78.74s  agent 발화 끝
+    81.58s  <ret> 발화 (turn22 첫 프레임)
+    81.89s  agent 발화 시작: <ret> It’s currently nineteen dollars and ninety-nine cents 
+    81.89s  user  발화 끝
+    81.92s  ⚡SPAN 주입 [d'=0.34s / d_lead=3.54s]: (tool result) The Mzooeyy Silk Sleep Mask is currently priced at $19.9
+    85.44s  user  발화 시작: Mm-hmm.
+    85.44s  agent 발화 끝
+    85.83s  user  발화 시작: That's not bad. I'm also thinking about a white noise machin
+    85.83s  user  발화 끝
+    90.16s  agent 발화 시작: [curious] White noise can mask disruptive sounds and create 
+    90.16s  user  발화 끝
+    96.85s  user  발화 시작: I don’t know, really. I was looking at the LectroFan.
+    96.85s  agent 발화 끝
+   100.66s  <ret> 발화 (turn27 첫 프레임)
+   100.76s  ⚡SPAN 주입 [d'=0.75s / d_lead=7.48s]: (tool result) The LectroFan Evo is a popular white noise machine offer
+   100.79s  agent 발화 시작: <ret> The LectroFan Evo has ten fan sounds and ten white noi
+   100.79s  user  발화 끝
+   108.27s  user  발화 시작: Yeah.
+   108.27s  agent 발화 끝
+   108.67s  user  발화 시작: Non-looping? That sounds good, I hate when you can hear the 
+   108.67s  user  발화 끝
+   113.39s  agent 발화 시작: It’s a common issue with many machines. Non-looping sounds a
+   113.39s  user  발화 끝
+   119.30s  user  발화 시작: Okay, I think I'll order both the mask and the LectroFan.
+   119.30s  agent 발화 끝
+   123.63s  agent 발화 시작: [happy] That sounds like a great plan. I'm glad we explored 
+   123.63s  user  발화 끝
+   128.75s  user  발화 시작: Okay.
+   128.75s  agent 발화 끝
+   129.14s  user  발화 시작: No, I think that’s all for now. Thank you, Eliol.
+   129.14s  user  발화 끝
+   133.08s  agent 발화 시작: You're very welcome. Sweet dreams, and remember, even small 
+   133.08s  user  발화 끝
+   138.98s  agent 발화 끝

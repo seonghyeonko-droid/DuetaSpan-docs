@@ -1,80 +1,79 @@
 v3_mcp_01_cs src=mcp style=v2
-SYSTEM: <system> 당신은 부드럽고 사색적인 상담사 Frio이며, 사람들의 학업 및 동기 부여에 도움을 줍니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제에 대해 사람들을 돕는 호기심 많고 공감적인 웰니스 코치 Felir입니다. 당신은 적극적 경청, 친절한 경계 설정, 갈등이 심화되기 전에 진정시키는 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 moshi이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Riley",
+    "name": "Hana",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-05",
+      "date": "2026-06-26",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-06-11",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "text": "User is planning a trip to Vietnam in March."
     },
     {
-      "date": "2026-02-08",
+      "date": "2026-03-09",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-01-01",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-12-10",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-01-20",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-03",
-      "title": "Researching a used car",
+      "date": "2026-04-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 심리 상담사 덴버 콜로라도에서 찾아야 하는데, 현금으로 결제할 수 있으면 좋겠어.
-[  5.18s][moshi] «backchannel» 예.
-[  5.66s][moshi] ⟨ret@5.64s⟩ ⟦⚡SPAN@5.94s: (tool result) {"provider name": "Dr. Eleanor Vance", "address": "1600 Amphitheatre Parkway, Denver, CO 80202",⟧ 음, 덴버에서 불안, 우울증, 트라우마를 전문으로 하는 엘리너 밴스 박사님을 찾았는데, 전화번호는 삼 공 삼 오 오 오 일 이 일 이입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Denver Colorado", "service_type": "psychologist", "payment_method": "cash"}}
-[ 16.02s][user ] «backchannel» 음.
-[ 16.49s][user ] 괜찮아 보이는데. 신규 환자를 받으시려나? ⟨ret@18.78s⟩
-[ 18.85s][moshi] «backchannel» 네.
-[ 19.32s][moshi] ⟦⚡SPAN@19.91s: (tool result) {"availability": "Next available appointment is July 17th at 2:00 PM MDT."}⟧ 뭐, 밴스 박사님은 칠월 십칠일 오후 두시에 예약이 가능합니다. 산악 일광 절약 시간 기준이에요.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Dr. Eleanor Vance", "query": "new patient availability"}}
-[ 25.92s][user ] 칠월 십칠일은 좀 멀다. 더 빨리 예약 가능한 다른 곳은 없어? ⟨ret@31.09s⟩
-[ 31.10s][moshi] «backchannel» 정말요?
-[ 31.58s][moshi] ⟦⚡SPAN@31.39s: (tool result) {"provider name": "Dr. Marcus Bell", "address": "2200 West 3rd Avenue, Denver, CO 80223", "phone⟧ 음, 덴버에 마커스 벨 박사님도 찾았는데, 스트레스와 관계 문제를 전문으로 하시고, 전화번호는 삼 공 삼 오 오 오 삼 사 삼 사입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Denver Colorado", "service_type": "psychologist", "payment_method": "cash"}}
-[ 41.94s][user ] 벨 박사님도 괜찮아 보이는데. 진료비는 얼마야? ⟨ret@44.62s⟩
-[ 44.77s][moshi] 싸이콜로지투데이닷컴에 ⟦⚡SPAN@45.60s: (tool result) Dr. Marcus Bell, PhD, offers individual therapy sessions at a rate of $150 per 50-minute session⟧ 따르면 벨 박사님은 오십분 세션당 백오십달러를 받으십니다.
-      CALL: {"function": "search", "arguments": {"query": "Dr. Marcus Bell Denver rates"}}
-[ 48.54s][user ] 생각보다 좀 비싸네.
-[ 49.96s][moshi] «interrupted» 예산에 맞는 좋은 상담사를 찾는 건 당연한 거고, 알아보고—
-[ 54.20s][user ] «interrupts_prev» …세션당 백달러 정도 되는 곳으로 다시 찾아줄래? ⟨ret@57.30s⟩
-[ 57.50s][moshi] 덴버 ⟦⚡SPAN@58.15s: (tool result) Several therapists in Denver offer sessions around $100. One option is Denver Counseling Service⟧ 카운슬링 서비스는 덴버카운슬링서비스스닷컴에 따르면 세션당 팔십오달러부터 시작합니다.
-      CALL: {"function": "search", "arguments": {"query": "psychologist Denver $100 session"}}
-[ 61.27s][user ] 훨씬 합리적인 것 같아. 전화번호 좀 ⟨ret@63.97s⟩ 알려줄래?
-[ 64.57s][moshi] ⟦⚡SPAN@64.50s: (tool result) The phone number for Denver Counseling Services is (303) 555-6789. Source: denvercounselingservi⟧ 전화번호는 삼 공 삼 오 오 오 육 칠 팔 구입니다. [happy] 더 저렴한 옵션을 찾아서 기쁩니다.
-      CALL: {"function": "search", "arguments": {"query": "Denver Counseling Services phone number"}}
-[ 72.58s][user ] «backchannel» 어어.
-[ 73.05s][user ] 좋아. 도와줘서 고마워.
-[ 74.46s][moshi] 천만에요.
+[  0.00s][user ] 근처에 괜찮은 이탈리아 식당 좀 찾아 줘. 야외 테이블 있는 ⟨ret@4.24s⟩ 곳으로.
+[  4.85s][moshi] 응, ⟦⚡SPAN@5.53s: Restaurants_2_FindRestaurants⟧ 당연하지! 찾아줄게. 주변 이탈리아 식당 중에 야외 테이블 있는 데 찾아볼게.
+[ 10.14s][moshi] ⟨ret@9.62s⟩ ⟦⚡SPAN@10.55s: (tool result) {"restaurant name": "La Tavola", "address": "23 Gangnam-daero 107-gil, Gangnam-gu, Seoul", "rati⟧ 라 타볼라라는 곳이 있는데, 강남대로 백칠길 이십삼에 있고, 평점은 사 점 오점이고 가격대는 보통이야. 야외 테이블도 있어!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "outdoor_seating": "true", "location": "Seoul"}}
+[ 17.64s][user ] 음… 그거 좀 비싼 것 같아. 좀 더 싼 데 ⟨ret@22.26s⟩ 없어?
+[ 22.49s][moshi] 벨라 ⟦⚡SPAN@23.22s: Restaurants_2_FindRestaurants⟧ 파스타라는 곳은 평점이 사 점 이점이고, 가격대는 달러로 저렴한 편이야.
+[ 27.35s][user ] 벨라 파스타… 그거 괜찮겠다. 거기 두 명 자리 예약해 줘…
+[ 31.76s][user ] …이번 토요일 저녁 ⟨ret@33.04s⟩ 일곱시에?
+[ 33.52s][moshi] ⟦⚡SPAN@33.77s: (tool result) {"confirmation id": "BP7111902", "restaurant name": "Bella Pasta", "date": "2026-07-11", "time":⟧ 그래! 이번 토요일 저녁 일곱시에 벨라 파스타 두 명 자리로 예약됐어. 확인 코드는 비 피 칠 일 일 일 구 공 이야. 괜찮아?
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Pasta", "date": "2026-07-11", "time": "19:00", "party_size": 2}}

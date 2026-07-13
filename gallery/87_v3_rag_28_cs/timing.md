@@ -4,71 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Alice",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-13",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-16",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-04-21",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-04-17",
+#       "category": "home",
+#       "text": "User's home address is 972 Maple Drive."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-01-05",
+#       "date": "2026-03-08",
 #       "category": "diet",
 #       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-23",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 어 겨우 왔는데, 이번 주말에 뭐 할지 궁금해.
-     4.82s  agent 발화 시작: 도착하신 걸 환영해요! 그렇게 빨리 도시를 둘러보실 생각을 하시는군요. 정말 멋지네요.
-     4.82s  user  발화 끝
-    11.45s  user  발화 시작: 응, 근데 좀 헤매는 것 같아. 근처에 괜찮은 박물관 있어?
-    11.45s  agent 발화 끝
-    17.05s  <ret> 발화 (turn3 첫 프레임)
-    17.48s  agent 발화 시작: <ret> 아, 정말 좋은 박물관이 가까이에 있어요. 국립중앙박물관에는 선사시대부터 조선시대까지 한국 역사를
-    17.48s  user  발화 끝
-    18.05s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.05s]: The National Museum of Korea houses over 400,000 artifacts and artwork
-    29.53s  user  발화 시작: 사만 천 점? 그거 완전… 엄청나네. 원자 안에서 빙빙 도는 작은 것들 이름이 뭐였지? 맨날 까먹어.
-    29.53s  agent 발화 끝
-    38.66s  <ret> 발화 (turn5 첫 프레임)
-    39.17s  agent 발화 시작: <ret> 원자를 도는 작은 것들은 전자 껍질이라고 부릅니다. 전자 껍질은 전자가 움직이는 특정한 경로, 또
-    39.17s  user  발화 끝
-    39.66s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.24s]: Electrons orbit the nucleus of an atom in specific pathways, or energy
-    49.42s  agent 발화 끝
+     0.00s  user  발화 시작: 아까 흥얼거리는 노래가 있었는데, 누가 불렀는지 기억이 안 나요. “Ain’t too proud to beg
+     7.48s  <ret> 발화 (turn1 첫 프레임)
+     7.84s  agent 발화 시작: <ret> 네, 그 노래, "Ain't Too Proud to Beg"는 천구백육십육년에 The Tempta
+     7.84s  user  발화 끝
+     8.23s  ⚡SPAN 주입 [d'=0.75s / d_lead=6.86s]: The Temptations released the song "Ain't Too Proud to Beg" in 1966, an
+    14.71s  user  발화 시작: 네.
+    14.71s  agent 발화 끝
+    15.20s  user  발화 시작: The Temptations… 음, 다른 사람일 줄 알았어요. 아직도 공연하고 있어요?
+    15.20s  user  발화 끝
+    20.10s  agent 발화 시작: 네, 공연하고 있어요! The Temptations는 여전히 투어를 하고 있는데, 멤버 구성은 시간이 지나면
+    20.10s  user  발화 끝
+    26.96s  user  발화 시작: 음.
+    26.96s  agent 발화 끝
+    27.45s  user  발화 시작: 아, 다행이다. 요즘 무슨 음악을 해요?
+    27.45s  user  발화 끝
+    30.39s  agent 발화 시작: 아.
+    30.39s  user  발화 끝
+    30.88s  agent 발화 시작: 주로 그들의 대표적인 히트곡들을 연주하지만, 공연에서는 새로운 곡들도 몇 곡 포함하고 있어요.
+    30.88s  agent 발화 끝
+    36.76s  agent 발화 끝

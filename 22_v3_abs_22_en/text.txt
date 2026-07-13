@@ -1,87 +1,87 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Elin, a calm and patient personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Faes, a encouraging and non-judgmental counselor who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Remy",
+    "name": "Nina",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-03-25",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-02-18",
+      "date": "2026-05-10",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2026-02-11",
-      "category": "work",
-      "text": "User works as a architect."
+      "date": "2026-04-13",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-01-06",
+      "date": "2026-03-10",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-21",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-02-11",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
+    },
+    {
+      "date": "2025-12-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-02",
-      "title": "Setting up a home network",
+      "date": "2026-04-04",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-20",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What campus reduced its size in the 1950's and 1960's? ⟨ret@4.25s⟩
-[  4.33s][moshi] But ⟦⚡SPAN@4.95s: (no information found)⟧ unfortunately, I don't have information about any campus reducing its size during those decades.
-[ 10.82s][user ] «backchannel» Yeah.
-[ 11.25s][user ] Oh, okay. Well, what’s the weather…
-[ 13.85s][user ] …like in Seoul right now?
-[ 16.01s][moshi] «backchannel» Uh-huh.
-[ 16.44s][moshi] ⟨ret@16.16s⟩ It’s ⟦⚡SPAN@17.25s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ currently 23.0 degrees Celsius in Seoul, with humidity at 74% and a wind speed of 5.5 kilometers per hour. [happy] Quite pleasant, isn’t it?
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 27.26s][user ] «backchannel» Yeah.
-[ 27.69s][user ] Sounds lovely. Can you find me some Italian restaurants ⟨ret@31.42s⟩ nearby?
-[ 32.02s][moshi] ⟦⚡SPAN@32.58s: (tool result) Trattoria Uno - Italian, 4.5 stars, 0.8 km away. Bella Italia - Italian, 4.2 stars, 1.2 km away.⟧ I found two Italian restaurants near you: Trattoria Uno, rated 4.5 stars and 0.8 kilometers away, and Bella Italia, with 4.2 stars at 1.2 kilometers.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 42.84s][user ] «backchannel» Oh.
-[ 43.27s][user ] Trattoria Uno sounds good. Can you reserve a table for two there for 7 PM ⟨ret@49.79s⟩ tonight?
-[ 50.19s][moshi] Wonderful! ⟦⚡SPAN@51.00s: (tool result) Reservation confirmed for 2 people at Trattoria Uno on 2026-07-10 at 19:00. Confirmation ID: 7X9⟧ Your reservation for two at Trattoria Uno is confirmed for 7 PM tonight. Your confirmation ID is 7X9L2K. [curious] I hope you enjoy your meal!
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Trattoria Uno", "date": "2026-07-10", "time": "19:00", "party_size": "2"}}
+[  0.00s][user ] When were gold dollars first minted?
+[  2.36s][moshi] Well, that’s a tricky one! It seems the exact first minting date for gold dollars isn’t widely documented.
+[  9.43s][user ] Oh. Hmm. Do you know about silver dollars then? ⟨ret@12.78s⟩
+[ 12.97s][moshi] ⟦⚡SPAN@13.48s: The first silver dollars were authorized by the Mint Act of 1792, and were first produced in 1794.⟧ Actually, I do! The first silver dollars were authorized in 1792, and first produced in 1794. They’ve quite a history, haven’t they?
+[ 21.62s][user ] They do! I'm trying to understand the history of US currency.
+[ 25.94s][moshi] That's a fascinating area to explore. It’s amazing how much history is tied up in something we use every day.
+[ 33.81s][user ] It is. What about paper money? When did ⟨ret@37.14s⟩ that start?
+[ 37.74s][moshi] ⟦⚡SPAN@37.68s: Paper money in the American colonies first appeared in 1690, issued by the Massachusetts Bay Colony, to fund m⟧ Paper money actually began appearing in the American colonies way back in 1690, issued by Massachusetts to fund military expeditions.
+[ 45.60s][user ] Wow, that’s early! So much earlier than I thought.
+[ 49.14s][moshi] It is, isn't it? It really shows how necessity drives innovation.
+[ 53.46s][user ] That makes sense. I'm thinking about collecting some old coins. –
+[ 57.78s][user ] …Do you think that’s a good idea, considering the economy?
+[ 61.72s][moshi] «backchannel» Yeah.
+[ 62.11s][moshi] That’s a very practical question. Collecting can be a good investment, but it’s wise to be cautious with the current economy.
+[ 70.36s][user ] «backchannel» Right.
+[ 70.76s][moshi] It's best to research thoroughly and perhaps focus on coins with intrinsic value or strong historical significance.
+[ 77.44s][user ] That’s good advice. Is it hard to tell what's valuable?
+[ 81.37s][moshi] «backchannel» Yeah.
+[ 81.76s][moshi] ⟨ret@81.72s⟩ Determining a coin’s ⟦⚡SPAN@83.22s: Coin grading is a complex process, typically done by third-party services like PCGS or NGC, evaluating factors⟧ value can be complex, usually done by services like PCGS or NGC, evaluating wear, damage, and how rare it is.
+[ 90.80s][user ] PCGS and NGC… I’ll have to look those up.
+[ 94.34s][moshi] I can certainly help with that! Would you like me to find some information on those grading services?
+[101.42s][user ] Yes, please. That would be ⟨ret@103.50s⟩ great.
+[103.78s][moshi] ⟦⚡SPAN@103.72s: (tool result) Professional Coin Grading Service (PCGS) is a third-party coin grading service established in 19⟧ PCGS, the Professional Coin Grading Service, was established in 1986 and grades coins on a scale from one to seventy. It's a good place to start learning more about evaluating coins.
+      CALL: {"function": "search", "arguments": {"query": "PCGS coin grading"}}

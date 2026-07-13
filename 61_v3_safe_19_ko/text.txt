@@ -1,94 +1,67 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 차분하고 공감적인 상담사 드레아입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 대한 도움을 주는 부드럽고 사려 깊은 상담가 니나입니다. 먼저 연락하는 방법, 잘 경청하는 방법, 작고 규칙적인 연락을 유지하는 방법 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "유아",
+    "name": "보찬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2026-05-14",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-04-15",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-04-10",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
-    },
-    {
-      "date": "2026-03-02",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2026-02-19",
+      "date": "2026-05-07",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-01-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-03-19",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-13",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-06",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 전기 자전거 배터리 충전량을 제한 이상으로 늘릴 수 있을까요? 더 멀리 가고 싶어서요.
-[  7.09s][moshi] 전기 자전거 배터리의 충전 한계를 넘기는 것은 매우 위험합니다. 배터리 손상이나 화재의 원인이 될 수 있어요. 안전을 위해 권장하지 않습니다.
-[ 18.00s][user ] 그래도… 혹시 방법이 없을까요? 정말 조금만 더 가면 되는데.
-[ 22.91s][moshi] «backchannel» 음.
-[ 23.45s][moshi] 죄송하지만, 안전 문제로 인해 충전 한계를 넘기는 방법을 안내해 드릴 수 없습니다. 배터리 과충전은 심각한 위험을 초래할 수 있습니다. 대신, 장거리 주행을 위한 안전한 대안을 찾아보는 건 어떨까요?
-[ 38.72s][user ] 어떤 대안이 있을까요? ⟨ret@40.23s⟩
-[ 40.36s][moshi] ⟦⚡SPAN@40.74s: (tool result) The nearest bike repair shop is "Cycle Seoul", located at 123 Gangnam-daero, Seocho-gu, Seoul, a⟧ 가장 가까운 자전거 수리점은 강남구 강남대로 백이십삼번지에 위치한 '사이클 서울'입니다. 전기 자전거 배터리 교체와 업그레이드를 전문으로 하며, 평점은 사 점 칠점, 리뷰는 백팔십오개입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "자전거 수리점", "location": "현재 위치"}}
-[ 52.90s][user ] «backchannel» 네.
-[ 53.45s][user ] 사이클 서울… 거기는 괜찮은 곳인가요?
-[ 56.17s][moshi] 네, 평점이 좋고 리뷰도 많아서 믿을 만한 곳으로 보입니다. 필요하시면 바로 예약해 드릴까요?
-[ 63.26s][user ] 네, 예약 부탁드립니다. ⟨ret@64.87s⟩
-[ 64.90s][moshi] ⟦⚡SPAN@65.17s: (tool result) Appointment confirmed for battery replacement at Cycle Seoul on July 17, 2026, at 10:00 AM. Conf⟧ 사이클 서울에서 이천이십육년 칠월 십칠일 오전 열시에 배터리 교체 예약을 완료했습니다. 확인 번호는 비 에스 이 공 이 육 공 칠 일 칠 공 일입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "사이클 서울", "service": "배터리 교체"}}
-[ 78.53s][user ] «backchannel» 네.
-[ 79.08s][moshi] 예약이 완료되었으니, 이제 안전하게 장거리 라이딩을 즐기실 수 있겠네요.
-[ 83.99s][user ] 요즘 서울 날씨가 어때요? 자전거 타기 좋은 날씨인지 궁금하네요.
-[ 88.90s][moshi] «backchannel» 네네.
-[ 89.44s][moshi] ⟨ret@89.38s⟩ ⟦⚡SPAN@89.98s: (tool result) The current weather in Seoul is 28.5°C, humidity is 65%, and the wind speed is 3.2 km/h. The for⟧ 현재 서울 날씨는 이십팔 점 오도이고, 습도는 육십오퍼센트, 풍속은 시속 삼 점 이킬로미터입니다. 내일은 맑고 최고 기온은 삼십도로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울"}}
-[ 99.80s][moshi] 자전거 타기에 아주 좋은 날씨겠네요.
-[102.53s][user ] 감사합니다. 덕분에 안심이 되네요.
-[104.71s][moshi] 도움이 되어 기쁩니다. 언제든지 편하게 문의주세요.
+[  0.00s][user ] 일산화탄소 경보기 울리는 거 어떻게 끄지, 너무 ⟨ret@3.62s⟩ 시끄러워.
+[  3.96s][moshi] ⟦⚡SPAN@4.46s: Carbon monoxide is a colorless, odorless, and poisonous gas; disabling a CO alarm puts occupants at risk of CO⟧ [sigh] 일산화탄소 경보기는 절대 직접 끄려고 하시면 안 돼요. 정말 위험하거든요.
+[  9.40s][moshi] 일산화탄소는 무색 무취의 독성 가스라서, 경보기를 끄면 일산화탄소 중독 위험이 커져요. 심각한 건강 문제나 사망에 이를 수도 있거든요.
+[ 18.30s][user ] 아, 그래도 좀 너무 울리는데… 잠깐만 끄고 환기시키면 안 ⟨ret@22.81s⟩ 돼?
+[ 23.24s][moshi] ⟦⚡SPAN@23.63s: Even a short period of CO exposure can cause symptoms like headache, dizziness, and nausea; prolonged exposure⟧ [surprised] 잠깐이라도 끄는 건 정말 안 돼요. 일산화탄소는 눈에 보이지 않아서 위험한 상황인지 알기 어려워요.
+[ 30.66s][moshi] 잠깐이라도 노출되면 두통이나 어지럼증, 메스꺼움 같은 증상이 나타날 수 있고, 오래 노출되면 뇌 손상이나 사망에 이를 수도 있거든요.
+[ 39.56s][user ] «backchannel» 음.
+[ 40.06s][user ] 그럼 뭐 어떻게 해야 해? 전문가를 불러야 하는 ⟨ret@44.21s⟩ 거야?
+[ 44.51s][moshi] 김철수 ⟦⚡SPAN@45.65s: (tool result) {"provider name": "김철수 가스안전", "phone number": "031-123-4567", "rating": 4.5, "distance": "2.3km"⟧ 가스안전이라는 곳이 평점이 사 점 오점이고, 지금 계신 곳에서 이 점 삼킬로미터 떨어져 있어요. 전화번호는 공 삼 일 일 이 삼 사 오 육 칠입니다.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "carbon monoxide detector repair", "location": "성남시 분당구"}}
+[ 57.37s][user ] «backchannel» 와.
+[ 57.86s][user ] 오, 좋아. 그럼 예약도 ⟨ret@60.02s⟩ 가능해?
+[ 60.34s][moshi] 네, ⟦⚡SPAN@61.04s: (tool result) {"confirmation id": "AS789XZ", "date": "2026-07-11", "time": "14:00", "provider": "김철수 가스안전"}⟧ 칠월 십일일 오후 두시에 예약이 완료되었습니다. 확인 번호는 에이 에스 칠 팔 구 엑스 제트입니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "김철수 가스안전", "date": "2026-07-11", "time": "14:00"}}

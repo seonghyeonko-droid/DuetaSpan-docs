@@ -1,91 +1,69 @@
 v3_mcp_04_ko src=mcp style=v2
-SYSTEM: <system> 당신은 지오이며, 현실적이고 공감 능력이 뛰어난 라이프 코치로서 사람들의 학업 및 동기 부여에 도움을 줍니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 차분하고 공감적인 라이프 코치 히오우스입니다. 감정이 파도처럼 밀려오는 현상을 설명하고, 지지대에 기대고, 부드러운 일상 구조를 유지하는 것을 도울 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "소율",
+    "name": "수슬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
+      "date": "2026-06-07",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-03-23",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2026-01-28",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-26",
+      "date": "2026-05-06",
       "category": "allergy",
       "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-14",
-      "title": "Setting up a home network",
+      "date": "2026-03-23",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-08",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음… 혹시 내 문서 폴더 안에 뭐가 있는지 알려줄 수 있어?
-[  4.74s][moshi] «backchannel» 음.
-[  5.17s][moshi] ⟨ret@5.07s⟩ ⟦⚡SPAN@5.49s: /home/user/Documents is a directory. It contains: report.pdf, presentation.pptx, notes.txt, image.jpg.⟧ 네, 문서 폴더 안에 보고서, 프레젠테이션, 메모장 파일, 이미지 파일이 있어요.
-[  9.91s][user ] 아, 보고서 파일 크기가 얼마나 ⟨ret@11.90s⟩ 돼?
-[ 12.49s][moshi] ⟦⚡SPAN@12.98s: report.pdf is 2.3 megabytes in size.⟧ 보고서 파일 크기는 이 점 삼메가바이트예요.
-[ 15.08s][user ] «backchannel» 오.
-[ 15.51s][moshi] 혹시 다른 파일 크기도 궁금하신가요?
-[ 17.66s][user ] 아니, 그건 됐어. 그럼 이번 주 토요일에 서울에서 날씨가 ⟨ret@21.50s⟩ 어때?
-[ 21.97s][moshi] 이번 ⟦⚡SPAN@22.99s: (tool result) {"city": "Seoul", "date": "2026-07-11", "temperature": "28.5°C", "humidity": "65%", "wind speed"⟧ 주 토요일 서울 날씨는 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 칠 점 이킬로미터, 부분적으로 흐릴 것으로 예상돼요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul", "date": "2026-07-11"}}
-[ 30.16s][user ] «backchannel» 응.
-[ 30.59s][user ] 이십팔 점 오도면 좀 더운 편이겠다…
-[ 33.17s][moshi] 네, 조금 더울 수 있겠네요. 시원한 옷차림을 준비하시는 게 좋겠어요.
-[ 37.48s][user ] «backchannel» 응응.
-[ 37.91s][user ] 그럼, 혹시 토요일에 영화 볼 만한 거 ⟨ret@40.87s⟩ 있어?
-[ 41.36s][moshi] 토요일 ⟦⚡SPAN@42.02s: (tool result) {"movies": Inside Out 2, Bad Boys: Ride or Die, The Garfield Movie, "theaters": CGV Gangnam, Lot⟧ 서울에서 상영하는 영화로는 '인사이드 아웃 이', '배드 보이즈: 라이드 오어 다이', '가필드 무비'가 있어요. 씨 지 브이 강남, 롯데시네마 월드타워, 메가박스 코엑스에서 볼 수 있습니다.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-07-11", "city": "Seoul"}}
-[ 52.56s][user ] '인사이드 아웃 이'… 그 영화 예매해 줘. 씨 지 브이 강남으로.
-[ 57.30s][moshi] '인사이드 아웃 이'를 씨 지 브이 강남에서 예매해 드릴게요. 몇 시로 예매하시겠어요?
-[ 62.47s][user ] «backchannel» 응.
-[ 62.90s][user ] 음… 저녁 일곱시로 해 줘. ⟨ret@65.04s⟩
-[ 65.05s][moshi] ⟦⚡SPAN@65.56s: (tool result) {"confirmation id": "AX7294", "movie": "Inside Out 2", "theater": "CGV Gangnam", "time": "19:00"⟧ 네, '인사이드 아웃 이' 씨 지 브이 강남 저녁 일곱시, 에이 십이, 에이 십삼 좌석으로 예매 완료되었습니다. 확인 번호는 에이 엑스 칠 이 구 사이고, 총 금액은 삼만 원입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Inside Out 2", "theater": "CGV Gangnam", "time": "19:00", "date": "2026-07-11"}}
-[ 77.54s][user ] 고마워, 지오.
-[ 78.41s][moshi] 천만에요.
+[  0.00s][user ] 마이애미에 식료품점이 어디 있는지 ⟨ret@2.18s⟩ 찾아줘.
+[  2.51s][moshi] 마이애미 ⟦⚡SPAN@3.26s: (tool result) {"results": [{"name": "Whole Foods Market South Beach", "address": "1680 Washington Ave, Miami B⟧ 비치 워싱턴 애비뉴 천육백팔십번지에 있는 홀 푸드 마켓 사우스 비치가 가장 가깝고 평점은 사 점 사점이에요. 트레이더 조스는 비스케인 대로 칠천삼백번지에 있고 평점은 사 점 삼점입니다.
+      CALL: {"function": "maps_text_search", "arguments": {"query": "grocery stores in Miami"}}
+[ 16.09s][user ] 거긴 너무 비싸. 좀 더 저렴한 곳 찾아봐. ⟨ret@20.02s⟩
+[ 20.11s][moshi] «backchannel» 네.
+[ 20.61s][moshi] ⟦⚡SPAN@21.24s: (tool result) {"results": [{"name": "Aldi", "address": "800 NW 20th St, Miami, FL 33128", "rating": 4.2, "dist⟧ 알디는 이십번가 팔백번지에 있고 평점은 사 점 이점이고, 월마트 슈퍼센터는 삼십육번가 칠천백번지에 있고 평점은 삼 점 팔점입니다.
+      CALL: {"function": "maps_text_search", "arguments": {"query": "cheap grocery stores in Miami"}}
+[ 29.16s][user ] «backchannel» 어.
+[ 29.66s][user ] 알디까지 얼마나 걸려? 지금 출발하면. ⟨ret@32.14s⟩
+[ 32.18s][moshi] 현재 ⟦⚡SPAN@33.00s: (tool result) {"distance": "4.8 km", "duration": "20 minutes", "route": "Head north on NW 20th St..."}⟧ 위치에서 알디까지 거리는 사 점 팔킬로미터이고, 소요 시간은 이십분입니다. 북쪽으로 이십번가를 따라 이동하시면 됩니다.
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Aldi, 800 NW 20th St, Miami, FL 33128"}}

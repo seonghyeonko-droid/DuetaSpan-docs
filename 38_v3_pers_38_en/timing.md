@@ -4,129 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Henri",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-06-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-05-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-03-22",
+#       "category": "home",
+#       "text": "User's home address is 78 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-02-28",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-03-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-15",
-#       "category": "home",
-#       "text": "User's home address is 389 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-13",
+#       "date": "2026-04-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Diax… that’s an interesting name.  | S2 Uh, yeah, pretty much. It’s always | S3 That feels… wrong. Like cheating. | S4 That’s… actually a good point. I h
+# EXAMINER(FDB-v2) 단계: S1 Hear? That’s… a unique name. What  | S2 Hmm. Reminders are annoying, but l | S3 A salad sounds… depressing. Is the | S4 Actually, that sounds… good. Maybe
 
-     0.00s  agent 발화 시작: Hello Henri, it’s lovely to meet you. I’m Diax, and I help p
-     8.00s  user  발화 시작: Diax… that’s an interesting name. What exactly does a confid
-     8.00s  agent 발화 끝
-    13.05s  agent 발화 시작: [curious] I help you explore what’s holding you back, Henri,
-    13.05s  user  발화 끝
-    22.73s  user  발화 시작: Well, I’m feeling pretty stuck right now. I have this idea f
-    22.73s  agent 발화 끝
-    31.57s  agent 발화 시작: That’s very common, Henri. It sounds frustrating. What’s the
-    31.57s  user  발화 끝
-    40.40s  user  발화 시작: I’m afraid it’s just… bad. That it won’t be good enough.
-    40.40s  agent 발화 끝
-    45.03s  agent 발화 시작: [sigh] That fear of imperfection can be paralyzing. Do you o
-    45.03s  user  발화 끝
-    52.61s  user  발화 시작: Uh, yeah, pretty much. It’s always the worst-case scenario i
-    52.61s  agent 발화 끝
-    57.66s  agent 발화 시작: Mhm.
-    57.66s  user  발화 끝
-    58.08s  agent 발화 시작: I see. It's like your mind is protecting you, but maybe a li
-    58.08s  agent 발화 끝
-    68.18s  user  발화 시작: I’ve thought about it, but it still feels… overwhelming.
-    68.18s  agent 발화 끝
-    71.97s  agent 발화 시작: Perhaps we can reframe “overwhelming” as “a series of exciti
-    71.97s  user  발화 끝
-    79.13s  user  발화 시작: Okay.
-    79.13s  agent 발화 끝
-    79.55s  agent 발화 시작: What part of the screenplay feels most daunting right now? T
-    79.55s  user  발화 끝
-    86.28s  user  발화 시작: The beginning, definitely. I can’t figure out how to start i
-    86.28s  agent 발화 끝
-    90.91s  agent 발화 시작: Mhm.
-    90.91s  user  발화 끝
-    91.33s  agent 발화 시작: [happy] The beginning is always the hardest! Sometimes, just
-    91.33s  agent 발화 끝
-    98.91s  user  발화 시작: That feels… wrong. Like cheating.
-    98.91s  agent 발화 끝
-   101.01s  agent 발화 시작: It's not cheating, Henri, it's a technique. Think of it as p
-   101.01s  user  발화 끝
-   111.11s  user  발화 시작: I guess… but what if those ideas are just awful?
-   111.11s  agent 발화 끝
-   115.32s  agent 발화 시작: Yeah, yeah.
-   115.32s  user  발화 끝
-   116.16s  agent 발화 시작: [curious] What specifically makes you believe they’d be awfu
-   116.16s  agent 발화 끝
-   123.32s  user  발화 시작: I don’t know… I just feel like everything I write is cliché.
-   123.32s  agent 발화 끝
-   128.37s  agent 발화 시작: Clichés often stem from universal themes, Henri. Perhaps exp
-   128.37s  user  발화 끝
-   135.52s  user  발화 시작: That’s… actually a good point. I hadn’t thought of that.
-   135.52s  agent 발화 끝
-   139.73s  agent 발화 시작: Yeah.
-   139.73s  user  발화 끝
-   140.15s  agent 발화 시작: [laugh] It’s about shifting your perspective, seeing familia
-   140.15s  agent 발화 끝
-   148.57s  user  발화 시작: Mm-hmm.
-   148.57s  agent 발화 끝
-   148.99s  user  발화 시작: It’s about a musician struggling with fame. Pretty standard,
-   148.99s  user  발화 끝
-   153.62s  agent 발화 시작: Mm-hmm.
-   153.62s  user  발화 끝
-   154.04s  agent 발화 시작: Not at all. Fame is a fascinating paradox. What unique angle
-   154.04s  agent 발화 끝
-   162.88s  user  발화 시작: Yeah.
-   162.88s  agent 발화 끝
-   163.30s  user  발화 시작: I… I guess I want to explore the loneliness of it.
-   163.30s  user  발화 끝
-   167.93s  agent 발화 시작: Excellent. That's a powerful starting point. Focus on that l
-   167.93s  user  발화 끝
-   176.35s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Charlie, I’m Hear, your personal guide for health and 
+     8.43s  user  발화 시작: Hear? That’s… a unique name. What exactly does a “health gui
+     8.43s  agent 발화 끝
+    14.19s  agent 발화 시작: Uh-huh.
+    14.19s  user  발화 끝
+    14.64s  agent 발화 시작: [happy] I help people build routines for wellbeing, focusing
+    14.64s  agent 발화 끝
+    23.95s  user  발화 시작: Oh, okay. I’m pretty terrible at all of those things, honest
+    23.95s  agent 발화 끝
+    30.16s  agent 발화 시작: Mhm.
+    30.16s  user  발화 끝
+    30.61s  agent 발화 시작: Many people find hydration a challenge! It’s about finding w
+    30.61s  agent 발화 끝
+    39.92s  user  발화 시작: Yeah.
+    39.92s  agent 발화 끝
+    40.37s  user  발화 시작: Visible? That sounds… simplistic. I just forget, you know? L
+    40.37s  user  발화 끝
+    45.69s  agent 발화 시작: [sigh] I understand. Busy lives often mean self-care gets pu
+    45.69s  user  발화 끝
+    54.12s  user  발화 시작: Okay.
+    54.12s  agent 발화 끝
+    54.56s  user  발화 시작: Seamlessly… like what? I’m skeptical, but willing to listen.
+    54.56s  user  발화 끝
+    58.55s  agent 발화 시작: Uh-huh.
+    58.55s  user  발화 끝
+    59.00s  agent 발화 시작: Perhaps setting reminders on your phone, or linking water in
+    59.00s  agent 발화 끝
+    68.31s  user  발화 시작: Hmm. Reminders are annoying, but linking it to meals… that’s
+    68.31s  agent 발화 끝
+    76.30s  agent 발화 시작: That's a great starting point! Building from existing routin
+    76.30s  user  발화 끝
+    84.72s  user  발화 시작: I guess. I’m also trying to eat better, but I have no idea w
+    84.72s  agent 발화 끝
+    93.59s  agent 발화 시작: Yeah.
+    93.59s  user  발화 끝
+    94.04s  agent 발화 시작: [curious] It can be overwhelming. A balanced plate often inc
+    94.04s  agent 발화 끝
+   102.02s  user  발화 시작: Vegetables… right. I mostly eat pasta. It’s quick and easy a
+   102.02s  agent 발화 끝
+   107.35s  agent 발화 시작: Pasta isn’t inherently bad, but variety is key! Adding a sid
+   107.35s  user  발화 끝
+   115.77s  user  발화 시작: Yeah.
+   115.77s  agent 발화 끝
+   116.22s  user  발화 시작: A salad sounds… depressing. Is there anything else I could a
+   116.22s  user  발화 끝
+   122.87s  agent 발화 시작: [laugh] Absolutely! Sautéed spinach wilts quickly, or some c
+   122.87s  user  발화 끝
+   129.08s  user  발화 시작: Spinach, huh? Okay, I can probably manage that. What about e
+   129.08s  agent 발화 끝
+   135.29s  agent 발화 시작: You don’t need a gym! A brisk walk, dancing, or even stretch
+   135.29s  user  발화 끝
+   143.28s  user  발화 시작: Stretching… I haven’t stretched since high school. I’m proba
+   143.28s  agent 발화 끝
+   148.16s  agent 발화 시작: That's perfectly alright! Gentle stretching improves mobilit
+   148.16s  user  발화 끝
+   155.25s  agent 발화 시작: [happy] It is a process, Charlie. Small steps build momentum
+   155.25s  agent 발화 끝
+   163.24s  user  발화 시작: Yeah, yeah.
+   163.24s  agent 발화 끝
+   164.12s  user  발화 시작: Actually, that sounds… good. Maybe a few stretches I could d
+   164.12s  user  발화 끝
+   170.33s  agent 발화 시작: Definitely! Simple neck rolls, shoulder stretches, and hamst
+   170.33s  user  발화 끝
+   177.87s  user  발화 시작: Yes, please. Describe the hamstring stretch first. I think I
+   177.87s  agent 발화 끝
+   184.08s  agent 발화 시작: Sit with your legs extended, reach towards your toes, keepin
+   184.08s  user  발화 끝
+   193.84s  user  발화 시작: Okay.
+   193.84s  agent 발화 끝
+   194.29s  user  발화 시작: Okay, I can do that. It feels… tight. But not painful.
+   194.29s  user  발화 끝
+   199.17s  agent 발화 시작: That’s a good sign! Tightness is normal. Don’t push yourself
+   199.17s  user  발화 끝
+   207.15s  agent 발화 끝

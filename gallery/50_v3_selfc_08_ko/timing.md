@@ -4,112 +4,112 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "도우",
+#     "name": "현온",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2026-05-23",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
-#     },
-#     {
-#       "date": "2025-12-06",
+#       "date": "2026-05-27",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-05-17",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-05-10",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2026-03-25",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-12-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-20",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-08",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-16",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 코드 생성 마무리하고 실험 비원 이십삼의 테스트 파일도 만들어 | S2 …가장 인기 있는 레스토랑 좀 찾아줄래? | S3 가온이 좀 더 자세히 알고 싶어. | S4 아, 고마워! 그럼 혹시 내일 모레 부산 날씨는 어때?
+# EXAMINER(FDB-v2) 단계: S1 샌프란시스코 에이 엠 씨 Metreon 십육에서 상영하는 다큐 | S2 네시 십오분 상영 티켓 두 장 예매해 주세요. | S3 라멘집은 어떤 분위기예요? | S4 그럼 라멘집까지 가는 가장 빠른 길은 어떻게 되나요?
 
-     0.00s  user  발화 시작: 코드 생성 마무리하고 실험 비원 이십삼의 테스트 파일도 만들어 줘.
-     4.69s  <ret> 발화 (turn1 첫 프레임)
-     4.99s  agent 발화 시작: <ret> 실험 비원 이십삼 테스트 파일 생성이 완료되었습니다.
-     4.99s  user  발화 끝
-     5.99s  ⚡SPAN 주입 [d'=1.31s / d_lead=3.50s]: (tool result) File 'experiment bee_123 test.py' created successfully.
-     8.49s  user  발화 시작: 그렇군요.
-     8.49s  agent 발화 끝
-     8.99s  user  발화 시작: 음… 그럼 이번 주 토요일에 서울에서…
-     8.99s  user  발화 끝
-    11.98s  user  발화 시작: …가장 인기 있는 레스토랑 좀 찾아줄래?
-    11.98s  user  발화 끝
-    14.48s  <ret> 발화 (turn5 첫 프레임)
-    14.94s  ⚡SPAN 주입 [d'=0.46s / d_lead=8.49s]: (tool result) {"restaurants": [{"name": "Gaon", "cuisine": "Korean", "
-    14.98s  agent 발화 시작: <ret> 서울에서 가장 인기 있는 레스토랑은 가온과 정식입니다. 가온은 한국 요리 전문점으로 평점이 사 점
-    14.98s  user  발화 끝
-    23.47s  user  발화 시작: 그렇죠.
-    23.47s  agent 발화 끝
-    23.97s  agent 발화 시작: 정식도 한국 요리 전문점이고 평점은 사 점 육점이며 가격대는 조금 비싼 편입니다.
-    23.97s  user  발화 끝
-    29.96s  user  발화 시작: 가온이 좀 더 자세히 알고 싶어.
-    29.96s  agent 발화 끝
-    32.95s  <ret> 발화 (turn9 첫 프레임)
-    32.96s  agent 발화 시작: <ret> 가온은 서울 강남구 언주로 구에 위치한 미슐랭 삼스타 한국 레스토랑입니다 — 전통 한국 요리를 현
-    32.96s  user  발화 끝
-    33.79s  ⚡SPAN 주입 [d'=0.85s / d_lead=14.48s]: Gaon is a Michelin three-star Korean restaurant in Seoul, South Korea,
-    47.44s  user  발화 시작: —그런데 혹시 거기 예약 가능해?
-    47.44s  agent 발화 끝
-    49.75s  <ret> 발화 (turn11 첫 프레임)
-    49.93s  agent 발화 시작: <ret> 확인 번호는 지 에이 오 엔 이 공 이 육 공 칠 일 일 칠 공 공입니다.
-    49.93s  user  발화 끝
-    50.99s  ⚡SPAN 주입 [d'=1.24s / d_lead=8.49s]: (tool result) Reservation confirmed for Gaon on July 11, 2026 at 7:00 
-    58.42s  user  발화 시작: 아, 고마워! 그럼 혹시 내일 모레 부산 날씨는 어때?
-    58.42s  agent 발화 끝
-    62.91s  agent 발화 시작: 네네.
-    62.91s  user  발화 끝
-    63.26s  <ret> 발화 (turn14 첫 프레임)
-    63.41s  agent 발화 시작: <ret> 이천이십육년 칠월 십이일 부산 날씨는 이십팔 점 오도, 습도 육십팔퍼센트, 풍속은 시속 칠 점 이
-    63.41s  agent 발화 끝
-    64.60s  ⚡SPAN 주입 [d'=1.34s / d_lead=9.99s]: (tool result) The weather in Busan on July 12, 2026 will be 28.5°C, hu
-    73.40s  agent 발화 끝
+     0.00s  user  발화 시작: 샌프란시스코 에이 엠 씨 Metreon 십육에서 상영하는 다큐멘터리가 있나요?
+     3.60s  <ret> 발화 (turn1 첫 프레임)
+     3.91s  agent 발화 시작: <ret> 샌프란시스코 에이 엠 씨 Metreon 십육에서는 “Deep Field”, “The Territo
+     3.91s  user  발화 끝
+     4.91s  ⚡SPAN 주입 [d'=1.31s / d_lead=8.25s]: (tool result) There are three documentaries playing at AMC Metreon 16 
+    12.16s  user  발화 시작: 오.
+    12.16s  agent 발화 끝
+    12.59s  user  발화 시작: “Fire of Love”는 몇 시에 상영하나요?
+    12.59s  user  발화 끝
+    14.70s  <ret> 발화 (turn4 첫 프레임)
+    15.16s  ⚡SPAN 주입 [d'=0.46s / d_lead=6.95s]: (tool result) “Fire of Love” is showing at AMC Metreon 16 in San Franc
+    15.20s  agent 발화 시작: <ret> “Fire of Love”는 오늘 에이 엠 씨 Metreon 십육에서 오후 한시 삼십분, 네시 십
+    15.20s  user  발화 끝
+    22.15s  user  발화 시작: 음.
+    22.15s  agent 발화 끝
+    22.58s  user  발화 시작: 네시 십오분 상영 티켓 두 장 예매해 주세요.
+    22.58s  user  발화 끝
+    25.80s  <ret> 발화 (turn7 첫 프레임)
+    26.06s  agent 발화 시작: <ret> 네, “Fire of Love” 에이 엠 씨 Metreon 십육 오늘 오후 네시 십오분 두 자리 
+    26.06s  user  발화 끝
+    26.97s  ⚡SPAN 주입 [d'=1.17s / d_lead=11.29s]: (tool result) Confirmation: Your tickets for “Fire of Love” at AMC Met
+    37.35s  user  발화 시작: 음.
+    37.35s  agent 발화 끝
+    37.78s  user  발화 시작: 혹시 근처에 맛있는 저녁 식사할 곳도 추천해 줄 수 있나요?
+    37.78s  user  발화 끝
+    41.91s  <ret> 발화 (turn10 첫 프레임)
+    42.12s  agent 발화 시작: <ret> 에이 엠 씨 Metreon 십육 근처에는 “Ozora Sushi”, “Super Duper Bur
+    42.12s  user  발화 끝
+    42.79s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.95s]: (tool result) Several restaurants are near AMC Metreon 16 in San Franc
+    49.07s  user  발화 시작: 우와.
+    49.07s  agent 발화 끝
+    49.51s  user  발화 시작: 라멘집은 어떤 분위기예요?
+    49.51s  user  발화 끝
+    50.63s  <ret> 발화 (turn13 첫 프레임)
+    50.75s  ⚡SPAN 주입 [d'=1.01s / d_lead=6.95s]: Marufuku Ramen is a popular ramen restaurant known for its Hakata-styl
+    50.81s  agent 발화 시작: <ret> Marufuku Ramen은 하카타 스타일 돈코츠 라멘으로 유명하고, 활기찬 분위기의 인기 라멘집
+    50.81s  user  발화 끝
+    57.76s  user  발화 시작: … 혹시 그 라멘집에서 혼자 먹어도 괜찮을까요?
+    57.76s  agent 발화 끝
+    60.77s  <ret> 발화 (turn15 첫 프레임)
+    60.80s  agent 발화 시작: <ret> Marufuku Ramen은 혼자 식사하기 좋은 바 좌석도 마련되어 있고, 혼자 오시는 분들도 흔
+    60.80s  user  발화 끝
+    60.87s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.08s]: Marufuku Ramen has counter seating available, making it suitable for s
+    66.88s  user  발화 시작: 응.
+    66.88s  agent 발화 끝
+    67.31s  user  발화 시작: 그럼 라멘집까지 가는 가장 빠른 길은 어떻게 되나요?
+    67.31s  user  발화 끝
+    70.79s  agent 발화 시작: 네.
+    70.79s  user  발화 끝
+    70.81s  <ret> 발화 (turn19 첫 프레임)
+    71.22s  agent 발화 시작: <ret> 에이 엠 씨 Metreon 십육에서 Marufuku Ramen까지는 도보로 영 점 사마일, 약 팔
+    71.22s  agent 발화 끝
+    71.54s  ⚡SPAN 주입 [d'=0.73s / d_lead=9.55s]: (tool result) Walking directions from AMC Metreon 16 to Marufuku Ramen
+    80.77s  agent 발화 시작: 맛있는 라멘 드시고 즐거운 시간 보내세요!
+    80.77s  agent 발화 끝
+    83.38s  agent 발화 끝

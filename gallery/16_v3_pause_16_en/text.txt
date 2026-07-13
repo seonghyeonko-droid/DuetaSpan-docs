@@ -1,89 +1,115 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Timi, a calm and patient wellness coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Viol, a thoughtful and soft-spoken personal guide who helps people with friendships and social life. You can explain reaching out first, listening well, keeping small regular contact. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Avery",
+    "name": "Charlotte",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-17",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-04-23",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-02-21",
+      "date": "2026-04-04",
       "category": "home",
-      "text": "User's home address is 228 Oak Avenue."
+      "text": "User's home address is 664 Cedar Lane."
     },
     {
-      "date": "2026-02-18",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-03-12",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2026-01-21",
+      "date": "2026-02-28",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-13",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "work",
+      "text": "User works as a architect."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
-      "title": "Setting up a home network",
+      "date": "2026-06-23",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering… what’s the fastest ⟨ret@2.75s⟩ car?
-[  3.02s][moshi] Well, that’s ⟦⚡SPAN@4.08s: The Koenigsegg Agera RS is the world’s fastest production car, with a top speed of 277.87 miles per hour.⟧ a fun question! The Koenigsegg Agera RS is the world’s fastest production car, reaching two hundred seventy-seven point eight seven miles per hour. Quite a machine, isn't it?
-[ 15.96s][user ] «backchannel» Yeah.
-[ 16.39s][user ] Two hundred seventy-seven… wow. What…
-[ 18.55s][user ] …about a more affordable fast car?
-[ 21.14s][moshi] «backchannel» Yeah.
-[ 21.57s][moshi] [curious] That’s a good point. Fast doesn’t always mean astronomically priced. What’s your budget looking like, roughly?
-[ 28.90s][user ] Let's say… under sixty thousand ⟨ret@31.05s⟩ dollars?
-[ 31.49s][moshi] ⟦⚡SPAN@31.74s: (tool result) The 2024 Chevrolet Corvette Stingray is often cited as one of the fastest and most affordable sp⟧ Many people consider the 2024 Chevrolet Corvette Stingray one of the fastest affordable options, accelerating from zero to sixty miles per hour in two point nine seconds. It does start slightly above your budget, at sixty-eight thousand three hundred dollars, though.
-      CALL: {"function": "search", "arguments": {"query": "fastest cars under $60000"}}
-[ 49.18s][user ] Slightly… hmm. Are there any electric cars that are quick?
-[ 53.49s][moshi] «backchannel» Right.
-[ 53.92s][moshi] ⟨ret@53.88s⟩ ⟦⚡SPAN@53.98s: (tool result) The Tesla Model S Plaid is currently the quickest production electric vehicle, accelerating from⟧ The Tesla Model S Plaid is currently the quickest production electric vehicle, going from zero to sixty miles per hour in one point nine nine seconds, with a top speed of two hundred miles per hour.
-      CALL: {"function": "search", "arguments": {"query": "fastest electric cars"}}
-[ 69.45s][user ] «backchannel» Yeah.
-[ 69.88s][user ] That’s… incredible. What…
-[ 71.18s][user ] …about something a little more practical? I need ⟨ret@74.80s⟩ space.
-[ 75.06s][moshi] ⟦⚡SPAN@75.00s: (tool result) The Porsche Cayenne Turbo GT is the fastest SUV currently available, with a top speed of 186 mph⟧ The Porsche Cayenne Turbo GT is currently the fastest SUV, reaching sixty miles per hour in three point three seconds and a top speed of one hundred eighty-six miles per hour. It’s a really well-rounded vehicle.
-      CALL: {"function": "search", "arguments": {"query": "fastest SUVs"}}
-[ 90.59s][user ] «backchannel» Mm-hmm.
-[ 91.02s][user ] Porsche… those are nice. What’s the weather like in Seoul right now? ⟨ret@96.19s⟩
-[ 96.20s][moshi] «backchannel» Mhm.
-[ 96.63s][moshi] ⟦⚡SPAN@96.49s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s twenty-three point zero degrees Celsius in Seoul, with seventy-four percent humidity and a wind speed of five point five kilometers per hour. A pleasant summer day!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[108.28s][user ] Sounds nice. I’m thinking of visiting next week…
-[111.73s][moshi] That sounds lovely! Seoul is a wonderful city. Are you planning any specific activities?
-[117.77s][user ] Maybe. I need to find a good Korean restaurant there. ⟨ret@121.87s⟩
-[122.08s][moshi] ⟦⚡SPAN@122.02s: (tool result) Gaon is a Michelin three-star Korean restaurant in Seoul, known for its modern interpretation of⟧ Gaon is a Michelin three-star restaurant in Seoul, and it's known for its modern take on traditional Korean food. It’s quite popular.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "Korean"}}
-[131.57s][user ] «backchannel» Yeah.
-[132.00s][user ] Gaon… sounds fancy. How much does a meal there cost? ⟨ret@136.17s⟩
-[136.32s][moshi] ⟦⚡SPAN@136.90s: (tool result) Gaon offers tasting menus ranging from ₩300,000 to ₩500,000 per person, depending on the chosen ⟧ Tasting menus at Gaon range from three hundred thousand to five hundred thousand Korean won per person, depending on your course and wine selections.
-      CALL: {"function": "search", "arguments": {"query": "Gaon Seoul price"}}
-[146.67s][user ] Wow, that's… quite a bit. I think I’ll look for something a little less expensive.
-[153.14s][moshi] «backchannel» Yeah, yeah.
-[154.00s][moshi] That’s perfectly sensible. There are countless wonderful, more affordable options available in Seoul. Perhaps I can narrow the search?
+[  0.00s][user ] I was just wondering, when did Michigan State basketball actually win a national ⟨ret@5.04s⟩ championship?
+[  5.26s][moshi] «backchannel» Right.
+[  5.64s][moshi] ⟦⚡SPAN@5.34s: Michigan State Spartans men's basketball won the NCAA Tournament championship in 1979, defeating Indiana State⟧ It's a great question! Michigan State won their only NCAA championship in 1979, defeating Indiana State 75 to 64.
+[ 12.78s][user ] «backchannel» Yeah.
+[ 13.15s][user ] Oh, wow, 1979… That feels like a long time ago. Who was their coach then?
+[ 18.79s][moshi] «backchannel» Yeah, yeah.
+[ 19.54s][moshi] ⟨ret@19.10s⟩ ⟦⚡SPAN@19.87s: Jud Heathcote was the head coach of the Michigan State Spartans men's basketball team when they won the 1979 N⟧ You’re right, it was quite a while ago! Jud Heathcote was the head coach during that championship run.
+[ 26.30s][user ] «backchannel» Mm-hmm.
+[ 26.68s][user ] Interesting. And was Magic Johnson playing for Michigan State at that time?
+[ 31.19s][moshi] «backchannel» Mm-hmm.
+[ 31.56s][moshi] No, Magic Johnson played for Michigan State from 1977 to 1979, but he didn’t play in the championship game due to an ankle injury.
+[ 40.58s][user ] Oh, that’s a shame.…
+[ 42.08s][user ] …So who led the team in scoring during ⟨ret@45.26s⟩ that tournament?
+[ 45.84s][moshi] ⟦⚡SPAN@45.78s: Greg Kelser led the Michigan State Spartans in scoring during the 1979 NCAA Tournament, averaging 16.7 points ⟧ Greg Kelser was the team's leading scorer in that tournament, averaging 16.7 points per game.
+[ 51.48s][user ] «backchannel» Wow.
+[ 51.85s][user ] I see. What was…
+[ 53.36s][user ] …their record that season? ⟨ret@54.70s⟩
+[ 54.86s][moshi] Their overall ⟦⚡SPAN@55.90s: The 1978–79 Michigan State Spartans men's basketball team finished with an overall record of 27–5 and a confer⟧ record that season was 27 wins and 5 losses, with a 14 and 4 record in conference play.
+[ 62.38s][user ] «backchannel» Exactly.
+[ 62.75s][user ] That’s a pretty good record. Were they heavily favored going into the tournament?
+[ 67.64s][moshi] «backchannel» Wow.
+[ 68.01s][moshi] They were a third seed in the tournament, so they weren't necessarily the favorites, but they were definitely considered a strong contender.
+[ 76.28s][user ] «backchannel» Yeah.
+[ 76.65s][user ] Right. And who did they play in the final ⟨ret@79.87s⟩ four?
+[ 80.41s][moshi] They ⟦⚡SPAN@80.97s: Michigan State defeated Notre Dame 89–83 in the semifinal game of the 1979 NCAA Tournament, advancing to the c⟧ faced Notre Dame in the Final Four, winning 89 to 83 and securing their spot in the championship.
+[ 87.55s][user ] That must have been a tough game. I’m also curious, what other teams were really good that year?
+[ 94.31s][moshi] Indiana State, led by Larry Bird, was the top-ranked team and the favorite going into the championship game.
+[101.08s][user ] «backchannel» Yeah.
+[101.45s][user ] That makes sense. Larry Bird was amazing. Speaking of great players.
+[105.59s][moshi] «interrupted» Michigan State’s success that year wasn’t just about individual stars, it was—
+[110.10s][user ] «interrupts_prev» …do you think they’ll ever win another national championship?
+[113.48s][moshi] «interrupted» That’s a big question! It’s certainly possible. They've had some close calls since then, and—
+[119.11s][user ] «interrupts_prev» What about their current coach? Who is ⟨ret@121.68s⟩ that?
+[122.12s][moshi] ⟦⚡SPAN@122.24s: Tom Izzo is the current head coach of the Michigan State Spartans men's basketball team, having held the posit⟧ The current head coach is Tom Izzo, who has been leading the Spartans since 1995.
+[127.76s][user ] «backchannel» Mhm.
+[128.13s][user ] Oh, I didn’t realize he’d been there that long. Has he won a championship yet?
+[133.77s][moshi] While Tom Izzo hasn’t won a national championship, he led the Spartans to the Final Four eight times.
+[140.53s][user ] «backchannel» Okay.
+[140.91s][user ] Wow, eight times! That’s really impressive. It sounds like he’s a great coach.
+[145.79s][moshi] He really is. He’s known for his strong defensive strategies and developing players.
+[150.68s][user ] «backchannel» Uh-huh.
+[151.05s][user ] I think I’ll look up some highlights from that 1979 game. Thanks for all the information!
+[157.07s][moshi] «backchannel» Right.
+[157.44s][moshi] You’re very welcome! I’m glad I could help you learn about Michigan State's championship history.

@@ -4,71 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Alice",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-13",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-16",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-04-21",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-04-17",
+#       "category": "home",
+#       "text": "User's home address is 972 Maple Drive."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-01-05",
+#       "date": "2026-03-08",
 #       "category": "diet",
 #       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-23",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: I’m trying to settle in, and I’m wondering about things to d
-     5.37s  agent 발화 시작: Welcome to the city! It's wonderful you're thinking about ex
-     5.37s  user  발화 끝
-     9.97s  user  발화 시작: Yeah, but I feel a bit lost. Is there a good museum nearby?
-     9.97s  agent 발화 끝
-    14.73s  <ret> 발화 (turn3 첫 프레임)
-    14.96s  agent 발화 시작: <ret> There is a wonderful museum quite close by—the Nationa
-    14.96s  user  발화 끝
-    15.03s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.51s]: The National Museum of Korea houses over 400,000 artifacts and artwork
-    26.46s  user  발화 시작: Four hundred thousand? That sounds… huge. What are the littl
-    26.46s  agent 발화 끝
-    34.20s  <ret> 발화 (turn5 첫 프레임)
-    34.52s  agent 발화 시작: <ret> Those little things orbiting the atom are called elect
-    34.52s  user  발화 끝
-    34.98s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.90s]: Electrons orbit the nucleus of an atom in specific pathways, or energy
-    41.42s  agent 발화 끝
+     0.00s  user  발화 시작: I was just humming a song, and I can’t remember who sang it.
+     6.34s  <ret> 발화 (turn1 첫 프레임)
+     6.59s  agent 발화 시작: <ret> That song, "Ain't Too Proud to Beg", was originally re
+     6.59s  user  발화 끝
+     6.85s  ⚡SPAN 주입 [d'=0.51s / d_lead=5.60s]: The Temptations released the song "Ain't Too Proud to Beg" in 1966, an
+    12.18s  user  발화 시작: Yeah.
+    12.18s  agent 발화 끝
+    12.51s  user  발화 시작: The Temptations… hmm. I thought it might be someone else. Ar
+    12.51s  user  발화 끝
+    17.12s  agent 발화 시작: [curious] They are! The Temptations still tour, though the l
+    17.12s  user  발화 끝
+    22.06s  user  발화 시작: Yeah.
+    22.06s  agent 발화 끝
+    22.39s  user  발화 시작: Oh, that's good to hear. What kind of music do they play now
+    22.39s  user  발화 끝
+    26.68s  agent 발화 시작: Yeah.
+    26.68s  user  발화 끝
+    27.00s  agent 발화 시작: They mostly perform their classic hits, but also include som
+    27.00s  agent 발화 끝
+    31.94s  agent 발화 끝

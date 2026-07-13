@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "연원",
+#     "name": "윤경",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,35 +12,40 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-06-01",
 #       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-04-16",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-03-01",
+#       "date": "2026-02-20",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-02-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-24",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-19",
+#       "date": "2026-05-10",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -51,11 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 그 악당 샌드위치 만드는 사람…
-     2.91s  user  발화 시작: …배우 이름이 뭐야?
-     2.91s  user  발화 끝
-     4.04s  <ret> 발화 (turn2 첫 프레임)
-     4.65s  agent 발화 시작: <ret> 그 악당 샌드위치 만드는 사람은 프레데릭 "프레드" 스톨러라고 해요. 코미디언이기도 하시고요.
-     4.65s  user  발화 끝
-     4.96s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.40s]: Frederick "Fred" Stoller is an American actor and comedian.
-    11.06s  agent 발화 끝
+     0.00s  user  발화 시작: 드래곤볼 슈퍼 백십오화는 언제 방영하나요?
+     2.41s  <ret> 발화 (turn1 첫 프레임)
+     3.02s  agent 발화 시작: <ret> 드래곤볼 슈퍼 백십오화는 이천십칠년 십일월 십이일에 처음 방영되었어요. [happy] 혹시 다른 
+     3.02s  user  발화 끝
+     3.32s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.85s]: Episode 115 of Dragon Ball Super originally aired on November 12, 2017
+    10.86s  agent 발화 끝

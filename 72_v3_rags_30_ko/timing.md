@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "우담",
+#     "name": "준원",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,47 +13,52 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-05-18",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-04-15",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-05-03",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-04-06",
+#       "date": "2026-04-26",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
+#       "date": "2026-03-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-02-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-06-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-22",
+#       "date": "2025-12-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -61,20 +66,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "title": "Researching a used car",
+#       "date": "2025-12-16",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 런던 브릿지가 무너지는 노래를 누가 만들었어?
-     2.72s  <ret> 발화 (turn1 첫 프레임)
-     2.82s  agent 발화 시작: <ret> 런던 브릿지가 무너지는 노래의 작곡가는 알려져 있지 않아요. [happy] 이 곡은 오랜 역사를 
-     2.82s  user  발화 끝
-     3.65s  ⚡SPAN 주입 [d'=0.93s / d_lead=8.94s]: The composer of "London Bridge Is Falling Down" is unknown.
-    11.76s  agent 발화 끝
+     0.00s  user  발화 시작: 앙투안 드 생텍쥐페리가 어린 왕자를 어디에서 썼는지 궁금해.
+     4.66s  <ret> 발화 (turn1 첫 프레임)
+     4.76s  agent 발화 시작: <ret> 앙투안 드 생텍쥐페리는 북미에서 어린 왕자를 썼답니다.
+     4.76s  user  발화 끝
+     5.59s  ⚡SPAN 주입 [d'=0.93s / d_lead=4.17s]: Antoine de Saint-Exupéry wrote *The Little Prince* while living in Nor
+     8.93s  agent 발화 끝

@@ -1,78 +1,85 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Orarimi, a thoughtful and soft-spoken supportive advisor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Funa, a curious and validating life coach who helps people with stress relief and mindfulness. You can explain breathing techniques, a quick grounding exercise, basic sleep hygiene. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Alice",
+    "name": "Sam",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "40s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-21",
+      "date": "2026-06-02",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-06-01",
+      "category": "home",
+      "text": "User's home address is 418 Oak Avenue."
+    },
+    {
+      "date": "2026-03-18",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-01-08",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-03",
+      "date": "2026-02-14",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-12-13",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-01-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-07",
-      "title": "Researching a used car",
+      "date": "2026-06-13",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How long does it take to drive from Paris to ⟨ret@3.50s⟩ Amsterdam?
-[  3.85s][moshi] The ⟦⚡SPAN@4.44s: (tool result) {"distance": "439 km", "duration": "4 hours 19 mins", "route": "E19"}⟧ drive from Paris to Amsterdam is approximately four hours and nineteen minutes, covering a distance of 439 kilometers, following the E19 route.
-      CALL: {"function": "maps_direction_driving", "arguments": {"origin": "Paris", "destination": "Amsterdam"}}
-[ 11.91s][user ] «backchannel» Oh.
-[ 12.26s][user ] And what’s the weather like in Amsterdam right ⟨ret@15.09s⟩ now?
-[ 15.42s][moshi] ⟦⚡SPAN@15.89s: (tool result) {"temperature": "18.5°C", "humidity": "68%", "wind speed": "14.2 km/h", "condition": "Partly Clo⟧ It’s currently 18.5 degrees Celsius in Amsterdam, with 68 percent humidity and a wind speed of 14.2 kilometers per hour—and it’s partly cloudy.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Amsterdam"}}
-[ 23.48s][user ] Are there any interesting places to stop along the ⟨ret@26.62s⟩ way?
-[ 26.98s][moshi] ⟦⚡SPAN@26.92s: (tool result) {"results": [{"name": "Grote Markt", "vicinity": "Antwerp, Belgium", "rating": 4.4, "user rating⟧ There are a couple of places you might enjoy—the Grote Markt in Antwerp, Belgium, with a 4.4 rating, and the Palace of Versailles in France, rated 4.3.
-      CALL: {"function": "map_search_places", "arguments": {"query": "attractions along E19 between Paris and Amsterdam", "radius": "50km"}}
-[ 36.44s][user ] «backchannel» Yeah.
-[ 36.79s][user ] Versailles sounds good, but is it a long detour?
-[ 39.95s][moshi] «interrupted» It's about a forty-five minute detour from the E19—
-[ 43.10s][user ] «interrupts_prev» …Actually, forget Versailles. Are there any good restaurants near the Grote Markt in ⟨ret@47.82s⟩ Antwerp?
-[ 48.01s][moshi] ⟦⚡SPAN@48.24s: (tool result) {"results": [{"name": "Elfde Gebod", "cuisine": "Belgian", "rating": 4.5}, {"name": "De Gouden K⟧ There are a few options—Elfde Gebod serves Belgian cuisine and has a 4.5 star rating, while De Gouden Kroes offers European dishes with a rating of 4.2.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Grote Markt, Antwerp"}}
-[ 57.47s][user ] «backchannel» Uh-huh.
-[ 57.82s][user ] Elfde Gebod sounds perfect. Can you make a reservation there for two people at 7 PM?
-[ 63.42s][moshi] «backchannel» Oh.
-[ 63.77s][moshi] ⟨ret@63.57s⟩ ⟦⚡SPAN@64.22s: (tool result) {"confirmation id": "RT789XYZ"}⟧ I've made a reservation for two at Elfde Gebod for 7 PM tonight—your confirmation ID is RT789XYZ.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Elfde Gebod", "date": "2026-07-10", "time": "19:00", "party_size": 2}}
-[ 69.73s][user ] «backchannel» Exactly.
-[ 70.08s][user ] Great! And can you find me a hotel near the Grote Markt ⟨ret@74.38s⟩ as well?
-[ 74.99s][moshi] ⟦⚡SPAN@75.06s: (tool result) {"results": [{"name": "Hotel Central", "price": "€120/night", "rating": 4.0}, {"name": "De Keyse⟧ I found two options near the Grote Markt—Hotel Central is available for around 120 euros a night with a 4.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Grote Markt, Antwerp"}}
+[  0.00s][user ] I need to add a product to my store, it’s a handmade leather ⟨ret@4.69s⟩ wallet.
+[  4.91s][moshi] «backchannel» Mm-hmm.
+[  5.27s][moshi] Great ⟦⚡SPAN@6.04s: (tool result) Product 'Handmade Leather Wallet' created with ID 78923.⟧ news! Your product, Handmade Leather Wallet, has been created with ID 78923.
+      CALL: {"function": "create_product", "arguments": {"product_name": "Handmade Leather Wallet", "product_type": "physical product"}}
+[  9.83s][user ] What colors does it come in?
+[ 11.94s][moshi] [curious] That’s a good question to detail on the listing. Do you already have color options in mind?
+[ 18.26s][user ] «backchannel» Yeah.
+[ 18.61s][user ] Well, I was thinking brown and black, but—
+[ 21.42s][user ] …can I add those colors directly through ⟨ret@23.87s⟩ you?
+[ 24.22s][moshi] Perfect! ⟦⚡SPAN@24.81s: (tool result) Color options 'brown' and 'black' added to product 78923.⟧ The colors brown and black have been added as options for product 78923.
+      CALL: {"function": "create_product", "arguments": {"product_id": "78923", "product_options": "brown, black"}}

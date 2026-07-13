@@ -4,51 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Thomas",
+#     "name": "Alex",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "home",
-#       "text": "User's home address is 486 Oak Avenue."
+#       "date": "2026-06-26",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-06-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "date": "2026-06-12",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-02",
+#       "date": "2026-05-07",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-03-06",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-01-05",
+#       "date": "2026-02-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-12-11",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-20",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-17",
+#       "date": "2026-03-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,75 +60,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm working on a play, and I need  | S2 Something… melancholic, but hopefu | S3 Hmm… yeah, that's really nice. It' | S4 That sounds perfect! Can you reser
+# EXAMINER(FDB-v2) 단계: S1 I need to drag the ‘revenue foreca | S2 Great, thanks. Um, do you think it | S3 Yeah, I think so too. Can you find | S4 Wednesday morning would be perfect
 
-     0.00s  user  발화 시작: I'm working on a play, and I need to highlight a section of 
-     9.93s  <ret> 발화 (turn1 첫 프레임)
-    10.10s  agent 발화 시작: <ret> [happy] Absolutely! I've made the selected text bold i
-    10.10s  user  발화 끝
-    10.65s  ⚡SPAN 주입 [d'=0.72s / d_lead=6.87s]: (tool result) {"success", "message": "Text successfully made bold."}
-    16.98s  user  발화 시작: Yeah, that's perfect. Um, I'm kind of stressed about getting
-    16.98s  agent 발화 끝
-    23.04s  agent 발화 시작: Mm-hmm.
-    23.04s  user  발화 끝
-    23.44s  agent 발화 시작: [sigh] Oh, deadlines can be so tough. As a supportive adviso
-    23.44s  agent 발화 끝
-    34.36s  user  발화 시작: Yeah, yeah.
-    34.36s  agent 발화 끝
-    35.17s  user  발화 시작: I think it’s just… everything. I need to find some music for
-    35.17s  user  발화 끝
-    44.46s  agent 발화 시작: Music can really elevate a scene! Let's find some options. W
-    44.46s  user  발화 끝
-    52.95s  user  발화 시작: Uh-huh.
-    52.95s  agent 발화 끝
-    53.35s  user  발화 시작: Something… melancholic, but hopeful. Maybe instrumental?
-    53.35s  user  발화 끝
-    55.78s  agent 발화 시작: [curious] Melancholic, yet hopeful—beautiful. I can definite
-    55.78s  user  발화 끝
-    63.05s  user  발화 시작: Yeah.
-    63.05s  agent 발화 끝
-    63.46s  user  발화 시작: Not really. Just… something that evokes a sense of longing, 
-    63.46s  user  발화 끝
-    67.69s  <ret> 발화 (turn13 첫 프레임)
-    68.31s  agent 발화 시작: <ret> There's a piece called "Near Light" by Olafur Arnalds,
-    68.31s  user  발화 끝
-    68.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.51s]: (tool result) {"artist": "Olafur Arnalds", "title": "Near Light", "dur
-    78.82s  user  발화 시작: Olafur Arnalds… I think I've heard of him. Sounds promising.
-    78.82s  agent 발화 끝
-    84.88s  agent 발화 시작: Uh-huh.
-    84.88s  user  발화 끝
-    85.27s  <ret> 발화 (turn16 첫 프레임)
-    85.29s  agent 발화 시작: <ret> It’s now playing—you can find it on Spotify at spotify
-    85.29s  agent 발화 끝
-    86.57s  ⚡SPAN 주입 [d'=1.30s / d_lead=4.04s]: (tool result) {"status": "playing", "url": "spotify:track:7i9Bf3xJdFz1
-    89.33s  user  발화 시작: Yeah.
-    89.33s  agent 발화 끝
-    89.73s  user  발화 시작: Hmm… yeah, that's really nice. It's a little sad, but in a g
-    89.73s  user  발화 끝
-    97.82s  agent 발화 시작: [happy] Wonderful! I'm glad we found something you like. Mus
-    97.82s  user  발화 끝
-   103.47s  user  발화 시작: It is. Okay, next problem: I need to book a table for after 
-   103.47s  agent 발화 끝
-   110.35s  agent 발화 시작: Uh-huh.
-   110.35s  user  발화 끝
-   110.75s  agent 발화 시작: Rehearsal sounds exciting! Where are you rehearsing, and how
-   110.75s  agent 발화 끝
-   117.22s  user  발화 시작: We're rehearsing at the Blackwood Theatre, and there will be
-   117.22s  agent 발화 끝
-   122.13s  <ret> 발화 (turn24 첫 프레임)
-   122.41s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.89s]: (tool result) {"restaurant name": "The Gilded Lily", "cuisine": "Itali
-   122.47s  agent 발화 시작: <ret> The Gilded Lily, an Italian restaurant with a four-and
-   122.47s  user  발화 끝
-   131.36s  user  발화 시작: Mm-hmm.
-   131.36s  agent 발화 끝
-   131.77s  user  발화 시작: That sounds perfect! Can you reserve a table for us?
-   131.77s  user  발화 끝
-   135.35s  <ret> 발화 (turn27 첫 프레임)
-   135.81s  agent 발화 시작: <ret> I've reserved a table at The Gilded Lily for five peop
-   135.81s  user  발화 끝
-   136.02s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.49s]: (tool result) {"confirmation number": "GL57892", "status": "confirmed"
-   144.30s  user  발화 시작: Fantastic! You've been a huge help, Zaeon.
-   144.30s  agent 발화 끝
-   147.13s  agent 발화 시작: [laugh] You’re very welcome! I’m happy to support your creat
-   147.13s  user  발화 끝
-   158.45s  agent 발화 끝
+     0.00s  user  발화 시작: I need to drag the ‘revenue forecast’ widget over to the rig
+     7.72s  <ret> 발화 (turn1 첫 프레임)
+     7.89s  agent 발화 시작: <ret> Okay, I’ve dragged the ‘revenue forecast’ widget to th
+     7.89s  user  발화 끝
+     8.43s  ⚡SPAN 주입 [d'=0.72s / d_lead=9.77s]: (tool result) Drag operation successful. Widget 'revenue forecast' mov
+    17.65s  user  발화 시작: Okay.
+    17.65s  agent 발화 끝
+    18.03s  user  발화 시작: Great, thanks. Um, do you think it’s a good idea to schedule
+    18.03s  user  발화 끝
+    24.79s  agent 발화 시작: Mm-hmm.
+    24.79s  user  발화 끝
+    25.17s  agent 발화 시작: That sounds like a good idea. Regular one-on-ones can really
+    25.17s  agent 발화 끝
+    35.31s  user  발화 시작: Yeah, I think so too. Can you find me his availability next 
+    35.31s  agent 발화 끝
+    39.63s  <ret> 발화 (turn7 첫 프레임)
+    40.13s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.39s]: (tool result) David’s availability next week: Monday 2-4 PM, Wednesday
+    40.19s  agent 발화 시작: <ret> David has openings next week on Monday from two to fou
+    40.19s  user  발화 끝
+    49.58s  user  발화 시작: Wednesday morning would be perfect. Let’s book it for 9:30 A
+    49.58s  agent 발화 끝
+    53.56s  <ret> 발화 (turn9 첫 프레임)
+    53.71s  agent 발화 시작: <ret> Excellent—I’ve scheduled that one-on-one with David fo
+    53.71s  user  발화 끝
+    54.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=9.77s]: (tool result) Appointment with David confirmed for Wednesday, July 15,
+    63.48s  agent 발화 끝

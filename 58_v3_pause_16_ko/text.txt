@@ -1,83 +1,109 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 건강 및 일상 습관 관리를 돕는 침착하고 인내심 있는 웰니스 코치 티미입니다. <system>
+SYSTEM: <system> 당신은 비올이며, 사려 깊고 부드러운 말투로 사람들의 우정과 사교 생활을 돕는 개인 가이드입니다. 먼저 연락하는 방법, 잘 경청하는 방법, 작고 규칙적인 연락을 유지하는 방법 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "현담",
+    "name": "수호",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-17",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-02-21",
+      "date": "2026-04-04",
       "category": "home",
-      "text": "User's home address is 부산 수영구 광안동 210-3."
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     },
     {
-      "date": "2026-02-18",
+      "date": "2026-03-25",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-02-28",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-01-21",
+      "date": "2025-12-13",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-12-03",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
-      "title": "Setting up a home network",
+      "date": "2026-06-23",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 세상에서 제일 빠른 차가 뭔지 ⟨ret@3.08s⟩ 궁금해…
-[  3.43s][moshi] ⟦⚡SPAN@4.05s: The Koenigsegg Agera RS is the world’s fastest production car, with a top speed of 277.87 mph (447.19 km/h).⟧ 세상에서 제일 빠른 차는 코에니그세그 아게라 알 에스인데, 최고 속도가 시속 사백사십칠 점 일 구킬로미터라고 해. 꽤 빠르지?
-[ 13.72s][user ] «backchannel» 진짜?
-[ 14.29s][user ] 사백사십칠킬로미터나 된다고? 대단하다…
-[ 16.00s][moshi] 응, 정말 놀라운 속도지. 다른 차들도 궁금해?
-[ 20.00s][user ] 음… 서울에서 제일 높은 건물이 ⟨ret@22.98s⟩ 어디야?
-[ 23.43s][moshi] ⟦⚡SPAN@23.28s: Lotte World Tower, located in Seoul, South Korea, is 555.7 meters (1,823 ft) tall and has 123 floors.⟧ 서울에서 제일 높은 건물은 롯데월드 타워인데, 높이가 오백오십오 점 칠미터, 백이십삼층이야.
-[ 29.72s][user ] «backchannel» 와.
-[ 30.29s][user ] 오백오십오미터면 엄청 높네. 거기 전망대에서 뭐 보여?
-[ 34.29s][moshi] 롯데월드 타워 전망대에서는 서울 시내 전체를 한눈에 볼 수 있어. 날씨가 좋으면 북한산도 보인대.
-[ 42.29s][user ] 오, 북한산도 보인다니 좋겠다.…
-[ 44.58s][user ] …혹시 오늘 날씨 어때?
-[ 46.86s][moshi] «backchannel» 네네.
-[ 47.43s][moshi] ⟨ret@47.30s⟩ 지금 ⟦⚡SPAN@48.37s: (tool result) Current weather in Seoul is 28.0°C, humidity 65%, wind 3.2 km/h.⟧ 서울 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 불고 있어.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 54.86s][user ] 이십팔도면 좀 덥겠네. 시원한 데 가고 싶다…
-[ 58.86s][moshi] 더위를 피해 시원한 곳으로 가고 싶구나. 혹시 서울 근교에 계곡 같은 데 알아볼까?
-[ 66.29s][user ] «backchannel» 음.
-[ 66.86s][user ] 음… 계곡 좋지. 서울에서…
-[ 69.15s][user ] …가까운 계곡 추천해 줘.
-[ 71.44s][moshi] «backchannel» 맞아요.
-[ 72.01s][moshi] ⟨ret@71.96s⟩ ⟦⚡SPAN@72.26s: Bukhansan National Park offers several valleys and streams, including the popular Ui-dong Valley, approximatel⟧ 서울에서 가까운 계곡으로는 북한산 국립공원에 있는 의동계곡이 있어. 서울에서 차로 한 시간 정도 거리야.
-[ 80.01s][user ] 의동계곡? 거기는 물이 깨끗해?
-[ 82.29s][moshi] 의동계곡 물은 깨끗한 편이야. 다만, 여름에는 사람들이 많아서 복잡할 수도 있어.
-[ 88.58s][user ] 아, 복잡하면 안 좋지… 다른 곳도 찾아볼까?
-[ 92.58s][moshi] 그럼 다른 계곡도 알아볼까? 좀 더 한적한 곳을 원한다면, 도봉산 계곡도 괜찮아.
-[ 99.44s][user ] 도봉산 계곡은 어때? 거기는 물놀이 가능해? ⟨ret@102.82s⟩
-[102.87s][moshi] ⟦⚡SPAN@103.32s: Dobongsan Valley allows swimming in designated areas, with water depth ranging from 0.5 to 1.5 meters.⟧ 도봉산 계곡은 지정된 구역에서 물놀이가 가능하고, 수심은 영 점 오미터에서 일 점 오미터 정도야.
-[110.87s][user ] 일 점 오미터면 괜찮네… 이번 주말에 가볼까?
-[114.87s][moshi] 이번 주말에 도봉산 계곡에 가는 건 좋은 생각이야. 즐거운 시간 보내길 바라!
+[  0.00s][user ] 미시간 주립대학교 농구팀이 전국 우승을 언제 했는지 궁금해.
+[  4.68s][moshi] «backchannel» 네네.
+[  5.27s][moshi] ⟨ret@4.78s⟩ ⟦⚡SPAN@5.77s: Michigan State University’s men’s basketball team won the NCAA Tournament in 1979, defeating Indiana State Uni⟧ 미시간 주립대학교 농구팀은 천구백칠십구년에 인디애나 주립대학교를 꺾고 엔 씨 에이 에이 토너먼트에서 우승했습니다. 농구 좋아하세요?
+[ 14.05s][user ] «backchannel» 응.
+[ 14.64s][user ] 음… 농구는 그냥 그래. 다른…
+[ 17.57s][user ] …스포츠도 알아봐 줄 수 있어?
+[ 20.49s][moshi] «backchannel» 음.
+[ 21.08s][moshi] 다른 스포츠도 물론 알아볼 수 있습니다. 혹시 어떤 스포츠에 관심 있으신가요?
+[ 27.52s][user ] 야구는 ⟨ret@28.33s⟩ 어때?
+[ 28.69s][moshi] ⟦⚡SPAN@28.71s: The Detroit Tigers won the World Series in 1984, defeating the San Diego Padres in five games.⟧ 디트로이트 타이거즈는 천구백팔십사년에 샌디에이고 파드리스를 꺾고 월드시리즈에서 우승했습니다. 야구 팬이시군요?
+[ 34.54s][user ] «backchannel» 응응.
+[ 35.13s][user ] 맞아, 엄청 좋아해. 근데… 야구팀 우승…
+[ 38.64s][user ] …말고 다른 거 알아봐 줄 수 있어?
+[ 42.74s][moshi] 야구팀 우승 말고 다른 것을 원하시나요? 어떤 정보를 더 드릴까요?
+[ 48.60s][user ] 음… 예를 들면, 그 해에 무슨 영화가 인기 ⟨ret@53.37s⟩ 있었는지?
+[ 53.87s][moshi] 천구백팔십사년에 ⟦⚡SPAN@54.86s: The top-grossing film of 1984 was Beverly Hills Cop, earning over $316 million worldwide.⟧ 가장 흥행한 영화는 ‘비버리힐스 캅’으로, 전 세계적으로 삼억 일천 육백만 달러 이상의 수익을 올렸습니다. 혹시 그 영화 보셨어요?
+[ 64.99s][user ] «backchannel» 와.
+[ 65.58s][user ] 아, 그 영화 알지. 엄청 웃겼어. 그런데…
+[ 69.68s][moshi] «interrupted» 그 영화는 정말 재밌었죠—
+[ 72.02s][user ] «interrupts_prev» …혹시 그 해에 다른 스포츠 경기에서 특별한 일이 있었는지 궁금해. ⟨ret@77.82s⟩
+[ 77.87s][moshi] ⟦⚡SPAN@78.12s: The 1984 Summer Olympics, held in Los Angeles, California, were boycotted by the Soviet Union and several East⟧ 특별한 스포츠 경기라… 천구백팔십사년에는 로스앤젤레스 올림픽이 열렸습니다.
+[ 81.97s][moshi] 천구백팔십사년에는 캘리포니아주 로스앤젤레스에서 하계 올림픽이 개최되었는데, 소련과 여러 동유럽 국가들이 보이콧했습니다.
+[ 88.41s][user ] 소련이 보이콧했구나. 왜 그랬던 ⟨ret@90.89s⟩ 거야?
+[ 91.34s][moshi] 소련과 ⟦⚡SPAN@92.17s: The Soviet Union and its allies cited security concerns and what they considered anti-Soviet propaganda as rea⟧ 동맹국들은 보안 문제와 반소련 선전이라고 생각하는 점을 천구백팔십사년 로스앤젤레스 올림픽 보이콧 이유로 들었습니다.
+[ 99.54s][user ] «backchannel» 오.
+[100.12s][user ] 아, 그렇구나. 그럼 그 올림픽에서 한국은 얼마나 잘했어?
+[104.81s][moshi] «backchannel» 네.
+[105.39s][moshi] ⟨ret@104.97s⟩ ⟦⚡SPAN@106.06s: South Korea won six gold medals, six silver medals, and seven bronze medals at the 1984 Summer Olympics in Los⟧ 한국은 천구백팔십사년 로스앤젤레스 하계 올림픽에서 금메달 여섯개, 은메달 여섯개, 동메달 일곱개를 획득했습니다.
+[112.42s][user ] 꽤 많이 땄네. 혹시 그 올림픽에서 한국 선수 중에 가장 유명한 사람이 누구였어? ⟨ret@119.99s⟩
+[120.03s][moshi] ⟦⚡SPAN@120.39s: An Byeong-geun won the gold medal in the under 65 kg category of judo at the 1984 Summer Olympics, marking Sou⟧ 안병근 선수는 유도 육십오킬로그램 이하급에서 금메달을 획득하며 한국 유도 역사상 첫 올림픽 금메달을 안았습니다.
+[128.23s][user ] «backchannel» 그치.
+[128.81s][user ] 유도 선수구나. 대단하네.
+[130.57s][moshi] 네, 정말 대단하셨죠. 유도는 한국에서 인기 있는 스포츠 중 하나입니다.
+[136.42s][user ] 맞아, 나도 유도 좋아해. 혹시 그 해에 유도 외에 다른 한국 스포츠에서도 좋은 성적을 거둔 팀이 ⟨ret@146.01s⟩ 있었어?
+[146.38s][moshi] 한국 ⟦⚡SPAN@147.21s: South Korea’s men’s archery team won a silver medal at the 1984 Summer Olympics in Los Angeles.⟧ 남자 양궁팀은 천구백팔십사년 로스앤젤레스 하계 올림픽에서 은메달을 획득했습니다.
+[151.65s][user ] «backchannel» 오.
+[152.23s][user ] 양궁도 잘했구나. 혹시 그 때 올림픽 개막식에 누가 ⟨ret@156.91s⟩ 왔었어?
+[157.50s][moshi] ⟦⚡SPAN@157.55s: U.S. President Ronald Reagan officially opened the 1984 Summer Olympics in Los Angeles.⟧ 천구백팔십사년 로스앤젤레스 하계 올림픽 개막식은 미국의 로널드 레이건 대통령이 공식적으로 개막했습니다.
+[163.94s][user ] «backchannel» 맞아.
+[164.53s][user ] 로널드 레이건 대통령이었구나.
+[166.28s][moshi] 네, 그렇습니다. 레이건 대통령은 당시 미국의 대통령이었습니다.
+[170.38s][user ] 아니, 오늘은 여기까지 할게. 고마워, 비올.
+[173.89s][moshi] 천만에요. 언제든지 궁금한 점이 있으면 저를 찾아주세요. 즐거운 하루 보내세요.

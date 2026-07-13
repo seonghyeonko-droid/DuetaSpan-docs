@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "세재",
+#     "name": "예현",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,151 +12,95 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-04-23",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-04-09",
+#       "date": "2026-06-11",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-16",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-06",
+#       "date": "2026-04-02",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 자유민주당 후보에 대해 아시는 분이 계셨나요? | S2 팬미팅도 괜찮겠네요. 그럼 블랙핑크 팬미팅으로 예매해 주세요. | S3 …혹시 선크림 가게 근처에 괜찮은 카페도 있을까요? | S4 혹시 그 식당까지 가는…
+# EXAMINER(FDB-v2) 단계: S1 문학 작품에서 산스크리트어 어휘가 거의 고려되지 않는 곳은 어 | S2 아, 카페 어니언… 거기 가보고 싶었는데, 혹시 지금 거기가  | S3 음… 북촌 한옥마을 근처에 조용한 곳이 있으면 좋겠어요. | S4 아, 알겠습니다. 정말 고마워요, 테아르.
 
-     0.00s  user  발화 시작: 혹시 자유민주당 후보에 대해 아시는 분이 계셨나요?
-     3.03s  <ret> 발화 (turn1 첫 프레임)
-     3.27s  agent 발화 시작: <ret> 아쉽게도, 현재로서는 자유민주당 도전자들에 대한 정보가 없는 것 같아요.
-     3.27s  user  발화 끝
-     4.18s  ⚡SPAN 주입 [d'=1.14s / d_lead=4.20s]: (no information found)
-     7.47s  user  발화 시작: 네.
-     7.47s  agent 발화 끝
-     7.93s  user  발화 시작: 음…
-     7.93s  user  발화 끝
-     8.40s  agent 발화 시작: 다른 정치 관련 정보가 필요하시면 언제든지 말씀해주세요.
-     8.40s  user  발화 끝
-    11.67s  user  발화 시작: 그럼, 이번 주말에 서울에서 열리는 콘서트 티켓 예매 좀 도와주시겠어요?
-    11.67s  agent 발화 끝
-    16.11s  <ret> 발화 (turn6 첫 프레임)
-    16.33s  agent 발화 시작: <ret> 이번 주말 서울 올림픽공원에서 방탄소년단 콘서트가 열리네요. 티켓 가격은 십오만 원이에요.
-    16.33s  user  발화 끝
-    16.70s  ⚡SPAN 주입 [d'=0.58s / d_lead=5.13s]: (tool result) {"events": [{"name": "BTS Summer Concert", "date": "2026
-    21.46s  user  발화 시작: 오, 방탄소년단 콘서트요? 혹시 다른 날짜도 가능한가요?
-    21.46s  agent 발화 끝
-    24.50s  <ret> 발화 (turn8 첫 프레임)
-    24.73s  agent 발화 시작: <ret> 칠월 십삼일에는 잠실 아레나에서 블랙핑크 팬미팅이 있네요. 티켓 가격은 십이만 원입니다.
-    24.73s  user  발화 끝
-    25.74s  ⚡SPAN 주입 [d'=1.23s / d_lead=5.13s]: (tool result) {"events": [{"name": "BLACKPINK Fan Meeting", "date": "2
-    29.86s  user  발화 시작: 와.
-    29.86s  agent 발화 끝
-    30.33s  user  발화 시작: 팬미팅도 괜찮겠네요. 그럼 블랙핑크 팬미팅으로 예매해 주세요.
-    30.33s  user  발화 끝
-    33.26s  <ret> 발화 (turn11 첫 프레임)
-    33.60s  agent 발화 시작: <ret> 블랙핑크 팬미팅 티켓 두장이 예매되었습니다. 확인 코드는 비 케이 피 엠 이 육 공 칠 일 삼 에
-    33.60s  user  발화 끝
-    34.67s  ⚡SPAN 주입 [d'=1.41s / d_lead=9.33s]: (tool result) {"confirmation id": "BKPM260713A2"}
-    42.93s  user  발화 시작: 네.
-    42.93s  agent 발화 끝
-    43.40s  user  발화 시작: 네, 감사합니다.
-    43.40s  user  발화 끝
-    44.33s  agent 발화 시작: 즐거운 시간 보내시길 바랍니다. 혹시 숙소 예약도 도와드릴까요?
-    44.33s  user  발화 끝
-    48.06s  user  발화 시작: 숙소는 이미 예약했어요. 그런데, 서울 날씨가 어때요?
-    48.06s  agent 발화 끝
-    50.81s  <ret> 발화 (turn16 첫 프레임)
-    51.33s  agent 발화 시작: <ret> 현재 서울의 기온은 이십팔 점 오도, 습도는 칠십팔퍼센트, 바람은 시속 사 점 이킬로미터입니다.
-    51.33s  user  발화 끝
-    51.75s  ⚡SPAN 주입 [d'=0.94s / d_lead=6.07s]: (tool result) {"temperature": "28.5°C", "humidity": "78%", "wind": "4.
-    57.39s  user  발화 시작: 꽤 덥겠네요.
-    57.39s  agent 발화 끝
-    58.33s  agent 발화 시작: 네, 오늘 서울은 꽤 더울 것으로 예상됩니다. 자외선 지수가 높으니 —
-    58.33s  user  발화 끝
-    63.46s  user  발화 시작: …혹시 선크림 가게 근처에 괜찮은 카페도 있을까요?
-    63.46s  agent 발화 끝
-    66.73s  agent 발화 시작: 아, 네, 물론입니다. 올림픽공원 근처에 '커피빈'과 '스타벅스'가 있어요. 둘 다 선크림을 판매하고 있습니
-    66.73s  user  발화 끝
-    72.79s  user  발화 시작: 오, 좋아요.
-    72.79s  agent 발화 끝
-    73.73s  agent 발화 시작: [happy] '커피빈'은 좀 더 조용하고, '스타벅스'는 테이블이 더 많아요. 취향에 따라 선택하시면 될 
-    73.73s  user  발화 끝
-    80.72s  user  발화 시작: 그렇죠.
-    80.72s  agent 발화 끝
-    81.19s  agent 발화 시작: 혹시 맛있는 점심 식사 장소도 알아봐 드릴까요? 서울에는 정말 맛있는 곳이 많거든요.
-    81.19s  user  발화 끝
-    86.79s  user  발화 시작: 그렇죠.
-    86.79s  agent 발화 끝
-    87.26s  user  발화 시작: 점심은 한식으로 먹고 싶어요.
-    87.26s  user  발화 끝
-    88.98s  <ret> 발화 (turn27 첫 프레임)
-    89.12s  agent 발화 시작: <ret> 강남구에 있는 '비빔밥 하우스'라는 한식당이 평점이 사 점 오점이고, 가격대는 보통입니다.
-    89.12s  user  발화 끝
-    89.94s  ⚡SPAN 주입 [d'=0.97s / d_lead=5.13s]: (tool result) {"restaurants": [{"name": "Bibimbap House", "rating": "4
-    94.26s  user  발화 시작: 비빔밥 하우스, 괜찮겠네요.
-    94.26s  agent 발화 끝
-    95.66s  agent 발화 시작: 네, 비빔밥은 한국을 대표하는 음식 중 하나니까요.
-    95.66s  user  발화 끝
-    98.92s  user  발화 시작: 그렇죠.
-    98.92s  agent 발화 끝
-    99.39s  user  발화 시작: 혹시 그 식당까지 가는…
-    99.39s  user  발화 끝
-   101.26s  user  발화 시작: …버스 노선을 알려줄 수 있을까요?
-   101.26s  user  발화 끝
-   103.26s  <ret> 발화 (turn33 첫 프레임)
-   103.59s  agent 발화 시작: <ret> 올림픽공원에서 비빔밥 하우스까지 삼백삼십삼번 버스를 타면 삼십분 정도 걸립니다.
-   103.59s  user  발화 끝
-   104.19s  ⚡SPAN 주입 [d'=0.92s / d_lead=4.20s]: (tool result) {"bus routes": [{"number": "333", "duration": "30 minute
-   107.79s  user  발화 시작: 알겠습니다.
-   107.79s  agent 발화 끝
-   108.26s  agent 발화 시작: [curious] 혹시 여행 계획은 더 있으신가요? 서울에서 꼭 가봐야 할 곳들이 정말 많거든요.
-   108.26s  user  발화 끝
-   114.32s  user  발화 시작: 글쎄요, 아직 잘 모르겠어요.
-   114.32s  agent 발화 끝
-   116.19s  agent 발화 시작: [sigh] 괜찮아요. 천천히 생각해보시고, 궁금한 점이 있으면 언제든지 저에게 물어보세요. 제가 도와드릴게
-   116.19s  user  발화 끝
-   121.79s  agent 발화 끝
+     0.00s  user  발화 시작: 문학 작품에서 산스크리트어 어휘가 거의 고려되지 않는 곳은 어디인가요?
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     3.94s  agent 발화 시작: <ret> 죄송해요, 그 질문에 대한 정보를 찾을 수 없었어요. [sigh] 혹시 다른 걸 여쭤보실까요?
+     3.94s  user  발화 끝
+     4.85s  ⚡SPAN 주입 [d'=1.14s / d_lead=5.70s]: (no information found)
+     9.64s  user  발화 시작: 네.
+     9.64s  agent 발화 끝
+    10.08s  user  발화 시작: 아, 네. 그럼 서울에서 가장 인기 있는 카페를 알려주세요.
+    10.08s  user  발화 끝
+    14.02s  agent 발화 시작: 맞아요.
+    14.02s  user  발화 끝
+    14.24s  <ret> 발화 (turn5 첫 프레임)
+    14.46s  agent 발화 시작: <ret> 서울에서 가장 인기 있는 카페는 안국역에 있는 '카페 어니언 안국'이에요. 평점은 사 점 오점이고
+    14.46s  agent 발화 끝
+    14.83s  ⚡SPAN 주입 [d'=0.58s / d_lead=8.76s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
+    23.22s  user  발화 시작: 아, 카페 어니언… 거기 가보고 싶었는데, 혹시 지금 거기가 얼마나 붐비는지 알 수 있을까요?
+    23.22s  agent 발화 끝
+    29.13s  <ret> 발화 (turn7 첫 프레임)
+    29.36s  agent 발화 시작: <ret> 네, '카페 어니언 안국'은 지금 사십오분에서 육십분 정도 대기 시간이 있어요.
+    29.36s  user  발화 끝
+    30.36s  ⚡SPAN 주입 [d'=1.23s / d_lead=4.82s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
+    34.18s  user  발화 시작: 정말요?
+    34.18s  agent 발화 끝
+    34.62s  user  발화 시작: 으음… 기다리려면 좀 힘들 것 같네요. 그럼 다른 조용한 카페는 없을까요?
+    34.62s  user  발화 끝
+    39.43s  agent 발화 시작: 네.
+    39.43s  user  발화 끝
+    39.87s  agent 발화 시작: 조용한 카페를 찾으시는군요. 어떤 분위기를 좋아하세요? 아니면 특정 구역을 선호하시나요?
+    39.87s  agent 발화 끝
+    44.25s  user  발화 시작: 음… 북촌 한옥마을 근처에 조용한 곳이 있으면 좋겠어요.
+    44.25s  agent 발화 끝
+    47.24s  <ret> 발화 (turn13 첫 프레임)
+    47.76s  agent 발화 시작: <ret> 북촌 한옥마을 근처에는 '뜨란'이라는 카페가 있어요. 평점은 사 점 삼점이고, 조용한 분위기로 알
+    47.76s  user  발화 끝
+    48.66s  ⚡SPAN 주입 [d'=1.41s / d_lead=6.13s]: (tool result) {"restaurants": [{"name": "Tteuran", "address": "10, Buk
+    53.89s  user  발화 시작: 뜨란… 이름이 예쁘네요. 거기 가는 길을 알려줄 수 있을까요?
+    53.89s  agent 발화 끝
+    57.84s  agent 발화 시작: 아.
+    57.84s  user  발화 끝
+    58.24s  <ret> 발화 (turn16 첫 프레임)
+    58.28s  agent 발화 시작: <ret> 현재 위치에서 북쪽으로 이동해서 북촌 사길로 좌회전하면, 오른쪽에 '뜨란'이 보일 거예요.
+    58.28s  agent 발화 끝
+    58.54s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.82s]: (tool result) {"directions": "Head north on current street, turn left 
+    63.10s  user  발화 시작: 아, 알겠습니다. 정말 고마워요, 테아르.
+    63.10s  agent 발화 끝
+    65.29s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁘네요.
+    65.29s  user  발화 끝
+    67.04s  user  발화 시작: 아니요, 오늘은 이만하면 충분해요.
+    67.04s  agent 발화 끝
+    68.79s  agent 발화 시작: 네, 그럼 좋은 하루 보내세요.
+    68.79s  user  발화 끝
+    70.98s  agent 발화 끝

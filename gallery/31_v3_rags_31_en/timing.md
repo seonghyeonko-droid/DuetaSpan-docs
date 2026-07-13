@@ -4,61 +4,63 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Lena",
+#     "name": "Louis",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-04-19",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-02-28",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-02-23",
+#       "date": "2026-05-01",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-12-26",
+#       "date": "2026-03-04",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-12-06",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-01",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-21",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: I'm wondering, what does organizational development aim to h
-     3.77s  <ret> 발화 (turn1 첫 프레임)
-     4.39s  agent 발화 시작: <ret> [curious] It aims to help companies effectively manage
-     4.39s  user  발화 끝
-     5.27s  ⚡SPAN 주입 [d'=1.50s / d_lead=13.56s]: Organizational development effectively manages conflict, improves comm
-    17.95s  agent 발화 끝
+     0.00s  user  발화 시작: Who are the babies in that movie everyone’s obsessed with?
+     3.60s  <ret> 발화 (turn2 첫 프레임)
+     3.80s  agent 발화 시작: Yeah.
+     3.80s  user  발화 끝
+     4.18s  agent 발화 시작: <ret> Well, in *Home Alone*, the little boy left behind is K
+     4.18s  agent 발화 끝
+     4.50s  ⚡SPAN 주입 [d'=1.31s / d_lead=10.65s]: In the 1990 film *Home Alone*, the children left behind are Kevin McCa
+    14.83s  agent 발화 끝

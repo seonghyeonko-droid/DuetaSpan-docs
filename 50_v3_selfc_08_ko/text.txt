@@ -1,93 +1,84 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 호기심 많고 공감적인 웰니스 코치인 코이아입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 통해 사람들을 돕는 호기심 많고 공감적인 라이프 코치 주난입니다. 호흡 기법, 간단한 접지 운동, 기본적인 수면 위생에 대해 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시(moshi)이기도 합니다. 위에 언급된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "도우",
+    "name": "현온",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2026-05-22",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-12-19",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-12-06",
+      "date": "2026-05-27",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-05-17",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-05-10",
+      "category": "home",
+      "text": "User's home address is 서울 종로구 세종대로 175."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-20",
-      "title": "Setting up a home network",
+      "date": "2026-02-08",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-14",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-16",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 코드 생성 마무리하고 실험 비원 이십삼의 테스트 파일도 만들어 ⟨ret@4.69s⟩ 줘.
-[  4.99s][moshi] 실험 ⟦⚡SPAN@5.99s: (tool result) File 'experiment bee_123 test.py' created successfully.⟧ 비원 이십삼 테스트 파일 생성이 완료되었습니다.
-      CALL: {"function": "create_file", "arguments": {"filename": "experiment_bee_123_test.py", "content": ""}}
-[  8.49s][user ] «backchannel» 그렇군요.
-[  8.99s][user ] 음… 그럼 이번 주 토요일에 서울에서…
-[ 11.98s][user ] …가장 인기 있는 레스토랑 좀 ⟨ret@14.48s⟩ 찾아줄래?
-[ 14.98s][moshi] ⟦⚡SPAN@14.94s: (tool result) {"restaurants": [{"name": "Gaon", "cuisine": "Korean", "rating": 4.7, "price tier": "$$$$", "add⟧ 서울에서 가장 인기 있는 레스토랑은 가온과 정식입니다. 가온은 한국 요리 전문점으로 평점이 사 점 칠점이고, 가격대는 고급입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "date": "2026-07-11"}}
-[ 23.47s][user ] «backchannel» 그렇죠.
-[ 23.97s][moshi] 정식도 한국 요리 전문점이고 평점은 사 점 육점이며 가격대는 조금 비싼 편입니다.
-[ 29.96s][user ] 가온이 좀 더 자세히 알고 싶어. ⟨ret@32.95s⟩
-[ 32.96s][moshi] 가온은 ⟦⚡SPAN@33.79s: Gaon is a Michelin three-star Korean restaurant in Seoul, South Korea, known for its modern interpretation of ⟧ 서울 강남구 언주로 구에 위치한 미슐랭 삼스타 한국 레스토랑입니다 — 전통 한국 요리를 현대적으로 재해석한 요리를 선보이며, 제철 재료와 혁신적인 조리법을 사용하여 한국의 맛과 정교한 플레이팅에 중점을 둡니다.
-[ 47.44s][user ] —그런데 혹시 거기 예약 가능해? ⟨ret@49.75s⟩
-[ 49.93s][moshi] 확인 ⟦⚡SPAN@50.99s: (tool result) Reservation confirmed for Gaon on July 11, 2026 at 7:00 PM. Confirmation ID: GAON20260711700.⟧ 번호는 지 에이 오 엔 이 공 이 육 공 칠 일 일 칠 공 공입니다.
-      CALL: {"function": "Hotels_2_ReserveHotel", "arguments": {"hotel_name": "Gaon", "date": "2026-07-11", "time": "19:00"}}
-[ 58.42s][user ] 아, 고마워! 그럼 혹시 내일 모레 부산 날씨는 어때?
-[ 62.91s][moshi] «backchannel» 네네.
-[ 63.41s][moshi] ⟨ret@63.26s⟩ 이천이십육년 ⟦⚡SPAN@64.60s: (tool result) The weather in Busan on July 12, 2026 will be 28.5°C, humidity 68%, wind 7.2 km/h, and partly cl⟧ 칠월 십이일 부산 날씨는 이십팔 점 오도, 습도 육십팔퍼센트, 풍속은 시속 칠 점 이킬로미터이고 부분적으로 구름이 많을 것으로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Busan", "date": "2026-07-12"}}
+[  0.00s][user ] 샌프란시스코 에이 엠 씨 Metreon 십육에서 상영하는 다큐멘터리가 ⟨ret@3.60s⟩ 있나요?
+[  3.91s][moshi] 샌프란시스코 ⟦⚡SPAN@4.91s: (tool result) There are three documentaries playing at AMC Metreon 16 in San Francisco: “Deep Field,” “The Ter⟧ 에이 엠 씨 Metreon 십육에서는 “Deep Field”, “The Territory”, “Fire of Love” 이렇게 세 편의 다큐멘터리가 상영 중이에요.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"city": "San Francisco", "theater": "AMC Metreon 16", "genre": "documentary"}}
+[ 12.16s][user ] «backchannel» 오.
+[ 12.59s][user ] “Fire of Love”는 몇 시에 ⟨ret@14.70s⟩ 상영하나요?
+[ 15.20s][moshi] ⟦⚡SPAN@15.16s: (tool result) “Fire of Love” is showing at AMC Metreon 16 in San Francisco at 1:30 PM, 4:15 PM, and 7:00 PM to⟧ “Fire of Love”는 오늘 에이 엠 씨 Metreon 십육에서 오후 한시 삼십분, 네시 십오분, 일곱시에 상영돼요.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Fire of Love", "theater": "AMC Metreon 16", "city": "San Francisco"}}
+[ 22.15s][user ] «backchannel» 음.
+[ 22.58s][user ] 네시 십오분 상영 티켓 두 장 예매해 ⟨ret@25.80s⟩ 주세요.
+[ 26.06s][moshi] 네, ⟦⚡SPAN@26.97s: (tool result) Confirmation: Your tickets for “Fire of Love” at AMC Metreon 16 on July 10, 2026 at 4:15 PM are ⟧ “Fire of Love” 에이 엠 씨 Metreon 십육 오늘 오후 네시 십오분 두 자리 예매 완료됐습니다. 주문 번호는 팔 육 칠 오 삼 공 구예요.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Fire of Love", "theater": "AMC Metreon 16", "city": "San Francisco", "time": "4:15 PM", "quantity": 2}}
+[ 37.35s][user ] «backchannel» 음.
+[ 37.78s][user ] 혹시 근처에 맛있는 저녁 식사할 곳도 추천해 줄 수 있나요? ⟨ret@41.91s⟩
+[ 42.12s][moshi] 에이 ⟦⚡SPAN@42.79s: (tool result) Several restaurants are near AMC Metreon 16 in San Francisco, including “Ozora Sushi,” “Super Du⟧ 엠 씨 Metreon 십육 근처에는 “Ozora Sushi”, “Super Duper Burgers”, “Marufuku Ramen” 같은 맛집들이 있어요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "AMC Metreon 16, San Francisco", "cuisine": null}}
+[ 49.07s][user ] «backchannel» 우와.
+[ 49.51s][user ] 라멘집은 어떤 분위기예요? ⟨ret@50.63s⟩
+[ 50.81s][moshi] ⟦⚡SPAN@50.75s: Marufuku Ramen is a popular ramen restaurant known for its Hakata-style tonkotsu ramen and lively atmosphere, ⟧ Marufuku Ramen은 하카타 스타일 돈코츠 라멘으로 유명하고, 활기찬 분위기의 인기 라멘집이에요 — 늘 줄이 길다고 합니다.
+[ 57.76s][user ] … 혹시 그 라멘집에서 혼자 먹어도 괜찮을까요? ⟨ret@60.77s⟩
+[ 60.80s][moshi] ⟦⚡SPAN@60.87s: Marufuku Ramen has counter seating available, making it suitable for solo diners, and is generally welcoming t⟧ Marufuku Ramen은 혼자 식사하기 좋은 바 좌석도 마련되어 있고, 혼자 오시는 분들도 흔히 있어요.
+[ 66.88s][user ] «backchannel» 응.
+[ 67.31s][user ] 그럼 라멘집까지 가는 가장 빠른 길은 어떻게 되나요?
+[ 70.79s][moshi] «backchannel» 네.
+[ 71.22s][moshi] ⟨ret@70.81s⟩ ⟦⚡SPAN@71.54s: (tool result) Walking directions from AMC Metreon 16 to Marufuku Ramen: 0.4 miles, approximately 8 minutes. He⟧ 에이 엠 씨 Metreon 십육에서 Marufuku Ramen까지는 도보로 영 점 사마일, 약 팔분 정도 걸립니다. 미션 스트리트 쪽으로 사번가를 따라 가시면 돼요.
+      CALL: {"function": "map_directions", "arguments": {"origin": "AMC Metreon 16, San Francisco", "destination": "Marufuku Ramen, San Francisco", "mode": "walking"}}
+[ 80.77s][moshi] 맛있는 라멘 드시고 즐거운 시간 보내세요!

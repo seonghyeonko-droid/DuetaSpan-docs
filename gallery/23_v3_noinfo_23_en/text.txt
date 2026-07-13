@@ -1,10 +1,10 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Drimi, a kind and steady wellness coach who helps people with big life transitions. <system>
+SYSTEM: <system> You are Breli, a warm and attentive counselor who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Remy",
+    "name": "Olivia",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,45 +12,45 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2026-04-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2026-04-12",
+      "date": "2026-06-17",
       "category": "pet",
       "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-03-31",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-06-12",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-03-27",
+      "date": "2026-06-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-05-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-04-18",
       "category": "home",
-      "text": "User's home address is 183 Elm Street."
+      "text": "User's home address is 696 Birch Road."
     },
     {
-      "date": "2026-02-11",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "date": "2026-02-19",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-12",
+      "date": "2026-04-23",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -58,63 +58,45 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-07",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-18",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you have the contact information for Lee Sun-hee? I need her phone number.
-[  5.28s][moshi] «backchannel» Mm-hmm.
-[  5.66s][moshi] ⟨ret@5.32s⟩ I’m sorry, ⟦⚡SPAN@6.65s: (no information found)⟧ I couldn’t find a publicly listed phone number for Lee Sun-hee. It appears that information isn’t available.
-      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee phone number"}}
-[ 12.82s][user ] «backchannel» Right.
-[ 13.20s][user ] Oh, okay. That's too bad.
-[ 15.09s][moshi] It happens sometimes; many people keep their contact details private.
-[ 18.86s][user ] Yes, actually. What's the weather like in Busan right ⟨ret@22.22s⟩ now?
-[ 22.63s][moshi] ⟦⚡SPAN@22.93s: (tool result) 26.3°C, humidity 68%, wind 3.2 km/h⟧ The weather in Busan is currently 26.3 degrees Celsius, with 68% humidity and a wind speed of 3.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
-[ 30.55s][user ] «backchannel» Yeah.
-[ 30.93s][user ] Hmm, nice.
-[ 31.68s][moshi] Busan sounds lovely! It’s a beautiful city.
-[ 34.32s][user ] «backchannel» Yeah.
-[ 34.70s][user ] I’m thinking about going there next week. Can you find me some good ⟨ret@39.46s⟩ restaurants?
-[ 39.98s][moshi] ⟦⚡SPAN@39.76s: (tool result) Busan is known for its fresh seafood and Dwaeji Gukbap (pork and rice soup); Jagalchi Market off⟧ Busan is famous for its seafood and Dwaeji Gukbap. Jagalchi Market has many excellent restaurants.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
-[ 45.64s][user ] «backchannel» Okay.
-[ 46.02s][moshi] It's a very popular spot with both locals and tourists! I can look up specific restaurants if you’d like.
-[ 53.18s][user ] «backchannel» Mhm.
-[ 53.56s][user ] Yes, please. Find me a restaurant near Haeundae ⟨ret@56.43s⟩ Beach.
-[ 56.96s][moshi] ⟦⚡SPAN@56.90s: (tool result) Geoje Fish Center Haeundae serves fresh seafood; it has 4.2 stars from 850 reviews.⟧ Geoje Fish Center Haeundae serves fresh seafood and has a rating of 4.2 stars from 850 reviews.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Haeundae Beach, Busan"}}
-[ 63.37s][user ] That sounds perfect. Can you make a reservation for two people next Tuesday at 7 PM? ⟨ret@69.27s⟩
-[ 69.40s][moshi] ⟦⚡SPAN@69.80s: (tool result) Reservation confirmed for 2 people at Geoje Fish Center Haeundae on July 14, 2026 at 7:00 PM. Co⟧ I’ve confirmed your reservation for two people at Geoje Fish Center Haeundae next Tuesday at 7 PM. Your confirmation ID is GH7892.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Geoje Fish Center Haeundae", "date": "2026-07-14", "time": "19:00", "party_size": 2}}
-[ 77.70s][user ] «backchannel» Uh-huh.
-[ 78.08s][user ] Wonderful! Thank you.
-[ 79.21s][moshi] You’re very welcome!
-[ 80.34s][user ] I also need to book a hotel in Seoul. Something affordable. ⟨ret@84.35s⟩
-[ 84.49s][moshi] ⟦⚡SPAN@84.45s: (tool result) Hotel Skypark Central Myeongdong offers rooms from $65 per night; it has a 7.8 guest rating.⟧ Hotel Skypark Central Myeongdong has rooms starting at 65 dollars a night and a guest rating of 7.8.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "price_tier": "budget"}}
-[ 91.28s][user ] That sounds good. Can you show me ⟨ret@94.10s⟩ some pictures?
-[ 94.68s][moshi] ⟦⚡SPAN@94.62s: (tool result) Hotel Skypark Central Myeongdong offers modern rooms and is close to shopping areas; [source: bo⟧ Hotel Skypark Central Myeongdong offers modern rooms and is conveniently located near shopping areas.
-      CALL: {"function": "web_search", "arguments": {"query": "Hotel Skypark Central Myeongdong images"}}
-[ 99.96s][user ] «backchannel» Yeah.
-[100.33s][user ] Okay, that looks nice.
-[101.84s][moshi] It seems like a comfortable and well-located option! Are you thinking of booking it?
-[107.12s][user ] Yes, let's book it for three nights, starting next ⟨ret@110.46s⟩ Friday.
-[110.90s][moshi] I’ve booked ⟦⚡SPAN@111.85s: (tool result) Booking confirmed at Hotel Skypark Central Myeongdong from July 17 to July 20, 2026. Confirmatio⟧ a three-night stay at Hotel Skypark Central Myeongdong, starting next Friday. Your confirmation ID is SKP2026.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel": "Hotel Skypark Central Myeongdong", "check_in": "2026-07-17", "nights": 3}}
-[117.69s][user ] «backchannel» Yeah.
-[118.06s][user ] Great!
-[118.44s][moshi] Wonderful! Everything seems to be coming together nicely for your trip.
-[122.59s][user ] I need to set an alarm for 6 AM next ⟨ret@126.28s⟩ Saturday.
-[126.74s][moshi] ⟦⚡SPAN@127.06s: (tool result) Alarm set for 6:00 AM on Saturday, July 18, 2026.⟧ An alarm is set for 6:00 AM next Saturday, July 18th.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:00", "date": "2026-07-18"}}
-[130.89s][user ] Perfect. That's all for now.
-[132.77s][moshi] Wonderful! I’m glad I could assist you.
+[  0.00s][user ] Do you have the contact information for Professor Anya Sharma? I met her at a conference last year.
+[  6.19s][moshi] «backchannel» Yeah.
+[  6.54s][moshi] ⟨ret@6.20s⟩ I’m sorry, ⟦⚡SPAN@7.53s: (no information found)⟧ I couldn’t find any contact information for Professor Anya Sharma. It seems that information isn’t publicly available.
+[ 13.08s][user ] «backchannel» Yeah, yeah.
+[ 13.77s][user ] Oh, that’s a shame. Well, could you remind me what the Pomodoro Technique is?
+[ 18.58s][moshi] «backchannel» Yeah.
+[ 18.93s][moshi] «interrupted» The Pomodoro Technique is a time management method—
+[ 21.68s][user ] «interrupts_prev» …does it really help with procrastination?
+[ 23.75s][moshi] Yes, it can be very effective. It breaks down work into focused 25-minute intervals, separated by short breaks.
+[ 29.94s][user ] «backchannel» Right.
+[ 30.29s][moshi] It's designed to improve mental agility and focus, reducing that feeling of being overwhelmed that often fuels procrastination.
+[ 36.48s][user ] Sounds interesting. Can you find me some good study spots near the university ⟨ret@41.06s⟩ library?
+[ 41.30s][moshi] ⟦⚡SPAN@41.77s: (tool result) Restaurants: Cafe Luna (4.5 stars, 0.2 km), The Daily Grind (4.2 stars, 0.3 km), Study Hub (4.7 ⟧ There are several cafes and study spaces near the library. Cafe Luna is just 0.2 kilometers away and has a 4.5-star rating. The Daily Grind and Study Hub are also good options, if you’d like more details on either?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "near the university library"}}
+[ 54.72s][user ] Tell me more about ⟨ret@56.24s⟩ Study Hub.
+[ 56.79s][moshi] ⟦⚡SPAN@56.73s: (tool result) Study Hub: 4.7 stars, 0.5 km from university library, offers free Wi-Fi, quiet study rooms, and ⟧ Study Hub has a 4.7-star rating and is 0.5 kilometers from the library. They offer free Wi-Fi, quiet study rooms, and are open until 10 PM.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "Study Hub"}}
+[ 65.73s][user ] «backchannel» Oh.
+[ 66.08s][user ] That sounds perfect! Could you set an…
+[ 68.49s][user ] …alarm for me for 7:00 AM tomorrow?
+[ 70.90s][moshi] «backchannel» Right.
+[ 71.24s][moshi] ⟨ret@71.02s⟩ I’ve set ⟦⚡SPAN@72.21s: (tool result) Alarm set for 7:00 AM tomorrow. Confirmation ID: 928745.⟧ an alarm for 7:00 AM tomorrow. Your confirmation ID is 928745.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:00 AM"}}

@@ -4,53 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Noa",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-01",
+#       "category": "home",
+#       "text": "User's home address is 299 Oak Avenue."
 #     },
 #     {
-#       "date": "2026-03-11",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-05-18",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-04-16",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
 #       "date": "2026-03-01",
-#       "category": "home",
-#       "text": "User's home address is 806 Oak Avenue."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-02-26",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-20",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2026-02-07",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is planning a trip to Kyoto in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-05-29",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-28",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -61,11 +69,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Who plays chuck the…
-     1.92s  user  발화 시작: …evil sandwich making guy?
-     1.92s  user  발화 끝
-     3.58s  <ret> 발화 (turn2 첫 프레임)
-     3.84s  agent 발화 시작: <ret> [happy] Oh, that's a fun question! Frederick “Fred” St
-     3.84s  user  발화 끝
-     4.38s  ⚡SPAN 주입 [d'=0.80s / d_lead=10.57s]: Frederick "Fred" Stoller is an American actor, comedian, and voice act
-    14.42s  agent 발화 끝
+     0.00s  user  발화 시작: When did Dragon Ball Super episode one hundred fifteen come 
+     4.51s  <ret> 발화 (turn1 첫 프레임)
+     4.77s  agent 발화 시작: <ret> That episode originally aired on November twelfth, 201
+     4.77s  user  발화 끝
+     5.31s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.81s]: Dragon Ball Super episode 115, titled "With Great Joy! The Saiyans' Re
+    12.58s  agent 발화 끝

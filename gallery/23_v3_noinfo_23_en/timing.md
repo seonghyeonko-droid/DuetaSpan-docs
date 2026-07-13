@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Remy",
+#     "name": "Olivia",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,45 +12,45 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-04-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-04-12",
+#       "date": "2026-06-17",
 #       "category": "pet",
 #       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-31",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-12",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-03-27",
+#       "date": "2026-06-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-05-22",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-04-18",
 #       "category": "home",
-#       "text": "User's home address is 183 Elm Street."
+#       "text": "User's home address is 696 Birch Road."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "date": "2026-02-19",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-12",
+#       "date": "2026-04-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,113 +58,71 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 I’m thinking about going there nex | S3 I also need to book a hotel in Seo | S4 Great!
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 …does it really help with procrast | S3 Tell me more about Study Hub. | S4 …alarm for me for 7:00 AM tomorrow
 
-     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee? I need 
-     5.28s  agent 발화 시작: Mm-hmm.
-     5.28s  user  발화 끝
-     5.32s  <ret> 발화 (turn2 첫 프레임)
-     5.66s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
-     5.66s  agent 발화 끝
-     6.65s  ⚡SPAN 주입 [d'=1.33s / d_lead=7.17s]: (no information found)
-    12.82s  user  발화 시작: Right.
-    12.82s  agent 발화 끝
-    13.20s  user  발화 시작: Oh, okay. That's too bad.
-    13.20s  user  발화 끝
-    15.09s  agent 발화 시작: It happens sometimes; many people keep their contact details
-    15.09s  user  발화 끝
-    18.86s  user  발화 시작: Yes, actually. What's the weather like in Busan right now?
-    18.86s  agent 발화 끝
-    22.22s  <ret> 발화 (turn7 첫 프레임)
-    22.63s  agent 발화 시작: <ret> The weather in Busan is currently 26.3 degrees Celsius
-    22.63s  user  발화 끝
-    22.93s  ⚡SPAN 주입 [d'=0.71s / d_lead=7.92s]: (tool result) 26.3°C, humidity 68%, wind 3.2 km/h
-    30.55s  user  발화 시작: Yeah.
-    30.55s  agent 발화 끝
-    30.93s  user  발화 시작: Hmm, nice.
-    30.93s  user  발화 끝
-    31.68s  agent 발화 시작: Busan sounds lovely! It’s a beautiful city.
-    31.68s  user  발화 끝
-    34.32s  user  발화 시작: Yeah.
-    34.32s  agent 발화 끝
-    34.70s  user  발화 시작: I’m thinking about going there next week. Can you find me so
-    34.70s  user  발화 끝
-    39.46s  <ret> 발화 (turn13 첫 프레임)
-    39.76s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.66s]: (tool result) Busan is known for its fresh seafood and Dwaeji Gukbap (
-    39.98s  agent 발화 시작: <ret> Busan is famous for its seafood and Dwaeji Gukbap. Jag
-    39.98s  user  발화 끝
-    45.64s  user  발화 시작: Okay.
-    45.64s  agent 발화 끝
-    46.02s  agent 발화 시작: It's a very popular spot with both locals and tourists! I ca
-    46.02s  user  발화 끝
-    53.18s  user  발화 시작: Mhm.
-    53.18s  agent 발화 끝
-    53.56s  user  발화 시작: Yes, please. Find me a restaurant near Haeundae Beach.
-    53.56s  user  발화 끝
-    56.43s  <ret> 발화 (turn18 첫 프레임)
-    56.90s  ⚡SPAN 주입 [d'=1.42s / d_lead=6.41s]: (tool result) Geoje Fish Center Haeundae serves fresh seafood; it has 
-    56.96s  agent 발화 시작: <ret> Geoje Fish Center Haeundae serves fresh seafood and ha
-    56.96s  user  발화 끝
-    63.37s  user  발화 시작: That sounds perfect. Can you make a reservation for two peop
-    63.37s  agent 발화 끝
-    69.27s  <ret> 발화 (turn20 첫 프레임)
-    69.40s  agent 발화 시작: <ret> I’ve confirmed your reservation for two people at Geoj
-    69.40s  user  발화 끝
-    69.80s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.30s]: (tool result) Reservation confirmed for 2 people at Geoje Fish Center 
-    77.70s  user  발화 시작: Uh-huh.
-    77.70s  agent 발화 끝
-    78.08s  user  발화 시작: Wonderful! Thank you.
-    78.08s  user  발화 끝
-    79.21s  agent 발화 시작: You’re very welcome!
-    79.21s  user  발화 끝
-    80.34s  user  발화 시작: I also need to book a hotel in Seoul. Something affordable.
-    80.34s  agent 발화 끝
-    84.35s  <ret> 발화 (turn25 첫 프레임)
-    84.45s  ⚡SPAN 주입 [d'=1.26s / d_lead=6.79s]: (tool result) Hotel Skypark Central Myeongdong offers rooms from $65 p
-    84.49s  agent 발화 시작: <ret> Hotel Skypark Central Myeongdong has rooms starting at
-    84.49s  user  발화 끝
-    91.28s  user  발화 시작: That sounds good. Can you show me some pictures?
-    91.28s  agent 발화 끝
-    94.10s  <ret> 발화 (turn27 첫 프레임)
-    94.62s  ⚡SPAN 주입 [d'=1.06s / d_lead=5.28s]: (tool result) Hotel Skypark Central Myeongdong offers modern rooms and
-    94.68s  agent 발화 시작: <ret> Hotel Skypark Central Myeongdong offers modern rooms a
-    94.68s  user  발화 끝
-    99.96s  user  발화 시작: Yeah.
-    99.96s  agent 발화 끝
-   100.33s  user  발화 시작: Okay, that looks nice.
-   100.33s  user  발화 끝
-   101.84s  agent 발화 시작: It seems like a comfortable and well-located option! Are you
-   101.84s  user  발화 끝
-   107.12s  user  발화 시작: Yes, let's book it for three nights, starting next Friday.
-   107.12s  agent 발화 끝
-   110.46s  <ret> 발화 (turn32 첫 프레임)
-   110.90s  agent 발화 시작: <ret> I’ve booked a three-night stay at Hotel Skypark Centra
-   110.90s  user  발화 끝
-   111.85s  ⚡SPAN 주입 [d'=1.39s / d_lead=6.79s]: (tool result) Booking confirmed at Hotel Skypark Central Myeongdong fr
-   117.69s  user  발화 시작: Yeah.
-   117.69s  agent 발화 끝
-   118.06s  user  발화 시작: Great!
-   118.06s  user  발화 끝
-   118.44s  agent 발화 시작: Wonderful! Everything seems to be coming together nicely for
-   118.44s  user  발화 끝
-   122.59s  user  발화 시작: I need to set an alarm for 6 AM next Saturday.
-   122.59s  agent 발화 끝
-   126.28s  <ret> 발화 (turn37 첫 프레임)
-   126.74s  agent 발화 시작: <ret> An alarm is set for 6:00 AM next Saturday, July 18th.
-   126.74s  user  발화 끝
-   127.06s  ⚡SPAN 주입 [d'=0.89s / d_lead=4.15s]: (tool result) Alarm set for 6:00 AM on Saturday, July 18, 2026.
-   130.89s  user  발화 시작: Perfect. That's all for now.
-   130.89s  agent 발화 끝
-   132.77s  agent 발화 시작: Wonderful! I’m glad I could assist you.
-   132.77s  user  발화 끝
-   135.41s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have the contact information for Professor Anya Sharm
+     6.19s  agent 발화 시작: Yeah.
+     6.19s  user  발화 끝
+     6.20s  <ret> 발화 (turn2 첫 프레임)
+     6.54s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any contact information for
+     6.54s  agent 발화 끝
+     7.53s  ⚡SPAN 주입 [d'=1.33s / d_lead=6.54s]: (no information found)
+    13.08s  user  발화 시작: Yeah, yeah.
+    13.08s  agent 발화 끝
+    13.77s  user  발화 시작: Oh, that’s a shame. Well, could you remind me what the Pomod
+    13.77s  user  발화 끝
+    18.58s  agent 발화 시작: Yeah.
+    18.58s  user  발화 끝
+    18.93s  agent 발화 시작: The Pomodoro Technique is a time management method—
+    18.93s  agent 발화 끝
+    21.68s  user  발화 시작: …does it really help with procrastination?
+    21.68s  agent 발화 끝
+    23.75s  agent 발화 시작: Yes, it can be very effective. It breaks down work into focu
+    23.75s  user  발화 끝
+    29.94s  user  발화 시작: Right.
+    29.94s  agent 발화 끝
+    30.29s  agent 발화 시작: It's designed to improve mental agility and focus, reducing 
+    30.29s  user  발화 끝
+    36.48s  user  발화 시작: Sounds interesting. Can you find me some good study spots ne
+    36.48s  agent 발화 끝
+    41.06s  <ret> 발화 (turn12 첫 프레임)
+    41.30s  agent 발화 시작: <ret> There are several cafes and study spaces near the libr
+    41.30s  user  발화 끝
+    41.77s  ⚡SPAN 주입 [d'=0.71s / d_lead=13.42s]: (tool result) Restaurants: Cafe Luna (4.5 stars, 0.2 km), The Daily Gr
+    54.72s  user  발화 시작: Tell me more about Study Hub.
+    54.72s  agent 발화 끝
+    56.24s  <ret> 발화 (turn14 첫 프레임)
+    56.73s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.95s]: (tool result) Study Hub: 4.7 stars, 0.5 km from university library, of
+    56.79s  agent 발화 시작: <ret> Study Hub has a 4.7-star rating and is 0.5 kilometers 
+    56.79s  user  발화 끝
+    65.73s  user  발화 시작: Oh.
+    65.73s  agent 발화 끝
+    66.08s  user  발화 시작: That sounds perfect! Could you set an…
+    66.08s  user  발화 끝
+    68.49s  user  발화 시작: …alarm for me for 7:00 AM tomorrow?
+    68.49s  user  발화 끝
+    70.90s  agent 발화 시작: Right.
+    70.90s  user  발화 끝
+    71.02s  <ret> 발화 (turn19 첫 프레임)
+    71.24s  agent 발화 시작: <ret> I’ve set an alarm for 7:00 AM tomorrow. Your confirmat
+    71.24s  agent 발화 끝
+    72.21s  ⚡SPAN 주입 [d'=1.23s / d_lead=4.47s]: (tool result) Alarm set for 7:00 AM tomorrow. Confirmation ID: 928745.
+    75.72s  agent 발화 끝

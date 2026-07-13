@@ -1,90 +1,77 @@
 v3_mcp_01_ko src=mcp style=v2
-SYSTEM: <system> 당신은 프리오이며, 공부 및 동기 부여와 관련하여 사람들을 돕는 부드럽고 사색적인 상담가입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제에 대해 사람들을 돕는 호기심 많고 공감적인 웰니스 코치 페리르입니다. 당신은 적극적 경청, 친절한 경계 설정, 갈등이 고조되기 전에 진정시키는 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "재람",
+    "name": "채우",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2026-06-26",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-06-24",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-06-03",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-05-16",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in March."
-    },
-    {
-      "date": "2026-04-03",
+      "date": "2026-06-11",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-03-27",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
+      "date": "2026-03-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-26",
-      "title": "Apartment hunting downtown",
+      "date": "2026-04-04",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 심리 상담사 좀 찾아줘. 콜로라도 덴버에서, 현금으로 결제할 수 있는 곳으로.
-[  5.35s][moshi] «backchannel» 아.
-[  5.83s][moshi] ⟨ret@5.67s⟩ 덴버에서 현금 ⟦⚡SPAN@7.06s: (tool result) {"provider name": "Dr. Eleanor Vance", "address": "1445 Pearl St, Denver, CO 80202", "phone numb⟧ 결제가 가능한 심리 상담사로 엘리너 밴스 박사님을 찾았습니다. 주소는 천사백사십오 Pearl St이고, 전화번호는 삼 공 삼 오 오 오 일 이 일 이입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Denver Colorado", "category": "psychologist", "payment_method": "cash"}}
-[ 17.98s][user ] «backchannel» 아.
-[ 18.47s][user ] 그분, 평일 말고 주말에도 ⟨ret@20.36s⟩ 진료하시나?
-[ 20.90s][moshi] ⟦⚡SPAN@20.97s: (tool result) {"availability": "Saturdays 10am-2pm"}⟧ 엘리너 밴스 박사님은 토요일 오전 열시부터 오후 두시까지 진료를 하십니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Eleanor Vance", "query": "weekend availability"}}
-[ 25.76s][user ] «backchannel» 우와.
-[ 26.24s][user ] 토요일에 예약하려면 어떻게 해야 해?
-[ 28.67s][moshi] 예약은 전화로 직접 하셔야 합니다. 삼 공 삼 오 오 오 일 이 일 이로 연락해 보세요.
-[ 36.93s][user ] «backchannel» 진짜?
-[ 37.42s][user ] 혹시 다른 상담사도 알아봐 줄 수 있어? 좀 더 저렴한 ⟨ret@42.37s⟩ 곳으로.
-[ 42.77s][moshi] ⟦⚡SPAN@43.15s: (tool result) {"provider name": "Community Mental Health Center", "address": "2000 Stout St, Denver, CO 80202"⟧ 덴버 커뮤니티 정신 건강 센터는 보험이나 소득 수준에 따른 요금 조정이 가능하며, 평일 오전 여덟시부터 오후 여섯시까지 진료합니다. 전화번호는 삼 공 삼 육 이 팔 삼 이 공 공입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Denver Colorado", "category": "psychologist", "price_range": "budget"}}
-[ 56.86s][user ] 슬라이딩 스케일이 정확히 뭔데?
-[ 58.80s][moshi] «interrupted» 슬라이딩 스케일은 개인의 소득에 따라 상담료를 조정해 주는 제도입니다—
-[ 63.18s][user ] «interrupts_prev» …혹시 그쪽은 예약이 얼마나 밀려있어? 지금 당장 예약하려면 얼마나 기다려야 ⟨ret@68.19s⟩ 할까?
-[ 68.52s][moshi] ⟦⚡SPAN@69.09s: (tool result) {"wait time": "approximately 2 weeks"}⟧ 커뮤니티 정신 건강 센터는 현재 예약 대기 시간이 약 이주 정도입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Community Mental Health Center", "query": "wait time"}}
-[ 73.87s][user ] 이주나 기다려야 한다고? 음……
-[ 75.81s][user ] …그럼 다른 곳은 어때?
-[ 77.76s][moshi] 다른 상담사를 찾아볼까요? 어떤 조건이 더 중요하신가요?
-[ 81.16s][user ] 그냥 제일 빨리 예약할 수 있는 곳으로 찾아줘. 가격은 상관없어. ⟨ret@85.90s⟩
-[ 86.02s][moshi] ⟦⚡SPAN@86.27s: (tool result) {"provider name": "Dr. James Riley", "address": "5500 Leetsdale Dr, Denver, CO 80246", "phone nu⟧ 제임스 라일리 박사님은 지금 당장 예약이 가능합니다. 전화번호는 삼 공 삼 삼 이 공 이 이 이 이이고, 주소는 오천오백 Leetsdale Dr입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Denver Colorado", "category": "psychologist", "priority": "fastest appointment"}}
-[ 96.71s][moshi] 바로 예약할 수 있다는 점이 좋으시겠네요.
+[  0.00s][user ] 있잖아, 페리르, 웹사이트에서 어떤 요소들을 드래그 앤 드롭하는 걸 도와줄 수 있어?
+[  6.18s][moshi] 어떤 웹사이트이고, 어떤 요소들을 드래그 앤 드롭해야 하는지 알려주시면 도와드릴게요.
+[ 11.33s][user ] 음… 'playground.learningcontainer.com' 이라는 사이트인데, 핸들 요소를 타겟 영역으로 옮겨야 해. 두 번 옮겨야 하는데 가능할까? ⟨ret@18.90s⟩
+[ 19.06s][moshi] playground.learningcontainer.com 이라는 ⟦⚡SPAN@20.28s: (tool result) "Learning Container provides a drag and drop playground for testing and learning. It includes el⟧ 드래그 앤 드롭 연습 사이트군요. 핸들 요소를 타겟 영역으로 두 번 옮기는 걸 도와드릴 수 있어요.
+      CALL: {"function": "tavily-search", "arguments": {"query": "playground.learningcontainer.com drag and drop"}}
+[ 28.33s][user ] 좋아, 그럼 시작해 ⟨ret@29.84s⟩ 봐.
+[ 30.39s][moshi] ⟦⚡SPAN@30.45s: (tool result) {"status": "success", "message": "Drag and drop completed successfully. Handle element dragged t⟧ 네, 핸들 요소를 타겟 영역으로 두 번 드래그 앤 드롭하는 작업을 완료했습니다. 이제 확인해 보실래요?
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "playground.learningcontainer.com", "task": "drag handle element to the target area two times"}}

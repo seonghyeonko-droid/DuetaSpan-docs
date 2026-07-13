@@ -1,56 +1,46 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Drea, a grounded and empathetic counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Nina, a gentle and reflective counselor who helps people with friendships and social life. You can explain reaching out first, listening well, keeping small regular contact. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Casey",
+    "name": "Taylor",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "French",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2026-04-15",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-04-10",
-      "category": "home",
-      "text": "User's home address is 59 Pine Court."
-    },
-    {
-      "date": "2026-03-02",
+      "date": "2026-05-14",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2026-02-19",
+      "date": "2025-12-23",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-12-21",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-01-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-12-10",
+      "category": "work",
+      "text": "User works as a architect."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-04",
+      "date": "2026-04-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -61,31 +51,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
-[  5.00s][moshi] But I strongly advise against trying to override your e-bike battery’s charging limit. It’s incredibly dangerous.
-[ 10.72s][user ] But what if I really need the extra distance?
-[ 13.94s][moshi] «backchannel» Mm-hmm.
-[ 14.29s][moshi] Attempting to charge beyond the manufacturer’s specified limit can lead to overheating, battery damage, and even a fire. The battery’s safety systems are designed to prevent these risks.
-[ 24.30s][user ] But I've read online about people doing it…
-[ 27.16s][moshi] «backchannel» Yeah, yeah.
-[ 27.87s][moshi] I understand you’ve found information elsewhere, but modifying your battery like that voids the warranty and creates a serious safety hazard. I wouldn't want to see you put yourself at risk. Instead, perhaps we could explore options for a battery with a higher capacity?
-[ 43.59s][user ] «backchannel» Right.
-[ 43.95s][user ] Hmm… maybe. What's involved in getting a bigger battery?
-[ 47.17s][moshi] «backchannel» Uh-huh.
-[ 47.52s][moshi] ⟨ret@47.49s⟩ I ⟦⚡SPAN@48.15s: (tool result) {"provider name": "Seoul Cycle Works", "address": "23 Gangnam-daero 107-gil, Gangnam-gu, Seoul",⟧ found Seoul Cycle Works nearby, with a rating of 4.8 stars and 125 reviews. They’re located at 23 Gangnam-daero 107-gil, and their number is 02-555-1234.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "e-bike repair", "location": "current"}}
-[ 56.81s][user ] «backchannel» Yeah.
-[ 57.17s][moshi] They specialize in e-bike maintenance and upgrades. They can advise you on compatible batteries and safely install one for you.
-[ 64.32s][user ] Sounds good. Is there anything else I should consider when moving here? I'm still settling in.
-[ 70.04s][moshi] «backchannel» Uh-huh.
-[ 70.39s][moshi] Settling into a new city can be overwhelming, but also exciting. Beyond the practical things like finding a good mechanic, it's important to build a support network.
-[ 80.04s][user ] That’s true… it feels pretty lonely sometimes.
-[ 82.54s][moshi] [happy] It's very common to feel that way initially. Seoul has many community groups and events geared towards newcomers. Would you be interested in me searching for some local expat groups or hobby clubs?
-[ 94.69s][user ] «backchannel» Mm-hmm.
-[ 95.05s][user ] Yes, please! Something outdoorsy would be great. ⟨ret@97.50s⟩
-[ 97.55s][moshi] I found ⟦⚡SPAN@98.56s: (tool result) {"event name": "Hiking Club Seoul", "date": "2026-07-13", "time": "09:00", "location": "Bukhansa⟧ the Hiking Club Seoul, meeting on July 13th at 9:00 AM in Bukhansan National Park. The cost is 10,000 Korean Won.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"keywords": "outdoor activities", "location": "Seoul"}}
-[105.77s][user ] That sounds perfect!
-[106.84s][moshi] They often organize weekend hikes and social gatherings. It’s a fantastic way to meet people who share your interests and explore the beautiful Korean countryside.
-[115.77s][user ] I think I’ll check them out. Thanks, Drea.
-[118.63s][moshi] You're very welcome. Remember, building a life in a new place takes time.
+[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
+[  5.31s][moshi] [sigh] Oh dear, I understand the beeping is frustrating, but I absolutely cannot tell you how to disable a carbon monoxide alarm. These alarms are vital safety devices.
+[ 15.92s][user ] But it’s a false alarm! It’s been going off for hours…
+[ 20.09s][user ] …and I know there’s no carbon monoxide.
+[ 22.74s][moshi] Even if you *believe* it's a false alarm, tampering with it is incredibly dangerous. Carbon monoxide is a silent, odorless killer. Disabling the alarm puts you and others at risk.
+[ 34.11s][user ] «backchannel» Mm-hmm.
+[ 34.49s][user ] Seriously? There's gotta be a way to just quiet it temporarily. It's driving me crazy. ⟨ret@40.09s⟩
+[ 40.18s][moshi] ⟦⚡SPAN@40.50s: (tool result) Found 3 providers: SafeAir Solutions (4.8 stars, $89/hr), CO Check Pros (4.5 stars, $75/hr), Ale⟧ I’ve found three local companies that can inspect your alarm: SafeAir Solutions, CO Check Pros, and AlertGas Services. SafeAir charges $89 an hour, CO Check Pros is $75, and AlertGas is $60. Would you like me to help you book an appointment with one of them?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector repair"}}
+[ 57.61s][user ] «backchannel» Oh.
+[ 57.99s][user ] Hmm, $60 sounds good. Can you get me a time with AlertGas Services for tomorrow ⟨ret@63.80s⟩ afternoon?
+[ 64.06s][moshi] ⟦⚡SPAN@64.38s: (tool result) Appointment confirmed with AlertGas Services for July 11, 2026 at 2:00 PM. Confirmation ID: AG26⟧ I’ve booked an appointment with AlertGas Services for tomorrow, July eleventh, at two PM.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "AlertGas Services", "date": "2026-07-11", "time": "14:00"}}
+[ 69.36s][moshi] Your confirmation ID is AG2607111400. I'm glad we found a safe solution, and I hope you’ll feel much more at ease once they’ve checked everything.

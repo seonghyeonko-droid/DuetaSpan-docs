@@ -1,88 +1,101 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Klemi, a encouraging and non-judgmental counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Brol, a grounded and empathetic life coach who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Elias",
+    "name": "Maya",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "early 30s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-14",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-06-12",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2026-03-06",
+      "date": "2026-06-15",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-12-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-05-31",
+      "category": "home",
+      "text": "User's home address is 48 Pine Court."
     },
     {
-      "date": "2025-12-08",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in October."
+      "date": "2026-03-17",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-23",
-      "title": "Setting up a home network",
+      "date": "2026-04-02",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when the Luxor Hotel in Las Vegas was ⟨ret@4.44s⟩ built?
-[  4.64s][moshi] ⟦⚡SPAN@4.58s: The Luxor Hotel and Casino opened in Las Vegas, Nevada, on March 31, 1993, featuring 2,534 rooms.⟧ The Luxor Hotel and Casino officially opened its doors on March 31, 1993, and it has 2,534 rooms.
-[ 11.60s][user ] «backchannel» Yeah.
-[ 11.99s][user ] Oh, 1993. I thought it was a little earlier.
-[ 15.47s][moshi] «backchannel» Wow.
-[ 15.85s][moshi] It's easy to get those dates mixed up with so many exciting things happening in Vegas!
-[ 22.04s][user ] «backchannel» Uh-huh.
-[ 22.43s][user ] What was happening in Vegas around that time, anyway? ⟨ret@25.74s⟩
-[ 25.91s][moshi] The ⟦⚡SPAN@26.64s: Las Vegas experienced significant growth in the early 1990s, with several megaresorts opening, including the L⟧ early nineties were a boom time for Las Vegas, with the MGM Grand also opening in 1993, alongside the Luxor.
-[ 34.03s][user ] So, both opened in the same year?
-[ 36.74s][moshi] Yes, it was quite the year for new resorts on the strip—both the Luxor and the MGM Grand opened in 1993.
-[ 44.86s][user ] I'm planning a trip there next month. –
-[ 47.95s][user ] …Are there any shows I should definitely see? ⟨ret@50.87s⟩
-[ 51.04s][moshi] «backchannel» Yeah.
-[ 51.43s][moshi] ⟦⚡SPAN@51.55s: (tool result) Event: "O" by Cirque du Soleil, Location: Bellagio, Dates: July 15-20, 2026, Price: $129-$199.⟧ "O" by Cirque du Soleil at the Bellagio has shows from July 15th to the 20th, with tickets ranging from $129 to $199.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {}}
-[ 60.32s][user ] «backchannel» Oh.
-[ 60.71s][moshi] It's a very popular show, known for its stunning water acrobatics.
-[ 64.96s][user ] That sounds amazing! Is it ⟨ret@67.04s⟩ family-friendly?
-[ 67.28s][moshi] ⟦⚡SPAN@67.34s: "O" by Cirque du Soleil is generally considered family-friendly, though some scenes may be intense for very yo⟧ "O" is usually fine for families, though some scenes might be a little intense for younger kids.
-[ 73.86s][user ] «backchannel» Yeah, totally.
-[ 74.63s][user ] Okay, good to know. Thanks for the information!
-[ 77.72s][moshi] «backchannel» Yeah.
-[ 78.11s][moshi] ⟨ret@77.96s⟩ ⟦⚡SPAN IRRELEVANT@78.26s: The current temperature in Reykjavik, Iceland is 8.2°C, humidity 88%, wind 7.1 km/h.⟧ You're very welcome! It's my pleasure to help you plan a fun trip.
-[ 83.14s][moshi] I'm glad I could offer some suggestions, and I hope you have a wonderful time in Las Vegas.
+[  0.00s][user ] Hi Brol, I was wondering when the White House became the official residence? ⟨ret@5.04s⟩
+[  5.24s][moshi] ⟦⚡SPAN@5.18s: The White House became the official residence of the President of the United States on November 1, 1800, when ⟧ The White House officially became the presidential residence on November 1, 1800, when John Adams and Abigail Adams moved in.
+[ 13.29s][user ] «backchannel» Uh-huh.
+[ 13.69s][user ] Wow, that's earlier than I thought.
+[ 16.11s][moshi] It is! It's easy to assume it was always the center of power, isn’t it?
+[ 22.15s][user ] «backchannel» Mm-hmm.
+[ 22.55s][user ] What was there before that, though? Where did presidents ⟨ret@26.20s⟩ live?
+[ 26.58s][moshi] ⟦⚡SPAN@26.52s: Before the White House, presidents primarily resided in Philadelphia, Pennsylvania, as that city served as the⟧ Before the White House, presidents primarily lived in Philadelphia, as it was the temporary capital from 1790 to 1800.
+[ 34.23s][user ] «backchannel» Yeah, totally.
+[ 35.04s][user ] Philadelphia, huh? That's a change of scenery. ⟨ret@37.69s⟩
+[ 37.86s][moshi] Sometimes a ⟦⚡SPAN IRRELEVANT@38.86s: The current price of Brent crude oil is $85.25 per barrel, with a daily change of +0.75%.⟧ change of scenery can be really refreshing.
+[ 41.48s][user ] «backchannel» Mm-hmm.
+[ 41.89s][user ] Was it difficult to build the White House back ⟨ret@45.35s⟩ then?
+[ 45.91s][moshi] «interrupted» ⟦⚡SPAN@45.82s: Construction of the White House began in 1792, following a design competition won by Irish architect James Hob⟧ Construction began in 1792, designed by James Hoban, and took eight years—
+[ 50.75s][user ] «interrupts_prev» …did they use enslaved people to build ⟨ret@53.52s⟩ it?
+[ 53.97s][moshi] ⟦⚡SPAN@53.91s: Historical records confirm that enslaved African Americans, along with European immigrants and paid laborers, ⟧ Historical records confirm that enslaved African Americans, alongside other workers, provided labor during the construction between 1792 and 1800.
+[ 61.62s][user ] That’s awful. It’s hard to think about the history sometimes.
+[ 65.65s][moshi] «backchannel» Right.
+[ 66.05s][moshi] It absolutely is. Acknowledging the difficult parts is important.
+[ 69.68s][user ] «backchannel» Mm-hmm.
+[ 70.08s][moshi] We can learn from those past injustices to build a better future.
+[ 74.91s][user ] «backchannel» Right.
+[ 75.31s][user ] Do they have records of who built it, names and ⟨ret@79.46s⟩ everything?
+[ 79.74s][moshi] ⟦⚡SPAN@79.68s: While a complete list of all workers remains unavailable, historical research has identified some enslaved ind⟧ While a complete list isn’t available, research has identified some individuals, including Ona Judge and Paul Jennings, who later wrote a memoir.
+[ 88.60s][user ] «backchannel» Yeah.
+[ 89.01s][user ] That’s good to know their stories are being remembered.
+[ 92.63s][moshi] It is. Their contributions deserve to be recognized.
+[ 95.85s][user ] So, after the Adams moved in, was it immediately ⟨ret@99.35s⟩ popular?
+[ 99.88s][moshi] ⟦⚡SPAN@99.82s: Initially, the White House faced criticism for its unfinished state and relatively modest appearance, requirin⟧ Initially, the White House faced criticism for being unfinished and modest, needing renovations over the decades.
+[106.32s][user ] What kind of ⟨ret@107.72s⟩ renovations?
+[107.94s][moshi] Major changes ⟦⚡SPAN@108.96s: Significant renovations included the reconstruction after the British set fire to the White House in 1814, the⟧ included rebuilding after the 1814 fire, adding running water in 1817, and expansions under Theodore Roosevelt.
+[115.19s][user ] «backchannel» Oh.
+[115.59s][user ] Wow, it was burned down? That's crazy!
+[118.41s][moshi] [surprised] It really was! A very difficult time in its history.
+[122.84s][user ] «backchannel» Yeah.
+[123.24s][user ] So it's been through a lot, that building.
+[126.46s][moshi] It's a symbol of resilience, wouldn't you say?
+[129.68s][moshi] It has certainly seen a lot of history unfold within its walls.
+[134.52s][user ] I guess so. Thanks for all the info, Brol.
+[138.14s][moshi] You're very welcome! I'm glad I could share some of that history with you. It’s good to appreciate where things come from.

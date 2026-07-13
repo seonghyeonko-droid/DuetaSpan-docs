@@ -1,93 +1,74 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 오라리미이며, 사려 깊고 부드러운 말투로 일상적인 결정과 감정에 대해 사람들을 돕는 조언자입니다. <system>
+SYSTEM: <system> 당신은 푸나입니다. 스트레스 해소와 마음챙김을 통해 사람들을 돕는 호기심 많고 공감적인 라이프 코치입니다. 호흡 기법, 간단한 접지 운동, 기본적인 수면 위생에 대해 설명할 수 있습니다. 또한 당신은 모시이며, 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 유능한 음성 어시스턴트입니다. 위에 언급된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "주현",
+    "name": "정찬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "non-binary",
     "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-25",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-06-01",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-03",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2026-03-23",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2026-03-15",
+      "date": "2026-04-22",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-12-13",
+      "date": "2026-04-01",
+      "category": "home",
+      "text": "User's home address is 부산 해운대구 해운대로 570."
+    },
+    {
+      "date": "2025-12-11",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "text": "User is planning a trip to Vietnam in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-09",
+      "date": "2026-05-04",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-04-19",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-28",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 파리에서 암스테르담까지 차로 가면 얼마나 ⟨ret@2.58s⟩ 걸릴까요?
-[  3.05s][moshi] ⟦⚡SPAN@3.33s: (tool result) The drive from Paris to Amsterdam is approximately 312 miles and takes about 4 hours and 45 minu⟧ 파리에서 암스테르담까지는 대략 오백이킬로미터이고, 교통 상황에 따라 네시간 사십오분 정도 걸립니다.
-      CALL: {"function": "maps_direction_driving", "arguments": {"origin": "Paris", "destination": "Amsterdam"}}
-[  8.63s][moshi] 운전 중에 잠시 들를 만한 곳을 찾아드릴까요?
-[ 12.18s][user ] 네, 중간에 잠시 들러서 점심을 먹을 만한 곳이 ⟨ret@16.15s⟩ 있을까요?
-[ 16.75s][moshi] ⟦⚡SPAN@17.44s: (tool result) There are many restaurants along the route from Paris to Amsterdam, including Le Relais de l'Ent⟧ 파리에서 암스테르담 가는 길에는 맛집이 많아요. 브뤼셀의 르 렐레 드 랑트르코트는 스테이크 프라이가 유명하고, 브뤼흐의 드 할베 만 양조장에서는 벨기에 음식을 맛볼 수 있습니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "along the route from Paris to Amsterdam"}}
-[ 28.94s][moshi] 혹시 특별히 선호하는 종류의 음식이 있으신가요?
-[ 31.98s][user ] «backchannel» 네.
-[ 32.49s][user ] 벨기에 음식은 맛있을 것 같은데, 브뤼헤에 있는 곳으로 ⟨ret@36.71s⟩ 가볼까요?
-[ 37.06s][moshi] ⟦⚡SPAN@37.26s: De Halve Maan brewery in Bruges is located at Walplein 26, 8000 Brugge, Belgium and is open from 11:00 AM to 6⟧ 브뤼흐의 드 할베 만 양조장은 벨기에 브뤼흐 월플레인 이십육번지에 있고, 오전 열한시부터 오후 여섯시까지 영업합니다.
-[ 44.67s][moshi] 지금 출발하면 점심시간에 맞춰 도착할 수 있을 것 같아요.
-[ 49.24s][user ] 좋아요, 그럼 바로 브뤼헤로 가는 길 안내를 받을 수 ⟨ret@54.04s⟩ 있을까요?
-[ 54.32s][moshi] ⟦⚡SPAN@54.59s: (tool result) The driving route from Paris to De Halve Maan brewery in Bruges is approximately 320 kilometers ⟧ 파리에서 브뤼흐 드 할베 만 양조장까지는 대략 삼백이십킬로미터이고, 통행료와 연료비가 사십유로에서 육십유로 정도 들 것으로 예상되며, 약 세시간 삼십분 정도 걸립니다.
-      CALL: {"function": "maps_direction_driving", "arguments": {"origin": "Paris", "destination": "De Halve Maan brewery, Walplein 26, 8000 Brugge, Belgium"}}
-[ 64.98s][moshi] «interrupted» 실시간 교통 상황을 반영한 최적의 경로를 안내해 드릴게요—
-[ 69.04s][user ] «interrupts_prev» …혹시 브뤼헤에 있는 다른 맥주 양조장도 추천해 주실 수 있나요?
-[ 74.11s][moshi] «backchannel» 네.
-[ 74.62s][moshi] ⟨ret@74.54s⟩ ⟦⚡SPAN@74.89s: In addition to De Halve Maan, Bruges boasts Bourgogne des Flandres, known for its fruity ales, and Cambrinus, ⟧ 드 할베 만 외에도 브뤼헤에는 과일 에일이 유명한 부르고뉴 데 플랑드르와 다양한 맥주와 플랑드르 전통 음식을 제공하는 캄브리누스도 있습니다.
-[ 84.27s][moshi] 캄브리누스는 맥주 종류가 아주 많다고 하네요.
-[ 87.31s][user ] 캄브리누스도 괜찮겠네요. 그럼 드 할베 만 양조장과 캄브리누스 두 곳 모두 경로에 포함해 ⟨ret@94.00s⟩ 주시겠어요?
-[ 94.42s][moshi] ⟦⚡SPAN@94.41s: (tool result) The driving route from Paris to both De Halve Maan and Cambrinus in Bruges is approximately 325 ⟧ 파리에서 브뤼흐의 드 할베 만과 캄브리누스까지는 대략 삼백이십오킬로미터이고, 통행료와 연료비가 사십오유로에서 육십오유로 정도 들 것으로 예상되며, 약 세시간 사십오분 정도 걸립니다.
-      CALL: {"function": "maps_direction_driving", "arguments": {"origin": "Paris", "destination": ["De Halve Maan brewery, Walplein 26, 8000 Brugge, Belgium", "Cambrinus, Philipstockstraat 23, 8000 Brugge, Belgium"]}}
-[105.08s][moshi] 두 곳 모두 즐거운 시간 보내시길 바랍니다.
-[108.63s][user ] «backchannel» 네.
-[109.14s][user ] 감사합니다, 오라리미. 덕분에 여행 계획이 훨씬 수월해졌어요.
-[112.69s][moshi] 천만에요. 여행 계획을 짜는 데 도움을 드릴 수 있어서 기쁩니다.
+[  0.00s][user ] 수제 가죽 지갑을 만들어 줘. 실물 ⟨ret@2.58s⟩ 제품이야.
+[  3.04s][moshi] ⟦⚡SPAN@3.33s: (tool result) {"product id": "789345", "product name": "Handmade Leather Wallet", "product type": "physical", ⟧ 수제 가죽 지갑이 만들어졌어요. 제품 아이디는 칠 팔 구 삼 사 오입니다. 지금 바로 확인해 보실까요?
+      CALL: {"function": "create_product", "arguments": {"product_name": "Handmade Leather Wallet", "product_type": "physical"}}
+[ 10.00s][user ] «backchannel» 어.
+[ 10.43s][user ] 아니, 그건 됐고… 혹시 다른 가죽 제품도 만들 수 있어?
+[ 14.78s][moshi] «backchannel» 네.
+[ 15.22s][moshi] 네, 물론이죠. 가죽 벨트나 가방도 만들 수 있습니다. 어떤 제품을 원하시나요?
+[ 20.00s][user ] «backchannel» 그래.
+[ 20.43s][user ] 벨트도 만들어 줘. 검정색 가죽 ⟨ret@22.44s⟩ 벨트.
+[ 23.04s][moshi] «interrupted» 검정색 ⟦⚡SPAN@23.73s: (tool result) {"product id": "246813", "product name": "Black Leather Belt", "product type": "physical", "stat⟧ 가죽 벨트도 만들어졌습니다. 제품 아이디는 이 사 육 팔 일 삼번이고요 —
+      CALL: {"function": "create_product", "arguments": {"product_name": "Black Leather Belt", "product_type": "physical"}}
+[ 28.69s][user ] «interrupts_prev» … 잠깐만, 혹시 가죽 종류도 선택할 수 있어?
+[ 32.17s][moshi] 아, 네, 물론입니다. 어떤 가죽을 선호하시나요? 소가죽, 양가죽, 염소가죽 등 다양한 종류가 있습니다.

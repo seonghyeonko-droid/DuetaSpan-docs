@@ -4,103 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Remy",
+#     "name": "Nina",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-02-18",
+#       "date": "2026-05-10",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-04-13",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-01-06",
+#       "date": "2026-03-10",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-02-11",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-02",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-04",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What campus reduced its size in th | S2 …like in Seoul right now? | S3 Sounds lovely. Can you find me som | S4 Trattoria Uno sounds good. Can you
+# EXAMINER(FDB-v2) 단계: S1 When were gold dollars first minte | S2 It is. What about paper money? Whe | S3 That makes sense. I'm thinking abo | S4 PCGS and NGC… I’ll have to look th
 
-     0.00s  user  발화 시작: What campus reduced its size in the 1950's and 1960's?
-     4.25s  <ret> 발화 (turn1 첫 프레임)
-     4.33s  agent 발화 시작: <ret> But unfortunately, I don't have information about any 
-     4.33s  user  발화 끝
-     4.95s  ⚡SPAN 주입 [d'=0.70s / d_lead=6.49s]: (no information found)
-    10.82s  user  발화 시작: Yeah.
-    10.82s  agent 발화 끝
-    11.25s  user  발화 시작: Oh, okay. Well, what’s the weather…
-    11.25s  user  발화 끝
-    13.85s  user  발화 시작: …like in Seoul right now?
-    13.85s  user  발화 끝
-    16.01s  agent 발화 시작: Uh-huh.
-    16.01s  user  발화 끝
-    16.16s  <ret> 발화 (turn6 첫 프레임)
-    16.44s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with hum
-    16.44s  agent 발화 끝
-    17.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.82s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    27.26s  user  발화 시작: Yeah.
-    27.26s  agent 발화 끝
-    27.69s  user  발화 시작: Sounds lovely. Can you find me some Italian restaurants near
-    27.69s  user  발화 끝
-    31.42s  <ret> 발화 (turn9 첫 프레임)
-    32.02s  agent 발화 시작: <ret> I found two Italian restaurants near you: Trattoria Un
-    32.02s  user  발화 끝
-    32.58s  ⚡SPAN 주입 [d'=1.16s / d_lead=10.82s]: (tool result) Trattoria Uno - Italian, 4.5 stars, 0.8 km away. Bella I
-    42.84s  user  발화 시작: Oh.
-    42.84s  agent 발화 끝
-    43.27s  user  발화 시작: Trattoria Uno sounds good. Can you reserve a table for two t
-    43.27s  user  발화 끝
-    49.79s  <ret> 발화 (turn12 첫 프레임)
-    50.19s  agent 발화 시작: <ret> Wonderful! Your reservation for two at Trattoria Uno i
-    50.19s  user  발화 끝
-    51.00s  ⚡SPAN 주입 [d'=1.35s / d_lead=11.25s]: (tool result) Reservation confirmed for 2 people at Trattoria Uno on 2
-    61.44s  agent 발화 끝
+     0.00s  user  발화 시작: When were gold dollars first minted?
+     2.36s  agent 발화 시작: Well, that’s a tricky one! It seems the exact first minting 
+     2.36s  user  발화 끝
+     9.43s  user  발화 시작: Oh. Hmm. Do you know about silver dollars then?
+     9.43s  agent 발화 끝
+    12.78s  <ret> 발화 (turn3 첫 프레임)
+    12.97s  agent 발화 시작: <ret> Actually, I do! The first silver dollars were authoriz
+    12.97s  user  발화 끝
+    13.48s  ⚡SPAN 주입 [d'=0.71s / d_lead=8.65s]: The first silver dollars were authorized by the Mint Act of 1792, and 
+    21.62s  user  발화 시작: They do! I'm trying to understand the history of US currency
+    21.62s  agent 발화 끝
+    25.94s  agent 발화 시작: That's a fascinating area to explore. It’s amazing how much 
+    25.94s  user  발화 끝
+    33.81s  user  발화 시작: It is. What about paper money? When did that start?
+    33.81s  agent 발화 끝
+    37.14s  <ret> 발화 (turn7 첫 프레임)
+    37.68s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.86s]: Paper money in the American colonies first appeared in 1690, issued by
+    37.74s  agent 발화 시작: <ret> Paper money actually began appearing in the American c
+    37.74s  user  발화 끝
+    45.60s  user  발화 시작: Wow, that’s early! So much earlier than I thought.
+    45.60s  agent 발화 끝
+    49.14s  agent 발화 시작: It is, isn't it? It really shows how necessity drives innova
+    49.14s  user  발화 끝
+    53.46s  user  발화 시작: That makes sense. I'm thinking about collecting some old coi
+    53.46s  agent 발화 끝
+    57.78s  user  발화 시작: …Do you think that’s a good idea, considering the economy?
+    57.78s  user  발화 끝
+    61.72s  agent 발화 시작: Yeah.
+    61.72s  user  발화 끝
+    62.11s  agent 발화 시작: That’s a very practical question. Collecting can be a good i
+    62.11s  agent 발화 끝
+    70.36s  user  발화 시작: Right.
+    70.36s  agent 발화 끝
+    70.76s  agent 발화 시작: It's best to research thoroughly and perhaps focus on coins 
+    70.76s  user  발화 끝
+    77.44s  user  발화 시작: That’s good advice. Is it hard to tell what's valuable?
+    77.44s  agent 발화 끝
+    81.37s  agent 발화 시작: Yeah.
+    81.37s  user  발화 끝
+    81.72s  <ret> 발화 (turn18 첫 프레임)
+    81.76s  agent 발화 시작: <ret> Determining a coin’s value can be complex, usually don
+    81.76s  agent 발화 끝
+    83.22s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.04s]: Coin grading is a complex process, typically done by third-party servi
+    90.80s  user  발화 시작: PCGS and NGC… I’ll have to look those up.
+    90.80s  agent 발화 끝
+    94.34s  agent 발화 시작: I can certainly help with that! Would you like me to find so
+    94.34s  user  발화 끝
+   101.42s  user  발화 시작: Yes, please. That would be great.
+   101.42s  agent 발화 끝
+   103.50s  <ret> 발화 (turn22 첫 프레임)
+   103.72s  ⚡SPAN 주입 [d'=0.71s / d_lead=12.19s]: (tool result) Professional Coin Grading Service (PCGS) is a third-part
+   103.78s  agent 발화 시작: <ret> PCGS, the Professional Coin Grading Service, was estab
+   103.78s  user  발화 끝
+   115.96s  agent 발화 끝

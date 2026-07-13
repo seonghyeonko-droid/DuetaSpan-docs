@@ -4,53 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Quinn",
+#     "name": "Remy",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "German"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-18",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-05-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
-#     },
-#     {
-#       "date": "2026-04-15",
+#       "date": "2026-05-03",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-04-06",
+#       "date": "2026-04-26",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2026-03-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-05",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-01-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-22",
+#       "date": "2026-06-04",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,28 +66,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "title": "Researching a used car",
+#       "date": "2025-12-16",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who wrote the song “London Bridge is falling down”?
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     3.05s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.91s]: The authorship of the nursery rhyme "London Bridge Is Falling Down" is
-     3.11s  agent 발화 시작: <ret> The author of “London Bridge is falling down” is actua
-     3.11s  user  발화 끝
-    10.02s  agent 발화 끝
+     0.00s  user  발화 시작: Where did Antoine de Saint-Exupéry write *Le Petit Prince*?
+     2.94s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  agent 발화 시작: <ret> He actually wrote *Le Petit Prince* while living in No
+     3.13s  user  발화 끝
+     3.50s  ⚡SPAN 주입 [d'=0.56s / d_lead=9.38s]: Antoine de Saint-Exupéry wrote *Le Petit Prince* during his exile in N
+    12.51s  agent 발화 끝

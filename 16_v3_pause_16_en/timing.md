@@ -4,125 +4,169 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Avery",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-17",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-04-23",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-04-04",
 #       "category": "home",
-#       "text": "User's home address is 228 Oak Avenue."
+#       "text": "User's home address is 664 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-03-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-01-21",
+#       "date": "2026-02-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-21",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-23",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering… what’s the fastes | S2 Let's say… under sixty thousand do | S3 …about something a little more pra | S4 Maybe. I need to find a good Korea
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when did Mic | S2 …So who led the team in scoring du | S3 Right. And who did they play in th | S4 What about their current coach? Wh
 
-     0.00s  user  발화 시작: I was wondering… what’s the fastest car?
-     2.75s  <ret> 발화 (turn1 첫 프레임)
-     3.02s  agent 발화 시작: <ret> Well, that’s a fun question! The Koenigsegg Agera RS i
-     3.02s  user  발화 끝
-     4.08s  ⚡SPAN 주입 [d'=1.33s / d_lead=12.94s]: The Koenigsegg Agera RS is the world’s fastest production car, with a 
-    15.96s  user  발화 시작: Yeah.
-    15.96s  agent 발화 끝
-    16.39s  user  발화 시작: Two hundred seventy-seven… wow. What…
-    16.39s  user  발화 끝
-    18.55s  user  발화 시작: …about a more affordable fast car?
-    18.55s  user  발화 끝
-    21.14s  agent 발화 시작: Yeah.
-    21.14s  user  발화 끝
-    21.57s  agent 발화 시작: [curious] That’s a good point. Fast doesn’t always mean astr
-    21.57s  agent 발화 끝
-    28.90s  user  발화 시작: Let's say… under sixty thousand dollars?
-    28.90s  agent 발화 끝
-    31.05s  <ret> 발화 (turn8 첫 프레임)
-    31.49s  agent 발화 시작: <ret> Many people consider the 2024 Chevrolet Corvette Sting
-    31.49s  user  발화 끝
-    31.74s  ⚡SPAN 주입 [d'=0.70s / d_lead=17.69s]: (tool result) The 2024 Chevrolet Corvette Stingray is often cited as o
-    49.18s  user  발화 시작: Slightly… hmm. Are there any electric cars that are quick?
-    49.18s  agent 발화 끝
-    53.49s  agent 발화 시작: Right.
-    53.49s  user  발화 끝
-    53.88s  <ret> 발화 (turn11 첫 프레임)
-    53.92s  agent 발화 시작: <ret> The Tesla Model S Plaid is currently the quickest prod
-    53.92s  agent 발화 끝
-    53.98s  ⚡SPAN 주입 [d'=1.06s / d_lead=15.53s]: (tool result) The Tesla Model S Plaid is currently the quickest produc
-    69.45s  user  발화 시작: Yeah.
-    69.45s  agent 발화 끝
-    69.88s  user  발화 시작: That’s… incredible. What…
-    69.88s  user  발화 끝
-    71.18s  user  발화 시작: …about something a little more practical? I need space.
-    71.18s  user  발화 끝
-    74.80s  <ret> 발화 (turn15 첫 프레임)
-    75.00s  ⚡SPAN 주입 [d'=0.74s / d_lead=15.53s]: (tool result) The Porsche Cayenne Turbo GT is the fastest SUV currentl
-    75.06s  agent 발화 시작: <ret> The Porsche Cayenne Turbo GT is currently the fastest 
-    75.06s  user  발화 끝
-    90.59s  user  발화 시작: Mm-hmm.
-    90.59s  agent 발화 끝
-    91.02s  user  발화 시작: Porsche… those are nice. What’s the weather like in Seoul ri
-    91.02s  user  발화 끝
-    96.19s  <ret> 발화 (turn19 첫 프레임)
-    96.20s  agent 발화 시작: Mhm.
-    96.20s  user  발화 끝
-    96.49s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.65s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    96.63s  agent 발화 시작: <ret> It’s twenty-three point zero degrees Celsius in Seoul,
-    96.63s  agent 발화 끝
-   108.28s  user  발화 시작: Sounds nice. I’m thinking of visiting next week…
-   108.28s  agent 발화 끝
-   111.73s  agent 발화 시작: That sounds lovely! Seoul is a wonderful city. Are you plann
-   111.73s  user  발화 끝
-   117.77s  user  발화 시작: Maybe. I need to find a good Korean restaurant there.
-   117.77s  agent 발화 끝
-   121.87s  <ret> 발화 (turn23 첫 프레임)
-   122.02s  ⚡SPAN 주입 [d'=0.61s / d_lead=9.49s]: (tool result) Gaon is a Michelin three-star Korean restaurant in Seoul
-   122.08s  agent 발화 시작: <ret> Gaon is a Michelin three-star restaurant in Seoul, and
-   122.08s  user  발화 끝
-   131.57s  user  발화 시작: Yeah.
-   131.57s  agent 발화 끝
-   132.00s  user  발화 시작: Gaon… sounds fancy. How much does a meal there cost?
-   132.00s  user  발화 끝
-   136.17s  <ret> 발화 (turn26 첫 프레임)
-   136.32s  agent 발화 시작: <ret> Tasting menus at Gaon range from three hundred thousan
-   136.32s  user  발화 끝
-   136.90s  ⚡SPAN 주입 [d'=0.73s / d_lead=10.35s]: (tool result) Gaon offers tasting menus ranging from ₩300,000 to ₩500,
-   146.67s  user  발화 시작: Wow, that's… quite a bit. I think I’ll look for something a 
-   146.67s  agent 발화 끝
-   153.14s  agent 발화 시작: Yeah, yeah.
-   153.14s  user  발화 끝
-   154.00s  agent 발화 시작: That’s perfectly sensible. There are countless wonderful, mo
-   154.00s  agent 발화 끝
-   162.20s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, when did Michigan State basketball act
+     5.04s  <ret> 발화 (turn2 첫 프레임)
+     5.26s  agent 발화 시작: Right.
+     5.26s  user  발화 끝
+     5.34s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.14s]: Michigan State Spartans men's basketball won the NCAA Tournament champ
+     5.64s  agent 발화 시작: <ret> It's a great question! Michigan State won their only N
+     5.64s  agent 발화 끝
+    12.78s  user  발화 시작: Yeah.
+    12.78s  agent 발화 끝
+    13.15s  user  발화 시작: Oh, wow, 1979… That feels like a long time ago. Who was thei
+    13.15s  user  발화 끝
+    18.79s  agent 발화 시작: Yeah, yeah.
+    18.79s  user  발화 끝
+    19.10s  <ret> 발화 (turn6 첫 프레임)
+    19.54s  agent 발화 시작: <ret> You’re right, it was quite a while ago! Jud Heathcote 
+    19.54s  agent 발화 끝
+    19.87s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.76s]: Jud Heathcote was the head coach of the Michigan State Spartans men's 
+    26.30s  user  발화 시작: Mm-hmm.
+    26.30s  agent 발화 끝
+    26.68s  user  발화 시작: Interesting. And was Magic Johnson playing for Michigan Stat
+    26.68s  user  발화 끝
+    31.19s  agent 발화 시작: Mm-hmm.
+    31.19s  user  발화 끝
+    31.56s  agent 발화 시작: No, Magic Johnson played for Michigan State from 1977 to 197
+    31.56s  agent 발화 끝
+    40.58s  user  발화 시작: Oh, that’s a shame.…
+    40.58s  agent 발화 끝
+    42.08s  user  발화 시작: …So who led the team in scoring during that tournament?
+    42.08s  user  발화 끝
+    45.26s  <ret> 발화 (turn13 첫 프레임)
+    45.78s  ⚡SPAN 주입 [d'=1.11s / d_lead=5.64s]: Greg Kelser led the Michigan State Spartans in scoring during the 1979
+    45.84s  agent 발화 시작: <ret> Greg Kelser was the team's leading scorer in that tour
+    45.84s  user  발화 끝
+    51.48s  user  발화 시작: Wow.
+    51.48s  agent 발화 끝
+    51.85s  user  발화 시작: I see. What was…
+    51.85s  user  발화 끝
+    53.36s  user  발화 시작: …their record that season?
+    53.36s  user  발화 끝
+    54.70s  <ret> 발화 (turn17 첫 프레임)
+    54.86s  agent 발화 시작: <ret> Their overall record that season was 27 wins and 5 los
+    54.86s  user  발화 끝
+    55.90s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.52s]: The 1978–79 Michigan State Spartans men's basketball team finished wit
+    62.38s  user  발화 시작: Exactly.
+    62.38s  agent 발화 끝
+    62.75s  user  발화 시작: That’s a pretty good record. Were they heavily favored going
+    62.75s  user  발화 끝
+    67.64s  agent 발화 시작: Wow.
+    67.64s  user  발화 끝
+    68.01s  agent 발화 시작: They were a third seed in the tournament, so they weren't ne
+    68.01s  agent 발화 끝
+    76.28s  user  발화 시작: Yeah.
+    76.28s  agent 발화 끝
+    76.65s  user  발화 시작: Right. And who did they play in the final four?
+    76.65s  user  발화 끝
+    79.87s  <ret> 발화 (turn24 첫 프레임)
+    80.41s  agent 발화 시작: <ret> They faced Notre Dame in the Final Four, winning 89 to
+    80.41s  user  발화 끝
+    80.97s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.14s]: Michigan State defeated Notre Dame 89–83 in the semifinal game of the 
+    87.55s  user  발화 시작: That must have been a tough game. I’m also curious, what oth
+    87.55s  agent 발화 끝
+    94.31s  agent 발화 시작: Indiana State, led by Larry Bird, was the top-ranked team an
+    94.31s  user  발화 끝
+   101.08s  user  발화 시작: Yeah.
+   101.08s  agent 발화 끝
+   101.45s  user  발화 시작: That makes sense. Larry Bird was amazing. Speaking of great 
+   101.45s  user  발화 끝
+   105.59s  agent 발화 시작: Michigan State’s success that year wasn’t just about individ
+   105.59s  user  발화 끝
+   110.10s  user  발화 시작: …do you think they’ll ever win another national championship
+   110.10s  agent 발화 끝
+   113.48s  agent 발화 시작: That’s a big question! It’s certainly possible. They've had 
+   113.48s  user  발화 끝
+   119.11s  user  발화 시작: What about their current coach? Who is that?
+   119.11s  agent 발화 끝
+   121.68s  <ret> 발화 (turn33 첫 프레임)
+   122.12s  agent 발화 시작: <ret> The current head coach is Tom Izzo, who has been leadi
+   122.12s  user  발화 끝
+   122.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=5.64s]: Tom Izzo is the current head coach of the Michigan State Spartans men'
+   127.76s  user  발화 시작: Mhm.
+   127.76s  agent 발화 끝
+   128.13s  user  발화 시작: Oh, I didn’t realize he’d been there that long. Has he won a
+   128.13s  user  발화 끝
+   133.77s  agent 발화 시작: While Tom Izzo hasn’t won a national championship, he led th
+   133.77s  user  발화 끝
+   140.53s  user  발화 시작: Okay.
+   140.53s  agent 발화 끝
+   140.91s  user  발화 시작: Wow, eight times! That’s really impressive. It sounds like h
+   140.91s  user  발화 끝
+   145.79s  agent 발화 시작: He really is. He’s known for his strong defensive strategies
+   145.79s  user  발화 끝
+   150.68s  user  발화 시작: Uh-huh.
+   150.68s  agent 발화 끝
+   151.05s  user  발화 시작: I think I’ll look up some highlights from that 1979 game. Th
+   151.05s  user  발화 끝
+   157.07s  agent 발화 시작: Right.
+   157.07s  user  발화 끝
+   157.44s  agent 발화 시작: You’re very welcome! I’m glad I could help you learn about M
+   157.44s  agent 발화 끝
+   163.08s  agent 발화 끝

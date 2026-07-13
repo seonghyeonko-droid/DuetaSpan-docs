@@ -4,101 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Alice",
+#     "name": "Sam",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-21",
+#       "date": "2026-06-02",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-06-01",
+#       "category": "home",
+#       "text": "User's home address is 418 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-03-18",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-01-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-03",
+#       "date": "2026-02-14",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-30",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-07",
-#       "title": "Researching a used car",
+#       "date": "2026-06-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How long does it take to drive fro | S2 Are there any interesting places t | S3 …Actually, forget Versailles. Are  | S4 Great! And can you find me a hotel
+# EXAMINER(FDB-v2) 단계: S1 I need to add a product to my stor | S2 What colors does it come in? | S3 Well, I was thinking brown and bla | S4 …can I add those colors directly t
 
-     0.00s  user  발화 시작: How long does it take to drive from Paris to Amsterdam?
-     3.50s  <ret> 발화 (turn1 첫 프레임)
-     3.85s  agent 발화 시작: <ret> The drive from Paris to Amsterdam is approximately fou
-     3.85s  user  발화 끝
-     4.44s  ⚡SPAN 주입 [d'=0.94s / d_lead=8.06s]: (tool result) {"distance": "439 km", "duration": "4 hours 19 mins", "r
-    11.91s  user  발화 시작: Oh.
-    11.91s  agent 발화 끝
-    12.26s  user  발화 시작: And what’s the weather like in Amsterdam right now?
-    12.26s  user  발화 끝
-    15.09s  <ret> 발화 (turn4 첫 프레임)
-    15.42s  agent 발화 시작: <ret> It’s currently 18.5 degrees Celsius in Amsterdam, with
-    15.42s  user  발화 끝
-    15.89s  ⚡SPAN 주입 [d'=0.80s / d_lead=8.06s]: (tool result) {"temperature": "18.5°C", "humidity": "68%", "wind speed
-    23.48s  user  발화 시작: Are there any interesting places to stop along the way?
-    23.48s  agent 발화 끝
-    26.62s  <ret> 발화 (turn6 첫 프레임)
-    26.92s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.46s]: (tool result) {"results": [{"name": "Grote Markt", "vicinity": "Antwer
-    26.98s  agent 발화 시작: <ret> There are a couple of places you might enjoy—the Grote
-    26.98s  user  발화 끝
-    36.44s  user  발화 시작: Yeah.
-    36.44s  agent 발화 끝
-    36.79s  user  발화 시작: Versailles sounds good, but is it a long detour?
-    36.79s  user  발화 끝
-    39.95s  agent 발화 시작: It's about a forty-five minute detour from the E19—
-    39.95s  user  발화 끝
-    43.10s  user  발화 시작: …Actually, forget Versailles. Are there any good restaurants
-    43.10s  agent 발화 끝
-    47.82s  <ret> 발화 (turn11 첫 프레임)
-    48.01s  agent 발화 시작: <ret> There are a few options—Elfde Gebod serves Belgian cui
-    48.01s  user  발화 끝
-    48.24s  ⚡SPAN 주입 [d'=0.42s / d_lead=9.46s]: (tool result) {"results": [{"name": "Elfde Gebod", "cuisine": "Belgian
-    57.47s  user  발화 시작: Uh-huh.
-    57.47s  agent 발화 끝
-    57.82s  user  발화 시작: Elfde Gebod sounds perfect. Can you make a reservation there
-    57.82s  user  발화 끝
-    63.42s  agent 발화 시작: Oh.
-    63.42s  user  발화 끝
-    63.57s  <ret> 발화 (turn15 첫 프레임)
-    63.77s  agent 발화 시작: <ret> I've made a reservation for two at Elfde Gebod for 7 P
-    63.77s  agent 발화 끝
-    64.22s  ⚡SPAN 주입 [d'=0.65s / d_lead=5.96s]: (tool result) {"confirmation id": "RT789XYZ"}
-    69.73s  user  발화 시작: Exactly.
-    69.73s  agent 발화 끝
-    70.08s  user  발화 시작: Great! And can you find me a hotel near the Grote Markt as w
-    70.08s  user  발화 끝
-    74.38s  <ret> 발화 (turn18 첫 프레임)
-    74.99s  agent 발화 시작: <ret> I found two options near the Grote Markt—Hotel Central
-    74.99s  user  발화 끝
-    75.06s  ⚡SPAN 주입 [d'=0.68s / d_lead=7.01s]: (tool result) {"results": [{"name": "Hotel Central", "price": "€120/ni
-    82.00s  agent 발화 끝
+     0.00s  user  발화 시작: I need to add a product to my store, it’s a handmade leather
+     4.69s  <ret> 발화 (turn2 첫 프레임)
+     4.91s  agent 발화 시작: Mm-hmm.
+     4.91s  user  발화 끝
+     5.27s  agent 발화 시작: <ret> Great news! Your product, Handmade Leather Wallet, has
+     5.27s  agent 발화 끝
+     6.04s  ⚡SPAN 주입 [d'=1.35s / d_lead=4.56s]: (tool result) Product 'Handmade Leather Wallet' created with ID 78923.
+     9.83s  user  발화 시작: What colors does it come in?
+     9.83s  agent 발화 끝
+    11.94s  agent 발화 시작: [curious] That’s a good question to detail on the listing. D
+    11.94s  user  발화 끝
+    18.26s  user  발화 시작: Yeah.
+    18.26s  agent 발화 끝
+    18.61s  user  발화 시작: Well, I was thinking brown and black, but—
+    18.61s  user  발화 끝
+    21.42s  user  발화 시작: …can I add those colors directly through you?
+    21.42s  user  발화 끝
+    23.87s  <ret> 발화 (turn8 첫 프레임)
+    24.22s  agent 발화 시작: <ret> Perfect! The colors brown and black have been added as
+    24.22s  user  발화 끝
+    24.81s  ⚡SPAN 주입 [d'=0.95s / d_lead=4.91s]: (tool result) Color options 'brown' and 'black' added to product 78923
+    29.14s  agent 발화 끝
