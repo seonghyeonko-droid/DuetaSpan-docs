@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "혜진",
+#     "name": "서람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,79 +12,93 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-18",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-03-06",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-11-14",
+#       "date": "2026-01-06",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-18",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-04",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-19",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-27",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 플로리다에서 제일 큰 도시 세 곳이 어디야? | S2 음, 그 도시들은 관광객한테 유명해? | S3 잠깐만, 아 맞다, 오늘 저녁에 김치찌개 끓여야 되네. | S4 어… 그래서, 그 도시들은 뭐가 유명해?
 
-     0.00s  user  발화 시작: 캐나다에서 가장 오래 재임한 총리는 누구였나요?
-     2.96s  <ret> 발화 (turn1 첫 프레임)
-     3.28s  agent 발화 시작: <ret> 캐나다에서 가장 오래 재임한 총리는 윌리엄 라이언 매켄지 킹이셨습니다. 그는 정말 존경받는 분이셨
-     3.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.11s]: William Lyon Mackenzie King was Canada's longest-serving prime ministe
-     3.28s  user  발화 끝
-    10.39s  user  발화 시작: 네.
-    10.39s  agent 발화 끝
-    10.78s  <ret> 발화 (turn3 첫 프레임)
-    10.94s  agent 발화 시작: <ret> 윌리엄 라이언 매켄지 킹 총리는 총 이십일년 하고 백오십사일 동안 캐나다 총리를 지냈습니다 — 정
-    10.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.30s]: William Lyon Mackenzie King served as Prime Minister of Canada for 21 
-    10.94s  user  발화 끝
-    20.23s  user  발화 시작: 그분이 어떤 정당 소속이었는지도 궁금하네요.
-    20.23s  agent 발화 끝
-    22.97s  agent 발화 시작: 매켄지 킹 총리는 자유당 소속이셨습니다 —
-    22.97s  user  발화 끝
-    26.25s  user  발화 시작: …그분은 제이차 세계대전 때 총리였었나요?
-    26.25s  agent 발화 끝
-    28.90s  <ret> 발화 (turn7 첫 프레임)
-    28.98s  agent 발화 시작: <ret> 네, 맞습니다. 매켄지 킹 총리는 제이차 세계대전 기간 동안 캐나다를 이끌었습니다.
-    28.98s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.01s]: William Lyon Mackenzie King led Canada through most of World War II.
-    28.98s  user  발화 끝
-    35.00s  agent 발화 시작: 윌리엄 라이언 매켄지 킹 총리는 제이차 세계대전 기간 대부분을 이끌었습니다. 그 시기는 정말 힘든 시기였죠.
-    35.00s  agent 발화 끝
-    43.20s  agent 발화 끝
+     0.00s  user  발화 시작: 플로리다에서 제일 큰 도시 세 곳이 어디야?
+     3.23s  <ret> 발화 (turn1 첫 프레임)
+     3.55s  agent 발화 시작: <ret> 플로리다에서 가장 큰 도시 중 하나는 올랜도-키시미-샌포드입니다.
+     3.55s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.55s]: Orlando-Kissimmee-Sanford is one of the largest metropolitan areas in 
+     3.55s  user  발화 끝
+     7.10s  user  발화 시작: 응.
+     7.10s  agent 발화 끝
+     7.61s  user  발화 시작: 음, 그 도시들은 관광객한테 유명해?
+     7.61s  user  발화 끝
+    10.15s  agent 발화 시작: 올랜도-키시미-샌포드는 관광객들에게 아주 인기 있는 곳이에요.
+    10.15s  user  발화 끝
+    13.19s  user  발화 시작: 응.
+    13.19s  agent 발화 끝
+    13.70s  user  발화 시작: 잠깐만, 아 맞다, 오늘 저녁에 김치찌개 끓여야 되네.
+    13.70s  user  발화 끝
+    17.76s  user  발화 시작: 어… 그래서, 그 도시들은 뭐가 유명해?
+    17.76s  user  발화 끝
+    20.56s  <ret> 발화 (turn8 첫 프레임)
+    20.80s  agent 발화 시작: <ret> 올랜도는 월트 디즈니 월드 같은 테마파크로 유명한 관광지입니다.
+    20.80s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.06s]: Orlando is a popular destination, known for theme parks like Walt Disn
+    20.80s  user  발화 끝
+    24.86s  user  발화 시작: 응응.
+    24.86s  agent 발화 끝
+    25.36s  user  발화 끝

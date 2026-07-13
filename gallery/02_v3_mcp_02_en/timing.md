@@ -4,43 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Paul",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-13",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-06-08",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-03-30",
+#       "date": "2026-06-07",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-01-31",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "text": "User is planning a trip to Iceland in March."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-08-30",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-10-30",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2025-08-09",
+#       "category": "home",
+#       "text": "User's home address is 179 Maple Drive."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-22",
+#       "date": "2025-06-16",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -50,41 +60,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need a map of the ESPN website,  | S2 Oh, that’s great! Um, do they have | S3 …Is that a good time to visit, do  | S4 …hotel in Seoul for next week? Som
+# EXAMINER(FDB-v2) 단계: S1 I'm thinking about investing a lit | S2 That sounds perfect. Could you mak | S3 Do you know how long it would take | S4 Right. Thanks for reminding me. Ma
 
-     0.00s  user  발화 시작: I need a map of the ESPN website, looking at football conten
-     5.60s  <ret> 발화 (turn1 첫 프레임)
-     5.84s  agent 발화 시작: <ret> I’ve mapped ESPN’s football section—it shows links to 
-     5.84s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.06s]: (tool result) {"status": "success", "url map": {"https://www.espn.com/
-     5.84s  user  발화 끝
-    10.89s  user  발화 시작: That’s good. What’s the latest score for the New York Yankee
-    10.89s  agent 발화 끝
-    14.85s  <ret> 발화 (turn3 첫 프레임)
-    15.17s  agent 발화 시작: <ret> The Yankees are currently winning against the Red Sox,
-    15.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: {"status": "success", "score": "Yankees 5, Red Sox 3", "time": "July 1
-    15.17s  user  발화 끝
-    21.01s  user  발화 시작: Oh, that’s great! Um, do they have a good chance of winning 
-    21.01s  agent 발화 끝
-    26.45s  agent 발화 시작: It’s wonderful to hear you’re feeling positive about the gam
-    26.45s  user  발화 끝
-    34.24s  user  발화 시작: What’s the weather like in Seoul right now? I’m planning a t
-    34.24s  agent 발화 끝
-    38.74s  <ret> 발화 (turn7 첫 프레임)
-    38.90s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-eight point f
-    38.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.28s]: (tool result) {"city": "Seoul", "temperature": 28.5, "humidity": 68, "
-    38.90s  user  발화 끝
-    43.18s  user  발화 시작: …Is that a good time to visit, do you think?
-    43.18s  agent 발화 끝
-    47.07s  agent 발화 시작: It sounds like you’re already thinking ahead to enjoying you
-    47.07s  user  발화 끝
-    53.69s  agent 발화 시작: —with partly cloudy skies and a gentle breeze. It’s a fairly
-    53.69s  agent 발화 끝
-    58.75s  user  발화 시작: That sounds nice. Could you book me a…
-    58.75s  agent 발화 끝
-    61.86s  user  발화 시작: …hotel in Seoul for next week? Something affordable.
-    61.86s  user  발화 끝
-    64.89s  <ret> 발화 (turn13 첫 프레임)
-    64.97s  agent 발화 시작: <ret> I’ve found two options: Hotel Shilla Seoul for one hun
-    64.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.39s]: (tool result) {"hotels": [{"name": "Hotel Shilla Seoul", "price": 150,
-    64.97s  user  발화 끝
-    72.36s  agent 발화 끝
+     0.00s  user  발화 시작: I'm thinking about investing a little more in Apple. What's 
+     5.38s  <ret> 발화 (turn1 첫 프레임)
+     5.62s  agent 발화 시작: <ret> Apple is currently trading at one hundred ninety-three
+     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) AAPL: 193.22 USD, +0.85 (0.45%)
+     5.62s  user  발화 끝
+    11.65s  user  발화 시작: Hmm, that’s good to know. I’m also trying to figure out dinn
+    11.65s  agent 발화 끝
+    16.87s  agent 발화 시작: It's wonderful to think about the future and also enjoy the 
+    16.87s  user  발화 끝
+    22.89s  user  발화 시작: Yeah, well, are there any good Italian restaurants nearby?
+    22.89s  agent 발화 끝
+    26.19s  <ret> 발화 (turn5 첫 프레임)
+    26.51s  agent 발화 시작: <ret> Bella Italia, at one twenty-three Main Street, has a r
+    26.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.83s]: (tool result) [name: Bella Italia, address: 123 Main St, rating: 4.5, 
+    26.51s  user  발화 끝
+    33.34s  user  발화 시작: That sounds perfect. Could you make a reservation for two at
+    33.34s  agent 발화 끝
+    38.16s  <ret> 발화 (turn7 첫 프레임)
+    38.56s  agent 발화 시작: <ret> I've confirmed your reservation for two at Bella Itali
+    38.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Reservation confirmed for 2 at Bella Italia on 2026-07-1
+    38.56s  user  발화 끝
+    45.79s  user  발화 시작: Yeah.
+    45.79s  agent 발화 끝
+    46.19s  user  발화 시작: Great! Oh, and uh, what’s the weather looking like for tomor
+    46.19s  user  발화 끝
+    50.61s  agent 발화 시작: It's a relief to have those details handled, isn't it? Takin
+    50.61s  user  발화 끝
+    57.12s  <ret> 발화 (turn11 첫 프레임)
+    57.44s  agent 발화 시작: <ret> Tomorrow will be sunny with a high of twenty-five degr
+    57.44s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.02s]: (tool result) Tomorrow: 25.0°C, humidity 60%, wind 8.0 km/h, sunny.
+    57.44s  agent 발화 끝
+    63.46s  user  발화 시작: Perfect for a walk in the park. I was thinking of going to C
+    63.46s  agent 발화 끝
+    69.49s  agent 발화 시작: That sounds lovely. A walk in nature can be very restorative
+    69.49s  user  발화 끝
+    73.90s  user  발화 시작: Do you know how long it would take to get there by subway?
+    73.90s  agent 발화 끝
+    78.81s  <ret> 발화 (turn15 첫 프레임)
+    79.13s  agent 발화 시작: <ret> It will take approximately thirty-five minutes to reac
+    79.13s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.02s]: (tool result) Subway: 35 minutes, 2 transfers.
+    79.13s  user  발화 끝
+    85.15s  user  발화 시작: Yeah.
+    85.15s  agent 발화 끝
+    85.55s  user  발화 시작: Okay, good to know. I'm also trying to remember that budget 
+    85.55s  user  발화 끝
+    91.58s  agent 발화 시작: Sometimes revisiting our plans helps us see how far we've co
+    91.58s  user  발화 끝
+    96.80s  user  발화 시작: [2026-07-03] I need to reduce spending on entertainment by 2
+    96.80s  agent 발화 끝
+   100.81s  agent 발화 시작: You noted on July 3rd, 2026, that you needed to reduce spend
+   100.81s  user  발화 끝
+   107.64s  user  발화 시작: Right. Thanks for reminding me. Maybe I'll skip the movie th
+   107.64s  agent 발화 끝
+   112.46s  agent 발화 시작: That’s a very mindful choice. Small adjustments can have a b
+   112.46s  user  발화 끝
+   118.09s  user  발화 시작: Actually, what movies are playing this weekend?
+   118.09s  agent 발화 끝
+   120.82s  <ret> 발화 (turn24 첫 프레임)
+   120.90s  agent 발화 시작: <ret> "Echoes of the Past", a drama, is showing at two pm, f
+   120.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) [title: Echoes of the Past, genre: Drama, times: 14:00, 
+   120.90s  user  발화 끝
+   128.13s  user  발화 시작: Hmm, maybe just the 2 pm showing.
+   128.13s  agent 발화 끝
+   130.94s  agent 발화 시작: Enjoy the film! Remember, even small pleasures contribute to
+   130.94s  user  발화 끝
+   135.76s  agent 발화 끝

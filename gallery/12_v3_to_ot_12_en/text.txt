@@ -1,10 +1,10 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Orer, a thoughtful and soft-spoken personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Diol, a calm and patient counselor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Morgan",
+    "name": "Emma",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,74 +12,56 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-16",
+      "date": "2026-06-08",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "home",
+      "text": "User's home address is 762 Pine Court."
+    },
+    {
+      "date": "2025-11-05",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-09-06",
       "category": "pet",
       "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-04-01",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-03-06",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-11-14",
-      "category": "home",
-      "text": "User's home address is 184 Pine Court."
+      "date": "2025-07-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-26",
+      "date": "2026-02-08",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-08-06",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, who served as Canada’s prime minister for the longest ⟨ret@4.34s⟩ time?
-[  4.58s][moshi] «interrupted» ⟦⚡SPAN@4.58s: William Lyon Mackenzie King served as Canada’s prime minister for a total of 21 years and 154 days, making him⟧ It’s a thoughtful question, reflecting on leadership and time. William Lyon Mackenzie King served as Canada’s prime minister for a total of 21 years and 154 days—
-[ 13.42s][user ] «interrupts_prev» …was he prime minister during the Second World War?
-[ 16.37s][moshi] That's a very natural follow-up, considering the scale of that time. Yes, William Lyon Mackenzie King was indeed prime minister during much of the Second World War, from 1935 to 1948.
-[ 26.51s][user ] «backchannel» Wow.
-[ 26.84s][user ] Oh, okay. That’s good to know.
-[ 28.80s][moshi] It’s often during times of great challenge that leaders truly define their legacy, wouldn't you agree? It’s a time for steady hands.
-[ 36.00s][user ] I suppose so. Did anyone else come close to his ⟨ret@39.20s⟩ record?
-[ 39.60s][moshi] ⟦⚡SPAN@39.60s: Sir John A. Macdonald served as Canada’s first prime minister and held office for a total of 18 years and 168 ⟧ Others certainly left their mark, though none quite matched King’s length of service. Sir John A. Macdonald served as Canada’s first prime minister for 18 years and 168 days.
-[ 49.10s][user ] That’s a pretty significant difference, almost three years.
-[ 51.71s][moshi] It is a substantial span, isn’t it? Sometimes, those longer tenures allow for a deeper, more lasting impact on a nation’s course.
+[  0.00s][user ] Hi Diol…
+[  0.87s][user ] …I'm planning a Florida vacation. What are the biggest cities ⟨ret@5.39s⟩ there?
+[  5.63s][moshi] ⟦⚡SPAN@5.63s: Florida's three largest cities are Jacksonville, Miami, and Tampa, with populations of 949,611, 442,241, and 3⟧ Well, planning a trip sounds lovely. Florida’s three largest cities are Jacksonville, with a population of 949,611, Miami, at 442,241, and Tampa, with 384,959 residents.
+[ 16.46s][user ] Oh, that's interesting. I'd heard Orlando was really big.
+[ 20.36s][moshi] It’s easy to get those mixed up! Orlando-Kissimmee-Sanford has a large metropolitan area, but it isn’t one of the three largest *cities* by population.
+[ 30.75s][user ] «to_other» Did you remember to take the trash out?
+[ 34.22s][user ] Sorry about that. Could you find me some hotels in ⟨ret@38.58s⟩ Tampa?
+[ 38.98s][moshi] ⟦⚡SPAN@38.98s: (tool result) Tampa, FL: 123 hotels available. Prices from $79/night. Top rated: The Tampa EDITION (4.8 stars)⟧ In Tampa, Florida, there are currently 123 hotels available, starting from seventy-nine dollars a night. The Tampa EDITION is highly rated, at four point eight stars.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Tampa"}}

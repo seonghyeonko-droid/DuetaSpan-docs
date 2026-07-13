@@ -1,80 +1,97 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Kleara, a gentle and reflective supportive advisor who helps people with grief and change. <system>
+SYSTEM: <system> You are Broon, a gentle and reflective supportive advisor who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Rosa",
+    "name": "Quinn",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "40s",
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-24",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-12-10",
+      "date": "2026-04-06",
       "category": "home",
-      "text": "User's home address is 569 Oak Avenue."
+      "text": "User's home address is 154 Elm Street."
     },
     {
-      "date": "2025-08-06",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-03-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-07-21",
+      "date": "2026-03-05",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2026-01-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-07-04",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-24",
+      "date": "2026-04-26",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-14",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] uh, what kind of…
-[  1.64s][user ] …government does Israel have ⟨ret@3.44s⟩ today?
-[  3.68s][moshi] ⟦⚡SPAN@3.68s: Israel has a parliamentary democracy, with universal suffrage for citizens over eighteen years of age.⟧ It’s a parliamentary democracy, where citizens eighteen and older have the right to vote. It sounds like you’re thinking about how systems of governance shape lives.
-[ 14.33s][user ] welll… is it always been like that?
-[ 17.20s][moshi] It’s evolved, but Israel adopted a parliamentary system with its declaration of independence in 1948.
-[ 23.34s][user ] «backchannel» Really?
-[ 23.75s][moshi] It’s natural to wonder about the foundations of a nation, and how those foundations influence its present.
-[ 30.71s][user ] can you find me some more detail on that, uh, 1948 ⟨ret@35.38s⟩ thing?
-[ 35.62s][moshi] ⟦⚡SPAN@35.62s: (tool result) The Israeli Declaration of Independence was proclaimed on May 14, 1948, one day before the end o⟧ The declaration of independence was proclaimed on May fourteenth, 1948—the day before the British Mandate for Palestine ended. It's a moment of significant transition.
-      CALL: {"function": "search", "arguments": {"query": "Israel declaration of independence 1948"}}
-[ 45.45s][user ] okay, thanks. I appreciate that.
+[  0.00s][user ] I was wondering, where does the term “blue chip” actually come ⟨ret@4.56s⟩ from?
+[  4.80s][moshi] ⟦⚡SPAN@4.80s: The term “blue chip” originated in poker, where blue chips had the highest value.⟧ It’s fascinating to look at the origins of phrases, isn’t it? The term “blue chip” actually comes from poker, where blue chips had the highest value.
+[ 15.20s][user ] «backchannel» Mhm.
+[ 15.60s][user ] Oh, that’s interesting! So, like, the best ones?
+[ 18.80s][moshi] Precisely. It implied something reliable and of high worth, much like those chips. It’s a lovely image, really.
+[ 25.99s][user ] «backchannel» Okay.
+[ 26.39s][user ] Hmm, and when did people start using it for stocks then? ⟨ret@30.71s⟩
+[ 30.79s][moshi] ⟦⚡SPAN@30.79s: The term was adopted by investors in the 1920s to describe stocks of established, nationally recognized compan⟧ Investors began using it for stocks in the nineteen twenties, describing stocks of established, nationally recognized companies. It carried that same sense of reliability.
+[ 40.39s][user ] «backchannel» Yeah.
+[ 40.79s][user ] So it’s not a really old term, comparatively?
+[ 43.99s][moshi] Not as old as one might think, no. It’s relatively recent in financial language, dating back to the early twentieth century.
+[ 52.39s][user ] Welll… that’s surprising. I always thought it was—
+[ 55.59s][user ] …do they still *use* blue chips, or is it just a saying now? ⟨ret@60.71s⟩
+[ 60.79s][moshi] ⟦⚡SPAN@60.79s: While the physical blue chips are rarely used, the term remains popular in financial circles.⟧ Though physical blue chips are rarely used nowadays, the term remains quite popular in financial circles, referring to—
+[ 67.99s][user ] «backchannel» Right.
+[ 68.39s][moshi] Still very relevant, yes. It’s a shorthand for quality and stability, a quick way to assess investment potential.
+[ 75.58s][user ] «backchannel» Uh-huh.
+[ 75.98s][user ] Okay, so if I’m looking at a list of stocks, what qualities would make something a “blue chip”? ⟨ret@83.10s⟩
+[ 83.18s][moshi] ⟦⚡SPAN@83.18s: Blue chip stocks typically exhibit consistent earnings, dividend payments, and strong market positions.⟧ Blue chip stocks typically exhibit consistent earnings, regular dividend payments, and hold strong positions within their market. They’re quite stable.
+[ 91.18s][user ] «backchannel» Okay.
+[ 91.58s][user ] Are there any specific companies that are always considered blue ⟨ret@95.74s⟩ chips?
+[ 95.98s][moshi] ⟦⚡SPAN@95.98s: Examples of blue chip stocks include Johnson & Johnson, Procter & Gamble, and Coca-Cola.⟧ Companies like Johnson & Johnson, Procter & Gamble, and Coca-Cola are often cited as examples of blue chip stocks.
+[103.58s][user ] Those are all pretty well-known brands. Makes sense.
+[106.78s][moshi] They are indeed. Familiarity often reflects that long-term stability and consistent performance. It’s comforting, isn’t it?
+[113.18s][user ] I suppose so. Is there a way to *find* a list of current blue chip ⟨ret@119.18s⟩ stocks?
+[119.58s][moshi] ⟦⚡SPAN@119.58s: (tool result) A recent article by Investopedia lists Apple, Microsoft, and Amazon as top blue-chip stocks; Inv⟧ According to Investopedia, Apple, Microsoft, and Amazon are currently listed as top blue chip stocks.
+      CALL: {"function": "search", "arguments": {"query": "current blue chip stocks list"}}
+[125.57s][user ] Those are definitely tech giants. Anything outside of ⟨ret@128.93s⟩ tech?
+[129.17s][moshi] ⟦⚡SPAN@129.17s: (tool result) JPMorgan Chase, Johnson & Johnson, and Walmart are often cited as non-tech blue chip stocks; For⟧ JPMorgan Chase, Johnson & Johnson, and Walmart are often cited as blue chip stocks outside the tech sector.
+      CALL: {"function": "search", "arguments": {"query": "blue chip stocks non-tech"}}
+[136.37s][user ] «backchannel» Mm-hmm.
+[136.77s][user ] That’s a good mix. So, is it a risky investment, generally?
+[141.17s][moshi] Generally, they’re considered less risky than other investments, but no investment is entirely without risk, of course.
+[147.97s][user ] Right, nothing is guaranteed. What about smaller companies, could they *become* blue chips?
+[153.17s][moshi] Companies can earn that status over time with consistent performance and growth. It takes dedication.
+[159.17s][user ] That’s encouraging! So it's not just about being big now?
+[163.17s][moshi] Not at all. It’s about sustained success and establishing a strong reputation over many years. It’s a journey.
+[170.37s][user ] That makes a lot of sense. Thank you, Broon.
+[173.97s][moshi] You're most welcome. It’s been a pleasure discussing this with you, and I’m glad I could offer some clarity.

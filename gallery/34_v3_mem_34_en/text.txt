@@ -1,51 +1,51 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Bio, a kind and steady counselor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Ion, a kind and steady supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Charlotte",
+    "name": "Aiden",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "late 20s",
+    "nationality": "Australian",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-15",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-12-27",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
-      "date": "2026-02-03",
+      "date": "2025-10-13",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-10-09",
+      "category": "home",
+      "text": "User's home address is 191 Pine Court."
+    },
+    {
+      "date": "2025-08-19",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-08-31",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-08-04",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2025-06-01",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-07-24",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-21",
+      "date": "2025-10-20",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -56,12 +56,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Charlotte, I’m Bio. It’s lovely to meet you.
-[  3.32s][user ] «backchannel» Right.
-[  3.69s][user ] Hi Bio, that's good to hear. I need to get to a new restaurant—El Sol—from my place. ⟨ret@9.89s⟩
-[  9.97s][moshi] ⟦⚡SPAN@9.97s: [2025-06-01] User has a Golden Retriever named Max.⟧ I see you have a Golden Retriever named Max. To start, I'll need your current location.
-[ 15.87s][user ] Oh, right. I live at 300 Page Street, San Francisco, California. ⟨ret@19.85s⟩
-[ 19.93s][moshi] «interrupted» ⟦⚡SPAN@19.93s: 300 Page Street, San Francisco, California.⟧ Thank you. Let me find directions to El Sol from 300 Page Street—
-[ 24.73s][user ] «interrupts_prev» …is there parking near the restaurant? I'm ⟨ret@27.44s⟩ driving.
-[ 27.68s][moshi] ⟦⚡SPAN@27.68s: (tool result) Parking: Public parking lots available within 0.5 miles; estimated cost $6/hour.⟧ There are public parking lots within half a mile, costing about six dollars an hour. Now, back to those directions…
-      CALL: {"function": "maps_search_places", "arguments": {"query": "parking near El Sol, San Francisco"}}
+[  0.00s][moshi] Hi Aiden, I'm Ion. It's lovely to meet you.
+[  3.24s][user ] «backchannel» Right.
+[  3.60s][user ] Um, well, I was actually hoping to get directions. ⟨ret@6.76s⟩
+[  6.84s][moshi] ⟦⚡SPAN@6.84s: [2025-10-09] User's home address is 191 Pine Court.⟧ Aiden. Your home address is listed as 191 Pine Court in Sydney, Australia. Where would you like directions to?
+[ 13.68s][user ] To that fermentation shop we talked about last time. ⟨ret@16.84s⟩
+[ 16.92s][moshi] ⟦⚡SPAN@16.92s: [2025-10-13] User is into home fermentation.⟧ Ah, yes! You're interested in home fermentation, so I presume you mean "The Grainery", a shop specializing in fermentation supplies.
+[ 24.12s][user ] «backchannel» Yeah.
+[ 24.48s][user ] Exactly! How long will it take to get ⟨ret@27.48s⟩ there?
+[ 27.72s][moshi] ⟦⚡SPAN@27.72s: (tool result) {"distance": "7.2 km", "duration": "15 minutes", "route": "Via Pacific Hwy"}⟧ It’s 7.2 kilometers and should take about fifteen minutes via Pacific Highway. Would you like me to send those directions to your phone?
+      CALL: {"function": "map_directions", "arguments": {"origin": "191 Pine Court, Sydney, Australia", "destination": "The Grainery, Sydney, Australia"}}

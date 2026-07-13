@@ -1,91 +1,81 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Viona, a practical and reassuring wellness coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Klae, a grounded and empathetic counselor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Alex",
+    "name": "Casey",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-18",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-01-25",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-12-31",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-10-24",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
-    },
-    {
-      "date": "2025-06-24",
+      "date": "2026-01-27",
       "category": "home",
-      "text": "User's home address is 441 Elm Street."
+      "text": "User's home address is 469 Oak Avenue."
     },
     {
-      "date": "2025-06-11",
+      "date": "2026-01-13",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-08-07",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-07-21",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-17",
-      "title": "Researching a used car",
+      "date": "2025-06-30",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you have the phone number for Anya ⟨ret@2.70s⟩ Petrova?
-[  3.10s][moshi] ⟦⚡SPAN@3.10s: (no information found)⟧ I’ve checked several sources, but I couldn’t find a phone number for Anya Petrova. It doesn’t appear to be publicly listed.
-      CALL: {"function": "search", "arguments": {"query": "Anya Petrova phone number"}}
-[ 10.32s][user ] «backchannel» Yeah.
-[ 10.67s][user ] Oh, okay. That's a shame.
-[ 12.39s][moshi] It can be frustrating when contact information isn’t readily available.
-[ 15.83s][user ] Yes, actually. What's the weather like in Seoul right ⟨ret@18.87s⟩ now?
-[ 19.27s][moshi] ⟦⚡SPAN@19.27s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
+[  0.00s][user ] Do you have a contact number for Anya…
+[  2.87s][user ] …Sharma? I met her at the conference last ⟨ret@5.69s⟩ year.
+[  6.09s][moshi] ⟦⚡SPAN@6.09s: (no information found)⟧ I’ve checked, but I couldn’t find a publicly listed contact number for Anya Sharma.
+      CALL: {"function": "search", "arguments": {"query": "Anya Sharma contact number"}}
+[ 11.10s][user ] «backchannel» Yeah, yeah.
+[ 11.82s][user ] Oh, that's a shame. Well, what's the weather like in Seoul right ⟨ret@16.08s⟩ now?
+[ 16.48s][moshi] ⟦⚡SPAN@16.48s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with 74 percent humidity and a wind speed of 5.5 kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 27.19s][user ] That sounds lovely. I’m thinking of going for a walk.
-[ 30.63s][moshi] That’s a wonderful idea. Fresh air and a little movement can be so restorative.
-[ 35.44s][user ] «backchannel» Yeah.
-[ 35.79s][user ] I've been feeling really stressed lately, and I need to find a way to relax.
-[ 40.95s][moshi] «interrupted» It’s very common to feel overwhelmed sometimes.
-[ 43.36s][user ] «interrupts_prev» …Do you know of any good mindfulness apps?
-[ 46.11s][moshi] Mindfulness apps can be a really effective way to build a practice. There are many options available, each with—
-[ 52.65s][user ] «backchannel» Yeah, yeah.
-[ 53.34s][moshi] …different approaches. Headspace and Calm are both very popular, offering guided meditations and sleep stories. Insight Timer has a huge library of free content, too.
-[ 61.94s][user ] What time is it now? ⟨ret@63.58s⟩
-[ 63.66s][moshi] ⟦⚡SPAN@63.66s: (tool result) It is Friday, July 10, 2026 at 3:51 PM in Asia/Seoul right now.⟧ It is currently 3:51 PM in Seoul, on Friday, July 10th, 2026. A perfect time to start unwinding, perhaps?
-      CALL: {"function": "get_time", "arguments": {}}
-[ 70.20s][user ] That’s right. Can you find me some relaxing music? ⟨ret@73.14s⟩
-[ 73.30s][moshi] ⟦⚡SPAN@73.30s: (tool result) "Weightless" by Marconi Union is often cited as the most relaxing song ever, designed to reduce ⟧ “Weightless” by Marconi Union is often cited as the most relaxing song ever, designed to reduce anxiety and lower your heart rate, according to a study by Mindlab.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"query": "relaxing music"}}
-[ 82.93s][user ] «backchannel» Yeah.
-[ 83.28s][user ] Sounds good! Play it for ⟨ret@84.94s⟩ me.
-[ 85.34s][moshi] ⟦⚡SPAN@85.34s: (tool result) Playing "Weightless" by Marconi Union.⟧ Okay, “Weightless” by Marconi Union is now playing. I hope it helps you feel more at peace.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"title": "Weightless", "artist": "Marconi Union"}}
+[ 24.36s][moshi] It sounds quite pleasant there, actually.
+[ 26.51s][user ] «backchannel» Yeah.
+[ 26.86s][user ] That does sound nice. Uh, maybe I should book a hotel there for next week?
+[ 32.24s][moshi] That’s a lovely idea! Planning a trip can be so exciting.
+[ 36.18s][user ] «backchannel» Yeah.
+[ 36.53s][user ] Yeah, um, something near Myeongdong, if ⟨ret@38.72s⟩ possible.
+[ 39.04s][moshi] ⟦⚡SPAN@39.04s: (tool result) L7 Myeongdong by LOTTE, 4.5 stars, from ₩180,000 per night, confirmation ID: 8A9Z2X.⟧ I found L7 Myeongdong by LOTTE, a four-and-a-half-star hotel, starting at ₩180,000 per night, and it’s confirmed with ID 8A9Z2X.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Myeongdong, Seoul", "checkInDate": "2026-07-17", "checkOutDate": "2026-07-24"}}
+[ 46.21s][moshi] Does that sound good to you?
+[ 48.35s][user ] «backchannel» Uh-huh.

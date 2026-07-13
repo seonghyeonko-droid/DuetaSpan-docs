@@ -4,123 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Olivia",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-27",
+#       "date": "2026-06-04",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
-#     },
-#     {
-#       "date": "2025-10-23",
+#       "date": "2025-11-28",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-10-19",
+#       "date": "2025-07-25",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, Frellara? That’s… an unusual n | S2 I’ve *heard* that’s helpful, but I | S3 No, not really. I just check it wh | S4 It’s easy to say, but… I often fee
+# EXAMINER(FDB-v2) 단계: S1 What exactly does “peaceful rest”  | S2 I’ve heard of mindfulness, is that | S3 Maybe. It’s just… I always feel li | S4 Like what? I'm willing to try anyt
 
-     0.00s  agent 발화 시작: Bonjour, Olivia. I'm Frellara.
-     1.72s  user  발화 시작: Uh, Frellara? That’s… an unusual name. What exactly do you *
-     1.72s  agent 발화 끝
-     6.45s  agent 발화 시작: I support people in building routines and habits that nurtur
-     6.45s  user  발화 끝
-    14.62s  user  발화 시작: Welll… I’m just feeling so overwhelmed lately. Work is crazy
-    14.62s  agent 발화 끝
-    20.64s  agent 발화 시작: That’s completely understandable. Many people feel that way.
-    20.64s  user  발화 끝
-    27.09s  user  발화 시작: Right.
-    27.09s  agent 발화 끝
-    27.52s  user  발화 시작: It’s just… everything piling up. Emails, meetings, errands. 
-    27.52s  user  발화 끝
-    33.55s  agent 발화 시작: It sounds like you’re carrying a heavy mental load. Have you
-    33.55s  user  발화 끝
-    41.29s  user  발화 시작: Mm-hmm.
-    41.29s  agent 발화 끝
-    41.72s  user  발화 시작: I’ve *heard* that’s helpful, but I never seem to actually do
-    41.72s  user  발화 끝
-    48.60s  agent 발화 시작: It’s a common hurdle. Sometimes, simply acknowledging the ov
-    48.60s  user  발화 끝
-    55.48s  user  발화 시작: Uh-huh.
-    55.48s  agent 발화 끝
-    55.91s  agent 발화 시작: It’s like trying to hold water in your hands—the tighter you
-    55.91s  user  발화 끝
-    67.09s  user  발화 시작: That’s… a nice image. Maybe. I don’t know if it’ll work for 
-    67.09s  agent 발화 끝
-    72.68s  agent 발화 시작: It’s okay to be skeptical. We’ll experiment. What’s one smal
-    72.68s  user  발화 끝
-    79.56s  user  발화 시작: Right.
-    79.56s  agent 발화 끝
-    79.99s  user  발화 시작: Hmm… maybe responding to that email from Jean-Pierre? It’s b
-    79.99s  user  발화 끝
-    86.01s  agent 발화 시작: That’s a wonderful starting point. A small win can create mo
-    86.01s  user  발화 끝
-    94.18s  user  발화 시작: No, not really. I just check it whenever I have a free momen
-    94.18s  agent 발화 끝
-   101.07s  agent 발화 시작: That can contribute to feeling overwhelmed. Perhaps setting 
-   101.07s  user  발화 끝
-   107.52s  user  발화 시작: I guess so. But what if something urgent comes up during tha
-   107.52s  agent 발화 끝
-   113.11s  agent 발화 시작: We can build in flexibility. Maybe designate a quick check-i
-   113.11s  user  발화 끝
-   121.71s  user  발화 시작: That sounds… less stressful, actually. Okay, I can try that.
-   121.71s  agent 발화 끝
-   126.01s  agent 발화 시작: Excellent. Remember, it’s about progress, not perfection. Sm
-   126.01s  user  발화 끝
-   131.17s  user  발화 시작: It’s easy to say, but… I often feel guilty taking time for m
-   131.17s  agent 발화 끝
-   136.76s  agent 발화 시작: That guilt is something we can address, Olivia. Self-care is
-   136.76s  user  발화 끝
-   144.93s  user  발화 시작: Mhm.
-   144.93s  agent 발화 끝
-   145.36s  user  발화 시작: [sigh] I know, I know. It's just hard to internalize.
-   145.36s  user  발화 끝
-   149.66s  agent 발화 시작: It takes practice. Perhaps we could explore what activities 
-   149.66s  user  발화 끝
-   157.40s  user  발화 시작: Mm-hmm.
-   157.40s  agent 발화 끝
-   157.83s  user  발화 시작: I used to paint, years ago. I haven’t touched a brush in age
-   157.83s  user  발화 끝
-   163.43s  agent 발화 시작: That sounds lovely. Perhaps rediscovering that creative outl
-   163.43s  user  발화 끝
-   171.60s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Quinn, welcome. I’m Dun, and I help people find more p
+     7.93s  user  발화 시작: What exactly does “peaceful rest” mean, coming from you?
+     7.93s  agent 발화 끝
+    11.50s  agent 발화 시작: It means finding what *you* need to truly recharge, Quinn. N
+    11.50s  user  발화 끝
+    22.21s  user  발화 시작: Okay.
+    22.21s  agent 발화 끝
+    22.60s  user  발화 시작: Um… I guess… not feeling like I’m constantly running on empt
+    22.60s  user  발화 끝
+    28.55s  agent 발화 시작: That feeling of depletion is very common, Quinn. It sounds l
+    28.55s  user  발화 끝
+    37.28s  user  발화 시작: Yeah, I think I am. Work’s been… a lot. And I keep having tr
+    37.28s  agent 발화 끝
+    44.42s  agent 발화 시작: It’s very typical for work stress to follow us home, especia
+    44.42s  user  발화 끝
+    54.73s  user  발화 시작: Yeah, totally.
+    54.73s  agent 발화 끝
+    55.52s  user  발화 시작: Totally. I just replay everything that happened, everything 
+    55.52s  user  발화 끝
+    61.07s  agent 발화 시작: That’s a very active mind, Quinn. It's trying to solve probl
+    61.07s  user  발화 끝
+    70.19s  user  발화 시작: Yeah.
+    70.19s  agent 발화 끝
+    70.59s  agent 발화 시작: Grounding can help bring you back to the present moment, awa
+    70.59s  user  발화 끝
+    81.69s  user  발화 시작: I’ve heard of mindfulness, is that similar?
+    81.69s  agent 발화 끝
+    84.47s  agent 발화 시작: Mindfulness is a beautiful practice, and grounding is often 
+    84.47s  user  발화 끝
+    94.38s  user  발화 시작: Sounds good. I’m going to a concert this weekend, actually. 
+    94.38s  agent 발화 끝
+   100.33s  agent 발화 시작: Music can be wonderfully restorative, Quinn. A chance to los
+   100.33s  user  발화 끝
+   108.66s  user  발화 시작: Mhm.
+   108.66s  agent 발화 끝
+   109.06s  user  발화 시작: Mostly indie stuff, a little electronic. I’m seeing this ban
+   109.06s  user  발화 끝
+   115.00s  agent 발화 시작: Lunar Bloom… that sounds lovely. The Fillmore has a great at
+   115.00s  user  발화 끝
+   124.52s  user  발화 시작: Yeah.
+   124.52s  agent 발화 끝
+   124.92s  user  발화 시작: Maybe. It’s just… I always feel like I *should* be doing som
+   124.92s  user  발화 끝
+   132.85s  agent 발화 시작: That sense of obligation can be a heavy burden, Quinn. It's 
+   132.85s  user  발화 끝
+   142.76s  user  발화 시작: Uh-huh.
+   142.76s  agent 발화 끝
+   143.16s  user  발화 시작: Easy for you to say, right? You probably don’t have deadline
+   143.16s  user  발화 끝
+   148.71s  agent 발화 시작: You’re right to point that out, Quinn. I don’t experience th
+   148.71s  user  발화 끝
+   158.63s  user  발화 시작: Okay, fair enough. I guess… it’s just hard to let go.
+   158.63s  agent 발화 끝
+   162.99s  agent 발화 시작: It takes practice, Quinn. Like building any new habit. We ca
+   162.99s  user  발화 끝
+   171.71s  user  발화 시작: Yeah.
+   171.71s  agent 발화 끝
+   172.11s  user  발화 시작: Like what? I'm willing to try anything at this point.
+   172.11s  user  발화 끝
+   176.07s  agent 발화 시작: We could try a short body scan meditation before bed, Quinn.
+   176.07s  user  발화 끝
+   184.40s  user  발화 시작: Journaling… I haven’t done that since high school.
+   184.40s  agent 발화 끝
+   187.58s  agent 발화 시작: It doesn't have to be formal, Quinn. Just a few minutes to j
+   187.58s  user  발화 끝
+   196.70s  user  발화 시작: Hmm… maybe. I’ll think about it. Thanks, Dun.
+   196.70s  agent 발화 끝
+   199.87s  agent 발화 시작: You’re very welcome, Quinn. Remember, small steps can lead t
+   199.87s  user  발화 끝
+   207.80s  agent 발화 끝

@@ -1,54 +1,51 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Arira, a warm and attentive personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Elil, a warm and attentive wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Manon",
+    "name": "Clara",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
+    "nationality": "French",
     "gender": "female",
-    "age_range": "50s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-04-22",
+      "date": "2026-06-28",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-10-01",
+      "date": "2026-02-27",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-01-09",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-05-29",
-      "category": "home",
-      "text": "User's home address is 51 Cedar Lane."
+      "date": "2026-01-05",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-11-19",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-01",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-16",
+      "date": "2025-09-06",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -56,25 +53,46 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-19",
-      "title": "Setting up a home network",
+      "date": "2025-08-26",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Create a directory for pictures from my trip to Rome in Italy. ⟨ret@4.21s⟩
-[  4.29s][moshi] «interrupted» ⟦⚡SPAN@4.29s: (tool result) Directory "Rome Trip Pictures" created successfully.⟧ I’ve created a directory named “Rome Trip Pictures” for you—
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "Rome Trip Pictures"}}
-[  7.87s][user ] …Can you also create one…
-[  9.66s][user ] …for videos from the same ⟨ret@11.41s⟩ trip?
-[ 11.81s][moshi] ⟦⚡SPAN@11.81s: (tool result) Directory "Rome Trip Videos" created successfully.⟧ I’ve now created a directory named “Rome Trip Videos” as well.
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "Rome Trip Videos"}}
-[ 15.75s][user ] «backchannel» Uh-huh.
-[ 16.11s][moshi] It's so lovely that you went to Rome; it's such a beautiful city to capture in photos and videos.
-[ 22.91s][user ] Thanks, Arira. That’s great. Do you know when the Colosseum was built? ⟨ret@27.12s⟩
-[ 27.20s][moshi] ⟦⚡SPAN@27.20s: The Colosseum, originally known as the Flavian Amphitheatre, was built between 70–80 AD under the Roman empero⟧ The Colosseum’s construction began between seventy and eighty AD, under the emperors Vespasian and Titus— —and was finished in eighty AD, quite a feat of engineering for the time!
+[  0.00s][user ] I’d like to buy four tickets for Phantom of the Opera in Boston on August twelfth. ⟨ret@6.33s⟩
+[  6.41s][moshi] ⟦⚡SPAN@6.41s: (tool result) Confirmation: PHANTOM-20260812-BOS-4TIX⟧ I’ve secured four tickets for Phantom of the Opera in Boston on August twelfth. Your confirmation number is PHANTOM-20260812-BOS-4TIX.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Phantom of the Opera", "location": "Boston", "date": "August twelfth", "number_of_tickets": "four"}}
+[ 14.02s][moshi] It sounds like a lovely evening is in store for you.
+[ 18.43s][user ] That’s great! Um, could you check what the weather will be like in Boston that ⟨ret@24.60s⟩ day?
+[ 24.84s][moshi] ⟦⚡SPAN@24.84s: (tool result) August 12, 2026: 26.1°C, humidity 68%, wind 8.2 km/h, clear skies.⟧ The forecast for Boston on August twelfth is 26.1 degrees Celsius, with 68 percent humidity and clear skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Boston", "date": "August twelfth"}}
+[ 32.05s][moshi] It appears you've chosen a beautiful day for the show!
+[ 36.06s][user ] That sounds perfect. Do you think we should make a dinner reservation nearby?
+[ 41.26s][moshi] That's a wonderful idea; planning ahead minimizes stress.
+[ 44.47s][user ] Can you find some restaurants near the Boston Opera ⟨ret@48.08s⟩ House?
+[ 48.48s][moshi] ⟦⚡SPAN@48.48s: (tool result) 1. Grill 23 & Bar (0.2 km, American, $$$) 2. No. 9 Park (0.8 km, Italian, $$$$) 3. O Ya (0.5 km,⟧ Grill 23 & Bar is 0.2 kilometers away, serving American cuisine. No. 9 Park offers Italian at 0.8 kilometers, and O Ya has Japanese cuisine, 0.5 kilometers away.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Boston Opera House"}}
+[ 59.69s][moshi] «interrupted» O Ya is highly regarded for its innovative sushi — a truly special dining experience. —
+[ 66.10s][user ] «interrupts_prev» …Actually, can you check if they have any availability for four people around 6:30 PM on August ⟨ret@73.07s⟩ twelfth?
+[ 73.31s][moshi] ⟦⚡SPAN@73.31s: (tool result) Reservation confirmed: O Ya, August 12, 2026, 6:30 PM, party of 4. Confirmation ID: OYA-20260812⟧ Yes, O Ya has availability for four people at 6:30 PM on August twelfth. Your confirmation ID is OYA-20260812-630-4.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "O Ya", "date": "August twelfth", "time": "6:30 PM", "number_of_people": "four"}}
+[ 80.93s][moshi] That should give you plenty of time to enjoy your meal before the performance.
+[ 86.53s][user ] «backchannel» Right.
+[ 86.94s][user ] Fantastic! That's all set then.
+[ 88.94s][moshi] It's a pleasure to help create a seamless experience.
+[ 92.54s][user ] «backchannel» Mhm.
+[ 92.94s][user ] Okay, now, do you think we should look into parking near the Opera ⟨ret@98.23s⟩ House?
+[ 98.55s][moshi] ⟦⚡SPAN@98.55s: (tool result) Driving directions to Boston Opera House from current location. Estimated time: 15 minutes, dist⟧ From your current location, driving to the Boston Opera House takes approximately fifteen minutes and covers 7.2 kilometers. Parking is available in the area.
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Boston Opera House", "mode": "driving"}}
+[108.17s][moshi] Knowing your parking options will help you relax and focus on enjoying the evening.
+[113.78s][user ] Are there any parking garages with good ⟨ret@116.66s⟩ reviews?
+[116.98s][moshi] ⟦⚡SPAN@116.98s: (tool result) Boston Common Garage: 4.6 stars (1200+ reviews). LAZ Parking - 135 Clarendon St: 4.3 stars (850+⟧ Boston Common Garage has 4.6 stars from over 1200 reviews. LAZ Parking on Clarendon Street has 4.3 stars from 850 reviews, according to boston.com/parking.
+      CALL: {"function": "search", "arguments": {"query": "best parking garages near Boston Opera House reviews"}}
+[126.60s][moshi] Reading reviews can offer valuable insights from other theatergoers.
+[130.20s][user ] That's really helpful. Thanks, Elil.
+[132.21s][moshi] You're most welcome. It’s my privilege to support you in creating joyful moments.

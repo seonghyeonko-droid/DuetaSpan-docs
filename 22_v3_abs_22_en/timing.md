@@ -4,77 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Charlie",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "German"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-06-18",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-05-04",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-02-13",
+#       "category": "home",
+#       "text": "User's home address is 382 Pine Court."
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-11-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-10",
+#       "date": "2025-07-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-21",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-31",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Why wasn't philosophy taught in Ot | S2 Oh, um… that’s a shame. | S3 Well, what *was* taught there? | S4 Do you think that limited their pr
+# EXAMINER(FDB-v2) 단계: S1 Who didn't discover Neptune? | S2 I'm planning a trip to see some pl | S3 …can you find me some observatorie | S4 …like there right now?
 
-     0.00s  user  발화 시작: Why wasn't philosophy taught in Ottoman madaris?
-     2.60s  <ret> 발화 (turn1 첫 프레임)
-     2.76s  agent 발화 시작: <ret> But unfortunately, I haven’t been able to find any inf
-     2.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: (no information found)
-     2.76s  user  발화 끝
-    11.05s  user  발화 시작: Oh, um… that’s a shame.
-    11.05s  agent 발화 끝
-    13.03s  agent 발화 시작: It is a bit of a mystery, isn’t it? Perhaps it’s a topic tha
-    13.03s  user  발화 끝
-    21.71s  user  발화 시작: Yeah.
-    21.71s  agent 발화 끝
-    22.11s  user  발화 시작: Well, what *was* taught there?
-    22.11s  user  발화 끝
-    24.00s  <ret> 발화 (turn6 첫 프레임)
-    24.08s  agent 발화 시작: <ret> Ottoman madrasas mainly taught Islamic theology, law, 
-    24.08s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.71s]: The curriculum in Ottoman madrasas generally focused on Islamic theolo
-    24.08s  user  발화 끝
-    30.79s  user  발화 시작: Mhm.
-    30.79s  agent 발화 끝
-    31.19s  agent 발화 시작: It sounds like a very rigorous education, focused on religio
-    31.19s  user  발화 끝
-    40.27s  user  발화 시작: Do you think that limited their progress?
-    40.27s  agent 발화 끝
-    43.03s  agent 발화 시작: That’s a thoughtful question. A focused curriculum can have 
-    43.03s  user  발화 끝
-    53.69s  agent 발화 끝
+     0.00s  user  발화 시작: Who didn't discover Neptune?
+     1.59s  agent 발화 시작: It seems there isn't a documented record of who *didn't* dis
+     1.59s  user  발화 끝
+     8.77s  user  발화 시작: Oh. Well, what about Uranus? Who found that one?
+     8.77s  agent 발화 끝
+    12.12s  <ret> 발화 (turn3 첫 프레임)
+    12.36s  agent 발화 시작: <ret> It was actually John Herschel who first sighted Uranus
+    12.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: Uranus was first sighted by astronomer John Herschel in 1781, though h
+    12.36s  user  발화 끝
+    21.13s  user  발화 시작: Okay.
+    21.13s  agent 발화 끝
+    21.53s  agent 발화 시작: It’s fascinating how discoveries can sometimes be misidentif
+    21.53s  user  발화 끝
+    29.11s  user  발화 시작: Mm-hmm.
+    29.11s  agent 발화 끝
+    29.51s  user  발화 시작: I'm planning a trip to see some planets.
+    29.51s  user  발화 끝
+    32.69s  agent 발화 시작: That sounds like a wonderful idea! Planning a trip centered 
+    32.69s  user  발화 끝
+    37.88s  user  발화 시작: …can you find me some observatories in California?
+    37.88s  agent 발화 끝
+    40.75s  <ret> 발화 (turn10 첫 프레임)
+    41.07s  agent 발화 시작: <ret> There are some amazing options in California, like Pal
+    41.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.96s]: Palomar Observatory in San Diego County, California, is a renowned ast
+    41.07s  user  발화 끝
+    55.02s  user  발화 시작: Griffith sounds good. What's the weather…
+    55.02s  agent 발화 끝
+    57.42s  user  발화 시작: …like there right now?
+    57.42s  user  발화 끝
+    58.61s  <ret> 발화 (turn13 첫 프레임)
+    59.01s  agent 발화 시작: <ret> Right now at Griffith Observatory, it’s twenty-four po
+    59.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.57s]: (tool result) 24.3°C, humidity 62%, wind 3.2 km/h
+    59.01s  user  발화 끝
+    68.58s  agent 발화 끝

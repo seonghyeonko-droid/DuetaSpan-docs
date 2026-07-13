@@ -4,48 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Taylor",
+#     "name": "Ada",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
+#       "date": "2026-06-24",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-04-25",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-20",
+#       "date": "2026-02-14",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "text": "User is planning a trip to Lisbon in December."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-01-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-07-23",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "home",
-#       "text": "User's home address is 575 Birch Road."
+#       "date": "2025-07-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-03",
+#       "date": "2026-06-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,83 +53,69 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-19",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-28",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Barien, how are you today? | S2 So, it was a Civil War thing then? | S3 So, it was actually *challenged* a | S4 That's true. What's the weather…
+# EXAMINER(FDB-v2) 단계: S1 Hey, when does Day Z come out for  | S2 I was hoping for something new, th | S3 That sounds pretty cool, actually. | S4 Eight players, that's awesome. Is 
 
-     0.00s  user  발화 시작: Hi Barien, how are you today?
-     2.22s  agent 발화 시작: I’m doing wonderfully, thank you for asking. It’s a lovely d
-     2.22s  user  발화 끝
-     9.24s  user  발화 시작: Maybe later. I was wondering… when did “In God We Trust” fir
-     9.24s  agent 발화 끝
-    14.76s  <ret> 발화 (turn3 첫 프레임)
-    15.16s  agent 발화 시작: <ret> The United States first authorized the use of “In God 
-    15.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.42s]: The United States first authorized the use of “In God We Trust” on coi
-    15.16s  user  발화 끝
-    29.58s  user  발화 시작: 1864? Wow, that’s… earlier than I expected. Was that during 
-    29.58s  agent 발화 끝
-    33.62s  <ret> 발화 (turn5 첫 프레임)
-    34.02s  agent 발화 시작: <ret> Yes, Abraham Lincoln was president from March fourth, 
-    34.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.61s]: Abraham Lincoln was president of the United States from March 4, 1861,
-    34.02s  user  발화 끝
-    43.63s  user  발화 시작: Right.
-    43.63s  agent 발화 끝
-    44.00s  user  발화 시작: So, it was a Civil War thing then? Like a patriotic response
-    44.00s  user  발화 끝
-    48.44s  agent 발화 시작: It seems to have been a response to the increasing seculariz
-    48.44s  user  발화 끝
-    58.80s  user  발화 시작: Hmm. I wonder if there was much debate about it back then?
-    58.80s  agent 발화 끝
-    62.83s  <ret> 발화 (turn10 첫 프레임)
-    63.23s  agent 발화 시작: <ret> While the phrase appeared on coins in eighteen sixty-f
-    63.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.66s]: Although the phrase "In God We Trust" appeared on coins in 1864, it wa
-    63.23s  user  발화 끝
-    69.89s  user  발화 시작: …but wasn’t that a really divisive issue even in the fifties
-    69.89s  agent 발화 끝
-    76.10s  <ret> 발화 (turn12 첫 프레임)
-    76.18s  agent 발화 시작: <ret> The nineteen fifty-eight Supreme Court case *Blau v. F
-    76.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.20s]: In 1958, the Supreme Court case *Blau v. Fortier* upheld the constitut
-    76.18s  user  발화 끝
-    88.38s  user  발화 시작: So, it was actually *challenged* all the way to the Supreme 
-    88.38s  agent 발화 끝
-    92.82s  agent 발화 시작: Yes, it was. It’s interesting how legal interpretations can 
-    92.82s  user  발화 끝
-   101.69s  user  발화 시작: What about other countries? Do they have similar mottos on t
-   101.69s  agent 발화 끝
-   106.05s  <ret> 발화 (turn16 첫 프레임)
-   106.13s  agent 발화 시작: <ret> Many nations include mottos on their currency, such as
-   106.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.42s]: (tool result) Many nations include national mottos on their currency, 
-   106.13s  user  발화 끝
-   120.55s  user  발화 시작: “Dieu et mon droit”? That sounds… very regal.
-   120.55s  agent 발화 끝
-   123.51s  agent 발화 시작: It does, doesn’t it? It reflects a long tradition of monarch
-   123.51s  user  발화 끝
-   131.64s  user  발화 시작: That's true. What's the weather…
-   131.64s  agent 발화 끝
-   133.49s  user  발화 시작: …like in London right now?
-   133.49s  user  발화 끝
-   135.10s  <ret> 발화 (turn21 첫 프레임)
-   135.34s  agent 발화 시작: <ret> The weather in London is twenty-one point zero degrees
-   135.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.68s]: (tool result) London: 21.0°C, humidity 68%, wind 8.2 km/h, condition: 
-   135.34s  user  발화 끝
-   149.02s  user  발화 시작: Sounds nice. Thanks, Barien.
-   149.02s  agent 발화 끝
-   150.50s  agent 발화 시작: You are very welcome. Remember to take a few moments for you
-   150.50s  user  발화 끝
-   160.86s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, when does Day Z come out for Xbox? I've been waiting fo
+     4.42s  <ret> 발화 (turn1 첫 프레임)
+     4.74s  agent 발화 시작: <ret> It looks like DayZ was released on Xbox on March twent
+     4.74s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.76s]: DayZ was released on Xbox on March 26, 2019, after a period in early a
+     4.74s  user  발화 끝
+    13.50s  user  발화 시작: March 2019? That feels like ages ago… Is there any news abou
+    13.50s  agent 발화 끝
+    18.21s  <ret> 발화 (turn3 첫 프레임)
+    18.61s  agent 발화 시작: <ret> There hasn't been an announcement for a sequel, but Bo
+    18.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Bohemia Interactive has not announced a DayZ sequel, but
+    18.61s  user  발화 끝
+    27.00s  user  발화 시작: February 2024… okay, so it’s still being supported. That’s g
+    27.00s  agent 발화 끝
+    31.38s  agent 발화 시작: It is! It’s wonderful when developers continue to support ga
+    31.38s  user  발화 끝
+    35.76s  user  발화 시작: I was hoping for something new, though. Are there any simila
+    35.76s  agent 발화 끝
+    41.15s  <ret> 발화 (turn7 첫 프레임)
+    41.23s  agent 발화 시작: <ret> Several survival games are planned for Xbox—"Nightinga
+    41.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Several survival games are scheduled for Xbox release in
+    41.23s  user  발화 끝
+    49.99s  user  발화 시작: Okay.
+    49.99s  agent 발화 끝
+    50.35s  user  발화 시작: Nightingale sounds interesting. What kind of game is it?
+    50.35s  user  발화 끝
+    53.39s  <ret> 발화 (turn10 첫 프레임)
+    53.63s  agent 발화 시작: <ret> Nightingale is a shared-world survival game—players bu
+    53.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.03s]: (tool result) Nightingale is a shared-world survival crafting game set
+    53.63s  user  발화 끝
+    61.66s  user  발화 시작: That sounds pretty cool, actually.
+    61.66s  agent 발화 끝
+    63.48s  agent 발화 시작: It’s been getting a lot of buzz—
+    63.48s  user  발화 끝
+    66.04s  user  발화 시작: …Is it multiplayer…
+    66.04s  agent 발화 끝
+    67.13s  user  발화 시작: …then? Can I play with friends?
+    67.13s  user  발화 끝
+    68.92s  <ret> 발화 (turn15 첫 프레임)
+    69.32s  agent 발화 시작: <ret> It supports both solo and multiplayer, focusing on exp
+    69.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: Nightingale supports both solo and multiplayer gameplay, with a focus 
+    69.32s  user  발화 끝
+    77.71s  user  발화 시작: Eight players, that's awesome. Is there a beta test I can si
+    77.71s  agent 발화 끝
+    82.74s  <ret> 발화 (turn17 첫 프레임)
+    82.82s  agent 발화 시작: <ret> Let me search for information on a Nightingale beta te
+    82.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: (tool result) Inlate April 2024, Inflexion Games opened sign-ups for a
+    82.82s  user  발화 끝
+    86.47s  agent 발화 시작: Sign-ups for a closed beta test opened in late April of twen
+    86.47s  agent 발화 끝
+    95.96s  user  발화 시작: May 23rd… I’ll have to check that out. Thanks for the info!
+    95.96s  agent 발화 끝
+   100.34s  agent 발화 시작: You’re very welcome! It sounds like a game you might really 
+   100.34s  user  발화 끝
+   104.71s  agent 발화 끝

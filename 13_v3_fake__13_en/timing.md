@@ -4,102 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Manon",
+#     "name": "Julian",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
+#       "date": "2026-06-19",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-17",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-16",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-09-30",
+#       "date": "2026-02-17",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-08-31",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-07-31",
+#       "date": "2025-07-22",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-10",
+#       "category": "home",
+#       "text": "User's home address is 964 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-23",
-#       "title": "Setting up a home network",
+#       "date": "2025-09-03",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who defied the treaty of versaille | S2 That seems… weak. | S3 And did Hitler get involved in tha | S4 [sigh] It all feels so… connected.
 
-     0.00s  user  발화 시작: Who defied the treaty of versailles by sending troops into t
-     4.28s  <ret> 발화 (turn1 첫 프레임)
-     4.52s  agent 발화 시작: <ret> That was Adolf Hitler, actually, in March of nineteen 
-     4.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.15s]: In March 1936, Adolf Hitler defied the Treaty of Versailles by sending
-     4.52s  user  발화 끝
-    11.67s  user  발화 시작: Yeah.
-    11.67s  agent 발화 끝
-    12.05s  user  발화 시작: Oh, right. And what were the consequences of that action?
-    12.05s  user  발화 끝
-    15.41s  <ret> 발화 (turn4 첫 프레임)
-    15.81s  agent 발화 시작: <ret> The League of Nations did issue a condemnation, but ul
-    15.81s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.78s]: The League of Nations condemned Hitler’s actions, but took no concrete
-    15.81s  user  발화 끝
-    22.59s  user  발화 시작: Okay.
-    22.59s  agent 발화 끝
-    22.96s  user  발화 시작: That seems… weak.
-    22.96s  user  발화 끝
-    23.77s  <ret> 발화 (turn7 첫 프레임)
-    24.09s  agent 발화 시작: <ret> It's understandable to feel that way; appeasement was 
-    24.09s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.15s]: The current temperature in Buenos Aires is 18.2°C, with a humidity of 
-    24.09s  user  발화 끝
-    31.24s  user  발화 시작: I see. Welll… what about the Spanish Civil War?
-    31.24s  agent 발화 끝
-    34.63s  agent 발화 시작: That's a complex event, certainly. It began in 1936, fueled 
-    34.63s  user  발화 끝
-    40.65s  user  발화 시작: Wow.
-    40.65s  agent 발화 끝
-    41.03s  user  발화 시작: And did Hitler get involved in that?
-    41.03s  user  발화 끝
-    43.43s  <ret> 발화 (turn12 첫 프레임)
-    43.67s  agent 발화 시작: <ret> Yes, he did; Hitler provided military support to Gener
-    43.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: Hitler provided military support to the Nationalist forces led by Gene
-    43.67s  user  발화 끝
-    49.69s  user  발화 시작: What was his motivation for doing that?
-    49.69s  agent 발화 끝
-    52.32s  agent 발화 시작: He saw it as a chance to test new weapons and strategies, an
-    52.32s  user  발화 끝
-    62.11s  user  발화 시작: [sigh] It all feels so… connected.
-    62.11s  agent 발화 끝
-    64.37s  agent 발화 시작: History often is, isn't it? Each event builds upon the last,
-    64.37s  user  발화 끝
-    74.16s  user  발화 시작: You're right. It's good to talk this through.
-    74.16s  agent 발화 끝
-    77.17s  agent 발화 시작: I'm glad I could help you think it through. Sometimes, just 
-    77.17s  user  발화 끝
-    85.07s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you know when Ford stopped making the Sport Trac?
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.90s  agent 발화 시작: <ret> Ford stopped making the Sport Trac after the 2010 mode
+     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.87s]: Ford discontinued the Sport Trac model after the 2010 model year, focu
+     3.90s  user  발화 끝
+    12.38s  <ret> 발화 (turn2 첫 프레임)
+    12.78s  agent 발화 시작: <ret> Sometimes letting go of one thing allows space for new
+    12.78s  ⚡SPAN 주입(IRRELEVANT) [d'=1.20s / d_lead=3.90s]: The current temperature in Reykjavik, Iceland is 8.2°C with clear skie
+    12.78s  agent 발화 끝
+    16.68s  user  발화 시작: Oh, okay, that's good to know.
+    16.68s  agent 발화 끝
+    18.81s  agent 발화 시작: It’s wonderful you’re taking the time to explore these detai
+    18.81s  user  발화 끝
+    25.91s  agent 발화 끝

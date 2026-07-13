@@ -4,48 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Charlotte",
+#     "name": "Aiden",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-15",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-12-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-02-03",
+#       "date": "2025-10-13",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-09",
+#       "category": "home",
+#       "text": "User's home address is 191 Pine Court."
+#     },
+#     {
+#       "date": "2025-08-19",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-08-31",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-07-24",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-21",
+#       "date": "2025-10-20",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -56,25 +56,27 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Charlotte, I’m Bio. It’s lovely to meet you.
-     3.32s  user  발화 시작: Right.
-     3.32s  agent 발화 끝
-     3.69s  user  발화 시작: Hi Bio, that's good to hear. I need to get to a new restaura
-     3.69s  user  발화 끝
-     9.89s  <ret> 발화 (turn3 첫 프레임)
-     9.97s  agent 발화 시작: <ret> I see you have a Golden Retriever named Max. To start,
-     9.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.91s]: [2025-06-01] User has a Golden Retriever named Max.
-     9.97s  user  발화 끝
-    15.87s  user  발화 시작: Oh, right. I live at 300 Page Street, San Francisco, Califor
-    15.87s  agent 발화 끝
-    19.85s  <ret> 발화 (turn5 첫 프레임)
-    19.93s  agent 발화 시작: <ret> Thank you. Let me find directions to El Sol from 300 P
-    19.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.80s]: 300 Page Street, San Francisco, California.
-    19.93s  user  발화 끝
-    24.73s  user  발화 시작: …is there parking near the restaurant? I'm driving.
-    24.73s  agent 발화 끝
-    27.44s  <ret> 발화 (turn7 첫 프레임)
-    27.68s  agent 발화 시작: <ret> There are public parking lots within half a mile, cost
-    27.68s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.38s]: (tool result) Parking: Public parking lots available within 0.5 miles;
-    27.68s  user  발화 끝
-    35.06s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Aiden, I'm Ion. It's lovely to meet you.
+     3.24s  user  발화 시작: Right.
+     3.24s  agent 발화 끝
+     3.60s  user  발화 시작: Um, well, I was actually hoping to get directions.
+     3.60s  user  발화 끝
+     6.76s  <ret> 발화 (turn3 첫 프레임)
+     6.84s  agent 발화 시작: <ret> Aiden. Your home address is listed as 191 Pine Court i
+     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.84s]: [2025-10-09] User's home address is 191 Pine Court.
+     6.84s  user  발화 끝
+    13.68s  user  발화 시작: To that fermentation shop we talked about last time.
+    13.68s  agent 발화 끝
+    16.84s  <ret> 발화 (turn5 첫 프레임)
+    16.92s  agent 발화 시작: <ret> Ah, yes! You're interested in home fermentation, so I 
+    16.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.20s]: [2025-10-13] User is into home fermentation.
+    16.92s  user  발화 끝
+    24.12s  user  발화 시작: Yeah.
+    24.12s  agent 발화 끝
+    24.48s  user  발화 시작: Exactly! How long will it take to get there?
+    24.48s  user  발화 끝
+    27.48s  <ret> 발화 (turn8 첫 프레임)
+    27.72s  agent 발화 시작: <ret> It’s 7.2 kilometers and should take about fifteen minu
+    27.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.28s]: (tool result) {"distance": "7.2 km", "duration": "15 minutes", "route"
+    27.72s  user  발화 끝
+    36.01s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Morgan",
+#     "name": "Emma",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,90 +12,68 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-06-08",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "home",
+#       "text": "User's home address is 762 Pine Court."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-09-06",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-03-06",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "home",
-#       "text": "User's home address is 184 Pine Court."
+#       "date": "2025-07-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-21",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-26",
+#       "date": "2026-02-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-06",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 캐나다 총리를 가장 오래 지낸 분이 누구였는지 궁금했어요. | S2 아, 알겠습니다. 좋은 정보네요. | S3 그렇겠죠. 그 기록에 근접한 다른 사람도 있었나요? | S4 거의 삼년이나 되는 꽤 큰 차이네요.
+# EXAMINER(FDB-v2) 단계: S1 안녕 디올… | S2 오, 그거 흥미롭네. 올랜도가 엄청 크다고 들었는데. | S3 쓰레기 버린 거 기억해 뒀어? | S4 미안. 탐파 호텔 좀 찾아 줘.
 
-     0.00s  user  발화 시작: 캐나다 총리를 가장 오래 지낸 분이 누구였는지 궁금했어요.
-     4.08s  <ret> 발화 (turn1 첫 프레임)
-     4.40s  agent 발화 시작: <ret> 좋은 질문이세요. 리더십과 시간에 대해 생각하게 만드는 질문이네요. 윌리엄 라이언 매켄지 킹이 총
-     4.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.45s]: William Lyon Mackenzie King served as Canada’s prime minister for a to
-     4.40s  user  발화 끝
-    14.85s  user  발화 시작: 그분이 제이차 세계 대전 중에도 총리였나요?
-    14.85s  agent 발화 끝
-    18.15s  agent 발화 시작: 자연스럽게 이어지는 질문이네요. 그 시대의 규모를 생각하면 당연한 질문이죠. 네, 윌리엄 라이언 매켄지 킹은
-    18.15s  user  발화 끝
-    30.81s  user  발화 시작: 진짜요?
-    30.81s  agent 발화 끝
-    31.36s  user  발화 시작: 아, 알겠습니다. 좋은 정보네요.
-    31.36s  user  발화 끝
-    33.56s  agent 발화 시작: 힘든 시기일수록 지도자들이 진정한 유산을 정의하는 경우가 많다고 생각하지 않으세요? 흔들리지 않는 손길이 필
-    33.56s  user  발화 끝
-    41.81s  user  발화 시작: 그렇겠죠. 그 기록에 근접한 다른 사람도 있었나요?
-    41.81s  agent 발화 끝
-    45.42s  <ret> 발화 (turn8 첫 프레임)
-    45.66s  agent 발화 시작: <ret> 다른 분들도 뚜렷한 족적을 남겼지만, 킹만큼 오래 재임한 사람은 없었습니다. 존 A. 맥도날드 경
-    45.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: Sir John A. Macdonald served as Canada’s first prime minister and held
-    45.66s  user  발화 끝
-    57.21s  user  발화 시작: 거의 삼년이나 되는 꽤 큰 차이네요.
-    57.21s  agent 발화 끝
-    60.51s  agent 발화 시작: 꽤 큰 기간이네요, 그렇지 않나요? 때로는 더 긴 임기가 국가의 과정에 더 깊고 지속적인 영향을 미칠 수 있
-    60.51s  user  발화 끝
-    70.41s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕 디올…
+     1.15s  user  발화 시작: 플로리다 휴가 계획 중인데, 제일 큰 도시들이 어디야?
+     1.15s  user  발화 끝
+     5.41s  <ret> 발화 (turn2 첫 프레임)
+     5.73s  agent 발화 시작: <ret> 음, 여행 계획하시는 거 좋네요. 플로리다에서 가장 큰 세 도시는 구십사만 구천육백십일명의 인구를
+     5.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.60s]: Florida's three largest cities are Jacksonville, Miami, and Tampa, wit
+     5.73s  user  발화 끝
+    18.33s  user  발화 시작: 오, 그거 흥미롭네. 올랜도가 엄청 크다고 들었는데.
+    18.33s  agent 발화 끝
+    22.34s  agent 발화 시작: 헷갈리기 쉬워요! 올랜도-키시미-샌포드는 큰 광역 도시권을 가지고 있지만, 인구 기준으로 세 개의 가장 큰 
+    22.34s  user  발화 끝
+    32.65s  user  발화 시작: 쓰레기 버린 거 기억해 뒀어?
+    32.65s  agent 발화 끝
+    35.51s  user  발화 시작: 미안. 탐파 호텔 좀 찾아 줘.
+    35.51s  user  발화 끝
+    38.55s  <ret> 발화 (turn7 첫 프레임)
+    38.95s  agent 발화 시작: <ret> 네, 플로리다 탐파에는 현재 백이십삼개의 호텔이 있으며, 숙박 요금은 칠십구달러부터 시작해요. 탬
+    38.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: (tool result) Tampa, FL: 123 hotels available. Prices from $79/night. 
+    38.95s  user  발화 끝
+    50.40s  agent 발화 끝

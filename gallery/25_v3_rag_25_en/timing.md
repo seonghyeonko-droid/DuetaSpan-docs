@@ -4,86 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Casey",
+#     "name": "Mason",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "home",
-#       "text": "User's home address is 188 Cedar Lane."
+#       "date": "2026-06-13",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-03-12",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-04-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-07-05",
+#       "date": "2025-10-29",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-23",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-09-12",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-21",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-29",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-13",
+#       "date": "2026-02-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-09-08",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to plan a trip to Texas | S2 Oh, right! Coy… I think I knew tha | S3 Um, yeah. What’s the weather like  | S4 That sounds nice. Can you reserve 
 
-     0.00s  user  발화 시작: I’m trying to settle in here, and I love music. Who was born
-     6.10s  <ret> 발화 (turn1 첫 프레임)
-     6.26s  agent 발화 시작: <ret> Well, it appears John Tardy was born a little later; T
-     6.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.54s]: John Tardy was born on September 26, 1973, while Tom Barman was born o
-     6.26s  user  발화 끝
-    16.80s  user  발화 시작: Uh, nineteen seventy? That doesn’t sound right. Are you sure
-    16.80s  agent 발화 끝
-    20.92s  <ret> 발화 (turn3 첫 프레임)
-    21.08s  agent 발화 시작: <ret> You’re right to question me! My apologies. Tom Barman 
-    21.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.23s]: Tom Barman was born on October 12, 1970, in Antwerp, Belgium, and is k
-    21.08s  user  발화 끝
-    29.31s  user  발화 시작: Okay, good. So, what's the weather like today?
-    29.31s  agent 발화 끝
-    31.63s  <ret> 발화 (turn5 첫 프레임)
-    31.95s  agent 발화 시작: <ret> Right now, it’s twenty-two degrees Celsius, with sixty
-    31.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) Current conditions: 22.0°C, humidity 65%, wind 3.1 km/h.
-    31.95s  user  발화 끝
-    41.50s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to plan a trip to Texas, and I was wondering abou
+     4.84s  agent 발화 시작: Laredo is a vibrant city on the US-Mexico border! It’s known
+     4.84s  user  발화 끝
+    13.49s  user  발화 시작: Okay.
+    13.49s  agent 발화 끝
+    13.83s  user  발화 시작: Well, I saw something about a movie filmed there… with gunme
+    13.83s  user  발화 끝
+    17.55s  <ret> 발화 (turn4 첫 프레임)
+    17.63s  agent 발화 시작: <ret> That sounds like “Frontier”, filmed in and around Lare
+    17.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: Walter Darwin Coy starred as the narrator in the 1959 film “Frontier”,
+    17.63s  user  발화 끝
+    24.20s  user  발화 시작: Oh, right! Coy… I think I knew that.
+    24.20s  agent 발화 끝
+    26.97s  agent 발화 시작: Glad I could jog your memory.
+    26.97s  user  발화 끝
+    29.04s  user  발화 시작: Yeah.
+    29.04s  agent 발화 끝
+    29.39s  user  발화 시작: Um, yeah. What’s the weather like there right now?
+    29.39s  user  발화 끝
+    32.18s  <ret> 발화 (turn9 첫 프레임)
+    32.50s  agent 발화 시작: <ret> It’s currently 34.7°C in Laredo, with 68% humidity, cl
+    32.50s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.57s]: (tool result) 34.7°C, humidity 68%, wind 11.3 km/h, clear skies.
+    32.50s  user  발화 끝
+    39.07s  user  발화 시작: Oh.
+    39.07s  agent 발화 끝
+    39.42s  agent 발화 시작: It is quite warm! Perhaps you’d like to look at hotels in La
+    39.42s  user  발화 끝
+    43.91s  user  발화 시작: Yeah, yeah.
+    43.91s  agent 발화 끝
+    44.60s  user  발화 시작: Maybe. Are there any good restaurants nearby the film locati
+    44.60s  user  발화 끝
+    47.74s  <ret> 발화 (turn14 첫 프레임)
+    48.06s  agent 발화 시작: <ret> The Garden Grill, an American restaurant with 4.2 star
+    48.06s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.53s]: (tool result) The Garden Grill - American, 4.2 stars, 1201 E Market St
+    48.06s  user  발화 끝
+    53.59s  user  발화 시작: That sounds nice. Can you reserve a table for two there tomo
+    53.59s  agent 발화 끝
+    58.09s  agent 발화 시작: I can certainly try. What time would you like the reservatio
+    58.09s  user  발화 끝
+    62.58s  agent 발화 끝

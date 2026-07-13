@@ -1,79 +1,78 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Nunar, a encouraging and non-judgmental life coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Tellara, a warm and attentive counselor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Stella",
+    "name": "Alice",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-18",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
-    },
-    {
-      "date": "2026-02-07",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-01-14",
-      "category": "work",
-      "text": "User works as a architect."
-    },
-    {
-      "date": "2025-10-16",
+      "date": "2026-01-15",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-11-05",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-07-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-21",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-31",
+      "date": "2026-03-14",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-27",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Stella, I'm Nunar. It's lovely to meet you.
-[  3.46s][user ] Um, hi Nunar. I was just thinking about my New Zealand ⟨ret@7.84s⟩ trip.
-[  8.08s][moshi] ⟦⚡SPAN@8.08s: [2026-02-18] User is planning a trip to New Zealand in December.⟧ You're planning a trip to New Zealand in December, that sounds wonderful! Is there anything specific about it you'd like to discuss?
-[ 16.55s][user ] «backchannel» Yeah.
-[ 16.93s][user ] I remember I mentioned wanting to photograph wildflowers ⟨ret@19.99s⟩ there.
-[ 20.39s][moshi] ⟦⚡SPAN@20.39s: [2026-02-07] User is into alpine wildflower photography.⟧ Ah, yes, you're passionate about alpine wildflower photography—that’s fantastic! New Zealand has some incredible spots for that.
-[ 26.94s][user ] «backchannel» Right.
-[ 27.32s][moshi] It really does. Perhaps we could brainstorm some locations perfect for capturing those beautiful blooms?
-[ 33.09s][user ] That’d be great, but also I’m a bit worried about being alone there.
-[ 38.10s][moshi] It's completely normal to feel that way before a big trip, especially when traveling solo. It's brave of you to acknowledge it. We can explore ways to build connections while you're there, if you'd like.
+[  0.00s][moshi] Hi Alice, I'm Tellara.
+[  1.58s][user ] Um, well, I was just thinking about that trip to Kyoto I took last ⟨ret@7.28s⟩ year.
+[  7.52s][moshi] ⟦⚡SPAN@7.52s: [2026-01-15] User prefers a window seat when traveling.⟧ I see you mentioned a preference for window seats during travel on January fifteenth, twenty twenty-six.
+[ 13.85s][user ] «backchannel» Yeah.
+[ 14.24s][user ] Right, and I'm planning another trip, actually. This time to Melbourne.
+[ 18.60s][moshi] Melbourne sounds wonderful! Are you thinking about flights or accommodation first?
+[ 22.95s][user ] «backchannel» Yeah.
+[ 23.34s][user ] Flights, I guess. Do you think you could search for one-way flights for ⟨ret@28.48s⟩ me?
+[ 28.88s][moshi] ⟦⚡SPAN@28.88s: (tool result) No flights found matching your request.⟧ I'm afraid I couldn't find any one-way flights at this time. Perhaps try different dates?
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {}}
+[ 34.82s][user ] Oh, that's a shame. I was hoping to go next Tuesday. ⟨ret@39.09s⟩
+[ 39.17s][moshi] ⟦⚡SPAN@39.17s: (tool result) Flights from Sydney to Melbourne on 2026-07-14: QF401, 06:00, $189; VA823, 10:30, $215.⟧ There are flights from Sydney to Melbourne next Tuesday, July fourteenth, twenty twenty-six. Qantas flight QF401 departs at six AM for one hundred and eighty-nine dollars, and Virgin Australia VA823 departs at ten thirty AM for two hundred and fifteen dollars.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {}}
+[ 55.39s][user ] «backchannel» Right.
+[ 55.79s][user ] That Qantas flight sounds good.
+[ 57.77s][moshi] That's a great choice! I can search for hotels in Melbourne if you like.
+[ 63.30s][user ] Actually, before that, could you remind me if I have any dietary restrictions noted? ⟨ret@68.76s⟩
+[ 68.84s][moshi] ⟦⚡SPAN@68.84s: [2025-12-03] User is allergic to shellfish.⟧ You noted an allergy to shellfish on December third, twenty twenty-five, so it's good to be mindful of that when dining out.
+[ 77.55s][user ] «backchannel» Yeah.
+[ 77.94s][user ] Oh yes, right. Thanks for reminding me. Let's look at hotels now.

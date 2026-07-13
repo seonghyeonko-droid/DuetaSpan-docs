@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "준준",
+#     "name": "라찬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,59 +13,63 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-19",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-12-21",
+#       "date": "2026-06-14",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-11-18",
+#       "date": "2026-02-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
+#     },
+#     {
+#       "date": "2025-06-15",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-11-09",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-25",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2025-06-03",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2025-05-29",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-14",
+#       "date": "2026-04-24",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-15",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 미국에서 추수감사절을 공식적으로 선포한 최초의…
-     3.38s  user  발화 시작: …날짜가 언제였는지 알려줄 수 있을까요?
-     3.38s  user  발화 끝
-     6.60s  <ret> 발화 (turn2 첫 프레임)
-     6.76s  agent 발화 시작: <ret> 미국 대륙 회의에서 최초의 국가적인 추수감사절을 선포한 날은 천칠백칠십칠년 시월 삼일입니다.
-     6.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.43s]: The first national Thanksgiving Day was proclaimed on October 3, 1777,
-     6.76s  user  발화 끝
-    14.19s  agent 발화 끝
+     0.00s  user  발화 시작: 항상 누군가 나를 지켜보는 것 같은 노래는 누가 불렀어?
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.35s  agent 발화 시작: <ret> 그 노래는 천구백팔십사년에 미국의 가수 로크웰이 발표했습니다. 혹시 다른 노래에 대해서도 궁금하신
+     4.35s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.81s]: American singer Rockwell released the song "Somebody's Watching Me" in
+     4.35s  user  발화 끝
+    10.16s  agent 발화 끝

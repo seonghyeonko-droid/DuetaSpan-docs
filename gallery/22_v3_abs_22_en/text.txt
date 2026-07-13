@@ -1,64 +1,78 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Jelo, a warm and attentive wellness coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Oriana, a upbeat and supportive counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Charlie",
+    "name": "Quinn",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "50s",
-    "language": "German"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-14",
+      "date": "2026-06-18",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-05-04",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-04-02",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-02-13",
+      "category": "home",
+      "text": "User's home address is 382 Pine Court."
     },
     {
-      "date": "2025-12-05",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "date": "2025-11-01",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-10",
+      "date": "2025-07-24",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
+      "text": "User is planning a trip to Vietnam in August."
+    },
+    {
+      "date": "2025-07-20",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-21",
-      "title": "Apartment hunting downtown",
+      "date": "2025-10-31",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Why wasn't philosophy taught in Ottoman madaris? ⟨ret@2.60s⟩
-[  2.76s][moshi] ⟦⚡SPAN@2.76s: (no information found)⟧ But unfortunately, I haven’t been able to find any information about why philosophy wasn’t a part of the Ottoman madaris curriculum.
-[ 11.05s][user ] Oh, um… that’s a shame.
-[ 13.03s][moshi] It is a bit of a mystery, isn’t it? Perhaps it’s a topic that hasn’t been widely documented in easily accessible sources.
-[ 21.71s][user ] «backchannel» Yeah.
-[ 22.11s][user ] Well, what *was* taught there? ⟨ret@24.00s⟩
-[ 24.08s][moshi] ⟦⚡SPAN@24.08s: The curriculum in Ottoman madrasas generally focused on Islamic theology, law, Arabic language, and literature⟧ Ottoman madrasas mainly taught Islamic theology, law, Arabic language, literature, and a bit of mathematics and astronomy.
-[ 30.79s][user ] «backchannel» Mhm.
-[ 31.19s][moshi] It sounds like a very rigorous education, focused on religious and scholarly pursuits. Sometimes, concentrating on core subjects is the most effective path.
-[ 40.27s][user ] Do you think that limited their progress?
-[ 43.03s][moshi] That’s a thoughtful question. A focused curriculum can have strengths and weaknesses—it really depends on the goals. It’s something to consider when we think about long-term development.
+[  0.00s][user ] Who didn't discover Neptune?
+[  1.59s][moshi] It seems there isn't a documented record of who *didn't* discover Neptune, only those credited with its discovery.
+[  8.77s][user ] Oh. Well, what about Uranus? Who found that ⟨ret@12.12s⟩ one?
+[ 12.36s][moshi] ⟦⚡SPAN@12.36s: Uranus was first sighted by astronomer John Herschel in 1781, though he initially thought it was a comet or st⟧ It was actually John Herschel who first sighted Uranus in seventeen eighty-one, though he originally believed it was a comet or star.
+[ 21.13s][user ] «backchannel» Okay.
+[ 21.53s][moshi] It’s fascinating how discoveries can sometimes be misidentified at first—it really shows the importance of careful observation and follow-up.
+[ 29.11s][user ] «backchannel» Mm-hmm.
+[ 29.51s][user ] I'm planning a trip to see some planets.
+[ 32.69s][moshi] «interrupted» That sounds like a wonderful idea! Planning a trip centered around astronomy is—
+[ 37.88s][user ] «interrupts_prev» …can you find me some observatories in ⟨ret@40.75s⟩ California?
+[ 41.07s][moshi] ⟦⚡SPAN@41.07s: Palomar Observatory in San Diego County, California, is a renowned astronomical research facility, and Griffit⟧ There are some amazing options in California, like Palomar Observatory in San Diego County, and Griffith Observatory in Los Angeles, which offers public viewing. Both are fantastic places to explore the wonders of the universe.
+[ 55.02s][user ] Griffith sounds good. What's the weather…
+[ 57.42s][user ] …like there right ⟨ret@58.61s⟩ now?
+[ 59.01s][moshi] ⟦⚡SPAN@59.01s: (tool result) 24.3°C, humidity 62%, wind 3.2 km/h⟧ Right now at Griffith Observatory, it’s twenty-four point three degrees Celsius, with sixty-two percent humidity and a three point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Griffith Observatory"}}

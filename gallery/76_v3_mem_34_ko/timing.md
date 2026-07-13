@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "수진",
+#     "name": "세별",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-03",
+#       "date": "2025-12-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2025-10-13",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-09",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#     },
+#     {
+#       "date": "2025-08-19",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-08-04",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2025-07-24",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-07",
+#       "date": "2025-12-11",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -56,41 +53,36 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-21",
+#       "date": "2025-11-27",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-05",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 비오 씨. 요즘 이사 갈 집을 찾고 있는데, 혹시 | S2 네, 맞아요. 혹시 강남역 근처에 괜찮은 곳이 있을까요? | S3 이백오십만 원이면 괜찮은데, 혹시 그 집 주변에 공원 같은 게 | S4 …혹시 반려동물과 함께 산책할 수 있는 공원이 가까운 곳에 있
 
-     0.00s  agent 발화 시작: 안녕하세요, 수진님. 저는 비오예요. 친구 관계나 사회생활에 대해 편하게 이야기 나눌 수 있도록 도와드릴게요
-     6.05s  user  발화 시작: 안녕하세요, 비오 씨. 요즘 이사 갈 집을 찾고 있는데, 혹시 반려동물과 함께 살 수 있는 곳을 추천해 주실
-     6.05s  agent 발화 끝
-    14.62s  <ret> 발화 (turn2 첫 프레임)
-    14.70s  agent 발화 시작: <ret> 두개의 방이 있는 집을 원하셨죠.
-    14.70s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.16s]: [2026-01-10] Past chat — Apartment hunting downtown: wanted a pet-frie
-    14.70s  user  발화 끝
-    16.86s  user  발화 시작: 네, 맞아요. 혹시 강남역 근처에 괜찮은 곳이 있을까요?
-    16.86s  agent 발화 끝
-    20.08s  <ret> 발화 (turn4 첫 프레임)
-    20.32s  agent 발화 시작: <ret> 강남역 근처에 반려동물과 함께 살 수 있는 두개의 방이 있는 집이 있습니다. 월세는 이백오십만 원
-    20.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) {"area": "Gangnam Station", "pet friendly", "bedrooms": 
-    20.32s  user  발화 끝
-    30.70s  user  발화 시작: 이백오십만 원이면 괜찮은데, 혹시 그 집 주변에 공원 같은 게 있을까요? —
-    30.70s  agent 발화 끝
-    35.89s  user  발화 시작: …혹시 반려동물과 함께 산책할 수 있는 공원이 가까운 곳에 있으면 좋을 것 같아요.
-    35.89s  user  발화 끝
-    41.43s  <ret> 발화 (turn7 첫 프레임)
-    41.51s  agent 발화 시작: <ret> 서울숲이 그 집에서 사 점 이킬로미터 거리에 있습니다. 평점은 사 점 사점이에요.
-    41.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) {"place id": "ChIJjYk0g-w9EJORB N6R6E4LhQ", "name": "Seo
-    41.51s  user  발화 끝
-    46.70s  user  발화 시작: 그렇군요.
-    46.70s  agent 발화 끝
-    47.13s  agent 발화 시작: 서울숲은 반려동물과 함께 산책하기 좋은 곳으로 알려져 있어요. 넓고 깨끗해서 많은 분들이 찾으시는 곳이죠.
-    47.13s  user  발화 끝
-    53.18s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세별님. 저는 이온이라고 해요. 오늘 하루는 어떠셨어요?
+     4.10s  user  발화 시작: 그래.
+     4.10s  agent 발화 끝
+     4.62s  user  발화 시작: 음… 그냥 그랬어. 뭔가 기분 전환이 필요해.
+     4.62s  user  발화 끝
+     8.21s  agent 발화 시작: 기분 전환이라… 혹시 어디론가 떠나고 싶으신가요?
+     8.21s  user  발화 끝
+    11.28s  user  발화 시작: 서울 말고 다른 데. 집에서 가까운 곳이면 좋겠는데…
+    11.28s  agent 발화 끝
+    15.23s  <ret> 발화 (turn5 첫 프레임)
+    15.39s  agent 발화 시작: <ret> 생일 저녁 식사 계획을 세우셨던 적이 있으셨죠. 여섯 분이서 야외 테이블을 찾으셨었는데, 혹시 그
+    15.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: [2025-08-05] Past chat — Planning a birthday dinner: party of six; loo
+    15.39s  user  발화 끝
+    24.62s  agent 발화 끝

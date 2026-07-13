@@ -4,123 +4,116 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "가완",
+#     "name": "노현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2026-03-12",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-11-07",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
-#     },
-#     {
-#       "date": "2025-07-17",
+#       "date": "2026-06-24",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-06-21",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-25",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-20",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-28",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2026-06-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2026-05-19",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 돈에 “In God We Trust”가 언제 처음 새겨졌 | S2 아, 그건 알지. 그럼 “In… | S3 점차적으로? 얼마나 걸렸는데? — | S4 신기하네. 계속 유지되고 있다니.
+# EXAMINER(FDB-v2) 단계: S1 데이 제트가 엑스박스로 언제 나와요? | S2 음… 그럼 데이 제트의 개발사는 어디인가요? | S3 모드였군요. 그럼 아르마 이랑은 어떻게 다른가요? | S4 아르마 삼도 엑스박스에서 할 수 있나요?
 
-     0.00s  user  발화 시작: 음, 돈에 “In God We Trust”가 언제 처음 새겨졌는지 궁금해.
-     5.16s  <ret> 발화 (turn1 첫 프레임)
-     5.48s  agent 발화 시작: <ret> 돈에 “In God We Trust”가 처음 새겨진 건, 남북전쟁 시기인 천팔백육십사년이에요. 당
-     5.48s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.22s]: The United States first authorized the use of “In God We Trust” on coi
-     5.48s  user  발화 끝
-    13.70s  user  발화 시작: 응.
-    13.70s  agent 발화 끝
-    14.25s  user  발화 시작: 천팔백육십사년이라고? 그게 왜 갑자기 나타난 건데?
-    14.25s  user  발화 끝
-    17.53s  agent 발화 시작: 그건 당시 전쟁 중에 국민적인 믿음을 강화하려는 의도였던 것 같아요.
-    17.53s  user  발화 끝
-    23.01s  user  발화 시작: 믿음 강화라… 좀 이상한데. 그전에는 없었잖아?
-    23.01s  agent 발화 끝
-    26.22s  <ret> 발화 (turn6 첫 프레임)
-    26.30s  agent 발화 시작: <ret> 천팔백육십사년 이전에는 “E Pluribus Unum”, 즉 “다수로부터 하나”라는 문구가 미국 
-    26.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.12s]: Prior to 1864, the motto “E Pluribus Unum” (“Out of Many, One”) appear
-    26.30s  user  발화 끝
-    33.42s  user  발화 시작: 아, 그건 알지. 그럼 “In…
-    33.42s  agent 발화 끝
-    36.16s  user  발화 시작: …God We Trust”가 완전히 대체한 거야?
-    36.16s  user  발화 끝
-    39.45s  agent 발화 시작: 완전히 대체하기까지는 시간이 좀 걸렸어요. 점차적으로 사용이 확대되었답니다.
-    39.45s  user  발화 끝
-    43.84s  user  발화 시작: 점차적으로? 얼마나 걸렸는데? —
-    43.84s  agent 발화 끝
-    46.03s  user  발화 시작: …근데 그게 진짜 돈에 영향을 줬을까? 경제적으로?
-    46.03s  user  발화 끝
-    49.86s  user  발화 시작: 어.
-    49.86s  user  발화 끝
-    50.09s  <ret> 발화 (turn13 첫 프레임)
-    50.41s  agent 발화 시작: <ret> 천구백오십육년에 “In God We Trust”가 미국의 공식 모토가 되었고, “E Pluribu
-    50.41s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.12s]: In 1956, “In God We Trust” became the official motto of the United Sta
-    50.41s  user  발화 끝
-    57.53s  user  발화 시작: 공식 모토라… 그럼 지금도 계속 쓰고 있는 거야?
-    57.53s  agent 발화 끝
-    61.92s  agent 발화 시작: 네, 지금도 미국 동전과 지폐에 “In God We Trust”가 새겨져 있습니다.
-    61.92s  user  발화 끝
-    67.94s  user  발화 시작: 신기하네. 계속 유지되고 있다니.
-    67.94s  agent 발화 끝
-    70.14s  agent 발화 시작: 그런 역사가 있는 거죠. 마음의 평화를 찾는데 도움이 되었으면 좋겠어요.
-    70.14s  user  발화 끝
-    75.62s  user  발화 시작: 그래.
-    75.62s  agent 발화 끝
-    76.16s  user  발화 시작: 마음의 평화라… 고마워, 바리엔.
-    76.16s  user  발화 끝
-    78.36s  user  발화 끝
+     0.00s  user  발화 시작: 데이 제트가 엑스박스로 언제 나와요?
+     1.93s  <ret> 발화 (turn1 첫 프레임)
+     2.25s  agent 발화 시작: <ret> 데이 제트는 이천십팔년 십이월 오일부터 피 씨, 플레이스테이션 사 엑스박스 원에서 이용 가능합니다
+     2.25s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.10s]: Day Z is currently available on PC, PlayStation 4, and Xbox One as of 
+     2.25s  user  발화 끝
+    10.35s  user  발화 시작: 엑스박스 원에 나온 지 꽤 됐네요. 지금도 잘 팔리고 있나요?
+    10.35s  agent 발화 끝
+    14.53s  <ret> 발화 (turn3 첫 프레임)
+    14.85s  agent 발화 시작: <ret> 죄송합니다. 현재 데이 제트의 엑스박스 원 판매량에 대한 정보는 찾을 수 없습니다.
+    14.85s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.40s]: (no information found)
+    14.85s  user  발화 끝
+    20.25s  user  발화 시작: 음… 그럼 데이 제트의 개발사는 어디인가요?
+    20.25s  agent 발화 끝
+    22.72s  <ret> 발화 (turn5 첫 프레임)
+    22.96s  agent 발화 시작: <ret> 데이 제트는 천구백구십구년 Ondřej Špelda, Viktor Bocan, Jan Špinle
+    22.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: Bohemia Interactive is a Czech video game developer based in Prague, f
+    22.96s  user  발화 끝
+    31.06s  user  발화 시작: 네네.
+    31.06s  agent 발화 끝
+    31.51s  agent 발화 시작: Bohemia Interactive는 현실적인 군사 시뮬레이션 게임으로 유명한 회사입니다.
+    31.51s  user  발화 끝
+    35.11s  user  발화 시작: 데이 제트가 처음 나왔을 때 반응은 어땠나요?
+    35.11s  agent 발화 끝
+    38.10s  <ret> 발화 (turn9 첫 프레임)
+    38.26s  agent 발화 시작: <ret> 데이 제트는 이천십이년 사월에 Arma 이의 모드로 처음 출시되었고, 독특한 생존 공포 게임 플레
+    38.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: DayZ was initially released as a mod for Arma 2 in April 2012 and quic
+    38.26s  user  발화 끝
+    46.36s  user  발화 시작: 모드였군요. 그럼 아르마 이랑은 어떻게 다른가요?
+    46.36s  agent 발화 끝
+    49.06s  agent 발화 시작: 아르마 이는 밀리터리 시뮬레이션 게임이고—
+    49.06s  user  발화 끝
+    51.31s  user  발화 시작: … 아, 데이 제트 말고 다른 Bohemia Interactive 게임도 재밌는 거 있어요?
+    51.31s  agent 발화 끝
+    56.31s  <ret> 발화 (turn13 첫 프레임)
+    56.71s  agent 발화 시작: <ret> 아르마 삼는 Bohemia Interactive에서 개발하고 이천십삼년 구월에 출시한 군사 전술 
+    56.71s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.40s]: Arma 3 was released in September 2013 and is a military tactical shoot
+    56.71s  user  발화 끝
+    62.11s  user  발화 시작: 아르마 삼도 엑스박스에서 할 수 있나요?
+    62.11s  agent 발화 끝
+    64.49s  <ret> 발화 (turn15 첫 프레임)
+    64.81s  agent 발화 시작: <ret> 네, 아르마 삼는 피 씨, 플레이스테이션 사 엑스박스 원에서 모두 이용 가능합니다. 엑스박스 게임
+    64.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: Arma 3 is available on PC, PlayStation 4, and Xbox One.
+    64.81s  user  발화 끝
+    72.47s  user  발화 시작: 아.
+    72.47s  agent 발화 끝
+    72.92s  user  발화 시작: 오, 게임 패스에 있다니 좋네요. 그럼 데이 제트도 게임 패스에 있나요?
+    72.92s  user  발화 끝
+    77.79s  <ret> 발화 (turn18 첫 프레임)
+    77.87s  agent 발화 시작: <ret> 죄송합니다. 데이 제트가 엑스박스 게임 패스에 포함되어 있는지에 대한 정보는 찾을 수 없습니다.
+    77.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.85s]: (no information found)
+    77.87s  user  발화 끝
+    83.72s  agent 발화 끝

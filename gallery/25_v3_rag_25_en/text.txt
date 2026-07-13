@@ -1,78 +1,88 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Temi, a calm and patient counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Sen, a calm and patient supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Casey",
+    "name": "Mason",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "home",
-      "text": "User's home address is 188 Cedar Lane."
+      "date": "2026-06-13",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-04-23",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-03-12",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-04-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-08-14",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-07-05",
+      "date": "2025-10-29",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-23",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2025-09-12",
+      "category": "work",
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-21",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-29",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-08-13",
+      "date": "2026-02-21",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-08",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to settle in here, and I love music. Who was born first, John Tardy or Tom Barman? ⟨ret@6.10s⟩
-[  6.26s][moshi] ⟦⚡SPAN@6.26s: John Tardy was born on September 26, 1973, while Tom Barman was born on October 12, 1970.⟧ Well, it appears John Tardy was born a little later; Tom Barman arrived on October twelfth, nineteen seventy. It's nice to find common ground through music when you’re new to a place.
-[ 16.80s][user ] Uh, nineteen seventy? That doesn’t sound right. Are you sure about that date? ⟨ret@20.92s⟩
-[ 21.08s][moshi] ⟦⚡SPAN@21.08s: Tom Barman was born on October 12, 1970, in Antwerp, Belgium, and is known as the frontman for the band dEUS.⟧ You’re right to question me! My apologies. Tom Barman was indeed born on October twelfth, nineteen seventy, in Antwerp. I double-checked the information for you.
-[ 29.31s][user ] Okay, good. So, what's the weather like ⟨ret@31.63s⟩ today?
-[ 31.95s][moshi] ⟦⚡SPAN@31.95s: (tool result) Current conditions: 22.0°C, humidity 65%, wind 3.1 km/h.⟧ Right now, it’s twenty-two degrees Celsius, with sixty-five percent humidity and a gentle breeze of three point one kilometers per hour. A pleasant day to explore the city, perhaps?
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  0.00s][user ] I’m trying to plan a trip to Texas, and I was wondering about Laredo.
+[  4.84s][moshi] Laredo is a vibrant city on the US-Mexico border! It’s known for its rich history and cultural experiences. What are you hoping to do there?
+[ 13.49s][user ] «backchannel» Okay.
+[ 13.83s][user ] Well, I saw something about a movie filmed there… with gunmen? ⟨ret@17.55s⟩
+[ 17.63s][moshi] ⟦⚡SPAN@17.63s: Walter Darwin Coy starred as the narrator in the 1959 film “Frontier”, which was filmed in and around Laredo, ⟧ That sounds like “Frontier”, filmed in and around Laredo in 1959, and Walter Darwin Coy starred as the narrator.
+[ 24.20s][user ] Oh, right! Coy… I think I knew that.
+[ 26.97s][moshi] Glad I could jog your memory.
+[ 29.04s][user ] «backchannel» Yeah.
+[ 29.39s][user ] Um, yeah. What’s the weather like there right ⟨ret@32.18s⟩ now?
+[ 32.50s][moshi] ⟦⚡SPAN@32.50s: (tool result) 34.7°C, humidity 68%, wind 11.3 km/h, clear skies.⟧ It’s currently 34.7°C in Laredo, with 68% humidity, clear skies, and a wind speed of 11.3 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Laredo, Texas"}}
+[ 39.07s][user ] «backchannel» Oh.
+[ 39.42s][moshi] It is quite warm! Perhaps you’d like to look at hotels in Laredo?
+[ 43.91s][user ] «backchannel» Yeah, yeah.
+[ 44.60s][user ] Maybe. Are there any good restaurants nearby the film ⟨ret@47.74s⟩ location?
+[ 48.06s][moshi] ⟦⚡SPAN@48.06s: (tool result) The Garden Grill - American, 4.2 stars, 1201 E Market St.⟧ The Garden Grill, an American restaurant with 4.2 stars, is located at 1201 East Market Street.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Laredo, Texas", "query": "near Frontier film location"}}
+[ 53.59s][user ] That sounds nice. Can you reserve a table for two there tomorrow evening?
+[ 58.09s][moshi] I can certainly try. What time would you like the reservation to be?

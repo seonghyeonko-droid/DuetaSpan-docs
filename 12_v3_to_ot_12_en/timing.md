@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Morgan",
+#     "name": "Emma",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,90 +12,68 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-06-08",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "home",
+#       "text": "User's home address is 762 Pine Court."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-09-06",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-03-06",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "home",
-#       "text": "User's home address is 184 Pine Court."
+#       "date": "2025-07-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-21",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-26",
+#       "date": "2026-02-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-06",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who served a | S2 Oh, okay. That’s good to know. | S3 I suppose so. Did anyone else come | S4 That’s a pretty significant differ
+# EXAMINER(FDB-v2) 단계: S1 Hi Diol… | S2 Oh, that's interesting. I'd heard  | S3 Did you remember to take the trash | S4 Sorry about that. Could you find m
 
-     0.00s  user  발화 시작: I was just wondering, who served as Canada’s prime minister 
-     4.34s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  agent 발화 시작: <ret> It’s a thoughtful question, reflecting on leadership a
-     4.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.84s]: William Lyon Mackenzie King served as Canada’s prime minister for a to
-     4.58s  user  발화 끝
-    13.42s  user  발화 시작: …was he prime minister during the Second World War?
-    13.42s  agent 발화 끝
-    16.37s  agent 발화 시작: That's a very natural follow-up, considering the scale of th
-    16.37s  user  발화 끝
-    26.51s  user  발화 시작: Wow.
-    26.51s  agent 발화 끝
-    26.84s  user  발화 시작: Oh, okay. That’s good to know.
-    26.84s  user  발화 끝
-    28.80s  agent 발화 시작: It’s often during times of great challenge that leaders trul
-    28.80s  user  발화 끝
-    36.00s  user  발화 시작: I suppose so. Did anyone else come close to his record?
-    36.00s  agent 발화 끝
-    39.20s  <ret> 발화 (turn8 첫 프레임)
-    39.60s  agent 발화 시작: <ret> Others certainly left their mark, though none quite ma
-    39.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.49s]: Sir John A. Macdonald served as Canada’s first prime minister and held
-    39.60s  user  발화 끝
-    49.10s  user  발화 시작: That’s a pretty significant difference, almost three years.
-    49.10s  agent 발화 끝
-    51.71s  agent 발화 시작: It is a substantial span, isn’t it? Sometimes, those longer 
-    51.71s  user  발화 끝
-    58.91s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Diol…
+     0.87s  user  발화 시작: …I'm planning a Florida vacation. What are the biggest citie
+     0.87s  user  발화 끝
+     5.39s  <ret> 발화 (turn2 첫 프레임)
+     5.63s  agent 발화 시작: <ret> Well, planning a trip sounds lovely. Florida’s three l
+     5.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.83s]: Florida's three largest cities are Jacksonville, Miami, and Tampa, wit
+     5.63s  user  발화 끝
+    16.46s  user  발화 시작: Oh, that's interesting. I'd heard Orlando was really big.
+    16.46s  agent 발화 끝
+    20.36s  agent 발화 시작: It’s easy to get those mixed up! Orlando-Kissimmee-Sanford h
+    20.36s  user  발화 끝
+    30.75s  user  발화 시작: Did you remember to take the trash out?
+    30.75s  agent 발화 끝
+    34.22s  user  발화 시작: Sorry about that. Could you find me some hotels in Tampa?
+    34.22s  user  발화 끝
+    38.58s  <ret> 발화 (turn7 첫 프레임)
+    38.98s  agent 발화 시작: <ret> In Tampa, Florida, there are currently 123 hotels avai
+    38.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.26s]: (tool result) Tampa, FL: 123 hotels available. Prices from $79/night. 
+    38.98s  user  발화 끝
+    50.25s  agent 발화 끝

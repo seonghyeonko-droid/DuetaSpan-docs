@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "성호",
+#     "name": "도연",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,73 +13,68 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-06",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2026-02-18",
+#       "date": "2026-03-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-03-16",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2025-06-08",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-06-01",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-16",
-#       "title": "Researching a used car",
+#       "date": "2026-06-27",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 성호님. 저는 도라로입니다. 오늘 하루 잘 보내셨는지 궁금하네요.
-     3.92s  user  발화 시작: 안녕하세요, 도라로 씨. 지금 시간 알려주실 수 있나요?
-     3.92s  agent 발화 끝
-     7.32s  <ret> 발화 (turn2 첫 프레임)
-     7.40s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십육분입니다. 부산에서는 지금 해가 뉘엿뉘엿 지
-     7.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.09s]: (tool result) It is Friday, July 10, 2026 at 2:36 PM in Asia/Seoul rig
-     7.40s  user  발화 끝
-    13.50s  user  발화 시작: 네.
-    13.50s  agent 발화 끝
-    13.93s  user  발화 시작: 아, 그렇군요. 제가 발효 식품에 관심 있는 거 기억하시죠?
-    13.93s  user  발화 끝
-    17.61s  <ret> 발화 (turn5 첫 프레임)
-    17.85s  agent 발화 시작: <ret> 네, 이천이십육년 오월 칠일에 발효 식품에 관심이 많다고 말씀하셨었죠.
-    17.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.92s]: [2026-05-07] User is into home fermentation.
-    17.85s  user  발화 끝
-    21.77s  user  발화 시작: 네.
-    21.77s  agent 발화 끝
-    22.20s  user  발화 시작: 혹시 집에서 쉽게 만들 수 있는 발효 식품 레시피 같은 거 있을까요?
-    22.20s  user  발화 끝
-    27.43s  agent 발화 시작: 집에서 쉽게 만들 수 있는 발효 식품이라… 혹시 어떤 종류를 생각하고 계신가요?
-    27.43s  user  발화 끝
-    32.65s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 도연님! 저는 조리예요. 오늘 하루는 어떠셨어요?
+     3.46s  user  발화 시작: 안녕하세요, 조리님. 오늘 좀 피곤하네요. 지금 몇 시예요?
+     3.46s  agent 발화 끝
+     7.33s  <ret> 발화 (turn2 첫 프레임)
+     7.41s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십팔분이에요. 혹시 힘든 일이 있으셨나요?
+     7.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: It is Friday, July 10, 2026 at 2:38 PM in Asia/Seoul right now.
+     7.41s  user  발화 끝
+    13.33s  user  발화 시작: 그냥 일이 좀 많았어요. 스위스 여행 계획 세우고 있는데, 십이월에 가려고 해요.
+    13.33s  agent 발화 끝
+    19.02s  <ret> 발화 (turn4 첫 프레임)
+    19.26s  agent 발화 시작: <ret> 혹시 특별히 가보고 싶은 곳이 있으세요?
+    19.26s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.96s]: [2025-06-08] User is planning a trip to Switzerland in December.
+    19.26s  user  발화 끝
+    22.22s  agent 발화 끝

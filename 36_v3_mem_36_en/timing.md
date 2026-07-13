@@ -4,90 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Stella",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-10-16",
+#       "date": "2026-01-15",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-16",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-21",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-31",
+#       "date": "2026-03-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Um, well, I was just thinking abou | S2 Flights, I guess. Do you think you | S3 That Qantas flight sounds good. | S4 Oh yes, right. Thanks for remindin
 
-     0.00s  agent 발화 시작: Hi Stella, I'm Nunar. It's lovely to meet you.
-     3.46s  user  발화 시작: Um, hi Nunar. I was just thinking about my New Zealand trip.
-     3.46s  agent 발화 끝
-     7.84s  <ret> 발화 (turn2 첫 프레임)
-     8.08s  agent 발화 시작: <ret> You're planning a trip to New Zealand in December, tha
-     8.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.47s]: [2026-02-18] User is planning a trip to New Zealand in December.
-     8.08s  user  발화 끝
-    16.55s  user  발화 시작: Yeah.
-    16.55s  agent 발화 끝
-    16.93s  user  발화 시작: I remember I mentioned wanting to photograph wildflowers the
-    16.93s  user  발화 끝
-    19.99s  <ret> 발화 (turn5 첫 프레임)
-    20.39s  agent 발화 시작: <ret> Ah, yes, you're passionate about alpine wildflower pho
-    20.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: [2026-02-07] User is into alpine wildflower photography.
-    20.39s  user  발화 끝
-    26.94s  user  발화 시작: Right.
-    26.94s  agent 발화 끝
-    27.32s  agent 발화 시작: It really does. Perhaps we could brainstorm some locations p
-    27.32s  user  발화 끝
-    33.09s  user  발화 시작: That’d be great, but also I’m a bit worried about being alon
-    33.09s  agent 발화 끝
-    38.10s  agent 발화 시작: It's completely normal to feel that way before a big trip, e
-    38.10s  user  발화 끝
-    51.56s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Alice, I'm Tellara.
+     1.58s  user  발화 시작: Um, well, I was just thinking about that trip to Kyoto I too
+     1.58s  agent 발화 끝
+     7.28s  <ret> 발화 (turn2 첫 프레임)
+     7.52s  agent 발화 시작: <ret> I see you mentioned a preference for window seats duri
+     7.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.33s]: [2026-01-15] User prefers a window seat when traveling.
+     7.52s  user  발화 끝
+    13.85s  user  발화 시작: Yeah.
+    13.85s  agent 발화 끝
+    14.24s  user  발화 시작: Right, and I'm planning another trip, actually. This time to
+    14.24s  user  발화 끝
+    18.60s  agent 발화 시작: Melbourne sounds wonderful! Are you thinking about flights o
+    18.60s  user  발화 끝
+    22.95s  user  발화 시작: Yeah.
+    22.95s  agent 발화 끝
+    23.34s  user  발화 시작: Flights, I guess. Do you think you could search for one-way 
+    23.34s  user  발화 끝
+    28.48s  <ret> 발화 (turn8 첫 프레임)
+    28.88s  agent 발화 시작: <ret> I'm afraid I couldn't find any one-way flights at this
+    28.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) No flights found matching your request.
+    28.88s  user  발화 끝
+    34.82s  user  발화 시작: Oh, that's a shame. I was hoping to go next Tuesday.
+    34.82s  agent 발화 끝
+    39.09s  <ret> 발화 (turn10 첫 프레임)
+    39.17s  agent 발화 시작: <ret> There are flights from Sydney to Melbourne next Tuesda
+    39.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.22s]: (tool result) Flights from Sydney to Melbourne on 2026-07-14: QF401, 0
+    39.17s  user  발화 끝
+    55.39s  user  발화 시작: Right.
+    55.39s  agent 발화 끝
+    55.79s  user  발화 시작: That Qantas flight sounds good.
+    55.79s  user  발화 끝
+    57.77s  agent 발화 시작: That's a great choice! I can search for hotels in Melbourne 
+    57.77s  user  발화 끝
+    63.30s  user  발화 시작: Actually, before that, could you remind me if I have any die
+    63.30s  agent 발화 끝
+    68.76s  <ret> 발화 (turn15 첫 프레임)
+    68.84s  agent 발화 시작: <ret> You noted an allergy to shellfish on December third, t
+    68.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.70s]: [2025-12-03] User is allergic to shellfish.
+    68.84s  user  발화 끝
+    77.55s  user  발화 시작: Yeah.
+    77.55s  agent 발화 끝
+    77.94s  user  발화 시작: Oh yes, right. Thanks for reminding me. Let's look at hotels
+    77.94s  user  발화 끝
+    82.69s  user  발화 끝

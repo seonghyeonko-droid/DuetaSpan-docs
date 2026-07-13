@@ -1,91 +1,87 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Iox, a warm and attentive life coach who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Goraia, a grounded and empathetic counselor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Robin",
+    "name": "Jack",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-01-05",
+      "date": "2026-04-22",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-12-08",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-11-15",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-10-02",
+      "date": "2026-03-03",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-08",
-      "title": "Planning a birthday dinner",
+      "date": "2025-06-29",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm thinking about a little getaway next month, maybe somewhere with good hiking.
-[  5.52s][moshi] That sounds lovely! Planning a bit of time in nature is always refreshing.
-[ 11.03s][user ] Could you look up some hiking spots near ⟨ret@14.61s⟩ Seoul?
-[ 14.85s][moshi] «interrupted» ⟦⚡SPAN@14.85s: (tool result) Bukhansan National Park offers challenging trails and stunning views, attracting over 5 million ⟧ Bukhansan National Park offers challenging trails and—
-      CALL: {"function": "search", "arguments": {"query": "hiking spots near Seoul"}}
-[ 17.83s][user ] «interrupts_prev» …are there any easier trails for beginners, ⟨ret@20.82s⟩ though?
-[ 21.22s][moshi] «interrupted» ⟦⚡SPAN@21.22s: (tool result) The Seoul Forest trails are generally flat and well-maintained, perfect for beginners and famili⟧ The Seoul Forest trails are generally flat and well-maintained, perfect for beginners—
-      CALL: {"function": "search", "arguments": {"query": "easy hiking trails near Seoul"}}
-[ 26.31s][user ] «interrupts_prev» That sounds perfect, Seoul Forest. What's the weather like there this ⟨ret@31.01s⟩ weekend?
-[ 31.41s][moshi] ⟦⚡SPAN@31.41s: (tool result) Current conditions: 26.5°C, humidity 68%, wind 3.2 km/h, clear skies. Forecast for Saturday: 28.⟧ Currently it’s 26.5°C, humidity is 68%, and the wind is 3.2 km/h with clear skies. Saturday will be 28.0°C and sunny.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul Forest"}}
-[ 40.32s][user ] Excellent. And can you find me some restaurants near Seoul ⟨ret@44.75s⟩ Forest?
-[ 44.99s][moshi] ⟦⚡SPAN@44.99s: (tool result) "The Table" is a popular Italian restaurant near Seoul Forest, rated 4.5 stars with an average p⟧ "The Table" is a popular Italian restaurant nearby, rated 4.5 stars, with prices around ₩25,000 per person.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul Forest"}}
-[ 52.20s][user ] That sounds nice. How about a coffee shop? ⟨ret@55.52s⟩
-[ 55.60s][moshi] ⟦⚡SPAN@55.60s: (tool result) "Anthracite Coffee Roasters" is a well-regarded coffee shop near Seoul Forest, known for its spe⟧ You might enjoy "Anthracite Coffee Roasters," known for specialty coffee and a minimalist design.
-      CALL: {"function": "search", "arguments": {"query": "coffee shops near Seoul Forest"}}
-[ 61.54s][user ] Is it possible to book a table at "The Table"? ⟨ret@65.63s⟩
-[ 65.79s][moshi] ⟦⚡SPAN@65.79s: (tool result) Reservation confirmed for July 13, 2026 at 7:00 PM under reservation ID: RT-78923.⟧ A table at "The Table" is confirmed for you on July 13th at 7:00 PM. Your reservation ID is RT-78923.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "The Table", "date": "July 13, 2026", "time": "7:00 PM"}}
-[ 74.27s][user ] Perfect! I'm starting to feel much more prepared.
-[ 77.67s][moshi] That’s wonderful to hear! It's so good to have those details sorted out in advance.
-[ 84.04s][user ] «backchannel» Yeah.
-[ 84.46s][user ] Do you think I…
-[ 86.16s][user ] …should pack a light jacket?
-[ 88.28s][moshi] Evenings can be a little cooler, so a light jacket is always a good idea for comfort.
-[ 95.50s][user ] What time does Seoul Forest close? ⟨ret@97.88s⟩
-[ 98.04s][moshi] ⟦⚡SPAN@98.04s: (tool result) Seoul Forest is open daily from 6:00 AM to 10:00 PM, with certain facilities closing earlier, su⟧ Seoul Forest is open daily from 6:00 AM to 10:00 PM, although the Ecological Forest closes at 7:00 PM.
-      CALL: {"function": "search", "arguments": {"query": "Seoul Forest closing time"}}
-[106.11s][user ] Good to know. And can you remind me the restaurant reservation ⟨ret@110.96s⟩ details?
-[111.20s][moshi] ⟦⚡SPAN@111.20s: [July 13, 2026] Reservation confirmed for July 13, 2026 at 7:00 PM under reservation ID: RT-78923.⟧ Your reservation is confirmed for July 13th at 7:00 PM, reservation ID RT-78923.
-[116.72s][user ] That's very helpful, thank you.
-[118.84s][moshi] You’re very welcome! I'm glad I could help you plan a relaxing getaway. I hope you have a wonderful time.
+[  0.00s][user ] I need to book an appointment with a counselor.
+[  3.57s][moshi] I can help with that. Do you have a preferred counselor in mind?
+[  8.74s][user ] «backchannel» Mm-hmm.
+[  9.13s][user ] No, not really. Someone good with travel anxiety, ⟨ret@12.47s⟩ maybe?
+[ 12.71s][moshi] «interrupted» ⟦⚡SPAN@12.71s: Goraia specializes in travel anxiety and has over ten years of experience helping clients prepare for and enjo⟧ Goraia specializes in travel anxiety and—
+[ 15.09s][user ] «interrupts_prev» …Is she available next week?
+[ 17.08s][moshi] Yes, Goraia has some openings next week. What day would work best for you?
+[ 22.64s][user ] Hmm, maybe Tuesday? ⟨ret@23.75s⟩
+[ 23.83s][moshi] ⟦⚡SPAN@23.83s: (tool result) Appointment confirmed with Goraia on Tuesday, July 14, 2026, at 10:00 AM. Confirmation ID: 87B39⟧ Great, your appointment with Goraia is confirmed for Tuesday, July 14th, at 10:00 AM. Confirmation ID is 87B392.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Goraia", "date": "2026-07-14", "time": "10:00"}}
+[ 30.98s][user ] Perfect. And could you remind me what I should bring to the first session?
+[ 36.54s][moshi] That's a good question to prepare. It's helpful to bring a list of your travel concerns.
+[ 42.89s][user ] «backchannel» Yeah.
+[ 43.29s][moshi] I find it’s also useful to think about past travel experiences—both positive and challenging—to share.
+[ 49.25s][user ] Okay, that makes sense. I’m going to Italy next month.
+[ 53.22s][moshi] Italy is beautiful! It’s a very popular destination, so it’s common to feel some anxiety.
+[ 59.18s][user ] It’s my first time traveling alone, which is part of the worry.
+[ 63.94s][moshi] Traveling solo for the first time is a big step. It’s perfectly normal to feel apprehensive.
+[ 70.30s][user ] I'm also trying to learn some Italian phrases.
+[ 73.48s][moshi] That's a wonderful idea. Knowing a little of the local language can really enhance your experience.
+[ 79.83s][user ] «backchannel» Yeah, yeah.
+[ 80.62s][user ] Do you know a good app for ⟨ret@83.48s⟩ that?
+[ 83.80s][moshi] «interrupted» ⟦⚡SPAN@83.80s: Duolingo is the most popular language-learning app, with over 500 million users and courses in 40+ languages, ⟧ I can certainly help with that. Duolingo is a very popular app, with over 500 million users—
+[ 90.55s][user ] «interrupts_prev» Is it free?
+[ 91.74s][moshi] Yes, Duolingo is free to use, with optional paid subscriptions for extra features.
+[ 96.91s][user ] That’s good to know. What’s the weather usually like in Rome in August? ⟨ret@101.91s⟩
+[102.07s][moshi] ⟦⚡SPAN@102.07s: The average high temperature in Rome in August is 31.2°C, with lows around 20.3°C. Rainfall is minimal, averag⟧ Typically, Rome in August has average highs of 31.2°C and lows around 20.3°C. There’s very little rainfall, averaging only 21 mm for the month.
+[111.60s][user ] Okay, that’s hot. I should pack light clothes then.
+[115.18s][moshi] Lightweight, breathable fabrics will be your best friend.
+[118.35s][user ] «backchannel» Really?
+[118.75s][user ] I think I’m ready to start making a packing list.
+[122.72s][moshi] That’s a proactive step. A well-thought-out packing list can reduce a lot of pre-trip stress.
+[128.68s][user ] Thanks, Goraia. You've been really helpful.
+[131.06s][moshi] You're very welcome. I’m glad I could assist you in preparing for your trip. Remember, a little planning goes a long way.

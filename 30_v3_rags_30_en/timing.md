@@ -4,68 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Harry",
+#     "name": "Lily",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-19",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-12-21",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
 #       "date": "2025-11-09",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-25",
-#       "category": "home",
-#       "text": "User's home address is 288 Birch Road."
-#     },
-#     {
-#       "date": "2025-06-03",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-05-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-14",
-#       "title": "Researching a used car",
+#       "date": "2026-02-05",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-19",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When was the very first…
-     2.52s  user  발화 시작: …Thanksgiving proclamation made in America?
-     2.52s  user  발화 끝
-     4.79s  <ret> 발화 (turn2 첫 프레임)
-     5.03s  agent 발화 시작: <ret> The first national Thanksgiving proclamation was issue
-     5.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.57s]: The first national Thanksgiving proclamation was issued by the Contine
-     5.03s  user  발화 끝
-    16.60s  agent 발화 끝
+     0.00s  user  발화 시작: Who sang the song "it always feels like somebody's watching 
+     3.13s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  agent 발화 시작: <ret> That song is by Rockwell, and it was quite a hit back 
+     3.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.35s]: American singer Rockwell released "Somebody's Watching Me" in 1984, an
+     3.37s  user  발화 끝
+    10.72s  agent 발화 끝

@@ -4,110 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Felix",
+#     "name": "Elena",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
+#     "nationality": "German",
+#     "gender": "female",
 #     "age_range": "50s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-21",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2026-01-21",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-12-13",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-07-26",
+#       "date": "2026-03-24",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-11-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-21",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-25",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-01",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Wellness coach? That’s… unexpected | S2 Like what? Apps? I’ve heard they’r | S3 Roughly. Around six thousand, afte | S4 Wow, that’s… higher than I thought
+# EXAMINER(FDB-v2) 단계: S1 A wellness coach? That's… unexpect | S2 I keep replaying everything, all t | S3 I keep thinking about her apartmen | S4 Maybe… I don't know. I’m also supp
 
-     0.00s  agent 발화 시작: Hello Felix, welcome. I’m Braex, your wellness coach, here t
-     6.57s  user  발화 시작: Right.
-     6.57s  agent 발화 끝
-     6.96s  user  발화 시작: Wellness coach? That’s… unexpected. I just need to figure ou
-     6.96s  user  발화 끝
-    11.60s  agent 발화 시작: It’s more common than you think, Felix. Many find peace of m
-    11.60s  user  발화 끝
-    18.95s  user  발화 시작: Yeah.
-    18.95s  agent 발화 끝
-    19.34s  user  발화 시작: Welll… I’ve been meaning to get a handle on that for ages. I
-    19.34s  user  발화 끝
-    25.14s  agent 발화 시작: That’s perfectly understandable. Overwhelm is often the firs
-    25.14s  user  발화 끝
-    32.10s  user  발화 시작: Really?
-    32.10s  agent 발화 끝
-    32.48s  agent 발화 시작: Sometimes simply tracking expenses for a week can reveal pat
-    32.48s  user  발화 끝
-    40.99s  user  발화 시작: Yeah, totally.
-    40.99s  agent 발화 끝
-    41.76s  user  발화 시작: I tried that once, it was depressing. Just seeing all the co
-    41.76s  user  발화 끝
-    47.18s  agent 발화 시작: [laugh] I can imagine! It’s not about guilt, though, it’s ab
-    47.18s  user  발화 끝
-    54.52s  user  발화 시작: Right.
-    54.52s  agent 발화 끝
-    54.91s  user  발화 시작: Like what? Apps? I’ve heard they’re… complicated.
-    54.91s  user  발화 끝
-    57.62s  agent 발화 시작: Some can be, yes. But there are simpler options, or even a g
-    57.62s  user  발화 끝
-    65.74s  user  발화 시작: A notebook, maybe. Less screen time is good.
-    65.74s  agent 발화 끝
-    68.83s  agent 발화 시작: Excellent. A physical record can be very grounding. Do you h
-    68.83s  user  발화 끝
-    75.79s  user  발화 시작: Roughly. Around six thousand, after taxes. It varies a littl
-    75.79s  agent 발화 끝
-    79.66s  agent 발화 시작: That’s a solid base to work from. Let's focus on identifying
-    79.66s  user  발화 끝
-    87.78s  user  발화 시작: Rent, utilities… the usual. About two thousand five hundred,
-    87.78s  agent 발화 끝
-    92.03s  agent 발화 시작: That's a significant portion of your income, Felix. The aver
-    92.03s  user  발화 끝
-   100.54s  user  발화 시작: Yeah.
-   100.54s  agent 발화 끝
-   100.93s  user  발화 시작: Wow, that’s… higher than I thought. I’m in Brooklyn, thankfu
-   100.93s  user  발화 끝
-   104.80s  agent 발화 시작: Brooklyn offers more variety, certainly. Knowing your precis
-   104.80s  user  발화 끝
-   113.69s  user  발화 시작: Yeah, totally.
-   113.69s  agent 발화 끝
-   114.46s  user  발화 시작: A student loan. Still chipping away at it. About four hundre
-   114.46s  user  발화 끝
-   119.49s  agent 발화 시작: Okay, so we have rent, utilities, and your student loan as f
-   119.49s  user  발화 끝
-   128.38s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Elena. My name is Kellan, and I’m here to offer s
+     8.34s  user  발화 시작: Yeah.
+     8.34s  agent 발화 끝
+     8.70s  user  발화 시작: A wellness coach? That's… unexpected. I thought this was jus
+     8.70s  user  발화 끝
+    14.14s  agent 발화 시작: It’s true I can assist with practical matters, but my streng
+    14.14s  user  발화 끝
+    22.48s  user  발화 시작: Well, my mother… she passed away last month. It’s still very
+    22.48s  agent 발화 끝
+    26.83s  agent 발화 시작: I am so sorry for your loss, Elena. Grief is a deeply person
+    26.83s  user  발화 끝
+    36.62s  user  발화 시작: Mhm.
+    36.62s  agent 발화 끝
+    36.98s  agent 발화 시작: It’s alright to simply *be* with those feelings, to allow yo
+    36.98s  user  발화 끝
+    45.68s  user  발화 시작: …Do you think talking about her will actually help? It feels
+    45.68s  agent 발화 끝
+    50.03s  agent 발화 시작: That’s a very valid feeling, Elena. Talking about your mothe
+    50.03s  user  발화 끝
+    61.27s  user  발화 시작: I keep replaying everything, all the things I should have sa
+    61.27s  agent 발화 끝
+    65.26s  agent 발화 시작: That’s incredibly common, Elena. We often find ourselves rev
+    65.26s  user  발화 끝
+    73.23s  user  발화 시작: Uh-huh.
+    73.23s  agent 발화 끝
+    73.60s  user  발화 시작: It's just… I hadn't visited her in Berlin for months. Work w
+    73.60s  user  발화 끝
+    78.67s  agent 발화 시작: It's understandable to feel guilt when there are unsaid word
+    78.67s  user  발화 끝
+    91.72s  user  발화 시작: I keep thinking about her apartment. It's just sitting there
+    91.72s  agent 발화 끝
+    95.71s  agent 발화 시작: That sense of emptiness can be overwhelming, especially when
+    95.71s  user  발화 끝
+   106.59s  user  발화 시작: She always wanted to travel. Especially to Italy.
+   106.59s  agent 발화 끝
+   109.49s  agent 발화 시작: That's a lovely thought, Elena. Perhaps honoring her dream b
+   109.49s  user  발화 끝
+   121.09s  user  발화 시작: Maybe… I don't know. I’m also supposed to sort through her t
+   121.09s  agent 발화 끝
+   125.44s  agent 발화 시작: That can feel incredibly daunting. It's okay to take it slow
+   125.44s  user  발화 끝
+   137.04s  user  발화 시작: It just feels like… another ending.
+   137.04s  agent 발화 끝
+   139.22s  agent 발화 시작: It does feel that way, doesn’t it? Another layer of loss. Bu
+   139.22s  user  발화 끝
+   151.91s  agent 발화 끝

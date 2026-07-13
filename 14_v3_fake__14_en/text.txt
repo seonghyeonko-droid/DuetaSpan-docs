@@ -1,95 +1,65 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Oreaon, a upbeat and supportive personal guide who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Arunana, a upbeat and supportive counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Jordan",
+    "name": "Avery",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
+      "date": "2026-06-02",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
+    },
+    {
+      "date": "2026-05-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-04-06",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-03-06",
       "category": "home",
-      "text": "User's home address is 591 Cedar Lane."
+      "text": "User's home address is 374 Oak Avenue."
     },
     {
-      "date": "2026-01-26",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-10-14",
+      "date": "2025-12-18",
       "category": "hobby",
       "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-09-18",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2025-09-11",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-14",
-      "title": "Comparing gym memberships",
+      "date": "2026-02-26",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-04-29",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Oreaon, when did LeBron James go back to play for the ⟨ret@4.55s⟩ Cavaliers?
-[  4.79s][moshi] ⟦⚡SPAN@4.79s: LeBron James signed with the Cleveland Cavaliers on July 11, 2014, returning to his home state team after four⟧ He signed with the Cavaliers on July eleventh, 2014, returning to Ohio after playing for the Heat. It’s a big moment in basketball history!
-[ 13.64s][user ] That's right, it was a huge deal. Do you think he'll ever go back again?
-[ 19.17s][moshi] It's hard to predict the future, but anything is possible in sports.
-[ 23.60s][user ] «backchannel» Yeah.
-[ 23.97s][user ] What was the biggest reason he left the first time? ⟨ret@27.49s⟩
-[ 27.65s][moshi] ⟦⚡SPAN@27.65s: LeBron James left the Cleveland Cavaliers in 2010, largely due to a perceived lack of support from the Cavalie⟧ He left in 2010, because he felt the Cavaliers’ ownership wasn’t building a team that could win championships. It was a tough decision.
-[ 36.13s][user ] «backchannel» Yeah.
-[ 36.50s][user ] Was Dwyane Wade involved in convincing him to go to ⟨ret@40.32s⟩ Miami?
-[ 40.56s][moshi] ⟦⚡SPAN@40.56s: Dwyane Wade and Chris Bosh were both instrumental in recruiting LeBron James to join the Miami Heat in the sum⟧ Yes, Dwyane Wade and Chris Bosh were key in getting him to join the Heat in 2010, forming a powerful trio.
-[ 48.30s][user ] «backchannel» Mhm.
-[ 48.67s][user ] So, it was a pretty coordinated effort then?
-[ 51.62s][moshi] It was a very deliberate and well-planned move by all three players. They envisioned a lot of success together.
-[ 58.62s][user ] What was his jersey number when he first played for the Cavs? ⟨ret@62.97s⟩
-[ 63.05s][moshi] ⟦⚡SPAN@63.05s: LeBron James wore jersey number 23 during his first stint with the Cleveland Cavaliers, from 2003 to 2010.⟧ He wore number 23 during his first time with Cleveland, from 2003 to 2010. It became iconic, really.
-[ 69.68s][user ] And did he wear the same number when he came back? —
-[ 74.11s][user ] … actually, before you finish, how did the fans react when he announced he was leaving the first ⟨ret@80.79s⟩ time?
-[ 81.11s][moshi] ⟦⚡SPAN@81.11s: When LeBron James announced his decision to leave the Cleveland Cavaliers in 2010, many fans felt betrayed and⟧ Many fans felt betrayed and were very angry, even burning his jerseys, when he announced he was leaving in 2010. It was a really difficult time for the city.
-[ 91.81s][user ] Wow, that sounds intense. Okay, back to the jersey number. ⟨ret@95.33s⟩
-[ 95.49s][moshi] ⟦⚡SPAN@95.49s: When LeBron James returned to the Cleveland Cavaliers in 2014, he switched his jersey number from 23 to 6, cit⟧ He switched to number 6 when he returned in 2014, wanting a fresh start. It was a symbolic change for him.
-[103.24s][moshi] ⟨ret@102.92s⟩ ⟦⚡SPAN IRRELEVANT@103.24s: The current temperature in Rome, Italy is 28.5°C with clear skies and a gentle breeze from the south at 7.2 km⟧ It’s great we got to talk about LeBron’s career. Planning a basketball trip sometime?
-[108.40s][user ] «backchannel» Yeah.
-[108.77s][user ] That's a good idea, actually. Maybe a trip to see a game!
-[113.19s][moshi] That sounds fantastic! I can definitely help you plan a trip centered around basketball. Where would you like to go?
+[  0.00s][user ] I was reading the Odyssey, and I got curious. How old was Telemachus when the story ⟨ret@6.30s⟩ began?
+[  6.54s][moshi] ⟦⚡SPAN@6.54s: Telemachus is twenty years old at the beginning of Homer’s Odyssey, having been born shortly before Odysseus d⟧ Telemachus is actually twenty years old when the Odyssey begins, born just before his father left for Troy. It's a pivotal age for him, really.
+[ 16.17s][user ] That’s good to know. It feels like he’s younger, ⟨ret@19.77s⟩ somehow.
+[ 20.01s][moshi] ⟦⚡SPAN IRRELEVANT@20.01s: The current temperature in Reykjavik, Iceland is 8.2°C, with a humidity of 88% and wind speeds of 11.2 km/h.⟧ I understand that feeling. It's easy to focus on his emotional journey, and he certainly *acts* younger at times, needing to grow into his role.
+[ 29.64s][moshi] It's wonderful you're exploring such classic literature. Sometimes we project our own experiences onto characters, which can influence how we perceive their age.
+[ 38.49s][user ] I think so. Maybe I’ll reread it with that in mind.
+[ 42.72s][moshi] That sounds like a lovely idea! Re-reading with a fresh perspective can unlock so much. It’s like revisiting a conversation with a friend.

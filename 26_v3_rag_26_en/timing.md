@@ -4,84 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Caleb",
+#     "name": "Kim",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-04-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-01-02",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-10-15",
+#       "date": "2025-12-10",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "date": "2025-11-16",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-09-01",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-09-07",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-08-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-25",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Elius, good to talk to you. I w | S2 Wow, six thousand! That’s a lot of | S3 [happy] That makes sense. Do they  | S4 Okay, so like, the actors vote on 
+# EXAMINER(FDB-v2) 단계: S1 Oh, you know, I was just rewatchin | S2 Polly Maberly, right. That rings a | S3 That sounds…pleasant. Maybe I… | S4 …should plan a trip.
 
-     0.00s  user  발화 시작: Hi Elius, good to talk to you. I was wondering, who actually
-     6.65s  agent 발화 시작: It's a pleasure speaking with you as well. That's a good que
-     6.65s  user  발화 끝
-    13.30s  user  발화 시작: Uh-huh.
-    13.30s  agent 발화 끝
-    13.69s  user  발화 시작: Yeah, I always figured it was just…people in the industry, b
-    13.69s  user  발화 끝
-    18.53s  <ret> 발화 (turn4 첫 프레임)
-    18.77s  agent 발화 시작: <ret> The Academy of Motion Picture Arts and Sciences is mad
-    18.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.65s]: The Academy of Motion Picture Arts and Sciences is comprised of over 6
-    18.77s  user  발화 끝
-    25.42s  user  발화 시작: Right.
-    25.42s  agent 발화 끝
-    25.81s  user  발화 시작: Wow, six thousand! That’s a lot of people. Uh, what kind of 
-    25.81s  user  발화 끝
-    32.46s  agent 발화 시작: All sorts, really – actors, directors, writers, and many oth
-    32.46s  user  발화 끝
-    37.54s  user  발화 시작: [happy] That makes sense. Do they all vote on everything, or
-    37.54s  agent 발화 끝
-    43.48s  <ret> 발화 (turn9 첫 프레임)
-    43.80s  agent 발화 시작: <ret> Voting within the Academy is done by members of specif
-    43.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: Academy voting is done by members of specific branches, with all membe
-    43.80s  user  발화 끝
-    50.84s  user  발화 시작: Okay, so like, the actors vote on the acting categories? Tha
-    50.84s  agent 발화 끝
-    55.92s  agent 발화 시작: Exactly! It ensures those with direct experience have a sign
-    55.92s  user  발화 끝
-    61.40s  agent 발화 끝
+     0.00s  user  발화 시작: Oh, you know, I was just rewatching Pride and Prejudice, the
+     5.95s  agent 발화 시작: That adaptation is quite lovely, isn’t it? It captures a cer
+     5.95s  user  발화 끝
+    11.45s  user  발화 시작: It really does. Um, who played Kitty, do you remember?
+    11.45s  agent 발화 끝
+    15.78s  <ret> 발화 (turn3 첫 프레임)
+    16.02s  agent 발화 시작: <ret> The role of Kitty Bennet was played by Polly Maberly i
+    16.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.41s]: Polly Maberly played Kitty Bennet in the 1995 BBC adaptation of Pride 
+    16.02s  user  발화 끝
+    22.43s  user  발화 시작: Polly Maberly, right. That rings a bell. What’s the weather 
+    22.43s  agent 발화 끝
+    28.68s  <ret> 발화 (turn5 첫 프레임)
+    28.84s  agent 발화 시작: <ret> It’s currently 20.5°C in London, with partly cloudy sk
+    28.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.95s]: (tool result) London: 20.5°C, humidity 68%, wind 8.2 km/h, condition: 
+    28.84s  user  발화 끝
+    34.80s  user  발화 시작: That sounds…pleasant. Maybe I…
+    34.80s  agent 발화 끝
+    36.63s  user  발화 시작: …should plan a trip.
+    36.63s  user  발화 끝
+    38.46s  agent 발화 시작: A change of scenery can be very restorative, especially when
+    38.46s  user  발화 끝
+    44.87s  agent 발화 끝

@@ -1,83 +1,70 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 프레아크스이며, 슬픔과 변화를 겪는 사람들을 돕는 현실적이고 공감적인 조력자입니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는, 현실적이고 공감적인 개인 가이드인 에루르입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "태아",
+    "name": "다완",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-16",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-07-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-07-13",
       "category": "allergy",
       "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-01-24",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-12-31",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-11-22",
-      "category": "home",
-      "text": "User's home address is 서울 강남구 역삼동 678-9."
-    },
-    {
-      "date": "2025-08-12",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-06-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-27",
-      "title": "Planning a birthday dinner",
+      "date": "2026-03-10",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 항저우 서호에서 링인사까지 자전거로 가는 데 대략 얼마나 ⟨ret@3.98s⟩ 걸릴까요?
-[  4.30s][moshi] ⟦⚡SPAN@4.30s: (tool result) 3.6 km, 14 minutes⟧ 서호에서 링인사까지 자전거로 가는 거리는 삼 점 육킬로미터이고, 예상 소요 시간은 십사분입니다.
-      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "West Lake", "destination": "Lingyin Temple", "mode": "bicycling"}}
-[ 10.04s][user ] «backchannel» 네.
-[ 10.51s][user ] 음… 꽤 가깝네요.
-[ 11.95s][moshi] 네, 자전거로 충분히 다녀올 만한 거리인 것 같아요. 날씨도 좋은 날이면 더욱 즐거울 거예요.
-[ 18.64s][user ] «backchannel» 네네.
-[ 19.11s][moshi] 혹시 다른 궁금한 점이 있으신가요? 아니면 다른 경로를 알아봐 드릴까요?
-[ 23.89s][user ] 지금 서울 시간 알려줄 수 ⟨ret@26.36s⟩ 있어요?
-[ 26.76s][moshi] ⟦⚡SPAN@26.76s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ 현재 서울 시간은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다.
-      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
-[ 31.54s][user ] 오늘 저녁에 비 ⟨ret@33.13s⟩ 올까요?
-[ 33.45s][moshi] ⟦⚡SPAN@33.45s: (tool result) 25.5°C, humidity 68%, wind 7.2 km/h, chance of rain 10%⟧ 서울의 현재 날씨는 이십오 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터입니다. 비 올 확률은 십퍼센트 정도예요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 42.05s][user ] «backchannel» 네.
-[ 42.53s][user ] 그럼 우산은 안 가져가도 되겠네요.
-[ 44.92s][moshi] 네, 비 올 가능성이 낮으니 우산은 두고 가셔도 괜찮을 것 같아요. 즐거운 저녁 보내세요.
-[ 51.61s][user ] «backchannel» 음.
-[ 52.09s][user ] 고마워요, 프레아크스.
-[ 53.04s][moshi] 천만에요. 언제든 필요하시면 다시 찾아주세요. 저는 언제나 당신을 돕기 위해 여기 있습니다.
+[  0.00s][user ] 이번 주 토요일 저녁에 분위기 좋은 레스토랑 예약 좀 해 줄 수 ⟨ret@5.03s⟩ 있어?
+[  5.35s][moshi] ⟦⚡SPAN@5.35s: (no information found)⟧ 죄송해요, 지금은 예약 가능한 레스토랑 정보를 찾을 수 없어요. 혹시 다른 날짜나 지역을 알려 주시겠어요?
+[ 11.52s][user ] 음… 그럼 강남역 근처 이탈리안 레스토랑 찾아봐 줘. ⟨ret@14.74s⟩
+[ 14.82s][moshi] ⟦⚡SPAN@14.82s: (tool result) “La Piazza”, “Bella Italia”, “Pasta e Vino”⟧ 강남역 근처 이탈리안 레스토랑으로는 라 피아짜, 벨라 이탈리아, 파스타 에 비노가 있어요. 혹시 선호하는 곳이 있으신가요?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "강남역"}}
+[ 21.40s][user ] «backchannel» 네.
+[ 21.81s][moshi] 라 피아짜로 예약해 드릴까요? 몇 시로 예약하시겠어요?

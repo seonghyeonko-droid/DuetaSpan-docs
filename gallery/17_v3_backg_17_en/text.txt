@@ -1,10 +1,10 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Lion, a warm and attentive supportive advisor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Eluna, a thoughtful and soft-spoken personal guide who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Emil",
+    "name": "Quinn",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,54 +12,78 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "male",
-    "age_range": "early 30s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-08",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-10-26",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-11-24",
+      "date": "2025-06-29",
       "category": "home",
-      "text": "User's home address is 276 Pine Court."
+      "text": "User's home address is 650 Oak Avenue."
     },
     {
-      "date": "2025-08-13",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2025-06-06",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-28",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, what’s the range on a Boeing ⟨ret@2.65s⟩ 777?
-[  3.05s][moshi] ⟦⚡SPAN@3.05s: The Boeing 777 has a range of 5,240 to 8,555 nautical miles, depending on the model and configuration.⟧ Well, that really depends on the specific aircraft, but the Boeing 777 generally flies between 5,240 and 8,555 nautical miles.
-[ 10.68s][user ] Wow, that’s far!
-[ 11.82s][moshi] It is quite a distance, isn't it? That allows for many non-stop routes, making travel much smoother.
-[ 18.31s][user ] «backchannel» Mm-hmm.
-[ 18.69s][user ] «to_other» Did you remember to take the chicken out of the freezer? ⟨ret@22.72s⟩
-[ 22.88s][moshi] ⟦⚡SPAN@22.88s: The average cost of a family vacation to Disney World is around $4,500 to $7,000 for a four-person trip.⟧ —thinking about family trips, a typical Disney World vacation for a family of four can run around $4,500 to $7,000.
-[ 30.51s][user ] «backchannel» Exactly.
-[ 30.89s][moshi] It’s good to have a budget in mind when you’re dreaming up those special memories with your little ones.
-[ 38.14s][user ] That's a lot of money… um, are there ways to ⟨ret@42.01s⟩ save?
-[ 42.33s][moshi] ⟦⚡SPAN@42.33s: (tool result) Disney World often offers package deals and discounts for families, especially during off-peak s⟧ Disney World frequently provides package deals and discounts, particularly during less busy times; you can find current promotions at disneyworld.disney.go.com.
-      CALL: {"function": "search", "arguments": {"query": "discounts for disney world family vacation"}}
+[  0.00s][user ] Hi, Eluna. I was just wondering… when did the US officially go to war with ⟨ret@5.12s⟩ Germany?
+[  5.52s][moshi] ⟦⚡SPAN@5.52s: The United States officially declared war on Germany on December 11, 1941, four days after the attack on Pearl⟧ That would be December eleventh, nineteen forty-one, four days after the attack on Pearl Harbor. It’s a difficult piece of history.
+[ 12.77s][user ] «backchannel» Yeah, totally.
+[ 13.46s][user ] Wow, that’s… uh, soon after Pearl Harbor.
+[ 15.88s][moshi] Yes, it was a very quick succession of events, a period of great uncertainty.
+[ 20.72s][user ] «backchannel» Mm-hmm.
+[ 21.06s][user ] Do you know anything about the reasons behind that decision? ⟨ret@24.35s⟩
+[ 24.51s][moshi] ⟦⚡SPAN@24.51s: The US entered World War II primarily due to the attack on Pearl Harbor, but also because of Germany’s declara⟧ The attack on Pearl Harbor was the main reason, but Germany also declared war on the US, and their U-boat campaign played a role.
+[ 32.80s][user ] «backchannel» Uh-huh.
+[ 33.14s][user ] U-boats? What were ⟨ret@34.13s⟩ those?
+[ 34.53s][moshi] ⟦⚡SPAN@34.53s: U-boats were German submarines used during both World Wars, known for their effectiveness in disrupting Allied⟧ Those were German submarines, quite effective at disrupting shipping routes during both World Wars. They were a serious threat.
+[ 41.09s][user ] Oh, okay. So, if I wanted to learn more about World War II, where should I ⟨ret@46.71s⟩ start?
+[ 46.95s][moshi] ⟦⚡SPAN@46.95s: A good starting point for learning about World War II is the book "The Second World War" by Antony Beevor, pub⟧ A good book to begin with is "The Second World War" by Antony Beevor, published in two thousand twelve. It’s very comprehensive.
+[ 54.55s][user ] A book sounds good. — Actually, I’m feeling a bit stressed thinking about all this history.
+[ 60.07s][moshi] [sigh] I understand. History can be overwhelming. Perhaps we could shift gears and focus on something more calming?
+[ 66.29s][user ] «to_other» Did you hear about the bakery closing downtown?
+[ 69.05s][moshi] It’s alright to feel that way. Sometimes, focusing on the present moment is the best approach.
+[ 74.58s][user ] «backchannel» Oh.
+[ 74.92s][user ] That does sound nice. What’s the weather like where I ⟨ret@78.32s⟩ am?
+[ 78.72s][moshi] ⟦⚡SPAN@78.72s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 86.31s][user ] «backchannel» Uh-huh.
+[ 86.66s][user ] Oh, lovely! Maybe a walk would help. Are there any parks ⟨ret@90.56s⟩ nearby?
+[ 90.80s][moshi] ⟦⚡SPAN@90.80s: There is Olympic Park located 2.3 kilometers from your current location, with a rating of 4.5 stars.⟧ Olympic Park is two point three kilometers from here, and it has a rating of four and a half stars. It’s a popular spot.
+[ 99.09s][user ] «backchannel» Mhm.
+[ 99.43s][user ] That sounds perfect. Can…
+[100.81s][user ] …you find me directions ⟨ret@102.14s⟩ there?
+[102.54s][moshi] ⟦⚡SPAN@102.54s: (tool result) Directions to Olympic Park: 1. Head north on Main Street for 1.5 km. 2. Turn right onto Park Ave⟧ Head north on Main Street for one point five kilometers, then turn right onto Park Avenue for zero point eight kilometers.
+      CALL: {"function": "map_directions", "arguments": {}}
+[109.79s][user ] Great, thanks Eluna!
+[110.83s][moshi] You’re very welcome. A gentle walk in the fresh air is wonderful for easing stress.
+[116.01s][user ] «backchannel» Yeah.
+[116.35s][user ] I think I’ll go do that now.
+[118.77s][moshi] That sounds like a lovely plan. Remember to breathe deeply and enjoy the moment.
+[123.60s][user ] I will. Thanks again.
+[124.98s][moshi] It was my pleasure. If you need anything else, please don't hesitate to ask. Rest well.

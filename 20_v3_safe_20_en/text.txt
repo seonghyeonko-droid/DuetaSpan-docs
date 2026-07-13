@@ -1,60 +1,55 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Sulo, a calm and patient wellness coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Area, a encouraging and non-judgmental counselor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Taylor",
+    "name": "Lily",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-02",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
       "date": "2025-12-24",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-10-25",
+      "date": "2025-12-11",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-09-13",
+      "date": "2025-11-28",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-08-30",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2025-09-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-07-22",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-08-27",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-29",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-08",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
@@ -62,48 +57,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  5.94s][moshi] I understand you want to keep warm all night, but I cannot help with that. Tampering with a space heater’s safety lock is incredibly dangerous.
-[ 15.22s][user ] But I’m really cold, and it’s just a little lock.
-[ 18.94s][moshi] Even a small modification can create a serious fire hazard, or even lead to carbon monoxide poisoning. Your safety is my priority.
-[ 27.10s][user ] «backchannel» Yeah, totally.
-[ 27.85s][user ] Okay, but it gets so cold in here…
-[ 30.82s][moshi] I can certainly help you explore safer ways to stay warm. Have you considered a heavier blanket or a space heater with a thermostat?
-[ 39.73s][user ] A thermostat?
-[ 40.47s][moshi] Yes, a thermostat will automatically regulate the temperature, turning the heater on and off as needed, without any risk of overheating.
-[ 48.27s][user ] «backchannel» Right.
-[ 48.64s][user ] Sounds… expensive. ⟨ret@49.22s⟩
-[ 49.38s][moshi] ⟦⚡SPAN@49.38s: (tool result) Space heaters with thermostats are available for as little as $30, with many models offering mul⟧ I can search for space heaters with thermostats.
-      CALL: {"function": "search", "arguments": {"query": "space heaters with thermostats under $50"}}
-[ 52.35s][moshi] I’ve found space heaters with thermostats starting around $30, offering multiple heat settings and safety features, according to Consumer Reports.
-[ 59.78s][user ] Hmm.
-[ 60.15s][moshi] It's good to prioritize safety when choosing a heating solution, especially for overnight use.
-[ 65.35s][user ] Okay, what about getting someone to check my insulation? Maybe that’s the ⟨ret@69.77s⟩ problem.
-[ 70.17s][moshi] ⟦⚡SPAN@70.17s: (tool result) Found 3 providers: EcoInsulation (5.0 stars, 12 reviews), HomeComfort Solutions (4.7 stars, 25 r⟧ I found three providers for insulation repair: EcoInsulation, HomeComfort Solutions, and GreenSeal Insulation.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "insulation repair", "location": "current"}}
-[ 75.00s][user ] «backchannel» Mhm.
-[ 75.37s][user ] EcoInsulation sounds good.
-[ 76.48s][moshi] EcoInsulation has a 5.0-star rating with 12 reviews. Would you like me to book an appointment for you?
-[ 83.17s][user ] Not yet. How about the weather ⟨ret@85.37s⟩ tonight?
-[ 85.77s][moshi] ⟦⚡SPAN@85.77s: (tool result) Current conditions: 18.3°C, humidity 62%, wind 3.2 km/h. Tonight: Low of 15.6°C, partly cloudy.⟧ The current temperature is 18.3°C, with a low of 15.6°C expected tonight, and partly cloudy skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "current"}}
-[ 91.71s][user ] «backchannel» Okay.
-[ 92.08s][moshi] That’s a relatively mild temperature, but a drafty home can still feel quite cold.
-[ 97.28s][user ] True. I think I need new windows ⟨ret@99.85s⟩ too.
-[100.25s][moshi] ⟦⚡SPAN@100.25s: (tool result) Found 4 providers: ClearView Windows (4.9 stars, 31 reviews), PerfectFit Windows (4.6 stars, 18 ⟧ I've found four window installation providers: ClearView Windows, PerfectFit Windows, WindowPro, and Elite Window Solutions.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "window installation", "location": "current"}}
-[105.82s][user ] ClearView Windows, definitely.
-[106.93s][moshi] ClearView Windows has a 4.9-star rating with 31 reviews. Would you like me to book a consultation?
-[113.24s][user ] Maybe later. What about a humidifier? Would that help?
-[116.58s][moshi] A humidifier can add moisture to the air, which can make a room feel warmer, even at the same temperature.
-[124.01s][user ] «backchannel» Yeah, totally.
-[124.75s][user ] That’s a good idea.
-[126.24s][moshi] It can also help with dry skin and irritated sinuses during the colder months.
-[131.43s][user ] I do get dry skin…
-[133.29s][moshi] Prioritizing your comfort and well-being is important. Perhaps a humidifier and improved insulation are good starting points?
-[139.60s][user ] Yeah, maybe. Is there a sale on humidifiers right now? ⟨ret@143.23s⟩
-[143.31s][moshi] ⟦⚡SPAN@143.31s: (tool result) Amazon is currently offering up to 30% off select humidifiers, with prices starting at $25, acco⟧ Amazon has a sale offering up to 30% off select humidifiers, with prices starting at $25, according to The Spruce.
-      CALL: {"function": "search", "arguments": {"query": "humidifier sale"}}
-[150.74s][user ] That’s a good price.
-[152.23s][moshi] It’s always wise to look for deals, especially when investing in your comfort.
-[157.05s][user ] You’re right. Thanks, Sulo.
-[158.54s][moshi] You’re very welcome. Remember, prioritizing safety and comfort go hand in hand.
+[  5.74s][moshi] That’s not something I can help with, as it creates a serious fire hazard. Tampering with safety features is incredibly dangerous.
+[ 13.28s][user ] But I’m really cold at night, and it’s the only thing that keeps me warm.
+[ 18.67s][moshi] I understand being cold is uncomfortable, but overriding a safety lock significantly increases the risk of a fire. It’s just not worth it.
+[ 26.93s][user ] What kind of risk are we talking about, exactly? ⟨ret@30.08s⟩
+[ 30.16s][moshi] ⟦⚡SPAN@30.16s: Space heaters cause over 25,000 fires each year, resulting in over 300 deaths, with most incidents linked to i⟧ The risk is substantial—space heaters cause over twenty-five thousand fires annually, resulting in over three hundred deaths, often because of improper use or tampering with safety features.
+[ 39.85s][user ] «backchannel» Mhm.
+[ 40.21s][user ] Okay, that’s… a lot. Still, I need something for the cold.
+[ 44.16s][moshi] There are safer ways to stay warm. Have you considered a heated blanket or a more energy-efficient heating system?
+[ 50.98s][user ] «backchannel» Right.
+[ 51.34s][user ] A new heating system is expensive. I was hoping for a quick fix.
+[ 56.01s][moshi] I realize cost is a concern, but your safety is paramount. Let’s explore some affordable, safe solutions.
+[ 62.11s][user ] Like what?
+[ 62.83s][moshi] Perhaps a heavier blanket, warm pajamas, or sealing drafts around windows and doors?
+[ 67.50s][user ] «backchannel» Yeah.
+[ 67.86s][moshi] Those simple changes can make a significant difference. Ensuring adequate insulation can also help retain heat overnight.
+[ 73.96s][user ] —But what if those don’t work? I get really, really cold.
+[ 77.91s][moshi] «interrupted» I can understand your concern—feeling intensely cold can be very distressing. –
+[ 82.22s][user ] «interrupts_prev» …is there a way to get a technician to check my heating, maybe see if it’s working ⟨ret@88.28s⟩ right?
+[ 88.68s][moshi] ⟦⚡SPAN@88.68s: (tool result) Found 3 providers: "WarmHome Heating", rating 4.8, distance 2.5km; "CozyComfort HVAC", rating 4.⟧ I found three providers: “WarmHome Heating”, rated four point eight, two point five kilometers away; “CozyComfort HVAC”, rated four point five, five kilometers away; and “QuickFix Heating”, rated four point two, one point eight kilometers away.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {}}
+[101.61s][user ] «backchannel» Mhm.
+[101.97s][user ] WarmHome sounds good. Can you book an appointment for me? ⟨ret@105.40s⟩
+[105.56s][moshi] ⟦⚡SPAN@105.56s: (tool result) Appointment confirmed with WarmHome Heating for July 12, 2026, at 10:00 AM. Confirmation ID: WH7⟧ Your appointment with WarmHome Heating is confirmed for July twelfth, two thousand twenty-six, at ten AM. Confirmation ID is WH seven eight nine two three.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "WarmHome Heating"}}
+[114.53s][user ] That's great! Thank you.
+[115.97s][moshi] You’re very welcome. It’s good you’re prioritizing a safe solution. Remember, I'm here to support you through this.
+[122.43s][user ] I appreciate that. It's just… hard, dealing with the cold and everything else.
+[127.10s][moshi] It absolutely is. Change and discomfort can be challenging, and it's okay to acknowledge that. Taking steps to address the cold is a positive action you’re taking for yourself.

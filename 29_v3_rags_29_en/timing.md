@@ -4,69 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Olivia",
+#     "name": "Paul",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-03-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2026-01-29",
 #       "category": "home",
-#       "text": "User's home address is 415 Maple Drive."
+#       "text": "User's home address is 342 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-01-14",
+#       "date": "2025-12-13",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-11-28",
+#       "date": "2025-09-11",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-05-27",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-07",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-08",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-25",
+#       "date": "2025-08-09",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -77,9 +69,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Do you know who wrote the song "Send Em On Down the Road"?
-     4.19s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> That song was written and first performed by Marc Bees
-     4.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Marc Beeson wrote and originally performed “Send ‘Em On Down the Road”
-     4.51s  user  발화 끝
-    11.09s  agent 발화 끝
+     0.00s  user  발화 시작: In the Outlander books, who does Claire eventually marry?
+     3.70s  <ret> 발화 (turn1 첫 프레임)
+     4.02s  agent 발화 시작: <ret> Well, Claire Fraser finds her lasting happiness with J
+     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.38s]: Claire Fraser ultimately marries Jamie Fraser throughout the Outlander
+     4.02s  user  발화 끝
+    13.40s  agent 발화 끝

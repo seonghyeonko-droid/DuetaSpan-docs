@@ -1,75 +1,74 @@
 v3_rag_27_ko src=hotpotqa style=v1
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 격려적이고 비판적이지 않은 상담사 피알입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 트해크스이며, 가족 및 관계에 대해 사람들을 돕는 사려 깊고 부드러운 말투의 개인 가이드입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "민국",
+    "name": "도슬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-04-24",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-03-22",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-10-08",
+      "date": "2026-04-22",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2025-09-27",
+      "date": "2026-04-19",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2026-01-21",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2025-11-15",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-07-26",
+      "category": "home",
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-19",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-27",
+      "date": "2026-02-20",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-12-04",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 영화 '미 비포 유'에서 샘 클라플린이 맡은 역할이 뭔지 궁금해. ⟨ret@4.56s⟩
-[  4.64s][moshi] ⟦⚡SPAN@4.64s: In the 2016 romantic drama "Me Before You" directed by Thea Sharrock, Sam Claflin stars as Will Traynor.⟧ 이천십육년에 개봉한 로맨틱 드라마 '미 비포 유'에서 샘 클라플린은 윌 트레이너 역할을 맡았답니다.
-[ 10.68s][user ] 아, 그렇구나. 혹시 그 영화 감독은 누구야? ⟨ret@13.77s⟩
-[ 13.93s][moshi] ⟦⚡SPAN@13.93s: Thea Sharrock directed the 2016 romantic drama "Me Before You", which stars Sam Claflin and Emilia Clarke.⟧ '미 비포 유'의 감독은 티아 샤록이었어요. 에밀리아 클라크도 출연했죠.
-[ 18.11s][user ] 에밀리아 클라크는 또 어떤 영화에 나왔었지? —
-[ 21.36s][user ] …아, 잠깐만, 그 영화가 워낙 슬픈 걸로 유명하잖아. 혹시 그거 보면서 얼마나 울었어?
-[ 27.39s][moshi] 저는 감정을 느끼지는 못하지만, 많은 분들이 그 영화를 보면서 눈물을 흘리셨다고 들었어요.
-[ 32.97s][user ] «backchannel» 응응.
-[ 33.43s][moshi] 슬픈 영화는 감정을 정화하는 데 도움이 될 수 있죠. 마음이 복잡할 때, 슬픈 영화를 보면서 위로를 받는 분들도 많답니다.
+[  0.00s][user ] 안녕하세요, 트해크스 씨. 요즘 좀 힘든 일이 있어서요.
+[  3.87s][moshi] 안녕하세요. 힘든 일이 있으시다니 마음이 아프네요. 무슨 일인지 편하게 말씀해 주세요. 제가 곁에서 함께 고민하고 도와드릴게요.
+[ 11.60s][user ] «backchannel» 네.
+[ 12.08s][user ] 음… 남자친구랑 좀 다퉜어요. 계속 영화 보러 가자고 하는데, 저는 그게 좀 부담스러워요. ⟨ret@18.20s⟩
+[ 18.36s][moshi] ⟦⚡SPAN@18.36s: Train to Busan — a 2016 South Korean zombie apocalypse film directed by Yeon Sang-ho and starring Gong Yoo, Ju⟧ 남자친구분께서 혹시 이천십육년에 개봉한 좀비 영화 '부산행'을 보고 싶어 하시는 건가요? 그 영화는 세계적으로 일억 팔천만 달러 이상의 수익을 올렸다고 합니다.
+[ 28.51s][user ] «backchannel» 정말요?
+[ 28.99s][user ] 아니요, 그냥 아무거나 보자고 해요. 계속 졸라대는 게 싫은 거죠.
+[ 33.83s][moshi] 아무 영화나 보자고 졸라대는 게 싫으시군요. 남자친구분께 솔직하게 부담스럽다고 말씀드려 보시는 건 어떠세요?

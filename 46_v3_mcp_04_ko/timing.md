@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "유연",
+#     "name": "세완",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-05-30",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-01-22",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2026-01-03",
+#       "date": "2026-04-18",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-11-06",
+#       "date": "2025-12-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-09-02",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-08-07",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-20",
+#       "date": "2026-04-04",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -53,51 +53,65 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-16",
-#       "title": "Researching a used car",
+#       "date": "2026-02-07",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-04",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 마이애미 플로리다에서 모든 사람을 위한 미용실을 찾아줘. | S2 칠월 십사일… 그날 다른 일정이 있는데, 혹시 다음 주 화요일 | S3 좋아, 고마워. 그런데 혹시 그 미용실 근처에 괜찮은 레스토랑 | S4 쿠바 음식이 맛있을 것 같은데, '베르사유 레스토랑' 예약해 
+# EXAMINER(FDB-v2) 단계: S1 시애틀에서 집을 구해야 하는데, 성인 한 명이고, 십일월 십오 | S2 일박에 백달러 이하면 좋겠어요. | S3 고마워요. 혹시 그 근처에 맛있는 식당도 추천해 줄 수 있을까 | S4 아, 좋네요. 그 식당까지 가는 길을 알려줄 수 있을까요?
 
-     0.00s  user  발화 시작: 마이애미 플로리다에서 모든 사람을 위한 미용실을 찾아줘.
-     2.82s  <ret> 발화 (turn1 첫 프레임)
-     3.22s  agent 발화 시작: <ret> 마이애미 플로리다에는 '살롱 일리시움'이라는 미용실이 있는데, 주소가 백이십삼 오션 드라이브이고,
-     3.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.87s]: (tool result) {"provider name": "Salon Elysium", "address": "123 Ocean
-     3.22s  user  발화 끝
-    16.09s  user  발화 시작: 음… 평점이 사 점 팔점이라니 괜찮네. 예약할 수 있어?
-    16.09s  agent 발화 끝
-    19.98s  <ret> 발화 (turn3 첫 프레임)
-    20.22s  agent 발화 시작: <ret> 네, '살롱 일리시움'에 예약이 완료되었어요. 이천이십육년 칠월 십사일 오전 열시에 커트 예약을 
-    20.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) {"confirmation id": "AE789XZ", "appointment time": "2026
-    20.22s  user  발화 끝
-    30.33s  user  발화 시작: 정말요?
-    30.33s  agent 발화 끝
-    30.79s  user  발화 시작: 칠월 십사일… 그날 다른 일정이 있는데, 혹시 다음 주 화요일로 변경 가능해?
-    30.79s  user  발화 끝
-    36.23s  <ret> 발화 (turn6 첫 프레임)
-    36.31s  agent 발화 시작: <ret> 네, '살롱 일리시움'에 예약을 변경했습니다. 이천이십육년 칠월 십오일 오후 두시 삼십분에 커트 
-    36.31s  ⚡SPAN 주입 [d'=1.36s / d_lead=11.03s]: (tool result) {"confirmation id": "BF234YZ", "appointment time": "2026
-    36.31s  user  발화 끝
-    47.34s  user  발화 시작: 좋아, 고마워. 그런데 혹시 그 미용실 근처에 괜찮은 레스토랑도 있을까?
-    47.34s  agent 발화 끝
-    51.53s  <ret> 발화 (turn8 첫 프레임)
-    51.93s  agent 발화 시작: <ret> 새로운 곳을 탐색하는 건 언제나 즐거운 일이죠. '살롱 일리시움' 근처에는 '조스 스톤 크랩'(해
-    51.93s  user  발화 끝
-    53.37s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.22s]: There are several restaurants near Salon Elysium, including "Joe's Sto
-    64.80s  user  발화 시작: 네.
-    64.80s  agent 발화 끝
-    65.26s  user  발화 시작: 쿠바 음식이 맛있을 것 같은데, '베르사유 레스토랑' 예약해 줄 수 있어?
-    65.26s  user  발화 끝
-    69.92s  <ret> 발화 (turn11 첫 프레임)
-    70.32s  agent 발화 시작: <ret> 네, '베르사유 레스토랑'에 이천이십육년 칠월 십오일 저녁 일곱시에 두명으로 예약을 완료했습니다.
-    70.32s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.19s]: (tool result) {"confirmation id": "GH567AB", "restaurant name": "Versa
-    70.32s  user  발화 끝
-    79.51s  agent 발화 시작: 멋지네요, 그날 즐거운 시간 보내시길 바랍니다.
-    79.51s  agent 발화 끝
-    82.27s  agent 발화 끝
+     0.00s  user  발화 시작: 시애틀에서 집을 구해야 하는데, 성인 한 명이고, 십일월 십오일에 체크인해서 십팔일에 체크아웃하려고요.
+     5.30s  <ret> 발화 (turn1 첫 프레임)
+     5.70s  agent 발화 시작: <ret> 시애틀 파인 스트리트 백이십삼번지에 있는 집을 찾았습니다. 일박에 백오십달러이고, 예약 확인번호는
+     5.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.08s]: (tool result) {"house id": "789012", "address": "123 Pine Street, Seat
+     5.70s  user  발화 끝
+    13.78s  user  발화 시작: 음… 그 가격이 좀 비싼 것 같은데, 좀 더 저렴한 곳을 찾아볼 수 있을까요?
+    13.78s  agent 발화 끝
+    20.43s  agent 발화 시작: 좀 더 저렴한 곳을 찾아볼게요. 어떤 가격대를 생각하고 계세요?
+    20.43s  user  발화 끝
+    24.71s  user  발화 시작: 일박에 백달러 이하면 좋겠어요.
+    24.71s  agent 발화 끝
+    26.29s  <ret> 발화 (turn5 첫 프레임)
+    26.61s  agent 발화 시작: <ret> 오크 애비뉴 사백오십육번지에 일박에 구십달러인 집을 찾았습니다. 예약 확인번호는 디 이 에프 칠 
+    26.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) {"house id": "456789", "address": "456 Oak Avenue, Seatt
+    26.61s  user  발화 끝
+    34.21s  user  발화 시작: 진짜요?
+    34.21s  agent 발화 끝
+    34.69s  user  발화 시작: 좋아요, 그럼 그쪽으로 예약해 주세요.
+    34.69s  user  발화 끝
+    36.98s  <ret> 발화 (turn8 첫 프레임)
+    37.06s  agent 발화 시작: <ret> 네, 오크 애비뉴 사백오십육번지 집으로 예약이 완료되었습니다. 확인번호는 지 에이치 아이 공 일 
+    37.06s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.08s]: (tool result) {"house id": "456789", "address": "456 Oak Avenue, Seatt
+    37.06s  user  발화 끝
+    45.14s  user  발화 시작: 고마워요. 혹시 그 근처에 맛있는 식당도 추천해 줄 수 있을까요?
+    45.14s  agent 발화 끝
+    49.89s  agent 발화 시작: 오크 애비뉴 주변에는 다양한 식당들이 있습니다. 어떤 종류의 음식을 좋아하세요?
+    49.89s  user  발화 끝
+    54.64s  user  발화 시작: 맞아요.
+    54.64s  agent 발화 끝
+    55.12s  user  발화 시작: 음… 해산물 종류가 좋을 것 같아요.
+    55.12s  user  발화 끝
+    57.89s  <ret> 발화 (turn13 첫 프레임)
+    57.97s  agent 발화 시작: <ret> 엘름 스트리트 칠백팔십구번지에 있는 '더 크랩 쉑'이라는 해산물 식당이 평점이 사 점 오점이고 가
+    57.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) {"restaurant name": "The Crab Shack", "address": "789 El
+    57.97s  user  발화 끝
+    65.10s  user  발화 시작: 아, 좋네요. 그 식당까지 가는 길을 알려줄 수 있을까요?
+    65.10s  agent 발화 끝
+    69.13s  <ret> 발화 (turn15 첫 프레임)
+    69.37s  agent 발화 시작: <ret> 오크 애비뉴에서 파인 스트리트를 향해 북쪽으로 가세요. 파인 스트리트에서 좌회전하여 엘름 스트리트
+    69.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.35s]: (tool result) {"directions": "Head north on Oak Avenue toward Pine Str
+    69.37s  user  발화 끝
+    81.73s  agent 발화 끝

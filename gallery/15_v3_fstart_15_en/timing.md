@@ -4,124 +4,125 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Robin",
+#     "name": "Jack",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-01-05",
+#       "date": "2026-04-22",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-11-15",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-02",
+#       "date": "2026-03-03",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-08",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-06-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm thinking about a little getawa | S2 Excellent. And can you find me som | S3 Perfect! I'm starting to feel much | S4 What time does Seoul Forest close?
+# EXAMINER(FDB-v2) 단계: S1 I need to book an appointment with | S2 Perfect. And could you remind me w | S3 I'm also trying to learn some Ital | S4 Okay, that’s hot. I should pack li
 
-     0.00s  user  발화 시작: I'm thinking about a little getaway next month, maybe somewh
-     5.52s  agent 발화 시작: That sounds lovely! Planning a bit of time in nature is alwa
-     5.52s  user  발화 끝
-    11.03s  user  발화 시작: Could you look up some hiking spots near Seoul?
-    11.03s  agent 발화 끝
-    14.61s  <ret> 발화 (turn3 첫 프레임)
-    14.85s  agent 발화 시작: <ret> Bukhansan National Park offers challenging trails and—
-    14.85s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.97s]: (tool result) Bukhansan National Park offers challenging trails and st
-    14.85s  user  발화 끝
-    17.83s  user  발화 시작: …are there any easier trails for beginners, though?
-    17.83s  agent 발화 끝
-    20.82s  <ret> 발화 (turn5 첫 프레임)
-    21.22s  agent 발화 시작: <ret> The Seoul Forest trails are generally flat and well-ma
-    21.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) The Seoul Forest trails are generally flat and well-main
-    21.22s  user  발화 끝
-    26.31s  user  발화 시작: That sounds perfect, Seoul Forest. What's the weather like t
-    26.31s  agent 발화 끝
-    31.01s  <ret> 발화 (turn7 첫 프레임)
-    31.41s  agent 발화 시작: <ret> Currently it’s 26.5°C, humidity is 68%, and the wind i
-    31.41s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.91s]: (tool result) Current conditions: 26.5°C, humidity 68%, wind 3.2 km/h,
-    31.41s  user  발화 끝
-    40.32s  user  발화 시작: Excellent. And can you find me some restaurants near Seoul F
-    40.32s  agent 발화 끝
-    44.75s  <ret> 발화 (turn9 첫 프레임)
-    44.99s  agent 발화 시작: <ret> "The Table" is a popular Italian restaurant nearby, ra
-    44.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.22s]: (tool result) "The Table" is a popular Italian restaurant near Seoul F
-    44.99s  user  발화 끝
-    52.20s  user  발화 시작: That sounds nice. How about a coffee shop?
-    52.20s  agent 발화 끝
-    55.52s  <ret> 발화 (turn11 첫 프레임)
-    55.60s  agent 발화 시작: <ret> You might enjoy "Anthracite Coffee Roasters," known fo
-    55.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.94s]: (tool result) "Anthracite Coffee Roasters" is a well-regarded coffee s
-    55.60s  user  발화 끝
-    61.54s  user  발화 시작: Is it possible to book a table at "The Table"?
-    61.54s  agent 발화 끝
-    65.63s  <ret> 발화 (turn13 첫 프레임)
-    65.79s  agent 발화 시작: <ret> A table at "The Table" is confirmed for you on July 13
-    65.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.49s]: (tool result) Reservation confirmed for July 13, 2026 at 7:00 PM under
-    65.79s  user  발화 끝
-    74.27s  user  발화 시작: Perfect! I'm starting to feel much more prepared.
-    74.27s  agent 발화 끝
-    77.67s  agent 발화 시작: That’s wonderful to hear! It's so good to have those details
-    77.67s  user  발화 끝
-    84.04s  user  발화 시작: Yeah.
-    84.04s  agent 발화 끝
-    84.46s  user  발화 시작: Do you think I…
-    84.46s  user  발화 끝
-    86.16s  user  발화 시작: …should pack a light jacket?
-    86.16s  user  발화 끝
-    88.28s  agent 발화 시작: Evenings can be a little cooler, so a light jacket is always
-    88.28s  user  발화 끝
-    95.50s  user  발화 시작: What time does Seoul Forest close?
-    95.50s  agent 발화 끝
-    97.88s  <ret> 발화 (turn21 첫 프레임)
-    98.04s  agent 발화 시작: <ret> Seoul Forest is open daily from 6:00 AM to 10:00 PM, a
-    98.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) Seoul Forest is open daily from 6:00 AM to 10:00 PM, wit
-    98.04s  user  발화 끝
-   106.11s  user  발화 시작: Good to know. And can you remind me the restaurant reservati
-   106.11s  agent 발화 끝
-   110.96s  <ret> 발화 (turn23 첫 프레임)
-   111.20s  agent 발화 시작: <ret> Your reservation is confirmed for July 13th at 7:00 PM
-   111.20s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.52s]: [July 13, 2026] Reservation confirmed for July 13, 2026 at 7:00 PM und
-   111.20s  user  발화 끝
-   116.72s  user  발화 시작: That's very helpful, thank you.
-   116.72s  agent 발화 끝
-   118.84s  agent 발화 시작: You’re very welcome! I'm glad I could help you plan a relaxi
-   118.84s  user  발화 끝
-   127.33s  agent 발화 끝
+     0.00s  user  발화 시작: I need to book an appointment with a counselor.
+     3.57s  agent 발화 시작: I can help with that. Do you have a preferred counselor in m
+     3.57s  user  발화 끝
+     8.74s  user  발화 시작: Mm-hmm.
+     8.74s  agent 발화 끝
+     9.13s  user  발화 시작: No, not really. Someone good with travel anxiety, maybe?
+     9.13s  user  발화 끝
+    12.47s  <ret> 발화 (turn4 첫 프레임)
+    12.71s  agent 발화 시작: <ret> Goraia specializes in travel anxiety and—
+    12.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.38s]: Goraia specializes in travel anxiety and has over ten years of experie
+    12.71s  user  발화 끝
+    15.09s  user  발화 시작: …Is she available next week?
+    15.09s  agent 발화 끝
+    17.08s  agent 발화 시작: Yes, Goraia has some openings next week. What day would work
+    17.08s  user  발화 끝
+    22.64s  user  발화 시작: Hmm, maybe Tuesday?
+    22.64s  agent 발화 끝
+    23.75s  <ret> 발화 (turn8 첫 프레임)
+    23.83s  agent 발화 시작: <ret> Great, your appointment with Goraia is confirmed for T
+    23.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.15s]: (tool result) Appointment confirmed with Goraia on Tuesday, July 14, 2
+    23.83s  user  발화 끝
+    30.98s  user  발화 시작: Perfect. And could you remind me what I should bring to the 
+    30.98s  agent 발화 끝
+    36.54s  agent 발화 시작: That's a good question to prepare. It's helpful to bring a l
+    36.54s  user  발화 끝
+    42.89s  user  발화 시작: Yeah.
+    42.89s  agent 발화 끝
+    43.29s  agent 발화 시작: I find it’s also useful to think about past travel experienc
+    43.29s  user  발화 끝
+    49.25s  user  발화 시작: Okay, that makes sense. I’m going to Italy next month.
+    49.25s  agent 발화 끝
+    53.22s  agent 발화 시작: Italy is beautiful! It’s a very popular destination, so it’s
+    53.22s  user  발화 끝
+    59.18s  user  발화 시작: It’s my first time traveling alone, which is part of the wor
+    59.18s  agent 발화 끝
+    63.94s  agent 발화 시작: Traveling solo for the first time is a big step. It’s perfec
+    63.94s  user  발화 끝
+    70.30s  user  발화 시작: I'm also trying to learn some Italian phrases.
+    70.30s  agent 발화 끝
+    73.48s  agent 발화 시작: That's a wonderful idea. Knowing a little of the local langu
+    73.48s  user  발화 끝
+    79.83s  user  발화 시작: Yeah, yeah.
+    79.83s  agent 발화 끝
+    80.62s  user  발화 시작: Do you know a good app for that?
+    80.62s  user  발화 끝
+    83.48s  <ret> 발화 (turn21 첫 프레임)
+    83.80s  agent 발화 시작: <ret> I can certainly help with that. Duolingo is a very pop
+    83.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.75s]: Duolingo is the most popular language-learning app, with over 500 mill
+    83.80s  user  발화 끝
+    90.55s  user  발화 시작: Is it free?
+    90.55s  agent 발화 끝
+    91.74s  agent 발화 시작: Yes, Duolingo is free to use, with optional paid subscriptio
+    91.74s  user  발화 끝
+    96.91s  user  발화 시작: That’s good to know. What’s the weather usually like in Rome
+    96.91s  agent 발화 끝
+   101.91s  <ret> 발화 (turn25 첫 프레임)
+   102.07s  agent 발화 시작: <ret> Typically, Rome in August has average highs of 31.2°C 
+   102.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.53s]: The average high temperature in Rome in August is 31.2°C, with lows ar
+   102.07s  user  발화 끝
+   111.60s  user  발화 시작: Okay, that’s hot. I should pack light clothes then.
+   111.60s  agent 발화 끝
+   115.18s  agent 발화 시작: Lightweight, breathable fabrics will be your best friend.
+   115.18s  user  발화 끝
+   118.35s  user  발화 시작: Really?
+   118.35s  agent 발화 끝
+   118.75s  user  발화 시작: I think I’m ready to start making a packing list.
+   118.75s  user  발화 끝
+   122.72s  agent 발화 시작: That’s a proactive step. A well-thought-out packing list can
+   122.72s  user  발화 끝
+   128.68s  user  발화 시작: Thanks, Goraia. You've been really helpful.
+   128.68s  agent 발화 끝
+   131.06s  agent 발화 시작: You're very welcome. I’m glad I could assist you in preparin
+   131.06s  user  발화 끝
+   139.80s  agent 발화 끝

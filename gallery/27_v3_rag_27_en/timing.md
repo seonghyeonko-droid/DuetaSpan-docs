@@ -4,73 +4,70 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Victor",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
 #     "age_range": "early 20s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-04-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-03-22",
+#       "date": "2025-11-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
+#     },
+#     {
+#       "date": "2025-10-27",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-21",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-09-27",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-08-11",
+#       "category": "home",
+#       "text": "User's home address is 815 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-29",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-14",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m feeling really stuck creativel | S2 Oh, "Me Before You"! That was a go | S3 …do you know who directed it again | S4 Thanks, that helps. Maybe I’ll re-
 
-     0.00s  user  발화 시작: I’m feeling really stuck creatively, like I can't get any ne
-     4.77s  agent 발화 시작: It’s perfectly normal to feel that way sometimes, you know? 
-     4.77s  user  발화 끝
-    10.33s  user  발화 시작: It's just… frustrating. I used to have so many ideas.
-    10.33s  agent 발화 끝
-    13.91s  <ret> 발화 (turn3 첫 프레임)
-    14.31s  agent 발화 시작: <ret> It sounds incredibly disheartening to feel that shift,
-    14.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.72s]: Sam Claflin starred as Will Traynor in the 2016 romantic drama "Me Bef
-    14.31s  user  발화 끝
-    27.03s  user  발화 시작: Oh, "Me Before You"! That was a good movie.
-    27.03s  agent 발화 끝
-    30.61s  agent 발화 시작: It really is a lovely film, and sometimes revisiting those e
-    30.61s  user  발화 끝
-    35.38s  user  발화 시작: …do you know who directed it again? I’m drawing a blank.
-    35.38s  agent 발화 끝
-    39.51s  <ret> 발화 (turn7 첫 프레임)
-    39.75s  agent 발화 시작: <ret> It was Thea Sharrock who directed “Me Before You”, alo
-    39.75s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.74s]: Thea Sharrock directed the 2016 romantic drama "Me Before You", which 
-    39.75s  user  발화 끝
-    48.49s  user  발화 시작: Thanks, that helps. Maybe I’ll re-watch it tonight.
-    48.49s  agent 발화 끝
-    51.67s  user  발화 끝
+     0.00s  user  발화 시작: I’m trying to remember a movie… it was Korean, a thriller, a
+     4.92s  agent 발화 시작: It sounds like you’re recalling a significant film. Perhaps 
+     4.92s  user  발화 끝
+    10.19s  user  발화 시작: Yeah.
+    10.19s  agent 발화 끝
+    10.54s  user  발화 시작: Um, yeah, I think it had zombies? And it was… uh… pretty rec
+    10.54s  user  발화 끝
+    15.41s  <ret> 발화 (turn4 첫 프레임)
+    15.81s  agent 발화 시작: <ret> That sounds like *Train to Busan*, a 2016 film directe
+    15.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: Train to Busan is a 2016 South Korean zombie thriller film directed by
+    15.81s  user  발화 끝
+    23.54s  user  발화 시작: Wow.
+    23.54s  agent 발화 끝
+    23.90s  user  발화 시작: That’s it! Do you know if Kim Yool-ho was in that one?
+    23.90s  user  발화 끝
+    28.03s  <ret> 발화 (turn7 첫 프레임)
+    28.11s  agent 발화 시작: <ret> Yes, Kim Yool-ho did indeed star in *Train to Busan* w
+    28.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.33s]: Kim Yool-ho starred in the 2016 film Train to Busan, alongside Gong Yo
+    28.11s  user  발화 끝
+    34.44s  agent 발화 끝

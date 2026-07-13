@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "준별",
+#     "name": "은연",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -18,162 +18,99 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-27",
+#       "date": "2026-01-30",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-01-31",
+#       "date": "2025-10-03",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-10-22",
+#       "date": "2025-08-13",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-06-30",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-08-25",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
-#       "date": "2025-07-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-10",
+#       "date": "2026-02-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 도쿄에서 사월 일일에 무슨 공연 있는지 알려줄 수 있어? | S2 한노 다이도코로 베테이 예약해 줄 수 있어? | S3 알람 목록 보여줘. | S4 그럼, 이천이십년 한국의 인구는?
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 좋은 연극 있을까요? | S2 아, 그러네요. 극장 근처에 맛집 좀 찾아주세요. | S3 …저랑 친구 두 명이요. | S4 감사합니다. 혹시 오늘 날씨는 어때요?
 
-     0.00s  user  발화 시작: 도쿄에서 사월 일일에 무슨 공연 있는지 알려줄 수 있어?
-     4.31s  <ret> 발화 (turn1 첫 프레임)
-     4.39s  agent 발화 시작: <ret> 도쿄에서는 사월 일일에 가부키좌에서 가부키 공연이 저녁 일곱시에 있고, 국립극장에서 전통 무용 공
-     4.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.81s]: (tool result) {"events": [{"name": "Kabuki-za Theatre", "date": "2026-
-     4.39s  user  발화 끝
-    12.20s  user  발화 시작: 맞아요.
-    12.20s  agent 발화 끝
-    12.69s  user  발화 시작: 음, 가부키좌 공연 티켓 예매해 줄 수 있어?
-    12.69s  user  발화 끝
-    16.19s  <ret> 발화 (turn4 첫 프레임)
-    16.59s  agent 발화 시작: <ret> 네, 가부키좌 저녁 일곱시 공연 티켓 두석을 예매했습니다. 확인 번호는 에이 비 일 이 씨 디 삼
-    16.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: (tool result) {"confirmation id": "AB12CD34", "event name": "Kabuki-za
-    16.59s  user  발화 끝
-    27.81s  user  발화 시작: 진짜요?
-    27.81s  agent 발화 끝
-    28.30s  user  발화 시작: 와, 고마워.
-    28.30s  user  발화 끝
-    29.28s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요! 혹시 다른 일은 없을까요?
-    29.28s  user  발화 끝
-    33.18s  user  발화 시작: 오늘 날씨 어때?
-    33.18s  agent 발화 끝
-    34.57s  <ret> 발화 (turn9 첫 프레임)
-    34.65s  agent 발화 시작: <ret> 도쿄는 현재 십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 구름이 많네
-    34.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.83s]: (tool result) {"temperature": "18.5°C", "humidity": "65%", "wind speed
-    34.65s  user  발화 끝
-    41.48s  user  발화 시작: 그렇군요.
-    41.48s  agent 발화 끝
-    41.97s  agent 발화 시작: 날씨가 너무 덥거나 춥지 않아서 야외 활동하기에 딱 좋을 것 같아요.
-    41.97s  user  발화 끝
-    47.33s  user  발화 시작: 이번 주 토요일에 근처 맛집 추천해 줄 수 있어?
-    47.33s  agent 발화 끝
-    51.32s  <ret> 발화 (turn13 첫 프레임)
-    51.72s  agent 발화 시작: <ret> 이번 주 토요일 도쿄 근처에는 스시 다이(평점 사 점 오), 츠키지 스시코(평점 사 점 이), 한
-    51.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.71s]: (tool result) {"restaurants": [{"name": "Sushi Dai", "cuisine": "Sushi
-    51.72s  user  발화 끝
-    63.44s  user  발화 시작: 오.
-    63.44s  agent 발화 끝
-    63.92s  user  발화 시작: 한노 다이도코로 베테이 예약해 줄 수 있어?
-    63.92s  user  발화 끝
-    67.18s  <ret> 발화 (turn16 첫 프레임)
-    67.34s  agent 발화 시작: <ret> 네, 한노 다이도코로 베테이 이번 주 토요일 저녁 일곱시에 두명으로 예약했습니다. 확인 번호는 알
-    67.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) {"confirmation id": "RS56EF78", "restaurant name": "Han 
-    67.34s  user  발화 끝
-    77.59s  user  발화 시작: 고마워, 래로.
-    77.59s  agent 발화 끝
-    78.56s  agent 발화 시작: 천만에요. 맛있는 저녁 식사 되세요!
-    78.56s  user  발화 끝
-    81.00s  user  발화 시작: 다음 주 화요일에 알람…
-    81.00s  agent 발화 끝
-    82.96s  user  발화 시작: …맞춰줄 수 있어? 아침 일곱시에.
-    82.96s  user  발화 끝
-    85.07s  <ret> 발화 (turn21 첫 프레임)
-    85.39s  agent 발화 시작: <ret> 다음 주 화요일 아침 일곱시에 알람을 설정했습니다. 알람 아이디는 에이 엘 구 공 지 에이치 일 
-    85.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) {"alarm id": "AL90GH12", "date": "2026-07-15", "time": "
-    85.39s  user  발화 끝
-    93.69s  user  발화 시작: 알람 목록 보여줘.
-    93.69s  agent 발화 끝
-    94.83s  <ret> 발화 (turn23 첫 프레임)
-    95.15s  agent 발화 시작: <ret> 현재 설정된 알람은 다음 주 화요일 아침 일곱시, 알람 아이디 에이 엘 구 공 지 에이치 일 이입
-    95.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.78s]: (tool result) {"alarms": [{"alarm id": "AL90GH12", "date": "2026-07-15
-    95.15s  user  발화 끝
-   103.94s  user  발화 시작: 그렇죠.
-   103.94s  agent 발화 끝
-   104.43s  user  발화 시작: 그럼…
-   104.43s  user  발화 끝
-   104.91s  agent 발화 시작: 혹시 다른 알람을 추가하거나 변경하고 싶으신가요? —
-   104.91s  user  발화 끝
-   108.33s  user  발화 시작: 아니, 괜찮아. 그냥 궁금해서.
-   108.33s  agent 발화 끝
-   110.28s  agent 발화 시작: 그렇군요. 언제든지 필요하시면 말씀해주세요. 스트레스 해소에 도움이 되는 명상 음악을 틀어드릴까요?
-   110.28s  user  발화 끝
-   115.65s  user  발화 시작: 예.
-   115.65s  agent 발화 끝
-   116.14s  user  발화 시작: 좋아.
-   116.14s  user  발화 끝
-   116.39s  <ret> 발화 (turn31 첫 프레임)
-   116.63s  agent 발화 시작: <ret> 명상 음악 "Calming Waves"를 틀어드립니다. 편안하게 휴식을 취하세요.
-   116.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.90s]: (tool result) {"status": "playing", "title": "Calming Waves", "artist"
-   116.63s  user  발화 끝
-   120.53s  user  발화 시작: 네.
-   120.53s  agent 발화 끝
-   121.02s  user  발화 시작: 래로, 혹시 이천이십년에 한국에서 가장 높은 산은 어디였어?
-   121.02s  user  발화 끝
-   124.84s  <ret> 발화 (turn34 첫 프레임)
-   124.92s  agent 발화 시작: <ret> 한국에서 가장 높은 산은 천구백오십미터 높이의 한라산이었어요. 제주도에 위치하고 있습니다.
-   124.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.88s]: South Korea's highest mountain is Mount Hallasan, located on Jeju Isla
-   124.92s  user  발화 끝
-   129.80s  user  발화 시작: 네.
-   129.80s  agent 발화 끝
-   130.29s  user  발화 시작: 그럼, 이천이십년 한국의 인구는?
-   130.29s  user  발화 끝
-   132.08s  <ret> 발화 (turn37 첫 프레임)
-   132.24s  agent 발화 시작: <ret> 이천이십년에 한국 인구는 약 오천 백칠십오만 명으로 집계되었어요. 유엔 자료에 따르면요.
-   132.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: The population of South Korea in 2020 was approximately 51.75 million 
-   132.24s  user  발화 끝
-   137.61s  user  발화 시작: 기억해줘, 다음 주 금요일에 친구 생일 선물 사야 돼.
-   137.61s  agent 발화 끝
-   142.00s  agent 발화 시작: 친구 생일 선물 사야 돼.
-   142.00s  user  발화 끝
-   144.44s  agent 발화 시작: 네, 다음 주 금요일에 친구 생일 선물 사야 한다는 것을 기억하겠습니다.
-   144.44s  agent 발화 끝
-   149.81s  user  발화 시작: 혹시 그 메모 다시 말해줄 수 있어?
-   149.81s  agent 발화 끝
-   153.14s  <ret> 발화 (turn42 첫 프레임)
-   153.22s  agent 발화 시작: <ret> 다음 주 금요일에 친구 생일 선물 사야 한다는 메모가 있습니다.
-   153.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.88s]: [2026-07-18] 친구 생일 선물 사야 돼.
-   153.22s  user  발화 끝
-   158.10s  user  발화 시작: 알았어. 고마워.
-   158.10s  agent 발화 끝
-   159.08s  agent 발화 시작: 천만에요. 언제든지 도움이 필요하면 말씀해주세요. 긍정적인 마음으로 하루 보내세요!
-   159.08s  user  발화 끝
-   163.47s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 좋은 연극 있을까요?
+     2.84s  agent 발화 시작: 어떤 종류의 연극을 좋아하시나요?
+     2.84s  user  발화 끝
+     4.73s  user  발화 시작: 음… 코미디요. 웃을 수 있는 거요.
+     4.73s  agent 발화 끝
+     7.49s  <ret> 발화 (turn3 첫 프레임)
+     7.57s  agent 발화 시작: <ret> 칠월 십일일에 명동 극장에서 열리는 “The Play That Goes Wrong”라는 코미디 연
+     7.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.88s]: (tool result) There is a comedy play called “The Play That Goes Wrong”
+     7.57s  user  발화 끝
+    18.45s  user  발화 시작: 사만 원짜리 티켓 있나요?
+    18.45s  agent 발화 끝
+    19.94s  <ret> 발화 (turn5 첫 프레임)
+    20.34s  agent 발화 시작: <ret> 예매가 완료되었습니다. “The Play That Goes Wrong” 연극, 칠월 십일일 저녁 
+    20.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.83s]: (tool result) Booking confirmed. Event: The Play That Goes Wrong, Date
+    20.34s  user  발화 끝
+    32.17s  user  발화 시작: 어머.
+    32.17s  agent 발화 끝
+    32.65s  agent 발화 시작: 즐거운 시간 보내시길 바랍니다. 혹시 연극 보러 가기 전에 저녁 식사할 곳도 알아볼까요?
+    32.65s  user  발화 끝
+    38.80s  user  발화 시작: 아, 그러네요. 극장 근처에 맛집 좀 찾아주세요.
+    38.80s  agent 발화 끝
+    42.03s  <ret> 발화 (turn9 첫 프레임)
+    42.11s  agent 발화 시작: <ret> 명동 극장 근처에는 “Myeongdong Kyoja” (만두, 일만 원에서 이만 원 사이)와 “W
+    42.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.41s]: (tool result) There are several restaurants near Myeongdong Theater, i
+    42.11s  user  발화 끝
+    52.52s  user  발화 시작: “Myeongdong Kyoja” 예약해 주세요. 일곱시 전에.
+    52.52s  agent 발화 끝
+    55.36s  agent 발화 시작: “Myeongdong Kyoja”를 일곱시 전에 예약해 드리겠습니다. 몇 명으로 예약할까요?
+    55.36s  user  발화 끝
+    59.62s  agent 발화 시작: 혹시 다른 분들과 함께 가시는 건가요?
+    59.62s  agent 발화 끝
+    62.45s  user  발화 시작: 네.
+    62.45s  agent 발화 끝
+    62.93s  user  발화 시작: …저랑 친구 두 명이요.
+    62.93s  user  발화 끝
+    64.58s  <ret> 발화 (turn15 첫 프레임)
+    64.82s  agent 발화 시작: <ret> 세 분으로 예약해 드리겠습니다. “Myeongdong Kyoja”에 칠월 십일일 저녁 일곱시에 삼
+    64.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.94s]: (tool result) Reservation confirmed at Myeongdong Kyoja for 3 people o
+    64.82s  user  발화 끝
+    74.76s  user  발화 시작: 좋은데요. 혹시 연극장까지 가는 길은 어떻게 되나요?
+    74.76s  agent 발화 끝
+    77.91s  <ret> 발화 (turn17 첫 프레임)
+    78.07s  agent 발화 시작: <ret> “Myeongdong Kyoja”에서 명동 극장까지는 명동 팔길을 북쪽으로 걸어가서, 명동 이가에
+    78.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.10s]: (tool result) Walking directions from Myeongdong Kyoja to Myeongdong T
+    78.07s  user  발화 끝
+    85.16s  user  발화 시작: 와.
+    85.16s  agent 발화 끝
+    85.64s  user  발화 시작: 감사합니다. 혹시 오늘 날씨는 어때요?
+    85.64s  user  발화 끝
+    87.68s  <ret> 발화 (turn20 첫 프레임)
+    88.00s  agent 발화 시작: <ret> 서울의 오늘 날씨는 맑고, 최고 기온은 이십팔도이며, 습도는 육십오퍼센트, 풍속은 시속 삼 점 이
+    88.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) The weather in Seoul today is clear with a high of 28.0°
+    88.00s  user  발화 끝
+    94.63s  user  발화 시작: 그렇군요.
+    94.63s  agent 발화 끝
+    95.10s  agent 발화 시작: 혹시 다른 계획은 없으신가요?
+    95.10s  user  발화 끝
+    96.99s  user  발화 시작: 아니요, 오늘은 여기까지 할게요.
+    96.99s  agent 발화 끝
+    98.89s  agent 발화 시작: 즐거운 시간 보내세요.
+    98.89s  user  발화 끝
+   100.31s  agent 발화 끝

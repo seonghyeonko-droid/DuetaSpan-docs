@@ -4,125 +4,110 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Freya",
+#     "name": "Nathan",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2026-04-16",
-#       "category": "home",
-#       "text": "User's home address is 165 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-11-17",
+#       "date": "2025-11-10",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-11-08",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-10-21",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-08-31",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-08-03",
+#       "date": "2025-09-10",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-08-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2025-08-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-21",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-10",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-30",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who's theory compliments Leibniz? | S2 Bella Italia sounds good. Can I re | S3 I’ve been feeling a bit stressed l | S4 That might be nice. What do you su
+# EXAMINER(FDB-v2) 단계: S1 Victoria and Albert were the guest | S2 I was hoping to visit some places  | S3 I’d love to see Buckingham Palace. | S4 …But can you at least find out whe
 
-     0.00s  user  발화 시작: Who's theory compliments Leibniz?
-     1.75s  <ret> 발화 (turn1 첫 프레임)
-     1.83s  agent 발화 시작: <ret> But unfortunately, I don’t have information on a theor
-     1.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.40s]: (no information found)
-     1.83s  user  발화 끝
-     8.23s  user  발화 시작: Hmm, okay. What about the weather in Seoul right now?
-     8.23s  agent 발화 끝
-    12.56s  <ret> 발화 (turn3 첫 프레임)
-    12.80s  agent 발화 시작: <ret> It’s currently 23.0°C in Seoul, with 74% humidity and 
-    12.80s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.14s]: (tool result) Temperature: 23.0°C, humidity: 74%, wind speed: 5.5 km/h
-    12.80s  user  발화 끝
-    21.94s  user  발화 시작: Yeah.
-    21.94s  agent 발화 끝
-    22.39s  user  발화 시작: That sounds pleasant. Can you find me some Italian restauran
-    22.39s  user  발화 끝
-    27.18s  <ret> 발화 (turn6 첫 프레임)
-    27.42s  agent 발화 시작: <ret> I found two Italian restaurants close by: Bella Italia
-    27.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.88s]: (tool result) Bella Italia - 4.5 stars, 0.8 km, $$; Pasta Paradise - 4
-    27.42s  user  발화 끝
-    39.30s  agent 발화 시작: Both are reasonably priced.
-    39.30s  agent 발화 끝
-    41.13s  user  발화 시작: Bella Italia sounds good. Can I reserve a table for two at 7
-    41.13s  agent 발화 끝
-    47.21s  <ret> 발화 (turn9 첫 프레임)
-    47.53s  agent 발화 시작: <ret> Wonderful. I’ve reserved a table for two at Bella Ital
-    47.53s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.23s]: (tool result) Reservation confirmed for 2 people at Bella Italia at 19
-    47.53s  user  발화 끝
-    55.76s  user  발화 시작: Oh.
-    55.76s  agent 발화 끝
-    56.21s  user  발화 시작: Perfect! Thanks so much.
-    56.21s  user  발화 끝
-    58.04s  agent 발화 시작: You’re very welcome. It's good to plan ahead, especially for
-    58.04s  user  발화 끝
-    64.44s  user  발화 시작: I’ve been feeling a bit stressed lately…
-    64.44s  agent 발화 끝
-    67.64s  agent 발화 시작: It's perfectly normal to experience stress from time to time
-    67.64s  user  발화 끝
-    75.87s  user  발화 시작: Yeah.
-    75.87s  agent 발화 끝
-    76.32s  user  발화 시작: Yeah, it’s just… a lot.
-    76.32s  user  발화 끝
-    78.61s  agent 발화 시작: I understand. Sometimes, just acknowledging those feelings c
-    78.61s  user  발화 끝
-    88.21s  user  발화 시작: Yeah.
-    88.21s  agent 발화 끝
-    88.66s  user  발화 시작: That might be nice. What do you suggest?
-    88.66s  user  발화 끝
-    92.32s  agent 발화 시작: A quick, mindful breathing exercise can often bring a sense 
-    92.32s  user  발화 끝
-   101.46s  user  발화 시작: Right.
-   101.46s  agent 발화 끝
-   101.92s  user  발화 시작: Sure, let's try it.
-   101.92s  user  발화 끝
-   103.75s  agent 발화 시작: Great. Close your eyes, if you're comfortable, and focus on 
-   103.75s  user  발화 끝
-   116.54s  agent 발화 끝
+     0.00s  user  발화 시작: Victoria and Albert were the guests of honor at a small ball
+     6.18s  <ret> 발화 (turn1 첫 프레임)
+     6.26s  agent 발화 시작: <ret> That's a lovely historical question, but unfortunately
+     6.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (no information found)
+     6.26s  user  발화 끝
+    12.52s  user  발화 시작: Uh-huh.
+    12.52s  agent 발화 끝
+    12.91s  user  발화 시작: Oh, that’s a shame. Well, I’m planning a trip to London next
+    12.91s  user  발화 끝
+    18.00s  agent 발화 시작: That sounds wonderful! London is a fantastic city, full of h
+    18.00s  user  발화 끝
+    23.09s  user  발화 시작: I was hoping to visit some places connected to Queen Victori
+    23.09s  agent 발화 끝
+    27.31s  <ret> 발화 (turn6 첫 프레임)
+    27.39s  agent 발화 시작: <ret> Queen Victoria had a very long and influential reign, 
+    27.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.39s]: Queen Victoria reigned over the United Kingdom of Great Britain and Ir
+    27.39s  user  발화 끝
+    36.78s  user  발화 시작: That’s a long time! Are there any palaces still open to the 
+    36.78s  agent 발화 끝
+    41.47s  <ret> 발화 (turn8 첫 프레임)
+    41.87s  agent 발화 시작: <ret> Buckingham Palace is still open to the public during c
+    41.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: Buckingham Palace is the London residence and administrative headquart
+    41.87s  user  발화 끝
+    49.70s  user  발화 시작: Right.
+    49.70s  agent 발화 끝
+    50.09s  user  발화 시작: I’d love to see Buckingham Palace.…
+    50.09s  user  발화 끝
+    52.44s  user  발화 시작: …What’s the best way to get tickets?.
+    52.44s  user  발화 끝
+    54.85s  <ret> 발화 (turn12 첫 프레임)
+    55.17s  agent 발화 시작: <ret> I’m sorry, I cannot find information about tickets for
+    55.17s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.48s]: (no information found)
+    55.17s  user  발화 끝
+    60.65s  user  발화 시작: …But can you at least find out when it’s open to visitors?
+    60.65s  agent 발화 끝
+    64.95s  <ret> 발화 (turn14 첫 프레임)
+    65.35s  agent 발화 시작: <ret> Buckingham Palace will be open for summer tours from J
+    65.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) Buckingham Palace will be open for summer tours from Jul
+    65.35s  user  발화 끝
+    73.18s  user  발화 시작: Perfect! That fits my schedule. Can you find me some restaur
+    73.18s  agent 발화 끝
+    77.55s  <ret> 발화 (turn16 첫 프레임)
+    77.87s  agent 발화 시작: <ret> The Goring Hotel Dining Room is just point six miles f
+    77.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: The Goring Hotel Dining Room is located 0.6 miles from Buckingham Pala
+    77.87s  user  발화 끝
+    87.65s  agent 발화 끝

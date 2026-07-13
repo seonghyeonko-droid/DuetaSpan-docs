@@ -1,128 +1,74 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Barina, a gentle and reflective counselor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Elona, a grounded and empathetic supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Grace",
+    "name": "Marie",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "German",
     "gender": "female",
-    "age_range": "50s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-11",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-11-27",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-08-15",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-07-16",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-06-14",
+      "date": "2026-05-13",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-06-01",
+      "date": "2026-05-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-04-12",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2026-03-23",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2026-01-24",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-10-26",
       "category": "home",
-      "text": "User's home address is 54 Elm Street."
+      "text": "User's home address is 334 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-01",
-      "title": "Researching a used car",
+      "date": "2025-10-17",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-12-05",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the weather going to be like in London on July ⟨ret@5.10s⟩ twenty-sixth?
-[  5.34s][moshi] ⟦⚡SPAN@5.34s: (tool result) {"temperature": 25.5, "humidity": 60, "wind speed": 12.3, "condition": "Partly Cloudy"}⟧ It sounds like you’re planning ahead, which is wonderful. On July twenty-sixth in London, the temperature will be 25.5 degrees Celsius, with sixty percent humidity and a wind speed of 12.3 kilometers per hour, and it will be partly cloudy.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London", "date": "2026-07-26"}}
-[ 21.78s][user ] That’s good to know. Um, do you think that’s warm enough for a picnic?
-[ 27.53s][moshi] It certainly sounds pleasant enough for a picnic, doesn’t it? A little sunshine and a gentle breeze – perfect.
-[ 35.34s][user ] I need to book a hotel in Paris for the night of August tenth.
-[ 41.09s][moshi] Planning a getaway—that’s lovely. What kind of hotel are you looking for in Paris?
-[ 46.84s][user ] «backchannel» Yeah.
-[ 47.25s][user ] Something… not too expensive. Maybe near the Eiffel ⟨ret@50.55s⟩ Tower?
-[ 50.95s][moshi] ⟦⚡SPAN@50.95s: {"hotel_name": "Hotel Eiffel Seine", "address": "59 Rue de l'Université, 75007 Paris, France", "price_per_nigh⟧ I found Hotel Eiffel Seine, located at 59 Rue de l'Université, 75007 Paris, France. It’s rated 4.2 stars and costs 150 euros per night.
-[ 60.81s][user ] «backchannel» Nice.
-[ 61.23s][moshi] It’s always nice to find a good value, isn’t it? Sometimes the simplest things bring the most joy.
-[ 68.62s][user ] «backchannel» Nice.
-[ 69.03s][user ] Can you reserve a room for me, ⟨ret@71.92s⟩ then?
-[ 72.32s][moshi] ⟦⚡SPAN@72.32s: (tool result) {"confirmation id": "XE789P"}⟧ I’ve reserved a room for you at Hotel Eiffel Seine for August tenth for one guest. Your confirmation ID is XE789P.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Hotel Eiffel Seine", "date": "2026-08-10", "number_of_guests": "1"}}
-[ 80.95s][user ] Great. Uh, what time is it in Seoul right now? ⟨ret@84.98s⟩
-[ 85.06s][moshi] ⟦⚡SPAN@85.06s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It’s Friday, July tenth, 2026, at 2:47 PM in Asia/Seoul right now. It’s good to stay connected with different time zones.
-      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
-[ 93.69s][user ] «backchannel» Really?
-[ 94.10s][user ] I need to find a good Italian restaurant nearby.
-[ 97.80s][moshi] Finding a lovely place to eat is always a treat. Do you have any preferences regarding price range or atmosphere?
-[106.01s][user ] «backchannel» Mhm.
-[106.43s][user ] Not really, just… something authentic. ⟨ret@108.32s⟩
-[108.48s][moshi] ⟦⚡SPAN@108.48s: Trattoria Romana - Authentic Italian Cuisine, 123 Main Street, 4.5 stars, $$⟧ I found Trattoria Romana, an authentic Italian restaurant at 123 Main Street, rated 4.5 stars, with a moderate price range.
-[116.70s][user ] That sounds perfect!
-[117.93s][moshi] Wonderful. Sometimes, a simple, flavorful meal is exactly what we need.
-[122.45s][user ] «backchannel» Right.
-[122.86s][user ] I want to listen to some classical music.
-[126.15s][moshi] A beautiful choice. What composer or piece are you in the mood for?
-[131.49s][user ] «backchannel» Right.
-[131.90s][user ] Surprise ⟨ret@132.32s⟩ me.
-[132.72s][moshi] ⟦⚡SPAN@132.72s: (tool result) Now playing: Clair de Lune by Claude Debussy.⟧ Now playing “Clair de Lune” by Claude Debussy. Music can be so restorative.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"genre": "Classical", "mood": "Surprise"}}
-[138.07s][user ] That’s lovely. I have a meeting next Tuesday…
-[141.35s][user ] …what time is that?
-[143.00s][moshi] I’m afraid I don’t have that information. I don’t have a record of your meeting next Tuesday.
-[149.98s][user ] «backchannel» Oh.
-[150.39s][user ] Oh. I thought I’d told you. It’s at 3 PM.
-[154.50s][moshi] Ah, I see. You mentioned a meeting at 3 PM next Tuesday. I’m still learning to recall all the details.
-[162.72s][user ] «backchannel» Oh.
-[163.13s][user ] That’s okay. Remind me to buy flowers on Monday.
-[166.83s][moshi] I’ve noted that. I will remind you to buy flowers on Monday. A little thoughtfulness can brighten someone’s day.
-[174.64s][user ] Can you search for information about the history of ⟨ret@178.35s⟩ lavender?
-[178.75s][moshi] ⟦⚡SPAN@178.75s: (tool result) Lavender has been used for over 2,500 years, originating in the Mediterranean region. It was fav⟧ Lavender has been used for over 2,500 years, originating in the Mediterranean region. The Romans favored it for baths and perfumes, and ancient Egyptians used it for mummification—according to history.com.
-      CALL: {"function": "search", "arguments": {"query": "history of lavender"}}
-[191.07s][user ] «backchannel» Mm-hmm.
-[191.48s][user ] Fascinating!
-[191.89s][moshi] It's remarkable how long some traditions have endured, isn't it? Sometimes looking to the past can inspire us in the present.
+[  0.00s][user ] I'm looking for coffee shops near Chicago, within three ⟨ret@4.44s⟩ kilometers.
+[  4.68s][moshi] ⟦⚡SPAN@4.68s: (tool result) {"results": [{"name": "Intelligentsia Coffee", "vicinity": "1234 W Fullerton Ave, Chicago, IL 60⟧ I found three coffee shops near Chicago. Intelligentsia Coffee is at 1234 West Fullerton Avenue, rated 4.5.
+      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "Chicago", "radius": "3km"}}
+[ 12.63s][user ] «backchannel» Exactly.
+[ 13.10s][moshi] Starbucks is at 150 North Michigan Avenue, with a 4.0 rating. Dark Matter Coffee is at 1763 North Milwaukee Avenue, rated 4.3.
+[ 23.39s][user ] That's great! Can you reserve a table for two at Dark Matter Coffee for this ⟨ret@30.55s⟩ Saturday?
+[ 30.87s][moshi] ⟦⚡SPAN@30.87s: (tool result) {"confirmation id": "DM7294", "restaurant name": "Dark Matter Coffee", "date": "2026-07-11", "ti⟧ I’ve reserved a table for two at Dark Matter Coffee this Saturday, July 11th, at 2:00 PM. Your confirmation ID is DM7294.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Dark Matter Coffee", "date": "2026-07-11", "party_size": 2}}
+[ 41.16s][user ] Perfect, thank you! What’s the weather forecast for Saturday in ⟨ret@45.91s⟩ Chicago?
+[ 46.31s][moshi] ⟦⚡SPAN@46.31s: (tool result) {"temperature": 26.5, "humidity": 68, "wind speed": 8.2, "condition": "Partly Cloudy"}⟧ Saturday in Chicago will be partly cloudy with a temperature of 26.5 degrees Celsius, 68 percent humidity, and wind speed of 8.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chicago", "date": "2026-07-11"}}

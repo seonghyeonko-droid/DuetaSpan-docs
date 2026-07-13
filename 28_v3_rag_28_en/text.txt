@@ -1,51 +1,51 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Barien, a warm and attentive supportive advisor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Thioon, a encouraging and non-judgmental personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Taylor",
+    "name": "Ada",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-30",
+      "date": "2026-06-24",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-04-25",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-03-20",
+      "date": "2026-02-14",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2025-12-09",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2026-01-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-07-23",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-06-21",
-      "category": "home",
-      "text": "User's home address is 575 Birch Road."
+      "date": "2025-07-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-03",
+      "date": "2026-06-08",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -53,48 +53,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-08-04",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-19",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-07-28",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Barien, how are you today?
-[  2.22s][moshi] I’m doing wonderfully, thank you for asking. It’s a lovely day to practice a little mindfulness, don't you think?
-[  9.24s][user ] Maybe later. I was wondering… when did “In God We Trust” first appear on US ⟨ret@14.76s⟩ money?
-[ 15.16s][moshi] ⟦⚡SPAN@15.16s: The United States first authorized the use of “In God We Trust” on coins during the Civil War in 1864, and it ⟧ The United States first authorized the use of “In God We Trust” on coins in eighteen sixty-four, and it gradually appeared on paper currency thereafter. It’s interesting how historical events can shape even something as familiar as our currency.
-[ 29.58s][user ] 1864? Wow, that’s… earlier than I expected. Was that during Lincoln’s ⟨ret@33.62s⟩ presidency?
-[ 34.02s][moshi] ⟦⚡SPAN@34.02s: Abraham Lincoln was president of the United States from March 4, 1861, until his assassination on April 15, 18⟧ Yes, Abraham Lincoln was president from March fourth, eighteen sixty-one, until his assassination on April fifteenth, eighteen sixty-five. A very turbulent time in American history, indeed.
-[ 43.63s][user ] «backchannel» Right.
-[ 44.00s][user ] So, it was a Civil War thing then? Like a patriotic response?
-[ 48.44s][moshi] It seems to have been a response to the increasing secularization of society at the time, and a desire to acknowledge faith. It's a fascinating bit of history.
-[ 58.80s][user ] Hmm. I wonder if there was much debate about it back ⟨ret@62.83s⟩ then?
-[ 63.23s][moshi] «interrupted» ⟦⚡SPAN@63.23s: Although the phrase "In God We Trust" appeared on coins in 1864, it wasn't until 1956 that it became the offic⟧ While the phrase appeared on coins in eighteen sixty-four, it didn’t become the official motto until nineteen fifty-six—
-[ 69.89s][user ] «interrupts_prev» …but wasn’t that a really divisive issue even in the fifties? I’ve heard something about legal challenges. ⟨ret@76.10s⟩
-[ 76.18s][moshi] ⟦⚡SPAN@76.18s: In 1958, the Supreme Court case *Blau v. Fortier* upheld the constitutionality of the motto, stating it had a ⟧ The nineteen fifty-eight Supreme Court case *Blau v. Fortier* upheld its constitutionality, stating it had a “ceremonial” and “patriotic” purpose. It's a reminder that even seemingly settled issues can have complex legal histories.
-[ 88.38s][user ] So, it was actually *challenged* all the way to the Supreme Court?
-[ 92.82s][moshi] Yes, it was. It’s interesting how legal interpretations can evolve over time. It really speaks to our ongoing conversations about faith and public life.
-[101.69s][user ] What about other countries? Do they have similar mottos on their money? ⟨ret@106.05s⟩
-[106.13s][moshi] ⟦⚡SPAN@106.13s: (tool result) Many nations include national mottos on their currency, such as “E pluribus unum” (Out of many, ⟧ Many nations include mottos on their currency, such as “E pluribus unum” on US coins, “Liberté, Égalité, Fraternité” on French coins, and “Dieu et mon droit” on British coins. It seems a common way to express a nation’s values.
-      CALL: {"function": "search", "arguments": {"query": "national mottos on currency worldwide"}}
-[120.55s][user ] “Dieu et mon droit”? That sounds… very regal.
-[123.51s][moshi] It does, doesn’t it? It reflects a long tradition of monarchy in Britain. A lovely example of how history and culture intertwine.
-[131.64s][user ] That's true. What's the weather…
-[133.49s][user ] …like in London right ⟨ret@135.10s⟩ now?
-[135.34s][moshi] ⟦⚡SPAN@135.34s: (tool result) London: 21.0°C, humidity 68%, wind 8.2 km/h, condition: Partly Cloudy.⟧ The weather in London is twenty-one point zero degrees Celsius, with sixty-eight percent humidity and an eight point two kilometer per hour wind, and it's partly cloudy. Perhaps a good day for a walk in the park.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[149.02s][user ] Sounds nice. Thanks, Barien.
-[150.50s][moshi] You are very welcome. Remember to take a few moments for yourself today, even if it’s just a few deep breaths. It can make a world of difference.
+[  0.00s][user ] Hey, when does Day Z come out for Xbox? I've been waiting ⟨ret@4.42s⟩ forever.
+[  4.74s][moshi] ⟦⚡SPAN@4.74s: DayZ was released on Xbox on March 26, 2019, after a period in early access.⟧ It looks like DayZ was released on Xbox on March twenty-sixth, two thousand nineteen, after being in early access. It’s quite a popular game!
+[ 13.50s][user ] March 2019? That feels like ages ago… Is there any news about a ⟨ret@18.21s⟩ sequel?
+[ 18.61s][moshi] ⟦⚡SPAN@18.61s: (tool result) Bohemia Interactive has not announced a DayZ sequel, but continues to update the original game w⟧ There hasn't been an announcement for a sequel, but Bohemia Interactive keeps updating the original game—the latest improvements were released in February twenty-twenty-four.
+      CALL: {"function": "search", "arguments": {"query": "Day Z sequel news"}}
+[ 27.00s][user ] February 2024… okay, so it’s still being supported. That’s good to hear.
+[ 31.38s][moshi] It is! It’s wonderful when developers continue to support games we enjoy.
+[ 35.76s][user ] I was hoping for something new, though. Are there any similar games coming to Xbox? ⟨ret@41.15s⟩
+[ 41.23s][moshi] ⟦⚡SPAN@41.23s: (tool result) Several survival games are scheduled for Xbox release in 2024 and 2025, including "Nightingale" ⟧ Several survival games are planned for Xbox—"Nightingale" should come out in late twenty-twenty-four, and "Sons of the Forest" doesn’t have a set date yet.
+      CALL: {"function": "search", "arguments": {"query": "upcoming survival games Xbox"}}
+[ 49.99s][user ] «backchannel» Okay.
+[ 50.35s][user ] Nightingale sounds interesting. What kind of game is ⟨ret@53.39s⟩ it?
+[ 53.63s][moshi] ⟦⚡SPAN@53.63s: (tool result) Nightingale is a shared-world survival crafting game set in a Victorian gaslamp fantasy world, w⟧ Nightingale is a shared-world survival game—players build, craft, and fight in a Victorian gaslamp fantasy world, facing dangerous creatures and other players.
+      CALL: {"function": "search", "arguments": {"query": "Nightingale game details"}}
+[ 61.66s][user ] That sounds pretty cool, actually.
+[ 63.48s][moshi] «interrupted» It’s been getting a lot of buzz—
+[ 66.04s][user ] …Is it multiplayer…
+[ 67.13s][user ] …then? Can I play with ⟨ret@68.92s⟩ friends?
+[ 69.32s][moshi] ⟦⚡SPAN@69.32s: Nightingale supports both solo and multiplayer gameplay, with a focus on cooperative exploration and building ⟧ It supports both solo and multiplayer, focusing on exploring and building with up to eight players. It's designed to be enjoyed with friends.
+[ 77.71s][user ] Eight players, that's awesome. Is there a beta test I can sign up for? ⟨ret@82.74s⟩
+[ 82.82s][moshi] ⟦⚡SPAN@82.82s: (tool result) Inlate April 2024, Inflexion Games opened sign-ups for a closed beta test of Nightingale, runnin⟧ Let me search for information on a Nightingale beta test.
+      CALL: {"function": "search", "arguments": {"query": "Nightingale beta test sign up"}}
+[ 86.47s][moshi] Sign-ups for a closed beta test opened in late April of twenty-twenty-four, running from May twenty-third to May twenty-seventh—you can sign up on their official website.
+[ 95.96s][user ] May 23rd… I’ll have to check that out. Thanks for the info!
+[100.34s][moshi] You’re very welcome! It sounds like a game you might really enjoy.

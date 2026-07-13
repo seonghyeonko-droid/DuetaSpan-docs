@@ -4,66 +4,79 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Noa",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-01-09",
+#       "date": "2026-06-26",
 #       "category": "home",
-#       "text": "User's home address is 459 Maple Drive."
+#       "text": "User's home address is 115 Maple Drive."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-05-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-09-14",
+#       "date": "2025-12-27",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-06-14",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-09-02",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-03-03",
-#       "title": "Booked a dentist appointment",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-21",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the American Basketball Association merge with the 
-     4.78s  <ret> 발화 (turn1 첫 프레임)
-     5.02s  agent 발화 시작: <ret> That happened in June of nineteen seventy-six, with fo
-     5.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.62s]: The American Basketball Association merged with the National Basketbal
-     5.02s  user  발화 끝
-    14.64s  agent 발화 끝
+     0.00s  user  발화 시작: Who took over as president of the Second…
+     3.89s  user  발화 시작: …Bank of the United States in eighteen twenty-three?
+     3.89s  user  발화 끝
+     7.54s  <ret> 발화 (turn2 첫 프레임)
+     7.78s  agent 발화 시작: <ret> Well, that would be Nicholas Biddle; he took over as p
+     7.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.15s]: Nicholas Biddle assumed the presidency of the Second Bank of the Unite
+     7.78s  user  발화 끝
+    19.93s  agent 발화 끝

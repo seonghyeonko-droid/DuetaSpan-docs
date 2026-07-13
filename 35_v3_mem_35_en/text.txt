@@ -1,67 +1,97 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Thura, a curious and validating personal guide who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Orellana, a upbeat and supportive counselor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Amelia",
+    "name": "Felix",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "date": "2026-05-11",
+      "category": "home",
+      "text": "User's home address is 237 Cedar Lane."
     },
     {
-      "date": "2026-05-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-04-11",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-03-22",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-12-24",
+      "date": "2026-03-05",
       "category": "allergy",
       "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-12-17",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-11-06",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-07-22",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-29",
-      "title": "Booked a dentist appointment",
+      "date": "2025-11-11",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Amelia, I'm Thura! It's lovely to meet you.
-[  3.56s][user ] Um, well, I’m planning a trip and could use some ⟨ret@7.52s⟩ ideas.
-[  7.92s][moshi] ⟦⚡SPAN@7.92s: [2026-06-15] User is planning a trip to Vietnam in May.⟧ I see you’re planning a trip to Vietnam in May – that sounds wonderful!
-[ 13.46s][user ] «backchannel» Okay.
-[ 13.86s][moshi] ⟨ret@13.78s⟩ ⟦⚡SPAN@13.86s: Cat Tien National Park is a protected area in Vietnam, known for its biodiversity, including over 320 bird spe⟧ Cat Tien National Park is a protected area, known for over 320 bird species, and offers guided tours – it’s about 90 miles northeast of Ho Chi Minh City.
-[ 25.35s][user ] «backchannel» Oh.
-[ 25.74s][user ] That sounds… really interesting. What's the weather like there in ⟨ret@29.86s⟩ May?
-[ 30.10s][moshi] ⟦⚡SPAN@30.10s: (tool result) Cat Tien National Park, Vietnam: May 28, 2026, 30.2°C, humidity 81%, wind 6.8 km/h, chance of ra⟧ For Cat Tien National Park, Vietnam on May 28th, 2026, it will be 30.2°C with 81% humidity, 6.8 km/h winds, and a 65% chance of rain.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Cat Tien National Park, Vietnam", "date": "May"}}
+[  0.00s][moshi] Hi Felix, I'm Orellana. It's lovely to meet you!
+[  3.51s][user ] «backchannel» Mm-hmm.
+[  3.90s][user ] Oh, hi Orellana, nice to meet you too. I’m looking for a restaurant, actually.
+[  9.37s][moshi] Do you have any preferences in mind for cuisine or location?
+[ 13.66s][user ] «backchannel» Yeah.
+[ 14.05s][user ] Well, I'm vegan, so that's pretty important. ⟨ret@16.63s⟩
+[ 16.79s][moshi] ⟦⚡SPAN@16.79s: [2025-11-06] User is vegan.⟧ Felix, I recall you are vegan. That helps narrow down the options nicely.
+[ 21.86s][user ] «backchannel» Yeah, totally.
+[ 22.64s][user ] Yeah, you remembered that! That’s good.
+[ 24.98s][moshi] It is! And are you looking for something casual or more formal?
+[ 29.67s][user ] Something fairly casual, I think. Maybe ⟨ret@32.16s⟩ Ethiopian?
+[ 32.40s][moshi] ⟦⚡SPAN@32.40s: [2025-06-16] User's favorite cuisine is Ethiopian.⟧ Excellent choice, Felix! Your favorite cuisine is Ethiopian, so let’s focus on that.
+[ 37.48s][user ] «backchannel» Mm-hmm.
+[ 37.87s][moshi] ⟨ret@37.63s⟩ ⟦⚡SPAN@37.87s: (tool result) Name: Queen of Sheba; Address: 81 Stroud Green Rd, London N4 3EN; Rating: 4.6 stars; Price: £15-⟧ I found Queen of Sheba, with a 4.6-star rating. It’s on 81 Stroud Green Road, costing £15 to £25.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Ethiopian", "dietary_restriction": "vegan", "location": "London"}}
+[ 45.28s][user ] «backchannel» Yeah.
+[ 45.67s][user ] That sounds really good, actually. Is it easy to get ⟨ret@49.73s⟩ to?
+[ 49.97s][moshi] ⟦⚡SPAN@49.97s: (tool result) Estimated travel time: 45 minutes by bus; Route: Take the 141 bus from Cedar Lane towards Finchl⟧ It's about 45 minutes by bus. Take the 141 to Finchley Central, then the 292 to Tottenham.
+      CALL: {"function": "map_directions", "arguments": {"origin": "237 Cedar Lane", "destination": "81 Stroud Green Rd, London N4 3EN", "mode": "transit"}}
+[ 56.61s][user ] «backchannel» Yeah.
+[ 57.00s][user ] —Oh, that’s a bit long.
+[ 58.95s][moshi] It is a little lengthy, isn’t it? Perhaps we could look for something closer?
+[ 64.41s][user ] «backchannel» Yeah.
+[ 64.80s][user ] Yes, please. Something a bit quicker to get ⟨ret@68.08s⟩ to.
+[ 68.32s][moshi] ⟦⚡SPAN@68.32s: (tool result) Name: Lalibela; Address: 199 Pentonville Rd, London N1 9JP; Rating: 4.4 stars; Price: £12-£20.⟧ I found Lalibela, with 4.4 stars. It’s on 199 Pentonville Road, and costs £12 to £20.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Ethiopian", "dietary_restriction": "vegan", "location": "London", "radius": "5km"}}
+[ 74.56s][user ] «backchannel» Yeah.
+[ 74.95s][user ] Lalibela... that rings a bell.
+[ 76.91s][moshi] It does? Perhaps you’ve been there before?
+[ 79.64s][user ] I think so. Is it near my office? ⟨ret@82.68s⟩
+[ 82.76s][moshi] ⟦⚡SPAN@82.76s: (tool result) Distance: 6.2 kilometers; Estimated travel time: 25 minutes by bus.⟧ It's 6.2 kilometers away, and around 25 minutes by bus. A much quicker trip!
+      CALL: {"function": "map_distance", "arguments": {"origin": "237 Cedar Lane", "destination": "199 Pentonville Rd, London N1 9JP"}}
+[ 88.23s][user ] Perfect. Let's try and book a table there for, say, Friday evening?
+[ 92.91s][moshi] I can certainly do that for you. What time on Friday evening would you prefer?

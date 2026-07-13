@@ -1,10 +1,10 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Doralo, a kind and steady personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Joli, a encouraging and non-judgmental counselor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Iris",
+    "name": "Hannah",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -13,61 +13,47 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "British",
     "gender": "female",
-    "age_range": "40s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-07",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-02-18",
+      "date": "2026-05-08",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-02-12",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-12-26",
+      "category": "home",
+      "text": "User's home address is 857 Elm Street."
     },
     {
-      "date": "2025-12-08",
-      "category": "work",
-      "text": "User works as a architect."
-    },
-    {
-      "date": "2025-10-28",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-10-03",
+      "date": "2025-09-21",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-08-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-16",
-      "title": "Researching a used car",
+      "date": "2025-09-10",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Iris, I'm Doralo. It's lovely to meet you. I'm here to offer support, whatever you may need.
-[  6.33s][user ] Um, what time is it right now in London? ⟨ret@9.34s⟩
-[  9.50s][moshi] ⟦⚡SPAN@9.50s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/London right now.⟧ It is currently 3:17 PM in London, Iris. A peaceful afternoon, perhaps a moment for reflection?
+[  0.00s][moshi] Hi Hannah, I'm Joli.
+[  1.52s][user ] Um, what time is it right now? I completely lost track. ⟨ret@5.53s⟩
+[  5.69s][moshi] ⟦⚡SPAN@5.69s: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Europe/London right now.⟧ It is Friday, July 10, 2026 at 2:35 PM in Europe/London right now. Don’t worry about losing track; it happens to the best of us.
       CALL: {"function": "get_time", "arguments": {}}
-[ 15.13s][user ] «backchannel» Yeah.
-[ 15.48s][user ] I was just thinking about my trip to Kyoto last ⟨ret@19.11s⟩ year…
-[ 19.35s][moshi] ⟦⚡SPAN@19.35s: [2026-05-07] User is into home fermentation.⟧ I see you’ve noted your interest in home fermentation from May of last year.
-[ 24.27s][user ] «backchannel» Okay.
-[ 24.62s][user ] No, not that one! The Kyoto trip… the one I told you ⟨ret@28.96s⟩ about.
-[ 29.20s][moshi] ⟦⚡SPAN@29.20s: [2025-11-16] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ My apologies, Iris. That note details your car research from November. I have no note of a trip to Kyoto.
+[ 15.17s][user ] Oh, right. I’m planning that Iceland trip… do I have a note about ⟨ret@20.25s⟩ flights?
+[ 20.49s][moshi] ⟦⚡SPAN@20.49s: [2025-08-09] User is planning a trip to Iceland in August.⟧ You do! Your note from August 9th of last year says you’re planning a trip to Iceland in August. Perhaps we could look at some flights?

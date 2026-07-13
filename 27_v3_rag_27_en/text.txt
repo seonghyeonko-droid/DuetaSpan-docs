@@ -1,62 +1,61 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Fial, a encouraging and non-judgmental counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Thaex, a thoughtful and soft-spoken personal guide who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Victor",
+    "name": "Robin",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
+    "nationality": "Canadian",
+    "gender": "non-binary",
     "age_range": "early 20s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-15",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-04-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2026-03-22",
+      "date": "2025-11-07",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
+    },
+    {
+      "date": "2025-10-27",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-21",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-09-27",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-08-11",
+      "category": "home",
+      "text": "User's home address is 815 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-05-29",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-14",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling really stuck creatively, like I can't get any new ideas.
-[  4.77s][moshi] It’s perfectly normal to feel that way sometimes, you know? Everyone experiences creative blocks.
-[ 10.33s][user ] It's just… frustrating. I used to have so many ⟨ret@13.91s⟩ ideas.
-[ 14.31s][moshi] ⟦⚡SPAN@14.31s: Sam Claflin starred as Will Traynor in the 2016 romantic drama "Me Before You", which was directed by Thea Sha⟧ It sounds incredibly disheartening to feel that shift, but often revisiting things you once enjoyed—like a favorite film—can spark something. For example, Sam Claflin starred as Will Traynor in "Me Before You".
-[ 27.03s][user ] Oh, "Me Before You"! That was a good movie.
-[ 30.61s][moshi] «interrupted» It really is a lovely film, and sometimes revisiting those emotional connections—
-[ 35.38s][user ] «interrupts_prev» …do you know who directed it again? I’m drawing a ⟨ret@39.51s⟩ blank.
-[ 39.75s][moshi] ⟦⚡SPAN@39.75s: Thea Sharrock directed the 2016 romantic drama "Me Before You", which also featured Sam Claflin and Emilia Cla⟧ It was Thea Sharrock who directed “Me Before You”, alongside Sam Claflin and Emilia Clarke. It’s alright to need a little reminder!
-[ 48.49s][user ] Thanks, that helps. Maybe I’ll re-watch it tonight.
+[  0.00s][user ] I’m trying to remember a movie… it was Korean, a thriller, and really popular.
+[  4.92s][moshi] It sounds like you’re recalling a significant film. Perhaps I can help narrow it down?
+[ 10.19s][user ] «backchannel» Yeah.
+[ 10.54s][user ] Um, yeah, I think it had zombies? And it was… uh… pretty recent, I ⟨ret@15.41s⟩ guess.
+[ 15.81s][moshi] ⟦⚡SPAN@15.81s: Train to Busan is a 2016 South Korean zombie thriller film directed by Yeon Sang-ho, starring Gong Yoo, Jung Y⟧ That sounds like *Train to Busan*, a 2016 film directed by Yeon Sang-ho, and starring Gong Yoo, Jung Yu-mi, and Ma Dong-seok.
+[ 23.54s][user ] «backchannel» Wow.
+[ 23.90s][user ] That’s it! Do you know if Kim Yool-ho was in that one? ⟨ret@28.03s⟩
+[ 28.11s][moshi] ⟦⚡SPAN@28.11s: Kim Yool-ho starred in the 2016 film Train to Busan, alongside Gong Yoo, Jung Yu-mi, and Ma Dong-seok.⟧ Yes, Kim Yool-ho did indeed star in *Train to Busan* with Gong Yoo, Jung Yu-mi, and Ma Dong-seok.

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Iris",
+#     "name": "Hannah",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -13,75 +13,55 @@
 #     },
 #     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-02-18",
+#       "date": "2026-05-08",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-12-26",
+#       "category": "home",
+#       "text": "User's home address is 857 Elm Street."
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-03",
+#       "date": "2025-09-21",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-16",
-#       "title": "Researching a used car",
+#       "date": "2025-09-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Iris, I'm Doralo. It's lovely to meet you. I'm here to of
-     6.33s  user  발화 시작: Um, what time is it right now in London?
-     6.33s  agent 발화 끝
-     9.34s  <ret> 발화 (turn2 첫 프레임)
-     9.50s  agent 발화 시작: <ret> It is currently 3:17 PM in London, Iris. A peaceful af
-     9.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.63s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/London 
-     9.50s  user  발화 끝
-    15.13s  user  발화 시작: Yeah.
-    15.13s  agent 발화 끝
-    15.48s  user  발화 시작: I was just thinking about my trip to Kyoto last year…
-    15.48s  user  발화 끝
-    19.11s  <ret> 발화 (turn5 첫 프레임)
-    19.35s  agent 발화 시작: <ret> I see you’ve noted your interest in home fermentation 
-    19.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.92s]: [2026-05-07] User is into home fermentation.
-    19.35s  user  발화 끝
-    24.27s  user  발화 시작: Okay.
-    24.27s  agent 발화 끝
-    24.62s  user  발화 시작: No, not that one! The Kyoto trip… the one I told you about.
-    24.62s  user  발화 끝
-    28.96s  <ret> 발화 (turn8 첫 프레임)
-    29.20s  agent 발화 시작: <ret> My apologies, Iris. That note details your car researc
-    29.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: [2025-11-16] Past chat — Researching a used car: comparing hybrid mode
-    29.20s  user  발화 끝
-    36.23s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Hannah, I'm Joli.
+     1.52s  user  발화 시작: Um, what time is it right now? I completely lost track.
+     1.52s  agent 발화 끝
+     5.53s  <ret> 발화 (turn2 첫 프레임)
+     5.69s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:35 PM in Europe/Londo
+     5.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.48s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Europe/London 
+     5.69s  user  발화 끝
+    15.17s  user  발화 시작: Oh, right. I’m planning that Iceland trip… do I have a note 
+    15.17s  agent 발화 끝
+    20.25s  <ret> 발화 (turn4 첫 프레임)
+    20.49s  agent 발화 시작: <ret> You do! Your note from August 9th of last year says yo
+    20.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.86s]: [2025-08-09] User is planning a trip to Iceland in August.
+    20.49s  user  발화 끝
+    30.35s  agent 발화 끝

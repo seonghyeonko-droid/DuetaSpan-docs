@@ -1,98 +1,85 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Faeus, a practical and reassuring counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Jura, a grounded and empathetic life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Freya",
+    "name": "Nathan",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "female",
+    "gender": "male",
     "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
-    },
-    {
-      "date": "2026-04-16",
-      "category": "home",
-      "text": "User's home address is 165 Oak Avenue."
-    },
-    {
-      "date": "2025-11-17",
+      "date": "2025-11-10",
       "category": "hobby",
       "text": "User is into rock climbing."
     },
     {
-      "date": "2025-11-08",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-10-21",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-08-31",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-08-03",
+      "date": "2025-09-10",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-08-26",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
+    },
+    {
+      "date": "2025-08-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-21",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-06-10",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-30",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who's theory compliments Leibniz? ⟨ret@1.75s⟩
-[  1.83s][moshi] ⟦⚡SPAN@1.83s: (no information found)⟧ But unfortunately, I don’t have information on a theory that specifically complements Leibniz’s work.
-[  8.23s][user ] Hmm, okay. What about the weather in Seoul right ⟨ret@12.56s⟩ now?
-[ 12.80s][moshi] ⟦⚡SPAN@12.80s: (tool result) Temperature: 23.0°C, humidity: 74%, wind speed: 5.5 km/h, condition: partly cloudy.⟧ It’s currently 23.0°C in Seoul, with 74% humidity and a gentle breeze at 5.5 kilometers per hour. It's partly cloudy.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 21.94s][user ] «backchannel» Yeah.
-[ 22.39s][user ] That sounds pleasant. Can you find me some Italian restaurants ⟨ret@27.18s⟩ nearby?
-[ 27.42s][moshi] ⟦⚡SPAN@27.42s: (tool result) Bella Italia - 4.5 stars, 0.8 km, $$; Pasta Paradise - 4.2 stars, 1.5 km, $$$.⟧ I found two Italian restaurants close by: Bella Italia, with 4.5 stars, is 0.8 kilometers away, and Pasta Paradise has 4.2 stars and is 1.5 kilometers.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 39.30s][moshi] Both are reasonably priced.
-[ 41.13s][user ] Bella Italia sounds good. Can I reserve a table for two at 7 ⟨ret@47.21s⟩ PM?
-[ 47.53s][moshi] ⟦⚡SPAN@47.53s: (tool result) Reservation confirmed for 2 people at Bella Italia at 19:00. Confirmation ID: BI72026.⟧ Wonderful. I’ve reserved a table for two at Bella Italia for 7 PM. Your confirmation ID is BI72026.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "19:00", "party_size": 2}}
-[ 55.76s][user ] «backchannel» Oh.
-[ 56.21s][user ] Perfect! Thanks so much.
-[ 58.04s][moshi] You’re very welcome. It's good to plan ahead, especially for a nice evening out.
-[ 64.44s][user ] I’ve been feeling a bit stressed lately…
-[ 67.64s][moshi] It's perfectly normal to experience stress from time to time. It’s a sign you’re engaging with life’s challenges.
-[ 75.87s][user ] «backchannel» Yeah.
-[ 76.32s][user ] Yeah, it’s just… a lot.
-[ 78.61s][moshi] I understand. Sometimes, just acknowledging those feelings can be a helpful first step. Perhaps we could explore some simple relaxation techniques?
-[ 88.21s][user ] «backchannel» Yeah.
-[ 88.66s][user ] That might be nice. What do you suggest?
-[ 92.32s][moshi] A quick, mindful breathing exercise can often bring a sense of calm. We can try one together, if you like.
-[101.46s][user ] «backchannel» Right.
-[101.92s][user ] Sure, let's try it.
-[103.75s][moshi] Great. Close your eyes, if you're comfortable, and focus on your breath. Inhale slowly… and exhale fully. Just notice the sensation of the air moving in and out.
+[  0.00s][user ] Victoria and Albert were the guests of honor at a small ball that took place where? ⟨ret@6.18s⟩
+[  6.26s][moshi] ⟦⚡SPAN@6.26s: (no information found)⟧ That's a lovely historical question, but unfortunately, the location of that specific ball isn’t widely recorded.
+[ 12.52s][user ] «backchannel» Uh-huh.
+[ 12.91s][user ] Oh, that’s a shame. Well, I’m planning a trip to London next month.
+[ 18.00s][moshi] That sounds wonderful! London is a fantastic city, full of history and charm.
+[ 23.09s][user ] I was hoping to visit some places connected to Queen Victoria. ⟨ret@27.31s⟩
+[ 27.39s][moshi] ⟦⚡SPAN@27.39s: Queen Victoria reigned over the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death ⟧ Queen Victoria had a very long and influential reign, from June twentieth, eighteen thirty-seven, until her death on January twenty-second, nineteen hundred and one.
+[ 36.78s][user ] That’s a long time! Are there any palaces still open to the ⟨ret@41.47s⟩ public?
+[ 41.87s][moshi] ⟦⚡SPAN@41.87s: Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom⟧ Buckingham Palace is still open to the public during certain times of the year—it’s the London residence of the monarch.
+[ 49.70s][user ] «backchannel» Right.
+[ 50.09s][user ] I’d love to see Buckingham Palace.…
+[ 52.44s][user ] …What’s the best way to get ⟨ret@54.85s⟩ tickets?.
+[ 55.17s][moshi] ⟦⚡SPAN@55.17s: (no information found)⟧ I’m sorry, I cannot find information about tickets for Buckingham Palace through this tool.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {}}
+[ 60.65s][user ] …But can you at least find out when it’s open to ⟨ret@64.95s⟩ visitors?
+[ 65.35s][moshi] ⟦⚡SPAN@65.35s: (tool result) Buckingham Palace will be open for summer tours from July 22nd to September 30th, 2026, with tim⟧ Buckingham Palace will be open for summer tours from July twenty-second to September thirtieth, twenty twenty-six, with timed-entry tickets required.
+      CALL: {"function": "search", "arguments": {"query": "Buckingham Palace opening dates 2026"}}
+[ 73.18s][user ] Perfect! That fits my schedule. Can you find me some restaurants ⟨ret@77.55s⟩ nearby?
+[ 77.87s][moshi] ⟦⚡SPAN@77.87s: The Goring Hotel Dining Room is located 0.6 miles from Buckingham Palace, offering modern British cuisine.⟧ The Goring Hotel Dining Room is just point six miles from the Palace, and offers modern British cuisine. Perhaps that would be a nice treat?

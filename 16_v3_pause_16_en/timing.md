@@ -4,59 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Ava",
+#     "name": "Kim",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-02-02",
+#       "date": "2026-06-08",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-11-16",
+#       "date": "2025-08-28",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-08-06",
+#       "date": "2025-07-17",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-28",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-06-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-03",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-26",
+#       "date": "2025-06-21",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,89 +58,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… | S2 …that affects the culture much? | S3 It really is. Could you find me so | S4 That sounds perfect!
+# EXAMINER(FDB-v2) 단계: S1 Hey Morara, I was just wondering… | S2 Well, I was thinking maybe somethi | S3 Oh, that sounds perfect! Can you c | S4 …a reservation for four people the
 
-     0.00s  user  발화 시작: I was just wondering…
-     1.44s  <ret> 발화 (turn1 첫 프레임)
-     1.76s  agent 발화 시작: <ret> It sounds like you’re thinking about community and bel
-     1.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.70s]: As of the 2020 United States Census, the Black or African American pop
-     1.76s  user  발화 끝
-    11.46s  user  발화 시작: Hmm, that's interesting. What about Saint Paul?
-    11.46s  agent 발화 끝
-    14.15s  <ret> 발화 (turn3 첫 프레임)
-    14.55s  agent 발화 시작: <ret> Saint Paul has a notably larger African American commu
-    14.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.58s]: The Black or African American population in Saint Paul, Minnesota was 
-    14.55s  user  발화 끝
-    25.13s  user  발화 시작: Oh wow, quite a difference.
-    25.13s  agent 발화 끝
-    27.33s  agent 발화 시작: Yes, a significant difference. Sometimes understanding those
-    27.33s  user  발화 끝
-    35.26s  user  발화 시작: Yeah, yeah.
-    35.26s  agent 발화 끝
-    36.15s  user  발화 시작: Do you think—
-    36.15s  user  발화 끝
-    37.47s  user  발화 시작: …that affects the culture much?
-    37.47s  user  발화 끝
-    39.67s  agent 발화 시작: It absolutely does, I imagine. Cultural vibrancy often thriv
-    39.67s  user  발화 끝
-    47.61s  user  발화 시작: I'm trying to remember…
-    47.61s  agent 발화 끝
-    49.37s  user  발화 시작: …if I’ve ever been to a jazz club in either city…
-    49.37s  user  발화 끝
-    54.14s  <ret> 발화 (turn12 첫 프레임)
-    54.22s  agent 발화 시작: <ret> There’s The Dakota Jazz Club in Minneapolis, a well-kn
-    54.22s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.05s]: The Dakota Jazz Club is located in Minneapolis, Minnesota, and has hos
-    54.22s  user  발화 끝
-    61.27s  user  발화 시작: Oh, The Dakota! Yes, I think I went there once.
-    61.27s  agent 발화 끝
-    65.68s  agent 발화 시작: [happy] That sounds lovely. Music can be such a powerful con
-    65.68s  user  발화 끝
-    71.85s  user  발화 시작: It really is. Could you find me some information about upcom
-    71.85s  agent 발화 끝
-    77.34s  <ret> 발화 (turn16 첫 프레임)
-    77.58s  agent 발화 시작: <ret> Samara Joy is performing there on July twelfth at seve
-    77.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.61s]: (tool result) Event: Samara Joy, Date: 2026-07-12, Time: 7:00 PM, Pric
-    77.58s  user  발화 끝
-    84.19s  user  발화 시작: That sounds wonderful! Is there anything else happening this
-    84.19s  agent 발화 끝
-    88.20s  <ret> 발화 (turn18 첫 프레임)
-    88.60s  agent 발화 시작: <ret> The Minneapolis Aquatennial is happening from July ele
-    88.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.73s]: (tool result) Event: Minneapolis Aquatennial, Date: 2026-07-11 to 2026
-    88.60s  user  발화 끝
-    94.33s  user  발화 시작: Mm-hmm.
-    94.33s  agent 발화 끝
-    94.77s  agent 발화 시작: It’s a celebration of the city’s waterways and history, a jo
-    94.77s  user  발화 끝
-   100.50s  user  발화 시작: Yeah.
-   100.50s  agent 발화 끝
-   100.94s  user  발화 시작: I think I need to look that…
-   100.94s  user  발화 끝
-   104.03s  user  발화 시작: …up. What's the weather forecast for Saturday?
-   104.03s  user  발화 끝
-   107.03s  <ret> 발화 (turn24 첫 프레임)
-   107.11s  agent 발화 시작: <ret> Saturday in Minneapolis will be twenty-six degrees Cel
-   107.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.26s]: (tool result) The weather in Minneapolis on Saturday, July 11, 2026 wi
-   107.11s  user  발화 끝
-   116.37s  user  발화 시작: Yeah.
-   116.37s  agent 발화 끝
-   116.81s  user  발화 시작: That sounds perfect!
-   116.81s  user  발화 끝
-   118.13s  agent 발화 시작: It does sound ideal. Sometimes, a beautiful day is exactly w
-   118.13s  user  발화 끝
-   124.30s  user  발화 시작: Okay.
-   124.30s  agent 발화 끝
-   124.74s  user  발화 시작: I'm feeling a little overwhelmed with planning…
-   124.74s  user  발화 끝
-   127.83s  agent 발화 시작: It’s perfectly alright to feel overwhelmed. Change and plann
-   127.83s  user  발화 끝
-   136.65s  user  발화 시작: I guess you’re right.
-   136.65s  agent 발화 끝
-   138.41s  agent 발화 시작: Remember to be kind to yourself. It's okay to not have every
-   138.41s  user  발화 끝
-   145.90s  user  발화 시작: Right.
-   145.90s  agent 발화 끝
-   146.34s  user  발화 시작: Thanks, Vix. That helps.
-   146.34s  user  발화 끝
-   148.11s  agent 발화 시작: You’re very welcome. I’m glad I could offer a little support
-   148.11s  user  발화 끝
-   155.16s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Morara, I was just wondering…
+     2.08s  <ret> 발화 (turn1 첫 프레임)
+     2.40s  agent 발화 시작: <ret> Oh, that's a fun question! Sam Elliott actually voiced
+     2.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: Sam Elliott voiced Butch, the Tyrannosaurus rex, in Disney•Pixar’s 201
+     2.40s  user  발화 끝
+    13.20s  user  발화 시작: Wow, really? I wouldn’t have guessed that!
+    13.20s  agent 발화 끝
+    16.01s  agent 발화 시작: It's a bit of a surprising choice, I think, which is part of
+    16.01s  user  발화 끝
+    25.21s  user  발화 시작: [happy] I love that movie! Do you have any favorite dinosaur
+    25.21s  agent 발화 끝
+    30.01s  agent 발화 시작: That's wonderful to hear! As for me, I don’t really *have* f
+    30.01s  user  발화 끝
+    39.21s  user  발화 시작: Yeah, yeah.
+    39.21s  agent 발화 끝
+    40.01s  user  발화 시작: Hmm, yeah, that's a good one. I’m planning a movie night thi
+    40.01s  user  발화 끝
+    45.22s  agent 발화 시작: Oh, that sounds like a lovely plan! What kind of movies are 
+    45.22s  user  발화 끝
+    51.62s  user  발화 시작: Well, I was thinking maybe something with dinosaurs, but als
+    51.62s  agent 발화 끝
+    55.62s  user  발화 시작: …something not *too* scary. My little cousin is coming.
+    55.62s  user  발화 끝
+    59.22s  agent 발화 시작: That’s very considerate of you! Finding the right balance is
+    59.22s  user  발화 끝
+    63.62s  user  발화 시작: Exactly! So, uh, can you search for family-friendly dinosaur
+    63.62s  agent 발화 끝
+    67.22s  <ret> 발화 (turn13 첫 프레임)
+    67.62s  agent 발화 시작: <ret> I found "Dinosaur," a Disney film from 2000, which Com
+    67.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.20s]: (tool result) "Dinosaur" (2000) is a 2000 American computer-animated a
+    67.62s  user  발화 끝
+    80.83s  user  발화 시작: Wow.
+    80.83s  agent 발화 끝
+    81.23s  user  발화 시작: Oh, that sounds perfect! Can you check the showtimes for it 
+    81.23s  user  발화 끝
+    86.03s  agent 발화 시작: I'm happy to help! But, to check showtimes, I need to know y
+    86.03s  user  발화 끝
+    94.03s  user  발화 시작: Oh, right! Sorry. It's Seoul, South Korea.
+    94.03s  agent 발화 끝
+    96.76s  <ret> 발화 (turn18 첫 프레임)
+    96.84s  agent 발화 시작: <ret> I’m sorry, I wasn’t able to find any current showtimes
+    96.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: (no information found)
+    96.84s  user  발화 끝
+   106.44s  user  발화 시작: [sigh] Oh, that's too bad. Okay, new plan. What about findin
+   106.44s  agent 발화 끝
+   112.52s  <ret> 발화 (turn20 첫 프레임)
+   112.84s  agent 발화 시작: <ret> I found Han Cook, a Korean restaurant in Seoul, with a
+   112.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.20s]: (tool result) [Restaurant Name: Han Cook, Cuisine: Korean, Rating: 4.5
+   112.84s  user  발화 끝
+   122.04s  user  발화 시작: That sounds lovely! Can you make…
+   122.04s  agent 발화 끝
+   124.45s  user  발화 시작: …a reservation for four people there…
+   124.45s  user  발화 끝
+   126.85s  user  발화 시작: …this Saturday at 6 PM?
+   126.85s  user  발화 끝
+   128.45s  <ret> 발화 (turn24 첫 프레임)
+   128.85s  agent 발화 시작: <ret> Wonderful! I’ve made a reservation at Han Cook for fou
+   128.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.40s]: (tool result) Reservation confirmed at Han Cook for 4 people on July 1
+   128.85s  user  발화 끝
+   137.25s  user  발화 시작: Perfect! You're a lifesaver, Morara.
+   137.25s  agent 발화 끝
+   139.25s  agent 발화 시작: I'm so glad I could help! Building happy memories with famil
+   139.25s  user  발화 끝
+   146.45s  agent 발화 끝

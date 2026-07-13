@@ -4,117 +4,97 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Alex",
+#     "name": "Casey",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-01-25",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-10-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2025-06-24",
+#       "date": "2026-01-27",
 #       "category": "home",
-#       "text": "User's home address is 441 Elm Street."
+#       "text": "User's home address is 469 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-06-11",
+#       "date": "2026-01-13",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-12-18",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Researching a used car",
+#       "date": "2025-06-30",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the phone number for A | S2 That sounds lovely. I’m thinking o | S3 …Do you know of any good mindfulne | S4 That’s right. Can you find me some
+# EXAMINER(FDB-v2) 단계: S1 Do you have a contact number for A | S2 Oh, that's a shame. Well, what's t | S3 That does sound nice. Uh, maybe I  | S4 Yeah, um, something near Myeongdon
 
-     0.00s  user  발화 시작: Do you have the phone number for Anya Petrova?
-     2.70s  <ret> 발화 (turn1 첫 프레임)
-     3.10s  agent 발화 시작: <ret> I’ve checked several sources, but I couldn’t find a ph
-     3.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (no information found)
-     3.10s  user  발화 끝
-    10.32s  user  발화 시작: Yeah.
-    10.32s  agent 발화 끝
-    10.67s  user  발화 시작: Oh, okay. That's a shame.
-    10.67s  user  발화 끝
-    12.39s  agent 발화 시작: It can be frustrating when contact information isn’t readily
-    12.39s  user  발화 끝
-    15.83s  user  발화 시작: Yes, actually. What's the weather like in Seoul right now?
-    15.83s  agent 발화 끝
-    18.87s  <ret> 발화 (turn6 첫 프레임)
-    19.27s  agent 발화 시작: <ret> The weather in Seoul is currently 23.0 degrees Celsius
-    19.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.91s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    19.27s  user  발화 끝
-    27.19s  user  발화 시작: That sounds lovely. I’m thinking of going for a walk.
-    27.19s  agent 발화 끝
-    30.63s  agent 발화 시작: That’s a wonderful idea. Fresh air and a little movement can
-    30.63s  user  발화 끝
-    35.44s  user  발화 시작: Yeah.
-    35.44s  agent 발화 끝
-    35.79s  user  발화 시작: I've been feeling really stressed lately, and I need to find
-    35.79s  user  발화 끝
-    40.95s  agent 발화 시작: It’s very common to feel overwhelmed sometimes.
-    40.95s  user  발화 끝
-    43.36s  user  발화 시작: …Do you know of any good mindfulness apps?
-    43.36s  agent 발화 끝
-    46.11s  agent 발화 시작: Mindfulness apps can be a really effective way to build a pr
-    46.11s  user  발화 끝
-    52.65s  user  발화 시작: Yeah, yeah.
-    52.65s  agent 발화 끝
-    53.34s  agent 발화 시작: …different approaches. Headspace and Calm are both very popu
-    53.34s  user  발화 끝
-    61.94s  user  발화 시작: What time is it now?
-    61.94s  agent 발화 끝
-    63.58s  <ret> 발화 (turn17 첫 프레임)
-    63.66s  agent 발화 시작: <ret> It is currently 3:51 PM in Seoul, on Friday, July 10th
-    63.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (tool result) It is Friday, July 10, 2026 at 3:51 PM in Asia/Seoul rig
-    63.66s  user  발화 끝
-    70.20s  user  발화 시작: That’s right. Can you find me some relaxing music?
-    70.20s  agent 발화 끝
-    73.14s  <ret> 발화 (turn19 첫 프레임)
-    73.30s  agent 발화 시작: <ret> “Weightless” by Marconi Union is often cited as the mo
-    73.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) "Weightless" by Marconi Union is often cited as the most
-    73.30s  user  발화 끝
-    82.93s  user  발화 시작: Yeah.
-    82.93s  agent 발화 끝
-    83.28s  user  발화 시작: Sounds good! Play it for me.
-    83.28s  user  발화 끝
-    84.94s  <ret> 발화 (turn22 첫 프레임)
-    85.34s  agent 발화 시작: <ret> Okay, “Weightless” by Marconi Union is now playing. I 
-    85.34s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.85s]: (tool result) Playing "Weightless" by Marconi Union.
-    85.34s  user  발화 끝
-    91.19s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have a contact number for Anya…
+     2.87s  user  발화 시작: …Sharma? I met her at the conference last year.
+     2.87s  user  발화 끝
+     5.69s  <ret> 발화 (turn2 첫 프레임)
+     6.09s  agent 발화 시작: <ret> I’ve checked, but I couldn’t find a publicly listed co
+     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.01s]: (no information found)
+     6.09s  user  발화 끝
+    11.10s  user  발화 시작: Yeah, yeah.
+    11.10s  agent 발화 끝
+    11.82s  user  발화 시작: Oh, that's a shame. Well, what's the weather like in Seoul r
+    11.82s  user  발화 끝
+    16.08s  <ret> 발화 (turn5 첫 프레임)
+    16.48s  agent 발화 시작: <ret> The weather in Seoul is currently 23.0 degrees Celsius
+    16.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    16.48s  user  발화 끝
+    24.36s  agent 발화 시작: It sounds quite pleasant there, actually.
+    24.36s  agent 발화 끝
+    26.51s  user  발화 시작: Yeah.
+    26.51s  agent 발화 끝
+    26.86s  user  발화 시작: That does sound nice. Uh, maybe I should book a hotel there 
+    26.86s  user  발화 끝
+    32.24s  agent 발화 시작: That’s a lovely idea! Planning a trip can be so exciting.
+    32.24s  user  발화 끝
+    36.18s  user  발화 시작: Yeah.
+    36.18s  agent 발화 끝
+    36.53s  user  발화 시작: Yeah, um, something near Myeongdong, if possible.
+    36.53s  user  발화 끝
+    38.72s  <ret> 발화 (turn12 첫 프레임)
+    39.04s  agent 발화 시작: <ret> I found L7 Myeongdong by LOTTE, a four-and-a-half-star
+    39.04s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.16s]: (tool result) L7 Myeongdong by LOTTE, 4.5 stars, from ₩180,000 per nig
+    39.04s  user  발화 끝
+    46.21s  agent 발화 시작: Does that sound good to you?
+    46.21s  agent 발화 끝
+    48.35s  user  발화 시작: Uh-huh.
+    48.35s  agent 발화 끝
+    48.71s  user  발화 끝

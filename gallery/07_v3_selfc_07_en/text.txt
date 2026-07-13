@@ -1,100 +1,87 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Lera, a kind and steady supportive advisor who helps people with grief and change. <system>
+SYSTEM: <system> You are Delil, a calm and patient wellness coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Morgan",
+    "name": "Alex",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
+    "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-26",
+      "date": "2026-06-14",
+      "category": "home",
+      "text": "User's home address is 44 Birch Road."
+    },
+    {
+      "date": "2026-06-03",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-03-06",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-08-23",
+      "date": "2025-12-14",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2025-06-17",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-08-11",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-07-27",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-06-12",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-22",
-      "title": "Researching a used car",
+      "date": "2025-11-21",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-08-08",
+      "date": "2025-10-18",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you get me two train tickets from Los Angeles to San Francisco on April ⟨ret@6.58s⟩ fifth?
-[  6.82s][moshi] ⟦⚡SPAN@6.82s: (tool result) Los Angeles to San Francisco, April 5, 2026. Two adult tickets, $187.50. Train 511 departs 8:00 ⟧ I’ve found two tickets for $187.50, departing at 8:00 AM and arriving at 12:30 PM. Your confirmation is 9X7L2.
-      CALL: {"function": "Trains_1_GetTrainTickets", "arguments": {"from_city": "Los Angeles", "to_city": "San Francisco", "date": "April fifth", "num_tickets": "2"}}
-[ 14.91s][user ] «backchannel» Yeah, yeah.
-[ 15.77s][user ] Oh, actually… San Diego, not San Francisco. ⟨ret@18.59s⟩
-[ 18.75s][moshi] ⟦⚡SPAN@18.75s: (tool result) Los Angeles to San Diego, April 5, 2026. Two adult tickets, $65.00. Train 703 departs 9:15 AM, a⟧ No problem at all. Two tickets to San Diego on April fifth will be $65.00. Train 703 departs at 9:15 AM. Confirmation 4R8P9.
-      CALL: {"function": "Trains_1_GetTrainTickets", "arguments": {"from_city": "Los Angeles", "to_city": "San Diego", "date": "April 5", "num_tickets": "2"}}
-[ 28.55s][user ] That sounds good.
-[ 29.83s][moshi] It’s good to find something that works for you. Travel can be stressful, and a little flexibility helps.
-[ 37.50s][user ] «backchannel» Yeah.
-[ 37.92s][user ] Do you know when the earliest train leaves Los Angeles for San Diego? ⟨ret@43.38s⟩
-[ 43.46s][moshi] ⟦⚡SPAN@43.46s: The earliest train from Los Angeles to San Diego departs at 5:45 AM, arriving at 8:30 AM, operated by Amtrak P⟧ The earliest train leaves at 5:45 AM, arriving at 8:30 AM. It’s the Amtrak Pacific Surfliner.
-[ 50.28s][user ] «backchannel» Wow.
-[ 50.70s][moshi] It’s a lovely way to start the day, watching the coastline go by. It can be a calming experience.
-[ 58.80s][user ] «backchannel» Yeah, yeah.
-[ 59.65s][user ] What’s the weather like in San Diego on April ⟨ret@63.51s⟩ fifth?
-[ 63.91s][moshi] ⟦⚡SPAN@63.91s: (tool result) San Diego, CA on April 5, 2026: 21.1°C, humidity 68%, wind 8.9 km/h, clear skies.⟧ On April fifth, San Diego will be 21.1°C with 68% humidity and clear skies. There’s a light breeze at 8.9 km/h.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "San Diego", "date": "April 5"}}
-[ 72.86s][user ] «backchannel» Okay.
-[ 73.29s][user ] Hmm, that’s nice.
-[ 74.56s][moshi] It sounds like a beautiful day for a visit. Sometimes, just knowing the weather helps ease worries.
-[ 81.81s][user ] «backchannel» Mm-hmm.
-[ 82.23s][user ] Could you find me some restaurants near the San Diego train ⟨ret@86.95s⟩ station?
-[ 87.35s][moshi] ⟦⚡SPAN@87.35s: (tool result) The Prado at Balboa Park (0.8 km), Juniper & Ivy (1.6 km), Born & Raised (2.4 km).⟧ The Prado is 0.8 km away, Juniper & Ivy is 1.6 km, and Born & Raised is 2.4 km.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "San Diego train station"}}
-[ 95.44s][user ] «backchannel» Wow.
-[ 95.87s][user ] Is The Prado ⟨ret@97.33s⟩ expensive?
-[ 97.57s][moshi] ⟦⚡SPAN@97.57s: The Prado at Balboa Park has an average cost of $35 per person, offering Californian cuisine in an upscale set⟧ The Prado averages $35 per person. It’s known for Californian cuisine in a more upscale setting.
-[104.39s][user ] «backchannel» Really?
-[104.82s][user ] That’s a little much.
-[106.52s][moshi] It’s okay to look for options that fit your budget. Sometimes simpler is just as satisfying.
-[113.34s][user ] Are there any parks near the train ⟨ret@116.51s⟩ station?
-[116.75s][moshi] ⟦⚡SPAN@116.75s: (tool result) Balboa Park (1.6 km), Waterfront Park (3.2 km), Seaport Village (4.8 km).⟧ Balboa Park is 1.6 km away. Waterfront Park is 3.2 km, and Seaport Village is 4.8 km.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "San Diego train station", "type": "park"}}
+[  0.00s][user ] I need to find a nice Italian restaurant ⟨ret@3.59s⟩ nearby.
+[  3.83s][moshi] ⟦⚡SPAN@3.83s: There are many Italian restaurants in Seoul, with Trattoria La Luce being a highly-rated option, known for its⟧ Trattoria La Luce is a popular choice, known for its authentic pasta and cozy atmosphere. It’s quite well-regarded.
+[ 11.50s][user ] «backchannel» Uh-huh.
+[ 11.92s][user ] Oh, uh, actually… Trattoria La Stella, that’s the one I meant. ⟨ret@16.45s⟩
+[ 16.61s][moshi] ⟦⚡SPAN@16.61s: Trattoria La Stella is an Italian restaurant located at 27, Tojeong-ro, Mapo-gu, Seoul, known for its pizza an⟧ My apologies! Trattoria La Stella is at 27 Tojeong-ro, Mapo-gu, and it’s known for pizza and pasta, around ₩20,000 per person.
+[ 25.55s][user ] Could you reserve a table for two there for this Saturday ⟨ret@30.42s⟩ evening?
+[ 30.66s][moshi] ⟦⚡SPAN@30.66s: (tool result) Reservation confirmed at Trattoria La Stella for 2 people on July 11, 2026, at 7:00 PM. Confirma⟧ I’ve reserved a table for two at Trattoria La Stella for this Saturday at 7:00 PM. Your confirmation ID is 8A9B2C. I hope you enjoy your meal.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Trattoria La Stella", "date": "2026-07-11", "time": "19:00", "party_size": "2"}}

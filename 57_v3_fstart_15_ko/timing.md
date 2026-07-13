@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "태은",
+#     "name": "소담",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,106 +12,99 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-11-15",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-02",
+#       "date": "2026-04-22",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-08-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-08",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-05-30",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울 근처에서 캠핑할 만한 곳 좀 찾아줄 수 | S2 오, 다행이다. 그럼 바로 예약해 줘. | S3 …혹시 자라섬에서 자전거 빌릴… | S4 캠핑 가서 뭐 할지 아직 잘 모르겠는데, 자라섬에서 즐길 수 
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 피부과 예약 좀 잡아 주세요. | S2 알겠습니다. | S3 …혹시 김 선생님 예약 전에 근처 카페라도 알아봐 주실 수 있 | S4 아, 다행이네요. 예약 시간까지 커피 마시면서 시간 보내야겠어
 
-     0.00s  user  발화 시작: 이번 주 토요일에 서울 근처에서 캠핑할 만한 곳 좀 찾아줄 수 있어?
-     5.63s  <ret> 발화 (turn1 첫 프레임)
-     5.71s  agent 발화 시작: <ret> 서울 근처에는 가평과 포천에 캠핑장이 많이 있어요. 괜찮은 곳을 찾아드릴게요.
-     5.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.76s]: 서울 근처에는 여러 캠핑장이 있으며, 특히 가평과 포천 지역에 많은 캠핑장이 있습니다.
-     5.71s  user  발화 끝
-    10.47s  user  발화 시작: 가평 쪽으로 좀 더 자세히 알아봐 줘. 조용하고 자연이 좋은 곳이면 좋겠어.
-    10.47s  agent 발화 끝
-    15.77s  <ret> 발화 (turn3 첫 프레임)
-    16.17s  agent 발화 시작: <ret> 가평 자라섬 캠핑장은 넓은 잔디밭과 깨끗한 시설을 갖추고, 북한강변에 있어서 자연 경관이 아주 아
-    16.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.66s]: 가평 자라섬 캠핑장은 넓은 잔디밭과 깨끗한 시설을 갖추고 있으며, 북한강변에 위치하여 아름다운 자연 경관을 자랑합니다.
-    16.17s  user  발화 끝
-    22.84s  user  발화 시작: 자라섬 캠핑장 예약은 어떻게 해야 해? 지금 바로 예약 가능할까?
-    22.84s  agent 발화 끝
-    27.19s  <ret> 발화 (turn5 첫 프레임)
-    27.59s  agent 발화 시작: <ret> 자라섬 캠핑장은 예약 가능하고, 현재 오만 원에 예약할 수 있어요. 확인 번호는 제트 엑스 팔 구
-    27.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.56s]: (tool result) {"hotel name": "자라섬 캠핑장", "availability": "available", "
-    27.59s  user  발화 끝
-    36.16s  user  발화 시작: 오, 다행이다. 그럼 바로 예약해 줘.
-    36.16s  agent 발화 끝
-    38.85s  <ret> 발화 (turn7 첫 프레임)
-    39.01s  agent 발화 시작: <ret> 네, 자라섬 캠핑장 예약이 완료되었습니다. 확인 번호는 제트 엑스 팔 구 에이 비입니다. 즐거운 
-    39.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.61s]: (tool result) {"status": "confirmed", "confirmation id": "ZX89AB"}
-    39.01s  user  발화 끝
-    46.62s  user  발화 시작: 고마워. 혹시 자라섬 주변에 맛집도 추천해 줄 수 있어?
-    46.62s  agent 발화 끝
-    50.50s  <ret> 발화 (turn9 첫 프레임)
-    50.90s  agent 발화 시작: <ret> 자라섬 주변에는 칼국수와 닭갈비 맛집이 많아요. 특히 ‘자라섬 칼국수’가 현지인들에게 인기가 많답
-    50.90s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.71s]: 자라섬 주변에는 칼국수와 닭갈비로 유명한 맛집들이 많이 있습니다. 특히 '자라섬 칼국수'는 현지인들에게 인기가 많습니다.
-    50.90s  user  발화 끝
-    56.61s  user  발화 시작: 칼국수 맛집은 영업시간이 어떻게 돼? —
-    56.61s  agent 발화 끝
-    59.47s  user  발화 시작: …혹시 자라섬에서 자전거 빌릴…
-    59.47s  user  발화 끝
-    61.37s  user  발화 시작: …수 있는 곳도 있을까?
-    61.37s  user  발화 끝
-    62.95s  <ret> 발화 (turn13 첫 프레임)
-    63.27s  agent 발화 시작: <ret> 자라섬 안에 자전거 대여소가 있어서 하루 종일 이용할 수 있고, 시간당 오천 원이에요.
-    63.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.18s]: 자라섬 자전거 대여소는 하루 종일 운영되며, 시간당 5천 원에 자전거를 대여할 수 있습니다.
-    63.27s  user  발화 끝
-    69.46s  user  발화 시작: 정말요?
-    69.46s  agent 발화 끝
-    69.93s  user  발화 시작: 아, 좋네. 자전거 대여소 위치 좀 알려줄래?
-    69.93s  user  발화 끝
-    72.94s  <ret> 발화 (turn16 첫 프레임)
-    73.26s  agent 발화 시작: <ret> 자라섬 자전거 대여소는 중앙광장 근처에 있고, 캠핑장에서도 쉽게 찾을 수 있어요.
-    73.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: 자라섬 자전거 대여소는 자라섬 중앙광장 근처에 위치하고 있으며, 자라섬 캠핑장에서도 쉽게 찾을 수 있습니다.
-    73.26s  user  발화 끝
-    78.50s  user  발화 시작: 캠핑 가서 뭐 할지 아직 잘 모르겠는데, 자라섬에서 즐길 수 있는 활동들이 있을까?
-    78.50s  agent 발화 끝
-    84.28s  <ret> 발화 (turn18 첫 프레임)
-    84.68s  agent 발화 시작: <ret> 캠핑 말고도 수상 레저, 자전거 타기, 산책, 음악 축제 등 다양한 활동을 즐길 수 있답니다.
-    84.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: 자라섬에서는 캠핑 외에도 수상 레저, 자전거 타기, 산책, 음악 축제 등 다양한 활동을 즐길 수 있습니다.
-    84.68s  user  발화 끝
-    91.82s  user  발화 시작: 알았어. 덕분에 여행 계획 세우는 데 큰 도움이 됐어. 정말 고마워!
-    91.82s  agent 발화 끝
-    97.05s  agent 발화 시작: 천만에요. 즐거운 여행 되시길 바랍니다. 혹시 더 필요한 건 없으세요?
-    97.05s  user  발화 끝
-   101.81s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 피부과 예약 좀 잡아 주세요.
+     3.93s  agent 발화 시작: 네, 피부과 예약 도와드릴게요. 혹시 선호하는 의사 선생님이 있으신가요?
+     3.93s  user  발화 끝
+     8.34s  user  발화 시작: 음.
+     8.34s  agent 발화 끝
+     8.83s  user  발화 시작: 음… 김민준 선생님으로 부탁드려요.
+     8.83s  user  발화 끝
+    10.48s  <ret> 발화 (turn4 첫 프레임)
+    10.80s  agent 발화 시작: <ret> 김민준 선생님은 토요일 오후 두 시, 네 시, 여섯 시에 예약이 가능합니다.
+    10.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) 김민준 선생님은 토요일 오후 두 시, 네 시, 여섯 시에 예약 가능합니다.
+    10.80s  user  발화 끝
+    16.69s  user  발화 시작: 오후 네 시로 예약해 주세요.
+    16.69s  agent 발화 끝
+    18.82s  <ret> 발화 (turn6 첫 프레임)
+    19.14s  agent 발화 시작: <ret> 예약이 완료되었습니다. 예약 번호는 칠 팔 구 이 삼 사입니다.
+    19.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) 예약이 완료되었습니다. 예약 번호는 789234입니다.
+    19.14s  user  발화 끝
+    24.05s  user  발화 시작: 알겠습니다.
+    24.05s  agent 발화 끝
+    24.54s  agent 발화 시작: 예약 확인 문자를 보내드렸습니다. 혹시 다른 예약이 필요하신가요?
+    24.54s  user  발화 끝
+    28.46s  user  발화 시작: 네.
+    28.46s  agent 발화 끝
+    28.96s  agent 발화 시작: 여행 준비에 도움이 될 만한 정보도 찾아드릴 수 있습니다.
+    28.96s  user  발화 끝
+    33.37s  user  발화 시작: 여행요? 갑자기 왜 여행 얘기를—
+    33.37s  agent 발화 끝
+    35.83s  user  발화 시작: …혹시 김 선생님 예약 전에 근처 카페라도 알아봐 주실 수 있을까요?
+    35.83s  user  발화 끝
+    40.82s  <ret> 발화 (turn13 첫 프레임)
+    41.22s  agent 발화 시작: <ret> 김민준 선생님 피부과 근처에 괜찮은 카페를 찾아보겠습니다.
+    41.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.44s]: (tool result) 김민준 피부과 근처에 '커피베네', '스타벅스', '투썸플레이스'가 있습니다. 커피베네 평점이 가장 
+    41.22s  user  발화 끝
+    44.66s  agent 발화 시작: 김민준 피부과 근처에는 '커피베네', '스타벅스', '투썸플레이스'가 있습니다. 커피베네 평점이 가장 높습니
+    44.66s  agent 발화 끝
+    50.06s  user  발화 시작: 커피베네로 가 봐야겠네요.
+    50.06s  agent 발화 끝
+    51.53s  agent 발화 시작: 커피베네까지 도보로 약 십분 정도 걸립니다.
+    51.53s  user  발화 끝
+    54.47s  user  발화 시작: 그럼 혹시 그 카페에 와이파이 되는지 알아봐 주시겠어요?
+    54.47s  agent 발화 끝
+    58.24s  <ret> 발화 (turn18 첫 프레임)
+    58.40s  agent 발화 시작: <ret> 커피베네는 무료 와이파이를 제공합니다. 커피베네 공식 웹사이트에 따르면 모든 매장에서 와이파이를 
+    58.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.87s]: (tool result) 커피베네는 무료 와이파이를 제공합니다. 커피베네 공식 웹사이트에 따르면 모든 매장에서 와이파이를 사용
+    58.40s  user  발화 끝
+    65.27s  user  발화 시작: 네.
+    65.27s  agent 발화 끝
+    65.76s  user  발화 시작: 아, 다행이네요. 예약 시간까지 커피 마시면서 시간 보내야겠어요.
+    65.76s  user  발화 끝
+    69.69s  agent 발화 시작: 예약 시간까지 편안하게 시간 보내세요.
+    69.69s  user  발화 끝
+    72.14s  user  발화 시작: 감사합니다.
+    72.14s  agent 발화 끝
+    72.63s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
+    72.63s  user  발화 끝
+    74.60s  agent 발화 끝

@@ -1,99 +1,85 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 당신은 스트레스 해소 및 마음챙김을 통해 사람들을 돕는 따뜻하고 주의 깊은 조력자 바리엔입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 트히오온이며, 일상적인 결정과 감정에 대해 사람들을 돕는 격려적이고 비판적이지 않은 개인 가이드입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "가완",
+    "name": "노현",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-30",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-05-03",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2026-03-12",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "home",
-      "text": "User's home address is 경기 성남시 분당구 판교로 235."
-    },
-    {
-      "date": "2025-07-17",
+      "date": "2026-06-24",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-06-21",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-25",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-02-14",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-07-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-20",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-07-28",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-21",
+      "date": "2026-06-08",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 돈에 “In God We Trust”가 언제 처음 새겨졌는지 ⟨ret@5.16s⟩ 궁금해.
-[  5.48s][moshi] ⟦⚡SPAN@5.48s: The United States first authorized the use of “In God We Trust” on coins in 1864, during the Civil War.⟧ 돈에 “In God We Trust”가 처음 새겨진 건, 남북전쟁 시기인 천팔백육십사년이에요. 당시 동전에 사용하도록 허가되었답니다.
-[ 13.70s][user ] «backchannel» 응.
-[ 14.25s][user ] 천팔백육십사년이라고? 그게 왜 갑자기 나타난 건데?
-[ 17.53s][moshi] 그건 당시 전쟁 중에 국민적인 믿음을 강화하려는 의도였던 것 같아요.
-[ 23.01s][user ] 믿음 강화라… 좀 이상한데. 그전에는 없었잖아? ⟨ret@26.22s⟩
-[ 26.30s][moshi] ⟦⚡SPAN@26.30s: Prior to 1864, the motto “E Pluribus Unum” (“Out of Many, One”) appeared on United States coins.⟧ 천팔백육십사년 이전에는 “E Pluribus Unum”, 즉 “다수로부터 하나”라는 문구가 미국 동전에 새겨져 있었어요.
-[ 33.42s][user ] 아, 그건 알지. 그럼 “In…
-[ 36.16s][user ] …God We Trust”가 완전히 대체한 거야?
-[ 39.45s][moshi] 완전히 대체하기까지는 시간이 좀 걸렸어요. 점차적으로 사용이 확대되었답니다.
-[ 43.84s][user ] 점차적으로? 얼마나 걸렸는데? —
-[ 46.03s][user ] …근데 그게 진짜 돈에 영향을 줬을까? 경제적으로?
-[ 49.86s][user ] «backchannel» 어.
-[ 50.41s][moshi] ⟨ret@50.09s⟩ ⟦⚡SPAN@50.41s: In 1956, “In God We Trust” became the official motto of the United States, replacing “E Pluribus Unum”.⟧ 천구백오십육년에 “In God We Trust”가 미국의 공식 모토가 되었고, “E Pluribus Unum”을 대체했어요.
-[ 57.53s][user ] 공식 모토라… 그럼 지금도 계속 쓰고 있는 거야?
-[ 61.92s][moshi] 네, 지금도 미국 동전과 지폐에 “In God We Trust”가 새겨져 있습니다.
-[ 67.94s][user ] 신기하네. 계속 유지되고 있다니.
-[ 70.14s][moshi] 그런 역사가 있는 거죠. 마음의 평화를 찾는데 도움이 되었으면 좋겠어요.
-[ 75.62s][user ] «backchannel» 그래.
-[ 76.16s][user ] 마음의 평화라… 고마워, 바리엔.
+[  0.00s][user ] 데이 제트가 엑스박스로 언제 ⟨ret@1.93s⟩ 나와요?
+[  2.25s][moshi] ⟦⚡SPAN@2.25s: Day Z is currently available on PC, PlayStation 4, and Xbox One as of December 5, 2018.⟧ 데이 제트는 이천십팔년 십이월 오일부터 피 씨, 플레이스테이션 사 엑스박스 원에서 이용 가능합니다. 혹시 다른 플랫폼에 대해서도 궁금하신가요?
+[ 10.35s][user ] 엑스박스 원에 나온 지 꽤 됐네요. 지금도 잘 팔리고 ⟨ret@14.53s⟩ 있나요?
+[ 14.85s][moshi] ⟦⚡SPAN@14.85s: (no information found)⟧ 죄송합니다. 현재 데이 제트의 엑스박스 원 판매량에 대한 정보는 찾을 수 없습니다.
+[ 20.25s][user ] 음… 그럼 데이 제트의 개발사는 ⟨ret@22.72s⟩ 어디인가요?
+[ 22.96s][moshi] ⟦⚡SPAN@22.96s: Bohemia Interactive is a Czech video game developer based in Prague, founded in 1999 by Ondřej Špelda, Viktor ⟧ 데이 제트는 천구백구십구년 Ondřej Špelda, Viktor Bocan, Jan Špinler가 프라하에 설립한 체코의 비디오 게임 개발사 Bohemia Interactive에서 개발했습니다.
+[ 31.06s][user ] «backchannel» 네네.
+[ 31.51s][moshi] Bohemia Interactive는 현실적인 군사 시뮬레이션 게임으로 유명한 회사입니다.
+[ 35.11s][user ] 데이 제트가 처음 나왔을 때 반응은 어땠나요? ⟨ret@38.10s⟩
+[ 38.26s][moshi] ⟦⚡SPAN@38.26s: DayZ was initially released as a mod for Arma 2 in April 2012 and quickly gained popularity due to its unique ⟧ 데이 제트는 이천십이년 사월에 Arma 이의 모드로 처음 출시되었고, 독특한 생존 공포 게임 플레이 덕분에 빠르게 인기를 얻었습니다.
+[ 46.36s][user ] 모드였군요. 그럼 아르마 이랑은 어떻게 다른가요?
+[ 49.06s][moshi] «interrupted» 아르마 이는 밀리터리 시뮬레이션 게임이고—
+[ 51.31s][user ] «interrupts_prev» … 아, 데이 제트 말고 다른 Bohemia Interactive 게임도 재밌는 거 ⟨ret@56.31s⟩ 있어요?
+[ 56.71s][moshi] ⟦⚡SPAN@56.71s: Arma 3 was released in September 2013 and is a military tactical shooter video game developed and published by⟧ 아르마 삼는 Bohemia Interactive에서 개발하고 이천십삼년 구월에 출시한 군사 전술 슈팅 게임입니다.
+[ 62.11s][user ] 아르마 삼도 엑스박스에서 할 수 ⟨ret@64.49s⟩ 있나요?
+[ 64.81s][moshi] ⟦⚡SPAN@64.81s: Arma 3 is available on PC, PlayStation 4, and Xbox One.⟧ 네, 아르마 삼는 피 씨, 플레이스테이션 사 엑스박스 원에서 모두 이용 가능합니다. 엑스박스 게임 패스에도 포함되어 있습니다.
+[ 72.47s][user ] «backchannel» 아.
+[ 72.92s][user ] 오, 게임 패스에 있다니 좋네요. 그럼 데이 제트도 게임 패스에 있나요? ⟨ret@77.79s⟩
+[ 77.87s][moshi] ⟦⚡SPAN@77.87s: (no information found)⟧ 죄송합니다. 데이 제트가 엑스박스 게임 패스에 포함되어 있는지에 대한 정보는 찾을 수 없습니다.
