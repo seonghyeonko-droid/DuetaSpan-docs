@@ -1,59 +1,72 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Bunar, a kind and steady wellness coach who helps people with creative blocks and confidence. You can explain starting with a rough draft, tiny daily reps, quieting the inner critic. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Saemi, a upbeat and supportive supportive advisor who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Theo",
+    "name": "Henri",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "Australian",
     "gender": "male",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
+      "date": "2026-06-13",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-05-18",
+      "date": "2026-05-27",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2026-05-24",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-04-09",
+      "date": "2026-02-12",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-01-20",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-24",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-01-14",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2025-12-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-28",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-10",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-04-27",
+      "date": "2026-05-02",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-03-25",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -64,36 +77,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a playwright, someone who's worked on musicals, for ⟨ret@5.16s⟩ a project.
-[  5.78s][moshi] ⟦⚡SPAN@5.46s: (no information found)⟧ I'm sorry, I don't have a directory of playwrights available right now. I can search for playwrights online, though.
-[ 13.62s][user ] Yes, please search for playwrights who specialize in musicals. ⟨ret@17.14s⟩
-[ 17.33s][moshi] I ⟦⚡SPAN@18.14s: (tool result) Stephen Sondheim is widely regarded as one of the most important figures in musical theatre, hav⟧ found some great names! Stephen Sondheim and Lin-Manuel Miranda are both highly acclaimed musical theatre composers and lyricists.
-      CALL: {"function": "search", "arguments": {"query": "playwrights specializing in musicals"}}
-[ 25.17s][user ] «backchannel» Uh-huh.
-[ 25.58s][user ] Hmm, Sondheim is a little… classic. I'm looking for someone newer, more contemporary.
-[ 30.95s][moshi] «backchannel» Mm-hmm.
-[ 31.36s][moshi] [curious] I understand. You’d like a more contemporary playwright. Let's refine the search. Do you have a particular style in mind?
-[ 40.02s][user ] Something like "Dear Evan Hansen" or "Next to Normal". ⟨ret@43.70s⟩
-[ 43.74s][moshi] ⟦⚡SPAN@43.80s: (tool result) Benj Pasek and Justin Paul wrote the music and lyrics for "Dear Evan Hansen", and Tom Kitt and B⟧ Benj Pasek and Justin Paul wrote "Dear Evan Hansen", while Tom Kitt and Brian Yorkey created "Next to Normal"—both are known for contemporary themes.
-      CALL: {"function": "search", "arguments": {"query": "playwrights similar to Dear Evan Hansen and Next to Normal"}}
-[ 53.64s][user ] «backchannel» Yeah, yeah.
-[ 54.46s][user ] Okay, Pasek and Paul sound interesting. Can you find their contact ⟨ret@59.21s⟩ information?
-[ 59.42s][moshi] ⟦⚡SPAN@59.86s: (tool result) Benj Pasek and Justin Paul are represented by 3 Arts Entertainment. Their address is 5555 Wilshi⟧ They are represented by 3 Arts Entertainment, located at 5555 Wilshire Boulevard in Los Angeles, and their phone number is 310-854-5600.
-      CALL: {"function": "search", "arguments": {"query": "Benj Pasek and Justin Paul contact information"}}
-[ 68.08s][user ] «backchannel» Okay.
-[ 68.49s][user ] That’s good. Can you add a reminder…
-[ 71.38s][user ] …to follow up with them next week? ⟨ret@74.15s⟩
-[ 74.27s][moshi] I’ve ⟦⚡SPAN@75.02s: (tool result) Alarm set for next week, 9:00 AM, task: follow up with Benj Pasek and Justin Paul. ID: 78291⟧ set an alarm for next week at 9:00 AM to follow up with Benj Pasek and Justin Paul. Your alarm ID is 78291.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "next week", "task": "follow up with Benj Pasek and Justin Paul"}}
-[ 84.17s][user ] «backchannel» Right.
-[ 84.58s][user ] Perfect. What other musicals have they worked on? —
-[ 88.30s][user ] …are they available for a new project right now? ⟨ret@91.91s⟩
-[ 92.01s][moshi] They're ⟦⚡SPAN@92.78s: (tool result) Benj Pasek and Justin Paul are currently working on the film "Wicked", set to release in Novembe⟧ currently working on the film “Wicked”, scheduled for release in November 2024, and haven’t announced other projects.
-      CALL: {"function": "search", "arguments": {"query": "Benj Pasek and Justin Paul current projects"}}
-[ 99.44s][user ] «backchannel» Yeah.
-[ 99.85s][moshi] [happy] It sounds like they may be quite busy, but it's still worth reaching out! It doesn't hurt to ask about potential future collaborations.
-[109.75s][user ] You’re right. Could you find me their email ⟨ret@113.15s⟩ address?
-[113.47s][moshi] I’m ⟦⚡SPAN@114.22s: (no information found)⟧ sorry, I couldn’t find a publicly listed email address for them. You might have luck contacting 3 Arts Entertainment directly.
-      CALL: {"function": "search", "arguments": {"query": "Benj Pasek and Justin Paul email address"}}
-[122.13s][user ] Okay, that's fine. Thanks for all your help, Bunar.
-[125.85s][moshi] You’re very welcome! Remember, even a small step forward is progress. Don't be afraid to reach out – you never know what might happen.
+[  0.00s][user ] Hey, can you capture a screenshot of the footer as a base sixty four image? I’m working on a design and need it for a ⟨ret@9.61s⟩ quick mockup.
+[ 10.23s][moshi] ⟦⚡SPAN@9.91s: (tool result) data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w+n7B8AIwz⟧ [happy] Sure thing! Here’s the footer as a base sixty four image. It’s a pretty small one, though.
+      CALL: {"function": "puppeteer_screenshot", "arguments": {"url": "https://gaon.co.kr", "selector": "footer", "type": "base64"}}
+[ 17.06s][user ] «backchannel» Yeah.
+[ 17.44s][user ] Okay, great. That's… smaller than I expected. Can you find me some healthy restaurants nearby? I'm feeling like something light. ⟨ret@24.88s⟩
+[ 25.02s][moshi] «backchannel» Mm-hmm.
+[ 25.40s][moshi] ⟦⚡SPAN@25.88s: You are in Busan, South Korea.⟧ [curious] Of course! You’re in Busan, right? I can definitely find some healthy restaurants there.
+[ 31.08s][user ] Yes, Busan. But I'm trying to cut back on carbs. Any places with good salad options?
+[ 37.15s][moshi] «backchannel» Yeah.
+[ 37.52s][moshi] ⟨ret@37.49s⟩ I ⟦⚡SPAN@38.22s: Salad options are available at Salad Story Haeundae, offering fresh ingredients and customizable salads. They ⟧ found Salad Story in Haeundae, Busan! They have customizable salads with fresh ingredients, and their number is 051-746-0077.
+[ 44.73s][user ] «backchannel» Yeah.
+[ 45.11s][user ] Sounds good. Can you reserve a table for one there for, uh, tomorrow at 7 ⟨ret@50.96s⟩ PM?
+[ 51.17s][moshi] ⟦⚡SPAN@51.62s: (tool result) Reservation confirmed for 1 person at Salad Story Haeundae on 2026-07-11 at 19:00. Confirmation ⟧ [sigh] Perfect! I’ve reserved a table for one at Salad Story Haeundae tomorrow at 7 PM. Your confirmation ID is RS7492.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Salad Story Haeundae", "date": "2026-07-11", "time": "19:00", "party_size": 1}}

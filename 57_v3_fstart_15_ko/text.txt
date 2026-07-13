@@ -1,85 +1,85 @@
 v3_fstart_15_ko src=mcp style=mcp_falsestart
-SYSTEM: <system> 당신은 누엔으로, 격려적이고 비판적이지 않은 개인 가이드로서 사람들의 중요한 인생 변화를 돕습니다. 당신은 대처 전략, 꾸준한 일상 유지, 자기 연민 실천 등을 설명할 수 있습니다. 또한 당신은 모시로, 능숙한 음성 비서로서 일상적인 요청—정보 검색, 예약, 날씨, 알림, 길 안내—을 유능하게 처리합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는, 현실적이고 공감적인 라이프 코치인 아렐라크스입니다. 초고부터 시작하기, 매일 작은 반복, 내면의 비판적인 목소리 잠재우기 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청—정보 검색, 예약, 날씨, 알림, 길 안내—을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "다완",
+    "name": "연온",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-05-20",
+      "category": "home",
+      "text": "User's home address is 서울 마포구 성산동 45-6."
     },
     {
-      "date": "2026-05-29",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2026-05-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-04-03",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
-    },
-    {
-      "date": "2025-12-11",
+      "date": "2026-03-08",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2026-01-08",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-12-14",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-18",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-11",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2026-03-13",
+      "date": "2026-04-18",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-02-26",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 자전거로 이동하면 어디까지 갈 수 있지? 지금 있는 곳에서. ⟨ret@3.63s⟩
-[  3.68s][moshi] «backchannel» 네.
-[  4.09s][moshi] ⟦⚡SPAN@4.02s: (tool result) {"origin": "current location", "destination": "anywhere", "mode": "bicycling"}⟧ 어디까지 가고 싶으세요?
-      CALL: {"function": "map_directions_matrix", "arguments": {}}
-[  5.31s][moshi] 현재 위치에서 자전거로 갈 수 있는 곳을 찾아볼게요. 잠시만 기다려 주세요.
-[  9.81s][moshi] [happy] 자전거로 오킬로미터 안에 카페 세 곳이 있어요. 가장 가까운 곳은 도보 십분 거리입니다. 다른 곳도 찾아볼까요?
+[  0.00s][user ] 음… 서울에서 분위기 좋은 이탈리아 레스토랑 좀 찾아줘. 근데 잠깐만…
+[  4.42s][user ] …아, 그게 아니라… 그냥 집에서 영화 볼까?
+[  7.51s][moshi] 영화를 보시는군요. 어떤 영화를 찾으시나요?
+[  9.72s][moshi] 영화 정보를 찾을 수 없습니다. 혹시 다른 영화를 찾아볼까요?
+[ 13.69s][user ] «backchannel» 네.
+[ 14.14s][user ] 그럼… 이번 주말에 볼 만한 코미디 영화 좀 추천해 ⟨ret@18.30s⟩ 줘.
+[ 18.55s][moshi] ⟦⚡SPAN@18.79s: (tool result) {"movies": [{"title": "극한직업", "year": 2019, "rating": 8.6}, {"title": "수상한 변호사 우영우", "year": 202⟧ 이번 주말에 볼 만한 코미디 영화는 '극한직업'과 '수상한 변호사 우영우'가 있습니다. 평점은 각각 팔 점 육점과 팔 점 사점입니다.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"genre": "comedy", "date": "this weekend"}}
+[ 26.95s][user ] «backchannel» 네.
+[ 27.39s][user ] '극한직업' 예매해 줘. 이번 주 토요일 오후 두 시로.
+[ 31.36s][moshi] «backchannel» 네네.
+[ 31.81s][moshi] ⟨ret@31.52s⟩ ⟦⚡SPAN@32.11s: (tool result) {"confirmation id": "AX729B", "movie title": "극한직업", "date": "2026-07-11", "time": "14:00", "sea⟧ '극한직업' 영화, 이번 주 토요일 오후 두 시로 예매 완료되었습니다. 확인 번호는 에이 엑스 칠 이 구 비입니다. 두 분이시죠?
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_title": "극한직업", "date": "this Saturday", "time": "2:00 PM"}}
+[ 40.64s][moshi] 즐거운 시간 보내세요!

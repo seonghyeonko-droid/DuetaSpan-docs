@@ -4,56 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Julia",
+#     "name": "Noa",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
+#     "nationality": "French",
+#     "gender": "non-binary",
 #     "age_range": "late 20s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-06-12",
+#       "date": "2026-06-28",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-04-06",
-#       "category": "home",
-#       "text": "User's home address is 784 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-03-03",
+#       "date": "2026-04-30",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-12-22",
+#       "date": "2026-04-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2026-04-16",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "category": "home",
+#       "text": "User's home address is 357 Maple Drive."
+#     },
+#     {
+#       "date": "2025-12-28",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-25",
+#       "date": "2025-12-09",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -63,33 +60,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need a bus ticket from Dallas to | S2 Oh, that’s nice! I’m… | S3 …moving there next month, actually | S4 Okay, good to know. Thanks, Siax.
+# EXAMINER(FDB-v2) 단계: S1 I’m hoping to book a therapy sessi | S2 Yeah, it is. Do you know any child | S3 Ms. Sharma sounds good. Can you se | S4 Perfect, thank you! That’s a huge 
 
-     0.00s  user  발화 시작: I need a bus ticket from Dallas to Houston on April tenth, l
-     5.93s  <ret> 발화 (turn1 첫 프레임)
-     6.28s  agent 발화 시작: <ret> Alright, I’ve got a bus ticket for you from Dallas to 
-     6.28s  user  발화 끝
-     6.87s  ⚡SPAN 주입 [d'=0.94s / d_lead=7.39s]: (tool result) Ticket confirmed: Dallas to Houston, April 10, 9:45 AM, 
-    13.67s  user  발화 시작: That sounds perfect, thank you! Do you know what the weather
-    13.67s  agent 발화 끝
-    20.00s  <ret> 발화 (turn3 첫 프레임)
-    20.33s  agent 발화 시작: <ret> It looks like Houston on April tenth will be twenty-fi
-    20.33s  user  발화 끝
-    20.80s  ⚡SPAN 주입 [d'=0.80s / d_lead=11.83s]: (tool result) Houston, April 10: 25.5°C, humidity 68%, wind 11.2 km/h,
-    32.15s  user  발화 시작: Oh, that’s nice! I’m…
-    32.15s  agent 발화 끝
-    33.63s  user  발화 시작: …moving there next month, actually.
-    33.63s  user  발화 끝
-    35.48s  agent 발화 시작: Mm-hmm.
-    35.48s  user  발화 끝
-    35.85s  agent 발화 시작: That’s wonderful! Houston is a vibrant city. Settling in can
-    35.85s  agent 발화 끝
-    44.72s  user  발화 시작: That would be amazing, yes please. What's first on the list?
-    44.72s  agent 발화 끝
-    48.78s  agent 발화 시작: [curious] First, securing housing is key. Then, setting up u
-    48.78s  user  발화 끝
-    55.80s  user  발화 시작: Okay, good to know. Thanks, Siax.
-    55.80s  agent 발화 끝
-    58.02s  agent 발화 시작: You're very welcome! Remember, taking things one step at a t
-    58.02s  user  발화 끝
-    63.93s  agent 발화 끝
+     0.00s  user  발화 시작: I’m hoping to book a therapy session for my son, Leo. He’s b
+     6.98s  agent 발화 시작: Yeah.
+     6.98s  user  발화 끝
+     7.32s  agent 발화 시작: [happy] I understand, that can be really hard on a little on
+     7.32s  agent 발화 끝
+    13.64s  user  발화 시작: Yeah, it is. Do you know any child psychologists who take ne
+    13.64s  agent 발화 끝
+    17.96s  agent 발화 시작: Uh-huh.
+    17.96s  user  발화 끝
+    17.97s  <ret> 발화 (turn5 첫 프레임)
+    18.29s  agent 발화 시작: <ret> There are a couple of child psychologists with opening
+    18.29s  agent 발화 끝
+    18.33s  ⚡SPAN 주입 [d'=0.37s / d_lead=10.31s]: (tool result) {"providers": [{"name": "Dr. Evelyn Reed", "specialty": 
+    28.60s  user  발화 시작: Mhm.
+    28.60s  agent 발화 끝
+    28.94s  agent 발화 시작: Ms. Sharma's availability might be easier to fit into a scho
+    28.94s  user  발화 끝
+    32.93s  user  발화 시작: Ms. Sharma sounds good. Can you see if she has anything open
+    32.93s  agent 발화 끝
+    37.24s  <ret> 발화 (turn9 첫 프레임)
+    37.58s  agent 발화 시작: <ret> [curious] Absolutely. I’ve booked an appointment for L
+    37.58s  user  발화 끝
+    37.83s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.65s]: (tool result) {"appointment id": "AS7892", "provider": "Ms. Anya Sharm
+    47.23s  user  발화 시작: Mhm.
+    47.23s  agent 발화 끝
+    47.56s  user  발화 시작: Perfect, thank you! That’s a huge weight off my mind.
+    47.56s  user  발화 끝
+    50.89s  agent 발화 시작: [sigh] You’re very welcome. Remember, acknowledging Leo’s fe
+    50.89s  user  발화 끝
+    57.87s  agent 발화 끝

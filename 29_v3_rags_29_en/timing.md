@@ -4,69 +4,79 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Quinn",
+#     "name": "Anton",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
+#     "nationality": "Australian",
+#     "gender": "male",
 #     "age_range": "50s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-12",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-02-24",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2026-02-23",
+#       "date": "2026-06-22",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-01-19",
+#       "date": "2026-04-15",
+#       "category": "home",
+#       "text": "User's home address is 845 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-01-05",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-28",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-12",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-09",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What was the name of the third movie in the Fifty Shades ser
-     3.94s  <ret> 발화 (turn1 첫 프레임)
-     4.21s  agent 발화 시작: <ret> Oh, that’s a good question! The third movie is called 
-     4.21s  user  발화 끝
-     4.75s  ⚡SPAN 주입 [d'=0.80s / d_lead=5.83s]: The third film in the Fifty Shades of Grey series is titled Fifty Shad
-    10.04s  agent 발화 끝
+     0.00s  user  발화 시작: Who won the NBA Rookie of the Year award for the 2017-2018 s
+     4.93s  <ret> 발화 (turn2 첫 프레임)
+     5.00s  agent 발화 시작: Mm-hmm.
+     5.00s  user  발화 끝
+     5.38s  agent 발화 시작: <ret> Well, that award actually went to Ben Simmons, of the 
+     5.38s  agent 발화 끝
+     5.77s  ⚡SPAN 주입 [d'=0.84s / d_lead=6.53s]: Ben Simmons of the Philadelphia 76ers was named the NBA Rookie of the 
+    11.91s  agent 발화 끝

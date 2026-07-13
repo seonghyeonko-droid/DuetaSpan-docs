@@ -1,79 +1,88 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 파스이며, 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 부드럽고 사색적인 개인 가이드입니다. 당신은 초고부터 시작하기, 매일 작은 반복, 내면의 비판자 잠재우기 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 키로이며, 가족 및 관계에 대한 사람들을 돕는 차분하고 공감적인 개인 가이드입니다. 당신은 적극적 경청, 친절한 경계 설정, 갈등이 고조되기 전에 진정시키는 방법을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 모시이며, 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "혜별",
+    "name": "가완",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-06-19",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-05-27",
-      "category": "home",
-      "text": "User's home address is 서울 종로구 세종대로 175."
-    },
-    {
-      "date": "2026-02-18",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-01-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-12-11",
+      "date": "2026-06-01",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-04-07",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-21",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-18",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 네트워크 인터페이스 파일 좀 찾아줘. 메인 인터페이스 파일은 ⟨ret@4.45s⟩ 빼고.
-[  4.84s][moshi] 네트워크 ⟦⚡SPAN@5.72s: (tool result) Found 3 files matching "network interface files" excluding "main interfaces file": /etc/network/⟧ 인터페이스 파일 세 개를 찾았어요. /etc/network/interfaces, /lib/network/interfaces, /usr/share/network/interfaces 파일이 있습니다.
-      CALL: {"function": "search_files", "arguments": {"query": "network interface files", "exclude": "main interfaces file"}}
-[ 10.77s][user ] 아, 그중에 /etc/network/interfaces 파일 내용을 보여줘. ⟨ret@13.75s⟩
-[ 14.00s][moshi] ⟦⚡SPAN@14.05s: (tool result) Contents of /etc/network/interfaces: auto lo\niface lo inet loopback\nauto eth0\niface eth0 inet⟧ /etc/network/interfaces 파일 내용은 이렇습니다. auto lo, iface lo inet loopback, auto 이 티 에이치 공, iface 이 티 에이치 공 inet dhcp라고 적혀 있어요.
-      CALL: {"function": "read_file", "arguments": {"file_path": "/etc/network/interfaces"}}
-[ 26.91s][user ] 이 티 에이치 공 설정이 dhcp로 되어 있네.
-[ 31.22s][moshi] 이 티 에이치 공 설정이 dhcp로 되어 있는 걸 확인하셨군요. 혹시 다른 네트워크 인터페이스 파일도 확인해 보시겠어요?
-[ 40.37s][user ] «backchannel» 응.
-[ 40.91s][user ] 잠깐만, 그건 됐어. 이번 주 토요일에 서울에서 열리는 영화제 티켓 예매해 줘.
-[ 47.37s][moshi] 이번 주 토요일 서울에서 열리는 영화제 티켓 예매를 도와드릴게요. 어떤 영화제를 찾으시는지 말씀해 주시겠어요?
-[ 54.90s][user ] «backchannel» 응.
-[ 55.44s][user ] 서울독립영화제. ⟨ret@55.86s⟩
-[ 55.98s][moshi] ⟦⚡SPAN@56.60s: (tool result) Seoul Independent Film Festival, July 11, 2026, 2:00 PM - 10:00 PM, CGV Apgujeong, tickets range⟧ 서울독립영화제는 칠월 십일일 오후 두시부터 열시까지 씨 지 브이 압구정에서 열리고요, 티켓 가격은 일만 오천 원에서 삼만 원 사이입니다.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"city": "Seoul", "date": "2026-07-11", "event_type": "film festival", "event_name": "Seoul Independent Film Festival"}}
-[ 66.21s][user ] …혹시 그 영화제에 배우 김민희 씨도 오나요?
-[ 69.98s][moshi] «interrupted» 김민희 배우가 영화제에 참석하는지는 아직 공식적으로 발표되지 않았어요. 영화제 웹사이트나 관련 기사를 확인해 보시는 게 좋을 것 같아요—
-[ 79.67s][user ] 아, 알았어. 그럼 그냥 티켓 두…
-[ 82.89s][user ] …장 예매해 줘. 가장 싼 ⟨ret@85.70s⟩ 걸로.
-[ 86.12s][moshi] ⟦⚡SPAN@86.58s: (tool result) 2 tickets to Seoul Independent Film Festival, July 11, 2026, CGV Apgujeong, ₩30,000 total, confi⟧ 서울독립영화제 티켓 두 장, 칠월 십일일 씨 지 브이 압구정, 총 삼만 원으로 예매 완료되었습니다. 확인 아이디는 칠 에이 구 엑스 이 엘입니다.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Seoul Independent Film Festival", "city": "Seoul", "date": "2026-07-11", "quantity": 2, "price_tier": "lowest"}}
+[  0.00s][user ] 오늘 저녁에 영화 볼 만한 거 ⟨ret@3.15s⟩ 있어?
+[  3.55s][moshi] 지금 ⟦⚡SPAN@4.43s: {"function": "Movies_1_FindMovies", "arguments": {"location": "Busan", "date": "2026-07-10"}}⟧ 상영 중인 영화는…
+[  5.58s][user ] …혹시 로맨틱 코미디는 없어? ⟨ret@7.36s⟩
+[  7.61s][moshi] ⟦⚡SPAN@7.66s: {"function": "Movies_1_FindMovies", "arguments": {"location": "Busan", "date": "2026-07-10", "genre": "romanti⟧ 로맨틱 코미디를 원하시는군요. '달콤한 거짓말'과 '사랑은 타이밍'이 있네요.
+[ 11.67s][moshi] '달콤한 거짓말'은 평점이 조금 더 높아요.
+[ 14.71s][user ] «backchannel» 응.
+[ 15.22s][user ] '달콤한 거짓말' 몇 시에 ⟨ret@17.41s⟩ 상영해?
+[ 17.76s][moshi] ⟦⚡SPAN@18.41s: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "달콤한 거짓말", "location": "Busan", "date": "2026⟧ '달콤한 거짓말'은 오늘 저녁 일곱시와 아홉시 삼십분에 상영합니다.
+[ 21.82s][moshi] 혹시 예매를 도와드릴까요?

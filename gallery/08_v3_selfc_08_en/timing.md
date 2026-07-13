@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Leo",
+#     "name": "Sam",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -12,129 +12,115 @@
 #       "currency": "GBP (£)"
 #     },
 #     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-26",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-05-17",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-02-19",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-12-04",
+#       "date": "2026-05-04",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "category": "home",
+#       "text": "User's home address is 745 Elm Street."
+#     },
+#     {
+#       "date": "2026-03-25",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-12",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-07",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm looking for some fun things to | S2 Yes! That's it! KidZania… uh, actu | S3 Okay, good to know. Is there parki | S4 Oh, right! Sorry. Seoul. I live in
+# EXAMINER(FDB-v2) 단계: S1 I need to delete entry one hundred | S2 Well, I keep forgetting to drink e | S3 Reminders sound good. And I also w | S4 Igidae Coastal Walk sounds nice. W
 
-     0.00s  user  발화 시작: I'm looking for some fun things to do with my six-year-old t
-     4.64s  agent 발화 시작: Okay.
-     4.64s  user  발화 끝
-     4.99s  agent 발화 시작: That sounds lovely! Spending quality time with little ones i
-     4.99s  agent 발화 끝
-     9.27s  user  발화 시작: Yeah.
-     9.27s  agent 발화 끝
-     9.63s  user  발화 시작: We were thinking of maybe going to a park, but it's supposed
-     9.63s  user  발화 끝
-    14.77s  <ret> 발화 (turn5 첫 프레임)
-    14.98s  agent 발화 시작: <ret> It looks like you’re right about the rain on Saturday,
-    14.98s  user  발화 끝
-    16.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.35s]: (tool result) The weather forecast for Seoul on Saturday, July 11, 202
-    20.33s  user  발화 시작: Oh, that’s a bummer… maybe an indoor playground then?
-    20.33s  agent 발화 끝
-    23.54s  agent 발화 시작: That’s a great idea! Indoor playgrounds are perfect for rain
-    23.54s  user  발화 끝
-    27.46s  user  발화 시작: I thought there was one near… near COEX, but I can’t remembe
-    27.46s  agent 발화 끝
-    32.29s  <ret> 발화 (turn9 첫 프레임)
-    32.45s  agent 발화 시작: <ret> Are you thinking of KidZania Seoul? It’s in COEX Mall.
-    32.45s  user  발화 끝
-    32.59s  ⚡SPAN 주입 [d'=0.31s / d_lead=3.57s]: KidZania Seoul is an indoor family entertainment center located in COE
-    36.02s  user  발화 시작: Yes! That's it! KidZania… uh, actually, is there something e
-    36.02s  agent 발화 끝
-    39.94s  agent 발화 시작: COEX also has an aquarium and a Starfield library.
-    39.94s  user  발화 끝
-    43.15s  user  발화 시작: Yeah.
-    43.15s  agent 발화 끝
-    43.51s  user  발화 시작: The aquarium sounds good. What are the hours?
-    43.51s  user  발화 끝
-    46.35s  <ret> 발화 (turn14 첫 프레임)
-    46.36s  agent 발화 시작: <ret> It’s open daily from 10:00 AM to 10:00 PM, with last e
-    46.36s  user  발화 끝
-    46.91s  ⚡SPAN 주입 [d'=0.56s / d_lead=5.35s]: (tool result) COEX Aquarium is open daily from 10:00 AM to 10:00 PM, w
-    51.71s  user  발화 시작: Uh-huh.
-    51.71s  agent 발화 끝
-    52.07s  user  발화 시작: That’s perfect. And how much does it cost?
-    52.07s  user  발화 끝
-    54.57s  <ret> 발화 (turn17 첫 프레임)
-    54.87s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.92s]: (tool result) COEX Aquarium ticket prices are 28,000 won for adults an
-    54.92s  agent 발화 시작: <ret> Tickets are 28,000 won for adults and 25,000 won for c
-    54.92s  user  발화 끝
-    58.84s  user  발화 시작: Mhm.
-    58.84s  agent 발화 끝
-    59.20s  user  발화 시작: Okay, good to know. Is there parking available?
-    59.20s  user  발화 끝
-    61.94s  <ret> 발화 (turn21 첫 프레임)
-    62.05s  agent 발화 시작: Yeah.
-    62.05s  user  발화 끝
-    62.41s  agent 발화 시작: <ret> Yes, COEX has plenty of parking, starting at 3,000 won
-    62.41s  agent 발화 끝
-    62.70s  ⚡SPAN 주입 [d'=0.93s / d_lead=4.28s]: (tool result) COEX has ample parking available, with rates varying dep
-    66.69s  user  발화 시작: Right.
-    66.69s  agent 발화 끝
-    67.04s  user  발화 시작: That sounds manageable. I think we’ll plan to go there then.
-    67.04s  user  발화 끝
-    70.97s  agent 발화 시작: Right.
-    70.97s  user  발화 끝
-    71.32s  agent 발화 시작: Wonderful! A trip to the aquarium sounds like a delightful w
-    71.32s  agent 발화 끝
-    76.67s  user  발화 시작: Right.
-    76.67s  agent 발화 끝
-    77.03s  user  발화 시작: Actually, hold on – I meant to say, is there a good library 
-    77.03s  user  발화 끝
-    84.87s  agent 발화 시작: [laugh] Of course! Where is home for you? I need your city t
-    84.87s  user  발화 끝
-    90.58s  user  발화 시작: Oh, right! Sorry. Seoul. I live in Gangnam.
-    90.58s  agent 발화 끝
-    93.43s  agent 발화 시작: Yeah.
-    93.43s  user  발화 끝
-    93.46s  <ret> 발화 (turn31 첫 프레임)
-    93.73s  ⚡SPAN 주입 [d'=0.45s / d_lead=3.21s]: (tool result) Gangnam Library is a popular choice, offering a wide sel
-    93.79s  agent 발화 시작: <ret> Gangnam Library is very popular, located at 73 Bongeun
-    93.79s  agent 발화 끝
-    97.00s  user  발화 시작: Oh, I’ve heard of that one. Is it easy to get to by subway?
-    97.00s  agent 발화 끝
-   101.58s  <ret> 발화 (turn33 첫 프레임)
-   101.99s  agent 발화 시작: <ret> You can reach it via Gangnam Station, Line 2, Exit 12,
-   101.99s  user  발화 끝
-   102.27s  ⚡SPAN 주입 [d'=0.69s / d_lead=6.42s]: (tool result) Gangnam Library is easily accessible via Gangnam Station
-   108.41s  user  발화 시작: Perfect! That makes things much easier. Thanks, Araeia.
-   108.41s  agent 발화 끝
-   111.26s  agent 발화 시작: You’re very welcome! I’m happy to help. Enjoy your day with 
-   111.26s  user  발화 끝
-   116.26s  agent 발화 끝
+     0.00s  user  발화 시작: I need to delete entry one hundred one.
+     2.47s  <ret> 발화 (turn1 첫 프레임)
+     2.85s  agent 발화 시작: <ret> Okay, entry one hundred one is all gone.
+     2.85s  user  발화 끝
+     2.98s  ⚡SPAN 주입 [d'=0.51s / d_lead=2.85s]: (tool result) Entry 101 successfully deleted.
+     5.69s  user  발화 시작: Yes, actually. I’m trying to get…
+     5.69s  agent 발화 끝
+     7.83s  user  발화 시작: …a better handle on my diet.
+     7.83s  user  발화 끝
+     9.97s  agent 발화 시작: That’s great to hear! A balanced diet is key to feeling your
+     9.97s  user  발화 끝
+    17.08s  user  발화 시작: Well, I keep forgetting to drink enough water.
+    17.08s  agent 발화 끝
+    19.93s  agent 발화 시작: [curious] Staying hydrated is so important, especially durin
+    19.93s  user  발화 끝
+    26.69s  user  발화 시작: I think… eight glasses? But sometimes I only get through fou
+    26.69s  agent 발화 끝
+    30.61s  user  발화 시작: …Do you think sparkling water counts?
+    30.61s  user  발화 끝
+    32.74s  agent 발화 시작: Sparkling water counts towards your daily intake, as long as
+    32.74s  user  발화 끝
+    38.08s  agent 발화 시작: Eight glasses is a good goal, around two liters. We could se
+    38.08s  agent 발화 끝
+    43.78s  user  발화 시작: Uh-huh.
+    43.78s  agent 발화 끝
+    44.13s  agent 발화 시작: We can also explore some delicious ways to infuse water with
+    44.13s  user  발화 끝
+    49.47s  user  발화 시작: Mm-hmm.
+    49.47s  agent 발화 끝
+    49.83s  user  발화 시작: Reminders sound good. And I also want to walk more.
+    49.83s  user  발화 끝
+    53.39s  agent 발화 시작: Yeah, yeah.
+    53.39s  user  발화 끝
+    53.67s  <ret> 발화 (turn16 첫 프레임)
+    54.10s  agent 발화 시작: <ret> A gentle routine is much more sustainable than a drast
+    54.10s  agent 발화 끝
+    54.39s  ⚡SPAN 주입 [d'=1.03s / d_lead=8.54s]: Gentle exercise, like walking, can improve mood and energy levels.
+    62.64s  user  발화 시작: Yeah.
+    62.64s  agent 발화 끝
+    62.99s  user  발화 시작: Fifteen minutes sounds doable. What about finding a walking 
+    62.99s  user  발화 끝
+    66.11s  <ret> 발화 (turn19 첫 프레임)
+    66.55s  agent 발화 시작: <ret> There's a lovely 3.2 kilometer walk to Haeundae Beach,
+    66.55s  user  발화 끝
+    66.63s  ⚡SPAN 주입 [d'=0.52s / d_lead=5.69s]: (tool result) Walking directions from Busan to Haeundae Beach: 3.2 km,
+    72.25s  user  발화 시작: That’s a bit long. Something closer?
+    72.25s  agent 발화 끝
+    73.92s  <ret> 발화 (turn21 첫 프레임)
+    74.38s  agent 발화 시작: <ret> [happy] There are several parks nearby! Taejongdae Par
+    74.38s  user  발화 끝
+    74.63s  ⚡SPAN 주입 [d'=0.71s / d_lead=6.05s]: (tool result) Several parks are located within 1km of Busan, including
+    80.43s  user  발화 시작: Yeah.
+    80.43s  agent 발화 끝
+    80.79s  user  발화 시작: Igidae Coastal Walk sounds nice. What’s the weather like the
+    80.79s  user  발화 끝
+    84.22s  <ret> 발화 (turn24 첫 프레임)
+    84.52s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.47s]: (tool result) Current weather at Igidae Coastal Walk, Busan: 24.5°C, h
+    84.70s  agent 발화 시작: <ret> It’s currently 24.5 degrees Celsius at Igidae Coastal 
+    84.70s  user  발화 끝
+    92.18s  user  발화 시작: Perfect! I think I'll go for a walk there now.
+    92.18s  agent 발화 끝
+    95.74s  agent 발화 시작: That sounds wonderful! Remember to bring some water, and enj
+    95.74s  user  발화 끝
+   100.01s  agent 발화 끝

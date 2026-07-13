@@ -1,69 +1,65 @@
 v3_abs_22_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 호기심 많고 공감적인 웰니스 코치 주이아입니다. 정착 체크리스트 설명, 지역 필수품 찾기, 새로운 일상에 적응하기 등을 할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. <system>
+SYSTEM: <system> 당신은 노란이며, 부드럽고 사색적인 웰니스 코치로서 사람들의 학습 및 동기 부여를 돕습니다. 간격 반복, 포모도로 기법, 작업을 작은 블록으로 나누는 것에 대해 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "보재",
+    "name": "도찬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 30s",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2026-02-06",
+      "date": "2026-05-21",
       "category": "home",
-      "text": "User's home address is 대구 중구 동인동 88-1."
+      "text": "User's home address is 서울 마포구 성산동 45-6."
     },
     {
-      "date": "2026-01-22",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
+      "date": "2026-04-25",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-12-07",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-12-06",
+      "date": "2026-04-19",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-28",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-06",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 꽃이 왜 극지방으로 안 퍼졌는지 아세요?
-[  3.27s][moshi] 아, 그건 아직 정확히 밝혀지지 않은 부분이에요.
-[  6.54s][user ] «backchannel» 어어.
-[  7.01s][user ] 그럼, 꽃이 추운 곳에서…
-[  8.88s][user ] …자라는 데 뭐가 문제인 건가요? ⟨ret@11.11s⟩
-[ 11.21s][moshi] «interrupted» ⟦⚡SPAN@11.76s: Angiosperms require specific environmental conditions, including adequate temperatures and sufficient sunlight⟧ 꽃은 번식하고 잘 자라려면 적절한 온도와 햇빛 같은 환경이 필요한데—
-[ 15.88s][user ] «interrupts_prev» …근데, 그럼 다른 식물들은 극지방에 잘 자라잖아요?
-[ 19.15s][moshi] 네, 맞아요. 다른 식물들은 꽃이 피는 방식이나 생존 전략이 달라서 추위에 더 잘 적응할 수 있는 거죠.
-[ 27.09s][moshi] 극지방 식물들은 꽃을 피우지 않거나, 꽃이 피더라도 아주 빨리 씨앗을 맺는 방식으로 추위를 극복하는 경우가 많아요.
-[ 34.57s][user ] «backchannel» 응.
-[ 35.04s][user ] 아, 그렇군요. 꽃 피우는 방식 때문에 그런 거였군요.
+[  0.00s][user ] 그 문제에 대해 너무 중요해서 중립을 지킨 단체는 ⟨ret@3.86s⟩ 어디였지?
+[  4.14s][moshi] 그 ⟦⚡SPAN@4.95s: (no information found)⟧ 부분에 대한 정보는 찾을 수 없었어요. 알려진 바가 없네요.
+[  8.74s][user ] «backchannel» 어.
+[  9.20s][user ] 아니, 괜찮아. 그냥 궁금했어. 혹시 오늘 날씨 어때? ⟨ret@12.87s⟩
+[ 12.88s][moshi] «backchannel» 네.
+[ 13.34s][moshi] 오늘 ⟦⚡SPAN@14.13s: (tool result) {"temperature": "26.5°C", "humidity": "68%", "wind speed": "4.2 km/h", "condition": "clear sky"}⟧ 날씨는 이십육 점 오도이고, 하늘은 맑아요. 습도는 육십팔퍼센트, 바람은 시속 사 점 이킬로미터로 불고 있습니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}

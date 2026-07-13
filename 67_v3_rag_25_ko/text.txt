@@ -1,85 +1,99 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 노라로, 부드럽고 사색적인 상담가로서 사람들의 일상적인 결정과 감정을 돕습니다. 장단점 비교, 가치관에 따른 선택, 중요한 결정에 대해 숙고하는 것 등을 설명할 수 있습니다. 또한 당신은 moshi로, 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 개인 가이드 미르입니다. 초고부터 시작하기, 매일 작은 반복, 내면의 비판적인 목소리 잠재우기 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "세찬",
+    "name": "유현",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "late 30s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2026-04-21",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-02-09",
-      "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
-    },
-    {
-      "date": "2025-12-12",
+      "date": "2026-05-21",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2026-05-16",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-02-05",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+    },
+    {
+      "date": "2026-02-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-01-05",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-10",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-27",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-12-13",
-      "title": "Researching a used car",
+      "date": "2026-04-23",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 이천십년 얼터너티브 프레스 잡지 표지 모델에 더 캡 말고 다른 밴드도 있었어요? ⟨ret@5.80s⟩
-[  5.93s][moshi] 이천십년 ⟦⚡SPAN@6.78s: Hey Monday was featured on the cover of Alternative Press magazine alongside The Cab and Never Shout Never for⟧ 얼터너티브 프레스 잡지 표지에는 더 캡과 함께 헤이 먼데이, 네버 샤우트 네버가 실려 있었어요.
-[ 12.77s][user ] «backchannel» 예.
-[ 13.23s][user ] 아, 헤이 먼데이도 있었군요. 좀 오래된 밴드인 것 같아요.
-[ 17.33s][moshi] 네, 그렇죠. 시간이 참 빠르네요.
-[ 19.61s][user ] 요즘 음악은 어떤 걸 듣고 있어요?
-[ 22.35s][moshi] 요즘은 주로 잔잔한 인디 음악을 듣는 편이에요. 마음이 편안해지거든요.
-[ 26.45s][user ] 인디 음악… 저도 가끔 듣는데, 추천해 줄 만한 밴드 있어요? ⟨ret@30.87s⟩
-[ 31.01s][moshi] 혹시 ⟦⚡SPAN@31.69s: The Japanese House is an English indie pop act headed by Amber Bain, who has released several EPs and an album⟧ 더 재패니즈 하우스를 아세요? 앰버 베인이 이끄는 영국 인디 팝 밴드인데, 이 피와 앨범을 몇 장 냈어요.
-[ 39.22s][user ] «backchannel» 네.
-[ 39.68s][moshi] 앨범 제목은 '소 유 인 어 드림'이라고 하더라고요.
-[ 43.33s][user ] «backchannel» 네.
-[ 43.78s][user ] 오, 앨범 제목이 예쁘네요. ⟨ret@45.69s⟩ 들어봐야겠어요.
-[ 46.06s][moshi] 지금 ⟦⚡SPAN@46.92s: (tool result) Weather in Seoul: 23.0°C, humidity 74%, wind 5.5 km/h.⟧ 서울 날씨는 섭씨 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터 정도예요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 51.99s][user ] 서울 날씨 알려줘서 고마워요. 이번 주말에 여행 갈 건데, 날씨가 괜찮을까요?
-[ 57.01s][moshi] «backchannel» 네.
-[ 57.47s][moshi] 이번 주말은 대체로 맑을 것으로 예상돼요. 여행하기 좋겠네요.
-[ 61.12s][user ] «backchannel» 그렇죠.
-[ 61.57s][user ] 다행이다. 혹시 여행 전에 준비해야 할 게 있을까요?
-[ 65.22s][moshi] 여행 전에 짐은 다 꾸리셨나요? 그리고 혹시 필요한 약은 챙기셨는지 확인해 보세요.
-[ 70.69s][user ] «backchannel» 예.
-[ 71.15s][user ] 아, 약은 깜빡했네요. 챙겨야겠어요. 감사합니다, 노라 씨.
-[ 74.34s][moshi] 천만에요. 언제든지 편하게 말씀해 주세요. 여행 잘 다녀오세요.
+[  0.00s][user ] 창욱진 씨에 대해 좀 알려주시겠어요?
+[  2.91s][moshi] 창욱진 님에 대해 궁금하시군요. 어떤 점이 가장 알고 싶으세요?
+[  8.14s][user ] 그분이 어떤 시대에 태어났는지 ⟨ret@10.44s⟩ 궁금해요.
+[ 11.05s][moshi] 창욱진 ⟦⚡SPAN@11.94s: Chang Ucchin was born in Korea during a time that ended with the conclusion of World War II.⟧ 님은 제이차 세계 대전이 끝나는 시기에 한국에서 태어나셨습니다.
+[ 16.28s][user ] «backchannel» 그렇죠.
+[ 16.86s][user ] 아, 그렇군요.
+[ 18.02s][moshi] 창욱진 님은 한국화의 중요한 인물로 평가받고 계세요.
+[ 22.09s][user ] «backchannel» 음.
+[ 22.67s][user ] 세계 대전이 언제 끝났죠? ⟨ret@24.85s⟩
+[ 25.00s][moshi] 지금은 ⟦⚡SPAN@25.93s: (tool result) It is Friday, July 10, 2026 at 2:41 PM in Asia/Seoul right now.⟧ 이천이십육년 칠월 십일 금요일 오후 두시 사십일분입니다. 제이차 세계 대전은 천구백사십오년에 끝났습니다.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 32.56s][user ] 천구백사십오년이군요. 그럼 창욱진 님은 그 즈음에 태어나셨다는 말씀이시네요.
+[ 37.21s][moshi] [happy] 네, 맞습니다. 창욱진 님은 천구백십팔년에 태어나셨고, 천구백칠십팔년에 세상을 떠나셨어요.
+[ 43.02s][user ] 아, 그럼 한국 전쟁도 겪으셨겠네요.
+[ 45.93s][moshi] 창욱진 님은 한국 전쟁 시기에 작품 활동을 하셨습니다. 전쟁의 아픔을 담은 그림도 많으시고요.
+[ 53.49s][user ] «backchannel» 그렇죠.
+[ 54.07s][user ] 그림을 좀 보여주실 수 있나요? ⟨ret@56.90s⟩
+[ 56.98s][moshi] ⟦⚡SPAN@57.51s: (tool result) '창욱진 화백의 삶과 예술' - YouTube, youtube.com, 12:34⟧ 창욱진 화백의 삶과 예술에 대한 유튜브 영상이 있습니다. 길이는 십이분 삼십사초입니다.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"query": "창욱진 그림"}}
+[ 63.37s][user ] 좋아요. 한번 봐야겠네요.

@@ -4,111 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Avery",
+#     "name": "Elena",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
+#       "date": "2026-06-27",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-08",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-05-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2026-02-28",
+#       "date": "2026-02-11",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-12-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-02",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-04",
+#       "date": "2026-05-01",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-13",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-19",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Elaen, nice to meet you too. I’ | S2 Well, I was thinking about using m | S3 …Actually, before we do that, do y | S4 Okay, that’s helpful. Maybe it's w
+# EXAMINER(FDB-v2) 단계: S1 Hello, Arion. I'm feeling quite st | S2 Oh, that sounds nice actually. | S3 …Actually, before we start that, d | S4 Yes, that's true. Are there any pe
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Elaen. It’s lovely to connect with you.
-     3.71s  user  발화 시작: Hi Elaen, nice to meet you too. I’ve been feeling really stu
-     3.71s  agent 발화 끝
-     9.27s  agent 발화 시작: Yeah.
-     9.27s  user  발화 끝
-     9.64s  agent 발화 시작: That’s completely understandable, Avery. Feeling stuck is a 
-     9.64s  agent 발화 끝
-    16.68s  user  발화 시작: I think it's a lack of challenge, honestly. I'm a high-schoo
-    16.68s  agent 발화 끝
-    21.06s  <ret> 발화 (turn5 첫 프레임)
-    21.13s  agent 발화 시작: <ret> It sounds like you're ready for a shift. As I recall, 
-    21.13s  user  발화 끝
-    21.59s  ⚡SPAN 주입 [d'=0.52s / d_lead=2.97s]: [2026-05-28] User works as a high-school teacher.
-    31.51s  user  발화 시작: Yeah.
-    31.51s  agent 발화 끝
-    31.88s  agent 발화 시작: [happy] That's great that you've identified that! What kind 
-    31.88s  user  발화 끝
-    42.26s  user  발화 시작: Yeah.
-    42.26s  agent 발화 끝
-    42.63s  user  발화 시작: Well, I was thinking about using my skills outside of teachi
-    42.63s  user  발화 끝
-    49.30s  agent 발화 시작: Those are excellent transferable skills, Avery. Many roles v
-    49.30s  user  발화 끝
-    55.98s  user  발화 시작: …Actually, before we do that, do you think my experience wou
-    55.98s  agent 발화 끝
-    61.12s  <ret> 발화 (turn12 첫 프레임)
-    61.54s  agent 발화 시작: <ret> That’s a very insightful question! Corporate training 
-    61.54s  user  발화 끝
-    61.77s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.78s]: Many educators successfully transition into corporate training roles, 
-    69.32s  agent 발화 시작: Many educators successfully transition into corporate traini
-    69.32s  agent 발화 끝
-    74.88s  user  발화 시작: That’s good to hear. What's the typical salary range for tha
-    74.88s  agent 발화 끝
-    80.72s  <ret> 발화 (turn16 첫 프레임)
-    80.81s  agent 발화 시작: Mm-hmm.
-    80.81s  user  발화 끝
-    81.02s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.38s]: (tool result) The average corporate trainer salary in Toronto, Ontario
-    81.18s  agent 발화 시작: <ret> The average salary for a corporate trainer in Toronto 
-    81.18s  agent 발화 끝
-    91.56s  user  발화 시작: Okay, that’s helpful. Maybe it's worth exploring further. Th
-    91.56s  agent 발화 끝
-    95.27s  agent 발화 시작: [curious] You're very welcome, Avery. It sounds like you’re 
-    95.27s  user  발화 끝
-   105.65s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Elena, I'm Arion. It's lovely to meet you. I'm a counselo
+     7.37s  user  발화 시작: Yeah, yeah.
+     7.37s  agent 발화 끝
+     8.07s  user  발화 시작: Hello, Arion. I'm feeling quite stressed about finding a new
+     8.07s  user  발화 끝
+    11.92s  agent 발화 시작: Right.
+    11.92s  user  발화 끝
+    12.28s  agent 발화 시작: That sounds challenging, Elena. Finding the right place can 
+    12.28s  agent 발화 끝
+    20.69s  user  발화 시작: Right.
+    20.69s  agent 발화 끝
+    21.04s  user  발화 시작: Oh, that sounds nice actually.
+    21.04s  user  발화 끝
+    22.80s  agent 발화 시작: [happy] Wonderful. Let's try a simple breathing technique. C
+    22.80s  user  발화 끝
+    29.81s  user  발화 시작: …Actually, before we start that, do you remember what I was 
+    29.81s  agent 발화 끝
+    37.88s  agent 발화 시작: Yeah.
+    37.88s  user  발화 끝
+    38.01s  <ret> 발화 (turn10 첫 프레임)
+    38.23s  agent 발화 시작: <ret> You were looking for a pet-friendly, two-bedroom apart
+    38.23s  agent 발화 끝
+    38.31s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.26s]: [2026-04-13] Past chat — Apartment hunting downtown: wanted a pet-frie
+    43.49s  user  발화 시작: Okay.
+    43.49s  agent 발화 끝
+    43.84s  agent 발화 시작: Remembering those details can help focus your search. It's g
+    43.84s  user  발화 끝
+    50.50s  user  발화 시작: Yes, that's true. Are there any pet-friendly buildings downt
+    50.50s  agent 발화 끝
+    55.03s  <ret> 발화 (turn14 첫 프레임)
+    55.06s  agent 발화 시작: <ret> I found three listings: Le Marais Residences, Saint-Ge
+    55.06s  user  발화 끝
+    55.35s  ⚡SPAN 주입 [d'=1.01s / d_lead=6.31s]: (tool result) Found 3 listings: "Le Marais Residences", "Saint-Germain
+    61.38s  agent 발화 시작: [curious] Le Marais Residences seems quite popular. Would yo
+    61.38s  agent 발화 끝
+    69.44s  agent 발화 끝

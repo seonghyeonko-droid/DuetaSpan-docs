@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "예안",
+#     "name": "다은",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,97 +12,127 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-06-09",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-06-05",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-05-10",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-01-31",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
+#       "date": "2026-01-16",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-01-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 가로 씨. 요즘 친구 때문에 좀 힘든 일이 있었어 | S2 아, 그렇군요. 그럼 얼마나 자주 연락해야 할까요? | S3 음… 그럼 친구가 저에게 먼저 연락하면 어떻게 해야 할까요? | S4 그럼 이번 주 토요일에 친구에게 같이 영화 보러 가자고 해볼까
+# EXAMINER(FDB-v2) 단계: S1 요즘 음악 뭐 듣고 있어요? | S2 그 팀 음악 스타일이 synth-pop이랑 관련이 있어요? | S3 …혹시 Roland Clark의 다른 노래도 추천해 줄 수 있 | S4 아뇨, 그냥 궁금해서요.
 
-     0.00s  user  발화 시작: 안녕하세요, 가로 씨. 요즘 친구 때문에 좀 힘든 일이 있었어요.
-     4.38s  agent 발화 시작: 안녕하세요. 어떤 일 때문에 힘드신가요? 편하게 말씀해 주세요.
-     4.38s  user  발화 끝
-     7.88s  user  발화 시작: 음… 제가 먼저 연락을 잘 못 하거든요. 친구가 서운해하는 것 같아서요.
-     7.88s  agent 발화 끝
-    12.69s  agent 발화 시작: 먼저 연락하는 게 어려우시군요. 친구 관계에서 중요한 부분인데, 어떻게 하면 좋을지 함께 생각해 봐요.
-    12.69s  user  발화 끝
-    18.82s  user  발화 시작: 혹시, 제가 먼저 연락하는 게 더 중요할까요?
-    18.82s  agent 발화 끝
-    21.80s  <ret> 발화 (turn5 첫 프레임)
-    21.89s  agent 발화 시작: <ret> 친구 관계를 잘 유지하려면, 가끔씩이라도 먼저 연락하는 게 중요하다고 해요. 꾸준히 연락하면 신뢰
-    21.89s  user  발화 끝
-    22.91s  ⚡SPAN 주입 [d'=1.11s / d_lead=7.44s]: Maintaining regular contact, even with simple check-ins, demonstrates 
-    29.33s  user  발화 시작: 아, 그렇군요. 그럼 얼마나 자주 연락해야 할까요?
-    29.33s  agent 발화 끝
-    32.39s  agent 발화 시작: 너무 부담스럽지 않게, 일주일에 한두 번 정도는 어떨까요?
-    32.39s  user  발화 끝
-    35.89s  user  발화 시작: 일주일에 한두 번이면 괜찮을 것 같아요. 그런데 무슨 이야기를 해야 할지 고민이에요.
-    35.89s  agent 발화 끝
-    41.14s  agent 발화 시작: 네네.
-    41.14s  user  발화 끝
-    41.58s  agent 발화 시작: 특별한 일이 아니어도 괜찮아요. “요즘 어떻게 지내?” 같은 간단한 안부 인사도 좋고요.
-    41.58s  agent 발화 끝
-    46.83s  user  발화 시작: 음… 그럼 친구가 저에게 먼저 연락하면 어떻게 해야 할까요?
-    46.83s  agent 발화 끝
-    50.77s  agent 발화 시작: 맞아요.
-    50.77s  user  발화 끝
-    51.21s  agent 발화 시작: 친구가 먼저 연락해 준다면, 반갑게 답장하고 대화를 이어가면 돼요.
-    51.21s  agent 발화 끝
-    55.15s  user  발화 시작: 혹시 제가 친구에게 서운했던 점이 있다면 어떻게 말해야 할까요?
-    55.15s  agent 발화 끝
-    59.09s  agent 발화 시작: 솔직하게 말하되, 비난하는 말투는 피하는 게 좋아요. “네가 이렇게 해줬으면 좋겠어”처럼 자신의 감정을 표현
-    59.09s  user  발화 끝
-    66.09s  user  발화 시작: 맞아요.
-    66.09s  agent 발화 끝
-    66.53s  user  발화 시작: [sigh] 친구가 요즘 저를 잘 안 만나주는 것 같아요.
-    66.53s  user  발화 끝
-    70.35s  <ret> 발화 (turn18 첫 프레임)
-    70.47s  agent 발화 시작: <ret> 친구분과의 관계 때문에 걱정이 많으시군요. 함께 시간을 보내는 게 친구 관계 만족도에 영향을 준다
-    70.47s  user  발화 끝
-    71.73s  ⚡SPAN 주입 [d'=1.38s / d_lead=2.19s]: Studies show that individuals who actively participate in shared activ
-    80.98s  user  발화 시작: 네.
-    80.98s  agent 발화 끝
-    81.41s  user  발화 시작: 그럼 이번 주 토요일에 친구에게 같이 영화 보러 가자고 해볼까요?
-    81.41s  user  발화 끝
-    85.73s  <ret> 발화 (turn21 첫 프레임)
-    85.79s  agent 발화 시작: <ret> 이번 주말에 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', '가필드 무비'가 상영 중이
-    85.79s  user  발화 끝
-    87.12s  ⚡SPAN 주입 [d'=1.39s / d_lead=6.13s]: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The G
-    91.92s  user  발화 시작: '인사이드 아웃 이'가 재미있을까요?
-    91.92s  agent 발화 끝
-    93.67s  agent 발화 시작: 네, 평점이 꽤 높게 나오고 있어요. 많은 분들이 재미있다고 하네요.
-    93.67s  user  발화 끝
-    98.05s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 음악 뭐 듣고 있어요?
+     2.42s  agent 발화 시작: 저는 다양한 장르를 즐겨 듣지만, 요즘은 synth-pop 음악에 푹 빠져 있어요.
+     2.42s  user  발화 끝
+     7.74s  user  발화 시작: 어.
+     7.74s  agent 발화 끝
+     8.22s  user  발화 시작: synth-pop이요? 그게 뭔데요?
+     8.22s  user  발화 끝
+     9.18s  <ret> 발화 (turn4 첫 프레임)
+     9.67s  agent 발화 시작: <ret> synth-pop은 천구백칠십년대 후반 영국에서 새 물결 음악의 하위 장르로 발전했어요.
+     9.67s  user  발화 끝
+    10.20s  ⚡SPAN 주입 [d'=1.02s / d_lead=4.83s]: Synth-pop is a subgenre of new wave music that developed in the United
+    14.50s  user  발화 시작: 아, 그렇군요.
+    14.50s  agent 발화 끝
+    15.47s  agent 발화 시작: synth-pop은 전자 악기를 많이 사용해서 독특한 분위기를 내는 음악이에요.
+    15.47s  user  발화 끝
+    19.82s  user  발화 시작: 혹시 Real Damage라는 팀 알아요?
+    19.82s  agent 발화 끝
+    21.78s  <ret> 발화 (turn8 첫 프레임)
+    22.18s  ⚡SPAN 주입 [d'=1.05s / d_lead=6.77s]: Real Damage was a British R&B group, formed in 1991, known for their 1
+    22.24s  agent 발화 시작: <ret> Real Damage는 천구백구십사년 영국 차트 일위를 차지한 “Feel My Pulse”로 유명
+    22.24s  user  발화 끝
+    29.01s  user  발화 시작: 응응.
+    29.01s  agent 발화 끝
+    29.49s  user  발화 시작: 그 팀 음악 스타일이 synth-pop이랑 관련이 있어요?
+    29.49s  user  발화 끝
+    32.54s  <ret> 발화 (turn11 첫 프레임)
+    32.82s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.22s]: The solo artist who contributed to Real Damage's hit "Feel My Pulse" w
+    32.88s  agent 발화 시작: <ret> Real Damage의 히트곡 "Feel My Pulse"에 참여한 솔로 아티스트는 synth-p
+    32.88s  user  발화 끝
+    41.09s  user  발화 시작: Roland Clark요? 처음 듣는 이름인데요.
+    41.09s  agent 발화 끝
+    43.51s  agent 발화 시작: Roland Clark는 하우스 음악계에서 유명한 프로듀서예요.
+    43.51s  user  발화 끝
+    46.41s  user  발화 시작: 하우스 음악도 synth-pop이랑 비슷해요?
+    46.41s  agent 발화 끝
+    48.35s  agent 발화 시작: 하우스 음악과 synth-pop은 전자 음악이라는 공통점이 있지만—
+    48.35s  user  발화 끝
+    51.73s  user  발화 시작: …혹시 Roland Clark의 다른 노래도 추천해 줄 수 있어요?
+    51.73s  agent 발화 끝
+    56.08s  agent 발화 시작: Roland Clark의 다른 인기곡으로는 "Jesus"와 "Deep Inside"가 있어요. 두 곡 모두 
+    56.08s  user  발화 끝
+    66.72s  user  발화 시작: “Jesus”랑 “Deep Inside”요? 한번 들어봐야겠네요.
+    66.72s  agent 발화 끝
+    69.14s  agent 발화 시작: 두 곡 다 정말 좋아요.
+    69.14s  user  발화 끝
+    71.55s  agent 발화 시작: 꼭 한번 들어보세요. 분명 마음에 드실 거예요.
+    71.55s  agent 발화 끝
+    74.94s  user  발화 시작: 혹시 지금 서울 날씨 어때요?
+    74.94s  agent 발화 끝
+    76.74s  <ret> 발화 (turn22 첫 프레임)
+    77.35s  agent 발화 시작: <ret> 지금 서울 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터예요.
+    77.35s  user  발화 끝
+    77.45s  ⚡SPAN 주입 [d'=0.70s / d_lead=5.32s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
+    82.67s  user  발화 시작: 응.
+    82.67s  agent 발화 끝
+    83.16s  user  발화 시작: 생각보다 덥네요.
+    83.16s  user  발화 끝
+    84.12s  agent 발화 시작: 네, 오늘 서울은 꽤 더울 것 같아요.
+    84.12s  user  발화 끝
+    87.51s  agent 발화 시작: 혹시 더위를 피할 만한 시원한 장소를 찾고 계신가요?
+    87.51s  agent 발화 끝
+    91.37s  user  발화 시작: 아뇨, 그냥 궁금해서요.
+    91.37s  agent 발화 끝
+    92.82s  agent 발화 시작: 그렇군요.
+    92.82s  user  발화 끝
+    93.31s  user  발화 시작: 혹시 영화 예매도 해 줄 수 있어요?
+    93.31s  agent 발화 끝
+    96.69s  agent 발화 시작: 네, 영화 예매도 가능합니다. 어떤 영화를 보고 싶으세요?
+    96.69s  user  발화 끝
+   100.56s  agent 발화 시작: 보고 싶은 영화 제목과 시간을 말씀해 주시면 예매해 드릴게요.
+   100.56s  agent 발화 끝
+   104.91s  user  발화 시작: 음… 아직 정하지 못했어요.
+   104.91s  agent 발화 끝
+   106.85s  user  발화 끝

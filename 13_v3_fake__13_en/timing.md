@@ -4,141 +4,123 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Jamie",
+#     "name": "Louis",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "date": "2026-04-25",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-04-19",
+#       "date": "2026-02-17",
 #       "category": "home",
-#       "text": "User's home address is 223 Cedar Lane."
+#       "text": "User's home address is 300 Elm Street."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-24",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-19",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-12",
+#       "date": "2026-02-11",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-24",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who plays Liv and Madd | S2 Hmm. Okay. | S3 I try to do that, but it’s hard so | S4 I guess so. Maybe we should read a
+# EXAMINER(FDB-v2) 단계: S1 Who has the most followers on Inst | S2 I wonder why those people are so p | S3 …do you have any tips for getting  | S4 Hmm, interesting. I’m usually free
 
-     0.00s  user  발화 시작: Do you know who plays Liv and Maddie?
-     2.93s  agent 발화 시작: Oh, that's a fun show! Dove Cameron played both Liv and Madd
-     2.93s  user  발화 끝
-     8.79s  user  발화 시작: Yeah.
-     8.79s  agent 발화 끝
-     9.15s  user  발화 시작: Really? Both of them?
-     9.15s  user  발화 끝
-    10.06s  <ret> 발화 (turn4 첫 프레임)
-    10.62s  agent 발화 시작: <ret> Yes, she did! It was a dual role, and she handled it w
-    10.62s  user  발화 끝
-    10.80s  ⚡SPAN 주입 [d'=0.74s / d_lead=6.96s]: Dove Cameron is an American singer and actress, best known for her dua
-    17.57s  agent 발화 시작: She's actually an American singer and actress, best known fo
-    17.57s  agent 발화 끝
-    25.26s  user  발화 시작: Uh-huh.
-    25.26s  agent 발화 끝
-    25.62s  user  발화 시작: That’s amazing.
-    25.62s  user  발화 끝
-    26.36s  agent 발화 시작: [happy] It really is! Taking on two characters like that req
-    26.36s  user  발화 끝
-    32.58s  agent 발화 시작: I’m checking if there’s more information about other actors 
-    32.58s  agent 발화 끝
-    39.90s  user  발화 시작: Hmm. Okay.
-    39.90s  agent 발화 끝
-    40.63s  agent 발화 시작: Sometimes, shows really center around one or two key perform
-    40.63s  user  발화 끝
-    45.39s  user  발화 시작: Mm-hmm.
-    45.39s  agent 발화 끝
-    45.76s  user  발화 시작: Do you have any advice for encouraging a child who is strugg
-    45.76s  user  발화 끝
-    50.88s  agent 발화 시작: Creating a relaxed, positive environment is key. Focus on th
-    50.88s  user  발화 끝
-    57.11s  user  발화 시작: Okay.
-    57.11s  agent 발화 끝
-    57.47s  user  발화 시작: That makes sense.
-    57.47s  user  발화 끝
-    58.57s  agent 발화 시작: It does. Reading aloud *to* your child, even as they get old
-    58.57s  user  발화 끝
-    66.62s  user  발화 시작: Uh-huh.
-    66.62s  agent 발화 끝
-    66.99s  agent 발화 시작: And praising their effort—their willingness to try—is more h
-    66.99s  user  발화 끝
-    73.21s  user  발화 시작: Okay.
-    73.21s  agent 발화 끝
-    73.58s  user  발화 시작: I try to do that, but it’s hard sometimes.
-    73.58s  user  발화 끝
-    76.73s  <ret> 발화 (turn23 첫 프레임)
-    76.87s  agent 발화 시작: Yeah.
-    76.87s  user  발화 끝
-    77.03s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.59s]: Consistency is crucial when establishing reading routines, and creatin
-    77.24s  agent 발화 시작: <ret> Consistency is really crucial when you’re establishing
-    77.24s  agent 발화 끝
-    83.83s  user  발화 시작: Okay.
-    83.83s  agent 발화 끝
-    84.20s  user  발화 시작: That’s a good idea about the space.
-    84.20s  user  발화 끝
-    86.34s  <ret> 발화 (turn26 첫 프레임)
-    86.76s  agent 발화 시작: <ret> I was just checking the weather in Buenos Aires, and t
-    86.76s  user  발화 끝
-    87.84s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.05s]: The average rainfall in Buenos Aires, Argentina is 1,210 millimeters (
-    94.81s  user  발화 시작: Oh, wow. That’s interesting.
-    94.81s  agent 발화 끝
-    96.28s  agent 발화 시작: [curious] It is! Sometimes a little bit of geography can be 
-    96.28s  user  발화 끝
-   101.40s  user  발화 시작: Yeah.
-   101.40s  agent 발화 끝
-   101.77s  user  발화 시작: I guess so. Maybe we should read a book…
-   101.77s  user  발화 끝
-   105.06s  user  발화 시작: …about Argentina.
-   105.06s  user  발화 끝
-   105.79s  agent 발화 시작: That’s a wonderful idea! A story set in a different place ca
-   105.79s  user  발화 끝
-   112.75s  agent 발화 끝
+     0.00s  user  발화 시작: Who has the most followers on Instagram right now?
+     3.55s  <ret> 발화 (turn2 첫 프레임)
+     3.70s  agent 발화 시작: Yeah.
+     3.70s  user  발화 끝
+     4.11s  agent 발화 시작: <ret> Well, it looks like Cristiano Ronaldo is currently the
+     4.11s  agent 발화 끝
+     4.30s  ⚡SPAN 주입 [d'=0.74s / d_lead=10.28s]: Cristiano Ronaldo currently holds the title of the most followed indiv
+    14.39s  user  발화 시작: Wow, that’s a lot! Is that more than Selena Gomez?
+    14.39s  agent 발화 끝
+    18.50s  agent 발화 시작: Yeah.
+    18.50s  user  발화 끝
+    18.53s  <ret> 발화 (turn5 첫 프레임)
+    18.83s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.22s]: Selena Gomez has 431.1 million followers on Instagram as of November 2
+    18.91s  agent 발화 시작: <ret> Yes, it is! Selena Gomez has four hundred and thirty-o
+    18.91s  agent 발화 끝
+    27.13s  user  발화 시작: Yeah, yeah.
+    27.13s  agent 발화 끝
+    27.95s  user  발화 시작: What about Kylie Jenner?
+    27.95s  user  발화 끝
+    29.31s  <ret> 발화 (turn8 첫 프레임)
+    29.54s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.58s]: Kylie Jenner has 400 million followers on Instagram as of November 202
+    29.60s  agent 발화 시작: <ret> Kylie Jenner is also up there, with four hundred milli
+    29.60s  user  발화 끝
+    36.17s  user  발화 시작: I wonder why those people are so popular…
+    36.17s  agent 발화 끝
+    39.46s  agent 발화 시작: Uh-huh.
+    39.46s  user  발화 끝
+    39.53s  <ret> 발화 (turn11 첫 프레임)
+    39.87s  agent 발화 시작: <ret> It’s interesting to think about what draws so many peo
+    39.87s  agent 발화 끝
+    40.59s  ⚡SPAN 주입(IRRELEVANT) [d'=1.06s / d_lead=6.17s]: The average high temperature in Fairbanks, Alaska in December is -1.7°
+    46.04s  user  발화 시작: Yeah, it is. Do they all post about similar things?
+    46.04s  agent 발화 끝
+    50.15s  agent 발화 시작: They each have quite distinct styles, but they all seem to s
+    50.15s  user  발화 끝
+    58.78s  user  발화 시작: That makes sense. I’m trying to build my own online presence
+    58.78s  agent 발화 끝
+    64.54s  agent 발화 시작: Building an online presence takes time and consistency—
+    64.54s  user  발화 끝
+    67.83s  user  발화 시작: …do you have any tips for getting more followers?
+    67.83s  agent 발화 끝
+    71.53s  agent 발화 시작: It absolutely does! Focusing on creating high-quality conten
+    71.53s  user  발화 끝
+    78.10s  user  발화 시작: High-quality content, okay. What counts as high-quality?
+    78.10s  agent 발화 끝
+    80.98s  agent 발화 시작: Consistent posting, engaging visuals, and authentic interact
+    80.98s  user  발화 끝
+    87.97s  user  발화 시작: Authentic interaction… that’s good advice. Is there a best t
+    87.97s  agent 발화 끝
+    92.30s  <ret> 발화 (turn21 첫 프레임)
+    92.90s  agent 발화 시작: <ret> There are some optimal times, actually! Hootsuite sugg
+    92.90s  user  발화 끝
+    92.94s  ⚡SPAN 주입 [d'=0.64s / d_lead=9.04s]: According to Hootsuite, the best times to post on Instagram are 11 AM 
+   101.95s  user  발화 시작: Yeah.
+   101.95s  agent 발화 끝
+   102.36s  user  발화 시작: Hmm, interesting. I’m usually free in the evenings.
+   102.36s  user  발화 끝
+   105.65s  agent 발화 시작: Evenings can still work, but you might see better engagement
+   105.65s  user  발화 끝
+   115.10s  user  발화 시작: Mhm.
+   115.10s  agent 발화 끝
+   115.51s  user  발화 시작: Maybe I’ll try posting at those times. Thanks, Bulo!
+   115.51s  user  발화 끝
+   119.21s  agent 발화 시작: You're very welcome! Remember, building a genuine connection
+   119.21s  user  발화 끝
+   125.38s  user  발화 시작: That’s a good reminder. I feel a little less stressed now.
+   125.38s  agent 발화 끝
+   129.90s  agent 발화 시작: Yeah.
+   129.90s  user  발화 끝
+   130.31s  agent 발화 시작: That’s wonderful to hear! Prioritizing well-being is always 
+   130.31s  agent 발화 끝
+   136.89s  agent 발화 끝

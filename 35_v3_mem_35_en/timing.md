@@ -4,107 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Jamie",
+#     "name": "Sky",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "date": "2026-05-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-03-24",
+#       "category": "home",
+#       "text": "User's home address is 944 Elm Street."
 #     },
 #     {
-#       "date": "2026-03-30",
+#       "date": "2026-02-27",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-11",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-02-02",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-16",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-15",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-03",
+#       "date": "2026-04-22",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Frol, nice to meet you too. I’m | S2 Hmm, I really love good food, espe | S3 Oh, that would be perfect! Are the | S4 Okay, good to know. So maybe focus
 
-     0.00s  agent 발화 시작: Hi Jamie, I’m Frol. It’s lovely to meet you. I’m a life coac
-     7.86s  user  발화 시작: Yeah.
-     7.86s  agent 발화 끝
-     8.22s  user  발화 시작: Hi Frol, nice to meet you too. I’m trying to plan a trip to 
-     8.22s  user  발화 끝
-    16.12s  <ret> 발화 (turn3 첫 프레임)
-    16.44s  agent 발화 시작: <ret> I remember you mentioned planning a trip to Kyoto this
-    16.44s  user  발화 끝
-    16.81s  ⚡SPAN 주입 [d'=0.69s / d_lead=8.58s]: [2026-06-16] User is planning a trip to Kyoto in October.
-    25.01s  user  발화 시작: That sounds great, actually. I'm not sure where to even star
-    25.01s  agent 발화 끝
-    30.73s  agent 발화 시작: Kyoto offers so much – temples, gardens, traditional arts… T
-    30.73s  user  발화 끝
-    38.95s  user  발화 시작: Hmm, I really love good food, especially Italian.
-    38.95s  agent 발화 끝
-    41.39s  <ret> 발화 (turn7 첫 프레임)
-    41.81s  agent 발화 시작: <ret> That’s fantastic! Knowing your love for Italian cuisin
-    41.81s  user  발화 끝
-    42.34s  ⚡SPAN 주입 [d'=0.95s / d_lead=7.50s]: [2026-04-17] User's favorite cuisine is Italian.
-    49.31s  user  발화 시작: Uh-huh.
-    49.31s  agent 발화 끝
-    49.67s  user  발화 시작: Oh, that would be perfect! Are there any specifically with g
-    49.67s  user  발화 끝
-    55.74s  agent 발화 시작: Right.
-    55.74s  user  발화 끝
-    55.87s  <ret> 발화 (turn11 첫 프레임)
-    56.10s  agent 발화 시작: <ret> Yes, absolutely. Knowing you're pescatarian helps a lo
-    56.10s  agent 발화 끝
-    56.64s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.50s]: [2026-03-30] User is pescatarian.
-    63.60s  user  발화 시작: …actually, before we go too deep into restaurants, do you th
-    63.60s  agent 발화 끝
-    71.11s  agent 발화 시작: Right.
-    71.11s  user  발화 끝
-    71.46s  agent 발화 시작: That’s a very smart question. Booking popular experiences li
-    71.46s  agent 발화 끝
-    80.04s  user  발화 시작: Okay, good to know. So maybe focus on booking those first, t
-    80.04s  agent 발화 끝
-    86.11s  agent 발화 시작: Exactly. Prioritizing those experiences is a great approach.
-    86.11s  user  발화 끝
-    96.48s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Orunaen!
+     1.53s  user  발화 시작: Um, well, I'm planning a trip and could use some ideas.
+     1.53s  agent 발화 끝
+     5.73s  agent 발화 시작: [happy] Oh, a trip sounds wonderful! Do you have a destinati
+     5.73s  user  발화 끝
+    12.98s  user  발화 시작: Right.
+    12.98s  agent 발화 끝
+    13.36s  user  발화 시작: I'm thinking about somewhere with wildflowers. I really love
+    13.36s  user  발화 끝
+    17.56s  agent 발화 시작: Okay.
+    17.56s  user  발화 끝
+    17.88s  <ret> 발화 (turn6 첫 프레임)
+    17.95s  agent 발화 시작: <ret> You know, I recall you're really into alpine wildflowe
+    17.95s  agent 발화 끝
+    19.13s  ⚡SPAN 주입 [d'=1.25s / d_lead=7.25s]: [2026-02-02] User is into alpine wildflower photography.
+    25.20s  agent 발화 끝

@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Clara",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-05-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-10",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-12-21",
-#       "category": "home",
-#       "text": "User's home address is 900 Elm Street."
-#     },
-#     {
-#       "date": "2025-12-13",
+#       "date": "2026-05-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-02-16",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "home",
+#       "text": "User's home address is 441 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-03-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,55 +53,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-01-28",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to plan a trip, and I'm | S2 Definitely relaxing. I just want t | S3 …and enjoy good food, maybe see so | S4 Okay, you’re right. Let’s focus. I
 
-     0.00s  user  발화 시작: I'm trying to plan a trip, and I'm overwhelmed. Where should
-     4.96s  agent 발화 시작: Planning can feel like a lot at once, but breaking it down m
-     4.96s  user  발화 끝
-    15.58s  user  발화 시작: Uh-huh.
-    15.58s  agent 발화 끝
-    15.93s  user  발화 시작: Hmm, maybe Italy? I’ve always wanted to go, but it seems…com
-    15.93s  user  발화 끝
-    19.83s  agent 발화 시작: Yeah.
-    19.83s  user  발화 끝
-    20.18s  agent 발화 시작: Italy is wonderful! It can seem daunting to plan, but we can
-    20.18s  agent 발화 끝
-    30.45s  user  발화 시작: Definitely relaxing. I just want to unwind…
-    30.45s  agent 발화 끝
-    32.93s  user  발화 시작: …and enjoy good food, maybe see some art.
-    32.93s  user  발화 끝
-    35.20s  <ret> 발화 (turn8 첫 프레임)
-    35.50s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.44s]: The first commercially available infant formula, developed by German c
-    35.76s  agent 발화 시작: <ret> Interestingly, the very first baby formula actually ca
-    35.76s  user  발화 끝
-    43.20s  user  발화 시작: Wow, 1867? That's… a long time ago! I didn't realize formula
-    43.20s  agent 발화 끝
-    48.86s  agent 발화 시작: It is quite a history! It’s amazing how much things have evo
-    48.86s  user  발화 끝
-    59.84s  user  발화 시작: Yeah, totally.
-    59.84s  agent 발화 끝
-    60.55s  user  발화 시작: Okay, you’re right. Let’s focus. I’ve heard Florence is beau
-    60.55s  user  발화 끝
-    65.51s  agent 발화 시작: Yeah, yeah.
-    65.51s  user  발화 끝
-    66.21s  agent 발화 시작: Florence is a fantastic choice! [happy] It's truly a treasur
-    66.21s  agent 발화 끝
-    76.13s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, I'm trying to get my finances in order. Any advice?
+     4.05s  agent 발화 시작: Hi there! Absolutely, getting a handle on your finances is a
+     4.05s  user  발화 끝
+    12.90s  user  발화 시작: Okay, well, I've heard of the 50/30/20 rule. What exactly *i
+    12.90s  agent 발화 끝
+    17.09s  <ret> 발화 (turn3 첫 프레임)
+    17.32s  agent 발화 시작: <ret> It’s a simple method—you allocate fifty percent of you
+    17.32s  user  발화 끝
+    17.39s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.85s]: The 50/30/20 budget allocates 50% of after-tax income to needs, 30% to
+    26.17s  user  발화 시작: Right.
+    26.17s  agent 발화 끝
+    26.54s  user  발화 시작: That sounds…restrictive. Is there really no wiggle room?
+    26.54s  user  발화 끝
+    29.49s  user  발화 끝

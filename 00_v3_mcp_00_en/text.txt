@@ -1,85 +1,92 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Thox, a warm and attentive counselor who helps people with friendships and social life. You can explain reaching out first, listening well, keeping small regular contact. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Ara, a grounded and empathetic life coach who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Oliver",
+    "name": "Max",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
+    "nationality": "French",
     "gender": "male",
     "age_range": "40s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "date": "2026-06-02",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2026-05-24",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2026-04-17",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2026-04-12",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-01-11",
+      "date": "2026-03-25",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2025-12-27",
+      "date": "2026-02-09",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-03",
       "category": "home",
-      "text": "User's home address is 818 Birch Road."
+      "text": "User's home address is 120 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
-      "title": "Researching a used car",
+      "date": "2026-05-10",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2026-03-31",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-03",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm looking for a nice gift for my friend…
-[  3.06s][user ] …Sarah. She loves cooking.
-[  4.42s][moshi] That’s thoughtful! Finding a gift for someone who loves cooking is fun.
-[  8.50s][user ] I was thinking of a cookbook, but there are so many.
-[ 12.25s][moshi] «backchannel» Right.
-[ 12.59s][moshi] ⟨ret@12.57s⟩ A cookbook ⟦⚡SPAN@13.69s: A cookbook is a great idea for a cooking enthusiast! "Salt, Fat, Acid, Heat" by Samin Nosrat is a highly-rated⟧ is a wonderful choice, and there are quite a few excellent ones available—"Salt, Fat, Acid, Heat" is very popular, as is "The Food Lab."
-[ 21.43s][user ] “Salt, Fat, Acid, Heat” sounds interesting. Could you show me an image of the ⟨ret@26.06s⟩ cover?
-[ 26.53s][moshi] Here’s ⟦⚡SPAN@27.15s: (tool result) Image found: https://www.simonandschuster.com/p/salt-fat-acid-heat/9781594700355 | simonandschus⟧ an image of the cover of “Salt, Fat, Acid, Heat.”
-      CALL: {"function": "tavily-search", "arguments": {"query": "image of Salt, Fat, Acid, Heat cookbook cover"}}
-[ 30.28s][user ] «backchannel» Yeah.
-[ 30.62s][user ] That looks perfect!—but does it have many recipes, or is it mostly theory?
-[ 35.04s][user ] …I wonder if it’s available at the bookstore downtown?
-[ 38.10s][moshi] «backchannel» Yeah.
-[ 38.44s][moshi] ⟨ret@38.22s⟩ ⟦⚡SPAN@38.52s: "Salt, Fat, Acid, Heat" includes over 100 recipes, but its strength is in teaching the underlying principles o⟧ It balances theory and practice quite nicely; it includes over one hundred recipes, but really focuses on teaching you the *why* behind cooking, like how salt enhances flavor and how heat transforms things.
+[  0.00s][user ] What is the address of…
+[  1.73s][user ] …the Hockey Hall of ⟨ret@3.24s⟩ Fame?
+[  3.46s][moshi] [happy] ⟦⚡SPAN@4.01s: (tool result) {"name": "Hockey Hall of Fame", "formatted address": "155 Front St W, Toronto, ON M5J 2C5, Canad⟧ The Hockey Hall of Fame is at 155 Front Street West, Toronto, Ontario, M5J 2C5, Canada. It has a 4.4-star rating from almost 5,800 reviews!
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJd_n-Y6VqEmsR0K9Y0QvUj1M"}}
+[ 12.45s][user ] Oh, that’s good to know. And what’s the weather like there right now? ⟨ret@16.86s⟩
+[ 16.95s][moshi] [curious] ⟦⚡SPAN@17.65s: (tool result) {"city": "Toronto", "country": "Canada", "latitude": 43.6426, "longitude": -79.3871, "temperatur⟧ Right now in Toronto, it’s 22.8 degrees Celsius, partly cloudy, with a humidity of 68% and winds at 11.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Toronto"}}
+[ 24.91s][user ] Hmm, sounds pleasant. I'm thinking of visiting next week.
+[ 28.02s][moshi] «backchannel» Yeah.
+[ 28.37s][moshi] That sounds lovely! Toronto is a great city to explore. Are you planning a longer trip, or just a quick visit?
+[ 35.63s][user ] Just a quick visit, maybe three days. I want to see a Blue Jays game.
+[ 40.82s][moshi] «backchannel» Uh-huh.
+[ 41.17s][moshi] [laugh] A Blue Jays game sounds perfect for a quick trip! I can help you find game times if you like.

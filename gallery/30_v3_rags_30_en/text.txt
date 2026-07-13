@@ -1,77 +1,61 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Thoras, a curious and validating counselor who helps people with creative blocks and confidence. You can explain starting with a rough draft, tiny daily reps, quieting the inner critic. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Una, a calm and patient counselor who helps people with stress relief and mindfulness. You can explain breathing techniques, a quick grounding exercise, basic sleep hygiene. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Kim",
+    "name": "Milan",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
+    "nationality": "French",
+    "gender": "male",
     "age_range": "early 20s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
-      "category": "home",
-      "text": "User's home address is 917 Cedar Lane."
-    },
-    {
       "date": "2026-06-01",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-02-18",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-02-05",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-20",
+      "date": "2026-03-03",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-02-17",
+      "category": "home",
+      "text": "User's home address is 252 Birch Road."
+    },
+    {
+      "date": "2026-01-28",
       "category": "diet",
       "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-19",
-      "title": "Researching a used car",
+      "date": "2025-12-09",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-06-16",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-03-15",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who played Josephine McDonald in the movie El Dorado?
-[  3.39s][moshi] «backchannel» Yeah.
-[  3.76s][moshi] ⟨ret@3.52s⟩ ⟦⚡SPAN@4.07s: Michele Carey played Josephine McDonald in the 1966 Western film El Dorado, directed by Howard Hawks.⟧ That was Michele Carey, playing Josephine McDonald in the 1966 film *El Dorado*. [happy] It’s a classic Western, if you haven’t seen it!
+[  0.00s][user ] When did Thor: Ragnarok actually come out in theaters?
+[  3.43s][moshi] «backchannel» Uh-huh.
+[  3.81s][moshi] ⟨ret@3.57s⟩ ⟦⚡SPAN@4.12s: Thor: Ragnarok was released in the United States on November 3, 2017, after premiering in several other countr⟧ That film, Thor: Ragnarok, came out in the United States on November 3rd, 2017, following premieres in other countries.

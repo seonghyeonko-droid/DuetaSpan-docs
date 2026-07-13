@@ -4,111 +4,119 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "세찬",
+#     "name": "유현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2025-12-12",
+#       "date": "2026-05-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-05-16",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-27",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "title": "Researching a used car",
+#       "date": "2026-04-23",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 이천십년 얼터너티브 프레스 잡지 표지 모델에 더 캡 말고 | S2 요즘 음악은 어떤 걸 듣고 있어요? | S3 오, 앨범 제목이 예쁘네요. 들어봐야겠어요. | S4 다행이다. 혹시 여행 전에 준비해야 할 게 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 창욱진 씨에 대해 좀 알려주시겠어요? | S2 아, 그렇군요. | S3 천구백사십오년이군요. 그럼 창욱진 님은 그 즈음에 태어나셨다는 | S4 그림을 좀 보여주실 수 있나요?
 
-     0.00s  user  발화 시작: 혹시 이천십년 얼터너티브 프레스 잡지 표지 모델에 더 캡 말고 다른 밴드도 있었어요?
-     5.80s  <ret> 발화 (turn1 첫 프레임)
-     5.93s  agent 발화 시작: <ret> 이천십년 얼터너티브 프레스 잡지 표지에는 더 캡과 함께 헤이 먼데이, 네버 샤우트 네버가 실려 있
-     5.93s  user  발화 끝
-     6.78s  ⚡SPAN 주입 [d'=0.98s / d_lead=6.84s]: Hey Monday was featured on the cover of Alternative Press magazine alo
-    12.77s  user  발화 시작: 예.
-    12.77s  agent 발화 끝
-    13.23s  user  발화 시작: 아, 헤이 먼데이도 있었군요. 좀 오래된 밴드인 것 같아요.
-    13.23s  user  발화 끝
-    17.33s  agent 발화 시작: 네, 그렇죠. 시간이 참 빠르네요.
-    17.33s  user  발화 끝
-    19.61s  user  발화 시작: 요즘 음악은 어떤 걸 듣고 있어요?
-    19.61s  agent 발화 끝
-    22.35s  agent 발화 시작: 요즘은 주로 잔잔한 인디 음악을 듣는 편이에요. 마음이 편안해지거든요.
-    22.35s  user  발화 끝
-    26.45s  user  발화 시작: 인디 음악… 저도 가끔 듣는데, 추천해 줄 만한 밴드 있어요?
-    26.45s  agent 발화 끝
-    30.87s  <ret> 발화 (turn8 첫 프레임)
-    31.01s  agent 발화 시작: <ret> 혹시 더 재패니즈 하우스를 아세요? 앰버 베인이 이끄는 영국 인디 팝 밴드인데, 이 피와 앨범을 
-    31.01s  user  발화 끝
-    31.69s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.21s]: The Japanese House is an English indie pop act headed by Amber Bain, w
-    39.22s  user  발화 시작: 네.
-    39.22s  agent 발화 끝
-    39.68s  agent 발화 시작: 앨범 제목은 '소 유 인 어 드림'이라고 하더라고요.
-    39.68s  user  발화 끝
-    43.33s  user  발화 시작: 네.
-    43.33s  agent 발화 끝
-    43.78s  user  발화 시작: 오, 앨범 제목이 예쁘네요. 들어봐야겠어요.
-    43.78s  user  발화 끝
-    45.69s  <ret> 발화 (turn13 첫 프레임)
-    46.06s  agent 발화 시작: <ret> 지금 서울 날씨는 섭씨 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터 정도예요.
-    46.06s  user  발화 끝
-    46.92s  ⚡SPAN 주입 [d'=1.23s / d_lead=5.93s]: (tool result) Weather in Seoul: 23.0°C, humidity 74%, wind 5.5 km/h.
-    51.99s  user  발화 시작: 서울 날씨 알려줘서 고마워요. 이번 주말에 여행 갈 건데, 날씨가 괜찮을까요?
-    51.99s  agent 발화 끝
-    57.01s  agent 발화 시작: 네.
-    57.01s  user  발화 끝
-    57.47s  agent 발화 시작: 이번 주말은 대체로 맑을 것으로 예상돼요. 여행하기 좋겠네요.
-    57.47s  agent 발화 끝
-    61.12s  user  발화 시작: 그렇죠.
-    61.12s  agent 발화 끝
-    61.57s  user  발화 시작: 다행이다. 혹시 여행 전에 준비해야 할 게 있을까요?
-    61.57s  user  발화 끝
-    65.22s  agent 발화 시작: 여행 전에 짐은 다 꾸리셨나요? 그리고 혹시 필요한 약은 챙기셨는지 확인해 보세요.
-    65.22s  user  발화 끝
-    70.69s  user  발화 시작: 예.
-    70.69s  agent 발화 끝
-    71.15s  user  발화 시작: 아, 약은 깜빡했네요. 챙겨야겠어요. 감사합니다, 노라 씨.
-    71.15s  user  발화 끝
-    74.34s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해 주세요. 여행 잘 다녀오세요.
-    74.34s  user  발화 끝
-    77.99s  agent 발화 끝
+     0.00s  user  발화 시작: 창욱진 씨에 대해 좀 알려주시겠어요?
+     2.91s  agent 발화 시작: 창욱진 님에 대해 궁금하시군요. 어떤 점이 가장 알고 싶으세요?
+     2.91s  user  발화 끝
+     8.14s  user  발화 시작: 그분이 어떤 시대에 태어났는지 궁금해요.
+     8.14s  agent 발화 끝
+    10.44s  <ret> 발화 (turn3 첫 프레임)
+    11.05s  agent 발화 시작: <ret> 창욱진 님은 제이차 세계 대전이 끝나는 시기에 한국에서 태어나셨습니다.
+    11.05s  user  발화 끝
+    11.94s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.23s]: Chang Ucchin was born in Korea during a time that ended with the concl
+    16.28s  user  발화 시작: 그렇죠.
+    16.28s  agent 발화 끝
+    16.86s  user  발화 시작: 아, 그렇군요.
+    16.86s  user  발화 끝
+    18.02s  agent 발화 시작: 창욱진 님은 한국화의 중요한 인물로 평가받고 계세요.
+    18.02s  user  발화 끝
+    22.09s  user  발화 시작: 음.
+    22.09s  agent 발화 끝
+    22.67s  user  발화 시작: 세계 대전이 언제 끝났죠?
+    22.67s  user  발화 끝
+    24.85s  <ret> 발화 (turn9 첫 프레임)
+    25.00s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 사십일분입니다. 제이차 세계 대전은 천구백사십오년
+    25.00s  user  발화 끝
+    25.93s  ⚡SPAN 주입 [d'=1.08s / d_lead=7.56s]: (tool result) It is Friday, July 10, 2026 at 2:41 PM in Asia/Seoul rig
+    32.56s  user  발화 시작: 천구백사십오년이군요. 그럼 창욱진 님은 그 즈음에 태어나셨다는 말씀이시네요.
+    32.56s  agent 발화 끝
+    37.21s  agent 발화 시작: [happy] 네, 맞습니다. 창욱진 님은 천구백십팔년에 태어나셨고, 천구백칠십팔년에 세상을 떠나셨어요.
+    37.21s  user  발화 끝
+    43.02s  user  발화 시작: 아, 그럼 한국 전쟁도 겪으셨겠네요.
+    43.02s  agent 발화 끝
+    45.93s  agent 발화 시작: 창욱진 님은 한국 전쟁 시기에 작품 활동을 하셨습니다. 전쟁의 아픔을 담은 그림도 많으시고요.
+    45.93s  user  발화 끝
+    53.49s  user  발화 시작: 그렇죠.
+    53.49s  agent 발화 끝
+    54.07s  user  발화 시작: 그림을 좀 보여주실 수 있나요?
+    54.07s  user  발화 끝
+    56.90s  <ret> 발화 (turn16 첫 프레임)
+    56.98s  agent 발화 시작: <ret> 창욱진 화백의 삶과 예술에 대한 유튜브 영상이 있습니다. 길이는 십이분 삼십사초입니다.
+    56.98s  user  발화 끝
+    57.51s  ⚡SPAN 주입 [d'=0.61s / d_lead=6.40s]: (tool result) '창욱진 화백의 삶과 예술' - YouTube, youtube.com, 12:34
+    63.37s  user  발화 시작: 좋아요. 한번 봐야겠네요.
+    63.37s  agent 발화 끝
+    65.12s  user  발화 끝

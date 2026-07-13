@@ -1,81 +1,68 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Zuia, a curious and validating wellness coach who helps people with settling into a new city. You can explain a settling-in checklist, finding local essentials, adjusting to a new routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Noran, a gentle and reflective wellness coach who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Noa",
+    "name": "Felix",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-06-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2026-05-12",
+      "date": "2026-05-16",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-03-10",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-02-06",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-22",
+      "date": "2026-05-01",
       "category": "home",
-      "text": "User's home address is 814 Oak Avenue."
+      "text": "User's home address is 620 Elm Street."
+    },
+    {
+      "date": "2026-04-25",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-01-29",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-28",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-05",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What prevented the spread of angiosperms towards the poles?
-[  3.55s][moshi] «backchannel» Right.
-[  3.95s][moshi] Well, that’s a really interesting question! It seems the exact reasons why angiosperms didn’t spread further towards the poles aren’t fully understood by scientists.
-[ 13.41s][user ] That's a bit disappointing. What *do* they know about why plants generally struggle in colder climates?
-[ 19.73s][moshi] «backchannel» Yeah.
-[ 20.12s][moshi] ⟨ret@19.99s⟩ ⟦⚡SPAN@20.29s: Plants struggle in cold climates due to a combination of factors, including freezing temperatures, short growi⟧ It’s a complex issue, but generally plants struggle in colder climates because of freezing temperatures, short growing seasons, limited sunlight, and nutrient scarcity in frozen soils.
-[ 30.38s][user ] «backchannel» Yeah.
-[ 30.77s][user ] So, it’s not just one thing, it’s a whole bunch of challenges.
-[ 35.51s][moshi] «backchannel» Mm-hmm.
-[ 35.90s][moshi] Exactly! It’s a combination of factors working together. It’s like building a really strong foundation – you need multiple supports for everything to hold.
-[ 45.37s][user ] «backchannel» Mhm.
-[ 45.76s][user ] Are there any angiosperms that *have* managed to adapt to really cold conditions?.
-[ 50.89s][moshi] «interrupted» Some angiosperms –
-[ 52.08s][user ] «interrupts_prev» …like, are there any flowers you’d actually find in the Arctic?
-[ 56.42s][moshi] «backchannel» Yeah.
-[ 56.81s][moshi] ⟨ret@56.55s⟩ Some ⟦⚡SPAN@57.74s: Dwarf fireweed (Chamaenerion latifolium) and Arctic poppy (Papaver radicatum) are flowering plants found in Ar⟧ angiosperms *have* adapted, like dwarf fireweed and Arctic poppy, which you can find in Arctic and alpine tundra environments.
-[ 64.70s][user ] Wow, that's incredible! So they've found ways around all those challenges?
-[ 69.04s][moshi] They certainly have! They've developed strategies like growing low to the ground for protection, having short life cycles to take advantage of the brief summers, and even producing antifreeze-like compounds. It's a testament to the power of adaptation.
+[  0.00s][user ] What group was neutral about this issue as they felt the subject too important? ⟨ret@4.80s⟩
+[  4.88s][moshi] But ⟦⚡SPAN@5.50s: (no information found)⟧ unfortunately, I don’t have information about any group holding that specific view.
+[  9.40s][user ] Oh, okay. Well, could you tell me about the Pomodoro Technique?
+[ 13.24s][moshi] «backchannel» Yeah.
+[ 13.58s][moshi] [happy] Absolutely! The Pomodoro Technique is a time management method developed in the late 1980s by Francesco Cirillo. It uses a timer to break down work into intervals, traditionally twenty-five minutes in length, separated by short breaks.
+[ 26.47s][user ] «backchannel» Mm-hmm.
+[ 26.82s][moshi] It's a great way to stay focused and avoid burnout, and you can adjust the timings to fit your needs! Would you like me to tell you more about how to implement it?

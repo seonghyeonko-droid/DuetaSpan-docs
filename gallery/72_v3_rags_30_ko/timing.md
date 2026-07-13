@@ -4,56 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "연은",
+#     "name": "채국",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-03",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2026-01-20",
+#       "date": "2026-02-17",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-09",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 영화 엘도라도에서 조세핀 맥도날드 역을 누가 연기했어?
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.46s  agent 발화 시작: <ret> 엘도라도에서 조세핀 맥도날드 역은 미셸 캐리가 연기했어요. [happy] 그 영화 정말 좋아하시나
-     3.46s  user  발화 끝
-     4.29s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.94s]: Michele Carey played Josephine McDonald in the 1966 Western film El Do
-     9.40s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 토르 라그나로크 개봉일 알 수 있어?
+     3.47s  <ret> 발화 (turn1 첫 프레임)
+     3.57s  agent 발화 시작: <ret> 토르 라그나로크는 미국에서 이천십칠년 십일월 삼일에 개봉했어요. [happy] 혹시 다른 영화 정
+     3.57s  user  발화 끝
+     4.40s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.14s]: Thor: Ragnarok was released in the United States on November 3, 2017.
+    10.71s  agent 발화 끝

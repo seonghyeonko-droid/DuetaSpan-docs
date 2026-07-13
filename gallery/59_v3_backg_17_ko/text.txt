@@ -1,90 +1,88 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 콘은 여행 및 휴가 계획을 돕는 실용적이고 안심시키는 상담사입니다. 짐을 가볍게 싸는 방법, 일정 조절, 시차 극복 등을 설명할 수 있습니다. 또한, 콘은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시입니다. 위에 설명된 역할은 콘의 따뜻한 태도이자 가장 잘 아는 분야이며, 콘이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제에 대해 사람들을 돕는 긍정적이고 지지적인 웰니스 코치인 프리아로입니다. 당신은 적극적 경청, 친절한 경계 설정, 갈등이 고조되기 전에 진정시키는 방법을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트인 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "보람",
+    "name": "혜슬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-01",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-04-21",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-04-10",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-04-09",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2025-12-24",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2025-12-07",
+      "date": "2026-05-29",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2026-05-16",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2026-04-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-04-05",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-06",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-24",
+      "date": "2026-06-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-12-20",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 중국 만리장성을 지은 왕조가 ⟨ret@2.25s⟩ 어디였지?
-[  2.65s][moshi] ⟦⚡SPAN@3.18s: The Qin dynasty constructed the Great Wall of China.⟧ 중국 만리장성을 지은 왕조는 진나라입니다.
-[  5.30s][user ] «backchannel» 어.
-[  5.83s][user ] 진나라가 언제 ⟨ret@7.01s⟩ 세워졌어?
-[  7.42s][moshi] 진나라는 ⟦⚡SPAN@8.19s: The Qin dynasty was established in 221 BC.⟧ 기원전 이백이십일년에 세워졌습니다.
-[  9.54s][user ] 그 시대에 또 어떤 중요한 일이 있었어?
-[ 13.26s][moshi] «interrupted» 진나라는 중국을 최초로 통일한 왕조였어요—
-[ 15.91s][user ] «interrupts_prev» …혹시 진시황릉도 그 시대에 지어진 거야?
-[ 19.09s][moshi] 네, 맞아요. 진시황릉도 진나라 시대에 지어졌습니다.
-[ 22.27s][user ] «backchannel» 어.
-[ 22.80s][moshi] 진시황릉은 진시황의 거대한 무덤으로, 그 규모가 엄청나답니다.
+[  0.00s][user ] 혹시 블랙 팬서 영화 권리, 누가 가지고 있는지 알 수 ⟨ret@5.20s⟩ 있을까요?
+[  5.60s][moshi] ⟦⚡SPAN@6.12s: Marvel Studios owns the rights to the Black Panther movie.⟧ 블랙 팬서 영화 권리는 마블 스튜디오가 가지고 있습니다. 좋은 영화죠?
+[ 10.68s][user ] 네, 정말 재미있었어요. 마블 영화는 다 재미있는 것 같아요.
+[ 15.26s][moshi] 마블 영화를 좋아하시는군요! 취향이 정말 좋으세요. 혹시 다른 마블 영화도 즐겨 보시나요?
+[ 21.37s][user ] 음… 가디언즈 오브 갤럭시도 좋아하는데, 그 영화는 누가 ⟨ret@25.38s⟩ 만들었나요?
+[ 25.95s][moshi] ⟦⚡SPAN@26.55s: James Gunn directed Guardians of the Galaxy.⟧ 가디언즈 오브 갤럭시의 감독은 제임스 건입니다. 독특한 연출 스타일이 인상적이죠.
+[ 31.04s][user ] 맞아요, 스타일이 특이하죠. 혹시 그 감독 다른 작품도 ⟨ret@35.26s⟩ 있나요?
+[ 35.61s][moshi] ⟦⚡SPAN@35.97s: James Gunn also directed The Suicide Squad.⟧ 제임스 건 감독은 '수어사이드 스쿼드'도 연출했습니다. 다재다능한 감독이시네요.
+[ 39.68s][user ] «backchannel» 네.
+[ 40.19s][user ] 아, 그 영화도 봤어요! 완전 다른 느낌이었어요.
+[ 43.75s][moshi] 영화마다 분위기가 다르다는 점이 매력적이죠. 감독의 개성이 잘 드러나는 것 같아요.
+[ 49.35s][user ] 맞아요. 그런데 블랙 팬서, 속편은 언제 ⟨ret@52.59s⟩ 나오나요?
+[ 52.91s][moshi] '블랙 ⟦⚡SPAN@53.69s: Black Panther: Wakanda Forever was released on November 11, 2022.⟧ 팬서: 와칸다 포에버'는 이천이십이년 십일월 십일일에 개봉했습니다.
+[ 56.98s][user ] 아, 벌써 나왔었군요. 아직 못 봤네요.
+[ 60.04s][moshi] 아직 못 보셨다니, 꼭 한번 보시길 추천드려요. 감동적이고 멋진 영화입니다.
+[ 65.12s][user ] 네, 시간 내서 꼭 봐야겠어요. —
+[ 68.18s][user ] 블랙 팬서 주인공…
+[ 69.70s][user ] …채드윅 보스먼 배우는 어떻게 지내세요?
+[ 72.25s][moshi] «backchannel» 네.
+[ 72.75s][moshi] ⟨ret@72.65s⟩ 안타깝게도 ⟦⚡SPAN@73.91s: Chadwick Boseman passed away on August 28, 2020, after a private four-year battle with colon cancer.⟧ 채드윅 보스먼 배우는 이천이십년 팔월 이십팔일에 대장암으로 세상을 떠나셨습니다. 사년간 투병하셨다고 해요.
+[ 79.37s][user ] «backchannel» 네.
+[ 79.88s][moshi] 정말 슬픈 소식이죠. 그의 연기는 영원히 기억될 겁니다.
+[ 83.95s][user ] «backchannel» 예.
+[ 84.46s][user ] 네, 정말 안타깝네요. 좋은 배우를 잃은 것 같아요.
+[ 88.53s][moshi] 저도 그렇게 생각합니다. 그의 연기는 많은 사람들에게 영감을 주었습니다.
+[ 93.11s][user ] 혹시 그 배우 출연한 다른 영화도 있을까요? ⟨ret@96.55s⟩
+[ 96.67s][moshi] 채드윅 ⟦⚡SPAN@97.69s: Chadwick Boseman also starred in films such as 42, Get on Up, and Marshall.⟧ 보스먼 배우는 '사십이', '겟 온 업', '마샬' 같은 영화에도 출연했습니다. 연기 스펙트럼이 넓으셨죠.
+[103.79s][user ] «backchannel» 네.
+[104.30s][user ] 아, '사십이'는 야구 영화였죠?
+[106.33s][moshi] 네, 맞습니다. 야구 선수 재키 로빈슨의 실화를 바탕으로 한 영화입니다.
+[111.42s][user ] 재밌어 보여요. 나중에 한번 찾아봐야겠네요.
+[113.97s][moshi] 꼭 한번 보시길 바랍니다. 감동적인 영화입니다.
+[117.02s][user ] «backchannel» 음.
+[117.53s][user ] 네, 알겠습니다. 감사합니다.
+[119.05s][moshi] 천만에요. 언제든지 궁금한 점이 있으면 저에게 말씀해주세요.

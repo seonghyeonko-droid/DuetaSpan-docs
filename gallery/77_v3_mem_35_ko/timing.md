@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "은찬",
+#     "name": "준호",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,39 +18,50 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-05-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-04-05",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-30",
+#       "date": "2026-03-24",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-01-03",
+#       "date": "2026-02-27",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-19",
+#       "date": "2026-06-15",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-21",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -60,35 +71,20 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 프롤님. 요즘 친구를 사귀고 싶은데, 어떻게 시작 | S2 네, 알아봐 주시면 정말 감사하겠어요. | S3 와, 정말 고마워요! 혹시 그 동호회에 바로 연락해도 괜찮을까 | S4 …혹시 그 동호회 말고, 좀 더 캐주얼한 모임 같은 건 없을까
 
-     0.00s  agent 발화 시작: 안녕하세요, 은찬님! 저는 프롤이라고 해요. 혹시 오늘 어떤 이야기를 나눠볼까요?
-     5.84s  user  발화 시작: 네.
-     5.84s  agent 발화 끝
-     6.42s  user  발화 시작: 안녕하세요, 프롤님. 요즘 친구를 사귀고 싶은데, 어떻게 시작해야 할지 잘 모르겠어요.
-     6.42s  user  발화 끝
-    12.85s  agent 발화 시작: 친구를 사귀고 싶으시다니, 좋은 생각이네요! 혹시 어떤 스타일의 친구를 원하시는지, 아니면 어떤 활동을 같이
-    12.85s  user  발화 끝
-    23.36s  user  발화 시작: 음… 비슷한 취미를 가진 친구면 좋겠어요. 저는 요즘 새 관찰하는 게 너무 재밌거든요.
-    23.36s  agent 발화 끝
-    30.90s  <ret> 발화 (turn5 첫 프레임)
-    30.96s  agent 발화 시작: <ret> 새 관찰에 관심이 많으시군요! 사용자님은 새 관찰에 관심이 많으신 것 같아요. 혹시 부산에서 새 
-    30.96s  user  발화 끝
-    31.20s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.10s]: [2026-05-04] User is into birdwatching.
-    42.05s  user  발화 시작: 네, 알아봐 주시면 정말 감사하겠어요.
-    42.05s  agent 발화 끝
-    44.77s  <ret> 발화 (turn7 첫 프레임)
-    44.97s  agent 발화 시작: <ret> 부산 새 관찰 동호회가 해운대구에 있네요. 연락처는 공 오 일 칠 사 육 팔 공 공 공이고, 웹사
-    44.97s  user  발화 끝
-    45.31s  ⚡SPAN 주입 [d'=0.54s / d_lead=11.10s]: (tool result) Found: Busan Birdwatching Society, Haeundae-gu, Busan. C
-    56.07s  user  발화 시작: 와, 정말 고마워요! 혹시 그 동호회에 바로 연락해도 괜찮을까요? 아니면—
-    56.07s  agent 발화 끝
-    61.91s  user  발화 시작: …혹시 그 동호회 말고, 좀 더 캐주얼한 모임 같은 건 없을까요?
-    61.91s  user  발화 끝
-    68.34s  agent 발화 시작: 네네.
-    68.34s  user  발화 끝
-    68.81s  <ret> 발화 (turn11 첫 프레임)
-    68.92s  agent 발화 시작: <ret> 부산 새 애호가 모임이 있습니다. 다음 모임은 칠월 십오일 오전 열시에 센텀시티에서 열릴 예정이고
-    68.92s  agent 발화 끝
-    69.56s  ⚡SPAN 주입 [d'=0.75s / d_lead=9.35s]: (tool result) Found: Busan Bird Lovers Meetup, Centum City, Busan. Nex
-    78.27s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 준호님! 저는 오루낸이라고 해요. 오늘 하루는 어떠셨어요?
+     4.65s  user  발화 시작: 음… 요즘 너무 힘들어요. 어디론가 떠나고 싶어요.
+     4.65s  agent 발화 끝
+     8.61s  <ret> 발화 (turn2 첫 프레임)
+     8.72s  agent 발화 시작: <ret> 준호님, 혹시 알프스 야생화 사진 찍는 걸 좋아하시죠? 스위스가 딱 좋을 것 같아요.
+     8.72s  user  발화 끝
+     9.91s  ⚡SPAN 주입 [d'=1.30s / d_lead=7.56s]: [2026-02-02] User is into alpine wildflower photography.
+    16.28s  user  발화 시작: 응응.
+    16.28s  agent 발화 끝
+    16.87s  user  발화 시작: 스위스요? 좋아요! 혹시 지금 스위스 날씨는 어때요?
+    16.87s  user  발화 끝
+    20.49s  <ret> 발화 (turn5 첫 프레임)
+    20.94s  agent 발화 시작: <ret> 지금 스위스는 십팔 점 오도이고, 구름이 조금 있어요. 야생화 사진 찍기에 아주 좋겠네요!
+    20.94s  user  발화 끝
+    21.66s  ⚡SPAN 주입 [d'=1.17s / d_lead=7.56s]: (tool result) Temperature: 18.5°C, humidity: 62%, wind: 3.2 km/h, cond
+    28.50s  agent 발화 끝

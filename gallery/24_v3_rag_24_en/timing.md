@@ -4,48 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Jonas",
+#     "name": "Sam",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-28",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-04-12",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-04-03",
 #       "category": "home",
-#       "text": "User's home address is 314 Maple Drive."
+#       "text": "User's home address is 499 Birch Road."
 #     },
 #     {
-#       "date": "2026-02-24",
+#       "date": "2026-02-08",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-01-18",
+#       "date": "2026-01-26",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-06-20",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-15",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,61 +56,95 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-13",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Nes, I’m having a bit of a disa | S2 It is! I’ve tried talking about it | S3 …but what if they just get defensi | S4 Like, instead of "You never do the
+# EXAMINER(FDB-v2) 단계: S1 I’ve been having trouble falling a | S2 What time should I try to go to be | S3 …Does blue light really affect sle | S4 Maybe I should try a sleep meditat
 
-     0.00s  user  발화 시작: Hi Nes, I’m having a bit of a disagreement with my partner.
-     4.92s  agent 발화 시작: Hello! It's completely normal to have disagreements, it’s ho
-     4.92s  user  발화 끝
-    10.66s  user  발화 시작: It’s about chores, honestly. It feels like I do everything.
-    10.66s  agent 발화 끝
-    14.76s  agent 발화 시작: That sounds really frustrating. Feeling unsupported can defi
-    14.76s  user  발화 끝
-    19.27s  user  발화 시작: It is! I’ve tried talking about it, but it never seems to ch
-    19.27s  agent 발화 끝
-    24.60s  agent 발화 시작: It’s common for these conversations to get stuck. Have you t
-    24.60s  user  발화 끝
-    29.93s  user  발화 시작: Yeah, yeah.
-    29.93s  agent 발화 끝
-    30.75s  user  발화 시작: I think so…but maybe not well. What does that even *mean*?
-    30.75s  user  발화 끝
-    35.26s  agent 발화 시작: Okay.
-    35.26s  user  발화 끝
-    35.67s  agent 발화 시작: It means truly hearing your partner, without interrupting or
-    35.67s  agent 발화 끝
-    40.60s  user  발화 시작: …but what if they just get defensive right away?
-    40.60s  agent 발화 끝
-    44.22s  <ret> 발화 (turn11 첫 프레임)
-    44.29s  agent 발화 시작: <ret> It’s important to remember that defensiveness isn’t ne
-    44.29s  user  발화 끝
-    45.46s  ⚡SPAN 주입 [d'=1.25s / d_lead=9.43s]: Defensive behavior often arises from a perceived threat to one's self-
-    53.72s  user  발화 시작: Uh-huh.
-    53.72s  agent 발화 끝
-    54.13s  user  발화 시작: Okay, that makes sense. So how do I *get* them to listen the
-    54.13s  user  발화 끝
-    59.46s  agent 발화 시작: Mhm.
-    59.46s  user  발화 끝
-    59.87s  agent 발화 시작: Try "I feel" statements instead of "you" statements. It shif
-    59.87s  agent 발화 끝
-    64.79s  user  발화 시작: Uh-huh.
-    64.79s  agent 발화 끝
-    65.20s  user  발화 시작: Like, instead of "You never do the dishes," say…?
-    65.20s  user  발화 끝
-    68.28s  <ret> 발화 (turn18 첫 프레임)
-    68.89s  agent 발화 시작: <ret> “I” statements are a really effective tool because the
+     0.00s  user  발화 시작: I’ve been having trouble falling asleep lately.
+     2.77s  agent 발화 시작: It’s common to experience sleep difficulties from time to ti
+     2.77s  user  발화 끝
+     6.73s  user  발화 시작: Yeah, totally.
+     6.73s  agent 발화 끝
+     7.52s  user  발화 시작: What can I do to wind down before bed?
+     7.52s  user  발화 끝
+    11.09s  agent 발화 시작: Yeah.
+    11.09s  user  발화 끝
+    11.15s  <ret> 발화 (turn5 첫 프레임)
+    11.48s  agent 발화 시작: <ret> A relaxing bedtime routine can really help signal your
+    11.48s  agent 발화 끝
+    11.61s  ⚡SPAN 주입 [d'=0.45s / d_lead=10.29s]: A relaxing bedtime routine can signal your body it’s time to sleep, an
+    21.78s  user  발화 시작: Yeah.
+    21.78s  agent 발화 끝
+    22.17s  user  발화 시작: That sounds nice.
+    22.17s  user  발화 끝
+    23.36s  agent 발화 시작: Establishing a consistent sleep schedule is also very helpfu
+    23.36s  user  발화 끝
+    26.92s  user  발화 시작: Right.
+    26.92s  agent 발화 끝
+    27.32s  user  발화 시작: What time should I try to go to bed?
+    27.32s  user  발화 끝
+    30.80s  <ret> 발화 (turn11 첫 프레임)
+    30.88s  agent 발화 시작: <ret> Most adults need around seven to nine hours of sleep e
+    30.88s  user  발화 끝
+    30.90s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.73s]: Most adults need around seven to nine hours of sleep each night for op
+    37.61s  user  발화 시작: Wow.
+    37.61s  agent 발화 끝
+    38.01s  agent 발화 시작: It’s important to create a sleep-conducive environment.
+    38.01s  user  발화 끝
+    40.78s  user  발화 시작: Mhm.
+    40.78s  agent 발화 끝
+    41.18s  user  발화 시작: Like what?
+    41.18s  user  발화 끝
+    41.46s  <ret> 발화 (turn16 첫 프레임)
+    41.97s  agent 발화 시작: <ret> A dark, quiet, and cool bedroom is ideal for sleep, as
+    41.97s  user  발화 끝
+    42.96s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.13s]: A dark, quiet, and cool bedroom is ideal for sleep, as these condition
+    49.10s  user  발화 시작: I always scroll on my phone before bed.
+    49.10s  agent 발화 끝
+    52.26s  agent 발화 시작: Limiting screen time before bed is crucial—
+    52.26s  user  발화 끝
+    55.04s  user  발화 시작: …Does blue light really affect sleep that much?
+    55.04s  agent 발화 끝
+    57.84s  <ret> 발화 (turn20 첫 프레임)
+    58.14s  ⚡SPAN 주입 [d'=0.62s / d_lead=7.52s]: Exposure to blue light before bed can delay the onset of sleep and red
+    58.20s  agent 발화 시작: <ret> Exposure to blue light before bed can delay the onset 
+    58.20s  user  발화 끝
+    65.73s  user  발화 시작: Yeah.
+    65.73s  agent 발화 끝
+    66.12s  user  발화 시작: Okay, no more phone in bed then.
+    66.12s  user  발화 끝
+    68.89s  agent 발화 시작: That’s a wonderful first step towards better rest!
     68.89s  user  발화 끝
-    69.58s  ⚡SPAN 주입 [d'=1.30s / d_lead=10.25s]: “I” statements express personal feelings and experiences without blami
-    79.14s  user  발화 시작: That’s a good tip. I’ll try that tonight. Thanks, Nes.
-    79.14s  agent 발화 끝
-    83.24s  agent 발화 시작: [happy] You're very welcome! Remember, small changes can mak
-    83.24s  user  발화 끝
-    88.16s  agent 발화 끝
+    72.06s  agent 발화 시작: Consistent wake times, even on weekends, are also important.
+    72.06s  agent 발화 끝
+    75.63s  user  발화 시작: Okay.
+    75.63s  agent 발화 끝
+    76.02s  user  발화 시작: Even on weekends? That sounds hard.
+    76.02s  user  발화 끝
+    78.40s  agent 발화 시작: It helps regulate your body’s natural sleep-wake cycle.
+    78.40s  user  발화 끝
+    81.56s  agent 발화 시작: It can be challenging at first, but your body will adjust.
+    81.56s  agent 발화 끝
+    85.92s  user  발화 시작: Exactly.
+    85.92s  agent 발화 끝
+    86.32s  user  발화 시작: Maybe I should try a sleep meditation.
+    86.32s  user  발화 끝
+    89.08s  <ret> 발화 (turn31 첫 프레임)
+    89.09s  agent 발화 시작: <ret> Guided sleep meditations can really help reduce stress
+    89.09s  user  발화 끝
+    89.18s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.34s]: Guided sleep meditations can help reduce stress and promote relaxation
+    95.42s  user  발화 시작: Where can I find some good ones?
+    95.42s  agent 발화 끝
+    98.12s  <ret> 발화 (turn33 첫 프레임)
+    98.19s  agent 발화 시작: <ret> Headspace and Calm are two popular apps offering a wid
+    98.19s  user  발화 끝
+    98.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.31s]: (tool result) Headspace and Calm are two popular apps offering a wide 
+   106.51s  agent 발화 끝

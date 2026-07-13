@@ -1,104 +1,84 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Lunaia, a gentle and reflective supportive advisor who helps people with parenting and family time. You can explain consistent routines, praising effort over outcome, simple ways to connect. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Bulo, a grounded and empathetic wellness coach who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Jamie",
+    "name": "Louis",
     "location": {
-      "city": "New York",
+      "city": "San Francisco",
       "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-07",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in October."
+      "date": "2026-04-25",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2026-04-19",
+      "date": "2026-02-17",
       "category": "home",
-      "text": "User's home address is 223 Cedar Lane."
+      "text": "User's home address is 300 Elm Street."
     },
     {
-      "date": "2026-03-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2026-03-24",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-19",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-01-12",
+      "date": "2026-02-11",
       "category": "hobby",
       "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-29",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-24",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-02-15",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who plays Liv and Maddie?
-[  2.93s][moshi] Oh, that's a fun show! Dove Cameron played both Liv and Maddie, which is pretty impressive.
-[  8.79s][user ] «backchannel» Yeah.
-[  9.15s][user ] Really? Both ⟨ret@10.06s⟩ of them?
-[ 10.62s][moshi] ⟦⚡SPAN@10.80s: Dove Cameron is an American singer and actress, best known for her dual role as both Liv and Maddie Rooney in ⟧ Yes, she did! It was a dual role, and she handled it wonderfully. It’s a testament to her talent.
-[ 17.57s][moshi] She's actually an American singer and actress, best known for playing both Liv and Maddie Rooney in the Disney Channel series.
-[ 25.26s][user ] «backchannel» Uh-huh.
-[ 25.62s][user ] That’s amazing.
-[ 26.36s][moshi] [happy] It really is! Taking on two characters like that requires a lot of dedication and skill.
-[ 32.58s][moshi] I’m checking if there’s more information about other actors in the show, but I’m not finding anything specific right now.
-[ 39.90s][user ] Hmm. Okay.
-[ 40.63s][moshi] Sometimes, shows really center around one or two key performers. It’s not uncommon.
-[ 45.39s][user ] «backchannel» Mm-hmm.
-[ 45.76s][user ] Do you have any advice for encouraging a child who is struggling with reading?
-[ 50.88s][moshi] Creating a relaxed, positive environment is key. Focus on the joy of stories, not just decoding words.
-[ 57.11s][user ] «backchannel» Okay.
-[ 57.47s][user ] That makes sense.
-[ 58.57s][moshi] It does. Reading aloud *to* your child, even as they get older, is a wonderful way to foster a love of books.
-[ 66.62s][user ] «backchannel» Uh-huh.
-[ 66.99s][moshi] And praising their effort—their willingness to try—is more helpful than correcting every mistake. Building confidence is vital.
-[ 73.21s][user ] «backchannel» Okay.
-[ 73.58s][user ] I try to do that, but it’s hard sometimes. ⟨ret@76.73s⟩
-[ 76.87s][moshi] «backchannel» Yeah.
-[ 77.24s][moshi] ⟦⚡SPAN@77.03s: Consistency is crucial when establishing reading routines, and creating a dedicated, quiet space can help chil⟧ Consistency is really crucial when you’re establishing reading routines, and a quiet, dedicated space can help them focus.
-[ 83.83s][user ] «backchannel» Okay.
-[ 84.20s][user ] That’s a good idea about the ⟨ret@86.34s⟩ space.
-[ 86.76s][moshi] I was ⟦⚡SPAN@87.84s: The average rainfall in Buenos Aires, Argentina is 1,210 millimeters (48 inches) per year, with fairly even di⟧ just checking the weather in Buenos Aires, and the average rainfall there is 1,210 millimeters, or 48 inches, per year.
-[ 94.81s][user ] Oh, wow. That’s interesting.
-[ 96.28s][moshi] [curious] It is! Sometimes a little bit of geography can be a nice distraction.
-[101.40s][user ] «backchannel» Yeah.
-[101.77s][user ] I guess so. Maybe we should read a book…
-[105.06s][user ] …about Argentina.
-[105.79s][moshi] That’s a wonderful idea! A story set in a different place can be really inspiring for a young reader.
+[  0.00s][user ] Who has the most followers on Instagram right now? ⟨ret@3.55s⟩
+[  3.70s][moshi] «backchannel» Yeah.
+[  4.11s][moshi] ⟦⚡SPAN@4.30s: Cristiano Ronaldo currently holds the title of the most followed individual on Instagram, with 622 million fol⟧ Well, it looks like Cristiano Ronaldo is currently the most followed person on Instagram, with six hundred and twenty-two million followers. That's quite a reach!
+[ 14.39s][user ] Wow, that’s a lot! Is that more than Selena Gomez?
+[ 18.50s][moshi] «backchannel» Yeah.
+[ 18.91s][moshi] ⟨ret@18.53s⟩ ⟦⚡SPAN@18.83s: Selena Gomez has 431.1 million followers on Instagram as of November 26, 2023, making her the second most-foll⟧ Yes, it is! Selena Gomez has four hundred and thirty-one point one million followers, which puts her in second place.
+[ 27.13s][user ] «backchannel» Yeah, yeah.
+[ 27.95s][user ] What about Kylie ⟨ret@29.31s⟩ Jenner?
+[ 29.60s][moshi] ⟦⚡SPAN@29.54s: Kylie Jenner has 400 million followers on Instagram as of November 2023, ranking her as the third most-followe⟧ Kylie Jenner is also up there, with four hundred million followers—making her the third most followed.
+[ 36.17s][user ] I wonder why those people are so popular…
+[ 39.46s][moshi] «backchannel» Uh-huh.
+[ 39.87s][moshi] ⟨ret@39.53s⟩ It’s ⟦⚡SPAN IRRELEVANT@40.59s: The average high temperature in Fairbanks, Alaska in December is -1.7°C with a low of -15.6°C.⟧ interesting to think about what draws so many people to those accounts, isn’t it?
+[ 46.04s][user ] Yeah, it is. Do they all post about similar things?
+[ 50.15s][moshi] They each have quite distinct styles, but they all seem to share a focus on lifestyle and personal branding—it's very curated.
+[ 58.78s][user ] That makes sense. I’m trying to build my own online presence, but it's hard.
+[ 64.54s][moshi] «interrupted» Building an online presence takes time and consistency—
+[ 67.83s][user ] «interrupts_prev» …do you have any tips for getting more followers?
+[ 71.53s][moshi] It absolutely does! Focusing on creating high-quality content that resonates with your target audience is key.
+[ 78.10s][user ] High-quality content, okay. What counts as high-quality?
+[ 80.98s][moshi] Consistent posting, engaging visuals, and authentic interaction with your followers are all important elements to focus on.
+[ 87.97s][user ] Authentic interaction… that’s good advice. Is there a best time to ⟨ret@92.30s⟩ post?
+[ 92.90s][moshi] ⟦⚡SPAN@92.94s: According to Hootsuite, the best times to post on Instagram are 11 AM EST on Mondays and Thursdays, and 10 AM ⟧ There are some optimal times, actually! Hootsuite suggests eleven AM Eastern Standard Time on Mondays and Thursdays, and ten AM on Wednesdays.
+[101.95s][user ] «backchannel» Yeah.
+[102.36s][user ] Hmm, interesting. I’m usually free in the evenings.
+[105.65s][moshi] Evenings can still work, but you might see better engagement during those peak hours—it’s worth experimenting to see what works for *your* audience.
+[115.10s][user ] «backchannel» Mhm.
+[115.51s][user ] Maybe I’ll try posting at those times. Thanks, Bulo!
+[119.21s][moshi] You're very welcome! Remember, building a genuine connection is more important than just chasing numbers.
+[125.38s][user ] That’s a good reminder. I feel a little less stressed now.
+[129.90s][moshi] «backchannel» Yeah.
+[130.31s][moshi] That’s wonderful to hear! Prioritizing well-being is always the first step towards a healthy online experience.

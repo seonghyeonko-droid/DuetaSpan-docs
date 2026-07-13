@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Milan",
+#     "name": "Lukas",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -18,118 +18,100 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-01",
+#       "date": "2026-06-19",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-03-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2026-03-15",
 #       "category": "home",
-#       "text": "User's home address is 717 Oak Avenue."
+#       "text": "User's home address is 345 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-05",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "title": "Researching a used car",
+#       "date": "2026-03-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 이천이십삼 년에 나온 캐럴 좀 틀어 줘. | S2 좋다. 틀어 줘. | S3 …근처에 괜찮은 식당이 있나? | S4 엄청 멋지다! 북촌 한옥마을 근처 호텔은 어디가 있어?
+# EXAMINER(FDB-v2) 단계: S1 도쿄에서 로스앤젤레스까지 운전하는 데 걸리는 시간을 알려 주실 | S2 음. | S3 …베벌리힐스 호텔에 머물고 있어요. | S4 정말 감사합니다, 달리.
 
-     0.00s  user  발화 시작: 음, 이천이십삼 년에 나온 캐럴 좀 틀어 줘.
-     3.07s  <ret> 발화 (turn1 첫 프레임)
-     3.68s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요! 머라이어 캐리가 이천이십삼 년에 "Christmas (All I Wan
-     3.68s  user  발화 끝
-     4.36s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.74s]: (tool result) {"artist": "Mariah Carey", "title": "Christmas (All I Wa
-    12.43s  user  발화 시작: 흠, 좀 덜…클래식한 거 없어? 좀 더 새로운 거?
-    12.43s  agent 발화 끝
-    16.57s  agent 발화 시작: 네. 좀 더 현대적인 캐럴을 원하시는 건가요?
-    16.57s  user  발화 끝
-    19.79s  user  발화 시작: 어어.
-    19.79s  agent 발화 끝
-    20.25s  user  발화 시작: 응, 지난 몇 년 동안 나온 걸로 해 줘.
-    20.25s  user  발화 끝
-    24.31s  <ret> 발화 (turn7 첫 프레임)
-    24.39s  agent 발화 시작: 네.
-    24.39s  user  발화 끝
-    24.85s  agent 발화 시작: <ret> 아리아나 그란데가 이천이십사 년에 "Santa Tell Me" 리믹스를 발매했어요. 꽤 인기가 많
-    24.85s  agent 발화 끝
-    25.24s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.52s]: (tool result) {"artist": "Ariana Grande", "title": "Santa Tell Me (Rem
-    30.37s  user  발화 시작: 어.
-    30.37s  agent 발화 끝
-    30.83s  user  발화 시작: 좋다. 틀어 줘.
-    30.83s  user  발화 끝
-    32.17s  <ret> 발화 (turn10 첫 프레임)
-    32.21s  agent 발화 시작: <ret> 아리아나 그란데의 "Santa Tell Me (Remix)"를 재생합니다.
-    32.21s  user  발화 끝
-    33.09s  ⚡SPAN 주입 [d'=0.92s / d_lead=3.22s]: (tool result) {"status": "playing", "track": "Santa Tell Me (Remix)", 
-    35.44s  user  발화 시작: 아.
-    35.44s  agent 발화 끝
-    35.90s  agent 발화 시작: 잘 들어하시네요. 음악은 정말 기분을 좋게 하죠, 안 그래요?
-    35.90s  user  발화 끝
-    40.04s  user  발화 시작: 그렇지. 있잖아, 지금 서울 날씨는 어때? 거기로 여행 갈까 생각 중이야.
-    40.04s  agent 발화 끝
-    44.95s  <ret> 발화 (turn14 첫 프레임)
-    45.10s  agent 발화 시작: <ret> 서울은 현재 섭씨 이십팔 도이고, 습도는 육십오 퍼센트, 그리고 시속 칠 점 이 킬로미터의 약한 
-    45.10s  user  발화 끝
-    45.33s  ⚡SPAN 주입 [d'=0.38s / d_lead=8.74s]: (tool result) "28.0°C, humidity 65%, wind 7.2 km/h, condition: partly 
-    53.84s  user  발화 시작: 좋네. 궁금한 게…
-    53.84s  agent 발화 끝
-    55.22s  user  발화 시작: …근처에 괜찮은 식당이 있나?
-    55.22s  user  발화 끝
-    57.06s  agent 발화 시작: 음, "근처"가 어디인지에 따라 다르죠. 혹시 서울로 여행 가는 걸 아직도 생각하고 계신가요?
-    57.06s  user  발화 끝
-    63.05s  user  발화 시작: 응, 가려고! 계획을 좀 세우고 있어.
-    63.05s  agent 발화 끝
-    65.81s  agent 발화 시작: 네.
-    65.81s  user  발화 끝
-    66.27s  agent 발화 시작: 알겠습니다. 그럼 서울에 있는 식당 추천을 원하시는 건가요? —
-    66.27s  agent 발화 끝
-    70.41s  user  발화 시작: …사실, 식당보다 서울에서 흔히 볼 수 없는 흥미로운 관광 명소를 찾아 줘.
-    70.41s  agent 발화 끝
-    75.78s  <ret> 발화 (turn22 첫 프레임)
-    75.93s  agent 발화 시작: <ret> 서울에는 멋진 숨겨진 보석들이 많아요. 북촌 한옥마을은 전통 한옥을 볼 수 있고, 이화 벽화마을은
-    75.93s  user  발화 끝
-    76.73s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.28s]: (tool result) "Bukchon Hanok Village offers traditional Korean houses;
-    84.22s  user  발화 시작: 응응.
-    84.22s  agent 발화 끝
-    84.68s  user  발화 시작: 엄청 멋지다! 북촌 한옥마을 근처 호텔은 어디가 있어?
-    84.68s  user  발화 끝
-    88.20s  <ret> 발화 (turn25 첫 프레임)
-    88.36s  agent 발화 시작: <ret> 호텔 신라 서울은 북촌 한옥마을 근처에 있는 평점이 아주 좋은 곳으로, 삼십오만 원이고 평점은 사
-    88.36s  user  발화 끝
-    89.02s  ⚡SPAN 주입 [d'=0.82s / d_lead=7.82s]: (tool result) {"hotel name": "Hotel Shilla Seoul", "price": "350000 KR
-    96.18s  user  발화 시작: 좀 비싸네. 좀 더…괜찮은 데는 없어?
-    96.18s  agent 발화 끝
-    98.94s  agent 발화 시작: 아, 알겠습니다. 그럼 검색을 좀 더 좁혀 볼게요.
-    98.94s  user  발화 끝
-   102.62s  agent 발화 끝
+     0.00s  user  발화 시작: 도쿄에서 로스앤젤레스까지 운전하는 데 걸리는 시간을 알려 주실 수 있을까요?
+     5.03s  agent 발화 시작: 네.
+     5.03s  user  발화 끝
+     5.52s  <ret> 발화 (turn2 첫 프레임)
+     5.53s  agent 발화 시작: <ret> 도쿄에서 로스앤젤레스까지 운전하는 데는 대략 백칠십삼시간 사십분 정도 걸리고, 거리는 팔천칠백삼십
+     5.53s  agent 발화 끝
+     5.82s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.54s]: (tool result) {"distance": 8738.5, "duration": 625200.0, "units": "sec
+    12.08s  user  발화 시작: 정말… 엄청 긴 운전이네요. 비행기는 어떨까요?
+    12.08s  agent 발화 끝
+    15.09s  agent 발화 시작: 네.
+    15.09s  user  발화 끝
+    15.60s  agent 발화 시작: [laugh] 음, 운전이 좀 멀긴 하네! 비행기가 훨씬 빠르겠지.
+    15.60s  agent 발화 끝
+    20.13s  user  발화 시작: 아.
+    20.13s  agent 발화 끝
+    20.63s  user  발화 시작: 다음 화요일에 도쿄에서 로스앤젤레스까지 가는 편도 항공편을 찾아 주시겠어요?
+    20.63s  user  발화 끝
+    25.11s  <ret> 발화 (turn8 첫 프레임)
+    25.16s  agent 발화 시작: <ret> 일본항공 제이 엘 공 육 일편이 다음 화요일에 도쿄에서 오전 열시에 출발해서 로스앤젤레스에 오전 
+    25.16s  user  발화 끝
+    26.25s  ⚡SPAN 주입 [d'=1.14s / d_lead=9.06s]: (tool result) {"flights": [{"airline": "Japan Airlines", "flight numbe
+    34.21s  user  발화 시작: 음.
+    34.21s  agent 발화 끝
+    34.72s  agent 발화 시작: 그 비행편 괜찮아 보이는데.
+    34.72s  user  발화 끝
+    36.73s  user  발화 시작: 사실, 네. 제 호텔 근처에 괜찮은 스시 레스토랑을 찾아 주실 수 있을까요…
+    36.73s  agent 발화 끝
+    42.77s  user  발화 시작: …베벌리힐스 호텔에 머물고 있어요.
+    42.77s  user  발화 끝
+    44.48s  <ret> 발화 (turn13 첫 프레임)
+    44.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.55s]: (tool result) {"restaurants": [{"name": "Sugarfish by Sushi Nozawa", "
+    44.78s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa가 베벌리힐스 캐논 드라이브 이백십이번지에 있고, 평
+    44.78s  user  발화 끝
+    52.33s  user  발화 시작: 그곳이 딱 좋을 것 같아요. 오늘 밤 일곱시 삼십분에 두 명으로 예약해 주시겠어요?
+    52.33s  agent 발화 끝
+    58.38s  <ret> 발화 (turn15 첫 프레임)
+    58.87s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa에 오늘 밤 일곱시 삼십분에 두 명으로 예약했고, 예
+    58.87s  user  발화 끝
+    59.08s  ⚡SPAN 주입 [d'=0.71s / d_lead=11.07s]: (tool result) {"confirmation number": "RSV-87654"}
+    69.94s  user  발화 시작: 정말 감사합니다, 달리.
+    69.94s  agent 발화 끝
+    71.44s  agent 발화 시작: 천만에! 여행하고 식사 준비하는 데 도움이 되어서 기뻐.
+    71.44s  user  발화 끝
+    75.47s  user  발화 시작: 마지막으로 하나만 여쭤볼게요. 지금 로스앤젤레스 날씨는 어떤가요?
+    75.47s  agent 발화 끝
+    78.52s  <ret> 발화 (turn19 첫 프레임)
+    78.99s  agent 발화 시작: <ret> 로스앤젤레스는 현재 화창하고, 기온은 섭씨 이십팔 점 삼도에 습도는 육십오퍼센트야. [happy]
+    78.99s  user  발화 끝
+    79.37s  ⚡SPAN 주입 [d'=0.85s / d_lead=7.55s]: (tool result) {"temperature": 28.3, "humidity": 65, "condition": "Sunn
+    86.54s  agent 발화 끝

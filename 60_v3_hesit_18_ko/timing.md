@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "정람",
+#     "name": "혜민",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-13",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-05-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-02-03",
+#       "date": "2026-03-06",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-19",
+#       "date": "2026-01-18",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-01",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
+#       "date": "2026-06-20",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-05-03",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -66,67 +56,109 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-15",
-#       "title": "Researching a used car",
+#       "date": "2026-04-18",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 'What Lovers Do'에 피처링한… | S2 음, 에스 제트 에이는 어떤 스타일의 음악을 주로 하나요? | S3 그렇군요… 그럼 에스 제트 에이의 노래 중에서 가장 유명한 곡 | S4 …혹시 그 노래 가사가 어떤 내용인가요? 좀 궁금해졌어요.
+# EXAMINER(FDB-v2) 단계: S1 요즘 잠을 너무 못 자서 큰일이야. 어떻게 하면 좋을까? | S2 아, 푸른 빛 때문에 그렇구나. 알았어. | S3 남극이랑 그린란드? 둘 다 추운 곳이네. | S4 U자형 계곡이라… 신기하다.
 
-     0.00s  user  발화 시작: 혹시 'What Lovers Do'에 피처링한…
-     2.52s  user  발화 시작: …여성 가수가 누구인지 알 수 있을까요?
-     2.52s  user  발화 끝
-     5.24s  <ret> 발화 (turn2 첫 프레임)
-     5.53s  agent 발화 시작: <ret> 'What Lovers Do'에는 에스 제트 에이가 피처링으로 참여했습니다. 아주 매력적인 목소리
-     5.53s  user  발화 끝
-     5.98s  ⚡SPAN 주입 [d'=0.97s / d_lead=6.54s]: SZA is featured on the song "What Lovers Do".
-    12.07s  user  발화 시작: 음, 에스 제트 에이는 어떤 스타일의 음악을 주로 하나요?
-    12.07s  agent 발화 끝
-    16.50s  <ret> 발화 (turn4 첫 프레임)
-    16.60s  agent 발화 시작: <ret> 에스 제트 에이의 음악은 얼터너티브 알앤비라고 많이 표현하는데요, 네오 소울이나 재즈, 힙합 요소
-    16.60s  user  발화 끝
-    17.15s  ⚡SPAN 주입 [d'=0.65s / d_lead=7.55s]: SZA's music is often described as alternative R&B, incorporating eleme
-    24.15s  user  발화 시작: 예.
-    24.15s  agent 발화 끝
-    24.65s  user  발화 시작: 아, 재밌네요. 혹시 에스 제트 에이가 한국 가수와 협업한 적은 없나요?
-    24.65s  user  발화 끝
-    30.19s  agent 발화 시작: 예.
-    30.19s  user  발화 끝
-    30.62s  <ret> 발화 (turn8 첫 프레임)
-    30.69s  agent 발화 시작: <ret> 죄송하지만, 에스 제트 에이가 한국 가수와 협업한 기록은 찾을 수 없었습니다.
-    30.69s  agent 발화 끝
-    31.61s  ⚡SPAN 주입 [d'=0.98s / d_lead=5.53s]: (no information found)
-    36.22s  user  발화 시작: 그렇군요… 그럼 에스 제트 에이의 노래 중에서 가장 유명한 곡은 어떤 건가요?
-    36.22s  agent 발화 끝
-    42.05s  <ret> 발화 (turn10 첫 프레임)
-    42.26s  agent 발화 시작: <ret> 에스 제트 에이의 가장 유명한 곡은 이천이십이년에 발매된 "Kill Bill"이라고 합니다. 많은
-    42.26s  user  발화 끝
-    43.21s  ⚡SPAN 주입 [d'=1.16s / d_lead=7.55s]: SZA's most popular song is generally considered to be "Kill Bill", rel
-    49.81s  user  발화 시작: 'Kill Bill'… 제목이 좀 강렬하네요—
-    49.81s  agent 발화 끝
-    52.32s  user  발화 시작: …혹시 그 노래 가사가 어떤 내용인가요? 좀 궁금해졌어요.
-    52.32s  user  발화 끝
-    56.35s  agent 발화 시작: 네네.
-    56.35s  user  발화 끝
-    56.70s  <ret> 발화 (turn14 첫 프레임)
-    56.85s  agent 발화 시작: <ret> "Kill Bill"은 전 남자친구를 죽이고 싶은 여자의 환상을 다룬 노래인데, 유머러스하고 자기
-    56.85s  agent 발화 끝
-    57.46s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.55s]: "Kill Bill" is a song about a woman fantasizing about killing her ex-b
-    64.40s  user  발화 시작: 네.
-    64.40s  agent 발화 끝
-    64.90s  agent 발화 시작: 에스 제트 에이는 솔직하고 대담한 가사로 유명한 것 같아요.
-    64.90s  user  발화 끝
-    69.43s  agent 발화 시작: 듣는 사람의 공감을 얻는 능력이 뛰어나다고 생각합니다.
-    69.43s  agent 발화 끝
-    72.95s  user  발화 시작: 그렇죠.
-    72.95s  agent 발화 끝
-    73.46s  user  발화 시작: 네, 저도 에스 제트 에이의 음악을 한 번 들어봐야겠네요. 감사합니다.
-    73.46s  user  발화 끝
-    78.49s  agent 발화 시작: 언제든 편하게 다시 찾아주세요. 음악과 함께 행복한 시간 보내시길 바랍니다.
-    78.49s  user  발화 끝
-    83.52s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 잠을 너무 못 자서 큰일이야. 어떻게 하면 좋을까?
+     4.33s  agent 발화 시작: 잠이 부족하시다니 걱정이네요. 편안하게 잠들 수 있도록 도와드릴게요.
+     4.33s  user  발화 끝
+     8.17s  user  발화 시작: 어.
+     8.17s  agent 발화 끝
+     8.65s  user  발화 시작: 음… 그래서, 뭐가 제일 중요해?
+     8.65s  user  발화 끝
+    11.06s  agent 발화 시작: 규칙적인 수면 습관을 만드는 게 중요해요. 매일 같은 시간에 잠자리에 들고 일어나세요.
+    11.06s  user  발화 끝
+    16.82s  user  발화 시작: 응.
+    16.82s  agent 발화 끝
+    17.30s  user  발화 시작: 매일 똑같은 시간이라… 좀 어려울 것 같은데.
+    17.30s  user  발화 끝
+    20.67s  agent 발화 시작: 처음엔 힘들 수 있지만, 몸이 적응하면 훨씬 쉬워질 거예요.
+    20.67s  user  발화 끝
+    24.99s  user  발화 시작: 그럼, 잠들기 전에 뭘 하면 안 돼?
+    24.99s  agent 발화 끝
+    28.25s  <ret> 발화 (turn9 첫 프레임)
+    28.36s  agent 발화 시작: <ret> 잠들기 전에는 전자기기 사용을 줄이는 게 좋아요. 전자기기에서 나오는 푸른 빛이 멜라토닌 생성을 
+    28.36s  user  발화 끝
+    29.27s  ⚡SPAN 주입 [d'=1.02s / d_lead=9.13s]: Limiting screen time before bed is recommended as the blue light emitt
+    37.49s  user  발화 시작: 아, 푸른 빛 때문에 그렇구나. 알았어.
+    37.49s  agent 발화 끝
+    40.38s  agent 발화 시작: 네, 또 따뜻한 물로 샤워하거나 차를 마시는 것도 도움이 될 수 있어요.
+    40.38s  user  발화 끝
+    46.14s  user  발화 시작: 차는 무슨 차가 좋아?
+    46.14s  agent 발화 끝
+    48.07s  agent 발화 시작: 카모마일이나 라벤더 차가 좋아요. 카페인이 없는 허브차를 선택하세요.
+    48.07s  user  발화 끝
+    51.91s  user  발화 시작: 응응.
+    51.91s  agent 발화 끝
+    52.39s  user  발화 시작: 카모마일 차, 한번 마셔봐야겠다.
+    52.39s  user  발화 끝
+    54.31s  agent 발화 시작: 잠자리에 들기 전에 가벼운 스트레칭을 하는 것도 도움이 될 수 있답니다.
+    54.31s  user  발화 끝
+    59.60s  user  발화 시작: 스트레칭도 좋네. 혹시, 지구에서 가장 큰 빙상이 어디에 있어?
+    59.60s  agent 발화 끝
+    63.78s  <ret> 발화 (turn18 첫 프레임)
+    63.93s  agent 발화 시작: <ret> 지구에서 가장 큰 빙상은 남극과 그린란드에 있어요.
+    63.93s  user  발화 끝
+    64.75s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.36s]: The largest ice sheets on Earth are found in Antarctica and Greenland.
+    67.29s  user  발화 시작: 대박.
+    67.29s  agent 발화 끝
+    67.77s  user  발화 시작: 남극이랑 그린란드? 둘 다 추운 곳이네.
+    67.77s  user  발화 끝
+    70.66s  agent 발화 시작: 네, 맞아요. 빙하는 추운 지역에서 형성되거든요.
+    70.66s  user  발화 끝
+    73.54s  user  발화 시작: 응.
+    73.54s  agent 발화 끝
+    74.02s  user  발화 시작: 빙하가 녹으면 어떻게 돼?
+    74.02s  user  발화 끝
+    75.94s  agent 발화 시작: 빙하가 녹으면 해수면이 상승해서 많은 지역이 물에 잠길 수 있어요.
+    75.94s  user  발화 끝
+    80.75s  user  발화 시작: 해수면 상승이라니, 무서운데.
+    80.75s  agent 발화 끝
+    82.19s  agent 발화 시작: 네, 지구 온난화 때문에 빙하가 빠르게 녹고 있어서 심각한 문제랍니다—
+    82.19s  user  발화 끝
+    87.00s  user  발화 시작: … 잠깐만, 혹시 서울에도 빙하가 있었던 적이 있어?
+    87.00s  agent 발화 끝
+    90.85s  agent 발화 시작: 네.
+    90.85s  user  발화 끝
+    91.11s  <ret> 발화 (turn29 첫 프레임)
+    91.33s  agent 발화 시작: <ret> 서울에도 과거에 빙하가 있었던 적이 있어요.
+    91.33s  agent 발화 끝
+    91.49s  ⚡SPAN 주입 [d'=0.39s / d_lead=2.88s]: During the Pleistocene epoch, glaciers formed in the mountains surroun
+    94.21s  agent 발화 시작: 서울 주변 산에서 빙하가 형성되었던 적이 있고, U자형 계곡과 빙퇴구 같은 지질학적 특징을 남겼다고 해요.
+    94.21s  agent 발화 끝
+   101.42s  user  발화 시작: 응.
+   101.42s  agent 발화 끝
+   101.90s  user  발화 시작: U자형 계곡이라… 신기하다.
+   101.90s  user  발화 끝
+   103.34s  agent 발화 시작: 네, 지금은 보기 어렵지만, 과거의 흔적을 찾아볼 수 있답니다.
+   103.34s  user  발화 끝
+   107.67s  user  발화 시작: 응.
+   107.67s  agent 발화 끝
+   108.15s  user  발화 시작: 그럼, 빙하가 계속 녹으면 앞으로 어떻게 될까?
+   108.15s  user  발화 끝
+   111.51s  agent 발화 시작: 빙하가 계속 녹으면 기후 변화가 더욱 심해지고, 해수면 상승으로 인해 많은 도시가 위협받을 수 있어요.
+   111.51s  user  발화 끝
+   118.72s  user  발화 시작: 어.
+   118.72s  agent 발화 끝
+   119.20s  user  발화 시작: 정말 걱정되네. 잠을 잘 자는 것도 중요하지만, 환경 문제도 신경 써야겠다.
+   119.20s  user  발화 끝
+   124.49s  agent 발화 시작: 음.
+   124.49s  user  발화 끝
+   124.97s  agent 발화 시작: 네, 맞아요. 작은 실천들이 모여 큰 변화를 만들 수 있답니다.
+   124.97s  agent 발화 끝
+   129.78s  user  발화 시작: 그치.
+   129.78s  agent 발화 끝
+   130.26s  user  발화 시작: 고마워, 브레릴. 덕분에 마음이 좀 편해졌어.
+   130.26s  user  발화 끝
+   133.14s  agent 발화 시작: 도움이 되었다니 기쁘네요. 편안한 밤 보내세요.
+   133.14s  user  발화 끝
+   136.03s  agent 발화 끝

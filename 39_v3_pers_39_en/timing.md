@@ -4,93 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Anton",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-04-19",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2026-05-27",
-#       "category": "home",
-#       "text": "User's home address is 696 Maple Drive."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-02-24",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-02-16",
+#       "date": "2026-01-15",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-01-06",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-08",
+#       "date": "2026-05-27",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-17",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly *can* you do? I’m jus | S2 Mentioning it? What do I even *say | S3 Hmm. I don’t know… I’m worried the | S4 I… I think I have a friend like th
 
-     0.00s  agent 발화 시작: Hello Anton, I’m Siara, and I’m here to help you build stron
-     7.14s  user  발화 시작: What exactly *can* you do? I’m just… a bit lonely, I guess.
-     7.14s  agent 발화 끝
-    11.42s  agent 발화 시작: [happy] I’m glad you asked, Anton. I can offer advice on mak
-    11.42s  user  발화 끝
-    22.13s  user  발화 시작: It’s just… I always feel like I’m the one reaching out. It’s
-    22.13s  agent 발화 끝
-    26.77s  agent 발화 시작: That’s a very common feeling. It's wonderful you take the in
-    26.77s  user  발화 끝
-    36.04s  user  발화 시작: Mentioning it? What do I even *say*? Sounds awkward.
-    36.04s  agent 발화 끝
-    39.26s  agent 발화 시작: It can feel that way, but a simple, “Hey, I’ve been doing mo
-    39.26s  user  발화 끝
-    51.39s  user  발화 시작: Oh.
-    51.39s  agent 발화 끝
-    51.75s  user  발화 시작: Hmm. I don’t know… I’m worried they’ll think I’m needy.
-    51.75s  user  발화 끝
-    55.32s  agent 발화 시작: [sigh] That’s a valid concern, Anton. But true friends won't
-    55.32s  user  발화 끝
-    65.31s  user  발화 시작: Okay, okay. That makes sense. But what if they *don’t* respo
-    65.31s  agent 발화 끝
-    69.59s  agent 발화 시작: Yeah.
-    69.59s  user  발화 끝
-    69.95s  agent 발화 시작: It’s possible, and it’s okay to feel disappointed. But their
-    69.95s  agent 발화 끝
-    79.58s  user  발화 시작: Yeah.
-    79.58s  agent 발화 끝
-    79.94s  agent 발화 시작: [curious] Sometimes, Anton, we hold onto friendships that ar
-    79.94s  user  발화 끝
-    90.65s  user  발화 시작: I… I think I have a friend like that. I'll think about what 
-    90.65s  agent 발화 끝
-    96.71s  user  발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Andrea! I'm Areli, and I'm here to support you wi
+     7.41s  user  발화 시작: I’ve been feeling so tired lately, and I don’t know where to
+     7.41s  agent 발화 끝
+    13.41s  agent 발화 시작: It’s completely understandable to feel that way, Andrea. Oft
+    13.41s  user  발화 끝
+    23.28s  user  발화 시작: Uh-huh.
+    23.28s  agent 발화 끝
+    23.64s  agent 발화 시작: We can explore those areas together. A good starting point i
+    23.64s  user  발화 끝
+    29.99s  user  발화 시작: …but I really hate drinking plain water!
+    29.99s  agent 발화 끝
+    32.46s  agent 발화 시작: That’s perfectly alright! Many people find it difficult. We 
+    32.46s  user  발화 끝
+    42.34s  user  발화 시작: Yeah.
+    42.34s  agent 발화 끝
+    42.69s  user  발화 시작: Herbal teas sound nice. Do certain kinds give you more energ
+    42.69s  user  발화 끝
+    47.27s  agent 발화 시작: Mhm.
+    47.27s  user  발화 끝
+    47.63s  agent 발화 시작: [happy] Absolutely! Peppermint and ginger teas are both know
+    47.63s  agent 발화 끝
+    61.03s  agent 발화 끝

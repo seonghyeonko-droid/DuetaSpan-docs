@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "유정",
+#     "name": "은진",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -18,143 +18,111 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-05-26",
+#       "date": "2026-04-25",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "date": "2026-03-04",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-01-02",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-14",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 디시 네트워크에서 nbcsn 채널 번호가 어떻게 되나요? | S2 오십 삼십 이십 예산법이요? 처음 듣는 것 같아요. | S3 생활비가 얼마나 될까요? | S4 대중교통은 괜찮은데, 식비를 줄이는 건 힘들 것 같아요.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 오레아크스님. 잠을 잘 자고 싶은데 어떻게 해야  | S2 아, 사우스캐롤라이나요. 그쪽은 어때요? | S3 아, 그렇군요. 저녁에는 스마트폰을 잘 안 보려고 노력해야겠어 | S4 음… 부산 근처의 조용한 바닷가 마을은 없을까요?
 
-     0.00s  user  발화 시작: 혹시 디시 네트워크에서 nbcsn 채널 번호가 어떻게 되나요?
-     4.00s  agent 발화 시작: 맞아요.
-     4.00s  user  발화 끝
-     4.44s  <ret> 발화 (turn2 첫 프레임)
-     4.50s  agent 발화 시작: <ret> 디시 네트워크에서 nbcsn 채널 번호는 백오십구번입니다. 혹시 다른 채널 번호도 궁금하신가요?
-     4.50s  agent 발화 끝
-     5.51s  ⚡SPAN 주입 [d'=1.08s / d_lead=5.50s]: 159.
-    10.00s  user  발화 시작: 아, 네, 감사합니다.
-    10.00s  agent 발화 끝
-    11.50s  agent 발화 시작: 천만에요.
-    11.50s  user  발화 끝
-    12.00s  user  발화 시작: 요즘 돈 관리가 너무 힘들어요.
-    12.00s  agent 발화 끝
-    14.50s  agent 발화 시작: [happy] 돈 관리가 어렵다고 느끼시는군요. 드로라크스입니다. 제가 도와드릴 수 있을 것 같아요.
-    14.50s  user  발화 끝
-    20.51s  user  발화 시작: 아.
-    20.51s  agent 발화 끝
-    21.01s  user  발화 시작: 어떻게 하면 좋을까요?
-    21.01s  user  발화 끝
-    22.51s  agent 발화 시작: 우선 예산을 세우는 것부터 시작해 보는 건 어떠세요? 오십 삼십 이십 예산법을 아시나요?
-    22.51s  user  발화 끝
-    29.01s  user  발화 시작: 음.
-    29.01s  agent 발화 끝
-    29.51s  user  발화 시작: 오십 삼십 이십 예산법이요? 처음 듣는 것 같아요.
-    29.51s  user  발화 끝
-    33.44s  <ret> 발화 (turn12 첫 프레임)
-    33.51s  agent 발화 시작: <ret> 오십 삼십 이십 예산법은 수입의 오십퍼센트를 필수 지출에, 삼십퍼센트를 원하는 것에, 그리고 이십
-    33.51s  user  발화 끝
-    34.67s  ⚡SPAN 주입 [d'=1.24s / d_lead=10.00s]: The 50/30/20 rule is a simple budgeting method where 50% of your incom
-    43.51s  user  발화 시작: 예.
-    43.51s  agent 발화 끝
-    44.01s  user  발화 시작: 아, 그렇군요.
-    44.01s  user  발화 끝
-    45.01s  agent 발화 시작: 네, 간단하죠? 필수 지출은 집세나 식비처럼 꼭 필요한 것들이고, 원하는 것은 취미나 외식 같은 것들입니다.
-    45.01s  user  발화 끝
-    52.51s  user  발화 시작: 맞아요.
-    52.51s  agent 발화 끝
-    53.01s  user  발화 시작: 그럼 저축은 뭘까요?
-    53.01s  user  발화 끝
-    54.51s  agent 발화 시작: 저축은 미래를 위한 준비입니다. 비상 자금이나 투자 등을 포함하죠.
-    54.51s  user  발화 끝
-    59.01s  user  발화 시작: 맞아요.
-    59.01s  agent 발화 끝
-    59.51s  user  발화 시작: 비상 자금이 왜 중요해요?
-    59.51s  user  발화 끝
-    60.94s  <ret> 발화 (turn21 첫 프레임)
-    61.52s  agent 발화 시작: <ret> 비상 자금은 예상치 못한 의료비나 실직과 같은 상황에 대비하여 재정적 안정을 제공하고 빚을 막아주
-    61.52s  user  발화 끝
-    62.27s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.50s]: An emergency fund is crucial for unexpected expenses like medical bill
-    70.02s  user  발화 시작: 예.
-    70.02s  agent 발화 끝
-    70.52s  agent 발화 시작: [curious] 비상 자금이 없으면 갑작스러운 상황에 당황할 수 있어요. 최소 세개월에서 여섯개월치 생활비
-    70.52s  user  발화 끝
-    78.52s  user  발화 시작: 네.
-    78.52s  agent 발화 끝
-    79.02s  user  발화 시작: 생활비가 얼마나 될까요?
-    79.02s  user  발화 끝
-    80.52s  agent 발화 시작: 생활비는 개인의 상황에 따라 다르지만, 월 고정 지출을 기준으로 계산해 볼 수 있습니다.
-    80.52s  user  발화 끝
-    87.02s  user  발화 시작: 지금 월세가 팔십만 원이고, 식비가 사십만 원이에요.
-    87.02s  agent 발화 끝
-    90.52s  agent 발화 시작: 팔십만 원의 월세와 사십만 원의 식비군요. 다른 고정 지출은 어떤 것들이 있나요?
-    90.52s  user  발화 끝
-    96.52s  user  발화 시작: 교통비가 이십만 원 정도 들고, 통신비가 십만 원이에요.
-    96.52s  agent 발화 끝
-   100.53s  agent 발화 시작: 교통비 이십만 원, 통신비 십만 원이군요. 그럼 한 달 고정 지출은 총 백오십만 원이네요.
-   100.53s  user  발화 끝
-   107.53s  user  발화 시작: 네.
-   107.53s  agent 발화 끝
-   108.03s  user  발화 시작: 맞아요.
-   108.03s  user  발화 끝
-   108.27s  <ret> 발화 (turn33 첫 프레임)
-   108.53s  agent 발화 시작: <ret> 예를 들어, 대중교통을 이용하거나 식비를 절약하는 것이죠.
-   108.53s  user  발화 끝
-   109.13s  ⚡SPAN 주입(IRRELEVANT) [d'=0.85s / d_lead=3.50s]: The average temperature in Anchorage, Alaska is 36.5°F with a humidity
-   112.03s  user  발화 시작: 네.
-   112.03s  agent 발화 끝
-   112.53s  user  발화 시작: 대중교통은 괜찮은데, 식비를 줄이는 건 힘들 것 같아요.
-   112.53s  user  발화 끝
-   116.53s  agent 발화 시작: 식비를 줄이는 것이 어렵다면, 다른 부분에서 절약할 수 있는 방법을 찾아봐야 합니다.
-   116.53s  user  발화 끝
-   122.53s  user  발화 시작: 예.
-   122.53s  agent 발화 끝
-   123.03s  user  발화 시작: 어디서 절약할 수 있을까요?
-   123.03s  user  발화 끝
-   125.03s  agent 발화 시작: 불필요한 구독 서비스를 해지하거나, 취미 생활에 쓰는 돈을 줄이는 것도 좋은 방법입니다.
-   125.03s  user  발화 끝
-   131.03s  user  발화 시작: 맞아요.
-   131.03s  agent 발화 끝
-   131.53s  user  발화 시작: 구독 서비스는 이미 다 해지했어요.
-   131.53s  user  발화 끝
-   134.03s  agent 발화 시작: 이미 구독 서비스를 해지하셨군요. 그럼 취미 생활에 쓰는 돈을 조금 줄여보는 건 어떠세요?
-   134.03s  user  발화 끝
-   140.54s  user  발화 시작: 음… 그건 좀 생각해 봐야겠어요.
-   140.54s  agent 발화 끝
-   143.04s  agent 발화 시작: [happy] 천천히 생각해보세요. 중요한 것은 자신에게 맞는 예산 계획을 세우는 것입니다.
-   143.04s  user  발화 끝
-   148.54s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 오레아크스님. 잠을 잘 자고 싶은데 어떻게 해야 할까요?
+     4.94s  agent 발화 시작: 안녕하세요! 편안한 잠을 위한 루틴을 만드는 게 중요해요. 규칙적인 수면 시간을 정하는 것부터 시작해 보세요
+     4.94s  user  발화 끝
+    13.17s  user  발화 시작: 규칙적인 수면 시간이라… 쉽지 않네요.
+    13.17s  agent 발화 끝
+    15.85s  <ret> 발화 (turn3 첫 프레임)
+    15.91s  agent 발화 시작: <ret> 마이애미 해변의 산책로는 일 점 구킬로미터 길이로, 상점과 레스토랑, 오락실 등 다양한 볼거리를 
+    15.91s  user  발화 끝
+    16.92s  ⚡SPAN 주입 [d'=1.08s / d_lead=8.23s]: The Myrtle Beach boardwalk is 1.2 miles long and offers a variety of a
+    24.14s  user  발화 시작: 마이애미 해변요? 저는 마이애미에 가본 적 없어요.
+    24.14s  agent 발화 끝
+    27.98s  agent 발화 시작: [surprised] 죄송합니다. 혼동을 드렸네요. 마이애미가 아니라 마이틀 비치였어요. 사우스캐롤라이나에 
+    27.98s  user  발화 끝
+    34.02s  user  발화 시작: 아, 사우스캐롤라이나요. 그쪽은 어때요?
+    34.02s  agent 발화 끝
+    36.21s  agent 발화 시작: [curious] 사우스캐롤라이나는 아름다운 해변과 역사적인 도시로 유명해요. 특히 마이틀 비치는 가족 여행
+    36.21s  user  발화 끝
+    43.90s  agent 발화 시작: 죄송해요. 사우스캐롤라이나의 다른 정보는 찾을 수 없었어요.
+    43.90s  agent 발화 끝
+    47.74s  user  발화 시작: 네네.
+    47.74s  agent 발화 끝
+    48.28s  user  발화 시작: 음…
+    48.28s  user  발화 끝
+    48.83s  agent 발화 시작: 잠으로 다시 돌아가 볼까요? 잠들기 전에 스크린 타임을 줄이는 것도 중요해요.
+    48.83s  user  발화 끝
+    54.87s  user  발화 시작: 네.
+    54.87s  agent 발화 끝
+    55.42s  user  발화 시작: 스크린 타임요? 스마트폰이나 티 브이를 보는 건가요?
+    55.42s  user  발화 끝
+    59.26s  agent 발화 시작: 네, 맞아요. 스마트폰이나 티 브이에서 나오는 블루라이트는 수면을 방해할 수 있거든요.
+    59.26s  user  발화 끝
+    65.29s  user  발화 시작: 네.
+    65.29s  agent 발화 끝
+    65.84s  user  발화 시작: 아, 그렇군요. 저녁에는 스마트폰을 잘 안 보려고 노력해야겠어요.
+    65.84s  user  발화 끝
+    70.21s  <ret> 발화 (turn18 첫 프레임)
+    70.23s  agent 발화 시작: 네.
+    70.23s  user  발화 끝
+    70.78s  agent 발화 시작: <ret> 마이틀 비치, 사우스캐롤라이나의 호텔 객실 평균 가격은 일박에 백삼십구달러 정도라고 해요.
+    70.78s  agent 발화 끝
+    71.44s  ⚡SPAN 주입 [d'=1.24s / d_lead=6.04s]: The average cost of a hotel room in Myrtle Beach, SC is $139 per night
+    76.82s  user  발화 시작: 호텔 가격이 백삼십구달러나 하네요.
+    76.82s  agent 발화 끝
+    79.01s  agent 발화 시작: [sigh] 마이틀 비치는 인기 있는 휴양지라서 가격이 조금 높은 편이에요.
+    79.01s  user  발화 끝
+    84.50s  user  발화 시작: 그럼 다른 곳은 어떨까요? 조금 더 저렴한 곳을 찾아볼까요?
+    84.50s  agent 발화 끝
+    89.44s  agent 발화 시작: 네, 물론이죠. 다른 도시나 지역을 알아볼 수도 있어요. 어디를 선호하시나요?
+    89.44s  user  발화 끝
+    94.92s  user  발화 시작: 네.
+    94.92s  agent 발화 끝
+    95.47s  user  발화 시작: 음… 부산 근처의 조용한 바닷가 마을은 없을까요?
+    95.47s  user  발화 끝
+    98.72s  <ret> 발화 (turn25 첫 프레임)
+    99.19s  ⚡SPAN 주입(IRRELEVANT) [d'=0.46s / d_lead=6.04s]: The population of Ulaanbaatar, Mongolia is approximately 1.6 million p
+    99.31s  agent 발화 시작: <ret> [curious] 부산 근처의 조용한 바닷가 마을이라… 기장이나 해운대가 괜찮을 것 같아요.
+    99.31s  user  발화 끝
+   105.35s  agent 발화 시작: 기장이나 해운대는 부산에서 가까워서 교통도 편리하고, 조용하게 휴식을 취하기에도 좋답니다.
+   105.35s  agent 발화 끝
+   110.84s  user  발화 시작: 예.
+   110.84s  agent 발화 끝
+   111.38s  user  발화 시작: 기장은 어때요?
+   111.38s  user  발화 끝
+   112.48s  agent 발화 시작: 기장은 해산물이 유명하고, 아름다운 해변이 많아요. 특히 대변항은 싱싱한 해산물을 맛볼 수 있는 곳으로 유명
+   112.48s  user  발화 끝
+   120.71s  agent 발화 시작: [laugh] 해산물을 좋아하신다면 기장에 가시면 정말 만족하실 거예요.
+   120.71s  agent 발화 끝
+   125.10s  user  발화 시작: 예.
+   125.10s  agent 발화 끝
+   125.65s  user  발화 시작: 해산물을 정말 좋아해요! 기장으로 가봐야겠네요.
+   125.65s  user  발화 끝
+   128.39s  agent 발화 시작: 아주 좋은 선택이에요! 기장에서 편안하고 즐거운 시간을 보내시길 바랍니다.
+   128.39s  user  발화 끝
+   133.33s  agent 발화 끝

@@ -1,10 +1,10 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Hunami, a upbeat and supportive counselor who helps people with career choices and work stress. You can explain resume basics, common interview questions, spotting transferable skills. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Kiami, a encouraging and non-judgmental life coach who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Zoe",
+    "name": "Jordan",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -12,80 +12,67 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "GBP (£)"
     },
     "nationality": "British",
-    "gender": "female",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "home",
-      "text": "User's home address is 430 Maple Drive."
-    },
-    {
-      "date": "2026-03-17",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-03-13",
+      "date": "2026-04-17",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-02-20",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in August."
+      "date": "2026-03-20",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-01-24",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-02-19",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-12-22",
+      "date": "2026-02-17",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-12-11",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-05",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-08",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm feeling really stuck in my career. I've been a teacher for ten years…
-[  6.21s][user ] …but I'm burned out.
-[  7.98s][moshi] «backchannel» Right.
-[  8.43s][moshi] It's completely understandable to feel that way after a decade in teaching. Many skills you’ve honed are valuable elsewhere.
-[ 16.85s][user ] «backchannel» Yeah.
-[ 17.30s][user ] Like what, exactly? It feels like all I know is lesson planning and classroom management. ⟨ret@23.78s⟩
-[ 23.95s][moshi] ⟦⚡SPAN@24.32s: Transferable skills from teaching include communication, patience, organization, problem-solving, and adaptabi⟧ You’ve built a really strong skillset, actually—communication, patience, and organization are huge assets in many different roles.
-[ 31.49s][user ] That's... good to hear. I was thinking about something completely different, though.
-[ 36.81s][moshi] [curious] Oh? What kind of different direction are you considering?
-[ 41.25s][user ] «backchannel» Right.
-[ 41.69s][user ] I've always been interested in coding. Is that a realistic shift for someone like me?
-[ 48.35s][moshi] «backchannel» Right.
-[ 48.79s][moshi] ⟨ret@48.61s⟩ ⟦⚡SPAN@49.39s: A career change to coding from teaching is feasible, requiring focused learning—online courses, bootcamps, or ⟧ Coding is absolutely a possibility! It will take some dedicated learning—courses, bootcamps, or self-study—but it's very achievable.
-[ 56.33s][user ] «backchannel» Mhm.
-[ 56.77s][user ] Are there any coding bootcamps you’d recommend, maybe ones with good career support?
-[ 62.54s][moshi] «backchannel» Yeah, yeah.
-[ 63.43s][moshi] ⟨ret@63.22s⟩ ⟦⚡SPAN@64.00s: (tool result) General Assembly and Flatiron School consistently rank among the top coding bootcamps, offering ⟧ I found some highly-rated options—General Assembly and Flatiron School—both offer strong career support like resume help and interview prep.
-      CALL: {"function": "search", "arguments": {"query": "best coding bootcamps with career support"}}
-[ 71.85s][user ] That’s helpful. What’s the average salary for a junior web developer in ⟨ret@77.34s⟩ Seattle?
-[ 77.62s][moshi] ⟦⚡SPAN@78.09s: (tool result) The average salary for a junior web developer in Seattle, Washington, is $78,321 as of July 8, 2⟧ A junior web developer in Seattle can expect to earn around $78,321 a year, with a typical range from $62,000 to $95,000.
-      CALL: {"function": "search", "arguments": {"query": "average salary junior web developer Seattle"}}
-[ 87.38s][user ] That's… actually not bad. I'm worried about the time commitment though.
-[ 92.26s][moshi] «interrupted» It's smart to consider the time investment—
-[ 95.36s][user ] «interrupts_prev» …do they offer part-time options at those bootcamps?
-[ 98.91s][moshi] [surprised] Yes, both General Assembly and Flatiron School do offer part-time programs, allowing you to learn while still working or managing other commitments. They typically run evenings and weekends.
-[111.77s][user ] Okay, that’s a relief. Can you send me links to their ⟨ret@116.82s⟩ websites?
-[117.09s][moshi] ⟦⚡SPAN@117.03s: (tool result) The official website for General Assembly is generalassemb.ly, offering information on courses, ⟧ General Assembly's website is generalassemb.ly. You'll find details on their courses and career support there. And Flatiron School's website is flatironschool.com. It has information on their bootcamps and student success stories.
-      CALL: {"function": "search", "arguments": {"query": "General Assembly website"}}
+[  0.00s][user ] Can you tell me about the traffic in the area bounded by thirty four point zero five two two, negative one hundred eighteen point two four three seven, thirty four point zero seven two two, and negative one hundred eighteen point two six three ⟨ret@15.42s⟩ seven?
+[ 15.66s][moshi] «backchannel» Uh-huh.
+[ 16.01s][moshi] ⟦⚡SPAN@16.19s: (tool result) Traffic is currently moderate in that area of Los Angeles, California, with average speeds rangi⟧ [happy] Okay, I'm seeing moderate traffic in that area of Los Angeles, with speeds between twenty-five and thirty-five miles per hour. Would you like me to check for alternative routes?
+      CALL: {"function": "map_search_places", "arguments": {"query": "traffic in the area bounded by 34.0522, -118.2437, 34.0722, -118.2637"}}
+[ 26.45s][user ] Yes, please. What's the fastest way to get to Grand Central Market from there?
+[ 31.32s][moshi] «backchannel» Yeah.
+[ 31.67s][moshi] ⟨ret@31.48s⟩ ⟦⚡SPAN@31.61s: (tool result) The fastest route to Grand Central Market is via the 101 North, estimated travel time is 15-20 m⟧ The quickest way to Grand Central Market is heading north on the 101, which should take fifteen to twenty minutes for eight point two miles. It looks like a pretty straightforward drive.
+      CALL: {"function": "map_directions", "arguments": {"origin": "34.0522, -118.2437", "destination": "Grand Central Market"}}
+[ 42.81s][user ] That sounds good. Can you find me a highly-rated Korean restaurant near Grand Central Market?
+[ 48.03s][moshi] «backchannel» Yeah.
+[ 48.38s][moshi] ⟨ret@48.20s⟩ [curious] I ⟦⚡SPAN@49.37s: (tool result) Park's BBQ is a highly-rated Korean BBQ restaurant located at 955 S Vermont Ave, Los Angeles, CA⟧ found Park's BBQ, a Korean BBQ spot with a four point five star rating, at nine fifty-five South Vermont Avenue in Los Angeles. It's very popular!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Grand Central Market", "cuisine": "Korean", "rating": "high"}}

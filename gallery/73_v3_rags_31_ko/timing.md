@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "혜국",
+#     "name": "재재",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,57 +13,47 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-05-29",
+#       "date": "2026-03-22",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-02-08",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-01-27",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-01-22",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-21",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-20",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 게임 오브 스론즈에서 로브 스타크 부인을 연기한 사람은 누구야?
-     3.58s  agent 발화 시작: 그렇죠.
-     3.58s  user  발화 끝
-     3.78s  <ret> 발화 (turn2 첫 프레임)
-     3.98s  agent 발화 시작: <ret> 로브 스타크의 부인 역할은 탈리사 메이거가 맡았어요.
-     3.98s  agent 발화 끝
-     4.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.79s]: Talisa Maegyr was a fictional character in the fourth and fifth season
-     6.77s  agent 발화 끝
+     0.00s  user  발화 시작: 그 노래, 아이 돈트 워너 노 부른 사람이 누구야?
+     3.30s  <ret> 발화 (turn1 첫 프레임)
+     3.78s  agent 발화 시작: <ret> 그 노래는 마리오 위넌스가 불렀어요. [happy] 혹시 다른 노래도 궁금하신가요?
+     3.78s  user  발화 끝
+     3.94s  ⚡SPAN 주입 [d'=0.64s / d_lead=4.20s]: Mario Winans is an American record producer, songwriter, and singer.
+     7.98s  agent 발화 끝

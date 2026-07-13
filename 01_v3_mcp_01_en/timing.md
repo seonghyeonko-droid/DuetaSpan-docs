@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Milan",
+#     "name": "Lukas",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -18,118 +18,100 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-08",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-01",
+#       "date": "2026-06-19",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-03-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2026-03-15",
 #       "category": "home",
-#       "text": "User's home address is 717 Oak Avenue."
+#       "text": "User's home address is 345 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-05",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "title": "Researching a used car",
+#       "date": "2026-03-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Play me some holiday songs that ca | S2 That sounds good. Play it. | S3 …if there are any good restaurants | S4 That sounds amazing! What about ho
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the driving time f | S2 Hmm. | S3 …near my hotel? I’m staying at the | S4 Excellent. Thank you, Dali.
 
-     0.00s  user  발화 시작: Play me some holiday songs that came out in two thousand twe
-     4.44s  <ret> 발화 (turn1 첫 프레임)
-     4.47s  agent 발화 시작: <ret> I can certainly help with that! Mariah Carey released 
-     4.47s  user  발화 끝
-     5.28s  ⚡SPAN 주입 [d'=0.84s / d_lead=9.30s]: (tool result) {"artist": "Mariah Carey", "title": "Christmas (All I Wa
-    13.77s  user  발화 시작: Hmm, anything a little less…classic? Something newer?
-    13.77s  agent 발화 끝
-    16.38s  agent 발화 시작: [curious] Certainly. Are you hoping for a more modern take o
-    16.38s  user  발화 끝
-    21.21s  user  발화 시작: Yeah.
-    21.21s  agent 발화 끝
-    21.59s  user  발화 시작: Yeah, maybe something from the last couple of years.
-    21.59s  user  발화 끝
-    24.94s  agent 발화 시작: Yeah.
-    24.94s  user  발화 끝
-    24.99s  <ret> 발화 (turn7 첫 프레임)
-    25.25s  ⚡SPAN 주입 [d'=1.39s / d_lead=5.95s]: (tool result) {"artist": "Ariana Grande", "title": "Santa Tell Me (Rem
-    25.31s  agent 발화 시작: <ret> Ariana Grande released a remix of "Santa Tell Me" in t
-    25.31s  agent 발화 끝
-    31.26s  user  발화 시작: Yeah.
-    31.26s  agent 발화 끝
-    31.63s  user  발화 시작: That sounds good. Play it.
-    31.63s  user  발화 끝
-    33.05s  <ret> 발화 (turn10 첫 프레임)
-    33.49s  agent 발화 시작: <ret> "Santa Tell Me (Remix)" by Ariana Grande is now playin
-    33.49s  user  발화 끝
-    33.81s  ⚡SPAN 주입 [d'=1.30s / d_lead=3.72s]: (tool result) {"status": "playing", "track": "Santa Tell Me (Remix)", 
-    37.22s  user  발화 시작: Yeah.
-    37.22s  agent 발화 끝
-    37.59s  agent 발화 시작: [happy] I'm glad you like it. Music really does lift the spi
-    37.59s  user  발화 끝
-    42.80s  user  발화 시작: It does. Hey, what’s the weather like in Seoul right now? I’
-    42.80s  agent 발화 끝
-    48.28s  <ret> 발화 (turn14 첫 프레임)
-    48.75s  agent 발화 시작: <ret> Seoul is currently twenty-eight degrees Celsius, with 
-    48.75s  user  발화 끝
-    48.77s  ⚡SPAN 주입 [d'=0.49s / d_lead=8.56s]: (tool result) "28.0°C, humidity 65%, wind 7.2 km/h, condition: partly 
-    57.31s  user  발화 시작: That sounds lovely. I wonder…
-    57.31s  agent 발화 끝
-    59.17s  user  발화 시작: …if there are any good restaurants nearby…
-    59.17s  user  발화 끝
-    61.78s  agent 발화 시작: [curious] Well, that depends on where "nearby" is. Are you s
-    61.78s  user  발화 끝
-    68.11s  user  발화 시작: Yes, I am! I’m starting to plan it.
-    68.11s  agent 발화 끝
-    71.08s  agent 발화 시작: Yeah.
-    71.08s  user  발화 끝
-    71.46s  agent 발화 시작: I see. So, you’d like recommendations for restaurants in Seo
-    71.46s  agent 발화 끝
-    75.55s  user  발화 시작: …Actually, before restaurants, can you find me some interest
-    75.55s  agent 발화 끝
-    82.57s  <ret> 발화 (turn22 첫 프레임)
-    82.62s  agent 발화 시작: <ret> Seoul has some wonderful hidden gems. Bukchon Hanok Vi
-    82.62s  user  발화 끝
-    82.87s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.19s]: (tool result) "Bukchon Hanok Village offers traditional Korean houses;
-    90.81s  user  발화 시작: Okay.
-    90.81s  agent 발화 끝
-    91.18s  user  발화 시작: That sounds amazing! What about hotels near Bukchon Hanok Vi
-    91.18s  user  발화 끝
-    94.52s  <ret> 발화 (turn25 첫 프레임)
-    94.90s  agent 발화 시작: <ret> The Hotel Shilla Seoul is a highly-rated option near B
-    94.90s  user  발화 끝
-    95.21s  ⚡SPAN 주입 [d'=1.10s / d_lead=10.79s]: (tool result) {"hotel name": "Hotel Shilla Seoul", "price": "350000 KR
-   105.69s  user  발화 시작: That's a little pricey. Anything more…moderate?
-   105.69s  agent 발화 끝
-   107.93s  agent 발화 시작: [sigh] Certainly. Let me refine that search for you.
-   107.93s  user  발화 끝
-   111.28s  agent 발화 끝
+     0.00s  user  발화 시작: Can you give me the driving time from Tokyo to Los Angeles?
+     4.94s  agent 발화 시작: Okay.
+     4.94s  user  발화 끝
+     5.19s  <ret> 발화 (turn2 첫 프레임)
+     5.35s  agent 발화 시작: <ret> The driving time from Tokyo to Los Angeles is approxim
+     5.35s  agent 발화 끝
+     5.54s  ⚡SPAN 주입 [d'=0.35s / d_lead=8.23s]: (tool result) {"distance": 8738.5, "duration": 625200.0, "units": "sec
+    13.57s  user  발화 시작: That's… a really long drive. What about flights instead?
+    13.57s  agent 발화 끝
+    17.28s  agent 발화 시작: Okay.
+    17.28s  user  발화 끝
+    17.69s  agent 발화 시작: [laugh] Well, yes, that *is* quite a drive! Flights would ce
+    17.69s  agent 발화 끝
+    23.04s  user  발화 시작: Yeah.
+    23.04s  agent 발화 끝
+    23.45s  user  발화 시작: Can you search for one-way flights from Tokyo to Los Angeles
+    23.45s  user  발화 끝
+    28.76s  <ret> 발화 (turn8 첫 프레임)
+    29.21s  agent 발화 시작: <ret> There's a Japan Airlines flight, number JL061, departi
+    29.21s  user  발화 끝
+    29.40s  ⚡SPAN 주입 [d'=0.64s / d_lead=9.87s]: (tool result) {"flights": [{"airline": "Japan Airlines", "flight numbe
+    39.08s  user  발화 시작: Hmm.
+    39.08s  agent 발화 끝
+    39.49s  agent 발화 시작: That flight looks like a good option.
+    39.49s  user  발화 끝
+    42.37s  user  발화 시작: Actually, yes. Could you find me a good sushi restaurant…
+    42.37s  agent 발화 끝
+    46.48s  user  발화 시작: …near my hotel? I’m staying at the Beverly Hills Hotel.
+    46.48s  user  발화 끝
+    50.21s  <ret> 발화 (turn13 첫 프레임)
+    50.51s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.64s]: (tool result) {"restaurants": [{"name": "Sugarfish by Sushi Nozawa", "
+    50.60s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa, located at 212 North Canon 
+    50.60s  user  발화 끝
+    59.24s  user  발화 시작: That sounds perfect. Can you make a reservation there for tw
+    59.24s  agent 발화 끝
+    65.20s  <ret> 발화 (turn15 첫 프레임)
+    65.82s  agent 발화 시작: <ret> I’ve reserved a table for two at Sugarfish by Sushi No
+    65.82s  user  발화 끝
+    65.89s  ⚡SPAN 주입 [d'=0.68s / d_lead=8.23s]: (tool result) {"confirmation number": "RSV-87654"}
+    74.04s  user  발화 시작: Excellent. Thank you, Dali.
+    74.04s  agent 발화 끝
+    75.69s  agent 발화 시작: You’re very welcome! I’m glad I could help with your travel 
+    75.69s  user  발화 끝
+    81.45s  user  발화 시작: One last thing, just out of curiosity – what’s the weather l
+    81.45s  agent 발화 끝
+    88.07s  <ret> 발화 (turn19 첫 프레임)
+    88.44s  agent 발화 시작: <ret> The weather in Los Angeles is currently sunny, with a 
+    88.44s  user  발화 끝
+    89.33s  ⚡SPAN 주입 [d'=1.26s / d_lead=10.70s]: (tool result) {"temperature": 28.3, "humidity": 65, "condition": "Sunn
+    99.14s  agent 발화 끝

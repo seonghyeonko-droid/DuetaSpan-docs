@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Clara",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-05-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-10",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-12-21",
-#       "category": "home",
-#       "text": "User's home address is 900 Elm Street."
-#     },
-#     {
-#       "date": "2025-12-13",
+#       "date": "2026-05-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-02-16",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "home",
+#       "text": "User's home address is 441 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-03-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,55 +53,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-01-28",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 야, 여행 계획 짜려는데 너무 복잡해. 뭘 먼저 해야 할지 모 | S2 무조건 휴식. 그냥 쉬고 싶어… | S3 …그리고 맛있는 음식도 먹고, 미술관 같은 데도 가고 싶고. | S4 그래, 맞아. 다시 집중하자. 피렌체가 예쁘고, 미술관도 좋다
 
-     0.00s  user  발화 시작: 야, 여행 계획 짜려는데 너무 복잡해. 뭘 먼저 해야 할지 모르겠어.
-     6.43s  agent 발화 시작: 계획을 세우는 게 한 번에 많아 보일 수 있지만, 나눠서 하면 더 쉬워요. 어디로 가고 싶으신지부터 시작해 
-     6.43s  user  발화 끝
-    18.71s  user  발화 시작: 맞아.
-    18.71s  agent 발화 끝
-    19.30s  user  발화 시작: 음, 이탈리아? 늘 가고 싶었는데… 뭔가 복잡해 보여.
-    19.30s  user  발화 끝
-    23.97s  agent 발화 시작: 네.
-    23.97s  user  발화 끝
-    24.56s  agent 발화 시작: 이탈리아는 정말 멋진 곳이에요! 계획하기가 부담스러울 수도 있지만, 차근차근 해나가면 돼요. 어떤 경험을 하
-    24.56s  agent 발화 끝
-    39.17s  user  발화 시작: 무조건 휴식. 그냥 쉬고 싶어…
-    39.17s  agent 발화 끝
-    42.10s  user  발화 시작: …그리고 맛있는 음식도 먹고, 미술관 같은 데도 가고 싶고.
-    42.10s  user  발화 끝
-    47.29s  <ret> 발화 (turn8 첫 프레임)
-    47.36s  agent 발화 시작: <ret> 참 흥미로운 건, 최초의 분유가 사실은 천팔백육십칠 년에 독일 화학자 유스투스 폰 리비히가 개발했
-    47.36s  user  발화 끝
-    48.29s  ⚡SPAN 주입 [d'=0.99s / d_lead=8.77s]: The first commercially available infant formula, developed by German c
-    56.13s  user  발화 시작: 와, 천팔백육십칠 년? 엄청 오래됐네! 분유가 그렇게 오래전부터 있었다니 몰랐어.
-    56.13s  agent 발화 끝
-    61.98s  agent 발화 시작: 정말 오랜 역사를 가지고 있네요! 그 이후로 얼마나 많이 발전했는지 놀랍지 않아요? 다시 여행 계획으로 돌아
-    61.98s  user  발화 끝
-    75.43s  user  발화 시작: 응.
-    75.43s  agent 발화 끝
-    76.01s  user  발화 시작: 그래, 맞아. 다시 집중하자. 피렌체가 예쁘고, 미술관도 좋다고 들었어.
-    76.01s  user  발화 끝
-    81.27s  agent 발화 시작: 네.
-    81.27s  user  발화 끝
-    81.86s  agent 발화 시작: 피렌체는 정말 좋은 선택이에요! [happy] 진정한 예술과 문화의 보고예요. 얼마나 머물고 싶으세요?
-    81.86s  agent 발화 끝
-    88.87s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 재정 관리를 좀 하려고 하는데, 혹시 조언해 주실 수 있을까요?
+     6.56s  agent 발화 시작: 어, 좋은 생각이야! 돈 관리 시작하는 거 아주 잘했어. 네게 맞는 예산 관리 방법을 같이 생각해 보자.
+     6.56s  user  발화 끝
+    16.70s  user  발화 시작: 알겠습니다. 음, 오십 삼십 이십 규칙에 대해 들어봤는데, 그게 정확히 뭔데요?
+    16.70s  agent 발화 끝
+    22.83s  <ret> 발화 (turn3 첫 프레임)
+    23.25s  agent 발화 시작: <ret> 그거 간단한 방법인데, 세후 소득의 오십퍼센트는 필수 지출에, 삼십퍼센트는 원하는 것에, 그리고 
+    23.25s  user  발화 끝
+    23.83s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.73s]: The 50/30/20 budget allocates 50% of after-tax income to needs, 30% to
+    33.99s  user  발화 시작: 네.
+    33.99s  agent 발화 끝
+    34.58s  user  발화 시작: 그거 좀… 빡빡한 것 같아요. 정말로 여유가 없는 건가요?
+    34.58s  user  발화 끝
+    39.95s  user  발화 끝

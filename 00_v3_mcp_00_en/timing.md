@@ -4,101 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Oliver",
+#     "name": "Max",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "French",
 #     "gender": "male",
 #     "age_range": "40s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-06-02",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-05-24",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-01-11",
+#       "date": "2026-03-25",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-12-27",
+#       "date": "2026-02-09",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-03",
 #       "category": "home",
-#       "text": "User's home address is 818 Birch Road."
+#       "text": "User's home address is 120 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Researching a used car",
+#       "date": "2026-05-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-31",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-25",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm looking for a nice gift for my | S2 I was thinking of a cookbook, but  | S3 “Salt, Fat, Acid, Heat” sounds int | S4 …I wonder if it’s available at the
+# EXAMINER(FDB-v2) 단계: S1 What is the address of… | S2 Oh, that’s good to know. And what’ | S3 Hmm, sounds pleasant. I'm thinking | S4 Just a quick visit, maybe three da
 
-     0.00s  user  발화 시작: I'm looking for a nice gift for my friend…
-     3.06s  user  발화 시작: …Sarah. She loves cooking.
-     3.06s  user  발화 끝
-     4.42s  agent 발화 시작: That’s thoughtful! Finding a gift for someone who loves cook
-     4.42s  user  발화 끝
-     8.50s  user  발화 시작: I was thinking of a cookbook, but there are so many.
-     8.50s  agent 발화 끝
-    12.25s  agent 발화 시작: Right.
-    12.25s  user  발화 끝
-    12.57s  <ret> 발화 (turn5 첫 프레임)
-    12.59s  agent 발화 시작: <ret> A cookbook is a wonderful choice, and there are quite 
-    12.59s  agent 발화 끝
-    13.69s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.84s]: A cookbook is a great idea for a cooking enthusiast! "Salt, Fat, Acid,
-    21.43s  user  발화 시작: “Salt, Fat, Acid, Heat” sounds interesting. Could you show m
-    21.43s  agent 발화 끝
-    26.06s  <ret> 발화 (turn7 첫 프레임)
-    26.53s  agent 발화 시작: <ret> Here’s an image of the cover of “Salt, Fat, Acid, Heat
-    26.53s  user  발화 끝
-    27.15s  ⚡SPAN 주입 [d'=1.21s / d_lead=3.74s]: (tool result) Image found: https://www.simonandschuster.com/p/salt-fat
-    30.28s  user  발화 시작: Yeah.
-    30.28s  agent 발화 끝
-    30.62s  user  발화 시작: That looks perfect!—but does it have many recipes, or is it 
-    30.62s  user  발화 끝
-    35.04s  user  발화 시작: …I wonder if it’s available at the bookstore downtown?
-    35.04s  user  발화 끝
-    38.10s  agent 발화 시작: Yeah.
-    38.10s  user  발화 끝
-    38.22s  <ret> 발화 (turn12 첫 프레임)
-    38.44s  agent 발화 시작: <ret> It balances theory and practice quite nicely; it inclu
-    38.44s  agent 발화 끝
-    38.52s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.23s]: "Salt, Fat, Acid, Heat" includes over 100 recipes, but its strength is
-    49.67s  agent 발화 끝
+     0.00s  user  발화 시작: What is the address of…
+     1.73s  user  발화 시작: …the Hockey Hall of Fame?
+     1.73s  user  발화 끝
+     3.24s  <ret> 발화 (turn2 첫 프레임)
+     3.46s  agent 발화 시작: <ret> [happy] The Hockey Hall of Fame is at 155 Front Street
+     3.46s  user  발화 끝
+     4.01s  ⚡SPAN 주입 [d'=0.76s / d_lead=9.00s]: (tool result) {"name": "Hockey Hall of Fame", "formatted address": "15
+    12.45s  user  발화 시작: Oh, that’s good to know. And what’s the weather like there r
+    12.45s  agent 발화 끝
+    16.86s  <ret> 발화 (turn4 첫 프레임)
+    16.95s  agent 발화 시작: <ret> [curious] Right now in Toronto, it’s 22.8 degrees Cels
+    16.95s  user  발화 끝
+    17.65s  ⚡SPAN 주입 [d'=0.79s / d_lead=7.96s]: (tool result) {"city": "Toronto", "country": "Canada", "latitude": 43.
+    24.91s  user  발화 시작: Hmm, sounds pleasant. I'm thinking of visiting next week.
+    24.91s  agent 발화 끝
+    28.02s  agent 발화 시작: Yeah.
+    28.02s  user  발화 끝
+    28.37s  agent 발화 시작: That sounds lovely! Toronto is a great city to explore. Are 
+    28.37s  agent 발화 끝
+    35.63s  user  발화 시작: Just a quick visit, maybe three days. I want to see a Blue J
+    35.63s  agent 발화 끝
+    40.82s  agent 발화 시작: Uh-huh.
+    40.82s  user  발화 끝
+    41.17s  agent 발화 시작: [laugh] A Blue Jays game sounds perfect for a quick trip! I 
+    41.17s  agent 발화 끝
+    48.44s  agent 발화 끝

@@ -4,107 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Remy",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "non-binary",
 #     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
+#       "date": "2026-06-08",
+#       "category": "home",
+#       "text": "User's home address is 902 Elm Street."
+#     },
+#     {
+#       "date": "2026-04-23",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
 #       "date": "2026-03-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-23",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-02-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-02",
+#       "date": "2025-12-27",
 #       "category": "diet",
 #       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-07",
+#       "date": "2026-05-21",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-28",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m planning a trip to Nanjing, an | S2 That sounds lovely. I’m thinking o | S3 That sounds pretty good. I'm also  | S4 Ullmann’s sounds promising. Can yo
+# EXAMINER(FDB-v2) 단계: S1 Could you locate one seventy-two d | S2 I’d like to find some quiet temple | S3 …Actually, do they have any tradit | S4 Fantastic! That's all sorted, than
 
-     0.00s  user  발화 시작: I’m planning a trip to Nanjing, and I need to find the Confu
-     7.39s  <ret> 발화 (turn1 첫 프레임)
-     7.56s  agent 발화 시작: <ret> The Confucius Temple in Nanjing is located at latitude
-     7.56s  user  발화 끝
-     7.92s  ⚡SPAN 주입 [d'=0.72s / d_lead=6.72s]: (tool result) {"latitude": 32.0421, "longitude": 118.7733, "formatted 
-    14.28s  user  발화 시작: That's great. Are there any good restaurants nearby?
-    14.28s  agent 발화 끝
-    17.65s  agent 발화 시작: Yeah.
-    17.65s  user  발화 끝
-    17.70s  <ret> 발화 (turn4 첫 프레임)
-    18.07s  agent 발화 시작: <ret> There are a few restaurants nearby, including Ye Chun 
-    18.07s  agent 발화 끝
-    18.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.40s]: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address"
-    26.47s  user  발화 시작: Hmm, tell me more about Ye Chun Tea House.
-    26.47s  agent 발화 끝
-    29.69s  <ret> 발화 (turn6 첫 프레임)
-    30.19s  ⚡SPAN 주입 [d'=0.89s / d_lead=11.34s]: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address"
-    30.25s  agent 발화 시작: <ret> Ye Chun Tea House, located at 116 Huajuan Street, serv
-    30.25s  user  발화 끝
-    41.59s  user  발화 시작: Uh-huh.
-    41.59s  agent 발화 끝
-    42.01s  user  발화 시작: That sounds lovely. I’m thinking of going there on Tuesday.
-    42.01s  user  발화 끝
-    46.21s  agent 발화 시작: Yeah.
-    46.21s  user  발화 끝
-    46.63s  agent 발화 시작: That’s a wonderful choice! A peaceful meal can be so restora
-    46.63s  agent 발화 끝
-    51.26s  user  발화 시작: Uh-huh.
-    51.26s  agent 발화 끝
-    51.68s  user  발화 시작: Actually, what’s the weather going to be like in Nanjing on 
-    51.68s  user  발화 끝
-    56.72s  agent 발화 시작: Yeah.
-    56.72s  user  발화 끝
-    56.84s  <ret> 발화 (turn14 첫 프레임)
-    57.14s  agent 발화 시작: <ret> I can certainly help with that— On Tuesday, July 15th,
-    57.14s  agent 발화 끝
-    58.34s  ⚡SPAN 주입 [d'=1.50s / d_lead=2.52s]: {"date": "2026-07-15", "temperature_celsius": 28.5, "condition": "Part
-    70.16s  user  발화 시작: That sounds pretty good. I'm also hoping to find a tradition
-    70.16s  agent 발화 끝
-    76.04s  user  발화 시작: …Are there any tea houses that offer ceremonies near the Con
-    76.04s  user  발화 끝
-    80.97s  <ret> 발화 (turn17 첫 프레임)
-    81.09s  agent 발화 시작: <ret> I found two tea houses offering ceremonies nearby: Ull
-    81.09s  user  발화 끝
-    81.29s  ⚡SPAN 주입 [d'=0.32s / d_lead=12.60s]: (tool result) {"places": [{"name": "Ullmann's Tea House", "address": "
-    93.69s  user  발화 시작: Ullmann’s sounds promising. Can you reserve a spot for a tea
-    93.69s  agent 발화 끝
-   100.07s  <ret> 발화 (turn19 첫 프레임)
-   100.41s  agent 발화 시작: <ret> I have booked a tea ceremony at Ullmann’s Tea House fo
-   100.41s  user  발화 끝
-   100.85s  ⚡SPAN 주입 [d'=0.78s / d_lead=10.08s]: (tool result) {"confirmation id": "UT789XZ1", "date": "2026-07-15", "t
-   110.49s  user  발화 시작: Right.
-   110.49s  agent 발화 끝
-   110.91s  user  발화 시작: Perfect! Thank you so much.
-   110.91s  user  발화 끝
-   113.02s  user  발화 끝
+     0.00s  user  발화 시작: Could you locate one seventy-two dot two seventeen dot one s
+     6.19s  agent 발화 시작: Mm-hmm.
+     6.19s  user  발화 끝
+     6.38s  <ret> 발화 (turn2 첫 프레임)
+     6.60s  agent 발화 시작: <ret> That IP address resolves to Seoul, South Korea—a vibra
+     6.60s  agent 발화 끝
+     7.47s  ⚡SPAN 주입 [d'=1.09s / d_lead=4.95s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
+    11.55s  user  발화 시작: Okay.
+    11.55s  agent 발화 끝
+    11.96s  user  발화 시작: Oh, Seoul! I’m thinking of a trip there next month.
+    11.96s  user  발화 끝
+    16.09s  agent 발화 시작: That sounds lovely! Seoul is a fantastic city for a visit.
+    16.09s  user  발화 끝
+    20.62s  user  발화 시작: Mhm.
+    20.62s  agent 발화 끝
+    21.04s  user  발화 시작: I’d like to find some quiet temples there, away from the cro
+    21.04s  user  발화 끝
+    25.99s  agent 발화 시작: Yeah, yeah.
+    25.99s  user  발화 끝
+    26.66s  <ret> 발화 (turn9 첫 프레임)
+    26.76s  ⚡SPAN 주입 [d'=1.15s / d_lead=5.36s]: (tool result) Jogyesa Temple is a major temple of Korean Buddhism, off
+    26.81s  agent 발화 시작: <ret> Jogyesa Temple is a beautiful and peaceful place—a maj
+    26.81s  agent 발화 끝
+    32.17s  user  발화 시작: That sounds perfect. What's the weather usually like in Seou
+    32.17s  agent 발화 끝
+    36.92s  <ret> 발화 (turn11 첫 프레임)
+    37.54s  agent 발화 시작: <ret> On September twentieth, 2026, Seoul is expected to be 
+    37.54s  user  발화 끝
+    37.88s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.84s]: (tool result) {"temperature": 22.5, "humidity": 65, "wind speed": 3.2,
+    45.37s  user  발화 시작: …Actually, do they have any traditional tea houses near that
+    45.37s  agent 발화 끝
+    49.88s  <ret> 발화 (turn13 첫 프레임)
+    49.91s  agent 발화 시작: <ret> Tteuran is a peaceful tea house near the temple, speci
+    49.91s  user  발화 끝
+    49.98s  ⚡SPAN 주입 [d'=0.87s / d_lead=5.77s]: (tool result) Tteuran offers traditional Korean tea and snacks in a pe
+    55.69s  user  발화 시작: Mhm.
+    55.69s  agent 발화 끝
+    56.10s  user  발화 시작: That sounds wonderful. Could you book a table for two there 
+    56.10s  user  발화 끝
+    63.23s  <ret> 발화 (turn16 첫 프레임)
+    63.52s  agent 발화 시작: <ret> I’ve confirmed a table for two at Tteuran on September
+    63.52s  user  발화 끝
+    64.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.42s]: (tool result) {"confirmation id": "RT7492", "restaurant name": "Tteura
+    70.95s  user  발화 시작: Fantastic! That's all sorted, thank you.
+    70.95s  agent 발화 끝
+    73.42s  agent 발화 시작: You're very welcome.
+    73.42s  user  발화 끝
+    74.66s  user  발화 시작: No, I think that's everything for now.
+    74.66s  agent 발화 끝
+    77.55s  agent 발화 시작: Wonderful! Enjoy your planning, and I hope you have a relaxi
+    77.55s  user  발화 끝
+    83.32s  agent 발화 끝

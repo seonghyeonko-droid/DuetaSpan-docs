@@ -1,80 +1,105 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Sunaia, a gentle and reflective wellness coach who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Belin, a practical and reassuring life coach who helps people with stress relief and mindfulness. You can explain breathing techniques, a quick grounding exercise, basic sleep hygiene. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Remy",
+    "name": "Charlie",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
+    "nationality": "American",
     "gender": "non-binary",
     "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
+      "date": "2026-06-08",
+      "category": "home",
+      "text": "User's home address is 902 Elm Street."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
       "date": "2026-03-08",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-01-23",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
-      "date": "2026-01-11",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2026-02-09",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-02",
+      "date": "2025-12-27",
       "category": "diet",
       "text": "User is vegan."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-07",
+      "date": "2026-05-21",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-28",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m planning a trip to Nanjing, and I need to find the Confucius Temple. What is the location? ⟨ret@7.39s⟩
-[  7.56s][moshi] ⟦⚡SPAN@7.92s: (tool result) {"latitude": 32.0421, "longitude": 118.7733, "formatted address": "Confucius Temple, Gulou Distr⟧ The Confucius Temple in Nanjing is located at latitude 32.04 and longitude 118.77, in Gulou District.
-      CALL: {"function": "map_geocode", "arguments": {"address": "Confucius Temple in Gulou District, Nanjing"}}
-[ 14.28s][user ] That's great. Are there any good restaurants nearby?
-[ 17.65s][moshi] «backchannel» Yeah.
-[ 18.07s][moshi] ⟨ret@17.70s⟩ There ⟦⚡SPAN@18.75s: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address": "116 Huajuan Street, Gulou District, N⟧ are a few restaurants nearby, including Ye Chun Tea House, rated 4.5 stars, and Lianhua Lou, at 4.2 stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"latitude": 32.0421, "longitude": 118.7733}}
-[ 26.47s][user ] Hmm, tell me more about Ye Chun Tea ⟨ret@29.69s⟩ House.
-[ 30.25s][moshi] ⟦⚡SPAN@30.19s: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address": "116 Huajuan Street, Gulou District, N⟧ Ye Chun Tea House, located at 116 Huajuan Street, serves Jiangsu cuisine and is in the moderate price range. [happy] It has a rating of 4.5 stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "Ye Chun Tea House"}}
-[ 41.59s][user ] «backchannel» Uh-huh.
-[ 42.01s][user ] That sounds lovely. I’m thinking of going there on Tuesday.
-[ 46.21s][moshi] «backchannel» Yeah.
-[ 46.63s][moshi] That’s a wonderful choice! A peaceful meal can be so restorative.
-[ 51.26s][user ] «backchannel» Uh-huh.
-[ 51.68s][user ] Actually, what’s the weather going to be like in Nanjing on Tuesday?
-[ 56.72s][moshi] «backchannel» Yeah.
-[ 57.14s][moshi] ⟨ret@56.84s⟩ I can ⟦⚡SPAN@58.34s: {"date": "2026-07-15", "temperature_celsius": 28.5, "condition": "Partly Cloudy", "humidity": 65, "wind_speed_⟧ certainly help with that— On Tuesday, July 15th, the weather in Nanjing will be partly cloudy with a temperature of 28.5 degrees Celsius, and a humidity of 65 percent.
-[ 70.16s][user ] That sounds pretty good. I'm also hoping to find a traditional tea ceremony. —
-[ 76.04s][user ] …Are there any tea houses that offer ceremonies near the Confucius Temple? ⟨ret@80.97s⟩
-[ 81.09s][moshi] ⟦⚡SPAN@81.29s: (tool result) {"places": [{"name": "Ullmann's Tea House", "address": "120 Huajuan Street, Gulou District, Nanj⟧ I found two tea houses offering ceremonies nearby: Ullmann's Tea House at 120 Huajuan Street, with a 4.7-star rating, and Serene Tea Room at 150 Shuiximen Street, rated 4.3 stars.
-      CALL: {"function": "map_search_places", "arguments": {"query": "tea ceremony", "latitude": 32.0421, "longitude": 118.7733}}
-[ 93.69s][user ] Ullmann’s sounds promising. Can you reserve a spot for a tea ceremony there on Tuesday ⟨ret@100.07s⟩ afternoon?
-[100.41s][moshi] ⟦⚡SPAN@100.85s: (tool result) {"confirmation id": "UT789XZ1", "date": "2026-07-15", "time": "14:00", "provider": "Ullmann's Te⟧ I have booked a tea ceremony at Ullmann’s Tea House for you on Tuesday, July 15th, at 2:00 PM. Your confirmation ID is UT789XZ1.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Ullmann's Tea House", "service": "tea ceremony", "date": "2026-07-15", "time": "14:00"}}
-[110.49s][user ] «backchannel» Right.
-[110.91s][user ] Perfect! Thank you so much.
+[  0.00s][user ] Could you locate one seventy-two dot two seventeen dot one sixty dot one forty-two, please?
+[  6.19s][moshi] «backchannel» Mm-hmm.
+[  6.60s][moshi] ⟨ret@6.38s⟩ That ⟦⚡SPAN@7.47s: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Seoul", "country": "South Korea", "contine⟧ IP address resolves to Seoul, South Korea—a vibrant city in Asia.
+      CALL: {"function": "map_ip_location", "arguments": {"ip_address": "172.217.160.142"}}
+[ 11.55s][user ] «backchannel» Okay.
+[ 11.96s][user ] Oh, Seoul! I’m thinking of a trip there next month.
+[ 16.09s][moshi] That sounds lovely! Seoul is a fantastic city for a visit.
+[ 20.62s][user ] «backchannel» Mhm.
+[ 21.04s][user ] I’d like to find some quiet temples there, away from the crowds.
+[ 25.99s][moshi] «backchannel» Yeah, yeah.
+[ 26.81s][moshi] ⟨ret@26.66s⟩ ⟦⚡SPAN@26.76s: (tool result) Jogyesa Temple is a major temple of Korean Buddhism, offering a serene escape. It is known for i⟧ Jogyesa Temple is a beautiful and peaceful place—a major temple of Korean Buddhism.
+      CALL: {"function": "search", "arguments": {"query": "quiet temples Seoul"}}
+[ 32.17s][user ] That sounds perfect. What's the weather usually like in Seoul in late ⟨ret@36.92s⟩ September?
+[ 37.54s][moshi] «interrupted» ⟦⚡SPAN@37.88s: (tool result) {"temperature": 22.5, "humidity": 65, "wind speed": 3.2, "condition": "Sunny"}⟧ On September twentieth, 2026, Seoul is expected to be sunny with a temperature of twenty-two point five degrees Celsius—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul", "date": "2026-09-20"}}
+[ 45.37s][user ] «interrupts_prev» …Actually, do they have any traditional tea houses near that temple? ⟨ret@49.88s⟩
+[ 49.91s][moshi] ⟦⚡SPAN@49.98s: (tool result) Tteuran offers traditional Korean tea and snacks in a peaceful setting, just a short walk from J⟧ Tteuran is a peaceful tea house near the temple, specializing in traditional Korean teas.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "tea house near Jogyesa Temple Seoul"}}
+[ 55.69s][user ] «backchannel» Mhm.
+[ 56.10s][user ] That sounds wonderful. Could you book a table for two there on September twentieth at, say, three ⟨ret@63.23s⟩ PM?
+[ 63.52s][moshi] I’ve ⟦⚡SPAN@64.26s: (tool result) {"confirmation id": "RT7492", "restaurant name": "Tteuran", "date": "2026-09-20", "time": "15:00⟧ confirmed a table for two at Tteuran on September twentieth at three PM—your confirmation ID is RT7492.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Tteuran", "date": "2026-09-20", "time": "15:00", "party_size": 2}}
+[ 70.95s][user ] Fantastic! That's all sorted, thank you.
+[ 73.42s][moshi] You're very welcome.
+[ 74.66s][user ] No, I think that's everything for now.
+[ 77.55s][moshi] Wonderful! Enjoy your planning, and I hope you have a relaxing trip to Seoul.

@@ -4,88 +4,98 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "가형",
+#     "name": "은형",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-06-04",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-04-24",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-12-09",
+#       "date": "2026-03-17",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-08",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-07",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 응, 그냥 그랬어. 요즘 좀 막막해. | S2 매일 조금씩? 그게 될까? | S3 맞아, 그거. 혹시 그때 추천해준 라우터 이름이 뭐였더라? | S4 오, 고마워. 한번 알아봐야겠다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 가형님. 저는 베리로입니다. 편안한 수면과 휴식을 도와드리는 상담사예요.
-     4.90s  user  발화 시작: 네.
-     4.90s  agent 발화 끝
-     5.44s  user  발화 시작: 안녕하세요, 베리로 씨. 혹시 제가 전에 알레르기 때문에 얘기했던 적 있나요?
-     5.44s  user  발화 끝
-    11.43s  agent 발화 시작: 네.
-    11.43s  user  발화 끝
-    11.68s  <ret> 발화 (turn4 첫 프레임)
-    11.98s  agent 발화 시작: <ret> 네, 가형님. 이천이십육년 사월 삼십일에 해산물 알레르기가 있다고 말씀하셨었어요.
-    11.98s  agent 발화 끝
-    12.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=4.90s]: [2026-04-30] User is allergic to shellfish.
-    16.88s  user  발화 시작: 네.
-    16.88s  agent 발화 끝
-    17.42s  user  발화 시작: 아, 그렇군요. 그럼 혹시 제가 유제품은 잘 소화 못 하는 것도 기록해 두셨나요?
-    17.42s  user  발화 끝
-    24.50s  agent 발화 시작: 네.
-    24.50s  user  발화 끝
-    24.60s  <ret> 발화 (turn8 첫 프레임)
-    24.90s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.36s]: [2026-04-02] User is lactose-intolerant.
-    25.05s  agent 발화 시작: <ret> 네, 맞아요. 이천이십육년 사월 이일에는 유당불내증이 있다고 말씀해주셨습니다.
-    25.05s  agent 발화 끝
-    29.40s  user  발화 시작: 와, 정말 꼼꼼하시네요. [laugh] 혹시 제가 좋아하는 음식은 뭐였죠?
-    29.40s  agent 발화 끝
-    34.30s  agent 발화 시작: 네.
-    34.30s  user  발화 끝
-    34.58s  <ret> 발화 (turn11 첫 프레임)
-    34.85s  agent 발화 시작: <ret> 가형님께서는 에티오피아 음식을 가장 좋아하시는군요.
-    34.85s  agent 발화 끝
-    35.78s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.72s]: [2026-02-24] User's favorite cuisine is Ethiopian.
-    37.57s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 은형님! 저는 에레릴입니다. 오늘 하루는 어떠셨어요?
+     3.78s  user  발화 시작: 응, 그냥 그랬어. 요즘 좀 막막해.
+     3.78s  agent 발화 끝
+     7.01s  agent 발화 시작: 막막하시군요. 어떤 점이 가장 힘드신가요? 혹시 창작 활동에 어려움을 겪고 계신가요?
+     7.01s  user  발화 끝
+    12.95s  user  발화 시작: 어.
+    12.95s  agent 발화 끝
+    13.49s  user  발화 시작: 맞아. 글을 쓰려고 하는데, 뭘 써야 할지 모르겠어.
+    13.49s  user  발화 끝
+    17.81s  agent 발화 시작: 글쓰기가 막막하시군요. 작은 습관부터 시작해보는 건 어떠세요? 매일 조금씩이라도 써보는 거예요.
+    17.81s  user  발화 끝
+    23.74s  user  발화 시작: 맞아.
+    23.74s  agent 발화 끝
+    24.28s  user  발화 시작: 매일 조금씩? 그게 될까?
+    24.28s  user  발화 끝
+    26.44s  agent 발화 시작: 네, 가능해요. 완벽한 글이 아니어도 괜찮아요. 그냥 생각나는 대로, 자유롭게 써보세요.
+    26.44s  user  발화 끝
+    32.37s  user  발화 시작: 음… 전에 집 네트워크 설정할 때 뭐 물어봤었지? 기억이 안 나네.
+    32.37s  agent 발화 끝
+    38.31s  agent 발화 시작: 네.
+    38.31s  user  발화 끝
+    38.45s  <ret> 발화 (turn11 첫 프레임)
+    38.85s  agent 발화 시작: <ret> 아, 집 네트워크 설정에 대해 물어보셨던 게 있었죠. 삼층짜리 집에서 메시 라우터의 커버리지에 대
+    38.85s  agent 발화 끝
+    39.28s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.09s]: [2026-05-07] Past chat — Setting up a home network: asked about mesh r
+    46.94s  user  발화 시작: 그래.
+    46.94s  agent 발화 끝
+    47.48s  user  발화 시작: 맞아, 그거. 혹시 그때 추천해준 라우터 이름이 뭐였더라?
+    47.48s  user  발화 끝
+    51.80s  agent 발화 시작: 죄송해요, 그 부분은 메모해두지 않았어요. 그 당시 어떤 라우터를 추천해드렸는지 정확히 기억나지 않네요.
+    51.80s  user  발화 끝
+    58.81s  user  발화 시작: 아… 그렇구나. 그럼 그냥 검색해볼까?
+    58.81s  agent 발화 끝
+    60.98s  <ret> 발화 (turn16 첫 프레임)
+    61.51s  agent 발화 시작: <ret> 삼층짜리 집에는 메시 와이파이 시스템이 좋다고 해요. Netgear Orbi, 티 피-Link D
+    61.51s  user  발화 끝
+    61.73s  ⚡SPAN 주입 [d'=0.74s / d_lead=10.25s]: (tool result) Mesh Wi-Fi systems are ideal for larger homes, providing
+    71.76s  user  발화 시작: 오, 고마워. 한번 알아봐야겠다.
+    71.76s  agent 발화 끝
+    73.92s  agent 발화 시작: 네, 도움이 되었다니 기뻐요. 언제든 막히는 부분이 있으면 저에게 말씀해주세요. 작은 것부터 시작해서 자신감
+    73.92s  user  발화 끝
+    82.01s  agent 발화 끝

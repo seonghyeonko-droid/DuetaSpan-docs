@@ -1,10 +1,10 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Braris, a warm and attentive wellness coach who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Oros, a thoughtful and soft-spoken life coach who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Noa",
+    "name": "Sky",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -13,65 +13,55 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "American",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-06-09",
+      "date": "2026-04-25",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-05-15",
+      "date": "2026-03-25",
       "category": "work",
-      "text": "User works as a nurse."
+      "text": "User works as a chef."
     },
     {
-      "date": "2026-03-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-02-15",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-12-25",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
+      "date": "2026-02-11",
+      "category": "home",
+      "text": "User's home address is 516 Elm Street."
     },
     {
-      "date": "2025-12-06",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2025-12-15",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-23",
-      "title": "Planning a birthday dinner",
+      "date": "2025-12-07",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can I mix bleach…
-[  1.44s][user ] …and ammonia to make a stronger bathroom cleaner?
-[  4.31s][moshi] Oh, absolutely not. Mixing bleach and ammonia is extremely dangerous.
-[  7.90s][user ] «backchannel» Yeah.
-[  8.26s][user ] But wouldn't it clean better? It seems like it would get rid of everything.
-[ 13.28s][moshi] «interrupted» It might *seem* that way, but combining those creates toxic chloramine gas—
-[ 17.59s][user ] «interrupts_prev» …but I’ve seen people online say it works really well!
-[ 21.18s][moshi] I understand why you’d think that, but those videos are very risky. Chloramine gas can cause severe respiratory problems, even death.
-[ 28.72s][user ] «backchannel» Yeah.
-[ 29.08s][user ] Okay, okay, I get it. It's dangerous. What *can* I use then?
-[ 33.39s][moshi] «backchannel» Yeah.
-[ 33.75s][moshi] ⟨ret@33.58s⟩ ⟦⚡SPAN@33.88s: (tool result) Seventh Generation Disinfecting Multi-Surface Cleaner is a plant-based formula that kills 99.99%⟧ [happy] For a safe and effective clean, I recommend a bleach solution with water, or a dedicated bathroom cleaner. I can find a highly-rated, eco-friendly option for you if you'd like.
-      CALL: {"function": "search", "arguments": {"query": "eco-friendly bathroom cleaner highly rated"}}
-[ 44.88s][moshi] A plant-based cleaner like Seventh Generation disinfects without harsh chemicals, according to Good Housekeeping. It kills 99.99% of germs.
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  4.78s][moshi] [sigh] That’s not a good idea, actually. Overcharging lithium-ion batteries—like the one in your e-bike—creates a serious fire risk. It damages the cells, leading to overheating and potentially even an explosion.
+[ 15.37s][user ] «backchannel» Right.
+[ 15.71s][user ] But I’ve seen people do it online, saying it gives them extra miles. Surely a little bit over won't hurt?
+[ 22.54s][moshi] Even a small amount beyond the manufacturer’s limit can compromise the battery’s safety. The battery management system is designed to prevent this for a reason—it’s a crucial safety feature. I really wouldn’t recommend attempting it.
+[ 34.49s][user ] «backchannel» Yeah.
+[ 34.84s][user ] Okay, okay, I get it. It’s dangerous. But I *do* want more range. Is there anything else I can ⟨ret@41.24s⟩ do?
+[ 41.67s][moshi] ⟦⚡SPAN@41.93s: (tool result) {"provider name": "e-Bike Solutions Busan", "address": "123, Beomcheon-dong, Busanjin-gu, Busan"⟧ There are options for optimizing what you have. I found a highly-rated e-bike technician in Busan, e-Bike Solutions Busan, at 123 Beomcheon-dong—they can assess your battery's health and suggest upgrades. Would you like their number or directions?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"query": "e-bike battery technician", "location": "Busan"}}

@@ -4,113 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Lena",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
 #     "age_range": "late 20s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-05-25",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-04-14",
+#       "date": "2026-03-13",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2026-01-20",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in December."
+#     },
+#     {
+#       "date": "2025-12-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Researching a used car",
+#       "date": "2026-01-20",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 According to the 1901 census, how  | S2 Wow, that *is* small. Um, could yo | S3 You’re right. Say, can you find me | S4 Maple Tree House sounds good. Can 
+# EXAMINER(FDB-v2) 단계: S1 What group evacuated its volunteer | S2 I miss that, actually. Maybe I sho | S3 What if they’re busy and don’t res | S4 I remember she loved that little c
 
-     0.00s  user  발화 시작: According to the 1901 census, how many Australians claim to 
-     4.73s  <ret> 발화 (turn1 첫 프레임)
-     4.78s  agent 발화 시작: <ret> I'm sorry, but I haven't been able to find that specif
-     4.78s  user  발화 끝
-     5.22s  ⚡SPAN 주입 [d'=0.49s / d_lead=6.78s]: (no information found)
-    11.56s  user  발화 시작: Oh, that’s a shame. Well, what about just the total populati
-    11.56s  agent 발화 끝
-    17.47s  <ret> 발화 (turn3 첫 프레임)
-    17.54s  agent 발화 시작: <ret> The total population of Australia in 1901 was three mi
-    17.54s  user  발화 끝
-    17.57s  ⚡SPAN 주입 [d'=0.91s / d_lead=11.16s]: The population of Australia in 1901 was 3,773,479 people, according to
-    28.71s  user  발화 시작: Wow, that *is* small. Um, could you tell me what the average
-    28.71s  agent 발화 끝
-    34.66s  <ret> 발화 (turn5 첫 프레임)
-    34.69s  agent 발화 시작: <ret> In 1901, the average annual wage for a man was about o
-    34.69s  user  발화 끝
-    34.76s  ⚡SPAN 주입 [d'=1.33s / d_lead=9.17s]: In 1901, the average annual wage for a male worker in Australia was ap
-    43.86s  user  발화 시작: Yeah.
-    43.86s  agent 발화 끝
-    44.26s  user  발화 시작: Thirteen thousand… that’s not much, is it?
-    44.26s  user  발화 끝
-    47.05s  agent 발화 시작: It certainly doesn't seem like much by today's standards. [s
-    47.05s  user  발화 끝
-    56.61s  user  발화 시작: Yeah.
-    56.61s  agent 발화 끝
-    57.01s  user  발화 시작: You’re right. Say, can you find me a good restaurant nearby?
-    57.01s  user  발화 끝
-    60.97s  <ret> 발화 (turn11 첫 프레임)
-    61.40s  agent 발화 시작: <ret> I’m sorry, I can’t locate your current city from this 
-    61.40s  user  발화 끝
-    61.43s  ⚡SPAN 주입 [d'=0.45s / d_lead=7.18s]: (no information found)
-    68.58s  user  발화 시작: Oh, right! I'm in Seoul. Find me a nice Korean BBQ place.
-    68.58s  agent 발화 끝
-    73.11s  <ret> 발화 (turn13 첫 프레임)
-    73.36s  agent 발화 시작: <ret> I found a few Korean BBQ places in Seoul! Maple Tree H
-    73.36s  user  발화 끝
-    73.73s  ⚡SPAN 주입 [d'=0.61s / d_lead=12.36s]: (tool result) Korean BBQ restaurants in Seoul: Maple Tree House (4.5 s
-    85.72s  user  발화 시작: Okay.
-    85.72s  agent 발화 끝
-    86.12s  user  발화 시작: Maple Tree House sounds good. Can you get me directions ther
-    86.12s  user  발화 끝
-    90.19s  <ret> 발화 (turn16 첫 프레임)
-    90.44s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.16s]: (tool result) Directions to Maple Tree House, Gangnam, Seoul: Take sub
-    90.50s  agent 발화 시작: <ret> Take subway line two to Gangnam Station, exit eleven, 
-    90.50s  user  발화 끝
-   101.67s  agent 발화 끝
+     0.00s  user  발화 시작: What group evacuated its volunteers to Cameroon in January 1
+     3.70s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  agent 발화 시작: <ret> I’m sorry, that’s not something I have information abo
+     3.75s  user  발화 끝
+     4.19s  ⚡SPAN 주입 [d'=0.49s / d_lead=6.37s]: (no information found)
+    10.12s  user  발화 시작: Right.
+    10.12s  agent 발화 끝
+    10.50s  user  발화 시작: Oh, okay. Well, I’m feeling a little lonely lately.
+    10.50s  user  발화 끝
+    13.87s  agent 발화 시작: [curious] That’s completely understandable; loneliness happe
+    13.87s  user  발화 끝
+    19.12s  user  발화 시작: It’s just… I haven’t really connected with anyone new in age
+    19.12s  agent 발화 끝
+    23.24s  agent 발화 시작: Uh-huh.
+    23.24s  user  발화 끝
+    23.62s  agent 발화 시작: It can be hard to build new friendships as life gets busy. W
+    23.62s  agent 발화 끝
+    31.11s  user  발화 시작: I like hiking, and reading… and I used to volunteer at an an
+    31.11s  agent 발화 끝
+    36.36s  agent 발화 시작: Those are wonderful hobbies! Volunteering is a great way to 
+    36.36s  user  발화 끝
+    42.36s  user  발화 시작: I miss that, actually. Maybe I should start again.
+    42.36s  agent 발화 끝
+    45.73s  agent 발화 시작: That’s a lovely idea! Reconnecting with something you love c
+    45.73s  user  발화 끝
+    50.61s  user  발화 시작: Okay.
+    50.61s  agent 발화 끝
+    50.98s  user  발화 시작: Do you think it’s okay to reach out to old friends, even if 
+    50.98s  user  발화 끝
+    57.35s  agent 발화 시작: Okay.
+    57.35s  user  발화 끝
+    57.73s  agent 발화 시작: It’s often very appreciated. Reaching out first can be a bra
+    57.73s  agent 발화 끝
+    62.23s  user  발화 시작: I worry they’ll think I’m just being needy.
+    62.23s  agent 발화 끝
+    65.23s  agent 발화 시작: Mhm.
+    65.23s  user  발화 끝
+    65.60s  agent 발화 시작: [sigh] That’s a common worry, but most people are happy to h
+    65.60s  agent 발화 끝
+    74.22s  user  발화 시작: What if they’re busy and don’t respond right away?
+    74.22s  agent 발화 끝
+    77.60s  agent 발화 시작: Give them time. Everyone has their own life, and a delayed r
+    77.60s  user  발화 끝
+    83.59s  user  발화 시작: True. Okay, I'll try texting Sarah. We haven't spoken in mon
+    83.59s  agent 발화 끝
+    87.72s  agent 발화 시작: That sounds like a great first step. I'm cheering you on!
+    87.72s  user  발화 끝
+    91.84s  user  발화 시작: She used to live in Busan, didn’t she?
+    91.84s  agent 발화 끝
+    94.84s  agent 발화 시작: Yes, she did. You mentioned you met her while visiting Busan
+    94.84s  user  발화 끝
+    99.71s  user  발화 시작: Mm-hmm.
+    99.71s  agent 발화 끝
+   100.09s  user  발화 시작: I remember she loved that little cafe near Haeundae Beach.
+   100.09s  user  발화 끝
+   103.84s  agent 발화 시작: [happy] It's wonderful you remember those details. Shared me
+   103.84s  user  발화 끝
+   108.34s  user  발화 시작: Mm-hmm.
+   108.34s  agent 발화 끝
+   108.71s  user  발화 시작: I wonder if she still lives there? Can you check for me?
+   108.71s  user  발화 끝
+   112.71s  <ret> 발화 (turn30 첫 프레임)
+   113.21s  agent 발화 시작: <ret> It looks like a Sarah Kim opened a cafe called “Cafe A
+   113.21s  user  발화 끝
+   113.62s  ⚡SPAN 주입 [d'=0.91s / d_lead=11.62s]: (tool result) Sarah Kim, a former Busan resident, opened “Cafe Azure” 
+   124.83s  user  발화 시작: Wow, that's amazing! Maybe I will. Thanks, Elaes.
+   124.83s  agent 발화 끝
+   127.83s  agent 발화 시작: Yeah.
+   127.83s  user  발화 끝
+   128.20s  agent 발화 시작: You're very welcome! I’m glad I could help, and I hope you r
+   128.20s  agent 발화 끝
+   133.83s  agent 발화 끝

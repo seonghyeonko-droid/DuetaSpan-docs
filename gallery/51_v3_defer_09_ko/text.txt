@@ -1,101 +1,93 @@
 v3_defer_09_ko src=mcp style=mcp_deferred
-SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 침착하고 인내심 있는 라이프 코치 데안입니다. 당신은 대처 전략, 꾸준한 일상 유지, 자기 연민 실천 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 격려적이고 비판적이지 않은 웰니스 코치 누엔입니다. 당신은 진정 루틴, 일관된 기상 시간, 늦은 시간 화면 사용 제한 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "진슬",
+    "name": "가린",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-28",
+      "date": "2026-06-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-04-09",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
+      "text": "User is planning a trip to Kyoto in August."
+    },
+    {
+      "date": "2026-03-09",
+      "category": "home",
+      "text": "User's home address is 대구 중구 동인동 88-1."
     },
     {
       "date": "2026-03-04",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-02-25",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-01-20",
-      "category": "work",
-      "text": "User works as a physical therapist."
+      "date": "2026-02-23",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-10",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-12-11",
+      "date": "2026-04-30",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 옛날 프로젝트들 보관하려고 폴더 하나 만들어 줄 수 있어?
-[  4.68s][moshi] «backchannel» 그렇죠.
-[  5.20s][moshi] 어떤 이름으로 만들까요?
-[  6.76s][user ] 음… ‘오래된 프로젝트’로 해 ⟨ret@9.07s⟩ 줘.
-[  9.36s][moshi] ‘오래된 ⟦⚡SPAN@10.14s: (tool result) Directory '오래된 프로젝트' created successfully.⟧ 프로젝트’ 폴더를 만들었습니다.
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "오래된 프로젝트"}}
-[ 11.44s][user ] 고마워. 아, 그리고 내일 날씨 ⟨ret@14.19s⟩ 어때?
-[ 14.56s][moshi] ⟦⚡SPAN@15.25s: Weather: 26.1°C, humidity 68%, wind 3.2 km/h, condition: partly cloudy.⟧ 내일은 이십육 점 일도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터이며, 부분적으로 흐릴 것으로 예상됩니다.
-[ 22.36s][user ] 음, 괜찮네.
-[ 23.40s][moshi] 네, 날씨가 괜찮으니 야외 활동하기 좋겠네요. 혹시 다른 계획 있으신가요?
-[ 28.60s][user ] 이번 주 토요일에 영화 보러 갈까 하는데, 괜찮은 영화 ⟨ret@33.27s⟩ 있을까?
-[ 33.80s][moshi] 이번 ⟦⚡SPAN@34.76s: Movies playing on Saturday, July 11, 2026: '인터스텔라', '어벤져스: 엔드게임', '기생충'.⟧ 주 토요일에는 ‘인터스텔라’, ‘어벤져스: 엔드게임’, ‘기생충’이 상영됩니다.
-[ 37.95s][user ] «backchannel» 응.
-[ 38.47s][user ] ‘인터스텔라’ 시간표 좀 알려줘. ⟨ret@40.35s⟩
-[ 40.55s][moshi] ‘인터스텔라’는 ⟦⚡SPAN@41.41s: '인터스텔라' showtimes on Saturday, July 11, 2026: 14:00, 17:00, 20:00.⟧ 토요일에 오후 두시, 다섯시, 여덟시에 상영됩니다.
-[ 44.19s][user ] 다섯시 표 예매해 줘. ⟨ret@46.26s⟩
-[ 46.27s][moshi] ‘인터스텔라’ ⟦⚡SPAN@47.41s: (tool result) 2 tickets for '인터스텔라' at 17:00 on July 11, 2026 confirmed. Confirmation ID: 873291.⟧ 오후 다섯시 영화 티켓 두장을 예매했습니다. 확인번호는 팔 칠 삼 이 구 일입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "인터스텔라", "showtime": "17:00", "date": "2026-07-11"}}
-[ 53.55s][user ] «backchannel» 그래.
-[ 54.07s][user ] 고마워.
-[ 54.59s][moshi] 천만에요. 영화 즐겁게 보세요.
-[ 56.67s][user ] 아, 맞다. 다음 주 화요일에 병원 예약해야 하는데, 도와줄 수 있어?
-[ 62.39s][moshi] «backchannel» 음.
-[ 62.91s][moshi] 다음 주 화요일에 병원 예약을 도와드리겠습니다. 어떤 병원을 찾으시나요?
-[ 67.59s][user ] 그냥 가까운 내과로 알아봐 ⟨ret@69.68s⟩ 줘.
-[ 70.19s][moshi] ⟦⚡SPAN@70.40s: Nearby internal medicine clinics: '서울내과', '가온내과', '미래내과'.⟧ 잠시만 기다려 주세요.
-[ 71.75s][moshi] 가까운 내과로는 ‘서울내과’, ‘가온내과’, ‘미래내과’가 있습니다.
-[ 74.87s][user ] ‘서울내과’로 예약해 ⟨ret@76.17s⟩ 줘.
-[ 76.43s][moshi] ⟦⚡SPAN@77.02s: (tool result) Appointment at '서울내과' booked for July 15, 2026 at 10:00 AM. Confirmation ID: 458923.⟧ ‘서울내과’에 칠월 십오일 오전 열시에 예약했습니다. 확인번호는 사 오 팔 구 이 삼입니다.
-      CALL: {"function": "Services_1_BookAppointment", "arguments": {"provider_name": "서울내과", "date": "2026-07-15"}}
-[ 83.19s][user ] 알았어.
-[ 83.71s][moshi] 네, 예약이 완료되었습니다.
-[ 85.27s][user ] 아니, 괜찮아.
-[ 86.31s][moshi] 좋습니다. 혹시 스트레스 해소에 도움이 될 만한 방법이 필요하신가요? 큰 변화를 겪고 계신다고 하셨으니…
-[ 93.59s][user ] «backchannel» 응.
-[ 94.11s][user ] 음… 뭔가 마음을 차분하게 하는 방법이 있을까?
-[ 97.75s][moshi] 마음을 차분하게 하는 방법은 여러 가지가 있습니다. 명상이나 요가를 해보는 것도 좋고, 좋아하는 음악을 듣거나 산책을 하는 것도 도움이 될 수 있습니다.
-[109.19s][moshi] 특히 자연 속에서 시간을 보내는 것은 심리적인 안정에 큰 효과가 있다고 알려져 있습니다.
-[115.94s][user ] 좋은 조언 고마워.
-[117.50s][moshi] 천만에요. 언제든지 필요하시면 말씀해 주세요. 편안한 하루 보내세요.
+[  0.00s][user ] 에펠탑이 얼마나 높은 곳에 있는지 궁금해요. ⟨ret@2.86s⟩
+[  2.97s][moshi] ⟦⚡SPAN@3.63s: (tool result) The Eiffel Tower is 330 meters (1,083 ft) tall, including the antenna, and is located at 48.8584⟧ 에펠탑은 안테나를 포함해서 삼백삼십미터, 약 천 팔십삼피트 높이에 위치하고 있어요. 파리 프랑스에 있고요.
+      CALL: {"function": "maps_elevation", "arguments": {"location": "Eiffel Tower"}}
+[  9.42s][user ] «backchannel» 네네.
+[  9.91s][user ] 와, 엄청 높네요!
+[ 11.40s][moshi] 그렇죠? 파리의 랜드마크잖아요. 혹시 다른 곳의 높이도 궁금하신가요?
+[ 15.36s][user ] 음… 그럼 서울 남산타워 높이는 어때요? ⟨ret@18.20s⟩
+[ 18.34s][moshi] ⟦⚡SPAN@18.59s: (tool result) N Seoul Tower is 236.7 meters (777 ft) tall and is located at 37.5658° N, 126.9753° E in Seoul, ⟧ 서울 남산타워는 이백삼십육 점 칠미터, 약 칠백칠십칠피트 높이로 서울에 자리 잡고 있습니다.
+      CALL: {"function": "maps_elevation", "arguments": {"location": "N Seoul Tower"}}
+[ 24.28s][user ] «backchannel» 음.
+[ 24.78s][moshi] 남산타워는 서울 시내를 한눈에 볼 수 있어서 정말 멋진 곳이죠. 날씨가 좋은 날 가면 더 예뻐요.
+[ 32.71s][user ] 맞아요. 저는 주말에 남산타워 근처 카페에 가려고 하는데, 혹시 괜찮은 곳 있을까요? ⟨ret@38.47s⟩
+[ 38.66s][moshi] 남산타워 ⟦⚡SPAN@39.39s: (tool result) Restaurants found: Cafe Montmartre (4.2 stars, 120 reviews, $$), Terrace Cafe (3.9 stars, 85 rev⟧ 근처 카페는 카페 몽마르트랑 테라스 카페가 괜찮아요. 카페 몽마르트는 별점 사 점 이점, 리뷰 백이십개, 가격대는 보통이고요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "N Seoul Tower area", "cuisine": "cafe"}}
+[ 47.58s][user ] «backchannel» 네.
+[ 48.07s][user ] 카페 몽마르트가 더 좋겠네요.
+[ 50.06s][moshi] 좋은 선택이에요. 전망도 좋고 커피도 맛있다고 하더라고요. 혹시 예약해 드릴까요?
+[ 55.01s][user ] «backchannel» 음.
+[ 55.51s][user ] 아니요, 괜찮아요. 직접 갈게요. 그런데…
+[ 57.98s][user ] …혹시 내일 날씨는 어때요? ⟨ret@59.76s⟩
+[ 59.97s][moshi] ⟦⚡SPAN@60.50s: (tool result) Tomorrow's weather in Seoul: 28.0°C, humidity 65%, wind 3.2 km/h, partly cloudy.⟧ 내일 서울 날씨는 이십팔도, 습도 육십오퍼센트, 바람은 시속 삼 점 이킬로미터, 구름이 조금 낄 예정입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 67.40s][user ] «backchannel» 음.
+[ 67.90s][user ] 꽤 덥겠네요.
+[ 68.89s][moshi] 네, 조금 더울 수 있으니 시원한 옷차림을 하시는 게 좋겠어요. 혹시 모자나 선글라스도 챙기시는 게 좋을 것 같아요.
+[ 77.81s][user ] 아, 그러네요. 알려주셔서 감사합니다.
+[ 79.79s][moshi] 천만에요. 편안한 주말 보내세요!
