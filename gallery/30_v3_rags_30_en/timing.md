@@ -4,74 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Alex",
+#     "name": "Mason",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "category": "home",
-#       "text": "User's home address is 126 Maple Drive."
-#     },
-#     {
-#       "date": "2026-01-22",
+#       "date": "2026-05-10",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-06-21",
+#       "date": "2026-03-25",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-24",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-17",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-14",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-09",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the song “The Battle of New Orleans” come out?
-     3.95s  agent 발화 시작: Yeah, yeah.
-     3.95s  user  발화 끝
-     4.35s  <ret> 발화 (turn2 첫 프레임)
-     4.67s  agent 발화 시작: <ret> That song, “The Battle of New Orleans,” was released i
-     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: Johnny Horton released "The Battle of New Orleans" in April 1959, and 
-     4.67s  agent 발화 끝
-    10.06s  agent 발화 끝
+     0.00s  user  발화 시작: Who earns the most money playing in the NBA?
+     3.60s  <ret> 발화 (turn1 첫 프레임)
+     3.79s  agent 발화 시작: <ret> Well, it looks like Stephen Curry is the highest-paid 
+     3.79s  user  발화 끝
+     4.16s  ⚡SPAN 주입 [d'=0.56s / d_lead=10.10s]: Stephen Curry is the highest-paid NBA player, earning $51.9 million in
+    13.89s  agent 발화 끝

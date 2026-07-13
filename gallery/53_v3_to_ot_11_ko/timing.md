@@ -4,95 +4,90 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "예훈",
+#     "name": "정안",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-29",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-12-02",
+#       "date": "2026-06-18",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-11-05",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2025-10-11",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-02-05",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-12-01",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-11-03",
+#       "category": "home",
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요 | S2 와, 꽤 오래됐네요. — | S3 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요 | S4 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 
+# EXAMINER(FDB-v2) 단계: S1 인도 대통령이나 총리가 누구야? | S2 그럼 지금 총리는 누구야? | S3 잠깐만, 엄마한테 전화 좀 해야 돼. | S4 와, 엄청 많네.
 
-     0.00s  user  발화 시작: 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요.
-     3.35s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> 한국어의 고유한 이름은 한글이라고 합니다. 아주 과학적인 문자 체계예요.
-     3.59s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.61s]: Hangul, also spelled Hangeul, is the native alphabet of the Korean lan
-     3.59s  user  발화 끝
-     8.20s  user  발화 시작: 아.
-     8.20s  agent 발화 끝
-     8.71s  user  발화 시작: 네, 그렇군요. 그런데 한글은 언제 만들어졌나요?
-     8.71s  user  발화 끝
-    11.47s  <ret> 발화 (turn4 첫 프레임)
-    11.79s  agent 발화 시작: <ret> 한글은 세종대왕께서 천사백사십육년에 발표하셨습니다. 백성을 위해 아주 쉽고 편리하게 만들었다고 해
-    11.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: Hangul was proclaimed by King Sejong the Great in 1446.
-    11.79s  user  발화 끝
-    17.42s  user  발화 시작: 예.
-    17.42s  agent 발화 끝
-    17.94s  user  발화 시작: 와, 꽤 오래됐네요. —
-    17.94s  user  발화 끝
-    19.99s  user  발화 시작: 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요?
-    19.99s  user  발화 끝
-    24.08s  agent 발화 시작: 네네.
-    24.08s  user  발화 끝
-    24.28s  <ret> 발화 (turn9 첫 프레임)
-    24.60s  agent 발화 시작: <ret> 세종대왕께서는 한글 창제 외에도 다양한 업적을 남기셨습니다. 과학 기술 발전에도 힘쓰셨죠.
-    24.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: Sejong the Great is credited with advancements in science, military te
-    24.60s  agent 발화 끝
-    30.23s  agent 발화 시작: 과학 기술과 군사 기술, 농업 발전에 큰 기여를 하셨다고 합니다. 백성을 위한 마음이 정말 컸던 분이세요.
-    30.23s  agent 발화 끝
-    38.43s  user  발화 시작: 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 됐어요.
-    38.43s  agent 발화 끝
-    43.56s  agent 발화 시작: 맞아요.
-    43.56s  user  발화 끝
-    44.07s  agent 발화 시작: 맞아요. 한글은 배우기 쉬운 문자라 외국인들도 금방 익힐 수 있다고 하죠. 저도 그렇게 생각합니다.
-    44.07s  agent 발화 끝
-    51.24s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 대통령이나 총리가 누구야?
+     1.79s  <ret> 발화 (turn1 첫 프레임)
+     2.01s  agent 발화 시작: <ret> 인도 대통령은 람 나트 코빈드 님이십니다. 이천십칠년 칠월 이십오일에 취임하셨어요.
+     2.01s  user  발화 끝
+     2.99s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.03s]: Ram Nath Kovind was the 14th and current president of India, assuming 
+     7.05s  user  발화 시작: 음, 대통령이구나.
+     7.05s  agent 발화 끝
+     8.05s  agent 발화 시작: 대통령직은 중요한 자리죠. 나라를 대표하는 분이니까요.
+     8.05s  user  발화 끝
+    11.07s  user  발화 시작: 응.
+    11.07s  agent 발화 끝
+    11.58s  user  발화 시작: 그럼 지금 총리는 누구야?
+    11.58s  user  발화 끝
+    13.32s  <ret> 발화 (turn6 첫 프레임)
+    13.59s  agent 발화 시작: <ret> 현재 인도 총리는 나렌드라 모디 님이십니다. 이천십사년 오월 이십육일부터 임기를 시작하셨어요.
+    13.59s  user  발화 끝
+    13.62s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.54s]: Narendra Modi is the 14th and current prime minister of India, serving
+    19.13s  user  발화 시작: 아, 모디 총리. 뉴스에서 많이 봤어.
+    19.13s  agent 발화 끝
+    22.15s  agent 발화 시작: 모디 총리님은 인도 경제 발전에 큰 역할을 하고 계시죠.
+    22.15s  user  발화 끝
+    26.68s  user  발화 시작: 잠깐만, 엄마한테 전화 좀 해야 돼.
+    26.68s  agent 발화 끝
+    29.70s  user  발화 시작: 아, 미안. 다시 얘기할게. 모디 총리님은 뭘 제일 잘해?
+    29.70s  user  발화 끝
+    34.19s  <ret> 발화 (turn11 첫 프레임)
+    34.23s  agent 발화 시작: <ret> 총리님의 업적은 여러 가지가 있지만… '메이크 인 인디아', '디지털 인디아', '스와치 바라트 
+    34.23s  user  발화 끝
+    34.86s  ⚡SPAN 주입 [d'=0.66s / d_lead=2.52s]: Narendra Modi has been credited with policies such as Make in India, D
+    48.33s  user  발화 시작: 와, 엄청 많네.
+    48.33s  agent 발화 끝
+    49.84s  agent 발화 시작: 맞아요. 인도 경제의 다양한 분야에서 긍정적인 변화를 이끌어내고 계시죠.
+    49.84s  user  발화 끝
+    54.37s  agent 발화 끝

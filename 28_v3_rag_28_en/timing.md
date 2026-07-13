@@ -4,94 +4,75 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Riley",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
+#     "nationality": "French",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "German"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
-#     },
-#     {
-#       "date": "2026-04-05",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2026-06-07",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-05-31",
+#       "date": "2026-04-28",
 #       "category": "home",
-#       "text": "User's home address is 562 Cedar Lane."
+#       "text": "User's home address is 354 Pine Court."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-12",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-27",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm thinking about visiting Washin | S2 Seattle, maybe. Is marijuana legal | S3 That's… surprisingly recent. What  | S4 No, no, Washington is good. What's
 
-     0.00s  user  발화 시작: I was wondering, where does all the sand on beaches actually
-     5.04s  agent 발화 시작: Yeah.
-     5.04s  user  발화 끝
-     5.42s  agent 발화 시작: Beaches are fascinating places, and their origins are quite 
-     5.42s  agent 발화 끝
-     9.30s  user  발화 시작: Mm-hmm.
-     9.30s  agent 발화 끝
-     9.69s  user  발화 시작: Varied how? Is it all just rocks getting ground down?
-     9.69s  user  발화 끝
-    13.56s  agent 발화 시작: Yeah.
-    13.56s  user  발화 끝
-    13.87s  <ret> 발화 (turn6 첫 프레임)
-    13.95s  agent 발화 시작: <ret> Beach sand is actually created by the weathering and e
-    13.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.07s]: Beach sand is created by the weathering and erosion of rocks, shells, 
-    13.95s  agent 발화 끝
-    24.02s  user  발화 시작: Mm-hmm.
-    24.02s  agent 발화 끝
-    24.41s  agent 발화 시작: It's a bit like nature’s delivery service, bringing all thos
-    24.41s  user  발화 끝
-    29.45s  user  발화 시작: So, coral plays a part? I didn’t realize that. What kind of 
-    29.45s  agent 발화 끝
-    34.79s  <ret> 발화 (turn10 첫 프레임)
-    34.87s  agent 발화 시작: <ret> Specifically, coralline algae—a type of red algae—depo
-    34.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.91s]: Coralline algae, a type of red algae, deposits calcium carbonate which
-    34.87s  user  발화 끝
-    43.78s  agent 발화 시작: It’s a beautiful process, really, creating these wonderful s
-    43.78s  agent 발화 끝
-    48.82s  agent 발화 끝
+     0.00s  user  발화 시작: I'm thinking about visiting Washington state. What's it like
+     3.78s  agent 발화 시작: Washington is a beautiful state with diverse landscapes, fro
+     3.78s  user  발화 끝
+    14.37s  user  발화 시작: Yeah.
+    14.37s  agent 발화 끝
+    14.75s  user  발화 시작: Seattle, maybe. Is marijuana legal there?
+    14.75s  user  발화 끝
+    16.78s  <ret> 발화 (turn4 첫 프레임)
+    17.01s  agent 발화 시작: <ret> It became legal in Washington state on December sixth,
+    17.01s  user  발화 끝
+    17.08s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.45s]: Recreational marijuana use became legal in Washington state on Decembe
+    26.47s  user  발화 시작: That's… surprisingly recent. What about other states?
+    26.47s  agent 발화 끝
+    29.11s  agent 발화 시작: Many other states have followed suit since then. Would you l
+    29.11s  user  발화 끝
+    38.19s  user  발화 시작: Yeah.
+    38.19s  agent 발화 끝
+    38.57s  user  발화 시작: No, no, Washington is good. What's the weather like in Seatt
+    38.57s  user  발화 끝
+    43.04s  <ret> 발화 (turn9 첫 프레임)
+    43.48s  agent 발화 시작: <ret> The weather in Seattle is currently eighteen point nin
+    43.48s  user  발화 끝
+    43.82s  ⚡SPAN 주입 [d'=0.78s / d_lead=11.72s]: (tool result) Seattle, WA: 18.9°C, humidity 62%, wind 3.1 km/h, condit
+    55.20s  agent 발화 끝

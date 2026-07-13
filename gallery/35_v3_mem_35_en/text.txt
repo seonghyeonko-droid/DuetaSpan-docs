@@ -1,77 +1,78 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Kleaia, a kind and steady counselor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Nelira, a calm and patient personal guide who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Simon",
+    "name": "Bruno",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-09",
+      "date": "2026-06-12",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-05-29",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-03-10",
+      "category": "home",
+      "text": "User's home address is 262 Maple Drive."
+    },
+    {
+      "date": "2025-10-21",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2026-02-10",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
+      "date": "2025-09-06",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-07-15",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-06-23",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-06-10",
+      "date": "2025-07-16",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-27",
-      "title": "Planning a birthday dinner",
+      "date": "2025-07-18",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Simon, I'm Kleaia. It’s lovely to meet you. Are you thinking about any upcoming travel plans?
-[  6.87s][user ] Actually, yes! I was hoping you could help me find a ⟨ret@11.31s⟩ restaurant.
-[ 11.71s][moshi] ⟦⚡SPAN@11.71s: [2026-04-09] User's favorite cuisine is Italian.⟧ Considering your preference, I’d suggest an Italian restaurant.
-[ 14.95s][user ] «backchannel» Mhm.
-[ 15.35s][user ] That sounds perfect! Somewhere not too expensive, though.
-[ 18.58s][moshi] «backchannel» Yeah.
-[ 18.98s][moshi] ⟨ret@18.82s⟩ ⟦⚡SPAN@18.98s: {"location": "London", "cuisine": "Italian", "price_tier": "moderate"}⟧ I understand. I can certainly find some moderately priced Italian restaurants.
-[ 23.43s][moshi] There are several options! Bella Italia has good reviews.
-[ 27.06s][user ] Bella Italia…hmm. Do they have outdoor seating? —
-[ 30.29s][user ] …I remember we talked about wanting outdoor seating for a birthday dinner last year, did ⟨ret@36.52s⟩ we?
-[ 36.76s][moshi] ⟦⚡SPAN@36.76s: [2025-12-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ Yes, you mentioned outdoor seating for a party of six last December.
-[ 41.60s][moshi] ⟨ret@41.36s⟩ ⟦⚡SPAN@41.60s: (tool result) {"restaurant name": "Bella Italia - London", "outdoor seating", "party size": 6, "reservation id⟧ Bella Italia does have outdoor seating and I’ve made a reservation for six. Your confirmation ID is BX829J.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "outdoor_seating": true, "party_size": 6}}
-[ 48.87s][user ] That’s fantastic, Kleaia! What's the weather like there this ⟨ret@52.59s⟩ weekend?
-[ 52.91s][moshi] ⟦⚡SPAN@52.91s: (tool result) {"location": "London, United Kingdom", "temperature": "21.0°C", "humidity": "65%", "wind speed":⟧ It looks like London will be partly cloudy this weekend with a temperature of 21.0°C.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 58.97s][user ] Sounds lovely. Thank you so much for your help!
-[ 62.61s][moshi] «backchannel» Uh-huh.
-[ 63.01s][moshi] You’re very welcome, Simon. I’m glad I could assist you with your plans.
+[  0.00s][moshi] Hi Bruno, I'm Nelira. It's lovely to meet you.
+[  3.30s][user ] «backchannel» Uh-huh.
+[  3.67s][user ] Yes, that’s right. I’m planning a trip to Italy next month, and I was hoping you could recommend a ⟨ret@10.69s⟩ restaurant.
+[ 11.01s][moshi] ⟦⚡SPAN@11.38s: [2025-06-04] User's favorite cuisine is Italian.⟧ Bruno. Considering your preference for Italian cuisine, I can certainly help with that.
+[ 15.78s][user ] Great! I’d like something authentic, not too touristy, if possible. ⟨ret@19.36s⟩
+[ 19.45s][moshi] I ⟦⚡SPAN@20.12s: (tool result) Restaurant: Trattoria Mario, Florence. Rating: 4.7 stars. Price: $$$. Cuisine: Tuscan.⟧ found Trattoria Mario in Florence, Italy. It has a 4.7-star rating and is considered authentic Tuscan cuisine.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Italy", "ambiance": "authentic"}}

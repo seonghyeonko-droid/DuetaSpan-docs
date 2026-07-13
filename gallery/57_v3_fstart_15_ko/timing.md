@@ -4,51 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "가훈",
+#     "name": "은경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-16",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-12-24",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-08-26",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-02",
+#       "date": "2026-03-09",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-10-10",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-08-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-05",
-#       "title": "Researching a used car",
+#       "date": "2026-01-25",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-31",
+#       "date": "2026-01-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -56,7 +66,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-16",
+#       "date": "2025-12-13",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,55 +76,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 라스베이거스에서 흡연 가능한 이성급 호텔 좀 찾아줘. | S2 서커스 서커스… 거긴 아이들이랑 가기 좋나? | S3 서울 말고 부산은? | S4 …칠월 십오일에 병원 예약했었나?
+# EXAMINER(FDB-v2) 단계: S1 집에서 중학교까지 가는 길 좀 알려줘. 학교 가는 길로. | S2 음… 그 옆에 새로 생긴 카페 있잖아, 거기까지 가는 길은? | S3 아, 그냥 스타벅스 가는 길 알려줘. | S4 좋아, 그럼 거기로 택시 불러줘.
 
-     0.00s  user  발화 시작: 라스베이거스에서 흡연 가능한 이성급 호텔 좀 찾아줘.
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.51s  agent 발화 시작: <ret> 라스베이거스에서 흡연 가능한 이성급 호텔로는 골든 너겟이 있는데, 일박에 백이십구달러부터 시작합니
-     3.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) The Golden Nugget is a two-star hotel in Las Vegas, Neva
-     3.51s  user  발화 끝
-     9.53s  user  발화 시작: 음… 골든 너겟 말고 다른 데도 있어? 좀 더 저렴한 곳으로.
-     9.53s  agent 발화 끝
-    14.65s  <ret> 발화 (turn3 첫 프레임)
-    15.05s  agent 발화 시작: <ret> 서커스 서커스 호텔도 흡연 가능하고, 일박에 팔십구달러부터 있습니다. 좀 더 저렴하네요.
-    15.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: (tool result) Circus Circus Hotel, Casino & Theme Park is a two-star h
-    15.05s  user  발화 끝
-    20.56s  user  발화 시작: 서커스 서커스… 거긴 아이들이랑 가기 좋나?
-    20.56s  agent 발화 끝
-    23.57s  agent 발화 시작: 아이들과 함께 가기 좋은 곳으로 유명해요. 다양한 놀이기구와 공연이 있거든요.
-    23.57s  user  발화 끝
-    28.59s  user  발화 시작: 네.
-    28.59s  agent 발화 끝
-    29.09s  agent 발화 시작: 특히 서커스 공연은 아이들이 정말 좋아할 거예요.
-    29.09s  user  발화 끝
-    32.60s  user  발화 시작: 그렇죠.
-    32.60s  agent 발화 끝
-    33.10s  user  발화 시작: 아, 이번 주 토요일에 서울 날씨 어때?
-    33.10s  user  발화 끝
-    36.45s  <ret> 발화 (turn10 첫 프레임)
-    36.61s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 이십팔도, 습도 칠십퍼센트, 바람은 시속 칠 점 이킬로미터, 부분적으
-    36.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Seoul: 28.0°C, humidity 70%, wind 7.2 km/h, condition: P
-    36.61s  user  발화 끝
-    45.14s  user  발화 시작: 서울 말고 부산은?
-    45.14s  agent 발화 끝
-    46.24s  <ret> 발화 (turn12 첫 프레임)
-    46.64s  agent 발화 시작: <ret> 부산은 이십육 점 오도, 습도 칠십오퍼센트, 바람은 시속 육 점 팔킬로미터, 흐릴 것으로 보입니다
-    46.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.03s]: (tool result) Busan: 26.5°C, humidity 75%, wind 6.8 km/h, condition: C
-    46.64s  user  발화 끝
-    55.67s  user  발화 시작: 아, 맞다. 혹시 내가…
-    55.67s  agent 발화 끝
-    57.67s  user  발화 시작: …칠월 십오일에 병원 예약했었나?
-    57.67s  user  발화 끝
-    59.68s  agent 발화 시작: 와.
-    59.68s  user  발화 끝
-    59.94s  <ret> 발화 (turn16 첫 프레임)
-    60.18s  agent 발화 시작: <ret> 네, 칠월 십오일에 병원 예약을 하셨습니다.
-    60.18s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.01s]: [2026-07-15] 병원 예약 확인
-    60.18s  agent 발화 끝
-    63.19s  user  발화 시작: 와.
-    63.19s  agent 발화 끝
-    63.69s  user  발화 시작: 고마워, 가릴. 덕분에 잘 챙겨지네.
-    63.69s  user  발화 끝
-    66.20s  agent 발화 시작: 도움이 되어서 기쁩니다. 건강 관리는 꾸준히 하는 게 중요하니까요.
-    66.20s  user  발화 끝
-    70.71s  agent 발화 끝
+     0.00s  user  발화 시작: 집에서 중학교까지 가는 길 좀 알려줘. 학교 가는 길로.
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     4.25s  agent 발화 시작: <ret> 집에서 중학교까지는 육 점 이킬로미터, 십팔분 정도 걸려요. Elm 거리를 따라 Oak 애비뉴로 
+     4.25s  user  발화 끝
+     4.47s  ⚡SPAN 주입 [d'=0.80s / d_lead=10.87s]: (tool result) {"distance": "6.2 km", "duration": "18 minutes", "route"
+    15.13s  user  발화 시작: 음… 그 옆에 새로 생긴 카페 있잖아, 거기까지 가는 길은?
+    15.13s  agent 발화 끝
+    19.86s  agent 발화 시작: 그 옆에 새로 생긴 카페 말씀이시군요.
+    19.86s  user  발화 끝
+    22.69s  agent 발화 시작: 죄송하지만, 그 카페에 대한 정보는 찾을 수 없었어요.
+    22.69s  agent 발화 끝
+    26.47s  user  발화 시작: 네.
+    26.47s  agent 발화 끝
+    26.95s  user  발화 시작: 아, 그냥 스타벅스 가는 길 알려줘.
+    26.95s  user  발화 끝
+    29.41s  <ret> 발화 (turn7 첫 프레임)
+    29.78s  agent 발화 시작: <ret> 스타벅스까지는 일 점 오킬로미터, 오분 정도 걸려요. 백이십삼 Main Street에 있어요.
+    29.78s  user  발화 끝
+    29.84s  ⚡SPAN 주입 [d'=0.43s / d_lead=5.20s]: (tool result) {"name": "Starbucks", "address": "123 Main Street", "dis
+    34.98s  user  발화 시작: 와.
+    34.98s  agent 발화 끝
+    35.46s  user  발화 시작: 좋아, 그럼 거기로 택시 불러줘.
+    35.46s  user  발화 끝
+    37.54s  <ret> 발화 (turn10 첫 프레임)
+    37.82s  agent 발화 시작: <ret> 스타벅스까지 택시를 불러드렸어요. 예상 요금은 팔천 원이고, 삼분 안에 도착할 거예요. 택시 번호
+    37.82s  user  발화 끝
+    38.54s  ⚡SPAN 주입 [d'=1.01s / d_lead=9.45s]: (tool result) {"status": "success", "estimated fare": "₩8,000", "estim
+    47.27s  agent 발화 끝

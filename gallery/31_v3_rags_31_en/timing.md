@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Jack",
+#     "name": "Ava",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "home",
-#       "text": "User's home address is 408 Maple Drive."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-12-23",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-06-17",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-07-13",
+#       "date": "2026-03-27",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "home",
+#       "text": "User's home address is 258 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-08-30",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-22",
+#       "date": "2026-05-13",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -56,9 +61,11 @@
 # }
 
 
-     0.00s  user  발화 시작: Who played the most minutes in NBA history?
-     3.38s  <ret> 발화 (turn1 첫 프레임)
-     3.62s  agent 발화 시작: <ret> That would be Kareem Abdul-Jabbar, with 57,446 minutes
-     3.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.87s]: Kareem Abdul-Jabbar holds the NBA record for most minutes played, with
-     3.62s  user  발화 끝
-    14.50s  agent 발화 끝
+     0.00s  user  발화 시작: Who sang “You’ve Got a Friend in Me” from Toy Story?
+     3.04s  <ret> 발화 (turn2 첫 프레임)
+     3.33s  agent 발화 시작: Mhm.
+     3.33s  user  발화 끝
+     3.63s  agent 발화 시작: <ret> That lovely song, “You’ve Got a Friend in Me”, was wri
+     3.63s  agent 발화 끝
+     4.35s  ⚡SPAN 주입 [d'=1.31s / d_lead=8.47s]: Randy Newman wrote and performed “You’ve Got a Friend in Me” for the 1
+    12.09s  agent 발화 끝

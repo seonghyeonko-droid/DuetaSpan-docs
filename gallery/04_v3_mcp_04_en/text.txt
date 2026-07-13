@@ -1,101 +1,77 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Viia, a curious and validating life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Dora, a thoughtful and soft-spoken counselor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Aiden",
+    "name": "Rowan",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "50s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-10-26",
-      "category": "home",
-      "text": "User's home address is 365 Maple Drive."
-    },
-    {
-      "date": "2025-09-16",
+      "date": "2026-06-10",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-30",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2025-09-15",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-08-05",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
+      "date": "2025-09-01",
+      "category": "home",
+      "text": "User's home address is 709 Maple Drive."
+    },
+    {
+      "date": "2025-05-30",
+      "category": "work",
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-30",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-22",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-08-02",
+      "date": "2025-09-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-24",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find bus options from Los Angeles to San Francisco on May first for four ⟨ret@6.99s⟩ passengers.
-[  7.31s][moshi] ⟦⚡SPAN@7.31s: (tool result) Los Angeles to San Francisco, May 1, 4 passengers: 08:00 AM, $75; 12:00 PM, $85; 06:00 PM, $90.⟧ I found several buses for you—departing Los Angeles for San Francisco on May first, with prices ranging from seventy-five to ninety dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Los Angeles", "destination": "San Francisco", "date": "May 1", "passengers": 4}}
-[ 16.25s][user ] Hmm, that 8 AM one sounds good. Can you buy me a ticket for ⟨ret@22.11s⟩ that?
-[ 22.35s][moshi] ⟦⚡SPAN@22.35s: (tool result) Confirmation: LAX-SFX-0501-4P, ticket purchased.⟧ Great! Your ticket is purchased, confirmation number LAX-SFX-0501-4P. It’s all set.
-      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"bus_id": "08:00 AM"}}
-[ 26.82s][user ] Perfect. I'm thinking about a weekend trip, maybe somewhere with good hiking.
-[ 31.69s][moshi] «backchannel» Yeah.
-[ 32.10s][moshi] That sounds lovely! A weekend focused on nature is a wonderful way to recharge.
-[ 37.79s][user ] «backchannel» Right.
-[ 38.20s][user ] I was considering Yosemite, but I'm worried about crowds.
-[ 41.85s][moshi] Yosemite is breathtaking, but you're right to think about the crowds—it can get very busy, especially during peak season.
-[ 49.57s][user ] Maybe something a little less known? Any suggestions?
-[ 52.82s][moshi] «backchannel» Mm-hmm.
-[ 53.23s][moshi] Have you ever considered Sequoia National Park? It offers incredible hiking and giant sequoia trees.
-[ 59.33s][user ] Sequoia… I've heard of it, but I don't know much about it.
-[ 64.20s][moshi] It’s a bit quieter than Yosemite, offering a similar experience with fewer visitors—the trees are truly majestic.
-[ 71.11s][user ] «backchannel» Mm-hmm.
-[ 71.52s][user ] What’s the weather like there right ⟨ret@74.12s⟩ now?
-[ 74.36s][moshi] ⟦⚡SPAN@74.36s: (tool result) Sequoia National Park: 18.3°C, humidity 42%, wind 8.0 km/h.⟧ The weather in Sequoia National Park is currently eighteen point three degrees Celsius, with forty-two percent humidity and an eight kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sequoia National Park"}}
-[ 84.11s][user ] «backchannel» Yeah.
-[ 84.52s][moshi] «interrupted» It sounds like ideal hiking conditions, doesn't it? Perhaps a good time to plan—
-[ 90.21s][user ] …Actually, before we get too far ahead…
-[ 93.05s][user ] …can we check hotel availability near Sequoia?
-[ 95.90s][moshi] Let’s look at hotel options near Sequoia National Park. What dates are you thinking of?
-[101.99s][moshi] «interrupted» I can help with that. A little planning goes a long way towards a relaxing trip—
-[108.49s][user ] «interrupts_prev» For the same weekend as the bus trip, May first, so maybe the second and ⟨ret@114.75s⟩ third?
-[114.99s][moshi] ⟦⚡SPAN@114.99s: (tool result) Sequoia National Park, May 2-3: Wuksachi Lodge, $220/night; John Muir Lodge, $180/night.⟧ I found two options near Sequoia National Park for May second and third—Wuksachi Lodge at two hundred and twenty dollars a night, and John Muir Lodge at one hundred and eighty.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Sequoia National Park", "check_in": "May 2", "check_out": "May 3"}}
-[127.59s][user ] John Muir Lodge sounds good. Can you reserve a room there for me? ⟨ret@132.71s⟩
-[132.87s][moshi] ⟦⚡SPAN@132.87s: (tool result) Reservation confirmed: JML-SQP-0502-0503-1R.⟧ Wonderful. Your reservation at John Muir Lodge is confirmed, with confirmation number JML-SQP-0502-0503-1R. It's all set for May second and third.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "John Muir Lodge", "check_in": "May 2", "check_out": "May 3"}}
-[141.41s][user ] «backchannel» Mhm.
-[141.81s][user ] That's great, thanks. This is all coming together nicely.
-[145.47s][moshi] I’m so glad to hear that! Planning ahead like this really sets you up for a peaceful and enjoyable experience. It's wonderful to see you taking this time for yourself.
-[157.66s][user ] «backchannel» Mm-hmm.
-[158.07s][user ] I think I'll look at some hiking trails now.
-[161.72s][moshi] «backchannel» Yeah, yeah.
-[162.54s][moshi] That's a fantastic idea. Exploring the trails is the best way to experience the beauty of Sequoia.
+[  0.00s][user ] I’m getting a really weird error on the checkout page. Can you grab a screenshot of it for me? I need to show ⟨ret@8.32s⟩ the developers.
+[  8.94s][moshi] ⟦⚡SPAN@8.62s: (tool result) {"image": "iVBORw0KGgoAAAANSUhEUgA... (truncated for brevity)..."}⟧ I’ve captured the checkout page as a base sixty-four encoded screenshot for you; it’s quite long, but ready when you need it.
+      CALL: {"function": "puppeteer_screenshot", "arguments": {"url": "https://example.com/checkout", "full_page": true, "encoding": "base64"}}
+[ 16.81s][user ] «backchannel» Yeah.
+[ 17.17s][moshi] Is there anything else I can help you with regarding that error, or perhaps a different page?
+[ 23.25s][user ] Actually, could you search for articles about that error message? It says “payment gateway ⟨ret@28.10s⟩ unavailable”.
+[ 28.62s][moshi] ⟦⚡SPAN@29.10s: Payment gateway unavailable errors typically arise from issues with the payment processor, network connectivit⟧ It looks like “payment gateway unavailable” errors often stem from issues with the processor itself, or network problems, and the Stripe support page has details.
+[ 37.56s][user ] Okay, that's helpful. Let's try something else. I need to book a hotel in Seoul for next week.

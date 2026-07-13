@@ -1,62 +1,51 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Zin, a gentle and reflective life coach who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Fox, a curious and validating counselor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Marie",
+    "name": "Leo",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-12-05",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-06-11",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-10-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-09-28",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-08-08",
+      "date": "2026-05-29",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-11-11",
+      "category": "home",
+      "text": "User's home address is 197 Oak Avenue."
+    },
+    {
+      "date": "2025-09-24",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-06-18",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-30",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-12-09",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-09",
+      "date": "2026-03-30",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -67,40 +56,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Zin, I’ve got a riddle for you. What’s the longest word in the dictionary?
-[  6.15s][moshi] That’s a classic! It’s always fun to ponder these linguistic curiosities. Are you hoping I’ll solve it, or just share the fun?
-[ 15.18s][user ] «backchannel» Yeah.
-[ 15.59s][user ] I’d like you to tell me the answer, if you know ⟨ret@20.12s⟩ it.
-[ 20.52s][moshi] ⟦⚡SPAN@20.52s: Pneumonoultramicroscopicsilicovolcanoconiosis is a lung disease caused by the inhalation of very fine silica d⟧ The longest word in the dictionary is pneumonoultramicroscopicsilicovolcanoconiosis — a lung disease from volcanic silica dust. Quite a mouthful, isn't it? It's rarely used outside of demonstrating its length.
-[ 32.42s][user ] Wow, that *is* long! Is it a real disease, ⟨ret@36.12s⟩ though?
-[ 36.52s][moshi] ⟦⚡SPAN@36.52s: Pneumonoultramicroscopicsilicovolcanoconiosis is a real, though very rare, lung disease. It was coined as an e⟧ Yes, it is a real disease, though quite rare; pneumonoultramicroscopicsilicovolcanoconiosis was coined in nineteen thirty-five.
-[ 42.67s][user ] That’s amazing! Who made up such a word?
-[ 45.96s][moshi] «backchannel» Yeah.
-[ 46.37s][moshi] ⟨ret@46.05s⟩ ⟦⚡SPAN@46.37s: Everett M. Smith, president of the National Puzzlers’ League, is credited with coining the word pneumonoultram⟧ Everett M. Smith, president of the National Puzzlers’ League, coined it in nineteen thirty-five.
-[ 52.11s][user ] A puzzlers’ league? That's… fitting.
-[ 54.16s][moshi] It really is, isn’t it? I find it fascinating how language can be playfully constructed, even around medical conditions. It speaks to our creativity.
-[ 64.01s][user ] So, it’s not a commonly diagnosed condition then?
-[ 67.29s][moshi] No, not at all. It's more of a linguistic curiosity than a widespread health concern. Doctors wouldn’t often write that diagnosis.
-[ 75.91s][user ] Right. Um…
-[ 76.73s][user ] …do you know what the longest place name ⟨ret@80.18s⟩ is?
-[ 80.42s][moshi] ⟦⚡SPAN@80.42s: (tool result) Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu is a hill ⟧ The longest place name is Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu—a hill in New Zealand with eighty-five letters.
-      CALL: {"function": "search", "arguments": {"query": "longest place name in the world"}}
-[ 85.76s][user ] That’s… a lot of vowels.
-[ 87.81s][moshi] It certainly is! It’s a Māori name, and those languages often have longer, more flowing words. It's quite a beautiful name, though.
-[ 96.84s][user ] I wonder if it’s hard for locals to say?
-[100.53s][moshi] «backchannel» Yeah.
-[100.94s][moshi] I imagine it takes some practice! It’s said to describe the hill as a place where Tamatea, a warrior, played his flute to his loved one.
-[111.61s][user ] «backchannel» Mhm.
-[112.02s][user ] That’s a lovely story. Do you know any other really long words?
-[116.94s][moshi] I do! There's also…
-[118.58s][moshi] «interrupted» There's also methionylthreonylthreonylglutaminylarginyl… —
-[120.22s][user ] «interrupts_prev» …Actually, wait, can you spell that first one again? The New Zealand hill?
-[125.56s][moshi] It's Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu.
-[126.38s][user ] Okay, wow. I definitely won't be using that one in conversation.
-[130.89s][moshi] «backchannel» Mm-hmm.
-[131.30s][moshi] I suspect not! It’s more of a fun fact to share than a practical word for everyday use, wouldn't you agree?
-[139.92s][user ] Definitely. It makes "pneumonoultramicroscopicsilicovolcanoconiosis" seem short.
-[142.38s][moshi] It does put things into perspective, doesn’t it? Both are excellent examples of how language can stretch its boundaries.
-[150.18s][user ] «backchannel» Yeah.
-[150.59s][user ] It’s kind of amazing what people come up with.
-[154.28s][moshi] It is, isn't it? Language is a constantly evolving thing, reflecting our creativity and our need to express ourselves. Perhaps that's why I enjoy this work so much.
+[  0.00s][user ] Hey Fox, quick question – who was the first Indian batsman to score a triple century in Test ⟨ret@6.50s⟩ cricket?
+[  6.73s][moshi] That ⟦⚡SPAN@7.26s: Virender Sehwag was the first Indian batsman to score a triple century in Test cricket, achieving the feat aga⟧ would be Virender Sehwag, actually—he made history against Pakistan in 2004. It’s quite a remarkable achievement, isn’t it?
+[ 13.47s][user ] «backchannel» Oh.
+[ 13.82s][user ] Wow, really? I didn't know that. Uh, my wife just asked if I remembered to take the trash out…
+[ 20.56s][user ] «to_other» Did you take out the trash, honey?
+[ 23.04s][user ] …never mind. Fox, what’s the weather like in Seoul right ⟨ret@26.57s⟩ now?
+[ 26.94s][moshi] ⟦⚡SPAN@26.87s: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wind 4.0 km/h, with clear skies.⟧ Right now in Seoul, it’s 26.0°C with 68% humidity, and a 4.0 km/h breeze—clear skies, too. Sounds lovely, doesn't it?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 34.03s][user ] «backchannel» Exactly.
+[ 34.38s][moshi] It's interesting how focusing on something new, like the weather, can help shift our attention, you know?

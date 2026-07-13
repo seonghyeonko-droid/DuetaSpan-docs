@@ -1,54 +1,56 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Kae, a grounded and empathetic wellness coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Zellar, a curious and validating supportive advisor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Noah",
+    "name": "Charlotte",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
+      "date": "2026-05-22",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-11-15",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-06-03",
-      "category": "home",
-      "text": "User's home address is 461 Birch Road."
+      "date": "2025-09-07",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-03-13",
-      "category": "work",
-      "text": "User works as a physical therapist."
+      "date": "2025-08-14",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-11-30",
+      "date": "2025-07-07",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-18",
+      "date": "2025-07-13",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -56,7 +58,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-27",
+      "date": "2025-07-04",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-29",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -67,17 +77,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What college moved to Ann Arbor in 1873?
-[  3.19s][moshi] «backchannel» Oh.
-[  3.59s][moshi] Hmm, that’s a good question! It seems there isn’t readily available information about a college specifically moving to Ann Arbor in 1873.
-[ 12.36s][user ] «backchannel» Oh.
-[ 12.75s][user ] Oh, okay. Well, what *is* the history of the University of Michigan?
-[ 17.54s][moshi] «backchannel» Uh-huh.
-[ 17.94s][moshi] «interrupted» ⟨ret@17.78s⟩ ⟦⚡SPAN@17.94s: The University of Michigan was founded in 1817 in Detroit, Michigan, before moving to Ann Arbor in 1837, and h⟧ The University of Michigan was founded in 1817 in Detroit, Michigan, before moving to Ann Arbor in 1837, and it’s now a leading public research university. It’s quite a story, really—
-[ 30.29s][user ] «interrupts_prev» …was it hard to move everything back then?
-[ 33.48s][moshi] That's a very thoughtful question! Moving a university in 1837 would have been a massive undertaking, involving transporting books, equipment—
-[ 41.45s][user ] «backchannel» Nice.
-[ 41.85s][moshi] —and of course, all the people connected to the university. Imagine the logistics without modern transportation! It wasn’t easy, and records show significant fundraising efforts were needed to finance the relocation.
-[ 54.21s][user ] That sounds stressful. What was Ann Arbor like at that time?
-[ 58.59s][moshi] «backchannel» Uh-huh.
-[ 58.99s][moshi] ⟨ret@58.83s⟩ ⟦⚡SPAN@58.99s: In 1837, Ann Arbor was a small village with a population of around 1,000 people, primarily serving as an agric⟧ In 1837, Ann Arbor was a small village with a population of around 1,000 people, mostly focused on farming and milling, before the university really changed things. It was a very different place then, I imagine.
+[  0.00s][user ] What was the name of the project founded in the Philippines? ⟨ret@4.22s⟩
+[  4.31s][moshi] Hmm, ⟦⚡SPAN@4.93s: (no information found)⟧ that’s a tricky one! I’ve searched, and unfortunately, I don’t have information about a specific project founded in the Philippines.
+[ 12.53s][user ] Oh, okay. Well, what’s the weather like in Manila right now?
+[ 16.83s][moshi] «backchannel» Yeah.
+[ 17.22s][moshi] ⟨ret@16.94s⟩ The ⟦⚡SPAN@18.14s: (tool result) 31.0°C, humidity 78%, wind 10.0 km/h, condition: Partly Cloudy⟧ weather in Manila is currently 31.0 degrees Celsius, with seventy-eight percent humidity and a 10.0 kilometer per hour wind—partly cloudy skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Manila"}}
+[ 25.84s][moshi] Sounds warm and breezy! Perhaps a good day for some outdoor creativity?
+[ 30.53s][user ] «backchannel» Mm-hmm.
+[ 30.92s][user ] It does! I’m trying to write a short story, but I’m stuck.
+[ 35.62s][moshi] «backchannel» Uh-huh.
+[ 36.01s][moshi] Oh, writer’s block, I understand! Sometimes just talking about your ideas can help unstick things. What’s your story about? I’m happy to listen—or brainstorm if you like.

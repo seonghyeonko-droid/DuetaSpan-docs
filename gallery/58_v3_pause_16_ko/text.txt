@@ -1,95 +1,81 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 주나라이며, 육아 및 가족 시간과 관련하여 사람들을 돕는 호기심 많고 지지적인 상담사입니다. <system>
+SYSTEM: <system> 주낸은 스트레스 해소와 마음챙김을 돕는 격려적이고 비판적이지 않은 웰니스 코치입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "성준",
+    "name": "태온",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2026-02-06",
+      "date": "2026-06-07",
       "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
+      "text": "User's home address is 서울 용산구 이태원로 200."
     },
     {
-      "date": "2025-10-25",
+      "date": "2026-06-05",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-03-03",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-07-06",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-05-27",
+      "date": "2025-11-26",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-09-23",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-01",
-      "title": "Setting up a home network",
+      "date": "2025-12-31",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 비단 위원회에 가입하려면 최소 몇 살이 되어야 ⟨ret@3.96s⟩ 해?
-[  4.36s][moshi] ⟦⚡SPAN@4.36s: The minimum age limit for membership of vidhan parishad is 30 years old.⟧ 비단 위원회에 가입하려면 최소 삼십세여야 합니다.
-[  7.62s][user ] «backchannel» 와.
-[  8.17s][user ] 음, 그럼 위원회는 정확히 뭘 하는 곳인데?
-[ 11.98s][moshi] 비단 위원회는 지역 사회 발전을 위한 다양한 활동을 지원하는 곳입니다.
-[ 17.43s][user ] 아, 그렇구나. 그럼 위원회에 가입하려면 어떻게 해야 돼? ⟨ret@21.62s⟩
-[ 21.78s][moshi] ⟦⚡SPAN@21.78s: To become a member of the vidhan parishad, one must submit an application form along with necessary documents.⟧ 비단 위원회에 가입하려면 신청서와 필요한 서류를 제출해야 합니다. 자세한 내용은 위원회 홈페이지에서 확인하실 수 있습니다.
-[ 29.95s][user ] «backchannel» 응.
-[ 30.50s][user ] 홈페이지는 어디에 있어? ⟨ret@31.97s⟩
-[ 32.13s][moshi] ⟦⚡SPAN@32.13s: (tool result) The official website of the vidhan parishad is www.vidhanparishad.gov.in, providing information ⟧ 비단 위원회 홈페이지는 www.vidhanparishad.gov.in 입니다. 가입 정보와 활동 내용 등을 확인하실 수 있습니다.
-      CALL: {"function": "search", "arguments": {"query": "비단 위원회 홈페이지"}}
-[ 39.21s][user ] 오, 알았어. 홈페이지에서 신청서를 다운로드받으면 되는 거네?
-[ 43.02s][moshi] 네, 맞습니다. 홈페이지에서 신청서를 다운로드하여 작성하신 후 제출하시면 됩니다.
-[ 47.92s][user ] 혹시 위원회 활동에 참여하려면 꼭 가입해야 하는 거야?
-[ 52.28s][moshi] «backchannel» 네.
-[ 52.82s][moshi] 꼭 가입해야 하는 것은 아니지만, 회원으로 가입하시면 다양한 활동에 더 쉽게 참여하실 수 있습니다.
-[ 60.45s][user ] 음… 그렇다면, 위원회에서 현재 진행 중인 활동이 뭐가 있어?
-[ 65.35s][moshi] «backchannel» 네.
-[ 65.89s][moshi] ⟨ret@65.81s⟩ ⟦⚡SPAN@65.89s: (tool result) The vidhan parishad is currently running a community outreach program focusing on environmental ⟧ 비단 위원회는 현재 환경 보호와 청년 역량 강화를 위한 지역 사회 봉사 프로그램을 진행하고 있습니다. 자세한 내용은 홈페이지에서 확인하실 수 있습니다.
-      CALL: {"function": "search", "arguments": {"query": "비단 위원회 현재 활동"}}
-[ 77.33s][user ] 환경 보호 프로그램이라… 어떤 식으로 진행되는 거야? —
-[ 81.69s][user ] … 혹시 이번 주 토요일에…
-[ 84.41s][user ] …참여할 수 있는 봉사활동이 있을까?
-[ 87.13s][moshi] «backchannel» 네.
-[ 87.68s][moshi] 이번 주 토요일에는 강변 정화 활동이 예정되어 있습니다. 참여를 원하시면 신청서를 작성해 주셔야 합니다.
-[ 95.30s][user ] «backchannel» 어.
-[ 95.85s][user ] 아, 좋네. 그럼 신청서는…
-[ 98.02s][user ] …지금 바로 할 수 ⟨ret@100.43s⟩ 있어?
-[100.75s][moshi] ⟦⚡SPAN@100.75s: The application form for the environmental conservation program can be submitted online through the vidhan par⟧ 환경 보호 프로그램 신청서는 비단 위원회 홈페이지에서 이천이십육년 칠월 십오일까지 온라인으로 제출하실 수 있습니다.
-[108.37s][user ] 칠월 십오일까지라… 시간이 얼마 없네.
-[111.09s][moshi] 네, 시간 여유가 많지 않으니 서둘러 신청하시는 것이 좋겠습니다.
-[116.00s][user ] «backchannel» 응.
-[116.54s][user ] 그럼, 혹시 봉사활동 때 필요한 준비물이 있을까?
-[120.35s][moshi] 편안한 복장과 개인 물통을 준비해 오시면 됩니다. 위원회에서 장갑과 쓰레기 봉투를 제공해 드립니다.
-[127.43s][user ] «backchannel» 아.
-[127.98s][user ] 알았어. 고마워, 주나라. 덕분에 잘 알게 됐어.
-[131.79s][moshi] 천만에요. 도움이 되었다니 기쁩니다.
+[  0.00s][user ] 커피… 커피는 언제부터 유럽에 ⟨ret@2.37s⟩ 들어왔지?
+[  2.72s][moshi] ⟦⚡SPAN@3.34s: The first European coffee houses opened in Venice in 1645.⟧ 유럽에 커피하우스가 처음 생긴 건 천육백사십오년 베네치아였어요.
+[  6.52s][user ] 베네치아… 음, 천육백사십오년이라…
+[  8.15s][moshi] 십칠세기 초에는 커피가 유럽 귀족들 사이에서 꽤 인기 있었답니다. 스트레스 해소에 도움이 된다고 여겼거든요.
+[ 15.76s][user ] 스트레스 해소? 요즘도 커피 마시면서 힐링하잖아.
+[ 19.02s][moshi] 맞아요. 커피는 여전히 많은 사람들에게 위로가 되죠. 혹시 지금 스트레스 받는 일 있으세요?
+[ 26.08s][user ] 아, 요즘 회사 일이 좀 많아서… ⟨ret@29.26s⟩
+[ 29.34s][moshi] ⟦⚡SPAN@29.56s: Weather in Seoul: 23.0°C, humidity 74%, wind 5.5 km/h.⟧ 현재 기온은 섭씨 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+[ 35.32s][user ] 서울 날씨는 괜찮네요. 그럼… 이번 주 토요일에 서울 근처로…
+[ 40.21s][user ] …당일치기 여행 갈 만한…
+[ 42.38s][user ] …곳 추천해 줄 수 ⟨ret@44.73s⟩ 있어?
+[ 45.10s][moshi] ⟦⚡SPAN@45.72s: (tool result) Gyeongbokgung Palace is a major landmark in Seoul, attracting millions of visitors annually. It ⟧ 서울의 경복궁은 매년 수백만 명의 방문객이 찾는 주요 명소예요. 한국의 역사와 건축을 엿볼 수 있답니다.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Seoul"}}
+[ 53.25s][user ] 경복궁… 가본 적 있는데, 좋았어.
+[ 55.96s][moshi] 경복궁은 아름다운 곳이죠. 잠시 쉬면서 마음을 차분하게 가라앉히기에 좋은 장소예요.

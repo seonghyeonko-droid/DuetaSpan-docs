@@ -4,59 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Andrea",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-05",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-07-31",
+#       "date": "2026-05-13",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-06-16",
+#       "date": "2026-03-17",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "home",
+#       "text": "User's home address is 413 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-11",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-01",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-17",
+#       "date": "2026-06-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,63 +50,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly *does* a supportive a | S2 That sounds good in theory, but I  | S3 I guess I worry about what my boss | S4 Maybe. I keep thinking about all t
+# EXAMINER(FDB-v2) 단계: S1 Oh, that’s… unexpected. I just nee | S2 Well, it feels a bit… personal, I  | S3 I’m trying to write a proposal for | S4 The introduction. I don't know how
 
-     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to connect with you. I’m Selil, an
-     8.91s  user  발화 시작: Yeah.
-     8.91s  agent 발화 끝
-     9.27s  user  발화 시작: What exactly *does* a supportive advisor do?
-     9.27s  user  발화 끝
-    11.76s  agent 발화 시작: I help people navigate their thoughts and feelings, Andrea. 
-    11.76s  user  발화 끝
-    20.32s  user  발화 시작: Yeah.
-    20.32s  agent 발화 끝
-    20.67s  user  발화 시작: Hmm. I’m feeling a bit overwhelmed with work lately, and it’
-    20.67s  user  발화 끝
-    26.38s  agent 발화 시작: Mm-hmm.
-    26.38s  user  발화 끝
-    26.73s  agent 발화 시작: That sounds incredibly draining, Andrea. When work spills ov
-    26.73s  agent 발화 끝
-    34.93s  user  발화 시작: It's just… everything. Deadlines, emails, meetings… it never
-    34.93s  agent 발화 끝
-    40.63s  agent 발화 시작: Nice.
-    40.63s  user  발화 끝
-    40.99s  agent 발화 시작: It’s understandable to feel that way when facing a relentles
-    40.99s  agent 발화 끝
-    48.83s  user  발화 시작: Uh-huh.
-    48.83s  agent 발화 끝
-    49.19s  agent 발화 시작: Prioritization can be a powerful tool, Andrea. It’s about id
-    49.19s  user  발화 끝
-    58.10s  user  발화 시작: That sounds good in theory, but I always feel guilty delegat
-    58.10s  agent 발화 끝
-    63.80s  agent 발화 시작: Okay.
-    63.80s  user  발화 끝
-    64.16s  agent 발화 시작: That's a very common feeling, Andrea. It suggests a strong s
-    64.16s  agent 발화 끝
-    73.07s  user  발화 시작: But what if I fall behind on everything if I try to take a b
-    73.07s  agent 발화 끝
-    78.41s  agent 발화 시작: Okay.
-    78.41s  user  발화 끝
-    78.77s  agent 발화 시작: That’s a valid concern, Andrea. It's difficult to believe th
-    78.77s  agent 발화 끝
-    87.68s  user  발화 시작: Yeah, totally.
-    87.68s  agent 발화 끝
-    88.39s  user  발화 시작: I guess I worry about what my boss will think. She's… very d
-    88.39s  user  발화 끝
-    93.03s  agent 발화 시작: It sounds like you're navigating a workplace culture that hi
-    93.03s  user  발화 끝
-   100.87s  user  발화 시작: It really is. I'm also trying to plan a trip to Melbourne ne
-   100.87s  agent 발화 끝
-   109.42s  agent 발화 시작: Planning a trip while already feeling overwhelmed sounds inc
-   109.42s  user  발화 끝
-   119.40s  user  발화 시작: Right.
-   119.40s  agent 발화 끝
-   119.76s  user  발화 시작: Maybe. I keep thinking about all the things I *should* be do
-   119.76s  user  발화 끝
-   125.82s  agent 발화 시작: Those "shoulds" can be very powerful, Andrea. They often ste
-   125.82s  user  발화 끝
-   136.87s  user  발화 시작: I… I don't know. It feels selfish, I guess.
-   136.87s  agent 발화 끝
-   140.08s  agent 발화 시작: Self-care isn’t selfish, Andrea; it’s essential. It’s like f
-   140.08s  user  발화 끝
-   151.13s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Rowan, it’s lovely to connect with you. I'm Oraia.
+     3.53s  user  발화 시작: Uh-huh.
+     3.53s  agent 발화 끝
+     3.88s  user  발화 시작: Oh, that’s… unexpected. I just needed a reminder set, honest
+     3.88s  user  발화 끝
+     9.52s  agent 발화 시작: I can absolutely set reminders for you. But it sounds like p
+     9.52s  user  발화 끝
+    19.40s  user  발화 시작: Okay.
+    19.40s  agent 발화 끝
+    19.75s  agent 발화 시작: Sometimes, we hold back from possibilities because we worry 
+    19.75s  user  발화 끝
+    29.63s  user  발화 시작: Right.
+    29.63s  agent 발화 끝
+    29.98s  user  발화 시작: Well, it feels a bit… personal, I suppose? Like I'm admittin
+    29.98s  user  발화 끝
+    37.39s  agent 발화 시작: That’s a very honest observation. It takes courage to acknow
+    37.39s  user  발화 끝
+    47.61s  user  발화 시작: I’m trying to write a proposal for a new project at work, an
+    47.61s  agent 발화 끝
+    56.43s  agent 발화 시작: A blank page can be incredibly daunting, Rowan. It's like a 
+    56.43s  user  발화 끝
+    66.31s  user  발화 시작: Yeah.
+    66.31s  agent 발화 끝
+    66.66s  user  발화 시작: The introduction. I don't know how to make it sound… compell
+    66.66s  user  발화 끝
+    71.95s  agent 발화 시작: I understand. A strong introduction sets the tone, doesn't i
+    71.95s  user  발화 끝
+    82.18s  agent 발화 끝

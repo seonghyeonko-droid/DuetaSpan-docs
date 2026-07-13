@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "준영",
+#     "name": "진람",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,119 +12,119 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2025-12-03",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2025-08-12",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-01-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "date": "2025-06-29",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-12-08",
+#       "date": "2025-06-12",
 #       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-09-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-09-21",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-14",
+#       "date": "2026-02-02",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-13",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨가 어때요? | S2 아, 맞다. 그 영화. | S3 아니요, 괜찮아요. 그냥 생각나서 물어봤어요. | S4 …만한 영화 추천해 줄 수 있어요?
+# EXAMINER(FDB-v2) 단계: S1 오늘 하루 어떠셨어요? | S2 어렸을 때 그림 그리는 걸 좋아했어요. | S3 …그림을 다시 시작해볼까 생각 중이에요. | S4 … 아니, 그냥 아무거나 괜찮아요. 그림 그리는 것 자체가 좋
 
-     0.00s  user  발화 시작: 오늘 날씨가 어때요?
-     1.37s  <ret> 발화 (turn1 첫 프레임)
-     1.45s  agent 발화 시작: <ret> 서울 날씨는 현재 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다. 오늘 
-     1.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) The weather in Seoul is 23.0°C, humidity 74%, wind 5.5 k
-     1.45s  user  발화 끝
-     8.67s  user  발화 시작: 아, 네. 고마워요.
-     8.67s  agent 발화 끝
-    10.12s  agent 발화 시작: 작은 일에도 감사하는 마음은 삶을 더 풍요롭게 만들죠.
-    10.12s  user  발화 끝
-    13.97s  user  발화 시작: 음… 천구백팔십이년에 개봉했는데 천구백팔십삼년에 방영된 영화 중에 시청률이 높았던 거… 뭐였지?
-    13.97s  agent 발화 끝
-    19.11s  <ret> 발화 (turn5 첫 프레임)
-    19.27s  agent 발화 시작: <ret> 천구백팔십삼년에 방영된 비스포츠 프로그램 중 시청률 칠위를 기록한 영화는 바로 ‘애프터 더 데이’
-    19.27s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.26s]: The Day After — aired in 1983 — was the seventh highest rated non-spor
-    19.27s  user  발화 끝
-    25.54s  user  발화 시작: 아, 맞다. 그 영화.
-    25.54s  agent 발화 끝
-    27.47s  agent 발화 시작: 기억을 떠올리는 건 참 좋은 일이죠. 혹시 그 영화에 대해 더 알고 싶으신가요?
-    27.47s  user  발화 끝
-    33.73s  user  발화 시작: 네네.
-    33.73s  agent 발화 끝
-    34.21s  user  발화 시작: 그 영화랑 캔자스 주 고속도로 케이 일 공번이랑 무슨 관계가 있어요?
-    34.21s  user  발화 끝
-    39.11s  <ret> 발화 (turn10 첫 프레임)
-    39.51s  agent 발화 시작: <ret> ‘애프터 더 데이’에는 캔자스 주 고속도로 케이 일 공번이 등장합니다. 영화 속 중요한 배경으로 
-    39.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: The Day After featured Kansas state highway K-10.
-    39.51s  user  발화 끝
-    46.74s  user  발화 시작: 네.
-    46.74s  agent 발화 끝
-    47.22s  agent 발화 시작: 영화 속 배경이 주는 현실감은 메시지를 더 강력하게 전달하는 힘이 있죠. 혹시 다른 영화에 대해서도 궁금하신
-    47.22s  user  발화 끝
-    54.93s  user  발화 시작: 아니요, 괜찮아요. 그냥 생각나서 물어봤어요.
-    54.93s  agent 발화 끝
-    57.34s  agent 발화 시작: 가끔은 과거의 기억을 떠올리는 것만으로도 마음이 편안해지곤 하죠.
-    57.34s  user  발화 끝
-    61.19s  user  발화 시작: 요즘 좀 힘들어서… 기분 전환할…
-    61.19s  agent 발화 끝
-    63.60s  user  발화 시작: …만한 영화 추천해 줄 수 있어요?
-    63.60s  user  발화 끝
-    66.49s  agent 발화 시작: 네.
-    66.49s  user  발화 끝
-    66.66s  <ret> 발화 (turn18 첫 프레임)
-    66.98s  agent 발화 시작: <ret> 기분 전환에는 따뜻한 영화가 좋죠. ‘패딩턴 이’라는 코미디 영화를 추천해 드립니다. 이천십칠년에
-    66.98s  ⚡SPAN 주입 [d'=0.88s / d_lead=7.71s]: (tool result) 'Paddington 2' (2017) - Comedy, Family, PG.
-    66.98s  agent 발화 끝
-    74.69s  user  발화 시작: 패딩턴 이… 한번 찾아봐야겠네요.
-    74.69s  agent 발화 끝
-    76.61s  agent 발화 시작: 긍정적인 에너지를 주는 영화는 삶에 활력을 불어넣어 줄 거예요.
-    76.61s  user  발화 끝
-    80.95s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 하루 어떠셨어요?
+     1.39s  agent 발화 시작: 오늘 하루도 편안하게 보내셨기를 바랍니다. 혹시 특별히 이야기하고 싶은 일이 있으신가요?
+     1.39s  user  발화 끝
+     6.49s  user  발화 시작: 그렇죠.
+     6.49s  agent 발화 끝
+     6.96s  user  발화 시작: 음… 요즘 커리어 때문에 고민이 좀 있어요.
+     6.96s  user  발화 끝
+    10.20s  agent 발화 시작: 커리어 고민이시군요. 어떤 점이 가장 힘드신가요? 구체적으로 말씀해주시면 제가 좀 더 도움이 될 수 있을 것
+    10.20s  user  발화 끝
+    18.09s  user  발화 시작: 제가 뭘 잘하는지, 뭘 하고 싶은지 잘 모르겠어요.
+    18.09s  agent 발화 끝
+    21.80s  agent 발화 시작: 네.
+    21.80s  user  발화 끝
+    22.15s  <ret> 발화 (turn7 첫 프레임)
+    22.26s  agent 발화 시작: <ret> 많은 분들이 커리어에 대해 불확실성을 느끼고, 자신의 강점과 열정에 대해 혼란스러워하는 것은 흔한
+    22.26s  agent 발화 끝
+    22.52s  ⚡SPAN 주입 [d'=0.37s / d_lead=6.49s]: Many people experience uncertainty about their career path, and it is 
+    28.75s  user  발화 시작: 네, 맞아요. 그냥 막막해요.
+    28.75s  agent 발화 끝
+    30.61s  agent 발화 시작: 막막한 기분은 당연합니다. 하지만 너무 걱정하지 마세요. 함께 차근차근 알아가면 분명 답을 찾을 수 있을 거
+    30.61s  user  발화 끝
+    40.81s  user  발화 시작: 어렸을 때 그림 그리는 걸 좋아했어요.
+    40.81s  agent 발화 끝
+    43.23s  <ret> 발화 (turn11 첫 프레임)
+    43.58s  ⚡SPAN 주입 [d'=0.35s / d_lead=12.99s]: Art therapy is a form of psychotherapy that uses creative methods of e
+    43.59s  agent 발화 시작: <ret> 어렸을 때 그림 그리기를 좋아하셨군요. 미술 치료는 예술 매체를 통해 감정을 탐구하고 자기 인식을
+    43.59s  user  발화 끝
+    56.58s  user  발화 시작: 아, 미술 치료요? 그거 재밌을 것 같아요.
+    56.58s  agent 발화 끝
+    59.82s  agent 발화 시작: 네, 흥미로운 분야죠. 혹시 미술 치료사가 되시는 걸 생각해 보신 적 있으신가요? 아니면 단순히 그림을 취미
+    59.82s  user  발화 끝
+    70.03s  user  발화 시작: 네.
+    70.03s  agent 발화 끝
+    70.49s  user  발화 시작: 음… 미술 치료사까지는 아니지만…
+    70.49s  user  발화 끝
+    72.35s  user  발화 시작: …그림을 다시 시작해볼까 생각 중이에요.
+    72.35s  user  발화 끝
+    74.66s  agent 발화 시작: 좋은 생각입니다. 그림을 통해 스트레스를 해소하고 자신을 표현하는 것은 매우 건강한 방법입니다. 요즘 그림을
+    74.66s  user  발화 끝
+    85.33s  user  발화 시작: 네.
+    85.33s  agent 발화 끝
+    85.79s  user  발화 시작: 강좌요? 어디서 찾아볼 수 있나요?
+    85.79s  user  발화 끝
+    88.08s  <ret> 발화 (turn20 첫 프레임)
+    88.11s  agent 발화 시작: <ret> 서울시에는 다양한 미술 강좌가 있습니다. 강남구에 위치한 '아트 앤 디자인'에서는 유화, 수채화,
+    88.11s  user  발화 끝
+    89.00s  ⚡SPAN 주입 [d'=0.91s / d_lead=10.20s]: (tool result) 서울시에는 다양한 미술 강좌가 있습니다. 강남구에 위치한 '아트 앤 디자인'에서는 유화, 수채화, 드
+    98.32s  user  발화 시작: 이십만원이면 괜찮네요. 혹시 다른 곳도 알아봐 주실 수 있나요?
+    98.32s  agent 발화 끝
+   102.49s  agent 발화 시작: 다른 미술 강좌도 찾아볼까요? 아니면 다른 종류의 취미 활동을 알아보는 것도 괜찮을 것 같아요.
+   102.49s  user  발화 끝
+   108.98s  user  발화 시작: 그렇죠.
+   108.98s  agent 발화 끝
+   109.45s  user  발화 시작: 아니요, 일단 미술 강좌부터 알아봐 주세요.
+   109.45s  user  발화 끝
+   112.23s  agent 발화 시작: 그럼 다른 미술 강좌를 더 찾아보겠습니다. 혹시 선호하는 스타일이나 기법이 있으신가요? —
+   112.23s  user  발화 끝
+   117.79s  user  발화 시작: … 아니, 그냥 아무거나 괜찮아요. 그림 그리는 것 자체가 좋아서요.
+   117.79s  agent 발화 끝
+   122.43s  agent 발화 시작: 네.
+   122.43s  user  발화 끝
+   122.89s  agent 발화 시작: 그림 그리는 것 자체가 좋으시다니 다행이네요. 그럼 좀 더 다양한 강좌를 찾아보겠습니다.
+   122.89s  agent 발화 끝
+   128.46s  user  발화 시작: 예.
+   128.46s  agent 발화 끝
+   128.92s  user  발화 시작: 네, 부탁드려요.
+   128.92s  user  발화 끝
+   129.85s  agent 발화 시작: 잠시만 기다려 주세요. 홍대에도 '미술 공작소'라는 곳이 있는데, 이곳에서는 다양한 재료를 활용한 미술 수업
+   129.85s  user  발화 끝
+   140.05s  user  발화 시작: 진짜요?
+   140.05s  agent 발화 끝
+   140.52s  user  발화 시작: 홍대요? 홍대는 가기도 편하고 좋네요.
+   140.52s  user  발화 끝
+   142.84s  agent 발화 시작: 네, 교통도 편리하고 주변에 볼거리도 많아서 좋습니다. 그림 그리면서 힐링하는 시간을 가져보시는 건 어떠세요
+   142.84s  user  발화 끝
+   149.33s  agent 발화 끝

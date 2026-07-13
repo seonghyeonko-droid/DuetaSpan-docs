@@ -1,102 +1,83 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Naen, a curious and validating wellness coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Zioia, a curious and validating life coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Victor",
+    "name": "Max",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "early 30s",
-    "language": "German"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
+      "date": "2026-01-28",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-04-23",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-01-26",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-01-25",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-01-12",
+      "date": "2025-10-01",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-05-29",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2025-09-09",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-04",
-      "title": "Researching a used car",
+      "date": "2026-01-26",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-01-06",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-08",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Victor, I'm Naen. It’s lovely to meet you.
-[  3.51s][user ] «backchannel» Yeah.
-[  3.90s][user ] Hi Naen, good to meet you too. What time is it right now? ⟨ret@8.82s⟩
-[  8.98s][moshi] ⟦⚡SPAN@8.98s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Berlin right now.⟧ It is currently 10:17 AM in Berlin. A good start to the day, wouldn’t you say?
+[  0.00s][moshi] Hi Max, I'm Zioia. It's wonderful to connect with you today.
+[  4.12s][user ] Hi Zioia, good to meet you too. What time is it right now? ⟨ret@8.89s⟩
+[  8.99s][moshi] ⟦⚡SPAN@8.99s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Toronto right now.⟧ It is currently ten seventeen AM in Toronto, Max. A perfect time to check in with yourself.
       CALL: {"function": "get_time", "arguments": {}}
-[ 15.22s][user ] Yes, it is. I was just remembering my trip to ⟨ret@19.27s⟩ Kyoto.
-[ 19.51s][moshi] ⟦⚡SPAN@19.51s: [2025-10-08] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ I have a note from October 8th of last year, about booking a dentist appointment and your preference for Dr. Han.
-[ 27.71s][user ] «backchannel» Mm-hmm.
-[ 28.10s][user ] Oh, that's right! No, I meant the actual trip, the vacation.
-[ 32.39s][moshi] «backchannel» Yeah.
-[ 32.78s][moshi] ⟨ret@32.54s⟩ ⟦⚡SPAN@32.78s: [2025-12-02] User's favorite cuisine is Korean BBQ.⟧ You mentioned on December 2nd that Korean BBQ is your favorite cuisine. Perhaps you enjoyed some while in Kyoto?
-[ 40.20s][user ] Actually, I was thinking of looking for a good Korean restaurant here in Berlin. ⟨ret@45.58s⟩
-[ 45.66s][moshi] «interrupted» ⟦⚡SPAN@45.66s: (tool result) “Arirang Korean BBQ”, 4.5 stars, 123 Sonnenallee, 12047 Berlin, Germany; “Kimchi Princess”, 4.2 ⟧ There's Arirang Korean BBQ on Sonnenallee, with 4.5 stars, and Kimchi Princess on Skalitzer Straße, rated 4.2 stars. —
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "location": "Berlin"}}
-[ 53.08s][user ] «interrupts_prev» …Do either of those have vegan options? I’m still keeping up with that. ⟨ret@58.07s⟩
-[ 58.15s][moshi] ⟦⚡SPAN@58.15s: (tool result) “Veggie Garden”, 4.7 stars, Warschauer Str. 69, 10243 Berlin, Germany; “Secret Garden”, 4.3 star⟧ Veggie Garden on Warschauer Straße has 4.7 stars, and Secret Garden on Krossener Straße has 4.3 stars. Both offer vegan Korean BBQ.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "location": "Berlin", "vegan": "true"}}
-[ 66.74s][user ] Great! That's really helpful, thank you. I'm feeling a little stressed with work lately.
-[ 72.20s][moshi] «backchannel» Yeah.
-[ 72.60s][moshi] I understand. It’s completely normal to feel stressed with work. Perhaps we could explore some quick mindfulness exercises?
-[ 79.62s][user ] «backchannel» Yeah.
-[ 80.01s][user ] That sounds good, actually. Do you have any suggestions?
-[ 83.52s][moshi] A simple breathing exercise can be very grounding. Shall we try a short one together?
+[ 15.36s][user ] Oh, good to know. And uh, remind me, what did I say about my ⟨ret@20.60s⟩ dog?
+[ 20.98s][moshi] You mentioned ⟦⚡SPAN@22.06s: [2026-01-28] User has a Corgi named Mochi.⟧ you have a Corgi named Mochi. Such a sweet name!
+[ 25.47s][user ] Mochi is the best. I'm thinking about planning a trip soon.
+[ 29.59s][moshi] «backchannel» Nice.
+[ 29.97s][moshi] That sounds exciting! Where are you hoping to go?
+[ 33.34s][user ] «backchannel» Mhm.
+[ 33.71s][user ] I was thinking ⟨ret@34.99s⟩ Switzerland, actually.
+[ 35.59s][moshi] ⟦⚡SPAN@35.39s: [2025-09-09] User is planning a trip to Switzerland in August.⟧ Ah, yes, you are planning a trip to Switzerland in August. That’s wonderful!
+[ 40.46s][user ] «backchannel» Mm-hmm.
+[ 40.83s][moshi] I imagine you're already dreaming up all the things you'll experience there. Do you have any specific interests for the trip?
+[ 48.70s][user ] «backchannel» Yeah.
+[ 49.07s][user ] I'd like to find some interesting ⟨ret@51.47s⟩ hikes.
+[ 51.69s][moshi] ⟦⚡SPAN@51.63s: (tool result) Switzerland is known for its stunning alpine trails; the Eiger Trail offers breathtaking views o⟧ Switzerland is known for stunning alpine trails; the Eiger Trail offers breathtaking views, and the High Alpine Trail is a challenging trek.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Switzerland", "category": "hiking"}}
+[ 59.94s][user ] That sounds amazing! I'm also trying to book a birthday dinner for six ⟨ret@64.76s⟩ people.
+[ 65.18s][moshi] You ⟦⚡SPAN@65.81s: [2026-01-26] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ were looking for outdoor seating for a party of six. I remember that from our previous conversation.
+[ 71.92s][user ] «backchannel» Mm-hmm.
+[ 72.30s][user ] Yes, exactly. Do you think you could find ⟨ret@75.44s⟩ some options?
+[ 76.04s][moshi] ⟦⚡SPAN@75.98s: (tool result) Patios are available at Bar Isabel (Spanish, $$), Alo (French, $$$), and Pai Northern Thai Kitch⟧ Patios are available at Bar Isabel, Alo, and Pai Northern Thai Kitchen. Those are all great choices!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Toronto", "party_size": 6, "outdoor_seating": true}}
+[ 82.41s][user ] «backchannel» Uh-huh.
+[ 82.79s][user ] Pai sounds good! Can you check if they have ⟨ret@86.08s⟩ availability?
+[ 86.53s][moshi] ⟦⚡SPAN@86.65s: (tool result) Reservation confirmed for 6 people at Pai Northern Thai Kitchen on July 17, 2026 at 7:30 PM. Con⟧ A reservation is confirmed for six people at Pai Northern Thai Kitchen on July seventeenth at seven thirty PM. Your confirmation ID is PA17730.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Pai Northern Thai Kitchen", "party_size": 6}}
+[ 95.52s][user ] Perfect, thank you!
+[ 96.65s][moshi] You're very welcome, Max. It sounds like things are coming together beautifully for both your trip and the birthday dinner. It’s wonderful to see you taking steps toward experiences that nourish you.

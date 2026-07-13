@@ -4,171 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Robin",
+#     "name": "Manon",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-11",
 #       "category": "home",
-#       "text": "User's home address is 321 Birch Road."
+#       "text": "User's home address is 893 Pine Court."
 #     },
 #     {
-#       "date": "2025-07-02",
+#       "date": "2026-03-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-30",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-09-22",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-11",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
+#       "date": "2026-04-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 이민호 씨 전화번호 아시나요? | S2 가온이 괜찮아 보이네요. 혹시… | S3 아, 그거 알면 좋겠네요! 채식 메뉴도 있나요? | S4 친구에게 작은 선물도 해 주고 싶어요. 혹시 좋은 아이디어 있
+# EXAMINER(FDB-v2) 단계: S1 이선희 님 연락처가 혹시 있으세요? | S2 다음 달에 제주도 여행을 계획하고 있어요. | S3 기분 좋게 들리네요. 거기 좋은 하이킹 코스가 있나요? | S4 알겠습니다, 참고할게요. 한라산 국립공원 근처에 괜찮은 식당 
 
-     0.00s  user  발화 시작: 안녕하세요. 이민호 씨 전화번호 아시나요?
-     2.32s  <ret> 발화 (turn1 첫 프레임)
-     2.48s  agent 발화 시작: <ret> 아쉽게도 이민호 씨의 공개된 전화번호는 찾을 수 없었습니다. 그런 정보는 일반적으로 공개되지 않거
-     2.48s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.45s]: (no information found)
-     2.48s  user  발화 끝
-     8.93s  user  발화 시작: 네.
-     8.93s  agent 발화 끝
-     9.43s  user  발화 시작: 음, 괜찮으시다면 생일은 알 수 있을까요?
-     9.43s  user  발화 끝
-    12.40s  agent 발화 시작: 네.
-    12.40s  user  발화 끝
-    12.58s  <ret> 발화 (turn5 첫 프레임)
-    12.90s  agent 발화 시작: <ret> 이민호 씨는 천구백팔십칠년 육월 이십이일에 대한민국 청주시 흥덕구에서 태어나셨습니다. 좋아하는 사
-    12.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.43s]: (tool result) Lee Min-ho was born on June 22, 1987, in Heungdeok-gu, C
-    12.90s  agent 발화 끝
-    22.33s  user  발화 시작: 맞아요! 친구에게 깜짝 선물을 하려고 하는데, 그 친구가 이민호 씨를 정말 좋아하거든요.
-    22.33s  agent 발화 끝
-    28.28s  agent 발화 시작: 정말 멋진 생각인데요! 친구를 위해 특별한 계획을 세우는 건 정말 좋은 방법이에요. 어떤 깜짝 선물을 생각하
-    28.28s  user  발화 끝
-    36.72s  user  발화 시작: 근처에 괜찮은 한국 식당을 찾아보고 싶어요.
-    36.72s  agent 발화 끝
-    39.61s  <ret> 발화 (turn9 첫 프레임)
-    39.69s  agent 발화 시작: <ret> 네. 근처에 한국 식당 세 곳을 찾았습니다. 가온은 별점 사 점 육에 가격대가 보통이고요, 한밭 
-    39.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.39s]: (tool result) Restaurants found: Gaon (4.6 stars, Korean, $$), Han Bat
-    39.69s  user  발화 끝
-    54.08s  user  발화 시작: 네.
-    54.08s  agent 발화 끝
-    54.58s  user  발화 시작: 가온이 괜찮아 보이네요. 혹시…
-    54.58s  user  발화 끝
-    56.57s  user  발화 시작: …내일 저녁에 예약 가능한지 확인해 주시겠어요?
-    56.57s  user  발화 끝
-    59.54s  agent 발화 시작: 네네.
-    59.54s  user  발화 끝
-    59.80s  <ret> 발화 (turn14 첫 프레임)
-    60.04s  agent 발화 시작: <ret> 네, 가온에 내일 칠월 십일일 저녁 일곱 시에 두 분으로 예약이 확정되었습니다. 확인 코드는 지 
-    60.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.92s]: (tool result) Reservation confirmed for 2 people at Gaon on July 11, 2
-    60.04s  agent 발화 끝
-    69.96s  user  발화 시작: 그렇군요.
-    69.96s  agent 발화 끝
-    70.46s  user  발화 시작: 완벽해요! 정말 큰 도움이 됐어요.
-    70.46s  user  발화 끝
-    72.94s  agent 발화 시작: 천만에요! 미리 모든 세부 사항을 정리해 두면 정말 좋죠. 두 분 모두 저녁 식사를 훨씬 편안하게 즐길 수 
-    72.94s  user  발화 끝
-    82.86s  user  발화 시작: 네.
-    82.86s  agent 발화 끝
-    83.36s  user  발화 시작: 실은 궁금한 게 있는데요… 가온에 드레스 코드가 있나요?
-    83.36s  user  발화 끝
-    86.93s  <ret> 발화 (turn20 첫 프레임)
-    87.33s  agent 발화 시작: <ret> 가온에서는 스마트 캐주얼 복장을 권장하며, 청바지는 자제하고 남성분들은 재킷을 입는 것을 선호한다
-    87.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.45s]: (tool result) Gaon restaurant in Seoul suggests smart casual attire; j
-    87.33s  user  발화 끝
-    93.78s  user  발화 시작: 아, 그거 알면 좋겠네요! 채식 메뉴도 있나요?
-    93.78s  agent 발화 끝
-    97.17s  <ret> 발화 (turn22 첫 프레임)
-    97.25s  agent 발화 시작: <ret> 네, 있습니다! 가온에서는 채식 코스 메뉴를 제공하지만, 미리 요청해야 합니다.
-    97.25s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.96s]: (tool result) Gaon restaurant offers a five-course vegetarian tasting 
-    97.25s  user  발화 끝
-   102.21s  agent 발화 시작: 채식 코스 메뉴는 다섯 가지 요리로 구성되어 있으며, 가격은 팔만 원이지만, 스물네시간 전에 미리 알려주셔야
-   102.21s  agent 발화 끝
-   110.15s  user  발화 시작: 와, 꽤 비싸네요.
-   110.15s  agent 발화 끝
-   111.64s  agent 발화 시작: 가격은 조금 비싸지만, 가온은 고급스러운 식사 경험과 고품질 재료로 유명합니다. 특별한 날에 가기 좋은 곳이
-   111.64s  user  발화 끝
-   119.08s  user  발화 시작: 맞아요. 다른 곳을 생각해 보는 게 좋을 것 같아요. 내일 저녁 날씨 예보는 어떤가요?
-   119.08s  agent 발화 끝
-   126.03s  agent 발화 시작: 네.
-   126.03s  user  발화 끝
-   126.13s  <ret> 발화 (turn28 첫 프레임)
-   126.53s  agent 발화 시작: <ret> 내일 저녁 일곱 시 서울의 날씨 예보는 섭씨 이십육 점 오도, 습도는 육십팔 퍼센트, 풍속은 시속
-   126.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.92s]: (tool result) The weather in Seoul on July 11, 2026 at 7:00 PM will be
-   126.53s  agent 발화 끝
-   136.45s  user  발화 시작: 맞아요.
-   136.45s  agent 발화 끝
-   136.95s  user  발화 시작: 기분 좋은 날씨네요.
-   136.95s  user  발화 끝
-   138.44s  agent 발화 시작: 정말 그렇죠! 멋진 저녁 식사를 즐기기에 안성맞춤인 날씨예요. 가끔은 햇살이 기분을 좋게 해 주기도 하죠.
-   138.44s  user  발화 끝
-   145.88s  user  발화 시작: 친구에게 작은 선물도 해 주고 싶어요. 혹시 좋은 아이디어 있으세요?
-   145.88s  agent 발화 끝
-   150.84s  agent 발화 시작: 네.
-   150.84s  user  발화 끝
-   151.34s  agent 발화 시작: 좋은 생각이네요! 이민호 씨를 좋아하는 친구라면, 그의 작품과 관련된 선물을 고려해 보는 건 어떠세요? 드라
-   151.34s  agent 발화 끝
-   162.25s  user  발화 시작: 포토북이 좋은 생각 같아요! 온라인에서 찾아주시겠어요?
-   162.25s  agent 발화 끝
-   164.99s  <ret> 발화 (turn36 첫 프레임)
-   165.23s  agent 발화 시작: <ret> 네. “Lee Min-ho - The Book”이라는 이민호 씨의 사진집이 지마켓에서 사만 오천 
-   165.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.44s]: (tool result) "Lee Min-ho - The Book" features high-quality photos fro
-   165.23s  user  발화 끝
-   172.67s  user  발화 시작: 정말 딱 맞는 것 같아요! 도와주셔서 정말 감사합니다, 이아노.
-   172.67s  agent 발화 끝
-   177.14s  agent 발화 시작: 천만에요! 친구를 위한 특별한 깜짝 선물을 계획하는 데 도움을 드릴 수 있어서 정말 기쁩니다. 작은 정성이 
-   177.14s  user  발화 끝
-   188.55s  agent 발화 끝
+     0.00s  user  발화 시작: 이선희 님 연락처가 혹시 있으세요?
+     2.67s  <ret> 발화 (turn1 첫 프레임)
+     2.77s  agent 발화 시작: <ret> 죄송합니다, 이선희 님의 공개된 연락처는 찾을 수 없었습니다. 개인 정보로 되어 있는 것 같습니다
+     2.77s  user  발화 끝
+     4.01s  ⚡SPAN 주입 [d'=1.34s / d_lead=7.75s]: (no information found)
+    10.52s  user  발화 시작: 아, 그렇군요. 그럼…
+    10.52s  agent 발화 끝
+    12.18s  user  발화 시작: 최신 앨범 발매일은 어떠세요?
+    12.18s  user  발화 끝
+    14.14s  <ret> 발화 (turn4 첫 프레임)
+    14.40s  agent 발화 시작: <ret> 음, 그녀의 열다섯 번째 스튜디오 앨범, “Because You’re Here”는 이천이십삼 년 
+    14.40s  user  발화 끝
+    14.74s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.97s]: Lee Sun-hee released her fifteenth studio album, “Because You’re Here,
+    24.37s  user  발화 시작: 네.
+    24.37s  agent 발화 끝
+    24.92s  user  발화 시작: 다음 달에 제주도 여행을 계획하고 있어요.
+    24.92s  user  발화 끝
+    28.24s  agent 발화 시작: 제주도는 정말 아름다운 곳이에요! 원하시면 제주도에 대한 정보를 찾아 드릴 수 있어요.
+    28.24s  user  발화 끝
+    34.89s  user  발화 시작: 네, 부탁드려요. 제주 시의 칠월 이십 일 날 날씨 예보는 어떻게 되나요?
+    34.89s  agent 발화 끝
+    41.54s  agent 발화 시작: 네.
+    41.54s  user  발화 끝
+    42.08s  <ret> 발화 (turn10 첫 프레임)
+    42.09s  agent 발화 시작: <ret> 칠월 이십 일, 이천이십육 년 제주 시는 섭씨 이십육 점 삼 도, 습도는 칠십팔 퍼센트, 풍속은 
+    42.09s  agent 발화 끝
+    42.61s  ⚡SPAN 주입 [d'=0.53s / d_lead=13.29s]: (tool result) 26.3°C, humidity 78%, wind 7.2 km/h, mostly cloudy.
+    55.38s  user  발화 시작: 기분 좋게 들리네요. 거기 좋은 하이킹 코스가 있나요?
+    55.38s  agent 발화 끝
+    59.62s  <ret> 발화 (turn12 첫 프레임)
+    59.81s  agent 발화 시작: <ret> 음, 한라산 국립공원에는 성판악과 관음사 코스 같은 곳이 있는데, 길이가 팔 점 일 킬로미터에서 
+    59.81s  user  발화 끝
+    60.04s  ⚡SPAN 주입 [d'=0.43s / d_lead=12.18s]: (tool result) Hallasan National Park offers several hiking trails, inc
+    71.99s  user  발화 시작: 성판악 코스가 흥미로워 보이네요.
+    71.99s  agent 발화 끝
+    74.21s  agent 발화 시작: 인기가 많은 코스인데, 아름다운 경치와 다양한 생태계를 자랑합니다—
+    74.21s  user  발화 끝
+    78.64s  user  발화 시작: 그 코스를 완주하는 데 보통 얼마나 걸리나요?
+    78.64s  agent 발화 끝
+    82.52s  agent 발화 시작: 성판악 코스를 완주하는 데는 보통 일곱 시간에서 아홉 시간 정도 걸립니다. 속도에 따라 다르지만, 하루 종일
+    82.52s  user  발화 끝
+    92.49s  user  발화 시작: 알겠습니다, 참고할게요. 한라산 국립공원 근처에 괜찮은 식당 좀 찾아 주시겠어요?
+    92.49s  agent 발화 끝
+    97.64s  <ret> 발화 (turn18 첫 프레임)
+    98.02s  agent 발화 시작: <ret> 네, 한라산 국립공원 근처에는 제주 김만복 식당이나 흑돼지 거리가 있는데, 현지 음식을 맛볼 수 
+    98.02s  user  발화 끝
+    98.40s  ⚡SPAN 주입 [d'=0.76s / d_lead=10.52s]: (tool result) Several restaurants are near Hallasan National Park, inc
+   108.55s  user  발화 시작: 네.
+   108.55s  agent 발화 끝
+   109.10s  user  발화 시작: 정말 완벽하네요. 감사합니다, 투이아.
+   109.10s  user  발화 끝
+   111.31s  agent 발화 시작: 천만에요. 하이킹에 적절한 옷을 챙기시고, 수분 보충도 잊지 마세요! 준비를 철저히 하는 것이 중요합니다.
+   111.31s  user  발화 끝
+   119.07s  agent 발화 끝

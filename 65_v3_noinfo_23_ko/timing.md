@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "하희",
+#     "name": "노원",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,139 +12,131 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-11",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2025-07-02",
+#       "date": "2026-03-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-30",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-09-22",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-11",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
+#       "date": "2026-04-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 김민지 씨 연락처 알 수 있을까요? | S2 음… 액션 영화가 보고 싶은데, 혹시 새로 나온 영화 중에 추 | S3 …저기, 혹시 예매한 영화관까지 가는 버스 시간표도 알아봐 줄 | S4 아, 저녁은 영화 보고 나서 먹을까요?
+# EXAMINER(FDB-v2) 단계: S1 트후이아님, 안녕하세요. 제 돈 관리를 좀 도와주시겠어요? | S2 오, 정말요? 혹시 제일 싼 티켓으로 두 장 예매해 주실 수  | S3 혹시 제가 다음 달에 여행 가려고 하는데, 제주도 호텔 예약도 | S4 오, 괜찮네요. 그럼 제주 그랜드 호텔로 예약해 주세요.
 
-     0.00s  user  발화 시작: 혹시 김민지 씨 연락처 알 수 있을까요?
-     2.89s  <ret> 발화 (turn1 첫 프레임)
-     3.29s  agent 발화 시작: <ret> 죄송해요, 김민지 씨 연락처는 찾을 수 없었어요. 개인 정보라서 공개되어 있지 않나 봐요.
-     3.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.10s]: (no information found)
-     3.29s  user  발화 끝
-     9.39s  user  발화 시작: 네.
-     9.39s  agent 발화 끝
-     9.86s  user  발화 시작: 아, 그러네요. 그럼 오늘 서울 날씨는 어때요?
-     9.86s  user  발화 끝
-    12.91s  <ret> 발화 (turn4 첫 프레임)
-    13.15s  agent 발화 시작: <ret> 지금 서울은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 불고 있어요. 오
-    13.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    13.15s  user  발화 끝
-    20.66s  user  발화 시작: 네, 더울 것 같아요. 이번 주 토요일에 영화 보러 갈까요?
-    20.66s  agent 발화 끝
-    25.35s  agent 발화 시작: 좋은 생각이에요! 어떤 영화를 보고 싶으세요?
-    25.35s  user  발화 끝
-    28.17s  user  발화 시작: 음… 액션 영화가 보고 싶은데, 혹시 새로 나온 영화 중에 추천해 줄 만한 거 있어요?
-    28.17s  agent 발화 끝
-    34.97s  <ret> 발화 (turn8 첫 프레임)
-    35.21s  agent 발화 시작: <ret> "범죄도시 사"가 새로 개봉했고, 액션 영화로 인기가 많아요. 마동석 배우와 이준혁 배우가 주연으
-    35.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) "범죄도시 4" - 액션, 범죄, 2024년 4월 24일 개봉, 마동석, 이준혁 주연.
-    35.21s  user  발화 끝
-    41.78s  user  발화 시작: 오, 그거 재미있을 것 같네요. 그럼 이번 주 토요일 저녁 일곱시에 예매해 줄 수 있어요?
-    41.78s  agent 발화 끝
-    48.82s  agent 발화 시작: 정말요?
-    48.82s  user  발화 끝
-    49.05s  <ret> 발화 (turn11 첫 프레임)
-    49.29s  agent 발화 시작: <ret> 네, "범죄도시 사" 이번 주 토요일 저녁 일곱시로 좌석 에이 십이번 예매 완료되었습니다. 예매번
-    49.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.39s]: (tool result) 예매 완료. 좌석: A12, 예매번호: 789012
-    49.29s  agent 발화 끝
-    58.68s  user  발화 시작: 정말요?
-    58.68s  agent 발화 끝
-    59.15s  user  발화 시작: 감사합니다. 혹시…—
-    59.15s  user  발화 끝
-    60.09s  user  발화 시작: …저기, 혹시 예매한 영화관까지 가는 버스 시간표도 알아봐 줄 수 있을까요?
-    60.09s  user  발화 끝
-    65.26s  agent 발화 시작: 어디에서 출발하시나요?
-    65.26s  user  발화 끝
-    66.19s  user  발화 시작: 지금 있는 곳에서 출발하는 버스 시간표를 알려주세요.
-    66.19s  agent 발화 끝
-    69.24s  <ret> 발화 (turn17 첫 프레임)
-    69.48s  agent 발화 시작: <ret> 지금 위치에서 출발하는 버스는 오후 세시 삼십분, 네시, 네시 삼십분, 다섯시, 다섯시 삼십분, 
-    69.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) 15:30, 16:00, 16:30, 17:00, 17:30, 18:00
-    69.48s  user  발화 끝
-    76.52s  user  발화 시작: 다섯시 버스를 타면 괜찮을 것 같아요.
-    76.52s  agent 발화 끝
-    79.34s  agent 발화 시작: 네, 다섯시 버스를 타시면 영화관에 맞춰 도착하실 수 있을 거예요.
-    79.34s  user  발화 끝
-    84.03s  user  발화 시작: 네.
-    84.03s  agent 발화 끝
-    84.50s  agent 발화 시작: 혹시 영화 보러 가기 전에 저녁 식사도 함께 하실 건가요?
-    84.50s  user  발화 끝
-    89.20s  user  발화 시작: 네.
+     0.00s  user  발화 시작: 트후이아님, 안녕하세요. 제 돈 관리를 좀 도와주시겠어요?
+     3.27s  agent 발화 시작: 안녕하세요. 돈 관리, 물론 도와드릴 수 있습니다. 어떤 점부터 시작해 볼까요?
+     3.27s  user  발화 끝
+     8.41s  user  발화 시작: 음… 혹시 제 옛날 친구, 김민지 씨 연락처 아세요?
+     8.41s  agent 발화 끝
+    12.31s  <ret> 발화 (turn3 첫 프레임)
+    12.61s  agent 발화 시작: <ret> 죄송하지만 김민지 씨의 연락처는 찾을 수 없었습니다. 개인 정보 보호 때문에 제가 접근할 수 없는
+    12.61s  user  발화 끝
+    12.97s  ⚡SPAN 주입 [d'=0.66s / d_lead=7.47s]: (no information found)
+    20.08s  user  발화 시작: 아, 그러시군요. 그럼, 이번 주 토요일에 서울에서 열리는 콘서트 티켓 예매 좀 도와주세요.
+    20.08s  agent 발화 끝
+    25.91s  <ret> 발화 (turn5 첫 프레임)
+    26.15s  agent 발화 시작: <ret> 이번 주 토요일 서울 잠실 올림픽 경기장에서 열리는 비 티 에스 콘서트 티켓이 있습니다. 가격은 
+    26.15s  user  발화 끝
+    26.99s  ⚡SPAN 주입 [d'=1.08s / d_lead=9.34s]: (tool result) Event: 'BTS Concert', Date: '2026-07-11', Location: 'Jam
+    35.49s  user  발화 시작: 오, 정말요? 혹시 제일 싼 티켓으로 두 장 예매해 주실 수 있나요?
+    35.49s  agent 발화 끝
+    40.88s  <ret> 발화 (turn7 첫 프레임)
+    41.10s  agent 발화 시작: <ret> 네, 제일 싼 티켓 두 장, 십오만 원짜리, 예매 완료되었습니다. 확인 번호는 비 티 이 육 공 
+    41.10s  user  발화 끝
+    42.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.21s]: (tool result) Confirmation: 'BT260711-1234'
+    52.31s  user  발화 시작: 와, 감사합니다! 그런데, 혹시 요즘 환율이 어때요? 달러당 얼마인가요?
+    52.31s  agent 발화 끝
+    56.12s  <ret> 발화 (turn9 첫 프레임)
+    56.42s  ⚡SPAN 주입 [d'=0.30s / d_lead=2.80s]: (tool result) USD/KRW: 1,385.20
+    56.51s  agent 발화 시작: <ret> 현재 달러당 천삼백팔십오 점 이십 원입니다.
+    56.51s  user  발화 끝
+    59.31s  user  발화 시작: 그렇죠.
+    59.31s  agent 발화 끝
+    59.78s  user  발화 시작: 아, 환율이 많이 올랐네요. —
+    59.78s  user  발화 끝
+    62.11s  user  발화 시작: 혹시 제가 다음 달에 여행 가려고 하는데, 제주도 호텔 예약도 도와주실 수 있나요?
+    62.11s  user  발화 끝
+    68.18s  agent 발화 시작: 네, 물론입니다. 다음 달 제주도 호텔 예약도 도와드릴 수 있습니다. 여행 날짜를 알려주시겠어요?
+    68.18s  user  발화 끝
+    74.26s  user  발화 시작: 다음 달 이십일부터 이십이일까지, 이박 삼일로 예약하고 싶어요.
+    74.26s  agent 발화 끝
+    77.91s  <ret> 발화 (turn15 첫 프레임)
+    77.99s  agent 발화 시작: <ret> 제주 신라호텔이 일박에 삼십만 원으로 예약 가능합니다.
+    77.99s  user  발화 끝
+    78.50s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.27s]: (tool result) Hotel: 'The Shilla Jeju', Price: '₩300,000/night', Avail
+    81.26s  user  발화 시작: 신라호텔은 좀 비싸네요. 조금 더 저렴한 곳으로 알아봐 주시겠어요?
+    81.26s  agent 발화 끝
+    85.09s  <ret> 발화 (turn17 첫 프레임)
+    85.46s  agent 발화 시작: <ret> 제주 그랜드 호텔은 일박에 십이만 원으로 예약 가능합니다.
+    85.46s  user  발화 끝
+    85.67s  ⚡SPAN 주입 [d'=0.58s / d_lead=3.74s]: (tool result) Hotel: 'Jeju Grand Hotel', Price: '₩120,000/night', Avai
+    89.20s  user  발화 시작: 오, 괜찮네요. 그럼 제주 그랜드 호텔로 예약해 주세요.
     89.20s  agent 발화 끝
-    89.67s  user  발화 시작: 아, 저녁은 영화 보고 나서 먹을까요?
-    89.67s  user  발화 끝
-    92.49s  agent 발화 시작: 영화 보시고 나서 맛있는 저녁 드세요. 혹시 주변에 맛집을 알아봐 드릴까요?
-    92.49s  user  발화 끝
-    97.65s  user  발화 시작: 네, 영화관 주변에 맛집 좀 알아봐 주세요.
-    97.65s  agent 발화 끝
-   100.86s  <ret> 발화 (turn26 첫 프레임)
-   100.94s  agent 발화 시작: <ret> 영화관 주변에는 "맛있는 짬뽕집"과 "스테이크 하우스"가 유명해요. "맛있는 짬뽕집"은 중식으로 
-   100.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.86s]: (tool result) "맛있는 짬뽕집" - 중식, 평점 4.5/5, "스테이크 하우스" - 양식, 평점 4.2/5
-   100.94s  user  발화 끝
-   110.79s  user  발화 시작: 짬뽕집이 끌리네요.
-   110.79s  agent 발화 끝
-   111.73s  agent 발화 시작: 짬뽕 좋아하시는군요! 저도 짬뽕 정말 좋아해요. 맛있는 식사 하시고 즐거운 영화 관람 되세요.
-   111.73s  user  발화 끝
-   117.84s  agent 발화 끝
+    92.82s  <ret> 발화 (turn19 첫 프레임)
+    92.94s  agent 발화 시작: <ret> 네, 제주 그랜드 호텔 예약 완료되었습니다. 확인 번호는 제이 제이 이 육 공 팔 이 공 오 육 
+    92.94s  user  발화 끝
+    93.27s  ⚡SPAN 주입 [d'=0.45s / d_lead=9.34s]: (tool result) Confirmation: 'JJ260820-5678'
+   102.28s  user  발화 시작: 네.
+   102.28s  agent 발화 끝
+   102.74s  user  발화 시작: 정말 감사합니다, 트후이아님. 덕분에 여행 계획을 세우는 데 큰 도움이 됐어요.
+   102.74s  user  발화 끝
+   107.88s  agent 발화 시작: 네.
+   107.88s  user  발화 끝
+   108.35s  agent 발화 시작: 천만에요. 여행 잘 다녀오세요.
+   108.35s  agent 발화 끝
+   110.22s  agent 발화 끝

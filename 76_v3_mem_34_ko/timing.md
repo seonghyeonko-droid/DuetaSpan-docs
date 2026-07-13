@@ -4,120 +4,150 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "가담",
+#     "name": "보정",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
+#       "date": "2026-06-05",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-05-31",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-09-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2025-12-20",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-25",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 좀 피곤하네요. | S2 집에 가려고요. | S3 음… 지금은 괜찮은 것 같아요. | S4 음… 그냥 조용한 음악을 틀어줄 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 음, 그냥 그랬어. 어디 가려면 버스 시간표 좀 알아봐 줄래? | S2 응, 완전 좋아. | S3 그 카페에 지금 자리 있나? | S4 고마워.
 
-     0.00s  agent 발화 시작: 안녕하세요, 가담님. 저는 게아이아입니다. 오늘 하루는 어떠셨어요?
-     3.40s  user  발화 시작: 음… 좀 피곤하네요.
-     3.40s  agent 발화 끝
-     4.86s  agent 발화 시작: 힘든 하루였군요. 혹시 오늘 특별히 스트레스 받는 일이 있었나요?
-     4.86s  user  발화 끝
-     9.22s  user  발화 시작: 네.
-     9.22s  agent 발화 끝
-     9.71s  user  발화 시작: 그냥 일 때문에 좀 그랬어요.
-     9.71s  user  발화 끝
-    11.98s  <ret> 발화 (turn5 첫 프레임)
-    12.14s  agent 발화 시작: <ret> 일 때문에 힘드셨군요. 가담님께서는 회계사로 일하고 계시죠?
-    12.14s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.40s]: [2026-05-28] User works as a accountant.
-    12.14s  user  발화 끝
-    15.54s  agent 발화 시작: 네, 이천이십육년 오월 이십팔일에 가담님께서 회계사로 일하고 계시다는 메모가 있네요.
-    15.54s  agent 발화 끝
-    20.39s  user  발화 시작: 정말요?
-    20.39s  agent 발화 끝
-    20.88s  user  발화 시작: 아, 네. 맞아요.
-    20.88s  user  발화 끝
-    22.33s  agent 발화 시작: 혹시 지금 계신 곳에서 출발해서 어딜 가실 계획이 있으신가요?
-    22.33s  user  발화 끝
-    26.70s  user  발화 시작: 집에 가려고요.
-    26.70s  agent 발화 끝
-    27.59s  <ret> 발화 (turn11 첫 프레임)
-    27.67s  agent 발화 시작: <ret> 집에 가시려고요? 그럼 가담님 댁 주소를 알려주시겠어요?
-    27.67s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.40s]: [2025-07-04] Past chat — Comparing gym memberships: wants a pool; clos
-    27.67s  user  발화 끝
-    31.07s  agent 발화 시작: 이천이십오년 칠월 사일에 가담님께서 헬스장 멤버십을 비교하면서 수영장과 사무실 근처를 원하셨다는 메모가 있네
-    31.07s  agent 발화 끝
-    37.38s  user  발화 시작: 네, 서울시 강남구 테헤란로 사백이십칠이에요.
-    37.38s  agent 발화 끝
-    39.41s  <ret> 발화 (turn14 첫 프레임)
-    39.81s  agent 발화 시작: <ret> 테헤란로를 따라 이 점 삼킬로미터, 약 칠분 정도 걸립니다.
-    39.81s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.37s]: (tool result) {"distance": "2.3 km", "duration": "7 minutes", "route":
-    39.81s  user  발화 끝
-    44.18s  user  발화 시작: 와.
-    44.18s  agent 발화 끝
-    44.67s  agent 발화 시작: 지금 출발하시면 칠분 안에 도착하실 수 있을 거예요. 교통 상황은 괜찮은 편인가요?
-    44.67s  user  발화 끝
-    50.49s  user  발화 시작: 음… 지금은 괜찮은 것 같아요.
-    50.49s  agent 발화 끝
-    52.92s  agent 발화 시작: 다행이네요. 혹시 가는 길에 들르고 싶은 곳은 없으세요?
-    52.92s  user  발화 끝
-    56.81s  user  발화 시작: 아니요, 그냥 집에 가고 싶어요.
-    56.81s  agent 발화 끝
-    59.23s  agent 발화 시작: 바로 집에 가시는군요. 안전하게 귀가하세요.
-    59.23s  user  발화 끝
-    61.66s  agent 발화 시작: 혹시 오늘 하루를 좀 더 편안하게 마무리할 수 있도록 제가 도와드릴 일이 있을까요?
-    61.66s  agent 발화 끝
-    67.97s  user  발화 시작: 음.
-    67.97s  agent 발화 끝
-    68.46s  user  발화 시작: 음… 그냥 조용한 음악을 틀어줄 수 있을까요?
-    68.46s  user  발화 끝
-    71.86s  agent 발화 시작: 어떤 장르의 음악을 좋아하세요?
-    71.86s  user  발화 끝
-    73.48s  <ret> 발화 (turn25 첫 프레임)
-    73.80s  agent 발화 시작: <ret> 가담님께서는 한국 비 비 큐를 가장 좋아하시는군요.
-    73.80s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.40s]: [2025-09-21] User prefers a window seat when traveling.
-    73.80s  agent 발화 끝
-    77.20s  agent 발화 시작: 이천이십오년 구월 이십일일에 가담님께서 여행 시 창가 좌석을 선호하신다는 메모가 있네요.
-    77.20s  agent 발화 끝
-    82.54s  user  발화 시작: 네, 좋아요.
-    82.54s  agent 발화 끝
-    83.51s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 보정님. 저는 데리크스라고 해요. 오늘 하루는 어떠셨어요?
+     4.39s  user  발화 시작: 음, 그냥 그랬어. 어디 가려면 버스 시간표 좀 알아봐 줄래?
+     4.39s  agent 발화 끝
+     9.37s  <ret> 발화 (turn2 첫 프레임)
+     9.87s  agent 발화 시작: <ret> 집 주소는 서면로 백이십삼번지, 부산진구, 부산이시네요. 어디로 가시는 버스 시간표를 알아볼까요?
+     9.87s  user  발화 끝
+    10.61s  ⚡SPAN 주입 [d'=1.24s / d_lead=6.03s]: User has a home address of 123 Seomyeon-ro, Busanjin-gu, Busan.
+    15.90s  user  발화 시작: 해운대역 근처로 가려고.
+    15.90s  agent 발화 끝
+    17.44s  <ret> 발화 (turn4 첫 프레임)
+    17.55s  agent 발화 시작: <ret> 해운대역으로 가는 버스는 천삼번이 오후 두시 삼십오분에 출발해서 세시 오분에 도착하고, 천사번은 
+    17.55s  user  발화 끝
+    18.76s  ⚡SPAN 주입 [d'=1.31s / d_lead=10.42s]: (tool result) 1003, departs 14:35, arrives 15:05. 1004, departs 14:40,
+    27.97s  user  발화 시작: 진짜?
+    27.97s  agent 발화 끝
+    28.51s  user  발화 시작: 천삼 타면 되겠다.
+    28.51s  user  발화 끝
+    29.54s  <ret> 발화 (turn7 첫 프레임)
+    30.16s  ⚡SPAN 주입 [d'=0.61s / d_lead=4.39s]: (tool result) Estimated travel time: 30 minutes.
+    30.16s  agent 발화 시작: <ret> 지금 출발하면 약 삼십분 정도 걸릴 것으로 예상돼요.
+    30.16s  user  발화 끝
+    34.55s  user  발화 시작: 땡큐. 아, 코코 산책시키러 가야 하는데, 날씨는 어때?
+    34.55s  agent 발화 끝
+    38.71s  <ret> 발화 (turn9 첫 프레임)
+    38.93s  agent 발화 시작: <ret> 부산은 현재 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 맑은 하늘이에요.
+    38.93s  user  발화 끝
+    40.21s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.23s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h, clear skies.
+    47.16s  user  발화 시작: 우와.
+    47.16s  agent 발화 끝
+    47.71s  user  발화 시작: 응, 완전 좋아.
+    47.71s  user  발화 끝
+    48.81s  <ret> 발화 (turn12 첫 프레임)
+    49.35s  agent 발화 시작: <ret> 코코가 푸들 맞죠? 전에 말씀해주신 것 같아요.
+    49.35s  user  발화 끝
+    49.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.84s]: [2026-06-05] User has a Poodle named Coco.
+    53.19s  agent 발화 시작: 맞아요, 코코가 푸들이라고 말씀해주셨던 기억이 납니다.
+    53.19s  agent 발화 끝
+    56.48s  user  발화 시작: 어, 맞아. 기억력 좋네. — 잠깐만, 해운대역 주변에 괜찮은 카페 있어?
+    56.48s  agent 발화 끝
+    62.45s  <ret> 발화 (turn15 첫 프레임)
+    62.51s  agent 발화 시작: <ret> 해운대역 근처에 카페 라떼는 별점 사 점 이점이고, 역에서 오십미터 거리에 있고, 빈니스트는 별점
+    62.51s  user  발화 끝
+    63.68s  ⚡SPAN 주입 [d'=1.23s / d_lead=10.97s]: (tool result) Cafe Latte, 4.2 stars, 50m from station. Beanist, 4.5 st
+    73.48s  user  발화 시작: 빈니스트 가볼까.
+    73.48s  agent 발화 끝
+    74.58s  agent 발화 시작: 좋은 선택이에요. 분위기가 좋은 곳으로 알려져 있어요.
+    74.58s  user  발화 끝
+    78.42s  user  발화 시작: 그 카페에 지금 자리 있나?
+    78.42s  agent 발화 끝
+    80.70s  <ret> 발화 (turn19 첫 프레임)
+    81.05s  ⚡SPAN 주입 [d'=0.35s / d_lead=7.13s]: (tool result) Reservation confirmed for 1 person at Beanist, 16:00. Co
+    81.16s  agent 발화 시작: <ret> 빈니스트에 한명, 오후 네시에 예약이 확정되었습니다. 확인번호는 비 엑스 구 이 칠 제이입니다.
+    81.16s  user  발화 끝
+    88.29s  user  발화 시작: 오, 잘 됐다.
+    88.29s  agent 발화 끝
+    89.40s  <ret> 발화 (turn21 첫 프레임)
+    89.93s  agent 발화 시작: <ret> 혹시 소프트웨어 엔지니어 일은 어떠세요?
+    89.93s  user  발화 끝
+    90.56s  ⚡SPAN 주입 [d'=1.17s / d_lead=2.74s]: [2026-05-31] User works as a software engineer.
+    92.67s  agent 발화 시작: 전에 소프트웨어 엔지니어라고 말씀해주셨던 것 같아요. 요즘 일은 어떠신가요?
+    92.67s  agent 발화 끝
+    97.61s  user  발화 시작: 응.
+    97.61s  agent 발화 끝
+    98.16s  user  발화 시작: 좀 바쁘지.
+    98.16s  user  발화 끝
+    99.25s  agent 발화 시작: 바쁘시군요. 그래도 건강 잘 챙기세요.
+    99.25s  user  발화 끝
+   102.00s  user  발화 시작: 고마워.
+   102.00s  agent 발화 끝
+   102.22s  <ret> 발화 (turn27 첫 프레임)
+   102.54s  agent 발화 시작: <ret> 땅콩 알레르기가 있으시죠. 빈니스트 메뉴에 땅콩이 들어간 음식이 있는지 확인해 드릴까요?
+   102.54s  user  발화 끝
+   102.83s  ⚡SPAN 주입 [d'=0.62s / d_lead=6.03s]: [2025-12-20] User is allergic to peanuts.
+   108.58s  user  발화 시작: 응.
+   108.58s  agent 발화 끝
+   109.12s  user  발화 시작: 어, 확인 좀.
+   109.12s  user  발화 끝
+   110.16s  <ret> 발화 (turn30 첫 프레임)
+   110.77s  agent 발화 시작: <ret> 빈니스트 메뉴에는 땅콩이 들어간 음식이 없다고 합니다. beanist.co.kr에서 확인했어요.
+   110.77s  user  발화 끝
+   110.92s  ⚡SPAN 주입 [d'=0.76s / d_lead=4.94s]: (tool result) Beanist menu does not list any items containing peanuts.
+   115.70s  user  발화 시작: 다행이다.
+   115.70s  agent 발화 끝
+   116.25s  agent 발화 시작: 네, 다행이네요. 즐거운 시간 보내세요.
+   116.25s  user  발화 끝
+   118.99s  agent 발화 끝

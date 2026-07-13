@@ -1,82 +1,109 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Naril, a gentle and reflective counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Thaeon, a gentle and reflective life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Léa",
+    "name": "Morgan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-20",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-11-11",
+      "date": "2026-06-06",
       "category": "hobby",
       "text": "User is into home fermentation."
     },
     {
-      "date": "2025-10-06",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-05-26",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
     },
     {
-      "date": "2025-06-11",
+      "date": "2025-12-12",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-09-25",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-28",
+      "date": "2026-02-12",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-27",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-01",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, what's the fastest motorcycle you can actually ⟨ret@4.71s⟩ buy?
-[  4.95s][moshi] ⟦⚡SPAN@4.95s: The Kawasaki Ninja H2R is generally considered the fastest production motorcycle, capable of reaching speeds o⟧ The Kawasaki Ninja H2R is typically considered the fastest production motorcycle, reaching over 249 miles per hour. It's quite a machine!
-[ 13.62s][user ] «backchannel» Oh.
-[ 14.03s][user ] Wow, that’s…fast. Is it street legal, ⟨ret@16.68s⟩ though?
-[ 16.92s][moshi] ⟦⚡SPAN IRRELEVANT@16.92s: The average high temperature in Reykjavik, Iceland in December is 3.2°C, with an average low of -0.8°C and 160⟧ That's a good point to consider. Generally, the Ninja H2R is not street legal in most places due to its extreme power and design. It’s really built for the track.
-[ 29.30s][moshi] It sounds like you're thinking about practical use. Sometimes, prioritizing speed means compromising on everyday convenience.
-[ 35.90s][user ] Yeah, I guess so. What about something I *could* ride on the road?
-[ 41.27s][moshi] «backchannel» Yeah.
-[ 41.68s][moshi] ⟨ret@41.36s⟩ ⟦⚡SPAN@41.68s: The Ducati Panigale V4 R is a street-legal production motorcycle with a top speed of 186 mph, known for its pe⟧ If you're looking for something street legal, the Ducati Panigale V4 R is a strong contender, with a top speed of 186 miles per hour. It’s known for its handling too.
-[ 54.47s][user ] 186 mph is still pretty incredible.
-[ 56.95s][moshi] It certainly is. Finding a balance between speed and practicality is often key when choosing a motorcycle, don’t you think?
-[ 65.20s][user ] I do, actually. Thanks, that was helpful.
-[ 68.09s][moshi] You’re very welcome. It's good to explore all the options and find what truly suits your needs and preferences.
+[  0.00s][user ] Hey, who sings on Keith Urban's "Coming Home"? I love that ⟨ret@4.44s⟩ song.
+[  4.64s][moshi] ⟦⚡SPAN@4.74s: American singer Julia Michaels is featured on Keith Urban's song "Coming Home".⟧ That’s a lovely song! It features American singer Julia Michaels, actually. Such a beautiful voice, don't you think?
+[ 11.61s][user ] Oh, really? I didn't know that! Hmm, I wonder what the weather is like in Vancouver right now.
+[ 18.57s][moshi] Vancouver’s weather is something I can certainly check for you.
+[ 22.44s][moshi] ⟨ret@22.06s⟩ ⟦⚡SPAN@22.96s: (tool result) 18.2°C, humidity 62%, wind 7.1 km/h⟧ It’s currently 18.2°C in Vancouver, with 62% humidity and a 7.1 km/h wind. A pleasant day, it seems.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Vancouver"}}
+[ 29.41s][user ] «backchannel» Oh.
+[ 29.79s][user ] That sounds nice. I'm thinking about a weekend trip, maybe to Seoul.
+[ 34.44s][moshi] Seoul is a wonderful choice for a weekend getaway. A bustling and vibrant city!
+[ 39.85s][user ] «backchannel» Yeah.
+[ 40.24s][user ] Yeah, but I'm terrible with budgets. Do you think I could get a moderately priced hotel ⟨ret@46.28s⟩ there?
+[ 46.82s][moshi] ⟦⚡SPAN@46.58s: Seoul hotels with a moderate price tier generally range from ₩150,000 to ₩300,000 per night.⟧ A moderate price tier in Seoul typically ranges from ₩150,000 to ₩300,000 per night. We can certainly look for options within that range.
+[ 55.72s][user ] Okay, that's good to know. What about restaurants? Are there any good Korean BBQ places? ⟨ret@61.39s⟩
+[ 61.52s][moshi] «backchannel» Uh-huh.
+[ 61.91s][moshi] ⟦⚡SPAN@61.85s: (tool result) Wangbijib, Myeongdong; 4.5 stars, ₩30,000 per person.⟧ Wangbijib in Myeongdong has 4.5 stars and costs around ₩30,000 per person. It's a very popular choice.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "location": "Seoul"}}
+[ 68.49s][user ] That sounds perfect! Could you check if they take reservations? ⟨ret@72.23s⟩
+[ 72.36s][moshi] I’ve ⟦⚡SPAN@72.94s: (tool result) Reservation confirmed for 2 people on July 12, 2026 at 7:00 PM. Confirmation ID: WB7492.⟧ secured a reservation for two people at Wangbijib on July 12th at 7:00 PM. Your confirmation ID is WB7492.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Wangbijib", "location": "Myeongdong"}}
+[ 80.10s][user ] Oh, fantastic! Thank you so much! That makes planning so much easier.
+[ 84.74s][moshi] «backchannel» Yeah.
+[ 85.13s][moshi] You're very welcome. It's my pleasure to help make things a little smoother.
+[ 90.16s][user ] I also need to send some money…
+[ 92.87s][user ] …to a friend. Can you help with that?
+[ 95.96s][moshi] I can certainly assist with sending money, but I’ll need some details first.
+[100.99s][user ] «backchannel» Oh.
+[101.38s][user ] Hmm, actually, never mind about the money. What time is it in London right now?
+[107.18s][moshi] «backchannel» Yeah.
+[107.57s][moshi] ⟨ret@107.52s⟩ ⟦⚡SPAN@107.62s: (tool result) It is Friday, July 10, 2026 at 3:33 PM in Europe/London right now.⟧ It is currently 3:33 PM in London. Quite a bit later in the day there!
+      CALL: {"function": "get_time", "arguments": {}}
+[113.37s][user ] «backchannel» Nice.
+[113.76s][user ] Oh wow, it is! Okay, one more thing. What's the capital of ⟨ret@118.28s⟩ Australia?
+[118.79s][moshi] ⟦⚡SPAN@118.73s: Canberra has been the capital of Australia since 1913, chosen as a compromise between Sydney and Melbourne.⟧ Canberra has been the capital of Australia since 1913, a compromise between Sydney and Melbourne. A lovely city, I hear.
+[126.53s][user ] «backchannel» Yeah.
+[126.92s][user ] That's interesting. I always thought it was Sydney or Melbourne.
+[130.79s][moshi] «backchannel» Yeah.
+[131.17s][moshi] ⟨ret@131.17s⟩ It's a ⟦⚡SPAN IRRELEVANT@132.14s: The average high temperature in Reykjavik, Iceland in December is -1.4°C, with an average low of -3.2°C.⟧ common misconception! Many people assume one of those larger cities is the capital.
+[136.98s][user ] «backchannel» Yeah.
+[137.36s][user ] Speaking of travel, what's a good movie to watch on the plane?
+[142.01s][moshi] «backchannel» Mm-hmm.
+[142.39s][moshi] ⟨ret@142.30s⟩ ⟦⚡SPAN@142.72s: (tool result) "Dune: Part Two" - Sci-Fi, 2h 46m, 8.8/10 rating.⟧ "Dune: Part Two" is a highly-rated sci-fi film, clocking in at 2 hours and 46 minutes. A great choice for a longer flight!
+      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
+[151.29s][user ] Oh, I've heard good things about that one! Maybe I will.
+[155.55s][moshi] «backchannel» Mm-hmm.
+[155.94s][moshi] It's visually stunning, and the story is quite captivating. I hope you enjoy it.
+[161.35s][user ] «backchannel» Yeah.
+[161.74s][user ] Thanks. You've been a huge help. I feel much more prepared for my trip now.
+[167.55s][moshi] «backchannel» Yeah.
+[167.93s][moshi] I’m so glad to hear that.
+[170.25s][user ] I think I'm all set for now.
+[172.96s][moshi] Wonderful. Enjoy your trip to Seoul, and remember to be kind to yourself along the way.

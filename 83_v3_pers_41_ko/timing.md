@@ -4,101 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "재진",
+#     "name": "재율",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-04-21",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-10-13",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-07",
+#       "date": "2025-11-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2025-06-10",
+#       "date": "2025-11-10",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-27",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2025-09-22",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-06-17",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-18",
+#       "date": "2026-03-30",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 브로나요? 이름이 좀 특이하시네요. 혹시 잠을 잘 자는  | S2 주로… 내일 할 일이나, 지난 일 후회 같은 거요. 계속 머릿 | S3 네, 낮에는 그래도 어떻게든 버티는데, 밤이 되면 그 생각들이 | S4 명상… 해본 적은 없는데, 좀 어려울까요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 서울 생활에 대해서도 잘 아시는 편이세요? | S2 사실… 조용한 카페를 찾고 있어요. 혼자 책 읽기 좋은 곳이요 | S3 … 혹시 성수동 말고 다른 동네에도 조용한 카페가 있을까요?  | S4 아, 그렇군요. 알려주셔서 정말 감사해요, 네아나님.
 
-     0.00s  agent 발화 시작: 재진님, 안녕하세요. 저는 여러분의 편안한 휴식을 돕는 웰니스 코치, 브로나입니다. 오늘 하루 어떠셨어요?
-     5.89s  user  발화 시작: 어… 브로나요? 이름이 좀 특이하시네요. 혹시 잠을 잘 자는 법 같은 거 알려주시는 분이세요?
-     5.89s  agent 발화 끝
-    12.24s  agent 발화 시작: 맞아요, 재진님. 잠뿐 아니라 전반적인 휴식과 스트레스 관리에도 도움을 드릴 수 있어요. 혹시 지금 잠자리에
-    12.24s  user  발화 끝
-    21.31s  user  발화 시작: 어.
-    21.31s  agent 발화 끝
-    21.76s  user  발화 시작: 음… 사실 요즘 잠을 너무 설쳐요. 부산에서 회사 다니는데, 스트레스도 많고, 밤에 생각이 너무 많아져서요.
-    21.76s  user  발화 끝
-    28.56s  agent 발화 시작: 부산에서 회사 다니시는군요. 스트레스가 많으신 건 당연할 것 같아요. 밤에 생각이 많아지시는 건 불안감 때문
-    28.56s  user  발화 끝
-    38.08s  user  발화 시작: 어어.
-    38.08s  agent 발화 끝
-    38.53s  agent 발화 시작: 어떤 생각을 주로 하시는지 말씀해 주시면, 그 부분에 맞춰서 좀 더 자세히 이야기를 나눠볼 수 있을 것 같아
-    38.53s  user  발화 끝
-    46.69s  user  발화 시작: 주로… 내일 할 일이나, 지난 일 후회 같은 거요. 계속 머릿속에서 뱅뱅 돌아서 잠을 못 자요.
-    46.69s  agent 발화 끝
-    53.95s  agent 발화 시작: 네네.
-    53.95s  user  발화 끝
-    54.40s  agent 발화 시작: 내일 할 일과 지난 일에 대한 후회… 마음이 많이 힘드시겠어요. 혹시 그런 생각들이 주로 밤에만 떠오르시는 
-    54.40s  agent 발화 끝
-    62.11s  user  발화 시작: 네, 낮에는 그래도 어떻게든 버티는데, 밤이 되면 그 생각들이 더 크게 느껴져요. 어떻게 해야 할까요?
-    62.11s  agent 발화 끝
-    68.91s  agent 발화 시작: 밤에 더 크게 느껴지는 건, 낮 동안 쌓인 스트레스가 해소되지 않고 밤에 터져 나오는 걸 수도 있어요. 잠들
-    68.91s  user  발화 끝
-    80.24s  user  발화 시작: 그치.
-    80.24s  agent 발화 끝
-    80.69s  user  발화 시작: 명상… 해본 적은 없는데, 좀 어려울까요?
-    80.69s  user  발화 끝
-    83.41s  agent 발화 시작: 명상이 처음이시라면 어려울 수도 있지만, 아주 간단한 방법부터 시작할 수 있어요. 편안하게 숨을 쉬는 것만으
-    83.41s  user  발화 끝
-    95.20s  agent 발화 끝
+     0.00s  agent 발화 시작: 재율님, 안녕하세요. 저는 네아나라고 해요. 서울에 새로 정착하시는 분들을 돕는 역할을 맡고 있답니다.
+     6.67s  user  발화 시작: 혹시 서울 생활에 대해서도 잘 아시는 편이세요?
+     6.67s  agent 발화 끝
+    10.26s  agent 발화 시작: 네.
+    10.26s  user  발화 끝
+    10.77s  agent 발화 시작: 서울에 대한 이야기는 정말 좋아해요. 재율님께서 서울에서 어떤 점이 가장 궁금하신가요? 무엇이든 편하게 말씀
+    10.77s  agent 발화 끝
+    18.47s  user  발화 시작: 네네.
+    18.47s  agent 발화 끝
+    18.98s  user  발화 시작: 음… 사실 이사 온 지 얼마 안 돼서, 아직 동네가 낯설어요.
+    18.98s  user  발화 끝
+    24.63s  agent 발화 시작: 이사 오신 지 얼마 안 되셨다니, 당연히 낯설게 느껴지실 거예요. 어떤 동네에 사시는지 여쭤봐도 될까요?
+    24.63s  user  발화 끝
+    32.32s  user  발화 시작: 성수동에 살아요. 요즘 핫플레이스라고 하던데, 아직 어디 가야 할지 모르겠어요.
+    32.32s  agent 발화 끝
+    37.45s  agent 발화 시작: 성수동이시군요! 정말 트렌디한 곳이죠. 어떤 스타일의 장소를 좋아하시는지 알려주시면, 취향에 맞는 곳을 찾아
+    37.45s  user  발화 끝
+    46.18s  user  발화 시작: 네.
+    46.18s  agent 발화 끝
+    46.69s  user  발화 시작: 사실… 조용한 카페를 찾고 있어요. 혼자 책 읽기 좋은 곳이요.
+    46.69s  user  발화 끝
+    51.82s  agent 발화 시작: 혼자 책 읽기 좋은 조용한 카페를 찾으시는군요. 성수동에는 그런 분위기의 아늑한 공간들이 몇 군데 있어요.
+    51.82s  user  발화 끝
+    59.52s  user  발화 시작: 그렇죠.
+    59.52s  agent 발화 끝
+    60.03s  user  발화 시작: 혹시… 추천해 주실 수 있을까요?
+    60.03s  user  발화 끝
+    62.59s  agent 발화 시작: 성수동에는 개성 있는 카페들이 많아서, 재율님의 취향에 맞는 곳을 —
+    62.59s  user  발화 끝
+    67.73s  user  발화 시작: … 혹시 성수동 말고 다른 동네에도 조용한 카페가 있을까요? 좀 더 한적한 곳이 좋을 것 같기도 해요.
+    67.73s  agent 발화 끝
+    76.45s  agent 발화 시작: 아, 다른 동네도 괜찮으시군요. 그럼 성수동 말고는, 익선동이나 서촌도 조용하고 분위기 좋은 카페가 많아요.
+    76.45s  user  발화 끝
+    89.79s  user  발화 시작: 그렇죠.
+    89.79s  agent 발화 끝
+    90.30s  agent 발화 시작: 익선동은 특히 젊은 분들에게 인기가 많아요. 한옥의 고즈넉한 분위기에서 차를 마시는 경험은 특별할 거예요. 
+    90.30s  user  발화 끝
+   104.67s  user  발화 시작: 그렇죠.
+   104.67s  agent 발화 끝
+   105.18s  user  발화 시작: 음… 익선동이 더 끌리네요. 한옥 분위기는 정말 좋아해요.
+   105.18s  user  발화 끝
+   109.28s  agent 발화 시작: 그렇죠.
+   109.28s  user  발화 끝
+   109.80s  agent 발화 시작: 익선동이 끌리신다니, 좋은 선택이세요. 익선동에는 '차마시는뜰'이라는 카페가 있는데, 조용하고 아늑해서 책 
+   109.80s  agent 발화 끝
+   116.98s  user  발화 시작: '차마시는뜰'… 이름도 예쁘네요. 혹시 가격대는 어느 정도인가요?
+   116.98s  agent 발화 끝
+   120.57s  agent 발화 시작: 가격대는 음료에 따라 다르지만, 보통 아메리카노 한 잔에 오천 원에서 칠천 원 정도 한답니다. 디저트도 맛있
+   120.57s  user  발화 끝
+   129.29s  user  발화 시작: 그렇죠.
+   129.29s  agent 발화 끝
+   129.81s  user  발화 시작: 아, 그렇군요. 알려주셔서 정말 감사해요, 네아나님.
+   129.81s  user  발화 끝
+   132.89s  agent 발화 시작: 도움이 되었다니 기쁘네요, 재율님. 혹시 다른 궁금한 점이 있으시면 언제든지 말씀해 주세요. 서울 생활에 적
+   132.89s  user  발화 끝
+   143.15s  user  발화 시작: 네.
+   143.15s  agent 발화 끝
+   143.66s  user  발화 시작: 네, 알겠습니다. 다음에 또 여쭤볼게요.
+   143.66s  user  발화 끝
+   146.23s  agent 발화 시작: 그럼 재율님, 즐거운 하루 보내세요!
+   146.23s  user  발화 끝
+   148.79s  agent 발화 끝

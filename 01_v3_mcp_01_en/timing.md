@@ -4,101 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Caleb",
+#     "name": "Marie",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-22",
-#       "category": "home",
-#       "text": "User's home address is 753 Maple Drive."
-#     },
-#     {
-#       "date": "2025-06-01",
+#       "date": "2026-05-21",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "home",
+#       "text": "User's home address is 504 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-25",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-04",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the elevation of Buckingha | S2 Hmm, that’s lower than I expected. | S3 Okay, good to know. Can you find m | S4 Three hundred pounds sounds good. 
 
-     0.00s  user  발화 시작: What is the elevation of Buckingham Palace? I’m planning a t
-     4.80s  <ret> 발화 (turn1 첫 프레임)
-     4.88s  agent 발화 시작: <ret> Buckingham Palace sits at an elevation of sixteen metr
-     4.88s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.27s]: Buckingham Palace has an elevation of 16 metres, 52 feet above sea lev
-     4.88s  user  발화 끝
-    13.15s  user  발화 시작: Yeah.
-    13.15s  agent 발화 끝
-    13.53s  user  발화 시작: Hmm, that’s lower than I expected. What about the Shard? Is 
-    13.53s  user  발화 끝
-    18.79s  agent 발화 시작: Mm-hmm.
-    18.79s  user  발화 끝
-    18.92s  <ret> 발화 (turn5 첫 프레임)
-    19.16s  agent 발화 시작: <ret> The Shard is significantly taller, standing at three h
-    19.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.26s]: 309.6 metres
-    19.16s  agent 발화 끝
-    24.42s  user  발화 시작: Yeah.
-    24.42s  agent 발화 끝
-    24.80s  user  발화 시작: Okay, good to know. Can you find me hotels near the Shard, p
-    24.80s  user  발화 끝
-    30.81s  agent 발화 시작: Mm-hmm.
-    30.81s  user  발화 끝
-    31.11s  <ret> 발화 (turn9 첫 프레임)
-    31.19s  agent 발화 시작: <ret> I found two hotels near The Shard: The Shangri-La, ave
-    31.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.02s]: (tool result) The Shangri-La Hotel at The Shard, 319-332 St Thomas St,
-    31.19s  agent 발화 끝
-    40.21s  user  발화 시작: Yeah.
-    40.21s  agent 발화 끝
-    40.58s  user  발화 시작: Three hundred pounds sounds good. Can you book a room at the
-    40.58s  user  발화 끝
-    47.70s  <ret> 발화 (turn12 첫 프레임)
-    48.10s  agent 발화 시작: <ret> Wonderful! I’ve booked two nights at the Hilton London
-    48.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) Confirmation ID: HX729KL. Hilton London The Shard, 2 nig
-    48.10s  user  발화 끝
-    58.62s  agent 발화 끝
+     0.00s  user  발화 시작: What location is thirty-two point zero three three three lat
+     6.95s  agent 발화 시작: Right.
+     6.95s  user  발화 끝
+     7.14s  <ret> 발화 (turn2 첫 프레임)
+     7.29s  agent 발화 시작: <ret> That location is two two oh eight University Avenue, i
+     7.29s  agent 발화 끝
+     7.48s  ⚡SPAN 주입 [d'=0.35s / d_lead=9.03s]: (tool result) {"address": "2208 University Ave, San Diego, CA 92104", 
+    16.32s  user  발화 시작: Uh-huh.
+    16.32s  agent 발화 끝
+    16.67s  user  발화 시작: Hmm, is that near any good coffee shops?
+    16.67s  user  발화 끝
+    19.45s  agent 발화 시작: Yeah.
+    19.45s  user  발화 끝
+    19.48s  <ret> 발화 (turn6 첫 프레임)
+    19.74s  ⚡SPAN 주입 [d'=0.64s / d_lead=10.42s]: {"name": "Living Brew Coffee", "address": "2121 El Cajon Blvd Ste 109,
+    19.80s  agent 발화 시작: <ret> Living Brew Coffee is only point six miles away, at tw
+    19.80s  agent 발화 끝
+    30.22s  user  발화 시작: Okay, good. Could you find me directions to that coffee shop
+    30.22s  agent 발화 끝
+    34.18s  <ret> 발화 (turn9 첫 프레임)
+    34.39s  agent 발화 시작: Mhm.
+    34.39s  user  발화 끝
+    34.64s  ⚡SPAN 주입 [d'=0.46s / d_lead=10.07s]: (tool result) {"distance": 0.6, "duration": 12, "instructions": Walk w
+    34.73s  agent 발화 시작: <ret> It’s a point six mile walk; it will take about twelve 
+    34.73s  agent 발화 끝
+    44.81s  agent 발화 끝

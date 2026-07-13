@@ -4,171 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Robin",
+#     "name": "Manon",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-11",
 #       "category": "home",
-#       "text": "User's home address is 321 Birch Road."
+#       "text": "User's home address is 893 Pine Court."
 #     },
 #     {
-#       "date": "2025-07-02",
+#       "date": "2026-03-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-30",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-09-22",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-11",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
+#       "date": "2026-04-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know the phone number for L | S2 Gaon sounds nice. Can you check… | S3 Oh, that's good to know! Do they h | S4 I’m also thinking of getting my fr
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 That’s good to know. I’m planning  | S3 That sounds pleasant. Are there an | S4 Okay, good to know. Can you find m
 
-     0.00s  user  발화 시작: Do you know the phone number for Lee Min-ho?
-     2.78s  <ret> 발화 (turn1 첫 프레임)
-     3.18s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
-     3.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (no information found)
-     3.18s  user  발화 끝
-    10.26s  user  발화 시작: Yeah.
-    10.26s  agent 발화 끝
-    10.62s  user  발화 시작: Oh, okay. That’s understandable. What about his birthday?
-    10.62s  user  발화 끝
-    13.40s  <ret> 발화 (turn5 첫 프레임)
-    13.45s  agent 발화 시작: Yeah.
-    13.45s  user  발화 끝
-    13.80s  agent 발화 시작: <ret> Lee Min-ho was born on June twenty-two, nineteen eight
-    13.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.49s]: (tool result) Lee Min-ho was born on June 22, 1987, in Heungdeok-gu, C
-    13.80s  agent 발화 끝
-    22.29s  user  발화 시작: That’s right! I’m trying to plan a surprise for a friend who
-    22.29s  agent 발화 끝
-    27.25s  agent 발화 시작: That’s so thoughtful of you! Planning something special for 
-    27.25s  user  발화 끝
-    36.80s  user  발화 시작: I was hoping to find a good Korean restaurant nearby.
-    36.80s  agent 발화 끝
-    40.26s  <ret> 발화 (turn9 첫 프레임)
-    40.34s  agent 발화 시작: <ret> I found three Korean restaurants nearby: Gaon, with fo
-    40.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.03s]: (tool result) Restaurants found: Gaon (4.6 stars, Korean, $$), Han Bat
-    40.34s  user  발화 끝
-    52.37s  user  발화 시작: Yeah.
-    52.37s  agent 발화 끝
-    52.73s  user  발화 시작: Gaon sounds nice. Can you check…
-    52.73s  user  발화 끝
-    54.85s  user  발화 시작: …if they have reservations available tomorrow evening?
-    54.85s  user  발화 끝
-    57.33s  agent 발화 시작: Yeah.
-    57.33s  user  발화 끝
-    57.36s  <ret> 발화 (turn14 첫 프레임)
-    57.68s  agent 발화 시작: <ret> Yes, I’ve confirmed a reservation for two people at Ga
-    57.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Reservation confirmed for 2 people at Gaon on July 11, 2
-    57.68s  agent 발화 끝
-    65.47s  user  발화 시작: Nice.
-    65.47s  agent 발화 끝
-    65.82s  user  발화 시작: Perfect! That’s a big help.
-    65.82s  user  발화 끝
-    67.59s  agent 발화 시작: You’re very welcome! It’s always good to have the details so
-    67.59s  user  발화 끝
-    76.44s  user  발화 시작: Yeah.
-    76.44s  agent 발화 끝
-    76.79s  user  발화 시작: Actually, I was wondering… does Gaon have a dress code?
-    76.79s  user  발화 끝
-    80.09s  <ret> 발화 (turn20 첫 프레임)
-    80.33s  agent 발화 시작: <ret> Gaon suggests smart casual attire—jeans are discourage
-    80.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Gaon restaurant in Seoul suggests smart casual attire; j
-    80.33s  user  발화 끝
-    85.28s  user  발화 시작: Oh, that's good to know! Do they have any vegetarian options
-    85.28s  agent 발화 끝
-    89.02s  <ret> 발화 (turn22 첫 프레임)
-    89.18s  agent 발화 시작: <ret> Yes, they do! Gaon offers a vegetarian tasting menu, t
-    89.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Gaon restaurant offers a five-course vegetarian tasting 
-    89.18s  user  발화 끝
-    95.19s  agent 발화 시작: They offer a five-course vegetarian tasting menu for eighty 
-    95.19s  agent 발화 끝
-   101.56s  user  발화 시작: Wow, that’s quite a bit.
-   101.56s  agent 발화 끝
-   103.33s  agent 발화 시작: It is a bit pricey, but Gaon is known for its refined dining
-   103.33s  user  발화 끝
-   111.12s  user  발화 시작: True. Maybe we should consider a different place. What’s the
-   111.12s  agent 발화 끝
-   116.42s  agent 발화 시작: Mhm.
-   116.42s  user  발화 끝
-   116.54s  <ret> 발화 (turn28 첫 프레임)
-   116.78s  agent 발화 시작: <ret> The forecast for Seoul tomorrow evening at seven PM is
-   116.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.91s]: (tool result) The weather in Seoul on July 11, 2026 at 7:00 PM will be
-   116.78s  agent 발화 끝
-   126.69s  user  발화 시작: Okay.
-   126.69s  agent 발화 끝
-   127.04s  user  발화 시작: That sounds pleasant.
-   127.04s  user  발화 끝
-   128.10s  agent 발화 시작: It does! A comfortable evening for a nice dinner. Sometimes 
-   128.10s  user  발화 끝
-   134.47s  user  발화 시작: I’m also thinking of getting my friend a small gift. Any ide
-   134.47s  agent 발화 끝
-   138.72s  agent 발화 시작: Mm-hmm.
-   138.72s  user  발화 끝
-   139.07s  agent 발화 시작: That’s a lovely thought! Considering his love for Lee Min-ho
-   139.07s  agent 발화 끝
-   147.92s  user  발화 시작: A photo book is a good idea! Can you find some online?
-   147.92s  agent 발화 끝
-   151.76s  <ret> 발화 (turn36 첫 프레임)
-   152.16s  agent 발화 시작: <ret> I found “Lee Min-ho - The Book”, featuring photos from
-   152.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) "Lee Min-ho - The Book" features high-quality photos fro
-   152.16s  user  발화 끝
-   159.24s  user  발화 시작: That sounds perfect! Thank you so much for all your help, Ea
-   159.24s  agent 발화 끝
-   163.49s  agent 발화 시작: You’re very welcome! I’m truly glad I could assist you in pl
-   163.49s  user  발화 끝
-   172.69s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
+     2.61s  <ret> 발화 (turn1 첫 프레임)
+     2.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.42s]: (no information found)
+     3.21s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
+     3.21s  user  발화 끝
+     9.63s  user  발화 시작: Oh, okay. Well, what…
+     9.63s  agent 발화 끝
+    11.06s  user  발화 시작: …about her latest album release date?
+    11.06s  user  발화 끝
+    12.88s  <ret> 발화 (turn4 첫 프레임)
+    13.20s  agent 발화 시작: <ret> Her fifteenth studio album, “Because You’re Here,” cam
+    13.20s  user  발화 끝
+    13.42s  ⚡SPAN 주입 [d'=0.54s / d_lead=6.78s]: Lee Sun-hee released her fifteenth studio album, “Because You’re Here,
+    19.98s  user  발화 시작: Uh-huh.
+    19.98s  agent 발화 끝
+    20.34s  user  발화 시작: That’s good to know. I’m planning a trip to Jeju Island next
+    20.34s  user  발화 끝
+    24.98s  agent 발화 시작: Jeju Island is beautiful! I can help you find information ab
+    24.98s  user  발화 끝
+    30.33s  user  발화 시작: Yes, please. What’s the weather forecast for Jeju City on Ju
+    30.33s  agent 발화 끝
+    34.61s  agent 발화 시작: Mm-hmm.
+    34.61s  user  발화 끝
+    34.72s  <ret> 발화 (turn10 첫 프레임)
+    34.97s  agent 발화 시작: <ret> On July twentieth, two thousand twenty-six, Jeju City 
+    34.97s  agent 발화 끝
+    35.77s  ⚡SPAN 주입 [d'=1.05s / d_lead=10.35s]: (tool result) 26.3°C, humidity 78%, wind 7.2 km/h, mostly cloudy.
+    45.32s  user  발화 시작: That sounds pleasant. Are there any good hiking trails there
+    45.32s  agent 발화 끝
+    48.34s  <ret> 발화 (turn12 첫 프레임)
+    48.83s  ⚡SPAN 주입 [d'=0.49s / d_lead=8.21s]: (tool result) Hallasan National Park offers several hiking trails, inc
+    48.89s  agent 발화 시작: <ret> Hallasan National Park has trails like Seongpanak and 
+    48.89s  user  발화 끝
+    57.09s  user  발화 시작: The Seongpanak Trail sounds interesting.
+    57.09s  agent 발화 끝
+    58.88s  agent 발화 시작: It’s a popular choice, known for its beautiful views and div
+    58.88s  user  발화 끝
+    63.16s  user  발화 시작: …how long does it usually take to complete?
+    63.16s  agent 발화 끝
+    66.01s  agent 발화 시작: It generally takes about seven to nine hours to complete the
+    66.01s  user  발화 끝
+    73.51s  user  발화 시작: Okay, good to know. Can you find me some restaurants near Ha
+    73.51s  agent 발화 끝
+    78.37s  <ret> 발화 (turn18 첫 프레임)
+    78.50s  agent 발화 시작: <ret> Near Hallasan National Park, you’ll find places like J
+    78.50s  user  발화 끝
+    78.80s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.92s]: (tool result) Several restaurants are near Hallasan National Park, inc
+    87.42s  user  발화 시작: Right.
+    87.42s  agent 발화 끝
+    87.78s  user  발화 시작: That sounds perfect. Thank you, Thuia.
+    87.78s  user  발화 끝
+    89.92s  agent 발화 시작: You’re very welcome. Remember to pack appropriately for the 
+    89.92s  user  발화 끝
+    96.34s  agent 발화 끝

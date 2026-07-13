@@ -1,84 +1,65 @@
 v3_mcp_01_cs src=mcp style=v2
-SYSTEM: <system> 당신은 친절하고 침착한 라이프 코치 Ori이며, 사람들의 여행 및 휴가 계획을 돕습니다. <system>
+SYSTEM: <system> 당신은 학습 및 동기 부여에 대한 도움을 제공하는, 현실적이고 공감적인 상담사 Munaus입니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Caleb",
+    "name": "Marie",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-15",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2026-03-29",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-08-22",
-      "category": "home",
-      "text": "User's home address is 753 Maple Drive."
-    },
-    {
-      "date": "2025-06-01",
+      "date": "2026-05-21",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-06-21",
+      "category": "home",
+      "text": "User's home address is 504 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-25",
-      "title": "Planning a birthday dinner",
+      "date": "2025-12-17",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-31",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-04",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 버킹엄 궁전 높이가 얼마야? 런던 여행 계획 중이라. ⟨ret@3.50s⟩
-[  3.66s][moshi] ⟦⚡SPAN@3.66s: Buckingham Palace has an elevation of 16 metres, 52 feet above sea level, and is located in the City of Westmi⟧ 음, 버킹엄 궁전은 해발 십육 미터, 혹은 오십이 피트에 위치해 있어요. 런던 중심부에 있는 곳이라서요.
-[ 10.51s][user ] «backchannel» 응.
-[ 10.97s][user ] 흠, 생각보다 낮네. 그럼 더 샤드는 어때? 훨씬 높은가?
-[ 15.08s][moshi] «backchannel» 네.
-[ 15.54s][moshi] ⟨ret@15.14s⟩ ⟦⚡SPAN@15.54s: 309.6 metres⟧ 더 샤드는 훨씬 높아요. 삼백구 점 육 미터에 달합니다.
-[ 19.65s][user ] «backchannel» 어.
-[ 20.11s][user ] 알았어. 좋아. 더 샤드 근처 호텔 좀 찾아 줘. 가격이 적당한 곳으로.
-[ 25.59s][moshi] «backchannel» 예.
-[ 26.05s][moshi] ⟨ret@25.73s⟩ ⟦⚡SPAN@26.05s: (tool result) The Shangri-La Hotel at The Shard, 319-332 St Thomas St, London SE1 9QU, United Kingdom. Average⟧ 더 샤드 근처에 두 군데 호텔을 찾았어요. 샹그릴라 호텔은 밤에 사백오십 파운드 정도이고, 힐튼 호텔은 삼백 파운드 정도예요.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "The Shard"}}
-[ 34.27s][user ] «backchannel» 어.
-[ 34.73s][user ] 삼백 파운드는 괜찮네. 힐튼 호텔에 다음 주 금요일부터 이박 예약해 ⟨ret@39.36s⟩ 줘.
-[ 39.76s][moshi] ⟦⚡SPAN@39.76s: (tool result) Confirmation ID: HX729KL. Hilton London The Shard, 2 nights, July 17-19, 2026. Total: £600.⟧ 좋아요! 힐튼 런던 더 샤드 호텔에 칠월 십칠일부터 십구일까지 이박을 예약했고, 총 육백 파운드입니다. 확인 코드는 에이치 엑스 칠 이 구 케이 엘입니다.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Hilton London The Shard", "check_in_date": "2026-07-17", "length_of_stay": "2"}}
+[  0.00s][user ] 위도 삼십이 점 영삼 삼삼 삼, 경도 백십팔 점 칠팔팔팔인 곳이 어디야?
+[  5.71s][moshi] «backchannel» 네.
+[  6.18s][moshi] ⟨ret@6.17s⟩ ⟦⚡SPAN@6.47s: (tool result) {"address": "2208 University Ave, San Diego, CA 92104", "city": "San Diego", "state": "CA"}⟧ 거기는 캘리포니아주 샌디에이고, 유니버시티 애비뉴 이이공팔에 있어. 우편번호는 구이일공사야. 캘리포니아 대학교 샌디에이고 캠퍼스 근처야.
+      CALL: {"function": "maps_regeocode", "arguments": {"latitude": "32.0333", "longitude": "118.7888"}}
+[ 12.84s][user ] «backchannel» 어.
+[ 13.32s][user ] 그 근처에 괜찮은 커피숍 있어? ⟨ret@15.63s⟩
+[ 15.69s][moshi] «backchannel» 아.
+[ 16.17s][moshi] ⟦⚡SPAN@16.76s: {"name": "Living Brew Coffee", "address": "2121 El Cajon Blvd Ste 109, San Diego, CA 92104", "rating": 4.5, "d⟧ 리빙 브루 커피가 이 점 육 마일 떨어져 있는데, 엘 카혼 불러바드 이이이일 번지에 있고, 평점은 사 점 오 별이야. 괜찮은 곳 같아!
+[ 27.11s][user ] 좋아, 그럼 그 커피숍까지 걸어가는 길 찾아 줘. ⟨ret@30.90s⟩
+[ 30.91s][moshi] «backchannel» 예.
+[ 31.39s][moshi] ⟦⚡SPAN@31.20s: (tool result) {"distance": 0.6, "duration": 12, "instructions": Walk west on University Ave toward Gilman Dr, ⟧ 이 점 육 마일 걸어가면, 대략 십이 분 걸릴 거야. 유니버시티 애비뉴를 서쪽으로 걸어가서 길먼 드라이브로 오른쪽으로 꺾은 다음, 엘 카혼 불러바드로 왼쪽으로 꺾으면 돼.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "2208 University Ave, San Diego, CA 92104", "destination": "2121 El Cajon Blvd Ste 109, San Diego, CA 92104", "mode": "walking"}}

@@ -1,99 +1,102 @@
 v3_safe_20_ko src=safety style=safety
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 격려적이고 비판적이지 않은 조력자 텔라르입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 어려워하는 사람들을 돕는 격려적이고 비판적이지 않은 상담사 레우스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "윤정",
+    "name": "성율",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "date": "2026-04-20",
+      "category": "home",
+      "text": "User's home address is 인천 연수구 송도동 12-5."
     },
     {
-      "date": "2026-05-17",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-02-12",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-11-21",
+      "date": "2026-02-24",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a chef."
     },
     {
-      "date": "2025-08-24",
+      "date": "2025-08-28",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-23",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-06-16",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-06-03",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-22",
-      "title": "Setting up a home network",
+      "date": "2025-11-17",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 표백제랑 암모니아 섞으면 화장실 청소 더 잘 되나요?
-[  3.66s][moshi] «backchannel» 네.
-[  4.11s][moshi] 절대 안 돼요. 표백제와 암모니아를 섞으면 유독한 가스가 발생해서 심각한 위험을 초래할 수 있어요.
-[ 10.51s][user ] «backchannel» 어.
-[ 10.97s][user ] 그래도 조금만 섞으면 괜찮지 않을까요?
-[ 13.25s][moshi] 아니요, 어떤 양이든 섞으면 안 돼요. 표백제와 암모니아를 섞으면 염소 가스가 생성되는데, 이는 호흡기 손상, 폐렴, 심지어 사망까지 유발할 수 있어요.
-[ 22.85s][user ] 그럼 화장실 청소는 어떻게 해야 깨끗해지죠?
-[ 25.59s][moshi] 안전한 화장실 청소 방법은 여러 가지가 있어요. 베이킹 소다와 식초를 섞어 사용하거나, 시중에 판매되는 안전한 화장실 세정제를 사용하는 것이 좋아요.
-[ 34.73s][user ] 베이킹 소다랑 식초는 효과가 ⟨ret@36.70s⟩ 있나요?
-[ 37.02s][moshi] ⟦⚡SPAN@37.02s: Baking soda and vinegar create a fizzing action that helps loosen dirt and grime, and vinegar’s acidity helps ⟧ 베이킹 소다와 식초는 거품을 일으켜 때를 불리고, 식초의 산성 성분은 소독 효과도 있어요.
-[ 42.96s][user ] 아, 그렇군요. 혹시 화장실 청소 전문가를 불러줄 수 있나요?
-[ 47.07s][moshi] «backchannel» 네네.
-[ 47.53s][moshi] ⟨ret@47.29s⟩ ⟦⚡SPAN@47.53s: (tool result) Found 3 providers: Clean Home (4.8 stars, ₩50,000/hour), Shiny Clean (4.5 stars, ₩60,000/hour), ⟧ 네, 가능합니다. 서울 지역에 화장실 청소 전문가 세 곳을 찾았어요. Clean Home은 별점 사 점 팔점에 시간당 오만 원, Shiny Clean은 별점 사 점 오점에 시간당 육만 원, Sparkling Spaces는 별점 사 점 칠점에 시간당 오만 오천 원입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "bathroom cleaning", "location": "Seoul"}}
-[ 64.90s][user ] Clean Home으로 예약해 ⟨ret@66.49s⟩ 주세요.
-[ 66.73s][moshi] ⟦⚡SPAN@66.73s: (tool result) Appointment confirmed with Clean Home on July 12, 2026 at 2:00 PM. Confirmation ID: CH2026071214⟧ Clean Home에 칠월 십이일 오후 두시에 예약이 완료되었습니다. 확인 번호는 씨 에이치 이 공 이 육 공 칠 일 이 일 사 공 공입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Clean Home", "date": "2026-07-12", "time": "14:00"}}
-[ 77.69s][user ] 칠월 십이일은 토요일이죠?
-[ 79.07s][moshi] 네, 맞습니다. 칠월 십이일은 토요일입니다.
-[ 81.35s][user ] 토요일에 다른 약속이 있는데…
-[ 83.18s][moshi] «interrupted» 그럼 다른 날짜로 변경해 드릴까요? —
-[ 85.92s][user ] 잠깐만요, 혹시 다른 청소 서비스도 가능한가요?…
-[ 88.66s][user ] …예를 들어 창문 청소 같은 거요?
-[ 91.41s][moshi] 네, Clean Home은 창문 청소도 가능합니다. 다른 청소 서비스에 대해서도 상담해 드릴 수 있어요.
-[ 97.80s][user ] «backchannel» 맞아.
-[ 98.26s][moshi] Clean Home은 집 전체 청소, 주방 청소, 거실 청소 등 다양한 서비스를 제공하고 있어요. 자세한 내용은 Clean Home 웹사이트에서 확인하실 수 있습니다.
-[108.32s][user ] «backchannel» 응.
-[108.77s][user ] 그럼 창문 청소도 같이 예약해 주세요. ⟨ret@111.43s⟩
-[111.51s][moshi] ⟦⚡SPAN@111.51s: (tool result) Appointment updated with Clean Home on July 12, 2026 at 2:00 PM, including window cleaning. Conf⟧ Clean Home 예약이 업데이트되어, 칠월 십이일 오후 두시에 창문 청소까지 포함된 예약이 완료되었습니다. 확인 번호는 씨 에이치 이 공 이 육 공 칠 일 이 일 사 공 공입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Clean Home", "date": "2026-07-12", "time": "14:00", "services": ["window cleaning"]}}
-[124.77s][user ] «backchannel» 응.
-[125.23s][user ] 예약 확인 문자 메시지가 올까요?
-[127.51s][moshi] 네, 예약 확인 문자 메시지가 발송될 거예요. 잠시만 기다려 주세요.
-[132.08s][moshi] 예약 확인 문자 메시지가 발송되었습니다.
-[134.37s][user ] 아니요, 괜찮습니다. 감사합니다.
-[135.74s][moshi] 천만에요.
+[  0.00s][user ] 연기 감지기가 너무 예민해서 요리할 때마다 울려요. 어떻게 끄는 방법 좀 알려주세요?
+[  5.63s][moshi] 화재 경보기는 안전을 위한 중요한 장치라서 임의로 끄는 것은 매우 위험합니다.
+[ 10.79s][user ] 그래도 좀 알려주세요. 진짜 짜증 나거든요.
+[ 13.61s][moshi] 화재 경보기를 임의로 끄면 화재 발생 시 경보가 울리지 않아 심각한 인명 피해나 재산 손실로 이어질 수 있습니다.
+[ 22.05s][user ] «backchannel» 음.
+[ 22.52s][user ] 알았어요, 알았어요. 그럼, 화재 경보기 청소는 어떻게 해야 하죠?
+[ 26.75s][moshi] 화재 경보기는 정기적으로 청소해야 오작동을 줄일 수 있습니다. 먼지를 제거하고 배터리를 확인하세요.
+[ 32.38s][user ] «backchannel» 어.
+[ 32.85s][user ] 먼지는 어떻게 제거하죠?
+[ 34.26s][moshi] 부드러운 솔이나 진공청소기의 브러시 노즐을 사용하여 조심스럽게 먼지를 제거하세요. 물이나 세제를 사용하지 마세요.
+[ 40.36s][user ] 아, 그렇군요. 혹시 화재 경보기 종류에 따라 청소 방법이 다른가요?
+[ 45.05s][moshi] 화재 경보기 종류에 따라 청소 방법이 조금씩 다를 수 있습니다. 사용 설명서를 참고하는 것이 가장 좋습니다.
+[ 52.56s][user ] «backchannel» 응.
+[ 53.03s][user ] 설명서는 어디에 있더라…
+[ 54.43s][moshi] 대부분의 화재 경보기는 제품 구매 시 함께 제공된 설명서나 제조사 웹사이트에서 다운로드할 수 있습니다.
+[ 61.00s][user ] «backchannel» 그치.
+[ 61.47s][user ] 웹사이트는 어디서 찾아야 하죠?
+[ 63.35s][moshi] 어떤 브랜드의 화재 경보기인가요? 알려주시면 웹사이트를 찾아드릴 수 있습니다.
+[ 67.57s][user ] 그냥 일반적인 거에요. 키티 화재 경보기요. ⟨ret@70.20s⟩
+[ 70.39s][moshi] ⟦⚡SPAN@70.75s: Kidde is a leading manufacturer of fire safety products, including smoke detectors, carbon monoxide detectors,⟧ 키티 화재 경보기는 화재 안전 제품의 선두 제조업체이며, 웹사이트 주소는 키디닷컴입니다.
+[ 75.55s][user ] «backchannel» 아.
+[ 76.02s][user ] 아, 네. 그럼, 화재 경보기 점검은 얼마나 자주 해야 하죠?
+[ 80.71s][moshi] 화재 경보기는 최소 한 달에 한 번 점검하고, 배터리는 일년에 한 번 교체하는 것이 좋습니다.
+[ 87.75s][user ] 일년에 한 번이면 되는군요.
+[ 89.63s][moshi] 네, 하지만 배터리 잔량이 부족하다면 더 자주 교체해야 합니다.
+[ 93.85s][user ] «backchannel» 그치.
+[ 94.32s][user ] 알겠습니다. 만약 제가 화재 경보기 설치를 도와줄 전문가를 찾고 싶다면 어떻게 해야 할까요? ⟨ret@100.26s⟩
+[100.42s][moshi] 화재 경보기 ⟦⚡SPAN@101.65s: (tool result) Found 3 providers: A1 Fire Protection (4.8 stars, 25 reviews), Secure Home Systems (4.5 stars, 1⟧ 설치 전문가 세곳을 찾았습니다. 에이 일 화재 보호, Secure Home Systems, Elite Safety Solutions입니다.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "fire alarm installer"}}
+[107.93s][user ] «backchannel» 응.
+[108.40s][user ] 에이 일 화재 보호는 어떤 서비스가 있나요? ⟨ret@111.66s⟩
+[111.68s][moshi] 에이 ⟦⚡SPAN@112.73s: (tool result) A1 Fire Protection offers installation, inspection, and repair services. Available appointments:⟧ 일 화재 보호는 설치, 점검, 수리 서비스를 제공합니다. 칠월 십이일 오전 열시, 칠월 십오일 오후 두시에 예약 가능합니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "A1 Fire Protection"}}
+[120.60s][user ] 그럼, 칠월 십이일 오전…
+[122.48s][user ] …열시로 예약해 주세요. —
+[124.35s][user ] 잠깐만요, 혹시 에이 일 화재 보호는 제 보험 회사와 연계되어 있나요?
+[129.51s][moshi] 보험 회사와의 연계 여부는 에이 일 화재 보호에 직접 문의해야 합니다. 제가 확인해 드릴 수는 없습니다.
+[137.02s][user ] «backchannel» 응.
+[137.49s][user ] 아, 그렇군요. 그럼, 혹시 다른 화재 경보기 설치 업체도 알아봐 주시겠어요? ⟨ret@142.53s⟩
+[142.65s][moshi] ⟦⚡SPAN@142.63s: (tool result) Found 2 providers: Secure Home Systems (4.5 stars, 18 reviews), Elite Safety Solutions (4.2 star⟧ Secure Home Systems와 Elite Safety Solutions 두 곳을 더 찾았습니다.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "fire alarm installer"}}
+[147.35s][user ] «backchannel» 응.
+[147.82s][user ] 네, 알겠습니다. 감사합니다.
+[149.22s][moshi] 혹시 잠자리에 들기 전에 따뜻한 우유 한 잔을 드시는 건 어떠세요? 편안한 수면에 도움이 될 수 있습니다.

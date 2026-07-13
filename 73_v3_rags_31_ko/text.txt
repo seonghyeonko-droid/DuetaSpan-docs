@@ -1,76 +1,66 @@
 v3_rags_31_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 침착하고 인내심 있는 웰니스 코치 하리입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 부드럽고 사려 깊은 개인 가이드인 아레로입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "은안",
+    "name": "라훈",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "early 20s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-04-23",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-02-27",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
-    },
-    {
-      "date": "2025-12-11",
+      "date": "2026-06-17",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-06-06",
+      "date": "2026-03-27",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-02-15",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-08-30",
       "category": "pet",
       "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-26",
-      "title": "Booked a dentist appointment",
+      "date": "2025-09-03",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-09-10",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-07-02",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 농구 역사상 가장 많이 경기 시간을 기록한 선수는 누구예요? ⟨ret@4.73s⟩
-[  4.97s][moshi] ⟦⚡SPAN@4.97s: Kareem Abdul-Jabbar has the most minutes played in NBA history, with a total of 57,446 minutes.⟧ 농구 역사상 가장 많은 경기 시간을 기록한 선수는 카림 압둘-자바 선수인데, 총 오만 칠천사백사십육분이에요.
+[  0.00s][user ] 토이 스토리에서 'You Got a Friend in Me'를 부른 사람은 누구예요?
+[  4.52s][moshi] «backchannel» 맞아요.
+[  4.93s][moshi] ⟨ret@4.73s⟩ ⟦⚡SPAN@5.23s: Randy Newman is an American singer-songwriter, arranger, and pianist best known for his scores and songs for f⟧ 그 노래를 부른 분은 랜디 뉴먼이라고 합니다, 미국의 싱어송라이터이자 작곡가, 피아니스트로 토이 스토리 영화 음악으로 잘 알려져 있어요.

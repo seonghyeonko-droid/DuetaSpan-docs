@@ -4,164 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Anna",
+#     "name": "Paul",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
+#       "date": "2026-06-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2026-06-03",
+#       "category": "home",
+#       "text": "User's home address is 812 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-08-14",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-04-21",
-#       "category": "home",
-#       "text": "User's home address is 704 Pine Court."
-#     },
-#     {
-#       "date": "2026-02-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-08-02",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-13",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-23",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to get to Hollywood Walk of | S2 I’ve heard. I’m meeting a friend f | S3 That’s true. Do you know anything  | S4 Maybe after lunch.
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit down, and I coul | S2 "Anchorman" is a classic. Is it av | S3 Something Korean, I think.… | S4 That’s fantastic, thank you so muc
 
-     0.00s  user  발화 시작: I need to get to Hollywood Walk of Fame from Union Station. 
-     6.34s  <ret> 발화 (turn1 첫 프레임)
-     6.74s  agent 발화 시작: <ret> The fastest way is about sixteen point one kilometers,
-     6.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.16s]: (tool result) {"distance": "16.1 km", "duration": "49 minutes", "route
-     6.74s  user  발화 끝
-    14.90s  user  발화 시작: Yeah.
-    14.90s  agent 발화 끝
-    15.25s  user  발화 시작: Sounds good.
-    15.25s  user  발화 끝
-    15.96s  agent 발화 시작: That’s a classic route, lots of interesting sights along the
-    15.96s  user  발화 끝
-    23.06s  user  발화 시작: Yeah, it is. Uh, what’s the weather like there right now?
-    23.06s  agent 발화 끝
-    26.96s  agent 발화 시작: Mm-hmm.
-    26.96s  user  발화 끝
-    27.07s  <ret> 발화 (turn7 첫 프레임)
-    27.31s  agent 발화 시작: <ret> It’s currently twenty-four point four degrees Celsius 
-    27.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.87s]: (tool result) "24.4°C, humidity 65%, wind 8.0 km/h, clear skies."
-    27.31s  agent 발화 끝
-    36.18s  user  발화 시작: Perfect.
-    36.18s  agent 발화 끝
-    36.53s  agent 발화 시작: A lovely day for a stroll along the Walk of Fame, then. It’s
-    36.53s  user  발화 끝
-    43.63s  user  발화 시작: I’ve heard. I’m meeting a friend for lunch. Any good restaur
-    43.63s  agent 발화 끝
-    47.48s  <ret> 발화 (turn11 첫 프레임)
-    47.88s  agent 발화 시작: <ret> I see Musso & Frank Grill—American cuisine, a pricey t
-    47.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.74s]: (tool result) "Musso & Frank Grill (American, $$$), In-N-Out Burger (B
-    47.88s  user  발화 끝
-    54.62s  user  발화 시작: Musso & Frank sounds interesting.
-    54.62s  agent 발화 끝
-    56.40s  agent 발화 시작: It’s a Hollywood landmark! A very historic place, with quite
-    56.40s  user  발화 끝
-    61.36s  user  발화 시작: Can you make a reservation there for two, at one pm?
-    61.36s  agent 발화 끝
-    64.86s  <ret> 발화 (turn15 첫 프레임)
-    65.26s  agent 발화 시작: <ret> I’ve confirmed a reservation for two people at Musso &
-    65.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) "Reservation confirmed for 2 people at Musso & Frank Gri
+     0.00s  user  발화 시작: I'm feeling a bit down, and I could really use a good movie 
+     5.96s  agent 발화 시작: Oh, I'm so sorry to hear that! A good movie is a wonderful w
+     5.96s  user  발화 끝
+    12.28s  user  발화 시작: Do you have any recommendations for dramatic movies with Mer
+    12.28s  agent 발화 끝
+    16.14s  agent 발화 시작: Yeah, yeah.
+    16.14s  user  발화 끝
+    16.82s  <ret> 발화 (turn4 첫 프레임)
+    16.84s  agent 발화 시작: <ret> I certainly do! There's "Sophie's Choice" from 1982, a
+    16.84s  agent 발화 끝
+    17.13s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.37s]: (tool result) {"movies": [{"title": "Sophie's Choice", "year": 1982, "
+    24.21s  user  발화 시작: Exactly.
+    24.21s  agent 발화 끝
+    24.56s  user  발화 시작: That sounds… intense. Something a little lighter, maybe?
+    24.56s  user  발화 끝
+    27.37s  agent 발화 시작: I understand. Sometimes you need something a bit more uplift
+    27.37s  user  발화 끝
+    32.28s  user  발화 시작: Are there any comedies starring Steve Carell?
+    32.28s  agent 발화 끝
+    34.14s  <ret> 발화 (turn9 첫 프레임)
+    34.73s  agent 발화 시작: <ret> There's "The 40-Year-Old Virgin" from 2005, and "Ancho
+    34.73s  user  발화 끝
+    34.91s  ⚡SPAN 주입 [d'=0.77s / d_lead=6.32s]: (tool result) {"movies": [{"title": "The 40-Year-Old Virgin", "year": 
+    41.05s  user  발화 시작: "Anchorman" is a classic. Is it available to stream anywhere
+    41.05s  agent 발화 끝
+    44.21s  <ret> 발화 (turn11 첫 프레임)
+    44.56s  agent 발화 시작: <ret> It looks like "Anchorman" is currently streaming on Pe
+    44.56s  user  발화 끝
+    44.88s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.07s]: (tool result) Anchorman: The Legend of Ron Burgundy is available to st
+    52.63s  user  발화 시작: Oh, perfect. I have Peacock. I think I'll watch that tonight
+    52.63s  agent 발화 끝
+    56.49s  agent 발화 시작: Wonderful! That sounds like a really good plan for a cozy ev
+    56.49s  user  발화 끝
+    60.70s  user  발화 시작: Actually, before I settle in, could you find me some good re
+    60.70s  agent 발화 끝
+    65.26s  agent 발화 시작: To help me find the best spots, could you remind me what cit
     65.26s  user  발화 끝
-    72.36s  user  발화 시작: Yeah.
-    72.36s  agent 발화 끝
-    72.71s  user  발화 시작: Great!
-    72.71s  user  발화 끝
-    73.07s  agent 발화 시작: Wonderful. I always feel better knowing the details are sort
-    73.07s  user  발화 끝
-    80.16s  user  발화 시작: Yeah.
-    80.16s  agent 발화 끝
-    80.52s  agent 발화 시작: Sometimes, the biggest transitions are made easier by simply
-    80.52s  user  발화 끝
-    88.32s  user  발화 시작: That’s true. Do you know anything about the history of Musso
-    88.32s  agent 발화 끝
-    92.77s  <ret> 발화 (turn22 첫 프레임)
-    92.93s  agent 발화 시작: <ret> Musso & Frank Grill was established in nineteen ninete
-    92.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.58s]: Musso & Frank Grill was established in 1919 by Joseph Musso and Frank 
-    92.93s  user  발화 끝
-   102.51s  user  발화 시작: Wow, that’s old.
-   102.51s  agent 발화 끝
-   103.57s  agent 발화 시작: It really is. It’s seen a lot of changes in the city, and in
-   103.57s  user  발화 끝
-   111.02s  user  발화 시작: I wonder if any famous people are there right now?
-   111.02s  agent 발화 끝
-   114.57s  agent 발화 시작: It's always a possibility! It’s known for attracting a diver
-   114.57s  user  발화 끝
-   118.47s  user  발화 시작: I should check if there are any events happening near the re
-   118.47s  agent 발화 끝
-   123.03s  <ret> 발화 (turn29 첫 프레임)
-   123.08s  agent 발화 시작: Yeah.
-   123.08s  user  발화 끝
-   123.43s  agent 발화 시작: <ret> There’s a classical concert at the Hollywood Bowl at e
-   123.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.51s]: (tool result) "Hollywood Bowl concert (Classical, July 10, 2026, 8:00 
-   123.43s  agent 발화 끝
-   131.95s  user  발화 시작: Uh-huh.
-   131.95s  agent 발화 끝
-   132.30s  user  발화 시작: Maybe after lunch.
-   132.30s  user  발화 끝
-   133.37s  agent 발화 시작: Sounds like a lovely plan. Having options is always good, wo
-   133.37s  user  발화 끝
-   137.98s  user  발화 시작: Uh-huh.
-   137.98s  agent 발화 끝
-   138.33s  agent 발화 시작: It’s about allowing yourself the flexibility to choose what 
-   138.33s  user  발화 끝
-   145.07s  user  발화 시작: I guess so. What’s the quickest way to get from Musso & Fran
-   145.07s  agent 발화 끝
-   150.78s  <ret> 발화 (turn36 첫 프레임)
-   151.10s  agent 발화 시작: <ret> The quickest route is thirteen point one kilometers, t
-   151.10s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.51s]: (tool result) {"distance": "13.1 km", "duration": "35 minutes", "route
-   151.10s  user  발화 끝
-   159.61s  user  발화 시작: Thanks, Boraus.
-   159.61s  agent 발화 끝
-   160.32s  agent 발화 시작: You’re very welcome. Enjoy your lunch and your evening. Reme
-   160.32s  user  발화 끝
-   166.35s  agent 발화 끝
+    70.87s  user  발화 시작: Wow.
+    70.87s  agent 발화 끝
+    71.22s  user  발화 시작: Oh, right! Sorry. I’m in Seoul.
+    71.22s  user  발화 끝
+    73.33s  agent 발화 시작: No problem at all! Seoul has a fantastic food scene. What ki
+    73.33s  user  발화 끝
+    80.34s  user  발화 시작: Something Korean, I think.…
+    80.34s  agent 발화 끝
+    81.75s  user  발화 시작: …But not too spicy.
+    81.75s  user  발화 끝
+    82.54s  <ret> 발화 (turn21 첫 프레임)
+    83.15s  agent 발화 시작: <ret> I found a couple of options! Gaon is a high-end Korean
+    83.15s  user  발화 끝
+    83.91s  ⚡SPAN 주입 [d'=1.37s / d_lead=7.37s]: (tool result) {"restaurants": [{"name": "Gaon", "address": "30, Dosan-
+    90.52s  user  발화 시작: …Is Gaon really expensive? I'm trying not to spend too much 
+    90.52s  agent 발화 끝
+    94.73s  agent 발화 시작: Well, Gaon is considered a high-end dining experience—
+    94.73s  user  발화 끝
+    97.54s  agent 발화 시작: It’s rated as a very pricey restaurant, so— —with a price ti
+    97.54s  agent 발화 끝
+   108.06s  user  발화 시작: Okay, Balwoo Gongyang sounds better. Can you reserve a table
+   108.06s  agent 발화 끝
+   113.29s  <ret> 발화 (turn26 첫 프레임)
+   113.67s  agent 발화 시작: <ret> I've reserved a table for one at Balwoo Gongyang for 7
+   113.67s  user  발화 끝
+   114.54s  ⚡SPAN 주입 [d'=1.25s / d_lead=5.96s]: (tool result) {"confirmation id": "BWG73026", "restaurant name": "Balw
+   119.64s  user  발화 시작: Okay.
+   119.64s  agent 발화 끝
+   119.99s  user  발화 시작: That’s fantastic, thank you so much!
+   119.99s  user  발화 끝
+   122.09s  agent 발화 시작: You're very welcome! I’m so glad I could help you plan a rel
+   122.09s  user  발화 끝
+   129.11s  user  발화 시작: Right.
+   129.11s  agent 발화 끝
+   129.46s  user  발화 시작: I appreciate that. It’s good to talk sometimes.
+   129.46s  user  발화 끝
+   132.27s  agent 발화 시작: It truly is. I'm always here to listen, if you ever need to 
+   132.27s  user  발화 끝
+   141.39s  user  발화 시작: I think so too. I’m going to get ready now.
+   141.39s  agent 발화 끝
+   144.90s  agent 발화 시작: Have a wonderful time!
+   144.90s  user  발화 끝
+   146.30s  agent 발화 끝

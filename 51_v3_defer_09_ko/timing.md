@@ -4,120 +4,101 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "소빈",
+#     "name": "세국",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-02-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-10-17",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-06-26",
+#       "date": "2026-06-06",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-21",
+#       "date": "2026-05-10",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-05-08",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to Kyoto in August."
+#     },
+#     {
+#       "date": "2026-04-07",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-11-07",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-30",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-09-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 구글 주식 가격이 지금 얼마예요? | S2 주말에 비가 온다고요? 아, 좀 아쉽네요. | S3 돼지국밥… 맛있겠네요. | S4 아, 맞아요!
+# EXAMINER(FDB-v2) 단계: S1 아이들 방학 때 뭐 할지 좀 알아봐 줘. 특별한 건 말고, 그 | S2 칠월 십오일부터라고? 아, 이번 주말은 안 하는구나. | S3 잠깐만, 혹시 코엑스 공룡전시 티켓 예매도 도와줄 수 있어?  | S4 응, 부탁해. 어른 두 명, 아이 두 명으로 예매해 줘.
 
-     0.00s  user  발화 시작: 구글 주식 가격이 지금 얼마예요?
-     2.40s  <ret> 발화 (turn1 첫 프레임)
-     2.56s  agent 발화 시작: <ret> 구글 주식은 오늘 칠월 십일 기준으로 백칠십이 점 삼 오달러에 마감했고, 어제 종가인 백칠십 점 
-     2.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Google's stock closed today, July 10, 2026, at 172.35 US
-     2.56s  user  발화 끝
-    13.32s  user  발화 시작: 아.
-    13.32s  agent 발화 끝
-    13.83s  user  발화 시작: 음, 네.
-    13.83s  user  발화 끝
-    14.86s  agent 발화 시작: 혹시 다른 주식에 대해서도 알아봐 드릴까요? 저는 크리오라라고 해요.
-    14.86s  user  발화 끝
-    19.47s  user  발화 시작: 음.
-    19.47s  agent 발화 끝
-    19.98s  user  발화 시작: 아, 아니요. 오늘은 괜찮아요. 이번 주말에 친구랑 여행 가기로 했는데, 혹시 부산 날씨 어때요?
-    19.98s  user  발화 끝
-    27.15s  agent 발화 시작: 아.
-    27.15s  user  발화 끝
-    27.58s  <ret> 발화 (turn8 첫 프레임)
-    27.66s  agent 발화 시작: <ret> 부산 날씨는 현재 이십팔 점 오도로 습도는 육십팔퍼센트, 바람은 시속 사 점 이킬로미터고요, 이번
-    27.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) The current weather in Busan is 28.5°C, with humidity at
-    27.66s  agent 발화 끝
-    37.91s  user  발화 시작: 아.
-    37.91s  agent 발화 끝
-    38.42s  user  발화 시작: 주말에 비가 온다고요? 아, 좀 아쉽네요.
-    38.42s  user  발화 끝
-    41.50s  agent 발화 시작: 여행 계획에 조금이라도 영향을 줄까 걱정되네요. 혹시 다른 도시도 고려하고 계신가요?
-    41.50s  user  발화 끝
-    47.13s  user  발화 시작: 아니요, 부산으로 정했어요. 그럼, 부산에서 유명한 맛집 좀 추천해 줄 수 있어요?
-    47.13s  agent 발화 끝
-    53.20s  <ret> 발화 (turn13 첫 프레임)
-    53.28s  agent 발화 시작: <ret> 부산은 돼지국밥으로 유명하고, 송정 돼지국밥이나 밀면 맛집들이 평점이 높습니다.
-    53.28s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.61s]: (tool result) Busan is famous for dwaeji gukbap (pork and rice soup), 
-    53.28s  user  발화 끝
-    57.89s  user  발화 시작: 응.
-    57.89s  agent 발화 끝
-    58.40s  user  발화 시작: 돼지국밥… 맛있겠네요.
-    58.40s  user  발화 끝
-    59.43s  agent 발화 시작: 돼지국밥은 부산을 대표하는 음식이죠. 혹시 다른 종류의 음식을 선호하시나요?
-    59.43s  user  발화 끝
-    64.04s  user  발화 시작: 응.
-    64.04s  agent 발화 끝
-    64.55s  user  발화 시작: 잠깐만요, 제가… 아, 어제 친구가 저한테…
-    64.55s  user  발화 끝
-    67.38s  <ret> 발화 (turn19 첫 프레임)
-    67.62s  agent 발화 시작: <ret> 혹시 친구분께 부산 여행 계획을 말씀드린 적이 있으신가요? 이천이십사년 삼월 십오일에 친구분이 부
-    67.62s  user  발화 끝
-    68.74s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.10s]: [2024-03-15] 친구가 부산 여행을 가고 싶어 한다.
-    76.85s  user  발화 시작: 아, 맞아요!
-    76.85s  agent 발화 끝
-    77.87s  agent 발화 시작: 친구분과 함께 즐거운 시간 보내시길 바랍니다.
-    77.87s  user  발화 끝
-    80.94s  user  발화 시작: 고마워요, 크리오라.
-    80.94s  agent 발화 끝
-    81.97s  agent 발화 시작: 천만에요. 언제든지 편하게 이야기 나눠주세요. 저는 당신의 행복을 응원합니다.
-    81.97s  user  발화 끝
-    86.58s  agent 발화 끝
+     0.00s  user  발화 시작: 아이들 방학 때 뭐 할지 좀 알아봐 줘. 특별한 건 말고, 그냥 아이들이 좋아할 만한 거.
+     7.40s  <ret> 발화 (turn1 첫 프레임)
+     7.51s  agent 발화 시작: <ret> 서울에서 아이들이 좋아할 만한 행사들이 많이 있네요. 코엑스 아쿠아리움에서 공룡 전시를 하고, 국
+     7.51s  user  발화 끝
+     8.17s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.51s]: There are several family-friendly events happening in Seoul during the
+    15.02s  user  발화 시작: 그렇죠.
+    15.02s  agent 발화 끝
+    15.49s  user  발화 시작: 아, 국립극장 연극이 뭔지 좀 더 자세히 알려줄 수 있어?
+    15.49s  user  발화 끝
+    20.18s  agent 발화 시작: 음.
+    20.18s  user  발화 끝
+    20.51s  <ret> 발화 (turn5 첫 프레임)
+    20.65s  agent 발화 시작: <ret> 국립극장에서는 이천이십육년 칠월 십오일부터 이십일까지 매일 오후 두시와 다섯시에 '어린 왕자'라는
+    20.65s  agent 발화 끝
+    20.91s  ⚡SPAN 주입 [d'=0.39s / d_lead=7.04s]: The National Theater is hosting a children's play titled "The Little P
+    27.69s  user  발화 시작: 칠월 십오일부터라고? 아, 이번 주말은 안 하는구나.
+    27.69s  agent 발화 끝
+    30.98s  agent 발화 시작: 네, 이번 주말은 아니네요. 다음 주부터 시작이에요. 혹시 다른 공연도 알아볼까요?
+    30.98s  user  발화 끝
+    36.14s  user  발화 시작: 네.
+    36.14s  agent 발화 끝
+    36.61s  user  발화 시작: 잠깐만, 혹시 코엑스 공룡전시 티켓 예매도 도와줄 수 있어? —
+    36.61s  user  발화 끝
+    41.31s  user  발화 시작: …아니, 혹시 지금 할인하는 티켓 같은 건 없을까?
+    41.31s  user  발화 끝
+    44.87s  <ret> 발화 (turn11 첫 프레임)
+    45.06s  agent 발화 시작: <ret> 코엑스 공룡 전시 티켓은 온라인으로 구매하면 이십퍼센트 할인을 받을 수 있고, 이천이십육년 칠월 
+    45.06s  user  발화 끝
+    45.79s  ⚡SPAN 주입 [d'=0.92s / d_lead=9.86s]: {"event": "Dinosaur Exhibition", "location": "COEX Aquarium", "date": 
+    54.92s  agent 발화 시작: 예매를 도와드릴까요?
+    54.92s  agent 발화 끝
+    55.86s  user  발화 시작: 응, 부탁해. 어른 두 명, 아이 두 명으로 예매해 줘.
+    55.86s  agent 발화 끝
+    60.55s  agent 발화 시작: 맞아요.
+    60.55s  user  발화 끝
+    61.01s  <ret> 발화 (turn15 첫 프레임)
+    61.02s  agent 발화 시작: <ret> 이천이십육년 칠월 십육일 오후 두시에 코엑스 아쿠아리움에서 어른 두 명, 아이 두 명으로 공룡 전
+    61.02s  agent 발화 끝
+    61.75s  ⚡SPAN 주입 [d'=0.74s / d_lead=11.73s]: (tool result) Booking confirmed for Dinosaur Exhibition at COEX Aquari
+    72.75s  agent 발화 끝

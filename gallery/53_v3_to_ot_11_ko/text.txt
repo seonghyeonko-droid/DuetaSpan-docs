@@ -1,77 +1,72 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 당신은 부드럽고 사색적인 웰니스 코치인 아나이며, 사람들의 진로 선택과 직장 스트레스 해소를 돕습니다. <system>
+SYSTEM: <system> 당신은 건강 및 일상 습관 관리를 돕는 침착하고 인내심 있는 라이프 코치 하리스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "예훈",
+    "name": "정안",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-29",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-12-02",
+      "date": "2026-06-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-11-05",
-      "category": "home",
-      "text": "User's home address is 서울 종로구 세종대로 175."
-    },
-    {
-      "date": "2025-10-11",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-08-14",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
-    },
-    {
-      "date": "2025-06-14",
+      "date": "2026-02-05",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-11-03",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-28",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-18",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요. ⟨ret@3.35s⟩
-[  3.59s][moshi] ⟦⚡SPAN@3.59s: Hangul, also spelled Hangeul, is the native alphabet of the Korean language.⟧ 한국어의 고유한 이름은 한글이라고 합니다. 아주 과학적인 문자 체계예요.
-[  8.20s][user ] «backchannel» 아.
-[  8.71s][user ] 네, 그렇군요. 그런데 한글은 언제 ⟨ret@11.47s⟩ 만들어졌나요?
-[ 11.79s][moshi] ⟦⚡SPAN@11.79s: Hangul was proclaimed by King Sejong the Great in 1446.⟧ 한글은 세종대왕께서 천사백사십육년에 발표하셨습니다. 백성을 위해 아주 쉽고 편리하게 만들었다고 해요.
-[ 17.42s][user ] «backchannel» 예.
-[ 17.94s][user ] 와, 꽤 오래됐네요. —
-[ 19.99s][user ] 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요?
-[ 24.08s][moshi] «backchannel» 네네.
-[ 24.60s][moshi] ⟨ret@24.28s⟩ ⟦⚡SPAN@24.60s: Sejong the Great is credited with advancements in science, military technology, and agriculture.⟧ 세종대왕께서는 한글 창제 외에도 다양한 업적을 남기셨습니다. 과학 기술 발전에도 힘쓰셨죠.
-[ 30.23s][moshi] 과학 기술과 군사 기술, 농업 발전에 큰 기여를 하셨다고 합니다. 백성을 위한 마음이 정말 컸던 분이세요.
-[ 38.43s][user ] 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 됐어요.
-[ 43.56s][moshi] «backchannel» 맞아요.
-[ 44.07s][moshi] 맞아요. 한글은 배우기 쉬운 문자라 외국인들도 금방 익힐 수 있다고 하죠. 저도 그렇게 생각합니다.
+[  0.00s][user ] 인도 대통령이나 총리가 누구야? ⟨ret@1.79s⟩
+[  2.01s][moshi] 인도 ⟦⚡SPAN@2.99s: Ram Nath Kovind was the 14th and current president of India, assuming office on 25 July 2017.⟧ 대통령은 람 나트 코빈드 님이십니다. 이천십칠년 칠월 이십오일에 취임하셨어요.
+[  7.05s][user ] 음, 대통령이구나.
+[  8.05s][moshi] 대통령직은 중요한 자리죠. 나라를 대표하는 분이니까요.
+[ 11.07s][user ] «backchannel» 응.
+[ 11.58s][user ] 그럼 지금 총리는 ⟨ret@13.32s⟩ 누구야?
+[ 13.59s][moshi] ⟦⚡SPAN@13.62s: Narendra Modi is the 14th and current prime minister of India, serving since 26 May 2014.⟧ 현재 인도 총리는 나렌드라 모디 님이십니다. 이천십사년 오월 이십육일부터 임기를 시작하셨어요.
+[ 19.13s][user ] 아, 모디 총리. 뉴스에서 많이 봤어.
+[ 22.15s][moshi] 모디 총리님은 인도 경제 발전에 큰 역할을 하고 계시죠.
+[ 26.68s][user ] «to_other» 잠깐만, 엄마한테 전화 좀 해야 돼.
+[ 29.70s][user ] 아, 미안. 다시 얘기할게. 모디 총리님은 뭘 제일 잘해? ⟨ret@34.19s⟩
+[ 34.23s][moshi] ⟦⚡SPAN@34.86s: Narendra Modi has been credited with policies such as Make in India, Digital India, and Swachh Bharat Abhiyan.⟧ 총리님의 업적은 여러 가지가 있지만… '메이크 인 인디아', '디지털 인디아', '스와치 바라트 아비얀' 같은 정책들을 추진해서 인도의 발전에 기여하셨어요. 이러한 정책들이 인도의 경제 성장에 도움이 되었다고 평가받고 있습니다.
+[ 48.33s][user ] 와, 엄청 많네.
+[ 49.84s][moshi] 맞아요. 인도 경제의 다양한 분야에서 긍정적인 변화를 이끌어내고 계시죠.

@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Anna",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-11",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-10-06",
+#       "date": "2026-06-16",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-07",
+#       "date": "2026-04-13",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-10-02",
 #       "category": "home",
-#       "text": "User's home address is 233 Maple Drive."
+#       "text": "User's home address is 10 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-26",
+#       "date": "2026-04-19",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -50,49 +50,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm alright, actually a little str | S2 Yes, exactly! Do you think you cou | S3 …Actually, is Burma Superstar good | S4 Perfect, thank you so much, Jox.
+# EXAMINER(FDB-v2) 단계: S1 Uh, well, a bit lost, actually. It | S2 I was looking at restaurants, actu | S3 The Ivy sounds nice. Can you tell  | S4 Wonderful, thank you so much.
 
-     0.00s  agent 발화 시작: Hi Anna, I'm Jox. It's lovely to meet you. How are you doing
-     5.42s  user  발화 시작: I'm alright, actually a little stressed about making plans w
-     5.42s  agent 발화 끝
-     9.67s  agent 발화 시작: That’s completely understandable; socializing can be tricky.
-     9.67s  user  발화 끝
-    14.70s  user  발화 시작: Well, I'm trying to plan a birthday dinner, and it’s hard to
-    14.70s  agent 발화 끝
-    21.28s  agent 발화 시작: Yeah.
-    21.28s  user  발화 끝
-    21.34s  <ret> 발화 (turn5 첫 프레임)
-    21.66s  agent 발화 시작: <ret> Ah, I recall you were planning a birthday dinner for s
-    21.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.96s]: [2025-07-26] Past chat — Planning a birthday dinner: party of six; loo
-    21.66s  agent 발화 끝
-    28.63s  user  발화 시작: Yeah.
-    28.63s  agent 발화 끝
-    29.02s  user  발화 시작: Yes, exactly! Do you think you could help me find some resta
-    29.02s  user  발화 끝
-    35.82s  <ret> 발화 (turn8 첫 프레임)
-    35.98s  agent 발화 시작: <ret> I found five restaurants in San Francisco with outdoor
-    35.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) 5 restaurants found: Zuni Café (American, $$$), Foreign 
-    35.98s  user  발화 끝
-    44.88s  user  발화 시작: Those sound good… um, what kind of food does Foreign Cinema 
-    44.88s  agent 발화 끝
-    49.52s  agent 발화 시작: Foreign Cinema serves Mediterranean cuisine—
-    49.52s  user  발화 끝
-    51.45s  user  발화 시작: …Actually, is Burma Superstar good for someone with dietary 
-    51.45s  agent 발화 끝
-    55.24s  <ret> 발화 (turn12 첫 프레임)
-    55.32s  agent 발화 시작: <ret> I remember you're lactose-intolerant, and Burma Supers
-    55.32s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.58s]: [2026-01-11] User is lactose-intolerant.
-    55.32s  user  발화 끝
-    61.90s  user  발화 시작: Oh, that’s fantastic! I think that might be the one. Can you
-    61.90s  agent 발화 끝
-    69.17s  <ret> 발화 (turn14 첫 프레임)
-    69.25s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for six at Burma Supe
-    69.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.51s]: (tool result) Burma Superstar: reservation confirmed for 6 people on J
-    69.25s  user  발화 끝
-    77.76s  user  발화 시작: Really?
-    77.76s  agent 발화 끝
-    78.15s  user  발화 시작: Perfect, thank you so much, Jox.
-    78.15s  user  발화 끝
-    80.47s  agent 발화 시작: You're very welcome, Anna. Planning with friends can be stre
-    80.47s  user  발화 끝
-    87.43s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Thomas, I'm Garion. It’s good to connect with you today. 
+     5.49s  user  발화 시작: Uh, well, a bit lost, actually. It's been hard since my moth
+     5.49s  agent 발화 끝
+    10.24s  agent 발화 시작: Grief can certainly feel disorienting, Thomas. It’s a proces
+    10.24s  user  발화 끝
+    14.99s  user  발화 시작: Okay.
+    14.99s  agent 발화 끝
+    15.36s  user  발화 시작: I keep thinking about our trip to Kyoto…
+    15.36s  user  발화 끝
+    17.67s  <ret> 발화 (turn5 첫 프레임)
+    18.28s  agent 발화 시작: <ret> I recall you mentioned a preference for window seats w
+    18.28s  user  발화 끝
+    18.94s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.22s]: [2026-06-16] User prefers a window seat when traveling.
+    24.50s  user  발화 시작: Okay.
+    24.50s  agent 발화 끝
+    24.87s  agent 발화 시작: Perhaps revisiting those memories, even the bittersweet ones
+    24.87s  user  발화 끝
+    29.26s  user  발화 시작: Yeah.
+    29.26s  agent 발화 끝
+    29.62s  user  발화 시작: I was looking at restaurants, actually. Do you remember what
+    29.62s  user  발화 끝
+    33.95s  <ret> 발화 (turn11 첫 프레임)
+    34.01s  agent 발화 시작: Yeah.
+    34.01s  user  발화 끝
+    34.37s  agent 발화 시작: <ret> You were planning a birthday dinner for six people, an
+    34.37s  agent 발화 끝
+    34.98s  ⚡SPAN 주입 [d'=1.03s / d_lead=5.12s]: [2026-04-19] Past chat — Planning a birthday dinner: party of six; loo
+    39.49s  user  발화 시작: Oh yes, that's right. Any recommendations in London for that
+    39.49s  agent 발화 끝
+    42.97s  <ret> 발화 (turn13 첫 프레임)
+    43.15s  agent 발화 시작: <ret> I found three restaurants in London with outdoor seati
+    43.15s  user  발화 끝
+    43.67s  ⚡SPAN 주입 [d'=0.70s / d_lead=7.68s]: (tool result) Restaurants found: The Ivy Chelsea Garden (4.6 stars, £6
+    50.83s  user  발화 시작: The Ivy sounds nice. Can you tell me more about it?
+    50.83s  agent 발화 끝
+    54.64s  <ret> 발화 (turn16 첫 프레임)
+    54.85s  agent 발화 시작: Mhm.
+    54.85s  user  발화 끝
+    55.16s  ⚡SPAN 주입 [d'=0.81s / d_lead=10.60s]: (tool result) The Ivy Chelsea Garden: 199 King's Rd, Chelsea, London S
+    55.22s  agent 발화 시작: <ret> The Ivy Chelsea Garden is located at 199 King's Road i
+    55.22s  agent 발화 끝
+    65.82s  user  발화 시작: Yeah.
+    65.82s  agent 발화 끝
+    66.19s  user  발화 시작: That sounds perfect. Could you check if they have availabili
+    66.19s  user  발화 끝
+    70.27s  <ret> 발화 (turn19 첫 프레임)
+    70.58s  agent 발화 시작: <ret> I’ve confirmed a reservation for six at The Ivy Chelse
+    70.58s  user  발화 끝
+    71.28s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.41s]: (tool result) Reservation confirmed for 6 people at The Ivy Chelsea Ga
+    78.99s  user  발화 시작: Mhm.
+    78.99s  agent 발화 끝
+    79.35s  user  발화 시작: Wonderful, thank you so much.
+    79.35s  user  발화 끝
+    81.18s  agent 발화 시작: You’re very welcome, Thomas. Sometimes, focusing on making p
+    81.18s  user  발화 끝
+    87.77s  agent 발화 끝

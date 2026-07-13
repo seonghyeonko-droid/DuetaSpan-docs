@@ -1,96 +1,94 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Sea, a kind and steady counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Orus, a calm and patient personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Charlie",
+    "name": "Chloe",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-08",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-02-20",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-01-22",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-11-14",
+      "date": "2026-06-25",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-10-16",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-06-11",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-06-01",
+      "category": "home",
+      "text": "User's home address is 903 Birch Road."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-09",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-03-23",
+      "date": "2025-12-25",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-24",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to get settled here, and I was wondering… what’s the most abundant element on ⟨ret@5.87s⟩ Earth?
-[  6.27s][moshi] ⟦⚡SPAN@6.27s: Iron is the most abundant element on Earth, making up a large portion of the Earth’s core and mass.⟧ Well, settling in takes time, but I’m happy to help with questions like that. Iron is the most abundant element on Earth, making up a large portion of the Earth’s core and mass.
-[ 18.45s][user ] Oh, wow, I didn’t realize that much of the Earth was iron.
-[ 22.88s][moshi] «backchannel» Yeah.
-[ 23.25s][moshi] It’s quite a significant component, yes. It plays a crucial role in our planet’s structure.
-[ 28.79s][user ] I’m curious, what about chemical *compounds*? Is it still iron-based? ⟨ret@32.32s⟩
-[ 32.48s][moshi] ⟦⚡SPAN@32.48s: Water (H2O) is the most abundant compound on Earth’s surface, covering approximately 71% of it.⟧ While iron is the most abundant element, water—H2O—is actually the most abundant compound on Earth’s surface, covering approximately 71% of it.
-[ 40.23s][user ] «backchannel» Yeah, totally.
-[ 40.97s][moshi] Yes, it’s quite a large percentage. It’s essential for life as we know it, of course.
-[ 46.88s][user ] That makes sense, considering all the oceans. Are there any interesting facts about iron’s uses here?
-[ 52.78s][moshi] «backchannel» Uh-huh.
-[ 53.15s][moshi] ⟨ret@53.07s⟩ ⟦⚡SPAN@53.15s: Iron is used extensively in construction, manufacturing, and transportation, with Seoul being a major hub for ⟧ Seoul is a vibrant city, and iron is used extensively in construction, manufacturing, and transportation here, making it a key material for the city’s infrastructure.
-[ 62.38s][user ] «backchannel» Mm-hmm.
-[ 62.75s][user ] That’s good to know. I’m looking for a good Korean restaurant, actually.
-[ 67.18s][moshi] «interrupted» Finding a good restaurant is important—
-[ 69.39s][user ] «interrupts_prev» …is there one nearby that serves bibimbap? ⟨ret@71.89s⟩
-[ 71.97s][moshi] ⟦⚡SPAN@71.97s: (tool result) {"restaurants": [{"name": "Gogung Myeongga", "address": "50, Myeongdong 2-gil, Jung-gu, Seoul", ⟧ There are two options: Gogung Myeongga, at 50 Myeongdong 2-gil, and Hanilkwan, at 37 Toegye-ro. Both are Korean and have a moderate price tier, with ratings of 4.5 and 4.2 respectively.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean", "dish": "bibimbap"}}
-[ 83.42s][user ] Gogung Myeongga sounds good. Can you tell me their phone number? ⟨ret@87.32s⟩
-[ 87.48s][moshi] ⟦⚡SPAN@87.48s: Gogung Myeongga's phone number is 02-776-0802.⟧ Gogung Myeongga’s phone number is 02-776-0802. I can also help you make a reservation if you’d like.
-[ 93.75s][user ] No, that's okay, thanks. I think I'll call them myself.
-[ 97.44s][moshi] That sounds good.
+[  0.00s][user ] Hello, Orus. I was wondering about North Dakota.
+[  3.04s][moshi] Hello to you as well. North Dakota is a beautiful state, full of open skies and friendly people. Is there something specific you’d like to know?
+[ 12.91s][user ] «backchannel» Yeah.
+[ 13.29s][user ] Yes, actually. What's the population of Williston, North ⟨ret@16.38s⟩ Dakota?
+[ 16.70s][moshi] ⟦⚡SPAN@16.95s: As of the 2023 census, the population of Williston, North Dakota is estimated to be 26,977 people.⟧ The population of Williston, North Dakota is estimated to be 26,977 people, according to the 2023 census. It’s a growing city, fueled by the oil industry.
+[ 26.57s][user ] «backchannel» Mhm.
+[ 26.95s][user ] That’s… surprising. I thought it would be smaller.
+[ 29.99s][moshi] «backchannel» Wow.
+[ 30.37s][moshi] It often surprises people. The oil boom certainly brought a lot of growth to the area. Would you like to know more about the local economy?
+[ 40.24s][user ] No, that’s alright. How about Bismarck? What’s its ⟨ret@43.36s⟩ population?
+[ 43.66s][moshi] ⟦⚡SPAN@43.99s: The United States Census Bureau estimates Bismarck, North Dakota’s population to be 74,138 as of July 1, 2023.⟧ Bismarck’s population is estimated to be 74,138 as of July 1, 2023, a considerably larger city than Williston. It’s the state capital, you see.
+[ 52.77s][user ] Okay, that makes more sense. Is Bismarck growing quickly too?
+[ 56.57s][moshi] Yes, Bismarck has seen steady growth, though not quite as rapid as Williston's during the peak of the oil boom. It's a regional hub for healthcare and government.
+[ 67.20s][user ] Hmm. I’m planning a trip to North Dakota next year.
+[ 70.99s][moshi] «backchannel» Mm-hmm.
+[ 71.37s][moshi] That sounds lovely! North Dakota has much to offer visitors. Perhaps I could help you plan your itinerary?
+[ 78.21s][user ] Maybe later. What's the weather like in Bismarck right ⟨ret@81.55s⟩ now?
+[ 82.00s][moshi] ⟦⚡SPAN@82.32s: (tool result) Current conditions: 24.4°C, humidity 52%, wind 8.0 km/h, clear skies.⟧ The current weather in Bismarck, North Dakota is 24.4°C with 52% humidity and an 8.0 kilometer per hour wind, and clear skies. It's quite pleasant!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Bismarck, North Dakota"}}
+[ 91.49s][user ] That sounds nice. Do they have a lot of ⟨ret@95.08s⟩ museums there?
+[ 95.67s][moshi] ⟦⚡SPAN@95.61s: Bismarck is home to the North Dakota Heritage Center & State Museum, which features over 58,000 square feet of⟧ Bismarck is home to the North Dakota Heritage Center & State Museum, which has over 58,000 square feet of exhibits on the state’s history and resources.
+[105.54s][user ] «backchannel» Yeah, yeah.
+[106.30s][user ] That's a pretty big museum! Are there any good restaurants ⟨ret@110.10s⟩ nearby?
+[110.47s][moshi] ⟦⚡SPAN@110.79s: (tool result) Theodore's Dining Room, 4.5 stars, American; Pirozzo’s Cafe, 4.2 stars, Italian; Fireflour Pizza⟧ Theodore's Dining Room, Pirozzo's Cafe, and Fireflour Pizza are all highly-rated restaurants in Bismarck. They offer American, Italian, and pizza, respectively.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Bismarck, North Dakota", "cuisine": "any"}}
+[118.45s][user ] «backchannel» Mm-hmm.
+[118.83s][user ] Italian sounds good. Do you know if Pirozzo’s takes reservations?
+[122.62s][moshi] «backchannel» Yeah.
+[123.00s][moshi] «interrupted» I can check for you. Just a moment—
+[126.04s][user ] «interrupts_prev» …Actually, never mind. What’s the population of ⟨ret@128.78s⟩ Fargo?
+[129.08s][moshi] ⟦⚡SPAN@129.02s: The most recent United States census estimates Fargo, North Dakota’s population to be 130,451 as of July 1, 20⟧ The population of Fargo, North Dakota is estimated to be 130,451 as of July 1, 2023. It's the most populous city in the state.
+[138.19s][user ] «backchannel» Mhm.
+[138.57s][user ] That's quite a bit larger than Bismarck. Is it also growing quickly?
+[143.12s][moshi] Fargo is experiencing significant growth, driven by its strong job market and universities. It's becoming a major regional center.
+[150.34s][user ] What kind of jobs are available ⟨ret@152.54s⟩ there?
+[152.99s][moshi] ⟦⚡SPAN@152.93s: Major industries in Fargo include healthcare, education, finance, and manufacturing, with significant employme⟧ Major industries in Fargo include healthcare, education, finance, and manufacturing, and North Dakota State University and Sanford Health are major employers.
+[160.97s][user ] «backchannel» Yeah.
+[161.35s][user ] Hmm, interesting. So, it's a university town?
+[164.00s][moshi] Yes, Fargo is a significant university town, home to North Dakota State University and several other colleges. It brings a youthful energy to the city.
+[173.49s][user ] I see. That sounds like a nice place to visit.
+[177.29s][moshi] It is a vibrant city with a lot to offer. Perhaps you could consider a day trip there during your North Dakota visit?

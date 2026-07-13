@@ -4,101 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Caleb",
+#     "name": "Marie",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-22",
-#       "category": "home",
-#       "text": "User's home address is 753 Maple Drive."
-#     },
-#     {
-#       "date": "2025-06-01",
+#       "date": "2026-05-21",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "home",
+#       "text": "User's home address is 504 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-25",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-04",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 버킹엄 궁전 높이가 얼마야? 런던 여행 계획 중이라. | S2 흠, 생각보다 낮네. 그럼 더 샤드는 어때? 훨씬 높은가? | S3 알았어. 좋아. 더 샤드 근처 호텔 좀 찾아 줘. 가격이 적당 | S4 삼백 파운드는 괜찮네. 힐튼 호텔에 다음 주 금요일부터 이박 
 
-     0.00s  user  발화 시작: 버킹엄 궁전 높이가 얼마야? 런던 여행 계획 중이라.
-     3.50s  <ret> 발화 (turn1 첫 프레임)
-     3.66s  agent 발화 시작: <ret> 음, 버킹엄 궁전은 해발 십육 미터, 혹은 오십이 피트에 위치해 있어요. 런던 중심부에 있는 곳이
-     3.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: Buckingham Palace has an elevation of 16 metres, 52 feet above sea lev
-     3.66s  user  발화 끝
-    10.51s  user  발화 시작: 응.
-    10.51s  agent 발화 끝
-    10.97s  user  발화 시작: 흠, 생각보다 낮네. 그럼 더 샤드는 어때? 훨씬 높은가?
-    10.97s  user  발화 끝
-    15.08s  agent 발화 시작: 네.
-    15.08s  user  발화 끝
-    15.14s  <ret> 발화 (turn5 첫 프레임)
-    15.54s  agent 발화 시작: <ret> 더 샤드는 훨씬 높아요. 삼백구 점 육 미터에 달합니다.
-    15.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.11s]: 309.6 metres
-    15.54s  agent 발화 끝
-    19.65s  user  발화 시작: 어.
-    19.65s  agent 발화 끝
-    20.11s  user  발화 시작: 알았어. 좋아. 더 샤드 근처 호텔 좀 찾아 줘. 가격이 적당한 곳으로.
-    20.11s  user  발화 끝
-    25.59s  agent 발화 시작: 예.
-    25.59s  user  발화 끝
-    25.73s  <ret> 발화 (turn9 첫 프레임)
-    26.05s  agent 발화 시작: <ret> 더 샤드 근처에 두 군데 호텔을 찾았어요. 샹그릴라 호텔은 밤에 사백오십 파운드 정도이고, 힐튼 
-    26.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.23s]: (tool result) The Shangri-La Hotel at The Shard, 319-332 St Thomas St,
-    26.05s  agent 발화 끝
-    34.27s  user  발화 시작: 어.
-    34.27s  agent 발화 끝
-    34.73s  user  발화 시작: 삼백 파운드는 괜찮네. 힐튼 호텔에 다음 주 금요일부터 이박 예약해 줘.
-    34.73s  user  발화 끝
-    39.36s  <ret> 발화 (turn12 첫 프레임)
-    39.76s  agent 발화 시작: <ret> 좋아요! 힐튼 런던 더 샤드 호텔에 칠월 십칠일부터 십구일까지 이박을 예약했고, 총 육백 파운드입
-    39.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.51s]: (tool result) Confirmation ID: HX729KL. Hilton London The Shard, 2 nig
-    39.76s  user  발화 끝
-    50.27s  agent 발화 끝
+     0.00s  user  발화 시작: 위도 삼십이 점 영삼 삼삼 삼, 경도 백십팔 점 칠팔팔팔인 곳이 어디야?
+     5.71s  agent 발화 시작: 네.
+     5.71s  user  발화 끝
+     6.17s  <ret> 발화 (turn2 첫 프레임)
+     6.18s  agent 발화 시작: <ret> 거기는 캘리포니아주 샌디에이고, 유니버시티 애비뉴 이이공팔에 있어. 우편번호는 구이일공사야. 캘리
+     6.18s  agent 발화 끝
+     6.47s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.66s]: (tool result) {"address": "2208 University Ave, San Diego, CA 92104", 
+    12.84s  user  발화 시작: 어.
+    12.84s  agent 발화 끝
+    13.32s  user  발화 시작: 그 근처에 괜찮은 커피숍 있어?
+    13.32s  user  발화 끝
+    15.63s  <ret> 발화 (turn6 첫 프레임)
+    15.69s  agent 발화 시작: 아.
+    15.69s  user  발화 끝
+    16.17s  agent 발화 시작: <ret> 리빙 브루 커피가 이 점 육 마일 떨어져 있는데, 엘 카혼 불러바드 이이이일 번지에 있고, 평점은
+    16.17s  agent 발화 끝
+    16.76s  ⚡SPAN 주입 [d'=1.14s / d_lead=10.94s]: {"name": "Living Brew Coffee", "address": "2121 El Cajon Blvd Ste 109,
+    27.11s  user  발화 시작: 좋아, 그럼 그 커피숍까지 걸어가는 길 찾아 줘.
+    27.11s  agent 발화 끝
+    30.90s  <ret> 발화 (turn9 첫 프레임)
+    30.91s  agent 발화 시작: 예.
+    30.91s  user  발화 끝
+    31.20s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.89s]: (tool result) {"distance": 0.6, "duration": 12, "instructions": Walk w
+    31.39s  agent 발화 시작: <ret> 이 점 육 마일 걸어가면, 대략 십이 분 걸릴 거야. 유니버시티 애비뉴를 서쪽으로 걸어가서 길먼 
+    31.39s  agent 발화 끝
+    43.28s  agent 발화 끝

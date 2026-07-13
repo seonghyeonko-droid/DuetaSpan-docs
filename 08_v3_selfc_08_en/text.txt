@@ -1,74 +1,71 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Taris, a kind and steady personal guide who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Neaus, a thoughtful and soft-spoken wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Quinn",
+    "name": "Thomas",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
+      "date": "2026-05-23",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-03-22",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-02-09",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "home",
+      "text": "User's home address is 62 Oak Avenue."
+    },
+    {
+      "date": "2026-01-15",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-05-09",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-02-07",
-      "category": "home",
-      "text": "User's home address is 697 Birch Road."
-    },
-    {
-      "date": "2025-10-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-08-25",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-07-22",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-18",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-24",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a good Italian restaurant nearby, please.
-[  4.83s][moshi] «backchannel» Yeah.
-[  5.31s][moshi] ⟨ret@4.99s⟩ ⟦⚡SPAN@5.31s: Seoul has many Italian restaurants; Trattoria da Maria is a highly-rated option at 68, Itaewon-ro 54-gil, Yong⟧ Seoul has a lot of Italian restaurants, and Trattoria da Maria, at 68, Itaewon-ro 54-gil in Yongsan-gu, is a popular choice.
-[ 15.45s][user ] Oh, actually—I meant near Gangnam Station, not Itaewon. ⟨ret@19.07s⟩
-[ 19.31s][moshi] ⟦⚡SPAN@19.31s: (tool result) {"restaurants": [{"name": "La Casa", "address": "162-1 Seocho-dong, Seocho-gu, Seoul", "cuisine"⟧ There’s La Casa, an Italian restaurant at 162-1 Seocho-dong, Seocho-gu in Seoul.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Gangnam Station"}}
-[ 25.11s][user ] That sounds nice. Can you reserve a…
-[ 28.49s][user ] …table for two at 7 PM tonight?
-[ 31.87s][moshi] «backchannel» Exactly.
-[ 32.35s][moshi] ⟨ret@32.11s⟩ ⟦⚡SPAN@32.35s: (tool result) {"confirmation id": "LC2026071019002"}⟧ I’ve reserved a table for two at La Casa for 7 PM tonight; your confirmation ID is LC2026071019002.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Casa", "time": "19:00", "party_size": 2}}
+[  0.00s][user ] I need to find a good hospital, uh, a clinic actually, near Seoul Station.
+[  5.29s][moshi] «backchannel» Mhm.
+[  5.67s][moshi] ⟨ret@5.40s⟩ ⟦⚡SPAN@5.81s: Seoul National University Hospital is located at 101, Bundang-gil, Jongno-gu, Seoul, South Korea and is a 1,56⟧ I see you're looking for a clinic near Seoul Station; Seoul National University Hospital is a large tertiary care hospital located at 101, Bundang-gil, Jongno-gu, Seoul.
+[ 15.49s][moshi] It’s a very well-regarded institution, if you're seeking comprehensive care.
+[ 19.26s][user ] That sounds good. Can you find me a nearby cafe ⟨ret@23.00s⟩ then?
+[ 23.42s][moshi] ⟦⚡SPAN@23.36s: (tool result) “스타벅스 서울대학교병원점”, “Starbucks Seoul National University Hospital Branch”, “3.8”, “4.1”, “101, Bund⟧ Starbucks Seoul National University Hospital Branch is nearby, located at 101, Bundang-gil, Jongno-gu, Seoul.
+      CALL: {"function": "map_search_places", "arguments": {"query": "cafe", "location": "Seoul National University Hospital, 101, Bundang-gil, Jongno-gu, Seoul"}}
+[ 28.71s][moshi] It has a rating of 3.8 out of 5.
+[ 32.11s][user ] Okay, that’s perfect. Could you get directions from the hospital to that Starbucks?
+[ 37.02s][moshi] «backchannel» Right.
+[ 37.39s][moshi] ⟨ret@37.38s⟩ The ⟦⚡SPAN@37.94s: (tool result) “Walk approximately 170 meters”, “1-2 minutes”⟧ directions are to walk approximately 170 meters; it should take about 1-2 minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Seoul National University Hospital, 101, Bundang-gil, Jongno-gu, Seoul", "destination": "Starbucks Seoul National University Hospital Branch, 101, Bundang-gil, Jongno-gu, Seoul", "mode": "walking"}}
+[ 42.68s][moshi] Sometimes a short walk can be grounding, even amidst worry.

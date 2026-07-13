@@ -1,83 +1,98 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Ana, a gentle and reflective wellness coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Haris, a calm and patient life coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Jamie",
+    "name": "Elena",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
+    "nationality": "American",
+    "gender": "female",
     "age_range": "early 30s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-11-07",
-      "category": "home",
-      "text": "User's home address is 960 Oak Avenue."
+      "date": "2026-06-18",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-10-14",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-07-05",
+      "date": "2026-02-05",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-04",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-12-23",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-11-03",
+      "category": "home",
+      "text": "User's home address is 203 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-29",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-05",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-11-27",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
       "date": "2025-11-05",
-      "title": "Apartment hunting downtown",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-14",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Ana, I was wondering, what is the name of the Korean alphabet?
-[  4.85s][moshi] «backchannel» Mhm.
-[  5.22s][moshi] ⟨ret@4.98s⟩ ⟦⚡SPAN@5.22s: Hangul is the native alphabet of the Korean language, and it was created in 1443 by King Sejong the Great.⟧ The native alphabet of the Korean language is called Hangul—it was actually created in fourteen forty-three by King Sejong the Great. It’s a fascinating piece of linguistic history.
-[ 15.66s][user ] «backchannel» Okay.
-[ 16.03s][user ] That's interesting! Is it a phonetic alphabet?
-[ 18.64s][moshi] Yes, it is! Hangul is remarkably phonetic, meaning the shapes of the letters reflect the sounds they represent. This makes it quite logical to learn.
-[ 27.96s][user ] I've heard it's relatively easy to learn compared to Chinese characters.
-[ 32.06s][moshi] «backchannel» Uh-huh.
-[ 32.44s][moshi] ⟨ret@32.36s⟩ You’ve ⟦⚡SPAN@33.24s: Compared to the thousands of Chinese characters, Hangul consists of only twenty-four basic letters, making it ⟧ heard correctly. Compared to the thousands of Chinese characters, Hangul consists of only twenty-four basic letters, making it significantly easier to pick up. Many learners find its structure very intuitive.
-[ 43.99s][user ] Twenty-four letters, that’s not bad at all. What are some of the basic vowel sounds.
-[ 49.59s][moshi] «backchannel» Mhm.
-[ 49.96s][moshi] «interrupted» Well, the basic vowels are ɑ, ə, e, i, o, and u—
-[ 54.43s][user ] «interrupts_prev» …but is Hangul still used today, or is it mostly replaced by English ⟨ret@59.33s⟩ now?
-[ 59.65s][moshi] ⟦⚡SPAN@59.65s: Hangul is the official writing system in both North and South Korea, and it’s used in all aspects of life, fro⟧ Hangul remains the official writing system in both North and South Korea—it’s used in everything from newspapers to social media. It's very much alive and well!
+[  0.00s][user ] Who is the big prime minister or president in ⟨ret@3.80s⟩ India?
+[  4.13s][moshi] ⟦⚡SPAN@4.46s: Ram Nath Kovind served as the 14th President of India from 2017 to 2022.⟧ India’s fourteenth president was Ram Nath Kovind, serving from 2017 until 2022. It’s good to be curious about global leaders.
+[ 12.40s][user ] Oh, okay. And who is the current one then? ⟨ret@15.93s⟩
+[ 16.12s][moshi] ⟦⚡SPAN@16.23s: Droupadi Murmu is the current and fifteenth President of India, assuming office on 25 July 2022.⟧ The current president is Droupadi Murmu, who took office on July 25th, 2022. Maintaining awareness is a great habit.
+[ 23.98s][user ] Right. Um, what about the prime minister?
+[ 26.87s][moshi] The current prime minister of India is Narendra Modi. He’s been in office since 2014.
+[ 33.07s][user ] «backchannel» Yeah.
+[ 33.49s][moshi] Focusing on current events is a healthy way to stay informed.
+[ 38.04s][user ] I see. What’s the weather like in New Delhi right ⟨ret@42.15s⟩ now?
+[ 42.58s][moshi] ⟦⚡SPAN@42.86s: (tool result) Current conditions in New Delhi are 32.0°C, humidity 58%, wind 8.9 km/h.⟧ Right now in New Delhi, it’s 32.0 degrees Celsius, with 58 percent humidity and an 8.9 kilometer per hour wind. It’s quite warm.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New Delhi"}}
+[ 52.09s][user ] «backchannel» Yeah, totally.
+[ 52.92s][user ] «to_other» Did you hear that? It’s almost 33 degrees!
+[ 56.23s][user ] Sorry about that. Can you find me some good Indian restaurants ⟨ret@60.95s⟩ nearby?
+[ 61.19s][moshi] ⟦⚡SPAN@61.13s: (tool result) Taj Mahal Restaurant: 4.5 stars, 0.5 km. Spice Route: 4.2 stars, 1.2 km.⟧ Taj Mahal Restaurant is 4.5 stars and 0.5 kilometers away. Spice Route has 4.2 stars and is 1.2 kilometers.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Indian"}}
+[ 69.04s][user ] Taj Mahal sounds good. Can you reserve a table for two there ⟨ret@74.21s⟩ tonight?
+[ 74.42s][moshi] ⟦⚡SPAN@74.51s: (tool result) Reservation confirmed for 2 people at Taj Mahal Restaurant, today at 7:00 PM. Confirmation ID: T⟧ A table for two at Taj Mahal Restaurant is confirmed for tonight at 7:00 PM. Your confirmation ID is TM7892.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Taj Mahal Restaurant", "date": "today", "time": "7:00 PM", "party_size": "2"}}
+[ 82.69s][user ] Perfect, thank you.
+[ 83.93s][moshi] You’re very welcome. It's excellent to plan a nice evening.
+[ 88.06s][user ] Actually, what time is sunset ⟨ret@90.21s⟩ today?
+[ 90.54s][moshi] It's ⟦⚡SPAN@91.21s: (tool result) It is Friday, July 10, 2026 at 3:58 PM in Asia/Seoul right now. Sunset is at 8:15 PM.⟧ currently 3:58 PM, and sunset will be at 8:15 PM tonight. That gives you time to relax before dinner.
+      CALL: {"function": "get_time", "arguments": {}}

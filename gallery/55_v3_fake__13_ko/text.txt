@@ -1,70 +1,63 @@
 v3_fake__13_ko src=nq style=v1
-SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 호기심 많고 공감적인 라이프 코치 모라르입니다. <system>
+SYSTEM: <system> 당신은 시앤이며, 슬픔과 변화를 겪는 사람들을 돕는 호기심 많고 공감하며 지지적인 조언자입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "도아",
+    "name": "준완",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-09",
+      "date": "2026-06-21",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
+      "text": "User is planning a trip to Iceland in December."
     },
     {
-      "date": "2025-08-04",
+      "date": "2025-11-02",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-08-15",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-04",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-06-03",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "date": "2025-05-28",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-20",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-12",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-12-15",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 파울라 압둘의 'Opposites Attract'에 누가 함께 불렀어? ⟨ret@3.28s⟩
-[  3.44s][moshi] ⟦⚡SPAN@3.44s: Marv Gunn sang with Paula Abdul on "Opposites Attract".⟧ 파울라 압둘의 'Opposites Attract'에는 마브 건이 함께 불렀답니다. 꽤 유명한 듀엣이죠?
-[  8.85s][moshi] ⟨ret@8.77s⟩ ⟦⚡SPAN IRRELEVANT@8.85s: The average high temperature in Ulaanbaatar, Mongolia in July is 22.4°C, with humidity around 60%.⟧ 요즘 날씨가 많이 더운데, 시원한 곳으로 여행 가고 싶어지네요.
-[ 13.28s][user ] «backchannel» 어.
-[ 13.77s][user ] 아, 맞아. 혹시 이번…
-[ 15.73s][user ] …주 토요일에 서울 날씨 ⟨ret@17.87s⟩ 어때?
-[ 18.19s][moshi] ⟦⚡SPAN@18.19s: (tool result) Current conditions in Seoul are 28.0°C, humidity 78%, wind 4.1 km/h.⟧ 서울 이번 주 토요일 날씨는 섭씨 이십팔도에 습도 칠십팔퍼센트, 바람은 시속 사 점 일킬로미터로 예상됩니다.
+[  0.00s][user ] 하우 아이 멧 유어 마더에 나오는 루시 역을 누가 ⟨ret@4.33s⟩ 맡았지?
+[  4.88s][moshi] ⟦⚡SPAN@5.37s: Byrnes played Lucy Whelan in the sitcom How I Met Your Mother.⟧ 하우 아이 멧 유어 마더에서 루시 Whelan 역은 Byrnes 씨가 맡았답니다. 재밌는 드라마죠?
+[ 11.23s][moshi] ⟨ret@11.19s⟩ 날씨 얘기를 ⟦⚡SPAN IRRELEVANT@12.69s: The average high temperature in Reykjavik, Iceland in July is 13.1°C.⟧ 잠깐 하자면, 레이캬비크 칠월 평균 최고 기온은 십삼 점 일도 정도래요.
+[ 17.58s][user ] «backchannel» 그치.
+[ 18.07s][user ] 아, 레이캬비크는 너무 추울 것 같아. 혹시 서울 날씨는 어때?
+[ 22.95s][moshi] «backchannel» 음.
+[ 23.44s][moshi] ⟨ret@23.17s⟩ 지금 ⟦⚡SPAN@24.48s: (tool result) Current weather in Seoul: 28.0°C, humidity 65%, wind 3.2 km/h.⟧ 서울 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터 정도예요. 훨씬 낫죠?
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 25.57s][moshi] 혹시 주말에 서울에서 특별한 계획 있으신가요?
+[ 30.27s][user ] 훨씬 나아. 서울에서 시원한 빙수 맛집 좀 알려줘.
+[ 34.18s][moshi] 서울에서 빙수 맛집을 찾으시는군요. 어떤 동네를 선호하시나요?

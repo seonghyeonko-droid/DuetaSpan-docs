@@ -4,111 +4,111 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Max",
+#     "name": "Riley",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-05-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
+#     },
+#     {
+#       "date": "2026-02-02",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "home",
-#       "text": "User's home address is 979 Birch Road."
-#     },
-#     {
-#       "date": "2026-01-06",
+#       "date": "2026-01-04",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2025-10-13",
+#       "date": "2025-06-22",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-13",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-06",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-18",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Brona… that’s a really unusual nam | S2 Uh, work mostly. It’s just… endles | S3 Not really. I’ve tried reading, bu | S4 I guess so. What do I need to do?
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi. Neana… that’s a pretty nam | S2 I don’t mind paying a bit more for | S3 Lively, definitely. I want to be w | S4 Equinox… that sounds pricey.
 
-     0.00s  agent 발화 시작: Hello Max, it’s lovely to meet you. I’m Brona, and I help pe
-     7.65s  user  발화 시작: Brona… that’s a really unusual name. Are you, like, a real p
-     7.65s  agent 발화 끝
-    11.83s  agent 발화 시작: That’s a fair question, Max. I’m designed to offer support, 
-    11.83s  user  발화 끝
-    19.48s  user  발화 시작: Yeah, yeah.
-    19.48s  agent 발화 끝
-    20.17s  user  발화 시작: Right. Well, I’ve been having trouble sleeping lately, and a
-    20.17s  user  발화 끝
-    28.52s  agent 발화 시작: It sounds like you're carrying a lot right now, Max. Stress 
-    28.52s  user  발화 끝
-    38.61s  user  발화 시작: Uh, work mostly. It’s just… endless. Deadlines, emails, meet
-    38.61s  agent 발화 끝
-    46.61s  agent 발화 시작: Yeah.
-    46.61s  user  발화 끝
-    46.96s  agent 발화 시작: That’s a very common experience, Max. When our minds race, i
-    46.96s  agent 발화 끝
-    57.04s  user  발화 시작: Not really. I’ve tried reading, but even then, I’m just thin
-    57.04s  agent 발화 끝
-    62.26s  agent 발화 시작: Okay.
-    62.26s  user  발화 끝
-    62.61s  agent 발화 시작: It's understandable that reading isn't providing the escape 
-    62.61s  agent 발화 끝
-    71.31s  user  발화 시작: Right.
-    71.31s  agent 발화 끝
-    71.65s  agent 발화 시작: They can be a simple way to signal to your body that it’s ti
-    71.65s  user  발화 끝
-    80.70s  user  발화 시작: Yeah.
-    80.70s  agent 발화 끝
-    81.05s  user  발화 시작: I guess so. What do I need to do?
-    81.05s  user  발화 끝
-    84.18s  agent 발화 시작: Simply find a comfortable position, either sitting or lying 
-    84.18s  user  발화 끝
-    94.26s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Riley, welcome to the city! I'm Neana.
+     2.99s  user  발화 시작: Oh, hi. Neana… that’s a pretty name. What exactly *do* you h
+     2.99s  agent 발화 끝
+     8.22s  agent 발화 시작: Yeah.
+     8.22s  user  발화 끝
+     8.59s  agent 발화 시작: I’m a personal guide, really. Anything from finding the best
+     8.59s  agent 발화 끝
+    16.43s  user  발화 시작: Yeah.
+    16.43s  agent 발화 끝
+    16.80s  user  발화 시작: Hmm. I’m mostly worried about finding a good gym. Something 
+    16.80s  user  발화 끝
+    21.66s  agent 발화 시작: That’s a very common concern when moving somewhere new. What
+    21.66s  user  발화 끝
+    28.01s  user  발화 시작: Yeah.
+    28.01s  agent 발화 끝
+    28.38s  user  발화 시작: I lift, mostly. Free weights are a must, and I like a good p
+    28.38s  user  발화 끝
+    33.98s  agent 발화 시작: Power racks can be hard to find in smaller spaces. Are you t
+    33.98s  user  발화 끝
+    42.57s  user  발화 시작: I don’t mind paying a bit more for space and good equipment.
+    42.57s  agent 발화 끝
+    48.55s  agent 발화 시작: I understand completely. Waiting for equipment can really di
+    48.55s  user  발화 끝
+    56.39s  user  발화 시작: …Actually, before we get into specific gyms, could you tell 
+    56.39s  agent 발화 끝
+    62.74s  agent 발화 시작: San Francisco is a city of distinct neighborhoods, each with
+    62.74s  user  발화 끝
+    71.32s  user  발화 시작: Uh-huh.
+    71.32s  agent 발화 끝
+    71.70s  user  발화 시작: Lively, definitely. I want to be where things are happening.
+    71.70s  user  발화 끝
+    75.43s  agent 발화 시작: That narrows things down nicely. North Beach and the Mission
+    75.43s  user  발화 끝
+    82.90s  user  발화 시작: Right.
+    82.90s  agent 발화 끝
+    83.27s  agent 발화 시작: North Beach has a strong Italian heritage, with lots of cafe
+    83.27s  user  발화 끝
+    94.48s  user  발화 시작: Yeah.
+    94.48s  agent 발화 끝
+    94.85s  user  발화 시작: Murals sound cool. Is the Mission safe? I’ve heard things…
+    94.85s  user  발화 끝
+    98.59s  agent 발화 시작: Right.
+    98.59s  user  발화 끝
+    98.96s  agent 발화 시작: Safety is always a valid concern in a new city, Riley. The M
+    98.96s  agent 발화 끝
+   109.41s  user  발화 시작: Okay, good. And what about gyms *in* the Mission?
+   109.41s  agent 발화 끝
+   112.78s  agent 발화 시작: There are some great options in the Mission, actually. Cross
+   112.78s  user  발화 끝
+   124.73s  user  발화 시작: Yeah.
+   124.73s  agent 발화 끝
+   125.10s  user  발화 시작: Equinox… that sounds pricey.
+   125.10s  user  발화 끝
+   126.59s  agent 발화 시작: Equinox is definitely on the higher end of the price scale, 
+   126.59s  user  발화 끝
+   135.18s  agent 발화 시작: Perhaps we could explore some more moderately priced options
+   135.18s  agent 발화 끝
+   141.53s  user  발화 시작: Yeah, let's do that. Something with good reviews, but not…cr
+   141.53s  agent 발화 끝
+   145.64s  user  발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "소별",
+#     "name": "도민",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,53 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2026-03-22",
+#       "date": "2026-05-09",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-31",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-01-25",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-11-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "text": "User is planning a trip to Iceland in December."
 #     },
 #     {
-#       "date": "2025-06-19",
+#       "date": "2025-11-11",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-06",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-01-09",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -68,41 +60,20 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 친구 사귀는 걸 도와주시는 건가요? | S2 아니, 그런 건 아니에요. 그냥… 기회가 없어요. | S3 글쎄요… 회사 다니고, 주말에는 집에서 쉬거나 가끔 친구 만나 | S4 그런 것도 생각해 봤는데… 좀 어색할 것 같아서요.
 
-     0.00s  agent 발화 시작: 소별 씨, 안녕하세요. 저는 제아우스라고 해요. 소별 씨의 관계, 사회생활을 편안하게 만들어 드리는 역할을 
-     7.86s  user  발화 시작: 네.
-     7.86s  agent 발화 끝
-     8.35s  user  발화 시작: 혹시 친구 사귀는 걸 도와주시는 건가요?
-     8.35s  user  발화 끝
-    11.30s  agent 발화 시작: 네, 소별 씨. 친구 관계에서 어려움을 느끼시는 분들을 많이 만나 뵙고 있어요. 어떤 점이 가장 힘드신가요?
-    11.30s  user  발화 끝
-    19.16s  user  발화 시작: 네.
-    19.16s  agent 발화 끝
-    19.65s  user  발화 시작: 음… 저는 새로운 사람을 잘 못 만나는 것 같아요.
-    19.65s  user  발화 끝
-    24.08s  agent 발화 시작: 새로운 사람을 만나는 게 어려우시군요. 혹시 어떤 상황에서 특히 그런 어려움을 느끼시는지 좀 더 자세히 말씀
-    24.08s  user  발화 끝
-    33.41s  user  발화 시작: 네.
-    33.41s  agent 발화 끝
-    33.90s  agent 발화 시작: 혹시 사람들 앞에서 말하는 것이 어렵거나, 먼저 다가가기가 망설여지시는 건 아닐까요? 아니면, 어떤 대화를 
-    33.90s  user  발화 끝
-    43.24s  user  발화 시작: 아니, 그런 건 아니에요. 그냥… 기회가 없어요.
-    43.24s  agent 발화 끝
-    46.68s  agent 발화 시작: 기회가 없다고 느끼시는군요. 혹시 평소에 어떤 활동을 하시면서 새로운 사람들을 만날 가능성이 있을지 생각해 
-    46.68s  user  발화 끝
-    54.05s  user  발화 시작: 네네.
-    54.05s  agent 발화 끝
-    54.54s  user  발화 시작: 글쎄요… 회사 다니고, 주말에는 집에서 쉬거나 가끔 친구 만나요.
-    54.54s  user  발화 끝
-    58.96s  agent 발화 시작: 맞아요.
-    58.96s  user  발화 끝
-    59.45s  agent 발화 시작: 회사나 친구분들과의 만남 외에는 새로운 사람을 만날 기회가 별로 없으시군요. 혹시 관심 있는 분야의 모임이나
-    59.45s  agent 발화 끝
-    70.26s  user  발화 시작: 예.
-    70.26s  agent 발화 끝
-    70.76s  user  발화 시작: 그런 것도 생각해 봤는데… 좀 어색할 것 같아서요.
-    70.76s  user  발화 끝
-    74.69s  agent 발화 시작: 어색함 때문에 망설여지시는군요. 새로운 환경에 적응하는 건 당연히 어색할 수 있어요. 하지만 용기를 내서 한
-    74.69s  user  발화 끝
-    86.48s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 도민님. 저는 페아나예요. 여행과 휴식 계획을 도와드리는 에이전트랍니다.
+     4.82s  user  발화 시작: 음.
+     4.82s  agent 발화 끝
+     5.36s  user  발화 시작: 혹시 여행 말고도 다른 것도 도와주세요? 좀 복잡한 일이 있어서요.
+     5.36s  user  발화 끝
+    10.72s  agent 발화 시작: 어떤 복잡한 일이신가요? 편하게 말씀해 주세요. 제가 도울 수 있는 부분이 있다면 최선을 다해 볼게요.
+    10.72s  user  발화 끝
+    18.76s  user  발화 시작: 음… 사실 다음 달에 부모님 결혼 기념일을 챙겨야 하는데, 뭘 해드리면 좋아하실지 감이 안 와서요.
+    18.76s  agent 발화 끝
+    26.79s  agent 발화 시작: 부모님 결혼 기념일이라니, 정말 뜻깊은 일이죠. 부모님은 평소에 어떤 걸 좋아하시는지, 어떤 시간을 함께 보
+    26.79s  user  발화 끝
+    36.98s  user  발화 시작: 응.
+    36.98s  agent 발화 끝
+    37.51s  agent 발화 시작: 부모님 취향을 알면 더 좋은 선물을 고를 수 있을 것 같아요. 혹시 특별히 싫어하시는 건 있으신가요?
+    37.51s  user  발화 끝
+    46.09s  agent 발화 끝

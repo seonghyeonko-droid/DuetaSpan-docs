@@ -4,123 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Léa",
+#     "name": "Remy",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
+#       "date": "2026-04-23",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-02-05",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-02-12",
+#       "date": "2025-11-24",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "date": "2025-08-29",
+#       "category": "home",
+#       "text": "User's home address is 527 Maple Drive."
 #     },
 #     {
-#       "date": "2025-08-13",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2025-08-07",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-09",
-#       "title": "Researching a used car",
+#       "date": "2026-02-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
+#       "date": "2025-11-10",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-15",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-19",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 But what exactly does “planning ti | S2 Hmm… tranquility, I think. Somewhe | S3 A walking tour… that actually soun | S4 Do you think… well, could I get a 
 
-     0.00s  agent 발화 시작: Hello Léa, it’s lovely to meet you. I’m Sano, and I help peo
-     6.69s  user  발화 시작: But what exactly does “planning time off” *mean*?
-     6.69s  agent 발화 끝
-     9.51s  agent 발화 시작: It means helping you design a break that truly suits you—con
-     9.51s  user  발화 끝
-    16.91s  user  발화 시작: Mm-hmm.
-    16.91s  agent 발화 끝
-    17.26s  user  발화 시작: Well, I’m feeling completely overwhelmed at work. I just nee
-    17.26s  user  발화 끝
-    21.84s  agent 발화 시작: Mhm.
-    21.84s  user  발화 끝
-    22.19s  agent 발화 시작: That sounds incredibly stressful, Léa. Escaping is a wonderf
-    22.19s  agent 발화 끝
-    29.94s  user  발화 시작: I was thinking maybe a trip… somewhere completely different.
-    29.94s  agent 발화 끝
-    34.52s  agent 발화 시작: Somewhere different sounds perfect. What kind of experience 
-    34.52s  user  발화 끝
-    40.50s  user  발화 시작: Hmm… tranquility, I think. Somewhere I can just *be*. I have
-    40.50s  agent 발화 끝
-    46.84s  agent 발화 시작: I understand completely. It’s vital to prioritize moments of
-    46.84s  user  발화 끝
-    52.48s  user  발화 시작: Right.
-    52.48s  agent 발화 끝
-    52.83s  user  발화 시작: A retreat… like yoga or meditation? I’m not sure I’m that… f
-    52.83s  user  발화 끝
-    57.06s  agent 발화 시작: Retreats come in many forms, Léa. It could be a quiet cottag
-    57.06s  user  발화 끝
-    64.81s  user  발화 시작: A walking tour… that actually sounds nice. Somewhere with be
-    64.81s  agent 발화 끝
-    68.68s  agent 발화 시작: That’s a lovely thought. Perhaps somewhere with rolling hill
-    68.68s  user  발화 끝
-    72.91s  user  발화 시작: Actually, you know, I was reading about Kyoto in Japan. It’s
-    72.91s  agent 발화 끝
-    78.19s  agent 발화 시작: Kyoto is a truly special place, renowned for its serenity an
-    78.19s  user  발화 끝
-    82.42s  user  발화 시작: Right.
-    82.42s  agent 발화 끝
-    82.77s  user  발화 시작: Do you think… well, could I get a sense of how much a trip l
-    82.77s  user  발화 끝
-    89.46s  agent 발화 시작: A trip to Kyoto could cost around three thousand five hundre
-    89.46s  user  발화 끝
-    96.51s  user  발화 시작: Wow, that’s… a bit more than I expected.
-    96.51s  agent 발화 끝
-    99.32s  agent 발화 시작: It is an investment, Léa, but one that could offer a profoun
-    99.32s  user  발화 끝
-   108.48s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Remy, it’s wonderful to connect with you. I’m Ialo, an
+     8.40s  user  발화 시작: Yeah.
+     8.40s  agent 발화 끝
+     8.75s  user  발화 시작: Oh, hi Ialo. That sounds… nice. I'm just feeling really over
+     8.75s  user  발화 끝
+    14.35s  agent 발화 시작: Mm-hmm.
+    14.35s  user  발화 끝
+    14.70s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Remy. Wo
+    14.70s  agent 발화 끝
+    22.40s  user  발화 시작: Welll… I think I just need a break. A real one. Somewhere co
+    22.40s  agent 발화 끝
+    27.30s  agent 발화 시작: A change of scenery can do wonders. When you imagine that br
+    27.30s  user  발화 끝
+    35.35s  user  발화 시작: Exactly.
+    35.35s  agent 발화 끝
+    35.70s  user  발화 시작: [sigh] I don't know… somewhere warm, I guess. And not too ex
+    35.70s  user  발화 끝
+    40.60s  agent 발화 시작: Yeah.
+    40.60s  user  발화 끝
+    40.95s  agent 발화 시작: "Easy" sounds perfect, Remy. Sometimes the best escapes are 
+    40.95s  agent 발화 끝
+    51.45s  agent 발화 끝

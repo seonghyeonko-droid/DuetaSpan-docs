@@ -4,134 +4,171 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Hugo",
+#     "name": "Maya",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-01-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2025-12-11",
+#       "date": "2025-08-10",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-11-27",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-08-07",
+#       "category": "home",
+#       "text": "User's home address is 827 Birch Road."
 #     },
 #     {
-#       "date": "2025-08-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-07-26",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-07-05",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-25",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about Malaysia  | S2 Sure, how many Boeing 777s are cur | S3 Clear skies. That makes it even st | S4 Shilla Seoul… sounds fancy. How mu
+# EXAMINER(FDB-v2) 단계: S1 Hey Bror, I'm trying to remember w | S2 Yeah, I'm curious if it’s a common | S3 The President’s Entrance Scholarsh | S4 That's a big city. Is it hotter th
 
-     0.00s  user  발화 시작: I was just reading about Malaysia Airlines Flight 370. It’s 
-     4.37s  agent 발화 시작: It truly is a deeply unsettling event, and the uncertainty s
-     4.37s  user  발화 끝
-    11.64s  user  발화 시작: Yeah.
-    11.64s  agent 발화 끝
-    12.01s  user  발화 시작: Do you happen to know what kind of plane it was? I’m curious
-    12.01s  user  발화 끝
-    17.83s  agent 발화 시작: Yeah.
-    17.83s  user  발화 끝
-    18.03s  <ret> 발화 (turn5 첫 프레임)
-    18.19s  agent 발화 시작: <ret> The aircraft used for that flight was a Boeing 777-200
-    18.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.19s]: The Boeing 777-200ER, often nicknamed the "Triple Seven", was the airc
-    18.19s  agent 발화 끝
-    24.38s  user  발화 시작: Yeah.
-    24.38s  agent 발화 끝
-    24.74s  user  발화 시작: “Triple Seven,” huh? That's a good nickname. I wonder how ma
-    24.74s  user  발화 끝
-    30.56s  agent 발화 시작: Yeah.
-    30.56s  user  발화 끝
-    30.93s  agent 발화 시작: That's a natural question, given the circumstances. Perhaps 
-    30.93s  agent 발화 끝
-    36.38s  user  발화 시작: Sure, how many Boeing 777s are currently in service worldwid
-    36.38s  agent 발화 끝
-    39.70s  <ret> 발화 (turn11 첫 프레임)
-    40.02s  agent 발화 시작: <ret> There are currently one thousand six hundred and twent
-    40.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: (tool result) As of early 2024, there were 1,623 Boeing 777 aircraft i
-    40.02s  user  발화 끝
-    51.67s  user  발화 시작: Yeah.
-    51.67s  agent 발화 끝
-    52.03s  user  발화 시작: Wow, over sixteen hundred. That’s a lot.
-    52.03s  user  발화 끝
-    54.58s  agent 발화 시작: It speaks to the plane’s enduring popularity and reliability
-    54.58s  user  발화 끝
-    61.13s  user  발화 시작: Yeah.
-    61.13s  agent 발화 끝
-    61.49s  user  발화 시작: I guess so. It’s just… hard to reconcile. What about the wea
-    61.49s  user  발화 끝
-    69.13s  agent 발화 시작: Okay.
-    69.13s  user  발화 끝
-    69.25s  <ret> 발화 (turn18 첫 프레임)
-    69.49s  agent 발화 시작: <ret> The weather in Kuala Lumpur on March eighth, two thous
-    69.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: (tool result) 28.0°C, humidity 75%, wind 10.0 km/h, clear skies.
-    69.49s  agent 발화 끝
-    81.14s  user  발화 시작: Mhm.
-    81.14s  agent 발화 끝
-    81.50s  user  발화 시작: Clear skies. That makes it even stranger, doesn’t it?
-    81.50s  user  발화 끝
-    84.77s  agent 발화 시작: Right.
-    84.77s  user  발화 끝
-    85.14s  agent 발화 시작: It certainly adds to the mystery. Sometimes, the absence of 
-    85.14s  agent 발화 끝
-    92.05s  user  발화 시작: It really does. I’m trying to plan a little getaway, somethi
-    92.05s  agent 발화 끝
-    97.87s  agent 발화 시작: That sounds lovely. A focus on self-care is always a good id
-    97.87s  user  발화 끝
-   104.42s  user  발화 시작: Mm-hmm.
-   104.42s  agent 발화 끝
-   104.79s  user  발화 시작: I was thinking maybe somewhere near Seoul. Do you know of an
-   104.79s  user  발화 끝
-   109.64s  <ret> 발화 (turn27 첫 프레임)
-   109.88s  agent 발화 시작: <ret> The Spa at the Shilla Seoul offers treatments like Kor
-   109.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) The Spa at the Shilla Seoul offers a range of treatments
-   109.88s  user  발화 끝
-   117.16s  user  발화 시작: Shilla Seoul… sounds fancy. How much would a massage there c
-   117.16s  agent 발화 끝
-   121.28s  <ret> 발화 (turn29 첫 프레임)
-   121.52s  agent 발화 시작: <ret> A ninety-minute aromatherapy massage there currently c
-   121.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.37s]: (tool result) A 90-minute aromatherapy massage at The Spa at the Shill
-   121.52s  user  발화 끝
-   129.89s  user  발화 시작: Two hundred and fifteen dollars… That’s pretty pricey.
-   129.89s  agent 발화 끝
-   132.80s  agent 발화 시작: It does fall into the higher price range, yes. Perhaps we co
-   132.80s  user  발화 끝
-   139.35s  user  발화 시작: Maybe. I'll think about it. Thanks, Gora.
-   139.35s  agent 발화 끝
-   141.90s  agent 발화 시작: You’re very welcome. Remember, prioritizing your well-being 
-   141.90s  user  발화 끝
-   146.63s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Bror, I'm trying to remember who coaches in the Canadian
+     5.33s  agent 발화 시작: Well, that’s a great question! It’s wonderful you're thinkin
+     5.33s  user  발화 끝
+     9.52s  user  발화 시작: Uh-huh.
+     9.52s  agent 발화 끝
+     9.90s  user  발화 시작: Actually, I was wondering about a specific coach—the 2010 SM
+     9.90s  user  발화 끝
+    16.36s  <ret> 발화 (turn4 첫 프레임)
+    16.37s  agent 발화 시작: <ret> It seems June Jones, the 2010 SMU Mustangs head coach,
+    16.37s  user  발화 끝
+    17.07s  ⚡SPAN 주입 [d'=1.03s / d_lead=8.00s]: June Jones, who was the head coach for the SMU Mustangs in 2010, curre
+    24.37s  user  발화 시작: Yeah.
+    24.37s  agent 발화 끝
+    24.75s  user  발화 시작: The Canadian Football League? Huh. What's the weather like i
+    24.75s  user  발화 끝
+    29.78s  <ret> 발화 (turn7 첫 프레임)
+    30.08s  agent 발화 시작: <ret> Right now in Hamilton, Ontario, it’s 24.0°C with 65% h
+    30.08s  user  발화 끝
+    31.16s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.71s]: (tool result) Current conditions in Hamilton, Ontario are 24.0°C, humi
+    35.79s  user  발화 시작: Wow.
+    35.79s  agent 발화 끝
+    36.17s  user  발화 시작: Okay, good to know. Do the Tiger-Cats have a good record thi
+    36.17s  user  발화 끝
+    41.12s  agent 발화 시작: Yeah.
+    41.12s  user  발화 끝
+    41.38s  <ret> 발화 (turn11 첫 프레임)
+    41.48s  ⚡SPAN 주입 [d'=1.15s / d_lead=6.47s]: As of July 10, 2026, the Hamilton Tiger-Cats have a record of 3 wins a
+    41.50s  agent 발화 시작: <ret> As of today, July 10, 2026, the Hamilton Tiger-Cats ha
+    41.50s  agent 발화 끝
+    47.97s  user  발화 시작: Yeah.
+    47.97s  agent 발화 끝
+    48.35s  user  발화 시작: Not bad! What about other coaches who used to coach in colle
+    48.35s  user  발화 끝
+    55.59s  agent 발화 시작: Mm-hmm.
+    55.59s  user  발화 끝
+    55.97s  agent 발화 시작: That's a really interesting thought! It shows you’re conside
+    55.97s  agent 발화 끝
+    60.54s  user  발화 시작: Yeah.
+    60.54s  agent 발화 끝
+    60.92s  user  발화 시작: Yeah, I'm curious if it’s a common thing. Can you find me so
+    60.92s  user  발화 끝
+    65.75s  <ret> 발화 (turn18 첫 프레임)
+    66.25s  agent 발화 시작: <ret> There are several examples! Buck Pierce coached at the
+    66.25s  user  발화 끝
+    66.31s  ⚡SPAN 주입 [d'=0.56s / d_lead=8.38s]: (tool result) Several former NCAA coaches have transitioned to the CFL
+    74.62s  user  발화 시작: University of British Columbia… Hmm, is that a good school?
+    74.62s  agent 발화 끝
+    78.43s  agent 발화 시작: Uh-huh.
+    78.43s  user  발화 끝
+    78.81s  agent 발화 시작: It is! A lot of wonderful people come from there.
+    78.81s  agent 발화 끝
+    82.62s  user  발화 시작: I'm thinking about schools in Canada. What's the tuition at 
+    82.62s  agent 발화 끝
+    87.81s  <ret> 발화 (turn23 첫 프레임)
+    88.27s  ⚡SPAN 주입 [d'=0.55s / d_lead=6.47s]: Tuition for domestic students at the University of British Columbia in
+    88.33s  agent 발화 시작: <ret> Tuition for domestic students at UBC is $6,729.50 CAD 
+    88.33s  user  발화 끝
+    94.80s  user  발화 시작: That's… not cheap. Are there any scholarships available?
+    94.80s  agent 발화 끝
+    97.85s  agent 발화 시작: There are! Many options exist for talented students.
+    97.85s  user  발화 끝
+   100.89s  user  발화 시작: Can you search for UBC scholarships for international studen
+   100.89s  agent 발화 끝
+   104.32s  <ret> 발화 (turn27 첫 프레임)
+   104.32s  agent 발화 시작: <ret> UBC offers several scholarships for international stud
+   104.32s  user  발화 끝
+   104.42s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.85s]: (tool result) UBC offers a variety of scholarships for international s
+   111.17s  user  발화 시작: The President’s Entrance Scholarship sounds good. What are t
+   111.17s  agent 발화 끝
+   114.62s  <ret> 발화 (turn29 첫 프레임)
+   114.92s  ⚡SPAN 주입 [d'=0.79s / d_lead=5.71s]: The UBC President’s Entrance Scholarship requires a minimum academic a
+   114.98s  agent 발화 시작: <ret> The President’s Entrance Scholarship requires at least
+   114.98s  user  발화 끝
+   120.69s  user  발화 시작: Mm-hmm.
+   120.69s  agent 발화 끝
+   121.07s  user  발화 시작: 98%? Wow, that’s high. I wonder what the acceptance rate is 
+   121.07s  user  발화 끝
+   126.40s  agent 발화 시작: UBC is a very competitive school, and—
+   126.40s  user  발화 끝
+   129.07s  user  발화 시작: …Actually, never mind the acceptance rate. Back to football.
+   129.07s  agent 발화 끝
+   135.49s  <ret> 발화 (turn34 첫 프레임)
+   135.54s  agent 발화 시작: <ret> June Jones had a 46-and-30 win-loss record as SMU's he
+   135.54s  user  발화 끝
+   135.59s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.71s]: June Jones’s overall record as head coach of the SMU Mustangs from 200
+   141.25s  user  발화 시작: Oh.
+   141.25s  agent 발화 끝
+   141.63s  user  발화 시작: Okay, pretty good. Did he win any championships there?
+   141.63s  user  발화 끝
+   144.51s  <ret> 발화 (turn37 첫 프레임)
+   145.06s  agent 발화 시작: <ret> He led the SMU Mustangs to a Hawaii Bowl win in 2009, 
+   145.06s  user  발화 끝
+   145.30s  ⚡SPAN 주입 [d'=0.79s / d_lead=6.85s]: Under June Jones, the SMU Mustangs won the Hawaii Bowl in 2009, markin
+   151.91s  user  발화 시작: Nice! So he had some success. What’s the population of Dalla
+   151.91s  agent 발화 끝
+   157.10s  <ret> 발화 (turn39 첫 프레임)
+   157.56s  ⚡SPAN 주입 [d'=0.99s / d_lead=4.95s]: As of July 10, 2026, the estimated population of Dallas, Texas is 1,34
+   157.62s  agent 발화 시작: <ret> As of today, the population of Dallas, Texas is estima
+   157.62s  user  발화 끝
+   162.57s  user  발화 시작: That's a big city. Is it hotter there than in Hamilton right
+   162.57s  agent 발화 끝
+   167.32s  <ret> 발화 (turn41 첫 프레임)
+   167.52s  agent 발화 시작: <ret> Yes, it’s warmer in Dallas! It's currently 36.1°C with
+   167.52s  user  발화 끝
+   167.86s  ⚡SPAN 주입 [d'=0.54s / d_lead=6.09s]: (tool result) Current conditions in Dallas, Texas are 36.1°C, humidity
+   173.61s  user  발화 시작: Oh.
+   173.61s  agent 발화 끝
+   173.99s  user  발화 시작: Wow, much hotter. Okay, that's enough about football and cit
+   173.99s  user  발화 끝
+   180.84s  agent 발화 시작: That's perfectly okay! Creative blocks happen to everyone. I
+   180.84s  user  발화 끝
+   186.56s  user  발화 시작: I just need a little encouragement, I guess.
+   186.56s  agent 발화 끝
+   189.60s  agent 발화 시작: You’ve already taken the first step by recognizing it! Remem
+   189.60s  user  발화 끝
+   197.22s  user  발화 시작: Thanks, Bror. That helps.
+   197.22s  agent 발화 끝
+   198.74s  agent 발화 시작: I’m here to support you in any way I can, even if it's just 
+   198.74s  user  발화 끝
+   205.97s  agent 발화 끝

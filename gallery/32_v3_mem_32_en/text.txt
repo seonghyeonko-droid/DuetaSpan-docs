@@ -1,46 +1,46 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Jox, a practical and reassuring life coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Garion, a calm and patient life coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Anna",
+    "name": "Thomas",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-11",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-01-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-10-06",
+      "date": "2026-06-16",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-07",
+      "date": "2026-04-13",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-03-01",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-02",
       "category": "home",
-      "text": "User's home address is 233 Maple Drive."
+      "text": "User's home address is 10 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-26",
+      "date": "2026-04-19",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -51,23 +51,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Anna, I'm Jox. It's lovely to meet you. How are you doing today?
-[  5.42s][user ] I'm alright, actually a little stressed about making plans with friends.
-[  9.67s][moshi] That’s completely understandable; socializing can be tricky. What’s making it stressful for you?
-[ 14.70s][user ] Well, I'm trying to plan a birthday dinner, and it’s hard to find a place everyone likes.
-[ 21.28s][moshi] «backchannel» Yeah.
-[ 21.66s][moshi] ⟨ret@21.34s⟩ ⟦⚡SPAN@21.66s: [2025-07-26] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ Ah, I recall you were planning a birthday dinner for six people, and you mentioned wanting outdoor seating.
-[ 28.63s][user ] «backchannel» Yeah.
-[ 29.02s][user ] Yes, exactly! Do you think you could help me find some restaurants in San Francisco with outdoor seating? ⟨ret@35.82s⟩
-[ 35.98s][moshi] ⟦⚡SPAN@35.98s: (tool result) 5 restaurants found: Zuni Café (American, $$$), Foreign Cinema (Mediterranean, $$$), Park Chalet⟧ I found five restaurants in San Francisco with outdoor seating for six: Zuni Café, Foreign Cinema, Park Chalet, Beach Chalet, and Burma Superstar.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "San Francisco", "outdoor_seating": "true", "party_size": "6"}}
-[ 44.88s][user ] Those sound good… um, what kind of food does Foreign Cinema have?
-[ 49.52s][moshi] «interrupted» Foreign Cinema serves Mediterranean cuisine—
-[ 51.45s][user ] «interrupts_prev» …Actually, is Burma Superstar good for someone with dietary restrictions? ⟨ret@55.24s⟩
-[ 55.32s][moshi] ⟦⚡SPAN@55.32s: [2026-01-11] User is lactose-intolerant.⟧ I remember you're lactose-intolerant, and Burma Superstar does offer several dairy-free options, with many dishes easily modified.
-[ 61.90s][user ] Oh, that’s fantastic! I think that might be the one. Can you check if they have availability next Saturday? ⟨ret@69.17s⟩
-[ 69.25s][moshi] ⟦⚡SPAN@69.25s: (tool result) Burma Superstar: reservation confirmed for 6 people on July 18, 2026 at 7:30 PM. Confirmation ID⟧ Wonderful! I’ve reserved a table for six at Burma Superstar next Saturday, July 18th, at 7:30 PM. Your confirmation ID is BS260718-42.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Burma Superstar", "date": "2026-07-18", "party_size": "6"}}
-[ 77.76s][user ] «backchannel» Really?
-[ 78.15s][user ] Perfect, thank you so much, Jox.
-[ 80.47s][moshi] You're very welcome, Anna. Planning with friends can be stressful, but it’s worth it to enjoy time together.
+[  0.00s][moshi] Hi Thomas, I'm Garion. It’s good to connect with you today. How are you feeling?
+[  5.49s][user ] Uh, well, a bit lost, actually. It's been hard since my mother passed.
+[ 10.24s][moshi] Grief can certainly feel disorienting, Thomas. It’s a process with no easy map.
+[ 14.99s][user ] «backchannel» Okay.
+[ 15.36s][user ] I keep thinking about our trip ⟨ret@17.67s⟩ to Kyoto…
+[ 18.28s][moshi] I ⟦⚡SPAN@18.94s: [2026-06-16] User prefers a window seat when traveling.⟧ recall you mentioned a preference for window seats when we discussed your travel plans for Kyoto.
+[ 24.50s][user ] «backchannel» Okay.
+[ 24.87s][moshi] Perhaps revisiting those memories, even the bittersweet ones, could offer some comfort?
+[ 29.26s][user ] «backchannel» Yeah.
+[ 29.62s][user ] I was looking at restaurants, actually. Do you remember what I wanted? ⟨ret@33.95s⟩
+[ 34.01s][moshi] «backchannel» Yeah.
+[ 34.37s][moshi] You ⟦⚡SPAN@34.98s: [2026-04-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ were planning a birthday dinner for six people, and specifically requested outdoor seating.
+[ 39.49s][user ] Oh yes, that's right. Any recommendations in London for that? ⟨ret@42.97s⟩
+[ 43.15s][moshi] ⟦⚡SPAN@43.67s: (tool result) Restaurants found: The Ivy Chelsea Garden (4.6 stars, £60pp), Pergola Paddington (4.2 stars, £45⟧ I found three restaurants in London with outdoor seating for six: The Ivy Chelsea Garden, Pergola Paddington, and Skylight Tobacco Dock.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "London", "outdoor_seating": "yes", "party_size": "6"}}
+[ 50.83s][user ] The Ivy sounds nice. Can you tell me more about ⟨ret@54.64s⟩ it?
+[ 54.85s][moshi] «backchannel» Mhm.
+[ 55.22s][moshi] ⟦⚡SPAN@55.16s: (tool result) The Ivy Chelsea Garden: 199 King's Rd, Chelsea, London SW3 5ED. British cuisine, £60 per person.⟧ The Ivy Chelsea Garden is located at 199 King's Road in Chelsea, offering British cuisine at around £60 per person, and is open from 11:30 AM to 11 PM.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "London", "restaurant_name": "The Ivy Chelsea Garden"}}
+[ 65.82s][user ] «backchannel» Yeah.
+[ 66.19s][user ] That sounds perfect. Could you check if they have availability this ⟨ret@70.27s⟩ Saturday?
+[ 70.58s][moshi] I’ve ⟦⚡SPAN@71.28s: (tool result) Reservation confirmed for 6 people at The Ivy Chelsea Garden on Saturday, July 11, 2026, at 7:30⟧ confirmed a reservation for six at The Ivy Chelsea Garden this Saturday, July 11th, at 7:30 PM. Your confirmation ID is IVY7392.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "The Ivy Chelsea Garden", "date": "2026-07-11", "party_size": "6"}}
+[ 78.99s][user ] «backchannel» Mhm.
+[ 79.35s][user ] Wonderful, thank you so much.
+[ 81.18s][moshi] You’re very welcome, Thomas. Sometimes, focusing on making plans can be a gentle way to navigate difficult times.

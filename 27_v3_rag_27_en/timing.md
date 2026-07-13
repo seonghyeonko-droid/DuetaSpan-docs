@@ -4,61 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Anton",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2026-05-13",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-11-23",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-08-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-07-30",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "home",
-#       "text": "User's home address is 850 Birch Road."
-#     },
-#     {
-#       "date": "2026-01-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2025-07-29",
 #       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-09-21",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-11",
+#       "date": "2025-09-14",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-01",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -68,57 +71,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling…lost, lately. Ju | S2 …like I’m missing her guidance so  | S3 Kansas…didn’t that movie feature a | S4 1982… wow, that feels like a lifet
+# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling really lost abou | S2 Hmm, that’s…better than I thought. | S3 I hadn't really, no. It seems so d | S4 Those are possibilities. I’m just 
 
-     0.00s  user  발화 시작: I’ve been feeling…lost, lately. Just adrift.
-     2.44s  agent 발화 시작: It’s understandable to feel that way when life shifts unexpe
-     2.44s  user  발화 끝
-    10.56s  user  발화 시작: I guess so. My grandmother passed away last month.
-    10.56s  agent 발화 끝
-    14.21s  agent 발화 시작: Losing someone close is profoundly difficult. Grief isn't a 
-    14.21s  user  발화 끝
-    22.34s  user  발화 시작: It’s just…she always knew what to say. I feel…
-    22.34s  agent 발화 끝
-    25.99s  user  발화 시작: …like I’m missing her guidance so much.
-    25.99s  user  발화 끝
-    28.83s  agent 발화 시작: That’s a very common feeling. Her wisdom and presence shaped
-    28.83s  user  발화 끝
-    36.14s  user  발화 시작: Right.
-    36.14s  agent 발화 끝
-    36.55s  user  발화 시작: She loved old movies. I was trying to remember one she alway
-    36.55s  user  발화 끝
-    44.19s  <ret> 발화 (turn9 첫 프레임)
-    44.27s  agent 발화 시작: <ret> She likely meant *The Day After*, a film originally ai
-    44.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.34s]: The Day After is a 1983 American made-for-television post-apocalyptic 
-    44.27s  user  발화 끝
-    53.61s  user  발화 시작: Yeah.
-    53.61s  agent 발화 끝
-    54.01s  agent 발화 시작: It was quite impactful at the time, sparking a lot of conver
-    54.01s  user  발화 끝
-    58.89s  user  발화 시작: Kansas…didn’t that movie feature a highway? I seem to recall
-    58.89s  agent 발화 끝
-    64.74s  <ret> 발화 (turn13 첫 프레임)
-    64.98s  agent 발화 시작: <ret> Yes, the film prominently features scenes along Kansas
-    64.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: The film features scenes shot along Kansas State Highway K-10, which i
-    64.98s  user  발화 끝
-    71.88s  user  발화 시작: Wow.
-    71.88s  agent 발화 끝
-    72.29s  user  발화 시작: That's it! K-10. She always said it was a really powerful fi
-    72.29s  user  발화 끝
-    80.00s  agent 발화 시작: Yeah.
-    80.00s  user  발화 끝
-    80.33s  <ret> 발화 (turn17 첫 프레임)
-    80.41s  agent 발화 시작: <ret> The film was originally made in 1982, but it was relea
-    80.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: The Day After was released in 1983, but the film was originally made i
-    80.41s  agent 발화 끝
-    85.69s  user  발화 시작: Really?
-    85.69s  agent 발화 끝
-    86.10s  user  발화 시작: 1982… wow, that feels like a lifetime ago.
-    86.10s  user  발화 끝
-    89.34s  agent 발화 시작: Time can feel very different when we’re reflecting on memori
-    89.34s  user  발화 끝
-    97.47s  user  발화 시작: I suppose you’re right. It's good to remember.
-    97.47s  agent 발화 끝
-   100.72s  agent 발화 시작: Remembering is a beautiful way to honor her legacy and keep 
-   100.72s  user  발화 끝
-   109.65s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been feeling really lost about my career lately.
+     3.35s  agent 발화 시작: It’s completely normal to feel that way, and I’m here to hel
+     3.35s  user  발화 끝
+     9.30s  user  발화 시작: Yeah.
+     9.30s  agent 발화 끝
+     9.67s  user  발화 시작: That’s good to hear. I used to love writing, but…
+     9.67s  user  발화 끝
+    13.39s  agent 발화 시작: It sounds like you’re disconnected from a passion. Let’s unp
+    13.39s  user  발화 끝
+    19.72s  user  발화 시작: Well, I went to school for English, but the job market seems
+    19.72s  agent 발화 끝
+    24.26s  <ret> 발화 (turn6 첫 프레임)
+    24.55s  agent 발화 시작: <ret> It’s true the job market can feel challenging, but the
+    24.55s  user  발화 끝
+    25.66s  ⚡SPAN 주입 [d'=1.40s / d_lead=10.42s]: According to the Bureau of Labor Statistics, employment of writers and
+    34.97s  user  발화 시작: Oh.
+    34.97s  agent 발화 끝
+    35.34s  user  발화 시작: Hmm, that’s…better than I thought.
+    35.34s  user  발화 끝
+    37.20s  agent 발화 시작: It's great you’re already reassessing things! What kind of w
+    37.20s  user  발화 끝
+    42.41s  user  발화 시작: Wow.
+    42.41s  agent 발화 끝
+    42.78s  user  발화 시작: Poetry, actually. I wrote a lot in college.
+    42.78s  user  발화 끝
+    45.75s  agent 발화 시작: Poetry is a wonderful outlet. Have you considered related fi
+    45.75s  user  발화 끝
+    50.59s  user  발화 시작: Right.
+    50.59s  agent 발화 끝
+    50.96s  user  발화 시작: I hadn't really, no. It seems so different.
+    50.96s  user  발화 끝
+    53.94s  agent 발화 시작: Yeah.
+    53.94s  user  발화 끝
+    54.31s  agent 발화 시작: It can be, but the core skills – crafting compelling languag
+    54.31s  agent 발화 끝
+    59.89s  user  발화 시작: …But would I even make a living doing that?
+    59.89s  agent 발화 끝
+    63.21s  <ret> 발화 (turn18 첫 프레임)
+    63.24s  agent 발화 시작: <ret> The median annual wage for writers and authors was $67
+    63.24s  user  발화 끝
+    63.31s  ⚡SPAN 주입 [d'=0.51s / d_lead=8.18s]: The median annual wage for writers and authors was $67,120 in May 2023
+    71.42s  user  발화 시작: Nice.
+    71.42s  agent 발화 끝
+    71.79s  agent 발화 시작: It’s helpful to have a realistic understanding of the financ
+    71.79s  user  발화 끝
+    77.75s  user  발화 시작: Those are possibilities. I’m just not sure where to start lo
+    77.75s  agent 발화 끝
+    81.84s  agent 발화 시작: Yeah.
+    81.84s  user  발화 끝
+    82.21s  agent 발화 시작: We can explore resources for job boards and skill-building w
+    82.21s  agent 발화 끝
+    88.53s  user  발화 시작: That sounds really helpful, thank you.
+    88.53s  agent 발화 끝
+    90.77s  agent 발화 시작: You’re very welcome. Remember, it's okay to try different pa
+    90.77s  user  발화 끝
+    96.72s  agent 발화 끝

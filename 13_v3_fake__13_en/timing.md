@@ -4,83 +4,72 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Lukas",
+#     "name": "Riley",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-09",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-24",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-08-04",
+#       "date": "2025-10-09",
+#       "category": "home",
+#       "text": "User's home address is 354 Maple Drive."
+#     },
+#     {
+#       "date": "2025-06-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-04",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-06-03",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-05-28",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-11",
+#       "date": "2026-03-14",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-09",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who sang with Paula Ab | S2 …like in Reykjavik today? | S3 Eleven degrees? That does sound co | S4 Maybe. I’m thinking about planning
 
-     0.00s  user  발화 시작: Do you know who sang with Paula Abdul on “Opposites Attract”
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     4.13s  agent 발화 시작: <ret> That was Marv Gunn, actually! He voiced the MC Skat Ka
-     4.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.39s]: Marv Gunn provided the vocals for the animated MC Skat Kat character a
-     4.13s  user  발화 끝
-    13.52s  user  발화 시작: Oh, that’s cool! What’s the weather…
-    13.52s  agent 발화 끝
-    15.77s  user  발화 시작: …like in Reykjavik today?
-    15.77s  user  발화 끝
-    16.88s  <ret> 발화 (turn4 첫 프레임)
-    17.28s  agent 발화 시작: <ret> It’s currently 11 degrees Celsius in Reykjavik, with m
-    17.28s  ⚡SPAN 주입(IRRELEVANT) [d'=1.52s / d_lead=5.63s]: The stock of Tesla (TSLA) closed today at $177.42, down 1.35% from its
-    17.28s  user  발화 끝
-    22.91s  user  발화 시작: Oh.
-    22.91s  agent 발화 끝
-    23.29s  user  발화 시작: Eleven degrees? That does sound cold.
-    23.29s  user  발화 끝
-    25.54s  agent 발화 시작: It is a bit brisk, yes. Though, sometimes a little chill can
-    25.54s  user  발화 끝
-    33.80s  user  발화 시작: Maybe. I’m thinking about planning a trip, actually.
-    33.80s  agent 발화 끝
-    36.81s  agent 발화 시작: That's wonderful! Travel can be such a great way to broaden 
-    36.81s  user  발화 끝
-    45.07s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played Lucy in How I Met Your Mother?
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.79s  agent 발화 시작: <ret> Oh, that's a good question! Cristin Milioti portrayed 
+     4.79s  user  발화 끝
+     5.56s  ⚡SPAN 주입 [d'=1.37s / d_lead=12.38s]: Cristin Milioti portrayed Lucy, Marshall Eriksen's mother, in six epis
+    17.17s  user  발화 시작: Right.
+    17.17s  agent 발화 끝
+    17.57s  user  발화 시작: That’s right, she was great! I’m thinking about rewatching t
+    17.57s  user  발화 끝
+    21.82s  <ret> 발화 (turn4 첫 프레임)
+    22.23s  ⚡SPAN 주입(IRRELEVANT) [d'=0.41s / d_lead=8.38s]: The current temperature in Ulaanbaatar, Mongolia is -15.2°C, with clea
+    22.36s  agent 발화 시작: <ret> That sounds lovely! It’s wonderful to revisit stories 
+    22.36s  user  발화 끝
+    30.74s  user  발화 시작: Uh-huh.
+    30.74s  agent 발화 끝
+    31.14s  user  발화 시작: I was wondering, what’s the weather like in Seoul right now?
+    31.14s  user  발화 끝
+    34.99s  <ret> 발화 (turn7 첫 프레임)
+    35.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=9.98s]: (tool result) Seoul: 26.1°C, humidity 68%, wind 3.1 km/h, condition: p
+    35.54s  agent 발화 시작: <ret> It’s currently 26.1°C in Seoul, with humidity at 68% a
+    35.54s  user  발화 끝
+    45.52s  agent 발화 끝

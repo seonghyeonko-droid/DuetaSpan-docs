@@ -1,101 +1,70 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Garil, a warm and attentive life coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Ziana, a thoughtful and soft-spoken life coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Remy",
+    "name": "David",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "Australian",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-16",
+      "date": "2026-03-09",
       "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-13",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2025-12-07",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-24",
+      "date": "2025-11-20",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-08-26",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-06-24",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-07-02",
+      "date": "2025-06-01",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
+      "text": "User is planning a trip to Switzerland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-05",
-      "title": "Planning a birthday dinner",
+      "date": "2025-08-12",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-12-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-16",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm thinking of going to Jeju Island next month. What's the weather usually like then?
-[  6.28s][moshi] «backchannel» Mm-hmm.
-[  6.70s][moshi] ⟨ret@6.46s⟩ ⟦⚡SPAN@6.70s: The average temperature in Jeju Island in September ranges from 22.1°C to 26.6°C, with humidity around 72% and⟧ Jeju Island in September usually sees temperatures between 22.1 and 26.6°C, with humidity around 72% and winds around 3.6 kilometers per hour. It’s a lovely time to visit, a bit warm but pleasant.
-[ 20.52s][user ] That sounds nice. Uh, are there any good hiking trails there?
-[ 25.12s][moshi] Oh, Jeju is fantastic for hiking! There are trails for all levels. Have you been before?
-[ 31.82s][user ] «backchannel» Right.
-[ 32.24s][user ] No, never. I'd like something…moderate, maybe? Not too strenuous. ⟨ret@35.93s⟩
-[ 36.01s][moshi] ⟦⚡SPAN@36.01s: Hallasan National Park offers the Yeongsil Trail, a 7.8 kilometer hike taking approximately 3 hours and 30 min⟧ For a moderate hike, I recommend the Yeongsil Trail in Hallasan National Park, a 7.8 kilometer path taking around 3 hours and 30 minutes, gaining 640 meters in elevation. It's quite popular, and the views are breathtaking.
-[ 51.50s][user ] 3.5 hours? That’s a bit long, isn't it?.
-[ 54.85s][moshi] «backchannel» Oh.
-[ 55.27s][moshi] It can feel long, yes. We can look for something shorter if you’d prefer. Perhaps something around two hours?
-[ 63.23s][user ] «backchannel» Yeah.
-[ 63.65s][user ] Yeah, two hours sounds much ⟨ret@65.92s⟩ better.
-[ 66.16s][moshi] ⟦⚡SPAN@66.16s: The Seongsan Ilchulbong Peak Trail is a 1.8 kilometer hike taking approximately 1 hour to complete, with an el⟧ I found the Seongsan Ilchulbong Peak Trail, which is 1.8 kilometers and takes about an hour, gaining 182 meters. It's a beautiful sunrise spot.
-[ 76.21s][user ] Seongsan… that's the one with the crater, right?
-[ 79.56s][moshi] «backchannel» Yeah, yeah.
-[ 80.39s][moshi] Yes, exactly! It's a volcanic crater rising from the sea. It’s truly stunning.
-[ 85.84s][user ] Is it crowded? I really dislike crowds. ⟨ret@88.69s⟩
-[ 88.77s][moshi] ⟦⚡SPAN@88.77s: Seongsan Ilchulbong Peak receives approximately 2.5 million visitors annually, with peak times being sunrise a⟧ Seongsan Ilchulbong Peak gets around 2.5 million visitors each year, especially during sunrise and sunset. It can get busy, but going mid-morning might be quieter.
-[ 99.24s][user ] Okay, good to know. Can you find me a restaurant nearby? ⟨ret@103.68s⟩
-[103.84s][moshi] ⟦⚡SPAN@103.84s: (tool result) [Restaurant Name: O'Sulloc Tea House, Cuisine: Korean, Rating: 4.5, Price Tier: $]⟧ I found O’Sulloc Tea House near Seongsan Ilchulbong Peak. It’s a Korean restaurant with a 4.5 rating and a budget price tier.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seongsan Ilchulbong Peak"}}
-[113.06s][user ] Tea house sounds lovely. Can I make a reservation for, say, next ⟨ret@118.10s⟩ Saturday?
-[118.50s][moshi] ⟦⚡SPAN@118.50s: (tool result) Reservation confirmed for O'Sulloc Tea House on July 18, 2026 at 1:00 PM. Confirmation ID: 74928⟧ Excellent! I’ve reserved a table for you at O’Sulloc Tea House on July 18th at 1:00 PM. Your confirmation ID is 749283.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "O'Sulloc Tea House", "date": "2026-07-18", "time": "13:00"}}
-[127.71s][user ] Perfect. Thanks so much, Garil!
-[129.80s][moshi] You’re very welcome! I'm glad I could help with your Jeju Island plans. Remember to pace yourself on the hike – enjoy the journey!
+[  0.00s][user ] I need a route from my home to Central High School… uh, actually, never mind the school.
+[  5.67s][moshi] What can I help you with instead?
+[  8.00s][user ] «backchannel» Yeah.
+[  8.33s][user ] Show me the fastest route to the nearest coffee ⟨ret@11.44s⟩ shop.
+[ 11.67s][moshi] «backchannel» Yeah.
+[ 12.00s][moshi] ⟦⚡SPAN@11.94s: (tool result) {"distance": 1.2, "duration": 4, "route": "Head north on Elm Street toward Oak Avenue. Turn righ⟧ The fastest route is about one point two miles, taking around four minutes; head north on Elm Street, then right on Oak, and left on Maple.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "home", "destination": "coffee shop"}}
+[ 20.67s][user ] Hmm, is there a Starbucks nearby? ⟨ret@22.62s⟩
+[ 22.67s][moshi] There's ⟦⚡SPAN@23.28s: (tool result) {"name": "Starbucks", "address": "123 Main Street", "distance": 0.8, "rating": 4.2}⟧ a Starbucks at one two three Main Street, point eight miles from your home, with a four point two-star rating.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "Starbucks", "location": "home"}}
+[ 29.67s][user ] «backchannel» Mm-hmm.
+[ 30.00s][moshi] Wonderful. I’m glad I could help you find a convenient coffee spot. Perhaps a bit of caffeine will help with your day?

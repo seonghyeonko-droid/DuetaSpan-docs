@@ -1,10 +1,10 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Junara, a curious and validating counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Junaen, a encouraging and non-judgmental wellness coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Ada",
+    "name": "Julian",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,90 +12,70 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-06-07",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2026-03-11",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-06-05",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-09-08",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2025-07-23",
+      "date": "2026-03-18",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-08-29",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-07-14",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-27",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-11",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-25",
+      "date": "2026-01-14",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the Vidhan Parishad.
-[  2.82s][moshi] The Vidhan Parishad is the legislative council in some Indian states.
-[  7.26s][user ] Is there a minimum age to become a member?
-[ 10.89s][moshi] «backchannel» Yeah.
-[ 11.29s][moshi] ⟨ret@10.89s⟩ ⟦⚡SPAN@11.29s: To be eligible for election to the Legislative Council, a person must have attained the age of thirty years.⟧ To be eligible for election, a person must have attained the age of thirty years.
-[ 17.34s][user ] Thirty years old, that’s good to know. And what about the Lok Sabha? ⟨ret@22.42s⟩
-[ 22.58s][moshi] ⟦⚡SPAN@22.58s: No person shall be eligible for membership of the House of the People who is not of the age of twenty-five yea⟧ The minimum age for membership of the Lok Sabha is twenty-five years.
-[ 27.42s][user ] «backchannel» Yeah.
-[ 27.82s][user ] So, a ten-year difference… hmm.
-[ 29.84s][moshi] It is quite a difference, isn’t it? Age requirements do vary between houses.
-[ 35.08s][user ] «backchannel» Uh-huh.
-[ 35.48s][user ] What’s the purpose of having different age limits?
-[ 38.71s][moshi] «backchannel» Yeah.
-[ 39.11s][moshi] That's a thoughtful question! It likely reflects the different levels of experience expected for each role.
-[ 45.56s][user ] I see. Is it the same age limit across all states with a Vidhan Parishad?
-[ 51.61s][moshi] «backchannel» Yeah.
-[ 52.02s][moshi] ⟨ret@51.78s⟩ ⟦⚡SPAN@52.02s: The Constitution of India does not prescribe a uniform age for membership of all State Legislative Councils; i⟧ The Constitution doesn’t prescribe a uniform age; it's determined by state laws.
-[ 56.85s][user ] Oh, so it can vary by state? That’s interesting—
-[ 60.48s][user ] …but is it usually thirty…
-[ 62.50s][user ] …or are there states that are different?
-[ 65.32s][moshi] «backchannel» Yeah.
-[ 65.72s][moshi] ⟨ret@65.56s⟩ ⟦⚡SPAN@65.72s: Maharashtra's Legislative Council Act, 1960, specifies a minimum age of thirty years for membership.⟧ Maharashtra’s Legislative Council Act specifies a minimum age of thirty years for membership.
-[ 70.97s][user ] «backchannel» Mm-hmm.
-[ 71.37s][user ] Okay, Maharashtra is thirty. What about Uttar Pradesh? ⟨ret@74.44s⟩
-[ 74.60s][moshi] ⟦⚡SPAN@74.60s: The Uttar Pradesh Legislative Council Act, 1968, also stipulates a minimum age of thirty years for its members⟧ Uttar Pradesh also stipulates a minimum age of thirty years for its members.
-[ 79.84s][user ] So, it seems…
-[ 81.05s][user ] …like thirty is pretty standard, then.
-[ 83.47s][moshi] «backchannel» Yeah.
-[ 83.87s][moshi] It appears to be, yes. It’s good to understand those qualifications.
-[ 88.31s][user ] «backchannel» Yeah, totally.
-[ 89.11s][user ] It is. Thank you for explaining that to me, Junara.
-[ 93.14s][moshi] You’re very welcome!
+[  0.00s][user ] I was reading about coffee, and it made me wonder… where were the first European coffee houses opened? …I think I read something about ⟨ret@10.05s⟩ Italy?
+[ 10.32s][moshi] ⟦⚡SPAN@10.26s: The first European coffee house opened in Venice in 1645, established by the Pietro’s coffee company.⟧ The first European coffee house opened in Venice, Italy, in sixteen forty-five, established by Pietro’s coffee company.
+[ 17.34s][user ] Oh, Venice! That makes sense, with its trading history. Do you think that influenced coffee culture elsewhere?
+[ 24.37s][moshi] Venice was a major trading hub, so it naturally became a place where new ideas and goods—like coffee—spread quickly. It’s a lovely image, isn’t it?
+[ 34.69s][user ] It really is. What about England?…
+[ 37.17s][user ] …When did coffee houses become popular there? ⟨ret@39.96s⟩
+[ 40.06s][moshi] ⟦⚡SPAN@40.41s: Coffee houses opened in England in the mid-17th century, becoming particularly popular in London by 1650, and ⟧ Well, coffee houses opened in England in the mid-seventeenth century, becoming particularly popular in London by sixteen fifty, and they were often called “penny universities.”
+[ 50.38s][user ] «backchannel» Mm-hmm.
+[ 50.80s][moshi] They were called "penny universities" because the price of admission – a penny – bought you not only coffee but also access to conversation and information.
+[ 61.53s][user ] «backchannel» Yeah, yeah.
+[ 62.36s][user ] A penny university, that’s a great name! I’m feeling a little stressed about work though, do you have any quick mindfulness tips?
+[ 71.44s][moshi] When feeling overwhelmed, try a simple breathing exercise. Close your eyes, and slowly inhale for four counts, hold for four, and exhale for six. It can really ground you.
+[ 83.42s][user ] That sounds really helpful…
+[ 85.07s][user ] …I’ll try that. Thank you, Junaen.
+[ 87.55s][moshi] You’re very welcome. Remember, even a few moments of mindful breathing can make a big difference in managing stress. It’s about finding those small pockets of calm.

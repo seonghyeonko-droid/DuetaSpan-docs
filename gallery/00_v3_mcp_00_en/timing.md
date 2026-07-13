@@ -4,11 +4,11 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Louis",
+#     "name": "William",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
@@ -18,64 +18,67 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-05-22",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-08-18",
+#       "date": "2026-04-14",
+#       "category": "home",
+#       "text": "User's home address is 828 Birch Road."
+#     },
+#     {
+#       "date": "2026-03-06",
 #       "category": "work",
 #       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-07-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "date": "2025-11-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-21",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-07-01",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-12",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-19",
+#       "date": "2025-11-27",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: I need a taxi from Tiananmen Square to the Summer Palace, pl
-     3.91s  agent 발화 시작: Yeah.
-     3.91s  user  발화 끝
-     3.99s  <ret> 발화 (turn2 첫 프레임)
-     4.23s  agent 발화 시작: <ret> A taxi to the Summer Palace from Tiananmen Square will
-     4.23s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.86s]: (tool result) {"ride id": "7492-xklm-2026", "estimated fare": "¥65", "
-     4.23s  agent 발화 끝
-    10.10s  user  발화 시작: That sounds good. Is it raining there now?
-    10.10s  agent 발화 끝
-    12.30s  <ret> 발화 (turn4 첫 프레임)
-    12.70s  agent 발화 시작: <ret> Let me check the weather at the Summer Palace for you.
-    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.58s]: (tool result) The weather at the Summer Palace is currently 26.0°C, hu
-    12.70s  user  발화 끝
-    16.28s  agent 발화 시작: It’s currently 26.0 degrees Celsius and lightly raining at t
-    16.28s  agent 발화 끝
-    21.82s  user  발화 시작: Really?
-    21.82s  agent 발화 끝
-    22.14s  agent 발화 시작: Perhaps take an umbrella, just in case?
-    22.14s  user  발화 끝
-    24.42s  agent 발화 끝
+     0.00s  user  발화 시작: I need to pay CoffeeShop three dollars and ninety-nine cents
+     5.30s  <ret> 발화 (turn1 첫 프레임)
+     5.51s  agent 발화 시작: <ret> That’s done! Three dollars and ninety-nine cents to Co
+     5.51s  user  발화 끝
+     6.06s  ⚡SPAN 주입 [d'=0.76s / d_lead=6.70s]: (tool result) Payment successful. Transaction ID: 92817465. Remaining 
+    12.21s  user  발화 시작: Oh, great. Do you think I should text my sister about it?
+    12.21s  agent 발화 끝
+    16.94s  agent 발화 시작: That sounds like a lovely idea. Sharing little wins can real
+    16.94s  user  발화 끝
+    23.24s  agent 발화 끝

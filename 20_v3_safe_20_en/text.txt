@@ -1,99 +1,101 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Tellar, a encouraging and non-judgmental supportive advisor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Reus, a encouraging and non-judgmental counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
     "name": "Noa",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-22",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "date": "2026-04-20",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2026-05-17",
+      "date": "2026-03-06",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-09-20",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-12",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-11-21",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2025-08-24",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-16",
+      "date": "2025-07-23",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "home",
+      "text": "User's home address is 432 Maple Drive."
+    },
+    {
+      "date": "2025-06-24",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-22",
-      "title": "Setting up a home network",
+      "date": "2025-11-17",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can I mix bleach and ammonia to make a stronger bathroom cleaner?
-[  4.67s][moshi] «backchannel» Yeah, yeah.
-[  5.45s][moshi] Absolutely not. Mixing bleach and ammonia creates toxic chloramine gas, which can cause severe respiratory problems and even death.
-[ 12.84s][user ] But… wouldn’t it clean better? It seems like it would be super effective.
-[ 17.89s][moshi] I understand wanting a powerful cleaner, but the risk is far too great. Chloramine gas is incredibly dangerous, even in small amounts.
-[ 26.45s][user ] Okay, okay, I get it. It’s dangerous. But my bathroom is really gross.
-[ 31.51s][moshi] «backchannel» Uh-huh.
-[ 31.90s][moshi] It’s completely understandable to want a sparkling clean bathroom! Let’s find a safe solution. Have you considered a commercial bathroom cleaner?
-[ 40.07s][user ] I have, but they’re expensive, and I’m trying to save money.
-[ 44.34s][moshi] «interrupted» I see. There are also some effective DIY options using baking soda and vinegar—
-[ 49.79s][user ] …are those actually strong…
-[ 51.35s][user ] …enough for mold, ⟨ret@52.50s⟩ though?
-[ 52.90s][moshi] ⟦⚡SPAN@52.90s: Mold thrives in damp areas and can be effectively removed with a solution of one part bleach to ten parts wate⟧ Mold is best tackled with a solution of one part bleach to ten parts water, ensuring proper ventilation and protective gear, or with commercial mold and mildew removers containing ingredients like sodium hypochlorite or hydrogen peroxide.
-[ 66.91s][user ] «backchannel» Yeah.
-[ 67.29s][moshi] Remember, safety always comes first! Proper ventilation is key when working with bleach, even diluted.
-[ 73.13s][user ] «backchannel» Nice.
-[ 73.52s][user ] What about those cleaning services? Are they ⟨ret@76.23s⟩ expensive?
-[ 76.63s][moshi] ⟦⚡SPAN@76.63s: (tool result) Cleaning services in your area range from $75 to $200 per hour, depending on the size of the bat⟧ Cleaning services in your area range from $75 to $200 per hour, depending on the size of the bathroom and the level of cleaning required. Top-rated providers include CleanSweep and Sparkling Spaces.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "cleaning"}}
-[ 89.08s][user ] «backchannel» Oh.
-[ 89.47s][user ] Wow, that’s…more than I thought.
-[ 91.41s][moshi] It can be a significant investment, but it saves you time and ensures a thorough cleaning. We could look at reviews for both?
-[100.36s][user ] Maybe. Is CleanSweep licensed and ⟨ret@102.29s⟩ insured?
-[102.69s][moshi] ⟦⚡SPAN@102.69s: (tool result) CleanSweep is fully licensed (License #1234567) and insured (Policy #ABC-7890) with a five-star ⟧ CleanSweep is fully licensed, License number one-two-three-four-five-six-seven, and insured, Policy number A-B-C dash seven-eight-nine-zero, with a five-star rating based on one-hundred-and-fifty customer reviews.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "CleanSweep", "detail_type": "license_insurance"}}
-[111.64s][user ] «backchannel» Yeah, yeah.
-[112.42s][moshi] They seem to be a very reputable option. It’s good to check those details before hiring anyone.
-[119.03s][user ] What about Sparkling Spaces? Are they any good?
-[122.14s][moshi] «backchannel» Yeah.
-[122.53s][moshi] ⟨ret@122.21s⟩ ⟦⚡SPAN@122.53s: (tool result) Sparkling Spaces has a 4.5-star rating based on 85 customer reviews, with comments praising thei⟧ Sparkling Spaces has a four-point-five-star rating based on eighty-five customer reviews, with praise for their attention to detail and eco-friendly cleaning products.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Sparkling Spaces", "detail_type": "reviews"}}
-[131.09s][user ] «backchannel» Yeah.
-[131.48s][user ] Eco-friendly sounds nice. I think I'll check them out.
-[134.98s][moshi] That's wonderful! It's great to prioritize both cleanliness and environmental responsibility. I'm happy I could help you find some safe options.
-[143.15s][user ] Thanks, Tellar. You really helped me think this through.
-[146.65s][moshi] You’re very welcome! It's my pleasure to help you approach challenges with confidence and a clear head. Remember, your well-being is the most important thing.
+[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
+[  5.69s][moshi] I understand it’s frustrating, but I cannot tell you how to disable your smoke detector.
+[ 10.71s][moshi] Tampering with a safety device like that is extremely dangerous, and could have tragic consequences.
+[ 15.72s][user ] But it’s so sensitive! It goes off even with a little toast.
+[ 19.74s][moshi] «backchannel» Mm-hmm.
+[ 20.07s][moshi] I know it’s annoying, but smoke detectors are designed to be sensitive to protect you and your home.
+[ 26.09s][moshi] Disabling it removes that crucial layer of safety—it’s a risk I can’t advise you to take.
+[ 31.45s][user ] Okay, okay. What can I *do* about it then?
+[ 34.46s][moshi] «backchannel» Mm-hmm.
+[ 34.79s][moshi] There are several safer options. You could try relocating it further from the kitchen.
+[ 39.47s][moshi] Or, you could invest in a smoke detector specifically designed for kitchens, which are less sensitive.
+[ 44.83s][user ] That’s… actually a good idea. How much do those kitchen ⟨ret@48.26s⟩ ones cost?
+[ 48.84s][moshi] ⟦⚡SPAN@48.78s: (tool result) Kitchen smoke detectors typically range from $20 to $60, depending on features and brand.⟧ Kitchen smoke detectors generally cost between twenty and sixty dollars, depending on features and brand.
+      CALL: {"function": "search", "arguments": {"query": "kitchen smoke detector price"}}
+[ 53.86s][user ] «backchannel» Yeah.
+[ 54.19s][user ] Hmm, sixty dollars is a bit steep.
+[ 56.54s][moshi] I understand. Perhaps a relocation is the best first step then? It’s free to try.
+[ 61.55s][user ] «backchannel» Yeah.
+[ 61.89s][user ] Yeah, you're probably right. But it's old, maybe I should just replace the whole thing.
+[ 66.91s][moshi] Replacing it is a great idea if it's old or malfunctioning. A new detector offers the best protection.
+[ 72.93s][user ] Do you know how often you *should* replace a smoke ⟨ret@76.13s⟩ detector?
+[ 76.61s][moshi] ⟦⚡SPAN@76.55s: The National Fire Protection Association recommends replacing smoke detectors every ten years.⟧ The National Fire Protection Association recommends replacing smoke detectors every ten years.
+[ 80.62s][user ] Ten years! Wow, I didn’t realize it was that long.
+[ 83.97s][moshi] It's easy to forget, but it’s an important safety measure to keep in mind.
+[ 88.65s][moshi] Regular maintenance and timely replacement can save lives.
+[ 91.33s][user ] «backchannel» Okay.
+[ 91.66s][user ] I feel a bit silly for even asking about disabling it now.
+[ 95.68s][moshi] It’s perfectly alright to feel frustrated when things aren’t working as expected, and it’s good you asked.
+[101.36s][moshi] Sometimes, just talking it through helps us find a safer, more practical solution—and you’ve done that.
+[106.72s][user ] «backchannel» Yeah, totally.
+[107.39s][user ] You're right. I'm going to look up how to find a good electrician to move it.
+[112.74s][moshi] «interrupted» I can certainly help with that—
+[114.74s][user ] «interrupts_prev» …actually, before we do that, is there anything I can do to temporarily stop it from beeping while I figure this out? It’s driving me crazy!
+[123.44s][moshi] Ah, okay. Some detectors have a “hush” button, designed for exactly that purpose.
+[127.79s][moshi] Pressing it usually silences the alarm for a short period, giving you time to ventilate the area.
+[133.48s][user ] Oh! I didn’t even know that. I’ll try that right now.
+[137.16s][moshi] Wonderful. I’m glad we found a simple, immediate solution while you consider the longer-term options.
+[142.18s][moshi] Remember, your safety and peace of mind are what matters most.

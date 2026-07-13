@@ -1,5 +1,5 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Hiax, a grounded and empathetic counselor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Dorana, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
@@ -13,73 +13,75 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "Australian",
     "gender": "female",
-    "age_range": "early 30s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-01",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-02-03",
+      "category": "work",
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-12-18",
-      "category": "home",
-      "text": "User's home address is 371 Birch Road."
+      "date": "2026-01-12",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-30",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
-    },
-    {
-      "date": "2025-09-16",
+      "date": "2025-10-30",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-09",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-25",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-08-09",
+      "date": "2025-11-06",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-04",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm feeling really stressed about work deadlines.
-[  2.53s][moshi] It sounds like you’re carrying a lot right now. Taking a moment to acknowledge that stress is a good first step.
-[ 10.12s][user ] Could you find me some calming nature sounds? ⟨ret@12.93s⟩
-[ 13.01s][moshi] ⟦⚡SPAN@13.01s: (tool result) {"artist": "Nature Sounds", "title": "Gentle Rain & Forest Ambience", "duration": "60 minutes", ⟧ I found "Gentle Rain & Forest Ambience" by Nature Sounds, a sixty-minute track.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"query": "calming nature sounds"}}
-[ 17.71s][user ] That sounds lovely. Play it, ⟨ret@19.64s⟩ please.
-[ 19.88s][moshi] ⟦⚡SPAN@19.88s: (tool result) {"status": "playing", "volume": "50%", "track": "Gentle Rain & Forest Ambience"}⟧ It’s playing now at fifty percent volume.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"url": "https://example.com/nature-sounds"}}
-[ 22.41s][user ] I need to book a massage this weekend—maybe Saturday?
-[ 25.66s][moshi] Booking a massage sounds like a wonderful way to de-stress. Do you have a preferred location?
-[ 31.44s][moshi] «interrupted» ⟨ret@31.28s⟩ ⟦⚡SPAN@31.44s: (tool result) {"providers": [{"name": "Serene Spa", "availability": 10:00, 14:00, 16:00, "price": "80 EUR"}, {⟧ Serene Spa has openings at ten AM, two PM, or four PM for eighty euros—
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "massage", "date": "2026-07-11"}}
-[ 36.86s][user ] «interrupts_prev» … actually, can you check if Serene Spa offers hot stone massage? ⟨ret@41.04s⟩
-[ 41.20s][moshi] ⟦⚡SPAN@41.20s: (tool result) {"name": "Serene Spa", "services": Swedish massage, Deep tissue massage, Hot stone massage, "pri⟧ Let me see if Serene Spa provides hot stone massage options.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "hot stone massage", "provider": "Serene Spa"}}
-[ 45.17s][moshi] Yes, Serene Spa does offer hot stone massage for one hundred euros. Would you like to book that for Saturday?
+[  0.00s][user ] I need to find a good Italian restaurant in Seoul.
+[  4.15s][moshi] I can help with that.
+[  6.22s][user ] And uh, something not too expensive, ⟨ret@8.58s⟩ please.
+[  9.12s][moshi] ⟦⚡SPAN@9.64s: (tool result) {"restaurants": [{"name": "La Tavola", "address": "27, Toegye-ro, Jung-gu, Seoul", "price range"⟧ I found two budget-friendly Italian restaurants in Seoul: La Tavola, at 27 Toegye-ro, has a 4.2-star rating, and Bella Italia, at 12 Myeongdong 8-gil, is rated 3.9 stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "Italian", "price_range": "budget"}}
+[ 20.74s][user ] «backchannel» Yeah, totally.
+[ 21.57s][user ] La Tavola sounds good. Can you check…
+[ 24.47s][user ] …if they have any openings tomorrow evening around 7 PM?
+[ 28.62s][moshi] «backchannel» Exactly.
+[ 29.03s][moshi] ⟨ret@29.02s⟩ Yes, I’ve confirmed ⟦⚡SPAN@30.52s: (tool result) {"reservation id": "LT2026071119002", "status": "confirmed", "date": "2026-07-11", "time": "19:0⟧ a reservation for you at La Tavola for tomorrow, July 11th, at 7:00 PM for a party of two. Your reservation ID is LT2026071119002.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Tavola", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
+[ 40.23s][user ] That's great!
+[ 41.06s][moshi] Wonderful! I'm glad I could help with that.
+[ 44.37s][user ] Actually, I was thinking.
+[ 46.03s][moshi] «interrupted» I was going to suggest checking their menu online—
+[ 49.77s][user ] «interrupts_prev» …do they have outdoor seating? ⟨ret@51.71s⟩
+[ 51.84s][moshi] ⟦⚡SPAN@52.19s: (tool result) La Tavola in Seoul features a charming outdoor terrace, perfect for enjoying Italian cuisine al ⟧ Yes, La Tavola does have a charming outdoor terrace, which is covered and heated for year-round comfort.
+      CALL: {"function": "search", "arguments": {"query": "La Tavola Seoul outdoor seating"}}
+[ 58.89s][user ] «backchannel» Yeah, yeah.
+[ 59.72s][user ] Oh, that's lovely. I'm also trying to stick to a budget for the whole trip, you know?
+[ 66.77s][moshi] I understand completely. Budgeting is so important when traveling.
+[ 70.50s][user ] I'm hoping to keep my daily spending under 150,000 Korean Won. Is that realistic for Seoul?
+[ 77.14s][moshi] «backchannel» Exactly.
+[ 77.55s][moshi] ⟨ret@77.36s⟩ ⟦⚡SPAN@77.90s: The average daily cost for a tourist in Seoul is around ₩120,000 to ₩200,000, depending on accommodation and a⟧ That depends on your spending habits, of course, but— The average daily cost for tourists in Seoul ranges from 120,000 to 200,000 Korean Won, but budget travelers can manage on as little as 80,000 Won per day.
+[ 92.90s][user ] 80,000 Won sounds doable! Thanks, Dorana.
+[ 95.39s][moshi] You're very welcome! I’m happy to assist with your financial planning for your trip.

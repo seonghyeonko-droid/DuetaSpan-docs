@@ -1,81 +1,64 @@
 v3_rag_28_cs src=nq style=v2
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 긍정적이고 지지적인 상담사 Laeus입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 큰 인생의 변화를 겪는 사람들을 돕는 실용적이고 안심시키는 상담사, Fellar입니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Riley",
+    "name": "Robin",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
+    "nationality": "French",
     "gender": "non-binary",
     "age_range": "early 30s",
-    "language": "German"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-17",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
-    },
-    {
-      "date": "2026-04-05",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-12-16",
+      "date": "2026-06-07",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-05-31",
+      "date": "2026-04-28",
       "category": "home",
-      "text": "User's home address is 562 Cedar Lane."
+      "text": "User's home address is 354 Pine Court."
+    },
+    {
+      "date": "2026-01-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-10-15",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-12",
-      "title": "Comparing gym memberships",
+      "date": "2026-05-28",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-25",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-27",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 해변에 있는 모래는 대체 어디서 오는 거야?
-[  4.16s][moshi] «backchannel» 예.
-[  4.76s][moshi] 해변은 정말 신기한 곳이고, 그 기원도 꽤 다양해.
-[  9.51s][user ] «backchannel» 응.
-[ 10.11s][user ] 다양하다니, 어떻게? 그냥 다 바위가 갈려져서 만들어지는 거야?
-[ 14.86s][moshi] «backchannel» 그렇죠.
-[ 15.45s][moshi] ⟨ret@15.21s⟩ ⟦⚡SPAN@15.45s: Beach sand is created by the weathering and erosion of rocks, shells, and coral, transported to the coast by r⟧ 해변 모래는 사실 암석, 조개껍데기, 산호초가 풍화되고 침식되면서 만들어져. 그런 다음 강, 개울, 해류에 의해 해안으로 운반되는 거지.
-[ 26.15s][user ] «backchannel» 어.
-[ 26.75s][moshi] 마치 자연이 배달 서비스를 하는 것 같지, 그 작은 조각들을 모아서 말이야.
-[ 33.88s][user ] 산호초도 역할을 해? 몰랐어. 어떤 ⟨ret@37.13s⟩ 산호초인데?
-[ 37.45s][moshi] ⟦⚡SPAN@37.45s: Coralline algae, a type of red algae, deposits calcium carbonate which breaks down into sand, contributing sig⟧ 특히, 석회조류—일종의 붉은 조류—가 탄산칼슘을 침전시키는데, 이게 모래로 부서져서 열대 지역 해변 형성에 크게 기여해.
-[ 46.36s][moshi] 정말 아름다운 과정이야, 우리 모두가 즐길 수 있는 멋진 공간을 만드는 거지.
+[  0.00s][user ] 워싱턴 주에 가보려고 하는데, 거기는 어때?
+[  3.34s][moshi] 워싱턴은 정말 예쁜 곳이고, 다양한 풍경이 있어. 열대 우림부터 산까지 볼 수 있지. 커피 문화랑 아이 티 산업으로도 유명하고. 혹시 특별히 가고 싶은 도시 있어?
+[ 17.25s][user ] «backchannel» 응.
+[ 17.80s][user ] 시애틀, 뭐 그런 데. 마리화나 ⟨ret@20.72s⟩ 합법이야?
+[ 21.14s][moshi] ⟦⚡SPAN@21.71s: Recreational marijuana use became legal in Washington state on December 6, 2012, following the passage of Init⟧ 워싱턴 주에서는 이천십이 년 십이 월 여섯 일에, 오백이 이니셔티브를 통해 합법이 됐어. 꽤 큰 변화였지, 안 그래?
+[ 31.16s][user ] 그게… 생각보다 얼마 안 됐네. 다른 주는 어때?
+[ 35.61s][moshi] 그 뒤로 다른 주들도 많이 따라 했어. 다른 주들을 알아볼까, 아니면 아직 워싱턴에 집중할래?
+[ 43.40s][user ] «backchannel» 음.
+[ 43.95s][user ] 아니, 아니, 워싱턴이 괜찮아. 지금 시애틀 날씨는 어때? ⟨ret@48.20s⟩
+[ 48.40s][moshi] ⟦⚡SPAN@49.20s: (tool result) Seattle, WA: 18.9°C, humidity 62%, wind 3.1 km/h, condition: partly cloudy.⟧ 지금 시애틀 날씨는 섭씨 십팔 점 구도이고, 습도는 육십이 퍼센트, 바람은 시속 삼 점 일 킬로미터 정도 불어. 부분적으로 흐려. 괜찮아 보이네!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "라린",
+#     "name": "혜현",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,102 +12,83 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-06-12",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-02-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2026-03-26",
+#       "category": "home",
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     },
 #     {
-#       "date": "2025-07-15",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-10-21",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-06-23",
+#       "date": "2025-09-06",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-10",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-07-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-27",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-18",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-04",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 리스본 여행 계획 좀 세워보려고요. | S2 정말요? 어디가 제일 좋을까요? | S3 와, 감사합니다! 그런데 혹시— | S4 백오십유로는 괜찮네요. 거기는 객실에 와이파이가 있나요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 라린님. 저는 크레아이아입니다. 여행 계획을 도와드리는 에이전트예요.
-     4.99s  user  발화 시작: 안녕하세요. 리스본 여행 계획 좀 세워보려고요.
-     4.99s  agent 발화 끝
-     8.57s  <ret> 발화 (turn2 첫 프레임)
-     8.73s  agent 발화 시작: <ret> 시월에 가실 예정이신가요?
-     8.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.87s]: [2026-02-10] User is planning a trip to Lisbon in October.
-     8.73s  user  발화 끝
-    10.60s  user  발화 시작: 네, 맞아요. 시월 말쯤으로 생각하고 있어요.
-    10.60s  agent 발화 끝
-    14.33s  agent 발화 시작: 시월 말은 리스본 날씨가 아주 좋을 거예요. 혹시 특별히 보고 싶은 곳이 있으세요?
-    14.33s  user  발화 끝
-    22.44s  user  발화 시작: 음… 맛집을 추천받고 싶어요. 포르투갈 음식 말고 다른 것도 괜찮아요.
-    22.44s  agent 발화 끝
-    28.67s  agent 발화 시작: 아.
-    28.67s  user  발화 끝
-    29.21s  <ret> 발화 (turn7 첫 프레임)
-    29.29s  agent 발화 시작: <ret> 이탈리아 음식을 좋아하시는군요. 리스본에는 훌륭한 이탈리아 식당이 몇 군데 있어요.
-    29.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: [2026-04-09] User's favorite cuisine is Italian.
-    29.29s  agent 발화 끝
-    35.53s  user  발화 시작: 응.
-    35.53s  agent 발화 끝
-    36.15s  user  발화 시작: 정말요? 어디가 제일 좋을까요?
-    36.15s  user  발화 끝
-    38.40s  <ret> 발화 (turn10 첫 프레임)
-    38.64s  agent 발화 시작: <ret> 칸티뉴 두 아빌레즈라는 곳이 평점이 사 점 육점에 리뷰도 천이백삼십사개나 있어요. 이탈리아, 포르
-    38.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.84s]: (tool result) Restaurante Cantinho do Avillez: Italian, Portuguese, Eu
-    38.64s  user  발화 끝
-    50.48s  user  발화 시작: 칸티뉴 두 아빌레즈… 거긴 예약이 필수인가요?
-    50.48s  agent 발화 끝
-    53.98s  <ret> 발화 (turn12 첫 프레임)
-    54.22s  agent 발화 시작: <ret> 네, 시월 이십팔일 저녁 여덟시에 여섯명으로 예약이 완료되었습니다. 확인 번호는 칠 엑스 구 엘 
-    54.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) Reservation confirmed for 6 people on October 28, 2026 a
-    54.22s  user  발화 끝
-    64.20s  user  발화 시작: 음.
-    64.20s  agent 발화 끝
-    64.82s  user  발화 시작: 와, 감사합니다! 그런데 혹시—
-    64.82s  user  발화 끝
-    67.31s  user  발화 시작: …거기 근처에 괜찮은 호텔도 추천해 줄 수 있을까요?
-    67.31s  user  발화 끝
-    72.30s  agent 발화 시작: 음.
-    72.30s  user  발화 끝
-    72.52s  <ret> 발화 (turn17 첫 프레임)
-    72.92s  agent 발화 시작: <ret> 보르헤스 치아두 호텔은 사성급이고, 일박에 백오십유로부터 시작합니다. 위치도 아주 좋습니다.
-    72.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: (tool result) Hotel Borges Chiado: 4 stars, Rua do Alecrim 139, 1200-0
-    72.92s  agent 발화 끝
-    79.15s  user  발화 시작: 백오십유로는 괜찮네요. 거기는 객실에 와이파이가 있나요?
-    79.15s  agent 발화 끝
-    82.89s  agent 발화 시작: 네, 보르헤스 치아두 호텔에는 무료 와이파이가 제공됩니다.
-    82.89s  user  발화 끝
-    87.26s  user  발화 시작: 잘 됐네요. 정말 감사합니다, 크레아이아님.
-    87.26s  agent 발화 끝
-    90.37s  agent 발화 시작: 천만에요, 라린님. 즐거운 리스본 여행 되시길 바랍니다.
-    90.37s  user  발화 끝
-    94.74s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 혜현님. 저는 네리라입니다. 건강과 일상 습관을 도와드리는 에이전트예요.
+     5.35s  user  발화 시작: 그래.
+     5.35s  agent 발화 끝
+     5.94s  user  발화 시작: 음… 요즘 좀 피곤해서 맛있는 거 먹고 싶어.
+     5.94s  user  발화 끝
+    10.58s  <ret> 발화 (turn3 첫 프레임)
+    10.70s  agent 발화 시작: <ret> 혹시 평소에 즐겨 드시는 음식이나, 특별히 피하는 음식이 있으세요?
+    10.70s  user  발화 끝
+    11.88s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.35s]: [2026-06-12] User works as a chef.
+    16.04s  agent 발화 시작: 혜현님은 요리사시니까, 특별한 재료나 맛에 대한 선호도가 있으실 것 같아요.
+    16.04s  agent 발화 끝
+    21.98s  user  발화 시작: 으음… 해산물을 별로 안 좋아해.
+    21.98s  agent 발화 끝
+    24.75s  <ret> 발화 (turn6 첫 프레임)
+    24.96s  agent 발화 시작: <ret> 해산물을 안 좋아하시는군요. 그럼 부산에서 해산물을 제외하고 맛집을 찾아볼까요?
+    24.96s  user  발화 끝
+    25.92s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.35s]: (tool result) Restaurants found: 1. 보쌈정식 (Pork Belly Set) - 12,000 KRW
+    30.30s  agent 발화 시작: 부산에는 보쌈정식이 만 이천 원, 돼지국밥은 구천 원, 갈비찜은 이만 오천 원에 파는 맛집들이 있습니다.
+    30.30s  agent 발화 끝
+    39.22s  user  발화 시작: 그래.
+    39.22s  agent 발화 끝
+    39.81s  user  발화 시작: 갈비찜 괜찮겠다. 어디가 제일 맛있어?
+    39.81s  user  발화 끝
+    42.67s  <ret> 발화 (turn10 첫 프레임)
+    42.78s  agent 발화 시작: <ret> 칠월 십일일 저녁 일곱시에 ‘황금갈비’ 예약이 완료되었습니다. 확인 번호는 지 에이치 칠 팔 구 
+    42.78s  user  발화 끝
+    43.42s  ⚡SPAN 주입 [d'=0.75s / d_lead=8.91s]: (tool result) Reservation confirmed for 황금갈비 on July 11, 2026 at 7:00 
+    51.69s  agent 발화 끝

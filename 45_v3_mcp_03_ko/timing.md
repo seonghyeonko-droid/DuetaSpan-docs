@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "정안",
+#     "name": "소형",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-06-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-06-03",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
-#       "date": "2025-07-21",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-08-14",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-07-16",
+#       "date": "2025-08-02",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-22",
+#       "date": "2026-01-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,93 +50,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 유니온역에서 할리우드 명예의 거리에 가는 가장 빠른 대중교통  | S2 오, 생각보다 저렴하네. | S3 혹시 내일 날씨 어때? | S4 알았어.
+# EXAMINER(FDB-v2) 단계: S1 요즘 볼만한 드라마 추천해 줄 수 있어? | S2 빅 리틀 라이즈… 제목이 좀 어렵네. — | S3 …니콜 키드먼이 출연한 드라마는 찾아줄 수 있어? | S4 그럼, 이 드라마를 볼 수 있는 다른 방법은 없을까? 에이치 
 
-     0.00s  user  발화 시작: 유니온역에서 할리우드 명예의 거리에 가는 가장 빠른 대중교통 길은 뭐야?
-     4.70s  <ret> 발화 (turn1 첫 프레임)
-     5.02s  agent 발화 시작: <ret> 유니온역에서 할리우드 명예의 거리는 십육 점 일킬로미터이고, 대중교통으로 삼십구분 정도 걸려요. 
-     5.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.06s]: (tool result) {"distance": "16.1 km", "duration": "39 minutes", "route
-     5.02s  user  발화 끝
-    19.08s  user  발화 시작: 음, 버스는 좀 불편한데…
-    19.08s  agent 발화 끝
-    21.09s  agent 발화 시작: 혹시 다른 교통수단을 알아볼까요? 아니면, 좀 더 자세한 정보를 드릴까요?
-    21.09s  user  발화 끝
-    26.11s  user  발화 시작: 네.
-    26.11s  agent 발화 끝
-    26.61s  user  발화 시작: 자전거로는 얼마나 걸릴까?
-    26.61s  user  발화 끝
-    27.72s  <ret> 발화 (turn6 첫 프레임)
-    28.12s  agent 발화 시작: <ret> 자전거로는 십육 점 육킬로미터이고, 약 오십팔분 정도 걸립니다. 세사르 차베스 거리를 따라 북쪽으
-    28.12s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.55s]: (tool result) {"distance": "16.6 km", "duration": "58 minutes", "route
-    28.12s  user  발화 끝
-    39.66s  user  발화 시작: 진짜요?
-    39.66s  agent 발화 끝
-    40.17s  agent 발화 시작: 자전거 타는 게 좀 힘드시다면, 다른 방법을 찾아보는 게 좋을 수도 있겠네요.
-    40.17s  user  발화 끝
-    46.19s  user  발화 시작: 택시는 얼마나 나올까?
-    46.19s  agent 발화 끝
-    47.62s  <ret> 발화 (turn10 첫 프레임)
-    47.70s  agent 발화 시작: <ret> 택시는 이십오달러에서 삼십오달러 정도 예상되고, 이십분에서 이십오분 정도 걸릴 것 같아요. 우버X
-    47.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.54s]: (tool result) {"estimated fare": "$25-35", "estimated duration": "20-2
-    47.70s  user  발화 끝
-    56.23s  user  발화 시작: 예.
-    56.23s  agent 발화 끝
-    56.74s  user  발화 시작: 오, 생각보다 저렴하네.
-    56.74s  user  발화 끝
-    58.24s  agent 발화 시작: 네, 대중교통보다는 조금 비싸지만, 시간을 절약할 수 있다는 장점이 있죠.
-    58.24s  user  발화 끝
-    63.26s  user  발화 시작: 이번 주 토요일에 콘서트 티켓 예매 좀 해줘.
-    63.26s  agent 발화 끝
-    67.28s  agent 발화 시작: 어떤 콘서트 티켓을 예매해 드릴까요? 장소와 시간을 알려주세요.
-    67.28s  user  발화 끝
-    71.30s  user  발화 시작: 스테이플스 센터에서 열리는 비 티 에스 콘서트.
-    71.30s  agent 발화 끝
-    74.73s  <ret> 발화 (turn17 첫 프레임)
-    74.81s  agent 발화 시작: <ret> 스테이플스 센터에서 열리는 비 티 에스 콘서트 티켓을 예매해 드렸습니다. 티켓 가격은 백오십달러에
-    74.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.56s]: (tool result) {"event id": "BTS20260712", "ticket price": "$150-300", 
-    74.81s  user  발화 끝
-    89.37s  user  발화 시작: 와, 진짜 고마워!
-    89.37s  agent 발화 끝
-    90.88s  agent 발화 시작: 천만에요. 콘서트 즐겁게 다녀오세요!
-    90.88s  user  발화 끝
-    92.89s  user  발화 시작: 혹시 내일 날씨 어때?
-    92.89s  agent 발화 끝
-    94.73s  <ret> 발화 (turn21 첫 프레임)
-    94.89s  agent 발화 시작: <ret> 내일 로스앤젤레스 날씨는 섭씨 이십팔도이고, 습도는 육십오퍼센트, 풍속은 시속 십 점 오킬로미터,
-    94.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.53s]: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed
-    94.89s  user  발화 끝
-   102.43s  user  발화 시작: 꽤 덥겠네.
-   102.43s  agent 발화 끝
-   103.43s  agent 발화 시작: 네, 햇볕이 강할 테니 선크림을 꼭 바르세요.
-   103.43s  user  발화 끝
-   106.94s  user  발화 시작: 그렇죠.
-   106.94s  agent 발화 끝
-   107.45s  user  발화 시작: 저녁에 좋은 레스토랑 좀 추천해 줘.
-   107.45s  user  발화 끝
-   110.46s  agent 발화 시작: 어떤 종류의 음식을 좋아하세요? 그리고, 가격대는 어느 정도 생각하고 계세요?
-   110.46s  user  발화 끝
-   115.48s  user  발화 시작: 한식, 가격은 보통 정도로.
-   115.48s  agent 발화 끝
-   117.33s  <ret> 발화 (turn28 첫 프레임)
-   117.49s  agent 발화 시작: <ret> 로스앤젤레스에서 한식으로, 가격대가 보통 정도인 레스토랑으로는 파크스 비 비 큐가 있습니다. 주소
-   117.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.04s]: (tool result) {"restaurant name": "Park's BBQ", "address": "955 S Verm
-   117.49s  user  발화 끝
-   127.53s  user  발화 시작: 알았어.
+     0.00s  user  발화 시작: 요즘 볼만한 드라마 추천해 줄 수 있어?
+     3.59s  agent 발화 시작: 어떤 장르를 좋아하세요? 드라마 취향을 알려주시면 더 정확하게 추천해 드릴 수 있어요.
+     3.59s  user  발화 끝
+     9.73s  user  발화 시작: 그렇죠.
+     9.73s  agent 발화 끝
+    10.24s  user  발화 시작: 음… 몰입감 있고, 배우들 연기 잘하는 드라마 보고 싶어.
+    10.24s  user  발화 끝
+    14.68s  <ret> 발화 (turn4 첫 프레임)
+    14.85s  agent 발화 시작: <ret> 몰입감 있는 연기를 원하신다면, 메릴 스트립이 출연하는 드라마를 추천해 드릴게요. 그녀는 역대 최
+    14.85s  user  발화 끝
+    14.98s  ⚡SPAN 주입 [d'=0.30s / d_lead=12.29s]: Meryl Streep is an American actress often regarded as one of the great
+    27.15s  user  발화 시작: 와.
+    27.15s  agent 발화 끝
+    27.66s  user  발화 시작: 메릴 스트립이 드라마에도 출연했어? 영화배우인 줄 알았는데.
+    27.66s  user  발화 끝
+    30.64s  <ret> 발화 (turn7 첫 프레임)
+    31.24s  agent 발화 시작: <ret> 이천육년에 개봉한 '악마는 프라다를 입는다'에서 메릴 스트립은 강력하고 까다로운 패션 편집장 미란
+    31.24s  user  발화 끝
+    31.82s  ⚡SPAN 주입 [d'=1.18s / d_lead=12.29s]: The Devil Wears Prada, released in 2006, stars Meryl Streep as Miranda
+    43.54s  user  발화 시작: 음.
+    43.54s  agent 발화 끝
+    44.05s  user  발화 시작: 악마는 프라다를 입는다… 재밌게 봤던 영화인데. 다른 드라마도 찾아봐 줄 수 있어?
+    44.05s  user  발화 끝
+    49.60s  <ret> 발화 (turn10 첫 프레임)
+    49.90s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.78s]: (tool result) "Big Little Lies (2017) starring Meryl Streep, Nicole Ki
+    50.19s  agent 발화 시작: <ret> 메릴 스트립, 니콜 키드먼, 리즈 위더스푼이 출연하는 이천십칠년 드라마 '빅 리틀 라이즈'를 찾아
+    50.19s  user  발화 끝
+    61.97s  user  발화 시작: 빅 리틀 라이즈… 제목이 좀 어렵네. —
+    61.97s  agent 발화 끝
+    65.56s  user  발화 시작: … 혹시 좀 더 가볍고 로맨틱한 드라마는 없을까?
+    65.56s  user  발화 끝
+    69.41s  <ret> 발화 (turn13 첫 프레임)
+    69.66s  agent 발화 시작: <ret> 메릴 스트립, 아만다 사이프리드, 릴리 제임스가 출연하는 이천십팔년 영화 '맘마 미아! 히어 위 
+    69.66s  user  발화 끝
+    70.04s  ⚡SPAN 주입 [d'=0.64s / d_lead=12.80s]: Mamma Mia! Here We Go Again (2018) starring Meryl Streep, Amanda Seyfr
+    82.46s  user  발화 시작: 맘마 미아!는 영화잖아. 드라마는 없을까?
+    82.46s  agent 발화 끝
+    85.02s  agent 발화 시작: 네, 영화예요. 드라마는 찾기가 어렵네요.
+    85.02s  user  발화 끝
+    87.58s  user  발화 시작: 아쉽다. 그럼…
+    87.58s  agent 발화 끝
+    88.61s  user  발화 시작: …니콜 키드먼이 출연한 드라마는 찾아줄 수 있어?
+    88.61s  user  발화 끝
+    91.92s  <ret> 발화 (turn18 첫 프레임)
+    92.19s  agent 발화 시작: <ret> 니콜 키드먼과 휴 그랜트가 출연하는 이천이십년 드라마 '디 언두잉'을 찾아봤어요. 드라마, 미스터
+    92.19s  user  발화 끝
+    93.05s  ⚡SPAN 주입 [d'=1.13s / d_lead=10.24s]: (tool result) "The Undoing (2020) starring Nicole Kidman and Hugh Gran
+   102.44s  user  발화 시작: 정말요?
+   102.44s  agent 발화 끝
+   102.95s  user  발화 시작: 디 언두잉… 꽤 유명한 드라마였지.
+   102.95s  user  발화 끝
+   105.51s  agent 발화 시작: 네, 많은 사람들에게 사랑받았던 드라마예요.
+   105.51s  user  발화 끝
+   108.07s  user  발화 시작: 혹시 이 드라마 평점도 알아봐 줄 수 있어?
+   108.07s  agent 발화 끝
+   111.79s  <ret> 발화 (turn23 첫 프레임)
+   112.17s  agent 발화 시작: <ret> '디 언두잉'은 IMDb에서 십이만 명 이상의 사용자가 투표하여 십점 만점에 칠 점 사점을 받았어
+   112.17s  user  발화 끝
+   112.51s  ⚡SPAN 주입 [d'=0.72s / d_lead=10.76s]: (tool result) The Undoing has an IMDb rating of 7.4/10 based on over 1
+   122.93s  user  발화 시작: 칠 점 사점이면 괜찮은 편이네.
+   122.93s  agent 발화 끝
+   125.49s  agent 발화 시작: 네, 꽤 좋은 점수예요.
+   125.49s  user  발화 끝
+   127.53s  user  발화 시작: 그럼, 이 드라마를 볼 수 있는 다른 방법은 없을까? 에이치 비 오 Max가 없어서.
    127.53s  agent 발화 끝
-   128.03s  agent 발화 시작: 파크스 비 비 큐는 정말 맛있는 곳이에요. 즐거운 저녁 식사 되세요!
-   128.03s  user  발화 끝
-   133.55s  user  발화 시작: 혹시 지난번에 내가 말했던 거 기억해?
-   133.55s  agent 발화 끝
-   136.57s  agent 발화 시작: 지난번에 말씀하신 내용이 무엇이었는지 정확히 기억나지 않아요. 다시 한번 말씀해 주시겠어요?
-   136.57s  user  발화 끝
-   142.09s  user  발화 시작: [이 공 이 사 공 삼 일 오] 다음 주 토요일에 부산 여행 가고 싶어.
-   142.09s  agent 발화 끝
-   149.62s  agent 발화 시작: 다음 주 토요일에 부산 여행 가고 싶어.
-   149.62s  user  발화 끝
-   153.14s  agent 발화 시작: 부산 여행을 계획하고 계시는군요. 혹시 숙소나 항공편 예약을 도와드릴까요?
-   153.14s  agent 발화 끝
-   157.65s  user  발화 시작: 아니, 지금은 그냥 얘기만.
-   157.65s  agent 발화 끝
-   159.66s  agent 발화 시작: 네, 알겠습니다. 부산은 정말 아름다운 도시죠.
-   159.66s  user  발화 끝
-   162.68s  agent 발화 끝
+   134.18s  <ret> 발화 (turn27 첫 프레임)
+   134.71s  agent 발화 시작: <ret> '디 언두잉'은 Max에서 스트리밍할 수 있고, 애플 티 브이, 구글 플레이, Vudu, 아마존에
+   134.71s  user  발화 끝
+   134.92s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.20s]: (tool result) You can stream The Undoing on Max, or rent it on Apple T
+   142.90s  user  발화 시작: 아마존에서 대여하면 되는구나. 알려줘서 고마워.
+   142.90s  agent 발화 끝
+   145.46s  agent 발화 시작: 도움이 되어서 기뻐요. 혹시 다른 드라마를 더 찾아볼까요?
+   145.46s  user  발화 끝
+   149.56s  user  발화 시작: 아니, 오늘은 이 정도면 충분해.
+   149.56s  agent 발화 끝
+   152.12s  agent 발화 시작: 네, 즐거운 시간 보내세요!
+   152.12s  user  발화 끝
+   154.17s  agent 발화 끝

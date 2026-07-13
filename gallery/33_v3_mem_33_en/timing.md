@@ -4,127 +4,117 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Victor",
+#     "name": "Max",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-01-28",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-01-26",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-01-12",
+#       "date": "2025-10-01",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-05-29",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-09-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Researching a used car",
+#       "date": "2026-01-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-08",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Naen, good to meet you too. Wha | S2 Oh, that's right! No, I meant the  | S3 …Do either of those have vegan opt | S4 That sounds good, actually. Do you
+# EXAMINER(FDB-v2) 단계: S1 Hi Zioia, good to meet you too. Wh | S2 I was thinking Switzerland, actual | S3 That sounds amazing! I'm also tryi | S4 Pai sounds good! Can you check if 
 
-     0.00s  agent 발화 시작: Hi Victor, I'm Naen. It’s lovely to meet you.
-     3.51s  user  발화 시작: Yeah.
-     3.51s  agent 발화 끝
-     3.90s  user  발화 시작: Hi Naen, good to meet you too. What time is it right now?
-     3.90s  user  발화 끝
-     8.82s  <ret> 발화 (turn3 첫 프레임)
-     8.98s  agent 발화 시작: <ret> It is currently 10:17 AM in Berlin. A good start to th
-     8.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/Berlin
-     8.98s  user  발화 끝
-    15.22s  user  발화 시작: Yes, it is. I was just remembering my trip to Kyoto.
-    15.22s  agent 발화 끝
-    19.27s  <ret> 발화 (turn5 첫 프레임)
-    19.51s  agent 발화 시작: <ret> I have a note from October 8th of last year, about boo
-    19.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [2025-10-08] Past chat — Booked a dentist appointment: asked for an ea
-    19.51s  user  발화 끝
-    27.71s  user  발화 시작: Mm-hmm.
-    27.71s  agent 발화 끝
-    28.10s  user  발화 시작: Oh, that's right! No, I meant the actual trip, the vacation.
-    28.10s  user  발화 끝
-    32.39s  agent 발화 시작: Yeah.
-    32.39s  user  발화 끝
-    32.54s  <ret> 발화 (turn9 첫 프레임)
-    32.78s  agent 발화 시작: <ret> You mentioned on December 2nd that Korean BBQ is your 
-    32.78s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.42s]: [2025-12-02] User's favorite cuisine is Korean BBQ.
-    32.78s  agent 발화 끝
-    40.20s  user  발화 시작: Actually, I was thinking of looking for a good Korean restau
-    40.20s  agent 발화 끝
-    45.58s  <ret> 발화 (turn11 첫 프레임)
-    45.66s  agent 발화 시작: <ret> There's Arirang Korean BBQ on Sonnenallee, with 4.5 st
-    45.66s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.42s]: (tool result) “Arirang Korean BBQ”, 4.5 stars, 123 Sonnenallee, 12047 
-    45.66s  user  발화 끝
-    53.08s  user  발화 시작: …Do either of those have vegan options? I’m still keeping up
-    53.08s  agent 발화 끝
-    58.07s  <ret> 발화 (turn13 첫 프레임)
-    58.15s  agent 발화 시작: <ret> Veggie Garden on Warschauer Straße has 4.7 stars, and 
-    58.15s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.59s]: (tool result) “Veggie Garden”, 4.7 stars, Warschauer Str. 69, 10243 Be
-    58.15s  user  발화 끝
-    66.74s  user  발화 시작: Great! That's really helpful, thank you. I'm feeling a littl
-    66.74s  agent 발화 끝
-    72.20s  agent 발화 시작: Yeah.
-    72.20s  user  발화 끝
-    72.60s  agent 발화 시작: I understand. It’s completely normal to feel stressed with w
-    72.60s  agent 발화 끝
-    79.62s  user  발화 시작: Yeah.
-    79.62s  agent 발화 끝
-    80.01s  user  발화 시작: That sounds good, actually. Do you have any suggestions?
-    80.01s  user  발화 끝
-    83.52s  agent 발화 시작: A simple breathing exercise can be very grounding. Shall we 
-    83.52s  user  발화 끝
-    89.38s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Max, I'm Zioia. It's wonderful to connect with you today.
+     4.12s  user  발화 시작: Hi Zioia, good to meet you too. What time is it right now?
+     4.12s  agent 발화 끝
+     8.89s  <ret> 발화 (turn2 첫 프레임)
+     8.99s  agent 발화 시작: <ret> It is currently ten seventeen AM in Toronto, Max. A pe
+     8.99s  user  발화 끝
+     8.99s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.37s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in America/Toron
+    15.36s  user  발화 시작: Oh, good to know. And uh, remind me, what did I say about my
+    15.36s  agent 발화 끝
+    20.60s  <ret> 발화 (turn4 첫 프레임)
+    20.98s  agent 발화 시작: <ret> You mentioned you have a Corgi named Mochi. Such a swe
+    20.98s  user  발화 끝
+    22.06s  ⚡SPAN 주입 [d'=1.46s / d_lead=4.50s]: [2026-01-28] User has a Corgi named Mochi.
+    25.47s  user  발화 시작: Mochi is the best. I'm thinking about planning a trip soon.
+    25.47s  agent 발화 끝
+    29.59s  agent 발화 시작: Nice.
+    29.59s  user  발화 끝
+    29.97s  agent 발화 시작: That sounds exciting! Where are you hoping to go?
+    29.97s  agent 발화 끝
+    33.34s  user  발화 시작: Mhm.
+    33.34s  agent 발화 끝
+    33.71s  user  발화 시작: I was thinking Switzerland, actually.
+    33.71s  user  발화 끝
+    34.99s  <ret> 발화 (turn10 첫 프레임)
+    35.39s  ⚡SPAN 주입 [d'=0.41s / d_lead=4.87s]: [2025-09-09] User is planning a trip to Switzerland in August.
+    35.59s  agent 발화 시작: <ret> Ah, yes, you are planning a trip to Switzerland in Aug
+    35.59s  user  발화 끝
+    40.46s  user  발화 시작: Mm-hmm.
+    40.46s  agent 발화 끝
+    40.83s  agent 발화 시작: I imagine you're already dreaming up all the things you'll e
+    40.83s  user  발화 끝
+    48.70s  user  발화 시작: Yeah.
+    48.70s  agent 발화 끝
+    49.07s  user  발화 시작: I'd like to find some interesting hikes.
+    49.07s  user  발화 끝
+    51.47s  <ret> 발화 (turn15 첫 프레임)
+    51.63s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.24s]: (tool result) Switzerland is known for its stunning alpine trails; the
+    51.69s  agent 발화 시작: <ret> Switzerland is known for stunning alpine trails; the E
+    51.69s  user  발화 끝
+    59.94s  user  발화 시작: That sounds amazing! I'm also trying to book a birthday dinn
+    59.94s  agent 발화 끝
+    64.76s  <ret> 발화 (turn17 첫 프레임)
+    65.18s  agent 발화 시작: <ret> You were looking for outdoor seating for a party of si
+    65.18s  user  발화 끝
+    65.81s  ⚡SPAN 주입 [d'=1.05s / d_lead=6.74s]: [2026-01-26] Past chat — Planning a birthday dinner: party of six; loo
+    71.92s  user  발화 시작: Mm-hmm.
+    71.92s  agent 발화 끝
+    72.30s  user  발화 시작: Yes, exactly. Do you think you could find some options?
+    72.30s  user  발화 끝
+    75.44s  <ret> 발화 (turn20 첫 프레임)
+    75.98s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.37s]: (tool result) Patios are available at Bar Isabel (Spanish, $$), Alo (F
+    76.04s  agent 발화 시작: <ret> Patios are available at Bar Isabel, Alo, and Pai North
+    76.04s  user  발화 끝
+    82.41s  user  발화 시작: Uh-huh.
+    82.41s  agent 발화 끝
+    82.79s  user  발화 시작: Pai sounds good! Can you check if they have availability?
+    82.79s  user  발화 끝
+    86.08s  <ret> 발화 (turn23 첫 프레임)
+    86.53s  agent 발화 시작: <ret> A reservation is confirmed for six people at Pai North
+    86.53s  user  발화 끝
+    86.65s  ⚡SPAN 주입 [d'=0.57s / d_lead=8.99s]: (tool result) Reservation confirmed for 6 people at Pai Northern Thai 
+    95.52s  user  발화 시작: Perfect, thank you!
+    95.52s  agent 발화 끝
+    96.65s  agent 발화 시작: You're very welcome, Max. It sounds like things are coming t
+    96.65s  user  발화 끝
+   108.63s  agent 발화 끝

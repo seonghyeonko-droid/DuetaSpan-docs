@@ -4,136 +4,98 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "성준",
+#     "name": "태온",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-02-06",
+#       "date": "2026-06-07",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     },
 #     {
-#       "date": "2025-10-25",
+#       "date": "2026-06-05",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-07-06",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-05-27",
+#       "date": "2025-11-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-09-23",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-01",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-31",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-09",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 비단 위원회에 가입하려면 최소 몇 살이 되어야 해? | S2 오, 알았어. 홈페이지에서 신청서를 다운로드받으면 되는 거네? | S3 … 혹시 이번 주 토요일에… | S4 칠월 십오일까지라… 시간이 얼마 없네.
+# EXAMINER(FDB-v2) 단계: S1 커피… 커피는 언제부터 유럽에 들어왔지? | S2 스트레스 해소? 요즘도 커피 마시면서 힐링하잖아. | S3 서울 날씨는 괜찮네요. 그럼… 이번 주 토요일에 서울 근처로… | S4 …곳 추천해 줄 수 있어?
 
-     0.00s  user  발화 시작: 비단 위원회에 가입하려면 최소 몇 살이 되어야 해?
-     3.96s  <ret> 발화 (turn1 첫 프레임)
-     4.36s  agent 발화 시작: <ret> 비단 위원회에 가입하려면 최소 삼십세여야 합니다.
-     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.27s]: The minimum age limit for membership of vidhan parishad is 30 years ol
-     4.36s  user  발화 끝
-     7.62s  user  발화 시작: 와.
-     7.62s  agent 발화 끝
-     8.17s  user  발화 시작: 음, 그럼 위원회는 정확히 뭘 하는 곳인데?
-     8.17s  user  발화 끝
-    11.98s  agent 발화 시작: 비단 위원회는 지역 사회 발전을 위한 다양한 활동을 지원하는 곳입니다.
-    11.98s  user  발화 끝
-    17.43s  user  발화 시작: 아, 그렇구나. 그럼 위원회에 가입하려면 어떻게 해야 돼?
-    17.43s  agent 발화 끝
-    21.62s  <ret> 발화 (turn6 첫 프레임)
-    21.78s  agent 발화 시작: <ret> 비단 위원회에 가입하려면 신청서와 필요한 서류를 제출해야 합니다. 자세한 내용은 위원회 홈페이지에
-    21.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.17s]: To become a member of the vidhan parishad, one must submit an applicat
-    21.78s  user  발화 끝
-    29.95s  user  발화 시작: 응.
-    29.95s  agent 발화 끝
-    30.50s  user  발화 시작: 홈페이지는 어디에 있어?
-    30.50s  user  발화 끝
-    31.97s  <ret> 발화 (turn9 첫 프레임)
-    32.13s  agent 발화 시작: <ret> 비단 위원회 홈페이지는 www.vidhanparishad.gov.in 입니다. 가입 정보와 활동 
-    32.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) The official website of the vidhan parishad is www.vidha
-    32.13s  user  발화 끝
-    39.21s  user  발화 시작: 오, 알았어. 홈페이지에서 신청서를 다운로드받으면 되는 거네?
-    39.21s  agent 발화 끝
-    43.02s  agent 발화 시작: 네, 맞습니다. 홈페이지에서 신청서를 다운로드하여 작성하신 후 제출하시면 됩니다.
-    43.02s  user  발화 끝
-    47.92s  user  발화 시작: 혹시 위원회 활동에 참여하려면 꼭 가입해야 하는 거야?
-    47.92s  agent 발화 끝
-    52.28s  agent 발화 시작: 네.
-    52.28s  user  발화 끝
-    52.82s  agent 발화 시작: 꼭 가입해야 하는 것은 아니지만, 회원으로 가입하시면 다양한 활동에 더 쉽게 참여하실 수 있습니다.
-    52.82s  agent 발화 끝
-    60.45s  user  발화 시작: 음… 그렇다면, 위원회에서 현재 진행 중인 활동이 뭐가 있어?
-    60.45s  agent 발화 끝
-    65.35s  agent 발화 시작: 네.
-    65.35s  user  발화 끝
-    65.81s  <ret> 발화 (turn17 첫 프레임)
-    65.89s  agent 발화 시작: <ret> 비단 위원회는 현재 환경 보호와 청년 역량 강화를 위한 지역 사회 봉사 프로그램을 진행하고 있습니
-    65.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.44s]: (tool result) The vidhan parishad is currently running a community out
-    65.89s  agent 발화 끝
-    77.33s  user  발화 시작: 환경 보호 프로그램이라… 어떤 식으로 진행되는 거야? —
-    77.33s  agent 발화 끝
-    81.69s  user  발화 시작: … 혹시 이번 주 토요일에…
-    81.69s  user  발화 끝
-    84.41s  user  발화 시작: …참여할 수 있는 봉사활동이 있을까?
-    84.41s  user  발화 끝
-    87.13s  agent 발화 시작: 네.
-    87.13s  user  발화 끝
-    87.68s  agent 발화 시작: 이번 주 토요일에는 강변 정화 활동이 예정되어 있습니다. 참여를 원하시면 신청서를 작성해 주셔야 합니다.
-    87.68s  agent 발화 끝
-    95.30s  user  발화 시작: 어.
-    95.30s  agent 발화 끝
-    95.85s  user  발화 시작: 아, 좋네. 그럼 신청서는…
-    95.85s  user  발화 끝
-    98.02s  user  발화 시작: …지금 바로 할 수 있어?
-    98.02s  user  발화 끝
-   100.43s  <ret> 발화 (turn26 첫 프레임)
-   100.75s  agent 발화 시작: <ret> 환경 보호 프로그램 신청서는 비단 위원회 홈페이지에서 이천이십육년 칠월 십오일까지 온라인으로 제출
-   100.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.62s]: The application form for the environmental conservation program can be
-   100.75s  user  발화 끝
-   108.37s  user  발화 시작: 칠월 십오일까지라… 시간이 얼마 없네.
-   108.37s  agent 발화 끝
-   111.09s  agent 발화 시작: 네, 시간 여유가 많지 않으니 서둘러 신청하시는 것이 좋겠습니다.
-   111.09s  user  발화 끝
-   116.00s  user  발화 시작: 응.
-   116.00s  agent 발화 끝
-   116.54s  user  발화 시작: 그럼, 혹시 봉사활동 때 필요한 준비물이 있을까?
-   116.54s  user  발화 끝
-   120.35s  agent 발화 시작: 편안한 복장과 개인 물통을 준비해 오시면 됩니다. 위원회에서 장갑과 쓰레기 봉투를 제공해 드립니다.
-   120.35s  user  발화 끝
-   127.43s  user  발화 시작: 아.
-   127.43s  agent 발화 끝
-   127.98s  user  발화 시작: 알았어. 고마워, 주나라. 덕분에 잘 알게 됐어.
-   127.98s  user  발화 끝
-   131.79s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
-   131.79s  user  발화 끝
-   133.97s  agent 발화 끝
+     0.00s  user  발화 시작: 커피… 커피는 언제부터 유럽에 들어왔지?
+     2.37s  <ret> 발화 (turn1 첫 프레임)
+     2.72s  agent 발화 시작: <ret> 유럽에 커피하우스가 처음 생긴 건 천육백사십오년 베네치아였어요.
+     2.72s  user  발화 끝
+     3.34s  ⚡SPAN 주입 [d'=0.97s / d_lead=3.80s]: The first European coffee houses opened in Venice in 1645.
+     6.52s  user  발화 시작: 베네치아… 음, 천육백사십오년이라…
+     6.52s  agent 발화 끝
+     8.15s  agent 발화 시작: 십칠세기 초에는 커피가 유럽 귀족들 사이에서 꽤 인기 있었답니다. 스트레스 해소에 도움이 된다고 여겼거든요.
+     8.15s  user  발화 끝
+    15.76s  user  발화 시작: 스트레스 해소? 요즘도 커피 마시면서 힐링하잖아.
+    15.76s  agent 발화 끝
+    19.02s  agent 발화 시작: 맞아요. 커피는 여전히 많은 사람들에게 위로가 되죠. 혹시 지금 스트레스 받는 일 있으세요?
+    19.02s  user  발화 끝
+    26.08s  user  발화 시작: 아, 요즘 회사 일이 좀 많아서…
+    26.08s  agent 발화 끝
+    29.26s  <ret> 발화 (turn7 첫 프레임)
+    29.34s  agent 발화 시작: <ret> 현재 기온은 섭씨 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+    29.34s  user  발화 끝
+    29.56s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.98s]: Weather in Seoul: 23.0°C, humidity 74%, wind 5.5 km/h.
+    35.32s  user  발화 시작: 서울 날씨는 괜찮네요. 그럼… 이번 주 토요일에 서울 근처로…
+    35.32s  agent 발화 끝
+    40.21s  user  발화 시작: …당일치기 여행 갈 만한…
+    40.21s  user  발화 끝
+    42.38s  user  발화 시작: …곳 추천해 줄 수 있어?
+    42.38s  user  발화 끝
+    44.73s  <ret> 발화 (turn11 첫 프레임)
+    45.10s  agent 발화 시작: <ret> 서울의 경복궁은 매년 수백만 명의 방문객이 찾는 주요 명소예요. 한국의 역사와 건축을 엿볼 수 있
+    45.10s  user  발화 끝
+    45.72s  ⚡SPAN 주입 [d'=0.99s / d_lead=8.15s]: (tool result) Gyeongbokgung Palace is a major landmark in Seoul, attra
+    53.25s  user  발화 시작: 경복궁… 가본 적 있는데, 좋았어.
+    53.25s  agent 발화 끝
+    55.96s  agent 발화 시작: 경복궁은 아름다운 곳이죠. 잠시 쉬면서 마음을 차분하게 가라앉히기에 좋은 장소예요.
+    55.96s  user  발화 끝
+    61.40s  agent 발화 끝

@@ -4,56 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "정훈",
+#     "name": "서서",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2026-01-22",
+#       "date": "2026-05-10",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-06-21",
+#       "date": "2026-04-02",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-11-02",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-05",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-15",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 뉴올리언스 전투 노래가 언제 처음 나왔는지 궁금해.
-     3.74s  <ret> 발화 (turn1 첫 프레임)
-     3.90s  agent 발화 시작: <ret> 뉴올리언스 전투 노래는 천구백오십구년 사월에 처음 발매되었어요. 듣기 좋은 노래죠.
-     3.90s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.57s]: The song "The Battle of New Orleans" was released in April 1959.
-     3.90s  user  발화 끝
-     9.47s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 농구 선수 중에 제일 많이 버는 선수는 누구야?
+     4.51s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  agent 발화 시작: <ret> 음, 제일 많이 버는 선수는 스테판 커리 선수인데, 이천이십삼 이십사 시즌에 오천일백구십만 달러를
+     4.61s  user  발화 끝
+     5.44s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.17s]: Stephen Curry is the highest paid player in the NBA, earning $51.9 mil
+    11.78s  agent 발화 끝

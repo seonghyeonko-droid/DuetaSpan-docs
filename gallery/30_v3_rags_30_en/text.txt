@@ -1,72 +1,68 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Milo, a calm and patient supportive advisor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Sioen, a warm and attentive personal guide who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Alex",
+    "name": "Mason",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-01-27",
-      "category": "home",
-      "text": "User's home address is 126 Maple Drive."
-    },
-    {
-      "date": "2026-01-22",
+      "date": "2026-05-10",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-06-21",
+      "date": "2026-03-25",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-31",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-24",
-      "title": "Setting up a home network",
+      "date": "2025-12-17",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-14",
-      "title": "Comparing gym memberships",
+      "date": "2025-07-14",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-09",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the song “The Battle of New Orleans” come out?
-[  3.95s][moshi] «backchannel» Yeah, yeah.
-[  4.67s][moshi] ⟨ret@4.35s⟩ ⟦⚡SPAN@4.67s: Johnny Horton released "The Battle of New Orleans" in April 1959, and it quickly became a country music hit.⟧ That song, “The Battle of New Orleans,” was released in April 1959, becoming quite popular.
+[  0.00s][user ] Who earns the most money playing in the NBA? ⟨ret@3.60s⟩
+[  3.79s][moshi] ⟦⚡SPAN@4.16s: Stephen Curry is the highest-paid NBA player, earning $51.9 million in the 2023–24 season.⟧ Well, it looks like Stephen Curry is the highest-paid NBA player, earning $51.9 million during the 2023–24 season. That’s quite a bit, isn’t it?

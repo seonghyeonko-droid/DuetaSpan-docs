@@ -1,111 +1,97 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Gialo, a calm and patient counselor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Brex, a encouraging and non-judgmental wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Avery",
+    "name": "Dylan",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-24",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-04-27",
+      "date": "2025-12-13",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-04-01",
-      "category": "home",
-      "text": "User's home address is 180 Birch Road."
+      "date": "2025-11-09",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-01-29",
+      "date": "2025-08-09",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-11-17",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-06-15",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-06-14",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-03",
-      "title": "Comparing gym memberships",
+      "date": "2026-01-17",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-30",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling a bit lost, actually. I just had a disagreement with a friend.
-[  5.39s][moshi] That sounds difficult. Disagreements are a normal part of friendships, but they can be upsetting.
-[ 11.16s][user ] Yeah, it was about… well, it’s complicated. She said I never listen.
-[ 15.78s][moshi] It’s tough when someone questions how you connect with them. What makes you feel this is happening?
-[ 22.32s][user ] «backchannel» Okay.
-[ 22.70s][user ] I don’t know. I try…
-[ 24.63s][user ] …but maybe I interrupt? I get excited.
-[ 27.32s][moshi] It’s common to interrupt when passionate, though it can make others feel unheard.
-[ 32.32s][user ] «backchannel» Yeah.
-[ 32.71s][moshi] Perhaps focusing on active listening—really hearing her perspective—could help? It’s about showing you value her thoughts.
-[ 38.86s][user ] Active listening… okay. I think I do that sometimes, but not always.
-[ 43.48s][moshi] It’s a skill that takes practice. It isn’t about always agreeing, but understanding.
-[ 48.48s][user ] «backchannel» Yeah, totally.
-[ 49.25s][user ] She’s been really stressed lately with work. Maybe that’s it.
-[ 53.10s][moshi] Stress can definitely impact how we communicate and react to others.
-[ 57.33s][user ] «backchannel» Yeah.
-[ 57.72s][user ] I wonder if I should just apologize, even if I don’t think I’m entirely wrong?
-[ 63.49s][moshi] Apologizing for your part in the disagreement, even a small part, can be very powerful.
-[ 69.26s][user ] «backchannel» Mm-hmm.
-[ 69.65s][user ] That's a good point. Can you find me a nice flower shop ⟨ret@74.41s⟩ nearby?
-[ 74.65s][moshi] ⟦⚡SPAN@74.65s: (tool result) {"restaurants": [{"name": "Florist Kim", "address": "123 Garden Street, Seoul", "phone": "02-123⟧ There’s Florist Kim at 123 Garden Street in Seoul, their phone number is 02-1234-5678.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "flower shop"}}
-[ 80.04s][user ] Perfect! Could you book me a bouquet for delivery tomorrow? ⟨ret@83.81s⟩
-[ 83.89s][moshi] ⟦⚡SPAN@83.89s: (tool result) {"confirmation id": "FK7890"}⟧ I’ve reserved a bouquet for delivery tomorrow at 10:00 AM, confirmation ID is FK7890.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Florist Kim", "date": "2026-07-11", "time": "10:00", "party_size": "1"}}
-[ 89.27s][user ] Oh, that’s fantastic. Thank you!
-[ 91.20s][moshi] You're very welcome. A small gesture can often make a big difference.
-[ 95.81s][user ] I’m also thinking of calling her, but I’m nervous.
-[ 99.28s][moshi] «backchannel» Yeah, yeah.
-[100.05s][moshi] It’s natural to feel nervous before a difficult conversation. What’s making you most anxious?
-[105.43s][user ] I’m afraid she’ll just get angry again.
-[108.13s][moshi] It’s understandable to anticipate a negative reaction. Perhaps starting with acknowledging her feelings could help?
-[113.90s][user ] «backchannel» Yeah.
-[114.28s][user ] Like, “I hear you”?
-[115.82s][moshi] Exactly. Validating her feelings—showing you understand her perspective—can de-escalate the situation.
-[120.06s][user ] That makes sense. What’s the weather like in London right ⟨ret@123.89s⟩ now?
-[124.29s][moshi] ⟦⚡SPAN@124.29s: (tool result) {"temperature": "18.5°C", "humidity": "65%", "wind speed": "8.2 km/h"}⟧ The current weather in London is 18.5 degrees Celsius, with 65% humidity and an 8.2 kilometer per hour wind speed.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "London"}}
-[131.99s][user ] Okay, good to know. Thanks again, Gialo.
-[134.68s][moshi] You’re most welcome. Remember, open communication is key to healthy friendships.
+[  0.00s][user ] I need a map of the Guardian website, focusing on climate change content, with a depth of three.
+[  6.80s][moshi] «backchannel» Mm-hmm.
+[  7.18s][moshi] ⟨ret@7.03s⟩ I’ve ⟦⚡SPAN@7.87s: (tool result) {"url": "https://www.theguardian.com/environment/climate-crisis", "title": "Climate crisis – all⟧ mapped the Guardian’s climate change section — it appears the main hub is at theguardian.com/environment/climate-crisis.
+      CALL: {"function": "tavily-map", "arguments": {"url": "theguardian.com", "query": "climate change", "depth": 3}}
+[ 13.23s][user ] That's good. Are there any upcoming climate protests in ⟨ret@16.47s⟩ London?
+[ 17.01s][moshi] ⟦⚡SPAN@16.88s: (tool result) {"event name": "Extinction Rebellion London", "date": "2026-07-15", "time": "10:00", "location":⟧ Yes, Extinction Rebellion is holding a protest in Trafalgar Square on July fifteenth, starting at ten AM.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "London", "keywords": "climate protest"}}
+[ 23.43s][user ] July fifteenth… that’s pretty soon. I'm actually thinking of visiting Berlin instead.
+[ 27.97s][moshi] Berlin is a wonderful city! A change of scenery can be really refreshing.
+[ 32.88s][user ] True. What's the weather like there ⟨ret@35.28s⟩ right now?
+[ 35.90s][moshi] ⟦⚡SPAN@35.69s: (tool result) "21.5°C, humidity 62%, wind 3.2 km/h"⟧ The current weather in Berlin is twenty-one point five degrees Celsius, with sixty-two percent humidity and a three point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Berlin"}}
+[ 44.98s][user ] «backchannel» Okay.
+[ 45.35s][user ] Hmm, sounds pleasant. Are there any good vegan restaurants nearby?
+[ 49.13s][moshi] Before I check, are you still referring to Berlin?
+[ 52.53s][user ] Yes, Berlin. Sorry for not being clear. ⟨ret@55.14s⟩
+[ 55.18s][moshi] ⟦⚡SPAN@55.44s: (tool result) (Restaurants_2 FindRestaurants result) {"restaurant name": "Brammibal's Donuts", "address": "May⟧ Brammibal's Donuts has a four point five star rating and is located at Maybachufer eight, in Berlin.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Berlin", "cuisine": "vegan"}}
+[ 61.60s][user ] Donuts sound amazing! – but I was hoping for something a little more substantial.
+[ 66.90s][user ] …Do they have any vegan restaurants that serve dinner? ⟨ret@70.14s⟩
+[ 70.30s][moshi] Oh, ⟦⚡SPAN@71.14s: (tool result) (Restaurants_2 FindRestaurants result) {"restaurant name": "Lucky Leek", "address": "Kollwitzstr⟧ certainly — Lucky Leek has a four point seven star rating and is located on Kollwitzstraße fifty-four, offering vegan dinner options.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Berlin", "cuisine": "vegan", "time_of_day": "dinner"}}
+[ 78.61s][user ] That sounds perfect. Can you reserve a table for two there on July twelfth at seven PM? ⟨ret@84.97s⟩
+[ 85.04s][moshi] I've reserved ⟦⚡SPAN@86.06s: (tool result) (Restaurants_2 ReserveRestaurant result) {"confirmation id": "LL2026071272"}⟧ a table for two at Lucky Leek on July twelfth at seven PM; your confirmation ID is LL2026071272.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Lucky Leek", "date": "2026-07-12", "time": "19:00", "party_size": 2}}
+[ 92.60s][user ] «backchannel» Yeah.
+[ 92.97s][user ] Wonderful, thank you. I was feeling really stuck creatively lately, but planning this trip is helping.
+[ 99.02s][moshi] That’s fantastic to hear! Sometimes a shift in environment is all it takes to unlock new ideas.
+[105.45s][user ] «backchannel» Okay.
+[105.82s][user ] I think you’re right. I'm also trying to get back into painting.
+[110.36s][moshi] Painting is such a wonderful outlet. It's a beautiful way to express yourself.
+[115.27s][user ] I used to be really good, but I’ve lost my confidence.
+[119.43s][moshi] «backchannel» Right.
+[119.81s][moshi] It’s common to feel that way after a break. Remember, it's about the joy of creating, not perfection.
+[126.61s][user ] That’s a good point. Do you know of any art supply stores in ⟨ret@131.38s⟩ Berlin?
+[131.90s][moshi] ⟦⚡SPAN@131.84s: (tool result) "Boesner is a popular art supply store in Berlin, offering a wide range of materials for artists⟧ Boesner is a well-regarded art supply store in Berlin, offering a wide selection of materials.
+      CALL: {"function": "search", "arguments": {"query": "art supply stores Berlin"}}
+[137.57s][user ] «backchannel» Yeah.
+[137.95s][user ] Excellent. Could you remind me, what was the weather in Berlin again?
+[142.48s][moshi] The weather in Berlin is currently twenty-one point five degrees Celsius, with sixty-two percent humidity.
+[148.15s][user ] «backchannel» Yeah.
+[148.53s][user ] Great. One last thing – can you find me some information on the Berlin Wall Memorial? ⟨ret@154.46s⟩
+[154.58s][moshi] ⟦⚡SPAN@154.56s: (tool result) "The Berlin Wall Memorial extends along Bernauer Straße and offers a comprehensive look at the h⟧ The Berlin Wall Memorial runs along Bernauer Straße, offering a comprehensive look at the Wall's history.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Berlin", "attraction": "Berlin Wall Memorial"}}

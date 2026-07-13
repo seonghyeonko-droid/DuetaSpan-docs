@@ -4,61 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Owen",
+#     "name": "Stella",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
-#     },
-#     {
-#       "date": "2025-10-29",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-10-27",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-08-15",
+#       "date": "2026-04-03",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-07-28",
+#       "date": "2026-03-27",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-22",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-19",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-24",
+#       "date": "2025-12-17",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -66,20 +53,22 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-18",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-10",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the Philadelphia Eagles play in the playoffs in two
-     4.84s  <ret> 발화 (turn1 첫 프레임)
-     5.16s  agent 발화 시작: <ret> Oh, that was a really exciting time for them! The Eagl
-     5.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.80s]: The Philadelphia Eagles played the Atlanta Falcons in the Divisional R
-     5.16s  user  발화 끝
-    16.96s  agent 발화 끝
+     0.00s  user  발화 시작: When did the final episode of Madam Secretary air?
+     3.72s  <ret> 발화 (turn2 첫 프레임)
+     3.75s  agent 발화 시작: Mm-hmm.
+     3.75s  user  발화 끝
+     4.17s  agent 발화 시작: <ret> That final episode aired on May 20, 2018. It’s interes
+     4.17s  agent 발화 끝
+     4.56s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.92s]: The final episode of Madam Secretary aired on May 20, 2018, concluding
+    12.10s  agent 발화 끝

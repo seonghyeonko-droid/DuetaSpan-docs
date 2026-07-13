@@ -1,113 +1,111 @@
 v3_rag_24_ko src=nq style=v1
-SYSTEM: <system> 당신은 스트레스 해소 및 마음챙김을 돕는 따뜻하고 세심한 개인 가이드인 페미입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 파리르이며, 일상적인 결정과 감정에 대해 사람들을 돕는 친절하고 침착한 웰니스 코치입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "성현",
+    "name": "라별",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-24",
+      "date": "2025-10-17",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-10-02",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-09-30",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
+    },
+    {
+      "date": "2025-09-24",
       "category": "home",
       "text": "User's home address is 서울 강남구 역삼동 678-9."
     },
     {
-      "date": "2026-01-11",
+      "date": "2025-08-24",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-07-22",
       "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-10-26",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-07-03",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-23",
+      "date": "2025-12-23",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-11-25",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-25",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 날씨가 ⟨ret@1.11s⟩ 어때?
-[  1.43s][moshi] ⟦⚡SPAN@1.43s: (tool result) Current weather in Seoul is 23.0°C, humidity 74%, wind 5.5 km/h.⟧ 지금 서울 날씨는 섭씨 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
+[  0.00s][user ] 오늘 날씨 어때? ⟨ret@1.30s⟩
+[  1.54s][moshi] 지금 ⟦⚡SPAN@2.68s: (tool result) {"temperature": "23.0°C", "humidity": "74%", "wind": "5.5 km/h"}⟧ 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다. 오늘 하루도 활기차게 보내세요!
       CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[  7.14s][moshi] 날씨 확인해 드렸어요.
-[  8.57s][user ] 음… 요즘 영화 볼만한 거 있어? ⟨ret@11.35s⟩
-[ 11.43s][moshi] ⟦⚡SPAN@11.43s: (tool result) The movie 'Inside Out 2' is currently showing in theaters, with a rating of 8.5/10.⟧ 지금 극장에서 상영 중인 '인사이드 아웃 이'라는 영화가 평점 팔 점 오점 정도라고 하네요.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[ 18.10s][moshi] 혹시 어떤 장르를 좋아하세요?
-[ 20.00s][user ] 그냥… 코미디? 웃긴 거 보고 ⟨ret@22.46s⟩ 싶어.
-[ 22.86s][moshi] ⟦⚡SPAN@22.86s: (tool result) The comedy film 'Bad Boys: Ride or Die' is playing now, with Will Smith and Martin Lawrence.⟧ 지금 윌 스미스와 마틴 로렌스가 출연하는 코미디 영화 '배드 보이: 라이드 오어 다이'가 상영 중이에요.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[ 30.00s][moshi] 재미있을 것 같아요.
-[ 31.43s][user ] 아, 그 영화 봤어. 괜찮았어. 질 스콧이 출연한 영화 뭐 있을까?
-[ 36.67s][moshi] «backchannel» 예.
-[ 37.15s][moshi] ⟨ret@36.75s⟩ ⟦⚡SPAN@37.15s: (tool result) Jill Scott starred in 'Why Did I Get Married?' released in 2007, alongside Janet Jackson and Mal⟧ 질 스콧은 이천칠년에 개봉한 '와이 디드 아이 겟 매리드?'에 출연했는데, 재닛 잭슨과 말릭 얀시도 함께 출연했어요.
-      CALL: {"function": "search", "arguments": {"query": "Jill Scott movies"}}
-[ 44.77s][user ] «backchannel» 네.
-[ 45.24s][user ] 그 영화에서 질 스콧 남자친구는 ⟨ret@47.70s⟩ 누구였어?
-[ 48.10s][moshi] ⟦⚡SPAN@48.10s: (tool result) In 'Why Did I Get Married?', Jill Scott's character, Helen Simms, is married to Mike Simms, play⟧ '와이 디드 아이 겟 매리드?'에서 질 스콧이 연기한 헬렌 심스는 리처드 T. 존스가 연기한 마이크 심스와 결혼한 사이예요.
-      CALL: {"function": "search", "arguments": {"query": "Jill Scott's boyfriend in why did i get married?"}}
-[ 56.67s][moshi] 기억이 잘 안 나셨군요.
-[ 58.58s][user ] 맞아, 기억이 잘 안 나. 리처드 T. 존스라고?
-[ 62.39s][moshi] 네, 맞아요. 리처드 T. 존스라고 합니다.
-[ 65.25s][moshi] 혹시 다른 영화에 대해서도 궁금하신가요?
-[ 67.63s][user ] 아니, 괜찮아. 이번 주 토요일에 뭐 할까?
-[ 70.96s][moshi] 이번 주 토요일이 칠월 십일일이네요.
-[ 73.34s][moshi] 특별히 계획하신 건 있으세요?
-[ 75.25s][user ] 아직… 그냥 영화 볼까 생각 중인데. ⟨ret@78.03s⟩
-[ 78.11s][moshi] ⟦⚡SPAN@78.11s: (tool result) 'Despicable Me 4' is scheduled to be released on July 12, 2026.⟧ '슈퍼배드 사'가 이천이십육년 칠월 십이일에 개봉될 예정이에요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 81.44s][moshi] 토요일에 개봉하는 영화를 보시는 건 어떠세요?
-[ 84.30s][user ] 오, 그거 괜찮겠다. 예매해 줄 수 ⟨ret@87.23s⟩ 있어?
-[ 87.63s][moshi] ⟦⚡SPAN@87.63s: (tool result) Booking confirmed for 'Despicable Me 4' at 7:00 PM, 2 tickets, confirmation ID: X7Y9Z1.⟧ '슈퍼배드 사' 일곱시 상영, 두장 예매 완료되었습니다. 확인 번호는 엑스 칠 와이 구 제트 일입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {}}
-[ 94.78s][moshi] 예매해 드렸어요.
-[ 95.73s][user ] 고마워. 혹시… 명상하는 방법 좀 알려줄 수 있어?
-[ 99.54s][moshi] 명상은 스트레스 해소에 아주 효과적이에요.
-[101.92s][moshi] 편안한 자세로 앉아 눈을 감고, 호흡에 집중해 보세요.
-[105.73s][user ] «backchannel» 네.
-[106.21s][user ] 어떻게 호흡해야 해?
-[107.63s][moshi] 숨을 깊게 들이쉬고 천천히 내쉬는 것을 반복해 보세요.
-[111.44s][moshi] 배가 부풀어 오르고 꺼지는 것을 느껴보세요.
-[114.30s][user ] «backchannel» 네.
-[114.78s][user ] 음… 쉽지 않네.
-[116.21s][moshi] 처음에는 어려울 수 있어요. 꾸준히 연습하면 익숙해질 거예요.
-[120.02s][moshi] 너무 조급해하지 말고, 편안하게 호흡에 집중하는 것이 중요해요.
-[123.83s][user ] 알았어. 좀 더 연습해 봐야겠다.
-[126.21s][moshi] 네, 천천히 하세요.
-[127.64s][moshi] 저는 언제든 스트레스 해소와 명상에 도움을 드릴 수 있습니다.
-[131.92s][user ] 고마워, 페미.
-[132.88s][moshi] 천만에요.
-[133.35s][moshi] 마음의 평화를 찾으시는 데 도움이 되었다면 기쁩니다.
-[136.69s][user ] «backchannel» 예.
-[137.16s][user ] 아, 맞다. 이번 주말에 부산 갈 건데, 부산 날씨는 ⟨ret@141.60s⟩ 어때?
-[141.92s][moshi] ⟦⚡SPAN@141.92s: (tool result) Current weather in Busan is 25.5°C, humidity 68%, wind 7.2 km/h.⟧ 지금 부산 날씨는 섭씨 이십오 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Busan"}}
-[148.59s][moshi] 부산 여행 잘 다녀오세요.
-[150.50s][user ] 네, 고마워.
-[151.45s][moshi] 즐거운 여행 되세요.
-[152.88s][moshi] 혹시 부산에서 가볼 만한 곳 추천해 드릴까요?
+[  8.70s][user ] 음… 그럼 이번 주말에 영화 볼까?
+[ 11.78s][moshi] 이번 주말에 영화를 보시는군요. 어떤 장르를 좋아하세요?
+[ 15.36s][user ] 뭐… 액션 영화 괜찮아. ⟨ret@17.40s⟩
+[ 17.41s][moshi] "더 이퀄라이저 ⟦⚡SPAN@18.90s: (tool result) "The Equalizer 3" is playing at Lotte Cinema World Tower, showing times are 1:00 PM, 4:00 PM, an⟧ 삼"가 롯데월드타워점에서 상영 중이고, 상영 시간은 오후 한시, 네시, 일곱시입니다.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "action"}}
+[ 23.55s][user ] 롯데월드타워점… 거기가 어디에 있지? ⟨ret@25.39s⟩
+[ 25.60s][moshi] 롯데시네마 ⟦⚡SPAN@26.31s: (tool result) Lotte Cinema World Tower is located at 300 Olympic-ro, Songpa-gu, Seoul, South Korea.⟧ 월드타워점은 대한민국 서울특별시 송파구 올림픽로 삼백에 위치해 있습니다.
+      CALL: {"function": "map_place_details", "arguments": {"query": "Lotte Cinema World Tower"}}
+[ 30.21s][user ] 아, 송파구구나. 거기 가는 버스 좀 ⟨ret@33.35s⟩ 알려줘.
+[ 33.79s][moshi] ⟦⚡SPAN@33.94s: (tool result) Bus number 341 from Gangnam Station will take you to Lotte Cinema World Tower.⟧ 강남역에서 삼백사십일번 버스를 타면 롯데시네마 월드타워점에 도착할 수 있습니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "Lotte Cinema World Tower"}}
+[ 38.40s][user ] 삼백사십일번… 알았어. 근데 혹시 도나를 연기한 배우 이름이 뭐였지? ⟨ret@43.15s⟩ 슈트에서.
+[ 43.52s][moshi] ⟦⚡SPAN@44.13s: Sarah Gray Rafferty is an American actress. She is best known for her role as Donna Paulsen in the USA Network⟧ 슈트에서 도나를 연기한 배우는 사라 그레이 러퍼티입니다.
+[ 47.10s][moshi] 사라 그레이 러퍼티는 미국의 배우로, 유 에스 에이 네트워크의 법정 드라마 슈트에서 도나 폴센 역할을 맡아 가장 잘 알려져 있습니다.
+[ 57.34s][user ] 아, 맞다. 사라 그레이 러퍼티. 슈트 진짜 재밌게 봤는데.
+[ 61.95s][moshi] «backchannel» 맞아요.
+[ 62.46s][moshi] 슈트를 재미있게 보셨다니 다행이네요. 저도 그 드라마 좋아합니다.
+[ 66.56s][user ] [happy] 그럼, 내일 아침 여덟시에 알람 ⟨ret@69.83s⟩ 맞춰줘.
+[ 70.14s][moshi] ⟦⚡SPAN@70.41s: (tool result) Alarm set for 8:00 AM tomorrow. Confirmation ID: 20260711-0800-A123⟧ 내일 아침 여덟시에 알람이 설정되었습니다. 확인 번호는 이 공 이 육 공 칠 일 일 공 팔 공 공 에이 일 이 삼입니다.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "08:00"}}
+[ 81.92s][user ] 고마워. 알람 설정해줘서.
+[ 83.46s][moshi] 천만에요.
+[ 83.97s][user ] 음… 요즘 스트레스가 좀 심한데, 어떻게 하면 좋을까?
+[ 88.06s][moshi] 스트레스가 심하시군요. 잠시 심호흡을 해보시는 건 어떠세요?
+[ 91.65s][user ] «backchannel» 어어.
+[ 92.16s][user ] 심호흡… 그래야겠다.
+[ 93.18s][moshi] 네, 심호흡은 긴장을 완화하는 데 도움이 될 수 있습니다.
+[ 97.79s][user ] 그럼, 내일 아침에 스트레스 해소하는 방법 좀 알려줘.
+[101.89s][moshi] 내일 아침에 스트레스 해소 방법을 알려드리겠습니다. 긍정적인 마음으로 하루를 시작해보세요.
