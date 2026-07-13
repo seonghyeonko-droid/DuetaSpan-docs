@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "소경",
+#     "name": "라정",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,75 +12,88 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-04-25",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-04-03",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-12-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2025-12-23",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-06-14",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-04",
+#       "date": "2026-06-14",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2026-05-19",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그런데, 딱히 뭘 도와주시는 분이세요? 제가 지금 좀 막막해서 | S2 음… 풍경화를 그리고 싶긴 한데, 너무 흔한 것 같기도 하고. | S3 그냥… 예쁜 걸 보고 싶어요. 힐링이 되는 그림을 그리고 싶다 | S4 바다가요. 부산에 살아서 그런가, 바다만 보면 마음이 차분해져
 
-     0.00s  agent 발화 시작: 소경님, 안녕하세요. 저는 여러분의 창의적인 고민을 돕는 상담가 오라이아입니다. 오늘 어떤 마음으로 찾아주셨
-     6.51s  user  발화 시작: 네네.
-     6.51s  agent 발화 끝
-     7.01s  user  발화 시작: 그런데, 딱히 뭘 도와주시는 분이세요? 제가 지금 좀 막막해서요.
-     7.01s  user  발화 끝
-    11.51s  agent 발화 시작: 막막하시다니, 어떤 점이 그렇게 느껴지시는지 말씀해주시면 좋을 것 같아요. 가끔은 말로 표현하는 것만으로도 
-    11.51s  user  발화 끝
-    20.02s  user  발화 시작: 그렇죠.
-    20.02s  agent 발화 끝
-    20.52s  agent 발화 시작: 지금 당장 해결책을 찾으려고 애쓰지 않아도 괜찮아요. 어떤 생각들이 마음을 무겁게 하는지, 편안하게 이야기해
-    20.52s  user  발화 끝
-    31.03s  user  발화 시작: 그렇죠.
-    31.03s  agent 발화 끝
-    31.53s  user  발화 시작: 사실… 그림을 그리고 싶은데, 뭘 그려야 할지 도통 감이 안 와요. 뭘 시작해야 할지도 모르겠고…
-    31.53s  user  발화 끝
-    39.03s  agent 발화 시작: 그림을 그리고 싶지만, 무엇을 그려야 할지 막막하시군요. 그림은 세상과 자신을 연결하는 아름다운 통로인데, 
-    39.03s  user  발화 끝
-    51.54s  user  발화 시작: 음… 풍경화를 그리고 싶긴 한데, 너무 흔한 것 같기도 하고. 특별한 게 없으면 아무도 안 봐주겠죠.
-    51.54s  agent 발화 끝
-    59.55s  agent 발화 시작: 풍경화를 그리고 싶지만, 흔하다는 생각에 망설여지시는군요. 특별해야 한다는 압박감 때문에 오히려 시작이 더 
-    59.55s  user  발화 끝
-    70.56s  user  발화 시작: 네네.
-    70.56s  agent 발화 끝
-    71.06s  user  발화 시작: 그냥… 예쁜 걸 보고 싶어요. 힐링이 되는 그림을 그리고 싶다는 뜻이랄까.
-    71.06s  user  발화 끝
-    76.57s  agent 발화 시작: 예쁜 걸 보고 싶고, 힐링이 되는 그림을 그리고 싶으시군요. 그럼, 지금 가장 마음을 편안하게 해주는 풍경이
-    76.57s  user  발화 끝
-    89.58s  user  발화 시작: 바다가요. 부산에 살아서 그런가, 바다만 보면 마음이 차분해져요. 파도 소리도 좋고…
-    89.58s  agent 발화 끝
-    95.08s  agent 발화 시작: 바다를 보면 마음이 차분해진다고 하시니, 정말 멋지네요. 바다를 통해 얻는 평온함, 그 느낌을 그림으로 표현
-    95.08s  user  발화 끝
-   108.59s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 라정님. 저는 아레리이아예요. 돈과 예산 관리를 도와드리는 웰니스 코치입니다. 혹시 요즘 재정적
+     8.00s  user  발화 시작: 어… 아레리이아요? 이름이 좀 특이하시네요. 돈 관리를 도와주신다고요? 제가 뭘 어떻게 해야 할지 도통 모르
+     8.00s  agent 발화 끝
+    15.50s  agent 발화 시작: 이름이 독특하다고 말씀해주셔서 감사합니다. 라정님, 무엇부터 시작해야 할지 모르는 건 흔한 일이에요. 지금 
+    15.50s  user  발화 끝
+    26.50s  user  발화 시작: 그래.
+    26.50s  agent 발화 끝
+    27.00s  agent 발화 시작: 빚은 아니고요, 사실 돈이 들어오고 나가는 게 너무 불규칙해서 뭘 어떻게 관리해야 할지 감이 안 잡혀요. [
+    27.00s  user  발화 끝
+    38.50s  user  발화 시작: 아, 맞다. 저 이번 주 토요일에 친구 생일 파티가 있는데, 선물 고르는 것도 맘에 안 들어요. 너무 비싼 
+    38.50s  agent 발화 끝
+    51.50s  agent 발화 시작: 네.
+    51.50s  user  발화 끝
+    52.00s  agent 발화 시작: 친구분 생일 선물 때문에 고민이시군요. 선물은 마음을 전하는 중요한 방법이지만, 너무 부담스러워할 필요는 없
+    52.00s  agent 발화 끝
+    61.49s  user  발화 시작: 음… 한 오만 원 정도면 괜찮을까요? 너무 적은가?
+    61.49s  agent 발화 끝
+    65.49s  agent 발화 시작: 오만 원이면 충분히 좋은 선물을 고를 수 있을 거예요. 중요한 건 친구분의 취향에 맞는 것을 고르는 거죠. 
+    65.49s  user  발화 끝
+    76.99s  agent 발화 끝

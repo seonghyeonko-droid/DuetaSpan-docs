@@ -4,147 +4,145 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "하호",
+#     "name": "지슬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-28",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-05-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2025-12-01",
+#       "date": "2026-03-30",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-03-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-11",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-30",
+#       "date": "2026-04-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 요즘 친구 만나는 게 좀 어렵네. | S2 부활절 봉기라… 그게 뭔데? | S3 그럼 완전 독립은 언제 이루어진 거지? | S4 릴리안 스미스라… 이름 처음 들어봐.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 사리 씨. 뉴욕에 이사 온 지 얼마 안 됐는데,  | S2 아, '레 미제라블'도 좋아하는데… 지금 뉴욕에서 볼 수 있어 | S3 음… 이탈리아 음식이 당기네요. | S4 아, 덥겠네요. 그럼 옷을 가볍게 입어야겠어요.
 
-     0.00s  user  발화 시작: 아, 요즘 친구 만나는 게 좀 어렵네.
-     4.23s  agent 발화 시작: 친구 관계에 어려움을 느끼시는군요. 로미가 옆에서 함께 고민하고 도와드릴게요.
-     4.23s  user  발화 끝
-     9.67s  user  발화 시작: 음.
-     9.67s  agent 발화 끝
-    10.27s  user  발화 시작: 고마워. 혹시 아일랜드 독립에 대해 알아볼 수 있을까? 갑자기 궁금해졌어.
-    10.27s  user  발화 끝
-    16.31s  agent 발화 시작: 그렇죠.
-    16.31s  user  발화 끝
-    16.80s  <ret> 발화 (turn5 첫 프레임)
-    16.92s  agent 발화 시작: <ret> 아일랜드는 영국으로부터 독립을 얻은 건, 천구백이십이년에 아일랜드 자유국이 설립되고 천구백사십구년
-    16.92s  agent 발화 끝
-    17.47s  ⚡SPAN 주입 [d'=0.67s / d_lead=7.25s]: Ireland achieved independence from Britain in 1922, though the Irish F
-    24.17s  user  발화 시작: 음, 천구백이십이년이구나. 근데 아일랜드 독립 운동의 배경은 뭐였지?
-    24.17s  agent 발화 끝
-    28.50s  <ret> 발화 (turn7 첫 프레임)
-    29.00s  agent 발화 시작: <ret> 아일랜드 독립 운동은 수세기 동안의 영국 통치, 경제적 어려움, 문화적 억압 때문에 일어났고, 천
-    29.00s  user  발화 끝
-    29.94s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.88s]: The Irish independence movement was fueled by centuries of British rul
-    39.88s  user  발화 시작: 맞아.
-    39.88s  agent 발화 끝
-    40.48s  user  발화 시작: 부활절 봉기라… 그게 뭔데?
-    40.48s  user  발화 끝
-    42.75s  <ret> 발화 (turn10 첫 프레임)
-    42.90s  agent 발화 시작: <ret> 부활절 봉기는 천구백십육년 더블린에서 아일랜드 공화주의자들이 영국 통치를 끝내기 위해 일으킨 무장
-    42.90s  user  발화 끝
-    43.47s  ⚡SPAN 주입 [d'=0.73s / d_lead=7.85s]: The Easter Rising was an armed insurrection in Dublin in 1916, launche
-    50.75s  user  발화 시작: 응.
-    50.75s  agent 발화 끝
-    51.36s  user  발화 시작: 아, 그렇구나. 그럼 그 이후에 어떻게 독립하게 된 거야?
-    51.36s  user  발화 끝
-    56.44s  <ret> 발화 (turn13 첫 프레임)
-    56.80s  agent 발화 시작: <ret> 부활절 봉기와 아일랜드 독립 전쟁(천구백십구년에서 천구백이십일년) 이후, 천구백이십일년 영국-아일
-    56.80s  user  발화 끝
-    57.64s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.27s]: Following the Easter Rising and the Irish War of Independence (1919–19
-    67.07s  user  발화 시작: 자치령? 완전 독립은 아니었나 보네.
-    67.07s  agent 발화 끝
-    70.09s  agent 발화 시작: 네, 처음부터 완전한 독립은 아니었어요. 하지만 점차적으로 자치권이 확대되었죠.
-    70.09s  user  발화 끝
-    75.53s  user  발화 시작: 그럼 완전 독립은 언제 이루어진 거지?
-    75.53s  agent 발화 끝
-    79.09s  <ret> 발화 (turn17 첫 프레임)
-    79.15s  agent 발화 시작: <ret> 아일랜드 공화국은 천구백사십구년에 선포되면서 영국 연방과의 관계를 완전히 끊고 주권 독립 국가가 
-    79.15s  user  발화 끝
-    80.36s  ⚡SPAN 주입 [d'=1.27s / d_lead=7.85s]: The Republic of Ireland was declared in 1949, fully severing ties with
-    87.01s  user  발화 시작: 어.
-    87.01s  agent 발화 끝
-    87.61s  user  발화 시작: 아하, 천구백사십구년이 완전 독립이구나. —
-    87.61s  user  발화 끝
-    90.63s  user  발화 시작: 근데, 아일랜드 독립운동에 여성들은 어떤 역할을 했어?
-    90.63s  user  발화 끝
-    94.75s  <ret> 발화 (turn21 첫 프레임)
-    94.86s  agent 발화 시작: <ret> 여성들은 독립 운동에서 아주 중요한 역할을 했어요.
-    94.86s  user  발화 끝
-    95.51s  ⚡SPAN 주입 [d'=0.75s / d_lead=4.23s]: Women played a crucial role in the Irish independence movement, partic
-    99.09s  agent 발화 시작: 여성들은 모금, 정보 수집부터 무장 투쟁, 정치 활동까지 독립 운동의 모든 부분에 참여했어요.
-    99.09s  agent 발화 끝
-   106.95s  user  발화 시작: 음.
-   106.95s  agent 발화 끝
-   107.33s  <ret> 발화 (turn24 첫 프레임)
-   107.55s  agent 발화 시작: <ret> 네, 정말 대단하죠. 많은 여성들이 용감하게 싸웠어요. 독립운동가들 중에서도 릴리안 스미스는 특히
-   107.55s  user  발화 끝
-   108.30s  ⚡SPAN 주입 [d'=0.97s / d_lead=8.46s]: Lilian Smith was a prominent Irish republican activist and a key figur
-   116.01s  agent 발화 시작: 릴리안 스미스는 아일랜드 독립 전쟁에서 중요한 역할을 한 저명한 아일랜드 공화주의 활동가로, 정보 활동과 용
-   116.01s  agent 발화 끝
-   126.28s  user  발화 시작: 릴리안 스미스라… 이름 처음 들어봐.
-   126.28s  agent 발화 끝
-   129.30s  agent 발화 시작: 릴리안 스미스는 독립 운동에 헌신했던 분이세요.
-   129.30s  user  발화 끝
-   132.93s  user  발화 시작: 음.
-   132.93s  agent 발화 끝
-   133.53s  user  발화 시작: 음, 아일랜드 독립 운동에 대해 많이 알게 됐네. 고마워, 로미.
-   133.53s  user  발화 끝
-   139.57s  agent 발화 시작: 예.
-   139.57s  user  발화 끝
-   140.18s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-   140.18s  agent 발화 끝
-   141.99s  user  발화 시작: 아니, 오늘은 이 정도면 충분해.
-   141.99s  agent 발화 끝
-   145.01s  user  발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 사리 씨. 뉴욕에 이사 온 지 얼마 안 됐는데, 정착하는 데 도움을 주신다고 들었어요.
+     7.75s  agent 발화 시작: 네.
+     7.75s  user  발화 끝
+     8.27s  agent 발화 시작: 안녕하세요. 뉴욕 정착을 도와드리게 되어 기쁩니다. 무엇부터 시작해 볼까요?
+     8.27s  agent 발화 끝
+    12.92s  user  발화 시작: 음… 뉴욕에서 오래된 뮤지컬을 보고 싶은데, 뭐가 제일 유명한가요?
+    12.92s  agent 발화 끝
+    17.44s  <ret> 발화 (turn4 첫 프레임)
+    17.56s  agent 발화 시작: <ret> 브로드웨이 역사상 가장 오래된 뮤지컬은 '오페라의 유령'이에요. 천구백팔십팔년 일월 이십육일에 초
+    17.56s  user  발화 끝
+    18.11s  ⚡SPAN 주입 [d'=0.67s / d_lead=10.33s]: The Phantom of the Opera is the longest-running show in Broadway histo
+    27.90s  user  발화 시작: 네.
+    27.90s  agent 발화 끝
+    28.41s  user  발화 시작: 와, 정말 오래됐네요. 혹시…
+    28.41s  user  발화 끝
+    30.48s  user  발화 시작: …다른 유명한 뮤지컬도 있을까요?
+    30.48s  user  발화 끝
+    32.55s  agent 발화 시작: '레 미제라블'이나 '라이언 킹'도 오랫동안 사랑받는 뮤지컬이에요.
+    32.55s  user  발화 끝
+    36.16s  user  발화 시작: 아, '레 미제라블'도 좋아하는데… 지금 뉴욕에서 볼 수 있어요?
+    36.16s  agent 발화 끝
+    40.66s  <ret> 발화 (turn10 첫 프레임)
+    40.81s  agent 발화 시작: <ret> 네, '레 미제라블'은 임페리얼 극장에서 공연 중이에요. 칠월 십오일부터 십칠일까지 공연이 있고,
+    40.81s  user  발화 끝
+    42.10s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.78s]: (tool result) {"events": [{"name": "Les Misérables", "venue": "Imperia
+    49.59s  user  발화 시작: 칠월 십오일 티켓 예매해 줄 수 있어요?
+    49.59s  agent 발화 끝
+    53.02s  <ret> 발화 (turn12 첫 프레임)
+    53.21s  agent 발화 시작: <ret> 네, '레 미제라블' 칠월 십오일 티켓 한장을 예매했습니다. 확인 코드는 엘 엠 칠 일 오 엔 와
+    53.21s  user  발화 끝
+    53.63s  ⚡SPAN 주입 [d'=0.61s / d_lead=9.82s]: (tool result) {"confirmation id": "LM715NY26"}
+    63.03s  user  발화 시작: 네.
+    63.03s  agent 발화 끝
+    63.54s  user  발화 시작: 감사합니다! 혹시 근처에 괜찮은 레스토랑도 추천해 주실 수 있나요?
+    63.54s  user  발화 끝
+    68.19s  agent 발화 시작: 임페리얼 극장 근처에는 다양한 레스토랑이 있어요. 어떤 종류의 음식을 좋아하시나요?
+    68.19s  user  발화 끝
+    73.36s  user  발화 시작: 음.
+    73.36s  agent 발화 끝
+    73.88s  user  발화 시작: 음… 이탈리아 음식이 당기네요.
+    73.88s  user  발화 끝
+    75.88s  <ret> 발화 (turn18 첫 프레임)
+    75.94s  agent 발화 시작: <ret> 임페리얼 극장에서 영 점 이마일 거리에 있는 '베코'라는 이탈리아 레스토랑이 평점 사 점 오점이에
+    75.94s  user  발화 끝
+    77.21s  ⚡SPAN 주입 [d'=1.33s / d_lead=7.23s]: (tool result) {"restaurants": [{"name": "Becco", "cuisine": "Italian",
+    83.17s  user  발화 시작: '베코' 좋네요. 혹시 그 레스토랑 예약도 가능할까요?
+    83.17s  agent 발화 끝
+    86.19s  <ret> 발화 (turn20 첫 프레임)
+    86.79s  agent 발화 시작: <ret> 네, '베코' 레스토랑 칠월 십오일 저녁 여섯시에 한명으로 예약했습니다. 확인 코드는 비 씨 씨 
+    86.79s  user  발화 끝
+    86.82s  ⚡SPAN 주입 [d'=0.63s / d_lead=9.82s]: (tool result) {"confirmation id": "BCC6PM15"}
+    96.61s  user  발화 시작: 정말 감사합니다, 사리 씨. 덕분에 뉴욕 생활이 훨씬 편해질 것 같아요.
+    96.61s  agent 발화 끝
+   102.29s  agent 발화 시작: 예.
+   102.29s  user  발화 끝
+   102.81s  agent 발화 시작: 도움이 되었다니 다행입니다.
+   102.81s  agent 발화 끝
+   104.36s  user  발화 시작: 오늘 날씨가 어때요?
+   104.36s  agent 발화 끝
+   105.87s  <ret> 발화 (turn25 첫 프레임)
+   105.90s  agent 발화 시작: <ret> 뉴욕의 현재 날씨는 기온 이십육 점 칠도, 습도 육십이퍼센트, 바람은 시속 팔 점 이킬로미터입니다
+   105.90s  user  발화 끝
+   106.86s  ⚡SPAN 주입 [d'=0.99s / d_lead=7.23s]: (tool result) "26.7°C, humidity 62%, wind 8.2 km/h"
+   113.14s  user  발화 시작: 아, 덥겠네요. 그럼 옷을 가볍게 입어야겠어요.
+   113.14s  agent 발화 끝
+   116.24s  agent 발화 시작: 네, 가벼운 옷차림을 추천해 드립니다.
+   116.24s  user  발화 끝
+   118.82s  user  발화 시작: 혹시 뉴욕 지하철 노선도를 알려줄 수 있을까요?
+   118.82s  agent 발화 끝
+   122.44s  agent 발화 시작: 뉴욕 지하철 노선도는 복잡해서요, 제가 직접 보여드리기는 어렵습니다. 하지만 엠 티 에이 웹사이트에서 자세한
+   122.44s  user  발화 끝
+   131.74s  user  발화 시작: 알겠습니다. 엠 티 에이 웹사이트를 찾아봐야겠네요.
+   131.74s  agent 발화 끝
+   134.84s  agent 발화 시작: 네, 그렇게 하시는 게 좋겠어요. 즐거운 관람 되세요!
+   134.84s  user  발화 끝
+   138.97s  agent 발화 끝

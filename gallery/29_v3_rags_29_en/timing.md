@@ -4,71 +4,68 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Stella",
+#     "name": "Noa",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-22",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-06-06",
+#       "date": "2026-05-03",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "home",
+#       "text": "User's home address is 806 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-17",
-#       "title": "Researching a used car",
+#       "date": "2026-03-11",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the final episode of Madam Secretary air?
-     3.72s  <ret> 발화 (turn2 첫 프레임)
-     3.75s  agent 발화 시작: Mm-hmm.
-     3.75s  user  발화 끝
-     4.17s  agent 발화 시작: <ret> That final episode aired on May 20, 2018. It’s interes
-     4.17s  agent 발화 끝
-     4.56s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.92s]: The final episode of Madam Secretary aired on May 20, 2018, concluding
-    12.10s  agent 발화 끝
+     0.00s  user  발화 시작: Who plays chuck the…
+     1.92s  user  발화 시작: …evil sandwich making guy?
+     1.92s  user  발화 끝
+     3.58s  <ret> 발화 (turn2 첫 프레임)
+     3.84s  agent 발화 시작: <ret> [happy] Oh, that's a fun question! Frederick “Fred” St
+     3.84s  user  발화 끝
+     4.38s  ⚡SPAN 주입 [d'=0.80s / d_lead=10.57s]: Frederick "Fred" Stoller is an American actor, comedian, and voice act
+    14.42s  agent 발화 끝

@@ -4,89 +4,65 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "하율",
+#     "name": "지호",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-14",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2025-11-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-10-15",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-05",
+#       "date": "2026-04-06",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-19",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-01-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
+#       "date": "2026-05-30",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 있잖아, 워싱턴에서 대마초 합법화된 거 언제야? | S2 잠깐만, 그게 언제라고? 다시 한번 말해줄래? | S3 음, 그건 좀 오래됐네. 지금 시애틀 날씨는 어때? | S4 꽤 덥네. 여행 계획 세워야겠다.
 
-     0.00s  user  발화 시작: 있잖아, 워싱턴에서 대마초 합법화된 거 언제야?
-     3.16s  <ret> 발화 (turn1 첫 프레임)
-     3.41s  agent 발화 시작: <ret> 워싱턴 주에서 기호용 대마초는 이천십이년 십이월 육일에 합법화되었어요. 이니셔티브 오백이가 통과되
-     3.41s  user  발화 끝
-     3.46s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.39s]: Recreational marijuana use became legal in Washington State on Decembe
-    10.80s  user  발화 시작: 잠깐만, 그게 언제라고? 다시 한번 말해줄래?
-    10.80s  agent 발화 끝
-    14.22s  agent 발화 시작: 이천십이년 십이월 육일입니다.
-    14.22s  user  발화 끝
-    15.92s  user  발화 시작: 음, 그건 좀 오래됐네. 지금 시애틀 날씨는 어때?
-    15.92s  agent 발화 끝
-    20.41s  <ret> 발화 (turn5 첫 프레임)
-    20.47s  agent 발화 시작: <ret> 시애틀은 현재 이십삼 점 구도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터, 구름이 
-    20.47s  user  발화 끝
-    20.71s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.10s]: (tool result) Seattle, WA: 23.9°C, humidity 68%, wind 7.2 km/h, condit
-    29.57s  user  발화 시작: 어.
-    29.57s  agent 발화 끝
-    30.14s  user  발화 시작: 꽤 덥네. 여행 계획 세워야겠다.
-    30.14s  user  발화 끝
-    32.98s  user  발화 끝
+     0.00s  user  발화 시작: 아라미 씨, 안녕하세요. 서울에 새로 이사 왔는데, 혹시 이 근처에 괜찮은 헬스장 아세요?
+     6.44s  agent 발화 시작: 안녕하세요! 서울에 오신 걸 환영해요. 어떤 스타일의 헬스장을 찾으세요?
+     6.44s  user  발화 끝
+    10.90s  user  발화 시작: 음… 너무 비싸지 않고, 시설이 깨끗한 곳이요. 사람들 많이 다니는 곳이면 더 좋고요.
+    10.90s  agent 발화 끝
+    16.95s  <ret> 발화 (turn3 첫 프레임)
+    17.34s  agent 발화 시작: <ret> 강남구 강남대로 백이십삼에 있는 피트니스 퍼스트는 다양한 피트니스 수업과 현대적인 장비를 갖춘 곳
+    17.34s  user  발화 끝
+    18.21s  ⚡SPAN 주입 [d'=1.26s / d_lead=8.42s]: The gym, Fitness First, is located at 123 Gangnam-daero, Seocho-gu, Se
+    25.77s  agent 발화 끝

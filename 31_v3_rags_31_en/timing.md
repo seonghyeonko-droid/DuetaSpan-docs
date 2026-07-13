@@ -4,68 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Ava",
+#     "name": "Lena",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-02-21",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "category": "home",
-#       "text": "User's home address is 258 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-12-20",
+#       "date": "2026-06-13",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-08-30",
+#       "date": "2026-04-19",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-02-28",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-02-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-13",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who sang “You’ve Got a Friend in Me” from Toy Story?
-     3.04s  <ret> 발화 (turn2 첫 프레임)
-     3.33s  agent 발화 시작: Mhm.
-     3.33s  user  발화 끝
-     3.63s  agent 발화 시작: <ret> That lovely song, “You’ve Got a Friend in Me”, was wri
-     3.63s  agent 발화 끝
-     4.35s  ⚡SPAN 주입 [d'=1.31s / d_lead=8.47s]: Randy Newman wrote and performed “You’ve Got a Friend in Me” for the 1
-    12.09s  agent 발화 끝
+     0.00s  user  발화 시작: I'm wondering, what does organizational development aim to h
+     3.77s  <ret> 발화 (turn1 첫 프레임)
+     4.39s  agent 발화 시작: <ret> [curious] It aims to help companies effectively manage
+     4.39s  user  발화 끝
+     5.27s  ⚡SPAN 주입 [d'=1.50s / d_lead=13.56s]: Organizational development effectively manages conflict, improves comm
+    17.95s  agent 발화 끝

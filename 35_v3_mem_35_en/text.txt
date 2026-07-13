@@ -1,78 +1,81 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Nelira, a calm and patient personal guide who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Geaia, a warm and attentive counselor who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Bruno",
+    "name": "Felix",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-03-29",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
     },
     {
-      "date": "2026-05-29",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-03-27",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-03-10",
-      "category": "home",
-      "text": "User's home address is 262 Maple Drive."
-    },
-    {
-      "date": "2025-10-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-09-06",
+      "date": "2026-03-11",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-07-16",
+      "date": "2025-12-17",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-12-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-18",
-      "title": "Researching a used car",
+      "date": "2026-04-02",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-06-04",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-01",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Bruno, I'm Nelira. It's lovely to meet you.
-[  3.30s][user ] «backchannel» Uh-huh.
-[  3.67s][user ] Yes, that’s right. I’m planning a trip to Italy next month, and I was hoping you could recommend a ⟨ret@10.69s⟩ restaurant.
-[ 11.01s][moshi] ⟦⚡SPAN@11.38s: [2025-06-04] User's favorite cuisine is Italian.⟧ Bruno. Considering your preference for Italian cuisine, I can certainly help with that.
-[ 15.78s][user ] Great! I’d like something authentic, not too touristy, if possible. ⟨ret@19.36s⟩
-[ 19.45s][moshi] I ⟦⚡SPAN@20.12s: (tool result) Restaurant: Trattoria Mario, Florence. Rating: 4.7 stars. Price: $$$. Cuisine: Tuscan.⟧ found Trattoria Mario in Florence, Italy. It has a 4.7-star rating and is considered authentic Tuscan cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Italy", "ambiance": "authentic"}}
+[  0.00s][moshi] Hi Felix, I'm Geaia. It's lovely to meet you. I'm here to offer a little support and mindfulness whenever you need it.
+[  7.66s][user ] Um, I'm planning a trip to New Zealand in August, and I'm trying to find some good rock climbing ⟨ret@14.31s⟩ spots.
+[ 14.63s][moshi] ⟦⚡SPAN@15.00s: [2026-03-29] User is planning a trip to New Zealand in August.⟧ I see you’re planning a trip to New Zealand in August, which sounds wonderful!
+[ 19.51s][user ] «backchannel» Mhm.
+[ 19.86s][user ] Oh, that's right, I told you about that! Do you know any good places for climbing there? ⟨ret@25.69s⟩
+[ 25.78s][moshi] ⟦⚡SPAN@25.79s: (tool result) Queenstown is known as the adventure capital of New Zealand and offers world-class rock climbing⟧ Queenstown is famous for rock climbing, especially at The Remarkables. Abel Tasman National Park offers coastal climbs too.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "New Zealand", "activity": "rock climbing"}}

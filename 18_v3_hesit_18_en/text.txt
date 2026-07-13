@@ -1,75 +1,74 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Fiona, a gentle and reflective life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Kiolo, a kind and steady life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Iris",
+    "name": "Samuel",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "female",
+    "nationality": "British",
+    "gender": "male",
     "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-06-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-17",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-05-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-01",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-05-06",
+      "category": "home",
+      "text": "User's home address is 725 Oak Avenue."
     },
     {
-      "date": "2025-06-05",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-02-22",
+      "category": "work",
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-11",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-13",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-17",
-      "title": "Researching a used car",
+      "date": "2026-01-29",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hmm, I was wondering… who has won the most Ballon d’Or awards, do you know? ⟨ret@6.98s⟩
-[  7.15s][moshi] ⟦⚡SPAN@7.28s: Lionel Messi has won the Ballon d’Or award a record eight times, in 2009, 2010, 2011, 2012, 2015, 2019, 2021, ⟧ That would be Lionel Messi, actually—he’s won the Ballon d’Or a record eight times, across 2009, 2010, 2011, 2012, 2015, 2019, 2021, and 2023.
-[ 18.58s][user ] Wow, eight times! That’s… incredible. Is Cristiano Ronaldo anywhere close? ⟨ret@23.29s⟩
-[ 23.34s][moshi] «backchannel» Exactly.
-[ 23.82s][moshi] ⟦⚡SPAN@23.76s: Cristiano Ronaldo has won the Ballon d’Or five times, in 2008, 2013, 2014, 2016, and 2017.⟧ Cristiano Ronaldo has won it five times—in 2008, 2013, 2014, 2016, and 2017, which is still a fantastic achievement, of course.
-[ 33.83s][user ] «backchannel» Wow.
-[ 34.30s][user ] Five is still amazing, but… quite a gap. It feels good to have a clear winner, doesn’t it?
-[ 42.88s][moshi] It does, doesn’t it? Sometimes it’s comforting to see such clear dedication and talent recognized.
-[ 50.02s][user ] «backchannel» Yeah, yeah.
-[ 50.98s][user ] Yeah, um, what…
-[ 52.41s][user ] …about women’s football? Who’s the top scorer there? ⟨ret@56.13s⟩
-[ 56.22s][moshi] «backchannel» Yeah.
-[ 56.69s][moshi] ⟦⚡SPAN@56.63s: Ada Hegerberg has won the Ballon d’Or Féminin a record six times, in 2018, 2019, 2020, 2021, 2022, and 2023.⟧ Ada Hegerberg holds the record for the women’s Ballon d’Or, having won it six times—in 2018, 2019, 2020, 2021, 2022, and 2023.
-[ 67.17s][user ] Six! Another dominant player, then. That’s inspiring.
+[  0.00s][user ] Hey, uh, who has the most three-pointers in NBA history? I always forget. ⟨ret@5.03s⟩
+[  5.19s][moshi] ⟦⚡SPAN@5.33s: Ray Allen holds the National Basketball Association record for most three-point field goals made, with a total⟧ That would be Ray Allen, who made a total of two thousand, nine hundred and seventy-three three-point field goals – quite a record, isn’t it?
+[ 15.18s][user ] «backchannel» Uh-huh.
+[ 15.58s][user ] Wow, that's a ⟨ret@16.65s⟩ lot!
+[ 17.18s][moshi] ⟦⚡SPAN@17.12s: Stephen Curry currently ranks second in NBA history with two thousand, nine hundred and sixty-six three-pointe⟧ Stephen Curry is right behind him, having made two thousand, nine hundred and sixty-six three-pointers as of November twenty-first, two thousand and twenty-three.
+[ 26.36s][user ] «backchannel» Wow.
+[ 26.76s][user ] Hmm, so Curry is pretty close.
+[ 29.16s][moshi] «interrupted» It's fascinating to see how—
+[ 31.16s][user ] …do you know how…
+[ 32.75s][user ] …many LeBron James has made?
+[ 34.75s][moshi] «backchannel» Yeah.
+[ 35.15s][moshi] ⟨ret@35.02s⟩ ⟦⚡SPAN@35.12s: LeBron James has made one thousand, nine hundred and seventy-eight three-point field goals throughout his NBA ⟧ LeBron James has made one thousand, nine hundred and seventy-eight three-pointers throughout his career, as of November twenty-first, two thousand and twenty-three.
+[ 43.94s][moshi] It’s amazing how those top players continue to redefine the game.

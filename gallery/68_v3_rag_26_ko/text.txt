@@ -1,102 +1,108 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 대해 사람들을 돕는 호기심 많고 공감적인 개인 가이드인 로미입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 사리이며, 새로운 도시에 정착하는 사람들을 돕는 침착하고 인내심 있는 조력자입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "하호",
+    "name": "지슬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 30s",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-28",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-05-01",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in August."
     },
     {
-      "date": "2026-02-07",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
-    },
-    {
-      "date": "2025-12-01",
+      "date": "2026-03-30",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-06-20",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-03-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-01-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "work",
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-11",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-10",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-05-30",
+      "date": "2026-04-12",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 아, 요즘 친구 만나는 게 좀 어렵네.
-[  4.23s][moshi] 친구 관계에 어려움을 느끼시는군요. 로미가 옆에서 함께 고민하고 도와드릴게요.
-[  9.67s][user ] «backchannel» 음.
-[ 10.27s][user ] 고마워. 혹시 아일랜드 독립에 대해 알아볼 수 있을까? 갑자기 궁금해졌어.
-[ 16.31s][moshi] «backchannel» 그렇죠.
-[ 16.92s][moshi] ⟨ret@16.80s⟩ ⟦⚡SPAN@17.47s: Ireland achieved independence from Britain in 1922, though the Irish Free State was established in 1922, and t⟧ 아일랜드는 영국으로부터 독립을 얻은 건, 천구백이십이년에 아일랜드 자유국이 설립되고 천구백사십구년에 공화국이 선포되면서였어요.
-[ 24.17s][user ] 음, 천구백이십이년이구나. 근데 아일랜드 독립 운동의 배경은 ⟨ret@28.50s⟩ 뭐였지?
-[ 29.00s][moshi] 아일랜드 ⟦⚡SPAN@29.94s: The Irish independence movement was fueled by centuries of British rule, economic hardship, and cultural suppr⟧ 독립 운동은 수세기 동안의 영국 통치, 경제적 어려움, 문화적 억압 때문에 일어났고, 천구백십육년 부활절 봉기가 계기가 되었어요.
-[ 39.88s][user ] «backchannel» 맞아.
-[ 40.48s][user ] 부활절 봉기라… 그게 뭔데? ⟨ret@42.75s⟩
-[ 42.90s][moshi] ⟦⚡SPAN@43.47s: The Easter Rising was an armed insurrection in Dublin in 1916, launched by Irish republicans with the aim of e⟧ 부활절 봉기는 천구백십육년 더블린에서 아일랜드 공화주의자들이 영국 통치를 끝내기 위해 일으킨 무장 봉기였어요.
-[ 50.75s][user ] «backchannel» 응.
-[ 51.36s][user ] 아, 그렇구나. 그럼 그 이후에 어떻게 독립하게 된 ⟨ret@56.44s⟩ 거야?
-[ 56.80s][moshi] ⟦⚡SPAN@57.64s: Following the Easter Rising and the Irish War of Independence (1919–1921), the Anglo-Irish Treaty of 1921 esta⟧ 부활절 봉기와 아일랜드 독립 전쟁(천구백십구년에서 천구백이십일년) 이후, 천구백이십일년 영국-아일랜드 조약으로 아일랜드 자유국이 영국 제국 내 자치령으로 설립되었어요.
-[ 67.07s][user ] 자치령? 완전 독립은 아니었나 보네.
-[ 70.09s][moshi] 네, 처음부터 완전한 독립은 아니었어요. 하지만 점차적으로 자치권이 확대되었죠.
-[ 75.53s][user ] 그럼 완전 독립은 언제 이루어진 거지? ⟨ret@79.09s⟩
-[ 79.15s][moshi] 아일랜드 ⟦⚡SPAN@80.36s: The Republic of Ireland was declared in 1949, fully severing ties with the British Commonwealth and establishi⟧ 공화국은 천구백사십구년에 선포되면서 영국 연방과의 관계를 완전히 끊고 주권 독립 국가가 되었어요.
-[ 87.01s][user ] «backchannel» 어.
-[ 87.61s][user ] 아하, 천구백사십구년이 완전 독립이구나. —
-[ 90.63s][user ] 근데, 아일랜드 독립운동에 여성들은 어떤 역할을 했어? ⟨ret@94.75s⟩
-[ 94.86s][moshi] ⟦⚡SPAN@95.51s: Women played a crucial role in the Irish independence movement, participating in everything from fundraising a⟧ 여성들은 독립 운동에서 아주 중요한 역할을 했어요.
-[ 99.09s][moshi] 여성들은 모금, 정보 수집부터 무장 투쟁, 정치 활동까지 독립 운동의 모든 부분에 참여했어요.
-[106.95s][user ] «backchannel» 음.
-[107.55s][moshi] ⟨ret@107.33s⟩ ⟦⚡SPAN@108.30s: Lilian Smith was a prominent Irish republican activist and a key figure in the Irish War of Independence, know⟧ 네, 정말 대단하죠. 많은 여성들이 용감하게 싸웠어요. 독립운동가들 중에서도 릴리안 스미스는 특히 유명한 인물이에요.
-[116.01s][moshi] 릴리안 스미스는 아일랜드 독립 전쟁에서 중요한 역할을 한 저명한 아일랜드 공화주의 활동가로, 정보 활동과 용감함으로 알려져 있어요.
-[126.28s][user ] 릴리안 스미스라… 이름 처음 들어봐.
-[129.30s][moshi] 릴리안 스미스는 독립 운동에 헌신했던 분이세요.
-[132.93s][user ] «backchannel» 음.
-[133.53s][user ] 음, 아일랜드 독립 운동에 대해 많이 알게 됐네. 고마워, 로미.
-[139.57s][moshi] «backchannel» 예.
-[140.18s][moshi] 도움이 되었다니 기쁘네요.
-[141.99s][user ] 아니, 오늘은 이 정도면 충분해.
+[  0.00s][user ] 안녕하세요, 사리 씨. 뉴욕에 이사 온 지 얼마 안 됐는데, 정착하는 데 도움을 주신다고 들었어요.
+[  7.75s][moshi] «backchannel» 네.
+[  8.27s][moshi] 안녕하세요. 뉴욕 정착을 도와드리게 되어 기쁩니다. 무엇부터 시작해 볼까요?
+[ 12.92s][user ] 음… 뉴욕에서 오래된 뮤지컬을 보고 싶은데, 뭐가 제일 유명한가요? ⟨ret@17.44s⟩
+[ 17.56s][moshi] ⟦⚡SPAN@18.11s: The Phantom of the Opera is the longest-running show in Broadway history, having premiered on January 26, 1988⟧ 브로드웨이 역사상 가장 오래된 뮤지컬은 '오페라의 유령'이에요. 천구백팔십팔년 일월 이십육일에 초연했고, 이천이십삼년 사월 십육일까지 일 삼 구 팔 일번이나 공연되었답니다.
+[ 27.90s][user ] «backchannel» 네.
+[ 28.41s][user ] 와, 정말 오래됐네요. 혹시…
+[ 30.48s][user ] …다른 유명한 뮤지컬도 있을까요?
+[ 32.55s][moshi] '레 미제라블'이나 '라이언 킹'도 오랫동안 사랑받는 뮤지컬이에요.
+[ 36.16s][user ] 아, '레 미제라블'도 좋아하는데… 지금 뉴욕에서 볼 수 있어요? ⟨ret@40.66s⟩
+[ 40.81s][moshi] 네, '레 ⟦⚡SPAN@42.10s: (tool result) {"events": [{"name": "Les Misérables", "venue": "Imperial Theatre", "dates": 2026-07-15, 2026-07⟧ 미제라블'은 임페리얼 극장에서 공연 중이에요. 칠월 십오일부터 십칠일까지 공연이 있고, 티켓 가격은 백이십구달러에서 백구십구달러 사이입니다.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"query": "레 미제라블 뉴욕"}}
+[ 49.59s][user ] 칠월 십오일 티켓 예매해 줄 수 있어요? ⟨ret@53.02s⟩
+[ 53.21s][moshi] ⟦⚡SPAN@53.63s: (tool result) {"confirmation id": "LM715NY26"}⟧ 네, '레 미제라블' 칠월 십오일 티켓 한장을 예매했습니다. 확인 코드는 엘 엠 칠 일 오 엔 와이 이 육입니다.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Les Misérables", "date": "2026-07-15", "quantity": "1"}}
+[ 63.03s][user ] «backchannel» 네.
+[ 63.54s][user ] 감사합니다! 혹시 근처에 괜찮은 레스토랑도 추천해 주실 수 있나요?
+[ 68.19s][moshi] 임페리얼 극장 근처에는 다양한 레스토랑이 있어요. 어떤 종류의 음식을 좋아하시나요?
+[ 73.36s][user ] «backchannel» 음.
+[ 73.88s][user ] 음… 이탈리아 음식이 당기네요. ⟨ret@75.88s⟩
+[ 75.94s][moshi] 임페리얼 극장에서 ⟦⚡SPAN@77.21s: (tool result) {"restaurants": [{"name": "Becco", "cuisine": "Italian", "distance": "0.2 miles", "rating": "4.5⟧ 영 점 이마일 거리에 있는 '베코'라는 이탈리아 레스토랑이 평점 사 점 오점이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Imperial Theatre"}}
+[ 83.17s][user ] '베코' 좋네요. 혹시 그 레스토랑 예약도 ⟨ret@86.19s⟩ 가능할까요?
+[ 86.79s][moshi] ⟦⚡SPAN@86.82s: (tool result) {"confirmation id": "BCC6PM15"}⟧ 네, '베코' 레스토랑 칠월 십오일 저녁 여섯시에 한명으로 예약했습니다. 확인 코드는 비 씨 씨 육 피 엠 일 오입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Becco", "date": "2026-07-15", "time": "6:00 PM", "party_size": "1"}}
+[ 96.61s][user ] 정말 감사합니다, 사리 씨. 덕분에 뉴욕 생활이 훨씬 편해질 것 같아요.
+[102.29s][moshi] «backchannel» 예.
+[102.81s][moshi] 도움이 되었다니 다행입니다.
+[104.36s][user ] 오늘 날씨가 어때요? ⟨ret@105.87s⟩
+[105.90s][moshi] 뉴욕의 ⟦⚡SPAN@106.86s: (tool result) "26.7°C, humidity 62%, wind 8.2 km/h"⟧ 현재 날씨는 기온 이십육 점 칠도, 습도 육십이퍼센트, 바람은 시속 팔 점 이킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New York"}}
+[113.14s][user ] 아, 덥겠네요. 그럼 옷을 가볍게 입어야겠어요.
+[116.24s][moshi] 네, 가벼운 옷차림을 추천해 드립니다.
+[118.82s][user ] 혹시 뉴욕 지하철 노선도를 알려줄 수 있을까요?
+[122.44s][moshi] 뉴욕 지하철 노선도는 복잡해서요, 제가 직접 보여드리기는 어렵습니다. 하지만 엠 티 에이 웹사이트에서 자세한 정보를 얻을 수 있습니다.
+[131.74s][user ] 알겠습니다. 엠 티 에이 웹사이트를 찾아봐야겠네요.
+[134.84s][moshi] 네, 그렇게 하시는 게 좋겠어요. 즐거운 관람 되세요!

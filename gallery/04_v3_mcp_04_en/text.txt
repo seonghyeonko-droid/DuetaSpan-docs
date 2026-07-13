@@ -1,77 +1,89 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Dora, a thoughtful and soft-spoken counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Jio, a grounded and empathetic life coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
     "name": "Rowan",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
+      "date": "2026-06-05",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-09-15",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-09-01",
-      "category": "home",
-      "text": "User's home address is 709 Maple Drive."
-    },
-    {
-      "date": "2025-05-30",
+      "date": "2026-02-19",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2026-01-28",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-22",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-21",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-09-07",
-      "title": "Planning a birthday dinner",
+      "date": "2026-01-23",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-24",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m getting a really weird error on the checkout page. Can you grab a screenshot of it for me? I need to show ⟨ret@8.32s⟩ the developers.
-[  8.94s][moshi] ⟦⚡SPAN@8.62s: (tool result) {"image": "iVBORw0KGgoAAAANSUhEUgA... (truncated for brevity)..."}⟧ I’ve captured the checkout page as a base sixty-four encoded screenshot for you; it’s quite long, but ready when you need it.
-      CALL: {"function": "puppeteer_screenshot", "arguments": {"url": "https://example.com/checkout", "full_page": true, "encoding": "base64"}}
-[ 16.81s][user ] «backchannel» Yeah.
-[ 17.17s][moshi] Is there anything else I can help you with regarding that error, or perhaps a different page?
-[ 23.25s][user ] Actually, could you search for articles about that error message? It says “payment gateway ⟨ret@28.10s⟩ unavailable”.
-[ 28.62s][moshi] ⟦⚡SPAN@29.10s: Payment gateway unavailable errors typically arise from issues with the payment processor, network connectivit⟧ It looks like “payment gateway unavailable” errors often stem from issues with the processor itself, or network problems, and the Stripe support page has details.
-[ 37.56s][user ] Okay, that's helpful. Let's try something else. I need to book a hotel in Seoul for next week.
+[  0.00s][user ] I need to see what’s inside my documents ⟨ret@3.22s⟩ folder.
+[  3.84s][moshi] ⟦⚡SPAN@3.52s: (tool result) /home/user/documents: Documents, Projects, Receipts, Templates⟧ Okay, looking in your documents folder, I see four things: Documents, Projects, Receipts, and Templates.
+      CALL: {"function": "directory_tree", "arguments": {"path": "documents"}}
+[ 10.24s][user ] «backchannel» Mm-hmm.
+[ 10.67s][user ] Hmm. What's in Projects? ⟨ret@12.19s⟩
+[ 12.38s][moshi] ⟦⚡SPAN@12.74s: (tool result) /home/user/documents/Projects: ProjectA, ProjectB, Archive⟧ Within Projects, you have ProjectA, ProjectB, and a folder called Archive.
+      CALL: {"function": "directory_tree", "arguments": {"path": "documents/Projects"}}
+[ 17.07s][user ] What kind of files are in ⟨ret@19.54s⟩ ProjectA?
+[ 20.06s][moshi] ⟦⚡SPAN@20.00s: (tool result) /home/user/documents/Projects/ProjectA: report.docx, data.csv, notes.txt⟧ ProjectA contains a Word document named report.docx, a CSV file called data.csv, and a text file named notes.txt.
+      CALL: {"function": "directory_tree", "arguments": {"path": "documents/Projects/ProjectA"}}
+[ 27.74s][user ] «backchannel» Yeah.
+[ 28.17s][moshi] Sounds like you’re well organized! Is there anything specific you’re looking for within those files?
+[ 34.57s][user ] No, just checking. Can you find me some Italian restaurants nearby? ⟨ret@39.19s⟩
+[ 39.26s][moshi] I ⟦⚡SPAN@40.06s: (tool result) Name: Bella Italia, Address: 123 Main Street, Rating: 4.5 stars, Price: $$⟧ found Bella Italia at 123 Main Street, it has a 4.5 star rating and is moderately priced.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 46.95s][user ] That sounds good. Can you make a reservation for two people at 7 PM tonight?
+[ 53.35s][moshi] «backchannel» Oh.
+[ 53.77s][moshi] ⟨ret@53.66s⟩ [surprised] ⟦⚡SPAN@54.52s: (tool result) Reservation confirmed for 2 people at Bella Italia on July 10, 2026 at 7:00 PM. Confirmation ID:⟧ Great! Your reservation for two at Bella Italia tonight at 7 PM is confirmed, with confirmation ID BI7293.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "today", "time": "7:00 PM", "party_size": "2"}}
+[ 61.88s][user ] «backchannel» Okay.
+[ 62.31s][user ] Perfect. Thanks.
+[ 63.16s][moshi] You’re very welcome. It’s good to have plans, and even better to have a good meal to look forward to.
+[ 71.70s][user ] «backchannel» Uh-huh.
+[ 72.13s][user ] I think so too. What’s the weather like ⟨ret@75.74s⟩ there?
+[ 75.97s][moshi] Right ⟦⚡SPAN@76.60s: (tool result) 24.0°C, humidity 68%, wind 3.2 km/h, condition: partly cloudy⟧ now, the weather at Bella Italia is 24.0 degrees Celsius, with 68% humidity, a 3.2 kilometer per hour wind, and partly cloudy skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 86.21s][user ] Okay, good to know. Thanks again.
+[ 88.77s][moshi] Anytime! Remember, a little planning can make a big difference in enjoying your day.

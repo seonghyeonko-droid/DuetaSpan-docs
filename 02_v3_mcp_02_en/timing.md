@@ -4,131 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Jordan",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-13",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-10",
+#       "category": "home",
+#       "text": "User's home address is 486 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-11-04",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2025-10-03",
+#       "date": "2026-02-02",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-01-05",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-09-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-26",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-20",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-17",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 Yeah, you're right. Speaking of pl | S3 …Actually, hold on. My daughter ju | S4 It really is. I need to find a nic
+# EXAMINER(FDB-v2) 단계: S1 I'm working on a play, and I need  | S2 Something… melancholic, but hopefu | S3 Hmm… yeah, that's really nice. It' | S4 That sounds perfect! Can you reser
 
-     0.00s  user  발화 시작: I need to find a good Italian restaurant. Somewhere nice for
-     5.60s  agent 발화 시작: I can help with that. Do you have a particular location in m
-     5.60s  user  발화 끝
-    10.79s  user  발화 시작: Okay.
-    10.79s  agent 발화 끝
-    11.19s  user  발화 시작: Um, somewhere near the Seoul Arts Center, actually.
-    11.19s  user  발화 끝
-    14.17s  <ret> 발화 (turn4 첫 프레임)
-    14.39s  agent 발화 시작: <ret> I found two Italian restaurants near the Seoul Arts Ce
-    14.39s  user  발화 끝
-    15.26s  ⚡SPAN 주입 [d'=1.09s / d_lead=11.99s]: (tool result) {"restaurants": [{"name": "La Tavola", "address": "93-15
-    26.38s  user  발화 시작: Wow.
-    26.38s  agent 발화 끝
-    26.78s  user  발화 시작: La Tavola sounds good. Can we make a reservation there for, 
-    26.78s  user  발화 끝
-    34.01s  <ret> 발화 (turn7 첫 프레임)
-    34.38s  agent 발화 시작: <ret> Your reservation at La Tavola for six people on Saturd
-    34.38s  user  발화 끝
-    35.17s  ⚡SPAN 주입 [d'=1.15s / d_lead=7.59s]: (tool result) {"confirmation id": "LT726181900", "restaurant name": "L
-    41.97s  user  발화 시작: Yeah.
-    41.97s  agent 발화 끝
-    42.37s  user  발화 시작: Perfect! That's a relief.
-    42.37s  user  발화 끝
-    43.97s  agent 발화 시작: It’s wonderful to hear that, and it's great to plan ahead fo
-    43.97s  user  발화 끝
-    53.16s  user  발화 시작: Mhm.
-    53.16s  agent 발화 끝
-    53.56s  user  발화 시작: Yeah, you're right. Speaking of planning, could you check th
-    53.56s  user  발화 끝
-    59.40s  <ret> 발화 (turn13 첫 프레임)
-    59.56s  agent 발화 시작: <ret> The forecast for Seoul on July 18th is 26.5 degrees Ce
-    59.56s  user  발화 끝
-    60.37s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.19s]: (tool result) {"date": "2026-07-18", "location": "Seoul", "temperature
-    66.75s  user  발화 시작: That sounds pleasant enough.
-    66.75s  agent 발화 끝
-    68.35s  agent 발화 시작: It does, doesn’t it? A comfortable temperature for an evenin
-    68.35s  user  발화 끝
-    73.95s  user  발화 시작: I wonder if there’s anything fun happening near the restaura
-    73.95s  agent 발화 끝
-    78.74s  agent 발화 시작: That’s a good thought! Let me check for events happening nea
-    78.74s  user  발화 끝
-    84.74s  user  발화 시작: …Actually, hold on. My daughter just remembered…
-    84.74s  agent 발화 끝
-    87.54s  user  발화 시작: …she has a dance recital that evening.
-    87.54s  user  발화 끝
-    90.33s  agent 발화 시작: Oh, dear! That changes things, doesn’t it?
-    90.33s  user  발화 끝
-    93.13s  user  발화 시작: Mm-hmm.
-    93.13s  agent 발화 끝
-    93.53s  user  발화 시작: It does. Can we reschedule the reservation for the following
-    93.53s  user  발화 끝
-    98.33s  agent 발화 시작: Mhm.
-    98.33s  user  발화 끝
-    98.40s  <ret> 발화 (turn24 첫 프레임)
-    98.73s  agent 발화 시작: <ret> I’ve rescheduled your reservation at La Tavola for six
-    98.73s  agent 발화 끝
-    99.24s  ⚡SPAN 주입 [d'=0.84s / d_lead=8.79s]: (tool result) {"confirmation id": "LT725251900", "restaurant name": "L
-   107.52s  user  발화 시작: Fantastic. Thank you so much for being flexible.
-   107.52s  agent 발화 끝
-   110.72s  agent 발화 시작: You’re very welcome. Life with a family is always full of li
-   110.72s  user  발화 끝
-   116.72s  user  발화 시작: Yeah.
-   116.72s  agent 발화 끝
-   117.12s  user  발화 시작: It really is. I need to find a nice gift for my daughter aft
-   117.12s  user  발화 끝
-   124.31s  agent 발화 시작: That's such a lovely idea! What does she like? Perhaps I can
-   124.31s  user  발화 끝
-   131.11s  user  발화 시작: She loves books. Maybe a new novel?
-   131.11s  agent 발화 끝
-   133.44s  <ret> 발화 (turn31 첫 프레임)
-   133.90s  agent 발화 시작: <ret> I found "The Shadow Bloom" by Anya Thorne, a new fanta
-   133.90s  user  발화 끝
-   134.11s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.39s]: (tool result) "The Shadow Bloom" by Anya Thorne is a captivating fanta
-   142.30s  user  발화 시작: Yeah.
-   142.30s  agent 발화 끝
-   142.70s  user  발화 시작: That sounds perfect! Where can I buy it?
-   142.70s  user  발화 끝
-   145.89s  agent 발화 시작: I can search for bookstores near the Seoul Arts Center that 
-   145.89s  user  발화 끝
-   153.89s  agent 발화 끝
+     0.00s  user  발화 시작: I'm working on a play, and I need to highlight a section of 
+     9.93s  <ret> 발화 (turn1 첫 프레임)
+    10.10s  agent 발화 시작: <ret> [happy] Absolutely! I've made the selected text bold i
+    10.10s  user  발화 끝
+    10.65s  ⚡SPAN 주입 [d'=0.72s / d_lead=6.87s]: (tool result) {"success", "message": "Text successfully made bold."}
+    16.98s  user  발화 시작: Yeah, that's perfect. Um, I'm kind of stressed about getting
+    16.98s  agent 발화 끝
+    23.04s  agent 발화 시작: Mm-hmm.
+    23.04s  user  발화 끝
+    23.44s  agent 발화 시작: [sigh] Oh, deadlines can be so tough. As a supportive adviso
+    23.44s  agent 발화 끝
+    34.36s  user  발화 시작: Yeah, yeah.
+    34.36s  agent 발화 끝
+    35.17s  user  발화 시작: I think it’s just… everything. I need to find some music for
+    35.17s  user  발화 끝
+    44.46s  agent 발화 시작: Music can really elevate a scene! Let's find some options. W
+    44.46s  user  발화 끝
+    52.95s  user  발화 시작: Uh-huh.
+    52.95s  agent 발화 끝
+    53.35s  user  발화 시작: Something… melancholic, but hopeful. Maybe instrumental?
+    53.35s  user  발화 끝
+    55.78s  agent 발화 시작: [curious] Melancholic, yet hopeful—beautiful. I can definite
+    55.78s  user  발화 끝
+    63.05s  user  발화 시작: Yeah.
+    63.05s  agent 발화 끝
+    63.46s  user  발화 시작: Not really. Just… something that evokes a sense of longing, 
+    63.46s  user  발화 끝
+    67.69s  <ret> 발화 (turn13 첫 프레임)
+    68.31s  agent 발화 시작: <ret> There's a piece called "Near Light" by Olafur Arnalds,
+    68.31s  user  발화 끝
+    68.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.51s]: (tool result) {"artist": "Olafur Arnalds", "title": "Near Light", "dur
+    78.82s  user  발화 시작: Olafur Arnalds… I think I've heard of him. Sounds promising.
+    78.82s  agent 발화 끝
+    84.88s  agent 발화 시작: Uh-huh.
+    84.88s  user  발화 끝
+    85.27s  <ret> 발화 (turn16 첫 프레임)
+    85.29s  agent 발화 시작: <ret> It’s now playing—you can find it on Spotify at spotify
+    85.29s  agent 발화 끝
+    86.57s  ⚡SPAN 주입 [d'=1.30s / d_lead=4.04s]: (tool result) {"status": "playing", "url": "spotify:track:7i9Bf3xJdFz1
+    89.33s  user  발화 시작: Yeah.
+    89.33s  agent 발화 끝
+    89.73s  user  발화 시작: Hmm… yeah, that's really nice. It's a little sad, but in a g
+    89.73s  user  발화 끝
+    97.82s  agent 발화 시작: [happy] Wonderful! I'm glad we found something you like. Mus
+    97.82s  user  발화 끝
+   103.47s  user  발화 시작: It is. Okay, next problem: I need to book a table for after 
+   103.47s  agent 발화 끝
+   110.35s  agent 발화 시작: Uh-huh.
+   110.35s  user  발화 끝
+   110.75s  agent 발화 시작: Rehearsal sounds exciting! Where are you rehearsing, and how
+   110.75s  agent 발화 끝
+   117.22s  user  발화 시작: We're rehearsing at the Blackwood Theatre, and there will be
+   117.22s  agent 발화 끝
+   122.13s  <ret> 발화 (turn24 첫 프레임)
+   122.41s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.89s]: (tool result) {"restaurant name": "The Gilded Lily", "cuisine": "Itali
+   122.47s  agent 발화 시작: <ret> The Gilded Lily, an Italian restaurant with a four-and
+   122.47s  user  발화 끝
+   131.36s  user  발화 시작: Mm-hmm.
+   131.36s  agent 발화 끝
+   131.77s  user  발화 시작: That sounds perfect! Can you reserve a table for us?
+   131.77s  user  발화 끝
+   135.35s  <ret> 발화 (turn27 첫 프레임)
+   135.81s  agent 발화 시작: <ret> I've reserved a table at The Gilded Lily for five peop
+   135.81s  user  발화 끝
+   136.02s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.49s]: (tool result) {"confirmation number": "GL57892", "status": "confirmed"
+   144.30s  user  발화 시작: Fantastic! You've been a huge help, Zaeon.
+   144.30s  agent 발화 끝
+   147.13s  agent 발화 시작: [laugh] You’re very welcome! I’m happy to support your creat
+   147.13s  user  발화 끝
+   158.45s  agent 발화 끝

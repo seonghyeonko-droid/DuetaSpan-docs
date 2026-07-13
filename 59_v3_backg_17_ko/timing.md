@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "라원",
+#     "name": "은원",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,45 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-04-20",
+#       "date": "2026-05-21",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-02-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
 #       "date": "2026-02-02",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-07-28",
+#       "date": "2026-01-27",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-13",
+#       "date": "2025-12-25",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -63,77 +60,97 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 노스다코타 주 윌리스턴의 인구가 어떻게 돼? | S2 인구가 급증했다니, 지금은 어떤가요? | S3 잠깐만요, 혹시 그곳에서 캠핑도 할 수 있나요? | S4 호텔 정보 좀 더 자세히 알려줄 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 베아라님. 새로운 도시에 와서 어떻게 정착하면 좋 | S2 맞아요. 그런데 혹시 모아나 영화에 나오는 모아나는 몇 살인가 | S3 그럼, 모아나 영화는 언제 개봉했나요? | S4 칠십육번 버스군요. 알려주셔서 감사합니다.
 
-     0.00s  user  발화 시작: 노스다코타 주 윌리스턴의 인구가 어떻게 돼?
-     2.74s  <ret> 발화 (turn1 첫 프레임)
-     3.14s  agent 발화 시작: <ret> 노스다코타 주 윌리스턴의 인구는 총 이만 육천 구백일흔일곱명입니다. 혹시 다른 도시의 인구도 궁금
-     3.14s  user  발화 끝
-     3.66s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.80s]: The population of Williston, North Dakota is 26,977.
-     9.93s  user  발화 시작: 응.
-     9.93s  agent 발화 끝
-    10.46s  user  발화 시작: 음, 다른 도시는 말고, 윌리스턴에 대해 좀 더 알려줘.
-    10.46s  user  발화 끝
-    15.11s  <ret> 발화 (turn5 첫 프레임)
-    15.16s  agent 발화 시작: 네.
-    15.16s  user  발화 끝
-    15.68s  agent 발화 시작: <ret> 윌리스턴은 노스다코타 주 윌리엄스 카운티의 중심지이며, 석유 산업의 주요 무역 중심지입니다.
-    15.68s  agent 발화 끝
-    16.29s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.75s]: Williston is the county seat of Williams County, North Dakota, and is 
-    21.44s  user  발화 시작: 그치.
-    21.44s  agent 발화 끝
-    21.96s  agent 발화 시작: 윌리스턴은 에너지 산업과 관련이 깊은 곳이네요.
-    21.96s  user  발화 끝
-    25.09s  user  발화 시작: 에너지 산업이요? 어떤 식으로 관련이 깊은데요?
-    25.09s  agent 발화 끝
-    28.03s  <ret> 발화 (turn9 첫 프레임)
-    28.23s  agent 발화 시작: <ret> 이천년대 이후, 배켄 층의 석유 생산 증가로 인해 윌리스턴의 인구가 크게 증가했습니다.
-    28.23s  user  발화 끝
-    28.96s  ⚡SPAN 주입 [d'=0.94s / d_lead=6.27s]: Oil production in the Bakken Formation has led to a significant popula
-    34.51s  user  발화 시작: 인구가 급증했다니, 지금은 어떤가요?
-    34.51s  agent 발화 끝
-    36.27s  <ret> 발화 (turn11 첫 프레임)
-    36.60s  agent 발화 시작: <ret> 이천이십이년 기준으로 윌리스턴의 예상 인구는 이만 구천 칠백마흔한명입니다.
-    36.60s  user  발화 끝
-    37.53s  ⚡SPAN 주입 [d'=1.26s / d_lead=4.18s]: As of 2022, the estimated population of Williston is 29,741.
-    40.78s  user  발화 시작: 이만 구천 명이나 됐네. 그런데 윌리스턴 근처에 볼만한 곳은 없을까요?
-    40.78s  agent 발화 끝
-    45.94s  <ret> 발화 (turn14 첫 프레임)
-    46.01s  agent 발화 시작: 정말요?
-    46.01s  user  발화 끝
-    46.53s  agent 발화 시작: <ret> 윌리스턴에서 남서쪽으로 약 사십킬로미터 거리에 포트 유니언 무역 게시국 국립 역사 유적지가 있습니
-    46.53s  agent 발화 끝
-    46.89s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.80s]: The Fort Union Trading Post National Historic Site is located approxim
-    53.33s  user  발화 시작: 포트 유니언이요? 그곳은 어떤 곳인가요?
-    53.33s  agent 발화 끝
-    55.62s  <ret> 발화 (turn16 첫 프레임)
-    55.94s  agent 발화 시작: <ret> 포트 유니언 무역 게시국은 십구세기에 중요한 무역 거점으로, 아시니보인족과 크로우족, 그리고 미국
-    55.94s  user  발화 끝
-    56.64s  ⚡SPAN 주입 [d'=1.02s / d_lead=8.36s]: Fort Union Trading Post was a major trading post during the 19th centu
-    64.31s  user  발화 시작: 잠깐만요, 혹시 그곳에서 캠핑도 할 수 있나요?
-    64.31s  agent 발화 끝
-    67.97s  agent 발화 시작: 캠핑도 가능합니다. 포트 유니언 무역 게시국 국립 역사 유적지에는 캠핑장이 마련되어 있습니다.
-    67.97s  user  발화 끝
-    74.24s  user  발화 시작: 아, 좋네요. 그럼, 윌리스턴에서 포트 유니언까지 가는 가장 빠른 길은 어떻게 되나요?
-    74.24s  agent 발화 끝
-    79.97s  <ret> 발화 (turn20 첫 프레임)
-    80.51s  agent 발화 시작: <ret> 윌리스턴에서 포트 유니언까지 가는 가장 빠른 길은 유 에스 이 고속도로를 타고 서쪽으로 가면, 약
-    80.51s  user  발화 끝
-    81.03s  ⚡SPAN 주입 [d'=1.06s / d_lead=10.98s]: (tool result) {"distance": "40.2 km", "duration": "32 mins", "route": 
-    91.49s  user  발화 시작: 삼십이분이면 괜찮네요. 혹시 그 근처에 숙박할 곳도 있나요?
-    91.49s  agent 발화 끝
-    95.30s  <ret> 발화 (turn22 첫 프레임)
-    95.67s  agent 발화 시작: <ret> 포트 유니언 무역 게시국에서 사십팔킬로미터 이내의 윌리스턴에는 여러 호텔과 모텔이 있습니다.
-    95.67s  user  발화 끝
-    96.73s  ⚡SPAN 주입 [d'=1.43s / d_lead=5.75s]: There are several hotels and motels located in Williston, North Dakota
-   101.43s  user  발화 시작: 어어.
-   101.43s  agent 발화 끝
-   101.95s  user  발화 시작: 호텔 정보 좀 더 자세히 알려줄 수 있을까요?
-   101.95s  user  발화 끝
-   106.13s  agent 발화 시작: 호텔 정보를 찾아보겠습니다. 어떤 종류의 호텔을 선호하시나요?
-   106.13s  user  발화 끝
-   109.79s  user  발화 시작: 저렴한 곳이면 괜찮아요.
-   109.79s  agent 발화 끝
-   111.36s  agent 발화 시작: 예산에 맞는 호텔을 찾아드릴게요. 잠시만 기다려 주세요.
-   111.36s  user  발화 끝
-   115.02s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 베아라님. 새로운 도시에 와서 어떻게 정착하면 좋을까요?
+     4.03s  agent 발화 시작: 안녕하세요! 새로운 곳에 오신 걸 환영해요. 천천히 주변을 둘러보면서 자신에게 맞는 리듬을 찾는 게 중요해요
+     4.03s  user  발화 끝
+    11.59s  user  발화 시작: 네, 맞아요. 지금은 좀 정신이 없네요.
+    11.59s  agent 발화 끝
+    14.61s  agent 발화 시작: 그럴 수 있어요. 새로운 환경에 적응하는 데는 시간이 필요하니까요. 혹시 관심 있는 분야가 있으신가요?
+    14.61s  user  발화 끝
+    21.67s  user  발화 시작: 영화 보는 걸 좋아해요.…
+    21.67s  agent 발화 끝
+    23.68s  user  발화 시작: …혹시 근처에 좋은 영화관이 있을까요?
+    23.68s  user  발화 끝
+    26.03s  <ret> 발화 (turn6 첫 프레임)
+    26.20s  agent 발화 시작: <ret> 어, 근처에 레갈 에드워즈 어바인 스펙트럼 영화관이 있네요. 육십오 Fortune Dr, Irvi
+    26.20s  user  발화 끝
+    26.37s  ⚡SPAN 주입 [d'=0.33s / d_lead=10.58s]: (tool result) The Regal Edwards Irvine Spectrum is a popular movie the
+    36.78s  user  발화 시작: 아, 거기 가봐야겠네요.
+    36.78s  agent 발화 끝
+    38.29s  agent 발화 시작: 좋은 선택이에요. 영화를 보면서 스트레스를 푸는 것도 좋은 방법이죠.
+    38.29s  user  발화 끝
+    42.83s  user  발화 시작: 맞아요. 그런데 혹시 모아나 영화에 나오는 모아나는 몇 살인가요?
+    42.83s  agent 발화 끝
+    47.16s  <ret> 발화 (turn10 첫 프레임)
+    47.36s  agent 발화 시작: <ret> 모아나는 영화에서 열여섯살로 묘사돼요.
+    47.36s  user  발화 끝
+    47.46s  ⚡SPAN 주입 [d'=0.30s / d_lead=2.02s]: Moana is portrayed as a 16-year-old in the movie Moana.
+    49.38s  user  발화 시작: 어머, 저기 봐, 강아지가 꼬리를 흔들고 있잖아!
+    49.38s  agent 발화 끝
+    52.90s  user  발화 시작: … 아, 그 영화에 나오는 돼지 캐릭터 이름이 뭐였죠?
+    52.90s  user  발화 끝
+    57.44s  agent 발화 시작: 그건…—
+    57.44s  user  발화 끝
+    57.94s  user  발화 시작: … 푸아였나?
+    57.94s  agent 발화 끝
+    58.95s  agent 발화 시작: 네, 맞아요. 푸아였어요. 기억력이 좋으시네요.
+    58.95s  user  발화 끝
+    61.47s  user  발화 시작: 그럼, 모아나 영화는 언제 개봉했나요?
+    61.47s  agent 발화 끝
+    63.66s  <ret> 발화 (turn17 첫 프레임)
+    63.96s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.02s]: The movie Moana was released on November 23, 2016.
+    63.99s  agent 발화 시작: <ret> 모아나 영화는 이천십육년 십일월 이십삼일에 개봉했어요.
+    63.99s  user  발화 끝
+    67.01s  user  발화 시작: 아, 생각보다 오래됐네요.
+    67.01s  agent 발화 끝
+    68.52s  agent 발화 시작: 네, 하지만 지금도 많은 사람들에게 사랑받는 영화죠.
+    68.52s  user  발화 끝
+    72.05s  user  발화 시작: 네.
+    72.05s  agent 발화 끝
+    72.56s  agent 발화 시작: 혹시 다른 관심사가 있으신가요? 예를 들어, 맛집을 찾으시는 건 어떠세요?
+    72.56s  user  발화 끝
+    77.59s  user  발화 시작: 맛집은 언제든지 좋죠. 한식집을 추천해 주실 수 있나요?
+    77.59s  agent 발화 끝
+    81.30s  <ret> 발화 (turn23 첫 프레임)
+    81.62s  agent 발화 시작: <ret> 한식집으로는 한밧 설렁탕이 괜찮겠네요. 일 사 팔 삼 오 Jeffrey Rd Ste E, Irvi
+    81.62s  user  발화 끝
+    82.33s  ⚡SPAN 주입 [d'=1.03s / d_lead=11.08s]: (tool result) Han Bat Shul Lung Tang is a Korean restaurant at 14835 J
+    92.71s  user  발화 시작: 설렁탕! 좋아요. 거기는 가격이 어느 정도인가요?
+    92.71s  agent 발화 끝
+    95.49s  <ret> 발화 (turn25 첫 프레임)
+    95.73s  agent 발화 시작: <ret> 한밧 설렁탕은 가격대가 보통이에요.
+    95.73s  user  발화 끝
+    96.53s  ⚡SPAN 주입 [d'=1.05s / d_lead=2.02s]: The price tier for Han Bat Shul Lung Tang is $$.
+    97.75s  user  발화 시작: 아, 그렇군요. 그럼, 거기 가는 버스 노선을 알아봐 주실 수 있나요?
+    97.75s  agent 발화 끝
+   103.29s  agent 발화 시작: 맞아요.
+   103.29s  user  발화 끝
+   103.42s  <ret> 발화 (turn28 첫 프레임)
+   103.79s  agent 발화 시작: <ret> 현재 위치에서 한밧 설렁탕까지 칠십육번 버스를 타면 돼요.
+   103.79s  agent 발화 끝
+   104.07s  ⚡SPAN 주입 [d'=0.66s / d_lead=4.03s]: (tool result) Bus number 76 will take you to Han Bat Shul Lung Tang fr
+   107.83s  user  발화 시작: 칠십육번 버스군요. 알려주셔서 감사합니다.
+   107.83s  agent 발화 끝
+   109.84s  agent 발화 시작: 천만에요. 새로운 곳에서의 생활이 즐거워지도록 제가 도울 수 있어서 기뻐요.
+   109.84s  user  발화 끝
+   114.88s  user  발화 시작: 네네.
+   114.88s  agent 발화 끝
+   115.38s  user  발화 시작: [sigh] 새로운 곳에 오면 항상 적응하는 게 어렵네요.
+   115.38s  user  발화 끝
+   119.41s  agent 발화 시작: 맞아요. 하지만 분명히 좋은 점도 많을 거예요. 새로운 사람들과의 만남, 새로운 경험들…
+   119.41s  user  발화 끝
+   125.46s  user  발화 시작: 그럴 거라고 생각해요. 조금만 더 힘내 봐야겠어요.
+   125.46s  agent 발화 끝
+   128.99s  agent 발화 시작: 그렇죠. 긍정적인 마음을 유지하는 게 중요해요. [happy] 혹시 필요한 게 더 있으신가요?
+   128.99s  user  발화 끝
+   135.03s  user  발화 시작: 그렇죠.
+   135.03s  agent 발화 끝
+   135.54s  user  발화 시작: 오늘은 이 정도면 충분할 것 같아요. 감사합니다, 베아라님.
+   135.54s  user  발화 끝
+   139.57s  agent 발화 시작: 예.
+   139.57s  user  발화 끝
+   140.07s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해 주세요. 새로운 시작을 응원합니다!
+   140.07s  agent 발화 끝
+   144.10s  agent 발화 끝

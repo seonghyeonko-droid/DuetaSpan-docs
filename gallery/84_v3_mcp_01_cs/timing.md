@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Marie",
+#     "name": "Riley",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,68 +12,97 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-05-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2026-02-10",
+#       "date": "2026-02-08",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-12-10",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "home",
-#       "text": "User's home address is 504 Birch Road."
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 심리 상담사 덴버 콜로라도에서 찾아야 하는데, 현금으로 결제할 | S2 칠월 십칠일은 좀 멀다. 더 빨리 예약 가능한 다른 곳은 없어 | S3 생각보다 좀 비싸네. | S4 훨씬 합리적인 것 같아. 전화번호 좀 알려줄래?
 
-     0.00s  user  발화 시작: 위도 삼십이 점 영삼 삼삼 삼, 경도 백십팔 점 칠팔팔팔인 곳이 어디야?
-     5.71s  agent 발화 시작: 네.
-     5.71s  user  발화 끝
-     6.17s  <ret> 발화 (turn2 첫 프레임)
-     6.18s  agent 발화 시작: <ret> 거기는 캘리포니아주 샌디에이고, 유니버시티 애비뉴 이이공팔에 있어. 우편번호는 구이일공사야. 캘리
-     6.18s  agent 발화 끝
-     6.47s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.66s]: (tool result) {"address": "2208 University Ave, San Diego, CA 92104", 
-    12.84s  user  발화 시작: 어.
-    12.84s  agent 발화 끝
-    13.32s  user  발화 시작: 그 근처에 괜찮은 커피숍 있어?
-    13.32s  user  발화 끝
-    15.63s  <ret> 발화 (turn6 첫 프레임)
-    15.69s  agent 발화 시작: 아.
-    15.69s  user  발화 끝
-    16.17s  agent 발화 시작: <ret> 리빙 브루 커피가 이 점 육 마일 떨어져 있는데, 엘 카혼 불러바드 이이이일 번지에 있고, 평점은
-    16.17s  agent 발화 끝
-    16.76s  ⚡SPAN 주입 [d'=1.14s / d_lead=10.94s]: {"name": "Living Brew Coffee", "address": "2121 El Cajon Blvd Ste 109,
-    27.11s  user  발화 시작: 좋아, 그럼 그 커피숍까지 걸어가는 길 찾아 줘.
-    27.11s  agent 발화 끝
-    30.90s  <ret> 발화 (turn9 첫 프레임)
-    30.91s  agent 발화 시작: 예.
-    30.91s  user  발화 끝
-    31.20s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.89s]: (tool result) {"distance": 0.6, "duration": 12, "instructions": Walk w
-    31.39s  agent 발화 시작: <ret> 이 점 육 마일 걸어가면, 대략 십이 분 걸릴 거야. 유니버시티 애비뉴를 서쪽으로 걸어가서 길먼 
-    31.39s  agent 발화 끝
-    43.28s  agent 발화 끝
+     0.00s  user  발화 시작: 심리 상담사 덴버 콜로라도에서 찾아야 하는데, 현금으로 결제할 수 있으면 좋겠어.
+     5.18s  agent 발화 시작: 예.
+     5.18s  user  발화 끝
+     5.64s  <ret> 발화 (turn2 첫 프레임)
+     5.66s  agent 발화 시작: <ret> 음, 덴버에서 불안, 우울증, 트라우마를 전문으로 하는 엘리너 밴스 박사님을 찾았는데, 전화번호는
+     5.66s  agent 발화 끝
+     5.94s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.37s]: (tool result) {"provider name": "Dr. Eleanor Vance", "address": "1600 
+    16.02s  user  발화 시작: 음.
+    16.02s  agent 발화 끝
+    16.49s  user  발화 시작: 괜찮아 보이는데. 신규 환자를 받으시려나?
+    16.49s  user  발화 끝
+    18.78s  <ret> 발화 (turn6 첫 프레임)
+    18.85s  agent 발화 시작: 네.
+    18.85s  user  발화 끝
+    19.32s  agent 발화 시작: <ret> 뭐, 밴스 박사님은 칠월 십칠일 오후 두시에 예약이 가능합니다. 산악 일광 절약 시간 기준이에요.
+    19.32s  agent 발화 끝
+    19.91s  ⚡SPAN 주입 [d'=1.14s / d_lead=6.60s]: (tool result) {"availability": "Next available appointment is July 17t
+    25.92s  user  발화 시작: 칠월 십칠일은 좀 멀다. 더 빨리 예약 가능한 다른 곳은 없어?
+    25.92s  agent 발화 끝
+    31.09s  <ret> 발화 (turn9 첫 프레임)
+    31.10s  agent 발화 시작: 정말요?
+    31.10s  user  발화 끝
+    31.39s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.37s]: (tool result) {"provider name": "Dr. Marcus Bell", "address": "2200 We
+    31.58s  agent 발화 시작: <ret> 음, 덴버에 마커스 벨 박사님도 찾았는데, 스트레스와 관계 문제를 전문으로 하시고, 전화번호는 삼
+    31.58s  agent 발화 끝
+    41.94s  user  발화 시작: 벨 박사님도 괜찮아 보이는데. 진료비는 얼마야?
+    41.94s  agent 발화 끝
+    44.62s  <ret> 발화 (turn11 첫 프레임)
+    44.77s  agent 발화 시작: <ret> 싸이콜로지투데이닷컴에 따르면 벨 박사님은 오십분 세션당 백오십달러를 받으십니다.
+    44.77s  user  발화 끝
+    45.60s  ⚡SPAN 주입 [d'=0.97s / d_lead=3.77s]: (tool result) Dr. Marcus Bell, PhD, offers individual therapy sessions
+    48.54s  user  발화 시작: 생각보다 좀 비싸네.
+    48.54s  agent 발화 끝
+    49.96s  agent 발화 시작: 예산에 맞는 좋은 상담사를 찾는 건 당연한 거고, 알아보고—
+    49.96s  user  발화 끝
+    54.20s  user  발화 시작: …세션당 백달러 정도 되는 곳으로 다시 찾아줄래?
+    54.20s  agent 발화 끝
+    57.30s  <ret> 발화 (turn15 첫 프레임)
+    57.50s  agent 발화 시작: <ret> 덴버 카운슬링 서비스는 덴버카운슬링서비스스닷컴에 따르면 세션당 팔십오달러부터 시작합니다.
+    57.50s  user  발화 끝
+    58.15s  ⚡SPAN 주입 [d'=0.85s / d_lead=3.77s]: (tool result) Several therapists in Denver offer sessions around $100.
+    61.27s  user  발화 시작: 훨씬 합리적인 것 같아. 전화번호 좀 알려줄래?
+    61.27s  agent 발화 끝
+    63.97s  <ret> 발화 (turn17 첫 프레임)
+    64.50s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.01s]: (tool result) The phone number for Denver Counseling Services is (303)
+    64.57s  agent 발화 시작: <ret> 전화번호는 삼 공 삼 오 오 오 육 칠 팔 구입니다. [happy] 더 저렴한 옵션을 찾아서 기쁩
+    64.57s  user  발화 끝
+    72.58s  user  발화 시작: 어어.
+    72.58s  agent 발화 끝
+    73.05s  user  발화 시작: 좋아. 도와줘서 고마워.
+    73.05s  user  발화 끝
+    74.46s  agent 발화 시작: 천만에요.
+    74.46s  user  발화 끝
+    74.93s  agent 발화 끝

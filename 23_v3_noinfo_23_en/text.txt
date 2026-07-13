@@ -1,105 +1,120 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Thuia, a kind and steady counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Drimi, a kind and steady wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Manon",
+    "name": "Remy",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-11",
-      "category": "home",
-      "text": "User's home address is 893 Pine Court."
+      "date": "2026-05-27",
+      "category": "work",
+      "text": "User works as a chef."
     },
     {
-      "date": "2026-03-05",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-04-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-10-06",
+      "date": "2026-04-12",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-09-30",
+      "date": "2026-03-31",
       "category": "diet",
       "text": "User is vegetarian."
     },
     {
-      "date": "2025-09-22",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-03-27",
+      "category": "home",
+      "text": "User's home address is 183 Elm Street."
     },
     {
-      "date": "2025-08-09",
+      "date": "2026-02-11",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Iceland in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-11",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-12",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2026-04-21",
+      "date": "2025-12-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you have the contact information for ⟨ret@2.61s⟩ Lee Sun-hee?
-[  3.21s][moshi] ⟦⚡SPAN@2.91s: (no information found)⟧ I’m sorry, I couldn’t find any publicly available contact information for Lee Sun-hee. It appears to be private.
-      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
-[  9.63s][user ] Oh, okay. Well, what…
-[ 11.06s][user ] …about her latest album release ⟨ret@12.88s⟩ date?
-[ 13.20s][moshi] ⟦⚡SPAN@13.42s: Lee Sun-hee released her fifteenth studio album, “Because You’re Here,” on May 26, 2023.⟧ Her fifteenth studio album, “Because You’re Here,” came out on May twenty-sixth, two thousand twenty-three. She’s been quite active.
-[ 19.98s][user ] «backchannel» Uh-huh.
-[ 20.34s][user ] That’s good to know. I’m planning a trip to Jeju Island next month.
-[ 24.98s][moshi] Jeju Island is beautiful! I can help you find information about it if you'd like.
-[ 30.33s][user ] Yes, please. What’s the weather forecast for Jeju City on July 20th?
-[ 34.61s][moshi] «backchannel» Mm-hmm.
-[ 34.97s][moshi] ⟨ret@34.72s⟩ On ⟦⚡SPAN@35.77s: (tool result) 26.3°C, humidity 78%, wind 7.2 km/h, mostly cloudy.⟧ July twentieth, two thousand twenty-six, Jeju City will be twenty-six point three degrees Celsius, with seventy-eight percent humidity and winds at seven point two kilometers per hour—mostly cloudy.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Jeju City", "date": "2026-07-20"}}
-[ 45.32s][user ] That sounds pleasant. Are there any good hiking ⟨ret@48.34s⟩ trails there?
-[ 48.89s][moshi] ⟦⚡SPAN@48.83s: (tool result) Hallasan National Park offers several hiking trails, including Seongpanak Trail and Gwaneumsa Tr⟧ Hallasan National Park has trails like Seongpanak and Gwaneumsa, ranging from eight point one to eighteen point two kilometers—a lovely place to hike.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Jeju Island", "category": "hiking trails"}}
-[ 57.09s][user ] The Seongpanak Trail sounds interesting.
-[ 58.88s][moshi] «interrupted» It’s a popular choice, known for its beautiful views and diverse ecosystems—
-[ 63.16s][user ] «interrupts_prev» …how long does it usually take to complete?
-[ 66.01s][moshi] It generally takes about seven to nine hours to complete the Seongpanak Trail, depending on your pace. It’s a full-day hike.
-[ 73.51s][user ] Okay, good to know. Can you find me some restaurants near Hallasan National Park? ⟨ret@78.37s⟩
-[ 78.50s][moshi] ⟦⚡SPAN@78.80s: (tool result) Several restaurants are near Hallasan National Park, including Jeju Kim Manbok Restaurant and Bl⟧ Near Hallasan National Park, you’ll find places like Jeju Kim Manbok Restaurant and Black Pork Street, serving local dishes. I hope you enjoy your trip.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Hallasan National Park", "cuisine": "any"}}
-[ 87.42s][user ] «backchannel» Right.
-[ 87.78s][user ] That sounds perfect. Thank you, Thuia.
-[ 89.92s][moshi] You’re very welcome. Remember to pack appropriately for the hike, and stay hydrated! It’s important to be prepared.
+[  0.00s][user ] Do you have the contact information for Lee Sun-hee? I need her phone number.
+[  5.28s][moshi] «backchannel» Mm-hmm.
+[  5.66s][moshi] ⟨ret@5.32s⟩ I’m sorry, ⟦⚡SPAN@6.65s: (no information found)⟧ I couldn’t find a publicly listed phone number for Lee Sun-hee. It appears that information isn’t available.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee phone number"}}
+[ 12.82s][user ] «backchannel» Right.
+[ 13.20s][user ] Oh, okay. That's too bad.
+[ 15.09s][moshi] It happens sometimes; many people keep their contact details private.
+[ 18.86s][user ] Yes, actually. What's the weather like in Busan right ⟨ret@22.22s⟩ now?
+[ 22.63s][moshi] ⟦⚡SPAN@22.93s: (tool result) 26.3°C, humidity 68%, wind 3.2 km/h⟧ The weather in Busan is currently 26.3 degrees Celsius, with 68% humidity and a wind speed of 3.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
+[ 30.55s][user ] «backchannel» Yeah.
+[ 30.93s][user ] Hmm, nice.
+[ 31.68s][moshi] Busan sounds lovely! It’s a beautiful city.
+[ 34.32s][user ] «backchannel» Yeah.
+[ 34.70s][user ] I’m thinking about going there next week. Can you find me some good ⟨ret@39.46s⟩ restaurants?
+[ 39.98s][moshi] ⟦⚡SPAN@39.76s: (tool result) Busan is known for its fresh seafood and Dwaeji Gukbap (pork and rice soup); Jagalchi Market off⟧ Busan is famous for its seafood and Dwaeji Gukbap. Jagalchi Market has many excellent restaurants.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
+[ 45.64s][user ] «backchannel» Okay.
+[ 46.02s][moshi] It's a very popular spot with both locals and tourists! I can look up specific restaurants if you’d like.
+[ 53.18s][user ] «backchannel» Mhm.
+[ 53.56s][user ] Yes, please. Find me a restaurant near Haeundae ⟨ret@56.43s⟩ Beach.
+[ 56.96s][moshi] ⟦⚡SPAN@56.90s: (tool result) Geoje Fish Center Haeundae serves fresh seafood; it has 4.2 stars from 850 reviews.⟧ Geoje Fish Center Haeundae serves fresh seafood and has a rating of 4.2 stars from 850 reviews.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Haeundae Beach, Busan"}}
+[ 63.37s][user ] That sounds perfect. Can you make a reservation for two people next Tuesday at 7 PM? ⟨ret@69.27s⟩
+[ 69.40s][moshi] ⟦⚡SPAN@69.80s: (tool result) Reservation confirmed for 2 people at Geoje Fish Center Haeundae on July 14, 2026 at 7:00 PM. Co⟧ I’ve confirmed your reservation for two people at Geoje Fish Center Haeundae next Tuesday at 7 PM. Your confirmation ID is GH7892.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Geoje Fish Center Haeundae", "date": "2026-07-14", "time": "19:00", "party_size": 2}}
+[ 77.70s][user ] «backchannel» Uh-huh.
+[ 78.08s][user ] Wonderful! Thank you.
+[ 79.21s][moshi] You’re very welcome!
+[ 80.34s][user ] I also need to book a hotel in Seoul. Something affordable. ⟨ret@84.35s⟩
+[ 84.49s][moshi] ⟦⚡SPAN@84.45s: (tool result) Hotel Skypark Central Myeongdong offers rooms from $65 per night; it has a 7.8 guest rating.⟧ Hotel Skypark Central Myeongdong has rooms starting at 65 dollars a night and a guest rating of 7.8.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "price_tier": "budget"}}
+[ 91.28s][user ] That sounds good. Can you show me ⟨ret@94.10s⟩ some pictures?
+[ 94.68s][moshi] ⟦⚡SPAN@94.62s: (tool result) Hotel Skypark Central Myeongdong offers modern rooms and is close to shopping areas; [source: bo⟧ Hotel Skypark Central Myeongdong offers modern rooms and is conveniently located near shopping areas.
+      CALL: {"function": "web_search", "arguments": {"query": "Hotel Skypark Central Myeongdong images"}}
+[ 99.96s][user ] «backchannel» Yeah.
+[100.33s][user ] Okay, that looks nice.
+[101.84s][moshi] It seems like a comfortable and well-located option! Are you thinking of booking it?
+[107.12s][user ] Yes, let's book it for three nights, starting next ⟨ret@110.46s⟩ Friday.
+[110.90s][moshi] I’ve booked ⟦⚡SPAN@111.85s: (tool result) Booking confirmed at Hotel Skypark Central Myeongdong from July 17 to July 20, 2026. Confirmatio⟧ a three-night stay at Hotel Skypark Central Myeongdong, starting next Friday. Your confirmation ID is SKP2026.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel": "Hotel Skypark Central Myeongdong", "check_in": "2026-07-17", "nights": 3}}
+[117.69s][user ] «backchannel» Yeah.
+[118.06s][user ] Great!
+[118.44s][moshi] Wonderful! Everything seems to be coming together nicely for your trip.
+[122.59s][user ] I need to set an alarm for 6 AM next ⟨ret@126.28s⟩ Saturday.
+[126.74s][moshi] ⟦⚡SPAN@127.06s: (tool result) Alarm set for 6:00 AM on Saturday, July 18, 2026.⟧ An alarm is set for 6:00 AM next Saturday, July 18th.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:00", "date": "2026-07-18"}}
+[130.89s][user ] Perfect. That's all for now.
+[132.77s][moshi] Wonderful! I’m glad I could assist you.

@@ -1,87 +1,110 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Dorana, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Horax, a thoughtful and soft-spoken counselor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Ada",
+    "name": "Sky",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
-    "gender": "female",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-03",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2026-06-28",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
     },
     {
-      "date": "2026-01-12",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-03-30",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-10-30",
+      "date": "2026-03-04",
+      "category": "home",
+      "text": "User's home address is 349 Maple Drive."
+    },
+    {
+      "date": "2026-02-27",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-08-02",
+      "date": "2026-02-06",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-25",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-17",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-11-06",
-      "title": "Comparing gym memberships",
+      "date": "2026-02-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a good Italian restaurant in Seoul.
-[  4.15s][moshi] I can help with that.
-[  6.22s][user ] And uh, something not too expensive, ⟨ret@8.58s⟩ please.
-[  9.12s][moshi] ⟦⚡SPAN@9.64s: (tool result) {"restaurants": [{"name": "La Tavola", "address": "27, Toegye-ro, Jung-gu, Seoul", "price range"⟧ I found two budget-friendly Italian restaurants in Seoul: La Tavola, at 27 Toegye-ro, has a 4.2-star rating, and Bella Italia, at 12 Myeongdong 8-gil, is rated 3.9 stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "Italian", "price_range": "budget"}}
-[ 20.74s][user ] «backchannel» Yeah, totally.
-[ 21.57s][user ] La Tavola sounds good. Can you check…
-[ 24.47s][user ] …if they have any openings tomorrow evening around 7 PM?
-[ 28.62s][moshi] «backchannel» Exactly.
-[ 29.03s][moshi] ⟨ret@29.02s⟩ Yes, I’ve confirmed ⟦⚡SPAN@30.52s: (tool result) {"reservation id": "LT2026071119002", "status": "confirmed", "date": "2026-07-11", "time": "19:0⟧ a reservation for you at La Tavola for tomorrow, July 11th, at 7:00 PM for a party of two. Your reservation ID is LT2026071119002.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Tavola", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
-[ 40.23s][user ] That's great!
-[ 41.06s][moshi] Wonderful! I'm glad I could help with that.
-[ 44.37s][user ] Actually, I was thinking.
-[ 46.03s][moshi] «interrupted» I was going to suggest checking their menu online—
-[ 49.77s][user ] «interrupts_prev» …do they have outdoor seating? ⟨ret@51.71s⟩
-[ 51.84s][moshi] ⟦⚡SPAN@52.19s: (tool result) La Tavola in Seoul features a charming outdoor terrace, perfect for enjoying Italian cuisine al ⟧ Yes, La Tavola does have a charming outdoor terrace, which is covered and heated for year-round comfort.
-      CALL: {"function": "search", "arguments": {"query": "La Tavola Seoul outdoor seating"}}
-[ 58.89s][user ] «backchannel» Yeah, yeah.
-[ 59.72s][user ] Oh, that's lovely. I'm also trying to stick to a budget for the whole trip, you know?
-[ 66.77s][moshi] I understand completely. Budgeting is so important when traveling.
-[ 70.50s][user ] I'm hoping to keep my daily spending under 150,000 Korean Won. Is that realistic for Seoul?
-[ 77.14s][moshi] «backchannel» Exactly.
-[ 77.55s][moshi] ⟨ret@77.36s⟩ ⟦⚡SPAN@77.90s: The average daily cost for a tourist in Seoul is around ₩120,000 to ₩200,000, depending on accommodation and a⟧ That depends on your spending habits, of course, but— The average daily cost for tourists in Seoul ranges from 120,000 to 200,000 Korean Won, but budget travelers can manage on as little as 80,000 Won per day.
-[ 92.90s][user ] 80,000 Won sounds doable! Thanks, Dorana.
-[ 95.39s][moshi] You're very welcome! I’m happy to assist with your financial planning for your trip.
+[  0.00s][user ] I’m thinking of going to Seoul next week. Can you crawl the ESPN website and tell me the number of links it ⟨ret@8.86s⟩ processed?
+[  9.07s][moshi] ESPN.com ⟦⚡SPAN@9.90s: (tool result) ESPN.com contains 12,783 links as of July 10, 2026, 2:38 PM PDT.⟧ currently contains twelve thousand, seven hundred and eighty-three links, as of today at 2:38 PM Pacific time.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.espn.com"}}
+[ 16.17s][user ] «backchannel» Mhm.
+[ 16.57s][user ] Wow, that’s a lot. I’m trying to decide if I should go to N Seoul Tower while I'm there.
+[ 24.06s][moshi] That sounds lovely. N Seoul Tower is a popular destination, offering beautiful views of the city.
+[ 30.37s][user ] «backchannel» Yeah.
+[ 30.77s][user ] What’s the weather forecast for Seoul next ⟨ret@33.52s⟩ Tuesday?
+[ 33.92s][moshi] ⟦⚡SPAN@34.15s: (tool result) Seoul: July 14, 2026, 25.5°C, humidity 78%, wind 7.2 km/h, partly cloudy.⟧ Next Tuesday in Seoul, the forecast is 25.5 degrees Celsius, partly cloudy, with 78% humidity and a 7.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul", "date": "2026-07-14"}}
+[ 42.60s][user ] «backchannel» Wow.
+[ 42.99s][user ] That sounds pretty nice. I wonder if there are any good Korean barbecue restaurants near the tower? ⟨ret@49.69s⟩
+[ 49.70s][moshi] There ⟦⚡SPAN@50.40s: (tool result) 3 Korean BBQ restaurants near N Seoul Tower: Maple Tree House Namsan (4.5 stars, $$$), Wangbijib⟧ are three Korean barbecue restaurants near N Seoul Tower—Maple Tree House Namsan, Wangbijib Namsan, and Hanam Pig House Namsan.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "N Seoul Tower", "cuisine": "Korean barbecue"}}
+[ 57.59s][user ] Maple Tree House sounds good. Can you reserve a table for two there next Tuesday at 7 PM? ⟨ret@64.51s⟩
+[ 64.69s][moshi] «backchannel» Yeah.
+[ 65.08s][moshi] ⟦⚡SPAN@65.42s: (tool result) Reservation confirmed at Maple Tree House Namsan for 2 people on July 14, 2026, at 7:00 PM. Conf⟧ Your reservation at Maple Tree House Namsan is confirmed for two people next Tuesday at 7:00 PM—your confirmation ID is MTN-714-1900-22.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Maple Tree House Namsan", "date": "2026-07-14", "time": "19:00", "party_size": 2}}
+[ 73.37s][user ] Perfect. —
+[ 74.15s][user ] …Actually, what’s the best way to get there from the Myeongdong area?
+[ 78.89s][moshi] «backchannel» Oh.
+[ 79.28s][moshi] From Myeongdong, you can take bus number 02 or 05 to Namsan Cable Car station, then ride the cable car up to N Seoul Tower—it’s quite a scenic route.
+[ 90.72s][user ] «backchannel» Yeah.
+[ 91.12s][moshi] [happy] It’s a fairly easy journey, and many people enjoy the cable car ride itself.
+[ 97.03s][user ] «backchannel» Mm-hmm.
+[ 97.43s][user ] Sounds good. I think I’ll also check out the Bukchon Hanok…
+[101.76s][user ] …Village. What’s a good time to visit to avoid the crowds? ⟨ret@105.91s⟩
+[106.10s][moshi] ⟦⚡SPAN@106.04s: (tool result) Bukchon Hanok Village is least crowded on weekdays before 10 AM or after 5 PM. Weekends are typi⟧ Bukchon Hanok Village is generally least crowded on weekdays, either before ten in the morning or after five in the evening—weekends tend to be very busy.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"attraction": "Bukchon Hanok Village", "avoid_crowds": true}}
+[116.36s][user ] That’s helpful. Thanks, Horax.
+[117.94s][moshi] You’re very welcome. I'm glad I could assist you in planning your trip. Remember, sometimes the best experiences come from allowing a little flexibility in your schedule.

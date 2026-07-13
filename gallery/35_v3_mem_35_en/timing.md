@@ -4,84 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Bruno",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-03-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2026-05-29",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-03-27",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "home",
-#       "text": "User's home address is 262 Maple Drive."
-#     },
-#     {
-#       "date": "2025-10-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-03-11",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-07-16",
+#       "date": "2025-12-17",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-18",
-#       "title": "Researching a used car",
+#       "date": "2026-04-02",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Bruno, I'm Nelira. It's lovely to meet you.
-     3.30s  user  발화 시작: Uh-huh.
-     3.30s  agent 발화 끝
-     3.67s  user  발화 시작: Yes, that’s right. I’m planning a trip to Italy next month, 
-     3.67s  user  발화 끝
-    10.69s  <ret> 발화 (turn3 첫 프레임)
-    11.01s  agent 발화 시작: <ret> Bruno. Considering your preference for Italian cuisine
-    11.01s  user  발화 끝
-    11.38s  ⚡SPAN 주입 [d'=0.69s / d_lead=4.77s]: [2025-06-04] User's favorite cuisine is Italian.
-    15.78s  user  발화 시작: Great! I’d like something authentic, not too touristy, if po
-    15.78s  agent 발화 끝
-    19.36s  <ret> 발화 (turn5 첫 프레임)
-    19.45s  agent 발화 시작: <ret> I found Trattoria Mario in Florence, Italy. It has a 4
-    19.45s  user  발화 끝
-    20.12s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.61s]: (tool result) Restaurant: Trattoria Mario, Florence. Rating: 4.7 stars
-    26.05s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Felix, I'm Geaia. It's lovely to meet you. I'm here to of
+     7.66s  user  발화 시작: Um, I'm planning a trip to New Zealand in August, and I'm tr
+     7.66s  agent 발화 끝
+    14.31s  <ret> 발화 (turn2 첫 프레임)
+    14.63s  agent 발화 시작: <ret> I see you’re planning a trip to New Zealand in August,
+    14.63s  user  발화 끝
+    15.00s  ⚡SPAN 주입 [d'=0.69s / d_lead=4.88s]: [2026-03-29] User is planning a trip to New Zealand in August.
+    19.51s  user  발화 시작: Mhm.
+    19.51s  agent 발화 끝
+    19.86s  user  발화 시작: Oh, that's right, I told you about that! Do you know any goo
+    19.86s  user  발화 끝
+    25.69s  <ret> 발화 (turn5 첫 프레임)
+    25.78s  agent 발화 시작: <ret> Queenstown is famous for rock climbing, especially at 
+    25.78s  user  발화 끝
+    25.79s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.27s]: (tool result) Queenstown is known as the adventure capital of New Zeal
+    32.05s  agent 발화 끝

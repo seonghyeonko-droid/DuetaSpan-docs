@@ -4,127 +4,132 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "진람",
+#     "name": "준훈",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-03",
+#       "date": "2026-06-17",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-05-25",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-12",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-04-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-06-29",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-06-12",
+#       "date": "2025-12-21",
 #       "category": "diet",
 #       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-06-09",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 하루 어떠셨어요? | S2 어렸을 때 그림 그리는 걸 좋아했어요. | S3 …그림을 다시 시작해볼까 생각 중이에요. | S4 … 아니, 그냥 아무거나 괜찮아요. 그림 그리는 것 자체가 좋
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 아, '뉴욕 타임스'에서 그렇게 평가했구나. | S3 마를론 브란도 영화 또 추천해 줄래? | S4 '가온'이 더 평점이 높네. 예약은 어떻게 해야 돼?
 
-     0.00s  user  발화 시작: 오늘 하루 어떠셨어요?
-     1.39s  agent 발화 시작: 오늘 하루도 편안하게 보내셨기를 바랍니다. 혹시 특별히 이야기하고 싶은 일이 있으신가요?
-     1.39s  user  발화 끝
-     6.49s  user  발화 시작: 그렇죠.
-     6.49s  agent 발화 끝
-     6.96s  user  발화 시작: 음… 요즘 커리어 때문에 고민이 좀 있어요.
-     6.96s  user  발화 끝
-    10.20s  agent 발화 시작: 커리어 고민이시군요. 어떤 점이 가장 힘드신가요? 구체적으로 말씀해주시면 제가 좀 더 도움이 될 수 있을 것
-    10.20s  user  발화 끝
-    18.09s  user  발화 시작: 제가 뭘 잘하는지, 뭘 하고 싶은지 잘 모르겠어요.
-    18.09s  agent 발화 끝
-    21.80s  agent 발화 시작: 네.
-    21.80s  user  발화 끝
-    22.15s  <ret> 발화 (turn7 첫 프레임)
-    22.26s  agent 발화 시작: <ret> 많은 분들이 커리어에 대해 불확실성을 느끼고, 자신의 강점과 열정에 대해 혼란스러워하는 것은 흔한
-    22.26s  agent 발화 끝
-    22.52s  ⚡SPAN 주입 [d'=0.37s / d_lead=6.49s]: Many people experience uncertainty about their career path, and it is 
-    28.75s  user  발화 시작: 네, 맞아요. 그냥 막막해요.
-    28.75s  agent 발화 끝
-    30.61s  agent 발화 시작: 막막한 기분은 당연합니다. 하지만 너무 걱정하지 마세요. 함께 차근차근 알아가면 분명 답을 찾을 수 있을 거
-    30.61s  user  발화 끝
-    40.81s  user  발화 시작: 어렸을 때 그림 그리는 걸 좋아했어요.
-    40.81s  agent 발화 끝
-    43.23s  <ret> 발화 (turn11 첫 프레임)
-    43.58s  ⚡SPAN 주입 [d'=0.35s / d_lead=12.99s]: Art therapy is a form of psychotherapy that uses creative methods of e
-    43.59s  agent 발화 시작: <ret> 어렸을 때 그림 그리기를 좋아하셨군요. 미술 치료는 예술 매체를 통해 감정을 탐구하고 자기 인식을
-    43.59s  user  발화 끝
-    56.58s  user  발화 시작: 아, 미술 치료요? 그거 재밌을 것 같아요.
-    56.58s  agent 발화 끝
-    59.82s  agent 발화 시작: 네, 흥미로운 분야죠. 혹시 미술 치료사가 되시는 걸 생각해 보신 적 있으신가요? 아니면 단순히 그림을 취미
-    59.82s  user  발화 끝
-    70.03s  user  발화 시작: 네.
-    70.03s  agent 발화 끝
-    70.49s  user  발화 시작: 음… 미술 치료사까지는 아니지만…
-    70.49s  user  발화 끝
-    72.35s  user  발화 시작: …그림을 다시 시작해볼까 생각 중이에요.
-    72.35s  user  발화 끝
-    74.66s  agent 발화 시작: 좋은 생각입니다. 그림을 통해 스트레스를 해소하고 자신을 표현하는 것은 매우 건강한 방법입니다. 요즘 그림을
-    74.66s  user  발화 끝
-    85.33s  user  발화 시작: 네.
-    85.33s  agent 발화 끝
-    85.79s  user  발화 시작: 강좌요? 어디서 찾아볼 수 있나요?
-    85.79s  user  발화 끝
-    88.08s  <ret> 발화 (turn20 첫 프레임)
-    88.11s  agent 발화 시작: <ret> 서울시에는 다양한 미술 강좌가 있습니다. 강남구에 위치한 '아트 앤 디자인'에서는 유화, 수채화,
-    88.11s  user  발화 끝
-    89.00s  ⚡SPAN 주입 [d'=0.91s / d_lead=10.20s]: (tool result) 서울시에는 다양한 미술 강좌가 있습니다. 강남구에 위치한 '아트 앤 디자인'에서는 유화, 수채화, 드
-    98.32s  user  발화 시작: 이십만원이면 괜찮네요. 혹시 다른 곳도 알아봐 주실 수 있나요?
-    98.32s  agent 발화 끝
-   102.49s  agent 발화 시작: 다른 미술 강좌도 찾아볼까요? 아니면 다른 종류의 취미 활동을 알아보는 것도 괜찮을 것 같아요.
-   102.49s  user  발화 끝
-   108.98s  user  발화 시작: 그렇죠.
-   108.98s  agent 발화 끝
-   109.45s  user  발화 시작: 아니요, 일단 미술 강좌부터 알아봐 주세요.
-   109.45s  user  발화 끝
-   112.23s  agent 발화 시작: 그럼 다른 미술 강좌를 더 찾아보겠습니다. 혹시 선호하는 스타일이나 기법이 있으신가요? —
-   112.23s  user  발화 끝
-   117.79s  user  발화 시작: … 아니, 그냥 아무거나 괜찮아요. 그림 그리는 것 자체가 좋아서요.
-   117.79s  agent 발화 끝
-   122.43s  agent 발화 시작: 네.
-   122.43s  user  발화 끝
-   122.89s  agent 발화 시작: 그림 그리는 것 자체가 좋으시다니 다행이네요. 그럼 좀 더 다양한 강좌를 찾아보겠습니다.
-   122.89s  agent 발화 끝
-   128.46s  user  발화 시작: 예.
-   128.46s  agent 발화 끝
-   128.92s  user  발화 시작: 네, 부탁드려요.
-   128.92s  user  발화 끝
-   129.85s  agent 발화 시작: 잠시만 기다려 주세요. 홍대에도 '미술 공작소'라는 곳이 있는데, 이곳에서는 다양한 재료를 활용한 미술 수업
-   129.85s  user  발화 끝
-   140.05s  user  발화 시작: 진짜요?
-   140.05s  agent 발화 끝
-   140.52s  user  발화 시작: 홍대요? 홍대는 가기도 편하고 좋네요.
-   140.52s  user  발화 끝
-   142.84s  agent 발화 시작: 네, 교통도 편리하고 주변에 볼거리도 많아서 좋습니다. 그림 그리면서 힐링하는 시간을 가져보시는 건 어떠세요
-   142.84s  user  발화 끝
-   149.33s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨 어때?
+     1.41s  <ret> 발화 (turn1 첫 프레임)
+     1.47s  agent 발화 시작: <ret> 오늘 날씨는 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 흐리고 있어요. 
+     1.47s  user  발화 끝
+     2.31s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.35s]: (tool result) {"temperature": 23.0, "humidity": 74, "wind speed": 5.5,
+     8.82s  user  발화 시작: 그럼, 이번 주말에 영화 볼 만한 거 있어?
+     8.82s  agent 발화 끝
+    12.74s  agent 발화 시작: 이번 주말에 영화를 보고 싶으시군요. 어떤 장르를 좋아하세요?
+    12.74s  user  발화 끝
+    16.66s  user  발화 시작: 음… 잔디밭에서의 키스 봤어?
+    16.66s  agent 발화 끝
+    18.23s  <ret> 발화 (turn5 첫 프레임)
+    18.62s  agent 발화 시작: <ret> '잔디밭에서의 키스'는 천구백육십일년에 엘리아 카잔 감독이 연출하고, 나탈리 우드와 워렌 비티가 
+    18.62s  user  발화 끝
+    18.85s  ⚡SPAN 주입 [d'=0.62s / d_lead=7.84s]: Splendor in the Grass was a 1961 American romantic drama film written 
+    26.46s  user  발화 시작: 와.
+    26.46s  agent 발화 끝
+    26.95s  user  발화 시작: 엘리아 카잔은 누구야?
+    26.95s  user  발화 끝
+    27.96s  <ret> 발화 (turn8 첫 프레임)
+    28.26s  ⚡SPAN 주입 [d'=0.31s / d_lead=10.78s]: Elia Kazan was a Greek-American film and stage director, described as 
+    28.42s  agent 발화 시작: <ret> 엘리아 카잔은 '뉴욕 타임스'에서 "브로드웨이와 할리우드 역사상 가장 존경받고 영향력 있는 감독 
+    28.42s  user  발화 끝
+    39.20s  user  발화 시작: 아, '뉴욕 타임스'에서 그렇게 평가했구나.
+    39.20s  agent 발화 끝
+    41.65s  agent 발화 시작: 네, 맞아요. '뉴욕 타임스'에서 그렇게 평가했어요.
+    41.65s  user  발화 끝
+    44.59s  user  발화 시작: 그 감독 다른 영화도 있어?
+    44.59s  agent 발화 끝
+    47.04s  agent 발화 시작: 카잔 감독은 '온 더 워터프론트'나 '욕망이라는 이름의 전차' 같은 유명한 영화들을 연출했어요.
+    47.04s  user  발화 끝
+    52.92s  user  발화 시작: '욕망이라는 이름의 전차'도 봤어. 마를론 브란도 나왔었지.
+    52.92s  agent 발화 끝
+    56.35s  agent 발화 시작: 맞아요, 마를론 브란도가 출연했었죠. 정말 인상적인 연기를 보여줬어요.
+    56.35s  user  발화 끝
+    60.27s  user  발화 시작: 마를론 브란도 영화 또 추천해 줄래?
+    60.27s  agent 발화 끝
+    63.21s  agent 발화 시작: 마를론 브란도 영화라면 '석양의 무법자'를 추천해 드리고 싶어요.
+    63.21s  user  발화 끝
+    67.13s  user  발화 시작: '석양의 무법자'? 그거 재밌어?
+    67.13s  agent 발화 끝
+    69.03s  <ret> 발화 (turn18 첫 프레임)
+    69.09s  agent 발화 시작: <ret> '석양의 무법자'는 말론 브란도, 메리 머피, 리 마빈이 출연한 천구백오십삼년 미국 흑백 오토바이
+    69.09s  user  발화 끝
+    69.74s  ⚡SPAN 주입 [d'=0.71s / d_lead=6.86s]: The Wild One is a 1953 American black and white motorcycle film starri
+    75.95s  user  발화 시작: 오, 고전 영화네.
+    75.95s  agent 발화 끝
+    77.42s  agent 발화 시작: 네, 고전 영화죠. 하지만 지금 봐도 충분히 재미있을 거예요.
+    77.42s  user  발화 끝
+    81.83s  user  발화 시작: 응.
+    81.83s  agent 발화 끝
+    82.32s  user  발화 시작: 혹시 지금 서울에 있는 맛집 알아봐 줄 수 있어?
+    82.32s  user  발화 끝
+    86.12s  <ret> 발화 (turn23 첫 프레임)
+    86.46s  ⚡SPAN 주입 [d'=0.34s / d_lead=8.33s]: (tool result) {"restaurants": [{"name": "Gaon", "cuisine": "Korean", "
+    86.73s  agent 발화 시작: <ret> 서울에는 '가온'과 '정식'이라는 맛집이 있어요. '가온'은 한국 요리 전문점이고 평점은 사 점 
+    86.73s  user  발화 끝
+    95.06s  user  발화 시작: 응.
+    95.06s  agent 발화 끝
+    95.55s  user  발화 시작: '가온'이 더 평점이 높네. 예약은 어떻게 해야 돼?
+    95.55s  user  발화 끝
+    99.47s  agent 발화 시작: '가온' 예약은 전화로 하셔야 해요. 전화번호는 공 이 오 사 일 칠 칠 공 공입니다.
+    99.47s  user  발화 끝
+   106.82s  user  발화 시작: 고마워. 그럼, 내일 아침 일곱시에 알람 맞춰줘.
+   106.82s  agent 발화 끝
+   110.08s  <ret> 발화 (turn28 첫 프레임)
+   110.25s  agent 발화 시작: <ret> 네, 내일 아침 일곱시에 알람을 맞춰 드렸어요. 알람 아이 디는 에이 일 비 이 씨 삼 디 사입니
+   110.25s  user  발화 끝
+   111.07s  ⚡SPAN 주입 [d'=0.99s / d_lead=9.80s]: (tool result) {"alarm id": "a1b2c3d4", "status": "scheduled"}
+   120.05s  user  발화 시작: 진짜?
+   120.05s  agent 발화 끝
+   120.54s  user  발화 시작: 응, 고마워.
+   120.54s  user  발화 끝
+   121.52s  agent 발화 시작: 천만에요.
+   121.52s  user  발화 끝
+   122.01s  agent 발화 끝

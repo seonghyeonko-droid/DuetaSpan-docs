@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Riley",
+#     "name": "Ella",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-06-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2026-02-02",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-05-11",
+#       "category": "home",
+#       "text": "User's home address is 817 Birch Road."
 #     },
 #     {
-#       "date": "2026-01-04",
+#       "date": "2026-03-20",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-02-22",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2025-06-22",
+#       "date": "2026-01-30",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-06",
+#       "date": "2025-12-20",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -50,65 +55,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi. Neana… that’s a pretty nam | S2 I don’t mind paying a bit more for | S3 Lively, definitely. I want to be w | S4 Equinox… that sounds pricey.
+# EXAMINER(FDB-v2) 단계: S1 What exactly *do* you help with? S | S2 My friend suggested meditation. Se | S3 Maybe. It’s hard to change that mi | S4 I… I keep thinking about this pres
 
-     0.00s  agent 발화 시작: Hello Riley, welcome to the city! I'm Neana.
-     2.99s  user  발화 시작: Oh, hi. Neana… that’s a pretty name. What exactly *do* you h
-     2.99s  agent 발화 끝
-     8.22s  agent 발화 시작: Yeah.
-     8.22s  user  발화 끝
-     8.59s  agent 발화 시작: I’m a personal guide, really. Anything from finding the best
-     8.59s  agent 발화 끝
-    16.43s  user  발화 시작: Yeah.
-    16.43s  agent 발화 끝
-    16.80s  user  발화 시작: Hmm. I’m mostly worried about finding a good gym. Something 
-    16.80s  user  발화 끝
-    21.66s  agent 발화 시작: That’s a very common concern when moving somewhere new. What
-    21.66s  user  발화 끝
-    28.01s  user  발화 시작: Yeah.
-    28.01s  agent 발화 끝
-    28.38s  user  발화 시작: I lift, mostly. Free weights are a must, and I like a good p
-    28.38s  user  발화 끝
-    33.98s  agent 발화 시작: Power racks can be hard to find in smaller spaces. Are you t
-    33.98s  user  발화 끝
-    42.57s  user  발화 시작: I don’t mind paying a bit more for space and good equipment.
-    42.57s  agent 발화 끝
-    48.55s  agent 발화 시작: I understand completely. Waiting for equipment can really di
-    48.55s  user  발화 끝
-    56.39s  user  발화 시작: …Actually, before we get into specific gyms, could you tell 
-    56.39s  agent 발화 끝
-    62.74s  agent 발화 시작: San Francisco is a city of distinct neighborhoods, each with
-    62.74s  user  발화 끝
-    71.32s  user  발화 시작: Uh-huh.
-    71.32s  agent 발화 끝
-    71.70s  user  발화 시작: Lively, definitely. I want to be where things are happening.
-    71.70s  user  발화 끝
-    75.43s  agent 발화 시작: That narrows things down nicely. North Beach and the Mission
-    75.43s  user  발화 끝
-    82.90s  user  발화 시작: Right.
-    82.90s  agent 발화 끝
-    83.27s  agent 발화 시작: North Beach has a strong Italian heritage, with lots of cafe
-    83.27s  user  발화 끝
-    94.48s  user  발화 시작: Yeah.
-    94.48s  agent 발화 끝
-    94.85s  user  발화 시작: Murals sound cool. Is the Mission safe? I’ve heard things…
-    94.85s  user  발화 끝
-    98.59s  agent 발화 시작: Right.
-    98.59s  user  발화 끝
-    98.96s  agent 발화 시작: Safety is always a valid concern in a new city, Riley. The M
-    98.96s  agent 발화 끝
-   109.41s  user  발화 시작: Okay, good. And what about gyms *in* the Mission?
-   109.41s  agent 발화 끝
-   112.78s  agent 발화 시작: There are some great options in the Mission, actually. Cross
-   112.78s  user  발화 끝
-   124.73s  user  발화 시작: Yeah.
-   124.73s  agent 발화 끝
-   125.10s  user  발화 시작: Equinox… that sounds pricey.
-   125.10s  user  발화 끝
-   126.59s  agent 발화 시작: Equinox is definitely on the higher end of the price scale, 
-   126.59s  user  발화 끝
-   135.18s  agent 발화 시작: Perhaps we could explore some more moderately priced options
-   135.18s  agent 발화 끝
-   141.53s  user  발화 시작: Yeah, let's do that. Something with good reviews, but not…cr
-   141.53s  agent 발화 끝
-   145.64s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Ella, it’s lovely to connect with you. I'm Elir.
+     3.98s  user  발화 시작: What exactly *do* you help with? Sounds a bit… broad.
+     3.98s  agent 발화 끝
+     7.96s  agent 발화 시작: It is a bit open-ended, isn’t it? I help people with everyda
+     7.96s  user  발화 끝
+    17.12s  user  발화 시작: Hmm. I’m just feeling really overwhelmed with work right now
+    17.12s  agent 발화 끝
+    22.29s  agent 발화 시작: That sounds incredibly draining, Ella. It's common to feel t
+    22.29s  user  발화 끝
+    31.45s  user  발화 시작: Mhm.
+    31.45s  agent 발화 끝
+    31.85s  user  발화 시작: It's… everything. Deadlines, emails, meetings. I can’t even 
+    31.85s  user  발화 끝
+    37.82s  agent 발화 시작: Jumping between tasks can definitely make things harder, it 
+    37.82s  user  발화 끝
+    46.58s  user  발화 시작: I’ve *tried*. It just feels like adding more to the list.
+    46.58s  agent 발화 끝
+    50.96s  agent 발화 시작: Uh-huh.
+    50.96s  user  발화 끝
+    51.36s  agent 발화 시작: [sigh] I understand that can feel counterproductive. Sometim
+    51.36s  agent 발화 끝
+    59.32s  user  발화 시작: Yeah.
+    59.32s  agent 발화 끝
+    59.72s  agent 발화 시작: It’s okay to not be okay, Ella. And it’s okay to ask for hel
+    59.72s  user  발화 끝
+    69.27s  user  발화 시작: Yeah, yeah.
+    69.27s  agent 발화 끝
+    70.07s  user  발화 시작: My friend suggested meditation. Seems… not helpful, honestly
+    70.07s  user  발화 끝
+    73.25s  agent 발화 시작: It's perfectly alright if meditation doesn’t resonate with y
+    73.25s  user  발화 끝
+    81.61s  user  발화 시작: Honestly? Probably just scrolling through silly videos. Whic
+    81.61s  agent 발화 끝
+    85.99s  agent 발화 시작: Yeah.
+    85.99s  user  발화 끝
+    86.39s  agent 발화 시작: [laugh] There’s value in allowing yourself small moments of 
+    86.39s  agent 발화 끝
+    94.75s  user  발화 시작: Yeah.
+    94.75s  agent 발화 끝
+    95.15s  user  발화 시작: I guess. But then I feel guilty for *not* working. It's a cy
+    95.15s  user  발화 끝
+   100.32s  agent 발화 시작: Yeah.
+   100.32s  user  발화 끝
+   100.72s  agent 발화 시작: That guilt is a common companion to overwork. Perhaps we can
+   100.72s  agent 발화 끝
+   110.28s  user  발화 시작: Maybe. It’s hard to change that mindset, though. I always fe
+   110.28s  agent 발화 끝
+   117.05s  agent 발화 시작: It takes time and practice, Ella. Like building any new habi
+   117.05s  user  발화 끝
+   127.40s  user  발화 시작: Right.
+   127.40s  agent 발화 끝
+   127.79s  user  발화 시작: Fifteen minutes… I could probably manage that. I suppose.
+   127.79s  user  발화 끝
+   131.38s  agent 발화 시작: Wonderful. Even small steps can make a difference. Perhaps d
+   131.38s  user  발화 끝
+   140.53s  user  발화 시작: I think I'll try the music. Something without lyrics, maybe.
+   140.53s  agent 발화 끝
+   144.51s  agent 발화 시작: That sounds lovely. Music can be a powerful tool for shiftin
+   144.51s  user  발화 끝
+   152.48s  user  발화 시작: Yeah, yeah.
+   152.48s  agent 발화 끝
+   153.27s  user  발화 시작: I… I keep thinking about this presentation next week. It’s h
+   153.27s  user  발화 끝
+   157.65s  agent 발화 시작: A big presentation can certainly add to the stress. Instead 
+   157.65s  user  발화 끝
+   168.00s  user  발화 시작: Just one part? That sounds… doable.
+   168.00s  agent 발화 끝
+   170.39s  agent 발화 시작: Exactly. Small, manageable steps. And remember to celebrate 
+   170.39s  user  발화 끝
+   175.97s  user  발화 시작: Yeah.
+   175.97s  agent 발화 끝
+   176.36s  user  발화 시작: [curious] Do you… do you actually *feel* anything, Elir? Or 
+   176.36s  user  발화 끝
+   182.73s  agent 발화 시작: That’s a thoughtful question, Ella. I don’t experience feeli
+   182.73s  user  발화 끝
+   193.88s  agent 발화 끝

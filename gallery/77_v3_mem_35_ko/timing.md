@@ -4,91 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "혜현",
+#     "name": "세별",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-10-21",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-09-06",
+#       "date": "2026-03-29",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "date": "2026-03-27",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-18",
-#       "title": "Researching a used car",
+#       "date": "2026-03-01",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-04",
+#       "date": "2026-02-27",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜현님. 저는 네리라입니다. 건강과 일상 습관을 도와드리는 에이전트예요.
-     5.35s  user  발화 시작: 그래.
-     5.35s  agent 발화 끝
-     5.94s  user  발화 시작: 음… 요즘 좀 피곤해서 맛있는 거 먹고 싶어.
-     5.94s  user  발화 끝
-    10.58s  <ret> 발화 (turn3 첫 프레임)
-    10.70s  agent 발화 시작: <ret> 혹시 평소에 즐겨 드시는 음식이나, 특별히 피하는 음식이 있으세요?
-    10.70s  user  발화 끝
-    11.88s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.35s]: [2026-06-12] User works as a chef.
-    16.04s  agent 발화 시작: 혜현님은 요리사시니까, 특별한 재료나 맛에 대한 선호도가 있으실 것 같아요.
-    16.04s  agent 발화 끝
-    21.98s  user  발화 시작: 으음… 해산물을 별로 안 좋아해.
-    21.98s  agent 발화 끝
-    24.75s  <ret> 발화 (turn6 첫 프레임)
-    24.96s  agent 발화 시작: <ret> 해산물을 안 좋아하시는군요. 그럼 부산에서 해산물을 제외하고 맛집을 찾아볼까요?
-    24.96s  user  발화 끝
-    25.92s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.35s]: (tool result) Restaurants found: 1. 보쌈정식 (Pork Belly Set) - 12,000 KRW
-    30.30s  agent 발화 시작: 부산에는 보쌈정식이 만 이천 원, 돼지국밥은 구천 원, 갈비찜은 이만 오천 원에 파는 맛집들이 있습니다.
-    30.30s  agent 발화 끝
-    39.22s  user  발화 시작: 그래.
-    39.22s  agent 발화 끝
-    39.81s  user  발화 시작: 갈비찜 괜찮겠다. 어디가 제일 맛있어?
-    39.81s  user  발화 끝
-    42.67s  <ret> 발화 (turn10 첫 프레임)
-    42.78s  agent 발화 시작: <ret> 칠월 십일일 저녁 일곱시에 ‘황금갈비’ 예약이 완료되었습니다. 확인 번호는 지 에이치 칠 팔 구 
-    42.78s  user  발화 끝
-    43.42s  ⚡SPAN 주입 [d'=0.75s / d_lead=8.91s]: (tool result) Reservation confirmed for 황금갈비 on July 11, 2026 at 7:00 
-    51.69s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세별님! 저는 게아이아입니다. 스트레스 해소와 마음 챙김을 도와드리는 상담사예요. 오늘 하루 어
+     7.92s  user  발화 시작: 안녕하세요. 요즘 좀 스트레스가 많아서요. 혹시 서울에서 조용한 카페 추천해 주실 수 있을까요?
+     7.92s  agent 발화 끝
+    15.73s  <ret> 발화 (turn2 첫 프레임)
+    15.84s  agent 발화 시작: <ret> 세별님, 채식주의자이신 걸로 기억하고 있어요. 채식 메뉴가 훌륭한 조용한 카페를 찾아볼게요. 강남
+    15.84s  user  발화 끝
+    17.03s  ⚡SPAN 주입 [d'=1.30s / d_lead=16.45s]: User is vegetarian.
+    32.29s  user  발화 시작: 네.
+    32.29s  agent 발화 끝
+    32.90s  user  발화 시작: 어반소스… 분위기는 어떤 곳이에요?
+    32.90s  user  발화 끝
+    34.89s  <ret> 발화 (turn5 첫 프레임)
+    35.34s  agent 발화 시작: <ret> '어반소스'는 아늑하고 편안한 분위기라고 해요. 조용히 책을 읽거나 친구와 담소를 나누기에도 좋을
+    35.34s  user  발화 끝
+    36.06s  ⚡SPAN 주입 [d'=1.17s / d_lead=14.01s]: (tool result) {"restaurants": [{"name": "어반소스", "address": "서울 강남구 선릉로
+    49.35s  agent 발화 끝

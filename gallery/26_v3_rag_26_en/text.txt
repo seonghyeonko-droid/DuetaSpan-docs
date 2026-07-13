@@ -1,110 +1,86 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Romi, a curious and validating personal guide who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Sari, a calm and patient supportive advisor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Hugo",
+    "name": "Taylor",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-04-28",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-02-07",
+      "date": "2026-05-20",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-12-13",
+      "date": "2026-03-19",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-12-01",
-      "category": "home",
-      "text": "User's home address is 931 Cedar Lane."
+      "date": "2026-02-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-06-20",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-12-06",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-18",
-      "title": "Setting up a home network",
+      "date": "2026-01-24",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-14",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-10",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Romi, I was wondering about Irish history.
-[  3.19s][moshi] «backchannel» Mm-hmm.
-[  3.59s][moshi] Hello! History is fascinating, isn’t it? I’m happy to chat about Ireland with you.
-[  9.18s][user ] «backchannel» Right.
-[  9.58s][user ] Great! When did Ireland gain its independence ⟨ret@12.55s⟩ from Britain?
-[ 13.18s][moshi] ⟦⚡SPAN@13.43s: The Irish Free State was established in 1922, though full independence was declared in 1949.⟧ Ireland established the Irish Free State in nineteen twenty-two, though full independence was declared in nineteen forty-nine.
-[ 19.96s][user ] Wow, that’s a bit complicated.
-[ 21.96s][moshi] It can be! Many countries have complex paths to independence. What interests you about it specifically?
-[ 28.35s][user ] «backchannel» Uh-huh.
-[ 28.75s][user ] I read something about a constitution in ⟨ret@31.65s⟩ 1937.
-[ 31.94s][moshi] ⟦⚡SPAN@31.88s: The Constitution of Ireland was adopted by plebiscite on July 1, 1937, establishing Ireland as a sovereign sta⟧ The Constitution of Ireland was adopted by plebiscite on July first, nineteen thirty-seven, establishing Ireland as a sovereign state.
-[ 39.53s][user ] «backchannel» Yeah.
-[ 39.93s][user ] That sounds important.
-[ 41.12s][moshi] It absolutely was. A constitution defines a nation’s core principles and laws, it's a big step.
-[ 47.51s][user ] So, was 1922 the real beginning then?
-[ 50.31s][moshi] «interrupted» It was a major milestone, granting substantial self-governance—
-[ 53.50s][user ] «interrupts_prev» …but did that mean they were completely free of British rule right away?
-[ 58.69s][moshi] Not entirely. The Irish Free State remained part of the British Commonwealth –
-[ 63.88s][user ] «backchannel» Mm-hmm.
-[ 64.28s][moshi] —and the British monarch remained head of state, though with limited powers. Full sovereignty took time.
-[ 70.67s][user ] I see. What about Northern Ireland?
-[ 73.07s][moshi] Northern Ireland remained within the United Kingdom, a point of ongoing historical and political tension.
-[ 79.05s][user ] «backchannel» Right.
-[ 79.45s][user ] Oh, right. That’s still an issue today, isn't it?
-[ 83.05s][moshi] «backchannel» Uh-huh.
-[ 83.45s][moshi] It is, unfortunately. It’s a complex situation with deep historical roots.
-[ 87.84s][user ] Is there a famous document related to 1922?
-[ 91.03s][moshi] «backchannel» Wow.
-[ 91.43s][moshi] ⟨ret@91.35s⟩ ⟦⚡SPAN@91.45s: The Anglo-Irish Treaty was signed in December 1921, leading to the establishment of the Irish Free State in 19⟧ The Anglo-Irish Treaty was signed in December nineteen twenty-one, leading to the establishment of the Irish Free State in nineteen twenty-two.
-[ 99.82s][user ] Okay, a treaty. That makes sense.
-[102.21s][moshi] Treaties often mark pivotal moments in history, setting the stage for new relationships.
-[107.40s][user ] What’s the weather like in Dublin right now? ⟨ret@110.43s⟩
-[110.60s][moshi] The weather ⟦⚡SPAN@111.60s: (tool result) 18.5°C, humidity 62%, wind 8.2 km/h⟧ in Dublin is currently eighteen point five degrees Celsius, with sixty-two percent humidity and wind at eight point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Dublin"}}
-[120.18s][user ] Sounds pleasant. Thanks, Romi.
-[121.78s][moshi] You’re very welcome! I’m glad I could help you explore a bit of Irish history.
+[  0.00s][user ] Hi Sari, I’m trying to decide what to do this evening.
+[  4.34s][moshi] «backchannel» Yeah, yeah.
+[  5.13s][moshi] Hello! Settling into a new city can be overwhelming, but fun.
+[  9.47s][user ] That's kind of you. I was wondering, what’s the longest-running musical ⟨ret@13.98s⟩ on Broadway?
+[ 14.60s][moshi] ⟦⚡SPAN@14.54s: The longest-running show in Broadway history is The Phantom of the Opera, which ran for 35 years and 13,981 pe⟧ The longest-running show in Broadway history is The Phantom of the Opera, having run for thirty-five years and thirteen thousand nine hundred eighty-one performances.
+[ 24.07s][user ] Wow, over thirteen thousand performances! That’s incredible.
+[ 26.83s][moshi] It truly is. Are you a fan of musicals, or are you looking for something else entirely?
+[ 33.53s][user ] I do enjoy musicals…
+[ 35.11s][user ] …but I'm also open to other options. Maybe a nice restaurant?
+[ 39.45s][moshi] I can help with restaurant recommendations. Do you have a particular cuisine in mind?
+[ 44.98s][user ] «backchannel» Mm-hmm.
+[ 45.37s][user ] Hmm, maybe Italian. Is there a good Italian place near City Hall? ⟨ret@50.06s⟩
+[ 50.10s][moshi] ⟦⚡SPAN@50.44s: (tool result) Italian restaurants near City Hall: Bella Notte (4.5 stars, $$) - 123 Main St; Roma Ristorante (⟧ There are two Italian restaurants near City Hall: Bella Notte, with four and a half stars and a moderate price tier, is at one twenty-three Main Street. Roma Ristorante, with four and two stars and a moderate price tier, is at four fifty-six Oak Avenue.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "City Hall"}}
+[ 67.86s][user ] «backchannel» Yeah.
+[ 68.25s][user ] Bella Notte sounds good. Do they take reservations? ⟨ret@71.21s⟩
+[ 71.41s][moshi] ⟦⚡SPAN@71.51s: (tool result) Reservation confirmed for 2 people at Bella Notte, July 10, 2026 at 7:00 PM. Confirmation ID: BN⟧ Your reservation for two people at Bella Notte is confirmed for July tenth, two thousand twenty-six at seven PM. Your confirmation ID is BN7892.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Notte"}}
+[ 80.88s][user ] Perfect, thank you! That's a big help.
+[ 83.64s][moshi] You’re very welcome!
+[ 84.82s][user ] «backchannel» Uh-huh.
+[ 85.22s][moshi] I’m glad I could assist.
+[ 87.19s][user ] Actually, yes. What’s the weather like ⟨ret@89.66s⟩ tomorrow?
+[ 89.95s][moshi] ⟦⚡SPAN@90.02s: (tool result) Tomorrow’s weather: 24.0°C, humidity 68%, wind 7.2 km/h, partly cloudy.⟧ Tomorrow's weather will be twenty-four point zero degrees Celsius, with sixty-eight percent humidity and a wind speed of seven point two kilometers per hour. It will be partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[101.39s][user ] Sounds pleasant. Um, are there any good parks nearby?
+[104.94s][moshi] «backchannel» Mm-hmm.
+[105.34s][moshi] There are several parks nearby. Central Park is the largest, and offers walking paths and gardens.
+[111.65s][user ] Yes, tell me a bit more about Central Park. ⟨ret@115.16s⟩
+[115.20s][moshi] ⟦⚡SPAN@115.26s: Central Park is an 843-acre park in Manhattan, New York City, offering attractions like Strawberry Fields, Bet⟧ Central Park is an eight hundred forty-three acre park in Manhattan, New York City, offering attractions like Strawberry Fields, Bethesda Terrace, and the Central Park Zoo.
+[125.46s][user ] «backchannel» Mm-hmm.
+[125.85s][user ] That sounds lovely. Thanks again, Sari.
+[128.22s][moshi] You’re most welcome.

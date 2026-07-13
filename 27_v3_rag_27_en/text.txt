@@ -1,100 +1,99 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Brio, a encouraging and non-judgmental counselor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Zeaon, a curious and validating wellness coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Jordan",
+    "name": "Liam",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-13",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-06-17",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-11-23",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-08-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-07-30",
+      "date": "2026-05-25",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-29",
+      "date": "2026-04-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-12-21",
       "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-10",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-22",
+      "date": "2026-06-09",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-01",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been feeling really lost about my career lately.
-[  3.35s][moshi] It’s completely normal to feel that way, and I’m here to help you explore some options.
-[  9.30s][user ] «backchannel» Yeah.
-[  9.67s][user ] That’s good to hear. I used to love writing, but…
-[ 13.39s][moshi] It sounds like you’re disconnected from a passion. Let’s unpack that a little. What specifically has changed?
-[ 19.72s][user ] Well, I went to school for English, but the job market seems ⟨ret@24.26s⟩ tough.
-[ 24.55s][moshi] It’s true ⟦⚡SPAN@25.66s: According to the Bureau of Labor Statistics, employment of writers and authors is projected to grow 4 percent ⟧ the job market can feel challenging, but the Bureau of Labor Statistics projects employment for writers and authors will grow 4 percent from 2022 to 2032.
-[ 34.97s][user ] «backchannel» Oh.
-[ 35.34s][user ] Hmm, that’s…better than I thought.
-[ 37.20s][moshi] It's great you’re already reassessing things! What kind of writing did you enjoy most?
-[ 42.41s][user ] «backchannel» Wow.
-[ 42.78s][user ] Poetry, actually. I wrote a lot in college.
-[ 45.75s][moshi] Poetry is a wonderful outlet. Have you considered related fields like content writing?
-[ 50.59s][user ] «backchannel» Right.
-[ 50.96s][user ] I hadn't really, no. It seems so different.
-[ 53.94s][moshi] «backchannel» Yeah.
-[ 54.31s][moshi] «interrupted» It can be, but the core skills – crafting compelling language – are very transferable—
-[ 59.89s][user ] «interrupts_prev» …But would I even make a living doing that? ⟨ret@63.21s⟩
-[ 63.24s][moshi] ⟦⚡SPAN@63.31s: The median annual wage for writers and authors was $67,120 in May 2023.⟧ The median annual wage for writers and authors was $67,120 in May 2023, though that can vary greatly by experience and specialization.
-[ 71.42s][user ] «backchannel» Nice.
-[ 71.79s][moshi] It’s helpful to have a realistic understanding of the financial side. What about editing or journalism?
-[ 77.75s][user ] Those are possibilities. I’m just not sure where to start looking.
-[ 81.84s][moshi] «backchannel» Yeah.
-[ 82.21s][moshi] We can explore resources for job boards and skill-building workshops. That might ease some of the uncertainty.
-[ 88.53s][user ] That sounds really helpful, thank you.
-[ 90.77s][moshi] You’re very welcome. Remember, it's okay to try different paths until you find the right fit.
+[  0.00s][user ] I was just thinking…
+[  1.50s][user ] …about old movies. Do you know who directed Splendor in the ⟨ret@5.81s⟩ Grass?
+[  6.01s][moshi] ⟦⚡SPAN@6.21s: Elia Kazan was a Greek-American film and stage director, and one of the most honored and influential directors⟧ That would be Elia Kazan – he was really a pivotal figure in American theater and film.
+[ 12.39s][user ] Oh, Kazan. I think I've heard that name. What else did ⟨ret@16.70s⟩ he direct?
+[ 17.27s][moshi] ⟦⚡SPAN@17.40s: Elia Kazan directed several acclaimed films, including "Gentleman's Agreement" (1947), "A Streetcar Named Desi⟧ He directed some fantastic films, like "Gentleman's Agreement" from nineteen forty-seven, and "A Streetcar Named Desire".
+[ 23.27s][user ] «backchannel» Yeah.
+[ 23.65s][user ] "A Streetcar Named Desire" is a classic! Marlon Brando was in that, right?
+[ 28.53s][moshi] Yes, Marlon Brando starred in "A Streetcar Named Desire" alongside Vivien Leigh. It's a truly iconic film.
+[ 34.91s][user ] I'm trying to remember... was he in anything ⟨ret@38.04s⟩ else good?
+[ 38.66s][moshi] ⟦⚡SPAN@39.10s: Marlon Brando also starred in "The Godfather" (1972), widely considered one of the greatest films ever made, a⟧ Oh, absolutely! He’s unforgettable in "The Godfather" from nineteen seventy-two, and also in "Apocalypse Now".
+[ 44.29s][user ] Wow, those are both amazing. Speaking of classics, what's the weather like today? ⟨ret@49.15s⟩
+[ 49.17s][moshi] It's ⟦⚡SPAN@49.74s: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.⟧ currently twenty-six point zero degrees Celsius, with sixty-five percent humidity and a seven point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 56.68s][user ] That sounds lovely. Maybe I should go for a walk.
+[ 60.43s][moshi] That’s a wonderful idea! Fresh air is always good for the spirit.
+[ 64.94s][user ] «backchannel» Yeah.
+[ 65.31s][user ] You're right. I’ve been meaning to find a new park to walk in. ⟨ret@70.17s⟩
+[ 70.19s][moshi] ⟦⚡SPAN@70.71s: Olympic Park, located in Seoul, South Korea, is a large public park built for the 1988 Summer Olympics.⟧ Have you considered Olympic Park in Seoul? It was built for the nineteen eighty-eight Summer Olympics.
+[ 76.20s][user ] «backchannel» Uh-huh.
+[ 76.57s][user ] Seoul? I'm not in Seoul. I'm in Toronto.
+[ 79.58s][moshi] My apologies! I seem to have gotten my locations mixed up. Let's find a park in Toronto for you.
+[ 86.71s][user ] Yes, please. Something with a nice walking ⟨ret@89.17s⟩ trail.
+[ 89.71s][moshi] ⟦⚡SPAN@89.65s: High Park in Toronto offers extensive walking trails, gardens, a zoo, and Grenadier Pond.⟧ High Park in Toronto has great walking trails, beautiful gardens, a zoo, and Grenadier Pond.
+[ 95.34s][user ] «backchannel» Yeah.
+[ 95.72s][user ] That sounds perfect! Is it easy to get to by public transit?
+[100.22s][moshi] «backchannel» Mhm.
+[100.60s][moshi] ⟨ret@100.55s⟩ ⟦⚡SPAN@101.00s: (tool result) Bus 300 towards Bloor St West stops at High Park Station.⟧ Yes, the three hundred bus towards Bloor Street West stops right at High Park Station.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "High Park"}}
+[106.23s][user ] «backchannel» Yeah.
+[106.60s][user ] Great! How long does that bus ride take from ⟨ret@109.85s⟩ downtown?
+[110.36s][moshi] ⟦⚡SPAN@110.19s: The 300 bus from Union Station to High Park Station takes approximately 45 minutes.⟧ From Union Station, the three hundred bus takes roughly forty-five minutes to reach High Park Station.
+[116.36s][user ] That’s not bad at all. I think I’ll plan to go tomorrow.
+[120.87s][moshi] «backchannel» Okay.
+[121.24s][moshi] That sounds like a lovely plan! Getting outdoors will be a great reset.
+[126.12s][user ] I've been feeling a bit stressed about my budget lately.
+[129.87s][moshi] «backchannel» Uh-huh.
+[130.25s][moshi] I understand. Many people find budgeting challenging. It's a great first step you're acknowledging that.
+[135.88s][user ] It just feels overwhelming, you know? Where do I even start?
+[140.01s][moshi] [sigh] It can feel that way, absolutely. We can start small, by simply tracking where your money currently goes. Would you like to explore that?
+[149.39s][user ] Yes, that sounds like a good idea. Maybe I should write everything down?
+[154.27s][moshi] Exactly! Or, we could use an app to help. There are many budgeting tools available, if you'd prefer.

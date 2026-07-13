@@ -4,114 +4,117 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "혜우",
+#     "name": "다람",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-06-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2025-12-14",
+#       "date": "2026-03-30",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-03-04",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-09-25",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-08-19",
+#       "date": "2026-02-02",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-06-08",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-15",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-18",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일 저녁에 분위기 좋은 레스토랑 예약 좀 해 줘. | S2 발우곤장… 거긴 어떤 음식들이 있어? | S3 … 그럼, 분위기는 좋은데 고기를 먹을 수 있는 곳은 없을까? | S4 확인 번호는 다시 한번 말해 줄래?
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울에서 괜찮은 레스토랑 좀 찾아줄래? | S2 응, 맞아. 분위기는 비슷하게 좋고, 가격은 조금만 저렴한 곳 | S3 … 발우공양은 채식만 파는 곳이야? | S4 응, 부탁해. 이번 주 토요일 저녁 일곱시에 두명으로 예약해 
 
-     0.00s  user  발화 시작: 이번 주 토요일 저녁에 분위기 좋은 레스토랑 예약 좀 해 줘.
-     5.00s  <ret> 발화 (turn1 첫 프레임)
-     5.40s  agent 발화 시작: <ret> 토요일 저녁에 분위기 좋은 곳을 찾으신다면, 신라 호텔의 라연이라는 한정식집을 추천드려요. 멋진 
-     5.40s  user  발화 끝
-     6.28s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.80s]: (tool result) There are many restaurants with good ambiance in Seoul, 
-    16.20s  user  발화 시작: 라연… 가격대는 어느 정도야?
-    16.20s  agent 발화 끝
-    17.92s  <ret> 발화 (turn3 첫 프레임)
-    18.17s  agent 발화 시작: <ret> 라연은 고급 레스토랑이라 일인당 십오만 원에서 삼십만 원 정도, 음료랑 서비스 요금은 별도예요.
-    18.17s  user  발화 끝
-    18.22s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.38s]: (tool result) La Yeon is considered a high-end dining experience, with
-    24.55s  user  발화 시작: 오.
-    24.55s  agent 발화 끝
-    25.04s  user  발화 시작: 생각보다 비싸네. 좀 더 저렴한 곳으로 찾아봐 줘.
-    25.04s  user  발화 끝
-    28.90s  <ret> 발화 (turn6 첫 프레임)
-    28.97s  agent 발화 시작: <ret> 조금 더 저렴한 곳으로는 종로에 있는 발우곤장을 추천드려요. 사찰 음식인데 분위기도 좋고 일인당 
-    28.97s  user  발화 끝
-    29.50s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.84s]: (tool result) For a moderate price range, Balwoo Gonjang in Jongno off
-    37.81s  user  발화 시작: 발우곤장… 거긴 어떤 음식들이 있어?
-    37.81s  agent 발화 끝
-    39.98s  <ret> 발화 (turn8 첫 프레임)
-    40.27s  agent 발화 시작: <ret> 발우곤장은 전통적인 사찰 음식을 전문으로 하는데, 제철 채소랑 곡물, 야생 허브를 사용해서 고기나
-    40.27s  user  발화 끝
-    40.72s  ⚡SPAN 주입 [d'=0.74s / d_lead=10.80s]: Balwoo Gonjang specializes in traditional Korean temple cuisine, featu
-    51.07s  user  발화 시작: 어.
-    51.07s  agent 발화 끝
-    51.56s  user  발화 시작: 음… 채식은 잘 안 먹는데.
-    51.56s  user  발화 끝
-    54.02s  agent 발화 시작: 채식을 잘 안 드신다고요? —
-    54.02s  user  발화 끝
-    56.47s  user  발화 시작: … 그럼, 분위기는 좋은데 고기를 먹을 수 있는 곳은 없을까?
-    56.47s  agent 발화 끝
-    61.32s  <ret> 발화 (turn13 첫 프레임)
-    61.38s  agent 발화 시작: <ret> 분위기는 좋고 고기를 먹을 수 있는 곳으로는 성수동의 본앤브레드를 추천드려요. 드라이 에이징 스테
-    61.38s  user  발화 끝
-    62.00s  ⚡SPAN 주입 [d'=0.68s / d_lead=10.80s]: (tool result) For a good ambiance with meat options, Born & Bred in Se
-    72.18s  user  발화 시작: 응.
-    72.18s  agent 발화 끝
-    72.67s  agent 발화 시작: 본앤브레드는 특히 특별한 날에 방문하기 좋은 곳으로 알려져 있어요. 기념일이나 데이트 장소로도 인기가 많거든
-    72.67s  user  발화 끝
-    79.55s  user  발화 시작: 기념일… 내 생일이 다음 달인데, 미리 예약해 둘까?
-    79.55s  agent 발화 끝
-    83.48s  agent 발화 시작: 네.
-    83.48s  user  발화 끝
-    83.94s  <ret> 발화 (turn18 첫 프레임)
-    83.97s  agent 발화 시작: <ret> 네, 생일이 다음 달이시군요. 본앤브레드에 이천이십육년 팔월 삼일 저녁 일곱시에 예약을 완료했습니
-    83.97s  agent 발화 끝
-    84.40s  ⚡SPAN 주입 [d'=0.46s / d_lead=9.82s]: (tool result) Reservation confirmed at Born & Bred for August 3, 2026 
-    93.79s  user  발화 시작: 확인 번호는 다시 한번 말해 줄래?
-    93.79s  agent 발화 끝
-    96.74s  agent 발화 시작: 확인 번호는 칠 팔 엑스 구 이 피입니다.
-    96.74s  user  발화 끝
-   100.66s  user  발화 시작: 고마워, 도라나. 덕분에 생일 저녁 메뉴는 정했네.
-   100.66s  agent 발화 끝
-   104.10s  agent 발화 시작: 생일 저녁 메뉴를 정하신 걸 보니 저도 기쁘네요.
-   104.10s  user  발화 끝
-   108.03s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 서울에서 괜찮은 레스토랑 좀 찾아줄래?
+     3.27s  <ret> 발화 (turn1 첫 프레임)
+     3.67s  agent 발화 시작: <ret> 서울에는 다양한 레스토랑이 있는데, 특히 종로구 대원전로 삼십에 위치한 '가온'은 훌륭한 한식 레
+     3.67s  user  발화 끝
+     4.55s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.42s]: There are many restaurants in Seoul, South Korea, with varying price t
+    10.09s  user  발화 시작: 맞아.
+    10.09s  agent 발화 끝
+    10.55s  user  발화 시작: 음… 가온은 좀 비쌀 것 같은데, 조금 더 저렴한 곳도 있을까?
+    10.55s  user  발화 끝
+    15.59s  agent 발화 시작: 아, 가격이 부담스러우시군요. 가온 외에 다른 곳도 찾아볼까요?
+    15.59s  user  발화 끝
+    19.26s  user  발화 시작: 응.
+    19.26s  agent 발화 끝
+    19.72s  user  발화 시작: 응, 맞아. 분위기는 비슷하게 좋고, 가격은 조금만 저렴한 곳으로.
+    19.72s  user  발화 끝
+    23.84s  agent 발화 시작: 분위기는 좋으면서 가격이 조금 더 합리적인 곳을 찾아볼게요.
+    23.84s  user  발화 끝
+    27.51s  user  발화 시작: 응.
+    27.51s  agent 발화 끝
+    27.97s  user  발화 시작: 아, 그리고 혹시 그 레스토랑 근처에 주차장이 있는지 알려줄 수 있어?
+    27.97s  user  발화 끝
+    33.01s  agent 발화 시작: 예.
+    33.01s  user  발화 끝
+    33.35s  <ret> 발화 (turn11 첫 프레임)
+    33.47s  agent 발화 시작: <ret> 서울 중구 퇴계로 오십칠에 위치한 '발우공양'이라는 한식당은 주차장이 있고, 가격도 적당한 편입니
+    33.47s  agent 발화 끝
+    33.65s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.96s]: (tool result) {"restaurants": [{"name": "Balwoo Gongyang", "address": 
+    39.43s  user  발화 시작: … 발우공양은 채식만 파는 곳이야?
+    39.43s  agent 발화 끝
+    41.73s  agent 발화 시작: 네, 발우공양은 사찰 음식 전문점으로, 채식 위주의 메뉴를 제공합니다.
+    41.73s  user  발화 끝
+    45.85s  user  발화 시작: 응응.
+    45.85s  agent 발화 끝
+    46.31s  user  발화 시작: 아, 그럼 됐어. 고기 먹고 싶으니까 다른 곳 찾아줘.
+    46.31s  user  발화 끝
+    50.44s  agent 발화 시작: 예.
+    50.44s  user  발화 끝
+    50.83s  <ret> 발화 (turn17 첫 프레임)
+    50.90s  agent 발화 시작: <ret> 서울 중구 명동이길 이십칠에 '한추'라는 삼겹살 전문점이 있습니다. 주차도 가능하고, 가격도 괜찮
+    50.90s  agent 발화 끝
+    51.51s  ⚡SPAN 주입 [d'=0.68s / d_lead=5.96s]: (tool result) {"restaurants": [{"name": "Han Chu", "address": "27, Mye
+    56.86s  user  발화 시작: 응.
+    56.86s  agent 발화 끝
+    57.32s  agent 발화 시작: [happy] 삼겹살 좋아하시는군요. 그럼 '한추'로 예약해 드릴까요?
+    57.32s  user  발화 끝
+    60.53s  user  발화 시작: 응.
+    60.53s  agent 발화 끝
+    60.98s  user  발화 시작: 응, 부탁해. 이번 주 토요일 저녁 일곱시에 두명으로 예약해 줘.
+    60.98s  user  발화 끝
+    65.57s  agent 발화 시작: 네.
+    65.57s  user  발화 끝
+    66.00s  <ret> 발화 (turn23 첫 프레임)
+    66.03s  agent 발화 시작: <ret> 네, '한추'에 이번 주 토요일 저녁 일곱시에 두명으로 예약이 완료되었습니다. 확인 번호는 에이치
+    66.03s  agent 발화 끝
+    66.46s  ⚡SPAN 주입 [d'=0.46s / d_lead=9.63s]: (tool result) {"confirmation id": "HC7111902"}
+    75.66s  agent 발화 끝

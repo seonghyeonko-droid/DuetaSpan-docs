@@ -1,10 +1,10 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Zellar, a curious and validating supportive advisor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Elin, a calm and patient personal guide who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Charlotte",
+    "name": "Remy",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -12,79 +12,76 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "GBP (£)"
     },
     "nationality": "British",
-    "gender": "female",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-22",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "date": "2026-06-04",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-01-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-11-15",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-07",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-08-14",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-07-07",
+      "date": "2026-03-25",
       "category": "diet",
-      "text": "User is pescatarian."
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-02-18",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-02-11",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-13",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-04",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2026-04-02",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the name of the project founded in the Philippines? ⟨ret@4.22s⟩
-[  4.31s][moshi] Hmm, ⟦⚡SPAN@4.93s: (no information found)⟧ that’s a tricky one! I’ve searched, and unfortunately, I don’t have information about a specific project founded in the Philippines.
-[ 12.53s][user ] Oh, okay. Well, what’s the weather like in Manila right now?
-[ 16.83s][moshi] «backchannel» Yeah.
-[ 17.22s][moshi] ⟨ret@16.94s⟩ The ⟦⚡SPAN@18.14s: (tool result) 31.0°C, humidity 78%, wind 10.0 km/h, condition: Partly Cloudy⟧ weather in Manila is currently 31.0 degrees Celsius, with seventy-eight percent humidity and a 10.0 kilometer per hour wind—partly cloudy skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Manila"}}
-[ 25.84s][moshi] Sounds warm and breezy! Perhaps a good day for some outdoor creativity?
-[ 30.53s][user ] «backchannel» Mm-hmm.
-[ 30.92s][user ] It does! I’m trying to write a short story, but I’m stuck.
-[ 35.62s][moshi] «backchannel» Uh-huh.
-[ 36.01s][moshi] Oh, writer’s block, I understand! Sometimes just talking about your ideas can help unstick things. What’s your story about? I’m happy to listen—or brainstorm if you like.
+[  0.00s][user ] What campus reduced its size in the 1950's and 1960's? ⟨ret@4.25s⟩
+[  4.33s][moshi] But ⟦⚡SPAN@4.95s: (no information found)⟧ unfortunately, I don't have information about any campus reducing its size during those decades.
+[ 10.82s][user ] «backchannel» Yeah.
+[ 11.25s][user ] Oh, okay. Well, what’s the weather…
+[ 13.85s][user ] …like in Seoul right now?
+[ 16.01s][moshi] «backchannel» Uh-huh.
+[ 16.44s][moshi] ⟨ret@16.16s⟩ It’s ⟦⚡SPAN@17.25s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ currently 23.0 degrees Celsius in Seoul, with humidity at 74% and a wind speed of 5.5 kilometers per hour. [happy] Quite pleasant, isn’t it?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 27.26s][user ] «backchannel» Yeah.
+[ 27.69s][user ] Sounds lovely. Can you find me some Italian restaurants ⟨ret@31.42s⟩ nearby?
+[ 32.02s][moshi] ⟦⚡SPAN@32.58s: (tool result) Trattoria Uno - Italian, 4.5 stars, 0.8 km away. Bella Italia - Italian, 4.2 stars, 1.2 km away.⟧ I found two Italian restaurants near you: Trattoria Uno, rated 4.5 stars and 0.8 kilometers away, and Bella Italia, with 4.2 stars at 1.2 kilometers.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
+[ 42.84s][user ] «backchannel» Oh.
+[ 43.27s][user ] Trattoria Uno sounds good. Can you reserve a table for two there for 7 PM ⟨ret@49.79s⟩ tonight?
+[ 50.19s][moshi] Wonderful! ⟦⚡SPAN@51.00s: (tool result) Reservation confirmed for 2 people at Trattoria Uno on 2026-07-10 at 19:00. Confirmation ID: 7X9⟧ Your reservation for two at Trattoria Uno is confirmed for 7 PM tonight. Your confirmation ID is 7X9L2K. [curious] I hope you enjoy your meal!
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Trattoria Uno", "date": "2026-07-10", "time": "19:00", "party_size": "2"}}

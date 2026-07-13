@@ -4,74 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "준완",
+#     "name": "가완",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-06-06",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2026-06-03",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-02-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-02-07",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2025-11-02",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-08-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-05-28",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is planning a trip to Switzerland in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-27",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 하우 아이 멧 유어 마더에 나오는 루시 역을 누가 맡았지?
-     4.33s  <ret> 발화 (turn1 첫 프레임)
-     4.88s  agent 발화 시작: <ret> 하우 아이 멧 유어 마더에서 루시 Whelan 역은 Byrnes 씨가 맡았답니다. 재밌는 드라마죠
-     4.88s  user  발화 끝
-     5.37s  ⚡SPAN 주입 [d'=1.03s / d_lead=6.35s]: Byrnes played Lucy Whelan in the sitcom How I Met Your Mother.
-    11.19s  <ret> 발화 (turn2 첫 프레임)
-    11.23s  agent 발화 시작: <ret> 날씨 얘기를 잠깐 하자면, 레이캬비크 칠월 평균 최고 기온은 십삼 점 일도 정도래요.
-    11.23s  agent 발화 끝
-    12.69s  ⚡SPAN 주입(IRRELEVANT) [d'=1.50s / d_lead=6.35s]: The average high temperature in Reykjavik, Iceland in July is 13.1°C.
-    17.58s  user  발화 시작: 그치.
-    17.58s  agent 발화 끝
-    18.07s  user  발화 시작: 아, 레이캬비크는 너무 추울 것 같아. 혹시 서울 날씨는 어때?
-    18.07s  user  발화 끝
-    22.95s  agent 발화 시작: 음.
-    22.95s  user  발화 끝
-    23.17s  <ret> 발화 (turn6 첫 프레임)
-    23.44s  agent 발화 시작: <ret> 지금 서울 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터 정도예요. 훨
-    23.44s  agent 발화 끝
-    24.48s  ⚡SPAN 주입 [d'=1.31s / d_lead=6.84s]: (tool result) Current weather in Seoul: 28.0°C, humidity 65%, wind 3.2
-    30.27s  user  발화 시작: 훨씬 나아. 서울에서 시원한 빙수 맛집 좀 알려줘.
-    30.27s  agent 발화 끝
-    34.18s  agent 발화 시작: 서울에서 빙수 맛집을 찾으시는군요. 어떤 동네를 선호하시나요?
-    34.18s  user  발화 끝
-    37.60s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 세상에서 가장 뛰어난 현악기 제작자는 누구라고 알려져 있나요?
+     4.17s  <ret> 발화 (turn1 첫 프레임)
+     4.72s  agent 발화 시작: <ret> [happy] 많은 분들이 안토니오 스트라디바리가 역사상 가장 뛰어난 현악기 제작자라고 생각하신답
+     4.72s  user  발화 끝
+     5.20s  ⚡SPAN 주입 [d'=1.03s / d_lead=8.91s]: Antonio Stradivari.
+    13.59s  <ret> 발화 (turn2 첫 프레임)
+    13.63s  agent 발화 시작: <ret> 요즘 날씨도 좋으니, 아름다운 음악 들으면서 여유로운 시간 보내시는 건 어떠세요?
+    13.63s  agent 발화 끝
+    15.09s  ⚡SPAN 주입(IRRELEVANT) [d'=1.50s / d_lead=5.77s]: The high in Seoul on July 10, 2026 is forecast to be 31.0°C, with humi
+    19.40s  user  발화 시작: 맞아요.
+    19.40s  agent 발화 끝
+    19.92s  user  발화 시작: 스트라디바리우스 바이올린은 얼마나 비싼가요?
+    19.92s  user  발화 끝
+    21.84s  <ret> 발화 (turn5 첫 프레임)
+    22.02s  agent 발화 시작: <ret> 스트라디바리우스 바이올린은 수백만 달러에 팔리기도 했는데요, 가장 비싼 악기는 이천십일년에 일천오
+    22.02s  user  발화 끝
+    22.14s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.82s]: Stradivarius violins have sold for millions of dollars, with the most 
+    28.84s  user  발화 시작: 네.
+    28.84s  agent 발화 끝
+    29.36s  agent 발화 시작: 네, 정말 대단하죠. 그 가치는 시간이 지날수록 더욱 높아질 거라고 예상하신답니다.
+    29.36s  user  발화 끝
+    35.13s  agent 발화 끝

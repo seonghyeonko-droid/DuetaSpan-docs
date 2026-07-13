@@ -4,79 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Rowan",
+#     "name": "Liam",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-31",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "date": "2026-01-31",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-01-05",
+#       "date": "2026-01-24",
 #       "category": "home",
-#       "text": "User's home address is 413 Cedar Lane."
+#       "text": "User's home address is 761 Pine Court."
 #     },
 #     {
-#       "date": "2025-06-14",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-01-03",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-25",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-17",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-19",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-04",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, that’s… unexpected. I just nee | S2 Well, it feels a bit… personal, I  | S3 I’m trying to write a proposal for | S4 The introduction. I don't know how
 
-     0.00s  agent 발화 시작: Hello Rowan, it’s lovely to connect with you. I'm Oraia.
-     3.53s  user  발화 시작: Uh-huh.
-     3.53s  agent 발화 끝
-     3.88s  user  발화 시작: Oh, that’s… unexpected. I just needed a reminder set, honest
-     3.88s  user  발화 끝
-     9.52s  agent 발화 시작: I can absolutely set reminders for you. But it sounds like p
-     9.52s  user  발화 끝
-    19.40s  user  발화 시작: Okay.
-    19.40s  agent 발화 끝
-    19.75s  agent 발화 시작: Sometimes, we hold back from possibilities because we worry 
-    19.75s  user  발화 끝
-    29.63s  user  발화 시작: Right.
-    29.63s  agent 발화 끝
-    29.98s  user  발화 시작: Well, it feels a bit… personal, I suppose? Like I'm admittin
-    29.98s  user  발화 끝
-    37.39s  agent 발화 시작: That’s a very honest observation. It takes courage to acknow
-    37.39s  user  발화 끝
-    47.61s  user  발화 시작: I’m trying to write a proposal for a new project at work, an
-    47.61s  agent 발화 끝
-    56.43s  agent 발화 시작: A blank page can be incredibly daunting, Rowan. It's like a 
-    56.43s  user  발화 끝
-    66.31s  user  발화 시작: Yeah.
-    66.31s  agent 발화 끝
-    66.66s  user  발화 시작: The introduction. I don't know how to make it sound… compell
-    66.66s  user  발화 끝
-    71.95s  agent 발화 시작: I understand. A strong introduction sets the tone, doesn't i
-    71.95s  user  발화 끝
-    82.18s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Liam. I’m Areliia, your wellness coach—here to he
+     7.94s  user  발화 시작: Wellness coach? That’s… unexpected. I just needed help with 
+     7.94s  agent 발화 끝
+    12.31s  agent 발화 시작: It's perfectly alright to feel a little surprised, Liam. Bud
+    12.31s  user  발화 끝
+    22.23s  user  발화 시작: Yeah.
+    22.23s  agent 발화 끝
+    22.63s  user  발화 시작: Welll… I guess so. I’ve tried apps, spreadsheets… nothing re
+    22.63s  user  발화 끝
+    27.00s  agent 발화 시작: Yeah.
+    27.00s  user  발화 끝
+    27.39s  agent 발화 시작: That’s very common, Liam. Tools are helpful, but they don’t 
+    27.39s  agent 발화 끝
+    40.10s  user  발화 시작: That sounds… less awful than another spreadsheet. Maybe.
+    40.10s  agent 발화 끝
+    43.27s  user  발화 끝

@@ -1,78 +1,76 @@
 v3_hesit_18_ko src=nq style=v1
-SYSTEM: <system> 당신은 부드럽고 사색적인 라이프 코치인 피오나이며, 사람들의 일상적인 결정과 감정을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 키오로이며, 양육 및 가족 시간과 관련하여 사람들을 돕는 친절하고 꾸준한 라이프 코치입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "다민",
+    "name": "은안",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "male",
     "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-03-02",
+      "date": "2026-06-21",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-23",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2026-05-27",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
     },
     {
-      "date": "2025-08-28",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-05-23",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-06-05",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-05-02",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
+    },
+    {
+      "date": "2026-01-01",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-27",
-      "title": "Researching a used car",
+      "date": "2026-05-05",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-07",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-08",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 발롱도르를 가장 많이 받은 선수는 누구인가요? ⟨ret@3.28s⟩
-[  3.58s][moshi] ⟦⚡SPAN@4.25s: Lionel Messi has won the Ballon d'Or a record eight times.⟧ 발롱도르를 가장 많이 받은 선수는 리오넬 메시 선수인데, 총 여덟 번이나 수상 기록을 세웠습니다.
-[ 11.94s][user ] 와, 정말 대단하네요. 그 다음으로 많이 받은 선수는 누구죠? ⟨ret@17.21s⟩
-[ 17.32s][moshi] ⟦⚡SPAN@17.87s: Cristiano Ronaldo has won the Ballon d'Or five times.⟧ 그 다음으로는 크리스티아누 호날두 선수입니다.
-[ 20.30s][moshi] 크리스티아누 호날두 선수는 다섯 번 발롱도르를 수상했습니다.
-[ 24.48s][user ] «backchannel» 네.
-[ 25.08s][user ] 호날두 선수도 엄청나네요. 메시 선수와 호날두 선수의 발롱도르 수상 연도를 알려줄 수 있나요?
-[ 32.84s][moshi] «backchannel» 네.
-[ 33.44s][moshi] ⟨ret@33.33s⟩ ⟦⚡SPAN@34.10s: (tool result) Lionel Messi won in 2009, 2010, 2011, 2012, 2015, 2019, 2021, and 2023, while Cristiano Ronaldo ⟧ 메시 선수는 이천구년, 이천십년, 이천십일년, 이천십이년, 이천십오년, 이천십구년, 이천이십일년, 그리고 이천이십삼년에 발롱도르를 수상했고, 호날두 선수는 이천팔년, 이천십삼년, 이천십사년, 이천십육년, 이천십칠년에 수상했습니다.
-      CALL: {"function": "search", "arguments": {"query": "Lionel Messi Ballon d'Or years Cristiano Ronaldo Ballon d'Or years"}}
-[ 45.98s][user ] 이천십년과 이천십칠년은 특히 기억에 남네요.
-[ 48.97s][moshi] 두 분 모두 훌륭한 선수들이시죠. 어떤 선수가 더 좋다고 생각하세요?
+[  0.00s][user ] 음… 농구선수 중에 삼점슛…
+[  1.88s][user ] …제일 많이 넣은 사람이 ⟨ret@3.92s⟩ 누구지?
+[  4.22s][moshi] 삼점슛을 ⟦⚡SPAN@4.89s: Ray Allen is the National Basketball Association's all-time leader in three-point field goals made, with 2,973⟧ 가장 많이 넣은 선수는 레이 앨런 선수인데, 통산 이천구백칠십삼개를 성공했대요.
+[  9.38s][user ] «backchannel» 그래.
+[  9.85s][user ] 와, 엄청 넣었네.
+[ 11.26s][moshi] [happy] 네, 정말 대단하죠. 그 기록은 깨지기 힘들 것 같아요.
+[ 15.95s][user ] «backchannel» 응.
+[ 16.42s][user ] 그럼 그 다음으로 많이 넣은 선수는 누구야? —
+[ 20.17s][user ] …근데 레이 앨런 선수는 지금 뭐 하고 지내? ⟨ret@23.86s⟩
+[ 23.92s][moshi] ⟦⚡SPAN@24.52s: Allen has worked as a television analyst for ABC and ESPN, and has made appearances in charity games.⟧ 은퇴 후에는 에이 비 씨와 이 에스 피 엔에서 티 브이 해설가로 활동하고, 자선 경기에도 가끔 참여하신다고— 더 자세한 정보가 필요하시면 말씀해주세요.

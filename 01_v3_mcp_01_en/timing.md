@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Marie",
+#     "name": "Riley",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,68 +12,97 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-05-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2026-02-10",
+#       "date": "2026-02-08",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-12-10",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "home",
-#       "text": "User's home address is 504 Birch Road."
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I need to find a psychologist in D | S2 July 17th is a bit far off. Are th | S3 That’s a little higher than I was  | S4 That sounds much more reasonable. 
 
-     0.00s  user  발화 시작: What location is thirty-two point zero three three three lat
-     6.95s  agent 발화 시작: Right.
-     6.95s  user  발화 끝
-     7.14s  <ret> 발화 (turn2 첫 프레임)
-     7.29s  agent 발화 시작: <ret> That location is two two oh eight University Avenue, i
-     7.29s  agent 발화 끝
-     7.48s  ⚡SPAN 주입 [d'=0.35s / d_lead=9.03s]: (tool result) {"address": "2208 University Ave, San Diego, CA 92104", 
-    16.32s  user  발화 시작: Uh-huh.
-    16.32s  agent 발화 끝
-    16.67s  user  발화 시작: Hmm, is that near any good coffee shops?
-    16.67s  user  발화 끝
-    19.45s  agent 발화 시작: Yeah.
-    19.45s  user  발화 끝
-    19.48s  <ret> 발화 (turn6 첫 프레임)
-    19.74s  ⚡SPAN 주입 [d'=0.64s / d_lead=10.42s]: {"name": "Living Brew Coffee", "address": "2121 El Cajon Blvd Ste 109,
-    19.80s  agent 발화 시작: <ret> Living Brew Coffee is only point six miles away, at tw
-    19.80s  agent 발화 끝
-    30.22s  user  발화 시작: Okay, good. Could you find me directions to that coffee shop
-    30.22s  agent 발화 끝
-    34.18s  <ret> 발화 (turn9 첫 프레임)
-    34.39s  agent 발화 시작: Mhm.
-    34.39s  user  발화 끝
-    34.64s  ⚡SPAN 주입 [d'=0.46s / d_lead=10.07s]: (tool result) {"distance": 0.6, "duration": 12, "instructions": Walk w
-    34.73s  agent 발화 시작: <ret> It’s a point six mile walk; it will take about twelve 
-    34.73s  agent 발화 끝
-    44.81s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find a psychologist in Denver Colorado and I'm wil
+     6.25s  agent 발화 시작: Yeah, totally.
+     6.25s  user  발화 끝
+     6.93s  <ret> 발화 (turn2 첫 프레임)
+     7.09s  agent 발화 시작: <ret> I found Dr. Eleanor Vance in Denver, specializing in a
+     7.09s  agent 발화 끝
+     7.28s  ⚡SPAN 주입 [d'=0.35s / d_lead=6.67s]: (tool result) {"provider name": "Dr. Eleanor Vance", "address": "1600 
+    13.75s  user  발화 시작: Yeah, totally.
+    13.75s  agent 발화 끝
+    14.59s  user  발화 시작: That sounds promising. Does she take new patients?
+    14.59s  user  발화 끝
+    17.92s  agent 발화 시작: Yeah.
+    17.92s  user  발화 끝
+    18.02s  <ret> 발화 (turn6 첫 프레임)
+    18.34s  agent 발화 시작: <ret> Dr. Vance has an opening on July 17th at 2:00 PM Mount
+    18.34s  agent 발화 끝
+    18.66s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.84s]: (tool result) {"availability": "Next available appointment is July 17t
+    24.18s  user  발화 시작: July 17th is a bit far off. Are there any others nearby with
+    24.18s  agent 발화 끝
+    30.29s  <ret> 발화 (turn9 첫 프레임)
+    30.43s  agent 발화 시작: Wow.
+    30.43s  user  발화 끝
+    30.75s  ⚡SPAN 주입 [d'=0.46s / d_lead=7.92s]: (tool result) {"provider name": "Dr. Marcus Bell", "address": "2200 We
+    30.84s  agent 발화 시작: <ret> I also found Dr. Marcus Bell in Denver—he specializes 
+    30.84s  agent 발화 끝
+    38.76s  user  발화 시작: Dr. Bell sounds interesting. What are his rates like?
+    38.76s  agent 발화 끝
+    42.04s  <ret> 발화 (turn11 첫 프레임)
+    42.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.17s]: (tool result) Dr. Marcus Bell, PhD, offers individual therapy sessions
+    42.51s  agent 발화 시작: <ret> Dr. Bell charges $150 per 50-minute session, according
+    42.51s  user  발화 끝
+    46.68s  user  발화 시작: That’s a little higher than I was hoping.
+    46.68s  agent 발화 끝
+    50.02s  agent 발화 시작: It’s understandable to want to find a good fit within your b
+    50.02s  user  발화 끝
+    55.85s  user  발화 시작: …could you search for someone around $100 a session instead?
+    55.85s  agent 발화 끝
+    59.84s  <ret> 발화 (turn15 첫 프레임)
+    59.96s  ⚡SPAN 주입 [d'=0.71s / d_lead=5.42s]: (tool result) Several therapists in Denver offer sessions around $100.
+    60.02s  agent 발화 시작: <ret> Denver Counseling Services has rates starting at $85 p
+    60.02s  user  발화 끝
+    65.44s  user  발화 시작: That sounds much more reasonable. Can you give me their phon
+    65.44s  agent 발화 끝
+    70.16s  <ret> 발화 (turn17 첫 프레임)
+    70.44s  agent 발화 시작: <ret> Their phone number is 303-555-6789. [happy] I’m glad w
+    70.44s  user  발화 끝
+    70.93s  ⚡SPAN 주입 [d'=0.76s / d_lead=5.84s]: (tool result) The phone number for Denver Counseling Services is (303)
+    76.28s  user  발화 시작: Yeah.
+    76.28s  agent 발화 끝
+    76.69s  user  발화 시작: Great. Thanks for your help.
+    76.69s  user  발화 끝
+    78.78s  agent 발화 시작: You’re very welcome.
+    78.78s  user  발화 끝
+    80.03s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "라훈",
+#     "name": "가린",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,59 +13,68 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2026-04-19",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-04-18",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-12-20",
+#       "date": "2026-02-28",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-08-30",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-02-23",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-03",
+#       "date": "2026-05-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-05",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 토이 스토리에서 'You Got a Friend in Me'를 부른 사람은 누구예요?
-     4.52s  agent 발화 시작: 맞아요.
-     4.52s  user  발화 끝
-     4.73s  <ret> 발화 (turn2 첫 프레임)
-     4.93s  agent 발화 시작: <ret> 그 노래를 부른 분은 랜디 뉴먼이라고 합니다, 미국의 싱어송라이터이자 작곡가, 피아니스트로 토이 
-     4.93s  agent 발화 끝
-     5.23s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.40s]: Randy Newman is an American singer-songwriter, arranger, and pianist b
-    12.33s  agent 발화 끝
+     0.00s  user  발화 시작: 조직이 갈등을 효과적으로 관리하도록 돕는 변화는 무엇인가요?
+     3.03s  <ret> 발화 (turn1 첫 프레임)
+     3.52s  agent 발화 시작: <ret> 조직은 변화를 통해 갈등을 효과적으로 관리함으로써 이점을 얻을 수 있습니다.
+     3.52s  user  발화 끝
+     3.67s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.02s]: Effectively managing conflict is one way organizations can benefit fro
+     8.54s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Charlotte",
+#     "name": "Remy",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -12,92 +12,95 @@
 #       "currency": "GBP (£)"
 #     },
 #     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "date": "2026-06-04",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-11-15",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-07-07",
+#       "date": "2026-03-25",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-02-11",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-21",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-13",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-29",
+#       "date": "2026-04-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 What campus reduced its size in th | S2 …like in Seoul right now? | S3 Sounds lovely. Can you find me som | S4 Trattoria Uno sounds good. Can you
 
-     0.00s  user  발화 시작: What was the name of the project founded in the Philippines?
-     4.22s  <ret> 발화 (turn1 첫 프레임)
-     4.31s  agent 발화 시작: <ret> Hmm, that’s a tricky one! I’ve searched, and unfortuna
-     4.31s  user  발화 끝
-     4.93s  ⚡SPAN 주입 [d'=0.70s / d_lead=8.22s]: (no information found)
-    12.53s  user  발화 시작: Oh, okay. Well, what’s the weather like in Manila right now?
-    12.53s  agent 발화 끝
-    16.83s  agent 발화 시작: Yeah.
-    16.83s  user  발화 끝
-    16.94s  <ret> 발화 (turn4 첫 프레임)
-    17.22s  agent 발화 시작: <ret> The weather in Manila is currently 31.0 degrees Celsiu
-    17.22s  agent 발화 끝
-    18.14s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.61s]: (tool result) 31.0°C, humidity 78%, wind 10.0 km/h, condition: Partly 
-    25.84s  agent 발화 시작: Sounds warm and breezy! Perhaps a good day for some outdoor 
-    25.84s  agent 발화 끝
-    30.53s  user  발화 시작: Mm-hmm.
-    30.53s  agent 발화 끝
-    30.92s  user  발화 시작: It does! I’m trying to write a short story, but I’m stuck.
-    30.92s  user  발화 끝
-    35.62s  agent 발화 시작: Uh-huh.
-    35.62s  user  발화 끝
-    36.01s  agent 발화 시작: Oh, writer’s block, I understand! Sometimes just talking abo
-    36.01s  agent 발화 끝
-    46.58s  agent 발화 끝
+     0.00s  user  발화 시작: What campus reduced its size in the 1950's and 1960's?
+     4.25s  <ret> 발화 (turn1 첫 프레임)
+     4.33s  agent 발화 시작: <ret> But unfortunately, I don't have information about any 
+     4.33s  user  발화 끝
+     4.95s  ⚡SPAN 주입 [d'=0.70s / d_lead=6.49s]: (no information found)
+    10.82s  user  발화 시작: Yeah.
+    10.82s  agent 발화 끝
+    11.25s  user  발화 시작: Oh, okay. Well, what’s the weather…
+    11.25s  user  발화 끝
+    13.85s  user  발화 시작: …like in Seoul right now?
+    13.85s  user  발화 끝
+    16.01s  agent 발화 시작: Uh-huh.
+    16.01s  user  발화 끝
+    16.16s  <ret> 발화 (turn6 첫 프레임)
+    16.44s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with hum
+    16.44s  agent 발화 끝
+    17.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.82s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    27.26s  user  발화 시작: Yeah.
+    27.26s  agent 발화 끝
+    27.69s  user  발화 시작: Sounds lovely. Can you find me some Italian restaurants near
+    27.69s  user  발화 끝
+    31.42s  <ret> 발화 (turn9 첫 프레임)
+    32.02s  agent 발화 시작: <ret> I found two Italian restaurants near you: Trattoria Un
+    32.02s  user  발화 끝
+    32.58s  ⚡SPAN 주입 [d'=1.16s / d_lead=10.82s]: (tool result) Trattoria Uno - Italian, 4.5 stars, 0.8 km away. Bella I
+    42.84s  user  발화 시작: Oh.
+    42.84s  agent 발화 끝
+    43.27s  user  발화 시작: Trattoria Uno sounds good. Can you reserve a table for two t
+    43.27s  user  발화 끝
+    49.79s  <ret> 발화 (turn12 첫 프레임)
+    50.19s  agent 발화 시작: <ret> Wonderful! Your reservation for two at Trattoria Uno i
+    50.19s  user  발화 끝
+    51.00s  ⚡SPAN 주입 [d'=1.35s / d_lead=11.25s]: (tool result) Reservation confirmed for 2 people at Trattoria Uno on 2
+    61.44s  agent 발화 끝

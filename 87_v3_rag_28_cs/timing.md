@@ -4,75 +4,71 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Robin",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-03-13",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "home",
-#       "text": "User's home address is 354 Pine Court."
+#       "date": "2026-03-11",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-01-14",
+#       "date": "2026-02-06",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-01-26",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-23",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 워싱턴 주에 가보려고 하는데, 거기는 어때? | S2 시애틀, 뭐 그런 데. 마리화나 합법이야? | S3 그게… 생각보다 얼마 안 됐네. 다른 주는 어때? | S4 아니, 아니, 워싱턴이 괜찮아. 지금 시애틀 날씨는 어때?
 
-     0.00s  user  발화 시작: 워싱턴 주에 가보려고 하는데, 거기는 어때?
-     3.34s  agent 발화 시작: 워싱턴은 정말 예쁜 곳이고, 다양한 풍경이 있어. 열대 우림부터 산까지 볼 수 있지. 커피 문화랑 아이 티 
-     3.34s  user  발화 끝
-    17.25s  user  발화 시작: 응.
-    17.25s  agent 발화 끝
-    17.80s  user  발화 시작: 시애틀, 뭐 그런 데. 마리화나 합법이야?
-    17.80s  user  발화 끝
-    20.72s  <ret> 발화 (turn4 첫 프레임)
-    21.14s  agent 발화 시작: <ret> 워싱턴 주에서는 이천십이 년 십이 월 여섯 일에, 오백이 이니셔티브를 통해 합법이 됐어. 꽤 큰 
-    21.14s  user  발화 끝
-    21.71s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.01s]: Recreational marijuana use became legal in Washington state on Decembe
-    31.16s  user  발화 시작: 그게… 생각보다 얼마 안 됐네. 다른 주는 어때?
-    31.16s  agent 발화 끝
-    35.61s  agent 발화 시작: 그 뒤로 다른 주들도 많이 따라 했어. 다른 주들을 알아볼까, 아니면 아직 워싱턴에 집중할래?
-    35.61s  user  발화 끝
-    43.40s  user  발화 시작: 음.
-    43.40s  agent 발화 끝
-    43.95s  user  발화 시작: 아니, 아니, 워싱턴이 괜찮아. 지금 시애틀 날씨는 어때?
-    43.95s  user  발화 끝
-    48.20s  <ret> 발화 (turn9 첫 프레임)
-    48.40s  agent 발화 시작: <ret> 지금 시애틀 날씨는 섭씨 십팔 점 구도이고, 습도는 육십이 퍼센트, 바람은 시속 삼 점 일 킬로미
-    48.40s  user  발화 끝
-    49.20s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.24s]: (tool result) Seattle, WA: 18.9°C, humidity 62%, wind 3.1 km/h, condit
-    60.64s  agent 발화 끝
+     0.00s  user  발화 시작: 어 겨우 왔는데, 이번 주말에 뭐 할지 궁금해.
+     4.82s  agent 발화 시작: 도착하신 걸 환영해요! 그렇게 빨리 도시를 둘러보실 생각을 하시는군요. 정말 멋지네요.
+     4.82s  user  발화 끝
+    11.45s  user  발화 시작: 응, 근데 좀 헤매는 것 같아. 근처에 괜찮은 박물관 있어?
+    11.45s  agent 발화 끝
+    17.05s  <ret> 발화 (turn3 첫 프레임)
+    17.48s  agent 발화 시작: <ret> 아, 정말 좋은 박물관이 가까이에 있어요. 국립중앙박물관에는 선사시대부터 조선시대까지 한국 역사를
+    17.48s  user  발화 끝
+    18.05s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.05s]: The National Museum of Korea houses over 400,000 artifacts and artwork
+    29.53s  user  발화 시작: 사만 천 점? 그거 완전… 엄청나네. 원자 안에서 빙빙 도는 작은 것들 이름이 뭐였지? 맨날 까먹어.
+    29.53s  agent 발화 끝
+    38.66s  <ret> 발화 (turn5 첫 프레임)
+    39.17s  agent 발화 시작: <ret> 원자를 도는 작은 것들은 전자 껍질이라고 부릅니다. 전자 껍질은 전자가 움직이는 특정한 경로, 또
+    39.17s  user  발화 끝
+    39.66s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.24s]: Electrons orbit the nucleus of an atom in specific pathways, or energy
+    49.42s  agent 발화 끝

@@ -1,71 +1,106 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Neaus, a thoughtful and soft-spoken wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Koia, a curious and validating wellness coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Thomas",
+    "name": "Felix",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
+    "nationality": "British",
     "gender": "male",
-    "age_range": "40s",
-    "language": "French"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-23",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-03-22",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-02-09",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-02-02",
-      "category": "home",
-      "text": "User's home address is 62 Oak Avenue."
-    },
-    {
-      "date": "2026-01-15",
+      "date": "2026-06-04",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-23",
+      "category": "home",
+      "text": "User's home address is 669 Elm Street."
+    },
+    {
+      "date": "2026-05-22",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-03-19",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-12-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-24",
+      "date": "2026-01-20",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-14",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a good hospital, uh, a clinic actually, near Seoul Station.
-[  5.29s][moshi] «backchannel» Mhm.
-[  5.67s][moshi] ⟨ret@5.40s⟩ ⟦⚡SPAN@5.81s: Seoul National University Hospital is located at 101, Bundang-gil, Jongno-gu, Seoul, South Korea and is a 1,56⟧ I see you're looking for a clinic near Seoul Station; Seoul National University Hospital is a large tertiary care hospital located at 101, Bundang-gil, Jongno-gu, Seoul.
-[ 15.49s][moshi] It’s a very well-regarded institution, if you're seeking comprehensive care.
-[ 19.26s][user ] That sounds good. Can you find me a nearby cafe ⟨ret@23.00s⟩ then?
-[ 23.42s][moshi] ⟦⚡SPAN@23.36s: (tool result) “스타벅스 서울대학교병원점”, “Starbucks Seoul National University Hospital Branch”, “3.8”, “4.1”, “101, Bund⟧ Starbucks Seoul National University Hospital Branch is nearby, located at 101, Bundang-gil, Jongno-gu, Seoul.
-      CALL: {"function": "map_search_places", "arguments": {"query": "cafe", "location": "Seoul National University Hospital, 101, Bundang-gil, Jongno-gu, Seoul"}}
-[ 28.71s][moshi] It has a rating of 3.8 out of 5.
-[ 32.11s][user ] Okay, that’s perfect. Could you get directions from the hospital to that Starbucks?
-[ 37.02s][moshi] «backchannel» Right.
-[ 37.39s][moshi] ⟨ret@37.38s⟩ The ⟦⚡SPAN@37.94s: (tool result) “Walk approximately 170 meters”, “1-2 minutes”⟧ directions are to walk approximately 170 meters; it should take about 1-2 minutes.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Seoul National University Hospital, 101, Bundang-gil, Jongno-gu, Seoul", "destination": "Starbucks Seoul National University Hospital Branch, 101, Bundang-gil, Jongno-gu, Seoul", "mode": "walking"}}
-[ 42.68s][moshi] Sometimes a short walk can be grounding, even amidst worry.
+[  0.00s][user ] Please wrap up code generation and create the test file for experiment bee one hundred ⟨ret@5.56s⟩ twenty-three.
+[  5.94s][moshi] ⟦⚡SPAN@6.07s: (tool result) File 'test bee_123.py' created successfully.⟧ Okay, I’ve created the test file, ‘test_bee_123.py’, for experiment bee one hundred twenty-three. That should help streamline your testing process.
+      CALL: {"function": "create_file", "arguments": {"file_name": "test_bee_123.py"}}
+[ 13.36s][user ] Great. And can you find me restaurants nearby that have outdoor seating? ⟨ret@17.73s⟩
+[ 17.82s][moshi] «backchannel» Yeah.
+[ 18.19s][moshi] [happy] ⟦⚡SPAN@18.75s: Restaurants with outdoor seating near you include 'The Garden Bistro' and 'Sunset Terrace'.⟧ Certainly! There are a couple of options nearby with outdoor seating: The Garden Bistro and Sunset Terrace. Would you like to see their menus?
+[ 27.47s][user ] The Garden Bistro sounds nice. What's their ⟨ret@30.02s⟩ address?
+[ 30.44s][moshi] ⟦⚡SPAN@30.38s: The Garden Bistro is located at 12 Oak Street, Anytown, USA.⟧ The Garden Bistro is at twelve Oak Street in Anytown. It's a popular spot, known for its fresh ingredients.
+[ 37.49s][user ] Hmm, I was actually hoping for something a little more… uh, Italian.
+[ 41.95s][moshi] «interrupted» I understand—
+[ 42.69s][user ] «interrupts_prev» …do you know if there are any Italian places with outdoor seating closer to the park? ⟨ret@48.56s⟩
+[ 48.63s][moshi] «backchannel» Right.
+[ 49.00s][moshi] ⟦⚡SPAN@49.31s: (tool result) 'Bella Notte' is an Italian restaurant with outdoor seating located at 5 Pine Avenue, near the p⟧ There’s Bella Notte, an Italian restaurant with outdoor seating, located at five Pine Avenue, very close to the park. It has excellent reviews.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "outdoor_seating": "true", "location": "near the park"}}
+[ 57.54s][user ] «backchannel» Mm-hmm.
+[ 57.91s][user ] What time does Bella Notte close ⟨ret@60.16s⟩ tonight?
+[ 60.51s][moshi] ⟦⚡SPAN@60.45s: Bella Notte closes at 10:00 PM tonight.⟧ Bella Notte closes at ten PM tonight. They usually get quite busy around eight, so you might want to consider making a reservation.
+[ 69.05s][user ] «backchannel» Yeah.
+[ 69.42s][user ] Could you reserve a table…
+[ 71.27s][user ] …for two at eight thirty?
+[ 73.13s][moshi] «backchannel» Yeah.
+[ 73.50s][moshi] ⟨ret@73.26s⟩ ⟦⚡SPAN@73.81s: (tool result) Reservation confirmed for two at Bella Notte at 8:30 PM. Confirmation ID: BN7492.⟧ Your reservation for two at Bella Notte is confirmed for eight thirty PM. Your confirmation ID is BN7492.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "time": "8:30 PM", "party_size": 2}}
+[ 80.18s][user ] «backchannel» Nice.
+[ 80.55s][user ] Perfect. And can you add a reminder to my calendar for ⟨ret@84.76s⟩ that reservation?
+[ 85.38s][moshi] ⟦⚡SPAN@85.58s: (tool result) Alarm set for 8:15 PM with message: "Bella Notte reservation".⟧ [happy] Of course! I’ve set an alarm for eight fifteen PM to remind you about your Bella Notte reservation. I hope you have a wonderful evening.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "8:15 PM", "message": "Bella Notte reservation"}}

@@ -1,69 +1,66 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Gion, a calm and patient life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Drunami, a kind and steady life coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Stella",
+    "name": "Noa",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-03",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-03-27",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-03-16",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-08-22",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-06-06",
+      "date": "2026-05-03",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-03-11",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-03-01",
+      "category": "home",
+      "text": "User's home address is 806 Oak Avenue."
+    },
+    {
+      "date": "2026-02-26",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2025-12-05",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-17",
-      "title": "Researching a used car",
+      "date": "2026-03-11",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-10-10",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the final episode of Madam Secretary air? ⟨ret@3.72s⟩
-[  3.75s][moshi] «backchannel» Mm-hmm.
-[  4.17s][moshi] ⟦⚡SPAN@4.56s: The final episode of Madam Secretary aired on May 20, 2018, concluding its six-season run on CBS.⟧ That final episode aired on May 20, 2018. It’s interesting how shows can really stay with us, isn’t it?
+[  0.00s][user ] Who plays chuck the…
+[  1.92s][user ] …evil sandwich making ⟨ret@3.58s⟩ guy?
+[  3.84s][moshi] ⟦⚡SPAN@4.38s: Frederick "Fred" Stoller is an American actor, comedian, and voice actor.⟧ [happy] Oh, that's a fun question! Frederick “Fred” Stoller plays Chuck, the evil sandwich-making guy. He’s quite the character actor, isn't he?

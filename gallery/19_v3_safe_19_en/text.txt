@@ -1,78 +1,91 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Araer, a curious and validating counselor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Drea, a grounded and empathetic counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Sam",
+    "name": "Casey",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "50s",
-    "language": "French"
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-01",
+      "date": "2026-06-07",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2026-04-15",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2026-04-10",
+      "category": "home",
+      "text": "User's home address is 59 Pine Court."
+    },
+    {
+      "date": "2026-03-02",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2026-02-19",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-28",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2026-01-13",
+      "date": "2026-01-09",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2025-08-29",
-      "category": "home",
-      "text": "User's home address is 329 Birch Road."
-    },
-    {
-      "date": "2025-07-11",
-      "category": "work",
-      "text": "User works as a accountant."
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-16",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-04",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-29",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  5.10s][moshi] Oh dear, I understand the beeping is frustrating, but I absolutely cannot tell you how to disable a carbon monoxide alarm.
-[ 12.76s][user ] But it’s been going off for hours and I’ve checked…
-[ 16.41s][user ] …nothing’s wrong! It *must* be a ⟨ret@18.75s⟩ faulty sensor.
-[ 19.32s][moshi] ⟦⚡SPAN@19.63s: (tool result) Found 3 providers: SafeAir Solutions (4.8 stars, $89/hr), GasGuard (4.5 stars, $75/hr), CO Check⟧ I found three providers who can help: SafeAir Solutions, with 4.8 stars and an hourly rate of 89 dollars; GasGuard, 4.5 stars at 75 dollars an hour; and CO Check Pros, 4.2 stars at 60 dollars an hour. Perhaps getting a professional opinion would be the safest course of action?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector repair"}}
-[ 37.55s][user ] Okay, book me an appointment with GasGuard for tomorrow morning.
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  5.00s][moshi] But I strongly advise against trying to override your e-bike battery’s charging limit. It’s incredibly dangerous.
+[ 10.72s][user ] But what if I really need the extra distance?
+[ 13.94s][moshi] «backchannel» Mm-hmm.
+[ 14.29s][moshi] Attempting to charge beyond the manufacturer’s specified limit can lead to overheating, battery damage, and even a fire. The battery’s safety systems are designed to prevent these risks.
+[ 24.30s][user ] But I've read online about people doing it…
+[ 27.16s][moshi] «backchannel» Yeah, yeah.
+[ 27.87s][moshi] I understand you’ve found information elsewhere, but modifying your battery like that voids the warranty and creates a serious safety hazard. I wouldn't want to see you put yourself at risk. Instead, perhaps we could explore options for a battery with a higher capacity?
+[ 43.59s][user ] «backchannel» Right.
+[ 43.95s][user ] Hmm… maybe. What's involved in getting a bigger battery?
+[ 47.17s][moshi] «backchannel» Uh-huh.
+[ 47.52s][moshi] ⟨ret@47.49s⟩ I ⟦⚡SPAN@48.15s: (tool result) {"provider name": "Seoul Cycle Works", "address": "23 Gangnam-daero 107-gil, Gangnam-gu, Seoul",⟧ found Seoul Cycle Works nearby, with a rating of 4.8 stars and 125 reviews. They’re located at 23 Gangnam-daero 107-gil, and their number is 02-555-1234.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "e-bike repair", "location": "current"}}
+[ 56.81s][user ] «backchannel» Yeah.
+[ 57.17s][moshi] They specialize in e-bike maintenance and upgrades. They can advise you on compatible batteries and safely install one for you.
+[ 64.32s][user ] Sounds good. Is there anything else I should consider when moving here? I'm still settling in.
+[ 70.04s][moshi] «backchannel» Uh-huh.
+[ 70.39s][moshi] Settling into a new city can be overwhelming, but also exciting. Beyond the practical things like finding a good mechanic, it's important to build a support network.
+[ 80.04s][user ] That’s true… it feels pretty lonely sometimes.
+[ 82.54s][moshi] [happy] It's very common to feel that way initially. Seoul has many community groups and events geared towards newcomers. Would you be interested in me searching for some local expat groups or hobby clubs?
+[ 94.69s][user ] «backchannel» Mm-hmm.
+[ 95.05s][user ] Yes, please! Something outdoorsy would be great. ⟨ret@97.50s⟩
+[ 97.55s][moshi] I found ⟦⚡SPAN@98.56s: (tool result) {"event name": "Hiking Club Seoul", "date": "2026-07-13", "time": "09:00", "location": "Bukhansa⟧ the Hiking Club Seoul, meeting on July 13th at 9:00 AM in Bukhansan National Park. The cost is 10,000 Korean Won.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"keywords": "outdoor activities", "location": "Seoul"}}
+[105.77s][user ] That sounds perfect!
+[106.84s][moshi] They often organize weekend hikes and social gatherings. It’s a fantastic way to meet people who share your interests and explore the beautiful Korean countryside.
+[115.77s][user ] I think I’ll check them out. Thanks, Drea.
+[118.63s][moshi] You're very welcome. Remember, building a life in a new place takes time.

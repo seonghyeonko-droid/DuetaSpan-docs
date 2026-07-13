@@ -1,81 +1,89 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Junaen, a encouraging and non-judgmental wellness coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Timi, a calm and patient wellness coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Julian",
+    "name": "Avery",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2026-06-05",
+      "date": "2026-03-17",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2026-03-18",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-02-21",
+      "category": "home",
+      "text": "User's home address is 228 Oak Avenue."
     },
     {
-      "date": "2025-08-29",
+      "date": "2026-02-18",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-07-14",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "date": "2026-01-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-14",
+      "date": "2025-12-21",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about coffee, and it made me wonder… where were the first European coffee houses opened? …I think I read something about ⟨ret@10.05s⟩ Italy?
-[ 10.32s][moshi] ⟦⚡SPAN@10.26s: The first European coffee house opened in Venice in 1645, established by the Pietro’s coffee company.⟧ The first European coffee house opened in Venice, Italy, in sixteen forty-five, established by Pietro’s coffee company.
-[ 17.34s][user ] Oh, Venice! That makes sense, with its trading history. Do you think that influenced coffee culture elsewhere?
-[ 24.37s][moshi] Venice was a major trading hub, so it naturally became a place where new ideas and goods—like coffee—spread quickly. It’s a lovely image, isn’t it?
-[ 34.69s][user ] It really is. What about England?…
-[ 37.17s][user ] …When did coffee houses become popular there? ⟨ret@39.96s⟩
-[ 40.06s][moshi] ⟦⚡SPAN@40.41s: Coffee houses opened in England in the mid-17th century, becoming particularly popular in London by 1650, and ⟧ Well, coffee houses opened in England in the mid-seventeenth century, becoming particularly popular in London by sixteen fifty, and they were often called “penny universities.”
-[ 50.38s][user ] «backchannel» Mm-hmm.
-[ 50.80s][moshi] They were called "penny universities" because the price of admission – a penny – bought you not only coffee but also access to conversation and information.
-[ 61.53s][user ] «backchannel» Yeah, yeah.
-[ 62.36s][user ] A penny university, that’s a great name! I’m feeling a little stressed about work though, do you have any quick mindfulness tips?
-[ 71.44s][moshi] When feeling overwhelmed, try a simple breathing exercise. Close your eyes, and slowly inhale for four counts, hold for four, and exhale for six. It can really ground you.
-[ 83.42s][user ] That sounds really helpful…
-[ 85.07s][user ] …I’ll try that. Thank you, Junaen.
-[ 87.55s][moshi] You’re very welcome. Remember, even a few moments of mindful breathing can make a big difference in managing stress. It’s about finding those small pockets of calm.
+[  0.00s][user ] I was wondering… what’s the fastest ⟨ret@2.75s⟩ car?
+[  3.02s][moshi] Well, that’s ⟦⚡SPAN@4.08s: The Koenigsegg Agera RS is the world’s fastest production car, with a top speed of 277.87 miles per hour.⟧ a fun question! The Koenigsegg Agera RS is the world’s fastest production car, reaching two hundred seventy-seven point eight seven miles per hour. Quite a machine, isn't it?
+[ 15.96s][user ] «backchannel» Yeah.
+[ 16.39s][user ] Two hundred seventy-seven… wow. What…
+[ 18.55s][user ] …about a more affordable fast car?
+[ 21.14s][moshi] «backchannel» Yeah.
+[ 21.57s][moshi] [curious] That’s a good point. Fast doesn’t always mean astronomically priced. What’s your budget looking like, roughly?
+[ 28.90s][user ] Let's say… under sixty thousand ⟨ret@31.05s⟩ dollars?
+[ 31.49s][moshi] ⟦⚡SPAN@31.74s: (tool result) The 2024 Chevrolet Corvette Stingray is often cited as one of the fastest and most affordable sp⟧ Many people consider the 2024 Chevrolet Corvette Stingray one of the fastest affordable options, accelerating from zero to sixty miles per hour in two point nine seconds. It does start slightly above your budget, at sixty-eight thousand three hundred dollars, though.
+      CALL: {"function": "search", "arguments": {"query": "fastest cars under $60000"}}
+[ 49.18s][user ] Slightly… hmm. Are there any electric cars that are quick?
+[ 53.49s][moshi] «backchannel» Right.
+[ 53.92s][moshi] ⟨ret@53.88s⟩ ⟦⚡SPAN@53.98s: (tool result) The Tesla Model S Plaid is currently the quickest production electric vehicle, accelerating from⟧ The Tesla Model S Plaid is currently the quickest production electric vehicle, going from zero to sixty miles per hour in one point nine nine seconds, with a top speed of two hundred miles per hour.
+      CALL: {"function": "search", "arguments": {"query": "fastest electric cars"}}
+[ 69.45s][user ] «backchannel» Yeah.
+[ 69.88s][user ] That’s… incredible. What…
+[ 71.18s][user ] …about something a little more practical? I need ⟨ret@74.80s⟩ space.
+[ 75.06s][moshi] ⟦⚡SPAN@75.00s: (tool result) The Porsche Cayenne Turbo GT is the fastest SUV currently available, with a top speed of 186 mph⟧ The Porsche Cayenne Turbo GT is currently the fastest SUV, reaching sixty miles per hour in three point three seconds and a top speed of one hundred eighty-six miles per hour. It’s a really well-rounded vehicle.
+      CALL: {"function": "search", "arguments": {"query": "fastest SUVs"}}
+[ 90.59s][user ] «backchannel» Mm-hmm.
+[ 91.02s][user ] Porsche… those are nice. What’s the weather like in Seoul right now? ⟨ret@96.19s⟩
+[ 96.20s][moshi] «backchannel» Mhm.
+[ 96.63s][moshi] ⟦⚡SPAN@96.49s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s twenty-three point zero degrees Celsius in Seoul, with seventy-four percent humidity and a wind speed of five point five kilometers per hour. A pleasant summer day!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[108.28s][user ] Sounds nice. I’m thinking of visiting next week…
+[111.73s][moshi] That sounds lovely! Seoul is a wonderful city. Are you planning any specific activities?
+[117.77s][user ] Maybe. I need to find a good Korean restaurant there. ⟨ret@121.87s⟩
+[122.08s][moshi] ⟦⚡SPAN@122.02s: (tool result) Gaon is a Michelin three-star Korean restaurant in Seoul, known for its modern interpretation of⟧ Gaon is a Michelin three-star restaurant in Seoul, and it's known for its modern take on traditional Korean food. It’s quite popular.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "Korean"}}
+[131.57s][user ] «backchannel» Yeah.
+[132.00s][user ] Gaon… sounds fancy. How much does a meal there cost? ⟨ret@136.17s⟩
+[136.32s][moshi] ⟦⚡SPAN@136.90s: (tool result) Gaon offers tasting menus ranging from ₩300,000 to ₩500,000 per person, depending on the chosen ⟧ Tasting menus at Gaon range from three hundred thousand to five hundred thousand Korean won per person, depending on your course and wine selections.
+      CALL: {"function": "search", "arguments": {"query": "Gaon Seoul price"}}
+[146.67s][user ] Wow, that's… quite a bit. I think I’ll look for something a little less expensive.
+[153.14s][moshi] «backchannel» Yeah, yeah.
+[154.00s][moshi] That’s perfectly sensible. There are countless wonderful, more affordable options available in Seoul. Perhaps I can narrow the search?

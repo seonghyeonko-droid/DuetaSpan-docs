@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "시린",
+#     "name": "연원",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,61 +12,50 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-14",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-05-03",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-08-22",
+#       "date": "2026-03-11",
 #       "category": "hobby",
 #       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-06-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-03-01",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-02",
+#       "date": "2026-04-19",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 매담 세크리터리 마지막 화가 언제 방영됐는지 궁금해.
-     3.42s  <ret> 발화 (turn1 첫 프레임)
-     4.03s  agent 발화 시작: <ret> 마지막 화가 방영된 날짜는 이천십팔년 오월 이십일입니다. 혹시 다른 드라마에 대해서도 알아볼까요?
-     4.03s  user  발화 끝
-     4.34s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.91s]: The final episode of Madam Secretary aired on May 20, 2018.
-    10.95s  agent 발화 끝
+     0.00s  user  발화 시작: 그 악당 샌드위치 만드는 사람…
+     2.91s  user  발화 시작: …배우 이름이 뭐야?
+     2.91s  user  발화 끝
+     4.04s  <ret> 발화 (turn2 첫 프레임)
+     4.65s  agent 발화 시작: <ret> 그 악당 샌드위치 만드는 사람은 프레데릭 "프레드" 스톨러라고 해요. 코미디언이기도 하시고요.
+     4.65s  user  발화 끝
+     4.96s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.40s]: Frederick "Fred" Stoller is an American actor and comedian.
+    11.06s  agent 발화 끝

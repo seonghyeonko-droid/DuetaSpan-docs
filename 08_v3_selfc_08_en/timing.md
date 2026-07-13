@@ -4,83 +4,137 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Thomas",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
+#     "nationality": "British",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "French"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-03-22",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "home",
-#       "text": "User's home address is 62 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-01-15",
+#       "date": "2026-06-04",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-23",
+#       "category": "home",
+#       "text": "User's home address is 669 Elm Street."
+#     },
+#     {
+#       "date": "2026-05-22",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-03-19",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-24",
+#       "date": "2026-01-20",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-14",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Please wrap up code generation and | S2 Hmm, I was actually hoping for som | S3 What time does Bella Notte close t | S4 …for two at eight thirty?
 
-     0.00s  user  발화 시작: I need to find a good hospital, uh, a clinic actually, near 
-     5.29s  agent 발화 시작: Mhm.
-     5.29s  user  발화 끝
-     5.40s  <ret> 발화 (turn2 첫 프레임)
-     5.67s  agent 발화 시작: <ret> I see you're looking for a clinic near Seoul Station; 
-     5.67s  agent 발화 끝
-     5.81s  ⚡SPAN 주입 [d'=0.41s / d_lead=9.82s]: Seoul National University Hospital is located at 101, Bundang-gil, Jon
-    15.49s  agent 발화 시작: It’s a very well-regarded institution, if you're seeking com
-    15.49s  agent 발화 끝
-    19.26s  user  발화 시작: That sounds good. Can you find me a nearby cafe then?
-    19.26s  agent 발화 끝
-    23.00s  <ret> 발화 (turn5 첫 프레임)
-    23.36s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.29s]: (tool result) “스타벅스 서울대학교병원점”, “Starbucks Seoul National University Ho
-    23.42s  agent 발화 시작: <ret> Starbucks Seoul National University Hospital Branch is
-    23.42s  user  발화 끝
-    28.71s  agent 발화 시작: It has a rating of 3.8 out of 5.
-    28.71s  agent 발화 끝
-    32.11s  user  발화 시작: Okay, that’s perfect. Could you get directions from the hosp
-    32.11s  agent 발화 끝
-    37.02s  agent 발화 시작: Right.
-    37.02s  user  발화 끝
-    37.38s  <ret> 발화 (turn9 첫 프레임)
-    37.39s  agent 발화 시작: <ret> The directions are to walk approximately 170 meters; i
-    37.39s  agent 발화 끝
-    37.94s  ⚡SPAN 주입 [d'=0.56s / d_lead=5.29s]: (tool result) “Walk approximately 170 meters”, “1-2 minutes”
-    42.68s  agent 발화 시작: Sometimes a short walk can be grounding, even amidst worry.
-    42.68s  agent 발화 끝
-    46.46s  agent 발화 끝
+     0.00s  user  발화 시작: Please wrap up code generation and create the test file for 
+     5.56s  <ret> 발화 (turn1 첫 프레임)
+     5.94s  agent 발화 시작: <ret> Okay, I’ve created the test file, ‘test_bee_123.py’, f
+     5.94s  user  발화 끝
+     6.07s  ⚡SPAN 주입 [d'=0.51s / d_lead=7.42s]: (tool result) File 'test bee_123.py' created successfully.
+    13.36s  user  발화 시작: Great. And can you find me restaurants nearby that have outd
+    13.36s  agent 발화 끝
+    17.73s  <ret> 발화 (turn4 첫 프레임)
+    17.82s  agent 발화 시작: Yeah.
+    17.82s  user  발화 끝
+    18.19s  agent 발화 시작: <ret> [happy] Certainly! There are a couple of options nearb
+    18.19s  agent 발화 끝
+    18.75s  ⚡SPAN 주입 [d'=1.03s / d_lead=9.28s]: Restaurants with outdoor seating near you include 'The Garden Bistro' 
+    27.47s  user  발화 시작: The Garden Bistro sounds nice. What's their address?
+    27.47s  agent 발화 끝
+    30.02s  <ret> 발화 (turn6 첫 프레임)
+    30.38s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.05s]: The Garden Bistro is located at 12 Oak Street, Anytown, USA.
+    30.44s  agent 발화 시작: <ret> The Garden Bistro is at twelve Oak Street in Anytown. 
+    30.44s  user  발화 끝
+    37.49s  user  발화 시작: Hmm, I was actually hoping for something a little more… uh, 
+    37.49s  agent 발화 끝
+    41.95s  agent 발화 시작: I understand—
+    41.95s  user  발화 끝
+    42.69s  user  발화 시작: …do you know if there are any Italian places with outdoor se
+    42.69s  agent 발화 끝
+    48.56s  <ret> 발화 (turn11 첫 프레임)
+    48.63s  agent 발화 시작: Right.
+    48.63s  user  발화 끝
+    49.00s  agent 발화 시작: <ret> There’s Bella Notte, an Italian restaurant with outdoo
+    49.00s  agent 발화 끝
+    49.31s  ⚡SPAN 주입 [d'=0.92s / d_lead=8.54s]: (tool result) 'Bella Notte' is an Italian restaurant with outdoor seat
+    57.54s  user  발화 시작: Mm-hmm.
+    57.54s  agent 발화 끝
+    57.91s  user  발화 시작: What time does Bella Notte close tonight?
+    57.91s  user  발화 끝
+    60.16s  <ret> 발화 (turn14 첫 프레임)
+    60.45s  ⚡SPAN 주입 [d'=0.63s / d_lead=8.54s]: Bella Notte closes at 10:00 PM tonight.
+    60.51s  agent 발화 시작: <ret> Bella Notte closes at ten PM tonight. They usually get
+    60.51s  user  발화 끝
+    69.05s  user  발화 시작: Yeah.
+    69.05s  agent 발화 끝
+    69.42s  user  발화 시작: Could you reserve a table…
+    69.42s  user  발화 끝
+    71.27s  user  발화 시작: …for two at eight thirty?
+    71.27s  user  발화 끝
+    73.13s  agent 발화 시작: Yeah.
+    73.13s  user  발화 끝
+    73.26s  <ret> 발화 (turn19 첫 프레임)
+    73.50s  agent 발화 시작: <ret> Your reservation for two at Bella Notte is confirmed f
+    73.50s  agent 발화 끝
+    73.81s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.68s]: (tool result) Reservation confirmed for two at Bella Notte at 8:30 PM.
+    80.18s  user  발화 시작: Nice.
+    80.18s  agent 발화 끝
+    80.55s  user  발화 시작: Perfect. And can you add a reminder to my calendar for that 
+    80.55s  user  발화 끝
+    84.76s  <ret> 발화 (turn22 첫 프레임)
+    85.38s  agent 발화 시작: <ret> [happy] Of course! I’ve set an alarm for eight fifteen
+    85.38s  user  발화 끝
+    85.58s  ⚡SPAN 주입 [d'=0.82s / d_lead=9.65s]: (tool result) Alarm set for 8:15 PM with message: "Bella Notte reserva
+    95.03s  agent 발화 끝

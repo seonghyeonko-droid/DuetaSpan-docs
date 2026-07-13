@@ -4,141 +4,81 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Robin",
+#     "name": "Remy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "French",
 #     "gender": "non-binary",
 #     "age_range": "40s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-20",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-06-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-09-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "date": "2026-04-22",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-09-24",
+#       "date": "2026-04-08",
 #       "category": "home",
-#       "text": "User's home address is 849 Cedar Lane."
+#       "text": "User's home address is 46 Oak Avenue."
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2026-02-05",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-12",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-03",
-#       "title": "Researching a used car",
+#       "date": "2026-06-06",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I'm feeling a bit overwhelmed  | S2 That does sound nice. Are there an | S3 What time is it there right now? | S4 Not yet. Can you find some yoga st
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit lost about makin | S2 …honestly. It's harder than it use | S3 Well, I just moved to Seoul, and I | S4 That's true, it *is* exciting. Are
 
-     0.00s  user  발화 시작: Hi, I'm feeling a bit overwhelmed today.
-     2.74s  agent 발화 시작: It’s alright to feel overwhelmed, sometimes life just feels 
-     2.74s  user  발화 끝
-    11.73s  user  발화 시작: I need to plan a trip. Maybe somewhere warm?
-    11.73s  agent 발화 끝
-    15.24s  agent 발화 시작: A warm getaway sounds lovely. Where are you thinking of goin
-    15.24s  user  발화 끝
-    21.89s  user  발화 시작: I was wondering about Seoul. What's the weather like there r
-    21.89s  agent 발화 끝
-    26.25s  <ret> 발화 (turn5 첫 프레임)
-    26.52s  ⚡SPAN 주입 [d'=0.45s / d_lead=8.21s]: (tool result) Seoul, South Korea is currently experiencing partly clou
-    26.58s  agent 발화 시작: <ret> Seoul is currently experiencing partly cloudy conditio
-    26.58s  user  발화 끝
-    34.79s  agent 발화 시작: That sounds quite pleasant, doesn't it?
-    34.79s  agent 발화 끝
-    37.13s  user  발화 시작: Okay.
-    37.13s  agent 발화 끝
-    37.52s  user  발화 시작: That does sound nice. Are there any good restaurants nearby 
-    37.52s  user  발화 끝
-    42.21s  agent 발화 시작: To help me find the best options, could you confirm which ci
-    42.21s  user  발화 끝
-    48.08s  user  발화 시작: Oh, right, sorry. I'm in Toronto.
-    48.08s  agent 발화 끝
-    50.03s  <ret> 발화 (turn11 첫 프레임)
-    50.42s  agent 발화 시작: <ret> I found Pai Northern Thai Kitchen, Scotiabank Arena, a
-    50.42s  user  발화 끝
-    51.15s  ⚡SPAN 주입 [d'=1.19s / d_lead=7.82s]: (tool result) Restaurants near Toronto City Hall: Pai Northern Thai Ki
-    58.24s  user  발화 시작: Mm-hmm.
-    58.24s  agent 발화 끝
-    58.63s  user  발화 시작: Tell me more about Pai Northern Thai Kitchen.
-    58.63s  user  발화 끝
-    61.25s  <ret> 발화 (turn14 첫 프레임)
-    61.70s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.04s]: (tool result) Pai Northern Thai Kitchen is a popular Thai restaurant l
-    61.76s  agent 발화 시작: <ret> Pai Northern Thai Kitchen, located at 18 Duncan Street
-    61.76s  user  발화 끝
-    68.79s  agent 발화 시작: It’s a popular spot, often quite busy.
-    68.79s  agent 발화 끝
-    71.53s  user  발화 시작: Right.
-    71.53s  agent 발화 끝
-    71.92s  user  발화 시작: What time is it there right now?
-    71.92s  user  발화 끝
-    74.30s  <ret> 발화 (turn18 첫 프레임)
-    74.60s  ⚡SPAN 주입 [d'=0.62s / d_lead=2.74s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Toronto.
-    74.66s  agent 발화 시작: <ret> It is currently 3:17 PM in Toronto.
-    74.66s  user  발화 끝
-    77.39s  agent 발화 시작: A good time to start thinking about dinner, perhaps?
-    77.39s  agent 발화 끝
-    80.91s  user  발화 시작: Maybe. I'm also trying to remember who plays Donna on Suits.
-    80.91s  agent 발화 끝
-    85.12s  <ret> 발화 (turn21 첫 프레임)
-    85.21s  agent 발화 시작: <ret> The actress who plays Donna on Suits is Sarah Gray Raf
-    85.21s  user  발화 끝
-    86.06s  ⚡SPAN 주입 [d'=0.94s / d_lead=4.30s]: Sarah Gray Rafferty portrayed the character of Donna Paulsen in the le
-    89.51s  agent 발화 시작: She really brought that character to life, didn't she?
-    89.51s  agent 발화 끝
-    93.03s  user  발화 시작: Yes, she did! I'm thinking of taking a yoga class next week.
-    93.03s  agent 발화 끝
-    97.72s  agent 발화 시작: Yeah.
-    97.72s  user  발화 끝
-    98.11s  agent 발화 시작: That’s a wonderful idea! A little self-care can make a big d
-    98.11s  agent 발화 끝
-   105.54s  user  발화 시작: Not yet. Can you find some yoga studios near me?
-   105.54s  agent 발화 끝
-   109.45s  agent 발화 시작: Uh-huh.
-   109.45s  user  발화 끝
-   109.64s  <ret> 발화 (turn28 첫 프레임)
-   109.84s  agent 발화 시작: <ret> I found YogaSpace, Down Dog Yoga, and Junction Yoga ne
-   109.84s  agent 발화 끝
-   110.56s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.08s]: (tool result) Yoga studios near Toronto: YogaSpace (4.8 stars, 250 Que
-   114.92s  agent 발화 시작: YogaSpace has the highest rating, at 4.8 stars.
-   114.92s  agent 발화 끝
-   118.05s  user  발화 시작: Okay, that's helpful. I think I'll look into YogaSpace.
-   118.05s  agent 발화 끝
-   121.56s  agent 발화 시작: Excellent! Taking the time to nurture your well-being is so 
-   121.56s  user  발화 끝
-   127.82s  user  발화 시작: Yeah, yeah.
-   127.82s  agent 발화 끝
-   128.60s  user  발화 시작: Thanks, Farir. You've made me feel a lot better.
-   128.60s  user  발화 끝
-   132.12s  agent 발화 시작: You're very welcome. Remember, even small steps towards self
-   132.12s  user  발화 끝
-   137.59s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling a bit lost about making friends…
+     3.25s  user  발화 시작: …honestly. It's harder than it used to be.
+     3.25s  user  발화 끝
+     6.50s  agent 발화 시작: It absolutely can be, and you're not alone in feeling that w
+     6.50s  user  발화 끝
+    17.06s  user  발화 시작: Well, I just moved to Seoul, and I don’t know anyone. It’s…i
+    17.06s  agent 발화 끝
+    21.86s  <ret> 발화 (turn4 첫 프레임)
+    21.93s  agent 발화 시작: <ret> It sounds like a big change! Seoul is a really vibrant
+    21.93s  user  발화 끝
+    22.29s  ⚡SPAN 주입 [d'=0.44s / d_lead=9.75s]: Seoul is South Korea's densely populated capital, with over ten millio
+    31.68s  user  발화 시작: Yeah.
+    31.68s  agent 발화 끝
+    32.09s  user  발화 시작: That's true, it *is* exciting. Are there any good places to 
+    32.09s  user  발화 끝
+    39.06s  <ret> 발화 (turn7 첫 프레임)
+    39.40s  agent 발화 시작: <ret> There's a highly-rated cafe called Cafe Onion Anguk, l
+    39.40s  user  발화 끝
+    39.85s  ⚡SPAN 주입 [d'=0.79s / d_lead=10.15s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
+    49.56s  agent 발화 끝

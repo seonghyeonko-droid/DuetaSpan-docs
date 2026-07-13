@@ -1,101 +1,72 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Farir, a kind and steady wellness coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Hellami, a encouraging and non-judgmental counselor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Robin",
+    "name": "Remy",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
+    "nationality": "French",
     "gender": "non-binary",
     "age_range": "40s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2025-11-20",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-06-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-30",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in December."
+      "date": "2026-04-22",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-24",
+      "date": "2026-04-08",
       "category": "home",
-      "text": "User's home address is 849 Cedar Lane."
+      "text": "User's home address is 46 Oak Avenue."
     },
     {
-      "date": "2025-07-22",
+      "date": "2026-02-05",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-12",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-03",
-      "title": "Researching a used car",
+      "date": "2026-06-06",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-30",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm feeling a bit overwhelmed today.
-[  2.74s][moshi] It’s alright to feel overwhelmed, sometimes life just feels like a lot. Taking a moment to acknowledge that is a good first step.
-[ 11.73s][user ] I need to plan a trip. Maybe somewhere warm?
-[ 15.24s][moshi] A warm getaway sounds lovely. Where are you thinking of going, or should we brainstorm some options?
-[ 21.89s][user ] I was wondering about Seoul. What's the weather like there right ⟨ret@26.25s⟩ now?
-[ 26.58s][moshi] ⟦⚡SPAN@26.52s: (tool result) Seoul, South Korea is currently experiencing partly cloudy conditions with a temperature of 25.8⟧ Seoul is currently experiencing partly cloudy conditions with a temperature of 25.8°C, humidity at 68%, and a 3.2 km/h east wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 34.79s][moshi] That sounds quite pleasant, doesn't it?
-[ 37.13s][user ] «backchannel» Okay.
-[ 37.52s][user ] That does sound nice. Are there any good restaurants nearby City Hall?
-[ 42.21s][moshi] To help me find the best options, could you confirm which city you’re currently in?
-[ 48.08s][user ] Oh, right, sorry. I'm in ⟨ret@50.03s⟩ Toronto.
-[ 50.42s][moshi] I ⟦⚡SPAN@51.15s: (tool result) Restaurants near Toronto City Hall: Pai Northern Thai Kitchen (Thai, 4.5 stars), Scotiabank Aren⟧ found Pai Northern Thai Kitchen, Scotiabank Arena, and 360 The Restaurant at the CN Tower near Toronto City Hall.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Toronto City Hall"}}
-[ 58.24s][user ] «backchannel» Mm-hmm.
-[ 58.63s][user ] Tell me more about Pai Northern Thai ⟨ret@61.25s⟩ Kitchen.
-[ 61.76s][moshi] ⟦⚡SPAN@61.70s: (tool result) Pai Northern Thai Kitchen is a popular Thai restaurant located at 18 Duncan Street, Toronto, ON ⟧ Pai Northern Thai Kitchen, located at 18 Duncan Street in Toronto, is known for authentic Northern Thai cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Pai Northern Thai Kitchen", "location": "Toronto"}}
-[ 68.79s][moshi] It’s a popular spot, often quite busy.
-[ 71.53s][user ] «backchannel» Right.
-[ 71.92s][user ] What time is it there right ⟨ret@74.30s⟩ now?
-[ 74.66s][moshi] ⟦⚡SPAN@74.60s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Toronto.⟧ It is currently 3:17 PM in Toronto.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 77.39s][moshi] A good time to start thinking about dinner, perhaps?
-[ 80.91s][user ] Maybe. I'm also trying to remember who plays Donna on Suits. ⟨ret@85.12s⟩
-[ 85.21s][moshi] The ⟦⚡SPAN@86.06s: Sarah Gray Rafferty portrayed the character of Donna Paulsen in the legal drama Suits throughout its nine-seas⟧ actress who plays Donna on Suits is Sarah Gray Rafferty.
-[ 89.51s][moshi] She really brought that character to life, didn't she?
-[ 93.03s][user ] Yes, she did! I'm thinking of taking a yoga class next week.
-[ 97.72s][moshi] «backchannel» Yeah.
-[ 98.11s][moshi] That’s a wonderful idea! A little self-care can make a big difference. Do you have a studio in mind?
-[105.54s][user ] Not yet. Can you find some yoga studios near me?
-[109.45s][moshi] «backchannel» Uh-huh.
-[109.84s][moshi] ⟨ret@109.64s⟩ I ⟦⚡SPAN@110.56s: (tool result) Yoga studios near Toronto: YogaSpace (4.8 stars, 250 Queen St W), Down Dog Yoga (4.6 stars, 1088⟧ found YogaSpace, Down Dog Yoga, and Junction Yoga near you in Toronto.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "yoga studio", "location": "Toronto"}}
-[114.92s][moshi] YogaSpace has the highest rating, at 4.8 stars.
-[118.05s][user ] Okay, that's helpful. I think I'll look into YogaSpace.
-[121.56s][moshi] Excellent! Taking the time to nurture your well-being is so important. I'm glad I could help.
-[127.82s][user ] «backchannel» Yeah, yeah.
-[128.60s][user ] Thanks, Farir. You've made me feel a lot better.
-[132.12s][moshi] You're very welcome. Remember, even small steps towards self-care can make a big difference.
+[  0.00s][user ] I'm feeling a bit lost about making friends…
+[  3.25s][user ] …honestly. It's harder than it used to be.
+[  6.50s][moshi] It absolutely can be, and you're not alone in feeling that way. It takes courage to put yourself out there. What feels most challenging right now?
+[ 17.06s][user ] Well, I just moved to Seoul, and I don’t know anyone. It’s…intimidating. ⟨ret@21.86s⟩
+[ 21.93s][moshi] ⟦⚡SPAN@22.29s: Seoul is South Korea's densely populated capital, with over ten million residents, and a hub for culture, tech⟧ It sounds like a big change! Seoul is a really vibrant city, home to over ten million people—a real hub for culture and technology.
+[ 31.68s][user ] «backchannel» Yeah.
+[ 32.09s][user ] That's true, it *is* exciting. Are there any good places to meet people, maybe a cafe or ⟨ret@39.06s⟩ something?
+[ 39.40s][moshi] ⟦⚡SPAN@39.85s: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address": "8 Bukchon-ro 5-gil, Jongno-gu, Seoul",⟧ There's a highly-rated cafe called Cafe Onion Anguk, located at 8 Bukchon-ro 5-gil in Jongno-gu, Seoul, with a 4.5-star rating. It's a moderate price range.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "cafe"}}

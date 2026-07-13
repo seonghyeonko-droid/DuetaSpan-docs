@@ -4,131 +4,101 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Paul",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-01-21",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-06-03",
-#       "category": "home",
-#       "text": "User's home address is 812 Cedar Lane."
+#       "date": "2026-01-08",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-14",
+#       "date": "2026-01-03",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-08-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-12-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-23",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-07",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit down, and I coul | S2 "Anchorman" is a classic. Is it av | S3 Something Korean, I think.… | S4 That’s fantastic, thank you so muc
+# EXAMINER(FDB-v2) 단계: S1 How long does it take to drive fro | S2 Are there any interesting places t | S3 …Actually, forget Versailles. Are  | S4 Great! And can you find me a hotel
 
-     0.00s  user  발화 시작: I'm feeling a bit down, and I could really use a good movie 
-     5.96s  agent 발화 시작: Oh, I'm so sorry to hear that! A good movie is a wonderful w
-     5.96s  user  발화 끝
-    12.28s  user  발화 시작: Do you have any recommendations for dramatic movies with Mer
-    12.28s  agent 발화 끝
-    16.14s  agent 발화 시작: Yeah, yeah.
-    16.14s  user  발화 끝
-    16.82s  <ret> 발화 (turn4 첫 프레임)
-    16.84s  agent 발화 시작: <ret> I certainly do! There's "Sophie's Choice" from 1982, a
-    16.84s  agent 발화 끝
-    17.13s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.37s]: (tool result) {"movies": [{"title": "Sophie's Choice", "year": 1982, "
-    24.21s  user  발화 시작: Exactly.
-    24.21s  agent 발화 끝
-    24.56s  user  발화 시작: That sounds… intense. Something a little lighter, maybe?
-    24.56s  user  발화 끝
-    27.37s  agent 발화 시작: I understand. Sometimes you need something a bit more uplift
-    27.37s  user  발화 끝
-    32.28s  user  발화 시작: Are there any comedies starring Steve Carell?
-    32.28s  agent 발화 끝
-    34.14s  <ret> 발화 (turn9 첫 프레임)
-    34.73s  agent 발화 시작: <ret> There's "The 40-Year-Old Virgin" from 2005, and "Ancho
-    34.73s  user  발화 끝
-    34.91s  ⚡SPAN 주입 [d'=0.77s / d_lead=6.32s]: (tool result) {"movies": [{"title": "The 40-Year-Old Virgin", "year": 
-    41.05s  user  발화 시작: "Anchorman" is a classic. Is it available to stream anywhere
-    41.05s  agent 발화 끝
-    44.21s  <ret> 발화 (turn11 첫 프레임)
-    44.56s  agent 발화 시작: <ret> It looks like "Anchorman" is currently streaming on Pe
-    44.56s  user  발화 끝
-    44.88s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.07s]: (tool result) Anchorman: The Legend of Ron Burgundy is available to st
-    52.63s  user  발화 시작: Oh, perfect. I have Peacock. I think I'll watch that tonight
-    52.63s  agent 발화 끝
-    56.49s  agent 발화 시작: Wonderful! That sounds like a really good plan for a cozy ev
-    56.49s  user  발화 끝
-    60.70s  user  발화 시작: Actually, before I settle in, could you find me some good re
-    60.70s  agent 발화 끝
-    65.26s  agent 발화 시작: To help me find the best spots, could you remind me what cit
-    65.26s  user  발화 끝
-    70.87s  user  발화 시작: Wow.
-    70.87s  agent 발화 끝
-    71.22s  user  발화 시작: Oh, right! Sorry. I’m in Seoul.
-    71.22s  user  발화 끝
-    73.33s  agent 발화 시작: No problem at all! Seoul has a fantastic food scene. What ki
-    73.33s  user  발화 끝
-    80.34s  user  발화 시작: Something Korean, I think.…
-    80.34s  agent 발화 끝
-    81.75s  user  발화 시작: …But not too spicy.
-    81.75s  user  발화 끝
-    82.54s  <ret> 발화 (turn21 첫 프레임)
-    83.15s  agent 발화 시작: <ret> I found a couple of options! Gaon is a high-end Korean
-    83.15s  user  발화 끝
-    83.91s  ⚡SPAN 주입 [d'=1.37s / d_lead=7.37s]: (tool result) {"restaurants": [{"name": "Gaon", "address": "30, Dosan-
-    90.52s  user  발화 시작: …Is Gaon really expensive? I'm trying not to spend too much 
-    90.52s  agent 발화 끝
-    94.73s  agent 발화 시작: Well, Gaon is considered a high-end dining experience—
-    94.73s  user  발화 끝
-    97.54s  agent 발화 시작: It’s rated as a very pricey restaurant, so— —with a price ti
-    97.54s  agent 발화 끝
-   108.06s  user  발화 시작: Okay, Balwoo Gongyang sounds better. Can you reserve a table
-   108.06s  agent 발화 끝
-   113.29s  <ret> 발화 (turn26 첫 프레임)
-   113.67s  agent 발화 시작: <ret> I've reserved a table for one at Balwoo Gongyang for 7
-   113.67s  user  발화 끝
-   114.54s  ⚡SPAN 주입 [d'=1.25s / d_lead=5.96s]: (tool result) {"confirmation id": "BWG73026", "restaurant name": "Balw
-   119.64s  user  발화 시작: Okay.
-   119.64s  agent 발화 끝
-   119.99s  user  발화 시작: That’s fantastic, thank you so much!
-   119.99s  user  발화 끝
-   122.09s  agent 발화 시작: You're very welcome! I’m so glad I could help you plan a rel
-   122.09s  user  발화 끝
-   129.11s  user  발화 시작: Right.
-   129.11s  agent 발화 끝
-   129.46s  user  발화 시작: I appreciate that. It’s good to talk sometimes.
-   129.46s  user  발화 끝
-   132.27s  agent 발화 시작: It truly is. I'm always here to listen, if you ever need to 
-   132.27s  user  발화 끝
-   141.39s  user  발화 시작: I think so too. I’m going to get ready now.
-   141.39s  agent 발화 끝
-   144.90s  agent 발화 시작: Have a wonderful time!
-   144.90s  user  발화 끝
-   146.30s  agent 발화 끝
+     0.00s  user  발화 시작: How long does it take to drive from Paris to Amsterdam?
+     3.50s  <ret> 발화 (turn1 첫 프레임)
+     3.85s  agent 발화 시작: <ret> The drive from Paris to Amsterdam is approximately fou
+     3.85s  user  발화 끝
+     4.44s  ⚡SPAN 주입 [d'=0.94s / d_lead=8.06s]: (tool result) {"distance": "439 km", "duration": "4 hours 19 mins", "r
+    11.91s  user  발화 시작: Oh.
+    11.91s  agent 발화 끝
+    12.26s  user  발화 시작: And what’s the weather like in Amsterdam right now?
+    12.26s  user  발화 끝
+    15.09s  <ret> 발화 (turn4 첫 프레임)
+    15.42s  agent 발화 시작: <ret> It’s currently 18.5 degrees Celsius in Amsterdam, with
+    15.42s  user  발화 끝
+    15.89s  ⚡SPAN 주입 [d'=0.80s / d_lead=8.06s]: (tool result) {"temperature": "18.5°C", "humidity": "68%", "wind speed
+    23.48s  user  발화 시작: Are there any interesting places to stop along the way?
+    23.48s  agent 발화 끝
+    26.62s  <ret> 발화 (turn6 첫 프레임)
+    26.92s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.46s]: (tool result) {"results": [{"name": "Grote Markt", "vicinity": "Antwer
+    26.98s  agent 발화 시작: <ret> There are a couple of places you might enjoy—the Grote
+    26.98s  user  발화 끝
+    36.44s  user  발화 시작: Yeah.
+    36.44s  agent 발화 끝
+    36.79s  user  발화 시작: Versailles sounds good, but is it a long detour?
+    36.79s  user  발화 끝
+    39.95s  agent 발화 시작: It's about a forty-five minute detour from the E19—
+    39.95s  user  발화 끝
+    43.10s  user  발화 시작: …Actually, forget Versailles. Are there any good restaurants
+    43.10s  agent 발화 끝
+    47.82s  <ret> 발화 (turn11 첫 프레임)
+    48.01s  agent 발화 시작: <ret> There are a few options—Elfde Gebod serves Belgian cui
+    48.01s  user  발화 끝
+    48.24s  ⚡SPAN 주입 [d'=0.42s / d_lead=9.46s]: (tool result) {"results": [{"name": "Elfde Gebod", "cuisine": "Belgian
+    57.47s  user  발화 시작: Uh-huh.
+    57.47s  agent 발화 끝
+    57.82s  user  발화 시작: Elfde Gebod sounds perfect. Can you make a reservation there
+    57.82s  user  발화 끝
+    63.42s  agent 발화 시작: Oh.
+    63.42s  user  발화 끝
+    63.57s  <ret> 발화 (turn15 첫 프레임)
+    63.77s  agent 발화 시작: <ret> I've made a reservation for two at Elfde Gebod for 7 P
+    63.77s  agent 발화 끝
+    64.22s  ⚡SPAN 주입 [d'=0.65s / d_lead=5.96s]: (tool result) {"confirmation id": "RT789XYZ"}
+    69.73s  user  발화 시작: Exactly.
+    69.73s  agent 발화 끝
+    70.08s  user  발화 시작: Great! And can you find me a hotel near the Grote Markt as w
+    70.08s  user  발화 끝
+    74.38s  <ret> 발화 (turn18 첫 프레임)
+    74.99s  agent 발화 시작: <ret> I found two options near the Grote Markt—Hotel Central
+    74.99s  user  발화 끝
+    75.06s  ⚡SPAN 주입 [d'=0.68s / d_lead=7.01s]: (tool result) {"results": [{"name": "Hotel Central", "price": "€120/ni
+    82.00s  agent 발화 끝

@@ -4,113 +4,139 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Ada",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
+#     "nationality": "British",
+#     "gender": "non-binary",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-03",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-06-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-01-12",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-03-30",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-30",
+#       "date": "2026-03-04",
+#       "category": "home",
+#       "text": "User's home address is 349 Maple Drive."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-08-02",
+#       "date": "2026-02-06",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-17",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-06",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-11",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 …if they have any openings tomorro | S3 Actually, I was thinking. | S4 I'm hoping to keep my daily spendi
+# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to Seoul nex | S2 That sounds pretty nice. I wonder  | S3 Perfect. — | S4 …Village. What’s a good time to vi
 
-     0.00s  user  발화 시작: I need to find a good Italian restaurant in Seoul.
-     4.15s  agent 발화 시작: I can help with that.
-     4.15s  user  발화 끝
-     6.22s  user  발화 시작: And uh, something not too expensive, please.
-     6.22s  agent 발화 끝
-     8.58s  <ret> 발화 (turn3 첫 프레임)
-     9.12s  agent 발화 시작: <ret> I found two budget-friendly Italian restaurants in Seo
-     9.12s  user  발화 끝
-     9.64s  ⚡SPAN 주입 [d'=1.05s / d_lead=11.61s]: (tool result) {"restaurants": [{"name": "La Tavola", "address": "27, T
-    20.74s  user  발화 시작: Yeah, totally.
-    20.74s  agent 발화 끝
-    21.57s  user  발화 시작: La Tavola sounds good. Can you check…
-    21.57s  user  발화 끝
-    24.47s  user  발화 시작: …if they have any openings tomorrow evening around 7 PM?
-    24.47s  user  발화 끝
-    28.62s  agent 발화 시작: Exactly.
-    28.62s  user  발화 끝
-    29.02s  <ret> 발화 (turn8 첫 프레임)
-    29.03s  agent 발화 시작: <ret> Yes, I’ve confirmed a reservation for you at La Tavola
-    29.03s  agent 발화 끝
-    30.52s  ⚡SPAN 주입 [d'=1.50s / d_lead=11.20s]: (tool result) {"reservation id": "LT2026071119002", "status": "confirm
-    40.23s  user  발화 시작: That's great!
-    40.23s  agent 발화 끝
-    41.06s  agent 발화 시작: Wonderful! I'm glad I could help with that.
-    41.06s  user  발화 끝
-    44.37s  user  발화 시작: Actually, I was thinking.
-    44.37s  agent 발화 끝
-    46.03s  agent 발화 시작: I was going to suggest checking their menu online—
-    46.03s  user  발화 끝
-    49.77s  user  발화 시작: …do they have outdoor seating?
-    49.77s  agent 발화 끝
-    51.71s  <ret> 발화 (turn14 첫 프레임)
-    51.84s  agent 발화 시작: <ret> Yes, La Tavola does have a charming outdoor terrace, w
-    51.84s  user  발화 끝
-    52.19s  ⚡SPAN 주입 [d'=1.35s / d_lead=7.05s]: (tool result) La Tavola in Seoul features a charming outdoor terrace, 
-    58.89s  user  발화 시작: Yeah, yeah.
-    58.89s  agent 발화 끝
-    59.72s  user  발화 시작: Oh, that's lovely. I'm also trying to stick to a budget for 
-    59.72s  user  발화 끝
-    66.77s  agent 발화 시작: I understand completely. Budgeting is so important when trav
-    66.77s  user  발화 끝
-    70.50s  user  발화 시작: I'm hoping to keep my daily spending under 150,000 Korean Wo
-    70.50s  agent 발화 끝
-    77.14s  agent 발화 시작: Exactly.
-    77.14s  user  발화 끝
-    77.36s  <ret> 발화 (turn20 첫 프레임)
-    77.55s  agent 발화 시작: <ret> That depends on your spending habits, of course, but— 
-    77.55s  agent 발화 끝
-    77.90s  ⚡SPAN 주입 [d'=0.54s / d_lead=3.73s]: The average daily cost for a tourist in Seoul is around ₩120,000 to ₩2
-    92.90s  user  발화 시작: 80,000 Won sounds doable! Thanks, Dorana.
-    92.90s  agent 발화 끝
-    95.39s  agent 발화 시작: You're very welcome! I’m happy to assist with your financial
-    95.39s  user  발화 끝
-   101.19s  agent 발화 끝
+     0.00s  user  발화 시작: I’m thinking of going to Seoul next week. Can you crawl the 
+     8.86s  <ret> 발화 (turn1 첫 프레임)
+     9.07s  agent 발화 시작: <ret> ESPN.com currently contains twelve thousand, seven hun
+     9.07s  user  발화 끝
+     9.90s  ⚡SPAN 주입 [d'=1.03s / d_lead=7.10s]: (tool result) ESPN.com contains 12,783 links as of July 10, 2026, 2:38
+    16.17s  user  발화 시작: Mhm.
+    16.17s  agent 발화 끝
+    16.57s  user  발화 시작: Wow, that’s a lot. I’m trying to decide if I should go to N 
+    16.57s  user  발화 끝
+    24.06s  agent 발화 시작: That sounds lovely. N Seoul Tower is a popular destination, 
+    24.06s  user  발화 끝
+    30.37s  user  발화 시작: Yeah.
+    30.37s  agent 발화 끝
+    30.77s  user  발화 시작: What’s the weather forecast for Seoul next Tuesday?
+    30.77s  user  발화 끝
+    33.52s  <ret> 발화 (turn7 첫 프레임)
+    33.92s  agent 발화 시작: <ret> Next Tuesday in Seoul, the forecast is 25.5 degrees Ce
+    33.92s  user  발화 끝
+    34.15s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.68s]: (tool result) Seoul: July 14, 2026, 25.5°C, humidity 78%, wind 7.2 km/
+    42.60s  user  발화 시작: Wow.
+    42.60s  agent 발화 끝
+    42.99s  user  발화 시작: That sounds pretty nice. I wonder if there are any good Kore
+    42.99s  user  발화 끝
+    49.69s  <ret> 발화 (turn10 첫 프레임)
+    49.70s  agent 발화 시작: <ret> There are three Korean barbecue restaurants near N Seo
+    49.70s  user  발화 끝
+    50.40s  ⚡SPAN 주입 [d'=0.71s / d_lead=7.89s]: (tool result) 3 Korean BBQ restaurants near N Seoul Tower: Maple Tree 
+    57.59s  user  발화 시작: Maple Tree House sounds good. Can you reserve a table for tw
+    57.59s  agent 발화 끝
+    64.51s  <ret> 발화 (turn13 첫 프레임)
+    64.69s  agent 발화 시작: Yeah.
+    64.69s  user  발화 끝
+    65.08s  agent 발화 시작: <ret> Your reservation at Maple Tree House Namsan is confirm
+    65.08s  agent 발화 끝
+    65.42s  ⚡SPAN 주입 [d'=1.02s / d_lead=8.28s]: (tool result) Reservation confirmed at Maple Tree House Namsan for 2 p
+    73.37s  user  발화 시작: Perfect. —
+    73.37s  agent 발화 끝
+    74.15s  user  발화 시작: …Actually, what’s the best way to get there from the Myeongd
+    74.15s  user  발화 끝
+    78.89s  agent 발화 시작: Oh.
+    78.89s  user  발화 끝
+    79.28s  agent 발화 시작: From Myeongdong, you can take bus number 02 or 05 to Namsan 
+    79.28s  agent 발화 끝
+    90.72s  user  발화 시작: Yeah.
+    90.72s  agent 발화 끝
+    91.12s  agent 발화 시작: [happy] It’s a fairly easy journey, and many people enjoy th
+    91.12s  user  발화 끝
+    97.03s  user  발화 시작: Mm-hmm.
+    97.03s  agent 발화 끝
+    97.43s  user  발화 시작: Sounds good. I think I’ll also check out the Bukchon Hanok…
+    97.43s  user  발화 끝
+   101.76s  user  발화 시작: …Village. What’s a good time to visit to avoid the crowds?
+   101.76s  user  발화 끝
+   105.91s  <ret> 발화 (turn23 첫 프레임)
+   106.04s  ⚡SPAN 주입 [d'=1.00s / d_lead=10.26s]: (tool result) Bukchon Hanok Village is least crowded on weekdays befor
+   106.10s  agent 발화 시작: <ret> Bukchon Hanok Village is generally least crowded on we
+   106.10s  user  발화 끝
+   116.36s  user  발화 시작: That’s helpful. Thanks, Horax.
+   116.36s  agent 발화 끝
+   117.94s  agent 발화 시작: You’re very welcome. I'm glad I could assist you in planning
+   117.94s  user  발화 끝
+   128.59s  agent 발화 끝

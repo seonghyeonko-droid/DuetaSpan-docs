@@ -1,105 +1,120 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 친절하고 침착한 상담사, Thuia입니다. <system>
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 친절하고 꾸준한 웰니스 코치인 Drimi입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Manon",
+    "name": "Remy",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-11",
-      "category": "home",
-      "text": "User's home address is 893 Pine Court."
+      "date": "2026-05-27",
+      "category": "work",
+      "text": "User works as a chef."
     },
     {
-      "date": "2026-03-05",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-04-22",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-10-06",
+      "date": "2026-04-12",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-09-30",
+      "date": "2026-03-31",
       "category": "diet",
       "text": "User is vegetarian."
     },
     {
-      "date": "2025-09-22",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-03-27",
+      "category": "home",
+      "text": "User's home address is 183 Elm Street."
     },
     {
-      "date": "2025-08-09",
+      "date": "2026-02-11",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
+      "text": "User is planning a trip to Iceland in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-11",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-12",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2026-04-21",
+      "date": "2025-12-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이선희 님 연락처가 혹시 있으세요? ⟨ret@2.67s⟩
-[  2.77s][moshi] 죄송합니다, ⟦⚡SPAN@4.01s: (no information found)⟧ 이선희 님의 공개된 연락처는 찾을 수 없었습니다. 개인 정보로 되어 있는 것 같습니다.
-      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee contact information"}}
-[ 10.52s][user ] 아, 그렇군요. 그럼…
-[ 12.18s][user ] 최신 앨범 발매일은 어떠세요? ⟨ret@14.14s⟩
-[ 14.40s][moshi] ⟦⚡SPAN@14.74s: Lee Sun-hee released her fifteenth studio album, “Because You’re Here,” on May 26, 2023.⟧ 음, 그녀의 열다섯 번째 스튜디오 앨범, “Because You’re Here”는 이천이십삼 년 오월 이십육 일에 발매되었어요. 활동을 많이 하시네요.
-[ 24.37s][user ] «backchannel» 네.
-[ 24.92s][user ] 다음 달에 제주도 여행을 계획하고 있어요.
-[ 28.24s][moshi] 제주도는 정말 아름다운 곳이에요! 원하시면 제주도에 대한 정보를 찾아 드릴 수 있어요.
-[ 34.89s][user ] 네, 부탁드려요. 제주 시의 칠월 이십 일 날 날씨 예보는 어떻게 되나요?
-[ 41.54s][moshi] «backchannel» 네.
-[ 42.09s][moshi] ⟨ret@42.08s⟩ ⟦⚡SPAN@42.61s: (tool result) 26.3°C, humidity 78%, wind 7.2 km/h, mostly cloudy.⟧ 칠월 이십 일, 이천이십육 년 제주 시는 섭씨 이십육 점 삼 도, 습도는 칠십팔 퍼센트, 풍속은 시속 일 점 이 킬로미터—대체로 흐릴 것으로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Jeju City", "date": "2026-07-20"}}
-[ 55.38s][user ] 기분 좋게 들리네요. 거기 좋은 하이킹 코스가 있나요? ⟨ret@59.62s⟩
-[ 59.81s][moshi] ⟦⚡SPAN@60.04s: (tool result) Hallasan National Park offers several hiking trails, including Seongpanak Trail and Gwaneumsa Tr⟧ 음, 한라산 국립공원에는 성판악과 관음사 코스 같은 곳이 있는데, 길이가 팔 점 일 킬로미터에서 십팔 점 이 킬로미터 정도 됩니다—하이킹하기 좋은 곳이에요.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Jeju Island", "category": "hiking trails"}}
-[ 71.99s][user ] 성판악 코스가 흥미로워 보이네요.
-[ 74.21s][moshi] «interrupted» 인기가 많은 코스인데, 아름다운 경치와 다양한 생태계를 자랑합니다—
-[ 78.64s][user ] «interrupts_prev» 그 코스를 완주하는 데 보통 얼마나 걸리나요?
-[ 82.52s][moshi] 성판악 코스를 완주하는 데는 보통 일곱 시간에서 아홉 시간 정도 걸립니다. 속도에 따라 다르지만, 하루 종일 걸어야 해요.
-[ 92.49s][user ] 알겠습니다, 참고할게요. 한라산 국립공원 근처에 괜찮은 식당 좀 찾아 ⟨ret@97.64s⟩ 주시겠어요?
-[ 98.02s][moshi] ⟦⚡SPAN@98.40s: (tool result) Several restaurants are near Hallasan National Park, including Jeju Kim Manbok Restaurant and Bl⟧ 네, 한라산 국립공원 근처에는 제주 김만복 식당이나 흑돼지 거리가 있는데, 현지 음식을 맛볼 수 있습니다. 즐거운 여행 되시길 바랍니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Hallasan National Park", "cuisine": "any"}}
-[108.55s][user ] «backchannel» 네.
-[109.10s][user ] 정말 완벽하네요. 감사합니다, 투이아.
-[111.31s][moshi] 천만에요. 하이킹에 적절한 옷을 챙기시고, 수분 보충도 잊지 마세요! 준비를 철저히 하는 것이 중요합니다.
+[  0.00s][user ] 이선희 님 연락처가 혹시 있으세요? 전화번호가 필요해요. ⟨ret@3.43s⟩
+[  3.50s][moshi] «backchannel» 음.
+[  4.00s][moshi] ⟦⚡SPAN@3.89s: (no information found)⟧ 죄송하지만, 이선희 님의 공개된 전화번호를 찾을 수 없었습니다. 해당 정보는 이용 가능하지 않은 것 같습니다.
+      CALL: {"function": "search", "arguments": {"query": "Lee Sun-hee phone number"}}
+[ 11.51s][user ] «backchannel» 예.
+[ 12.01s][user ] 아, 아쉽네요.
+[ 13.01s][moshi] 그럴 때가 종종 있어요. 많은 분들이 개인 연락처를 비공개로 유지하시거든요.
+[ 18.01s][user ] 네, 맞아요. 지금 부산 날씨는 ⟨ret@20.42s⟩ 어떤가요?
+[ 21.02s][moshi] ⟦⚡SPAN@21.07s: (tool result) 26.3°C, humidity 68%, wind 3.2 km/h⟧ 현재 부산의 날씨는 섭씨 이십육 점 삼도이고, 습도는 육십팔 퍼센트, 풍속은 시속 삼 점 이 킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
+[ 29.02s][user ] «backchannel» 네.
+[ 29.52s][user ] 음, 좋네요.
+[ 30.52s][moshi] 부산은 정말 아름다운 도시예요!
+[ 32.53s][user ] «backchannel» 네.
+[ 33.03s][user ] 다음 주에 거기로 갈까 생각 중이에요. 맛집 좀 찾아 주실 수 ⟨ret@38.63s⟩ 있을까요?
+[ 39.03s][moshi] ⟦⚡SPAN@39.13s: (tool result) Busan is known for its fresh seafood and Dwaeji Gukbap (pork and rice soup); Jagalchi Market off⟧ 부산은 해산물과 돼지국밥으로 유명합니다. 자갈치 시장에 훌륭한 식당들이 많습니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
+[ 43.53s][user ] «backchannel» 음.
+[ 44.03s][moshi] 현지인과 관광객 모두에게 아주 인기 있는 곳이에요! 특정 식당을 찾아 드릴까요?
+[ 49.54s][user ] «backchannel» 네.
+[ 50.04s][user ] 해운대 해변 근처 식당을 찾아 ⟨ret@52.53s⟩ 주세요.
+[ 53.04s][moshi] ⟦⚡SPAN@53.27s: (tool result) Geoje Fish Center Haeundae serves fresh seafood; it has 4.2 stars from 850 reviews.⟧ 거제어촌식당 해운대는 신선한 해산물을 제공하며, 팔백오십 개의 리뷰에서 별점 사 점 이 점을 받았습니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Haeundae Beach, Busan"}}
+[ 60.05s][user ] 정말 좋네요. 다음 화요일 저녁 일곱시에 두 명 예약해 ⟨ret@64.67s⟩ 주시겠어요?
+[ 65.05s][moshi] ⟦⚡SPAN@65.42s: (tool result) Reservation confirmed for 2 people at Geoje Fish Center Haeundae on July 14, 2026 at 7:00 PM. Co⟧ 다음 화요일 저녁 일곱시에 거제어촌식당 해운대 두 명 예약이 확정되었습니다. 확인 코드는 지 에이치 칠 팔 구 이입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Geoje Fish Center Haeundae", "date": "2026-07-14", "time": "19:00", "party_size": 2}}
+[ 74.06s][user ] «backchannel» 네.
+[ 74.56s][user ] 정말 감사합니다!
+[ 75.56s][moshi] 천만에요!
+[ 76.06s][user ] 서울 호텔도 예약해야 해요. 저렴한 ⟨ret@78.50s⟩ 곳으로요.
+[ 79.06s][moshi] ⟦⚡SPAN@79.37s: (tool result) Hotel Skypark Central Myeongdong offers rooms from $65 per night; it has a 7.8 guest rating.⟧ 호텔 스카이파크 센트럴 명동은 일박에 육십오달러부터 시작하며, 게스트 평점은 칠 점 팔입니다.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "price_tier": "budget"}}
+[ 85.07s][user ] 좋네요. 사진 좀 보여 ⟨ret@87.04s⟩ 주시겠어요?
+[ 87.57s][moshi] ⟦⚡SPAN@87.45s: (tool result) Hotel Skypark Central Myeongdong offers modern rooms and is close to shopping areas; [source: bo⟧ 호텔 스카이파크 센트럴 명동은 현대적인 객실을 제공하며, 쇼핑 지역과 편리하게 연결되어 있습니다.
+      CALL: {"function": "web_search", "arguments": {"query": "Hotel Skypark Central Myeongdong images"}}
+[ 93.57s][user ] «backchannel» 그렇죠.
+[ 94.07s][user ] 괜찮아 보이네요.
+[ 95.08s][moshi] 편안하고 위치도 좋은 곳으로 보이네요! 예약하실 생각인가요?
+[ 98.58s][user ] 네, 다음 금요일부터 삼박 예약해 ⟨ret@101.29s⟩ 주세요.
+[101.58s][moshi] 다음 금요일부터 ⟦⚡SPAN@102.79s: (tool result) Booking confirmed at Hotel Skypark Central Myeongdong from July 17 to July 20, 2026. Confirmatio⟧ 호텔 스카이파크 센트럴 명동 삼박 예약이 확정되었습니다. 확인 코드는 에스 케이 피 이 공 이 육입니다.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel": "Hotel Skypark Central Myeongdong", "check_in": "2026-07-17", "nights": 3}}
+[110.59s][user ] «backchannel» 네.
+[111.09s][user ] 좋아요!
+[111.59s][moshi] 정말 잘 됐네요! 여행 준비가 순조롭게 진행되는 것 같아요.
+[116.09s][user ] 다음 토요일 아침 여섯시에 알람을 맞춰 ⟨ret@119.24s⟩ 주세요.
+[119.59s][moshi] ⟦⚡SPAN@119.65s: (tool result) Alarm set for 6:00 AM on Saturday, July 18, 2026.⟧ 다음 토요일, 칠월 십팔일 오전 여섯시에 알람이 설정되었습니다.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:00", "date": "2026-07-18"}}
+[123.60s][user ] 완벽해요. 이제 다 됐어요.
+[125.60s][moshi] 정말 잘 됐어요! 도와드릴 수 있어서 기쁩니다.

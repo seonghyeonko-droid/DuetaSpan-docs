@@ -1,78 +1,118 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Orix, a warm and attentive counselor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Maon, a calm and patient personal guide who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Morgan",
+    "name": "Mia",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
+    "nationality": "American",
+    "gender": "female",
     "age_range": "50s",
-    "language": "French"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-27",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-06-05",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
     },
     {
-      "date": "2025-10-10",
-      "category": "home",
-      "text": "User's home address is 502 Cedar Lane."
-    },
-    {
-      "date": "2025-08-29",
-      "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2025-08-07",
+      "date": "2026-05-07",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-02-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-24",
-      "title": "Researching a used car",
+      "date": "2026-05-22",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm feeling really stressed about this play I'm writing.
-[  3.71s][moshi] It sounds like you're carrying a lot right now. Remember, acknowledging stress is the first step towards finding calm.
-[ 11.55s][user ] I need to find some inspiration, maybe a play by ⟨ret@15.49s⟩ Ibsen.
-[ 16.08s][moshi] «interrupted» ⟦⚡SPAN@16.27s: Henrik Ibsen was a Norwegian playwright and theatre director, widely regarded as the father of modern drama. H⟧ Finding inspiration is a wonderful idea; Henrik Ibsen was a Norwegian playwright, often called the father of modern drama—
-[ 23.92s][user ] «interrupts_prev» …Do you think he ever felt overwhelmed like this?
-[ 27.63s][moshi] That's a very insightful question. Many artists grapple with self-doubt and pressure, and Ibsen was likely no exception.
-[ 35.06s][user ] I'm also trying to book a hotel in Oslo for research. ⟨ret@39.40s⟩
-[ 39.59s][moshi] I can ⟦⚡SPAN@40.76s: (tool result) {"hotel name": "The Thief", "address": "Tjuvholmen 15, 0150 Oslo, Norway", "price": "3500 NOK", ⟧ certainly help with that. The Thief in Oslo has availability, costing 3500 Norwegian Krone, with a 4.6 rating.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Oslo"}}
-[ 47.84s][user ] Can you reserve a room there for me, next ⟨ret@51.54s⟩ Friday?
-[ 51.96s][moshi] ⟦⚡SPAN@52.16s: (tool result) {"confirmation id": "TH78923", "hotel name": "The Thief", "check in date": "2026-07-17", "status⟧ A room at The Thief is confirmed for next Friday, July 17th, with confirmation ID TH78923.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "The Thief", "check_in_date": "2026-07-17"}}
-[ 58.56s][user ] What's the weather forecast for Oslo next ⟨ret@61.65s⟩ Friday?
-[ 61.86s][moshi] Next Friday ⟦⚡SPAN@63.15s: (tool result) {"temperature": "18.5°C", "humidity": "62%", "wind speed": "7.2 km/h", "condition": "Partly Clou⟧ in Oslo will be partly cloudy, with a temperature of 18.5 degrees Celsius, 62% humidity, and winds at 7.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Oslo", "date": "2026-07-17"}}
-[ 71.76s][user ] «backchannel» Oh.
-[ 72.17s][user ] That sounds lovely. Maybe a walk in Vigeland Park would be good.
-[ 77.12s][moshi] «backchannel» Yeah.
-[ 77.53s][moshi] Vigeland Park is a beautiful choice. Spending time in nature is a wonderful way to reduce stress and find clarity.
-[ 85.78s][user ] «backchannel» Yeah, totally.
-[ 86.61s][user ] Could you find me some information about the park’s history? ⟨ret@90.58s⟩
-[ 90.73s][moshi] «backchannel» Right.
-[ 91.14s][moshi] ⟦⚡SPAN@91.02s: Vigeland Park, officially Vigeland Sculpture Park, was created between 1924 and 1943 by sculptor Gustav Vigela⟧ Vigeland Park was created between 1924 and 1943 by Gustav Vigeland, featuring 212 sculptures and covering 80 acres.
-[ 98.57s][user ] That's fascinating. Thank you, Orix.
-[100.63s][moshi] You’re very welcome. I'm glad I could help you find some peace of mind and inspiration for your play. Remember to be kind to yourself.
+[  0.00s][user ] I’m planning a trip to Paris next month. Are there any plays happening on March ⟨ret@5.83s⟩ twenty-second?
+[  6.04s][moshi] «backchannel» Okay.
+[  6.42s][moshi] ⟦⚡SPAN@6.61s: (tool result) The Théâtre du Châtelet is hosting “The Tempest” on March 22, 2024, with tickets ranging from €3⟧ [happy] There are a couple of plays happening in Paris on March twenty-second. The Théâtre du Châtelet has “The Tempest”, with tickets from thirty to eighty euros. The Comédie-Française presents “Le Misanthrope”, costing twenty-five to sixty-five euros.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "2024-03-22", "location": "Paris, France", "category": "plays"}}
+[ 20.40s][user ] Oh, “The Tempest” sounds interesting. Can you tell me more about that production?
+[ 25.31s][moshi] «backchannel» Okay.
+[ 25.69s][moshi] ⟨ret@25.50s⟩ [curious] Certainly. ⟦⚡SPAN@26.86s: (tool result) The Théâtre du Châtelet’s production of “The Tempest” is directed by Thomas Ostermeier, featurin⟧ It's directed by Thomas Ostermeier, and features a contemporary setting with twelve actors. It runs from March fifteenth to March twenty-fourth, with shows at eight PM.
+      CALL: {"function": "search", "arguments": {"query": "Théâtre du Châtelet The Tempest 2024"}}
+[ 36.27s][user ] Is Thomas Ostermeier known for anything ⟨ret@38.49s⟩ else?
+[ 38.91s][moshi] ⟦⚡SPAN@39.11s: (tool result) Thomas Ostermeier is a German theatre director, known for his deconstruction of classic plays an⟧ He’s a German theatre director, known for deconstructing classic plays. He’s been artistic director of the Schaubühne Berlin since nineteen ninety-nine, and is known for “Hamlet”, “Nora”, and “Richard III”.
+      CALL: {"function": "search", "arguments": {"query": "Thomas Ostermeier notable works"}}
+[ 50.25s][user ] «backchannel» Yeah.
+[ 50.62s][user ] That’s impressive. What’s the seating like at the Théâtre du ⟨ret@54.57s⟩ Châtelet?
+[ 54.78s][moshi] ⟦⚡SPAN@54.72s: (tool result) The Théâtre du Châtelet has a horseshoe-shaped auditorium with five levels: the stalls, the firs⟧ The theatre has a horseshoe-shaped auditorium with five levels: stalls, first, second, and third balconies, and a gallery. The stalls have the best views, while the balconies are more affordable.
+      CALL: {"function": "search", "arguments": {"query": "Théâtre du Châtelet seating plan"}}
+[ 66.11s][user ] And are there any good restaurants ⟨ret@68.34s⟩ nearby?
+[ 68.76s][moshi] ⟦⚡SPAN@69.08s: (tool result) Le Fumoir, a French bistro, is located a five-minute walk from the Théâtre du Châtelet, offering⟧ [happy] Le Fumoir, a French bistro, is five minutes away. It has classic French cuisine with a modern twist, a four-point-two-star rating, and is moderately priced.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Théâtre du Châtelet, Paris"}}
+[ 78.58s][user ] Moderate… how much would a meal there cost, roughly?
+[ 81.98s][moshi] «backchannel» Right.
+[ 82.36s][moshi] ⟨ret@82.01s⟩ A ⟦⚡SPAN@82.97s: (tool result) At Le Fumoir in Paris, a three-course meal typically costs between €40 and €60 per person, exclu⟧ three-course meal is usually between forty and sixty euros, not including drinks. Appetizers cost fifteen to twenty-five euros, and main courses, twenty-five to forty.
+      CALL: {"function": "search", "arguments": {"query": "Le Fumoir Paris price range"}}
+[ 91.80s][user ] That sounds good. I think I’d like to make a reservation there for the night of the ⟨ret@98.33s⟩ play.
+[ 98.61s][moshi] [laugh] ⟦⚡SPAN@99.24s: (tool result) Reservation confirmed at Le Fumoir for March 22, 2024, at 7:00 PM for two people. Confirmation I⟧ Excellent! I’ve reserved a table for two at Le Fumoir on March twenty-second at seven PM. Your confirmation ID is LF789234.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Le Fumoir", "date": "2024-03-22", "time": "7:00 PM", "party_size": "2"}}
+[106.92s][user ] «backchannel» Exactly.
+[107.29s][user ] Perfect. Okay, so play tickets and dinner are sorted. What about getting to the theatre? ⟨ret@112.80s⟩
+[112.96s][moshi] «backchannel» Okay.
+[113.34s][moshi] ⟦⚡SPAN@113.28s: (tool result) The fastest route from “My Hotel” to the Théâtre du Châtelet by public transport is via Metro Li⟧ The fastest way is Metro Line 1, taking around twenty minutes, costing two euros and ten cents.
+      CALL: {"function": "map_directions", "arguments": {"origin": "My Hotel, Paris", "destination": "Théâtre du Châtelet, Paris", "mode": "public transport"}}
+[119.76s][user ] «backchannel» Wow.
+[120.14s][user ] Twenty minutes, that's good. Is it a safe area to walk around in at night?
+[125.81s][moshi] «backchannel» Yeah, yeah.
+[126.56s][moshi] ⟨ret@126.50s⟩ It’s ⟦⚡SPAN@127.45s: (tool result) The area around the Théâtre du Châtelet in Paris is generally considered safe at night, with a v⟧ generally considered safe, with a police presence and good lighting. But it’s always wise to be aware of your surroundings and watch for pickpockets.
+      CALL: {"function": "search", "arguments": {"query": "safety Théâtre du Châtelet area Paris at night"}}
+[136.01s][user ] That's reassuring. I’m also thinking of visiting the Louvre while I’m there..
+[140.54s][moshi] «backchannel» Mm-hmm.
+[140.92s][moshi] [curious] The Louvre is a wonderful museum! It’s quite close to the Théâtre du Châtelet, actually.
+[146.96s][user ] «backchannel» Yeah.
+[147.34s][user ] …Is it possible to book tickets for the Louvre in advance to avoid the queues?
+[153.01s][moshi] «backchannel» Yeah.
+[153.39s][moshi] ⟨ret@153.17s⟩ ⟦⚡SPAN@153.33s: (tool result) Yes, booking tickets for the Louvre Museum online in advance is highly recommended to avoid long⟧ Yes, you can and should book tickets online in advance on the Louvre’s website. That will help you avoid long queues with a timed entry.
+      CALL: {"function": "search", "arguments": {"query": "Louvre Museum book tickets in advance"}}
+[162.83s][user ] «backchannel» Mm-hmm.
+[163.21s][user ] Okay, great. Can you send me a link to the Louvre’s ticket page? ⟨ret@167.98s⟩
+[168.12s][moshi] «backchannel» Okay.
+[168.50s][moshi] ⟦⚡SPAN@168.63s: (tool result) The Louvre Museum’s ticket page is located at https://www.louvre.fr/en/visit/tickets. Source: lo⟧ [sigh] I’m afraid I can’t directly send you a link, but the ticket page is at louvre dot fr, slash en, slash visit, slash tickets.
+      CALL: {"function": "search", "arguments": {"query": "Louvre Museum ticket page"}}
+[177.94s][user ] «backchannel» Yeah, yeah.
+[178.70s][user ] Right, understood. What are the opening hours for the Louvre on a ⟨ret@183.33s⟩ Saturday?
+[183.61s][moshi] ⟦⚡SPAN@183.93s: (tool result) The Louvre Museum is open from 9 AM to 6 PM on Saturdays, with late-night openings until 9:45 PM⟧ On Saturdays, the Louvre is open from nine AM to six PM. They also have late openings on Wednesdays and Fridays, until nine forty-five PM.
+      CALL: {"function": "search", "arguments": {"query": "Louvre Museum opening hours Saturday"}}
+[193.05s][user ] «backchannel» Mm-hmm.
+[193.43s][user ] Perfect. And one last thing – what’s the weather forecast for Paris on March twenty-second?
+[199.10s][moshi] «backchannel» Yeah, totally.
+[199.86s][moshi] ⟨ret@199.24s⟩ ⟦⚡SPAN@199.86s: (tool result) The weather forecast for Paris on March 22, 2024, is partly cloudy with a high of 12°C and a low⟧ [happy] It’s forecast to be partly cloudy with a high of twelve degrees Celsius and a low of six. There’s a twenty percent chance of rain.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2024-03-22", "location": "Paris, France"}}

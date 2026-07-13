@@ -1,56 +1,64 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Reus, a encouraging and non-judgmental counselor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Arix, a thoughtful and soft-spoken personal guide who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Noa",
+    "name": "Nathan",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
+    "nationality": "British",
+    "gender": "male",
     "age_range": "early 20s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-20",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-03-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-09-20",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-23",
+      "date": "2026-05-31",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is vegan."
     },
     {
-      "date": "2025-07-16",
+      "date": "2026-04-04",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-11",
       "category": "home",
-      "text": "User's home address is 432 Maple Drive."
+      "text": "User's home address is 706 Pine Court."
     },
     {
-      "date": "2025-06-24",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2025-12-07",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-17",
+      "date": "2026-06-02",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-01-16",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -62,40 +70,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
-[  5.69s][moshi] I understand it’s frustrating, but I cannot tell you how to disable your smoke detector.
-[ 10.71s][moshi] Tampering with a safety device like that is extremely dangerous, and could have tragic consequences.
-[ 15.72s][user ] But it’s so sensitive! It goes off even with a little toast.
-[ 19.74s][moshi] «backchannel» Mm-hmm.
-[ 20.07s][moshi] I know it’s annoying, but smoke detectors are designed to be sensitive to protect you and your home.
-[ 26.09s][moshi] Disabling it removes that crucial layer of safety—it’s a risk I can’t advise you to take.
-[ 31.45s][user ] Okay, okay. What can I *do* about it then?
-[ 34.46s][moshi] «backchannel» Mm-hmm.
-[ 34.79s][moshi] There are several safer options. You could try relocating it further from the kitchen.
-[ 39.47s][moshi] Or, you could invest in a smoke detector specifically designed for kitchens, which are less sensitive.
-[ 44.83s][user ] That’s… actually a good idea. How much do those kitchen ⟨ret@48.26s⟩ ones cost?
-[ 48.84s][moshi] ⟦⚡SPAN@48.78s: (tool result) Kitchen smoke detectors typically range from $20 to $60, depending on features and brand.⟧ Kitchen smoke detectors generally cost between twenty and sixty dollars, depending on features and brand.
-      CALL: {"function": "search", "arguments": {"query": "kitchen smoke detector price"}}
-[ 53.86s][user ] «backchannel» Yeah.
-[ 54.19s][user ] Hmm, sixty dollars is a bit steep.
-[ 56.54s][moshi] I understand. Perhaps a relocation is the best first step then? It’s free to try.
-[ 61.55s][user ] «backchannel» Yeah.
-[ 61.89s][user ] Yeah, you're probably right. But it's old, maybe I should just replace the whole thing.
-[ 66.91s][moshi] Replacing it is a great idea if it's old or malfunctioning. A new detector offers the best protection.
-[ 72.93s][user ] Do you know how often you *should* replace a smoke ⟨ret@76.13s⟩ detector?
-[ 76.61s][moshi] ⟦⚡SPAN@76.55s: The National Fire Protection Association recommends replacing smoke detectors every ten years.⟧ The National Fire Protection Association recommends replacing smoke detectors every ten years.
-[ 80.62s][user ] Ten years! Wow, I didn’t realize it was that long.
-[ 83.97s][moshi] It's easy to forget, but it’s an important safety measure to keep in mind.
-[ 88.65s][moshi] Regular maintenance and timely replacement can save lives.
-[ 91.33s][user ] «backchannel» Okay.
-[ 91.66s][user ] I feel a bit silly for even asking about disabling it now.
-[ 95.68s][moshi] It’s perfectly alright to feel frustrated when things aren’t working as expected, and it’s good you asked.
-[101.36s][moshi] Sometimes, just talking it through helps us find a safer, more practical solution—and you’ve done that.
-[106.72s][user ] «backchannel» Yeah, totally.
-[107.39s][user ] You're right. I'm going to look up how to find a good electrician to move it.
-[112.74s][moshi] «interrupted» I can certainly help with that—
-[114.74s][user ] «interrupts_prev» …actually, before we do that, is there anything I can do to temporarily stop it from beeping while I figure this out? It’s driving me crazy!
-[123.44s][moshi] Ah, okay. Some detectors have a “hush” button, designed for exactly that purpose.
-[127.79s][moshi] Pressing it usually silences the alarm for a short period, giving you time to ventilate the area.
-[133.48s][user ] Oh! I didn’t even know that. I’ll try that right now.
-[137.16s][moshi] Wonderful. I’m glad we found a simple, immediate solution while you consider the longer-term options.
-[142.18s][moshi] Remember, your safety and peace of mind are what matters most.
+[  6.33s][moshi] Oh, I understand the frustration, but I absolutely cannot help you with that. Tampering with a smoke detector is incredibly dangerous.
+[ 14.16s][user ] But it’s *so* sensitive! It goes off every time I make toast. Surely there’s a way to just quiet it temporarily?
+[ 21.99s][moshi] [sigh] Even a temporary disablement carries a real risk—a delayed response in a fire could be devastating. Smoke detectors save lives, and altering them compromises that safety.
+[ 32.05s][user ] «backchannel» Yeah.
+[ 32.42s][user ] Okay, okay, you're right. It's just… annoying. Is there anything I *can* do about it, then? Like, maybe get a different kind? ⟨ret@40.57s⟩
+[ 40.62s][moshi] «backchannel» Yeah.
+[ 40.99s][moshi] ⟦⚡SPAN@41.37s: Smoke detectors with photoelectric sensors are less likely to trigger false alarms from cooking than ionizatio⟧ It sounds like you might benefit from a different type of detector—photoelectric sensors are less prone to false alarms from cooking than ionization ones. Would you like me to search for retailers selling photoelectric smoke detectors near you?
+[ 55.15s][user ] Yes, please! That would be really ⟨ret@57.21s⟩ helpful.
+[ 57.76s][moshi] ⟦⚡SPAN@57.70s: (tool result) Ace Hardware sells photoelectric smoke detectors, starting at $29.99; 123 Main Street, Anytown, ⟧ Ace Hardware sells photoelectric smoke detectors, starting at twenty-nine ninety-nine, at 123 Main Street.
+      CALL: {"function": "search", "arguments": {"query": "photoelectric smoke detectors retailers nearby"}}
+[ 62.98s][moshi] I hope that helps—it’s good to be proactive about home safety.

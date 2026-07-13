@@ -1,80 +1,62 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 당신은 펠라르이며, 인생의 중요한 변화를 겪는 사람들을 돕는 실용적이고 안심시키는 상담가입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 친절하고 침착한 웰니스 코치 아라미입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "하율",
+    "name": "지호",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-14",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2026-01-07",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
-    },
-    {
-      "date": "2025-11-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-10-15",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-09-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-08-05",
+      "date": "2026-04-06",
       "category": "allergy",
       "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-03-11",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-01-26",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2026-01-05",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-01",
+      "date": "2026-05-30",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 있잖아, 워싱턴에서 대마초 합법화된 거 언제야? ⟨ret@3.16s⟩
-[  3.41s][moshi] ⟦⚡SPAN@3.46s: Recreational marijuana use became legal in Washington State on December 6, 2012, after the passage of Initiati⟧ 워싱턴 주에서 기호용 대마초는 이천십이년 십이월 육일에 합법화되었어요. 이니셔티브 오백이가 통과되면서 그렇게 되었죠.
-[ 10.80s][user ] 잠깐만, 그게 언제라고? 다시 한번 말해줄래?
-[ 14.22s][moshi] 이천십이년 십이월 육일입니다.
-[ 15.92s][user ] 음, 그건 좀 오래됐네. 지금 시애틀 날씨는 어때? ⟨ret@20.41s⟩
-[ 20.47s][moshi] ⟦⚡SPAN@20.71s: (tool result) Seattle, WA: 23.9°C, humidity 68%, wind 7.2 km/h, condition: partly cloudy.⟧ 시애틀은 현재 이십삼 점 구도이고, 습도는 육십팔퍼센트, 바람은 시속 칠 점 이킬로미터, 구름이 조금 낀 상태입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
-[ 29.57s][user ] «backchannel» 어.
-[ 30.14s][user ] 꽤 덥네. 여행 계획 세워야겠다.
+[  0.00s][user ] 아라미 씨, 안녕하세요. 서울에 새로 이사 왔는데, 혹시 이 근처에 괜찮은 헬스장 아세요?
+[  6.44s][moshi] 안녕하세요! 서울에 오신 걸 환영해요. 어떤 스타일의 헬스장을 찾으세요?
+[ 10.90s][user ] 음… 너무 비싸지 않고, 시설이 깨끗한 곳이요. 사람들 많이 다니는 곳이면 더 ⟨ret@16.95s⟩ 좋고요.
+[ 17.34s][moshi] 강남구 ⟦⚡SPAN@18.21s: The gym, Fitness First, is located at 123 Gangnam-daero, Seocho-gu, Seoul, and offers a wide range of fitness ⟧ 강남대로 백이십삼에 있는 피트니스 퍼스트는 다양한 피트니스 수업과 현대적인 장비를 갖춘 곳이에요. 월 회원비는 팔만 원입니다.

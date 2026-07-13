@@ -1,77 +1,91 @@
 v3_mcp_04_ko src=mcp style=v2
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 도라입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 지오이며, 현실적이고 공감 능력이 뛰어난 라이프 코치로서 사람들의 학업 및 동기 부여에 도움을 줍니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "윤린",
+    "name": "소율",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-06-05",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2025-09-15",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-09-01",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
-    },
-    {
-      "date": "2025-05-30",
+      "date": "2026-03-23",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-01-28",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-22",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-14",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-09-07",
+      "date": "2026-02-08",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-24",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 에러 메시지 화면을 캡처해서 비 에이 에스 이 육 사 인코딩된 이미지 파일로 만들어 ⟨ret@5.69s⟩ 줘.
-[  6.02s][moshi] 화면 ⟦⚡SPAN@6.77s: (tool result) {"base64 image": "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w+n0AAgQG9gQ/o⟧ 캡처를 비 에이 에스 이 육 사 인코딩된 이미지 파일로 만들었어요. 파일은 다음과 같습니다. 아이 브이 비 오 알 더블유 공 케이 지 지 오 에이 에이 에이 에이 엔 에스 유 에이치 이 유 지 에이 에이 에이 에이 유 에이 에이 에이 에이 에프 씨 에이 와이 에이 에이 에이 씨 엔 비 와이 비 엘 에이 에이 에이 에이 에이치 이 엘 이 큐 브이 큐 아이 일 이 피 사//8/w+n0AAgQG9gQ/oP2z+gAAAAASUVORK5CYII=
-      CALL: {"function": "puppeteer_screenshot", "arguments": {}}
-[ 36.14s][user ] 음, 그건 너무 작네. 좀 더 넓게 캡처해 줄 수 있어?
-[ 40.55s][moshi] 좀 더 넓은 범위로 캡처해 드릴게요. 어떤 부분을 더 포함하고 싶으세요?
-[ 44.97s][user ] 에러 메시지랑, 그 아래에 있는 로그도 같이 보이게 ⟨ret@47.99s⟩ 해줘.
-[ 48.58s][moshi] 에러 ⟦⚡SPAN@49.21s: (tool result) {"base64 image": "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w+n0AAgQG9gQ/o⟧ 메시지와 로그를 포함해서 좀 더 넓게 캡처했어요. 파일은 다음과 같습니다.
-      CALL: {"function": "puppeteer_screenshot", "arguments": {}}
+[  0.00s][user ] 음… 혹시 내 문서 폴더 안에 뭐가 있는지 알려줄 수 있어?
+[  4.74s][moshi] «backchannel» 음.
+[  5.17s][moshi] ⟨ret@5.07s⟩ ⟦⚡SPAN@5.49s: /home/user/Documents is a directory. It contains: report.pdf, presentation.pptx, notes.txt, image.jpg.⟧ 네, 문서 폴더 안에 보고서, 프레젠테이션, 메모장 파일, 이미지 파일이 있어요.
+[  9.91s][user ] 아, 보고서 파일 크기가 얼마나 ⟨ret@11.90s⟩ 돼?
+[ 12.49s][moshi] ⟦⚡SPAN@12.98s: report.pdf is 2.3 megabytes in size.⟧ 보고서 파일 크기는 이 점 삼메가바이트예요.
+[ 15.08s][user ] «backchannel» 오.
+[ 15.51s][moshi] 혹시 다른 파일 크기도 궁금하신가요?
+[ 17.66s][user ] 아니, 그건 됐어. 그럼 이번 주 토요일에 서울에서 날씨가 ⟨ret@21.50s⟩ 어때?
+[ 21.97s][moshi] 이번 ⟦⚡SPAN@22.99s: (tool result) {"city": "Seoul", "date": "2026-07-11", "temperature": "28.5°C", "humidity": "65%", "wind speed"⟧ 주 토요일 서울 날씨는 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 칠 점 이킬로미터, 부분적으로 흐릴 것으로 예상돼요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul", "date": "2026-07-11"}}
+[ 30.16s][user ] «backchannel» 응.
+[ 30.59s][user ] 이십팔 점 오도면 좀 더운 편이겠다…
+[ 33.17s][moshi] 네, 조금 더울 수 있겠네요. 시원한 옷차림을 준비하시는 게 좋겠어요.
+[ 37.48s][user ] «backchannel» 응응.
+[ 37.91s][user ] 그럼, 혹시 토요일에 영화 볼 만한 거 ⟨ret@40.87s⟩ 있어?
+[ 41.36s][moshi] 토요일 ⟦⚡SPAN@42.02s: (tool result) {"movies": Inside Out 2, Bad Boys: Ride or Die, The Garfield Movie, "theaters": CGV Gangnam, Lot⟧ 서울에서 상영하는 영화로는 '인사이드 아웃 이', '배드 보이즈: 라이드 오어 다이', '가필드 무비'가 있어요. 씨 지 브이 강남, 롯데시네마 월드타워, 메가박스 코엑스에서 볼 수 있습니다.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-07-11", "city": "Seoul"}}
+[ 52.56s][user ] '인사이드 아웃 이'… 그 영화 예매해 줘. 씨 지 브이 강남으로.
+[ 57.30s][moshi] '인사이드 아웃 이'를 씨 지 브이 강남에서 예매해 드릴게요. 몇 시로 예매하시겠어요?
+[ 62.47s][user ] «backchannel» 응.
+[ 62.90s][user ] 음… 저녁 일곱시로 해 줘. ⟨ret@65.04s⟩
+[ 65.05s][moshi] ⟦⚡SPAN@65.56s: (tool result) {"confirmation id": "AX7294", "movie": "Inside Out 2", "theater": "CGV Gangnam", "time": "19:00"⟧ 네, '인사이드 아웃 이' 씨 지 브이 강남 저녁 일곱시, 에이 십이, 에이 십삼 좌석으로 예매 완료되었습니다. 확인 번호는 에이 엑스 칠 이 구 사이고, 총 금액은 삼만 원입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Inside Out 2", "theater": "CGV Gangnam", "time": "19:00", "date": "2026-07-11"}}
+[ 77.54s][user ] 고마워, 지오.
+[ 78.41s][moshi] 천만에요.

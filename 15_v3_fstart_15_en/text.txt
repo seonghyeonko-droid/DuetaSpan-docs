@@ -1,70 +1,88 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Ziana, a thoughtful and soft-spoken life coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Gelil, a grounded and empathetic life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "David",
+    "name": "Olivia",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "British",
+    "gender": "female",
     "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-09",
+      "date": "2026-06-15",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-12-07",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-27",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2025-11-20",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-24",
+      "date": "2026-03-14",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-06-01",
+      "date": "2026-01-19",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "text": "User is planning a trip to Iceland in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-12",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need a route from my home to Central High School… uh, actually, never mind the school.
-[  5.67s][moshi] What can I help you with instead?
-[  8.00s][user ] «backchannel» Yeah.
-[  8.33s][user ] Show me the fastest route to the nearest coffee ⟨ret@11.44s⟩ shop.
-[ 11.67s][moshi] «backchannel» Yeah.
-[ 12.00s][moshi] ⟦⚡SPAN@11.94s: (tool result) {"distance": 1.2, "duration": 4, "route": "Head north on Elm Street toward Oak Avenue. Turn righ⟧ The fastest route is about one point two miles, taking around four minutes; head north on Elm Street, then right on Oak, and left on Maple.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "home", "destination": "coffee shop"}}
-[ 20.67s][user ] Hmm, is there a Starbucks nearby? ⟨ret@22.62s⟩
-[ 22.67s][moshi] There's ⟦⚡SPAN@23.28s: (tool result) {"name": "Starbucks", "address": "123 Main Street", "distance": 0.8, "rating": 4.2}⟧ a Starbucks at one two three Main Street, point eight miles from your home, with a four point two-star rating.
-      CALL: {"function": "maps_search_places", "arguments": {"query": "Starbucks", "location": "home"}}
-[ 29.67s][user ] «backchannel» Mm-hmm.
-[ 30.00s][moshi] Wonderful. I’m glad I could help you find a convenient coffee spot. Perhaps a bit of caffeine will help with your day?
+[  0.00s][user ] I need to request three hundred dollars from David ⟨ret@3.49s⟩ Lee.
+[  3.90s][moshi] I’ve requested ⟦⚡SPAN@4.99s: (tool result) Payment request to David Lee for $300.00 initiated. Transaction ID: 87294561.⟧ three hundred dollars from David Lee for you; the transaction ID is 87294561.
+      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "300", "recipient": "David Lee"}}
+[  9.74s][user ] «backchannel» Yeah.
+[ 10.13s][user ] That's great, thank you. Can you find me a good Italian restaurant nearby?
+[ 15.20s][moshi] [happy] Of course. I can help with that. Do you have a particular price range in mind?
+[ 21.82s][user ] Something moderate, not too ⟨ret@23.19s⟩ expensive.
+[ 23.77s][moshi] ⟦⚡SPAN@23.71s: There are several moderate-priced Italian restaurants nearby. Bella Notte offers classic Italian dishes with a⟧ There are a few moderate options nearby—Bella Notte offers classic Italian dishes with an average entree cost of twenty-two dollars. It has a 4.2-star rating with over five hundred reviews.
+[ 35.46s][user ] Sounds good. What’s the weather like there right now? ⟨ret@38.93s⟩
+[ 38.97s][moshi] ⟦⚡SPAN@39.03s: (tool result) The current weather at Bella Notte is 25.5°C, humidity 68%, with a gentle breeze from the southw⟧ The weather at Bella Notte is currently 25.5 degrees Celsius, with 68 percent humidity and a light breeze.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Bella Notte"}}
+[ 45.99s][user ] That's nice. Can you tell me about family time activities?
+[ 49.88s][moshi] «interrupted» Family time is so important for building strong bonds. It’s about creating shared experiences—
+[ 55.34s][user ] «interrupts_prev» …do they have outdoor seating at Bella Notte?
+[ 58.46s][moshi] «backchannel» Yeah.
+[ 58.85s][moshi] [curious] Yes, Bella Notte does have outdoor seating. They have a lovely patio area.
+[ 64.30s][user ] «backchannel» Yeah.
+[ 64.69s][user ] Perfect. What other activities could we do with the kids this weekend?
+[ 69.37s][moshi] «backchannel» Yeah.
+[ 69.76s][moshi] ⟨ret@69.75s⟩ ⟦⚡SPAN@69.85s: This weekend, July 11-12, 2026, the City Park is hosting a free family festival with face painting, games, and⟧ This weekend, the City Park is hosting a free family festival with face painting and games, running from ten AM to six PM.
+[ 78.72s][user ] «backchannel» Uh-huh.
+[ 79.11s][moshi] It does sound lovely! It's a wonderful way to make lasting memories.
+[ 83.79s][user ] Can you find me movie times for tomorrow at the Grand ⟨ret@87.92s⟩ Cinema?
+[ 88.47s][moshi] ⟦⚡SPAN@88.48s: (tool result) At the Grand Cinema tomorrow, July 11th, 2026, "Adventureland" is showing at 2:00 PM, 5:15 PM, a⟧ Tomorrow at the Grand Cinema, "Adventureland" is showing at 2:00 PM, 5:15 PM, and 8:30 PM.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Grand Cinema", "date": "July 11, 2026"}}
+[ 94.70s][user ] What about “Mystery Mansion”?
+[ 96.26s][moshi] "Mystery Mansion" is playing at 3:30 PM and 7:00 PM at the Grand Cinema tomorrow.
+[102.11s][user ] «backchannel» Yeah.
+[102.50s][moshi] [sigh] Sometimes, just knowing your options can make things easier, doesn't it?
+[107.17s][user ] «backchannel» Yeah.
+[107.56s][user ] I think so. Can you add an alarm for 7:30 ⟨ret@111.63s⟩ AM tomorrow?
+[112.24s][moshi] ⟦⚡SPAN@111.95s: (tool result) Alarm set for 7:30 AM tomorrow, July 11, 2026.⟧ I’ve set an alarm for 7:30 AM tomorrow.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:30 AM", "date": "July 11, 2026"}}
+[115.36s][user ] Great. Thank you, Gelil.
+[116.92s][moshi] [happy] You're very welcome. Remember, a little planning can go a long way toward a peaceful family weekend.

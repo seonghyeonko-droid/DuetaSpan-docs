@@ -4,131 +4,167 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Manon",
+#     "name": "Remy",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-11",
-#       "category": "home",
-#       "text": "User's home address is 893 Pine Court."
+#       "date": "2026-05-27",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-04-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-10-06",
+#       "date": "2026-04-12",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-09-30",
+#       "date": "2026-03-31",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-09-22",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-03-27",
+#       "category": "home",
+#       "text": "User's home address is 183 Elm Street."
 #     },
 #     {
-#       "date": "2025-08-09",
+#       "date": "2026-02-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-12",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-21",
+#       "date": "2025-12-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-05",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 That’s good to know. I’m planning  | S3 That sounds pleasant. Are there an | S4 Okay, good to know. Can you find m
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 I’m thinking about going there nex | S3 I also need to book a hotel in Seo | S4 Great!
 
-     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee?
-     2.61s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.42s]: (no information found)
-     3.21s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any publicly available cont
-     3.21s  user  발화 끝
-     9.63s  user  발화 시작: Oh, okay. Well, what…
-     9.63s  agent 발화 끝
-    11.06s  user  발화 시작: …about her latest album release date?
-    11.06s  user  발화 끝
-    12.88s  <ret> 발화 (turn4 첫 프레임)
-    13.20s  agent 발화 시작: <ret> Her fifteenth studio album, “Because You’re Here,” cam
+     0.00s  user  발화 시작: Do you have the contact information for Lee Sun-hee? I need 
+     5.28s  agent 발화 시작: Mm-hmm.
+     5.28s  user  발화 끝
+     5.32s  <ret> 발화 (turn2 첫 프레임)
+     5.66s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
+     5.66s  agent 발화 끝
+     6.65s  ⚡SPAN 주입 [d'=1.33s / d_lead=7.17s]: (no information found)
+    12.82s  user  발화 시작: Right.
+    12.82s  agent 발화 끝
+    13.20s  user  발화 시작: Oh, okay. That's too bad.
     13.20s  user  발화 끝
-    13.42s  ⚡SPAN 주입 [d'=0.54s / d_lead=6.78s]: Lee Sun-hee released her fifteenth studio album, “Because You’re Here,
-    19.98s  user  발화 시작: Uh-huh.
-    19.98s  agent 발화 끝
-    20.34s  user  발화 시작: That’s good to know. I’m planning a trip to Jeju Island next
-    20.34s  user  발화 끝
-    24.98s  agent 발화 시작: Jeju Island is beautiful! I can help you find information ab
-    24.98s  user  발화 끝
-    30.33s  user  발화 시작: Yes, please. What’s the weather forecast for Jeju City on Ju
-    30.33s  agent 발화 끝
-    34.61s  agent 발화 시작: Mm-hmm.
-    34.61s  user  발화 끝
-    34.72s  <ret> 발화 (turn10 첫 프레임)
-    34.97s  agent 발화 시작: <ret> On July twentieth, two thousand twenty-six, Jeju City 
-    34.97s  agent 발화 끝
-    35.77s  ⚡SPAN 주입 [d'=1.05s / d_lead=10.35s]: (tool result) 26.3°C, humidity 78%, wind 7.2 km/h, mostly cloudy.
-    45.32s  user  발화 시작: That sounds pleasant. Are there any good hiking trails there
-    45.32s  agent 발화 끝
-    48.34s  <ret> 발화 (turn12 첫 프레임)
-    48.83s  ⚡SPAN 주입 [d'=0.49s / d_lead=8.21s]: (tool result) Hallasan National Park offers several hiking trails, inc
-    48.89s  agent 발화 시작: <ret> Hallasan National Park has trails like Seongpanak and 
-    48.89s  user  발화 끝
-    57.09s  user  발화 시작: The Seongpanak Trail sounds interesting.
-    57.09s  agent 발화 끝
-    58.88s  agent 발화 시작: It’s a popular choice, known for its beautiful views and div
-    58.88s  user  발화 끝
-    63.16s  user  발화 시작: …how long does it usually take to complete?
-    63.16s  agent 발화 끝
-    66.01s  agent 발화 시작: It generally takes about seven to nine hours to complete the
-    66.01s  user  발화 끝
-    73.51s  user  발화 시작: Okay, good to know. Can you find me some restaurants near Ha
-    73.51s  agent 발화 끝
-    78.37s  <ret> 발화 (turn18 첫 프레임)
-    78.50s  agent 발화 시작: <ret> Near Hallasan National Park, you’ll find places like J
-    78.50s  user  발화 끝
-    78.80s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.92s]: (tool result) Several restaurants are near Hallasan National Park, inc
-    87.42s  user  발화 시작: Right.
-    87.42s  agent 발화 끝
-    87.78s  user  발화 시작: That sounds perfect. Thank you, Thuia.
-    87.78s  user  발화 끝
-    89.92s  agent 발화 시작: You’re very welcome. Remember to pack appropriately for the 
-    89.92s  user  발화 끝
-    96.34s  agent 발화 끝
+    15.09s  agent 발화 시작: It happens sometimes; many people keep their contact details
+    15.09s  user  발화 끝
+    18.86s  user  발화 시작: Yes, actually. What's the weather like in Busan right now?
+    18.86s  agent 발화 끝
+    22.22s  <ret> 발화 (turn7 첫 프레임)
+    22.63s  agent 발화 시작: <ret> The weather in Busan is currently 26.3 degrees Celsius
+    22.63s  user  발화 끝
+    22.93s  ⚡SPAN 주입 [d'=0.71s / d_lead=7.92s]: (tool result) 26.3°C, humidity 68%, wind 3.2 km/h
+    30.55s  user  발화 시작: Yeah.
+    30.55s  agent 발화 끝
+    30.93s  user  발화 시작: Hmm, nice.
+    30.93s  user  발화 끝
+    31.68s  agent 발화 시작: Busan sounds lovely! It’s a beautiful city.
+    31.68s  user  발화 끝
+    34.32s  user  발화 시작: Yeah.
+    34.32s  agent 발화 끝
+    34.70s  user  발화 시작: I’m thinking about going there next week. Can you find me so
+    34.70s  user  발화 끝
+    39.46s  <ret> 발화 (turn13 첫 프레임)
+    39.76s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.66s]: (tool result) Busan is known for its fresh seafood and Dwaeji Gukbap (
+    39.98s  agent 발화 시작: <ret> Busan is famous for its seafood and Dwaeji Gukbap. Jag
+    39.98s  user  발화 끝
+    45.64s  user  발화 시작: Okay.
+    45.64s  agent 발화 끝
+    46.02s  agent 발화 시작: It's a very popular spot with both locals and tourists! I ca
+    46.02s  user  발화 끝
+    53.18s  user  발화 시작: Mhm.
+    53.18s  agent 발화 끝
+    53.56s  user  발화 시작: Yes, please. Find me a restaurant near Haeundae Beach.
+    53.56s  user  발화 끝
+    56.43s  <ret> 발화 (turn18 첫 프레임)
+    56.90s  ⚡SPAN 주입 [d'=1.42s / d_lead=6.41s]: (tool result) Geoje Fish Center Haeundae serves fresh seafood; it has 
+    56.96s  agent 발화 시작: <ret> Geoje Fish Center Haeundae serves fresh seafood and ha
+    56.96s  user  발화 끝
+    63.37s  user  발화 시작: That sounds perfect. Can you make a reservation for two peop
+    63.37s  agent 발화 끝
+    69.27s  <ret> 발화 (turn20 첫 프레임)
+    69.40s  agent 발화 시작: <ret> I’ve confirmed your reservation for two people at Geoj
+    69.40s  user  발화 끝
+    69.80s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.30s]: (tool result) Reservation confirmed for 2 people at Geoje Fish Center 
+    77.70s  user  발화 시작: Uh-huh.
+    77.70s  agent 발화 끝
+    78.08s  user  발화 시작: Wonderful! Thank you.
+    78.08s  user  발화 끝
+    79.21s  agent 발화 시작: You’re very welcome!
+    79.21s  user  발화 끝
+    80.34s  user  발화 시작: I also need to book a hotel in Seoul. Something affordable.
+    80.34s  agent 발화 끝
+    84.35s  <ret> 발화 (turn25 첫 프레임)
+    84.45s  ⚡SPAN 주입 [d'=1.26s / d_lead=6.79s]: (tool result) Hotel Skypark Central Myeongdong offers rooms from $65 p
+    84.49s  agent 발화 시작: <ret> Hotel Skypark Central Myeongdong has rooms starting at
+    84.49s  user  발화 끝
+    91.28s  user  발화 시작: That sounds good. Can you show me some pictures?
+    91.28s  agent 발화 끝
+    94.10s  <ret> 발화 (turn27 첫 프레임)
+    94.62s  ⚡SPAN 주입 [d'=1.06s / d_lead=5.28s]: (tool result) Hotel Skypark Central Myeongdong offers modern rooms and
+    94.68s  agent 발화 시작: <ret> Hotel Skypark Central Myeongdong offers modern rooms a
+    94.68s  user  발화 끝
+    99.96s  user  발화 시작: Yeah.
+    99.96s  agent 발화 끝
+   100.33s  user  발화 시작: Okay, that looks nice.
+   100.33s  user  발화 끝
+   101.84s  agent 발화 시작: It seems like a comfortable and well-located option! Are you
+   101.84s  user  발화 끝
+   107.12s  user  발화 시작: Yes, let's book it for three nights, starting next Friday.
+   107.12s  agent 발화 끝
+   110.46s  <ret> 발화 (turn32 첫 프레임)
+   110.90s  agent 발화 시작: <ret> I’ve booked a three-night stay at Hotel Skypark Centra
+   110.90s  user  발화 끝
+   111.85s  ⚡SPAN 주입 [d'=1.39s / d_lead=6.79s]: (tool result) Booking confirmed at Hotel Skypark Central Myeongdong fr
+   117.69s  user  발화 시작: Yeah.
+   117.69s  agent 발화 끝
+   118.06s  user  발화 시작: Great!
+   118.06s  user  발화 끝
+   118.44s  agent 발화 시작: Wonderful! Everything seems to be coming together nicely for
+   118.44s  user  발화 끝
+   122.59s  user  발화 시작: I need to set an alarm for 6 AM next Saturday.
+   122.59s  agent 발화 끝
+   126.28s  <ret> 발화 (turn37 첫 프레임)
+   126.74s  agent 발화 시작: <ret> An alarm is set for 6:00 AM next Saturday, July 18th.
+   126.74s  user  발화 끝
+   127.06s  ⚡SPAN 주입 [d'=0.89s / d_lead=4.15s]: (tool result) Alarm set for 6:00 AM on Saturday, July 18, 2026.
+   130.89s  user  발화 시작: Perfect. That's all for now.
+   130.89s  agent 발화 끝
+   132.77s  agent 발화 시작: Wonderful! I’m glad I could assist you.
+   132.77s  user  발화 끝
+   135.41s  agent 발화 끝

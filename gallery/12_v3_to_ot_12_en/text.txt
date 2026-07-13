@@ -1,68 +1,78 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Fox, a curious and validating counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Haera, a upbeat and supportive wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Leo",
+    "name": "Henri",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "early 30s",
-    "language": "German"
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
+      "date": "2026-05-17",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2026-05-29",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-05-14",
+      "category": "diet",
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-11-11",
-      "category": "home",
-      "text": "User's home address is 197 Oak Avenue."
-    },
-    {
-      "date": "2025-09-24",
+      "date": "2026-05-07",
       "category": "trip",
       "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2025-06-18",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-04-30",
+      "category": "work",
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-30",
-      "title": "Researching a used car",
+      "date": "2026-01-22",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-12-05",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Fox, quick question – who was the first Indian batsman to score a triple century in Test ⟨ret@6.50s⟩ cricket?
-[  6.73s][moshi] That ⟦⚡SPAN@7.26s: Virender Sehwag was the first Indian batsman to score a triple century in Test cricket, achieving the feat aga⟧ would be Virender Sehwag, actually—he made history against Pakistan in 2004. It’s quite a remarkable achievement, isn’t it?
-[ 13.47s][user ] «backchannel» Oh.
-[ 13.82s][user ] Wow, really? I didn't know that. Uh, my wife just asked if I remembered to take the trash out…
-[ 20.56s][user ] «to_other» Did you take out the trash, honey?
-[ 23.04s][user ] …never mind. Fox, what’s the weather like in Seoul right ⟨ret@26.57s⟩ now?
-[ 26.94s][moshi] ⟦⚡SPAN@26.87s: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wind 4.0 km/h, with clear skies.⟧ Right now in Seoul, it’s 26.0°C with 68% humidity, and a 4.0 km/h breeze—clear skies, too. Sounds lovely, doesn't it?
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 34.03s][user ] «backchannel» Exactly.
-[ 34.38s][moshi] It's interesting how focusing on something new, like the weather, can help shift our attention, you know?
+[  0.00s][user ] Hi Haera, I was reading about Roman aqueducts, and I'm curious—how did they actually get the water to flow ⟨ret@6.90s⟩ uphill?
+[  7.13s][moshi] ⟦⚡SPAN@7.07s: Roman aqueducts primarily utilized gravity to transport water over long distances, relying on a consistent dow⟧ Roman aqueducts mainly used gravity—they built them with a gentle, consistent downward slope to let water flow from its source to the city.
+[ 15.33s][user ] That makes sense, but it still seems like a huge engineering feat.
+[ 19.61s][moshi] It truly was! Imagine carefully planning the entire route to maintain that slope over miles and miles…[curious] quite impressive, isn’t it?
+[ 27.10s][user ] Yeah, it is. Uh, my husband just got home.
+[ 30.30s][user ] «to_other» Hey! Dinner's almost ready.
+[ 31.73s][user ] Sorry about that. Anyway, what about things like pumps? Did they use any of those?
+[ 37.08s][moshi] «backchannel» Right.
+[ 37.43s][moshi] ⟨ret@37.15s⟩ ⟦⚡SPAN@37.46s: While Romans understood the principle of the screw pump, its application in aqueducts was limited, as gravity ⟧ They *did* know about screw pumps, but gravity was still the main way they moved water in aqueducts—pumps weren't used extensively.
+[ 44.92s][user ] «backchannel» Yeah.
+[ 45.28s][moshi] It's amazing how effective a simple principle can be when applied thoughtfully, isn't it?
+[ 50.27s][user ] Definitely. I'm planning a trip to Italy next year. Do you know if I can still see many of these aqueducts? ⟨ret@57.61s⟩
+[ 57.76s][moshi] ⟦⚡SPAN@57.91s: (tool result) Pont du Gard (France), Segovia Aqueduct (Spain), Valens Aqueduct (Turkey), Roman Aqueduct of Seg⟧ You can see quite a few. The Roman Aqueduct of Segovia in Spain, and the Pont du Gard—though it's in France—are especially famous examples.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Italy", "query": "Roman aqueducts"}}
+[ 66.31s][user ] Oh, Spain too? I hadn't realized. Maybe I should expand my trip plans.
+[ 70.95s][moshi] «backchannel» Uh-huh.
+[ 71.30s][moshi] That’s a wonderful idea! Seeing these structures firsthand really brings history to life—it’s a truly enriching experience.

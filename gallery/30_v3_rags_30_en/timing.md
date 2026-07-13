@@ -4,69 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Mason",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-06-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-03-25",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-08-02",
+#       "date": "2026-05-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2026-04-15",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-02-23",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-01-31",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-17",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-14",
+#       "date": "2026-01-14",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who earns the most money playing in the NBA?
-     3.60s  <ret> 발화 (turn1 첫 프레임)
-     3.79s  agent 발화 시작: <ret> Well, it looks like Stephen Curry is the highest-paid 
-     3.79s  user  발화 끝
-     4.16s  ⚡SPAN 주입 [d'=0.56s / d_lead=10.10s]: Stephen Curry is the highest-paid NBA player, earning $51.9 million in
-    13.89s  agent 발화 끝
+     0.00s  user  발화 시작: Who wrote the song “London Bridge is falling down”?
+     2.92s  <ret> 발화 (turn1 첫 프레임)
+     3.05s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.91s]: The authorship of the nursery rhyme "London Bridge Is Falling Down" is
+     3.11s  agent 발화 시작: <ret> The author of “London Bridge is falling down” is actua
+     3.11s  user  발화 끝
+    10.02s  agent 발화 끝

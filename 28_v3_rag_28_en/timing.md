@@ -4,75 +4,71 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Robin",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-03-13",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "home",
-#       "text": "User's home address is 354 Pine Court."
+#       "date": "2026-03-11",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-01-14",
+#       "date": "2026-02-06",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-01-26",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-23",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm thinking about visiting Washin | S2 Seattle, maybe. Is marijuana legal | S3 That's… surprisingly recent. What  | S4 No, no, Washington is good. What's
 
-     0.00s  user  발화 시작: I'm thinking about visiting Washington state. What's it like
-     3.78s  agent 발화 시작: Washington is a beautiful state with diverse landscapes, fro
-     3.78s  user  발화 끝
-    14.37s  user  발화 시작: Yeah.
-    14.37s  agent 발화 끝
-    14.75s  user  발화 시작: Seattle, maybe. Is marijuana legal there?
-    14.75s  user  발화 끝
-    16.78s  <ret> 발화 (turn4 첫 프레임)
-    17.01s  agent 발화 시작: <ret> It became legal in Washington state on December sixth,
-    17.01s  user  발화 끝
-    17.08s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.45s]: Recreational marijuana use became legal in Washington state on Decembe
-    26.47s  user  발화 시작: That's… surprisingly recent. What about other states?
-    26.47s  agent 발화 끝
-    29.11s  agent 발화 시작: Many other states have followed suit since then. Would you l
-    29.11s  user  발화 끝
-    38.19s  user  발화 시작: Yeah.
-    38.19s  agent 발화 끝
-    38.57s  user  발화 시작: No, no, Washington is good. What's the weather like in Seatt
-    38.57s  user  발화 끝
-    43.04s  <ret> 발화 (turn9 첫 프레임)
-    43.48s  agent 발화 시작: <ret> The weather in Seattle is currently eighteen point nin
-    43.48s  user  발화 끝
-    43.82s  ⚡SPAN 주입 [d'=0.78s / d_lead=11.72s]: (tool result) Seattle, WA: 18.9°C, humidity 62%, wind 3.1 km/h, condit
-    55.20s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to settle in, and I’m wondering about things to d
+     5.37s  agent 발화 시작: Welcome to the city! It's wonderful you're thinking about ex
+     5.37s  user  발화 끝
+     9.97s  user  발화 시작: Yeah, but I feel a bit lost. Is there a good museum nearby?
+     9.97s  agent 발화 끝
+    14.73s  <ret> 발화 (turn3 첫 프레임)
+    14.96s  agent 발화 시작: <ret> There is a wonderful museum quite close by—the Nationa
+    14.96s  user  발화 끝
+    15.03s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.51s]: The National Museum of Korea houses over 400,000 artifacts and artwork
+    26.46s  user  발화 시작: Four hundred thousand? That sounds… huge. What are the littl
+    26.46s  agent 발화 끝
+    34.20s  <ret> 발화 (turn5 첫 프레임)
+    34.52s  agent 발화 시작: <ret> Those little things orbiting the atom are called elect
+    34.52s  user  발화 끝
+    34.98s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.90s]: Electrons orbit the nucleus of an atom in specific pathways, or energy
+    41.42s  agent 발화 끝

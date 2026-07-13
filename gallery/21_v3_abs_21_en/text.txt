@@ -1,56 +1,56 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Ararimi, a calm and patient personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Lellaia, a warm and attentive life coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Adam",
+    "name": "Milan",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-24",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-02-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-10-01",
+      "date": "2026-05-28",
       "category": "work",
-      "text": "User works as a nurse."
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2025-09-16",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
-    },
-    {
-      "date": "2025-06-24",
-      "category": "home",
-      "text": "User's home address is 701 Elm Street."
-    },
-    {
-      "date": "2025-06-04",
+      "date": "2026-05-22",
       "category": "hobby",
       "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-05-08",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
+    },
+    {
+      "date": "2026-05-06",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-04-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-10",
+      "date": "2026-06-06",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -58,25 +58,59 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-24",
-      "title": "Planning a birthday dinner",
+      "date": "2025-12-10",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What are the most common symptoms for men? ⟨ret@3.21s⟩
-[  3.26s][moshi] «interrupted» ⟦⚡SPAN@3.70s: (no information found)⟧ I'm sorry, but there isn't widely available information detailing symptoms specific to men—
-[  8.55s][user ] «interrupts_prev» …Is there anything about sleep problems, though?
-[ 11.40s][moshi] Yes, certainly. Sleep disturbances are quite common, and can manifest in several ways.
-[ 16.70s][user ] «backchannel» Yeah.
-[ 17.11s][moshi] Difficulty falling asleep, frequent waking during the night, or feeling unrested are all possibilities. These can impact your daily life.
-[ 25.25s][user ] What can I do to improve my sleep quality?
-[ 28.92s][moshi] Establishing a regular sleep schedule, creating a relaxing bedtime routine, and ensuring a comfortable sleep environment are helpful steps.
-[ 36.65s][moshi] Also, limiting caffeine and screen time before bed can make a big difference—
-[ 41.95s][user ] «backchannel» Okay.
-[ 42.36s][moshi] —and practicing relaxation techniques, like deep breathing, may also assist you in achieving more restful sleep. Would you like me to find some guided meditations?
+[  0.00s][user ] Who was one of the Liberal Democrat challengers?
+[  3.33s][moshi] «backchannel» Yeah.
+[  3.75s][moshi] Well, it seems information on Liberal Democrat challengers isn’t readily available to me right now.
+[ 10.00s][user ] Oh, that’s a shame. Do you know anything about the current political climate in the UK then?
+[ 17.08s][moshi] [curious] The UK political climate is certainly dynamic right now. It’s a period of shifting alliances and evolving public opinion.
+[ 25.41s][user ] «backchannel» Okay.
+[ 25.83s][moshi] It feels like a lot of people are re-evaluating their priorities, which is often a catalyst for change.
+[ 33.33s][user ] That sounds… stressful. Can you tell me about stress management techniques?
+[ 37.91s][moshi] Recognizing your triggers is a great first step, and then building in small moments of calm.
+[ 44.58s][user ] «backchannel» Wow.
+[ 45.00s][user ] Like what, ⟨ret@45.69s⟩ exactly?
+[ 46.25s][moshi] ⟦⚡SPAN@46.23s: Deep breathing exercises can reduce stress by activating the parasympathetic nervous system, which promotes re⟧ There are many ways to find calm, but deep breathing exercises, for instance, can really reduce stress by activating your parasympathetic nervous system.
+[ 55.83s][user ] I’ve tried those, they don’t always work for me.
+[ 59.58s][moshi] [sigh] It can take practice to find what truly resonates with you, and that’s perfectly okay. Sometimes a change of scenery helps.
+[ 68.74s][user ] «backchannel» Mm-hmm.
+[ 69.16s][user ] That's true. I've been thinking of going on a trip.
+[ 73.33s][moshi] A trip sounds wonderful! Where were you considering going?
+[ 77.08s][user ] «backchannel» Right.
+[ 77.49s][user ] Somewhere with good food, maybe ⟨ret@79.56s⟩ Italy?
+[ 79.99s][moshi] ⟦⚡SPAN@79.88s: Italy is renowned for its cuisine, with regional specialties like pasta in Rome, pizza in Naples, and risotto ⟧ Italy is famed for its cuisine, offering dishes like pasta in Rome, pizza in Naples, and risotto in Milan—it’s a foodie’s paradise.
+[ 89.16s][user ] Oh, that sounds amazing. What's the weather…
+[ 92.07s][user ] …like in Rome right ⟨ret@93.70s⟩ now?
+[ 94.16s][moshi] ⟦⚡SPAN@94.00s: (tool result) 28.0°C, humidity 65%, wind 7.2 km/h⟧ The weather in Rome is currently 28.0 degrees Celsius, with humidity at 65% and a wind speed of 7.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Rome"}}
+[103.32s][user ] That’s lovely. Can you find me some restaurants in ⟨ret@107.18s⟩ Rome?
+[107.49s][moshi] ⟦⚡SPAN@107.43s: (tool result) Armando al Pantheon serves traditional Roman cuisine and has a 4.5-star rating with 1,200 review⟧ Armando al Pantheon serves traditional Roman cuisine and boasts a 4.5-star rating, based on 1,200 reviews.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Rome"}}
+[114.16s][user ] That sounds good. Can you check if they have availability next Tuesday?
+[119.16s][moshi] «interrupted» I can certainly check—
+[120.82s][user ] «interrupts_prev» …Actually, before you do that, what about somewhere with outdoor ⟨ret@124.90s⟩ seating?
+[125.41s][moshi] ⟦⚡SPAN@125.35s: La Pergola, located at the Rome Cavalieri, offers Michelin-starred dining with panoramic views and outdoor sea⟧ La Pergola, at the Rome Cavalieri, offers Michelin-starred dining, and has panoramic views with outdoor seating available.
+[132.49s][user ] «backchannel» Yeah.
+[132.90s][user ] Wow, that sounds fancy! How much does it cost to eat there? ⟨ret@137.71s⟩
+[137.90s][moshi] ⟦⚡SPAN@137.84s: La Pergola’s tasting menu is priced at €295 per person, excluding beverages.⟧ La Pergola’s tasting menu is priced at 295 euros per person, not including drinks. It’s a high-end experience.
+[145.40s][user ] «backchannel» Yeah, totally.
+[146.24s][user ] That's… a bit pricey.
+[147.90s][moshi] [laugh] It certainly is! Perhaps we could look at some more moderately priced options.
+[153.74s][user ] «backchannel» Yeah.
+[154.15s][user ] Yes, please. Something a little more relaxed. ⟨ret@156.90s⟩
+[157.07s][moshi] ⟦⚡SPAN@157.01s: Roscioli Salumeria con Cucina is a popular deli and restaurant offering Roman specialties at a moderate price ⟧ Roscioli Salumeria con Cucina is a popular spot, offering Roman specialties at a moderate price point.
+[163.74s][user ] That sounds perfect. Can you reserve a table for two next Tuesday ⟨ret@168.94s⟩ evening?
+[169.15s][moshi] ⟦⚡SPAN@169.25s: (tool result) Reservation confirmed for Roscioli Salumeria con Cucina, next Tuesday at 8:00 PM, confirmation I⟧ Wonderful! I’ve reserved a table for two at Roscioli Salumeria con Cucina next Tuesday at 8:00 PM; your confirmation ID is RQ7829.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Roscioli Salumeria con Cucina", "date": "next Tuesday", "time": "evening", "party_size": "2"}}
+[178.32s][user ] Excellent! Thank you so much, Lellaia.
+[180.82s][moshi] [happy] You're very welcome! It sounds like you're planning a delightful trip. Remember, taking time for yourself is an investment in your well-being.

@@ -4,78 +4,97 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Leo",
+#     "name": "Henri",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
+#       "date": "2026-05-17",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-05-29",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-05-14",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-11-11",
-#       "category": "home",
-#       "text": "User's home address is 197 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-09-24",
+#       "date": "2026-05-07",
 #       "category": "trip",
 #       "text": "User is planning a trip to Iceland in March."
 #     },
 #     {
-#       "date": "2025-06-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-30",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-30",
-#       "title": "Researching a used car",
+#       "date": "2026-01-22",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Fox, quick question – who was  | S2 Wow, really? I didn't know that. U | S3 Did you take out the trash, honey? | S4 …never mind. Fox, what’s the weath
+# EXAMINER(FDB-v2) 단계: S1 Hi Haera, I was reading about Roma | S2 Yeah, it is. Uh, my husband just g | S3 Sorry about that. Anyway, what abo | S4 Oh, Spain too? I hadn't realized. 
 
-     0.00s  user  발화 시작: Hey Fox, quick question – who was the first Indian batsman t
-     6.50s  <ret> 발화 (turn1 첫 프레임)
-     6.73s  agent 발화 시작: <ret> That would be Virender Sehwag, actually—he made histor
-     6.73s  user  발화 끝
-     7.26s  ⚡SPAN 주입 [d'=0.76s / d_lead=6.73s]: Virender Sehwag was the first Indian batsman to score a triple century
-    13.47s  user  발화 시작: Oh.
-    13.47s  agent 발화 끝
-    13.82s  user  발화 시작: Wow, really? I didn't know that. Uh, my wife just asked if I
-    13.82s  user  발화 끝
-    20.56s  user  발화 시작: Did you take out the trash, honey?
-    20.56s  user  발화 끝
-    23.04s  user  발화 시작: …never mind. Fox, what’s the weather like in Seoul right now
-    23.04s  user  발화 끝
-    26.57s  <ret> 발화 (turn6 첫 프레임)
-    26.87s  ⚡SPAN 주입 [d'=0.31s / d_lead=7.09s]: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wi
-    26.94s  agent 발화 시작: <ret> Right now in Seoul, it’s 26.0°C with 68% humidity, and
-    26.94s  user  발화 끝
-    34.03s  user  발화 시작: Exactly.
-    34.03s  agent 발화 끝
-    34.38s  agent 발화 시작: It's interesting how focusing on something new, like the wea
-    34.38s  user  발화 끝
-    40.41s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Haera, I was reading about Roman aqueducts, and I'm curio
+     6.90s  <ret> 발화 (turn1 첫 프레임)
+     7.07s  ⚡SPAN 주입 [d'=0.76s / d_lead=8.20s]: Roman aqueducts primarily utilized gravity to transport water over lon
+     7.13s  agent 발화 시작: <ret> Roman aqueducts mainly used gravity—they built them wi
+     7.13s  user  발화 끝
+    15.33s  user  발화 시작: That makes sense, but it still seems like a huge engineering
+    15.33s  agent 발화 끝
+    19.61s  agent 발화 시작: It truly was! Imagine carefully planning the entire route to
+    19.61s  user  발화 끝
+    27.10s  user  발화 시작: Yeah, it is. Uh, my husband just got home.
+    27.10s  agent 발화 끝
+    30.30s  user  발화 시작: Hey! Dinner's almost ready.
+    30.30s  user  발화 끝
+    31.73s  user  발화 시작: Sorry about that. Anyway, what about things like pumps? Did 
+    31.73s  user  발화 끝
+    37.08s  agent 발화 시작: Right.
+    37.08s  user  발화 끝
+    37.15s  <ret> 발화 (turn8 첫 프레임)
+    37.43s  agent 발화 시작: <ret> They *did* know about screw pumps, but gravity was sti
+    37.43s  agent 발화 끝
+    37.46s  ⚡SPAN 주입 [d'=0.31s / d_lead=7.49s]: While Romans understood the principle of the screw pump, its applicati
+    44.92s  user  발화 시작: Yeah.
+    44.92s  agent 발화 끝
+    45.28s  agent 발화 시작: It's amazing how effective a simple principle can be when ap
+    45.28s  user  발화 끝
+    50.27s  user  발화 시작: Definitely. I'm planning a trip to Italy next year. Do you k
+    50.27s  agent 발화 끝
+    57.61s  <ret> 발화 (turn12 첫 프레임)
+    57.76s  agent 발화 시작: <ret> You can see quite a few. The Roman Aqueduct of Segovia
+    57.76s  user  발화 끝
+    57.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.56s]: (tool result) Pont du Gard (France), Segovia Aqueduct (Spain), Valens 
+    66.31s  user  발화 시작: Oh, Spain too? I hadn't realized. Maybe I should expand my t
+    66.31s  agent 발화 끝
+    70.95s  agent 발화 시작: Uh-huh.
+    70.95s  user  발화 끝
+    71.30s  agent 발화 시작: That’s a wonderful idea! Seeing these structures firsthand r
+    71.30s  agent 발화 끝
+    77.36s  agent 발화 끝
