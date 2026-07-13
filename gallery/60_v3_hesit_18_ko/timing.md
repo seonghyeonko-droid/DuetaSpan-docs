@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "준빈",
+#     "name": "정람",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -18,93 +18,115 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-02-13",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-05-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2026-02-11",
 #       "category": "work",
 #       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-12-06",
+#       "date": "2026-02-03",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-01-02",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2025-12-17",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-24",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-17",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 '볼드 앤 뷰티풀'에서 브룩이 누구랑 결혼하는지 알 수  | S2 손 포레스터는 리지랑 형제인가요? | S3 이천구년이라… 시간이 정말 빠르네요. 요즘에는 어떻게 지내나요 | S4 그 드라마 작가들은 정말 대단한 것 같아요. 혹시 다른 드라마
+# EXAMINER(FDB-v2) 단계: S1 혹시 'What Lovers Do'에 피처링한… | S2 음, 에스 제트 에이는 어떤 스타일의 음악을 주로 하나요? | S3 그렇군요… 그럼 에스 제트 에이의 노래 중에서 가장 유명한 곡 | S4 …혹시 그 노래 가사가 어떤 내용인가요? 좀 궁금해졌어요.
 
-     0.00s  user  발화 시작: 혹시 '볼드 앤 뷰티풀'에서 브룩이 누구랑 결혼하는지 알 수 있을까요?
-     5.26s  agent 발화 시작: 그렇죠.
-     5.26s  user  발화 끝
-     5.26s  <ret> 발화 (turn2 첫 프레임)
-     5.78s  agent 발화 시작: <ret> 브룩 로건의 주요 연인인 리지 포레스터와 여러 번 결혼했습니다.
-     5.78s  agent 발화 끝
-     6.27s  ⚡SPAN 주입 [d'=1.01s / d_lead=4.73s]: Ridge Forrester is Brooke Logan's primary love interest and has marrie
-    10.51s  user  발화 시작: 아.
-    10.51s  agent 발화 끝
-    11.04s  user  발화 시작: 음, 그 드라마 진짜 오래됐죠?
-    11.04s  user  발화 끝
-    13.67s  agent 발화 시작: 네, 정말 오래된 드라마예요. 천구백팔십칠년에 시작했거든요.
-    13.67s  user  발화 끝
-    16.82s  user  발화 시작: 정말요?
-    16.82s  agent 발화 끝
-    17.35s  user  발화 시작: 그럼 리지 말고 다른 사람이랑도 결혼했었어요?
-    17.35s  user  발화 끝
-    20.43s  <ret> 발화 (turn8 첫 프레임)
-    20.50s  agent 발화 시작: <ret> 네, 에릭 포레스터, 손 포레스터, 빌 스펜서와도 결혼한 적이 있습니다.
-    20.50s  user  발화 끝
-    21.48s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.26s]: Brooke Logan has been married to several men including Eric Forrester,
-    25.76s  user  발화 시작: 그렇죠.
-    25.76s  agent 발화 끝
-    26.28s  user  발화 시작: 손 포레스터는 리지랑 형제인가요?
-    26.28s  user  발화 끝
-    28.39s  agent 발화 시작: 네, 맞아요. 리지와 손 포레스터는 형제입니다.
-    28.39s  user  발화 끝
-    31.54s  user  발화 시작: 아, 그럼 좀 복잡하겠네요. 혹시 빌 스펜서랑 결혼했을 때가 언제였죠?
-    31.54s  agent 발화 끝
-    36.62s  <ret> 발화 (turn13 첫 프레임)
-    36.80s  agent 발화 시작: <ret> 빌 스펜서와 이천구년 십이월 삼십일일에 결혼해서 이천십삼년 이월에 이혼했습니다.
-    36.80s  user  발화 끝
-    37.30s  ⚡SPAN 주입 [d'=0.68s / d_lead=4.73s]: Brooke Logan and Bill Spencer married on December 31, 2009, and divorc
-    41.53s  user  발화 시작: 이천구년이라… 시간이 정말 빠르네요. 요즘에는 어떻게 지내나요? —
-    41.53s  agent 발화 끝
-    45.73s  user  발화 시작: … 혹시 리지랑 브룩이…
-    45.73s  user  발화 끝
-    47.83s  user  발화 시작: …다시 결혼할 가능성은 없을까요?
-    47.83s  user  발화 끝
-    49.94s  agent 발화 시작: 네.
-    49.94s  user  발화 끝
-    50.46s  agent 발화 시작: 음, 드라마니까 가능성은 언제나 열려 있죠. 그들의 관계는 정말 롤러코스터 같아요.
-    50.46s  agent 발화 끝
-    56.25s  user  발화 시작: 네.
-    56.25s  agent 발화 끝
-    56.77s  user  발화 시작: 그 드라마 작가들은 정말 대단한 것 같아요. 혹시 다른 드라마도 추천해 줄 수 있나요?
-    56.77s  user  발화 끝
-    63.98s  <ret> 발화 (turn21 첫 프레임)
-    64.13s  agent 발화 시작: <ret> 또 다른 장수 미국 드라마는 'Days of Our Lives'인데, 천구백육십오년 십일월 팔일에
-    64.13s  user  발화 끝
-    65.09s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.36s]: "Days of Our Lives" is another long-running American daytime soap oper
-    71.49s  user  발화 시작: 천구백육십오년이라니, 엄청 오래됐네요. 한번 찾아봐야겠어요.
-    71.49s  agent 발화 끝
-    74.12s  agent 발화 시작: 네, 한번 보시면 재미있을 거예요.
-    74.12s  user  발화 끝
-    76.75s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 'What Lovers Do'에 피처링한…
+     2.52s  user  발화 시작: …여성 가수가 누구인지 알 수 있을까요?
+     2.52s  user  발화 끝
+     5.24s  <ret> 발화 (turn2 첫 프레임)
+     5.53s  agent 발화 시작: <ret> 'What Lovers Do'에는 에스 제트 에이가 피처링으로 참여했습니다. 아주 매력적인 목소리
+     5.53s  user  발화 끝
+     5.98s  ⚡SPAN 주입 [d'=0.97s / d_lead=6.54s]: SZA is featured on the song "What Lovers Do".
+    12.07s  user  발화 시작: 음, 에스 제트 에이는 어떤 스타일의 음악을 주로 하나요?
+    12.07s  agent 발화 끝
+    16.50s  <ret> 발화 (turn4 첫 프레임)
+    16.60s  agent 발화 시작: <ret> 에스 제트 에이의 음악은 얼터너티브 알앤비라고 많이 표현하는데요, 네오 소울이나 재즈, 힙합 요소
+    16.60s  user  발화 끝
+    17.15s  ⚡SPAN 주입 [d'=0.65s / d_lead=7.55s]: SZA's music is often described as alternative R&B, incorporating eleme
+    24.15s  user  발화 시작: 예.
+    24.15s  agent 발화 끝
+    24.65s  user  발화 시작: 아, 재밌네요. 혹시 에스 제트 에이가 한국 가수와 협업한 적은 없나요?
+    24.65s  user  발화 끝
+    30.19s  agent 발화 시작: 예.
+    30.19s  user  발화 끝
+    30.62s  <ret> 발화 (turn8 첫 프레임)
+    30.69s  agent 발화 시작: <ret> 죄송하지만, 에스 제트 에이가 한국 가수와 협업한 기록은 찾을 수 없었습니다.
+    30.69s  agent 발화 끝
+    31.61s  ⚡SPAN 주입 [d'=0.98s / d_lead=5.53s]: (no information found)
+    36.22s  user  발화 시작: 그렇군요… 그럼 에스 제트 에이의 노래 중에서 가장 유명한 곡은 어떤 건가요?
+    36.22s  agent 발화 끝
+    42.05s  <ret> 발화 (turn10 첫 프레임)
+    42.26s  agent 발화 시작: <ret> 에스 제트 에이의 가장 유명한 곡은 이천이십이년에 발매된 "Kill Bill"이라고 합니다. 많은
+    42.26s  user  발화 끝
+    43.21s  ⚡SPAN 주입 [d'=1.16s / d_lead=7.55s]: SZA's most popular song is generally considered to be "Kill Bill", rel
+    49.81s  user  발화 시작: 'Kill Bill'… 제목이 좀 강렬하네요—
+    49.81s  agent 발화 끝
+    52.32s  user  발화 시작: …혹시 그 노래 가사가 어떤 내용인가요? 좀 궁금해졌어요.
+    52.32s  user  발화 끝
+    56.35s  agent 발화 시작: 네네.
+    56.35s  user  발화 끝
+    56.70s  <ret> 발화 (turn14 첫 프레임)
+    56.85s  agent 발화 시작: <ret> "Kill Bill"은 전 남자친구를 죽이고 싶은 여자의 환상을 다룬 노래인데, 유머러스하고 자기
+    56.85s  agent 발화 끝
+    57.46s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.55s]: "Kill Bill" is a song about a woman fantasizing about killing her ex-b
+    64.40s  user  발화 시작: 네.
+    64.40s  agent 발화 끝
+    64.90s  agent 발화 시작: 에스 제트 에이는 솔직하고 대담한 가사로 유명한 것 같아요.
+    64.90s  user  발화 끝
+    69.43s  agent 발화 시작: 듣는 사람의 공감을 얻는 능력이 뛰어나다고 생각합니다.
+    69.43s  agent 발화 끝
+    72.95s  user  발화 시작: 그렇죠.
+    72.95s  agent 발화 끝
+    73.46s  user  발화 시작: 네, 저도 에스 제트 에이의 음악을 한 번 들어봐야겠네요. 감사합니다.
+    73.46s  user  발화 끝
+    78.49s  agent 발화 시작: 언제든 편하게 다시 찾아주세요. 음악과 함께 행복한 시간 보내시길 바랍니다.
+    78.49s  user  발화 끝
+    83.52s  agent 발화 끝

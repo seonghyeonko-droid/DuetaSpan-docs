@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "하우",
+#     "name": "세찬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -18,132 +18,97 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-27",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-05-31",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-04-21",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-04-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-02-09",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-08",
+#       "date": "2025-12-12",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-10",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-30",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-13",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 라디오에서 옛날 노래 듣는데, 레오폴도 단테 테베스 같은 가수 | S2 아, 그렇구나. 그럼 아르헨티나에서 테베스가 제일 인기 있었던 | S3 반도네온이 뭐지? 처음 들어보는 악기인데. | S4 쿠바… 살사 축제가 유명하다면서. 혹시 쿠바에서 열리는 살사 
+# EXAMINER(FDB-v2) 단계: S1 혹시 이천십년 얼터너티브 프레스 잡지 표지 모델에 더 캡 말고 | S2 요즘 음악은 어떤 걸 듣고 있어요? | S3 오, 앨범 제목이 예쁘네요. 들어봐야겠어요. | S4 다행이다. 혹시 여행 전에 준비해야 할 게 있을까요?
 
-     0.00s  user  발화 시작: 라디오에서 옛날 노래 듣는데, 레오폴도 단테 테베스 같은 가수 노래를 틀어주는 방송은 무슨 언어로 방송됐을까
-     7.64s  <ret> 발화 (turn1 첫 프레임)
-     7.77s  agent 발화 시작: <ret> 레오폴도 단테 테베스 같은 가수의 옛날 노래를 틀어주는 라디오 방송은 스페인어로 방송됐습니다. [
-     7.77s  user  발화 끝
-     8.62s  ⚡SPAN 주입 [d'=0.98s / d_lead=8.80s]: Spanish is the language in which the radio station that played oldies 
-    16.57s  user  발화 시작: 어.
-    16.57s  agent 발화 끝
-    17.09s  user  발화 시작: 스페인어라… 아르헨티나 라디오였나 보네. 혹시 아르헨티나에서 가장 유명한 라디오 방송국이 어디였어?
-    17.09s  user  발화 끝
-    22.78s  agent 발화 시작: 네.
-    22.78s  user  발화 끝
-    23.15s  <ret> 발화 (turn5 첫 프레임)
-    23.30s  agent 발화 시작: <ret> 아르헨티나에서 가장 유명한 라디오 방송국 중 하나는 라디오 미트레라고 합니다. [curious] 
-    23.30s  agent 발화 끝
-    23.97s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.80s]: Radio Mitre is considered one of the most famous radio stations in Arg
-    32.10s  user  발화 시작: 라디오 미트레… 이름이 좀 어렵네. 그 방송국에서 테베스 노래 많이 틀어줬어?
-    32.10s  agent 발화 끝
-    37.80s  agent 발화 시작: 그 부분은 제가 지금 바로 확인해 드릴 수는 없어요. 방송 기록까지는 알 수 없거든요.
-    37.80s  user  발화 끝
-    45.05s  user  발화 시작: 응.
-    45.05s  agent 발화 끝
-    45.57s  user  발화 시작: 아, 그렇구나. 그럼 아르헨티나에서 테베스가 제일 인기 있었던 가수는 누구야?
-    45.57s  user  발화 끝
-    50.21s  <ret> 발화 (turn10 첫 프레임)
-    50.75s  agent 발화 시작: <ret> 아르헨티나 음악 역사상 가장 유명하고 인기 있는 가수는 카를로스 가르델이라고 합니다. [surpr
-    50.75s  user  발화 끝
-    50.88s  ⚡SPAN 주입 [d'=0.67s / d_lead=8.29s]: Carlos Gardel is widely considered the most prominent and popular sing
-    59.03s  user  발화 시작: 그치.
-    59.03s  agent 발화 끝
-    59.55s  user  발화 시작: 카를로스 가르델? 탱고 가수였구나. 탱고는 언제부터 시작된 음악이야?
-    59.55s  user  발화 끝
-    63.33s  <ret> 발화 (turn13 첫 프레임)
-    63.69s  agent 발화 시작: <ret> 탱고는 아르헨티나 부에노스아이레스와 우루과이 몬테비데오의 항구 지역에서 십구세기 말에 시작된 음악
-    63.69s  user  발화 끝
-    64.04s  ⚡SPAN 주입 [d'=0.72s / d_lead=8.80s]: Tango originated in the late 19th century in the port areas of Buenos 
-    72.49s  user  발화 시작: 응.
-    72.49s  agent 발화 끝
-    73.01s  user  발화 시작: 십구세기 말… 생각보다 오래됐네. 탱고는 어떤 악기로 연주해?
-    73.01s  user  발화 끝
-    77.15s  agent 발화 시작: 탱고는 주로 반도네온, 기타, 피아노, 콘트라베이스를 사용해서 연주합니다.
-    77.15s  user  발화 끝
-    81.30s  user  발화 시작: 그래.
-    81.30s  agent 발화 끝
-    81.82s  user  발화 시작: 반도네온이 뭐지? 처음 들어보는 악기인데.
-    81.82s  user  발화 끝
-    84.26s  <ret> 발화 (turn19 첫 프레임)
-    84.40s  agent 발화 시작: <ret> 반도네온은 아코디언의 일종으로, 주로 탱고 음악에서 사용되는 악기입니다. [happy] 독특한 소
-    84.40s  user  발화 끝
-    85.31s  ⚡SPAN 주입 [d'=1.05s / d_lead=6.73s]: The bandoneón is a type of concertina, a button accordion typically us
-    91.14s  user  발화 시작: 아, 아코디언이랑 비슷하구나. 탱고 말고 아르헨티나에서 인기 있는 음악 장르는 또 있어?
-    91.14s  agent 발화 끝
-    97.35s  agent 발화 시작: 아르헨티나에서는 포크 음악, 록 음악, 살사 음악도 인기가 많습니다.
-    97.35s  user  발화 끝
-   102.01s  user  발화 시작: 어어.
-   102.01s  agent 발화 끝
-   102.53s  user  발화 시작: 살사 음악도 아르헨티나에서 듣는구나. 살사 음악은 보통 어떤 나라에서 많이 들어?
-   102.53s  user  발화 끝
-   108.20s  <ret> 발화 (turn25 첫 프레임)
-   108.22s  agent 발화 시작: 음.
-   108.22s  user  발화 끝
-   108.60s  ⚡SPAN 주입 [d'=0.41s / d_lead=9.84s]: Salsa music originated in Cuba and is popular throughout Latin America
-   108.74s  agent 발화 시작: <ret> 살사 음악은 쿠바에서 시작되었고, 라틴 아메리카 전역, 특히 쿠바, 푸에르토리코, 콜롬비아, 베네
-   108.74s  agent 발화 끝
-   118.58s  user  발화 시작: 쿠바… 살사 축제가 유명하다면서. 혹시 쿠바에서 열리는 살사 축제 중에 가장 큰 축제가 뭐야?
-   118.58s  agent 발화 끝
-   125.36s  <ret> 발화 (turn27 첫 프레임)
-   125.83s  agent 발화 시작: <ret> 쿠바에서 열리는 축제 중 가장 큰 축제 중 하나는 쿠바단사 축제입니다. [laugh] 살사뿐만 아
-   125.83s  user  발화 끝
-   126.69s  ⚡SPAN 주입 [d'=1.33s / d_lead=10.87s]: The Cubadanza festival is one of the largest and most important dance 
-   136.70s  user  발화 시작: 응응.
-   136.70s  agent 발화 끝
-   137.22s  user  발화 시작: 쿠바단사 축제… 가보고 싶다. 축제는 언제 열려?
-   137.22s  user  발화 끝
-   140.58s  <ret> 발화 (turn30 첫 프레임)
-   140.85s  agent 발화 시작: <ret> 쿠바단사 축제는 이천이십육년 오월 십오일부터 이십오일까지 쿠바 하바나에서 열립니다.
-   140.85s  user  발화 끝
-   141.61s  ⚡SPAN 주입 [d'=1.02s / d_lead=4.66s]: (tool result) Event: Cubadanza Festival, Date: May 15-25, 2026, Locati
-   145.51s  user  발화 시작: 오, 내년 오월이네. 하바나… 가봐야겠다.
-   145.51s  agent 발화 끝
-   148.10s  agent 발화 시작: 네, 즐거운 여행 되시길 바랍니다. [sigh] 여행 준비는 잘 하고 계신가요?
-   148.10s  user  발화 끝
-   153.79s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 이천십년 얼터너티브 프레스 잡지 표지 모델에 더 캡 말고 다른 밴드도 있었어요?
+     5.80s  <ret> 발화 (turn1 첫 프레임)
+     5.93s  agent 발화 시작: <ret> 이천십년 얼터너티브 프레스 잡지 표지에는 더 캡과 함께 헤이 먼데이, 네버 샤우트 네버가 실려 있
+     5.93s  user  발화 끝
+     6.78s  ⚡SPAN 주입 [d'=0.98s / d_lead=6.84s]: Hey Monday was featured on the cover of Alternative Press magazine alo
+    12.77s  user  발화 시작: 예.
+    12.77s  agent 발화 끝
+    13.23s  user  발화 시작: 아, 헤이 먼데이도 있었군요. 좀 오래된 밴드인 것 같아요.
+    13.23s  user  발화 끝
+    17.33s  agent 발화 시작: 네, 그렇죠. 시간이 참 빠르네요.
+    17.33s  user  발화 끝
+    19.61s  user  발화 시작: 요즘 음악은 어떤 걸 듣고 있어요?
+    19.61s  agent 발화 끝
+    22.35s  agent 발화 시작: 요즘은 주로 잔잔한 인디 음악을 듣는 편이에요. 마음이 편안해지거든요.
+    22.35s  user  발화 끝
+    26.45s  user  발화 시작: 인디 음악… 저도 가끔 듣는데, 추천해 줄 만한 밴드 있어요?
+    26.45s  agent 발화 끝
+    30.87s  <ret> 발화 (turn8 첫 프레임)
+    31.01s  agent 발화 시작: <ret> 혹시 더 재패니즈 하우스를 아세요? 앰버 베인이 이끄는 영국 인디 팝 밴드인데, 이 피와 앨범을 
+    31.01s  user  발화 끝
+    31.69s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.21s]: The Japanese House is an English indie pop act headed by Amber Bain, w
+    39.22s  user  발화 시작: 네.
+    39.22s  agent 발화 끝
+    39.68s  agent 발화 시작: 앨범 제목은 '소 유 인 어 드림'이라고 하더라고요.
+    39.68s  user  발화 끝
+    43.33s  user  발화 시작: 네.
+    43.33s  agent 발화 끝
+    43.78s  user  발화 시작: 오, 앨범 제목이 예쁘네요. 들어봐야겠어요.
+    43.78s  user  발화 끝
+    45.69s  <ret> 발화 (turn13 첫 프레임)
+    46.06s  agent 발화 시작: <ret> 지금 서울 날씨는 섭씨 이십삼도, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터 정도예요.
+    46.06s  user  발화 끝
+    46.92s  ⚡SPAN 주입 [d'=1.23s / d_lead=5.93s]: (tool result) Weather in Seoul: 23.0°C, humidity 74%, wind 5.5 km/h.
+    51.99s  user  발화 시작: 서울 날씨 알려줘서 고마워요. 이번 주말에 여행 갈 건데, 날씨가 괜찮을까요?
+    51.99s  agent 발화 끝
+    57.01s  agent 발화 시작: 네.
+    57.01s  user  발화 끝
+    57.47s  agent 발화 시작: 이번 주말은 대체로 맑을 것으로 예상돼요. 여행하기 좋겠네요.
+    57.47s  agent 발화 끝
+    61.12s  user  발화 시작: 그렇죠.
+    61.12s  agent 발화 끝
+    61.57s  user  발화 시작: 다행이다. 혹시 여행 전에 준비해야 할 게 있을까요?
+    61.57s  user  발화 끝
+    65.22s  agent 발화 시작: 여행 전에 짐은 다 꾸리셨나요? 그리고 혹시 필요한 약은 챙기셨는지 확인해 보세요.
+    65.22s  user  발화 끝
+    70.69s  user  발화 시작: 예.
+    70.69s  agent 발화 끝
+    71.15s  user  발화 시작: 아, 약은 깜빡했네요. 챙겨야겠어요. 감사합니다, 노라 씨.
+    71.15s  user  발화 끝
+    74.34s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해 주세요. 여행 잘 다녀오세요.
+    74.34s  user  발화 끝
+    77.99s  agent 발화 끝

@@ -4,82 +4,79 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Remy",
+#     "name": "Kim",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-06-20",
+#       "category": "home",
+#       "text": "User's home address is 917 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-06-01",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-26",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-18",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
 #       "date": "2026-02-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-01-20",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2026-06-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where did Antoine de Saint-Exupéry write *Le Petit Prince*?
-     2.94s  <ret> 발화 (turn1 첫 프레임)
-     3.13s  agent 발화 시작: <ret> He actually wrote *Le Petit Prince* while living in No
-     3.13s  user  발화 끝
-     3.50s  ⚡SPAN 주입 [d'=0.56s / d_lead=9.38s]: Antoine de Saint-Exupéry wrote *Le Petit Prince* during his exile in N
-    12.51s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Josephine McDonald in the movie El Dorado?
+     3.39s  agent 발화 시작: Yeah.
+     3.39s  user  발화 끝
+     3.52s  <ret> 발화 (turn2 첫 프레임)
+     3.76s  agent 발화 시작: <ret> That was Michele Carey, playing Josephine McDonald in 
+     3.76s  agent 발화 끝
+     4.07s  ⚡SPAN 주입 [d'=0.55s / d_lead=8.65s]: Michele Carey played Josephine McDonald in the 1966 Western film El Do
+    12.42s  agent 발화 끝

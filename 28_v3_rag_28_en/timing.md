@@ -4,88 +4,109 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Felix",
+#     "name": "Clara",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-18",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-21",
+#       "date": "2026-05-19",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-04-10",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-04-17",
+#       "date": "2025-12-21",
 #       "category": "home",
-#       "text": "User's home address is 972 Maple Drive."
+#       "text": "User's home address is 900 Elm Street."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-12-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
-#     },
-#     {
-#       "date": "2025-12-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-12-07",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
+#       "date": "2026-06-21",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-13",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-05",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to plan a trip, and I'm | S2 Definitely relaxing. I just want t | S3 …and enjoy good food, maybe see so | S4 Okay, you’re right. Let’s focus. I
 
-     0.00s  user  발화 시작: I was just humming a song, and I can’t remember who sang it.
-     6.34s  <ret> 발화 (turn1 첫 프레임)
-     6.59s  agent 발화 시작: <ret> That song, "Ain't Too Proud to Beg", was originally re
-     6.59s  user  발화 끝
-     6.85s  ⚡SPAN 주입 [d'=0.51s / d_lead=5.60s]: The Temptations released the song "Ain't Too Proud to Beg" in 1966, an
-    12.18s  user  발화 시작: Yeah.
-    12.18s  agent 발화 끝
-    12.51s  user  발화 시작: The Temptations… hmm. I thought it might be someone else. Ar
-    12.51s  user  발화 끝
-    17.12s  agent 발화 시작: [curious] They are! The Temptations still tour, though the l
-    17.12s  user  발화 끝
-    22.06s  user  발화 시작: Yeah.
-    22.06s  agent 발화 끝
-    22.39s  user  발화 시작: Oh, that's good to hear. What kind of music do they play now
-    22.39s  user  발화 끝
-    26.68s  agent 발화 시작: Yeah.
-    26.68s  user  발화 끝
-    27.00s  agent 발화 시작: They mostly perform their classic hits, but also include som
-    27.00s  agent 발화 끝
-    31.94s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to plan a trip, and I'm overwhelmed. Where should
+     4.96s  agent 발화 시작: Planning can feel like a lot at once, but breaking it down m
+     4.96s  user  발화 끝
+    15.58s  user  발화 시작: Uh-huh.
+    15.58s  agent 발화 끝
+    15.93s  user  발화 시작: Hmm, maybe Italy? I’ve always wanted to go, but it seems…com
+    15.93s  user  발화 끝
+    19.83s  agent 발화 시작: Yeah.
+    19.83s  user  발화 끝
+    20.18s  agent 발화 시작: Italy is wonderful! It can seem daunting to plan, but we can
+    20.18s  agent 발화 끝
+    30.45s  user  발화 시작: Definitely relaxing. I just want to unwind…
+    30.45s  agent 발화 끝
+    32.93s  user  발화 시작: …and enjoy good food, maybe see some art.
+    32.93s  user  발화 끝
+    35.20s  <ret> 발화 (turn8 첫 프레임)
+    35.50s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.44s]: The first commercially available infant formula, developed by German c
+    35.76s  agent 발화 시작: <ret> Interestingly, the very first baby formula actually ca
+    35.76s  user  발화 끝
+    43.20s  user  발화 시작: Wow, 1867? That's… a long time ago! I didn't realize formula
+    43.20s  agent 발화 끝
+    48.86s  agent 발화 시작: It is quite a history! It’s amazing how much things have evo
+    48.86s  user  발화 끝
+    59.84s  user  발화 시작: Yeah, totally.
+    59.84s  agent 발화 끝
+    60.55s  user  발화 시작: Okay, you’re right. Let’s focus. I’ve heard Florence is beau
+    60.55s  user  발화 끝
+    65.51s  agent 발화 시작: Yeah, yeah.
+    65.51s  user  발화 끝
+    66.21s  agent 발화 시작: Florence is a fantastic choice! [happy] It's truly a treasur
+    66.21s  agent 발화 끝
+    76.13s  agent 발화 끝

@@ -4,72 +4,101 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Riley",
+#     "name": "Oliver",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-06-12",
-#       "category": "home",
-#       "text": "User's home address is 409 Maple Drive."
-#     },
-#     {
-#       "date": "2026-01-31",
+#       "date": "2026-06-10",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2025-12-29",
+#       "date": "2026-05-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-17",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "home",
+#       "text": "User's home address is 818 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-13",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-31",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm looking for a nice gift for my | S2 I was thinking of a cookbook, but  | S3 “Salt, Fat, Acid, Heat” sounds int | S4 …I wonder if it’s available at the
 
-     0.00s  user  발화 시작: I need to find a really good Italian restaurant near my hote
-     4.21s  agent 발화 시작: To help me find the perfect spot, could you tell me the name
-     4.21s  user  발화 끝
-     9.82s  user  발화 시작: It’s the Grand Seoul Hotel.
-     9.82s  agent 발화 끝
-    11.20s  <ret> 발화 (turn3 첫 프레임)
-    11.57s  agent 발화 시작: <ret> I found two Italian restaurants near the Grand Seoul H
-    11.57s  user  발화 끝
-    12.28s  ⚡SPAN 주입 [d'=1.08s / d_lead=12.97s]: {"location": "Grand Seoul Hotel", "cuisine": "Italian", "results": [{"
-    24.55s  user  발화 시작: Oh.
-    24.55s  agent 발화 끝
-    24.90s  agent 발화 시작: Bella Notte seems to be the higher-rated of the two. [happy]
-    24.90s  user  발화 끝
-    33.66s  user  발화 시작: Yes, please. For two people, around 7:30 PM.
-    33.66s  agent 발화 끝
-    36.47s  agent 발화 시작: Wow.
-    36.47s  user  발화 끝
-    36.71s  <ret> 발화 (turn8 첫 프레임)
-    36.82s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for two at Bella Nott
-    36.82s  agent 발화 끝
-    37.61s  ⚡SPAN 주입 [d'=0.90s / d_lead=10.17s]: (tool result) {"restaurant name": "Bella Notte", "date": "2026-07-10",
-    46.99s  agent 발화 끝
+     0.00s  user  발화 시작: I'm looking for a nice gift for my friend…
+     3.06s  user  발화 시작: …Sarah. She loves cooking.
+     3.06s  user  발화 끝
+     4.42s  agent 발화 시작: That’s thoughtful! Finding a gift for someone who loves cook
+     4.42s  user  발화 끝
+     8.50s  user  발화 시작: I was thinking of a cookbook, but there are so many.
+     8.50s  agent 발화 끝
+    12.25s  agent 발화 시작: Right.
+    12.25s  user  발화 끝
+    12.57s  <ret> 발화 (turn5 첫 프레임)
+    12.59s  agent 발화 시작: <ret> A cookbook is a wonderful choice, and there are quite 
+    12.59s  agent 발화 끝
+    13.69s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.84s]: A cookbook is a great idea for a cooking enthusiast! "Salt, Fat, Acid,
+    21.43s  user  발화 시작: “Salt, Fat, Acid, Heat” sounds interesting. Could you show m
+    21.43s  agent 발화 끝
+    26.06s  <ret> 발화 (turn7 첫 프레임)
+    26.53s  agent 발화 시작: <ret> Here’s an image of the cover of “Salt, Fat, Acid, Heat
+    26.53s  user  발화 끝
+    27.15s  ⚡SPAN 주입 [d'=1.21s / d_lead=3.74s]: (tool result) Image found: https://www.simonandschuster.com/p/salt-fat
+    30.28s  user  발화 시작: Yeah.
+    30.28s  agent 발화 끝
+    30.62s  user  발화 시작: That looks perfect!—but does it have many recipes, or is it 
+    30.62s  user  발화 끝
+    35.04s  user  발화 시작: …I wonder if it’s available at the bookstore downtown?
+    35.04s  user  발화 끝
+    38.10s  agent 발화 시작: Yeah.
+    38.10s  user  발화 끝
+    38.22s  <ret> 발화 (turn12 첫 프레임)
+    38.44s  agent 발화 시작: <ret> It balances theory and practice quite nicely; it inclu
+    38.44s  agent 발화 끝
+    38.52s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.23s]: "Salt, Fat, Acid, Heat" includes over 100 recipes, but its strength is
+    49.67s  agent 발화 끝

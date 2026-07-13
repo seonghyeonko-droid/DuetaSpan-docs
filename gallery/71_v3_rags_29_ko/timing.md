@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "윤경",
+#     "name": "가서",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,52 +13,63 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "date": "2026-03-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
 #     },
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-02-06",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2026-01-19",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-01-10",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-05-18",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 드래곤볼 슈퍼 백십오화는 언제 방영하나요?
-     2.41s  <ret> 발화 (turn1 첫 프레임)
-     3.02s  agent 발화 시작: <ret> 드래곤볼 슈퍼 백십오화는 이천십칠년 십일월 십이일에 처음 방영되었어요. [happy] 혹시 다른 
-     3.02s  user  발화 끝
-     3.32s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.85s]: Episode 115 of Dragon Ball Super originally aired on November 12, 2017
-    10.86s  agent 발화 끝
+     0.00s  user  발화 시작: 다섯 번째 영화는 제목이 뭐예요?
+     1.87s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> 다섯 번째 영화는 '피프티 셰이즈 프리드'라고 합니다. 이천십팔년에 개봉했대요.
+     2.48s  user  발화 끝
+     2.79s  ⚡SPAN 주입 [d'=0.92s / d_lead=4.46s]: The third film in the Fifty Shades series is called Fifty Shades Freed
+     6.94s  agent 발화 끝

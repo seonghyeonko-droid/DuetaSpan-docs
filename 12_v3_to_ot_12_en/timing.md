@@ -4,56 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Kim",
+#     "name": "Manon",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-06",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-05-03",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-03-12",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-04-23",
+#       "date": "2026-01-31",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2025-12-11",
+#       "date": "2025-12-04",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-20",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-03",
+#       "date": "2026-06-01",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -63,79 +55,97 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Oreus, I was wondering about th | S2 That’s good to know. Is there a wa | S3 So, a blockage in the posterior de | S4 Okay, salmon and berries. Got it. 
+# EXAMINER(FDB-v2) 단계: S1 Hey moshi, do you know who played  | S2 Perfect! I think I’ll get tickets. | S3 You always have good advice, moshi | S4 That sounds perfect! Insadong is a
 
-     0.00s  user  발화 시작: Hi Oreus, I was wondering about the heart.
-     2.91s  agent 발화 시작: Yeah, yeah.
-     2.91s  user  발화 끝
-     3.63s  agent 발화 시작: Hello! I'm happy to talk about the heart with you. Is there 
-     3.63s  agent 발화 끝
-    10.17s  user  발화 시작: Yes, actually. Where does the left coronary artery supply bl
-    10.17s  agent 발화 끝
-    14.17s  <ret> 발화 (turn5 첫 프레임)
-    14.17s  agent 발화 시작: Right.
-    14.17s  user  발화 끝
-    14.48s  ⚡SPAN 주입 [d'=0.52s / d_lead=7.99s]: The left coronary artery supplies blood to the left ventricle and the 
-    14.54s  agent 발화 시작: <ret> The left coronary artery supplies blood to the left ve
-    14.54s  agent 발화 끝
-    22.53s  user  발화 시작: Yeah, yeah.
-    22.53s  agent 발화 끝
-    23.26s  user  발화 시작: Oh, okay. And what about the right coronary artery?
-    23.26s  user  발화 끝
-    26.42s  <ret> 발화 (turn8 첫 프레임)
-    26.52s  ⚡SPAN 주입 [d'=0.53s / d_lead=9.45s]: The right coronary artery supplies blood to the right atrium, right ve
-    26.53s  agent 발화 시작: <ret> The right coronary artery supplies blood to the right 
-    26.53s  user  발화 끝
-    35.97s  user  발화 시작: Okay.
-    35.97s  agent 발화 끝
-    36.34s  user  발화 시작: That’s good to know. Is there a way to keep those arteries h
-    36.34s  user  발화 끝
-    41.06s  agent 발화 시작: Maintaining a heart-healthy lifestyle is key – diet, exercis
-    41.06s  user  발화 끝
-    46.88s  user  발화 시작: I try to exercise, but I struggle with stress. Any quick tip
-    46.88s  agent 발화 끝
-    51.24s  agent 발화 시작: [happy] Certainly. A simple grounding exercise can help. Foc
-    51.24s  user  발화 끝
-    58.14s  agent 발화 시작: …three you can hear, two you can smell, and one you can tast
-    58.14s  agent 발화 끝
-    62.86s  user  발화 시작: …Wait, does the interventricular septum have its own blood s
-    62.86s  agent 발화 끝
-    69.06s  <ret> 발화 (turn16 첫 프레임)
-    69.35s  ⚡SPAN 주입 [d'=1.50s / d_lead=12.35s]: The interventricular septum receives blood supply primarily from both 
-    69.41s  agent 발화 시작: <ret> The interventricular septum receives blood supply prim
-    69.41s  user  발화 끝
-    81.76s  user  발화 시작: So, a blockage in the posterior descending artery could stil
-    81.76s  agent 발화 끝
-    86.12s  agent 발화 시작: Yes, a blockage there could contribute to issues, though its
-    86.12s  user  발화 끝
-    93.75s  user  발화 시작: Mm-hmm.
-    93.75s  agent 발화 끝
-    94.11s  user  발화 시작: I see. What kind of diet is best for heart health?
-    94.11s  user  발화 끝
-    98.11s  agent 발화 시작: Exactly.
-    98.11s  user  발화 끝
-    98.28s  <ret> 발화 (turn22 첫 프레임)
-    98.48s  agent 발화 시작: <ret> A heart-healthy diet emphasizes fruits, vegetables, wh
-    98.48s  agent 발화 끝
-    98.92s  ⚡SPAN 주입 [d'=0.64s / d_lead=11.26s]: A heart-healthy diet emphasizes fruits, vegetables, whole grains, lean
-   109.74s  user  발화 시작: Uh-huh.
-   109.74s  agent 발화 끝
-   110.10s  user  발화 시작: That sounds…restrictive. Are there any foods that are partic
-   110.10s  user  발화 끝
-   114.83s  agent 발화 시작: [curious] There are! Foods rich in omega-3 fatty acids, like
-   114.83s  user  발화 끝
-   122.46s  user  발화 시작: Uh-huh.
-   122.46s  agent 발화 끝
-   122.82s  user  발화 시작: Okay, salmon and berries. Got it. What about sleep? Does tha
-   122.82s  user  발화 끝
-   127.91s  agent 발화 시작: Yeah.
-   127.91s  user  발화 끝
-   128.27s  agent 발화 시작: [sigh] Absolutely. Poor sleep can raise blood pressure and i
-   128.27s  agent 발화 끝
-   137.72s  user  발화 시작: Seven to nine hours… I really struggle to get that much.
-   137.72s  agent 발화 끝
-   141.72s  agent 발화 시작: Okay.
-   141.72s  user  발화 끝
-   142.08s  agent 발화 시작: It’s common. Establishing a regular sleep schedule and creat
-   142.08s  agent 발화 끝
-   150.44s  agent 발화 끝
+     0.00s  user  발화 시작: Hey moshi, do you know who played Michael Myers in Rob Zombi
+     4.08s  <ret> 발화 (turn1 첫 프레임)
+     4.31s  agent 발화 시작: <ret> That would be Daeg Faerch, who played young Michael My
+     4.31s  user  발화 끝
+     4.84s  ⚡SPAN 주입 [d'=0.76s / d_lead=5.97s]: Daeg Faerch portrayed young Michael Myers in Rob Zombie’s 2007 remake 
+    10.28s  user  발화 시작: Yeah.
+    10.28s  agent 발화 끝
+    10.61s  user  발화 시작: Oh, interesting! I didn’t realize it was a young actor.
+    10.61s  user  발화 끝
+    13.93s  agent 발화 시작: [happy] It’s easy to forget, isn't it? Often, those roles ar
+    13.93s  user  발화 끝
+    19.90s  user  발화 시작: Yeah, you're right. Speaking of movies, what’s playing at th
+    19.90s  agent 발화 끝
+    24.21s  agent 발화 시작: Mm-hmm.
+    24.21s  user  발화 끝
+    24.26s  <ret> 발화 (turn7 첫 프레임)
+    24.54s  agent 발화 시작: <ret> At the Grand Cinema tonight, they’re showing “The Haun
+    24.54s  agent 발화 끝
+    24.57s  ⚡SPAN 주입 [d'=0.31s / d_lead=7.63s]: (tool result) Grand Cinema: “The Haunting in the Attic” (7:00 PM, 9:30
+    32.17s  user  발화 시작: Okay.
+    32.17s  agent 발화 끝
+    32.50s  user  발화 시작: Hmm, “The Haunting in the Attic” sounds good. Can you check 
+    32.50s  user  발화 끝
+    39.47s  agent 발화 시작: Uh-huh.
+    39.47s  user  발화 끝
+    39.65s  <ret> 발화 (turn11 첫 프레임)
+    39.80s  agent 발화 시작: <ret> There are currently twenty-three seats available for t
+    39.80s  agent 발화 끝
+    39.95s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.64s]: (tool result) Grand Cinema: “The Haunting in the Attic” 7:00 PM - 23 s
+    45.43s  user  발화 시작: Perfect! I think I’ll get tickets.
+    45.43s  agent 발화 끝
+    47.42s  agent 발화 시작: That sounds like a lovely evening plan. I hope you enjoy the
+    47.42s  user  발화 끝
+    51.74s  user  발화 시작: Mhm.
+    51.74s  agent 발화 끝
+    52.07s  user  발화 시작: Oh, hold on a sec, just gotta tell Mark…
+    52.07s  user  발화 끝
+    55.05s  user  발화 시작: Sorry about that. Could you remind me what time my appointme
+    55.05s  user  발화 끝
+    60.09s  <ret> 발화 (turn17 첫 프레임)
+    60.69s  agent 발화 시작: <ret> You have a doctor’s appointment with Dr. Lee next Tues
+    60.69s  user  발화 끝
+    60.93s  ⚡SPAN 주입 [d'=0.85s / d_lead=4.31s]: [2024-07-17] I have a doctor’s appointment with Dr. Lee next Tuesday a
+    65.00s  user  발화 시작: Yeah.
+    65.00s  agent 발화 끝
+    65.33s  user  발화 시작: Oh, right! Thanks for the reminder. I always forget these th
+    65.33s  user  발화 끝
+    68.98s  agent 발화 시작: [sigh] It’s completely understandable to feel overwhelmed wi
+    68.98s  user  발화 끝
+    74.29s  user  발화 시작: You always have good advice, moshi. Hey, what’s the weather 
+    74.29s  agent 발화 끝
+    79.19s  <ret> 발화 (turn22 첫 프레임)
+    79.26s  agent 발화 시작: <ret> The weather in Busan is currently twenty-eight point t
+    79.26s  user  발화 끝
+    80.20s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.30s]: (tool result) Busan: 28.3°C, humidity 68%, wind 7.2 km/h, partly cloud
+    85.56s  user  발화 시작: Mhm.
+    85.56s  agent 발화 끝
+    85.90s  user  발화 시작: That sounds nice. Warmer than here, that’s for sure.
+    85.90s  user  발화 끝
+    88.88s  agent 발화 시작: Yeah.
+    88.88s  user  발화 끝
+    89.21s  agent 발화 시작: It does sound pleasant. Sometimes a change of scenery is jus
+    89.21s  agent 발화 끝
+    93.85s  user  발화 시작: Actually, I’m thinking about planning a trip to Seoul next m
+    93.85s  agent 발화 끝
+    97.50s  agent 발화 시작: Mm-hmm.
+    97.50s  user  발화 끝
+    97.83s  agent 발화 시작: [curious] Seoul is a vibrant city! What are you hoping to do
+    97.83s  agent 발화 끝
+   102.15s  user  발화 시작: I’d like to find a traditional Korean tea house. Do you know
+   102.15s  agent 발화 끝
+   107.23s  <ret> 발화 (turn31 첫 프레임)
+   107.39s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.96s]: (tool result) Tteuran Tea House (Insadong): 4.5 stars, traditional Kor
+   107.45s  agent 발화 시작: <ret> Tteuran Tea House in Insadong has four and a half star
+   107.45s  user  발화 끝
+   114.42s  user  발화 시작: That sounds perfect! Insadong is a nice area.
+   114.42s  agent 발화 끝
+   117.07s  agent 발화 시작: It is! It’s a beautiful neighborhood, full of history and cu
+   117.07s  user  발화 끝
+   120.72s  user  발화 시작: Okay, one last thing. Can you set an alarm for 6:30 AM tomor
+   120.72s  agent 발화 끝
+   124.51s  <ret> 발화 (turn35 첫 프레임)
+   125.03s  agent 발화 시작: <ret> An alarm is now set for 6:30 AM tomorrow morning.
+   125.03s  user  발화 끝
+   125.30s  ⚡SPAN 주입 [d'=1.08s / d_lead=3.32s]: (tool result) Alarm set for 6:30 AM tomorrow.
+   128.35s  user  발화 시작: Uh-huh.
+   128.35s  agent 발화 끝
+   128.68s  user  발화 시작: Great, thank you so much, moshi.
+   128.68s  user  발화 끝
+   130.67s  agent 발화 시작: [happy] You’re very welcome. Remember to be kind to yourself
+   130.67s  user  발화 끝
+   134.98s  agent 발화 끝

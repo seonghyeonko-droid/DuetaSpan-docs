@@ -4,110 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Nathan",
+#     "name": "Anton",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-06",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
 #     },
 #     {
-#       "date": "2026-05-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-27",
+#       "category": "home",
+#       "text": "User's home address is 696 Maple Drive."
 #     },
 #     {
-#       "date": "2026-03-11",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-04-21",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-02-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-12-23",
+#       "date": "2026-02-16",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-08",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-03",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bami? That’s… unusual. What exactl | S2 Hmm. That does sound good. I alway | S3 Okay… well, the project is a marke | S4 I think… I think I could really us
+# EXAMINER(FDB-v2) 단계: S1 What exactly *can* you do? I’m jus | S2 Mentioning it? What do I even *say | S3 Hmm. I don’t know… I’m worried the | S4 I… I think I have a friend like th
 
-     0.00s  agent 발화 시작: Hello Nathan, I’m Bami.
-     1.48s  user  발화 시작: Bami? That’s… unusual. What exactly *can* you help with? I’m
-     1.48s  agent 발화 끝
-     7.39s  agent 발화 시작: [happy] It is a bit different, isn’t it? I can help break do
-     7.39s  user  발화 끝
-    19.60s  user  발화 시작: Yeah.
-    19.60s  agent 발화 끝
-    19.97s  user  발화 시작: Spaced repetition… I’ve heard of that. Is it really that hel
-    19.97s  user  발화 끝
-    25.14s  agent 발화 시작: Yeah, totally.
-    25.14s  user  발화 끝
-    25.88s  agent 발화 시작: It can be really powerful! It’s based on how our brains lear
-    25.88s  agent 발화 끝
-    37.34s  user  발화 시작: Hmm. That does sound good. I always end up cramming, and the
-    37.34s  agent 발화 끝
-    42.52s  agent 발화 시작: [curious] That’s incredibly common, Nathan. Many people find
-    42.52s  user  발화 끝
-    53.24s  user  발화 시작: Yeah.
-    53.24s  agent 발화 끝
-    53.61s  user  발화 시작: Okay… well, the project is a marketing plan for a new app. I
-    53.61s  user  발화 끝
-    62.49s  agent 발화 시작: Yeah.
-    62.49s  user  발화 끝
-    62.86s  agent 발화 시작: That’s a clear starting point. Let’s focus just on the compe
-    62.86s  agent 발화 끝
-    75.06s  user  발화 시작: Mhm.
-    75.06s  agent 발화 끝
-    75.43s  agent 발화 시작: It absolutely is. Think of it as smaller puzzles, instead of
-    75.43s  user  발화 끝
-    86.89s  user  발화 시작: The Pomodoro Technique? I keep hearing about that too. Is it
-    86.89s  agent 발화 끝
-    92.07s  agent 발화 시작: [laugh] It’s wonderfully simple, yes! Twenty-five minutes of
-    92.07s  user  발화 끝
-   103.16s  user  발화 시작: I think… I think I could really use that. I get so distracte
-   103.16s  agent 발화 끝
-   107.97s  agent 발화 시작: [happy] I’m glad to hear it, Nathan. Distractions are normal
-   107.97s  user  발화 끝
-   119.43s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Anton, I’m Siara, and I’m here to help you build stron
+     7.14s  user  발화 시작: What exactly *can* you do? I’m just… a bit lonely, I guess.
+     7.14s  agent 발화 끝
+    11.42s  agent 발화 시작: [happy] I’m glad you asked, Anton. I can offer advice on mak
+    11.42s  user  발화 끝
+    22.13s  user  발화 시작: It’s just… I always feel like I’m the one reaching out. It’s
+    22.13s  agent 발화 끝
+    26.77s  agent 발화 시작: That’s a very common feeling. It's wonderful you take the in
+    26.77s  user  발화 끝
+    36.04s  user  발화 시작: Mentioning it? What do I even *say*? Sounds awkward.
+    36.04s  agent 발화 끝
+    39.26s  agent 발화 시작: It can feel that way, but a simple, “Hey, I’ve been doing mo
+    39.26s  user  발화 끝
+    51.39s  user  발화 시작: Oh.
+    51.39s  agent 발화 끝
+    51.75s  user  발화 시작: Hmm. I don’t know… I’m worried they’ll think I’m needy.
+    51.75s  user  발화 끝
+    55.32s  agent 발화 시작: [sigh] That’s a valid concern, Anton. But true friends won't
+    55.32s  user  발화 끝
+    65.31s  user  발화 시작: Okay, okay. That makes sense. But what if they *don’t* respo
+    65.31s  agent 발화 끝
+    69.59s  agent 발화 시작: Yeah.
+    69.59s  user  발화 끝
+    69.95s  agent 발화 시작: It’s possible, and it’s okay to feel disappointed. But their
+    69.95s  agent 발화 끝
+    79.58s  user  발화 시작: Yeah.
+    79.58s  agent 발화 끝
+    79.94s  agent 발화 시작: [curious] Sometimes, Anton, we hold onto friendships that ar
+    79.94s  user  발화 끝
+    90.65s  user  발화 시작: I… I think I have a friend like that. I'll think about what 
+    90.65s  agent 발화 끝
+    96.71s  user  발화 끝

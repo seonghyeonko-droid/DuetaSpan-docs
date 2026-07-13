@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Theo",
+#     "name": "Rosa",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-05-05",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-18",
+#       "date": "2026-01-17",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-01-16",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-12-09",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-08",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "category": "home",
-#       "text": "User's home address is 342 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-03",
+#       "date": "2026-04-17",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,7 +48,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-13",
+#       "date": "2026-04-03",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-19",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -63,45 +66,30 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Area, good to meet you too. I’m | S2 …actually, before we start, could  | S3 Okay, doing that. In… two… three…  | S4 Yes, please. What does that involv
 
-     0.00s  agent 발화 시작: Hi Theo, I’m Area. It's lovely to meet you.
-     3.32s  user  발화 시작: Hi Area, good to meet you too. I’m feeling pretty stressed l
-     3.32s  agent 발화 끝
-     7.75s  agent 발화 시작: [happy] I understand, Theo. Stress is very common. Perhaps w
-     7.75s  user  발화 끝
-    14.02s  user  발화 시작: Sure, that sounds good. What do I do?
-    14.02s  agent 발화 끝
-    16.98s  agent 발화 시작: Close your eyes, if you’re comfortable, and breathe in deepl
-    16.98s  user  발화 끝
-    22.88s  user  발화 시작: …actually, before we start, could you remind me what we talk
-    22.88s  agent 발화 끝
-    29.85s  <ret> 발화 (turn6 첫 프레임)
-    29.89s  agent 발화 시작: <ret> You were asking about mesh routers for your three-stor
-    29.89s  user  발화 끝
-    30.57s  ⚡SPAN 주입 [d'=0.71s / d_lead=5.17s]: [2026-03-03] Past chat — Setting up a home network: asked about mesh r
-    35.06s  user  발화 시작: Okay.
-    35.06s  agent 발화 끝
-    35.43s  user  발화 시작: Oh, right! That’s it. Thanks for reminding me.
-    35.43s  user  발화 끝
-    38.38s  agent 발화 시작: You're very welcome, Theo. Now, back to the breathing. Breat
-    38.38s  user  발화 끝
-    45.03s  user  발화 시작: Yeah.
-    45.03s  agent 발화 끝
-    45.40s  user  발화 시작: Okay, doing that. In… two… three… four.
-    45.40s  user  발화 끝
-    47.98s  agent 발화 시작: [curious] Excellent. Now, hold your breath for a moment, and
-    47.98s  user  발화 끝
-    54.62s  user  발화 시작: Yeah.
-    54.62s  agent 발화 끝
-    54.99s  user  발화 시작: Holding… and out… two… three… four… five… six. That feels… c
-    54.99s  user  발화 끝
-    59.42s  agent 발화 시작: [happy] That’s wonderful to hear, Theo. Repeating this a few
-    59.42s  user  발화 끝
-    69.38s  user  발화 시작: Yes, please. What does that involve?
-    69.38s  agent 발화 끝
-    71.60s  agent 발화 시작: It’s about connecting with the present moment using your sen
-    71.60s  user  발화 끝
-    78.61s  user  발화 시작: Okay, let me look around…
-    78.61s  agent 발화 끝
-    80.46s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Rosa, I'm Velilo.
+     1.31s  user  발화 시작: Um, I was just wondering if you remember anything about my d
+     1.31s  agent 발화 끝
+     4.75s  <ret> 발화 (turn2 첫 프레임)
+     5.24s  agent 발화 시작: <ret> Yes, I do! You mentioned you have a Corgi named Mochi 
+     5.24s  user  발화 끝
+     5.76s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.92s]: [2026-05-05] User has a Corgi named Mochi.
+    10.16s  user  발화 시작: Yeah, yeah.
+    10.16s  agent 발화 끝
+    10.82s  user  발화 시작: Oh, that's right! And I'm allergic to pollen, I recall telli
+    10.82s  user  발화 끝
+    14.75s  agent 발화 시작: Mhm.
+    14.75s  user  발화 끝
+    15.04s  <ret> 발화 (turn6 첫 프레임)
+    15.08s  agent 발화 시작: <ret> That’s correct, Rosa. You also told me about your poll
+    15.08s  agent 발화 끝
+    15.87s  ⚡SPAN 주입 [d'=0.83s / d_lead=4.59s]: [2026-01-17] User is allergic to pollen.
+    19.66s  user  발화 시작: Uh-huh.
+    19.66s  agent 발화 끝
+    19.99s  user  발화 시작: Right. I’m training for a marathon, so sleep is…challenging.
+    19.99s  user  발화 끝
+    22.94s  agent 발화 시작: Mm-hmm.
+    22.94s  user  발화 끝
+    23.27s  agent 발화 시작: I see. Marathon training and good sleep can be tough to bala
+    23.27s  agent 발화 끝
+    33.43s  agent 발화 끝

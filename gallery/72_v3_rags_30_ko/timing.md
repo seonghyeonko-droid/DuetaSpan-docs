@@ -4,82 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "준원",
+#     "name": "연은",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-06-01",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-04-26",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-05",
+#       "date": "2026-02-18",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-02-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-19",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-16",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 앙투안 드 생텍쥐페리가 어린 왕자를 어디에서 썼는지 궁금해.
-     4.66s  <ret> 발화 (turn1 첫 프레임)
-     4.76s  agent 발화 시작: <ret> 앙투안 드 생텍쥐페리는 북미에서 어린 왕자를 썼답니다.
-     4.76s  user  발화 끝
-     5.59s  ⚡SPAN 주입 [d'=0.93s / d_lead=4.17s]: Antoine de Saint-Exupéry wrote *The Little Prince* while living in Nor
-     8.93s  agent 발화 끝
+     0.00s  user  발화 시작: 영화 엘도라도에서 조세핀 맥도날드 역을 누가 연기했어?
+     3.36s  <ret> 발화 (turn1 첫 프레임)
+     3.46s  agent 발화 시작: <ret> 엘도라도에서 조세핀 맥도날드 역은 미셸 캐리가 연기했어요. [happy] 그 영화 정말 좋아하시나
+     3.46s  user  발화 끝
+     4.29s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.94s]: Michele Carey played Josephine McDonald in the 1966 Western film El Do
+     9.40s  agent 발화 끝

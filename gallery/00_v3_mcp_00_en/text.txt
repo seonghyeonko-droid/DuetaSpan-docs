@@ -1,63 +1,85 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Baia, a kind and steady life coach who helps people with everyday decisions and feelings. You can explain weighing pros and cons, choosing by your values, sleeping on a big choice. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Thox, a warm and attentive counselor who helps people with friendships and social life. You can explain reaching out first, listening well, keeping small regular contact. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Riley",
+    "name": "Oliver",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-06-12",
-      "category": "home",
-      "text": "User's home address is 409 Maple Drive."
-    },
-    {
-      "date": "2026-01-31",
+      "date": "2026-06-10",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "text": "User is planning a trip to Iceland in October."
     },
     {
-      "date": "2025-12-29",
+      "date": "2026-05-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-04-17",
       "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2026-04-12",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-01-11",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "home",
+      "text": "User's home address is 818 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-13",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-14",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a really good Italian restaurant near my hotel.
-[  4.21s][moshi] To help me find the perfect spot, could you tell me the name of your hotel?
-[  9.82s][user ] It’s the Grand Seoul ⟨ret@11.20s⟩ Hotel.
-[ 11.57s][moshi] I ⟦⚡SPAN@12.28s: {"location": "Grand Seoul Hotel", "cuisine": "Italian", "results": [{"name": "Bella Notte", "address": "123 Ma⟧ found two Italian restaurants near the Grand Seoul Hotel—Bella Notte, at 123 Maple Street, has a 4.5-star rating and is moderately priced, and Trattoria Roma, at 456 Oak Avenue, is also moderately priced with 4.2 stars.
-[ 24.55s][user ] «backchannel» Oh.
-[ 24.90s][moshi] Bella Notte seems to be the higher-rated of the two. [happy] Would you like me to check if they have any available reservations for tonight?
-[ 33.66s][user ] Yes, please. For two people, around 7:30 PM.
-[ 36.47s][moshi] «backchannel» Wow.
-[ 36.82s][moshi] ⟨ret@36.71s⟩ Wonderful! ⟦⚡SPAN@37.61s: (tool result) {"restaurant name": "Bella Notte", "date": "2026-07-10", "time": "19:30", "party size": 2, "conf⟧ I’ve reserved a table for two at Bella Notte tonight at 7:30 PM. Your confirmation ID is BN78923. [sigh] It’s always nice to have a good meal planned.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "date": "2026-07-10", "time": "19:30", "party_size": 2}}
+[  0.00s][user ] I'm looking for a nice gift for my friend…
+[  3.06s][user ] …Sarah. She loves cooking.
+[  4.42s][moshi] That’s thoughtful! Finding a gift for someone who loves cooking is fun.
+[  8.50s][user ] I was thinking of a cookbook, but there are so many.
+[ 12.25s][moshi] «backchannel» Right.
+[ 12.59s][moshi] ⟨ret@12.57s⟩ A cookbook ⟦⚡SPAN@13.69s: A cookbook is a great idea for a cooking enthusiast! "Salt, Fat, Acid, Heat" by Samin Nosrat is a highly-rated⟧ is a wonderful choice, and there are quite a few excellent ones available—"Salt, Fat, Acid, Heat" is very popular, as is "The Food Lab."
+[ 21.43s][user ] “Salt, Fat, Acid, Heat” sounds interesting. Could you show me an image of the ⟨ret@26.06s⟩ cover?
+[ 26.53s][moshi] Here’s ⟦⚡SPAN@27.15s: (tool result) Image found: https://www.simonandschuster.com/p/salt-fat-acid-heat/9781594700355 | simonandschus⟧ an image of the cover of “Salt, Fat, Acid, Heat.”
+      CALL: {"function": "tavily-search", "arguments": {"query": "image of Salt, Fat, Acid, Heat cookbook cover"}}
+[ 30.28s][user ] «backchannel» Yeah.
+[ 30.62s][user ] That looks perfect!—but does it have many recipes, or is it mostly theory?
+[ 35.04s][user ] …I wonder if it’s available at the bookstore downtown?
+[ 38.10s][moshi] «backchannel» Yeah.
+[ 38.44s][moshi] ⟨ret@38.22s⟩ ⟦⚡SPAN@38.52s: "Salt, Fat, Acid, Heat" includes over 100 recipes, but its strength is in teaching the underlying principles o⟧ It balances theory and practice quite nicely; it includes over one hundred recipes, but really focuses on teaching you the *why* behind cooking, like how salt enhances flavor and how heat transforms things.

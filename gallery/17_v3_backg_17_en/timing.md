@@ -4,99 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Caleb",
+#     "name": "Dylan",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
+#       "date": "2026-05-01",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-04-21",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-12",
+#       "date": "2026-04-10",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "date": "2026-04-09",
+#       "category": "home",
+#       "text": "User's home address is 634 Maple Drive."
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-12-24",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-21",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-06",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-19",
+#       "date": "2026-04-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Nellana, do you know how many  | S2 Um, I'm trying to get motivated to | S3 That… actually sounds really helpf | S4 Did you hear about the traffic on 
+# EXAMINER(FDB-v2) 단계: S1 I was reading about Chinese histor | S2 Oh, that’s interesting. I always t | S3 That makes sense. So, the Ming dyn | S4 …Wait, how long *is* the Great Wal
 
-     0.00s  user  발화 시작: Hey Nellana, do you know how many episodes are in the first 
-     4.69s  <ret> 발화 (turn1 첫 프레임)
-     4.99s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.57s]: The first season of Jack Ryan consists of eight episodes, each approxi
-     5.27s  agent 발화 시작: <ret> The first season of Jack Ryan has eight episodes, each
-     5.27s  user  발화 끝
-    13.84s  user  발화 시작: Oh, okay. That’s good to know.
-    13.84s  agent 발화 끝
-    15.81s  agent 발화 시작: I’m glad I could help!
-    15.81s  user  발화 끝
-    17.46s  user  발화 시작: Um, I'm trying to get motivated to study for my history exam
-    17.46s  agent 발화 끝
-    22.40s  agent 발화 시작: Mm-hmm.
-    22.40s  user  발화 끝
-    22.73s  agent 발화 시작: [curious] History can be daunting, but breaking it down can 
-    22.73s  agent 발화 끝
-    29.32s  user  발화 시작: Uh-huh.
-    29.32s  agent 발화 끝
-    29.65s  agent 발화 시작: It involves working in focused 25-minute bursts, followed by
-    29.65s  user  발화 끝
-    36.57s  user  발화 시작: That… actually sounds really helpful.
-    36.57s  agent 발화 끝
-    38.22s  agent 발화 시작: [happy] Wonderful! It’s all about finding what works best fo
-    38.22s  user  발화 끝
-    44.81s  user  발화 시작: Yeah, totally.
-    44.81s  agent 발화 끝
-    45.47s  user  발화 시작: Did you hear about the traffic on Elm Street? It’s a nightma
-    45.47s  user  발화 끝
-    49.42s  agent 발화 시작: Uh-huh.
-    49.42s  user  발화 끝
-    49.75s  agent 발화 시작: And remember, small steps add up to big progress. Don't try 
-    49.75s  agent 발화 끝
-    55.02s  agent 발화 끝
+     0.00s  user  발화 시작: I was reading about Chinese history, and I’m curious – which
+     6.31s  <ret> 발화 (turn1 첫 프레임)
+     6.61s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.53s]: The Great Wall of China was built over centuries, but the Qin dynasty 
+     6.89s  agent 발화 시작: <ret> The Great Wall wasn’t built all at once, but the Qin d
+     6.89s  user  발화 끝
+    17.42s  user  발화 시작: Oh, that’s interesting. I always thought it was much later.
+    17.42s  agent 발화 끝
+    21.47s  agent 발화 시작: Mm-hmm.
+    21.47s  user  발화 끝
+    21.87s  agent 발화 시작: It’s a common misconception! Later dynasties, especially the
+    21.87s  agent 발화 끝
+    30.38s  user  발화 시작: That makes sense. So, the Ming dynasty did a lot of work on 
+    30.38s  agent 발화 끝
+    36.46s  agent 발화 시작: Okay.
+    36.46s  user  발화 끝
+    36.56s  <ret> 발화 (turn7 첫 프레임)
+    36.80s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.29s]: The Ming dynasty (1368–1644) undertook extensive construction and reno
+    36.86s  agent 발화 시작: <ret> The Ming dynasty—from 1368 to 1644—did a huge amount o
+    36.86s  agent 발화 끝
+    44.15s  user  발화 시작: …Wait, how long *is* the Great Wall, actually?
+    44.15s  agent 발화 끝
+    47.00s  <ret> 발화 (turn9 첫 프레임)
+    47.33s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.72s]: The total length of the Great Wall, including all its branches, is est
+    47.39s  agent 발화 시작: <ret> The total length, including all its branches, is estim
+    47.39s  user  발화 끝
+    57.11s  agent 발화 끝

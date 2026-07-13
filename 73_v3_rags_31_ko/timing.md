@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "예호",
+#     "name": "혜국",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,45 +12,43 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
+#       "date": "2026-06-10",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-05-29",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-04-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-02-13",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-12-07",
+#       "date": "2026-04-22",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-21",
+#       "date": "2026-03-21",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-06",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,9 +59,11 @@
 # }
 
 
-     0.00s  user  발화 시작: 영화에 집착하는 아기는 누구야?
-     1.96s  <ret> 발화 (turn1 첫 프레임)
-     2.44s  agent 발화 시작: <ret> 영화에 집착하는 아기는 네이선과 니콜라스 마이어스예요. [happy] 귀여운 아기들이죠?
-     2.44s  user  발화 끝
-     2.60s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.50s]: Nathan and Nicolas Myers are the babies obsessed in the movie.
-     7.94s  agent 발화 끝
+     0.00s  user  발화 시작: 게임 오브 스론즈에서 로브 스타크 부인을 연기한 사람은 누구야?
+     3.58s  agent 발화 시작: 그렇죠.
+     3.58s  user  발화 끝
+     3.78s  <ret> 발화 (turn2 첫 프레임)
+     3.98s  agent 발화 시작: <ret> 로브 스타크의 부인 역할은 탈리사 메이거가 맡았어요.
+     3.98s  agent 발화 끝
+     4.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.79s]: Talisa Maegyr was a fictional character in the fourth and fifth season
+     6.77s  agent 발화 끝

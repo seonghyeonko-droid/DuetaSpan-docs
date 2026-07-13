@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "라찬",
+#     "name": "가형",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-04-30",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-06",
+#       "date": "2026-04-02",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-02-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-12-09",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-24",
+#       "date": "2026-03-08",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-03",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -50,53 +58,34 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 아레아님. 요즘 좀 힘든 일이 많아서요. | S2 아, 그런데 지난번에 아이슬란드 여행 계획 얘기했었죠? | S3 춥겠네요. 옷을 따뜻하게 입어야겠어요— | S4 블루 라군 온천은 꼭 가보고 싶네요. 예약은 어떻게 해야 하나
 
-     0.00s  agent 발화 시작: 안녕하세요, 라찬님. 저는 아레아입니다. 스트레스 해소와 마음 챙김을 도와드리는 상담사예요.
-     4.99s  user  발화 시작: 안녕하세요, 아레아님. 요즘 좀 힘든 일이 많아서요.
-     4.99s  agent 발화 끝
-     8.48s  agent 발화 시작: 힘든 일이 있으시다니 안타깝네요. 혹시 지금 바로 짧은 호흡 운동을 해 보시겠어요?
-     8.48s  user  발화 끝
-    14.47s  user  발화 시작: 네, 좋아요. 어떻게 해야 하나요?
-    14.47s  agent 발화 끝
-    16.97s  agent 발화 시작: 숨을 깊게 들이마시고 천천히 내쉬는 걸 반복해 보세요. 사초 동안 숨을 들이마시고, 육초 동안 내쉬는 거예요
-    16.97s  user  발화 끝
-    24.95s  user  발화 시작: 네, 따라 해 볼게요.
-    24.95s  agent 발화 끝
-    26.95s  agent 발화 시작: 좋습니다. 숨을 들이마시고… 내쉬고… 아주 잘하고 계세요.
-    26.95s  user  발화 끝
-    30.44s  user  발화 시작: 아, 그런데 지난번에 아이슬란드 여행 계획 얘기했었죠?
-    30.44s  agent 발화 끝
-    33.46s  <ret> 발화 (turn8 첫 프레임)
-    33.86s  ⚡SPAN 주입 [d'=0.40s / d_lead=3.49s]: [2026-06-11] User is planning a trip to Iceland in October.
-    33.93s  agent 발화 시작: <ret> 네, 기억나요. 시월에 아이슬란드 여행을 계획하고 계셨죠.
-    33.93s  user  발화 끝
-    37.43s  user  발화 시작: 아이슬란드 날씨가 시월에는 어떤가요?
-    37.43s  agent 발화 끝
-    39.40s  <ret> 발화 (turn10 첫 프레임)
-    39.42s  agent 발화 시작: <ret> 아이슬란드 레이캬비크의 현재 기온은 팔 점 이도이고, 시월의 평균 기온은 오도에서 십도 사이로 예
-    39.42s  user  발화 끝
-    39.77s  ⚡SPAN 주입 [d'=0.36s / d_lead=10.48s]: (tool result) Current conditions in Reykjavik, Iceland are 8.2°C, humi
-    49.90s  user  발화 시작: 예.
-    49.90s  agent 발화 끝
-    50.40s  user  발화 시작: 춥겠네요. 옷을 따뜻하게 입어야겠어요—
-    50.40s  user  발화 끝
-    52.40s  user  발화 시작: …혹시 아이슬란드 여행하면서 볼 만한 특별한 곳 있을까요?
-    52.40s  user  발화 끝
-    56.39s  agent 발화 시작: 네.
-    56.39s  user  발화 끝
-    56.89s  agent 발화 시작: 아이슬란드에는 정말 아름다운 곳이 많아요. 블루 라군 온천이나 골든 서클 관광 코스가 유명하고요.
-    56.89s  agent 발화 끝
-    63.38s  user  발화 시작: 네.
-    63.38s  agent 발화 끝
-    63.88s  user  발화 시작: 블루 라군 온천은 꼭 가보고 싶네요. 예약은 어떻게 해야 하나요?
-    63.88s  user  발화 끝
-    68.44s  <ret> 발화 (turn18 첫 프레임)
-    68.87s  agent 발화 시작: <ret> 블루 라군 온천이 이천이십육년 시월 십오일 오전 열시에 일인으로 예약되었습니다. 확인 코드는 비 
-    68.87s  user  발화 끝
-    69.14s  ⚡SPAN 주입 [d'=0.70s / d_lead=11.98s]: (tool result) Reservation confirmed for Blue Lagoon on October 15, 202
-    80.84s  user  발화 시작: 와, 정말 감사합니다!
-    80.84s  agent 발화 끝
-    82.34s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-    82.34s  user  발화 끝
-    83.84s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 가형님. 저는 베리로입니다. 편안한 수면과 휴식을 도와드리는 상담사예요.
+     4.90s  user  발화 시작: 네.
+     4.90s  agent 발화 끝
+     5.44s  user  발화 시작: 안녕하세요, 베리로 씨. 혹시 제가 전에 알레르기 때문에 얘기했던 적 있나요?
+     5.44s  user  발화 끝
+    11.43s  agent 발화 시작: 네.
+    11.43s  user  발화 끝
+    11.68s  <ret> 발화 (turn4 첫 프레임)
+    11.98s  agent 발화 시작: <ret> 네, 가형님. 이천이십육년 사월 삼십일에 해산물 알레르기가 있다고 말씀하셨었어요.
+    11.98s  agent 발화 끝
+    12.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=4.90s]: [2026-04-30] User is allergic to shellfish.
+    16.88s  user  발화 시작: 네.
+    16.88s  agent 발화 끝
+    17.42s  user  발화 시작: 아, 그렇군요. 그럼 혹시 제가 유제품은 잘 소화 못 하는 것도 기록해 두셨나요?
+    17.42s  user  발화 끝
+    24.50s  agent 발화 시작: 네.
+    24.50s  user  발화 끝
+    24.60s  <ret> 발화 (turn8 첫 프레임)
+    24.90s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.36s]: [2026-04-02] User is lactose-intolerant.
+    25.05s  agent 발화 시작: <ret> 네, 맞아요. 이천이십육년 사월 이일에는 유당불내증이 있다고 말씀해주셨습니다.
+    25.05s  agent 발화 끝
+    29.40s  user  발화 시작: 와, 정말 꼼꼼하시네요. [laugh] 혹시 제가 좋아하는 음식은 뭐였죠?
+    29.40s  agent 발화 끝
+    34.30s  agent 발화 시작: 네.
+    34.30s  user  발화 끝
+    34.58s  <ret> 발화 (turn11 첫 프레임)
+    34.85s  agent 발화 시작: <ret> 가형님께서는 에티오피아 음식을 가장 좋아하시는군요.
+    34.85s  agent 발화 끝
+    35.78s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.72s]: [2026-02-24] User's favorite cuisine is Ethiopian.
+    37.57s  agent 발화 끝

@@ -4,74 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Jordan",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "home",
-#       "text": "User's home address is 299 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-05-18",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-04-16",
+#       "date": "2026-04-12",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-02-20",
+#       "date": "2026-02-24",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "date": "2026-02-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2026-01-19",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-01-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
-#       "title": "Researching a used car",
+#       "date": "2026-02-28",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-13",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did Dragon Ball Super episode one hundred fifteen come 
-     4.51s  <ret> 발화 (turn1 첫 프레임)
-     4.77s  agent 발화 시작: <ret> That episode originally aired on November twelfth, 201
-     4.77s  user  발화 끝
-     5.31s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.81s]: Dragon Ball Super episode 115, titled "With Great Joy! The Saiyans' Re
-    12.58s  agent 발화 끝
+     0.00s  user  발화 시작: What was the name of the third movie in the Fifty Shades ser
+     3.94s  <ret> 발화 (turn1 첫 프레임)
+     4.21s  agent 발화 시작: <ret> Oh, that’s a good question! The third movie is called 
+     4.21s  user  발화 끝
+     4.75s  ⚡SPAN 주입 [d'=0.80s / d_lead=5.83s]: The third film in the Fifty Shades of Grey series is titled Fifty Shad
+    10.04s  agent 발화 끝

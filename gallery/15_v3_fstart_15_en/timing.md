@@ -4,104 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Marie",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-06",
+#       "date": "2026-05-25",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-02-27",
+#       "date": "2026-05-23",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-05-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-01-26",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "category": "home",
-#       "text": "User's home address is 694 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-21",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-06",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm really struggling to get start | S2 Hmm, okay. I've heard of Simon Sch | S3 That sounds promising. I get easil | S4 Oh, like, set a timer for 25 minut
+# EXAMINER(FDB-v2) 단계: S1 I'm thinking of biking to that new | S2 That sounds perfect! But wait, is  | S3 Yes, please do! Reviews would be g | S4 That's good to know. Thanks, Nuen!
 
-     0.00s  user  발화 시작: I'm really struggling to get started on this history paper. 
-     5.58s  agent 발화 시작: [happy] Oh, that's totally understandable! Papers can feel h
-     5.58s  user  발화 끝
-    13.95s  user  발화 시작: Well, it's about the French Revolution, and I don’t even kno
-    13.95s  agent 발화 끝
-    19.90s  <ret> 발화 (turn3 첫 프레임)
-    19.94s  agent 발화 시작: <ret> The French Revolution can feel daunting, but lots of g
-    19.94s  user  발화 끝
-    20.00s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.77s]: (tool result) The French Revolution is a complex period, with many con
-    30.70s  user  발화 시작: Hmm, okay. I've heard of Simon Schama. Is there a specific b
-    30.70s  agent 발화 끝
-    37.08s  agent 발화 시작: Yeah.
-    37.08s  user  발화 끝
-    37.43s  <ret> 발화 (turn6 첫 프레임)
-    37.48s  agent 발화 시작: <ret> Simon Schama’s *Citizens* is considered his best work 
-    37.48s  agent 발화 끝
-    37.53s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.77s]: (tool result) Simon Schama’s *Citizens: A Chronicle of the French Revo
-    46.25s  user  발화 시작: Yeah.
-    46.25s  agent 발화 끝
-    46.65s  user  발화 시작: That sounds promising. I get easily distracted though.
-    46.65s  user  발화 끝
-    49.84s  agent 발화 시작: Uh-huh.
-    49.84s  user  발화 끝
-    50.24s  agent 발화 시작: [curious] I know that feeling! Perhaps the Pomodoro Techniqu
-    50.24s  agent 발화 끝
-    59.01s  user  발화 시작: Mm-hmm.
-    59.01s  agent 발화 끝
-    59.41s  user  발화 시작: Oh, like, set a timer for 25 minutes and just *work*?
-    59.41s  user  발화 끝
-    63.79s  agent 발화 시작: Exactly! It’s all about focused effort, then rewarding yours
-    63.79s  user  발화 끝
-    71.77s  agent 발화 끝
+     0.00s  user  발화 시작: I'm thinking of biking to that new cafe, The Blooming Bean… 
+     8.17s  agent 발화 시작: Yeah.
+     8.17s  user  발화 끝
+     8.48s  <ret> 발화 (turn2 첫 프레임)
+     8.51s  agent 발화 시작: <ret> Well, The Blooming Bean is about 3.2 kilometers from w
+     8.51s  agent 발화 끝
+     8.79s  ⚡SPAN 주입 [d'=1.12s / d_lead=11.92s]: The distance between Seoul and The Blooming Bean is approximately 3.2 
+    20.43s  user  발화 시작: That sounds perfect! But wait, is it hilly? I really don’t d
+    20.43s  agent 발화 끝
+    24.62s  <ret> 발화 (turn4 첫 프레임)
+    25.20s  agent 발화 시작: <ret> Hmm, I'm checking the elevation data for that route, b
+    25.20s  user  발화 끝
+    25.26s  ⚡SPAN 주입 [d'=0.64s / d_lead=12.94s]: (no information found)
+    38.14s  user  발화 시작: Yeah, yeah.
+    38.14s  agent 발화 끝
+    38.83s  user  발화 시작: Yes, please do! Reviews would be great.
+    38.83s  user  발화 끝
+    41.16s  <ret> 발화 (turn7 첫 프레임)
+    41.21s  agent 발화 시작: <ret> Okay, it looks like most reviews mention a pretty flat
+    41.21s  user  발화 끝
+    41.87s  ⚡SPAN 주입 [d'=0.71s / d_lead=11.24s]: (tool result) The Blooming Bean in Seoul generally receives positive r
+    52.45s  user  발화 시작: Wow.
+    52.45s  agent 발화 끝
+    52.79s  user  발화 시작: That's good to know. Thanks, Nuen!
+    52.79s  user  발화 끝
+    54.83s  user  발화 끝

@@ -4,69 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Olivia",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-31",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-06-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-18",
-#       "category": "home",
-#       "text": "User's home address is 696 Birch Road."
-#     },
-#     {
-#       "date": "2026-02-19",
+#       "date": "2026-05-24",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-23",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-21",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-05",
+#       "date": "2026-02-18",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -76,53 +58,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 …does it really help with procrast | S3 Tell me more about Study Hub. | S4 …alarm for me for 7:00 AM tomorrow
+# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 That makes sense. | S3 That’s a good point. I'm planning  | S4 I'm not familiar with the neighbor
 
-     0.00s  user  발화 시작: Do you have the contact information for Professor Anya Sharm
-     6.19s  agent 발화 시작: Yeah.
-     6.19s  user  발화 끝
-     6.20s  <ret> 발화 (turn2 첫 프레임)
-     6.54s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any contact information for
-     6.54s  agent 발화 끝
-     7.53s  ⚡SPAN 주입 [d'=1.33s / d_lead=6.54s]: (no information found)
-    13.08s  user  발화 시작: Yeah, yeah.
-    13.08s  agent 발화 끝
-    13.77s  user  발화 시작: Oh, that’s a shame. Well, could you remind me what the Pomod
-    13.77s  user  발화 끝
-    18.58s  agent 발화 시작: Yeah.
-    18.58s  user  발화 끝
-    18.93s  agent 발화 시작: The Pomodoro Technique is a time management method—
-    18.93s  agent 발화 끝
-    21.68s  user  발화 시작: …does it really help with procrastination?
-    21.68s  agent 발화 끝
-    23.75s  agent 발화 시작: Yes, it can be very effective. It breaks down work into focu
-    23.75s  user  발화 끝
-    29.94s  user  발화 시작: Right.
-    29.94s  agent 발화 끝
-    30.29s  agent 발화 시작: It's designed to improve mental agility and focus, reducing 
-    30.29s  user  발화 끝
-    36.48s  user  발화 시작: Sounds interesting. Can you find me some good study spots ne
-    36.48s  agent 발화 끝
-    41.06s  <ret> 발화 (turn12 첫 프레임)
-    41.30s  agent 발화 시작: <ret> There are several cafes and study spaces near the libr
-    41.30s  user  발화 끝
-    41.77s  ⚡SPAN 주입 [d'=0.71s / d_lead=13.42s]: (tool result) Restaurants: Cafe Luna (4.5 stars, 0.2 km), The Daily Gr
-    54.72s  user  발화 시작: Tell me more about Study Hub.
-    54.72s  agent 발화 끝
-    56.24s  <ret> 발화 (turn14 첫 프레임)
-    56.73s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.95s]: (tool result) Study Hub: 4.7 stars, 0.5 km from university library, of
-    56.79s  agent 발화 시작: <ret> Study Hub has a 4.7-star rating and is 0.5 kilometers 
-    56.79s  user  발화 끝
-    65.73s  user  발화 시작: Oh.
-    65.73s  agent 발화 끝
-    66.08s  user  발화 시작: That sounds perfect! Could you set an…
-    66.08s  user  발화 끝
-    68.49s  user  발화 시작: …alarm for me for 7:00 AM tomorrow?
-    68.49s  user  발화 끝
-    70.90s  agent 발화 시작: Right.
-    70.90s  user  발화 끝
-    71.02s  <ret> 발화 (turn19 첫 프레임)
-    71.24s  agent 발화 시작: <ret> I’ve set an alarm for 7:00 AM tomorrow. Your confirmat
-    71.24s  agent 발화 끝
-    72.21s  ⚡SPAN 주입 [d'=1.23s / d_lead=4.47s]: (tool result) Alarm set for 7:00 AM tomorrow. Confirmation ID: 928745.
-    75.72s  agent 발화 끝
+     0.00s  user  발화 시작: Do you have the contact information for Hana Lee? I met her 
+     5.25s  <ret> 발화 (turn1 첫 프레임)
+     5.55s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.20s]: (no information found)
+     5.86s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any contact information for
+     5.86s  user  발화 끝
+    12.06s  user  발화 시작: Oh, that’s a shame. Well, do you know anything about buildin
+    12.06s  agent 발화 끝
+    16.53s  agent 발화 시작: [happy] That’s a great question! Building strong friendships
+    16.53s  user  발화 끝
+    24.11s  user  발화 시작: Yeah.
+    24.11s  agent 발화 끝
+    24.45s  user  발화 시작: That makes sense.
+    24.45s  user  발화 끝
+    25.49s  agent 발화 시작: It's also about showing genuine interest in their lives and 
+    25.49s  user  발화 끝
+    30.31s  user  발화 시작: Mhm.
+    30.31s  agent 발화 끝
+    30.65s  agent 발화 시작: Small, regular contact is key—a quick text or call can make 
+    30.65s  user  발화 끝
+    36.85s  user  발화 시작: I always feel awkward reaching out if they haven’t contacted
+    36.85s  agent 발화 끝
+    40.81s  <ret> 발화 (turn11 첫 프레임)
+    40.99s  agent 발화 시작: Okay.
+    40.99s  user  발화 끝
+    41.33s  agent 발화 시작: <ret> It's common to feel that way— Reaching out first can f
+    41.33s  agent 발화 끝
+    41.35s  ⚡SPAN 주입 [d'=0.54s / d_lead=2.07s]: Reaching out first can feel vulnerable, but it demonstrates your care 
+    54.76s  user  발화 시작: That’s a good point. I'm planning a trip to Seoul next month
+    54.76s  agent 발화 끝
+    58.90s  agent 발화 시작: [curious] Oh, Seoul! That sounds wonderful. Are you hoping t
+    58.90s  user  발화 끝
+    64.75s  user  발화 시작: Well, I was hoping to find some good cafes to work from, act
+    64.75s  agent 발화 끝
+    69.23s  agent 발화 시작: I see—that’s a practical plan! There are tons of cafes in Se
+    69.23s  user  발화 끝
+    75.43s  user  발화 시작: I'm not familiar with the neighborhoods yet. Maybe something
+    75.43s  agent 발화 끝
+    79.17s  <ret> 발화 (turn17 첫 프레임)
+    79.22s  agent 발화 시작: <ret> There are a couple of highly-rated cafes in Myeongdong
+    79.22s  user  발화 끝
+    80.18s  ⚡SPAN 주입 [d'=1.01s / d_lead=11.37s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
+    90.58s  user  발화 시작: …Are there any with longer opening hours, maybe open late?
+    90.58s  agent 발화 끝
+    94.03s  agent 발화 시작: Yeah, totally.
+    94.03s  user  발화 끝
+    94.39s  <ret> 발화 (turn20 첫 프레임)
+    94.72s  agent 발화 시작: <ret> I found Greem Cafe in Myeongdong, with a 4.0-star rati
+    94.72s  agent 발화 끝
+    95.00s  ⚡SPAN 주입 [d'=0.61s / d_lead=7.92s]: (tool result) {"restaurants": [{"name": "Greem Cafe", "address": "70, 
+   102.64s  agent 발화 끝

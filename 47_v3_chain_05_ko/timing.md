@@ -4,43 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "다별",
+#     "name": "유경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-06-22",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-03-13",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-04",
+#       "date": "2026-02-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2026-01-01",
+#       "date": "2026-01-24",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-12-22",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-02",
+#       "date": "2026-06-12",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -48,69 +58,67 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-05",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 창사에서 닝보까지 차로 가면 얼마나 걸릴까? | S2 서울은 너무 오래 걸리네. 좀 더 가까운 데는 어디가 있을까? | S3 아, 큰애는 일곱 살이고, 작은애는 네 살이에요. | S4 거기는 입장료가 얼마야?
+# EXAMINER(FDB-v2) 단계: S1 가자 지구에 대한 구호 물품 전달 상황이 어떤가요? | S2 음… 저는 주로 외국어 능력을 활용해서 도움을 주고 싶어요. | S3 아랍어는 못 하지만 영어는 아주 잘해요. | S4 …혹시 이런 스트레스를 해소하는 데 도움이 되는 취미 같은 걸
 
-     0.00s  user  발화 시작: 창사에서 닝보까지 차로 가면 얼마나 걸릴까?
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> 창사에서 닝보까지 차로 가려면 대략 칠백팔십삼킬로미터 정도이고, 교통 상황에 따라 아홉시간 삼십분
-     3.57s  user  발화 끝
-     4.57s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.94s]: The driving distance between Changsha and Ningbo is approximately 783 
-    12.51s  user  발화 시작: 음… 부산까지는?
-    12.51s  agent 발화 끝
-    13.12s  <ret> 발화 (turn3 첫 프레임)
-    13.70s  agent 발화 시작: <ret> 창사에서 부산까지는 대략 천백팔십킬로미터이고, 교통 상황에 따라 열세시간 삼십분 정도 예상돼요. 
-    13.70s  user  발화 끝
-    14.09s  ⚡SPAN 주입 [d'=0.97s / d_lead=7.74s]: The driving distance between Changsha and Busan is approximately 1,180
-    21.45s  user  발화 시작: 어휴, 너무 멀다. 그럼 서울은?
-    21.45s  agent 발화 끝
-    24.26s  <ret> 발화 (turn5 첫 프레임)
-    24.42s  agent 발화 시작: <ret> 창사에서 서울까지는 약 천사백사십킬로미터이고, 교통에 따라 열여섯시간 삼십분 정도 걸릴 거예요. 
-    24.42s  user  발화 끝
-    25.12s  ⚡SPAN 주입 [d'=0.86s / d_lead=7.74s]: The driving distance between Changsha and Seoul is approximately 1,440
-    32.17s  user  발화 시작: 서울은 너무 오래 걸리네. 좀 더 가까운 데는 어디가 있을까?
-    32.17s  agent 발화 끝
-    38.13s  agent 발화 시작: 서울보다는 가까운 곳을 찾으시는군요. 혹시 특별히 가고 싶은 도시가 있으세요?
-    38.13s  user  발화 끝
-    44.08s  user  발화 시작: 아니, 그냥… 아이들 데리고 당일치기 갈 만한 곳.
-    44.08s  agent 발화 끝
-    48.85s  agent 발화 시작: 아이들과 당일치기로 가기 좋은 곳을 찾으시는군요. 아이들 연령대는 어떻게 되세요?
-    48.85s  user  발화 끝
-    54.81s  user  발화 시작: 아, 큰애는 일곱 살이고, 작은애는 네 살이에요.
-    54.81s  agent 발화 끝
-    58.36s  <ret> 발화 (turn11 첫 프레임)
-    58.66s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.72s]: (tool result) {"results": [{"name": "Changsha Happy World", "address":
-    58.98s  agent 발화 시작: <ret> 창샤 근처에 창샤 해피월드라는 테마파크가 있어요. 카이푸구 잉빈로 이백번지에 있고, 평점은 사 점
-    58.98s  user  발화 끝
-    69.70s  user  발화 시작: 오, 테마파크 좋겠다! 거기는 뭐 탈 수 있는 게 많아?
-    69.70s  agent 발화 끝
-    75.66s  agent 발화 시작: 창샤 해피월드는 다양한 놀이기구와 볼거리가 있는 테마파크예요. [curious] 아이들이 좋아할 만한 것들이
-    75.66s  user  발화 끝
-    84.59s  user  발화 시작: 거기는 입장료가 얼마야?
-    84.59s  agent 발화 끝
-    86.37s  <ret> 발화 (turn15 첫 프레임)
-    86.38s  agent 발화 시작: <ret> 창샤 해피월드 입장료는 계절과 티켓 종류에 따라 백팔십위안에서 이백팔십위안 정도예요.
-    86.38s  user  발화 끝
-    87.47s  ⚡SPAN 주입 [d'=1.10s / d_lead=5.96s]: (tool result) Changsha Happy World ticket prices range from 180 to 280
-    92.33s  user  발화 시작: 음, 얼마인지 알려줘서 고마워.
-    92.33s  agent 발화 끝
-    94.72s  agent 발화 시작: 천만에요. 아이들과 즐거운 시간 보내시길 바랍니다.
-    94.72s  user  발화 끝
-    98.29s  agent 발화 끝
+     0.00s  user  발화 시작: 가자 지구에 대한 구호 물품 전달 상황이 어떤가요?
+     3.76s  <ret> 발화 (turn1 첫 프레임)
+     4.06s  agent 발화 시작: <ret> 가자 지구에 대한 구호 물품 전달은 현재 진행 중인 분쟁과 제한된 접근으로 인해 심각하게 어려움을
+     4.06s  user  발화 끝
+     5.06s  ⚡SPAN 주입 [d'=1.30s / d_lead=14.21s]: (tool result) Aid deliveries to Gaza are severely hampered by ongoing 
+    18.27s  agent 발화 시작: 상황이 좋지 않네요. 혹시 다른 지역의 구호 상황도 알아보고 싶으신가요?
+    18.27s  agent 발화 끝
+    23.34s  user  발화 시작: 응.
+    23.34s  agent 발화 끝
+    23.85s  user  발화 시작: 음, 다른 지역 말고, 혹시 제가 봉사활동을 할 수 있는 곳은 없을까요?
+    23.85s  user  발화 끝
+    29.94s  agent 발화 시작: 봉사활동에 관심이 있으시다니 정말 멋지네요! 어떤 분야에 관심이 있으신가요? 구호 활동 외에 다른 분야도 괜
+    29.94s  user  발화 끝
+    37.55s  user  발화 시작: 음… 저는 주로 외국어 능력을 활용해서 도움을 주고 싶어요.
+    37.55s  agent 발화 끝
+    41.64s  <ret> 발화 (turn7 첫 프레임)
+    42.11s  agent 발화 시작: <ret> 외국어 능력을 활용해서 도움을 주고 싶으시군요. 어떤 언어를 주로 사용하시나요?
+    42.11s  user  발화 끝
+    42.61s  ⚡SPAN 주입 [d'=0.97s / d_lead=5.07s]: The Korean Volunteer Center offers translation services for internatio
+    47.19s  agent 발화 시작: 국제 구호 단체를 위한 번역 서비스를 제공하는 한국자원봉사센터에서 영어, 아랍어 또는 프랑스어에 능통한 분들
+    47.19s  agent 발화 끝
+    58.35s  user  발화 시작: 응.
+    58.35s  agent 발화 끝
+    58.86s  user  발화 시작: 아랍어는 못 하지만 영어는 아주 잘해요.
+    58.86s  user  발화 끝
+    61.29s  <ret> 발화 (turn11 첫 프레임)
+    61.59s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.63s]: (tool result) The Korean Volunteer Center can be reached at +82-2-958-
+    61.90s  agent 발화 시작: <ret> 한국자원봉사센터는 공 이 구 오 팔 팔 일 공 공으로 연락하시거나 웹사이트 www.voluntee
+    61.90s  user  발화 끝
+    70.53s  user  발화 시작: 응응.
+    70.53s  agent 발화 끝
+    71.04s  user  발화 시작: 아, 감사합니다. 그런데 제가 요즘 회사에서 스트레스도 많이 받고, 뭘 해야 할지 잘 모르겠어요.
+    71.04s  user  발화 끝
+    78.14s  agent 발화 시작: 그렇죠.
+    78.14s  user  발화 끝
+    78.64s  <ret> 발화 (turn15 첫 프레임)
+    78.65s  agent 발화 시작: <ret> 힘든 시간을 보내고 계시는군요… 미국 심리학회에 따르면 직장 스트레스의 흔한 징후로는 집중력 저하
+    78.65s  agent 발화 끝
+    79.45s  ⚡SPAN 주입 [d'=0.82s / d_lead=2.03s]: Common signs of workplace stress include difficulty concentrating, irr
+    88.79s  user  발화 시작: 맞아.
+    88.79s  agent 발화 끝
+    89.30s  user  발화 시작: …혹시 이런 스트레스를 해소하는 데 도움이 되는 취미 같은 걸 추천해 주실 수 있을까요?
+    89.30s  user  발화 끝
+    96.41s  agent 발화 시작: 네.
+    96.41s  user  발화 끝
+    96.91s  agent 발화 시작: 스트레스 해소에 도움이 되는 취미를 찾으시는군요! 어떤 종류의 활동을 좋아하시나요? 활동적인 것을 좋아하시는
+    96.91s  agent 발화 끝
+   109.60s  agent 발화 시작: 그림 그리기나 글쓰기 같은 창작 활동은 스트레스 해소에 도움이 될 수 있습니다.
+   109.60s  agent 발화 끝
+   115.69s  agent 발화 시작: 아니면 요가나 명상 같은 마음 챙김 연습도 효과적입니다.
+   115.69s  agent 발화 끝
+   119.75s  agent 발화 끝

@@ -4,90 +4,65 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Quinn",
+#     "name": "Jonas",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-06-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-12-10",
+#       "date": "2026-05-21",
 #       "category": "home",
-#       "text": "User's home address is 802 Birch Road."
+#       "text": "User's home address is 678 Pine Court."
 #     },
 #     {
-#       "date": "2025-12-08",
+#       "date": "2026-05-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-05",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-02-04",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Arer… that’s a pretty unusual name | S2 Huh. Okay. Well, my sister and I a | S3 …but she never *listens* to me! Sh | S4 Boundaries? Like… what does that e
 
-     0.00s  agent 발화 시작: Hello Quinn, it’s lovely to meet you. I'm Arer.
-     3.18s  user  발화 시작: Arer… that’s a pretty unusual name. Is that, like, a real na
-     3.18s  agent 발화 끝
-     7.78s  agent 발화 시작: [happy] It’s a name with roots in Welsh mythology, Quinn – m
-     7.78s  user  발화 끝
-    19.10s  user  발화 시작: Huh. Okay. Well, my sister and I are… really struggling righ
-    19.10s  agent 발화 끝
-    23.35s  agent 발화 시작: Mm-hmm.
-    23.35s  user  발화 끝
-    23.70s  agent 발화 시작: I understand. Sibling relationships can be incredibly comple
-    23.70s  agent 발화 끝
-    33.25s  user  발화 시작: Right.
-    33.25s  agent 발화 끝
-    33.61s  agent 발화 시작: A good starting point is often practicing active listening. 
-    33.61s  user  발화 끝
-    42.10s  user  발화 시작: …but she never *listens* to me! She just jumps down my throa
-    42.10s  agent 발화 끝
-    48.47s  agent 발화 시작: That sounds incredibly frustrating, Quinn. It’s hard to exte
-    48.47s  user  발화 끝
-    56.96s  user  발화 시작: Mm-hmm.
-    56.96s  agent 발화 끝
-    57.31s  user  발화 시작: Boundaries? Like… what does that even mean, practically?
-    57.31s  user  발화 끝
-    60.14s  agent 발화 시작: [curious] It means clearly communicating your needs and limi
-    60.14s  user  발화 끝
-    74.65s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Jonas. I'm Draris.
+     1.82s  user  발화 시작: Draris… that’s an unusual name. What exactly *can* you help 
+     1.82s  agent 발화 끝
+     8.76s  agent 발화 시작: [happy] It is a bit different, isn’t it? I can offer strateg
+     8.76s  user  발화 끝
+    21.16s  user  발화 시작: Spaced repetition? I’ve heard of that, but I don’t really un
+    21.16s  agent 발화 끝
+    28.09s  agent 발화 시작: It’s quite effective, actually! It’s about reviewing informa
+    28.09s  user  발화 끝
+    39.76s  agent 발화 끝

@@ -1,103 +1,81 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 부드럽고 사색적인 지원 조언가 오레미입니다. 긴급성과 중요성의 우선순위 결정, 유사한 작업 묶음 처리, 단일 작업 수행 등을 설명할 수 있습니다. 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 개인 가이드 데나입니다. 초고부터 시작하기, 매일 작은 반복, 내면의 비판적인 목소리를 잠재우는 것에 대해 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "준훈",
+    "name": "라람",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
+    "gender": "female",
     "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-04-20",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-12-25",
+      "date": "2026-04-13",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-12-23",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-04-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-10",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 해운대로 570."
+      "date": "2026-04-04",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-13",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-22",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-31",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-01-20",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 금요일 십삼일 영화가 어디에서 벌어지는지 아세요? ⟨ret@3.48s⟩
-[  3.70s][moshi] 금요일 ⟦⚡SPAN@4.68s: Camp Crystal Lake is the location where the Friday the 13th film series primarily takes place.⟧ 십삼일 영화 시리즈는 주로 크리스탈 레이크라는 곳에서 벌어집니다. 그곳이 배경인 경우가 많아요.
-[ 10.58s][user ] «backchannel» 진짜요?
-[ 11.11s][user ] 크리스탈 레이크요? 그곳은 어디에 ⟨ret@13.47s⟩ 있나요?
-[ 13.76s][moshi] ⟦⚡SPAN@13.77s: Camp Crystal Lake is a fictional location in New Jersey, created for the Friday the 13th film series.⟧ 크리스탈 레이크는 영화를 위해 만들어진 가상의 장소인데, 뉴저지 주에 있다고 설정되어 있어요.
-[ 20.10s][user ] «backchannel» 네.
-[ 20.63s][user ] 뉴저지… 아, 그렇군요.
-[ 22.22s][moshi] 캠핑장으로 유명한 곳은 아니지만, 영화 속 배경으로는 아주 효과적이었죠.
-[ 26.98s][user ] 영화에만 나오는 곳인가요? 실제 캠핑장인가 ⟨ret@29.87s⟩ 궁금하네요.
-[ 30.16s][moshi] 영화 ⟦⚡SPAN@31.26s: While Camp Crystal Lake is fictional, several locations have been used for filming, including Camp No-Be-Bo-Sc⟧ 속 캠프는 가상이지만, 실제 촬영은 뉴저지 주의 노비보스코 캠프에서 이루어졌어요.
-[ 35.98s][user ] 아, 촬영지는 실제로 존재하군요. 영화 보러 가고 싶어지네요.
-[ 40.21s][moshi] 영화 팬이라면 촬영지를 방문하는 것도 좋은 경험이 될 거예요.
-[ 44.97s][user ] «backchannel» 네.
-[ 45.50s][user ] 이번 주말에 영화관에서 상영하는 영화가 있는지 알아봐 ⟨ret@49.37s⟩ 주시겠어요?
-[ 49.73s][moshi] ⟦⚡SPAN@50.43s: (tool result) {"movies": [{"title": "Inside Out 2", "showtimes": 14:00, 16:30, 19:00}]}⟧ 이번 주말에 영화관에서 상영하는 영화를 찾아봤는데, '인사이드 아웃 이'가 오후 두시, 네시 삼십분, 일곱시에 상영될 예정입니다.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 58.19s][user ] ‘인사이드 아웃 이’… 괜찮아 보이네요. 혹시 예매도 ⟨ret@61.82s⟩ 가능해요?
-[ 62.43s][moshi] ⟦⚡SPAN@62.55s: (tool result) {"confirmation id": "AX789123", "movie": "Inside Out 2", "time": "19:00", "seats": "2"}⟧ 네, ‘인사이드 아웃 이’ 저녁 일곱시 상영, 두석 예매가 완료되었습니다. 확인 번호는 에이 엑스 칠 팔 구 일 이 삼입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_title": "Inside Out 2"}}
-[ 73.01s][user ] 감사합니다. 덕분에 주말 계획이 생겼네요.
-[ 75.65s][moshi] [happy] 주말에 즐거운 시간 보내시길 바랍니다.
-[ 78.83s][user ] «to_other» 잠깐만, 지금 몇 시지?
-[ 80.94s][user ] 아, 죄송합니다. 제 질문은 무시하셔도 돼요.
-[ 84.12s][moshi] 괜찮습니다.
+[  0.00s][user ] 혹시 태양계에서 일곱 번째 행성이 뭔지 알아요? ⟨ret@3.53s⟩
+[  3.76s][moshi] 태양에서 ⟦⚡SPAN@4.73s: Uranus is the seventh planet from the Sun.⟧ 일곱 번째 행성은 천왕성이에요.
+[  6.44s][user ] 음, 천왕성은 어떻게 ⟨ret@8.30s⟩ 발견됐어요?
+[  8.59s][moshi] ⟦⚡SPAN@8.60s: William Herschel discovered Uranus on March 13, 1781, at the Royal Observatory, Greenwich.⟧ 윌리엄 허셜이 천칠백팔십일년 삼월 십삼일 그리니치 왕립 천문대에서 천왕성을 발견했어요.
+[ 13.96s][user ] «backchannel» 응.
+[ 14.50s][moshi] 처음에는 Herschel이 그것을 ‘조지 왕성’이라고 불렀지만, 나중에는 천왕성으로 이름이 바뀌었답니다.
+[ 19.86s][user ] «backchannel» 응.
+[ 20.40s][user ] 조지 왕성이라고 불렀다고요? 좀 이상하네요.
+[ 23.09s][moshi] 네, 그렇죠. 천왕성은 다른 행성들과 달리 자전축이 거의 누워있어서 독특한 특징을 가지고 있어요.
+[ 30.07s][user ] 자전축이 누워있다는 게 무슨 뜻이에요? ⟨ret@32.71s⟩
+[ 32.75s][moshi] «interrupted» ⟦⚡SPAN@33.38s: Uranus rotates on its side with an axial tilt of 98 degrees.⟧ 천왕성은 자전축이 구십팔도 기울어져 있어서 옆으로 누워서 공전한다고 생각하시면 돼요. —
+[ 38.66s][user ] «interrupts_prev» …근데 천왕성은 색깔이 왜 파란색이에요?
+[ 41.34s][moshi] 아, 좋은 질문이에요. 천왕성의 파란색은 대기 중에 있는 메탄 때문이에요. 메탄이 붉은색 빛을 흡수해서 파란색으로 보이는 거죠.
+[ 50.47s][user ] 메탄 때문에 파란색이군요. 신기하네요. 다른 행성들도 비슷한 이유로 색깔이 다른 건가요?
+[ 56.37s][moshi] 네, 맞아요. 행성의 대기 성분에 따라 색깔이 달라져요. 예를 들어, 화성은 산화철 때문에 붉은색을 띠고요.
+[ 64.43s][user ] «backchannel» 아.
+[ 64.96s][user ] 화성은 붉은색이군요. 그럼 ⟨ret@66.69s⟩ 금성은요?
+[ 67.11s][moshi] ⟦⚡SPAN@67.37s: Venus has a thick, toxic atmosphere filled with carbon dioxide, creating a runaway greenhouse effect and a yel⟧ 금성은 이산화탄소로 가득 찬 두꺼운 대기를 가지고 있어서, 샛노란 흰색을 띠는 것 같아요.

@@ -4,61 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Emilia",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-28",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-05-22",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-03-28",
+#       "date": "2026-02-28",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "home",
-#       "text": "User's home address is 634 Birch Road."
+#       "date": "2026-01-20",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Researching a used car",
+#       "date": "2026-06-02",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-17",
+#       "date": "2026-05-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,89 +56,59 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-04",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hello, Nelilo. It’s nice to meet y | S2 That sounds good. What does a good | S3 Hmm. You’re right about that. Mayb | S4 I’m also allergic to pollen. It’s 
+# EXAMINER(FDB-v2) 단계: S1 Hi Elaen, nice to meet you too. I’ | S2 Well, I was thinking about using m | S3 …Actually, before we do that, do y | S4 Okay, that’s helpful. Maybe it's w
 
-     0.00s  agent 발화 시작: Hi Emilia, I’m Nelilo. It’s lovely to meet you. I’m a counse
-     6.15s  user  발화 시작: Hello, Nelilo. It’s nice to meet you too. I’ve been having t
-     6.15s  agent 발화 끝
-    11.21s  agent 발화 시작: Mhm.
-    11.21s  user  발화 끝
-    11.57s  agent 발화 시작: I understand. Many things can disrupt our sleep. Have you no
-    11.57s  agent 발화 끝
-    18.80s  user  발화 시작: Uh-huh.
-    18.80s  agent 발화 끝
-    19.16s  user  발화 시작: Well, I often find myself scrolling on my phone right before
-    19.16s  user  발화 끝
-    23.50s  agent 발화 시작: Yeah.
-    23.50s  user  발화 끝
-    23.86s  agent 발화 시작: That’s very common. The blue light from screens can interfer
-    23.86s  agent 발화 끝
-    28.56s  user  발화 시작: Yeah.
-    28.56s  agent 발화 끝
-    28.92s  user  발화 시작: Melatonin?
-    28.92s  user  발화 끝
-    29.07s  <ret> 발화 (turn10 첫 프레임)
-    29.22s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.51s]: Melatonin is a hormone that regulates the sleep-wake cycle; it rises i
-    29.28s  agent 발화 시작: <ret> Melatonin is a hormone that regulates your sleep-wake 
-    29.28s  user  발화 끝
-    35.79s  user  발화 시작: Mhm.
-    35.79s  agent 발화 끝
-    36.15s  agent 발화 시작: Perhaps we could explore a wind-down routine to prepare your
-    36.15s  user  발화 끝
-    41.57s  user  발화 시작: That sounds good. What does a good wind-down routine look li
-    41.57s  agent 발화 끝
-    45.55s  agent 발화 시작: A good routine might include a warm bath, reading a book—a p
-    45.55s  user  발화 끝
-    52.42s  user  발화 시작: I do like reading. But I also like to check the news before 
-    52.42s  agent 발화 끝
-    57.48s  agent 발화 시작: Checking the news can be stimulating, potentially raising yo
-    57.48s  user  발화 끝
-    61.46s  user  발화 시작: …But I feel like I *need* to know what’s happening!
-    61.46s  agent 발화 끝
-    65.07s  agent 발화 시작: I understand wanting to stay informed. However, exposure to 
-    65.07s  user  발화 끝
-    72.30s  user  발화 시작: Hmm. You’re right about that. Maybe I could check it earlier
-    72.30s  agent 발화 끝
-    77.36s  agent 발화 시작: That’s a great idea! Shifting that habit to earlier in the e
-    77.36s  user  발화 끝
-    83.51s  user  발화 시작: I also worry about work. I often replay meetings in my head.
-    83.51s  agent 발화 끝
-    87.85s  agent 발화 시작: [curious] That’s a sign of a busy mind. Have you tried journ
-    87.85s  user  발화 끝
-    95.08s  user  발화 시작: Yeah.
-    95.08s  agent 발화 끝
-    95.44s  user  발화 시작: No, I haven’t. What would I even write about?
-    95.44s  user  발화 끝
-    98.69s  agent 발화 시작: Mm-hmm.
-    98.69s  user  발화 끝
-    99.06s  agent 발화 시작: You could write down your worries, things you’re grateful fo
-    99.06s  agent 발화 끝
-   105.56s  user  발화 시작: I’m also allergic to pollen. It’s been really bad lately.
-   105.56s  agent 발화 끝
-   109.14s  <ret> 발화 (turn28 첫 프레임)
-   109.18s  agent 발화 시작: <ret> I recall you mentioned an allergy to pollen back on Ma
-   109.18s  user  발화 끝
-   110.15s  ⚡SPAN 주입 [d'=1.01s / d_lead=6.51s]: [2026-03-27] User is allergic to pollen.
-   115.69s  user  발화 시작: Yeah.
-   115.69s  agent 발화 끝
-   116.05s  user  발화 시작: It makes my nose so stuffy.
-   116.05s  user  발화 끝
-   118.22s  agent 발화 시작: Nasal congestion can certainly make it hard to breathe comfo
-   118.22s  user  발화 끝
-   124.72s  user  발화 시작: Yeah.
-   124.72s  agent 발화 끝
-   125.08s  user  발화 시작: No, I haven’t. I'll look into that. Thanks, Nelilo.
-   125.08s  user  발화 끝
-   128.34s  agent 발화 시작: You’re very welcome, Emilia. Remember, small changes can add
-   128.34s  user  발화 끝
-   134.12s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Elaen. It’s lovely to connect with you.
+     3.71s  user  발화 시작: Hi Elaen, nice to meet you too. I’ve been feeling really stu
+     3.71s  agent 발화 끝
+     9.27s  agent 발화 시작: Yeah.
+     9.27s  user  발화 끝
+     9.64s  agent 발화 시작: That’s completely understandable, Avery. Feeling stuck is a 
+     9.64s  agent 발화 끝
+    16.68s  user  발화 시작: I think it's a lack of challenge, honestly. I'm a high-schoo
+    16.68s  agent 발화 끝
+    21.06s  <ret> 발화 (turn5 첫 프레임)
+    21.13s  agent 발화 시작: <ret> It sounds like you're ready for a shift. As I recall, 
+    21.13s  user  발화 끝
+    21.59s  ⚡SPAN 주입 [d'=0.52s / d_lead=2.97s]: [2026-05-28] User works as a high-school teacher.
+    31.51s  user  발화 시작: Yeah.
+    31.51s  agent 발화 끝
+    31.88s  agent 발화 시작: [happy] That's great that you've identified that! What kind 
+    31.88s  user  발화 끝
+    42.26s  user  발화 시작: Yeah.
+    42.26s  agent 발화 끝
+    42.63s  user  발화 시작: Well, I was thinking about using my skills outside of teachi
+    42.63s  user  발화 끝
+    49.30s  agent 발화 시작: Those are excellent transferable skills, Avery. Many roles v
+    49.30s  user  발화 끝
+    55.98s  user  발화 시작: …Actually, before we do that, do you think my experience wou
+    55.98s  agent 발화 끝
+    61.12s  <ret> 발화 (turn12 첫 프레임)
+    61.54s  agent 발화 시작: <ret> That’s a very insightful question! Corporate training 
+    61.54s  user  발화 끝
+    61.77s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.78s]: Many educators successfully transition into corporate training roles, 
+    69.32s  agent 발화 시작: Many educators successfully transition into corporate traini
+    69.32s  agent 발화 끝
+    74.88s  user  발화 시작: That’s good to hear. What's the typical salary range for tha
+    74.88s  agent 발화 끝
+    80.72s  <ret> 발화 (turn16 첫 프레임)
+    80.81s  agent 발화 시작: Mm-hmm.
+    80.81s  user  발화 끝
+    81.02s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.38s]: (tool result) The average corporate trainer salary in Toronto, Ontario
+    81.18s  agent 발화 시작: <ret> The average salary for a corporate trainer in Toronto 
+    81.18s  agent 발화 끝
+    91.56s  user  발화 시작: Okay, that’s helpful. Maybe it's worth exploring further. Th
+    91.56s  agent 발화 끝
+    95.27s  agent 발화 시작: [curious] You're very welcome, Avery. It sounds like you’re 
+    95.27s  user  발화 끝
+   105.65s  agent 발화 끝

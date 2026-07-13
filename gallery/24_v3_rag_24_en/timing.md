@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Max",
+#     "name": "Jonas",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "German",
 #     "gender": "male",
 #     "age_range": "late 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
+#       "date": "2026-04-28",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-06-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
-#       "date": "2026-01-27",
+#       "date": "2026-04-18",
 #       "category": "home",
-#       "text": "User's home address is 875 Oak Avenue."
+#       "text": "User's home address is 314 Maple Drive."
 #     },
 #     {
-#       "date": "2026-01-21",
+#       "date": "2026-02-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-01-25",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-12-09",
+#       "date": "2026-01-18",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-14",
+#       "date": "2026-04-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,91 +53,61 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-26",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-29",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Jeon, I'm having trouble sleepi | S2 Do you think a warm bath would hel | S3 Oh, interesting! That’s a really i | S4 Right, sleep. Maybe I should try t
+# EXAMINER(FDB-v2) 단계: S1 Hi Nes, I’m having a bit of a disa | S2 It is! I’ve tried talking about it | S3 …but what if they just get defensi | S4 Like, instead of "You never do the
 
-     0.00s  user  발화 시작: Hi Jeon, I'm having trouble sleeping lately.
-     2.69s  agent 발화 시작: Hello! I'm Jeon, and I can certainly help with that. A consi
-     2.69s  user  발화 끝
-    10.01s  user  발화 시작: Yeah.
-    10.01s  agent 발화 끝
-    10.39s  user  발화 시작: That sounds good. What does a good routine look like?
-    10.39s  user  발화 끝
-    14.24s  agent 발화 시작: It's about signaling your body it’s time to rest. Think dim 
-    14.24s  user  발화 끝
-    21.17s  user  발화 시작: Yeah.
-    21.17s  agent 발화 끝
-    21.55s  user  발화 시작: I do stay up late scrolling on my phone.
-    21.55s  user  발화 끝
-    25.02s  agent 발화 시작: [sigh] That blue light can really interfere with your sleep 
-    25.02s  user  발화 끝
-    31.95s  user  발화 시작: Mhm.
-    31.95s  agent 발화 끝
-    32.33s  user  발화 시작: Do you think a warm bath would help?
-    32.33s  user  발화 끝
-    35.41s  agent 발화 시작: A warm bath can help relax your muscles and lower your core 
-    35.41s  user  발화 끝
-    40.80s  user  발화 시작: That sounds lovely. What about music?
-    40.80s  agent 발화 끝
-    43.11s  agent 발화 시작: Gentle music can be very soothing. Classical or ambient musi
-    43.11s  user  발화 끝
-    48.88s  user  발화 시작: Right.
-    48.88s  agent 발화 끝
-    49.27s  user  발화 시작: I like The Staple Singers. Do you know who played bass on "I
-    49.27s  user  발화 끝
-    55.42s  agent 발화 시작: Mhm.
-    55.42s  user  발화 끝
-    55.72s  <ret> 발화 (turn16 첫 프레임)
-    55.81s  agent 발화 시작: <ret> It was David Hood, a key player in the Muscle Shoals R
-    55.81s  agent 발화 끝
-    56.06s  ⚡SPAN 주입 [d'=0.34s / d_lead=10.01s]: David Hood, a member of the Muscle Shoals Rhythm Section, played bass 
-    65.82s  user  발화 시작: Oh, interesting! That’s a really iconic sound—
-    65.82s  agent 발화 끝
-    68.51s  user  발화 시작: …was he involved in a lot of other famous recordings too?
-    68.51s  user  발화 끝
-    72.52s  <ret> 발화 (turn20 첫 프레임)
-    72.74s  agent 발화 시작: Right.
-    72.74s  user  발화 끝
-    72.82s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.77s]: David Hood was a highly sought-after session musician, contributing ba
-    73.13s  agent 발화 시작: <ret> Yes, he was a very prolific session musician. —David H
-    73.13s  agent 발화 끝
-    78.90s  agent 발화 시작: He was a very in-demand session musician, lending his bass g
-    78.90s  agent 발화 끝
-    92.76s  user  발화 시작: Wow, that’s a pretty impressive career.
-    92.76s  agent 발화 끝
-    95.07s  agent 발화 시작: It really is! He helped shape the sound of an era. Now, back
-    95.07s  user  발화 끝
-   101.23s  user  발화 시작: Right, sleep. Maybe I should try that bath tonight.
-   101.23s  agent 발화 끝
-   104.69s  agent 발화 시작: Okay.
-   104.69s  user  발화 끝
-   105.07s  agent 발화 시작: [happy] That’s a wonderful idea! A relaxing bath is a perfec
-   105.07s  agent 발화 끝
-   111.62s  user  발화 시작: Yeah.
-   111.62s  agent 발화 끝
-   112.00s  user  발화 시작: Do you have any recommendations for bath salts?
-   112.00s  user  발화 끝
-   115.08s  agent 발화 시작: Epsom salts are great for muscle relaxation. Lavender or cha
-   115.08s  user  발화 끝
-   121.62s  user  발화 시작: Okay, I'll look for those. Thanks, Jeon.
-   121.62s  agent 발화 끝
-   124.32s  agent 발화 시작: You’re very welcome. Remember, consistency is key with any r
-   124.32s  user  발화 끝
-   128.94s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Nes, I’m having a bit of a disagreement with my partner.
+     4.92s  agent 발화 시작: Hello! It's completely normal to have disagreements, it’s ho
+     4.92s  user  발화 끝
+    10.66s  user  발화 시작: It’s about chores, honestly. It feels like I do everything.
+    10.66s  agent 발화 끝
+    14.76s  agent 발화 시작: That sounds really frustrating. Feeling unsupported can defi
+    14.76s  user  발화 끝
+    19.27s  user  발화 시작: It is! I’ve tried talking about it, but it never seems to ch
+    19.27s  agent 발화 끝
+    24.60s  agent 발화 시작: It’s common for these conversations to get stuck. Have you t
+    24.60s  user  발화 끝
+    29.93s  user  발화 시작: Yeah, yeah.
+    29.93s  agent 발화 끝
+    30.75s  user  발화 시작: I think so…but maybe not well. What does that even *mean*?
+    30.75s  user  발화 끝
+    35.26s  agent 발화 시작: Okay.
+    35.26s  user  발화 끝
+    35.67s  agent 발화 시작: It means truly hearing your partner, without interrupting or
+    35.67s  agent 발화 끝
+    40.60s  user  발화 시작: …but what if they just get defensive right away?
+    40.60s  agent 발화 끝
+    44.22s  <ret> 발화 (turn11 첫 프레임)
+    44.29s  agent 발화 시작: <ret> It’s important to remember that defensiveness isn’t ne
+    44.29s  user  발화 끝
+    45.46s  ⚡SPAN 주입 [d'=1.25s / d_lead=9.43s]: Defensive behavior often arises from a perceived threat to one's self-
+    53.72s  user  발화 시작: Uh-huh.
+    53.72s  agent 발화 끝
+    54.13s  user  발화 시작: Okay, that makes sense. So how do I *get* them to listen the
+    54.13s  user  발화 끝
+    59.46s  agent 발화 시작: Mhm.
+    59.46s  user  발화 끝
+    59.87s  agent 발화 시작: Try "I feel" statements instead of "you" statements. It shif
+    59.87s  agent 발화 끝
+    64.79s  user  발화 시작: Uh-huh.
+    64.79s  agent 발화 끝
+    65.20s  user  발화 시작: Like, instead of "You never do the dishes," say…?
+    65.20s  user  발화 끝
+    68.28s  <ret> 발화 (turn18 첫 프레임)
+    68.89s  agent 발화 시작: <ret> “I” statements are a really effective tool because the
+    68.89s  user  발화 끝
+    69.58s  ⚡SPAN 주입 [d'=1.30s / d_lead=10.25s]: “I” statements express personal feelings and experiences without blami
+    79.14s  user  발화 시작: That’s a good tip. I’ll try that tonight. Thanks, Nes.
+    79.14s  agent 발화 끝
+    83.24s  agent 발화 시작: [happy] You're very welcome! Remember, small changes can mak
+    83.24s  user  발화 끝
+    88.16s  agent 발화 끝

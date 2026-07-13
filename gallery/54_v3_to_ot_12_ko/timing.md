@@ -4,48 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "하국",
+#     "name": "윤원",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-05-03",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-03-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-01-31",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-12-04",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-06-01",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -55,83 +55,105 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 심장이 좀 답답한데, 혹시 심장 쪽 혈관에 대해 아시는 거 있 | S2 사초 들이마시고 육초 내쉬기… 알겠습니다. 그럼, 혹시 서울에 | S3 잠깐만요, 혹시 그 명상 센터에서… | S4 알겠습니다. 그럼, 오늘 날씨는 어때요?
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨가 어때요? | S2 아, 미안. 방금 친구랑 통화했어. | S3 작은 것부터… 예를 들면? | S4 알았어. 꾸준히 연습해 볼게.
 
-     0.00s  user  발화 시작: 심장이 좀 답답한데, 혹시 심장 쪽 혈관에 대해 아시는 거 있으세요?
-     5.30s  agent 발화 시작: 예.
-     5.30s  user  발화 끝
-     5.53s  <ret> 발화 (turn2 첫 프레임)
-     5.78s  agent 발화 시작: <ret> 심장의 좌심실과 심실 중격에 혈액을 공급하는 건 좌관상동맥이에요.
-     5.78s  agent 발화 끝
-     6.58s  ⚡SPAN 주입 [d'=1.05s / d_lead=3.85s]: The left coronary artery supplies blood to the left ventricle and the 
-     9.64s  user  발화 시작: 심실 중격이 정확히 뭐예요?
-     9.64s  agent 발화 끝
-    11.38s  <ret> 발화 (turn4 첫 프레임)
-    11.56s  agent 발화 시작: <ret> 심실 중격은 심장의 좌심실과 우심실을 나누는 근육벽이에요.
-    11.56s  user  발화 끝
-    11.68s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.37s]: The interventricular septum is the muscular wall dividing the left and
-    14.94s  user  발화 시작: 응응.
-    14.94s  agent 발화 끝
-    15.42s  user  발화 시작: 아, 그런 거군요. 스트레스 때문에 그런 걸까요?
-    15.42s  user  발화 끝
-    18.79s  agent 발화 시작: 스트레스는 심혈관 건강에 영향을 줄 수 있어요. 심호흡을 해보시는 건 어떠세요?
-    18.79s  user  발화 끝
-    24.09s  user  발화 시작: 어.
-    24.09s  agent 발화 끝
-    24.58s  user  발화 시작: 심호흡은 어떻게 하는 게 좋죠?
-    24.58s  user  발화 끝
-    26.98s  agent 발화 시작: 숨을 깊게 들이마시고 천천히 내쉬는 걸 반복하면 도움이 될 거예요. 사초 동안 숨을 들이마시고 육초 동안 내
-    26.98s  user  발화 끝
-    36.14s  user  발화 시작: 사초 들이마시고 육초 내쉬기… 알겠습니다. 그럼, 혹시 서울에서 명상할 수 있는 곳도 추천해주실 수 있나요?
-    36.14s  agent 발화 끝
-    43.31s  <ret> 발화 (turn13 첫 프레임)
-    43.37s  agent 발화 시작: 네.
-    43.37s  user  발화 끝
-    43.85s  agent 발화 시작: <ret> 서울 명동에 '젠 앤 베어'라는 명상 센터가 있어요. 명동길 칠십사번지에 위치하고 있습니다.
-    43.85s  agent 발화 끝
-    44.14s  ⚡SPAN 주입 [d'=0.84s / d_lead=5.78s]: {"restaurants": [{"name": "Zen & Bear", "address": "74, Myeongdong-gil
-    49.63s  user  발화 시작: 젠 앤 베어… 거긴 예약해야 하나요?
-    49.63s  agent 발화 끝
-    52.02s  <ret> 발화 (turn15 첫 프레임)
-    52.52s  agent 발화 시작: <ret> 젠 앤 베어에 칠월 십이일 오후 세시에 예약이 완료되었습니다. 확인번호는 제트 비 칠 팔 구 이입
-    52.52s  user  발화 끝
-    53.15s  ⚡SPAN 주입 [d'=1.14s / d_lead=7.71s]: (tool result) Your reservation at Zen & Bear is confirmed for July 12,
-    60.23s  user  발화 시작: 와, 빠르네요. 그럼…—
-    60.23s  agent 발화 끝
-    61.68s  user  발화 시작: 잠깐만요, 혹시 그 명상 센터에서…
-    61.68s  user  발화 끝
-    64.09s  user  발화 시작: …스트레스 해소에 특화된 프로그램이 있는지 아세요?
-    64.09s  user  발화 끝
-    66.98s  agent 발화 시작: 네, 젠 앤 베어에서는 스트레스 해소와 마음 챙김을 위한 다양한 프로그램들을 제공하고 있어요. 특히, 초심자
-    66.98s  user  발화 끝
-    77.10s  user  발화 시작: 워크숍… 좋네요. 그럼, 혹시 잠을 잘 못 잘 때 도움이 되는 방법도 알려주실 수 있을까요?
-    77.10s  agent 발화 끝
-    84.33s  agent 발화 시작: 잠들기 전에 따뜻한 물로 샤워를 하거나, 카페인 섭취를 줄이는 것이 도움이 될 수 있어요. 그리고 잠자리에 
-    84.33s  user  발화 끝
-    95.41s  user  발화 시작: 응.
-    95.41s  agent 발화 끝
-    95.89s  user  발화 시작: 스마트폰 자제… 쉽지 않죠. 그럼, 혹시 잠들기 전 스트레칭도 도움이 될까요?
-    95.89s  user  발화 끝
-   101.19s  agent 발화 시작: 네, 가벼운 스트레칭은 근육의 긴장을 풀어주고 숙면을 유도하는 데 도움이 될 수 있어요. 격렬한 운동은 피하
-   101.19s  user  발화 끝
-   109.87s  user  발화 시작: 응.
-   109.87s  agent 발화 끝
-   110.35s  user  발화 시작: 알겠습니다. 그럼, 오늘 날씨는 어때요?
-   110.35s  user  발화 끝
-   112.66s  <ret> 발화 (turn27 첫 프레임)
-   112.76s  agent 발화 시작: <ret> 현재 서울의 날씨는 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터입니다
-   112.76s  user  발화 끝
-   113.93s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.26s]: (tool result) The weather in Seoul is currently 28.5°C, humidity 65%, 
-   119.02s  user  발화 시작: 꽤 덥네요. 그럼, 내일은 어떨까요?
-   119.02s  agent 발화 끝
-   120.96s  <ret> 발화 (turn29 첫 프레임)
-   121.43s  agent 발화 시작: <ret> 내일 칠월 십일일 서울의 날씨는 삼십 점 일도이고, 습도는 칠십퍼센트이며, 소나기가 올 가능성이 
-   121.43s  user  발화 끝
-   121.86s  ⚡SPAN 주입 [d'=0.90s / d_lead=6.75s]: (tool result) The weather in Seoul tomorrow, July 11, 2026, will be 30
-   128.18s  user  발화 시작: 어어.
-   128.18s  agent 발화 끝
-   128.66s  user  발화 시작: 소나기… 우산을 챙겨야겠네요. 감사합니다, 오레우스님.
-   128.66s  user  발화 끝
-   131.07s  agent 발화 시작: 천만에요.
-   131.07s  user  발화 끝
-   131.55s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨가 어때요?
+     0.99s  <ret> 발화 (turn1 첫 프레임)
+     1.29s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.28s]: The weather in Seoul today is 28.0°C, humidity 75%, wind 3.2 km/h.
+     1.44s  agent 발화 시작: <ret> 오늘 서울 날씨는 이십팔도이고, 습도는 칠십오퍼센트, 바람은 시속 삼 점 이킬로미터입니다.
+     1.44s  user  발화 끝
+     6.72s  user  발화 시작: 이번 주말에 영화 보러 갈까 하는데, 뭐 재미있는 거 있어요?
+     6.72s  agent 발화 끝
+    11.52s  agent 발화 시작: 네.
+    11.52s  user  발화 끝
+    11.82s  <ret> 발화 (turn4 첫 프레임)
+    12.00s  agent 발화 시작: <ret> 현재 서울에서 상영 중인 영화로는 "인사이드 아웃 이", "배드 보이즈: 라이드 오어 다이", 그
+    12.00s  agent 발화 끝
+    13.08s  ⚡SPAN 주입 [d'=1.26s / d_lead=8.16s]: (tool result) Searching for movies currently playing in Seoul. Availab
+    20.16s  user  발화 시작: "인사이드 아웃 이" 예매해 줘.
+    20.16s  agent 발화 끝
+    22.00s  <ret> 발화 (turn6 첫 프레임)
+    22.56s  agent 발화 시작: <ret> 네, "인사이드 아웃 이" 영화를 칠월 십삼일 저녁 일곱시에 롯데시네마 서울에서 두장 예매했습니다
+    22.56s  user  발화 끝
+    22.83s  ⚡SPAN 주입 [d'=0.83s / d_lead=10.08s]: (tool result) Booking confirmed for "Inside Out 2" at Lotte Cinema Seo
+    32.64s  user  발화 시작: 고마워. 아, 잠깐만… 다른 사람한테 전화 좀 해야 돼.
+    32.64s  agent 발화 끝
+    36.96s  user  발화 시작: 여보세요? 잠깐만요…
+    36.96s  user  발화 끝
+    37.92s  agent 발화 시작: …
+    37.92s  user  발화 끝
+    38.40s  user  발화 시작: 아, 미안. 방금 친구랑 통화했어.
+    38.40s  agent 발화 끝
+    40.80s  agent 발화 시작: 괜찮아요. 혹시 영화 예매 관련해서 더 도와드릴 일이 있을까요?
+    40.80s  user  발화 끝
+    45.12s  user  발화 시작: 예.
+    45.12s  agent 발화 끝
+    45.60s  user  발화 시작: 아니, 괜찮아. 그런데… 음… 로브 좀비 할로윈 영화에서 마이클 마이어스 역을 누가 맡았는지 궁금해.
+    45.60s  user  발화 끝
+    52.19s  <ret> 발화 (turn14 첫 프레임)
+    52.32s  agent 발화 시작: <ret> 로브 좀비 할로윈 영화에서 마이클 마이어스 역은 데이그 페어치가 맡았습니다.
+    52.32s  user  발화 끝
+    52.90s  ⚡SPAN 주입 [d'=0.71s / d_lead=4.80s]: Daeg Faerch played Michael Myers in the Rob Zombie Halloween movie.
+    57.12s  user  발화 시작: 아, 데이그 페어치였구나. 잊고 있었네.
+    57.12s  agent 발화 끝
+    59.52s  agent 발화 시작: 가끔은 기억이 흐릿해질 때도 있죠. 괜찮아요.
+    59.52s  user  발화 끝
+    62.40s  user  발화 시작: 네.
+    62.40s  agent 발화 끝
+    62.88s  user  발화 시작: 맞아요. 그런데 요즘 좀 스트레스가 많아. 어떻게 하면 좋을까?
+    62.88s  user  발화 끝
+    67.20s  agent 발화 시작: 스트레스가 많으시군요. 규칙적인 생활 패턴을 유지하고, 자신을 돌보는 시간을 갖는 것이 도움이 될 수 있습니
+    67.20s  user  발화 끝
+    74.40s  user  발화 시작: 규칙적인 생활 패턴… 그건 좋은 생각인데, 잘 안 될 때도 많아.
+    74.40s  agent 발화 끝
+    79.68s  agent 발화 시작: 아.
+    79.68s  user  발화 끝
+    80.16s  agent 발화 시작: 완벽하게 지키려고 애쓰기보다는, 작은 것부터 시작해 보는 건 어떨까요?
+    80.16s  agent 발화 끝
+    84.48s  user  발화 시작: 네.
+    84.48s  agent 발화 끝
+    84.96s  user  발화 시작: 작은 것부터… 예를 들면?
+    84.96s  user  발화 끝
+    86.88s  agent 발화 시작: 매일 아침 같은 시간에 일어나거나, 짧은 산책을 하는 것부터 시작해 보세요.
+    86.88s  user  발화 끝
+    92.16s  user  발화 시작: 음… 짧은 산책은 할 수 있을 것 같아.
+    92.16s  agent 발화 끝
+    96.00s  agent 발화 시작: 좋아요. 햇볕을 쬐면서 가볍게 걷는 것은 기분 전환에도 도움이 됩니다.
+    96.00s  user  발화 끝
+   100.80s  user  발화 시작: 네, 한번 해볼게요. 그런데 혹시… 명상하는 방법 좀 알려줄 수 있어?
+   100.80s  agent 발화 끝
+   106.08s  agent 발화 시작: 명상은 마음을 차분하게 하고 스트레스를 해소하는 데 효과적입니다. 편안하게 앉거나 누워서 눈을 감고, 호흡에
+   106.08s  user  발화 끝
+   113.76s  user  발화 시작: 맞아요.
+   113.76s  agent 발화 끝
+   114.24s  user  발화 시작: 호흡에 집중… 생각은 계속 떠오르는데 어떻게 해야 할까?
+   114.24s  user  발화 끝
+   118.08s  agent 발화 시작: 네.
+   118.08s  user  발화 끝
+   118.56s  agent 발화 시작: 떠오르는 생각을 억지로 막으려고 하지 마세요. 그냥 그 생각을 알아차리고, 다시 호흡으로 돌아오면 됩니다.
+   118.56s  agent 발화 끝
+   125.28s  user  발화 시작: 음… 쉽지 않네.
+   125.28s  agent 발화 끝
+   126.72s  agent 발화 시작: 처음에는 어려울 수 있지만, 꾸준히 연습하면 점점 익숙해질 거예요.
+   126.72s  user  발화 끝
+   131.04s  user  발화 시작: 음.
+   131.04s  agent 발화 끝
+   131.52s  user  발화 시작: 알았어. 꾸준히 연습해 볼게.
+   131.52s  user  발화 끝
+   133.44s  agent 발화 시작: 네, 잘 하실 수 있을 거예요.
+   133.44s  user  발화 끝
+   136.32s  user  발화 시작: 고마워, 리오라.
+   136.32s  agent 발화 끝
+   137.28s  agent 발화 시작: 천만에요. 언제나 당신의 편이에요.
+   137.28s  user  발화 끝
+   139.20s  user  발화 시작: 아, 그러고 보니 오늘 저녁에 약속이 있었지.
+   139.20s  agent 발화 끝
+   142.56s  agent 발화 시작: 네, 오늘 저녁에 약속이 있으시군요. 즐거운 시간 보내세요.
+   142.56s  user  발화 끝
+   146.39s  user  발화 시작: 음.
+   146.39s  agent 발화 끝
+   146.87s  user  발화 시작: 응, 고마워.
+   146.87s  user  발화 끝
+   147.83s  agent 발화 시작: 천만에요.
+   147.83s  user  발화 끝
+   148.31s  agent 발화 끝

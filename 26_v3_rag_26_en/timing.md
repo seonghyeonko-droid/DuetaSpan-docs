@@ -4,126 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Victor",
+#     "name": "Julia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "female",
 #     "age_range": "50s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-06-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-05-12",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-23",
+#       "date": "2026-03-02",
 #       "category": "home",
-#       "text": "User's home address is 798 Elm Street."
+#       "text": "User's home address is 383 Elm Street."
 #     },
 #     {
-#       "date": "2025-12-04",
+#       "date": "2026-03-01",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-13",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Deli, how are you today? | S2 I’m trying to get back into a good | S3 I also need to find a good restaur | S4 I think I will. Maybe I’ll try it 
+# EXAMINER(FDB-v2) 단계: S1 Hi Baeus, I’m feeling a bit stress | S2 Yes, please! What’s the weather li | S3 Korean BBQ, definitely. | S4 Perfect! That’s a huge relief.
 
-     0.00s  user  발화 시작: Hi Deli, how are you today?
-     2.30s  agent 발화 시작: I’m doing well, thank you! Ready to help you stay focused an
-     2.30s  user  발화 끝
-     9.20s  user  발화 시작: Okay.
-     9.20s  agent 발화 끝
-     9.58s  user  발화 시작: I was just reading about World War One, and it got me thinki
-     9.58s  user  발화 끝
-    17.78s  <ret> 발화 (turn5 첫 프레임)
-    18.01s  agent 발화 시작: Right.
-    18.01s  user  발화 끝
-    18.34s  ⚡SPAN 주입 [d'=0.88s / d_lead=9.58s]: The Treaty of Versailles placed the responsibility for World War I sol
-    18.40s  agent 발화 시작: <ret> The Treaty of Versailles specifically placed the respo
-    18.40s  agent 발화 끝
-    27.98s  user  발화 시작: That sounds… pretty one-sided.
-    27.98s  agent 발화 끝
-    29.51s  agent 발화 시작: [surprised] It certainly was. The treaty aimed to prevent fu
+     0.00s  user  발화 시작: Hi Baeus, I’m feeling a bit stressed today.
+     3.19s  agent 발화 시작: Hello! I understand. It's perfectly okay to feel stressed so
+     3.19s  user  발화 끝
+    10.77s  user  발화 시작: That sounds nice. Do you know who was the first Indian leade
+    10.77s  agent 발화 끝
+    17.03s  <ret> 발화 (turn3 첫 프레임)
+    17.54s  agent 발화 시작: <ret> It was Bal Gangadhar Tilak, actually, who first used t
+    17.54s  user  발화 끝
+    18.28s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.57s]: Bal Gangadhar Tilak was the first Indian leader to use the word “swara
+    27.11s  user  발화 시작: Oh, interesting! I didn’t know that.
+    27.11s  agent 발화 끝
+    29.51s  agent 발화 시작: It’s a fascinating bit of history. Would you like to learn m
     29.51s  user  발화 끝
-    37.56s  user  발화 시작: Yeah.
-    37.56s  agent 발화 끝
-    37.94s  user  발화 시작: I’m trying to get back into a good study routine. I keep get
-    37.94s  user  발화 끝
-    43.31s  agent 발화 시작: Yeah.
-    43.31s  user  발화 끝
-    43.69s  agent 발화 시작: That’s very common! We can definitely work on that. Have you
-    43.69s  agent 발화 끝
-    50.98s  user  발화 시작: No, what’s that?
-    50.98s  agent 발화 끝
-    51.93s  <ret> 발화 (turn13 첫 프레임)
-    52.07s  ⚡SPAN 주입 [d'=0.38s / d_lead=7.28s]: The Pomodoro Technique is a time management method that uses a timer t
-    52.13s  agent 발화 시작: <ret> The Pomodoro Technique breaks work into 25-minute inte
-    52.13s  user  발화 끝
-    59.41s  user  발화 시작: Yeah, yeah.
-    59.41s  agent 발화 끝
-    60.17s  user  발화 시작: That sounds… manageable. I think.
-    60.17s  user  발화 끝
-    62.09s  agent 발화 시작: [happy] It is! You can adjust the intervals to suit your nee
-    62.09s  user  발화 끝
-    70.14s  user  발화 시작: I also need to find a good restaurant for dinner tonight. So
-    70.14s  agent 발화 끝
-    75.27s  <ret> 발화 (turn18 첫 프레임)
-    75.89s  agent 발화 시작: <ret> I found a few options! The Spice Merchant is Indian an
-    75.89s  user  발화 끝
-    76.03s  ⚡SPAN 주입 [d'=0.76s / d_lead=10.73s]: (tool result) Restaurants found: The Spice Merchant (Indian, $), Bella
-    86.62s  user  발화 시작: Yeah.
-    86.62s  agent 발화 끝
-    87.00s  user  발화 시작: Seoul Garden sounds good. Can you tell me their address?
-    87.00s  user  발화 끝
-    90.54s  <ret> 발화 (turn21 첫 프레임)
-    90.78s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.75s]: (tool result) Seoul Garden: 123 Main Street, Anytown, USA. Phone: 555-
-    90.84s  agent 발화 시작: <ret> Seoul Garden is located at 123 Main Street, Anytown, a
-    90.84s  user  발화 끝
-    96.59s  user  발화 시작: Nice.
-    96.59s  agent 발화 끝
-    96.97s  user  발화 시작: Perfect! Thanks, Deli.
-    96.97s  user  발화 끝
-    98.12s  agent 발화 시작: [laugh] You’re very welcome! Remember, breaking down your st
-    98.12s  user  발화 끝
-   105.78s  user  발화 시작: I think I will. Maybe I’ll try it tomorrow.
-   105.78s  agent 발화 끝
-   109.23s  agent 발화 시작: That’s a great plan! A little focused effort each day adds u
-   109.23s  user  발화 끝
-   114.22s  user  발화 시작: Yeah.
-   114.22s  agent 발화 끝
-   114.60s  user  발화 시작: One last thing… what time is it?
-   114.60s  user  발화 끝
-   117.25s  <ret> 발화 (turn29 첫 프레임)
-   117.28s  agent 발화 시작: <ret> It is currently Friday, July 10, 2026 at 3:58 PM in As
-   117.28s  user  발화 끝
-   117.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.13s]: (tool result) It is Friday, July 10, 2026 at 3:58 PM in Asia/Seoul rig
-   123.41s  agent 발화 끝
+    36.68s  user  발화 시작: Maybe later. I'm actually planning a trip to Seoul next week
+    36.68s  agent 발화 끝
+    41.07s  agent 발화 시작: Oh, wonderful! Seoul is a vibrant city. I can help you plan 
+    41.07s  user  발화 끝
+    47.05s  user  발화 시작: Yes, please! What’s the weather like there right now?
+    47.05s  agent 발화 끝
+    50.64s  agent 발화 시작: Yeah.
+    50.64s  user  발화 끝
+    50.99s  <ret> 발화 (turn10 첫 프레임)
+    51.04s  agent 발화 시작: <ret> Right now in Seoul, it's 26.0 degrees Celsius, with 68
+    51.04s  agent 발화 끝
+    51.81s  ⚡SPAN 주입 [d'=0.82s / d_lead=9.57s]: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wi
+    60.61s  user  발화 시작: That sounds pretty good.
+    60.61s  agent 발화 끝
+    62.20s  agent 발화 시작: It does, doesn’t it? Seoul in July is usually quite warm and
+    62.20s  user  발화 끝
+    67.39s  user  발화 시작: I'm looking for a nice restaurant near Myeongdong.
+    67.39s  agent 발화 끝
+    70.58s  agent 발화 시작: Myeongdong is a great choice! There are tons of options. Wha
+    70.58s  user  발화 끝
+    78.55s  user  발화 시작: Korean BBQ, definitely.
+    78.55s  agent 발화 끝
+    79.13s  <ret> 발화 (turn16 첫 프레임)
+    79.75s  agent 발화 시작: <ret> I found Wangbijib Myeongdong Main Store. It has a 4.5-
+    79.75s  user  발화 끝
+    79.89s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.97s]: (tool result) Wangbijib Myeongdong Main Store: 4.5 stars, Korean BBQ, 
+    87.72s  user  발화 시작: Uh-huh.
+    87.72s  agent 발화 끝
+    88.12s  user  발화 시작: Hmm, sounds good.
+    88.12s  user  발화 끝
+    89.32s  agent 발화 시작: It's very popular. They’re known for their high-quality meat
+    89.32s  user  발화 끝
+    94.10s  user  발화 시작: Do they take reservations?
+    94.10s  agent 발화 끝
+    95.36s  <ret> 발화 (turn21 첫 프레임)
+    95.70s  agent 발화 시작: <ret> Great news! I’ve booked a table for two at Wangbijib o
+    95.70s  user  발화 끝
+    96.29s  ⚡SPAN 주입 [d'=0.93s / d_lead=8.37s]: (tool result) Reservation confirmed for 2 people at Wangbijib Myeongdo
+   104.07s  user  발화 시작: Yeah.
+   104.07s  agent 발화 끝
+   104.47s  user  발화 시작: Perfect! That’s a huge relief.
+   104.47s  user  발화 끝
+   106.46s  agent 발화 시작: [happy] Wonderful! I’m so glad I could help with that. Knowi
+   106.46s  user  발화 끝
+   113.64s  user  발화 시작: Mm-hmm.
+   113.64s  agent 발화 끝
+   114.04s  user  발화 시작: Yeah, it really does. Thanks, Baeus.
+   114.04s  user  발화 끝
+   116.43s  agent 발화 시작: You're very welcome! Perhaps a quick breathing exercise now?
+   116.43s  user  발화 끝
+   122.81s  user  발화 시작: Maybe later. I think I’m good for now.
+   122.81s  agent 발화 끝
+   126.00s  agent 발화 시작: Alright, that sounds perfect.
+   126.00s  user  발화 끝
+   127.60s  agent 발화 끝

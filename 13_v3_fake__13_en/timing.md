@@ -4,155 +4,141 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Milan",
+#     "name": "Jamie",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
+#       "date": "2026-05-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
+#     },
+#     {
+#       "date": "2026-04-19",
+#       "category": "home",
+#       "text": "User's home address is 223 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-03-24",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-06-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
-#     },
-#     {
-#       "date": "2026-05-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-05-09",
+#       "date": "2026-01-19",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-22",
+#       "date": "2026-01-12",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering who played Pa | S2 I love that movie. Do you have any | S3 Hmm. I guess I could try that. | S4 …do you think it helps to have som
+# EXAMINER(FDB-v2) 단계: S1 Do you know who plays Liv and Madd | S2 Hmm. Okay. | S3 I try to do that, but it’s hard so | S4 I guess so. Maybe we should read a
 
-     0.00s  user  발화 시작: I was just wondering who played Pa in *Gone with the Wind*?
-     3.73s  <ret> 발화 (turn1 첫 프레임)
-     4.33s  agent 발화 시작: <ret> That would be Thomas John Mitchell — he really brought
-     4.33s  user  발화 끝
-     5.10s  ⚡SPAN 주입 [d'=1.37s / d_lead=9.03s]: Thomas John Mitchell portrayed the character of Pa in the 1939 film *G
-    13.36s  user  발화 시작: Yeah.
-    13.36s  agent 발화 끝
-    13.72s  user  발화 시작: Oh, wow, an Oscar! I didn’t know that.
-    13.72s  user  발화 끝
-    16.61s  agent 발화 시작: Yeah.
-    16.61s  user  발화 끝
-    16.97s  agent 발화 시작: [happy] It's true! He was really celebrated for his portraya
-    16.97s  agent 발화 끝
-    24.91s  user  발화 시작: Yeah, yeah.
-    24.91s  agent 발화 끝
-    25.63s  user  발화 시작: Absolutely. What else was he in?
-    25.63s  user  발화 끝
-    27.42s  <ret> 발화 (turn8 첫 프레임)
-    27.80s  agent 발화 시작: <ret> He had a really full career! He was in *Mr. Deeds Goes
-    27.80s  user  발화 끝
-    27.83s  ⚡SPAN 주입 [d'=0.41s / d_lead=7.94s]: Thomas Mitchell also appeared in several other notable films, includin
-    35.74s  user  발화 시작: *High Noon*…Gary Cooper, right?
-    35.74s  agent 발화 끝
-    37.19s  agent 발화 시작: That’s right! Gary Cooper starred in *High Noon*, alongside 
-    37.19s  user  발화 끝
-    42.60s  user  발화 시작: Yeah, yeah.
-    42.60s  agent 발화 끝
-    43.32s  user  발화 시작: I love that movie. Do you have any advice for dealing with f
-    43.32s  user  발화 끝
-    48.38s  agent 발화 시작: [curious] It's completely normal to feel overwhelmed sometim
-    48.38s  user  발화 끝
-    56.68s  user  발화 시작: Mm-hmm.
-    56.68s  agent 발화 끝
-    57.04s  user  발화 시작: Waves?
-    57.04s  user  발화 끝
-    57.40s  agent 발화 시작: It's like the ocean—sometimes calm, sometimes big surges—and
-    57.40s  user  발화 끝
-    66.07s  user  발화 시작: That makes sense. I'm trying to start a new routine, but it'
-    66.07s  agent 발화 끝
-    70.76s  agent 발화 시작: [sigh] Starting a new routine can definitely be tricky. Gent
-    70.76s  user  발화 끝
-    77.62s  user  발화 시작: Mm-hmm.
-    77.62s  agent 발화 끝
-    77.98s  user  발화 시작: Like what kind of structure?
-    77.98s  user  발화 끝
-    79.79s  agent 발화 시작: Even small things—a regular bedtime, a morning walk, a quiet
-    79.79s  user  발화 끝
-    88.81s  user  발화 시작: Hmm. I guess I could try that.
-    88.81s  agent 발화 끝
-    91.34s  agent 발화 시작: It's okay to start small. Don't try to overhaul everything a
-    91.34s  user  발화 끝
-    97.48s  user  발화 시작: I’m trying to get back to painting, but I just keep procrast
-    97.48s  agent 발화 끝
-   101.81s  agent 발화 시작: Uh-huh.
-   101.81s  user  발화 끝
-   102.17s  agent 발화 시작: It's understandable to feel stuck sometimes. What part of pa
-   102.17s  agent 발화 끝
-   107.95s  user  발화 시작: Just…starting, I think. It feels like a huge task.
-   107.95s  agent 발화 끝
-   111.20s  agent 발화 시작: [happy] That's so common! Maybe just set a timer for ten min
-   111.20s  user  발화 끝
-   120.94s  user  발화 시작: Uh-huh.
-   120.94s  agent 발화 끝
-   121.31s  user  발화 시작: Ten minutes…okay. That doesn't sound so bad.
-   121.31s  user  발화 끝
-   123.83s  agent 발화 시작: It really doesn't! Sometimes just breaking it down into smal
-   123.83s  user  발화 끝
-   130.33s  user  발화 시작: …do you think it helps to have someone to talk to about it?
-   130.33s  agent 발화 끝
-   135.02s  agent 발화 시작: Talking to someone you trust can be incredibly helpful—shari
-   135.02s  user  발화 끝
-   140.08s  user  발화 시작: Yeah, yeah.
-   140.08s  agent 발화 끝
-   140.80s  agent 발화 시작: [curious] Leaning on your support network is a really powerf
-   140.80s  user  발화 끝
-   149.47s  user  발화 시작: I don’t really have many friends nearby.
-   149.47s  agent 발화 끝
-   151.99s  agent 발화 시작: [sigh] That can be really isolating. Are there any groups or
-   151.99s  user  발화 끝
-   159.57s  user  발화 시작: Mm-hmm.
-   159.57s  agent 발화 끝
-   159.94s  user  발화 시작: I hadn't thought of that.
-   159.94s  user  발화 끝
-   161.74s  agent 발화 시작: It's a great way to meet people who understand your passions
-   161.74s  user  발화 끝
-   169.68s  user  발화 시작: That’s a good idea. Thanks, Gulo.
-   169.68s  agent 발화 끝
-   171.29s  <ret> 발화 (turn42 첫 프레임)
-   171.85s  agent 발화 시작: <ret> [laugh] You're very welcome! I'm glad I could help. Re
-   171.85s  user  발화 끝
-   172.26s  ⚡SPAN 주입(IRRELEVANT) [d'=0.97s / d_lead=7.58s]: The average high temperature in Fairbanks, Alaska in January is -17.8°
-   179.43s  agent 발화 시작: And remember, those feelings are temporary, and you have the
-   179.43s  agent 발화 끝
-   184.85s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who plays Liv and Maddie?
+     2.93s  agent 발화 시작: Oh, that's a fun show! Dove Cameron played both Liv and Madd
+     2.93s  user  발화 끝
+     8.79s  user  발화 시작: Yeah.
+     8.79s  agent 발화 끝
+     9.15s  user  발화 시작: Really? Both of them?
+     9.15s  user  발화 끝
+    10.06s  <ret> 발화 (turn4 첫 프레임)
+    10.62s  agent 발화 시작: <ret> Yes, she did! It was a dual role, and she handled it w
+    10.62s  user  발화 끝
+    10.80s  ⚡SPAN 주입 [d'=0.74s / d_lead=6.96s]: Dove Cameron is an American singer and actress, best known for her dua
+    17.57s  agent 발화 시작: She's actually an American singer and actress, best known fo
+    17.57s  agent 발화 끝
+    25.26s  user  발화 시작: Uh-huh.
+    25.26s  agent 발화 끝
+    25.62s  user  발화 시작: That’s amazing.
+    25.62s  user  발화 끝
+    26.36s  agent 발화 시작: [happy] It really is! Taking on two characters like that req
+    26.36s  user  발화 끝
+    32.58s  agent 발화 시작: I’m checking if there’s more information about other actors 
+    32.58s  agent 발화 끝
+    39.90s  user  발화 시작: Hmm. Okay.
+    39.90s  agent 발화 끝
+    40.63s  agent 발화 시작: Sometimes, shows really center around one or two key perform
+    40.63s  user  발화 끝
+    45.39s  user  발화 시작: Mm-hmm.
+    45.39s  agent 발화 끝
+    45.76s  user  발화 시작: Do you have any advice for encouraging a child who is strugg
+    45.76s  user  발화 끝
+    50.88s  agent 발화 시작: Creating a relaxed, positive environment is key. Focus on th
+    50.88s  user  발화 끝
+    57.11s  user  발화 시작: Okay.
+    57.11s  agent 발화 끝
+    57.47s  user  발화 시작: That makes sense.
+    57.47s  user  발화 끝
+    58.57s  agent 발화 시작: It does. Reading aloud *to* your child, even as they get old
+    58.57s  user  발화 끝
+    66.62s  user  발화 시작: Uh-huh.
+    66.62s  agent 발화 끝
+    66.99s  agent 발화 시작: And praising their effort—their willingness to try—is more h
+    66.99s  user  발화 끝
+    73.21s  user  발화 시작: Okay.
+    73.21s  agent 발화 끝
+    73.58s  user  발화 시작: I try to do that, but it’s hard sometimes.
+    73.58s  user  발화 끝
+    76.73s  <ret> 발화 (turn23 첫 프레임)
+    76.87s  agent 발화 시작: Yeah.
+    76.87s  user  발화 끝
+    77.03s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.59s]: Consistency is crucial when establishing reading routines, and creatin
+    77.24s  agent 발화 시작: <ret> Consistency is really crucial when you’re establishing
+    77.24s  agent 발화 끝
+    83.83s  user  발화 시작: Okay.
+    83.83s  agent 발화 끝
+    84.20s  user  발화 시작: That’s a good idea about the space.
+    84.20s  user  발화 끝
+    86.34s  <ret> 발화 (turn26 첫 프레임)
+    86.76s  agent 발화 시작: <ret> I was just checking the weather in Buenos Aires, and t
+    86.76s  user  발화 끝
+    87.84s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.05s]: The average rainfall in Buenos Aires, Argentina is 1,210 millimeters (
+    94.81s  user  발화 시작: Oh, wow. That’s interesting.
+    94.81s  agent 발화 끝
+    96.28s  agent 발화 시작: [curious] It is! Sometimes a little bit of geography can be 
+    96.28s  user  발화 끝
+   101.40s  user  발화 시작: Yeah.
+   101.40s  agent 발화 끝
+   101.77s  user  발화 시작: I guess so. Maybe we should read a book…
+   101.77s  user  발화 끝
+   105.06s  user  발화 시작: …about Argentina.
+   105.06s  user  발화 끝
+   105.79s  agent 발화 시작: That’s a wonderful idea! A story set in a different place ca
+   105.79s  user  발화 끝
+   112.75s  agent 발화 끝

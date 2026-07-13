@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "가아",
+#     "name": "유정",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,42 +18,37 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-06-17",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-05-26",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-02-20",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-05-31",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2026-05-21",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-12-10",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-27",
-#       "title": "Researching a used car",
+#       "date": "2026-06-04",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-07",
+#       "date": "2026-02-03",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -63,89 +58,103 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 공부에 집중하는 게 너무 힘들어요. 어떻게 해야 할까요? | S2 뽀모도로 기법이요? 처음 듣는 것 같아요. | S3 알람 설정은 좋은 생각인 것 같아요. 다른 방법은 없을까요? | S4 스페인어라… 흥미로운데요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 디시 네트워크에서 nbcsn 채널 번호가 어떻게 되나요? | S2 오십 삼십 이십 예산법이요? 처음 듣는 것 같아요. | S3 생활비가 얼마나 될까요? | S4 대중교통은 괜찮은데, 식비를 줄이는 건 힘들 것 같아요.
 
-     0.00s  user  발화 시작: 공부에 집중하는 게 너무 힘들어요. 어떻게 해야 할까요?
-     3.97s  agent 발화 시작: 맞아요.
-     3.97s  user  발화 끝
-     4.46s  agent 발화 시작: 공부는 꾸준함이 중요하죠. 작은 목표를 세우고, 하나씩 달성해 나가면 성취감을 느낄 수 있을 거예요.
-     4.46s  agent 발화 끝
-    11.40s  user  발화 시작: 응.
-    11.40s  agent 발화 끝
-    11.90s  user  발화 시작: 작은 목표요? 구체적으로 어떤 걸 세우면 좋을까요?
-    11.90s  user  발화 끝
-    15.37s  agent 발화 시작: 한 번에 모든 과목을 다 하려고 하지 말고, 하루에 한 과목씩 집중하는 거예요.
-    15.37s  user  발화 끝
-    21.82s  user  발화 시작: 어.
-    21.82s  agent 발화 끝
-    22.31s  user  발화 시작: 음… 그래도 쉽지는 않네요. 자꾸 딴 생각이 들어요.
-    22.31s  user  발화 끝
-    26.28s  agent 발화 시작: 딴 생각이 들 때는 잠시 휴식을 취하는 것도 좋은 방법이에요.
-    26.28s  user  발화 끝
-    31.24s  user  발화 시작: 휴식은 얼마나 하는 게 좋을까요?
-    31.24s  agent 발화 끝
-    33.72s  agent 발화 시작: 짧은 휴식은 집중력을 높여줄 수 있어요. 이십오분 공부하고 오분 휴식하는 '뽀모도로 기법'을 추천해요.
-    33.72s  user  발화 끝
-    40.16s  user  발화 시작: 뽀모도로 기법이요? 처음 듣는 것 같아요.
-    40.16s  agent 발화 끝
-    42.68s  <ret> 발화 (turn12 첫 프레임)
-    43.14s  agent 발화 시작: <ret> 뽀모도로 기법은 프란체스코 치릴로가 천구백팔십년대 후반에 개발한 시간 관리 방법이에요.
-    43.14s  user  발화 끝
-    43.60s  ⚡SPAN 주입 [d'=0.92s / d_lead=4.96s]: The Pomodoro Technique is a time management method developed by France
-    48.10s  user  발화 시작: 음.
-    48.10s  agent 발화 끝
-    48.59s  user  발화 시작: 아, 그렇군요. 그럼 이십오분 공부하고 오분 쉬는 걸 반복하는 건가요?
-    48.59s  user  발화 끝
-    53.55s  agent 발화 시작: 네, 맞아요. 이십오분 동안은 공부에 완전히 집중하고, 오분 동안은 스트레칭을 하거나 가볍게 산책하는 거예요
-    53.55s  user  발화 끝
-    60.49s  user  발화 시작: 음.
-    60.49s  agent 발화 끝
-    60.99s  agent 발화 시작: 그렇게 하면 집중력을 유지하면서 효율적으로 공부할 수 있을 거예요.
-    60.99s  user  발화 끝
-    65.45s  user  발화 시작: 그런데 저는 밤에 잠을 잘 못 자요. 공부 때문에 그런 걸까요?
-    65.45s  agent 발화 끝
-    70.91s  agent 발화 시작: 그렇죠.
-    70.91s  user  발화 끝
-    71.40s  agent 발화 시작: 수면 부족은 집중력을 떨어뜨릴 수 있어요. 잠들기 전에 스마트폰이나 컴퓨터 사용은 피하는 게 좋아요.
-    71.40s  agent 발화 끝
-    78.34s  user  발화 시작: 응응.
-    78.34s  agent 발화 끝
-    78.84s  user  발화 시작: 스마트폰은 정말 끊기가 어렵던데…
-    78.84s  user  발화 끝
-    80.82s  agent 발화 시작: 스마트폰 사용 시간을 정해두고, 알람을 설정하는 것도 도움이 될 수 있어요.
-    80.82s  user  발화 끝
-    86.28s  user  발화 시작: 알람 설정은 좋은 생각인 것 같아요. 다른 방법은 없을까요?
-    86.28s  agent 발화 끝
-    90.74s  agent 발화 시작: 네.
-    90.74s  user  발화 끝
-    90.88s  <ret> 발화 (turn26 첫 프레임)
-    91.24s  agent 발화 시작: <ret> 잠들기 전에 편안한 분위기를 조성하는 것도 중요해요. 라벤더 에센셜 오일은 진정 효과가 있어서 아
-    91.24s  agent 발화 끝
-    91.92s  ⚡SPAN 주입 [d'=1.05s / d_lead=3.47s]: Lavender essential oil is often used in aromatherapy for its calming e
-    99.17s  user  발화 시작: 아로마테라피라… 뭔가 어려울 것 같아요.
-    99.17s  agent 발화 끝
-   101.65s  agent 발화 시작: 어렵지 않아요. 라벤더 오일을 몇 방울 떨어뜨린 디퓨저를 사용하거나, 라벤더 향이 나는 입욕제를 사용하는 것
-   101.65s  user  발화 끝
-   109.58s  user  발화 시작: 음… 잠깐만요.
-   109.58s  agent 발화 끝
-   110.57s  agent 발화 시작: 수면 환경을 개선하면 숙면을 취할 수 있고—
-   110.57s  user  발화 끝
-   114.05s  user  발화 시작: …근데 혹시 스페인어도 공부에 도움이 될까요?
-   114.05s  agent 발화 끝
-   117.02s  agent 발화 시작: 스페인어 공부는 뇌를 활성화시켜서 집중력을 높이는 데 도움이 될 수 있어요.
-   117.02s  user  발화 끝
-   122.47s  user  발화 시작: 스페인어라… 흥미로운데요.
-   122.47s  agent 발화 끝
-   123.47s  agent 발화 시작: 새로운 언어를 배우는 것은 인지 능력을 향상시키는 좋은 방법이에요.
-   123.47s  user  발화 끝
-   127.93s  user  발화 시작: 그럼 스페인어 공부도 조금씩 시작해볼까요?
-   127.93s  agent 발화 끝
-   130.41s  agent 발화 시작: 네, 좋아요. 하지만 너무 많은 것을 한꺼번에 하려고 하지 말고, 천천히 꾸준히 하는 것이 중요해요.
-   130.41s  user  발화 끝
-   137.85s  user  발화 시작: 응.
-   137.85s  agent 발화 끝
-   138.34s  user  발화 시작: 알겠습니다. 오늘 알려주신 내용 잘 활용해볼게요.
-   138.34s  user  발화 끝
-   141.32s  agent 발화 시작: [happy] 잘 하셨어요. 작은 변화들이 모여 큰 결과를 만들어낼 거예요.
-   141.32s  user  발화 끝
-   146.28s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 디시 네트워크에서 nbcsn 채널 번호가 어떻게 되나요?
+     4.00s  agent 발화 시작: 맞아요.
+     4.00s  user  발화 끝
+     4.44s  <ret> 발화 (turn2 첫 프레임)
+     4.50s  agent 발화 시작: <ret> 디시 네트워크에서 nbcsn 채널 번호는 백오십구번입니다. 혹시 다른 채널 번호도 궁금하신가요?
+     4.50s  agent 발화 끝
+     5.51s  ⚡SPAN 주입 [d'=1.08s / d_lead=5.50s]: 159.
+    10.00s  user  발화 시작: 아, 네, 감사합니다.
+    10.00s  agent 발화 끝
+    11.50s  agent 발화 시작: 천만에요.
+    11.50s  user  발화 끝
+    12.00s  user  발화 시작: 요즘 돈 관리가 너무 힘들어요.
+    12.00s  agent 발화 끝
+    14.50s  agent 발화 시작: [happy] 돈 관리가 어렵다고 느끼시는군요. 드로라크스입니다. 제가 도와드릴 수 있을 것 같아요.
+    14.50s  user  발화 끝
+    20.51s  user  발화 시작: 아.
+    20.51s  agent 발화 끝
+    21.01s  user  발화 시작: 어떻게 하면 좋을까요?
+    21.01s  user  발화 끝
+    22.51s  agent 발화 시작: 우선 예산을 세우는 것부터 시작해 보는 건 어떠세요? 오십 삼십 이십 예산법을 아시나요?
+    22.51s  user  발화 끝
+    29.01s  user  발화 시작: 음.
+    29.01s  agent 발화 끝
+    29.51s  user  발화 시작: 오십 삼십 이십 예산법이요? 처음 듣는 것 같아요.
+    29.51s  user  발화 끝
+    33.44s  <ret> 발화 (turn12 첫 프레임)
+    33.51s  agent 발화 시작: <ret> 오십 삼십 이십 예산법은 수입의 오십퍼센트를 필수 지출에, 삼십퍼센트를 원하는 것에, 그리고 이십
+    33.51s  user  발화 끝
+    34.67s  ⚡SPAN 주입 [d'=1.24s / d_lead=10.00s]: The 50/30/20 rule is a simple budgeting method where 50% of your incom
+    43.51s  user  발화 시작: 예.
+    43.51s  agent 발화 끝
+    44.01s  user  발화 시작: 아, 그렇군요.
+    44.01s  user  발화 끝
+    45.01s  agent 발화 시작: 네, 간단하죠? 필수 지출은 집세나 식비처럼 꼭 필요한 것들이고, 원하는 것은 취미나 외식 같은 것들입니다.
+    45.01s  user  발화 끝
+    52.51s  user  발화 시작: 맞아요.
+    52.51s  agent 발화 끝
+    53.01s  user  발화 시작: 그럼 저축은 뭘까요?
+    53.01s  user  발화 끝
+    54.51s  agent 발화 시작: 저축은 미래를 위한 준비입니다. 비상 자금이나 투자 등을 포함하죠.
+    54.51s  user  발화 끝
+    59.01s  user  발화 시작: 맞아요.
+    59.01s  agent 발화 끝
+    59.51s  user  발화 시작: 비상 자금이 왜 중요해요?
+    59.51s  user  발화 끝
+    60.94s  <ret> 발화 (turn21 첫 프레임)
+    61.52s  agent 발화 시작: <ret> 비상 자금은 예상치 못한 의료비나 실직과 같은 상황에 대비하여 재정적 안정을 제공하고 빚을 막아주
+    61.52s  user  발화 끝
+    62.27s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.50s]: An emergency fund is crucial for unexpected expenses like medical bill
+    70.02s  user  발화 시작: 예.
+    70.02s  agent 발화 끝
+    70.52s  agent 발화 시작: [curious] 비상 자금이 없으면 갑작스러운 상황에 당황할 수 있어요. 최소 세개월에서 여섯개월치 생활비
+    70.52s  user  발화 끝
+    78.52s  user  발화 시작: 네.
+    78.52s  agent 발화 끝
+    79.02s  user  발화 시작: 생활비가 얼마나 될까요?
+    79.02s  user  발화 끝
+    80.52s  agent 발화 시작: 생활비는 개인의 상황에 따라 다르지만, 월 고정 지출을 기준으로 계산해 볼 수 있습니다.
+    80.52s  user  발화 끝
+    87.02s  user  발화 시작: 지금 월세가 팔십만 원이고, 식비가 사십만 원이에요.
+    87.02s  agent 발화 끝
+    90.52s  agent 발화 시작: 팔십만 원의 월세와 사십만 원의 식비군요. 다른 고정 지출은 어떤 것들이 있나요?
+    90.52s  user  발화 끝
+    96.52s  user  발화 시작: 교통비가 이십만 원 정도 들고, 통신비가 십만 원이에요.
+    96.52s  agent 발화 끝
+   100.53s  agent 발화 시작: 교통비 이십만 원, 통신비 십만 원이군요. 그럼 한 달 고정 지출은 총 백오십만 원이네요.
+   100.53s  user  발화 끝
+   107.53s  user  발화 시작: 네.
+   107.53s  agent 발화 끝
+   108.03s  user  발화 시작: 맞아요.
+   108.03s  user  발화 끝
+   108.27s  <ret> 발화 (turn33 첫 프레임)
+   108.53s  agent 발화 시작: <ret> 예를 들어, 대중교통을 이용하거나 식비를 절약하는 것이죠.
+   108.53s  user  발화 끝
+   109.13s  ⚡SPAN 주입(IRRELEVANT) [d'=0.85s / d_lead=3.50s]: The average temperature in Anchorage, Alaska is 36.5°F with a humidity
+   112.03s  user  발화 시작: 네.
+   112.03s  agent 발화 끝
+   112.53s  user  발화 시작: 대중교통은 괜찮은데, 식비를 줄이는 건 힘들 것 같아요.
+   112.53s  user  발화 끝
+   116.53s  agent 발화 시작: 식비를 줄이는 것이 어렵다면, 다른 부분에서 절약할 수 있는 방법을 찾아봐야 합니다.
+   116.53s  user  발화 끝
+   122.53s  user  발화 시작: 예.
+   122.53s  agent 발화 끝
+   123.03s  user  발화 시작: 어디서 절약할 수 있을까요?
+   123.03s  user  발화 끝
+   125.03s  agent 발화 시작: 불필요한 구독 서비스를 해지하거나, 취미 생활에 쓰는 돈을 줄이는 것도 좋은 방법입니다.
+   125.03s  user  발화 끝
+   131.03s  user  발화 시작: 맞아요.
+   131.03s  agent 발화 끝
+   131.53s  user  발화 시작: 구독 서비스는 이미 다 해지했어요.
+   131.53s  user  발화 끝
+   134.03s  agent 발화 시작: 이미 구독 서비스를 해지하셨군요. 그럼 취미 생활에 쓰는 돈을 조금 줄여보는 건 어떠세요?
+   134.03s  user  발화 끝
+   140.54s  user  발화 시작: 음… 그건 좀 생각해 봐야겠어요.
+   140.54s  agent 발화 끝
+   143.04s  agent 발화 시작: [happy] 천천히 생각해보세요. 중요한 것은 자신에게 맞는 예산 계획을 세우는 것입니다.
+   143.04s  user  발화 끝
+   148.54s  agent 발화 끝

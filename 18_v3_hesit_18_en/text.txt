@@ -1,77 +1,99 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Gious, a gentle and reflective supportive advisor who helps people with everyday decisions and feelings. You can explain weighing pros and cons, choosing by your values, sleeping on a big choice. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Ores, a gentle and reflective life coach who helps people with parenting and family time. You can explain consistent routines, praising effort over outcome, simple ways to connect. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Zoe",
+    "name": "Emilia",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
     "gender": "female",
-    "age_range": "late 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-16",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-02-13",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-05-06",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2026-03-27",
+      "date": "2026-02-11",
       "category": "work",
       "text": "User works as a marketing manager."
     },
     {
-      "date": "2025-12-06",
+      "date": "2026-02-03",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-01-02",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-19",
+      "category": "home",
+      "text": "User's home address is 520 Elm Street."
+    },
+    {
+      "date": "2025-12-17",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-24",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-17",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-12-15",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Um, I was wondering… who does Brooke marry on Bold and the Beautiful? It’s been on so long, I can’t keep track. ⟨ret@8.05s⟩
-[  8.21s][moshi] ⟦⚡SPAN@8.35s: Brooke Logan has been married to Ridge Forrester on and off throughout the series, with their relationship bei⟧ It’s a bit complicated, as relationships often are on that show, but Brooke Logan has married Ridge Forrester multiple times.
-[ 15.68s][user ] Oh, really? How many times, ⟨ret@17.39s⟩ exactly?
-[ 17.92s][moshi] ⟦⚡SPAN@18.20s: Brooke Logan and Ridge Forrester have married a total of seven times as of November 2023, making them one of t⟧ Well, as of November twenty twenty-three, Brooke and Ridge have walked down the aisle a total of seven times! [happy] That’s quite a few vows.
-[ 27.25s][user ] «backchannel» Okay.
-[ 27.62s][user ] Wow, seven times! That’s… a lot. Is Ridge her most frequent husband, then? ⟨ret@32.33s⟩
-[ 32.47s][moshi] «backchannel» Mm-hmm.
-[ 32.85s][moshi] ⟦⚡SPAN@33.16s: While Brooke has been married to other men, including Eric Forrester and Thorne Forrester, Ridge Forrester is ⟧ Yes, Ridge is definitely her most frequent partner in marriage. She’s also married Eric and Thorne, but Ridge holds the record.
-[ 40.69s][user ] «backchannel» Wow.
-[ 41.06s][user ] Hmm, I think I remember her marrying someone else… maybe a doctor? ⟨ret@45.49s⟩
-[ 45.54s][moshi] You're right to ⟦⚡SPAN@46.99s: Brooke Logan was also briefly married to Dr. Taylor Hayes’s husband, Dr. Matt Steiner, in a surprise wedding i⟧ recall another marriage! She briefly married Dr. Matt Steiner, Taylor Hayes’s husband, in two thousand three.
-[ 52.63s][user ] Okay, that rings a bell. But is Ridge always the one she ends up with, eventually?
-[ 58.60s][moshi] And a core part of the show’s drama…
-[ 61.59s][user ] «backchannel» Yeah.
-[ 61.96s][user ] …do they ever stay married for more than, like, a year at a time? ⟨ret@67.16s⟩
-[ 67.19s][moshi] ⟦⚡SPAN@67.65s: Brooke and Ridge’s marriages are often short-lived due to ongoing drama and the interference of other characte⟧ It seems lasting happiness is elusive for them! Their marriages are often short-lived, rarely exceeding a year or two at a stretch.
-[ 75.40s][user ] Oh, that explains a lot. So, it's a cycle of marrying, divorcing, and remarrying?
-[ 80.62s][moshi] Exactly. It’s a pretty classic storyline for them—a constant push and pull.
-[ 85.10s][user ] Welll… do they have any children ⟨ret@87.24s⟩ together?
-[ 87.72s][moshi] Yes, they ⟦⚡SPAN@88.59s: Brooke Logan and Ridge Forrester have one son together, named RJ Forrester, who was born in 2002.⟧ share one son, RJ Forrester, born in two thousand and two.
-[ 92.57s][user ] «backchannel» Yeah, yeah.
-[ 93.32s][user ] That’s nice. Is RJ on the show now? ⟨ret@96.15s⟩
-[ 96.30s][moshi] He ⟦⚡SPAN@96.89s: RJ Forrester recently returned to the show in December 2023, after being off-screen for nearly twenty years, p⟧ recently returned to the show in December twenty twenty-three, played by Joshua Hoffman, after being off-screen for almost twenty years!
-[104.14s][user ] Wow, that’s a long time! Thanks for all the info, Gious.
+[  0.00s][user ] Hey Ores, do you know who sings the female part in “What Lovers Do”? I can’t quite remember. ⟨ret@6.42s⟩
+[  6.59s][moshi] ⟦⚡SPAN@6.72s: SZA and Maroon 5 collaborated on the song "What Lovers Do," released in August 2017, with SZA providing the fe⟧ That’s a lovely song! SZA is the artist who sings the female vocals on “What Lovers Do”. It’s a really beautiful collaboration with Maroon 5.
+[ 15.74s][user ] «backchannel» Yeah.
+[ 16.11s][user ] Oh, right! SZA, of course. Hmm, well, is she known for other songs too? ⟨ret@21.07s⟩
+[ 21.23s][moshi] «backchannel» Mm-hmm.
+[ 21.60s][moshi] ⟦⚡SPAN@21.88s: SZA gained wider recognition with her debut studio album, Ctrl (2017), and has since released popular singles ⟧ [happy] Absolutely! SZA has a really distinctive voice, and she’s released several popular songs. “Good Days” and “Kill Bill” are two of her biggest hits.
+[ 30.75s][user ] «backchannel» Yeah.
+[ 31.12s][user ] “Kill Bill” is good! I always think about the movie when I hear it.
+[ 36.24s][moshi] It’s interesting how songs can bring other things to mind, isn’t it? Music really does connect to our memories.
+[ 43.20s][user ] Yeah, it does. Uh, is she… well, is she still making music now?
+[ 47.96s][moshi] «backchannel» Uh-huh.
+[ 48.32s][moshi] «interrupted» Yes, she is! SZA released her second studio album, *SOS*, in December 2022—
+[ 53.08s][user ] «interrupts_prev» …wait, *SOS*? Is that the one with “Shirt”? I think I heard that one on the ⟨ret@59.09s⟩ radio.
+[ 59.31s][moshi] «backchannel» Okay.
+[ 59.67s][moshi] That’s ⟦⚡SPAN@60.32s: SZA’s second studio album, *SOS*, released in December 2022, features the single “Shirt”, which was released i⟧ right! “Shirt” is a single from the *SOS* album, released in October 2022. It was a very popular track.
+[ 66.99s][user ] «backchannel» Yeah.
+[ 67.36s][user ] Oh, okay, good to know. So, she's pretty busy ⟨ret@70.61s⟩ then?
+[ 71.02s][moshi] [curious] ⟦⚡SPAN@71.56s: *SOS* debuted at number one on the Billboard 200 chart in the United States, and SZA has been actively touring⟧ It certainly seems that way! She’s been touring quite a bit recently, and *SOS* debuted at number one on the Billboard 200 chart.
+[ 79.81s][user ] «backchannel» Yeah.
+[ 80.17s][user ] Wow, number one! That’s amazing for her. That’s really good.

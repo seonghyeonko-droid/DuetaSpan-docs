@@ -4,138 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Casey",
+#     "name": "Jamie",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-06",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-02-28",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-15",
+#       "date": "2026-06-16",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "text": "User is planning a trip to Kyoto in October."
 #     },
 #     {
-#       "date": "2025-12-19",
+#       "date": "2026-04-17",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-12-16",
+#       "date": "2026-03-30",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-03-11",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-13",
-#       "title": "Researching a used car",
+#       "date": "2026-06-16",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-19",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, I've been having trouble win | S2 My bedroom is pretty bright. | S3 …Oh, are those far from the city c | S4 Yeah, we usually do a short one be
+# EXAMINER(FDB-v2) 단계: S1 Hi Frol, nice to meet you too. I’m | S2 Hmm, I really love good food, espe | S3 Oh, that would be perfect! Are the | S4 Okay, good to know. So maybe focus
 
-     0.00s  agent 발화 시작: Hi Casey, I'm Thael. I understand you're looking for ways to
-     5.75s  user  발화 시작: Yeah, yeah.
-     5.75s  agent 발화 끝
-     6.47s  user  발화 시작: Yeah, I've been having trouble winding down lately.
-     6.47s  user  발화 끝
-     9.34s  agent 발화 시작: Uh-huh.
-     9.34s  user  발화 끝
-     9.70s  agent 발화 시작: It’s common to find evenings busy, and that can make it hard
-     9.70s  agent 발화 끝
-    15.09s  user  발화 시작: Yeah.
-    15.09s  agent 발화 끝
-    15.45s  user  발화 시작: Definitely. Work just… keeps going.
-    15.45s  user  발화 끝
-    17.24s  agent 발화 시작: [happy] Creating a consistent bedtime routine can really hel
-    17.24s  user  발화 끝
-    23.35s  user  발화 시작: That sounds good. What does a routine look like?
-    23.35s  agent 발화 끝
-    26.50s  <ret> 발화 (turn9 첫 프레임)
-    26.59s  agent 발화 시작: <ret> A calming routine usually involves relaxing activities
-    26.59s  user  발화 끝
-    27.02s  ⚡SPAN 주입 [d'=0.52s / d_lead=9.70s]: A calming bedtime routine typically involves relaxing activities like 
-    36.29s  user  발화 시작: Okay.
-    36.29s  agent 발화 끝
-    36.65s  user  발화 시작: Hmm, I do scroll on my phone a lot.
-    36.65s  user  발화 끝
-    39.88s  agent 발화 시작: Yeah.
-    39.88s  user  발화 끝
-    40.24s  agent 발화 시작: Limiting screen time before bed is a great first step, as th
-    40.24s  agent 발화 끝
-    47.06s  user  발화 시작: Okay.
-    47.06s  agent 발화 끝
-    47.42s  agent 발화 시작: It's also helpful to create a sleep-conducive environment – 
-    47.42s  user  발화 끝
-    52.09s  user  발화 시작: Uh-huh.
-    52.09s  agent 발화 끝
-    52.45s  user  발화 시작: My bedroom is pretty bright.
-    52.45s  user  발화 끝
-    54.25s  agent 발화 시작: Blackout curtains can make a big difference in blocking out 
-    54.25s  user  발화 끝
-    58.56s  user  발화 시작: I'll look into those. I remember you mentioned Kyoto.
-    58.56s  agent 발화 끝
-    61.79s  agent 발화 시작: –and your trip in December? You were planning some sightseei
-    61.79s  user  발화 끝
-    65.39s  user  발화 시작: Yeah.
-    65.39s  agent 발화 끝
-    65.75s  user  발화 시작: Right! I was wondering if you had any recommendations for qu
-    65.75s  user  발화 끝
-    70.20s  <ret> 발화 (turn24 첫 프레임)
-    70.42s  agent 발화 시작: Mhm.
-    70.42s  user  발화 끝
-    70.50s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.67s]: Kyoto is renowned for its serene gardens, including the Ryoan-ji Templ
-    70.78s  agent 발화 시작: <ret> Kyoto has many serene gardens, including the Ryoan-ji 
-    70.78s  agent 발화 끝
-    75.45s  user  발화 시작: …Oh, are those far from the city center?
-    75.45s  agent 발화 끝
-    78.32s  agent 발화 시작: They are a little outside the central area, but easily acces
-    78.32s  user  발화 끝
-    86.22s  user  발화 시작: Okay, good to know. What about pollen? I’m allergic.
-    86.22s  agent 발화 끝
-    89.25s  <ret> 발화 (turn28 첫 프레임)
-    89.40s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.62s]: December in Kyoto typically has low pollen counts, as it's outside the
-    89.46s  agent 발화 시작: <ret> December in Kyoto usually has low pollen counts, being
-    89.46s  user  발화 끝
-    98.08s  user  발화 시작: That’s a relief. I was worried about it flaring up.
-    98.08s  agent 발화 끝
-   101.67s  agent 발화 시작: [curious] You mentioned Mochi earlier, your Corgi. Do you ta
-   101.67s  user  발화 끝
-   107.42s  user  발화 시작: Yeah, we usually do a short one before bed.
-   107.42s  agent 발화 끝
-   110.65s  agent 발화 시작: A gentle evening walk can be a calming activity for both of 
-   110.65s  user  발화 끝
-   117.48s  user  발화 시작: That's a good point. I'll keep it relaxed.
-   117.48s  agent 발화 끝
-   120.36s  agent 발화 시작: [sigh] Consistent wake times are just as important as bedtim
-   120.36s  user  발화 끝
-   125.03s  user  발화 시작: Yeah.
-   125.03s  agent 발화 끝
-   125.38s  user  발화 시작: I struggle with that, honestly.
-   125.38s  user  발화 끝
-   127.18s  agent 발화 시작: It's a challenge for many, but it helps regulate your body’s
-   127.18s  user  발화 끝
-   132.21s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Jamie, I’m Frol. It’s lovely to meet you. I’m a life coac
+     7.86s  user  발화 시작: Yeah.
+     7.86s  agent 발화 끝
+     8.22s  user  발화 시작: Hi Frol, nice to meet you too. I’m trying to plan a trip to 
+     8.22s  user  발화 끝
+    16.12s  <ret> 발화 (turn3 첫 프레임)
+    16.44s  agent 발화 시작: <ret> I remember you mentioned planning a trip to Kyoto this
+    16.44s  user  발화 끝
+    16.81s  ⚡SPAN 주입 [d'=0.69s / d_lead=8.58s]: [2026-06-16] User is planning a trip to Kyoto in October.
+    25.01s  user  발화 시작: That sounds great, actually. I'm not sure where to even star
+    25.01s  agent 발화 끝
+    30.73s  agent 발화 시작: Kyoto offers so much – temples, gardens, traditional arts… T
+    30.73s  user  발화 끝
+    38.95s  user  발화 시작: Hmm, I really love good food, especially Italian.
+    38.95s  agent 발화 끝
+    41.39s  <ret> 발화 (turn7 첫 프레임)
+    41.81s  agent 발화 시작: <ret> That’s fantastic! Knowing your love for Italian cuisin
+    41.81s  user  발화 끝
+    42.34s  ⚡SPAN 주입 [d'=0.95s / d_lead=7.50s]: [2026-04-17] User's favorite cuisine is Italian.
+    49.31s  user  발화 시작: Uh-huh.
+    49.31s  agent 발화 끝
+    49.67s  user  발화 시작: Oh, that would be perfect! Are there any specifically with g
+    49.67s  user  발화 끝
+    55.74s  agent 발화 시작: Right.
+    55.74s  user  발화 끝
+    55.87s  <ret> 발화 (turn11 첫 프레임)
+    56.10s  agent 발화 시작: <ret> Yes, absolutely. Knowing you're pescatarian helps a lo
+    56.10s  agent 발화 끝
+    56.64s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.50s]: [2026-03-30] User is pescatarian.
+    63.60s  user  발화 시작: …actually, before we go too deep into restaurants, do you th
+    63.60s  agent 발화 끝
+    71.11s  agent 발화 시작: Right.
+    71.11s  user  발화 끝
+    71.46s  agent 발화 시작: That’s a very smart question. Booking popular experiences li
+    71.46s  agent 발화 끝
+    80.04s  user  발화 시작: Okay, good to know. So maybe focus on booking those first, t
+    80.04s  agent 발화 끝
+    86.11s  agent 발화 시작: Exactly. Prioritizing those experiences is a great approach.
+    86.11s  user  발화 끝
+    96.48s  agent 발화 끝

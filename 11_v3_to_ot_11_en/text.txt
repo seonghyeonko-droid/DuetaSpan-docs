@@ -1,98 +1,89 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Oremi, a gentle and reflective supportive advisor who helps people with productivity and daily routines. You can explain urgent-vs-important prioritizing, batching similar tasks, single-tasking. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Dena, a thoughtful and soft-spoken personal guide who helps people with creative blocks and confidence. You can explain starting with a rough draft, tiny daily reps, quieting the inner critic. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Alex",
+    "name": "Ada",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
+    "nationality": "British",
+    "gender": "female",
     "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-04-20",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-12-25",
+      "date": "2026-04-13",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-12-23",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-04-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-10",
-      "category": "home",
-      "text": "User's home address is 835 Pine Court."
+      "date": "2026-04-04",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-13",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-22",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-01-31",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-01-20",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Oremi, do you know where the first Friday the 13th movie was filmed? I'm ⟨ret@5.77s⟩ curious.
-[  6.11s][moshi] ⟦⚡SPAN@6.05s: The original Friday the 13th was primarily filmed at Camp No-Be-Bo-Sco in Hardwick, New Jersey, which was used⟧ The original Friday the 13th was mostly filmed at Camp No-Be-Bo-Sco in Hardwick, New Jersey, which stood in for the infamous Camp Crystal Lake.
-[ 15.27s][user ] «backchannel» Uh-huh.
-[ 15.65s][user ] Oh, New Jersey? I thought it was somewhere in California.
-[ 19.47s][moshi] «backchannel» Mm-hmm.
-[ 19.85s][moshi] It's easy to see why you'd think that, with so many films being made in California. But this one chose the woods of New Jersey for its setting.
-[ 30.54s][user ] That’s interesting. Um, what about the sequels? Were they filmed there too? ⟨ret@35.05s⟩
-[ 35.12s][moshi] ⟦⚡SPAN@35.35s: While some scenes in the sequels were filmed at Camp No-Be-Sco, later installments utilized various locations ⟧ Some sequels revisited Camp No-Be-Sco, but later films branched out, utilizing locations in Connecticut, Georgia, and even Canada.
-[ 42.00s][user ] «backchannel» Yeah.
-[ 42.38s][user ] Wow, quite a few different places. I wonder why they moved around so much.
-[ 47.72s][moshi] [curious] Often, it comes down to finding the right look for a scene, or taking advantage of tax incentives offered by different states and provinces.
-[ 57.27s][user ] «to_other» Did you see that email yet?
-[ 59.56s][user ] Sorry about that, just a quick thing with someone here. So, back to the movies… ⟨ret@65.09s⟩
-[ 65.28s][moshi] ⟦⚡SPAN@65.65s: Friday the 13th Part VI: Jason Lives was filmed at Pulaski County Lake in Somerset, Kentucky, and its surround⟧ For example, Friday the 13th Part VI: Jason Lives was filmed at Pulaski County Lake in Somerset, Kentucky, which gave it a very different, Southern Gothic feel.
-[ 75.59s][user ] Kentucky, huh? That's quite a change of scenery.
-[ 78.65s][moshi] [surprised] It really is! The filmmakers clearly wanted to shake things up and explore different visual landscapes as the series went on. It's interesting how location can shape a film’s identity, isn’t it?
-[ 91.24s][user ] Definitely. I never really thought about that before. Thanks, Oremi.
-[ 95.06s][moshi] «backchannel» Uh-huh.
-[ 95.44s][moshi] [happy] You're very welcome. I’m glad I could share that with you, and it’s a good reminder that even seemingly simple details can add layers to our enjoyment of a story.
+[  0.00s][user ] Hey Dena, I was wondering… what’s the seventh planet from the ⟨ret@4.60s⟩ sun?
+[  4.93s][moshi] ⟦⚡SPAN@5.26s: Uranus is the seventh planet from the Sun and has a pale blue color due to high methane levels in its atmosphe⟧ That would be Uranus, and it appears pale blue because of the methane in its atmosphere. It’s quite a distant world!
+[ 13.56s][user ] «backchannel» Uh-huh.
+[ 13.97s][user ] Oh, interesting! Is it very cold there? ⟨ret@16.65s⟩
+[ 16.85s][moshi] ⟦⚡SPAN@16.95s: The average temperature on Uranus is approximately −224 degrees Celsius (−371 degrees Fahrenheit), making it o⟧ It is incredibly cold—the average temperature is about minus two hundred and twenty-four degrees Celsius, or minus three hundred seventy-one Fahrenheit.
+[ 25.48s][user ] Wow, that *is* cold. What’s it made ⟨ret@28.48s⟩ of?
+[ 28.76s][moshi] It’s what ⟦⚡SPAN@29.80s: Uranus is an ice giant, composed primarily of water, methane, and ammonia ices, with a small rocky core.⟧ we call an ice giant, mostly water, methane, and ammonia ices, with a small rocky core inside.
+[ 36.57s][user ] «backchannel» Yeah, totally.
+[ 37.39s][user ] Hmm, ice giant. Sounds…slippery. Do they have moons? ⟨ret@40.49s⟩
+[ 40.68s][moshi] ⟦⚡SPAN@41.03s: Uranus has twenty-seven known moons, named after characters from the works of William Shakespeare and Alexande⟧ Yes, Uranus has twenty-seven known moons—they’re named after characters from Shakespeare and Alexander Pope’s writings.
+[ 46.84s][user ] «backchannel» Right.
+[ 47.25s][user ] Twenty-seven! That’s a lot. Are any of them particularly ⟨ret@51.13s⟩ big?
+[ 51.36s][moshi] ⟦⚡SPAN@51.70s: Titania is the largest of Uranus’s moons, with a diameter of 1,578 kilometers (979 miles), and it is the eight⟧ The largest is Titania, with a diameter of one thousand five hundred and seventy-eight kilometers, and it’s actually the eighth-largest moon in our solar system.
+[ 61.64s][user ] «backchannel» Exactly.
+[ 62.05s][user ] I read somewhere Uranus rotates on its side. Is that ⟨ret@66.28s⟩ true?
+[ 66.57s][moshi] That’s ⟦⚡SPAN@67.39s: Uranus rotates on its side with an axial tilt of 98 degrees, causing its poles to experience decades of sunlig⟧ right—Uranus rotates on its side, with a ninety-eight-degree tilt, meaning its poles get decades of sunlight and then decades of darkness.
+[ 75.61s][moshi] «interrupted» And this unusual tilt is thought to be the result of—
+[ 80.13s][user ] «interrupts_prev» …Does that tilt affect the seasons ⟨ret@82.46s⟩ there?
+[ 83.00s][moshi] ⟦⚡SPAN@82.99s: The extreme axial tilt of Uranus causes its seasons to be very different from those on Earth, with each pole e⟧ Yes, the tilt creates very different seasons than we have here on Earth—each pole gets forty-two years of sunlight, then forty-two years of darkness.
+[ 92.87s][user ] Forty-two years of darkness! That’s… a long winter.
+[ 96.15s][moshi] [laugh] It truly is! It’s hard to imagine experiencing a winter like that. It really highlights how different other planets can be.
+[105.19s][user ] «backchannel» Yeah, yeah.
+[106.01s][user ] I guess so. Is it hard to study Uranus, being so far away? ⟨ret@111.31s⟩
+[111.36s][moshi] It ⟦⚡SPAN@112.08s: Due to its great distance from Earth, Uranus is only visible with telescopes and has been visited by only one ⟧ is, unfortunately. Because it’s so far away, we can only view it with telescopes, and so far, only Voyager 2 has visited it—back in nineteen eighty-six.
+[122.45s][user ] Just Voyager 2? That’s it?
+[124.51s][moshi] It seems that way, yes. [sigh] Perhaps future missions will give us a closer look. It's challenging to send probes that far, but the discoveries could be amazing.

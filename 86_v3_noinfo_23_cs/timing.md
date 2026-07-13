@@ -4,69 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Olivia",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-05-31",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
 #     },
 #     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-06-08",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-18",
-#       "category": "home",
-#       "text": "User's home address is 696 Birch Road."
-#     },
-#     {
-#       "date": "2026-02-19",
+#       "date": "2026-05-24",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-23",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-21",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-05",
+#       "date": "2026-02-18",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -76,53 +58,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 교수님 연락처가 혹시 있으세요? 작년에 컨퍼런스에서 뵙고 연락 | S2 …정말 미루는 습관을 고치는 데 도움이 되나요? | S3 스터디 허브에 대해 더 자세히 알려 주세요. | S4 …내일 아침 일곱시에 맞춰 주실 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 한나 리 씨 연락처 있어? 작년에 컨퍼런스에서 만났거든. | S2 그 말이 맞네. | S3 다음 달에 서울 여행 갈 건데. | S4 아직 동네를 잘 몰라. 명동 근처는 어때?
 
-     0.00s  user  발화 시작: 교수님 연락처가 혹시 있으세요? 작년에 컨퍼런스에서 뵙고 연락처를 못 받았거든요.
-     4.76s  <ret> 발화 (turn2 첫 프레임)
-     4.85s  agent 발화 시작: 네.
-     4.85s  user  발화 끝
-     5.22s  ⚡SPAN 주입 [d'=0.46s / d_lead=7.28s]: (no information found)
-     5.34s  agent 발화 시작: <ret> 아쉽게도, 아냐 샤르마 교수님 연락처는 찾을 수 없었습니다. 해당 정보가 공개되어 있지 않은 것 
-     5.34s  agent 발화 끝
-    12.62s  user  발화 시작: 음.
-    12.62s  agent 발화 끝
-    13.11s  user  발화 시작: 아, 아쉽네요. 그럼, 포모도로 기법이 뭔지 다시 한번 알려 주실 수 있을까요?
-    13.11s  user  발화 끝
-    18.93s  agent 발화 시작: 아.
-    18.93s  user  발화 끝
-    19.42s  agent 발화 시작: 포모도로 기법은 시간 관리 방법인데요—
-    19.42s  agent 발화 끝
-    21.84s  user  발화 시작: …정말 미루는 습관을 고치는 데 도움이 되나요?
-    21.84s  agent 발화 끝
-    25.24s  agent 발화 시작: 네, 효과가 아주 좋을 수 있습니다. 업무를 짧은 스물다섯 분 단위로 나누고, 짧은 휴식을 갖는 방식으로 진
-    25.24s  user  발화 끝
-    33.49s  user  발화 시작: 네.
-    33.49s  agent 발화 끝
-    33.98s  agent 발화 시작: 정신적인 민첩성과 집중력을 향상시키고, 종종 미루는 습관을 부추기는 압도감을 줄여 주는 데 도움이 됩니다.
-    33.98s  user  발화 끝
-    40.77s  user  발화 시작: 흥미로운데요. 혹시 대학교 도서관 근처에 좋은 공부할 만한 곳 좀 찾아 주실 수 있을까요?
-    40.77s  agent 발화 끝
-    47.23s  <ret> 발화 (turn12 첫 프레임)
-    47.57s  agent 발화 시작: <ret> 도서관 근처에 괜찮은 카페나 스터디 공간이 여러 곳 있습니다. 카페 루나는 영 점 이킬로미터 거리
-    47.57s  user  발화 끝
-    47.88s  ⚡SPAN 주입 [d'=0.65s / d_lead=15.53s]: (tool result) Restaurants: Cafe Luna (4.5 stars, 0.2 km), The Daily Gr
-    63.10s  user  발화 시작: 스터디 허브에 대해 더 자세히 알려 주세요.
-    63.10s  agent 발화 끝
-    66.31s  <ret> 발화 (turn14 첫 프레임)
-    66.50s  agent 발화 시작: <ret> 스터디 허브는 평점이 사 점 칠점이고 도서관에서 영 점 오킬로미터 떨어져 있습니다. 무료 와이파이
-    66.50s  user  발화 끝
-    66.61s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.71s]: (tool result) Study Hub: 4.7 stars, 0.5 km from university library, of
-    76.21s  user  발화 시작: 어머.
-    76.21s  agent 발화 끝
-    76.70s  user  발화 시작: 정말 딱 맞는 것 같아요! 알람을…
-    76.70s  user  발화 끝
-    79.61s  user  발화 시작: …내일 아침 일곱시에 맞춰 주실 수 있을까요?
-    79.61s  user  발화 끝
-    83.01s  agent 발화 시작: 예.
-    83.01s  user  발화 끝
-    83.21s  <ret> 발화 (turn19 첫 프레임)
-    83.49s  agent 발화 시작: <ret> 내일 아침 일곱시에 알람이 설정되었습니다. 확인 코드는 구이천팔십칠사오입니다.
-    83.49s  agent 발화 끝
-    83.84s  ⚡SPAN 주입 [d'=0.63s / d_lead=3.88s]: (tool result) Alarm set for 7:00 AM tomorrow. Confirmation ID: 928745.
-    87.37s  agent 발화 끝
+     0.00s  user  발화 시작: 한나 리 씨 연락처 있어? 작년에 컨퍼런스에서 만났거든.
+     3.36s  <ret> 발화 (turn1 첫 프레임)
+     3.46s  agent 발화 시작: <ret> 아쉽다, 한나 리 씨 연락처는 찾을 수가 없네. 정보가 공개되지 않았을 수도 있어.
+     3.46s  user  발화 끝
+     4.70s  ⚡SPAN 주입 [d'=1.34s / d_lead=5.62s]: (no information found)
+     9.08s  user  발화 시작: 아, 아쉽네. 음, 친구 관계를 더 돈독하게 만드는 것에 대해 아는 거 있어?
+     9.08s  agent 발화 끝
+    14.69s  agent 발화 시작: 이야, 좋은 질문이야! 튼튼한 우정을 쌓으려면 우선 친구 말을 잘 들어주는 것부터 시작해야 해. 진짜 무슨 
+    14.69s  user  발화 끝
+    23.77s  user  발화 시작: 어.
+    23.77s  agent 발화 끝
+    24.20s  user  발화 시작: 그 말이 맞네.
+    24.20s  user  발화 끝
+    25.50s  agent 발화 시작: 친구 삶에 진심으로 관심을 보여주고 작은 세세한 것들을 기억하는 것도 중요해.
+    25.50s  user  발화 끝
+    30.25s  user  발화 시작: 어.
+    30.25s  agent 발화 끝
+    30.68s  agent 발화 시작: 작고 꾸준한 연락이 핵심이야. 간단한 문자나 전화 한 통이 큰 도움이 돼서 관계를 이어갈 수 있어.
+    30.68s  user  발화 끝
+    37.60s  user  발화 시작: 내가 먼저 연락하는 게 어색하게 느껴져. 상대방이 먼저 연락하지 않으면.
+    37.60s  agent 발화 끝
+    41.92s  agent 발화 시작: 네.
+    41.92s  user  발화 끝
+    41.95s  <ret> 발화 (turn11 첫 프레임)
+    42.35s  agent 발화 시작: <ret> 그렇게 느끼는 건 흔한 일이야. 먼저 연락하는 건 불안할 수 있지만, 네 마음을 보여주고 관계를 
+    42.35s  agent 발화 끝
+    42.55s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.59s]: Reaching out first can feel vulnerable, but it demonstrates your care 
+    57.48s  user  발화 시작: 다음 달에 서울 여행 갈 건데.
+    57.48s  agent 발화 끝
+    60.07s  agent 발화 시작: 오, 서울! 정말 좋겠다. 거기서 친구들을 만날 생각이야?
+    60.07s  user  발화 끝
+    63.53s  user  발화 시작: 음, 사실은 일할 수 있는 좋은 카페를 찾아보려고.
+    63.53s  agent 발화 끝
+    66.98s  agent 발화 시작: 아, 그렇구나. 실용적인 계획이네! 서울에는 카페가 엄청 많아. 혹시 선호하는 동네가 있어?
+    66.98s  user  발화 끝
+    72.17s  user  발화 시작: 아직 동네를 잘 몰라. 명동 근처는 어때?
+    72.17s  agent 발화 끝
+    74.85s  <ret> 발화 (turn17 첫 프레임)
+    75.20s  agent 발화 시작: <ret> 명동에는 평점이 높은 카페가 몇 군데 있어. 카페 어니언 앙국은 평점 사 점 오점에 가격은 보통이
+    75.20s  user  발화 끝
+    75.93s  ⚡SPAN 주입 [d'=1.07s / d_lead=10.80s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
+    86.00s  user  발화 시작: 좀 더 늦게까지 하는 곳 있어?
+    86.00s  agent 발화 끝
+    88.59s  agent 발화 시작: 맞아요.
+    88.59s  user  발화 끝
+    89.01s  <ret> 발화 (turn20 첫 프레임)
+    89.02s  agent 발화 시작: <ret> 명동에 있는 그린 카페를 찾았는데, 평점은 사점이고 가격은 저렴해. 오전 열한시부터 밤 열한시까지
+    89.02s  agent 발화 끝
+    89.32s  ⚡SPAN 주입 [d'=0.31s / d_lead=6.05s]: (tool result) {"restaurants": [{"name": "Greem Cafe", "address": "70, 
+    95.07s  agent 발화 끝

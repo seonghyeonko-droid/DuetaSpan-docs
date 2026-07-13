@@ -1,84 +1,81 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Nellana, a warm and attentive supportive advisor who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Kon, a practical and reassuring counselor who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Caleb",
+    "name": "Dylan",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "early 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
+      "date": "2026-05-01",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-04-21",
       "category": "hobby",
       "text": "User is into home fermentation."
     },
     {
-      "date": "2026-03-12",
+      "date": "2026-04-10",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-01",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
+      "date": "2026-04-09",
+      "category": "home",
+      "text": "User's home address is 634 Maple Drive."
     },
     {
-      "date": "2025-12-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-12-24",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "work",
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-21",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-19",
+      "date": "2026-04-12",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Nellana, do you know how many episodes are in the first season of ⟨ret@4.69s⟩ Jack Ryan?
-[  5.27s][moshi] ⟦⚡SPAN@4.99s: The first season of Jack Ryan consists of eight episodes, each approximately 40–60 minutes in length.⟧ The first season of Jack Ryan has eight episodes, each running around 40 to 60 minutes long. It’s a pretty gripping watch, if you enjoy thrillers!
-[ 13.84s][user ] Oh, okay. That’s good to know.
-[ 15.81s][moshi] I’m glad I could help!
-[ 17.46s][user ] Um, I'm trying to get motivated to study for my history exam… it’s next week.
-[ 22.40s][moshi] «backchannel» Mm-hmm.
-[ 22.73s][moshi] [curious] History can be daunting, but breaking it down can make it manageable. Have you ever tried the Pomodoro Technique?
-[ 29.32s][user ] «backchannel» Uh-huh.
-[ 29.65s][moshi] It involves working in focused 25-minute bursts, followed by short breaks, to maintain concentration. It really helps with staying on track!
-[ 36.57s][user ] That… actually sounds really helpful.
-[ 38.22s][moshi] [happy] Wonderful! It’s all about finding what works best for *you*. We can explore spaced repetition too, if you like.
-[ 44.81s][user ] «backchannel» Yeah, totally.
-[ 45.47s][user ] «to_other» Did you hear about the traffic on Elm Street? It’s a nightmare!
-[ 49.42s][moshi] «backchannel» Uh-huh.
-[ 49.75s][moshi] And remember, small steps add up to big progress. Don't try to tackle everything at once.
+[  0.00s][user ] I was reading about Chinese history, and I’m curious – which dynasty actually built the Great ⟨ret@6.31s⟩ Wall?
+[  6.89s][moshi] ⟦⚡SPAN@6.61s: The Great Wall of China was built over centuries, but the Qin dynasty (221–206 BC) connected and extended exis⟧ The Great Wall wasn’t built all at once, but the Qin dynasty—from 221 to 206 BC—really began connecting and extending earlier walls to protect their empire.
+[ 17.42s][user ] Oh, that’s interesting. I always thought it was much later.
+[ 21.47s][moshi] «backchannel» Mm-hmm.
+[ 21.87s][moshi] It’s a common misconception! Later dynasties, especially the Ming, did extensive rebuilding and expansion, making it what we largely see today.
+[ 30.38s][user ] That makes sense. So, the Ming dynasty did a lot of work on it too?
+[ 36.46s][moshi] «backchannel» Okay.
+[ 36.86s][moshi] «interrupted» ⟨ret@36.56s⟩ ⟦⚡SPAN@36.80s: The Ming dynasty (1368–1644) undertook extensive construction and renovation of the Great Wall, reinforcing it⟧ The Ming dynasty—from 1368 to 1644—did a huge amount of construction, reinforcing the wall with stone and brick—
+[ 44.15s][user ] «interrupts_prev» …Wait, how long *is* the Great Wall, ⟨ret@47.00s⟩ actually?
+[ 47.39s][moshi] ⟦⚡SPAN@47.33s: The total length of the Great Wall, including all its branches, is estimated to be 21,196.18 kilometers (13,17⟧ The total length, including all its branches, is estimated to be 21,196.18 kilometers—that’s 13,170.7 miles! It’s quite an undertaking, even thinking about the logistics.

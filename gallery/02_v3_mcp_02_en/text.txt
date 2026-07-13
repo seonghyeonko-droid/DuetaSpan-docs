@@ -1,76 +1,80 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Unaia, a grounded and empathetic personal guide who helps people with family and relationships. You can explain active listening, setting kind boundaries, calming a conflict before it escalates. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Sunaia, a gentle and reflective wellness coach who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Alex",
+    "name": "Remy",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2026-06-12",
+      "date": "2026-03-08",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-07",
+      "date": "2026-01-23",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
+    },
+    {
+      "date": "2026-01-11",
       "category": "work",
-      "text": "User works as a high-school teacher."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2026-03-06",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-02-19",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2025-12-11",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-01-02",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-29",
-      "title": "Researching a used car",
+      "date": "2026-03-07",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to drag the ‘revenue forecast’ widget over to the right side of my dashboard—can you do that for me? ⟨ret@7.72s⟩
-[  7.89s][moshi] Okay, ⟦⚡SPAN@8.43s: (tool result) Drag operation successful. Widget 'revenue forecast' moved to the right side of the dashboard.⟧ I’ve dragged the ‘revenue forecast’ widget to the right side of your dashboard, all done! [happy] That should give you more space on the left.
-      CALL: {"function": "playwright_drag", "arguments": {"source": "revenue forecast", "destination": "right side of dashboard"}}
-[ 17.65s][user ] «backchannel» Okay.
-[ 18.03s][user ] Great, thanks. Um, do you think it’s a good idea to schedule a one-on-one with David next week?
-[ 24.79s][moshi] «backchannel» Mm-hmm.
-[ 25.17s][moshi] That sounds like a good idea. Regular one-on-ones can really help build trust and open communication. It's a chance to check in and proactively address any concerns.
-[ 35.31s][user ] Yeah, I think so too. Can you find me his availability next ⟨ret@39.63s⟩ week?
-[ 40.19s][moshi] ⟦⚡SPAN@40.13s: (tool result) David’s availability next week: Monday 2-4 PM, Wednesday 9 AM-12 PM, Friday 1-3 PM.⟧ David has openings next week on Monday from two to four, Wednesday morning, and Friday afternoon. [curious] Does one of those times work for you?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "David"}}
-[ 49.58s][user ] Wednesday morning would be perfect. Let’s book it for 9:30 AM. ⟨ret@53.56s⟩
-[ 53.71s][moshi] Excellent—I’ve ⟦⚡SPAN@54.52s: (tool result) Appointment with David confirmed for Wednesday, July 15, 2026, at 9:30 AM. Confirmation ID: 78X2⟧ scheduled that one-on-one with David for Wednesday at 9:30 AM. Confirmation ID is 78X29B. [sigh] A proactive step like that can make a big difference.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "David", "date": "Wednesday", "time": "9:30 AM"}}
+[  0.00s][user ] I’m planning a trip to Nanjing, and I need to find the Confucius Temple. What is the location? ⟨ret@7.39s⟩
+[  7.56s][moshi] ⟦⚡SPAN@7.92s: (tool result) {"latitude": 32.0421, "longitude": 118.7733, "formatted address": "Confucius Temple, Gulou Distr⟧ The Confucius Temple in Nanjing is located at latitude 32.04 and longitude 118.77, in Gulou District.
+      CALL: {"function": "map_geocode", "arguments": {"address": "Confucius Temple in Gulou District, Nanjing"}}
+[ 14.28s][user ] That's great. Are there any good restaurants nearby?
+[ 17.65s][moshi] «backchannel» Yeah.
+[ 18.07s][moshi] ⟨ret@17.70s⟩ There ⟦⚡SPAN@18.75s: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address": "116 Huajuan Street, Gulou District, N⟧ are a few restaurants nearby, including Ye Chun Tea House, rated 4.5 stars, and Lianhua Lou, at 4.2 stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"latitude": 32.0421, "longitude": 118.7733}}
+[ 26.47s][user ] Hmm, tell me more about Ye Chun Tea ⟨ret@29.69s⟩ House.
+[ 30.25s][moshi] ⟦⚡SPAN@30.19s: (tool result) {"restaurants": [{"name": "Ye Chun Tea House", "address": "116 Huajuan Street, Gulou District, N⟧ Ye Chun Tea House, located at 116 Huajuan Street, serves Jiangsu cuisine and is in the moderate price range. [happy] It has a rating of 4.5 stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "Ye Chun Tea House"}}
+[ 41.59s][user ] «backchannel» Uh-huh.
+[ 42.01s][user ] That sounds lovely. I’m thinking of going there on Tuesday.
+[ 46.21s][moshi] «backchannel» Yeah.
+[ 46.63s][moshi] That’s a wonderful choice! A peaceful meal can be so restorative.
+[ 51.26s][user ] «backchannel» Uh-huh.
+[ 51.68s][user ] Actually, what’s the weather going to be like in Nanjing on Tuesday?
+[ 56.72s][moshi] «backchannel» Yeah.
+[ 57.14s][moshi] ⟨ret@56.84s⟩ I can ⟦⚡SPAN@58.34s: {"date": "2026-07-15", "temperature_celsius": 28.5, "condition": "Partly Cloudy", "humidity": 65, "wind_speed_⟧ certainly help with that— On Tuesday, July 15th, the weather in Nanjing will be partly cloudy with a temperature of 28.5 degrees Celsius, and a humidity of 65 percent.
+[ 70.16s][user ] That sounds pretty good. I'm also hoping to find a traditional tea ceremony. —
+[ 76.04s][user ] …Are there any tea houses that offer ceremonies near the Confucius Temple? ⟨ret@80.97s⟩
+[ 81.09s][moshi] ⟦⚡SPAN@81.29s: (tool result) {"places": [{"name": "Ullmann's Tea House", "address": "120 Huajuan Street, Gulou District, Nanj⟧ I found two tea houses offering ceremonies nearby: Ullmann's Tea House at 120 Huajuan Street, with a 4.7-star rating, and Serene Tea Room at 150 Shuiximen Street, rated 4.3 stars.
+      CALL: {"function": "map_search_places", "arguments": {"query": "tea ceremony", "latitude": 32.0421, "longitude": 118.7733}}
+[ 93.69s][user ] Ullmann’s sounds promising. Can you reserve a spot for a tea ceremony there on Tuesday ⟨ret@100.07s⟩ afternoon?
+[100.41s][moshi] ⟦⚡SPAN@100.85s: (tool result) {"confirmation id": "UT789XZ1", "date": "2026-07-15", "time": "14:00", "provider": "Ullmann's Te⟧ I have booked a tea ceremony at Ullmann’s Tea House for you on Tuesday, July 15th, at 2:00 PM. Your confirmation ID is UT789XZ1.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Ullmann's Tea House", "service": "tea ceremony", "date": "2026-07-15", "time": "14:00"}}
+[110.49s][user ] «backchannel» Right.
+[110.91s][user ] Perfect! Thank you so much.

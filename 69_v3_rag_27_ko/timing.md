@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "서린",
+#     "name": "예안",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,115 +12,97 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "date": "2026-05-31",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-05-03",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
 #       "date": "2026-04-01",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "category": "work",
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-02-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-20",
-#       "title": "Researching a used car",
+#       "date": "2026-02-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 통 돈 관리가 잘 안 돼서 고민이야. 어떻게 해야 할지  | S2 아, 그렇군요. 그럼 필수 지출에는 뭐가 들어가요? | S3 미래를 위한 투자라… | S4 혹시 돈을 모으는 데 도움이…
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 가로 씨. 요즘 친구 때문에 좀 힘든 일이 있었어 | S2 아, 그렇군요. 그럼 얼마나 자주 연락해야 할까요? | S3 음… 그럼 친구가 저에게 먼저 연락하면 어떻게 해야 할까요? | S4 그럼 이번 주 토요일에 친구에게 같이 영화 보러 가자고 해볼까
 
-     0.00s  user  발화 시작: 요즘 통 돈 관리가 잘 안 돼서 고민이야. 어떻게 해야 할지 모르겠어.
-     5.81s  agent 발화 시작: 네네.
-     5.81s  user  발화 끝
-     6.29s  agent 발화 시작: 돈 관리가 고민이시군요. 제가 도와드릴 수 있습니다. 먼저, 현재 재정 상황을 파악하는 것이 중요합니다.
-     6.29s  agent 발화 끝
-    13.06s  user  발화 시작: 어.
-    13.06s  agent 발화 끝
-    13.55s  user  발화 시작: 음, 알겠어. 어디서부터 시작해야 할까?
-    13.55s  user  발화 끝
-    15.96s  agent 발화 시작: 수입과 지출을 꼼꼼히 기록해 보세요. 매달 나가는 돈을 파악하면 불필요한 지출을 줄일 수 있습니다.
-    15.96s  user  발화 끝
-    22.74s  user  발화 시작: 그건 좀 귀찮은데…
-    22.74s  agent 발화 끝
-    24.19s  agent 발화 시작: 처음엔 힘들 수 있지만, 습관이 되면 훨씬 수월해집니다. 오십/30/20 예산 규칙을 활용해 보는 건 어떠세
-    24.19s  user  발화 끝
-    31.44s  user  발화 시작: 와.
-    31.44s  agent 발화 끝
-    31.93s  user  발화 시작: 오십/30/20 예산 규칙이 뭐예요?
-    31.93s  user  발화 끝
-    33.47s  <ret> 발화 (turn10 첫 프레임)
-    33.86s  agent 발화 시작: <ret> 오십/30/20 예산 규칙은 세후 소득의 오십퍼센트를 필수 지출에, 삼십퍼센트를 원하는 지출에, 
-    33.86s  user  발화 끝
-    34.30s  ⚡SPAN 주입 [d'=0.83s / d_lead=9.19s]: The 50/30/20 rule suggests allocating 50% of after-tax income to needs
-    43.05s  user  발화 시작: 어어.
-    43.05s  agent 발화 끝
-    43.54s  user  발화 시작: 아, 그렇군요. 그럼 필수 지출에는 뭐가 들어가요?
-    43.54s  user  발화 끝
-    46.92s  agent 발화 시작: 주거비, 식비, 교통비, 공과금처럼 꼭 필요한 비용들이죠.
-    46.92s  user  발화 끝
-    50.31s  user  발화 시작: 원하는 지출은요?
-    50.31s  agent 발화 끝
-    51.28s  agent 발화 시작: 외식, 영화, 취미 활동처럼 삶의 질을 높여주는 데 쓰는 돈입니다.
-    51.28s  user  발화 끝
-    56.12s  user  발화 시작: 어.
-    56.12s  agent 발화 끝
-    56.60s  user  발화 시작: 저축은 왜 필요한 거예요?
-    56.60s  user  발화 끝
-    58.54s  agent 발화 시작: 갑작스러운 상황에 대비하고 미래를 위한 투자를 위해서 중요합니다.
-    58.54s  user  발화 끝
-    62.41s  user  발화 시작: 미래를 위한 투자라…
-    62.41s  agent 발화 끝
-    63.86s  agent 발화 시작: 네, 예를 들어 비상 자금을 마련해 두면 예상치 못한 지출에도 안심할 수 있습니다—
-    63.86s  user  발화 끝
-    70.15s  user  발화 시작: …비상 자금은 얼마나 만들어 둬야 할까요?
-    70.15s  agent 발화 끝
-    73.05s  agent 발화 시작: 비상 자금은 보통 삼 내지 여섯개월치 생활비를 준비하는 것이 좋습니다.
-    73.05s  user  발화 끝
-    77.89s  user  발화 시작: 삼 내지 여섯개월치 생활비라… 좀 부담스럽네요.
-    77.89s  agent 발화 끝
-    80.79s  agent 발화 시작: 처음부터 목표 금액을 정하기보다는, 조금씩 꾸준히 모으는 것이 중요합니다.
-    80.79s  user  발화 끝
-    85.14s  user  발화 시작: 음.
-    85.14s  agent 발화 끝
-    85.63s  agent 발화 시작: 매달 일정 금액을 저축하는 습관을 들이면 부담을 줄일 수 있습니다.
-    85.63s  user  발화 끝
-    90.46s  user  발화 시작: 혹시 돈을 모으는 데 도움이…
-    90.46s  agent 발화 끝
-    92.88s  user  발화 시작: …되는 앱 같은 거 있을까요?
-    92.88s  user  발화 끝
-    95.30s  agent 발화 시작: 네.
-    95.30s  user  발화 끝
-    95.50s  <ret> 발화 (turn30 첫 프레임)
-    95.78s  agent 발화 시작: <ret> Mint라는 무료 예산 앱이 있는데, 지출을 추적하고 예산을 설정하며 재정적인 조언도 제공합니다.
-    95.78s  agent 발화 끝
-    95.83s  ⚡SPAN 주입 [d'=0.33s / d_lead=5.81s]: Mint is a free budgeting app that tracks spending, creates budgets, an
-   101.59s  user  발화 시작: Mint요? 한번 알아봐야겠네요.
-   101.59s  agent 발화 끝
-   103.04s  agent 발화 시작: 네, 도움이 되셨으면 좋겠습니다.
-   103.04s  user  발화 끝
-   104.98s  agent 발화 시작: 재정 관리는 꾸준히 하는 것이 중요합니다. 힘내세요!
-   104.98s  agent 발화 끝
-   108.36s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 가로 씨. 요즘 친구 때문에 좀 힘든 일이 있었어요.
+     4.38s  agent 발화 시작: 안녕하세요. 어떤 일 때문에 힘드신가요? 편하게 말씀해 주세요.
+     4.38s  user  발화 끝
+     7.88s  user  발화 시작: 음… 제가 먼저 연락을 잘 못 하거든요. 친구가 서운해하는 것 같아서요.
+     7.88s  agent 발화 끝
+    12.69s  agent 발화 시작: 먼저 연락하는 게 어려우시군요. 친구 관계에서 중요한 부분인데, 어떻게 하면 좋을지 함께 생각해 봐요.
+    12.69s  user  발화 끝
+    18.82s  user  발화 시작: 혹시, 제가 먼저 연락하는 게 더 중요할까요?
+    18.82s  agent 발화 끝
+    21.80s  <ret> 발화 (turn5 첫 프레임)
+    21.89s  agent 발화 시작: <ret> 친구 관계를 잘 유지하려면, 가끔씩이라도 먼저 연락하는 게 중요하다고 해요. 꾸준히 연락하면 신뢰
+    21.89s  user  발화 끝
+    22.91s  ⚡SPAN 주입 [d'=1.11s / d_lead=7.44s]: Maintaining regular contact, even with simple check-ins, demonstrates 
+    29.33s  user  발화 시작: 아, 그렇군요. 그럼 얼마나 자주 연락해야 할까요?
+    29.33s  agent 발화 끝
+    32.39s  agent 발화 시작: 너무 부담스럽지 않게, 일주일에 한두 번 정도는 어떨까요?
+    32.39s  user  발화 끝
+    35.89s  user  발화 시작: 일주일에 한두 번이면 괜찮을 것 같아요. 그런데 무슨 이야기를 해야 할지 고민이에요.
+    35.89s  agent 발화 끝
+    41.14s  agent 발화 시작: 네네.
+    41.14s  user  발화 끝
+    41.58s  agent 발화 시작: 특별한 일이 아니어도 괜찮아요. “요즘 어떻게 지내?” 같은 간단한 안부 인사도 좋고요.
+    41.58s  agent 발화 끝
+    46.83s  user  발화 시작: 음… 그럼 친구가 저에게 먼저 연락하면 어떻게 해야 할까요?
+    46.83s  agent 발화 끝
+    50.77s  agent 발화 시작: 맞아요.
+    50.77s  user  발화 끝
+    51.21s  agent 발화 시작: 친구가 먼저 연락해 준다면, 반갑게 답장하고 대화를 이어가면 돼요.
+    51.21s  agent 발화 끝
+    55.15s  user  발화 시작: 혹시 제가 친구에게 서운했던 점이 있다면 어떻게 말해야 할까요?
+    55.15s  agent 발화 끝
+    59.09s  agent 발화 시작: 솔직하게 말하되, 비난하는 말투는 피하는 게 좋아요. “네가 이렇게 해줬으면 좋겠어”처럼 자신의 감정을 표현
+    59.09s  user  발화 끝
+    66.09s  user  발화 시작: 맞아요.
+    66.09s  agent 발화 끝
+    66.53s  user  발화 시작: [sigh] 친구가 요즘 저를 잘 안 만나주는 것 같아요.
+    66.53s  user  발화 끝
+    70.35s  <ret> 발화 (turn18 첫 프레임)
+    70.47s  agent 발화 시작: <ret> 친구분과의 관계 때문에 걱정이 많으시군요. 함께 시간을 보내는 게 친구 관계 만족도에 영향을 준다
+    70.47s  user  발화 끝
+    71.73s  ⚡SPAN 주입 [d'=1.38s / d_lead=2.19s]: Studies show that individuals who actively participate in shared activ
+    80.98s  user  발화 시작: 네.
+    80.98s  agent 발화 끝
+    81.41s  user  발화 시작: 그럼 이번 주 토요일에 친구에게 같이 영화 보러 가자고 해볼까요?
+    81.41s  user  발화 끝
+    85.73s  <ret> 발화 (turn21 첫 프레임)
+    85.79s  agent 발화 시작: <ret> 이번 주말에 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', '가필드 무비'가 상영 중이
+    85.79s  user  발화 끝
+    87.12s  ⚡SPAN 주입 [d'=1.39s / d_lead=6.13s]: (tool result) Showing: 'Inside Out 2', 'Bad Boys: Ride or Die', 'The G
+    91.92s  user  발화 시작: '인사이드 아웃 이'가 재미있을까요?
+    91.92s  agent 발화 끝
+    93.67s  agent 발화 시작: 네, 평점이 꽤 높게 나오고 있어요. 많은 분들이 재미있다고 하네요.
+    93.67s  user  발화 끝
+    98.05s  agent 발화 끝

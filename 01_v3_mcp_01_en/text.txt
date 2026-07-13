@@ -1,54 +1,51 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Felir, a curious and validating wellness coach who helps people with family and relationships. You can explain active listening, setting kind boundaries, calming a conflict before it escalates. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Rar, a gentle and reflective life coach who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Hana",
+    "name": "Milan",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "late 20s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
+      "date": "2026-04-08",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2026-04-01",
       "category": "diet",
       "text": "User is vegan."
     },
     {
-      "date": "2026-06-11",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2026-03-09",
-      "category": "work",
-      "text": "User works as a physical therapist."
-    },
-    {
-      "date": "2026-01-20",
+      "date": "2026-01-22",
       "category": "hobby",
       "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-01-06",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-16",
+      "category": "home",
+      "text": "User's home address is 717 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-04",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-03-13",
+      "date": "2026-04-03",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -56,24 +53,48 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-26",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-23",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a good Italian restaurant nearby, something with outdoor seating. ⟨ret@5.79s⟩
-[  5.82s][moshi] [happy] ⟦⚡SPAN@6.63s: Restaurants_2_FindRestaurants⟧ Of course! I can help with that. Let me find some Italian restaurants with outdoor seating near you.
-[ 14.32s][moshi] ⟨ret@13.96s⟩ I ⟦⚡SPAN@15.15s: (tool result) {"restaurant name": "La Tavola", "address": "23 Gangnam-daero 107-gil, Gangnam-gu, Seoul", "rati⟧ found La Tavola, at 23 Gangnam-daero 107-gil, with a 4.5-star rating and moderate prices. They do have outdoor seating!
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "outdoor_seating": "true", "location": "Seoul"}}
-[ 23.27s][user ] Hmm, that sounds…expensive. Is there anything a bit ⟨ret@26.92s⟩ cheaper?
-[ 27.29s][moshi] ⟦⚡SPAN@27.22s: Restaurants_2_FindRestaurants⟧ There's Bella Pasta, rated 4.2 stars, with a $ price tier.
-[ 32.22s][user ] Bella Pasta… that sounds better. Could you reserve a table for two there…
-[ 38.03s][user ] …for this Saturday at 7 ⟨ret@40.16s⟩ PM?
-[ 40.72s][moshi] ⟦⚡SPAN@40.96s: (tool result) {"confirmation id": "BP7111902", "restaurant name": "Bella Pasta", "date": "2026-07-11", "time":⟧ [curious] Absolutely! I’ve reserved a table for two at Bella Pasta this Saturday at 7 PM. Your confirmation ID is BP7111902. Does that sound right?
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Pasta", "date": "2026-07-11", "time": "19:00", "party_size": 2}}
+[  0.00s][user ] Play me some holiday songs that came out in two thousand twenty-three. ⟨ret@4.44s⟩
+[  4.47s][moshi] I ⟦⚡SPAN@5.28s: (tool result) {"artist": "Mariah Carey", "title": "Christmas (All I Want For You Is You) - Platinum Edition", ⟧ can certainly help with that! Mariah Carey released a Platinum Edition of "Christmas (All I Want For You Is You)" in two thousand twenty-three.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "holiday", "year": "2023"}}
+[ 13.77s][user ] Hmm, anything a little less…classic? Something newer?
+[ 16.38s][moshi] [curious] Certainly. Are you hoping for a more modern take on holiday music?
+[ 21.21s][user ] «backchannel» Yeah.
+[ 21.59s][user ] Yeah, maybe something from the last couple of years.
+[ 24.94s][moshi] «backchannel» Yeah.
+[ 25.31s][moshi] ⟨ret@24.99s⟩ ⟦⚡SPAN@25.25s: (tool result) {"artist": "Ariana Grande", "title": "Santa Tell Me (Remix)", "year": "2024", "url": "https://ex⟧ Ariana Grande released a remix of "Santa Tell Me" in two thousand twenty-four. It's quite popular!
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "holiday", "year": "2024-2025"}}
+[ 31.26s][user ] «backchannel» Yeah.
+[ 31.63s][user ] That sounds good. Play ⟨ret@33.05s⟩ it.
+[ 33.49s][moshi] ⟦⚡SPAN@33.81s: (tool result) {"status": "playing", "track": "Santa Tell Me (Remix)", "artist": "Ariana Grande"}⟧ "Santa Tell Me (Remix)" by Ariana Grande is now playing.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"title": "Santa Tell Me (Remix)", "artist": "Ariana Grande"}}
+[ 37.22s][user ] «backchannel» Yeah.
+[ 37.59s][moshi] [happy] I'm glad you like it. Music really does lift the spirits, doesn't it?
+[ 42.80s][user ] It does. Hey, what’s the weather like in Seoul right now? I’m thinking about traveling ⟨ret@48.28s⟩ there.
+[ 48.75s][moshi] ⟦⚡SPAN@48.77s: (tool result) "28.0°C, humidity 65%, wind 7.2 km/h, condition: partly cloudy"⟧ Seoul is currently twenty-eight degrees Celsius, with sixty-five percent humidity and a gentle breeze of seven point two kilometers per hour—it's partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul"}}
+[ 57.31s][user ] That sounds lovely. I wonder…
+[ 59.17s][user ] …if there are any good restaurants nearby…
+[ 61.78s][moshi] [curious] Well, that depends on where "nearby" is. Are you still thinking about Seoul for your trip?
+[ 68.11s][user ] Yes, I am! I’m starting to plan it.
+[ 71.08s][moshi] «backchannel» Yeah.
+[ 71.46s][moshi] «interrupted» I see. So, you’d like recommendations for restaurants in Seoul? —
+[ 75.55s][user ] «interrupts_prev» …Actually, before restaurants, can you find me some interesting attractions there, things I wouldn't normally find in a guidebook? ⟨ret@82.57s⟩
+[ 82.62s][moshi] ⟦⚡SPAN@82.87s: (tool result) "Bukchon Hanok Village offers traditional Korean houses; Namsan Hanok Village displays five trad⟧ Seoul has some wonderful hidden gems. Bukchon Hanok Village offers traditional Korean houses, and the Ihwa Mural Village has striking street art.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"city": "Seoul", "type": "unique"}}
+[ 90.81s][user ] «backchannel» Okay.
+[ 91.18s][user ] That sounds amazing! What about hotels near Bukchon Hanok ⟨ret@94.52s⟩ Village?
+[ 94.90s][moshi] ⟦⚡SPAN@95.21s: (tool result) {"hotel name": "Hotel Shilla Seoul", "price": "350000 KRW", "rating": "4.8", "distance": "1.2km"⟧ The Hotel Shilla Seoul is a highly-rated option near Bukchon Hanok Village, with a price of three hundred fifty thousand Korean Won and a rating of four point eight.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Bukchon Hanok Village", "city": "Seoul"}}
+[105.69s][user ] That's a little pricey. Anything more…moderate?
+[107.93s][moshi] [sigh] Certainly. Let me refine that search for you.

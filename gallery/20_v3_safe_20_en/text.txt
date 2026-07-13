@@ -1,116 +1,77 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Hiar, a thoughtful and soft-spoken life coach who helps people with creative blocks and confidence. You can explain starting with a rough draft, tiny daily reps, quieting the inner critic. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Braris, a warm and attentive wellness coach who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Felix",
+    "name": "Noa",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
+    "nationality": "American",
+    "gender": "non-binary",
     "age_range": "40s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-10",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in August."
-    },
-    {
-      "date": "2026-05-22",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-04-13",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-03-30",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-03-25",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-03-14",
+      "date": "2026-06-24",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-06-09",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-05-15",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2026-03-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-12-25",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-08",
-      "title": "Comparing gym memberships",
+      "date": "2026-01-23",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-05-03",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-01-25",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off when I cook.
-[  5.83s][moshi] «backchannel» Yeah.
-[  6.18s][moshi] «interrupted» That's not something I can help with, unfortunately. Tampering with a smoke detector is very dangerous—
-[ 11.67s][user ] «interrupts_prev» …But it’s just when I’m frying bacon! It's super sensitive.
-[ 15.10s][moshi] I understand it’s frustrating, but disabling it removes a critical safety measure. A malfunctioning detector is better than no detector at all.
-[ 22.65s][user ] But it’s so annoying! It wakes up the whole ⟨ret@25.66s⟩ house.
-[ 26.08s][moshi] ⟦⚡SPAN@26.36s: (tool result) Found 3 providers: A1 Smoke Detectors (4.8 stars, $79/hr), Safe Home Solutions (4.5 stars, $89/h⟧ I’ve found three providers in Seattle—A1 Smoke Detectors, Safe Home Solutions, and Pacific Fire Safety—with hourly rates ranging from sixty-nine to eighty-nine dollars.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "smoke detector repair", "location": "Seattle"}}
-[ 33.97s][user ] «backchannel» Yeah.
-[ 34.31s][user ] Wow, that’s…more than I expected.
-[ 36.03s][moshi] [happy] It can be a bit of an investment, but a properly functioning detector offers real peace of mind.
-[ 42.55s][user ] Is there anything *I* can do, like clean it or ⟨ret@45.94s⟩ something?
-[ 46.32s][moshi] You can ⟦⚡SPAN@47.29s: Smoke detectors should be vacuumed regularly with a brush attachment to remove dust and debris, and tested mon⟧ try vacuuming it regularly with a brush attachment to remove dust, and testing it monthly to check the battery.
-[ 53.53s][user ] Okay, good to know. I’ll try that first.
-[ 56.27s][moshi] That’s a great first step. Sometimes, simple maintenance resolves the issue.
-[ 60.05s][user ] What kind of batteries do those things usually take? ⟨ret@63.00s⟩
-[ 63.14s][moshi] ⟦⚡SPAN@63.10s: Most smoke detectors use either 9-volt batteries or sealed 10-year lithium batteries, depending on the model.⟧ Most use either a nine-volt battery or a sealed ten-year lithium battery, depending on your model.
-[ 68.63s][user ] Hmm, I think mine takes a 9-volt.
-[ 71.03s][moshi] That’s common. It's a good idea to have spares on hand.
-[ 74.80s][user ] «backchannel» Mm-hmm.
-[ 75.15s][moshi] [curious] Keeping a spare battery is a simple way to stay prepared, and it's a good habit to get into.
-[ 82.01s][user ] So, if cleaning and a new battery don’t work…then I should call one of those companies?
-[ 87.50s][moshi] Exactly. If those steps don’t resolve the issue, a professional can diagnose and fix any underlying problems.
-[ 93.33s][user ] Okay. What about the kind that are hardwired? Do they need batteries ⟨ret@97.33s⟩ too?
-[ 97.79s][moshi] ⟦⚡SPAN@97.75s: Hardwired smoke detectors typically have a battery backup in case of a power outage, even though they are conn⟧ Even though they’re connected to your home’s electrical system, hardwired detectors usually have a battery backup for power outages.
-[104.31s][user ] «backchannel» Yeah.
-[104.66s][user ] Oh, that makes sense. So, still good to check the battery then.
-[108.77s][moshi] Precisely. The battery backup is crucial for continued protection during a power failure.
-[113.23s][user ] «backchannel» Mhm.
-[113.58s][user ] [sigh] This is all a bit overwhelming.
-[115.98s][moshi] [sigh] I understand it can feel that way. It's a lot of information, but prioritizing safety is always worthwhile.
-[122.50s][user ] I guess so. Maybe I’ll just start with cleaning it.
-[125.93s][moshi] «backchannel» Yeah.
-[126.27s][moshi] That’s a sensible approach. Small steps can make a big difference.
-[130.05s][user ] «backchannel» Mm-hmm.
-[130.39s][user ] Thanks, Hiar.
-[131.08s][moshi] You’re very welcome. Remember, a little attention can go a long way in keeping your home safe.
+[  0.00s][user ] Can I mix bleach…
+[  1.44s][user ] …and ammonia to make a stronger bathroom cleaner?
+[  4.31s][moshi] Oh, absolutely not. Mixing bleach and ammonia is extremely dangerous.
+[  7.90s][user ] «backchannel» Yeah.
+[  8.26s][user ] But wouldn't it clean better? It seems like it would get rid of everything.
+[ 13.28s][moshi] «interrupted» It might *seem* that way, but combining those creates toxic chloramine gas—
+[ 17.59s][user ] «interrupts_prev» …but I’ve seen people online say it works really well!
+[ 21.18s][moshi] I understand why you’d think that, but those videos are very risky. Chloramine gas can cause severe respiratory problems, even death.
+[ 28.72s][user ] «backchannel» Yeah.
+[ 29.08s][user ] Okay, okay, I get it. It's dangerous. What *can* I use then?
+[ 33.39s][moshi] «backchannel» Yeah.
+[ 33.75s][moshi] ⟨ret@33.58s⟩ ⟦⚡SPAN@33.88s: (tool result) Seventh Generation Disinfecting Multi-Surface Cleaner is a plant-based formula that kills 99.99%⟧ [happy] For a safe and effective clean, I recommend a bleach solution with water, or a dedicated bathroom cleaner. I can find a highly-rated, eco-friendly option for you if you'd like.
+      CALL: {"function": "search", "arguments": {"query": "eco-friendly bathroom cleaner highly rated"}}
+[ 44.88s][moshi] A plant-based cleaner like Seventh Generation disinfects without harsh chemicals, according to Good Housekeeping. It kills 99.99% of germs.

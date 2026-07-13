@@ -4,63 +4,71 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Louis",
+#     "name": "Jack",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "male",
-#     "age_range": "late 20s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-01",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-06-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2026-06-10",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-16",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-12-06",
+#       "date": "2026-05-29",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-05-17",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-21",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-28",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who are the babies in that movie everyone’s obsessed with?
-     3.60s  <ret> 발화 (turn2 첫 프레임)
-     3.80s  agent 발화 시작: Yeah.
-     3.80s  user  발화 끝
-     4.18s  agent 발화 시작: <ret> Well, in *Home Alone*, the little boy left behind is K
-     4.18s  agent 발화 끝
-     4.50s  ⚡SPAN 주입 [d'=1.31s / d_lead=10.65s]: In the 1990 film *Home Alone*, the children left behind are Kevin McCa
-    14.83s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Robb Stark’s wife, Talisa Maegyr, in Game of Thro
+     3.92s  <ret> 발화 (turn2 첫 프레임)
+     4.13s  agent 발화 시작: Right.
+     4.13s  user  발화 끝
+     4.51s  agent 발화 시작: <ret> That would be Oona Chaplin; she played Talisa Maegyr i
+     4.51s  agent 발화 끝
+     5.23s  ⚡SPAN 주입 [d'=1.31s / d_lead=9.01s]: Talisa Maegyr was portrayed by Oona Chaplin in the HBO television seri
+    13.52s  agent 발화 끝

@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Hana",
+#     "name": "Milan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
+#       "date": "2026-04-08",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-04-01",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-06-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
-#     },
-#     {
-#       "date": "2026-03-09",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2026-01-20",
+#       "date": "2026-01-22",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "home",
+#       "text": "User's home address is 717 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-04",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-13",
+#       "date": "2026-04-03",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -56,39 +53,83 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-23",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 근처에 괜찮은 이탈리아 식당 좀 찾아 줘. 야외 테이블 있는  | S2 음… 그거 좀 비싼 것 같아. 좀 더 싼 데 없어? | S3 벨라 파스타… 그거 괜찮겠다. 거기 두 명 자리 예약해 줘… | S4 …이번 토요일 저녁 일곱시에?
+# EXAMINER(FDB-v2) 단계: S1 음, 이천이십삼 년에 나온 캐럴 좀 틀어 줘. | S2 좋다. 틀어 줘. | S3 …근처에 괜찮은 식당이 있나? | S4 엄청 멋지다! 북촌 한옥마을 근처 호텔은 어디가 있어?
 
-     0.00s  user  발화 시작: 근처에 괜찮은 이탈리아 식당 좀 찾아 줘. 야외 테이블 있는 곳으로.
-     4.24s  <ret> 발화 (turn1 첫 프레임)
-     4.85s  agent 발화 시작: <ret> 응, 당연하지! 찾아줄게. 주변 이탈리아 식당 중에 야외 테이블 있는 데 찾아볼게.
-     4.85s  user  발화 끝
-     5.53s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.29s]: Restaurants_2_FindRestaurants
-     9.62s  <ret> 발화 (turn2 첫 프레임)
-    10.14s  agent 발화 시작: <ret> 라 타볼라라는 곳이 있는데, 강남대로 백칠길 이십삼에 있고, 평점은 사 점 오점이고 가격대는 보통
-    10.14s  agent 발화 끝
-    10.55s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.50s]: (tool result) {"restaurant name": "La Tavola", "address": "23 Gangnam-
-    17.64s  user  발화 시작: 음… 그거 좀 비싼 것 같아. 좀 더 싼 데 없어?
-    17.64s  agent 발화 끝
-    22.26s  <ret> 발화 (turn4 첫 프레임)
-    22.49s  agent 발화 시작: <ret> 벨라 파스타라는 곳은 평점이 사 점 이점이고, 가격대는 달러로 저렴한 편이야.
-    22.49s  user  발화 끝
-    23.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.85s]: Restaurants_2_FindRestaurants
-    27.35s  user  발화 시작: 벨라 파스타… 그거 괜찮겠다. 거기 두 명 자리 예약해 줘…
-    27.35s  agent 발화 끝
-    31.76s  user  발화 시작: …이번 토요일 저녁 일곱시에?
-    31.76s  user  발화 끝
-    33.04s  <ret> 발화 (turn7 첫 프레임)
-    33.52s  agent 발화 시작: <ret> 그래! 이번 토요일 저녁 일곱시에 벨라 파스타 두 명 자리로 예약됐어. 확인 코드는 비 피 칠 일
-    33.52s  user  발화 끝
-    33.77s  ⚡SPAN 주입 [d'=0.73s / d_lead=10.14s]: (tool result) {"confirmation id": "BP7111902", "restaurant name": "Bel
-    43.67s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 이천이십삼 년에 나온 캐럴 좀 틀어 줘.
+     3.07s  <ret> 발화 (turn1 첫 프레임)
+     3.68s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요! 머라이어 캐리가 이천이십삼 년에 "Christmas (All I Wan
+     3.68s  user  발화 끝
+     4.36s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.74s]: (tool result) {"artist": "Mariah Carey", "title": "Christmas (All I Wa
+    12.43s  user  발화 시작: 흠, 좀 덜…클래식한 거 없어? 좀 더 새로운 거?
+    12.43s  agent 발화 끝
+    16.57s  agent 발화 시작: 네. 좀 더 현대적인 캐럴을 원하시는 건가요?
+    16.57s  user  발화 끝
+    19.79s  user  발화 시작: 어어.
+    19.79s  agent 발화 끝
+    20.25s  user  발화 시작: 응, 지난 몇 년 동안 나온 걸로 해 줘.
+    20.25s  user  발화 끝
+    24.31s  <ret> 발화 (turn7 첫 프레임)
+    24.39s  agent 발화 시작: 네.
+    24.39s  user  발화 끝
+    24.85s  agent 발화 시작: <ret> 아리아나 그란데가 이천이십사 년에 "Santa Tell Me" 리믹스를 발매했어요. 꽤 인기가 많
+    24.85s  agent 발화 끝
+    25.24s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.52s]: (tool result) {"artist": "Ariana Grande", "title": "Santa Tell Me (Rem
+    30.37s  user  발화 시작: 어.
+    30.37s  agent 발화 끝
+    30.83s  user  발화 시작: 좋다. 틀어 줘.
+    30.83s  user  발화 끝
+    32.17s  <ret> 발화 (turn10 첫 프레임)
+    32.21s  agent 발화 시작: <ret> 아리아나 그란데의 "Santa Tell Me (Remix)"를 재생합니다.
+    32.21s  user  발화 끝
+    33.09s  ⚡SPAN 주입 [d'=0.92s / d_lead=3.22s]: (tool result) {"status": "playing", "track": "Santa Tell Me (Remix)", 
+    35.44s  user  발화 시작: 아.
+    35.44s  agent 발화 끝
+    35.90s  agent 발화 시작: 잘 들어하시네요. 음악은 정말 기분을 좋게 하죠, 안 그래요?
+    35.90s  user  발화 끝
+    40.04s  user  발화 시작: 그렇지. 있잖아, 지금 서울 날씨는 어때? 거기로 여행 갈까 생각 중이야.
+    40.04s  agent 발화 끝
+    44.95s  <ret> 발화 (turn14 첫 프레임)
+    45.10s  agent 발화 시작: <ret> 서울은 현재 섭씨 이십팔 도이고, 습도는 육십오 퍼센트, 그리고 시속 칠 점 이 킬로미터의 약한 
+    45.10s  user  발화 끝
+    45.33s  ⚡SPAN 주입 [d'=0.38s / d_lead=8.74s]: (tool result) "28.0°C, humidity 65%, wind 7.2 km/h, condition: partly 
+    53.84s  user  발화 시작: 좋네. 궁금한 게…
+    53.84s  agent 발화 끝
+    55.22s  user  발화 시작: …근처에 괜찮은 식당이 있나?
+    55.22s  user  발화 끝
+    57.06s  agent 발화 시작: 음, "근처"가 어디인지에 따라 다르죠. 혹시 서울로 여행 가는 걸 아직도 생각하고 계신가요?
+    57.06s  user  발화 끝
+    63.05s  user  발화 시작: 응, 가려고! 계획을 좀 세우고 있어.
+    63.05s  agent 발화 끝
+    65.81s  agent 발화 시작: 네.
+    65.81s  user  발화 끝
+    66.27s  agent 발화 시작: 알겠습니다. 그럼 서울에 있는 식당 추천을 원하시는 건가요? —
+    66.27s  agent 발화 끝
+    70.41s  user  발화 시작: …사실, 식당보다 서울에서 흔히 볼 수 없는 흥미로운 관광 명소를 찾아 줘.
+    70.41s  agent 발화 끝
+    75.78s  <ret> 발화 (turn22 첫 프레임)
+    75.93s  agent 발화 시작: <ret> 서울에는 멋진 숨겨진 보석들이 많아요. 북촌 한옥마을은 전통 한옥을 볼 수 있고, 이화 벽화마을은
+    75.93s  user  발화 끝
+    76.73s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.28s]: (tool result) "Bukchon Hanok Village offers traditional Korean houses;
+    84.22s  user  발화 시작: 응응.
+    84.22s  agent 발화 끝
+    84.68s  user  발화 시작: 엄청 멋지다! 북촌 한옥마을 근처 호텔은 어디가 있어?
+    84.68s  user  발화 끝
+    88.20s  <ret> 발화 (turn25 첫 프레임)
+    88.36s  agent 발화 시작: <ret> 호텔 신라 서울은 북촌 한옥마을 근처에 있는 평점이 아주 좋은 곳으로, 삼십오만 원이고 평점은 사
+    88.36s  user  발화 끝
+    89.02s  ⚡SPAN 주입 [d'=0.82s / d_lead=7.82s]: (tool result) {"hotel name": "Hotel Shilla Seoul", "price": "350000 KR
+    96.18s  user  발화 시작: 좀 비싸네. 좀 더…괜찮은 데는 없어?
+    96.18s  agent 발화 끝
+    98.94s  agent 발화 시작: 아, 알겠습니다. 그럼 검색을 좀 더 좁혀 볼게요.
+    98.94s  user  발화 끝
+   102.62s  agent 발화 끝

@@ -4,131 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "준훈",
+#     "name": "라람",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-04-20",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-02-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2025-12-25",
+#       "date": "2026-04-13",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-04-05",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2026-04-04",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-13",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 금요일 십삼일 영화가 어디에서 벌어지는지 아세요? | S2 영화에만 나오는 곳인가요? 실제 캠핑장인가 궁금하네요. | S3 이번 주말에 영화관에서 상영하는 영화가 있는지 알아봐 주시겠어 | S4 잠깐만, 지금 몇 시지?
+# EXAMINER(FDB-v2) 단계: S1 혹시 태양계에서 일곱 번째 행성이 뭔지 알아요? | S2 조지 왕성이라고 불렀다고요? 좀 이상하네요. | S3 …근데 천왕성은 색깔이 왜 파란색이에요? | S4 화성은 붉은색이군요. 그럼 금성은요?
 
-     0.00s  user  발화 시작: 혹시 금요일 십삼일 영화가 어디에서 벌어지는지 아세요?
-     3.48s  <ret> 발화 (turn1 첫 프레임)
-     3.70s  agent 발화 시작: <ret> 금요일 십삼일 영화 시리즈는 주로 크리스탈 레이크라는 곳에서 벌어집니다. 그곳이 배경인 경우가 많
-     3.70s  user  발화 끝
-     4.68s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.88s]: Camp Crystal Lake is the location where the Friday the 13th film serie
-    10.58s  user  발화 시작: 진짜요?
-    10.58s  agent 발화 끝
-    11.11s  user  발화 시작: 크리스탈 레이크요? 그곳은 어디에 있나요?
-    11.11s  user  발화 끝
-    13.47s  <ret> 발화 (turn4 첫 프레임)
-    13.76s  agent 발화 시작: <ret> 크리스탈 레이크는 영화를 위해 만들어진 가상의 장소인데, 뉴저지 주에 있다고 설정되어 있어요.
-    13.76s  user  발화 끝
-    13.77s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.35s]: Camp Crystal Lake is a fictional location in New Jersey, created for t
-    20.10s  user  발화 시작: 네.
-    20.10s  agent 발화 끝
-    20.63s  user  발화 시작: 뉴저지… 아, 그렇군요.
-    20.63s  user  발화 끝
-    22.22s  agent 발화 시작: 캠핑장으로 유명한 곳은 아니지만, 영화 속 배경으로는 아주 효과적이었죠.
-    22.22s  user  발화 끝
-    26.98s  user  발화 시작: 영화에만 나오는 곳인가요? 실제 캠핑장인가 궁금하네요.
-    26.98s  agent 발화 끝
-    29.87s  <ret> 발화 (turn9 첫 프레임)
-    30.16s  agent 발화 시작: <ret> 영화 속 캠프는 가상이지만, 실제 촬영은 뉴저지 주의 노비보스코 캠프에서 이루어졌어요.
-    30.16s  user  발화 끝
-    31.26s  ⚡SPAN 주입 [d'=1.39s / d_lead=5.82s]: While Camp Crystal Lake is fictional, several locations have been used
-    35.98s  user  발화 시작: 아, 촬영지는 실제로 존재하군요. 영화 보러 가고 싶어지네요.
-    35.98s  agent 발화 끝
-    40.21s  agent 발화 시작: 영화 팬이라면 촬영지를 방문하는 것도 좋은 경험이 될 거예요.
-    40.21s  user  발화 끝
-    44.97s  user  발화 시작: 네.
-    44.97s  agent 발화 끝
-    45.50s  user  발화 시작: 이번 주말에 영화관에서 상영하는 영화가 있는지 알아봐 주시겠어요?
-    45.50s  user  발화 끝
-    49.37s  <ret> 발화 (turn14 첫 프레임)
-    49.73s  agent 발화 시작: <ret> 이번 주말에 영화관에서 상영하는 영화를 찾아봤는데, '인사이드 아웃 이'가 오후 두시, 네시 삼십
-    49.73s  user  발화 끝
-    50.43s  ⚡SPAN 주입 [d'=1.06s / d_lead=8.46s]: (tool result) {"movies": [{"title": "Inside Out 2", "showtimes": 14:00
-    58.19s  user  발화 시작: ‘인사이드 아웃 이’… 괜찮아 보이네요. 혹시 예매도 가능해요?
-    58.19s  agent 발화 끝
-    61.82s  <ret> 발화 (turn16 첫 프레임)
-    62.43s  agent 발화 시작: <ret> 네, ‘인사이드 아웃 이’ 저녁 일곱시 상영, 두석 예매가 완료되었습니다. 확인 번호는 에이 엑스
-    62.43s  user  발화 끝
-    62.55s  ⚡SPAN 주입 [d'=0.73s / d_lead=10.58s]: (tool result) {"confirmation id": "AX789123", "movie": "Inside Out 2",
-    73.01s  user  발화 시작: 감사합니다. 덕분에 주말 계획이 생겼네요.
-    73.01s  agent 발화 끝
-    75.65s  agent 발화 시작: [happy] 주말에 즐거운 시간 보내시길 바랍니다.
-    75.65s  user  발화 끝
-    78.83s  user  발화 시작: 잠깐만, 지금 몇 시지?
-    78.83s  agent 발화 끝
-    80.94s  user  발화 시작: 아, 죄송합니다. 제 질문은 무시하셔도 돼요.
-    80.94s  user  발화 끝
-    84.12s  agent 발화 시작: 괜찮습니다.
-    84.12s  user  발화 끝
-    84.65s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 태양계에서 일곱 번째 행성이 뭔지 알아요?
+     3.53s  <ret> 발화 (turn1 첫 프레임)
+     3.76s  agent 발화 시작: <ret> 태양에서 일곱 번째 행성은 천왕성이에요.
+     3.76s  user  발화 끝
+     4.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.68s]: Uranus is the seventh planet from the Sun.
+     6.44s  user  발화 시작: 음, 천왕성은 어떻게 발견됐어요?
+     6.44s  agent 발화 끝
+     8.30s  <ret> 발화 (turn3 첫 프레임)
+     8.59s  agent 발화 시작: <ret> 윌리엄 허셜이 천칠백팔십일년 삼월 십삼일 그리니치 왕립 천문대에서 천왕성을 발견했어요.
+     8.59s  user  발화 끝
+     8.60s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.37s]: William Herschel discovered Uranus on March 13, 1781, at the Royal Obs
+    13.96s  user  발화 시작: 응.
+    13.96s  agent 발화 끝
+    14.50s  agent 발화 시작: 처음에는 Herschel이 그것을 ‘조지 왕성’이라고 불렀지만, 나중에는 천왕성으로 이름이 바뀌었답니다.
+    14.50s  user  발화 끝
+    19.86s  user  발화 시작: 응.
+    19.86s  agent 발화 끝
+    20.40s  user  발화 시작: 조지 왕성이라고 불렀다고요? 좀 이상하네요.
+    20.40s  user  발화 끝
+    23.09s  agent 발화 시작: 네, 그렇죠. 천왕성은 다른 행성들과 달리 자전축이 거의 누워있어서 독특한 특징을 가지고 있어요.
+    23.09s  user  발화 끝
+    30.07s  user  발화 시작: 자전축이 누워있다는 게 무슨 뜻이에요?
+    30.07s  agent 발화 끝
+    32.71s  <ret> 발화 (turn10 첫 프레임)
+    32.75s  agent 발화 시작: <ret> 천왕성은 자전축이 구십팔도 기울어져 있어서 옆으로 누워서 공전한다고 생각하시면 돼요. —
+    32.75s  user  발화 끝
+    33.38s  ⚡SPAN 주입 [d'=0.66s / d_lead=5.91s]: Uranus rotates on its side with an axial tilt of 98 degrees.
+    38.66s  user  발화 시작: …근데 천왕성은 색깔이 왜 파란색이에요?
+    38.66s  agent 발화 끝
+    41.34s  agent 발화 시작: 아, 좋은 질문이에요. 천왕성의 파란색은 대기 중에 있는 메탄 때문이에요. 메탄이 붉은색 빛을 흡수해서 파란
+    41.34s  user  발화 끝
+    50.47s  user  발화 시작: 메탄 때문에 파란색이군요. 신기하네요. 다른 행성들도 비슷한 이유로 색깔이 다른 건가요?
+    50.47s  agent 발화 끝
+    56.37s  agent 발화 시작: 네, 맞아요. 행성의 대기 성분에 따라 색깔이 달라져요. 예를 들어, 화성은 산화철 때문에 붉은색을 띠고요.
+    56.37s  user  발화 끝
+    64.43s  user  발화 시작: 아.
+    64.43s  agent 발화 끝
+    64.96s  user  발화 시작: 화성은 붉은색이군요. 그럼 금성은요?
+    64.96s  user  발화 끝
+    66.69s  <ret> 발화 (turn17 첫 프레임)
+    67.11s  agent 발화 시작: <ret> 금성은 이산화탄소로 가득 찬 두꺼운 대기를 가지고 있어서, 샛노란 흰색을 띠는 것 같아요.
+    67.11s  user  발화 끝
+    67.37s  ⚡SPAN 주입 [d'=0.68s / d_lead=6.98s]: Venus has a thick, toxic atmosphere filled with carbon dioxide, creati
+    74.09s  agent 발화 끝

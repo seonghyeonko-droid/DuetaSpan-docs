@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "정찬",
+#     "name": "준영",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,77 +12,71 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-26",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-04-22",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-06-12",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-04-01",
+#       "date": "2026-04-06",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2025-12-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "date": "2026-03-03",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-04",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-19",
+#       "date": "2026-06-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-25",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 수제 가죽 지갑을 만들어 줘. 실물 제품이야. | S2 아니, 그건 됐고… 혹시 다른 가죽 제품도 만들 수 있어? | S3 벨트도 만들어 줘. 검정색 가죽 벨트. | S4 … 잠깐만, 혹시 가죽 종류도 선택할 수 있어?
 
-     0.00s  user  발화 시작: 수제 가죽 지갑을 만들어 줘. 실물 제품이야.
-     2.58s  <ret> 발화 (turn1 첫 프레임)
-     3.04s  agent 발화 시작: <ret> 수제 가죽 지갑이 만들어졌어요. 제품 아이디는 칠 팔 구 삼 사 오입니다. 지금 바로 확인해 보실
-     3.04s  user  발화 끝
-     3.33s  ⚡SPAN 주입 [d'=0.76s / d_lead=6.96s]: (tool result) {"product id": "789345", "product name": "Handmade Leath
-    10.00s  user  발화 시작: 어.
-    10.00s  agent 발화 끝
-    10.43s  user  발화 시작: 아니, 그건 됐고… 혹시 다른 가죽 제품도 만들 수 있어?
-    10.43s  user  발화 끝
-    14.78s  agent 발화 시작: 네.
-    14.78s  user  발화 끝
-    15.22s  agent 발화 시작: 네, 물론이죠. 가죽 벨트나 가방도 만들 수 있습니다. 어떤 제품을 원하시나요?
-    15.22s  agent 발화 끝
-    20.00s  user  발화 시작: 그래.
-    20.00s  agent 발화 끝
-    20.43s  user  발화 시작: 벨트도 만들어 줘. 검정색 가죽 벨트.
-    20.43s  user  발화 끝
-    22.44s  <ret> 발화 (turn8 첫 프레임)
-    23.04s  agent 발화 시작: <ret> 검정색 가죽 벨트도 만들어졌습니다. 제품 아이디는 이 사 육 팔 일 삼번이고요 —
-    23.04s  user  발화 끝
-    23.73s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.65s]: (tool result) {"product id": "246813", "product name": "Black Leather 
-    28.69s  user  발화 시작: … 잠깐만, 혹시 가죽 종류도 선택할 수 있어?
-    28.69s  agent 발화 끝
-    32.17s  agent 발화 시작: 아, 네, 물론입니다. 어떤 가죽을 선호하시나요? 소가죽, 양가죽, 염소가죽 등 다양한 종류가 있습니다.
-    32.17s  user  발화 끝
-    37.82s  agent 발화 끝
+     0.00s  user  발화 시작: 휴스턴까지 버스 티켓 좀 알아봐 줘. 사월 십일에 아침 아홉시 사십오분쯤 출발하는 걸로.
+     5.93s  <ret> 발화 (turn1 첫 프레임)
+     6.39s  agent 발화 시작: <ret> 달라스에서 휴스턴까지 사월 십일 아침 아홉시 사십오분 출발하는 버스 티켓을 찾았어요. 가격은 육십
+     6.39s  user  발화 끝
+     6.68s  ⚡SPAN 주입 [d'=0.76s / d_lead=12.79s]: (tool result) {"ticket id": "BT78923", "departure city": "Dallas", "ar
+    19.18s  user  발화 시작: 오, 다행이다. 그럼 바로 예약해 줘.
+    19.18s  agent 발화 끝
+    21.64s  <ret> 발화 (turn3 첫 프레임)
+    22.13s  agent 발화 시작: <ret> 네, 예약이 완료되었습니다. 티켓 번호는 비 티 칠 팔 구 이 삼입니다. 즐거운 여행 되세요!
+    22.13s  user  발화 끝
+    22.92s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.38s]: (tool result) {"ticket id": "BT78923", "status": "confirmed"}
+    29.51s  user  발화 시작: 고마워. 휴스턴에 괜찮은 레스토랑도 좀 알아봐 줄래?
+    29.51s  agent 발화 끝
+    32.96s  agent 발화 시작: 어떤 종류의 음식을 좋아하세요?
+    32.96s  user  발화 끝
+    34.92s  agent 발화 끝

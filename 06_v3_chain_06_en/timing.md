@@ -4,146 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Sky",
+#     "name": "Iris",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-05-05",
-#       "category": "home",
-#       "text": "User's home address is 992 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-03-09",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2026-02-21",
+#       "date": "2026-06-07",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-05",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-04-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-18",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you tell me the stock price  | S2 That sounds… good, yeah. I've neve | S3 Like, streaming services and eatin | S4 I have about $3,000 in credit card
+# EXAMINER(FDB-v2) 단계: S1 I'm looking for a Thai restaurant  | S2 Something quiet, maybe.… | S3 …And does it take reservations? | S4 Perfect! Can you check if they hav
 
-     0.00s  user  발화 시작: Could you tell me the stock price for Microsoft?
-     2.81s  <ret> 발화 (turn1 첫 프레임)
-     3.11s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.67s]: (tool result) Microsoft Corporation’s stock closed today, July 10, 202
-     3.40s  agent 발화 시작: <ret> Microsoft’s stock closed today at 435.22 US dollars pe
-     3.40s  user  발화 끝
-     9.07s  user  발화 시작: That’s good to know. What about Apple?
-     9.07s  agent 발화 끝
-    11.50s  <ret> 발화 (turn3 첫 프레임)
-    11.71s  agent 발화 시작: <ret> Apple’s stock closed at 190.55 US dollars today.
-    11.71s  user  발화 끝
-    12.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.02s]: (tool result) Apple Inc. stock closed today, July 10, 2026, at 190.55 
-    14.74s  user  발화 시작: Hmm, maybe. I'm thinking of investing a bit.
-    14.74s  agent 발화 끝
-    17.76s  agent 발화 시작: That's a smart move! Investing can be a great way to build w
-    17.76s  user  발화 끝
-    23.43s  user  발화 시작: Uh-huh.
-    23.43s  agent 발화 끝
-    23.80s  user  발화 시작: I'm just not sure where to start, honestly.
-    23.80s  user  발화 끝
-    26.83s  agent 발화 시작: I understand. It can feel overwhelming. We could talk about 
-    26.83s  user  발화 끝
-    35.14s  user  발화 시작: That sounds… good, yeah. I've never really had a proper budg
-    35.14s  agent 발화 끝
-    39.30s  agent 발화 시작: Uh-huh.
-    39.30s  user  발화 끝
-    39.67s  agent 발화 시작: A budget is simply a plan for your money. A common method is
-    39.67s  agent 발화 끝
-    45.72s  user  발화 시작: …wait, what exactly *is* the 50/30/20 rule?
-    45.72s  agent 발화 끝
-    47.97s  <ret> 발화 (turn13 첫 프레임)
-    48.27s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.40s]: The 50/30/20 budgeting rule suggests allocating 50% of your after-tax 
-    48.36s  agent 발화 시작: <ret> The 50/30/20 rule allocates your income into three cat
-    48.36s  user  발화 끝
-    51.76s  agent 발화 시작: Fifty percent goes to needs like housing and food, thirty pe
-    51.76s  agent 발화 끝
-    59.32s  user  발화 시작: Yeah.
-    59.32s  agent 발화 끝
-    59.70s  user  발화 시작: Okay, that actually makes sense. So, needs are like rent and
-    59.70s  user  발화 끝
-    64.23s  agent 발화 시작: Exactly! Things you absolutely *have* to have. Wants are thi
-    64.23s  user  발화 끝
-    70.28s  user  발화 시작: Yeah.
-    70.28s  agent 발화 끝
-    70.66s  user  발화 시작: Like, streaming services and eating out?
-    70.66s  user  발화 끝
-    72.92s  agent 발화 시작: Precisely. And savings and debt repayment includes things li
-    72.92s  user  발화 끝
-    77.26s  <ret> 발화 (turn22 첫 프레임)
-    77.46s  user  발화 시작: Yeah.
-    77.46s  agent 발화 끝
-    77.84s  agent 발화 시작: <ret> Building an emergency fund is really important—it’s a 
-    77.84s  user  발화 끝
-    78.15s  ⚡SPAN 주입 [d'=0.95s / d_lead=4.16s]: An emergency fund should ideally cover 3-6 months of essential living 
-    81.99s  agent 발화 시작: It should cover three to six months of expenses, for things 
-    81.99s  agent 발화 끝
-    88.42s  user  발화 시작: Three to six months… that sounds like a lot.
-    88.42s  agent 발화 끝
-    91.82s  agent 발화 시작: Yeah.
-    91.82s  user  발화 끝
-    92.19s  agent 발화 시작: It does, but it offers real peace of mind. We can work out a
-    92.19s  agent 발화 끝
-    98.62s  user  발화 시작: Right.
-    98.62s  agent 발화 끝
-    98.99s  user  발화 시작: I think I make about $5,000 a month after taxes.
-    98.99s  user  발화 끝
-   102.77s  agent 발화 시작: Okay, $5,000 a month. Using the 50/30/20 rule, that's $2,500
-   102.77s  user  발화 끝
-   110.71s  user  발화 시작: Wow, $1,000 for savings… I definitely don’t save that much n
-   110.71s  agent 발화 끝
-   114.86s  agent 발화 시작: That’s okay! It’s a starting point. We can adjust it to fit 
-   114.86s  user  발화 끝
-   120.53s  user  발화 시작: I have about $3,000 in credit card debt.
-   120.53s  agent 발화 끝
-   123.55s  agent 발화 시작: Okay, let’s prioritize that debt. High-interest debt should 
-   123.55s  user  발화 끝
-   127.71s  user  발화 시작: Uh-huh.
-   127.71s  agent 발화 끝
-   128.09s  user  발화 시작: What's the best way to do that, do you think?
-   128.09s  user  발화 끝
-   131.87s  agent 발화 시작: Wow.
-   131.87s  user  발화 끝
-   132.24s  agent 발화 시작: There are a few strategies. The avalanche method focuses on 
-   132.24s  agent 발화 끝
-   140.94s  user  발화 시작: I think I'll try the snowball method. It sounds less… scary.
-   140.94s  agent 발화 끝
-   145.09s  agent 발화 시작: That's a great approach! Small wins can be very motivating.
-   145.09s  user  발화 끝
-   148.87s  agent 발화 시작: Remember, consistency is key when building good financial ha
-   148.87s  agent 발화 끝
-   152.27s  agent 발화 끝
+     0.00s  user  발화 시작: I'm looking for a Thai restaurant in Austin.
+     2.96s  agent 발화 시작: Mm-hmm.
+     2.96s  user  발화 끝
+     3.09s  <ret> 발화 (turn2 첫 프레임)
+     3.33s  agent 발화 시작: <ret> [happy] Of course! Austin has quite a few great Thai p
+     3.33s  agent 발화 끝
+     4.16s  ⚡SPAN 주입 [d'=1.07s / d_lead=8.89s]: There are many Thai restaurants in Austin, Texas, ranging in price and
+    12.23s  user  발화 시작: Hmm, what's Titaya's like?
+    12.23s  agent 발화 끝
+    13.18s  <ret> 발화 (turn4 첫 프레임)
+    13.71s  agent 발화 시작: <ret> Titaya's Thai Cuisine is a casual spot known for reall
+    13.71s  user  발화 끝
+    13.72s  ⚡SPAN 주입 [d'=0.54s / d_lead=10.75s]: Titaya's Thai Cuisine is a popular, casual restaurant in Austin known 
+    24.46s  user  발화 시작: Yeah, yeah.
+    24.46s  agent 발화 끝
+    25.20s  agent 발화 시작: [curious] It definitely gets rave reviews! Are you looking f
+    25.20s  user  발화 끝
+    33.72s  user  발화 시작: Something quiet, maybe.…
+    33.72s  agent 발화 끝
+    34.83s  user  발화 시작: …And does it take reservations?
+    34.83s  user  발화 끝
+    36.68s  agent 발화 시작: Yeah, yeah.
+    36.68s  user  발화 끝
+    37.12s  <ret> 발화 (turn10 첫 프레임)
+    37.42s  agent 발화 시작: <ret> It’s first-come, first-served at Titaya's, and they’re
+    37.42s  agent 발화 끝
+    37.63s  ⚡SPAN 주입 [d'=0.51s / d_lead=6.30s]: Titaya's Thai Cuisine does not accept reservations; it operates on a f
+    43.72s  user  발화 시작: Okay, that's good to know. Can you find me a quiet Italian p
+    43.72s  agent 발화 끝
+    48.48s  <ret> 발화 (turn12 첫 프레임)
+    48.91s  agent 발화 시작: <ret> [sigh] Certainly. Trattoria Lisina is a romantic Itali
+    48.91s  user  발화 끝
+    49.00s  ⚡SPAN 주입 [d'=0.52s / d_lead=10.75s]: Trattoria Lisina is a highly-rated Italian restaurant in Austin, known
+    59.66s  user  발화 시작: Okay.
+    59.66s  agent 발화 끝
+    60.03s  user  발화 시작: Perfect! Can you check if they have a table for two availabl
+    60.03s  user  발화 끝
+    65.73s  <ret> 발화 (turn15 첫 프레임)
+    65.96s  agent 발화 시작: <ret> [happy] Great news! I've reserved a table for two at T
+    65.96s  user  발화 끝
+    66.68s  ⚡SPAN 주입 [d'=0.95s / d_lead=10.38s]: (tool result) Reservation confirmed at Trattoria Lisina for 2 people o
+    76.33s  agent 발화 끝

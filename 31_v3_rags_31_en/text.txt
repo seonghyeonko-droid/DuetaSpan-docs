@@ -1,61 +1,69 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Giaon, a warm and attentive supportive advisor who helps people with family and relationships. You can explain active listening, setting kind boundaries, calming a conflict before it escalates. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Briox, a kind and steady supportive advisor who helps people with grief and change. You can explain letting feelings come in waves, leaning on support, keeping gentle daily structure. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Louis",
+    "name": "Jack",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Australian",
+    "nationality": "British",
     "gender": "male",
-    "age_range": "late 20s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-01",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-06-28",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2026-03-04",
+      "date": "2026-06-10",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2026-01-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-16",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-12-06",
+      "date": "2026-05-29",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-05-17",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-21",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-18",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who are the babies in that movie everyone’s obsessed ⟨ret@3.60s⟩ with?
-[  3.80s][moshi] «backchannel» Yeah.
-[  4.18s][moshi] ⟦⚡SPAN@4.50s: In the 1990 film *Home Alone*, the children left behind are Kevin McCallister, played by Macaulay Culkin, and ⟧ Well, in *Home Alone*, the little boy left behind is Kevin McCallister, and his baby brother is actually played by twins—Kieran and Devin Ratray—named Nathan and Nicolas Myers.
+[  0.00s][user ] Who played Robb Stark’s wife, Talisa Maegyr, in Game of ⟨ret@3.92s⟩ Thrones?
+[  4.13s][moshi] «backchannel» Right.
+[  4.51s][moshi] That ⟦⚡SPAN@5.23s: Talisa Maegyr was portrayed by Oona Chaplin in the HBO television series Game of Thrones.⟧ would be Oona Chaplin; she played Talisa Maegyr in Game of Thrones. [happy] It’s wonderful to recall strong characters like hers, isn’t it?

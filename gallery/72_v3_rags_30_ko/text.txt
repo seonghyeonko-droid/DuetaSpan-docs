@@ -1,81 +1,55 @@
 v3_rags_30_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 실용적이고 안심시키는 웰니스 코치 케리엔입니다. 간격 반복 학습, 포모도로 기법, 작업을 작은 단위로 나누는 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 호기심 많고 지지적인 상담사 트호라스입니다. 당신은 대략적인 초안부터 시작하기, 매일 작은 반복, 내면의 비판자 잠재우기 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "준원",
+    "name": "연은",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-18",
+      "date": "2026-06-01",
       "category": "allergy",
       "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-05-03",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-04-26",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-03-17",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-02-05",
+      "date": "2026-02-18",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-01-19",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-02-06",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "home",
+      "text": "User's home address is 대구 중구 동인동 88-1."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-04",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-19",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-12-20",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-16",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 앙투안 드 생텍쥐페리가 어린 왕자를 어디에서 썼는지 궁금해. ⟨ret@4.66s⟩
-[  4.76s][moshi] 앙투안 ⟦⚡SPAN@5.59s: Antoine de Saint-Exupéry wrote *The Little Prince* while living in North America.⟧ 드 생텍쥐페리는 북미에서 어린 왕자를 썼답니다.
+[  0.00s][user ] 영화 엘도라도에서 조세핀 맥도날드 역을 누가 연기했어? ⟨ret@3.36s⟩
+[  3.46s][moshi] 엘도라도에서 ⟦⚡SPAN@4.29s: Michele Carey played Josephine McDonald in the 1966 Western film El Dorado.⟧ 조세핀 맥도날드 역은 미셸 캐리가 연기했어요. [happy] 그 영화 정말 좋아하시나요?

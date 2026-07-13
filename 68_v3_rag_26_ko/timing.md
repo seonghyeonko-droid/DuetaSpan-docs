@@ -4,108 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "현국",
+#     "name": "연슬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-06-10",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-12-23",
+#       "date": "2026-05-12",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2025-12-04",
+#       "date": "2026-05-02",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 공부에 집중이 안 돼서 큰일이야. 뭘 해야 할지 모르겠어 | S2 뽀모도로? 처음 들어봐. 좀 더 자세히 알려줄 수 있어? | S3 알았어. 한번 시도해볼게. 근데, 중간에 집중이 흐트러지면 어 | S4 맞아. 조급해하면 안 되지. 근데, 혹시 제일차 세계대전 책임
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 배우스님. 요즘 스트레스가 너무 심해서 잠도 잘  | S2 그냥… 일 때문에 계속 걱정돼서 그래요. 마감일도 다가오고,  | S3 음… 잘 모르겠어요. 왜 갑자기 그런 말씀을 하시는 거예요? | S4 우유는 좀 싫어하는데… 음악은 괜찮아요.
 
-     0.00s  user  발화 시작: 요즘 공부에 집중이 안 돼서 큰일이야. 뭘 해야 할지 모르겠어.
-     5.36s  agent 발화 시작: 공부에 집중이 안 된다니, 마음이 답답하겠네요. 작은 목표부터 세우는 건 어떨까요?
-     5.36s  user  발화 끝
-    11.26s  user  발화 시작: 응응.
-    11.26s  agent 발화 끝
-    11.79s  user  발화 시작: 음… 작은 목표라… 예를 들면?
-    11.79s  user  발화 끝
-    14.47s  agent 발화 시작: 짧은 시간 동안 집중하는 뽀모도로 기법을 사용해 보는 거예요. 이십오분 공부하고 오분 쉬는 식으로요.
-    14.47s  user  발화 끝
-    21.98s  user  발화 시작: 뽀모도로? 처음 들어봐. 좀 더 자세히 알려줄 수 있어?
-    21.98s  agent 발화 끝
-    26.68s  <ret> 발화 (turn6 첫 프레임)
-    26.80s  agent 발화 시작: <ret> 뽀모도로 기법은 프란체스코 치릴로가 천구백팔십년대 후반에 개발한 시간 관리 방법인데, 이십오분 동
-    26.80s  user  발화 끝
-    27.35s  ⚡SPAN 주입 [d'=0.67s / d_lead=9.65s]: The Pomodoro Technique is a time management method developed by France
-    36.45s  user  발화 시작: 응.
-    36.45s  agent 발화 끝
-    36.99s  user  발화 시작: 아, 그런 거구나. 그럼 타이머는 어떻게 맞춰야 해?
-    36.99s  user  발화 끝
-    41.28s  agent 발화 시작: 네.
-    41.28s  user  발화 끝
-    41.81s  agent 발화 시작: 보통 이십오분 타이머를 맞추고, 공부에 집중하는 거예요. 방해받지 않도록 알림은 꺼두는 게 좋고요.
-    41.81s  agent 발화 끝
-    48.78s  user  발화 시작: 대박.
-    48.78s  agent 발화 끝
-    49.32s  user  발화 시작: 알았어. 한번 시도해볼게. 근데, 중간에 집중이 흐트러지면 어떡하지?
-    49.32s  user  발화 끝
-    53.61s  agent 발화 시작: [laugh] 집중이 흐트러지면 잠시 멈추고 심호흡을 하거나, 가볍게 스트레칭을 해 보세요.
-    53.61s  user  발화 끝
-    59.50s  user  발화 시작: 응응.
-    59.50s  agent 발화 끝
-    60.04s  agent 발화 시작: 다시 이십오분을 시작하면 되고요. 중요한 건 포기하지 않고 꾸준히 하는 거예요.
-    60.04s  user  발화 끝
-    65.93s  user  발화 시작: 꾸준히… 그게 제일 어려운 것 같아.
-    65.93s  agent 발화 끝
-    69.15s  agent 발화 시작: 꾸준함은 작은 성공들이 모여서 만들어지는 거니까, 너무 조급해하지 마세요.
-    69.15s  user  발화 끝
-    73.98s  user  발화 시작: 응.
-    73.98s  agent 발화 끝
-    74.51s  user  발화 시작: 맞아. 조급해하면 안 되지. 근데, 혹시 제일차 세계대전 책임은 누가 졌었어? 갑자기 궁금해졌어.
-    74.51s  user  발화 끝
-    81.42s  <ret> 발화 (turn20 첫 프레임)
-    81.48s  agent 발화 시작: <ret> 베르사유 조약은 제일차 세계대전의 책임을 독일과 동맹국들에게 완전히 돌렸고, 막대한 배상금과 영토
-    81.48s  user  발화 끝
-    82.86s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.50s]: The Treaty of Versailles placed the sole responsibility for World War 
-    88.98s  user  발화 시작: 우와.
-    88.98s  agent 발화 끝
-    89.52s  user  발화 시작: 독일이 다 졌다고? 그럼 다른 나라들은 아무 책임이 없었던 거야?
-    89.52s  user  발화 끝
-    94.88s  agent 발화 시작: 베르사유 조약은 독일에게만 책임을 묻는다는 입장이었지만, 역사적으로는 여러 나라의 복잡한 관계가 원인이었죠.
-    94.88s  user  발화 끝
-   101.31s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 배우스님. 요즘 스트레스가 너무 심해서 잠도 잘 안 와요.
+     4.98s  agent 발화 시작: 안녕하세요! 스트레스 때문에 잠 못 이루시는군요. 제가 편안하게 잠들 수 있도록 도와드릴게요.
+     4.98s  user  발화 끝
+    10.96s  user  발화 시작: 네, 부탁드려요. 뭔가 간단한 스트레스 해소법 같은 거 있을까요?
+    10.96s  agent 발화 끝
+    15.45s  agent 발화 시작: 간단한 호흡 운동은 어떠세요? 숨을 깊게 들이쉬고 천천히 내쉬는 걸 반복하면 마음이 차분해질 거예요.
+    15.45s  user  발화 끝
+    22.42s  user  발화 시작: 그렇죠.
+    22.42s  agent 발화 끝
+    22.92s  user  발화 시작: 음, 해봤는데 잘 안 돼요. 뭔가 다른 방법은 없을까요?
+    22.92s  user  발화 끝
+    27.41s  agent 발화 시작: 네네.
+    27.41s  user  발화 끝
+    27.90s  agent 발화 시작: [curious] 혹시 어떤 종류의 스트레스인지 조금 더 자세히 말씀해 주시겠어요? 어떤 상황 때문에 힘드신
+    27.90s  agent 발화 끝
+    34.88s  user  발화 시작: 그냥… 일 때문에 계속 걱정돼서 그래요. 마감일도 다가오고, 해야 할 일이 너무 많고.
+    34.88s  agent 발화 끝
+    41.36s  agent 발화 시작: 일이 많으셔서 힘드시군요. 잠시 하던 일을 멈추고, 편안하게 몸을 움직여 보는 건 어떠세요?
+    41.36s  user  발화 끝
+    47.84s  user  발화 시작: 몸을 움직인다고요?
+    47.84s  agent 발화 끝
+    48.83s  agent 발화 시작: 네, 간단한 스트레칭이나 산책도 도움이 될 수 있어요. 몸을 움직이면 긴장이 풀리고 기분 전환이 될 거예요.
+    48.83s  user  발화 끝
+    56.81s  user  발화 시작: 음.
+    56.81s  agent 발화 끝
+    57.30s  user  발화 시작: 아, 그럴까요?
+    57.30s  user  발화 끝
+    58.30s  agent 발화 시작: [happy] 네, 특히 햇볕을 쬐면서 산책하면 비타민 D도 얻을 수 있고, 기분도 훨씬 좋아질 거예요.
+    58.30s  user  발화 끝
+    65.78s  user  발화 시작: 음.
+    65.78s  agent 발화 끝
+    66.27s  agent 발화 시작: 혹시 인도 독립운동가에 대해 아세요?
+    66.27s  user  발화 끝
+    68.77s  user  발화 시작: 음… 잘 모르겠어요. 왜 갑자기 그런 말씀을 하시는 거예요?
+    68.77s  agent 발화 끝
+    73.05s  <ret> 발화 (turn18 첫 프레임)
+    73.25s  agent 발화 시작: <ret> 인도 독립운동가 마하리시 다야난다 사라스와티가, 천팔백칠십육년에 '스와라지', 즉 자치통치라는 단
+    73.25s  user  발화 끝
+    73.72s  ⚡SPAN 주입 [d'=0.68s / d_lead=5.98s]: Maharishi Dayanand Saraswati was the first Indian leader to use the wo
+    79.23s  user  발화 시작: 네.
+    79.23s  agent 발화 끝
+    79.73s  user  발화 시작: 아, 처음 듣는 단어네요. 자치통치라고요?
+    79.73s  user  발화 끝
+    82.22s  agent 발화 시작: 네, 스스로 다스리는 것을 의미해요. 인도 독립운동의 중요한 개념이었죠.
+    82.22s  user  발화 끝
+    86.70s  user  발화 시작: 음.
+    86.70s  agent 발화 끝
+    87.20s  user  발화 시작: 그렇군요. 근데 다시 스트레스 얘기로 돌아가면… 잠을 잘 자기 위한 다른 방법은 없을까요?
+    87.20s  user  발화 끝
+    93.68s  agent 발화 시작: [sigh] 잠들기 전에 따뜻한 우유를 마시거나, 조용한 음악을 듣는 것도 도움이 될 수 있어요.
+    93.68s  user  발화 끝
+   100.66s  user  발화 시작: 우유는 좀 싫어하는데… 음악은 괜찮아요.
+   100.66s  agent 발화 끝
+   103.15s  agent 발화 시작: 네, 좋아하는 음악을 듣는 건 정말 좋은 방법이에요. 편안하고 잔잔한 음악을 추천해 드릴게요.
+   103.15s  user  발화 끝
+   109.63s  user  발화 시작: 좋아요. 어떤 음악이 좋을까요?
+   109.63s  agent 발화 끝
+   111.62s  agent 발화 시작: [laugh] 잔잔한 클래식 음악이나 자연의 소리가 담긴 음악은 숙면에 도움이 될 거예요. 유튜브나 스트리밍
+   111.62s  user  발화 끝
+   119.59s  agent 발화 끝

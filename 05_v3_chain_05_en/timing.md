@@ -4,112 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "Jordan",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-06-22",
+#       "category": "home",
+#       "text": "User's home address is 430 Maple Drive."
+#     },
+#     {
+#       "date": "2026-03-17",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-01-13",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-12-04",
+#       "date": "2026-03-13",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2026-01-24",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-01-05",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm thinking of driving from Chang | S2 Yes, please. For next Tuesday nigh | S3 That sounds pleasant. My son gets  | S4 Yes, directions from XiangCai Rest
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling really stuck in my car | S2 That's... good to hear. I was thin | S3 Are there any coding bootcamps you | S4 …do they offer part-time options a
 
-     0.00s  user  발화 시작: I'm thinking of driving from Changsha to Ningbo next week. H
-     5.72s  <ret> 발화 (turn1 첫 프레임)
-     5.94s  agent 발화 시작: <ret> [happy] That drive from Changsha to Ningbo is about 68
-     5.94s  user  발화 끝
-     6.89s  ⚡SPAN 주입 [d'=1.17s / d_lead=13.87s]: (tool result) The driving distance from Changsha to Ningbo is approxim
-    19.81s  user  발화 시작: Yes, next Tuesday. And are there any nice places to stop for
-    19.81s  agent 발화 끝
-    25.82s  <ret> 발화 (turn3 첫 프레임)
-    26.15s  agent 발화 시작: <ret> [curious] Next Tuesday at 10 AM, the drive will likely
-    26.15s  user  발화 끝
-    26.56s  ⚡SPAN 주입 [d'=0.74s / d_lead=11.10s]: (tool result) Departure time: next Tuesday at 10:00 AM. Estimated trav
-    37.10s  <ret> 발화 (turn4 첫 프레임)
-    37.25s  agent 발화 시작: <ret> Along the way, XiangCai Restaurant in Zhuzhou gets goo
-    37.25s  agent 발화 끝
-    37.71s  ⚡SPAN 주입 [d'=0.61s / d_lead=8.32s]: (tool result) There are many restaurants along the route from Changsha
-    45.57s  user  발화 시작: Zhuzhou sounds good. Can you find me a hotel in Zhuzhou with
-    45.57s  agent 발화 끝
-    50.94s  <ret> 발화 (turn6 첫 프레임)
-    51.12s  agent 발화 시작: <ret> [surprised] The Grand Soluxe Hotel in Zhuzhou has a po
-    51.12s  user  발화 끝
-    51.46s  ⚡SPAN 주입 [d'=1.44s / d_lead=11.89s]: (tool result) The Grand Soluxe Hotel Zhuzhou has an indoor pool and re
-    63.01s  user  발화 시작: Yes, please. For next Tuesday night.
-    63.01s  agent 발화 끝
-    64.82s  <ret> 발화 (turn8 첫 프레임)
-    65.35s  ⚡SPAN 주입 [d'=0.53s / d_lead=8.72s]: (tool result) Booking confirmed at Grand Soluxe Hotel Zhuzhou, next Tu
-    65.39s  agent 발화 시작: <ret> Great! I've booked a room for two at the Grand Soluxe 
-    65.39s  user  발화 끝
-    74.10s  user  발화 시작: Perfect. What's the weather forecast for Zhuzhou next Tuesda
-    74.10s  agent 발화 끝
-    77.64s  <ret> 발화 (turn10 첫 프레임)
-    77.67s  agent 발화 시작: <ret> [happy] Next Tuesday in Zhuzhou will be partly cloudy,
-    77.67s  user  발화 끝
-    78.40s  ⚡SPAN 주입 [d'=1.38s / d_lead=9.11s]: (tool result) The weather in Zhuzhou next Tuesday is forecast to be pa
-    86.78s  user  발화 시작: That sounds pleasant. My son gets carsick easily. Any tips?
-    86.78s  agent 발화 끝
-    90.75s  agent 발화 시작: Oh, that can be tricky! Keeping him hydrated and looking at 
-    90.75s  user  발화 끝
-    99.07s  user  발화 시작: Good ideas. Are there any parks in Zhuzhou we could stop at?
-    99.07s  agent 발화 끝
-   103.26s  <ret> 발화 (turn14 첫 프레임)
-   103.70s  ⚡SPAN 주입 [d'=0.44s / d_lead=9.11s]: (tool result) Zhuzhou Central Park is a large, well-maintained park wi
-   103.82s  agent 발화 시작: <ret> Zhuzhou Central Park is a good option—it has walking p
-   103.82s  user  발화 끝
-   112.94s  user  발화 시작: Yes, directions from XiangCai Restaurant to the park, please
-   112.94s  agent 발화 끝
-   116.36s  <ret> 발화 (turn16 첫 프레임)
-   116.50s  agent 발화 시작: <ret> [curious] From XiangCai Restaurant to Zhuzhou Central 
-   116.50s  user  발화 끝
-   117.02s  ⚡SPAN 주입 [d'=0.66s / d_lead=10.30s]: (tool result) The driving distance from XiangCai Restaurant to Zhuzhou
-   126.81s  user  발화 시작: That would be fantastic, yes.
-   126.81s  agent 발화 끝
-   128.29s  <ret> 발화 (turn18 첫 프레임)
-   128.79s  agent 발화 시작: <ret> I've just sent those directions to your phone. I hope 
-   128.79s  user  발화 끝
-   129.77s  ⚡SPAN 주입 [d'=1.48s / d_lead=7.93s]: (tool result) Directions sent to user's phone.
-   136.71s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling really stuck in my career. I've been a teacher f
+     6.21s  user  발화 시작: …but I'm burned out.
+     6.21s  user  발화 끝
+     7.98s  agent 발화 시작: Right.
+     7.98s  user  발화 끝
+     8.43s  agent 발화 시작: It's completely understandable to feel that way after a deca
+     8.43s  agent 발화 끝
+    16.85s  user  발화 시작: Yeah.
+    16.85s  agent 발화 끝
+    17.30s  user  발화 시작: Like what, exactly? It feels like all I know is lesson plann
+    17.30s  user  발화 끝
+    23.78s  <ret> 발화 (turn6 첫 프레임)
+    23.95s  agent 발화 시작: <ret> You’ve built a really strong skillset, actually—commun
+    23.95s  user  발화 끝
+    24.32s  ⚡SPAN 주입 [d'=0.54s / d_lead=7.54s]: Transferable skills from teaching include communication, patience, org
+    31.49s  user  발화 시작: That's... good to hear. I was thinking about something compl
+    31.49s  agent 발화 끝
+    36.81s  agent 발화 시작: [curious] Oh? What kind of different direction are you consi
+    36.81s  user  발화 끝
+    41.25s  user  발화 시작: Right.
+    41.25s  agent 발화 끝
+    41.69s  user  발화 시작: I've always been interested in coding. Is that a realistic s
+    41.69s  user  발화 끝
+    48.35s  agent 발화 시작: Right.
+    48.35s  user  발화 끝
+    48.61s  <ret> 발화 (turn12 첫 프레임)
+    48.79s  agent 발화 시작: <ret> Coding is absolutely a possibility! It will take some 
+    48.79s  agent 발화 끝
+    49.39s  ⚡SPAN 주입 [d'=0.79s / d_lead=7.54s]: A career change to coding from teaching is feasible, requiring focused
+    56.33s  user  발화 시작: Mhm.
+    56.33s  agent 발화 끝
+    56.77s  user  발화 시작: Are there any coding bootcamps you’d recommend, maybe ones w
+    56.77s  user  발화 끝
+    62.54s  agent 발화 시작: Yeah, yeah.
+    62.54s  user  발화 끝
+    63.22s  <ret> 발화 (turn16 첫 프레임)
+    63.43s  agent 발화 시작: <ret> I found some highly-rated options—General Assembly and
+    63.43s  agent 발화 끝
+    64.00s  ⚡SPAN 주입 [d'=0.79s / d_lead=8.43s]: (tool result) General Assembly and Flatiron School consistently rank a
+    71.85s  user  발화 시작: That’s helpful. What’s the average salary for a junior web d
+    71.85s  agent 발화 끝
+    77.34s  <ret> 발화 (turn18 첫 프레임)
+    77.62s  agent 발화 시작: <ret> A junior web developer in Seattle can expect to earn a
+    77.62s  user  발화 끝
+    78.09s  ⚡SPAN 주입 [d'=0.75s / d_lead=9.76s]: (tool result) The average salary for a junior web developer in Seattle
+    87.38s  user  발화 시작: That's… actually not bad. I'm worried about the time commitm
+    87.38s  agent 발화 끝
+    92.26s  agent 발화 시작: It's smart to consider the time investment—
+    92.26s  user  발화 끝
+    95.36s  user  발화 시작: …do they offer part-time options at those bootcamps?
+    95.36s  agent 발화 끝
+    98.91s  agent 발화 시작: [surprised] Yes, both General Assembly and Flatiron School d
+    98.91s  user  발화 끝
+   111.77s  user  발화 시작: Okay, that’s a relief. Can you send me links to their websit
+   111.77s  agent 발화 끝
+   116.82s  <ret> 발화 (turn24 첫 프레임)
+   117.03s  ⚡SPAN 주입 [d'=0.90s / d_lead=13.75s]: (tool result) The official website for General Assembly is generalasse
+   117.09s  agent 발화 시작: <ret> General Assembly's website is generalassemb.ly. You'll
+   117.09s  user  발화 끝
+   130.84s  agent 발화 끝
