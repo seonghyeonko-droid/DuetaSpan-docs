@@ -4,70 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Robin",
+#     "name": "Anton",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-11-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
-#     },
-#     {
-#       "date": "2025-10-27",
+#       "date": "2026-05-11",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-11",
+#       "date": "2026-04-23",
 #       "category": "home",
-#       "text": "User's home address is 815 Elm Street."
+#       "text": "User's home address is 850 Birch Road."
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-09-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-09-21",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-03-27",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling…lost, lately. Ju | S2 …like I’m missing her guidance so  | S3 Kansas…didn’t that movie feature a | S4 1982… wow, that feels like a lifet
 
-     0.00s  user  발화 시작: I’m trying to remember a movie… it was Korean, a thriller, a
-     4.92s  agent 발화 시작: It sounds like you’re recalling a significant film. Perhaps 
-     4.92s  user  발화 끝
-    10.19s  user  발화 시작: Yeah.
-    10.19s  agent 발화 끝
-    10.54s  user  발화 시작: Um, yeah, I think it had zombies? And it was… uh… pretty rec
-    10.54s  user  발화 끝
-    15.41s  <ret> 발화 (turn4 첫 프레임)
-    15.81s  agent 발화 시작: <ret> That sounds like *Train to Busan*, a 2016 film directe
-    15.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: Train to Busan is a 2016 South Korean zombie thriller film directed by
-    15.81s  user  발화 끝
-    23.54s  user  발화 시작: Wow.
-    23.54s  agent 발화 끝
-    23.90s  user  발화 시작: That’s it! Do you know if Kim Yool-ho was in that one?
-    23.90s  user  발화 끝
-    28.03s  <ret> 발화 (turn7 첫 프레임)
-    28.11s  agent 발화 시작: <ret> Yes, Kim Yool-ho did indeed star in *Train to Busan* w
-    28.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.33s]: Kim Yool-ho starred in the 2016 film Train to Busan, alongside Gong Yo
-    28.11s  user  발화 끝
-    34.44s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been feeling…lost, lately. Just adrift.
+     2.44s  agent 발화 시작: It’s understandable to feel that way when life shifts unexpe
+     2.44s  user  발화 끝
+    10.56s  user  발화 시작: I guess so. My grandmother passed away last month.
+    10.56s  agent 발화 끝
+    14.21s  agent 발화 시작: Losing someone close is profoundly difficult. Grief isn't a 
+    14.21s  user  발화 끝
+    22.34s  user  발화 시작: It’s just…she always knew what to say. I feel…
+    22.34s  agent 발화 끝
+    25.99s  user  발화 시작: …like I’m missing her guidance so much.
+    25.99s  user  발화 끝
+    28.83s  agent 발화 시작: That’s a very common feeling. Her wisdom and presence shaped
+    28.83s  user  발화 끝
+    36.14s  user  발화 시작: Right.
+    36.14s  agent 발화 끝
+    36.55s  user  발화 시작: She loved old movies. I was trying to remember one she alway
+    36.55s  user  발화 끝
+    44.19s  <ret> 발화 (turn9 첫 프레임)
+    44.27s  agent 발화 시작: <ret> She likely meant *The Day After*, a film originally ai
+    44.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.34s]: The Day After is a 1983 American made-for-television post-apocalyptic 
+    44.27s  user  발화 끝
+    53.61s  user  발화 시작: Yeah.
+    53.61s  agent 발화 끝
+    54.01s  agent 발화 시작: It was quite impactful at the time, sparking a lot of conver
+    54.01s  user  발화 끝
+    58.89s  user  발화 시작: Kansas…didn’t that movie feature a highway? I seem to recall
+    58.89s  agent 발화 끝
+    64.74s  <ret> 발화 (turn13 첫 프레임)
+    64.98s  agent 발화 시작: <ret> Yes, the film prominently features scenes along Kansas
+    64.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: The film features scenes shot along Kansas State Highway K-10, which i
+    64.98s  user  발화 끝
+    71.88s  user  발화 시작: Wow.
+    71.88s  agent 발화 끝
+    72.29s  user  발화 시작: That's it! K-10. She always said it was a really powerful fi
+    72.29s  user  발화 끝
+    80.00s  agent 발화 시작: Yeah.
+    80.00s  user  발화 끝
+    80.33s  <ret> 발화 (turn17 첫 프레임)
+    80.41s  agent 발화 시작: <ret> The film was originally made in 1982, but it was relea
+    80.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: The Day After was released in 1983, but the film was originally made i
+    80.41s  agent 발화 끝
+    85.69s  user  발화 시작: Really?
+    85.69s  agent 발화 끝
+    86.10s  user  발화 시작: 1982… wow, that feels like a lifetime ago.
+    86.10s  user  발화 끝
+    89.34s  agent 발화 시작: Time can feel very different when we’re reflecting on memori
+    89.34s  user  발화 끝
+    97.47s  user  발화 시작: I suppose you’re right. It's good to remember.
+    97.47s  agent 발화 끝
+   100.72s  agent 발화 시작: Remembering is a beautiful way to honor her legacy and keep 
+   100.72s  user  발화 끝
+   109.65s  agent 발화 끝

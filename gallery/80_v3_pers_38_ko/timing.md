@@ -4,132 +4,90 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "주진",
+#     "name": "진린",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-09",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-11",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-15",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2025-07-04",
+#       "date": "2026-06-10",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-06-28",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-05-21",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-01",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-09-01",
+#       "category": "home",
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#     },
+#     {
+#       "date": "2025-08-21",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-07",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-10",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-29",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 잠을 잘 못 자는 사람들을 위한 상담도 해주시는 건가요? | S2 따뜻한 물에 몸을 담그는 건 좋네요. 근데 음악은… 잘 모르겠 | S3 사실 시험 공부하다가 너무 지쳐서 잠깐 낮잠을 자려고 하는데… | S4 오늘 말씀해주신 것들… 정말 도움이 많이 됐어요. 감사합니다.
 
-     0.00s  agent 발화 시작: 주진님, 안녕하세요. 저는 둔이라고 해요. 편안한 휴식을 도와드리는 에이전트랍니다.
-     4.84s  user  발화 시작: 혹시 잠을 잘 못 자는 사람들을 위한 상담도 해주시는 건가요?
-     4.84s  agent 발화 끝
-    10.21s  agent 발화 시작: 네, 주진님. 잠들기 어려움이나 수면의 질에 대한 고민은 누구에게든 찾아올 수 있죠. 어떤 점이 가장 힘드신
-    10.21s  user  발화 끝
-    18.81s  user  발화 시작: 그렇죠.
-    18.81s  agent 발화 끝
-    19.34s  user  발화 시작: 음… 요즘 계속 스트레스를 받아서 그런지 잠들기가 너무 어려워요.
-    19.34s  user  발화 끝
-    24.18s  agent 발화 시작: 스트레스 때문에 잠자리에 들기 힘든 건 흔한 일이에요. 혹시 스트레스의 원인이 무엇인지 말씀해 주실 수 있을
-    24.18s  user  발화 끝
-    32.78s  user  발화 시작: 사실 다음 주 시험 때문에 너무 불안해요. 잘 봐야 하는데…
-    32.78s  agent 발화 끝
-    38.15s  agent 발화 시작: 시험 때문에 불안하신 마음이 크시군요. 시험 준비는 잘 되어 가고 있으신가요?
-    38.15s  user  발화 끝
-    44.06s  user  발화 시작: 아.
-    44.06s  agent 발화 끝
-    44.60s  user  발화 시작: 그럭저럭… 그래도 혹시나 하는 마음에 계속 신경 쓰여요.
-    44.60s  user  발화 끝
-    48.90s  agent 발화 시작: 완벽하게 준비해도 불안한 건 당연해요. 시험 결과에 너무 얽매이지 않으셨으면 좋겠어요.
-    48.90s  user  발화 끝
-    54.81s  user  발화 시작: 네.
-    54.81s  agent 발화 끝
-    55.34s  agent 발화 시작: 불안감을 조금이라도 해소할 수 있는 방법을 찾아보는 건 어떨까요? 따뜻한 물에 몸을 담그거나, 좋아하는 음악
-    55.34s  user  발화 끝
-    69.85s  user  발화 시작: 따뜻한 물에 몸을 담그는 건 좋네요. 근데 음악은… 잘 모르겠어요.
-    69.85s  agent 발화 끝
-    75.22s  agent 발화 시작: 어떤 종류의 음악을 좋아하시나요? 편안하게 들을 수 있는 잔잔한 음악도 좋고, 주진님에게 익숙한 음악도 괜찮
-    75.22s  user  발화 끝
-    83.28s  user  발화 시작: 저는 클래식을 좋아해요. 쇼팽이나 드뷔시 같은…
-    83.28s  agent 발화 끝
-    86.51s  agent 발화 시작: 아, 쇼팽이나 드뷔시! 정말 아름다운 음악이죠. 잠들기 전에 쇼팽의 녹턴을 듣는 건 어떠세요?
-    86.51s  user  발화 끝
-    93.49s  user  발화 시작: 맞아요.
-    93.49s  agent 발화 끝
-    94.03s  user  발화 시작: 녹턴… 좋은 생각이에요. 한번 시도해 볼게요.
-    94.03s  user  발화 끝
-    97.25s  agent 발화 시작: 녹턴은 마음을 차분하게 만들어 주는 효과가 있답니다. 시험 준비도 중요하지만, 잠시라도 휴식을 취하는 것도 
-    97.25s  user  발화 끝
-   105.85s  user  발화 시작: 네.
-   105.85s  agent 발화 끝
-   106.39s  user  발화 시작: 사실 시험 공부하다가 너무 지쳐서 잠깐 낮잠을 자려고 하는데… 괜찮을까요?
-   106.39s  user  발화 끝
-   111.76s  agent 발화 시작: 낮잠은 피로를 회복하는 데 도움이 될 수 있지만, 너무 오래 자면 밤에 잠들기가 더 어려워질 수도 있어요. 
-   111.76s  user  발화 끝
-   125.73s  user  발화 시작: 아.
-   125.73s  agent 발화 끝
-   126.27s  user  발화 시작: 이십분… 알겠습니다. 너무 오래 자지 않도록 주의해야겠네요.
-   126.27s  user  발화 끝
-   130.03s  agent 발화 시작: 네, 주진님. 짧은 낮잠은 집중력을 높여주는 효과도 있답니다. 하지만 밤에는 꼭 충분한 수면을 취하세요.
-   130.03s  user  발화 끝
-   137.55s  user  발화 시작: 네.
-   137.55s  agent 발화 끝
-   138.09s  user  발화 시작: 혹시 잠들기 전에 마시는 차도 추천해 주실 수 있나요?
-   138.09s  user  발화 끝
-   142.92s  agent 발화 시작: 캐모마일이나 라벤더 차는 심신을 안정시켜 주는 효과가 있어서 잠들기 전에 마시면 도움이 될 수 있어요.
-   142.92s  user  발화 끝
-   150.98s  user  발화 시작: 캐모마일 차… 전에 한 번 마셔봤는데 괜찮았던 것 같아요.
-   150.98s  agent 발화 끝
-   155.82s  agent 발화 시작: 캐모마일 차는 부드러운 맛과 향으로 편안함을 느끼게 해준답니다. 주진님에게 잘 맞는 차를 찾아서 꾸준히 마시
-   155.82s  user  발화 끝
-   165.49s  user  발화 시작: 오늘 말씀해주신 것들… 정말 도움이 많이 됐어요. 감사합니다.
-   165.49s  agent 발화 끝
-   169.79s  agent 발화 시작: 도움이 되었다니 다행이에요, 주진님. 언제든지 편하게 이야기해 주세요. 둔은 항상 주진님의 편안한 휴식을 응
-   169.79s  user  발화 끝
-   177.31s  user  발화 시작: 네.
-   177.31s  agent 발화 끝
-   177.85s  user  발화 시작: 혹시 제가 앞으로도 잠을 잘 못 자면 다시 찾아와도 될까요?
-   177.85s  user  발화 끝
-   183.22s  agent 발화 시작: 언제든 편하게 찾아와 주세요. 주진님의 편안한 잠자리를 위해 항상 곁에 있을게요.
-   183.22s  user  발화 끝
-   189.13s  user  발화 시작: 알겠습니다. 둔님, 정말 감사했어요.
-   189.13s  agent 발화 끝
-   191.28s  agent 발화 시작: 천만에요, 주진님. 오늘 밤 편안한 꿈 꾸시길 바랍니다.
-   191.28s  user  발화 끝
-   195.58s  agent 발화 끝
+     0.00s  agent 발화 시작: 진린 씨, 안녕하세요. 저는 오란이라고 해요. 편안하게 스트레스 해소와 마음 챙김을 도와드리는 상담가랍니다.
+     7.23s  user  발화 시작: 음, 오란… 이름이 예쁘네요. 혹시 저한테 어떤 도움을 줄 수 있는 거예요?
+     7.23s  agent 발화 끝
+    13.91s  agent 발화 시작: 진린 씨, 어떤 점이 가장 힘든지 말씀해 주시면 좋을 것 같아요. 지금 느끼시는 감정을 편하게 이야기해 주세
+    13.91s  user  발화 끝
+    23.36s  user  발화 시작: 사실 요즘 회사 일이 너무 많아서… 계속 불안하고 초조하고 그래요. 숨 막히는 기분이랄까.
+    23.36s  agent 발화 끝
+    30.60s  agent 발화 시작: 많이 힘드시겠네요. 숨 막히는 기분이라니, 정말 답답하셨겠어요. 혹시 그 불안함이 구체적으로 어떤 상황에서 
+    30.60s  user  발화 끝
+    42.28s  user  발화 시작: 아.
+    42.28s  agent 발화 끝
+    42.83s  agent 발화 시작: 진린 씨, 괜찮으시다면 잠시 심호흡을 해 보시는 건 어떠세요? 숨을 깊게 들이마시고 천천히 내쉬면서 몸과 마
+    42.83s  user  발화 끝
+    53.40s  agent 발화 끝

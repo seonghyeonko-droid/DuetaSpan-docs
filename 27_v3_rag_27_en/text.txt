@@ -1,61 +1,94 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Thaex, a thoughtful and soft-spoken personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Unaus, a practical and reassuring counselor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Robin",
+    "name": "Anton",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-14",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-10-27",
+      "date": "2026-05-11",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-11",
+      "date": "2026-04-23",
       "category": "home",
-      "text": "User's home address is 815 Elm Street."
+      "text": "User's home address is 850 Birch Road."
+    },
+    {
+      "date": "2026-01-12",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
+    },
+    {
+      "date": "2025-12-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-09-23",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-14",
+      "date": "2026-03-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to remember a movie… it was Korean, a thriller, and really popular.
-[  4.92s][moshi] It sounds like you’re recalling a significant film. Perhaps I can help narrow it down?
-[ 10.19s][user ] «backchannel» Yeah.
-[ 10.54s][user ] Um, yeah, I think it had zombies? And it was… uh… pretty recent, I ⟨ret@15.41s⟩ guess.
-[ 15.81s][moshi] ⟦⚡SPAN@15.81s: Train to Busan is a 2016 South Korean zombie thriller film directed by Yeon Sang-ho, starring Gong Yoo, Jung Y⟧ That sounds like *Train to Busan*, a 2016 film directed by Yeon Sang-ho, and starring Gong Yoo, Jung Yu-mi, and Ma Dong-seok.
-[ 23.54s][user ] «backchannel» Wow.
-[ 23.90s][user ] That’s it! Do you know if Kim Yool-ho was in that one? ⟨ret@28.03s⟩
-[ 28.11s][moshi] ⟦⚡SPAN@28.11s: Kim Yool-ho starred in the 2016 film Train to Busan, alongside Gong Yoo, Jung Yu-mi, and Ma Dong-seok.⟧ Yes, Kim Yool-ho did indeed star in *Train to Busan* with Gong Yoo, Jung Yu-mi, and Ma Dong-seok.
+[  0.00s][user ] I’ve been feeling…lost, lately. Just adrift.
+[  2.44s][moshi] It’s understandable to feel that way when life shifts unexpectedly. Change can be unsettling, but also an opportunity for growth.
+[ 10.56s][user ] I guess so. My grandmother passed away last month.
+[ 14.21s][moshi] Losing someone close is profoundly difficult. Grief isn't a linear process; allow yourself to feel what you need to feel.
+[ 22.34s][user ] It’s just…she always knew what to say. I feel…
+[ 25.99s][user ] …like I’m missing her guidance so much.
+[ 28.83s][moshi] That’s a very common feeling. Her wisdom and presence shaped you, and it’s natural to miss that support.
+[ 36.14s][user ] «backchannel» Right.
+[ 36.55s][user ] She loved old movies. I was trying to remember one she always talked about, something about a nuclear war? ⟨ret@44.19s⟩
+[ 44.27s][moshi] ⟦⚡SPAN@44.27s: The Day After is a 1983 American made-for-television post-apocalyptic drama film depicting the aftermath of a ⟧ She likely meant *The Day After*, a film originally aired in 1983 that portrays the aftermath of a nuclear attack on Lawrence, Kansas.
+[ 53.61s][user ] «backchannel» Yeah.
+[ 54.01s][moshi] It was quite impactful at the time, sparking a lot of conversation.
+[ 58.89s][user ] Kansas…didn’t that movie feature a highway? I seem to recall something about a Kansas ⟨ret@64.74s⟩ highway.
+[ 64.98s][moshi] ⟦⚡SPAN@64.98s: The film features scenes shot along Kansas State Highway K-10, which is prominently shown during the initial a⟧ Yes, the film prominently features scenes along Kansas State Highway K-10, shown during and after the attack.
+[ 71.88s][user ] «backchannel» Wow.
+[ 72.29s][user ] That's it! K-10. She always said it was a really powerful film. What year did it come out originally?
+[ 80.00s][moshi] «backchannel» Yeah.
+[ 80.41s][moshi] ⟨ret@80.33s⟩ ⟦⚡SPAN@80.41s: The Day After was released in 1983, but the film was originally made in 1982.⟧ The film was originally made in 1982, but it was released in 1983.
+[ 85.69s][user ] «backchannel» Really?
+[ 86.10s][user ] 1982… wow, that feels like a lifetime ago.
+[ 89.34s][moshi] Time can feel very different when we’re reflecting on memories. It's a testament to how deeply she touched your life.
+[ 97.47s][user ] I suppose you’re right. It's good to remember.
+[100.72s][moshi] Remembering is a beautiful way to honor her legacy and keep her spirit alive within you. It's okay to cherish those memories.

@@ -1,65 +1,82 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Arunana, a upbeat and supportive counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Naril, a gentle and reflective counselor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Avery",
+    "name": "Léa",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-02",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
-    },
-    {
-      "date": "2026-05-16",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2026-04-06",
+      "date": "2026-04-20",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2026-03-06",
-      "category": "home",
-      "text": "User's home address is 374 Oak Avenue."
-    },
-    {
-      "date": "2025-12-18",
+      "date": "2025-11-11",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-26",
-      "title": "Researching a used car",
+      "date": "2026-04-28",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-01",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading the Odyssey, and I got curious. How old was Telemachus when the story ⟨ret@6.30s⟩ began?
-[  6.54s][moshi] ⟦⚡SPAN@6.54s: Telemachus is twenty years old at the beginning of Homer’s Odyssey, having been born shortly before Odysseus d⟧ Telemachus is actually twenty years old when the Odyssey begins, born just before his father left for Troy. It's a pivotal age for him, really.
-[ 16.17s][user ] That’s good to know. It feels like he’s younger, ⟨ret@19.77s⟩ somehow.
-[ 20.01s][moshi] ⟦⚡SPAN IRRELEVANT@20.01s: The current temperature in Reykjavik, Iceland is 8.2°C, with a humidity of 88% and wind speeds of 11.2 km/h.⟧ I understand that feeling. It's easy to focus on his emotional journey, and he certainly *acts* younger at times, needing to grow into his role.
-[ 29.64s][moshi] It's wonderful you're exploring such classic literature. Sometimes we project our own experiences onto characters, which can influence how we perceive their age.
-[ 38.49s][user ] I think so. Maybe I’ll reread it with that in mind.
-[ 42.72s][moshi] That sounds like a lovely idea! Re-reading with a fresh perspective can unlock so much. It’s like revisiting a conversation with a friend.
+[  0.00s][user ] I was just wondering, what's the fastest motorcycle you can actually ⟨ret@4.71s⟩ buy?
+[  4.95s][moshi] ⟦⚡SPAN@4.95s: The Kawasaki Ninja H2R is generally considered the fastest production motorcycle, capable of reaching speeds o⟧ The Kawasaki Ninja H2R is typically considered the fastest production motorcycle, reaching over 249 miles per hour. It's quite a machine!
+[ 13.62s][user ] «backchannel» Oh.
+[ 14.03s][user ] Wow, that’s…fast. Is it street legal, ⟨ret@16.68s⟩ though?
+[ 16.92s][moshi] ⟦⚡SPAN IRRELEVANT@16.92s: The average high temperature in Reykjavik, Iceland in December is 3.2°C, with an average low of -0.8°C and 160⟧ That's a good point to consider. Generally, the Ninja H2R is not street legal in most places due to its extreme power and design. It’s really built for the track.
+[ 29.30s][moshi] It sounds like you're thinking about practical use. Sometimes, prioritizing speed means compromising on everyday convenience.
+[ 35.90s][user ] Yeah, I guess so. What about something I *could* ride on the road?
+[ 41.27s][moshi] «backchannel» Yeah.
+[ 41.68s][moshi] ⟨ret@41.36s⟩ ⟦⚡SPAN@41.68s: The Ducati Panigale V4 R is a street-legal production motorcycle with a top speed of 186 mph, known for its pe⟧ If you're looking for something street legal, the Ducati Panigale V4 R is a strong contender, with a top speed of 186 miles per hour. It’s known for its handling too.
+[ 54.47s][user ] 186 mph is still pretty incredible.
+[ 56.95s][moshi] It certainly is. Finding a balance between speed and practicality is often key when choosing a motorcycle, don’t you think?
+[ 65.20s][user ] I do, actually. Thanks, that was helpful.
+[ 68.09s][moshi] You’re very welcome. It's good to explore all the options and find what truly suits your needs and preferences.

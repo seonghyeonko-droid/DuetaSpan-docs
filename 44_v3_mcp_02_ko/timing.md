@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "연희",
+#     "name": "우린",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,121 +18,145 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
+#       "date": "2026-04-05",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-06-07",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2025-08-09",
+#       "date": "2026-04-04",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-07-19",
+#       "date": "2026-01-07",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-11-18",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in December."
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-01",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-19",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 주식 지금 가격이 얼마야? | S2 와, 진짜 고마워. 아… | S3 알았어. 아, 내일 날씨 어때? | S4 어… 그렇지, 그렇지. 아, 밥 뭐 먹을까?
+# EXAMINER(FDB-v2) 단계: S1 음… 서버 A랑 서버 B 로그 파일 좀 읽어줄 수 있어? | S2 열아홉시로 예매해줘. | S3 오, 괜찮겠다. 그쪽으로 가는 길 좀 알려줘. | S4 오, 좋아 보이네. 거기는 몇 시까지 영업해?
 
-     0.00s  user  발화 시작: 애플 주식 지금 가격이 얼마야?
-     1.95s  <ret> 발화 (turn1 첫 프레임)
-     2.35s  agent 발화 시작: <ret> 애플 주식은 이천이십육년 칠월 구일에 백구십삼 점 이 이달러에 마감했습니다.
-     2.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: (tool result) Apple Inc. (AAPL) closed at 193.22 USD on July 9, 2026.
-     2.35s  user  발화 끝
-     7.05s  agent 발화 시작: 혹시 투자 계획 세우시는 데 도움이 필요하시면 말씀해주세요.
-     7.05s  agent 발화 끝
-    10.81s  user  발화 시작: 맞아.
-    10.81s  agent 발화 끝
-    11.28s  user  발화 시작: 음… 그럼 오늘 아침 아홉시에 알람 맞춰줄래?
-    11.28s  user  발화 끝
-    14.41s  <ret> 발화 (turn5 첫 프레임)
-    14.57s  agent 발화 시작: <ret> 이천이십육년 칠월 십일일 아침 아홉시에 알람이 설정되었습니다. 아이 디는 팔 육 칠 오 삼 공 구
-    14.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.52s]: (tool result) Alarm set for 09:00 on July 11, 2026. ID: 8675309.
-    14.57s  user  발화 끝
-    22.09s  agent 발화 시작: 기분 좋게 하루 시작하시길 바랍니다.
-    22.09s  agent 발화 끝
-    24.44s  user  발화 시작: 아, 고마워. 근데 이번 주 토요일에 영화 볼만한 거 있어?
-    24.44s  agent 발화 끝
-    28.74s  <ret> 발화 (turn8 첫 프레임)
-    29.14s  agent 발화 시작: <ret> 이번 주 토요일에 '인사이드 아웃 이'는 오후 두시, 다섯시, 여덟시에, '배드 보이 라이드 오어
-    29.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) Showing 'Inside Out 2' at 14:00, 17:00, 20:00, 'Bad Boys
-    29.14s  user  발화 끝
-    39.95s  user  발화 시작: 음.
-    39.95s  agent 발화 끝
-    40.42s  user  발화 시작: '인사이드 아웃 이' 오후 다섯시로 예매해 줘.
-    40.42s  user  발화 끝
-    43.31s  <ret> 발화 (turn11 첫 프레임)
-    43.71s  agent 발화 시작: <ret> 이천이십육년 칠월 십일일 오후 다섯시 '인사이드 아웃 이' 티켓 두장이 에이5, 에이 육 좌석으로
-    43.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.75s]: (tool result) 2 tickets for 'Inside Out 2' at 17:00 on July 11, 2026, 
-    43.71s  user  발화 끝
-    55.46s  agent 발화 시작: 즐거운 시간 보내세요.
-    55.46s  agent 발화 끝
-    56.87s  user  발화 시작: 와, 진짜 고마워. 아…
-    56.87s  agent 발화 끝
-    58.75s  user  발화 시작: …서울에서 부산까지 케이 티 엑스 시간 좀 알려줘.
-    58.75s  user  발화 끝
-    62.35s  <ret> 발화 (turn15 첫 프레임)
-    62.51s  agent 발화 시작: <ret> 서울에서 부산까지 케이 티 엑스는 매 삼십분 간격으로, 아침 여섯시부터 출발합니다. 소요 시간은 
-    62.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: (tool result) Trains depart Seoul for Busan every 30 minutes, starting
-    62.51s  user  발화 끝
-    69.56s  agent 발화 시작: 편안한 여행 되시길 바랍니다.
-    69.56s  agent 발화 끝
-    71.44s  user  발화 시작: 그럼, 다음 주 화요일 오후 두시에 부산에서 출발하는 케이 티 엑스 티켓 예매해 줘.
-    71.44s  agent 발화 끝
-    77.94s  <ret> 발화 (turn18 첫 프레임)
-    78.02s  agent 발화 시작: <ret> 이천이십육년 칠월 십오일 오후 두시 부산에서 서울로 가는 케이 티 엑스 티켓 한장이 비7 좌석으로
-    78.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.22s]: (tool result) 1 ticket Busan to Seoul, July 15, 2026, 14:00. Seat B7. 
-    78.02s  user  발화 끝
-    90.24s  agent 발화 시작: 다음 여행도 즐겁게 다녀오세요.
-    90.24s  agent 발화 끝
-    92.12s  user  발화 시작: 알았어. 아, 내일 날씨 어때?
-    92.12s  agent 발화 끝
-    94.07s  <ret> 발화 (turn21 첫 프레임)
-    94.47s  agent 발화 시작: <ret> 내일 서울의 날씨는 섭씨 이십팔 점 오도, 습도 육십오퍼센트, 풍속은 시속 사 점 이킬로미터입니다
-    94.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) The weather in Seoul tomorrow is 28.5°C, humidity 65%, w
-    94.47s  user  발화 끝
-   101.05s  agent 발화 시작: 시원하게 옷차림 신경 쓰세요.
-   101.05s  agent 발화 끝
-   102.93s  user  발화 시작: 그럼, 내일 아침 여덟시에 깨워줘.
-   102.93s  agent 발화 끝
-   105.20s  <ret> 발화 (turn24 첫 프레임)
-   105.28s  agent 발화 시작: <ret> 이천이십육년 칠월 십일일 아침 여덟시에 알람이 설정되었습니다. 아이 디는 일 이 삼 사 오 육 칠
-   105.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.52s]: (tool result) Alarm set for 08:00 on July 11, 2026. ID: 1234567.
-   105.28s  user  발화 끝
-   112.80s  agent 발화 시작: 상쾌한 아침 되세요.
-   112.80s  agent 발화 끝
-   114.21s  user  발화 시작: 아, 그리고, 그… 지난달에 내가 뭐라고 메모했었지?
-   114.21s  agent 발화 끝
-   117.10s  <ret> 발화 (turn27 첫 프레임)
-   117.50s  agent 발화 시작: <ret> 이천이십육년 유월 십일에 “다음 달 부산 여행 준비 시작”이라고 메모하셨습니다.
-   117.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: [2026-06-10] 다음 달 부산 여행 준비 시작.
-   117.50s  user  발화 끝
-   122.20s  user  발화 시작: 어… 그렇지, 그렇지. 아, 밥 뭐 먹을까?
-   122.20s  agent 발화 끝
-   125.49s  agent 발화 시작: 맛있는 식사 하세요. 주변에 맛집을 찾아드릴까요?
-   125.49s  user  발화 끝
-   128.31s  user  발화 시작: 아니, 그냥…
-   128.31s  agent 발화 끝
-   129.25s  agent 발화 시작: 혹시 특별히 드시고 싶은 게 있으신가요?
-   129.25s  user  발화 끝
-   132.07s  user  발화 시작: 아니야, 그냥… 그냥 생각해봤어.
-   132.07s  agent 발화 끝
-   133.94s  user  발화 끝
+     0.00s  user  발화 시작: 음… 서버 A랑 서버 B 로그 파일 좀 읽어줄 수 있어?
+     4.69s  <ret> 발화 (turn1 첫 프레임)
+     5.09s  agent 발화 시작: <ret> 서버 A 로그에는 이천이십육년 칠월 구일 스물세시 오십팔분 십이초에 연결 시간 초과 오류가, 서버
+     5.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.50s]: (tool result) {"server A": "2026-07-09 23:58:12 - Error: Connection ti
+     5.09s  user  발화 끝
+    17.59s  user  발화 시작: 정말요?
+    17.59s  agent 발화 끝
+    18.05s  user  발화 시작: 아, 고마워. 혹시 서울 날씨는 어때?
+    18.05s  user  발화 끝
+    20.43s  <ret> 발화 (turn4 첫 프레임)
+    20.83s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십팔 점 오도, 습도는 칠십팔퍼센트, 풍속은 초속 삼 점 이미터, 날씨
+    20.83s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.41s]: (tool result) {"temperature": 28.5, "humidity": 78, "wind speed": 3.2,
+    20.83s  user  발화 끝
+    28.23s  user  발화 시작: 진짜요?
+    28.23s  agent 발화 끝
+    28.70s  user  발화 시작: 흐리다고? 아, 그럼 오늘 저녁에 영화 보러 가기엔 좀 그렇겠네.
+    28.70s  user  발화 끝
+    33.32s  agent 발화 시작: 예.
+    33.32s  user  발화 끝
+    33.79s  agent 발화 시작: 날씨가 흐리니 영화 보기에 조금 아쉽긴 하네요. 다른 계획을 세워 보실까요?
+    33.79s  agent 발화 끝
+    38.88s  user  발화 시작: 음… 다른 건 아니고, 그냥 영화 예매 좀 해줘. '아메리칸 그래피티'로.
+    38.88s  agent 발화 끝
+    43.57s  <ret> 발화 (turn10 첫 프레임)
+    43.97s  agent 발화 시작: <ret> '아메리칸 그래피티' 상영 시간은 씨 지 브이 강남점에서 열아홉시와 스물한시 삼십분입니다.
+    43.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) {"movie title": "American Graffiti", "showtimes": 19:00,
+    43.97s  user  발화 끝
+    49.06s  user  발화 시작: 그렇군요.
+    49.06s  agent 발화 끝
+    49.52s  user  발화 시작: 열아홉시로 예매해줘.
+    49.52s  user  발화 끝
+    50.05s  <ret> 발화 (turn13 첫 프레임)
+    50.45s  agent 발화 시작: <ret> '아메리칸 그래피티' 열아홉시 상영, 씨 지 브이 강남점 에이 십, 에이 십일석으로 예매 완료되었
+    50.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.11s]: (tool result) {"confirmation id": "AB1234CD", "movie title": "American
+    50.45s  user  발화 끝
+    61.56s  user  발화 시작: 와, 진짜 고마워. 혹시 그 근처에 맛있는 식당도 알아봐 줄 수 있어?
+    61.56s  agent 발화 끝
+    66.71s  <ret> 발화 (turn15 첫 프레임)
+    67.11s  agent 발화 시작: <ret> 씨 지 브이 강남점에서 영 점 오킬로미터 거리에 미슐랭 가이드에 소개된 프랑스 요리 전문점 '미슐
+    67.11s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.18s]: (tool result) {"restaurant name": "미슐랭 가이드 서울", "cuisine": "프랑스 요리", "
+    67.11s  user  발화 끝
+    77.29s  user  발화 시작: 프랑스 요리는 좀 부담스러운데… 좀 더 저렴한 곳은 없을까?
+    77.29s  agent 발화 끝
+    81.14s  <ret> 발화 (turn17 첫 프레임)
+    81.46s  agent 발화 시작: <ret> 씨 지 브이 강남점에서 영 점 칠킬로미터 거리에 저렴한 가격대의 일식 돈까스 전문점 '강남 돈까스
+    81.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.33s]: (tool result) {"restaurant name": "강남 돈까스", "cuisine": "일식", "distance
+    81.46s  user  발화 끝
+    89.79s  user  발화 시작: 네.
+    89.79s  agent 발화 끝
+    90.25s  user  발화 시작: 오, 괜찮겠다. 그쪽으로 가는 길 좀 알려줘.
+    90.25s  user  발화 끝
+    93.41s  <ret> 발화 (turn20 첫 프레임)
+    93.49s  agent 발화 시작: <ret> 씨 지 브이 강남점에서 강남 돈까스까지 도보로 약 십분이 걸립니다. 직진하시다가 첫 번째 사거리에
+    93.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) {"directions": "CGV 강남점에서 강남 돈까스까지 도보로 약 10분 소요됩니다. 직진 후
+    93.49s  user  발화 끝
+   100.90s  user  발화 시작: 네.
+   100.90s  agent 발화 끝
+   101.36s  user  발화 시작: 네, 알겠어요. 아, 그런데 혹시… 저번에 제가 얘기했던 거 기억해?
+   101.36s  user  발화 끝
+   105.99s  agent 발화 시작: 이천이십육년 칠월 팔일에 말씀하셨던 내용이 기억납니다.
+   105.99s  user  발화 끝
+   108.77s  user  발화 시작: 와.
+   108.77s  agent 발화 끝
+   109.23s  user  발화 시작: 맞아, 그 때…
+   109.23s  user  발화 끝
+   110.22s  <ret> 발화 (turn26 첫 프레임)
+   110.62s  agent 발화 시작: <ret> 이천이십육년 칠월 팔일에 '엄마 생신 선물 뭐 드릴까?'라고 말씀하셨습니다.
+   110.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: [2026-07-08] 엄마 생신 선물 뭐 드릴까?
+   110.62s  user  발화 끝
+   114.78s  user  발화 시작: 아, 맞아. 혹시 엄마가 좋아할 만한 꽃집 근처에 있는 거 알아봐 줄 수 있어?
+   114.78s  agent 발화 끝
+   120.86s  <ret> 발화 (turn28 첫 프레임)
+   121.26s  agent 발화 시작: <ret> 강남 돈까스 근처 영 점 삼킬로미터 거리에 평점 사 점 이점의 꽃집 '플라워 갤러리'가 있습니다.
+   121.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.94s]: (tool result) {"place name": "플라워 갤러리", "distance": "0.3km", "rating":
+   121.26s  user  발화 끝
+   128.20s  user  발화 시작: 오, 좋아 보이네. 거기는 몇 시까지 영업해?
+   128.20s  agent 발화 끝
+   131.20s  <ret> 발화 (turn30 첫 프레임)
+   131.44s  agent 발화 시작: <ret> '플라워 갤러리'는 매일 오전 열시부터 밤 열시까지 영업합니다.
+   131.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) {"opening hours": "10:00 - 22:00"}
+   131.44s  user  발화 끝
+   135.15s  user  발화 시작: 알았어. 저녁 식사 후에 꽃 사서 가야겠다.
+   135.15s  agent 발화 끝
+   138.39s  agent 발화 시작: 저녁 식사 후에 꽃을 사가시는군요. 좋은 선물이 되길 바랍니다.
+   138.39s  user  발화 끝
+   142.55s  user  발화 시작: 고마워, 프로이아. 덕분에 오늘 계획 잘 세운 것 같아.
+   142.55s  agent 발화 끝
+   146.72s  agent 발화 시작: 도움이 되었다니 기쁩니다. 즐거운 시간 보내세요.
+   146.72s  user  발화 끝
+   149.49s  agent 발화 끝

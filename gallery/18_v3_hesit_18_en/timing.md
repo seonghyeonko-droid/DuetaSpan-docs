@@ -4,48 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Quinn",
+#     "name": "Oliver",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "German",
+#     "gender": "male",
 #     "age_range": "50s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-06",
-#       "category": "home",
-#       "text": "User's home address is 154 Elm Street."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-03-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
-#     },
-#     {
-#       "date": "2026-01-01",
+#       "date": "2026-02-21",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-07-04",
+#       "date": "2026-02-17",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-09-22",
+#       "category": "home",
+#       "text": "User's home address is 281 Maple Drive."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
+#       "date": "2025-06-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -55,93 +55,123 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, where does the te | S2 Welll… that’s surprising. I always | S3 Those are all pretty well-known br | S4 Right, nothing is guaranteed. What
+# EXAMINER(FDB-v2) 단계: S1 Hmm, I was wondering… who does Gab | S2 Okay, good to know. Um, what about | S3 Oh, perfect! I have Hulu. Okay, ne | S4 Okay, that's something to consider
 
-     0.00s  user  발화 시작: I was wondering, where does the term “blue chip” actually co
-     4.56s  <ret> 발화 (turn1 첫 프레임)
-     4.80s  agent 발화 시작: <ret> It’s fascinating to look at the origins of phrases, is
-     4.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.40s]: The term “blue chip” originated in poker, where blue chips had the hig
-     4.80s  user  발화 끝
-    15.20s  user  발화 시작: Mhm.
-    15.20s  agent 발화 끝
-    15.60s  user  발화 시작: Oh, that’s interesting! So, like, the best ones?
-    15.60s  user  발화 끝
-    18.80s  agent 발화 시작: Precisely. It implied something reliable and of high worth, 
-    18.80s  user  발화 끝
-    25.99s  user  발화 시작: Okay.
-    25.99s  agent 발화 끝
-    26.39s  user  발화 시작: Hmm, and when did people start using it for stocks then?
-    26.39s  user  발화 끝
-    30.71s  <ret> 발화 (turn7 첫 프레임)
-    30.79s  agent 발화 시작: <ret> Investors began using it for stocks in the nineteen tw
-    30.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: The term was adopted by investors in the 1920s to describe stocks of e
-    30.79s  user  발화 끝
-    40.39s  user  발화 시작: Yeah.
-    40.39s  agent 발화 끝
-    40.79s  user  발화 시작: So it’s not a really old term, comparatively?
-    40.79s  user  발화 끝
-    43.99s  agent 발화 시작: Not as old as one might think, no. It’s relatively recent in
-    43.99s  user  발화 끝
-    52.39s  user  발화 시작: Welll… that’s surprising. I always thought it was—
-    52.39s  agent 발화 끝
-    55.59s  user  발화 시작: …do they still *use* blue chips, or is it just a saying now?
-    55.59s  user  발화 끝
-    60.71s  <ret> 발화 (turn13 첫 프레임)
-    60.79s  agent 발화 시작: <ret> Though physical blue chips are rarely used nowadays, t
-    60.79s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.20s]: While the physical blue chips are rarely used, the term remains popula
-    60.79s  user  발화 끝
-    67.99s  user  발화 시작: Right.
-    67.99s  agent 발화 끝
-    68.39s  agent 발화 시작: Still very relevant, yes. It’s a shorthand for quality and s
-    68.39s  user  발화 끝
-    75.58s  user  발화 시작: Uh-huh.
-    75.58s  agent 발화 끝
-    75.98s  user  발화 시작: Okay, so if I’m looking at a list of stocks, what qualities 
-    75.98s  user  발화 끝
-    83.10s  <ret> 발화 (turn18 첫 프레임)
-    83.18s  agent 발화 시작: <ret> Blue chip stocks typically exhibit consistent earnings
-    83.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.00s]: Blue chip stocks typically exhibit consistent earnings, dividend payme
-    83.18s  user  발화 끝
-    91.18s  user  발화 시작: Okay.
-    91.18s  agent 발화 끝
-    91.58s  user  발화 시작: Are there any specific companies that are always considered 
-    91.58s  user  발화 끝
-    95.74s  <ret> 발화 (turn21 첫 프레임)
-    95.98s  agent 발화 시작: <ret> Companies like Johnson & Johnson, Procter & Gamble, an
-    95.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: Examples of blue chip stocks include Johnson & Johnson, Procter & Gamb
-    95.98s  user  발화 끝
-   103.58s  user  발화 시작: Those are all pretty well-known brands. Makes sense.
-   103.58s  agent 발화 끝
-   106.78s  agent 발화 시작: They are indeed. Familiarity often reflects that long-term s
-   106.78s  user  발화 끝
-   113.18s  user  발화 시작: I suppose so. Is there a way to *find* a list of current blu
-   113.18s  agent 발화 끝
-   119.18s  <ret> 발화 (turn25 첫 프레임)
-   119.58s  agent 발화 시작: <ret> According to Investopedia, Apple, Microsoft, and Amazo
-   119.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.00s]: (tool result) A recent article by Investopedia lists Apple, Microsoft,
-   119.58s  user  발화 끝
-   125.57s  user  발화 시작: Those are definitely tech giants. Anything outside of tech?
-   125.57s  agent 발화 끝
-   128.93s  <ret> 발화 (turn27 첫 프레임)
-   129.17s  agent 발화 시작: <ret> JPMorgan Chase, Johnson & Johnson, and Walmart are oft
-   129.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.20s]: (tool result) JPMorgan Chase, Johnson & Johnson, and Walmart are often
-   129.17s  user  발화 끝
-   136.37s  user  발화 시작: Mm-hmm.
-   136.37s  agent 발화 끝
-   136.77s  user  발화 시작: That’s a good mix. So, is it a risky investment, generally?
-   136.77s  user  발화 끝
-   141.17s  agent 발화 시작: Generally, they’re considered less risky than other investme
-   141.17s  user  발화 끝
-   147.97s  user  발화 시작: Right, nothing is guaranteed. What about smaller companies, 
-   147.97s  agent 발화 끝
-   153.17s  agent 발화 시작: Companies can earn that status over time with consistent per
-   153.17s  user  발화 끝
-   159.17s  user  발화 시작: That’s encouraging! So it's not just about being big now?
-   159.17s  agent 발화 끝
-   163.17s  agent 발화 시작: Not at all. It’s about sustained success and establishing a 
-   163.17s  user  발화 끝
-   170.37s  user  발화 시작: That makes a lot of sense. Thank you, Broon.
-   170.37s  agent 발화 끝
-   173.97s  agent 발화 시작: You're most welcome. It’s been a pleasure discussing this wi
-   173.97s  user  발화 끝
-   181.56s  agent 발화 끝
+     0.00s  user  발화 시작: Hmm, I was wondering… who does Gabriel Iglesias play in the 
+     5.23s  agent 발화 시작: Okay.
+     5.23s  user  발화 끝
+     5.32s  <ret> 발화 (turn2 첫 프레임)
+     5.64s  agent 발화 시작: <ret> Gabriel Iglesias voices Rufus in the animated film *St
+     5.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.45s]: Gabriel Iglesias voices Rufus in the animated film *Star* released in 
+     5.64s  agent 발화 끝
+    14.09s  user  발화 시작: Right.
+    14.09s  agent 발화 끝
+    14.49s  user  발화 시작: Oh, okay! That makes sense, I guess. What kind of movie is i
+    14.49s  user  발화 끝
+    19.72s  agent 발화 시작: It’s an animated adventure comedy, and it’s pretty family-fr
+    19.72s  user  발화 끝
+    26.57s  user  발화 시작: Uh-huh.
+    26.57s  agent 발화 끝
+    26.97s  user  발화 시작: Hmm, animation… Is it like, a Pixar movie or something?
+    26.97s  user  발화 끝
+    30.75s  <ret> 발화 (turn8 첫 프레임)
+    30.99s  agent 발화 시작: <ret> *Star* is a 3D computer-animated musical comedy film p
+    30.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.05s]: *Star* is a 3D computer-animated musical comedy film produced by Brigh
+    30.99s  user  발화 끝
+    39.04s  user  발화 시작: Oh, Brightstar, I haven't heard of them. Uhhh… what other mo
+    39.04s  agent 발화 끝
+    44.28s  <ret> 발화 (turn10 첫 프레임)
+    44.68s  agent 발화 시작: <ret> Brightstar Animation has produced *The Wildest Dream*,
+    44.68s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.84s]: (tool result) Brightstar Animation has produced *The Wildest Dream*, *
+    44.68s  user  발화 끝
+    51.52s  user  발화 시작: Yeah.
+    51.52s  agent 발화 끝
+    51.92s  user  발화 시작: Space Explorers… sounds interesting. Is that one any good?
+    51.92s  user  발화 끝
+    55.55s  agent 발화 시작: It received mixed reviews, but many people enjoyed the visua
+    55.55s  user  발화 끝
+    63.60s  user  발화 시작: Yeah, totally.
+    63.60s  agent 발화 끝
+    64.40s  user  발화 시작: Okay, good to know. Um, what about the voice cast for *Star*
+    64.40s  user  발화 끝
+    70.36s  <ret> 발화 (turn16 첫 프레임)
+    70.44s  agent 발화 시작: <ret> *Star* features the voices of Gabriel Iglesias, Kelly 
+    70.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.45s]: (tool result) *Star* features the voices of Gabriel Iglesias, Kelly Cl
+    70.44s  user  발화 끝
+    78.89s  user  발화 시작: Kelly Clarkson! Wow, that's a good get. What role does she p
+    78.89s  agent 발화 끝
+    83.72s  agent 발화 시작: Yeah.
+    83.72s  user  발화 끝
+    83.97s  <ret> 발화 (turn19 첫 프레임)
+    84.13s  agent 발화 시작: <ret> Kelly Clarkson voices the character of Stella in the a
+    84.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: Kelly Clarkson voices the character of Stella in the animated film *St
+    84.13s  agent 발화 끝
+    91.77s  user  발화 시작: That’s neat. I think I’ll add it to my watchlist. What’s the
+    91.77s  agent 발화 끝
+    98.13s  <ret> 발화 (turn21 첫 프레임)
+    98.21s  agent 발화 시작: <ret> *Star* has a runtime of ninety-eight minutes. It’s a g
+    98.21s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.65s]: (tool result) *Star* has a runtime of ninety-eight minutes.
+    98.21s  user  발화 끝
+   105.86s  user  발화 시작: Yeah, that sounds perfect. Hmm… is it streaming anywhere?
+   105.86s  agent 발화 끝
+   109.48s  agent 발화 시작: Yeah.
+   109.48s  user  발화 끝
+   109.57s  <ret> 발화 (turn24 첫 프레임)
+   109.89s  agent 발화 시작: <ret> *Star* is currently available to stream on Hulu and to
+   109.89s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.25s]: (tool result) *Star* is currently available to stream on Hulu and to r
+   109.89s  agent 발화 끝
+   117.13s  user  발화 시작: Yeah, yeah.
+   117.13s  agent 발화 끝
+   117.94s  user  발화 시작: Oh, perfect! I have Hulu. Okay, next question… what’s the we
+   117.94s  user  발화 끝
+   124.38s  agent 발화 시작: Right.
+   124.38s  user  발화 끝
+   124.70s  <ret> 발화 (turn28 첫 프레임)
+   124.78s  agent 발화 시작: <ret> The weather in Seoul is 23.0°C, with humidity at 74% a
+   124.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.26s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+   124.78s  agent 발화 끝
+   134.04s  user  발화 시작: Yeah.
+   134.04s  agent 발화 끝
+   134.44s  user  발화 시작: That sounds lovely. I'm thinking of a trip there. Um, what's
+   134.44s  user  발화 끝
+   141.61s  <ret> 발화 (turn31 첫 프레임)
+   141.69s  agent 발화 시작: <ret> Seoul is twelve hours ahead of Pacific Daylight Time. 
+   141.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.05s]: Seoul is twelve hours ahead of Pacific Daylight Time.
+   141.69s  user  발화 끝
+   149.74s  user  발화 시작: Wow, twelve hours! Okay, good to know. What about flights? C
+   149.74s  agent 발화 끝
+   156.26s  <ret> 발화 (turn33 첫 프레임)
+   156.58s  agent 발화 시작: <ret> One-way flights to Seoul from Los Angeles start at $85
+   156.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.66s]: (tool result) One-way flights to Seoul from Los Angeles start at $850.
+   156.58s  user  발화 끝
+   166.24s  user  발화 시작: $850… That’s not terrible. What about a return flight, then?
+   166.24s  agent 발화 끝
+   169.86s  <ret> 발화 (turn35 첫 프레임)
+   170.26s  agent 발화 시작: <ret> Roundtrip flights to Seoul from Los Angeles start at $
+   170.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Roundtrip flights to Seoul from Los Angeles start at $1,
+   170.26s  user  발화 끝
+   177.91s  user  발화 시작: Really?
+   177.91s  agent 발화 끝
+   178.31s  user  발화 시작: Okay, that's something to consider. Um… are there any good r
+   178.31s  user  발화 끝
+   183.15s  agent 발화 시작: Nearby? I don't have a current location set. Where are you r
+   183.15s  user  발화 끝
+   188.38s  user  발화 시작: Oh, right! Sorry. I'm in Los Angeles, near Griffith Observat
+   188.38s  agent 발화 끝
+   192.16s  <ret> 발화 (turn40 첫 프레임)
+   192.40s  agent 발화 시작: <ret> Several restaurants are near Griffith Observatory, inc
+   192.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.66s]: (tool result) Several restaurants are near Griffith Observatory, inclu
+   192.40s  user  발화 끝
+   202.06s  user  발화 시작: Yeah.
+   202.06s  agent 발화 끝
+   202.47s  user  발화 시작: Little Dom’s sounds nice. Can you make a reservation for me 
+   202.47s  user  발화 끝
+   207.86s  <ret> 발화 (turn43 첫 프레임)
+   208.10s  agent 발화 시작: <ret> Reservation confirmed for Little Dom’s, Saturday at 7:
+   208.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Reservation confirmed for Little Dom’s, Saturday at 7:00
+   208.10s  user  발화 끝
+   215.75s  user  발화 시작: Perfect! Thank you so much.
+   215.75s  agent 발화 끝
+   217.76s  agent 발화 시작: You're very welcome! I’m glad I could help with your plannin
+   217.76s  user  발화 끝
+   225.81s  agent 발화 끝

@@ -1,77 +1,93 @@
 v3_defer_09_ko src=mcp style=mcp_deferred
-SYSTEM: <system> 당신은 에로나이며, 현실적이고 공감적인 지원 조언가로서 사람들의 여행 및 휴가 계획을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 크리오라입니다. 크리오라는 부드럽고 사색적인 상담가로서 사람들의 진로 선택과 직장 스트레스 해소를 돕습니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "윤희",
+    "name": "소빈",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-13",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-05-21",
+      "category": "work",
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2026-05-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-02-26",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-04-12",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-10-17",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
     },
     {
-      "date": "2026-03-23",
+      "date": "2025-06-26",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-06-21",
       "category": "trip",
       "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2026-01-24",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-01",
+      "date": "2026-05-30",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-11",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-10-17",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 시카고 근처 커피숍 좀 찾아줄래, 세 킬로미터 이내로. ⟨ret@3.95s⟩
-[  4.11s][moshi] ⟦⚡SPAN@4.11s: (tool result) {"html attributions": [], "results": [{"geometry": {"location": {"lat": 41.895687, "lng": -87.62⟧ 시카고에서 삼킬로미터 이내에 인텔리젠시아 커피와 스타벅스 두 곳이 있어요. 인텔리젠시아 커피는 브로드웨이에 있고, 스타벅스는 클락 거리에 있습니다.
-      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "Chicago", "radius": "3km"}}
-[ 12.83s][user ] 인텔리젠시아 커피까지 가는 길 좀 ⟨ret@15.59s⟩ 알려줘.
-[ 15.91s][moshi] ⟦⚡SPAN@15.91s: (tool result) {"distance": {"text": "3.2 km", "value": 3188}, "duration": {"text": "8 mins", "value": 484}, "s⟧ 현재 위치에서 인텔리젠시아 커피까지는 삼 점 이킬로미터, 운전으로 팔분 정도 걸립니다.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Intelligentsia Coffee", "mode": "driving"}}
-[ 21.56s][user ] «backchannel» 오.
-[ 22.07s][user ] 이번 주 토요일에 예약 가능한 괜찮은 레스토랑 좀 찾아봐 줄래?
-[ 27.20s][moshi] 이번 주 토요일 레스토랑 예약을 도와드릴게요. 혹시 특별히 선호하는 종류나 분위기가 있으세요?
-[ 33.36s][user ] 음… 이탈리아 음식 괜찮아.
-[ 35.42s][moshi] 이탈리아 음식 좋아하시는군요. 시카고에서 평점 좋은 이탈리아 레스토랑을 찾아볼게요. 잠깐만 기다려 주세요.
+[  0.00s][user ] 구글 주식 가격이 지금 얼마예요? ⟨ret@2.40s⟩
+[  2.56s][moshi] ⟦⚡SPAN@2.56s: (tool result) Google's stock closed today, July 10, 2026, at 172.35 USD, up 0.8% from yesterday's close of 170⟧ 구글 주식은 오늘 칠월 십일 기준으로 백칠십이 점 삼 오달러에 마감했고, 어제 종가인 백칠십 점 구 이달러보다 영 점 팔퍼센트 상승했습니다.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "GOOG"}}
+[ 13.32s][user ] «backchannel» 아.
+[ 13.83s][user ] 음, 네.
+[ 14.86s][moshi] 혹시 다른 주식에 대해서도 알아봐 드릴까요? 저는 크리오라라고 해요.
+[ 19.47s][user ] «backchannel» 음.
+[ 19.98s][user ] 아, 아니요. 오늘은 괜찮아요. 이번 주말에 친구랑 여행 가기로 했는데, 혹시 부산 날씨 어때요?
+[ 27.15s][moshi] «backchannel» 아.
+[ 27.66s][moshi] ⟨ret@27.58s⟩ ⟦⚡SPAN@27.66s: (tool result) The current weather in Busan is 28.5°C, with humidity at 68% and wind speed of 4.2 km/h. There i⟧ 부산 날씨는 현재 이십팔 점 오도로 습도는 육십팔퍼센트, 바람은 시속 사 점 이킬로미터고요, 이번 주말에는 비가 올 확률이 삼십퍼센트 정도입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
+[ 37.91s][user ] «backchannel» 아.
+[ 38.42s][user ] 주말에 비가 온다고요? 아, 좀 아쉽네요.
+[ 41.50s][moshi] 여행 계획에 조금이라도 영향을 줄까 걱정되네요. 혹시 다른 도시도 고려하고 계신가요?
+[ 47.13s][user ] 아니요, 부산으로 정했어요. 그럼, 부산에서 유명한 맛집 좀 추천해 줄 수 있어요? ⟨ret@53.20s⟩
+[ 53.28s][moshi] ⟦⚡SPAN@53.28s: (tool result) Busan is famous for dwaeji gukbap (pork and rice soup), with several highly-rated restaurants in⟧ 부산은 돼지국밥으로 유명하고, 송정 돼지국밥이나 밀면 맛집들이 평점이 높습니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan", "cuisine": "Korean"}}
+[ 57.89s][user ] «backchannel» 응.
+[ 58.40s][user ] 돼지국밥… 맛있겠네요.
+[ 59.43s][moshi] 돼지국밥은 부산을 대표하는 음식이죠. 혹시 다른 종류의 음식을 선호하시나요?
+[ 64.04s][user ] «backchannel» 응.
+[ 64.55s][user ] 잠깐만요, 제가… 아, 어제 친구가 저한테… ⟨ret@67.38s⟩
+[ 67.62s][moshi] 혹시 ⟦⚡SPAN@68.74s: [2024-03-15] 친구가 부산 여행을 가고 싶어 한다.⟧ 친구분께 부산 여행 계획을 말씀드린 적이 있으신가요? 이천이십사년 삼월 십오일에 친구분이 부산 여행을 가고 싶어 한다고 말씀하셨네요.
+[ 76.85s][user ] 아, 맞아요!
+[ 77.87s][moshi] 친구분과 함께 즐거운 시간 보내시길 바랍니다.
+[ 80.94s][user ] 고마워요, 크리오라.
+[ 81.97s][moshi] 천만에요. 언제든지 편하게 이야기 나눠주세요. 저는 당신의 행복을 응원합니다.

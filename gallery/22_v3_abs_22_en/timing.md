@@ -4,95 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Quinn",
+#     "name": "Noah",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "home",
-#       "text": "User's home address is 382 Pine Court."
-#     },
-#     {
-#       "date": "2025-11-01",
+#       "date": "2026-06-11",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "date": "2026-06-03",
+#       "category": "home",
+#       "text": "User's home address is 461 Birch Road."
 #     },
 #     {
-#       "date": "2025-07-20",
+#       "date": "2026-03-13",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-11-30",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-31",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-18",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-27",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who didn't discover Neptune? | S2 I'm planning a trip to see some pl | S3 …can you find me some observatorie | S4 …like there right now?
+# EXAMINER(FDB-v2) 단계: S1 What college moved to Ann Arbor in | S2 Oh, okay. Well, what *is* the hist | S3 …was it hard to move everything ba | S4 That sounds stressful. What was An
 
-     0.00s  user  발화 시작: Who didn't discover Neptune?
-     1.59s  agent 발화 시작: It seems there isn't a documented record of who *didn't* dis
-     1.59s  user  발화 끝
-     8.77s  user  발화 시작: Oh. Well, what about Uranus? Who found that one?
-     8.77s  agent 발화 끝
-    12.12s  <ret> 발화 (turn3 첫 프레임)
-    12.36s  agent 발화 시작: <ret> It was actually John Herschel who first sighted Uranus
-    12.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: Uranus was first sighted by astronomer John Herschel in 1781, though h
-    12.36s  user  발화 끝
-    21.13s  user  발화 시작: Okay.
-    21.13s  agent 발화 끝
-    21.53s  agent 발화 시작: It’s fascinating how discoveries can sometimes be misidentif
-    21.53s  user  발화 끝
-    29.11s  user  발화 시작: Mm-hmm.
-    29.11s  agent 발화 끝
-    29.51s  user  발화 시작: I'm planning a trip to see some planets.
-    29.51s  user  발화 끝
-    32.69s  agent 발화 시작: That sounds like a wonderful idea! Planning a trip centered 
-    32.69s  user  발화 끝
-    37.88s  user  발화 시작: …can you find me some observatories in California?
-    37.88s  agent 발화 끝
-    40.75s  <ret> 발화 (turn10 첫 프레임)
-    41.07s  agent 발화 시작: <ret> There are some amazing options in California, like Pal
-    41.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.96s]: Palomar Observatory in San Diego County, California, is a renowned ast
-    41.07s  user  발화 끝
-    55.02s  user  발화 시작: Griffith sounds good. What's the weather…
-    55.02s  agent 발화 끝
-    57.42s  user  발화 시작: …like there right now?
-    57.42s  user  발화 끝
-    58.61s  <ret> 발화 (turn13 첫 프레임)
-    59.01s  agent 발화 시작: <ret> Right now at Griffith Observatory, it’s twenty-four po
-    59.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.57s]: (tool result) 24.3°C, humidity 62%, wind 3.2 km/h
-    59.01s  user  발화 끝
-    68.58s  agent 발화 끝
+     0.00s  user  발화 시작: What college moved to Ann Arbor in 1873?
+     3.19s  agent 발화 시작: Oh.
+     3.19s  user  발화 끝
+     3.59s  agent 발화 시작: Hmm, that’s a good question! It seems there isn’t readily av
+     3.59s  agent 발화 끝
+    12.36s  user  발화 시작: Oh.
+    12.36s  agent 발화 끝
+    12.75s  user  발화 시작: Oh, okay. Well, what *is* the history of the University of M
+    12.75s  user  발화 끝
+    17.54s  agent 발화 시작: Uh-huh.
+    17.54s  user  발화 끝
+    17.78s  <ret> 발화 (turn6 첫 프레임)
+    17.94s  agent 발화 시작: <ret> The University of Michigan was founded in 1817 in Detr
+    17.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.36s]: The University of Michigan was founded in 1817 in Detroit, Michigan, b
+    17.94s  agent 발화 끝
+    30.29s  user  발화 시작: …was it hard to move everything back then?
+    30.29s  agent 발화 끝
+    33.48s  agent 발화 시작: That's a very thoughtful question! Moving a university in 18
+    33.48s  user  발화 끝
+    41.45s  user  발화 시작: Nice.
+    41.45s  agent 발화 끝
+    41.85s  agent 발화 시작: —and of course, all the people connected to the university. 
+    41.85s  user  발화 끝
+    54.21s  user  발화 시작: That sounds stressful. What was Ann Arbor like at that time?
+    54.21s  agent 발화 끝
+    58.59s  agent 발화 시작: Uh-huh.
+    58.59s  user  발화 끝
+    58.83s  <ret> 발화 (turn13 첫 프레임)
+    58.99s  agent 발화 시작: <ret> In 1837, Ann Arbor was a small village with a populati
+    58.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.35s]: In 1837, Ann Arbor was a small village with a population of around 1,0
+    58.99s  agent 발화 끝
+    73.34s  agent 발화 끝

@@ -1,68 +1,71 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Sellaus, a grounded and empathetic personal guide who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Morar, a curious and validating life coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Julian",
+    "name": "Lukas",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "male",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
-      "category": "work",
-      "text": "User works as a architect."
+      "date": "2026-01-09",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-18",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-03-17",
+      "date": "2025-08-04",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-02-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-07-22",
+      "date": "2025-06-04",
       "category": "hobby",
       "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-06-10",
-      "category": "home",
-      "text": "User's home address is 964 Elm Street."
+      "date": "2025-06-03",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-03",
-      "title": "Planning a birthday dinner",
+      "date": "2026-01-11",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, do you know when Ford stopped making the Sport ⟨ret@3.66s⟩ Trac?
-[  3.90s][moshi] ⟦⚡SPAN@3.90s: Ford discontinued the Sport Trac model after the 2010 model year, focusing on other truck offerings.⟧ Ford stopped making the Sport Trac after the 2010 model year, shifting focus to their other truck options. It’s interesting how models evolve, isn’t it?
-[ 12.78s][moshi] ⟨ret@12.38s⟩ ⟦⚡SPAN IRRELEVANT@12.78s: The current temperature in Reykjavik, Iceland is 8.2°C with clear skies and a wind speed of 6.1 m/s.⟧ Sometimes letting go of one thing allows space for new growth.
-[ 16.68s][user ] Oh, okay, that's good to know.
-[ 18.81s][moshi] It’s wonderful you’re taking the time to explore these details. Often, understanding the past helps us appreciate the present moment.
+[  0.00s][user ] Do you know who sang with Paula Abdul on “Opposites ⟨ret@3.89s⟩ Attract”?
+[  4.13s][moshi] ⟦⚡SPAN@4.13s: Marv Gunn provided the vocals for the animated MC Skat Kat character and sang with Paula Abdul on “Opposites A⟧ That was Marv Gunn, actually! He voiced the MC Skat Kat and sang alongside Paula Abdul on that track. It’s a fun song, isn’t it?
+[ 13.52s][user ] Oh, that’s cool! What’s the weather…
+[ 15.77s][user ] …like in Reykjavik ⟨ret@16.88s⟩ today?
+[ 17.28s][moshi] ⟦⚡SPAN IRRELEVANT@17.28s: The stock of Tesla (TSLA) closed today at $177.42, down 1.35% from its opening price.⟧ It’s currently 11 degrees Celsius in Reykjavik, with mostly cloudy skies. Sounds a bit chilly!
+[ 22.91s][user ] «backchannel» Oh.
+[ 23.29s][user ] Eleven degrees? That does sound cold.
+[ 25.54s][moshi] It is a bit brisk, yes. Though, sometimes a little chill can be refreshing, don’t you think? It helps you feel alive.
+[ 33.80s][user ] Maybe. I’m thinking about planning a trip, actually.
+[ 36.81s][moshi] That's wonderful! Travel can be such a great way to broaden your perspective and create lasting memories. Where are you considering going?

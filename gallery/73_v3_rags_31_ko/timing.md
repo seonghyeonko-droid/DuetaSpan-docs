@@ -4,79 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "준현",
+#     "name": "은안",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2026-05-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-04-23",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-02-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2025-12-11",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-09-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2025-06-06",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-09-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-10",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-21",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-30",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 천팔백이십삼년에 제이 미국…
-     2.74s  user  발화 시작: …은행의 수장이 누가 됐었는지 알아?
-     2.74s  user  발화 끝
-     5.92s  <ret> 발화 (turn2 첫 프레임)
-     6.16s  agent 발화 시작: <ret> 천팔백이십삼년에 제이 미국 은행의 수장으로 니콜라스 비들 씨가 임명되었답니다. 그분은 천팔백삼십육
-     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.58s]: Nicholas Biddle assumed leadership of the Second Bank of the United St
-     6.16s  user  발화 끝
-    15.74s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 농구 역사상 가장 많이 경기 시간을 기록한 선수는 누구예요?
+     4.73s  <ret> 발화 (turn1 첫 프레임)
+     4.97s  agent 발화 시작: <ret> 농구 역사상 가장 많은 경기 시간을 기록한 선수는 카림 압둘-자바 선수인데, 총 오만 칠천사백사십
+     4.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.96s]: Kareem Abdul-Jabbar has the most minutes played in NBA history, with a
+     4.97s  user  발화 끝
+    11.93s  agent 발화 끝

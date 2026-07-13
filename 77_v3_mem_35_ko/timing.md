@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "도호",
+#     "name": "라린",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,108 +13,101 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-05",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-04-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-02-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2025-12-15",
+#       "date": "2025-07-15",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-23",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-22",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-06-10",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-27",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-15",
+#       "date": "2025-12-27",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-20",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 요즘 건강이 좀 안 좋아서, 식단 좀 짜고 싶어. | S2 러빙헛… 거긴 가봤어. 좀 뻔한 메뉴들만 있어서. | S3 혹시 거기가 해운대에 있어? | S4 고마워, 오렐라나.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 리스본 여행 계획 좀 세워보려고요. | S2 정말요? 어디가 제일 좋을까요? | S3 와, 감사합니다! 그런데 혹시— | S4 백오십유로는 괜찮네요. 거기는 객실에 와이파이가 있나요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 도호님! 저는 오렐라나예요. 오늘 뭘 도와드릴까요?
-     3.93s  user  발화 시작: 음… 요즘 건강이 좀 안 좋아서, 식단 좀 짜고 싶어.
-     3.93s  agent 발화 끝
-     9.38s  <ret> 발화 (turn2 첫 프레임)
-     9.54s  agent 발화 시작: <ret> 식단이라… 혹시 채식 하시는 편이신가요?
-     9.54s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.80s]: [2025-07-22] User is vegan.
-     9.54s  user  발화 끝
-    12.34s  agent 발화 시작: 아, 네. 혹시 제가 기억하고 있는 대로, 도호님은 비건이시죠?
-    12.34s  agent 발화 끝
-    17.39s  user  발화 시작: 맞아, 그거 기억해줘서 고마워.
-    17.39s  agent 발화 끝
-    19.39s  <ret> 발화 (turn5 첫 프레임)
-    19.63s  agent 발화 시작: <ret> 부산에는 러빙헛, 플랜트 베이스, 우 비건 같은 비건 식당들이 있네요. 평점과 가격대는 각각 사 
-    19.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.71s]: (tool result) Vegan restaurants in Busan: Loving Hut (4.2 stars, ₩15,0
-    19.63s  user  발화 끝
-    35.34s  user  발화 시작: 응.
-    35.34s  agent 발화 끝
-    35.90s  agent 발화 시작: 러빙헛은 어떤가요? 다양한 비건 메뉴가 있다고 하네요.
-    35.90s  user  발화 끝
-    39.83s  user  발화 시작: 응.
-    39.83s  agent 발화 끝
-    40.39s  user  발화 시작: 러빙헛… 거긴 가봤어. 좀 뻔한 메뉴들만 있어서.
-    40.39s  user  발화 끝
-    44.00s  <ret> 발화 (turn10 첫 프레임)
-    44.32s  agent 발화 시작: <ret> 플랜트 베이스 주소는 해운대구 백이십삼번지이고, 전화번호는 공 오 일 일 이 삼 사 오 육 칠, 
-    44.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.46s]: (tool result) Plant Base, Busan: Address 123, Haeundae-gu; Phone 051-1
-    44.32s  user  발화 끝
-    57.78s  user  발화 시작: 응.
-    57.78s  agent 발화 끝
-    58.34s  user  발화 시작: 전화번호 적어줘.
-    58.34s  user  발화 끝
-    59.46s  agent 발화 시작: 네, 공 오 일 일 이 삼 사 오 육 칠 입니다.
-    59.46s  user  발화 끝
-    66.20s  user  발화 시작: 혹시 거기가 해운대에 있어?
-    66.20s  agent 발화 끝
-    68.44s  agent 발화 시작: 네, 해운대에 있어요. 혹시 다른 지역도 괜찮으세요?
-    68.44s  user  발화 끝
-    72.37s  user  발화 시작: 그치.
-    72.37s  agent 발화 끝
-    72.93s  user  발화 시작: 음… 이번 주 토요일에 거기 갈까 생각 중인데, 예약해야 할까?
-    72.93s  user  발화 끝
-    78.46s  <ret> 발화 (turn18 첫 프레임)
-    78.54s  agent 발화 시작: <ret> 네, 플랜트 베이스에 칠월 십일일 토요일 두명으로 예약 완료되었습니다. 확인 번호는 에이 칠 비 
-    78.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.10s]: (tool result) Reservation confirmed for Plant Base, July 11, 2026, 2 p
-    78.54s  user  발화 끝
-    88.64s  user  발화 시작: 고마워, 오렐라나.
-    88.64s  agent 발화 끝
-    89.76s  agent 발화 시작: 천만에요, 도호님. 건강한 식단으로 기운 내시길 바랍니다!
-    89.76s  user  발화 끝
-    93.68s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 라린님. 저는 크레아이아입니다. 여행 계획을 도와드리는 에이전트예요.
+     4.99s  user  발화 시작: 안녕하세요. 리스본 여행 계획 좀 세워보려고요.
+     4.99s  agent 발화 끝
+     8.57s  <ret> 발화 (turn2 첫 프레임)
+     8.73s  agent 발화 시작: <ret> 시월에 가실 예정이신가요?
+     8.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.87s]: [2026-02-10] User is planning a trip to Lisbon in October.
+     8.73s  user  발화 끝
+    10.60s  user  발화 시작: 네, 맞아요. 시월 말쯤으로 생각하고 있어요.
+    10.60s  agent 발화 끝
+    14.33s  agent 발화 시작: 시월 말은 리스본 날씨가 아주 좋을 거예요. 혹시 특별히 보고 싶은 곳이 있으세요?
+    14.33s  user  발화 끝
+    22.44s  user  발화 시작: 음… 맛집을 추천받고 싶어요. 포르투갈 음식 말고 다른 것도 괜찮아요.
+    22.44s  agent 발화 끝
+    28.67s  agent 발화 시작: 아.
+    28.67s  user  발화 끝
+    29.21s  <ret> 발화 (turn7 첫 프레임)
+    29.29s  agent 발화 시작: <ret> 이탈리아 음식을 좋아하시는군요. 리스본에는 훌륭한 이탈리아 식당이 몇 군데 있어요.
+    29.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: [2026-04-09] User's favorite cuisine is Italian.
+    29.29s  agent 발화 끝
+    35.53s  user  발화 시작: 응.
+    35.53s  agent 발화 끝
+    36.15s  user  발화 시작: 정말요? 어디가 제일 좋을까요?
+    36.15s  user  발화 끝
+    38.40s  <ret> 발화 (turn10 첫 프레임)
+    38.64s  agent 발화 시작: <ret> 칸티뉴 두 아빌레즈라는 곳이 평점이 사 점 육점에 리뷰도 천이백삼십사개나 있어요. 이탈리아, 포르
+    38.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.84s]: (tool result) Restaurante Cantinho do Avillez: Italian, Portuguese, Eu
+    38.64s  user  발화 끝
+    50.48s  user  발화 시작: 칸티뉴 두 아빌레즈… 거긴 예약이 필수인가요?
+    50.48s  agent 발화 끝
+    53.98s  <ret> 발화 (turn12 첫 프레임)
+    54.22s  agent 발화 시작: <ret> 네, 시월 이십팔일 저녁 여덟시에 여섯명으로 예약이 완료되었습니다. 확인 번호는 칠 엑스 구 엘 
+    54.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) Reservation confirmed for 6 people on October 28, 2026 a
+    54.22s  user  발화 끝
+    64.20s  user  발화 시작: 음.
+    64.20s  agent 발화 끝
+    64.82s  user  발화 시작: 와, 감사합니다! 그런데 혹시—
+    64.82s  user  발화 끝
+    67.31s  user  발화 시작: …거기 근처에 괜찮은 호텔도 추천해 줄 수 있을까요?
+    67.31s  user  발화 끝
+    72.30s  agent 발화 시작: 음.
+    72.30s  user  발화 끝
+    72.52s  <ret> 발화 (turn17 첫 프레임)
+    72.92s  agent 발화 시작: <ret> 보르헤스 치아두 호텔은 사성급이고, 일박에 백오십유로부터 시작합니다. 위치도 아주 좋습니다.
+    72.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: (tool result) Hotel Borges Chiado: 4 stars, Rua do Alecrim 139, 1200-0
+    72.92s  agent 발화 끝
+    79.15s  user  발화 시작: 백오십유로는 괜찮네요. 거기는 객실에 와이파이가 있나요?
+    79.15s  agent 발화 끝
+    82.89s  agent 발화 시작: 네, 보르헤스 치아두 호텔에는 무료 와이파이가 제공됩니다.
+    82.89s  user  발화 끝
+    87.26s  user  발화 시작: 잘 됐네요. 정말 감사합니다, 크레아이아님.
+    87.26s  agent 발화 끝
+    90.37s  agent 발화 시작: 천만에요, 라린님. 즐거운 리스본 여행 되시길 바랍니다.
+    90.37s  user  발화 끝
+    94.74s  agent 발화 끝

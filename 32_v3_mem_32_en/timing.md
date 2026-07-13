@@ -4,101 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Hana",
+#     "name": "Anna",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
-#     },
-#     {
-#       "date": "2026-06-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-05-21",
+#       "date": "2026-01-11",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
 #       "date": "2026-01-06",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-09-06",
+#       "date": "2025-10-06",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-09",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-06-07",
+#       "category": "home",
+#       "text": "User's home address is 233 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-22",
-#       "title": "Setting up a home network",
+#       "date": "2025-07-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just thinking about my trip  | S2 Oh, right. Well, I'm craving Korea | S3 Can you find me a Korean BBQ resta | S4 Perfect, thank you. I’m also glute
+# EXAMINER(FDB-v2) 단계: S1 I'm alright, actually a little str | S2 Yes, exactly! Do you think you cou | S3 …Actually, is Burma Superstar good | S4 Perfect, thank you so much, Jox.
 
-     0.00s  agent 발화 시작: Hi Hana, I'm Gias. It's lovely to connect with you.
-     3.75s  user  발화 시작: I was just thinking about my trip to Kyoto.
-     3.75s  agent 발화 끝
-     7.04s  <ret> 발화 (turn2 첫 프레임)
-     7.12s  agent 발화 시작: <ret> You mentioned planning a trip to Kyoto in May, which s
-     7.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.87s]: [2026-06-27] User is planning a trip to Kyoto in May.
-     7.12s  user  발화 끝
-    14.99s  user  발화 시작: Do you remember anything else about that trip?
-    14.99s  agent 발화 끝
-    17.82s  <ret> 발화 (turn4 첫 프레임)
-    17.98s  agent 발화 시작: <ret> The note simply states you're planning a trip to Kyoto
-    17.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.74s]: [2026-06-27] User is planning a trip to Kyoto in May.
-    17.98s  user  발화 끝
-    24.73s  user  발화 시작: Mhm.
-    24.73s  agent 발화 끝
-    25.10s  user  발화 시작: Oh, right. Well, I'm craving Korean food tonight.
-    25.10s  user  발화 끝
-    27.86s  <ret> 발화 (turn7 첫 프레임)
-    28.10s  agent 발화 시작: <ret> That's a lovely thought! Your favorite cuisine is Kore
-    28.10s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.49s]: [2026-06-21] User's favorite cuisine is Korean BBQ.
-    28.10s  user  발화 끝
-    35.60s  user  발화 시작: Can you find me a Korean BBQ restaurant nearby?
-    35.60s  agent 발화 끝
-    38.89s  <ret> 발화 (turn9 첫 프레임)
-    38.97s  agent 발화 시작: <ret> I found three Korean BBQ restaurants nearby: Bulgogi H
-    38.97s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.24s]: (tool result) Korean BBQ restaurants found: Bulgogi House (4.5 stars, 
-    38.97s  user  발화 끝
-    47.21s  user  발화 시작: Bulgogi House sounds good. Can you make a reservation there 
-    47.21s  agent 발화 끝
-    51.39s  <ret> 발화 (turn11 첫 프레임)
-    51.71s  agent 발화 시작: <ret> Excellent! I've reserved a table for two at Bulgogi Ho
-    51.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Reservation confirmed at Bulgogi House for 2 people on J
-    51.71s  user  발화 끝
-    61.45s  user  발화 시작: Perfect, thank you. I’m also gluten-free, should I tell them
-    61.45s  agent 발화 끝
-    65.04s  <ret> 발화 (turn13 첫 프레임)
-    65.20s  agent 발화 시작: <ret> Yes, it's a good idea to mention you're gluten-free wh
-    65.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.12s]: [2026-05-21] User is gluten-free.
-    65.20s  user  발화 끝
-    72.31s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Anna, I'm Jox. It's lovely to meet you. How are you doing
+     5.42s  user  발화 시작: I'm alright, actually a little stressed about making plans w
+     5.42s  agent 발화 끝
+     9.67s  agent 발화 시작: That’s completely understandable; socializing can be tricky.
+     9.67s  user  발화 끝
+    14.70s  user  발화 시작: Well, I'm trying to plan a birthday dinner, and it’s hard to
+    14.70s  agent 발화 끝
+    21.28s  agent 발화 시작: Yeah.
+    21.28s  user  발화 끝
+    21.34s  <ret> 발화 (turn5 첫 프레임)
+    21.66s  agent 발화 시작: <ret> Ah, I recall you were planning a birthday dinner for s
+    21.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.96s]: [2025-07-26] Past chat — Planning a birthday dinner: party of six; loo
+    21.66s  agent 발화 끝
+    28.63s  user  발화 시작: Yeah.
+    28.63s  agent 발화 끝
+    29.02s  user  발화 시작: Yes, exactly! Do you think you could help me find some resta
+    29.02s  user  발화 끝
+    35.82s  <ret> 발화 (turn8 첫 프레임)
+    35.98s  agent 발화 시작: <ret> I found five restaurants in San Francisco with outdoor
+    35.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) 5 restaurants found: Zuni Café (American, $$$), Foreign 
+    35.98s  user  발화 끝
+    44.88s  user  발화 시작: Those sound good… um, what kind of food does Foreign Cinema 
+    44.88s  agent 발화 끝
+    49.52s  agent 발화 시작: Foreign Cinema serves Mediterranean cuisine—
+    49.52s  user  발화 끝
+    51.45s  user  발화 시작: …Actually, is Burma Superstar good for someone with dietary 
+    51.45s  agent 발화 끝
+    55.24s  <ret> 발화 (turn12 첫 프레임)
+    55.32s  agent 발화 시작: <ret> I remember you're lactose-intolerant, and Burma Supers
+    55.32s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.58s]: [2026-01-11] User is lactose-intolerant.
+    55.32s  user  발화 끝
+    61.90s  user  발화 시작: Oh, that’s fantastic! I think that might be the one. Can you
+    61.90s  agent 발화 끝
+    69.17s  <ret> 발화 (turn14 첫 프레임)
+    69.25s  agent 발화 시작: <ret> Wonderful! I’ve reserved a table for six at Burma Supe
+    69.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.51s]: (tool result) Burma Superstar: reservation confirmed for 6 people on J
+    69.25s  user  발화 끝
+    77.76s  user  발화 시작: Really?
+    77.76s  agent 발화 끝
+    78.15s  user  발화 시작: Perfect, thank you so much, Jox.
+    78.15s  user  발화 끝
+    80.47s  agent 발화 시작: You're very welcome, Anna. Planning with friends can be stre
+    80.47s  user  발화 끝
+    87.43s  agent 발화 끝

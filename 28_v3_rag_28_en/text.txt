@@ -1,91 +1,81 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Thioon, a encouraging and non-judgmental personal guide who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Laeus, a upbeat and supportive counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Ada",
+    "name": "Riley",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "German",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-06-17",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
     },
     {
-      "date": "2026-04-25",
+      "date": "2026-04-05",
       "category": "allergy",
       "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-02-14",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
+      "date": "2025-12-16",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2026-01-06",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-07-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-05-31",
+      "category": "home",
+      "text": "User's home address is 562 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
+      "date": "2026-03-12",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-27",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-05-19",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, when does Day Z come out for Xbox? I've been waiting ⟨ret@4.42s⟩ forever.
-[  4.74s][moshi] ⟦⚡SPAN@4.74s: DayZ was released on Xbox on March 26, 2019, after a period in early access.⟧ It looks like DayZ was released on Xbox on March twenty-sixth, two thousand nineteen, after being in early access. It’s quite a popular game!
-[ 13.50s][user ] March 2019? That feels like ages ago… Is there any news about a ⟨ret@18.21s⟩ sequel?
-[ 18.61s][moshi] ⟦⚡SPAN@18.61s: (tool result) Bohemia Interactive has not announced a DayZ sequel, but continues to update the original game w⟧ There hasn't been an announcement for a sequel, but Bohemia Interactive keeps updating the original game—the latest improvements were released in February twenty-twenty-four.
-      CALL: {"function": "search", "arguments": {"query": "Day Z sequel news"}}
-[ 27.00s][user ] February 2024… okay, so it’s still being supported. That’s good to hear.
-[ 31.38s][moshi] It is! It’s wonderful when developers continue to support games we enjoy.
-[ 35.76s][user ] I was hoping for something new, though. Are there any similar games coming to Xbox? ⟨ret@41.15s⟩
-[ 41.23s][moshi] ⟦⚡SPAN@41.23s: (tool result) Several survival games are scheduled for Xbox release in 2024 and 2025, including "Nightingale" ⟧ Several survival games are planned for Xbox—"Nightingale" should come out in late twenty-twenty-four, and "Sons of the Forest" doesn’t have a set date yet.
-      CALL: {"function": "search", "arguments": {"query": "upcoming survival games Xbox"}}
-[ 49.99s][user ] «backchannel» Okay.
-[ 50.35s][user ] Nightingale sounds interesting. What kind of game is ⟨ret@53.39s⟩ it?
-[ 53.63s][moshi] ⟦⚡SPAN@53.63s: (tool result) Nightingale is a shared-world survival crafting game set in a Victorian gaslamp fantasy world, w⟧ Nightingale is a shared-world survival game—players build, craft, and fight in a Victorian gaslamp fantasy world, facing dangerous creatures and other players.
-      CALL: {"function": "search", "arguments": {"query": "Nightingale game details"}}
-[ 61.66s][user ] That sounds pretty cool, actually.
-[ 63.48s][moshi] «interrupted» It’s been getting a lot of buzz—
-[ 66.04s][user ] …Is it multiplayer…
-[ 67.13s][user ] …then? Can I play with ⟨ret@68.92s⟩ friends?
-[ 69.32s][moshi] ⟦⚡SPAN@69.32s: Nightingale supports both solo and multiplayer gameplay, with a focus on cooperative exploration and building ⟧ It supports both solo and multiplayer, focusing on exploring and building with up to eight players. It's designed to be enjoyed with friends.
-[ 77.71s][user ] Eight players, that's awesome. Is there a beta test I can sign up for? ⟨ret@82.74s⟩
-[ 82.82s][moshi] ⟦⚡SPAN@82.82s: (tool result) Inlate April 2024, Inflexion Games opened sign-ups for a closed beta test of Nightingale, runnin⟧ Let me search for information on a Nightingale beta test.
-      CALL: {"function": "search", "arguments": {"query": "Nightingale beta test sign up"}}
-[ 86.47s][moshi] Sign-ups for a closed beta test opened in late April of twenty-twenty-four, running from May twenty-third to May twenty-seventh—you can sign up on their official website.
-[ 95.96s][user ] May 23rd… I’ll have to check that out. Thanks for the info!
-[100.34s][moshi] You’re very welcome! It sounds like a game you might really enjoy.
+[  0.00s][user ] I was wondering, where does all the sand on beaches actually come from?
+[  5.04s][moshi] «backchannel» Yeah.
+[  5.42s][moshi] Beaches are fascinating places, and their origins are quite varied.
+[  9.30s][user ] «backchannel» Mm-hmm.
+[  9.69s][user ] Varied how? Is it all just rocks getting ground down?
+[ 13.56s][moshi] «backchannel» Yeah.
+[ 13.95s][moshi] ⟨ret@13.87s⟩ ⟦⚡SPAN@13.95s: Beach sand is created by the weathering and erosion of rocks, shells, and coral, transported to the coast by r⟧ Beach sand is actually created by the weathering and erosion of rocks, shells, and coral—it’s then transported to the coast by rivers, streams, and ocean currents.
+[ 24.02s][user ] «backchannel» Mm-hmm.
+[ 24.41s][moshi] It's a bit like nature’s delivery service, bringing all those tiny pieces together.
+[ 29.45s][user ] So, coral plays a part? I didn’t realize that. What kind of coral specifically? ⟨ret@34.79s⟩
+[ 34.87s][moshi] ⟦⚡SPAN@34.87s: Coralline algae, a type of red algae, deposits calcium carbonate which breaks down into sand, contributing sig⟧ Specifically, coralline algae—a type of red algae—deposits calcium carbonate, which then breaks down into sand, contributing significantly to beach formation in tropical regions.
+[ 43.78s][moshi] It’s a beautiful process, really, creating these wonderful spaces for us to enjoy.

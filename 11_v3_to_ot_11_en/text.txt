@@ -1,89 +1,83 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Rena, a warm and attentive supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Ana, a gentle and reflective wellness coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Caleb",
+    "name": "Jamie",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
+      "date": "2025-11-07",
+      "category": "home",
+      "text": "User's home address is 960 Oak Avenue."
+    },
+    {
+      "date": "2025-10-14",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-05-25",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-07-05",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-14",
+      "date": "2025-07-04",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-01-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-09-13",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-05-28",
-      "title": "Setting up a home network",
+      "date": "2026-04-29",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Rena, I’m studying art history, and I’m stuck on Mughal painting.
-[  4.84s][moshi] Hello! That’s a fascinating subject.
-[  6.85s][user ] I’m trying to find out who really introduced the idea of perspective into Mughal ⟨ret@12.66s⟩ painting.
-[ 12.90s][moshi] ⟦⚡SPAN@12.90s: Jahangir was the first Mughal emperor to embrace fully the illusionism of three-dimensional space in his paint⟧ It seems Jahangir was the first Mughal emperor to really embrace the illusionism of three-dimensional space in his paintings. He was quite the patron of the arts, wasn't he?
-[ 24.59s][user ] «backchannel» Really?
-[ 24.99s][user ] Oh, interesting! I hadn't thought of him specifically.
-[ 28.21s][moshi] It’s easy to focus on Akbar, but Jahangir's artistic sensibilities were unique. It really changed things.
-[ 34.66s][user ] «backchannel» Right.
-[ 35.07s][user ] I’m trying to understand how much European influence was involved. ⟨ret@39.02s⟩
-[ 39.10s][moshi] ⟦⚡SPAN@39.10s: European art, particularly that of Italy and the Netherlands, had a significant impact on Mughal painting duri⟧ European art, especially from Italy and the Netherlands, had a significant impact on Mughal painting during Jahangir’s reign.
-[ 46.35s][user ] «backchannel» Yeah.
-[ 46.75s][user ] Were there specific artists who came to the Mughal ⟨ret@50.54s⟩ court?
-[ 50.78s][moshi] ⟦⚡SPAN@50.78s: Though no major European artists resided permanently at the Mughal court, Jesuit missionaries often brought pa⟧ No major European artists lived permanently at the court, but Jesuit missionaries often brought paintings as gifts. These gifts were greatly admired and studied, you see.
-[ 61.26s][user ] «backchannel» Uh-huh.
-[ 61.67s][user ] So, it wasn’t direct instruction then?
-[ 64.08s][moshi] Not direct instruction, no. It was more through the exchange of artworks and ideas.
-[ 69.73s][user ] «backchannel» Yeah.
-[ 70.13s][user ] I’m also looking at the use of light and shadow.
-[ 74.16s][moshi] «interrupted» The depiction of light and shadow, known as chiaroscuro—
-[ 77.79s][user ] «interrupts_prev» …did Jahangir commission paintings specifically to explore ⟨ret@80.77s⟩ perspective?
-[ 81.01s][moshi] ⟦⚡SPAN@81.01s: Jahangir commissioned numerous paintings depicting hunting scenes, animal studies, and portraits, often employ⟧ Jahangir commissioned many paintings, including hunting scenes and portraits, initially using a flattened perspective but later incorporating elements of European spatial illusionism.
-[ 89.88s][user ] «backchannel» Yeah, yeah.
-[ 90.69s][user ] So it developed over time, it wasn't an instant shift?
-[ 94.72s][moshi] Exactly. It was a gradual process of experimentation and adaptation.
-[ 98.75s][user ] «backchannel» Yeah.
-[ 99.15s][user ] I think I need to find some examples to really see ⟨ret@103.59s⟩ it.
-[103.99s][moshi] ⟦⚡SPAN@103.99s: (tool result) Jahangir Receiving Prince Khurram (later Shah Jahan) - The painting showcases a more developed s⟧ There's "Jahangir Receiving Prince Khurram", showcasing a developed sense of perspective. You can find it on Google Arts & Culture. It’s a beautiful example of the shift you’re researching.
-      CALL: {"function": "search", "arguments": {"query": "Jahangir paintings perspective"}}
-[115.67s][user ] «backchannel» Yeah.
-[116.08s][user ] That sounds perfect, thank you so much, Rena!
-[119.30s][moshi] You’re very welcome! Remember, consistent study and exploration are key. Don't hesitate to reach out if you get stuck again.
+[  0.00s][user ] Hi Ana, I was wondering, what is the name of the Korean alphabet?
+[  4.85s][moshi] «backchannel» Mhm.
+[  5.22s][moshi] ⟨ret@4.98s⟩ ⟦⚡SPAN@5.22s: Hangul is the native alphabet of the Korean language, and it was created in 1443 by King Sejong the Great.⟧ The native alphabet of the Korean language is called Hangul—it was actually created in fourteen forty-three by King Sejong the Great. It’s a fascinating piece of linguistic history.
+[ 15.66s][user ] «backchannel» Okay.
+[ 16.03s][user ] That's interesting! Is it a phonetic alphabet?
+[ 18.64s][moshi] Yes, it is! Hangul is remarkably phonetic, meaning the shapes of the letters reflect the sounds they represent. This makes it quite logical to learn.
+[ 27.96s][user ] I've heard it's relatively easy to learn compared to Chinese characters.
+[ 32.06s][moshi] «backchannel» Uh-huh.
+[ 32.44s][moshi] ⟨ret@32.36s⟩ You’ve ⟦⚡SPAN@33.24s: Compared to the thousands of Chinese characters, Hangul consists of only twenty-four basic letters, making it ⟧ heard correctly. Compared to the thousands of Chinese characters, Hangul consists of only twenty-four basic letters, making it significantly easier to pick up. Many learners find its structure very intuitive.
+[ 43.99s][user ] Twenty-four letters, that’s not bad at all. What are some of the basic vowel sounds.
+[ 49.59s][moshi] «backchannel» Mhm.
+[ 49.96s][moshi] «interrupted» Well, the basic vowels are ɑ, ə, e, i, o, and u—
+[ 54.43s][user ] «interrupts_prev» …but is Hangul still used today, or is it mostly replaced by English ⟨ret@59.33s⟩ now?
+[ 59.65s][moshi] ⟦⚡SPAN@59.65s: Hangul is the official writing system in both North and South Korea, and it’s used in all aspects of life, fro⟧ Hangul remains the official writing system in both North and South Korea—it’s used in everything from newspapers to social media. It's very much alive and well!

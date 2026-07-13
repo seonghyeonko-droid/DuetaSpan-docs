@@ -1,59 +1,62 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Jura, a grounded and empathetic life coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Elellaen, a calm and patient supportive advisor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Nathan",
+    "name": "Samuel",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
+    "nationality": "British",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-11-10",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-10-21",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-09-10",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-08-26",
+      "date": "2026-06-02",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
+      "text": "User is planning a trip to Switzerland in December."
     },
     {
-      "date": "2025-08-19",
+      "date": "2026-02-22",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-02-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-10-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-02",
-      "title": "Comparing gym memberships",
+      "date": "2026-05-01",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-03-30",
+      "date": "2026-01-13",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-11-10",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -64,22 +67,62 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Victoria and Albert were the guests of honor at a small ball that took place where? ⟨ret@6.18s⟩
-[  6.26s][moshi] ⟦⚡SPAN@6.26s: (no information found)⟧ That's a lovely historical question, but unfortunately, the location of that specific ball isn’t widely recorded.
-[ 12.52s][user ] «backchannel» Uh-huh.
-[ 12.91s][user ] Oh, that’s a shame. Well, I’m planning a trip to London next month.
-[ 18.00s][moshi] That sounds wonderful! London is a fantastic city, full of history and charm.
-[ 23.09s][user ] I was hoping to visit some places connected to Queen Victoria. ⟨ret@27.31s⟩
-[ 27.39s][moshi] ⟦⚡SPAN@27.39s: Queen Victoria reigned over the United Kingdom of Great Britain and Ireland from 20 June 1837 until her death ⟧ Queen Victoria had a very long and influential reign, from June twentieth, eighteen thirty-seven, until her death on January twenty-second, nineteen hundred and one.
-[ 36.78s][user ] That’s a long time! Are there any palaces still open to the ⟨ret@41.47s⟩ public?
-[ 41.87s][moshi] ⟦⚡SPAN@41.87s: Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom⟧ Buckingham Palace is still open to the public during certain times of the year—it’s the London residence of the monarch.
-[ 49.70s][user ] «backchannel» Right.
-[ 50.09s][user ] I’d love to see Buckingham Palace.…
-[ 52.44s][user ] …What’s the best way to get ⟨ret@54.85s⟩ tickets?.
-[ 55.17s][moshi] ⟦⚡SPAN@55.17s: (no information found)⟧ I’m sorry, I cannot find information about tickets for Buckingham Palace through this tool.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {}}
-[ 60.65s][user ] …But can you at least find out when it’s open to ⟨ret@64.95s⟩ visitors?
-[ 65.35s][moshi] ⟦⚡SPAN@65.35s: (tool result) Buckingham Palace will be open for summer tours from July 22nd to September 30th, 2026, with tim⟧ Buckingham Palace will be open for summer tours from July twenty-second to September thirtieth, twenty twenty-six, with timed-entry tickets required.
-      CALL: {"function": "search", "arguments": {"query": "Buckingham Palace opening dates 2026"}}
-[ 73.18s][user ] Perfect! That fits my schedule. Can you find me some restaurants ⟨ret@77.55s⟩ nearby?
-[ 77.87s][moshi] ⟦⚡SPAN@77.87s: The Goring Hotel Dining Room is located 0.6 miles from Buckingham Palace, offering modern British cuisine.⟧ The Goring Hotel Dining Room is just point six miles from the Palace, and offers modern British cuisine. Perhaps that would be a nice treat?
+[  0.00s][user ] What practice was introduced by the NRA in 2005?
+[  3.52s][moshi] «backchannel» Uh-huh.
+[  3.92s][moshi] ⟨ret@3.76s⟩ ⟦⚡SPAN@3.92s: (no information found)⟧ I’m sorry, I don’t have any information about a practice introduced by the NRA in 2005.
+[ 10.18s][moshi] It’s understandable to be curious about an organization’s history, though.
+[ 14.10s][user ] «backchannel» Right.
+[ 14.49s][user ] Okay… um, what’s the weather like in Seoul right now? ⟨ret@18.32s⟩
+[ 18.40s][moshi] ⟦⚡SPAN@18.40s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with 74 percent humidity and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 27.02s][moshi] A pleasant summer day, it seems.
+[ 29.37s][user ] «backchannel» Right.
+[ 29.76s][user ] That sounds nice. Can you find me some Italian restaurants ⟨ret@33.75s⟩ nearby?
+[ 34.07s][moshi] ⟦⚡SPAN@34.07s: (tool result) Trattoria Pizzeria, 4.5 stars, 123 Main Street; Bella Italia, 4.2 stars, 456 Oak Avenue⟧ I found two Italian restaurants nearby: Trattoria Pizzeria, rated 4.5 stars, at 123 Main Street, and Bella Italia, 4.2 stars, at 456 Oak Avenue.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 43.46s][user ] «backchannel» Wow.
+[ 43.86s][user ] Tell me more about Bella ⟨ret@45.81s⟩ Italia.
+[ 46.21s][moshi] ⟦⚡SPAN@46.21s: (tool result) Bella Italia, 4.2 stars, 456 Oak Avenue, Italian, $$⟧ Bella Italia is an Italian restaurant with 4.2 stars, located at 456 Oak Avenue, and it’s in the moderate price range.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Bella Italia"}}
+[ 54.43s][moshi] They seem to have good reviews.
+[ 56.78s][user ] Can I make a reservation there for two people this ⟨ret@60.77s⟩ Saturday?
+[ 61.09s][moshi] ⟦⚡SPAN@61.09s: (tool result) Reservation confirmed for Bella Italia, Saturday, July 12, 2026, 7:00 PM, party of 2, confirmati⟧ Your reservation at Bella Italia is confirmed for Saturday, July 12, 2026, at 7:00 PM for a party of two; your confirmation ID is BX829.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "2026-07-12", "party_size": "2"}}
+[ 70.87s][moshi] I’m happy to help with that!
+[ 73.22s][user ] Great! I also need to set an alarm for 6:30 AM ⟨ret@77.52s⟩ tomorrow.
+[ 77.92s][moshi] ⟦⚡SPAN@77.92s: (tool result) Alarm set for 06:30 tomorrow⟧ An alarm has been set for 6:30 AM tomorrow.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:30"}}
+[ 81.45s][moshi] Getting enough sleep is so important, especially with a busy weekend ahead.
+[ 86.15s][user ] «backchannel» Yeah.
+[ 86.54s][user ] Thanks. What movies are playing this ⟨ret@89.04s⟩ weekend?
+[ 89.28s][moshi] ⟦⚡SPAN@89.28s: (tool result) "Action Hero 7", "Comedy Capers", "Drama Days" are playing this weekend.⟧ "Action Hero 7", "Comedy Capers", and "Drama Days" are currently playing in theaters this weekend.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
+[ 95.15s][user ] «backchannel» Really?
+[ 95.54s][user ] Tell me about "Comedy ⟨ret@97.26s⟩ Capers".
+[ 97.50s][moshi] ⟦⚡SPAN@97.50s: (tool result) "Comedy Capers", Comedy, 1hr 35min, rated PG-13.⟧ "Comedy Capers" is a comedy film, lasting 1 hour and 35 minutes, and it’s rated PG-13.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"movie_name": "Comedy Capers"}}
+[103.77s][moshi] It sounds like a lighthearted choice for a weekend outing.
+[107.68s][user ] What time does it start at the Grand ⟨ret@110.81s⟩ Cinema?
+[111.21s][moshi] ⟦⚡SPAN@111.21s: (tool result) "Comedy Capers" at Grand Cinema: 2:00 PM, 4:30 PM, 7:00 PM, 9:30 PM⟧ “Comedy Capers” is playing at the Grand Cinema at 2:00 PM, 4:30 PM, 7:00 PM, and 9:30 PM.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Comedy Capers", "cinema_name": "Grand Cinema"}}
+[118.25s][moshi] Plenty of options to fit your schedule.
+[121.00s][user ] I think I’ll go to the 7:00 PM showing.
+[124.52s][moshi] «backchannel» Oh.
+[124.91s][moshi] That sounds like a great plan!
+[127.26s][moshi] I hope you enjoy the movie, and have a wonderful time.
+[131.57s][user ] «backchannel» Yeah.
+[131.96s][user ] Um, could you remind me what day my appointment with Dr. Lee is? ⟨ret@136.89s⟩
+[137.05s][moshi] ⟦⚡SPAN@137.05s: [2024-03-15] I have an appointment with Dr. Lee on March 15th.⟧ You have an appointment with Dr. Lee on March 15th.
+[140.97s][moshi] It's always good to stay on top of things like that.
+[145.27s][user ] Oh right, thanks! That’s a while away.
+[148.01s][moshi] It is a bit in the future, yes.
+[151.15s][moshi] Planning ahead can really reduce stress, though!
+[153.89s][user ] «backchannel» Uh-huh.
+[154.28s][user ] True. Can you find me some information about mindfulness for parents? ⟨ret@158.51s⟩
+[158.59s][moshi] ⟦⚡SPAN@158.59s: (tool result) Mindfulness for Parents: Cultivating Presence and Reducing Stress – Verywell Family – https://ww⟧ Mindfulness for Parents: Cultivating Presence and Reducing Stress is an article on Verywell Family.
+      CALL: {"function": "search", "arguments": {"query": "mindfulness for parents"}}
+[164.07s][moshi] It’s a wonderful tool for navigating the challenges of parenthood.
+[167.98s][user ] «backchannel» Yeah.
+[168.38s][user ] That sounds helpful. Thank you.
+[170.33s][moshi] You're very welcome.
+[171.51s][moshi] Remember, taking a few moments for yourself can make a big difference.

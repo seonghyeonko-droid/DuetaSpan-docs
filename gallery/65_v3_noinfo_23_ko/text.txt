@@ -1,68 +1,114 @@
 v3_noinfo_23_ko src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 크래이며, 사람들의 우정과 사회생활에 도움을 주는 차분하고 공감적인 상담사입니다. <system>
+SYSTEM: <system> 당신은 사람들의 우정과 사교 생활을 돕는 격려적이고 비판적이지 않은 라이프 코치인 에아노입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "우완",
+    "name": "하희",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-13",
+      "date": "2026-06-26",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-12-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-11-11",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-08-07",
+      "date": "2026-06-23",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-02-04",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-01-03",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-10-12",
+      "category": "home",
+      "text": "User's home address is 대구 중구 동인동 88-1."
+    },
+    {
+      "date": "2025-07-02",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-09",
+      "date": "2026-06-18",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 김민지 씨 연락처 ⟨ret@1.85s⟩ 알아요?
-[  2.25s][moshi] ⟦⚡SPAN@2.25s: (no information found)⟧ 죄송하지만, 김민지 씨의 연락처는 찾을 수 없었어요. 개인 정보라서 공개되어 있지 않은 것 같아요.
+[  0.00s][user ] 혹시 김민지 씨 연락처 알 수 ⟨ret@2.89s⟩ 있을까요?
+[  3.29s][moshi] ⟦⚡SPAN@3.29s: (no information found)⟧ 죄송해요, 김민지 씨 연락처는 찾을 수 없었어요. 개인 정보라서 공개되어 있지 않나 봐요.
       CALL: {"function": "search", "arguments": {"query": "김민지 연락처"}}
-[  8.56s][user ] 아, 그렇군요. 그럼 내일 모레 토요일에 서울 날씨는 ⟨ret@12.38s⟩ 어때요?
-[ 12.62s][moshi] ⟦⚡SPAN@12.62s: (tool result) 25.5°C, humidity 68%, wind 4.2 km/h⟧ 내일 모레 토요일인 칠월 십일일 서울 날씨는 최고 기온이 이십오 점 오도, 습도는 육십팔퍼센트, 바람은 시속 사 점 이킬로미터로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울", "date": "2026-07-11"}}
-[ 21.63s][user ] «backchannel» 응.
-[ 22.08s][user ] 그럼 그날 저녁에 영화 볼 만한 거 ⟨ret@25.36s⟩ 있을까요?
-[ 25.68s][moshi] ⟦⚡SPAN@25.68s: (tool result) "미션 임파서블: 데드 레코닝 PART ONE" - 19:00, 21:30, CGV 강남, "엘리멘탈" - 18:00, 20:30, 롯데시네마 월드타워⟧ 칠월 십일일 저녁 서울에서 상영하는 영화 중에는 ‘미션 임파서블: 데드 레코닝 PART ONE’과 ‘엘리멘탈’이 있습니다. 씨 지 브이 강남과 롯데시네마 월드타워에서 상영해요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-07-11", "location": "서울"}}
-[ 35.60s][user ] «backchannel» 응.
-[ 36.05s][user ] 미션 임파서블, 씨 지 브이 강남으로 예매해 줘. 저녁 일곱시 ⟨ret@40.76s⟩ 삼십분으로.
-[ 41.00s][moshi] ⟦⚡SPAN@41.00s: (tool result) 예약 완료: 미션 임파서블: 데드 레코닝 PART ONE, CGV 강남, 7월 11일 19:30, 좌석 A12, 예약번호: 948273⟧ 네, ‘미션 임파서블: 데드 레코닝 PART ONE’ 씨 지 브이 강남 칠월 십일일 일곱시 삼십분으로 예매 완료되었습니다. 좌석은 에이 십이이고, 예약번호는 구 사 팔 이 칠 삼입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "미션 임파서블: 데드 레코닝 PART ONE", "theater": "CGV 강남", "time": "19:30", "date": "2026-07-11"}}
-[ 53.17s][moshi] 영화 보러 가시기 전에 맛있는 저녁 식사도 하실 계획이신가요?
+[  9.39s][user ] «backchannel» 네.
+[  9.86s][user ] 아, 그러네요. 그럼 오늘 서울 날씨는 ⟨ret@12.91s⟩ 어때요?
+[ 13.15s][moshi] ⟦⚡SPAN@13.15s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 지금 서울은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 불고 있어요. 오늘 하루도 꽤 덥겠네요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울"}}
+[ 20.66s][user ] 네, 더울 것 같아요. 이번 주 토요일에 영화 보러 갈까요?
+[ 25.35s][moshi] 좋은 생각이에요! 어떤 영화를 보고 싶으세요?
+[ 28.17s][user ] 음… 액션 영화가 보고 싶은데, 혹시 새로 나온 영화 중에 추천해 줄 만한 거 ⟨ret@34.97s⟩ 있어요?
+[ 35.21s][moshi] ⟦⚡SPAN@35.21s: (tool result) "범죄도시 4" - 액션, 범죄, 2024년 4월 24일 개봉, 마동석, 이준혁 주연.⟧ "범죄도시 사"가 새로 개봉했고, 액션 영화로 인기가 많아요. 마동석 배우와 이준혁 배우가 주연으로 출연해요.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"genre": "액션"}}
+[ 41.78s][user ] 오, 그거 재미있을 것 같네요. 그럼 이번 주 토요일 저녁 일곱시에 예매해 줄 수 있어요?
+[ 48.82s][moshi] «backchannel» 정말요?
+[ 49.29s][moshi] ⟨ret@49.05s⟩ ⟦⚡SPAN@49.29s: (tool result) 예매 완료. 좌석: A12, 예매번호: 789012⟧ 네, "범죄도시 사" 이번 주 토요일 저녁 일곱시로 좌석 에이 십이번 예매 완료되었습니다. 예매번호는 칠 팔 구 공 일 이번이에요.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "범죄도시 4", "date": "2026-07-11", "time": "19:00"}}
+[ 58.68s][user ] «backchannel» 정말요?
+[ 59.15s][user ] 감사합니다. 혹시…—
+[ 60.09s][user ] …저기, 혹시 예매한 영화관까지 가는 버스 시간표도 알아봐 줄 수 있을까요?
+[ 65.26s][moshi] 어디에서 출발하시나요?
+[ 66.19s][user ] 지금 있는 곳에서 출발하는 버스 시간표를 ⟨ret@69.24s⟩ 알려주세요.
+[ 69.48s][moshi] ⟦⚡SPAN@69.48s: (tool result) 15:30, 16:00, 16:30, 17:00, 17:30, 18:00⟧ 지금 위치에서 출발하는 버스는 오후 세시 삼십분, 네시, 네시 삼십분, 다섯시, 다섯시 삼십분, 여섯시에 있어요.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "현재 위치"}}
+[ 76.52s][user ] 다섯시 버스를 타면 괜찮을 것 같아요.
+[ 79.34s][moshi] 네, 다섯시 버스를 타시면 영화관에 맞춰 도착하실 수 있을 거예요.
+[ 84.03s][user ] «backchannel» 네.
+[ 84.50s][moshi] 혹시 영화 보러 가기 전에 저녁 식사도 함께 하실 건가요?
+[ 89.20s][user ] «backchannel» 네.
+[ 89.67s][user ] 아, 저녁은 영화 보고 나서 먹을까요?
+[ 92.49s][moshi] 영화 보시고 나서 맛있는 저녁 드세요. 혹시 주변에 맛집을 알아봐 드릴까요?
+[ 97.65s][user ] 네, 영화관 주변에 맛집 좀 알아봐 주세요. ⟨ret@100.86s⟩
+[100.94s][moshi] ⟦⚡SPAN@100.94s: (tool result) "맛있는 짬뽕집" - 중식, 평점 4.5/5, "스테이크 하우스" - 양식, 평점 4.2/5⟧ 영화관 주변에는 "맛있는 짬뽕집"과 "스테이크 하우스"가 유명해요. "맛있는 짬뽕집"은 중식으로 평점 사 점 오점이고, "스테이크 하우스"는 양식으로 평점 사 점 이점이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "영화관 주변"}}
+[110.79s][user ] 짬뽕집이 끌리네요.
+[111.73s][moshi] 짬뽕 좋아하시는군요! 저도 짬뽕 정말 좋아해요. 맛있는 식사 하시고 즐거운 영화 관람 되세요.

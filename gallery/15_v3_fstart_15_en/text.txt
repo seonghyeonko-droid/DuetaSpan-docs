@@ -1,87 +1,101 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Goraia, a grounded and empathetic counselor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Garil, a warm and attentive life coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Jack",
+    "name": "Remy",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "late 30s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-22",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-03-16",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-03",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-02-12",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-12-06",
+      "date": "2026-03-13",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-08-26",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-07-02",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-29",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-05",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to book an appointment with a counselor.
-[  3.57s][moshi] I can help with that. Do you have a preferred counselor in mind?
-[  8.74s][user ] «backchannel» Mm-hmm.
-[  9.13s][user ] No, not really. Someone good with travel anxiety, ⟨ret@12.47s⟩ maybe?
-[ 12.71s][moshi] «interrupted» ⟦⚡SPAN@12.71s: Goraia specializes in travel anxiety and has over ten years of experience helping clients prepare for and enjo⟧ Goraia specializes in travel anxiety and—
-[ 15.09s][user ] «interrupts_prev» …Is she available next week?
-[ 17.08s][moshi] Yes, Goraia has some openings next week. What day would work best for you?
-[ 22.64s][user ] Hmm, maybe Tuesday? ⟨ret@23.75s⟩
-[ 23.83s][moshi] ⟦⚡SPAN@23.83s: (tool result) Appointment confirmed with Goraia on Tuesday, July 14, 2026, at 10:00 AM. Confirmation ID: 87B39⟧ Great, your appointment with Goraia is confirmed for Tuesday, July 14th, at 10:00 AM. Confirmation ID is 87B392.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Goraia", "date": "2026-07-14", "time": "10:00"}}
-[ 30.98s][user ] Perfect. And could you remind me what I should bring to the first session?
-[ 36.54s][moshi] That's a good question to prepare. It's helpful to bring a list of your travel concerns.
-[ 42.89s][user ] «backchannel» Yeah.
-[ 43.29s][moshi] I find it’s also useful to think about past travel experiences—both positive and challenging—to share.
-[ 49.25s][user ] Okay, that makes sense. I’m going to Italy next month.
-[ 53.22s][moshi] Italy is beautiful! It’s a very popular destination, so it’s common to feel some anxiety.
-[ 59.18s][user ] It’s my first time traveling alone, which is part of the worry.
-[ 63.94s][moshi] Traveling solo for the first time is a big step. It’s perfectly normal to feel apprehensive.
-[ 70.30s][user ] I'm also trying to learn some Italian phrases.
-[ 73.48s][moshi] That's a wonderful idea. Knowing a little of the local language can really enhance your experience.
-[ 79.83s][user ] «backchannel» Yeah, yeah.
-[ 80.62s][user ] Do you know a good app for ⟨ret@83.48s⟩ that?
-[ 83.80s][moshi] «interrupted» ⟦⚡SPAN@83.80s: Duolingo is the most popular language-learning app, with over 500 million users and courses in 40+ languages, ⟧ I can certainly help with that. Duolingo is a very popular app, with over 500 million users—
-[ 90.55s][user ] «interrupts_prev» Is it free?
-[ 91.74s][moshi] Yes, Duolingo is free to use, with optional paid subscriptions for extra features.
-[ 96.91s][user ] That’s good to know. What’s the weather usually like in Rome in August? ⟨ret@101.91s⟩
-[102.07s][moshi] ⟦⚡SPAN@102.07s: The average high temperature in Rome in August is 31.2°C, with lows around 20.3°C. Rainfall is minimal, averag⟧ Typically, Rome in August has average highs of 31.2°C and lows around 20.3°C. There’s very little rainfall, averaging only 21 mm for the month.
-[111.60s][user ] Okay, that’s hot. I should pack light clothes then.
-[115.18s][moshi] Lightweight, breathable fabrics will be your best friend.
-[118.35s][user ] «backchannel» Really?
-[118.75s][user ] I think I’m ready to start making a packing list.
-[122.72s][moshi] That’s a proactive step. A well-thought-out packing list can reduce a lot of pre-trip stress.
-[128.68s][user ] Thanks, Goraia. You've been really helpful.
-[131.06s][moshi] You're very welcome. I’m glad I could assist you in preparing for your trip. Remember, a little planning goes a long way.
+[  0.00s][user ] I'm thinking of going to Jeju Island next month. What's the weather usually like then?
+[  6.28s][moshi] «backchannel» Mm-hmm.
+[  6.70s][moshi] ⟨ret@6.46s⟩ ⟦⚡SPAN@6.70s: The average temperature in Jeju Island in September ranges from 22.1°C to 26.6°C, with humidity around 72% and⟧ Jeju Island in September usually sees temperatures between 22.1 and 26.6°C, with humidity around 72% and winds around 3.6 kilometers per hour. It’s a lovely time to visit, a bit warm but pleasant.
+[ 20.52s][user ] That sounds nice. Uh, are there any good hiking trails there?
+[ 25.12s][moshi] Oh, Jeju is fantastic for hiking! There are trails for all levels. Have you been before?
+[ 31.82s][user ] «backchannel» Right.
+[ 32.24s][user ] No, never. I'd like something…moderate, maybe? Not too strenuous. ⟨ret@35.93s⟩
+[ 36.01s][moshi] ⟦⚡SPAN@36.01s: Hallasan National Park offers the Yeongsil Trail, a 7.8 kilometer hike taking approximately 3 hours and 30 min⟧ For a moderate hike, I recommend the Yeongsil Trail in Hallasan National Park, a 7.8 kilometer path taking around 3 hours and 30 minutes, gaining 640 meters in elevation. It's quite popular, and the views are breathtaking.
+[ 51.50s][user ] 3.5 hours? That’s a bit long, isn't it?.
+[ 54.85s][moshi] «backchannel» Oh.
+[ 55.27s][moshi] It can feel long, yes. We can look for something shorter if you’d prefer. Perhaps something around two hours?
+[ 63.23s][user ] «backchannel» Yeah.
+[ 63.65s][user ] Yeah, two hours sounds much ⟨ret@65.92s⟩ better.
+[ 66.16s][moshi] ⟦⚡SPAN@66.16s: The Seongsan Ilchulbong Peak Trail is a 1.8 kilometer hike taking approximately 1 hour to complete, with an el⟧ I found the Seongsan Ilchulbong Peak Trail, which is 1.8 kilometers and takes about an hour, gaining 182 meters. It's a beautiful sunrise spot.
+[ 76.21s][user ] Seongsan… that's the one with the crater, right?
+[ 79.56s][moshi] «backchannel» Yeah, yeah.
+[ 80.39s][moshi] Yes, exactly! It's a volcanic crater rising from the sea. It’s truly stunning.
+[ 85.84s][user ] Is it crowded? I really dislike crowds. ⟨ret@88.69s⟩
+[ 88.77s][moshi] ⟦⚡SPAN@88.77s: Seongsan Ilchulbong Peak receives approximately 2.5 million visitors annually, with peak times being sunrise a⟧ Seongsan Ilchulbong Peak gets around 2.5 million visitors each year, especially during sunrise and sunset. It can get busy, but going mid-morning might be quieter.
+[ 99.24s][user ] Okay, good to know. Can you find me a restaurant nearby? ⟨ret@103.68s⟩
+[103.84s][moshi] ⟦⚡SPAN@103.84s: (tool result) [Restaurant Name: O'Sulloc Tea House, Cuisine: Korean, Rating: 4.5, Price Tier: $]⟧ I found O’Sulloc Tea House near Seongsan Ilchulbong Peak. It’s a Korean restaurant with a 4.5 rating and a budget price tier.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seongsan Ilchulbong Peak"}}
+[113.06s][user ] Tea house sounds lovely. Can I make a reservation for, say, next ⟨ret@118.10s⟩ Saturday?
+[118.50s][moshi] ⟦⚡SPAN@118.50s: (tool result) Reservation confirmed for O'Sulloc Tea House on July 18, 2026 at 1:00 PM. Confirmation ID: 74928⟧ Excellent! I’ve reserved a table for you at O’Sulloc Tea House on July 18th at 1:00 PM. Your confirmation ID is 749283.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "O'Sulloc Tea House", "date": "2026-07-18", "time": "13:00"}}
+[127.71s][user ] Perfect. Thanks so much, Garil!
+[129.80s][moshi] You’re very welcome! I'm glad I could help with your Jeju Island plans. Remember to pace yourself on the hike – enjoy the journey!

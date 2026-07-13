@@ -1,46 +1,46 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Morara, a upbeat and supportive personal guide who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Junara, a curious and validating counselor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Kim",
+    "name": "Ada",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-08",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-06-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-08-28",
+      "date": "2026-03-11",
       "category": "pet",
       "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-07-17",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-09-08",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2025-06-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2025-07-23",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-28",
+      "date": "2026-04-27",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -48,45 +48,54 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-21",
-      "title": "Comparing gym memberships",
+      "date": "2026-01-11",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Morara, I was just ⟨ret@2.08s⟩ wondering…
-[  2.40s][moshi] ⟦⚡SPAN@2.40s: Sam Elliott voiced Butch, the Tyrannosaurus rex, in Disney•Pixar’s 2015 animated film, The Good Dinosaur.⟧ Oh, that's a fun question! Sam Elliott actually voiced Butch, the T-Rex in *The Good Dinosaur*. He brought such a great gruffness to the character, didn't he?
-[ 13.20s][user ] Wow, really? I wouldn’t have guessed that!
-[ 16.01s][moshi] It's a bit of a surprising choice, I think, which is part of why it works so well! He’s a really versatile actor.
-[ 25.21s][user ] [happy] I love that movie! Do you have any favorite dinosaur movies?
-[ 30.01s][moshi] That's wonderful to hear! As for me, I don’t really *have* favorites, but I think *Jurassic Park* is a classic for a reason.
-[ 39.21s][user ] «backchannel» Yeah, yeah.
-[ 40.01s][user ] Hmm, yeah, that's a good one. I’m planning a movie night this weekend…
-[ 45.22s][moshi] Oh, that sounds like a lovely plan! What kind of movies are you thinking of watching?
-[ 51.62s][user ] Well, I was thinking maybe something with dinosaurs, but also…
-[ 55.62s][user ] …something not *too* scary. My little cousin is coming.
-[ 59.22s][moshi] That’s very considerate of you! Finding the right balance is important.
-[ 63.62s][user ] Exactly! So, uh, can you search for family-friendly dinosaur ⟨ret@67.22s⟩ movies?
-[ 67.62s][moshi] ⟦⚡SPAN@67.62s: (tool result) "Dinosaur" (2000) is a 2000 American computer-animated adventure film produced by Walt Disney Fe⟧ I found "Dinosaur," a Disney film from 2000, which Common Sense Media recommends for ages eight and up. It's praised for its visuals. It seems like a good option for a family night!
-      CALL: {"function": "search", "arguments": {"query": "family-friendly dinosaur movies"}}
-[ 80.83s][user ] «backchannel» Wow.
-[ 81.23s][user ] Oh, that sounds perfect! Can you check the showtimes for it nearby?
-[ 86.03s][moshi] I'm happy to help! But, to check showtimes, I need to know your location. Could you share that with me?
-[ 94.03s][user ] Oh, right! Sorry. It's Seoul, South Korea. ⟨ret@96.76s⟩
-[ 96.84s][moshi] ⟦⚡SPAN@96.84s: (no information found)⟧ I’m sorry, I wasn’t able to find any current showtimes for "Dinosaur" in Seoul. It's an older movie, so it isn't playing in theaters.
-      CALL: {"function": "search", "arguments": {"query": "showtimes for Dinosaur Seoul South Korea"}}
-[106.44s][user ] [sigh] Oh, that's too bad. Okay, new plan. What about finding a good family restaurant ⟨ret@112.52s⟩ nearby?
-[112.84s][moshi] ⟦⚡SPAN@112.84s: (tool result) [Restaurant Name: Han Cook, Cuisine: Korean, Rating: 4.5 stars, Price Range: ₩₩]⟧ I found Han Cook, a Korean restaurant in Seoul, with a rating of four and a half stars. The price range is moderate.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul, South Korea"}}
-[122.04s][user ] That sounds lovely! Can you make…
-[124.45s][user ] …a reservation for four people there…
-[126.85s][user ] …this Saturday at 6 ⟨ret@128.45s⟩ PM?
-[128.85s][moshi] ⟦⚡SPAN@128.85s: (tool result) Reservation confirmed at Han Cook for 4 people on July 11, 2026 at 6:00 PM. Confirmation ID: HC7⟧ Wonderful! I’ve made a reservation at Han Cook for four people this Saturday at six PM. Your confirmation ID is HC72941.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Han Cook", "date": "2026-07-11", "time": "18:00", "party_size": "4"}}
-[137.25s][user ] Perfect! You're a lifesaver, Morara.
-[139.25s][moshi] I'm so glad I could help! Building happy memories with family is what it’s all about, isn’t it?
+[  0.00s][user ] I was wondering about the Vidhan Parishad.
+[  2.82s][moshi] The Vidhan Parishad is the legislative council in some Indian states.
+[  7.26s][user ] Is there a minimum age to become a member?
+[ 10.89s][moshi] «backchannel» Yeah.
+[ 11.29s][moshi] ⟨ret@10.89s⟩ ⟦⚡SPAN@11.29s: To be eligible for election to the Legislative Council, a person must have attained the age of thirty years.⟧ To be eligible for election, a person must have attained the age of thirty years.
+[ 17.34s][user ] Thirty years old, that’s good to know. And what about the Lok Sabha? ⟨ret@22.42s⟩
+[ 22.58s][moshi] ⟦⚡SPAN@22.58s: No person shall be eligible for membership of the House of the People who is not of the age of twenty-five yea⟧ The minimum age for membership of the Lok Sabha is twenty-five years.
+[ 27.42s][user ] «backchannel» Yeah.
+[ 27.82s][user ] So, a ten-year difference… hmm.
+[ 29.84s][moshi] It is quite a difference, isn’t it? Age requirements do vary between houses.
+[ 35.08s][user ] «backchannel» Uh-huh.
+[ 35.48s][user ] What’s the purpose of having different age limits?
+[ 38.71s][moshi] «backchannel» Yeah.
+[ 39.11s][moshi] That's a thoughtful question! It likely reflects the different levels of experience expected for each role.
+[ 45.56s][user ] I see. Is it the same age limit across all states with a Vidhan Parishad?
+[ 51.61s][moshi] «backchannel» Yeah.
+[ 52.02s][moshi] ⟨ret@51.78s⟩ ⟦⚡SPAN@52.02s: The Constitution of India does not prescribe a uniform age for membership of all State Legislative Councils; i⟧ The Constitution doesn’t prescribe a uniform age; it's determined by state laws.
+[ 56.85s][user ] Oh, so it can vary by state? That’s interesting—
+[ 60.48s][user ] …but is it usually thirty…
+[ 62.50s][user ] …or are there states that are different?
+[ 65.32s][moshi] «backchannel» Yeah.
+[ 65.72s][moshi] ⟨ret@65.56s⟩ ⟦⚡SPAN@65.72s: Maharashtra's Legislative Council Act, 1960, specifies a minimum age of thirty years for membership.⟧ Maharashtra’s Legislative Council Act specifies a minimum age of thirty years for membership.
+[ 70.97s][user ] «backchannel» Mm-hmm.
+[ 71.37s][user ] Okay, Maharashtra is thirty. What about Uttar Pradesh? ⟨ret@74.44s⟩
+[ 74.60s][moshi] ⟦⚡SPAN@74.60s: The Uttar Pradesh Legislative Council Act, 1968, also stipulates a minimum age of thirty years for its members⟧ Uttar Pradesh also stipulates a minimum age of thirty years for its members.
+[ 79.84s][user ] So, it seems…
+[ 81.05s][user ] …like thirty is pretty standard, then.
+[ 83.47s][moshi] «backchannel» Yeah.
+[ 83.87s][moshi] It appears to be, yes. It’s good to understand those qualifications.
+[ 88.31s][user ] «backchannel» Yeah, totally.
+[ 89.11s][user ] It is. Thank you for explaining that to me, Junara.
+[ 93.14s][moshi] You’re very welcome!

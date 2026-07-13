@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "성우",
+#     "name": "소별",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,89 +12,97 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-06-11",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-11-11",
+#       "date": "2026-04-17",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#     },
+#     {
+#       "date": "2026-03-22",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-31",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-06-05",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-09-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2025-06-04",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-06-19",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-06",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-06",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 상담 같은 걸 해주시는 건가요? | S2 그냥… 모든 게 다 제 잘못인 것 같다는 생각에 빠져요. 동료 | S3 …혹시, 이런 기분을 극복하는 데 도움이 되는 방법 같은 게  | S4 작은 성공에 칭찬… 한번 시도해볼게요. 감사합니다, 켈란님.
+# EXAMINER(FDB-v2) 단계: S1 혹시 친구 사귀는 걸 도와주시는 건가요? | S2 아니, 그런 건 아니에요. 그냥… 기회가 없어요. | S3 글쎄요… 회사 다니고, 주말에는 집에서 쉬거나 가끔 친구 만나 | S4 그런 것도 생각해 봤는데… 좀 어색할 것 같아서요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 성우님. 저는 켈란이라고 해요. 괜찮으시다면, 힘든 시간을 보내고 계신 분들이 마음의 평화를 찾
-     9.29s  user  발화 시작: 네.
-     9.29s  agent 발화 끝
-     9.80s  user  발화 시작: 혹시 상담 같은 걸 해주시는 건가요?
-     9.80s  user  발화 끝
-    12.90s  agent 발화 시작: 네, 맞아요. 삶의 변화나 상실로 힘든 시간을 보내는 분들이 감정을 정리하고 앞으로 나아갈 수 있도록 함께 
-    12.90s  user  발화 끝
-    24.77s  user  발화 시작: 음… 사실 요즘 회사 일이 너무 힘들어서요. 계속 실수만 하고, 자신감도 떨어지고…
-    24.77s  agent 발화 끝
-    30.96s  agent 발화 시작: 회사 일이 힘드시군요. 계속 실수를 반복하고 자신감까지 잃으셨다니, 얼마나 마음고생이 심하실지 짐작이 가요.
-    30.96s  user  발화 끝
-    40.76s  user  발화 시작: 아.
-    40.76s  agent 발화 끝
-    41.28s  agent 발화 시작: 혹시 어떤 부분에서 가장 어려움을 느끼시는지 조금 더 자세히 말씀해주실 수 있을까요? 구체적으로 어떤 상황이
-    41.28s  user  발화 끝
-    57.27s  user  발화 시작: 그냥… 모든 게 다 제 잘못인 것 같다는 생각에 빠져요. 동료들은 다 잘하는데, 저만 뒤처지는 기분이랄까요.
-    57.27s  agent 발화 끝
-    65.53s  agent 발화 시작: 모든 게 다 본인의 잘못이라고 생각하니 더욱 힘드시겠어요. 동료분들과 비교하면서 자책하는 마음이 드는군요. 
-    65.53s  user  발화 끝
-    77.91s  user  발화 시작: 네네.
-    77.91s  agent 발화 끝
-    78.43s  user  발화 시작: (sigh) 자존감이 계속 낮아지는 것 같아요. 예전에는 할 수 있었던 일도 이제는 버겁게 느껴지고…
-    78.43s  user  발화 끝
-    85.65s  agent 발화 시작: 자존감이 낮아지고 예전에는 쉽게 했던 일조차 버겁게 느껴진다는 말씀이시군요. 그 감정은 마치 무거운 짐을 짊
-    85.65s  user  발화 끝
-    95.97s  user  발화 시작: …혹시, 이런 기분을 극복하는 데 도움이 되는 방법 같은 게 있을까요?
-    95.97s  agent 발화 끝
-   101.64s  agent 발화 시작: 기분을 극복하는 방법을 찾고 계시는군요. 물론, 쉽지는 않겠지만, 몇 가지 시도해 볼 수 있는 방법들이 있답
-   101.64s  user  발화 끝
-   114.03s  user  발화 시작: 스스로에게 너무 가혹하게 대하지 말라니… 그게 말처럼 쉽진 않네요.
-   114.03s  agent 발화 끝
-   118.67s  agent 발화 시작: 말씀하신 것처럼, 쉽지 않죠. 하지만 작은 성공에도 스스로를 칭찬해주고, 실수에 대해 너무 자책하지 않는 연
-   118.67s  user  발화 끝
-   131.57s  user  발화 시작: 작은 성공에 칭찬… 한번 시도해볼게요. 감사합니다, 켈란님.
-   131.57s  agent 발화 끝
-   135.18s  agent 발화 시작: 천천히, 그리고 꾸준히 자신을 돌보는 것이 중요해요. 언제든 힘든 일이 있다면 다시 이야기해주세요. 제가 곁
-   135.18s  user  발화 끝
-   143.95s  agent 발화 끝
+     0.00s  agent 발화 시작: 소별 씨, 안녕하세요. 저는 제아우스라고 해요. 소별 씨의 관계, 사회생활을 편안하게 만들어 드리는 역할을 
+     7.86s  user  발화 시작: 네.
+     7.86s  agent 발화 끝
+     8.35s  user  발화 시작: 혹시 친구 사귀는 걸 도와주시는 건가요?
+     8.35s  user  발화 끝
+    11.30s  agent 발화 시작: 네, 소별 씨. 친구 관계에서 어려움을 느끼시는 분들을 많이 만나 뵙고 있어요. 어떤 점이 가장 힘드신가요?
+    11.30s  user  발화 끝
+    19.16s  user  발화 시작: 네.
+    19.16s  agent 발화 끝
+    19.65s  user  발화 시작: 음… 저는 새로운 사람을 잘 못 만나는 것 같아요.
+    19.65s  user  발화 끝
+    24.08s  agent 발화 시작: 새로운 사람을 만나는 게 어려우시군요. 혹시 어떤 상황에서 특히 그런 어려움을 느끼시는지 좀 더 자세히 말씀
+    24.08s  user  발화 끝
+    33.41s  user  발화 시작: 네.
+    33.41s  agent 발화 끝
+    33.90s  agent 발화 시작: 혹시 사람들 앞에서 말하는 것이 어렵거나, 먼저 다가가기가 망설여지시는 건 아닐까요? 아니면, 어떤 대화를 
+    33.90s  user  발화 끝
+    43.24s  user  발화 시작: 아니, 그런 건 아니에요. 그냥… 기회가 없어요.
+    43.24s  agent 발화 끝
+    46.68s  agent 발화 시작: 기회가 없다고 느끼시는군요. 혹시 평소에 어떤 활동을 하시면서 새로운 사람들을 만날 가능성이 있을지 생각해 
+    46.68s  user  발화 끝
+    54.05s  user  발화 시작: 네네.
+    54.05s  agent 발화 끝
+    54.54s  user  발화 시작: 글쎄요… 회사 다니고, 주말에는 집에서 쉬거나 가끔 친구 만나요.
+    54.54s  user  발화 끝
+    58.96s  agent 발화 시작: 맞아요.
+    58.96s  user  발화 끝
+    59.45s  agent 발화 시작: 회사나 친구분들과의 만남 외에는 새로운 사람을 만날 기회가 별로 없으시군요. 혹시 관심 있는 분야의 모임이나
+    59.45s  agent 발화 끝
+    70.26s  user  발화 시작: 예.
+    70.26s  agent 발화 끝
+    70.76s  user  발화 시작: 그런 것도 생각해 봤는데… 좀 어색할 것 같아서요.
+    70.76s  user  발화 끝
+    74.69s  agent 발화 시작: 어색함 때문에 망설여지시는군요. 새로운 환경에 적응하는 건 당연히 어색할 수 있어요. 하지만 용기를 내서 한
+    74.69s  user  발화 끝
+    86.48s  agent 발화 끝

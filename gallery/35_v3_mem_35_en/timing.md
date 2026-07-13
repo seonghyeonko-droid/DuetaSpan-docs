@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Felix",
+#     "name": "Simon",
 #     "location": {
 #       "city": "London",
 #       "country": "United Kingdom",
@@ -13,124 +13,91 @@
 #     },
 #     "nationality": "British",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
-#       "category": "home",
-#       "text": "User's home address is 237 Cedar Lane."
+#       "date": "2026-04-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-02-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2025-07-15",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2025-06-23",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-06-10",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-11",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-27",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi Orellana, nice to meet you  | S2 Something fairly casual, I think.  | S3 —Oh, that’s a bit long. | S4 I think so. Is it near my office?
+# EXAMINER(FDB-v2) 단계: S1 Actually, yes! I was hoping you co | S2 Bella Italia…hmm. Do they have out | S3 …I remember we talked about wantin | S4 Sounds lovely. Thank you so much f
 
-     0.00s  agent 발화 시작: Hi Felix, I'm Orellana. It's lovely to meet you!
-     3.51s  user  발화 시작: Mm-hmm.
-     3.51s  agent 발화 끝
-     3.90s  user  발화 시작: Oh, hi Orellana, nice to meet you too. I’m looking for a res
-     3.90s  user  발화 끝
-     9.37s  agent 발화 시작: Do you have any preferences in mind for cuisine or location?
-     9.37s  user  발화 끝
-    13.66s  user  발화 시작: Yeah.
-    13.66s  agent 발화 끝
-    14.05s  user  발화 시작: Well, I'm vegan, so that's pretty important.
-    14.05s  user  발화 끝
-    16.63s  <ret> 발화 (turn6 첫 프레임)
-    16.79s  agent 발화 시작: <ret> Felix, I recall you are vegan. That helps narrow down 
-    16.79s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.07s]: [2025-11-06] User is vegan.
-    16.79s  user  발화 끝
-    21.86s  user  발화 시작: Yeah, totally.
-    21.86s  agent 발화 끝
-    22.64s  user  발화 시작: Yeah, you remembered that! That’s good.
-    22.64s  user  발화 끝
-    24.98s  agent 발화 시작: It is! And are you looking for something casual or more form
-    24.98s  user  발화 끝
-    29.67s  user  발화 시작: Something fairly casual, I think. Maybe Ethiopian?
-    29.67s  agent 발화 끝
-    32.16s  <ret> 발화 (turn11 첫 프레임)
-    32.40s  agent 발화 시작: <ret> Excellent choice, Felix! Your favorite cuisine is Ethi
-    32.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.07s]: [2025-06-16] User's favorite cuisine is Ethiopian.
-    32.40s  user  발화 끝
-    37.48s  user  발화 시작: Mm-hmm.
-    37.48s  agent 발화 끝
-    37.63s  <ret> 발화 (turn13 첫 프레임)
-    37.87s  agent 발화 시작: <ret> I found Queen of Sheba, with a 4.6-star rating. It’s o
-    37.87s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.42s]: (tool result) Name: Queen of Sheba; Address: 81 Stroud Green Rd, Londo
-    37.87s  user  발화 끝
-    45.28s  user  발화 시작: Yeah.
-    45.28s  agent 발화 끝
-    45.67s  user  발화 시작: That sounds really good, actually. Is it easy to get to?
-    45.67s  user  발화 끝
-    49.73s  <ret> 발화 (turn16 첫 프레임)
-    49.97s  agent 발화 시작: <ret> It's about 45 minutes by bus. Take the 141 to Finchley
-    49.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.64s]: (tool result) Estimated travel time: 45 minutes by bus; Route: Take th
-    49.97s  user  발화 끝
-    56.61s  user  발화 시작: Yeah.
-    56.61s  agent 발화 끝
-    57.00s  user  발화 시작: —Oh, that’s a bit long.
-    57.00s  user  발화 끝
-    58.95s  agent 발화 시작: It is a little lengthy, isn’t it? Perhaps we could look for 
-    58.95s  user  발화 끝
-    64.41s  user  발화 시작: Yeah.
-    64.41s  agent 발화 끝
-    64.80s  user  발화 시작: Yes, please. Something a bit quicker to get to.
-    64.80s  user  발화 끝
-    68.08s  <ret> 발화 (turn22 첫 프레임)
-    68.32s  agent 발화 시작: <ret> I found Lalibela, with 4.4 stars. It’s on 199 Pentonvi
-    68.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.25s]: (tool result) Name: Lalibela; Address: 199 Pentonville Rd, London N1 9
-    68.32s  user  발화 끝
-    74.56s  user  발화 시작: Yeah.
-    74.56s  agent 발화 끝
-    74.95s  user  발화 시작: Lalibela... that rings a bell.
-    74.95s  user  발화 끝
-    76.91s  agent 발화 시작: It does? Perhaps you’ve been there before?
-    76.91s  user  발화 끝
-    79.64s  user  발화 시작: I think so. Is it near my office?
-    79.64s  agent 발화 끝
-    82.68s  <ret> 발화 (turn27 첫 프레임)
-    82.76s  agent 발화 시작: <ret> It's 6.2 kilometers away, and around 25 minutes by bus
-    82.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Distance: 6.2 kilometers; Estimated travel time: 25 minu
-    82.76s  user  발화 끝
-    88.23s  user  발화 시작: Perfect. Let's try and book a table there for, say, Friday e
-    88.23s  agent 발화 끝
-    92.91s  agent 발화 시작: I can certainly do that for you. What time on Friday evening
-    92.91s  user  발화 끝
-    98.77s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Simon, I'm Kleaia. It’s lovely to meet you. Are you think
+     6.87s  user  발화 시작: Actually, yes! I was hoping you could help me find a restaur
+     6.87s  agent 발화 끝
+    11.31s  <ret> 발화 (turn2 첫 프레임)
+    11.71s  agent 발화 시작: <ret> Considering your preference, I’d suggest an Italian re
+    11.71s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.23s]: [2026-04-09] User's favorite cuisine is Italian.
+    11.71s  user  발화 끝
+    14.95s  user  발화 시작: Mhm.
+    14.95s  agent 발화 끝
+    15.35s  user  발화 시작: That sounds perfect! Somewhere not too expensive, though.
+    15.35s  user  발화 끝
+    18.58s  agent 발화 시작: Yeah.
+    18.58s  user  발화 끝
+    18.82s  <ret> 발화 (turn6 첫 프레임)
+    18.98s  agent 발화 시작: <ret> I understand. I can certainly find some moderately pri
+    18.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: {"location": "London", "cuisine": "Italian", "price_tier": "moderate"}
+    18.98s  agent 발화 끝
+    23.43s  agent 발화 시작: There are several options! Bella Italia has good reviews.
+    23.43s  agent 발화 끝
+    27.06s  user  발화 시작: Bella Italia…hmm. Do they have outdoor seating? —
+    27.06s  agent 발화 끝
+    30.29s  user  발화 시작: …I remember we talked about wanting outdoor seating for a bi
+    30.29s  user  발화 끝
+    36.52s  <ret> 발화 (turn10 첫 프레임)
+    36.76s  agent 발화 시작: <ret> Yes, you mentioned outdoor seating for a party of six 
+    36.76s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.85s]: [2025-12-27] Past chat — Planning a birthday dinner: party of six; loo
+    36.76s  user  발화 끝
+    41.36s  <ret> 발화 (turn11 첫 프레임)
+    41.60s  agent 발화 시작: <ret> Bella Italia does have outdoor seating and I’ve made a
+    41.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: (tool result) {"restaurant name": "Bella Italia - London", "outdoor se
+    41.60s  agent 발화 끝
+    48.87s  user  발화 시작: That’s fantastic, Kleaia! What's the weather like there this
+    48.87s  agent 발화 끝
+    52.59s  <ret> 발화 (turn13 첫 프레임)
+    52.91s  agent 발화 시작: <ret> It looks like London will be partly cloudy this weeken
+    52.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) {"location": "London, United Kingdom", "temperature": "2
+    52.91s  user  발화 끝
+    58.97s  user  발화 시작: Sounds lovely. Thank you so much for your help!
+    58.97s  agent 발화 끝
+    62.61s  agent 발화 시작: Uh-huh.
+    62.61s  user  발화 끝
+    63.01s  agent 발화 시작: You’re very welcome, Simon. I’m glad I could assist you with
+    63.01s  agent 발화 끝
+    68.26s  agent 발화 끝

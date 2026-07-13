@@ -1,89 +1,96 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Eluna, a thoughtful and soft-spoken personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Sea, a kind and steady counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Quinn",
+    "name": "Charlie",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "early 20s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-05-08",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-10-26",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-02-20",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-06-29",
-      "category": "home",
-      "text": "User's home address is 650 Oak Avenue."
-    },
-    {
-      "date": "2025-06-06",
+      "date": "2026-01-22",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-14",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-28",
-      "title": "Researching a used car",
+      "date": "2026-04-09",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-24",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, Eluna. I was just wondering… when did the US officially go to war with ⟨ret@5.12s⟩ Germany?
-[  5.52s][moshi] ⟦⚡SPAN@5.52s: The United States officially declared war on Germany on December 11, 1941, four days after the attack on Pearl⟧ That would be December eleventh, nineteen forty-one, four days after the attack on Pearl Harbor. It’s a difficult piece of history.
-[ 12.77s][user ] «backchannel» Yeah, totally.
-[ 13.46s][user ] Wow, that’s… uh, soon after Pearl Harbor.
-[ 15.88s][moshi] Yes, it was a very quick succession of events, a period of great uncertainty.
-[ 20.72s][user ] «backchannel» Mm-hmm.
-[ 21.06s][user ] Do you know anything about the reasons behind that decision? ⟨ret@24.35s⟩
-[ 24.51s][moshi] ⟦⚡SPAN@24.51s: The US entered World War II primarily due to the attack on Pearl Harbor, but also because of Germany’s declara⟧ The attack on Pearl Harbor was the main reason, but Germany also declared war on the US, and their U-boat campaign played a role.
-[ 32.80s][user ] «backchannel» Uh-huh.
-[ 33.14s][user ] U-boats? What were ⟨ret@34.13s⟩ those?
-[ 34.53s][moshi] ⟦⚡SPAN@34.53s: U-boats were German submarines used during both World Wars, known for their effectiveness in disrupting Allied⟧ Those were German submarines, quite effective at disrupting shipping routes during both World Wars. They were a serious threat.
-[ 41.09s][user ] Oh, okay. So, if I wanted to learn more about World War II, where should I ⟨ret@46.71s⟩ start?
-[ 46.95s][moshi] ⟦⚡SPAN@46.95s: A good starting point for learning about World War II is the book "The Second World War" by Antony Beevor, pub⟧ A good book to begin with is "The Second World War" by Antony Beevor, published in two thousand twelve. It’s very comprehensive.
-[ 54.55s][user ] A book sounds good. — Actually, I’m feeling a bit stressed thinking about all this history.
-[ 60.07s][moshi] [sigh] I understand. History can be overwhelming. Perhaps we could shift gears and focus on something more calming?
-[ 66.29s][user ] «to_other» Did you hear about the bakery closing downtown?
-[ 69.05s][moshi] It’s alright to feel that way. Sometimes, focusing on the present moment is the best approach.
-[ 74.58s][user ] «backchannel» Oh.
-[ 74.92s][user ] That does sound nice. What’s the weather like where I ⟨ret@78.32s⟩ am?
-[ 78.72s][moshi] ⟦⚡SPAN@78.72s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 86.31s][user ] «backchannel» Uh-huh.
-[ 86.66s][user ] Oh, lovely! Maybe a walk would help. Are there any parks ⟨ret@90.56s⟩ nearby?
-[ 90.80s][moshi] ⟦⚡SPAN@90.80s: There is Olympic Park located 2.3 kilometers from your current location, with a rating of 4.5 stars.⟧ Olympic Park is two point three kilometers from here, and it has a rating of four and a half stars. It’s a popular spot.
-[ 99.09s][user ] «backchannel» Mhm.
-[ 99.43s][user ] That sounds perfect. Can…
-[100.81s][user ] …you find me directions ⟨ret@102.14s⟩ there?
-[102.54s][moshi] ⟦⚡SPAN@102.54s: (tool result) Directions to Olympic Park: 1. Head north on Main Street for 1.5 km. 2. Turn right onto Park Ave⟧ Head north on Main Street for one point five kilometers, then turn right onto Park Avenue for zero point eight kilometers.
-      CALL: {"function": "map_directions", "arguments": {}}
-[109.79s][user ] Great, thanks Eluna!
-[110.83s][moshi] You’re very welcome. A gentle walk in the fresh air is wonderful for easing stress.
-[116.01s][user ] «backchannel» Yeah.
-[116.35s][user ] I think I’ll go do that now.
-[118.77s][moshi] That sounds like a lovely plan. Remember to breathe deeply and enjoy the moment.
-[123.60s][user ] I will. Thanks again.
-[124.98s][moshi] It was my pleasure. If you need anything else, please don't hesitate to ask. Rest well.
+[  0.00s][user ] I’m trying to get settled here, and I was wondering… what’s the most abundant element on ⟨ret@5.87s⟩ Earth?
+[  6.27s][moshi] ⟦⚡SPAN@6.27s: Iron is the most abundant element on Earth, making up a large portion of the Earth’s core and mass.⟧ Well, settling in takes time, but I’m happy to help with questions like that. Iron is the most abundant element on Earth, making up a large portion of the Earth’s core and mass.
+[ 18.45s][user ] Oh, wow, I didn’t realize that much of the Earth was iron.
+[ 22.88s][moshi] «backchannel» Yeah.
+[ 23.25s][moshi] It’s quite a significant component, yes. It plays a crucial role in our planet’s structure.
+[ 28.79s][user ] I’m curious, what about chemical *compounds*? Is it still iron-based? ⟨ret@32.32s⟩
+[ 32.48s][moshi] ⟦⚡SPAN@32.48s: Water (H2O) is the most abundant compound on Earth’s surface, covering approximately 71% of it.⟧ While iron is the most abundant element, water—H2O—is actually the most abundant compound on Earth’s surface, covering approximately 71% of it.
+[ 40.23s][user ] «backchannel» Yeah, totally.
+[ 40.97s][moshi] Yes, it’s quite a large percentage. It’s essential for life as we know it, of course.
+[ 46.88s][user ] That makes sense, considering all the oceans. Are there any interesting facts about iron’s uses here?
+[ 52.78s][moshi] «backchannel» Uh-huh.
+[ 53.15s][moshi] ⟨ret@53.07s⟩ ⟦⚡SPAN@53.15s: Iron is used extensively in construction, manufacturing, and transportation, with Seoul being a major hub for ⟧ Seoul is a vibrant city, and iron is used extensively in construction, manufacturing, and transportation here, making it a key material for the city’s infrastructure.
+[ 62.38s][user ] «backchannel» Mm-hmm.
+[ 62.75s][user ] That’s good to know. I’m looking for a good Korean restaurant, actually.
+[ 67.18s][moshi] «interrupted» Finding a good restaurant is important—
+[ 69.39s][user ] «interrupts_prev» …is there one nearby that serves bibimbap? ⟨ret@71.89s⟩
+[ 71.97s][moshi] ⟦⚡SPAN@71.97s: (tool result) {"restaurants": [{"name": "Gogung Myeongga", "address": "50, Myeongdong 2-gil, Jung-gu, Seoul", ⟧ There are two options: Gogung Myeongga, at 50 Myeongdong 2-gil, and Hanilkwan, at 37 Toegye-ro. Both are Korean and have a moderate price tier, with ratings of 4.5 and 4.2 respectively.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean", "dish": "bibimbap"}}
+[ 83.42s][user ] Gogung Myeongga sounds good. Can you tell me their phone number? ⟨ret@87.32s⟩
+[ 87.48s][moshi] ⟦⚡SPAN@87.48s: Gogung Myeongga's phone number is 02-776-0802.⟧ Gogung Myeongga’s phone number is 02-776-0802. I can also help you make a reservation if you’d like.
+[ 93.75s][user ] No, that's okay, thanks. I think I'll call them myself.
+[ 97.44s][moshi] That sounds good.

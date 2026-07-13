@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "수원",
+#     "name": "준슬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,52 +13,39 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 20s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-02-26",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-08-12",
+#       "date": "2026-04-07",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2026-01-16",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-09-28",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-08-13",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-18",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-25",
+#       "date": "2025-12-03",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -66,43 +53,67 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-13",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-19",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 웰빙 코치요? 갑자기 그런 말씀을 하시는 이유가 있으신 건가요 | S2 비슷한 경험은… 없었던 것 같아요. 그래서 더 불안한 것 같아 | S3 그래도… 쉽지만은 않네요. 혹시 제가 좀 더 긍정적으로 생각할 | S4 자신을 믿으라니… 쉽지 않네요. 그래도 한번 노력해 볼게요. 
+# EXAMINER(FDB-v2) 단계: S1 혹시 여행 경험이 많으신가요? 제가 휴가가 너무 필요해서요. | S2 예산은… 음… 너무 비싸지 않으면 좋겠어요. 일주일 정도 생각 | S3 글쎄요… 푸른 바다가 좋고, 조개껍데기가 많은 해변이면 더 좋 | S4 네, 좀 더 자세히 알려주실 수 있을까요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 수원님. 저는 브리오이아입니다. 삶의 변화를 함께하는 여러분의 웰빙 코치라고 생각하시면 돼요.
-     5.83s  user  발화 시작: 웰빙 코치요? 갑자기 그런 말씀을 하시는 이유가 있으신 건가요?
-     5.83s  agent 발화 끝
-    10.20s  agent 발화 시작: 혹시 지금 어떤 변화를 앞두고 계신가요? 불안하거나 걱정되는 부분이 있으시다면 편하게 말씀해주세요.
-    10.20s  user  발화 끝
-    16.02s  user  발화 시작: 음… 사실 다음 달에 회사를 옮기거든요. 새로운 시작이라 기대도 되지만, 한편으로는 많이 떨리기도 해요.
-    16.02s  agent 발화 끝
-    22.82s  agent 발화 시작: 새로운 시작은 늘 설렘과 두려움이 함께하는 법이죠. 어떤 점이 가장 걱정되시는지 좀 더 자세히 말씀해주시겠어
-    22.82s  user  발화 끝
-    30.10s  user  발화 시작: 음.
-    30.10s  agent 발화 끝
-    30.59s  agent 발화 시작: 새로운 환경에 적응하는 것이 어려울까 봐 걱정되시는 걸까요? 과거에도 비슷한 경험이 있으셨나요?
-    30.59s  user  발화 끝
-    36.41s  user  발화 시작: 비슷한 경험은… 없었던 것 같아요. 그래서 더 불안한 것 같아요. 어떻게 해야 할지 감이 안 잡히네요.
-    36.41s  agent 발화 끝
-    44.18s  agent 발화 시작: 처음 겪는 변화라면 더욱 막막하게 느껴질 수 있습니다. 지금 느끼는 감정은 너무나 자연스러운 거예요.
-    44.18s  user  발화 끝
-    50.98s  user  발화 시작: 응.
-    50.98s  agent 발화 끝
-    51.46s  user  발화 시작: 그래도… 쉽지만은 않네요. 혹시 제가 좀 더 긍정적으로 생각할 수 있는 방법 같은 게 있을까요?
-    51.46s  user  발화 끝
-    58.74s  agent 발화 시작: 긍정적인 마음을 갖기 위해 작은 목표를 세우고, 성취감을 느끼는 것도 좋은 방법일 거예요. 자신을 믿고 천천
-    58.74s  user  발화 끝
-    67.00s  user  발화 시작: 음.
-    67.00s  agent 발화 끝
-    67.48s  user  발화 시작: 자신을 믿으라니… 쉽지 않네요. 그래도 한번 노력해 볼게요. 감사합니다, 브리오이아님.
-    67.48s  user  발화 끝
-    72.34s  user  발화 끝
+     0.00s  agent 발화 시작: 준슬님, 안녕하세요. 저는 여행과 휴식 계획을 도와드리는 사노입니다. 편안하게 어떤 이야기를 나눠볼까요?
+     6.30s  user  발화 시작: 혹시 여행 경험이 많으신가요? 제가 휴가가 너무 필요해서요.
+     6.30s  agent 발화 끝
+    10.50s  agent 발화 시작: 여행 경험은 직접적인 건 아니지만, 많은 분들의 여행을 도와드리면서 간접적으로나마 다양한 곳을 경험하고 있다
+    10.50s  user  발화 끝
+    21.00s  user  발화 시작: 예.
+    21.00s  agent 발화 끝
+    21.53s  user  발화 시작: 음… 사실 어디든 괜찮아요. 그냥 서울에서 벗어나 푹 쉬고 싶은 마음이 가장 커요.
+    21.53s  user  발화 끝
+    28.36s  agent 발화 시작: 아.
+    28.36s  user  발화 끝
+    28.88s  agent 발화 시작: 서울에서의 일상에 지치셨군요. 잠시라도 모든 걸 내려놓고 재충전하는 시간은 정말 중요하죠. 어떤 스타일의 휴
+    28.88s  agent 발화 끝
+    40.43s  user  발화 시작: 음… 조용한 곳이 좋겠어요. 바다 근처면 더 좋고요. 사람이 너무 많지 않은 곳이면 좋겠어요.
+    40.43s  agent 발화 끝
+    47.79s  agent 발화 시작: 바다 근처의 조용한 곳이라… 정말 힐링이 될 것 같아요. 혹시 특별히 고려하시는 예산이나 기간이 있으신가요?
+    47.79s  user  발화 끝
+    55.66s  user  발화 시작: 예산은… 음… 너무 비싸지 않으면 좋겠어요. 일주일 정도 생각하고 있어요.
+    55.66s  agent 발화 끝
+    60.91s  agent 발화 시작: 일주일 정도, 너무 비싸지 않은 예산으로 바다 근처의 조용한 곳을 찾으시는군요. 혹시 한국 안에서 찾으시는 
+    60.91s  user  발화 끝
+    70.89s  user  발화 시작: 그렇죠.
+    70.89s  agent 발화 끝
+    71.42s  user  발화 시작: 한국 안에서… 해외는 좀 부담스러워서요.
+    71.42s  user  발화 끝
+    74.04s  agent 발화 시작: 한국 안에서 일주일 정도, 부담스럽지 않은 예산으로 조용한 바다 근처… 좋은 곳들이 꽤 있을 것 같아요. 혹
+    74.04s  user  발화 끝
+    86.12s  user  발화 시작: 글쎄요… 푸른 바다가 좋고, 조개껍데기가 많은 해변이면 더 좋을 것 같아요.
+    86.12s  agent 발화 끝
+    91.89s  agent 발화 시작: 푸른 바다와 조개껍데기가 많은 해변이라… 정말 그림 같은 풍경이 떠오르네요. 그런 곳이라면 강원도나 남해안 
+    91.89s  user  발화 끝
+   102.92s  user  발화 시작: 강원도요? 거기는 한 번도 가본 적이 없는데…
+   102.92s  agent 발화 끝
+   106.60s  agent 발화 시작: 강원도는 아름다운 자연경관으로 유명한 곳이에요. 특히 동해안은 푸른 바다와 깨끗한 해변이 많아서 휴식을 취하
+   106.60s  user  발화 끝
+   115.00s  user  발화 시작: 혹시 강원도에 조용하고 한적한 해변이 있을까요? 사람들이 너무 많으면…
+   115.00s  agent 발화 끝
+   119.73s  agent 발화 시작: 강원도에는 숨겨진 보석 같은 해변들이 꽤 있어요. 정동진이나 속초는 유명하지만, 조금만 벗어나면 한적하고 조
+   119.73s  user  발화 끝
+   129.18s  user  발화 시작: 그렇죠.
+   129.18s  agent 발화 끝
+   129.70s  user  발화 시작: 네, 좀 더 자세히 알려주실 수 있을까요?
+   129.70s  user  발화 끝
+   133.38s  agent 발화 시작: 망상해수욕장이나 하조대해수욕장은 비교적 한적하면서도 아름다운 곳으로 알려져 있어요. 특히 하조대해수욕장은 소
+   133.38s  user  발화 끝
+   142.83s  user  발화 시작: 네네.
+   142.83s  agent 발화 끝
+   143.36s  user  발화 시작: 하조대해수욕장… 이름이 예쁘네요. 한번 알아봐야겠어요. 감사합니다, 사노님.
+   143.36s  user  발화 끝
+   147.03s  agent 발화 시작: 하조대해수욕장이 준슬님께 좋은 선택이 되길 바라요. 언제든 또 궁금한 점이 있으시면 편하게 말씀해주세요. 휴
+   147.03s  user  발화 끝
+   158.58s  agent 발화 끝

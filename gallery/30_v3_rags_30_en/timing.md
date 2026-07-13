@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Lily",
+#     "name": "Alex",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-09",
+#       "date": "2026-06-26",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "home",
+#       "text": "User's home address is 126 Maple Drive."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-06-21",
 #       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-06-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-05-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
+#       "date": "2025-10-24",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-14",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -48,20 +56,22 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-19",
-#       "title": "Setting up a home network",
+#       "date": "2025-10-09",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who sang the song "it always feels like somebody's watching 
-     3.13s  <ret> 발화 (turn1 첫 프레임)
-     3.37s  agent 발화 시작: <ret> That song is by Rockwell, and it was quite a hit back 
-     3.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.35s]: American singer Rockwell released "Somebody's Watching Me" in 1984, an
-     3.37s  user  발화 끝
-    10.72s  agent 발화 끝
+     0.00s  user  발화 시작: When did the song “The Battle of New Orleans” come out?
+     3.95s  agent 발화 시작: Yeah, yeah.
+     3.95s  user  발화 끝
+     4.35s  <ret> 발화 (turn2 첫 프레임)
+     4.67s  agent 발화 시작: <ret> That song, “The Battle of New Orleans,” was released i
+     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: Johnny Horton released "The Battle of New Orleans" in April 1959, and 
+     4.67s  agent 발화 끝
+    10.06s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "현형",
+#     "name": "노찬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,63 +12,94 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "date": "2026-03-27",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-04-06",
+#       "date": "2026-01-29",
 #       "category": "work",
 #       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "date": "2025-11-11",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-12-18",
+#       "date": "2025-10-06",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-11",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-20",
+#       "date": "2026-03-21",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 세상에서 제일 빠른 오토바이가 뭔지 궁금해. | S2 오, 생각보다 비싸네. 비슷한 가격대의 다른 오토바이는 없을까 | S3 음… 좀 더 편안하게 탈 수 있는 투어링 모델로 찾아줘. | S4 오, 괜찮아 보이네. 한번 사진 좀 보여줄래?
 
-     0.00s  user  발화 시작: 오디세이 시작할 때 텔레마코스는 몇 살이야?
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> 텔레마코스는 아버지가 집으로 돌아올 때, 정확히 스무 살이었어요. 아직 젊은 나이였죠.
-     3.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.31s]: Twenty is the age of Telemachus when his father, Odysseus, returns hom
-     3.44s  user  발화 끝
-     9.75s  user  발화 시작: 아, 그렇구나. 그럼 오디세이는 얼마나 오래 걸렸어?
-     9.75s  agent 발화 끝
-    13.60s  <ret> 발화 (turn3 첫 프레임)
-    13.76s  agent 발화 시작: <ret> 오디세이 이야기는 오디세우스가 집으로 돌아오기까지 무려 이십년이나 걸렸답니다. 정말 긴 여정이었죠
-    13.76s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.31s]: The current temperature in Reykjavik, Iceland is 8.2°C, with a humidit
-    13.76s  user  발화 끝
-    20.07s  user  발화 시작: 와, 정말 오래 걸렸네. 그동안 텔레마코스는 뭘 했어?
-    20.07s  agent 발화 끝
-    24.65s  agent 발화 시작: 텔레마코스는 아버지의 부재 동안 어머니를 지키고, 자신의 성장을 위해 여행을 떠났어요. 용감한 청년이었죠.
-    24.65s  user  발화 끝
-    32.11s  agent 발화 끝
+     0.00s  user  발화 시작: 세상에서 제일 빠른 오토바이가 뭔지 궁금해.
+     2.66s  <ret> 발화 (turn1 첫 프레임)
+     2.82s  agent 발화 시작: <ret> 세상에서 제일 빠른 오토바이는 가와사키 닌자 H2R인데, 최고 속도가 시속 사백킬로미터라고 해요.
+     2.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: The Kawasaki Ninja H2R is the fastest production motorcycle with a top
+     2.82s  user  발화 끝
+     8.45s  user  발화 시작: 음, 그 오토바이 가격이 얼마 정도 해?
+     8.45s  agent 발화 끝
+    11.58s  <ret> 발화 (turn3 첫 프레임)
+    11.74s  agent 발화 시작: <ret> 이천이십사년식 가와사키 닌자 H2R의 미국 내 제조사 권장 소매 가격은 오만 오천 달러예요.
+    11.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) The 2024 Kawasaki Ninja H2R has a manufacturer's suggest
+    11.74s  user  발화 끝
+    17.85s  user  발화 시작: 와.
+    17.85s  agent 발화 끝
+    18.32s  user  발화 시작: 오, 생각보다 비싸네. 비슷한 가격대의 다른 오토바이는 없을까?
+    18.32s  user  발화 끝
+    22.08s  agent 발화 시작: 비슷한 가격대의 오토바이를 찾아볼까요? 어떤 스타일을 선호하시는지 알려주시면 더 정확하게 찾아드릴 수 있어요
+    22.08s  user  발화 끝
+    28.18s  user  발화 시작: 응.
+    28.18s  agent 발화 끝
+    28.65s  user  발화 시작: 음… 좀 더 편안하게 탈 수 있는 투어링 모델로 찾아줘.
+    28.65s  user  발화 끝
+    32.95s  <ret> 발화 (turn9 첫 프레임)
+    33.35s  agent 발화 시작: <ret> 이만 팔천 달러에서 삼만 달러 사이 가격대의 비 엠 더블유 K 천육백 지 티 엘이 편안한 투어링 
+    33.35s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.86s]: (tool result) The BMW K 1600 GTL is a luxury touring motorcycle with a
+    33.35s  user  발화 끝
+    43.21s  user  발화 시작: 오, 괜찮아 보이네. 한번 사진 좀 보여줄래?
+    43.21s  agent 발화 끝
+    46.50s  agent 발화 시작: 네, 잠시만 기다려 주세요. 비 엠 더블유 K 천육백 지 티 엘 사진을 보여드릴게요.
+    46.50s  user  발화 끝
+    53.08s  agent 발화 끝

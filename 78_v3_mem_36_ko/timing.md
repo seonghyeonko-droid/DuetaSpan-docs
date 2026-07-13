@@ -4,96 +4,70 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "혜율",
+#     "name": "현준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-11-05",
+#       "date": "2026-05-15",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2026-03-16",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-06-16",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-01-25",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-07-11",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 안녕하세요. 혹시 제가 예전에 키우는 강아지 이름 말했던 | S2 음… 전에 집 알아보는 얘기 했었잖아요. 혹시 그때 제가 반려 | S3 응, 맞아. 혹시 지금 서울 시내에서 반려동물 동반 가능한 집 | S4 가격대는… 음, 보증금 삼억 이하면 좋겠어.
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜율님. 저는 텔라라입니다. 돈 관리와 예산 짜는 걸 도와드리는 상담사예요.
-     5.38s  user  발화 시작: 아, 안녕하세요. 혹시 제가 예전에 키우는 강아지 이름 말했던 거 기억하세요?
-     5.38s  agent 발화 끝
-    10.60s  <ret> 발화 (turn2 첫 프레임)
-    10.76s  agent 발화 시작: <ret> 네, 혜율님께서 비글 강아지 '러스티'를 키우신다는 걸 기억하고 있어요. 귀여운 이름이네요.
-    10.76s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.38s]: [2025-11-05] User has a Beagle named Rusty.
-    10.76s  user  발화 끝
-    16.14s  user  발화 시작: 응.
-    16.14s  agent 발화 끝
-    16.63s  user  발화 시작: 러스티, 산책시키고 오느라 좀 늦었네요.
-    16.63s  user  발화 끝
-    19.07s  agent 발화 시작: 괜찮아요. 천천히 오셨으면 좋겠어요. 혹시 지금 뭐 도와드릴까요?
-    19.07s  user  발화 끝
-    22.98s  user  발화 시작: 어.
-    22.98s  agent 발화 끝
-    23.47s  user  발화 시작: 음… 전에 집 알아보는 얘기 했었잖아요. 혹시 그때 제가 반려동물 동반 가능한 곳으로 봤다고 했었죠?
-    23.47s  user  발화 끝
-    30.65s  <ret> 발화 (turn8 첫 프레임)
-    30.81s  agent 발화 시작: <ret> 네, 혜율님께서 반려동물 동반 가능한 건물로 두 침실을 찾으셨던 걸 기억하고 있어요.
-    30.81s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.87s]: [2026-03-14] Past chat — Apartment housing downtown: wanted a pet-frie
-    30.81s  user  발화 끝
-    36.68s  user  발화 시작: 그래.
-    36.68s  agent 발화 끝
-    37.17s  agent 발화 시작: 혹시 지금도 그 조건으로 집을 알아보고 싶으신가요?
-    37.17s  user  발화 끝
-    40.59s  user  발화 시작: 응, 맞아. 혹시 지금 서울 시내에서 반려동물 동반 가능한 집이 얼마나 있는지 알아봐 줄 수 있어?
-    40.59s  agent 발화 끝
-    48.17s  <ret> 발화 (turn12 첫 프레임)
-    48.41s  agent 발화 시작: <ret> 서울 시내에서 반려동물 동반 가능한 집 열두 채가 있어요. 더 자세히 알아볼까요?
-    48.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.87s]: (tool result) 12 houses found matching your criteria.
-    48.41s  user  발화 끝
-    54.28s  user  발화 시작: 응, 좀 더 자세히 알려줘.
-    54.28s  agent 발화 끝
-    56.73s  agent 발화 시작: 어떤 점이 궁금하신가요? 예를 들어, 가격대나 원하는 위치 같은 게 있으세요?
-    56.73s  user  발화 끝
-    62.11s  user  발화 시작: 가격대는… 음, 보증금 삼억 이하면 좋겠어.
-    62.11s  agent 발화 끝
-    65.04s  agent 발화 시작: 보증금 삼억 이하의 반려동물 동반 가능한 서울 시내 집들을 찾아볼게요.
-    65.04s  user  발화 끝
-    69.93s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 현준님. 저는 티오온이라고 해요. 오늘 하루는 어떠셨어요?
+     4.23s  user  발화 시작: 어… 그냥 그랬어. 전에 교토 여행 얘기했던 거 기억나?
+     4.23s  agent 발화 끝
+     8.98s  agent 발화 시작: 네.
+     8.98s  user  발화 끝
+     9.27s  <ret> 발화 (turn3 첫 프레임)
+     9.51s  agent 발화 시작: <ret> 네, 팔월에 교토 여행을 계획하고 계셨던 것 기억하고 있어요. 혹시 더 자세한 계획을 세우는 데 
+     9.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.98s]: [2025-10-05] User is planning a trip to Kyoto in August.
+     9.51s  agent 발화 끝
+    18.49s  user  발화 시작: 그때 숙소 예약을 아직 안 했었지. 괜찮은 호텔 좀 찾아줘.
+    18.49s  agent 발화 끝
+    23.37s  <ret> 발화 (turn5 첫 프레임)
+    23.77s  agent 발화 시작: <ret> 교토에서 이천이십육년 팔월 일일부터 팔일까지 일인 숙소 검색 결과가 나왔어요. 다양한 호텔이 있으
+    23.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.09s]: (tool result) {"city": "Kyoto", "check in date": "2026-08-01", "check 
+    23.77s  user  발화 끝
+    34.87s  user  발화 시작: 음… 가격대는 조금 비싼 편으로 해 줘.
+    34.87s  agent 발화 끝
+    38.56s  agent 발화 시작: 조금 비싼 편의 호텔로 찾아볼게요. 어떤 스타일을 선호하시나요? 전통적인 료칸이나 현대적인 호텔 중 어디가 
+    38.56s  user  발화 끝
+    47.02s  agent 발화 끝

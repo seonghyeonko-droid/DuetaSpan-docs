@@ -1,88 +1,96 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Sen, a calm and patient supportive advisor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Gora, a thoughtful and soft-spoken wellness coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Mason",
+    "name": "Hugo",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "late 30s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-13",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-03-12",
+      "date": "2026-06-02",
       "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-10-29",
+      "date": "2025-12-11",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-11-27",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-08-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-07-26",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-12",
-      "category": "work",
-      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-29",
-      "title": "Setting up a home network",
+      "date": "2026-05-27",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-21",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-08",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to plan a trip to Texas, and I was wondering about Laredo.
-[  4.84s][moshi] Laredo is a vibrant city on the US-Mexico border! It’s known for its rich history and cultural experiences. What are you hoping to do there?
-[ 13.49s][user ] «backchannel» Okay.
-[ 13.83s][user ] Well, I saw something about a movie filmed there… with gunmen? ⟨ret@17.55s⟩
-[ 17.63s][moshi] ⟦⚡SPAN@17.63s: Walter Darwin Coy starred as the narrator in the 1959 film “Frontier”, which was filmed in and around Laredo, ⟧ That sounds like “Frontier”, filmed in and around Laredo in 1959, and Walter Darwin Coy starred as the narrator.
-[ 24.20s][user ] Oh, right! Coy… I think I knew that.
-[ 26.97s][moshi] Glad I could jog your memory.
-[ 29.04s][user ] «backchannel» Yeah.
-[ 29.39s][user ] Um, yeah. What’s the weather like there right ⟨ret@32.18s⟩ now?
-[ 32.50s][moshi] ⟦⚡SPAN@32.50s: (tool result) 34.7°C, humidity 68%, wind 11.3 km/h, clear skies.⟧ It’s currently 34.7°C in Laredo, with 68% humidity, clear skies, and a wind speed of 11.3 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Laredo, Texas"}}
-[ 39.07s][user ] «backchannel» Oh.
-[ 39.42s][moshi] It is quite warm! Perhaps you’d like to look at hotels in Laredo?
-[ 43.91s][user ] «backchannel» Yeah, yeah.
-[ 44.60s][user ] Maybe. Are there any good restaurants nearby the film ⟨ret@47.74s⟩ location?
-[ 48.06s][moshi] ⟦⚡SPAN@48.06s: (tool result) The Garden Grill - American, 4.2 stars, 1201 E Market St.⟧ The Garden Grill, an American restaurant with 4.2 stars, is located at 1201 East Market Street.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Laredo, Texas", "query": "near Frontier film location"}}
-[ 53.59s][user ] That sounds nice. Can you reserve a table for two there tomorrow evening?
-[ 58.09s][moshi] I can certainly try. What time would you like the reservation to be?
+[  0.00s][user ] I was just reading about Malaysia Airlines Flight 370. It’s so tragic.
+[  4.37s][moshi] It truly is a deeply unsettling event, and the uncertainty surrounding it must be incredibly difficult for the families involved.
+[ 11.64s][user ] «backchannel» Yeah.
+[ 12.01s][user ] Do you happen to know what kind of plane it was? I’m curious about the model.
+[ 17.83s][moshi] «backchannel» Yeah.
+[ 18.19s][moshi] ⟨ret@18.03s⟩ ⟦⚡SPAN@18.19s: The Boeing 777-200ER, often nicknamed the "Triple Seven", was the aircraft model used for Malaysia Airlines Fl⟧ The aircraft used for that flight was a Boeing 777-200ER, frequently referred to as the "Triple Seven".
+[ 24.38s][user ] «backchannel» Yeah.
+[ 24.74s][user ] “Triple Seven,” huh? That's a good nickname. I wonder how many of those are still flying.
+[ 30.56s][moshi] «backchannel» Yeah.
+[ 30.93s][moshi] That's a natural question, given the circumstances. Perhaps we could explore the current fleet size?
+[ 36.38s][user ] Sure, how many Boeing 777s are currently in service ⟨ret@39.70s⟩ worldwide?
+[ 40.02s][moshi] ⟦⚡SPAN@40.02s: (tool result) As of early 2024, there were 1,623 Boeing 777 aircraft in service globally, with 1,358 in passen⟧ There are currently one thousand six hundred and twenty-three Boeing 777 aircraft in service worldwide, with one thousand three hundred and fifty-eight used for passengers and two hundred and sixty-five as freighters.
+      CALL: {"function": "search", "arguments": {"query": "number of Boeing 777s in service worldwide"}}
+[ 51.67s][user ] «backchannel» Yeah.
+[ 52.03s][user ] Wow, over sixteen hundred. That’s a lot.
+[ 54.58s][moshi] It speaks to the plane’s enduring popularity and reliability, despite the shadow cast by that one tragic event.
+[ 61.13s][user ] «backchannel» Yeah.
+[ 61.49s][user ] I guess so. It’s just… hard to reconcile. What about the weather that day? Do you know what it was like?
+[ 69.13s][moshi] «backchannel» Okay.
+[ 69.49s][moshi] ⟨ret@69.25s⟩ ⟦⚡SPAN@69.49s: (tool result) 28.0°C, humidity 75%, wind 10.0 km/h, clear skies.⟧ The weather in Kuala Lumpur on March eighth, two thousand and fourteen, was twenty-eight point zero degrees Celsius, with seventy-five percent humidity, ten point zero kilometers per hour winds, and clear skies.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Kuala Lumpur", "date": "2014-03-08"}}
+[ 81.14s][user ] «backchannel» Mhm.
+[ 81.50s][user ] Clear skies. That makes it even stranger, doesn’t it?
+[ 84.77s][moshi] «backchannel» Right.
+[ 85.14s][moshi] It certainly adds to the mystery. Sometimes, the absence of obvious contributing factors can be the most perplexing element.
+[ 92.05s][user ] It really does. I’m trying to plan a little getaway, something relaxing. Maybe a spa weekend?
+[ 97.87s][moshi] That sounds lovely. A focus on self-care is always a good idea. Where were you thinking of going?
+[104.42s][user ] «backchannel» Mm-hmm.
+[104.79s][user ] I was thinking maybe somewhere near Seoul. Do you know of any nice ⟨ret@109.64s⟩ spas?
+[109.88s][moshi] ⟦⚡SPAN@109.88s: (tool result) The Spa at the Shilla Seoul offers a range of treatments including traditional Korean body scrub⟧ The Spa at the Shilla Seoul offers treatments like Korean body scrubs and aromatherapy, with a four point six-star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul", "category": "spa"}}
+[117.16s][user ] Shilla Seoul… sounds fancy. How much would a massage there cost, ⟨ret@121.28s⟩ roughly?
+[121.52s][moshi] ⟦⚡SPAN@121.52s: (tool result) A 90-minute aromatherapy massage at The Spa at the Shilla Seoul currently costs ₩280,000, which ⟧ A ninety-minute aromatherapy massage there currently costs two hundred and eighty thousand Korean Won, which is roughly two hundred and fifteen US dollars.
+      CALL: {"function": "search", "arguments": {"query": "price of massage at The Spa at the Shilla Seoul"}}
+[129.89s][user ] Two hundred and fifteen dollars… That’s pretty pricey.
+[132.80s][moshi] It does fall into the higher price range, yes. Perhaps we could look at some more budget-friendly options?
+[139.35s][user ] Maybe. I'll think about it. Thanks, Gora.
+[141.90s][moshi] You’re very welcome. Remember, prioritizing your well-being is an investment, not an expense.

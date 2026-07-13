@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "채영",
+#     "name": "성준",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -18,135 +18,122 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-08-28",
+#       "date": "2026-06-27",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-07-17",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-02-06",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2025-06-17",
+#       "date": "2025-10-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-01",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시, '굿 다이노'에 나오는 티렉스 목소리는 누구야? | S2 음… 서부극 같은 거 좋아하는데… | S3 음… 액션 영화! | S4 응, 좋아. 이탈리안 레스토랑으로 찾아줘.
+# EXAMINER(FDB-v2) 단계: S1 비단 위원회에 가입하려면 최소 몇 살이 되어야 해? | S2 오, 알았어. 홈페이지에서 신청서를 다운로드받으면 되는 거네? | S3 … 혹시 이번 주 토요일에… | S4 칠월 십오일까지라… 시간이 얼마 없네.
 
-     0.00s  user  발화 시작: 혹시, '굿 다이노'에 나오는 티렉스 목소리는 누구야?
-     3.39s  <ret> 발화 (turn1 첫 프레임)
-     3.79s  agent 발화 시작: <ret> '굿 다이노'에서 부치 캐릭터의 목소리는 샘 엘리엇 씨가 맡으셨어요.
-     3.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: Sam Elliott voiced the character of Butch in The Good Dinosaur.
-     3.79s  user  발화 끝
-     8.65s  agent 발화 시작: 혹시 다른 궁금한 영화 정보가 있으신가요?
-     8.65s  agent 발화 끝
-    11.90s  user  발화 시작: 어.
-    11.90s  agent 발화 끝
-    12.44s  user  발화 시작: 샘 엘리엇… 음… 그분이 다른 영화에도 많이 출연했나?
-    12.44s  user  발화 끝
-    16.60s  <ret> 발화 (turn5 첫 프레임)
-    16.76s  agent 발화 시작: <ret> 네, 샘 엘리엇 씨는 영화와 티 브이 프로그램에 백 편이 넘게 출연하셨답니다.
-    16.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: Sam Elliott has appeared in over one hundred films and television show
-    16.76s  user  발화 끝
-    23.25s  user  발화 시작: 그래.
-    23.25s  agent 발화 끝
-    23.79s  user  발화 시작: 그… 텔레비전 프로그램은 어떤…
-    23.79s  user  발화 끝
-    25.96s  user  발화 시작: …게 유명해? … 지금 생각해보니
-    25.96s  user  발화 끝
-    28.66s  agent 발화 시작: 어떤 장르의 티 브이 프로그램을 선호하시나요?
-    28.66s  user  발화 끝
-    31.91s  user  발화 시작: 음… 서부극 같은 거 좋아하는데…
-    31.91s  agent 발화 끝
-    34.53s  <ret> 발화 (turn11 첫 프레임)
-    34.61s  agent 발화 시작: <ret> 서부극을 좋아하신다면, '더 새킷츠'라는 작품에서 샘 엘리엇 씨의 연기를 감상하실 수 있어요.
-    34.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: Sam Elliott is known for his roles in Western films and television ser
-    34.61s  user  발화 끝
-    41.10s  agent 발화 시작: 그 외에도 다양한 서부극에 출연하셨답니다.
-    41.10s  agent 발화 끝
-    43.80s  user  발화 시작: '더 새킷츠'… 한번 찾아봐야겠다. 근데, 혹시 지금 서울 날씨는 어때?
-    43.80s  agent 발화 끝
-    49.05s  <ret> 발화 (turn14 첫 프레임)
-    49.21s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 측정
-    49.21s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.03s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    49.21s  user  발화 끝
-    56.24s  agent 발화 시작: 오늘 하루도 좋은 날씨네요.
-    56.24s  agent 발화 끝
-    58.40s  user  발화 시작: 이십삼도면 괜찮네. 혹시 이번 주 토요일에…
-    58.40s  agent 발화 끝
-    61.65s  user  발화 시작: …영화 보러 갈 만한 곳 있어?
-    61.65s  user  발화 끝
-    64.73s  <ret> 발화 (turn18 첫 프레임)
-    64.89s  agent 발화 시작: <ret> 네, 말씀하신 날짜는 칠월 십일일 토요일이네요.
-    64.89s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.24s]: [2026-07-10] 영화 보러 갈 만한 곳 있어?
-    64.89s  user  발화 끝
-    68.14s  agent 발화 시작: 어떤 종류의 영화를 보고 싶으세요?
-    68.14s  agent 발화 끝
-    70.84s  user  발화 시작: 음… 액션 영화!
-    70.84s  agent 발화 끝
-    72.14s  <ret> 발화 (turn21 첫 프레임)
-    72.46s  agent 발화 시작: <ret> 칠월 십일일 토요일에 강남 씨 지 브이에서 '미션 임파서블: 데드 레코닝 파트 이'를 상영하는데요
-    72.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.82s]: (tool result) "Mission: Impossible - Dead Reckoning Part Two" at CGV G
-    72.46s  user  발화 끝
-    83.28s  agent 발화 시작: 혹시 다른 시간대도 괜찮으신가요?
-    83.28s  agent 발화 끝
-    85.44s  user  발화 시작: 오후 두시로 예매해줘.
-    85.44s  agent 발화 끝
-    86.66s  <ret> 발화 (turn24 첫 프레임)
-    87.06s  agent 발화 시작: <ret> 네, '미션 임파서블: 데드 레코닝 파트 이' 오후 두시, 강남 씨 지 브이 예매가 완료되었습니다
-    87.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=12.44s]: (tool result) Confirmation ID: A7B9X2
-    87.06s  user  발화 끝
-    99.50s  agent 발화 시작: 즐거운 영화 관람 되세요!
-    99.50s  agent 발화 끝
-   101.66s  user  발화 시작: 고마워, 모라라.
-   101.66s  agent 발화 끝
-   102.75s  agent 발화 시작: 천만에요. 혹시 영화 보러 가기 전에 저녁 식사도 함께 할까요?
-   102.75s  user  발화 끝
-   108.15s  user  발화 시작: 저녁 식사는… 글쎄…
-   108.15s  agent 발화 끝
-   109.78s  agent 발화 시작: 근처에 분위기 좋은 레스토랑을 찾아볼까요?
-   109.78s  user  발화 끝
-   112.48s  user  발화 시작: 응, 좋아. 이탈리안 레스토랑으로 찾아줘.
-   112.48s  agent 발화 끝
-   114.86s  <ret> 발화 (turn31 첫 프레임)
-   115.18s  agent 발화 시작: <ret> 강남에 위치한 '라 피아짜'라는 이탈리안 레스토랑은 평점이 사 점 오점이에요.
-   115.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: (tool result) "La Piazza" - Italian, Gangnam, Rating: 4.5 stars
-   115.18s  user  발화 끝
-   120.59s  agent 발화 시작: 괜찮으실까요?
-   120.59s  agent 발화 끝
-   121.13s  user  발화 시작: 좋아 보여!
-   121.13s  agent 발화 끝
-   122.21s  agent 발화 시작: 그럼, 영화 시작 전에 '라 피아짜'에서 맛있는 저녁 식사를 즐기시는 건 어떠세요?
-   122.21s  user  발화 끝
-   128.70s  user  발화 시작: 응, 좋아. 그럼 그때까지 뭐 할까?
-   128.70s  agent 발화 끝
-   131.95s  agent 발화 시작: 영화관 근처에 예쁜 카페들이 많으니, 커피 한 잔 하면서 시간을 보내는 것도 좋을 것 같아요.
-   131.95s  user  발화 끝
-   140.06s  agent 발화 끝
+     0.00s  user  발화 시작: 비단 위원회에 가입하려면 최소 몇 살이 되어야 해?
+     3.96s  <ret> 발화 (turn1 첫 프레임)
+     4.36s  agent 발화 시작: <ret> 비단 위원회에 가입하려면 최소 삼십세여야 합니다.
+     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.27s]: The minimum age limit for membership of vidhan parishad is 30 years ol
+     4.36s  user  발화 끝
+     7.62s  user  발화 시작: 와.
+     7.62s  agent 발화 끝
+     8.17s  user  발화 시작: 음, 그럼 위원회는 정확히 뭘 하는 곳인데?
+     8.17s  user  발화 끝
+    11.98s  agent 발화 시작: 비단 위원회는 지역 사회 발전을 위한 다양한 활동을 지원하는 곳입니다.
+    11.98s  user  발화 끝
+    17.43s  user  발화 시작: 아, 그렇구나. 그럼 위원회에 가입하려면 어떻게 해야 돼?
+    17.43s  agent 발화 끝
+    21.62s  <ret> 발화 (turn6 첫 프레임)
+    21.78s  agent 발화 시작: <ret> 비단 위원회에 가입하려면 신청서와 필요한 서류를 제출해야 합니다. 자세한 내용은 위원회 홈페이지에
+    21.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.17s]: To become a member of the vidhan parishad, one must submit an applicat
+    21.78s  user  발화 끝
+    29.95s  user  발화 시작: 응.
+    29.95s  agent 발화 끝
+    30.50s  user  발화 시작: 홈페이지는 어디에 있어?
+    30.50s  user  발화 끝
+    31.97s  <ret> 발화 (turn9 첫 프레임)
+    32.13s  agent 발화 시작: <ret> 비단 위원회 홈페이지는 www.vidhanparishad.gov.in 입니다. 가입 정보와 활동 
+    32.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) The official website of the vidhan parishad is www.vidha
+    32.13s  user  발화 끝
+    39.21s  user  발화 시작: 오, 알았어. 홈페이지에서 신청서를 다운로드받으면 되는 거네?
+    39.21s  agent 발화 끝
+    43.02s  agent 발화 시작: 네, 맞습니다. 홈페이지에서 신청서를 다운로드하여 작성하신 후 제출하시면 됩니다.
+    43.02s  user  발화 끝
+    47.92s  user  발화 시작: 혹시 위원회 활동에 참여하려면 꼭 가입해야 하는 거야?
+    47.92s  agent 발화 끝
+    52.28s  agent 발화 시작: 네.
+    52.28s  user  발화 끝
+    52.82s  agent 발화 시작: 꼭 가입해야 하는 것은 아니지만, 회원으로 가입하시면 다양한 활동에 더 쉽게 참여하실 수 있습니다.
+    52.82s  agent 발화 끝
+    60.45s  user  발화 시작: 음… 그렇다면, 위원회에서 현재 진행 중인 활동이 뭐가 있어?
+    60.45s  agent 발화 끝
+    65.35s  agent 발화 시작: 네.
+    65.35s  user  발화 끝
+    65.81s  <ret> 발화 (turn17 첫 프레임)
+    65.89s  agent 발화 시작: <ret> 비단 위원회는 현재 환경 보호와 청년 역량 강화를 위한 지역 사회 봉사 프로그램을 진행하고 있습니
+    65.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.44s]: (tool result) The vidhan parishad is currently running a community out
+    65.89s  agent 발화 끝
+    77.33s  user  발화 시작: 환경 보호 프로그램이라… 어떤 식으로 진행되는 거야? —
+    77.33s  agent 발화 끝
+    81.69s  user  발화 시작: … 혹시 이번 주 토요일에…
+    81.69s  user  발화 끝
+    84.41s  user  발화 시작: …참여할 수 있는 봉사활동이 있을까?
+    84.41s  user  발화 끝
+    87.13s  agent 발화 시작: 네.
+    87.13s  user  발화 끝
+    87.68s  agent 발화 시작: 이번 주 토요일에는 강변 정화 활동이 예정되어 있습니다. 참여를 원하시면 신청서를 작성해 주셔야 합니다.
+    87.68s  agent 발화 끝
+    95.30s  user  발화 시작: 어.
+    95.30s  agent 발화 끝
+    95.85s  user  발화 시작: 아, 좋네. 그럼 신청서는…
+    95.85s  user  발화 끝
+    98.02s  user  발화 시작: …지금 바로 할 수 있어?
+    98.02s  user  발화 끝
+   100.43s  <ret> 발화 (turn26 첫 프레임)
+   100.75s  agent 발화 시작: <ret> 환경 보호 프로그램 신청서는 비단 위원회 홈페이지에서 이천이십육년 칠월 십오일까지 온라인으로 제출
+   100.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.62s]: The application form for the environmental conservation program can be
+   100.75s  user  발화 끝
+   108.37s  user  발화 시작: 칠월 십오일까지라… 시간이 얼마 없네.
+   108.37s  agent 발화 끝
+   111.09s  agent 발화 시작: 네, 시간 여유가 많지 않으니 서둘러 신청하시는 것이 좋겠습니다.
+   111.09s  user  발화 끝
+   116.00s  user  발화 시작: 응.
+   116.00s  agent 발화 끝
+   116.54s  user  발화 시작: 그럼, 혹시 봉사활동 때 필요한 준비물이 있을까?
+   116.54s  user  발화 끝
+   120.35s  agent 발화 시작: 편안한 복장과 개인 물통을 준비해 오시면 됩니다. 위원회에서 장갑과 쓰레기 봉투를 제공해 드립니다.
+   120.35s  user  발화 끝
+   127.43s  user  발화 시작: 아.
+   127.43s  agent 발화 끝
+   127.98s  user  발화 시작: 알았어. 고마워, 주나라. 덕분에 잘 알게 됐어.
+   127.98s  user  발화 끝
+   131.79s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
+   131.79s  user  발화 끝
+   133.97s  agent 발화 끝

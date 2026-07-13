@@ -1,80 +1,87 @@
 v3_mem_34_ko src=mem style=mem
-SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 대해 사람들을 돕는 친절하고 꾸준한 조력자 이온입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 게아이아이며, 사람들의 진로 선택과 업무 스트레스에 도움을 주는 친절하고 안정적인 웰니스 코치입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "세별",
+    "name": "가담",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2025-12-27",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
-    },
-    {
-      "date": "2025-10-13",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-10-09",
-      "category": "home",
-      "text": "User's home address is 서울 강남구 역삼동 678-9."
-    },
-    {
-      "date": "2025-08-19",
+      "date": "2026-05-28",
       "category": "work",
-      "text": "User works as a high-school teacher."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-07-24",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-11-07",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-06-30",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-11",
-      "title": "Booked a dentist appointment",
+      "date": "2025-07-04",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-27",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-08-05",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 세별님. 저는 이온이라고 해요. 오늘 하루는 어떠셨어요?
-[  4.10s][user ] «backchannel» 그래.
-[  4.62s][user ] 음… 그냥 그랬어. 뭔가 기분 전환이 필요해.
-[  8.21s][moshi] 기분 전환이라… 혹시 어디론가 떠나고 싶으신가요?
-[ 11.28s][user ] 서울 말고 다른 데. 집에서 가까운 곳이면 좋겠는데… ⟨ret@15.23s⟩
-[ 15.39s][moshi] ⟦⚡SPAN@15.39s: [2025-08-05] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ 생일 저녁 식사 계획을 세우셨던 적이 있으셨죠. 여섯 분이서 야외 테이블을 찾으셨었는데, 혹시 그때처럼 식사 자리를 생각하시는 건가요?
+[  0.00s][moshi] 안녕하세요, 가담님. 저는 게아이아입니다. 오늘 하루는 어떠셨어요?
+[  3.40s][user ] 음… 좀 피곤하네요.
+[  4.86s][moshi] 힘든 하루였군요. 혹시 오늘 특별히 스트레스 받는 일이 있었나요?
+[  9.22s][user ] «backchannel» 네.
+[  9.71s][user ] 그냥 일 때문에 좀 그랬어요. ⟨ret@11.98s⟩
+[ 12.14s][moshi] ⟦⚡SPAN@12.14s: [2026-05-28] User works as a accountant.⟧ 일 때문에 힘드셨군요. 가담님께서는 회계사로 일하고 계시죠?
+[ 15.54s][moshi] 네, 이천이십육년 오월 이십팔일에 가담님께서 회계사로 일하고 계시다는 메모가 있네요.
+[ 20.39s][user ] «backchannel» 정말요?
+[ 20.88s][user ] 아, 네. 맞아요.
+[ 22.33s][moshi] 혹시 지금 계신 곳에서 출발해서 어딜 가실 계획이 있으신가요?
+[ 26.70s][user ] 집에 가려고요. ⟨ret@27.59s⟩
+[ 27.67s][moshi] ⟦⚡SPAN@27.67s: [2025-07-04] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ 집에 가시려고요? 그럼 가담님 댁 주소를 알려주시겠어요?
+[ 31.07s][moshi] 이천이십오년 칠월 사일에 가담님께서 헬스장 멤버십을 비교하면서 수영장과 사무실 근처를 원하셨다는 메모가 있네요.
+[ 37.38s][user ] 네, 서울시 강남구 테헤란로 ⟨ret@39.41s⟩ 사백이십칠이에요.
+[ 39.81s][moshi] ⟦⚡SPAN@39.81s: (tool result) {"distance": "2.3 km", "duration": "7 minutes", "route": "Take Teheran-ro for 2.3 km."}⟧ 테헤란로를 따라 이 점 삼킬로미터, 약 칠분 정도 걸립니다.
+      CALL: {"function": "map_directions", "arguments": {"origin": "서울시 강남구 테헤란로 427", "destination": "home"}}
+[ 44.18s][user ] «backchannel» 와.
+[ 44.67s][moshi] 지금 출발하시면 칠분 안에 도착하실 수 있을 거예요. 교통 상황은 괜찮은 편인가요?
+[ 50.49s][user ] 음… 지금은 괜찮은 것 같아요.
+[ 52.92s][moshi] 다행이네요. 혹시 가는 길에 들르고 싶은 곳은 없으세요?
+[ 56.81s][user ] 아니요, 그냥 집에 가고 싶어요.
+[ 59.23s][moshi] 바로 집에 가시는군요. 안전하게 귀가하세요.
+[ 61.66s][moshi] 혹시 오늘 하루를 좀 더 편안하게 마무리할 수 있도록 제가 도와드릴 일이 있을까요?
+[ 67.97s][user ] «backchannel» 음.
+[ 68.46s][user ] 음… 그냥 조용한 음악을 틀어줄 수 있을까요?
+[ 71.86s][moshi] 어떤 장르의 음악을 좋아하세요?
+[ 73.80s][moshi] ⟨ret@73.48s⟩ ⟦⚡SPAN@73.80s: [2025-09-21] User prefers a window seat when traveling.⟧ 가담님께서는 한국 비 비 큐를 가장 좋아하시는군요.
+[ 77.20s][moshi] 이천이십오년 구월 이십일일에 가담님께서 여행 시 창가 좌석을 선호하신다는 메모가 있네요.
+[ 82.54s][user ] 네, 좋아요.

@@ -4,79 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Andrea",
+#     "name": "Jack",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
+#     "nationality": "Canadian",
+#     "gender": "male",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
+#       "date": "2026-04-23",
 #       "category": "home",
-#       "text": "User's home address is 115 Maple Drive."
+#       "text": "User's home address is 408 Maple Drive."
 #     },
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-02-27",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-10-12",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-09-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "date": "2025-07-13",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-03",
+#       "date": "2026-03-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-21",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-30",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who took over as president of the Second…
-     3.89s  user  발화 시작: …Bank of the United States in eighteen twenty-three?
-     3.89s  user  발화 끝
-     7.54s  <ret> 발화 (turn2 첫 프레임)
-     7.78s  agent 발화 시작: <ret> Well, that would be Nicholas Biddle; he took over as p
-     7.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.15s]: Nicholas Biddle assumed the presidency of the Second Bank of the Unite
-     7.78s  user  발화 끝
-    19.93s  agent 발화 끝
+     0.00s  user  발화 시작: Who played the most minutes in NBA history?
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.62s  agent 발화 시작: <ret> That would be Kareem Abdul-Jabbar, with 57,446 minutes
+     3.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.87s]: Kareem Abdul-Jabbar holds the NBA record for most minutes played, with
+     3.62s  user  발화 끝
+    14.50s  agent 발화 끝

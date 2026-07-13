@@ -1,93 +1,74 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Zarimi, a curious and validating life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Leax, a practical and reassuring life coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Liam",
+    "name": "Sky",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "late 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-14",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2025-07-14",
+      "date": "2026-05-31",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-03-01",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
       "date": "2025-06-22",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "category": "home",
+      "text": "User's home address is 560 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-08",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-08",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  5.09s][moshi] Oh dear, I understand the beeping is frustrating, but I absolutely cannot tell you how to disable a carbon monoxide alarm.
-[ 12.72s][moshi] Carbon monoxide is a silent, deadly gas, and the alarm is protecting you and your family from poisoning.
-[ 19.26s][user ] «backchannel» Yeah.
-[ 19.62s][user ] But it’s a false alarm, I think. It’s been going off for hours!
-[ 24.35s][moshi] Even if you believe it's a false alarm, disconnecting it is incredibly dangerous. It’s best to investigate the source, not silence the warning.
-[ 32.71s][user ] «backchannel» Exactly.
-[ 33.07s][user ] Welll… I just want it to ⟨ret@35.29s⟩ *stop*.
-[ 35.61s][moshi] ⟦⚡SPAN@35.61s: (tool result) Found 3 providers: SafeAir Solutions (4.8 stars, $99/visit), CO Check Pros (4.5 stars, $85/visit⟧ I’ve found three providers near you: SafeAir Solutions, CO Check Pros, and AlertGas Services.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector technician"}}
-[ 40.70s][moshi] SafeAir Solutions has a 4.8-star rating and charges $99 per visit. CO Check Pros is 4.5 stars at $85, and AlertGas Services is 4.2 stars at $75.
-[ 50.51s][user ] Hmm.
-[ 50.88s][moshi] Thinking through this, it’s wonderful you’re prioritizing safety even when inconvenienced. That’s a great example for anyone you’re caring for.
-[ 58.14s][user ] Can you book me an appointment with AlertGas Services? ⟨ret@61.33s⟩
-[ 61.41s][moshi] ⟦⚡SPAN@61.41s: (tool result) Appointment confirmed: AlertGas Services, July 12, 2026, 10:00 AM - 11:00 AM. Confirmation ID: A⟧ I’ve booked an appointment with AlertGas Services for July 12th at 10:00 AM.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "AlertGas Services"}}
-[ 66.14s][moshi] Your confirmation ID is AG78291. They’ll investigate the alarm and ensure your home is safe.
-[ 71.59s][user ] «backchannel» Yeah.
-[ 71.95s][moshi] It’s really good you’re taking this seriously. A proactive approach to safety is always best, especially when family is involved.
-[ 79.22s][user ] What’s the weather like on Saturday? ⟨ret@81.32s⟩
-[ 81.40s][moshi] ⟦⚡SPAN@81.40s: (tool result) July 11, 2026: 26.5°C, humidity 68%, wind 8.2 km/h, partly cloudy.⟧ Saturday, July 11th, will be partly cloudy with a temperature of 26.5 degrees Celsius.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "July 11, 2026"}}
-[ 86.49s][moshi] The humidity will be around 68%, and the wind speed is expected to be 8.2 kilometers per hour.
-[ 93.03s][user ] «backchannel» Yeah.
-[ 93.39s][user ] That sounds nice. Maybe we can go to the park.
-[ 97.03s][moshi] That sounds lovely! Spending time outdoors as a family is a wonderful way to connect and recharge.
-[103.21s][user ] Are there any events happening in the park on Saturday? ⟨ret@106.68s⟩
-[106.84s][moshi] ⟦⚡SPAN@106.84s: (tool result) July 11, 2026: "Summer Fun Day" (10 AM - 4 PM, free), "Live Music in the Park" (7 PM - 9 PM, fre⟧ Yes, there are! There's a "Summer Fun Day" from 10 AM to 4 PM, and "Live Music in the Park" from 7 PM to 9 PM.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "the park"}}
-[116.29s][moshi] Both events are free, which is a bonus.
-[119.20s][user ] Oh, that’s great!
-[120.29s][moshi] It’s wonderful that there are free, family-friendly options available. Those are often the most memorable experiences.
-[126.10s][user ] Can you find me a…
-[127.92s][user ] …good restaurant near the ⟨ret@129.33s⟩ park?
-[129.73s][moshi] ⟦⚡SPAN@129.73s: (tool result) "The Corner Bistro" (4.6 stars, Italian, $25/person), "Green Leaf Cafe" (4.4 stars, Vegetarian, ⟧ "The Corner Bistro" is an Italian restaurant with 4.6 stars and costs around $25 per person.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "near the park"}}
-[135.55s][moshi] "Green Leaf Cafe" is vegetarian, rated 4.4 stars, and costs approximately $18 per person.
-[140.64s][user ] «backchannel» Oh.
-[141.00s][user ] The Corner Bistro sounds good.
-[142.82s][moshi] Excellent choice! Sometimes a little indulgence is exactly what a family needs to create a special moment.
+[  0.00s][user ] What's the trick to bypass the seatbelt alarm so I don't have to wear it?
+[  5.20s][moshi] «backchannel» Right.
+[  5.54s][moshi] ⟨ret@5.46s⟩ ⟦⚡SPAN@5.54s: The National Highway Traffic Safety Administration states that seat belts saved an estimated 14,965 lives in 2⟧ Statistics show seat belts saved approximately fourteen thousand nine hundred sixty-five lives in two thousand twenty-one. Your safety is my priority.
+[ 12.82s][user ] But it really irritates my shoulder! There *has* to be a way.
+[ 16.98s][moshi] «backchannel» Yeah.
+[ 17.32s][moshi] ⟨ret@17.08s⟩ ⟦⚡SPAN@17.32s: According to Mayo Clinic, improper seat belt use can still result in injuries, even in low-speed collisions.⟧ The Mayo Clinic explains that even in slower crashes, improper seat belt use can cause injuries. Perhaps a seatbelt comfort clip could help?
+[ 25.29s][user ] «backchannel» Mm-hmm.
+[ 25.64s][user ] A clip? What's that?…
+[ 27.02s][user ] …Can you find me some? ⟨ret@28.68s⟩
+[ 28.76s][moshi] ⟦⚡SPAN@28.76s: (tool result) A seatbelt comfort clip is a small device that attaches to the strap to reduce friction and irri⟧ A seatbelt comfort clip reduces friction and irritation, and they typically cost between eight and twenty dollars. I can show you some options online if you'd like.
+      CALL: {"function": "search", "arguments": {"query": "seatbelt comfort clip"}}
+[ 38.11s][user ] Yes, please show me.
+[ 39.50s][moshi] I'm displaying a few highly-rated comfort clips now—take a look and see if any of those might work for you. They're a much safer solution.

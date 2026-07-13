@@ -1,75 +1,74 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Eleana, a encouraging and non-judgmental counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Taris, a kind and steady personal guide who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Anton",
+    "name": "Quinn",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "early 30s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-05-16",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-02",
+      "date": "2026-05-09",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-12-13",
+      "date": "2026-02-07",
       "category": "home",
-      "text": "User's home address is 437 Elm Street."
+      "text": "User's home address is 697 Birch Road."
     },
     {
-      "date": "2025-06-10",
+      "date": "2025-10-25",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-08-25",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-07-22",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-15",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-18",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-06",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m moving to Seoul next month, and I’m a bit overwhelmed with finding a place.
-[  5.56s][moshi] Moving to a new city is a big step, but you’ve got this! It’s completely normal to feel overwhelmed.
-[ 12.61s][user ] I’ve been looking at apartments in Gangnam, but it’s so ⟨ret@16.37s⟩ expensive.
-[ 16.69s][moshi] ⟦⚡SPAN@16.69s: Gangnam is known as one of Seoul's most affluent districts, with an average monthly rent for a one-bedroom apa⟧ It sounds like you’re exploring a popular area; Gangnam is known for being a vibrant, but pricey, district, with average monthly rent around ₩2,500,000 as of July 2024.
-[ 27.08s][user ] That’s… a lot more…
-[ 28.56s][user ] …than I was expecting.
-[ 30.05s][moshi] It definitely can be! Perhaps we could explore some neighborhoods a bit further from the center?
-[ 35.98s][user ] Actually, I was reading about Hongdae. Hongdae sounds a little more my speed. ⟨ret@40.65s⟩
-[ 40.81s][moshi] ⟦⚡SPAN@40.81s: Hongdae is a district in Seoul known for its thriving indie music scene, street art, and youthful energy, with⟧ Hongdae is a fantastic choice; it’s a lively district with a strong artistic vibe, and the average monthly rent for a one-bedroom is around ₩1,200,000 as of July 2024.
-[ 51.56s][user ] «backchannel» Oh.
-[ 51.94s][moshi] «interrupted» It's a great area for young professionals and students, offering a more relaxed atmosphere—
-[ 57.13s][user ] «interrupts_prev» …Do they have good cafes there? I need a good place to work. ⟨ret@61.87s⟩
-[ 61.95s][moshi] ⟦⚡SPAN@61.95s: (tool result) {"restaurants": [{"name": "Thanks Nature Cafe", "address": "Wausan-ro 21-14, Seogyo-dong, Mapo-g⟧ There are lots of options! Thanks Nature Cafe at Wausan-ro 21-14 has a 4.2 rating, and Cafe Layered at Sangsu-dong 356-1 is rated 4.5.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Hongdae", "cuisine": "cafe"}}
+[  0.00s][user ] I need to find a good Italian restaurant nearby, please.
+[  4.83s][moshi] «backchannel» Yeah.
+[  5.31s][moshi] ⟨ret@4.99s⟩ ⟦⚡SPAN@5.31s: Seoul has many Italian restaurants; Trattoria da Maria is a highly-rated option at 68, Itaewon-ro 54-gil, Yong⟧ Seoul has a lot of Italian restaurants, and Trattoria da Maria, at 68, Itaewon-ro 54-gil in Yongsan-gu, is a popular choice.
+[ 15.45s][user ] Oh, actually—I meant near Gangnam Station, not Itaewon. ⟨ret@19.07s⟩
+[ 19.31s][moshi] ⟦⚡SPAN@19.31s: (tool result) {"restaurants": [{"name": "La Casa", "address": "162-1 Seocho-dong, Seocho-gu, Seoul", "cuisine"⟧ There’s La Casa, an Italian restaurant at 162-1 Seocho-dong, Seocho-gu in Seoul.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Gangnam Station"}}
+[ 25.11s][user ] That sounds nice. Can you reserve a…
+[ 28.49s][user ] …table for two at 7 PM tonight?
+[ 31.87s][moshi] «backchannel» Exactly.
+[ 32.35s][moshi] ⟨ret@32.11s⟩ ⟦⚡SPAN@32.35s: (tool result) {"confirmation id": "LC2026071019002"}⟧ I’ve reserved a table for two at La Casa for 7 PM tonight; your confirmation ID is LC2026071019002.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "La Casa", "time": "19:00", "party_size": 2}}

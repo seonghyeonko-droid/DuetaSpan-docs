@@ -4,79 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Aiden",
+#     "name": "Lucia",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2025-10-13",
+#       "date": "2025-09-21",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-10-09",
-#       "category": "home",
-#       "text": "User's home address is 191 Pine Court."
-#     },
-#     {
-#       "date": "2025-08-19",
+#       "date": "2025-09-13",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2025-07-24",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-07-26",
+#       "category": "home",
+#       "text": "User's home address is 886 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-06-30",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-20",
+#       "date": "2025-06-09",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi! Um, pretty good, actually. | S2 I was thinking of maybe going to v | S3 That sounds lovely, actually. Mayb | S4 Oh, that’s a great idea, Geaia! Th
 
-     0.00s  agent 발화 시작: Hi Aiden, I'm Ion. It's lovely to meet you.
-     3.24s  user  발화 시작: Right.
-     3.24s  agent 발화 끝
-     3.60s  user  발화 시작: Um, well, I was actually hoping to get directions.
-     3.60s  user  발화 끝
-     6.76s  <ret> 발화 (turn3 첫 프레임)
-     6.84s  agent 발화 시작: <ret> Aiden. Your home address is listed as 191 Pine Court i
-     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.84s]: [2025-10-09] User's home address is 191 Pine Court.
-     6.84s  user  발화 끝
-    13.68s  user  발화 시작: To that fermentation shop we talked about last time.
-    13.68s  agent 발화 끝
-    16.84s  <ret> 발화 (turn5 첫 프레임)
-    16.92s  agent 발화 시작: <ret> Ah, yes! You're interested in home fermentation, so I 
-    16.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.20s]: [2025-10-13] User is into home fermentation.
-    16.92s  user  발화 끝
-    24.12s  user  발화 시작: Yeah.
-    24.12s  agent 발화 끝
-    24.48s  user  발화 시작: Exactly! How long will it take to get there?
-    24.48s  user  발화 끝
-    27.48s  <ret> 발화 (turn8 첫 프레임)
-    27.72s  agent 발화 시작: <ret> It’s 7.2 kilometers and should take about fifteen minu
-    27.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.28s]: (tool result) {"distance": "7.2 km", "duration": "15 minutes", "route"
-    27.72s  user  발화 끝
-    36.01s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Lucia, I'm Geaia. It’s lovely to connect with you today. 
+     5.50s  user  발화 시작: Oh, hi! Um, pretty good, actually. Just feeling a bit overwh
+     5.50s  agent 발화 끝
+    10.59s  <ret> 발화 (turn3 첫 프레임)
+    10.62s  agent 발화 시작: Yeah.
+    10.62s  user  발화 끝
+    10.99s  agent 발화 시작: <ret> I understand that feeling. Work stress is very common,
+    10.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.76s]: [2025-09-13] User works as a software engineer.
+    10.99s  agent 발화 끝
+    15.75s  agent 발화 시작: It's good to remember you work as a software engineer when n
+    15.75s  agent 발화 끝
+    20.52s  user  발화 시작: Yeah.
+    20.52s  agent 발화 끝
+    20.88s  user  발화 시작: Yeah, it’s just… a lot. I was hoping to maybe get away for a
+    20.88s  user  발화 끝
+    26.74s  agent 발화 시작: A weekend escape sounds wonderful. Do you have a destination
+    26.74s  user  발화 끝
+    33.34s  user  발화 시작: I was thinking of maybe going to visit my aunt in Montreal.
+    33.34s  agent 발화 끝
+    37.49s  <ret> 발화 (turn9 첫 프레임)
+    37.73s  agent 발화 시작: <ret> The distance from 886 Cedar Lane to Montreal is 541.1 
+    37.73s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.06s]: (tool result) Distance: 541.1 km; Estimated driving time: 5 hr 24 min.
+    37.73s  user  발화 끝
+    45.79s  user  발화 시작: Oh.
+    45.79s  agent 발화 끝
+    46.16s  agent 발화 시작: That’s a good drive, certainly. We could look at train optio
+    46.16s  user  발화 끝
+    51.29s  user  발화 시작: Hmm, maybe. What's the weather looking like in Montreal this
+    51.29s  agent 발화 끝
+    54.92s  <ret> 발화 (turn13 첫 프레임)
+    55.32s  agent 발화 시작: <ret> It’s currently 22.0 degrees Celsius and clear in Montr
+    55.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.79s]: (tool result) Current conditions: 22.0°C, clear skies, wind 12 km/h. F
+    55.32s  user  발화 끝
+    64.11s  user  발화 시작: Mhm.
+    64.11s  agent 발화 끝
+    64.48s  user  발화 시작: That sounds lovely, actually. Maybe driving isn’t so bad.
+    64.48s  user  발화 끝
+    67.78s  agent 발화 시작: It does sound quite pleasant. A road trip can be a great way
+    67.78s  user  발화 끝
+    73.64s  user  발화 시작: I think you’re right. I also need to remember to get a birth
+    73.64s  agent 발화 끝
+    79.87s  agent 발화 시작: Yeah, yeah.
+    79.87s  user  발화 끝
+    80.20s  <ret> 발화 (turn19 첫 프레임)
+    80.60s  agent 발화 시작: <ret> Since your favorite cuisine is Italian, a cooking clas
+    80.60s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.50s]: [2025-06-30] User's favorite cuisine is Italian.
+    80.60s  agent 발화 끝
+    86.09s  user  발화 시작: Yeah.
+    86.09s  agent 발화 끝
+    86.46s  user  발화 시작: Oh, that’s a great idea, Geaia! Thanks!
+    86.46s  user  발화 끝
+    89.03s  agent 발화 시작: You're very welcome, Lucia. I'm glad I could help brainstorm
+    89.03s  user  발화 끝
+    95.25s  agent 발화 끝

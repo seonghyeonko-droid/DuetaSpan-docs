@@ -4,43 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Quinn",
+#     "name": "Aiden",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2025-10-26",
+#       "category": "home",
+#       "text": "User's home address is 365 Maple Drive."
 #     },
 #     {
-#       "date": "2025-12-18",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-09-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-02",
+#       "date": "2025-08-30",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-08-05",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-08-07",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is planning a trip to New Zealand in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-11",
+#       "date": "2025-10-30",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,63 +48,95 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-06",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-02",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need a house for one adult in Se | S2 Hmm, 210 sounds better. Can you te | S3 Great! What’s the weather forecast | S4 Can you find me some good restaura
+# EXAMINER(FDB-v2) 단계: S1 I need to find bus options from Lo | S2 Maybe something a little less know | S3 …Actually, before we get too far a | S4 John Muir Lodge sounds good. Can y
 
-     0.00s  user  발화 시작: I need a house for one adult in Seattle, Washington, checkin
-     9.15s  <ret> 발화 (turn1 첫 프레임)
-     9.47s  agent 발화 시작: <ret> I've found a house for you in Seattle, Washington, che
-     9.47s  ⚡SPAN 주입 [d'=1.20s / d_lead=13.97s]: (tool result) {"confirmation id": "89XZ27", "address": "123 Pine Stree
-     9.47s  user  발화 끝
-    23.44s  user  발화 시작: That sounds…expensive. Are there any cheaper options?
-    23.44s  agent 발화 끝
-    26.36s  <ret> 발화 (turn3 첫 프레임)
-    26.60s  agent 발화 시작: <ret> I found a Cozy Cottage for 210.00 dollars, located at 
-    26.60s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.82s]: (tool result) {"results": [{"name": "Cozy Cottage", "address": "456 Oa
-    26.60s  user  발화 끝
-    37.42s  user  발화 시작: Hmm, 210 sounds better. Can you tell me more about the Cozy 
-    37.42s  agent 발화 끝
-    43.20s  <ret> 발화 (turn5 첫 프레임)
-    43.28s  agent 발화 시작: <ret> The Cozy Cottage is a charming one-bedroom house with 
-    43.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.72s]: The Cozy Cottage is a charming one-bedroom house with a kitchenette, f
-    43.28s  user  발화 끝
-    55.00s  user  발화 시작: Mm-hmm.
-    55.00s  agent 발화 끝
-    55.45s  user  발화 시작: Okay, that sounds perfect. Book it for me.
-    55.45s  user  발화 끝
-    58.97s  <ret> 발화 (turn8 첫 프레임)
-    59.05s  agent 발화 시작: <ret> The Cozy Cottage is now booked for you, checking in on
-    59.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.52s]: (tool result) {"confirmation id": "42BC91", "address": "456 Oak Ave, S
-    59.05s  user  발화 끝
-    72.58s  user  발화 시작: Yeah.
-    72.58s  agent 발화 끝
-    73.03s  user  발화 시작: Great! What’s the weather forecast for Seattle during those 
-    73.03s  user  발화 끝
-    77.30s  <ret> 발화 (turn11 첫 프레임)
-    77.54s  agent 발화 시작: <ret> The forecast for Seattle shows 10.0 degrees Celsius an
-    77.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.58s]: (tool result) {"November 15": "10.0°C, rain", "November 16": "8.0°C, c
-    77.54s  user  발화 끝
-    95.12s  user  발화 시작: That sounds… changeable.
-    95.12s  agent 발화 끝
-    96.47s  agent 발화 시작: Weather can be unpredictable, especially in the fall. It’s g
-    96.47s  user  발화 끝
-   104.58s  user  발화 시작: Can you find me some good restaurants near 456 Oak Ave?
-   104.58s  agent 발화 끝
-   109.54s  user  발화 끝
+     0.00s  user  발화 시작: I need to find bus options from Los Angeles to San Francisco
+     6.99s  <ret> 발화 (turn1 첫 프레임)
+     7.31s  agent 발화 시작: <ret> I found several buses for you—departing Los Angeles fo
+     7.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.94s]: (tool result) Los Angeles to San Francisco, May 1, 4 passengers: 08:00
+     7.31s  user  발화 끝
+    16.25s  user  발화 시작: Hmm, that 8 AM one sounds good. Can you buy me a ticket for 
+    16.25s  agent 발화 끝
+    22.11s  <ret> 발화 (turn3 첫 프레임)
+    22.35s  agent 발화 시작: <ret> Great! Your ticket is purchased, confirmation number L
+    22.35s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.47s]: (tool result) Confirmation: LAX-SFX-0501-4P, ticket purchased.
+    22.35s  user  발화 끝
+    26.82s  user  발화 시작: Perfect. I'm thinking about a weekend trip, maybe somewhere 
+    26.82s  agent 발화 끝
+    31.69s  agent 발화 시작: Yeah.
+    31.69s  user  발화 끝
+    32.10s  agent 발화 시작: That sounds lovely! A weekend focused on nature is a wonderf
+    32.10s  agent 발화 끝
+    37.79s  user  발화 시작: Right.
+    37.79s  agent 발화 끝
+    38.20s  user  발화 시작: I was considering Yosemite, but I'm worried about crowds.
+    38.20s  user  발화 끝
+    41.85s  agent 발화 시작: Yosemite is breathtaking, but you're right to think about th
+    41.85s  user  발화 끝
+    49.57s  user  발화 시작: Maybe something a little less known? Any suggestions?
+    49.57s  agent 발화 끝
+    52.82s  agent 발화 시작: Mm-hmm.
+    52.82s  user  발화 끝
+    53.23s  agent 발화 시작: Have you ever considered Sequoia National Park? It offers in
+    53.23s  agent 발화 끝
+    59.33s  user  발화 시작: Sequoia… I've heard of it, but I don't know much about it.
+    59.33s  agent 발화 끝
+    64.20s  agent 발화 시작: It’s a bit quieter than Yosemite, offering a similar experie
+    64.20s  user  발화 끝
+    71.11s  user  발화 시작: Mm-hmm.
+    71.11s  agent 발화 끝
+    71.52s  user  발화 시작: What’s the weather like there right now?
+    71.52s  user  발화 끝
+    74.12s  <ret> 발화 (turn17 첫 프레임)
+    74.36s  agent 발화 시작: <ret> The weather in Sequoia National Park is currently eigh
+    74.36s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.75s]: (tool result) Sequoia National Park: 18.3°C, humidity 42%, wind 8.0 km
+    74.36s  user  발화 끝
+    84.11s  user  발화 시작: Yeah.
+    84.11s  agent 발화 끝
+    84.52s  agent 발화 시작: It sounds like ideal hiking conditions, doesn't it? Perhaps 
+    84.52s  user  발화 끝
+    90.21s  user  발화 시작: …Actually, before we get too far ahead…
+    90.21s  agent 발화 끝
+    93.05s  user  발화 시작: …can we check hotel availability near Sequoia?
+    93.05s  user  발화 끝
+    95.90s  agent 발화 시작: Let’s look at hotel options near Sequoia National Park. What
+    95.90s  user  발화 끝
+   101.99s  agent 발화 시작: I can help with that. A little planning goes a long way towa
+   101.99s  agent 발화 끝
+   108.49s  user  발화 시작: For the same weekend as the bus trip, May first, so maybe th
+   108.49s  agent 발화 끝
+   114.75s  <ret> 발화 (turn25 첫 프레임)
+   114.99s  agent 발화 시작: <ret> I found two options near Sequoia National Park for May
+   114.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.60s]: (tool result) Sequoia National Park, May 2-3: Wuksachi Lodge, $220/nig
+   114.99s  user  발화 끝
+   127.59s  user  발화 시작: John Muir Lodge sounds good. Can you reserve a room there fo
+   127.59s  agent 발화 끝
+   132.71s  <ret> 발화 (turn27 첫 프레임)
+   132.87s  agent 발화 시작: <ret> Wonderful. Your reservation at John Muir Lodge is conf
+   132.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Reservation confirmed: JML-SQP-0502-0503-1R.
+   132.87s  user  발화 끝
+   141.41s  user  발화 시작: Mhm.
+   141.41s  agent 발화 끝
+   141.81s  user  발화 시작: That's great, thanks. This is all coming together nicely.
+   141.81s  user  발화 끝
+   145.47s  agent 발화 시작: I’m so glad to hear that! Planning ahead like this really se
+   145.47s  user  발화 끝
+   157.66s  user  발화 시작: Mm-hmm.
+   157.66s  agent 발화 끝
+   158.07s  user  발화 시작: I think I'll look at some hiking trails now.
+   158.07s  user  발화 끝
+   161.72s  agent 발화 시작: Yeah, yeah.
+   161.72s  user  발화 끝
+   162.54s  agent 발화 시작: That's a fantastic idea. Exploring the trails is the best wa
+   162.54s  agent 발화 끝
+   169.44s  agent 발화 끝

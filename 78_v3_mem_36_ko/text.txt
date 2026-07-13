@@ -1,76 +1,62 @@
 v3_mem_36_ko src=mem style=mem
-SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 따뜻하고 세심한 상담사 텔라라입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 호기심 많고 지지적인 개인 가이드인 티오온입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "혜율",
+    "name": "현준",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-03",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-11-05",
+      "date": "2026-05-15",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-07-29",
+      "date": "2026-03-16",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-06-16",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-01-25",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2025-10-05",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-14",
-      "title": "Apartment hunting downtown",
+      "date": "2025-07-11",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 혜율님. 저는 텔라라입니다. 돈 관리와 예산 짜는 걸 도와드리는 상담사예요.
-[  5.38s][user ] 아, 안녕하세요. 혹시 제가 예전에 키우는 강아지 이름 말했던 거 기억하세요? ⟨ret@10.60s⟩
-[ 10.76s][moshi] ⟦⚡SPAN@10.76s: [2025-11-05] User has a Beagle named Rusty.⟧ 네, 혜율님께서 비글 강아지 '러스티'를 키우신다는 걸 기억하고 있어요. 귀여운 이름이네요.
-[ 16.14s][user ] «backchannel» 응.
-[ 16.63s][user ] 러스티, 산책시키고 오느라 좀 늦었네요.
-[ 19.07s][moshi] 괜찮아요. 천천히 오셨으면 좋겠어요. 혹시 지금 뭐 도와드릴까요?
-[ 22.98s][user ] «backchannel» 어.
-[ 23.47s][user ] 음… 전에 집 알아보는 얘기 했었잖아요. 혹시 그때 제가 반려동물 동반 가능한 곳으로 봤다고 했었죠? ⟨ret@30.65s⟩
-[ 30.81s][moshi] ⟦⚡SPAN@30.81s: [2026-03-14] Past chat — Apartment housing downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ 네, 혜율님께서 반려동물 동반 가능한 건물로 두 침실을 찾으셨던 걸 기억하고 있어요.
-[ 36.68s][user ] «backchannel» 그래.
-[ 37.17s][moshi] 혹시 지금도 그 조건으로 집을 알아보고 싶으신가요?
-[ 40.59s][user ] 응, 맞아. 혹시 지금 서울 시내에서 반려동물 동반 가능한 집이 얼마나 있는지 알아봐 줄 수 있어? ⟨ret@48.17s⟩
-[ 48.41s][moshi] ⟦⚡SPAN@48.41s: (tool result) 12 houses found matching your criteria.⟧ 서울 시내에서 반려동물 동반 가능한 집 열두 채가 있어요. 더 자세히 알아볼까요?
-      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area": "Seoul"}}
-[ 54.28s][user ] 응, 좀 더 자세히 알려줘.
-[ 56.73s][moshi] 어떤 점이 궁금하신가요? 예를 들어, 가격대나 원하는 위치 같은 게 있으세요?
-[ 62.11s][user ] 가격대는… 음, 보증금 삼억 이하면 좋겠어.
-[ 65.04s][moshi] 보증금 삼억 이하의 반려동물 동반 가능한 서울 시내 집들을 찾아볼게요.
+[  0.00s][moshi] 안녕하세요, 현준님. 저는 티오온이라고 해요. 오늘 하루는 어떠셨어요?
+[  4.23s][user ] 어… 그냥 그랬어. 전에 교토 여행 얘기했던 거 기억나?
+[  8.98s][moshi] «backchannel» 네.
+[  9.51s][moshi] ⟨ret@9.27s⟩ ⟦⚡SPAN@9.51s: [2025-10-05] User is planning a trip to Kyoto in August.⟧ 네, 팔월에 교토 여행을 계획하고 계셨던 것 기억하고 있어요. 혹시 더 자세한 계획을 세우는 데 도움을 드릴까요?
+[ 18.49s][user ] 그때 숙소 예약을 아직 안 했었지. 괜찮은 호텔 좀 ⟨ret@23.37s⟩ 찾아줘.
+[ 23.77s][moshi] ⟦⚡SPAN@23.77s: (tool result) {"city": "Kyoto", "check in date": "2026-08-01", "check out date": "2026-08-08", "adults": 1}⟧ 교토에서 이천이십육년 팔월 일일부터 팔일까지 일인 숙소 검색 결과가 나왔어요. 다양한 호텔이 있으니, 원하시는 가격대나 편의시설을 말씀해 주시면 더 자세히 찾아드릴게요.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {}}
+[ 34.87s][user ] 음… 가격대는 조금 비싼 편으로 해 줘.
+[ 38.56s][moshi] 조금 비싼 편의 호텔로 찾아볼게요. 어떤 스타일을 선호하시나요? 전통적인 료칸이나 현대적인 호텔 중 어디가 더 좋으세요?

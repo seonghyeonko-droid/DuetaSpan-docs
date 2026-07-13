@@ -4,107 +4,117 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "소담",
+#     "name": "가훈",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-03-16",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-08-26",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-08-06",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-07-02",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-30",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-05",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-16",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 피부과 예약 좀 잡아 주세요. | S2 알겠습니다. | S3 …혹시 김 선생님 예약 전에 근처 카페라도 알아봐 주실 수 있 | S4 아, 다행이네요. 예약 시간까지 커피 마시면서 시간 보내야겠어
+# EXAMINER(FDB-v2) 단계: S1 라스베이거스에서 흡연 가능한 이성급 호텔 좀 찾아줘. | S2 서커스 서커스… 거긴 아이들이랑 가기 좋나? | S3 서울 말고 부산은? | S4 …칠월 십오일에 병원 예약했었나?
 
-     0.00s  user  발화 시작: 이번 주 토요일에 피부과 예약 좀 잡아 주세요.
-     3.93s  agent 발화 시작: 네, 피부과 예약 도와드릴게요. 혹시 선호하는 의사 선생님이 있으신가요?
-     3.93s  user  발화 끝
-     8.34s  user  발화 시작: 음.
-     8.34s  agent 발화 끝
-     8.83s  user  발화 시작: 음… 김민준 선생님으로 부탁드려요.
-     8.83s  user  발화 끝
-    10.48s  <ret> 발화 (turn4 첫 프레임)
-    10.80s  agent 발화 시작: <ret> 김민준 선생님은 토요일 오후 두 시, 네 시, 여섯 시에 예약이 가능합니다.
-    10.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) 김민준 선생님은 토요일 오후 두 시, 네 시, 여섯 시에 예약 가능합니다.
-    10.80s  user  발화 끝
-    16.69s  user  발화 시작: 오후 네 시로 예약해 주세요.
-    16.69s  agent 발화 끝
-    18.82s  <ret> 발화 (turn6 첫 프레임)
-    19.14s  agent 발화 시작: <ret> 예약이 완료되었습니다. 예약 번호는 칠 팔 구 이 삼 사입니다.
-    19.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) 예약이 완료되었습니다. 예약 번호는 789234입니다.
-    19.14s  user  발화 끝
-    24.05s  user  발화 시작: 알겠습니다.
-    24.05s  agent 발화 끝
-    24.54s  agent 발화 시작: 예약 확인 문자를 보내드렸습니다. 혹시 다른 예약이 필요하신가요?
-    24.54s  user  발화 끝
-    28.46s  user  발화 시작: 네.
-    28.46s  agent 발화 끝
-    28.96s  agent 발화 시작: 여행 준비에 도움이 될 만한 정보도 찾아드릴 수 있습니다.
-    28.96s  user  발화 끝
-    33.37s  user  발화 시작: 여행요? 갑자기 왜 여행 얘기를—
-    33.37s  agent 발화 끝
-    35.83s  user  발화 시작: …혹시 김 선생님 예약 전에 근처 카페라도 알아봐 주실 수 있을까요?
-    35.83s  user  발화 끝
-    40.82s  <ret> 발화 (turn13 첫 프레임)
-    41.22s  agent 발화 시작: <ret> 김민준 선생님 피부과 근처에 괜찮은 카페를 찾아보겠습니다.
-    41.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.44s]: (tool result) 김민준 피부과 근처에 '커피베네', '스타벅스', '투썸플레이스'가 있습니다. 커피베네 평점이 가장 
-    41.22s  user  발화 끝
-    44.66s  agent 발화 시작: 김민준 피부과 근처에는 '커피베네', '스타벅스', '투썸플레이스'가 있습니다. 커피베네 평점이 가장 높습니
-    44.66s  agent 발화 끝
-    50.06s  user  발화 시작: 커피베네로 가 봐야겠네요.
-    50.06s  agent 발화 끝
-    51.53s  agent 발화 시작: 커피베네까지 도보로 약 십분 정도 걸립니다.
-    51.53s  user  발화 끝
-    54.47s  user  발화 시작: 그럼 혹시 그 카페에 와이파이 되는지 알아봐 주시겠어요?
-    54.47s  agent 발화 끝
-    58.24s  <ret> 발화 (turn18 첫 프레임)
-    58.40s  agent 발화 시작: <ret> 커피베네는 무료 와이파이를 제공합니다. 커피베네 공식 웹사이트에 따르면 모든 매장에서 와이파이를 
-    58.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.87s]: (tool result) 커피베네는 무료 와이파이를 제공합니다. 커피베네 공식 웹사이트에 따르면 모든 매장에서 와이파이를 사용
-    58.40s  user  발화 끝
-    65.27s  user  발화 시작: 네.
-    65.27s  agent 발화 끝
-    65.76s  user  발화 시작: 아, 다행이네요. 예약 시간까지 커피 마시면서 시간 보내야겠어요.
-    65.76s  user  발화 끝
-    69.69s  agent 발화 시작: 예약 시간까지 편안하게 시간 보내세요.
-    69.69s  user  발화 끝
-    72.14s  user  발화 시작: 감사합니다.
-    72.14s  agent 발화 끝
-    72.63s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
-    72.63s  user  발화 끝
-    74.60s  agent 발화 끝
+     0.00s  user  발화 시작: 라스베이거스에서 흡연 가능한 이성급 호텔 좀 찾아줘.
+     3.43s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  agent 발화 시작: <ret> 라스베이거스에서 흡연 가능한 이성급 호텔로는 골든 너겟이 있는데, 일박에 백이십구달러부터 시작합니
+     3.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) The Golden Nugget is a two-star hotel in Las Vegas, Neva
+     3.51s  user  발화 끝
+     9.53s  user  발화 시작: 음… 골든 너겟 말고 다른 데도 있어? 좀 더 저렴한 곳으로.
+     9.53s  agent 발화 끝
+    14.65s  <ret> 발화 (turn3 첫 프레임)
+    15.05s  agent 발화 시작: <ret> 서커스 서커스 호텔도 흡연 가능하고, 일박에 팔십구달러부터 있습니다. 좀 더 저렴하네요.
+    15.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: (tool result) Circus Circus Hotel, Casino & Theme Park is a two-star h
+    15.05s  user  발화 끝
+    20.56s  user  발화 시작: 서커스 서커스… 거긴 아이들이랑 가기 좋나?
+    20.56s  agent 발화 끝
+    23.57s  agent 발화 시작: 아이들과 함께 가기 좋은 곳으로 유명해요. 다양한 놀이기구와 공연이 있거든요.
+    23.57s  user  발화 끝
+    28.59s  user  발화 시작: 네.
+    28.59s  agent 발화 끝
+    29.09s  agent 발화 시작: 특히 서커스 공연은 아이들이 정말 좋아할 거예요.
+    29.09s  user  발화 끝
+    32.60s  user  발화 시작: 그렇죠.
+    32.60s  agent 발화 끝
+    33.10s  user  발화 시작: 아, 이번 주 토요일에 서울 날씨 어때?
+    33.10s  user  발화 끝
+    36.45s  <ret> 발화 (turn10 첫 프레임)
+    36.61s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 이십팔도, 습도 칠십퍼센트, 바람은 시속 칠 점 이킬로미터, 부분적으
+    36.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Seoul: 28.0°C, humidity 70%, wind 7.2 km/h, condition: P
+    36.61s  user  발화 끝
+    45.14s  user  발화 시작: 서울 말고 부산은?
+    45.14s  agent 발화 끝
+    46.24s  <ret> 발화 (turn12 첫 프레임)
+    46.64s  agent 발화 시작: <ret> 부산은 이십육 점 오도, 습도 칠십오퍼센트, 바람은 시속 육 점 팔킬로미터, 흐릴 것으로 보입니다
+    46.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.03s]: (tool result) Busan: 26.5°C, humidity 75%, wind 6.8 km/h, condition: C
+    46.64s  user  발화 끝
+    55.67s  user  발화 시작: 아, 맞다. 혹시 내가…
+    55.67s  agent 발화 끝
+    57.67s  user  발화 시작: …칠월 십오일에 병원 예약했었나?
+    57.67s  user  발화 끝
+    59.68s  agent 발화 시작: 와.
+    59.68s  user  발화 끝
+    59.94s  <ret> 발화 (turn16 첫 프레임)
+    60.18s  agent 발화 시작: <ret> 네, 칠월 십오일에 병원 예약을 하셨습니다.
+    60.18s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.01s]: [2026-07-15] 병원 예약 확인
+    60.18s  agent 발화 끝
+    63.19s  user  발화 시작: 와.
+    63.19s  agent 발화 끝
+    63.69s  user  발화 시작: 고마워, 가릴. 덕분에 잘 챙겨지네.
+    63.69s  user  발화 끝
+    66.20s  agent 발화 시작: 도움이 되어서 기쁩니다. 건강 관리는 꾸준히 하는 게 중요하니까요.
+    66.20s  user  발화 끝
+    70.71s  agent 발화 끝

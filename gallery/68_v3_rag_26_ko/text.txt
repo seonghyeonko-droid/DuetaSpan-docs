@@ -1,66 +1,78 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 자리크스이며, 슬픔과 변화를 겪는 사람들을 돕는 부드럽고 사색적인 웰빙 코치입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치, 시오스입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "정현",
+    "name": "성진",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "male",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
-    },
-    {
-      "date": "2026-01-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-12-10",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-11-16",
+      "date": "2026-06-07",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-01-14",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2025-12-13",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-11-22",
+      "category": "home",
+      "text": "User's home address is 인천 연수구 송도동 12-5."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-08-25",
+      "category": "work",
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-12",
-      "title": "Comparing gym memberships",
+      "date": "2026-02-07",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-10",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, 자리크스 님. 요즘 좀 힘든 시간을 보내고 있어요.
-[  4.67s][moshi] 안녕하세요. 힘든 시간을 보내고 계시다니 마음이 아픕니다. 괜찮으시다면, 어떤 점이 가장 힘든지 말씀해 주시겠어요?
-[ 11.93s][user ] «backchannel» 아.
-[ 12.45s][user ] 음… 옛날 영화를 보려고 하는데, '오만과 편견' 천구백구십오년판에 나오는 키티 역할을 누가 맡았는지 기억이 안 ⟨ret@20.43s⟩ 나네요.
-[ 20.75s][moshi] ⟦⚡SPAN@20.75s: Polly Maberly played Kitty Bennet in the 1995 BBC adaptation of Pride and Prejudice.⟧ 천구백구십오년 비 비 씨 드라마 '오만과 편견'에서 키티 베넷 역할을 맡은 배우는 폴리 메이버리 씨입니다.
-[ 28.54s][user ] «backchannel» 그렇군요.
-[ 29.06s][user ] 폴리 메이버리… 이름이 기억이 안 났는데, 다시 들으니 떠오르네요. 혹시 오늘 서울 날씨는 ⟨ret@35.92s⟩ 어때요?
-[ 36.32s][moshi] ⟦⚡SPAN@36.32s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 현재 서울의 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 42.03s][moshi] 오늘 날씨가 좋으니 기분 전환에 도움이 될 거예요.
-[ 46.18s][user ] «backchannel» 네.
-[ 46.70s][user ] 날씨가 좋으면 산책하기 좋겠네요. 이번 주 토요일에 근처 공원 예약할 수 있을까요?
-[ 52.92s][moshi] 죄송합니다. 공원 예약 기능은 아직 지원하지 않습니다.
+[  0.00s][user ] 요즘 뭔가 새로운 걸 배우고 싶은데, 아이들 발달 단계에 대해 알아볼까 해요.
+[  6.41s][moshi] 새로운 배움은 언제나 좋은 일이죠. 어떤 점이 궁금하신가요?
+[ 10.69s][user ] «backchannel» 음.
+[ 11.22s][user ] 음… 아기가 처음 세상에 나왔을 때…
+[ 14.43s][user ] …인지 발달 단계가 어떻게 되는지 알고 ⟨ret@17.85s⟩ 싶어요.
+[ 18.17s][moshi] ⟦⚡SPAN@18.17s: The sensorimotor stage is the first stage of cognitive development, spanning from birth to approximately two y⟧ 아기가 세상에 나온 후, 대략 두 살까지는 감각운동기라고 불리는 첫 번째 인지 발달 단계를 거치게 됩니다.
+[ 26.72s][user ] 아, 감각운동기라고 하네요. 신기하네요. 그럼 그 다음 단계는 뭘까요?

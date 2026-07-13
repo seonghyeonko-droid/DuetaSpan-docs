@@ -1,70 +1,97 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는, 현실적이고 공감적인 개인 가이드인 에루르입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 보라우스이며, 큰 인생의 변화를 겪는 사람들을 돕는 호기심 많고 지지적인 개인 가이드입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "다완",
+    "name": "정안",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-16",
+      "date": "2026-05-26",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-12-22",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-12-09",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-12-06",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-07-22",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-07-13",
+      "date": "2026-04-21",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-07-21",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-10",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-22",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이번 주 토요일 저녁에 분위기 좋은 레스토랑 예약 좀 해 줄 수 ⟨ret@5.03s⟩ 있어?
-[  5.35s][moshi] ⟦⚡SPAN@5.35s: (no information found)⟧ 죄송해요, 지금은 예약 가능한 레스토랑 정보를 찾을 수 없어요. 혹시 다른 날짜나 지역을 알려 주시겠어요?
-[ 11.52s][user ] 음… 그럼 강남역 근처 이탈리안 레스토랑 찾아봐 줘. ⟨ret@14.74s⟩
-[ 14.82s][moshi] ⟦⚡SPAN@14.82s: (tool result) “La Piazza”, “Bella Italia”, “Pasta e Vino”⟧ 강남역 근처 이탈리안 레스토랑으로는 라 피아짜, 벨라 이탈리아, 파스타 에 비노가 있어요. 혹시 선호하는 곳이 있으신가요?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "강남역"}}
-[ 21.40s][user ] «backchannel» 네.
-[ 21.81s][moshi] 라 피아짜로 예약해 드릴까요? 몇 시로 예약하시겠어요?
+[  0.00s][user ] 유니온역에서 할리우드 명예의 거리에 가는 가장 빠른 대중교통 길은 ⟨ret@4.70s⟩ 뭐야?
+[  5.02s][moshi] ⟦⚡SPAN@5.02s: (tool result) {"distance": "16.1 km", "duration": "39 minutes", "route": "Red Line towards North Hollywood, tr⟧ 유니온역에서 할리우드 명예의 거리는 십육 점 일킬로미터이고, 대중교통으로 삼십구분 정도 걸려요. 빨간색 지하철 노선을 타고 노스 할리우드 방향으로 가서, 할리우드/하이랜드에서 이백십칠번이나 이백십구번 버스로 갈아타면 돼요. 할리우드/바인에서 내리시면 됩니다.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "Union Station", "destination": "Hollywood Walk of Fame", "mode": "transit"}}
+[ 19.08s][user ] 음, 버스는 좀 불편한데…
+[ 21.09s][moshi] 혹시 다른 교통수단을 알아볼까요? 아니면, 좀 더 자세한 정보를 드릴까요?
+[ 26.11s][user ] «backchannel» 네.
+[ 26.61s][user ] 자전거로는 얼마나 ⟨ret@27.72s⟩ 걸릴까?
+[ 28.12s][moshi] ⟦⚡SPAN@28.12s: (tool result) {"distance": "16.6 km", "duration": "58 minutes", "route": "Take N Main St and N Spring St to W ⟧ 자전거로는 십육 점 육킬로미터이고, 약 오십팔분 정도 걸립니다. 세사르 차베스 거리를 따라 북쪽으로 가서, 웨스트 할리우드 대로로 우회전하시면 돼요. 쭉 가시면 목적지에 도착합니다.
+      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Union Station", "destination": "Hollywood Walk of Fame"}}
+[ 39.66s][user ] «backchannel» 진짜요?
+[ 40.17s][moshi] 자전거 타는 게 좀 힘드시다면, 다른 방법을 찾아보는 게 좋을 수도 있겠네요.
+[ 46.19s][user ] 택시는 얼마나 나올까? ⟨ret@47.62s⟩
+[ 47.70s][moshi] ⟦⚡SPAN@47.70s: (tool result) {"estimated fare": "$25-35", "estimated duration": "20-25 minutes", "ride types": UberX, Lyft, T⟧ 택시는 이십오달러에서 삼십오달러 정도 예상되고, 이십분에서 이십오분 정도 걸릴 것 같아요. 우버X, 리프트, 택시를 이용할 수 있습니다.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"origin": "Union Station", "destination": "Hollywood Walk of Fame"}}
+[ 56.23s][user ] «backchannel» 예.
+[ 56.74s][user ] 오, 생각보다 저렴하네.
+[ 58.24s][moshi] 네, 대중교통보다는 조금 비싸지만, 시간을 절약할 수 있다는 장점이 있죠.
+[ 63.26s][user ] 이번 주 토요일에 콘서트 티켓 예매 좀 해줘.
+[ 67.28s][moshi] 어떤 콘서트 티켓을 예매해 드릴까요? 장소와 시간을 알려주세요.
+[ 71.30s][user ] 스테이플스 센터에서 열리는 비 티 에스 콘서트. ⟨ret@74.73s⟩
+[ 74.81s][moshi] ⟦⚡SPAN@74.81s: (tool result) {"event id": "BTS20260712", "ticket price": "$150-300", "availability": "Limited", "confirmation⟧ 스테이플스 센터에서 열리는 비 티 에스 콘서트 티켓을 예매해 드렸습니다. 티켓 가격은 백오십달러에서 삼백달러 사이이고, 좌석이 얼마 남지 않았어요. 확인 번호는 에이 비 일 이 씨 디 삼 사입니다.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"venue": "Staples Center", "artist": "BTS", "date": "July 12, 2026"}}
+[ 89.37s][user ] 와, 진짜 고마워!
+[ 90.88s][moshi] 천만에요. 콘서트 즐겁게 다녀오세요!
+[ 92.89s][user ] 혹시 내일 날씨 어때? ⟨ret@94.73s⟩
+[ 94.89s][moshi] ⟦⚡SPAN@94.89s: (tool result) {"temperature": "28.0°C", "humidity": "65%", "wind speed": "10.5 km/h", "condition": "Sunny"}⟧ 내일 로스앤젤레스 날씨는 섭씨 이십팔도이고, 습도는 육십오퍼센트, 풍속은 시속 십 점 오킬로미터, 맑을 것으로 예상됩니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Los Angeles"}}
+[102.43s][user ] 꽤 덥겠네.
+[103.43s][moshi] 네, 햇볕이 강할 테니 선크림을 꼭 바르세요.
+[106.94s][user ] «backchannel» 그렇죠.
+[107.45s][user ] 저녁에 좋은 레스토랑 좀 추천해 줘.
+[110.46s][moshi] 어떤 종류의 음식을 좋아하세요? 그리고, 가격대는 어느 정도 생각하고 계세요?
+[115.48s][user ] 한식, 가격은 보통 정도로. ⟨ret@117.33s⟩
+[117.49s][moshi] ⟦⚡SPAN@117.49s: (tool result) {"restaurant name": "Park's BBQ", "address": "955 S Vermont Ave, Los Angeles, CA 90006", "rating⟧ 로스앤젤레스에서 한식으로, 가격대가 보통 정도인 레스토랑으로는 파크스 비 비 큐가 있습니다. 주소는 구백오십오 에스 Vermont Ave이고, 평점은 사 점 오점이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean", "price_range": "$$", "location": "Los Angeles"}}
+[127.53s][user ] 알았어.
+[128.03s][moshi] 파크스 비 비 큐는 정말 맛있는 곳이에요. 즐거운 저녁 식사 되세요!
+[133.55s][user ] 혹시 지난번에 내가 말했던 거 기억해?
+[136.57s][moshi] 지난번에 말씀하신 내용이 무엇이었는지 정확히 기억나지 않아요. 다시 한번 말씀해 주시겠어요?
+[142.09s][user ] [이 공 이 사 공 삼 일 오] 다음 주 토요일에 부산 여행 가고 싶어.
+[149.62s][moshi] 다음 주 토요일에 부산 여행 가고 싶어.
+[153.14s][moshi] 부산 여행을 계획하고 계시는군요. 혹시 숙소나 항공편 예약을 도와드릴까요?
+[157.65s][user ] 아니, 지금은 그냥 얘기만.
+[159.66s][moshi] 네, 알겠습니다. 부산은 정말 아름다운 도시죠.

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "은영",
+#     "name": "보담",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,108 +12,89 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-05-21",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-01-11",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
 #       "date": "2026-01-06",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     },
 #     {
-#       "date": "2025-09-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-10-06",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-08-09",
+#       "date": "2025-06-07",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-26",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-22",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 요즘 마라톤 연습 때문에 너무 힘들어요. | S2 네, 땅콩은 절대 안 돼요. 그리고… 제가 채식주의자잖아요. | S3 맞아요. 혹시… 제가 집에서 요리하기 귀찮을 때, 근처에 괜찮 | S4 와, 고마워요! 덕분에 저녁 걱정은 덜었네요.
+# EXAMINER(FDB-v2) 단계: S1 아, 네, 안녕하세요. 조크스님. 혹시 제가 예전에 말씀드렸던 | S2 맞아요, 감사합니다. 혹시 하노이에 유제품 없는 맛있는 음식점 | S3 와, 정말 감사합니다! — | S4 더 노트 커피가 끌리네요. 혹시 거기 가는 방법 좀 알려주실 
 
-     0.00s  agent 발화 시작: 안녕하세요, 은영님. 저는 기아스예요. 오늘 하루도 편안하게 보내셨나요?
-     4.44s  user  발화 시작: 음… 요즘 마라톤 연습 때문에 너무 힘들어요.
-     4.44s  agent 발화 끝
-     8.24s  <ret> 발화 (turn2 첫 프레임)
-     8.32s  agent 발화 시작: <ret> 마라톤 연습이 힘드시군요. 꾸준히 하시는 모습이 정말 대단하세요. 혹시 연습 계획에 대해 이야기해
-     8.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.76s]: [2026-06-27] User is into marathon training.
-     8.32s  user  발화 끝
-    16.08s  agent 발화 시작: 마라톤 연습을 하고 계신다는 사실을 기억하고 있어요. 혹시 제가 도움이 될 만한 부분이 있을까요?
-    16.08s  agent 발화 끝
-    23.84s  user  발화 시작: 사실… 지난번에 얘기했던 것처럼, 훈련하면서 식단 조절도 같이 하고 싶어요.
-    23.84s  agent 발화 끝
-    29.31s  <ret> 발화 (turn5 첫 프레임)
-    29.39s  agent 발화 시작: <ret> 식단 조절도 함께 하고 싶으시군요. 혹시 특별히 피해야 하는 음식이 있으신가요?
-    29.39s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.10s]: [2026-05-21] User is allergic to peanuts.
-    29.39s  user  발화 끝
-    35.49s  agent 발화 시작: 땅콩 알레르기가 있으시다는 점을 기억하고 있습니다. 식단 구성에 반영해야 할까요?
-    35.49s  agent 발화 끝
-    41.03s  user  발화 시작: 그치.
-    41.03s  agent 발화 끝
-    41.59s  user  발화 시작: 네, 땅콩은 절대 안 돼요. 그리고… 제가 채식주의자잖아요.
-    41.59s  user  발화 끝
-    45.70s  <ret> 발화 (turn9 첫 프레임)
-    46.02s  agent 발화 시작: <ret> 채식주의자이시군요. 제가 기억하고 있습니다.
-    46.02s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.22s]: [2026-01-06] User is pescatarian.
-    46.02s  user  발화 끝
-    48.24s  agent 발화 시작: 생선을 드시는 채식주의자, 그러니까 페스코 베지테리언이시라는 점도 알고 있어요.
-    48.24s  agent 발화 끝
-    53.23s  user  발화 시작: 맞아요. 혹시… 제가 집에서 요리하기 귀찮을 때, 근처에 괜찮은 채식 식당 있나요?
-    53.23s  agent 발화 끝
-    59.49s  <ret> 발화 (turn12 첫 프레임)
-    59.89s  agent 발화 시작: <ret> 근처에 '러빙헛'과 '우 베지'라는 채식 식당이 있어요. '러빙헛'은 비건이고 평점이 사 점 이점
-    59.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.97s]: (tool result) Restaurants found: 'Loving Hut' (vegan, 4.2 stars, 1.5km
-    59.89s  user  발화 끝
-    74.86s  user  발화 시작: 오, 러빙헛이 가까운 것 같네요. 거기 예약해 줄 수 있어요?
-    74.86s  agent 발화 끝
-    80.24s  <ret> 발화 (turn14 첫 프레임)
-    80.40s  agent 발화 시작: <ret> '러빙헛'에 칠월 십일일 저녁 일곱시에 예약이 완료되었습니다. 확인 번호는 엘 에이치 칠 팔 구 
-    80.40s  ⚡SPAN 주입 [d'=1.84s / d_lead=8.32s]: (tool result) Reservation confirmed for Loving Hut, July 11, 2026, 7:0
-    80.40s  user  발화 끝
-    88.72s  user  발화 시작: 와, 고마워요! 덕분에 저녁 걱정은 덜었네요.
-    88.72s  agent 발화 끝
-    92.05s  agent 발화 시작: 다행이에요. 훈련과 식단 관리 모두 잘 하시길 바랄게요.
-    92.05s  user  발화 끝
-    96.48s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 보담님. 저는 조크스예요. 앞으로 보담님의 관계와 사회생활을 도와드릴게요.
+     4.36s  user  발화 시작: 아, 네, 안녕하세요. 조크스님. 혹시 제가 예전에 말씀드렸던 베트남 여행 계획 기억하세요?
+     4.36s  agent 발화 끝
+    10.09s  <ret> 발화 (turn2 첫 프레임)
+    10.17s  agent 발화 시작: <ret> 네, 보담님. 팔월에 베트남 여행을 계획하고 계시는군요.
+    10.17s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.39s]: [2026-01-06] User is planning a trip to Vietnam in August.
+    10.17s  user  발화 끝
+    13.56s  user  발화 시작: 네, 그런데 혹시 제가 유제품을 잘 못 먹는다는 걸 기억하시는지 궁금해서요.
+    13.56s  agent 발화 끝
+    18.89s  agent 발화 시작: 네.
+    18.89s  user  발화 끝
+    19.29s  <ret> 발화 (turn5 첫 프레임)
+    19.37s  agent 발화 시작: <ret> 아, 맞아요. 보담님은 유제품에 민감하시죠. 여행 중에 음식 선택하실 때 주의하시면 좋겠어요.
+    19.37s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.81s]: [2026-01-11] User is lactose-intolerant.
+    19.37s  agent 발화 끝
+    25.18s  user  발화 시작: 네.
+    25.18s  agent 발화 끝
+    25.67s  user  발화 시작: 맞아요, 감사합니다. 혹시 하노이에 유제품 없는 맛있는 음식점 아세요?
+    25.67s  user  발화 끝
+    29.78s  <ret> 발화 (turn8 첫 프레임)
+    30.02s  agent 발화 시작: <ret> 하노이에 유제품 없는 베트남 음식점 몇 곳을 찾았어요. 포 십 리 꾸옥 수, 콴 안 응온, 하이웨
+    30.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) Restaurants found: Pho 10 Ly Quoc Su (Vietnamese, $$), Q
+    30.02s  user  발화 끝
+    38.74s  user  발화 시작: 콴 안 응온이 괜찮아 보이는데, 예약은 어떻게 해야 하나요?
+    38.74s  agent 발화 끝
+    43.02s  <ret> 발화 (turn10 첫 프레임)
+    43.10s  agent 발화 시작: <ret> 팔월 십오일 저녁 일곱시에 콴 안 응온에 여섯명으로 예약이 완료됐어요. 확인번호는 큐 에이 엔 칠
+    43.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) Reservation confirmed for 6 people at Quan An Ngon on Au
+    43.10s  user  발화 끝
+    51.82s  user  발화 시작: 와, 정말 감사합니다! —
+    51.82s  agent 발화 끝
+    53.75s  user  발화 시작: 혹시 그 식당 근처에, 야외 좌석이 있는 카페도 알아봐 주실 수 있을까요?
+    53.75s  user  발화 끝
+    59.16s  <ret> 발화 (turn13 첫 프레임)
+    59.56s  agent 발화 시작: <ret> 콴 안 응온 근처에 야외 좌석이 있는 카페 몇 곳을 찾았어요. 더 노트 커피, 하노이 라 카스텔라
+    59.56s  ⚡SPAN 주입 [d'=1.84s / d_lead=9.69s]: (tool result) Cafes found: The Note Coffee (Vietnamese, $), Hanoi La C
+    59.56s  user  발화 끝
+    69.25s  user  발화 시작: 더 노트 커피가 끌리네요. 혹시 거기 가는 방법 좀 알려주실 수 있나요?
+    69.25s  agent 발화 끝
+    75.06s  agent 발화 시작: 네.
+    75.06s  user  발화 끝
+    75.30s  <ret> 발화 (turn16 첫 프레임)
+    75.54s  agent 발화 시작: <ret> 콴 안 응온에서 판 보이 쩌우 거리를 따라 북쪽으로 이백미터 가세요. 판 보이 쩌우 거리에서 좌회
+    75.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.07s]: (tool result) Walking directions: Head north on Hang Gai St toward Pha
+    75.54s  agent 발화 끝
+    88.62s  agent 발화 끝

@@ -4,53 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Kim",
+#     "name": "William",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-16",
+#       "date": "2026-06-07",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-09-07",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-01-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
 #     },
 #     {
-#       "date": "2025-08-24",
+#       "date": "2025-12-13",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "home",
+#       "text": "User's home address is 383 Maple Drive."
+#     },
+#     {
+#       "date": "2025-11-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-25",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-18",
+#       "date": "2026-05-21",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,45 +58,43 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-07",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-04",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, you know, I was just rewatchin | S2 Polly Maberly, right. That rings a | S3 That sounds…pleasant. Maybe I… | S4 …should plan a trip.
+# EXAMINER(FDB-v2) 단계: S1 I’m feeling a bit stuck creatively | S2 That's nice to hear. Speaking of d | S3 Two years, wow. I’m trying to plan | S4 That does sound good! Maybe I shou
 
-     0.00s  user  발화 시작: Oh, you know, I was just rewatching Pride and Prejudice, the
-     5.95s  agent 발화 시작: That adaptation is quite lovely, isn’t it? It captures a cer
-     5.95s  user  발화 끝
-    11.45s  user  발화 시작: It really does. Um, who played Kitty, do you remember?
-    11.45s  agent 발화 끝
-    15.78s  <ret> 발화 (turn3 첫 프레임)
-    16.02s  agent 발화 시작: <ret> The role of Kitty Bennet was played by Polly Maberly i
-    16.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.41s]: Polly Maberly played Kitty Bennet in the 1995 BBC adaptation of Pride 
-    16.02s  user  발화 끝
-    22.43s  user  발화 시작: Polly Maberly, right. That rings a bell. What’s the weather 
-    22.43s  agent 발화 끝
-    28.68s  <ret> 발화 (turn5 첫 프레임)
-    28.84s  agent 발화 시작: <ret> It’s currently 20.5°C in London, with partly cloudy sk
-    28.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.95s]: (tool result) London: 20.5°C, humidity 68%, wind 8.2 km/h, condition: 
-    28.84s  user  발화 끝
-    34.80s  user  발화 시작: That sounds…pleasant. Maybe I…
-    34.80s  agent 발화 끝
-    36.63s  user  발화 시작: …should plan a trip.
-    36.63s  user  발화 끝
-    38.46s  agent 발화 시작: A change of scenery can be very restorative, especially when
-    38.46s  user  발화 끝
-    44.87s  agent 발화 끝
+     0.00s  user  발화 시작: I’m feeling a bit stuck creatively, actually. Do you ever ge
+     4.92s  agent 발화 시작: It’s very common to feel blocked sometimes, I assure you. It
+     4.92s  user  발화 끝
+    12.87s  user  발화 시작: Uh-huh.
+    12.87s  agent 발화 끝
+    13.25s  user  발화 시작: That's nice to hear. Speaking of development, what did Piage
+    13.25s  user  발화 끝
+    18.69s  <ret> 발화 (turn4 첫 프레임)
+    18.93s  agent 발화 시작: <ret> Piaget described the sensorimotor stage as the first i
+    18.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.33s]: According to Jean Piaget, the sensorimotor stage is the first stage of
+    18.93s  user  발화 끝
+    27.26s  agent 발화 시작: It’s a fascinating period of learning through senses and act
+    27.26s  agent 발화 끝
+    31.05s  user  발화 시작: Two years, wow. I’m trying to plan a trip to Seoul next mont
+    31.05s  agent 발화 끝
+    38.60s  <ret> 발화 (turn8 첫 프레임)
+    38.62s  agent 발화 시작: Yeah.
+    38.62s  user  발화 끝
+    39.00s  agent 발화 시작: <ret> The current weather in Seoul is 26.0 degrees Celsius, 
+    39.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.57s]: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wi
+    39.00s  agent 발화 끝
+    46.57s  agent 발화 시작: It sounds quite pleasant for traveling.
+    46.57s  agent 발화 끝
+    48.84s  user  발화 시작: That does sound good! Maybe I should look for some events wh
+    48.84s  agent 발화 끝
+    54.15s  agent 발화 시작: That's a wonderful idea. Planning fun experiences can be ver
+    54.15s  user  발화 끝
+    58.31s  agent 발화 끝

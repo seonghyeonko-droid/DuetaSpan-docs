@@ -1,56 +1,56 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Jarix, a gentle and reflective wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Sios, a thoughtful and soft-spoken wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Kim",
+    "name": "William",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2026-01-02",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-12-10",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-11-16",
+      "date": "2026-06-07",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-09-07",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-01-14",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
     },
     {
-      "date": "2025-08-24",
+      "date": "2025-12-13",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-11-22",
+      "category": "home",
+      "text": "User's home address is 383 Maple Drive."
+    },
+    {
+      "date": "2025-11-07",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-08-25",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-18",
+      "date": "2026-05-21",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -58,32 +58,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-09-07",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-04",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-06",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Oh, you know, I was just rewatching Pride and Prejudice, the 1995 one.
-[  5.95s][moshi] That adaptation is quite lovely, isn’t it? It captures a certain wistfulness.
-[ 11.45s][user ] It really does. Um, who played Kitty, do you ⟨ret@15.78s⟩ remember?
-[ 16.02s][moshi] ⟦⚡SPAN@16.02s: Polly Maberly played Kitty Bennet in the 1995 BBC adaptation of Pride and Prejudice.⟧ The role of Kitty Bennet was played by Polly Maberly in that 1995 series.
-[ 22.43s][user ] Polly Maberly, right. That rings a bell. What’s the weather like in London today? ⟨ret@28.68s⟩
-[ 28.84s][moshi] ⟦⚡SPAN@28.84s: (tool result) London: 20.5°C, humidity 68%, wind 8.2 km/h, condition: partly cloudy.⟧ It’s currently 20.5°C in London, with partly cloudy skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 34.80s][user ] That sounds…pleasant. Maybe I…
-[ 36.63s][user ] …should plan a trip.
-[ 38.46s][moshi] A change of scenery can be very restorative, especially when we're navigating difficult emotions.
+[  0.00s][user ] I’m feeling a bit stuck creatively, actually. Do you ever get writer’s block?
+[  4.92s][moshi] It’s very common to feel blocked sometimes, I assure you. It’s often a signal that we need to shift our perspective.
+[ 12.87s][user ] «backchannel» Uh-huh.
+[ 13.25s][user ] That's nice to hear. Speaking of development, what did Piaget say about how babies ⟨ret@18.69s⟩ think?
+[ 18.93s][moshi] ⟦⚡SPAN@18.93s: According to Jean Piaget, the sensorimotor stage is the first stage of cognitive development, lasting from bir⟧ Piaget described the sensorimotor stage as the first in cognitive development, beginning at birth and lasting until around two years of age.
+[ 27.26s][moshi] It’s a fascinating period of learning through senses and actions.
+[ 31.05s][user ] Two years, wow. I’m trying to plan a trip to Seoul next month, could you check the weather for me? ⟨ret@38.60s⟩
+[ 38.62s][moshi] «backchannel» Yeah.
+[ 39.00s][moshi] ⟦⚡SPAN@39.00s: (tool result) Current conditions in Seoul are 26.0°C, humidity 68%, wind 3.2 km/h.⟧ The current weather in Seoul is 26.0 degrees Celsius, with 68 percent humidity and a 3.2 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 46.57s][moshi] It sounds quite pleasant for traveling.
+[ 48.84s][user ] That does sound good! Maybe I should look for some events while I'm there.
+[ 54.15s][moshi] That's a wonderful idea. Planning fun experiences can be very energizing.

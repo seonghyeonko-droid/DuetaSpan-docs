@@ -1,77 +1,77 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Frorana, a gentle and reflective counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Unal, a encouraging and non-judgmental counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Kim",
+    "name": "Milan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
+    "nationality": "German",
+    "gender": "male",
     "age_range": "early 20s",
-    "language": "French"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2026-06-16",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-30",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-02-25",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-11-28",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2026-03-13",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-06-25",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-02-14",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-01-05",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-06-12",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-17",
+      "date": "2025-08-23",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to start a code generation session and save the generated tests in the api tests ⟨ret@7.17s⟩ directory.
-[  7.41s][moshi] ⟦⚡SPAN@7.41s: (no information found)⟧ I’m afraid I couldn’t find any prior information about that directory. However, I can certainly create it for you.
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "api tests"}}
-[ 15.23s][moshi] I have now created the 'api tests' directory. It's ready for your generated tests.
-[ 20.99s][user ] That’s great. Now, could you search for recent articles about effective stress management techniques? ⟨ret@26.67s⟩
-[ 26.75s][moshi] ⟦⚡SPAN@26.75s: Recent studies highlight mindfulness meditation, regular exercise, and strong social connections as key stress⟧ Recent articles suggest mindfulness, exercise, and social connections are effective for managing stress, as the American Psychological Association notes.
-[ 34.57s][user ] «backchannel» Okay.
-[ 34.98s][user ] Okay, and what’s the weather like in Seoul right ⟨ret@38.85s⟩ now?
-[ 39.09s][moshi] ⟦⚡SPAN@39.09s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The current weather in Seoul is 23.0 degrees Celsius, with 74% humidity and a wind speed of 5.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 47.73s][moshi] It sounds like a pleasant day there. Perhaps a walk could help with that stress?
-[ 53.90s][user ] «backchannel» Right.
-[ 54.32s][user ] That’s a good idea. Can you find me some nearby ⟨ret@58.52s⟩ parks?
-[ 58.84s][moshi] ⟦⚡SPAN@58.84s: Olympic Park is a large public park in Songpa District, Seoul, South Korea. It was created for the 1988 Seoul ⟧ Olympic Park, created for the 1988 Seoul Olympics, is a large public park in Songpa District and a popular recreational space.
+[  0.00s][user ] I'm having trouble sleeping lately. It feels like my mind just races at night.
+[  5.48s][moshi] It’s completely understandable to feel that way when your thoughts won’t quiet down. Many people experience racing minds before bed.
+[ 13.32s][user ] Do you think guided meditation might help with ⟨ret@16.53s⟩ that?
+[ 16.85s][moshi] ⟦⚡SPAN@16.85s: Guided meditation is a mental training practice that involves focusing your mind on a particular object, thoug⟧ Guided meditation can absolutely be helpful with a racing mind—it’s a practice to focus your attention, and studies show it can reduce anxiety and improve sleep quality.
+[ 27.42s][user ] «backchannel» Mm-hmm.
+[ 27.82s][moshi] Perhaps we could find a short session to try? I can search for guided meditations for sleep.

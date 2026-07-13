@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "정희",
+#     "name": "하희",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,89 +13,82 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
-#     },
-#     {
-#       "date": "2025-11-25",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-09-26",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-09-10",
+#       "date": "2026-06-16",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-05",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-03-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-03",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-08-23",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-17",
-#       "title": "Researching a used car",
+#       "date": "2025-05-28",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-17",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 그럼 이번 주 토요일 날씨는? | S3 아, 토요일에 친구랑 경복궁 가기로 했는데… | S4 응, 맛집 좀 찾아줘.
 
-     0.00s  user  발화 시작: 음… 이번 주 토요일에 갈 만한 곳 좀 찾아줄래? 서울 근처로.
-     5.40s  agent 발화 시작: 서울 근처라면 어디를 생각하고 계신가요? 좀 더 구체적으로 말씀해 주시면 더 좋은 곳을 찾아드릴 수 있어요.
-     5.40s  user  발화 끝
-    13.24s  user  발화 시작: 응응.
-    13.24s  agent 발화 끝
-    13.73s  user  발화 시작: 글쎄… 조용하고 자연이 예쁜 곳이면 좋겠어.
-    13.73s  user  발화 끝
-    16.44s  <ret> 발화 (turn4 첫 프레임)
-    16.68s  agent 발화 시작: <ret> 서울숲은 성동구에 있는 넓은 공원이에요. 면적이 무려 백육십칠만 제곱미터나 된답니다. 문화 예술 
-    16.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.79s]: The Seoul Forest is a large park in Seongdong-gu, Seoul, South Korea, 
-    16.68s  user  발화 끝
-    27.47s  user  발화 시작: 응응.
-    27.47s  agent 발화 끝
-    27.96s  user  발화 시작: 서울숲 좋지. 거긴 어떻게 가?
-    27.96s  user  발화 끝
-    30.17s  <ret> 발화 (turn7 첫 프레임)
-    30.41s  agent 발화 시작: <ret> 현재 위치에서 서울숲까지 자동차로 약 이십분이 걸린대요. 대중교통은 왕십리역에서 내려서 십분 정도
-    30.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.83s]: (tool result) {"directions": "현재 위치에서 서울숲까지 자동차로 약 20분 소요됩니다. 대중교통 이용 
-    30.41s  user  발화 끝
-    39.24s  agent 발화 시작: 서울숲에서 편안한 시간 보내시길 바랍니다. 혹시 다른 계획도 세워볼까요?
-    39.24s  agent 발화 끝
-    43.65s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨 어때?
+     1.33s  <ret> 발화 (turn1 첫 프레임)
+     1.65s  agent 발화 시작: <ret> 지금 서울 날씨는 이십팔도이고, 습도는 칠십퍼센트, 바람은 시속 사킬로미터입니다. 오늘 하루도 더
+     1.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) The current weather in Seoul is 28.0°C, humidity 70%, wi
+     1.65s  user  발화 끝
+     9.34s  user  발화 시작: 그럼 이번 주 토요일 날씨는?
+     9.34s  agent 발화 끝
+    11.76s  <ret> 발화 (turn3 첫 프레임)
+    12.08s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십일일 서울 날씨는 삼십도로 예상되고, 습도는 육십오퍼센트이며, 비가 올 
+    12.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (tool result) The weather forecast for Saturday, July 11, 2026, in Seo
+    12.08s  user  발화 끝
+    22.52s  user  발화 시작: 아, 토요일에 친구랑 경복궁 가기로 했는데…
+    22.52s  agent 발화 끝
+    25.81s  agent 발화 시작: 경복궁에 친구분과 가신다니 좋네요. 혹시 경복궁 주변에 맛집을 알아봐 드릴까요?
+    25.81s  user  발화 끝
+    31.30s  user  발화 시작: 응, 맛집 좀 찾아줘.
+    31.30s  agent 발화 끝
+    33.42s  <ret> 발화 (turn7 첫 프레임)
+    33.50s  agent 발화 시작: <ret> 경복궁 근처 식당으로는 '토속촌 삼계탕'(한국 음식, 별점 사 점 오점), '황생가 칼국수'(한국
+    33.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.18s]: (tool result) Restaurants near Gyeongbokgung Palace include 'Tosokchon
+    33.50s  user  발화 끝
+    46.68s  agent 발화 끝

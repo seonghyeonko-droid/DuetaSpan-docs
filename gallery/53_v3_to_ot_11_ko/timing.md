@@ -4,126 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "진정",
+#     "name": "예훈",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-05-25",
+#       "date": "2026-04-29",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-29",
+#       "date": "2025-12-02",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-13",
+#       "date": "2025-11-05",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2025-10-11",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-08-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-05-28",
-#       "title": "Setting up a home network",
+#       "date": "2025-09-28",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 무굴 회화에 원근법을 처음 도입한 사람이 누구였지? | S2 음… 잠깐만. | S3 천구백구십구년이구나… 좀 오래됐네. | S4 고마워, 레나.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요 | S2 와, 꽤 오래됐네요. — | S3 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요 | S4 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 
 
-     0.00s  user  발화 시작: 무굴 회화에 원근법을 처음 도입한 사람이 누구였지?
-     3.42s  <ret> 발화 (turn1 첫 프레임)
-     3.66s  agent 발화 시작: <ret> 무굴 회화에 원근법을 처음 도입한 사람은 자한기르 황제입니다. 그분은 예술에 대한 깊은 이해가 있
-     3.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.31s]: Jahangir introduced the element of perspective in Mughal painting.
-     3.66s  user  발화 끝
-    10.97s  user  발화 시작: 어.
-    10.97s  agent 발화 끝
-    11.50s  user  발화 시작: 아, 그래. 자한기르. 혹시 그분이 그린 그림 볼 수 있을까?
-    11.50s  user  발화 끝
-    16.40s  <ret> 발화 (turn4 첫 프레임)
-    16.72s  agent 발화 시작: <ret> 자한기르 황제의 그림을 찾았습니다. 메트로폴리탄 미술관에 '자한기르: 예술과 제국'이라는 전시가 
-    16.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) {"results": [{"title": "Jahangir: Art and Empire", "sour
-    16.72s  user  발화 끝
-    22.47s  user  발화 시작: 그래.
-    22.47s  agent 발화 끝
-    22.99s  user  발화 시작: 메트로폴리탄 미술관… 가보고 싶다.
-    22.99s  user  발화 끝
-    25.08s  agent 발화 시작: 좋아요. 혹시 다른 무굴 시대 예술가에 대해서도 알아보고 싶으신가요?
-    25.08s  user  발화 끝
-    29.78s  user  발화 시작: 응응.
-    29.78s  agent 발화 끝
-    30.31s  user  발화 시작: 음… 잠깐만.
-    30.31s  user  발화 끝
-    31.35s  agent 발화 시작: 무굴 시대에는 자한기르 외에도—
-    31.35s  user  발화 끝
-    33.44s  user  발화 시작: …혹시 그 시대 미술 기법에 대한 책 같은 거 찾아줄 수 있어?
-    33.44s  agent 발화 끝
-    39.71s  agent 발화 시작: 미술 기법에 대한 책을 찾아볼게요. 어떤 종류의 책을 원하시나요?
-    39.71s  user  발화 끝
-    44.41s  user  발화 시작: 그래.
-    44.41s  agent 발화 끝
-    44.93s  user  발화 시작: 음, 좀 자세하고, 그림도 많이 들어있는 걸로.
-    44.93s  user  발화 끝
-    48.51s  <ret> 발화 (turn15 첫 프레임)
-    48.59s  agent 발화 시작: <ret> '무굴 미술과 건축'이라는 책이 있습니다. W.E. 베글리와 Z.A. 데사이 님이 쓰셨고, 그림도
-    48.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.88s]: (tool result) Mughal Art and Architecture by W.E. Begley and Z.A. Desa
-    48.59s  user  발화 끝
-    57.47s  user  발화 시작: 와.
-    57.47s  agent 발화 끝
-    58.00s  user  발화 시작: 천구백구십구년이구나… 좀 오래됐네.
-    58.00s  user  발화 끝
-    59.56s  agent 발화 시작: 오래되었지만, 무굴 미술 기법에 대한 자세한 설명을 제공한다고 합니다.
-    59.56s  user  발화 끝
-    64.27s  user  발화 시작: 그래도 한번 찾아봐야겠다. 혹시 지금 서울 날씨 어때?
-    64.27s  agent 발화 끝
-    68.05s  <ret> 발화 (turn20 첫 프레임)
-    68.45s  agent 발화 시작: <ret> 서울은 현재 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 불고, 구
-    68.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) {"temperature": 28.5, "humidity": 65, "wind speed": 3.2,
-    68.45s  user  발화 끝
-    76.28s  user  발화 시작: 덥겠네. 그럼 에어컨 켜놓고 책 봐야겠다.
-    76.28s  agent 발화 끝
-    79.42s  agent 발화 시작: 네, 에어컨을 켜고 책을 보시면 좋을 것 같아요. 편안하게 공부하세요.
-    79.42s  user  발화 끝
-    84.64s  user  발화 시작: 어.
-    84.64s  agent 발화 끝
-    85.17s  user  발화 시작: 고마워, 레나.
-    85.17s  user  발화 끝
-    86.21s  agent 발화 시작: 도움이 되어서 기쁩니다.
-    86.21s  user  발화 끝
-    87.78s  user  발화 시작: 알았어.
-    87.78s  agent 발화 끝
-    88.30s  agent 발화 시작: 언제든지 편하게 말씀하세요. 저는 항상 당신을 응원합니다.
-    88.30s  user  발화 끝
-    91.96s  user  발화 시작: 응.
-    91.96s  agent 발화 끝
-    92.48s  user  발화 시작: 그럼 이만.
-    92.48s  user  발화 끝
-    93.53s  agent 발화 시작: 좋은 하루 보내세요!
-    93.53s  user  발화 끝
-    95.09s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요.
+     3.35s  <ret> 발화 (turn1 첫 프레임)
+     3.59s  agent 발화 시작: <ret> 한국어의 고유한 이름은 한글이라고 합니다. 아주 과학적인 문자 체계예요.
+     3.59s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.61s]: Hangul, also spelled Hangeul, is the native alphabet of the Korean lan
+     3.59s  user  발화 끝
+     8.20s  user  발화 시작: 아.
+     8.20s  agent 발화 끝
+     8.71s  user  발화 시작: 네, 그렇군요. 그런데 한글은 언제 만들어졌나요?
+     8.71s  user  발화 끝
+    11.47s  <ret> 발화 (turn4 첫 프레임)
+    11.79s  agent 발화 시작: <ret> 한글은 세종대왕께서 천사백사십육년에 발표하셨습니다. 백성을 위해 아주 쉽고 편리하게 만들었다고 해
+    11.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: Hangul was proclaimed by King Sejong the Great in 1446.
+    11.79s  user  발화 끝
+    17.42s  user  발화 시작: 예.
+    17.42s  agent 발화 끝
+    17.94s  user  발화 시작: 와, 꽤 오래됐네요. —
+    17.94s  user  발화 끝
+    19.99s  user  발화 시작: 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요?
+    19.99s  user  발화 끝
+    24.08s  agent 발화 시작: 네네.
+    24.08s  user  발화 끝
+    24.28s  <ret> 발화 (turn9 첫 프레임)
+    24.60s  agent 발화 시작: <ret> 세종대왕께서는 한글 창제 외에도 다양한 업적을 남기셨습니다. 과학 기술 발전에도 힘쓰셨죠.
+    24.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: Sejong the Great is credited with advancements in science, military te
+    24.60s  agent 발화 끝
+    30.23s  agent 발화 시작: 과학 기술과 군사 기술, 농업 발전에 큰 기여를 하셨다고 합니다. 백성을 위한 마음이 정말 컸던 분이세요.
+    30.23s  agent 발화 끝
+    38.43s  user  발화 시작: 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 됐어요.
+    38.43s  agent 발화 끝
+    43.56s  agent 발화 시작: 맞아요.
+    43.56s  user  발화 끝
+    44.07s  agent 발화 시작: 맞아요. 한글은 배우기 쉬운 문자라 외국인들도 금방 익힐 수 있다고 하죠. 저도 그렇게 생각합니다.
+    44.07s  agent 발화 끝
+    51.24s  agent 발화 끝

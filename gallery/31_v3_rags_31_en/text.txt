@@ -1,77 +1,60 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Lunax, a upbeat and supportive supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Hari, a calm and patient wellness coach who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Andrea",
+    "name": "Jack",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
+    "nationality": "Canadian",
+    "gender": "male",
     "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
+      "date": "2026-04-23",
       "category": "home",
-      "text": "User's home address is 115 Maple Drive."
+      "text": "User's home address is 408 Maple Drive."
     },
     {
-      "date": "2026-05-18",
+      "date": "2026-02-27",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-10-12",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-12-27",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-09-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-07-22",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "date": "2025-07-13",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-03",
+      "date": "2026-03-22",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-21",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-30",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who took over as president of the Second…
-[  3.89s][user ] …Bank of the United States in eighteen twenty-three? ⟨ret@7.54s⟩
-[  7.78s][moshi] ⟦⚡SPAN@7.78s: Nicholas Biddle assumed the presidency of the Second Bank of the United States on January first, eighteen twen⟧ Well, that would be Nicholas Biddle; he took over as president on January first, eighteen twenty-three, succeeding William Jones. It’s wonderful you’re exploring financial history!
+[  0.00s][user ] Who played the most minutes in NBA ⟨ret@3.38s⟩ history?
+[  3.62s][moshi] ⟦⚡SPAN@3.62s: Kareem Abdul-Jabbar holds the NBA record for most minutes played, with a total of 57,446 minutes over his 20 s⟧ That would be Kareem Abdul-Jabbar, with 57,446 minutes played throughout his career. It’s quite a testament to his longevity and dedication to the game.

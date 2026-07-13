@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Marie",
+#     "name": "Kim",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -12,74 +12,122 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-06-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2026-05-09",
+#       "date": "2026-04-26",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-03-30",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-03-23",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-01-24",
+#       "date": "2025-11-27",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-10-26",
+#       "date": "2025-07-22",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-05-30",
 #       "category": "home",
-#       "text": "User's home address is 334 Maple Drive."
+#       "text": "User's home address is 970 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-17",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-08",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 What is Google's current stock pri | S2 I’m not sure. Maybe something in r | S3 NextEra sounds interesting. What d | S4 Just a routine check-up. I need to
 
-     0.00s  user  발화 시작: I'm looking for coffee shops near Chicago, within three kilo
-     4.44s  <ret> 발화 (turn1 첫 프레임)
-     4.68s  agent 발화 시작: <ret> I found three coffee shops near Chicago. Intelligentsi
-     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.95s]: (tool result) {"results": [{"name": "Intelligentsia Coffee", "vicinity
-     4.68s  user  발화 끝
-    12.63s  user  발화 시작: Exactly.
-    12.63s  agent 발화 끝
-    13.10s  agent 발화 시작: Starbucks is at 150 North Michigan Avenue, with a 4.0 rating
-    13.10s  user  발화 끝
-    23.39s  user  발화 시작: That's great! Can you reserve a table for two at Dark Matter
-    23.39s  agent 발화 끝
-    30.55s  <ret> 발화 (turn5 첫 프레임)
-    30.87s  agent 발화 시작: <ret> I’ve reserved a table for two at Dark Matter Coffee th
-    30.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) {"confirmation id": "DM7294", "restaurant name": "Dark M
-    30.87s  user  발화 끝
-    41.16s  user  발화 시작: Perfect, thank you! What’s the weather forecast for Saturday
-    41.16s  agent 발화 끝
-    45.91s  <ret> 발화 (turn7 첫 프레임)
-    46.31s  agent 발화 시작: <ret> Saturday in Chicago will be partly cloudy with a tempe
-    46.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.69s]: (tool result) {"temperature": 26.5, "humidity": 68, "wind speed": 8.2,
-    46.31s  user  발화 끝
-    58.00s  agent 발화 끝
+     0.00s  user  발화 시작: What is Google's current stock price?
+     2.05s  <ret> 발화 (turn1 첫 프레임)
+     2.29s  agent 발화 시작: <ret> Google’s stock closed today at one hundred seventy-two
+     2.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.87s]: (tool result) Google's stock closed today, July 10, 2026, at 172.45 US
+     2.29s  user  발화 끝
+     9.17s  agent 발화 시작: It's good to see positive movement, isn't it?
+     9.17s  agent 발화 끝
+    12.22s  user  발화 시작: That’s good to hear. What about Apple?
+    12.22s  agent 발화 끝
+    14.73s  <ret> 발화 (turn4 첫 프레임)
+    14.89s  agent 발화 시작: <ret> Apple’s stock closed today at one hundred ninety-five 
+    14.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Apple's stock closed today, July 10, 2026, at 195.12 USD
+    14.89s  user  발화 끝
+    21.00s  user  발화 시작: Yeah.
+    21.00s  agent 발화 끝
+    21.39s  user  발화 시작: Hmm. I’m thinking of investing.
+    21.39s  user  발화 끝
+    23.29s  agent 발화 시작: Investing can be a wonderful step toward future security, th
+    23.29s  user  발화 끝
+    29.40s  agent 발화 시작: What are your initial thoughts about where you'd like to foc
+    29.40s  agent 발화 끝
+    34.37s  user  발화 시작: I’m not sure. Maybe something in renewable energy?
+    34.37s  agent 발화 끝
+    37.42s  agent 발화 시작: Mm-hmm.
+    37.42s  user  발화 끝
+    37.81s  agent 발화 시작: Renewable energy is a promising sector with significant grow
+    37.81s  agent 발화 끝
+    43.92s  agent 발화 시작: Would you like me to search for companies involved in renewa
+    43.92s  agent 발화 끝
+    48.50s  user  발화 시작: Yeah, totally.
+    48.50s  agent 발화 끝
+    49.26s  user  발화 시작: Yes, please. Show me some options.
+    49.26s  user  발화 끝
+    51.23s  <ret> 발화 (turn15 첫 프레임)
+    51.55s  agent 발화 시작: <ret> According to Forbes Advisor, NextEra Energy, Enel, and
+    51.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) NextEra Energy is consistently ranked among the top rene
+    51.55s  user  발화 끝
+    59.19s  user  발화 시작: Mhm.
+    59.19s  agent 발화 끝
+    59.57s  user  발화 시작: NextEra sounds interesting. What do they do exactly?
+    59.57s  user  발화 끝
+    62.63s  agent 발화 시작: Right.
+    62.63s  user  발화 끝
+    62.77s  <ret> 발화 (turn19 첫 프레임)
+    63.01s  agent 발화 시작: <ret> NextEra Energy is a leading clean energy company based
+    63.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.31s]: (tool result) NextEra Energy is a leading clean energy company headqua
+    63.01s  agent 발화 끝
+    73.32s  user  발화 시작: Yeah.
+    73.32s  agent 발화 끝
+    73.70s  user  발화 시작: Okay, good to know. I have a doctor’s appointment next Tuesd
+    73.70s  user  발화 끝
+    77.90s  agent 발화 시작: Yeah.
+    77.90s  user  발화 끝
+    78.28s  agent 발화 시작: That’s a good reminder to prioritize your health. Is it a re
+    78.28s  agent 발화 끝
+    84.78s  user  발화 시작: Just a routine check-up. I need to remember to bring my insu
+    84.78s  agent 발화 끝
+    89.74s  agent 발화 시작: It’s always best to be prepared. Perhaps setting a reminder 
+    89.74s  user  발화 끝
+    95.85s  user  발화 시작: That’s a good idea. I'll do that. Can you find me a good Tha
+    95.85s  agent 발화 끝
+   101.96s  agent 발화 시작: Give me a moment to check what's available in your area.
+   101.96s  user  발화 끝
+   106.16s  agent 발화 시작: I'm sorry, I am unable to find any Thai restaurants in your 
+   106.16s  agent 발화 끝
+   114.12s  ⚡지연 SPAN 주입(선제발표 직전): Thai Delight, located at 123 Main Street, has 4.5 stars on Yelp, with 
+   114.94s  agent 발화 시작: <ret> I apologize for the earlier issue. Thai Delight, at on
+   114.94s  agent 발화 끝
+   125.64s  agent 발화 끝

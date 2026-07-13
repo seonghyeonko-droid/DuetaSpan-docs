@@ -1,78 +1,83 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Oriana, a upbeat and supportive counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Kae, a grounded and empathetic wellness coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Quinn",
+    "name": "Noah",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-18",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2026-05-04",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-02-13",
-      "category": "home",
-      "text": "User's home address is 382 Pine Court."
-    },
-    {
-      "date": "2025-11-01",
+      "date": "2026-06-11",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-24",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
+      "date": "2026-06-03",
+      "category": "home",
+      "text": "User's home address is 461 Birch Road."
     },
     {
-      "date": "2025-07-20",
+      "date": "2026-03-13",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2025-11-30",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-31",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-27",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who didn't discover Neptune?
-[  1.59s][moshi] It seems there isn't a documented record of who *didn't* discover Neptune, only those credited with its discovery.
-[  8.77s][user ] Oh. Well, what about Uranus? Who found that ⟨ret@12.12s⟩ one?
-[ 12.36s][moshi] ⟦⚡SPAN@12.36s: Uranus was first sighted by astronomer John Herschel in 1781, though he initially thought it was a comet or st⟧ It was actually John Herschel who first sighted Uranus in seventeen eighty-one, though he originally believed it was a comet or star.
-[ 21.13s][user ] «backchannel» Okay.
-[ 21.53s][moshi] It’s fascinating how discoveries can sometimes be misidentified at first—it really shows the importance of careful observation and follow-up.
-[ 29.11s][user ] «backchannel» Mm-hmm.
-[ 29.51s][user ] I'm planning a trip to see some planets.
-[ 32.69s][moshi] «interrupted» That sounds like a wonderful idea! Planning a trip centered around astronomy is—
-[ 37.88s][user ] «interrupts_prev» …can you find me some observatories in ⟨ret@40.75s⟩ California?
-[ 41.07s][moshi] ⟦⚡SPAN@41.07s: Palomar Observatory in San Diego County, California, is a renowned astronomical research facility, and Griffit⟧ There are some amazing options in California, like Palomar Observatory in San Diego County, and Griffith Observatory in Los Angeles, which offers public viewing. Both are fantastic places to explore the wonders of the universe.
-[ 55.02s][user ] Griffith sounds good. What's the weather…
-[ 57.42s][user ] …like there right ⟨ret@58.61s⟩ now?
-[ 59.01s][moshi] ⟦⚡SPAN@59.01s: (tool result) 24.3°C, humidity 62%, wind 3.2 km/h⟧ Right now at Griffith Observatory, it’s twenty-four point three degrees Celsius, with sixty-two percent humidity and a three point two kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Griffith Observatory"}}
+[  0.00s][user ] What college moved to Ann Arbor in 1873?
+[  3.19s][moshi] «backchannel» Oh.
+[  3.59s][moshi] Hmm, that’s a good question! It seems there isn’t readily available information about a college specifically moving to Ann Arbor in 1873.
+[ 12.36s][user ] «backchannel» Oh.
+[ 12.75s][user ] Oh, okay. Well, what *is* the history of the University of Michigan?
+[ 17.54s][moshi] «backchannel» Uh-huh.
+[ 17.94s][moshi] «interrupted» ⟨ret@17.78s⟩ ⟦⚡SPAN@17.94s: The University of Michigan was founded in 1817 in Detroit, Michigan, before moving to Ann Arbor in 1837, and h⟧ The University of Michigan was founded in 1817 in Detroit, Michigan, before moving to Ann Arbor in 1837, and it’s now a leading public research university. It’s quite a story, really—
+[ 30.29s][user ] «interrupts_prev» …was it hard to move everything back then?
+[ 33.48s][moshi] That's a very thoughtful question! Moving a university in 1837 would have been a massive undertaking, involving transporting books, equipment—
+[ 41.45s][user ] «backchannel» Nice.
+[ 41.85s][moshi] —and of course, all the people connected to the university. Imagine the logistics without modern transportation! It wasn’t easy, and records show significant fundraising efforts were needed to finance the relocation.
+[ 54.21s][user ] That sounds stressful. What was Ann Arbor like at that time?
+[ 58.59s][moshi] «backchannel» Uh-huh.
+[ 58.99s][moshi] ⟨ret@58.83s⟩ ⟦⚡SPAN@58.99s: In 1837, Ann Arbor was a small village with a population of around 1,000 people, primarily serving as an agric⟧ In 1837, Ann Arbor was a small village with a population of around 1,000 people, mostly focused on farming and milling, before the university really changed things. It was a very different place then, I imagine.

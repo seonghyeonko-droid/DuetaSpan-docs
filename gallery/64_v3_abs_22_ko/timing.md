@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "연준",
+#     "name": "서별",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,43 +12,51 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-13",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-06-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-01",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-07-24",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2026-06-03",
 #       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-11-30",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2025-08-18",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-27",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,43 +66,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 해왕성을 발견하지 않은 사람은 누구인가요? | S2 아, 갈릴레오! 맞아요, 그분은 유명하죠. —그런데, 요즘 날 | S3 이번 주말에 가족들이랑 어디 갈지 고민 중인데, 추천해 줄 만 | S4 …아니, 그냥 조용하고 편안하게 쉴 수 있는 곳이면 좋겠어요.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 천팔백칠십삼년에 앤아버로 이사 온 대학이 어디였는 | S2 사실, 그 대학의 초기 이름이 좀 특이한데요. | S3 …그 이름의 뜻이 무엇인가요? | S4 네, 그렇군요. 시간 내주셔서 감사합니다.
 
-     0.00s  user  발화 시작: 해왕성을 발견하지 않은 사람은 누구인가요?
-     2.21s  <ret> 발화 (turn1 첫 프레임)
-     2.53s  agent 발화 시작: <ret> 아, 그 부분은 아직 정확하게 알려진 바가 없네요. 누가 해왕성을 발견하지 않았는지에 대한 기록은
-     2.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.60s]: (no information found)
-     2.53s  user  발화 끝
-    11.13s  user  발화 시작: 음… 그렇군요. 혹시 다른 행성은 누가 발견했는지 알려줄 수 있을까요?
-    11.13s  agent 발화 끝
-    15.87s  <ret> 발화 (turn3 첫 프레임)
-    16.19s  agent 발화 시작: <ret> 갈릴레오 갈릴레이가 천육백십년에 목성의 가장 큰 네 개의 위성인 이오, 유로파, 가니메데, 칼리스
-    16.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=10.63s]: Galileo Galilei is credited with discovering the four largest moons of
-    16.19s  user  발화 끝
-    26.82s  user  발화 시작: 예.
-    26.82s  agent 발화 끝
-    27.33s  user  발화 시작: 아, 갈릴레오! 맞아요, 그분은 유명하죠. —그런데, 요즘 날씨는 어때요?
-    27.33s  user  발화 끝
-    31.80s  <ret> 발화 (turn6 첫 프레임)
-    31.88s  agent 발화 시작: <ret> 지금 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-    31.88s  user  발화 끝
-    32.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.52s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    37.95s  user  발화 시작: 그렇죠.
-    37.95s  agent 발화 끝
-    38.46s  agent 발화 시작: 오늘 하루도 활기차게 보내세요! 혹시 다른 계획이 있으신가요?
-    38.46s  user  발화 끝
-    42.51s  user  발화 시작: 이번 주말에 가족들이랑 어디 갈지 고민 중인데, 추천해 줄 만한 곳이 있을까요?
-    42.51s  agent 발화 끝
-    48.58s  agent 발화 시작: 가족들과 함께 가기 좋은 곳을 찾으시는군요. —어떤 종류의 활동을 좋아하시는지 알려주시면 더욱…
-    48.58s  user  발화 끝
-    54.65s  user  발화 시작: 예.
-    54.65s  agent 발화 끝
-    55.16s  user  발화 시작: …아니, 그냥 조용하고 편안하게 쉴 수 있는 곳이면 좋겠어요. 바닷가 근처면 더 좋고요.
-    55.16s  user  발화 끝
-    61.66s  <ret> 발화 (turn13 첫 프레임)
-    61.74s  agent 발화 시작: <ret> 조용하고 편안하게 쉴 수 있는 곳, 특히 바닷가 근처를 원하시는군요. 알겠습니다.
-    61.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.57s]: Jeju Island is a volcanic island, known for its beaches, lava tubes, a
-    61.74s  user  발화 끝
-    67.30s  agent 발화 시작: 제주도는 화산섬으로 해변, 용암 동굴, 한라산 등 아름다운 자연과 휴식을 즐길 수 있는 곳으로 유명해요.
-    67.30s  agent 발화 끝
-    74.90s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 천팔백칠십삼년에 앤아버로 이사 온 대학이 어디였는지 알 수 있을까요?
+     5.70s  agent 발화 시작: 와.
+     5.70s  user  발화 끝
+     6.11s  <ret> 발화 (turn2 첫 프레임)
+     6.27s  agent 발화 시작: <ret> 아, 죄송해요. 그 부분에 대한 정보는 찾을 수 없었어요. 제가 아는 범위 내에서는 천팔백칠십삼년
+     6.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.97s]: (no information found)
+     6.27s  agent 발화 끝
+    18.23s  user  발화 시작: 와.
+    18.23s  agent 발화 끝
+    18.80s  user  발화 시작: 음… 그렇군요. 그럼 미시간 대학교는 언제 설립되었는지 알려주시겠어요?
+    18.80s  user  발화 끝
+    23.36s  agent 발화 시작: 음.
+    23.36s  user  발화 끝
+    23.85s  <ret> 발화 (turn6 첫 프레임)
+    23.93s  agent 발화 시작: <ret> 미시간 대학교는 원래 캐솔레피스티미아드라는 이름으로 천팔백십칠년에 설립되었고, 공식적으로는 천팔백
+    23.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.27s]: The University of Michigan was founded in 1817, initially as the Catho
+    23.93s  agent 발화 끝
+    30.20s  user  발화 시작: 어머.
+    30.20s  agent 발화 끝
+    30.77s  agent 발화 시작: 미시간 대학교는 오랜 역사를 가지고 있네요.
+    30.77s  user  발화 끝
+    34.19s  user  발화 시작: 네네.
+    34.19s  agent 발화 끝
+    34.76s  user  발화 시작: 사실, 그 대학의 초기 이름이 좀 특이한데요.
+    34.76s  user  발화 끝
+    38.75s  agent 발화 시작: 캐솔레피스티미아드라는 이름이 조금 독특하죠—
+    38.75s  user  발화 끝
+    41.03s  user  발화 시작: …그 이름의 뜻이 무엇인가요?
+    41.03s  agent 발화 끝
+    43.22s  <ret> 발화 (turn13 첫 프레임)
+    43.30s  agent 발화 시작: <ret> "캐솔레피스티미아드"는 그리스어 어근에서 유래되었는데, "보편적인 지식"이라는 뜻이래요. 대학의 
+    43.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.54s]: The name "Catholepistemiad" is derived from Greek roots meaning "unive
+    43.30s  user  발화 끝
+    55.84s  agent 발화 시작: 그 이름에 담긴 뜻은 정말 깊이 있네요.
+    55.84s  agent 발화 끝
+    59.83s  user  발화 시작: 네, 그렇군요. 시간 내주셔서 감사합니다.
+    59.83s  agent 발화 끝
+    62.68s  user  발화 끝

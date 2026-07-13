@@ -4,79 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "정현",
+#     "name": "성진",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-11-16",
+#       "date": "2026-06-07",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-11-22",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#     },
+#     {
+#       "date": "2025-11-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-25",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-12",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-07",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 자리크스 님. 요즘 좀 힘든 시간을 보내고 있어요 | S2 음… 옛날 영화를 보려고 하는데, '오만과 편견' 천구백구십오 | S3 폴리 메이버리… 이름이 기억이 안 났는데, 다시 들으니 떠오르 | S4 날씨가 좋으면 산책하기 좋겠네요. 이번 주 토요일에 근처 공원
+# EXAMINER(FDB-v2) 단계: S1 요즘 뭔가 새로운 걸 배우고 싶은데, 아이들 발달 단계에 대해 | S2 음… 아기가 처음 세상에 나왔을 때… | S3 …인지 발달 단계가 어떻게 되는지 알고 싶어요. | S4 아, 감각운동기라고 하네요. 신기하네요. 그럼 그 다음 단계는
 
-     0.00s  user  발화 시작: 안녕하세요, 자리크스 님. 요즘 좀 힘든 시간을 보내고 있어요.
-     4.67s  agent 발화 시작: 안녕하세요. 힘든 시간을 보내고 계시다니 마음이 아픕니다. 괜찮으시다면, 어떤 점이 가장 힘든지 말씀해 주시
-     4.67s  user  발화 끝
-    11.93s  user  발화 시작: 아.
-    11.93s  agent 발화 끝
-    12.45s  user  발화 시작: 음… 옛날 영화를 보려고 하는데, '오만과 편견' 천구백구십오년판에 나오는 키티 역할을 누가 맡았는지 기억이
-    12.45s  user  발화 끝
-    20.43s  <ret> 발화 (turn4 첫 프레임)
-    20.75s  agent 발화 시작: <ret> 천구백구십오년 비 비 씨 드라마 '오만과 편견'에서 키티 베넷 역할을 맡은 배우는 폴리 메이버리 
-    20.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: Polly Maberly played Kitty Bennet in the 1995 BBC adaptation of Pride 
-    20.75s  user  발화 끝
-    28.54s  user  발화 시작: 그렇군요.
-    28.54s  agent 발화 끝
-    29.06s  user  발화 시작: 폴리 메이버리… 이름이 기억이 안 났는데, 다시 들으니 떠오르네요. 혹시 오늘 서울 날씨는 어때요?
-    29.06s  user  발화 끝
-    35.92s  <ret> 발화 (turn7 첫 프레임)
-    36.32s  agent 발화 시작: <ret> 현재 서울의 기온은 이십삼도이고, 습도는 칠십사퍼센트, 바람은 시속 오 점 오킬로미터입니다.
-    36.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.71s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    36.32s  user  발화 끝
-    42.03s  agent 발화 시작: 오늘 날씨가 좋으니 기분 전환에 도움이 될 거예요.
-    42.03s  agent 발화 끝
-    46.18s  user  발화 시작: 네.
-    46.18s  agent 발화 끝
-    46.70s  user  발화 시작: 날씨가 좋으면 산책하기 좋겠네요. 이번 주 토요일에 근처 공원 예약할 수 있을까요?
-    46.70s  user  발화 끝
-    52.92s  agent 발화 시작: 죄송합니다. 공원 예약 기능은 아직 지원하지 않습니다.
-    52.92s  user  발화 끝
-    56.56s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 뭔가 새로운 걸 배우고 싶은데, 아이들 발달 단계에 대해 알아볼까 해요.
+     6.41s  agent 발화 시작: 새로운 배움은 언제나 좋은 일이죠. 어떤 점이 궁금하신가요?
+     6.41s  user  발화 끝
+    10.69s  user  발화 시작: 음.
+    10.69s  agent 발화 끝
+    11.22s  user  발화 시작: 음… 아기가 처음 세상에 나왔을 때…
+    11.22s  user  발화 끝
+    14.43s  user  발화 시작: …인지 발달 단계가 어떻게 되는지 알고 싶어요.
+    14.43s  user  발화 끝
+    17.85s  <ret> 발화 (turn5 첫 프레임)
+    18.17s  agent 발화 시작: <ret> 아기가 세상에 나온 후, 대략 두 살까지는 감각운동기라고 불리는 첫 번째 인지 발달 단계를 거치게
+    18.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.55s]: The sensorimotor stage is the first stage of cognitive development, sp
+    18.17s  user  발화 끝
+    26.72s  user  발화 시작: 아, 감각운동기라고 하네요. 신기하네요. 그럼 그 다음 단계는 뭘까요?
+    26.72s  agent 발화 끝
+    31.53s  user  발화 끝

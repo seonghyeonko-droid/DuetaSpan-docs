@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "도연",
+#     "name": "유희",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,69 +12,119 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-06",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2026-06-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-03-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-03-16",
+#       "date": "2026-05-27",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "date": "2026-04-13",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-06-01",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-09-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
+#     },
+#     {
+#       "date": "2025-08-22",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
+#       "date": "2026-01-11",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-29",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 낸 씨. 잘 부탁드립니다. | S2 혹시 제가 전에 리스본 여행 계획 세우고 있었던 거 기억하세요 | S3 …혹시 리스본 말고 다른 곳으로, 조금 더 가까운 곳으로 여행 | S4 아, 다행이네요. 그럼 혹시 교토에서 추천하는 맛집이 있을까요
 
-     0.00s  agent 발화 시작: 안녕하세요, 도연님! 저는 조리예요. 오늘 하루는 어떠셨어요?
-     3.46s  user  발화 시작: 안녕하세요, 조리님. 오늘 좀 피곤하네요. 지금 몇 시예요?
-     3.46s  agent 발화 끝
-     7.33s  <ret> 발화 (turn2 첫 프레임)
-     7.41s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십팔분이에요. 혹시 힘든 일이 있으셨나요?
-     7.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: It is Friday, July 10, 2026 at 2:38 PM in Asia/Seoul right now.
-     7.41s  user  발화 끝
-    13.33s  user  발화 시작: 그냥 일이 좀 많았어요. 스위스 여행 계획 세우고 있는데, 십이월에 가려고 해요.
-    13.33s  agent 발화 끝
-    19.02s  <ret> 발화 (turn4 첫 프레임)
-    19.26s  agent 발화 시작: <ret> 혹시 특별히 가보고 싶은 곳이 있으세요?
-    19.26s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.96s]: [2025-06-08] User is planning a trip to Switzerland in December.
-    19.26s  user  발화 끝
-    22.22s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 유희님. 저는 낸입니다. 스트레스 해소와 마음 챙김을 돕는 상담사예요.
+     4.40s  user  발화 시작: 네.
+     4.40s  agent 발화 끝
+     4.84s  user  발화 시작: 안녕하세요, 낸 씨. 잘 부탁드립니다.
+     4.84s  user  발화 끝
+     6.96s  <ret> 발화 (turn3 첫 프레임)
+     7.04s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 금요일 오후 두시 사십칠분입니다. 오늘 하루도 평안하
+     7.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul rig
+     7.04s  user  발화 끝
+    13.20s  user  발화 시작: 오늘 저녁에 해는 몇 시쯤 질까요?
+    13.20s  agent 발화 끝
+    15.60s  <ret> 발화 (turn5 첫 프레임)
+    15.84s  agent 발화 시작: <ret> 부산의 일몰 시간은 오늘 저녁 일곱시 삼십이분쯤 될 거예요. 오늘 날씨도 꽤 덥네요.
+    15.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.72s]: (tool result) Busan: 28.3°C, humidity 68%, wind 3.2 km/h, sunset 7:32 
+    15.84s  user  발화 끝
+    21.56s  user  발화 시작: 아, 제가 마라톤 훈련 중인데, 혹시 러닝 코스 추천해 주실 수 있나요?
+    21.56s  agent 발화 끝
+    26.84s  agent 발화 시작: 마라톤 훈련 중이시군요! 멋지세요. 부산에는 아름다운 해안 코스가 많아요.
+    26.84s  user  발화 끝
+    30.80s  user  발화 시작: 맞아요.
+    30.80s  agent 발화 끝
+    31.24s  user  발화 시작: 혹시 제가 전에 리스본 여행 계획 세우고 있었던 거 기억하세요?
+    31.24s  user  발화 끝
+    35.48s  <ret> 발화 (turn10 첫 프레임)
+    35.64s  agent 발화 시작: <ret> 네, 기억합니다. 이천이십오년 구월 육일에 리스본 여행 계획을 세우셨었죠.
+    35.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.96s]: [2025-09-06] User is planning a trip to Lisbon in August.
+    35.64s  user  발화 끝
+    39.60s  user  발화 시작: 진짜요?
+    39.60s  agent 발화 끝
+    40.04s  user  발화 시작: 그때 벨라, 제 고양이 데려갈 수 있는지 알아봐 달라고 했었는데.
+    40.04s  user  발화 끝
+    44.44s  agent 발화 시작: 벨라를 데려가기 위한 준비는 잘 되어가고 있나요—
+    44.44s  user  발화 끝
+    47.52s  user  발화 시작: …혹시 리스본 말고 다른 곳으로, 조금 더 가까운 곳으로 여행 가는 건 어떨까요?
+    47.52s  agent 발화 끝
+    53.24s  agent 발화 시작: 리스본 대신 다른 곳으로 여행을 생각하시는군요. 어디로 가고 싶으세요?
+    53.24s  user  발화 끝
+    57.20s  user  발화 시작: 음… 일본, 특히 교토는 어떠세요?
+    57.20s  agent 발화 끝
+    59.00s  <ret> 발화 (turn17 첫 프레임)
+    59.40s  agent 발화 시작: <ret> 교토는 정말 아름다운 곳이죠. 벨라와 함께 가실 수 있는지 확인해 볼게요. 교토는 반려동물과 함께
+    59.40s  ⚡SPAN 주입 [d'=1.36s / d_lead=10.56s]: [2026-04-13] User has a Siamese cat named Bella.
+    59.40s  user  발화 끝
+    69.96s  user  발화 시작: 네.
+    69.96s  agent 발화 끝
+    70.40s  user  발화 시작: 아, 다행이네요. 그럼 혹시 교토에서 추천하는 맛집이 있을까요?
+    70.40s  user  발화 끝
+    73.92s  agent 발화 시작: 네.
+    73.92s  user  발화 끝
+    74.20s  <ret> 발화 (turn21 첫 프레임)
+    74.36s  agent 발화 시작: <ret> 교토의 니시키 시장은 평점 사 점 오에 저렴한 가격대의 맛집이에요. 다양한 일본 음식을 맛볼 수 
+    74.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) [Restaurant Name: Nishiki Market, Cuisine: Japanese, Rat
+    74.36s  agent 발화 끝
+    81.40s  user  발화 시작: 니시키 시장, 알겠습니다. 감사합니다, 낸 씨.
+    81.40s  agent 발화 끝
+    84.03s  agent 발화 시작: 천만에요, 유희님. 혹시 마음 챙김 연습에 대해 더 자세히 알아보고 싶으신가요?
+    84.03s  user  발화 끝
+    88.87s  agent 발화 끝

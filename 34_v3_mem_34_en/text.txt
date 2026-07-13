@@ -1,68 +1,86 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Ion, a kind and steady supportive advisor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Geaia, a kind and steady wellness coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Aiden",
+    "name": "Lucia",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-12-27",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in October."
-    },
-    {
-      "date": "2025-10-13",
+      "date": "2025-09-21",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2025-10-09",
-      "category": "home",
-      "text": "User's home address is 191 Pine Court."
-    },
-    {
-      "date": "2025-08-19",
+      "date": "2025-09-13",
       "category": "work",
-      "text": "User works as a high-school teacher."
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2025-07-24",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-07-26",
+      "category": "home",
+      "text": "User's home address is 886 Cedar Lane."
+    },
+    {
+      "date": "2025-06-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-20",
+      "date": "2025-06-09",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-07",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Aiden, I'm Ion. It's lovely to meet you.
-[  3.24s][user ] «backchannel» Right.
-[  3.60s][user ] Um, well, I was actually hoping to get directions. ⟨ret@6.76s⟩
-[  6.84s][moshi] ⟦⚡SPAN@6.84s: [2025-10-09] User's home address is 191 Pine Court.⟧ Aiden. Your home address is listed as 191 Pine Court in Sydney, Australia. Where would you like directions to?
-[ 13.68s][user ] To that fermentation shop we talked about last time. ⟨ret@16.84s⟩
-[ 16.92s][moshi] ⟦⚡SPAN@16.92s: [2025-10-13] User is into home fermentation.⟧ Ah, yes! You're interested in home fermentation, so I presume you mean "The Grainery", a shop specializing in fermentation supplies.
-[ 24.12s][user ] «backchannel» Yeah.
-[ 24.48s][user ] Exactly! How long will it take to get ⟨ret@27.48s⟩ there?
-[ 27.72s][moshi] ⟦⚡SPAN@27.72s: (tool result) {"distance": "7.2 km", "duration": "15 minutes", "route": "Via Pacific Hwy"}⟧ It’s 7.2 kilometers and should take about fifteen minutes via Pacific Highway. Would you like me to send those directions to your phone?
-      CALL: {"function": "map_directions", "arguments": {"origin": "191 Pine Court, Sydney, Australia", "destination": "The Grainery, Sydney, Australia"}}
+[  0.00s][moshi] Hi Lucia, I'm Geaia. It’s lovely to connect with you today. How are you doing?
+[  5.50s][user ] Oh, hi! Um, pretty good, actually. Just feeling a bit overwhelmed with work lately. ⟨ret@10.59s⟩
+[ 10.62s][moshi] «backchannel» Yeah.
+[ 10.99s][moshi] ⟦⚡SPAN@10.99s: [2025-09-13] User works as a software engineer.⟧ I understand that feeling. Work stress is very common, especially in software engineering.
+[ 15.75s][moshi] It's good to remember you work as a software engineer when navigating challenges.
+[ 20.52s][user ] «backchannel» Yeah.
+[ 20.88s][user ] Yeah, it’s just… a lot. I was hoping to maybe get away for a weekend soon.
+[ 26.74s][moshi] A weekend escape sounds wonderful. Do you have a destination in mind, or are you open to suggestions?
+[ 33.34s][user ] I was thinking of maybe going to visit my aunt in ⟨ret@37.49s⟩ Montreal.
+[ 37.73s][moshi] ⟦⚡SPAN@37.73s: (tool result) Distance: 541.1 km; Estimated driving time: 5 hr 24 min.⟧ The distance from 886 Cedar Lane to Montreal is 541.1 kilometers, with an estimated drive time of 5 hours and 24 minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "886 Cedar Lane, Toronto", "destination": "Montreal"}}
+[ 45.79s][user ] «backchannel» Oh.
+[ 46.16s][moshi] That’s a good drive, certainly. We could look at train options if you prefer.
+[ 51.29s][user ] Hmm, maybe. What's the weather looking like in Montreal this ⟨ret@54.92s⟩ weekend?
+[ 55.32s][moshi] ⟦⚡SPAN@55.32s: (tool result) Current conditions: 22.0°C, clear skies, wind 12 km/h. Forecast for Saturday: 25.0°C, sunny. Sun⟧ It’s currently 22.0 degrees Celsius and clear in Montreal. Saturday’s forecast is 25 degrees and sunny, and Sunday will be 27 degrees, partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Montreal"}}
+[ 64.11s][user ] «backchannel» Mhm.
+[ 64.48s][user ] That sounds lovely, actually. Maybe driving isn’t so bad.
+[ 67.78s][moshi] It does sound quite pleasant. A road trip can be a great way to de-stress, too.
+[ 73.64s][user ] I think you’re right. I also need to remember to get a birthday gift for my sister.
+[ 79.87s][moshi] «backchannel» Yeah, yeah.
+[ 80.60s][moshi] ⟨ret@80.20s⟩ ⟦⚡SPAN@80.60s: [2025-06-30] User's favorite cuisine is Italian.⟧ Since your favorite cuisine is Italian, a cooking class might be a good gift idea.
+[ 86.09s][user ] «backchannel» Yeah.
+[ 86.46s][user ] Oh, that’s a great idea, Geaia! Thanks!
+[ 89.03s][moshi] You're very welcome, Lucia. I'm glad I could help brainstorm. Remember to prioritize self-care during busy times.

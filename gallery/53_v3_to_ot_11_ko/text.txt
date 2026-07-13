@@ -1,92 +1,77 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 당신은 학습 및 동기 부여 유지에 도움을 주는 따뜻하고 세심한 지원 조언가 레나입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 부드럽고 사색적인 웰니스 코치인 아나이며, 사람들의 진로 선택과 직장 스트레스 해소를 돕습니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "진정",
+    "name": "예훈",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-05-25",
+      "date": "2026-04-29",
       "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-05-14",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-01-29",
+      "date": "2025-12-02",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-09-13",
+      "date": "2025-11-05",
+      "category": "home",
+      "text": "User's home address is 서울 종로구 세종대로 175."
+    },
+    {
+      "date": "2025-10-11",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-08-14",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2025-06-14",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-05-28",
-      "title": "Setting up a home network",
+      "date": "2025-09-28",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 무굴 회화에 원근법을 처음 도입한 사람이 누구였지? ⟨ret@3.42s⟩
-[  3.66s][moshi] ⟦⚡SPAN@3.66s: Jahangir introduced the element of perspective in Mughal painting.⟧ 무굴 회화에 원근법을 처음 도입한 사람은 자한기르 황제입니다. 그분은 예술에 대한 깊은 이해가 있으셨어요.
-[ 10.97s][user ] «backchannel» 어.
-[ 11.50s][user ] 아, 그래. 자한기르. 혹시 그분이 그린 그림 볼 수 ⟨ret@16.40s⟩ 있을까?
-[ 16.72s][moshi] ⟦⚡SPAN@16.72s: (tool result) {"results": [{"title": "Jahangir: Art and Empire", "source": "Metropolitan Museum of Art", "url"⟧ 자한기르 황제의 그림을 찾았습니다. 메트로폴리탄 미술관에 '자한기르: 예술과 제국'이라는 전시가 있어요.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"query": "Jahangir paintings"}}
-[ 22.47s][user ] «backchannel» 그래.
-[ 22.99s][user ] 메트로폴리탄 미술관… 가보고 싶다.
-[ 25.08s][moshi] 좋아요. 혹시 다른 무굴 시대 예술가에 대해서도 알아보고 싶으신가요?
-[ 29.78s][user ] «backchannel» 응응.
-[ 30.31s][user ] 음… 잠깐만.
-[ 31.35s][moshi] «interrupted» 무굴 시대에는 자한기르 외에도—
-[ 33.44s][user ] «interrupts_prev» …혹시 그 시대 미술 기법에 대한 책 같은 거 찾아줄 수 있어?
-[ 39.71s][moshi] 미술 기법에 대한 책을 찾아볼게요. 어떤 종류의 책을 원하시나요?
-[ 44.41s][user ] «backchannel» 그래.
-[ 44.93s][user ] 음, 좀 자세하고, 그림도 많이 들어있는 걸로. ⟨ret@48.51s⟩
-[ 48.59s][moshi] ⟦⚡SPAN@48.59s: (tool result) Mughal Art and Architecture by W.E. Begley and Z.A. Desai offers a detailed exploration of Mugha⟧ '무굴 미술과 건축'이라는 책이 있습니다. W.E. 베글리와 Z.A. 데사이 님이 쓰셨고, 그림도 풍부하게 들어있다고 하네요. 천구백구십구년에 출판되었습니다.
-      CALL: {"function": "search", "arguments": {"query": "무굴 미술 기법 책 그림 풍부"}}
-[ 57.47s][user ] «backchannel» 와.
-[ 58.00s][user ] 천구백구십구년이구나… 좀 오래됐네.
-[ 59.56s][moshi] 오래되었지만, 무굴 미술 기법에 대한 자세한 설명을 제공한다고 합니다.
-[ 64.27s][user ] 그래도 한번 찾아봐야겠다. 혹시 지금 서울 날씨 ⟨ret@68.05s⟩ 어때?
-[ 68.45s][moshi] ⟦⚡SPAN@68.45s: (tool result) {"temperature": 28.5, "humidity": 65, "wind speed": 3.2, "condition": "Cloudy"}⟧ 서울은 현재 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터로 불고, 구름이 많습니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 76.28s][user ] 덥겠네. 그럼 에어컨 켜놓고 책 봐야겠다.
-[ 79.42s][moshi] 네, 에어컨을 켜고 책을 보시면 좋을 것 같아요. 편안하게 공부하세요.
-[ 84.64s][user ] «backchannel» 어.
-[ 85.17s][user ] 고마워, 레나.
-[ 86.21s][moshi] 도움이 되어서 기쁩니다.
-[ 87.78s][user ] 알았어.
-[ 88.30s][moshi] 언제든지 편하게 말씀하세요. 저는 항상 당신을 응원합니다.
-[ 91.96s][user ] «backchannel» 응.
-[ 92.48s][user ] 그럼 이만.
-[ 93.53s][moshi] 좋은 하루 보내세요!
+[  0.00s][user ] 안녕하세요, 아나님. 혹시 한국어의 이름이 뭐였죠? 까먹었어요. ⟨ret@3.35s⟩
+[  3.59s][moshi] ⟦⚡SPAN@3.59s: Hangul, also spelled Hangeul, is the native alphabet of the Korean language.⟧ 한국어의 고유한 이름은 한글이라고 합니다. 아주 과학적인 문자 체계예요.
+[  8.20s][user ] «backchannel» 아.
+[  8.71s][user ] 네, 그렇군요. 그런데 한글은 언제 ⟨ret@11.47s⟩ 만들어졌나요?
+[ 11.79s][moshi] ⟦⚡SPAN@11.79s: Hangul was proclaimed by King Sejong the Great in 1446.⟧ 한글은 세종대왕께서 천사백사십육년에 발표하셨습니다. 백성을 위해 아주 쉽고 편리하게 만들었다고 해요.
+[ 17.42s][user ] «backchannel» 예.
+[ 17.94s][user ] 와, 꽤 오래됐네요. —
+[ 19.99s][user ] 잠깐만요, 혹시 세종대왕님은 한글 말고 다른 업적도 많으신가요?
+[ 24.08s][moshi] «backchannel» 네네.
+[ 24.60s][moshi] ⟨ret@24.28s⟩ ⟦⚡SPAN@24.60s: Sejong the Great is credited with advancements in science, military technology, and agriculture.⟧ 세종대왕께서는 한글 창제 외에도 다양한 업적을 남기셨습니다. 과학 기술 발전에도 힘쓰셨죠.
+[ 30.23s][moshi] 과학 기술과 군사 기술, 농업 발전에 큰 기여를 하셨다고 합니다. 백성을 위한 마음이 정말 컸던 분이세요.
+[ 38.43s][user ] 아, 정말 대단하시네요. 덕분에 한국어를 쉽게 배울 수 있게 됐어요.
+[ 43.56s][moshi] «backchannel» 맞아요.
+[ 44.07s][moshi] 맞아요. 한글은 배우기 쉬운 문자라 외국인들도 금방 익힐 수 있다고 하죠. 저도 그렇게 생각합니다.

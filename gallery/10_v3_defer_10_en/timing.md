@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Grace",
+#     "name": "Avery",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -12,43 +12,45 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-30",
+#       "date": "2026-05-24",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "category": "home",
+#       "text": "User's home address is 180 Birch Road."
+#     },
+#     {
+#       "date": "2026-01-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-06-15",
 #       "category": "work",
 #       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-10-03",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-13",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "category": "diet",
-#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2025-10-03",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -56,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-11-11",
+#       "date": "2025-09-30",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -66,75 +68,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm feeling really stuck with my c | S2 I’m wondering if there are any pla | S3 Okay. | S4 That's a good idea. Could you sear
+# EXAMINER(FDB-v2) 단계: S1 I’m feeling a bit lost, actually.  | S2 Active listening… okay. I think I  | S3 Perfect! Could you book me a bouqu | S4 Like, “I hear you”?
 
-     0.00s  user  발화 시작: I'm feeling really stuck with my career. I think I need a ch
-     7.19s  agent 발화 시작: It's completely normal to feel that way, especially when con
-     7.19s  user  발화 끝
-    14.02s  user  발화 시작: That sounds good. I’ve been thinking about something complet
-    14.02s  agent 발화 끝
-    18.69s  agent 발화 시작: A creative field could be a wonderful outlet. Have you consi
-    18.69s  user  발화 끝
-    24.44s  user  발화 시작: Well, I always enjoyed writing plays in college.
-    24.44s  agent 발화 끝
-    27.16s  <ret> 발화 (turn5 첫 프레임)
-    27.32s  agent 발화 시작: <ret> It’s interesting you mention playwriting; the average 
-    27.32s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.99s]: The average salary for a playwright in the United States is $77,740 as
+     0.00s  user  발화 시작: I’m feeling a bit lost, actually. I just had a disagreement 
+     5.39s  agent 발화 시작: That sounds difficult. Disagreements are a normal part of fr
+     5.39s  user  발화 끝
+    11.16s  user  발화 시작: Yeah, it was about… well, it’s complicated. She said I never
+    11.16s  agent 발화 끝
+    15.78s  agent 발화 시작: It’s tough when someone questions how you connect with them.
+    15.78s  user  발화 끝
+    22.32s  user  발화 시작: Okay.
+    22.32s  agent 발화 끝
+    22.70s  user  발화 시작: I don’t know. I try…
+    22.70s  user  발화 끝
+    24.63s  user  발화 시작: …but maybe I interrupt? I get excited.
+    24.63s  user  발화 끝
+    27.32s  agent 발화 시작: It’s common to interrupt when passionate, though it can make
     27.32s  user  발화 끝
-    36.31s  user  발화 시작: Wow, that's… more than I expected.
-    36.31s  agent 발화 끝
-    38.46s  agent 발화 시작: It’s good to have realistic expectations about potential inc
-    38.46s  user  발화 끝
-    43.49s  user  발화 시작: I’m wondering if there are any playwriting competitions I co
-    43.49s  agent 발화 끝
-    47.49s  <ret> 발화 (turn9 첫 프레임)
-    47.81s  agent 발화 시작: <ret> The New Play Exchange National Playwriting Contest acc
-    47.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.06s]: (tool result) The New Play Exchange National Playwriting Contest accep
-    47.81s  user  발화 끝
-    57.87s  user  발화 시작: That sounds promising! Is there anything happening locally?
-    57.87s  agent 발화 끝
-    60.75s  agent 발화 시작: Let me check for playwriting opportunities near you. Do you 
-    60.75s  user  발화 끝
-    66.14s  user  발화 시작: Sure, it’s Seoul.
-    66.14s  agent 발화 끝
-    66.98s  <ret> 발화 (turn13 첫 프레임)
-    67.22s  agent 발화 시작: <ret> Give me a moment while I broaden the search. There doe
-    67.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.19s]: (no information found)
-    67.22s  user  발화 끝
-    74.41s  user  발화 시작: Okay.
-    74.41s  agent 발화 끝
-    74.77s  agent 발화 시작: I’m expanding the search to all of South Korea. It may take 
-    74.77s  user  발화 끝
-    79.80s  user  발화 시작: …Actually, before you do that, could you find some informati
-    79.80s  agent 발화 끝
-    84.95s  <ret> 발화 (turn17 첫 프레임)
-    85.19s  agent 발화 시작: <ret> The National Endowment for the Arts offers grants to p
-    85.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.71s]: (tool result) The National Endowment for the Arts offers grants to pla
-    85.19s  user  발화 끝
-    94.90s  user  발화 시작: Yeah, yeah.
-    94.90s  agent 발화 끝
-    95.62s  user  발화 시작: That’s a big range!
-    95.62s  user  발화 끝
-    97.05s  agent 발화 시작: It depends on the scope of the project and the funding avail
-    97.05s  user  발화 끝
-   101.37s  user  발화 시작: Yeah.
-   101.37s  agent 발화 끝
-   101.73s  agent 발화 시작: It's also worth looking into regional arts councils for smal
-   101.73s  user  발화 끝
-   105.68s  user  발화 시작: That's a good idea. Could you search for regional arts counc
-   105.68s  agent 발화 끝
-   110.55s  <ret> 발화 (turn24 첫 프레임)
-   110.71s  agent 발화 시작: <ret> The Korea Arts Council supports regional arts activiti
-   110.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) The Korea Arts Council supports regional arts activities
-   110.71s  user  발화 끝
-   118.26s  user  발화 시작: Yeah.
-   118.26s  agent 발화 끝
-   118.62s  user  발화 시작: Perfect! I'll check that out.
-   118.62s  user  발화 끝
-   120.42s  agent 발화 시작: It sounds like you're starting to build a plan. I'm glad I c
-   120.42s  user  발화 끝
-   125.45s  user  발화 시작: Thanks, Ororaon. This is really helpful. I feel a lot more h
-   125.45s  agent 발화 끝
-   129.76s  agent 발화 시작: That’s wonderful to hear. Taking that first step is often th
-   129.76s  user  발화 끝
-   137.67s  agent 발화 끝
+    32.32s  user  발화 시작: Yeah.
+    32.32s  agent 발화 끝
+    32.71s  agent 발화 시작: Perhaps focusing on active listening—really hearing her pers
+    32.71s  user  발화 끝
+    38.86s  user  발화 시작: Active listening… okay. I think I do that sometimes, but not
+    38.86s  agent 발화 끝
+    43.48s  agent 발화 시작: It’s a skill that takes practice. It isn’t about always agre
+    43.48s  user  발화 끝
+    48.48s  user  발화 시작: Yeah, totally.
+    48.48s  agent 발화 끝
+    49.25s  user  발화 시작: She’s been really stressed lately with work. Maybe that’s it
+    49.25s  user  발화 끝
+    53.10s  agent 발화 시작: Stress can definitely impact how we communicate and react to
+    53.10s  user  발화 끝
+    57.33s  user  발화 시작: Yeah.
+    57.33s  agent 발화 끝
+    57.72s  user  발화 시작: I wonder if I should just apologize, even if I don’t think I
+    57.72s  user  발화 끝
+    63.49s  agent 발화 시작: Apologizing for your part in the disagreement, even a small 
+    63.49s  user  발화 끝
+    69.26s  user  발화 시작: Mm-hmm.
+    69.26s  agent 발화 끝
+    69.65s  user  발화 시작: That's a good point. Can you find me a nice flower shop near
+    69.65s  user  발화 끝
+    74.41s  <ret> 발화 (turn20 첫 프레임)
+    74.65s  agent 발화 시작: <ret> There’s Florist Kim at 123 Garden Street in Seoul, the
+    74.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: (tool result) {"restaurants": [{"name": "Florist Kim", "address": "123
+    74.65s  user  발화 끝
+    80.04s  user  발화 시작: Perfect! Could you book me a bouquet for delivery tomorrow?
+    80.04s  agent 발화 끝
+    83.81s  <ret> 발화 (turn22 첫 프레임)
+    83.89s  agent 발화 시작: <ret> I’ve reserved a bouquet for delivery tomorrow at 10:00
+    83.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: (tool result) {"confirmation id": "FK7890"}
+    83.89s  user  발화 끝
+    89.27s  user  발화 시작: Oh, that’s fantastic. Thank you!
+    89.27s  agent 발화 끝
+    91.20s  agent 발화 시작: You're very welcome. A small gesture can often make a big di
+    91.20s  user  발화 끝
+    95.81s  user  발화 시작: I’m also thinking of calling her, but I’m nervous.
+    95.81s  agent 발화 끝
+    99.28s  agent 발화 시작: Yeah, yeah.
+    99.28s  user  발화 끝
+   100.05s  agent 발화 시작: It’s natural to feel nervous before a difficult conversation
+   100.05s  agent 발화 끝
+   105.43s  user  발화 시작: I’m afraid she’ll just get angry again.
+   105.43s  agent 발화 끝
+   108.13s  agent 발화 시작: It’s understandable to anticipate a negative reaction. Perha
+   108.13s  user  발화 끝
+   113.90s  user  발화 시작: Yeah.
+   113.90s  agent 발화 끝
+   114.28s  user  발화 시작: Like, “I hear you”?
+   114.28s  user  발화 끝
+   115.82s  agent 발화 시작: Exactly. Validating her feelings—showing you understand her 
+   115.82s  user  발화 끝
+   120.06s  user  발화 시작: That makes sense. What’s the weather like in London right no
+   120.06s  agent 발화 끝
+   123.89s  <ret> 발화 (turn34 첫 프레임)
+   124.29s  agent 발화 시작: <ret> The current weather in London is 18.5 degrees Celsius,
+   124.29s  ⚡SPAN 주입 [d'=0.88s / d_lead=7.70s]: (tool result) {"temperature": "18.5°C", "humidity": "65%", "wind speed
+   124.29s  user  발화 끝
+   131.99s  user  발화 시작: Okay, good to know. Thanks again, Gialo.
+   131.99s  agent 발화 끝
+   134.68s  agent 발화 시작: You’re most welcome. Remember, open communication is key to 
+   134.68s  user  발화 끝
+   138.91s  agent 발화 끝

@@ -1,46 +1,46 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Gimi, a calm and patient counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Viia, a curious and validating life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Quinn",
+    "name": "Aiden",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-18",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2025-10-26",
+      "category": "home",
+      "text": "User's home address is 365 Maple Drive."
     },
     {
-      "date": "2025-12-18",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-09-16",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-09-02",
+      "date": "2025-08-30",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-08-05",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2025-08-07",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is planning a trip to New Zealand in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-11",
+      "date": "2025-10-30",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -48,41 +48,54 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-09-06",
-      "title": "Setting up a home network",
+      "date": "2025-08-02",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-25",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need a house for one adult in Seattle, Washington, checking in on November fifteenth and checking out on November ⟨ret@9.15s⟩ eighteenth.
-[  9.47s][moshi] ⟦⚡SPAN@9.47s: (tool result) {"confirmation id": "89XZ27", "address": "123 Pine Street, Seattle, WA 98101", "check in": "2024⟧ I've found a house for you in Seattle, Washington, checking in on November fifteenth and checking out on November eighteenth, for a total of 345.00 dollars. Your confirmation ID is 89XZ27.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"adults": 1, "city": "Seattle", "state": "Washington", "check_in": "November fifteenth", "check_out": "November eighteenth"}}
-[ 23.44s][user ] That sounds…expensive. Are there any cheaper ⟨ret@26.36s⟩ options?
-[ 26.60s][moshi] ⟦⚡SPAN@26.60s: (tool result) {"results": [{"name": "Cozy Cottage", "address": "456 Oak Ave, Seattle, WA 98122", "price": 210.⟧ I found a Cozy Cottage for 210.00 dollars, located at 456 Oak Avenue, and a Downtown Studio for 255.00 dollars at 789 Elm Street.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"city": "Seattle", "state": "Washington", "check_in": "November fifteenth", "check_out": "November eighteenth", "adults": 1}}
-[ 37.42s][user ] Hmm, 210 sounds better. Can you tell me more about the Cozy Cottage? ⟨ret@43.20s⟩
-[ 43.28s][moshi] ⟦⚡SPAN@43.28s: The Cozy Cottage is a charming one-bedroom house with a kitchenette, free Wi-Fi, and a small garden. It's loca⟧ The Cozy Cottage is a charming one-bedroom house with a kitchenette, free Wi-Fi, and a small garden, located about a 20-minute bus ride from downtown Seattle.
-[ 55.00s][user ] «backchannel» Mm-hmm.
-[ 55.45s][user ] Okay, that sounds perfect. Book it for me. ⟨ret@58.97s⟩
-[ 59.05s][moshi] ⟦⚡SPAN@59.05s: (tool result) {"confirmation id": "42BC91", "address": "456 Oak Ave, Seattle, WA 98122", "check in": "2024-11-⟧ The Cozy Cottage is now booked for you, checking in on November fifteenth and checking out on November eighteenth. Your confirmation ID is 42BC91 and the total is 210.00 dollars.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"adults": 1, "city": "Seattle", "state": "Washington", "check_in": "November fifteenth", "check_out": "November eighteenth", "house_name": "Cozy Cottage"}}
-[ 72.58s][user ] «backchannel» Yeah.
-[ 73.03s][user ] Great! What’s the weather forecast for Seattle during those ⟨ret@77.30s⟩ dates?
-[ 77.54s][moshi] ⟦⚡SPAN@77.54s: (tool result) {"November 15": "10.0°C, rain", "November 16": "8.0°C, cloudy", "November 17": "9.0°C, partly cl⟧ The forecast for Seattle shows 10.0 degrees Celsius and rain on November fifteenth, 8.0 degrees Celsius and cloudy on November sixteenth, 9.0 degrees Celsius and partly cloudy on November seventeenth, and 11.0 degrees Celsius and sunny on November eighteenth.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seattle", "state": "Washington", "start_date": "November fifteenth", "end_date": "November eighteenth"}}
-[ 95.12s][user ] That sounds… changeable.
-[ 96.47s][moshi] Weather can be unpredictable, especially in the fall. It’s good to be prepared for a range of conditions.
-[104.58s][user ] Can you find me some good restaurants near 456 Oak Ave?
+[  0.00s][user ] I need to find bus options from Los Angeles to San Francisco on May first for four ⟨ret@6.99s⟩ passengers.
+[  7.31s][moshi] ⟦⚡SPAN@7.31s: (tool result) Los Angeles to San Francisco, May 1, 4 passengers: 08:00 AM, $75; 12:00 PM, $85; 06:00 PM, $90.⟧ I found several buses for you—departing Los Angeles for San Francisco on May first, with prices ranging from seventy-five to ninety dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Los Angeles", "destination": "San Francisco", "date": "May 1", "passengers": 4}}
+[ 16.25s][user ] Hmm, that 8 AM one sounds good. Can you buy me a ticket for ⟨ret@22.11s⟩ that?
+[ 22.35s][moshi] ⟦⚡SPAN@22.35s: (tool result) Confirmation: LAX-SFX-0501-4P, ticket purchased.⟧ Great! Your ticket is purchased, confirmation number LAX-SFX-0501-4P. It’s all set.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"bus_id": "08:00 AM"}}
+[ 26.82s][user ] Perfect. I'm thinking about a weekend trip, maybe somewhere with good hiking.
+[ 31.69s][moshi] «backchannel» Yeah.
+[ 32.10s][moshi] That sounds lovely! A weekend focused on nature is a wonderful way to recharge.
+[ 37.79s][user ] «backchannel» Right.
+[ 38.20s][user ] I was considering Yosemite, but I'm worried about crowds.
+[ 41.85s][moshi] Yosemite is breathtaking, but you're right to think about the crowds—it can get very busy, especially during peak season.
+[ 49.57s][user ] Maybe something a little less known? Any suggestions?
+[ 52.82s][moshi] «backchannel» Mm-hmm.
+[ 53.23s][moshi] Have you ever considered Sequoia National Park? It offers incredible hiking and giant sequoia trees.
+[ 59.33s][user ] Sequoia… I've heard of it, but I don't know much about it.
+[ 64.20s][moshi] It’s a bit quieter than Yosemite, offering a similar experience with fewer visitors—the trees are truly majestic.
+[ 71.11s][user ] «backchannel» Mm-hmm.
+[ 71.52s][user ] What’s the weather like there right ⟨ret@74.12s⟩ now?
+[ 74.36s][moshi] ⟦⚡SPAN@74.36s: (tool result) Sequoia National Park: 18.3°C, humidity 42%, wind 8.0 km/h.⟧ The weather in Sequoia National Park is currently eighteen point three degrees Celsius, with forty-two percent humidity and an eight kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sequoia National Park"}}
+[ 84.11s][user ] «backchannel» Yeah.
+[ 84.52s][moshi] «interrupted» It sounds like ideal hiking conditions, doesn't it? Perhaps a good time to plan—
+[ 90.21s][user ] …Actually, before we get too far ahead…
+[ 93.05s][user ] …can we check hotel availability near Sequoia?
+[ 95.90s][moshi] Let’s look at hotel options near Sequoia National Park. What dates are you thinking of?
+[101.99s][moshi] «interrupted» I can help with that. A little planning goes a long way towards a relaxing trip—
+[108.49s][user ] «interrupts_prev» For the same weekend as the bus trip, May first, so maybe the second and ⟨ret@114.75s⟩ third?
+[114.99s][moshi] ⟦⚡SPAN@114.99s: (tool result) Sequoia National Park, May 2-3: Wuksachi Lodge, $220/night; John Muir Lodge, $180/night.⟧ I found two options near Sequoia National Park for May second and third—Wuksachi Lodge at two hundred and twenty dollars a night, and John Muir Lodge at one hundred and eighty.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Sequoia National Park", "check_in": "May 2", "check_out": "May 3"}}
+[127.59s][user ] John Muir Lodge sounds good. Can you reserve a room there for me? ⟨ret@132.71s⟩
+[132.87s][moshi] ⟦⚡SPAN@132.87s: (tool result) Reservation confirmed: JML-SQP-0502-0503-1R.⟧ Wonderful. Your reservation at John Muir Lodge is confirmed, with confirmation number JML-SQP-0502-0503-1R. It's all set for May second and third.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "John Muir Lodge", "check_in": "May 2", "check_out": "May 3"}}
+[141.41s][user ] «backchannel» Mhm.
+[141.81s][user ] That's great, thanks. This is all coming together nicely.
+[145.47s][moshi] I’m so glad to hear that! Planning ahead like this really sets you up for a peaceful and enjoyable experience. It's wonderful to see you taking this time for yourself.
+[157.66s][user ] «backchannel» Mm-hmm.
+[158.07s][user ] I think I'll look at some hiking trails now.
+[161.72s][moshi] «backchannel» Yeah, yeah.
+[162.54s][moshi] That's a fantastic idea. Exploring the trails is the best way to experience the beauty of Sequoia.

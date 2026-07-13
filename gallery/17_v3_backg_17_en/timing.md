@@ -4,133 +4,124 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Quinn",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-05-08",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-10-26",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-02-20",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-06-29",
-#       "category": "home",
-#       "text": "User's home address is 650 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-06-06",
+#       "date": "2026-01-22",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-28",
-#       "title": "Researching a used car",
+#       "date": "2026-04-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-23",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-24",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, Eluna. I was just wondering… w | S2 Oh, okay. So, if I wanted to learn | S3 That does sound nice. What’s the w | S4 Great, thanks Eluna!
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to get settled here, an | S2 I’m curious, what about chemical * | S3 That’s good to know. I’m looking f | S4 Gogung Myeongga sounds good. Can y
 
-     0.00s  user  발화 시작: Hi, Eluna. I was just wondering… when did the US officially 
-     5.12s  <ret> 발화 (turn1 첫 프레임)
-     5.52s  agent 발화 시작: <ret> That would be December eleventh, nineteen forty-one, f
-     5.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.25s]: The United States officially declared war on Germany on December 11, 1
-     5.52s  user  발화 끝
-    12.77s  user  발화 시작: Yeah, totally.
-    12.77s  agent 발화 끝
-    13.46s  user  발화 시작: Wow, that’s… uh, soon after Pearl Harbor.
-    13.46s  user  발화 끝
-    15.88s  agent 발화 시작: Yes, it was a very quick succession of events, a period of g
-    15.88s  user  발화 끝
-    20.72s  user  발화 시작: Mm-hmm.
-    20.72s  agent 발화 끝
-    21.06s  user  발화 시작: Do you know anything about the reasons behind that decision?
-    21.06s  user  발화 끝
-    24.35s  <ret> 발화 (turn7 첫 프레임)
-    24.51s  agent 발화 시작: <ret> The attack on Pearl Harbor was the main reason, but Ge
-    24.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: The US entered World War II primarily due to the attack on Pearl Harbo
-    24.51s  user  발화 끝
-    32.80s  user  발화 시작: Uh-huh.
-    32.80s  agent 발화 끝
-    33.14s  user  발화 시작: U-boats? What were those?
-    33.14s  user  발화 끝
-    34.13s  <ret> 발화 (turn10 첫 프레임)
-    34.53s  agent 발화 시작: <ret> Those were German submarines, quite effective at disru
-    34.53s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.56s]: U-boats were German submarines used during both World Wars, known for 
-    34.53s  user  발화 끝
-    41.09s  user  발화 시작: Oh, okay. So, if I wanted to learn more about World War II, 
-    41.09s  agent 발화 끝
-    46.71s  <ret> 발화 (turn12 첫 프레임)
-    46.95s  agent 발화 시작: <ret> A good book to begin with is "The Second World War" by
-    46.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: A good starting point for learning about World War II is the book "The
-    46.95s  user  발화 끝
-    54.55s  user  발화 시작: A book sounds good. — Actually, I’m feeling a bit stressed t
-    54.55s  agent 발화 끝
-    60.07s  agent 발화 시작: [sigh] I understand. History can be overwhelming. Perhaps we
-    60.07s  user  발화 끝
-    66.29s  user  발화 시작: Did you hear about the bakery closing downtown?
-    66.29s  agent 발화 끝
-    69.05s  agent 발화 시작: It’s alright to feel that way. Sometimes, focusing on the pr
-    69.05s  user  발화 끝
-    74.58s  user  발화 시작: Oh.
-    74.58s  agent 발화 끝
-    74.92s  user  발화 시작: That does sound nice. What’s the weather like where I am?
-    74.92s  user  발화 끝
-    78.32s  <ret> 발화 (turn19 첫 프레임)
-    78.72s  agent 발화 시작: <ret> It's currently twenty-three point zero degrees Celsius
-    78.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    78.72s  user  발화 끝
-    86.31s  user  발화 시작: Uh-huh.
-    86.31s  agent 발화 끝
-    86.66s  user  발화 시작: Oh, lovely! Maybe a walk would help. Are there any parks nea
-    86.66s  user  발화 끝
-    90.56s  <ret> 발화 (turn22 첫 프레임)
-    90.80s  agent 발화 시작: <ret> Olympic Park is two point three kilometers from here, 
-    90.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: There is Olympic Park located 2.3 kilometers from your current locatio
-    90.80s  user  발화 끝
-    99.09s  user  발화 시작: Mhm.
-    99.09s  agent 발화 끝
-    99.43s  user  발화 시작: That sounds perfect. Can…
-    99.43s  user  발화 끝
-   100.81s  user  발화 시작: …you find me directions there?
-   100.81s  user  발화 끝
-   102.14s  <ret> 발화 (turn26 첫 프레임)
-   102.54s  agent 발화 시작: <ret> Head north on Main Street for one point five kilometer
-   102.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.25s]: (tool result) Directions to Olympic Park: 1. Head north on Main Street
-   102.54s  user  발화 끝
-   109.79s  user  발화 시작: Great, thanks Eluna!
-   109.79s  agent 발화 끝
-   110.83s  agent 발화 시작: You’re very welcome. A gentle walk in the fresh air is wonde
-   110.83s  user  발화 끝
-   116.01s  user  발화 시작: Yeah.
-   116.01s  agent 발화 끝
-   116.35s  user  발화 시작: I think I’ll go do that now.
-   116.35s  user  발화 끝
-   118.77s  agent 발화 시작: That sounds like a lovely plan. Remember to breathe deeply a
-   118.77s  user  발화 끝
-   123.60s  user  발화 시작: I will. Thanks again.
-   123.60s  agent 발화 끝
-   124.98s  agent 발화 시작: It was my pleasure. If you need anything else, please don't 
-   124.98s  user  발화 끝
-   130.51s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to get settled here, and I was wondering… what’s 
+     5.87s  <ret> 발화 (turn1 첫 프레임)
+     6.27s  agent 발화 시작: <ret> Well, settling in takes time, but I’m happy to help wi
+     6.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.18s]: Iron is the most abundant element on Earth, making up a large portion 
+     6.27s  user  발화 끝
+    18.45s  user  발화 시작: Oh, wow, I didn’t realize that much of the Earth was iron.
+    18.45s  agent 발화 끝
+    22.88s  agent 발화 시작: Yeah.
+    22.88s  user  발화 끝
+    23.25s  agent 발화 시작: It’s quite a significant component, yes. It plays a crucial 
+    23.25s  agent 발화 끝
+    28.79s  user  발화 시작: I’m curious, what about chemical *compounds*? Is it still ir
+    28.79s  agent 발화 끝
+    32.32s  <ret> 발화 (turn6 첫 프레임)
+    32.48s  agent 발화 시작: <ret> While iron is the most abundant element, water—H2O—is 
+    32.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.75s]: Water (H2O) is the most abundant compound on Earth’s surface, covering
+    32.48s  user  발화 끝
+    40.23s  user  발화 시작: Yeah, totally.
+    40.23s  agent 발화 끝
+    40.97s  agent 발화 시작: Yes, it’s quite a large percentage. It’s essential for life 
+    40.97s  user  발화 끝
+    46.88s  user  발화 시작: That makes sense, considering all the oceans. Are there any 
+    46.88s  agent 발화 끝
+    52.78s  agent 발화 시작: Uh-huh.
+    52.78s  user  발화 끝
+    53.07s  <ret> 발화 (turn11 첫 프레임)
+    53.15s  agent 발화 시작: <ret> Seoul is a vibrant city, and iron is used extensively 
+    53.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: Iron is used extensively in construction, manufacturing, and transport
+    53.15s  agent 발화 끝
+    62.38s  user  발화 시작: Mm-hmm.
+    62.38s  agent 발화 끝
+    62.75s  user  발화 시작: That’s good to know. I’m looking for a good Korean restauran
+    62.75s  user  발화 끝
+    67.18s  agent 발화 시작: Finding a good restaurant is important—
+    67.18s  user  발화 끝
+    69.39s  user  발화 시작: …is there one nearby that serves bibimbap?
+    69.39s  agent 발화 끝
+    71.89s  <ret> 발화 (turn16 첫 프레임)
+    71.97s  agent 발화 시작: <ret> There are two options: Gogung Myeongga, at 50 Myeongdo
+    71.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.44s]: (tool result) {"restaurants": [{"name": "Gogung Myeongga", "address": 
+    71.97s  user  발화 끝
+    83.42s  user  발화 시작: Gogung Myeongga sounds good. Can you tell me their phone num
+    83.42s  agent 발화 끝
+    87.32s  <ret> 발화 (turn18 첫 프레임)
+    87.48s  agent 발화 시작: <ret> Gogung Myeongga’s phone number is 02-776-0802. I can a
+    87.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.27s]: Gogung Myeongga's phone number is 02-776-0802.
+    87.48s  user  발화 끝
+    93.75s  user  발화 시작: No, that's okay, thanks. I think I'll call them myself.
+    93.75s  agent 발화 끝
+    97.44s  agent 발화 시작: That sounds good.
+    97.44s  user  발화 끝
+    98.55s  agent 발화 끝

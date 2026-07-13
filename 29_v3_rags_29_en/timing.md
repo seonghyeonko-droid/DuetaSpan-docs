@@ -4,74 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Paul",
+#     "name": "Owen",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "German",
 #     "gender": "male",
 #     "age_range": "50s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-16",
+#       "date": "2026-05-07",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-30",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "text": "User is planning a trip to New Zealand in August."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "home",
-#       "text": "User's home address is 342 Pine Court."
-#     },
-#     {
-#       "date": "2025-12-13",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-11",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-07-22",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-05-27",
+#       "date": "2025-10-29",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-10-27",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-08-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-28",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-10",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-19",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-09",
+#       "date": "2025-10-24",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-18",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: In the Outlander books, who does Claire eventually marry?
-     3.70s  <ret> 발화 (turn1 첫 프레임)
-     4.02s  agent 발화 시작: <ret> Well, Claire Fraser finds her lasting happiness with J
-     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.38s]: Claire Fraser ultimately marries Jamie Fraser throughout the Outlander
-     4.02s  user  발화 끝
-    13.40s  agent 발화 끝
+     0.00s  user  발화 시작: When did the Philadelphia Eagles play in the playoffs in two
+     4.84s  <ret> 발화 (turn1 첫 프레임)
+     5.16s  agent 발화 시작: <ret> Oh, that was a really exciting time for them! The Eagl
+     5.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.80s]: The Philadelphia Eagles played the Atlanta Falcons in the Divisional R
+     5.16s  user  발화 끝
+    16.96s  agent 발화 끝

@@ -4,73 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Avery",
+#     "name": "Léa",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
-#     },
-#     {
-#       "date": "2026-05-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-04-06",
+#       "date": "2026-04-20",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "home",
-#       "text": "User's home address is 374 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-12-18",
+#       "date": "2025-11-11",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-28",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, what's the f | S2 Yeah, I guess so. What about somet | S3 186 mph is still pretty incredible | S4 I do, actually. Thanks, that was h
 
-     0.00s  user  발화 시작: I was reading the Odyssey, and I got curious. How old was Te
-     6.30s  <ret> 발화 (turn1 첫 프레임)
-     6.54s  agent 발화 시작: <ret> Telemachus is actually twenty years old when the Odyss
-     6.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.62s]: Telemachus is twenty years old at the beginning of Homer’s Odyssey, ha
-     6.54s  user  발화 끝
-    16.17s  user  발화 시작: That’s good to know. It feels like he’s younger, somehow.
-    16.17s  agent 발화 끝
-    19.77s  <ret> 발화 (turn3 첫 프레임)
-    20.01s  agent 발화 시작: <ret> I understand that feeling. It's easy to focus on his e
-    20.01s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.62s]: The current temperature in Reykjavik, Iceland is 8.2°C, with a humidit
-    20.01s  user  발화 끝
-    29.64s  agent 발화 시작: It's wonderful you're exploring such classic literature. Som
-    29.64s  agent 발화 끝
-    38.49s  user  발화 시작: I think so. Maybe I’ll reread it with that in mind.
-    38.49s  agent 발화 끝
-    42.72s  agent 발화 시작: That sounds like a lovely idea! Re-reading with a fresh pers
-    42.72s  user  발화 끝
-    51.58s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, what's the fastest motorcycle you can 
+     4.71s  <ret> 발화 (turn1 첫 프레임)
+     4.95s  agent 발화 시작: <ret> The Kawasaki Ninja H2R is typically considered the fas
+     4.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: The Kawasaki Ninja H2R is generally considered the fastest production 
+     4.95s  user  발화 끝
+    13.62s  user  발화 시작: Oh.
+    13.62s  agent 발화 끝
+    14.03s  user  발화 시작: Wow, that’s…fast. Is it street legal, though?
+    14.03s  user  발화 끝
+    16.68s  <ret> 발화 (turn4 첫 프레임)
+    16.92s  agent 발화 시작: <ret> That's a good point to consider. Generally, the Ninja 
+    16.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=12.38s]: The average high temperature in Reykjavik, Iceland in December is 3.2°
+    16.92s  user  발화 끝
+    29.30s  agent 발화 시작: It sounds like you're thinking about practical use. Sometime
+    29.30s  agent 발화 끝
+    35.90s  user  발화 시작: Yeah, I guess so. What about something I *could* ride on the
+    35.90s  agent 발화 끝
+    41.27s  agent 발화 시작: Yeah.
+    41.27s  user  발화 끝
+    41.36s  <ret> 발화 (turn8 첫 프레임)
+    41.68s  agent 발화 시작: <ret> If you're looking for something street legal, the Duca
+    41.68s  ⚡SPAN 주입 [d'=0.50s / d_lead=12.79s]: The Ducati Panigale V4 R is a street-legal production motorcycle with 
+    41.68s  agent 발화 끝
+    54.47s  user  발화 시작: 186 mph is still pretty incredible.
+    54.47s  agent 발화 끝
+    56.95s  agent 발화 시작: It certainly is. Finding a balance between speed and practic
+    56.95s  user  발화 끝
+    65.20s  user  발화 시작: I do, actually. Thanks, that was helpful.
+    65.20s  agent 발화 끝
+    68.09s  agent 발화 시작: You’re very welcome. It's good to explore all the options an
+    68.09s  user  발화 끝
+    75.93s  agent 발화 끝
