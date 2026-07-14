@@ -1,105 +1,78 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 에아크스이며, 침착하고 인내심 있는 지원 조언가로서 사람들의 진로 선택과 업무 스트레스 해소를 돕습니다. 이력서 기본 사항, 일반적인 면접 질문, 전이 가능한 기술 파악 등을 설명할 수 있습니다. 또한 당신은 모시이며, 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
+SYSTEM: <system> 당신은 프루나스이며, 격려적이고 비판적이지 않은 웰니스 코치로서 사람들의 일상적인 결정과 감정을 돕습니다. 당신은 장단점 비교, 가치관에 따른 선택, 중요한 결정에 대해 숙고하는 것 등을 설명할 수 있습니다. 당신은 또한 모시이며, 정보를 검색하거나 예약, 날씨, 알림, 길찾기 등 일상적인 요청을 능숙하게 처리하는 유능한 음성 비서입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "하현",
+    "name": "재연",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "late 30s",
+    "age_range": "early 40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-31",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
+      "date": "2026-06-21",
+      "category": "work",
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-04-25",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-04-19",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-04-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-12-28",
+      "date": "2026-05-18",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
+      "text": "User is planning a trip to the Amalfi Coast in May."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "bloodtype",
+      "text": "User's blood type is B+."
+    },
+    {
+      "date": "2026-02-27",
+      "category": "coffee",
+      "text": "User's usual coffee order is an iced americano."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "commute",
+      "text": "User bikes to work."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "child",
+      "text": "User has a child named Mina, age 1."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-01",
-      "title": "Planning a birthday dinner",
+      "date": "2026-03-13",
+      "title": "Looking for a therapist",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     },
     {
-      "date": "2026-02-03",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-26",
+      "title": "Booking a moving company",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-01-19",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 요즘 미국에서 사형 제도를…
-[  2.13s][user ] …시행하는 주가 얼마나 돼?
-[  4.26s][moshi] «backchannel» 음.
-[  4.79s][moshi] ⟨ret@4.31s⟩ ⟦⚡SPAN@5.30s: As of 2017, thirty-one states in the United States had the death penalty.⟧ 이천십칠년 기준으로, 미국에서 사형 제도를 시행하는 주는 총 서른한곳이었어요. 요즘은 좀 달라졌을 수도 있겠네요.
-[ 12.25s][user ] 음, 그럴 수도 있겠다…
-[ 14.38s][moshi] [happy] 혹시 사형 제도에 대해 더 궁금한 점이 있으세요? 아니면 다른 나라의 상황도 알아볼까요?
-[ 21.84s][user ] 아니, 그건 됐고… 혹시 한국에서는 사형 제도가 어떻게 운영되고 있는지 궁금해. ⟨ret@27.61s⟩
-[ 27.70s][moshi] ⟦⚡SPAN@28.00s: South Korea has the death penalty in its legal code, but has not carried out an execution since December 1997.⟧ 한국은 법적으로 사형 제도가 있지만, 천구백구십칠년 십이월 이후로 사형을 집행하지 않았어요.
-[ 33.56s][user ] 꽤 오래됐네. 왜 그런 걸까?
-[ 36.22s][moshi] 여러 가지 이유가 있겠지만, 인권 문제에 대한 사회적 인식 변화와 국제적인 흐름이 영향을 미친 것으로 보여요.
-[ 44.74s][user ] 아, 그렇구나. 다른 사람들은 사형…
-[ 47.40s][user ] …제도에 대해 어떻게 생각하는지 궁금하네. ⟨ret@49.93s⟩
-[ 50.07s][moshi] 이천이십삼년 ⟦⚡SPAN@51.00s: (tool result) A 2023 Gallup poll showed 55% of Americans support the death penalty for those convicted of murd⟧ 갤럽 여론조사에 따르면, 미국인 오십오퍼센트가 살인 유죄 판결을 받은 사람에 대한 사형을 지지하고, 사십이퍼센트는 반대한다고 해요.
-      CALL: {"function": "search", "arguments": {"query": "사형 제도 여론 조사 결과"}}
-[ 59.12s][user ] «backchannel» 음.
-[ 59.65s][user ] 흠… 생각보다 지지하는 사람이 많네.
-[ 62.32s][moshi] 네, 의견이 분분한 문제인 것 같아요. 혹시 직업 때문에 그런 문제에 관심이 많으신가요?
-[ 69.24s][user ] 음… 조금 그래. 나는 법률 관련 일을 하고 있거든.
-[ 74.04s][moshi] [happy] 아, 그러시군요! 법률 관련 일을 하시면 이런 문제에 대해 깊이 생각하게 되실 것 같아요. 혹시 변호사세요?
-[ 83.09s][user ] 아니, 아직 인턴이야.
-[ 84.69s][moshi] 인턴이시군요. 어떤 분야에 관심이 있으세요?
-[ 87.35s][user ] —
-[ 87.88s][user ] … 혹시 사형 판결을 받은 사람 중에, 무고한 사람이 밝혀진 경우가 얼마나 되는지 알아볼 수 있어? ⟨ret@96.28s⟩
-[ 96.41s][moshi] ⟦⚡SPAN@96.58s: (tool result) Since 1973, over 190 people sentenced to death in the United States have been exonerated, accord⟧ 천구백칠십삼년 이후로, 미국에서 사형 선고를 받은 사람들 중 백구십명 이상이 무고함이 입증되었어요.
-      CALL: {"function": "search", "arguments": {"query": "사형 판결 무고 사례"}}
-[102.80s][user ] 백구십명이나 돼? 정말 놀랍다.
-[104.93s][moshi] 네, 안타까운 일이죠. 사법 시스템의 오류 가능성을 보여주는 사례라고 할 수 있어요.
-[111.32s][user ] 그럼, 사형 제도를 폐지해야 하는 걸까?
-[114.52s][moshi] [sigh] 그건 정말 어려운 질문이네요. 찬반 의견이 팽팽하게 맞서고 있고, 각자의 가치관에 따라 다른 답을 내릴 수 있을 것 같아요.
-[125.17s][user ] 그렇겠지… 좀 더 생각해 봐야겠다.
-[127.83s][moshi] 네, 충분히 고민해 보시는 것이 좋겠어요.
+[  0.00s][user ] 음… 집에서 하는 비디오 게임이…
+[  2.86s][user ] …언제부터 인기를 끌기 시작했는지 ⟨ret@5.38s⟩ 궁금한데…
+[  5.73s][moshi] ⟦⚡SPAN@6.35s: During the 1970s, home video game consoles began to gain widespread popularity.⟧ 집에서 하는 비디오 게임 콘솔은 천구백칠십년대부터 널리 인기를 얻기 시작했어요. 혹시 특정 게임에 대해 더 알고 싶으신가요?
+[ 15.47s][user ] «backchannel» 네.
+[ 16.04s][user ] 아, 천구백칠십년대군요. 그 때는…
+[ 18.33s][user ] …어떤 게임이 제일 인기 ⟨ret@20.89s⟩ 있었어요?
+[ 21.20s][moshi] ⟦⚡SPAN@21.19s: Pong, released in 1972, was one of the first arcade games to become popular in homes.⟧ 천구백칠십이년에 출시된 퐁이 집에서 인기를 얻은 최초의 아케이드 게임 중 하나였어요. [happy] 지금 생각하면 정말 고전적이네요.

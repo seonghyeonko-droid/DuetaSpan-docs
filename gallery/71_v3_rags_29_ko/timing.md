@@ -4,74 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "연찬",
+#     "name": "재정",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "late 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-06-20",
+#       "category": "anniversary",
+#       "text": "User's anniversary is September 20."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2026-06-06",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Minjun."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-05-26",
+#       "category": "show",
+#       "text": "User is currently watching a cooking competition show."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2026-04-09",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Portugal in October."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-02-03",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 26°C."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-01-16",
+#       "category": "employer",
+#       "text": "User works at a design agency."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-12",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-21",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "title": "Researching a used car",
+#       "date": "2026-06-19",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-30",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 이천십칠 십팔 엔 비 에이 신인왕은 누구였어요?
-     3.76s  <ret> 발화 (turn1 첫 프레임)
-     4.38s  agent 발화 시작: <ret> 이천십칠 십팔 시즌 엔 비 에이 신인왕은 필라델피아 세븐티식서스의 벤 시몬스 선수였어요. [hap
-     4.38s  user  발화 끝
-     4.68s  ⚡SPAN 주입 [d'=0.92s / d_lead=9.38s]: Ben Simmons of the Philadelphia 76ers was named the NBA Rookie of the 
-    13.75s  agent 발화 끝
+     0.00s  user  발화 시작: 영국 사람들은 크래커를 뭐라고 불러?
+     1.66s  <ret> 발화 (turn1 첫 프레임)
+     2.27s  agent 발화 시작: <ret> 영국에서는 크래커를 보통 비스킷이라고 부릅니다. [happy] 뭐, 문화 차이 정도로 생각하시면 
+     2.27s  user  발화 끝
+     2.58s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.36s]: In British English, a cracker is commonly known as a biscuit.
+     8.63s  agent 발화 끝

@@ -4,114 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Lukas",
+#     "name": "Paul",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-13",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2026-03-15",
-#       "category": "home",
-#       "text": "User's home address is 345 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-01-15",
+#       "date": "2026-05-07",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a data analyst."
+#     },
+#     {
+#       "date": "2026-04-17",
+#       "category": "medication",
+#       "text": "User takes antihistamines in spring."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "employer",
+#       "text": "User works at a game studio."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Hokkaido in April."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-05",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-18",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 도쿄에서 로스앤젤레스까지 운전하는 데 걸리는 시간을 알려 주실 | S2 음. | S3 …베벌리힐스 호텔에 머물고 있어요. | S4 정말 감사합니다, 달리.
+# EXAMINER(FDB-v2) 단계: S1 부산에서 호텔 좀 잡아 줘. 다음 주말에. 저렴한 곳으로 부탁 | S2 음, 해운대 해변 근처면 좋겠어. 그리고 가능하면 밤에 십오만 | S3 그거 괜찮네. 그걸로 예약해 줘, 이틀, 칠월 십이일이랑 십삼 | S4 좋아! 그럼, 다음 주말 날씨는 어때?
 
-     0.00s  user  발화 시작: 도쿄에서 로스앤젤레스까지 운전하는 데 걸리는 시간을 알려 주실 수 있을까요?
-     5.03s  agent 발화 시작: 네.
-     5.03s  user  발화 끝
-     5.52s  <ret> 발화 (turn2 첫 프레임)
-     5.53s  agent 발화 시작: <ret> 도쿄에서 로스앤젤레스까지 운전하는 데는 대략 백칠십삼시간 사십분 정도 걸리고, 거리는 팔천칠백삼십
-     5.53s  agent 발화 끝
-     5.82s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.54s]: (tool result) {"distance": 8738.5, "duration": 625200.0, "units": "sec
-    12.08s  user  발화 시작: 정말… 엄청 긴 운전이네요. 비행기는 어떨까요?
-    12.08s  agent 발화 끝
-    15.09s  agent 발화 시작: 네.
-    15.09s  user  발화 끝
-    15.60s  agent 발화 시작: [laugh] 음, 운전이 좀 멀긴 하네! 비행기가 훨씬 빠르겠지.
-    15.60s  agent 발화 끝
-    20.13s  user  발화 시작: 아.
-    20.13s  agent 발화 끝
-    20.63s  user  발화 시작: 다음 화요일에 도쿄에서 로스앤젤레스까지 가는 편도 항공편을 찾아 주시겠어요?
-    20.63s  user  발화 끝
-    25.11s  <ret> 발화 (turn8 첫 프레임)
-    25.16s  agent 발화 시작: <ret> 일본항공 제이 엘 공 육 일편이 다음 화요일에 도쿄에서 오전 열시에 출발해서 로스앤젤레스에 오전 
-    25.16s  user  발화 끝
-    26.25s  ⚡SPAN 주입 [d'=1.14s / d_lead=9.06s]: (tool result) {"flights": [{"airline": "Japan Airlines", "flight numbe
-    34.21s  user  발화 시작: 음.
-    34.21s  agent 발화 끝
-    34.72s  agent 발화 시작: 그 비행편 괜찮아 보이는데.
-    34.72s  user  발화 끝
-    36.73s  user  발화 시작: 사실, 네. 제 호텔 근처에 괜찮은 스시 레스토랑을 찾아 주실 수 있을까요…
-    36.73s  agent 발화 끝
-    42.77s  user  발화 시작: …베벌리힐스 호텔에 머물고 있어요.
-    42.77s  user  발화 끝
-    44.48s  <ret> 발화 (turn13 첫 프레임)
-    44.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.55s]: (tool result) {"restaurants": [{"name": "Sugarfish by Sushi Nozawa", "
-    44.78s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa가 베벌리힐스 캐논 드라이브 이백십이번지에 있고, 평
-    44.78s  user  발화 끝
-    52.33s  user  발화 시작: 그곳이 딱 좋을 것 같아요. 오늘 밤 일곱시 삼십분에 두 명으로 예약해 주시겠어요?
-    52.33s  agent 발화 끝
-    58.38s  <ret> 발화 (turn15 첫 프레임)
-    58.87s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa에 오늘 밤 일곱시 삼십분에 두 명으로 예약했고, 예
-    58.87s  user  발화 끝
-    59.08s  ⚡SPAN 주입 [d'=0.71s / d_lead=11.07s]: (tool result) {"confirmation number": "RSV-87654"}
-    69.94s  user  발화 시작: 정말 감사합니다, 달리.
-    69.94s  agent 발화 끝
-    71.44s  agent 발화 시작: 천만에! 여행하고 식사 준비하는 데 도움이 되어서 기뻐.
-    71.44s  user  발화 끝
-    75.47s  user  발화 시작: 마지막으로 하나만 여쭤볼게요. 지금 로스앤젤레스 날씨는 어떤가요?
-    75.47s  agent 발화 끝
-    78.52s  <ret> 발화 (turn19 첫 프레임)
-    78.99s  agent 발화 시작: <ret> 로스앤젤레스는 현재 화창하고, 기온은 섭씨 이십팔 점 삼도에 습도는 육십오퍼센트야. [happy]
-    78.99s  user  발화 끝
-    79.37s  ⚡SPAN 주입 [d'=0.85s / d_lead=7.55s]: (tool result) {"temperature": 28.3, "humidity": 65, "condition": "Sunn
-    86.54s  agent 발화 끝
+     0.00s  user  발화 시작: 부산에서 호텔 좀 잡아 줘. 다음 주말에. 저렴한 곳으로 부탁해.
+     4.46s  agent 발화 시작: 네, 부산은 정말 아름다운 곳이에요! 다음 주말에 호텔을 찾아 드릴게요. 혹시 특별히 원하시는 지역이나 호텔
+     4.46s  user  발화 끝
+    12.05s  user  발화 시작: 음, 해운대 해변 근처면 좋겠어. 그리고 가능하면 밤에 십오만 원 이하로.
+    12.05s  agent 발화 끝
+    16.96s  agent 발화 시작: 네.
+    16.96s  user  발화 끝
+    17.13s  <ret> 발화 (turn4 첫 프레임)
+    17.41s  agent 발화 시작: <ret> 해운대 뷰 호텔을 찾았는데, 해운대 해변 근처에 있는 삼성급 호텔이고, 일박에 십이만 원이고, 방
+    17.41s  agent 발화 끝
+    18.21s  ⚡SPAN 주입 [d'=1.07s / d_lead=7.14s]: (tool result) {"hotel name": "Hotel Haeundae View", "address": "268, H
+    24.55s  user  발화 시작: 어.
+    24.55s  agent 발화 끝
+    25.00s  user  발화 시작: 그거 괜찮네. 그걸로 예약해 줘, 이틀, 칠월 십이일이랑 십삼일로.
+    25.00s  user  발화 끝
+    28.47s  <ret> 발화 (turn7 첫 프레임)
+    28.98s  ⚡SPAN 주입 [d'=0.51s / d_lead=10.71s]: (tool result) {"confirmation id": "HV260712", "hotel name": "Hotel Hae
+    29.02s  agent 발화 시작: <ret> 해운대 뷰 호텔 예약이 칠월 십이일과 십삼일 이틀간 확정됐습니다. 예약 확인 번호는 에이치 브이 
+    29.02s  user  발화 끝
+    39.73s  user  발화 시작: 좋아! 그럼, 다음 주말 날씨는 어때?
+    39.73s  agent 발화 끝
+    42.36s  <ret> 발화 (turn9 첫 프레임)
+    42.41s  agent 발화 시작: <ret> 다음 주말, 칠월 십이일 부산 날씨는 부분적으로 흐리고 기온은 섭씨 이십팔 점 오도, 습도는 육십
+    42.41s  user  발화 끝
+    43.28s  ⚡SPAN 주입 [d'=0.92s / d_lead=11.61s]: (tool result) {"temperature": "28.5°C", "humidity": "65%", "wind speed
+    54.01s  agent 발화 끝

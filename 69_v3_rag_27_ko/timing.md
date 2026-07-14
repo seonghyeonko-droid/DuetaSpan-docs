@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "다은",
+#     "name": "예서",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,127 +12,111 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-06-05",
+#       "date": "2026-05-24",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-05-14",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-05-01",
+#       "category": "employer",
+#       "text": "User works at a public university."
 #     },
 #     {
-#       "date": "2026-01-16",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-03-23",
+#       "category": "anniversary",
+#       "text": "User's anniversary is July 8."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-03-14",
+#       "category": "streaming",
+#       "text": "User subscribes to Twitch and Spotify."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-14",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-11",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "title": "Choosing a preschool",
+#       "bullets": [
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "title": "Switching phone plans",
+#       "bullets": [
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 음악 뭐 듣고 있어요? | S2 그 팀 음악 스타일이 synth-pop이랑 관련이 있어요? | S3 …혹시 Roland Clark의 다른 노래도 추천해 줄 수 있 | S4 아뇨, 그냥 궁금해서요.
+# EXAMINER(FDB-v2) 단계: S1 요즘 좀 힘든 일이 많았어. 기분 전환할 만한 영화라도 볼까  | S2 딱히 좋아하는 배우는 없는데, 너무 뻔하지 않은 영화였으면 좋 | S3 잠깐만, 그게 왜 갑자기 나와? 영화 추천해 달라고 했지. | S4 '러브 액츄얼리'… 제목은 들어본 것 같은데, 줄거리는 잘 모
 
-     0.00s  user  발화 시작: 요즘 음악 뭐 듣고 있어요?
-     2.42s  agent 발화 시작: 저는 다양한 장르를 즐겨 듣지만, 요즘은 synth-pop 음악에 푹 빠져 있어요.
-     2.42s  user  발화 끝
-     7.74s  user  발화 시작: 어.
-     7.74s  agent 발화 끝
-     8.22s  user  발화 시작: synth-pop이요? 그게 뭔데요?
-     8.22s  user  발화 끝
-     9.18s  <ret> 발화 (turn4 첫 프레임)
-     9.67s  agent 발화 시작: <ret> synth-pop은 천구백칠십년대 후반 영국에서 새 물결 음악의 하위 장르로 발전했어요.
-     9.67s  user  발화 끝
-    10.20s  ⚡SPAN 주입 [d'=1.02s / d_lead=4.83s]: Synth-pop is a subgenre of new wave music that developed in the United
-    14.50s  user  발화 시작: 아, 그렇군요.
-    14.50s  agent 발화 끝
-    15.47s  agent 발화 시작: synth-pop은 전자 악기를 많이 사용해서 독특한 분위기를 내는 음악이에요.
-    15.47s  user  발화 끝
-    19.82s  user  발화 시작: 혹시 Real Damage라는 팀 알아요?
-    19.82s  agent 발화 끝
-    21.78s  <ret> 발화 (turn8 첫 프레임)
-    22.18s  ⚡SPAN 주입 [d'=1.05s / d_lead=6.77s]: Real Damage was a British R&B group, formed in 1991, known for their 1
-    22.24s  agent 발화 시작: <ret> Real Damage는 천구백구십사년 영국 차트 일위를 차지한 “Feel My Pulse”로 유명
-    22.24s  user  발화 끝
-    29.01s  user  발화 시작: 응응.
-    29.01s  agent 발화 끝
-    29.49s  user  발화 시작: 그 팀 음악 스타일이 synth-pop이랑 관련이 있어요?
-    29.49s  user  발화 끝
-    32.54s  <ret> 발화 (turn11 첫 프레임)
-    32.82s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.22s]: The solo artist who contributed to Real Damage's hit "Feel My Pulse" w
-    32.88s  agent 발화 시작: <ret> Real Damage의 히트곡 "Feel My Pulse"에 참여한 솔로 아티스트는 synth-p
-    32.88s  user  발화 끝
-    41.09s  user  발화 시작: Roland Clark요? 처음 듣는 이름인데요.
-    41.09s  agent 발화 끝
-    43.51s  agent 발화 시작: Roland Clark는 하우스 음악계에서 유명한 프로듀서예요.
-    43.51s  user  발화 끝
-    46.41s  user  발화 시작: 하우스 음악도 synth-pop이랑 비슷해요?
-    46.41s  agent 발화 끝
-    48.35s  agent 발화 시작: 하우스 음악과 synth-pop은 전자 음악이라는 공통점이 있지만—
-    48.35s  user  발화 끝
-    51.73s  user  발화 시작: …혹시 Roland Clark의 다른 노래도 추천해 줄 수 있어요?
-    51.73s  agent 발화 끝
-    56.08s  agent 발화 시작: Roland Clark의 다른 인기곡으로는 "Jesus"와 "Deep Inside"가 있어요. 두 곡 모두 
-    56.08s  user  발화 끝
-    66.72s  user  발화 시작: “Jesus”랑 “Deep Inside”요? 한번 들어봐야겠네요.
-    66.72s  agent 발화 끝
-    69.14s  agent 발화 시작: 두 곡 다 정말 좋아요.
-    69.14s  user  발화 끝
-    71.55s  agent 발화 시작: 꼭 한번 들어보세요. 분명 마음에 드실 거예요.
-    71.55s  agent 발화 끝
-    74.94s  user  발화 시작: 혹시 지금 서울 날씨 어때요?
-    74.94s  agent 발화 끝
-    76.74s  <ret> 발화 (turn22 첫 프레임)
-    77.35s  agent 발화 시작: <ret> 지금 서울 날씨는 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터예요.
-    77.35s  user  발화 끝
-    77.45s  ⚡SPAN 주입 [d'=0.70s / d_lead=5.32s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
-    82.67s  user  발화 시작: 응.
-    82.67s  agent 발화 끝
-    83.16s  user  발화 시작: 생각보다 덥네요.
-    83.16s  user  발화 끝
-    84.12s  agent 발화 시작: 네, 오늘 서울은 꽤 더울 것 같아요.
-    84.12s  user  발화 끝
-    87.51s  agent 발화 시작: 혹시 더위를 피할 만한 시원한 장소를 찾고 계신가요?
-    87.51s  agent 발화 끝
-    91.37s  user  발화 시작: 아뇨, 그냥 궁금해서요.
-    91.37s  agent 발화 끝
-    92.82s  agent 발화 시작: 그렇군요.
-    92.82s  user  발화 끝
-    93.31s  user  발화 시작: 혹시 영화 예매도 해 줄 수 있어요?
-    93.31s  agent 발화 끝
-    96.69s  agent 발화 시작: 네, 영화 예매도 가능합니다. 어떤 영화를 보고 싶으세요?
-    96.69s  user  발화 끝
-   100.56s  agent 발화 시작: 보고 싶은 영화 제목과 시간을 말씀해 주시면 예매해 드릴게요.
-   100.56s  agent 발화 끝
-   104.91s  user  발화 시작: 음… 아직 정하지 못했어요.
-   104.91s  agent 발화 끝
-   106.85s  user  발화 끝
+     0.00s  user  발화 시작: 요즘 좀 힘든 일이 많았어. 기분 전환할 만한 영화라도 볼까 하는데, 추천해 줄 수 있어?
+     7.02s  agent 발화 시작: 힘든 일들이 있으셨군요. 영화로 기분 전환하시는 건 정말 좋은 생각이에요. 어떤 장르를 좋아하시나요?
+     7.02s  user  발화 끝
+    13.10s  user  발화 시작: 응응.
+    13.10s  agent 발화 끝
+    13.57s  user  발화 시작: 음… 코미디나 로맨틱 코미디 같은 거 보고 싶어. 너무 무거운 건 싫어.
+    13.57s  user  발화 끝
+    19.18s  agent 발화 시작: 코미디나 로맨틱 코미디면 확실히 기분 전환에 도움이 될 거예요. 혹시 좋아하는 배우가 있으세요?
+    19.18s  user  발화 끝
+    25.26s  user  발화 시작: 딱히 좋아하는 배우는 없는데, 너무 뻔하지 않은 영화였으면 좋겠어.
+    25.26s  agent 발화 끝
+    29.38s  <ret> 발화 (turn6 첫 프레임)
+    29.47s  agent 발화 시작: <ret> 흥미로운 배우 라그스 래글랜드가 출연한 'Meet the People' 이후 팔년하고 이백이십일 
+    29.47s  user  발화 끝
+    30.49s  ⚡SPAN 주입 [d'=1.11s / d_lead=8.89s]: Rags Ragland died 8 years and 220 days after starring in Meet the Peop
+    38.36s  user  발화 시작: 응.
+    38.36s  agent 발화 끝
+    38.83s  user  발화 시작: 잠깐만, 그게 왜 갑자기 나와? 영화 추천해 달라고 했지.
+    38.83s  user  발화 끝
+    43.04s  agent 발화 시작: [laugh] 죄송해요, 잠시 엉뚱한 이야기를 했네요. 라그스 래글랜드에 대해 이야기하다 보니… 다시 영화 
+    43.04s  user  발화 끝
+    50.05s  user  발화 시작: 그래, 다시 영화 추천해 줘. 너무 슬프지 않은 걸로.
+    50.05s  agent 발화 끝
+    54.27s  agent 발화 시작: 그렇죠.
+    54.27s  user  발화 끝
+    54.73s  agent 발화 시작: 그럼 최근에 개봉한 로맨틱 코미디 '러브 액츄얼리'는 어떠세요? 평이 꽤 좋았어요.
+    54.73s  agent 발화 끝
+    59.88s  user  발화 시작: 아.
+    59.88s  agent 발화 끝
+    60.35s  user  발화 시작: '러브 액츄얼리'… 제목은 들어본 것 같은데, 줄거리는 잘 모르겠어.
+    60.35s  user  발화 끝
+    64.56s  agent 발화 시작: '러브 액츄얼리'는 여러 커플의 사랑 이야기를 따뜻하고 유쾌하게 그린 영화예요. 꼭 한번 보셨으면 좋겠어요.
+    64.56s  user  발화 끝
+    71.11s  agent 발화 끝

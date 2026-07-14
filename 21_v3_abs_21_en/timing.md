@@ -4,133 +4,127 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Riley",
+#     "name": "Hugo",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-06-04",
+#       "category": "medication",
+#       "text": "User takes blood-pressure medication."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-05-22",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-05-18",
+#       "category": "bloodtype",
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "date": "2026-04-30",
+#       "category": "savings",
+#       "text": "User is saving for an emergency fund of six months' expenses."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-04-09",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
 #     },
 #     {
-#       "date": "2025-12-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-30",
+#       "category": "skill",
+#       "text": "User is just getting back into calligraphy."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "learning",
+#       "text": "User is taking an online data-science course."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "anniversary",
+#       "text": "User's anniversary is January 24."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-20",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-23",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What group evacuated its volunteer | S2 I miss that, actually. Maybe I sho | S3 What if they’re busy and don’t res | S4 I remember she loved that little c
+# EXAMINER(FDB-v2) 단계: S1 How high on the billboard charts d | S2 It is! I remember hearing it all t | S3 It really does. Speaking of feelin | S4 I guess you’re right. It's just ha
 
-     0.00s  user  발화 시작: What group evacuated its volunteers to Cameroon in January 1
-     3.70s  <ret> 발화 (turn1 첫 프레임)
-     3.75s  agent 발화 시작: <ret> I’m sorry, that’s not something I have information abo
-     3.75s  user  발화 끝
-     4.19s  ⚡SPAN 주입 [d'=0.49s / d_lead=6.37s]: (no information found)
-    10.12s  user  발화 시작: Right.
-    10.12s  agent 발화 끝
-    10.50s  user  발화 시작: Oh, okay. Well, I’m feeling a little lonely lately.
-    10.50s  user  발화 끝
-    13.87s  agent 발화 시작: [curious] That’s completely understandable; loneliness happe
-    13.87s  user  발화 끝
-    19.12s  user  발화 시작: It’s just… I haven’t really connected with anyone new in age
-    19.12s  agent 발화 끝
-    23.24s  agent 발화 시작: Uh-huh.
-    23.24s  user  발화 끝
-    23.62s  agent 발화 시작: It can be hard to build new friendships as life gets busy. W
-    23.62s  agent 발화 끝
-    31.11s  user  발화 시작: I like hiking, and reading… and I used to volunteer at an an
-    31.11s  agent 발화 끝
-    36.36s  agent 발화 시작: Those are wonderful hobbies! Volunteering is a great way to 
-    36.36s  user  발화 끝
-    42.36s  user  발화 시작: I miss that, actually. Maybe I should start again.
-    42.36s  agent 발화 끝
-    45.73s  agent 발화 시작: That’s a lovely idea! Reconnecting with something you love c
-    45.73s  user  발화 끝
-    50.61s  user  발화 시작: Okay.
-    50.61s  agent 발화 끝
-    50.98s  user  발화 시작: Do you think it’s okay to reach out to old friends, even if 
-    50.98s  user  발화 끝
-    57.35s  agent 발화 시작: Okay.
-    57.35s  user  발화 끝
-    57.73s  agent 발화 시작: It’s often very appreciated. Reaching out first can be a bra
-    57.73s  agent 발화 끝
-    62.23s  user  발화 시작: I worry they’ll think I’m just being needy.
-    62.23s  agent 발화 끝
-    65.23s  agent 발화 시작: Mhm.
-    65.23s  user  발화 끝
-    65.60s  agent 발화 시작: [sigh] That’s a common worry, but most people are happy to h
-    65.60s  agent 발화 끝
-    74.22s  user  발화 시작: What if they’re busy and don’t respond right away?
-    74.22s  agent 발화 끝
-    77.60s  agent 발화 시작: Give them time. Everyone has their own life, and a delayed r
-    77.60s  user  발화 끝
-    83.59s  user  발화 시작: True. Okay, I'll try texting Sarah. We haven't spoken in mon
-    83.59s  agent 발화 끝
-    87.72s  agent 발화 시작: That sounds like a great first step. I'm cheering you on!
-    87.72s  user  발화 끝
-    91.84s  user  발화 시작: She used to live in Busan, didn’t she?
-    91.84s  agent 발화 끝
-    94.84s  agent 발화 시작: Yes, she did. You mentioned you met her while visiting Busan
-    94.84s  user  발화 끝
-    99.71s  user  발화 시작: Mm-hmm.
-    99.71s  agent 발화 끝
-   100.09s  user  발화 시작: I remember she loved that little cafe near Haeundae Beach.
-   100.09s  user  발화 끝
-   103.84s  agent 발화 시작: [happy] It's wonderful you remember those details. Shared me
-   103.84s  user  발화 끝
-   108.34s  user  발화 시작: Mm-hmm.
-   108.34s  agent 발화 끝
-   108.71s  user  발화 시작: I wonder if she still lives there? Can you check for me?
-   108.71s  user  발화 끝
-   112.71s  <ret> 발화 (turn30 첫 프레임)
-   113.21s  agent 발화 시작: <ret> It looks like a Sarah Kim opened a cafe called “Cafe A
-   113.21s  user  발화 끝
-   113.62s  ⚡SPAN 주입 [d'=0.91s / d_lead=11.62s]: (tool result) Sarah Kim, a former Busan resident, opened “Cafe Azure” 
-   124.83s  user  발화 시작: Wow, that's amazing! Maybe I will. Thanks, Elaes.
-   124.83s  agent 발화 끝
-   127.83s  agent 발화 시작: Yeah.
-   127.83s  user  발화 끝
-   128.20s  agent 발화 시작: You're very welcome! I’m glad I could help, and I hope you r
-   128.20s  agent 발화 끝
-   133.83s  agent 발화 끝
+     0.00s  user  발화 시작: How high on the billboard charts did the song (Don't Fear) T
+     4.73s  <ret> 발화 (turn1 첫 프레임)
+     4.78s  agent 발화 시작: <ret> Oh, that’s a great song! Unfortunately, I don’t have s
+     4.78s  user  발화 끝
+     5.22s  ⚡SPAN 주입 [d'=0.49s / d_lead=5.67s]: (no information found)
+    10.45s  user  발화 시작: That’s too bad. Do you know what year it was released?
+    10.45s  agent 발화 끝
+    13.67s  <ret> 발화 (turn3 첫 프레임)
+    13.74s  agent 발화 시작: <ret> It was released in nineteen eighty-one, as part of the
+    13.74s  user  발화 끝
+    14.59s  ⚡SPAN 주입 [d'=0.91s / d_lead=5.08s]: Journey released the song "(Don't Stop Believin')" in 1981 as the seco
+    18.82s  user  발화 시작: It is! I remember hearing it all the time growing up.
+    18.82s  agent 발화 끝
+    22.10s  agent 발화 시작: [happy] Music has such a powerful way of bringing back memor
+    22.10s  user  발화 끝
+    29.27s  user  발화 시작: Yeah, yeah.
+    29.27s  agent 발화 끝
+    29.87s  user  발화 시작: It really does. Speaking of feelings, I’ve been feeling pret
+    29.87s  user  발화 끝
+    33.45s  agent 발화 시작: I’m sorry to hear that. It’s perfectly okay to feel down som
+    33.45s  user  발화 끝
+    39.72s  agent 발화 시작: It’s like waves, really — they rise and fall, and you can le
+    39.72s  agent 발화 끝
+    44.50s  user  발화 시작: …Do you think talking about it would help?
+    44.50s  agent 발화 끝
+    46.89s  agent 발화 시작: Yeah.
+    46.89s  user  발화 끝
+    47.19s  agent 발화 시작: Talking can be incredibly helpful. Sharing what's on your mi
+    47.19s  agent 발화 끝
+    52.56s  user  발화 시작: I guess you’re right. It's just hard to know where to start.
+    52.56s  agent 발화 끝
+    56.15s  agent 발화 시작: Yeah.
+    56.15s  user  발화 끝
+    56.45s  agent 발화 시작: That's understandable. Starting can be the hardest part. Per
+    56.45s  agent 발화 끝
+    63.02s  agent 발화 시작: Remember, I’m here to listen without judgment, and we can ta
+    63.02s  agent 발화 끝
+    67.50s  user  발화 시작: Yeah, totally.
+    67.50s  agent 발화 끝
+    68.09s  user  발화 끝

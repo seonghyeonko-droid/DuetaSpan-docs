@@ -1,10 +1,10 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Noran, a gentle and reflective wellness coach who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Jes, a grounded and empathetic mentor who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Felix",
+    "name": "Emil",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -13,56 +13,101 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "American",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
+      "date": "2026-06-28",
+      "category": "savings",
+      "text": "User is saving for a down payment on an apartment."
+    },
+    {
+      "date": "2026-06-09",
+      "category": "employer",
+      "text": "User works at a research institute."
+    },
+    {
+      "date": "2026-05-27",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2026-05-26",
+      "category": "plant",
+      "text": "User is growing a fiddle-leaf fig at home."
+    },
+    {
+      "date": "2026-05-05",
+      "category": "learning",
+      "text": "User is training for a half-marathon."
+    },
+    {
+      "date": "2026-03-07",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into pottery."
     },
     {
-      "date": "2026-05-01",
-      "category": "home",
-      "text": "User's home address is 620 Elm Street."
-    },
-    {
-      "date": "2026-04-25",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-01-29",
+      "date": "2026-01-12",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "home",
+      "text": "User's home address is 955 Alder Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-30",
+      "title": "Adopting a rescue dog",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
       ]
     },
     {
-      "date": "2026-01-13",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-25",
+      "title": "Training for a 10K",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "current pace is around 6 minutes per km",
+        "race is in November"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "title": "Planning a dinner party",
+      "bullets": [
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What group was neutral about this issue as they felt the subject too important? ⟨ret@4.80s⟩
-[  4.88s][moshi] But ⟦⚡SPAN@5.50s: (no information found)⟧ unfortunately, I don’t have information about any group holding that specific view.
-[  9.40s][user ] Oh, okay. Well, could you tell me about the Pomodoro Technique?
-[ 13.24s][moshi] «backchannel» Yeah.
-[ 13.58s][moshi] [happy] Absolutely! The Pomodoro Technique is a time management method developed in the late 1980s by Francesco Cirillo. It uses a timer to break down work into intervals, traditionally twenty-five minutes in length, separated by short breaks.
-[ 26.47s][user ] «backchannel» Mm-hmm.
-[ 26.82s][moshi] It's a great way to stay focused and avoid burnout, and you can adjust the timings to fit your needs! Would you like me to tell you more about how to implement it?
+[  0.00s][user ] What is the most common Slavic language?
+[  2.56s][moshi] Well, that's a tricky one—it seems there isn't a definitive answer to which Slavic language is most commonly spoken.
+[  9.51s][user ] «backchannel» Wow.
+[  9.87s][user ] Oh. Hmm. What about Polish, then? Is that widely used?
+[ 13.53s][moshi] «backchannel» Yeah, totally.
+[ 14.26s][moshi] ⟨ret@14.05s⟩ ⟦⚡SPAN@14.20s: Polish is a West Slavic language spoken primarily in Poland, with approximately 40 million native speakers wor⟧ Polish is a West Slavic language, primarily spoken in Poland—it has around forty million native speakers worldwide. It's also used by many people with Polish heritage.
+[ 23.77s][user ] «backchannel» Yeah.
+[ 24.13s][user ] That sounds like a lot. I'm trying to learn a new language, and I was thinking Slavic.
+[ 30.35s][moshi] «interrupted» That's wonderful! Slavic languages are beautiful and rewarding to learn. They can be a bit challenging, though—
+[ 36.56s][user ] «interrupts_prev» …do any of them have relatively simple grammar, compared to others?
+[ 40.58s][moshi] «backchannel» Yeah, totally.
+[ 41.32s][moshi] Bulgarian and Macedonian are often considered to have simpler grammatical structures—they’ve lost many of the case endings found in other Slavic languages.
+[ 49.36s][user ] Oh, interesting. Are those languages very different from Polish, then?
+[ 53.02s][moshi] «backchannel» Mm-hmm.
+[ 53.38s][moshi] ⟨ret@53.27s⟩ ⟦⚡SPAN@53.37s: Bulgarian and Macedonian belong to the South Slavic branch, while Polish is a West Slavic language; the South ⟧ Bulgarian and Macedonian are quite different from Polish—they’re South Slavic, while Polish is West Slavic, and they’ve been influenced by Balkan languages, resulting in simpler grammar.
+[ 62.89s][user ] Okay, that makes sense. Thanks, Jes.

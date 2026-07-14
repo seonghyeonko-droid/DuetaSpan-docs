@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "서훈",
+#     "name": "우율",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,117 +13,117 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-05-07",
+#       "category": "commute",
+#       "text": "User carpools with a colleague."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-04-13",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A-."
 #     },
 #     {
-#       "date": "2026-04-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2026-03-30",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-03-29",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is cold buckwheat noodles."
 #     },
 #     {
 #       "date": "2026-03-21",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Turkish."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a caramel latte."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-07",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-11",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-19",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 로온 씨, 오늘 저녁에 건강한 식단으로 뭘 먹을까요? | S2 오늘 날씨가 어때요? 운동하기 좋은 날인지 알고 싶어서요. | S3 이번 주 토요일에 영화 보러 갈 건데, 어떤 영화가 좋을까요? | S4 아, '미션 임파서블' 보고 싶네요. 예매해 줄 수 있어요?
+# EXAMINER(FDB-v2) 단계: S1 오늘 서울 날씨 어때? | S2 아, 그렇군요. 그럼… 이번 주말에… | S3 글쎄… 좀 조용한 카페 같은 곳? | S4 몽상가 드립… 위치 좀 알려줘.
 
-     0.00s  user  발화 시작: 로온 씨, 오늘 저녁에 건강한 식단으로 뭘 먹을까요?
-     3.87s  agent 발화 시작: 균형 잡힌 식단은 건강 유지에 정말 중요하죠. 단백질, 탄수화물, 지방을 골고루 섭취하는 게 좋은데요, 혹시
-     3.87s  user  발화 끝
-    13.08s  user  발화 시작: 음… 닭가슴살은 괜찮은데, 맨날 먹으면 좀 질릴 것 같기도 하고.
-    13.08s  agent 발화 끝
-    17.92s  agent 발화 시작: 닭가슴살도 좋지만, 다양하게 먹는 게 중요해요. 연어, 두부, 콩류도 좋은 단백질 공급원이 될 수 있어요.
-    17.92s  user  발화 끝
-    25.19s  user  발화 시작: 아, 연어! 연어는 진짜 좋아해요.
-    25.19s  agent 발화 끝
-    27.61s  agent 발화 시작: 연어는 오메가-삼 지방산도 풍부해서 건강에 아주 좋죠. 구이로 드시면 담백하고 맛있을 거예요.
-    27.61s  user  발화 끝
-    33.42s  user  발화 시작: 오늘 날씨가 어때요? 운동하기 좋은 날인지 알고 싶어서요.
-    33.42s  agent 발화 끝
-    36.79s  <ret> 발화 (turn7 첫 프레임)
-    37.30s  agent 발화 시작: <ret> 부산 날씨는 현재 이십육 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터로 불고
-    37.30s  user  발화 끝
-    37.58s  ⚡SPAN 주입 [d'=0.79s / d_lead=9.20s]: (tool result) The weather in Busan is 26.3°C, humidity 68%, wind 3.2 k
-    46.50s  user  발화 시작: 네.
-    46.50s  agent 발화 끝
-    46.98s  agent 발화 시작: 가볍게 산책이나 조깅을 하시면 활력을 되찾으실 수 있을 거예요.
-    46.98s  user  발화 끝
-    51.34s  user  발화 시작: 이번 주 토요일에 영화 보러 갈 건데, 어떤 영화가 좋을까요?
-    51.34s  agent 발화 끝
-    56.19s  agent 발화 시작: 예.
-    56.19s  user  발화 끝
-    56.67s  agent 발화 시작: 이번 주 토요일에 영화를 보신다니, 정말 즐거운 계획이네요. 어떤 장르를 좋아하시나요?
-    56.67s  agent 발화 끝
-    62.00s  user  발화 시작: 네.
-    62.00s  agent 발화 끝
-    62.48s  user  발화 시작: 음… 액션 영화를 좋아하는데, 너무 폭력적이지 않은 걸로 보고 싶어요.
-    62.48s  user  발화 끝
-    67.33s  agent 발화 시작: 네.
-    67.33s  user  발화 끝
-    67.81s  agent 발화 시작: 액션 영화 좋아하시는군요. 최근 개봉한 '스파이더맨: 노 웨이 홈'은 액션도 흥미롭고, 감동적인 스토리도 있
-    67.81s  agent 발화 끝
-    75.08s  user  발화 시작: …혹시 서울에서 상영하는 극장은 어디가 좋을까요?
-    75.08s  agent 발화 끝
-    77.96s  <ret> 발화 (turn18 첫 프레임)
-    77.98s  agent 발화 시작: <ret> 서울에서 상영 중인 액션 영화는 '더 이퀄라이저 삼'와 '미션 임파서블: 데드 레코닝 PART O
-    77.98s  user  발화 끝
-    78.85s  ⚡SPAN 주입 [d'=0.89s / d_lead=11.14s]: (tool result) Action movies currently playing in Seoul: "The Equalizer
-    89.12s  user  발화 시작: 아, '미션 임파서블' 보고 싶네요. 예매해 줄 수 있어요?
-    89.12s  agent 발화 끝
-    93.16s  <ret> 발화 (turn20 첫 프레임)
-    93.48s  agent 발화 시작: <ret> '미션 임파서블: 데드 레코닝 PART ONE'의 씨 지 브이 강남 토요일 일곱시 영화 티켓 두장
-    93.48s  user  발화 끝
-    93.63s  ⚡SPAN 주입 [d'=0.47s / d_lead=11.14s]: (tool result) Two tickets for "Mission: Impossible - Dead Reckoning Pa
-   104.62s  user  발화 시작: 네.
-   104.62s  agent 발화 끝
-   105.11s  user  발화 시작: 감사합니다, 로온 씨.
-   105.11s  user  발화 끝
-   106.56s  agent 발화 시작: 천만에요. 즐거운 영화 관람 되세요!
-   106.56s  user  발화 끝
-   108.98s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 서울 날씨 어때?
+     1.52s  <ret> 발화 (turn1 첫 프레임)
+     1.83s  agent 발화 시작: <ret> 오늘 서울 날씨는 이십팔도이고, 습도는 칠십오퍼센트, 바람은 시속 사 점 이킬로미터입니다. 날씨가
+     1.83s  user  발화 끝
+     2.82s  ⚡SPAN 주입 [d'=1.31s / d_lead=6.39s]: The weather in Seoul today is 28.0°C, with humidity at 75% and a wind 
+     8.22s  user  발화 시작: 응.
+     8.22s  agent 발화 끝
+     8.67s  user  발화 시작: 그럼 이번 주 토요일 날씨는?
+     8.67s  user  발화 끝
+    10.45s  <ret> 발화 (turn4 첫 프레임)
+    10.91s  ⚡SPAN 주입 [d'=0.46s / d_lead=7.76s]: The weather forecast for Saturday, July 11, 2026, in Seoul is 31.0°C, 
+    10.95s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십일일 서울 날씨는 삼십일도이고, 비가 올 확률은 육십퍼센트입니다. 주말에
+    10.95s  user  발화 끝
+    18.71s  user  발화 시작: 음.
+    18.71s  agent 발화 끝
+    19.17s  user  발화 시작: 음… 혹시 다음 주 화요일은 어때?
+    19.17s  user  발화 끝
+    21.65s  <ret> 발화 (turn7 첫 프레임)
+    21.91s  agent 발화 시작: <ret> 다음 주 화요일, 칠월 십사일 서울 날씨는 이십육도이고, 구름이 부분적으로 많을 것으로 예상됩니다
+    21.91s  user  발화 끝
+    22.82s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.93s]: The weather forecast for Tuesday, July 14, 2026, in Seoul is 26.0°C, w
+    27.84s  user  발화 시작: 응.
+    27.84s  agent 발화 끝
+    28.30s  user  발화 시작: 아, 그렇군요. 그럼… 이번 주말에…
+    28.30s  user  발화 끝
+    30.58s  user  발화 시작: …갈 만한 곳 좀 추천해 줘.
+    30.58s  user  발화 끝
+    33.32s  agent 발화 시작: 어떤 종류의 장소를 좋아하세요?
+    33.32s  user  발화 끝
+    35.14s  agent 발화 시작: 죄송하지만, 어떤 종류의 장소를 선호하시는지 알려주시면 더 정확한 추천을 해 드릴 수 있습니다.
+    35.14s  agent 발화 끝
+    41.08s  user  발화 시작: 응.
+    41.08s  agent 발화 끝
+    41.53s  user  발화 시작: 글쎄… 좀 조용한 카페 같은 곳?
+    41.53s  user  발화 끝
+    44.16s  <ret> 발화 (turn15 첫 프레임)
+    44.27s  agent 발화 시작: <ret> 서울 강남구 도산대로 사백이십에 있는 커피 스튜디오 앨리가 평점이 사 점 오에 가격대는 보통인 조
+    44.27s  user  발화 끝
+    45.04s  ⚡SPAN 주입 [d'=0.88s / d_lead=7.76s]: (tool result) {"restaurants": [{"name": "커피 스튜디오 앨리", "address": "서울 강
+    52.03s  user  발화 시작: 잠깐만, 강남 말고 다른 데는 없어?
+    52.03s  agent 발화 끝
+    54.77s  agent 발화 시작: —다른 지역도 괜찮으시다면, 홍대에도 분위기 좋은 카페들이 많습니다.
+    54.77s  user  발화 끝
+    58.42s  user  발화 시작: 응응.
+    58.42s  agent 발화 끝
+    58.88s  agent 발화 시작: 홍대입구역 근처에 '몽상가 드립'이라는 카페가 있는데, 잔잔한 음악과 함께 커피를 즐기실 수 있습니다. 평점
+    58.88s  user  발화 끝
+    67.55s  user  발화 시작: 몽상가 드립… 위치 좀 알려줘.
+    67.55s  agent 발화 끝
+    69.50s  <ret> 발화 (turn21 첫 프레임)
+    69.83s  agent 발화 시작: <ret> 몽상가 드립의 위치는 위도 삼십칠 점 오 오, 경도 백이십육 점 구 이입니다. 홍대입구역에서 도보
+    69.83s  user  발화 끝
+    69.97s  ⚡SPAN 주입 [d'=0.47s / d_lead=8.67s]: (tool result) {"latitude": 37.5575, "longitude": 126.9278}
+    78.50s  user  발화 시작: 음.
+    78.50s  agent 발화 끝
+    78.96s  user  발화 시작: 좋아, 그럼 몽상가 드립까지 가는 길 찾아줘.
+    78.96s  user  발화 끝
+    82.00s  <ret> 발화 (turn24 첫 프레임)
+    82.15s  agent 발화 시작: <ret> 지하철 이호선 홍대입구역 구번 출구에서 도보로 오분 정도 걸립니다. 총 거리는 이 점 일킬로미터이
+    82.15s  user  발화 끝
+    82.34s  ⚡SPAN 주입 [d'=0.34s / d_lead=7.76s]: (tool result) {"directions": "지하철 2호선 홍대입구역 9번 출구에서 도보로 5분", "distance
+    89.91s  agent 발화 끝

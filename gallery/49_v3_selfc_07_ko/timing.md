@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "가완",
+#     "name": "노민",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,92 +12,102 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-06-10",
+#       "category": "show",
+#       "text": "User is currently watching a historical K-drama."
 #     },
 #     {
-#       "date": "2026-06-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-07",
+#       "date": "2026-06-08",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a musician."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-06-06",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "date": "2026-05-20",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2025-12-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "date": "2026-05-14",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
+#     },
+#     {
+#       "date": "2026-04-14",
+#       "category": "dislike",
+#       "text": "User can't stand durian."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "music",
+#       "text": "User likes listening to K-ballads."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-25",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-04",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-19",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 부산에서 서울 가는 기차표 좀 찾아주세요. | S2 음… 칠월 십이일로 바꿔서 찾아줘. | S3 아니, 그 시간에 괜찮아.… | S4 …그럼 그 기차표 예매해 줘.
 
-     0.00s  user  발화 시작: 오늘 저녁에 영화 볼 만한 거 있어?
-     3.15s  <ret> 발화 (turn1 첫 프레임)
-     3.55s  agent 발화 시작: <ret> 지금 상영 중인 영화는…
-     3.55s  user  발화 끝
-     4.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.03s]: {"function": "Movies_1_FindMovies", "arguments": {"location": "Busan",
-     5.58s  user  발화 시작: …혹시 로맨틱 코미디는 없어?
-     5.58s  agent 발화 끝
-     7.36s  <ret> 발화 (turn3 첫 프레임)
-     7.61s  agent 발화 시작: <ret> 로맨틱 코미디를 원하시는군요. '달콤한 거짓말'과 '사랑은 타이밍'이 있네요.
-     7.61s  user  발화 끝
-     7.66s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.06s]: {"function": "Movies_1_FindMovies", "arguments": {"location": "Busan",
-    11.67s  agent 발화 시작: '달콤한 거짓말'은 평점이 조금 더 높아요.
-    11.67s  agent 발화 끝
-    14.71s  user  발화 시작: 응.
-    14.71s  agent 발화 끝
-    15.22s  user  발화 시작: '달콤한 거짓말' 몇 시에 상영해?
-    15.22s  user  발화 끝
-    17.41s  <ret> 발화 (turn7 첫 프레임)
-    17.76s  agent 발화 시작: <ret> '달콤한 거짓말'은 오늘 저녁 일곱시와 아홉시 삼십분에 상영합니다.
-    17.76s  user  발화 끝
-    18.41s  ⚡SPAN 주입 [d'=1.01s / d_lead=4.06s]: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "달콤한 
-    21.82s  agent 발화 시작: 혹시 예매를 도와드릴까요?
-    21.82s  agent 발화 끝
-    23.34s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 부산에서 서울 가는 기차표 좀 찾아주세요.
+     4.12s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> 이번 주 토요일 부산에서 서울 가는 기차가 오후 두 시 삼십오분에 출발해서 다섯 시 오십분에 도착
+     4.51s  user  발화 끝
+     5.39s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.53s]: (tool result) The next train from Busan to Seoul departs at 14:35 on J
+    15.05s  user  발화 시작: 음… 칠월 십이일로 바꿔서 찾아줘.
+    15.05s  agent 발화 끝
+    17.30s  <ret> 발화 (turn3 첫 프레임)
+    17.55s  agent 발화 시작: <ret> 칠월 십이일에는 아침 여덟 시에 출발해서 오전 열한 시 십오분에 서울역에 도착하는 기차가 있고, 
+    17.55s  user  발화 끝
+    17.60s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.53s]: (tool result) The first train from Busan to Seoul on July 12, 2026, le
+    27.08s  user  발화 시작: 네.
+    27.08s  agent 발화 끝
+    27.58s  agent 발화 시작: 혹시 다른 시간대도 알아봐 드릴까요? 기차 시간은 여러 개가 있답니다.
+    27.58s  user  발화 끝
+    32.60s  user  발화 시작: 아니, 그 시간에 괜찮아.…
+    32.60s  agent 발화 끝
+    34.61s  user  발화 시작: …그럼 그 기차표 예매해 줘.
+    34.61s  user  발화 끝
+    36.76s  <ret> 발화 (turn8 첫 프레임)
+    37.11s  agent 발화 시작: <ret> 부산에서 서울 가는 칠월 십이일 아침 여덟 시 기차표 예매가 완료되었습니다. 좌석은 십이 씨이고,
+    37.11s  user  발화 끝
+    37.77s  ⚡SPAN 주입 [d'=1.01s / d_lead=10.53s]: (tool result) Train ticket confirmed: Busan to Seoul, July 12, 2026, 0
+    47.65s  agent 발화 시작: 기차 여행 잘 다녀오세요.
+    47.65s  agent 발화 끝
+    49.65s  agent 발화 끝

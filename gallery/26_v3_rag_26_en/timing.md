@@ -4,151 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Owen",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-06-06",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O-."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-05-17",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-05-11",
+#       "category": "airline",
+#       "text": "User usually flies with Delta."
 #     },
 #     {
-#       "date": "2026-03-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-06",
+#       "category": "skill",
+#       "text": "User is a complete beginner at freediving."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "date": "2026-01-25",
+#       "category": "learning",
+#       "text": "User is studying Japanese."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-12-31",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-23",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-22",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "title": "Looking for a therapist",
+#       "bullets": [
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I'm feeling a little overwhelm | S2 Okay, I’ll try that. What's the we | S3 Wow, that’s high! Is it a difficul | S4 Thanks, Keon. I appreciate the adv
+# EXAMINER(FDB-v2) 단계: S1 Hi Tal, I'm feeling a bit lost lat | S2 Oh, right! A plate. I always get t | S3 It is. I miss my friends back in S | S4 Do you think…do you think I’ll mak
 
-     0.00s  user  발화 시작: Hi, I'm feeling a little overwhelmed with getting the kids r
-     5.86s  agent 발화 시작: Mm-hmm.
-     5.86s  user  발화 끝
-     6.26s  agent 발화 시작: Hi there! It’s completely normal to feel that way—mornings c
-     6.26s  agent 발화 끝
-    15.64s  user  발화 시작: Mm-hmm.
-    15.64s  agent 발화 끝
-    16.03s  user  발화 시작: That's good to hear. Do you have any advice on making mornin
-    16.03s  user  발화 끝
-    21.11s  agent 발화 시작: Consistent routines are key. Kids thrive when they know what
-    21.11s  user  발화 끝
-    27.76s  user  발화 시작: Right.
-    27.76s  agent 발화 끝
-    28.15s  user  발화 시작: Routines… easier said than done, right? My son especially re
-    28.15s  user  발화 끝
-    32.06s  agent 발화 시작: [sigh] It can be tricky! Try focusing on praising his *effor
-    32.06s  user  발화 끝
-    40.27s  user  발화 시작: Yeah.
-    40.27s  agent 발화 끝
-    40.66s  user  발화 시작: That's a good point. I usually just tell him to hurry up.
-    40.66s  user  발화 끝
-    45.35s  agent 발화 시작: It’s easy to fall into that pattern. Recognizing effort—"I s
-    45.35s  user  발화 끝
-    53.95s  user  발화 시작: Okay, I’ll try that. What's the weather like today?
-    53.95s  agent 발화 끝
-    57.47s  agent 발화 시작: Yeah.
-    57.47s  user  발화 끝
-    57.57s  <ret> 발화 (turn14 첫 프레임)
-    57.80s  ⚡SPAN 주입 [d'=1.17s / d_lead=7.82s]: (tool result) The weather in Busan is currently 26.0°C, humidity 78%, 
-    57.86s  agent 발화 시작: <ret> The weather in Busan is currently 26.0°C, with 78% hum
-    57.86s  agent 발화 끝
-    65.68s  user  발화 시작: Yeah.
-    65.68s  agent 발화 끝
-    66.07s  user  발화 시작: That’s nice. My wife and I are thinking about a trip to Jeju
-    66.07s  user  발화 끝
-    72.33s  agent 발화 시작: Jeju Island sounds lovely! A change of scenery can do wonder
-    72.33s  user  발화 끝
-    77.80s  user  발화 시작: Yeah, we need it. Are there any good hiking trails there?
-    77.80s  agent 발화 끝
-    81.48s  <ret> 발화 (turn19 첫 프레임)
-    82.04s  ⚡SPAN 주입 [d'=1.02s / d_lead=7.04s]: (tool result) Hallasan National Park is the most popular hiking destin
-    82.10s  agent 발화 시작: <ret> Hallasan National Park is popular for hiking on Jeju I
-    82.10s  user  발화 끝
-    89.14s  user  발화 시작: Mount Hallasan, huh? How tall is that?
-    89.14s  agent 발화 끝
-    91.63s  <ret> 발화 (turn21 첫 프레임)
-    91.81s  ⚡SPAN 주입 [d'=1.31s / d_lead=5.86s]: Mount Hallasan, a dormant volcano, is 1,950 meters (6,398 feet) tall a
-    91.87s  agent 발화 시작: <ret> Mount Hallasan is 1,950 meters—that's 6,398 feet—tall,
-    91.87s  user  발화 끝
-    97.74s  user  발화 시작: Wow, that’s high! Is it a difficult climb?
-    97.74s  agent 발화 끝
-   100.87s  agent 발화 시작: Yeah.
-   100.87s  user  발화 끝
-   101.26s  agent 발화 시작: It depends on the trail you choose. There are several routes
-   101.26s  agent 발화 끝
-   107.90s  user  발화 시작: Good to know. I'm also wondering about the National Institut
-   107.90s  agent 발화 끝
-   114.12s  <ret> 발화 (turn26 첫 프레임)
-   114.16s  agent 발화 시작: <ret> The National Institutes of Health was established in 1
-   114.16s  user  발화 끝
-   114.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.26s]: The National Institutes of Health was established in 1887 as a one-roo
-   120.41s  user  발화 시작: Mm-hmm.
-   120.41s  agent 발화 끝
-   120.80s  user  발화 시작: 1887! That's a long time ago. I think I need to focus on get
-   120.80s  user  발화 끝
-   127.84s  agent 발화 시작: [laugh] One step at a time! It’s easy to get lost in plannin
-   127.84s  user  발화 끝
-   134.88s  user  발화 시작: Yeah.
-   134.88s  agent 발화 끝
-   135.27s  user  발화 시작: You're right. I think I’ll try that praising effort thing wi
-   135.27s  user  발화 끝
-   140.74s  agent 발화 시작: That sounds like a great plan. Remember, small changes can m
-   140.74s  user  발화 끝
-   146.22s  user  발화 시작: Thanks, Keon. I appreciate the advice.
-   146.22s  agent 발화 끝
-   148.56s  agent 발화 시작: You’re very welcome. I’m happy to help. Focusing on the posi
-   148.56s  user  발화 끝
-   156.38s  user  발화 시작: Okay.
-   156.38s  agent 발화 끝
-   156.77s  user  발화 시작: I think I'll look up some easier trails on Jeju Island, too.
-   156.77s  user  발화 끝
-   161.46s  agent 발화 시작: Yeah, yeah.
-   161.46s  user  발화 끝
-   162.24s  agent 발화 시작: Excellent idea. Planning something fun to look forward to ca
-   162.24s  agent 발화 끝
-   168.50s  user  발화 시작: Okay, I'm going to do that now.
-   168.50s  agent 발화 끝
-   171.24s  agent 발화 시작: Wonderful. Take care, and remember, you’re doing a great job
-   171.24s  user  발화 끝
-   175.15s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Tal, I'm feeling a bit lost lately.
+     3.04s  agent 발화 시작: Hello! It’s perfectly normal to feel lost sometimes.
+     3.04s  user  발화 끝
+     6.08s  user  발화 시작: That’s nice to hear. What even *is* connection, though?
+     6.08s  agent 발화 끝
+     9.50s  agent 발화 시작: Connection is simply a feeling of closeness and understandin
+     9.50s  user  발화 끝
+    17.87s  user  발화 시작: I guess so. I was thinking about things people use every day
+    17.87s  agent 발화 끝
+    26.37s  <ret> 발화 (turn5 첫 프레임)
+    26.99s  agent 발화 시작: <ret> Well, while a spade is for digging, the flat thing we 
+    26.99s  user  발화 끝
+    27.25s  ⚡SPAN 주입 [d'=0.88s / d_lead=7.22s]: A spade is a tool used for digging, but a flat utensil on which food i
+    34.22s  user  발화 시작: Oh, right! A plate. I always get those mixed up.
+    34.22s  agent 발화 끝
+    38.02s  agent 발화 시작: Okay.
+    38.02s  user  발화 끝
+    38.40s  agent 발화 시작: [laugh] It happens! Our minds wander. Is there anything spec
+    38.40s  agent 발화 끝
+    44.10s  user  발화 시작: I think it's just… I moved to Busan last month, and I don't 
+    44.10s  agent 발화 끝
+    50.18s  agent 발화 시작: Yeah.
+    50.18s  user  발화 끝
+    50.56s  agent 발화 시작: Moving is a big change. It's understandable to feel lonely w
+    50.56s  agent 발화 끝
+    56.65s  user  발화 시작: Mm-hmm.
+    56.65s  agent 발화 끝
+    57.03s  user  발화 시작: It is. I miss my friends back in Seoul.
+    57.03s  user  발화 끝
+    60.45s  agent 발화 시작: Mm-hmm.
+    60.45s  user  발화 끝
+    60.83s  agent 발화 시작: I see. Busan is a beautiful city, though. Have you had a cha
+    60.83s  agent 발화 끝
+    67.29s  user  발화 시작: Yeah.
+    67.29s  agent 발화 끝
+    67.43s  <ret> 발화 (turn17 첫 프레임)
+    67.67s  agent 발화 시작: <ret> I understand you've started exploring, which is great.
+    67.67s  user  발화 끝
+    67.81s  ⚡SPAN 주입 [d'=0.38s / d_lead=26.23s]: (tool result) Events in Busan this weekend: Busan International Film F
+    93.90s  user  발화 시작: Wow, that’s a lot! Maybe the film festival.
+    93.90s  agent 발화 끝
+    96.94s  agent 발화 시작: That sounds like fun! It’s a great way to experience the cit
+    96.94s  user  발화 끝
+   103.79s  user  발화 시작: Do you think…do you think I’ll make friends?
+   103.79s  agent 발화 끝
+   106.83s  agent 발화 시작: [happy] I absolutely do. Putting yourself out there takes co
+   106.83s  user  발화 끝
+   116.71s  user  발화 시작: Thanks, Tal. That actually makes me feel a lot better.
+   116.71s  agent 발화 끝
+   120.52s  agent 발화 시작: You’re very welcome. I'm glad I could help.
+   120.52s  user  발화 끝
+   123.56s  agent 발화 끝

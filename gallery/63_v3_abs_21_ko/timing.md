@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "우은",
+#     "name": "채슬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,98 +12,119 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-04",
+#       "category": "medication",
+#       "text": "User takes blood-pressure medication."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-05-22",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-18",
+#       "category": "bloodtype",
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-30",
+#       "category": "savings",
+#       "text": "User is saving for an emergency fund of six months' expenses."
 #     },
 #     {
-#       "date": "2025-12-04",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-04-09",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
+#     },
+#     {
+#       "date": "2026-03-30",
+#       "category": "skill",
+#       "text": "User is just getting back into calligraphy."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "learning",
+#       "text": "User is taking an online data-science course."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "anniversary",
+#       "text": "User's anniversary is January 24."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-05",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-23",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 천구백구십칠년 일월에 자원봉사자들을 카메룬으로 대피시킨 단체가 | S2 작은 일이라니? 예를 들면 뭘 말하는 거야? | S3 전에 친구가 힘들어할 때 내가 잘 못 챙겨줬던 기억이 나. | S4 있었어. 그때 친구가 얼마나 힘들었는지 물어봤는데, 속마음을 
+# EXAMINER(FDB-v2) 단계: S1 저, 혹시 저니(Journey)의 'Don't Fear The | S2 아, 그 노래도 좋았죠. | S3 맞아요. 저, 그때 음악 듣던 기억이 나네요. 요즘은 옛날 노 | S4 음… "Separate Ways"는 어땠나요?
 
-     0.00s  user  발화 시작: 천구백구십칠년 일월에 자원봉사자들을 카메룬으로 대피시킨 단체가 어디였지?
-     2.60s  <ret> 발화 (turn1 첫 프레임)
-     2.83s  agent 발화 시작: <ret> 아, 그 부분은 제가 지금 바로 찾아봐도 정보가 없는 것 같아요. [sigh] 죄송해요.
-     2.83s  user  발화 끝
-     3.74s  ⚡SPAN 주입 [d'=1.14s / d_lead=5.25s]: (no information found)
-     8.08s  user  발화 시작: 음… 알았어. 그럼 그냥 친구랑 연락하는 게 더 중요하겠네.
-     8.08s  agent 발화 끝
-    11.72s  agent 발화 시작: 네네.
-    11.72s  user  발화 끝
-    12.12s  agent 발화 시작: 맞아요. 친구와의 관계를 잘 유지하는 게 정말 중요하죠. [happy] 자주 연락하는 게 도움이 될 거예요.
-    12.12s  agent 발화 끝
-    18.19s  user  발화 시작: 맞아.
-    18.19s  agent 발화 끝
-    18.59s  user  발화 시작: 자주 연락하는 거… 말은 쉽지, 사실 잘 안 되더라고.
-    18.59s  user  발화 끝
-    22.23s  agent 발화 시작: 저도 그럴 때가 있어요. 작은 일이라도 먼저 연락해 보는 건 어떨까요?
-    22.23s  user  발화 끝
-    26.67s  user  발화 시작: 작은 일이라니? 예를 들면 뭘 말하는 거야?
-    26.67s  agent 발화 끝
-    29.50s  agent 발화 시작: 그냥 안부 묻기나, 재미있는 사진 공유 같은 거요. 부담 없이요.
-    29.50s  user  발화 끝
-    33.55s  user  발화 시작: 음… 사진은 잘 안 찍는데. 그냥 문자로 간단하게 물어보는 걸로 해야겠다.
-    33.55s  agent 발화 끝
-    37.99s  agent 발화 시작: 네, 간단하게 시작하는 것도 좋은 방법이에요. 상대방도 부담이 적을 거예요.
-    37.99s  user  발화 끝
-    42.03s  user  발화 시작: 전에 친구가 힘들어할 때 내가 잘 못 챙겨줬던 기억이 나.
-    42.03s  agent 발화 끝
-    46.07s  agent 발화 시작: 힘든 친구에게 어떤 말을 해주는 게 좋을까요? 진심으로 걱정하는 마음을 전달하는 게 중요해요.
-    46.07s  user  발화 끝
-    51.33s  user  발화 시작: 그치.
-    51.33s  agent 발화 끝
-    51.73s  user  발화 시작: 진심으로 걱정하는 마음… 그게 말처럼 쉽진 않네.
-    51.73s  user  발화 끝
-    54.56s  agent 발화 시작: [curious] 혹시 예전에 비슷한 경험이 있었는지 기억나세요? 그 때 했던 말 중에 도움이 되었던 게 있
-    54.56s  user  발화 끝
-    61.03s  user  발화 시작: 어어.
-    61.03s  agent 발화 끝
-    61.43s  user  발화 시작: 있었어. 그때 친구가 얼마나 힘들었는지 물어봤는데, 속마음을 털어놓더라.
-    61.43s  user  발화 끝
-    64.15s  <ret> 발화 (turn19 첫 프레임)
-    64.67s  agent 발화 시작: <ret> 잘 들어주는 게 좋은 관계를 만드는 데 정말 중요해요. 상대방의 이야기를 주의 깊게 듣고, 그 사
-    64.67s  user  발화 끝
-    64.73s  ⚡SPAN 주입 [d'=0.58s / d_lead=8.08s]: Listening well is a fundamental skill in building and maintaining stro
-    72.75s  user  발화 시작: 맞아.
-    72.75s  agent 발화 끝
-    73.15s  user  발화 시작: 그래, 잘 들어주는 게 중요한 거였지. 잊고 있었네.
-    73.15s  user  발화 끝
-    76.39s  agent 발화 시작: [happy] 다시 한번 생각해 보니, 예전의 경험이 지금에도 도움이 될 수 있겠네요.
-    76.39s  user  발화 끝
-    81.24s  agent 발화 끝
+     0.00s  user  발화 시작: 저, 혹시 저니(Journey)의 'Don't Fear The Reaper'가 빌보드 차트에서 몇 위까지 올
+     5.48s  <ret> 발화 (turn1 첫 프레임)
+     5.72s  agent 발화 시작: <ret> 죄송해요, 그 곡이 빌보드 차트에서 정확히 몇 위까지 올랐다는 정보는 찾을 수 없네요. [sigh
+     5.72s  user  발화 끝
+     6.63s  ⚡SPAN 주입 [d'=1.14s / d_lead=7.92s]: (no information found)
+    13.63s  user  발화 시작: 아, 그렇군요. 그럼 비슷한 시기에 인기 있었던 다른 곡이라도 알려주시겠어요?
+    13.63s  agent 발화 끝
+    17.43s  <ret> 발화 (turn3 첫 프레임)
+    18.01s  ⚡SPAN 주입 [d'=0.58s / d_lead=8.80s]: In 1981, Kim Carnes' "Bette Davis Eyes" topped the Billboard Hot 100 c
+    18.03s  agent 발화 시작: <ret> 천구백팔십일년에는 킴 카네스의 "Bette Davis Eyes"가 빌보드 핫 백 차트에서 구주 동
+    18.03s  user  발화 끝
+    26.83s  user  발화 시작: 아, 그 노래도 좋았죠.
+    26.83s  agent 발화 끝
+    28.58s  agent 발화 시작: 네, 그 노래도 정말 많은 사랑을 받았어요. [happy] 팔십년대 초반은 좋은 음악이 많이 나왔던 시기였죠
+    28.58s  user  발화 끝
+    35.18s  user  발화 시작: 네.
+    35.18s  agent 발화 끝
+    35.62s  user  발화 시작: 맞아요. 저, 그때 음악 듣던 기억이 나네요. 요즘은 옛날 노래 듣는 게 제일 좋아요.
+    35.62s  user  발화 끝
+    41.78s  agent 발화 시작: 요즘은 옛날 노래 듣는 게 제일 좋으시다니…—
+    41.78s  user  발화 끝
+    44.86s  user  발화 시작: …혹시 저니 다른 노래 중에 빌보드 차트에서 잘 된 곡 또 있어요?
+    44.86s  agent 발화 끝
+    50.13s  agent 발화 시작: 아, 네, 물론이죠. 저니의 "Open Arms"는 천구백팔십삼년에 빌보드 차트에서 삼위에 올랐었어요.
+    50.13s  user  발화 끝
+    54.97s  user  발화 시작: 아.
+    54.97s  agent 발화 끝
+    55.41s  agent 발화 시작: 네, "Open Arms"는 정말 감동적인 발라드 곡이죠. 많은 사람들에게 사랑받았답니다.
+    55.41s  user  발화 끝
+    59.81s  user  발화 시작: 네.
+    59.81s  agent 발화 끝
+    60.25s  user  발화 시작: 음… "Separate Ways"는 어땠나요?
+    60.25s  user  발화 끝
+    61.67s  <ret> 발화 (turn15 첫 프레임)
+    61.97s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.84s]: Journey's "Separate Ways (Worlds Apart)" peaked at number 8 on the Bil
+    62.01s  agent 발화 시작: <ret> "Separate Ways (Worlds Apart)"는 천구백팔십삼년에 빌보드 핫 백 차트에서 
+    62.01s  user  발화 끝
+    66.84s  agent 발화 시작: 그 노래도 뮤직비디오가 인상적이었죠. [laugh] 저도 어릴 때 그 뮤직비디오를 보고 정말 멋있다고 생각했
+    66.84s  agent 발화 끝
+    73.00s  agent 발화 끝

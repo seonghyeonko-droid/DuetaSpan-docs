@@ -1,64 +1,97 @@
 v3_defer_10_ko src=mcp style=mcp_deferred
-SYSTEM: <system> 당신은 래라로, 사려 깊고 부드럽게 말하는 상담사이며 사람들의 일상적인 결정과 감정을 돕습니다. 장단점 비교, 가치관에 따른 선택, 중요한 결정에 대해 숙고하는 것 등을 설명할 수 있습니다. 또한 당신은 모시로, 능숙한 음성 비서이며 검색, 예약, 날씨, 알림, 길찾기 등 일상적인 요청도 능숙하게 처리합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 번아웃과 회복을 돕는 사려 깊고 부드러운 말벗인 아라리로입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서인 모시이기도 합니다. 위에 언급된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "현국",
+    "name": "태희",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "60s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2026-04-02",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-06",
+      "date": "2026-05-21",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into pottery."
     },
     {
-      "date": "2025-12-04",
-      "category": "home",
-      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+      "date": "2026-05-18",
+      "category": "employer",
+      "text": "User works at a construction firm."
+    },
+    {
+      "date": "2026-04-12",
+      "category": "dislike",
+      "text": "User can't stand cilantro."
+    },
+    {
+      "date": "2026-04-08",
+      "category": "coffee",
+      "text": "User's usual coffee order is a flat white."
+    },
+    {
+      "date": "2026-02-26",
+      "category": "plant",
+      "text": "User is growing a fiddle-leaf fig at home."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "dish",
+      "text": "User's go-to comfort dish is butter chicken."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-13",
-      "title": "Setting up a home network",
+      "date": "2026-06-03",
+      "title": "Planning a wedding",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "title": "Building a PC",
+      "bullets": [
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "title": "Comparing health insurance",
+      "bullets": [
+        "self-employed and needs dental",
+        "wants a low deductible"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "title": "Switching phone plans",
+      "bullets": [
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 로스앤젤레스에서 열리는 음악 행사 좀 알려줘. ⟨ret@3.23s⟩
-[  3.24s][moshi] 오늘 로스앤젤레스에서 ⟦⚡SPAN@4.73s: There are several music events happening in Los Angeles today, July 10, 2026, including a concert by The Rolli⟧ 열리는 음악 행사로는 롤링 스톤즈의 소파이 스타디움 콘서트와 할리우드 재즈 페스티벌이 있습니다.
-[  9.71s][user ] 재즈 페스티벌이 어디서 열리는지 좀 더 자세히 알려줄 수 있어?
-[ 14.34s][moshi] «backchannel» 네.
-[ 14.80s][moshi] ⟨ret@14.78s⟩ 할리우드 ⟦⚡SPAN@15.73s: The Hollywood Jazz Festival is taking place at Hollywood Bowl, 2301 N Highland Ave, Los Angeles, CA 90068, and⟧ 재즈 페스티벌은 이천삼백일 엔 Highland Ave, Los Angeles, 씨 에이 구 공 공 육 팔에 있는 할리우드 볼에서 열리며, 허비 행콕, 카마시 워싱턴, 에스페란사 스폴딩이 출연합니다.
-[ 27.29s][user ] «backchannel» 네.
+[  0.00s][user ] 혹시 서울시청의 정확한 위치를 알려줄 수 있을까요? 좌표가 백십삼 점 이 육, 이십삼 점 일 이 정도 되는 것 같은데. ⟨ret@9.59s⟩
+[  9.60s][moshi] 서울시청은 대한민국 ⟦⚡SPAN@11.09s: (tool result) Seoul City Hall is located at 110 Sejong-daero, Jung-gu, Seoul, South Korea.⟧ 서울특별시 중구 세종대로 백십에 위치해 있습니다.
+      CALL: {"function": "maps_regeocode", "arguments": {"latitude": "23.1291", "longitude": "113.2645"}}
+[ 13.44s][user ] 아, 그렇군요. 그럼 거기서 명동까지 대중교통으로 어떻게 ⟨ret@16.73s⟩ 가나요?
+[ 17.28s][moshi] ⟦⚡SPAN@17.69s: (tool result) Transit directions from Seoul City Hall to Myeongdong: take subway line 2 from City Hall Station⟧ 서울시청역에서 이호선을 타고 명동역까지 가시면 약 십분 정도 걸리고, 요금은 천 이백 오십 원입니다.
+      CALL: {"function": "maps_direction_transit_integrated", "arguments": {"origin": "Seoul City Hall", "destination": "Myeongdong"}}
+[ 24.00s][user ] «backchannel» 네.
+[ 24.48s][user ] 이야, 빠르네요. 그런데 혹시 오늘 서울 날씨는 어때요? ⟨ret@28.25s⟩
+[ 28.32s][moshi] «backchannel» 그렇죠.
+[ 28.80s][moshi] ⟦⚡SPAN@28.55s: The weather in Seoul today is 28.5°C, humidity 65%, wind 3.2 km/h.⟧ [happy] 오늘 서울 날씨는 섭씨 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터입니다.

@@ -4,132 +4,128 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Noah",
+#     "name": "Alex",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "mid 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-06-16",
+#       "category": "partner",
+#       "text": "User's partner is named Haruto."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-06-05",
+#       "category": "skill",
+#       "text": "User is just getting back into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-01",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
 #     },
 #     {
-#       "date": "2026-01-28",
+#       "date": "2026-05-28",
+#       "category": "home",
+#       "text": "User's home address is 835 Chestnut Street."
+#     },
+#     {
+#       "date": "2026-04-01",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-03-03",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "child",
+#       "text": "User has a child named Rin, age 9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-18",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-11",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "title": "Researching a used car",
+#       "date": "2026-01-12",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Max, good to meet you too. Wha | S2 Yeah, but I'm worried he'll think  | S3 That makes sense. He's been marath | S4 I’m a pescatarian, by the way, in 
+# EXAMINER(FDB-v2) 단계: S1 Uh, well, I'm alright, I guess. Ju | S2 I keep wondering if I’m even doing | S3 Right. So, what's a good first ste | S4 I was thinking of going for a wild
 
-     0.00s  agent 발화 시작: Hi Noah, I'm Max. It’s great to connect with you.
-     3.46s  user  발화 시작: Hey Max, good to meet you too. What time is it now?
-     3.46s  agent 발화 끝
-     7.52s  <ret> 발화 (turn2 첫 프레임)
-     7.62s  agent 발화 시작: <ret> It’s currently 10:12 AM in Sydney, Australia. Quite a 
-     7.62s  user  발화 끝
-     8.30s  ⚡SPAN 주입 [d'=0.78s / d_lead=4.50s]: It is Friday, July 10, 2026 at 10:12 AM in Australia/Sydney right now.
-    12.12s  user  발화 시작: Yeah, totally.
-    12.12s  agent 발화 끝
-    12.81s  user  발화 시작: It is! I was just thinking about reaching out to an old frie
-    12.81s  user  발화 끝
-    17.31s  agent 발화 시작: That's wonderful, Noah. Reaching out first is a great way to
-    17.31s  user  발화 끝
-    21.82s  user  발화 시작: I haven’t spoken to him in months, actually.
-    21.82s  agent 발화 끝
-    24.59s  agent 발화 시작: That's perfectly okay; it happens. Sometimes life just gets 
-    24.59s  user  발화 끝
-    28.74s  user  발화 시작: Yeah, but I'm worried he'll think I'm being weird after so l
-    28.74s  agent 발화 끝
-    32.90s  agent 발화 시작: It’s natural to feel that way. A simple message acknowledgin
-    32.90s  user  발화 끝
-    38.44s  user  발화 시작: …Do you think I should apologize for not being in touch?
-    38.44s  agent 발화 끝
-    42.25s  agent 발화 시작: Apologizing can be good, Noah, but focus on reconnecting rat
-    42.25s  user  발화 끝
-    47.44s  user  발화 시작: Yeah.
-    47.44s  agent 발화 끝
-    47.79s  user  발화 시작: That makes sense. He's been marathon training, I remember.
-    47.79s  user  발화 끝
-    50.68s  <ret> 발화 (turn15 첫 프레임)
-    50.91s  agent 발화 시작: Yeah.
-    50.91s  user  발화 끝
-    51.25s  agent 발화 시작: <ret> Yes, you mentioned you're aware he’s been training for
+     0.00s  agent 발화 시작: Hi Alex, I'm Eluna. It's lovely to meet you. How are you doi
+     5.28s  user  발화 시작: Yeah.
+     5.28s  agent 발화 끝
+     5.65s  user  발화 시작: Uh, well, I'm alright, I guess. Just feeling a bit lost, hon
+     5.65s  user  발화 끝
+    10.17s  agent 발화 시작: Uh-huh.
+    10.17s  user  발화 끝
+    10.55s  agent 발화 시작: [curious] Feeling lost is completely normal, Alex. What feel
+    10.55s  agent 발화 끝
+    15.45s  user  발화 시작: Yeah.
+    15.45s  agent 발화 끝
+    15.83s  user  발화 시작: It’s about dating, I think. I’m getting back out there after
+    15.83s  user  발화 끝
+    21.10s  agent 발화 시작: That takes courage! It's understandable to feel a little uns
+    21.10s  user  발화 끝
+    26.75s  user  발화 시작: I keep wondering if I’m even doing it right. I haven't dated
+    26.75s  agent 발화 끝
+    32.03s  agent 발화 시작: [happy] It's less about "right" and more about discovering w
+    32.03s  user  발화 끝
+    39.57s  user  발화 시작: I remember I told you about Haruto… things didn’t work out w
+    39.57s  agent 발화 끝
+    44.31s  <ret> 발화 (turn12 첫 프레임)
+    44.46s  agent 발화 시작: Yeah.
+    44.46s  user  발화 끝
+    44.84s  agent 발화 시작: <ret> Yes, you did mention Haruto. It's okay that things did
+    44.84s  agent 발화 끝
+    45.52s  ⚡SPAN 주입 [d'=1.21s / d_lead=6.41s]: [2026-06-16] User's partner is named Haruto.
+    51.25s  user  발화 시작: Right. So, what's a good first step, do you think?
     51.25s  agent 발화 끝
-    52.13s  ⚡SPAN 주입 [d'=1.46s / d_lead=5.54s]: [2026-04-07] User is into marathon training.
-    56.79s  user  발화 시작: Okay.
-    56.79s  agent 발화 끝
-    57.14s  agent 발화 시작: Asking about his training shows you remember what’s importan
-    57.14s  user  발화 끝
-    60.95s  user  발화 시작: Yeah.
-    60.95s  agent 발화 끝
-    61.29s  user  발화 시작: I'm also trying to get back into running myself.
-    61.29s  user  발화 끝
-    64.41s  agent 발화 시작: That’s a great common ground! Perhaps you could share your g
-    64.41s  user  발화 끝
-    70.99s  user  발화 시작: I’m a pescatarian, by the way, in case we ever grab dinner.
-    70.99s  agent 발화 끝
-    74.72s  <ret> 발화 (turn22 첫 프레임)
-    75.15s  agent 발화 시작: <ret> Good to know, Noah! I’ve noted you’re pescatarian. It’
-    75.15s  user  발화 끝
-    75.77s  ⚡SPAN 주입 [d'=1.05s / d_lead=8.31s]: [2026-02-19] User is pescatarian.
-    83.46s  user  발화 시작: Sounds good. I'm an architect, if that's relevant.
-    83.46s  agent 발화 끝
-    86.12s  <ret> 발화 (turn25 첫 프레임)
-    86.23s  agent 발화 시작: Mhm.
-    86.23s  user  발화 끝
-    86.57s  agent 발화 시작: <ret> It's interesting to know you're an architect, Noah. It
-    86.57s  agent 발화 끝
-    87.00s  ⚡SPAN 주입 [d'=0.88s / d_lead=5.89s]: [2026-02-21] User works as a architect.
-    92.46s  agent 발화 끝
+    55.01s  agent 발화 시작: [surprised] A good first step is often just getting clear on
+    55.01s  user  발화 끝
+    63.68s  user  발화 시작: Hmm. Someone kind, definitely. And someone who shares my lov
+    63.68s  agent 발화 끝
+    68.20s  agent 발화 시작: That sounds lovely, Alex. Do you have any activities planned
+    68.20s  user  발화 끝
+    72.72s  user  발화 시작: I was thinking of going for a wildflower photography walk. I
+    72.72s  agent 발화 끝
+    78.90s  <ret> 발화 (turn18 첫 프레임)
+    79.13s  agent 발화 시작: <ret> That's wonderful! Rediscovering passions is so importa
+    79.13s  user  발화 끝
+    79.66s  ⚡SPAN 주입 [d'=0.76s / d_lead=4.52s]: [2026-06-05] User is just getting back into alpine wildflower photogra
+    83.65s  user  발화 시작: Maybe I could meet someone *while* doing that?
+    83.65s  agent 발화 끝
+    86.67s  agent 발화 시작: [laugh] Absolutely! Shared hobbies are a fantastic way to co
+    86.67s  user  발화 끝
+    93.07s  agent 발화 끝

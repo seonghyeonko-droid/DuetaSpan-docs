@@ -4,61 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "채국",
+#     "name": "혜서",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
+#       "date": "2026-06-13",
+#       "category": "bloodtype",
+#       "text": "User's blood type is AB+."
+#     },
+#     {
+#       "date": "2026-05-31",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-05-22",
+#       "category": "dislike",
+#       "text": "User can't stand blue cheese."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "date": "2026-03-26",
+#       "category": "hobby",
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-03-23",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
 #     },
 #     {
-#       "date": "2025-12-26",
+#       "date": "2026-03-20",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Greek."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "show",
+#       "text": "User is currently watching a cooking competition show."
+#     },
+#     {
+#       "date": "2026-02-25",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-09",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-23",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-28",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 토르 라그나로크 개봉일 알 수 있어?
-     3.47s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> 토르 라그나로크는 미국에서 이천십칠년 십일월 삼일에 개봉했어요. [happy] 혹시 다른 영화 정
-     3.57s  user  발화 끝
-     4.40s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.14s]: Thor: Ragnarok was released in the United States on November 3, 2017.
-    10.71s  agent 발화 끝
+     0.00s  user  발화 시작: 미국에 유니테리언 유니버설리스트는 몇 명이나 있을까?
+     3.10s  <ret> 발화 (turn1 첫 프레임)
+     3.20s  agent 발화 시작: <ret> 미국에는 약 십구만 구천 팔백 쉰명의 유니테리언 유니버설리스트가 있는 것으로 알려져 있습니다.
+     3.20s  user  발화 끝
+     4.03s  ⚡SPAN 주입 [d'=0.93s / d_lead=6.40s]: As of 2020, there were approximately 199,850 identified Unitarian Univ
+     9.60s  agent 발화 끝

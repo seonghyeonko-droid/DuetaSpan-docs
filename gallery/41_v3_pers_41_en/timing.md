@@ -4,124 +4,122 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Maya",
+#     "name": "Ethan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-06-01",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
 #     },
 #     {
-#       "date": "2026-05-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-12-19",
+#       "date": "2026-05-10",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is dairy-free."
 #     },
 #     {
-#       "date": "2025-12-18",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-04-29",
+#       "category": "music",
+#       "text": "User likes listening to indie folk."
+#     },
+#     {
+#       "date": "2026-04-26",
+#       "category": "hobby",
+#       "text": "User is into urban sketching."
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "category": "employer",
+#       "text": "User works at a fintech startup."
+#     },
+#     {
+#       "date": "2026-02-27",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "category": "streaming",
+#       "text": "User subscribes to Twitch and Spotify."
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "category": "pet",
+#       "text": "User has a Shiba Inu named Kongi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-02-08",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-03",
+#       "date": "2026-01-01",
+#       "title": "Adopting a rescue dog",
+#       "bullets": [
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-25",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just… really struggling to swi | S2 …but isn't melatonin just a supple | S3 That’s frustrating. So, same bedti | S4 Freewriting… hmm. Maybe. I feel li
+# EXAMINER(FDB-v2) 단계: S1 Oh, uh, Buli… that’s a pretty unus | S2 I’m just… really struggling with p | S3 Welll… that sounds nice, but easie | S4 I guess… but how do I even *start*
 
-     0.00s  agent 발화 시작: Hello Maya, it’s lovely to meet you. I’m Ral, and I help peo
-     8.42s  user  발화 시작: Yeah, totally.
-     8.42s  agent 발화 끝
-     9.19s  user  발화 시작: I’m just… really struggling to switch off at night.
-     9.19s  user  발화 끝
-    12.64s  agent 발화 시작: It’s very common to find your mind racing when you finally h
-    12.64s  user  발화 끝
-    24.51s  user  발화 시작: Yeah.
-    24.51s  agent 발화 끝
-    24.89s  user  발화 시작: Wind down? Sounds… vague. What does that even *mean* practic
-    24.89s  user  발화 끝
-    28.72s  agent 발화 시작: [happy] It’s about creating a buffer between your day and yo
-    28.72s  user  발화 끝
-    37.53s  user  발화 시작: Yeah.
-    37.53s  agent 발화 끝
-    37.91s  user  발화 시작: A dimmer switch… okay, I get the idea. But my phone is alway
-    37.91s  user  발화 끝
-    43.65s  agent 발화 시작: That’s a really common challenge. The blue light emitted fro
-    43.65s  user  발화 끝
-    51.31s  user  발화 시작: …but isn't melatonin just a supplement you can buy?
-    51.31s  agent 발화 끝
-    54.76s  agent 발화 시작: Yeah.
-    54.76s  user  발화 끝
-    55.14s  agent 발화 시작: It is, though relying solely on supplements isn't usually th
-    55.14s  agent 발화 끝
-    63.95s  user  발화 시작: Right. So, less phone. What else? I work late a lot.
-    63.95s  agent 발화 끝
-    68.16s  agent 발화 시작: Working late disrupts your circadian rhythm, your body’s int
-    68.16s  user  발화 끝
-    75.44s  user  발화 시작: Mm-hmm.
-    75.44s  agent 발화 끝
-    75.82s  user  발화 시작: Weekends are… hard. I always try to catch up then.
-    75.82s  user  발화 끝
-    79.65s  agent 발화 시작: [sigh] I understand that temptation! But irregular sleep sch
-    79.65s  user  발화 끝
-    87.31s  user  발화 시작: Yeah.
-    87.31s  agent 발화 끝
-    87.69s  user  발화 시작: That’s frustrating. So, same bedtime, same wake time, even w
-    87.69s  user  발화 끝
-    93.05s  agent 발화 시작: Precisely. A consistent wake time is especially important, a
-    93.05s  user  발화 끝
-   100.71s  user  발화 시작: Okay, consistent wake time. I can *try* that. What about… th
-   100.71s  agent 발화 끝
-   106.07s  agent 발화 시작: [curious] That’s a big one. Journaling can be helpful—gettin
-   106.07s  user  발화 끝
-   112.96s  user  발화 시작: Yeah.
-   112.96s  agent 발화 끝
-   113.35s  user  발화 시작: I’ve tried journaling, but then I just worry about *what* I 
-   113.35s  user  발화 끝
-   117.94s  agent 발화 시작: Yeah, yeah.
-   117.94s  user  발화 끝
-   118.71s  agent 발화 시작: [laugh] That’s a very insightful observation! Perhaps freewr
-   118.71s  agent 발화 끝
-   125.98s  user  발화 시작: Freewriting… hmm. Maybe. I feel like I need a whole new rout
-   125.98s  agent 발화 끝
-   130.96s  agent 발화 시작: It doesn’t have to be a complete overhaul, Maya. Small, cons
-   130.96s  user  발화 끝
-   140.53s  user  발화 시작: That sounds… good, actually. Thank you, Ral.
-   140.53s  agent 발화 끝
-   143.22s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour, Ethan! I'm Buli.
+     1.53s  user  발화 시작: Oh, uh, Buli… that’s a pretty unusual name. What exactly *do
+     1.53s  agent 발화 끝
+     6.49s  agent 발화 시작: [happy] It’s a name rooted in mindfulness, Ethan—a reminder 
+     6.49s  user  발화 끝
+    16.42s  user  발화 시작: Mm-hmm.
+    16.42s  agent 발화 끝
+    16.80s  user  발화 시작: I’m just… really struggling with putting myself out there, y
+    16.80s  user  발화 끝
+    22.15s  agent 발화 시작: It's very common to feel that way, Ethan. Often, it’s less a
+    22.15s  user  발화 끝
+    32.84s  user  발화 시작: Welll… that sounds nice, but easier said than done, right? I
+    32.84s  agent 발화 끝
+    38.19s  agent 발화 시작: Uh-huh.
+    38.19s  user  발화 끝
+    38.57s  agent 발화 시작: [sigh] Rejection stings, absolutely. But each experience, ev
+    38.57s  agent 발화 끝
+    49.26s  user  발화 시작: Uh-huh.
+    49.26s  agent 발화 끝
+    49.64s  user  발화 시작: I guess… but how do I even *start* to feel more confident? I
+    49.64s  user  발화 끝
+    55.37s  user  발화 끝

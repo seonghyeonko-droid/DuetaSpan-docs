@@ -4,163 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Ella",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-22",
+#       "date": "2026-05-01",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-04-19",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "home",
-#       "text": "User's home address is 978 Elm Street."
+#       "date": "2026-03-23",
+#       "category": "schedule",
+#       "text": "User has rotating night shifts."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-01-23",
+#       "category": "savings",
+#       "text": "User is saving for a trip to Europe next year."
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "category": "airline",
+#       "text": "User usually flies with Cathay Pacific."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-06",
+#       "date": "2026-04-30",
+#       "title": "Planning a dinner party",
+#       "bullets": [
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-31",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "title": "Selling a used bike",
+#       "bullets": [
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hax? That’s… an interesting name.  | S2 I guess… a creative outlet? I have | S3 I hadn’t thought of it that way. M | S4 I’ve tried that before, but my min
+# EXAMINER(FDB-v2) 단계: S1 Vunax… that’s an unusual name. Wha | S2 My evenings are… chaotic, honestly | S3 …But does that really work? I’ve t | S4 A screen curfew… Hmm. That sounds…
 
-     0.00s  agent 발화 시작: Hello Ella, it’s lovely to meet you. I'm Hax.
-     3.01s  user  발화 시작: Hax? That’s… an interesting name. What exactly do you *do*?
-     3.01s  agent 발화 끝
-     6.35s  agent 발화 시작: [happy] I help people think through things, Ella. Whether it
-     6.35s  user  발화 끝
-    15.37s  user  발화 시작: Uh-huh.
-    15.37s  agent 발화 끝
-    15.71s  user  발화 시작: Tricky feelings… that sounds a bit vague.
-    15.71s  user  발화 끝
-    18.05s  agent 발화 시작: It can feel that way at first! I focus on helping you unders
-    18.05s  user  발화 끝
-    27.07s  user  발화 시작: So, like, if I’m deciding between two jobs?
-    27.07s  agent 발화 끝
-    29.74s  agent 발화 시작: Exactly! We could weigh the pros and cons, but more importan
-    29.74s  user  발화 끝
-    37.43s  user  발화 시작: Yeah.
-    37.43s  agent 발화 끝
-    37.77s  user  발화 시작: Hmm. I’m trying to decide if I should take a pottery class.
-    37.77s  user  발화 끝
-    41.78s  agent 발화 시작: Uh-huh.
-    41.78s  user  발화 끝
-    42.11s  agent 발화 시작: [curious] A pottery class! That sounds lovely. What’s making
-    42.11s  agent 발화 끝
-    48.79s  user  발화 시작: All of it, honestly. It’s expensive, and I’m already so busy
-    48.79s  agent 발화 끝
-    52.47s  agent 발화 시작: Those are valid concerns. Let's break it down. What would yo
-    52.47s  user  발화 끝
-    59.15s  user  발화 시작: Yeah.
-    59.15s  agent 발화 끝
-    59.49s  user  발화 시작: I guess… a creative outlet? I haven’t done anything artistic
-    59.49s  user  발화 끝
-    63.50s  agent 발화 시작: That’s significant. A creative outlet can be incredibly rest
-    63.50s  user  발화 끝
-    70.85s  user  발화 시작: Yeah.
-    70.85s  agent 발화 끝
-    71.19s  agent 발화 시작: Now, let's look at the cost. Not just the money, but also th
-    71.19s  user  발화 끝
-    81.88s  user  발화 시작: Mhm.
-    81.88s  agent 발화 끝
-    82.21s  user  발화 시작: Two evenings a week, and I’d probably have to skip my book c
-    82.21s  user  발화 끝
-    86.56s  agent 발화 시작: Okay. So, it's a trade-off. Pottery versus book club. Which 
-    86.56s  user  발화 끝
-    92.91s  user  발화 시작: Yeah.
-    92.91s  agent 발화 끝
-    93.24s  user  발화 시작: That’s… harder than I thought. I love my book club.
-    93.24s  user  발화 끝
-    96.59s  agent 발화 시작: Yeah.
-    96.59s  user  발화 끝
-    96.92s  agent 발화 시작: [sigh] It often is. That's where values come in. What does b
-    96.92s  agent 발화 끝
-   104.27s  user  발화 시작: Definitely the connection. We really support each other.
-   104.27s  agent 발화 끝
-   106.95s  agent 발화 시작: And does pottery offer a different kind of support, perhaps 
-   106.95s  user  발화 끝
-   114.63s  user  발화 시작: I hadn’t thought of it that way. Maybe.
-   114.63s  agent 발화 끝
-   117.31s  agent 발화 시작: Sometimes, the hardest choices aren't about what's "better,"
-   117.31s  user  발화 끝
-   122.65s  user  발화 시작: That’s actually really helpful. I think I was just seeing it
-   122.65s  agent 발화 끝
-   127.67s  agent 발화 시작: Uh-huh.
-   127.67s  user  발화 끝
-   128.00s  agent 발화 시작: [laugh] It's easy to fall into that trap! Life isn’t usually
-   128.00s  agent 발화 끝
-   136.36s  user  발화 시작: Wow.
-   136.36s  agent 발화 끝
-   136.69s  user  발화 시작: I’m also stressed about a presentation at work next week.
-   136.69s  user  발화 끝
-   140.03s  agent 발화 시작: Mhm.
-   140.03s  user  발화 끝
-   140.37s  agent 발화 시작: Ah, work stress. That’s very common. Would you like to talk 
-   140.37s  agent 발화 끝
-   146.38s  user  발화 시작: Yes, please. I always get so nervous public speaking.
-   146.38s  agent 발화 끝
-   149.39s  agent 발화 시작: Yeah.
-   149.39s  user  발화 끝
-   149.72s  agent 발화 시작: Okay. One technique is mindful breathing. Before the present
-   149.72s  agent 발화 끝
-   156.74s  user  발화 시작: Yeah.
-   156.74s  agent 발화 끝
-   157.08s  user  발화 시작: I’ve tried that before, but my mind just races.
-   157.08s  user  발화 끝
-   160.08s  agent 발화 시작: That’s normal! The goal isn't to stop the thoughts, but to o
-   160.08s  user  발화 끝
-   167.77s  user  발화 시작: Yeah.
-   167.77s  agent 발화 끝
-   168.11s  user  발화 시작: A watcher… I’ll try to remember that.
-   168.11s  user  발화 끝
-   170.44s  agent 발화 시작: Another thing that can help is visualization. Imagine yourse
-   170.44s  user  발화 끝
-   176.13s  user  발화 시작: Yeah.
-   176.13s  agent 발화 끝
-   176.46s  user  발화 시작: That sounds… cheesy.
-   176.46s  user  발화 끝
-   177.46s  agent 발화 시작: [happy] It can feel that way, but it works! Our brains respo
-   177.46s  user  발화 끝
-   184.82s  user  발화 시작: Okay, okay. I'll give it a shot. Thanks, Hax.
-   184.82s  agent 발화 끝
-   187.82s  agent 발화 시작: You're very welcome, Ella. Remember, you've got this.
-   187.82s  user  발화 끝
-   190.50s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to meet you. I'm Vunax.
+     3.76s  user  발화 시작: Vunax… that’s an unusual name. What exactly does an accounta
+     3.76s  agent 발화 끝
+     9.61s  agent 발화 시작: Yeah, yeah.
+     9.61s  user  발화 끝
+    10.44s  agent 발화 시작: [happy] Well, I help you identify what’s keeping you up, the
+    10.44s  agent 발화 끝
+    24.23s  user  발화 시작: My evenings are… chaotic, honestly. Work often bleeds over, 
+    24.23s  agent 발화 끝
+    30.91s  agent 발화 시작: That’s very common! Unwinding is important, but sometimes wh
+    30.91s  user  발화 끝
+    42.60s  user  발화 시작: …But does that really work? I’ve tried those things before, 
+    42.60s  agent 발화 끝
+    50.54s  agent 발화 시작: It’s understandable you’re skeptical. It’s not just *what* y
+    50.54s  user  발화 끝
+    63.49s  user  발화 시작: Mm-hmm.
+    63.49s  agent 발화 끝
+    63.91s  agent 발화 시작: —and even just the mental stimulation keeps your brain activ
+    63.91s  user  발화 끝
+    73.93s  user  발화 시작: A screen curfew… Hmm. That sounds…difficult. But maybe worth
+    73.93s  agent 발화 끝
+    78.53s  user  발화 끝

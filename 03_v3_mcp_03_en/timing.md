@@ -4,91 +4,119 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Noa",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-06-16",
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-05-31",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is French."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in August."
+#       "date": "2026-05-10",
+#       "category": "schedule",
+#       "text": "User has a fully remote setup."
 #     },
 #     {
-#       "date": "2026-04-16",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-05-07",
+#       "category": "skill",
+#       "text": "User is a complete beginner at beekeeping."
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     },
 #     {
 #       "date": "2026-04-01",
-#       "category": "home",
-#       "text": "User's home address is 357 Maple Drive."
+#       "category": "child",
+#       "text": "User has a child named Hana, age 8."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-02-21",
+#       "category": "employer",
+#       "text": "User works at a research institute."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "category": "airline",
+#       "text": "User usually flies with Singapore Airlines."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-09",
+#       "date": "2026-06-23",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-04",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-25",
+#       "title": "Booking a moving company",
+#       "bullets": [
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m hoping to book a therapy sessi | S2 Yeah, it is. Do you know any child | S3 Ms. Sharma sounds good. Can you se | S4 Perfect, thank you! That’s a huge 
 
-     0.00s  user  발화 시작: I’m hoping to book a therapy session for my son, Leo. He’s b
-     6.98s  agent 발화 시작: Yeah.
-     6.98s  user  발화 끝
-     7.32s  agent 발화 시작: [happy] I understand, that can be really hard on a little on
-     7.32s  agent 발화 끝
-    13.64s  user  발화 시작: Yeah, it is. Do you know any child psychologists who take ne
-    13.64s  agent 발화 끝
-    17.96s  agent 발화 시작: Uh-huh.
-    17.96s  user  발화 끝
-    17.97s  <ret> 발화 (turn5 첫 프레임)
-    18.29s  agent 발화 시작: <ret> There are a couple of child psychologists with opening
-    18.29s  agent 발화 끝
-    18.33s  ⚡SPAN 주입 [d'=0.37s / d_lead=10.31s]: (tool result) {"providers": [{"name": "Dr. Evelyn Reed", "specialty": 
-    28.60s  user  발화 시작: Mhm.
-    28.60s  agent 발화 끝
-    28.94s  agent 발화 시작: Ms. Sharma's availability might be easier to fit into a scho
-    28.94s  user  발화 끝
-    32.93s  user  발화 시작: Ms. Sharma sounds good. Can you see if she has anything open
-    32.93s  agent 발화 끝
-    37.24s  <ret> 발화 (turn9 첫 프레임)
-    37.58s  agent 발화 시작: <ret> [curious] Absolutely. I’ve booked an appointment for L
-    37.58s  user  발화 끝
-    37.83s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.65s]: (tool result) {"appointment id": "AS7892", "provider": "Ms. Anya Sharm
-    47.23s  user  발화 시작: Mhm.
-    47.23s  agent 발화 끝
-    47.56s  user  발화 시작: Perfect, thank you! That’s a huge weight off my mind.
-    47.56s  user  발화 끝
-    50.89s  agent 발화 시작: [sigh] You’re very welcome. Remember, acknowledging Leo’s fe
-    50.89s  user  발화 끝
-    57.87s  agent 발화 끝
+     0.00s  user  발화 시작: I'd like to get four tickets to see the musical Chicago in S
+     4.68s  <ret> 발화 (turn1 첫 프레임)
+     5.03s  agent 발화 시작: <ret> [happy] Okay, I've got four tickets to see Chicago in 
+     5.03s  user  발화 끝
+     5.62s  ⚡SPAN 주입 [d'=0.94s / d_lead=8.50s]: (tool result) Confirmation: Chicago, Seattle, 2024-08-20, 4 tickets, o
+    13.53s  user  발화 시작: Yeah, yeah.
+    13.53s  agent 발화 끝
+    14.16s  user  발화 시작: Yes, that's perfect! Thank you.
+    14.16s  user  발화 끝
+    15.73s  agent 발화 시작: You're very welcome! Planning something fun is a great way t
+    15.73s  user  발화 끝
+    22.97s  user  발화 시작: Yeah.
+    22.97s  agent 발화 끝
+    23.29s  user  발화 시작: Actually, yes, I am. I'm going to be there for a week.
+    23.29s  user  발화 끝
+    27.06s  agent 발화 시작: Mm-hmm.
+    27.06s  user  발화 끝
+    27.38s  agent 발화 시작: That sounds lovely! Seattle is a wonderful city. I can help 
+    27.38s  agent 발화 끝
+    37.13s  agent 발화 끝

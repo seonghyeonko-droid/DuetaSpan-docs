@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "혜슬",
+#     "name": "진람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,124 +13,145 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-29",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-04-03",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-03-31",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
 #     },
 #     {
-#       "date": "2026-04-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-03-18",
+#       "category": "anniversary",
+#       "text": "User's anniversary is December 9."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-02-16",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "learning",
+#       "text": "User is taking an online data-science course."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is grilled salmon."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "pet",
+#       "text": "User has a Border Collie named Ziggy."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "partner",
+#       "text": "User's partner is named Ava."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-18",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-09",
+#       "title": "Planning a dinner party",
+#       "bullets": [
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 블랙 팬서 영화 권리, 누가 가지고 있는지 알 수 있을까 | S2 아, 그 영화도 봤어요! 완전 다른 느낌이었어요. | S3 블랙 팬서 주인공… | S4 아, '사십이'는 야구 영화였죠?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 베아르님. 요즘 돈 관리가 좀 어렵네요. | S2 아, 그러셨어요? 저는 다음 주에 서울에 가려고 하는데… | S3 광장시장이랑 명동교자는 가봤는데, 바토스 어반 타코는 처음 듣 | S4 감사합니다. 혹시 서울에서 저렴한 숙소도 추천해 주실 수 있을
 
-     0.00s  user  발화 시작: 혹시 블랙 팬서 영화 권리, 누가 가지고 있는지 알 수 있을까요?
-     5.20s  <ret> 발화 (turn1 첫 프레임)
-     5.60s  agent 발화 시작: <ret> 블랙 팬서 영화 권리는 마블 스튜디오가 가지고 있습니다. 좋은 영화죠?
-     5.60s  user  발화 끝
-     6.12s  ⚡SPAN 주입 [d'=0.92s / d_lead=5.09s]: Marvel Studios owns the rights to the Black Panther movie.
-    10.68s  user  발화 시작: 네, 정말 재미있었어요. 마블 영화는 다 재미있는 것 같아요.
-    10.68s  agent 발화 끝
-    15.26s  agent 발화 시작: 마블 영화를 좋아하시는군요! 취향이 정말 좋으세요. 혹시 다른 마블 영화도 즐겨 보시나요?
-    15.26s  user  발화 끝
-    21.37s  user  발화 시작: 음… 가디언즈 오브 갤럭시도 좋아하는데, 그 영화는 누가 만들었나요?
-    21.37s  agent 발화 끝
-    25.38s  <ret> 발화 (turn5 첫 프레임)
-    25.95s  agent 발화 시작: <ret> 가디언즈 오브 갤럭시의 감독은 제임스 건입니다. 독특한 연출 스타일이 인상적이죠.
-    25.95s  user  발화 끝
-    26.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.09s]: James Gunn directed Guardians of the Galaxy.
-    31.04s  user  발화 시작: 맞아요, 스타일이 특이하죠. 혹시 그 감독 다른 작품도 있나요?
-    31.04s  agent 발화 끝
-    35.26s  <ret> 발화 (turn7 첫 프레임)
-    35.61s  agent 발화 시작: <ret> 제임스 건 감독은 '수어사이드 스쿼드'도 연출했습니다. 다재다능한 감독이시네요.
-    35.61s  user  발화 끝
-    35.97s  ⚡SPAN 주입 [d'=0.71s / d_lead=4.07s]: James Gunn also directed The Suicide Squad.
-    39.68s  user  발화 시작: 네.
-    39.68s  agent 발화 끝
-    40.19s  user  발화 시작: 아, 그 영화도 봤어요! 완전 다른 느낌이었어요.
-    40.19s  user  발화 끝
-    43.75s  agent 발화 시작: 영화마다 분위기가 다르다는 점이 매력적이죠. 감독의 개성이 잘 드러나는 것 같아요.
-    43.75s  user  발화 끝
-    49.35s  user  발화 시작: 맞아요. 그런데 블랙 팬서, 속편은 언제 나오나요?
-    49.35s  agent 발화 끝
-    52.59s  <ret> 발화 (turn12 첫 프레임)
-    52.91s  agent 발화 시작: <ret> '블랙 팬서: 와칸다 포에버'는 이천이십이년 십일월 십일일에 개봉했습니다.
-    52.91s  user  발화 끝
-    53.69s  ⚡SPAN 주입 [d'=1.11s / d_lead=4.07s]: Black Panther: Wakanda Forever was released on November 11, 2022.
-    56.98s  user  발화 시작: 아, 벌써 나왔었군요. 아직 못 봤네요.
-    56.98s  agent 발화 끝
-    60.04s  agent 발화 시작: 아직 못 보셨다니, 꼭 한번 보시길 추천드려요. 감동적이고 멋진 영화입니다.
-    60.04s  user  발화 끝
-    65.12s  user  발화 시작: 네, 시간 내서 꼭 봐야겠어요. —
-    65.12s  agent 발화 끝
-    68.18s  user  발화 시작: 블랙 팬서 주인공…
-    68.18s  user  발화 끝
-    69.70s  user  발화 시작: …채드윅 보스먼 배우는 어떻게 지내세요?
-    69.70s  user  발화 끝
-    72.25s  agent 발화 시작: 네.
-    72.25s  user  발화 끝
-    72.65s  <ret> 발화 (turn19 첫 프레임)
-    72.75s  agent 발화 시작: <ret> 안타깝게도 채드윅 보스먼 배우는 이천이십년 팔월 이십팔일에 대장암으로 세상을 떠나셨습니다. 사년간
-    72.75s  agent 발화 끝
-    73.91s  ⚡SPAN 주입 [d'=1.26s / d_lead=6.61s]: Chadwick Boseman passed away on August 28, 2020, after a private four-
-    79.37s  user  발화 시작: 네.
-    79.37s  agent 발화 끝
-    79.88s  agent 발화 시작: 정말 슬픈 소식이죠. 그의 연기는 영원히 기억될 겁니다.
-    79.88s  user  발화 끝
-    83.95s  user  발화 시작: 예.
-    83.95s  agent 발화 끝
-    84.46s  user  발화 시작: 네, 정말 안타깝네요. 좋은 배우를 잃은 것 같아요.
-    84.46s  user  발화 끝
-    88.53s  agent 발화 시작: 저도 그렇게 생각합니다. 그의 연기는 많은 사람들에게 영감을 주었습니다.
-    88.53s  user  발화 끝
-    93.11s  user  발화 시작: 혹시 그 배우 출연한 다른 영화도 있을까요?
-    93.11s  agent 발화 끝
-    96.55s  <ret> 발화 (turn26 첫 프레임)
-    96.67s  agent 발화 시작: <ret> 채드윅 보스먼 배우는 '사십이', '겟 온 업', '마샬' 같은 영화에도 출연했습니다. 연기 스펙
-    96.67s  user  발화 끝
-    97.69s  ⚡SPAN 주입 [d'=1.15s / d_lead=7.12s]: Chadwick Boseman also starred in films such as 42, Get on Up, and Mars
-   103.79s  user  발화 시작: 네.
-   103.79s  agent 발화 끝
-   104.30s  user  발화 시작: 아, '사십이'는 야구 영화였죠?
-   104.30s  user  발화 끝
-   106.33s  agent 발화 시작: 네, 맞습니다. 야구 선수 재키 로빈슨의 실화를 바탕으로 한 영화입니다.
-   106.33s  user  발화 끝
-   111.42s  user  발화 시작: 재밌어 보여요. 나중에 한번 찾아봐야겠네요.
-   111.42s  agent 발화 끝
-   113.97s  agent 발화 시작: 꼭 한번 보시길 바랍니다. 감동적인 영화입니다.
-   113.97s  user  발화 끝
-   117.02s  user  발화 시작: 음.
-   117.02s  agent 발화 끝
-   117.53s  user  발화 시작: 네, 알겠습니다. 감사합니다.
-   117.53s  user  발화 끝
-   119.05s  agent 발화 시작: 천만에요. 언제든지 궁금한 점이 있으면 저에게 말씀해주세요.
-   119.05s  user  발화 끝
-   122.61s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 베아르님. 요즘 돈 관리가 좀 어렵네요.
+     3.93s  agent 발화 시작: 안녕하세요. 돈 관리에 어려움을 느끼시는군요. 제가 도와드릴 수 있어요.
+     3.93s  user  발화 끝
+     8.97s  user  발화 시작: 음… 혹시 성모 마리아의 이름 축일이 언제인지 아세요?
+     8.97s  agent 발화 끝
+    13.33s  <ret> 발화 (turn3 첫 프레임)
+    13.46s  agent 발화 시작: <ret> 성모 마리아 이름 축일은 구월 십이일에 기념됩니다. 특별한 이유가 있으신가요?
+    13.46s  user  발화 끝
+    14.10s  ⚡SPAN 주입 [d'=0.78s / d_lead=5.61s]: The Feast of the Most Holy Name of Mary is celebrated on September 12.
+    19.07s  user  발화 시작: 아, 오늘따라 차가 엄청 막히네.
+    19.07s  agent 발화 끝
+    21.88s  agent 발화 시작: 요즘 물가가 많이 올라서…
+    21.88s  user  발화 끝
+    24.12s  user  발화 시작: 아, 그러셨어요? 저는 다음 주에 서울에 가려고 하는데…
+    24.12s  agent 발화 끝
+    28.61s  agent 발화 시작: 서울에 방문하시는군요.
+    28.61s  user  발화 끝
+    29.73s  user  발화 시작: 네, 서울에서 괜찮은 식당을 좀 추천해 주실 수 있을까요?
+    29.73s  agent 발화 끝
+    34.78s  agent 발화 시작: 네.
+    34.78s  user  발화 끝
+    35.20s  <ret> 발화 (turn10 첫 프레임)
+    35.34s  agent 발화 시작: <ret> 서울에는 광장시장, 명동교자, 바토스 어반 타코 같은 식당들이 있어요. 가격대는 보통 정도입니다.
+    35.34s  agent 발화 끝
+    36.66s  ⚡SPAN 주입 [d'=1.46s / d_lead=6.73s]: (tool result) Restaurants found in Seoul: Gwangjang Market (Korean, $$
+    42.07s  user  발화 시작: 광장시장이랑 명동교자는 가봤는데, 바토스 어반 타코는 처음 듣는 곳이네요.
+    42.07s  agent 발화 끝
+    47.12s  agent 발화 시작: 네.
+    47.12s  user  발화 끝
+    47.68s  agent 발화 시작: 바토스 어반 타코는 멕시코 음식 전문점이에요. 젊은 층에게 인기가 많습니다.
+    47.68s  agent 발화 끝
+    53.29s  user  발화 시작: 멕시코 음식이 당기네요. 혹시 거기로 가는 버스 시간표를 알아봐 주실 수 있을까요? 지금 제 위치는 강남역이
+    53.29s  agent 발화 끝
+    61.97s  <ret> 발화 (turn15 첫 프레임)
+    62.26s  agent 발화 시작: <ret> 강남역에서 바토스 어반 타코 근처까지 사백칠십번 버스가 십오분 간격으로 운행하고, 예상 소요 시간
+    62.26s  user  발화 끝
+    63.06s  ⚡SPAN 주입 [d'=1.09s / d_lead=7.85s]: (tool result) Bus route 470 from Gangnam Station to near Vatos Urban T
+    70.12s  user  발화 시작: 네.
+    70.12s  agent 발화 끝
+    70.68s  user  발화 시작: 사십오분이면 괜찮겠네요. 버스 티켓을 예매해 주실 수 있나요?
+    70.68s  user  발화 끝
+    75.16s  agent 발화 시작: 네.
+    75.16s  user  발화 끝
+    75.40s  <ret> 발화 (turn19 첫 프레임)
+    75.73s  agent 발화 시작: <ret> 버스 티켓 예매 완료되었습니다. 사백칠십번 버스, 열네시 삼십분 출발, 확인번호는 팔 칠 육 오 
+    75.73s  agent 발화 끝
+    76.17s  ⚡SPAN 주입 [d'=0.77s / d_lead=10.10s]: (tool result) Bus ticket confirmed: route 470, departure 14:30, confir
+    85.82s  user  발화 시작: 아.
+    85.82s  agent 발화 끝
+    86.38s  user  발화 시작: 감사합니다. 혹시 서울에서 저렴한 숙소도 추천해 주실 수 있을까요?
+    86.38s  user  발화 끝
+    91.43s  agent 발화 시작: 서울에는 다양한 가격대의 숙소가 있습니다. 어떤 스타일의 숙소를 선호하시나요?
+    91.43s  user  발화 끝
+    96.48s  user  발화 시작: 네.
+    96.48s  agent 발화 끝
+    97.04s  user  발화 시작: 음… 깨끗하고 안전한 곳이면 좋겠어요. 가격은 저렴한 곳으로 부탁드립니다.
+    97.04s  user  발화 끝
+   101.54s  <ret> 발화 (turn25 첫 프레임)
+   102.09s  agent 발화 시작: <ret> 서울에서 저렴한 숙소로는 즈집 게스트하우스, 케이 게스트하우스 토홈, 김치 게스트하우스 등이 있습
+   102.09s  user  발화 끝
+   102.60s  ⚡SPAN 주입 [d'=1.06s / d_lead=9.54s]: (tool result) Budget-friendly hotels in Seoul: Zzzip Guesthouse (ratin
+   111.63s  agent 발화 끝

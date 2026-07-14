@@ -4,106 +4,126 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "윤민",
+#     "name": "현희",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-06-16",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 26°C."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-05",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
 #     },
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-06-01",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2026-05-28",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Maine Coon named Simba."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-01",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is an iced americano."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-03-03",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "child",
+#       "text": "User has a child named Rin, age 9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-18",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "title": "Researching a used car",
+#       "date": "2026-02-11",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "title": "Adopting a rescue dog",
+#       "bullets": [
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 안녕하세요. | S2 그냥… 먼저 다가가기가 어렵고, 뭘 말해야 할지도 모르겠어요. | S3 요즘은 집에서 발효 식품을 만들면서 시간을 보내고 있어요. | S4 … 부산에 발효 식품 만드는 모임이 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 지금 몇 시예요? | S2 아, 맞아요. 그때 예약했었죠. 혹시 심바는 잘 지내요? | S3 그래요. 근데 요즘 잠을 잘 못 자요. | S4 한번 해볼게요. 감사합니다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 윤민님! 저는 여러분의 상담사 마크스입니다.
-     2.66s  user  발화 시작: 어, 안녕하세요.
-     2.66s  agent 발화 끝
-     3.54s  agent 발화 시작: 혹시 오늘 어떤 점이 고민이신가요? 친구 관계나 사회생활에 대해 편하게 말씀해주세요.
-     3.54s  user  발화 끝
-     8.41s  user  발화 시작: 응.
-     8.41s  agent 발화 끝
-     8.86s  user  발화 시작: 음… 요즘 새로운 사람을 사귀는 게 좀 어렵더라고요.
-     8.86s  user  발화 끝
-    12.40s  agent 발화 시작: 새로운 사람을 사귀는 게 어려우시군요. 혹시 어떤 상황에서 어려움을 느끼시는지 좀 더 자세히 말씀해 주시겠어
-    12.40s  user  발화 끝
-    19.04s  user  발화 시작: 그냥… 먼저 다가가기가 어렵고, 뭘 말해야 할지도 모르겠어요.
-    19.04s  agent 발화 끝
-    22.58s  agent 발화 시작: 먼저 다가가기 어렵고, 무슨 말을 해야 할지 모르는 거군요. 많은 분들이 비슷한 어려움을 느끼시는 것 같아요
-    22.58s  user  발화 끝
-    29.67s  user  발화 시작: 그치.
-    29.67s  agent 발화 끝
-    30.11s  agent 발화 시작: 혹시 예전에 친구를 잘 사귀었던 경험이 있으신가요? 그땐 어떻게 하셨는지 떠올려 보시는 것도 도움이 될 수 
-    30.11s  user  발화 끝
-    38.52s  user  발화 시작: 어… 대학교 동아리에서 활동할 때 친해진 친구들이 있었는데, 그때는 공통 관심사가 있어서 쉽게 다가갈 수 있
-    38.52s  agent 발화 끝
-    46.49s  agent 발화 시작: 대학교 동아리에서 공통 관심사 덕분에 쉽게 친해지셨군요. 지금은 어떤 취미나 관심사가 있으신가요?
-    46.49s  user  발화 끝
-    51.80s  user  발화 시작: 요즘은 집에서 발효 식품을 만들면서 시간을 보내고 있어요.
-    51.80s  agent 발화 끝
-    55.08s  <ret> 발화 (turn13 첫 프레임)
-    55.35s  agent 발화 시작: <ret> 집에서 발효 식품을 만드시는군요! 꽤 흥미로운 취미네요. 혹시 그런 모임에 참여해 보신 적은 있으
-    55.35s  user  발화 끝
-    56.58s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.20s]: [2026-02-21] User is into home fermentation.
-    61.55s  agent 발화 시작: 발효 식품에 관심 있는 분들이 모이는 커뮤니티나 강좌를 찾아보시는 것도 좋은 방법일 것 같아요.
-    61.55s  agent 발화 끝
-    67.74s  user  발화 시작: 응.
-    67.74s  agent 발화 끝
-    68.19s  user  발화 시작: 아, 그런 게 있어요? —
-    68.19s  user  발화 끝
-    70.40s  user  발화 시작: … 부산에 발효 식품 만드는 모임이 있을까요?
-    70.40s  user  발화 끝
-    73.24s  <ret> 발화 (turn18 첫 프레임)
-    73.50s  agent 발화 시작: <ret> 부산 해운대구 좌동에 “숨쉬
-    73.50s  user  발화 끝
-    73.85s  ⚡SPAN 주입 [d'=0.61s / d_lead=1.77s]: (tool result) {"restaurants": [{"name": "숨쉬는 발효", "address": "부산 해운대구 
-    75.27s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 현희님! 저는 에루나예요. 데이트와 관계에 대해 도와드리는 상담사랍니다.
+     4.70s  user  발화 시작: 응.
+     4.70s  agent 발화 끝
+     5.22s  user  발화 시작: 어… 안녕하세요. 지금 몇 시예요?
+     5.22s  user  발화 끝
+     7.34s  <ret> 발화 (turn3 첫 프레임)
+     7.84s  agent 발화 시작: <ret> 지금 서울 시간으로 오후 두시 삼십오분이에요. 편안한 오후 보내고 계신가요?
+     7.84s  user  발화 끝
+     8.84s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.22s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul rig
+    13.06s  user  발화 시작: 음.
+    13.06s  agent 발화 끝
+    13.58s  user  발화 시작: 네, 그냥 그래요. 저번에 치과 예약했던 거 기억하세요?
+    13.58s  user  발화 끝
+    17.76s  agent 발화 시작: 네.
+    17.76s  user  발화 끝
+    17.78s  <ret> 발화 (turn7 첫 프레임)
+    18.29s  agent 발화 시작: <ret> 네, 기억해요. 다음 주 화요일 아침에 한 선생님으로 예약하셨었죠. 혹시 예약 시간 확인해 드릴까
+    18.29s  agent 발화 끝
+    19.19s  ⚡SPAN 주입 [d'=1.41s / d_lead=7.31s]: [2026-04-18] Past chat — Booked a dentist appointment: asked for an ea
+    25.60s  user  발화 시작: 아, 맞아요. 그때 예약했었죠. 혹시 심바는 잘 지내요?
+    25.60s  agent 발화 끝
+    29.52s  <ret> 발화 (turn9 첫 프레임)
+    29.78s  agent 발화 시작: <ret> 네, 심바는 아주 잘 지내고 있어요! 털 관리는 좀 힘든데, 애교가 많아서 힘든 것도 잊게 돼요.
+    29.78s  user  발화 끝
+    31.02s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.36s]: [2026-05-28] User has a Maine Coon named Simba.
+    38.14s  user  발화 시작: 다행이다. 저는 요즘 집에서 발효 식품을 만들고 있어요.
+    38.14s  agent 발화 끝
+    42.32s  agent 발화 시작: 아, 발효 식품을 직접 만드신다니 정말 대단하시네요! 건강에도 좋고, 직접 만들면 더 맛있을 것 같아요.
+    42.32s  user  발화 끝
+    50.16s  user  발화 시작: 진짜?
+    50.16s  agent 발화 끝
+    50.68s  user  발화 시작: 그래요. 근데 요즘 잠을 잘 못 자요.
+    50.68s  user  발화 끝
+    54.34s  agent 발화 시작: 잠을 잘 못 주무신다니 걱정되네요. 혹시 잠들기 전에 스트레스를 많이 받으시는 편이세요? 아니면 다른 이유가
+    54.34s  user  발화 끝
+    62.70s  user  발화 시작: 그냥… 생각이 많아져서요.
+    62.70s  agent 발화 끝
+    64.27s  agent 발화 시작: 생각이 많아지시면 잠들기가 어렵죠. 혹시 잠들기 전에 명상이나 가벼운 스트레칭을 해보시는 건 어떠세요? 도움
+    64.27s  user  발화 끝
+    73.15s  user  발화 시작: 한번 해볼게요. 감사합니다.
+    73.15s  agent 발화 끝
+    74.72s  agent 발화 시작: 천만에요. 언제든지 필요하시면 저를 찾아주세요. 현희님의 편안한 밤을 응원할게요.
+    74.72s  user  발화 끝
+    79.42s  agent 발화 끝

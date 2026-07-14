@@ -4,97 +4,106 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "연온",
+#     "name": "하연",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2026-02-24",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-02-15",
+#       "category": "pet",
+#       "text": "User has a Labrador named Cooper."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2025-12-16",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-12-05",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-12-04",
+#       "category": "streaming",
+#       "text": "User subscribes to a shared Netflix family plan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Researching a used car",
+#       "date": "2026-03-17",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-19",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 서울에서 분위기 좋은 이탈리아 레스토랑 좀 찾아줘. 근데 | S2 …아, 그게 아니라… 그냥 집에서 영화 볼까? | S3 그럼… 이번 주말에 볼 만한 코미디 영화 좀 추천해 줘. | S4 '극한직업' 예매해 줘. 이번 주 토요일 오후 두 시로.
+# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 뭐 먹을까? 맛있는 거 먹고 싶어. | S2 서면이 어디야? | S3 아, 그렇구나. 그럼 서면에서 가장 인기 있는 닭갈비집은 어디 | S4 예약해 줘. 이번 주 토요일 저녁 일곱시에.
 
-     0.00s  user  발화 시작: 음… 서울에서 분위기 좋은 이탈리아 레스토랑 좀 찾아줘. 근데 잠깐만…
-     4.42s  user  발화 시작: …아, 그게 아니라… 그냥 집에서 영화 볼까?
-     4.42s  user  발화 끝
-     7.51s  agent 발화 시작: 영화를 보시는군요. 어떤 영화를 찾으시나요?
-     7.51s  user  발화 끝
-     9.72s  agent 발화 시작: 영화 정보를 찾을 수 없습니다. 혹시 다른 영화를 찾아볼까요?
-     9.72s  agent 발화 끝
-    13.69s  user  발화 시작: 네.
-    13.69s  agent 발화 끝
-    14.14s  user  발화 시작: 그럼… 이번 주말에 볼 만한 코미디 영화 좀 추천해 줘.
-    14.14s  user  발화 끝
-    18.30s  <ret> 발화 (turn6 첫 프레임)
-    18.55s  agent 발화 시작: <ret> 이번 주말에 볼 만한 코미디 영화는 '극한직업'과 '수상한 변호사 우영우'가 있습니다. 평점은 각
-    18.55s  user  발화 끝
-    18.79s  ⚡SPAN 주입 [d'=0.48s / d_lead=8.39s]: (tool result) {"movies": [{"title": "극한직업", "year": 2019, "rating": 8.
-    26.95s  user  발화 시작: 네.
-    26.95s  agent 발화 끝
-    27.39s  user  발화 시작: '극한직업' 예매해 줘. 이번 주 토요일 오후 두 시로.
-    27.39s  user  발화 끝
-    31.36s  agent 발화 시작: 네네.
-    31.36s  user  발화 끝
-    31.52s  <ret> 발화 (turn10 첫 프레임)
-    31.81s  agent 발화 시작: <ret> '극한직업' 영화, 이번 주 토요일 오후 두 시로 예매 완료되었습니다. 확인 번호는 에이 엑스 칠
-    31.81s  agent 발화 끝
-    32.11s  ⚡SPAN 주입 [d'=0.59s / d_lead=8.83s]: (tool result) {"confirmation id": "AX729B", "movie title": "극한직업", "da
-    40.64s  agent 발화 시작: 즐거운 시간 보내세요!
-    40.64s  agent 발화 끝
-    41.97s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 저녁에 뭐 먹을까? 맛있는 거 먹고 싶어.
+     3.83s  agent 발화 시작: 네.
+     3.83s  user  발화 끝
+     4.30s  agent 발화 시작: 어떤 종류의 음식이 좋으세요? 혹시 특별히 생각나는 게 있으신가요?
+     4.30s  agent 발화 끝
+     8.61s  user  발화 시작: 글쎄… 매운 게 당기는 것 같아.
+     8.61s  agent 발화 끝
+    11.23s  <ret> 발화 (turn4 첫 프레임)
+    11.48s  agent 발화 시작: <ret> 매운 음식이요? 그럼 닭갈비는 어떠세요? 제가 근처 맛집을 찾아볼까요?
+    11.48s  user  발화 끝
+    11.71s  ⚡SPAN 주입 [d'=0.48s / d_lead=4.30s]: (tool result) There are many Korean restaurants in Busan that serve sp
+    15.78s  agent 발화 시작: 부산 서면에 매콤한 닭갈비 맛집이 많이 있어요.
+    15.78s  agent 발화 끝
+    19.13s  user  발화 시작: 서면이 어디야?
+    19.13s  agent 발화 끝
+    20.08s  agent 발화 시작: 서면은 부산의 중심 상업 지구예요. 교통이 편리하고 맛집이 많기로 유명하죠.
+    20.08s  user  발화 끝
+    24.86s  user  발화 시작: 아, 그렇구나. 그럼 서면에서 가장 인기 있는 닭갈비집은 어디야?
+    24.86s  agent 발화 끝
+    29.17s  agent 발화 시작: 그렇죠.
+    29.17s  user  발화 끝
+    29.65s  agent 발화 시작: 잠시만요, 서면에서 가장 인기 있는 닭갈비집을 찾아보고 있습니다—
+    29.65s  agent 발화 끝
+    33.47s  user  발화 시작: … 혹시 혼자 먹기에도 괜찮은 곳이야?
+    33.47s  agent 발화 끝
+    36.03s  <ret> 발화 (turn12 첫 프레임)
+    36.34s  agent 발화 시작: <ret> “서면 닭갈비 맛집”은 평점이 사 점 오점이고 혼자 먹기에도 좋다고 합니다. 주소는 부산시 부산진
+    36.34s  user  발화 끝
+    36.62s  ⚡SPAN 주입 [d'=0.59s / d_lead=8.61s]: Seomyeon Dakgalbi Matjib has a rating of 4.5 stars and is known for be
+    44.95s  user  발화 시작: 그치.
+    44.95s  agent 발화 끝
+    45.43s  agent 발화 시작: 혹시 다른 메뉴도 보고 싶으신가요? 아니면 바로 예약해 드릴까요?
+    45.43s  user  발화 끝
+    49.73s  user  발화 시작: 예약해 줘. 이번 주 토요일 저녁 일곱시에.
+    49.73s  agent 발화 끝
+    52.96s  <ret> 발화 (turn16 첫 프레임)
+    53.08s  agent 발화 시작: <ret> 네, 이번 주 토요일 저녁 일곱시에 한명으로 예약이 완료되었습니다. 확인 번호는 팔 칠 지 사 에
+    53.08s  user  발화 끝
+    54.04s  ⚡SPAN 주입 [d'=1.07s / d_lead=8.13s]: (tool result) Reservation confirmed for 1 person at Seomyeon Dakgalbi 
+    61.20s  agent 발화 시작: 즐거운 저녁 식사 되세요!
+    61.20s  agent 발화 끝
+    63.12s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "다안",
+#     "name": "주정",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,85 +12,134 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-05-22",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-04-22",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Mina."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-03-28",
+#       "category": "airline",
+#       "text": "User usually flies with Emirates."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-03-26",
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2025-12-15",
+#       "date": "2026-02-01",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Jisoo."
+#     },
+#     {
+#       "date": "2026-01-16",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-31",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-28",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-22",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-08",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-27",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 그런데 정확히 뭘 도와주는 사람이세요? | S2 …탄수화물은 좀 자제해야 하는 거 아니에요? 요즘은 탄수화물이 | S3 저도 현미밥을 먹으려고 노력하고 있는데, 왠지 맛이 없어서 잘 | S4 알겠습니다. 운동은… 사실 운동을 정말 싫어해요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 다안님. 저는 미스예요. 편안한 휴식과 여행을 계획하는 걸 도와드리는 웰니스 코치랍니다.
-     6.15s  user  발화 시작: 네.
-     6.15s  agent 발화 끝
-     6.66s  user  발화 시작: 미스라니, 이름이 독특하네요. 여행 계획은 어떻게 도와주시는 건가요?
-     6.66s  user  발화 끝
-    10.76s  agent 발화 시작: 네.
-    10.76s  user  발화 끝
-    11.27s  agent 발화 시작: 주로 여행 자체의 흐름을 부드럽게 만드는 데 집중해요. 짐을 가볍게 싸는 방법, 일정에 여유를 두는 법, 시
-    11.27s  agent 발화 끝
-    23.05s  user  발화 시작: 그렇죠.
-    23.05s  agent 발화 끝
-    23.57s  agent 발화 시작: 여행은 설렘과 동시에 약간의 스트레스를 동반하잖아요. 너무 많은 걸 넣으려고 욕심내기보다는, 정말 중요한 것
-    23.57s  user  발화 끝
-    32.28s  user  발화 시작: 네.
-    32.28s  agent 발화 끝
-    32.79s  user  발화 시작: 짐을 싸는 팁이 제일 궁금하네요. 저는 항상 짐이 너무 많아요.
-    32.79s  user  발화 끝
-    37.91s  agent 발화 시작: 네.
-    37.91s  user  발화 끝
-    38.42s  agent 발화 시작: 짐을 줄이는 가장 좋은 방법은 옷을 여러 겹 겹쳐 입는 거예요. 그리고 돌돌 말아서 공간을 활용하면 훨씬 더
-    38.42s  agent 발화 끝
-    52.77s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 주정님. 저는 니스예요. 건강과 일상 습관을 함께 만들어가는 동반자라고 할까요? 편안하게 이야기
+     7.13s  user  발화 시작: 네.
+     7.13s  agent 발화 끝
+     7.64s  user  발화 시작: 그런데 정확히 뭘 도와주는 사람이세요?
+     7.64s  user  발화 끝
+    10.18s  agent 발화 시작: [happy] 저는 주정님께서 건강한 식단을 짜거나, 물을 충분히 마시는 습관을 들이거나, 꾸준히 운동하는 
+    10.18s  user  발화 끝
+    19.86s  user  발화 시작: 그렇죠.
+    19.86s  agent 발화 끝
+    20.37s  user  발화 시작: 음… 요즘 계속 피곤하고, 뭘 먹어야 할지 감이 안 와서 고민이에요.
+    20.37s  user  발화 끝
+    25.97s  agent 발화 시작: 피로감을 느끼시는군요. 균형 잡힌 식단은 에너지 수준을 높이는 데 정말 중요해요. 탄수화물, 단백질, 지방을
+    25.97s  user  발화 끝
+    35.13s  user  발화 시작: …탄수화물은 좀 자제해야 하는 거 아니에요? 요즘은 탄수화물이 제일 나쁘다고 하던데.
+    35.13s  agent 발화 끝
+    40.73s  agent 발화 시작: 아.
+    40.73s  user  발화 끝
+    41.24s  agent 발화 시작: 탄수화물에 대한 오해가 있으신 것 같아요. 탄수화물은 우리 몸의 주요 에너지원이고, 꼭 나쁜 것은 아니에요.
+    41.24s  agent 발화 끝
+    54.48s  user  발화 시작: 아, 그렇군요. 그럼 어떤 종류의 탄수화물을 먹는 게 좋을까요?
+    54.48s  agent 발화 끝
+    59.06s  agent 발화 시작: [curious] 통곡물인 현미나 귀리, 그리고 고구마나 감자 같은 채소류가 좋아요. 흰 쌀밥이나 밀가루 음
+    59.06s  user  발화 끝
+    67.71s  user  발화 시작: 그렇죠.
+    67.71s  agent 발화 끝
+    68.22s  user  발화 시작: 저도 현미밥을 먹으려고 노력하고 있는데, 왠지 맛이 없어서 잘 안 돼요.
+    68.22s  user  발화 끝
+    73.82s  agent 발화 시작: 현미밥에 콩이나 채소를 섞어보시는 건 어떠세요? 아니면 약간의 버섯을 넣어도 맛있답니다. 밥을 지을 때 다시
+    73.82s  user  발화 끝
+    84.01s  user  발화 시작: 다시마… 좋은 방법이네요. 한번 시도해 봐야겠어요. 물은 얼마나 마셔야 할까요?
+    84.01s  agent 발화 끝
+    89.10s  agent 발화 시작: [sigh] 하루에 일 점 오리터에서 이리터 정도가 적당해요. 하지만 활동량이나 기온에 따라 달라질 수 있으
+    89.10s  user  발화 끝
+   100.81s  user  발화 시작: 알겠습니다. 운동은… 사실 운동을 정말 싫어해요.
+   100.81s  agent 발화 끝
+   103.86s  agent 발화 시작: [laugh] 운동을 싫어하시는 분들이 많으세요. 처음부터 무리하게 시작할 필요는 없어요. 짧은 산책이나 스
+   103.86s  user  발화 끝
+   114.05s  user  발화 시작: 산책은 괜찮을 것 같아요. 집 근처에 공원이 있거든요.
+   114.05s  agent 발화 끝
+   118.12s  agent 발화 시작: 아주 좋은 생각이에요. 자연 속에서 걷는 것은 몸과 마음 모두에 도움이 된답니다. 햇볕을 쬐면서 비타민 D도
+   118.12s  user  발화 끝
+   127.79s  agent 발화 끝

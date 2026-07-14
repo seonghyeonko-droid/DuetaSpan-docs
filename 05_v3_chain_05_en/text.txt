@@ -1,78 +1,115 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Kiami, a encouraging and non-judgmental life coach who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Mior, a kind and steady supportive advisor who helps people with self-doubt and confidence. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Jordan",
+    "name": "Grace",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-17",
+      "date": "2026-04-29",
+      "category": "partner",
+      "text": "User's partner is named Kenji."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "airline",
+      "text": "User usually flies with Lufthansa."
+    },
+    {
+      "date": "2026-03-18",
+      "category": "dislike",
+      "text": "User can't stand cilantro."
+    },
+    {
+      "date": "2026-03-14",
+      "category": "work",
+      "text": "User works as a dentist."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "medication",
+      "text": "User takes insulin."
+    },
+    {
+      "date": "2026-01-23",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-20",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-01-13",
+      "category": "dish",
+      "text": "User's go-to comfort dish is bún chả."
     },
     {
-      "date": "2026-02-19",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-02-17",
+      "date": "2025-12-31",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is French."
     },
     {
-      "date": "2025-12-11",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
+      "date": "2025-12-09",
+      "category": "gym",
+      "text": "User has a gym membership near home."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
-      "title": "Setting up a home network",
+      "date": "2026-05-11",
+      "title": "Buying a gift for a parent",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
       ]
     },
     {
-      "date": "2026-04-11",
-      "title": "Researching a used car",
+      "date": "2026-04-18",
+      "title": "Booking a moving company",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "title": "Training for a 10K",
+      "bullets": [
+        "current pace is around 6 minutes per km",
+        "race is in November"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you tell me about the traffic in the area bounded by thirty four point zero five two two, negative one hundred eighteen point two four three seven, thirty four point zero seven two two, and negative one hundred eighteen point two six three ⟨ret@15.42s⟩ seven?
-[ 15.66s][moshi] «backchannel» Uh-huh.
-[ 16.01s][moshi] ⟦⚡SPAN@16.19s: (tool result) Traffic is currently moderate in that area of Los Angeles, California, with average speeds rangi⟧ [happy] Okay, I'm seeing moderate traffic in that area of Los Angeles, with speeds between twenty-five and thirty-five miles per hour. Would you like me to check for alternative routes?
-      CALL: {"function": "map_search_places", "arguments": {"query": "traffic in the area bounded by 34.0522, -118.2437, 34.0722, -118.2637"}}
-[ 26.45s][user ] Yes, please. What's the fastest way to get to Grand Central Market from there?
-[ 31.32s][moshi] «backchannel» Yeah.
-[ 31.67s][moshi] ⟨ret@31.48s⟩ ⟦⚡SPAN@31.61s: (tool result) The fastest route to Grand Central Market is via the 101 North, estimated travel time is 15-20 m⟧ The quickest way to Grand Central Market is heading north on the 101, which should take fifteen to twenty minutes for eight point two miles. It looks like a pretty straightforward drive.
-      CALL: {"function": "map_directions", "arguments": {"origin": "34.0522, -118.2437", "destination": "Grand Central Market"}}
-[ 42.81s][user ] That sounds good. Can you find me a highly-rated Korean restaurant near Grand Central Market?
-[ 48.03s][moshi] «backchannel» Yeah.
-[ 48.38s][moshi] ⟨ret@48.20s⟩ [curious] I ⟦⚡SPAN@49.37s: (tool result) Park's BBQ is a highly-rated Korean BBQ restaurant located at 955 S Vermont Ave, Los Angeles, CA⟧ found Park's BBQ, a Korean BBQ spot with a four point five star rating, at nine fifty-five South Vermont Avenue in Los Angeles. It's very popular!
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Grand Central Market", "cuisine": "Korean", "rating": "high"}}
+[  0.00s][user ] What's the bike path time from the Canton Tower to Chen Clan ⟨ret@4.40s⟩ Academy?
+[  4.63s][moshi] «backchannel» Yeah.
+[  4.99s][moshi] ⟦⚡SPAN@5.17s: The bike path from Canton Tower to Chen Clan Academy is approximately 2.3 kilometers and takes around 12 minut⟧ [happy] Well, biking from the Canton Tower to Chen Clan Academy is about 2.3 kilometers, and should take around 12 minutes. It’s a lovely ride!
+[ 13.90s][user ] «backchannel» Mm-hmm.
+[ 14.26s][user ] And are there any coffee shops along that route? ⟨ret@17.31s⟩
+[ 17.47s][moshi] [curious] There are ⟦⚡SPAN@18.67s: (tool result) {"results": [{"name": "Starbucks (Taikoo Hui)", "vicinity": "Taikoo Hui, 28 Tianhe Rd, Tianhe Di⟧ a couple! Starbucks at Taikoo Hui, and Pacific Coffee on Tianhe Road, both are close to your route.
+      CALL: {"function": "maps_around_search", "arguments": {"latitude": "23.1326", "longitude": "113.2643", "query": "coffee shop", "radius": "1000"}}
+[ 24.95s][user ] «backchannel» Right.
+[ 25.31s][user ] That Starbucks sounds good. What’s their phone ⟨ret@27.96s⟩ number?
+[ 28.16s][moshi] ⟦⚡SPAN@28.67s: (tool result) Starbucks Taikoo Hui Guangzhou's phone number is +86 20-3808 5733.⟧ [sigh] I found it! Starbucks at Taikoo Hui’s number is +86 20-3808 5733. Do you want me to save that for you?
+      CALL: {"function": "maps_search_detail", "arguments": {"query": "Starbucks Taikoo Hui Guangzhou", "type": "establishment"}}
+[ 36.00s][user ] No, that's okay. Thanks.
+[ 37.43s][moshi] [happy] You're very welcome! Remember, a little break can make a big difference when you're enjoying your ride. It's good to listen to what *you* need.

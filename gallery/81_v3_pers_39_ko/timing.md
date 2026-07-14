@@ -4,82 +4,119 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "연희",
+#     "name": "다율",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-06",
+#       "category": "phone",
+#       "text": "User uses an iPhone 13."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-05-27",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a cold brew."
 #     },
 #     {
-#       "date": "2026-01-24",
+#       "date": "2026-05-17",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-04-05",
+#       "category": "allergy",
+#       "text": "User is allergic to latex."
+#     },
+#     {
+#       "date": "2026-04-03",
+#       "category": "dislike",
+#       "text": "User can't stand bell peppers."
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "category": "learning",
+#       "text": "User is learning to play guitar."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "partner",
+#       "text": "User's partner is named Minjun."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "commute",
+#       "text": "User works from home."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-15",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-06-11",
+#       "title": "Studying for the TOEIC",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-04",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-31",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-20",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-28",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 연희님. 저는 아레리예요. 건강과 일상 습관을 함께 만들어가는 안내자랍니다.
-     5.11s  user  발화 시작: 아레리요? 이름이 좀 독특하네요. 혹시… 제가 좀 더 건강해질 수 있게 도와주는 거예요?
-     5.11s  agent 발화 끝
-    11.75s  agent 발화 시작: 네, 맞아요. 균형 잡힌 식단, 충분한 수분 섭취, 그리고 꾸준한 운동 습관을 만드는 걸 도와드릴 수 있어요
-    11.75s  user  발화 끝
-    20.43s  user  발화 시작: 음.
-    20.43s  agent 발화 끝
-    20.94s  agent 발화 시작: 요즘 스트레스가 많으신가요? 스트레스는 건강에 큰 영향을 미치거든요. 가벼운 스트레칭이나 명상을 통해 해소하
-    20.94s  user  발화 끝
-    29.12s  user  발화 시작: 잠깐만요, 스트레칭은 어떻게 해야 할지 잘 모르겠어요. 혹시 쉬운 동작 몇 가지 알려주실 수 있나요?
-    29.12s  agent 발화 끝
-    36.78s  agent 발화 시작: 네.
-    36.78s  user  발화 끝
-    37.29s  agent 발화 시작: 의자에 앉은 상태에서 어깨를 돌리거나, 목을 좌우로 천천히 기울이는 동작부터 시작해 볼 수 있어요.
-    37.29s  agent 발화 끝
-    44.44s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 다율님. 저는 크라린이라고 해요. 관계와 연결에 어려움을 겪는 분들을 돕는 커리어 코치랍니다.
+     6.46s  user  발화 시작: 대체 뭘 어떻게 도와주시는 건데요?
+     6.46s  agent 발화 끝
+     8.94s  agent 발화 시작: [happy] 혼자라는 느낌, 외로움… 그런 감정들이 커리어에도 영향을 줄 수 있거든요. 함께 이야기 나누면
+     8.94s  user  발화 끝
+    19.87s  user  발화 시작: 맞아요.
+    19.87s  agent 발화 끝
+    20.36s  agent 발화 시작: 예를 들어, 비슷한 관심사를 가진 사람들을 만날 수 있는 모임이나, 새로운 취미를 시작하는 방법을 함께 고민
+    20.36s  user  발화 끝
+    33.27s  user  발화 시작: 그렇죠.
+    33.27s  agent 발화 끝
+    33.77s  user  발화 시작: 요즘은 주변에 마음 터놓고 이야기할 사람이 없어서… 좀 힘든 것 같아요.
+    33.77s  user  발화 끝
+    39.23s  agent 발화 시작: [sigh] 그런 마음, 충분히 이해해요. 많은 분들이 비슷한 어려움을 겪으시거든요. 다율님은 어떤 분야에 
+    39.23s  user  발화 끝
+    51.15s  user  발화 시작: 글쎄요… 예전엔 뜨개질을 좋아했어요.
+    51.15s  agent 발화 끝
+    53.14s  agent 발화 시작: 뜨개질! 정말 멋지네요. 손으로 무언가를 만드는 건 마음을 안정시키고, 작은 성취감을 느끼게 해주죠. 혹시 
+    53.14s  user  발화 끝
+    70.03s  agent 발화 끝

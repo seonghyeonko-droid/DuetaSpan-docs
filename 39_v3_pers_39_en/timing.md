@@ -4,88 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Andrea",
+#     "name": "Kim",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "German"
+#     "age_range": "late 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2026-05-24",
+#       "category": "savings",
+#       "text": "User is saving for an emergency fund of six months' expenses."
 #     },
 #     {
-#       "date": "2026-01-15",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-02-17",
+#       "category": "partner",
+#       "text": "User's partner is named Leo."
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-02-12",
+#       "category": "phone",
+#       "text": "User uses an iPhone 15."
 #     },
 #     {
-#       "date": "2025-12-04",
+#       "date": "2026-01-21",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
+#     },
+#     {
+#       "date": "2026-01-02",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
+#       "date": "2026-06-06",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-17",
 #       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-17",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-23",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Guten Tag, Andrea! I'm Areli, and I'm here to support you wi
-     7.41s  user  발화 시작: I’ve been feeling so tired lately, and I don’t know where to
-     7.41s  agent 발화 끝
-    13.41s  agent 발화 시작: It’s completely understandable to feel that way, Andrea. Oft
-    13.41s  user  발화 끝
-    23.28s  user  발화 시작: Uh-huh.
-    23.28s  agent 발화 끝
-    23.64s  agent 발화 시작: We can explore those areas together. A good starting point i
-    23.64s  user  발화 끝
-    29.99s  user  발화 시작: …but I really hate drinking plain water!
-    29.99s  agent 발화 끝
-    32.46s  agent 발화 시작: That’s perfectly alright! Many people find it difficult. We 
-    32.46s  user  발화 끝
-    42.34s  user  발화 시작: Yeah.
-    42.34s  agent 발화 끝
-    42.69s  user  발화 시작: Herbal teas sound nice. Do certain kinds give you more energ
-    42.69s  user  발화 끝
-    47.27s  agent 발화 시작: Mhm.
-    47.27s  user  발화 끝
-    47.63s  agent 발화 시작: [happy] Absolutely! Peppermint and ginger teas are both know
-    47.63s  agent 발화 끝
-    61.03s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Kim, it’s lovely to meet you. I’m Klarin, and I help p
+     8.74s  user  발화 시작: Oh, that’s… interesting. What does that even *mean*, exactly
+     8.74s  agent 발화 끝
+    12.02s  agent 발화 시작: [happy] It means exploring what truly matters to you, and bu
+    12.02s  user  발화 끝
+    21.12s  user  발화 시작: Mhm.
+    21.12s  agent 발화 끝
+    21.48s  agent 발화 시작: We can work on identifying what makes you feel disconnected,
+    21.48s  user  발화 끝
+    29.49s  user  발화 시작: Okay.
+    29.49s  agent 발화 끝
+    29.86s  user  발화 시작: I guess I just… don’t really *have* a lot of close friends r
+    29.86s  user  발화 끝
+    34.95s  agent 발화 시작: That’s very common, Kim. Many people find themselves in that
+    34.95s  user  발화 끝
+    44.42s  user  발화 시작: It’s just… frustrating, you know? I want people to *get* me.
+    44.42s  agent 발화 끝
+    48.43s  agent 발화 시작: [sigh] I completely understand. Feeling misunderstood is inc
+    48.43s  user  발화 끝
+    57.53s  agent 발화 끝

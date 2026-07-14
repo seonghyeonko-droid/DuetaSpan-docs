@@ -4,103 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Max",
+#     "name": "Olivia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-02-09",
+#       "date": "2026-06-16",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to gluten."
 #     },
 #     {
-#       "date": "2025-12-31",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-05-10",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-08",
+#       "category": "child",
+#       "text": "User has a child named Rin, age 12."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "home",
-#       "text": "User's home address is 120 Birch Road."
+#       "date": "2025-12-25",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
+#     },
+#     {
+#       "date": "2025-12-16",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-10",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-08",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-10",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-08",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the address of… | S2 Oh, that’s good to know. And what’ | S3 Hmm, sounds pleasant. I'm thinking | S4 Just a quick visit, maybe three da
 
-     0.00s  user  발화 시작: What is the address of…
-     1.73s  user  발화 시작: …the Hockey Hall of Fame?
-     1.73s  user  발화 끝
-     3.24s  <ret> 발화 (turn2 첫 프레임)
-     3.46s  agent 발화 시작: <ret> [happy] The Hockey Hall of Fame is at 155 Front Street
-     3.46s  user  발화 끝
-     4.01s  ⚡SPAN 주입 [d'=0.76s / d_lead=9.00s]: (tool result) {"name": "Hockey Hall of Fame", "formatted address": "15
-    12.45s  user  발화 시작: Oh, that’s good to know. And what’s the weather like there r
-    12.45s  agent 발화 끝
-    16.86s  <ret> 발화 (turn4 첫 프레임)
-    16.95s  agent 발화 시작: <ret> [curious] Right now in Toronto, it’s 22.8 degrees Cels
-    16.95s  user  발화 끝
-    17.65s  ⚡SPAN 주입 [d'=0.79s / d_lead=7.96s]: (tool result) {"city": "Toronto", "country": "Canada", "latitude": 43.
-    24.91s  user  발화 시작: Hmm, sounds pleasant. I'm thinking of visiting next week.
-    24.91s  agent 발화 끝
-    28.02s  agent 발화 시작: Yeah.
-    28.02s  user  발화 끝
-    28.37s  agent 발화 시작: That sounds lovely! Toronto is a great city to explore. Are 
-    28.37s  agent 발화 끝
-    35.63s  user  발화 시작: Just a quick visit, maybe three days. I want to see a Blue J
-    35.63s  agent 발화 끝
-    40.82s  agent 발화 시작: Uh-huh.
-    40.82s  user  발화 끝
-    41.17s  agent 발화 시작: [laugh] A Blue Jays game sounds perfect for a quick trip! I 
-    41.17s  agent 발화 끝
-    48.44s  agent 발화 끝
+     0.00s  user  발화 시작: I’m planning a trip to New York City next month, and I'd lik
+     9.42s  <ret> 발화 (turn2 첫 프레임)
+     9.47s  agent 발화 시작: Mhm.
+     9.47s  user  발화 끝
+     9.74s  ⚡SPAN 주입 [d'=1.08s / d_lead=9.80s]: New York City is home to many theaters, including the Broadway Theatre
+     9.80s  agent 발화 시작: <ret> New York City has quite a few theaters! Broadway Theat
+     9.80s  agent 발화 끝
+    19.59s  user  발화 시작: Uh-huh.
+    19.59s  agent 발화 끝
+    19.92s  user  발화 시작: That’s great! Could you find me some events happening at the
+    19.92s  user  발화 끝
+    24.55s  <ret> 발화 (turn5 첫 프레임)
+    24.82s  agent 발화 시작: <ret> Next week, Wicked is playing on July seventeenth at se
+    24.82s  user  발화 끝
+    25.41s  ⚡SPAN 주입 [d'=0.90s / d_lead=10.12s]: (tool result) {"events": [{"name": "Wicked", "date": "2026-07-17", "ti
+    34.94s  user  발화 시작: Mm-hmm.
+    34.94s  agent 발화 끝
+    35.27s  user  발화 시작: Oh, that sounds fun. Maybe Wicked.
+    35.27s  user  발화 끝
+    37.22s  agent 발화 시작: [happy] Wicked is a popular choice! It’s wonderful you’re pl
+    37.22s  user  발화 끝
+    42.12s  agent 발화 끝

@@ -4,114 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Lukas",
+#     "name": "Paul",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-13",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2026-03-15",
-#       "category": "home",
-#       "text": "User's home address is 345 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-01-15",
+#       "date": "2026-05-07",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a data analyst."
+#     },
+#     {
+#       "date": "2026-04-17",
+#       "category": "medication",
+#       "text": "User takes antihistamines in spring."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "employer",
+#       "text": "User works at a game studio."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Hokkaido in April."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-05",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-18",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-04",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the driving time f | S2 Hmm. | S3 …near my hotel? I’m staying at the | S4 Excellent. Thank you, Dali.
+# EXAMINER(FDB-v2) 단계: S1 I need to book a hotel in Busan fo | S2 Hmm, near Haeundae Beach would be  | S3 That sounds good. Can you book it  | S4 Perfect! Now, what's the weather l
 
-     0.00s  user  발화 시작: Can you give me the driving time from Tokyo to Los Angeles?
-     4.94s  agent 발화 시작: Okay.
-     4.94s  user  발화 끝
-     5.19s  <ret> 발화 (turn2 첫 프레임)
-     5.35s  agent 발화 시작: <ret> The driving time from Tokyo to Los Angeles is approxim
-     5.35s  agent 발화 끝
-     5.54s  ⚡SPAN 주입 [d'=0.35s / d_lead=8.23s]: (tool result) {"distance": 8738.5, "duration": 625200.0, "units": "sec
-    13.57s  user  발화 시작: That's… a really long drive. What about flights instead?
-    13.57s  agent 발화 끝
-    17.28s  agent 발화 시작: Okay.
-    17.28s  user  발화 끝
-    17.69s  agent 발화 시작: [laugh] Well, yes, that *is* quite a drive! Flights would ce
-    17.69s  agent 발화 끝
-    23.04s  user  발화 시작: Yeah.
-    23.04s  agent 발화 끝
-    23.45s  user  발화 시작: Can you search for one-way flights from Tokyo to Los Angeles
-    23.45s  user  발화 끝
-    28.76s  <ret> 발화 (turn8 첫 프레임)
-    29.21s  agent 발화 시작: <ret> There's a Japan Airlines flight, number JL061, departi
-    29.21s  user  발화 끝
-    29.40s  ⚡SPAN 주입 [d'=0.64s / d_lead=9.87s]: (tool result) {"flights": [{"airline": "Japan Airlines", "flight numbe
-    39.08s  user  발화 시작: Hmm.
-    39.08s  agent 발화 끝
-    39.49s  agent 발화 시작: That flight looks like a good option.
-    39.49s  user  발화 끝
-    42.37s  user  발화 시작: Actually, yes. Could you find me a good sushi restaurant…
-    42.37s  agent 발화 끝
-    46.48s  user  발화 시작: …near my hotel? I’m staying at the Beverly Hills Hotel.
-    46.48s  user  발화 끝
-    50.21s  <ret> 발화 (turn13 첫 프레임)
-    50.51s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.64s]: (tool result) {"restaurants": [{"name": "Sugarfish by Sushi Nozawa", "
-    50.60s  agent 발화 시작: <ret> Sugarfish by Sushi Nozawa, located at 212 North Canon 
-    50.60s  user  발화 끝
-    59.24s  user  발화 시작: That sounds perfect. Can you make a reservation there for tw
-    59.24s  agent 발화 끝
-    65.20s  <ret> 발화 (turn15 첫 프레임)
-    65.82s  agent 발화 시작: <ret> I’ve reserved a table for two at Sugarfish by Sushi No
-    65.82s  user  발화 끝
-    65.89s  ⚡SPAN 주입 [d'=0.68s / d_lead=8.23s]: (tool result) {"confirmation number": "RSV-87654"}
-    74.04s  user  발화 시작: Excellent. Thank you, Dali.
-    74.04s  agent 발화 끝
-    75.69s  agent 발화 시작: You’re very welcome! I’m glad I could help with your travel 
-    75.69s  user  발화 끝
-    81.45s  user  발화 시작: One last thing, just out of curiosity – what’s the weather l
-    81.45s  agent 발화 끝
-    88.07s  <ret> 발화 (turn19 첫 프레임)
-    88.44s  agent 발화 시작: <ret> The weather in Los Angeles is currently sunny, with a 
-    88.44s  user  발화 끝
-    89.33s  ⚡SPAN 주입 [d'=1.26s / d_lead=10.70s]: (tool result) {"temperature": 28.3, "humidity": 65, "condition": "Sunn
-    99.14s  agent 발화 끝
+     0.00s  user  발화 시작: I need to book a hotel in Busan for next weekend. Something 
+     6.00s  agent 발화 시작: [happy] Busan is lovely! Let’s find a hotel for you next wee
+     6.00s  user  발화 끝
+    16.30s  user  발화 시작: Hmm, near Haeundae Beach would be great. And under ₩150,000 
+    16.30s  agent 발화 끝
+    22.30s  agent 발화 시작: Okay.
+    22.30s  user  발화 끝
+    22.38s  <ret> 발화 (turn4 첫 프레임)
+    22.71s  ⚡SPAN 주입 [d'=0.33s / d_lead=9.01s]: (tool result) {"hotel name": "Hotel Haeundae View", "address": "268, H
+    22.73s  agent 발화 시작: <ret> I found Hotel Haeundae View, it’s a three-star hotel n
+    22.73s  agent 발화 끝
+    31.74s  user  발화 시작: Yeah, totally.
+    31.74s  agent 발화 끝
+    32.60s  user  발화 시작: That sounds good. Can you book it for me, two nights, July 1
+    32.60s  user  발화 끝
+    38.71s  <ret> 발화 (turn7 첫 프레임)
+    39.03s  agent 발화 시작: <ret> Your booking at Hotel Haeundae View is confirmed for t
+    39.03s  user  발화 끝
+    39.32s  ⚡SPAN 주입 [d'=0.61s / d_lead=11.15s]: (tool result) {"confirmation id": "HV260712", "hotel name": "Hotel Hae
+    50.18s  user  발화 시작: Perfect! Now, what's the weather looking like there next wee
+    50.18s  agent 발화 끝
+    54.02s  <ret> 발화 (turn9 첫 프레임)
+    54.47s  agent 발화 시작: <ret> The weather in Busan next weekend, on July 12th, will 
+    54.47s  user  발화 끝
+    55.33s  ⚡SPAN 주입 [d'=1.30s / d_lead=14.15s]: (tool result) {"temperature": "28.5°C", "humidity": "65%", "wind speed
+    68.62s  agent 발화 끝

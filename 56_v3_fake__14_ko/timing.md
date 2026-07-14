@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "은진",
+#     "name": "수민",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,111 +18,116 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-06-08",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Ava."
 #     },
 #     {
-#       "date": "2026-04-25",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Hokkaido in November."
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2026-04-16",
+#       "category": "work",
+#       "text": "User works as a translator."
+#     },
+#     {
+#       "date": "2026-04-11",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2026-03-23",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into trail running."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-07",
+#       "category": "schedule",
+#       "text": "User has a fully remote setup."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "music",
+#       "text": "User likes listening to city pop."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
+#       "date": "2026-01-29",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-04",
 #       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-17",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 오레아크스님. 잠을 잘 자고 싶은데 어떻게 해야  | S2 아, 사우스캐롤라이나요. 그쪽은 어때요? | S3 아, 그렇군요. 저녁에는 스마트폰을 잘 안 보려고 노력해야겠어 | S4 음… 부산 근처의 조용한 바닷가 마을은 없을까요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 델라로 씨. 요즘 직장 동료랑 계속 부딪히는데… | S2 음, 그 사람은 좀 완고하고, 제 의견을 잘 들어주지 않아요. | S3 답답하고, 무시당하는 느낌이 들어요. | S4 단호하게 말하는 게 쉽지는 않네요.
 
-     0.00s  user  발화 시작: 안녕하세요, 오레아크스님. 잠을 잘 자고 싶은데 어떻게 해야 할까요?
-     4.94s  agent 발화 시작: 안녕하세요! 편안한 잠을 위한 루틴을 만드는 게 중요해요. 규칙적인 수면 시간을 정하는 것부터 시작해 보세요
-     4.94s  user  발화 끝
-    13.17s  user  발화 시작: 규칙적인 수면 시간이라… 쉽지 않네요.
-    13.17s  agent 발화 끝
-    15.85s  <ret> 발화 (turn3 첫 프레임)
-    15.91s  agent 발화 시작: <ret> 마이애미 해변의 산책로는 일 점 구킬로미터 길이로, 상점과 레스토랑, 오락실 등 다양한 볼거리를 
-    15.91s  user  발화 끝
-    16.92s  ⚡SPAN 주입 [d'=1.08s / d_lead=8.23s]: The Myrtle Beach boardwalk is 1.2 miles long and offers a variety of a
-    24.14s  user  발화 시작: 마이애미 해변요? 저는 마이애미에 가본 적 없어요.
-    24.14s  agent 발화 끝
-    27.98s  agent 발화 시작: [surprised] 죄송합니다. 혼동을 드렸네요. 마이애미가 아니라 마이틀 비치였어요. 사우스캐롤라이나에 
-    27.98s  user  발화 끝
-    34.02s  user  발화 시작: 아, 사우스캐롤라이나요. 그쪽은 어때요?
-    34.02s  agent 발화 끝
-    36.21s  agent 발화 시작: [curious] 사우스캐롤라이나는 아름다운 해변과 역사적인 도시로 유명해요. 특히 마이틀 비치는 가족 여행
-    36.21s  user  발화 끝
-    43.90s  agent 발화 시작: 죄송해요. 사우스캐롤라이나의 다른 정보는 찾을 수 없었어요.
-    43.90s  agent 발화 끝
-    47.74s  user  발화 시작: 네네.
-    47.74s  agent 발화 끝
-    48.28s  user  발화 시작: 음…
-    48.28s  user  발화 끝
-    48.83s  agent 발화 시작: 잠으로 다시 돌아가 볼까요? 잠들기 전에 스크린 타임을 줄이는 것도 중요해요.
-    48.83s  user  발화 끝
-    54.87s  user  발화 시작: 네.
-    54.87s  agent 발화 끝
-    55.42s  user  발화 시작: 스크린 타임요? 스마트폰이나 티 브이를 보는 건가요?
-    55.42s  user  발화 끝
-    59.26s  agent 발화 시작: 네, 맞아요. 스마트폰이나 티 브이에서 나오는 블루라이트는 수면을 방해할 수 있거든요.
-    59.26s  user  발화 끝
-    65.29s  user  발화 시작: 네.
-    65.29s  agent 발화 끝
-    65.84s  user  발화 시작: 아, 그렇군요. 저녁에는 스마트폰을 잘 안 보려고 노력해야겠어요.
-    65.84s  user  발화 끝
-    70.21s  <ret> 발화 (turn18 첫 프레임)
-    70.23s  agent 발화 시작: 네.
-    70.23s  user  발화 끝
-    70.78s  agent 발화 시작: <ret> 마이틀 비치, 사우스캐롤라이나의 호텔 객실 평균 가격은 일박에 백삼십구달러 정도라고 해요.
-    70.78s  agent 발화 끝
-    71.44s  ⚡SPAN 주입 [d'=1.24s / d_lead=6.04s]: The average cost of a hotel room in Myrtle Beach, SC is $139 per night
-    76.82s  user  발화 시작: 호텔 가격이 백삼십구달러나 하네요.
-    76.82s  agent 발화 끝
-    79.01s  agent 발화 시작: [sigh] 마이틀 비치는 인기 있는 휴양지라서 가격이 조금 높은 편이에요.
-    79.01s  user  발화 끝
-    84.50s  user  발화 시작: 그럼 다른 곳은 어떨까요? 조금 더 저렴한 곳을 찾아볼까요?
-    84.50s  agent 발화 끝
-    89.44s  agent 발화 시작: 네, 물론이죠. 다른 도시나 지역을 알아볼 수도 있어요. 어디를 선호하시나요?
-    89.44s  user  발화 끝
-    94.92s  user  발화 시작: 네.
-    94.92s  agent 발화 끝
-    95.47s  user  발화 시작: 음… 부산 근처의 조용한 바닷가 마을은 없을까요?
-    95.47s  user  발화 끝
-    98.72s  <ret> 발화 (turn25 첫 프레임)
-    99.19s  ⚡SPAN 주입(IRRELEVANT) [d'=0.46s / d_lead=6.04s]: The population of Ulaanbaatar, Mongolia is approximately 1.6 million p
-    99.31s  agent 발화 시작: <ret> [curious] 부산 근처의 조용한 바닷가 마을이라… 기장이나 해운대가 괜찮을 것 같아요.
-    99.31s  user  발화 끝
-   105.35s  agent 발화 시작: 기장이나 해운대는 부산에서 가까워서 교통도 편리하고, 조용하게 휴식을 취하기에도 좋답니다.
-   105.35s  agent 발화 끝
-   110.84s  user  발화 시작: 예.
-   110.84s  agent 발화 끝
-   111.38s  user  발화 시작: 기장은 어때요?
-   111.38s  user  발화 끝
-   112.48s  agent 발화 시작: 기장은 해산물이 유명하고, 아름다운 해변이 많아요. 특히 대변항은 싱싱한 해산물을 맛볼 수 있는 곳으로 유명
-   112.48s  user  발화 끝
-   120.71s  agent 발화 시작: [laugh] 해산물을 좋아하신다면 기장에 가시면 정말 만족하실 거예요.
-   120.71s  agent 발화 끝
-   125.10s  user  발화 시작: 예.
-   125.10s  agent 발화 끝
-   125.65s  user  발화 시작: 해산물을 정말 좋아해요! 기장으로 가봐야겠네요.
-   125.65s  user  발화 끝
-   128.39s  agent 발화 시작: 아주 좋은 선택이에요! 기장에서 편안하고 즐거운 시간을 보내시길 바랍니다.
-   128.39s  user  발화 끝
-   133.33s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 델라로 씨. 요즘 직장 동료랑 계속 부딪히는데…
+     3.36s  user  발화 시작: …어떻게 해야 할까요?
+     3.36s  user  발화 끝
+     4.48s  <ret> 발화 (turn2 첫 프레임)
+     4.62s  agent 발화 시작: <ret> 안녕하세요. 직장 동료와의 갈등 때문에 힘드시군요. 어떤 점이 가장 어려우신가요?
+     4.62s  user  발화 끝
+     5.53s  ⚡SPAN 주입 [d'=1.05s / d_lead=4.20s]: Conflict resolution involves understanding the other person's perspect
+     8.82s  agent 발화 시작: 갈등 해결은 상대방의 관점을 이해하고 공통점을 찾는 것이 중요해요. 서로의 입장을 좀 더 자세히 알아볼까요?
+     8.82s  agent 발화 끝
+    15.12s  user  발화 시작: 네네.
+    15.12s  agent 발화 끝
+    15.54s  user  발화 시작: 음, 그 사람은 좀 완고하고, 제 의견을 잘 들어주지 않아요.
+    15.54s  user  발화 끝
+    19.70s  <ret> 발화 (turn7 첫 프레임)
+    19.74s  agent 발화 시작: 음.
+    19.74s  user  발화 끝
+    20.16s  agent 발화 시작: <ret> 완고하고 의견을 잘 들어주지 않는 상대방과 소통하는 건 쉽지 않죠. 혹시 구체적인 상황을 예시로 
+    20.16s  agent 발화 끝
+    20.70s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=7.14s]: The average rainfall in Reykjavik, Iceland is 798 mm per year.
+    27.30s  agent 발화 시작: 상황을 좀 더 자세히 말씀해주시면 더 정확한 조언을 드릴 수 있을 것 같아요.
+    27.30s  agent 발화 끝
+    32.75s  user  발화 시작: 네.
+    32.75s  agent 발화 끝
+    33.17s  agent 발화 시작: 혹시 상대방의 행동으로 인해 어떤 감정을 느끼시는지 말씀해주실 수 있을까요? 감정을 명확히 표현하는 것도 중
+    33.17s  user  발화 끝
+    39.47s  user  발화 시작: 답답하고, 무시당하는 느낌이 들어요.
+    39.47s  agent 발화 끝
+    40.84s  <ret> 발화 (turn12 첫 프레임)
+    41.14s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.46s]: Assertive communication involves expressing your needs and opinions cl
+    41.15s  agent 발화 시작: <ret> 답답하고 무시당하는 느낌이 드신다니, 정말 힘드시겠어요. 그런 감정을 표현하는 방법을 찾아보는 게
+    41.15s  user  발화 끝
+    46.61s  agent 발화 시작: 자신의 요구와 의견을 명확하고 존중하는 방식으로 표현하는 단호한 의사소통이 도움이 될 수 있어요.
+    46.61s  agent 발화 끝
+    52.07s  user  발화 시작: 단호하게 말하는 게 쉽지는 않네요.
+    52.07s  agent 발화 끝
+    54.17s  agent 발화 시작: 물론 쉽지 않죠. 하지만 연습을 통해 조금씩 나아질 수 있어요. 한번 함께 연습해 볼까요?
+    54.17s  user  발화 끝
+    60.05s  agent 발화 시작: 아니면, 좀 더 편안한 마음으로 대화할 수 있는 다른 방법도 찾아볼 수 있어요.
+    60.05s  agent 발화 끝
+    65.51s  agent 발화 끝

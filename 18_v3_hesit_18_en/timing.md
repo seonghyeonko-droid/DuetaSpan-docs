@@ -4,201 +4,198 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Jamie",
+#     "name": "Manon",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "mid 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-05-30",
+#       "category": "dislike",
+#       "text": "User can't stand licorice."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-03-21",
+#       "category": "anniversary",
+#       "text": "User's anniversary is October 5."
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "category": "home",
-#       "text": "User's home address is 329 Oak Avenue."
+#       "date": "2026-03-16",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-02-03",
+#       "category": "skill",
+#       "text": "User is just getting back into trail running."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "commute",
+#       "text": "User bikes to work."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-03",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-23",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2026-02-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "title": "Booking a moving company",
+#       "bullets": [
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi moshi, I was wondering about ic | S2 Yes, please. How much sea level ri | S3 Ice shelves? What are those? | S4 …but which parts are melting the f
+# EXAMINER(FDB-v2) 단계: S1 uhhh, hey moshi, do you know when  | S2 That sounds… nice. Maybe a little  | S3 Eight minutes? Perfect. Could you… | S4 Wow, almost four hours ahead of us
 
-     0.00s  user  발화 시작: Hi moshi, I was wondering about ice.
-     2.78s  agent 발화 시작: Hello! It's lovely to talk about rest and calm with you. Is 
-     2.78s  user  발화 끝
-    11.10s  user  발화 시작: Yeah, like, where are the big ice sheets now?
-    11.10s  agent 발화 끝
-    14.49s  <ret> 발화 (turn4 첫 프레임)
-    14.67s  agent 발화 시작: Yeah.
-    14.67s  user  발화 끝
-    15.07s  agent 발화 시작: <ret> The largest ice sheets on Earth are found in Antarctic
-    15.07s  agent 발화 끝
-    15.75s  ⚡SPAN 주입 [d'=1.26s / d_lead=11.90s]: Earth’s largest ice sheets are found in Antarctica and Greenland, hold
-    26.97s  user  발화 시작: Yeah.
-    26.97s  agent 발화 끝
-    27.36s  user  발화 시작: Antarctica, definitely. Tell me more about the ice there.
-    27.36s  user  발화 끝
-    30.42s  <ret> 발화 (turn7 첫 프레임)
-    30.72s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.12s]: The Antarctic ice sheet is the largest single mass of ice on Earth, co
-    30.93s  agent 발화 시작: <ret> The Antarctic ice sheet is the largest single mass of 
-    30.93s  user  발화 끝
-    40.05s  user  발화 시작: Uh-huh.
-    40.05s  agent 발화 끝
-    40.45s  user  발화 시작: Wow, that’s huge. Is Greenland’s ice sheet big too?
-    40.45s  user  발화 끝
-    43.89s  <ret> 발화 (turn10 첫 프레임)
-    43.99s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.71s]: The Greenland ice sheet covers about 80% of the island’s surface and c
-    44.02s  agent 발화 시작: <ret> The Greenland ice sheet covers about 80% of the island
-    44.02s  user  발화 끝
-    54.73s  user  발화 시작: Wow.
-    54.73s  agent 발화 끝
-    55.13s  user  발화 시작: Okay. So, what happens if all that ice melts?
-    55.13s  user  발화 끝
-    58.69s  agent 발화 시작: Yeah.
-    58.69s  user  발화 끝
-    59.09s  agent 발화 시작: That’s a very important question. It would lead to significa
-    59.09s  agent 발화 끝
-    64.25s  user  발화 시작: Yes, please. How much sea level rise are we talking?
-    64.25s  agent 발화 끝
-    68.20s  <ret> 발화 (turn17 첫 프레임)
-    68.21s  agent 발화 시작: Yeah.
-    68.21s  user  발화 끝
-    68.55s  ⚡SPAN 주입 [d'=0.75s / d_lead=10.71s]: If the entire Greenland ice sheet melted, global sea levels would rise
-    68.61s  agent 발화 시작: <ret> If Greenland’s ice sheet melted, sea levels would rise
-    68.61s  agent 발화 끝
-    79.32s  user  발화 시작: Yeah.
-    79.32s  agent 발화 끝
-    79.71s  user  발화 시작: 191 feet! That’s… a lot. Is…
-    79.71s  user  발화 끝
-    82.09s  user  발화 시작: …the ice actually melting faster now?
-    82.09s  user  발화 끝
-    84.39s  <ret> 발화 (turn22 첫 프레임)
-    84.47s  agent 발화 시작: Yeah.
-    84.47s  user  발화 끝
-    84.81s  ⚡SPAN 주입 [d'=0.86s / d_lead=9.52s]: Both the Greenland and Antarctic ice sheets are losing mass at an acce
-    84.87s  agent 발화 시작: <ret> Both Greenland and Antarctica are losing ice faster, w
-    84.87s  agent 발화 끝
-    94.39s  user  발화 시작: Yeah, yeah.
-    94.39s  agent 발화 끝
-    95.18s  user  발화 시작: Why is it melting faster? Is it just global warming?
-    95.18s  user  발화 끝
-    99.15s  agent 발화 시작: Mm-hmm.
-    99.15s  user  발화 끝
-    99.54s  agent 발화 시작: Global warming is the primary driver, yes. Warmer temperatur
-    99.54s  agent 발화 끝
-   105.09s  user  발화 시작: Okay.
-   105.09s  agent 발화 끝
-   105.49s  user  발화 시작: Are there other things that contribute, though?
-   105.49s  user  발화 끝
-   108.24s  <ret> 발화 (turn29 첫 프레임)
-   108.27s  agent 발화 시작: <ret> Warming ocean waters also play a role, particularly in
-   108.27s  user  발화 끝
-   109.59s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.72s]: In addition to rising air temperatures, warming ocean waters are also 
-   116.99s  user  발화 시작: Ice shelves? What are those?
-   116.99s  agent 발화 끝
-   118.56s  <ret> 발화 (turn31 첫 프레임)
-   118.92s  ⚡SPAN 주입 [d'=0.59s / d_lead=8.33s]: Ice shelves are floating extensions of land-based ice sheets and glaci
-   118.98s  agent 발화 시작: <ret> Ice shelves are floating extensions of ice sheets, and
-   118.98s  user  발화 끝
-   127.30s  user  발화 시작: Yeah.
-   127.30s  agent 발화 끝
-   127.70s  user  발화 시작: So, if the ice shelves disappear, the glaciers flow faster?
-   127.70s  user  발화 끝
-   131.67s  agent 발화 시작: Exactly. Without the ice shelves, the glaciers can flow more
-   131.67s  user  발화 끝
-   137.22s  user  발화 시작: Mhm.
-   137.22s  agent 발화 끝
-   137.61s  user  발화 시작: Are there any places where ice is *growing*?
-   137.61s  user  발화 끝
-   140.39s  <ret> 발화 (turn37 첫 프레임)
-   140.73s  ⚡SPAN 주입 [d'=0.85s / d_lead=9.91s]: While most glaciers and ice sheets are shrinking, some glaciers in hig
-   140.79s  agent 발화 시작: <ret> While most ice is shrinking, some glaciers in the Hima
-   140.79s  user  발화 끝
-   150.70s  user  발화 시작: Yeah.
-   150.70s  agent 발화 끝
-   151.10s  user  발화 시작: The Himalayas… that’s interesting. Do they have big glaciers
-   151.10s  user  발화 끝
-   154.23s  <ret> 발화 (turn40 첫 프레임)
-   154.61s  ⚡SPAN 주입 [d'=0.91s / d_lead=5.16s]: The Himalayas contain approximately 9,575 glaciers, covering an area o
-   154.67s  agent 발화 시작: <ret> The Himalayas contain around 9,575 glaciers, covering 
-   154.67s  user  발화 끝
-   159.82s  user  발화 시작: That’s a lot of glaciers. So, is the melting in Antarctica a
-   159.82s  agent 발화 끝
-   165.77s  agent 발화 시작: No, it's not uniform. Some areas are melting faster than oth
-   165.77s  user  발화 끝
-   170.13s  user  발화 시작: …but which parts are melting the fastest, specifically? I'm 
-   170.13s  agent 발화 끝
-   176.08s  agent 발화 시작: Yeah.
-   176.08s  user  발화 끝
-   176.48s  agent 발화 시작: Specifically, West Antarctica is experiencing the most rapid
-   176.48s  agent 발화 끝
-   186.79s  user  발화 시작: The Amundsen Sea? Okay, good to know. What about Greenland?
-   186.79s  agent 발화 끝
-   190.76s  agent 발화 시작: Mm-hmm.
-   190.76s  user  발화 끝
-   190.85s  <ret> 발화 (turn48 첫 프레임)
-   191.15s  agent 발화 시작: <ret> In Greenland, the fastest melting is happening along t
-   191.15s  agent 발화 끝
-   191.49s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.71s]: The fastest rates of ice loss in Greenland are occurring along its wes
-   201.86s  user  발화 시작: Yeah.
-   201.86s  agent 발화 끝
-   202.26s  user  발화 시작: So, warmer water is a big part of it on both sides.
-   202.26s  user  발화 끝
-   207.02s  agent 발화 시작: Yes, warmer ocean temperatures are a key factor in accelerat
-   207.02s  user  발화 끝
-   213.76s  user  발화 시작: Mm-hmm.
-   213.76s  agent 발화 끝
-   214.16s  user  발화 시작: I think so. What can people do to help slow down the melting
-   214.16s  user  발화 끝
-   219.31s  agent 발화 시작: Reducing your carbon footprint is a great start, as is suppo
-   219.31s  user  발화 끝
-   225.66s  user  발화 시작: Okay, good advice. Thanks, moshi.
-   225.66s  agent 발화 끝
-   227.64s  agent 발화 시작: You're very welcome! I’m glad I could share some information
-   227.64s  user  발화 끝
-   232.40s  agent 발화 끝
+     0.00s  user  발화 시작: uhhh, hey moshi, do you know when the next episode of Lucife
+     5.72s  agent 발화 시작: Yeah.
+     5.72s  user  발화 끝
+     5.81s  <ret> 발화 (turn2 첫 프레임)
+     6.13s  agent 발화 시작: <ret> Well, it looks like Lucifer concluded with its final e
+     6.13s  agent 발화 끝
+     7.31s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.39s]: The fifth and final season of Lucifer was released in two parts, with 
+    15.52s  user  발화 시작: Yeah.
+    15.52s  agent 발화 끝
+    15.93s  user  발화 시작: Oh, wow. Okay. Um, what about before that? Like, the last ep
+    15.93s  user  발화 끝
+    21.93s  <ret> 발화 (turn5 첫 프레임)
+    22.44s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.17s]: The first eight episodes of Lucifer season 5 premiered on August 21, 2
+    22.46s  agent 발화 시작: <ret> Before the final episodes, the first eight of season f
+    22.46s  user  발화 끝
+    30.63s  user  발화 시작: Oh.
+    30.63s  agent 발화 끝
+    31.04s  user  발화 시작: Right, right. And… was there a season six? I could have swor
+    31.04s  user  발화 끝
+    35.94s  agent 발화 시작: Yeah.
+    35.94s  user  발화 끝
+    36.35s  agent 발화 시작: No, there wasn’t a season six. Season five was the final sea
+    36.35s  agent 발화 끝
+    42.07s  user  발화 시작: Oh. Huh. Welll… that’s disappointing. I really liked that sh
+    42.07s  agent 발화 끝
+    46.15s  agent 발화 시작: Yeah.
+    46.15s  user  발화 끝
+    46.56s  agent 발화 시작: [sigh] It's understandable to feel disappointed when a show 
+    46.56s  agent 발화 끝
+    55.55s  user  발화 시작: Right.
+    55.55s  agent 발화 끝
+    55.95s  user  발화 시작: Yeah. I guess so. Hey, quick change of subject – what’s the 
+    55.95s  user  발화 끝
+    62.90s  agent 발화 시작: Yeah.
+    62.90s  user  발화 끝
+    63.28s  <ret> 발화 (turn16 첫 프레임)
+    63.31s  agent 발화 시작: <ret> The weather in Busan is currently twenty-six point fiv
+    63.31s  agent 발화 끝
+    63.77s  ⚡SPAN 주입 [d'=0.49s / d_lead=11.03s]: (tool result) Busan: 26.5°C, humidity 78%, wind 4.1 km/h, condition: c
+    74.33s  user  발화 시작: That sounds… nice. Maybe a little humid.
+    74.33s  agent 발화 끝
+    77.19s  agent 발화 시작: A little humidity is common in Busan this time of year. It c
+    77.19s  user  발화 끝
+    84.95s  user  발화 시작: Mm-hmm.
+    84.95s  agent 발화 끝
+    85.36s  agent 발화 시작: It’s important to stay hydrated when it’s humid, of course.
+    85.36s  user  발화 끝
+    89.44s  user  발화 시작: Right. Okay. So, um, I was thinking about getting dinner. An
+    89.44s  agent 발화 끝
+    95.57s  agent 발화 시작: Mm-hmm.
+    95.57s  user  발화 끝
+    95.66s  <ret> 발화 (turn23 첫 프레임)
+    95.98s  agent 발화 시작: <ret> You mentioned you prefer Korean food back on July fift
+    95.98s  agent 발화 끝
+    97.01s  ⚡SPAN 주입 [d'=1.35s / d_lead=9.39s]: [2024-07-05] I prefer Korean food.
+   105.37s  user  발화 시작: Oh! Right, I forgot I said that. Yes, please. Korean sounds 
+   105.37s  agent 발화 끝
+   110.25s  <ret> 발화 (turn25 첫 프레임)
+   110.27s  agent 발화 시작: <ret> There's Gukbap, with four and a half stars from one hu
+   110.27s  user  발화 끝
+   110.62s  ⚡SPAN 주입 [d'=0.82s / d_lead=14.29s]: (tool result) Busan: Gukbap, 4.5 stars, 120 reviews, ₩10,000-₩20,000. 
+   124.57s  user  발화 시작: Yeah, totally.
+   124.57s  agent 발화 끝
+   125.39s  user  발화 시작: Hmm, Gukbap sounds good. How far is that from here?
+   125.39s  user  발화 끝
+   129.47s  agent 발화 시작: Mm-hmm.
+   129.47s  user  발화 끝
+   129.57s  <ret> 발화 (turn29 첫 프레임)
+   129.88s  agent 발화 시작: <ret> Gukbap is two point three kilometers away, and it will
+   129.88s  agent 발화 끝
+   130.54s  ⚡SPAN 주입 [d'=0.98s / d_lead=6.53s]: (tool result) Distance: 2.3 km, Estimated time: 8 minutes by taxi.
+   136.41s  user  발화 시작: Yeah.
+   136.41s  agent 발화 끝
+   136.82s  user  발화 시작: Eight minutes? Perfect. Could you… order me a taxi?
+   136.82s  user  발화 끝
+   140.50s  agent 발화 시작: Mm-hmm.
+   140.50s  user  발화 끝
+   140.82s  <ret> 발화 (turn33 첫 프레임)
+   140.91s  agent 발화 시작: <ret> A taxi has been confirmed! Your driver is Kim Min-soo,
+   140.91s  agent 발화 끝
+   141.25s  ⚡SPAN 주입 [d'=0.43s / d_lead=8.58s]: (tool result) Taxi confirmed. Driver: Kim Min-soo. ETA: 5 minutes. Veh
+   149.48s  user  발화 시작: Uh-huh.
+   149.48s  agent 발화 끝
+   149.89s  user  발화 시작: Fantastic! Thank you, moshi. You’re a lifesaver.
+   149.89s  user  발화 끝
+   152.75s  agent 발화 시작: [happy] You’re very welcome. I’m glad I could help. It’s a p
+   152.75s  user  발화 끝
+   161.74s  user  발화 시작: This is great. I’ve been feeling so stressed lately with wor
+   161.74s  agent 발화 끝
+   168.27s  agent 발화 시작: Yeah.
+   168.27s  user  발화 끝
+   168.68s  agent 발화 시작: It’s wonderful you’re prioritizing relaxation. Allowing your
+   168.68s  agent 발화 끝
+   175.21s  user  발화 시작: Yeah.
+   175.21s  agent 발화 끝
+   175.62s  user  발화 시작: Yeah. I need to do that more often. Hey, quick question – wh
+   175.62s  user  발화 끝
+   183.54s  <ret> 발화 (turn42 첫 프레임)
+   183.73s  ⚡SPAN 주입 [d'=0.35s / d_lead=6.53s]: (tool result) It is Friday, July 10, 2026 at 3:47 PM in Europe/London 
+   183.79s  agent 발화 시작: <ret> It is currently three forty-seven PM in London, on Fri
+   183.79s  user  발화 끝
+   190.32s  user  발화 시작: Yeah.
+   190.32s  agent 발화 끝
+   190.73s  user  발화 시작: Wow, almost four hours ahead of us. That’s a big difference.
+   190.73s  user  발화 끝
+   195.23s  agent 발화 시작: It is quite a difference! That can be something to keep in m
+   195.23s  user  발화 끝
+   202.58s  user  발화 시작: True. Okay…
+   202.58s  agent 발화 끝
+   203.39s  user  발화 시작: …one last thing… can you find me a good meditation app? Some
+   203.39s  user  발화 끝
+   209.11s  agent 발화 시작: Yeah.
+   209.11s  user  발화 끝
+   209.22s  <ret> 발화 (turn49 첫 프레임)
+   209.46s  ⚡SPAN 주입 [d'=1.06s / d_lead=7.76s]: (tool result) Headspace is a popular meditation app known for its guid
+   209.52s  agent 발화 시작: <ret> Headspace is a popular meditation app, well-known for 
+   209.52s  agent 발화 끝
+   217.28s  user  발화 시작: Mhm.
+   217.28s  agent 발화 끝
+   217.69s  user  발화 시작: Headspace… okay. I’ll check that out. Thanks again, moshi.
+   217.69s  user  발화 끝
+   221.37s  agent 발화 시작: Okay.
+   221.37s  user  발화 끝
+   221.77s  agent 발화 시작: [curious] You’re most welcome. I hope Headspace helps you fi
+   221.77s  agent 발화 끝
+   232.80s  agent 발화 끝

@@ -4,135 +4,176 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Clara",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "60s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-06-26",
+#       "category": "bloodtype",
+#       "text": "User's blood type is AB+."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-06-07",
+#       "category": "show",
+#       "text": "User is currently watching a nature documentary series."
 #     },
 #     {
-#       "date": "2026-03-09",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-06-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in February."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2026-05-27",
+#       "category": "learning",
+#       "text": "User is taking pottery classes."
+#     },
+#     {
+#       "date": "2026-04-03",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Pomeranian named Bori."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "home",
-#       "text": "User's home address is 375 Oak Avenue."
+#       "date": "2026-03-06",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Haruto."
+#     },
+#     {
+#       "date": "2026-02-13",
+#       "category": "plant",
+#       "text": "User is growing a fiddle-leaf fig at home."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-31",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-08",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-27",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How high up is the Eiffel Tower lo | S2 Yeah. I’ve been having trouble sle | S3 Stretching sounds nice. Maybe yoga | S4 Can you set an alarm for 7:00 AM t
+# EXAMINER(FDB-v2) 단계: S1 I’m really struggling to focus on  | S2 Thanks. I’m trying to write the li | S3 That sounds… complicated. Can you  | S4 I’d like to find a dentist near me
 
-     0.00s  user  발화 시작: How high up is the Eiffel Tower located?
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.18s  ⚡SPAN 주입 [d'=0.85s / d_lead=7.69s]: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars 
-     3.24s  agent 발화 시작: <ret> The Eiffel Tower reaches a height of one thousand eigh
-     3.24s  user  발화 끝
-    10.93s  user  발화 시작: Yeah.
-    10.93s  agent 발화 끝
-    11.33s  user  발화 시작: That’s really tall. What about Mount Everest?
-    11.33s  user  발화 끝
-    14.07s  <ret> 발화 (turn4 첫 프레임)
-    14.17s  agent 발화 시작: <ret> Mount Everest is even more towering, reaching twenty-n
-    14.17s  user  발화 끝
-    14.17s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.10s]: Mount Everest, located in the Mahalangur Himal sub-range of the Himala
-    22.26s  user  발화 시작: Wow. Um…
-    22.26s  agent 발화 끝
-    23.07s  agent 발화 시작: It really puts things into perspective, doesn’t it? Thinking
-    23.07s  user  발화 끝
-    27.93s  user  발화 시작: Yeah. I’ve been having trouble sleeping lately.
-    27.93s  agent 발화 끝
-    30.76s  agent 발화 시작: [curious] Oh, I’m sorry to hear that. Sleep is so important 
-    30.76s  user  발화 끝
-    39.27s  user  발화 시작: Just…a lot on my mind, I guess. Work stress.
-    39.27s  agent 발화 끝
-    42.91s  agent 발화 시작: That's very common, especially with work. A racing mind can 
-    42.91s  user  발화 끝
-    52.22s  user  발화 시작: Yeah.
-    52.22s  agent 발화 끝
-    52.62s  user  발화 시작: Not really. I just kind of…fall into bed when I’m tired.
-    52.62s  user  발화 끝
-    57.08s  agent 발화 시작: [sigh] Falling into bed can make it harder to settle. A rout
-    57.08s  user  발화 끝
-    68.01s  user  발화 시작: Stretching sounds nice. Maybe yoga.
-    68.01s  agent 발화 끝
-    70.03s  agent 발화 시작: Yoga is a wonderful way to release tension. Even five or ten
-    70.03s  user  발화 끝
-    77.72s  user  발화 시작: Okay. Can you find me some beginner yoga videos for sleep?
-    77.72s  agent 발화 끝
-    81.85s  <ret> 발화 (turn17 첫 프레임)
-    82.17s  agent 발화 시작: <ret> I found a video titled “Yoga With Adriene - Yoga For B
-    82.17s  user  발화 끝
-    82.59s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.50s]: (tool result) {"title": "Yoga With Adriene - Yoga For Bedtime", "url":
-    90.68s  user  발화 시작: Uh-huh.
-    90.68s  agent 발화 끝
-    91.08s  user  발화 시작: No, just the title is fine. Thanks.
-    91.08s  user  발화 끝
-    93.91s  agent 발화 시작: You're very welcome. It’s good you’re taking steps to priori
-    93.91s  user  발화 끝
-   102.82s  user  발화 시작: Can you set an alarm for 7:00 AM tomorrow?
-   102.82s  agent 발화 끝
-   106.38s  <ret> 발화 (turn23 첫 프레임)
-   106.46s  agent 발화 시작: Mhm.
-   106.46s  user  발화 끝
-   106.87s  agent 발화 시작: <ret> I've set an alarm for seven o’clock tomorrow morning. 
-   106.87s  agent 발화 끝
-   107.24s  ⚡SPAN 주입 [d'=0.86s / d_lead=5.26s]: (tool result) Alarm set for 7:00 AM. Confirmation ID: 92X7B
-   112.13s  user  발화 시작: Great. What’s the weather like in Busan tomorrow?
-   112.13s  agent 발화 끝
-   115.16s  <ret> 발화 (turn25 첫 프레임)
-   115.37s  agent 발화 시작: <ret> Tomorrow in Busan, it’ll be twenty-six point five degr
-   115.37s  user  발화 끝
-   116.12s  ⚡SPAN 주입 [d'=1.43s / d_lead=9.31s]: (tool result) Busan: 26.5°C, humidity 78%, wind 3.1 km/h, partly cloud
-   124.68s  user  발화 시작: Yeah.
-   124.68s  agent 발화 끝
-   125.08s  user  발화 시작: That sounds pleasant. Give me a moment…
-   125.08s  user  발화 끝
-   127.92s  agent 발화 시작: Take your time. I'm here when you're ready.
-   127.92s  user  발화 끝
-   130.26s  ⚡지연 SPAN 주입(선제발표 직전): The restaurant “Gogung Myeongga” in Haeundae, Busan, is a Korean BBQ r
-   131.16s  agent 발화 시작: <ret> Just a moment while I check on that restaurant search.
-   131.16s  agent 발화 끝
-   147.75s  agent 발화 끝
+     0.00s  user  발화 시작: I’m really struggling to focus on my dissertation. It feels 
+     4.69s  agent 발화 시작: It’s completely normal to feel overwhelmed by a big project 
+     4.69s  user  발화 끝
+    11.33s  user  발화 시작: Easier said than done, I guess. Where do I even start?
+    11.33s  agent 발화 끝
+    15.62s  agent 발화 시작: A good starting point is often the Pomodoro Technique. It in
+    15.62s  user  발화 끝
+    23.44s  user  발화 시작: Twenty-five minutes? That doesn't seem like much.
+    23.44s  agent 발화 끝
+    26.17s  agent 발화 시작: It’s amazing what you can achieve in 25 minutes when you tru
+    26.17s  user  발화 끝
+    33.59s  user  발화 시작: Wow.
+    33.59s  agent 발화 끝
+    33.98s  user  발화 시작: Okay, I can try that. Can you set a timer for 25 minutes for
+    33.98s  user  발화 끝
+    39.84s  agent 발화 시작: Yeah.
+    39.84s  user  발화 끝
+    39.98s  <ret> 발화 (turn9 첫 프레임)
+    40.23s  agent 발화 시작: <ret> [happy] Absolutely! I’ve set an alarm for 25 minutes. 
+    40.23s  agent 발화 끝
+    41.37s  ⚡SPAN 주입 [d'=1.40s / d_lead=7.03s]: (tool result) Alarm set for 25 minutes.
+    47.26s  user  발화 시작: Yeah, yeah.
+    47.26s  agent 발화 끝
+    48.04s  user  발화 시작: Thanks. I’m trying to write the literature review, but I kee
+    48.04s  user  발화 끝
+    53.90s  agent 발화 시작: Distractions are the enemy of focus! Try eliminating them – 
+    53.90s  user  발화 끝
+    60.54s  user  발화 시작: Yeah, yeah.
+    60.54s  agent 발화 끝
+    61.33s  user  발화 시작: I’ve done that, but I still find myself checking social medi
+    61.33s  user  발화 끝
+    65.62s  agent 발화 시작: That’s a common struggle. Perhaps block those sites during y
+    65.62s  user  발화 끝
+    72.26s  user  발화 시작: Yeah.
+    72.26s  agent 발화 끝
+    72.65s  user  발화 시작: Hmm, good idea. I'll look into that. What about spaced repet
+    72.65s  user  발화 끝
+    78.51s  agent 발화 시작: Uh-huh.
+    78.51s  user  발화 끝
+    78.90s  agent 발화 시작: Spaced repetition is fantastic for remembering information l
+    78.90s  agent 발화 끝
+    84.76s  user  발화 시작: Uh-huh.
+    84.76s  agent 발화 끝
+    85.15s  user  발화 시작: So, like, flashcards?
+    85.15s  user  발화 끝
+    86.32s  agent 발화 시작: Flashcards are a great tool! But it’s the *timing* of the re
+    86.32s  user  발화 끝
+    94.53s  user  발화 시작: That sounds… complicated. Can you find…
+    94.53s  agent 발화 끝
+    96.87s  user  발화 시작: …me some good resources on spaced repetition?
+    96.87s  user  발화 끝
+    99.13s  <ret> 발화 (turn25 첫 프레임)
+    99.60s  agent 발화 시작: <ret> There are some excellent resources available. Anki is 
+    99.60s  user  발화 끝
+    99.84s  ⚡SPAN 주입 [d'=0.71s / d_lead=8.59s]: (tool result) Anki is a free and popular flashcard program that utiliz
+   108.20s  user  발화 시작: Yeah.
+   108.20s  agent 발화 끝
+   108.59s  user  발화 시작: Anki… I think I've heard of that. Is it hard to learn?
+   108.59s  user  발화 끝
+   113.28s  agent 발화 시작: It has a bit of a learning curve, but there are many tutoria
+   113.28s  user  발화 끝
+   120.70s  user  발화 시작: Okay. I also need to book a dentist appointment. I haven't b
+   120.70s  agent 발화 끝
+   126.17s  agent 발화 시작: Right.
+   126.17s  user  발화 끝
+   126.56s  agent 발화 시작: [curious] That’s important! Do you have a preferred dentist 
+   126.56s  agent 발화 끝
+   130.85s  user  발화 시작: I’d like to find a dentist near me, in Busan.
+   130.85s  agent 발화 끝
+   134.76s  agent 발화 시작: Yeah, yeah.
+   134.76s  user  발화 끝
+   135.15s  <ret> 발화 (turn34 첫 프레임)
+   135.54s  agent 발화 시작: <ret> I found Dr. Kim Min-ji at Busan Dental Clinic, located
+   135.54s  agent 발화 끝
+   135.56s  ⚡SPAN 주입 [d'=0.41s / d_lead=7.03s]: (tool result) Dr. Kim Min-ji, Busan Dental Clinic, 123 Haeundae-ro, Ha
+   142.57s  user  발화 시작: That sounds good. Can you book me an appointment for next We
+   142.57s  agent 발화 끝
+   148.04s  <ret> 발화 (turn36 첫 프레임)
+   148.43s  agent 발화 시작: <ret> [happy] Absolutely! Your appointment with Dr. Kim Min-
+   148.43s  user  발화 끝
+   148.77s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.20s]: (tool result) Appointment confirmed with Dr. Kim Min-ji for July 15, 2
+   156.63s  user  발화 시작: Great. One last thing – what’s the weather going to be like 
+   156.63s  agent 발화 끝
+   162.72s  <ret> 발화 (turn39 첫 프레임)
+   162.88s  agent 발화 시작: Uh-huh.
+   162.88s  user  발화 끝
+   163.27s  agent 발화 시작: <ret> Next Wednesday in Busan will be partly cloudy with a h
+   163.27s  agent 발화 끝
+   163.80s  ⚡SPAN 주입 [d'=1.08s / d_lead=7.42s]: (tool result) Busan: July 15, 2026 - 27.5°C, humidity 68%, wind 7.2 km
+   170.69s  user  발화 시작: Perfect! Thanks so much, Faus. You've been a huge help.
+   170.69s  agent 발화 끝
+   174.60s  agent 발화 시작: [sigh] You’re very welcome. Remember, small steps and consis
+   174.60s  user  발화 끝
+   183.58s  agent 발화 끝

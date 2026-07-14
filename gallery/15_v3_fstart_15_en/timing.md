@@ -4,103 +4,134 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Jamie",
+#     "name": "Hugo",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-18",
+#       "category": "employer",
+#       "text": "User works at an airline."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "home",
-#       "text": "User's home address is 284 Oak Avenue."
+#       "date": "2026-02-24",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2026-02-15",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-28",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into freediving."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2025-12-16",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-12-05",
+#       "category": "skill",
+#       "text": "User is getting fairly good at bread baking."
 #     },
 #     {
-#       "date": "2025-12-14",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-12-04",
+#       "category": "child",
+#       "text": "User has a child named Lucas, age 15."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-30",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
-#       "title": "Researching a used car",
+#       "date": "2026-03-18",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 …like it has to be perfect right a | S3 Tiny reps… like, writing a little  | S4 Hmm, that makes sense. Is there an
+# EXAMINER(FDB-v2) 단계: S1 I’ve been feeling so sluggish late | S2 Hmm, probably at home. The weather | S3 Wow, that's a lot of water! | S4 …back to exercise… what would you 
 
-     0.00s  user  발화 시작: I need to find a good Italian restaurant in New York— actual
-     8.63s  agent 발화 시작: Yeah.
-     8.63s  user  발화 끝
-     8.99s  agent 발화 시작: [happy] Oh, that's a great question! Creative blocks are so 
-     8.99s  agent 발화 끝
-    17.98s  user  발화 시작: Yeah.
-    17.98s  agent 발화 끝
-    18.34s  user  발화 시작: A rough draft… I always feel…
-    18.34s  user  발화 끝
-    20.50s  user  발화 시작: …like it has to be perfect right away.
-    20.50s  user  발화 끝
-    23.38s  agent 발화 시작: Uh-huh.
-    23.38s  user  발화 끝
-    23.74s  agent 발화 시작: That’s the inner critic talking! It's so loud, isn't it? We 
-    23.74s  agent 발화 끝
-    33.09s  user  발화 시작: Mhm.
-    33.09s  agent 발화 끝
-    33.45s  user  발화 시작: Tiny reps… like, writing a little bit every day?
-    33.45s  user  발화 끝
-    36.68s  agent 발화 시작: Exactly! Think of it like building a muscle. Small, consiste
-    36.68s  user  발화 끝
-    43.87s  user  발화 시작: Mm-hmm.
-    43.87s  agent 발화 끝
-    44.23s  user  발화 시작: Hmm, that makes sense. Is there anything else? I feel stuck 
-    44.23s  user  발화 끝
-    49.94s  <ret> 발화 (turn13 첫 프레임)
-    49.99s  agent 발화 시작: <ret> It's also about being kind to yourself when things are
-    49.99s  user  발화 끝
-    50.65s  ⚡SPAN 주입 [d'=0.71s / d_lead=6.47s]: Practicing self-compassion is crucial when facing creative challenges,
-    56.46s  user  발화 시작: Right.
-    56.46s  agent 발화 끝
-    56.82s  agent 발화 시작: [curious] And what kind of painting are you working on, if y
-    56.82s  user  발화 끝
-    64.73s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been feeling so sluggish lately, and I really want to s
+     4.94s  agent 발화 시작: Yeah.
+     4.94s  user  발화 끝
+     5.29s  agent 발화 시작: It’s wonderful you’re thinking about that! Building a routin
+     5.29s  agent 발화 끝
+    10.59s  user  발화 시작: That sounds good. I’m just not sure where to begin.
+    10.59s  agent 발화 끝
+    14.11s  agent 발화 시작: [happy] Let’s think about what you enjoy. Do you prefer bein
+    14.11s  user  발화 끝
+    20.82s  user  발화 시작: Hmm, probably at home. The weather’s been pretty unpredictab
+    20.82s  agent 발화 끝
+    24.00s  agent 발화 시작: Okay.
+    24.00s  user  발화 끝
+    24.35s  agent 발화 시작: Staying home is perfectly fine! We can explore some simple b
+    24.35s  agent 발화 끝
+    28.58s  user  발화 시작: …Actually, before we get into exercises, could you tell me w
+    28.58s  agent 발화 끝
+    34.54s  <ret> 발화 (turn9 첫 프레임)
+    34.58s  agent 발화 시작: <ret> That's a great point to cover first. A good daily wate
+    34.58s  user  발화 끝
+    35.24s  ⚡SPAN 주입 [d'=0.71s / d_lead=2.47s]: The U.S. National Academies of Sciences, Engineering, and Medicine det
+    48.34s  user  발화 시작: Wow, that's a lot of water!
+    48.34s  agent 발화 끝
+    50.46s  agent 발화 시작: It can seem like a lot, but it includes fluids from food too
+    50.46s  user  발화 끝
+    55.05s  user  발화 시작: Okay.
+    55.05s  agent 발화 끝
+    55.40s  agent 발화 시작: We can work on slowly increasing your intake if you're not t
+    55.40s  user  발화 끝
+    59.99s  user  발화 시작: Okay. So…
+    59.99s  agent 발화 끝
+    60.69s  user  발화 시작: …back to exercise… what would you suggest for someone starti
+    60.69s  user  발화 끝
+    64.58s  agent 발화 시작: [curious] Let’s start with some gentle stretches. A simple s
+    64.58s  user  발화 끝
+    71.99s  agent 발화 시작: …and improve your posture. We can then move onto some easy s
+    71.99s  agent 발화 끝
+    76.22s  user  발화 시작: Yeah.
+    76.22s  agent 발화 끝
+    76.57s  user  발화 시작: Squats sound… intimidating.
+    76.57s  user  발화 끝
+    77.63s  agent 발화 시작: [sigh] They can feel that way at first, but we'll modify the
+    77.63s  user  발화 끝
+    89.63s  agent 발화 끝

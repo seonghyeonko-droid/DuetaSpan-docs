@@ -1,10 +1,10 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Deaon, a calm and patient supportive advisor who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Tal, a upbeat and supportive supportive advisor who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Sam",
+    "name": "Samuel",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,93 +12,111 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "60s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-12",
+      "date": "2026-06-15",
+      "category": "emergency",
+      "text": "User's emergency contact is Rin."
+    },
+    {
+      "date": "2026-05-10",
+      "category": "schedule",
+      "text": "User has flexible hours."
+    },
+    {
+      "date": "2026-03-29",
       "category": "work",
-      "text": "User works as a high-school teacher."
+      "text": "User works as a journalist."
     },
     {
-      "date": "2026-04-03",
-      "category": "home",
-      "text": "User's home address is 499 Birch Road."
+      "date": "2026-01-05",
+      "category": "show",
+      "text": "User is currently watching a slow-burn detective drama."
     },
     {
-      "date": "2026-02-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-01-26",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2025-12-25",
+      "category": "gym",
+      "text": "User has a gym membership near the station."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-20",
-      "title": "Comparing gym memberships",
+      "date": "2026-04-26",
+      "title": "Choosing a preschool",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     },
     {
-      "date": "2026-02-15",
-      "title": "Planning a birthday dinner",
+      "date": "2026-02-01",
+      "title": "Adopting a rescue dog",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
       ]
     },
     {
-      "date": "2026-02-13",
-      "title": "Researching a used car",
+      "date": "2026-01-18",
+      "title": "Planning a wedding",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2025-12-08",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been having trouble falling asleep lately.
-[  2.77s][moshi] It’s common to experience sleep difficulties from time to time.
-[  6.73s][user ] «backchannel» Yeah, totally.
-[  7.52s][user ] What can I do to wind down before bed?
-[ 11.09s][moshi] «backchannel» Yeah.
-[ 11.48s][moshi] ⟨ret@11.15s⟩ ⟦⚡SPAN@11.61s: A relaxing bedtime routine can signal your body it’s time to sleep, and may include taking a warm bath or read⟧ A relaxing bedtime routine can really help signal your body it’s time to sleep, and that might include taking a warm bath or reading a book.
-[ 21.78s][user ] «backchannel» Yeah.
-[ 22.17s][user ] That sounds nice.
-[ 23.36s][moshi] Establishing a consistent sleep schedule is also very helpful.
-[ 26.92s][user ] «backchannel» Right.
-[ 27.32s][user ] What time should I try to go to bed? ⟨ret@30.80s⟩
-[ 30.88s][moshi] ⟦⚡SPAN@30.90s: Most adults need around seven to nine hours of sleep each night for optimal health and performance.⟧ Most adults need around seven to nine hours of sleep each night for optimal health and performance.
-[ 37.61s][user ] «backchannel» Wow.
-[ 38.01s][moshi] It’s important to create a sleep-conducive environment.
-[ 40.78s][user ] «backchannel» Mhm.
-[ 41.18s][user ] Like ⟨ret@41.46s⟩ what?
-[ 41.97s][moshi] A dark, ⟦⚡SPAN@42.96s: A dark, quiet, and cool bedroom is ideal for sleep, as these conditions promote the release of melatonin.⟧ quiet, and cool bedroom is ideal for sleep, as those conditions promote the release of melatonin.
-[ 49.10s][user ] I always scroll on my phone before bed.
-[ 52.26s][moshi] «interrupted» Limiting screen time before bed is crucial—
-[ 55.04s][user ] «interrupts_prev» …Does blue light really affect sleep that ⟨ret@57.84s⟩ much?
-[ 58.20s][moshi] ⟦⚡SPAN@58.14s: Exposure to blue light before bed can delay the onset of sleep and reduce sleep duration, according to researc⟧ Exposure to blue light before bed can delay the onset of sleep and reduce sleep duration, according to research.
-[ 65.73s][user ] «backchannel» Yeah.
-[ 66.12s][user ] Okay, no more phone in bed then.
-[ 68.89s][moshi] That’s a wonderful first step towards better rest!
-[ 72.06s][moshi] Consistent wake times, even on weekends, are also important.
-[ 75.63s][user ] «backchannel» Okay.
-[ 76.02s][user ] Even on weekends? That sounds hard.
-[ 78.40s][moshi] It helps regulate your body’s natural sleep-wake cycle.
-[ 81.56s][moshi] It can be challenging at first, but your body will adjust.
-[ 85.92s][user ] «backchannel» Exactly.
-[ 86.32s][user ] Maybe I should try a sleep meditation. ⟨ret@89.08s⟩
-[ 89.09s][moshi] ⟦⚡SPAN@89.18s: Guided sleep meditations can help reduce stress and promote relaxation, leading to improved sleep quality.⟧ Guided sleep meditations can really help reduce stress and promote relaxation, leading to improved sleep quality.
-[ 95.42s][user ] Where can I find some good ones? ⟨ret@98.12s⟩
-[ 98.19s][moshi] ⟦⚡SPAN@98.22s: (tool result) Headspace and Calm are two popular apps offering a wide variety of guided sleep meditations, wit⟧ Headspace and Calm are two popular apps offering a wide variety of guided sleep meditations, with user ratings averaging 4.5 stars.
-      CALL: {"function": "search", "arguments": {"query": "best sleep meditations"}}
+[  0.00s][user ] Hi Tal, I’m thinking about taking some time off work next year.
+[  4.45s][moshi] «backchannel» Okay.
+[  4.82s][moshi] Hi there! That’s wonderful to hear.
+[  7.04s][user ] I’m not sure where to go yet, though.
+[ 10.01s][moshi] «backchannel» Uh-huh.
+[ 10.38s][moshi] That’s perfectly okay! We can brainstorm some ideas. Do you have any preferences – beach, mountains, city?
+[ 16.68s][user ] «backchannel» Yeah.
+[ 17.05s][user ] Hmm, maybe somewhere with nice scenery? I…
+[ 19.64s][user ] …like hiking.
+[ 20.38s][moshi] [curious] Scenery and hiking sound lovely. Have you ever considered New Zealand? It has incredible landscapes.
+[ 26.31s][user ] «backchannel» Oh.
+[ 26.68s][user ] New Zealand… I’ve heard it’s beautiful, but really far.
+[ 30.02s][moshi] «backchannel» Yeah.
+[ 30.39s][moshi] ⟨ret@30.31s⟩ ⟦⚡SPAN@30.65s: New Zealand is an island country in the southwestern Pacific Ocean, known for its stunning landscapes and adve⟧ It’s a truly special place, known for its stunning landscapes and adventure tourism. We could discuss pacing your itinerary to combat jet lag if you like.
+[ 40.03s][user ] «backchannel» Yeah, totally.
+[ 40.77s][moshi] Great! I can also help with packing light—a real skill for longer trips.
+[ 45.59s][user ] «backchannel» Yeah.
+[ 45.96s][user ] I’m also curious about places closer ⟨ret@48.31s⟩ to home.
+[ 48.92s][moshi] ⟦⚡SPAN@48.61s: The Canadian Rockies comprise the eastern part of the North American Rocky Mountains, stretching from British ⟧ The Canadian Rockies comprise the eastern part of the North American Rocky Mountains, stretching from British Columbia and Alberta. They offer amazing hiking and breathtaking views.
+[ 58.56s][user ] «backchannel» Wow.
+[ 58.93s][user ] I’ve seen pictures of Banff. It looks gorgeous.
+[ 61.89s][moshi] Banff is stunning! It’s a popular destination for a reason.
+[ 65.60s][user ] What’s the weather like in Banff in July?
+[ 68.56s][moshi] «backchannel» Yeah.
+[ 68.93s][moshi] ⟨ret@68.77s⟩ ⟦⚡SPAN@69.24s: (tool result) Banff, AB: 22.5°C, humidity 65%, wind 7.2 km/h, condition: partly cloudy.⟧ In Banff, it’s currently 22.5°C, with humidity at 65%, a wind speed of 7.2 km/h, and partly cloudy conditions. That's typical for July there.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Banff"}}
+[ 77.83s][user ] Hmm, that sounds pleasant.
+[ 79.31s][moshi] It really is. July is a fantastic time to visit.
+[ 83.02s][user ] «backchannel» Yeah.
+[ 83.39s][user ] I’m thinking of going for about two weeks.
+[ 86.35s][moshi] «backchannel» Right.
+[ 86.72s][moshi] Two weeks is a good amount of time to explore. We can build a relaxed itinerary.
+[ 92.65s][user ] What are some must-see things in ⟨ret@94.70s⟩ Banff?
+[ 95.25s][moshi] ⟦⚡SPAN@95.19s: Lake Louise, Moraine Lake, and the Banff Gondola are popular attractions in Banff National Park, Alberta, Cana⟧ Lake Louise, Moraine Lake, and the Banff Gondola are popular attractions in Banff National Park. I can also find hiking trails based on your experience level.
+[104.88s][user ] «backchannel» Yeah.
+[105.25s][moshi] [laugh] I’m glad you’re impressed! There's so much to see and do. I can pull up some trail maps if you’d like.
+[113.41s][user ] Yes, please! Easy to moderate trails, I ⟨ret@116.18s⟩ think.
+[116.37s][moshi] ⟦⚡SPAN@116.86s: (tool result) Johnston Canyon Trail is a popular 2.2 km hike with moderate elevation gain, known for its water⟧ I'll search for some easy to moderate hiking trails near Banff.
+      CALL: {"function": "search", "arguments": {"query": "easy to moderate hiking trails Banff"}}
+[120.45s][moshi] Johnston Canyon Trail is a popular 2.2 km hike with moderate elevation gain, known for its waterfalls, and Tunnel Mountain Trail is a 4.3 km hike offering panoramic views. AllTrails has a lot more options, too, if you want to browse.

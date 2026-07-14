@@ -4,82 +4,80 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Nathan",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-21",
+#       "category": "dislike",
+#       "text": "User can't stand cilantro."
 #     },
 #     {
-#       "date": "2026-04-02",
+#       "date": "2026-05-18",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
+#     },
+#     {
+#       "date": "2026-04-25",
+#       "category": "car",
+#       "text": "User drives a 2021 Tesla Model 3."
+#     },
+#     {
+#       "date": "2026-04-08",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
+#     },
+#     {
+#       "date": "2026-04-03",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "home",
-#       "text": "User's home address is 262 Cedar Lane."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User is planning a trip to the Scottish Highlands in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-21",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-07",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me about any music events hap | S2 That Kendrick Lamar concert sounds | S3 …what kind of music does he make? | S4 I’m thinking of going, but I have 
 
-     0.00s  user  발화 시작: Tell me about any music events happening in Los Angeles toda
-     4.03s  <ret> 발화 (turn1 첫 프레임)
-     4.10s  agent 발화 시작: <ret> [happy] There are a couple of music events in Los Ange
-     4.10s  user  발화 끝
-     4.90s  ⚡SPAN 주입 [d'=0.86s / d_lead=10.82s]: (tool result) Event: "Kendrick Lamar: The Pop Out Tour" at Crypto.com 
-    14.92s  user  발화 시작: That Kendrick Lamar concert sounds interesting. Uh…
-    14.92s  agent 발화 끝
-    17.53s  user  발화 시작: …what kind of music does he make?
-    17.53s  user  발화 끝
-    20.15s  agent 발화 시작: Kendrick Lamar is a really influential hip-hop artist, known
-    20.15s  user  발화 끝
-    29.85s  user  발화 시작: Yeah.
-    29.85s  agent 발화 끝
-    30.22s  user  발화 시작: I’m thinking of going, but I have a dentist appointment next
-    30.22s  user  발화 끝
-    36.56s  agent 발화 시작: [curious] That’s a tricky one. Buying now guarantees you a s
-    36.56s  user  발화 끝
-    52.23s  agent 발화 끝
+     0.00s  user  발화 시작: What is the location name at one hundred thirteen point two 
+     5.80s  user  발화 시작: …twenty three point one two nine one?
+     5.80s  user  발화 끝
+     8.63s  <ret> 발화 (turn2 첫 프레임)
+     8.70s  agent 발화 시작: <ret> Give me a moment while I check that location for you.
+     8.70s  user  발화 끝
+     9.50s  ⚡SPAN 주입 [d'=0.86s / d_lead=4.56s]: (no information found)
+    13.26s  user  발화 시작: Okay, thank you. I’ve been feeling so overwhelmed lately.
+    13.26s  agent 발화 끝
+    16.73s  <ret> 발화 (turn4 첫 프레임)
+    16.99s  agent 발화 시작: <ret> Burnout, as defined by the World Health Organization, 
+    16.99s  user  발화 끝
+    18.23s  ⚡SPAN 주입 [d'=1.50s / d_lead=12.43s]: The World Health Organization defines burnout as a syndrome conceptual
+    28.50s  ⚡지연 SPAN 주입(선제발표 직전): The coordinates 113.2645, 23.1291 correspond to Guangzhou, Guangdong P
+    29.42s  agent 발화 시작: <ret> I just located that coordinate. Those coordinates pinp
+    29.42s  agent 발화 끝
+    39.37s  agent 발화 끝

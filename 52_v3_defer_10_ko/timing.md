@@ -4,71 +4,106 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "현국",
+#     "name": "태희",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-04-02",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-06",
+#       "date": "2026-05-21",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2025-12-04",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-05-18",
+#       "category": "employer",
+#       "text": "User works at a construction firm."
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "category": "dislike",
+#       "text": "User can't stand cilantro."
+#     },
+#     {
+#       "date": "2026-04-08",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "plant",
+#       "text": "User is growing a fiddle-leaf fig at home."
+#     },
+#     {
+#       "date": "2025-12-18",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is butter chicken."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-13",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-03",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "title": "Building a PC",
+#       "bullets": [
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "title": "Switching phone plans",
+#       "bullets": [
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 오늘 로스앤젤레스에서 열리는 음악 행사 좀 알려줘.
-     3.23s  <ret> 발화 (turn1 첫 프레임)
-     3.24s  agent 발화 시작: <ret> 오늘 로스앤젤레스에서 열리는 음악 행사로는 롤링 스톤즈의 소파이 스타디움 콘서트와 할리우드 재즈 
-     3.24s  user  발화 끝
-     4.73s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.47s]: There are several music events happening in Los Angeles today, July 10
-     9.71s  user  발화 시작: 재즈 페스티벌이 어디서 열리는지 좀 더 자세히 알려줄 수 있어?
-     9.71s  agent 발화 끝
-    14.34s  agent 발화 시작: 네.
-    14.34s  user  발화 끝
-    14.78s  <ret> 발화 (turn4 첫 프레임)
-    14.80s  agent 발화 시작: <ret> 할리우드 재즈 페스티벌은 이천삼백일 엔 Highland Ave, Los Angeles, 씨 에이 
-    14.80s  agent 발화 끝
-    15.73s  ⚡SPAN 주입 [d'=0.95s / d_lead=12.49s]: The Hollywood Jazz Festival is taking place at Hollywood Bowl, 2301 N 
-    27.29s  user  발화 시작: 네.
-    27.29s  agent 발화 끝
-    27.75s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 서울시청의 정확한 위치를 알려줄 수 있을까요? 좌표가 백십삼 점 이 육, 이십삼 점 일 이 정도 되는 
+     9.59s  <ret> 발화 (turn1 첫 프레임)
+     9.60s  agent 발화 시작: <ret> 서울시청은 대한민국 서울특별시 중구 세종대로 백십에 위치해 있습니다.
+     9.60s  user  발화 끝
+    11.09s  ⚡SPAN 주입 [d'=1.50s / d_lead=3.84s]: (tool result) Seoul City Hall is located at 110 Sejong-daero, Jung-gu,
+    13.44s  user  발화 시작: 아, 그렇군요. 그럼 거기서 명동까지 대중교통으로 어떻게 가나요?
+    13.44s  agent 발화 끝
+    16.73s  <ret> 발화 (turn3 첫 프레임)
+    17.28s  agent 발화 시작: <ret> 서울시청역에서 이호선을 타고 명동역까지 가시면 약 십분 정도 걸리고, 요금은 천 이백 오십 원입니
+    17.28s  user  발화 끝
+    17.69s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.72s]: (tool result) Transit directions from Seoul City Hall to Myeongdong: t
+    24.00s  user  발화 시작: 네.
+    24.00s  agent 발화 끝
+    24.48s  user  발화 시작: 이야, 빠르네요. 그런데 혹시 오늘 서울 날씨는 어때요?
+    24.48s  user  발화 끝
+    28.25s  <ret> 발화 (turn7 첫 프레임)
+    28.32s  agent 발화 시작: 그렇죠.
+    28.32s  user  발화 끝
+    28.55s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.20s]: The weather in Seoul today is 28.5°C, humidity 65%, wind 3.2 km/h.
+    28.80s  agent 발화 시작: <ret> [happy] 오늘 서울 날씨는 섭씨 이십팔 점 오도이고, 습도는 육십오퍼센트, 바람은 시속 삼 
+    28.80s  agent 발화 끝
+    36.00s  agent 발화 끝

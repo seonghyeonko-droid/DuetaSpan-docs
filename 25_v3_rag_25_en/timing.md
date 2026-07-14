@@ -4,101 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Adam",
+#     "name": "Milan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "40s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2026-06-05",
+#       "category": "employer",
+#       "text": "User works at a law firm."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-04-14",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "home",
-#       "text": "User's home address is 165 Maple Drive."
+#       "date": "2026-03-24",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
 #     },
 #     {
-#       "date": "2025-12-15",
+#       "date": "2026-01-31",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
+#     },
+#     {
+#       "date": "2026-01-15",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User's favorite cuisine is Indian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-08",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-15",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-27",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "title": "Looking for a therapist",
+#       "bullets": [
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "title": "Sorting out a visa",
+#       "bullets": [
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to remember a Korean ar | S2 The Korean War… so, World War II m | S3 It is. I’m trying to find some of  | S4 A rough draft… I always want every
+# EXAMINER(FDB-v2) 단계: S1 I’m having a really tough time wit | S2 Hmm, okay. But what if they just…k | S3 Boundaries… easier said than done, | S4 That’s… interesting. I’ll try that
 
-     0.00s  user  발화 시작: I’m trying to remember a Korean artist… Chang Ucchin, I thin
-     5.60s  agent 발화 시작: That's a lovely name. Chang Ucchin was a significant figure 
-     5.60s  user  발화 끝
-    12.95s  user  발화 시작: Yeah.
-    12.95s  agent 발화 끝
-    13.30s  user  발화 시작: Rural life… right. What time period did he live in, then?
-    13.30s  user  발화 끝
-    17.14s  <ret> 발화 (turn4 첫 프레임)
-    17.15s  agent 발화 시작: <ret> He was born in 1917, in Korea under Japanese occupatio
-    17.15s  user  발화 끝
-    18.17s  ⚡SPAN 주입 [d'=1.03s / d_lead=7.35s]: Chang Ucchin was born in 1917 in Japanese-occupied Korea, and his arti
-    24.50s  user  발화 시작: The Korean War… so, World War II must have impacted him too,
-    24.50s  agent 발화 끝
-    28.76s  <ret> 발화 (turn6 첫 프레임)
-    28.99s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.70s]: World War II, lasting from 1939 to 1945, significantly impacted Korea,
-    29.05s  agent 발화 시작: <ret> World War II, from 1939 to 1945, greatly impacted Kore
-    29.05s  user  발화 끝
-    36.76s  user  발화 시작: Mm-hmm.
-    36.76s  agent 발화 끝
-    37.11s  agent 발화 시작: It’s remarkable how historical events shape an artist’s pers
-    37.11s  user  발화 끝
-    40.96s  user  발화 시작: It is. I’m trying to find some of his paintings online. Can 
-    40.96s  agent 발화 끝
-    46.36s  <ret> 발화 (turn11 첫 프레임)
-    46.56s  agent 발화 시작: Okay.
-    46.56s  user  발화 끝
-    46.91s  agent 발화 시작: <ret> You can find many examples of his work—landscapes and 
-    46.91s  agent 발화 끝
-    46.92s  ⚡SPAN 주입 [d'=0.56s / d_lead=7.00s]: (tool result) Chang Ucchin was a Korean painter known for his depictio
-    53.91s  user  발화 시작: That’s great, thanks! I’m also trying to be more creative my
-    53.91s  agent 발화 끝
-    59.51s  agent 발화 시작: [happy] That’s a very common feeling. Sometimes, just starti
-    59.51s  user  발화 끝
-    66.51s  user  발화 시작: Yeah.
-    66.51s  agent 발화 끝
-    66.86s  user  발화 시작: A rough draft… I always want everything to be perfect right 
-    66.86s  user  발화 끝
-    71.06s  agent 발화 시작: Yeah.
-    71.06s  user  발화 끝
-    71.41s  agent 발화 시작: [sigh] I understand that impulse. But perfection can be the 
-    71.41s  agent 발화 끝
-    82.26s  agent 발화 끝
+     0.00s  user  발화 시작: I’m having a really tough time with a coworker, always under
+     5.36s  agent 발화 시작: Oh dear, that sounds incredibly frustrating. It's common to 
+     5.36s  user  발화 끝
+    11.86s  user  발화 시작: Uh-huh.
+    11.86s  agent 발화 끝
+    12.24s  user  발화 시작: It is. I feel like I can’t win. Is there a strategy for deal
+    12.24s  user  발화 끝
+    19.51s  agent 발화 시작: There absolutely is! Often, preemptive communication can hel
+    19.51s  user  발화 끝
+    26.78s  user  발화 시작: Hmm, okay. But what if they just…keep doing it?
+    26.78s  agent 발화 끝
+    30.08s  <ret> 발화 (turn6 첫 프레임)
+    30.22s  agent 발화 시작: <ret> It's great you're thinking ahead! Assertiveness is key
+    30.22s  user  발화 끝
+    31.41s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.42s]: Assertiveness involves clearly stating one's needs and boundaries whil
+    38.64s  user  발화 시작: Yeah.
+    38.64s  agent 발화 끝
+    39.02s  agent 발화 시작: It’s about finding your voice and setting boundaries.
+    39.02s  user  발화 끝
+    42.08s  user  발화 시작: Yeah.
+    42.08s  agent 발화 끝
+    42.46s  user  발화 시작: Boundaries… easier said than done, right? I always end up ba
+    42.46s  user  발화 끝
+    47.05s  agent 발화 시작: [sigh] You're not alone there. Many people struggle with bou
+    47.05s  user  발화 끝
+    55.09s  user  발화 시작: Okay, but what about a specific situation? Like, they interr
+    55.09s  agent 발화 끝
+    59.13s  <ret> 발화 (turn13 첫 프레임)
+    59.68s  agent 발화 시작: <ret> For constant interruptions, try the “broken record” te
+    59.68s  user  발화 끝
+    59.92s  ⚡SPAN 주입 [d'=0.80s / d_lead=8.03s]: The “broken record” technique involves calmly and repeatedly stating o
+    67.71s  user  발화 시작: That’s… interesting. I’ll try that. What about if it escalat
+    67.71s  agent 발화 끝
+    71.54s  agent 발화 시작: Yeah, yeah.
+    71.54s  user  발화 끝
+    72.30s  agent 발화 시작: If it escalates, it’s time to involve HR or a manager. [happ
+    72.30s  agent 발화 끝
+    80.72s  agent 발화 끝

@@ -4,123 +4,144 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Louis",
+#     "name": "Emilia",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-25",
+#       "date": "2026-06-08",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Noah."
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "category": "employer",
+#       "text": "User works at an e-commerce company."
+#     },
+#     {
+#       "date": "2026-04-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Portugal in February."
+#     },
+#     {
+#       "date": "2026-04-19",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "home",
-#       "text": "User's home address is 300 Elm Street."
+#       "date": "2026-02-15",
+#       "category": "show",
+#       "text": "User is currently watching a stand-up comedy special."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-01-26",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Marco."
 #     },
 #     {
-#       "date": "2026-01-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-01-24",
+#       "category": "airline",
+#       "text": "User usually flies with Air France."
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "category": "phone",
+#       "text": "User uses a Galaxy Z Flip."
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is mushroom risotto."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-24",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-07",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "title": "Planning a dinner party",
+#       "bullets": [
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who has the most followers on Inst | S2 I wonder why those people are so p | S3 …do you have any tips for getting  | S4 Hmm, interesting. I’m usually free
+# EXAMINER(FDB-v2) 단계: S1 Hey Taeon, my son is getting into  | S2 Yeah, definitely. What about Studi | S3 Totoro, got it. I'll… | S4 No, that’s alright. I think I can 
 
-     0.00s  user  발화 시작: Who has the most followers on Instagram right now?
-     3.55s  <ret> 발화 (turn2 첫 프레임)
-     3.70s  agent 발화 시작: Yeah.
-     3.70s  user  발화 끝
-     4.11s  agent 발화 시작: <ret> Well, it looks like Cristiano Ronaldo is currently the
-     4.11s  agent 발화 끝
-     4.30s  ⚡SPAN 주입 [d'=0.74s / d_lead=10.28s]: Cristiano Ronaldo currently holds the title of the most followed indiv
-    14.39s  user  발화 시작: Wow, that’s a lot! Is that more than Selena Gomez?
-    14.39s  agent 발화 끝
-    18.50s  agent 발화 시작: Yeah.
-    18.50s  user  발화 끝
-    18.53s  <ret> 발화 (turn5 첫 프레임)
-    18.83s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.22s]: Selena Gomez has 431.1 million followers on Instagram as of November 2
-    18.91s  agent 발화 시작: <ret> Yes, it is! Selena Gomez has four hundred and thirty-o
-    18.91s  agent 발화 끝
-    27.13s  user  발화 시작: Yeah, yeah.
-    27.13s  agent 발화 끝
-    27.95s  user  발화 시작: What about Kylie Jenner?
-    27.95s  user  발화 끝
-    29.31s  <ret> 발화 (turn8 첫 프레임)
-    29.54s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.58s]: Kylie Jenner has 400 million followers on Instagram as of November 202
-    29.60s  agent 발화 시작: <ret> Kylie Jenner is also up there, with four hundred milli
-    29.60s  user  발화 끝
-    36.17s  user  발화 시작: I wonder why those people are so popular…
-    36.17s  agent 발화 끝
-    39.46s  agent 발화 시작: Uh-huh.
-    39.46s  user  발화 끝
-    39.53s  <ret> 발화 (turn11 첫 프레임)
-    39.87s  agent 발화 시작: <ret> It’s interesting to think about what draws so many peo
-    39.87s  agent 발화 끝
-    40.59s  ⚡SPAN 주입(IRRELEVANT) [d'=1.06s / d_lead=6.17s]: The average high temperature in Fairbanks, Alaska in December is -1.7°
-    46.04s  user  발화 시작: Yeah, it is. Do they all post about similar things?
-    46.04s  agent 발화 끝
-    50.15s  agent 발화 시작: They each have quite distinct styles, but they all seem to s
-    50.15s  user  발화 끝
-    58.78s  user  발화 시작: That makes sense. I’m trying to build my own online presence
-    58.78s  agent 발화 끝
-    64.54s  agent 발화 시작: Building an online presence takes time and consistency—
-    64.54s  user  발화 끝
-    67.83s  user  발화 시작: …do you have any tips for getting more followers?
-    67.83s  agent 발화 끝
-    71.53s  agent 발화 시작: It absolutely does! Focusing on creating high-quality conten
-    71.53s  user  발화 끝
-    78.10s  user  발화 시작: High-quality content, okay. What counts as high-quality?
-    78.10s  agent 발화 끝
-    80.98s  agent 발화 시작: Consistent posting, engaging visuals, and authentic interact
-    80.98s  user  발화 끝
-    87.97s  user  발화 시작: Authentic interaction… that’s good advice. Is there a best t
-    87.97s  agent 발화 끝
-    92.30s  <ret> 발화 (turn21 첫 프레임)
-    92.90s  agent 발화 시작: <ret> There are some optimal times, actually! Hootsuite sugg
-    92.90s  user  발화 끝
-    92.94s  ⚡SPAN 주입 [d'=0.64s / d_lead=9.04s]: According to Hootsuite, the best times to post on Instagram are 11 AM 
-   101.95s  user  발화 시작: Yeah.
-   101.95s  agent 발화 끝
-   102.36s  user  발화 시작: Hmm, interesting. I’m usually free in the evenings.
-   102.36s  user  발화 끝
-   105.65s  agent 발화 시작: Evenings can still work, but you might see better engagement
-   105.65s  user  발화 끝
-   115.10s  user  발화 시작: Mhm.
-   115.10s  agent 발화 끝
-   115.51s  user  발화 시작: Maybe I’ll try posting at those times. Thanks, Bulo!
-   115.51s  user  발화 끝
-   119.21s  agent 발화 시작: You're very welcome! Remember, building a genuine connection
-   119.21s  user  발화 끝
-   125.38s  user  발화 시작: That’s a good reminder. I feel a little less stressed now.
-   125.38s  agent 발화 끝
-   129.90s  agent 발화 시작: Yeah.
-   129.90s  user  발화 끝
-   130.31s  agent 발화 시작: That’s wonderful to hear! Prioritizing well-being is always 
-   130.31s  agent 발화 끝
-   136.89s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Taeon, my son is getting into anime, and he wants to wat
+     5.84s  <ret> 발화 (turn1 첫 프레임)
+     6.44s  agent 발화 시작: <ret> Oh, that's a great choice! Future Diary was adapted in
+     6.44s  user  발화 끝
+     7.21s  ⚡SPAN 주입 [d'=1.37s / d_lead=10.85s]: Future Diary, also known as Mirai Nikki, is a Japanese manga series wr
+    17.30s  user  발화 시작: Yeah.
+    17.30s  agent 발화 끝
+    17.64s  user  발화 시작: Twenty-six, okay. Is it pretty dark? He’s ten.
+    17.64s  user  발화 끝
+    20.35s  agent 발화 시작: It definitely has some darker themes, yes. It’s about a surv
+    20.35s  user  발화 끝
+    29.17s  user  발화 시작: Hmm. Maybe we'll start with something lighter.
+    29.17s  agent 발화 끝
+    31.00s  <ret> 발화 (turn6 첫 프레임)
+    31.41s  ⚡SPAN 주입 [d'=0.41s / d_lead=4.75s]: The city of Busan, South Korea, has a population of 3.4 million people
+    31.54s  agent 발화 시작: <ret> Speaking of finding things, I was just reading about B
+    31.54s  user  발화 끝
+    36.29s  user  발화 시작: Uh-huh.
+    36.29s  agent 발화 끝
+    36.63s  agent 발화 시작: …with so much to offer. But let’s stick to anime for now, ok
+    36.63s  user  발화 끝
+    41.04s  user  발화 시작: Yeah, definitely. What about Studio Ghibli films? Are those 
+    41.04s  agent 발화 끝
+    45.11s  agent 발화 시작: Mm-hmm.
+    45.11s  user  발화 끝
+    45.20s  <ret> 발화 (turn11 첫 프레임)
+    45.45s  agent 발화 시작: <ret> Oh, absolutely! Studio Ghibli films are wonderful for 
+    45.45s  agent 발화 끝
+    45.95s  ⚡SPAN 주입 [d'=0.75s / d_lead=7.80s]: Studio Ghibli films are acclaimed Japanese animated feature films, oft
+    53.25s  user  발화 시작: Yeah.
+    53.25s  agent 발화 끝
+    53.59s  user  발화 시작: That sounds perfect. Which one would you recommend as a firs
+    53.59s  user  발화 끝
+    57.66s  <ret> 발화 (turn14 첫 프레임)
+    58.00s  agent 발화 시작: <ret> I think My Neighbor Totoro is a fantastic starting poi
+    58.00s  user  발화 끝
+    58.62s  ⚡SPAN 주입 [d'=1.15s / d_lead=9.50s]: My Neighbor Totoro, released in 1988, is a beloved Studio Ghibli film 
+    67.50s  user  발화 시작: Okay.
+    67.50s  agent 발화 끝
+    67.84s  user  발화 시작: Totoro, got it. I'll…
+    67.84s  user  발화 끝
+    69.19s  user  발화 시작: …look that up tonight.
+    69.19s  user  발화 끝
+    69.98s  <ret> 발화 (turn18 첫 프레임)
+    70.55s  agent 발화 시작: <ret> I was just checking the weather… it seems Melbourne is
+    70.55s  user  발화 끝
+    71.11s  ⚡SPAN 주입 [d'=1.13s / d_lead=4.41s]: The average rainfall in Melbourne, Australia, in July is 48.8 mm, with
+    74.96s  user  발화 시작: Yeah.
+    74.96s  agent 발화 끝
+    75.30s  agent 발화 시작: But, back to our topic, do you want me to help you find wher
+    75.30s  user  발화 끝
+    81.06s  user  발화 시작: No, that’s alright. I think I can find it. Thanks, Taeon.
+    81.06s  agent 발화 끝
+    84.80s  agent 발화 시작: You're very welcome! Remember, focusing on the enjoyment of 
+    84.80s  user  발화 끝
+    89.88s  user  발화 시작: That's a good point. I always forget that.
+    89.88s  agent 발화 끝
+    92.60s  agent 발화 시작: It’s easy to get caught up in finding the “best” thing, but 
+    92.60s  user  발화 끝
+   101.42s  agent 발화 끝

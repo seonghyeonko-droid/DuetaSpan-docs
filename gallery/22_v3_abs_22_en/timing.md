@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Felix",
+#     "name": "Emil",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -13,65 +13,122 @@
 #     },
 #     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
+#       "date": "2026-06-28",
+#       "category": "savings",
+#       "text": "User is saving for a down payment on an apartment."
+#     },
+#     {
+#       "date": "2026-06-09",
+#       "category": "employer",
+#       "text": "User works at a research institute."
+#     },
+#     {
+#       "date": "2026-05-27",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
+#     },
+#     {
+#       "date": "2026-05-26",
+#       "category": "plant",
+#       "text": "User is growing a fiddle-leaf fig at home."
+#     },
+#     {
+#       "date": "2026-05-05",
+#       "category": "learning",
+#       "text": "User is training for a half-marathon."
+#     },
+#     {
+#       "date": "2026-03-07",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2026-05-01",
-#       "category": "home",
-#       "text": "User's home address is 620 Elm Street."
-#     },
-#     {
-#       "date": "2026-04-25",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-29",
+#       "date": "2026-01-12",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "home",
+#       "text": "User's home address is 955 Alder Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-30",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-13",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-25",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-23",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "title": "Planning a dinner party",
+#       "bullets": [
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 What is the most common Slavic lan | S2 That sounds like a lot. I'm trying | S3 …do any of them have relatively si | S4 Okay, that makes sense. Thanks, Je
 
-     0.00s  user  발화 시작: What group was neutral about this issue as they felt the sub
-     4.80s  <ret> 발화 (turn1 첫 프레임)
-     4.88s  agent 발화 시작: <ret> But unfortunately, I don’t have information about any 
-     4.88s  user  발화 끝
-     5.50s  ⚡SPAN 주입 [d'=0.70s / d_lead=4.53s]: (no information found)
-     9.40s  user  발화 시작: Oh, okay. Well, could you tell me about the Pomodoro Techniq
-     9.40s  agent 발화 끝
-    13.24s  agent 발화 시작: Yeah.
-    13.24s  user  발화 끝
-    13.58s  agent 발화 시작: [happy] Absolutely! The Pomodoro Technique is a time managem
-    13.58s  agent 발화 끝
-    26.47s  user  발화 시작: Mm-hmm.
-    26.47s  agent 발화 끝
-    26.82s  agent 발화 시작: It's a great way to stay focused and avoid burnout, and you 
-    26.82s  user  발화 끝
-    38.32s  agent 발화 끝
+     0.00s  user  발화 시작: What is the most common Slavic language?
+     2.56s  agent 발화 시작: Well, that's a tricky one—it seems there isn't a definitive 
+     2.56s  user  발화 끝
+     9.51s  user  발화 시작: Wow.
+     9.51s  agent 발화 끝
+     9.87s  user  발화 시작: Oh. Hmm. What about Polish, then? Is that widely used?
+     9.87s  user  발화 끝
+    13.53s  agent 발화 시작: Yeah, totally.
+    13.53s  user  발화 끝
+    14.05s  <ret> 발화 (turn5 첫 프레임)
+    14.20s  ⚡SPAN 주입 [d'=0.97s / d_lead=9.51s]: Polish is a West Slavic language spoken primarily in Poland, with appr
+    14.26s  agent 발화 시작: <ret> Polish is a West Slavic language, primarily spoken in 
+    14.26s  agent 발화 끝
+    23.77s  user  발화 시작: Yeah.
+    23.77s  agent 발화 끝
+    24.13s  user  발화 시작: That sounds like a lot. I'm trying to learn a new language, 
+    24.13s  user  발화 끝
+    30.35s  agent 발화 시작: That's wonderful! Slavic languages are beautiful and rewardi
+    30.35s  user  발화 끝
+    36.56s  user  발화 시작: …do any of them have relatively simple grammar, compared to 
+    36.56s  agent 발화 끝
+    40.58s  agent 발화 시작: Yeah, totally.
+    40.58s  user  발화 끝
+    41.32s  agent 발화 시작: Bulgarian and Macedonian are often considered to have simple
+    41.32s  agent 발화 끝
+    49.36s  user  발화 시작: Oh, interesting. Are those languages very different from Pol
+    49.36s  agent 발화 끝
+    53.02s  agent 발화 시작: Mm-hmm.
+    53.02s  user  발화 끝
+    53.27s  <ret> 발화 (turn14 첫 프레임)
+    53.37s  ⚡SPAN 주입 [d'=1.29s / d_lead=9.51s]: Bulgarian and Macedonian belong to the South Slavic branch, while Poli
+    53.38s  agent 발화 시작: <ret> Bulgarian and Macedonian are quite different from Poli
+    53.38s  agent 발화 끝
+    62.89s  user  발화 시작: Okay, that makes sense. Thanks, Jes.
+    62.89s  agent 발화 끝
+    65.08s  user  발화 끝

@@ -4,108 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "하민",
+#     "name": "보우",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2026-03-13",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-02-07",
+#       "date": "2026-05-10",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-05-02",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "category": "dislike",
+#       "text": "User can't stand liver."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-26",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-07",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-06",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-02",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 네, 안녕하세요. 전에 제가 베트남 여행 계획 세우고 있 | S2 음… 호이안이 더 끌리네요. 혹시 호이안에 사진 찍기 좋은 곳 | S3 아, 좋네요. 그럼 호이안 근처에 괜찮은 호텔도 알아봐 주시겠 | S4 오, 괜찮네요. 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 네, 덕분에 잘 지냈어요. 래나 씨는요? | S2 사백팔십만 원이요? 생각보다 꽤 되네요. | S3 알겠습니다. 노력해 봐야겠네요. | S4 네, 다행이네요. 물 주는 게 좀 어려워서 걱정했어요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 하민님. 저는 오리아입니다. 커리어 고민이나 직장 스트레스, 뭐든 편하게 말씀해주세요.
-     5.45s  user  발화 시작: 아, 네, 안녕하세요. 전에 제가 베트남 여행 계획 세우고 있다고 말씀드렸었죠?
-     5.45s  agent 발화 끝
-    10.72s  <ret> 발화 (turn2 첫 프레임)
-    10.91s  agent 발화 시작: <ret> 네, 십이월에 베트남 여행을 계획하고 계시다고 말씀해주셨어요.
-    10.91s  user  발화 끝
-    11.81s  ⚡SPAN 주입 [d'=1.09s / d_lead=3.47s]: [2026-05-03] User is planning a trip to Vietnam in December.
-    14.38s  user  발화 시작: 그럼 혹시 하노이 말고 다른 도시도 추천해주실 수 있을까요? 좀 조용한 곳으로요.
-    14.38s  agent 발화 끝
-    20.33s  agent 발화 시작: 다낭이나 호이안은 어떠세요? 조용하고 아름다운 해변 도시예요.
-    20.33s  user  발화 끝
-    23.80s  user  발화 시작: 맞아요.
-    23.80s  agent 발화 끝
-    24.30s  user  발화 시작: 음… 호이안이 더 끌리네요. 혹시 호이안에 사진 찍기 좋은 곳이 있을까요? 제가 야생화 사진 찍는 걸 좋아하
-    24.30s  user  발화 끝
-    32.73s  agent 발화 시작: 네.
-    32.73s  user  발화 끝
-    33.20s  <ret> 발화 (turn8 첫 프레임)
-    33.22s  agent 발화 시작: <ret> 호이안에 야생화 사진 찍기 좋은 곳이요? 음, 호이안 구시가지 주변의 정원이나 논밭에서 예쁜 꽃들
-    33.22s  agent 발화 끝
-    34.02s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.93s]: [2026-03-13] User is into alpine wildflower photography.
-    42.15s  user  발화 시작: 아, 좋네요. 그럼 호이안 근처에 괜찮은 호텔도 알아봐 주시겠어요? 수영장이 있으면 더 좋고요.
-    42.15s  agent 발화 끝
-    48.59s  agent 발화 시작: 음.
-    48.59s  user  발화 끝
-    48.80s  <ret> 발화 (turn11 첫 프레임)
-    49.09s  agent 발화 시작: <ret> 호이안에 있는 아난타라 호이안 리조트는 어떠세요? 수영장과 스파, 레스토랑도 갖춰져 있고, 평점도
-    49.09s  agent 발화 끝
-    50.07s  ⚡SPAN 주입 [d'=1.27s / d_lead=8.93s]: (tool result) {"hotel name": "Anantara Hoi An Resort", "address": "1 P
-    58.01s  user  발화 시작: 네.
-    58.01s  agent 발화 끝
-    58.51s  user  발화 시작: 오, 괜찮네요. 감사합니다.
-    58.51s  user  발화 끝
-    60.00s  agent 발화 시작: [happy] 도움이 되셨다니 다행이에요.
-    60.00s  user  발화 끝
-    61.98s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 보우님! 저는 래나예요. 오늘 하루도 잘 보내셨나요?
+     4.08s  user  발화 시작: 네, 덕분에 잘 지냈어요. 래나 씨는요?
+     4.08s  agent 발화 끝
+     7.13s  agent 발화 시작: 저도 괜찮았어요. 혹시 지난번에 말씀하신 호주 워킹홀리데이 비자 준비는 잘 되어 가시나요?
+     7.13s  user  발화 끝
+    13.25s  user  발화 시작: 아, 네. 그런데 비자 신청할 때 은행 잔고 증명이 필요하다고 하던데… 얼마가 필요한지 기억이 잘 안 나요.
+    13.25s  agent 발화 끝
+    21.91s  agent 발화 시작: 맞아요.
+    21.91s  user  발화 끝
+    22.32s  <ret> 발화 (turn5 첫 프레임)
+    22.42s  agent 발화 시작: <ret> 지난 대화에서 호주 워킹홀리데이 비자 신청을 위해 은행 잔고 증명이 필요하다고 말씀하셨었죠.
+    22.42s  agent 발화 끝
+    22.62s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.11s]: [2026-04-06] Past chat — Sorting out a visa: applying for a working-ho
+    28.53s  user  발화 시작: 네.
+    28.53s  agent 발화 끝
+    29.04s  user  발화 시작: 맞아요, 그게 맞는데…
+    29.04s  user  발화 끝
+    30.57s  agent 발화 시작: 잔고 증명에 필요한 금액은 에이 유 디 오천이에요. 한화로 계산하면 대략 사백팔십만 원 정도 돼요.
+    30.57s  user  발화 끝
+    38.21s  user  발화 시작: 사백팔십만 원이요? 생각보다 꽤 되네요.
+    38.21s  agent 발화 끝
+    40.76s  agent 발화 시작: 네, 꽤 큰 금액이죠. 그래도 워킹홀리데이 기간 동안 생활할 수 있는 최소한의 금액이라고 하니 미리 준비하시
+    40.76s  user  발화 끝
+    50.44s  user  발화 시작: 네네.
+    50.44s  agent 발화 끝
+    50.95s  agent 발화 시작: 혹시 지금 통장에 얼마 정도 있으신가요? 대략적으로라도 말씀해 주시면 비자 준비에 도움이 될 만한 정보가 있
+    50.95s  user  발화 끝
+    61.14s  user  발화 시작: 음… 대략 삼백만 원 정도 있어요.
+    61.14s  agent 발화 끝
+    64.20s  agent 발화 시작: 삼백만 원이 있으시군요. 그럼 조금 더 모으셔야 할 것 같아요. 이백만 원 정도 더 준비하시면 좋을 것 같아
+    64.20s  user  발화 끝
+    73.37s  user  발화 시작: 알겠습니다. 노력해 봐야겠네요.
+    73.37s  agent 발화 끝
+    74.90s  agent 발화 시작: 네, 힘내세요!
+    74.90s  user  발화 끝
+    75.92s  user  발화 시작: 아, 그리고 제가 요즘 집에서 다육식물을 키우고 있는데…
+    75.92s  agent 발화 끝
+    79.99s  agent 발화 시작: 네네.
+    79.99s  user  발화 끝
+    80.04s  <ret> 발화 (turn19 첫 프레임)
+    80.50s  agent 발화 시작: <ret> 다육식물을 키우신다고 말씀하셨군요. 다육식물은 햇빛을 좋아하고 물을 자주 주지 않아도 되니 키우기
+    80.50s  agent 발화 끝
+    80.84s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.13s]: [2026-05-10] User is growing a few succulents at home.
+    87.63s  user  발화 시작: 네, 다행이네요. 물 주는 게 좀 어려워서 걱정했어요.
+    87.63s  agent 발화 끝
+    91.71s  agent 발화 시작: 물을 너무 많이 주면 뿌리가 썩을 수 있으니 주의하세요. 흙이 완전히 마른 후에 물을 주는 것이 좋아요.
+    91.71s  user  발화 끝
+   100.37s  user  발화 시작: 맞아요.
+   100.37s  agent 발화 끝
+   100.88s  user  발화 시작: 네, 알겠습니다. 래나 씨, 정말 감사합니다.
+   100.88s  user  발화 끝
+   103.94s  agent 발화 시작: 천만에요, 보우님!
+   103.94s  user  발화 끝
+   104.96s  agent 발화 끝

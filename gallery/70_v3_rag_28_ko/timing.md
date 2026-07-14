@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "수담",
+#     "name": "지민",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,75 +12,89 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
+#       "date": "2026-05-13",
+#       "category": "savings",
+#       "text": "User is saving for an emergency fund of six months' expenses."
+#     },
+#     {
+#       "date": "2026-04-03",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "text": "User is planning a trip to Norway in September."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-02-01",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-01-28",
+#       "category": "dislike",
+#       "text": "User can't stand olives."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-12-26",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2025-12-07",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Marco."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-13",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-01",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-24",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-28",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 음… 뉴질랜드 국기에 별이 몇 개나 있어? | S3 네 개? 진짜? 뭔가 잘못된 것 같은데. | S4 아, 그렇구나. 그럼, 오늘 저녁에 맛있는 식당 좀 추천해 줘
 
-     0.00s  user  발화 시작: 에레아 씨, 혹시 아메리칸 파이 이에 스티플러 엄마로 나온 배우 누구였지? 기억이 안 나네.
-     7.22s  <ret> 발화 (turn1 첫 프레임)
-     7.47s  agent 발화 시작: <ret> 스티플러 엄마 역할은 제니퍼 오드리 쿨리지가 맡았어요. 코미디 배우로도 유명하시죠.
-     7.47s  user  발화 끝
-     7.52s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.33s]: Jennifer Audrey Coolidge is an American actress and comedian, known fo
-    12.80s  user  발화 시작: 쿨리지… 이름이 좀 낯설긴 한데…
-    12.80s  agent 발화 끝
-    15.47s  user  발화 시작: …혹시 다른 영화에도 많이 나왔어요?
-    15.47s  user  발화 끝
-    18.14s  agent 발화 시작: 네, 다양한 영화와 드라마에서 활약하셨어요. [curious] 혹시 특별히 관심 있는 작품이 있으신가요?
-    18.14s  user  발화 끝
-    24.54s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨 어때?
+     1.27s  <ret> 발화 (turn1 첫 프레임)
+     1.52s  agent 발화 시작: <ret> 부산 날씨는 현재 이십팔도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터입니다. [ha
+     1.52s  user  발화 끝
+     1.57s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.10s]: (tool result) The weather in Busan is 28.0°C, humidity 65%, wind 3.2 k
+     9.62s  user  발화 시작: 음… 뉴질랜드 국기에 별이 몇 개나 있어?
+     9.62s  agent 발화 끝
+    12.68s  <ret> 발화 (turn3 첫 프레임)
+    12.98s  ⚡SPAN 주입 [d'=0.30s / d_lead=4.05s]: The flag of New Zealand features four stars representing the Southern 
+    13.16s  agent 발화 시작: <ret> 뉴질랜드 국기에는 남십자성을 상징하는 별이 네 개 있습니다.
+    13.16s  user  발화 끝
+    17.21s  user  발화 시작: 어.
+    17.21s  agent 발화 끝
+    17.72s  user  발화 시작: 네 개? 진짜? 뭔가 잘못된 것 같은데.
+    17.72s  user  발화 끝
+    21.26s  agent 발화 시작: 네, 확실히 별은 네 개입니다. 혹시 다른 정보가 있으신가요?
+    21.26s  user  발화 끝
+    25.82s  user  발화 시작: 아, 그렇구나. 그럼, 오늘 저녁에 맛있는 식당 좀 추천해 줘.
+    25.82s  agent 발화 끝
+    30.88s  user  발화 끝

@@ -4,109 +4,130 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Henri",
+#     "name": "Harry",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "French",
 #     "gender": "male",
 #     "age_range": "late 20s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-12",
+#       "category": "car",
+#       "text": "User drives no car — uses car-sharing."
+#     },
+#     {
+#       "date": "2026-06-10",
+#       "category": "airline",
+#       "text": "User usually flies with ANA."
+#     },
+#     {
+#       "date": "2026-06-05",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
 #       "date": "2026-05-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "category": "commute",
+#       "text": "User takes the subway to work."
 #     },
 #     {
-#       "date": "2026-05-24",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-04-16",
+#       "category": "hobby",
+#       "text": "User is into trail running."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2026-03-15",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Ava."
+#     },
+#     {
+#       "date": "2026-02-19",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Elena."
+#     },
+#     {
+#       "date": "2025-12-28",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User works as a social worker."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-29",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-02",
-#       "title": "Researching a used car",
+#       "date": "2026-05-16",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-25",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, can you capture a screenshot  | S2 Okay, great. That's… smaller than  | S3 Yes, Busan. But I'm trying to cut  | S4 Sounds good. Can you reserve a tab
+# EXAMINER(FDB-v2) 단계: S1 I need to find a flight from Seoul | S2 Hmm, that's a bit early. Are there | S3 Let’s go with the Jeju Air flight. | S4 Great, thanks. I’m feeling a littl
 
-     0.00s  user  발화 시작: Hey, can you capture a screenshot of the footer as a base si
-     9.61s  <ret> 발화 (turn1 첫 프레임)
-     9.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.82s]: (tool result) data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCA
-    10.23s  agent 발화 시작: <ret> [happy] Sure thing! Here’s the footer as a base sixty 
-    10.23s  user  발화 끝
-    17.06s  user  발화 시작: Yeah.
-    17.06s  agent 발화 끝
-    17.44s  user  발화 시작: Okay, great. That's… smaller than I expected. Can you find m
-    17.44s  user  발화 끝
-    24.88s  <ret> 발화 (turn5 첫 프레임)
-    25.02s  agent 발화 시작: Mm-hmm.
-    25.02s  user  발화 끝
-    25.40s  agent 발화 시작: <ret> [curious] Of course! You’re in Busan, right? I can def
-    25.40s  agent 발화 끝
-    25.88s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.69s]: You are in Busan, South Korea.
-    31.08s  user  발화 시작: Yes, Busan. But I'm trying to cut back on carbs. Any places 
-    31.08s  agent 발화 끝
-    37.15s  agent 발화 시작: Yeah.
-    37.15s  user  발화 끝
-    37.49s  <ret> 발화 (turn8 첫 프레임)
-    37.52s  agent 발화 시작: <ret> I found Salad Story in Haeundae, Busan! They have cust
-    37.52s  agent 발화 끝
-    38.22s  ⚡SPAN 주입 [d'=0.94s / d_lead=7.20s]: Salad options are available at Salad Story Haeundae, offering fresh in
-    44.73s  user  발화 시작: Yeah.
-    44.73s  agent 발화 끝
-    45.11s  user  발화 시작: Sounds good. Can you reserve a table for one there for, uh, 
-    45.11s  user  발화 끝
-    50.96s  <ret> 발화 (turn11 첫 프레임)
-    51.17s  agent 발화 시작: <ret> [sigh] Perfect! I’ve reserved a table for one at Salad
-    51.17s  user  발화 끝
-    51.62s  ⚡SPAN 주입 [d'=0.66s / d_lead=7.96s]: (tool result) Reservation confirmed for 1 person at Salad Story Haeund
-    59.13s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find a flight from Seoul to Busan for next Tuesday
+     4.54s  agent 발화 시작: Yeah.
+     4.54s  user  발화 끝
+     4.60s  <ret> 발화 (turn2 첫 프레임)
+     4.89s  agent 발화 시작: <ret> [happy] I found a flight for you! Korean Air flight KE
+     4.89s  agent 발화 끝
+     5.64s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.09s]: Flights found: KE123, departs 09:00, arrives 10:30, price ₩80,000.
+    13.98s  user  발화 시작: Hmm, that's a bit early. Are there any later flights?
+    13.98s  agent 발화 끝
+    17.48s  agent 발화 시작: Okay.
+    17.48s  user  발화 끝
+    17.81s  <ret> 발화 (turn5 첫 프레임)
+    17.83s  agent 발화 시작: <ret> There are two later options. Korean Air flight KE456 l
+    17.83s  agent 발화 끝
+    18.37s  ⚡SPAN 주입 [d'=0.55s / d_lead=10.84s]: Flights found: KE456, departs 14:00, arrives 15:30, price ₩100,000; LJ
+    28.66s  user  발화 시작: Yeah.
+    28.66s  agent 발화 끝
+    29.01s  user  발화 시작: Let’s go with the Jeju Air flight. Can you get me tickets fo
+    29.01s  user  발화 끝
+    34.09s  <ret> 발화 (turn9 첫 프레임)
+    34.25s  agent 발화 시작: Okay.
+    34.25s  user  발화 끝
+    34.60s  agent 발화 시작: <ret> [sigh] Absolutely. I've booked you one adult ticket on
+    34.60s  agent 발화 끝
+    35.22s  ⚡SPAN 주입 [d'=1.13s / d_lead=9.79s]: (tool result) Booking confirmed: LJ789, 1 adult, ₩120,000, confirmatio
+    44.39s  user  발화 시작: Great, thanks. I’m feeling a little stressed about this work
+    44.39s  agent 발화 끝
+    48.58s  agent 발화 시작: That’s understandable. Work projects can be challenging. Is 
+    48.58s  user  발화 끝
+    57.32s  agent 발화 끝

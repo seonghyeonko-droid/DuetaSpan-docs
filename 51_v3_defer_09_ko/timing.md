@@ -4,118 +4,184 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "가린",
+#     "name": "혜희",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "late 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "category": "partner",
+#       "text": "User's partner is named Marco."
 #     },
 #     {
-#       "date": "2026-04-09",
+#       "date": "2026-06-07",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A-."
+#     },
+#     {
+#       "date": "2026-06-01",
+#       "category": "show",
+#       "text": "User is currently watching a nature documentary series."
+#     },
+#     {
+#       "date": "2026-05-30",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User is planning a trip to the Scottish Highlands in June."
 #     },
 #     {
-#       "date": "2026-03-09",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "date": "2026-04-03",
+#       "category": "learning",
+#       "text": "User is taking pottery classes."
 #     },
 #     {
-#       "date": "2026-03-04",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-03-06",
+#       "category": "employer",
+#       "text": "User works at a public university."
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-03-01",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Elena."
+#     },
+#     {
+#       "date": "2026-02-13",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "category": "schedule",
+#       "text": "User has flexible hours."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-11",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-27",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 에펠탑이 얼마나 높은 곳에 있는지 궁금해요. | S2 맞아요. 저는 주말에 남산타워 근처 카페에 가려고 하는데, 혹 | S3 아니요, 괜찮아요. 직접 갈게요. 그런데… | S4 꽤 덥겠네요.
+# EXAMINER(FDB-v2) 단계: S1 파우스야, 오늘 저녁에 친구랑 같이 볼 만한 영화 좀 찾아줘. | S2 고마워, 파우스야! 아, 그런데 내일 모레 부산에 가는데, 혹 | S3 고마워. 그런데 혹시… 내가 지난번에 '매일 아침 일곱시에 알 | S4 음… 그건 너무 일반적인데. 좀 더 구체적으로 알려줘.
 
-     0.00s  user  발화 시작: 에펠탑이 얼마나 높은 곳에 있는지 궁금해요.
-     2.86s  <ret> 발화 (turn1 첫 프레임)
-     2.97s  agent 발화 시작: <ret> 에펠탑은 안테나를 포함해서 삼백삼십미터, 약 천 팔십삼피트 높이에 위치하고 있어요. 파리 프랑스에
-     2.97s  user  발화 끝
-     3.63s  ⚡SPAN 주입 [d'=0.77s / d_lead=6.44s]: (tool result) The Eiffel Tower is 330 meters (1,083 ft) tall, includin
-     9.42s  user  발화 시작: 네네.
-     9.42s  agent 발화 끝
-     9.91s  user  발화 시작: 와, 엄청 높네요!
-     9.91s  user  발화 끝
-    11.40s  agent 발화 시작: 그렇죠? 파리의 랜드마크잖아요. 혹시 다른 곳의 높이도 궁금하신가요?
-    11.40s  user  발화 끝
-    15.36s  user  발화 시작: 음… 그럼 서울 남산타워 높이는 어때요?
-    15.36s  agent 발화 끝
-    18.20s  <ret> 발화 (turn6 첫 프레임)
-    18.34s  agent 발화 시작: <ret> 서울 남산타워는 이백삼십육 점 칠미터, 약 칠백칠십칠피트 높이로 서울에 자리 잡고 있습니다.
-    18.34s  user  발화 끝
-    18.59s  ⚡SPAN 주입 [d'=0.39s / d_lead=5.95s]: (tool result) N Seoul Tower is 236.7 meters (777 ft) tall and is locat
-    24.28s  user  발화 시작: 음.
-    24.28s  agent 발화 끝
-    24.78s  agent 발화 시작: 남산타워는 서울 시내를 한눈에 볼 수 있어서 정말 멋진 곳이죠. 날씨가 좋은 날 가면 더 예뻐요.
-    24.78s  user  발화 끝
-    32.71s  user  발화 시작: 맞아요. 저는 주말에 남산타워 근처 카페에 가려고 하는데, 혹시 괜찮은 곳 있을까요?
-    32.71s  agent 발화 끝
-    38.47s  <ret> 발화 (turn10 첫 프레임)
-    38.66s  agent 발화 시작: <ret> 남산타워 근처 카페는 카페 몽마르트랑 테라스 카페가 괜찮아요. 카페 몽마르트는 별점 사 점 이점,
-    38.66s  user  발화 끝
-    39.39s  ⚡SPAN 주입 [d'=0.92s / d_lead=8.92s]: (tool result) Restaurants found: Cafe Montmartre (4.2 stars, 120 revie
-    47.58s  user  발화 시작: 네.
-    47.58s  agent 발화 끝
-    48.07s  user  발화 시작: 카페 몽마르트가 더 좋겠네요.
-    48.07s  user  발화 끝
-    50.06s  agent 발화 시작: 좋은 선택이에요. 전망도 좋고 커피도 맛있다고 하더라고요. 혹시 예약해 드릴까요?
-    50.06s  user  발화 끝
-    55.01s  user  발화 시작: 음.
-    55.01s  agent 발화 끝
-    55.51s  user  발화 시작: 아니요, 괜찮아요. 직접 갈게요. 그런데…
-    55.51s  user  발화 끝
-    57.98s  user  발화 시작: …혹시 내일 날씨는 어때요?
-    57.98s  user  발화 끝
-    59.76s  <ret> 발화 (turn17 첫 프레임)
-    59.97s  agent 발화 시작: <ret> 내일 서울 날씨는 이십팔도, 습도 육십오퍼센트, 바람은 시속 삼 점 이킬로미터, 구름이 조금 낄 
-    59.97s  user  발화 끝
-    60.50s  ⚡SPAN 주입 [d'=0.74s / d_lead=7.43s]: (tool result) Tomorrow's weather in Seoul: 28.0°C, humidity 65%, wind 
-    67.40s  user  발화 시작: 음.
-    67.40s  agent 발화 끝
-    67.90s  user  발화 시작: 꽤 덥겠네요.
-    67.90s  user  발화 끝
-    68.89s  agent 발화 시작: 네, 조금 더울 수 있으니 시원한 옷차림을 하시는 게 좋겠어요. 혹시 모자나 선글라스도 챙기시는 게 좋을 것
-    68.89s  user  발화 끝
-    77.81s  user  발화 시작: 아, 그러네요. 알려주셔서 감사합니다.
-    77.81s  agent 발화 끝
-    79.79s  agent 발화 시작: 천만에요. 편안한 주말 보내세요!
-    79.79s  user  발화 끝
-    81.77s  agent 발화 끝
+     0.00s  user  발화 시작: 파우스야, 오늘 저녁에 친구랑 같이 볼 만한 영화 좀 찾아줘. 코미디면 좋겠어.
+     5.64s  agent 발화 시작: 네, 어떤 영화를 좋아하세요? 혹시 특별히 보고 싶은 배우나 감독이 있으신가요?
+     5.64s  user  발화 끝
+    10.82s  user  발화 시작: 음… 딱히 없어. 그냥 웃긴 영화면 돼.
+    10.82s  agent 발화 끝
+    13.66s  <ret> 발화 (turn3 첫 프레임)
+    14.11s  agent 발화 시작: <ret> 재미있는 코미디 영화로는 이천이십일년에 개봉한 "미첼 가족의 머신 반란"이라는 영화가 있습니다. 
+    14.11s  user  발화 끝
+    14.30s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.05s]: "The Mitchells vs. the Machines" is a 2021 American computer-animated 
+    21.16s  user  발화 시작: 오, 그거 괜찮아 보이는데. 지금 상영하는 곳이 어디야?
+    21.16s  agent 발화 끝
+    24.79s  <ret> 발화 (turn5 첫 프레임)
+    24.93s  agent 발화 시작: <ret> "미첼 가족의 머신 반란"은 지금 메가박스 코엑스에서 일곱시 삼십분에, 롯데시네마 월드타워에서 여
+    24.93s  user  발화 끝
+    25.69s  ⚡SPAN 주입 [d'=0.91s / d_lead=6.58s]: (tool result) {"movie name": "미첼 가족의 머신 반란", "showtimes": [{"theater":
+    31.51s  user  발화 시작: 응.
+    31.51s  agent 발화 끝
+    31.98s  user  발화 시작: 롯데시네마 월드타워로 예매해 줘. 두명.
+    31.98s  user  발화 끝
+    33.97s  <ret> 발화 (turn8 첫 프레임)
+    34.33s  agent 발화 시작: <ret> 네, 롯데시네마 월드타워 여덟시 상영, 두명 예매 완료되었습니다. 확인번호는 에이 엑스 칠 팔 구
+    34.33s  user  발화 끝
+    34.55s  ⚡SPAN 주입 [d'=0.58s / d_lead=8.94s]: (tool result) {"confirmation id": "AX7892", "movie name": "미첼 가족의 머신 반
+    43.27s  user  발화 시작: 고마워, 파우스야! 아, 그런데 내일 모레 부산에 가는데, 혹시 부산 날씨 어때?
+    43.27s  agent 발화 끝
+    48.91s  agent 발화 시작: 네.
+    48.91s  user  발화 끝
+    48.93s  <ret> 발화 (turn11 첫 프레임)
+    49.38s  agent 발화 시작: <ret> 내일 모레인 칠월 십이일 부산 날씨는 이십팔 점 오도, 습도는 칠십퍼센트, 바람은 시속 육 점 이
+    49.38s  agent 발화 끝
+    50.43s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.00s]: The weather in Busan on July 12, 2026, is forecast to be 28.5°C, with 
+    57.38s  user  발화 시작: 어.
+    57.38s  agent 발화 끝
+    57.85s  user  발화 시작: 꽤 덥겠네. 혹시 부산역 근처에 괜찮은 식당 있어? 돼지국밥 맛집으로!
+    57.85s  user  발화 끝
+    62.35s  <ret> 발화 (turn14 첫 프레임)
+    62.55s  agent 발화 시작: <ret> 부산역 근처에는 "돼지국밥 전문점"이 유명합니다. 국물이 진하고 돼지고기가 부드럽다고 하네요. 현
+    62.55s  user  발화 끝
+    63.85s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.47s]: "Swine Restaurant" is a popular 돼지국밥 restaurant near Busan Station, kn
+    71.02s  user  발화 시작: 어.
+    71.02s  agent 발화 끝
+    71.49s  user  발화 시작: 음… 괜찮네. 그 식당까지 가는 길 좀 알려줘.
+    71.49s  user  발화 끝
+    75.09s  <ret> 발화 (turn17 첫 프레임)
+    75.25s  agent 발화 시작: <ret> 부산역에서 도보로 약 십오분 거리입니다. 부산역 광장에서 나와 좌회전해서 쭉 걸어가시면 돼요.
+    75.25s  user  발화 끝
+    76.07s  ⚡SPAN 주입 [d'=0.98s / d_lead=5.64s]: (tool result) {"directions": "부산역에서 도보로 약 15분 소요됩니다. 부산역 광장에서 나와 좌회전하여
+    80.90s  user  발화 시작: 어.
+    80.90s  agent 발화 끝
+    81.37s  user  발화 시작: 고마워. 그런데 혹시… 내가 지난번에 '매일 아침 일곱시에 알람 설정해 줘'라고 말했었나?
+    81.37s  user  발화 끝
+    87.01s  agent 발화 시작: 네네.
+    87.01s  user  발화 끝
+    87.48s  agent 발화 시작: 매일 아침 일곱시에 알람 설정해 줘.
+    87.48s  agent 발화 끝
+    90.30s  agent 발화 시작: 네, 칠월 칠일에 "매일 아침 일곱시에 알람 설정해 줘"라고 말씀하셨습니다.
+    90.30s  agent 발화 끝
+    95.01s  user  발화 시작: 그래.
+    95.01s  agent 발화 끝
+    95.48s  user  발화 시작: 아, 그렇구나. 알람은 잘 설정됐겠지?
+    95.48s  user  발화 끝
+    97.32s  <ret> 발화 (turn25 첫 프레임)
+    97.73s  ⚡SPAN 주입 [d'=0.41s / d_lead=3.29s]: (tool result) {"alarms": [{"time": "07:00", "repeat": "daily"}]}
+    97.83s  agent 발화 시작: <ret> 네, 매일 아침 일곱시에 알람이 설정되어 있습니다.
+    97.83s  user  발화 끝
+   101.12s  user  발화 시작: 다행이다. 그럼, 파우스야, 내일 아침 여덟시에 회의가 있는데, 회의 준비를 위해 오늘 밤에 할 일 목록 좀
+   101.12s  agent 발화 끝
+   110.06s  agent 발화 시작: 네, 회의 준비를 위한 할 일 목록을 만들어 드릴게요. 어떤 내용의 회의인가요?
+   110.06s  user  발화 끝
+   115.70s  user  발화 시작: 응.
+   115.70s  agent 발화 끝
+   116.17s  user  발화 시작: 마케팅 전략 회의야.
+   116.17s  user  발화 끝
+   117.26s  <ret> 발화 (turn30 첫 프레임)
+   117.58s  agent 발화 시작: <ret> 마케팅 전략 회의군요.
+   117.58s  user  발화 끝
+   118.10s  ⚡SPAN 주입 [d'=0.84s / d_lead=1.41s]: Effective marketing strategy meetings often include reviewing current 
+   118.99s  agent 발화 시작: 효과적인 마케팅 전략 회의는 보통 현재 캠페인 검토, 경쟁사 활동 분석, 새로운 아이디어 브레인스토밍, 측정
+   118.99s  agent 발화 끝
+   128.40s  user  발화 시작: 음… 그건 너무 일반적인데. 좀 더 구체적으로 알려줘.
+   128.40s  agent 발화 끝
+   131.59s  <ret> 발화 (turn33 첫 프레임)
+   131.89s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.82s]: For a marketing strategy meeting, consider preparing a SWOT analysis, 
+   132.16s  agent 발화 시작: <ret> 에스 더블유 오 티 분석을 준비하고, 주요 성과 지표(케이 피 아이)를 검토하고, 제안된 전략을 
+   132.16s  user  발화 끝
+   142.98s  user  발화 시작: 어어.
+   142.98s  agent 발화 끝
+   143.45s  user  발화 시작: 오, 좋아. 그럼 에스 더블유 오 티 분석 자료랑 케이 피 아이 자료 좀 찾아줘.
+   143.45s  user  발화 끝
+   150.12s  <ret> 발화 (turn36 첫 프레임)
+   150.50s  agent 발화 시작: <ret> 포브스 어드바이저에서 에스 더블유 오 티 분석 템플릿을 찾을 수 있습니다. 허브스팟에서는 마케팅의
+   150.50s  user  발화 끝
+   150.97s  ⚡SPAN 주입 [d'=0.85s / d_lead=9.88s]: A SWOT analysis template can be found on Forbes Advisor: [https://www.
+   160.38s  user  발화 시작: 어.
+   160.38s  agent 발화 끝
+   160.85s  user  발화 시작: 고마워, 파우스야. 덕분에 회의 준비 잘 할 수 있겠어.
+   160.85s  user  발화 끝
+   165.08s  agent 발화 시작: [happy] 도움이 되었다니 기쁩니다. 회의 잘 보시고 좋은 결과 있으시길 바랍니다!
+   165.08s  user  발화 끝
+   170.26s  agent 발화 끝

@@ -4,104 +4,142 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Camille",
+#     "name": "Felix",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
+#     "nationality": "British",
+#     "gender": "male",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-13",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-12-07",
+#       "date": "2026-05-10",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-05-02",
+#       "category": "plant",
+#       "text": "User is growing a few succulents at home."
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "category": "dislike",
+#       "text": "User can't stand liver."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-07",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "title": "Sorting out a visa",
+#       "bullets": [
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just thinking about that hom | S2 That’s good to hear. Um, I’m also  | S3 Great. Can you search for one-way  | S4 Perfect! That sounds like a lovely
+# EXAMINER(FDB-v2) 단계: S1 Hi Laena, nice to meet you too. I  | S2 Uh, I like messing around with my  | S3 I try. It's just difficult with th | S4 Actually, could you find me some g
 
-     0.00s  agent 발화 시작: Hi Camille, I'm Oria. I'm a counselor here to help with your
-     8.24s  user  발화 시작: I was just thinking about that home network we talked about 
-     8.24s  agent 발화 끝
-    12.71s  <ret> 발화 (turn2 첫 프레임)
-    13.11s  agent 발화 시작: <ret> You mentioned needing mesh routers for a three-story h
-    13.11s  user  발화 끝
-    13.40s  ⚡SPAN 주입 [d'=0.69s / d_lead=5.25s]: [2026-04-26] Past chat — Setting up a home network: asked about mesh r
-    18.36s  user  발화 시작: Right, and I'm wondering if that setup would also help with 
-    18.36s  agent 발화 끝
-    23.98s  agent 발화 시작: A mesh network should definitely extend coverage to your bac
-    23.98s  user  발화 끝
-    32.97s  user  발화 시작: Okay.
-    32.97s  agent 발화 끝
-    33.35s  user  발화 시작: That’s good to hear. Um, I’m also planning a trip…
-    33.35s  user  발화 끝
-    37.09s  agent 발화 시작: Yeah.
-    37.09s  user  발화 끝
-    37.47s  agent 발화 시작: Oh, wonderful! Where are you thinking of going?
-    37.47s  agent 발화 끝
-    40.46s  user  발화 시작: I'm thinking about visiting my sister in Seattle next month.
-    40.46s  agent 발화 끝
-    47.96s  agent 발화 시작: Uh-huh.
-    47.96s  user  발화 끝
-    48.03s  <ret> 발화 (turn11 첫 프레임)
-    48.33s  agent 발화 시작: <ret> I remember you prefer an aisle seat when you travel, a
-    48.33s  agent 발화 끝
-    49.14s  ⚡SPAN 주입 [d'=1.11s / d_lead=9.37s]: [2026-06-18] User prefers an aisle seat when traveling.
-    57.70s  user  발화 시작: Yeah.
-    57.70s  agent 발화 끝
-    58.07s  user  발화 시작: Great. Can you search for one-way flights from New York to S
-    58.07s  user  발화 끝
-    63.62s  <ret> 발화 (turn14 첫 프레임)
-    64.07s  agent 발화 시작: <ret> I found twelve one-way flights. The least expensive is
-    64.07s  user  발화 끝
-    64.38s  ⚡SPAN 주입 [d'=1.22s / d_lead=7.49s]: (tool result) Found 12 flights. Cheapest: $325, United, 9:00 AM. Next:
-    71.56s  user  발화 시작: Right.
-    71.56s  agent 발화 끝
-    71.94s  user  발화 시작: Hmm, that United flight sounds good. What's the weather like
-    71.94s  user  발화 끝
-    77.14s  <ret> 발화 (turn17 첫 프레임)
-    77.18s  agent 발화 시작: <ret> The forecast for Seattle on August fifteenth is twenty
-    77.18s  user  발화 끝
-    78.64s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.12s]: (tool result) 22.2°C, humidity 68%, wind 3.1 km/h, mostly sunny.
-    84.30s  user  발화 시작: Perfect! That sounds like a lovely day for a visit.
-    84.30s  agent 발화 끝
-    88.05s  agent 발화 시작: It certainly does! Seattle is a beautiful city, I hope you h
-    88.05s  user  발화 끝
-    94.79s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Felix, I'm Laena. It's lovely to meet you. I'm a well-bei
+     9.68s  user  발화 시작: Hi Laena, nice to meet you too. I was just thinking about ho
+     9.68s  agent 발화 끝
+    18.19s  agent 발화 시작: That sounds really challenging, Felix. It's completely under
+    18.19s  user  발화 끝
+    25.55s  user  발화 시작: Okay.
+    25.55s  agent 발화 끝
+    25.94s  user  발화 시작: Yeah, it's just…consuming everything. I remember mentioning 
+    25.94s  user  발화 끝
+    30.76s  <ret> 발화 (turn5 첫 프레임)
+    30.97s  agent 발화 시작: <ret> I do recall you mentioning that on February 6th, 2026.
+    30.97s  user  발화 끝
+    31.70s  ⚡SPAN 주입 [d'=0.94s / d_lead=7.36s]: [2026-02-06] User is studying for the CPA exam.
+    38.32s  user  발화 시작: Right. It's just hard to switch off. Do you have any tips fo
+    38.32s  agent 발화 끝
+    43.74s  agent 발화 시작: Uh-huh.
+    43.74s  user  발화 끝
+    44.13s  agent 발화 시작: Creating clear boundaries between study time and downtime is
+    44.13s  agent 발화 끝
+    50.71s  user  발화 시작: Uh, I like messing around with my succulents.
+    50.71s  agent 발화 끝
+    53.81s  agent 발화 시작: Uh-huh.
+    53.81s  user  발화 끝
+    53.89s  <ret> 발화 (turn11 첫 프레임)
+    54.20s  agent 발화 시작: <ret> That’s wonderful! I remember you mentioned enjoying te
+    54.20s  agent 발화 끝
+    55.39s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.42s]: [2026-05-10] User is growing a few succulents at home.
+    59.62s  user  발화 시작: Right.
+    59.62s  agent 발화 끝
+    60.00s  agent 발화 시작: Nurturing plants can be incredibly grounding. Perhaps dedica
+    60.00s  user  발화 끝
+    68.52s  user  발화 시작: That’s a good idea. I also try to eat well, though sometimes
+    68.52s  agent 발화 끝
+    74.97s  <ret> 발화 (turn15 첫 프레임)
+    75.10s  agent 발화 시작: <ret> You mentioned being pescatarian on May 10th, 2026. Tha
+    75.10s  user  발화 끝
+    75.99s  ⚡SPAN 주입 [d'=1.01s / d_lead=6.58s]: [2026-05-10] User is pescatarian.
+    81.68s  user  발화 시작: Okay.
+    81.68s  agent 발화 끝
+    82.07s  user  발화 시작: Yes, I don't eat meat, but I do eat fish. It’s… pretty stric
+    82.07s  user  발화 끝
+    87.49s  agent 발화 시작: That's great that you have a clear preference. It sounds lik
+    87.49s  user  발화 끝
+    94.46s  user  발화 시작: Mm-hmm.
+    94.46s  agent 발화 끝
+    94.84s  user  발화 시작: I try. It's just difficult with the exam looming. I have a p
+    94.84s  user  발화 끝
+   100.92s  <ret> 발화 (turn21 첫 프레임)
+   101.04s  agent 발화 시작: <ret> Yes, I see you mentioned a 40-minute drive each way on
+   101.04s  user  발화 끝
+   101.76s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.36s]: [2026-02-06] User drives about 40 minutes each way.
+   108.39s  user  발화 시작: Yeah, totally.
+   108.39s  agent 발화 끝
+   109.17s  user  발화 시작: It is. I wonder if there's a quicker route.
+   109.17s  user  발화 끝
+   112.54s  <ret> 발화 (turn24 첫 프레임)
+   112.65s  agent 발화 시작: <ret> It seems there's no quicker route within London itself
+   112.65s  user  발화 끝
+   112.84s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.36s]: (tool result) {"directions": [{"distance": 0, "duration": 0, "route": 
+   120.00s  user  발화 시작: That's true. Maybe a podcast.
+   120.00s  agent 발화 끝
+   121.94s  agent 발화 시작: Exactly. Or some relaxing music. I can help you find somethi
+   121.94s  user  발화 끝
+   127.36s  user  발화 시작: Uh-huh.
+   127.36s  agent 발화 끝
+   127.75s  user  발화 시작: Actually, could you find me some good restaurants nearby? I'
+   127.75s  user  발화 끝
+   132.24s  <ret> 발화 (turn29 첫 프레임)
+   132.78s  agent 발화 시작: <ret> Let me see what pescatarian-friendly restaurants are n
+   132.78s  user  발화 끝
+   132.83s  ⚡SPAN 주입 [d'=0.58s / d_lead=4.26s]: (tool result) {"restaurants": [{"name": "The Seashell", "address": "12
+   137.04s  agent 발화 시작: I found The Seashell, at 123 Ocean View, London. It has a 4.
+   137.04s  agent 발화 끝
+   144.01s  user  발화 시작: That sounds perfect!
+   144.01s  agent 발화 끝
+   145.17s  agent 발화 시작: Wonderful! It's great to find small ways to prioritize enjoy
+   145.17s  user  발화 끝
+   150.59s  agent 발화 끝

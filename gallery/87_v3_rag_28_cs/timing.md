@@ -4,77 +4,109 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Charlotte",
+#     "name": "Ethan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "mid 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "date": "2026-05-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-05-13",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
+#     },
+#     {
+#       "date": "2026-05-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Morocco in February."
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "category": "medication",
+#       "text": "User takes insulin."
+#     },
+#     {
+#       "date": "2026-04-03",
+#       "category": "dislike",
+#       "text": "User can't stand raw tomatoes."
 #     },
 #     {
 #       "date": "2026-02-16",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is shakshuka."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "home",
-#       "text": "User's home address is 441 Oak Avenue."
+#       "date": "2026-02-01",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Kenji."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2025-12-26",
+#       "category": "skill",
+#       "text": "User is quite experienced with vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "streaming",
+#       "text": "User subscribes to a shared Netflix family plan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-24",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-22",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-28",
+#       "date": "2026-02-27",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-06",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 안녕하세요. 재정 관리를 좀 하려고 하는데, 혹시 조언해 주실 수 있을까요?
-     6.56s  agent 발화 시작: 어, 좋은 생각이야! 돈 관리 시작하는 거 아주 잘했어. 네게 맞는 예산 관리 방법을 같이 생각해 보자.
-     6.56s  user  발화 끝
-    16.70s  user  발화 시작: 알겠습니다. 음, 오십 삼십 이십 규칙에 대해 들어봤는데, 그게 정확히 뭔데요?
-    16.70s  agent 발화 끝
-    22.83s  <ret> 발화 (turn3 첫 프레임)
-    23.25s  agent 발화 시작: <ret> 그거 간단한 방법인데, 세후 소득의 오십퍼센트는 필수 지출에, 삼십퍼센트는 원하는 것에, 그리고 
-    23.25s  user  발화 끝
-    23.83s  ⚡SPAN 주입 [d'=0.99s / d_lead=10.73s]: The 50/30/20 budget allocates 50% of after-tax income to needs, 30% to
-    33.99s  user  발화 시작: 네.
-    33.99s  agent 발화 끝
-    34.58s  user  발화 시작: 그거 좀… 빡빡한 것 같아요. 정말로 여유가 없는 건가요?
-    34.58s  user  발화 끝
-    39.95s  user  발화 끝
+     0.00s  user  발화 시작: 안녕, 스케줄이 좀 엉망진창인 것 같아.
+     3.10s  agent 발화 시작: 안녕하세요. 저는 프렐랄이라고 해요. 도와드릴 수 있을 것 같아요. 루틴을 만드는 게 부담스러울 수 있지만,
+     3.10s  user  발화 끝
+    14.49s  user  발화 시작: 응.
+    14.49s  agent 발화 끝
+    15.01s  user  발화 시작: 그냥… 모든 게 다 흩어져 있는 느낌이야. 우선순위를 정하는 연습을 해야겠어.
+    15.01s  user  발화 끝
+    20.28s  <ret> 발화 (turn4 첫 프레임)
+    20.70s  agent 발화 시작: <ret> 정리하기 위해, 정말 중요한 게 뭔지 파악하는 데 집중해 보는 게 좋겠어요. 긴급성과 중요도에 따
+    20.70s  user  발화 끝
+    21.27s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.94s]: Prioritization involves identifying the most important tasks and focus
+    33.64s  user  발화 시작: 아이젠하워 매트릭스? 그게 뭔데?
+    33.64s  agent 발화 끝
+    35.20s  <ret> 발화 (turn6 첫 프레임)
+    35.71s  agent 발화 시작: <ret> 정말 유용한 도구예요! 아이젠하워 매트릭스는 긴급하고 중요한 일은 즉시 처리하고, 중요하지만 긴급
+    35.71s  user  발화 끝
+    36.19s  ⚡SPAN 주입 [d'=0.99s / d_lead=2.59s]: The Eisenhower Matrix, also known as the Urgent-Important Matrix, help
+    52.27s  agent 발화 끝

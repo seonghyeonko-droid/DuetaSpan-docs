@@ -1,97 +1,112 @@
 v3_fake__13_ko src=nq style=v1
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 차분하고 공감적인 웰니스 코치 부로입니다. 당신은 잠자리 루틴, 일정한 기상 시간, 늦은 시간 화면 사용 제한 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
+SYSTEM: <system> 당신은 태온이며, 주의 깊고 정직한 책임 파트너로서 육아 및 가족 시간 관리를 돕습니다. 일관된 루틴, 결과보다 노력에 대한 칭찬, 간단한 관계 형성 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시(moshi)이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "하정",
+    "name": "도훈",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "60s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-09",
+      "date": "2026-06-08",
+      "category": "sibling",
+      "text": "User has a younger sibling named Noah."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "employer",
+      "text": "User works at an e-commerce company."
+    },
+    {
+      "date": "2026-04-23",
+      "category": "trip",
+      "text": "User is planning a trip to Portugal in February."
+    },
+    {
+      "date": "2026-04-19",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a nurse."
     },
     {
-      "date": "2026-05-04",
-      "category": "home",
-      "text": "User's home address is 서울 강남구 역삼동 678-9."
+      "date": "2026-02-15",
+      "category": "show",
+      "text": "User is currently watching a stand-up comedy special."
     },
     {
-      "date": "2026-04-17",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2026-01-26",
+      "category": "emergency",
+      "text": "User's emergency contact is Marco."
     },
     {
-      "date": "2026-04-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-01-24",
+      "category": "airline",
+      "text": "User usually flies with Air France."
     },
     {
-      "date": "2026-02-24",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-01-17",
+      "category": "phone",
+      "text": "User uses a Galaxy Z Flip."
     },
     {
-      "date": "2026-02-13",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-12-15",
+      "category": "dish",
+      "text": "User's go-to comfort dish is mushroom risotto."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-07",
+      "title": "Building a PC",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
       ]
     },
     {
-      "date": "2026-04-26",
-      "title": "Setting up a home network",
+      "date": "2026-02-12",
+      "title": "Planning a dinner party",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, 부로님. 요즘 잠을 너무 설쳐서 걱정이에요.
-[  3.62s][moshi] 안녕하세요! 잠이 안 오시는군요. 편안한 밤을 위한 루틴을 함께 만들어볼까요?
-[  8.79s][user ] «backchannel» 네.
-[  9.30s][user ] 네, 좋아요. 뭘 해야 할까요? ⟨ret@11.76s⟩
-[ 11.89s][moshi] 잠들기 ⟦⚡SPAN@12.61s: Exposure to blue light emitted by screens suppresses melatonin production, a hormone that regulates sleep.⟧ 전에는 화면을 보지 않는 게 중요해요. 빛이 수면을 방해하거든요.
-[ 17.06s][moshi] 잠들기 전에 스크린을 보는 건 멜라토닌 분비를 억제해서, 수면을 조절하는 호르몬에 영향을 줄 수 있어요.
-[ 24.81s][user ] 아, 그렇군요. 저녁에 스마트폰을 너무 많이 봐요.
-[ 28.43s][moshi] 스마트폰 사용 시간을 줄여보세요. 따뜻한 물로 샤워하거나, 차를 마시는 것도 도움이 될 거예요.
-[ 35.15s][user ] «backchannel» 네.
-[ 35.67s][user ] 차는 어떤 차가 ⟨ret@37.20s⟩ 좋을까요?
-[ 37.74s][moshi] ⟦⚡SPAN@37.89s: Chamomile and lavender teas are known for their calming properties and are often used to promote sleep.⟧ 캐모마일이나 라벤더 티가 좋아요. 카페인이 없는 허브차는 숙면에 도움이 되거든요.
-[ 42.90s][moshi] 카모마일이나 라벤더 차는 진정 효과가 있어서 잠을 유도하는 데 도움이 될 수 있어요.
-[ 49.63s][user ] «backchannel» 음.
-[ 50.14s][user ] 좋은 정보네요. 그런데 인스타그램에서 팔로워가 가장 많은 사람은 누구예요? ⟨ret@54.55s⟩
-[ 54.79s][moshi] ⟦⚡SPAN@55.21s: @instagram has the most followers on Instagram, with 659 million followers as of July 9, 2026.⟧ 인스타그램에서 팔로워가 가장 많은 사람은 @instagram으로, 이천이십육년 칠월 구일 기준으로 육억 오천구백만 명의 팔로워를 가지고 있어요.
-[ 63.07s][user ] 와, 엄청 많네요! —
-[ 65.13s][user ] … 혹시 인스타그램 말고 다른 에스 엔 에스에서도 팔로워가 많은 사람들을 알려주실 수 있나요?
-[ 72.37s][moshi] «backchannel» 음.
-[ 72.89s][moshi] ⟨ret@72.59s⟩ 페이스북에서는 ⟦⚡SPAN IRRELEVANT@74.01s: The average high temperature in Seoul on July 10th is 30.5°C, with a humidity of 78%.⟧ 마크 저커버그, 트위터에서는 일론 머스크가 팔로워가 많은 편이에요.
-[ 77.54s][moshi] 트위터는 지금 X로 이름이 바뀌었죠.
-[ 80.12s][user ] 아, 맞아요. X였죠. 요즘 계속 잠을 설쳐서 스트레스도 많이 받아요.
-[ 85.29s][moshi] 스트레스는 수면의 가장 큰 적이에요. 규칙적인 운동이나 명상을 통해 스트레스를 관리하는 게 중요해요.
-[ 92.01s][moshi] 잠들기 전에 가벼운 스트레칭도 도움이 될 거예요.
-[ 95.63s][user ] 명상은 어떻게 해야 할까요?
-[ 97.70s][moshi] 조용한 곳에 앉아 눈을 감고, 호흡에 집중해보세요. 생각들이 떠오르면 그냥 흘려보내세요.
-[103.39s][moshi] 꾸준히 연습하면 마음이 편안해질 거예요.
+[  0.00s][user ] 미래의 일기 에피소드 수가 몇 ⟨ret@2.46s⟩ 개예요?
+[  3.01s][moshi] ⟦⚡SPAN@3.49s: The anime series Future Diary has a total of 26 episodes.⟧ 미래의 일기 애니메이션 시리즈는 총 스물여섯개의 에피소드가 있습니다. 꽤 긴 시리즈였죠.
+[  8.52s][user ] 음, 그렇군요.
+[  9.52s][moshi] 혹시 다른 애니메이션에 대해서도 궁금하신가요? 제가 추천해 드릴 수도 있어요.
+[ 14.53s][user ] 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요. 요즘 아이들한테 뭘 보여줘야 할지 고민이에요.
+[ 20.04s][moshi] «backchannel» 네.
+[ 20.54s][moshi] ⟨ret@20.28s⟩ 아이들에게 꾸준한 ⟦⚡SPAN@21.78s: Consistent routines can help children feel safe and secure, reducing anxiety and promoting positive behavior.⟧ 일상을 만들어주는 건, 불안감을 줄이고 긍정적인 행동을 유도하는 데 도움이 될 수 있어요. 아이들이 안정감을 느끼는 거죠.
+[ 30.06s][user ] «backchannel» 네.
+[ 30.56s][user ] 일상이 중요하군요. 그런데, 아이가 숙제를 안 하려고 해요. 어떻게 해야 ⟨ret@35.54s⟩ 할까요?
+[ 36.07s][moshi] ⟦⚡SPAN@36.54s: Praising effort rather than outcome can encourage a growth mindset and motivate children to persevere through ⟧ 결과보다는 노력 자체를 칭찬해 주는 게, 아이가 성장하는 마인드를 갖고 어려움을 극복하도록 동기 부여하는 데 도움이 될 수 있어요.
+[ 45.59s][moshi] ⟨ret@45.40s⟩ ⟦⚡SPAN IRRELEVANT@45.86s: The current weather in Barcelona is 28.5°C, humidity 62%, wind 7.2 km/h.⟧ 아이가 숙제를 싫어하는 건 흔한 일이에요. 아이가 숙제를 안 하려는 이유를 먼저 파악해 보는 게 좋겠어요. 혹시 숙제가 너무 어렵거나, 흥미가 없는 건 아닐까요?
+[ 57.62s][user ] 음, 좀 어려워하는 것 같아요.
+[ 60.12s][moshi] 어려워한다면, 함께 숙제를 도와주면서 작은 성공 경험을 만들어 주는 게 좋을 것 같아요.
+[ 66.63s][user ] 좋은 생각이네요. 아이와 함께 시간을 보내는 게 제일 중요한 것 같아요.
+[ 72.14s][moshi] «backchannel» 음.
+[ 72.65s][moshi] ⟨ret@72.35s⟩ ⟦⚡SPAN@72.82s: Simple ways to connect with children include reading together, playing games, or having dedicated one-on-one t⟧ 함께 책을 읽거나, 게임을 하거나, 아이와 단둘이 시간을 보내는 것만으로도 충분히 연결될 수 있어요.
+[ 79.66s][user ] «backchannel» 네.
+[ 80.16s][user ] 맞아요. 그런데, 주말에 아이와 함께 갈 만한 곳이 있을까요? ⟨ret@84.59s⟩
+[ 84.67s][moshi] 부산에는 해운대 ⟦⚡SPAN@85.91s: (tool result) Restaurants found: 1. Haeundae Amiso La Verita (Italian, Haeundae-gu) 2. Suyeong Paldo Pork Soup⟧ 아미소 라 베리타라는 이탈리아 식당, 수영 팔도 돼지국밥, 그리고 밀락 회센터가 있어요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Busan"}}
+[ 91.68s][user ] «backchannel» 그렇죠.
+[ 92.19s][user ] 회센터는 아이가 좋아할 것 같아요.
+[ 94.69s][moshi] 아이가 회를 좋아한다면, 밀락 회센터에 가서 신선한 회를 맛보는 것도 좋을 것 같아요.
+[101.20s][user ] «backchannel» 그렇죠.
+[101.70s][user ] 네, 좋아요. 감사합니다.
+[103.21s][moshi] 도움이 되었다니 다행이에요.

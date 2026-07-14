@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "유현",
+#     "name": "채훈",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,111 +12,110 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2026-06-05",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "date": "2026-03-24",
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-02-05",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-01-31",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
 #     },
 #     {
-#       "date": "2026-02-04",
+#       "date": "2026-01-15",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Turkish."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-12-09",
+#       "category": "skill",
+#       "text": "User is getting fairly good at astrophotography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-15",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-03",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-10",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-22",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 창욱진 씨에 대해 좀 알려주시겠어요? | S2 아, 그렇군요. | S3 천구백사십오년이군요. 그럼 창욱진 님은 그 즈음에 태어나셨다는 | S4 그림을 좀 보여주실 수 있나요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 토라나 씨. 요즘 직장 상사 때문에 너무 힘들어요 | S2 아, 그렇군요. 그런데 두 운하가 무슨 차이가 있나요? | S3 그렇군요… 그럼 두 운하 모두 중요한 역할을 했다는 거네요. | S4 부산에 있군요… 저는 지금 서울에 있어요.
 
-     0.00s  user  발화 시작: 창욱진 씨에 대해 좀 알려주시겠어요?
-     2.91s  agent 발화 시작: 창욱진 님에 대해 궁금하시군요. 어떤 점이 가장 알고 싶으세요?
-     2.91s  user  발화 끝
-     8.14s  user  발화 시작: 그분이 어떤 시대에 태어났는지 궁금해요.
-     8.14s  agent 발화 끝
-    10.44s  <ret> 발화 (turn3 첫 프레임)
-    11.05s  agent 발화 시작: <ret> 창욱진 님은 제이차 세계 대전이 끝나는 시기에 한국에서 태어나셨습니다.
-    11.05s  user  발화 끝
-    11.94s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.23s]: Chang Ucchin was born in Korea during a time that ended with the concl
-    16.28s  user  발화 시작: 그렇죠.
-    16.28s  agent 발화 끝
-    16.86s  user  발화 시작: 아, 그렇군요.
-    16.86s  user  발화 끝
-    18.02s  agent 발화 시작: 창욱진 님은 한국화의 중요한 인물로 평가받고 계세요.
-    18.02s  user  발화 끝
-    22.09s  user  발화 시작: 음.
-    22.09s  agent 발화 끝
-    22.67s  user  발화 시작: 세계 대전이 언제 끝났죠?
-    22.67s  user  발화 끝
-    24.85s  <ret> 발화 (turn9 첫 프레임)
-    25.00s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 사십일분입니다. 제이차 세계 대전은 천구백사십오년
-    25.00s  user  발화 끝
-    25.93s  ⚡SPAN 주입 [d'=1.08s / d_lead=7.56s]: (tool result) It is Friday, July 10, 2026 at 2:41 PM in Asia/Seoul rig
-    32.56s  user  발화 시작: 천구백사십오년이군요. 그럼 창욱진 님은 그 즈음에 태어나셨다는 말씀이시네요.
-    32.56s  agent 발화 끝
-    37.21s  agent 발화 시작: [happy] 네, 맞습니다. 창욱진 님은 천구백십팔년에 태어나셨고, 천구백칠십팔년에 세상을 떠나셨어요.
-    37.21s  user  발화 끝
-    43.02s  user  발화 시작: 아, 그럼 한국 전쟁도 겪으셨겠네요.
-    43.02s  agent 발화 끝
-    45.93s  agent 발화 시작: 창욱진 님은 한국 전쟁 시기에 작품 활동을 하셨습니다. 전쟁의 아픔을 담은 그림도 많으시고요.
-    45.93s  user  발화 끝
-    53.49s  user  발화 시작: 그렇죠.
-    53.49s  agent 발화 끝
-    54.07s  user  발화 시작: 그림을 좀 보여주실 수 있나요?
-    54.07s  user  발화 끝
-    56.90s  <ret> 발화 (turn16 첫 프레임)
-    56.98s  agent 발화 시작: <ret> 창욱진 화백의 삶과 예술에 대한 유튜브 영상이 있습니다. 길이는 십이분 삼십사초입니다.
-    56.98s  user  발화 끝
-    57.51s  ⚡SPAN 주입 [d'=0.61s / d_lead=6.40s]: (tool result) '창욱진 화백의 삶과 예술' - YouTube, youtube.com, 12:34
-    63.37s  user  발화 시작: 좋아요. 한번 봐야겠네요.
-    63.37s  agent 발화 끝
-    65.12s  user  발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 토라나 씨. 요즘 직장 상사 때문에 너무 힘들어요.
+     5.01s  agent 발화 시작: 안녕하세요! 직장 상사 때문에 힘드시군요. 어떤 점이 가장 어려우신가요?
+     5.01s  user  발화 끝
+    10.02s  user  발화 시작: 음.
+    10.02s  agent 발화 끝
+    10.58s  user  발화 시작: 계속 제 의견을 무시하고, 자기 생각만 강요해요.
+    10.58s  user  발화 끝
+    13.87s  <ret> 발화 (turn4 첫 프레임)
+    14.47s  agent 발화 시작: <ret> 놀랍게도 뉴올리언스 배수 운하와 오거스타 운하는 길이가 거의 같습니다. 둘 다 약 십이 점 일킬로
+    14.47s  user  발화 끝
+    15.37s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.91s]: The New Orleans Outfall Canals and the Augusta Canal are both approxim
+    23.38s  user  발화 시작: 네.
+    23.38s  agent 발화 끝
+    23.94s  user  발화 시작: 아, 그렇군요. 그런데 두 운하가 무슨 차이가 있나요?
+    23.94s  user  발화 끝
+    28.24s  <ret> 발화 (turn7 첫 프레임)
+    28.39s  agent 발화 시작: <ret> 오거스타 운하는 천팔백사십오년부터 조지아주 오거스타 시에 수력을 공급하기 위해 건설되었고, 뉴올리
+    28.39s  user  발화 끝
+    29.32s  ⚡SPAN 주입 [d'=1.08s / d_lead=10.02s]: The Augusta Canal was constructed beginning in 1845 to provide water p
+    38.41s  user  발화 시작: 그렇군요… 그럼 두 운하 모두 중요한 역할을 했다는 거네요.
+    38.41s  agent 발화 끝
+    43.42s  agent 발화 시작: [happy] 맞아요! 두 운하 모두 각 도시의 역사와 발전에 중요한 역할을 했죠.
+    43.42s  user  발화 끝
+    50.10s  user  발화 시작: 네.
+    50.10s  agent 발화 끝
+    50.66s  user  발화 시작: 아뇨, 괜찮아요. 그런데 토라나 씨, 저는 좀 더 적극적으로 제 의견을 표현해야 할까요?
+    50.66s  user  발화 끝
+    57.36s  <ret> 발화 (turn12 첫 프레임)
+    57.90s  agent 발화 시작: <ret> [curious] 적극적으로 의견을 표현하는 건 좋은 방법이지만, 상황에 따라 부드럽게 전달하는 
+    57.90s  user  발화 끝
+    58.03s  ⚡SPAN 주입 [d'=0.67s / d_lead=10.58s]: (tool result) 부산광역시 해운대구 맛집: 금수복국 (Korean cuisine, 4.5 stars, price ti
+    68.47s  agent 발화 시작: 부산 해운대구에 맛있는 한식집이 있어요. 금수복국이라는 곳인데 평점도 좋고 가격도 적당해요.
+    68.47s  agent 발화 끝
+    74.60s  user  발화 시작: 부산에 있군요… 저는 지금 서울에 있어요.
+    74.60s  agent 발화 끝
+    77.94s  agent 발화 시작: 아, 서울에 계시는군요. 그럼 서울에서 가까운 곳으로 찾아볼까요?
+    77.94s  user  발화 끝
+    82.39s  agent 발화 끝

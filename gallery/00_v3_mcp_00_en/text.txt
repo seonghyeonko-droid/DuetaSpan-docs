@@ -1,92 +1,84 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Ara, a grounded and empathetic life coach who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Brian, a attentive and honest reflection partner who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Max",
+    "name": "Olivia",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "early 40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-02",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-03-25",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2026-02-09",
+      "date": "2026-06-16",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to gluten."
     },
     {
-      "date": "2025-12-31",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-05-10",
+      "category": "dislike",
+      "text": "User can't stand anchovies."
     },
     {
-      "date": "2025-12-26",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-01-08",
+      "category": "child",
+      "text": "User has a child named Rin, age 12."
     },
     {
-      "date": "2025-12-03",
-      "category": "home",
-      "text": "User's home address is 120 Birch Road."
+      "date": "2025-12-25",
+      "category": "bloodtype",
+      "text": "User's blood type is A+."
+    },
+    {
+      "date": "2025-12-16",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-10",
-      "title": "Setting up a home network",
+      "date": "2026-06-08",
+      "title": "Booking a Japan trip",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "5 nights in Kyoto and Osaka in October",
+        "wants a JR Pass and a ryokan for one night"
       ]
     },
     {
-      "date": "2026-04-03",
-      "title": "Apartment hunting downtown",
+      "date": "2026-04-10",
+      "title": "Planning a camping trip",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
       ]
     },
     {
-      "date": "2026-02-25",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-08",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the address of…
-[  1.73s][user ] …the Hockey Hall of ⟨ret@3.24s⟩ Fame?
-[  3.46s][moshi] [happy] ⟦⚡SPAN@4.01s: (tool result) {"name": "Hockey Hall of Fame", "formatted address": "155 Front St W, Toronto, ON M5J 2C5, Canad⟧ The Hockey Hall of Fame is at 155 Front Street West, Toronto, Ontario, M5J 2C5, Canada. It has a 4.4-star rating from almost 5,800 reviews!
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJd_n-Y6VqEmsR0K9Y0QvUj1M"}}
-[ 12.45s][user ] Oh, that’s good to know. And what’s the weather like there right now? ⟨ret@16.86s⟩
-[ 16.95s][moshi] [curious] ⟦⚡SPAN@17.65s: (tool result) {"city": "Toronto", "country": "Canada", "latitude": 43.6426, "longitude": -79.3871, "temperatur⟧ Right now in Toronto, it’s 22.8 degrees Celsius, partly cloudy, with a humidity of 68% and winds at 11.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Toronto"}}
-[ 24.91s][user ] Hmm, sounds pleasant. I'm thinking of visiting next week.
-[ 28.02s][moshi] «backchannel» Yeah.
-[ 28.37s][moshi] That sounds lovely! Toronto is a great city to explore. Are you planning a longer trip, or just a quick visit?
-[ 35.63s][user ] Just a quick visit, maybe three days. I want to see a Blue Jays game.
-[ 40.82s][moshi] «backchannel» Uh-huh.
-[ 41.17s][moshi] [laugh] A Blue Jays game sounds perfect for a quick trip! I can help you find game times if you like.
+[  0.00s][user ] I’m planning a trip to New York City next month, and I'd like to see a show. Are there any theaters in New York City that charge for tickets? ⟨ret@9.42s⟩
+[  9.47s][moshi] «backchannel» Mhm.
+[  9.80s][moshi] ⟦⚡SPAN@9.74s: New York City is home to many theaters, including the Broadway Theatre, which charges between $79 and $199 per⟧ New York City has quite a few theaters! Broadway Theatre tickets are between seventy-nine and one hundred ninety-nine dollars, and New World Stages range from sixty-nine to one hundred twenty-nine.
+[ 19.59s][user ] «backchannel» Uh-huh.
+[ 19.92s][user ] That’s great! Could you find me some events happening at the Broadway Theatre next ⟨ret@24.55s⟩ week?
+[ 24.82s][moshi] Next ⟦⚡SPAN@25.41s: (tool result) {"events": [{"name": "Wicked", "date": "2026-07-17", "time": "7:00 PM", "price": "$129"}, {"name⟧ week, Wicked is playing on July seventeenth at seven PM for one hundred twenty-nine dollars, and The Lion King is on July eighteenth at eight PM for one hundred fifty-nine.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Broadway Theatre", "date": "next week"}}
+[ 34.94s][user ] «backchannel» Mm-hmm.
+[ 35.27s][user ] Oh, that sounds fun. Maybe Wicked.
+[ 37.22s][moshi] [happy] Wicked is a popular choice! It’s wonderful you’re planning some entertainment for your trip.
