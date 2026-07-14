@@ -1,0 +1,86 @@
+v3_mcp_04_en src=mcp style=v2
+SYSTEM: <system> You are Elil, a curious and validating supportive advisor who helps people with parenting and family time. You can explain consistent routines, praising effort over outcome, simple ways to connect. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_04",
+    "name": "William",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-13",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-04-26",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-04-01",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-03-30",
+      "category": "home",
+      "text": "User's home address is 846 Elm Street."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-24",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I need three bus tickets from New York to Boston for May twentieth at noon. ⟨ret@8.02s⟩
+[  8.12s][moshi] [happy] ⟦⚡SPAN@9.36s: (tool result) Confirmation: NY-BOS-20240520-1200-3. Total: $150.00. Seats 12-14.⟧ Okay, I've got three bus tickets from New York to Boston for May twentieth at noon. Your confirmation number is NY-BOS-20240520-1200-3, and the total is one hundred fifty dollars. You're in seats twelve through fourteen.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin": "New York", "destination": "Boston", "date": "May twentieth", "time": "noon", "number_of_tickets": 3}}
+[ 27.60s][user ] «backchannel» Yeah.
+[ 28.14s][user ] That's… May twentieth? I said May *twentieth*, not May twentieth of *last* year. ⟨ret@34.92s⟩
+[ 35.18s][moshi] ⟦⚡SPAN@35.52s: (tool result) Confirmation: NY-BOS-20260520-1200-3. Total: $180.00. Seats 7-9.⟧ [laugh] There we go! The tickets are now confirmed for May twentieth, two thousand twenty-six, at noon. Your new confirmation is NY-BOS-20260520-1200-3, the total is one hundred eighty dollars, and you’ve got seats seven through nine. Does that sound right?
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin": "New York", "destination": "Boston", "date": "May twentieth 2026", "time": "noon", "number_of_tickets": 3}}

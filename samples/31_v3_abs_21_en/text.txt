@@ -1,0 +1,88 @@
+v3_abs_21_en src=squad2 style=abstain
+SYSTEM: <system> You are Brunaon, a thoughtful and soft-spoken wellness coach who helps people with money and budgeting. You can explain the 50/30/20 budget, why an emergency fund matters, how compound interest works. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_21",
+    "name": "Taylor",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-20",
+      "category": "home",
+      "text": "User's home address is 993 Elm Street."
+    },
+    {
+      "date": "2026-04-11",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-05",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] What year did IBM plan to sell PCs at retailers?
+[  4.13s][moshi] Well, that's a tricky one—it doesn’t appear that information is widely available.
+[  9.09s][user ] Oh. Okay. What about when they *actually* started selling them in ⟨ret@13.46s⟩ stores?
+[ 14.05s][moshi] They ⟦⚡SPAN@14.77s: IBM began selling PCs through retailers in November 1987, partnering with companies like Sears, Roebuck and Co⟧ actually began selling PCs through retailers in November 1987, partnering with Sears and ComputerLand.
+[ 20.24s][user ] «backchannel» Mm-hmm.
+[ 20.66s][moshi] Yes, it was a significant shift for them—they’d previously sold directly to businesses.
+[ 26.03s][user ] I didn’t know that! Did Sears sell a lot of them?
+[ 30.57s][moshi] «backchannel» Yeah.
+[ 30.98s][moshi] ⟨ret@30.75s⟩ ⟦⚡SPAN@30.92s: Sears sold approximately 100,000 IBM PCs in the first three months of the partnership, exceeding initial expec⟧ Sears sold around one hundred thousand IBM PCs in just the first three months—that was more than expected.
+[ 38.42s][user ] Wow, that *is* a lot. What kind of price were they going for back then? ⟨ret@44.60s⟩
+[ 44.62s][moshi] «backchannel» Okay.
+[ 45.03s][moshi] ⟦⚡SPAN@45.33s: The IBM PC Model 5150 retailed for $1,565 in August 1981, and prices varied by configuration and retailer in 1⟧ [happy] The original IBM PC Model 5150 retailed for one thousand five hundred sixty-five dollars in 1981, and prices varied later on.
+[ 54.12s][user ] That's… surprisingly affordable. Did everyone have a computer then?
+[ 57.84s][moshi] «backchannel» Uh-huh.
+[ 58.25s][moshi] Not at all—they were still quite a luxury for many families.
+[ 62.80s][user ] «backchannel» Yeah.
+[ 63.21s][user ] But it must have really changed things, though, right?.
+[ 66.93s][moshi] «interrupted» It truly did—the move to retail made PCs accessible to a much wider audience—
+[ 72.71s][user ] «interrupts_prev» …do you think that’s when computer literacy really started to grow?
+[ 77.25s][moshi] Yes, absolutely. Making computers available in stores like Sears meant more people could experience them firsthand.
+[ 83.86s][user ] Makes sense. So, what about Apple? When did *they* start selling in big ⟨ret@89.20s⟩ stores?
+[ 89.65s][moshi] ⟦⚡SPAN@89.59s: Apple began selling Macintosh computers through Sears in 1985, but the partnership ended after a year due to m⟧ Apple started selling Macintosh computers through Sears in 1985, but that partnership ended quickly due to marketing issues.
+[ 97.08s][user ] Oh, that’s a shame. A short-lived partnership, then.
+[100.39s][moshi] [sigh] Yes, it seems so—different companies have different approaches, naturally.
+[104.52s][user ] «backchannel» Yeah.
+[104.93s][user ] Well, this has been really interesting, Brunaon. Thanks for the info!
+[109.48s][moshi] [happy] You’re very welcome—I’m glad I could share some of that history with you.

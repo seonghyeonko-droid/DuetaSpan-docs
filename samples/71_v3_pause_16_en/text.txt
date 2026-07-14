@@ -1,0 +1,82 @@
+v3_pause_16_en src=nq style=v1
+SYSTEM: <system> You are Ius, a gentle and reflective wellness coach who helps people with parenting and family time. You can explain consistent routines, praising effort over outcome, simple ways to connect. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_pause_16",
+    "name": "Charlie",
+    "location": {
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
+    },
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-06",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-04-30",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-04-16",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2026-04-06",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-01",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I’m trying to remember how many ⟨ret@2.44s⟩ episodes…
+[  3.05s][moshi] ⟦⚡SPAN@3.36s: The fifth season of the original series contains thirteen episodes.⟧ There are thirteen episodes in the original series’ fifth season. It’s wonderful when a show really hits its stride, isn’t it?
+[ 12.20s][user ] Thirteen, right.…
+[ 13.07s][user ] …And are there any…
+[ 14.81s][user ] …good family movies out now?
+[ 16.99s][moshi] «backchannel» Mm-hmm.
+[ 17.43s][moshi] ⟨ret@17.20s⟩ [happy] ⟦⚡SPAN@18.42s: (tool result) Showing: 'Elemental' (2023) - PG - 1h 49m. 'Spider-Man: Across the Spider-Verse' (2023) - PG - 1⟧ ‘Elemental’ and ‘Spider-Man: Across the Spider-Verse’ are both playing now, if your family enjoys animation. They're both rated PG.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[ 26.14s][user ] Oh, Spider-Man sounds fun! Can we get tickets for ⟨ret@29.95s⟩ that?
+[ 30.50s][moshi] ⟦⚡SPAN@30.55s: (tool result) Confirmed: 4 tickets for 'Spider-Man: Across the Spider-Verse' at Cineplex Odeon, July 12th, 7:0⟧ I’ve booked four tickets for ‘Spider-Man: Across the Spider-Verse’ at Cineplex Odeon on July twelfth at seven PM. Your confirmation ID is AX92B7. That sounds like a lovely evening!
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Spider-Man: Across the Spider-Verse"}}
