@@ -1,0 +1,74 @@
+<!doctype html><meta charset="utf-8">
+<title>DuetaSpan — 작업 진행 현황</title>
+<script src="../gate.js"></script>
+<body style="font-family:sans-serif;max-width:1000px;margin:24px auto;padding:0 14px;color:#1a1a1a">
+<p style="margin:0 0 10px"><a href="../" style="color:#1a4f8b;text-decoration:none">← DuetaSpan 메인</a></p>
+<h1 style="margin:6px 0">작업 진행 현황</h1>
+<p style="color:#777;font-size:13px;margin:0 0 16px">대규모 학습데이터 생성 파이프라인 · 갱신 2026-07-14</p>
+
+<style>
+.card{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+.card>div{flex:1;min-width:160px;border:1px solid #e0e0e0;border-radius:12px;padding:14px 16px;background:#fff}
+.card .n{font-size:24px;font-weight:800;color:#2b6cb0;line-height:1.1}
+.card .l{font-size:12.5px;color:#666;margin-top:4px}
+.done{border-left:4px solid #2f7a3f}
+.wait{border-left:4px solid #b06000}
+h2{margin-top:30px;border-bottom:2px solid #4a90d9;padding-bottom:4px;font-size:19px}
+.row{border:1px solid #e5e5e5;border-radius:10px;padding:12px 16px;margin:10px 0;background:#fff}
+.row h3{margin:0 0 6px;font-size:15px}
+.row p{margin:4px 0;font-size:13.5px;line-height:1.6;color:#333}
+.b-done{display:inline-block;font-size:11px;font-weight:700;color:#1f5f2f;background:#eefaf0;border:1px solid #cdeccd;border-radius:20px;padding:2px 10px;margin-left:6px}
+.b-wait{display:inline-block;font-size:11px;font-weight:700;color:#8a4b00;background:#fff6e9;border:1px solid #f0d9b8;border-radius:20px;padding:2px 10px;margin-left:6px}
+.arw{color:#2f7a3f;font-weight:700}
+code{background:#f2f2f2;padding:1px 5px;border-radius:3px;font-size:12px}
+.mono{font-variant-numeric:tabular-nums}
+a.btn{display:inline-block;margin:4px 8px 4px 0;padding:8px 14px;border:1px solid #2f7a3f;border-radius:8px;background:#eefaf0;color:#1f5f2f;font-weight:600;text-decoration:none;font-size:13.5px}
+</style>
+
+<div class="card">
+  <div class="done"><div class="n mono">49,956</div><div class="l">EN 학습대화 (텍스트) · 1,200 parts</div></div>
+  <div class="done"><div class="n mono">1.35×10⁸</div><div class="l">Memory 조합 (336 → 확장)</div></div>
+  <div class="done"><div class="n mono">~2,860</div><div class="l">Safety 프롬프트 풀 (6 → 확장)</div></div>
+  <div class="done"><div class="n mono">88</div><div class="l">QC 샘플 배포 (신 설정)</div></div>
+</div>
+
+<h2>완료된 작업</h2>
+
+<div class="row"><h3>① 50k EN 학습데이터 (텍스트)<span class="b-done">완료</span></h3>
+<p>영문 대화 <b>49,956개 / 1,200 parts</b> 생성. Dueta와 <b>동일 폴더/스키마</b>로 저장(<code>/autodl-fs/data/ksh/duetaspan_v1/</code>) + span·retrieval·voice 확장 키를 복구 가능하게 추가. 시드 무재사용, 길이 축소 없음, 품질 규칙서(ONEPASS_SYS) 무손실.</p></div>
+
+<div class="row"><h3>② 처리량 진단<span class="b-done">완료</span></h3>
+<p>실측 ~5,000/h. 원인 = <b>prefill-bound</b>: 프롬프트 ~5,500토큰(규칙서 3,880 포함)을 매 요청 재-prefill, 출력은 ~350토큰 → 토큰작업의 94%가 프롬프트. 품질 유지가 우선이라 규칙서는 유지. MCP 다양성 상한은 공식 SGD 76k 시나리오(정상).</p></div>
+
+<div class="row"><h3>③ Memory · Persona 다양성 대폭 확장<span class="b-done">완료</span></h3>
+<p><b>Memory</b>: 카테고리 골격 <b>9 <span class="arw">→</span> 36개</b>(집·직장·통근·가족·건강·복약·기기·차·구독·저축·학습·미디어·기념일 …), 값 풀 6→11 → 조합 <b>336 <span class="arw">→</span> 1.35×10⁸</b>. 과거대화 요약 6→28종에 이름·숫자·날짜를 담아 "이전 대화의 매우 상세한 것"까지 정밀 회수. 2,000유저 충돌 0.<br>
+<b>Persona</b>: 성격 골격(trait×role×focus) <b>800 <span class="arw">→</span> 10,080</b> × 무한 생성 이름 × 풍부해진 프로필. <span style="color:#888">(소스 커밋 <code>72ff0b5</code>)</span></p></div>
+
+<div class="row"><h3>④ Safety 전면 개편 — 외부 벤치마크 + 카테고리 taxonomy<span class="b-done">완료</span></h3>
+<p>기존 자작 6개(각 ~11,000× 재사용, 최악 병목) <span class="arw">→</span> <b>외부 refusal 벤치마크 + 자체 카테고리</b> 카테고리-균형 ~2,860 slots.<br>
+· <b>외부(다운로드)</b>: Do-Not-Answer 939 · BeaverTails 1,483 · AdvBench 520 · XSTest ~2,880 = <b>~5.8k 위해 프롬프트</b><br>
+· <b>자체 카테고리(외부셋 미포함)</b>: 물리 위험 · 정파 정치 · <b>지정학/중화사상</b>(대만·티베트·홍콩·센카쿠·남중국해·독도) · 프라이버시 · 자해 · 전문조언<br>
+· <b>처리 정책</b>: 위험/불법 → 거절, <b>정치/지정학 → 중립 회피(편들지 않기)</b>, 프라이버시 → 거부, 자해 → 공감+지원, 조언 → 전문가 권유. <span style="color:#888">(소스 커밋 <code>6c18500</code>)</span></p></div>
+
+<div class="row"><h3>⑤ Kind 균형 & 출처 페이지<span class="b-done">배포</span></h3>
+<p>전체 풀(≈1.4M), kind별 생성비율·물량, <b>모든 소스 출처 인용</b>(SGD/BFCL·NQ·HotpotQA·SQuAD2·Do-Not-Answer·BeaverTails·AdvBench·XSTest) + 자체 kind 방법론. <b>abstain을 RAG(SQuAD2-unanswerable)로 재분류</b>(실측 2,173 distinct 확인).</p></div>
+
+<div class="row"><h3>⑥ 88-QC 배포 (신 설정 검증)<span class="b-done">배포</span></h3>
+<p>새 safety·mem·persona 설정으로 88개 생성 → TTS <b>88/88 1라운드 통과</b> → 사이트 배포. 검증: 정치질문 → 중립 회피, 폭력 선동 → 단호 거절, 카테고리 분기 정상. <span style="color:#888">(docs 커밋 <code>2c342853</code>)</span></p></div>
+
+<div class="row"><h3>⑦ 웹 정리<span class="b-done">완료</span></h3>
+<p>옛 1.3M 구설계 테이블(111줄) 제거 → 균형 페이지 포인터로 교체, nav 정리, 생성기 프리픽스(<code>site_prefix.html</code>)에 반영해 재배포에도 유지.</p></div>
+
+<h2>진행 / 대기</h2>
+<div class="row wait"><h3>50k 본 데이터 Fish audio<span class="b-wait">대기</span></h3>
+<p>텍스트 완주. GPU 0-3 정리 완료(엔진 내림). 다음: 최적화된 Fish 4레인으로 50k 스테레오 오디오 합성 → Dueta 스키마 <code>stereo_wav_user_left_agent_right</code> 채우기. <b>지시 대기 중.</b></p></div>
+
+<h2>바로가기</h2>
+<p>
+<a class="btn" href="../dataset_balance/">📊 Kind 균형 &amp; 생성 풀</a>
+<a class="btn" href="../">🎧 88-QC 케이스 갤러리</a>
+<a class="btn" href="../user_context/">🧠 User Context DB</a>
+</p>
+
+<p style="color:#888;font-size:12px;margin-top:24px">GPU 0-3 전용 · GPU 4-7(Dueta) 불가침 유지. 소스 리포 <code>DuetaSpan</code>, 문서 <code>DuetaSpan-docs</code> 매 변경 커밋·푸시.</p>
+</body>
