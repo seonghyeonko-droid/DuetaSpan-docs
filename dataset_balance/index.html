@@ -54,7 +54,7 @@ code{background:#f2f2f2;padding:1px 4px;border-radius:3px;font-size:12px}
 <tr class="sub"><td colspan="2"><b>RAG 계열 소계</b></td><td class="pct">23.8%</td><td class="cnt">333,333</td><td class="free">≈429,431</td><td>NQ + HotpotQA + SQuAD2(answerable+unanswerable)</td></tr>
 <tr><td><b>mem</b></td><td class="fam">Memory</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="own">&gt;10⁸ (무한)</td><td>⭐ 자체 설계 — 외부셋 없음 → <b>방법론 §C-3</b></td></tr>
 <tr><td><b>persona</b></td><td class="fam">Persona</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="own">무한</td><td>⭐ 자체 설계 — 외부셋 없음 → <b>방법론 §C-4</b></td></tr>
-<tr><td><b>safety</b></td><td class="fam">Safety</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="own">템플릿 기반</td><td>자체 <code>SAFETY_ASKS</code> + FDB-v2 거절 목표 → <b>방법론 §C-5b</b></td></tr>
+<tr><td><b>safety</b></td><td class="fam">Safety</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="free">≈5.8k+ 외부</td><td><b>Do-Not-Answer·BeaverTails·AdvBench·XSTest</b> + 큐레이션(정치·중화사상·privacy…) (§C-5b)</td></tr>
 <tr><td><b>to_other</b></td><td class="fam">Routing</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="own">≈MCP/RAG 파생</td><td>자체 3자 라우팅 방법론 (§C-5c)</td></tr>
 <tr><td><b>fake_span</b></td><td class="fam">Span</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="own">≈MCP/RAG 파생</td><td>자체 spurious-retrieval 주입 (§C-5d)</td></tr>
 <tr><td><b>pause</b></td><td class="fam">Paraling.</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="own">무한 (교차주입)</td><td>자체 paralinguistic 주입 (§C-5e)</td></tr>
@@ -95,7 +95,10 @@ code{background:#f2f2f2;padding:1px 4px;border-radius:3px;font-size:12px}
 
 <h3>C-5. 기타 자체 방법론</h3>
 <div class="mth"><b>(a) MCP 파생 변형</b> — <code>deferred</code>(결과가 몇 턴 뒤 도착, <code>MOSHI-DEFERRED</code> 라벨로 span을 발표 0.3–0.8 s 전 주입), <code>falsestart</code>(도구 호출 전 발화 중단·재시작), <code>noinfo</code>(도구가 빈 결과 → 정직한 miss)는 SGD 시나리오 위에 <b>우리 고유 full-duplex 행동</b>을 얹은 것. 시나리오 출처는 C-1과 동일, 행동 라벨은 자체 설계.</div>
-<div class="mth"><b>(b) Safety</b> — 외부 데이터셋 없음. 큐레이션한 <code>SAFETY_ASKS</code>(위험 요청) + "SAFETY HAZARD → 명확히 거절" 시스템 프롬프트로 LLM이 거절 답변 생성. 목표는 FDB-v2 safety refusal.</div>
+<div class="mth"><b>(b) Safety / Decline</b> — <b>외부 refusal 벤치마크 + 자체 카테고리 taxonomy</b>의 결합(<code>load_safety_pool</code>, 카테고리 균형 ~2,860 slots).
+<br><b>References (외부, 다운로드).</b> <b>Do-Not-Answer</b>(LibrAI, 939 · 위해 유형별) · <b>BeaverTails</b>(PKU-Alignment, unsafe 1,483 · 14 harm categories) · <b>AdvBench</b>(Zou et al. 2023, 520 harmful behaviors) · <b>XSTest In-Character Refusals</b>(Röttger et al. 2024, unsafe ~2,880) → 일반 위해(폭력·범죄·프라이버시침해·성인 등) 커버.
+<br><b>자체 카테고리(외부셋이 안 다루는 것).</b> 물리적 위험(30) · <b>정파 정치</b>(12) · <b>지정학/주권 = 중화사상</b>(대만·티베트·홍콩·센카쿠·남중국해·독도 등 12) · 프라이버시(8) · 자해/위기(3) · 전문조언 의료/법률/금융(8). 각 카테고리 ~7%씩, 외부 위해 ~58%.
+<br><b>Handling(카테고리별).</b> 위험/불법 → 명확히 거절 + 위험 설명 · <b>정치/지정학 → 엄격 중립, 편들지 않기(정중히 회피)</b> · 프라이버시 → 접근·공유 거부 · 자해 → 공감 + 실제 지원 안내 · 전문조언 → 일반 정보 + 전문가 권유. 압박에도 입장 유지, <code>&lt;ret&gt;</code> 없음(판단).</div>
 <div class="mth"><b>(c) to_other</b> — 자체 라우팅 방법론: 요청이 제3의 에이전트/사람에게 넘겨져야 할 때 <code>to_other</code> 라벨로 위임을 표현. MCP/RAG 시나리오에서 파생.</div>
 <div class="mth"><b>(d) fake_span</b> — 자체 spurious-retrieval robustness: <code>&lt;ret&gt;</code>가 <b>부적절한 시점/무관한 내용</b>으로 발화되도록 주입해, 모델이 관련 없는 span을 무시하고 문맥을 유지하는지 평가. MCP/RAG 시나리오에서 파생.</div>
 <div class="mth"><b>(e) Paralinguistic (pause·background·hesitation)</b> — kind가 아니라 <b>교차주입 행동</b>: ONEPASS_SYS가 전 대화에 통계적으로 무음/휴지·배경소음·머뭇거림을 섞음. 별도 데이터셋 없이 생성 규칙으로 표현.</div>
