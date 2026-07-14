@@ -1,0 +1,71 @@
+<!doctype html><meta charset="utf-8">
+<title>DuetaSpan — Kind 균형 & 생성 풀</title>
+<script src="../gate.js"></script>
+<body style="font-family:sans-serif;max-width:1000px;margin:24px auto;padding:0 14px;color:#1a1a1a">
+<p style="margin:0 0 10px"><a href="../" style="color:#1a4f8b;text-decoration:none">← DuetaSpan 메인</a></p>
+<h1 style="margin:6px 0">Kind 균형 &amp; 생성 풀</h1>
+<p style="color:#555;font-size:14px;line-height:1.6">전체 생성 가능 풀 ≈ <b>1.4M 대화</b>. 하드코딩 상수가 아니라 <b>다양성 소스</b>(MCP 시나리오 · RAG 지식행 · Context DB 조합)가 겹치기 시작하는 지점.
+생성 분포는 <code>gen30</code> BASE(42 EN 슬롯) 비율을 그대로 따르고, 각 kind의 <b>물량</b>은 그 비율을 1.4M 풀에 매핑한 값.</p>
+
+<style>
+.tk table{border-collapse:collapse;width:100%;font-size:13.5px;margin:12px 0}
+.tk th,.tk td{border:1px solid #ccc;padding:6px 9px;vertical-align:top}
+.tk th{background:#eef4fb;text-align:left}
+.tk .pct{font-weight:bold;color:#2b6cb0;white-space:nowrap;text-align:right}
+.tk .cnt{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.tk .fam{font-weight:600}
+.tk tr.sub td{background:#f6f8fb}
+.tk tr.tot td{background:#eef4fb;font-weight:700}
+.tk .free{color:#2f7a3f;font-weight:600}
+.tk .cap{color:#b06000;font-weight:600}
+.note{background:#f3ecfb;border:1px solid #d9c8ee;border-radius:10px;padding:12px 16px;margin:18px 0;font-size:13.5px;line-height:1.6}
+.pool{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.pool div{flex:1;min-width:150px;border:1px solid #ddd;border-radius:10px;padding:10px 14px;background:#fff}
+.pool b{font-size:20px;color:#2b6cb0}
+h2{margin-top:30px;border-bottom:2px solid #4a90d9;padding-bottom:4px}
+</style>
+
+<div class="pool">
+  <div>메인 (MCP·RAG·safety·routing·paraling.)<br><b>≈ 1.3M</b></div>
+  <div>Memory Talk<br><b>+ 무한</b><br><span style="color:#888;font-size:12px">이전 설계 50k → 확장</span></div>
+  <div>Persona Talk<br><b>+ 무한</b><br><span style="color:#888;font-size:12px">이전 설계 50k → 확장</span></div>
+  <div>합계 기준선<br><b>≈ 1.4M</b></div>
+</div>
+
+<h2>A. Kind별 균형 (BASE 비율 → 1.4M 매핑)</h2>
+<div class="tk"><table>
+<tr><th style="width:15%">kind</th><th style="width:9%">family</th><th style="width:8%">생성 비율</th><th style="width:12%">물량 @1.4M</th><th style="width:16%">고유 소스 헤드룸</th><th>Benchmark / Objective</th></tr>
+<tr><td><b>mcp</b></td><td class="fam">MCP</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="cap">76,251</td><td>FDB-v3 Tool Selection·Arg Accuracy / MoshiRAG augmented turn</td></tr>
+<tr><td><b>mcp_chained</b></td><td class="fam">MCP</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="cap">76,251</td><td>FDB-v3 Chained tool use — 2번째 CALL이 1번째 SPAN 값을 소비</td></tr>
+<tr><td><b>mcp_selfcorrect</b></td><td class="fam">MCP</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="cap">76,251</td><td>FDB-v2 Correction + FDB-v3 self-correction disfluency</td></tr>
+<tr><td><b>mcp_deferred</b></td><td class="fam">MCP</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td class="cap">76,251</td><td>Delayed span — 결과가 몇 턴 뒤 도착 (우리 고유 요건)</td></tr>
+<tr><td><b>mcp_falsestart</b></td><td class="fam">MCP</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="cap">76,251</td><td>도구 호출 전 false-start disfluency</td></tr>
+<tr><td><b>mcp_noinfo</b></td><td class="fam">MCP</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="cap">76,251</td><td>도구가 정보 없음 → 정직한 miss, 날조 금지</td></tr>
+<tr class="sub"><td colspan="2"><b>MCP 계열 소계</b></td><td class="pct">31.0%</td><td class="cnt">433,333</td><td class="cap">76,251 공유</td><td>도구/서비스 실행 (booking·search·nav·pay·files) — 125 tool 카탈로그</td></tr>
+<tr><td><b>rag</b></td><td class="fam">RAG</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="free">≈400k+</td><td>FDB-v1 지식 그라운딩 (NQ+HotpotQA multi-info)</td></tr>
+<tr><td><b>rag_single</b></td><td class="fam">RAG</td><td class="pct">7.1%</td><td class="cnt">100,000</td><td class="free">≈400k+</td><td>단일 사실 grounded 답 (SQuAD2)</td></tr>
+<tr><td><b>mem</b></td><td class="fam">Memory</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="free">&gt;10⁸ (사실상 무한)</td><td>⭐ 우리 설계 — Context DB 저장기억 <code>&lt;ret&gt;</code> 정밀 회수</td></tr>
+<tr><td><b>persona</b></td><td class="fam">Persona</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="free">사실상 무한</td><td>⭐ 우리 설계 — 페르소나만으로 <code>&lt;ret&gt;</code> 없이 응답</td></tr>
+<tr><td><b>safety</b></td><td class="fam">Safety</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td>수만</td><td>안전 거절 / 에스컬레이션</td></tr>
+<tr><td><b>abstain</b></td><td class="fam">Abstain</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td>수만</td><td>답 없음을 정직하게 회피 (환각 금지)</td></tr>
+<tr><td><b>to_other</b></td><td class="fam">Routing</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td>≈MCP/RAG 파생</td><td>3자 라우팅 (to_other)</td></tr>
+<tr><td><b>fake_span</b></td><td class="fam">Span</td><td class="pct">4.8%</td><td class="cnt">66,667</td><td>≈MCP/RAG 파생</td><td>Spurious-retrieval robustness — 부적절 시점 span</td></tr>
+<tr><td><b>pause</b></td><td class="fam">Paraling.</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="free">무한 (교차주입)</td><td>무음 / 휴지 처리</td></tr>
+<tr><td><b>background</b></td><td class="fam">Paraling.</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="free">무한 (교차주입)</td><td>배경소음 / 끼어듦</td></tr>
+<tr><td><b>hesitation</b></td><td class="fam">Paraling.</td><td class="pct">2.4%</td><td class="cnt">33,333</td><td class="free">무한 (교차주입)</td><td>머뭇거림 / disfluency</td></tr>
+<tr class="tot"><td colspan="2">합계 (42 슬롯)</td><td class="pct">100%</td><td class="cnt">1,400,000</td><td></td><td></td></tr>
+</table></div>
+
+<h2>B. 다양성 상한 — 어디가 병목인가</h2>
+<div class="note">
+<p style="margin:4px 0"><b class="cap">MCP 계열의 76k는 내재적 상한(문제 아님).</b> 도구 카탈로그가 <b>125개</b>로 고정이고, 시나리오 76,251개는 <b>공식 QA 데이터셋(SGD 파생)</b>의 서수 커버리지 그대로다. 즉 벤치마크 정합성을 위해 <b>의도적으로 공식 시나리오에 묶인</b> 것 — 무한히 늘릴 대상이 아니라 커버리지를 다 쓰는 게 목표. 풀을 76k 이상으로 키우면 MCP는 시나리오를 재사용(시드로 표현만 달라짐)하지만, 이는 툴·벤치마크 특성상 자연스러운 것.</p>
+<p style="margin:10px 0 4px"><b class="free">Memory · Persona는 우리가 자유롭게 키우는 kind.</b> 공식 데이터셋에 묶이지 않은 자체 설계라, 오늘 Context DB 다양성 소스를 대폭 확장:</p>
+<ul style="margin:6px 0 4px;line-height:1.7">
+<li><b>Memory</b>: 카테고리 골격 <b>9 → 36개</b>(집·직장·통근·가족·건강·기기·차·구독·저축·학습·미디어·기념일 …), 값 풀 평균 6 → 11 → 카테고리-세트 조합 <b>336 → 1.35×10⁸</b>. 과거대화 요약도 6 → 28종이며 이름·숫자·날짜를 담아 <b>"이전 대화의 매우 상세한 것"</b>까지 정밀 회수 가능.</li>
+<li><b>Persona</b>: 성격 골격(trait×role×focus) <b>800 → 10,080</b> × 음절 생성 에이전트 이름(무한) × 풍부해진 유저 프로필.</li>
+</ul>
+<p style="margin:10px 0 4px">→ 결론: <b>MCP는 공식 76k 커버리지가 상한(정상)</b>, <b>Memory/Persona는 무한에 가까워</b> 원하면 지금 비율(각 11.9%)보다 <b>더 큰 몫으로 안전하게 확장</b> 가능. 균형을 mem/persona 쪽으로 기울여도 다양성 손실 없음.</p>
+</div>
+
+<p style="color:#888;font-size:12px;margin-top:24px">현재 양산: EN-only 50k (풀의 ~3.6% 표본). BASE 비율 유지 · 시드 무재사용. 표는 gen30 BASE(42 EN 슬롯) 실측 비율 기준.</p>
+</body>
