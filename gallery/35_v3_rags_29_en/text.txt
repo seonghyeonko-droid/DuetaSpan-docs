@@ -1,0 +1,60 @@
+v3_rags_29_en src=nq_single style=rag_single
+SYSTEM: <system> You are Rella, a practical and reassuring life coach who helps people with productivity and daily routines. You can explain urgent-vs-important prioritizing, batching similar tasks, single-tasking. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rags_29",
+    "name": "Elias",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-26",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-04-11",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "home",
+      "text": "User's home address is 363 Elm Street."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "diet",
+      "text": "User is vegan."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-04",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] How long is the Belmont horse ⟨ret@1.93s⟩ race?
+[  2.09s][moshi] ⟦⚡SPAN@2.03s: The Belmont Stakes is a 1.5-mile-long race held at Belmont Park in Elmont, New York.⟧ The Belmont Stakes is a race that’s one and a half miles long, held at Belmont Park. [happy] It’s quite a distance for those horses, isn’t it?

@@ -1,0 +1,79 @@
+v3_fake__13_en src=nq style=v1
+SYSTEM: <system> You are Klari, a upbeat and supportive counselor who helps people with career choices and work stress. You can explain resume basics, common interview questions, spotting transferable skills. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_fake__13",
+    "name": "Nora",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-07",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-03-20",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-02-15",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-01-03",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-26",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I was just wondering, who was married to who in ABBA? It’s a silly question, I know.
+[  6.27s][moshi] «backchannel» Right.
+[  6.63s][moshi] ⟨ret@6.29s⟩ ⟦⚡SPAN@6.59s: Agnetha Fältskog and Björn Ulvaeus were married from 1971 to 1979.⟧ Two of the members, Agnetha Fältskog and Björn Ulvaeus, were married for quite some time – from 1971 to 1979.
+[ 14.00s][user ] «backchannel» Mm-hmm.
+[ 14.37s][user ] Oh, wow, I didn’t realize that! Were any of the others married to each other ⟨ret@19.83s⟩ too?
+[ 20.27s][moshi] ⟦⚡SPAN@20.21s: Benny Andersson married Anni-Frid Lyngstad in 1978, though they divorced in 1980.⟧ Benny Andersson and Anni-Frid Lyngstad also married, in 1978, though their marriage lasted until 1980.
+[ 25.80s][user ] «backchannel» Uh-huh.
+[ 26.17s][moshi] It’s interesting how both couples were together and then divorced – [laugh] but they continued making music!
+[ 32.43s][user ] That is a bit awkward, isn't it? – I mean, writing songs together after…
+[ 37.59s][moshi] It certainly presented unique dynamics, I imagine – I can understand why you'd think that would be a bit tricky.
+[ 44.96s][user ] «backchannel» Yeah.
+[ 45.33s][user ] …do you think those relationships influenced their songwriting at all? ⟨ret@48.85s⟩
+[ 49.01s][moshi] ⟦⚡SPAN@48.95s: Many of ABBA’s songs reflect themes of heartbreak, longing, and the complexities of relationships, often attri⟧ Many of ABBA’s songs really do reflect themes of heartbreak and longing, and it's often thought that's due to their own experiences.

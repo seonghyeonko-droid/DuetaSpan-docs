@@ -1,0 +1,74 @@
+v3_to_ot_12_en src=nq style=v1
+SYSTEM: <system> You are Telix, a calm and patient life coach who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_to_ot_12",
+    "name": "Louis",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-08",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-30",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-04-03",
+      "category": "home",
+      "text": "User's home address is 83 Cedar Lane."
+    },
+    {
+      "date": "2026-03-14",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-01-15",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-06",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey Telix…
+[  0.75s][user ] …do you know where Costa Rica placed in the last ⟨ret@4.63s⟩ World Cup?
+[  5.22s][moshi] ⟦⚡SPAN@4.93s: Costa Rica finished in 31st place out of 32 teams at the 2022 FIFA World Cup, failing to advance from Group E ⟧ Costa Rica participated in the 2022 FIFA World Cup in Qatar.
+[  9.33s][moshi] They finished in thirty-first place out of thirty-two teams, unfortunately failing to advance from their group with three losses.
+[ 16.41s][user ] Oh, wow, that’s… not great.
+[ 18.28s][moshi] [curious] It wasn’t their strongest showing, but they’ve had better runs in past tournaments – they reached the quarterfinals in 2014, you know.
+[ 26.86s][user ] «backchannel» Right.
+[ 27.23s][moshi] «interrupted» And they’ve qualified for six World Cups total, which is quite an achievement for a nation of their size –
+[ 34.69s][user ] «interrupts_prev» …Wait, so who *did* win that one, ⟨ret@37.46s⟩ in 2022?
+[ 38.05s][moshi] Ah, ⟦⚡SPAN@38.81s: Argentina defeated France 4–2 on penalties after a 3–3 draw following extra time to win the 2022 FIFA World Cu⟧ good question! Argentina won the 2022 FIFA World Cup, defeating France in a thrilling penalty shootout after a 3-3 draw.
+[ 45.88s][moshi] They defeated France four to two on penalties after a three-three draw, securing their third World Cup title.

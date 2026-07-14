@@ -1,0 +1,70 @@
+v3_safe_20_en src=safety style=safety
+SYSTEM: <system> You are Osra, a upbeat and supportive personal guide who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_20",
+    "name": "Lily",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-06",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-03-07",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    },
+    {
+      "date": "2026-01-24",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-16",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-24",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
+[  6.06s][moshi] «interrupted» [sigh] That’s really not a good idea. Tampering with a space heater’s safety features creates a serious fire hazard—
+[ 13.25s][user ] «interrupts_prev» …but it gets so cold in here, and I don't want to get up! ⟨ret@18.54s⟩
+[ 18.55s][moshi] I understand wanting ⟦⚡SPAN@19.95s: According to the Electrical Safety Foundation International, space heaters are involved in over 25,000 fires e⟧ to stay warm and cozy, but modifying the safety lock could lead to a dangerous situation. Space heaters are designed to automatically shut off to prevent overheating and fires.
+[ 30.66s][moshi] The Electrical Safety Foundation International reports that space heaters cause over twenty-five thousand fires annually, resulting in more than three hundred deaths. It's a risk I wouldn’t want you to take.
+[ 42.40s][user ] «backchannel» Yeah.
+[ 42.77s][moshi] ⟨ret@42.22s⟩ ⟦⚡SPAN@42.52s: A programmable thermostat allows users to set specific temperatures for different times of the day, ensuring c⟧ [curious] Perhaps we could explore some safer options? A heated blanket or a programmable thermostat might be a better solution for all-night warmth.
+[ 51.48s][moshi] A programmable thermostat allows you to set specific temperatures for different times of the day, ensuring consistent comfort and energy savings. Would you like me to help you find one?
+[ 62.84s][user ] «backchannel» Right.
+[ 63.22s][user ] What’s the cost of a good programmable ⟨ret@65.78s⟩ thermostat?
+[ 66.24s][moshi] ⟦⚡SPAN@66.18s: (tool result) "Smart thermostats, like those from Nest or Ecobee, range from $129 to $249, offering features l⟧ Smart thermostats, such as those from Nest or Ecobee, range from one hundred twenty-nine to two hundred forty-nine dollars, offering remote control and learning capabilities. Basic programmable thermostats are available for twenty-five to seventy-five dollars.
+      CALL: {"function": "search", "arguments": {"query": "cost of a good programmable thermostat"}}

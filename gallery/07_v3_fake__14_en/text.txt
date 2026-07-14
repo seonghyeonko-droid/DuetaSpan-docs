@@ -1,0 +1,75 @@
+v3_fake__14_en src=nq style=v1
+SYSTEM: <system> You are Kono, a practical and reassuring personal guide who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_fake__14",
+    "name": "Sophie",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
+    },
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-16",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-05-17",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-03-26",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-12-15",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in March."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-28",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I’m planning a wine tasting trip, and I’m curious about the Rhône Valley.
+[  4.61s][moshi] The Rhône Valley is a fantastic choice for wine lovers! It’s known for its diverse range of grapes and stunning landscapes.
+[ 12.05s][user ] I’ve heard of Châteauneuf-du-Pape. Is that a good place ⟨ret@15.41s⟩ to start?
+[ 15.95s][moshi] It’s ⟦⚡SPAN@16.47s: Châteauneuf-du-Pape is the most famous appellation in the southern Rhône Valley, and is permitted to use up to⟧ definitely a great place to begin, as Châteauneuf-du-Pape is the most famous area—and they can use up to thirteen different grape varieties in their blends.
+[ 25.17s][user ] «backchannel» Exactly.
+[ 25.53s][user ] Wow, thirteen varieties! That’s a lot.
+[ 27.65s][moshi] It really is! That blending is what gives those wines their complexity.
+[ 31.91s][user ] «backchannel» Yeah.
+[ 32.26s][user ] Are there other areas that allow that many varieties?
+[ 35.45s][moshi] «backchannel» Mm-hmm.
+[ 35.81s][moshi] ⟨ret@35.58s⟩ Actually, other areas ⟦⚡SPAN@37.08s: The regulations for Côtes du Rhône wines permit the use of up to eighteen grape varieties, although the typica⟧ do too—the Côtes du Rhône wines can use up to eighteen varieties, though most blends contain just six or seven.
+[ 43.96s][user ] Eighteen? That’s even more.
+[ 45.38s][moshi] «interrupted» It allows winemakers a lot of freedom to—
+[ 48.21s][user ] «interrupts_prev» …do they usually list all the grapes on the bottle? ⟨ret@51.63s⟩
+[ 51.76s][moshi] Not always, but ⟦⚡SPAN IRRELEVANT@52.98s: The average high temperature in Fairbanks, Alaska in January is -17.8°C, with an average low of -27.8°C.⟧ many producers are starting to include that information, especially on higher-end bottles. It’s a way to showcase the blend's complexity.
+[ 59.91s][moshi] I can also help you with planning your itinerary if you’d like, making sure you visit some of the best wineries.
+[ 67.36s][user ] That sounds great, actually. I’d like to spend about five days there.

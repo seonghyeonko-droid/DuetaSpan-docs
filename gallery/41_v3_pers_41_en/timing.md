@@ -4,122 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Ethan",
+#     "name": "Leo",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "American",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A+."
+#       "date": "2026-06-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in May."
 #     },
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-06-08",
+#       "category": "home",
+#       "text": "User's home address is 494 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-04-16",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-12-26",
 #       "category": "diet",
-#       "text": "User is dairy-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "music",
-#       "text": "User likes listening to indie folk."
-#     },
-#     {
-#       "date": "2026-04-26",
+#       "date": "2025-12-14",
 #       "category": "hobby",
-#       "text": "User is into urban sketching."
-#     },
-#     {
-#       "date": "2026-04-22",
-#       "category": "employer",
-#       "text": "User works at a fintech startup."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a flat white."
-#     },
-#     {
-#       "date": "2026-02-18",
-#       "category": "streaming",
-#       "text": "User subscribes to Twitch and Spotify."
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "category": "savings",
-#       "text": "User is saving for paying off student loans."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "pet",
-#       "text": "User has a Shiba Inu named Kongi."
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-08",
-#       "title": "Building a PC",
+#       "date": "2026-06-14",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-06-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-05-15",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, uh, Buli… that’s a pretty unus | S2 I’m just… really struggling with p | S3 Welll… that sounds nice, but easie | S4 I guess… but how do I even *start*
 
-     0.00s  agent 발화 시작: Bonjour, Ethan! I'm Buli.
-     1.53s  user  발화 시작: Oh, uh, Buli… that’s a pretty unusual name. What exactly *do
-     1.53s  agent 발화 끝
-     6.49s  agent 발화 시작: [happy] It’s a name rooted in mindfulness, Ethan—a reminder 
-     6.49s  user  발화 끝
-    16.42s  user  발화 시작: Mm-hmm.
-    16.42s  agent 발화 끝
-    16.80s  user  발화 시작: I’m just… really struggling with putting myself out there, y
-    16.80s  user  발화 끝
-    22.15s  agent 발화 시작: It's very common to feel that way, Ethan. Often, it’s less a
-    22.15s  user  발화 끝
-    32.84s  user  발화 시작: Welll… that sounds nice, but easier said than done, right? I
-    32.84s  agent 발화 끝
-    38.19s  agent 발화 시작: Uh-huh.
-    38.19s  user  발화 끝
-    38.57s  agent 발화 시작: [sigh] Rejection stings, absolutely. But each experience, ev
-    38.57s  agent 발화 끝
-    49.26s  user  발화 시작: Uh-huh.
-    49.26s  agent 발화 끝
-    49.64s  user  발화 시작: I guess… but how do I even *start* to feel more confident? I
-    49.64s  user  발화 끝
-    55.37s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Leo, it’s lovely to meet you! I'm Jeliia.
+     3.60s  user  발화 시작: Yeah.
+     3.60s  agent 발화 끝
+     4.00s  user  발화 시작: But what exactly *do* you help with? I’m just…feeling a bit 
+     4.00s  user  발화 끝
+     9.59s  agent 발화 시작: Yeah.
+     9.59s  user  발화 끝
+     9.99s  agent 발화 시작: [happy] I understand, Leo. Feeling lost in friendships happe
+     9.99s  agent 발화 끝
+    21.57s  user  발화 시작: It’s just… I keep waiting for *them* to contact me. It’s bee
+    21.57s  agent 발화 끝
+    27.57s  agent 발화 시작: Yeah, totally.
+    27.57s  user  발화 끝
+    28.37s  agent 발화 시작: It's very common to hope others will initiate, but often, ta
+    28.37s  agent 발화 끝
+    39.95s  agent 발화 끝

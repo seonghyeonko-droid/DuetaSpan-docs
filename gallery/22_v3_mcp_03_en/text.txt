@@ -1,0 +1,77 @@
+v3_mcp_03_en src=mcp style=v1
+SYSTEM: <system> You are Zeaus, a gentle and reflective personal guide who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_03",
+    "name": "Avery",
+    "location": {
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
+    },
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-20",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2026-05-31",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-03-08",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-02-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-06",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I need to see the browser console logs for when a user clicks the "Submit" button on my website. Can you get up to ten of the most recent ones? ⟨ret@10.76s⟩
+[ 10.84s][moshi] [curious] ⟦⚡SPAN@11.46s: (tool result) Here are ten recent logs related to user clicks on the "Submit" button: 1. "User clicked Submit ⟧ Certainly. I found ten recent logs regarding user clicks on the "Submit" button, starting with a click from IP address 192.16.1.1 on July 9th at 2:35 PM.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "mywebsite.com/console_logs", "query": "user click Submit button"}}
+[ 20.96s][user ] Hmm, interesting. Can you tell me what the weather is like in Busan right now? ⟨ret@26.24s⟩
+[ 26.37s][moshi] ⟦⚡SPAN@26.34s: The current weather in Busan is 28.5°C, humidity 78%, wind 7.2 km/h, and partly cloudy.⟧ The weather in Busan is currently twenty-eight point five degrees Celsius, with seventy-eight percent humidity and partly cloudy skies.
+[ 33.24s][moshi] A pleasant day for a walk along Haeundae Beach, perhaps?

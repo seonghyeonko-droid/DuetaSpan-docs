@@ -1,0 +1,62 @@
+v3_defer_09_en src=mcp style=mcp_deferred
+SYSTEM: <system> You are Jaen, a kind and steady wellness coach who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_defer_09",
+    "name": "Paul",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-05-20",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-03-22",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2026-03-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-03",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I need to pay the Electric Company one hundred fifty dollars and seventy-five cents. ⟨ret@4.60s⟩
+[  4.73s][moshi] Okay, I’ve ⟦⚡SPAN@5.75s: (tool result) Payment request initiated. Reference ID: 92874531.⟧ requested a payment of one hundred fifty dollars and seventy-five cents to the Electric Company. Your reference ID is nine two eight seven four five three one.
+      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "150.75", "payee": "Electric Company"}}
+[ 14.51s][user ] That’s great, thanks. Uh, what’s the weather ⟨ret@16.94s⟩ like today?
+[ 17.55s][moshi] ⟦⚡SPAN@17.82s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ [happy] The current time is two thirty-three PM. It is Friday, July tenth, 2026.
+[ 22.28s][user ] I’m actually planning a trip to Busan next week. What’s a good restaurant there?
+[ 27.00s][moshi] Busan is a lovely city! Give me a moment while I search for restaurants.
+  ⟦⚡지연 SPAN 도착@31.05s: Haeundae Gejang is a popular seafood restaurant in Busan, South Korea, known for its fresh crab dishes and liv⟧
+[ 31.73s][moshi] «deferred_result» ⟨ret@31.73s⟩ I'm looking for some good dining options for your trip. Haeundae Gejang is a popular restaurant in Busan, specializing in fresh crab dishes, with an average cost of twenty-five thousand won per person.
