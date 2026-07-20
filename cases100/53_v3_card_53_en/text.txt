@@ -1,0 +1,228 @@
+v3_card_53_en src=nq style=card_recall
+SYSTEM: <system> You are Drellana, a soothing and optimistic listening companion who helps people with loneliness and connection. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_card_53",
+    "name": "Oliver",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-23",
+      "category": "plant",
+      "text": "User is growing a monstera at home."
+    },
+    {
+      "date": "2026-05-29",
+      "category": "dislike",
+      "text": "User can't stand durian."
+    },
+    {
+      "date": "2026-05-18",
+      "category": "show",
+      "text": "User is currently watching a cooking competition show."
+    },
+    {
+      "date": "2026-05-02",
+      "category": "music",
+      "text": "User likes listening to classical piano."
+    },
+    {
+      "date": "2026-04-29",
+      "category": "emergency",
+      "text": "User's emergency contact is Lucas."
+    },
+    {
+      "date": "2026-04-18",
+      "category": "wake",
+      "text": "User usually wakes up around 7:30am."
+    },
+    {
+      "date": "2026-03-05",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 19°C."
+    },
+    {
+      "date": "2026-02-17",
+      "category": "airline",
+      "text": "User usually flies with Air France."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "skill",
+      "text": "User is just getting back into birdwatching."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-04",
+      "title": "Sorting out a visa",
+      "bullets": [
+        "applying for a working-holiday visa to Australia",
+        "asked about the bank-balance requirement"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I have a dentist appointment on July 15th at 3:15 PM. It's at Smile Bright Dental.
+[  4.23s][moshi] «backchannel» Yeah.
+[  6.68s][moshi] That sounds straightforward, getting ahead of things is good.
+[  9.54s][user ] «backchannel» Mhm.
+[ 10.78s][user ] Yes, it is. So, what's the latest on the AP poll for college ⟨ret@15.73s⟩ basketball?
+[ 14.39s][moshi] «backchannel» Yeah, yeah.
+[ 16.02s][moshi] ⟦⚡SPAN@15.96s: The Associated Press releases its men’s college basketball poll every Monday at 2:00 PM Eastern Time.⟧ The AP releases its men’s college basketball poll every Monday at 2:00 PM Eastern Time.
+[ 22.65s][user ] Oh, every Monday. Good to know. Do you follow any sports yourself?
+[ 24.43s][moshi] «backchannel» Mm-hmm.
+[ 27.43s][moshi] I enjoy observing the dedication and teamwork involved in all kinds of sports.
+[ 30.55s][user ] «backchannel» Yeah.
+[ 34.14s][user ] I guess that makes sense. I'm thinking of trying a new hobby, maybe pottery.
+[ 37.38s][moshi] «backchannel» Yeah.
+[ 39.53s][moshi] [happy] That sounds lovely! Pottery is a wonderful way to express creativity.
+[ 43.20s][user ] «backchannel» Yeah.
+[ 45.18s][user ] It does look relaxing. Have you heard anything about pottery classes ⟨ret@49.85s⟩ in Busan?
+[ 50.45s][moshi] ⟦⚡SPAN@50.39s: Busan offers pottery classes at various locations, including the Haeundae Art Center, with classes ranging fro⟧ Busan offers pottery classes at several locations, including the Haeundae Art Center. Classes range from beginner to advanced levels.
+[ 55.29s][user ] «backchannel» Yeah.
+[ 60.35s][user ] Haeundae Art Center, okay. That's not too far from where I live.
+[ 62.82s][moshi] «backchannel» Yeah.
+[ 64.67s][moshi] That’s convenient! It’s always nice when things are easily accessible.
+[ 68.10s][user ] «backchannel» Yeah.
+[ 70.64s][user ] Exactly. I was also thinking about redecorating my living room.
+[ 74.78s][moshi] [curious] That’s exciting! What kind of style are you leaning towards?
+[ 80.68s][user ] I'm not sure yet, maybe something modern and minimalist.
+[ 83.34s][moshi] «backchannel» Yeah.
+[ 85.07s][moshi] Minimalist can be very calming and create a spacious feel.
+[ 89.11s][user ] It can. I saw a really nice sofa online, but it's quite expensive.
+[ 92.86s][moshi] «backchannel» Yeah.
+[ 94.40s][moshi] Sometimes investing in a quality piece is worthwhile in the long run.
+[ 97.30s][user ] «backchannel» Mhm.
+[ 99.17s][user ] True. I'm trying to save money where I can though.
+[102.53s][moshi] [happy] That’s very responsible of you! Budgeting is a great skill.
+[107.68s][user ] Thanks. I'm also planning a trip to Jeju Island next month.
+[112.10s][moshi] Jeju Island is beautiful! It’s a very popular destination.
+[118.69s][user ] I've heard great things about the beaches ⟨ret@120.65s⟩ there.
+[120.11s][moshi] «backchannel» Yeah, totally.
+[121.11s][moshi] ⟦⚡SPAN@121.05s: Jeju Island's beaches, such as Hyeopjae Beach, are known for their clear turquoise waters and white sand.⟧ Jeju Island's beaches, like Hyeopjae Beach, are known for their clear turquoise waters and white sand.
+[123.80s][user ] «backchannel» Right.
+[127.02s][user ] Hyeopjae Beach, I'll have to check that out. Are there any good hiking trails ⟨ret@131.99s⟩ on Jeju?
+[132.50s][moshi] ⟦⚡SPAN@132.45s: Hallasan National Park on Jeju Island offers various hiking trails, ranging in difficulty from easy strolls to⟧ Hallasan National Park on Jeju Island has hiking trails for all levels.
+[137.33s][user ] Hallasan National Park… sounds intense. I'm not a super experienced hiker.
+[143.13s][moshi] [laugh] There are trails for all levels of experience, you can find an easy one.
+[151.83s][user ] That's good to hear. I also need to find a good restaurant for dinner tonight.
+[153.79s][moshi] «backchannel» Okay.
+[156.88s][moshi] What kind of cuisine are you in the mood for?
+[160.39s][user ] I’m craving some Korean ⟨ret@162.33s⟩ BBQ.
+[162.90s][moshi] ⟦⚡SPAN@162.63s: In Busan, the Seomyeon area is known for its many Korean BBQ restaurants, offering a variety of cuts and marin⟧ In Busan, the Seomyeon area has many Korean BBQ restaurants.
+[168.09s][user ] Seomyeon, that's a good option. I've been there before.
+[171.49s][moshi] It's a lively area with a lot to offer.
+[175.32s][user ] It is. I’m also trying to learn more Korean.
+[178.61s][moshi] That’s a wonderful goal! It's a beautiful and fascinating language.
+[185.98s][user ] It is. It's just… challenging.
+[188.86s][moshi] [sigh] It can be, but with consistent effort, you’ll make progress.
+[194.18s][user ] I hope so. I keep forgetting the particles.
+[196.81s][moshi] Particles can be tricky, but they’re essential for understanding the grammar.
+[201.23s][user ] They are. It's also hard to find time to practice.
+[203.61s][moshi] «backchannel» Yeah.
+[205.73s][moshi] I understand. Life can get busy, making it hard to prioritize hobbies.
+[210.41s][user ] «backchannel» Okay.
+[211.91s][user ] Exactly. Speaking of busy, I have that dentist appointment coming up…
+[216.06s][moshi] «interrupted» Yes, on July 15th—
+[218.19s][user ] «interrupts_prev» …what time did I say that was again? I'm completely blanking.
+[222.69s][moshi] You said it was at 3:15 PM.
+[226.12s][user ] Right, 3:15. Thanks for reminding me.
+[229.83s][moshi] You’re very welcome!
+[233.94s][user ] I'm also thinking about getting a new phone.
+[236.76s][moshi] Is your current phone not meeting your needs anymore?
+[240.94s][user ] It's getting a bit slow and the camera isn't great.
+[243.12s][moshi] «backchannel» Right.
+[244.48s][moshi] Those are valid reasons to consider an upgrade.
+[245.60s][user ] «backchannel» Okay.
+[247.80s][user ] I've been looking at the latest Samsung ⟨ret@250.19s⟩ models.
+[250.63s][moshi] ⟦⚡SPAN@250.57s: The Samsung Galaxy S24 Ultra features a 200MP camera, 8GB of RAM, and a 6.8-inch display.⟧ The Samsung Galaxy S24 Ultra has a 200MP camera, 8GB of RAM, and a 6.8-inch display.
+[260.52s][user ] 200MP… that's a lot of megapixels.
+[263.50s][moshi] It is! It would allow for very detailed photos.
+[265.00s][user ] «backchannel» Yeah.
+[268.13s][user ] I bet. I also need to pick up groceries later.
+[272.00s][moshi] Do you have a list prepared, or will you be browsing?
+[276.68s][user ] I have a rough idea, but I might need to add a few things.
+[280.62s][moshi] That’s a good approach, leaving room for inspiration.
+[285.38s][user ] It is. I'm also…
+[289.34s][user ] …trying to read more books.
+[291.15s][moshi] Reading is a fantastic way to relax and expand your knowledge.
+[294.85s][user ] «backchannel» Yeah.
+[297.10s][user ] It is. I just finished a really good novel.
+[300.41s][moshi] [happy] That’s wonderful! What was it about?
+[304.01s][user ] It was a mystery set in Italy.
+[305.87s][moshi] Italy sounds like a beautiful setting for a mystery.
+[307.75s][user ] «backchannel» Uh-huh.
+[309.44s][user ] It was. I'm thinking of going back to Jeju Island next year.
+[313.66s][moshi] That’s a great idea! It’s a place you clearly enjoy.
+[317.70s][user ] I do. I wonder what the weather will be like ⟨ret@320.92s⟩ then.
+[319.42s][moshi] «backchannel» Yeah.
+[321.19s][moshi] ⟦⚡SPAN@321.22s: (tool result) July 2027 in Jeju Island: average high 28.5°C, average low 23.2°C, 60% chance of rain.⟧ In July 2027, Jeju Island will have an average high of 28.5°C and a low of 23.2°C, with a 60% chance of rain.
+      CALL: {"function": "get_weather", "arguments": {"city": "Jeju Island", "date": "July 2027"}}
+[325.48s][user ] «backchannel» Yeah.
+[331.76s][user ] Okay, good to know. I should pack an umbrella.
+[334.67s][moshi] That sounds like a wise precaution.
+[337.60s][user ] I'm also considering taking a cooking class.
+[340.38s][moshi] [curious] What kind of cuisine would you like to learn to cook?
+[342.84s][user ] «backchannel» Yeah, yeah.
+[344.82s][user ] Maybe Italian, since I enjoyed that book so much.
+[347.95s][moshi] That would be a lovely connection!
+[350.55s][user ] It would. I need to remember to book that pottery class too.
+[351.87s][moshi] «backchannel» Yeah.
+[354.61s][moshi] It's good to get things on the calendar.
+[357.02s][user ] Yes. Remind me which dental office I booked that appointment at?
+[361.79s][moshi] You have an appointment at Smile Bright Dental.
+[365.69s][user ] Right, Smile Bright Dental. Thanks.
+[368.44s][moshi] You're very welcome.
+[371.84s][user ] I think that's all for now.
+[373.42s][moshi] [happy] Wonderful! I'm glad I could chat.
+[375.61s][user ] «backchannel» Mm-hmm.
+[377.31s][moshi] It sounds like you have a lot of exciting plans ahead.
+[378.92s][user ] «backchannel» Yeah.
+[380.82s][user ] I do. It's good to have things to look forward to.
+[384.56s][moshi] A positive outlook can make all the difference.
+[388.32s][user ] It can. I’m glad I talked to you.
+[389.55s][moshi] «backchannel» Mm-hmm.
+[390.71s][moshi] And I’m glad we had this conversation. It's been a pleasure.
+[395.08s][user ] You too. I think I'll start looking at those pottery classes now.
+[398.93s][moshi] [happy] Excellent! I hope you find one you enjoy.
+[401.22s][user ] «backchannel» Yeah.
+[402.67s][user ] I will. Thanks again for everything.
+[405.29s][moshi] You’re very welcome. Take care, and enjoy your day!

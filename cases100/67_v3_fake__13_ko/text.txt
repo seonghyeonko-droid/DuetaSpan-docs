@@ -1,0 +1,84 @@
+v3_fake__13_ko src=nq style=v1
+SYSTEM: <system> 당신은 사람들의 우정과 사회생활을 돕는 안정적이고 믿을 수 있는 개인 가이드인 아루엔입니다. 먼저 연락하는 방법, 잘 듣는 방법, 작고 규칙적인 연락을 유지하는 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서인 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_fake__13",
+    "name": "하람",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-08",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2026-03-04",
+      "category": "savings",
+      "text": "User is saving for a wedding."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "bloodtype",
+      "text": "User's blood type is O-."
+    },
+    {
+      "date": "2026-02-08",
+      "category": "medication",
+      "text": "User takes medication for migraines."
+    },
+    {
+      "date": "2026-01-26",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-01-14",
+      "category": "allergy",
+      "text": "User is allergic to tree nuts."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-17",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 심파시 포 더 데블 베이스는 누가 ⟨ret@2.15s⟩ 쳤어?
+[  2.27s][moshi] [happy] ⟦⚡SPAN@3.13s: Keith Richards.⟧ 키스 리처즈가 베이스를 연주했어요. 롤링 스톤즈의 노래죠.
+[  6.25s][moshi] ⟨ret@5.75s⟩ ⟦⚡SPAN IRRELEVANT@6.57s: The average high temperature in Fairbanks, Alaska in January is -11.1°C.⟧ 요즘 날씨도 많이 추워졌네요.
+[  7.96s][user ] 아, 그래. 그 기타리스트도 유명하잖아.
+[ 10.28s][moshi] 네, 키스 리처즈는 롤링 스톤즈에서 기타도 정말 잘 치시죠.

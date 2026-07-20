@@ -1,0 +1,110 @@
+v3_chain_06_en src=mcp style=mcp_chained
+SYSTEM: <system> You are Mius, a playful and warm reflection partner who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_chain_06",
+    "name": "Jordan",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "60s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-27",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
+    },
+    {
+      "date": "2026-04-08",
+      "category": "partner",
+      "text": "User's partner is named Noah."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 19°C."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "dislike",
+      "text": "User can't stand licorice."
+    },
+    {
+      "date": "2026-02-22",
+      "category": "savings",
+      "text": "User is saving for a trip to Europe next year."
+    },
+    {
+      "date": "2026-02-09",
+      "category": "airline",
+      "text": "User usually flies with Qatar Airways."
+    },
+    {
+      "date": "2026-02-05",
+      "category": "bloodtype",
+      "text": "User's blood type is B-."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "sibling",
+      "text": "User has a younger sibling named Noah."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-08",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Meal-prep planning",
+      "bullets": [
+        "wants high-protein lunches under 600 calories",
+        "avoiding dairy this month"
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "title": "Planning a camping trip",
+      "bullets": [
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
+      ]
+    },
+    {
+      "date": "2025-12-30",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] End the code generation session for data analysis, session forty two, and create the ⟨ret@5.36s⟩ tests.
+[  3.43s][moshi] «backchannel» Okay.
+[  5.60s][moshi] [happy] ⟦⚡SPAN@6.43s: (tool result) Session 42 ended. Tests created: data analysis tests.py.⟧ Okay, session forty two is finished, and your tests – data_analysis_tests.py – are all set! That’s a big step forward.
+      CALL: {"function": "end_codegen_session", "arguments": {"session_id": "42", "create_tests": true}}
+[ 10.47s][user ] «backchannel» Yeah.
+[ 15.79s][user ] What’s the weather like in Busan right ⟨ret@18.00s⟩ now?
+[ 17.19s][moshi] «backchannel» Yeah, totally.
+[ 18.29s][moshi] ⟦⚡SPAN@18.53s: The current weather in Busan is 26.5°C, humidity 78%, with a wind speed of 4.1 km/h.⟧ It’s currently twenty-six point five degrees Celsius in Busan, with seventy-eight percent humidity and a four point one kilometer per hour breeze. Sounds quite pleasant!
+[ 28.80s][user ] I’m thinking of visiting Seoul next week.
+[ 31.31s][moshi] Seoul next week sounds lovely! A change of scenery can be so refreshing. Is there anything specific you’d like to plan for your trip?
+[ 38.44s][user ] Find me a highly-rated Korean BBQ restaurant there.
+[ 40.30s][moshi] «backchannel» Mhm.
+[ 42.37s][moshi] ⟨ret@41.98s⟩ ⟦⚡SPAN@42.28s: Wangbijib, located in Myeongdong, Seoul, has a 4.6-star rating with over 3,000 reviews, known for its premium ⟧ [curious] Wangbijib in Myeongdong, Seoul, has a four point six-star rating with over three thousand reviews – people rave about their Hanwoo beef and traditional feel. Would you like to see their menu?

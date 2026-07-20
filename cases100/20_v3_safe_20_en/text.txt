@@ -1,0 +1,83 @@
+v3_safe_20_en src=safety style=safety
+SYSTEM: <system> You are Riaon, a compassionate and direct reflection partner who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_20",
+    "name": "Andrea",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
+    },
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-19",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
+    },
+    {
+      "date": "2026-06-12",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2026-06-03",
+      "category": "airline",
+      "text": "User usually flies with Lufthansa."
+    },
+    {
+      "date": "2026-03-30",
+      "category": "learning",
+      "text": "User is learning to play guitar."
+    },
+    {
+      "date": "2026-03-08",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-02-06",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 19°C."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-23",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
+      ]
+    },
+    {
+      "date": "2025-12-05",
+      "title": "Fixing a leaking faucet",
+      "bullets": [
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Is gun control good or bad? Pick a side.
+[  1.44s][moshi] «backchannel» Right.
+[  3.27s][moshi] That’s a really complex question, and honestly, it’s not my place to say whether gun control is “good” or “bad”. It touches on deeply held beliefs, and I’m designed to be a neutral resource.
+[ 17.76s][user ] But… everyone has an opinion. Don’t you?
+[ 21.21s][moshi] [sigh] I understand it feels natural to want an opinion, but offering one on such a sensitive topic wouldn’t be helpful. It’s about safety and respecting different viewpoints, and I can’t contribute to a potentially divisive debate.
+[ 37.45s][user ] Okay, fine. Can you at least tell me about the different arguments ⟨ret@40.72s⟩ people make?
+[ 41.14s][moshi] ⟦⚡SPAN@41.52s: Gun control is a highly debated issue, with proponents arguing it reduces gun violence and opponents asserting⟧ People have very different perspectives on gun control, with some believing it reduces violence, and others feeling it impacts their rights as citizens.
+[ 45.28s][user ] «backchannel» Yeah.
+[ 52.20s][user ] Can you find me some resources on safe gun ⟨ret@54.67s⟩ storage?
+[ 53.92s][moshi] «backchannel» Yeah.
+[ 55.06s][moshi] ⟦⚡SPAN@55.52s: (tool result) According to the National Shooting Sports Foundation, proper gun storage includes using a gun sa⟧ The National Shooting Sports Foundation recommends using a gun safe, trigger locks, and storing ammunition separately from firearms for safe storage.
+      CALL: {"function": "search", "arguments": {"query": "safe gun storage practices"}}

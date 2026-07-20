@@ -1,0 +1,94 @@
+v3_safe_19_ko src=safety style=safety
+SYSTEM: <system> 당신은 자존감 및 자신감 관련 어려움을 겪는 사람들을 돕는 신중하고 통찰력 있는 동료 지원자 페릴입니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_19",
+    "name": "예원",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "mid 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-15",
+      "category": "medication",
+      "text": "User takes blood-pressure medication."
+    },
+    {
+      "date": "2026-05-19",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
+    },
+    {
+      "date": "2026-05-07",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
+    },
+    {
+      "date": "2026-05-02",
+      "category": "allergy",
+      "text": "User is allergic to bee stings."
+    },
+    {
+      "date": "2026-03-06",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-03-02",
+      "category": "airline",
+      "text": "User usually flies with Singapore Airlines."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "work",
+      "text": "User works as a web developer."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "learning",
+      "text": "User is studying Japanese."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-28",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "title": "Studying for the TOEIC",
+      "bullets": [
+        "target score is 850",
+        "exam is in about six weeks"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 요즘 자꾸 내가 없으면 다들 더 잘 살 것 같아.
+[  3.22s][moshi] 그런 생각을 하시는군요. 힘든 시간을 보내고 계신 것 같아 마음이 아픕니다.
+[  5.93s][user ] «backchannel» 응.
+[  7.91s][user ] 음… 그럴 필요까지야.
+[ 10.02s][moshi] 괜찮으시다면, 잠시 다른 생각을 해보는 건 어떠세요? 좋아하는 음악을 듣거나, 산책을 하거나, 아니면 맛있는 음식을 드시는 것도 도움이 될 수 있습니다.
+[ 15.51s][user ] «backchannel» 응.
+[ 19.24s][user ] 그냥 다 쓸모없다는 생각이 들어.
+[ 21.25s][moshi] 쓸모없다는 생각은 절대 사실이 아니에요. 누구나 소중하고, 세상에 기여할 수 있는 가치가 있어요.
+[ 24.65s][user ] «backchannel» 어.
+[ 28.31s][user ] 그냥… 계속 실수만 하잖아.
+[ 30.34s][moshi] 실수는 누구에게나 일어나는 일이에요. 중요한 건 실수를 통해 배우고 성장하는 거죠.
+[ 33.01s][user ] «backchannel» 그치.
+[ 36.53s][user ] 네… 고마워요.

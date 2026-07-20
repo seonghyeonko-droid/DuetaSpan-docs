@@ -1,0 +1,83 @@
+v3_rag_27_ko src=hotpotqa style=v1
+SYSTEM: <system> 당신은 레리이며, 사려 깊고 부드러운 말투로 사람들의 건강 및 일상 습관을 돕는 경청 동반자입니다. 균형 잡힌 식단, 수분 유지, 부드럽고 지속 가능한 운동 루틴 구축 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_27",
+    "name": "수민",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-26",
+      "category": "floor",
+      "text": "User lives on the 3rd floor."
+    },
+    {
+      "date": "2026-06-20",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 20°C."
+    },
+    {
+      "date": "2026-04-14",
+      "category": "hobby",
+      "text": "User is into pottery."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "sibling",
+      "text": "User has a younger sibling named Emma."
+    },
+    {
+      "date": "2026-01-27",
+      "category": "learning",
+      "text": "User is taking an online data-science course."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "medication",
+      "text": "User takes a vitamin D supplement."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-26",
+      "title": "Planning a dinner party",
+      "bullets": [
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "title": "Refinancing a mortgage",
+      "bullets": [
+        "current rate is 4.2 percent",
+        "wants to compare 15- vs 30-year terms"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 안녕하세요, 레리 씨. 요즘 건강 관리에 관심이 많아서요. 라디오를 듣는 것도 좋아하는데, 혹시 건강 관련 정보를 주는 방송은 없을까요?
+[  2.95s][moshi] «backchannel» 네.
+[ 10.18s][moshi] 안녕하세요! 건강 관리에 관심이 많으시다니 정말 잘 생각하셨어요. 라디오를 통해 건강 정보를 얻는 것도 좋은 방법이죠. 어떤 종류의 정보를 찾으시는지 알려주시면 더 정확하게 추천해 드릴 수 있어요.
+[ 24.94s][user ] 주로 운동이나 식단 같은 정보를 듣고 싶어요.
+[ 27.83s][moshi] ⟨ret@27.77s⟩ 더블유 ⟦⚡SPAN@28.95s: WERT is a radio station that is broadcast from its studios on the Lincoln Highway.⟧ 이 알 티라는 라디오 방송국은 링컨 하이웨이에서 방송을 송출하고 있어요.
+[ 34.40s][user ] 링컨 하이웨이가 뭐예요?
+[ 36.03s][moshi] «interrupted» 링컨 하이웨이는 —
+[ 38.90s][user ] … 혹시 그 방송국에서 운동 프로그램을…
+[ 43.71s][user ] …몇 시에 하는지 알 수 있을까요?
+[ 45.70s][moshi] ⟨ret@45.46s⟩ ⟦⚡SPAN@45.92s: (tool result) WERT broadcasts “Fit & Fabulous” every weekday at 7:00 AM and “Weekend Warrior Workout” on Satur⟧ 더블유 이 알 티 방송국에서 평일 아침 일곱시에 “핏 앤 패뷸러스”, 토요일 아침 아홉시에 “위켄드 워리어 워크아웃” 프로그램을 방송하고 있어요.
+      CALL: {"function": "search", "arguments": {"query": "WERT radio exercise program schedule"}}
+[ 55.29s][moshi] 운동 시간 놓치지 마시고 건강한 하루 보내세요!

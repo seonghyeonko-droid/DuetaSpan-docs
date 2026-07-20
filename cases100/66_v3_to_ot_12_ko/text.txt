@@ -1,0 +1,95 @@
+v3_to_ot_12_ko src=nq style=v1
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 장난기 있고 따뜻한 웰빙 가이드 프렐라입니다. 감정이 파도처럼 밀려오는 것, 지지하는 사람에게 기대는 것, 부드러운 일일 구조를 유지하는 것 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_to_ot_12",
+    "name": "다율",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "late 40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-08",
+      "category": "work",
+      "text": "User works as a midwife."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "streaming",
+      "text": "User subscribes to Disney+ and YouTube Premium."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "dish",
+      "text": "User's go-to comfort dish is tonkotsu ramen."
+    },
+    {
+      "date": "2026-02-15",
+      "category": "allergy",
+      "text": "User is allergic to latex."
+    },
+    {
+      "date": "2026-02-11",
+      "category": "dislike",
+      "text": "User can't stand durian."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-15",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2025-12-30",
+      "title": "Planning a camping trip",
+      "bullets": [
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 요즘 사물 인터넷에 대해 관심이 많아서요, 그 말이 처음 나온 게 언제인지 ⟨ret@5.85s⟩ 궁금해요.
+[  6.08s][moshi] 사물 ⟦⚡SPAN@7.23s: The term “Internet of Things” was coined by Kevin Ashton in 1999 while working at Procter & Gamble.⟧ 인터넷이라는 용어는 천구백구십구년에 프로크터 앤 갬블에서 일하시던 케빈 애쉬턴 님이 처음 사용하셨다고 해요.
+[ 11.47s][user ] «backchannel» 그렇죠.
+[ 14.30s][user ] «to_other» 잠깐만, 오늘 저녁 뭐 먹을까?
+[ 16.88s][user ] 아, 죄송해요. 다시 말씀드리면, 그 단어가 처음 나온 해가 천구백구십구년이라고 하셨죠?
+[ 23.33s][moshi] 네, 맞아요. 천구백구십구년에 케빈 애쉬턴 님이 프로크터 앤 갬블에서 일하면서 처음 사용하셨답니다.
+[ 30.49s][moshi] 혹시 다른 궁금한 점이 있으신가요?
+[ 32.86s][user ] 아니요, 감사합니다.

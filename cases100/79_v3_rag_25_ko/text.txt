@@ -1,0 +1,118 @@
+v3_rag_25_ko src=hotpotqa style=v2
+SYSTEM: <system> 당신은 베아이아로, 사람들의 일상적인 결정과 감정에 도움을 주는 세심하고 정직한 멘토입니다. 장단점 비교, 가치관에 따른 선택, 중요한 결정에 대해 숙고하는 것 등을 설명할 수 있습니다. 또한 당신은 모시로, 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_25",
+    "name": "윤율",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Vietnamese."
+    },
+    {
+      "date": "2026-05-20",
+      "category": "wake",
+      "text": "User usually wakes up at 5:30am for a run."
+    },
+    {
+      "date": "2026-04-24",
+      "category": "work",
+      "text": "User works as a paramedic."
+    },
+    {
+      "date": "2026-04-18",
+      "category": "car",
+      "text": "User drives a 2021 Tesla Model 3."
+    },
+    {
+      "date": "2026-04-12",
+      "category": "show",
+      "text": "User is currently watching a stand-up comedy special."
+    },
+    {
+      "date": "2026-03-02",
+      "category": "phone",
+      "text": "User uses a Galaxy Z Flip."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "diet",
+      "text": "User is kosher."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-27",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "title": "Switching phone plans",
+      "bullets": [
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "title": "Planning a camping trip",
+      "bullets": [
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 혹시 레이지 앨범 낸 메탈코어 밴드 어디 사람들인지 아세요?
+[  3.89s][moshi] ⟨ret@3.81s⟩ 이천사년에 ⟦⚡SPAN@5.03s: The American metalcore band Mastodon released their second full-length album, Leviathan, in 2004.⟧ 레비아탄이라는 두 번째 정규 앨범을 낸 밴드는 미국의 메탈코어 밴드 마스토돈이에요.
+[ 10.53s][user ] 마스토돈요? 이름이 좀 특이하네요. 멤버들은 어디 ⟨ret@15.13s⟩ 출신이에요?
+[ 15.56s][moshi] ⟦⚡SPAN@15.72s: Mastodon formed in Atlanta, Georgia, in 2000, and consists of Troy Sanders, Brent Hinds, Bill Kelliher, and Br⟧ 마스토돈은 이천년에 조지아주 애틀랜타에서 결성되었고, 트로이 샌더스, 브렌트 힌즈, 빌 켈리허, 브랜 데일러로 구성되어 있어요.
+[ 25.50s][user ] 애틀랜타요? 거기는 또 처음 듣는 곳인데, 미국 남부인가요?
+[ 29.62s][moshi] 네, 미국 남부에 있는 조지아주의 주도입니다.
+[ 33.49s][user ] 마스토돈 음악 스타일은 좀 ⟨ret@35.77s⟩ 어떤 편이에요?
+[ 36.38s][moshi] ⟦⚡SPAN@36.15s: Mastodon’s sound is often described as a blend of progressive metal, sludge metal, and post-metal.⟧ 마스토돈의 음악 스타일은 프로그레시브 메탈, 슬러지 메탈, 그리고 포스트 메탈이 혼합된 것으로 묘사되곤 해요.
+[ 40.87s][user ] «backchannel» 네.
+[ 43.38s][user ] 프로그레시브 메탈이라… 좀 어렵게 들리네요. 다른 밴드랑 비교하면 어떤가요?
+[ 48.90s][moshi] 비슷한 스타일의 밴드는 Tool이나 Opeth 같은 팀들이 있어요.
+[ 50.69s][user ] «backchannel» 아.
+[ 52.72s][user ] 툴도 좋아하는데, 마스토돈은 툴보다 좀 더 —
+[ 57.10s][user ] … 혹시 마스토돈 멤버들이 다른 밴드 활동도 했었나요? ⟨ret@60.69s⟩
+[ 60.90s][moshi] ⟦⚡SPAN@61.61s: Brent Hinds of Mastodon was also a member of the band Kylesa.⟧ 마스토돈의 브렌트 힌즈는 카일사라는 밴드의 멤버로도 활동했어요.
+[ 62.82s][user ] «backchannel» 맞아요.
+[ 66.78s][user ] 카일사요? 그 밴드는 또 어떤 ⟨ret@68.98s⟩ 스타일이에요?
+[ 69.41s][moshi] ⟦⚡SPAN@69.96s: Kylesa is an American sludge metal band formed in Savannah, Georgia, in 2001.⟧ 카일사는 이천일년에 조지아주 세이바나에서 결성된 미국의 슬러지 메탈 밴드예요.
+[ 73.01s][user ] «backchannel» 예.
+[ 74.91s][user ] 슬러지 메탈이 계속 나오네요.…
+[ 78.64s][user ] …마스토돈 음악에도 영향을 많이 줬나요?
+[ 80.89s][moshi] «backchannel» 네네.
+[ 82.59s][moshi] 네, 마스토돈의 음악에 슬러지 메탈의 영향이 꽤 크다고 알려져 있어요.
+[ 84.24s][user ] «backchannel» 네.
+[ 88.29s][user ] 알겠습니다. 마스토돈 멤버들 중에 한국인 멤버는 없겠죠?
+[ 93.47s][moshi] 아니요, 멤버들은 모두 미국 시민권자입니다.

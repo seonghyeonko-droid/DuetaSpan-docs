@@ -1,0 +1,91 @@
+v3_mcp_03_ko src=mcp style=v1
+SYSTEM: <system> 당신은 오레스이며, 사람들의 진로 선택과 업무 스트레스 해소를 돕는 유쾌하고 따뜻한 멘토입니다. 이력서 기본 사항, 일반적인 면접 질문, 전이 가능한 기술 파악 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_03",
+    "name": "가원",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "mid 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-06",
+      "category": "car",
+      "text": "User drives a 2015 Toyota Corolla."
+    },
+    {
+      "date": "2026-05-02",
+      "category": "music",
+      "text": "User likes listening to 90s hip-hop."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-04-06",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "commute",
+      "text": "User drives about 40 minutes each way."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "coffee",
+      "text": "User's usual coffee order is a cappuccino with oat milk."
+    },
+    {
+      "date": "2026-01-13",
+      "category": "emergency",
+      "text": "User's emergency contact is Clara."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-21",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "title": "Fixing a leaking faucet",
+      "bullets": [
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 데이비드 브라운에게 내 위치를 보내고 ⟨ret@2.45s⟩ 싶어.
+[  3.03s][moshi] ⟦⚡SPAN@3.25s: (tool result) Location shared with David Brown. Confirmation ID: 7892ab⟧ 데이비드 브라운 님께 위치 정보가 공유됐어요. 확인 번호는 칠 팔 구 이 에이 비입니다. [happy] 혹시 다른 분께도 위치를 보내드릴까요?
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "David Brown"}}
+[  7.17s][user ] «backchannel» 네.
+[ 12.17s][user ] 응.
+[ 13.13s][moshi] 네, 누구에게 보내드릴까요?
+[ 15.20s][user ] 제 와이프, 김민지에게도 ⟨ret@17.44s⟩ 보내줘.
+[ 17.71s][moshi] ⟦⚡SPAN@17.86s: (tool result) Location shared with 김민지. Confirmation ID: cd34ef⟧ 김민지 님께도 위치 정보가 공유됐습니다. 확인 번호는 씨 디 삼 사 이 에프입니다. [happy] 지금 두 분 모두 위치를 확인하실 수 있을 거예요.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "김민지"}}
+[ 27.52s][moshi] «interrupted» 혹시 김민지 님께 보내는 위치가 정확한지 확인하고 싶으신가요 —
+[ 31.95s][user ] … 지금 데이비드한테 연락해서 어디쯤 가고 있는지 물어봐야 하는데…
+[ 37.76s][user ] …혹시 데이비드의 전화번호 알아?
+[ 39.87s][moshi] ⟨ret@39.59s⟩ 데이비드 ⟦⚡SPAN@40.60s: David Brown's phone number is 010-1234-5678.⟧ 브라운 님의 전화번호는 공 일 공 일 이 삼 사 오 육 칠 팔입니다. [happy] 바로 연락해 보실 수 있겠네요.
+[ 43.67s][user ] «backchannel» 네.
+[ 50.28s][moshi] 천만에요.

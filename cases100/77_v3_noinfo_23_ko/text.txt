@@ -1,0 +1,127 @@
+v3_noinfo_23_ko src=mcp style=mcp_noinfo
+SYSTEM: <system> 당신은 번아웃과 회복을 돕는 호기심 많고 지지적인 또래 지원자 아렐라우스입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_noinfo_23",
+    "name": "지영",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-08",
+      "category": "diet",
+      "text": "User is low-sodium."
+    },
+    {
+      "date": "2026-05-05",
+      "category": "car",
+      "text": "User drives a 2022 Volkswagen Golf."
+    },
+    {
+      "date": "2026-04-14",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 24°C."
+    },
+    {
+      "date": "2026-02-17",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-02-07",
+      "category": "phone",
+      "text": "User uses a Galaxy Z Flip."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "commute",
+      "text": "User bikes to work."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "sibling",
+      "text": "User has a younger sibling named Mina."
+    },
+    {
+      "date": "2025-12-08",
+      "category": "music",
+      "text": "User likes listening to classical piano."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-01",
+      "title": "Studying for the TOEIC",
+      "bullets": [
+        "target score is 850",
+        "exam is in about six weeks"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 혹시 김민지 씨 연락처 알 수 있을까요?
+[  2.52s][moshi] ⟨ret@2.45s⟩ 죄송하지만, ⟦⚡SPAN@3.38s: (no information found)⟧ 김민지 씨의 연락처는 찾을 수 없었습니다. [sigh] 개인 정보라서 공개되어 있지 않나 봐요.
+      CALL: {"function": "search_person", "arguments": {"name": "김민지"}}
+[  9.64s][user ] 아, 그렇군요. 그럼 서울 날씨는 ⟨ret@11.74s⟩ 어때요?
+[ 12.10s][moshi] ⟦⚡SPAN@12.77s: (tool result) {"temperature": 28.5, "humidity": 65, "wind speed": 4.2, "condition": "맑음"}⟧ 서울 날씨는 맑고, 기온은 이십팔 점 오도, 습도는 육십오퍼센트, 바람은 초속 사 점 이미터입니다. [happy] 오늘 나들이 가기 좋겠어요.
+      CALL: {"function": "get_weather", "arguments": {"city": "서울"}}
+[ 19.17s][user ] «backchannel» 응.
+[ 23.75s][user ] 이번 주 토요일에 부산 가는 기차표 예매해 줄 수 있어?
+[ 26.81s][moshi] 부산으로 가는 기차표 예매를 도와드릴게요. 혹시 시간대는 정해두신 게 있으세요?
+[ 31.98s][user ] 음… 오후 세 시쯤으로 해 ⟨ret@33.67s⟩ 줘.
+[ 33.87s][moshi] 네, ⟦⚡SPAN@34.58s: (tool result) {"train number": "KTX123", "departure time": "15:10", "arrival time": "17:45", "seat": "3호차 12번"⟧ 부산행 케이 티 엑스 일 이 삼 열차, 오후 세 시 십 분 출발, 다섯 시 사십五분 도착, 삼호차 십이번 좌석으로 예매 완료되었습니다. 확인번호는 에이 비 씨 일 이 삼 엑스 와이 제트입니다. [happy] 즐거운 여행 되세요!
+      CALL: {"function": "book_train", "arguments": {"destination": "부산", "date": "2026-07-11", "time": "15:00"}}
+[ 42.23s][user ] «backchannel» 응.
+[ 49.20s][user ] 고마워. 근데 혹시 그 기차역 근처에 맛집 있어?
+[ 50.92s][moshi] «backchannel» 예.
+[ 52.80s][moshi] ⟨ret@52.70s⟩ 부산역 ⟦⚡SPAN@53.81s: (tool result) 부산역 근처에는 '돼지국밥 맛집'이 유명하며, 평점은 4.5/5점, 리뷰 수는 1200건입니다.⟧ 근처에는 '돼지국밥 맛집'이 아주 유명해요. 평점도 사 점 오점이나 되고, 리뷰도 천이백건이 넘습니다. [curious] 한번 가보시는 건 어떠세요?
+      CALL: {"function": "search_restaurant", "arguments": {"location": "부산역"}}
+[ 56.02s][user ] «backchannel» 음.
+[ 63.44s][user ] 돼지국밥… 음, 괜찮은데. 혹시 다른 데도 알아봐 줄래?
+[ 68.14s][moshi] ⟨ret@67.61s⟩ ⟦⚡SPAN@68.42s: (tool result) 부산역 근처 일식당 중 '스시혼'이 평점 4.2점으로 높은 평가를 받고 있습니다.⟧ 부산역 근처에는 '스시혼'이라는 일식당도 평점이 사 점 이점 정도로 괜찮다고 하네요. [happy] 스시도 좋아하시나요?
+      CALL: {"function": "search_restaurant", "arguments": {"location": "부산역", "cuisine": "일식"}}
+[ 70.71s][user ] «backchannel» 응.
+[ 75.71s][user ] 스시도 좋아하지. 이번 주말에 서울에서 콘서트 있는데, 혹시 표 예매해 줄 수 있어?
+[ 78.02s][moshi] «backchannel» 아.
+[ 81.94s][moshi] 서울에서 콘서트 표 예매를 도와드릴게요. 어떤 콘서트 표를 찾으시는 건가요?
+[ 87.93s][user ] 비 티 ⟨ret@88.91s⟩ 에스 콘서트.
+[ 89.48s][moshi] ⟦⚡SPAN@89.64s: (tool result) {"event name": "BTS 'The Last Dance' 콘서트", "date": "2026-07-12", "venue": "올림픽공원 KSPO돔", "price"⟧ 비 티 에스 'The Last Dance' 콘서트가 칠월 십이일 올림픽공원 케이 에스 피 오돔에서 열립니다. 가격은 십오만 원에서 삼십만 원 사이이고, 일부 좌석만 남아있습니다. [surprised] 빨리 예매해야 할 것 같아요!
+      CALL: {"function": "search_event", "arguments": {"event": "BTS 콘서트", "city": "서울"}}
+[105.15s][user ] 그럼 제일 싼 자리로 두 장 ⟨ret@107.44s⟩ 예매해 줘.
+[108.04s][moshi] ⟦⚡SPAN@108.65s: (tool result) {"event name": "BTS 'The Last Dance' 콘서트", "date": "2026-07-12", "venue": "올림픽공원 KSPO돔", "seat":⟧ 네, 비 티 에스 콘서트 A구역 이백일번과 이백이번 좌석 두 장, 총 삼십만 원으로 예매 완료되었습니다. 확인번호는 디 이 에프 사 오 육 유 브이 더블유입니다. [happy] 콘서트 즐겁게 다녀오세요!
+      CALL: {"function": "book_event", "arguments": {"event": "BTS 'The Last Dance' 콘서트", "city": "서울", "quantity": "2", "price_tier": "저렴한"}}
+[121.56s][user ] 고마워, 아렐라우스.
+[123.24s][moshi] 천만에요.

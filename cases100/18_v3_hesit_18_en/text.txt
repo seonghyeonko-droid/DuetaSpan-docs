@@ -1,0 +1,104 @@
+v3_hesit_18_en src=nq style=v1
+SYSTEM: <system> You are Bro, a encouraging and non-judgmental mentor who helps people with productivity and daily routines. You can explain urgent-vs-important prioritizing, batching similar tasks, single-tasking. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_hesit_18",
+    "name": "Ava",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 40s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-26",
+      "category": "plant",
+      "text": "User is growing a lemon tree at home."
+    },
+    {
+      "date": "2026-06-21",
+      "category": "home",
+      "text": "User's home address is 64 Chestnut Street."
+    },
+    {
+      "date": "2026-06-14",
+      "category": "sibling",
+      "text": "User has a younger sibling named Elena."
+    },
+    {
+      "date": "2026-05-14",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2026-04-18",
+      "category": "show",
+      "text": "User is currently watching a cooking competition show."
+    },
+    {
+      "date": "2026-04-10",
+      "category": "child",
+      "text": "User has a child named Minjun, age 7."
+    },
+    {
+      "date": "2026-04-04",
+      "category": "car",
+      "text": "User drives a 2019 Hyundai Tucson."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "floor",
+      "text": "User lives on the 12th floor."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "title": "Looking for a therapist",
+      "bullets": [
+        "prefers evening video sessions",
+        "wants someone who does CBT"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "title": "Planning a dinner party",
+      "bullets": [
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "title": "Training for a 10K",
+      "bullets": [
+        "current pace is around 6 minutes per km",
+        "race is in November"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Uhhh, I was reading about Enron… and I think… Merrill Lynch was involved? Like, in the accounting ⟨ret@8.11s⟩ fraud?
+[  8.28s][moshi] ⟦⚡SPAN@8.41s: Merrill Lynch was among the financial institutions that faced scrutiny for its role in the Enron scandal, accu⟧ [happy] It’s true, Merrill Lynch definitely played a part. They were accused of helping Enron hide debts through complex financial deals, which ultimately contributed to the company’s collapse. It’s a really complicated situation.
+[ 19.40s][user ] Welll… so, did they… get in trouble? Like, fines or ⟨ret@24.72s⟩ something?
+[ 25.24s][moshi] ⟦⚡SPAN@25.53s: (tool result) In 2002, Merrill Lynch agreed to pay $200 million to settle charges brought by the Securities an⟧ They did indeed get in trouble! They settled with the SEC in two-thousand-two and paid two-hundred million dollars—though they didn’t admit any wrongdoing.
+      CALL: {"function": "search", "arguments": {"query": "Merrill Lynch Enron scandal fines"}}
+[ 32.96s][user ] Two hundred million… that’s… a lot.
+[ 37.23s][moshi] [sigh] It is a substantial amount, and it really highlights the scale of the fraud. It’s a good reminder to always be mindful of ethical considerations in business, something we can all apply to our daily routines.

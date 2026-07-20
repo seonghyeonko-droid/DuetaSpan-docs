@@ -1,0 +1,212 @@
+v3_card_48_en src=nq style=card_recall
+SYSTEM: <system> You are Tha, a grounded and hopeful personal guide who helps people with caring for aging parents. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_card_48",
+    "name": "Charlotte",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
+    },
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-07",
+      "category": "partner",
+      "text": "User's partner is named Marco."
+    },
+    {
+      "date": "2026-05-29",
+      "category": "commute",
+      "text": "User carpools with a colleague."
+    },
+    {
+      "date": "2026-05-07",
+      "category": "anniversary",
+      "text": "User's anniversary is July 4."
+    },
+    {
+      "date": "2026-04-26",
+      "category": "dish",
+      "text": "User's go-to comfort dish is bibimbap."
+    },
+    {
+      "date": "2026-03-18",
+      "category": "learning",
+      "text": "User is learning Spanish."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "savings",
+      "text": "User is saving for a trip to Europe next year."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-01",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building under 900k won/month",
+        "needed parking and a second bedroom near line 2"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I have a dentist appointment on July 15th at 2:30 PM. It's with Dr. Kim.
+[  4.26s][moshi] That sounds straightforward.
+[  5.71s][user ] No, that’s all for now, thanks. I was just thinking about old comic books.
+[ 10.23s][moshi] [happy] Old comic books are a wonderful trip down memory lane, aren’t they? Do you have a favorite character?
+[ 16.35s][user ] Oh, definitely. Simon Bar Sinister from the Fantastic Four.
+[ 19.00s][moshi] «backchannel» Yeah, yeah.
+[ 19.92s][moshi] A classic villain! He's got such a distinctive look.
+[ 21.63s][user ] «backchannel» Mm-hmm.
+[ 23.79s][user ] He does. I was wondering, who actually *voiced* him in the old cartoons?
+[ 27.89s][moshi] ⟨ret@27.81s⟩ The ⟦⚡SPAN@28.62s: Allen Swift was the voice of Simon Bar Sinister in the 1967-1968 Fantastic Four animated series.⟧ voice of Simon Bar Sinister in the nineteen sixty-seven to nineteen sixty-eight Fantastic Four animated series was Allen Swift.
+[ 35.80s][user ] Allen Swift, huh? I wouldn't have guessed that.
+[ 37.14s][moshi] «backchannel» Yeah, yeah.
+[ 38.35s][moshi] It’s often surprising who lends their voice to these iconic characters.
+[ 41.18s][user ] «backchannel» Yeah.
+[ 42.02s][user ] You're right. I'm trying to plan a little get-together for my mom.
+[ 45.08s][moshi] That’s very thoughtful of you. Is it for a special occasion?
+[ 49.26s][user ] Her birthday is coming up. I want to take her somewhere nice for dinner.
+[ 52.60s][moshi] [curious] What kind of cuisine does your mother enjoy?
+[ 53.81s][user ] «backchannel» Right.
+[ 54.98s][user ] She loves Italian food. A cozy little place would be ⟨ret@58.81s⟩ perfect.
+[ 59.20s][moshi] ⟦⚡SPAN@59.14s: Busan has many Italian restaurants, including "La Tavola" in Haeundae, known for its pasta and ambiance.⟧ Busan has many Italian restaurants, and "La Tavola" in Haeundae is known for its pasta and ambiance.
+[ 62.02s][user ] «backchannel» Right.
+[ 65.08s][user ] Haeundae, that sounds nice. Is it very crowded there usually?
+[ 68.51s][moshi] Haeundae is a popular area, but "La Tavola" is tucked away a bit, so it's usually quite peaceful.
+[ 74.52s][user ] Good to know. What's the price range like at ⟨ret@77.42s⟩ that place?
+[ 77.87s][moshi] ⟦⚡SPAN@77.82s: La Tavola's price tier is $$$, indicating a moderately high price range.⟧ La Tavola’s price tier is a moderately high price range.
+[ 81.76s][user ] Okay, that’s not too bad. Maybe we can check it out.
+[ 84.43s][moshi] [happy] I think your mom would really enjoy it there.
+[ 85.21s][user ] «backchannel» Mhm.
+[ 87.68s][user ] I'm also trying to figure out what to get her as a gift.
+[ 90.26s][moshi] Has she mentioned anything she needs or wants lately?
+[ 93.32s][user ] She's been talking about wanting a new scarf. Something ⟨ret@97.00s⟩ cashmere, maybe?
+[ 97.51s][moshi] ⟦⚡SPAN@97.38s: Cashmere scarves range in price from ₩50,000 to ₩300,000 depending on quality and brand.⟧ Cashmere scarves range in price from fifty thousand to three hundred thousand Korean Won, depending on quality and brand.
+[104.48s][user ] Wow, that’s quite a range.
+[106.06s][moshi] The price depends a lot on the quality of the cashmere and the designer.
+[109.62s][user ] I should probably start looking online then.
+[111.49s][moshi] That’s a good idea. There are many reputable online retailers.
+[115.39s][user ] I’m also thinking about getting her flowers.
+[118.17s][moshi] A classic and always appreciated gift! What are her favorite flowers?
+[121.54s][user ] «backchannel» Mm-hmm.
+[124.06s][user ] She loves ⟨ret@125.14s⟩ lilies.
+[125.65s][moshi] ⟦⚡SPAN@125.59s: Lilies symbolize devotion and purity and are available at most florists in Busan.⟧ Lilies symbolize devotion and purity, and are available at most florists in Busan.
+[130.88s][user ] That’s lovely. I'm getting a little overwhelmed with all the planning.
+[134.57s][moshi] [sigh] It’s understandable to feel overwhelmed when planning a special occasion. Take a deep breath.
+[141.47s][user ] You're right. It's just... a lot.
+[143.55s][moshi] It is. Remember, the most important thing is to show your mom how much you care.
+[145.33s][user ] «backchannel» Yeah.
+[148.90s][moshi] That’s all that truly matters.
+[150.62s][user ] Thanks, I appreciate that. By the way, what time did I say that dentist appointment was again?
+[156.03s][moshi] You mentioned your dentist appointment is on July 15th at 2:30 PM.
+[158.87s][user ] «backchannel» Yeah.
+[160.37s][user ] Right, 2:30. Good, I almost forgot.
+[162.42s][moshi] [happy] It’s easy to lose track of things with so much on your mind.
+[165.85s][user ] I'm also thinking of taking a day trip next week.
+[168.91s][moshi] That sounds wonderful! Do you have a destination in mind?
+[173.93s][user ] Maybe to Gyeongju? I've always wanted to see the Bulguksa Temple.
+[177.66s][moshi] ⟨ret@177.56s⟩ ⟦⚡SPAN@177.66s: Gyeongju is a city in North Gyeongsang Province, South Korea, known for its historical sites, including Bulguk⟧ Gyeongju is a city in North Gyeongsang Province, South Korea, known for its historical sites, including Bulguksa Temple.
+[182.80s][user ] «backchannel» Yeah, yeah.
+[187.23s][user ] It seems like a really beautiful place.
+[189.39s][moshi] It is. Gyeongju is often called the "museum without walls".
+[191.43s][user ] «backchannel» Yeah.
+[195.53s][user ] That’s a great description. How long does it take to get there ⟨ret@199.18s⟩ from Busan?
+[198.41s][moshi] «backchannel» Yeah.
+[199.44s][moshi] ⟦⚡SPAN@199.38s: The KTX high-speed train from Busan to Gyeongju takes approximately 30-40 minutes.⟧ The KTX high-speed train from Busan to Gyeongju takes approximately thirty to forty minutes.
+[205.04s][user ] That's pretty quick! Maybe I can do that.
+[207.77s][moshi] It’s a very manageable day trip.
+[209.16s][user ] «backchannel» Okay.
+[209.82s][user ] I'm trying to remember if I already booked a hotel for that trip…
+[212.66s][moshi] Do you recall the hotel name or booking details?
+[214.38s][user ] «backchannel» Yeah.
+[215.34s][user ] I think it was the Hilton… but I can’t remember the exact date.
+[218.87s][moshi] [curious] I can try to help you find your booking information if you'd like.
+[222.65s][user ] Actually, never mind. I just found the confirmation email. It’s for July 22nd.
+[226.65s][moshi] That’s good news! Glad you found it.
+[227.85s][user ] «backchannel» Mm-hmm.
+[229.59s][user ] Yes, it's a relief. It's easy to lose track of these things.
+[232.12s][moshi] «backchannel» Yeah.
+[233.62s][moshi] It certainly is.
+[235.15s][user ] What about transportation within Gyeongju? Is it easy to ⟨ret@238.36s⟩ get around?
+[237.70s][moshi] «backchannel» Okay.
+[238.88s][moshi] ⟦⚡SPAN@238.81s: Gyeongju has a local bus system and taxis available for transportation.⟧ Gyeongju has a local bus system and taxis available for transportation.
+[240.73s][user ] «backchannel» Right.
+[243.24s][user ] Okay, good to know. Buses are usually the most affordable option.
+[247.45s][moshi] They are. And Gyeongju’s bus system is quite efficient.
+[249.21s][user ] «backchannel» Yeah.
+[251.11s][user ] I'm also considering visiting some of the local markets in ⟨ret@254.67s⟩ Gyeongju.
+[252.97s][moshi] «backchannel» Mm-hmm.
+[254.92s][moshi] ⟦⚡SPAN@255.26s: Gyeongju's Jungang Market is a popular traditional market offering local produce and goods.⟧ Gyeongju’s Jungang Market is a popular traditional market offering local produce and goods.
+[261.28s][user ] Jungang Market, I'll write that down.
+[263.38s][moshi] It’s a great place to find souvenirs and try local snacks.
+[266.01s][user ] «backchannel» Yeah.
+[267.58s][user ] Sounds perfect. I’m a little worried about the weather ⟨ret@270.48s⟩ though.
+[270.82s][moshi] The forecast ⟦⚡SPAN@271.98s: (tool result) 28.5°C, humidity 65%, wind 7.2 km/h, partly cloudy.⟧ for Gyeongju on July 22nd is twenty-eight point five degrees Celsius, with sixty-five percent humidity, wind at seven point two kilometers per hour, and partly cloudy skies.
+      CALL: {"function": "get_weather", "arguments": {"city": "Gyeongju", "date": "2026-07-22"}}
+[283.95s][user ] That sounds pleasant enough. Not too hot.
+[286.56s][moshi] It's quite comfortable weather for exploring.
+[288.99s][user ] I also need to pick up a birthday card for my mom.
+[291.44s][moshi] There are many lovely card shops in Busan.
+[293.02s][user ] «backchannel» Uh-huh.
+[293.95s][user ] Do you know of any that have a good selection of Korean-style ⟨ret@297.77s⟩ cards?
+[298.01s][moshi] ⟦⚡SPAN@298.26s: "Art Box" in Seomyeon, Busan, specializes in Korean-style stationery and cards.⟧ "Art Box" in Seomyeon, Busan, specializes in Korean-style stationery and cards.
+[301.54s][user ] «backchannel» Mm-hmm.
+[304.71s][user ] Seomyeon… I think I know where that is.
+[307.63s][moshi] It’s a very convenient location with plenty of shops.
+[309.19s][user ] «backchannel» Mm-hmm.
+[311.21s][user ] This is all really helpful, thank you.
+[312.77s][moshi] [happy] You’re very welcome. I’m glad I could assist you.
+[317.26s][user ] I almost forgot! What was the date of that dentist appointment again?
+[321.79s][moshi] You have a dentist appointment on July 15th.
+[325.11s][user ] And the time?
+[326.09s][moshi] It’s at 2:30 PM.
+[328.22s][user ] Right. I'm making a list of things to pack for Gyeongju.
+[330.76s][moshi] «backchannel» Uh-huh.
+[331.81s][moshi] Smart thinking. Don't forget comfortable shoes for walking!
+[335.59s][user ] Good point. And sunscreen, I suppose.
+[338.30s][moshi] Definitely sunscreen. It's always best to be prepared.
+[340.00s][user ] «backchannel» Yeah.
+[343.65s][user ] I'm also trying to decide what to wear.
+[346.14s][moshi] Consider lightweight, breathable clothing for the warm weather.
+[349.93s][user ] That makes sense. I'm starting to feel a little more organized now.
+[353.43s][moshi] [happy] That’s wonderful to hear! Feeling prepared can make all the difference.
+[357.20s][user ] You've been a great help.
+[358.68s][moshi] It’s my pleasure. I'm here whenever you need me.
+[361.72s][user ] I think that's all for now.
+[363.31s][moshi] Alright. Have a lovely day and enjoy your planning!
