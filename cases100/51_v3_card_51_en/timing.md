@@ -167,6 +167,7 @@
    188.44s  user  발화 시작: I'm considering Seoul. I've always wanted to visit.
    191.60s  agent 발화 시작: Seoul is a fantastic city! So much history and culture.
    191.81s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 48턴 요약, 106f): checkup date: February 22nd (3m ago); checkup time: 2:30 PM (3m ago); checkup cost: 75,000
    196.33s  user  발화 시작: I’ve heard. I’m trying to get a sense of what the weather is
    196.46s  agent 발화 끝
    200.31s  <ret> 발화 (turn49 첫 프레임)
@@ -269,6 +270,7 @@
    381.85s  agent 발화 끝
    383.08s  agent 발화 시작: Yeah.
    383.67s  agent 발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 94턴 요약, 96f): doc appt date: February 22nd (6m ago); doc appt time: 2:30 PM (6m ago); doc appt cost: 75,
    385.13s  user  발화 끝
    385.17s  agent 발화 시작: You’re very welcome. Remember, addressing conflict directly,
    397.04s  agent 발화 끝

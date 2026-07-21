@@ -1,6 +1,6 @@
 v3_card_43_en src=nq style=card_recall
 SYSTEM: <system> You are Bas, a curious and validating habit coach who helps people with caring for aging parents. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
-표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
 [  0.00s][user ] I have a car service appointment on August 25th, and it’s at 3:45 PM.
 [  5.96s][moshi] Okay, August 25th at 3:45 PM. Got it.
@@ -53,6 +53,9 @@ SYSTEM: <system> You are Bas, a curious and validating habit coach who helps peo
 [182.78s][user ] Something moderate, not too expensive, but not a backpacker’s hostel either.
 [188.85s][moshi] I understand. Something comfortable, but not overly luxurious.
 [191.83s][user ] «backchannel» Yeah, yeah.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 51턴 · 108프레임 스팬
+          │ car appt date: August 25th (3m ago); car appt time: 3:45 PM (3m ago); car appt cost: 135,000 won (3m ago); korean class format: in-person (1m ago); trip location: Jeju Island (33s ago); hotel budget: moderate, not too expensive, but not a backpacker’s hostel either (9s ago)
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
 [193.80s][user ] Exactly. I'm also trying to decide what to pack.
 [197.62s][moshi] Packing can be tricky. It depends on what you plan to do while you’re there.
 [199.06s][user ] «backchannel» Okay.
@@ -119,6 +122,9 @@ SYSTEM: <system> You are Bas, a curious and validating habit coach who helps peo
 [373.38s][user ] Probably the KTX. It’s faster.
 [376.15s][moshi] The KTX is definitely the quickest way to get to Busan from here.
 [380.18s][user ] Good. I'm also trying to remember… how much was that car service again?
+          ┌─ 🃏 CARD 주입 @384.0s (4800f) — 지금까지 대화 전체의 누적 요약 · 116턴 · 118프레임 스팬
+          │ car appt time: 3:45 PM; car appt date: August 25th; car service cost: 135,000 won; korean class format: in-person; jeju trip month: next month; jeju hotel budget: moderate, not too expensive, but not a backpacker’s hostel either; busan destination: Busan; busan hotel location: Haeundae Beach; busan hotel preference: with a view; busan transportation: KTX
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
 [385.31s][moshi] You said the car service was 135,000 won.
 [387.69s][user ] «backchannel» Uh-huh.
 [390.34s][user ] Oh, right. 135,000 won. Thanks for reminding me.

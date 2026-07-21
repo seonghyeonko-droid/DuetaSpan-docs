@@ -237,6 +237,7 @@
    186.23s  user  발화 시작: My mother-in-law… she means well, but…
    189.08s  user  발화 끝
    189.44s  agent 발화 시작: [sigh] In-law relationships can be tricky to navigate.
+   192.00s  🃏 CARD 주입 (2400f, 누적 70턴 요약, 77f): move date: August 22nd (3m ago); mover time: 1:00 PM (2m ago); mover budget: 20,000 won (2
    193.37s  agent 발화 끝
    193.45s  user  발화 시작: She constantly offers unsolicited advice.
    196.37s  agent 발화 시작: That can be frustrating. It’s important to politely but firm
@@ -379,6 +380,7 @@
    380.25s  agent 발화 끝
    381.65s  user  발화 끝
    381.68s  agent 발화 시작: [happy] Wonderful! Remember to be kind to yourself during th
+   384.00s  🃏 CARD 주입 (4800f, 누적 140턴 요약, 116f): move date: August 22nd (6m ago); mover time: 1:00 PM (6m ago); mover budget: 20,000 won (6
    384.05s  user  발화 시작: Yeah, yeah.
    385.48s  user  발화 끝
    388.32s  user  발화 시작: Thanks. I appreciate that.

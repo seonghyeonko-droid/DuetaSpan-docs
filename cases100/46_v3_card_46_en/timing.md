@@ -235,6 +235,7 @@
    190.17s  user  발화 끝
    190.76s  agent 발화 끝
    191.27s  user  발화 시작: Like joining a club or something?
+   192.00s  🃏 CARD 주입 (2400f, 누적 77턴 요약, 59f): date: August 24th (3m ago); time: 3:00 PM (3m ago); party size: two (3m ago); budget: 90,0
    193.12s  user  발화 끝
    193.13s  agent 발화 시작: Exactly! Or taking a class, volunteering, or attending event
    196.40s  user  발화 시작: Uh-huh.
@@ -386,6 +387,7 @@
    379.75s  user  발화 끝
    379.93s  agent 발화 시작: You said the restaurant reservation was for 3:00 PM.
    383.17s  agent 발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 152턴 요약, 79f): date: August 24th (6m ago); time: 3:00 PM (6m ago); party size: two (6m ago); budget: 90,0
    384.07s  user  발화 시작: Thanks.
    384.48s  agent 발화 시작: You’re very welcome!
    384.56s  user  발화 끝

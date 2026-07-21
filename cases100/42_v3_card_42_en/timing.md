@@ -202,6 +202,7 @@
    184.38s  user  발화 끝
    189.60s  agent 발화 끝
    190.21s  user  발화 시작: I always wanted to play the guitar.
+   192.00s  🃏 CARD 주입 (2400f, 누적 48턴 요약, 97f): move date: August 6th (3m ago); move time: around 12:00 PM (3m ago); quote: 65,000 won (3m
    192.01s  user  발화 끝
    192.22s  agent 발화 시작: That’s a classic choice. There are plenty of resources onlin
    195.19s  user  발화 시작: Yeah.
@@ -328,6 +329,7 @@
    379.22s  user  발화 시작: Like what?
    380.23s  user  발화 끝
    380.32s  agent 발화 시작: Joining local clubs, volunteering, taking classes… anything 
+   384.00s  🃏 CARD 주입 (4800f, 누적 109턴 요약, 93f): move date: August 6th (6m ago); mover time: 12:00 PM (6m ago); mover cost: 65,000 won (6m 
    386.90s  agent 발화 끝
    387.00s  user  발화 시작: Those are good ideas.
    388.35s  agent 발화 시작: [happy] They can be great starting points.

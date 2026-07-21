@@ -216,6 +216,7 @@
    187.73s  user  발화 시작: I’m starting to get really excited about this trip!
    190.63s  agent 발화 시작: [happy] That’s wonderful! It sounds like Busan will be a per
    190.69s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 60턴 요약, 93f): appointment date: February 11th (3m ago); appointment time: 11:45 AM (3m ago); appointment
    195.22s  agent 발화 끝
    195.44s  user  발화 시작: I think so too. I'm also planning on going to a cafe.
    199.23s  agent 발화 시작: Busan has some lovely cafes. Do you prefer traditional or mo

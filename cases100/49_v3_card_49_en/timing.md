@@ -235,6 +235,7 @@
    190.17s  agent 발화 끝
    190.43s  user  발화 끝
    190.63s  agent 발화 시작: Pottery is a wonderful creative outlet. Have you ever tried 
+   192.00s  🃏 CARD 주입 (2400f, 누적 72턴 요약, 118f): delivery date: June 10th (3m ago); delivery time: 2:30 PM (3m ago); delivery amount: 120,0
    194.47s  agent 발화 끝
    195.04s  user  발화 시작: No, never. It seems a bit intimidating.
    198.43s  agent 발화 시작: It can be, but it’s also very rewarding. It's a great way to
@@ -387,6 +388,7 @@
    379.73s  user  발화 시작: I feel like I’m constantly juggling different priorities.
    382.87s  user  발화 끝
    383.02s  agent 발화 시작: It’s a common feeling. Life is full of demands.
+   384.00s  🃏 CARD 주입 (4800f, 누적 148턴 요약, 110f): delivery date: June 10th; delivery time: 2:30 PM; delivery cost: 120,000 won; dinner ingre
    386.35s  agent 발화 끝
    386.55s  user  발화 시작: I wish I could just simplify things.
    388.80s  agent 발화 시작: Sometimes, simplifying means letting go of things that aren’

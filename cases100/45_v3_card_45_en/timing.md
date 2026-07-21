@@ -218,6 +218,7 @@
    187.56s  user  발화 시작: That sounds… good.
    189.49s  agent 발화 시작: It is! It’s why starting early is so important, even with sm
    189.63s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 60턴 요약, 76f): dentist date: November 23rd (3m ago); dentist time: 9:45 AM (3m ago); dentist cost: 125,00
    193.74s  agent 발화 끝
    194.48s  user  발화 시작: What kind of investments are good for beginners?
    196.89s  agent 발화 시작: Mm-hmm.
@@ -370,6 +371,7 @@
    382.05s  user  발화 끝
    383.00s  user  발화 시작: Mm-hmm.
    383.64s  user  발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 135턴 요약, 91f): dentist date: November 23rd (6m ago); dentist time: 9:45 AM (6m ago); dentist cost: 125,00
    384.83s  agent 발화 끝
    385.18s  user  발화 시작: Like what?
    386.28s  agent 발화 시작: The Pomodoro Technique, time blocking, and creating to-do li

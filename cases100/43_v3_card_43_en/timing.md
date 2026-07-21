@@ -104,6 +104,7 @@
    188.80s  user  발화 끝
    188.85s  agent 발화 시작: I understand. Something comfortable, but not overly luxuriou
    191.83s  user  발화 시작: Yeah, yeah.
+   192.00s  🃏 CARD 주입 (2400f, 누적 51턴 요약, 108f): car appt date: August 25th (3m ago); car appt time: 3:45 PM (3m ago); car appt cost: 135,0
    192.97s  agent 발화 끝
    193.11s  user  발화 끝
    193.80s  user  발화 시작: Exactly. I'm also trying to decide what to pack.
@@ -239,6 +240,7 @@
    376.34s  user  발화 끝
    380.18s  agent 발화 끝
    380.18s  user  발화 시작: Good. I'm also trying to remember… how much was that car ser
+   384.00s  🃏 CARD 주입 (4800f, 누적 116턴 요약, 118f): car appt time: 3:45 PM; car appt date: August 25th; car service cost: 135,000 won; korean 
    385.04s  user  발화 끝
    385.31s  agent 발화 시작: You said the car service was 135,000 won.
    387.69s  user  발화 시작: Uh-huh.

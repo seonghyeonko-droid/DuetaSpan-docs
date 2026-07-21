@@ -194,6 +194,7 @@
    188.05s  user  발화 끝
    190.02s  agent 발화 끝
    191.71s  user  발화 시작: I've been feeling pretty burnt out lately with work.
+   192.00s  🃏 CARD 주입 (2400f, 누적 59턴 요약, 97f): move date: April 12th (3m ago); move time: 1:45 PM (3m ago); move cost: 80,000 won (2m ago
    194.39s  user  발화 끝
    194.54s  agent 발화 시작: That's understandable. Burnout is very common these days. It
    200.38s  user  발화 시작: I know, but it's hard to know where to start.
@@ -320,6 +321,7 @@
    381.82s  user  발화 끝
    382.44s  agent 발화 끝
    382.89s  user  발화 시작: That sounds amazing. I think I’ll look into that one.
+   384.00s  🃏 CARD 주입 (4800f, 누적 121턴 요약, 112f): move date: April 12th; move time: 1:45 PM; move cost: 80,000 won; user interest: lo-fi hip
    385.47s  user  발화 끝
    385.74s  agent 발화 시작: Wonderful! I’m glad I could help.
    387.01s  user  발화 시작: Right.

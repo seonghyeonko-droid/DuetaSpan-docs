@@ -211,6 +211,7 @@
    190.16s  user  발화 끝
    191.42s  user  발화 시작: Mm-hmm.
    191.91s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 62턴 요약, 120f): event date: August 26th (3m ago); event time: 8:15 AM (3m ago); event cost: 55,000 won (3m
    194.90s  agent 발화 끝
    195.28s  user  발화 시작: She loves seafood, and she wants to experience traditional K
    199.68s  agent 발화 시작: Busan is perfect for both! Jagalchi Fish Market is famous fo

@@ -206,6 +206,7 @@
    182.34s  agent 발화 끝
    187.22s  agent 발화 시작: It absolutely is. It’s a complex situation with no easy answ
    187.30s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 56턴 요약, 104f): service date: April 26th (3m ago); service time: 2:00 PM (3m ago); service cost: 40,000 wo
    192.92s  agent 발화 끝
    193.14s  user  발화 시작: I was reading about fall detection systems. Are those any go
    196.66s  agent 발화 시작: Mm-hmm.
@@ -336,6 +337,7 @@
    377.09s  user  발화 끝
    381.02s  user  발화 시작: I’m also trying to find a good hotel there.
    381.19s  agent 발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 117턴 요약, 103f): car service date: April 26th; car service time: 2:00 PM; car service cost: 40,000 won; fat
    384.12s  user  발화 끝
    384.33s  agent 발화 시작: I can help with that. What kind of hotel are you looking for
    388.27s  agent 발화 끝

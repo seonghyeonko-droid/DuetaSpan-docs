@@ -183,6 +183,7 @@
    189.30s  agent 발화 끝
    189.33s  user  발화 시작: I am. I just want to be able to work with her without consta
    191.82s  agent 발화 시작: Yeah, totally.
+   192.00s  🃏 CARD 주입 (2400f, 누적 51턴 요약, 105f): concert date: October 3rd (3m ago); concert time: 3:45 PM (3m ago); ticket cost: 20,000 wo
    193.20s  agent 발화 끝
    194.02s  agent 발화 시작: That’s a perfectly reasonable desire. A healthy work environ
    194.14s  user  발화 끝
@@ -315,6 +316,7 @@
    381.69s  user  발화 시작: Mm-hmm.
    382.42s  user  발화 끝
    383.64s  agent 발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 115턴 요약, 86f): concert date: October 3rd (6m ago); concert time: 3:45 PM (6m ago); ticket price: 20,000 w
    384.45s  user  발화 시작: Good to know. I’m not looking to spend a fortune.
    387.23s  agent 발화 시작: Smart. There are plenty of charming guesthouses and mid-rang
    387.40s  user  발화 끝
