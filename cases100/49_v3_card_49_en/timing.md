@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_49",
-#     "name": "Riley",
+#     "name": "Ada",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -12,266 +12,288 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "mid 20s",
+#     "gender": "female",
+#     "age_range": "late 40s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-06",
-#       "category": "allergy",
-#       "text": "User is allergic to soy."
-#     },
-#     {
-#       "date": "2026-05-24",
-#       "category": "streaming",
-#       "text": "User subscribes to a shared Netflix family plan."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "car",
-#       "text": "User drives a 2017 Honda Civic."
+#       "date": "2026-05-04",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Sofia."
 #     },
 #     {
 #       "date": "2026-04-10",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
-#     },
-#     {
-#       "date": "2026-03-30",
 #       "category": "partner",
-#       "text": "User's partner is named Daniel."
+#       "text": "User's partner is named Haruto."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "pet",
-#       "text": "User has a Russian Blue cat named Nabi."
+#       "date": "2026-03-28",
+#       "category": "anniversary",
+#       "text": "User's anniversary is September 1."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Clara."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-02",
-#       "title": "Choosing a laptop",
+#       "date": "2026-05-25",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "title": "Planning a camping trip",
+#       "date": "2026-05-01",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "title": "Choosing a preschool",
+#       "date": "2026-03-08",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was thinking of making a restaur | S2 Okay, that's manageable. Maybe we  | S3 The ninth arrondissement… that’s n | S4 Something easy to care for. I’m no
+# EXAMINER(FDB-v2) 단계: S1 Oh, just a heads up, I dropped my  | S2 It is. It's nice to focus on somet | S3 I was thinking maybe Brussels? It' | S4 Il Ristorante… that sounds nice.
 
-     0.00s  user  발화 시작: I was thinking of making a restaurant reservation for June 9
-     4.48s  user  발화 끝
-     4.59s  agent 발화 시작: That sounds lovely, Riley.
-     6.65s  user  발화 시작: And I’d like it to be for 6:15 PM.
-     6.67s  agent 발화 끝
-     7.94s  agent 발화 시작: Mm-hmm.
-     8.61s  agent 발화 끝
-    10.54s  user  발화 끝
-    10.77s  agent 발화 시작: Perfect. I can certainly help with that.
-    13.54s  user  발화 시작: It’s for a special occasion, so maybe somewhere nice… around
-    13.68s  agent 발화 끝
-    20.68s  user  발화 끝
-    20.69s  agent 발화 시작: [happy] A special occasion deserves a lovely meal. I'll keep
-    25.55s  agent 발화 끝
-    26.66s  user  발화 시작: Actually, before we get into that, I was wondering… when was
-    32.00s  agent 발화 시작: Yeah.
-    32.49s  agent 발화 끝
-    33.15s  <ret> 발화 (turn9 첫 프레임)
-    34.41s  ⚡SPAN 주입 [d'=1.26s / d_lead=6.06s]: Construction on the White House began in 1792, with President John Ada
-    34.47s  agent 발화 시작: <ret> Construction began in seventeen ninety-two, with Presi
-    34.68s  user  발화 끝
-    40.45s  user  발화 시작: Wow, so it took eight years! That’s a long time for a house.
-    40.53s  agent 발화 끝
-    44.90s  user  발화 끝
-    45.04s  agent 발화 시작: [curious] It is quite a project, isn’t it? A building like t
-    50.37s  agent 발화 끝
-    51.48s  user  발화 시작: It really does. I'm also trying to plan a weekend getaway, m
-    58.15s  user  발화 끝
-    58.23s  agent 발화 시작: A weekend getaway sounds wonderful. Do you have any destinat
-    60.67s  user  발화 시작: Mm-hmm.
-    61.30s  user  발화 끝
-    64.31s  agent 발화 끝
-    64.32s  user  발화 시작: I’m open to suggestions. Somewhere with good food and maybe 
-    70.48s  <ret> 발화 (turn16 첫 프레임)
-    70.89s  agent 발화 시작: <ret> For a charming European escape, Bruges in Belgium is a
-    71.08s  user  발화 끝
-    72.01s  ⚡SPAN 주입 [d'=1.53s / d_lead=8.99s]: Bruges, Belgium, is renowned for its canals, medieval architecture, ch
-    79.77s  user  발화 시작: Bruges… that sounds really nice! I've heard good things abou
-    79.89s  agent 발화 끝
-    84.90s  agent 발화 시작: [happy] It’s quite famous! It's a relatively easy train ride
-    85.05s  user  발화 끝
-    89.81s  agent 발화 끝
-    89.84s  user  발화 시작: How long is the train ride, roughly?
-    91.61s  <ret> 발화 (turn20 첫 프레임)
-    92.09s  agent 발화 시작: <ret> The train from Paris to Bruges takes roughly three hou
-    92.24s  user  발화 끝
-    92.72s  ⚡SPAN 주입 [d'=1.11s / d_lead=7.83s]: (tool result) Paris to Bruges: 3h 50m - 5h 20m, depending on connectio
-    99.92s  agent 발화 끝
-    99.92s  user  발화 시작: Okay, that's manageable. Maybe we could go on Saturday?
-   102.49s  agent 발화 시작: Yeah.
-   103.13s  agent 발화 끝
-   104.65s  agent 발화 시작: Saturday sounds perfect. We can look into train schedules an
-   104.65s  user  발화 끝
-   108.39s  user  발화 시작: Yeah.
-   109.02s  user  발화 끝
-   109.73s  user  발화 시작: Yes, please. A small, boutique hotel would be lovely.
-   109.92s  agent 발화 끝
-   113.52s  <ret> 발화 (turn26 첫 프레임)
-   113.80s  user  발화 끝
-   113.81s  agent 발화 시작: <ret> For a luxurious stay, Hotel Dukes’ Palace Bruges is a 
-   114.49s  ⚡SPAN 주입 [d'=0.97s / d_lead=7.84s]: Hotel Dukes’ Palace Bruges is a 5-star hotel located in a former palac
-   118.50s  user  발화 시작: Yeah.
-   118.99s  user  발화 끝
-   121.65s  agent 발화 끝
-   122.61s  user  발화 시작: That sounds… pricey. Maybe…
-   126.09s  user  발화 끝
-   127.40s  user  발화 시작: …something a little more budget-friendly?
-   129.02s  <ret> 발화 (turn30 첫 프레임)
-   129.48s  agent 발화 시작: <ret> A more affordable option would be The Bonobo Apartment
-   129.62s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.42s]: The Bonobo Apartments Bruges offer stylish and affordable self-caterin
-   129.66s  user  발화 끝
-   134.15s  user  발화 시작: Yeah.
-   134.78s  user  발화 끝
-   136.73s  user  발화 시작: That sounds much better. Self-catering is good too, we can t
-   136.90s  agent 발화 끝
-   140.56s  agent 발화 시작: Uh-huh.
-   141.15s  agent 발화 끝
-   141.82s  user  발화 끝
-   142.01s  agent 발화 시작: [happy] That’s a great idea! Bruges has wonderful markets wi
-   143.76s  user  발화 시작: Yeah, totally.
-   144.95s  user  발화 끝
-   147.40s  user  발화 시작: Speaking of history, what's the story with the Louvre? I’ve 
-   147.56s  agent 발화 끝
-   151.55s  <ret> 발화 (turn37 첫 프레임)
-   152.72s  ⚡SPAN 주입 [d'=1.16s / d_lead=7.00s]: The Louvre Palace was originally built as a fortress in 1190, later co
-   152.78s  agent 발화 시작: <ret> The Louvre began as a fortress in eleven ninety, becom
-   152.91s  user  발화 끝
-   157.55s  user  발화 시작: Yeah.
-   158.33s  user  발화 끝
-   159.77s  agent 발화 끝
-   160.03s  user  발화 시작: Wow, from a fortress to a museum! That's quite a transformat
-   165.24s  agent 발화 시작: [surprised] It truly is! It’s seen a lot of French history u
-   165.40s  user  발화 끝
-   170.46s  user  발화 시작: I should really visit more often. I feel like I barely know 
-   170.57s  agent 발화 끝
-   175.93s  user  발화 끝
-   176.32s  agent 발화 시작: [sigh] It's easy to get caught up in the everyday and forget
-   180.78s  user  발화 시작: You’re right. I’ve also been thinking about getting my hair 
-   180.85s  agent 발화 끝
-   185.85s  <ret> 발화 (turn44 첫 프레임)
-   186.29s  agent 발화 시작: <ret> For a skilled cut, a highly-rated spot in the ninth ar
-   186.42s  user  발화 끝
-   186.45s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.28s]: Edwards and Co in the 9th arrondissement is a highly-rated hair salon 
-   191.35s  user  발화 시작: The ninth arrondissement… that’s not too far from me. I’ll l
-   191.57s  agent 발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 46턴 요약, 94f): date: June 9th; time: 6:15 PM; budget: around 340 euros; open plan: weekend getaway, maybe
-   195.56s  agent 발화 시작: [happy] Excellent. I hope you find a stylist you love.
-   195.71s  user  발화 끝
-   198.80s  agent 발화 끝
-   199.48s  user  발화 시작: I think I will. Oh, and I’m trying to decide what to make fo
-   204.55s  agent 발화 시작: What kind of cuisine are you in the mood for? Perhaps I can 
-   204.66s  user  발화 끝
-   207.74s  user  발화 시작: Yeah.
-   208.23s  user  발화 끝
-   210.25s  user  발화 시작: Something simple, I think. Maybe pasta?
-   210.34s  agent 발화 끝
-   213.21s  <ret> 발화 (turn51 첫 프레임)
-   213.23s  agent 발화 시작: <ret> For a simple yet flavorful pasta dish, Cacio e pepe is
-   213.39s  user  발화 끝
-   213.88s  ⚡SPAN 주입 [d'=0.67s / d_lead=11.08s]: Cacio e pepe is a classic Roman pasta dish made with just four ingredi
-   224.31s  agent 발화 끝
-   224.68s  user  발화 시작: That sounds delicious! Very simple, I like that.
-   227.27s  agent 발화 시작: Right.
-   227.91s  agent 발화 끝
-   228.45s  agent 발화 시작: [happy] It’s wonderfully easy to make, and incredibly satisf
-   228.56s  user  발화 끝
-   230.16s  user  발화 시작: Mm-hmm.
-   230.80s  user  발화 끝
-   232.61s  agent 발화 끝
-   232.90s  user  발화 시작: I think I’ll try that. I’m also considering taking a French 
-   236.82s  agent 발화 시작: That’s a fantastic idea! It’s always good to brush up on the
-   236.92s  user  발화 끝
-   241.26s  agent 발화 끝
-   241.77s  user  발화 시작: I know, I feel a bit rusty sometimes.
-   243.74s  <ret> 발화 (turn59 첫 프레임)
-   244.48s  ⚡SPAN 주입 [d'=0.75s / d_lead=6.07s]: Alliance Française Paris Ile-de-France offers a variety of French lang
-   244.53s  agent 발화 시작: <ret> Alliance Française Paris Ile-de-France offers French c
-   244.68s  user  발화 끝
-   250.61s  agent 발화 끝
-   252.00s  user  발화 시작: That sounds perfect. I’ll check out their website.
-   255.11s  agent 발화 시작: [happy] I’m glad I could help.
-   255.14s  user  발화 끝
-   256.79s  user  발화 시작: Mhm.
-   257.24s  user  발화 끝
-   257.56s  agent 발화 끝
-   257.85s  user  발화 시작: You’re a great help, Briana. What time did I say that restau
-   263.13s  agent 발화 시작: Yeah.
-   263.81s  agent 발화 끝
-   264.90s  user  발화 끝
-   265.06s  agent 발화 시작: You said the restaurant reservation was for 6:15 PM.
-   268.38s  agent 발화 끝
-   268.58s  user  발화 시작: Right, 6:15. Thanks. I’m also thinking of getting a new plan
-   274.51s  user  발화 끝
-   274.86s  agent 발화 시작: A new plant would brighten up your space. Do you have any pr
-   278.13s  user  발화 시작: Something easy to care for. I’m not very good with plants.
-   278.47s  agent 발화 끝
-   281.66s  <ret> 발화 (turn69 첫 프레임)
-   282.24s  agent 발화 시작: <ret> For an easy-care plant, snake plants are known for thr
-   282.35s  user  발화 끝
-   282.40s  ⚡SPAN 주입 [d'=0.75s / d_lead=4.67s]: Snake plants are known for their resilience and ability to thrive in l
-   284.79s  user  발화 시작: Mm-hmm.
-   285.43s  user  발화 끝
-   286.38s  user  발화 시작: A snake plant… I think I’ve heard of those. They look kind o
-   286.92s  agent 발화 끝
-   290.58s  agent 발화 시작: [happy] They’re very stylish and require minimal attention.
-   290.74s  user  발화 끝
-   294.10s  agent 발화 끝
-   294.60s  user  발화 시작: That’s exactly what I need. I’m also planning to visit my au
-   299.64s  user  발화 끝
-   299.69s  agent 발화 시작: Lyon is a beautiful city! Are you planning to travel by trai
-   304.09s  agent 발화 끝
-   304.75s  user  발화 시작: Probably. It’s the easiest way to get there from Paris.
-   307.31s  agent 발화 시작: Yeah.
-   307.66s  <ret> 발화 (turn77 첫 프레임)
-   308.04s  agent 발화 끝
-   308.21s  agent 발화 시작: <ret> A high-speed train from Paris Gare de Lyon to Lyon Par
-   308.29s  ⚡SPAN 주입 [d'=0.63s / d_lead=5.23s]: A high-speed train from Paris Gare de Lyon to Lyon Part-Dieu takes app
-   308.31s  user  발화 끝
-   313.32s  user  발화 시작: Two hours, that’s not bad at all. I’ll have to book tickets 
-   313.44s  agent 발화 끝
-   317.49s  agent 발화 시작: [happy] It’s always best to book in advance, especially for 
-   317.53s  user  발화 끝
-   321.60s  agent 발화 끝
-   322.85s  user  발화 시작: Definitely. I'm also wondering, how much was that restaurant
-   329.26s  agent 발화 시작: You mentioned the restaurant reservation would be around 340
-   329.33s  user  발화 끝
-   334.72s  agent 발화 끝
-   334.78s  user  발화 시작: Ah, yes. 340 euros. Thanks for reminding me.
-   339.13s  user  발화 끝
-   339.53s  agent 발화 시작: You’re very welcome, Riley.
-   341.24s  agent 발화 끝
-   341.90s  user  발화 시작: No, I think that’s all for now. You’ve been really helpful.
-   343.99s  agent 발화 시작: Yeah.
-   344.62s  agent 발화 끝
-   345.59s  user  발화 끝
-   345.81s  agent 발화 시작: [happy] I’m so glad I could assist you.
-   348.58s  agent 발화 끝
+     0.00s  user  발화 시작: Oh, just a heads up, I dropped my car off for service today.
+     3.66s  user  발화 끝
+     3.77s  agent 발화 시작: Got it, I'll remember that.
+     5.32s  user  발화 시작: It was at 6:30 PM, and the estimate was 420 euros.
+     5.38s  agent 발화 끝
+     8.71s  agent 발화 시작: Mm-hmm.
+     9.21s  agent 발화 끝
+    10.23s  user  발화 끝
+    10.41s  agent 발화 시작: Perfect, I've noted the time and the cost for you.
+    13.15s  user  발화 시작: Anyway, I was just thinking about baseball… do you know who 
+    13.32s  agent 발화 끝
+    18.91s  agent 발화 시작: Yeah.
+    19.55s  agent 발화 끝
+    22.42s  user  발화 끝
+    22.61s  <ret> 발화 (turn7 첫 프레임)
+    22.68s  agent 발화 시작: <ret> Oh, that’s a fun baseball trivia question! It was Fern
+    23.46s  ⚡SPAN 주입 [d'=0.85s / d_lead=6.58s]: Fernando Valenzuela of the Los Angeles Dodgers won both the Rookie of 
+    29.26s  agent 발화 끝
+    29.32s  user  발화 시작: Wow, that’s right! I knew it was a Latino player, just could
+    32.44s  agent 발화 시작: Mm-hmm.
+    32.92s  agent 발화 끝
+    34.61s  agent 발화 시작: It’s a really impressive feat, winning both awards in one se
+    34.66s  user  발화 끝
+    38.50s  agent 발화 끝
+    39.90s  user  발화 시작: It is. It makes me think about how difficult it is to adjust
+    45.53s  agent 발화 시작: [happy] You’re right, big changes can be really challenging.
+    45.55s  user  발화 끝
+    49.03s  user  발화 시작: Yeah.
+    49.48s  user  발화 끝
+    51.37s  agent 발화 끝
+    51.99s  user  발화 시작: Exactly. It's been a few months since my breakup, and I stil
+    54.38s  agent 발화 시작: Uh-huh.
+    54.88s  agent 발화 끝
+    57.68s  agent 발화 시작: That’s understandable, Ada. Grief isn’t linear. There will b
+    57.83s  user  발화 끝
+    62.61s  user  발화 시작: I know, intellectually. But emotionally… it’s hard. I feel l
+    62.68s  agent 발화 끝
+    69.81s  agent 발화 시작: Replaying things is a very common part of the process. It's 
+    69.93s  user  발화 끝
+    76.17s  user  발화 시작: It’s exhausting. I wish I could just… move on.
+    76.20s  agent 발화 끝
+    79.96s  user  발화 끝
+    80.01s  agent 발화 시작: [sigh] It sounds like you're putting a lot of pressure on yo
+    82.61s  user  발화 시작: Yeah.
+    83.24s  user  발화 끝
+    86.78s  user  발화 시작: Integrating… that’s a good way to put it.
+    86.92s  agent 발화 끝
+    89.79s  agent 발화 시작: It’s about acknowledging the pain, learning from it, and fin
+    89.83s  user  발화 끝
+    93.58s  user  발화 시작: Mm-hmm.
+    94.07s  user  발화 끝
+    96.19s  user  발화 시작: I’ve been trying to focus on self-care, like taking walks an
+    96.36s  agent 발화 끝
+   100.86s  user  발화 끝
+   100.99s  agent 발화 시작: Those are wonderful steps, Ada. Prioritizing self-care is es
+   106.32s  agent 발화 끝
+   108.47s  user  발화 시작: It helps, a little. I also started taking a pottery class.
+   113.14s  user  발화 끝
+   113.55s  agent 발화 시작: That sounds lovely! A creative outlet can be incredibly ther
+   118.26s  user  발화 시작: It is. It's nice to focus on something completely different.
+   118.26s  agent 발화 끝
+   124.16s  agent 발화 시작: [curious] Getting your hands dirty can be very grounding. It
+   124.24s  user  발화 끝
+   127.10s  user  발화 시작: Yeah.
+   127.73s  user  발화 끝
+   128.74s  user  발화 시작: It really does. It’s a nice break from my thoughts.
+   129.16s  agent 발화 끝
+   132.43s  user  발화 끝
+   132.66s  agent 발화 시작: That’s the goal, isn't it? To find moments of peace and pres
+   135.93s  user  발화 시작: I guess so. I was also thinking about redecorating my apartm
+   136.03s  agent 발화 끝
+   140.06s  agent 발화 시작: That’s a fantastic idea! Creating a space that feels comfort
+   140.23s  user  발화 끝
+   146.19s  user  발화 시작: I want to make it feel more… me. Less like *us*.
+   146.32s  agent 발화 끝
+   150.67s  agent 발화 시작: That makes perfect sense. It’s about reclaiming your space a
+   150.77s  user  발화 끝
+   156.97s  agent 발화 끝
+   157.16s  user  발화 시작: Exactly. Do you know of any good interior designers in Paris
+   161.29s  <ret> 발화 (turn39 첫 프레임)
+   161.61s  agent 발화 시작: <ret> For a personalized touch, Atelier Vivere is a well-reg
+   161.84s  user  발화 끝
+   162.28s  ⚡SPAN 주입 [d'=0.99s / d_lead=5.51s]: Atelier Vivere is a Parisian interior design studio specializing in re
+   167.11s  agent 발화 끝
+   167.32s  user  발화 시작: Atelier Vivere… I'll write that down. Thanks.
+   170.53s  agent 발화 시작: You’re very welcome.
+   170.65s  user  발화 끝
+   171.82s  agent 발화 끝
+   171.91s  user  발화 시작: I've been trying to avoid all our old haunts, too.
+   175.43s  agent 발화 시작: That’s a healthy boundary, Ada. It's important to create spa
+   175.61s  user  발화 끝
+   179.74s  agent 발화 끝
+   179.80s  user  발화 시작: It's hard, though. We used to go to that little café on Rue 
+   185.40s  user  발화 끝
+   185.44s  agent 발화 시작: It’s understandable that it feels difficult to avoid places 
+   188.77s  user  발화 시작: Yeah, yeah.
+   189.86s  user  발화 끝
+   190.16s  agent 발화 끝
+   191.43s  user  발화 시작: I feel silly even talking about it.
+   192.00s  🃏 CARD 주입 (2400f, 누적 48턴 요약, 106f): car service time: 6:30 PM (3m ago); car service cost: 420 euros (3m ago); recent event: br
+   193.62s  agent 발화 시작: [happy] Not at all. It’s perfectly normal to grieve the loss
+   193.73s  user  발화 끝
+   196.35s  user  발화 시작: Yeah.
+   196.98s  user  발화 끝
+   198.75s  agent 발화 시작: It’s okay to acknowledge the sadness.
+   198.76s  agent 발화 끝
+   201.17s  user  발화 시작: I've been thinking about taking a weekend trip, too. Just to
+   201.24s  agent 발화 끝
+   205.31s  agent 발화 시작: That sounds like a wonderful idea. A change of scenery can b
+   205.38s  user  발화 끝
+   209.90s  agent 발화 끝
+   210.22s  user  발화 시작: I was thinking maybe Brussels? It's not too far.
+   213.12s  <ret> 발화 (turn54 첫 프레임)
+   213.72s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.51s]: Brussels is approximately 318 kilometers from Paris, with a high-speed
+   213.78s  agent 발화 시작: <ret> Brussels is quite accessible from Paris—it's around 31
+   213.83s  user  발화 끝
+   217.25s  user  발화 시작: Yeah.
+   217.97s  user  발화 끝
+   221.28s  agent 발화 끝
+   221.37s  user  발화 시작: That sounds doable. Do you know any good chocolate shops the
+   224.31s  <ret> 발화 (turn58 첫 프레임)
+   224.39s  agent 발화 시작: Uh-huh.
+   224.98s  agent 발화 끝
+   225.32s  ⚡SPAN 주입 [d'=1.00s / d_lead=6.21s]: Neuhaus is a renowned Belgian chocolatier, founded in 1857, known for 
+   225.38s  agent 발화 시작: <ret> Neuhaus is a classic Belgian chocolatier, founded in 1
+   225.53s  user  발화 끝
+   227.28s  user  발화 시작: Okay.
+   228.05s  user  발화 끝
+   231.43s  user  발화 시작: Neuhaus… I’ve heard of them.
+   231.58s  agent 발화 끝
+   233.76s  agent 발화 시작: They’re quite famous, and for good reason.
+   233.78s  user  발화 끝
+   236.16s  agent 발화 끝
+   237.60s  user  발화 시작: I’m also trying to get back into reading.
+   239.83s  agent 발화 시작: That’s wonderful. Reading can be a great escape and a source
+   239.87s  user  발화 끝
+   243.33s  user  발화 시작: I'm looking for something… uplifting. Not too heavy.
+   243.39s  agent 발화 끝
+   247.50s  <ret> 발화 (turn65 첫 프레임)
+   247.52s  agent 발화 시작: <ret> For something uplifting, "The House in the Cerulean Se
+   247.72s  user  발화 끝
+   248.24s  ⚡SPAN 주입 [d'=0.75s / d_lead=6.07s]: "The House in the Cerulean Sea" by T.J. Klune is a heartwarming fantas
+   249.61s  user  발화 시작: Yeah.
+   250.29s  user  발화 끝
+   253.58s  agent 발화 끝
+   253.78s  user  발화 시작: That sounds perfect! I'll add it to my list.
+   257.25s  agent 발화 시작: Excellent. It’s a really charming story.
+   257.29s  user  발화 끝
+   260.03s  agent 발화 끝
+   260.63s  user  발화 시작: I was just remembering… what time did I say I dropped the ca
+   264.68s  agent 발화 시작: You said 6:30 PM.
+   264.79s  user  발화 끝
+   266.67s  agent 발화 끝
+   267.16s  user  발화 시작: Right. And… how much was it again?
+   270.59s  agent 발화 시작: You mentioned the estimate was 420 euros.
+   270.63s  user  발화 끝
+   271.72s  user  발화 시작: Uh-huh.
+   272.35s  user  발화 끝
+   273.79s  user  발화 시작: Oh yes, of course. My mind is just a bit fuzzy.
+   273.82s  agent 발화 끝
+   277.12s  user  발화 끝
+   277.22s  agent 발화 시작: That’s perfectly understandable, Ada. It's common to have mo
+   283.56s  agent 발화 끝
+   283.88s  user  발화 시작: I guess so. I've been meaning to try that new Italian restau
+   288.02s  <ret> 발화 (turn77 첫 프레임)
+   288.76s  ⚡SPAN 주입 [d'=0.75s / d_lead=6.12s]: Il Ristorante is a highly-rated Italian restaurant located near Place 
+   288.82s  agent 발화 시작: <ret> Il Ristorante, near Place des Vosges, is a highly-rate
+   288.87s  user  발화 끝
+   291.91s  user  발화 시작: Mm-hmm.
+   292.55s  user  발화 끝
+   294.94s  agent 발화 끝
+   295.05s  user  발화 시작: Il Ristorante… that sounds nice.
+   297.82s  user  발화 끝
+   298.00s  agent 발화 시작: It’s a popular spot.
+   299.42s  user  발화 시작: I think I need to focus on building new routines.
+   299.46s  agent 발화 끝
+   300.45s  agent 발화 시작: Mm-hmm.
+   300.94s  agent 발화 끝
+   303.07s  user  발화 끝
+   303.40s  agent 발화 시작: That’s a great idea. Routines can provide a sense of stabili
+   307.83s  user  발화 시작: It’s just… hard to motivate myself sometimes.
+   308.12s  agent 발화 끝
+   311.53s  user  발화 끝
+   311.99s  agent 발화 시작: [curious] It’s okay to have days where motivation is low. Be
+   316.80s  agent 발화 끝
+   317.45s  user  발화 시작: I am trying. It’s just… a lot.
+   320.09s  agent 발화 시작: It is a lot, Ada. And you’re doing a good job navigating it.
+   320.17s  user  발화 끝
+   324.10s  user  발화 시작: Thanks. That means a lot.
+   324.25s  agent 발화 끝
+   326.09s  agent 발화 시작: You’re very welcome. Remember, healing takes time, and it’s 
+   326.23s  user  발화 끝
+   332.20s  agent 발화 끝
+   332.54s  user  발화 시작: I will. I think I'll book a massage this weekend.
+   333.60s  agent 발화 시작: Right.
+   334.28s  agent 발화 끝
+   335.77s  user  발화 끝
+   335.85s  agent 발화 시작: That sounds incredibly relaxing. A wonderful act of self-car
+   338.80s  user  발화 시작: Yeah.
+   339.43s  user  발화 끝
+   340.20s  agent 발화 끝
+   340.54s  user  발화 시작: I deserve it.
+   341.57s  agent 발화 시작: [happy] Absolutely, you do.
+   341.69s  user  발화 끝
+   343.45s  agent 발화 끝
+   343.83s  user  발화 시작: I think I’m starting to feel a little bit… hopeful.
+   346.94s  agent 발화 시작: That’s wonderful to hear, Ada. Hope is a powerful thing.
+   347.11s  user  발화 끝
+   348.12s  user  발화 시작: Yeah.
+   348.80s  user  발화 끝
+   350.67s  user  발화 시작: Maybe things will get better.
+   350.68s  agent 발화 끝
+   352.93s  user  발화 끝
+   353.31s  agent 발화 시작: They will. It takes time, but they will.
+   356.08s  agent 발화 끝
+   356.26s  user  발화 시작: Thank you, Fialo.
+   357.40s  user  발화 끝
+   357.84s  agent 발화 시작: You’re very welcome, Ada. It’s been a pleasure talking with 
+   360.99s  agent 발화 끝

@@ -4,260 +4,287 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_46",
-#     "name": "라서",
+#     "name": "은서",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 40s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "car",
-#       "text": "User drives a 2022 Volkswagen Golf."
+#       "date": "2026-04-09",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 21°C."
 #     },
 #     {
-#       "date": "2026-05-13",
-#       "category": "medication",
-#       "text": "User takes a vitamin D supplement."
+#       "date": "2026-04-01",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "child",
-#       "text": "User has a child named Rin, age 15."
-#     },
-#     {
-#       "date": "2026-04-16",
-#       "category": "airline",
-#       "text": "User usually flies with Emirates."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "commute",
-#       "text": "User works from home."
-#     },
-#     {
-#       "date": "2026-03-02",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
-#     },
-#     {
-#       "date": "2025-12-25",
+#       "date": "2026-03-05",
 #       "category": "learning",
-#       "text": "User is studying for a driving test."
+#       "text": "User is learning to play guitar."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "child",
+#       "text": "User has a child named Sofia, age 8."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Peruvian."
 #     },
 #     {
 #       "date": "2025-12-10",
-#       "category": "allergy",
-#       "text": "User is allergic to eggs."
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-16",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-06-15",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-19",
+#       "title": "Booking a moving company",
+#       "bullets": [
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "title": "Sorting out a visa",
+#       "bullets": [
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 다음 주에 건강검진 예약을 좀 하려고 하는데, 사월 이일 오후 | S2 아, 운석이군요. 이름이 어렵네요. | S3 재료는 얼마나 필요한가요? | S4 네, 서울 근교에 괜찮은 곳 있으면 추천해 주세요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 너무 피곤해서 아무것도 하기 싫어. | S2 카페 레이어드? 이름이 예쁘네. 디저트 종류는 많아? | S3 부싼에서 괜찮은 마사지샵 추천해 줄 수 있어? | S4 아, 맞다! 병원비가 얼마였지?
 
-     0.00s  user  발화 시작: 다음 주에 건강검진 예약을 좀 하려고 하는데, 사월 이일 오후 여섯시 십오분에 가능한지 알아봐 주시겠어요?
-     6.95s  user  발화 끝
-     7.36s  agent 발화 시작: 네, 알겠습니다. 건강검진 예약 확인을 도와드릴게요.
-    12.08s  agent 발화 끝
-    12.49s  user  발화 시작: 그리고 검진 비용은 이만 오천원이었던 것 같아요.
-    15.18s  agent 발화 시작: 네, 이만 오천원이라고 말씀하셨네요. 확인해 드릴게요.
-    15.25s  user  발화 끝
-    19.66s  agent 발화 끝
-    20.05s  user  발화 시작: 요즘 회사 일이 너무 바빠서 스트레스가 장난 아니에요. 주말에도 계속 일이 밀려 있어서…
-    25.71s  user  발화 끝
-    25.75s  agent 발화 시작: [sigh] 회사 일이 많이 힘드시군요. 주말까지 일하시는 건 정말 힘드실 텐데요. 혹시 스트레스 해소를 위
-    29.29s  user  발화 시작: 아.
-    29.96s  user  발화 끝
-    35.07s  agent 발화 끝
-    35.82s  user  발화 시작: 글쎄요… 딱히 하는 건 없어요. 그냥 친구들 만나서 커피라도 마시면서 얘기하는 정도예요.
-    41.37s  user  발화 끝
-    41.40s  agent 발화 시작: 친구분들과의 만남은 좋은 방법이죠. 잠깐의 휴식과 대화가 스트레스 해소에 도움이 될 수 있어요.
-    44.79s  user  발화 시작: 네.
-    45.43s  user  발화 끝
-    48.75s  user  발화 시작: 맞아요. 근데 요즘 친구들도 다들 바빠서 자주 만나기도 어려워졌어요.
-    48.87s  agent 발화 끝
-    52.73s  agent 발화 시작: [curious] 그러시군요. 주변에 편하게 쉴 수 있는 공간이 있다면 좋겠지만… 혹시 서울에서 조용한 카페
-    52.92s  user  발화 끝
-    61.52s  user  발화 시작: 음… 서울에서 조용한 카페요? 좋은 생각이에요. 한번 알아봐 주세요.
-    61.53s  agent 발화 끝
-    64.63s  agent 발화 시작: 예.
-    65.13s  agent 발화 끝
-    66.05s  user  발화 끝
-    66.09s  <ret> 발화 (turn14 첫 프레임)
-    66.16s  agent 발화 시작: <ret> 서울에서 조용한 카페를 찾으신다면, 서울숲 근처에 예쁜 카페들이 많이 있어요. 서울숲은 생태, 문
-    66.85s  ⚡SPAN 주입 [d'=0.77s / d_lead=10.53s]: Seoul Forest is a large park in Seongdong-gu, Seoul, South Korea, offe
-    69.45s  user  발화 시작: 네.
-    69.94s  user  발화 끝
-    76.69s  agent 발화 끝
-    77.97s  user  발화 시작: 서울숲 근처요? 거기는 처음 가보는데… 어떤 분위기인가요?
-    82.25s  agent 발화 시작: 서울숲은 자연과 어우러진 분위기가 아주 좋아요. 산책로도 잘 되어 있고, 다양한 식물들을 구경할 수 있어요.
-    82.26s  user  발화 끝
-    90.55s  agent 발화 끝
-    91.40s  user  발화 시작: 듣기만 해도 힐링이 되는 것 같아요. 주말에 꼭 한번 가봐야겠어요.
-    95.56s  user  발화 끝
-    95.58s  agent 발화 시작: [happy] 그럼 주말에 서울숲에 방문하셔서 편안한 시간을 보내시길 바랍니다.
-    97.89s  user  발화 시작: 아.
-    98.52s  user  발화 끝
-   100.00s  user  발화 시작: 아, 그런데 혹시 유성운석이 지구 표면에 떨어지면 뭐라고 부르는지 아세요?
-   100.12s  agent 발화 끝
-   104.12s  <ret> 발화 (turn22 첫 프레임)
-   104.28s  agent 발화 시작: <ret> 유성운석이 지구 표면에 떨어지면 뭐라고 부르는지 궁금하시군요.
-   104.53s  user  발화 끝
-   106.04s  ⚡SPAN 주입 [d'=1.91s / d_lead=4.63s]: A meteoroid that survives its passage through the Earth's atmosphere a
-   108.78s  agent 발화 시작: 유성운석이 지구 대기를 통과해 지구 표면에 충돌하면 운석이라고 부릅니다.
-   108.91s  agent 발화 끝
-   111.42s  user  발화 시작: 네.
-   112.05s  user  발화 끝
-   114.19s  agent 발화 끝
-   115.08s  user  발화 시작: 아, 운석이군요. 이름이 어렵네요.
-   117.56s  agent 발화 시작: 이름이 조금 어렵긴 하죠. 하지만 운석은 우주에서 온 특별한 존재니까요.
-   117.66s  user  발화 끝
-   122.93s  agent 발화 끝
-   123.60s  user  발화 시작: 그러네요. 우주에서 온 특별한 존재라… 신기하네요.
-   127.16s  user  발화 끝
-   127.22s  agent 발화 시작: [surprised] 우주에 대한 호기심은 끝이 없죠. 혹시 우주 관련 다큐멘터리나 영화를 좋아하시나요?
-   132.98s  user  발화 시작: 네, 우주 다큐멘터리 정말 좋아해요. 특히 코스모스는 정말 인상 깊었어요.
-   133.01s  agent 발화 끝
-   137.84s  user  발화 끝
-   137.86s  agent 발화 시작: 코스모스는 정말 유명하죠. 저도 한 번 봐야겠네요.
-   140.28s  user  발화 시작: 네.
-   140.73s  user  발화 끝
-   141.80s  agent 발화 끝
-   142.57s  user  발화 시작: 강추합니다! 시간 되시면 꼭 보세요.
-   144.85s  agent 발화 시작: 네, 시간 나면 꼭 보겠습니다. 혹시 다른 관심 분야가 있으신가요?
-   145.02s  user  발화 끝
-   149.66s  user  발화 시작: 음… 요즘은 요리에 관심이 좀 생겼어요.
-   149.72s  agent 발화 끝
-   153.08s  user  발화 끝
-   153.13s  agent 발화 시작: 요리에 관심이 생기셨군요. 어떤 요리를 만들어 보고 싶으신가요?
-   158.28s  user  발화 시작: 특별히 정해둔 건 없는데… 간단한 파스타나 샐러드 같은 거요.
-   158.31s  agent 발화 끝
-   162.28s  agent 발화 시작: 간단한 파스타나 샐러드는 집에서도 쉽게 만들 수 있죠. 레시피를 찾아드릴까요?
-   162.44s  user  발화 끝
-   167.91s  user  발화 시작: 네, 파스타 레시피 좀 찾아주세요.
-   168.07s  agent 발화 끝
-   169.77s  <ret> 발화 (turn39 첫 프레임)
-   170.20s  agent 발화 시작: <ret> 간단한 파스타 레시피로는 스파게티 알리오 올리오가 있어요. 마늘, 올리브 오일, 페페론치노, 파슬
-   170.31s  user  발화 끝
-   170.64s  ⚡SPAN 주입 [d'=0.88s / d_lead=11.69s]: Spaghetti aglio e olio is a classic Italian pasta dish made with garli
-   181.89s  agent 발화 끝
-   182.01s  user  발화 시작: 스파게티 알리오 올리오요? 맛있겠네요.
-   185.25s  user  발화 끝
-   185.34s  agent 발화 시작: 정말 맛있죠. 간단하면서도 풍미가 좋아서 많은 사람들이 좋아하는 요리입니다.
-   191.82s  user  발화 시작: 재료는 얼마나 필요한가요?
-   191.87s  agent 발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 43턴 요약, 128f): appointment time: 사월 이일 오후 여섯시 십오분; exam cost: 이만 오천원; preference documentary title: 코스모스;
-   193.71s  user  발화 끝
-   193.74s  agent 발화 시작: 스파게티 일 공 공 지, 마늘 사쪽, 올리브 오일 사분의 일컵, 페페론치노 두개, 파슬리 약간이 필요합니다.
-   199.30s  user  발화 시작: 네.
-   199.79s  user  발화 끝
-   202.50s  agent 발화 끝
-   203.48s  user  발화 시작: 간단하네요. 주말에 한번 만들어 봐야겠어요.
-   206.21s  agent 발화 시작: [happy] 그럼 주말에 맛있는 스파게티 알리오 올리오를 만들어 드세요.
-   206.25s  user  발화 끝
-   209.80s  user  발화 시작: 아, 그런데 갑자기 생각났는데… 혹시 제가 전에 말씀드렸던 건강검진 예약 시간 기억하세요?
-   210.00s  agent 발화 끝
-   216.38s  agent 발화 시작: 건강검진 예약 시간을 다시 여쭤보셨네요.
-   216.46s  user  발화 끝
-   219.20s  agent 발화 시작: 사월 이일 오후 여섯시 십오분이라고 말씀하셨습니다.
-   219.28s  agent 발화 끝
-   222.90s  agent 발화 끝
-   223.79s  user  발화 시작: 아, 맞아요. 감사합니다.
-   225.40s  user  발화 끝
-   225.41s  agent 발화 시작: 천만에요.
-   226.46s  agent 발화 끝
-   228.10s  user  발화 시작: 요즘 날씨가 너무 좋아서 기분이 좋아져요.
-   230.73s  <ret> 발화 (turn53 첫 프레임)
-   230.88s  agent 발화 시작: <ret> 오늘 서울 날씨는 맑고 최고 기온은 이십이도, 최저 기온은 십이도입니다.
-   231.01s  user  발화 끝
-   231.84s  ⚡SPAN 주입 [d'=1.10s / d_lead=5.47s]: The weather in Seoul, South Korea today is sunny with a high of 22°C a
-   232.85s  user  발화 시작: 네.
-   233.49s  user  발화 끝
-   236.35s  agent 발화 끝
-   236.89s  user  발화 시작: 이십이도라니, 정말 따뜻하네요.
-   239.18s  agent 발화 시작: 네, 정말 따뜻하죠. 야외 활동하기 좋은 날씨입니다.
-   239.28s  user  발화 끝
-   241.54s  user  발화 시작: 네.
-   242.09s  user  발화 끝
-   243.80s  user  발화 시작: 주말에는 어디로 놀러 갈까 고민 중인데…
-   243.81s  agent 발화 끝
-   246.61s  user  발화 끝
-   246.97s  agent 발화 시작: 주말에 어디로 놀러 가실지 고민이시군요. 혹시 특별히 가고 싶은 곳이 있으신가요?
-   253.00s  agent 발화 끝
-   253.75s  user  발화 시작: 음… 아직 딱히 정해둔 곳은 없어요. 그냥 가까운 곳으로 가고 싶어요.
-   258.31s  agent 발화 시작: 가까운 곳으로 가고 싶으시군요. 서울 근교에 예쁜 곳들이 많으니 한번 알아봐 드릴까요?
-   258.46s  user  발화 끝
-   261.68s  user  발화 시작: 예.
-   262.22s  user  발화 끝
-   264.63s  user  발화 시작: 네, 서울 근교에 괜찮은 곳 있으면 추천해 주세요.
-   264.65s  agent 발화 끝
-   267.59s  <ret> 발화 (turn64 첫 프레임)
-   267.76s  agent 발화 시작: <ret> 서울 근교에는 남이섬이 유명한 관광지입니다. 아름다운 경치와 나무가 빽빽한 길로 유명합니다.
-   267.78s  user  발화 끝
-   268.27s  ⚡SPAN 주입 [d'=0.68s / d_lead=7.18s]: Nami Island is a popular tourist destination near Seoul, South Korea, 
-   270.74s  user  발화 시작: 네.
-   271.37s  user  발화 끝
-   274.94s  agent 발화 끝
-   275.14s  user  발화 시작: 남이섬이요? 거기는 가본 적이 없는데…
-   277.73s  user  발화 끝
-   278.23s  agent 발화 시작: 남이섬은 처음 가시는 분들도 많이 찾는 곳이에요. 아름다운 자연을 만끽할 수 있습니다.
-   282.34s  user  발화 시작: 아.
-   282.84s  user  발화 끝
-   284.99s  user  발화 시작: 한번 가보고 싶네요. 주말에 남이섬에 가는 방법 좀 알아봐 주세요.
-   285.00s  agent 발화 끝
-   287.75s  agent 발화 시작: 네.
-   288.25s  agent 발화 끝
-   288.84s  <ret> 발화 (turn71 첫 프레임)
-   288.85s  agent 발화 시작: <ret> 서울에서 남이섬에 가려면 지하철을 타고 가평역으로 가서 페리나 아이 티 엑스-청춘 열차를 타고 섬
-   289.01s  user  발화 끝
-   289.95s  ⚡SPAN 주입 [d'=1.10s / d_lead=8.53s]: To get to Nami Island from Seoul, take the subway to Gapyeong Station 
-   294.74s  user  발화 시작: 예.
-   295.09s  user  발화 끝
-   297.38s  agent 발화 끝
-   297.77s  user  발화 시작: 페리나 아이 티 엑스-청춘 열차요? 어떤 게 더 편할까요?
-   302.13s  agent 발화 시작: 아이 티 엑스-청춘 열차가 조금 더 빠르고 편안합니다.
-   302.27s  user  발화 끝
-   306.07s  agent 발화 끝
-   306.19s  user  발화 시작: 아, 그렇군요. 아이 티 엑스-청춘 열차를 타는 게 좋겠네요.
-   309.89s  user  발화 끝
-   310.00s  agent 발화 시작: 네, 아이 티 엑스-청춘 열차를 타시면 더 편하게 남이섬에 갈 수 있습니다.
-   315.27s  agent 발화 끝
-   316.11s  user  발화 시작: 혹시 제가 예전에 말씀드렸던 검진 비용이 얼마였죠?
-   319.35s  user  발화 끝
-   319.70s  agent 발화 시작: 검진 비용을 다시 여쭤보셨네요.
-   321.93s  agent 발화 시작: 이만 오천원이라고 말씀하셨습니다.
-   321.96s  agent 발화 끝
-   324.46s  agent 발화 끝
-   324.54s  user  발화 시작: 아, 맞아요. 감사합니다.
-   326.08s  agent 발화 시작: 천만에요.
-   326.14s  user  발화 끝
-   327.09s  agent 발화 끝
-   327.28s  user  발화 시작: 음… 오늘은 딱히 더 궁금한 건 없어요.
-   330.28s  agent 발화 시작: 네, 알겠습니다. 그럼 좋은 하루 보내세요.
-   330.37s  user  발화 끝
-   334.02s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 너무 피곤해서 아무것도 하기 싫어.
+     2.08s  user  발화 끝
+     2.41s  agent 발화 시작: 힘든 하루였군요. 잠시 쉬면서 재충전하는 시간을 가지세요.
+     5.92s  user  발화 시작: 응.
+     6.23s  user  발화 끝
+     7.39s  user  발화 시작: 다음 주 화요일에 병원 검진이 있는데, 오전 여덟시 십오분에 예약했어.
+     7.50s  agent 발화 끝
+    11.93s  user  발화 끝
+    11.99s  agent 발화 시작: 네, 기억해 둘게요.
+    13.74s  agent 발화 끝
+    13.75s  user  발화 시작: 그리고 십일월 이십칠일 검진 비용은 구만 오천원이야.
+    17.11s  agent 발화 시작: 네, 기억해 둘게요.
+    17.13s  user  발화 끝
+    18.71s  agent 발화 끝
+    19.15s  user  발화 시작: 모 파라가 런던 마라톤에서 몇 등 했는지 궁금해.
+    21.93s  <ret> 발화 (turn8 첫 프레임)
+    22.05s  agent 발화 시작: <ret> 이천십팔년 런던 마라톤에서 삼위를 했습니다. 기록은 두시간 육분 이십일초였습니다.
+    22.20s  user  발화 끝
+    22.82s  ⚡SPAN 주입 [d'=0.89s / d_lead=6.35s]: Mo Farah finished third in the 2018 London Marathon, completing the ra
+    28.31s  user  발화 시작: 와, 삼위면 정말 잘한 거네.
+    28.40s  agent 발화 끝
+    30.15s  agent 발화 시작: 네, 정말 대단한 기록이죠.
+    30.29s  user  발화 끝
+    32.48s  user  발화 시작: 요즘 운동을 다시 시작하려고 하는데, 부싼에서 괜찮은 헬스장 추천해 줄 수 있어?
+    32.50s  agent 발화 끝
+    37.76s  <ret> 발화 (turn12 첫 프레임)
+    37.86s  user  발화 끝
+    37.96s  agent 발화 시작: <ret> 해운대에 있는 하영 피트니스 부산이 인기가 많습니다. 다양한 피트니스 수업과 장비를 갖추고 있습니
+    38.36s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.55s]: Hayoung Fitness Busan is a popular gym located in Haeundae, Busan, off
+    45.42s  user  발화 시작: 해운대는 좀 멀리 떨어져 있는데, 서면 근처에 있는 곳은 없을까?
+    45.51s  agent 발화 끝
+    48.98s  <ret> 발화 (turn14 첫 프레임)
+    49.54s  agent 발화 시작: <ret> 서면에 있는 비 케이 피트니스 서면이 좋은 평판을 얻고 있습니다. 개인 트레이닝 서비스와 현대적인
+    49.68s  user  발화 끝
+    50.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: BK Fitness Seomyeon is a well-regarded gym in Seomyeon, Busan, known f
+    58.40s  agent 발화 끝
+    58.57s  user  발화 시작: 아, 비 케이 피트니스 서면이 좋겠네. 가격은 어느 정도 해?
+    61.74s  <ret> 발화 (turn16 첫 프레임)
+    61.90s  agent 발화 시작: <ret> 비 케이 피트니스 서면의 월 회비는 팔만원부터 시작하며, 다양한 패키지 옵션을 제공합니다.
+    62.12s  user  발화 끝
+    62.87s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.30s]: BK Fitness Seomyeon offers monthly memberships starting at 80,000 won,
+    68.19s  agent 발화 끝
+    68.33s  user  발화 시작: 팔만원이면 괜찮은 가격이네. 혹시 거기 근처에 맛있는 카페도 있어?
+    72.58s  <ret> 발화 (turn18 첫 프레임)
+    73.15s  agent 발화 시작: <ret> 서면에 있는 카페 레이어드가 케이크와 커피가 맛있기로 유명합니다.
+    73.38s  user  발화 끝
+    73.56s  ⚡SPAN 주입 [d'=0.98s / d_lead=4.63s]: Cafe Layered Seomyeon is a popular cafe near BK Fitness Seomyeon, know
+    77.78s  agent 발화 끝
+    78.25s  user  발화 시작: 카페 레이어드? 이름이 예쁘네. 디저트 종류는 많아?
+    82.23s  user  발화 끝
+    82.65s  agent 발화 시작: 네, 다양한 종류의 케이크와 디저트를 맛볼 수 있습니다.
+    85.49s  user  발화 시작: 음.
+    85.98s  user  발화 끝
+    86.46s  user  발화 시작: 오늘 저녁에는 뭘 먹을까? 갑자기 고민이 되네.
+    86.48s  agent 발화 끝
+    89.15s  agent 발화 시작: 저녁 메뉴를 고르는 게 고민이시군요.
+    89.37s  user  발화 끝
+    91.79s  agent 발화 끝
+    91.92s  user  발화 시작: 파스타가 먹고 싶은데, 서면 근처에 괜찮은 파스타집 있어?
+    95.35s  <ret> 발화 (turn25 첫 프레임)
+    95.53s  agent 발화 시작: <ret> 서면에 있는 파스타 앤 비노가 파스타와 와인 전문 이탈리아 레스토랑으로 평이 좋습니다.
+    95.75s  user  발화 끝
+    96.78s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.30s]: Pasta & Vino Seomyeon is a highly-rated Italian restaurant in Seomyeon
+   101.83s  agent 발화 끝
+   101.97s  user  발화 시작: 파스타 앤 비노? 분위기는 어때?
+   103.90s  agent 발화 시작: 아늑하고 로맨틱한 분위기라고 합니다.
+   104.10s  user  발화 끝
+   106.54s  agent 발화 끝
+   106.55s  user  발화 시작: 혹시 이번 주말에 부산 근교로 당일치기 여행 갈 만한 곳 있어?
+   109.94s  <ret> 발화 (turn29 첫 프레임)
+   110.38s  agent 발화 시작: <ret> 영도의 태종대 공원이 아름다운 해안 경치와 산책로를 제공하며 인기 있는 여행지입니다.
+   110.52s  user  발화 끝
+   110.82s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.07s]: Taejongdae Park in Yeongdo, Busan, offers scenic coastal views and wal
+   116.45s  agent 발화 끝
+   116.47s  user  발화 시작: 태종대는 가본 적 있는데, 다른 곳 없을까?
+   119.37s  <ret> 발화 (turn31 첫 프레임)
+   119.89s  agent 발화 시작: <ret> 태종대를 가보셨군요. 경주시는 역사 유적지와 사찰로 유명하며, 불국사와 석굴암이 있습니다.
+   120.03s  user  발화 끝
+   120.48s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.70s]: Gyeongju, a city near Busan, is famous for its historical sites and te
+   122.19s  user  발화 시작: 음.
+   122.78s  user  발화 끝
+   127.58s  user  발화 시작: 경주는 너무 멀리 떨어져 있잖아. 좀 더 가까운 곳 없을까?
+   127.59s  agent 발화 끝
+   132.26s  <ret> 발화 (turn34 첫 프레임)
+   132.30s  agent 발화 시작: <ret> 경주는 조금 멀리 떨어져 있군요. 부산의 다대포 해변은 아름다운 일몰을 감상할 수 있고 피크닉과 
+   132.44s  user  발화 끝
+   133.68s  ⚡SPAN 주입 [d'=1.42s / d_lead=9.78s]: Dadaepo Beach in Busan offers a beautiful sunset view and is a popular
+   136.96s  user  발화 시작: 어.
+   137.60s  user  발화 끝
+   142.08s  agent 발화 끝
+   142.10s  user  발화 시작: 다대포 해변은 가봤는데, 너무 사람이 많았어.
+   145.62s  agent 발화 시작: 다대포 해변은 사람이 많은 편이긴 하죠.
+   145.76s  user  발화 끝
+   147.65s  user  발화 시작: 응.
+   148.05s  user  발화 끝
+   148.62s  agent 발화 끝
+   149.57s  user  발화 시작: 요즘 스트레스가 너무 심해서, 마사지라도 받으러 가야 할까 봐.
+   152.04s  agent 발화 시작: 음.
+   152.49s  agent 발화 끝
+   153.79s  agent 발화 시작: 스트레스가 심하시군요. 마사지를 받으시는 것도 좋은 방법입니다.
+   153.92s  user  발화 끝
+   159.25s  agent 발화 끝
+   160.65s  user  발화 시작: 부싼에서 괜찮은 마사지샵 추천해 줄 수 있어?
+   163.14s  <ret> 발화 (turn43 첫 프레임)
+   163.41s  agent 발화 시작: <ret> 태국 전통 마사지 부산이 정통 태국 마사지 서비스를 제공하는 곳으로 유명합니다.
+   163.60s  user  발화 끝
+   163.89s  ⚡SPAN 주입 [d'=0.75s / d_lead=5.70s]: Thai Traditional Massage Busan is a well-known massage shop in Busan, 
+   167.54s  user  발화 시작: 응.
+   167.85s  user  발화 끝
+   169.11s  agent 발화 끝
+   169.73s  user  발화 시작: 태국 마사지? 괜찮은가?
+   171.87s  agent 발화 시작: 네, 태국 마사지는 근육 이완과 스트레스 해소에 효과적이라고 합니다.
+   172.13s  user  발화 끝
+   174.29s  user  발화 시작: 그래.
+   174.90s  user  발화 끝
+   176.88s  user  발화 시작: 아, 맞다! 다음 주 화요일에 병원 가는 날이었지. 몇 시였더라?
+   176.97s  agent 발화 끝
+   181.00s  user  발화 끝
+   181.22s  agent 발화 시작: 다음 주 화요일 오전 여덟시 십오분에 예약하셨습니다.
+   185.05s  user  발화 시작: 아, 그렇지! 여덟시 십오분이네. 고마워.
+   185.19s  agent 발화 끝
+   187.64s  user  발화 끝
+   188.09s  agent 발화 시작: 천만에요.
+   188.91s  agent 발화 끝
+   189.57s  user  발화 시작: 요즘 날씨가 너무 덥다.
+   190.99s  agent 발화 시작: 네, 정말 덥네요.
+   191.19s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 54턴 요약, 114f): appointment time: 오전 여덟시 십오분; appointment date: 다음 주 화요일; medical cost: 구만 오천원; daytrip pr
+   192.74s  agent 발화 끝
+   193.38s  user  발화 시작: 오늘 날씨는 어때?
+   194.71s  <ret> 발화 (turn55 첫 프레임)
+   194.96s  agent 발화 시작: <ret> 오늘 부산 날씨는 이십팔 점 오도이고, 습도는 칠십퍼센트, 바람은 시속 사 점 이킬로미터이며, 부
+   195.13s  user  발화 끝
+   196.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: (tool result) Busan: 28.5°C, humidity 70%, wind 4.2 km/h, partly cloud
+   199.14s  user  발화 시작: 그래.
+   199.91s  user  발화 끝
+   203.72s  agent 발화 끝
+   203.73s  user  발화 시작: 이십팔 점 오도면 꽤 덥네.
+   205.86s  user  발화 끝
+   206.28s  agent 발화 시작: 네, 정말 더운 날씨입니다.
+   208.59s  agent 발화 끝
+   209.38s  user  발화 시작: 혹시 이번 주말에 비가 올까?
+   210.69s  <ret> 발화 (turn60 첫 프레임)
+   210.87s  agent 발화 시작: <ret> 이번 주말 부산 날씨는 토요일에 맑고 이십구도, 일요일에 부분적으로 흐리고 삼십도입니다. 비는 오
+   211.11s  user  발화 끝
+   212.22s  ⚡SPAN 주입 [d'=1.53s / d_lead=8.99s]: (tool result) Busan: Saturday - Sunny, 29°C. Sunday - Partly cloudy, 3
+   215.07s  user  발화 시작: 응응.
+   215.71s  user  발화 끝
+   219.81s  user  발화 시작: 다행이다. 비가 오면 계획이 틀어지는데.
+   219.86s  agent 발화 끝
+   222.59s  user  발화 끝
+   222.69s  agent 발화 시작: 네, 맑은 날씨에 즐거운 주말 보내세요.
+   225.78s  agent 발화 끝
+   226.89s  user  발화 시작: 아, 맞다! 병원비가 얼마였지?
+   229.48s  user  발화 끝
+   229.85s  agent 발화 시작: 병원비는 구만 오천원이라고 말씀하셨습니다.
+   233.14s  user  발화 시작: 아, 맞아. 구만 오천원이네.
+   233.23s  agent 발화 끝
+   234.83s  agent 발화 시작: 네, 맞습니다.
+   234.93s  user  발화 끝
+   236.29s  agent 발화 끝
+   236.45s  user  발화 시작: 오늘 저녁에 영화 보러 갈까 하는데, 서면 근처에 상영하는 영화 있어?
+   240.49s  <ret> 발화 (turn69 첫 프레임)
+   240.80s  agent 발화 시작: <ret> 서면 근처에서 영화를 보시려는군요. 롯데시네마 서면에서 '메그 이: 심해의 괴수'가 상영 중입니다
+   240.99s  user  발화 끝
+   241.57s  ⚡SPAN 주입 [d'=1.08s / d_lead=7.09s]: Meg 2: The Trench is currently showing at Lotte Cinema Seomyeon in Bus
+   247.90s  agent 발화 끝
+   248.27s  user  발화 시작: 메그 이? 재미있을까?
+   249.76s  agent 발화 시작: 네, 액션 영화를 좋아하신다면 재미있게 보실 수 있을 겁니다.
+   249.87s  user  발화 끝
+   254.39s  agent 발화 끝
+   255.56s  user  발화 시작: 아, 그래? 그럼 한번 볼까.
+   257.18s  agent 발화 시작: 네, 즐거운 시간 보내세요.
+   257.25s  user  발화 끝
+   259.34s  agent 발화 끝
+   260.13s  user  발화 시작: 오늘 하루가 정말 길게 느껴지네.
+   262.21s  user  발화 끝
+   262.60s  agent 발화 시작: 힘든 하루였군요.
+   264.03s  agent 발화 끝
+   264.70s  user  발화 시작: 그래도 이렇게 이야기 나누니까 좀 나아지는 것 같아.
+   267.79s  user  발화 끝
+   268.05s  agent 발화 시작: 네, 제가 도움이 되었다니 기쁩니다.
+   270.87s  agent 발화 끝
+   270.94s  user  발화 시작: 이제 그만해야 할 것 같아.
+   272.35s  agent 발화 시작: 네, 편안한 밤 보내세요.
+   272.55s  user  발화 끝
+   274.20s  agent 발화 끝

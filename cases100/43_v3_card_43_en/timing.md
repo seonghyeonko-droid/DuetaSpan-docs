@@ -4,302 +4,355 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_43",
-#     "name": "Hugo",
+#     "name": "Iris",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "60s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "anniversary",
-#       "text": "User's anniversary is May 11."
+#       "date": "2026-06-26",
+#       "category": "learning",
+#       "text": "User is learning to play guitar."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Georgia in June."
+#       "date": "2026-05-25",
+#       "category": "partner",
+#       "text": "User's partner is named Clara."
 #     },
 #     {
-#       "date": "2026-05-17",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
+#       "date": "2026-01-27",
+#       "category": "phone",
+#       "text": "User uses an iPhone 15."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "floor",
-#       "text": "User lives on the 7th floor."
+#       "date": "2026-01-24",
+#       "category": "employer",
+#       "text": "User works at a law firm."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB-."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "schedule",
-#       "text": "User has a 9-to-6 weekday schedule."
+#       "date": "2025-12-30",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-24",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-06-28",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-13",
-#       "title": "Looking for a therapist",
+#       "date": "2026-06-27",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-21",
+#       "title": "Switching phone plans",
+#       "bullets": [
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m really excited, I just got tic | S2 That… actually sounds helpful. | S3 Somewhere in the Marais district? | S4 What are some easy ones to take ca
+# EXAMINER(FDB-v2) 단계: S1 I have a job interview on August 2 | S2 I haven’t figured that out yet. Th | S3 I might check that out. Do you kno | S4 Still nervous, but a little better
 
-     0.00s  user  발화 시작: I’m really excited, I just got tickets to a show.
-     2.84s  agent 발화 시작: That’s wonderful to hear, Hugo! It’s always nice to have som
-     2.95s  user  발화 끝
-     5.47s  user  발화 시작: Uh-huh.
-     5.97s  user  발화 끝
-     7.75s  agent 발화 끝
-     9.00s  user  발화 시작: It’s on February 20th.
-    10.99s  user  발화 끝
-    11.23s  agent 발화 시작: February 20th. A lovely date!
-    13.72s  agent 발화 끝
-    14.23s  user  발화 시작: And it starts at 10:15 AM.
-    16.45s  agent 발화 시작: 10:15 AM. A morning performance then.
-    16.58s  user  발화 끝
-    19.68s  agent 발화 끝
-    20.02s  user  발화 시작: It was 30 euros.
-    21.70s  agent 발화 시작: Thirty euros. A reasonable price for a show.
-    21.72s  user  발화 끝
-    25.12s  agent 발화 끝
-    25.17s  user  발화 시작: I've been feeling really stressed lately with exams coming u
-    28.79s  agent 발화 시작: Exams can be incredibly stressful, Hugo. It’s good you’re re
-    28.82s  user  발화 끝
-    33.39s  user  발화 시작: I’m trying to find ways to calm down.
-    33.47s  agent 발화 끝
-    35.83s  agent 발화 시작: That’s a great first step. There are many techniques we can 
-    35.93s  user  발화 끝
-    39.81s  agent 발화 끝
-    39.99s  user  발화 시작: Do you know any simple breathing exercises?
-    42.95s  user  발화 끝
-    43.04s  agent 발화 시작: A simple one is box breathing. Inhale for four, hold for fou
-    49.99s  agent 발화 끝
-    51.05s  user  발화 시작: That sounds… manageable.
-    53.11s  agent 발화 시작: It is. It’s about creating a rhythm and focusing on your bre
-    53.36s  user  발화 끝
-    54.53s  user  발화 시작: Right.
-    55.35s  user  발화 끝
-    57.23s  agent 발화 끝
-    59.35s  user  발화 시작: I keep getting distracted though.
-    61.30s  agent 발화 시작: That’s very common. Our minds wander. Gently redirect your f
-    61.33s  user  발화 끝
-    63.15s  user  발화 시작: Yeah.
-    63.60s  user  발화 끝
-    67.31s  agent 발화 끝
-    67.33s  user  발화 시작: It's just hard to switch off.
-    69.21s  user  발화 끝
-    69.42s  agent 발화 시작: It is. Our minds are always busy processing things.
-    73.25s  agent 발화 끝
-    73.68s  user  발화 시작: What about grounding exercises?
-    76.13s  user  발화 끝
-    76.20s  agent 발화 시작: Grounding can be very effective. Try the 5-4-3-2-1 method.
-    81.29s  agent 발화 끝
-    81.51s  user  발화 시작: What’s that?
-    82.66s  user  발화 끝
-    82.96s  agent 발화 시작: Name five things you can see, four you can touch, three you 
-    88.24s  user  발화 시작: Mm-hmm.
-    88.88s  user  발화 끝
-    90.33s  user  발화 시작: That… actually sounds helpful.
-    90.52s  agent 발화 끝
-    93.22s  agent 발화 시작: It brings you into the present moment. It’s a good anchor.
-    93.23s  user  발화 끝
-    96.54s  user  발화 시작: I'll try that later.
-    96.64s  agent 발화 끝
-    97.95s  agent 발화 시작: Wonderful. Remember to be kind to yourself throughout the pr
-    98.06s  user  발화 끝
-   101.76s  user  발화 시작: I was also wondering, when did the original *Jaws* movie com
-   101.93s  agent 발화 끝
-   105.40s  <ret> 발화 (turn33 첫 프레임)
-   105.66s  agent 발화 시작: <ret> Now, thinking about classic films, the original *Jaws*
-   105.74s  user  발화 끝
-   106.18s  ⚡SPAN 주입 [d'=0.79s / d_lead=10.02s]: The original *Jaws* film, directed by Steven Spielberg, was first rele
-   113.55s  user  발화 시작: Yeah.
-   114.05s  user  발화 끝
-   115.66s  user  발화 시작: Wow, that was a long time ago!
-   115.68s  agent 발화 끝
-   117.67s  agent 발화 시작: It was! It’s become a cultural landmark.
-   117.74s  user  발화 끝
-   120.45s  agent 발화 끝
-   120.63s  user  발화 시작: I'm trying to plan a weekend getaway.
-   123.12s  user  발화 끝
-   123.39s  agent 발화 시작: A weekend getaway sounds lovely! Do you have anywhere in min
-   127.56s  agent 발화 끝
-   128.43s  user  발화 시작: Maybe somewhere not too far from Paris.
-   131.64s  agent 발화 시작: Okay, somewhere easily accessible. Perhaps Normandy?
-   131.76s  user  발화 끝
-   134.67s  user  발화 시작: Mm-hmm.
-   135.44s  user  발화 끝
-   135.62s  agent 발화 끝
-   135.89s  user  발화 시작: Normandy… I’ve heard it’s nice.
-   138.15s  user  발화 끝
-   138.16s  agent 발화 시작: It is. It has beautiful coastlines and historical sites.
-   142.42s  agent 발화 끝
-   143.77s  user  발화 시작: What’s the weather like there right now?
-   145.35s  <ret> 발화 (turn45 첫 프레임)
-   145.88s  user  발화 끝
-   145.94s  agent 발화 시작: <ret> Currently in Normandy, it’s 18.5°C, humidity is 68%, w
-   146.26s  ⚡SPAN 주입 [d'=0.91s / d_lead=10.21s]: (tool result) 18.5°C, humidity 68%, wind 12.8 km/h, condition: partly 
-   151.48s  user  발화 시작: Yeah.
-   152.07s  user  발화 끝
-   155.67s  user  발화 시작: That sounds pleasant.
-   156.14s  agent 발화 끝
-   157.28s  user  발화 끝
-   157.50s  agent 발화 시작: It does. A perfect temperature for exploring.
-   160.74s  agent 발화 끝
-   160.96s  user  발화 시작: Are there any good restaurants in Caen?
-   162.79s  <ret> 발화 (turn50 첫 프레임)
-   163.17s  agent 발화 시작: <ret> If you’re looking for a good restaurant in Caen, a hig
-   163.35s  user  발화 끝
-   164.01s  ⚡SPAN 주입 [d'=1.22s / d_lead=11.65s]: Le Bistrot du Marché in Caen is a highly-rated restaurant specializing
-   174.81s  agent 발화 끝
-   175.25s  user  발화 시작: That sounds good.
-   176.71s  user  발화 끝
-   176.90s  agent 발화 시작: It’s known for its fresh, local ingredients.
-   179.61s  user  발화 시작: I need to find a good hair salon near where I live.
-   179.67s  agent 발화 끝
-   182.84s  user  발화 끝
-   182.99s  agent 발화 시작: I can help with that.
-   184.34s  user  발화 시작: Somewhere in the Marais district?
-   184.42s  agent 발화 끝
-   185.96s  <ret> 발화 (turn56 첫 프레임)
-   186.25s  agent 발화 시작: <ret> For a skilled cut in the Marais, a highly-rated spot i
-   186.46s  user  발화 끝
-   187.32s  ⚡SPAN 주입 [d'=1.35s / d_lead=10.62s]: Edwards and Co in the Marais is a highly-rated hair salon known for it
-   192.00s  🃏 CARD 주입 (2400f, 누적 57턴 요약, 84f): show date: February 20th (3m ago); show time: 10:15 AM (2m ago); show cost: 30 euros (2m a
-   196.87s  agent 발화 끝
-   197.03s  user  발화 시작: Perfect. I’ll look them up.
-   199.03s  agent 발화 시작: Excellent. I’m glad I could help.
-   199.11s  user  발화 끝
-   201.10s  agent 발화 끝
-   201.24s  user  발화 시작: I'm thinking about taking up yoga.
-   203.59s  user  발화 끝
-   203.92s  agent 발화 시작: Yoga is a fantastic way to reduce stress and improve flexibi
-   208.13s  agent 발화 끝
-   208.67s  user  발화 시작: Are there any good studios in Paris?
-   210.83s  <ret> 발화 (turn62 첫 프레임)
-   211.02s  agent 발화 시작: <ret> If you’re looking for yoga studios in Paris, Yoga Pass
-   211.12s  user  발화 끝
-   212.01s  ⚡SPAN 주입 [d'=1.18s / d_lead=11.73s]: Yoga Pass Paris offers a wide range of yoga classes and workshops, wit
-   222.75s  agent 발화 끝
-   222.91s  user  발화 시작: That’s not too bad.
-   224.45s  agent 발화 시작: It’s a good way to try different styles and teachers.
-   224.66s  user  발화 끝
-   226.92s  user  발화 시작: I'm also worried about sleep.
-   227.40s  agent 발화 끝
-   229.08s  user  발화 끝
-   229.32s  agent 발화 시작: Sleep is crucial for both physical and mental wellbeing.
-   232.93s  agent 발화 끝
-   234.01s  user  발화 시작: I have trouble winding down.
-   235.99s  user  발화 끝
-   236.36s  agent 발화 시작: That’s a common problem. Establishing a relaxing bedtime rou
-   240.89s  agent 발화 끝
-   241.94s  user  발화 시작: Like what?
-   242.94s  user  발화 끝
-   243.02s  agent 발화 시작: A warm bath, reading a book, or listening to calming music.
-   244.93s  user  발화 시작: Mm-hmm.
-   245.47s  user  발화 끝
-   247.05s  agent 발화 끝
-   247.60s  user  발화 시작: I usually just scroll through my phone.
-   249.90s  agent 발화 시작: That can actually hinder sleep. The blue light can interfere
-   250.10s  user  발화 끝
-   252.69s  user  발화 시작: Yeah.
-   253.19s  user  발화 끝
-   254.75s  agent 발화 끝
-   254.94s  user  발화 시작: Oh.
-   255.58s  user  발화 끝
-   255.70s  agent 발화 시작: It’s best to avoid screens for at least an hour before bed.
-   257.69s  user  발화 시작: Mm-hmm.
-   258.32s  user  발화 끝
-   258.66s  agent 발화 끝
-   259.73s  user  발화 시작: I should probably try that.
-   261.57s  user  발화 끝
-   261.58s  agent 발화 시작: It might make a significant difference.
-   263.65s  agent 발화 끝
-   263.88s  user  발화 시작: I’m thinking about getting a new plant for my apartment.
-   265.92s  agent 발화 시작: Yeah.
-   266.36s  agent 발화 끝
-   267.11s  user  발화 끝
-   267.16s  agent 발화 시작: A lovely idea! Plants can really brighten up a space.
-   271.14s  agent 발화 끝
-   271.19s  user  발화 시작: What are some easy ones to take care of?
-   273.72s  <ret> 발화 (turn84 첫 프레임)
-   273.73s  user  발화 끝
-   273.86s  agent 발화 시작: <ret> For an easy-to-care-for plant, snake plants are known 
-   274.32s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.33s]: Snake plants are known for their resilience and ability to thrive in l
-   276.43s  user  발화 시작: Yeah.
-   276.88s  user  발화 끝
-   281.10s  user  발화 시작: That sounds good. I kill most plants I get.
-   281.19s  agent 발화 끝
-   285.27s  user  발화 끝
-   285.62s  agent 발화 시작: Snake plants are very forgiving.
-   287.60s  agent 발화 끝
-   288.14s  user  발화 시작: What time did I say that show was? –
-   290.54s  user  발화 끝
-   290.55s  user  발화 시작: … Actually, never mind, I just remembered. It’s fine.
-   294.06s  user  발화 끝
-   294.09s  agent 발화 시작: Oh, alright then. No problem at all.
-   296.55s  agent 발화 시작: It's good you’re prioritizing self-care with things like yog
-   296.59s  agent 발화 끝
-   300.44s  agent 발화 끝
-   300.88s  user  발화 시작: I need to book a taxi to the airport next week.
-   303.78s  agent 발화 시작: When next week are you planning to travel?
-   303.83s  user  발화 끝
-   306.00s  agent 발화 끝
-   306.09s  user  발화 시작: Next Tuesday.
-   307.20s  agent 발화 시작: Next Tuesday. And where are you travelling to?
-   307.42s  user  발화 끝
-   310.24s  agent 발화 끝
-   310.69s  user  발화 시작: London.
-   310.99s  <ret> 발화 (turn97 첫 프레임)
-   311.48s  agent 발화 시작: <ret> The estimated fare from Paris to Charles de Gaulle Air
-   311.56s  user  발화 끝
-   311.59s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.19s]: (tool result) Taxi fare from Paris to Charles de Gaulle Airport on Jul
-   318.66s  agent 발화 끝
-   319.12s  user  발화 시작: That’s reasonable.
-   320.38s  agent 발화 시작: It is. Do you want me to book it for you?
-   320.50s  user  발화 끝
-   322.99s  user  발화 시작: Not yet, thanks.
-   323.02s  agent 발화 끝
-   324.44s  agent 발화 시작: Just let me know when you're ready.
-   324.55s  user  발화 끝
-   326.18s  agent 발화 끝
-   326.20s  user  발화 시작: How much was the show ticket again?
-   327.94s  agent 발화 시작: You said the show ticket was thirty euros.
-   328.14s  user  발화 끝
-   328.93s  user  발화 시작: Mm-hmm.
-   329.42s  user  발화 끝
-   330.10s  user  발화 시작: Right. Thanks.
-   330.34s  agent 발화 끝
-   331.48s  user  발화 끝
-   331.68s  agent 발화 시작: You’re very welcome.
-   332.75s  user  발화 시작: I think that’s all for now.
-   332.87s  agent 발화 끝
-   334.45s  user  발화 끝
-   334.73s  agent 발화 시작: [happy] Wonderful. Remember to prioritize your wellbeing, Hu
-   339.72s  agent 발화 끝
+     0.00s  user  발화 시작: I have a job interview on August 20th.
+     2.73s  agent 발화 시작: Got it, I'll remember that.
+     2.91s  user  발화 끝
+     4.81s  agent 발화 끝
+     6.20s  user  발화 시작: It's at 8:15 AM.
+     7.94s  user  발화 끝
+     8.01s  agent 발화 시작: Wonderful, I've noted the time.
+    10.47s  user  발화 시작: I already paid for a practice session, 150 Australian dollar
+    10.50s  agent 발화 끝
+    15.19s  user  발화 끝
+    15.47s  agent 발화 시작: Okay, perfect. I'll keep that in mind too.
+    17.90s  user  발화 시작: So, I've been thinking a lot about stories lately…
+    18.06s  agent 발화 끝
+    20.05s  agent 발화 시작: Yeah.
+    20.54s  agent 발화 끝
+    21.39s  agent 발화 시작: That’s lovely, Iris. Stories are so powerful.
+    21.60s  user  발화 끝
+    22.49s  user  발화 시작: Right.
+    23.32s  user  발화 끝
+    24.53s  user  발화 시작: And it made me wonder, what is it called when animals act li
+    24.58s  agent 발화 끝
+    28.72s  <ret> 발화 (turn11 첫 프레임)
+    29.14s  agent 발화 시작: <ret> It’s called anthropomorphism—the attribution of human 
+    29.26s  user  발화 끝
+    29.52s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.69s]: Anthropomorphism is the attribution of human traits, emotions, or inte
+    36.29s  user  발화 시작: Oh, that’s a big word.
+    36.83s  agent 발화 끝
+    38.04s  user  발화 끝
+    38.12s  agent 발화 시작: It is, isn’t it? But it’s a common thing we do in stories an
+    40.40s  user  발화 시작: Yeah, yeah.
+    41.69s  user  발화 끝
+    42.80s  agent 발화 끝
+    43.20s  user  발화 시작: It’s funny, I was reading a book where the cat was basically
+    48.28s  user  발화 끝
+    48.32s  agent 발화 시작: [laugh] That sounds delightful! It's a classic example of gi
+    53.65s  user  발화 시작: It really got me thinking about why we *do* that.
+    54.11s  agent 발화 끝
+    56.68s  agent 발화 시작: I think it helps us connect with them, to understand their m
+    56.88s  user  발화 끝
+    60.84s  agent 발화 끝
+    61.32s  user  발화 시작: Maybe. I’m trying to write a children’s story, but I’m stuck
+    65.18s  agent 발화 시작: That’s perfectly normal, Iris. Creative blocks happen to eve
+    65.26s  user  발화 끝
+    69.15s  agent 발화 끝
+    69.76s  user  발화 시작: I just…I don't know where to start.
+    72.39s  user  발화 끝
+    72.42s  agent 발화 시작: Sometimes, the hardest part is simply starting. Don't worry 
+    77.56s  user  발화 시작: Easier said than done.
+    77.60s  agent 발화 끝
+    79.16s  user  발화 끝
+    79.38s  agent 발화 시작: I understand. How about just freewriting for five minutes? N
+    82.95s  user  발화 시작: Mm-hmm.
+    83.44s  user  발화 끝
+    85.14s  user  발화 시작: Hmm… that’s not a bad idea.
+    85.27s  agent 발화 끝
+    87.59s  agent 발화 시작: It can unlock things you didn’t know were there. A rough dra
+    87.64s  user  발화 끝
+    92.31s  agent 발화 끝
+    92.40s  user  발화 시작: I suppose. What kind of stories do *you* like?
+    96.10s  user  발화 끝
+    96.50s  agent 발화 시작: I enjoy stories that explore kindness and resilience.
+    99.92s  user  발화 시작: That’s nice. I’m thinking of a story about a little lost pen
+   100.11s  agent 발화 끝
+   103.11s  agent 발화 시작: Yeah.
+   103.57s  agent 발화 끝
+   104.16s  agent 발화 시작: A lost penguin! That has lovely potential. What happens to t
+   104.26s  user  발화 끝
+   107.69s  user  발화 시작: Mhm.
+   108.32s  user  발화 끝
+   109.23s  user  발화 시작: I haven’t figured that out yet. That’s the problem.
+   109.26s  agent 발화 끝
+   110.82s  agent 발화 시작: Uh-huh.
+   111.55s  agent 발화 끝
+   112.17s  agent 발화 시작: Perhaps the penguin is looking for its family?
+   112.28s  user  발화 끝
+   114.61s  user  발화 시작: Maybe. Or maybe it’s trying to find its way home.
+   114.71s  agent 발화 끝
+   118.32s  user  발화 끝
+   118.36s  agent 발화 시작: Both are wonderful possibilities. Don’t feel pressured to de
+   120.75s  user  발화 시작: Yeah.
+   121.34s  user  발화 끝
+   122.84s  user  발화 시작: It’s just…I want it to be special.
+   122.94s  agent 발화 끝
+   125.33s  user  발화 끝
+   125.42s  agent 발화 시작: Special doesn’t mean perfect, Iris. It means meaningful to *
+   129.40s  agent 발화 끝
+   129.83s  user  발화 시작: You’re right. I'm putting too much pressure on myself.
+   133.16s  agent 발화 시작: It’s easy to do. Remember those tiny daily reps we talked ab
+   133.16s  user  발화 끝
+   137.44s  user  발화 시작: Yes, small steps.
+   137.56s  agent 발화 끝
+   139.56s  user  발화 끝
+   139.66s  agent 발화 시작: Exactly. Write one sentence a day. Just one.
+   141.38s  user  발화 시작: Yeah.
+   142.02s  user  발화 끝
+   143.50s  agent 발화 끝
+   143.68s  user  발화 시작: That sounds…doable.
+   146.00s  agent 발화 시작: It is! And it builds momentum.
+   146.03s  user  발화 끝
+   146.98s  user  발화 시작: Yeah, yeah.
+   148.22s  user  발화 끝
+   148.50s  agent 발화 끝
+   148.54s  user  발화 시작: I’m also thinking about taking a pottery class.
+   151.48s  agent 발화 시작: That sounds wonderful! A creative outlet can be very restora
+   151.59s  user  발화 끝
+   155.61s  user  발화 시작: There's a studio near my place, I think.
+   155.79s  agent 발화 끝
+   157.93s  <ret> 발화 (turn53 첫 프레임)
+   157.94s  agent 발화 시작: <ret> Oh, there’s a studio nearby—Clayful Studio Sydney—that
+   158.15s  user  발화 끝
+   158.72s  ⚡SPAN 주입 [d'=0.79s / d_lead=9.74s]: Clayful Studio Sydney offers pottery classes for all skill levels, wit
+   163.27s  user  발화 시작: Yeah, yeah.
+   164.60s  user  발화 끝
+   167.67s  agent 발화 시작: It’s a great way to unwind and express yourself.
+   167.68s  agent 발화 끝
+   170.63s  agent 발화 끝
+   171.16s  user  발화 시작: I haven’t done anything like that in years.
+   172.09s  agent 발화 시작: Yeah.
+   172.67s  agent 발화 끝
+   173.52s  agent 발화 시작: It’s never too late to try something new.
+   173.74s  user  발화 끝
+   175.91s  agent 발화 끝
+   176.12s  user  발화 시작: I’m worried I’ll be terrible at it.
+   178.10s  user  발화 끝
+   178.17s  agent 발화 시작: [happy] Everyone starts somewhere, Iris. The joy is in the p
+   182.89s  agent 발화 끝
+   183.58s  user  발화 시작: You always say the right thing.
+   185.76s  agent 발화 시작: I simply offer a different perspective.
+   185.83s  user  발화 끝
+   187.20s  user  발화 시작: Uh-huh.
+   187.70s  user  발화 끝
+   187.92s  user  발화 시작: I suppose. I was looking at art galleries too.
+   188.02s  agent 발화 끝
+   189.64s  <ret> 발화 (turn65 첫 프레임)
+   191.58s  ⚡SPAN 주입 [d'=1.94s / d_lead=8.49s]: The Art Gallery of NSW currently exhibits 'Australia in Paris', showca
+   191.62s  agent 발화 시작: <ret> The Art Gallery of NSW is currently exhibiting 'Austra
+   191.76s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 66턴 요약, 73f): interview date: August 20th (3m ago); interview time: 8:15 AM (3m ago); practice session c
+   199.93s  user  발화 시작: Oh, that sounds interesting.
+   200.10s  agent 발화 끝
+   201.67s  user  발화 끝
+   201.80s  agent 발화 시작: It's receiving positive reviews.
+   204.01s  agent 발화 끝
+   204.47s  user  발화 시작: I might check that out. Do you know if it’s open on weekends
+   207.63s  <ret> 발화 (turn69 첫 프레임)
+   208.11s  agent 발화 시작: <ret> Yes, the Art Gallery of NSW is open from 10 AM to 5 PM
+   208.22s  user  발화 끝
+   208.40s  ⚡SPAN 주입 [d'=0.77s / d_lead=5.84s]: The Art Gallery of NSW is open from 10 AM to 5 PM daily, including wee
+   213.95s  agent 발화 끝
+   214.62s  user  발화 시작: Good. I'm trying to be more spontaneous.
+   217.79s  agent 발화 시작: That’s a beautiful intention, Iris.
+   217.86s  user  발화 끝
+   219.86s  agent 발화 끝
+   220.38s  user  발화 시작: It’s hard when you’re used to planning everything.
+   222.69s  agent 발화 시작: I understand. Small steps, remember? One spontaneous thing a
+   222.83s  user  발화 끝
+   227.31s  agent 발화 끝
+   227.47s  user  발화 시작: That sounds…manageable.
+   229.59s  agent 발화 시작: Exactly. What’s one small spontaneous thing you could do tod
+   229.82s  user  발화 끝
+   233.94s  agent 발화 끝
+   233.95s  user  발화 시작: Hmm… I don’t know. Maybe try a new café.
+   235.88s  agent 발화 시작: Yeah, yeah.
+   236.80s  agent 발화 끝
+   237.76s  <ret> 발화 (turn78 첫 프레임)
+   237.84s  user  발화 끝
+   238.03s  agent 발화 시작: <ret> There’s a popular café in Sydney—The Grounds of Alexan
+   238.97s  ⚡SPAN 주입 [d'=1.21s / d_lead=6.76s]: The Grounds of Alexandria is a popular Sydney café known for its garde
+   241.81s  user  발화 시작: Mhm.
+   242.44s  user  발화 끝
+   244.79s  agent 발화 끝
+   244.85s  user  발화 시작: I’ve heard of that place. It looks lovely.
+   247.58s  agent 발화 시작: It is! A nice place for a treat.
+   247.71s  user  발화 끝
+   249.14s  user  발화 시작: Mm-hmm.
+   249.77s  user  발화 끝
+   250.35s  agent 발화 끝
+   250.61s  user  발화 시작: I’m also thinking of getting my hair cut.
+   253.04s  agent 발화 시작: A fresh haircut can be very uplifting.
+   253.16s  user  발화 끝
+   255.62s  agent 발화 끝
+   255.91s  user  발화 시작: I've been meaning to for weeks.
+   257.62s  agent 발화 시작: Perhaps today is the day?
+   257.76s  user  발화 끝
+   259.23s  agent 발화 끝
+   260.48s  user  발화 시작: Maybe. I need to find a good salon.
+   262.11s  <ret> 발화 (turn88 첫 프레임)
+   263.52s  ⚡SPAN 주입 [d'=1.41s / d_lead=7.32s]: Hairhaus Sydney offers a range of hair services, with colour specialis
+   263.53s  user  발화 끝
+   263.57s  agent 발화 시작: <ret> Hairhaus Sydney offers a range of hair services, with 
+   266.32s  user  발화 시작: Yeah.
+   266.99s  user  발화 끝
+   270.89s  agent 발화 끝
+   271.80s  user  발화 시작: That sounds promising.
+   273.31s  agent 발화 시작: They have excellent reviews online.
+   273.55s  user  발화 끝
+   275.62s  agent 발화 끝
+   276.04s  user  발화 시작: I’ll look them up.
+   277.22s  agent 발화 시작: Wonderful. It’s good to prioritize self-care, Iris.
+   277.28s  user  발화 끝
+   278.87s  user  발화 시작: Mm-hmm.
+   279.36s  user  발화 끝
+   281.20s  agent 발화 끝
+   283.41s  user  발화 시작: I’m trying. It’s just…life gets in the way.
+   286.56s  user  발화 끝
+   286.59s  agent 발화 시작: Life often does. But making time for yourself is essential.
+   289.01s  user  발화 시작: Right.
+   289.83s  user  발화 끝
+   290.57s  agent 발화 끝
+   291.07s  user  발화 시작: You’re right.
+   291.88s  user  발화 끝
+   292.00s  agent 발화 시작: How are you feeling about the interview now?
+   294.08s  agent 발화 끝
+   294.17s  user  발화 시작: Still nervous, but a little better.
+   296.17s  agent 발화 시작: That’s progress. Remember to breathe and be yourself.
+   296.39s  user  발화 끝
+   297.99s  user  발화 시작: Yeah.
+   298.49s  user  발화 끝
+   299.47s  user  발화 시작: Easier said than done.
+   299.50s  agent 발화 끝
+   300.92s  agent 발화 시작: [happy] I know. But you’ve got this.
+   301.07s  user  발화 끝
+   302.90s  agent 발화 끝
+   303.42s  user  발화 시작: What time did I say that interview was again?
+   306.14s  user  발화 끝
+   306.37s  agent 발화 시작: You said the interview is on August 20th at 8:15 AM.
+   309.25s  user  발화 시작: Uh-huh.
+   309.70s  user  발화 끝
+   310.63s  user  발화 시작: Right, thanks. I always forget.
+   310.68s  agent 발화 끝
+   312.94s  agent 발화 시작: It’s perfectly natural to forget details.
+   313.17s  user  발화 끝
+   315.86s  agent 발화 끝
+   316.75s  user  발화 시작: I’m trying to remember to write things down.
+   319.61s  user  발화 끝
+   319.80s  agent 발화 시작: That’s a great habit. A little notebook can be very helpful.
+   321.56s  user  발화 시작: Okay.
+   322.19s  user  발화 끝
+   323.40s  agent 발화 끝
+   324.00s  user  발화 시작: I should probably get back to my story.
+   326.21s  agent 발화 시작: Excellent. Even a few minutes of writing can make a differen
+   326.49s  user  발화 끝
+   328.66s  user  발화 시작: Right.
+   329.29s  user  발화 끝
+   330.24s  agent 발화 끝
+   330.47s  user  발화 시작: I was thinking maybe the penguin could meet a seal.
+   332.48s  agent 발화 시작: Mhm.
+   333.12s  agent 발화 끝
+   333.52s  user  발화 끝
+   333.92s  agent 발화 시작: That’s a lovely idea! A new friend.
+   334.99s  user  발화 시작: Yeah.
+   335.48s  user  발화 끝
+   336.67s  user  발화 시작: And the seal could help him find his way home.
+   336.78s  agent 발화 끝
+   337.79s  agent 발화 시작: Yeah.
+   338.62s  agent 발화 끝
+   339.25s  user  발화 끝
+   339.35s  agent 발화 시작: A perfect partnership.
+   340.73s  agent 발화 끝
+   341.29s  user  발화 시작: What was the price of that practice session?
+   343.79s  agent 발화 시작: You mentioned paying 150 Australian dollars for the practice
+   343.83s  user  발화 끝
+   345.42s  user  발화 시작: Yeah.
+   345.91s  user  발화 끝
+   348.09s  agent 발화 끝
+   348.73s  user  발화 시작: Oh yes, that's right.
+   350.66s  user  발화 끝
+   351.03s  agent 발화 시작: I’m glad you’re preparing.
+   352.43s  user  발화 시작: It's good to be prepared.
+   352.54s  agent 발화 끝
+   353.99s  user  발화 끝
+   354.26s  agent 발화 시작: Is there anything else I can help you with today?
+   355.51s  user  발화 시작: Yeah.
+   356.15s  user  발화 끝
+   356.66s  agent 발화 끝
+   357.98s  user  발화 시작: Not right now, I think. Just talking it through has helped.
+   362.23s  agent 발화 시작: [happy] That’s wonderful to hear, Iris. I'm glad I could off
+   362.33s  user  발화 끝
+   368.58s  agent 발화 끝
+   368.86s  user  발화 시작: I will. Thank you, Dix.
+   370.94s  user  발화 끝
+   371.30s  agent 발화 시작: You’re very welcome. Have a lovely day.
+   373.61s  agent 발화 끝

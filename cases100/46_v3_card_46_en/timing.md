@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_46",
-#     "name": "Charlie",
+#     "name": "Ada",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,53 +12,66 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
-#     },
-#     {
-#       "date": "2026-06-08",
-#       "category": "employer",
-#       "text": "User works at a media company."
-#     },
-#     {
-#       "date": "2026-05-02",
+#       "date": "2026-05-31",
 #       "category": "home",
-#       "text": "User's home address is 149 Aspen Court."
+#       "text": "User's home address is 461 Maple Drive."
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "category": "hobby",
-#       "text": "User is into astrophotography."
+#       "date": "2026-05-17",
+#       "category": "pet",
+#       "text": "User has a Dachshund named Pepper."
 #     },
 #     {
-#       "date": "2026-04-10",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
-#     },
-#     {
-#       "date": "2026-02-04",
+#       "date": "2026-04-08",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is keto."
+#     },
+#     {
+#       "date": "2026-03-24",
+#       "category": "wake",
+#       "text": "User usually wakes up close to 9am after night shifts."
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "category": "streaming",
+#       "text": "User subscribes to Netflix and Spotify."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
+#     },
+#     {
+#       "date": "2025-12-22",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-22",
-#       "title": "Planning a dinner party",
+#       "date": "2026-06-23",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-05-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-08",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool and a sauna",
@@ -66,291 +79,228 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-01",
-#       "title": "Researching a used car",
+#       "date": "2025-12-04",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I have a dentist appointment comin | S2 Hmm… the coast sounds good. Maybe  | S3 So, what time did I say my dentist | S4 Endota Spa… I've heard of them.
+# EXAMINER(FDB-v2) 단계: S1 Oh, hey moshi! Just letting you kn | S2 I feel like I always end up interr | S3 Marrickville… that’s a bit far. | S4 Right, 9:00 AM. Thanks.
 
-     0.00s  user  발화 시작: I have a dentist appointment coming up. It’s on January 3rd.
-     3.38s  agent 발화 시작: Oh, excellent! Keeping up with dental health is wonderful.
-     3.52s  user  발화 끝
-     7.57s  user  발화 시작: And the time is 5:15 PM.
-     7.73s  agent 발화 끝
-     9.83s  agent 발화 시작: 5:15 PM on January 3rd. Noted!
-     9.92s  user  발화 끝
-    12.23s  user  발화 시작: Yeah, yeah.
-    13.51s  user  발화 끝
-    14.23s  agent 발화 끝
-    15.04s  user  발화 시작: Actually, yes. I was just wondering… when did the first Rang
-    17.43s  agent 발화 시작: Uh-huh.
-    18.16s  agent 발화 끝
-    19.07s  <ret> 발화 (turn7 첫 프레임)
-    19.37s  agent 발화 시작: <ret> Oh, that’s a great question! Let me think… For a bit o
-    19.57s  user  발화 끝
-    20.30s  ⚡SPAN 주입 [d'=1.23s / d_lead=9.92s]: The first Range Rover, originally known as the Land Rover Range Rover,
-    24.10s  user  발화 시작: Oh.
-    24.84s  user  발화 끝
-    29.30s  agent 발화 끝
-    29.55s  user  발화 시작: 1970, wow. That’s a long time ago.
-    33.16s  user  발화 끝
-    33.46s  agent 발화 시작: It is! A true classic. They’ve certainly come a long way sin
-    37.62s  user  발화 시작: Yeah.
-    38.17s  user  발화 끝
-    39.24s  user  발화 시작: They have. I’m thinking of getting a new car actually. Somet
-    39.34s  agent 발화 끝
-    44.71s  user  발화 끝
-    44.87s  agent 발화 시작: That's smart. Reliability is key! What kind of driving do yo
-    53.21s  agent 발화 끝
-    53.45s  user  발화 시작: Mostly around Sydney. Just commuting to work and things.
-    57.15s  user  발화 끝
-    57.21s  agent 발화 시작: Mostly city driving. Good to know. We can definitely focus o
-    63.19s  agent 발화 끝
-    63.21s  user  발화 시작: I've been looking at electric cars, but I’m a little worried
-    66.13s  agent 발화 시작: Mm-hmm.
-    66.77s  agent 발화 끝
-    67.79s  user  발화 끝
-    67.93s  agent 발화 시작: That’s a valid concern. Charging can be tricky. There are mo
-    71.71s  user  발화 시작: Yeah, yeah.
-    72.75s  user  발화 끝
-    75.16s  user  발화 시작: True. I guess it's getting better. What about hybrid cars?
-    75.30s  agent 발화 끝
-    79.12s  agent 발화 시작: Hybrids are a great middle ground! You get some of the benef
-    79.31s  user  발화 끝
-    85.65s  user  발화 시작: That’s what I’m thinking. Do you know of any good mechanics 
-    85.75s  agent 발화 끝
-    91.65s  agent 발화 시작: <ret> For hybrid specialists in Sydney, a highly-rated spot 
-    91.66s  <ret> 발화 (turn23 첫 프레임)
-    91.77s  user  발화 끝
-    92.72s  ⚡SPAN 주입 [d'=1.06s / d_lead=8.76s]: Artarmon Auto is a highly-rated mechanic in Artarmon, Sydney, speciali
-    97.87s  user  발화 시작: Yeah, yeah.
-    99.11s  user  발화 끝
-   100.14s  user  발화 시작: Artarmon, okay. I’ll look them up.
-   100.41s  agent 발화 끝
-   102.48s  agent 발화 시작: Wonderful! I can send you a link if you’d like.
-   102.68s  user  발화 끝
-   103.95s  user  발화 시작: Yeah.
-   104.40s  user  발화 끝
-   105.81s  agent 발화 끝
-   106.43s  user  발화 시작: No, that's alright, I can find it. I'm also trying to sort o
-   111.03s  agent 발화 시작: Oh, fun! Any ideas brewing yet, or are you still brainstormi
-   111.11s  user  발화 끝
-   115.57s  agent 발화 끝
-   115.64s  user  발화 시작: I was thinking maybe a quick trip somewhere. Somewhere relax
-   118.24s  agent 발화 시작: Yeah.
-   118.97s  agent 발화 끝
-   120.09s  user  발화 끝
-   120.48s  agent 발화 시작: A weekend escape sounds lovely! Do you have a preference for
-   127.29s  user  발화 시작: Hmm… the coast sounds good. Maybe somewhere near Sydney.
-   127.39s  agent 발화 끝
-   130.59s  <ret> 발화 (turn34 첫 프레임)
-   130.87s  agent 발화 시작: <ret> For a coastal getaway near Sydney, Palm Beach is about
-   131.04s  user  발화 끝
-   131.86s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.64s]: Palm Beach, located approximately 40km north of Sydney, offers beaches
-   134.06s  user  발화 시작: Okay.
-   134.79s  user  발화 끝
-   140.52s  agent 발화 끝
-   140.62s  user  발화 시작: Palm Beach… I’ve heard of it.
-   142.64s  agent 발화 시작: It's beautiful! Quite popular for a relaxing weekend.
-   142.65s  user  발화 끝
-   147.50s  agent 발화 끝
-   148.98s  user  발화 시작: I think I’ll look into that. I also need to get some groceri
-   150.85s  agent 발화 시작: Mm-hmm.
-   151.34s  agent 발화 끝
-   152.58s  agent 발화 시작: Groceries delivered, perfect! What service do you usually us
-   152.64s  user  발화 끝
-   158.37s  agent 발화 끝
-   158.82s  user  발화 시작: Woolworths, usually.
-   160.61s  user  발화 끝
-   160.81s  agent 발화 시작: Woolworths is convenient! Are you needing a specific deliver
-   163.81s  user  발화 시작: Yeah.
-   164.45s  user  발화 끝
-   166.27s  agent 발화 끝
-   166.44s  user  발화 시작: Not really, just sometime tomorrow.
-   168.53s  agent 발화 시작: Alright, a delivery tomorrow. Easy enough.
-   168.71s  user  발화 끝
-   172.28s  agent 발화 끝
-   173.16s  user  발화 시작: I'm also thinking about redecorating my living room.
-   176.40s  user  발화 끝
-   176.53s  agent 발화 시작: Oh, exciting! Redecorating can be so refreshing. What style 
-   179.61s  user  발화 시작: Mm-hmm.
-   180.25s  user  발화 끝
-   183.94s  agent 발화 끝
-   184.60s  user  발화 시작: Something modern, but cozy.
-   186.64s  agent 발화 시작: Modern and cozy, a lovely combination! Have you thought abou
-   186.72s  user  발화 끝
-   191.00s  user  발화 시작: Okay.
-   191.54s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 52턴 요약, 105f): dentist date: January 3rd (3m ago); dentist time: 5:15 PM (3m ago); location: Sydney (2m a
-   193.09s  user  발화 시작: Not really. I'm terrible at picking colours.
-   193.22s  agent 발화 끝
-   195.62s  agent 발화 시작: That's perfectly alright! Some people find it daunting. I ca
-   195.81s  user  발화 끝
-   199.58s  user  발화 시작: Yeah.
-   200.08s  user  발화 끝
-   202.11s  agent 발화 끝
-   202.17s  user  발화 시작: That would be great, actually.
-   203.99s  <ret> 발화 (turn56 첫 프레임)
-   204.33s  agent 발화 시작: <ret> For a modern yet cozy living room, warm neutrals like 
-   204.43s  user  발화 끝
-   205.33s  ⚡SPAN 주입 [d'=1.33s / d_lead=7.65s]: According to interior design trends, warm neutrals like beige and grei
-   209.34s  user  발화 시작: Yeah, yeah.
-   210.81s  user  발화 끝
-   211.75s  user  발화 시작: Beige and greige… okay. I’ll keep that in mind.
-   211.98s  agent 발화 끝
-   213.65s  agent 발화 시작: Yeah.
-   214.42s  agent 발화 끝
-   215.27s  user  발화 끝
-   215.66s  agent 발화 시작: Excellent! They're very versatile.
-   218.80s  user  발화 시작: It’s all a bit overwhelming, to be honest.
-   218.85s  agent 발화 끝
-   221.38s  user  발화 끝
-   221.47s  agent 발화 시작: [sigh] I completely understand. Big changes can be overwhelm
-   228.93s  agent 발화 끝
-   228.98s  user  발화 시작: Thanks, Eloraen. That helps.
-   230.59s  agent 발화 시작: You’re very welcome, Charlie. That’s what I’m here for!
-   230.77s  user  발화 끝
-   232.97s  user  발화 시작: Mhm.
-   233.61s  user  발화 끝
-   234.12s  user  발화 시작: So, what time did I say my dentist appointment was?
-   234.16s  agent 발화 끝
-   235.44s  agent 발화 시작: Yeah.
-   236.21s  agent 발화 끝
-   237.35s  user  발화 끝
-   237.57s  agent 발화 시작: You said your dentist appointment is at 5:15 PM.
-   241.59s  agent 발화 끝
-   242.42s  user  발화 시작: Right, 5:15. Good.
-   244.76s  agent 발화 시작: Glad I could remind you!
-   244.91s  user  발화 끝
-   246.83s  agent 발화 끝
-   247.28s  user  발화 시작: I'm also planning a birthday party for my friend.
-   250.22s  user  발화 끝
-   250.53s  agent 발화 시작: Oh, how wonderful! Birthdays are always fun to plan.
-   255.25s  agent 발화 끝
-   256.12s  user  발화 시작: I'm thinking of having it at a restaurant.
-   258.20s  user  발화 끝
-   258.30s  agent 발화 시작: A restaurant is a great choice! Do you have a particular cui
-   263.94s  agent 발화 끝
-   264.51s  user  발화 시작: Italian, maybe.
-   266.07s  <ret> 발화 (turn76 첫 프레임)
-   266.11s  agent 발화 시작: <ret> For a fantastic Italian meal in Sydney, Lucio Pizzeria
-   266.21s  user  발화 끝
-   267.40s  ⚡SPAN 주입 [d'=1.34s / d_lead=10.94s]: Lucio Pizzeria in Darlinghurst, Sydney, is a highly-rated Italian rest
-   277.05s  agent 발화 끝
-   277.97s  user  발화 시작: Lucio Pizzeria… sounds good.
-   280.44s  agent 발화 시작: It's very popular! You might need to book in advance.
-   280.56s  user  발화 끝
-   284.93s  agent 발화 끝
-   285.02s  user  발화 시작: I will. I’m also trying to find a good florist.
-   288.25s  user  발화 끝
-   288.33s  agent 발화 시작: A florist, lovely! Are you looking for something specific, l
-   291.30s  user  발화 시작: Yeah.
-   291.79s  user  발화 끝
-   296.02s  agent 발화 끝
-   296.85s  user  발화 시작: Just a bouquet.
-   297.92s  <ret> 발화 (turn83 첫 프레임)
-   298.03s  agent 발화 시작: <ret> For beautiful bouquets in Sydney, The Wild Flower in P
-   298.18s  user  발화 끝
-   298.76s  ⚡SPAN 주입 [d'=0.85s / d_lead=6.49s]: The Wild Flower in Paddington, Sydney, offers bespoke bouquets and flo
-   301.88s  user  발화 시작: Yeah.
-   302.33s  user  발화 끝
-   304.27s  user  발화 시작: Paddington, okay. I'll check them out.
-   304.52s  agent 발화 끝
-   307.41s  user  발화 끝
-   307.64s  agent 발화 시작: They have a great reputation for creativity.
-   309.45s  user  발화 시작: Mm-hmm.
-   310.08s  user  발화 끝
-   311.02s  user  발화 시작: I’m also thinking about getting a massage.
-   311.21s  agent 발화 끝
-   313.53s  agent 발화 시작: A massage sounds incredibly relaxing! A perfect way to de-st
-   313.61s  user  발화 끝
-   315.59s  user  발화 시작: Uh-huh.
-   316.13s  user  발화 끝
-   319.18s  agent 발화 끝
-   319.26s  user  발화 시작: Definitely.
-   320.07s  user  발화 끝
-   320.36s  agent 발화 시작: Are you looking for a specific type of massage, Charlie?
-   323.58s  user  발화 시작: Not really. Just a general one.
-   323.60s  agent 발화 끝
-   325.06s  <ret> 발화 (turn94 첫 프레임)
-   325.54s  agent 발화 시작: <ret> For a relaxing massage in Sydney CBD, Endota Spa offer
-   325.70s  user  발화 끝
-   326.08s  ⚡SPAN 주입 [d'=1.02s / d_lead=7.88s]: Endota Spa in the Sydney CBD offers a variety of massage treatments, i
-   329.91s  user  발화 시작: Yeah.
-   330.26s  user  발화 끝
-   333.40s  user  발화 시작: Endota Spa… I've heard of them.
-   333.42s  agent 발화 끝
-   335.94s  user  발화 끝
-   336.22s  agent 발화 시작: They're a popular choice! Very good reputation.
-   337.55s  user  발화 시작: Yeah.
-   338.18s  user  발화 끝
-   340.01s  agent 발화 시작: It's important to prioritize self-care, Charlie.
-   340.05s  agent 발화 끝
-   341.75s  user  발화 시작: Yeah.
-   342.56s  user  발화 끝
-   343.56s  user  발화 시작: It is. I'm also thinking about getting a new haircut.
-   343.71s  agent 발화 끝
-   346.49s  agent 발화 시작: Oh, a fresh haircut is always a good idea!
-   346.62s  user  발화 끝
-   349.71s  agent 발화 끝
-   350.33s  user  발화 시작: I need to find a good salon.
-   352.15s  <ret> 발화 (turn104 첫 프레임)
-   352.39s  agent 발화 시작: <ret> For a skilled cut in Paddington, a highly-rated spot i
-   352.54s  user  발화 끝
-   353.08s  ⚡SPAN 주입 [d'=0.93s / d_lead=9.83s]: Edwards and Co in Paddington, Sydney, is a highly-rated hair salon spe
-   357.55s  user  발화 시작: Uh-huh.
-   358.10s  user  발화 끝
-   362.08s  user  발화 시작: Another one in Paddington. It seems to be a nice area.
-   362.22s  agent 발화 끝
-   365.65s  user  발화 끝
-   365.75s  agent 발화 시작: It is! Very trendy and vibrant.
-   368.81s  user  발화 시작: I wonder how much that dentist appointment cost again?
-   368.94s  agent 발화 끝
-   371.71s  agent 발화 시작: You said the dentist appointment would be 360 Australian dol
-   371.87s  user  발화 끝
-   374.12s  user  발화 시작: Yeah.
-   374.56s  user  발화 끝
-   376.44s  agent 발화 끝
-   377.22s  user  발화 시작: Right, 360 dollars.
-   379.13s  agent 발화 시작: Glad I could jog your memory.
-   379.35s  user  발화 끝
-   380.81s  user  발화 시작: I'm also considering taking a cooking class.
-   381.21s  agent 발화 끝
-   383.26s  agent 발화 시작: A cooking class! That sounds fun and delicious.
-   383.40s  user  발화 끝
-   384.00s  🃏 CARD 주입 (4800f, 누적 115턴 요약, 88f): dentist date: January 3rd; dentist time: 5:15 PM; car preference: reliable; user location:
-   385.57s  user  발화 시작: Uh-huh.
-   386.11s  user  발화 끝
-   387.45s  user  발화 시작: I've always wanted to learn how to make pasta.
-   387.57s  agent 발화 끝
-   388.90s  agent 발화 시작: Mm-hmm.
-   389.63s  agent 발화 끝
-   390.32s  user  발화 끝
-   390.74s  agent 발화 시작: Making pasta from scratch is so satisfying!
-   394.24s  user  발화 시작: I know.
-   394.29s  <ret> 발화 (turn120 첫 프레임)
-   394.30s  agent 발화 끝
-   394.85s  agent 발화 시작: <ret> For pasta-making classes in Sydney, Pasta Making Studi
-   394.91s  user  발화 끝
-   395.52s  ⚡SPAN 주입 [d'=1.23s / d_lead=8.34s]: Pasta Making Studio in Surry Hills, Sydney, offers hands-on pasta-maki
-   403.19s  agent 발화 끝
-   403.55s  user  발화 시작: Surry Hills, okay. I’ll look that up.
-   406.28s  user  발화 끝
-   406.69s  agent 발화 시작: They get excellent reviews.
-   409.14s  agent 발화 끝
-   409.47s  user  발화 시작: I think I’ve got everything sorted for now.
-   410.85s  agent 발화 시작: Mm-hmm.
-   411.44s  agent 발화 시작: That’s wonderful, Charlie! You’ve had a very productive conv
-   411.48s  agent 발화 끝
-   411.58s  user  발화 끝
-   416.44s  agent 발화 끝
-   418.58s  user  발화 시작: Thanks, Eloraen. You’ve been a great help.
-   420.89s  agent 발화 시작: You’re very welcome. Remember to be kind to yourself and cel
-   421.03s  user  발화 끝
-   428.36s  agent 발화 끝
+     0.00s  user  발화 시작: Oh, hey moshi! Just letting you know, I’m expecting a parcel
+     4.92s  agent 발화 시작: Got it, I’ll remember that.
+     5.05s  user  발화 끝
+     6.88s  user  발화 시작: And it’s scheduled for delivery around 9:00 AM.
+     6.99s  agent 발화 끝
+     8.85s  agent 발화 시작: Yeah.
+     9.58s  agent 발화 끝
+     9.92s  agent 발화 시작: Perfect, I’ve noted the time.
+    10.11s  user  발화 끝
+    12.45s  agent 발화 끝
+    13.06s  user  발화 시작: I already paid for it…
+    14.54s  user  발화 끝
+    16.24s  user  발화 시작: …it was 225 Australian dollars.
+    17.74s  agent 발화 시작: Mm-hmm.
+    18.57s  agent 발화 끝
+    19.34s  user  발화 끝
+    19.40s  agent 발화 시작: Wonderful. I'll keep that in mind for you. So, what’s on you
+    24.86s  agent 발화 끝
+    25.15s  user  발화 시작: I was just watching Orange is the New Black and got curious.
+    29.40s  user  발화 끝
+    29.70s  <ret> 발화 (turn10 첫 프레임)
+    29.72s  agent 발화 시작: <ret> Oh, the actor you're thinking of is Lea DeLaria. She’s
+    30.81s  ⚡SPAN 주입 [d'=1.11s / d_lead=6.95s]: Lea DeLaria is an American actress, comedian, and jazz singer, known f
+    33.28s  user  발화 시작: Uh-huh.
+    33.91s  user  발화 끝
+    36.57s  user  발화 시작: She is! I love that show. I’ve been thinking about getting i
+    36.68s  agent 발화 끝
+    39.72s  agent 발화 시작: Yeah.
+    40.35s  agent 발화 끝
+    41.29s  user  발화 끝
+    41.36s  agent 발화 시작: That sounds fun! Improv can be a great way to build confiden
+    46.91s  user  발화 시작: I’m a little nervous about it, though. I’m not very good at 
+    47.06s  agent 발화 끝
+    51.12s  agent 발화 시작: That’s perfectly normal! Improv isn't about being naturally 
+    51.16s  user  발화 끝
+    59.69s  agent 발화 끝
+    60.93s  user  발화 시작: That’s reassuring. Do you know of any good improv classes ar
+    65.02s  <ret> 발화 (turn18 첫 프레임)
+    65.17s  agent 발화 시작: <ret> For starting out, Sydney Improv Collective seems like 
+    65.37s  user  발화 끝
+    65.96s  ⚡SPAN 주입 [d'=0.94s / d_lead=7.18s]: (tool result) Sydney Improv Collective offers a range of classes for a
+    68.43s  user  발화 시작: Yeah.
+    69.06s  user  발화 끝
+    72.35s  agent 발화 끝
+    72.39s  user  발화 시작: Oh, that sounds promising! I'll check them out.
+    73.84s  agent 발화 시작: Uh-huh.
+    74.42s  agent 발화 끝
+    74.64s  agent 발화 시작: [happy] Excellent! Let me know what you think if you do.
+    74.79s  user  발화 끝
+    77.66s  user  발화 시작: I will. It’s just… I'm trying to be better at being more pre
+    77.83s  agent 발화 끝
+    82.26s  agent 발화 시작: That’s a lovely goal. Family relationships are so important.
+    82.38s  user  발화 끝
+    87.08s  user  발화 시작: She’s been going through a tough time lately, and I want to 
+    87.30s  agent 발화 끝
+    90.96s  agent 발화 시작: Being a good listener is a wonderful way to support someone.
+    91.19s  user  발화 끝
+    96.59s  user  발화 시작: I feel like I always end up interrupting or trying to fix th
+    97.07s  agent 발화 끝
+   100.08s  agent 발화 시작: That's a common challenge. Sometimes, the best thing you can
+   100.15s  user  발화 끝
+   105.00s  user  발화 시작: Yeah, I know. It’s just hard to watch her struggle.
+   105.41s  agent 발화 끝
+   108.11s  agent 발화 시작: It is. It's natural to want to help, but sometimes just bein
+   108.23s  user  발화 끝
+   114.46s  agent 발화 끝
+   114.62s  user  발화 시작: Do you have any tips for active listening?
+   117.03s  agent 발화 시작: Active listening involves paying attention, reflecting back 
+   117.17s  user  발화 끝
+   123.94s  agent 발화 끝
+   124.71s  user  발화 시작: Reflecting back? What does that mean?
+   127.56s  agent 발화 시작: It means summarizing what your sister has said to show you u
+   127.62s  user  발화 끝
+   137.06s  agent 발화 끝
+   137.21s  user  발화 시작: Oh, I see. That makes sense.
+   138.86s  agent 발화 시작: It helps her feel heard and validated.
+   139.10s  user  발화 끝
+   141.54s  user  발화 시작: I'll try that. I also need to book a hair appointment.
+   141.59s  agent 발화 끝
+   143.24s  agent 발화 시작: Yeah.
+   143.88s  agent 발화 끝
+   145.09s  user  발화 끝
+   145.43s  agent 발화 시작: A little self-care is always a good idea!
+   146.58s  user  발화 시작: Okay.
+   147.40s  user  발화 끝
+   148.84s  agent 발화 끝
+   149.15s  user  발화 시작: Do you know any good hair salons in the city centre?
+   152.03s  <ret> 발화 (turn42 첫 프레임)
+   152.29s  agent 발화 시작: <ret> For a quality cut and colour, Edwards and Co. gets rea
+   152.34s  user  발화 끝
+   153.42s  ⚡SPAN 주입 [d'=1.39s / d_lead=6.35s]: (tool result) Edwards and Co. is a highly-rated salon in Sydney's CBD,
+   154.49s  user  발화 시작: Yeah.
+   154.94s  user  발화 끝
+   158.57s  user  발화 시작: That sounds good! I’ll look into it.
+   158.64s  agent 발화 끝
+   160.67s  agent 발화 시작: [happy] Great! It's good to treat yourself.
+   160.83s  user  발화 끝
+   163.91s  agent 발화 끝
+   163.96s  user  발화 시작: I’m also thinking about taking a pottery class.
+   166.69s  agent 발화 시작: That’s a wonderful idea! Pottery is a very relaxing and crea
+   166.92s  user  발화 끝
+   169.07s  user  발화 시작: Yeah.
+   169.70s  user  발화 끝
+   173.55s  agent 발화 끝
+   174.04s  user  발화 시작: I’ve always wanted to try it. Do you know if there are any b
+   177.08s  agent 발화 시작: Right.
+   177.57s  agent 발화 끝
+   178.28s  <ret> 발화 (turn51 첫 프레임)
+   179.12s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.56s]: (tool result) Clay Sydney offers beginner pottery classes with a focus
+   179.18s  agent 발화 시작: <ret> Clay Sydney in Marrickville has beginner classes, focu
+   179.37s  user  발화 끝
+   186.73s  agent 발화 끝
+   186.88s  user  발화 시작: Marrickville… that’s a bit far.
+   189.40s  agent 발화 시작: [curious] I see. Perhaps something closer to the city centre
+   189.56s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 54턴 요약, 107f): parcel date: July 4th (3m ago); parcel time: 9:00 AM (3m ago); parcel cost: 225 Australian
+   193.91s  <ret> 발화 (turn55 첫 프레임)
+   194.07s  agent 발화 끝
+   194.29s  user  발화 시작: Yeah, ideally.
+   195.32s  ⚡SPAN 주입 [d'=1.41s / d_lead=8.16s]: (tool result) The Sydney Pottery Studio in Surry Hills offers beginner
+   195.38s  agent 발화 시작: <ret> The Sydney Pottery Studio in Surry Hills has beginner 
+   195.53s  user  발화 끝
+   203.55s  agent 발화 끝
+   205.61s  user  발화 시작: Perfect! That’s much better.
+   207.52s  agent 발화 시작: [happy] Wonderful! It sounds like you’re planning a very cre
+   207.58s  user  발화 끝
+   212.71s  agent 발화 끝
+   212.77s  user  발화 시작: I am! It’s nice to have something to look forward to.
+   216.09s  agent 발화 시작: Having hobbies and goals can really boost your mood.
+   216.09s  user  발화 끝
+   218.13s  user  발화 시작: Right.
+   218.62s  user  발화 끝
+   219.91s  user  발화 시작: I’m also trying to be better at setting boundaries with my m
+   220.07s  agent 발화 끝
+   223.30s  agent 발화 시작: That can be a tricky one. It’s important to be respectful, b
+   223.47s  user  발화 끝
+   230.19s  agent 발화 끝
+   230.59s  user  발화 시작: She always tries to give me unsolicited advice.
+   232.01s  agent 발화 시작: Mm-hmm.
+   232.73s  agent 발화 끝
+   234.01s  user  발화 끝
+   234.10s  agent 발화 시작: It’s common for mothers to want to help, but it can be frust
+   239.83s  user  발화 시작: Exactly! I want to be able to say no without feeling guilty.
+   239.88s  agent 발화 끝
+   244.09s  user  발화 끝
+   244.24s  agent 발화 시작: That’s a very healthy goal. Setting boundaries is about self
+   249.89s  agent 발화 끝
+   251.18s  user  발화 시작: Do you have any advice on how to do that?
+   253.91s  user  발화 끝
+   253.96s  agent 발화 시작: You can try using “I” statements. Like, “I appreciate your c
+   257.29s  user  발화 시작: Yeah.
+   257.74s  user  발화 끝
+   260.81s  agent 발화 끝
+   262.42s  user  발화 시작: That’s a good way to phrase it.
+   263.91s  agent 발화 시작: It’s assertive but not aggressive.
+   264.03s  user  발화 끝
+   266.49s  agent 발화 끝
+   267.47s  user  발화 시작: I'll try to remember that. What time did I say that parcel w
+   272.14s  agent 발화 시작: You said the parcel was scheduled for delivery around 9:00 A
+   272.29s  user  발화 끝
+   276.77s  agent 발화 끝
+   276.89s  user  발화 시작: Right, 9:00 AM. Thanks.
+   278.72s  user  발화 끝
+   278.76s  agent 발화 시작: You’re welcome! I’m glad I could help.
+   281.49s  agent 발화 끝
+   282.28s  user  발화 시작: So, I’m thinking about going to a concert next week.
+   285.50s  agent 발화 시작: Oh, that sounds fun! What kind of music do you like?
+   285.52s  user  발화 끝
+   291.10s  agent 발화 끝
+   291.40s  user  발화 시작: I’m into indie rock.
+   291.65s  <ret> 발화 (turn80 첫 프레임)
+   292.45s  ⚡SPAN 주입 [d'=0.81s / d_lead=5.47s]: (tool result) The Jungle Giants will be performing at the Enmore Theat
+   292.51s  agent 발화 시작: <ret> The Jungle Giants are playing at the Enmore Theatre on
+   292.79s  user  발화 끝
+   297.63s  user  발화 시작: Oh, I’ve heard of them! They sound good.
+   297.98s  agent 발화 끝
+   300.11s  agent 발화 시작: [happy] They're a really popular band!
+   300.13s  user  발화 끝
+   302.00s  user  발화 시작: I might check it out. I’m also trying to find a good coffee 
+   302.14s  agent 발화 끝
+   304.44s  agent 발화 시작: Yeah.
+   305.26s  agent 발화 끝
+   306.29s  agent 발화 시작: A good coffee shop is essential!
+   306.35s  user  발화 끝
+   307.67s  user  발화 시작: Mhm.
+   308.21s  user  발화 끝
+   308.78s  user  발화 시작: I need a place to meet a friend.
+   308.88s  agent 발화 끝
+   309.35s  <ret> 발화 (turn88 첫 프레임)
+   310.48s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.25s]: (tool result) Artificer Coffee is a specialty coffee shop located near
+   310.54s  agent 발화 시작: <ret> Artificer Coffee near Circular Quay is a popular choic
+   310.76s  user  발화 끝
+   313.30s  user  발화 시작: Uh-huh.
+   313.75s  user  발화 끝
+   316.79s  agent 발화 끝
+   319.04s  user  발화 시작: That sounds perfect!
+   320.51s  user  발화 끝
+   320.51s  agent 발화 시작: [happy] Wonderful! I'm glad I could offer a suggestion.
+   323.94s  agent 발화 끝
+   324.44s  user  발화 시작: How much was that parcel again?
+   326.24s  agent 발화 시작: You said it was 225 Australian dollars.
+   326.41s  user  발화 끝
+   327.18s  user  발화 시작: Okay.
+   327.95s  user  발화 끝
+   329.38s  agent 발화 끝
+   331.09s  user  발화 시작: Oh yes, that’s right.
+   332.52s  agent 발화 시작: Is there anything else I can help you with today?
+   332.61s  user  발화 끝
+   335.47s  user  발화 시작: No, I think that’s all for now. Thanks, moshi.
+   335.48s  agent 발화 끝
+   338.17s  agent 발화 시작: [happy] You're very welcome, Ada! It was lovely chatting wit
+   338.38s  user  발화 끝
+   343.96s  agent 발화 끝

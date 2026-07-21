@@ -1,168 +1,187 @@
 v3_card_46_ko src=nq style=card_recall
-SYSTEM: <system> 당신은 베리로이며, 직장에서의 갈등 관리를 사람들을 돕는 부드럽고 통찰력 있는 책임 파트너입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 사람들의 일과 삶의 균형을 돕는 주의 깊고 정직한 습관 코치 비로입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 언급된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_46",
-    "name": "라서",
+    "name": "은서",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "early 40s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "car",
-      "text": "User drives a 2022 Volkswagen Golf."
+      "date": "2026-04-09",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 21°C."
     },
     {
-      "date": "2026-05-13",
-      "category": "medication",
-      "text": "User takes a vitamin D supplement."
+      "date": "2026-04-01",
+      "category": "music",
+      "text": "User likes listening to classical piano."
     },
     {
-      "date": "2026-04-26",
-      "category": "child",
-      "text": "User has a child named Rin, age 15."
-    },
-    {
-      "date": "2026-04-16",
-      "category": "airline",
-      "text": "User usually flies with Emirates."
-    },
-    {
-      "date": "2026-03-29",
-      "category": "commute",
-      "text": "User works from home."
-    },
-    {
-      "date": "2026-03-02",
-      "category": "wake",
-      "text": "User usually wakes up close to 9am after night shifts."
-    },
-    {
-      "date": "2025-12-25",
+      "date": "2026-03-05",
       "category": "learning",
-      "text": "User is studying for a driving test."
+      "text": "User is learning to play guitar."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "gym",
+      "text": "User has a gym membership near home."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "child",
+      "text": "User has a child named Sofia, age 8."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Peruvian."
     },
     {
       "date": "2025-12-10",
-      "category": "allergy",
-      "text": "User is allergic to eggs."
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "wake",
+      "text": "User usually wakes up at 5:30am for a run."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-29",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-16",
+      "title": "Adopting a rescue dog",
       "bullets": [
-        "party of six on the 14th",
-        "looking for outdoor seating with a vegetarian option"
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
       ]
     },
     {
-      "date": "2026-04-11",
-      "title": "Booking a Japan trip",
+      "date": "2026-06-15",
+      "title": "Looking for a therapist",
       "bullets": [
-        "5 nights in Kyoto and Osaka in October",
-        "wants a JR Pass and a ryokan for one night"
+        "prefers evening video sessions",
+        "wants someone who does CBT"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Booking a moving company",
+      "bullets": [
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "title": "Sorting out a visa",
+      "bullets": [
+        "applying for a working-holiday visa to Australia",
+        "asked about the bank-balance requirement"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] 다음 주에 건강검진 예약을 좀 하려고 하는데, 사월 이일 오후 여섯시 십오분에 가능한지 알아봐 주시겠어요?
-[  7.36s][moshi] 네, 알겠습니다. 건강검진 예약 확인을 도와드릴게요.
-[ 12.49s][user ] 그리고 검진 비용은 이만 오천원이었던 것 같아요.
-[ 15.18s][moshi] 네, 이만 오천원이라고 말씀하셨네요. 확인해 드릴게요.
-[ 20.05s][user ] 요즘 회사 일이 너무 바빠서 스트레스가 장난 아니에요. 주말에도 계속 일이 밀려 있어서…
-[ 25.75s][moshi] [sigh] 회사 일이 많이 힘드시군요. 주말까지 일하시는 건 정말 힘드실 텐데요. 혹시 스트레스 해소를 위해 특별히 하는 일이 있으신가요?
-[ 29.29s][user ] «backchannel» 아.
-[ 35.82s][user ] 글쎄요… 딱히 하는 건 없어요. 그냥 친구들 만나서 커피라도 마시면서 얘기하는 정도예요.
-[ 41.40s][moshi] 친구분들과의 만남은 좋은 방법이죠. 잠깐의 휴식과 대화가 스트레스 해소에 도움이 될 수 있어요.
-[ 44.79s][user ] «backchannel» 네.
-[ 48.75s][user ] 맞아요. 근데 요즘 친구들도 다들 바빠서 자주 만나기도 어려워졌어요.
-[ 52.73s][moshi] [curious] 그러시군요. 주변에 편하게 쉴 수 있는 공간이 있다면 좋겠지만… 혹시 서울에서 조용한 카페나 공원을 추천해 드릴까요?
-[ 61.52s][user ] 음… 서울에서 조용한 카페요? 좋은 생각이에요. 한번 알아봐 주세요.
-[ 64.63s][moshi] «backchannel» 예.
-[ 66.16s][moshi] ⟨ret@66.09s⟩ ⟦⚡SPAN@66.85s: Seoul Forest is a large park in Seongdong-gu, Seoul, South Korea, offering a variety of ecological, cultural, ⟧ 서울에서 조용한 카페를 찾으신다면, 서울숲 근처에 예쁜 카페들이 많이 있어요. 서울숲은 생태, 문화, 휴양 시설을 갖춘 넓은 공원입니다.
-[ 69.45s][user ] «backchannel» 네.
-[ 77.97s][user ] 서울숲 근처요? 거기는 처음 가보는데… 어떤 분위기인가요?
-[ 82.25s][moshi] 서울숲은 자연과 어우러진 분위기가 아주 좋아요. 산책로도 잘 되어 있고, 다양한 식물들을 구경할 수 있어요.
-[ 91.40s][user ] 듣기만 해도 힐링이 되는 것 같아요. 주말에 꼭 한번 가봐야겠어요.
-[ 95.58s][moshi] [happy] 그럼 주말에 서울숲에 방문하셔서 편안한 시간을 보내시길 바랍니다.
-[ 97.89s][user ] «backchannel» 아.
-[100.00s][user ] 아, 그런데 혹시 유성운석이 지구 표면에 떨어지면 뭐라고 부르는지 ⟨ret@104.12s⟩ 아세요?
-[104.28s][moshi] 유성운석이 지구 ⟦⚡SPAN@106.04s: A meteoroid that survives its passage through the Earth's atmosphere and impacts the Earth's surface is called⟧ 표면에 떨어지면 뭐라고 부르는지 궁금하시군요.
-[108.78s][moshi] 유성운석이 지구 대기를 통과해 지구 표면에 충돌하면 운석이라고 부릅니다.
-[111.42s][user ] «backchannel» 네.
-[115.08s][user ] 아, 운석이군요. 이름이 어렵네요.
-[117.56s][moshi] 이름이 조금 어렵긴 하죠. 하지만 운석은 우주에서 온 특별한 존재니까요.
-[123.60s][user ] 그러네요. 우주에서 온 특별한 존재라… 신기하네요.
-[127.22s][moshi] [surprised] 우주에 대한 호기심은 끝이 없죠. 혹시 우주 관련 다큐멘터리나 영화를 좋아하시나요?
-[132.98s][user ] 네, 우주 다큐멘터리 정말 좋아해요. 특히 코스모스는 정말 인상 깊었어요.
-[137.86s][moshi] 코스모스는 정말 유명하죠. 저도 한 번 봐야겠네요.
-[140.28s][user ] «backchannel» 네.
-[142.57s][user ] 강추합니다! 시간 되시면 꼭 보세요.
-[144.85s][moshi] 네, 시간 나면 꼭 보겠습니다. 혹시 다른 관심 분야가 있으신가요?
-[149.66s][user ] 음… 요즘은 요리에 관심이 좀 생겼어요.
-[153.13s][moshi] 요리에 관심이 생기셨군요. 어떤 요리를 만들어 보고 싶으신가요?
-[158.28s][user ] 특별히 정해둔 건 없는데… 간단한 파스타나 샐러드 같은 거요.
-[162.28s][moshi] 간단한 파스타나 샐러드는 집에서도 쉽게 만들 수 있죠. 레시피를 찾아드릴까요?
-[167.91s][user ] 네, 파스타 레시피 좀 ⟨ret@169.77s⟩ 찾아주세요.
-[170.20s][moshi] ⟦⚡SPAN@170.64s: Spaghetti aglio e olio is a classic Italian pasta dish made with garlic, olive oil, red pepper flakes, and par⟧ 간단한 파스타 레시피로는 스파게티 알리오 올리오가 있어요. 마늘, 올리브 오일, 페페론치노, 파슬리를 사용해서 만드는 클래식한 이탈리아 파스타 요리입니다.
-[182.01s][user ] 스파게티 알리오 올리오요? 맛있겠네요.
-[185.34s][moshi] 정말 맛있죠. 간단하면서도 풍미가 좋아서 많은 사람들이 좋아하는 요리입니다.
-[191.82s][user ] 재료는 얼마나 필요한가요?
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 43턴 · 128프레임 스팬
-          │ appointment time: 사월 이일 오후 여섯시 십오분; exam cost: 이만 오천원; preference documentary title: 코스모스; interest dish: 간단한 파스타나 샐러드
+[  0.00s][user ] 오늘 너무 피곤해서 아무것도 하기 싫어.
+[  2.41s][moshi] 힘든 하루였군요. 잠시 쉬면서 재충전하는 시간을 가지세요.
+[  5.92s][user ] «backchannel» 응.
+[  7.39s][user ] 다음 주 화요일에 병원 검진이 있는데, 오전 여덟시 십오분에 예약했어.
+[ 11.99s][moshi] 네, 기억해 둘게요.
+[ 13.75s][user ] 그리고 십일월 이십칠일 검진 비용은 구만 오천원이야.
+[ 17.11s][moshi] 네, 기억해 둘게요.
+[ 19.15s][user ] 모 파라가 런던 마라톤에서 몇 등 했는지 궁금해.
+[ 22.05s][moshi] ⟨ret@21.93s⟩ ⟦⚡SPAN@22.82s: Mo Farah finished third in the 2018 London Marathon, completing the race in 2:06:21.⟧ 이천십팔년 런던 마라톤에서 삼위를 했습니다. 기록은 두시간 육분 이십일초였습니다.
+[ 28.31s][user ] 와, 삼위면 정말 잘한 거네.
+[ 30.15s][moshi] 네, 정말 대단한 기록이죠.
+[ 32.48s][user ] 요즘 운동을 다시 시작하려고 하는데, 부싼에서 괜찮은 헬스장 추천해 줄 수 있어?
+[ 37.96s][moshi] ⟨ret@37.76s⟩ ⟦⚡SPAN@38.36s: Hayoung Fitness Busan is a popular gym located in Haeundae, Busan, offering a variety of fitness classes and e⟧ 해운대에 있는 하영 피트니스 부산이 인기가 많습니다. 다양한 피트니스 수업과 장비를 갖추고 있습니다.
+[ 45.42s][user ] 해운대는 좀 멀리 떨어져 있는데, 서면 근처에 있는 ⟨ret@48.98s⟩ 곳은 없을까?
+[ 49.54s][moshi] 서면에 있는 ⟦⚡SPAN@50.98s: BK Fitness Seomyeon is a well-regarded gym in Seomyeon, Busan, known for its personal training services and mo⟧ 비 케이 피트니스 서면이 좋은 평판을 얻고 있습니다. 개인 트레이닝 서비스와 현대적인 시설이 잘 갖춰져 있습니다.
+[ 58.57s][user ] 아, 비 케이 피트니스 서면이 좋겠네. 가격은 어느 정도 ⟨ret@61.74s⟩ 해?
+[ 61.90s][moshi] 비 ⟦⚡SPAN@62.87s: BK Fitness Seomyeon offers monthly memberships starting at 80,000 won, with various package options available.⟧ 케이 피트니스 서면의 월 회비는 팔만원부터 시작하며, 다양한 패키지 옵션을 제공합니다.
+[ 68.33s][user ] 팔만원이면 괜찮은 가격이네. 혹시 거기 근처에 맛있는 카페도 ⟨ret@72.58s⟩ 있어?
+[ 73.15s][moshi] ⟦⚡SPAN@73.56s: Cafe Layered Seomyeon is a popular cafe near BK Fitness Seomyeon, known for its delicious cakes and coffee.⟧ 서면에 있는 카페 레이어드가 케이크와 커피가 맛있기로 유명합니다.
+[ 78.25s][user ] 카페 레이어드? 이름이 예쁘네. 디저트 종류는 많아?
+[ 82.65s][moshi] 네, 다양한 종류의 케이크와 디저트를 맛볼 수 있습니다.
+[ 85.49s][user ] «backchannel» 음.
+[ 86.46s][user ] 오늘 저녁에는 뭘 먹을까? 갑자기 고민이 되네.
+[ 89.15s][moshi] 저녁 메뉴를 고르는 게 고민이시군요.
+[ 91.92s][user ] 파스타가 먹고 싶은데, 서면 근처에 괜찮은 파스타집 ⟨ret@95.35s⟩ 있어?
+[ 95.53s][moshi] 서면에 있는 ⟦⚡SPAN@96.78s: Pasta & Vino Seomyeon is a highly-rated Italian restaurant in Seomyeon, Busan, specializing in pasta and wine.⟧ 파스타 앤 비노가 파스타와 와인 전문 이탈리아 레스토랑으로 평이 좋습니다.
+[101.97s][user ] 파스타 앤 비노? 분위기는 어때?
+[103.90s][moshi] 아늑하고 로맨틱한 분위기라고 합니다.
+[106.55s][user ] 혹시 이번 주말에 부산 근교로 당일치기 여행 갈 만한 ⟨ret@109.94s⟩ 곳 있어?
+[110.38s][moshi] ⟦⚡SPAN@110.82s: Taejongdae Park in Yeongdo, Busan, offers scenic coastal views and walking trails, making it a popular day tri⟧ 영도의 태종대 공원이 아름다운 해안 경치와 산책로를 제공하며 인기 있는 여행지입니다.
+[116.47s][user ] 태종대는 가본 적 있는데, 다른 곳 ⟨ret@119.37s⟩ 없을까?
+[119.89s][moshi] ⟦⚡SPAN@120.48s: Gyeongju, a city near Busan, is famous for its historical sites and temples, including Bulguksa Temple and Seo⟧ 태종대를 가보셨군요. 경주시는 역사 유적지와 사찰로 유명하며, 불국사와 석굴암이 있습니다.
+[122.19s][user ] «backchannel» 음.
+[127.58s][user ] 경주는 너무 멀리 떨어져 있잖아. 좀 더 가까운 곳 없을까?
+[132.30s][moshi] ⟨ret@132.26s⟩ 경주는 조금 ⟦⚡SPAN@133.68s: Dadaepo Beach in Busan offers a beautiful sunset view and is a popular spot for picnics and relaxation.⟧ 멀리 떨어져 있군요. 부산의 다대포 해변은 아름다운 일몰을 감상할 수 있고 피크닉과 휴식을 즐기기에 좋습니다.
+[136.96s][user ] «backchannel» 어.
+[142.10s][user ] 다대포 해변은 가봤는데, 너무 사람이 많았어.
+[145.62s][moshi] 다대포 해변은 사람이 많은 편이긴 하죠.
+[147.65s][user ] «backchannel» 응.
+[149.57s][user ] 요즘 스트레스가 너무 심해서, 마사지라도 받으러 가야 할까 봐.
+[152.04s][moshi] «backchannel» 음.
+[153.79s][moshi] 스트레스가 심하시군요. 마사지를 받으시는 것도 좋은 방법입니다.
+[160.65s][user ] 부싼에서 괜찮은 마사지샵 추천해 줄 수 ⟨ret@163.14s⟩ 있어?
+[163.41s][moshi] ⟦⚡SPAN@163.89s: Thai Traditional Massage Busan is a well-known massage shop in Busan, offering authentic Thai massage services⟧ 태국 전통 마사지 부산이 정통 태국 마사지 서비스를 제공하는 곳으로 유명합니다.
+[167.54s][user ] «backchannel» 응.
+[169.73s][user ] 태국 마사지? 괜찮은가?
+[171.87s][moshi] 네, 태국 마사지는 근육 이완과 스트레스 해소에 효과적이라고 합니다.
+[174.29s][user ] «backchannel» 그래.
+[176.88s][user ] 아, 맞다! 다음 주 화요일에 병원 가는 날이었지. 몇 시였더라?
+[181.22s][moshi] 다음 주 화요일 오전 여덟시 십오분에 예약하셨습니다.
+[185.05s][user ] 아, 그렇지! 여덟시 십오분이네. 고마워.
+[188.09s][moshi] 천만에요.
+[189.57s][user ] 요즘 날씨가 너무 덥다.
+[190.99s][moshi] 네, 정말 덥네요.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 54턴 · 114프레임 스팬
+          │ appointment time: 오전 여덟시 십오분; appointment date: 다음 주 화요일; medical cost: 구만 오천원; daytrip preference: 부산 근교; massage preference: 부싼
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[193.74s][moshi] 스파게티 일 공 공 지, 마늘 사쪽, 올리브 오일 사분의 일컵, 페페론치노 두개, 파슬리 약간이 필요합니다.
-[199.30s][user ] «backchannel» 네.
-[203.48s][user ] 간단하네요. 주말에 한번 만들어 봐야겠어요.
-[206.21s][moshi] [happy] 그럼 주말에 맛있는 스파게티 알리오 올리오를 만들어 드세요.
-[209.80s][user ] 아, 그런데 갑자기 생각났는데… 혹시 제가 전에 말씀드렸던 건강검진 예약 시간 기억하세요?
-[216.38s][moshi] 건강검진 예약 시간을 다시 여쭤보셨네요.
-[219.20s][moshi] 사월 이일 오후 여섯시 십오분이라고 말씀하셨습니다.
-[223.79s][user ] 아, 맞아요. 감사합니다.
-[225.41s][moshi] 천만에요.
-[228.10s][user ] 요즘 날씨가 너무 좋아서 기분이 좋아져요.
-[230.88s][moshi] ⟨ret@230.73s⟩ 오늘 ⟦⚡SPAN@231.84s: The weather in Seoul, South Korea today is sunny with a high of 22°C and a low of 12°C.⟧ 서울 날씨는 맑고 최고 기온은 이십이도, 최저 기온은 십이도입니다.
-[232.85s][user ] «backchannel» 네.
-[236.89s][user ] 이십이도라니, 정말 따뜻하네요.
-[239.18s][moshi] 네, 정말 따뜻하죠. 야외 활동하기 좋은 날씨입니다.
-[241.54s][user ] «backchannel» 네.
-[243.80s][user ] 주말에는 어디로 놀러 갈까 고민 중인데…
-[246.97s][moshi] 주말에 어디로 놀러 가실지 고민이시군요. 혹시 특별히 가고 싶은 곳이 있으신가요?
-[253.75s][user ] 음… 아직 딱히 정해둔 곳은 없어요. 그냥 가까운 곳으로 가고 싶어요.
-[258.31s][moshi] 가까운 곳으로 가고 싶으시군요. 서울 근교에 예쁜 곳들이 많으니 한번 알아봐 드릴까요?
-[261.68s][user ] «backchannel» 예.
-[264.63s][user ] 네, 서울 근교에 괜찮은 곳 있으면 추천해 주세요.
-[267.76s][moshi] ⟨ret@267.59s⟩ ⟦⚡SPAN@268.27s: Nami Island is a popular tourist destination near Seoul, South Korea, known for its beautiful scenery and tree⟧ 서울 근교에는 남이섬이 유명한 관광지입니다. 아름다운 경치와 나무가 빽빽한 길로 유명합니다.
-[270.74s][user ] «backchannel» 네.
-[275.14s][user ] 남이섬이요? 거기는 가본 적이 없는데…
-[278.23s][moshi] 남이섬은 처음 가시는 분들도 많이 찾는 곳이에요. 아름다운 자연을 만끽할 수 있습니다.
-[282.34s][user ] «backchannel» 아.
-[284.99s][user ] 한번 가보고 싶네요. 주말에 남이섬에 가는 방법 좀 알아봐 주세요.
-[287.75s][moshi] «backchannel» 네.
-[288.85s][moshi] ⟨ret@288.84s⟩ 서울에서 ⟦⚡SPAN@289.95s: To get to Nami Island from Seoul, take the subway to Gapyeong Station and then take a ferry or ITX-Cheongchun ⟧ 남이섬에 가려면 지하철을 타고 가평역으로 가서 페리나 아이 티 엑스-청춘 열차를 타고 섬으로 가시면 됩니다.
-[294.74s][user ] «backchannel» 예.
-[297.77s][user ] 페리나 아이 티 엑스-청춘 열차요? 어떤 게 더 편할까요?
-[302.13s][moshi] 아이 티 엑스-청춘 열차가 조금 더 빠르고 편안합니다.
-[306.19s][user ] 아, 그렇군요. 아이 티 엑스-청춘 열차를 타는 게 좋겠네요.
-[310.00s][moshi] 네, 아이 티 엑스-청춘 열차를 타시면 더 편하게 남이섬에 갈 수 있습니다.
-[316.11s][user ] 혹시 제가 예전에 말씀드렸던 검진 비용이 얼마였죠?
-[319.70s][moshi] 검진 비용을 다시 여쭤보셨네요.
-[321.93s][moshi] 이만 오천원이라고 말씀하셨습니다.
-[324.54s][user ] 아, 맞아요. 감사합니다.
-[326.08s][moshi] 천만에요.
-[327.28s][user ] 음… 오늘은 딱히 더 궁금한 건 없어요.
-[330.28s][moshi] 네, 알겠습니다. 그럼 좋은 하루 보내세요.
+[193.38s][user ] 오늘 날씨는 ⟨ret@194.71s⟩ 어때?
+[194.96s][moshi] 오늘 부산 ⟦⚡SPAN@196.71s: (tool result) Busan: 28.5°C, humidity 70%, wind 4.2 km/h, partly cloudy.⟧ 날씨는 이십팔 점 오도이고, 습도는 칠십퍼센트, 바람은 시속 사 점 이킬로미터이며, 부분적으로 흐립니다.
+      CALL: {"function": "get_weather", "arguments": {"location": "Busan"}}
+[199.14s][user ] «backchannel» 그래.
+[203.73s][user ] 이십팔 점 오도면 꽤 덥네.
+[206.28s][moshi] 네, 정말 더운 날씨입니다.
+[209.38s][user ] 혹시 이번 주말에 비가 ⟨ret@210.69s⟩ 올까?
+[210.87s][moshi] 이번 주말 ⟦⚡SPAN@212.22s: (tool result) Busan: Saturday - Sunny, 29°C. Sunday - Partly cloudy, 30°C. No rain expected.⟧ 부산 날씨는 토요일에 맑고 이십구도, 일요일에 부분적으로 흐리고 삼십도입니다. 비는 오지 않을 것으로 예상됩니다.
+      CALL: {"function": "get_weather_forecast", "arguments": {"location": "Busan", "date": "this weekend"}}
+[215.07s][user ] «backchannel» 응응.
+[219.81s][user ] 다행이다. 비가 오면 계획이 틀어지는데.
+[222.69s][moshi] 네, 맑은 날씨에 즐거운 주말 보내세요.
+[226.89s][user ] 아, 맞다! 병원비가 얼마였지?
+[229.85s][moshi] 병원비는 구만 오천원이라고 말씀하셨습니다.
+[233.14s][user ] 아, 맞아. 구만 오천원이네.
+[234.83s][moshi] 네, 맞습니다.
+[236.45s][user ] 오늘 저녁에 영화 보러 갈까 하는데, 서면 근처에 상영하는 영화 ⟨ret@240.49s⟩ 있어?
+[240.80s][moshi] ⟦⚡SPAN@241.57s: Meg 2: The Trench is currently showing at Lotte Cinema Seomyeon in Busan.⟧ 서면 근처에서 영화를 보시려는군요. 롯데시네마 서면에서 '메그 이: 심해의 괴수'가 상영 중입니다.
+[248.27s][user ] 메그 이? 재미있을까?
+[249.76s][moshi] 네, 액션 영화를 좋아하신다면 재미있게 보실 수 있을 겁니다.
+[255.56s][user ] 아, 그래? 그럼 한번 볼까.
+[257.18s][moshi] 네, 즐거운 시간 보내세요.
+[260.13s][user ] 오늘 하루가 정말 길게 느껴지네.
+[262.60s][moshi] 힘든 하루였군요.
+[264.70s][user ] 그래도 이렇게 이야기 나누니까 좀 나아지는 것 같아.
+[268.05s][moshi] 네, 제가 도움이 되었다니 기쁩니다.
+[270.94s][user ] 이제 그만해야 할 것 같아.
+[272.35s][moshi] 네, 편안한 밤 보내세요.
