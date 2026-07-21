@@ -4,97 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "소찬",
+#     "name": "소우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
+#       "date": "2026-05-03",
+#       "category": "skill",
+#       "text": "User is quite experienced with rock climbing."
+#     },
+#     {
+#       "date": "2026-04-10",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Hana."
+#     },
+#     {
+#       "date": "2026-04-05",
 #       "category": "sibling",
-#       "text": "User has a younger sibling named Daniel."
+#       "text": "User has a younger sibling named Emma."
 #     },
 #     {
-#       "date": "2026-06-02",
-#       "category": "hobby",
-#       "text": "User is into sea kayaking."
+#       "date": "2026-03-02",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-05-28",
-#       "category": "work",
-#       "text": "User works as a carpenter."
-#     },
-#     {
-#       "date": "2026-05-05",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2026-02-24",
+#       "category": "child",
+#       "text": "User has a child named Noah, age 12."
 #     },
 #     {
 #       "date": "2026-02-11",
-#       "category": "show",
-#       "text": "User is currently watching a historical K-drama."
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Looking for a therapist",
+#       "date": "2026-05-13",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-26",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-01-25",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 아, 안녕하세요. 요즘 회사 일이 너무 힘들어서 그래요. | S2 음… 출퇴근 시간이 너무 길어요. 집에서 회사까지 한 시간 반 | S3 사실 이사 생각은 하고 있는데, 정확히 어디로 가야 할지 몰라 | S4 …혹시 강남역 근처는 어때요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 소찬님. 저는 케리라입니다. 힘든 변화나 슬픔을 겪고 있을 때 기댈 수 있는 분이 되어 드리겠습
-     1.75s  user  발화 시작: 그래.
-     2.39s  user  발화 끝
-     5.88s  agent 발화 끝
-     6.47s  user  발화 시작: 안녕하세요. 요즘 집에서 발효 식품을 만들고 있는데, 좀 힘드네요.
-     9.61s  agent 발화 시작: 음.
-     9.97s  agent 발화 끝
-    10.33s  <ret> 발화 (turn4 첫 프레임)
-    10.86s  agent 발화 시작: <ret> 과거 대화 기록을 보니, 저녁 시간 화상 상담을 선호하시고 인지 행동 치료를 원하시는군요.
-    10.96s  user  발화 끝
-    11.00s  ⚡SPAN 주입 [d'=0.67s / d_lead=5.65s]: [2026-06-05] Past chat — Looking for a therapist: prefers evening vide
-    13.89s  user  발화 시작: 응.
-    14.29s  user  발화 끝
-    16.50s  agent 발화 시작: 혹시 지금 발효 식품을 만들면서 어떤 점이 가장 힘드신가요? 감정적인 부분인지, 아니면 과정 자체인지…
-    16.52s  agent 발화 끝
-    23.35s  agent 발화 끝
-    25.14s  user  발화 시작: 과정이 좀 어려워요. 특히 온도 조절이 쉽지 않더라고요. —
-    28.46s  user  발화 시작: …근데, 혹시 부산에서 발효 식품 만드는 모임 같은 거 있을까요?
-    28.56s  user  발화 끝
-    29.61s  agent 발화 시작: 네.
-    30.10s  agent 발화 끝
-    31.67s  <ret> 발화 (turn10 첫 프레임)
-    31.85s  agent 발화 시작: <ret> 부산 해운대구에 '부산 발효 문화 연구회'라는 곳이 있어요. 정기 모임과 발효 식품 만들기 워크숍
-    31.97s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.96s]: (tool result) 부산 발효 문화 연구회: 정기 모임, 발효 식품 만들기 워크숍 운영. 위치: 부산 해운대구. 연락처:
-    32.11s  user  발화 끝
-    41.81s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 소우님! 저는 트후나로라고 해요. 커리어 고민이나 스트레스 관리에 도움을 드릴 수 있는 커리어 
+     7.74s  agent 발화 끝
+     8.46s  user  발화 시작: 아, 안녕하세요. 요즘 회사 일이 너무 힘들어서 그래요.
+    11.81s  agent 발화 시작: 힘드시군요. 혹시 지금 회사에서 어떤 점이 가장 어려우신가요?
+    11.84s  user  발화 끝
+    16.42s  user  발화 시작: 음… 출퇴근 시간이 너무 길어요. 집에서 회사까지 한 시간 반이나 걸려요.
+    16.80s  agent 발화 끝
+    19.26s  agent 발화 시작: 네.
+    19.89s  agent 발화 끝
+    21.50s  <ret> 발화 (turn5 첫 프레임)
+    21.92s  user  발화 끝
+    21.95s  agent 발화 시작: <ret> 소우님께서 칠층에 사시는군요. 혹시 회사 근처로 이사하는 것을 고려해 보셨나요?
+    22.42s  ⚡SPAN 주입 [d'=0.92s / d_lead=6.02s]: [2025-12-15] User lives on the 7th floor.
+    25.86s  user  발화 시작: 네.
+    26.47s  user  발화 끝
+    27.97s  agent 발화 끝
+    28.02s  agent 발화 시작: 회사 근처로 이사하시면 출퇴근 시간을 많이 줄일 수 있을 텐데요.
+    30.09s  user  발화 시작: 음.
+    30.58s  user  발화 끝
+    31.91s  user  발화 시작: 사실 이사 생각은 하고 있는데, 정확히 어디로 가야 할지 몰라서요. —
+    32.38s  agent 발화 끝
+    35.87s  user  발화 시작: …혹시 강남역 근처는 어때요?
+    36.07s  user  발화 끝
+    37.55s  <ret> 발화 (turn11 첫 프레임)
+    37.73s  agent 발화 시작: <ret> 강남역 근처 아파트 매매가는 평균 십팔억원, 전세가는 구억원 정도라고 하네요. 다양한 크기와 구조
+    37.94s  user  발화 끝
+    38.14s  ⚡SPAN 주입 [d'=0.59s / d_lead=20.00s]: (tool result) 강남역 주변 아파트 매물 정보: 평균 매매가 18억원, 전세가 9억원. 다양한 크기와 구조의 아파트가
+    57.73s  agent 발화 끝

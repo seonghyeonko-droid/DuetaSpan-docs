@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Julia",
+#     "name": "Oliver",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -12,101 +12,82 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "mid 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "anniversary",
-#       "text": "User's anniversary is December 18."
+#       "date": "2026-05-06",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
 #     },
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-02-24",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "category": "employer",
+#       "text": "User works at a construction firm."
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
+#     },
+#     {
+#       "date": "2026-01-19",
 #       "category": "learning",
-#       "text": "User is studying for a driving test."
+#       "text": "User is training for a half-marathon."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Georgian."
-#     },
-#     {
-#       "date": "2026-03-27",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O+."
-#     },
-#     {
-#       "date": "2026-03-06",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "category": "partner",
-#       "text": "User's partner is named Clara."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-01-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Morocco in April."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-15",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-06-01",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-22",
-#       "title": "Choosing a preschool",
+#       "date": "2026-03-27",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "title": "Comparing health insurance",
+#       "date": "2025-12-17",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 A wellness coach? That's… differen | S2 Easier said than done, right? I’m  | S3 …But what if "authentic me" isn’t  | S4 Hmm. So, not pretending to be some
 
-     0.00s  agent 발화 시작: Hello Julia, I’m Men, your wellness coach.
-     1.39s  user  발화 시작: Yeah.
-     1.84s  user  발화 끝
-     3.09s  agent 발화 끝
-     3.11s  user  발화 시작: A wellness coach? That's… different. I mostly just need help
-    11.32s  user  발화 끝
-    11.45s  agent 발화 시작: [happy] It’s wonderful you’re thinking ahead! It’s completel
-    21.00s  agent 발화 끝
-    22.48s  user  발화 시작: Easier said than done, right? I’m already stressing about ma
-    27.95s  user  발화 끝
-    27.95s  agent 발화 시작: Making a good impression is important, but it's about authen
-    31.05s  user  발화 시작: …But what if "authentic me" isn’t very… polished? I get flus
-    31.65s  agent 발화 끝
-    37.07s  user  발화 끝
-    37.20s  agent 발화 시작: [curious] That's a great question! Polished isn't always nec
-    40.95s  user  발화 시작: Yeah.
-    41.44s  user  발화 끝
-    46.24s  user  발화 시작: Hmm. So, not pretending to be someone I’m not? That actually
-    46.29s  agent 발화 끝
-    52.91s  agent 발화 시작: [happy] Exactly! Embracing your genuine self will build stro
-    53.00s  user  발화 끝
-    63.02s  agent 발화 끝
+     0.00s  agent 발화 시작: [happy] Hello Oliver, I’m Luna, your wellness coach. It’s lo
+     5.00s  agent 발화 끝
+     5.75s  user  발화 시작: Wellness coach? That sounds…intense. I just feel kind of stu
+     7.57s  agent 발화 시작: Yeah, yeah.
+     9.17s  agent 발화 끝
+    11.16s  agent 발화 시작: It’s perfectly alright to feel stuck, Oliver. Many find them
+    11.20s  user  발화 끝
+    13.78s  user  발화 시작: Right.
+    14.18s  user  발화 끝
+    18.18s  user  발화 시작: [sigh] I guess. It's just work. Everything feels pointless, 
+    18.53s  agent 발화 끝
+    24.16s  agent 발화 시작: That’s very common, especially when feeling disconnected fro
+    24.25s  user  발화 끝
+    35.42s  agent 발화 끝

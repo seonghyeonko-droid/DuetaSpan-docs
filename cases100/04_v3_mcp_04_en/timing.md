@@ -4,141 +4,108 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Samuel",
+#     "name": "Jack",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "French"
+#     "age_range": "late 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
-#       "category": "floor",
-#       "text": "User lives on the 7th floor."
+#       "date": "2026-06-13",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
 #     },
 #     {
-#       "date": "2026-05-17",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Noah."
+#       "date": "2026-03-30",
+#       "category": "learning",
+#       "text": "User is training for a half-marathon."
 #     },
 #     {
-#       "date": "2026-04-10",
+#       "date": "2026-03-19",
+#       "category": "music",
+#       "text": "User likes listening to city pop."
+#     },
+#     {
+#       "date": "2026-02-08",
+#       "category": "skill",
+#       "text": "User is quite experienced with freediving."
+#     },
+#     {
+#       "date": "2026-02-04",
 #       "category": "gym",
-#       "text": "User has a gym membership near the station."
+#       "text": "User has a gym membership near home."
 #     },
 #     {
-#       "date": "2026-03-23",
-#       "category": "work",
-#       "text": "User works as a small-business owner."
+#       "date": "2026-01-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Norway in May."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "partner",
-#       "text": "User's partner is named Kenji."
+#       "date": "2025-12-15",
+#       "category": "allergy",
+#       "text": "User is allergic to dust mites."
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "category": "employer",
-#       "text": "User works at an e-commerce company."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "car",
-#       "text": "User drives a 2020 Kia Niro."
-#     },
-#     {
-#       "date": "2025-12-06",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
+#       "date": "2025-12-05",
+#       "category": "anniversary",
+#       "text": "User's anniversary is March 23."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-20",
-#       "title": "Planning a dinner party",
+#       "date": "2026-04-19",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-08",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-03-16",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "title": "Sorting out a visa",
+#       "date": "2026-01-02",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm really stressed about work. Ca | S2 Four seconds each? That feels…long | S3 Individual study spaces? That’s go | S4 Okay, good. Can you check the weat
 
-     0.00s  user  발화 시작: I'm really stressed about work. Can you find me some informa
-     1.98s  agent 발화 시작: Mm-hmm.
-     2.60s  agent 발화 끝
-     5.14s  <ret> 발화 (turn2 첫 프레임)
-     5.43s  agent 발화 시작: <ret> [curious] It sounds like you're having a tough time. P
-     5.61s  user  발화 끝
-     6.18s  ⚡SPAN 주입 [d'=1.04s / d_lead=14.57s]: Progressive muscle relaxation is a deep relaxation technique developed
-    20.00s  agent 발화 끝
-    20.78s  user  발화 시작: That sounds…involved. Is there a simpler breathing exercise 
-    23.58s  agent 발화 시작: Yeah.
-    24.22s  agent 발화 끝
-    26.24s  user  발화 끝
-    26.33s  agent 발화 시작: A simple one is box breathing. You inhale for four seconds, 
-    36.16s  agent 발화 끝
-    37.15s  user  발화 시작: Four seconds each? That feels…long. Is there a shorter versi
-    39.38s  agent 발화 시작: Yeah.
-    39.87s  agent 발화 끝
-    42.36s  agent 발화 시작: [sigh] I checked, and there isn’t a widely recognized shorte
-    42.48s  user  발화 끝
-    47.32s  user  발화 시작: Yeah.
-    47.77s  user  발화 끝
-    56.45s  agent 발화 끝
-    56.59s  user  발화 시작: Okay, two seconds. I'll try that. Now, can you find me a qui
-    58.40s  agent 발화 시작: Yeah.
-    58.90s  agent 발화 끝
-    62.52s  user  발화 끝
-    62.58s  <ret> 발화 (turn12 첫 프레임)
-    62.79s  agent 발화 시작: <ret> [happy] I found a place! Gaon Cafe is a quiet, modern 
-    63.13s  ⚡SPAN 주입 [d'=0.55s / d_lead=12.44s]: (tool result) URL: https://gaon.co.kr/, Depth: 2, Focus: Services, Lin
-    67.41s  user  발화 시작: Right.
-    67.90s  user  발화 끝
-    75.23s  agent 발화 끝
-    75.54s  user  발화 시작: Individual study spaces? That’s good. But is it…expensive?
-    80.23s  <ret> 발화 (turn15 첫 프레임)
-    80.35s  agent 발화 시작: <ret> It’s considered a moderate price tier.
-    80.54s  user  발화 끝
-    81.09s  ⚡SPAN 주입 [d'=0.86s / d_lead=2.40s]: Price Tier: $$
-    82.56s  user  발화 시작: Moderate…so, like, five to ten thousand won for a coffee?
-    82.75s  agent 발화 끝
-    88.15s  user  발화 끝
-    88.36s  agent 발화 시작: Roughly. I don’t have exact menu prices, but reviews suggest
-    94.71s  agent 발화 끝
-    94.72s  user  발화 시작: Okay, good. Can you check the weather in Busan for tomorrow?
-    96.23s  agent 발화 시작: Mhm.
-    96.77s  agent 발화 끝
-    97.71s  <ret> 발화 (turn20 첫 프레임)
-    98.03s  agent 발화 시작: <ret> [happy] The weather in Busan tomorrow will be partly c
-    98.23s  user  발화 끝
-    98.57s  ⚡SPAN 주입 [d'=0.86s / d_lead=10.61s]: (tool result) Busan: 26.5°C, humidity 78%, wind 7.2 km/h, partly cloud
-   108.52s  user  발화 시작: That sounds…pleasant. Maybe I *can* relax a little.
-   108.64s  agent 발화 끝
-   112.36s  agent 발화 시작: That’s wonderful to hear! Remember that box breathing if you
-   112.36s  user  발화 끝
-   119.59s  agent 발화 끝
+     0.00s  user  발화 시작: I need a room at the Bellagio in Las Vegas for four nights, 
+     4.78s  <ret> 발화 (turn1 첫 프레임)
+     5.08s  ⚡SPAN 주입 [d'=0.30s / d_lead=13.55s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
+     5.40s  agent 발화 시작: <ret> I’ve reserved a King Suite at the Bellagio in Las Vega
+     5.59s  user  발화 끝
+    15.77s  user  발화 시작: Right.
+    16.17s  user  발화 끝
+    18.95s  agent 발화 끝
+    19.09s  user  발화 시작: Two thousand eight hundred dollars? That seems…a lot.
+    22.93s  user  발화 끝
+    22.97s  agent 발화 시작: [surprised] It is a bit pricey, yes. The Bellagio is a luxur
+    30.03s  user  발화 시작: Yeah, yeah.
+    31.36s  user  발화 끝
+    34.85s  agent 발화 끝
+    34.92s  user  발화 시작: Maybe. What about something around, say, one thousand five h
+    37.95s  agent 발화 시작: Mhm.
+    38.39s  agent 발화 끝
+    39.18s  user  발화 끝
+    39.21s  <ret> 발화 (turn8 첫 프레임)
+    39.22s  agent 발화 시작: <ret> I found a Standard Room at the Excalibur for nine hund
+    40.21s  ⚡SPAN 주입 [d'=1.00s / d_lead=11.64s]: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check 
+    50.85s  agent 발화 끝

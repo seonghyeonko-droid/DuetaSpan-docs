@@ -4,68 +4,58 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "Jordan",
+#     "name": "Emil",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "60s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "trip",
-#       "text": "User is planning a trip to Morocco in August."
+#       "date": "2026-06-20",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-06-07",
-#       "category": "phone",
-#       "text": "User uses an iPhone SE."
-#     },
-#     {
-#       "date": "2026-05-23",
-#       "category": "dislike",
-#       "text": "User can't stand licorice."
-#     },
-#     {
-#       "date": "2026-05-10",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
-#     },
-#     {
-#       "date": "2026-04-16",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Elena."
-#     },
-#     {
-#       "date": "2026-02-26",
+#       "date": "2026-05-12",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is grilled salmon."
 #     },
 #     {
 #       "date": "2026-02-20",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "category": "partner",
+#       "text": "User's partner is named Daniel."
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "category": "savings",
-#       "text": "User is saving for a trip to Europe next year."
+#       "date": "2026-02-15",
+#       "category": "airline",
+#       "text": "User usually flies with Korean Air."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 20°C."
 #     },
 #     {
 #       "date": "2025-12-10",
-#       "category": "work",
-#       "text": "User works as a dentist."
+#       "category": "music",
+#       "text": "User likes listening to city pop."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-05-10",
 #       "title": "Choosing a preschool",
 #       "bullets": [
 #         "wants one within walking distance",
@@ -73,85 +63,65 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-06-06",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-13",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-05",
-#       "title": "Booking a moving company",
-#       "bullets": [
-#         "moving a 2-bedroom apartment across town on the 30th",
-#         "needs help disassembling furniture"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need a room at the Mountain Lodg | S2 True. What’s the weather looking l | S3 …do they have any good trails clos | S4 That sounds really good, actually.
+# EXAMINER(FDB-v2) 단계: S1 I want to send my location to Davi | S2 True. I was looking over common in | S3 …Wait, do you have any advice on S | S4 Oh wow, that's really helpful. Wha
 
-     0.00s  user  발화 시작: I need a room at the Mountain Lodge in Denver, Colorado for 
-     2.19s  agent 발화 시작: Uh-huh.
-     2.69s  agent 발화 끝
-     5.40s  <ret> 발화 (turn2 첫 프레임)
-     5.62s  agent 발화 시작: <ret> I’ve reserved a room for you at the Mountain Lodge in 
-     5.70s  user  발화 끝
-     6.49s  ⚡SPAN 주입 [d'=1.09s / d_lead=12.80s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
-    18.42s  agent 발화 끝
-    19.75s  user  발화 시작: That’s great, thank you. I’m a little stressed about the tri
-    23.31s  user  발화 끝
-    23.60s  agent 발화 시작: [happy] Traveling can be a bit overwhelming, but planning ah
-    28.62s  user  발화 시작: Yeah.
-    29.30s  user  발화 끝
-    31.31s  user  발화 시작: True. What’s the weather looking like in Denver around then?
-    31.35s  agent 발화 끝
-    34.11s  <ret> 발화 (turn7 첫 프레임)
-    34.67s  agent 발화 시작: <ret> On May tenth in Denver, the forecast is eighteen point
-    34.86s  user  발화 끝
-    35.26s  ⚡SPAN 주입 [d'=1.15s / d_lead=10.85s]: (tool result) {"date": "2024-05-10", "city": "Denver", "state": "Color
-    45.52s  agent 발화 끝
-    45.74s  user  발화 시작: Sounds pleasant enough. I was thinking of going hiking while
-    47.46s  agent 발화 시작: Yeah, yeah.
-    48.97s  agent 발화 끝
-    49.52s  agent 발화 시작: Hiking is a fantastic way to relieve stress and enjoy nature
-    49.58s  user  발화 끝
-    53.06s  user  발화 시작: …do they have any good trails close to the Mountain Lodge?
-    53.78s  agent 발화 끝
-    55.98s  <ret> 발화 (turn12 첫 프레임)
-    55.99s  agent 발화 시작: <ret> Red Rocks Trading Post Trail is six point four kilomet
-    56.06s  user  발화 끝
-    56.08s  ⚡SPAN 주입 [d'=0.98s / d_lead=7.92s]: (tool result) Red Rocks Trading Post Trail - 6.4 km from Mountain Lodg
-    60.05s  user  발화 시작: Yeah.
-    60.54s  user  발화 끝
-    63.87s  agent 발화 시작: It’s a popular trail, so you might encounter other hikers, w
-    63.92s  agent 발화 끝
-    66.00s  user  발화 시작: Uh-huh.
-    66.62s  user  발화 끝
-    70.10s  user  발화 시작: That’s good to know. I’m also trying to avoid eating too unh
-    70.54s  agent 발화 끝
-    71.73s  agent 발화 시작: Yeah.
-    72.22s  agent 발화 끝
-    74.59s  <ret> 발화 (turn18 첫 프레임)
-    74.86s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.48s]: (tool result) True Food Kitchen - 4.8 km from Mountain Lodge, Denver, 
-    74.90s  agent 발화 시작: <ret> True Food Kitchen is four point eight kilometers away 
-    75.01s  user  발화 끝
-    79.53s  user  발화 시작: Mm-hmm.
-    80.30s  user  발화 끝
-    81.38s  agent 발화 끝
-    81.49s  user  발화 시작: That sounds really good, actually. I appreciate the help, Kl
-    82.96s  agent 발화 시작: Yeah.
-    83.41s  agent 발화 끝
-    85.04s  user  발화 끝
-    85.32s  agent 발화 시작: [happy] You’re very welcome. It’s my pleasure to help you pl
-    95.43s  agent 발화 끝
+     0.00s  user  발화 시작: I want to send my location to David Brown.
+     1.05s  agent 발화 시작: Yeah.
+     1.54s  agent 발화 끝
+     2.22s  <ret> 발화 (turn2 첫 프레임)
+     2.44s  agent 발화 시작: <ret> Great! Your location has been sent to David Brown – it
+     2.54s  user  발화 끝
+     2.71s  ⚡SPAN 주입 [d'=1.09s / d_lead=6.72s]: (tool result) {"status": "success", "latitude": 35.1295, "longitude": 
+     9.15s  agent 발화 끝
+     9.87s  user  발화 시작: Thanks! I’m actually interviewing with a company tomorrow. A
+    12.56s  agent 발화 시작: Uh-huh.
+    13.19s  agent 발화 끝
+    13.94s  user  발화 끝
+    14.03s  agent 발화 시작: [happy] That’s exciting! Interviews can be a bit nerve-wrack
+    21.53s  agent 발화 끝
+    22.53s  user  발화 시작: It's a project manager position at StellarTech.
+    25.47s  agent 발화 시작: StellarTech, sounds interesting. Project management is all a
+    25.49s  user  발화 끝
+    34.88s  agent 발화 끝
+    35.60s  user  발화 시작: True. I was looking over common interview questions… they al
+    40.74s  user  발화 끝
+    42.73s  user  발화 시작: …about weaknesses.
+    43.38s  agent 발화 시작: Mm-hmm.
+    44.02s  agent 발화 끝
+    44.06s  user  발화 끝
+    44.06s  agent 발화 시작: Ah, the classic weakness question! It's a chance to show sel
+    51.95s  user  발화 시작: …Wait, do you have any advice on STAR method answers?
+    52.83s  agent 발화 끝
+    55.09s  user  발화 끝
+    55.33s  agent 발화 시작: The STAR method – Situation, Task, Action, Result – is perfe
+    59.83s  user  발화 시작: Yeah.
+    60.42s  user  발화 끝
+    67.64s  agent 발화 시작: I find it helps to write out a few STAR examples beforehand,
+    67.76s  agent 발화 끝
+    77.81s  user  발화 시작: That's smart. I'm also trying to update my resume. It feels 
+    77.99s  agent 발화 끝
+    82.09s  <ret> 발화 (turn17 첫 프레임)
+    82.35s  user  발화 끝
+    82.38s  agent 발화 시작: <ret> I can help with that! I analyzed your resume, and it s
+    83.24s  ⚡SPAN 주입 [d'=1.15s / d_lead=10.30s]: (tool result) {"overall score": 65, "keywords missing": Agile, Scrum, 
+    92.58s  agent 발화 시작: It also recommends a modern template and focusing on quantif
+    92.68s  agent 발화 끝
+    97.48s  agent 발화 끝
+    98.05s  user  발화 시작: Oh wow, that's really helpful. What about salary expectation
+   102.41s  user  발화 끝
+   102.81s  agent 발화 시작: [curious] Salary can be tricky. Research the average project
+   114.41s  agent 발화 끝
+   114.56s  user  발화 시작: Okay, that makes sense. I think I’ll look those sites up now
+   117.75s  agent 발화 시작: [happy] Wonderful! Remember, you've got valuable skills and 
+   117.78s  user  발화 끝
+   125.54s  agent 발화 끝

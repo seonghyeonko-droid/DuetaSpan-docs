@@ -4,132 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Hana",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "mid 30s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "60s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "skill",
-#       "text": "User is quite experienced with marathon training."
+#       "date": "2026-05-17",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-25",
-#       "category": "streaming",
-#       "text": "User subscribes to Apple Music and Coupang Play."
+#       "date": "2026-04-23",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-03-19",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 26°C."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "work",
-#       "text": "User works as a translator."
+#       "date": "2026-03-03",
+#       "category": "employer",
+#       "text": "User works at a school district."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "schedule",
-#       "text": "User has on-call weekends."
+#       "date": "2026-02-18",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-22",
-#       "title": "Researching a used car",
+#       "date": "2026-03-04",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "title": "Choosing a preschool",
+#       "date": "2026-02-25",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, a wellness coach? That sounds… | S2 Easier said than done, right? | S3 But what if my boss hates it, no m | S4 That’s…actually really helpful. It
+# EXAMINER(FDB-v2) 단계: S1 Men… that’s an unusual name. Is th | S2 It’s a senior leadership position, | S3 …but how do I even *begin* to prio | S4 Okay, that sounds… less terrifying
 
-     0.00s  agent 발화 시작: Hello Hana, it’s lovely to meet you. My name is Taia, and I’
-    10.16s  agent 발화 끝
-    10.35s  user  발화 시작: Oh, a wellness coach? That sounds…interesting. I’m just feel
-    13.51s  agent 발화 시작: Mm-hmm.
-    14.24s  agent 발화 끝
-    16.48s  agent 발화 시작: That’s perfectly alright, Hana. Feeling stuck is a very comm
-    16.64s  user  발화 끝
-    25.66s  agent 발화 끝
-    26.37s  user  발화 시작: It's not really creativity, though. It's work. I have a huge
-    31.11s  agent 발화 시작: Ah, work presentations can be incredibly daunting. It's less
-    31.23s  user  발화 끝
-    36.60s  user  발화 시작: Yeah.
-    37.23s  user  발화 끝
-    39.80s  user  발화 시작: Exactly! I keep rewriting the opening, and it's still terrib
-    40.28s  agent 발화 끝
-    43.41s  agent 발화 시작: [happy] That’s a classic sign of perfectionism creeping in. 
-    43.41s  user  발화 끝
-    50.00s  user  발화 시작: Yeah.
-    50.30s  user  발화 끝
-    52.68s  agent 발화 끝
-    52.80s  user  발화 시작: Easier said than done, right?
-    54.67s  agent 발화 시작: It is, absolutely. But remember, a rough draft doesn't need 
-    54.69s  user  발화 끝
-    62.95s  user  발화 시작: Yeah.
-    63.44s  user  발화 끝
-    66.08s  agent 발화 끝
-    67.23s  user  발화 시작: Clay… okay, I can visualize that.
-    70.19s  user  발화 끝
-    70.34s  agent 발화 시작: Good. Now, sometimes the biggest hurdle is simply the inner 
-    78.22s  agent 발화 끝
-    78.47s  user  발화 시작: That voice is LOUD right now.
-    80.54s  user  발화 끝
-    80.91s  agent 발화 시작: It often is! We can try a little exercise to quiet it. It in
-    89.81s  user  발화 시작: But what if my boss hates it, no matter how good it is?
-    90.60s  agent 발화 끝
-    92.55s  agent 발화 시작: That’s a valid concern, Hana. It’s natural to worry about ot
-    92.68s  user  발화 끝
-   101.63s  agent 발화 끝
-   101.89s  user  발화 시작: Okay, okay. The critic.
-   103.59s  user  발화 끝
-   103.94s  agent 발화 시작: We can practice reframing those negative thoughts. Instead o
-   108.57s  user  발화 시작: Uh-huh.
-   109.07s  user  발화 끝
-   114.11s  user  발화 시작: Hmm. A starting point. I guess that’s…less scary.
-   114.23s  agent 발화 끝
-   117.91s  agent 발화 시작: [curious] Exactly. It shifts the focus from judgment to prog
-   118.13s  user  발화 끝
-   122.74s  user  발화 시작: Uh-huh.
-   123.24s  user  발화 끝
-   129.66s  agent 발화 시작: And remember, Hana, your worth isn't tied to the success of 
-   129.68s  agent 발화 끝
-   137.91s  agent 발화 끝
-   138.07s  user  발화 시작: That’s…actually really helpful. It’s hard to remember someti
-   141.91s  user  발화 끝
-   141.94s  agent 발화 시작: [sigh] It is. We’re often our own harshest critics. Taking a
-   150.71s  agent 발화 끝
-   152.17s  user  발화 시작: Deep breaths. I can do that.
-   154.43s  user  발화 끝
-   154.83s  agent 발화 시작: Wonderful. And if you find yourself spiraling, remember that
-   159.65s  user  발화 시작: Yeah.
-   160.48s  user  발화 끝
-   163.41s  agent 발화 끝
-   163.47s  user  발화 시작: Maybe I'll ask a coworker to look it over. Thanks, Taia.
-   165.68s  agent 발화 시작: Uh-huh.
-   166.32s  agent 발화 끝
-   166.63s  agent 발화 시작: [happy] You’re very welcome, Hana. I'm glad I could offer so
-   166.69s  user  발화 끝
-   173.71s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Jordan, I’m Men, your wellness coach.
+     1.31s  user  발화 시작: Yeah.
+     1.81s  user  발화 끝
+     2.91s  agent 발화 끝
+     3.58s  user  발화 시작: Men… that’s an unusual name. Is that… Korean? I’m just start
+     9.74s  agent 발화 시작: [curious] It is! My parents wanted a name meaning “to strive
+     9.84s  user  발화 끝
+    17.62s  agent 발화 끝
+    17.93s  user  발화 시작: It’s a senior leadership position, a big change from what I'
+    23.91s  agent 발화 시작: It’s perfectly normal to feel that way when taking on new re
+    23.95s  user  발화 끝
+    31.21s  user  발화 시작: …but how do I even *begin* to prioritize everything? There’s
+    31.80s  agent 발화 끝
+    36.02s  user  발화 끝
+    36.04s  agent 발화 시작: [happy] That’s a fantastic question, Jordan. Let’s focus on 
+    39.95s  user  발화 시작: Yeah.
+    40.44s  user  발화 끝
+    45.49s  agent 발화 끝
+    45.54s  user  발화 시작: Okay, that sounds… less terrifying. What’s the first thing I
+    51.23s  user  발화 끝

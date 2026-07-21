@@ -1,105 +1,85 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 미우스이며, 큰 삶의 변화를 겪는 사람들을 돕는 장난기 있고 따뜻한 조언자입니다. 대처 전략, 꾸준한 일상 유지, 자기 연민 실천 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
+SYSTEM: <system> 당신은 번아웃과 회복을 돕는 침착하고 인내심 있는 커리어 코치인 프레아크스입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 유능하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "보준",
+    "name": "주진",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "60s",
+    "age_range": "mid 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "wake",
-      "text": "User usually wakes up close to 9am after night shifts."
+      "date": "2026-05-24",
+      "category": "coffee",
+      "text": "User's usual coffee order is a cappuccino with oat milk."
     },
     {
-      "date": "2026-04-08",
-      "category": "partner",
-      "text": "User's partner is named Noah."
+      "date": "2026-05-20",
+      "category": "floor",
+      "text": "User lives on the 5th floor."
     },
     {
-      "date": "2026-03-15",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 19°C."
-    },
-    {
-      "date": "2026-02-24",
-      "category": "dislike",
-      "text": "User can't stand licorice."
-    },
-    {
-      "date": "2026-02-22",
+      "date": "2026-05-04",
       "category": "savings",
-      "text": "User is saving for a trip to Europe next year."
+      "text": "User is saving for a down payment on an apartment."
     },
     {
-      "date": "2026-02-09",
-      "category": "airline",
-      "text": "User usually flies with Qatar Airways."
+      "date": "2026-05-01",
+      "category": "work",
+      "text": "User works as a mechanical engineer."
     },
     {
-      "date": "2026-02-05",
-      "category": "bloodtype",
-      "text": "User's blood type is B-."
+      "date": "2026-02-28",
+      "category": "music",
+      "text": "User likes listening to classical piano."
     },
     {
-      "date": "2025-12-04",
-      "category": "sibling",
-      "text": "User has a younger sibling named Noah."
+      "date": "2025-12-03",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 26°C."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
-      "title": "Setting up a home network",
+      "date": "2026-03-30",
+      "title": "Fixing a leaking faucet",
       "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
       ]
     },
     {
-      "date": "2026-04-26",
+      "date": "2026-01-27",
+      "title": "Sorting out a visa",
+      "bullets": [
+        "applying for a working-holiday visa to Australia",
+        "asked about the bank-balance requirement"
+      ]
+    },
+    {
+      "date": "2026-01-23",
       "title": "Meal-prep planning",
       "bullets": [
         "wants high-protein lunches under 600 calories",
         "avoiding dairy this month"
-      ]
-    },
-    {
-      "date": "2026-03-19",
-      "title": "Planning a camping trip",
-      "bullets": [
-        "a weekend at a lake site in September",
-        "asked about a 4-person tent and a cooler"
-      ]
-    },
-    {
-      "date": "2025-12-30",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing the Kia Niro hybrid and Hyundai Ioniq",
-        "wants under 30k miles and below 25M won"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 데이터 분석 코드 생성 세션…
-[  3.93s][user ] …사십이번 종료하고 테스트 케이스 ⟨ret@6.81s⟩ 만들어줘.
-[  5.92s][moshi] «backchannel» 그렇죠.
-[  7.33s][moshi] ⟦⚡SPAN@7.82s: (tool result) Session 42 ended. Test cases created: data analysis tests.py.⟧ 코드 생성 세션 사십이번을 종료했고, 테스트 케이스 data_analysis_tests.py를 만들었어요.
-      CALL: {"function": "browser", "arguments": {"action": "end_codegen_session", "session_id": "42", "create_tests": true}}
-[ 10.72s][user ] «backchannel» 응.
-[ 13.97s][user ] 그 파일 어디에 저장됐어?
-[ 16.17s][moshi] ⟨ret@16.12s⟩ ⟦⚡SPAN@17.17s: The file was saved to /home/user/documents/data_analysis_tests.py.⟧ 파일은 /home/user/documents/data_analysis_tests.py에 저장됐어요.
+[  0.00s][user ] 코드 생성 세션 시작해서 테스트 디렉터리에 저장해 ⟨ret@2.95s⟩ 줘.
+[  3.25s][moshi] [happy] ⟦⚡SPAN@3.92s: (tool result) {"session id": "cg-20260710-1433-892", "status": "active"}⟧ 코드 생성 세션이 시작됐습니다. 세션 아이디는 씨 지 이 공 이 육 공 칠 일 공 일 사 삼 삼 팔 구 이이고, 현재 활성화되어 있습니다.
+      CALL: {"function": "start_codegen_session", "arguments": {"directory": "tests"}}
+[ 10.40s][user ] «backchannel» 네네.
+[ 15.53s][user ] 음, 그 세션에 간단한 유닛 테스트 코드를 만들어 줘. 함수 이름은 'calculate_sum'으로 하고, 두 개의 정수를 더하는 기능으로 해 줘.
+[ 22.64s][moshi] ⟨ret@22.53s⟩ ⟦⚡SPAN@23.18s: {"code": "def calculate_sum(a, b):\n  return a + b"}⟧ [happy] 네, 'calculate_sum' 함수에 대한 유닛 테스트 코드를 생성했습니다. 두 정수를 더하는 기능입니다.

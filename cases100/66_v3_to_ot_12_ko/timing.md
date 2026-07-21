@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "다율",
+#     "name": "지서",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,45 +12,55 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "work",
-#       "text": "User works as a midwife."
+#       "date": "2026-06-16",
+#       "category": "commute",
+#       "text": "User works from home."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "streaming",
-#       "text": "User subscribes to Disney+ and YouTube Premium."
+#       "date": "2026-06-04",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Jisoo."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is tonkotsu ramen."
+#       "date": "2026-05-24",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
+#     },
+#     {
+#       "date": "2026-05-20",
+#       "category": "show",
+#       "text": "User is currently watching a sci-fi series."
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "category": "learning",
+#       "text": "User is studying Japanese."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     },
 #     {
 #       "date": "2026-02-15",
-#       "category": "allergy",
-#       "text": "User is allergic to latex."
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "dislike",
-#       "text": "User can't stand durian."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "date": "2026-02-04",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 26°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-15",
+#       "date": "2026-05-28",
 #       "title": "Renovating the bathroom",
 #       "bullets": [
 #         "budget of 6M won",
@@ -58,49 +68,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "title": "Choosing a preschool",
+#       "date": "2026-04-13",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "title": "Planning a wedding",
-#       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 사물 인터넷에 대해 관심이 많아서요, 그 말이 처음 나온 | S2 잠깐만, 오늘 저녁 뭐 먹을까? | S3 아, 죄송해요. 다시 말씀드리면, 그 단어가 처음 나온 해가  | S4 아니요, 감사합니다.
 
-     0.00s  user  발화 시작: 요즘 사물 인터넷에 대해 관심이 많아서요, 그 말이 처음 나온 게 언제인지 궁금해요.
-     5.85s  <ret> 발화 (turn1 첫 프레임)
-     6.08s  agent 발화 시작: <ret> 사물 인터넷이라는 용어는 천구백구십구년에 프로크터 앤 갬블에서 일하시던 케빈 애쉬턴 님이 처음 사
-     6.26s  user  발화 끝
-     7.23s  ⚡SPAN 주입 [d'=1.38s / d_lead=7.55s]: The term “Internet of Things” was coined by Kevin Ashton in 1999 while
-    11.47s  user  발화 시작: 그렇죠.
-    12.29s  user  발화 끝
-    13.62s  agent 발화 끝
-    14.30s  user  발화 시작: 잠깐만, 오늘 저녁 뭐 먹을까?
-    16.88s  user  발화 시작: 아, 죄송해요. 다시 말씀드리면, 그 단어가 처음 나온 해가 천구백구십구년이라고 하셨죠?
-    17.16s  user  발화 끝
-    23.32s  user  발화 끝
-    23.33s  agent 발화 시작: 네, 맞아요. 천구백구십구년에 케빈 애쉬턴 님이 프로크터 앤 갬블에서 일하면서 처음 사용하셨답니다.
-    30.49s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요?
-    30.65s  agent 발화 끝
-    32.61s  agent 발화 끝
-    32.86s  user  발화 시작: 아니요, 감사합니다.
-    34.38s  user  발화 끝
+     0.00s  user  발화 시작: 심파시 포 더 데블 베이스는 누가 쳤어?
+     2.50s  <ret> 발화 (turn1 첫 프레임)
+     2.74s  agent 발화 시작: <ret> 롤링 스톤즈의 천구백육십팔년 곡 "심파시 포 더 데블"의 베이스는 키스 리처드가 연주했어요.
+     2.91s  user  발화 끝
+     3.88s  ⚡SPAN 주입 [d'=1.38s / d_lead=6.76s]: Keith Richards played bass on the Rolling Stones' 1968 song "Sympathy 
+     5.68s  user  발화 시작: 어어.
+     6.50s  user  발화 끝
+     9.51s  agent 발화 끝
+     9.78s  user  발화 시작: 잠깐만, 김 부장님께 전화 좀 해야 돼.
+    12.50s  user  발화 시작: 아, 맞다. 키스 리처드였지.
+    12.55s  user  발화 끝
+    15.36s  user  발화 끝
+    15.43s  agent 발화 시작: 네, 맞아요. 키스 리처드 씨가 연주하셨답니다. 혹시 롤링 스톤즈 다른 곡에 대해서도 궁금하신가요?
+    24.37s  agent 발화 끝

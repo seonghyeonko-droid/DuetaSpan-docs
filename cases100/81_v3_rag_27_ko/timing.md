@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "수민",
+#     "name": "다은",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,86 +13,92 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "date": "2026-05-01",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
 #     },
 #     {
-#       "date": "2026-06-20",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
-#     },
-#     {
-#       "date": "2026-04-14",
-#       "category": "hobby",
-#       "text": "User is into pottery."
-#     },
-#     {
-#       "date": "2026-02-19",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Emma."
-#     },
-#     {
-#       "date": "2026-01-27",
+#       "date": "2026-04-28",
 #       "category": "learning",
-#       "text": "User is taking an online data-science course."
+#       "text": "User is studying for the CPA exam."
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "category": "medication",
-#       "text": "User takes a vitamin D supplement."
+#       "date": "2026-04-17",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "anniversary",
+#       "text": "User's anniversary is November 19."
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "category": "car",
+#       "text": "User drives a 2015 Toyota Corolla."
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Rin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Planning a dinner party",
+#       "date": "2026-03-28",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "title": "Refinancing a mortgage",
+#       "date": "2025-12-31",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 레리 씨. 요즘 건강 관리에 관심이 많아서요. 라 | S2 링컨 하이웨이가 뭐예요? | S3 … 혹시 그 방송국에서 운동 프로그램을… | S4 …몇 시에 하는지 알 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 요즘 뭐 재미있는 잡지 봐요? | S2 아, 마사 스튜어트. 그 잡지 유명하죠. | S3 홈스타일링 말고 다른 잡지도 봐요? | S4 철도는 잘 모르지만, 잡지 종류가 진짜 다양하네요.
 
-     0.00s  user  발화 시작: 안녕하세요, 레리 씨. 요즘 건강 관리에 관심이 많아서요. 라디오를 듣는 것도 좋아하는데, 혹시 건강 관련 
-     2.95s  agent 발화 시작: 네.
-     3.58s  agent 발화 끝
-     9.92s  user  발화 끝
-    10.18s  agent 발화 시작: 안녕하세요! 건강 관리에 관심이 많으시다니 정말 잘 생각하셨어요. 라디오를 통해 건강 정보를 얻는 것도 좋은
-    24.94s  user  발화 시작: 주로 운동이나 식단 같은 정보를 듣고 싶어요.
-    25.40s  agent 발화 끝
-    27.77s  <ret> 발화 (turn4 첫 프레임)
-    27.83s  agent 발화 시작: <ret> 더블유 이 알 티라는 라디오 방송국은 링컨 하이웨이에서 방송을 송출하고 있어요.
-    27.99s  user  발화 끝
-    28.95s  ⚡SPAN 주입 [d'=1.17s / d_lead=6.34s]: WERT is a radio station that is broadcast from its studios on the Linc
-    34.18s  agent 발화 끝
-    34.40s  user  발화 시작: 링컨 하이웨이가 뭐예요?
-    36.03s  agent 발화 시작: 링컨 하이웨이는 —
-    36.19s  user  발화 끝
-    37.50s  agent 발화 끝
-    38.90s  user  발화 시작: … 혹시 그 방송국에서 운동 프로그램을…
-    42.00s  user  발화 끝
-    43.71s  user  발화 시작: …몇 시에 하는지 알 수 있을까요?
-    45.46s  <ret> 발화 (turn9 첫 프레임)
-    45.69s  user  발화 끝
-    45.70s  agent 발화 시작: <ret> 더블유 이 알 티 방송국에서 평일 아침 일곱시에 “핏 앤 패뷸러스”, 토요일 아침 아홉시에 “위켄
-    45.92s  ⚡SPAN 주입 [d'=0.45s / d_lead=9.69s]: (tool result) WERT broadcasts “Fit & Fabulous” every weekday at 7:00 A
-    55.29s  agent 발화 시작: 운동 시간 놓치지 마시고 건강한 하루 보내세요!
-    55.38s  agent 발화 끝
-    58.84s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 뭐 재미있는 잡지 봐요?
+     2.00s  <ret> 발화 (turn1 첫 프레임)
+     2.29s  agent 발화 시작: <ret> 저는 주로 라이프스타일 잡지를 보는데요, 마사 스튜어트 리빙 같은 잡지가 인기가 많아요.
+     2.31s  user  발화 끝
+     2.80s  ⚡SPAN 주입 [d'=0.81s / d_lead=6.35s]: Martha Stewart Living is an American monthly magazine focused on homek
+     8.61s  agent 발화 시작: 마사 스튜어트 리빙은 집 꾸미기, 요리, 손님 초대, 정원 가꾸기에 초점을 맞춘 미국의 월간 잡지예요.
+     8.64s  agent 발화 끝
+    10.51s  user  발화 시작: 아.
+    11.14s  user  발화 끝
+    14.73s  user  발화 시작: 아, 마사 스튜어트. 그 잡지 유명하죠.
+    14.82s  agent 발화 끝
+    17.78s  user  발화 끝
+    17.90s  agent 발화 시작: [happy] 네, 아주 유명하죠. 특히 홈스타일링 팁이 많은 걸로 알려져 있어요.
+    19.94s  user  발화 시작: 음.
+    20.44s  user  발화 끝
+    21.88s  agent 발화 끝
+    21.93s  user  발화 시작: 홈스타일링 말고 다른 잡지도 봐요?
+    24.40s  <ret> 발화 (turn8 첫 프레임)
+    24.61s  ⚡SPAN 주입 [d'=1.03s / d_lead=5.78s]: Tall Timber Short Lines is a bimonthly magazine devoted to narrow gaug
+    24.67s  agent 발화 시작: <ret> Tall Timber Short Lines는 좁은 게이지 철도, 역사적인 것과 현대적인 것을 다루
+    24.74s  user  발화 끝
+    28.62s  user  발화 시작: 어.
+    29.11s  user  발화 끝
+    30.28s  agent 발화 시작: 좁은 게이지 철도에 대한 내용인데, 꽤 매니아층이 두터운 잡지랍니다. [curious] 혹시 철도에 관심 있
+    30.45s  agent 발화 끝
+    33.25s  user  발화 시작: 어.
+    33.74s  user  발화 끝
+    37.79s  user  발화 시작: 철도는 잘 모르지만, 잡지 종류가 진짜 다양하네요.
+    38.02s  agent 발화 끝
+    42.42s  user  발화 끝
+    42.45s  agent 발화 시작: [happy] 그렇죠? 세상에는 정말 다양한 취미를 가진 분들이 많아서 잡지 종류도 무궁무진해요.
+    47.97s  agent 발화 끝

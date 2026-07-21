@@ -4,112 +4,194 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Taylor",
+#     "name": "Jack",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "mid 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "60s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
+#       "date": "2026-06-18",
+#       "category": "airline",
+#       "text": "User usually flies with Lufthansa."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a flat white."
+#       "date": "2026-06-05",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Daniel."
 #     },
 #     {
-#       "date": "2026-03-25",
+#       "date": "2026-05-31",
+#       "category": "streaming",
+#       "text": "User subscribes to Wavve and Melon."
+#     },
+#     {
+#       "date": "2026-05-04",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "car",
-#       "text": "User drives a 2019 Hyundai Tucson."
+#       "date": "2026-04-15",
+#       "category": "home",
+#       "text": "User's home address is 236 Chestnut Street."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Yuna."
+#       "date": "2026-03-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Patagonia in January."
 #     },
 #     {
-#       "date": "2026-02-10",
-#       "category": "phone",
-#       "text": "User uses a Galaxy S24."
+#       "date": "2026-03-16",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-01-10",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
 #     },
 #     {
-#       "date": "2026-01-16",
-#       "category": "schedule",
-#       "text": "User has a hybrid 3-days-in-office week."
+#       "date": "2025-12-31",
+#       "category": "employer",
+#       "text": "User works at a fintech startup."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Looking for a therapist",
+#       "date": "2026-04-22",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-19",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "title": "Researching a used car",
+#       "date": "2026-04-10",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Frona, I'm trying to plan some  | S2 That sounds good… | S3 …but I'm also trying to increase m | S4 Okay, great. And can you quickly c
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to get from Chicago to | S2 Three hours is much better. What's | S3 You’re right. Small steps. I like  | S4 A terrible line? Really?
 
-     0.00s  user  발화 시작: Hi Frona, I'm trying to plan some healthy meals for the week
-     7.13s  <ret> 발화 (turn1 첫 프레임)
-     7.19s  user  발화 끝
-     7.20s  agent 발화 시작: <ret> A really good way to get started is baking a six-ounce
-     8.00s  ⚡SPAN 주입 [d'=0.86s / d_lead=17.35s]: Roasted salmon with vegetables is a healthy and delicious meal. A simp
-    24.55s  agent 발화 끝
-    24.65s  user  발화 시작: That sounds good…
-    25.98s  user  발화 끝
-    28.05s  user  발화 시작: …but I'm also trying to increase my water intake. How much w
-    29.98s  agent 발화 시작: Yeah.
-    30.61s  agent 발화 끝
-    32.97s  <ret> 발화 (turn5 첫 프레임)
-    33.44s  ⚡SPAN 주입 [d'=1.50s / d_lead=11.59s]: (tool result) The general recommendation for daily water intake is aro
-    33.50s  agent 발화 시작: <ret> The general recommendation is around eight glasses, or
-    33.65s  user  발화 끝
-    45.09s  agent 발화 끝
-    45.23s  user  발화 시작: Okay, great. And can you quickly check the weather in Busan 
-    47.32s  agent 발화 시작: Yeah.
-    47.95s  agent 발화 끝
-    49.02s  agent 발화 시작: Give me a moment while I check the forecast for Busan.
-    49.12s  user  발화 끝
-    51.04s  ⚡지연 SPAN 주입(선제발표 직전): Busan: Tomorrow: 26.5°C, humidity 78%, wind 4.2 km/h, chance of rain 1
-    52.15s  agent 발화 시작: <ret> Just got the forecast for you! Tomorrow in Busan it wi
-    52.21s  agent 발화 끝
-    65.41s  agent 발화 끝
+     0.00s  user  발화 시작: Tell me how to get from Chicago to Boston using public trans
+     3.75s  <ret> 발화 (turn1 첫 프레임)
+     3.82s  agent 발화 시작: <ret> Okay, to get from Chicago to Boston by public transpor
+     4.03s  user  발화 끝
+     4.61s  ⚡SPAN 주입 [d'=0.86s / d_lead=5.04s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Take the
+     8.26s  user  발화 시작: …how long will the whole trip take?
+     8.87s  agent 발화 끝
+    10.24s  user  발화 끝
+    10.53s  agent 발화 시작: Let’s finish mapping out the whole route first, then I can g
+    15.00s  user  발화 시작: Sounds good.
+    15.11s  agent 발화 끝
+    15.83s  user  발화 끝
+    15.94s  agent 발화 시작: [happy] Alright, after the Brown Line, you'll transfer to an
+    19.63s  user  발화 시작: Yeah.
+    20.26s  user  발화 끝
+    21.23s  agent 발화 시작: The Amtrak will take you directly to Boston’s South Station.
+    21.26s  agent 발화 끝
+    28.23s  agent 발화 끝
+    28.25s  user  발화 시작: Twenty hours! Wow. Is there a faster way…
+    32.26s  user  발화 끝
+    33.68s  user  발화 시작: …even if it's more expensive?
+    34.84s  <ret> 발화 (turn10 첫 프레임)
+    35.34s  user  발화 끝
+    35.46s  agent 발화 시작: <ret> There is! Flying is much faster. A flight from Chicago
+    36.34s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.84s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Fly from
+    43.30s  agent 발화 끝
+    44.82s  user  발화 시작: Three hours is much better. What's the price range for a fli
+    46.42s  agent 발화 시작: Yeah.
+    47.24s  agent 발화 끝
+    48.11s  <ret> 발화 (turn13 첫 프레임)
+    48.57s  user  발화 끝
+    48.61s  agent 발화 시작: <ret> A flight with United Airlines on July 10th is currentl
+    48.88s  ⚡SPAN 주입 [d'=0.76s / d_lead=8.16s]: (tool result) {"flights": [{"airline": "United Airlines", "price": "35
+    56.62s  user  발화 시작: That’s not terrible. I think I’ll look into flights more ser
+    56.77s  agent 발화 끝
+    60.14s  agent 발화 시작: [happy] That sounds like a good plan! Sometimes a little tim
+    60.33s  user  발화 끝
+    65.33s  agent 발화 끝
+    67.05s  user  발화 시작: I’m feeling a bit overwhelmed with planning this whole trip,
+    70.84s  agent 발화 시작: It’s completely normal to feel that way when planning a trip
+    70.98s  user  발화 끝
+    78.67s  user  발화 시작: Easier said than done, I guess.
+    78.67s  agent 발화 끝
+    80.65s  user  발화 끝
+    80.72s  agent 발화 시작: It is! Try breaking it down into the smallest possible steps
+    86.74s  user  발화 시작: Yeah.
+    87.24s  user  발화 끝
+    88.59s  user  발화 시작: You’re right. Small steps. I like that.
+    88.64s  agent 발화 끝
+    91.13s  user  발화 끝
+    91.43s  agent 발화 시작: That’s the key. Think of it like building a muscle – tiny da
+    96.68s  user  발화 시작: That's a good analogy. I struggle with that inner critic, th
+    96.94s  agent 발화 끝
+   100.19s  user  발화 끝
+   100.33s  agent 발화 시작: Oh, the inner critic! We all have one. It’s the voice that t
+   106.53s  agent 발화 시작: A rough draft is your shield against it. It’s permission to 
+   106.67s  agent 발화 끝
+   110.91s  user  발화 시작: Mm-hmm.
+   111.31s  user  발화 끝
+   113.78s  user  발화 시작: That makes sense. Just get something down on paper.
+   113.99s  agent 발화 끝
+   116.69s  user  발화 끝
+   116.75s  agent 발화 시작: Exactly! And remember, the first draft is for *you*. No one 
+   118.83s  user  발화 시작: Mm-hmm.
+   119.32s  user  발화 끝
+   122.82s  agent 발화 끝
+   123.23s  user  발화 시작: I've been trying to write a short story, but I keep getting 
+   125.48s  agent 발화 시작: Mm-hmm.
+   126.11s  agent 발화 끝
+   127.26s  user  발화 끝
+   127.42s  agent 발화 시작: [curious] Oh, that’s a classic block! Sometimes, just writin
+   136.13s  agent 발화 끝
+   137.01s  user  발화 시작: A terrible line? Really?
+   138.97s  agent 발화 시작: It’s like priming a pump. You don’t need a masterpiece, just
+   139.07s  user  발화 끝
+   144.65s  user  발화 시작: I guess I’m afraid of wasting time on something I’ll just de
+   144.71s  agent 발화 끝
+   148.35s  user  발화 끝
+   148.48s  agent 발화 시작: But isn't any time spent creating, even if it's discarded, s
+   152.75s  user  발화 시작: Mm-hmm.
+   153.28s  user  발화 끝
+   156.50s  agent 발화 끝
+   156.56s  user  발화 시작: [sigh] You’re right. I need to let go of perfectionism.
+   159.66s  user  발화 끝
+   160.10s  agent 발화 시작: It’s a process, and it takes practice. Be kind to yourself, 
+   162.09s  user  발화 시작: Yeah.
+   162.91s  user  발화 끝
+   166.83s  agent 발화 끝
+   166.83s  user  발화 시작: Thank you, Ren. That actually really helps.
+   169.06s  <ret> 발화 (turn42 첫 프레임)
+   169.18s  agent 발화 시작: <ret> I'm glad to hear that. I promised to look up some loca
+   169.37s  user  발화 끝
+   169.78s  ⚡SPAN 주입 [d'=0.73s / d_lead=6.49s]: {"classes": [{"name": "Boston Art Alliance", "description": "Painting 
+   187.28s  agent 발화 끝

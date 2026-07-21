@@ -4,144 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Isla",
+#     "name": "Casey",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a caramel latte."
+#       "date": "2026-06-22",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-15",
-#       "category": "floor",
-#       "text": "User lives on the 5th floor."
+#       "date": "2026-05-26",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 22°C."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "hobby",
-#       "text": "User is into calligraphy."
-#     },
-#     {
-#       "date": "2026-05-07",
+#       "date": "2026-05-22",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a pharmacist."
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-04-23",
+#       "category": "skill",
+#       "text": "User is getting fairly good at freediving."
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
+#       "date": "2026-04-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in June."
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "category": "commute",
-#       "text": "User takes a shuttle bus."
+#       "date": "2026-02-08",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is bún chả."
+#     },
+#     {
+#       "date": "2026-01-31",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Lucas."
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "category": "savings",
+#       "text": "User is saving for a wedding."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-04-28",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-04-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
 #         "wanted coverage for the basement office"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕, 벅스. 요즘 좀 길을 잃은 기분이야. 그냥… 의욕이 안 | S2 댄 호킨스라고? 다른 사람인 줄 알았어. 그냥… 에너지가 넘치 | S3 달리기를 좋아했는데, 몇 달 동안 안 했어. | S4 월 십이 점 구 구달러… 좀 비싸네. 당분간은 무료 유튜브 영
+# EXAMINER(FDB-v2) 단계: S1 안녕 토라라, 요즘 진짜 외로워. | S2 응, 맞아. 내가 연락 안 하면 걔네들은 연락 안 하더라고. | S3 그건 알겠는데, '충분한' 노력이 뭔지 알기가 어렵잖아. | S4 그러면… 그냥 새로운 친구를 찾아? 말처럼 쉬운 일이 아니잖아
 
-     0.00s  user  발화 시작: 안녕, 벅스. 요즘 좀 길을 잃은 기분이야. 그냥… 의욕이 안 나.
-     5.07s  agent 발화 시작: 가끔 길을 잃는 건 괜찮아요. 우리 모두 그런 시기를 겪어요. 지금 가장 힘든 게 뭔데요?
-     5.09s  user  발화 끝
-    11.31s  user  발화 시작: 글쎄… 모든 게. 일, 집 정리, 심지어 취미도 귀찮아.
-    11.42s  agent 발화 끝
-    15.84s  agent 발화 시작: 정말 힘드시겠네요. 일이 쌓이고 압도당하는 건 흔한 일이에요. 좀 나눠서 생각해 볼까요?
-    15.84s  user  발화 끝
-    20.63s  user  발화 시작: 음.
-    20.99s  user  발화 끝
-    22.45s  user  발화 시작: “I Believe in a Thing Called Love”라는 노래를 아까 들었는데, 누가 부르는 노래인
-    22.46s  agent 발화 끝
-    25.67s  agent 발화 시작: 예.
-    26.26s  agent 발화 끝
-    26.54s  <ret> 발화 (turn7 첫 프레임)
-    27.12s  agent 발화 시작: <ret> 그 노래는 댄 호킨스가 쓰고, 영국 록 밴드 더 다크니스가 연주했어요. [happy] 정말 좋은 
-    27.36s  user  발화 끝
-    27.71s  ⚡SPAN 주입 [d'=1.17s / d_lead=6.72s]: The song "I Believe in a Thing Called Love" was written by Dan Hawkins
-    30.33s  user  발화 시작: 음.
-    30.82s  user  발화 끝
-    33.84s  agent 발화 끝
-    33.99s  user  발화 시작: 댄 호킨스라고? 다른 사람인 줄 알았어. 그냥… 에너지가 넘치잖아.
-    39.10s  agent 발화 시작: 정말 활기찬 에너지가 있죠. 때로는 기분 전환을 위해 좋은 노래 한 곡이면 충분할 때도 있어요.
-    39.17s  user  발화 끝
-    45.22s  agent 발화 끝
-    45.79s  user  발화 시작: 그렇지. 말 나온 김에, 오늘 부산 날씨는 어때? 산책 갈까 생각 중이야.
-    51.53s  <ret> 발화 (turn12 첫 프레임)
-    51.67s  agent 발화 시작: <ret> 부산은 현재 섭씨 이십육 점 오도이고, 구름이 부분적으로 많고 부드러운 바람이 불고 있어요. [h
-    51.90s  user  발화 끝
-    52.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.43s]: (tool result) Busan: 26.5°C, humidity 68%, wind 7.2 km/h, partly cloud
-    60.11s  agent 발화 끝
-    60.27s  user  발화 시작: 이십육 점 오… 꽤 따뜻하네. 저녁에 기다려야겠다. 규칙적인 운동 루틴을 다시 시작하려고 노력 중이야.
-    63.47s  agent 발화 시작: 예.
-    63.78s  agent 발화 끝
-    68.75s  user  발화 끝
-    68.82s  agent 발화 시작: 정말 멋진 목표네요. 꾸준한 루틴은 의욕을 높이는 데 정말 도움이 될 수 있어요. 어떤 운동을 좋아하세요?
-    76.05s  user  발화 시작: 달리기를 좋아했는데, 몇 달 동안 안 했어.
-    76.09s  agent 발화 끝
-    79.22s  agent 발화 시작: 휴식 후에 다시 시작하기 어려울 수 있다는 건 이해해요. 산책부터 시작해서 조금씩 늘려보는 건 어때요?
-    79.28s  user  발화 끝
-    86.22s  agent 발화 끝
-    86.49s  user  발화 시작: 산책은 괜찮지. 명상도 해보고 싶어.
-    87.94s  agent 발화 시작: 그렇죠.
-    88.57s  agent 발화 끝
-    89.15s  <ret> 발화 (turn20 첫 프레임)
-    89.49s  agent 발화 시작: <ret> 명상은 마음을 진정시키는 데 아주 좋아요. 하루에 오분만이라도 효과가 있을 수 있어요. 초보자를 
-    89.68s  user  발화 끝
-    90.65s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.16s]: Guided meditation can reduce stress and improve focus; Headspace and C
-    97.56s  agent 발화 시작: 가이드 명상은 정말 도움이 될 수 있어요. Headspace와 Calm은 초보자 프로그램을 제공하는 인기 앱
-    97.65s  agent 발화 끝
-   100.96s  user  발화 시작: 응.
-   101.32s  user  발화 끝
-   106.04s  agent 발화 끝
-   107.70s  user  발화 시작: Headspace에 대해 들어본 것 같아. 비싼가?
-   111.03s  user  발화 끝
-   111.13s  <ret> 발화 (turn24 첫 프레임)
-   111.24s  agent 발화 시작: <ret> Headspace는 기본적인 과정을 무료로 제공하고, 구독료는 월 십이 점 구 구달러에서 연간 육
-   112.63s  ⚡SPAN 주입 [d'=1.50s / d_lead=11.92s]: (tool result) Headspace offers a free basic course, with subscription 
-   123.16s  agent 발화 끝
-   123.88s  user  발화 시작: 월 십이 점 구 구달러… 좀 비싸네. 당분간은 무료 유튜브 영상을 봐야겠다.
-   130.07s  agent 발화 시작: 괜찮아요! 이용 가능한 훌륭한 무료 자료가 많이 있어요. 중요한 건 *당신*에게 맞는 것을 찾는 거예요.
-   130.22s  user  발화 끝
-   133.78s  user  발화 시작: 응.
-   134.00s  user  발화 끝
-   136.33s  agent 발화 끝
-   137.80s  user  발화 시작: 맞아. 고마워, 벅스. 도움이 됐어.
-   139.21s  agent 발화 시작: 네네.
-   140.03s  agent 발화 끝
-   140.88s  agent 발화 시작: [happy] 천만에요. 작은 단계가 큰 변화로 이어질 수 있다는 것을 기억하세요. 조금이라도 도움이 될 수
-   141.13s  user  발화 끝
-   151.13s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕 토라라, 요즘 진짜 외로워.
+     2.48s  agent 발화 시작: 안녕! 가끔 외로운 감정 드는 건 당연하고, 얘기해 줘서 정말 대단해.
+     2.50s  user  발화 끝
+     7.36s  user  발화 시작: 그냥… 내가 항상 먼저 연락하는 것 같아.
+     7.62s  agent 발화 끝
+    11.74s  agent 발화 시작: 힘들지, 그런 상황이면 외로울 만해. 계속 먼저 연락하는 데 에너지가 많이 들잖아.
+    11.80s  user  발화 끝
+    17.35s  user  발화 시작: 응, 맞아. 내가 연락 안 하면 걔네들은 연락 안 하더라고.
+    17.49s  agent 발화 끝
+    21.24s  agent 발화 시작: 친구 관계에서 균형이 안 맞는 것 같다는 걸 알아차린 거네. 그걸 인지하는 게 좋았어.
+    21.24s  user  발화 끝
+    22.99s  user  발화 시작: 그치.
+    23.62s  user  발화 끝
+    26.20s  user  발화 시작: 근데 뭘 해야 해? 그냥… 연락하는 걸 멈춰? 그건 너무 끔찍해.
+    26.84s  agent 발화 끝
+    30.38s  <ret> 발화 (turn8 첫 프레임)
+    30.96s  agent 발화 시작: <ret> 건강한 관계는 서로 노력하는 게 중요하고, 그건 어느 정도 주고받는 걸 말하는 거야.
+    31.15s  user  발화 끝
+    31.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=6.39s]: Reciprocity in relationships is a key component of maintaining healthy
+    33.64s  user  발화 시작: 응.
+    33.99s  user  발화 끝
+    37.35s  agent 발화 끝
+    37.38s  user  발화 시작: 그건 알겠는데, '충분한' 노력이 뭔지 알기가 어렵잖아.
+    42.24s  agent 발화 시작: 맞아! 그건 정말 어려운 균형이야. 꼭 노력을 똑같이 맞춰야 하는 건 아니고, 소중하게 여겨지는 느낌을 받는
+    42.29s  user  발화 끝
+    50.44s  agent 발화 끝
+    50.92s  user  발화 시작: 만약 걔네들이 그냥… 그걸 소중히 여기지 않으면 어떡해?
+    54.29s  <ret> 발화 (turn13 첫 프레임)
+    54.42s  agent 발화 시작: <ret> 연구에 따르면 끈끈한 관계가 행복과 스트레스 감소에 중요하다고 해. 좋은 친구가 있는 사람들은 더
+    54.61s  user  발화 끝
+    55.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.50s]: A study by the University of California, Berkeley, found that individu
+    63.92s  agent 발화 끝
+    64.04s  user  발화 시작: 그러면… 그냥 새로운 친구를 찾아? 말처럼 쉬운 일이 아니잖아.
+    69.13s  user  발화 끝
+    69.31s  agent 발화 시작: 휴, 맞는 말이야. 쉽지 않아. 하지만 계속 너를 지치게 만드는 관계는 살짝 놓아주는 것도 괜찮아.
+    76.54s  agent 발화 끝

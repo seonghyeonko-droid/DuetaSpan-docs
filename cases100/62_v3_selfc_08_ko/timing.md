@@ -4,48 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "우형",
+#     "name": "혜현",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "mid 30s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "skill",
-#       "text": "User is getting fairly good at home fermentation."
+#       "date": "2026-06-09",
+#       "category": "airline",
+#       "text": "User usually flies with United."
 #     },
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-04-19",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2026-01-20",
 #       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is pad thai."
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2026-01-19",
 #       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
+#       "text": "User subscribes to a shared Netflix family plan."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "allergy",
-#       "text": "User is allergic to soy."
+#       "date": "2026-01-06",
+#       "category": "dislike",
+#       "text": "User can't stand cilantro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
+#       "date": "2026-06-19",
+#       "title": "Building a PC",
+#       "bullets": [
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "title": "Studying for the TOEIC",
 #       "bullets": [
 #         "target score is 850",
@@ -53,69 +61,45 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "title": "Choosing a laptop",
+#       "date": "2026-02-17",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-11",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "title": "Selling a used bike",
-#       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 환불 좀 해 주세요. 스물다섯 달러 오십센트요. 캡처 아이 디 | S2 다음 주 토요일에 부산 해운대 근처에 괜찮은 호텔 좀 찾아줄  | S3 음… 가격대는 보통 정도로 해 주세요. | S4 좋아요. 그럼 그 호텔로 예약해 주세요.
+# EXAMINER(FDB-v2) 단계: S1 이번 주 월요일로 예약된 회의 취소해 줘. | S2 잠깐만, 화요일 말고 수요일로 바꿔줘. | S3 … 수요일 오후 세 시로 해 줘. | S4 아니, 괜찮아. 그건 다야.
 
-     0.00s  user  발화 시작: 환불 좀 해 주세요. 스물다섯 달러 오십센트요. 캡처 아이 디는 C-one-two-three-four-fiv
-    15.67s  <ret> 발화 (turn1 첫 프레임)
-    15.96s  user  발화 끝
-    16.04s  agent 발화 시작: <ret> 네, 환불이 승인되었습니다. 스물다섯 달러 오십센트가 환불 처리되었고, 환불 아이 디는 R-sev
-    16.64s  ⚡SPAN 주입 [d'=0.96s / d_lead=9.23s]: (tool result) {"refund id": "R-seven-eight-nine-zero-one-two-three-fou
-    19.16s  user  발화 시작: 맞아.
-    19.90s  user  발화 끝
-    25.04s  user  발화 시작: 음… 잠깐만요, 송장 번호가 틀렸어요. 아이 엔 브이-nine-eight-seven-six-five-four
-    25.27s  agent 발화 끝
-    36.15s  <ret> 발화 (turn4 첫 프레임)
-    36.32s  agent 발화 시작: <ret> 아, 송장 번호가 잘못되었군요. 아이 엔 브이-nine-eight-seven-six-five-fo
-    36.49s  user  발화 끝
-    36.50s  ⚡SPAN 주입 [d'=0.35s / d_lead=13.08s]: (tool result) {"refund id": "R-seven-eight-nine-zero-one-two-three-fou
-    45.76s  user  발화 시작: 맞아.
-    46.53s  user  발화 끝
-    49.16s  agent 발화 시작: [happy] 환불이 완료되었다니 다행이네요.
-    49.40s  agent 발화 끝
-    51.19s  user  발화 시작: 다음 주 토요일에 부산 해운대 근처에 괜찮은 호텔 좀 찾아줄 수 있을까요?
-    51.28s  agent 발화 끝
-    55.92s  <ret> 발화 (turn8 첫 프레임)
-    56.33s  user  발화 끝
-    56.50s  agent 발화 시작: <ret> 부산 해운대는 아름다운 해변과 다채로운 시장, 산으로 유명한 멋진 도시죠. 다음 주 토요일에 해운
-    56.93s  ⚡SPAN 주입 [d'=1.01s / d_lead=19.68s]: Busan is a major port city in South Korea, known for its beaches, colo
-    76.18s  agent 발화 끝
-    76.74s  user  발화 시작: 음… 가격대는 보통 정도로 해 주세요.
-    79.17s  <ret> 발화 (turn10 첫 프레임)
-    79.38s  agent 발화 시작: <ret> 보통 가격대라면 해운대 그랜드 호텔이 괜찮겠네요. 해변과도 가깝고, 평점도 좋고요.
-    79.51s  user  발화 끝
-    79.70s  ⚡SPAN 주입 [d'=0.54s / d_lead=6.20s]: (tool result) {"hotels": [{"name": "Park Hyatt Busan", "price": 300000
-    82.43s  user  발화 시작: 응.
-    82.82s  user  발화 끝
-    85.46s  user  발화 시작: 좋아요. 그럼 그 호텔로 예약해 주세요.
-    85.58s  agent 발화 끝
-    87.61s  <ret> 발화 (turn13 첫 프레임)
-    88.01s  agent 발화 시작: <ret> 네, 해운대 그랜드 호텔 예약이 완료되었습니다. 예약 아이 디는 B-one-two-three-fo
-    88.14s  user  발화 끝
-    88.82s  ⚡SPAN 주입 [d'=1.21s / d_lead=8.67s]: (tool result) {"booking id": "B-one-two-three-four-five-six-seven-eigh
-    96.69s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 월요일로 예약된 회의 취소해 줘.
+     3.00s  <ret> 발화 (turn1 첫 프레임)
+     3.24s  user  발화 끝
+     3.38s  agent 발화 시작: <ret> 네, 회의 취소가 완료되었어요. 확인 번호는 엠 케이 칠 이 구 사입니다.
+     3.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.89s]: (tool result) {"status": "success", "confirmation id": "MK7294"}
+     7.66s  user  발화 시작: 음.
+     8.16s  user  발화 끝
+     9.26s  agent 발화 끝
+    10.34s  user  발화 시작: 아, 그런데 혹시 다음 주 화요일로 다시 예약할 수 있을까?
+    15.20s  user  발화 끝
+    15.24s  <ret> 발화 (turn4 첫 프레임)
+    15.41s  agent 발화 시작: <ret> 다음 주 화요일로 다시 예약해 드렸습니다. 확인 번호는 큐 엘 팔 오 일 육입니다.
+    15.59s  ⚡SPAN 주입 [d'=0.35s / d_lead=5.93s]: (tool result) {"status": "success", "confirmation id": "QL8516"}
+    18.66s  user  발화 시작: 음.
+    19.11s  user  발화 끝
+    21.31s  user  발화 시작: 잠깐만, 화요일 말고 수요일로 바꿔줘.
+    21.35s  agent 발화 끝
+    24.92s  user  발화 끝
+    24.95s  agent 발화 시작: 수요일로 변경해 드리려고 하는데—
+    26.66s  user  발화 시작: … 수요일 오후 세 시로 해 줘.
+    27.40s  agent 발화 끝
+    29.22s  <ret> 발화 (turn9 첫 프레임)
+    29.38s  user  발화 끝
+    29.81s  agent 발화 시작: <ret> 수요일 오후 세 시로 변경 완료되었어요. 확인 번호는 브이 엑스 삼 공 이 팔입니다. [happy
+    30.23s  ⚡SPAN 주입 [d'=1.01s / d_lead=9.69s]: (tool result) {"status": "success", "confirmation id": "VX3028"}
+    39.50s  agent 발화 끝
+    39.53s  user  발화 시작: 아니, 괜찮아. 그건 다야.
+    42.90s  user  발화 끝
+    43.27s  agent 발화 시작: 네, 알겠습니다. 혹시 업무 관련해서 스트레스 받으시는 일이 있으신가요?
+    49.19s  agent 발화 끝

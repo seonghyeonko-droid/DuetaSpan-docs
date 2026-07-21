@@ -4,162 +4,130 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Rowan",
+#     "name": "Theo",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "60s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "partner",
-#       "text": "User's partner is named Rin."
+#       "date": "2026-06-16",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
+#       "date": "2026-04-10",
+#       "category": "streaming",
+#       "text": "User subscribes to Apple Music and Coupang Play."
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "category": "hobby",
-#       "text": "User is into woodworking."
+#       "date": "2026-01-30",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 23°C."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Sichuan."
+#       "date": "2026-01-29",
+#       "category": "show",
+#       "text": "User is currently watching a nature documentary series."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
-#     },
-#     {
-#       "date": "2026-04-18",
-#       "category": "floor",
-#       "text": "User lives on the 15th floor."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is mushroom risotto."
-#     },
-#     {
-#       "date": "2026-03-02",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a caramel latte."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "phone",
-#       "text": "User uses an iPhone 13."
+#       "date": "2026-01-01",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
+#       "date": "2026-04-14",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-29",
+#       "title": "Refinancing a mortgage",
+#       "bullets": [
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-01",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
 #         "wanted coverage for the basement office"
 #       ]
-#     },
-#     {
-#       "date": "2026-05-05",
-#       "title": "Switching phone plans",
-#       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "title": "Planning a wedding",
-#       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Beaia, do you know anything ab | S2 March 4th, 2016... That's a specif | S3 …Do they tour much, or are they mo | S4 Maybe. I’ll look at their tour…
+# EXAMINER(FDB-v2) 단계: S1 Hi, I'm trying to remember a song. | S2 Indie pop… okay, that fits. But I  | S3 Buick Cascada… right! That's defin | S4 …please. I really struggle to get 
 
-     0.00s  user  발화 시작: Hey Beaia, do you know anything about the band Architects?
-     2.86s  user  발화 끝
-     3.17s  agent 발화 시작: Architects are a British metalcore band, known for their emo
-    16.40s  agent 발화 끝
-    16.66s  user  발화 시작: Okay, cool. What about a band called Like Moths to Flames?
-    20.96s  user  발화 끝
-    21.02s  <ret> 발화 (turn3 첫 프레임)
-    21.03s  agent 발화 시작: <ret> Like Moths to Flames is an American metalcore band, or
-    21.12s  ⚡SPAN 주입 [d'=1.03s / d_lead=10.81s]: Like Moths to Flames is an American metalcore band from Atlanta, Georg
-    31.84s  agent 발화 끝
-    31.95s  user  발화 시작: Atlanta, huh? That’s interesting. Have they released many al
-    36.41s  <ret> 발화 (turn5 첫 프레임)
-    36.70s  agent 발화 시작: <ret> They released their second full-length album, titled *
-    36.91s  user  발화 끝
-    37.91s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.76s]: Like Moths to Flames released their second full-length album, *Rage*, 
-    42.49s  user  발화 시작: Yeah.
-    42.94s  user  발화 끝
-    45.47s  agent 발화 끝
-    46.64s  user  발화 시작: March 4th, 2016... That's a specific date. What kind of them
-    54.76s  user  발화 끝
-    55.14s  agent 발화 시작: They often delve into themes of personal struggle, overcomin
-    60.75s  user  발화 시작: Yeah, totally.
-    61.89s  user  발화 끝
-    66.60s  agent 발화 끝
-    67.40s  user  발화 시작: I get that. Do they have any songs that are particularly wel
-    71.48s  <ret> 발화 (turn11 첫 프레임)
-    71.59s  agent 발화 시작: <ret> One of their most popular songs is “Bury Me”, from the
-    71.71s  user  발화 끝
-    72.63s  ⚡SPAN 주입 [d'=1.15s / d_lead=9.55s]: "Bury Me" from the album *Rage* is one of Like Moths to Flames’ most p
-    75.51s  user  발화 시작: Yeah.
-    75.95s  user  발화 끝
-    80.74s  user  발화 시작: Seventeen million views, wow! That’s a lot. I’m trying to ge
-    81.15s  agent 발화 끝
-    87.33s  agent 발화 시작: It’s great you’re exploring new music! –
-    87.51s  user  발화 끝
-    89.72s  user  발화 시작: …Do they tour much, or are they more of a studio band?
-    90.38s  agent 발화 끝
-    93.24s  agent 발화 시작: They do tour quite frequently, actually. They’ve played show
-    93.28s  user  발화 끝
-   100.39s  user  발화 시작: Right.
-   101.11s  user  발화 끝
-   103.86s  agent 발화 끝
-   104.05s  user  발화 시작: That’s good to know. Are they still together as a band, or d
-   105.68s  agent 발화 시작: Yeah, yeah.
-   107.10s  agent 발화 끝
-   108.16s  <ret> 발화 (turn20 첫 프레임)
-   108.44s  ⚡SPAN 주입 [d'=0.56s / d_lead=9.88s]: As of November 2023, Like Moths to Flames remains an active band, with
-   108.45s  user  발화 끝
-   108.50s  agent 발화 시작: <ret> As of November 2023, Like Moths to Flames is still an 
-   112.81s  user  발화 시작: Mm-hmm.
-   113.44s  user  발화 끝
-   118.38s  agent 발화 끝
-   119.36s  user  발화 시작: Okay, that's a relief. It’s always sad when a good band call
-   123.96s  agent 발화 시작: [happy] It is! It's wonderful to hear they're still creating
-   124.08s  user  발화 끝
-   131.23s  agent 발화 끝
-   131.62s  user  발화 시작: Maybe. I’ll look at their tour…
-   133.69s  user  발화 끝
-   135.71s  user  발화 시작: …dates. Thanks for the info, Beaia.
-   137.97s  user  발화 끝
-   138.00s  agent 발화 시작: [happy] You're very welcome! I'm glad I could help you disco
-   143.80s  agent 발화 끝
+     0.00s  user  발화 시작: Hi, I'm trying to remember a song. It's electronic, and I th
+     5.79s  user  발화 끝
+     6.16s  agent 발화 시작: Hello! I'm Halo, and I'm happy to help you jog your memory. 
+    12.14s  user  발화 시작: I know the title is "Dangerous," and I think the artist's na
+    12.17s  agent 발화 끝
+    17.83s  <ret> 발화 (turn3 첫 프레임)
+    17.84s  agent 발화 시작: <ret> That sounds like Big Data’s song “Dangerous”, which wa
+    17.93s  user  발화 끝
+    18.86s  ⚡SPAN 주입 [d'=1.03s / d_lead=6.76s]: Big Data's single "Dangerous" was certified gold by the Recording Indu
+    19.86s  user  발화 시작: Yeah.
+    20.35s  user  발화 끝
+    24.60s  agent 발화 끝
+    25.52s  user  발화 시작: Hmm, maybe. Gold certified… that's a good sign, but I'm stil
+    34.17s  agent 발화 시작: Big Data blends electronic music with elements of indie pop 
+    34.19s  user  발화 끝
+    43.46s  user  발화 시작: Indie pop… okay, that fits. But I thought I heard it on the 
+    43.63s  agent 발화 끝
+    46.91s  agent 발화 시작: Right.
+    47.40s  agent 발화 끝
+    50.32s  <ret> 발화 (turn9 첫 프레임)
+    50.44s  agent 발화 시작: <ret> Actually, "Dangerous" saw a bit of a comeback in 2016,
+    50.55s  user  발화 끝
+    51.82s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.97s]: The song "Dangerous" by Big Data experienced a resurgence in popularit
+    54.05s  user  발화 시작: Yeah.
+    54.58s  user  발화 끝
+    56.41s  agent 발화 끝
+    56.48s  user  발화 시작: Oh, commercials! That's probably it. What commercials used i
+    60.57s  <ret> 발화 (turn12 첫 프레임)
+    61.12s  agent 발화 시작: <ret> It was featured in commercials for the 2016 Buick Casc
+    61.13s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.53s]: (tool result) Several commercials for the 2016 Buick Cascada featured 
+    61.38s  user  발화 끝
+    64.75s  user  발화 시작: Yeah.
+    65.39s  user  발화 끝
+    67.65s  agent 발화 끝
+    68.00s  user  발화 시작: Buick Cascada… right! That's definitely it. Thanks, Halo!
+    70.52s  agent 발화 시작: Yeah.
+    71.15s  agent 발화 끝
+    72.49s  user  발화 끝
+    72.49s  agent 발화 시작: You're very welcome! [happy] I'm glad we could track it down
+    76.29s  agent 발화 끝
+    76.35s  user  발화 시작: Actually, yes. I'm trying to build a better morning routine.
+    81.49s  user  발화 끝
+    81.69s  agent 발화 시작: A good morning routine can set the tone for the whole day. W
+    87.03s  user  발화 시작: Mm-hmm.
+    87.67s  user  발화 끝
+    90.32s  agent 발화 끝
+    91.43s  user  발화 시작: Tell me some ideas…
+    93.27s  user  발화 끝
+    94.36s  user  발화 시작: …please. I really struggle to get going in the mornings.
+    98.06s  user  발화 끝
+    98.31s  agent 발화 시작: Starting with something small, like drinking a glass of wate
+   103.20s  user  발화 시작: Yeah, yeah.
+   104.53s  user  발화 끝
+   109.58s  user  발화 시작: Stretching sounds good. Maybe I'll try that tomorrow.
+   109.72s  agent 발화 끝
+   113.02s  agent 발화 시작: That’s a fantastic start! [happy] Even a little bit of movem
+   113.22s  user  발화 끝
+   120.67s  agent 발화 끝

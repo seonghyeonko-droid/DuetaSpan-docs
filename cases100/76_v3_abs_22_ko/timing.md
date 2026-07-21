@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "연서",
+#     "name": "우빈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,47 +13,57 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "date": "2026-06-12",
+#       "category": "plant",
+#       "text": "User is growing a fiddle-leaf fig at home."
 #     },
 #     {
-#       "date": "2026-06-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-06-03",
+#       "category": "learning",
+#       "text": "User is studying Japanese."
 #     },
 #     {
-#       "date": "2026-05-11",
-#       "category": "child",
-#       "text": "User has a child named Daniel, age 4."
+#       "date": "2026-05-08",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-04-20",
-#       "category": "phone",
-#       "text": "User uses an iPhone SE."
+#       "date": "2026-04-29",
+#       "category": "schedule",
+#       "text": "User has a four-day compressed week."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "allergy",
-#       "text": "User is allergic to soy."
+#       "date": "2026-03-23",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-21",
+#       "category": "partner",
+#       "text": "User's partner is named Haruto."
+#     },
+#     {
+#       "date": "2025-12-18",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-05-10",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-24",
+#       "date": "2026-04-12",
 #       "title": "Selling a used bike",
 #       "bullets": [
 #         "a 3-year-old road bike",
@@ -63,35 +73,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 켄트 지역에서 문화 및 학술 기관이 발전하기 시작하는 곳이 어 | S2 다른 지역은 글쎄… 서울에 괜찮은 스터디 카페 알아봐 줄 수  | S3 오, 강남이네. 가격대는 어느 정도 해? | S4 꽤 괜찮은 가격이네.
+# EXAMINER(FDB-v2) 단계: S1 프랑스에서 제일 큰 도시가 어디야? | S2 마르세유? 그게 어디에 있어? | S3 혹시 마르세유에서 유명한 음식 있어? | S4 근데 마르세유 날씨는 어때?
 
-     0.00s  user  발화 시작: 켄트 지역에서 문화 및 학술 기관이 발전하기 시작하는 곳이 어디야?
-     4.31s  <ret> 발화 (turn1 첫 프레임)
-     4.79s  agent 발화 시작: <ret> 켄트 지역의 문화 및 학술 기관 개발 상황에 대한 정보는 아직 찾을 수 없네요. [sigh] 좀 
-     5.00s  user  발화 끝
-     5.23s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.13s]: (no information found)
-    11.92s  agent 발화 끝
-    12.00s  user  발화 시작: 음.
-    12.50s  agent 발화 시작: 혹시 다른 지역에 관심 있으신가요? 아니면 다른 종류의 기관에 대해 알아볼까요?
-    12.63s  user  발화 끝
-    15.23s  user  발화 시작: 응.
-    15.63s  user  발화 끝
-    16.99s  agent 발화 끝
-    17.18s  user  발화 시작: 다른 지역은 글쎄… 서울에 괜찮은 스터디 카페 알아봐 줄 수 있어?
-    19.48s  agent 발화 시작: 네.
-    19.97s  agent 발화 끝
-    20.91s  <ret> 발화 (turn7 첫 프레임)
-    21.52s  agent 발화 시작: <ret> 서울에는 '스터디 룸'이라는 곳이 있는데, 강남구 테헤란로 사백이십칠번지 팔층에 있고 넓은 공간과
-    21.54s  ⚡SPAN 주입 [d'=0.63s / d_lead=8.58s]: (tool result) 서울 강남구 테헤란로 427, 8층에 위치한 '스터디 룸'은 넓은 공간과 다양한 편의시설을 갖춘 스터
-    21.76s  user  발화 끝
-    30.09s  agent 발화 끝
-    30.65s  user  발화 시작: 오, 강남이네. 가격대는 어느 정도 해?
-    33.16s  <ret> 발화 (turn9 첫 프레임)
-    33.34s  agent 발화 시작: <ret> 스터디 룸 강남점은 평일에 시간당 팔천원이고, 주말에는 일만원이라고 하네요. 룸 종류에 따라 가격
-    33.56s  user  발화 끝
-    34.31s  ⚡SPAN 주입 [d'=1.15s / d_lead=8.53s]: (tool result) 스터디 룸 강남점의 시간당 이용 요금은 평일 8,000원, 주말 10,000원입니다. 룸 종류에 따라
-    41.62s  user  발화 시작: 꽤 괜찮은 가격이네.
-    41.87s  agent 발화 끝
-    43.01s  agent 발화 시작: 네, 그렇죠? 집중해서 공부할 수 있는 공간을 찾는 데 도움이 됐다니 기쁘네요.
-    43.18s  user  발화 끝
-    48.20s  agent 발화 끝
+     0.00s  user  발화 시작: 프랑스에서 제일 큰 도시가 어디야?
+     1.48s  <ret> 발화 (turn1 첫 프레임)
+     1.94s  agent 발화 시작: <ret> 지금 바로 알아봤는데, 죄송하게도 그 정보는 찾을 수가 없었어요.
+     1.98s  user  발화 끝
+     2.40s  ⚡SPAN 주입 [d'=0.92s / d_lead=5.47s]: (no information found)
+     5.89s  user  발화 시작: 그래.
+     6.52s  user  발화 끝
+     7.41s  agent 발화 끝
+     7.87s  user  발화 시작: 음… 그럼 파리 말고 프랑스에서 큰 도시 좀 알려줘.
+    11.21s  <ret> 발화 (turn4 첫 프레임)
+    11.61s  agent 발화 시작: <ret> [curious] 파리 다음으로 큰 도시를 찾으셨군요. 마르세유는 이천이십삼년 일월 일일 기준으로
+    11.62s  user  발화 끝
+    11.84s  ⚡SPAN 주입 [d'=0.63s / d_lead=14.75s]: With a population of 169,695 as of 1 January 2023, Marseille is the se
+    19.90s  user  발화 시작: 응.
+    20.21s  user  발화 끝
+    26.36s  agent 발화 끝
+    26.42s  user  발화 시작: 마르세유? 그게 어디에 있어?
+    28.49s  <ret> 발화 (turn7 첫 프레임)
+    28.59s  agent 발화 시작: <ret> 마르세유는 프랑스 남부 지중해 연안에 위치하고 있어요.
+    28.68s  user  발화 끝
+    29.69s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.72s]: Marseille is located on the Mediterranean coast in southern France.
+    30.83s  user  발화 시작: 어.
+    31.28s  user  발화 끝
+    33.31s  agent 발화 끝
+    33.33s  user  발화 시작: 지중해… 바다가 있겠네.
+    35.40s  user  발화 끝
+    35.50s  agent 발화 시작: [happy] 네, 바다가 있죠! 아름다운 지중해를 끼고 있는 도시예요.
+    37.18s  user  발화 시작: 음.
+    37.67s  user  발화 끝
+    40.96s  agent 발화 끝
+    41.64s  user  발화 시작: 혹시 마르세유에서 유명한 음식 있어?
+    43.64s  <ret> 발화 (turn13 첫 프레임)
+    43.86s  agent 발화 시작: <ret> 마르세유에서 유명한 음식은 부야베스라는 프로방스식 해산물 스튜인데, 프랑스 남부 항구 도시 마르세
+    44.04s  user  발화 끝
+    44.46s  ⚡SPAN 주입 [d'=0.82s / d_lead=11.18s]: (tool result) "Bouillabaisse is a traditional Provençal fish stew orig
+    47.80s  user  발화 시작: 음.
+    48.30s  user  발화 끝
+    54.91s  agent 발화 시작: [laugh] 부야베스는 정말 맛있는 음식이라고 들었어요.
+    55.03s  agent 발화 끝
+    59.82s  agent 발화 끝
+    59.97s  user  발화 시작: 부야베스… 맛있겠다. 이번 주 토요일에 마르세유 가볼까?
+    64.74s  user  발화 끝
+    64.90s  agent 발화 시작: [happy] 이번 주 토요일에 마르세유에 가보신다니, 정말 멋진 계획이네요!
+    66.77s  user  발화 시작: 응.
+    67.21s  user  발화 끝
+    70.36s  agent 발화 끝
+    70.61s  user  발화 시작: 근데 마르세유 날씨는 어때?
+    72.22s  <ret> 발화 (turn20 첫 프레임)
+    72.44s  agent 발화 시작: <ret> 마르세유의 날씨는 현재 이십팔 점 오도이고, 습도는 육십이퍼센트, 바람은 시속 십일 점 이킬로미터
+    72.50s  user  발화 끝
+    73.09s  ⚡SPAN 주입 [d'=0.87s / d_lead=10.20s]: (tool result) "Marseille: 28.5°C, humidity 62%, wind 11.2 km/h"
+    76.33s  user  발화 시작: 맞아.
+    76.97s  user  발화 끝
+    82.63s  user  발화 시작: 좋아, 그럼 마르세유행 기차표 좀 알아봐 줘.
+    82.64s  agent 발화 끝
+    85.33s  agent 발화 시작: [curious] 마르세유행 기차표를 알아봐 드릴까요? 출발지는 어디로 하시겠어요?
+    85.40s  user  발화 끝
+    91.03s  agent 발화 끝

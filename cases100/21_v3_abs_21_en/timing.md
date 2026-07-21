@@ -4,198 +4,110 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Sophie",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "mid 30s",
-#     "language": "French"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
+#       "date": "2026-04-25",
+#       "category": "skill",
+#       "text": "User is a complete beginner at calligraphy."
 #     },
 #     {
-#       "date": "2026-05-17",
-#       "category": "phone",
-#       "text": "User uses an iPhone SE."
-#     },
-#     {
-#       "date": "2026-05-15",
-#       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
-#     },
-#     {
-#       "date": "2026-05-01",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
-#     },
-#     {
-#       "date": "2026-03-19",
-#       "category": "commute",
-#       "text": "User bikes to work."
-#     },
-#     {
-#       "date": "2026-03-01",
-#       "category": "employer",
-#       "text": "User works at a design agency."
-#     },
-#     {
-#       "date": "2026-01-06",
+#       "date": "2026-04-18",
 #       "category": "car",
-#       "text": "User drives a 2021 Tesla Model 3."
+#       "text": "User drives a 2019 Hyundai Tucson."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-02-28",
+#       "category": "allergy",
+#       "text": "User is allergic to bee stings."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "airline",
+#       "text": "User usually flies with Air France."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-16",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-04-05",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "title": "Planning a dinner party",
+#       "date": "2026-03-26",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-30",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Which Somerset museum has the most | S2 What about an emergency fund? Why  | S3 How so? | S4 Avalanche sounds smarter, but snow
+# EXAMINER(FDB-v2) 단계: S1 What color do all of the former co | S2 Yeah, I guess so. Can you tell me  | S3 That makes sense. My sister and I  | S4 That's good advice. Thanks.
 
-     0.00s  user  발화 시작: Which Somerset museum has the most extensive collection?
-     3.23s  user  발화 끝
-     3.38s  agent 발화 시작: That’s a tricky one! I’m afraid I don’t have information on 
-     9.10s  user  발화 시작: Oh, okay. Well, what can you tell me about budgeting?
-     9.17s  agent 발화 끝
-    12.22s  agent 발화 시작: Budgeting is really about understanding where your money goe
-    12.33s  user  발화 끝
-    20.43s  agent 발화 끝
-    21.86s  user  발화 시작: Sounds good. What’s this 50/30/20 rule I’ve heard about?
-    22.91s  agent 발화 시작: Yeah, totally.
-    24.29s  agent 발화 끝
-    25.37s  user  발화 끝
-    25.54s  <ret> 발화 (turn6 첫 프레임)
-    25.61s  agent 발화 시작: <ret> A popular method is to divide your income—fifty percen
-    27.04s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.84s]: The 50/30/20 rule suggests allocating 50% of your income to needs, 30%
-    29.38s  user  발화 시작: Uh-huh.
-    29.96s  user  발화 끝
-    33.40s  user  발화 시작: Needs versus wants… that sounds hard to figure out.
-    33.45s  agent 발화 끝
-    34.24s  agent 발화 시작: Yeah.
-    34.83s  agent 발화 끝
-    36.35s  user  발화 끝
-    36.37s  agent 발화 시작: It can be! Needs are essentials like housing and food, while
-    40.16s  user  발화 시작: Yeah.
-    40.65s  user  발화 끝
-    44.51s  agent 발화 시작: It's a process of self-discovery, really. What truly brings 
-    44.67s  agent 발화 끝
-    51.60s  agent 발화 끝
-    51.68s  user  발화 시작: I'm terrible at saving. I always spend it.
-    53.00s  agent 발화 시작: Yeah.
-    53.49s  agent 발화 끝
-    54.70s  agent 발화 시작: Many people find saving difficult! It’s about building the h
-    54.91s  user  발화 끝
-    62.48s  agent 발화 끝
-    64.11s  user  발화 시작: What about an emergency fund? Why is that so important?
-    67.20s  <ret> 발화 (turn17 첫 프레임)
-    67.63s  user  발화 끝
-    67.66s  agent 발화 시작: <ret> Having an emergency fund is vital for handling unexpec
-    68.00s  ⚡SPAN 주입 [d'=1.05s / d_lead=8.01s]: An emergency fund is crucial for covering unexpected expenses like med
-    75.66s  user  발화 시작: That makes sense. How much should I aim for?
-    75.67s  agent 발화 끝
-    76.75s  agent 발화 시작: Yeah.
-    77.25s  agent 발화 끝
-    78.61s  user  발화 끝
-    78.78s  agent 발화 시작: A good starting point is three to six months of essential li
-    83.71s  user  발화 시작: Yeah, totally.
-    84.89s  user  발화 끝
-    85.78s  user  발화 시작: Six months feels like a *lot* of money.
-    85.97s  agent 발화 끝
-    88.78s  user  발화 끝
-    89.23s  agent 발화 시작: It does! Start small, maybe one month’s worth, and build fro
-    94.67s  user  발화 시작: Yeah.
-    95.17s  user  발화 끝
-    97.16s  agent 발화 끝
-    97.26s  user  발화 시작: Okay, that's more manageable. What about interest?
-   100.72s  agent 발화 시작: Interest can work *for* you or *against* you. Understanding 
-   100.77s  user  발화 끝
-   103.86s  user  발화 시작: Mm-hmm.
-   104.49s  user  발화 끝
-   106.28s  agent 발화 끝
-   106.38s  user  발화 시작: How so?
-   106.62s  <ret> 발화 (turn29 첫 프레임)
-   107.06s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.09s]: Compound interest is the interest earned on both the initial principal
-   107.12s  agent 발화 시작: <ret> Compound interest is when you earn interest not just o
-   107.21s  user  발화 끝
-   109.16s  user  발화 시작: Yeah.
-   109.75s  user  발화 끝
-   114.21s  agent 발화 끝
-   116.57s  user  발화 시작: So, it's like… interest on interest?
-   119.94s  user  발화 끝
-   120.01s  agent 발화 시작: Exactly! It’s a powerful tool for growing your money over ti
-   126.42s  user  발화 시작: That sounds amazing.
-   126.59s  agent 발화 끝
-   127.65s  agent 발화 시작: It truly is. The earlier you start, the more significant the
-   127.84s  user  발화 끝
-   134.32s  agent 발화 끝
-   134.45s  user  발화 시작: I've got some debt. Should I focus on that first?
-   135.38s  agent 발화 시작: Yeah.
-   136.01s  agent 발화 끝
-   137.20s  agent 발화 시작: Generally, yes. High-interest debt should be tackled first t
-   137.41s  user  발화 끝
-   142.89s  agent 발화 끝
-   143.65s  user  발화 시작: What's the best way to tackle debt?
-   145.60s  agent 발화 시작: The “snowball” or “avalanche” methods are popular. Snowball 
-   145.72s  user  발화 끝
-   154.21s  user  발화 시작: Avalanche sounds smarter, but snowball feels more… achievabl
-   154.36s  agent 발화 끝
-   158.60s  agent 발화 시작: That’s a great point! What feels sustainable for *you* is th
-   158.75s  user  발화 끝
-   165.27s  agent 발화 끝
-   165.73s  user  발화 시작: I’m thinking about opening a savings account. Any recommenda
-   169.39s  <ret> 발화 (turn43 첫 프레임)
-   169.76s  ⚡SPAN 주입 [d'=0.37s / d_lead=8.44s]: (tool result) Ally Bank currently offers a high-yield savings account 
-   169.81s  agent 발화 시작: <ret> Right now, Ally Bank has a high-yield savings account 
-   169.89s  user  발화 끝
-   178.24s  agent 발화 끝
-   179.84s  user  발화 시작: 4.80%? Wow.
-   182.11s  agent 발화 시작: It’s a competitive rate! It’s worth exploring a few options 
-   182.23s  user  발화 끝
-   184.04s  user  발화 시작: Yeah.
-   184.54s  user  발화 끝
-   187.76s  agent 발화 끝
-   188.02s  user  발화 시작: Thanks, Frarira. This has been really helpful.
-   190.88s  user  발화 끝
-   191.32s  agent 발화 시작: You're very welcome! Remember, building good financial habit
-   200.08s  agent 발화 끝
+     0.00s  user  발화 시작: What color do all of the former colonies of Spain have on th
+     2.47s  agent 발화 시작: Yeah.
+     2.96s  agent 발화 끝
+     3.74s  <ret> 발화 (turn2 첫 프레임)
+     4.04s  agent 발화 시작: <ret> Unfortunately, there isn't a single color shared by al
+     4.21s  user  발화 끝
+     4.51s  ⚡SPAN 주입 [d'=0.77s / d_lead=9.83s]: (no information found)
+     9.19s  user  발화 시작: Yeah.
+     9.82s  user  발화 끝
+    13.87s  agent 발화 끝
+    14.36s  user  발화 시작: Oh. Hmm.
+    15.50s  user  발화 끝
+    15.60s  agent 발화 시작: It's okay to be a little disappointed when a fascinating que
+    24.27s  agent 발화 끝
+    24.93s  user  발화 시작: Yeah, I guess so. Can you tell me about active listening? I’
+    30.36s  agent 발화 시작: Active listening is about truly hearing what someone says, n
+    30.54s  user  발화 끝
+    37.38s  user  발화 시작: Yeah, yeah.
+    38.47s  user  발화 끝
+    41.47s  agent 발화 시작: It’s about creating a safe space for the other person to sha
+    41.63s  agent 발화 끝
+    53.02s  agent 발화 끝
+    53.17s  user  발화 시작: That makes sense. My sister and I keep arguing.
+    54.25s  agent 발화 시작: Yeah.
+    54.88s  agent 발화 끝
+    56.91s  user  발화 끝
+    57.31s  agent 발화 시작: Oh dear. Conflict with family can be so draining. [sigh] Wou
+    64.72s  agent 발화 끝
+    64.90s  user  발화 시작: Yes, please.
+    66.03s  <ret> 발화 (turn14 첫 프레임)
+    66.26s  agent 발화 시작: <ret> One way to approach that is setting healthy boundaries
+    66.27s  user  발화 끝
+    67.06s  ⚡SPAN 주입 [d'=1.03s / d_lead=11.73s]: Setting healthy boundaries involves clearly communicating your limits 
+    70.83s  user  발화 시작: Yeah.
+    71.55s  user  발화 끝
+    78.00s  agent 발화 끝
+    78.14s  user  발화 시작: That's good advice. Thanks.
+    80.06s  user  발화 끝

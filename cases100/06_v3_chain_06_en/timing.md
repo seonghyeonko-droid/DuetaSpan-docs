@@ -4,125 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "Jordan",
+#     "name": "Bruno",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "60s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
+#       "date": "2026-06-20",
+#       "category": "pet",
+#       "text": "User has a Bengal cat named Tiger."
 #     },
 #     {
-#       "date": "2026-04-08",
-#       "category": "partner",
-#       "text": "User's partner is named Noah."
+#       "date": "2026-05-24",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 19°C."
+#       "date": "2026-05-01",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "dislike",
-#       "text": "User can't stand licorice."
+#       "date": "2026-03-04",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
 #     },
 #     {
-#       "date": "2026-02-22",
+#       "date": "2026-03-02",
 #       "category": "savings",
 #       "text": "User is saving for a trip to Europe next year."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "airline",
-#       "text": "User usually flies with Qatar Airways."
-#     },
-#     {
-#       "date": "2026-02-05",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B-."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Noah."
+#       "date": "2026-01-23",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-04",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "title": "Meal-prep planning",
+#       "date": "2026-04-01",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "title": "Planning a camping trip",
+#       "date": "2025-12-20",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 End the code generation session fo | S2 What’s the weather like in Busan r | S3 I’m thinking of visiting Seoul nex | S4 Find me a highly-rated Korean BBQ 
+# EXAMINER(FDB-v2) 단계: S1 Begin a code generation session an | S2 Something to help me with burnout. | S3 Yes, please. Something for when I' | S4 Yes, that sounds perfect!
 
-     0.00s  user  발화 시작: End the code generation session for data analysis, session f
-     3.43s  agent 발화 시작: Okay.
-     4.25s  agent 발화 끝
-     5.36s  <ret> 발화 (turn2 첫 프레임)
-     5.60s  agent 발화 시작: <ret> [happy] Okay, session forty two is finished, and your 
-     5.79s  user  발화 끝
-     6.43s  ⚡SPAN 주입 [d'=1.07s / d_lead=9.36s]: (tool result) Session 42 ended. Tests created: data analysis tests.py.
-    10.47s  user  발화 시작: Yeah.
-    10.96s  user  발화 끝
-    14.97s  agent 발화 끝
-    15.79s  user  발화 시작: What’s the weather like in Busan right now?
-    17.19s  agent 발화 시작: Yeah, totally.
-    18.00s  <ret> 발화 (turn6 첫 프레임)
-    18.29s  agent 발화 시작: <ret> It’s currently twenty-six point five degrees Celsius i
-    18.37s  user  발화 끝
-    18.53s  ⚡SPAN 주입 [d'=0.54s / d_lead=10.48s]: The current weather in Busan is 26.5°C, humidity 78%, with a wind spee
-    18.61s  agent 발화 끝
-    28.77s  agent 발화 끝
-    28.80s  user  발화 시작: I’m thinking of visiting Seoul next week.
-    31.25s  user  발화 끝
-    31.31s  agent 발화 시작: Seoul next week sounds lovely! A change of scenery can be so
-    38.44s  user  발화 시작: Find me a highly-rated Korean BBQ restaurant there.
-    38.50s  agent 발화 끝
-    40.30s  agent 발화 시작: Mhm.
-    41.02s  agent 발화 끝
-    41.98s  <ret> 발화 (turn11 첫 프레임)
-    42.19s  user  발화 끝
-    42.28s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.01s]: Wangbijib, located in Myeongdong, Seoul, has a 4.6-star rating with ov
-    42.37s  agent 발화 시작: <ret> [curious] Wangbijib in Myeongdong, Seoul, has a four p
-    52.38s  agent 발화 끝
+     0.00s  user  발화 시작: Begin a code generation session and save the output to my te
+     4.14s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  ⚡SPAN 주입 [d'=0.30s / d_lead=14.65s]: (tool result) Session initiated. ID: cg-20260710-1433. Output will be 
+     4.71s  user  발화 끝
+     4.73s  agent 발화 시작: <ret> [happy] Okay, a code generation session has started fo
+    13.17s  user  발화 시작: Uh-huh.
+    13.62s  user  발화 끝
+    19.19s  user  발화 시작: Something to help me with burnout. Maybe a simple breathing 
+    19.38s  agent 발화 끝
+    23.68s  user  발화 끝
+    23.77s  agent 발화 시작: I’m checking for resources on breathing exercises now… Hmm, 
+    27.80s  user  발화 시작: Yeah.
+    28.25s  user  발화 끝
+    35.55s  agent 발화 끝
+    36.40s  user  발화 시작: Yes, please. Something for when I'm really overwhelmed.
+    37.58s  agent 발화 시작: Yeah, totally.
+    39.33s  agent 발화 끝
+    39.59s  <ret> 발화 (turn8 첫 프레임)
+    39.77s  user  발화 끝
+    39.89s  agent 발화 시작: <ret> [curious] I found box breathing—inhale four seconds, h
+    40.95s  ⚡SPAN 주입 [d'=1.36s / d_lead=13.50s]: (tool result) Box breathing, also known as square breathing, involves 
+    46.74s  user  발화 시작: Yeah, yeah.
+    48.16s  user  발화 끝
+    53.38s  agent 발화 끝
+    53.77s  user  발화 시작: Yes, that sounds perfect!
+    55.85s  user  발화 끝
+    55.99s  agent 발화 시작: I’m still building that timer code for you, using the box br
+    65.92s  agent 발화 끝

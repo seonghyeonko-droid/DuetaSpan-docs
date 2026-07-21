@@ -4,104 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Sky",
+#     "name": "Mia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-16",
+#       "category": "show",
+#       "text": "User is currently watching a cooking competition show."
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "category": "work",
-#       "text": "User works as a carpenter."
+#       "date": "2026-06-04",
+#       "category": "commute",
+#       "text": "User takes a shuttle bus."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "streaming",
-#       "text": "User subscribes to Twitch and Spotify."
+#       "date": "2026-05-24",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Haruto."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is bún chả."
+#       "date": "2026-05-17",
+#       "category": "schedule",
+#       "text": "User has early shifts starting at 6am."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "allergy",
-#       "text": "User is allergic to bee stings."
-#     },
-#     {
-#       "date": "2026-01-25",
+#       "date": "2026-02-04",
 #       "category": "learning",
-#       "text": "User is studying for a driving test."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-12-24",
-#       "category": "airline",
-#       "text": "User usually flies with Cathay Pacific."
+#       "text": "User is learning Spanish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-15",
-#       "title": "Choosing a preschool",
+#       "date": "2026-03-25",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "title": "Planning a wedding",
+#       "date": "2026-01-10",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕, 모시… | S2 롤링 스톤즈의 “Sympathy for the Devil” 베 | S3 아, 그렇군요? 정말 흥미롭네요… | S4 그러면, 음, 옛날 친구들과 연락하는 건 어때요? 저는 그게 
 
-     0.00s  user  발화 시작: 안녕 모시, 궁금한 게 있는데… “Internet of Things”라는 말은 언제부터 나오기 시작했어?
-     5.86s  <ret> 발화 (turn1 첫 프레임)
-     6.02s  user  발화 끝
-     6.06s  agent 발화 시작: <ret> 음, “Internet of Things”라는 용어는 사실 구십구 년도에 케빈 애쉬턴이 프록터 앤
-     6.16s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.18s]: Kevin Ashton coined the phrase “Internet of Things” in 1999 while work
-    15.23s  agent 발화 끝
-    15.27s  user  발화 시작: 아, 잠깐만. 응, 알았어, 미안.
-    17.89s  user  발화 시작: 그래, 구십구 년이네. 생각보다 훨씬 빠르다.
-    18.13s  user  발화 끝
-    20.00s  agent 발화 시작: 네.
-    20.82s  agent 발화 끝
-    21.10s  user  발화 끝
-    21.12s  agent 발화 시작: [curious] 좀 놀랍지 않아? 기술이 그 아이디어에 따라잡히는 데 시간이 좀 걸렸지만, 지금은 우리가 
-    26.12s  user  발화 시작: 음.
-    26.62s  user  발화 끝
-    29.33s  agent 발화 끝
-    29.35s  agent 발화 시작: 그리고 가끔, 변화가 너무 빠르면 좀 당황스러울 수도 있어. 파도 같아 – 왔다가 가잖아.
-    35.75s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕, 모시…
+     1.42s  user  발화 끝
+     2.70s  user  발화 시작: 롤링 스톤즈의 “Sympathy for the Devil” 베이스 기타는 누가 쳤는지 궁금해요.
+     6.93s  <ret> 발화 (turn2 첫 프레임)
+     7.12s  agent 발화 시작: <ret> 음, 사실 키스 리처즈가 쳤어—빌 와이먼의 악기가 그때 세션에서 말을 안 들어서 대신 베이스를 쳤
+     7.14s  user  발화 끝
+     7.23s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.39s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
+    15.51s  agent 발화 끝
+    16.58s  user  발화 시작: 아, 그렇군요? 정말 흥미롭네요…
+    19.76s  user  발화 끝
+    20.67s  user  발화 시작: 그러면, 음, 옛날 친구들과 연락하는 건 어때요? 저는 그게 너무 어려워요.
+    25.71s  user  발화 끝
+    26.06s  agent 발화 시작: 흐음, 그거 진짜 흔한 일이야! 조금씩 자주 연락하는 게 중요해—간단한 문자나 전화 한 통이 큰 차이를 만들
+    36.86s  agent 발화 끝

@@ -1,86 +1,101 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Gio, a calm and patient listening companion who helps people with money and budgeting. You can explain the 50/30/20 budget, why an emergency fund matters, how compound interest works. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Mius, a playful and warm reflection partner who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Hugo",
+    "name": "Olivia",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "mid 20s",
-    "language": "German"
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
       "date": "2026-06-05",
-      "category": "floor",
-      "text": "User lives on the 8th floor."
+      "category": "employer",
+      "text": "User works at a biotech lab."
     },
     {
-      "date": "2026-05-26",
+      "date": "2026-04-14",
+      "category": "phone",
+      "text": "User uses a Pixel 8."
+    },
+    {
+      "date": "2026-04-13",
       "category": "hobby",
-      "text": "User is into woodworking."
+      "text": "User is into freediving."
     },
     {
-      "date": "2026-05-13",
-      "category": "airline",
-      "text": "User usually flies with Emirates."
+      "date": "2026-03-07",
+      "category": "dish",
+      "text": "User's go-to comfort dish is green curry."
     },
     {
-      "date": "2026-05-02",
-      "category": "trip",
-      "text": "User is planning a trip to Peru in August."
+      "date": "2026-01-27",
+      "category": "skill",
+      "text": "User is just getting back into long-distance cycling."
     },
     {
-      "date": "2026-03-27",
-      "category": "coffee",
-      "text": "User's usual coffee order is a cappuccino with oat milk."
+      "date": "2025-12-28",
+      "category": "commute",
+      "text": "User carpools with a colleague."
     },
     {
-      "date": "2026-02-08",
-      "category": "bloodtype",
-      "text": "User's blood type is O-."
-    },
-    {
-      "date": "2026-01-31",
-      "category": "music",
-      "text": "User likes listening to indie folk."
+      "date": "2025-12-17",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 20°C."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-30",
-      "title": "Fixing a leaking faucet",
+      "date": "2026-06-04",
+      "title": "Studying for the TOEIC",
       "bullets": [
-        "it's a single-handle kitchen tap",
-        "asked whether to replace the cartridge"
+        "target score is 850",
+        "exam is in about six weeks"
       ]
     },
     {
-      "date": "2026-03-18",
-      "title": "Buying a gift for a parent",
+      "date": "2026-05-01",
+      "title": "Learning to invest",
       "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you get me a room at the Bellagio in Las Vegas for four nights, beginning on July eighteenth?
-[  5.68s][moshi] ⟨ret@5.46s⟩ I’ve ⟦⚡SPAN@6.62s: (tool result) {"confirmation id": "BX849J", "hotel name": "Bellagio", "city": "Las Vegas", "check in date": "2⟧ reserved a room at the Bellagio in Las Vegas for you, checking in on July eighteenth for four nights. The total cost will be 880 US dollars, and your confirmation ID is BX849J.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Bellagio", "city": "Las Vegas", "check_in_date": "2026-07-18", "length_of_stay": 4}}
-[ 17.59s][user ] «backchannel» Right.
-[ 21.25s][user ] That sounds good. What’s the weather like in Las Vegas around that ⟨ret@26.24s⟩ time?
-[ 26.57s][moshi] ⟦⚡SPAN@26.98s: The average high temperature in Las Vegas in mid-July is 104.9 degrees Fahrenheit, with an average low of 77.9⟧ Typically, Las Vegas in mid-July sees average highs around 104.9 degrees Fahrenheit, with lows around 77.9 degrees Fahrenheit, and it's usually quite dry.
-[ 35.15s][user ] «backchannel» Yeah, yeah.
-[ 42.42s][user ] Wow, that’s hot! I should probably pack light clothing.
-[ 45.18s][moshi] «backchannel» Mhm.
-[ 46.23s][moshi] [happy] Absolutely, light clothing is a great idea! It gets quite warm there that time of year.
+[  0.00s][user ] End the code generation session for data analysis, session forty two, and create the tests.
+[  6.96s][moshi] ⟨ret@6.74s⟩ [happy] ⟦⚡SPAN@7.90s: (tool result) Session 42 ended. Tests created: data analysis tests.py⟧ Okay, session forty-two is finished, and your tests—data_analysis_tests.py—are all set! That’s a big step, right?
+      CALL: {"function": "end_codegen_session", "arguments": {"session_id": "42", "create_tests": true}}
+[ 11.45s][user ] «backchannel» Yeah.
+[ 15.57s][user ] Good. Now, can you find me a quiet cafe nearby for working?
+[ 18.60s][moshi] «backchannel» Yeah, totally.
+[ 20.79s][moshi] ⟨ret@20.64s⟩ I’ve ⟦⚡SPAN@21.38s: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu, Busan, is known for its peaceful atmosp⟧ found a good spot for focused work—Cafe Yeonjae in Yeonje-gu, Busan. It has a 4.5-star rating from one hundred and twenty reviews.
+[ 26.77s][user ] «backchannel» Yeah.
+[ 29.26s][moshi] [curious] It seems like a really relaxing place! Would you like me to get directions or check their hours?

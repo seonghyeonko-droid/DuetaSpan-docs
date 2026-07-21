@@ -4,53 +4,63 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "하슬",
+#     "name": "주완",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "early 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "diet",
-#       "text": "User is dairy-free."
+#       "date": "2026-06-25",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Yuna."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "skill",
-#       "text": "User is getting fairly good at home fermentation."
+#       "date": "2026-06-17",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is cold buckwheat noodles."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "allergy",
-#       "text": "User is allergic to bee stings."
-#     },
-#     {
-#       "date": "2026-02-04",
+#       "date": "2026-05-03",
 #       "category": "dislike",
-#       "text": "User can't stand cilantro."
+#       "text": "User can't stand durian."
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is French."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "savings",
+#       "text": "User is saving for a down payment on an apartment."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "phone",
+#       "text": "User uses an iPhone 13."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
 #       "date": "2026-01-13",
-#       "category": "partner",
-#       "text": "User's partner is named Lucas."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "car",
-#       "text": "User drives a 2017 Honda Civic."
+#       "category": "skill",
+#       "text": "User is getting fairly good at salsa dancing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
+#       "date": "2026-06-03",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building under 900k won/month",
@@ -58,81 +68,56 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "title": "Building a PC",
+#       "date": "2026-06-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-05-04",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-30",
-#       "title": "Selling a used bike",
+#       "date": "2026-02-15",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 네. 만나서 반가워요, 패님. | S2 김치나 된장 같은 전통적인 한국 발효 식품이요. | S3 아, 그렇군요. 그럼 된장은요? | S4 아, 맞다! 벌 알레르기! 여름에 조심해야겠네요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 하슬님. 저는 패예요. 생산성과 일상생활을 도와드리는 가이드 역할을 하고 있습니다.
-     5.74s  agent 발화 끝
-     6.82s  user  발화 시작: 아, 네. 만나서 반가워요, 패님.
-     9.26s  user  발화 끝
-     9.38s  agent 발화 시작: 혹시 제가 예전에 기록해 둔 정보가 필요하신 게 있으신가요?
-    12.52s  agent 발화 끝
-    12.59s  user  발화 시작: 음, 제가 얼마 전에 집에서 발효 식품을 만든다고 말씀드렸던 것 같은데, 혹시 기억하세요?
-    17.84s  <ret> 발화 (turn4 첫 프레임)
-    18.19s  user  발화 끝
-    18.20s  agent 발화 시작: <ret> 네, 하슬님. 이천이십육년 오월 이십오일에 집에서 발효 식품을 만들고 있다고 말씀하신 걸 기억하고
-    18.39s  ⚡SPAN 주입 [d'=0.55s / d_lead=7.74s]: [2026-05-25] User is getting fairly good at home fermentation.
-    25.75s  user  발화 시작: 아, 맞아요. 요즘 계속 만들고 있는데, 혹시 좋은 레시피 같은 거 추천해 주실 수 있나요?
-    25.94s  agent 발화 끝
-    30.79s  user  발화 끝
-    30.82s  agent 발화 시작: 어떤 종류의 발효 식품을 만들고 싶으신가요?
-    33.27s  agent 발화 끝
-    33.64s  user  발화 시작: 김치나 된장 같은 전통적인 한국 발효 식품이요.
-    37.28s  agent 발화 시작: 김치와 된장 레시피는 온라인에 아주 많아요. 혹시 특정 사이트를 찾으시나요?
-    37.34s  user  발화 끝
-    41.94s  user  발화 시작: 아니요, 그냥 좋은 레시피만 알려주세요.
-    42.01s  agent 발화 끝
-    44.68s  <ret> 발화 (turn10 첫 프레임)
-    44.84s  user  발화 끝
-    45.09s  agent 발화 시작: <ret> 마랑치님의 김치 레시피가 아주 유명하고 따라하기 쉬워서 자세한 설명과 영상도 함께 제공하고 있습니
-    45.70s  ⚡SPAN 주입 [d'=1.02s / d_lead=6.90s]: Search: "김치 레시피" - Maangchi's kimchi recipe is very popular and easy t
-    51.99s  agent 발화 끝
-    52.24s  user  발화 시작: 마랑치요? 처음 들어보네요.
-    54.39s  agent 발화 시작: 마랑치님은 한국 요리, 특히 발효 식품 레시피로 유명한 요리 블로거입니다.
-    54.46s  user  발화 끝
-    59.11s  agent 발화 끝
-    59.19s  user  발화 시작: 아, 그렇군요. 그럼 된장은요?
-    60.99s  <ret> 발화 (turn14 첫 프레임)
-    61.16s  user  발화 끝
-    61.19s  agent 발화 시작: <ret> 백종원님의 된장찌개 레시피는 간편하면서도 깊은 맛을 내는 것으로 알려져 있습니다.
-    61.29s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.00s]: Search: "된장 레시피" - 백종원의 된장찌개 레시피는 간편하면서도 깊은 맛을 내는 것으로 알려져 있습니다. [youtu
-    66.19s  agent 발화 끝
-    67.80s  user  발화 시작: 백종원님은 알아요! 된장찌개는 정말 좋아하거든요. —
-    71.61s  user  발화 시작: …근데, 혹시 제가 알레르기가 있는 음식은 뭐가 있었죠? 갑자기 기억이 안 나네요.
-    71.82s  user  발화 끝
-    76.42s  <ret> 발화 (turn17 첫 프레임)
-    76.80s  agent 발화 시작: <ret> 하슬님, 벌에 알레르기가 있으시다고 이천이십육년 삼월 삼일에 기록해 두었습니다.
-    76.85s  user  발화 끝
-    77.05s  ⚡SPAN 주입 [d'=0.63s / d_lead=5.23s]: [2026-03-03] User is allergic to bee stings.
-    81.99s  user  발화 시작: 아, 맞다! 벌 알레르기! 여름에 조심해야겠네요.
-    82.03s  agent 발화 끝
-    85.45s  agent 발화 시작: 네, 특히 야외 활동 시에는 벌에 쏘이지 않도록 주의하시는 게 좋겠습니다.
-    85.50s  user  발화 끝
-    89.57s  agent 발화 끝
-    90.37s  user  발화 시작: 네, 알겠습니다. 감사합니다, 패님.
-    92.67s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 주완님. 저는 핼입니다. 목표 설정과 실천을 도와드리는 에이전트예요.
+     3.16s  user  발화 시작: 응.
+     3.79s  user  발화 끝
+     5.79s  agent 발화 끝
+     6.00s  user  발화 시작: 어, 안녕하세요. 혹시 제가 전에 말씀드렸던 거 기억하세요?
+     8.04s  agent 발화 시작: 네.
+     8.53s  agent 발화 끝
+    10.80s  <ret> 발화 (turn4 첫 프레임)
+    11.16s  agent 발화 시작: <ret> 네, 기억합니다. 주완님께서 시내에서 반려동물과 함께 살 수 있는, 구십만 원 이하의 보증금에 주
+    11.23s  user  발화 끝
+    11.35s  ⚡SPAN 주입 [d'=0.55s / d_lead=10.30s]: [2026-06-03] Apartment hunting downtown: wanted a pet-friendly buildin
+    21.46s  agent 발화 끝
+    21.71s  user  발화 시작: 맞아요, 그거. 혹시 지금 부산에 그런 곳이 있을까요?
+    25.05s  agent 발화 시작: 부산에는 그런 조건에 맞는 아파트가 몇 군데 있습니다.
+    25.32s  user  발화 끝
+    26.89s  user  발화 시작: 음.
+    27.34s  user  발화 끝
+    28.30s  agent 발화 시작: 지금 확인해 보면요—
+    28.37s  agent 발화 끝
+    28.96s  user  발화 시작: …혹시 해운대 쪽으로 좀 알아봐 주실 수 있을까요?
+    29.77s  agent 발화 끝
+    31.75s  <ret> 발화 (turn10 첫 프레임)
+    32.15s  agent 발화 시작: <ret> 해운대 팰리체가 보증금 팔십오만 원이고, 해운대 푸르지오가 팔십팔만 원입니다. 두 곳 모두 반려동
+    32.20s  user  발화 끝
+    32.76s  ⚡SPAN 주입 [d'=1.02s / d_lead=9.83s]: (tool result) {"results": [{"name": "해운대 팰리체", "address": "부산 해운대구 해운대
+    41.98s  agent 발화 끝

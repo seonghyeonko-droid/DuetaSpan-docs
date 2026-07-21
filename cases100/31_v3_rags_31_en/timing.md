@@ -4,84 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Ella",
+#     "name": "Noah",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "mid 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
-#     },
-#     {
-#       "date": "2026-04-07",
-#       "category": "medication",
-#       "text": "User takes a vitamin D supplement."
-#     },
-#     {
-#       "date": "2026-03-24",
+#       "date": "2026-04-17",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2026-04-05",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is December 3."
+#     },
+#     {
+#       "date": "2026-03-07",
 #       "category": "show",
 #       "text": "User is currently watching a nature documentary series."
 #     },
 #     {
-#       "date": "2026-01-10",
-#       "category": "streaming",
-#       "text": "User subscribes to a shared Netflix family plan."
+#       "date": "2026-02-06",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "hobby",
-#       "text": "User is into sea kayaking."
+#       "date": "2026-01-23",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Emma."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 25°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-16",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-05-12",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-20",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "title": "Planning a wedding",
+#       "date": "2026-04-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-03",
+#       "title": "Training for a 10K",
+#       "bullets": [
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the Minnesota Vikings last win a game at Lambeau Fi
-     2.21s  agent 발화 시작: Yeah, yeah.
-     2.81s  <ret> 발화 (turn2 첫 프레임)
-     3.40s  agent 발화 시작: <ret> That happened on December twenty-third, two thousand s
-     3.56s  user  발화 끝
-     3.68s  agent 발화 끝
-     4.12s  ⚡SPAN 주입 [d'=1.31s / d_lead=13.73s]: The Minnesota Vikings last won at Lambeau Field on December 23, 2017, 
-    17.13s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Milburn Drysdale, the banker on *The Beverly Hill
+     4.12s  <ret> 발화 (turn1 첫 프레임)
+     4.34s  agent 발화 시작: <ret> That would be Raymond Thomas Bailey—he played Milburn 
+     4.43s  user  발화 끝
+     5.62s  ⚡SPAN 주입 [d'=1.50s / d_lead=10.62s]: Raymond Thomas Bailey portrayed Milburn Drysdale, the president of the
+    14.96s  agent 발화 끝

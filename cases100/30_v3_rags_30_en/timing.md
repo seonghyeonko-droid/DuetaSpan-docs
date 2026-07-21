@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Ada",
+#     "name": "Jack",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,76 +12,84 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "employer",
-#       "text": "User works at an e-commerce company."
+#       "date": "2026-06-11",
+#       "category": "skill",
+#       "text": "User is quite experienced with salsa dancing."
 #     },
 #     {
-#       "date": "2026-06-15",
-#       "category": "savings",
-#       "text": "User is saving for a down payment on an apartment."
+#       "date": "2026-06-10",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-05-25",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
 #     },
 #     {
-#       "date": "2026-04-20",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-05-09",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "airline",
-#       "text": "User usually flies with Cathay Pacific."
+#       "date": "2026-04-30",
+#       "category": "partner",
+#       "text": "User's partner is named Marco."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "show",
-#       "text": "User is currently watching a historical K-drama."
-#     },
-#     {
-#       "date": "2025-12-18",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a flat white."
+#       "date": "2025-12-22",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
+#       "date": "2026-06-23",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-01",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-31",
+#       "title": "Booking a moving company",
+#       "bullets": [
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-17",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six on the 14th",
 #         "looking for outdoor seating with a vegetarian option"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-01",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who has the most wins in professional golf on the PGA Tour?
-     3.32s  <ret> 발화 (turn1 첫 프레임)
-     3.51s  agent 발화 시작: <ret> Well, it seems Sam Snead holds that record, with eight
-     3.61s  user  발화 끝
-     3.88s  ⚡SPAN 주입 [d'=0.56s / d_lead=8.07s]: Sam Snead won eighty-two PGA Tour events during his career, a record t
-    11.58s  agent 발화 끝
+     0.00s  user  발화 시작: When was the last time the Minnesota Vikings won a game at L
+     2.86s  agent 발화 시작: Yeah, yeah.
+     3.95s  agent 발화 끝
+     4.08s  <ret> 발화 (turn2 첫 프레임)
+     4.32s  agent 발화 시작: <ret> It was December twenty-third, two thousand and sevente
+     4.50s  user  발화 끝
+     4.62s  ⚡SPAN 주입 [d'=0.55s / d_lead=11.36s]: The Minnesota Vikings last defeated the Green Bay Packers at Lambeau F
+    15.68s  agent 발화 끝

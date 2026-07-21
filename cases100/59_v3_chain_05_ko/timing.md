@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "태은",
+#     "name": "서아",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,77 +12,71 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
+#       "date": "2026-06-05",
+#       "category": "phone",
+#       "text": "User uses a Galaxy Z Flip."
+#     },
+#     {
+#       "date": "2026-06-04",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into freediving."
 #     },
 #     {
-#       "date": "2026-05-13",
-#       "category": "airline",
-#       "text": "User usually flies with Delta."
+#       "date": "2026-04-14",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is gnocchi."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to the Scottish Highlands in August."
+#       "date": "2026-03-07",
+#       "category": "skill",
+#       "text": "User is getting fairly good at film photography."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a caramel latte."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "partner",
-#       "text": "User's partner is named Clara."
+#       "date": "2025-12-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Turkish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-27",
-#       "title": "Meal-prep planning",
+#       "date": "2026-06-02",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-04-30",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "title": "Choosing a laptop",
-#       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 벨라지오 호텔, 라스베이거스, 칠월 십팔일부터 사박 예약 좀 해줘.
-     5.90s  <ret> 발화 (turn1 첫 프레임)
-     6.12s  user  발화 끝
-     6.29s  agent 발화 시작: <ret> 벨라지오 호텔, 라스베이거스, 이천이십육년 칠월 십팔일부터 사박 예약이 완료되었어요. 확인번호는 
-     6.82s  ⚡SPAN 주입 [d'=0.92s / d_lead=10.05s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
-    13.96s  user  발화 시작: 응응.
-    14.46s  user  발화 끝
-    16.35s  agent 발화 끝
-    17.01s  user  발화 시작: 그 호텔 근처에 괜찮은 식당 있어?
-    18.89s  <ret> 발화 (turn4 첫 프레임)
-    19.30s  agent 발화 시작: <ret> 벨라지오 호텔 안에도 괜찮은 식당이 있어요. 스파고라는 이탈리아 레스토랑인데, 벨라지오 분수대가 
-    19.36s  user  발화 끝
-    20.07s  ⚡SPAN 주입 [d'=1.17s / d_lead=9.18s]: Las Vegas's Bellagio Hotel is located at 3600 S Las Vegas Blvd, Las Ve
-    28.48s  agent 발화 끝
+     0.00s  user  발화 시작: 데이터 분석 코드 생성 세션…
+     2.45s  user  발화 끝
+     4.15s  user  발화 시작: …사십이 종료하고 테스트 생성해 줘.
+     5.67s  agent 발화 시작: 그렇죠.
+     6.30s  agent 발화 끝
+     6.92s  user  발화 끝
+     7.01s  <ret> 발화 (turn3 첫 프레임)
+     7.13s  agent 발화 시작: <ret> 세션 사십이를 종료했고, 테스트도 성공적으로 생성됐어. 확인 번호는 구 비 칠 엑스 이 엘이야.
+     7.79s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.35s]: (tool result) Session 42 ended. Tests generated successfully. Confirma
+    10.40s  user  발화 시작: 응.
+    10.75s  user  발화 끝
+    13.42s  user  발화 시작: 확인번호 다시 한 번만 알려줘.
+    13.48s  agent 발화 끝
+    15.47s  agent 발화 시작: 확인 번호는 구 비 칠 엑스 이 엘이야.
+    15.68s  user  발화 끝
+    18.70s  agent 발화 끝

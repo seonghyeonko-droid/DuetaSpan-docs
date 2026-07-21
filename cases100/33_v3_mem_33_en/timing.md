@@ -4,90 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Taylor",
+#     "name": "Henri",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "mid 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-06-19",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
+#     },
+#     {
+#       "date": "2026-06-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Slovenia in April."
+#     },
+#     {
+#       "date": "2026-05-19",
+#       "category": "commute",
+#       "text": "User walks 20 minutes to the office."
 #     },
 #     {
 #       "date": "2026-04-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Spanish tapas."
-#     },
-#     {
-#       "date": "2026-03-31",
 #       "category": "allergy",
-#       "text": "User is allergic to gluten."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "medication",
-#       "text": "User takes a vitamin D supplement."
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is grilled salmon."
+#       "date": "2026-03-01",
+#       "category": "employer",
+#       "text": "User works at the city hospital."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-10",
-#       "title": "Meal-prep planning",
+#       "date": "2026-06-23",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "title": "Planning a dinner party",
+#       "date": "2026-05-13",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "title": "Planning a wedding",
+#       "bullets": [
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "title": "Learning to invest",
+#       "bullets": [
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Hael, good to meet you! I’m tr | S2 …but honestly, finding the time is | S3 I don’t track it, but an app sugge | S4 Toggl Track sounds good. Thanks!
 
-     0.00s  agent 발화 시작: Hi Taylor, I’m Hael.
-     1.77s  user  발화 시작: Hey Hael, good to meet you! I’m trying to get back into a co
-     1.93s  agent 발화 끝
-     4.29s  agent 발화 시작: Yeah.
-     4.92s  agent 발화 끝
-     6.49s  user  발화 끝
-     6.63s  agent 발화 시작: That’s fantastic! I remember you’re into marathon training—
-     9.93s  user  발화 시작: …but honestly, finding the time is the biggest struggle righ
-    10.52s  agent 발화 끝
-    11.37s  agent 발화 시작: Yeah, yeah.
-    12.70s  agent 발화 끝
-    13.76s  user  발화 끝
-    13.96s  agent 발화 시작: I understand. Time is a common hurdle. Let's look at your we
-    17.71s  user  발화 시작: Mm-hmm.
-    18.34s  user  발화 끝
-    20.49s  agent 발화 시작: To start, are you currently tracking how you spend your time
-    20.49s  agent 발화 끝
-    26.60s  agent 발화 끝
-    26.81s  user  발화 시작: I don’t track it, but an app suggestion would be great, actu
-    31.14s  <ret> 발화 (turn10 첫 프레임)
-    31.66s  agent 발화 시작: <ret> Finding the right tool is key. Many apps can help, but
-    31.80s  user  발화 끝
-    32.35s  ⚡SPAN 주입 [d'=1.21s / d_lead=2.18s]: There are many time-tracking apps available; Toggl Track is user-frien
-    45.49s  agent 발화 끝
-    45.74s  user  발화 시작: Toggl Track sounds good. Thanks!
-    48.46s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Henri, I'm Kelira. It's good to connect with you.
+     1.02s  user  발화 시작: Uh-huh.
+     1.47s  user  발화 끝
+     3.29s  user  발화 시작: Hi Kelira, nice to meet you too. What time is it right now?
+     3.32s  agent 발화 끝
+     5.83s  agent 발화 시작: Mm-hmm.
+     6.46s  agent 발화 끝
+     6.79s  <ret> 발화 (turn4 첫 프레임)
+     6.90s  ⚡SPAN 주입 [d'=0.52s / d_lead=3.61s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Berlin 
+     6.94s  user  발화 끝
+     6.96s  agent 발화 시작: <ret> It is currently 3:17 PM in Berlin, where you are—
+     9.97s  user  발화 시작: …Actually, I'm starting to feel a bit overwhelmed with weddi
+    10.56s  agent 발화 끝
+    13.53s  user  발화 끝
+    13.58s  agent 발화 시작: [sigh] Wedding planning can be really stressful, Henri. It’s
+    16.71s  user  발화 시작: Yeah.
+    17.16s  user  발화 끝
+    19.32s  agent 발화 끝
+    19.43s  agent 발화 시작: Remember, allowing yourself to feel those emotions—
+    22.09s  user  발화 시작: Do you remember what I said about looking at venues?
+    22.66s  agent 발화 끝
+    22.98s  agent 발화 시작: Yeah.
+    23.62s  agent 발화 끝
+    24.73s  <ret> 발화 (turn11 첫 프레임)
+    24.94s  agent 발화 시작: <ret> Yes, you mentioned you were comparing two venues for n
+    25.05s  user  발화 끝
+    25.12s  ⚡SPAN 주입 [d'=0.38s / d_lead=9.13s]: [2026-04-06] Past chat — Planning a wedding: guest list around 80 peop
+    34.07s  agent 발화 끝

@@ -4,87 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "성민",
+#     "name": "민람",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 40s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "savings",
-#       "text": "User is saving for an emergency fund of six months' expenses."
+#       "date": "2026-06-03",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is an iced americano."
+#       "date": "2026-05-20",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Sara."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "anniversary",
-#       "text": "User's anniversary is May 14."
+#       "date": "2026-05-15",
+#       "category": "dislike",
+#       "text": "User can't stand licorice."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
+#       "date": "2026-03-09",
+#       "category": "partner",
+#       "text": "User's partner is named Kenji."
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2026-02-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-01-29",
+#       "category": "employer",
+#       "text": "User works at a logistics company."
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "category": "work",
-#       "text": "User works as a yoga instructor."
+#       "date": "2026-01-07",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-15",
-#       "title": "Training for a 10K",
+#       "date": "2026-06-28",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-02-06",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 환불 좀 해 주세요. 스무다섯 달러 오십센트요. 캡처 아이 디 | S2 알겠습니다. 이번 주말에 여행 가는데, 짐을 어떻게 싸야 할까 | S3 음… | S4 좋은 조언 감사합니다.
 
-     0.00s  user  발화 시작: 코드 생성 세션 시작해서 테스트 디렉토리에 저장해 줘. 내일 오후 세 시에 해 줘.
-     4.87s  <ret> 발화 (turn1 첫 프레임)
-     5.21s  agent 발화 시작: <ret> [happy] 코드 생성 세션이 내일 오후 세 시에 예약되었어요, 확인 번호는 비 칠 엑스 구 제
-     5.41s  user  발화 끝
-     5.72s  ⚡SPAN 주입 [d'=0.84s / d_lead=6.58s]: (tool result) {"status": "scheduled", "time": "2026-07-11 15:00:00", "
-     9.00s  user  발화 시작: 네네.
-     9.63s  user  발화 끝
-    11.80s  agent 발화 끝
-    12.10s  user  발화 시작: 아, 내일 말고 오늘 오후 세 시로 다시 해 줘.
-    15.71s  user  발화 끝
-    15.86s  <ret> 발화 (turn4 첫 프레임)
-    15.98s  agent 발화 시작: <ret> [happy] 오늘 오후 세 시로 변경했고, 확인 번호는 큐 팔 와이 사 더블유 일입니다. 세션 
-    16.68s  ⚡SPAN 주입 [d'=0.83s / d_lead=7.36s]: (tool result) {"status": "scheduled", "time": "2026-07-10 15:00:00", "
-    23.35s  agent 발화 끝
+     0.00s  user  발화 시작: 환불 좀 해 주세요. 스무다섯 달러 오십센트요. 캡처 아이 디는 C-one-two-three-four-fiv
+     9.85s  agent 발화 시작: 네.
+    10.53s  agent 발화 끝
+    12.35s  <ret> 발화 (turn2 첫 프레임)
+    12.80s  agent 발화 시작: <ret> 네, 환불 요청해 드렸어요. 환불 아이 디는 R-four-five-six-seven-eight-n
+    12.89s  user  발화 끝
+    13.48s  ⚡SPAN 주입 [d'=1.13s / d_lead=11.51s]: (tool result) {"refund id": "R-four-five-six-seven-eight-nine-zero-one
+    21.12s  user  발화 시작: 맞아.
+    21.75s  user  발화 끝
+    24.13s  user  발화 시작: 아, 잠깐만요. 캡처 아이 디가 틀렸어요. C-one-two-three-four-five-six-seven-
+    24.31s  agent 발화 끝
+    33.96s  <ret> 발화 (turn5 첫 프레임)
+    34.39s  agent 발화 시작: <ret> 캡처 아이 디를 수정해서 다시 환불 요청을 보냈어요. 새로운 환불 아이 디는 R-one-two-t
+    34.47s  user  발화 끝
+    34.81s  ⚡SPAN 주입 [d'=0.85s / d_lead=10.62s]: (tool result) {"refund id": "R-one-two-three-four-five-six-seven-eight
+    44.94s  agent 발화 시작: 금액은 동일하게 이십오 점 오달러입니다.
+    45.01s  agent 발화 끝
+    47.62s  user  발화 시작: 알겠습니다. 이번 주말에 여행 가는데, 짐을 어떻게 싸야 할까요?
+    47.94s  agent 발화 끝
+    51.59s  agent 발화 시작: [happy] 여행 준비하시는군요! 짐은 최대한 가볍게 싸는 게 중요해요. 옷은 돌돌 말아서 공간을 절약하고
+    51.69s  user  발화 끝
+    56.14s  user  발화 시작: 어.
+    56.58s  user  발화 끝
+    61.14s  agent 발화 끝
+    61.63s  user  발화 시작: 음…
+    62.13s  user  발화 끝
+    62.62s  agent 발화 시작: 신발은 부피가 크니까, 가장 편한 신발 두 켤레 정도만 가져가시는 게 좋을 것 같아요. 세면도구는 작은 용기
+    68.87s  user  발화 시작: 응.
+    69.32s  user  발화 끝
+    70.84s  agent 발화 시작: 혹시 비행기에서 불편할까 봐 목베개나 안대도 챙기시면 좋을 거예요. 그리고 중요한 서류는 꼭 가방 안에 넣어
+    70.97s  agent 발화 끝
+    79.05s  agent 발화 끝
+    79.48s  user  발화 시작: 좋은 조언 감사합니다.
+    80.89s  agent 발화 시작: 제 여행 팁이 도움이 되셨다니 기쁘네요. 제 경험상, 여행 전에 미리 여행지에 대한 정보를 찾아보는 것도 중
+    81.09s  user  발화 끝
+    90.53s  agent 발화 끝

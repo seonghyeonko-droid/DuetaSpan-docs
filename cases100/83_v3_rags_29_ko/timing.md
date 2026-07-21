@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "유준",
+#     "name": "은정",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,68 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Emma."
+#       "date": "2026-05-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
 #       "date": "2026-05-08",
-#       "category": "hobby",
-#       "text": "User is into long-distance cycling."
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-18",
+#       "date": "2026-04-05",
 #       "category": "anniversary",
-#       "text": "User's anniversary is March 11."
+#       "text": "User's anniversary is October 1."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "employer",
-#       "text": "User works at a school district."
+#       "date": "2026-03-31",
+#       "category": "show",
+#       "text": "User is currently watching a stand-up comedy special."
 #     },
 #     {
-#       "date": "2026-03-04",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
-#     },
-#     {
-#       "date": "2026-02-25",
-#       "category": "partner",
-#       "text": "User's partner is named Minjun."
-#     },
-#     {
-#       "date": "2026-01-01",
+#       "date": "2026-03-10",
 #       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "text": "User lives on the 12th floor."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "phone",
-#       "text": "User uses an Xperia 1."
+#       "date": "2026-02-27",
+#       "category": "streaming",
+#       "text": "User subscribes to Apple Music and Coupang Play."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
+#     },
+#     {
+#       "date": "2025-12-25",
+#       "category": "airline",
+#       "text": "User usually flies with Lufthansa."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-10",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-06-05",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-09",
 #       "title": "Meal-prep planning",
 #       "bullets": [
 #         "wants high-protein lunches under 600 calories",
@@ -81,30 +89,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "title": "Selling a used bike",
+#       "date": "2026-01-12",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 지구 내부에서 직접 얻을 수 있는 에너지는 뭐라고 불러요?
-     1.57s  agent 발화 시작: 네.
-     2.34s  agent 발화 끝
-     3.92s  <ret> 발화 (turn2 첫 프레임)
-     4.08s  agent 발화 시작: <ret> 지구 내부에서 표면으로 흐르는 열의 흐름을 지열 플럭스라고 부릅니다. [happy] 혹시 다른 에
-     4.12s  user  발화 끝
-     5.42s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.35s]: Geothermal heat flux is the flow of heat from the Earth's interior to 
-    12.43s  agent 발화 끝
+     0.00s  user  발화 시작: pga 투어에서 가장 많은 우승을 한 선수는 누구인가요?
+     4.04s  <ret> 발화 (turn1 첫 프레임)
+     4.21s  ⚡SPAN 주입 [d'=0.84s / d_lead=10.66s]: Sam Snead holds the record for the most wins on the PGA Tour, with 82 
+     4.27s  agent 발화 시작: <ret> pga 투어에서 가장 많은 우승을 한 선수는 샘 스니드 선수인데, 총 팔십이번 우승을 기록하고 있
+     4.31s  user  발화 끝
+    14.93s  agent 발화 끝

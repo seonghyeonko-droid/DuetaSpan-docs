@@ -4,95 +4,109 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "Hugo",
+#     "name": "Olivia",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "mid 20s",
-#     "language": "German"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-05",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
+#       "category": "employer",
+#       "text": "User works at a biotech lab."
 #     },
 #     {
-#       "date": "2026-05-26",
+#       "date": "2026-04-14",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
+#     },
+#     {
+#       "date": "2026-04-13",
 #       "category": "hobby",
-#       "text": "User is into woodworking."
+#       "text": "User is into freediving."
 #     },
 #     {
-#       "date": "2026-05-13",
-#       "category": "airline",
-#       "text": "User usually flies with Emirates."
+#       "date": "2026-03-07",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is green curry."
 #     },
 #     {
-#       "date": "2026-05-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Peru in August."
+#       "date": "2026-01-27",
+#       "category": "skill",
+#       "text": "User is just getting back into long-distance cycling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
+#       "date": "2025-12-28",
+#       "category": "commute",
+#       "text": "User carpools with a colleague."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O-."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "music",
-#       "text": "User likes listening to indie folk."
+#       "date": "2025-12-17",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 20°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-06-04",
+#       "title": "Studying for the TOEIC",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-18",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-05-01",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-08",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Can you get me a room at the Bellagio in Las Vegas for four 
-     5.46s  <ret> 발화 (turn1 첫 프레임)
-     5.68s  agent 발화 시작: <ret> I’ve reserved a room at the Bellagio in Las Vegas for 
-     5.73s  user  발화 끝
-     6.62s  ⚡SPAN 주입 [d'=1.17s / d_lead=15.54s]: (tool result) {"confirmation id": "BX849J", "hotel name": "Bellagio", 
-    17.59s  user  발화 시작: Right.
-    18.31s  user  발화 끝
-    21.22s  agent 발화 끝
-    21.25s  user  발화 시작: That sounds good. What’s the weather like in Las Vegas aroun
-    26.24s  <ret> 발화 (turn4 첫 프레임)
-    26.57s  agent 발화 시작: <ret> Typically, Las Vegas in mid-July sees average highs ar
-    26.62s  user  발화 끝
-    26.98s  ⚡SPAN 주입 [d'=0.74s / d_lead=14.34s]: The average high temperature in Las Vegas in mid-July is 104.9 degrees
-    35.15s  user  발화 시작: Yeah, yeah.
-    36.24s  user  발화 끝
-    40.91s  agent 발화 끝
-    42.42s  user  발화 시작: Wow, that’s hot! I should probably pack light clothing.
-    45.18s  agent 발화 시작: Mhm.
-    45.63s  agent 발화 끝
-    46.23s  agent 발화 시작: [happy] Absolutely, light clothing is a great idea! It gets 
-    46.35s  user  발화 끝
-    53.09s  agent 발화 끝
+     0.00s  user  발화 시작: End the code generation session for data analysis, session f
+     6.72s  user  발화 끝
+     6.74s  <ret> 발화 (turn1 첫 프레임)
+     6.96s  agent 발화 시작: <ret> [happy] Okay, session forty-two is finished, and your 
+     7.90s  ⚡SPAN 주입 [d'=1.17s / d_lead=8.72s]: (tool result) Session 42 ended. Tests created: data analysis tests.py
+    11.45s  user  발화 시작: Yeah.
+    12.08s  user  발화 끝
+    15.57s  user  발화 시작: Good. Now, can you find me a quiet cafe nearby for working?
+    15.68s  agent 발화 끝
+    18.60s  agent 발화 시작: Yeah, totally.
+    20.07s  agent 발화 끝
+    20.64s  <ret> 발화 (turn5 첫 프레임)
+    20.79s  agent 발화 시작: <ret> I’ve found a good spot for focused work—Cafe Yeonjae i
+    20.95s  user  발화 끝
+    21.38s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.44s]: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu,
+    26.77s  user  발화 시작: Yeah.
+    27.22s  user  발화 끝
+    29.24s  agent 발화 끝
+    29.26s  agent 발화 시작: [curious] It seems like a really relaxing place! Would you l
+    35.23s  agent 발화 끝

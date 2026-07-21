@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "혜빈",
+#     "name": "서형",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,74 +12,92 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
-#     },
-#     {
-#       "date": "2026-04-07",
-#       "category": "medication",
-#       "text": "User takes a vitamin D supplement."
-#     },
-#     {
-#       "date": "2026-03-24",
+#       "date": "2026-04-17",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2026-04-05",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is December 3."
+#     },
+#     {
+#       "date": "2026-03-07",
 #       "category": "show",
 #       "text": "User is currently watching a nature documentary series."
 #     },
 #     {
-#       "date": "2026-01-10",
-#       "category": "streaming",
-#       "text": "User subscribes to a shared Netflix family plan."
+#       "date": "2026-02-06",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "hobby",
-#       "text": "User is into sea kayaking."
+#       "date": "2026-01-23",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Emma."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 25°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-16",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-05-12",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-20",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "title": "Planning a wedding",
+#       "date": "2026-04-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-03",
+#       "title": "Training for a 10K",
+#       "bullets": [
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 바이킹스가 램보 필드에서 마지막으로 이긴 건 언제야?
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.64s  agent 발화 시작: <ret> 바이킹스가 램보 필드에서 그린베이 패커스를 이긴 건, 음… 이천십칠년 십이월 이십삼일이었어요.
-     3.66s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.23s]: The Minnesota Vikings defeated the Green Bay Packers 23–10 at Lambeau 
-     3.84s  user  발화 끝
-    10.87s  agent 발화 끝
+     0.00s  user  발화 시작: 비버리힐즈의 백만장자에서 밀번 드라이스데일 역을 맡은 배우는 누구였나요?
+     4.24s  <ret> 발화 (turn1 첫 프레임)
+     4.52s  agent 발화 시작: <ret> 비버리힐즈의 백만장자에서 밀번 드라이스데일 역은 레이먼드 토마스 베일리 배우가 맡았답니다.
+     4.54s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.09s]: Raymond Thomas Bailey was an American actor best known for his role as
+     4.63s  user  발화 끝
+    11.61s  agent 발화 끝

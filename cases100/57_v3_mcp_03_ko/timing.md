@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "가원",
+#     "name": "우람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,98 +12,141 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-06",
-#       "category": "car",
-#       "text": "User drives a 2015 Toyota Corolla."
+#       "date": "2026-06-28",
+#       "category": "commute",
+#       "text": "User carpools with a colleague."
 #     },
 #     {
-#       "date": "2026-05-02",
-#       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-04-09",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
 #       "date": "2026-04-06",
+#       "category": "hobby",
+#       "text": "User is into salsa dancing."
+#     },
+#     {
+#       "date": "2026-04-02",
+#       "category": "car",
+#       "text": "User drives a 2022 Volkswagen Golf."
+#     },
+#     {
+#       "date": "2026-03-17",
+#       "category": "phone",
+#       "text": "User uses an iPhone 13."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
+#     },
+#     {
+#       "date": "2026-01-10",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "commute",
-#       "text": "User drives about 40 minutes each way."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
-#     },
-#     {
-#       "date": "2026-01-13",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Clara."
+#       "date": "2025-12-03",
+#       "category": "employer",
+#       "text": "User works at a public university."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-21",
-#       "title": "Planning a wedding",
+#       "date": "2026-05-15",
+#       "title": "Studying for the TOEIC",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-03-27",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데이비드 브라운에게 내 위치를 보내고 싶어. | S2 제 와이프, 김민지에게도 보내줘. | S3 … 지금 데이비드한테 연락해서 어디쯤 가고 있는지 물어봐야 하 | S4 …혹시 데이비드의 전화번호 알아?
+# EXAMINER(FDB-v2) 단계: S1 요즘 스트레스가 너무 심해서, 잠도 제대로 못 자고 있어요.  | S2 오, 그건 괜찮네요. 지금 당장 해볼 수 있을 것 같아요. | S3 음… 침실이 좀 밝은 편이에요. 커튼을 좀 더 짙은 걸로 바꿔 | S4 오, 알래스카 베어 제품이 괜찮아 보이네요. 감사합니다.
 
-     0.00s  user  발화 시작: 데이비드 브라운에게 내 위치를 보내고 싶어.
-     2.45s  <ret> 발화 (turn1 첫 프레임)
-     3.03s  agent 발화 시작: <ret> 데이비드 브라운 님께 위치 정보가 공유됐어요. 확인 번호는 칠 팔 구 이 에이 비입니다. [hap
-     3.23s  user  발화 끝
-     3.25s  ⚡SPAN 주입 [d'=0.80s / d_lead=9.46s]: (tool result) Location shared with David Brown. Confirmation ID: 7892a
-     7.17s  user  발화 시작: 네.
-     7.57s  user  발화 끝
-    12.17s  user  발화 시작: 응.
-    12.49s  agent 발화 끝
-    12.62s  user  발화 끝
-    13.13s  agent 발화 시작: 네, 누구에게 보내드릴까요?
-    15.20s  agent 발화 끝
-    15.20s  user  발화 시작: 제 와이프, 김민지에게도 보내줘.
-    17.44s  <ret> 발화 (turn6 첫 프레임)
-    17.71s  agent 발화 시작: <ret> 김민지 님께도 위치 정보가 공유됐습니다. 확인 번호는 씨 디 삼 사 이 에프입니다. [happy]
-    17.86s  ⚡SPAN 주입 [d'=0.43s / d_lead=9.97s]: (tool result) Location shared with 김민지. Confirmation ID: cd34ef
-    17.92s  user  발화 끝
-    27.52s  agent 발화 시작: 혹시 김민지 님께 보내는 위치가 정확한지 확인하고 싶으신가요 —
-    27.68s  agent 발화 끝
-    31.41s  agent 발화 끝
-    31.95s  user  발화 시작: … 지금 데이비드한테 연락해서 어디쯤 가고 있는지 물어봐야 하는데…
-    36.49s  user  발화 끝
-    37.76s  user  발화 시작: …혹시 데이비드의 전화번호 알아?
-    39.59s  <ret> 발화 (turn10 첫 프레임)
-    39.87s  agent 발화 시작: <ret> 데이비드 브라운 님의 전화번호는 공 일 공 일 이 삼 사 오 육 칠 팔입니다. [happy] 바로
-    39.88s  user  발화 끝
-    40.60s  ⚡SPAN 주입 [d'=1.01s / d_lead=10.52s]: David Brown's phone number is 010-1234-5678.
-    43.67s  user  발화 시작: 네.
-    44.07s  user  발화 끝
-    50.28s  agent 발화 시작: 천만에요.
-    50.39s  agent 발화 끝
-    51.33s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 스트레스가 너무 심해서, 잠도 제대로 못 자고 있어요. 뭔가 좋은 방법 없을까요?
+     1.85s  agent 발화 시작: 예.
+     2.67s  agent 발화 끝
+     4.76s  <ret> 발화 (turn2 첫 프레임)
+     5.15s  ⚡SPAN 주입 [d'=0.39s / d_lead=7.33s]: Deep, slow breathing exercises can help calm the nervous system and re
+     5.21s  agent 발화 시작: <ret> 스트레스 해소에 도움이 되는 몇 가지 방법이 있어요. 간단한 호흡 운동은 어떠세요?
+     5.32s  user  발화 끝
+    12.44s  agent 발화 시작: 심호흡을 통해 긴장을 풀고 불안감을 줄일 수 있어요. 코로 사초 동안 숨을 깊이 들이마셨다가, 칠초 동안 참
+    12.53s  agent 발화 끝
+    25.52s  agent 발화 끝
+    26.02s  user  발화 시작: 흠, 그건 좀 어렵네요. 좀 더 쉬운 방법은 없을까요?
+    28.09s  agent 발화 시작: 네.
+    28.91s  agent 발화 끝
+    29.84s  <ret> 발화 (turn6 첫 프레임)
+    30.12s  agent 발화 시작: <ret> [happy] 그럼, 간단한 접지 운동은 어떠세요? 주변의 사물에 집중하면서 현재에 머무는 연습이
+    30.18s  user  발화 끝
+    31.02s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.85s]: Grounding exercises involve focusing on the present moment by engaging
+    38.87s  agent 발화 시작: 오감을 활용해서 현재에 집중하는 거예요. 보이는 것 다섯 가지, 만져지는 것 네 가지, 들리는 것 세 가지,
+    38.97s  agent 발화 끝
+    54.36s  agent 발화 끝
+    54.44s  user  발화 시작: 오, 그건 괜찮네요. 지금 당장 해볼 수 있을 것 같아요.
+    55.76s  agent 발화 시작: 네.
+    56.58s  agent 발화 끝
+    57.77s  user  발화 끝
+    57.78s  <ret> 발화 (turn10 첫 프레임)
+    58.09s  agent 발화 시작: <ret> 네, 좋아요. 잠자리에 들기 전에 잠시 시간을 내서 해보시면 도움이 될 거예요. 혹시 잠자리 환경
+    58.37s  ⚡SPAN 주입 [d'=0.59s / d_lead=9.50s]: A dark, quiet, and cool bedroom is conducive to sleep. Maintaining a r
+    67.60s  agent 발화 끝
+    67.64s  agent 발화 시작: 어둡고 조용하고 시원한 침실 환경이 숙면에 도움이 돼요. 규칙적인 수면 습관을 유지하고 잠들기 전에 카페인이
+    71.96s  user  발화 시작: 응.
+    72.34s  user  발화 끝
+    79.89s  agent 발화 끝
+    80.61s  user  발화 시작: 음… 침실이 좀 밝은 편이에요. 커튼을 좀 더 짙은 걸로 바꿔야 할까요?
+    82.36s  agent 발화 시작: 네.
+    83.18s  agent 발화 끝
+    86.04s  <ret> 발화 (turn15 첫 프레임)
+    86.19s  agent 발화 시작: <ret> [curious] 커튼을 바꾸는 것도 좋은 방법이에요. 아니면, 수면 안대를 사용하는 것도 도움이
+    86.35s  user  발화 끝
+    86.91s  ⚡SPAN 주입 [d'=0.87s / d_lead=8.07s]: Sleep masks block out light, creating a darker environment for sleep. 
+    94.17s  agent 발화 시작: 수면 안대를 사용하면 빛을 차단해서 더 어두운 환경을 만들 수 있어요. 다양한 재질과 가격대의 제품이 있답니
+    94.25s  agent 발화 끝
+    98.31s  user  발화 시작: 응응.
+    98.86s  user  발화 끝
+   105.34s  agent 발화 끝
+   105.58s  user  발화 시작: 수면 안대요? 한번 찾아볼게요. 혹시 좋은 제품 추천해 줄 수 있나요?
+   109.29s  <ret> 발화 (turn19 첫 프레임)
+   109.62s  agent 발화 시작: <ret> 아마존에서 수면 안대를 검색해 봤는데, 알래스카 베어 실크 수면 안대가 십구 점 구 구달러, 버키
+   109.70s  user  발화 끝
+   110.33s  ⚡SPAN 주입 [d'=1.03s / d_lead=20.42s]: (tool result) {"title": "Amazon.com: sleep mask", "url": "https://www.
+   130.04s  agent 발화 끝
+   130.95s  user  발화 시작: 오, 알래스카 베어 제품이 괜찮아 보이네요. 감사합니다.
+   135.20s  user  발화 끝
+   135.40s  agent 발화 시작: [happy] 도움이 되어서 기뻐요. 편안한 밤 보내시길 바랍니다.
+   140.82s  agent 발화 끝

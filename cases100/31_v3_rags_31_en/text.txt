@@ -1,82 +1,99 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Baeus, a upbeat and supportive peer supporter who helps people with adjusting after a breakup. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Ela, a soothing and optimistic reflection partner who helps people with loneliness and connection. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Ella",
+    "name": "Noah",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
+    "nationality": "American",
+    "gender": "male",
     "age_range": "mid 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-18",
-      "category": "car",
-      "text": "User drives a 2018 Mazda CX-5."
-    },
-    {
-      "date": "2026-04-07",
-      "category": "medication",
-      "text": "User takes a vitamin D supplement."
-    },
-    {
-      "date": "2026-03-24",
+      "date": "2026-04-17",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-02-17",
+      "date": "2026-04-05",
+      "category": "plant",
+      "text": "User is growing basil on the windowsill at home."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "anniversary",
+      "text": "User's anniversary is December 3."
+    },
+    {
+      "date": "2026-03-07",
       "category": "show",
       "text": "User is currently watching a nature documentary series."
     },
     {
-      "date": "2026-01-10",
-      "category": "streaming",
-      "text": "User subscribes to a shared Netflix family plan."
+      "date": "2026-02-06",
+      "category": "wake",
+      "text": "User usually wakes up around 6am."
     },
     {
-      "date": "2025-12-07",
-      "category": "hobby",
-      "text": "User is into sea kayaking."
+      "date": "2026-01-23",
+      "category": "floor",
+      "text": "User lives on the 12th floor."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "emergency",
+      "text": "User's emergency contact is Emma."
+    },
+    {
+      "date": "2025-12-14",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 25°C."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-16",
-      "title": "Renovating the bathroom",
+      "date": "2026-05-12",
+      "title": "Comparing health insurance",
       "bullets": [
-        "budget of 6M won",
-        "wants a walk-in shower instead of a tub"
+        "self-employed and needs dental",
+        "wants a low deductible"
       ]
     },
     {
-      "date": "2026-04-02",
-      "title": "Sorting out a visa",
+      "date": "2026-04-20",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "applying for a working-holiday visa to Australia",
-        "asked about the bank-balance requirement"
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
       ]
     },
     {
-      "date": "2026-03-07",
-      "title": "Planning a wedding",
+      "date": "2026-04-17",
+      "title": "Setting up a home network",
       "bullets": [
-        "guest list around 80 people",
-        "comparing two venues for next May"
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "title": "Training for a 10K",
+      "bullets": [
+        "current pace is around 6 minutes per km",
+        "race is in November"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did the Minnesota Vikings last win a game ⟨ret@2.81s⟩ at Lambeau Field?
-[  2.21s][moshi] «backchannel» Yeah, yeah.
-[  3.40s][moshi] That ⟦⚡SPAN@4.12s: The Minnesota Vikings last won at Lambeau Field on December 23, 2017, defeating the Green Bay Packers 16–0.⟧ happened on December twenty-third, two thousand seventeen, when the Vikings defeated the Packers sixteen to zero. [happy] It’s great to reminisce about good wins, even if things are tough right now.
+[  0.00s][user ] Who played Milburn Drysdale, the banker on *The Beverly ⟨ret@4.12s⟩ Hillbillies*?
+[  4.34s][moshi] That would ⟦⚡SPAN@5.62s: Raymond Thomas Bailey portrayed Milburn Drysdale, the president of the Commerce Bank, in the CBS television se⟧ be Raymond Thomas Bailey—he played Milburn Drysdale, the president of Commerce Bank, on *The Beverly Hillbillies*. [happy] It's a classic role, isn't it?

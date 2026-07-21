@@ -4,370 +4,384 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_42",
-#     "name": "Jamie",
+#     "name": "Oscar",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-01",
+#       "date": "2026-06-18",
+#       "category": "hobby",
+#       "text": "User is into film photography."
+#     },
+#     {
+#       "date": "2026-06-16",
 #       "category": "sibling",
-#       "text": "User has a younger sibling named Sofia."
+#       "text": "User has a younger sibling named Noah."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
+#       "date": "2026-06-10",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-03-11",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is pad thai."
+#     },
+#     {
+#       "date": "2026-02-15",
 #       "category": "pet",
-#       "text": "User has a Border Collie named Ziggy."
+#       "text": "User has a Russian Blue cat named Nabi."
 #     },
 #     {
-#       "date": "2026-01-08",
-#       "category": "medication",
-#       "text": "User takes medication for migraines."
+#       "date": "2026-02-13",
+#       "category": "schedule",
+#       "text": "User has early shifts starting at 6am."
 #     },
 #     {
-#       "date": "2025-12-22",
+#       "date": "2026-01-25",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Yuna."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-11",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-12-21",
-#       "category": "work",
-#       "text": "User works as a sales manager."
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "category": "partner",
-#       "text": "User's partner is named Lucas."
+#       "text": "User's favorite cuisine is Georgian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-28",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-14",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-13",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-03-17",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-18",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "title": "Learning to invest",
+#       "bullets": [
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I have a dentist appointment on Ju | S2 I’m also thinking about what to pa | S3 Oh, right! Thanks for reminding me | S4 Thank you. That helps me a lot.
+# EXAMINER(FDB-v2) 단계: S1 I'm moving house on August 6th. | S2 I’ve been trying to distract mysel | S3 Do you know any good apps for that | S4 Like what?
 
-     0.00s  user  발화 시작: I have a dentist appointment on July 15th at 2:30 PM, and it
-     6.76s  agent 발화 시작: That sounds straightforward.
-     6.82s  user  발화 끝
-     8.88s  agent 발화 끝
-     9.43s  user  발화 시작: No, that's all for now. I was just getting my schedule in or
-    12.99s  user  발화 끝
-    13.13s  agent 발화 시작: Wonderful. Taking a bit of time for planning can be so helpf
-    17.94s  agent 발화 끝
-    18.72s  user  발화 시작: Actually, I was wondering… who has more Super Bowl wins, the
-    23.88s  <ret> 발화 (turn5 첫 프레임)
-    24.11s  ⚡SPAN 주입 [d'=0.61s / d_lead=7.36s]: The Green Bay Packers have won 13 NFL championships, including 9 Super
-    24.17s  agent 발화 시작: <ret> The Green Bay Packers actually have more Super Bowl wi
-    24.42s  user  발화 끝
-    31.53s  agent 발화 끝
-    31.69s  user  발화 시작: Oh, wow, I didn’t realize it was such a difference.
-    34.28s  user  발화 끝
-    34.69s  agent 발화 시작: It’s a pretty significant lead! They both have strong histor
-    37.49s  user  발화 시작: Uh-huh.
-    37.99s  user  발화 끝
-    39.37s  agent 발화 끝
-    39.46s  user  발화 시작: True. I’m thinking about taking a trip sometime in August.
-    42.99s  agent 발화 시작: That sounds lovely. August can be a beautiful time to travel
-    43.20s  user  발화 끝
-    51.85s  user  발화 시작: Not yet, I'm open to suggestions. Somewhere with good food, 
-    51.98s  agent 발화 끝
-    53.22s  agent 발화 시작: Yeah.
-    53.86s  agent 발화 끝
-    55.91s  agent 발화 시작: [happy] That's a great starting point! Many places excel in 
-    56.06s  user  발화 끝
-    63.37s  agent 발화 끝
-    64.63s  user  발화 시작: Hmm, maybe Italian? Or something with seafood?
-    68.56s  user  발화 끝
-    68.62s  agent 발화 시작: Both excellent choices. Italy is, of course, famous for its 
-    74.54s  user  발화 시작: Yes, but it's so far. Is there somewhere closer to Korea wit
-    74.88s  agent 발화 끝
-    77.20s  agent 발화 시작: Mm-hmm.
-    78.01s  agent 발화 끝
-    79.26s  <ret> 발화 (turn18 첫 프레임)
-    79.65s  ⚡SPAN 주입 [d'=0.39s / d_lead=5.56s]: Busan is known for its Italian restaurants, particularly in the Haeund
-    79.76s  agent 발화 시작: <ret> Busan is actually quite well-regarded for its Italian 
-    79.96s  user  발화 끝
-    81.72s  user  발화 시작: Mm-hmm.
-    82.17s  user  발화 끝
-    85.32s  agent 발화 끝
-    87.57s  user  발화 시작: Busan… that's not a bad idea. I’ve always wanted to visit.
-    91.38s  agent 발화 시작: It’s a vibrant city with a lovely coastline. You might enjoy
-    91.46s  user  발화 끝
-    95.97s  agent 발화 끝
-    96.09s  user  발화 시작: I wonder what the weather is like in Busan in August?
-    98.46s  <ret> 발화 (turn23 첫 프레임)
-    98.68s  user  발화 끝
-    98.79s  agent 발화 시작: <ret> The weather in Busan in August is usually around 28.5 
-    99.00s  ⚡SPAN 주입 [d'=0.55s / d_lead=8.20s]: (tool result) Busan: 28.5°C, humidity 78%, wind 4.2 km/h, condition: p
-   106.90s  user  발화 시작: That sounds perfect. Not too hot, not too cold.
-   106.99s  agent 발화 끝
-   109.17s  agent 발화 시작: Yeah.
-   109.72s  agent 발화 끝
-   110.56s  user  발화 끝
-   110.73s  agent 발화 시작: [happy] Exactly! A pleasant temperature for exploring.
-   114.85s  agent 발화 끝
-   114.87s  user  발화 시작: Maybe I should look into some hotels there.
-   117.36s  user  발화 끝
-   117.61s  agent 발화 시작: That's a good next step. I can help you search if you'd like
-   122.05s  agent 발화 끝
-   122.38s  user  발화 시작: Yes, please. Something not too expensive, maybe a moderate p
-   126.55s  <ret> 발화 (turn30 첫 프레임)
-   126.97s  ⚡SPAN 주입 [d'=0.61s / d_lead=8.30s]: The Park Hyatt Busan offers moderate-priced rooms with ocean views, av
-   127.03s  agent 발화 시작: <ret> The Park Hyatt Busan has rooms averaging around 250,00
-   127.19s  user  발화 끝
-   135.33s  agent 발화 끝
-   135.53s  user  발화 시작: That sounds nice. I'll check it out.
-   137.51s  user  발화 끝
-   137.53s  agent 발화 시작: Wonderful. I hope you find something suitable.
-   141.13s  agent 발화 끝
-   142.14s  user  발화 시작: I’m also thinking about what to pack. I always overpack.
-   145.89s  user  발화 끝
-   145.91s  agent 발화 시작: [sigh] That's a common struggle! Packing light can make trav
-   149.16s  user  발화 시작: Yeah.
-   149.65s  user  발화 끝
-   152.52s  agent 발화 시작: I often suggest creating a capsule wardrobe with versatile p
-   152.67s  agent 발화 끝
-   157.47s  agent 발화 끝
-   157.50s  user  발화 시작: A capsule wardrobe? What’s that?
-   160.09s  user  발화 끝
-   160.11s  agent 발화 시작: It's a collection of essential clothing items that can be mi
-   164.18s  user  발화 시작: Mm-hmm.
-   164.72s  user  발화 끝
-   165.48s  agent 발화 끝
-   165.51s  user  발화 시작: Oh, I see. That makes sense.
-   167.14s  agent 발화 시작: It reduces decision fatigue and saves space in your luggage.
-   167.31s  user  발화 끝
-   170.41s  user  발화 시작: Mm-hmm.
-   170.86s  user  발화 끝
-   172.55s  agent 발화 끝
-   172.64s  user  발화 시작: I definitely need to save space. I always bring too many sho
-   176.51s  agent 발화 시작: Shoes can certainly take up a lot of room. Prioritizing comf
-   176.66s  user  발화 끝
-   181.97s  agent 발화 끝
-   182.10s  user  발화 시작: You’re right. Comfort is important. I’m going to write that 
-   185.80s  user  발화 끝
-   185.80s  agent 발화 시작: A little reminder can be very helpful.
-   188.42s  user  발화 시작: Do you have any tips for dealing with jet lag?
-   188.53s  agent 발화 끝
-   190.83s  agent 발화 시작: [curious] Jet lag can be tough. Adjusting your sleep schedul
-   190.96s  user  발화 끝
-   197.17s  agent 발화 끝
-   197.73s  user  발화 시작: That’s a good idea. I usually wait until I get there to try 
-   202.25s  agent 발화 시작: It's more challenging to adjust once you've already arrived.
-   202.27s  user  발화 끝
-   205.53s  user  발화 시작: Right.
-   205.93s  user  발화 끝
-   206.61s  user  발화 시작: I guess so. It always takes me a few days to feel normal.
-   206.74s  agent 발화 끝
-   210.78s  user  발화 끝
-   211.08s  agent 발화 시작: Staying hydrated and getting sunlight exposure also helps re
-   213.74s  user  발화 시작: Okay.
-   214.38s  user  발화 끝
-   217.29s  user  발화 시작: I’ll try to remember that.
-   217.42s  agent 발화 끝
-   218.65s  agent 발화 시작: It's all about supporting your body's natural rhythms.
-   218.71s  user  발화 끝
-   221.57s  user  발화 시작: Yeah.
-   222.07s  user  발화 끝
-   222.34s  user  발화 시작: I’m also trying to learn a little Korean before I go.
-   222.81s  agent 발화 끝
-   225.44s  user  발화 끝
-   225.88s  agent 발화 시작: That's fantastic! Even a few basic phrases can enhance your 
-   230.54s  user  발화 시작: Uh-huh.
-   231.18s  user  발화 끝
-   232.28s  agent 발화 끝
-   232.44s  user  발화 시작: I’m learning “hello” and “thank you” so far.
-   234.94s  agent 발화 시작: Those are excellent starting points! Koreans appreciate the 
-   235.02s  user  발화 끝
-   238.50s  user  발화 시작: Mm-hmm.
-   239.09s  user  발화 끝
-   240.21s  user  발화 시작: I hope I can say more by the time I go.
-   240.27s  agent 발화 끝
-   242.56s  agent 발화 시작: With a little practice, you'll be surprised how quickly you 
-   242.71s  user  발화 끝
-   246.91s  agent 발화 끝
-   246.96s  user  발화 시작: I’m also wondering… what time did I say my dentist appointme
-   251.18s  user  발화 끝
-   251.28s  agent 발화 시작: Your dentist appointment is on July 15th at 2:30 PM.
-   254.72s  user  발화 시작: Okay.
-   255.16s  user  발화 끝
-   256.28s  agent 발화 끝
-   256.41s  user  발화 시작: Oh, right! Thanks for reminding me. I completely forgot.
-   259.47s  agent 발화 시작: You’re very welcome. It’s easy to lose track of details.
-   259.60s  user  발화 끝
-   261.71s  user  발화 시작: Mm-hmm.
-   262.20s  user  발화 끝
-   264.29s  user  발화 시작: I'm also considering a day trip from Busan.
-   264.33s  agent 발화 끝
-   266.84s  agent 발화 시작: Busan is a good base for exploring the surrounding region.
-   266.92s  user  발화 끝
-   269.02s  user  발화 시작: Yeah.
-   269.52s  user  발화 끝
-   270.92s  agent 발화 끝
-   271.34s  user  발화 시작: Any recommendations?
-   272.24s  <ret> 발화 (turn76 첫 프레임)
-   272.60s  ⚡SPAN 주입 [d'=0.36s / d_lead=5.70s]: Gyeongju, a city near Busan, is known for its historical sites, includ
-   272.72s  agent 발화 시작: <ret> Gyeongju, near Busan, is famous for its historical sit
-   272.90s  user  발화 끝
-   278.21s  user  발화 시작: Gyeongju… that sounds interesting. Is it easy to get to from
-   278.42s  agent 발화 끝
-   282.89s  agent 발화 시작: Yes, there are frequent trains and buses between Busan and G
-   283.06s  user  발화 끝
-   284.45s  user  발화 시작: Okay.
-   284.91s  user  발화 끝
-   287.75s  agent 발화 끝
-   287.88s  user  발화 시작: Perfect. I'll look into that.
-   289.60s  agent 발화 시작: It's a worthwhile excursion for history and culture enthusia
-   289.72s  user  발화 끝
-   294.78s  agent 발화 끝
-   295.38s  user  발화 시작: I’m starting to get excited about this trip.
-   297.88s  agent 발화 시작: [happy] That's wonderful! A little anticipation can make the
-   297.96s  user  발화 끝
-   300.15s  user  발화 시작: Yeah.
-   300.47s  user  발화 끝
-   303.31s  agent 발화 끝
-   304.30s  user  발화 시작: I need to start making a list of things to do.
-   305.29s  agent 발화 시작: Uh-huh.
-   305.93s  agent 발화 끝
-   306.93s  user  발화 끝
-   307.10s  agent 발화 시작: A list is a great way to organize your thoughts and ensure y
-   311.48s  user  발화 시작: Yeah.
-   311.97s  user  발화 끝
-   312.80s  user  발화 시작: I’m also trying to decide what kind of adapter I’ll need.
-   312.89s  agent 발화 끝
-   316.04s  user  발화 끝
-   316.11s  agent 발화 시작: Korea uses Type C and F plugs, so you might need an adapter 
-   323.29s  agent 발화 끝
-   323.59s  user  발화 시작: Oh, good point. I didn’t even think about that.
-   326.08s  user  발화 끝
-   326.26s  agent 발화 시작: It's a small detail, but an important one.
-   329.73s  user  발화 시작: I’m starting to feel a little overwhelmed.
-   329.78s  agent 발화 끝
-   331.94s  user  발화 끝
-   332.08s  agent 발화 시작: [sigh] Planning a trip can be a lot to manage. Take it one s
-   337.69s  user  발화 시작: You’re right. One step at a time.
-   337.73s  agent 발화 끝
-   340.00s  user  발화 끝
-   340.11s  agent 발화 시작: And remember, it's okay to ask for help when you need it.
-   341.56s  user  발화 시작: Uh-huh.
-   342.10s  user  발화 끝
-   343.85s  user  발화 시작: I appreciate that.
-   343.86s  agent 발화 끝
-   344.87s  agent 발화 시작: I’m happy to assist in any way I can.
-   344.95s  user  발화 끝
-   346.98s  user  발화 시작: Yeah.
-   347.47s  user  발화 끝
-   347.86s  user  발화 시작: What was the price of that dentist appointment again? I need
-   347.92s  agent 발화 끝
-   351.93s  agent 발화 시작: The dentist appointment costs 150,000 won.
-   351.98s  user  발화 끝
-   353.43s  user  발화 시작: Mm-hmm.
-   353.97s  user  발화 끝
-   355.95s  agent 발화 끝
-   356.35s  user  발화 시작: Thank you. That helps me a lot.
-   358.09s  user  발화 끝
-   358.26s  agent 발화 시작: You’re very welcome. It’s good to keep track of expenses.
-   362.10s  agent 발화 끝
-   362.39s  user  발화 시작: I'm thinking about bringing a good book to read on the plane
-   363.94s  agent 발화 시작: Yeah, yeah.
-   365.30s  user  발화 끝
-   365.31s  agent 발화 시작: A book is a perfect companion for a long flight.
-   365.46s  agent 발화 끝
-   367.84s  user  발화 시작: Right.
-   368.19s  user  발화 끝
-   368.71s  user  발화 시작: Any recommendations?
-   368.78s  agent 발화 끝
-   370.03s  agent 발화 시작: That depends on your preferences! What kind of genres do you
-   370.18s  user  발화 끝
-   371.74s  user  발화 시작: Okay.
-   372.56s  user  발화 끝
-   375.58s  user  발화 시작: I like mysteries and thrillers.
-   375.64s  agent 발화 끝
-   376.97s  <ret> 발화 (turn114 첫 프레임)
-   377.54s  agent 발화 시작: <ret> "The Silent Patient" by Alex Michaelides is a popular 
-   377.70s  user  발화 끝
-   377.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.25s]: "The Silent Patient" by Alex Michaelides is a popular psychological th
-   383.80s  agent 발화 끝
-   383.82s  user  발화 시작: That sounds good. I’ll add it to my list.
-   386.35s  agent 발화 시작: Excellent choice. I hope you enjoy it.
-   386.40s  user  발화 끝
-   388.94s  agent 발화 끝
-   388.95s  user  발화 시작: I’m also wondering if I should get travel insurance.
-   392.10s  agent 발화 시작: Travel insurance is always a good idea, especially for inter
-   392.19s  user  발화 끝
-   397.51s  user  발화 시작: It’s just another expense, though.
-   397.51s  agent 발화 끝
-   399.46s  agent 발화 시작: It can provide peace of mind and protect you from unexpected
-   399.63s  user  발화 끝
-   402.42s  user  발화 시작: Yeah, yeah.
-   403.94s  user  발화 끝
-   404.45s  user  발화 시작: You’re right. Peace of mind is important.
-   404.56s  agent 발화 끝
-   407.03s  user  발화 끝
-   407.19s  agent 발화 시작: Exactly. It’s an investment in your well-being.
-   408.33s  user  발화 시작: Yeah.
-   408.83s  user  발화 끝
-   410.69s  agent 발화 끝
-   411.96s  user  발화 시작: I think I’ll do it.
-   413.15s  user  발화 끝
-   413.23s  agent 발화 시작: [happy] That’s a wise decision.
-   415.17s  agent 발화 끝
-   416.17s  user  발화 시작: I’m really looking forward to this trip now.
-   416.82s  agent 발화 시작: Yeah.
-   417.41s  agent 발화 끝
-   418.19s  agent 발화 시작: I’m delighted to hear that! I hope you have a wonderful time
-   418.33s  user  발화 끝
-   422.08s  user  발화 시작: Thanks, Komi. You've been really helpful.
-   422.22s  agent 발화 끝
-   423.77s  agent 발화 시작: You’re very welcome. I’m glad I could assist you.
-   423.97s  user  발화 끝
-   425.32s  user  발화 시작: Uh-huh.
-   425.72s  user  발화 끝
-   427.38s  agent 발화 끝
-   427.44s  user  발화 시작: I think I have everything under control now.
-   428.76s  agent 발화 시작: Yeah.
-   429.49s  agent 발화 끝
-   429.63s  agent 발화 시작: Wonderful. Remember to relax and enjoy the process.
-   429.75s  user  발화 끝
-   434.53s  agent 발화 끝
-   434.87s  user  발화 시작: I will. Thanks again.
-   436.25s  user  발화 끝
-   436.31s  agent 발화 시작: You’re very welcome. Safe travels!
-   439.82s  agent 발화 끝
+     0.00s  user  발화 시작: I'm moving house on August 6th.
+     3.03s  agent 발화 시작: That sounds like a big day.
+     3.13s  user  발화 끝
+     5.61s  agent 발화 끝
+     5.72s  user  발화 시작: And I need a mover for around 12:00 PM.
+     7.90s  agent 발화 시작: Moving can be stressful, but we'll get through it.
+     8.03s  user  발화 끝
+    11.41s  user  발화 시작: Oh, and a quote would be about 65,000 won.
+    11.83s  agent 발화 끝
+    14.93s  agent 발화 시작: Okay, 65,000 won.
+    15.11s  user  발화 끝
+    17.68s  user  발화 시작: Thanks, Klelina. It’s just… a lot.
+    17.84s  agent 발화 끝
+    20.97s  agent 발화 시작: It absolutely is a lot, and it's okay to feel overwhelmed. L
+    20.97s  user  발화 끝
+    32.13s  user  발화 시작: Actually, I was listening to an old song, and it got me thin
+    32.24s  agent 발화 끝
+    35.89s  agent 발화 시작: Oh? What song was that?
+    35.97s  user  발화 끝
+    38.48s  agent 발화 끝
+    38.75s  user  발화 시작: "These Boots Are Made for Walkin’". Do you know who wrote it
+    42.82s  <ret> 발화 (turn11 첫 프레임)
+    42.84s  agent 발화 시작: <ret> It was actually written by Lee Hazlewood, originally f
+    42.91s  user  발화 끝
+    43.12s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.55s]: Lee Hazlewood penned "These Boots Are Made for Walkin'", originally pe
+    50.40s  agent 발화 끝
+    50.80s  user  발화 시작: Really? I always assumed Nancy Sinatra wrote it.
+    54.32s  agent 발화 시작: It's a common misconception. Hazlewood was a prolific songwr
+    54.46s  user  발화 끝
+    59.79s  agent 발화 끝
+    60.46s  user  발화 시작: He was? What else did he do?
+    62.61s  <ret> 발화 (turn15 첫 프레임)
+    62.87s  agent 발화 시작: <ret> He also wrote and produced for artists like Duane Eddy
+    62.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.48s]: Lee Hazlewood also wrote and produced songs for various artists includ
+    63.05s  user  발화 끝
+    68.30s  user  발화 시작: Yeah.
+    68.84s  user  발화 끝
+    71.25s  user  발화 시작: Wow, that’s impressive. I guess you learn something new ever
+    71.35s  agent 발화 끝
+    73.75s  agent 발화 시작: Mm-hmm.
+    74.39s  agent 발화 끝
+    75.69s  user  발화 끝
+    76.07s  agent 발화 시작: [happy] Exactly! It's wonderful to discover hidden connectio
+    81.53s  agent 발화 끝
+    82.38s  user  발화 시작: This whole moving thing is making me rethink a lot of things
+    85.99s  agent 발화 시작: That's very common. Big changes often trigger a lot of refle
+    86.12s  user  발화 끝
+    91.55s  agent 발화 끝
+    91.81s  user  발화 시작: Like, what really matters. And what doesn’t.
+    95.04s  agent 발화 시작: That's a healthy process. It’s a chance to realign with your
+    95.23s  user  발화 끝
+   100.36s  agent 발화 끝
+   100.97s  user  발화 시작: It’s just… hard. Letting go.
+   103.67s  agent 발화 시작: Letting go *is* hard. It requires courage and self-compassio
+   103.84s  user  발화 끝
+   110.92s  user  발화 시작: Yeah.
+   111.38s  user  발화 끝
+   113.13s  agent 발화 끝
+   114.13s  user  발화 시작: Probably just the memories attached to the place.
+   116.89s  user  발화 끝
+   117.17s  agent 발화 시작: Those are precious. It's not about forgetting them, but abou
+   123.13s  agent 발화 끝
+   123.30s  user  발화 시작: That makes sense. But it feels like losing a part of myself.
+   125.69s  agent 발화 시작: Mm-hmm.
+   126.31s  agent 발화 끝
+   127.55s  user  발화 끝
+   127.70s  agent 발화 시작: [sigh] It can feel that way. But you *are* more than just a 
+   135.15s  user  발화 시작: Mm-hmm.
+   135.78s  user  발화 끝
+   138.07s  user  발화 시작: You're right. It's just… emotional.
+   138.18s  agent 발화 끝
+   140.47s  agent 발화 시작: It absolutely is. Allow yourself to feel those emotions with
+   140.62s  user  발화 끝
+   146.59s  agent 발화 끝
+   147.90s  user  발화 시작: I’ve been trying to distract myself with music.
+   148.91s  agent 발화 시작: Yeah, totally.
+   150.25s  user  발화 끝
+   150.50s  agent 발화 시작: Music is a wonderful way to process feelings.
+   150.66s  agent 발화 끝
+   154.01s  agent 발화 끝
+   154.38s  user  발화 시작: Do you have any recommendations? Something… uplifting?
+   158.08s  <ret> 발화 (turn39 첫 프레임)
+   158.28s  agent 발화 시작: <ret> I would suggest “Dancing Queen” by ABBA. It’s a really
+   158.41s  user  발화 끝
+   158.73s  ⚡SPAN 주입 [d'=0.65s / d_lead=8.07s]: ABBA’s “Dancing Queen” is a popular and upbeat song known for its joyf
+   166.34s  agent 발화 끝
+   166.41s  user  발화 시작: Oh, ABBA! I love them!
+   168.96s  agent 발화 시작: [happy] They're fantastic. A little bit of ABBA can brighten
+   169.09s  user  발화 끝
+   170.78s  user  발화 시작: Right.
+   171.27s  user  발화 끝
+   174.30s  user  발화 시작: I think I’ll make a playlist.
+   174.42s  agent 발화 끝
+   175.81s  agent 발화 시작: That’s a wonderful idea. Music can be a powerful companion d
+   175.91s  user  발화 끝
+   181.65s  agent 발화 끝
+   182.07s  user  발화 시작: Maybe I should learn to play an instrument.
+   184.19s  agent 발화 시작: That's a lovely thought! It could be a very rewarding creati
+   184.38s  user  발화 끝
+   189.60s  agent 발화 끝
+   190.21s  user  발화 시작: I always wanted to play the guitar.
+   192.01s  user  발화 끝
+   192.22s  agent 발화 시작: That’s a classic choice. There are plenty of resources onlin
+   195.19s  user  발화 시작: Yeah.
+   195.73s  user  발화 끝
+   197.48s  user  발화 시작: I should look into that.
+   197.54s  agent 발화 끝
+   198.87s  user  발화 시작: I was thinking about redecorating my new place.
+   199.08s  user  발화 끝
+   201.19s  agent 발화 시작: That's exciting! A fresh start with a fresh look.
+   201.36s  user  발화 끝
+   203.32s  user  발화 시작: Yeah.
+   203.96s  user  발화 끝
+   205.26s  agent 발화 끝
+   206.68s  user  발화 시작: I'm terrible at interior design though.
+   208.63s  agent 발화 시작: There are so many resources available to help. What’s your s
+   208.71s  user  발화 끝
+   210.81s  user  발화 시작: Yeah.
+   211.44s  user  발화 끝
+   213.82s  agent 발화 끝
+   214.30s  user  발화 시작: I don’t even know! I like… cozy?
+   217.54s  user  발화 끝
+   217.70s  agent 발화 시작: Cozy is a great starting point. Think warm colors, soft text
+   225.26s  agent 발화 끝
+   225.73s  user  발화 시작: That sounds nice. Maybe a fireplace?
+   228.56s  agent 발화 시작: [happy] A fireplace would definitely add to the cozy atmosph
+   228.78s  user  발화 끝
+   233.00s  agent 발화 끝
+   234.75s  user  발화 시작: It’s just a dream right now.
+   236.36s  user  발화 끝
+   236.66s  agent 발화 시작: Dreams are important. They give us something to look forward
+   240.73s  agent 발화 끝
+   240.83s  user  발화 시작: I just want a space that feels like *me*.
+   243.09s  agent 발화 시작: That’s the most important thing. A space where you feel safe
+   243.26s  user  발화 끝
+   249.77s  agent 발화 끝
+   250.42s  user  발화 시작: My friend suggested I try meditation.
+   252.63s  agent 발화 시작: That's a good suggestion. Meditation can be very grounding.
+   252.77s  user  발화 끝
+   258.01s  user  발화 시작: I’ve never really tried it.
+   258.15s  agent 발화 끝
+   259.29s  user  발화 끝
+   259.36s  agent 발화 시작: It takes practice, but even a few minutes a day can make a d
+   261.78s  user  발화 시작: Yeah, totally.
+   262.92s  user  발화 끝
+   264.04s  user  발화 시작: Do you know any good apps for that?
+   264.12s  agent 발화 끝
+   265.79s  <ret> 발화 (turn71 첫 프레임)
+   265.94s  user  발화 끝
+   266.03s  agent 발화 시작: <ret> There's an app called Headspace. It offers guided medi
+   266.37s  ⚡SPAN 주입 [d'=0.57s / d_lead=9.62s]: Headspace is a popular meditation app offering guided meditations, min
+   275.47s  user  발화 시작: Headspace… I’ll check that out.
+   275.65s  agent 발화 끝
+   277.59s  agent 발화 시작: [curious] It's a really well-regarded app. Many people find 
+   277.69s  user  발화 끝
+   282.89s  user  발화 시작: I need to find ways to manage the stress.
+   283.33s  agent 발화 끝
+   284.03s  agent 발화 시작: Yeah.
+   284.80s  agent 발화 끝
+   285.19s  agent 발화 시작: Self-care is essential, especially during times of change.
+   285.29s  user  발화 끝
+   290.32s  agent 발화 끝
+   290.94s  user  발화 시작: It’s just… everything feels so uncertain.
+   294.99s  agent 발화 시작: Uncertainty is a part of life. Learning to embrace it can be
+   295.11s  user  발화 끝
+   297.34s  user  발화 시작: Mhm.
+   297.84s  user  발화 끝
+   300.73s  agent 발화 끝
+   301.18s  user  발화 시작: I was thinking about visiting my parents after the move.
+   303.87s  agent 발화 시작: That's a lovely idea. Spending time with family can be very 
+   304.09s  user  발화 끝
+   309.05s  agent 발화 끝
+   309.28s  user  발화 시작: They live pretty far away though.
+   311.12s  user  발화 끝
+   311.19s  agent 발화 시작: Long-distance travel can be challenging, but it can also be 
+   314.23s  user  발화 시작: Yeah.
+   314.73s  user  발화 끝
+   316.76s  agent 발화 끝
+   316.78s  user  발화 시작: I'm not sure how I'll get there.
+   318.30s  user  발화 끝
+   318.38s  agent 발화 시작: We could explore some travel options if you'd like. What cit
+   324.17s  agent 발화 끝
+   324.68s  user  발화 시작: They live in Busan.
+   326.61s  user  발화 끝
+   326.62s  agent 발화 시작: Busan is a beautiful city. We can look at flights or train r
+   329.48s  user  발화 시작: Okay.
+   330.11s  user  발화 끝
+   332.62s  user  발화 시작: Let's look at flights.
+   332.83s  agent 발화 끝
+   333.52s  <ret> 발화 (turn91 첫 프레임)
+   333.69s  ⚡SPAN 주입 [d'=0.32s / d_lead=9.69s]: (tool result) Flights from Seoul to Busan are available from 45,000 wo
+   333.74s  agent 발화 시작: <ret> Flights from Seoul to Busan range from 45,000 to 80,00
+   333.91s  user  발화 끝
+   337.98s  user  발화 시작: Mhm.
+   338.61s  user  발화 끝
+   343.31s  user  발화 시작: That’s not too bad.
+   343.43s  agent 발화 끝
+   344.36s  agent 발화 시작: It’s a relatively short flight.
+   344.42s  user  발화 끝
+   346.52s  user  발화 시작: I was thinking about all the things I need to do before the 
+   346.62s  agent 발화 끝
+   351.57s  user  발화 시작: …Wait, what time did I say the movers were coming again?
+   351.76s  user  발화 끝
+   352.77s  agent 발화 시작: Yeah.
+   353.58s  agent 발화 끝
+   354.24s  agent 발화 시작: You said the movers were coming around 12:00 PM.
+   354.44s  user  발화 끝
+   356.51s  user  발화 시작: Right.
+   357.28s  user  발화 끝
+   357.33s  user  발화 시작: Right, 12:00 PM. Okay, good.
+   357.66s  agent 발화 끝
+   359.92s  user  발화 끝
+   360.19s  agent 발화 시작: It’s easy to lose track of details during a busy time.
+   364.21s  agent 발화 끝
+   364.61s  user  발화 시작: I'm also worried about making new friends in the new neighbo
+   367.94s  agent 발화 시작: That’s a valid concern. Building a new support system takes 
+   367.99s  user  발화 끝
+   369.56s  user  발화 시작: Uh-huh.
+   370.29s  user  발화 끝
+   372.96s  user  발화 시작: It's hard to put yourself out there.
+   373.08s  agent 발화 끝
+   374.85s  user  발화 끝
+   374.88s  agent 발화 시작: It is. But there are many ways to connect with people.
+   379.00s  agent 발화 끝
+   379.22s  user  발화 시작: Like what?
+   380.23s  user  발화 끝
+   380.32s  agent 발화 시작: Joining local clubs, volunteering, taking classes… anything 
+   386.90s  agent 발화 끝
+   387.00s  user  발화 시작: Those are good ideas.
+   388.35s  agent 발화 시작: [happy] They can be great starting points.
+   388.47s  user  발화 끝
+   390.70s  agent 발화 끝
+   391.11s  user  발화 시작: I guess I should start researching.
+   392.78s  agent 발화 시작: That's a proactive step. It shows you're committed to buildi
+   393.04s  user  발화 끝
+   396.14s  user  발화 시작: Yeah.
+   396.77s  user  발화 끝
+   399.72s  agent 발화 끝
+   399.77s  user  발화 시작: It’s just… scary.
+   401.84s  user  발화 끝
+   402.24s  agent 발화 시작: It’s okay to be scared. It's a sign that you're stepping out
+   407.75s  user  발화 시작: I keep wondering if I'm making the right decision.
+   407.89s  agent 발화 끝
+   410.19s  agent 발화 시작: It's natural to have doubts. Change can be unsettling.
+   410.42s  user  발화 끝
+   414.12s  user  발화 시작: What if I regret it?
+   414.22s  agent 발화 끝
+   415.35s  agent 발화 시작: It's impossible to know the future. But you can trust that y
+   415.40s  user  발화 끝
+   423.79s  agent 발화 끝
+   424.02s  user  발화 시작: That's true.
+   424.96s  agent 발화 시작: [curious] You are a strong and capable person. You’ve naviga
+   425.07s  user  발화 끝
+   432.19s  agent 발화 끝
+   433.14s  user  발화 시작: I feel better just talking about it.
+   434.92s  agent 발화 시작: That’s wonderful. Sometimes, simply voicing your concerns ca
+   435.08s  user  발화 끝
+   437.50s  user  발화 시작: Yeah.
+   438.05s  user  발화 끝
+   441.45s  agent 발화 끝
+   441.87s  user  발화 시작: How much was the mover’s quote again?
+   444.43s  agent 발화 시작: You said it was about 65,000 won.
+   444.55s  user  발화 끝
+   447.57s  user  발화 시작: Oh, right, 65,000 won. Thanks.
+   447.66s  agent 발화 끝
+   450.97s  user  발화 시작: I think I'm starting to feel a little more optimistic.
+   451.13s  user  발화 끝
+   454.20s  user  발화 끝
+   454.33s  agent 발화 시작: [happy] That's fantastic to hear! It’s a testament to your r
+   459.61s  agent 발화 끝
+   459.65s  user  발화 시작: I'm excited about the possibilities.
+   461.89s  agent 발화 시작: That’s the spirit! Embrace the new chapter with open arms.
+   461.92s  user  발화 끝
+   463.89s  user  발화 시작: Yeah, totally.
+   465.04s  user  발화 끝
+   466.89s  agent 발화 끝
+   467.34s  user  발화 시작: Maybe this move will be a good thing after all.
+   469.71s  agent 발화 시작: I believe it will be. It’s an opportunity for growth, self-d
+   469.75s  user  발화 끝
+   475.83s  agent 발화 끝
+   476.36s  user  발화 시작: Thank you, Klelina. You’ve been really helpful.
+   478.79s  agent 발화 시작: You’re very welcome. I’m here for you every step of the way.
+   478.81s  user  발화 끝
+   486.33s  agent 발화 끝

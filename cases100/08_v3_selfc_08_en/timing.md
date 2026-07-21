@@ -4,48 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Ada",
+#     "name": "Dylan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "mid 30s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "skill",
-#       "text": "User is getting fairly good at home fermentation."
+#       "date": "2026-06-09",
+#       "category": "airline",
+#       "text": "User usually flies with United."
 #     },
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-04-19",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2026-01-20",
 #       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is pad thai."
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2026-01-19",
 #       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
+#       "text": "User subscribes to a shared Netflix family plan."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "allergy",
-#       "text": "User is allergic to soy."
+#       "date": "2026-01-06",
+#       "category": "dislike",
+#       "text": "User can't stand cilantro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-25",
+#       "date": "2026-06-19",
+#       "title": "Building a PC",
+#       "bullets": [
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "title": "Studying for the TOEIC",
 #       "bullets": [
 #         "target score is 850",
@@ -53,75 +61,57 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "title": "Choosing a laptop",
+#       "date": "2026-02-17",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-11",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "title": "Selling a used bike",
-#       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Please refund twenty-five dollars  | S2 I was thinking next week— no, wait | S3 Maybe. I’d like to find a nice hot | S4 Yes, please.
+# EXAMINER(FDB-v2) 단계: S1 I need to unconfirm the meeting sc | S2 That's better. I'm really stressed | S3 …Is she even aware there *is* a pr | S4 Do you have any advice on how to s
 
-     0.00s  user  발화 시작: Please refund twenty-five dollars and fifty cents for captur
-    15.04s  <ret> 발화 (turn1 첫 프레임)
-    15.42s  agent 발화 시작: <ret> Okay, I’ve created a refund for twenty-five dollars an
-    15.54s  user  발화 끝
-    15.55s  ⚡SPAN 주입 [d'=0.51s / d_lead=9.83s]: (tool result) Refund created. ID: R-5555555555. Amount: $25.50. Status
-    22.87s  user  발화 시작: Yeah.
-    23.69s  user  발화 끝
-    25.25s  agent 발화 끝
-    25.39s  user  발화 시작: That’s great, thank you. Uh, I’m thinking of taking a trip… 
-    29.72s  agent 발화 시작: Seoul is a wonderful choice! [happy] It's such a vibrant cit
-    29.83s  user  발화 끝
-    32.72s  user  발화 시작: Yeah.
-    33.53s  user  발화 끝
-    35.74s  agent 발화 끝
-    35.83s  user  발화 시작: I was thinking next week— no, wait, the week after. July eig
-    41.51s  <ret> 발화 (turn7 첫 프레임)
-    41.98s  agent 발화 시작: <ret> Perfect! So that’s July eighteenth to the twenty-fifth
-    42.18s  user  발화 끝
-    42.54s  ⚡SPAN 주입 [d'=1.03s / d_lead=8.34s]: It is Friday, July 10, 2026 at 1:12 PM in Asia/Seoul right now.
-    47.95s  user  발화 시작: Mhm.
-    48.59s  user  발화 끝
-    50.31s  agent 발화 시작: I'm happy to help you plan. Do you have any initial ideas ab
-    50.32s  agent 발화 끝
-    58.00s  agent 발화 끝
-    58.31s  user  발화 시작: Maybe. I’d like to find a nice hotel, something not too expe
-    62.36s  <ret> 발화 (turn11 첫 프레임)
-    62.52s  agent 발화 시작: <ret> I found the L7 Myeongdong, which is a highly-rated hot
-    62.57s  user  발화 끝
-    63.29s  ⚡SPAN 주입 [d'=0.94s / d_lead=10.16s]: (tool result) Hotel: L7 Myeongdong. Price: $120/night. Rating: 4.2 sta
-    72.68s  agent 발화 끝
-    72.70s  user  발화 시작: That sounds pretty good.
-    74.31s  user  발화 끝
-    74.46s  agent 발화 시작: [happy] Wonderful! It’s in a really lively area, close to sh
-    81.83s  agent 발화 끝
-    82.08s  user  발화 시작: Yes, please.
-    82.67s  <ret> 발화 (turn15 첫 프레임)
-    83.12s  agent 발화 시작: <ret> Great news! Availability is confirmed at the L7 Myeong
-    83.18s  user  발화 끝
-    83.53s  ⚡SPAN 주입 [d'=0.86s / d_lead=9.59s]: (tool result) B-7777777777.
-    86.67s  user  발화 시작: Right.
-    87.45s  user  발화 끝
-    92.61s  agent 발화 시작: That takes care of the hotel. I can also help with planning 
-    92.71s  agent 발화 끝
-   100.82s  agent 발화 끝
+     0.00s  user  발화 시작: I need to unconfirm the meeting scheduled for Monday.
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     3.02s  agent 발화 시작: <ret> Alright, meeting one two three four five is cancelled,
+     3.14s  user  발화 끝
+     3.15s  ⚡SPAN 주입 [d'=0.51s / d_lead=9.04s]: (tool result) Meeting 12345 cancelled. Confirmation ID: XJ789
+    12.06s  agent 발화 끝
+    12.43s  user  발화 시작: Actually, it was Tuesday, not Monday.
+    14.34s  <ret> 발화 (turn3 첫 프레임)
+    14.88s  agent 발화 시작: <ret> [happy] No problem at all. Meeting one two three four 
+    14.88s  user  발화 끝
+    15.37s  ⚡SPAN 주입 [d'=1.03s / d_lead=11.73s]: (tool result) Meeting 12345 cancelled. Confirmation ID: YK234
+    21.39s  user  발화 시작: Mm-hmm.
+    21.89s  user  발화 끝
+    26.61s  agent 발화 끝
+    27.45s  user  발화 시작: That's better. I'm really stressed about a conflict with a c
+    31.80s  user  발화 끝
+    31.80s  agent 발화 시작: I understand. Workplace conflicts can be draining. It's brav
+    37.85s  agent 발화 시작: Sometimes, identifying the core issue—
+    37.92s  agent 발화 끝
+    39.64s  user  발화 시작: …Is she even aware there *is* a problem? I haven’t actually 
+    40.34s  agent 발화 끝
+    44.09s  agent 발화 시작: That’s a very insightful question. Often, a direct conversat
+    44.17s  user  발화 끝
+    49.81s  agent 발화 시작: It's possible Sarah isn’t aware of your concerns, and assumi
+    49.98s  agent 발화 끝
+    53.05s  user  발화 시작: Yeah.
+    53.55s  user  발화 끝
+    55.38s  agent 발화 시작: [curious] Have you considered what you'd like to achieve by 
+    55.41s  agent 발화 끝
+    61.73s  user  발화 시작: I just want us to work together without constantly disagreei
+    61.82s  agent 발화 끝
+    64.96s  agent 발화 시작: That’s a very reasonable goal. Focusing on collaboration rat
+    65.11s  user  발화 끝
+    71.86s  agent 발화 시작: [sigh] It takes courage to initiate these conversations, but
+    71.95s  agent 발화 끝
+    80.29s  agent 발화 끝
+    80.39s  user  발화 시작: Do you have any advice on how to start the conversation?
+    83.34s  agent 발화 시작: Begin by expressing your observations neutrally, focusing on
+    83.49s  user  발화 끝
+    89.92s  agent 발화 시작: [happy] Try phrasing it as "I've noticed..." rather than "Yo
+    90.06s  agent 발화 끝
+    99.84s  agent 발화 끝

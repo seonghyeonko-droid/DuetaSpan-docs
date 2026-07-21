@@ -4,146 +4,119 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Anton",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "mid 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-05-23",
+#       "category": "floor",
+#       "text": "User lives on the 2nd floor."
+#     },
+#     {
+#       "date": "2026-05-10",
+#       "category": "allergy",
+#       "text": "User is allergic to tree nuts."
+#     },
+#     {
+#       "date": "2026-04-12",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-23",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
-#     },
-#     {
-#       "date": "2026-05-14",
-#       "category": "pet",
-#       "text": "User has a Cockapoo named Latte."
-#     },
-#     {
-#       "date": "2026-02-12",
-#       "category": "skill",
-#       "text": "User is getting fairly good at board-game design."
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "category": "employer",
-#       "text": "User works at a media company."
-#     },
-#     {
-#       "date": "2026-02-01",
+#       "date": "2026-04-10",
 #       "category": "coffee",
-#       "text": "User's usual coffee order is a flat white."
+#       "text": "User's usual coffee order is a cappuccino with oat milk."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "phone",
-#       "text": "User uses a Galaxy Z Flip."
+#       "date": "2026-04-07",
+#       "category": "dislike",
+#       "text": "User can't stand raw tomatoes."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "medication",
-#       "text": "User takes blood-pressure medication."
+#       "date": "2026-02-15",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A-."
 #     },
 #     {
-#       "date": "2025-12-06",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Kenji."
+#       "date": "2026-02-13",
+#       "category": "music",
+#       "text": "User likes listening to K-ballads."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "schedule",
+#       "text": "User has on-call weekends."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-18",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-04-12",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-12",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-03-15",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "title": "Planning a camping trip",
+#       "bullets": [
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 It sounds… ancient. What exactly d | S2 It’s just… what do I even *do*? I  | S3 …but what about the bills? I have  | S4 Data analytics… sounds complicated
 
-     0.00s  agent 발화 시작: Hello Anton, it’s lovely to meet you. I'm Araril.
-     3.52s  agent 발화 끝
-     4.15s  user  발화 시작: It sounds… ancient. What exactly does a “rebuilding” guide *
-     7.19s  agent 발화 시작: Mhm.
-     7.78s  agent 발화 끝
-     9.47s  user  발화 끝
-     9.78s  agent 발화 시작: [happy] It’s a name I’ve always cherished, and you’re right,
-    20.95s  user  발화 시작: So, like a therapist?
-    21.10s  agent 발화 끝
-    23.02s  user  발화 끝
-    23.12s  agent 발화 시작: Not quite, though there's some overlap. I focus more on prac
-    30.09s  user  발화 시작: Uh-huh.
-    30.81s  user  발화 끝
-    33.18s  agent 발화 끝
-    33.18s  user  발화 시작: I’ve… been made redundant. It’s a bit of a shock, honestly.
-    37.49s  user  발화 끝
-    37.88s  agent 발화 시작: [sigh] Oh, Anton, I’m truly sorry to hear that. Losing a job
-    43.32s  user  발화 시작: Mm-hmm.
-    43.95s  user  발화 끝
-    47.16s  agent 발화 끝
-    47.79s  user  발화 시작: It’s just… what do I even *do*? I feel completely lost.
-    52.51s  user  발화 끝
-    52.96s  agent 발화 시작: That’s a very common feeling after a big change. We can star
-    58.15s  user  발화 시작: Mm-hmm.
-    58.97s  user  발화 끝
-    63.58s  agent 발화 끝
-    65.03s  user  발화 시작: Possibilities… easier said than done, right? I’ve been at th
-    69.62s  agent 발화 시작: Yeah.
-    70.25s  agent 발화 끝
-    71.64s  agent 발화 시작: Eight years is a significant commitment! It’s natural to fee
-    71.80s  user  발화 끝
-    79.63s  user  발화 시작: …but what about the bills? I have a mortgage, you know?
-    80.36s  agent 발화 끝
-    83.05s  user  발화 끝
-    83.08s  agent 발화 시작: [curious] That’s a very practical and important concern, Ant
-    86.51s  user  발화 시작: Yeah, totally.
-    87.93s  user  발화 끝
-    92.36s  agent 발화 끝
-    92.50s  user  발화 시작: Okay, that would be… really helpful. I haven't even started 
-    98.18s  agent 발화 시작: [happy] Of course. The UK government offers Jobseeker's Allo
-    98.29s  user  발화 끝
-   107.22s  agent 발화 끝
-   107.59s  user  발화 시작: Retraining… I hadn't really thought about that. I’m a market
-   112.45s  agent 발화 시작: Marketing skills are highly transferable, Anton. We can expl
-   112.64s  user  발화 끝
-   123.32s  user  발화 시작: Data analytics… sounds complicated.
-   123.44s  agent 발화 끝
-   126.36s  agent 발화 시작: It can seem daunting, but many excellent online courses can 
-   126.50s  user  발화 끝
-   134.91s  user  발화 시작: [laugh] You make it sound… almost positive.
-   135.03s  agent 발화 끝
-   138.89s  user  발화 끝
-   138.92s  agent 발화 시작: [happy] It *is* possible to find opportunity within challeng
-   149.73s  agent 발화 끝
+     0.00s  agent 발화 시작: Hallo Quinn, I’m Unas. It’s lovely to meet you. I’m here to 
+     4.88s  user  발화 시작: Yeah, yeah.
+     6.02s  user  발화 끝
+     9.31s  agent 발화 끝
+     9.76s  user  발화 시작: So, you’re like a counselor I can talk to anytime?
+    12.89s  agent 발화 시작: [happy] Exactly! I can share techniques and perspectives to 
+    12.90s  user  발화 끝
+    17.71s  user  발화 시작: Yeah.
+    18.15s  user  발화 끝
+    21.45s  agent 발화 시작: We can explore things like grounding exercises, or thought c
+    21.46s  agent 발화 끝
+    32.27s  user  발화 시작: …But does it actually *work*? I’ve tried meditation before, 
+    33.05s  agent 발화 끝
+    39.55s  agent 발화 시작: That’s a really valid point, Quinn. Sometimes practices like
+    39.64s  user  발화 끝
+    52.70s  agent 발화 시작: [curious] Perhaps we could explore some different approaches
+    52.85s  agent 발화 끝
+    63.81s  user  발화 시작: Okay, yeah. Maybe something different would be better. What'
+    63.97s  agent 발화 끝
+    69.17s  user  발화 끝

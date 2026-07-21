@@ -4,97 +4,126 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Julian",
+#     "name": "Sophie",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "late 40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "mid 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "savings",
-#       "text": "User is saving for an emergency fund of six months' expenses."
+#       "date": "2026-06-20",
+#       "category": "wake",
+#       "text": "User usually wakes up around 7:30am."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is an iced americano."
+#       "date": "2026-05-31",
+#       "category": "phone",
+#       "text": "User uses an Xperia 1."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "anniversary",
-#       "text": "User's anniversary is May 14."
+#       "date": "2026-04-13",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Ava."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
+#       "date": "2026-01-16",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "category": "home",
-#       "text": "User's home address is 917 Poplar Street."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "category": "work",
-#       "text": "User works as a yoga instructor."
+#       "date": "2025-12-28",
+#       "category": "partner",
+#       "text": "User's partner is named Hana."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-15",
-#       "title": "Training for a 10K",
+#       "date": "2026-06-11",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-04-21",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "title": "Looking for a therapist",
+#       "bullets": [
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Please refund twenty-five dollars  | S2 Yeah, but I’m not sure when to go— | S3 That sounds…warm. | S4 I’m at the Grand Hyatt hotel.
 
-     0.00s  user  발화 시작: Begin a code generation session and save the output to my te
-     4.91s  <ret> 발화 (turn1 첫 프레임)
-     5.12s  agent 발화 시작: <ret> [happy] Okay, a code generation session is now running
-     5.26s  user  발화 끝
-     5.94s  ⚡SPAN 주입 [d'=1.03s / d_lead=12.34s]: (tool result) Session started. ID: cg-20260710-4839
-    12.26s  user  발화 시작: Uh-huh.
-    12.89s  user  발화 끝
-    17.46s  agent 발화 끝
-    17.91s  user  발화 시작: Actually, save it to ‘projects’— I meant projects, not tests
-    21.45s  <ret> 발화 (turn4 첫 프레임)
-    21.75s  user  발화 끝
-    21.91s  agent 발화 시작: <ret> [happy] No problem at all. The session's directory has
-    22.09s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.46s]: (tool result) Directory updated to projects.
-    24.42s  user  발화 시작: Yeah.
-    25.05s  user  발화 끝
-    28.98s  user  발화 시작: Yes, write a Python function to calculate Fibonacci sequence
-    29.37s  agent 발화 끝
-    30.70s  agent 발화 시작: Yeah, totally.
-    32.12s  agent 발화 끝
-    33.69s  agent 발화 시작: <ret> Perhaps we could break it down?
-    33.69s  <ret> 발화 (turn8 첫 프레임)
-    33.89s  user  발화 끝
-    34.40s  ⚡SPAN 주입 [d'=0.71s / d_lead=2.17s]: I can certainly help with that, but I'm a career coach, and often peop
-    35.86s  agent 발화 끝
+     0.00s  user  발화 시작: Please refund twenty-five dollars and fifty cents for captur
+    14.47s  <ret> 발화 (turn1 첫 프레임)
+    14.66s  user  발화 끝
+    14.68s  agent 발화 시작: <ret> Okay, I’ve created a refund request for twenty-five do
+    15.50s  ⚡SPAN 주입 [d'=1.03s / d_lead=18.38s]: (tool result) Refund created: ID R-4567890123, amount $25.50, status p
+    21.02s  user  발화 시작: Mhm.
+    21.83s  user  발화 끝
+    32.88s  user  발화 시작: That’s great, thanks. Uh, I’m thinking about a trip, actuall
+    33.05s  agent 발화 끝
+    38.35s  user  발화 끝
+    38.78s  agent 발화 시작: [happy] Oh, Seoul is a fantastic choice! It's such a vibrant
+    43.65s  agent 발화 끝
+    44.04s  user  발화 시작: Yeah, but I’m not sure when to go—I was thinking maybe next 
+    50.12s  <ret> 발화 (turn6 첫 프레임)
+    50.52s  agent 발화 시작: <ret> So, today is July tenth, two thousand twenty-six, whic
+    50.71s  user  발화 끝
+    50.76s  ⚡SPAN 주입 [d'=0.64s / d_lead=12.06s]: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.
+    59.23s  user  발화 시작: Mhm.
+    59.95s  user  발화 끝
+    62.40s  agent 발화 시작: It’s a popular tourist season, though, so expect more crowds
+    62.59s  agent 발화 끝
+    64.50s  user  발화 시작: Yeah.
+    64.95s  user  발화 끝
+    66.70s  agent 발화 끝
+    67.07s  user  발화 시작: Crowds are…okay, I guess. What’s the weather usually like in
+    73.21s  <ret> 발화 (turn11 첫 프레임)
+    73.44s  agent 발화 시작: <ret> On August fifteenth, two thousand twenty-six, the weat
+    73.70s  user  발화 끝
+    73.77s  ⚡SPAN 주입 [d'=1.05s / d_lead=14.98s]: (tool result) Seoul, August 15, 2026: 28.5°C, humidity 78%, wind 6.2 k
+    88.30s  user  발화 시작: That sounds…warm.
+    88.42s  agent 발화 끝
+    90.52s  user  발화 끝
+    90.71s  agent 발화 시작: [curious] It is! But it's a manageable warmth, especially wi
+   100.63s  agent 발화 끝
+   101.79s  user  발화 시작: Actually, I need to book a taxi to the airport. My flight is
+   107.38s  <ret> 발화 (turn15 첫 프레임)
+   107.72s  user  발화 끝
+   107.76s  agent 발화 시작: <ret> Next Tuesday is July twenty-first, two thousand twenty
+   108.43s  ⚡SPAN 주입 [d'=1.06s / d_lead=8.53s]: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.
+   116.29s  agent 발화 끝
+   116.86s  user  발화 시작: I’m at the Grand Hyatt hotel.
+   118.58s  <ret> 발화 (turn17 첫 프레임)
+   119.07s  ⚡SPAN 주입 [d'=0.49s / d_lead=21.11s]: (tool result) Taxi booked: ID TX-7890123456, pickup 7:00 PM July 21, G
+   119.07s  agent 발화 시작: <ret> Perfect! A taxi is booked for you, ID TX-seven-eight-n
+   119.21s  user  발화 끝
+   140.18s  agent 발화 끝

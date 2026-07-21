@@ -4,76 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Julia",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "late 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "work",
-#       "text": "User works as a UX researcher."
+#       "date": "2026-04-07",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-05-15",
-#       "category": "diet",
-#       "text": "User is low-sodium."
-#     },
-#     {
-#       "date": "2026-04-14",
-#       "category": "car",
-#       "text": "User drives a 2022 Volkswagen Golf."
-#     },
-#     {
-#       "date": "2026-02-17",
+#       "date": "2026-04-02",
 #       "category": "emergency",
-#       "text": "User's emergency contact is Mina."
+#       "text": "User's emergency contact is Minjun."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-23",
+#       "date": "2026-03-28",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Greek."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 24°C."
+#       "date": "2026-02-20",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "commute",
-#       "text": "User bikes to work."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Noah."
+#       "date": "2026-01-25",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A-."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
-#       "title": "Studying for the TOEIC",
-#       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-27",
+#       "date": "2026-05-16",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
@@ -81,71 +53,89 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "title": "Planning a wedding",
+#       "date": "2026-03-14",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "title": "Sorting out a visa",
+#       "bullets": [
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "title": "Adopting a rescue dog",
+#       "bullets": [
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, could you find me the personal | S2 That does sound nice. I’m feeling  | S3 Not really. I used to paint, but I | S4 Myeongdong sounds easier to get to
+# EXAMINER(FDB-v2) 단계: S1 Hi Tas, could you find me the phon | S2 That sounds pretty warm. Are there | S3 Hmm, maybe I should go during the  | S4 That's smart. I tend to overpack. 
 
-     0.00s  user  발화 시작: Hi, could you find me the personal email address for…
-     3.14s  user  발화 끝
-     4.71s  user  발화 시작: …Lee Min-ho? I need to send him a fan letter.
-     6.99s  agent 발화 시작: Uh-huh.
-     7.48s  <ret> 발화 (turn3 첫 프레임)
-     7.67s  agent 발화 끝
-     7.82s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed personal 
-     7.99s  user  발화 끝
-     8.82s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.39s]: (no information found)
-    16.21s  agent 발화 끝
-    16.64s  user  발화 시작: Oh, that’s a shame. Well, what about the weather in Busan ri
-    18.94s  agent 발화 시작: Yeah.
-    19.57s  agent 발화 끝
-    20.45s  <ret> 발화 (turn6 첫 프레임)
-    20.86s  agent 발화 시작: <ret> Right now in Busan, it's 26.5 degrees Celsius, with hu
-    20.99s  user  발화 끝
-    21.17s  ⚡SPAN 주입 [d'=0.71s / d_lead=11.97s]: (tool result) 26.5°C, humidity 68%, wind 7.2 km/h
-    26.72s  user  발화 시작: Yeah, yeah.
-    28.00s  user  발화 끝
-    32.51s  user  발화 시작: That does sound nice. I’m feeling really stressed about work
-    32.84s  agent 발화 끝
-    33.84s  agent 발화 시작: Mm-hmm.
-    34.47s  agent 발화 끝
-    36.90s  user  발화 끝
-    37.31s  agent 발화 시작: I hear you. Work stress is really common, and it's okay to f
-    45.14s  agent 발화 끝
-    45.59s  user  발화 시작: It’s just… everything feels so urgent, and I can’t seem to s
-    46.88s  agent 발화 시작: Uh-huh.
-    47.52s  agent 발화 끝
-    49.43s  user  발화 끝
-    49.47s  agent 발화 시작: It sounds exhausting to be constantly in that state of high 
-    52.55s  user  발화 시작: Yeah.
-    52.91s  user  발화 끝
-    58.28s  agent 발화 끝
-    58.49s  user  발화 시작: Not really. I used to paint, but I haven’t had time for ages
-    59.88s  agent 발화 시작: Mhm.
-    60.51s  agent 발화 끝
-    62.24s  user  발화 끝
-    62.59s  agent 발화 시작: That’s a shame. Painting sounds like a wonderful outlet. Eve
-    74.23s  agent 발화 끝
-    74.80s  user  발화 시작: I guess so. Can you search for nearby art supply stores in S
-    79.02s  <ret> 발화 (turn19 첫 프레임)
-    79.15s  agent 발화 시작: <ret> Sure! Artbox Myeongdong and Art Materials Shop are bot
-    79.28s  user  발화 끝
-    79.53s  ⚡SPAN 주입 [d'=0.53s / d_lead=10.11s]: (tool result) Artbox Myeongdong, stationery and art supplies, 12 Myeon
-    89.26s  agent 발화 끝
-    91.71s  user  발화 시작: Myeongdong sounds easier to get to. What’s the quickest rout
-    95.81s  <ret> 발화 (turn21 첫 프레임)
-    96.42s  agent 발화 시작: <ret> The quickest route is to take Line 4 towards Oido and 
-    96.66s  user  발화 끝
-    97.07s  ⚡SPAN 주입 [d'=1.26s / d_lead=7.83s]: (tool result) Take Line 4 towards Oido, get off at Myeongdong Station 
-   104.26s  agent 발화 끝
-   105.83s  user  발화 시작: Perfect! Thanks so much, Arellaus.
-   107.77s  agent 발화 시작: You're very welcome! I’m glad I could help. Remember, even s
-   107.95s  user  발화 끝
-   115.78s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Tas, could you find me the phone number for Lee Sun-hee?
+     3.25s  <ret> 발화 (turn1 첫 프레임)
+     3.55s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.71s]: (no information found)
+     3.70s  user  발화 끝
+     3.85s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
+     6.00s  user  발화 시작: Yeah.
+     6.73s  user  발화 끝
+    10.56s  agent 발화 끝
+    11.01s  user  발화 시작: Oh, okay. Well, I’m planning a trip to Jeju Island next mont
+    15.38s  agent 발화 시작: Jeju Island sounds lovely! It’s a beautiful place to relax a
+    15.54s  user  발화 끝
+    19.57s  user  발화 시작: Mm-hmm.
+    20.21s  user  발화 끝
+    21.49s  agent 발화 끝
+    22.02s  user  발화 시작: I’m hoping to go hiking while I’m there. What's the weather 
+    27.75s  <ret> 발화 (turn7 첫 프레임)
+    28.13s  agent 발화 시작: <ret> In August 2026, Jeju Island typically has an average t
+    28.17s  user  발화 끝
+    28.29s  ⚡SPAN 주입 [d'=0.54s / d_lead=14.19s]: (tool result) Jeju Island: August 2026 - Average temperature 27.5°C, h
+    42.32s  agent 발화 끝
+    42.93s  user  발화 시작: That sounds pretty warm. Are there any good hiking trails fo
+    47.14s  agent 발화 시작: Hallasan National Park has several trails—
+    47.24s  user  발화 끝
+    49.39s  user  발화 시작: …Are they crowded in August?
+    50.15s  agent 발화 끝
+    50.99s  user  발화 끝
+    51.01s  agent 발화 시작: August is peak season, so the trails can get quite busy, esp
+    56.14s  agent 발화 끝
+    57.02s  user  발화 시작: Hmm, maybe I should go during the week then. What about acco
+    61.82s  agent 발화 시작: Uh-huh.
+    62.45s  agent 발화 끝
+    65.17s  <ret> 발화 (turn14 첫 프레임)
+    65.41s  agent 발화 시작: <ret> I found a couple of options! Hotel Whistlelark Seongsa
+    65.55s  user  발화 끝
+    66.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=16.94s]: (tool result) Hotel Whistlelark Seongsan: $85/night, 4.2 stars, 2km fr
+    74.76s  user  발화 시작: Yeah.
+    75.35s  user  발화 끝
+    82.34s  agent 발화 끝
+    82.37s  user  발화 시작: The Ocean View Hotel sounds good. Could you check if they ha
+    88.87s  <ret> 발화 (turn17 첫 프레임)
+    89.35s  user  발화 끝
+    89.39s  agent 발화 시작: <ret> [happy] Great news! The Ocean View Hotel has availabil
+    89.59s  ⚡SPAN 주입 [d'=0.72s / d_lead=13.68s]: (tool result) Ocean View Hotel: Available. Standard Double Room: $68/n
+   103.07s  agent 발화 끝
+   104.07s  user  발화 시작: Wonderful! That’s perfect. Do you have any recommendations f
+   108.11s  agent 발화 시작: Mm-hmm.
+   108.75s  agent 발화 끝
+   110.19s  user  발화 끝
+   110.48s  agent 발화 시작: Definitely. I always suggest a capsule wardrobe—a few versat
+   121.58s  user  발화 시작: That's smart. I tend to overpack. Maybe I'll make a list.
+   121.75s  agent 발화 끝
+   125.92s  user  발화 끝
+   126.02s  agent 발화 시작: [curious] A list is a fantastic idea! It really helps focus 
+   134.70s  user  발화 시작: No, that’s okay, I think I can handle it. Thanks for your he
+   134.92s  agent 발화 끝
+   138.90s  agent 발화 시작: [happy] You’re very welcome! I’m glad I could assist you wit
+   138.91s  user  발화 끝
+   145.20s  agent 발화 끝

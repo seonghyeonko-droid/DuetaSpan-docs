@@ -4,162 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Henri",
+#     "name": "Lily",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "60s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Hokkaido in May."
+#       "date": "2026-06-16",
+#       "category": "allergy",
+#       "text": "User is allergic to eggs."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "car",
-#       "text": "User drives no car — uses car-sharing."
+#       "date": "2026-05-20",
+#       "category": "phone",
+#       "text": "User uses an Xperia 1."
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
+#       "date": "2026-04-18",
+#       "category": "pet",
+#       "text": "User has a Border Collie named Ziggy."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "home",
-#       "text": "User's home address is 522 Chestnut Street."
+#       "date": "2026-03-23",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 23°C."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "skill",
-#       "text": "User is a complete beginner at bread baking."
+#       "date": "2026-03-22",
+#       "category": "hobby",
+#       "text": "User is into sea kayaking."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
+#       "date": "2026-03-18",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is seafood pasta."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "anniversary",
-#       "text": "User's anniversary is September 18."
+#       "date": "2025-12-05",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "savings",
+#       "text": "User is saving for a trip to Europe next year."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-20",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-12",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "title": "Choosing a preschool",
+#       "date": "2026-04-14",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-08",
-#       "title": "Comparing health insurance",
+#       "date": "2026-02-13",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I'm really struggling with… | S2 I wish I could just tell her how I | S3 “I” statements? | S4 I was wondering, do you know who h
+# EXAMINER(FDB-v2) 단계: S1 Hi Klaer, I'm feeling really stres | S2 Oh, right, Martha! I knew that… | S3 …I just… blanked. Do you ever find | S4 That makes sense. I think I need t
 
-     0.00s  user  발화 시작: Hi, I'm really struggling with…
-     3.70s  user  발화 끝
-     5.21s  user  발화 시작: …my sister. We argue constantly.
-     9.94s  user  발화 끝
-    10.05s  agent 발화 시작: It sounds incredibly draining to be in constant conflict wit
-    18.59s  user  발화 시작: It's just… she always tries to control everything I do.
-    18.59s  agent 발화 끝
-    23.30s  user  발화 끝
-    23.54s  agent 발화 시작: That feeling of being controlled can be really frustrating, 
-    26.59s  user  발화 시작: Yeah.
-    27.74s  user  발화 끝
-    31.16s  user  발화 시작: Yeah, and I end up just shutting down, which makes her even 
-    31.23s  agent 발화 끝
-    36.55s  agent 발화 시작: Shutting down is a common response to feeling overwhelmed. I
-    36.62s  user  발화 끝
-    44.31s  user  발화 시작: I wish I could just tell her how I feel without it turning i
-    44.80s  agent 발화 끝
-    48.35s  agent 발화 시작: That’s a really healthy goal. Learning to express your needs
-    48.53s  user  발화 끝
-    52.96s  user  발화 시작: Yeah.
-    53.78s  user  발화 끝
-    55.82s  agent 발화 끝
-    55.90s  user  발화 시작: Do you have any advice on how to do that?
-    59.25s  <ret> 발화 (turn12 첫 프레임)
-    59.53s  ⚡SPAN 주입 [d'=1.02s / d_lead=7.18s]: Assertiveness involves expressing your thoughts and feelings respectfu
-    59.59s  agent 발화 시작: <ret> Assertiveness is about expressing your thoughts and fe
-    59.74s  user  발화 끝
-    66.77s  agent 발화 끝
-    68.86s  user  발화 시작: Hmm, that makes sense.
-    71.07s  agent 발화 시작: It’s a process, and it takes practice. We can explore some s
-    71.21s  user  발화 끝
-    76.21s  agent 발화 끝
-    78.42s  user  발화 시작: Maybe. What's the best way to even *start* a conversation li
-    83.29s  user  발화 끝
-    83.45s  agent 발화 시작: Starting can be the hardest part. Choosing a calm moment, an
-    89.57s  agent 발화 끝
-    90.49s  user  발화 시작: “I” statements?
-    91.75s  <ret> 발화 (turn18 첫 프레임)
-    92.35s  agent 발화 시작: <ret> “I” statements focus on your own feelings and experien
-    92.38s  user  발화 끝
-    92.74s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.67s]: I” statements focus on your own feelings and experiences, rather than 
-    97.93s  user  발화 시작: Yeah, yeah.
-    99.16s  user  발화 끝
-   100.86s  user  발화 시작: Oh, I see. So, not “You make me mad,” but “I feel angry when
-   101.02s  agent 발화 끝
-   107.01s  user  발화 끝
-   107.47s  agent 발화 시작: Exactly! It shifts the focus to your experience, which makes
-   111.19s  user  발화 시작: Yeah, yeah.
-   112.61s  user  발화 끝
-   112.81s  agent 발화 시작: It can feel awkward at first, but it really can change the d
-   112.84s  agent 발화 끝
-   119.25s  agent 발화 끝
-   120.61s  user  발화 시작: I think she'd just dismiss it as me being sensitive.
-   124.08s  user  발화 끝
-   124.28s  agent 발화 시작: That’s a valid concern. It’s possible she won’t respond posi
-   127.50s  user  발화 시작: Yeah.
-   128.28s  user  발화 끝
-   131.79s  user  발화 시작: That's… a good point. It's just exhausting.
-   131.88s  agent 발화 끝
-   135.71s  user  발화 끝
-   135.76s  agent 발화 시작: [sigh] It absolutely is exhausting when you're constantly br
-   139.21s  user  발화 시작: Yeah.
-   140.17s  user  발화 끝
-   143.08s  user  발화 시작: I was wondering, do you know who has the most home runs in b
-   143.18s  agent 발화 끝
-   150.07s  user  발화 끝
-   150.10s  <ret> 발화 (turn31 첫 프레임)
-   150.19s  agent 발화 시작: <ret> The player with the most home runs in Major League Bas
-   151.04s  ⚡SPAN 주입 [d'=0.94s / d_lead=8.62s]: (tool result) Barry Bonds holds the Major League Baseball record for c
-   158.81s  agent 발화 끝
-   159.74s  user  발화 시작: Wow, 762! That’s a lot.
-   163.86s  agent 발화 시작: It certainly is a remarkable number. Sometimes a little dist
-   163.91s  user  발화 끝
-   168.20s  user  발화 시작: Yeah.
-   169.20s  user  발화 끝
-   170.72s  agent 발화 끝
-   171.64s  user  발화 시작: It is. Maybe focusing on something else for a bit will help 
-   177.66s  user  발화 끝
-   178.01s  agent 발화 시작: [happy] That’s a great idea. Taking a break to recharge can 
-   187.75s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Klaer, I'm feeling really stressed about work today.
+     2.92s  agent 발화 시작: Hi there! It's completely understandable to feel stressed, w
+     3.10s  user  발화 끝
+    10.93s  user  발화 시작: Thanks. Actually, to take my mind off things, I was wonderin
+    10.94s  agent 발화 끝
+    17.74s  <ret> 발화 (turn3 첫 프레임)
+    17.82s  agent 발화 시작: <ret> Roo Stewart’s mother is Martha MacKenzie, who is playe
+    17.84s  ⚡SPAN 주입 [d'=0.44s / d_lead=6.95s]: Martha MacKenzie (played by Alison Mulvaney) is the mother of Roo Stew
+    17.92s  user  발화 끝
+    24.70s  user  발화 시작: Oh, right, Martha! I knew that…
+    24.77s  agent 발화 끝
+    27.11s  user  발화 끝
+    28.58s  user  발화 시작: …I just… blanked. Do you ever find your mind goes blank when
+    32.52s  agent 발화 시작: It’s so common for stress to affect our memory. It's like yo
+    32.65s  user  발화 끝
+    39.20s  user  발화 시작: That makes sense. I think I need to go for a walk to clear m
+    39.29s  agent 발화 끝
+    42.74s  agent 발화 시작: That’s a wonderful idea. Fresh air and movement can do wonde
+    42.81s  user  발화 끝
+    48.99s  agent 발화 끝

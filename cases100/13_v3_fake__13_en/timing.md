@@ -4,84 +4,165 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Elena",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "mid 20s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is mushroom risotto."
+#       "date": "2026-06-28",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Kenji."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "gym",
-#       "text": "User has a gym membership near home."
+#       "date": "2026-06-06",
+#       "category": "partner",
+#       "text": "User's partner is named Kenji."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "savings",
-#       "text": "User is saving for a new car."
+#       "date": "2026-04-26",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB+."
-#     },
-#     {
-#       "date": "2026-01-14",
-#       "category": "medication",
-#       "text": "User takes medication for migraines."
+#       "date": "2026-02-22",
+#       "category": "employer",
+#       "text": "User works at a school district."
 #     },
 #     {
 #       "date": "2026-01-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Georgia in June."
+#       "category": "schedule",
+#       "text": "User has a fully remote setup."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "skill",
+#       "text": "User is a complete beginner at rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-23",
-#       "title": "Looking for a therapist",
+#       "date": "2026-03-12",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "title": "Meal-prep planning",
+#       "date": "2025-12-26",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hi Kellax, I was just wondering… w | S2 Oh, I didn’t know that! | S3 It really is. Was Dorothy a child  | S4 A special award, that’s nice.
 
-     0.00s  user  발화 시작: Hey, who played bass on "Sympathy for…
-     3.33s  user  발화 끝
-     4.46s  user  발화 시작: …the Devil"? I'm trying to settle a bet.
-     6.71s  <ret> 발화 (turn2 첫 프레임)
-     7.31s  agent 발화 시작: <ret> That would be Keith Richards, actually! He stepped in 
-     7.42s  user  발화 끝
-     8.08s  ⚡SPAN 주입 [d'=1.37s / d_lead=14.15s]: Keith Richards played bass on The Rolling Stones' "Sympathy for the De
-    20.93s  <ret> 발화 (turn3 첫 프레임)
-    21.34s  ⚡SPAN 주입(IRRELEVANT) [d'=0.41s / d_lead=9.18s]: The average high temperature in Fairbanks, Alaska in January is -11.1°
-    21.46s  agent 발화 끝
-    21.47s  agent 발화 시작: <ret> [happy] It’s good to know a bit of music trivia, isn't
-    30.61s  user  발화 시작: Wow, that’s interesting! So, he usually played guitar, right
-    30.66s  agent 발화 끝
-    36.72s  agent 발화 시작: Yes, Keith Richards is primarily known as the guitarist for 
-    36.76s  user  발화 끝
-    50.27s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Kellax, I was just wondering… when did *The Wizard of Oz*
+     3.08s  agent 발화 시작: Yeah.
+     3.72s  agent 발화 끝
+     4.72s  <ret> 발화 (turn2 첫 프레임)
+     5.13s  user  발화 끝
+     5.27s  agent 발화 시작: <ret> That wonderful film first came out on August twenty-fi
+     5.46s  ⚡SPAN 주입 [d'=0.74s / d_lead=6.16s]: The film *The Wizard of Oz* was first released on August 25, 1939, in 
+    11.43s  agent 발화 끝
+    11.49s  user  발화 시작: Wow, that was a long time ago.
+    14.26s  user  발화 끝
+    14.62s  agent 발화 시작: It truly was! It’s amazing how some stories continue to reso
+    20.74s  agent 발화 끝
+    21.91s  user  발화 시작: Definitely. Do you think it’s still popular with kids today?
+    23.86s  agent 발화 시작: Yeah.
+    24.49s  agent 발화 끝
+    26.03s  user  발화 끝
+    26.37s  agent 발화 시작: I believe so. Its themes of courage, friendship, and finding
+    28.97s  user  발화 시작: Yeah, yeah.
+    30.25s  user  발화 끝
+    31.70s  agent 발화 끝
+    31.77s  user  발화 시작: I guess you’re right. What about the music?
+    33.49s  agent 발화 시작: Yeah.
+    33.99s  agent 발화 끝
+    34.26s  <ret> 발화 (turn11 첫 프레임)
+    34.39s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.62s]: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by
+    34.45s  agent 발화 시작: <ret> The music was composed by Harold Arlen, with lyrics pe
+    34.59s  user  발화 끝
+    41.07s  agent 발화 끝
+    41.13s  user  발화 시작: Oh, I didn’t know that!
+    43.00s  agent 발화 시작: [happy] It’s fun to learn the details behind the magic, don’
+    43.07s  user  발화 끝
+    45.87s  agent 발화 끝
+    47.32s  user  발화 시작: Yeah, it is. Did they film it all in Kansas?
+    50.27s  <ret> 발화 (turn15 첫 프레임)
+    50.55s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.13s]: While the story begins in Kansas, *The Wizard of Oz* was primarily fil
+    50.61s  agent 발화 시작: <ret> While the story starts in Kansas, much of the film was
+    50.69s  user  발화 끝
+    54.47s  user  발화 시작: Yeah.
+    54.92s  user  발화 끝
+    57.75s  agent 발화 끝
+    58.43s  user  발화 시작: Oh, so it wasn't really filmed on a farm?
+    59.43s  agent 발화 시작: Yeah.
+    60.06s  agent 발화 끝
+    60.95s  agent 발화 시작: Not entirely! They used sets to create that sense of Kansas,
+    61.16s  user  발화 끝
+    63.72s  user  발화 시작: Mm-hmm.
+    64.20s  user  발화 끝
+    66.60s  agent 발화 끝
+    66.73s  user  발화 시작: That makes sense. It looked so colorful!
+    69.41s  <ret> 발화 (turn22 첫 프레임)
+    69.84s  ⚡SPAN 주입(IRRELEVANT) [d'=0.43s / d_lead=4.86s]: The average retail price of organic thyme in Portland, Oregon, is $3.9
+    70.01s  agent 발화 시작: <ret> The vibrant colors are definitely one of the things th
+    70.29s  user  발화 끝
+    74.56s  user  발화 시작: It really is. Was Dorothy a child actor?
+    74.87s  agent 발화 끝
+    78.41s  <ret> 발화 (turn24 첫 프레임)
+    78.65s  ⚡SPAN 주입 [d'=0.94s / d_lead=6.06s]: Judy Garland, who played Dorothy, was only 16 years old during the fil
+    78.71s  agent 발화 시작: <ret> Judy Garland, who played Dorothy, was just sixteen yea
+    78.91s  user  발화 끝
+    83.33s  user  발화 시작: Uh-huh.
+    83.88s  user  발화 끝
+    84.77s  agent 발화 끝
+    85.48s  user  발화 시작: Wow, sixteen! That’s so young. What other movies was she in?
+    90.39s  user  발화 시작: …did she win any awards for that role?
+    90.58s  user  발화 끝
+    92.06s  agent 발화 시작: Yeah.
+    92.70s  agent 발화 끝
+    93.21s  agent 발화 시작: Well, that’s a really good question. She didn’t actually win
+    93.34s  user  발화 끝
+    98.36s  user  발화 시작: Oh, really? That's surprising.
+    98.86s  agent 발화 끝
+   101.05s  agent 발화 시작: It is a bit surprising, isn’t it? She received a special Juv
+   101.09s  user  발화 끝
+   103.48s  user  발화 시작: Okay.
+   104.48s  user  발화 끝
+   107.02s  agent 발화 끝
+   108.37s  user  발화 시작: A special award, that’s nice.
+   111.09s  user  발화 끝
+   111.23s  agent 발화 시작: It was a recognition of her incredible talent at such a youn
+   114.32s  user  발화 시작: Yeah, totally.
+   116.07s  user  발화 끝
+   117.67s  agent 발화 끝
+   117.76s  user  발화 시작: It really is. Do you think they’ll ever remake it?
+   121.70s  user  발화 끝
+   122.07s  agent 발화 시작: [curious] That’s a tricky question. It’s such an iconic film
+   126.93s  agent 발화 끝
+   126.94s  user  발화 시작: I agree. It would be hard to live up to the original.
+   128.12s  agent 발화 시작: Yeah.
+   128.95s  agent 발화 끝
+   130.16s  agent 발화 시작: Exactly. Some stories are best left as they are, cherished f
+   130.17s  user  발화 끝
+   135.10s  user  발화 시작: That's a good point. Thanks, Kellax.
+   135.16s  agent 발화 끝
+   137.03s  user  발화 끝
+   137.46s  agent 발화 시작: [happy] You're very welcome. I'm glad I could share a bit of
+   145.16s  agent 발화 끝

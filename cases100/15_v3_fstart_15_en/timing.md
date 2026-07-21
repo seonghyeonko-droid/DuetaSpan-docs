@@ -4,125 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "David",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "early 40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "child",
-#       "text": "User has a child named Emma, age 6."
+#       "date": "2026-05-29",
+#       "category": "partner",
+#       "text": "User's partner is named Clara."
 #     },
 #     {
-#       "date": "2026-04-08",
+#       "date": "2026-05-23",
 #       "category": "floor",
-#       "text": "User lives on the 8th floor."
+#       "text": "User lives on the 15th floor."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "schedule",
-#       "text": "User has a four-day compressed week."
+#       "date": "2026-03-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "streaming",
-#       "text": "User subscribes to a shared Netflix family plan."
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
-#     },
-#     {
-#       "date": "2025-12-16",
+#       "date": "2026-03-04",
 #       "category": "skill",
-#       "text": "User is a complete beginner at board-game design."
+#       "text": "User is getting fairly good at vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "home",
+#       "text": "User's home address is 567 Chestnut Street."
+#     },
+#     {
+#       "date": "2026-01-26",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Kenji."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is bún chả."
+#     },
+#     {
+#       "date": "2025-12-09",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-20",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-05-09",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "title": "Planning a wedding",
+#       "date": "2025-12-25",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to figure out if I can  | S2 I really need to get a handle on m | S3 Sounds good, but how do I figure o | S4 Could you search for some easy, he
 
-     0.00s  user  발화 시작: I'm trying to figure out if I can afford a vacation this yea
-     2.92s  user  발화 끝
-     3.01s  agent 발화 시작: It's wonderful you're thinking about a getaway! Let's see if
-     8.20s  user  발화 시작: I was looking at flights to Jeju Island… but they're so expe
-     8.33s  agent 발화 끝
-    12.60s  user  발화 끝
-    12.62s  <ret> 발화 (turn3 첫 프레임)
-    12.65s  agent 발화 시작: <ret> Jeju Island is a really beautiful place, and currently
-    12.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.41s]: Jeju Island is a volcanic island, south of the Korean Peninsula, and i
-    22.06s  agent 발화 끝
-    22.43s  user  발화 시작: Wow, that’s a big range.
-    24.07s  agent 발화 시작: It is! Booking further in advance or being flexible with you
-    24.09s  user  발화 끝
-    31.48s  agent 발화 끝
-    32.80s  user  발화 시작: I really need to get a handle on my spending, though.
-    35.12s  agent 발화 시작: [happy] I understand. Taking control of your finances is a g
-    35.20s  user  발화 끝
-    42.53s  agent 발화 끝
-    42.63s  user  발화 시작: Do you think the 50/30/20 rule would work for me?
-    44.90s  <ret> 발화 (turn9 첫 프레임)
-    45.26s  ⚡SPAN 주입 [d'=0.64s / d_lead=8.95s]: The 50/30/20 rule is a budgeting method that allocates 50% of your inc
-    45.32s  agent 발화 시작: <ret> The 50/30/20 rule is a simple way to budget—fifty perc
-    45.45s  user  발화 끝
-    48.54s  user  발화 시작: Yeah.
-    48.95s  user  발화 끝
-    54.27s  agent 발화 끝
-    54.83s  user  발화 시작: Sounds good, but how do I figure out what counts as a “need”
-    56.20s  agent 발화 시작: Uh-huh.
-    57.02s  agent 발화 끝
-    57.32s  <ret> 발화 (turn13 첫 프레임)
-    57.62s  ⚡SPAN 주입 [d'=0.83s / d_lead=2.04s]: Needs are essential expenses required for survival, such as housing, f
-    57.68s  agent 발화 시작: <ret> Needs are things you absolutely must have, like housin
-    57.78s  user  발화 끝
-    63.58s  user  발화 시작: …wait, does transportation include my monthly transit pass?
-    64.30s  agent 발화 끝
-    67.08s  agent 발화 시작: Yes, absolutely! Your monthly transit pass would fall under 
-    67.27s  user  발화 끝
-    72.15s  user  발화 시작: Yeah.
-    72.50s  user  발화 끝
-    73.60s  agent 발화 시작: It's important to be realistic about what you truly need ver
-    73.76s  agent 발화 끝
-    78.21s  user  발화 시작: I’m spending way too much on eating out, I think.
-    78.32s  agent 발화 끝
-    80.60s  agent 발화 시작: [sigh] It's very common to overspend on dining out. It adds 
-    80.66s  user  발화 끝
-    86.14s  user  발화 시작: Could you search for some easy, healthy recipes?
-    86.34s  agent 발화 끝
-    87.99s  <ret> 발화 (turn21 첫 프레임)
-    88.53s  agent 발화 시작: <ret> I found some quick and healthy recipes on BBC Good Foo
-    88.72s  user  발화 끝
-    88.93s  ⚡SPAN 주입 [d'=0.94s / d_lead=8.90s]: (tool result) BBC Good Food provides a collection of quick and healthy
-    97.44s  agent 발화 끝
-    97.56s  user  발화 시작: That sounds good. Maybe I can save some money and still eat 
-   100.99s  user  발화 끝
-   101.10s  agent 발화 시작: [happy] Exactly! Small changes like that can really add up o
-   107.86s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find a bus for five people from Dallas to Houston 
+     5.79s  agent 발화 시작: Yeah.
+     6.24s  agent 발화 끝
+     8.20s  user  발화 끝
+     8.42s  agent 발화 시작: It absolutely can be tricky, yes. Life changes so much, does
+    12.96s  agent 발화 끝
+    12.97s  user  발화 시작: It does. I just moved to Dallas, and I don't really know any
+    16.02s  user  발화 끝
+    16.07s  agent 발화 시작: [curious] Moving is a big step! It's really common to feel t
+    25.64s  user  발화 시작: What’s the best way to start? Should I just… reach out to pe
+    26.13s  agent 발화 끝
+    29.09s  <ret> 발화 (turn6 첫 프레임)
+    29.27s  agent 발화 시작: <ret> The best way to start is often just reaching out first
+    29.35s  user  발화 끝
+    30.09s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.56s]: Reaching out first is a great way to start building friendships, as it
+    41.84s  agent 발화 끝

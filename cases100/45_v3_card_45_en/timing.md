@@ -4,440 +4,418 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_45",
-#     "name": "Alice",
+#     "name": "Hannah",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "60s",
-#     "language": "German"
+#     "age_range": "mid 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B-."
+#       "date": "2026-06-16",
+#       "category": "airline",
+#       "text": "User usually flies with United."
+#     },
+#     {
+#       "date": "2026-06-14",
+#       "category": "allergy",
+#       "text": "User is allergic to soy."
+#     },
+#     {
+#       "date": "2026-05-10",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a caramel latte."
 #     },
 #     {
 #       "date": "2026-04-22",
+#       "category": "partner",
+#       "text": "User's partner is named Sara."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "child",
+#       "text": "User has a child named Sara, age 10."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "anniversary",
+#       "text": "User's anniversary is November 25."
+#     },
+#     {
+#       "date": "2025-12-24",
 #       "category": "commute",
-#       "text": "User works from home."
-#     },
-#     {
-#       "date": "2026-04-03",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 25°C."
-#     },
-#     {
-#       "date": "2026-03-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Taiwan in August."
-#     },
-#     {
-#       "date": "2026-03-19",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "gym",
-#       "text": "User has a gym membership near home."
-#     },
-#     {
-#       "date": "2026-02-10",
-#       "category": "skill",
-#       "text": "User is getting fairly good at board-game design."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
-#     },
-#     {
-#       "date": "2025-12-18",
-#       "category": "car",
-#       "text": "User drives a 2019 Hyundai Tucson."
+#       "text": "User walks 20 minutes to the office."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-20",
-#       "title": "Looking for a therapist",
+#       "date": "2026-06-07",
+#       "title": "Studying for the TOEIC",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-13",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-06-05",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "title": "Training for a 10K",
+#       "date": "2026-04-30",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I have a dentist appointment on Ju | S2 Maybe I’ll try it. | S3 Hmm… family, creativity, peace of  | S4 I'm just worried about finding the
+# EXAMINER(FDB-v2) 단계: S1 I have a dentist appointment comin | S2 …when everything is so expensive. | S3 I’ve always wanted to see Rome. | S4 I’ve been feeling really stressed 
 
-     0.00s  user  발화 시작: I have a dentist appointment on July 15th at 2:30 PM. It's w
-     4.63s  agent 발화 시작: Right.
-     5.45s  agent 발화 끝
-     6.07s  user  발화 끝
-     6.09s  agent 발화 시작: That sounds straightforward.
-     7.65s  user  발화 시작: No, not right now. Just wanted to get that off my chest.
-     7.69s  agent 발화 끝
-    11.96s  agent 발화 시작: [happy] I’m glad to hear it. It’s good to be prepared.
-    12.14s  user  발화 끝
-    13.37s  user  발화 시작: Yeah, yeah.
-    14.79s  user  발화 끝
-    15.19s  agent 발화 끝
-    15.37s  user  발화 시작: I've been feeling pretty lost lately, like I'm just drifting
-    19.00s  agent 발화 시작: It’s okay to feel that way sometimes. Many people experience
-    19.21s  user  발화 끝
-    22.19s  user  발화 시작: Uh-huh.
-    22.68s  user  발화 끝
-    24.98s  agent 발화 끝
-    26.25s  user  발화 시작: It's just… everything feels overwhelming. Work, relationship
-    32.45s  user  발화 끝
-    32.82s  agent 발화 시작: It sounds like you might be experiencing some burnout. It's 
-    36.99s  user  발화 시작: Yeah, yeah.
-    37.99s  user  발화 끝
-    38.70s  agent 발화 끝
-    38.70s  user  발화 시작: Burnout, huh? That's what it feels like.
-    41.66s  user  발화 끝
-    41.94s  agent 발화 시작: It often creeps up on us. Let’s explore what’s contributing 
-    47.37s  agent 발화 끝
-    48.66s  user  발화 시작: I don’t even know where to start.
-    50.96s  user  발화 끝
-    51.15s  agent 발화 시작: We can start small. What’s been the most draining part of yo
-    53.37s  user  발화 시작: Yeah.
-    53.81s  user  발화 끝
-    56.61s  agent 발화 끝
-    57.27s  user  발화 시작: Probably work. My boss is constantly adding more to my plate
-    58.92s  agent 발화 시작: Right.
-    59.84s  agent 발화 끝
-    61.75s  agent 발화 시작: That sounds incredibly stressful. It’s hard to thrive under 
-    61.94s  user  발화 끝
-    66.69s  user  발화 시작: It is. I feel like I’m constantly running just to stay in pl
-    66.88s  agent 발화 끝
-    71.32s  user  발화 끝
-    71.39s  agent 발화 시작: That's a common feeling when boundaries aren’t respected.
-    75.00s  agent 발화 끝
-    75.46s  user  발화 시작: Boundaries… I’m terrible at setting those.
-    78.46s  agent 발화 시작: It’s a skill that takes practice. We can work on that togeth
-    78.55s  user  발화 끝
-    82.29s  agent 발화 끝
-    83.65s  user  발화 시작: I appreciate that. I feel like I'm always saying yes to ever
-    88.27s  agent 발화 시작: People-pleasing can be exhausting. It's okay to prioritize y
-    88.37s  user  발화 끝
-    93.06s  user  발화 시작: Easier said than done, right?
-    93.18s  agent 발화 끝
-    95.12s  agent 발화 시작: It takes courage to say no.
-    95.32s  user  발화 끝
-    97.37s  agent 발화 끝
-    98.26s  user  발화 시작: I've been trying to rediscover things I enjoy, but it feels…
-   103.12s  user  발화 끝
-   103.28s  agent 발화 시작: Sometimes, rediscovering joy takes time. Don’t put too much 
-   108.98s  agent 발화 끝
-   110.35s  user  발화 시작: I used to love painting, but now I just stare at the canvas.
-   114.33s  agent 발화 시작: It's possible the joy hasn't vanished, just become obscured.
-   114.52s  user  발화 끝
-   118.75s  user  발화 시작: Obscured by what?
-   118.91s  agent 발화 끝
-   120.22s  user  발화 끝
-   120.41s  agent 발화 시작: Perhaps by the weight of everything else. Stress can stifle 
-   122.12s  user  발화 시작: Mm-hmm.
-   122.57s  user  발화 끝
-   125.74s  agent 발화 끝
-   126.79s  user  발화 시작: That makes sense. I feel so disconnected from myself.
-   130.91s  user  발화 끝
-   131.07s  agent 발화 시작: That disconnection is a key sign of burnout.
-   133.34s  user  발화 시작: Right.
-   133.97s  user  발화 끝
-   134.63s  agent 발화 끝
-   134.82s  user  발화 시작: What can I do about it? I feel stuck.
-   138.06s  user  발화 끝
-   138.12s  agent 발화 시작: [curious] We can explore some self-care techniques, like min
-   142.99s  agent 발화 끝
-   143.06s  user  발화 시작: Mindfulness… I've heard of that.
-   145.29s  agent 발화 시작: It's about being present in the moment, without judgment.
-   145.60s  user  발화 끝
-   148.85s  user  발화 시작: Sounds… hard.
-   149.09s  agent 발화 끝
-   150.37s  agent 발화 시작: It can be challenging at first, but it gets easier with prac
-   150.51s  user  발화 끝
-   154.86s  agent 발화 끝
-   155.43s  user  발화 시작: Maybe I’ll try it.
-   156.66s  agent 발화 시작: Even a few minutes a day can make a difference.
-   156.85s  user  발화 끝
-   159.25s  agent 발화 끝
-   159.68s  user  발화 시작: I've also been sleeping terribly.
-   161.88s  agent 발화 시작: Sleep is crucial for recovery. Are you able to establish a r
-   161.94s  user  발화 끝
-   167.47s  user  발화 시작: Not really. My work hours are all over the place.
-   167.77s  agent 발화 끝
-   169.40s  agent 발화 시작: Right.
-   170.31s  agent 발화 끝
-   170.99s  agent 발화 시작: Irregular schedules make it tough. We could look at some sle
-   171.18s  user  발화 끝
-   176.14s  user  발화 시작: Sure.
-   176.36s  agent 발화 끝
-   176.68s  user  발화 끝
-   176.80s  agent 발화 시작: Creating a relaxing bedtime routine can help signal your bod
-   181.18s  user  발화 시작: Like what?
-   181.53s  agent 발화 끝
-   182.17s  agent 발화 시작: A warm bath, reading a book, or listening to calming music.
-   182.19s  user  발화 끝
-   187.17s  agent 발화 끝
-   187.17s  user  발화 시작: I usually just scroll through my phone.
-   189.86s  agent 발화 시작: That blue light can interfere with sleep. It's best to avoid
-   190.07s  user  발화 끝
-   195.15s  user  발화 시작: You’re right.
-   195.28s  agent 발화 끝
-   195.89s  agent 발화 시작: Small changes can add up.
-   195.96s  user  발화 끝
-   197.74s  agent 발화 끝
-   197.86s  user  발화 시작: I'm thinking about taking a vacation.
-   200.40s  user  발화 끝
-   200.40s  agent 발화 시작: [happy] That sounds like a wonderful idea! A change of scene
-   205.58s  agent 발화 끝
-   205.68s  user  발화 시작: I was thinking of going to Jeju Island.
-   208.27s  user  발화 끝
-   208.70s  agent 발화 시작: Jeju Island is beautiful. Have you been before?
-   212.07s  agent 발화 끝
-   212.16s  user  발화 시작: No, it would be my first time.
-   214.47s  agent 발화 시작: It’s known for its volcanic landscape and beaches.
-   214.55s  user  발화 끝
-   217.98s  agent 발화 끝
-   218.09s  user  발화 시작: Sounds perfect. I need some time to just… breathe.
-   222.15s  agent 발화 시작: It sounds like a very healing place.
-   222.16s  user  발화 끝
-   223.46s  user  발화 시작: Yeah.
-   223.95s  user  발화 끝
-   224.61s  agent 발화 끝
-   224.72s  user  발화 시작: Do you think I should tell my boss about feeling burned out?
-   225.97s  agent 발화 시작: Uh-huh.
-   226.74s  agent 발화 끝
-   228.09s  user  발화 끝
-   228.38s  agent 발화 시작: That depends on your relationship with your boss and your co
-   230.91s  user  발화 시작: Yeah.
-   231.54s  user  발화 끝
-   232.78s  agent 발화 끝
-   233.29s  user  발화 시작: I’m not sure it would go well.
-   235.13s  user  발화 끝
-   235.23s  agent 발화 시작: It’s okay to prioritize your own well-being. You don’t have 
-   240.65s  user  발화 시작: What if they think I’m not committed?
-   240.74s  agent 발화 끝
-   242.65s  agent 발화 시작: A good employer will understand the importance of mental hea
-   242.91s  user  발화 끝
-   246.40s  agent 발화 끝
-   247.63s  user  발화 시작: You’re probably right.
-   248.92s  agent 발화 시작: It’s about finding a balance between work and life.
-   249.05s  user  발화 끝
-   250.54s  user  발화 시작: Okay.
-   251.09s  user  발화 끝
-   252.24s  agent 발화 끝
-   252.37s  user  발화 시작: It feels impossible sometimes.
-   254.35s  user  발화 끝
-   254.50s  agent 발화 시작: It can feel that way. But it is possible to create a more su
-   259.35s  user  발화 시작: I wish I knew where to start.
-   259.45s  agent 발화 끝
-   261.33s  user  발화 끝
-   261.35s  agent 발화 시작: We can start by identifying your values and priorities.
-   263.81s  user  발화 시작: Yeah.
-   264.59s  user  발화 끝
-   265.05s  agent 발화 끝
-   265.32s  user  발화 시작: My values?
-   266.65s  user  발화 끝
-   266.71s  agent 발화 시작: What’s truly important to you in life?
-   267.65s  user  발화 시작: Yeah.
-   268.15s  user  발화 끝
-   269.10s  agent 발화 끝
-   269.27s  user  발화 시작: Hmm… family, creativity, peace of mind.
-   273.02s  user  발화 끝
-   273.41s  agent 발화 시작: Those are wonderful values. Let’s explore how you can align 
-   275.33s  user  발화 시작: Mhm.
-   275.83s  user  발화 끝
-   278.53s  agent 발화 끝
-   278.64s  user  발화 시작: Okay.
-   279.28s  user  발화 끝
-   279.35s  agent 발화 시작: Have you considered any hobbies outside of painting?
-   280.56s  user  발화 시작: Yeah.
-   281.05s  user  발화 끝
-   282.26s  agent 발화 끝
-   283.64s  user  발화 시작: Not really. I used to play the guitar, but I haven't touched
-   289.01s  user  발화 끝
-   289.21s  agent 발화 시작: Perhaps revisiting that could spark some joy.
-   291.97s  agent 발화 끝
-   292.10s  user  발화 시작: Maybe. It’s gathering dust in the attic.
-   294.98s  agent 발화 시작: It's worth considering. Sometimes, old passions need a littl
-   295.01s  user  발화 끝
-   296.89s  user  발화 시작: Right.
-   297.38s  user  발화 끝
-   300.95s  user  발화 시작: You're good at this, you know?
-   300.96s  agent 발화 끝
-   302.79s  user  발화 끝
-   302.81s  agent 발화 시작: [happy] I appreciate that. I enjoy helping people find their
-   304.52s  user  발화 시작: Uh-huh.
-   305.02s  user  발화 끝
-   306.55s  agent 발화 끝
-   306.81s  user  발화 시작: I feel a little less overwhelmed already.
-   309.65s  agent 발화 시작: That’s wonderful to hear. Small steps can lead to big change
-   309.81s  user  발화 끝
-   311.79s  user  발화 시작: Yeah.
-   312.28s  user  발화 끝
-   314.39s  user  발화 시작: I'm starting to think about that Jeju trip more seriously.
-   314.50s  agent 발화 끝
-   318.06s  agent 발화 시작: That’s great! Do you have any specific activities in mind?
-   318.09s  user  발화 끝
-   320.88s  user  발화 시작: Mm-hmm.
-   321.52s  user  발화 끝
-   322.53s  user  발화 시작: Not yet. I just want to relax and explore.
-   322.78s  agent 발화 끝
-   326.33s  agent 발화 시작: Jeju Island offers many opportunities for both.
-   326.37s  user  발화 끝
-   329.56s  agent 발화 끝
-   330.01s  user  발화 시작: I was hoping to find a quiet beach to read on.
-   333.25s  user  발화 끝
-   333.61s  agent 발화 시작: Hamdeok Beach is known for its calm waters and white sand.
-   336.89s  user  발화 시작: Yeah.
-   337.53s  user  발화 끝
-   338.01s  agent 발화 끝
-   338.16s  user  발화 시작: That sounds lovely.
-   339.71s  agent 발화 시작: It's a popular spot for relaxation.
-   339.82s  user  발화 끝
-   341.78s  user  발화 시작: I need to start looking at flights and accommodation.
-   342.12s  agent 발화 끝
-   343.15s  agent 발화 시작: Right.
-   344.01s  agent 발화 끝
-   344.76s  agent 발화 시작: I can help with that if you’d like.
-   344.83s  user  발화 끝
-   346.83s  agent 발화 끝
-   346.95s  user  발화 시작: Actually, could you remind me what date I said my dentist ap
-   351.44s  agent 발화 시작: Your dentist appointment is on July 15th.
-   351.44s  user  발화 끝
-   354.75s  user  발화 시작: And what time was that again?
-   354.86s  agent 발화 끝
-   356.41s  agent 발화 시작: It's at 2:30 PM.
-   356.50s  user  발화 끝
-   358.15s  agent 발화 끝
-   358.19s  agent 발화 시작: I'm glad I could help jog your memory—
-   360.08s  user  발화 시작: …Actually, hold on. What’s the weather like in Jeju right no
-   360.68s  agent 발화 끝
-   364.19s  <ret> 발화 (turn123 첫 프레임)
-   364.51s  agent 발화 시작: <ret> The weather in Jeju Island is currently partly cloudy,
-   364.53s  user  발화 끝
-   365.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=13.13s]: Jeju Island currently has partly cloudy skies with a temperature of 26
-   374.23s  user  발화 시작: Uh-huh.
-   374.72s  user  발화 끝
-   377.64s  agent 발화 끝
-   377.73s  user  발화 시작: That sounds perfect.
-   379.33s  user  발화 끝
-   379.59s  agent 발화 시작: [happy] It does sound ideal for a relaxing trip.
-   380.54s  user  발화 시작: Yeah.
-   381.04s  user  발화 끝
-   382.12s  user  발화 시작: I think I’ll book everything tonight.
-   382.17s  agent 발화 끝
-   384.38s  user  발화 끝
-   384.54s  agent 발화 시작: That’s a great idea. Taking action is empowering.
-   388.69s  agent 발화 끝
-   389.13s  user  발화 시작: I'm also thinking about taking a pottery class.
-   392.03s  agent 발화 시작: That sounds like a wonderful creative outlet.
-   392.22s  user  발화 끝
-   393.39s  user  발화 시작: Yeah.
-   394.03s  user  발화 끝
-   394.94s  agent 발화 끝
-   395.09s  user  발화 시작: I've always wanted to try it.
-   397.06s  user  발화 끝
-   397.14s  agent 발화 시작: It can be very therapeutic.
-   398.93s  agent 발화 끝
-   398.97s  user  발화 시작: I'm just worried about finding the time.
-   401.56s  user  발화 끝
-   401.86s  agent 발화 시작: We can explore ways to incorporate it into your schedule.
-   405.65s  agent 발화 끝
-   406.34s  user  발화 시작: Maybe I can take it on weekends.
-   408.59s  user  발화 끝
-   408.92s  agent 발화 시작: That sounds like a good starting point.
-   411.42s  agent 발화 끝
-   411.50s  user  발화 시작: I need to make a list of everything I need to do.
-   414.20s  agent 발화 시작: A list can help you feel more organized and in control.
-   414.46s  user  발화 끝
-   415.55s  user  발화 시작: Yeah.
-   416.05s  user  발화 끝
-   417.29s  user  발화 시작: I’m getting a little overwhelmed just thinking about it.
-   417.30s  agent 발화 끝
-   420.06s  user  발화 끝
-   420.16s  agent 발화 시작: Break it down into smaller, manageable steps.
-   423.22s  user  발화 시작: Okay, you're right.
-   423.31s  agent 발화 끝
-   424.51s  user  발화 끝
-   424.56s  agent 발화 시작: One step at a time.
-   426.37s  user  발화 시작: I'm also feeling guilty about taking time for myself.
-   426.40s  agent 발화 끝
-   429.90s  agent 발화 시작: Guilt is often a sign that you’re prioritizing yourself, whi
-   430.12s  user  발화 끝
-   434.85s  user  발화 시작: It’s hard to shake that feeling.
-   435.33s  agent 발화 끝
-   436.78s  user  발화 끝
-   436.99s  agent 발화 시작: It takes practice to challenge those negative thought patter
-   440.55s  user  발화 시작: I guess so.
-   440.78s  agent 발화 끝
-   441.64s  user  발화 끝
-   441.84s  agent 발화 시작: Remember, self-care isn't selfish. It's essential.
-   446.14s  agent 발화 끝
-   447.11s  user  발화 시작: That's a good way to look at it.
-   448.86s  agent 발화 시작: [curious] It's a perspective shift that can be very liberati
-   449.05s  user  발화 끝
-   452.24s  agent 발화 끝
-   452.60s  user  발화 시작: I feel like I’m finally starting to breathe again.
-   455.78s  user  발화 끝
-   455.83s  agent 발화 시작: That’s wonderful to hear. You deserve to feel peace and joy.
-   460.13s  agent 발화 끝
-   461.32s  user  발화 시작: Thank you, Friaus.
-   462.37s  agent 발화 시작: [happy] You're very welcome. I'm here to support you every s
-   462.61s  user  발화 끝
-   466.77s  agent 발화 끝
-   467.77s  user  발화 시작: I think I'm going to go look at flights now.
-   470.35s  user  발화 끝
-   470.77s  agent 발화 시작: That sounds like a great next step. Have a wonderful evening
-   472.46s  user  발화 시작: Uh-huh.
-   473.01s  user  발화 끝
-   474.53s  agent 발화 끝
-   474.70s  user  발화 시작: You too.
-   475.52s  user  발화 끝
-   475.66s  agent 발화 시작: Remember to be kind to yourself.
-   476.34s  user  발화 시작: Uh-huh.
-   476.88s  user  발화 끝
-   477.59s  agent 발화 끝
-   478.28s  user  발화 시작: I will.
-   478.91s  user  발화 끝
-   478.99s  agent 발화 시작: And don't hesitate to reach out if you need anything else.
-   482.18s  agent 발화 끝
-   483.56s  user  발화 시작: I appreciate that.
-   484.74s  agent 발화 시작: It’s been a pleasure speaking with you.
-   484.94s  user  발화 끝
-   485.48s  user  발화 시작: Yeah.
-   485.97s  user  발화 끝
-   486.15s  user  발화 시작: You too.
-   486.64s  agent 발화 끝
-   486.97s  user  발화 끝
-   487.17s  agent 발화 시작: Take care.
-   488.02s  user  발화 시작: Goodbye.
-   488.13s  agent 발화 끝
-   488.84s  user  발화 끝
-   489.09s  agent 발화 시작: Goodbye.
-   489.99s  agent 발화 끝
+     0.00s  user  발화 시작: I have a dentist appointment coming up.
+     2.20s  agent 발화 시작: Okay, good to get those scheduled.
+     2.31s  user  발화 끝
+     3.92s  user  발화 시작: It's on November 23rd, and the time is 9:45 AM.
+     3.94s  agent 발화 끝
+     8.27s  agent 발화 시작: Noted. November 23rd at 9:45 AM.
+     8.41s  user  발화 끝
+    11.83s  agent 발화 끝
+    12.70s  user  발화 시작: And it’s 125,000 won.
+    15.21s  agent 발화 시작: Alright, 125,000 won.
+    15.24s  user  발화 끝
+    17.80s  agent 발화 끝
+    17.93s  user  발화 시작: Actually, I was just reading about national parks.
+    21.27s  agent 발화 시작: Oh, really? That sounds interesting.
+    21.44s  user  발화 끝
+    24.00s  user  발화 시작: I was wondering, when was Nanda Devi National Park added to 
+    24.04s  agent 발화 끝
+    27.14s  agent 발화 시작: Mm-hmm.
+    27.78s  agent 발화 끝
+    29.44s  <ret> 발화 (turn10 첫 프레임)
+    29.74s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.17s]: Nanda Devi National Park was inscribed on the UNESCO World Heritage Li
+    30.04s  agent 발화 시작: <ret> It was added to the UNESCO World Heritage List in 1988
+    30.17s  user  발화 끝
+    36.03s  user  발화 시작: 1988, wow. That’s quite a while ago.
+    36.20s  agent 발화 끝
+    40.43s  agent 발화 시작: It is. It’s wonderful that these places are protected for fu
+    40.52s  user  발화 끝
+    43.12s  user  발화 시작: Yeah.
+    43.62s  user  발화 끝
+    44.87s  user  발화 시작: It makes you think about how long things take to really be v
+    44.96s  agent 발화 끝
+    46.28s  agent 발화 시작: Mm-hmm.
+    47.10s  agent 발화 끝
+    49.10s  agent 발화 시작: That’s a good point. Sometimes it takes time for the importa
+    49.31s  user  발화 끝
+    52.70s  user  발화 시작: Yeah.
+    53.24s  user  발화 끝
+    54.38s  agent 발화 끝
+    54.79s  user  발화 시작: I’ve been trying to get better with my spending habits.
+    56.22s  agent 발화 시작: Okay.
+    57.04s  agent 발화 끝
+    58.03s  user  발화 끝
+    58.46s  agent 발화 시작: That’s a really positive step. Many people find that helpful
+    62.45s  user  발화 시작: It's just… hard. I always feel like I'm playing catch-up.
+    62.49s  agent 발화 끝
+    66.61s  agent 발화 시작: I understand that feeling. It can be overwhelming.
+    66.62s  user  발화 끝
+    67.46s  user  발화 시작: Yeah.
+    68.09s  user  발화 끝
+    69.20s  agent 발화 끝
+    70.00s  user  발화 시작: I keep hearing about the 50/30/20 rule. Is that actually use
+    75.17s  <ret> 발화 (turn25 첫 프레임)
+    75.50s  ⚡SPAN 주입 [d'=0.64s / d_lead=9.60s]: The 50/30/20 rule suggests allocating 50% of your income to needs, 30%
+    75.56s  agent 발화 시작: <ret> The 50/30/20 rule suggests putting 50% of your income 
+    75.60s  user  발화 끝
+    80.52s  user  발화 시작: Yeah.
+    81.01s  user  발화 끝
+    85.15s  agent 발화 끝
+    86.41s  user  발화 시작: So, half for necessities?
+    88.76s  user  발화 끝
+    88.96s  agent 발화 시작: Exactly. Things like rent, groceries, transportation, and ut
+    93.55s  agent 발화 끝
+    94.67s  user  발화 시작: And wants are… the fun stuff?
+    97.26s  agent 발화 시작: Precisely. Dining out, entertainment, hobbies – things you e
+    97.48s  user  발화 끝
+   102.87s  user  발화 시작: What about savings and debt?
+   102.91s  agent 발화 끝
+   104.81s  user  발화 끝
+   105.02s  agent 발화 시작: That’s where you build your financial security, paying down 
+   107.96s  user  발화 시작: Uh-huh.
+   108.60s  user  발화 끝
+   109.74s  user  발화 시작: An emergency fund… I really need to work on that.
+   109.88s  agent 발화 끝
+   112.95s  agent 발화 시작: It’s a really important step. It provides a cushion for unex
+   113.11s  user  발화 끝
+   115.41s  user  발화 시작: Yeah.
+   116.04s  user  발화 끝
+   117.21s  agent 발화 끝
+   117.52s  user  발화 시작: Like, a dentist bill?
+   119.20s  agent 발화 시작: [laugh] Exactly. Or a car repair, a medical expense – anythi
+   119.36s  user  발화 끝
+   124.30s  user  발화 시작: It just feels so hard to put money aside…
+   124.34s  agent 발화 끝
+   127.54s  user  발화 끝
+   129.02s  user  발화 시작: …when everything is so expensive.
+   131.24s  agent 발화 시작: I hear you. It can be tough. Small, consistent steps can mak
+   131.41s  user  발화 끝
+   135.96s  user  발화 시작: Maybe I should start tracking my spending more carefully.
+   136.38s  agent 발화 끝
+   138.14s  agent 발화 시작: Yeah.
+   138.82s  agent 발화 끝
+   139.43s  agent 발화 시작: That’s a great idea. Knowing where your money goes is the fi
+   139.52s  user  발화 끝
+   141.61s  user  발화 시작: Wow.
+   142.43s  user  발화 끝
+   144.15s  agent 발화 끝
+   144.23s  user  발화 시작: Are there any good apps for that?
+   145.94s  <ret> 발화 (turn47 첫 프레임)
+   146.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.53s]: Mint is a popular budgeting app that tracks spending, creates budgets,
+   146.34s  agent 발화 시작: <ret> Mint is a popular app that can track your spending, cr
+   146.35s  user  발화 끝
+   152.87s  agent 발화 끝
+   153.29s  user  발화 시작: Mint, okay. I’ll look into that.
+   155.82s  agent 발화 시작: Great! I hope you find it helpful.
+   155.92s  user  발화 끝
+   157.40s  user  발화 시작: Yeah.
+   157.90s  user  발화 끝
+   158.17s  agent 발화 끝
+   158.91s  user  발화 시작: I'm also thinking about investing, but I have no idea where 
+   163.51s  agent 발화 시작: That’s a big step. It’s good to start small and do your rese
+   163.53s  user  발화 끝
+   166.31s  user  발화 시작: Yeah, yeah.
+   167.56s  user  발화 끝
+   167.90s  user  발화 시작: I always hear about compound interest. What does that even m
+   167.91s  agent 발화 끝
+   171.78s  <ret> 발화 (turn55 첫 프레임)
+   171.85s  agent 발화 시작: <ret> Compound interest is interest earned not only on your 
+   171.88s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.29s]: Compound interest is the interest earned on both the initial principal
+   171.98s  user  발화 끝
+   180.15s  agent 발화 끝
+   180.67s  user  발화 시작: So, it grows on itself?
+   182.62s  agent 발화 시작: Exactly. The longer your money is invested, the more it grow
+   182.74s  user  발화 끝
+   187.53s  agent 발화 끝
+   187.56s  user  발화 시작: That sounds… good.
+   189.49s  agent 발화 시작: It is! It’s why starting early is so important, even with sm
+   189.63s  user  발화 끝
+   193.74s  agent 발화 끝
+   194.48s  user  발화 시작: What kind of investments are good for beginners?
+   196.89s  agent 발화 시작: Mm-hmm.
+   197.67s  agent 발화 끝
+   197.71s  agent 발화 시작: Index funds and ETFs are often recommended for beginners.
+   197.85s  user  발화 끝
+   198.79s  user  발화 시작: Yeah.
+   199.29s  user  발화 끝
+   200.80s  agent 발화 끝
+   201.62s  user  발화 시작: Index funds and… ETFs?
+   203.94s  <ret> 발화 (turn65 첫 프레임)
+   204.21s  user  발화 끝
+   204.22s  agent 발화 시작: <ret> Exchange-Traded Funds, or ETFs, are investment funds t
+   204.54s  ⚡SPAN 주입 [d'=0.97s / d_lead=8.44s]: Exchange-Traded Funds (ETFs) are investment funds traded on stock exch
+   212.66s  agent 발화 끝
+   212.95s  user  발화 시작: Okay, that makes a little more sense.
+   215.26s  agent 발화 시작: It can be a lot to take in at first. Don’t be afraid to ask 
+   215.45s  user  발화 끝
+   217.91s  user  발화 시작: Oh.
+   218.41s  user  발화 끝
+   219.29s  agent 발화 끝
+   219.98s  user  발화 시작: It’s just… a lot of numbers and terms.
+   223.28s  agent 발화 시작: I understand. It can be overwhelming.
+   223.35s  user  발화 끝
+   225.08s  user  발화 시작: Yeah.
+   225.57s  user  발화 끝
+   226.33s  agent 발화 끝
+   226.68s  user  발화 시작: I’m also trying to plan a trip next year.
+   229.50s  user  발화 끝
+   229.60s  agent 발화 시작: Oh, that’s exciting! Where are you thinking of going?
+   232.56s  user  발화 시작: I was looking at places in Europe.
+   232.65s  agent 발화 끝
+   234.91s  user  발화 끝
+   235.03s  agent 발화 시작: Europe is wonderful. There are so many beautiful places to v
+   237.93s  user  발화 시작: Mm-hmm.
+   238.47s  user  발화 끝
+   239.26s  user  발화 시작: I was thinking about Italy, maybe.
+   239.38s  agent 발화 끝
+   241.56s  agent 발화 시작: Italy is a fantastic choice. The food, the history, the art…
+   241.66s  user  발화 끝
+   246.13s  user  발화 시작: I’ve always wanted to see Rome.
+   246.29s  agent 발화 끝
+   248.26s  agent 발화 시작: Rome is incredible. The Colosseum, the Roman Forum…
+   248.38s  user  발화 끝
+   251.92s  user  발화 시작: It just seems so expensive to travel there.
+   252.29s  agent 발화 끝
+   253.72s  agent 발화 시작: Yeah.
+   254.35s  agent 발화 끝
+   254.78s  user  발화 끝
+   254.85s  agent 발화 시작: It can be, but there are ways to travel on a budget.
+   255.80s  user  발화 시작: Yeah.
+   256.34s  user  발화 끝
+   257.39s  user  발화 시작: Like what?
+   257.48s  agent 발화 끝
+   258.43s  agent 발화 시작: Traveling during the off-season, staying in hostels or Airbn
+   258.58s  user  발화 끝
+   261.50s  user  발화 시작: Mm-hmm.
+   261.99s  user  발화 끝
+   263.87s  user  발화 시작: That’s a good idea. I hadn’t thought about cooking.
+   263.90s  agent 발화 끝
+   267.70s  user  발화 끝
+   267.75s  agent 발화 시작: It can make a big difference. Plus, it's a fun way to experi
+   270.21s  user  발화 시작: Yeah.
+   270.66s  user  발화 끝
+   272.94s  agent 발화 끝
+   273.63s  user  발화 시작: I should probably start saving now, then.
+   276.22s  user  발화 끝
+   276.37s  agent 발화 시작: Definitely. Creating a travel fund can help you reach your g
+   277.82s  user  발화 시작: Mm-hmm.
+   278.54s  user  발화 끝
+   280.16s  agent 발화 끝
+   280.76s  user  발화 시작: What’s the best way to save for a big trip?
+   283.34s  user  발화 끝
+   283.37s  agent 발화 시작: Setting a specific savings goal and automating your savings 
+   287.95s  agent 발화 끝
+   289.23s  user  발화 시작: Automating?
+   290.30s  agent 발화 시작: Setting up a recurring transfer from your checking account t
+   290.38s  user  발화 끝
+   291.62s  user  발화 시작: Mm-hmm.
+   292.30s  user  발화 끝
+   294.46s  user  발화 시작: That sounds easy enough.
+   294.46s  agent 발화 끝
+   296.42s  agent 발화 시작: It is. It takes the willpower out of the equation.
+   296.44s  user  발화 끝
+   299.89s  agent 발화 끝
+   301.23s  user  발화 시작: You're right. I think I need to be more disciplined.
+   304.25s  agent 발화 시작: It’s a process. Be kind to yourself and celebrate your progr
+   304.47s  user  발화 끝
+   306.45s  user  발화 시작: Okay.
+   307.09s  user  발화 끝
+   308.42s  agent 발화 끝
+   308.89s  user  발화 시작: I keep getting distracted by little things.
+   311.78s  agent 발화 시작: It’s easy to get sidetracked. Focus on your priorities and s
+   311.80s  user  발화 끝
+   313.61s  user  발화 시작: Yeah.
+   314.11s  user  발화 끝
+   316.73s  agent 발화 끝
+   317.17s  user  발화 시작: It's just… hard to say no to myself.
+   318.30s  agent 발화 시작: Yeah, yeah.
+   320.21s  user  발화 끝
+   320.24s  agent 발화 시작: I understand. It takes practice.
+   320.28s  agent 발화 끝
+   322.24s  user  발화 시작: I was wondering… what time did I say that dentist appointmen
+   322.77s  agent 발화 끝
+   325.30s  agent 발화 시작: Yeah.
+   325.99s  agent 발화 끝
+   326.48s  agent 발화 시작: You said your dentist appointment is on November 23rd at 9:4
+   326.64s  user  발화 끝
+   328.39s  user  발화 시작: Uh-huh.
+   328.99s  user  발화 끝
+   330.99s  user  발화 시작: Right, 9:45 AM. Thanks.
+   331.02s  agent 발화 끝
+   333.95s  agent 발화 시작: You’re welcome.
+   334.04s  user  발화 끝
+   334.96s  agent 발화 끝
+   335.93s  user  발화 시작: I'm also thinking of taking a pottery class.
+   338.91s  agent 발화 시작: Oh, that sounds relaxing!
+   339.02s  user  발화 끝
+   340.75s  agent 발화 끝
+   341.11s  user  발화 시작: It just seems like there's never enough time.
+   344.02s  user  발화 끝
+   344.44s  agent 발화 시작: It's a common struggle. Prioritizing self-care is important.
+   348.46s  agent 발화 끝
+   349.16s  user  발화 시작: Self-care… I should probably do more of that.
+   352.15s  agent 발화 시작: It’s not selfish. It’s essential for your well-being.
+   352.21s  user  발화 끝
+   353.89s  user  발화 시작: Right.
+   354.33s  user  발화 끝
+   355.25s  agent 발화 끝
+   356.20s  user  발화 시작: I’ve been feeling really stressed lately.
+   358.92s  user  발화 끝
+   358.97s  agent 발화 시작: I’m sorry to hear that. Is there anything I can do to help?
+   360.99s  user  발화 시작: Uh-huh.
+   361.48s  user  발화 끝
+   362.49s  agent 발화 끝
+   363.17s  user  발화 시작: Just… talking about it helps, I guess.
+   366.40s  user  발화 끝
+   366.46s  agent 발화 시작: I’m happy to listen.
+   367.93s  agent 발화 끝
+   368.25s  user  발화 시작: It's just work, mostly.
+   370.41s  user  발화 끝
+   370.48s  agent 발화 시작: Work stress is very common.
+   372.35s  user  발화 시작: I’m constantly feeling behind.
+   372.60s  agent 발화 끝
+   374.57s  agent 발화 시작: It’s easy to feel overwhelmed when you have a lot on your pl
+   374.61s  user  발화 끝
+   378.04s  agent 발화 끝
+   378.16s  user  발화 시작: I try to stay organized, but it never seems to work.
+   381.92s  agent 발화 시작: There are many organizational techniques you could try.
+   382.05s  user  발화 끝
+   383.00s  user  발화 시작: Mm-hmm.
+   383.64s  user  발화 끝
+   384.83s  agent 발화 끝
+   385.18s  user  발화 시작: Like what?
+   386.28s  agent 발화 시작: The Pomodoro Technique, time blocking, and creating to-do li
+   386.46s  user  발화 끝
+   388.04s  user  발화 시작: Right.
+   388.86s  user  발화 끝
+   390.58s  agent 발화 끝
+   390.65s  user  발화 시작: Pomodoro… that sounds Italian.
+   393.42s  user  발화 끝
+   393.51s  agent 발화 시작: [laugh] It is! It's a time management method that uses focus
+   398.19s  agent 발화 끝
+   398.26s  user  발화 시작: Interesting. I'll look that up.
+   400.34s  user  발화 끝
+   400.50s  agent 발화 시작: Great! I hope you find it useful.
+   402.55s  user  발화 시작: I’m trying to remember… how much was that dentist appointmen
+   402.67s  agent 발화 끝
+   404.75s  agent 발화 시작: Yeah.
+   405.38s  agent 발화 끝
+   406.52s  agent 발화 시작: You said the dentist appointment was 125,000 won.
+   406.67s  user  발화 끝
+   410.41s  agent 발화 끝
+   411.94s  user  발화 시작: Oh, right. 125,000 won. Thanks for reminding me.
+   416.29s  user  발화 끝
+   416.32s  agent 발화 시작: You're very welcome.
+   418.06s  agent 발화 끝
+   418.53s  user  발화 시작: I'm also thinking of getting a new plant for my living room.
+   422.09s  user  발화 끝
+   422.40s  agent 발화 시작: Oh, that's lovely! Plants can brighten up a space.
+   425.64s  user  발화 시작: I'm not very good at keeping them alive, though.
+   426.06s  agent 발화 끝
+   428.29s  agent 발화 시작: Some plants are easier to care for than others.
+   428.46s  user  발화 끝
+   429.19s  user  발화 시작: Right.
+   429.91s  user  발화 끝
+   431.05s  user  발화 시작: Do you have any recommendations?
+   431.24s  agent 발화 끝
+   432.98s  <ret> 발화 (turn153 첫 프레임)
+   433.02s  agent 발화 시작: <ret> Snake plants are known for being low-maintenance and a
+   433.08s  ⚡SPAN 주입 [d'=0.41s / d_lead=5.98s]: Snake plants are known for being low-maintenance and adaptable to vari
+   433.12s  user  발화 끝
+   439.00s  agent 발화 끝
+   440.47s  user  발화 시작: Snake plants… I’ll have to look those up.
+   443.52s  user  발화 끝
+   443.68s  agent 발화 시작: They're quite popular.
+   444.89s  user  발화 시작: Well, I think that’s all for now.
+   445.10s  agent 발화 끝
+   446.96s  user  발화 끝
+   447.10s  agent 발화 시작: [happy] It was lovely chatting with you. Remember, small ste
+   452.28s  agent 발화 끝

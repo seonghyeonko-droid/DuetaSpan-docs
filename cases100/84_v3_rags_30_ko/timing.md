@@ -4,100 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "예린",
+#     "name": "주서",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-11",
+#       "category": "skill",
+#       "text": "User is quite experienced with vintage synth collecting."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-05-19",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-04-20",
-#       "category": "airline",
-#       "text": "User usually flies with Cathay Pacific."
+#       "date": "2026-05-09",
+#       "category": "partner",
+#       "text": "User's partner is named Noah."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
+#       "date": "2026-04-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in September."
 #     },
 #     {
-#       "date": "2026-03-25",
-#       "category": "music",
-#       "text": "User likes listening to indie folk."
+#       "date": "2026-03-26",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "date": "2026-03-07",
+#       "category": "learning",
+#       "text": "User is training for a half-marathon."
 #     },
 #     {
 #       "date": "2026-01-02",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "category": "anniversary",
+#       "text": "User's anniversary is June 2."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "car",
-#       "text": "User drives a 2021 Tesla Model 3."
+#       "date": "2025-12-22",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-14",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-17",
-#       "title": "Comparing health insurance",
+#       "date": "2026-06-10",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-08",
+#       "date": "2026-03-04",
+#       "title": "Switching phone plans",
+#       "bullets": [
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
 #       "title": "Adopting a rescue dog",
 #       "bullets": [
 #         "looking at a 2-year-old Beagle mix",
 #         "asked about crate training and vet costs"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "title": "Buying a gift for a parent",
-#       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: pga 투어에서 가장 많은 우승을 한 선수는 누구예요?
-     2.91s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 피 지 에이 투어에서 가장 많은 우승을 한 선수는 샘 스니드 선수인데, 총 팔십이번 우승을 하셨답
-     3.70s  user  발화 끝
-     4.20s  ⚡SPAN 주입 [d'=1.30s / d_lead=7.46s]: Sam Snead holds the record for the most wins on the PGA Tour, with 82 
-    10.98s  agent 발화 끝
+     0.00s  user  발화 시작: 바이킹스가 램보 필드에서 마지막으로 이긴 게 언제였지?
+     3.08s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  agent 발화 시작: <ret> 바이킹스가 램보 필드에서 그린베이 패커스를 이긴 건, 음, 이천십칠년 십이월 이십삼일이었어요. [
+     3.83s  user  발화 끝
+     4.38s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.58s]: The Minnesota Vikings defeated the Green Bay Packers at Lambeau Field 
+    12.27s  agent 발화 끝

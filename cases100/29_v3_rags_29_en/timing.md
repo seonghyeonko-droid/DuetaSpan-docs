@@ -4,79 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Lukas",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "mid 30s",
+#     "age_range": "late 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "allergy",
-#       "text": "User is allergic to gluten."
-#     },
-#     {
-#       "date": "2026-06-14",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Elena."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "hobby",
-#       "text": "User is into urban sketching."
-#     },
-#     {
-#       "date": "2026-01-15",
+#       "date": "2026-05-09",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2026-05-03",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
+#     },
+#     {
+#       "date": "2026-04-05",
 #       "category": "anniversary",
-#       "text": "User's anniversary is April 9."
+#       "text": "User's anniversary is October 13."
+#     },
+#     {
+#       "date": "2026-03-31",
+#       "category": "show",
+#       "text": "User is currently watching a stand-up comedy special."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
+#     },
+#     {
+#       "date": "2026-02-27",
+#       "category": "streaming",
+#       "text": "User subscribes to Netflix and Spotify."
+#     },
+#     {
+#       "date": "2025-12-25",
+#       "category": "car",
+#       "text": "User drives a 2018 Mazda CX-5."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "airline",
+#       "text": "User usually flies with Lufthansa."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-16",
-#       "title": "Building a PC",
+#       "date": "2026-06-05",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-04-09",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-30",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: What is the energy called that comes directly from inside th
-     1.41s  agent 발화 시작: Yeah, yeah.
-     2.79s  agent 발화 끝
-     3.11s  <ret> 발화 (turn2 첫 프레임)
-     3.57s  agent 발화 시작: <ret> That energy you’re asking about is called geothermal h
-     3.65s  user  발화 끝
-     3.95s  ⚡SPAN 주입 [d'=0.84s / d_lead=6.86s]: Geothermal heat flux is the flow of heat from the Earth's interior to 
-    10.43s  agent 발화 끝
+     0.00s  user  발화 시작: Who has the most wins in professional golf on the PGA Tour?
+     3.81s  <ret> 발화 (turn1 첫 프레임)
+     3.93s  user  발화 끝
+     4.07s  agent 발화 시작: <ret> Well, it seems Sam Snead holds that record, with eight
+     4.61s  ⚡SPAN 주입 [d'=0.80s / d_lead=8.11s]: Sam Snead won eighty-two PGA Tour events during his career, more than 
+    12.18s  agent 발화 끝

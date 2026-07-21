@@ -4,104 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Sky",
+#     "name": "Mia",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-16",
+#       "category": "show",
+#       "text": "User is currently watching a cooking competition show."
 #     },
 #     {
-#       "date": "2026-05-07",
-#       "category": "work",
-#       "text": "User works as a carpenter."
+#       "date": "2026-06-04",
+#       "category": "commute",
+#       "text": "User takes a shuttle bus."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "streaming",
-#       "text": "User subscribes to Twitch and Spotify."
+#       "date": "2026-05-24",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Haruto."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is bún chả."
+#       "date": "2026-05-17",
+#       "category": "schedule",
+#       "text": "User has early shifts starting at 6am."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "allergy",
-#       "text": "User is allergic to bee stings."
-#     },
-#     {
-#       "date": "2026-01-25",
+#       "date": "2026-02-04",
 #       "category": "learning",
-#       "text": "User is studying for a driving test."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
-#     },
-#     {
-#       "date": "2025-12-24",
-#       "category": "airline",
-#       "text": "User usually flies with Cathay Pacific."
+#       "text": "User is learning Spanish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-15",
-#       "title": "Choosing a preschool",
+#       "date": "2026-03-25",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "title": "Planning a wedding",
+#       "date": "2026-01-10",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-04",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hey moshi… | S2 …quick question. Who played bass o | S3 Oh, really? That’s interesting… | S4 So, um, what about keeping in touc
 
-     0.00s  user  발화 시작: Hi moshi, I was wondering… when did people start talking abo
-     5.22s  <ret> 발화 (turn1 첫 프레임)
-     5.44s  agent 발화 시작: <ret> The term “Internet of Things” actually came about in n
-     5.70s  user  발화 끝
-     5.97s  ⚡SPAN 주입 [d'=0.76s / d_lead=10.67s]: Kevin Ashton coined the phrase “Internet of Things” in 1999 while work
-    16.11s  agent 발화 끝
-    17.44s  user  발화 시작: Oh, hold on a sec… yeah, okay, sorry.
-    20.92s  user  발화 시작: Right, nineteen ninety-nine. That’s… earlier than I thought.
-    21.09s  user  발화 끝
-    23.75s  agent 발화 시작: Yeah.
-    24.39s  agent 발화 끝
-    25.01s  agent 발화 시작: [curious] It is a bit surprising, isn’t it? It took a while 
-    25.13s  user  발화 끝
-    30.21s  user  발화 시작: Okay.
-    31.03s  user  발화 끝
-    33.51s  agent 발화 시작: And sometimes, when things change quickly, it’s okay to feel
-    33.72s  agent 발화 끝
-    43.30s  agent 발화 끝
+     0.00s  user  발화 시작: Hey moshi…
+     1.00s  user  발화 끝
+     2.33s  user  발화 시작: …quick question. Who played bass on the Rolling Stones’ “Sym
+     6.47s  <ret> 발화 (turn2 첫 프레임)
+     6.70s  agent 발화 시작: <ret> That would be Keith Richards, actually—he stepped in t
+     6.78s  user  발화 끝
+     7.22s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.46s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
+    14.14s  user  발화 시작: Oh, really? That’s interesting…
+    14.15s  agent 발화 끝
+    17.05s  user  발화 끝
+    18.51s  user  발화 시작: So, um, what about keeping in touch with old friends? I’m te
+    23.50s  user  발화 끝
+    23.81s  agent 발화 시작: [happy] It’s really common to struggle with that! Small, reg
+    31.18s  agent 발화 끝

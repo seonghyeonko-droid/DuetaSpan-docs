@@ -1,99 +1,99 @@
 v3_rags_30_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 조라라로, 사람들의 목표 설정 및 실행을 돕는 차분하고 낙관적인 마음챙김 안내자입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 모시입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 이별 후 적응을 돕는 긍정적이고 지지적인 또래 지원자 배우스입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "예린",
+    "name": "주서",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "mid 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-13",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-06-11",
+      "category": "skill",
+      "text": "User is quite experienced with vintage synth collecting."
     },
     {
-      "date": "2026-04-29",
-      "category": "bloodtype",
-      "text": "User's blood type is A-."
+      "date": "2026-05-19",
+      "category": "medication",
+      "text": "User takes medication for migraines."
     },
     {
-      "date": "2026-04-20",
-      "category": "airline",
-      "text": "User usually flies with Cathay Pacific."
+      "date": "2026-05-09",
+      "category": "partner",
+      "text": "User's partner is named Noah."
     },
     {
-      "date": "2026-03-30",
-      "category": "plant",
-      "text": "User is growing a fiddle-leaf fig at home."
+      "date": "2026-04-05",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in September."
     },
     {
-      "date": "2026-03-25",
-      "category": "music",
-      "text": "User likes listening to indie folk."
+      "date": "2026-03-26",
+      "category": "schedule",
+      "text": "User has a 9-to-6 weekday schedule."
     },
     {
-      "date": "2026-02-27",
-      "category": "floor",
-      "text": "User lives on the 3rd floor."
+      "date": "2026-03-07",
+      "category": "learning",
+      "text": "User is training for a half-marathon."
     },
     {
       "date": "2026-01-02",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
+      "category": "anniversary",
+      "text": "User's anniversary is June 2."
     },
     {
-      "date": "2025-12-29",
-      "category": "car",
-      "text": "User drives a 2021 Tesla Model 3."
+      "date": "2025-12-22",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-23",
-      "title": "Apartment hunting downtown",
+      "date": "2026-06-14",
+      "title": "Choosing a laptop",
       "bullets": [
-        "wanted a pet-friendly building under 900k won/month",
-        "needed parking and a second bedroom near line 2"
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
       ]
     },
     {
-      "date": "2026-05-17",
-      "title": "Comparing health insurance",
+      "date": "2026-06-10",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "self-employed and needs dental",
-        "wants a low deductible"
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
       ]
     },
     {
-      "date": "2026-03-08",
+      "date": "2026-03-04",
+      "title": "Switching phone plans",
+      "bullets": [
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
+      ]
+    },
+    {
+      "date": "2026-02-07",
       "title": "Adopting a rescue dog",
       "bullets": [
         "looking at a 2-year-old Beagle mix",
         "asked about crate training and vet costs"
-      ]
-    },
-    {
-      "date": "2025-12-30",
-      "title": "Buying a gift for a parent",
-      "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] pga 투어에서 가장 많은 우승을 한 ⟨ret@2.91s⟩ 선수는 누구예요?
-[  3.52s][moshi] 피 ⟦⚡SPAN@4.20s: Sam Snead holds the record for the most wins on the PGA Tour, with 82 victories.⟧ 지 에이 투어에서 가장 많은 우승을 한 선수는 샘 스니드 선수인데, 총 팔십이번 우승을 하셨답니다.
+[  0.00s][user ] 바이킹스가 램보 필드에서 마지막으로 이긴 게 ⟨ret@3.08s⟩ 언제였지?
+[  3.70s][moshi] ⟦⚡SPAN@4.38s: The Minnesota Vikings defeated the Green Bay Packers at Lambeau Field on December 23, 2017.⟧ 바이킹스가 램보 필드에서 그린베이 패커스를 이긴 건, 음, 이천십칠년 십이월 이십삼일이었어요. [happy] 혹시 다른 경기 결과도 궁금하신가요?

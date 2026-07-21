@@ -1,93 +1,92 @@
 v3_fstart_15_ko src=mcp style=mcp_falsestart
-SYSTEM: <system> 당신은 사람들의 돈 관리 및 예산 관리를 돕는 부드럽고 사색적인 경청 동반자인 아리아미입니다. 50/30/20 예산, 비상 자금의 중요성, 복리 계산 방식 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 메아온이며, 사람들의 우정과 사회생활에 도움을 주는 차분하고 공감적인 경청 동반자입니다. 먼저 다가가기, 잘 듣기, 작고 규칙적인 연락을 유지하기 등을 설명할 수 있습니다. 또한 당신은 모든 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "다완",
+    "name": "정빈",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "early 40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "child",
-      "text": "User has a child named Emma, age 6."
+      "date": "2026-05-29",
+      "category": "partner",
+      "text": "User's partner is named Clara."
     },
     {
-      "date": "2026-04-08",
+      "date": "2026-05-23",
       "category": "floor",
-      "text": "User lives on the 8th floor."
+      "text": "User lives on the 15th floor."
     },
     {
-      "date": "2026-04-03",
-      "category": "schedule",
-      "text": "User has a four-day compressed week."
+      "date": "2026-03-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2026-01-31",
-      "category": "streaming",
-      "text": "User subscribes to a shared Netflix family plan."
-    },
-    {
-      "date": "2026-01-11",
-      "category": "plant",
-      "text": "User is growing a lemon tree at home."
-    },
-    {
-      "date": "2025-12-16",
+      "date": "2026-03-04",
       "category": "skill",
-      "text": "User is a complete beginner at board-game design."
+      "text": "User is getting fairly good at vintage synth collecting."
+    },
+    {
+      "date": "2026-02-09",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+    },
+    {
+      "date": "2026-01-26",
+      "category": "sibling",
+      "text": "User has a younger sibling named Emma."
+    },
+    {
+      "date": "2026-01-25",
+      "category": "dish",
+      "text": "User's go-to comfort dish is shakshuka."
+    },
+    {
+      "date": "2025-12-09",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "phone",
+      "text": "User uses an iPhone SE."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-20",
-      "title": "Adopting a rescue dog",
+      "date": "2026-04-07",
+      "title": "Looking for a therapist",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     },
     {
-      "date": "2026-03-29",
-      "title": "Planning a wedding",
+      "date": "2026-03-28",
+      "title": "Refinancing a mortgage",
       "bullets": [
-        "guest list around 80 people",
-        "comparing two venues for next May"
+        "current rate is 4.2 percent",
+        "wants to compare 15- vs 30-year terms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 저녁에 가족들이랑 외식하려고 하는데, 괜찮은 이탈리아 식당 좀 추천해 줄 수 있을까요?
-[  6.59s][moshi] 어떤 지역을 생각하고 계신가요? 혹시 특별히 선호하는 분위기나 가격대가 있으신가요?
-[ 12.17s][user ] 음… 해운대 근처면 좋겠고, 너무 비싸지 않은 ⟨ret@15.47s⟩ 곳으로요.
-[ 15.96s][moshi] ⟦⚡SPAN@16.49s: Busan has many Italian restaurants, including 'Pasta & Vino' at 23 Marine City 2-ro, Haeundae-gu, Busan, known⟧ 해운대 근처에는 '파스타 앤 비노'라는 이탈리아 식당이 있는데, 가격도 저렴하고 가족 단위 손님들에게 인기가 많다고 해요. 파스타는 만 이천 원부터 이만 원까지 다양하게 준비되어 있습니다.
-[ 28.03s][user ] 아, 거기 가봤는데 괜찮긴 한데, 좀 더 조용한 ⟨ret@31.38s⟩ 곳으로…
-[ 31.77s][moshi] ⟦⚡SPAN@32.43s: 'La Bellacita', located at 1487-12 U-dong, Haeundae-gu, Busan, is praised for its quiet atmosphere and authent⟧ 그럼 '라벨라치타'는 어떠세요? 해운대 우동에 위치하고 있고, 분위기가 아늑하다고 합니다.
-[ 37.83s][moshi] 해운대 우동에 있는 '라벨라치타'는 분위기가 아늑하고, 이탈리아 정통 요리를 맛볼 수 있다고 합니다. 메인 요리는 이만 오천 원에서 삼만 오천 원 정도예요.
-[ 48.54s][user ] 이만 오천 원이면 괜찮네요. 거기가 더 좋을 것 같아요.
-[ 52.69s][moshi] '라벨라치타'로 예약해 드릴까요? 몇 시쯤으로 예약을 원하세요?
-[ 57.53s][user ] 저녁 일곱시에 두 명으로 ⟨ret@59.86s⟩ 부탁드려요.
-[ 60.23s][moshi] ⟦⚡SPAN@60.77s: (tool result) Booking confirmed at La Bellacita for 2 people at 19:00 on July 10, 2026. Confirmation ID: 78X92⟧ 네, '라벨라치타'에 저녁 일곱시에 두 분으로 예약이 완료되었습니다. 확인 번호는 칠 팔 엑스 구 이 엘입니다.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "La Bellacita", "time": "19:00", "party_size": 2}}
-[ 62.86s][user ] «backchannel» 네.
-[ 67.61s][user ] 와, 정말 고마워요!
-[ 69.34s][moshi] «interrupted» [happy] 별말씀을요. 혹시 '라벨라치타'까지 가는 길을 안내해 드릴까요? —
-[ 73.60s][user ] «interrupts_prev» …아니요, 괜찮아요. 혹시 부산에 있는 다른 맛집도 추천해 줄 수 있을까요?
-[ 76.08s][moshi] «backchannel» 네네.
-[ 78.53s][moshi] ⟨ret@78.47s⟩ 어떤 ⟦⚡SPAN@79.54s: Busan is renowned for its seafood, especially at Jagalchi Fish Market, with many restaurants offering fresh ca⟧ 종류의 음식을 좋아하시나요? 아니면 특별히 가보고 싶은 지역이 있으신가요?
-[ 83.60s][moshi] 부산은 해산물로 유명한데요, 특히 자갈치 시장에서 신선한 해산물을 맛볼 수 있습니다. 장어구이는 한 접시에 이만 원에서 삼만 원 정도 합니다.
-[ 90.70s][user ] «backchannel» 네.
-[ 92.75s][moshi] 자갈치 시장 말고, 서면에는 다양한 종류의 음식점이 많습니다. 서면에는 젊은 층이 많이 찾는 트렌디한 식당들이 많아요.
-[100.53s][moshi] [happy] 맛있는 저녁 식사 되세요!
+[  0.00s][user ] 음… 버스표 좀 알아봐 줄래? 다섯 명, 댈러스에서 휴스턴 가는 거… 팔월 ⟨ret@5.77s⟩ 십오일…
+[  4.43s][moshi] «backchannel» 네.
+[  6.25s][moshi] ⟦⚡SPAN@6.79s: (no information found)⟧ 죄송해요, 팔월 십오일 댈러스에서 휴스턴 가는 버스편은 지금 찾을 수 없네요. 다른 날짜를 알아볼까요?
+[ 13.04s][user ] 아, 팔월 이십일로 해 ⟨ret@14.58s⟩ 봐.
+[ 14.96s][moshi] ⟦⚡SPAN@15.63s: (tool result) 14:30, Greyhound, $125.00, 6h 15m⟧ 팔월 이십일 댈러스에서 휴스턴 가는 버스는 오후 두시 삼십분에 출발하는 그레이하운드 버스, 일인당 백이십오달러이고, 여섯시간 십오분 정도 걸립니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"num_passengers": "5", "origin_city": "Dallas", "destination_city": "Houston", "date": "2026-08-20"}}

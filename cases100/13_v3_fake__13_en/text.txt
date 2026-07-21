@@ -1,77 +1,114 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Aruen, a steady and dependable personal guide who helps people with friendships and social life. You can explain reaching out first, listening well, keeping small regular contact. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Kellax, a kind and observant mentor who helps people with finding motivation again. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Elena",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "mid 20s",
-    "language": "German"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "dish",
-      "text": "User's go-to comfort dish is mushroom risotto."
+      "date": "2026-06-28",
+      "category": "sibling",
+      "text": "User has a younger sibling named Kenji."
     },
     {
-      "date": "2026-04-18",
-      "category": "gym",
-      "text": "User has a gym membership near home."
+      "date": "2026-06-06",
+      "category": "partner",
+      "text": "User's partner is named Kenji."
     },
     {
-      "date": "2026-01-28",
-      "category": "savings",
-      "text": "User is saving for a new car."
+      "date": "2026-04-26",
+      "category": "coffee",
+      "text": "User's usual coffee order is black drip coffee."
     },
     {
-      "date": "2026-01-26",
-      "category": "bloodtype",
-      "text": "User's blood type is AB+."
-    },
-    {
-      "date": "2026-01-14",
-      "category": "medication",
-      "text": "User takes medication for migraines."
+      "date": "2026-02-22",
+      "category": "employer",
+      "text": "User works at a school district."
     },
     {
       "date": "2026-01-04",
-      "category": "trip",
-      "text": "User is planning a trip to Georgia in June."
+      "category": "schedule",
+      "text": "User has a fully remote setup."
+    },
+    {
+      "date": "2025-12-27",
+      "category": "skill",
+      "text": "User is a complete beginner at rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-23",
-      "title": "Looking for a therapist",
+      "date": "2026-03-12",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "prefers evening video sessions",
-        "wants someone who does CBT"
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
       ]
     },
     {
-      "date": "2026-03-07",
-      "title": "Meal-prep planning",
+      "date": "2025-12-26",
+      "title": "Buying a gift for a parent",
       "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, who played bass on "Sympathy for…
-[  4.46s][user ] …the Devil"? I'm trying to settle ⟨ret@6.71s⟩ a bet.
-[  7.31s][moshi] That ⟦⚡SPAN@8.08s: Keith Richards played bass on The Rolling Stones' "Sympathy for the Devil" because Bill Wyman's bass was not w⟧ would be Keith Richards, actually! He stepped in on bass for "Sympathy for the Devil" when Bill Wyman's instrument malfunctioned during the recording. It’s a fun bit of Stones history.
-[ 21.47s][moshi] ⟨ret@20.93s⟩ ⟦⚡SPAN IRRELEVANT@21.34s: The average high temperature in Fairbanks, Alaska in January is -11.1°F, with a record low of -62°F.⟧ [happy] It’s good to know a bit of music trivia, isn't it? Sometimes the stories behind the songs are as interesting as the songs themselves.
-[ 30.61s][user ] Wow, that’s interesting! So, he usually played guitar, right?
-[ 36.72s][moshi] Yes, Keith Richards is primarily known as the guitarist for The Rolling Stones. He’s incredibly versatile, though, as that bass playing shows! It takes a good musician to jump like that.
+[  0.00s][user ] Hi Kellax, I was just wondering… when did *The Wizard of Oz* come ⟨ret@4.72s⟩ out?
+[  3.08s][moshi] «backchannel» Yeah.
+[  5.27s][moshi] ⟦⚡SPAN@5.46s: The film *The Wizard of Oz* was first released on August 25, 1939, in the United States.⟧ That wonderful film first came out on August twenty-fifth, nineteen thirty-nine, in the United States. It's a classic!
+[ 11.49s][user ] Wow, that was a long time ago.
+[ 14.62s][moshi] It truly was! It’s amazing how some stories continue to resonate across generations, isn't it?
+[ 21.91s][user ] Definitely. Do you think it’s still popular with kids today?
+[ 23.86s][moshi] «backchannel» Yeah.
+[ 26.37s][moshi] I believe so. Its themes of courage, friendship, and finding your way home are timeless.
+[ 28.97s][user ] «backchannel» Yeah, yeah.
+[ 31.77s][user ] I guess you’re right. What about the ⟨ret@34.26s⟩ music?
+[ 33.49s][moshi] «backchannel» Yeah.
+[ 34.45s][moshi] ⟦⚡SPAN@34.39s: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by Yip Harburg.⟧ The music was composed by Harold Arlen, with lyrics penned by Yip Harburg— a truly iconic pairing.
+[ 41.13s][user ] Oh, I didn’t know that!
+[ 43.00s][moshi] [happy] It’s fun to learn the details behind the magic, don’t you think?
+[ 47.32s][user ] Yeah, it is. Did they film it all in ⟨ret@50.27s⟩ Kansas?
+[ 50.61s][moshi] ⟦⚡SPAN@50.55s: While the story begins in Kansas, *The Wizard of Oz* was primarily filmed at Metro-Goldwyn-Mayer Studios in Cu⟧ While the story starts in Kansas, much of the film was actually shot at Metro-Goldwyn-Mayer Studios in Culver City, California.
+[ 54.47s][user ] «backchannel» Yeah.
+[ 58.43s][user ] Oh, so it wasn't really filmed on a farm?
+[ 59.43s][moshi] «backchannel» Yeah.
+[ 60.95s][moshi] Not entirely! They used sets to create that sense of Kansas, and of course, Oz itself.
+[ 63.72s][user ] «backchannel» Mm-hmm.
+[ 66.73s][user ] That makes sense. It looked ⟨ret@69.41s⟩ so colorful!
+[ 70.01s][moshi] ⟦⚡SPAN IRRELEVANT@69.84s: The average retail price of organic thyme in Portland, Oregon, is $3.99 per bunch as of July 9, 2026.⟧ The vibrant colors are definitely one of the things that make it so memorable— it’s a feast for the eyes!
+[ 74.56s][user ] It really is. Was Dorothy a child ⟨ret@78.41s⟩ actor?
+[ 78.71s][moshi] ⟦⚡SPAN@78.65s: Judy Garland, who played Dorothy, was only 16 years old during the filming of *The Wizard of Oz*.⟧ Judy Garland, who played Dorothy, was just sixteen years old during filming. It was a huge role for a young actress!
+[ 83.33s][user ] «backchannel» Uh-huh.
+[ 85.48s][user ] Wow, sixteen! That’s so young. What other movies was she in? —
+[ 90.39s][user ] …did she win any awards for that role?
+[ 92.06s][moshi] «backchannel» Yeah.
+[ 93.21s][moshi] «interrupted» Well, that’s a really good question. She didn’t actually win an Oscar for *The Wizard of Oz* at the time—
+[ 98.36s][user ] «interrupts_prev» Oh, really? That's surprising.
+[101.05s][moshi] It is a bit surprising, isn’t it? She received a special Juvenile Award, though, recognizing her performance.
+[103.48s][user ] «backchannel» Okay.
+[108.37s][user ] A special award, that’s nice.
+[111.23s][moshi] It was a recognition of her incredible talent at such a young age. It’s wonderful that her work is still appreciated today.
+[114.32s][user ] «backchannel» Yeah, totally.
+[117.76s][user ] It really is. Do you think they’ll ever remake it?
+[122.07s][moshi] [curious] That’s a tricky question. It’s such an iconic film, it would be hard to improve upon!
+[126.94s][user ] I agree. It would be hard to live up to the original.
+[128.12s][moshi] «backchannel» Yeah.
+[130.16s][moshi] Exactly. Some stories are best left as they are, cherished for their originality.
+[135.10s][user ] That's a good point. Thanks, Kellax.
+[137.46s][moshi] [happy] You're very welcome. I'm glad I could share a bit of *Wizard of Oz* history with you. Remember, sometimes the magic is already within us.

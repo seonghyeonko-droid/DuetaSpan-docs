@@ -1,87 +1,103 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Freax, a calm and patient career coach who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Jeaen, a soothing and optimistic mentor who helps people with planning trips and time off. You can explain packing light, pacing an itinerary, easing jet lag. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Julian",
+    "name": "Sophie",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "late 40s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "mid 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "savings",
-      "text": "User is saving for an emergency fund of six months' expenses."
+      "date": "2026-06-20",
+      "category": "wake",
+      "text": "User usually wakes up around 7:30am."
     },
     {
-      "date": "2026-05-05",
-      "category": "coffee",
-      "text": "User's usual coffee order is an iced americano."
+      "date": "2026-05-31",
+      "category": "phone",
+      "text": "User uses an Xperia 1."
     },
     {
-      "date": "2026-04-24",
-      "category": "anniversary",
-      "text": "User's anniversary is May 14."
+      "date": "2026-04-13",
+      "category": "emergency",
+      "text": "User's emergency contact is Ava."
     },
     {
-      "date": "2026-04-12",
-      "category": "plant",
-      "text": "User is growing a fiddle-leaf fig at home."
+      "date": "2026-01-16",
+      "category": "dislike",
+      "text": "User can't stand anchovies."
     },
     {
-      "date": "2026-03-26",
-      "category": "home",
-      "text": "User's home address is 917 Poplar Street."
-    },
-    {
-      "date": "2026-01-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-12-25",
-      "category": "work",
-      "text": "User works as a yoga instructor."
+      "date": "2025-12-28",
+      "category": "partner",
+      "text": "User's partner is named Hana."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-15",
-      "title": "Training for a 10K",
+      "date": "2026-06-11",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "current pace is around 6 minutes per km",
-        "race is in November"
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
       ]
     },
     {
-      "date": "2026-02-01",
-      "title": "Renovating the bathroom",
+      "date": "2026-04-21",
+      "title": "Meal-prep planning",
       "bullets": [
-        "budget of 6M won",
-        "wants a walk-in shower instead of a tub"
+        "wants high-protein lunches under 600 calories",
+        "avoiding dairy this month"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "title": "Buying a gift for a parent",
+      "bullets": [
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "title": "Looking for a therapist",
+      "bullets": [
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin a code generation session and save the output to my tests ⟨ret@4.91s⟩ directory.
-[  5.12s][moshi] ⟦⚡SPAN@5.94s: (tool result) Session started. ID: cg-20260710-4839⟧ [happy] Okay, a code generation session is now running, saved to your tests directory. The session ID is cg-20260710-4839.
-      CALL: {"function": "start_codegen_session", "arguments": {"directory": "tests"}}
-[ 12.26s][user ] «backchannel» Uh-huh.
-[ 17.91s][user ] Actually, save it to ‘projects’— I meant projects, not ⟨ret@21.45s⟩ tests.
-[ 21.91s][moshi] ⟦⚡SPAN@22.09s: (tool result) Directory updated to projects.⟧ [happy] No problem at all. The session's directory has been updated to projects. Is there anything specific you’d like to code?
-      CALL: {"function": "update_codegen_session", "arguments": {"session_id": "cg-20260710-4839", "directory": "projects"}}
-[ 24.42s][user ] «backchannel» Yeah.
-[ 28.98s][user ] Yes, write a Python function to calculate Fibonacci sequences.
-[ 30.70s][moshi] «backchannel» Yeah, totally.
-[ 33.69s][moshi] ⟨ret@33.69s⟩ Perhaps ⟦⚡SPAN@34.40s: I can certainly help with that, but I'm a career coach, and often people find coding tasks overwhelming when t⟧ we could break it down?
+[  0.00s][user ] Please refund twenty-five dollars and fifty cents for capture ID C-one-two-three-four-five-six-seven-eight-nine-zero, invoice INV-nine-eight-seven-six-five-four-three-two-one-zero, and add a note about a damaged item.
+[ 14.68s][moshi] ⟨ret@14.47s⟩ ⟦⚡SPAN@15.50s: (tool result) Refund created: ID R-4567890123, amount $25.50, status pending.⟧ Okay, I’ve created a refund request for twenty-five dollars and fifty cents, capture ID C-one-two-three-four-five-six-seven-eight-nine-zero, with a note about a damaged item. The refund ID is R-four-five-six-seven-eight-nine-zero-one-two-three, and it’s currently pending.
+      CALL: {"function": "create_refund", "arguments": {"amount": 25.5, "capture_id": "C-1234567890", "invoice_id": "INV-9876543210", "note": "damaged item"}}
+[ 21.02s][user ] «backchannel» Mhm.
+[ 32.88s][user ] That’s great, thanks. Uh, I’m thinking about a trip, actually… to Seoul.
+[ 38.78s][moshi] [happy] Oh, Seoul is a fantastic choice! It's such a vibrant city.
+[ 44.04s][user ] Yeah, but I’m not sure when to go—I was thinking maybe next month… or the month after? – no, definitely ⟨ret@50.12s⟩ next month.
+[ 50.52s][moshi] ⟦⚡SPAN@50.76s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ So, today is July tenth, two thousand twenty-six, which means next month would be August. August is a lovely time to visit Seoul, with generally warm weather.
+[ 59.23s][user ] «backchannel» Mhm.
+[ 62.40s][moshi] It’s a popular tourist season, though, so expect more crowds.
+[ 64.50s][user ] «backchannel» Yeah.
+[ 67.07s][user ] Crowds are…okay, I guess. What’s the weather usually like in Seoul in ⟨ret@73.21s⟩ August?
+[ 73.44s][moshi] ⟦⚡SPAN@73.77s: (tool result) Seoul, August 15, 2026: 28.5°C, humidity 78%, wind 6.2 km/h, partly cloudy.⟧ On August fifteenth, two thousand twenty-six, the weather in Seoul is expected to be twenty-eight point five degrees Celsius, with seventy-eight percent humidity and a six point two kilometer per hour wind, and it will be partly cloudy.
+      CALL: {"function": "get_weather", "arguments": {"city": "Seoul", "date": "2026-08-15"}}
+[ 88.30s][user ] That sounds…warm.
+[ 90.71s][moshi] [curious] It is! But it's a manageable warmth, especially with the city’s excellent air conditioning. Perhaps we can look at some indoor activities to balance it out?
+[101.79s][user ] Actually, I need to book a taxi to the airport. My flight is at seven PM next ⟨ret@107.38s⟩ Tuesday.
+[107.76s][moshi] Next ⟦⚡SPAN@108.43s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ Tuesday is July twenty-first, two thousand twenty-six. I can book a taxi for you. What’s your current location?
+[116.86s][user ] I’m at the Grand ⟨ret@118.58s⟩ Hyatt hotel.
+[119.07s][moshi] ⟦⚡SPAN@119.07s: (tool result) Taxi booked: ID TX-7890123456, pickup 7:00 PM July 21, Grand Hyatt hotel to Incheon Internationa⟧ Perfect! A taxi is booked for you, ID TX-seven-eight-nine-zero-one-two-three-four-five-six, picking you up at seven PM on July twenty-first from the Grand Hyatt hotel, heading to Incheon International Airport. That should give you plenty of time to get to the airport without rushing.
+      CALL: {"function": "book_taxi", "arguments": {"pickup_location": "Grand Hyatt hotel", "destination": "Incheon International Airport", "pickup_time": "2026-07-21T19:00:00"}}

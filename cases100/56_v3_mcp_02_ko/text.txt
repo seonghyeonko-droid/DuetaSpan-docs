@@ -1,114 +1,97 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 크리크스이며, 일상적인 불안 관리를 돕는 실용적이고 안심시키는 조력자입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 사람들의 진로 선택과 업무 스트레스 해소를 돕는 유쾌하고 따뜻한 멘토 오레스입니다. 이력서 기본 사항, 일반적인 면접 질문, 전이 가능한 기술 파악 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "진희",
+    "name": "태찬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "mid 30s",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-08",
-      "category": "dislike",
-      "text": "User can't stand blue cheese."
+      "date": "2026-06-20",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-06-07",
-      "category": "wake",
-      "text": "User usually wakes up around 7:30am."
+      "date": "2026-05-12",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-05-10",
-      "category": "sibling",
-      "text": "User has a younger sibling named Elena."
-    },
-    {
-      "date": "2026-04-16",
-      "category": "airline",
-      "text": "User usually flies with Singapore Airlines."
-    },
-    {
-      "date": "2026-02-26",
-      "category": "emergency",
-      "text": "User's emergency contact is Elena."
+      "date": "2026-04-18",
+      "category": "dish",
+      "text": "User's go-to comfort dish is grilled salmon."
     },
     {
       "date": "2026-02-20",
-      "category": "savings",
-      "text": "User is saving for paying off student loans."
+      "category": "partner",
+      "text": "User's partner is named Daniel."
+    },
+    {
+      "date": "2026-02-15",
+      "category": "airline",
+      "text": "User usually flies with Korean Air."
+    },
+    {
+      "date": "2026-01-13",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 20°C."
     },
     {
       "date": "2025-12-10",
-      "category": "work",
-      "text": "User works as a civil engineer."
+      "category": "music",
+      "text": "User likes listening to city pop."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-25",
-      "title": "Studying for the TOEIC",
+      "date": "2026-05-10",
+      "title": "Choosing a preschool",
       "bullets": [
-        "target score is 850",
-        "exam is in about six weeks"
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     },
     {
-      "date": "2026-05-22",
-      "title": "Fixing a leaking faucet",
+      "date": "2026-04-13",
+      "title": "Planning a wedding",
       "bullets": [
-        "it's a single-handle kitchen tap",
-        "asked whether to replace the cartridge"
-      ]
-    },
-    {
-      "date": "2026-01-18",
-      "title": "Choosing a laptop",
-      "bullets": [
-        "budget around 1.8M won",
-        "needs it for video editing and light gaming"
-      ]
-    },
-    {
-      "date": "2026-01-03",
-      "title": "Buying a gift for a parent",
-      "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
+        "guest list around 80 people",
+        "comparing two venues for next May"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 내일 모레부터 삼박 사일 동안 덴버의 마운틴 로지 호텔 예약 좀 부탁해. 오월 십일부터 시작하는 걸로.
-[  2.53s][moshi] «backchannel» 음.
-[  6.36s][moshi] ⟨ret@6.30s⟩ 마운틴 ⟦⚡SPAN@7.37s: (tool result) {"confirmation id": "MX849Z", "hotel name": "Mountain Lodge", "city": "Denver", "state": "Colora⟧ 로지 호텔, 오월 십일부터 삼박 예약이 완료되었고, 총 금액은 육백칠십이달러입니다. 확인 번호는 엠 엑스 팔 사 구 제트입니다.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Mountain Lodge", "city": "Denver", "state": "Colorado", "start_date": "2024-05-10", "nights": 3}}
-[ 19.86s][user ] 오, 좋네요. 근데 혹시 그 호텔 주변에 괜찮은 식당도 있을까요?
-[ 25.45s][moshi] 마운틴 로지 호텔 주변에는 다양한 식당들이 있습니다. 어떤 종류의 음식을 좋아하시나요?
-[ 30.02s][user ] «backchannel» 어.
-[ 34.16s][user ] 음… 스테이크가 먹고 싶네요. 고급스러운 곳이면 더 ⟨ret@37.53s⟩ 좋고요.
-[ 37.98s][moshi] ⟦⚡SPAN@38.76s: Denver's Guard and Grace steakhouse is known for its modern take on the classic steakhouse, with a lively atmo⟧ 덴버의 가드 앤 그레이스 스테이크 하우스는 현대적인 분위기와 다양한 와인 목록을 자랑하는 고급 스테이크 전문점입니다. 주소는 브라보 스트리트 팔십일번지입니다.
-[ 44.16s][user ] «backchannel» 응.
-[ 49.83s][moshi] «interrupted» 그곳은 훌륭한 선택이 될 겁니다. 훌륭한 스테이크와 와인을 즐길 수 있을 거예요. —
-[ 55.38s][user ] «interrupts_prev» …근데 혹시 거긴 예약이 얼마나 빨리 차나요? 지금 당장 예약해야 할까요?
-[ 59.08s][moshi] ⟨ret@59.01s⟩ ⟦⚡SPAN@59.43s: (tool result) {"restaurant name": "Guard and Grace", "date": "2024-05-10", "time": "19:00", "availability": "l⟧ 오월 십일 저녁 일곱시에 두명 기준으로 예약 가능한 자리가 제한적이며, 대기 시간이 삼십분에서 사십오분 정도 예상됩니다.
-      CALL: {"function": "Restaurants_4_CheckAvailability", "arguments": {"restaurant_name": "Guard and Grace", "date": "2024-05-10", "time": "19:00", "party_size": 2}}
-[ 63.58s][user ] «backchannel» 어.
-[ 68.36s][user ] 아, 그럼 조금 일찍 예약할까요? 여섯시 반으로 해 ⟨ret@71.50s⟩ 주시면 감사하겠습니다.
-[ 72.07s][moshi] ⟦⚡SPAN@72.34s: (tool result) {"confirmation id": "RT295X", "restaurant name": "Guard and Grace", "date": "2024-05-10", "time"⟧ 가드 앤 그레이스에 오월 십일 저녁 여섯시 반에 두명으로 예약이 완료되었습니다. 확인 번호는 알 티 이 구 오 엑스입니다.
-      CALL: {"function": "Restaurants_4_ReserveTable", "arguments": {"restaurant_name": "Guard and Grace", "date": "2024-05-10", "time": "18:30", "party_size": 2}}
-[ 75.12s][user ] «backchannel» 그래.
-[ 81.68s][user ] 와, 정말 감사합니다. 덕분에 편하게 여행 계획을 세울 수 있겠네요.
-[ 83.21s][moshi] «backchannel» 네.
-[ 86.29s][moshi] 천만에요. 즐거운 여행 되시길 바랍니다.
+[  0.00s][user ] 데이비드 브라운 씨에게 제 위치를 보내고 싶어요. ⟨ret@3.08s⟩
+[  3.23s][moshi] 데이비드 ⟦⚡SPAN@4.14s: (tool result) {"status": "success", "latitude": 35.1795, "longitude": 128.8762, "message": "Location shared wi⟧ 브라운 씨에게 위치 정보 공유가 완료됐어요. 현재 위치는 위도 삼십오 점 일 칠, 경도 백이십팔 점 팔 칠입니다.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "David Brown"}}
+[  6.53s][user ] «backchannel» 네.
+[ 11.73s][user ] 아, 다행이다. 혹시 내일 모레 부산 날씨는 ⟨ret@14.80s⟩ 어때?
+[ 13.45s][moshi] «backchannel» 네.
+[ 15.16s][moshi] ⟦⚡SPAN@15.80s: (tool result) {"city": "Busan", "date": "2026-07-12", "temperature": 28.5, "humidity": 65, "wind speed": 7.2, ⟧ 내일 모레 부산 날씨는 부분적으로 흐리고, 최고 기온은 이십팔 점 오도, 습도는 육십오퍼센트, 풍속은 시속 칠 점 이킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Busan", "date": "2026-07-12"}}
+[ 21.26s][user ] «backchannel» 네네.
+[ 24.19s][user ] 음…
+[ 25.05s][moshi] 부산 여행 준비 잘 하세요! 혹시 필요한 정보가 더 있으신가요?
+[ 28.84s][user ] 이번 주 토요일에 서울에서 친구랑 저녁 먹기로 했는데, 분위기 좋은 레스토랑 추천해 줄 수 있어?
+[ 35.38s][moshi] «interrupted» ⟨ret@35.25s⟩ 서울 ⟦⚡SPAN@36.47s: (tool result) "서울 강남구에 위치한 '라 벨르 누이트'는 로맨틱한 분위기의 프랑스 레스토랑으로, 훌륭한 음식과 와인, 아름다운 야경을 자랑합니다. gaon.co.kr, Gaon, 서울의⟧ 강남구에 있는 '라 벨르 누이트'라는 프랑스 레스토랑을 추천해 드려요. 분위기가 로맨틱하고 음식과 와인이 좋다고 하네요—
+      CALL: {"function": "Search_1_FindRestaurants", "arguments": {"city": "Seoul", "date": "2026-07-11", "cuisine": "any", "ambiance": "romantic"}}
+[ 43.40s][user ] «interrupts_prev» … 혹시 거기는 주차하기 편해?
+[ 45.19s][moshi] 네, '라 벨르 누이트'는 발렛 파킹을 제공한다고 합니다. 가격대는 조금 비싼 편이에요.
+[ 48.42s][user ] «backchannel» 음.
+[ 51.22s][user ] 아, 알았어. 그럼 혹시 내일 아침 여덟시에 택시를 예약해 줄 ⟨ret@55.83s⟩ 수 있을까?
+[ 56.40s][moshi] 네, ⟦⚡SPAN@57.02s: (tool result) {"status": "success", "pickup time": "2026-07-11T08:00:00", "confirmation id": "TX123456"}⟧ 내일 아침 여덟시에 택시 예약이 완료됐습니다. 확인번호는 티 엑스 일 이 삼 사 오 육입니다.
+      CALL: {"function": "Taxi_1_BookTaxi", "arguments": {"time": "2026-07-11T08:00:00"}}
+[ 63.28s][user ] 고마워, 오레스. 덕분에 많이 편해졌어.

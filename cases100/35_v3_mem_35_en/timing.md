@@ -4,84 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Avery",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "German"
+#     "age_range": "early 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Sofia."
+#       "date": "2026-06-10",
+#       "category": "dislike",
+#       "text": "User can't stand durian."
 #     },
 #     {
-#       "date": "2026-06-05",
-#       "category": "anniversary",
-#       "text": "User's anniversary is June 21."
-#     },
-#     {
-#       "date": "2026-04-03",
-#       "category": "learning",
-#       "text": "User is taking an online data-science course."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "work",
-#       "text": "User works as a pharmacist."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "medication",
-#       "text": "User takes antihistamines in spring."
-#     },
-#     {
-#       "date": "2026-03-02",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
-#     },
-#     {
-#       "date": "2026-01-28",
+#       "date": "2026-05-25",
 #       "category": "savings",
-#       "text": "User is saving for a down payment on an apartment."
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Georgia in May."
+#       "date": "2026-03-13",
+#       "category": "home",
+#       "text": "User's home address is 594 Juniper Lane."
+#     },
+#     {
+#       "date": "2025-12-28",
+#       "category": "phone",
+#       "text": "User uses an iPhone 15."
 #     },
 #     {
 #       "date": "2025-12-20",
-#       "category": "child",
-#       "text": "User has a child named Marco, age 12."
+#       "category": "emergency",
+#       "text": "User's emergency contact is Minjun."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-22",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-26",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "title": "Buying a gift for a parent",
-#       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-12",
+#       "date": "2026-04-12",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
@@ -89,57 +61,73 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-08",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-02-01",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "title": "Choosing a preschool",
+#       "bullets": [
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Thunalo, thanks! I'm feeling re | S2 …do you have any tips for calming  | S3 I keep worrying I’ll forget someth | S4 I'm also saving for an apartment, 
+# EXAMINER(FDB-v2) 단계: S1 Hi Bru, thanks. I’m looking for a  | S2 Alexandria… that's a bit far. Is t | S3 Perfect. I was thinking about gett | S4 Wonderful. That seals it. Thanks, 
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Thunalo! I'm a career coach, here to help with
-     5.18s  agent 발화 끝
-     5.31s  user  발화 시작: Hi Thunalo, thanks! I'm feeling really stressed about a pres
-     9.21s  agent 발화 시작: [sigh] Presentations can be tough, Avery. It's completely no
-     9.25s  user  발화 끝
-    14.82s  agent 발화 끝
-    15.18s  user  발화 시작: Yeah, it's for the whole team, and my boss will be there.
-    16.82s  agent 발화 시작: Yeah.
-    17.27s  agent 발화 끝
-    18.32s  agent 발화 시작: That sounds…—
-    18.55s  user  발화 끝
-    18.59s  user  발화 시작: …do you have any tips for calming my nerves beforehand?
-    19.14s  agent 발화 끝
-    19.98s  agent 발화 시작: Uh-huh.
-    20.48s  agent 발화 끝
-    21.63s  user  발화 끝
-    22.01s  agent 발화 시작: Deep breathing exercises can really help center you.
-    24.01s  user  발화 시작: Yeah.
-    24.46s  user  발화 끝
-    25.15s  agent 발화 끝
-    25.18s  agent 발화 시작: Focusing on your strengths also builds confidence, rememberi
-    28.53s  user  발화 시작: Mhm.
-    29.17s  user  발화 끝
-    29.99s  agent 발화 끝
-    30.52s  user  발화 시작: I keep worrying I’ll forget something important.
-    32.91s  <ret> 발화 (turn13 첫 프레임)
-    33.13s  agent 발화 시작: <ret> As a pharmacist, you're used to precision and recall –
-    33.34s  user  발화 끝
-    33.68s  ⚡SPAN 주입 [d'=0.76s / d_lead=5.18s]: [2026-03-26] User works as a pharmacist.
-    38.30s  agent 발화 끝
-    38.92s  user  발화 시작: That's true, I guess. I do handle a lot of details daily.
-    42.29s  user  발화 끝
-    42.68s  agent 발화 시작: [happy] Exactly! Transferable skills are key. You're already
-    47.07s  agent 발화 끝
-    47.17s  user  발화 시작: I'm also saving for an apartment, it’s adding to the stress.
-    49.78s  <ret> 발화 (turn17 첫 프레임)
-    50.08s  agent 발화 시작: <ret> I recall you’re saving for a down payment, which is a 
-    50.27s  user  발화 끝
-    50.63s  ⚡SPAN 주입 [d'=0.85s / d_lead=3.84s]: [2026-01-28] User is saving for a down payment on an apartment.
-    53.91s  agent 발화 끝
-    54.00s  agent 발화 시작: It’s okay to acknowledge that pressure, and then refocus on 
-    58.81s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Jordan, I'm Bru. It's lovely to connect with you. I'm a w
+     2.07s  user  발화 시작: Yeah, totally.
+     3.35s  user  발화 끝
+     6.91s  user  발화 시작: Hi Bru, thanks. I’m looking for a quiet café to work from to
+     6.94s  agent 발화 끝
+    11.09s  agent 발화 시작: Uh-huh.
+    11.58s  agent 발화 끝
+    12.70s  user  발화 끝
+    12.77s  agent 발화 시작: Do you have any preferences for the type of coffee or atmosp
+    14.07s  user  발화 시작: Yeah.
+    14.71s  user  발화 끝
+    16.98s  agent 발화 끝
+    17.73s  user  발화 시작: Hmm, not really. Just somewhere not too crowded.
+    21.32s  <ret> 발화 (turn7 첫 프레임)
+    21.38s  agent 발화 시작: <ret> The Grounds of Alexandria seems ideal – it’s known for
+    21.39s  user  발화 끝
+    21.42s  ⚡SPAN 주입 [d'=1.25s / d_lead=6.11s]: (tool result) The Grounds of Alexandria: 4.5 stars, known for its calm
+    27.49s  agent 발화 끝
+    27.53s  user  발화 시작: Alexandria… that's a bit far. Is there anything closer to th
+    29.12s  agent 발화 시작: Yeah, totally.
+    30.78s  agent 발화 끝
+    32.54s  <ret> 발화 (turn10 첫 프레임)
+    32.71s  ⚡SPAN 주입 [d'=1.33s / d_lead=6.49s]: (tool result) Edition Coffee Roasters: 4.6 stars, minimalist décor, ex
+    32.77s  agent 발화 시작: <ret> Edition Coffee Roasters in the CBD has minimalist déco
+    32.81s  user  발화 끝
+    37.51s  user  발화 시작: Mhm.
+    38.09s  user  발화 끝
+    39.26s  agent 발화 끝
+    39.44s  user  발화 시작: That sounds good. Do they have Wi-Fi?
+    41.56s  <ret> 발화 (turn13 첫 프레임)
+    41.79s  user  발화 끝
+    41.87s  agent 발화 시작: <ret> Yes, they do! Wi-Fi is available, and most tables have
+    42.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.20s]: (tool result) Edition Coffee Roasters: Wi-Fi available, power outlets 
+    50.07s  agent 발화 끝
+    50.87s  user  발화 시작: Perfect. I was thinking about getting some work done this we
+    54.71s  user  발화 끝
+    54.93s  agent 발화 시작: They also offer a variety of pastries and light meals if you
+    58.74s  user  발화 시작: … Actually, do they have oat milk? I'm lactose intolerant.
+    59.37s  agent 발화 끝
+    61.91s  <ret> 발화 (turn17 첫 프레임)
+    62.21s  agent 발화 시작: <ret> [curious] That’s a great question, Jordan. Let me quic
+    62.25s  user  발화 끝
+    62.80s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.67s]: (tool result) Edition Coffee Roasters: Oat milk available.
+    68.81s  agent 발화 시작: Yes, they do have oat milk available! You can enjoy your cof
+    68.88s  agent 발화 끝
+    74.19s  agent 발화 끝
+    75.06s  user  발화 시작: Wonderful. That seals it. Thanks, Bru.
+    78.01s  user  발화 끝
+    78.12s  agent 발화 시작: [happy] You're very welcome, Jordan. I'm glad I could help y
+    84.10s  agent 발화 끝

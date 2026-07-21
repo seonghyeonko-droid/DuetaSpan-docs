@@ -4,94 +4,160 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Taylor",
+#     "name": "Alex",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is an iced americano."
+#       "date": "2026-06-09",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     },
 #     {
-#       "date": "2026-05-01",
-#       "category": "hobby",
-#       "text": "User is into freediving."
+#       "date": "2026-06-02",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
+#       "date": "2026-05-26",
+#       "category": "skill",
+#       "text": "User is getting fairly good at board-game design."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "employer",
-#       "text": "User works at a public university."
+#       "date": "2026-05-21",
+#       "category": "work",
+#       "text": "User works as a real-estate agent."
 #     },
 #     {
-#       "date": "2026-02-02",
-#       "category": "learning",
-#       "text": "User is taking pottery classes."
+#       "date": "2026-05-04",
+#       "category": "show",
+#       "text": "User is currently watching a stand-up comedy special."
+#     },
+#     {
+#       "date": "2026-02-17",
+#       "category": "airline",
+#       "text": "User usually flies with Korean Air."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "home",
+#       "text": "User's home address is 370 Cypress Court."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "music",
+#       "text": "User likes listening to indie folk."
+#     },
+#     {
+#       "date": "2025-12-09",
+#       "category": "dislike",
+#       "text": "User can't stand raw tomatoes."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-11",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-05-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-03-26",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "title": "Selling a used bike",
+#       "bullets": [
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그 아이 피 주소 어디야? | S2 서울? 부산에서 엄청 멀겠네. | S3 다음 주에 서울 여행 갈 건데, 카페 좀 찾아봐야겠다. | S4 …근데 경복궁 근처에 카페 있어?
+# EXAMINER(FDB-v2) 단계: S1 응, 덴버 콜로라도 마운틴 로지에서 이천이십사년 오월 십일부터 | S2 꽤 괜찮네. 가볍게 챙겨 입어야겠다. | S3 트레이딩 포스트 트레일 난이도는 어때? | S4 좋은 조언 고마워. 물 사러 갈 만한 식료품점 근처에 있어?
 
-     0.00s  user  발화 시작: 그 아이 피 주소 어디야?
-     1.78s  <ret> 발화 (turn1 첫 프레임)
-     1.82s  agent 발화 시작: <ret> 음, 그 아이 피 주소는 대한민국 서울특별시로 확인됩니다. 구체적으로 위도는 삼십칠 점 오육육오,
-     1.82s  user  발화 끝
-     2.45s  ⚡SPAN 주입 [d'=0.67s / d_lead=9.92s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
-    11.52s  user  발화 시작: 서울? 부산에서 엄청 멀겠네.
-    11.74s  agent 발화 끝
-    14.05s  agent 발화 시작: 네, 꽤 거리가 멀죠! 부산은 동남쪽 해안에 있고, 서울은 북쪽에 있거든요.
-    14.10s  user  발화 끝
-    19.69s  agent 발화 끝
-    19.98s  user  발화 시작: 다음 주에 서울 여행 갈 건데, 카페 좀 찾아봐야겠다.
-    23.35s  user  발화 끝
-    23.69s  agent 발화 시작: 정말 좋겠네요! 서울은 카페 문화가 아주 발달했어요. 혹시 어떤 분위기를 원하세요—조용히 공부할 수 있는 곳
-    34.71s  <ret> 발화 (turn6 첫 프레임)
-    35.07s  agent 발화 시작: <ret> 뭐, 새로운 곳에 가면 친구 사귀는 게 어려울 수도 있겠네요… 보통 제일 힘든 부분인데, 먼저 다
-    35.14s  agent 발화 끝
-    36.21s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.63s]: Reaching out first is often the hardest part, but people generally app
-    42.89s  user  발화 시작: 응.
-    43.20s  user  발화 끝
-    50.65s  user  발화 시작: …근데 경복궁 근처에 카페 있어?
-    50.70s  agent 발화 끝
-    52.12s  <ret> 발화 (turn9 첫 프레임)
-    52.56s  agent 발화 시작: <ret> 몇 군데 있어요! 카페 어니언 각국은 별점 사 점 오이고 가격대는 보통이고요, 문버드 온리 테레즈
-    52.77s  user  발화 끝
-    53.10s  ⚡SPAN 주입 [d'=0.98s / d_lead=9.59s]: (tool result) {"results": [{"name": "Cafe Onion Anguk", "address": "84
-    58.70s  user  발화 시작: 오.
-    59.52s  user  발화 끝
-    62.13s  agent 발화 시작: 정말 멋진 곳들이네요! [laugh] 커피를 마시면서 대화를 시작하는 건 사람들을 만나는 좋은 방법이에요. 
-    62.15s  agent 발화 끝
-    73.59s  agent 발화 끝
+     0.00s  user  발화 시작: 응, 덴버 콜로라도 마운틴 로지에서 이천이십사년 오월 십일부터 삼박 할 방을 예약해야 해.
+     2.49s  agent 발화 시작: 네.
+     2.94s  agent 발화 끝
+     6.12s  <ret> 발화 (turn2 첫 프레임)
+     6.29s  agent 발화 시작: <ret> 네, 덴버 콜로라도 마운틴 로지에서 오월 십일부터 오월 십삼일까지 방을 예약해 드렸습니다. 총 금
+     6.30s  user  발화 끝
+     7.02s  ⚡SPAN 주입 [d'=0.90s / d_lead=11.77s]: (tool result) {"confirmation id": "AX789YZ", "hotel name": "Mountain L
+    18.00s  user  발화 시작: 괜찮네. 근처에 뭐 재밌는 거 있어?
+    18.07s  agent 발화 끝
+    21.23s  user  발화 끝
+    21.47s  <ret> 발화 (turn4 첫 프레임)
+    21.49s  agent 발화 시작: <ret> 덴버는 볼거리가 정말 많아요! 예술, 양조장, 그리고 로키 산맥 접근성이 좋기로 유명하죠.
+    22.27s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.74s]: Denver is known for its vibrant arts scene, craft breweries, and outdo
+    25.47s  user  발화 시작: 응.
+    25.96s  user  발화 끝
+    29.22s  agent 발화 시작: 덴버 아트 뮤지엄에 가보시거나, 아니면 현지 양조장을 둘러보시는 것도 좋을 것 같아요. 꽤 많거든요.
+    29.23s  agent 발화 끝
+    34.24s  user  발화 시작: 아.
+    34.69s  user  발화 끝
+    36.96s  agent 발화 끝
+    38.55s  user  발화 시작: 양조장 좋겠다. 그때 날씨는 어때?
+    40.77s  <ret> 발화 (turn9 첫 프레임)
+    41.20s  agent 발화 시작: <ret> 오월 십일 덴버 날씨는 섭씨 십팔 점 삼도, 부분적으로 흐리고, 습도는 육십이퍼센트, 풍속은 시속
+    41.33s  user  발화 끝
+    41.75s  ⚡SPAN 주입 [d'=0.98s / d_lead=9.97s]: (tool result) {"temperature": "18.3°C", "humidity": "62%", "wind speed
+    51.04s  user  발화 시작: 꽤 괜찮네. 가볍게 챙겨 입어야겠다.
+    51.17s  agent 발화 끝
+    53.86s  user  발화 시작: …근데 호텔 근처에 괜찮은 하이킹 코스 있어?
+    53.91s  user  발화 끝
+    54.99s  agent 발화 시작: 예.
+    55.45s  agent 발화 끝
+    55.84s  <ret> 발화 (turn13 첫 프레임)
+    56.23s  agent 발화 시작: <ret> 레드 록스 원형극장과 트레이딩 포스트에 모든 수준의 트레일이 있어요. 쉬운 산책부터 힘든 등반까지
+    56.40s  user  발화 끝
+    56.67s  ⚡SPAN 주입 [d'=0.84s / d_lead=9.18s]: Red Rocks Amphitheatre and Trading Post has several trails ranging in 
+    62.16s  user  발화 시작: 어.
+    62.75s  user  발화 끝
+    65.42s  agent 발화 끝
+    66.48s  user  발화 시작: 트레이딩 포스트 트레일 난이도는 어때?
+    67.38s  agent 발화 시작: 네.
+    67.83s  agent 발화 끝
+    68.61s  <ret> 발화 (turn17 첫 프레임)
+    68.88s  user  발화 끝
+    68.94s  agent 발화 시작: <ret> 트레이딩 포스트 트레일은 이 점 이킬로미터 순환 코스로, 난이도는 쉬움으로 분류되며, 보통 삼십분
+    70.01s  ⚡SPAN 주입 [d'=1.40s / d_lead=8.71s]: The Trading Post Trail at Red Rocks is a 1.4-mile loop, rated as easy,
+    73.66s  user  발화 시작: 아.
+    74.15s  user  발화 끝
+    77.65s  agent 발화 끝
+    78.12s  user  발화 시작: 그 정도면 괜찮겠네. 고산병이 좀 걱정되긴 해.
+    81.84s  agent 발화 시작: 그건 걱정할 만한 문제네요. 덴버의 고도는 천육백구미터입니다. [sigh] 수분을 충분히 섭취하고 첫날에는 
+    81.97s  user  발화 끝
+    89.57s  user  발화 시작: 와.
+    90.35s  user  발화 끝
+    93.16s  user  발화 시작: 좋은 조언 고마워. 물 사러 갈 만한 식료품점 근처에 있어?
+    93.62s  agent 발화 끝
+    95.26s  agent 발화 시작: 맞아요.
+    96.04s  agent 발화 끝
+    96.50s  <ret> 발화 (turn24 첫 프레임)
+    96.94s  ⚡SPAN 주입 [d'=0.44s / d_lead=8.72s]: Whole Foods Market is located at 1401 Pearl St, Denver, CO 80202, appr
+    97.03s  agent 발화 시작: <ret> 퍼얼 스트리트 천사백일번지에 있는 홀푸드 마켓이 마운틴 로지에서 차로 십오분 거리에 있어요. 물과
+    97.08s  user  발화 끝
+   100.15s  user  발화 시작: 그치.
+   100.78s  user  발화 끝
+   105.69s  user  발화 시작: 좋아! 도와줘서 고마워, 클릭스.
+   105.75s  agent 발화 끝
+   107.98s  agent 발화 시작: 천만에요! 여행 계획을 세우는 데 도움이 되어 기쁩니다. [happy] 덴버에서 즐거운 시간 보내세요!
+   108.08s  user  발화 끝
+   114.23s  agent 발화 끝

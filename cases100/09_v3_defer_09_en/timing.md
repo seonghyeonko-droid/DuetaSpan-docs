@@ -4,113 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Jordan",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "non-binary",
+#     "nationality": "Australian",
+#     "gender": "male",
 #     "age_range": "late 40s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "child",
-#       "text": "User has a child named Haruto, age 8."
+#       "date": "2026-06-09",
+#       "category": "allergy",
+#       "text": "User is allergic to tree nuts."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "savings",
-#       "text": "User is saving for paying off student loans."
+#       "date": "2026-06-04",
+#       "category": "phone",
+#       "text": "User uses a Galaxy S24."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
+#       "date": "2026-05-24",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     },
 #     {
-#       "date": "2026-03-09",
-#       "category": "music",
-#       "text": "User likes listening to a lo-fi jazz playlist."
+#       "date": "2026-05-17",
+#       "category": "work",
+#       "text": "User works as a midwife."
 #     },
 #     {
-#       "date": "2026-01-24",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is mushroom risotto."
+#       "date": "2026-05-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Portugal in November."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "partner",
+#       "text": "User's partner is named Emma."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "home",
+#       "text": "User's home address is 39 Alder Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-24",
-#       "title": "Planning a dinner party",
+#       "date": "2026-06-15",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-04-04",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-21",
-#       "title": "Buying a gift for a parent",
-#       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Unconfirm the meeting scheduled fo | S2 Do you have any tips for handling  | S3 …Do you think it’s worth trying to | S4 I'm worried about getting all the 
 
-     0.00s  user  발화 시작: Unconfirm the meeting scheduled for Monday.
-     2.38s  <ret> 발화 (turn1 첫 프레임)
-     2.56s  agent 발화 시작: <ret> Okay, I’ve cancelled your meeting with Jae-woo Kim for
-     2.73s  user  발화 끝
-     3.23s  ⚡SPAN 주입 [d'=0.85s / d_lead=11.46s]: (tool result) Meeting with Jae-woo Kim on Monday, July 13, 2026 at 10:
-    11.08s  user  발화 시작: Mm-hmm.
-    11.62s  user  발화 끝
-    14.01s  agent 발화 끝
-    14.74s  user  발화 시작: Thanks. That was really helpful. I'm feeling overwhelmed wit
-    19.01s  agent 발화 시작: [happy] I’m glad I could help. It’s completely normal to fee
-    19.14s  user  발화 끝
-    22.82s  user  발화 시작: Mm-hmm.
-    23.35s  user  발화 끝
-    25.96s  agent 발화 끝
-    26.09s  user  발화 시작: Do you have any tips for handling difficult colleagues?
-    28.94s  agent 발화 시작: Difficult colleagues can be draining, but there are ways to 
-    29.12s  user  발화 끝
-    34.14s  agent 발화 시작: Sometimes, setting clear boundaries—
-    34.31s  agent 발화 끝
-    36.33s  user  발화 시작: …Do you think it’s worth trying to understand *why* they’re 
-    37.04s  agent 발화 끝
-    39.63s  <ret> 발화 (turn10 첫 프레임)
-    39.99s  agent 발화 시작: <ret> That’s a really insightful question. It’s often helpfu
-    40.14s  user  발화 끝
-    40.96s  ⚡SPAN 주입 [d'=1.33s / d_lead=9.74s]: Understanding the motivations behind difficult behavior can foster emp
-    49.63s  agent 발화 시작: Understanding the motivations behind difficult behavior can 
-    49.73s  agent 발화 끝
-    63.79s  agent 발화 끝
-    64.19s  user  발화 시작: That makes sense. I'm also struggling with a presentation ne
-    68.12s  user  발화 끝
-    68.38s  agent 발화 시작: [curious] Oh, a presentation? What’s making you anxious abou
-    75.76s  user  발화 시작: I'm worried about getting all the data right. Can you quickl
-    75.84s  agent 발화 끝
-    81.99s  <ret> 발화 (turn15 첫 프레임)
-    82.32s  agent 발화 시작: <ret> Give me a moment while I check that for you…
-    82.47s  user  발화 끝
-    82.73s  ⚡SPAN 주입 [d'=0.74s / d_lead=2.45s]: (tool result) According to Gaon Financial News, Busan branch sales for
-    83.81s  ⚡지연 SPAN 주입(선제발표 직전): According to Gaon Financial News, Busan branch sales for Q2 2026 reach
-    84.71s  agent 발화 시작: <ret> Let me share those figures with you. Busan branch sale
-    84.77s  agent 발화 끝
-   101.69s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Frona, I’m trying to plan some healthy meals for the week
+     5.22s  agent 발화 시작: Good morning! Breakfast can be tricky, but we can definitely
+     5.32s  user  발화 끝
+    12.87s  agent 발화 끝
+    13.01s  user  발화 시작: Well, I like fruit, but I need something with a bit more pro
+    15.59s  agent 발화 시작: Yeah.
+    16.23s  agent 발화 끝
+    20.00s  <ret> 발화 (turn4 첫 프레임)
+    20.24s  ⚡SPAN 주입 [d'=1.09s / d_lead=13.57s]: (tool result) Oatmeal with berries and nuts provides a balanced mix of
+    20.29s  agent 발화 시작: <ret> Oatmeal with berries and nuts is a fantastic option, p
+    20.59s  user  발화 끝
+    32.63s  ⚡지연 SPAN 주입(선제발표 직전): [2024-07-06] I'm training for a half marathon.
+    33.82s  agent 발화 시작: <ret> I remembered you mentioned training for a half maratho
+    33.87s  agent 발화 끝
+    43.51s  agent 발화 끝

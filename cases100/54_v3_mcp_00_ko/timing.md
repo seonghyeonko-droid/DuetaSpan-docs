@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "우우",
+#     "name": "혜형",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,120 +12,114 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "60s",
+#     "gender": "female",
+#     "age_range": "early 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cold brew."
-#     },
-#     {
-#       "date": "2026-06-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
-#     },
-#     {
-#       "date": "2026-06-01",
+#       "date": "2026-06-15",
 #       "category": "partner",
-#       "text": "User's partner is named Leo."
+#       "text": "User's partner is named Haruto."
 #     },
 #     {
-#       "date": "2026-05-31",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Greek."
+#       "date": "2026-05-03",
+#       "category": "skill",
+#       "text": "User is quite experienced with bread baking."
 #     },
 #     {
-#       "date": "2026-05-15",
-#       "category": "schedule",
-#       "text": "User has a hybrid 3-days-in-office week."
+#       "date": "2026-03-13",
+#       "category": "airline",
+#       "text": "User usually flies with Air France."
 #     },
 #     {
-#       "date": "2025-12-14",
+#       "date": "2026-03-12",
+#       "category": "commute",
+#       "text": "User works from home."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "employer",
-#       "text": "User works at a law firm."
+#       "text": "User works at a consulting firm."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "allergy",
-#       "text": "User is allergic to gluten."
+#       "date": "2026-02-13",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2026-01-23",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "music",
+#       "text": "User likes listening to K-ballads."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "streaming",
+#       "text": "User subscribes to a shared Netflix family plan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
-#       "title": "Meal-prep planning",
+#       "date": "2026-06-15",
+#       "title": "Studying for the TOEIC",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "target score is 850",
+#         "exam is in about six weeks"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-21",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "title": "Researching a used car",
+#       "date": "2025-12-30",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 베타 세븐 세션 상태가 어떻게 돼? | S2 아니, 그냥 베타 세븐에 집중할게. 지금 하고 있는 게 제일  | S3 아, 그렇구나. 그럼 남은 십사분 동안 최대 비용은 얼마야? | S4 고마워, 푸엔. 덕분에 안심이 되네.
+# EXAMINER(FDB-v2) 단계: S1 혹시 아이피 주소 십.영 점 일 위치가 어디인지 알려줄 수 있 | S2 서울이군요. | S3 서울에서 친구를 만나려고 하는데, 좋은 카페 추천해 줄 수 있 | S4 …홍대는 좀 시끄러울 것 같아서 강남역 근처로 알려주세요.
 
-     0.00s  user  발화 시작: 베타 세븐 세션 상태가 어떻게 돼?
-     1.74s  <ret> 발화 (turn1 첫 프레임)
-     2.02s  user  발화 끝
-     2.04s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.95s]: (tool result) session status: active, remaining time: 14 minutes, cost
-     2.19s  agent 발화 시작: <ret> 베타 세븐 세션은 지금 활성화되어 있고, 남은 시간은 십사분, 비용은 이 점 오달러예요. [hap
-     6.99s  user  발화 시작: 응.
-     7.39s  user  발화 끝
-    11.14s  agent 발화 끝
-    12.23s  user  발화 시작: 음, 그럼 다른 세션은 얼마나 있어?
-    14.77s  user  발화 끝
-    14.82s  <ret> 발화 (turn4 첫 프레임)
-    15.29s  agent 발화 시작: <ret> 현재 활성화된 세션은 세개고, 총 세션은 열두개 있습니다. [curious] 혹시 특정 세션에 대
-    16.08s  ⚡SPAN 주입 [d'=1.26s / d_lead=8.16s]: (tool result) active sessions: 3, total sessions: 12
-    23.45s  agent 발화 끝
-    23.83s  user  발화 시작: 아니, 그냥 베타 세븐에 집중할게. 지금 하고 있는 게 제일 중요하거든.
-    28.46s  user  발화 끝
-    28.63s  agent 발화 시작: 베타 세븐 세션에 집중하시는군요. [sigh] 중요한 일 잘 처리하시길 바랄게요. 혹시 세션 시간 연장도 가
-    37.76s  agent 발화 시작: 연장 가능 여부를 확인해 볼까요? —
-    37.90s  agent 발화 끝
-    39.34s  user  발화 시작: … 잠깐만, 베타 세븐 비용이 계속 추가되는 거야?
-    39.98s  agent 발화 끝
-    42.38s  user  발화 끝
-    42.49s  agent 발화 시작: 네, 베타 세븐 세션은 분당 영 점 이 오달러씩 계속 추가됩니다. [happy] 지금 이 점 오달러 사용하셨
-    52.84s  agent 발화 끝
-    52.99s  user  발화 시작: 아, 그렇구나. 그럼 남은 십사분 동안 최대 비용은 얼마야?
-    54.74s  agent 발화 시작: 네.
-    55.42s  agent 발화 끝
-    56.67s  <ret> 발화 (turn12 첫 프레임)
-    56.69s  user  발화 끝
-    57.21s  agent 발화 시작: <ret> 남은 십사분 동안 최대 비용은 삼 점 오달러가 추가될 수 있습니다. [curious] 혹시 예산을
-    57.51s  ⚡SPAN 주입 [d'=0.84s / d_lead=7.09s]: 14 minutes * $0.25/minute = $3.50
-    64.30s  user  발화 시작: 음… 오달러까지는 괜찮아. 오달러 넘으면 알려줘.
-    64.31s  agent 발화 끝
-    68.19s  user  발화 끝
-    68.76s  agent 발화 시작: 베타 세븐 세션 비용이 오달러를 넘으면 바로 알려드릴게요. [happy] 지금부터 계속 주시하고 있다가 알려
-    74.89s  user  발화 시작: 고마워, 푸엔. 덕분에 안심이 되네.
-    75.34s  agent 발화 끝
-    77.19s  user  발화 끝
-    77.36s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해 주세요. [happy] 제가 옆에서 돕고 있으니 걱정 마세요.
-    80.63s  user  발화 시작: 응.
-    80.98s  user  발화 끝
-    83.08s  user  발화 시작: 혹시 세션 종료 전에 데이터 저장하는 방법도 알려줄 수 있어?
-    83.15s  agent 발화 끝
-    86.97s  user  발화 끝
-    86.99s  agent 발화 시작: 세션 종료 전에 '저장' 버튼을 누르거나, '파일' 메뉴에서 '저장'을 선택하시면 됩니다. [curious]
-    94.13s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 아이피 주소 십.영 점 일 위치가 어디인지 알려줄 수 있을까요?
+     4.93s  <ret> 발화 (turn1 첫 프레임)
+     5.23s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.95s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
+     5.38s  agent 발화 시작: <ret> 그 아이피 주소는 한국 서울에 위치하고 있습니다, 위도는 삼십칠 점 오 육도, 경도는 백이십육 점
+     5.61s  user  발화 끝
+    16.33s  agent 발화 끝
+    16.47s  user  발화 시작: 서울이군요.
+    17.64s  user  발화 끝
+    18.03s  agent 발화 시작: 네, 서울입니다.
+    19.49s  user  발화 시작: 서울에서 친구를 만나려고 하는데, 좋은 카페 추천해 줄 수 있을까요?
+    19.54s  agent 발화 끝
+    23.84s  <ret> 발화 (turn5 첫 프레임)
+    23.97s  user  발화 끝
+    24.02s  agent 발화 시작: <ret> 친구분과 함께 가기 좋은 서울의 카페를 찾아볼까요?
+    25.10s  ⚡SPAN 주입 [d'=1.26s / d_lead=3.84s]: 서울에는 다양한 분위기의 카페가 많습니다. 특히 강남역 근처에는 아늑하고 조용한 카페들이 많으며, 홍대입구역 근처에는 개성 넘
+    27.84s  agent 발화 시작: 서울에는 분위기 좋은 카페가 정말 많은데요, 특히 강남역 근처는 아늑하고 조용한 곳이 많고—
+    27.86s  agent 발화 끝
+    34.53s  user  발화 시작: …홍대는 좀 시끄러울 것 같아서 강남역 근처로 알려주세요.
+    35.26s  agent 발화 끝
+    38.52s  <ret> 발화 (turn8 첫 프레임)
+    38.98s  agent 발화 시작: <ret> 네, 알겠습니다. 강남역 근처의 아늑한 카페를 찾아볼게요.
+    38.98s  user  발화 끝
+    40.02s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.51s]: (tool result) "강남역 카페 추천: 아늑하고 조용한 공간, 맛있는 커피와 디저트가 있는 카페들이 많습니다. '카페 
+    44.48s  agent 발화 끝
+    44.54s  agent 발화 시작: 강남역 근처 카페로 '카페 오르빗'과 '커피빈 강남점'이 인기가 많은 것 같아요.
+    46.77s  user  발화 시작: 응.
+    47.27s  user  발화 끝
+    51.52s  agent 발화 시작: 네, '카페 오르빗'은 특히 아늑한 분위기로 유명합니다. 친구분과 편안하게 이야기 나누기에 좋을 것 같아요.
+    51.62s  agent 발화 끝
+    59.82s  agent 발화 끝
