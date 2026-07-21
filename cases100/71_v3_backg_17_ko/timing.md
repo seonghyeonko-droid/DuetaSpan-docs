@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "현람",
+#     "name": "보호",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,81 +12,90 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-19",
-#       "category": "anniversary",
-#       "text": "User's anniversary is February 15."
+#       "date": "2026-06-26",
+#       "category": "hobby",
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "savings",
-#       "text": "User is saving for a wedding."
+#       "date": "2026-04-13",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "plant",
-#       "text": "User is growing basil on the windowsill at home."
+#       "date": "2026-03-27",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a cold brew."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "streaming",
-#       "text": "User subscribes to Disney+ and YouTube Premium."
+#       "date": "2026-03-24",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "partner",
-#       "text": "User's partner is named Noah."
+#       "date": "2026-02-24",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
+#       "date": "2026-02-19",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "schedule",
-#       "text": "User has on-call weekends."
+#       "date": "2026-02-08",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 19°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
-#       "title": "Planning a dinner party",
+#       "date": "2026-06-05",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "title": "Sorting out a visa",
+#       "date": "2026-01-26",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-21",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 엔론 회계 부정 사건에, 어떤 은행들이 연루됐었지?
-     2.38s  <ret> 발화 (turn1 첫 프레임)
-     2.98s  agent 발화 시작: <ret> 엔론 스캔들에 연루된 은행들이 몇 군데 있었는데, 특히 메릴린치가 여러 금융 수법을 통해 관련되어
-     3.23s  user  발화 끝
-     3.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=7.19s]: Several banks, including Merrill Lynch, were involved in the Enron sca
-     7.45s  user  발화 시작: 그치.
-     8.08s  user  발화 끝
-    10.17s  agent 발화 끝
-    10.90s  user  발화 시작: 아, 오늘 날씨 진짜 덥다.
-    12.79s  user  발화 시작: 메릴린치가 구체적으로 뭘 했길래?
-    13.03s  user  발화 끝
-    15.16s  <ret> 발화 (turn5 첫 프레임)
-    15.28s  user  발화 끝
-    15.36s  agent 발화 시작: <ret> 메릴린치는 특수 목적 법인을 이용해서 엔론의 부채를 숨기고 이익을 부풀리는 걸 도왔다고 해요.
-    16.63s  ⚡SPAN 주입 [d'=1.47s / d_lead=7.00s]: Merrill Lynch helped Enron hide debt and inflate profits through speci
-    22.36s  agent 발화 끝
+     0.00s  user  발화 시작: 프랑스 상원 의원 수는 몇 명이에요?
+     1.61s  <ret> 발화 (turn1 첫 프레임)
+     2.21s  agent 발화 시작: <ret> 프랑스 상원의원 수는 총 삼백사십팔명입니다. [happy] 참고로, 상원은 하원과 함께 프랑스 의
+     2.28s  user  발화 끝
+     2.78s  ⚡SPAN 주입 [d'=1.17s / d_lead=6.67s]: The French Senate has 348 members.
+     8.86s  user  발화 시작: 아, 오늘따라 지하철이 왜 이렇게 막히는 거야.
+     8.88s  agent 발화 끝
+    11.39s  user  발화 끝
+    11.77s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요?
+    13.93s  agent 발화 끝
+    14.68s  user  발화 시작: 음, 그럼 하원 의원 수는요?
+    16.70s  user  발화 끝

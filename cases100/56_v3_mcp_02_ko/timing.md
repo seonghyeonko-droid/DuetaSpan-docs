@@ -4,116 +4,134 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "태찬",
+#     "name": "연진",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-24",
+#       "category": "learning",
+#       "text": "User is studying Japanese."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-03-27",
+#       "category": "music",
+#       "text": "User likes listening to city pop."
 #     },
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-03-20",
 #       "category": "dish",
-#       "text": "User's go-to comfort dish is grilled salmon."
+#       "text": "User's go-to comfort dish is beef tacos."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "partner",
-#       "text": "User's partner is named Daniel."
+#       "date": "2026-02-17",
+#       "category": "schedule",
+#       "text": "User has on-call weekends."
 #     },
 #     {
-#       "date": "2026-02-15",
+#       "date": "2026-02-13",
 #       "category": "airline",
-#       "text": "User usually flies with Korean Air."
+#       "text": "User usually flies with United."
 #     },
 #     {
 #       "date": "2026-01-13",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
+#       "category": "employer",
+#       "text": "User works at a biotech lab."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "music",
-#       "text": "User likes listening to city pop."
+#       "date": "2025-12-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in February."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-10",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-13",
+#       "date": "2026-06-07",
 #       "title": "Planning a wedding",
 #       "bullets": [
 #         "guest list around 80 people",
 #         "comparing two venues for next May"
 #       ]
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-11",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데이비드 브라운 씨에게 제 위치를 보내고 싶어요. | S2 음… | S3 … 혹시 거기는 주차하기 편해? | S4 고마워, 오레스. 덕분에 많이 편해졌어.
+# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 친구랑 같이 좀 좋은 데 가서 저녁 먹고 싶은데, | S2 오, 괜찮다. 그럼 거기 예약 좀 해줘. 두 명이고, 저녁 일 | S3 트러플 크림 파스타… 맛있겠다. 그럼 혹시 내일 날씨는 어때? | S4 음… 가격 괜찮네. 그럼 거기 방 하나 예약 좀 해줘. 다음 
 
-     0.00s  user  발화 시작: 데이비드 브라운 씨에게 제 위치를 보내고 싶어요.
-     3.08s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  agent 발화 시작: <ret> 데이비드 브라운 씨에게 위치 정보 공유가 완료됐어요. 현재 위치는 위도 삼십오 점 일 칠, 경도 
-     3.23s  user  발화 끝
-     4.39s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.39s]: (tool result) {"status": "success", "latitude": 35.1795, "longitude": 
-     6.53s  user  발화 시작: 네.
-     7.26s  user  발화 끝
-    11.62s  agent 발화 끝
-    11.73s  user  발화 시작: 아, 다행이다. 혹시 내일 모레 부산 날씨는 어때?
-    13.45s  agent 발화 시작: 네.
-    13.95s  agent 발화 끝
-    14.80s  <ret> 발화 (turn5 첫 프레임)
-    15.16s  agent 발화 시작: <ret> 내일 모레 부산 날씨는 부분적으로 흐리고, 최고 기온은 이십팔 점 오도, 습도는 육십오퍼센트, 풍
-    15.38s  user  발화 끝
-    16.05s  ⚡SPAN 주입 [d'=1.25s / d_lead=8.91s]: (tool result) {"city": "Busan", "date": "2026-07-12", "temperature": 2
-    21.26s  user  발화 시작: 네네.
-    22.08s  user  발화 끝
-    24.07s  agent 발화 끝
-    24.19s  user  발화 시작: 음…
-    24.69s  user  발화 끝
-    25.05s  agent 발화 시작: 부산 여행 준비 잘 하세요! 혹시 필요한 정보가 더 있으신가요?
-    28.84s  user  발화 시작: 이번 주 토요일에 서울에서 친구랑 저녁 먹기로 했는데, 분위기 좋은 레스토랑 추천해 줄 수 있어?
-    28.88s  agent 발화 끝
-    35.25s  <ret> 발화 (turn10 첫 프레임)
-    35.38s  agent 발화 시작: <ret> 서울 강남구에 있는 '라 벨르 누이트'라는 프랑스 레스토랑을 추천해 드려요. 분위기가 로맨틱하고 
-    35.42s  user  발화 끝
-    36.72s  ⚡SPAN 주입 [d'=1.47s / d_lead=8.71s]: (tool result) "서울 강남구에 위치한 '라 벨르 누이트'는 로맨틱한 분위기의 프랑스 레스토랑으로, 훌륭한 음식과 와
-    43.40s  user  발화 시작: … 혹시 거기는 주차하기 편해?
-    44.09s  agent 발화 끝
-    45.19s  agent 발화 시작: 네, '라 벨르 누이트'는 발렛 파킹을 제공한다고 합니다. 가격대는 조금 비싼 편이에요.
-    45.24s  user  발화 끝
-    48.42s  user  발화 시작: 음.
-    48.82s  user  발화 끝
-    51.03s  agent 발화 끝
-    51.22s  user  발화 시작: 아, 알았어. 그럼 혹시 내일 아침 여덟시에 택시를 예약해 줄 수 있을까?
-    55.83s  <ret> 발화 (turn15 첫 프레임)
-    56.40s  agent 발화 시작: <ret> 네, 내일 아침 여덟시에 택시 예약이 완료됐습니다. 확인번호는 티 엑스 일 이 삼 사 오 육입니다
-    56.54s  user  발화 끝
-    57.27s  ⚡SPAN 주입 [d'=1.43s / d_lead=6.76s]: (tool result) {"status": "success", "pickup time": "2026-07-11T08:00:0
-    63.16s  agent 발화 끝
-    63.28s  user  발화 시작: 고마워, 오레스. 덕분에 많이 편해졌어.
-    66.33s  user  발화 끝
+     0.00s  user  발화 시작: 오늘 저녁에 친구랑 같이 좀 좋은 데 가서 저녁 먹고 싶은데, 혹시 괜찮은 데 알아봐 줄 수 있어?
+     5.56s  user  발화 끝
+     5.86s  agent 발화 시작: 어떤 종류의 음식을 좋아하세요? 아니면 특별히 가고 싶은 동네가 있으신가요?
+     9.33s  user  발화 시작: 응.
+     9.73s  user  발화 끝
+    11.17s  agent 발화 끝
+    11.21s  user  발화 시작: 음… 그냥 분위기 좋은 이탈리안 레스토랑이면 좋겠어. 강남 쪽으로.
+    14.18s  agent 발화 시작: 네네.
+    14.96s  agent 발화 끝
+    15.58s  <ret> 발화 (turn5 첫 프레임)
+    15.68s  agent 발화 시작: <ret> 강남역 근처에 있는 벨라 파스타는 어떠세요? 평점이 사 점 육점이고, 지금 예약도 가능하다고 하네
+    15.79s  user  발화 끝
+    16.18s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.18s]: (tool result) 강남역 99번길 22, Bella Pasta (4.6 stars), 예약 가능
+    22.86s  agent 발화 끝
+    23.11s  user  발화 시작: 오, 괜찮다. 그럼 거기 예약 좀 해줘. 두 명이고, 저녁 일곱시로.
+    26.95s  <ret> 발화 (turn7 첫 프레임)
+    27.41s  agent 발화 시작: <ret> 네, 벨라 파스타 강남점에 일곱시에 두 분으로 예약 완료되었습니다. 예약 번호는 알 이 에스 삼 
+    27.49s  user  발화 끝
+    28.28s  ⚡SPAN 주입 [d'=1.33s / d_lead=8.76s]: (tool result) Bella Pasta, 강남역 99번길 22, 19:00, 2026-07-25, RES3-005061
+    36.17s  agent 발화 끝
+    36.42s  user  발화 시작: 아, 고마워. 근데 혹시 벨라 파스타에서 제일 인기 있는 메뉴가 뭐야?
+    40.43s  agent 발화 시작: 벨라 파스타의 가장 인기 있는 메뉴는 트러플 크림 파스타라고 하네요. 그리고 마르게리타 피자도 많이 찾으시는
+    40.44s  user  발화 끝
+    42.73s  user  발화 시작: 응.
+    43.18s  user  발화 끝
+    47.79s  agent 발화 끝
+    48.21s  user  발화 시작: 트러플 크림 파스타… 맛있겠다. 그럼 혹시 내일 날씨는 어때?
+    52.15s  <ret> 발화 (turn12 첫 프레임)
+    52.22s  agent 발화 시작: <ret> 내일 강남 지역의 날씨는 섭씨 이십팔 점 삼도이고, 습도는 칠십이퍼센트, 바람은 시속 팔 점 이킬
+    52.34s  user  발화 끝
+    52.83s  ⚡SPAN 주입 [d'=0.68s / d_lead=8.43s]: (tool result) 28.3°C, humidity 72%, wind 8.2 km/h
+    55.69s  user  발화 시작: 어.
+    56.08s  user  발화 끝
+    60.65s  agent 발화 끝
+    60.89s  user  발화 시작: 덥겠네. 아, 그리고 다음 주 금요일에 부산 갈 건데, 부산역 근처에 괜찮은 호텔 좀 알아봐 줄 수 있어?
+    67.21s  <ret> 발화 (turn15 첫 프레임)
+    67.77s  agent 발화 시작: <ret> 부산역 근처 호텔 라피스는 어떠세요? 평점은 사 점 이점이고, 일박에 십이만 원 정도 합니다.
+    67.90s  user  발화 끝
+    68.30s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.46s]: (tool result) 부산역 1번출구, Hotel Lapis (4.2 stars), ₩120,000/night
+    75.23s  agent 발화 끝
+    75.38s  user  발화 시작: 음… 가격 괜찮네. 그럼 거기 방 하나 예약 좀 해줘. 다음 주 금요일부터 토요일까지.
+    80.33s  user  발화 끝
+    80.34s  <ret> 발화 (turn17 첫 프레임)
+    80.34s  agent 발화 시작: <ret> 네, 호텔 라피스 부산역점에 다음 주 금요일부터 토요일까지 방 예약을 완료했습니다. 예약 번호는 
+    80.94s  ⚡SPAN 주입 [d'=0.60s / d_lead=10.75s]: (tool result) Hotel Lapis, Busan Station, 2026-07-31, 2026-08-01, RES4
+    83.93s  user  발화 시작: 응.
+    84.24s  user  발화 끝
+    91.09s  user  발화 시작: 아, 정말 고마워. 덕분에 여행 준비가 훨씬 편해졌네.
+    91.09s  agent 발화 끝
+    94.82s  agent 발화 시작: 천만에요. 언제든 필요하시면 말씀해주세요. 즐거운 여행 되세요!
+    94.83s  user  발화 끝
+   100.42s  agent 발화 끝

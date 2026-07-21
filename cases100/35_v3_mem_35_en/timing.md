@@ -4,130 +4,114 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Jordan",
+#     "name": "Freya",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "dislike",
-#       "text": "User can't stand durian."
+#       "date": "2026-06-09",
+#       "category": "allergy",
+#       "text": "User is allergic to latex."
 #     },
 #     {
-#       "date": "2026-05-25",
-#       "category": "savings",
-#       "text": "User is saving for a new car."
+#       "date": "2026-05-09",
+#       "category": "anniversary",
+#       "text": "User's anniversary is April 24."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "home",
-#       "text": "User's home address is 594 Juniper Lane."
+#       "date": "2026-04-18",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a cold brew."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "phone",
-#       "text": "User uses an iPhone 15."
+#       "date": "2026-03-07",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Minjun."
+#       "date": "2026-02-20",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Sofia."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 22°C."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Comparing health insurance",
+#       "date": "2026-04-13",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-25",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2025-12-24",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-11",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Bru, thanks. I’m looking for a  | S2 Alexandria… that's a bit far. Is t | S3 Perfect. I was thinking about gett | S4 Wonderful. That seals it. Thanks, 
+# EXAMINER(FDB-v2) 단계: S1 I'm alright, thanks. I'm trying to | S2 Oh, that's right! I'd forgotten I  | S3 Yes, Canada is perfect. Somewhere  | S4 …Actually, before you do that, are
 
-     0.00s  agent 발화 시작: Hi Jordan, I'm Bru. It's lovely to connect with you. I'm a w
-     2.07s  user  발화 시작: Yeah, totally.
-     3.35s  user  발화 끝
-     6.91s  user  발화 시작: Hi Bru, thanks. I’m looking for a quiet café to work from to
-     6.94s  agent 발화 끝
-    11.09s  agent 발화 시작: Uh-huh.
-    11.58s  agent 발화 끝
-    12.70s  user  발화 끝
-    12.77s  agent 발화 시작: Do you have any preferences for the type of coffee or atmosp
-    14.07s  user  발화 시작: Yeah.
-    14.71s  user  발화 끝
-    16.98s  agent 발화 끝
-    17.73s  user  발화 시작: Hmm, not really. Just somewhere not too crowded.
-    19.83s  <ret> 발화 (turn7 첫 프레임)
-    21.32s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.11s]: (tool result) The Grounds of Alexandria: 4.5 stars, known for its calm
-    21.38s  agent 발화 시작: <ret> The Grounds of Alexandria seems ideal – it’s known for
-    21.39s  user  발화 끝
-    27.49s  agent 발화 끝
-    27.53s  user  발화 시작: Alexandria… that's a bit far. Is there anything closer to th
-    29.12s  agent 발화 시작: Yeah, totally.
-    30.78s  agent 발화 끝
-    31.13s  <ret> 발화 (turn10 첫 프레임)
-    32.71s  ⚡SPAN 주입 [d'=1.58s / d_lead=6.49s]: (tool result) Edition Coffee Roasters: 4.6 stars, minimalist décor, ex
-    32.77s  agent 발화 시작: <ret> Edition Coffee Roasters in the CBD has minimalist déco
-    32.81s  user  발화 끝
-    37.51s  user  발화 시작: Mhm.
-    38.09s  user  발화 끝
-    39.26s  agent 발화 끝
-    39.44s  user  발화 시작: That sounds good. Do they have Wi-Fi?
-    41.56s  <ret> 발화 (turn13 첫 프레임)
-    41.79s  user  발화 끝
-    41.87s  agent 발화 시작: <ret> Yes, they do! Wi-Fi is available, and most tables have
-    42.93s  ⚡SPAN 주입 [d'=1.37s / d_lead=8.20s]: (tool result) Edition Coffee Roasters: Wi-Fi available, power outlets 
-    50.07s  agent 발화 끝
-    50.87s  user  발화 시작: Perfect. I was thinking about getting some work done this we
-    54.71s  user  발화 끝
-    54.93s  agent 발화 시작: They also offer a variety of pastries and light meals if you
-    58.74s  user  발화 시작: … Actually, do they have oat milk? I'm lactose intolerant.
-    59.37s  agent 발화 끝
-    61.91s  <ret> 발화 (turn17 첫 프레임)
-    62.21s  agent 발화 시작: <ret> [curious] That’s a great question, Jordan. Let me quic
-    62.25s  user  발화 끝
-    63.05s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.67s]: (tool result) Edition Coffee Roasters: Oat milk available.
-    68.81s  agent 발화 시작: Yes, they do have oat milk available! You can enjoy your cof
-    68.88s  agent 발화 끝
-    74.19s  agent 발화 끝
-    75.06s  user  발화 시작: Wonderful. That seals it. Thanks, Bru.
-    78.01s  user  발화 끝
-    78.12s  agent 발화 시작: [happy] You're very welcome, Jordan. I'm glad I could help y
-    84.10s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Freya, I'm Ther. It's lovely to connect with you today. H
+     5.08s  agent 발화 끝
+     5.74s  user  발화 시작: I'm alright, thanks. I'm trying to plan a relaxing weekend g
+     9.70s  user  발화 끝
+     9.89s  agent 발화 시작: A relaxing weekend sounds wonderful! Do you have any prefere
+    12.02s  user  발화 시작: Yeah.
+    12.37s  user  발화 끝
+    15.86s  agent 발화 끝
+    16.33s  user  발화 시작: Somewhere with good food, maybe near the water. I was thinki
+    21.42s  <ret> 발화 (turn5 첫 프레임)
+    21.59s  user  발화 끝
+    21.67s  agent 발화 시작: <ret> When planning your travel, I recall you prefer a windo
+    22.71s  ⚡SPAN 주입 [d'=1.29s / d_lead=5.94s]: User prefers a window seat when traveling.
+    27.61s  agent 발화 끝
+    28.82s  user  발화 시작: Oh, that's right! I'd forgotten I mentioned that.
+    30.14s  agent 발화 시작: Yeah.
+    30.89s  agent 발화 끝
+    31.73s  user  발화 끝
+    31.86s  agent 발화 시작: [happy] I’m glad I remembered! Now, about that spa weekend, 
+    38.14s  user  발화 시작: Yes, Canada is perfect. Somewhere not too far from Toronto, 
+    38.52s  agent 발화 끝
+    43.09s  user  발화 끝
+    43.27s  agent 발화 시작: Okay, staying relatively close to Toronto. Let me see what I
+    48.34s  user  발화 시작: …Actually, before you do that, are there any places that als
+    48.99s  agent 발화 끝
+    52.10s  agent 발화 시작: Okay.
+    52.77s  agent 발화 끝
+    54.31s  user  발화 끝
+    54.64s  <ret> 발화 (turn13 첫 프레임)
+    54.64s  agent 발화 시작: <ret> For a spa with nearby hiking, Toronto has several opti
+    55.87s  ⚡SPAN 주입 [d'=1.23s / d_lead=11.81s]: {"location": "Toronto", "cuisine": "spa", "amenities": "hiking trails"
+    66.45s  agent 발화 끝

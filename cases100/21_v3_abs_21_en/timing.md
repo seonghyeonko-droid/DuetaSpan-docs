@@ -4,48 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "Jordan",
+#     "name": "Casey",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-25",
-#       "category": "skill",
-#       "text": "User is a complete beginner at calligraphy."
+#       "date": "2026-04-17",
+#       "category": "medication",
+#       "text": "User takes antihistamines in spring."
 #     },
 #     {
-#       "date": "2026-04-18",
-#       "category": "car",
-#       "text": "User drives a 2019 Hyundai Tucson."
+#       "date": "2026-02-22",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O+."
 #     },
 #     {
-#       "date": "2026-02-28",
+#       "date": "2026-02-16",
+#       "category": "dislike",
+#       "text": "User can't stand liver."
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "category": "employer",
+#       "text": "User works at a fintech startup."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
+#     },
+#     {
+#       "date": "2025-12-09",
 #       "category": "allergy",
-#       "text": "User is allergic to bee stings."
+#       "text": "User is allergic to tree nuts."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "airline",
-#       "text": "User usually flies with Air France."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
+#       "date": "2025-12-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-06-11",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-06",
 #       "title": "Meal-prep planning",
 #       "bullets": [
 #         "wants high-protein lunches under 600 calories",
@@ -53,61 +79,39 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "title": "Selling a used bike",
+#       "date": "2026-01-08",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "title": "Renovating the bathroom",
-#       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What color do all of the former co | S2 Yeah, I guess so. Can you tell me  | S3 That makes sense. My sister and I  | S4 That's good advice. Thanks.
+# EXAMINER(FDB-v2) 단계: S1 How many species of insects are kn | S2 Oh, really? That's surprising. | S3 That’s amazing. Do you think it's  | S4 That makes sense. Thanks, Bin.
 
-     0.00s  user  발화 시작: What color do all of the former colonies of Spain have on th
-     2.47s  agent 발화 시작: Yeah.
-     2.96s  agent 발화 끝
-     3.74s  <ret> 발화 (turn2 첫 프레임)
-     4.04s  agent 발화 시작: <ret> Unfortunately, there isn't a single color shared by al
-     4.21s  user  발화 끝
-     4.76s  ⚡SPAN 주입 [d'=1.02s / d_lead=9.83s]: (no information found)
-     9.19s  user  발화 시작: Yeah.
-     9.82s  user  발화 끝
-    13.87s  agent 발화 끝
-    14.36s  user  발화 시작: Oh. Hmm.
-    15.50s  user  발화 끝
-    15.60s  agent 발화 시작: It's okay to be a little disappointed when a fascinating que
-    24.27s  agent 발화 끝
-    24.93s  user  발화 시작: Yeah, I guess so. Can you tell me about active listening? I’
-    30.36s  agent 발화 시작: Active listening is about truly hearing what someone says, n
-    30.54s  user  발화 끝
-    37.38s  user  발화 시작: Yeah, yeah.
-    38.47s  user  발화 끝
-    41.47s  agent 발화 시작: It’s about creating a safe space for the other person to sha
-    41.63s  agent 발화 끝
-    53.02s  agent 발화 끝
-    53.17s  user  발화 시작: That makes sense. My sister and I keep arguing.
-    54.25s  agent 발화 시작: Yeah.
-    54.88s  agent 발화 끝
-    56.91s  user  발화 끝
-    57.31s  agent 발화 시작: Oh dear. Conflict with family can be so draining. [sigh] Wou
-    64.72s  agent 발화 끝
-    64.90s  user  발화 시작: Yes, please.
-    66.03s  <ret> 발화 (turn14 첫 프레임)
-    66.26s  agent 발화 시작: <ret> One way to approach that is setting healthy boundaries
-    66.27s  user  발화 끝
-    67.31s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.73s]: Setting healthy boundaries involves clearly communicating your limits 
-    70.83s  user  발화 시작: Yeah.
-    71.55s  user  발화 끝
-    78.00s  agent 발화 끝
-    78.14s  user  발화 시작: That's good advice. Thanks.
-    80.06s  user  발화 끝
+     0.00s  user  발화 시작: How many species of insects are known to date?
+     2.98s  user  발화 끝
+     3.15s  agent 발화 시작: That’s a tough one! Scientists haven’t actually pinpointed a
+     6.06s  user  발화 시작: Yeah.
+     6.65s  user  발화 끝
+     8.74s  user  발화 시작: Oh, really? That's surprising.
+     8.86s  agent 발화 끝
+    10.67s  user  발화 끝
+    11.13s  agent 발화 시작: [curious] It is! Estimates vary widely, but it's thought to 
+    14.23s  user  발화 시작: Yeah.
+    14.67s  user  발화 끝
+    17.59s  agent 발화 시작: And they’re still discovering thousands more every year! It’
+    17.69s  agent 발화 끝
+    21.39s  user  발화 시작: Oh.
+    21.79s  user  발화 끝
+    23.07s  agent 발화 끝
+    23.28s  user  발화 시작: That’s amazing. Do you think it's hard to stay motivated whe
+    28.37s  user  발화 끝
+    28.83s  agent 발화 시작: [happy] Absolutely! Facing something vast and undefined can 
+    37.54s  user  발화 시작: Yeah.
+    37.98s  user  발화 끝
+    40.76s  user  발화 시작: That makes sense. Thanks, Bin.
+    40.84s  agent 발화 끝
+    43.01s  user  발화 끝

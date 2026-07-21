@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Manon",
+#     "name": "Emma",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -13,108 +13,107 @@
 #     },
 #     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "60s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "phone",
-#       "text": "User uses an iPhone 15."
+#       "date": "2026-05-12",
+#       "category": "work",
+#       "text": "User works as a barista."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "child",
-#       "text": "User has a child named Noah, age 5."
+#       "date": "2026-03-20",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
 #     },
 #     {
-#       "date": "2026-04-16",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB+."
+#       "date": "2026-03-19",
+#       "category": "anniversary",
+#       "text": "User's anniversary is May 5."
 #     },
 #     {
-#       "date": "2026-03-24",
-#       "category": "employer",
-#       "text": "User works at a biotech lab."
+#       "date": "2026-02-19",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
 #     },
 #     {
-#       "date": "2026-03-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-02-12",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Lucas."
-#     },
-#     {
-#       "date": "2026-02-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cold brew."
+#       "date": "2026-02-17",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Ava."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
-#       "title": "Switching phone plans",
-#       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-26",
-#       "title": "Learning to invest",
-#       "bullets": [
-#         "asked about index funds vs individual stocks",
-#         "wants to start with 500k won a month"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-07",
+#       "date": "2026-03-13",
 #       "title": "Booking a Japan trip",
 #       "bullets": [
 #         "5 nights in Kyoto and Osaka in October",
 #         "wants a JR Pass and a ryokan for one night"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Arun, do you know when Niles… | S2 …and Daphne finally get together o | S3 Wow, season seven… that feels like | S4 That’s a good analogy, actually. I
+# EXAMINER(FDB-v2) 단계: S1 Do you know when the Big Mac was f | S2 Okay, that makes sense. Any tips f | S3 Single-tasking… easier said than d | S4 I've also been meaning to book a h
 
-     0.00s  user  발화 시작: Hey Arun, do you know when Niles…
-     3.56s  user  발화 끝
-     5.00s  user  발화 시작: …and Daphne finally get together on Frasier? I've been tryin
-     9.95s  <ret> 발화 (turn2 첫 프레임)
-    10.04s  user  발화 끝
-    10.15s  agent 발화 시작: <ret> They finally get together in the final episode of seas
-    10.55s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.88s]: Niles and Daphne consummate their relationship in the final episode of
-    12.72s  user  발화 시작: Yeah.
-    13.54s  user  발화 끝
-    18.03s  agent 발화 끝
-    19.93s  user  발화 시작: Wow, season seven… that feels like a long time coming.
-    21.83s  agent 발화 시작: Yeah.
-    22.27s  agent 발화 끝
-    24.51s  <ret> 발화 (turn6 첫 프레임)
-    24.89s  agent 발화 시작: <ret> [happy] It really is! Their will-they-won’t-they dynam
-    24.93s  user  발화 끝
-    25.65s  ⚡SPAN 주입(IRRELEVANT) [d'=1.15s / d_lead=7.60s]: The current price of titanium futures is $2,850 per metric ton on the 
-    32.39s  agent 발화 시작: They play off each other brilliantly, don’t they?
-    32.49s  agent 발화 끝
-    34.31s  user  발화 시작: Yeah.
-    35.13s  user  발화 끝
-    35.27s  agent 발화 시작: And honestly, their journey reminds me a lot of how studying
-    35.30s  agent 발화 끝
-    43.41s  agent 발화 시작: It’s a bit like spaced repetition, really.
-    43.61s  agent 발화 끝
-    45.05s  user  발화 시작: Right.
-    45.89s  user  발화 시작: That’s a good analogy, actually. I’m struggling with my hist
-    46.00s  agent 발화 끝
-    46.02s  user  발화 끝
-    50.75s  user  발화 끝
+     0.00s  user  발화 시작: Do you know when the Big Mac was first sold?
+     2.78s  <ret> 발화 (turn1 첫 프레임)
+     3.05s  user  발화 끝
+     3.38s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.55s]: The Big Mac was first sold in 1967 at a McDonald’s restaurant in Union
+     3.44s  agent 발화 시작: <ret> The Big Mac first appeared in 1967, at a McDonald’s in
+    10.98s  agent 발화 끝
+    11.29s  user  발화 시작: Wow, that's interesting. What about prioritizing tasks? I fe
+    13.53s  agent 발화 시작: Yeah.
+    14.15s  agent 발화 끝
+    16.52s  agent 발화 시작: Feeling overwhelmed is so common. We can look at urgent vers
+    16.56s  user  발화 끝
+    22.53s  user  발화 시작: How do I tell the difference between urgent and important?
+    23.08s  agent 발화 끝
+    24.70s  agent 발화 시작: Right.
+    24.91s  <ret> 발화 (turn7 첫 프레임)
+    25.38s  agent 발화 끝
+    26.06s  ⚡SPAN 주입 [d'=1.15s / d_lead=8.85s]: Urgent tasks demand immediate attention, while important tasks contrib
+    26.12s  agent 발화 시작: <ret> Urgent tasks grab your attention *now*, but important 
+    26.23s  user  발화 끝
+    34.66s  <ret> 발화 (turn8 첫 프레임)
+    34.97s  agent 발화 끝
+    34.97s  agent 발화 시작: <ret> Sometimes we get caught in the "now" and forget what’s
+    36.29s  ⚡SPAN 주입(IRRELEVANT) [d'=1.63s / d_lead=6.54s]: Seoul (-37.5665, 126.9780): Gyeongbokgung Palace (386 m), Bukchon Hano
+    37.38s  user  발화 시작: Right.
+    37.77s  user  발화 끝
+    41.39s  user  발화 시작: Okay, that makes sense. Any tips for actually *doing* that?
+    41.51s  agent 발화 끝
+    45.05s  user  발화 끝
+    45.06s  agent 발화 시작: Batching similar tasks can be helpful. Grouping emails, call
+    51.92s  agent 발화 끝
+    52.05s  user  발화 시작: Batching? Like, doing all my emails at once?
+    55.33s  user  발화 끝
+    55.81s  agent 발화 시작: Exactly! Instead of checking emails constantly, dedicate a s
+    62.74s  user  발화 시작: Single-tasking… easier said than done, I think.
+    63.18s  agent 발화 끝
+    66.25s  user  발화 끝
+    66.25s  agent 발화 시작: [sigh] It is a skill to cultivate. It's about intentionally 
+    74.07s  user  발화 시작: It's hard to resist distractions.
+    74.16s  agent 발화 끝
+    76.32s  user  발화 끝
+    76.82s  agent 발화 시작: Distractions are inevitable. Acknowledge them without judgme
+    83.19s  agent 발화 끝
+    83.69s  user  발화 시작: I've also been meaning to book a hotel in Busan.
+    86.71s  <ret> 발화 (turn19 첫 프레임)
+    86.85s  agent 발화 시작: <ret> For a luxurious stay in Busan, the Park Hyatt Busan is
+    86.92s  user  발화 끝
+    87.41s  ⚡SPAN 주입 [d'=0.70s / d_lead=9.54s]: (tool result) {"results": [{"name": "Park Hyatt Busan", "address": "31
+    96.33s  user  발화 시작: That sounds lovely. Thank you, Buus.
+    96.39s  agent 발화 끝
+    98.35s  user  발화 끝
+    98.50s  agent 발화 시작: You’re very welcome. Remember, small, focused steps create l
+   104.80s  agent 발화 끝

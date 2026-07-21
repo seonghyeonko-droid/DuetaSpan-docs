@@ -4,112 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "서빈",
+#     "name": "은별",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
-#       "category": "employer",
-#       "text": "User works at a research institute."
+#       "date": "2026-06-24",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-05-25",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is bibimbap."
+#     },
+#     {
+#       "date": "2026-05-21",
+#       "category": "partner",
+#       "text": "User's partner is named Elena."
+#     },
+#     {
+#       "date": "2026-05-07",
+#       "category": "wake",
+#       "text": "User usually wakes up around 7:30am."
+#     },
+#     {
+#       "date": "2026-04-03",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 22°C."
+#     },
+#     {
+#       "date": "2026-02-16",
+#       "category": "work",
+#       "text": "User works as a dentist."
+#     },
+#     {
+#       "date": "2026-02-02",
 #       "category": "coffee",
 #       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "music",
-#       "text": "User likes listening to a lo-fi jazz playlist."
-#     },
-#     {
-#       "date": "2026-02-28",
-#       "category": "airline",
-#       "text": "User usually flies with Singapore Airlines."
-#     },
-#     {
-#       "date": "2026-02-25",
+#       "date": "2025-12-14",
 #       "category": "commute",
-#       "text": "User drives about 40 minutes each way."
-#     },
-#     {
-#       "date": "2026-02-23",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is green curry."
-#     },
-#     {
-#       "date": "2026-01-28",
-#       "category": "schedule",
-#       "text": "User has a 9-to-6 weekday schedule."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "work",
-#       "text": "User works as a midwife."
+#       "text": "User takes the subway to work."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
-#       "title": "Planning a dinner party",
+#       "date": "2026-05-26",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-03-27",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-15",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "asked for an early-morning slot next Tuesday",
-#         "prefers Dr. Han at Bright Smile Clinic"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그런데, 제가 뭘 어떻게 해야 할지 막막해서요. | S2 … 사실, 제가 전에 하던 일과는 완전히 다른 분야라서 자신감 | S3 그게 제일 큰 문제예요. 뭘 어떻게 시작해야 할지 감이 안 와 | S4 작은 성공 경험… 구체적으로 뭘 해야 할까요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 제가 뭘 어떻게 해야 할지 알려주는 건가요? | S2 작은 거요? 구체적으로 뭘 하라는 거예요? | S3 그런데 스트레칭 말고 다른 방법은 없을까요? 저는 운동하는 게 | S4 부산에서 요가 수업을 들을 만한 곳이 있을까요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 서빈님. 저는 멘이라고 해요. 새로운 직장에서 잘 적응하실 수 있도록 돕는 웰니스 코치랍니다.
-     2.88s  user  발화 시작: 네.
-     3.51s  user  발화 끝
-     6.35s  agent 발화 끝
-     6.49s  user  발화 시작: 그런데, 제가 뭘 어떻게 해야 할지 막막해서요.
-    11.29s  agent 발화 시작: 새로운 시작이 불안하신 건 당연해요. 많은 분들이 처음엔 비슷한 감정을 느끼신답니다. 혹시 어떤 점이 가장 
-    11.35s  user  발화 끝
-    18.70s  agent 발화 끝
-    19.66s  user  발화 시작: … 사실, 제가 전에 하던 일과는 완전히 다른 분야라서 자신감이 없어요.
-    26.70s  agent 발화 시작: 아, 이전 경력과 다른 분야라니, 그럴 수 있죠—
-    26.85s  user  발화 끝
-    29.07s  user  발화 시작: 그게 제일 큰 문제예요. 뭘 어떻게 시작해야 할지 감이 안 와요.
-    29.80s  agent 발화 끝
-    35.84s  user  발화 끝
-    36.03s  agent 발화 시작: 새로운 분야에 대한 막막함은 충분히 이해가 가요. 마치 처음 배우는 악기를 다루는 것과 비슷하죠. 작은 성공
-    39.84s  user  발화 시작: 네.
-    40.57s  user  발화 끝
-    45.35s  agent 발화 끝
-    45.43s  user  발화 시작: 작은 성공 경험… 구체적으로 뭘 해야 할까요?
-    50.62s  user  발화 끝
+     0.00s  agent 발화 시작: [happy] 안녕하세요, 은별님. 저는 여러분의 건강한 습관 만들기를 돕는 웰니스 코치, 사이아입니다.
+     3.99s  user  발화 시작: 그렇죠.
+     4.44s  user  발화 끝
+     6.06s  agent 발화 끝
+     6.48s  user  발화 시작: 혹시 제가 뭘 어떻게 해야 할지 알려주는 건가요?
+     9.47s  user  발화 끝
+     9.69s  agent 발화 시작: [curious] 맞아요. 은별님께 맞는 루틴을 함께 만들어가요. 어떤 점이 가장 고민이신가요?
+    15.33s  agent 발화 끝
+    15.53s  user  발화 시작: 음… 사실 요즘 너무 피곤하고, 뭘 시작해야 할지 엄두가 안 나요.
+    20.75s  user  발화 끝
+    21.00s  agent 발화 시작: [sigh] 피로감을 느끼시는군요. 충분히 이해가 돼요. 작은 것부터 시작해보는 건 어떨까요?
+    25.83s  user  발화 시작: 그렇죠.
+    26.32s  user  발화 끝
+    27.67s  agent 발화 끝
+    28.26s  user  발화 시작: 작은 거요? 구체적으로 뭘 하라는 거예요?
+    31.40s  user  발화 끝
+    31.53s  agent 발화 시작: [happy] 예를 들어, 매일 아침 스트레칭을 오분만 해보는 거예요. 몸을 깨우는 데 도움이 될 거예요.
+    33.72s  user  발화 시작: 아.
+    34.35s  user  발화 끝
+    37.41s  agent 발화 끝
+    38.07s  user  발화 시작: 스트레칭… 해본 적은 거의 없는데, 괜찮을까요?
+    41.49s  user  발화 끝
+    41.99s  agent 발화 시작: [curious] 물론이죠. 처음엔 조금 힘들 수 있지만, 꾸준히 하면 몸이 훨씬 가벼워질 거예요.
+    47.41s  agent 발화 끝
+    47.63s  user  발화 시작: 그런데 스트레칭 말고 다른 방법은 없을까요? 저는 운동하는 게 별로…
+    50.81s  agent 발화 시작: 네.
+    51.36s  agent 발화 끝
+    52.51s  user  발화 끝
+    52.54s  agent 발화 시작: [happy] 운동이 싫으시다면, 명상이나 요가도 좋은 방법이에요. 마음을 차분하게 해주고 스트레스 해소에도
+    55.57s  user  발화 시작: 음.
+    55.93s  user  발화 끝
+    59.58s  agent 발화 끝
+    60.53s  user  발화 시작: 명상은 좀 어려울 것 같은데, 요가는 해볼 만 하겠네요.
+    64.99s  user  발화 끝
+    65.17s  agent 발화 시작: [happy] 좋아요. 요가 동작은 유튜브나 앱을 통해 쉽게 배울 수 있어요. 처음엔 쉬운 동작부터 시작하세
+    71.74s  agent 발화 끝
+    72.22s  user  발화 시작: 부산에서 요가 수업을 들을 만한 곳이 있을까요?
+    75.24s  user  발화 끝
+    75.30s  agent 발화 시작: 부산에는 요가원을 찾으신다면, Yoga On The Beach가 일 점 이킬로미터 거리에 있고, Hot Yo
+    85.04s  agent 발화 끝
+    86.18s  user  발화 시작: Yoga On The Beach가 더 가까우니, 거기로 가봐야겠네요. 감사합니다, 사이아님.
+    91.46s  user  발화 끝

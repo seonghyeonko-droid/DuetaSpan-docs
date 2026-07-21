@@ -4,317 +4,250 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_45",
-#     "name": "주서",
+#     "name": "윤경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-29",
-#       "category": "employer",
-#       "text": "User works at a regional bank."
+#       "date": "2026-05-27",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Tobias."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB-."
+#       "date": "2026-05-08",
+#       "category": "medication",
+#       "text": "User takes insulin."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Jordan in November."
+#       "date": "2026-04-10",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Sofia."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "learning",
-#       "text": "User is studying Japanese."
+#       "date": "2026-02-11",
+#       "category": "allergy",
+#       "text": "User is allergic to gluten."
 #     },
 #     {
 #       "date": "2026-01-25",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is butter chicken."
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-01-20",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "medication",
-#       "text": "User takes antihistamines in spring."
+#       "date": "2025-12-28",
+#       "category": "show",
+#       "text": "User is currently watching a nature documentary series."
 #     },
 #     {
 #       "date": "2025-12-21",
-#       "category": "music",
-#       "text": "User likes listening to classical piano."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cold brew."
+#       "category": "dislike",
+#       "text": "User can't stand licorice."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-30",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "title": "Choosing a preschool",
+#       "date": "2026-03-14",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-11",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-29",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "title": "Refinancing a mortgage",
-#       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 다음 주 화요일에 병원 예약이 있어요. | S2 혹시 서울에서 분위기 좋은 카페 아세요? | S3 아, 병원 예약 시간이 얼마 남지 않았네요. | S4 휴식을 취하고 싶지만, 시간이 없어요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 차 수리 맡기러 가는데, 시월 십오일 오후 다섯시 | S2 좋아, 그럼 송정 해수욕장과 다다 카페를 기억해 둬야겠다. | S3 요즘 날씨가 너무 춥던데, 부산 날씨는 어때? | S4 건강에 좋은 간식… 뭐가 좋을까?
 
-     0.00s  user  발화 시작: 다음 주 화요일에 병원 예약이 있어요.
-     3.09s  agent 발화 시작: 네, 기억해 둘게요.
-     3.24s  user  발화 끝
-     4.80s  user  발화 시작: 그리고 그날 아침 여덟시 십오분에 진료를 받기로 했어요.
-     4.84s  agent 발화 끝
-     9.01s  user  발화 끝
-     9.48s  agent 발화 시작: 네, 알겠습니다. 여덟시 십오분으로 기록해 두었어요.
-    14.16s  agent 발화 끝
-    16.51s  user  발화 시작: 진료비는 십육만 오천원 정도 들 것 같아요.
-    20.12s  user  발화 끝
-    20.23s  agent 발화 시작: 네, 십육만 오천원으로 기억해 두겠습니다.
-    23.60s  agent 발화 끝
-    23.68s  user  발화 시작: 아니요, 괜찮아요. 그냥 삼총사 영화에 대해 얘기하고 싶었어요.
-    29.56s  agent 발화 시작: 삼총사 영화요? 어떤 점이 궁금하신가요?
-    29.61s  user  발화 끝
-    32.93s  agent 발화 끝
-    32.96s  user  발화 시작: 촬영 중에 사망한 배우가 있었나요?
-    35.85s  <ret> 발화 (turn9 첫 프레임)
-    36.08s  agent 발화 시작: <ret> 촬영 중에 안타깝게도 배우 한 분이 돌아가셨어요. 바로 로이 미첼 키니어 님입니다.
-    36.20s  user  발화 끝
-    37.04s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.71s]: Roy Mitchell Kinnear, a British character actor, died on September 30,
-    42.32s  user  발화 시작: 아, 정말 안타깝네요. 그 배우는 어떤 영화에 출연했었나요?
-    42.79s  agent 발화 끝
-    48.19s  agent 발화 시작: 로이 미첼 키니어 님은 여러 영화에 출연했는데, 코미디 영화에서 주로 활동하셨다고 해요.
-    48.29s  user  발화 끝
-    51.31s  user  발화 시작: 네.
-    51.89s  user  발화 끝
-    53.98s  agent 발화 끝
-    55.93s  user  발화 시작: 코미디 영화요? 어떤 영화가 유명한가요?
-    59.45s  <ret> 발화 (turn14 첫 프레임)
-    59.85s  agent 발화 시작: <ret> 로이 미첼 키니어 님은 *헬프!*, *핑크 팬더*, 그리고 *찰리와 초콜릿 공장*에서 특히 유명한
-    60.05s  user  발화 끝
-    60.72s  ⚡SPAN 주입 [d'=1.27s / d_lead=8.06s]: Roy Kinnear is best known for his roles in films such as *Help!*, *The
-    67.91s  agent 발화 끝
-    68.05s  user  발화 시작: 아, *찰리와 초콜릿 공장*! 그 영화 정말 재미있게 봤어요.
-    74.40s  user  발화 끝
-    74.43s  agent 발화 시작: 저도 그 영화 정말 좋아해요. [happy] 상상력이 풍부한 영화죠.
-    79.05s  agent 발화 끝
-    80.14s  user  발화 시작: 맞아요. 요즘 볼만한 영화 없을까요?
-    84.45s  user  발화 끝
-    84.59s  agent 발화 시작: 어떤 장르를 좋아하시나요?
-    86.65s  agent 발화 끝
-    86.91s  user  발화 시작: 음… 코미디나 로맨틱 코미디 정도요.
-    90.57s  <ret> 발화 (turn20 첫 프레임)
-    90.60s  agent 발화 시작: <ret> 현재 서울에서 상영 중인 영화는 픽사의 애니메이션 *엘리멘탈*과 *미션 임파서블: 데드 레코닝 P
-    90.75s  user  발화 끝
-    91.58s  ⚡SPAN 주입 [d'=1.01s / d_lead=8.57s]: Currently showing in Seoul are "Elemental", a Pixar animated film, and
-    99.11s  user  발화 시작: *엘리멘탈*은 평점이 좋은가요?
-    99.17s  agent 발화 끝
-   101.69s  user  발화 끝
-   101.92s  agent 발화 시작: 네, 평점이 상당히 좋은 편이에요.
-   104.31s  agent 발화 끝
-   104.56s  user  발화 시작: 한번 볼까 생각 중이에요.
-   107.06s  agent 발화 시작: 좋은 선택이에요. [happy] 가족과 함께 보기에 좋을 것 같아요.
-   107.15s  user  발화 끝
-   110.35s  user  발화 시작: 음.
-   110.99s  user  발화 끝
-   111.41s  agent 발화 끝
-   111.59s  user  발화 시작: 혹시 서울에서 분위기 좋은 카페 아세요?
-   114.76s  <ret> 발화 (turn27 첫 프레임)
-   114.97s  user  발화 끝
-   115.24s  agent 발화 시작: <ret> 서울에는 분위기 좋은 카페가 많은데요, 그중에서도 카페 어니언 각은 전통적인 한국 건축 양식과 맛
-   115.98s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.92s]: Cafe Onion Anguk is a popular cafe in Seoul, known for its traditional
-   125.12s  user  발화 시작: 카페 어니언 각이요? 어디에 있어요?
-   125.16s  agent 발화 끝
-   128.96s  user  발화 끝
-   129.10s  agent 발화 시작: 종로구 낙원동에 위치해 있어요.
-   131.31s  user  발화 시작: 아, 가본 적 있어요. 좀 멀리 떨어진 곳에 있잖아요.
-   131.36s  agent 발화 끝
-   136.83s  agent 발화 시작: 네, 조금 외곽에 있는 편이죠.
-   136.86s  user  발화 끝
-   138.91s  agent 발화 끝
-   140.34s  user  발화 시작: 그럼 좀 더 가까운 곳에 없을까요?
-   143.68s  <ret> 발화 (turn33 첫 프레임)
-   143.76s  user  발화 끝
-   143.81s  agent 발화 시작: <ret> 종로에 있는 그린 카페도 분위기가 좋고 다양한 차를 즐길 수 있어요.
-   144.93s  ⚡SPAN 주입 [d'=1.24s / d_lead=4.72s]: Greem Cafe in Jongno is a popular cafe known for its relaxing atmosphe
-   145.42s  user  발화 시작: 네.
-   146.24s  user  발화 끝
-   148.53s  agent 발화 끝
-   149.73s  user  발화 시작: 그린 카페요? 한번 가봐야겠네요.
-   153.56s  user  발화 끝
-   153.72s  agent 발화 시작: 네, 한번 방문해 보세요. [happy] 마음에 드실 거예요.
-   157.60s  agent 발화 끝
-   159.16s  user  발화 시작: 요즘 날씨가 너무 덥네요.
-   161.91s  agent 발화 시작: 네, 정말 덥네요. 오늘 서울의 최고 기온은 삼십이도까지 올라갈 거라고 합니다.
-   161.99s  user  발화 끝
-   166.15s  user  발화 시작: 예.
-   166.78s  user  발화 끝
-   167.64s  agent 발화 끝
-   168.15s  user  발화 시작: 에어컨 없이는 살 수 없겠어요.
-   170.77s  agent 발화 시작: 정말 그렇죠. [sigh] 더위에 조심하세요.
-   170.93s  user  발화 끝
-   174.70s  agent 발화 끝
-   176.15s  user  발화 시작: 맞아요. 혹시 이번 주말에 갈만한 곳 없을까요?
-   180.50s  <ret> 발화 (turn43 첫 프레임)
-   180.93s  agent 발화 시작: <ret> 이번 주말에는 서울숲에 가보는 건 어떠세요? 성동구에 위치한 넓은 공원으로 산책로와 정원, 문화 
-   181.10s  user  발화 끝
-   181.63s  ⚡SPAN 주입 [d'=1.13s / d_lead=9.32s]: The Seoul Forest is a large park in Seongdong-gu, Seoul, offering walk
-   190.24s  agent 발화 끝
-   190.93s  user  발화 시작: 서울숲요? 거긴 한 번도 가본 적 없어요.
-   192.00s  🃏 CARD 주입 (2400f, 누적 45턴 요약, 121f): appointment: 다음 주 화요일; appointment time: 아침 여덟시 십오분; medical cost: 십육만 오천원; weekend plan: 
-   195.28s  user  발화 끝
-   195.41s  agent 발화 시작: 네, 한 번 가보시면 좋을 거예요.
-   197.39s  agent 발화 끝
-   197.54s  user  발화 시작: 거기 주차하기 어렵나요?
-   199.65s  agent 발화 시작: 네, 주차 공간이 부족할 수 있습니다. 대중교통을 이용하는 것이 편리할 것 같아요.
-   199.76s  user  발화 끝
-   203.07s  user  발화 시작: 음.
-   203.61s  user  발화 끝
-   205.11s  user  발화 시작: 알겠습니다. 대중교통을 이용해야겠네요.
-   205.21s  agent 발화 끝
-   209.38s  agent 발화 시작: 네, 그렇게 하시는 게 좋을 것 같아요.
-   209.46s  user  발화 끝
-   211.83s  agent 발화 끝
-   212.10s  user  발화 시작: 아, 병원 예약 시간이 얼마 남지 않았네요.
-   216.21s  agent 발화 시작: 네, 시간이 다 되어 갑니다.
-   216.26s  user  발화 끝
-   218.14s  agent 발화 끝
-   218.53s  user  발화 시작: 그날 아침에 택시를 타야 하는데, 괜찮을까요?
-   222.97s  user  발화 끝
-   223.03s  agent 발화 시작: 네, 택시를 타셔도 괜찮습니다. 다만, 출근 시간이라 교통 체증이 심할 수 있습니다.
-   229.47s  agent 발화 끝
-   229.73s  user  발화 시작: 아, 맞아요. 교통 체증 때문에 늦을 수도 있겠네요.
-   234.68s  user  발화 끝
-   235.14s  agent 발화 시작: 네, 조금 일찍 출발하시는 것이 좋겠습니다.
-   237.36s  user  발화 시작: 그렇죠.
-   238.47s  agent 발화 끝
-   238.56s  user  발화 끝
-   238.57s  user  발화 시작: 늦지 않도록 조심해야겠어요.
-   240.91s  agent 발화 시작: 네, 조심하세요.
-   241.06s  user  발화 끝
-   242.33s  agent 발화 끝
-   242.35s  user  발화 시작: 혹시… 제가 병원 예약한 시간이 몇 시였죠?
-   246.56s  user  발화 끝
-   246.59s  agent 발화 시작: 십일월 십일 오전 여덟시 십오분입니다.
-   249.77s  agent 발화 끝
-   249.96s  user  발화 시작: 아, 맞다. 기억이 안 났어요.
-   254.56s  agent 발화 시작: 네, 기억이 안 나실 수도 있죠.
-   254.68s  user  발화 끝
-   256.96s  agent 발화 끝
-   257.12s  user  발화 시작: 혹시… 진료비가 얼마였죠?
-   260.08s  agent 발화 시작: 십육만 오천원입니다.
-   260.08s  user  발화 끝
-   262.01s  agent 발화 끝
-   262.84s  user  발화 시작: 아, 네, 맞아요.
-   265.33s  user  발화 끝
-   265.58s  agent 발화 시작: 네, 기억해 두셔서 다행입니다.
-   267.98s  agent 발화 끝
-   268.55s  user  발화 시작: 다시 한번 확인해서 다행이에요.
-   271.50s  user  발화 끝
-   271.62s  agent 발화 시작: 네, 언제든지 다시 물어보세요.
-   273.69s  agent 발화 끝
-   273.86s  user  발화 시작: 요즘 스트레스가 너무 많아요.
-   276.44s  user  발화 끝
-   276.76s  agent 발화 시작: 힘든 일이 많으신가 봐요.
-   278.61s  agent 발화 끝
-   279.34s  user  발화 시작: 네, 회사 일이 너무 바빠서…
-   282.11s  user  발화 끝
-   282.21s  agent 발화 시작: 회사 일이 힘드시군요. 잠시 휴식을 취하는 것도 좋을 것 같아요.
-   287.72s  agent 발화 끝
-   287.85s  user  발화 시작: 휴식을 취하고 싶지만, 시간이 없어요.
-   291.86s  agent 발화 시작: 시간이 없으시군요. 그래도 틈틈이 스트레스를 푸는 방법을 찾으시는 게 중요합니다.
-   291.92s  user  발화 끝
-   297.76s  user  발화 시작: 네, 노력해 볼게요.
-   297.88s  agent 발화 끝
-   300.06s  agent 발화 시작: 네, 힘내세요.
-   300.21s  user  발화 끝
-   301.81s  agent 발화 끝
-   302.08s  user  발화 시작: 혹시 서울에서 마사지 잘하는 곳 아세요?
-   305.18s  <ret> 발화 (turn79 첫 프레임)
-   305.48s  agent 발화 시작: <ret> 서울 신라호텔 스파는 고급스러운 환경에서 다양한 마사지 트리트먼트와 스파 서비스를 제공합니다.
-   305.60s  user  발화 끝
-   306.10s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.41s]: The Spa at Shilla Seoul offers a range of massage treatments and spa s
-   308.54s  user  발화 시작: 예.
-   309.13s  user  발화 끝
-   312.89s  agent 발화 끝
-   313.06s  user  발화 시작: 신라호텔 스파요? 가격이 비싸지 않을까요?
-   316.74s  agent 발화 시작: 네, 가격대가 조금 높은 편입니다.
-   316.80s  user  발화 끝
-   319.28s  agent 발화 끝
-   319.64s  user  발화 시작: 그럼 좀 더 저렴한 곳 없을까요?
-   321.81s  <ret> 발화 (turn84 첫 프레임)
-   322.23s  agent 발화 시작: <ret> 용산구에 있는 타이 오키드 마사지는 합리적인 가격으로 태국 마사지를 받을 수 있습니다.
-   322.42s  user  발화 끝
-   323.29s  ⚡SPAN 주입 [d'=1.47s / d_lead=5.74s]: Thai Orchid Massage in Yongsan-gu offers affordable Thai massage treat
-   325.58s  user  발화 시작: 예.
-   326.21s  user  발화 끝
-   327.97s  agent 발화 끝
-   328.03s  user  발화 시작: 타이 오키드 마사지요? 한번 알아봐야겠네요.
-   332.51s  user  발화 끝
-   332.62s  agent 발화 시작: 네, 한번 알아보세요.
-   334.22s  agent 발화 끝
-   334.82s  user  발화 시작: 아, 삼총사 영화 얘기하다가 딴 얘기로 너무 빠졌네요.
-   339.15s  agent 발화 시작: 네, 그러네요. —
-   339.26s  user  발화 끝
-   340.53s  user  발화 시작: 혹시 그 영화에 또 다른 배우 중에 유명한 사람 있었나요?
-   341.13s  agent 발화 끝
-   343.37s  agent 발화 시작: 네.
-   343.87s  agent 발화 끝
-   344.97s  agent 발화 시작: 네, 영화 *삼총사*에는 올리버 리드와 프랜시스 레이가 출연했습니다.
-   345.01s  user  발화 끝
-   347.61s  user  발화 시작: 네.
-   348.29s  user  발화 끝
-   350.61s  agent 발화 끝
-   351.44s  user  발화 시작: 아, 올리버 리드요? 그 배우는 어떤 영화에 출연했었나요?
-   356.92s  agent 발화 시작: 올리버 리드 님은 *로마 제국 쇠망사*와 *글래디에이터*에서 인상적인 연기를 보여주셨습니다.
-   357.04s  user  발화 끝
-   363.66s  user  발화 시작: 아, *글래디에이터*! 그 영화 정말 감동적이었어요.
-   363.78s  agent 발화 끝
-   368.67s  user  발화 끝
-   368.90s  agent 발화 시작: 네, 정말 명작이죠.
-   370.69s  agent 발화 끝
-   370.79s  user  발화 시작: 오늘 얘기 너무 즐거웠어요.
-   373.42s  user  발화 끝
-   373.59s  agent 발화 시작: 저도 즐거웠습니다.
-   375.25s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 저녁에 차 수리 맡기러 가는데, 시월 십오일 오후 다섯시 삼십분에 가기로 했어. 비용은 육만 오천원 정
+     4.70s  agent 발화 시작: 네.
+     4.95s  agent 발화 끝
+     8.31s  user  발화 끝
+     8.40s  agent 발화 시작: 네, 기억해 둘게요. 차 수리 예약하신 날짜와 시간, 그리고 예상 비용까지 잘 알아두겠습니다.
+    13.72s  agent 발화 끝
+    13.82s  user  발화 시작: 아, 그리고 다음 주말에 아이들 데리고 부산 근처 바다에 갈까 생각 중인데, 괜찮은 곳 있을까?
+    20.23s  agent 발화 시작: 바다에 가시는군요! 아이들과 함께 즐거운 시간 보내실 수 있도록 부산 근처 좋은 곳을 찾아볼까요?
+    20.32s  user  발화 끝
+    26.89s  agent 발화 끝
+    27.00s  user  발화 시작: 응, 부탁해.
+    27.52s  <ret> 발화 (turn6 첫 프레임)
+    28.09s  user  발화 끝
+    28.09s  agent 발화 시작: <ret> 장미에 대한 이야기인데요, 튜더 장미는 영국을 상징하고, 장미 전쟁 이후 요크 가문과 랭커스터 가
+    28.46s  ⚡SPAN 주입 [d'=0.93s / d_lead=8.29s]: The Tudor rose is the national flower of England, and it symbolizes th
+    36.39s  agent 발화 끝
+    37.84s  user  발화 시작: 오, 튜더 장미라… 역사적인 의미가 있구나.
+    40.84s  user  발화 끝
+    41.34s  agent 발화 시작: 맞아요. 튜더 장미는 두 가문의 권위를 하나로 나타내는 상징적인 꽃이라고 할 수 있죠.
+    46.71s  agent 발화 끝
+    46.98s  user  발화 시작: 그럼, 부산 근처 바다에서 아이들이 놀기 좋은 곳은 어디가 있을까?
+    51.02s  agent 발화 시작: 부산 근처 바다라면 해운대, 송정, 광안리 등이 유명하죠. 아이들이 놀기 좋은 곳으로 송정을 추천해 드릴게요
+    51.09s  user  발화 끝
+    58.38s  agent 발화 끝
+    59.88s  user  발화 시작: 송정? 거긴 어떤 곳인데?
+    62.01s  agent 발화 시작: 송정 해수욕장은 수심이 얕고 파도가 잔잔해서 아이들이 안전하게 놀 수 있어요. 주변에 편의시설도 잘 갖춰져 
+    62.11s  user  발화 끝
+    67.16s  user  발화 시작: 어.
+    67.63s  user  발화 끝
+    70.30s  agent 발화 끝
+    70.71s  user  발화 시작: 아, 좋겠다. 아이들이 좋아할 것 같아.
+    73.03s  agent 발화 시작: 아이들이 모래놀이도 하고, 바닷물에 발도 담그면서 즐거운 시간을 보낼 수 있을 거예요.
+    73.09s  user  발화 끝
+    78.53s  agent 발화 끝
+    78.67s  user  발화 시작: 혹시 송정 해수욕장 근처에 맛있는 식당도 있을까?
+    82.45s  <ret> 발화 (turn17 첫 프레임)
+    82.49s  agent 발화 시작: <ret> 송정 해수욕장 근처에는 맛집도 많아요. 해운대에 있는 다다 카페는 오전 열한시부터 밤 열시까지 영
+    82.60s  user  발화 끝
+    83.75s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.39s]: Dada Cafe in Haeundae, Busan: 1374-14 Haeundaehaebyeon-ro, Haeundae-gu
+    85.65s  user  발화 시작: 어어.
+    86.28s  user  발화 끝
+    90.88s  agent 발화 끝
+    91.01s  user  발화 시작: 다다 카페… 이름이 예쁘네.
+    93.36s  user  발화 끝
+    93.47s  agent 발화 시작: 네, 이름처럼 아늑하고 예쁜 카페예요. 바다를 보면서 커피 한 잔 즐기기에도 좋을 것 같아요.
+    99.48s  agent 발화 끝
+    99.58s  user  발화 시작: 좋아, 그럼 송정 해수욕장과 다다 카페를 기억해 둬야겠다.
+   104.09s  agent 발화 시작: 네, 송정 해수욕장과 다다 카페, 기억해 두겠습니다.
+   104.15s  user  발화 끝
+   107.28s  agent 발화 끝
+   107.32s  user  발화 시작: 아, 그런데 시월 십오일 차 수리 맡기는 시간이 몇 시였지?
+   110.87s  agent 발화 시작: 시월 십오일 오후 다섯시 삼십분에 차를 맡기기로 하셨습니다.
+   110.91s  user  발화 끝
+   114.71s  agent 발화 끝
+   114.91s  user  발화 시작: 아, 맞다. 다섯시 삼십분이었지.
+   117.15s  agent 발화 시작: 네, 기억해 두셔서 다행이에요.
+   117.20s  user  발화 끝
+   118.74s  user  발화 시작: 요즘 아이들 숙제 때문에 너무 힘들어.
+   118.80s  agent 발화 끝
+   121.21s  agent 발화 시작: 아이들 숙제 때문에 힘드시군요. 저도 아이를 키우는 입장에서 그 마음 잘 알아요.
+   121.23s  user  발화 끝
+   123.06s  user  발화 시작: 그래.
+   123.58s  user  발화 끝
+   125.74s  agent 발화 끝
+   126.20s  user  발화 시작: — 솔직히, 숙제 도와주다가 나도 같이 스트레스받는 것 같아.
+   130.20s  user  발화 시작: 숙제 때문에 스트레스받는 것 같아. 혹시 숙제를 좀 더 즐겁게 할 수 있는 방법은 없을까?
+   130.25s  user  발화 끝
+   135.59s  user  발화 끝
+   135.60s  agent 발화 시작: 숙제를 즐겁게 할 수 있는 방법이 있을까요? 칭찬을 많이 해주고, 작은 성공에도 격려해 주는 게 중요해요.
+   142.03s  agent 발화 끝
+   143.95s  user  발화 시작: 칭찬? 어떤 식으로 칭찬해야 할까?
+   146.58s  user  발화 끝
+   147.00s  agent 발화 시작: 결과보다는 노력하는 과정을 칭찬해 주는 게 좋아요. 예를 들어, "숙제 열심히 하는 모습이 보기 좋다" 와 
+   157.62s  agent 발화 끝
+   158.09s  user  발화 시작: 노력하는 과정을 칭찬하는 거… 좋은 방법이네.
+   161.49s  user  발화 끝
+   161.84s  agent 발화 시작: 네, 결과에만 집중하면 아이들이 쉽게 좌절할 수 있어요. 노력하는 과정을 칭찬해 주면 아이들이 자신감을 얻고
+   169.62s  user  발화 시작: 응응.
+   170.03s  user  발화 끝
+   172.59s  agent 발화 끝
+   172.89s  user  발화 시작: 아, 아이들한테 칭찬을 좀 더 많이 해줘야겠네.
+   175.89s  user  발화 끝
+   175.97s  agent 발화 시작: 네, 칭찬은 아이들의 성장에 큰 영향을 미친답니다.
+   179.21s  user  발화 시작: 요즘 날씨가 너무 춥던데, 부산 날씨는 어때?
+   179.24s  agent 발화 끝
+   182.46s  user  발화 끝
+   182.55s  <ret> 발화 (turn41 첫 프레임)
+   182.56s  agent 발화 시작: <ret> 부산 날씨는 현재 십오 점 이도이고, 습도는 칠십팔퍼센트, 바람은 시속 팔 점 일킬로미터로 불고 
+   183.87s  ⚡SPAN 주입 [d'=1.32s / d_lead=7.08s]: The weather in Busan is 15.2°C, humidity 78%, wind 8.1 km/h.
+   189.64s  agent 발화 끝
+   190.11s  user  발화 시작: 십오도면 꽤 쌀쌀하겠네.
+   191.89s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 43턴 요약, 108f): car repair date: 시월 십오일; car repair time: 오후 다섯시 삼십분; car repair cost: 육만 오천원; vacation lo
+   192.35s  agent 발화 시작: 네, 쌀쌀하니 따뜻하게 입고 나가시는 게 좋겠어요.
+   195.34s  agent 발화 끝
+   196.94s  user  발화 시작: 아이들 옷도 따뜻하게 입혀야겠다.
+   198.84s  agent 발화 시작: 네, 아이들 감기 걸리지 않도록 따뜻하게 입혀주세요.
+   198.94s  user  발화 끝
+   199.86s  user  발화 시작: 응.
+   200.11s  user  발화 끝
+   202.03s  agent 발화 끝
+   202.22s  user  발화 시작: 이번 주말에 아이들 데리고 어디 갈까?
+   205.07s  agent 발화 시작: 이번 주말에는 송정 해수욕장이나 다다 카페에 가는 건 어떠세요?
+   205.10s  user  발화 끝
+   209.42s  agent 발화 끝
+   211.02s  user  발화 시작: 아, 전에 얘기했던 곳이네.
+   212.90s  user  발화 끝
+   212.99s  agent 발화 시작: 네, 아이들과 함께 즐거운 시간을 보낼 수 있는 좋은 곳이라고 생각해요.
+   216.79s  user  발화 시작: 좋아, 그럼 송정 해수욕장으로 가자.
+   216.96s  agent 발화 끝
+   219.26s  user  발화 끝
+   219.30s  agent 발화 시작: 네, 송정 해수욕장으로 결정하셨군요.
+   221.70s  agent 발화 끝
+   222.00s  user  발화 시작: 아, 그런데 차 수리 비용이 얼마였지?
+   224.94s  agent 발화 시작: 육만 오천원이라고 말씀하셨습니다.
+   225.06s  user  발화 끝
+   227.20s  agent 발화 끝
+   227.26s  user  발화 시작: 아, 맞다. 육만 오천원이었지.
+   229.16s  agent 발화 시작: 네, 기억해 두셔서 다행이에요.
+   229.26s  user  발화 끝
+   230.62s  agent 발화 끝
+   230.82s  user  발화 시작: 요즘 아이들 간식 때문에 고민이야.
+   233.21s  user  발화 끝
+   233.26s  agent 발화 시작: 아이들 간식 때문에 고민이시군요. 건강에 좋은 간식을 챙겨주는 게 중요해요.
+   237.34s  user  발화 시작: 응.
+   237.78s  user  발화 끝
+   238.48s  agent 발화 끝
+   238.52s  user  발화 시작: 건강에 좋은 간식… 뭐가 좋을까?
+   241.49s  user  발화 끝
+   241.49s  agent 발화 시작: 과일, 채소, 견과류 등이 좋은 간식이 될 수 있어요.
+   244.30s  user  발화 시작: 맞아.
+   244.85s  user  발화 끝
+   245.70s  agent 발화 끝
+   245.91s  user  발화 시작: 과일이랑 채소는 아이들이 잘 안 먹는데…
+   249.00s  agent 발화 시작: 아이들이 과일이나 채소를 잘 안 먹는다면, 간식으로 과일 주스나 채소 스틱을 만들어주는 것도 좋은 방법이에요
+   249.10s  user  발화 끝
+   256.31s  agent 발화 끝
+   256.63s  user  발화 시작: 과일 주스나 채소 스틱… 한번 시도해 봐야겠다.
+   260.24s  user  발화 끝
+   260.35s  agent 발화 시작: 네, 아이들이 맛있게 먹을 수 있을 거예요.
+   262.75s  agent 발화 끝
+   262.85s  user  발화 시작: 아, 아이들 숙제 도와주다가 나도 같이 스트레스받는 것 같아.
+   266.64s  user  발화 끝
+   266.91s  agent 발화 시작: 아이들 숙제 때문에 힘드시군요. 칭찬을 많이 해주고, 작은 성공에도 격려해 주는 게 중요해요.
+   273.63s  agent 발화 끝
+   274.96s  user  발화 시작: 칭찬은 좋은데, 어떻게 해야 아이들이 진심으로 받아들일까?
+   279.25s  user  발화 끝
+   279.53s  agent 발화 시작: 진심으로 칭찬하는 것이 중요해요. 구체적인 행동을 언급하면서 칭찬해 주면 아이들이 더 진심으로 받아들일 거예
+   287.87s  agent 발화 끝
+   287.99s  user  발화 시작: 구체적인 행동을 언급하면서 칭찬하는 거… 좋은 방법이네.
+   292.27s  agent 발화 시작: 네, 예를 들어, "글씨를 예쁘게 쓰는 모습이 보기 좋다" 와 같이 칭찬해 주면 아이들이 더 기뻐할 거예요.
+   292.29s  user  발화 끝
+   298.43s  agent 발화 끝
+   299.87s  user  발화 시작: 아, 아이들한테 칭찬을 좀 더 구체적으로 해줘야겠네.
+   303.50s  agent 발화 시작: 네, 구체적인 칭찬은 아이들의 성장에 큰 도움이 될 거예요.
+   303.51s  user  발화 끝
+   304.93s  user  발화 시작: 맞아.
+   305.51s  user  발화 끝
+   306.78s  agent 발화 끝
+   306.93s  user  발화 시작: 오늘 하루도 수고했어.
+   308.27s  user  발화 끝
+   308.38s  agent 발화 시작: 네, 오늘 하루도 수고하셨습니다. 편안한 저녁 보내세요.
+   311.80s  agent 발화 끝

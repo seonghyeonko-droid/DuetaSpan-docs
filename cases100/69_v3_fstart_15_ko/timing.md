@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "정빈",
+#     "name": "은원",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,89 +12,108 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 40s",
+#     "gender": "male",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-29",
-#       "category": "partner",
-#       "text": "User's partner is named Clara."
+#       "date": "2026-06-25",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2026-05-23",
+#       "date": "2026-04-24",
 #       "category": "floor",
-#       "text": "User lives on the 15th floor."
+#       "text": "User lives on the 7th floor."
 #     },
 #     {
-#       "date": "2026-03-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-04-21",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 19°C."
 #     },
 #     {
-#       "date": "2026-03-04",
-#       "category": "skill",
-#       "text": "User is getting fairly good at vintage synth collecting."
+#       "date": "2026-04-11",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-02-24",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Emma."
+#       "date": "2026-02-13",
+#       "category": "employer",
+#       "text": "User works at an airline."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is shakshuka."
-#     },
-#     {
-#       "date": "2025-12-09",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "phone",
-#       "text": "User uses an iPhone SE."
+#       "date": "2026-01-07",
+#       "category": "commute",
+#       "text": "User takes the subway to work."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-07",
-#       "title": "Looking for a therapist",
+#       "date": "2026-05-11",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-04-30",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-09",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 버스 티켓 예매 좀 도와주세요. 시애틀에서 포틀랜드로, 오월  | S2 네, 확인했어요. 그런데 혹시 다른 날짜에도 자리가 있을까요? | S3 오월 십이일 오후 두시쯤에 출발하는 버스가 있는지 알아봐 주세 | S4 … 혹시 그 버스는 와이파이가 돼요?
 
-     0.00s  user  발화 시작: 음… 버스표 좀 알아봐 줄래? 다섯 명, 댈러스에서 휴스턴 가는 거… 팔월 십오일…
-     4.43s  agent 발화 시작: 네.
-     4.79s  agent 발화 끝
-     5.77s  <ret> 발화 (turn2 첫 프레임)
-     6.25s  agent 발화 시작: <ret> 죄송해요, 팔월 십오일 댈러스에서 휴스턴 가는 버스편은 지금 찾을 수 없네요. 다른 날짜를 알아볼
-     6.44s  user  발화 끝
-     7.04s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.62s]: (no information found)
-    12.86s  agent 발화 끝
-    13.04s  user  발화 시작: 아, 팔월 이십일로 해 봐.
-    14.58s  <ret> 발화 (turn4 첫 프레임)
-    14.96s  agent 발화 시작: <ret> 팔월 이십일 댈러스에서 휴스턴 가는 버스는 오후 두시 삼십분에 출발하는 그레이하운드 버스, 일인당
-    15.11s  user  발화 끝
-    15.88s  ⚡SPAN 주입 [d'=1.30s / d_lead=9.55s]: (tool result) 14:30, Greyhound, $125.00, 6h 15m
-    24.51s  agent 발화 끝
+     0.00s  user  발화 시작: 버스 티켓 예매 좀 도와주세요. 시애틀에서 포틀랜드로, 오월 십일에 오전 열시 십오분 출발하는 티켓 세장으로
+     8.11s  user  발화 끝
+     8.62s  <ret> 발화 (turn1 첫 프레임)
+     8.68s  agent 발화 시작: <ret> 네, 시애틀에서 포틀랜드행 버스 티켓 세장을 예매해 드렸습니다. 예약번호는 비 유 에스 삼 공 공
+     9.77s  ⚡SPAN 주입 [d'=1.15s / d_lead=12.62s]: (tool result) Seattle, WA, Portland, OR, 2024-05-10, 10:15, BUS3-00506
+    21.30s  agent 발화 끝
+    21.53s  user  발화 시작: 네, 확인했어요. 그런데 혹시 다른 날짜에도 자리가 있을까요?
+    25.50s  user  발화 끝
+    25.53s  agent 발화 시작: 다른 날짜도 확인해 볼까요? 혹시 특정 날짜를 생각하고 계신가요?
+    30.61s  agent 발화 끝
+    30.87s  user  발화 시작: 오월 십이일 오후 두시쯤에 출발하는 버스가 있는지 알아봐 주세요.
+    34.83s  <ret> 발화 (turn5 첫 프레임)
+    35.02s  user  발화 끝
+    35.22s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+    35.70s  ⚡SPAN 주입 [d'=0.87s / d_lead=1.84s]: Seattle, WA, Portland, OR, 2024-05-12, 14:00, BUS3-005078, available
+    36.49s  user  발화 시작: … 혹시 그 버스는 와이파이가 돼요?
+    37.06s  agent 발화 끝
+    37.94s  <ret> 발화 (turn7 첫 프레임)
+    38.41s  agent 발화 시작: <ret> 네, 해당 버스에는 와이파이가 제공됩니다. 편안하게 이용하실 수 있을 거예요.
+    38.42s  user  발화 끝
+    38.54s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.61s]: BUS3-005078: wifi available
+    40.72s  user  발화 시작: 응.
+    41.03s  user  발화 끝
+    44.99s  agent 발화 시작: 혹시 좌석 지정도 가능한가 궁금하시군요. 좌석 지정은 예약 단계에서 가능합니다.
+    45.02s  agent 발화 끝
+    52.26s  agent 발화 끝

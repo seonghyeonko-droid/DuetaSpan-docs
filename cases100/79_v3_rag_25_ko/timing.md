@@ -4,118 +4,132 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "유재",
+#     "name": "채완",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
-#       "category": "streaming",
-#       "text": "User subscribes to Apple Music and Coupang Play."
+#       "date": "2026-06-21",
+#       "category": "music",
+#       "text": "User likes listening to a lo-fi jazz playlist."
 #     },
 #     {
-#       "date": "2026-04-10",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 23°C."
+#       "date": "2026-05-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-01-30",
-#       "category": "show",
-#       "text": "User is currently watching a nature documentary series."
+#       "date": "2026-03-19",
+#       "category": "child",
+#       "text": "User has a child named Daniel, age 10."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-03-08",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Sara."
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "category": "employer",
-#       "text": "User works at a research institute."
+#       "date": "2025-12-24",
+#       "category": "partner",
+#       "text": "User's partner is named Sara."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-14",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-06-27",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-11",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-18",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "title": "Choosing a preschool",
+#       "date": "2025-12-20",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 노래 뭐 듣고 있어? | S2 글쎄… 빅 데이터라는 밴드 노래 아는 거 있어? | S3 아, 그렇구나. 그럼 그 밴드는 다른 유명한 노래 없어? | S4 …같아. 광고에서 많이 나왔었지.
+# EXAMINER(FDB-v2) 단계: S1 혹시 밀하우스라는 캐릭터 이름을 지은 사람이 누구인지 아세요? | S2 아, 음악도 했다고요? 어떤 노래가 유명한가요? | S3 혹시 앨리 고르츠의 다른 노래도 추천해 주실 수 있나요? | S4 흥미롭네요. 혹시 그 노래를 들어볼 수 있는 곳이 있을까요?
 
-     0.00s  user  발화 시작: 요즘 노래 뭐 듣고 있어?
-     2.21s  user  발화 끝
-     2.52s  agent 발화 시작: 저는 늘 새로운 음악을 찾아 듣는 걸 좋아해요. 혹시 특별히 찾으시는 장르가 있으신가요?
-     8.53s  agent 발화 끝
-     8.92s  user  발화 시작: 음… 뭔가 신나는 거 말고, 좀 몽환적인 느낌의 노래 없을까?
-    14.21s  user  발화 끝
-    14.32s  agent 발화 시작: 몽환적인 노래요? 어떤 아티스트를 좋아하시는지 알면 더 추천해 드릴 수 있을 것 같아요.
-    16.14s  user  발화 시작: 응.
-    16.49s  user  발화 끝
-    19.68s  user  발화 시작: 글쎄… 빅 데이터라는 밴드 노래 아는 거 있어?
-    20.30s  agent 발화 끝
-    21.67s  agent 발화 시작: 음.
-    21.98s  agent 발화 끝
-    22.45s  <ret> 발화 (turn7 첫 프레임)
-    22.88s  agent 발화 시작: <ret> 빅 데이터의 노래 "Dangerous"가 이천십오년 오월 십이일에 미국 음반산업협회에서 골드 인증
-    23.05s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.88s]: Big Data's song "Dangerous" was certified gold by the Recording Indust
-    23.06s  user  발화 끝
-    26.75s  user  발화 시작: 응응.
-    27.39s  user  발화 끝
-    30.76s  agent 발화 끝
-    31.48s  user  발화 시작: 이천십오년이라고? 꽤 오래됐네. 그 노래 다른 인증도 받았어?
-    34.48s  agent 발화 시작: 네.
-    35.11s  agent 발화 끝
-    36.38s  agent 발화 시작: [curious] 다른 인증에 대해서는 아직 정보가 없네요. "Dangerous"는 골드 인증만 받은 걸로 
-    36.48s  user  발화 끝
-    43.61s  agent 발화 끝
-    43.96s  user  발화 시작: 아, 그렇구나. 그럼 그 밴드는 다른 유명한 노래 없어?
-    46.40s  agent 발화 시작: 네.
-    47.22s  agent 발화 끝
-    48.45s  user  발화 끝
-    48.51s  <ret> 발화 (turn14 첫 프레임)
-    48.73s  agent 발화 시작: <ret> 빅 데이터는 앨런 윌키스의 프로젝트인데, 이천십삼년에 발매된 "Daylight"라는 곡이 현대자동
-    50.13s  ⚡SPAN 주입 [d'=1.61s / d_lead=9.55s]: Big Data, the project of Alan Wilkis, is known for the 2013 single "Da
-    54.31s  user  발화 시작: 응.
-    54.71s  user  발화 끝
-    58.27s  agent 발화 끝
-    58.48s  user  발화 시작: 오, "Daylight"는 들어본 것…
-    61.15s  user  발화 끝
-    63.15s  user  발화 시작: …같아. 광고에서 많이 나왔었지.
-    66.06s  agent 발화 시작: [happy] 네, 맞아요. "Daylight"는 광고를 통해 많은 사람들에게 알려진 곡이죠. 혹시 다른 밴
-    66.16s  user  발화 끝
-    75.56s  agent 발화 끝
-    77.79s  user  발화 시작: 아니, 오늘은 이 정도면 충분해. 고마워, 하로.
-    81.62s  user  발화 끝
-    81.64s  agent 발화 시작: [happy] 천만에요. 언제든지 편하게 물어보세요. 좋은 하루 보내세요!
-    86.83s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 밀하우스라는 캐릭터 이름을 지은 사람이 누구인지 아세요?
+     1.66s  agent 발화 시작: 예.
+     2.06s  agent 발화 끝
+     3.04s  <ret> 발화 (turn2 첫 프레임)
+     3.61s  agent 발화 시작: <ret> '심슨 가족'의 밀하우스를 지은 사람은 매트 그로닝의 어린 시절 친구인 밀하우스 반 호튼이라고 합
+     3.64s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.67s]: Matt Groening named Milhouse after a childhood friend, Milhouse Van Ho
+     3.67s  user  발화 끝
+     5.87s  user  발화 시작: 네.
+     6.18s  user  발화 끝
+    10.28s  agent 발화 끝
+    10.58s  user  발화 시작: 매트 그로닝은 또 어떤 작품들로 유명한가요?
+    13.29s  agent 발화 시작: 매트 그로닝은 '퓨처라마'와 '디스엔챈티드' 같은 애니메이션도 만들었답니다.
+    13.36s  user  발화 끝
+    18.41s  user  발화 시작: 그 외에 다른 활동도 있었나요?
+    18.43s  agent 발화 끝
+    20.31s  agent 발화 시작: 네, 매트 그로닝은 풍자적인 가사로도 유명한 음악가이기도 합니다.
+    20.36s  user  발화 끝
+    24.87s  agent 발화 끝
+    25.66s  user  발화 시작: 아, 음악도 했다고요? 어떤 노래가 유명한가요?
+    28.74s  <ret> 발화 (turn9 첫 프레임)
+    29.04s  agent 발화 시작: <ret> 천구백구십일년에 앨리 고르츠가 밀하우스에 대한 노래를 썼는데, 매트 그로닝이 코러스로 참여했습니다
+    29.09s  user  발화 끝
+    30.08s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.95s]: Allie Goertz wrote a song about Milhouse in 1991, and Matt Groening pr
+    31.60s  user  발화 시작: 네.
+    32.00s  user  발화 끝
+    35.98s  agent 발화 끝
+    37.07s  user  발화 시작: 앨리 고르츠는 어떤 가수인가요?
+    39.56s  user  발화 끝
+    39.64s  agent 발화 시작: 앨리 고르츠는 재치 있는 가사와 독특한 스타일로 유명한 싱어송라이터입니다.
+    42.63s  user  발화 시작: 예.
+    42.98s  user  발화 끝
+    44.39s  agent 발화 끝
+    44.62s  user  발화 시작: 혹시 앨리 고르츠의 다른 노래도 추천해 주실 수 있나요?
+    46.83s  agent 발화 시작: 네네.
+    47.41s  agent 발화 끝
+    48.07s  user  발화 끝
+    48.35s  agent 발화 시작: 앨리 고르츠는 'Time to Say Goodbye'라는 곡으로도 유명합니다—
+    51.55s  user  발화 시작: 잠깐만요, 밀하우스 노래가 더 궁금한데, 혹시 가사를 알 수 있을까요?
+    52.23s  agent 발화 끝
+    55.89s  <ret> 발화 (turn18 첫 프레임)
+    56.33s  agent 발화 시작: <ret> [curious] 잠시만 기다려 주세요.
+    56.41s  user  발화 끝
+    57.12s  ⚡SPAN 주입 [d'=1.23s / d_lead=1.56s]: The song about Milhouse is a quirky, upbeat tune that references many 
+    57.89s  agent 발화 끝
+    57.95s  agent 발화 시작: 밀하우스에 대한 노래는 그 캐릭터의 삶의 여러 측면을 언급하는 기발하고 신나는 곡입니다.
+    64.11s  agent 발화 끝
+    64.59s  user  발화 시작: 어떤 면을 언급하고 있나요? 좀 더 자세히 알려주세요.
+    67.94s  agent 발화 시작: 노래 가사에는 밀하우스의 안경, 엄마와의 관계, 리사의 짝사랑 등이 담겨 있다고 합니다.
+    68.00s  user  발화 끝
+    74.51s  agent 발화 끝
+    74.75s  user  발화 시작: 흥미롭네요. 혹시 그 노래를 들어볼 수 있는 곳이 있을까요?
+    77.63s  <ret> 발화 (turn23 첫 프레임)
+    78.24s  agent 발화 시작: <ret> 유튜브에서 앨리 고르츠의 '밀하우스' 노래를 찾을 수 있습니다. 주소는 이렇습니다: https:/
+    78.37s  user  발화 끝
+    78.42s  ⚡SPAN 주입 [d'=0.79s / d_lead=10.52s]: (tool result) {"artist": "Allie Goertz", "track name": "Milhouse", "so
+    88.76s  agent 발화 끝
+    89.21s  user  발화 시작: 감사합니다. 덕분에 좋은 노래를 알게 되었네요.
+    92.36s  user  발화 끝
+    92.68s  agent 발화 시작: [happy] 도움이 되었다니 기쁩니다. 즐겁게 감상하세요!
+    97.36s  agent 발화 끝

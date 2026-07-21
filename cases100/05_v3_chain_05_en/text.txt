@@ -1,101 +1,106 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Mius, a playful and warm reflection partner who helps people with big life transitions. You can explain coping strategies, keeping a steady daily routine, practicing self-compassion. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Orelin, a supportive and pragmatic accountability partner who helps people with money and budgeting. You can explain the 50/30/20 budget, why an emergency fund matters, how compound interest works. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Olivia",
+    "name": "Morgan",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
-    "gender": "female",
-    "age_range": "late 20s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "employer",
-      "text": "User works at a biotech lab."
+      "date": "2026-05-14",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-04-18",
+      "category": "medication",
+      "text": "User takes an inhaler for asthma."
     },
     {
       "date": "2026-04-14",
-      "category": "phone",
-      "text": "User uses a Pixel 8."
+      "category": "gym",
+      "text": "User has a gym membership near the office."
     },
     {
-      "date": "2026-04-13",
+      "date": "2026-03-14",
+      "category": "work",
+      "text": "User works as a flight attendant."
+    },
+    {
+      "date": "2026-02-27",
       "category": "hobby",
-      "text": "User is into freediving."
+      "text": "User is into board-game design."
     },
     {
-      "date": "2026-03-07",
-      "category": "dish",
-      "text": "User's go-to comfort dish is green curry."
-    },
-    {
-      "date": "2026-01-27",
-      "category": "skill",
-      "text": "User is just getting back into long-distance cycling."
-    },
-    {
-      "date": "2025-12-28",
+      "date": "2026-02-04",
       "category": "commute",
-      "text": "User carpools with a colleague."
+      "text": "User takes the subway to work."
     },
     {
-      "date": "2025-12-17",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 20°C."
+      "date": "2026-01-15",
+      "category": "child",
+      "text": "User has a child named Ava, age 17."
+    },
+    {
+      "date": "2025-12-14",
+      "category": "floor",
+      "text": "User lives on the 2nd floor."
+    },
+    {
+      "date": "2025-12-05",
+      "category": "coffee",
+      "text": "User's usual coffee order is black drip coffee."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-04",
+      "date": "2026-05-13",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "title": "Meal-prep planning",
+      "bullets": [
+        "wants high-protein lunches under 600 calories",
+        "avoiding dairy this month"
+      ]
+    },
+    {
+      "date": "2026-01-20",
       "title": "Studying for the TOEIC",
       "bullets": [
         "target score is 850",
         "exam is in about six weeks"
-      ]
-    },
-    {
-      "date": "2026-05-01",
-      "title": "Learning to invest",
-      "bullets": [
-        "asked about index funds vs individual stocks",
-        "wants to start with 500k won a month"
-      ]
-    },
-    {
-      "date": "2026-04-08",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six on the 14th",
-        "looking for outdoor seating with a vegetarian option"
-      ]
-    },
-    {
-      "date": "2026-01-01",
-      "title": "Choosing a laptop",
-      "bullets": [
-        "budget around 1.8M won",
-        "needs it for video editing and light gaming"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] End the code generation session for data analysis, session forty two, and create the tests.
-[  6.96s][moshi] ⟨ret@6.57s⟩ [happy] ⟦⚡SPAN@7.99s: (tool result) Session 42 ended. Tests created: data analysis tests.py⟧ Okay, session forty-two is finished, and your tests—data_analysis_tests.py—are all set! That’s a big step, right?
-      CALL: {"function": "end_codegen_session", "arguments": {"session_id": "42", "create_tests": true}}
-[ 11.45s][user ] «backchannel» Yeah.
-[ 15.57s][user ] Good. Now, can you find me a quiet cafe nearby for working?
-[ 18.60s][moshi] «backchannel» Yeah, totally.
-[ 20.79s][moshi] ⟨ret@20.64s⟩ I’ve ⟦⚡SPAN@21.63s: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu, Busan, is known for its peaceful atmosp⟧ found a good spot for focused work—Cafe Yeonjae in Yeonje-gu, Busan. It has a 4.5-star rating from one hundred and twenty reviews.
-[ 26.77s][user ] «backchannel» Yeah.
-[ 29.26s][moshi] [curious] It seems like a really relaxing place! Would you like me to get directions or check their hours?
+[  0.00s][user ] I need to get train tickets from Atlanta to Miami for three people on May fifteenth, leaving around ⟨ret@7.60s⟩ ten AM.
+[  4.46s][moshi] «backchannel» Yeah.
+[  8.18s][moshi] ⟦⚡SPAN@8.62s: (no information found)⟧ [sigh] Unfortunately, I'm not finding any direct train routes between those cities.
+[ 13.41s][user ] Oh.
+[ 14.12s][moshi] Amtrak doesn’t currently offer service directly between Atlanta and Miami. You could take a train to a connecting city, like Washington D.C., and then another train to Miami, but it’s a very long journey.
+[ 19.95s][user ] «backchannel» Yeah.
+[ 26.22s][moshi] It would involve a transfer and take approximately twenty-eight hours. Alternatively, a flight might be a much faster and more convenient option.
+[ 32.46s][user ] «backchannel» Yeah, totally.
+[ 35.14s][user ] Maybe a flight is better. Can you search for…
+[ 39.84s][user ] …one-way flights from Atlanta to Miami on May ⟨ret@43.16s⟩ fifteenth?
+[ 43.56s][moshi] [happy] I ⟦⚡SPAN@44.77s: (tool result) {"flights": [{"airline": "Delta", "flight number": "DL123", "departure time": "08:00", "arrival ⟧ found a few one-way flights from Atlanta to Miami on May fifteenth. Delta has a flight departing at eight AM, arriving at ten thirty AM, for one hundred fifty dollars. American Airlines has a flight leaving at eleven AM, arriving at one thirty PM, for one hundred seventy-five dollars. And Spirit offers a flight leaving at two PM, arriving at four thirty PM, for just one hundred dollars.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Atlanta", "destination": "Miami", "date": "2024-05-15"}}

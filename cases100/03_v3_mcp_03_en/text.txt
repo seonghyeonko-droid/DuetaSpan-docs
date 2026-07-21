@@ -1,124 +1,102 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Orora, a curious and validating habit coach who helps people with stress relief and mindfulness. You can explain breathing techniques, a quick grounding exercise, basic sleep hygiene. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Ororax, a thoughtful and soft-spoken reflection partner who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Elsa",
+    "name": "Chloe",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
+    "nationality": "Canadian",
     "gender": "female",
-    "age_range": "mid 30s",
-    "language": "French"
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "commute",
-      "text": "User carpools with a colleague."
+      "date": "2026-05-18",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Sichuan."
     },
     {
-      "date": "2026-04-09",
-      "category": "gym",
-      "text": "User has a gym membership near the office."
+      "date": "2026-04-14",
+      "category": "skill",
+      "text": "User is getting fairly good at board-game design."
     },
     {
-      "date": "2026-04-06",
-      "category": "hobby",
-      "text": "User is into salsa dancing."
-    },
-    {
-      "date": "2026-04-02",
-      "category": "car",
-      "text": "User drives a 2022 Volkswagen Golf."
-    },
-    {
-      "date": "2026-03-17",
-      "category": "phone",
-      "text": "User uses an iPhone 13."
-    },
-    {
-      "date": "2026-03-11",
-      "category": "savings",
-      "text": "User is saving for a new car."
-    },
-    {
-      "date": "2026-01-10",
-      "category": "home",
-      "text": "User's home address is 278 Rosewood Drive."
-    },
-    {
-      "date": "2025-12-03",
+      "date": "2026-04-07",
       "category": "employer",
-      "text": "User works at a public university."
+      "text": "User works at a design agency."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "airline",
+      "text": "User usually flies with United."
+    },
+    {
+      "date": "2026-03-07",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "bloodtype",
+      "text": "User's blood type is AB+."
+    },
+    {
+      "date": "2026-01-31",
+      "category": "medication",
+      "text": "User takes insulin."
+    },
+    {
+      "date": "2025-12-19",
+      "category": "anniversary",
+      "text": "User's anniversary is September 6."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "diet",
+      "text": "User is vegetarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-15",
-      "title": "Studying for the TOEIC",
+      "date": "2026-06-27",
+      "title": "Switching phone plans",
       "bullets": [
-        "target score is 850",
-        "exam is in about six weeks"
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
       ]
     },
     {
-      "date": "2026-03-27",
-      "title": "Selling a used bike",
+      "date": "2026-02-12",
+      "title": "Fixing a leaking faucet",
       "bullets": [
-        "a 3-year-old road bike",
-        "asking around 400k won"
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
       ]
     },
     {
-      "date": "2026-01-15",
-      "title": "Choosing a laptop",
+      "date": "2026-01-05",
+      "title": "Planning a camping trip",
       "bullets": [
-        "budget around 1.8M won",
-        "needs it for video editing and light gaming"
-      ]
-    },
-    {
-      "date": "2025-12-27",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling really overwhelmed with work lately. Can you find me some articles about managing stress ⟨ret@5.91s⟩ at work?
-[  2.38s][moshi] «backchannel» Mm-hmm.
-[  6.48s][moshi] Many ⟦⚡SPAN@7.52s: A 2023 study by the American Institute of Stress found that 83% of US workers suffer from work-related stress.⟧ people experience work-related stress—in fact, eighty-three percent of US workers do—and mindfulness, exercise, and setting boundaries are all helpful ways to cope.
-[ 19.25s][user ] That's… a lot. I think I need to try some breathing exercises. Do you know any good ones?
-[ 22.43s][moshi] «backchannel» Yeah.
-[ 25.34s][moshi] [happy] I do! Breathing exercises are a fantastic way to quickly calm your nervous system. Let’s try a simple box breathing technique.
-[ 34.73s][user ] Box breathing? ⟨ret@35.50s⟩ How does that work?
-[ 36.76s][moshi] ⟦⚡SPAN@36.70s: Box breathing involves inhaling for four seconds, holding your breath for four seconds, exhaling for four seco⟧ Box breathing is really easy—you inhale for four seconds, hold for four, exhale for four, and then hold empty for another four, repeating that cycle a few times.
-[ 41.34s][user ] «backchannel» Yeah.
-[ 47.32s][user ] Okay, I'll try that. I also haven’t been sleeping well.
-[ 50.71s][moshi] That’s often connected to stress, unfortunately. Perhaps we could look up some sleep hygiene tips?
-[ 53.09s][user ] «backchannel» Yeah.
-[ 57.02s][user ] Yes, please. What are the main things I should ⟨ret@60.01s⟩ be doing?
-[ 60.44s][moshi] ⟦⚡SPAN@60.78s: (tool result) Title: Sleep Hygiene | Sleep Foundation; Domain: sleepfoundation.org; Snippet: Maintain a regula⟧ The Sleep Foundation recommends keeping a regular schedule, a relaxing routine, a dark and quiet room, and avoiding caffeine and alcohol before bed.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.sleepfoundation.org/sleep-hygiene", "max_links": 10, "depth": 2, "focus": "sleep hygiene tips"}}
-[ 66.57s][user ] «backchannel» Yeah.
-[ 69.49s][user ] That makes sense. Maybe I should start with a consistent bedtime.
-[ 72.02s][moshi] «backchannel» Mm-hmm.
-[ 73.62s][moshi] [happy] That’s a great first step! Small changes can really add up.
-[ 78.38s][user ] I’m also thinking of taking a short trip to get away from everything.
-[ 81.72s][moshi] That sounds lovely. Where are you thinking of going?
-[ 83.16s][user ] «backchannel» Mhm.
-[ 85.64s][user ] I was wondering about Jeju Island. What's the weather like there right ⟨ret@89.23s⟩ now?
-[ 89.55s][moshi] Right ⟦⚡SPAN@90.16s: (tool result) Jeju Island: 26.5°C, humidity 68%, wind 8.2 km/h, partly cloudy.⟧ now in Jeju Island, it’s twenty-six point five degrees Celsius, with sixty-eight percent humidity, partly cloudy, and a wind speed of eight point two kilometers per hour.
-      CALL: {"function": "get_weather", "arguments": {"location": "Jeju Island"}}
-[100.20s][user ] That sounds perfect. Maybe a few days there would really help.
-[103.46s][moshi] [curious] It certainly could. Jeju Island is beautiful and peaceful. Perhaps a bit of mindful exploration would be beneficial?
+[  0.00s][user ] Can you list the contents of the opt ⟨ret@2.68s⟩ directory, please?
+[  1.45s][moshi] «backchannel» Yeah.
+[  3.25s][moshi] The ⟦⚡SPAN@4.28s: (tool result) {"files": ./google, ./bin, ./kde, ./python3.10}⟧ opt directory contains google, bin, kde, and python3.10.
+      CALL: {"function": "list_directory", "arguments": {"directory": "opt"}}
+[  6.87s][user ] «backchannel» Uh-huh.
+[ 10.95s][user ] Oh, good. And what's in the google ⟨ret@13.30s⟩ directory?
+[ 13.63s][moshi] [happy] ⟦⚡SPAN@14.50s: (tool result) {"files": ./chrome, ./docs, ./drive}⟧ Inside google, you'll find chrome, docs, and drive.
+      CALL: {"function": "list_directory", "arguments": {"directory": "./google"}}

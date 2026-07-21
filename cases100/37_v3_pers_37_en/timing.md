@@ -4,150 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Clara",
+#     "name": "Ella",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "female",
 #     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-05-12",
+#       "category": "child",
+#       "text": "User has a child named Hana, age 17."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-04-21",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A-."
 #     },
 #     {
-#       "date": "2026-04-07",
-#       "category": "home",
-#       "text": "User's home address is 650 Magnolia Drive."
+#       "date": "2026-02-11",
+#       "category": "phone",
+#       "text": "User uses an iPhone 13."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Portugal in February."
 #     },
 #     {
-#       "date": "2026-02-23",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2026-01-22",
-#       "category": "floor",
-#       "text": "User lives on the 5th floor."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "schedule",
-#       "text": "User has flexible hours."
+#       "date": "2026-01-07",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-05-19",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-25",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-30",
-#       "title": "Buying a gift for a parent",
+#       "date": "2025-12-18",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just feeling… stuck, I guess.  | S2 Daily steps… like what? | S3 That actually makes sense. But wha | S4 I guess so… but it feels so differ
 
-     0.00s  agent 발화 시작: Hello Clara, it’s lovely to meet you. I’m Taia, and I help p
-     7.08s  agent 발화 끝
-     7.36s  user  발화 시작: I’m just feeling… stuck, I guess. Like I can’t even start an
-     9.84s  agent 발화 시작: Mm-hmm.
-    10.29s  agent 발화 끝
-    12.27s  user  발화 끝
-    12.45s  agent 발화 시작: It’s very common to feel that way, Clara. Often, it's not ab
-    20.98s  agent 발화 끝
-    21.75s  user  발화 시작: A messy draft? Sounds… terrifying.
-    25.77s  user  발화 끝
-    26.13s  agent 발화 시작: [happy] It can be! But think of it as play. No one ever need
-    33.41s  user  발화 시작: Hmm. I always feel like everything has to be perfect right a
-    33.46s  agent 발화 끝
-    35.87s  agent 발화 시작: Yeah.
-    36.69s  agent 발화 끝
-    37.60s  agent 발화 시작: That inner critic can be so loud, can’t it? We can work on g
-    37.62s  user  발화 끝
-    41.55s  user  발화 시작: Yeah.
-    42.15s  user  발화 끝
-    45.67s  user  발화 시작: Daily steps… like what?
-    45.81s  agent 발화 끝
-    48.16s  agent 발화 시작: Something tiny. Five minutes of free writing. A quick sketch
-    48.40s  user  발화 끝
-    51.40s  user  발화 시작: Uh-huh.
-    52.03s  user  발화 끝
-    56.08s  agent 발화 시작: It’s about building the muscle of creation, even when you do
-    56.13s  agent 발화 끝
-    64.09s  user  발화 시작: I suppose… it’s just hard to know where to begin.
-    64.20s  agent 발화 끝
-    67.77s  agent 발화 시작: Sometimes, narrowing your focus helps. Instead of “write a n
-    67.79s  user  발화 끝
-    71.83s  user  발화 시작: Okay.
-    72.60s  user  발화 끝
-    75.70s  agent 발화 끝
-    77.43s  user  발화 시작: That actually makes sense. But what if that one sentence is 
-    82.61s  agent 발화 시작: [laugh] Terrible is fantastic! It’s a starting point. It’s s
-    82.70s  user  발화 끝
-    89.96s  agent 발화 시작: We can also explore exercises to identify *why* you feel the
-    90.07s  agent 발화 끝
-    95.05s  user  발화 시작: But is that even realistic? I mean, everyone else seems so g
-    95.66s  agent 발화 끝
-   100.17s  agent 발화 시작: That’s a very valid feeling, Clara. Comparison is the thief 
-   100.19s  user  발화 끝
-   103.82s  user  발화 시작: Uh-huh.
-   104.45s  user  발화 끝
-   108.32s  user  발화 시작: It’s just… overwhelming. All the amazing art online.
-   108.37s  agent 발화 끝
-   113.08s  agent 발화 시작: [curious] It can be. Remember, everyone starts somewhere. Ev
-   113.19s  user  발화 끝
-   120.47s  user  발화 시작: I guess so… but it feels so different for me. I just freeze 
-   120.54s  agent 발화 끝
-   124.82s  user  발화 끝
-   125.00s  agent 발화 시작: Perhaps we could explore some breathing exercises to help ma
-   132.13s  agent 발화 끝
-   132.73s  user  발화 시작: That… actually sounds really good right now.
-   135.91s  user  발화 끝
-   136.00s  agent 발화 시작: [happy] Wonderful. We can start with a simple box breathing 
-   144.47s  agent 발화 시작: And repeat. It’s a gentle way to center yourself and quiet t
-   144.62s  agent 발화 끝
-   151.32s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Ella, it’s lovely to meet you. I’m Tarir, a wellness c
+    10.38s  agent 발화 끝
+    11.55s  user  발화 시작: Oh, hi Tarir. That’s… specific. My grandma just got diagnose
+    17.01s  user  발화 끝
+    17.04s  agent 발화 시작: It’s completely understandable to feel lost after a new diag
+    21.85s  user  발화 시작: Yeah.
+    22.30s  user  발화 끝
+    28.90s  agent 발화 시작: Often, the first step is understanding the diagnosis itself,
+    28.91s  agent 발화 끝
+    34.54s  user  발화 시작: Yeah.
+    35.07s  user  발화 끝
+    46.67s  agent 발화 끝
+    47.11s  user  발화 시작: My mom is taking on most of the care, and she’s already exha
+    49.58s  agent 발화 시작: Mm-hmm.
+    50.03s  agent 발화 끝
+    53.62s  agent 발화 시작: That guilt is very common, Ella. [sigh] It's important to re
+    53.66s  user  발화 끝
+    64.63s  user  발화 시작: Yeah, yeah.
+    65.87s  user  발화 끝
+    67.81s  agent 발화 끝
+    68.01s  user  발화 시작: Boundaries… yeah, that sounds good. She tends to just… do ev
+    72.35s  user  발화 끝

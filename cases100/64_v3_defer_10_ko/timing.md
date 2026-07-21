@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "예완",
+#     "name": "은담",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,60 +12,60 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "60s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "airline",
-#       "text": "User usually flies with Lufthansa."
-#     },
-#     {
-#       "date": "2026-06-05",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Daniel."
-#     },
-#     {
-#       "date": "2026-05-31",
-#       "category": "streaming",
-#       "text": "User subscribes to Wavve and Melon."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-15",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2026-03-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Morocco in September."
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "floor",
-#       "text": "User lives on the 12th floor."
-#     },
-#     {
-#       "date": "2025-12-31",
+#       "date": "2026-06-13",
 #       "category": "employer",
-#       "text": "User works at a design agency."
+#       "text": "User works at a game studio."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "streaming",
+#       "text": "User subscribes to Netflix and Spotify."
+#     },
+#     {
+#       "date": "2026-04-17",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Peru in February."
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "category": "commute",
+#       "text": "User carpools with a colleague."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "work",
+#       "text": "User works as a carpenter."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O-."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "airline",
+#       "text": "User usually flies with Qatar Airways."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-04-16",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building under 900k won/month",
@@ -73,111 +73,63 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-06",
-#       "title": "Comparing health insurance",
+#       "date": "2026-03-22",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-18",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "title": "Building a PC",
-#       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 보스턴까지 대중교통으로 가는 방법 좀 알려줘. | S2 혹시 시카고 근처에 괜찮은 카페 있어? 기차 타기 전에 커피  | S3 보스턴 도착해서 바로 숙소에 가려면 어떻게 해야 할까? | S4 …혹시 시카고에서 내일 모레 열리는 컨퍼런스 티켓 예매해 줄 
+# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 영화 볼 건데, 혹시 재밌는 영화 추천해 줄 수  | S2 롯데시네마 월드타워 여섯시 오십분으로 예매해 줘. | S3 —근데 혹시 다른 영화도 같이 볼까? | S4 … 아니, 잠시만, 혹시 지금 서울에서 가장 핫한 연극도 알아
 
-     0.00s  user  발화 시작: 시카고에서 보스턴까지 대중교통으로 가는 방법 좀 알려줘.
-     3.42s  <ret> 발화 (turn1 첫 프레임)
-     3.69s  agent 발화 시작: <ret> 시카고에서 보스턴까지 대중교통으로 가는 데는 총 스물한시간 사십오분 정도 걸리고, 거리는 천이십삼
-     3.93s  user  발화 끝
-     4.76s  ⚡SPAN 주입 [d'=1.34s / d_lead=10.25s]: (tool result) {"total time": "21h 45m", "total distance": "1023 miles"
-    13.88s  agent 발화 시작: 먼저 암트랙 기차를 타고, 그 다음에는 엠 비 티 에이 그린 라인 지하철, 마지막으로 그레이하운드 버스를 타
-    13.94s  agent 발화 끝
-    24.04s  agent 발화 끝
-    25.58s  user  발화 시작: 꽤 오래 걸리네.
-    26.89s  agent 발화 시작: [happy] 네, 꽤 긴 여정이네요. 그래도 기차로 풍경을 감상할 수 있고, 버스에서는 잠을 잘 수도 있겠
-    26.96s  user  발화 끝
-    35.84s  agent 발화 끝
-    36.71s  user  발화 시작: 기차 시간 좀 더 자세히 알려줄 수 있어?
-    38.95s  <ret> 발화 (turn6 첫 프레임)
-    39.22s  agent 발화 시작: <ret> 이천이십육년 칠월 십일 오전 여덟시에 칠번 플랫폼에서 출발하는 삼백이십이번 암트랙 기차를 타면, 
-    39.25s  user  발화 끝
-    40.45s  ⚡SPAN 주입 [d'=1.51s / d_lead=16.47s]: {"departure_time": "2026-07-10T08:00:00", "arrival_time": "2026-07-11T
-    55.68s  user  발화 시작: 백오십달러면 괜찮은 가격이네.
-    55.69s  agent 발화 끝
-    57.69s  agent 발화 시작: [happy] 네, 괜찮은 가격인 것 같아요. 미리 예매하면 더 저렴할 수도 있어요.
-    57.89s  user  발화 끝
-    64.36s  agent 발화 끝
-    64.37s  user  발화 시작: 혹시 시카고 근처에 괜찮은 카페 있어? 기차 타기 전에 커피 한 잔 하고 싶어.
-    66.40s  agent 발화 시작: 네.
-    67.13s  agent 발화 끝
-    68.58s  <ret> 발화 (turn11 첫 프레임)
-    69.17s  agent 발화 시작: <ret> 시카고에는 인텔리젠시아 커피라는 유명한 카페가 있어요. 고품질 커피와 세련된 분위기로 알려져 있고
-    69.19s  user  발화 끝
-    70.09s  ⚡SPAN 주입 [d'=1.52s / d_lead=12.94s]: Intelligentsia Coffee is a popular coffee shop in Chicago, known for i
-    82.12s  agent 발화 끝
-    83.04s  user  발화 시작: 거기는 내가 가본 적 있어. 다른 곳은 없을까?
-    86.08s  <ret> 발화 (turn13 첫 프레임)
-    86.25s  agent 발화 시작: <ret> 사와다 커피라는 일본풍의 카페도 있어요. 독특하고 미니멀한 분위기를 자랑하며, 백십이 노스 그린 
-    86.42s  user  발화 끝
-    87.19s  ⚡SPAN 주입 [d'=1.11s / d_lead=10.34s]: Sawada Coffee is a Japanese-inspired coffee shop in Chicago, offering 
-    96.19s  user  발화 시작: 사와다 커피, 이름이 독특하네.
-    96.59s  agent 발화 끝
-    98.12s  agent 발화 시작: [curious] 네, 독특한 이름이죠. 커피 맛도 훌륭하다고 해요.
-    98.30s  user  발화 끝
-    99.96s  user  발화 시작: 그치.
-   100.50s  user  발화 끝
-   103.17s  agent 발화 끝
-   103.61s  user  발화 시작: 보스턴 도착해서 바로 숙소에 가려면 어떻게 해야 할까?
-   106.76s  <ret> 발화 (turn18 첫 프레임)
-   106.84s  agent 발화 시작: <ret> 보스턴 도착 후에는 엠 비 티 에이 그린 라인 지하철을 타고 사우스 스테이션으로 가면 돼요.
-   107.08s  user  발화 끝
-   108.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: {"mode": "subway", "departure_time": "2026-07-11T15:00:00", "arrival_t
-   114.07s  agent 발화 끝
-   114.12s  user  발화 시작: 사우스 스테이션에서 내 숙소까지 택시를 타면 얼마나 걸릴까?
-   117.68s  <ret> 발화 (turn20 첫 프레임)
-   118.05s  user  발화 끝
-   118.12s  agent 발화 시작: <ret> 사우스 스테이션에서 리버티 호텔까지 택시를 타면 약 십분 정도 걸리고, 예상 비용은 십오달러입니다
-   118.86s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.58s]: (tool result) {"total time": "10m", "total distance": "2.5 miles", "mo
-   126.70s  agent 발화 끝
-   126.71s  user  발화 시작: 십오달러면 괜찮네.
-   128.36s  user  발화 끝
-   128.44s  agent 발화 시작: [happy] 네, 괜찮은 가격인 것 같아요.
-   131.49s  agent 발화 끝
-   131.71s  user  발화 시작: 근데… 보스턴에 가기 전에 잠깐 다른 일을 처리해야 할 것 같아. —
-   135.57s  user  발화 시작: …혹시 시카고에서 내일 모레 열리는 컨퍼런스 티켓 예매해 줄 수 있어?
-   135.64s  user  발화 끝
-   139.38s  <ret> 발화 (turn25 첫 프레임)
-   139.44s  agent 발화 시작: <ret> 네, 시카고에서 이천이십육년 칠월 십이일에 열리는 Tech Innovation Summit 티켓을
-   139.60s  user  발화 끝
-   140.80s  ⚡SPAN 주입 [d'=1.43s / d_lead=13.96s]: (tool result) {"event name": "Tech Innovation Summit", "date": "2026-0
-   153.40s  agent 발화 끝
-   154.10s  user  발화 시작: 고마워.
-   154.86s  agent 발화 시작: [happy] 천만에요. 컨퍼런스 잘 다녀오세요.
-   154.92s  user  발화 끝
-   157.72s  user  발화 시작: 응.
-   158.27s  user  발화 끝
-   159.00s  agent 발화 시작: 보스턴 여행 계획을 다시 짜볼까요?
-   159.17s  agent 발화 끝
-   162.09s  agent 발화 끝
-   162.45s  user  발화 시작: 응, 좋아.
-   163.27s  user  발화 끝
-   163.82s  agent 발화 시작: [curious] 보스턴에 도착해서 어떤 활동을 하고 싶으세요? 미술관, 박물관, 맛집 등 다양한 선택지가 
-   174.88s  agent 발화 시작: 숙소 근처에 괜찮은 레스토랑도 찾아드릴 수 있어요.
-   174.99s  agent 발화 끝
-   179.32s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 저녁에 영화 볼 건데, 혹시 재밌는 영화 추천해 줄 수 있어?
+     1.59s  agent 발화 시작: 네.
+     2.04s  agent 발화 끝
+     4.02s  <ret> 발화 (turn2 첫 프레임)
+     4.12s  agent 발화 시작: <ret> 네, 어떤 장르를 좋아하세요? 최근 개봉작 중에서 평점이 좋은 영화들을 찾아볼게요.
+     4.24s  user  발화 끝
+     4.92s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.41s]: Oppenheimer (2023): Christopher Nolan's epic historical thriller, star
+    11.53s  agent 발화 끝
+    11.70s  agent 발화 시작: 흥미로운 영화를 찾으신다면, 크리스토퍼 놀란 감독의 '오펜하이머'를 추천드려요. 킬리언 머피, 에밀리 블런트
+    20.43s  user  발화 시작: 네.
+    20.79s  user  발화 끝
+    28.58s  agent 발화 끝
+    28.68s  user  발화 시작: 오, 그거 괜찮겠다. 혹시 예매할 수 있는 곳도 알려줄 수 있어?
+    32.40s  <ret> 발화 (turn6 첫 프레임)
+    32.67s  agent 발화 시작: <ret> 네, '오펜하이머' 상영 시간은 씨 지 브이 강남에서 오후 두시, 다섯시 삼십분, 아홉시에 있고,
+    32.79s  user  발화 끝
+    33.54s  ⚡SPAN 주입 [d'=1.14s / d_lead=21.25s]: (tool result) CGV Gangnam: 14:00, 17:30, 21:00; Lotte Cinema World Tow
+    44.87s  user  발화 시작: 네.
+    45.22s  user  발화 끝
+    53.79s  user  발화 시작: 롯데시네마 월드타워 여섯시 오십분으로 예매해 줘.
+    53.92s  agent 발화 끝
+    56.85s  <ret> 발화 (turn9 첫 프레임)
+    57.05s  agent 발화 시작: <ret> 네, 롯데시네마 월드타워 '오펜하이머' 오후 여섯시 오십분 예매가 완료되었어요. 예매 번호는 티 
+    57.20s  user  발화 끝
+    58.43s  ⚡SPAN 주입 [d'=1.58s / d_lead=13.17s]: (tool result) Lotte Cinema World Tower, Oppenheimer, 18:50, 2026-07-25
+    67.27s  user  발화 시작: 네.
+    67.57s  user  발화 끝
+    70.23s  agent 발화 끝
+    70.28s  user  발화 시작: —근데 혹시 다른 영화도 같이 볼까?
+    72.06s  user  발화 시작: … 아니, 잠시만, 혹시 지금 서울에서 가장 핫한 연극도 알아봐 줄 수 있어?
+    72.10s  user  발화 끝
+    76.78s  user  발화 끝
+    76.86s  <ret> 발화 (turn13 첫 프레임)
+    76.86s  agent 발화 시작: <ret> 서울에서 가장 인기 있는 연극은 국립극장에서 상연 중인 '햄릿'이에요. 최근 호평을 받고 있고, 
+    77.46s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.91s]: Hamlet: The National Theatre of Korea, currently showing at the Nation
+    82.41s  user  발화 시작: 네.
+    82.79s  user  발화 끝
+    88.77s  agent 발화 끝
+    88.96s  agent 발화 시작: 혹시 '햄릿'에 관심 있으신가요? 예매 정보를 알아봐 드릴까요?
+    94.69s  agent 발화 끝

@@ -4,132 +4,116 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "연린",
+#     "name": "도현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 40s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "work",
-#       "text": "User works as a UX researcher."
+#       "date": "2026-06-10",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Jisoo."
 #     },
 #     {
-#       "date": "2026-06-02",
-#       "category": "show",
-#       "text": "User is currently watching a cooking competition show."
+#       "date": "2026-05-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Vietnamese."
 #     },
 #     {
-#       "date": "2026-05-26",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
-#     },
-#     {
-#       "date": "2026-02-17",
+#       "date": "2026-03-19",
 #       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "text": "User lives on the 2nd floor."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "gym",
-#       "text": "User has a gym membership near home."
+#       "date": "2026-03-01",
+#       "category": "streaming",
+#       "text": "User subscribes to Wavve and Melon."
 #     },
 #     {
-#       "date": "2026-01-04",
-#       "category": "dislike",
-#       "text": "User can't stand natto."
+#       "date": "2026-01-30",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "schedule",
-#       "text": "User has a 9-to-6 weekday schedule."
+#       "date": "2025-12-23",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is butter chicken."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "skill",
+#       "text": "User is a complete beginner at woodworking."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-05-25",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-04-26",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-11",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-03-09",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "title": "Sorting out a visa",
+#       "bullets": [
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 덴버의 마운틴 로지 호텔… | S2 육백칠십오달러? 생각보다 비싸네. 더 저렴한 곳 찾아봐 줘. | S3 음… 거기는 수영장이 있어? | S4 그럼 햄튼 인으로 바꿔줘.
+# EXAMINER(FDB-v2) 단계: S1 기분 전환할 겸 노래 좀 틀어줘. Jeff Buckley의 H | S2 음, 괜찮은데… 요즘 구독 서비스 좀… | S3 …알아보고 있거든. 혹시 실버 패키지라는 게 있나? | S4 잠깐만. 매달 내는 건가? 다른 옵션은 없어?
 
-     0.00s  user  발화 시작: 덴버의 마운틴 로지 호텔…
-     2.07s  user  발화 끝
-     4.08s  user  발화 시작: …이천이십사년 오월 십일부터 삼박 예약 좀 해줘.
-     5.34s  agent 발화 시작: 음.
-     5.79s  agent 발화 끝
-     7.14s  <ret> 발화 (turn3 첫 프레임)
-     7.27s  agent 발화 시작: <ret> 마운틴 로지 호텔, 이천이십사년 오월 십일부터 삼박 예약이 완료되었어요. 총 금액은 육백칠십오달러
-     7.44s  user  발화 끝
-     8.23s  ⚡SPAN 주입 [d'=1.10s / d_lead=10.30s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
-    17.45s  user  발화 시작: 육백칠십오달러? 생각보다 비싸네. 더 저렴한 곳 찾아봐 줘.
-    17.57s  agent 발화 끝
-    21.39s  <ret> 발화 (turn5 첫 프레임)
-    21.57s  agent 발화 시작: <ret> 덴버에는 계절과 편의시설에 따라 평균 객실 요금이 백달러에서 이백오십달러까지 다양한 호텔이 있어요
-    21.66s  user  발화 끝
-    22.34s  ⚡SPAN 주입 [d'=0.94s / d_lead=11.59s]: Denver has many hotels with average nightly rates ranging from $100 to
-    29.25s  user  발화 시작: 어.
-    29.79s  user  발화 끝
-    33.16s  agent 발화 끝
-    33.16s  user  발화 시작: 햄튼 인은 어때? 거기는 어떤 곳이야?
-    35.41s  agent 발화 시작: 햄튼 인 덴버 다운타운은 무료 조식과 피트니스 센터를 갖춘 현대적인 호텔입니다. 평점이 사 점 이점 정도로 
-    35.56s  user  발화 끝
-    43.61s  agent 발화 끝
-    43.94s  user  발화 시작: 음… 거기는 수영장이 있어?
-    46.01s  agent 발화 시작: 수영장은 없지만, 근처에 공공 수영장이 몇 군데 있습니다—
-    46.20s  user  발화 끝
-    48.80s  user  발화 시작: … 잠깐만, 혹시 마운틴 로지에 취소 수수료가 붙는다면, 햄튼 인으로 바로 바꾸는 게 나을까?
-    49.52s  agent 발화 끝
-    54.11s  <ret> 발화 (turn12 첫 프레임)
-    54.61s  agent 발화 시작: <ret> 마운틴 로지는 체크인 일흔두시간 전에 취소하면 전액 환불되지만, 일흔두시간 이내 취소 시에는 오십
-    54.82s  user  발화 끝
-    54.93s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.95s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
-    59.21s  user  발화 시작: 응.
-    59.80s  user  발화 끝
-    63.50s  agent 발화 시작: 햄튼 인으로 변경하는 것은 언제든 가능합니다. 수수료를 고려하면 햄튼 인이 더 나은 선택일 수도 있겠네요.
-    63.56s  agent 발화 끝
-    66.82s  user  발화 시작: 어.
-    67.45s  user  발화 끝
-    70.58s  agent 발화 끝
-    70.84s  user  발화 시작: 그럼 햄튼 인으로 바꿔줘.
-    72.37s  <ret> 발화 (turn17 첫 프레임)
-    72.54s  agent 발화 시작: <ret> [happy] 네, 햄튼 인 덴버 다운타운으로 변경되었어요. 확인번호는 엔 와이 일 사 칠 케이이
-    72.59s  user  발화 끝
-    73.70s  ⚡SPAN 주입 [d'=1.32s / d_lead=7.83s]: (tool result) {"confirmation id": "NY147K", "hotel name": "Hampton Inn
-    77.50s  user  발화 시작: 응.
-    77.95s  user  발화 끝
-    80.22s  user  발화 시작: 오, 훨씬 저렴하네. 고마워.
-    80.37s  agent 발화 끝
-    82.76s  agent 발화 시작: 별말씀을요. 여행 준비 잘 하시고, 즐거운 시간 보내세요.
-    82.81s  user  발화 끝
-    87.06s  agent 발화 끝
+     0.00s  user  발화 시작: 기분 전환할 겸 노래 좀 틀어줘. Jeff Buckley의 Hallelujah로.
+     4.17s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  user  발화 끝
+     4.71s  agent 발화 시작: <ret> [happy] 네, Jeff Buckley의 Hallelujah 틀어드릴게요. 지금 바로 재생 시
+     5.45s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.63s]: (tool result) Hallelujah, Jeff Buckley, MUS3-005053, confirmed
+     8.10s  user  발화 시작: 네.
+     8.49s  user  발화 끝
+     9.34s  agent 발화 끝
+     9.36s  agent 발화 시작: 곡이 시작됐어요. 혹시 다른 노래도 듣고 싶으신가요?
+    13.33s  user  발화 시작: 음, 괜찮은데… 요즘 구독 서비스 좀…
+    13.34s  agent 발화 끝
+    16.83s  user  발화 끝
+    18.29s  user  발화 시작: …알아보고 있거든. 혹시 실버 패키지라는 게 있나?
+    20.49s  agent 발화 시작: 그렇죠.
+    21.26s  agent 발화 끝
+    21.60s  <ret> 발화 (turn7 첫 프레임)
+    21.85s  agent 발화 시작: <ret> 실버 패키지가 있습니다. 매달 실버 기능을 이용할 수 있는 상품이고요, 지금 바로 구독 신청해 드
+    21.87s  user  발화 끝
+    23.37s  ⚡SPAN 주입 [d'=1.77s / d_lead=8.07s]: (tool result) prod-11223, Silver Package, Monthly access to silver fea
+    28.07s  user  발화 시작: 예.
+    28.60s  user  발화 끝
+    29.92s  agent 발화 끝
+    30.10s  user  발화 시작: 잠깐만. 매달 내는 건가? 다른 옵션은 없어?
+    34.56s  user  발화 끝
+    34.90s  agent 발화 시작: 네, 실버 패키지는 매달 결제 방식입니다. 다른 옵션도 확인해 드릴까요?
+    40.27s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "예정",
+#     "name": "서정",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,95 +13,89 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "learning",
-#       "text": "User is studying for the CPA exam."
-#     },
-#     {
-#       "date": "2026-05-07",
+#       "date": "2026-05-05",
 #       "category": "music",
-#       "text": "User likes listening to classical piano."
+#       "text": "User likes listening to 90s hip-hop."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "skill",
-#       "text": "User is quite experienced with pottery."
+#       "date": "2026-05-03",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "date": "2026-04-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is February 19."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "hobby",
-#       "text": "User is into trail running."
+#       "date": "2026-03-06",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
 #       "date": "2026-01-28",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Leo."
 #     },
 #     {
-#       "date": "2026-01-11",
-#       "category": "anniversary",
-#       "text": "User's anniversary is December 11."
-#     },
-#     {
-#       "date": "2025-12-15",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
+#       "date": "2026-01-15",
+#       "category": "floor",
+#       "text": "User lives on the 15th floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-02",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-05-07",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-13",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 벨라지오 호텔, 라스베이거스… | S2 …칠월 십팔일부터 사박 예약 좀 해줘. | S3 비 엑스 팔 사 구 제이가 뭐지? 복잡하네. | S4 그 호텔 주변에 괜찮은 식당 좀 찾아줘.
+# EXAMINER(FDB-v2) 단계: S1 로스앤젤레스에서 라스베이거스까지 운전해서 가는 거리랑 시간은  | S2 육백육십팔분이면 거의 열한시간이네요. 좀 더 가까운 곳으로 갈 | S3 포틀랜드에 괜찮은 유니섹스 미용실이 있을까요? | S4 …혹시 시애틀은 어떨까요? 시애틀에는 괜찮은 곳이 있을 것 같
 
-     0.00s  user  발화 시작: 벨라지오 호텔, 라스베이거스…
-     3.32s  user  발화 끝
-     4.91s  user  발화 시작: …칠월 십팔일부터 사박 예약 좀 해줘.
-     6.84s  <ret> 발화 (turn2 첫 프레임)
-     7.17s  user  발화 끝
-     7.19s  agent 발화 시작: <ret> 벨라지오 호텔, 라스베이거스, 이천이십육년 칠월 십팔일부터 사박 예약이 완료되었어요. 확인 번호는
-     8.06s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.23s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
-    14.20s  user  발화 시작: 응응.
-    14.97s  user  발화 끝
-    16.41s  agent 발화 끝
-    17.71s  user  발화 시작: 비 엑스 팔 사 구 제이가 뭐지? 복잡하네.
-    20.25s  agent 발화 시작: 확인 번호는 예약 확인을 위해 필요할 수 있습니다. 간단하게 비 엑스 팔 사 구 제이라고 기억해 두시면 됩니
-    20.29s  user  발화 끝
-    27.38s  agent 발화 끝
-    27.55s  user  발화 시작: 그 호텔 주변에 괜찮은 식당 좀 찾아줘.
-    29.72s  <ret> 발화 (turn7 첫 프레임)
-    30.18s  agent 발화 시작: <ret> 벨라지오 호텔 근처에는 메이페어 슈퍼 클럽이라는 식당이 있어요. 라이브 공연을 보면서 현대 미국 
-    30.27s  user  발화 끝
-    30.32s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.44s]: (tool result) "The Mayfair Supper Club at Bellagio offers a sophistica
-    38.61s  agent 발화 끝
+     0.00s  user  발화 시작: 로스앤젤레스에서 라스베이거스까지 운전해서 가는 거리랑 시간은 얼마나 걸릴까요?
+     5.23s  <ret> 발화 (turn1 첫 프레임)
+     5.55s  user  발화 끝
+     5.58s  agent 발화 시작: <ret> 로스앤젤레스에서 라스베이거스까지 운전하는 거리는 구백오십칠킬로미터이고, 시간이 육백육십팔분 정도 
+     6.45s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.80s]: 34.0522,118.2437 to 35.2271,109.0479: 957.0 km, 668 min
+     8.65s  user  발화 시작: 예.
+     8.99s  user  발화 끝
+    15.38s  agent 발화 끝
+    15.53s  user  발화 시작: 육백육십팔분이면 거의 열한시간이네요. 좀 더 가까운 곳으로 갈 만한 곳 없을까요?
+    21.37s  user  발화 끝
+    21.40s  agent 발화 시작: [happy] 네, 열한시간 정도 걸리죠. 혹시 포틀랜드 쪽은 어떠세요? 그쪽도 볼거리가 많답니다.
+    26.79s  agent 발화 끝
+    27.15s  user  발화 시작: 포틀랜드에 괜찮은 유니섹스 미용실이 있을까요?
+    29.64s  <ret> 발화 (turn6 첫 프레임)
+    30.08s  agent 발화 시작: <ret> 죄송하지만, 포틀랜드에서 유니섹스 미용실 정보를 찾을 수 없었습니다. —
+    30.14s  user  발화 끝
+    30.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.87s]: (tool result) (no information found)
+    34.21s  user  발화 시작: …혹시 시애틀은 어떨까요? 시애틀에는 괜찮은 곳이 있을 것 같아요.
+    34.95s  agent 발화 끝
+    38.33s  user  발화 끝
+    38.77s  agent 발화 시작: [surprised] 아, 시애틀이요? 좋은 생각이에요. 시애틀에는 괜찮은 미용실이 꽤 있을 거예요. 잠시만
+    45.22s  agent 발화 끝
+    45.27s  agent 발화 시작: 죄송하지만 시애틀에서도 유니섹스 미용실 정보를 찾을 수 없었습니다. 다른 도시를 알아볼까요?
+    51.52s  agent 발화 끝

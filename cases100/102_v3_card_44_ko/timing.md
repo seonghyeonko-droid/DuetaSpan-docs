@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_44",
-#     "name": "민훈",
+#     "name": "민우",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,275 +13,238 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "60s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "date": "2026-06-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Peru in July."
 #     },
 #     {
-#       "date": "2026-06-18",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2026-03-20",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     },
 #     {
-#       "date": "2026-06-15",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Minjun."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "hobby",
-#       "text": "User is into film photography."
-#     },
-#     {
-#       "date": "2026-04-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-20",
-#       "category": "music",
-#       "text": "User likes listening to K-ballads."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is seafood pasta."
+#       "date": "2026-03-19",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Ava."
 #     },
 #     {
 #       "date": "2026-03-17",
+#       "category": "employer",
+#       "text": "User works at a media company."
+#     },
+#     {
+#       "date": "2026-03-01",
 #       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "text": "User is growing a few succulents at home."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is mushroom risotto."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-20",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-21",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-06-10",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 차 수리 맡기러 가는데, 팔월 이십일 오후 다섯시 삼십분 | S2 아, 마이크 커브 콩그레게이션! 기억났다. 고마워. | S3 여행 가서 뭐 할지 아직 잘 모르겠어. | S4 돼지국밥 골목? 거긴 어디에 있어?
+# EXAMINER(FDB-v2) 단계: S1 오늘 치과 예약했어, 십이월 이십일 오후 두시 십오분. | S2 그냥 간단한 거 먹고 싶어. 근처에 분식집 있으면 좋겠다. | S3 러쉬? 그 향은 어떤 향이야? | S4 경주? 거기는 가본 적 있는데, 너무 사람이 많았어.
 
-     0.00s  user  발화 시작: 오늘 차 수리 맡기러 가는데, 팔월 이십일 오후 다섯시 삼십분에 가기로 했어.
-     2.99s  agent 발화 시작: 네.
-     3.49s  agent 발화 끝
-     4.53s  user  발화 끝
-     4.63s  agent 발화 시작: 네, 기억해 둘게요. 차 수리 예약 잘 다녀오세요.
-     8.14s  agent 발화 끝
-     9.27s  user  발화 시작: 고마워. 아, 그리고 다음 주에 친구랑 여행 가려고 하는데, 어디가 좋을까?
-    12.14s  agent 발화 시작: 네.
-    12.59s  agent 발화 끝
-    14.74s  agent 발화 시작: 친구분과 함께하는 여행, 정말 좋으시겠네요. 어떤 스타일의 여행을 좋아하시나요?
-    14.87s  user  발화 끝
-    19.93s  agent 발화 끝
-    21.46s  user  발화 시작: 음… 바다 근처에서 조용히 쉬고 싶어. 부산 근처면 더 좋고.
-    24.98s  <ret> 발화 (turn7 첫 프레임)
-    25.39s  agent 발화 시작: <ret> 부산 근처 바다 근처에서 조용히 쉬고 싶으시군요. 부산은 해운대와 광안리 같은 아름다운 해변으로 
-    25.54s  user  발화 끝
-    26.05s  ⚡SPAN 주입 [d'=1.07s / d_lead=10.43s]: Busan is a South Korean city known for its beaches, colorful culture, 
-    29.50s  user  발화 시작: 응응.
-    29.99s  user  발화 끝
-    35.57s  user  발화 시작: 해운대는 너무 사람이 많아. 좀 더 한적한 곳 없을까?
-    35.82s  agent 발화 끝
-    38.06s  <ret> 발화 (turn10 첫 프레임)
-    38.64s  agent 발화 시작: <ret> 좀 더 조용한 곳을 원하시는군요. 부산의 다대포 해변은 해운대보다 훨씬 한적하고, 넓은 모래사장과
-    38.81s  user  발화 끝
-    39.43s  ⚡SPAN 주입 [d'=1.38s / d_lead=9.83s]: Dadaepo Beach in Busan offers a more tranquil atmosphere than Haeundae
-    41.84s  user  발화 시작: 응.
-    42.06s  user  발화 끝
-    48.47s  agent 발화 끝
-    48.87s  user  발화 시작: 다대포 해변? 거긴 안 가봤는데. 괜찮겠는데.
-    52.23s  user  발화 끝
-    52.28s  agent 발화 시작: 다대포 해변은 낙조가 특히 아름다운 곳으로 유명해요. 친구분과 함께 멋진 추억을 만드실 수 있을 거예요.
-    54.71s  user  발화 시작: 응.
-    55.07s  user  발화 끝
-    59.05s  agent 발화 끝
-    59.38s  user  발화 시작: 혹시 근처에 맛있는 식당도 있을까? 해산물 먹고 싶은데.
-    61.26s  agent 발화 시작: 네.
-    61.75s  agent 발화 끝
-    62.83s  <ret> 발화 (turn17 첫 프레임)
-    62.89s  agent 발화 시작: <ret> 해산물을 좋아하시는군요. 다대포 해변 근처에 “거진 해산물 타운”이라는 식당이 있는데, 신선한 해
-    62.94s  user  발화 끝
-    64.56s  ⚡SPAN 주입 [d'=1.74s / d_lead=10.39s]: The restaurant "Geojin Seafood Town" in Busan offers a wide selection 
-    66.37s  user  발화 시작: 응.
-    66.82s  user  발화 끝
-    73.28s  agent 발화 끝
-    73.33s  user  발화 시작: 거진 해산물 타운? 이름이 좀 특이하네.
-    75.82s  user  발화 끝
-    75.98s  agent 발화 시작: 네, 현지인들에게도 인기가 많은 곳이에요. 싱싱한 해산물 맛을 보실 수 있을 거예요.
-    81.81s  user  발화 시작: 아, 맞다. 혹시 영화 볼만한 거 있어? 요즘 개봉한 영화 중에.
-    81.86s  agent 발화 끝
-    86.29s  <ret> 발화 (turn22 첫 프레임)
-    86.40s  user  발화 끝
-    86.41s  agent 발화 시작: <ret> 요즘 개봉한 영화 중에서 “인사이드 아웃 이”가 부산 영화관에서 상영 중이고, 감동적인 스토리로 
-    86.89s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.53s]: "Inside Out 2" is currently showing in Busan cinemas, receiving positi
-    94.94s  agent 발화 끝
-    94.94s  user  발화 시작: 인사이드 아웃 이? 그거 재밌나?
-    97.25s  user  발화 끝
-    97.38s  agent 발화 시작: 네, 많은 분들이 감동과 재미를 동시에 느꼈다고 말씀하세요. 가족 영화로도 추천해요.
-    99.39s  user  발화 시작: 응응.
-    99.89s  user  발화 끝
-   103.31s  agent 발화 끝
-   103.82s  user  발화 시작: 나도 한번 봐야겠다. 근데, 옛날 영화 중에 “켈리의 영웅들” 테마곡 부른 가수 누구였지?
-   109.25s  <ret> 발화 (turn27 첫 프레임)
-   109.67s  agent 발화 시작: <ret> “켈리의 영웅들” 테마곡은 마이크 커브 콩그레게이션이 불렀습니다.
-   109.89s  user  발화 끝
-   110.48s  ⚡SPAN 주입 [d'=1.23s / d_lead=4.16s]: The theme song to "Kelly's Heroes" was sung by Mike Curb Congregation.
-   112.28s  user  발화 시작: 응.
-   112.64s  user  발화 끝
-   113.82s  agent 발화 끝
-   114.57s  user  발화 시작: 아, 마이크 커브 콩그레게이션! 기억났다. 고마워.
-   118.41s  user  발화 끝
-   118.42s  agent 발화 시작: 별말씀을요. 언제든지 궁금한 점이 있으면 저에게 물어보세요.
-   120.20s  user  발화 시작: 응.
-   120.65s  user  발화 끝
-   123.00s  agent 발화 끝
-   123.12s  user  발화 시작: 오늘 차 맡기는 거, 혹시 시간 기억나?
-   125.70s  user  발화 끝
-   125.92s  agent 발화 시작: 네, 팔월 이십일 오후 다섯시 삼십분에 차를 맡기기로 하셨습니다.
-   127.61s  user  발화 시작: 그래.
-   128.38s  user  발화 끝
-   130.64s  agent 발화 끝
-   131.34s  user  발화 시작: 아, 맞다. 차 맡기는 비용이 얼마였지?
-   133.56s  agent 발화 시작: 육만원에 차 수리를 맡기기로 하셨습니다.
-   133.69s  user  발화 끝
-   136.13s  user  발화 시작: 고마워. 다시 한번 알려줘서.
-   136.14s  agent 발화 끝
-   138.07s  agent 발화 시작: 천만에요. 도움이 되어서 기쁩니다.
-   138.15s  user  발화 끝
-   141.16s  agent 발화 끝
-   141.18s  user  발화 시작: 오늘 날씨 어때? 부산 날씨.
-   142.56s  <ret> 발화 (turn40 첫 프레임)
-   143.06s  agent 발화 시작: <ret> 현재 부산의 날씨는 이십팔 점 오도이고, 습도는 칠십퍼센트, 바람은 시속 사 점 이킬로미터로, 부
-   143.16s  user  발화 끝
-   143.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.57s]: (tool result) 28.5°C, humidity 70%, wind 4.2 km/h, partly cloudy.
-   146.01s  user  발화 시작: 응.
-   146.51s  user  발화 끝
-   151.63s  agent 발화 끝
-   152.13s  user  발화 시작: 덥겠네.
-   152.94s  user  발화 끝
-   153.00s  agent 발화 시작: 네, 오늘 꽤 더울 것으로 예상됩니다. 시원한 물을 충분히 마시는 것이 좋겠어요.
-   156.33s  user  발화 시작: 응.
-   156.83s  user  발화 끝
-   159.21s  agent 발화 끝
-   159.77s  user  발화 시작: 여행 갈 때 뭐 챙겨가면 좋을까?
-   162.27s  agent 발화 시작: 여행 가실 때 챙겨가면 좋을 물품은 옷, 세면도구, 상비약, 그리고 카메라 정도가 있겠네요.
-   162.40s  user  발화 끝
-   168.43s  agent 발화 끝
-   169.19s  user  발화 시작: 상비약은 어떤 걸 챙겨가야 할까?
-   170.97s  <ret> 발화 (turn48 첫 프레임)
-   171.50s  user  발화 끝
-   171.53s  agent 발화 시작: <ret> 여행 시 챙겨가면 좋은 상비약으로는 진통제, 지사제, 멀미약, 그리고 반창고 등이 있습니다.
-   171.71s  ⚡SPAN 주입 [d'=0.74s / d_lead=6.58s]: Common travel medications include pain relievers, anti-diarrheal medic
-   175.78s  user  발화 시작: 응.
-   176.27s  user  발화 끝
-   178.11s  agent 발화 끝
-   178.13s  user  발화 시작: 멀미약도 챙겨가야겠다. 나는 멀미를 잘 하거든.
-   181.32s  user  발화 끝
-   181.35s  agent 발화 시작: 네, 멀미를 잘 하신다면 꼭 멀미약을 챙겨가시는 것이 좋겠어요.
-   183.79s  user  발화 시작: 응.
-   184.23s  user  발화 끝
-   186.16s  agent 발화 끝
-   186.86s  user  발화 시작: 여행 가서 뭐 할지 아직 잘 모르겠어.
-   189.21s  user  발화 끝
-   189.37s  agent 발화 시작: 여행 계획을 세우는 데 도움을 드릴까요? 친구분과 함께 하고 싶은 활동을 알려주시면, 맞춤형 일정을 추천해 
-   192.00s  🃏 CARD 주입 (2400f, 누적 55턴 요약, 126f): appt time: 팔월 이십일 오후 다섯시 삼십분; song: 켈리의 영웅들; weather loc: 부산; motion sickness: 나는 멀미를 잘 하거
-   196.96s  user  발화 시작: 글쎄… 그냥 바다 보면서 쉬고 싶어.
-   197.20s  agent 발화 끝
-   199.40s  agent 발화 시작: 바다를 보면서 쉬는 것도 정말 좋은 휴식 방법이죠. 다대포 해변 근처에는 산책로도 잘 조성되어 있어서, 여유
-   199.54s  user  발화 끝
-   206.31s  user  발화 시작: 맞아.
-   207.00s  user  발화 끝
-   210.02s  agent 발화 끝
-   210.09s  user  발화 시작: 산책도 좋겠다.
-   211.60s  user  발화 끝
-   211.65s  agent 발화 시작: 네, 바다를 바라보며 산책하면 마음이 편안해질 거예요.
-   215.63s  agent 발화 끝
-   215.82s  user  발화 시작: 혹시 부산에 괜찮은 카페 있어? 분위기 좋은 곳으로.
-   218.82s  <ret> 발화 (turn61 첫 프레임)
-   219.22s  agent 발화 시작: <ret> 부산에는 “카페 연”이라는 분위기 좋은 카페가 있는데, 세련된 인테리어와 바다 전망을 자랑합니다.
-   219.34s  user  발화 끝
-   219.68s  ⚡SPAN 주입 [d'=0.86s / d_lead=6.86s]: "Cafe Yeon" in Busan is known for its stylish interior and ocean views
-   226.07s  agent 발화 끝
-   226.22s  user  발화 시작: 카페 연? 거긴 안 가봤는데.
-   228.47s  user  발화 끝
-   228.61s  agent 발화 시작: 네, 젊은층에게 인기가 많은 곳이에요. 맛있는 커피와 디저트를 즐기실 수 있을 거예요.
-   234.68s  user  발화 시작: 커피도 좋아해.
-   234.72s  agent 발화 끝
-   236.02s  agent 발화 시작: 네, 카페 연에서는 다양한 종류의 커피를 맛보실 수 있어요.
-   236.05s  user  발화 끝
-   240.13s  agent 발화 끝
-   241.22s  user  발화 시작: 오늘 저녁 뭐 먹을까?
-   242.60s  agent 발화 시작: 오늘 저녁에는 어떤 음식이 드시고 싶으세요?
-   242.78s  user  발화 끝
-   245.33s  agent 발화 끝
-   245.53s  user  발화 시작: 음… 돼지국밥 먹고 싶다.
-   247.63s  agent 발화 시작: 돼지국밥은 부산의 대표적인 음식이죠. 맛있는 돼지국밥집을 찾아드릴까요?
-   247.66s  user  발화 끝
-   252.36s  user  발화 시작: 그래줘.
-   252.52s  <ret> 발화 (turn71 첫 프레임)
-   252.77s  agent 발화 끝
-   253.00s  user  발화 끝
-   253.06s  agent 발화 시작: <ret> 부산에는 “돼지국밥 골목”이라는 돼지국밥 전문점이 많이 모여있는 곳이 있는데, 유명해요.
-   253.32s  ⚡SPAN 주입 [d'=0.80s / d_lead=6.16s]: "Dwaeji Gukbap Alley" in Busan is a famous street known for its numero
-   259.23s  agent 발화 끝
-   260.39s  user  발화 시작: 돼지국밥 골목? 거긴 어디에 있어?
-   262.63s  agent 발화 시작: 돼지국밥 골목은 부산역 근처에 위치하고 있습니다.
-   262.65s  user  발화 끝
-   265.73s  agent 발화 끝
-   266.31s  user  발화 시작: 부산역 근처? 가깝네.
-   268.25s  user  발화 끝
-   268.29s  agent 발화 시작: 네, 부산역에서 도보로 이동할 수 있을 정도로 가까워요.
-   272.13s  agent 발화 끝
-   272.16s  user  발화 시작: 혹시 부산역 근처에 괜찮은 숙소 있어?
-   274.18s  <ret> 발화 (turn77 첫 프레임)
-   274.71s  agent 발화 시작: <ret> 부산역 근처에는 “호텔 엘씨티 더 부티크”라는 현대적인 숙소가 있는데, 교통이 편리합니다.
-   274.88s  user  발화 끝
-   275.19s  ⚡SPAN 주입 [d'=1.01s / d_lead=6.44s]: The "Hotel LCT The Boutique" near Busan Station offers modern accommod
-   277.28s  user  발화 시작: 그치.
-   277.92s  user  발화 끝
-   281.15s  agent 발화 끝
-   281.86s  user  발화 시작: 호텔 엘씨티 더 부티크? 한번 알아봐야겠다.
-   285.22s  agent 발화 시작: 네, 좋은 선택일 것 같아요.
-   285.37s  user  발화 끝
-   287.29s  agent 발화 끝
-   288.34s  user  발화 시작: 오늘 차 맡기는 거, 다시 한번 시간 알려줄래?
-   291.05s  agent 발화 시작: 네, 팔월 이십일 오후 다섯시 삼십분에 차를 맡기기로 하셨습니다.
-   291.11s  user  발화 끝
-   292.89s  user  발화 시작: 응.
-   293.25s  user  발화 끝
-   296.06s  agent 발화 끝
-   296.21s  user  발화 시작: 아, 맞아. 차 맡기는 비용은 얼마였지?
-   298.36s  agent 발화 시작: 육만원에 차 수리를 맡기기로 하셨습니다.
-   298.56s  user  발화 끝
-   300.89s  agent 발화 끝
-   300.99s  user  발화 시작: 고마워. 다시 한번 알려줘서.
-   302.72s  agent 발화 시작: 천만에요. 도움이 되어서 기쁩니다.
-   302.93s  user  발화 끝
-   305.59s  agent 발화 끝
-   305.74s  user  발화 시작: 오늘 날씨 다시 한번 알려줄래?
-   307.72s  user  발화 끝
-   308.17s  agent 발화 시작: 현재 부산의 날씨는 이십팔 점 오도이고, 습도는 칠십퍼센트, 바람은 시속 사 점 이킬로미터로, 부분적으로 흐
-   313.40s  user  발화 시작: 어.
-   313.90s  user  발화 끝
-   316.88s  agent 발화 끝
-   317.51s  user  발화 시작: 오늘 하루도 잘 보내.
-   319.03s  user  발화 끝
+     0.00s  user  발화 시작: 오늘 치과 예약했어, 십이월 이십일 오후 두시 십오분.
+     4.11s  user  발화 끝
+     4.30s  agent 발화 시작: 네, 기억해 둘게요. 혹시 다른 계획은 없으세요?
+     7.95s  agent 발화 끝
+     8.08s  user  발화 시작: 아니, 그냥 좀 피곤해서 쉬려고. 요즘 드라마 재밌는 거 없어?
+    12.38s  user  발화 끝
+    12.54s  agent 발화 시작: 요즘 인기 있는 드라마는 '눈이 부시게' 같아요. 로맨스 판타지 장르인데, 평점이 꽤 높아요.
+    16.42s  user  발화 시작: 음.
+    16.76s  user  발화 끝
+    18.74s  agent 발화 끝
+    18.78s  user  발화 시작: '눈이 부시게'? 제목이 특이하네. 한번 찾아봐야겠다.
+    21.97s  user  발화 끝
+    21.99s  agent 발화 시작: 네, 한번 검색해 보세요. 혹시 다른 장르도 좋아하시나요?
+    25.82s  agent 발화 끝
+    26.33s  user  발화 시작: 음, 옛날 드라마도 좋아해. '그레이 아나토미' 다시 보는데, 데렉이랑 메레디스가 언제 다시 만나는지 까먹었
+    33.54s  <ret> 발화 (turn8 첫 프레임)
+    33.60s  agent 발화 시작: <ret> '그레이 아나토미'의 데렉과 메레디스가 다시 만나는 건 시즌 이의 "Losing My Religi
+    33.65s  user  발화 끝
+    34.47s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.26s]: In Season 2, Derek and Meredith reconnect in the episode "Losing My Re
+    39.17s  user  발화 시작: 응.
+    39.57s  user  발화 끝
+    40.78s  user  발화 시작: 아, 맞다! 그 에피소드였지. 너무 슬펐어.
+    40.86s  agent 발화 끝
+    43.84s  user  발화 끝
+    43.95s  agent 발화 시작: 네, 정말 감동적인 에피소드였죠. 혹시 다른 드라마도 추천해 드릴까요?
+    45.63s  user  발화 시작: 응.
+    45.94s  user  발화 끝
+    49.44s  agent 발화 끝
+    49.51s  user  발화 시작: 아니, 됐어. 그냥 좀 쉬고 싶어. 부산에서 조용한 카페 있으면 알려줘.
+    54.04s  <ret> 발화 (turn14 첫 프레임)
+    54.51s  user  발화 끝
+    54.63s  agent 발화 시작: <ret> 부산에서 조용한 카페라면, 카페 베네 부산점이 괜찮을 것 같아요. 전포동에 있어요.
+    54.86s  ⚡SPAN 주입 [d'=0.82s / d_lead=6.11s]: Cafe Bene Busan (-35.1785, 128.7727): 77 Jeonpo-dong, Busanjin-gu, Bus
+    60.42s  user  발화 시작: 카페 베네? 거기 분위기는 어때?
+    60.74s  agent 발화 끝
+    62.76s  user  발화 끝
+    63.16s  agent 발화 시작: 조용하고 아늑한 분위기예요. 커피 맛도 좋고요.
+    67.18s  agent 발화 끝
+    67.36s  user  발화 시작: 좋아, 한번 가봐야겠다. 오늘 저녁은 뭐 먹을까?
+    71.36s  user  발화 끝
+    71.44s  agent 발화 시작: 저녁 메뉴는 어떤 걸 선호하시나요? 한식, 양식, 중식?
+    75.87s  user  발화 시작: 그냥 간단한 거 먹고 싶어. 근처에 분식집 있으면 좋겠다.
+    76.15s  agent 발화 끝
+    79.84s  <ret> 발화 (turn20 첫 프레임)
+    79.86s  user  발화 끝
+    79.91s  agent 발화 시작: <ret> 근처에 바다바다 국수라는 분식집이 있어요. 중랑대로에 있어요.
+    81.58s  ⚡SPAN 주입 [d'=1.74s / d_lead=4.67s]: Bada Bada Noodle (-35.1721, 128.7735): 23, Jungangdae-ro 107beon-gil, 
+    81.80s  user  발화 시작: 어.
+    82.19s  user  발화 끝
+    84.58s  agent 발화 끝
+    84.82s  user  발화 시작: 바다바다 국수? 이름이 재밌네. 거기는 어떤 메뉴가 맛있어?
+    89.04s  user  발화 끝
+    89.16s  agent 발화 시작: 칼국수랑 비빔국수가 맛있다고 하네요.
+    91.74s  agent 발화 끝
+    92.00s  user  발화 시작: 칼국수 먹어야겠다. 요즘 날씨가 쌀쌀하니까.
+    94.69s  user  발화 끝
+    95.01s  agent 발화 시작: 네, 따뜻한 칼국수 한 그릇이면 딱이겠네요.
+    98.10s  agent 발화 끝
+    98.67s  user  발화 시작: 맞아. 아, 내일 모레가 엄마 생신이네. 선물 뭐 해드리지?
+   100.34s  agent 발화 시작: 네.
+   100.88s  agent 발화 끝
+   102.83s  user  발화 끝
+   103.00s  agent 발화 시작: 어머님 생신이시군요. 어떤 선물을 좋아하시나요?
+   106.69s  agent 발화 끝
+   106.87s  user  발화 시작: 음… 향수를 좋아하시는데, 어떤 향이 좋을까?
+   110.18s  <ret> 발화 (turn30 첫 프레임)
+   110.65s  user  발화 끝
+   110.72s  agent 발화 시작: <ret> 조 말론 런던의 잉글리쉬 페어 앤 프리지아 향수가 인기 있어요. 배, 프리지아, 장미 향이 나요.
+   110.78s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.69s]: Jo Malone London English Pear & Freesia: a popular floral fragrance wi
+   114.29s  user  발화 시작: 그치.
+   114.68s  user  발화 끝
+   116.41s  agent 발화 끝
+   116.62s  user  발화 시작: 조 말론? 향이 괜찮나? 가격은 얼마 정도 해?
+   120.32s  user  발화 끝
+   120.51s  agent 발화 시작: 가격은 용량에 따라 다르지만, 보통 십만원대부터 시작해요.
+   121.79s  user  발화 시작: 어.
+   122.47s  user  발화 끝
+   124.58s  agent 발화 끝
+   124.96s  user  발화 시작: 십만원… 좀 비싸네. 다른 향수도 추천해 줄래?
+   128.16s  agent 발화 시작: 좀 더 저렴한 향수도 있어요. 러쉬의 '러브' 향수는 어떠세요?
+   128.24s  user  발화 끝
+   132.45s  user  발화 시작: 러쉬? 그 향은 어떤 향이야?
+   132.73s  agent 발화 끝
+   134.46s  user  발화 끝
+   134.52s  agent 발화 시작: 달콤하고 로맨틱한 향이에요.
+   136.63s  agent 발화 끝
+   136.83s  user  발화 시작: 음… 엄마가 좋아할지는 모르겠네.
+   139.52s  agent 발화 시작: 어머님 취향을 고려해서 신중하게 선택하시는 게 좋겠어요.
+   139.52s  user  발화 끝
+   143.08s  agent 발화 끝
+   143.52s  user  발화 시작: 맞아. 아, 내일 부산 날씨 어때?
+   146.19s  <ret> 발화 (turn42 첫 프레임)
+   146.44s  agent 발화 시작: <ret> 내일 부산 날씨는 십오 점 이도, 습도는 칠십팔퍼센트, 바람은 시속 구 점 오킬로미터로 예상됩니다
+   146.50s  user  발화 끝
+   147.36s  ⚡SPAN 주입 [d'=1.18s / d_lead=6.71s]: (tool result) 15.2°C, humidity 78%, wind 9.5 km/h
+   153.16s  agent 발화 끝
+   153.16s  user  발화 시작: 십오도면 괜찮네. 따뜻하게 입고 나가야겠다.
+   156.25s  user  발화 끝
+   156.39s  agent 발화 시작: 네, 겉옷을 꼭 챙기세요.
+   158.78s  agent 발화 끝
+   159.00s  user  발화 시작: 알았어. 아, 전에 예약했던 치과 예약 시간 다시 알려줄래?
+   162.91s  user  발화 끝
+   163.41s  agent 발화 시작: 네, 십이월 이십일 오후 두시 십오분입니다.
+   164.72s  user  발화 시작: 어어.
+   166.09s  agent 발화 끝
+   166.61s  user  발화 끝
+   167.99s  user  발화 시작: 고마워. 기억해 뒀어.
+   169.70s  agent 발화 시작: [happy] 언제든지 다시 물어보세요.
+   169.78s  user  발화 끝
+   171.35s  agent 발화 끝
+   171.41s  user  발화 시작: 음, 주말에 여행 갈 만한 곳 없을까? 부산 근처로.
+   174.72s  <ret> 발화 (turn51 첫 프레임)
+   174.98s  agent 발화 시작: <ret> 부산 근처라면 경주가 좋을 것 같아요. 역사적인 도시로, 사찰과 고분이 유명해요.
+   175.03s  user  발화 끝
+   175.52s  ⚡SPAN 주입 [d'=0.80s / d_lead=5.32s]: Gyeongju (-35.8389, 129.2292): a historic city known for its temples, 
+   178.53s  user  발화 시작: 응.
+   178.87s  user  발화 끝
+   180.30s  agent 발화 끝
+   180.47s  user  발화 시작: 경주? 거기는 가본 적 있는데, 너무 사람이 많았어.
+   184.32s  <ret> 발화 (turn54 첫 프레임)
+   184.86s  user  발화 끝
+   184.89s  agent 발화 시작: <ret> 네, 경주는 관광객이 많은 편이죠. 좀 더 조용한 곳을 원하시면 통영도 괜찮아요.
+   185.52s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.46s]: Tongyeong (-34.8558, 128.6892): a coastal city known for its beautiful
+   190.26s  agent 발화 시작: 통영은 아름다운 경치와 신선한 해산물로 유명한 해안 도시예요.
+   190.35s  agent 발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 56턴 요약, 126f): dental appt: 십이월 이십일 오후 두시 십오분; mother bday: 내일 모레; perfume preference: 향수를 좋아하시는데; travel
+   192.92s  user  발화 시작: 응.
+   193.22s  user  발화 끝
+   194.19s  agent 발화 끝
+   194.41s  user  발화 시작: 통영? 거기는 어떤 게 유명해?
+   196.06s  agent 발화 시작: 싱싱한 해산물과 아름다운 섬들이 유명해요.
+   196.19s  user  발화 끝
+   198.88s  agent 발화 끝
+   199.44s  user  발화 시작: 좋아, 통영으로 가야겠다. 숙소 예약해 줄래?
+   202.09s  <ret> 발화 (turn60 첫 프레임)
+   202.62s  agent 발화 시작: <ret> 통영 호텔 현대에서 스탠다드 더블룸이 일박에 십이만원이에요.
+   202.69s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.21s]: (tool result) Hotel Hyundai Tongyeong (34.8542, 128.6798): Standard Do
+   202.73s  user  발화 끝
+   206.83s  agent 발화 끝
+   207.70s  user  발화 시작: 십이만원이면 괜찮네. 예약해 줘.
+   209.96s  <ret> 발화 (turn62 첫 프레임)
+   210.31s  agent 발화 시작: <ret> 호텔 현대 통영, 이천이십육년 십이월 이십일일부터 이십이일까지, 스탠다드 더블룸으로 예약 완료되었
+   210.32s  user  발화 끝
+   210.92s  ⚡SPAN 주입 [d'=0.95s / d_lead=10.39s]: (tool result) Hotel Hyundai Tongyeong, Tongyeong, 2026-12-21 to 2026-1
+   218.36s  user  발화 시작: 그래.
+   218.80s  user  발화 끝
+   220.69s  agent 발화 끝
+   220.96s  user  발화 시작: 고마워. 덕분에 여행 계획 잘 세웠어.
+   223.73s  agent 발화 시작: [happy] 여행 잘 다녀오세요.
+   223.82s  user  발화 끝
+   225.29s  agent 발화 끝
+   226.42s  user  발화 시작: 아, 그때 치과 예약금이 얼마였지?
+   228.45s  user  발화 끝
+   228.52s  agent 발화 시작: 사만원이었어요.
+   229.93s  agent 발화 끝
+   230.38s  user  발화 시작: 아, 맞다. 고마워.
+   231.75s  user  발화 끝

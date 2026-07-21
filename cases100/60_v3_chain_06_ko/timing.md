@@ -4,90 +4,120 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "주진",
+#     "name": "라형",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "mid 20s",
+#     "gender": "female",
+#     "age_range": "early 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
+#       "date": "2026-06-27",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Clara."
+#     },
+#     {
+#       "date": "2026-05-19",
 #       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
+#       "text": "User's usual coffee order is black drip coffee."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "floor",
-#       "text": "User lives on the 5th floor."
+#       "date": "2026-03-19",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "savings",
-#       "text": "User is saving for a down payment on an apartment."
+#       "date": "2026-03-16",
+#       "category": "medication",
+#       "text": "User takes a daily thyroid medication."
 #     },
 #     {
-#       "date": "2026-05-01",
-#       "category": "work",
-#       "text": "User works as a mechanical engineer."
+#       "date": "2026-02-13",
+#       "category": "car",
+#       "text": "User drives a 2019 Hyundai Tucson."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "music",
-#       "text": "User likes listening to classical piano."
+#       "date": "2026-02-03",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 26°C."
+#       "date": "2026-01-28",
+#       "category": "skill",
+#       "text": "User is just getting back into beekeeping."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-30",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-05-29",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-23",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-23",
-#       "title": "Meal-prep planning",
+#       "date": "2026-01-30",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 오늘 기분이 좀 울적한데, 뭔가 기분 전환할 만한 거 없을까요 | S2 …요즘 볼 만한 게 뭐가 있을까요? | S3 네, 애니메이션 괜찮아요. | S4 롯데시네마 부산역이 제일 가까운가 보네요.
 
-     0.00s  user  발화 시작: 코드 생성 세션 시작해서 테스트 디렉터리에 저장해 줘.
-     2.95s  <ret> 발화 (turn1 첫 프레임)
-     3.24s  user  발화 끝
-     3.25s  agent 발화 시작: <ret> [happy] 코드 생성 세션이 시작됐습니다. 세션 아이디는 씨 지 이 공 이 육 공 칠 일 공 
-     4.17s  ⚡SPAN 주입 [d'=1.22s / d_lead=12.29s]: (tool result) {"session id": "cg-20260710-1433-892", "status": "active
-    10.40s  user  발화 시작: 네네.
-    11.04s  user  발화 끝
-    15.53s  user  발화 시작: 음, 그 세션에 간단한 유닛 테스트 코드를 만들어 줘. 함수 이름은 'calculate_sum'으로 하고, 
-    15.54s  agent 발화 끝
-    22.53s  <ret> 발화 (turn4 첫 프레임)
-    22.64s  agent 발화 시작: <ret> [happy] 네, 'calculate_sum' 함수에 대한 유닛 테스트 코드를 생성했습니다. 두
-    22.80s  user  발화 끝
-    23.43s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.60s]: {"code": "def calculate_sum(a, b):\n  return a + b"}
-    30.23s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 기분이 좀 울적한데, 뭔가 기분 전환할 만한 거 없을까요?
+     3.92s  agent 발화 시작: [happy] 기분 전환이라… 뭘 좋아하시는지 알면 더 좋을 텐데요. 혹시 좋아하는 음악 장르나 영화가 있으
+     3.94s  user  발화 끝
+     6.89s  user  발화 시작: 맞아.
+     7.47s  user  발화 끝
+     9.62s  agent 발화 끝
+     9.74s  user  발화 시작: 음… 영화는 좋아하는데…
+    11.90s  user  발화 끝
+    13.99s  user  발화 시작: …요즘 볼 만한 게 뭐가 있을까요?
+    14.87s  agent 발화 시작: 예.
+    15.45s  agent 발화 끝
+    15.84s  user  발화 끝
+    15.85s  <ret> 발화 (turn6 첫 프레임)
+    15.94s  agent 발화 시작: <ret> 요즘 극장에서 가장 인기 있는 영화는 "인사이드 아웃 이"인데요, 이천십오년에 나온 애니메이션 영
+    17.04s  ⚡SPAN 주입 [d'=1.19s / d_lead=10.20s]: The most popular movie currently showing in theaters is "Inside Out 2"
+    21.25s  user  발화 시작: 응.
+    21.60s  user  발화 끝
+    26.14s  agent 발화 끝
+    26.29s  user  발화 시작: 네, 애니메이션 괜찮아요.
+    27.80s  user  발화 끝
+    27.80s  agent 발화 시작: [curious] "인사이드 아웃 이"는 감정이라는 주제를 다루고 있어서, 지금 느끼시는 울적함에 공감될 수
+    31.38s  user  발화 시작: 음.
+    31.78s  user  발화 끝
+    35.77s  agent 발화 끝
+    35.78s  agent 발화 시작: 지금부터 영화 예매를 도와드릴까요? 아니면 다른 영화를 찾아볼까요? —
+    39.83s  user  발화 시작: 잠깐만요, 혹시 이 영화 부산에서 볼 수 있을까요?
+    40.41s  agent 발화 끝
+    41.45s  agent 발화 시작: 네.
+    41.85s  agent 발화 끝
+    42.58s  <ret> 발화 (turn14 첫 프레임)
+    42.79s  agent 발화 시작: <ret> 부산에는 롯데시네마 부산역(일 점 이킬로미터), 메가박스 해운대(오 점 칠킬로미터), 씨 지 브이
+    42.87s  user  발화 끝
+    43.84s  ⚡SPAN 주입 [d'=1.26s / d_lead=9.92s]: (tool result) Busan: Lotte Cinema Busan Station (1.2 km), Megabox Haeu
+    52.71s  agent 발화 끝
+    52.79s  user  발화 시작: 롯데시네마 부산역이 제일 가까운가 보네요.
+    55.64s  agent 발화 시작: [happy] 네, 롯데시네마 부산역이 가장 가깝습니다. 혹시 오늘 시간대별 상영 시간표를 확인해 드릴까요?
+    55.69s  user  발화 끝
+    61.65s  agent 발화 끝

@@ -1,113 +1,106 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Draeon, a warm and attentive well-being guide who helps people with managing anxiety day to day. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Ororalo, a attentive and honest listening companion who helps people with dating and relationships. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Robin",
+    "name": "Marie",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "French"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-23",
-      "category": "skill",
-      "text": "User is quite experienced with beekeeping."
-    },
-    {
-      "date": "2026-06-10",
-      "category": "medication",
-      "text": "User takes blood-pressure medication."
-    },
-    {
-      "date": "2026-04-15",
-      "category": "streaming",
-      "text": "User subscribes to Disney+ and YouTube Premium."
-    },
-    {
-      "date": "2026-03-29",
+      "date": "2026-05-27",
       "category": "partner",
-      "text": "User's partner is named Daniel."
+      "text": "User's partner is named Leo."
     },
     {
-      "date": "2026-02-26",
-      "category": "pet",
-      "text": "User has a Bengal cat named Tiger."
+      "date": "2026-05-09",
+      "category": "coffee",
+      "text": "User's usual coffee order is an iced americano."
     },
     {
-      "date": "2026-02-06",
-      "category": "airline",
-      "text": "User usually flies with United."
+      "date": "2026-04-13",
+      "category": "gym",
+      "text": "User has a gym membership near home."
+    },
+    {
+      "date": "2026-03-21",
+      "category": "medication",
+      "text": "User takes antihistamines in spring."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "phone",
+      "text": "User uses a Galaxy Z Flip."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "emergency",
+      "text": "User's emergency contact is Rin."
+    },
+    {
+      "date": "2026-01-15",
+      "category": "commute",
+      "text": "User takes a shuttle bus."
+    },
+    {
+      "date": "2025-12-29",
+      "category": "learning",
+      "text": "User is learning to play guitar."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "skill",
+      "text": "User is quite experienced with pottery."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-09",
-      "title": "Renovating the bathroom",
+      "date": "2026-04-22",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "budget of 6M won",
-        "wants a walk-in shower instead of a tub"
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
       ]
     },
     {
-      "date": "2026-03-09",
-      "title": "Selling a used bike",
+      "date": "2026-01-07",
+      "title": "Meal-prep planning",
       "bullets": [
-        "a 3-year-old road bike",
-        "asking around 400k won"
+        "wants high-protein lunches under 600 calories",
+        "avoiding dairy this month"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "title": "Looking for a therapist",
+      "bullets": [
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about Machu Picchu… it’s so amazing.
-[  3.88s][moshi] It truly is a remarkable place, steeped in history and mystery.
-[  8.29s][user ] I was wondering… who actually ⟨ret@10.96s⟩ discovered it?
-[ 11.55s][moshi] ⟦⚡SPAN@11.56s: Hiram Bingham III, an American historian, politician, explorer, and lecturer, is credited with bringing Machu ⟧ It was Hiram Bingham III, an American historian, who really brought Machu Picchu to the world’s attention back in 1911. It had been known locally, of course, but he publicized it.
-[ 23.35s][user ] Oh, so it wasn’t… completely lost? … I thought it was hidden for centuries.
-[ 26.10s][moshi] «backchannel» Mhm.
-[ 27.97s][moshi] It wasn't entirely lost to the local people, no. [curious] They knew of its existence, but it remained largely unknown to the wider world until Bingham’s explorations.
-[ 31.68s][user ] «backchannel» Uh-huh.
-[ 38.98s][user ] Right. So, what was Bingham doing there in the ⟨ret@42.23s⟩ first place?
-[ 42.82s][moshi] ⟦⚡SPAN@43.25s: Bingham was leading an expedition sponsored by Yale University and the National Geographic Society, searching ⟧ He was actually leading an expedition funded by Yale University and National Geographic, looking for Vilcabamba – the last refuge of the Inca rulers.
-[ 45.96s][user ] «backchannel» Yeah.
-[ 52.26s][moshi] It’s a fascinating story, isn't it? He stumbled upon Machu Picchu while searching for that other city.
-[ 58.76s][user ] That’s kind of lucky, isn’t it? I mean, finding something like that by accident.
-[ 60.94s][moshi] «backchannel» Okay.
-[ 64.19s][moshi] [happy] It certainly was a fortunate turn of events! Though, his work was meticulous, even if the discovery was unexpected.
-[ 72.95s][user ] Was it hard to get to Machu Picchu back then? Like, how did he even ⟨ret@76.79s⟩ reach it?
-[ 75.08s][moshi] «backchannel» Mm-hmm.
-[ 76.95s][moshi] Getting ⟦⚡SPAN@77.76s: Bingham and his team traveled by train to Aguas Calientes, then hiked up the steep mountainside to reach Machu⟧ there was quite the undertaking! Bingham’s team took a train to Aguas Calientes, and then had a several-day hike up a very steep mountainside to reach the city.
-[ 87.53s][user ] Wow, that sounds exhausting! I guess…
-[ 92.03s][user ] …it's easier now with the buses?
-[ 93.44s][moshi] «backchannel» Okay.
-[ 94.02s][moshi] [laugh] It is considerably easier now, yes. The buses make it much more accessible, thankfully.
-[101.08s][user ] I’m thinking about going next year. Do you know what the best time to visit ⟨ret@105.13s⟩ is?
-[105.34s][moshi] ⟦⚡SPAN@105.73s: (tool result) Temperature: 18.5°C, humidity: 68%, precipitation: 5mm, condition: light rain.⟧ April tends to be a good time, though the weather can be a bit unpredictable. Right now, it looks like April 1st, 2027, will be 18.5 degrees Celsius with light rain.
-      CALL: {"function": "get_weather", "arguments": {"location": "Machu Picchu", "date": "2027-04-01"}}
-[116.63s][user ] Hmm, rain isn’t ideal… Is May better?
-[120.74s][moshi] ⟨ret@120.59s⟩ May ⟦⚡SPAN@121.57s: (tool result) Temperature: 20.1°C, humidity: 62%, precipitation: 2mm, condition: partly cloudy.⟧ looks much more promising! May 1st, 2027, is forecast to be 20.1 degrees Celsius, and partly cloudy with only 2 millimeters of rain.
-      CALL: {"function": "get_weather", "arguments": {"location": "Machu Picchu", "date": "2027-05-01"}}
-[127.59s][user ] «backchannel» Yeah.
-[131.05s][user ] That sounds perfect! Okay, good to know.
-[134.02s][moshi] [happy] I’m glad I could help! Planning ahead can make all the difference for a smooth trip.
-[135.95s][user ] «backchannel» Yeah.
-[138.74s][user ] I'm a little anxious about the altitude…
-[142.53s][user ] …though. It’s pretty high up, ⟨ret@144.52s⟩ right?
-[144.86s][moshi] ⟦⚡SPAN@145.44s: Machu Picchu is located at an altitude of 2,430 meters (7,972 feet) above sea level, which can cause altitude ⟧ You are right to be mindful of that. Machu Picchu sits at 2,430 meters – that’s 7,972 feet – above sea level, and altitude sickness is a possibility for some.
-[150.04s][user ] «backchannel» Yeah.
-[157.01s][moshi] It’s common, but there are ways to mitigate it. [curious] Things like acclimatizing gradually and staying hydrated can really help.
-[166.27s][user ] That’s good advice, thank you. I’ll look into that.
-[169.41s][moshi] [sigh] Travel can be stressful, even exciting travel. Remember to prioritize your well-being during the planning process and on the trip itself.
-[176.24s][user ] «backchannel» Yeah.
-[179.16s][user ] You're right. I need to remember to breathe. Thanks, Draeon.
-[182.61s][moshi] [happy] You’re very welcome.
+[  0.00s][user ] I'm trying to figure out who's running…
+[  3.35s][user ] …for governor in Georgia… the Republican ⟨ret@5.92s⟩ side…
+[  4.92s][moshi] «backchannel» Right.
+[  6.51s][moshi] ⟦⚡SPAN@6.52s: Michael Williams, a State Senator, has announced his candidacy for Georgia governor in 2026, focusing on conse⟧ Let's see who the Republican candidates are for Georgia’s governorship.
+[ 10.21s][moshi] Well, one candidate who’s announced their run is Michael Williams, a State Senator. He’s focusing on conservative principles and economic growth.
+[ 19.10s][user ] Oh, okay……
+[ 22.43s][user ] …and are there any ⟨ret@23.35s⟩ others? …
+[ 23.80s][moshi] ⟦⚡SPAN@24.38s: Brian Kemp, the current governor, is running for re-election, emphasizing his record on economic development a⟧ The current governor, Brian Kemp, is also running for re-election, emphasizing his record on economic development and law enforcement.
+[ 29.25s][user ] «backchannel» Yeah.
+[ 31.50s][moshi] He’s really leaning into his accomplishments over the past few years.
+[ 35.21s][user ] Hmm. Anyone else challenging him?
+[ 38.04s][moshi] ⟨ret@37.99s⟩ Another contender ⟦⚡SPAN@39.30s: David Perdue, a former U.S. Senator, is also running, campaigning on a platform of election integrity and limi⟧ is David Perdue, a former U.S. Senator, campaigning on election integrity and limited government.

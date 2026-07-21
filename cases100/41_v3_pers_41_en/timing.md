@@ -4,119 +4,120 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Quinn",
+#     "name": "Harry",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "mid 30s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-23",
-#       "category": "floor",
-#       "text": "User lives on the 2nd floor."
+#       "date": "2026-06-04",
+#       "category": "medication",
+#       "text": "User takes a statin."
+#     },
+#     {
+#       "date": "2026-06-03",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     },
 #     {
 #       "date": "2026-05-10",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
+#       "category": "commute",
+#       "text": "User takes a shuttle bus."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-21",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     },
 #     {
-#       "date": "2026-04-10",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
-#     },
-#     {
-#       "date": "2026-04-07",
-#       "category": "dislike",
-#       "text": "User can't stand raw tomatoes."
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "music",
-#       "text": "User likes listening to K-ballads."
+#       "date": "2026-02-20",
+#       "category": "streaming",
+#       "text": "User subscribes to Disney+ and YouTube Premium."
 #     },
 #     {
 #       "date": "2026-01-20",
-#       "category": "schedule",
-#       "text": "User has on-call weekends."
+#       "category": "dislike",
+#       "text": "User can't stand bell peppers."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "commute",
-#       "text": "User drives about 40 minutes each way."
+#       "date": "2026-01-10",
+#       "category": "skill",
+#       "text": "User is a complete beginner at vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-04-15",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-03-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-21",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’m just really stressed about fin | S2 Okay, sure. What do I do? | S3 That’s good to know. I also haven’ | S4 No, I think I’m good for now. Just
 
-     0.00s  agent 발화 시작: Hallo Quinn, I’m Unas. It’s lovely to meet you. I’m here to 
-     4.88s  user  발화 시작: Yeah, yeah.
-     6.02s  user  발화 끝
-     9.31s  agent 발화 끝
-     9.76s  user  발화 시작: So, you’re like a counselor I can talk to anytime?
-    12.89s  agent 발화 시작: [happy] Exactly! I can share techniques and perspectives to 
-    12.90s  user  발화 끝
-    17.71s  user  발화 시작: Yeah.
-    18.15s  user  발화 끝
-    21.45s  agent 발화 시작: We can explore things like grounding exercises, or thought c
-    21.46s  agent 발화 끝
-    32.27s  user  발화 시작: …But does it actually *work*? I’ve tried meditation before, 
-    33.05s  agent 발화 끝
-    39.55s  agent 발화 시작: That’s a really valid point, Quinn. Sometimes practices like
-    39.64s  user  발화 끝
-    52.70s  agent 발화 시작: [curious] Perhaps we could explore some different approaches
-    52.85s  agent 발화 끝
-    63.81s  user  발화 시작: Okay, yeah. Maybe something different would be better. What'
-    63.97s  agent 발화 끝
-    69.17s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Harry, I'm Kana. I'm here to offer support and help yo
+     6.90s  agent 발화 끝
+     7.59s  user  발화 시작: I’m just really stressed about finals, honestly.
+    10.00s  agent 발화 시작: Mhm.
+    10.77s  agent 발화 끝
+    10.79s  user  발화 끝
+    11.12s  agent 발화 시작: [happy] Finals are definitely a tough time, Harry. It’s comp
+    20.20s  agent 발화 끝
+    20.25s  user  발화 시작: Not really. I just… keep studying, I guess. It doesn’t seem 
+    22.48s  agent 발화 시작: Mhm.
+    23.06s  agent 발화 끝
+    25.67s  agent 발화 시작: I understand. Sometimes pushing harder just makes the stress
+    25.77s  user  발화 끝
+    35.49s  user  발화 시작: Okay, sure. What do I do?
+    35.78s  agent 발화 끝
+    37.61s  user  발화 끝
+    37.87s  agent 발화 시작: Close your eyes if you’re comfortable, and breathe in slowly
+    48.90s  agent 발화 끝
+    49.35s  user  발화 시작: [laugh] That’s… surprisingly helpful, actually. I feel a lit
+    55.01s  agent 발화 시작: [happy] I’m so glad to hear that, Harry! It’s amazing what a
+    55.04s  user  발화 끝
+    58.09s  user  발화 시작: Wow.
+    58.91s  user  발화 끝
+    63.57s  agent 발화 끝
+    63.72s  user  발화 시작: That’s good to know. I also haven’t been sleeping well, whic
+    65.76s  agent 발화 시작: Uh-huh.
+    66.67s  agent 발화 끝
+    68.17s  user  발화 끝
+    68.24s  agent 발화 시작: That’s very common when stressed. Creating a relaxing bedtim
+    74.02s  user  발화 시작: Mm-hmm.
+    74.46s  user  발화 끝
+    78.95s  agent 발화 끝
+    79.00s  user  발화 시작: Easier said than done! But I’ll try. Thanks, Kana.
+    82.97s  user  발화 끝
+    83.05s  agent 발화 시작: [curious] You’re very welcome, Harry.
+    85.11s  agent 발화 끝
+    85.44s  user  발화 시작: No, I think I’m good for now. Just knowing those simple thin
+    90.38s  user  발화 끝

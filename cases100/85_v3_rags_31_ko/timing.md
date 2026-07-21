@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "서형",
+#     "name": "우국",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,63 +12,60 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "mid 20s",
+#     "gender": "non-binary",
+#     "age_range": "mid 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-18",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-06-17",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Kenji."
+#     },
+#     {
+#       "date": "2026-05-23",
 #       "category": "plant",
 #       "text": "User is growing basil on the windowsill at home."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "anniversary",
-#       "text": "User's anniversary is December 3."
+#       "date": "2026-05-21",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "show",
-#       "text": "User is currently watching a nature documentary series."
+#       "date": "2026-05-04",
+#       "category": "bloodtype",
+#       "text": "User's blood type is AB+."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
+#       "date": "2026-04-11",
+#       "category": "streaming",
+#       "text": "User subscribes to a shared Netflix family plan."
 #     },
 #     {
-#       "date": "2026-01-23",
-#       "category": "floor",
-#       "text": "User lives on the 12th floor."
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Emma."
-#     },
-#     {
-#       "date": "2025-12-14",
+#       "date": "2026-01-11",
 #       "category": "temp",
-#       "text": "User keeps the home thermostat around 25°C."
+#       "text": "User keeps the home thermostat around 21°C."
+#     },
+#     {
+#       "date": "2025-12-25",
+#       "category": "diet",
+#       "text": "User is keto."
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-20",
+#       "date": "2026-04-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six on the 14th",
@@ -76,28 +73,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-22",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "title": "Training for a 10K",
+#       "date": "2025-12-10",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 비버리힐즈의 백만장자에서 밀번 드라이스데일 역을 맡은 배우는 누구였나요?
-     4.24s  <ret> 발화 (turn1 첫 프레임)
-     4.52s  agent 발화 시작: <ret> 비버리힐즈의 백만장자에서 밀번 드라이스데일 역은 레이먼드 토마스 베일리 배우가 맡았답니다.
-     4.63s  user  발화 끝
-     4.84s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.09s]: Raymond Thomas Bailey was an American actor best known for his role as
-    11.61s  agent 발화 끝
+     0.00s  user  발화 시작: 일요일 나이트 풋볼 오프닝은 누가 불러?
+     2.16s  <ret> 발화 (turn1 첫 프레임)
+     2.44s  agent 발화 시작: <ret> 일요일 나이트 풋볼 오프닝 테마송은 캐리 언더우드가 부릅니다. [happy] 그녀의 파워풀한 보컬
+     2.58s  user  발화 끝
+     2.76s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.02s]: Carrie Underwood sings the opening theme song for Sunday Night Footbal
+     9.46s  agent 발화 끝

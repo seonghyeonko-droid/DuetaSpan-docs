@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Noah",
+#     "name": "Andrea",
 #     "location": {
 #       "city": "San Francisco",
 #       "country": "United States",
@@ -12,63 +12,60 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "mid 20s",
+#     "gender": "non-binary",
+#     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-18",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-06-17",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Kenji."
+#     },
+#     {
+#       "date": "2026-05-23",
 #       "category": "plant",
 #       "text": "User is growing basil on the windowsill at home."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "anniversary",
-#       "text": "User's anniversary is December 3."
+#       "date": "2026-05-21",
+#       "category": "home",
+#       "text": "User's home address is 687 Juniper Lane."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "show",
-#       "text": "User is currently watching a nature documentary series."
+#       "date": "2026-05-04",
+#       "category": "bloodtype",
+#       "text": "User's blood type is AB+."
 #     },
 #     {
-#       "date": "2026-02-06",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
+#       "date": "2026-04-11",
+#       "category": "streaming",
+#       "text": "User subscribes to a shared Netflix family plan."
 #     },
 #     {
-#       "date": "2026-01-23",
-#       "category": "floor",
-#       "text": "User lives on the 12th floor."
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Emma."
-#     },
-#     {
-#       "date": "2025-12-14",
+#       "date": "2026-01-11",
 #       "category": "temp",
-#       "text": "User keeps the home thermostat around 25°C."
+#       "text": "User keeps the home thermostat around 21°C."
+#     },
+#     {
+#       "date": "2025-12-25",
+#       "category": "diet",
+#       "text": "User is keto."
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-20",
+#       "date": "2026-04-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six on the 14th",
@@ -76,28 +73,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-22",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "title": "Training for a 10K",
+#       "date": "2025-12-10",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who played Milburn Drysdale, the banker on *The Beverly Hill
-     4.10s  <ret> 발화 (turn1 첫 프레임)
-     4.34s  agent 발화 시작: <ret> That would be Raymond Thomas Bailey—he played Milburn 
-     4.43s  user  발화 끝
-     5.95s  ⚡SPAN 주입 [d'=1.86s / d_lead=10.62s]: Raymond Thomas Bailey portrayed Milburn Drysdale, the president of the
-    14.96s  agent 발화 끝
+     0.00s  user  발화 시작: Who sings the opening to Sunday Night Football?
+     2.34s  <ret> 발화 (turn1 첫 프레임)
+     2.81s  user  발화 끝
+     2.96s  agent 발화 시작: <ret> Oh, that’s a great question! The singer you’re looking
+     4.20s  ⚡SPAN 주입 [d'=1.86s / d_lead=9.87s]: Carrie Underwood has performed the theme song for NBC's Sunday Night F
+    12.83s  agent 발화 끝

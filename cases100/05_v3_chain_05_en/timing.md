@@ -4,109 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "Olivia",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "employer",
-#       "text": "User works at a biotech lab."
+#       "date": "2026-05-14",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
 #       "date": "2026-04-14",
-#       "category": "phone",
-#       "text": "User uses a Pixel 8."
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-03-14",
+#       "category": "work",
+#       "text": "User works as a flight attendant."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "hobby",
-#       "text": "User is into freediving."
+#       "text": "User is into board-game design."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is green curry."
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "category": "skill",
-#       "text": "User is just getting back into long-distance cycling."
-#     },
-#     {
-#       "date": "2025-12-28",
+#       "date": "2026-02-04",
 #       "category": "commute",
-#       "text": "User carpools with a colleague."
+#       "text": "User takes the subway to work."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
+#       "date": "2026-01-15",
+#       "category": "child",
+#       "text": "User has a child named Ava, age 17."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "floor",
+#       "text": "User lives on the 2nd floor."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-05-13",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-27",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-20",
 #       "title": "Studying for the TOEIC",
 #       "bullets": [
 #         "target score is 850",
 #         "exam is in about six weeks"
 #       ]
-#     },
-#     {
-#       "date": "2026-05-01",
-#       "title": "Learning to invest",
-#       "bullets": [
-#         "asked about index funds vs individual stocks",
-#         "wants to start with 500k won a month"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-08",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-01",
-#       "title": "Choosing a laptop",
-#       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
-#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I need to get train tickets from A | S2 Oh. | S3 Maybe a flight is better. Can you  | S4 …one-way flights from Atlanta to M
 
-     0.00s  user  발화 시작: End the code generation session for data analysis, session f
-     6.57s  <ret> 발화 (turn1 첫 프레임)
-     6.72s  user  발화 끝
-     6.96s  agent 발화 시작: <ret> [happy] Okay, session forty-two is finished, and your 
-     7.99s  ⚡SPAN 주입 [d'=1.42s / d_lead=8.72s]: (tool result) Session 42 ended. Tests created: data analysis tests.py
-    11.45s  user  발화 시작: Yeah.
-    12.08s  user  발화 끝
-    15.57s  user  발화 시작: Good. Now, can you find me a quiet cafe nearby for working?
-    15.68s  agent 발화 끝
-    18.60s  agent 발화 시작: Yeah, totally.
-    20.07s  agent 발화 끝
-    20.64s  <ret> 발화 (turn5 첫 프레임)
-    20.79s  agent 발화 시작: <ret> I’ve found a good spot for focused work—Cafe Yeonjae i
-    20.95s  user  발화 끝
-    21.63s  ⚡SPAN 주입 [d'=0.99s / d_lead=8.44s]: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu,
-    26.77s  user  발화 시작: Yeah.
-    27.22s  user  발화 끝
-    29.24s  agent 발화 끝
-    29.26s  agent 발화 시작: [curious] It seems like a really relaxing place! Would you l
+     0.00s  user  발화 시작: I need to get train tickets from Atlanta to Miami for three 
+     4.46s  agent 발화 시작: Yeah.
+     5.13s  agent 발화 끝
+     7.60s  <ret> 발화 (turn2 첫 프레임)
+     8.18s  agent 발화 시작: <ret> [sigh] Unfortunately, I'm not finding any direct train
+     8.34s  user  발화 끝
+     8.62s  ⚡SPAN 주입 [d'=1.03s / d_lead=4.81s]: (no information found)
+    12.99s  agent 발화 끝
+    13.41s  user  발화 시작: Oh.
+    13.91s  user  발화 끝
+    14.12s  agent 발화 시작: Amtrak doesn’t currently offer service directly between Atla
+    19.95s  user  발화 시작: Yeah.
+    20.40s  user  발화 끝
+    26.22s  agent 발화 시작: It would involve a transfer and take approximately twenty-ei
+    26.25s  agent 발화 끝
+    32.46s  user  발화 시작: Yeah, totally.
+    33.86s  user  발화 끝
+    35.14s  user  발화 시작: Maybe a flight is better. Can you search for…
     35.23s  agent 발화 끝
+    38.65s  user  발화 끝
+    39.84s  user  발화 시작: …one-way flights from Atlanta to Miami on May fifteenth?
+    43.16s  <ret> 발화 (turn10 첫 프레임)
+    43.56s  agent 발화 시작: <ret> [happy] I found a few one-way flights from Atlanta to 
+    43.72s  user  발화 끝
+    44.77s  ⚡SPAN 주입 [d'=1.61s / d_lead=25.38s]: (tool result) {"flights": [{"airline": "Delta", "flight number": "DL12
+    68.95s  agent 발화 끝

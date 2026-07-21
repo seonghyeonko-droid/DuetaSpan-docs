@@ -4,53 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Sky",
+#     "name": "Julian",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Kenji."
+#       "date": "2026-05-30",
+#       "category": "work",
+#       "text": "User works as a sales manager."
 #     },
 #     {
-#       "date": "2026-06-06",
-#       "category": "partner",
-#       "text": "User's partner is named Kenji."
+#       "date": "2026-05-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is black drip coffee."
+#       "date": "2026-04-16",
+#       "category": "phone",
+#       "text": "User uses an iPhone 13."
 #     },
 #     {
-#       "date": "2026-02-22",
-#       "category": "employer",
-#       "text": "User works at a school district."
+#       "date": "2026-02-02",
+#       "category": "pet",
+#       "text": "User has a Shiba Inu named Kongi."
 #     },
 #     {
-#       "date": "2026-01-04",
-#       "category": "schedule",
-#       "text": "User has a fully remote setup."
-#     },
-#     {
-#       "date": "2025-12-27",
-#       "category": "skill",
-#       "text": "User is a complete beginner at rock climbing."
+#       "date": "2026-01-24",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O-."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-12",
+#       "date": "2026-04-09",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six on the 14th",
@@ -58,111 +53,55 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-02-15",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "title": "Planning a dinner party",
+#       "bullets": [
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Kellax, I was just wondering… w | S2 Oh, I didn’t know that! | S3 It really is. Was Dorothy a child  | S4 A special award, that’s nice.
+# EXAMINER(FDB-v2) 단계: S1 I've been thinking a lot about the | S2 I'm trying to process a… | S3 …lot of change right now, actually | S4 I think I just need to take things
 
-     0.00s  user  발화 시작: Hi Kellax, I was just wondering… when did *The Wizard of Oz*
-     3.08s  agent 발화 시작: Yeah.
-     3.72s  agent 발화 끝
-     4.72s  <ret> 발화 (turn2 첫 프레임)
-     5.13s  user  발화 끝
-     5.27s  agent 발화 시작: <ret> That wonderful film first came out on August twenty-fi
-     5.71s  ⚡SPAN 주입 [d'=0.99s / d_lead=6.16s]: The film *The Wizard of Oz* was first released on August 25, 1939, in 
-    11.43s  agent 발화 끝
-    11.49s  user  발화 시작: Wow, that was a long time ago.
-    14.26s  user  발화 끝
-    14.62s  agent 발화 시작: It truly was! It’s amazing how some stories continue to reso
-    20.74s  agent 발화 끝
-    21.91s  user  발화 시작: Definitely. Do you think it’s still popular with kids today?
-    23.86s  agent 발화 시작: Yeah.
-    24.49s  agent 발화 끝
-    26.03s  user  발화 끝
-    26.37s  agent 발화 시작: I believe so. Its themes of courage, friendship, and finding
-    28.97s  user  발화 시작: Yeah, yeah.
-    30.25s  user  발화 끝
-    31.70s  agent 발화 끝
-    31.77s  user  발화 시작: I guess you’re right. What about the music?
-    33.49s  agent 발화 시작: Yeah.
-    33.79s  <ret> 발화 (turn11 첫 프레임)
-    33.99s  agent 발화 끝
-    34.39s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.62s]: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by
-    34.45s  agent 발화 시작: <ret> The music was composed by Harold Arlen, with lyrics pe
-    34.59s  user  발화 끝
-    41.07s  agent 발화 끝
-    41.13s  user  발화 시작: Oh, I didn’t know that!
-    43.00s  agent 발화 시작: [happy] It’s fun to learn the details behind the magic, don’
-    43.07s  user  발화 끝
-    45.87s  agent 발화 끝
-    47.32s  user  발화 시작: Yeah, it is. Did they film it all in Kansas?
-    48.79s  <ret> 발화 (turn15 첫 프레임)
-    50.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.13s]: While the story begins in Kansas, *The Wizard of Oz* was primarily fil
-    50.61s  agent 발화 시작: <ret> While the story starts in Kansas, much of the film was
-    50.69s  user  발화 끝
-    54.47s  user  발화 시작: Yeah.
-    54.92s  user  발화 끝
-    57.75s  agent 발화 끝
-    58.43s  user  발화 시작: Oh, so it wasn't really filmed on a farm?
-    59.43s  agent 발화 시작: Yeah.
-    60.06s  agent 발화 끝
-    60.95s  agent 발화 시작: Not entirely! They used sets to create that sense of Kansas,
-    61.16s  user  발화 끝
-    63.72s  user  발화 시작: Mm-hmm.
-    64.20s  user  발화 끝
-    66.60s  agent 발화 끝
-    66.73s  user  발화 시작: That makes sense. It looked so colorful!
-    69.27s  <ret> 발화 (turn22 첫 프레임)
-    69.95s  ⚡SPAN 주입(IRRELEVANT) [d'=0.68s / d_lead=4.86s]: The average retail price of organic thyme in Portland, Oregon, is $3.9
-    70.01s  agent 발화 시작: <ret> The vibrant colors are definitely one of the things th
-    70.29s  user  발화 끝
-    74.56s  user  발화 시작: It really is. Was Dorothy a child actor?
-    74.87s  agent 발화 끝
-    77.45s  <ret> 발화 (turn24 첫 프레임)
-    78.65s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.06s]: Judy Garland, who played Dorothy, was only 16 years old during the fil
-    78.71s  agent 발화 시작: <ret> Judy Garland, who played Dorothy, was just sixteen yea
-    78.91s  user  발화 끝
-    83.33s  user  발화 시작: Uh-huh.
-    83.88s  user  발화 끝
-    84.77s  agent 발화 끝
-    85.48s  user  발화 시작: Wow, sixteen! That’s so young. What other movies was she in?
-    90.39s  user  발화 시작: …did she win any awards for that role?
-    90.58s  user  발화 끝
-    92.06s  agent 발화 시작: Yeah.
-    92.70s  agent 발화 끝
-    93.21s  agent 발화 시작: Well, that’s a really good question. She didn’t actually win
-    93.34s  user  발화 끝
-    98.36s  user  발화 시작: Oh, really? That's surprising.
-    98.86s  agent 발화 끝
-   101.05s  agent 발화 시작: It is a bit surprising, isn’t it? She received a special Juv
-   101.09s  user  발화 끝
-   103.48s  user  발화 시작: Okay.
-   104.48s  user  발화 끝
-   107.02s  agent 발화 끝
-   108.37s  user  발화 시작: A special award, that’s nice.
-   111.09s  user  발화 끝
-   111.23s  agent 발화 시작: It was a recognition of her incredible talent at such a youn
-   114.32s  user  발화 시작: Yeah, totally.
-   116.07s  user  발화 끝
-   117.67s  agent 발화 끝
-   117.76s  user  발화 시작: It really is. Do you think they’ll ever remake it?
-   121.70s  user  발화 끝
-   122.07s  agent 발화 시작: [curious] That’s a tricky question. It’s such an iconic film
-   126.93s  agent 발화 끝
-   126.94s  user  발화 시작: I agree. It would be hard to live up to the original.
-   128.12s  agent 발화 시작: Yeah.
-   128.95s  agent 발화 끝
-   130.16s  agent 발화 시작: Exactly. Some stories are best left as they are, cherished f
-   130.17s  user  발화 끝
-   135.10s  user  발화 시작: That's a good point. Thanks, Kellax.
-   135.16s  agent 발화 끝
-   137.03s  user  발화 끝
-   137.46s  agent 발화 시작: [happy] You're very welcome. I'm glad I could share a bit of
-   145.16s  agent 발화 끝
+     0.00s  user  발화 시작: I've been thinking a lot about the Civil Rights Movement lat
+     6.15s  <ret> 발화 (turn1 첫 프레임)
+     6.75s  agent 발화 시작: <ret> That's a powerful thought, and a very important place.
+     6.84s  user  발화 끝
+     7.77s  ⚡SPAN 주입 [d'=1.62s / d_lead=12.80s]: The National Civil Rights Museum opened on September 28, 1991, in Memp
+    12.80s  user  발화 시작: Mhm.
+    13.25s  user  발화 끝
+    19.55s  agent 발화 끝
+    20.13s  user  발화 시작: Wow, 1991. That’s more recent than I thought.
+    24.01s  <ret> 발화 (turn4 첫 프레임)
+    24.49s  user  발화 끝
+    24.55s  agent 발화 시작: <ret> It is a relatively recent opening, isn’t it? [curious]
+    24.67s  ⚡SPAN 주입 [d'=0.66s / d_lead=6.16s]: The average high temperature in Seoul on September 28th is 22.2°C, wit
+    28.00s  user  발화 시작: Mm-hmm.
+    28.58s  user  발화 끝
+    30.71s  agent 발화 끝
+    30.72s  user  발화 시작: I'm trying to process a…
+    32.57s  user  발화 끝
+    34.08s  user  발화 시작: …lot of change right now, actually.
+    36.49s  agent 발화 시작: Change can be really overwhelming. It's okay to let those fe
+    36.52s  user  발화 끝
+    43.54s  user  발화 시작: That’s a nice image, actually. It feels…heavy.
+    43.57s  agent 발화 끝
+    46.64s  user  발화 끝
+    46.66s  agent 발화 시작: It *is* heavy, and it's alright to acknowledge that weight. 
+    52.01s  user  발화 시작: Yeah, yeah.
+    53.15s  user  발화 끝
+    53.85s  user  발화 시작: I think I just need to take things one day at a time.
+    53.98s  agent 발화 끝
+    56.76s  user  발화 끝
+    56.97s  agent 발화 시작: [happy] Exactly. Gentle daily structure can be a real anchor
+    65.12s  agent 발화 끝

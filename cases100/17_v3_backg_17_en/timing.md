@@ -4,92 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Victor",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "early 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-19",
-#       "category": "anniversary",
-#       "text": "User's anniversary is February 15."
+#       "date": "2026-06-25",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "savings",
-#       "text": "User is saving for a wedding."
+#       "date": "2026-04-16",
+#       "category": "hobby",
+#       "text": "User is into film photography."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "plant",
-#       "text": "User is growing basil on the windowsill at home."
+#       "date": "2026-02-26",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
 #     },
 #     {
-#       "date": "2026-02-17",
-#       "category": "streaming",
-#       "text": "User subscribes to Disney+ and YouTube Premium."
+#       "date": "2026-02-24",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is an iced americano."
 #     },
 #     {
-#       "date": "2026-02-15",
-#       "category": "partner",
-#       "text": "User's partner is named Noah."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "category": "schedule",
-#       "text": "User has on-call weekends."
+#       "date": "2026-02-05",
+#       "category": "phone",
+#       "text": "User uses a Galaxy Z Flip."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
-#       "title": "Planning a dinner party",
+#       "date": "2026-05-30",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-10",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "title": "Planning a wedding",
+#       "bullets": [
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Bro, I’m reading about Enron a | S2 Did you see the traffic on the bri | S3 Wow. So, Merrill Lynch knowingly h | S4 That’s… really messed up. I think 
+# EXAMINER(FDB-v2) 단계: S1 Hi Brarix, how are you doing today | S2 I was wondering, how many members  | S3 Did you hear about the bakery down | S4 Wow, that's a lot! I'm trying to p
 
-     0.00s  user  발화 시작: Hey Bro, I’m reading about Enron and it’s just… a lot. What 
-     5.68s  <ret> 발화 (turn1 첫 프레임)
-     6.26s  agent 발화 시작: <ret> [happy] That's a tough story, but you're right to ask.
-     6.28s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.64s]: Several financial institutions, including Merrill Lynch, Credit Suisse
-     6.40s  user  발화 끝
-    15.73s  user  발화 시작: Did you see the traffic on the bridge this morning? Awful.
-    15.90s  agent 발화 끝
-    18.80s  user  발화 시작: Wow. So, Merrill Lynch knowingly helped them cook the books?
-    18.92s  user  발화 끝
-    22.87s  <ret> 발화 (turn4 첫 프레임)
-    22.96s  user  발화 끝
-    23.06s  agent 발화 시작: <ret> It looks like Merrill Lynch did, actually—they paid tw
-    23.90s  ⚡SPAN 주입 [d'=1.02s / d_lead=11.08s]: In 2002, Merrill Lynch paid $2.6 million in penalties to settle charge
-    33.58s  user  발화 시작: That’s… really messed up. I think I need a break from this.
-    34.14s  agent 발화 끝
-    37.38s  user  발화 끝
-    37.70s  agent 발화 시작: [happy] Absolutely, take a break! Sometimes stepping away is
-    44.78s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Brarix, how are you doing today?
+     2.10s  agent 발화 시작: [happy] I'm doing wonderfully, thank you! Ready to help you 
+     2.11s  user  발화 끝
+     8.54s  agent 발화 끝
+     9.06s  user  발화 시작: I was wondering, how many members are in the senate in Franc
+    10.96s  agent 발화 시작: Yeah.
+    11.68s  agent 발화 끝
+    11.79s  <ret> 발화 (turn4 첫 프레임)
+    12.17s  agent 발화 시작: <ret> Oh, that's a great question! The French Senate has thr
+    12.34s  user  발화 끝
+    12.79s  ⚡SPAN 주입 [d'=1.00s / d_lead=7.50s]: The French Senate has 348 members, elected by an electoral college of 
+    14.95s  user  발화 시작: Yeah.
+    15.36s  user  발화 끝
+    19.67s  agent 발화 끝
+    19.80s  user  발화 시작: Did you hear about the bakery downtown? They're giving out f
+    23.77s  user  발화 시작: Wow, that's a lot! I'm trying to prioritize tasks at work, a
+    23.82s  user  발화 끝
+    25.57s  agent 발화 시작: Okay.
+    26.16s  agent 발화 끝
+    28.50s  user  발화 끝
+    28.84s  agent 발화 시작: [curious] Absolutely! A good start is the urgent-important m
+    39.59s  agent 발화 끝

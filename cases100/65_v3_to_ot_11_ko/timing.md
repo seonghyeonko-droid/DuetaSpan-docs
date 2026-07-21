@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "윤슬",
+#     "name": "다재",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,78 +12,120 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 40s",
+#     "gender": "non-binary",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
-#       "category": "car",
-#       "text": "User drives a 2021 Tesla Model 3."
+#       "date": "2026-05-19",
+#       "category": "child",
+#       "text": "User has a child named Rin, age 10."
 #     },
 #     {
-#       "date": "2026-03-18",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Lucas."
+#       "date": "2026-04-05",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O+."
+#       "date": "2026-03-29",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
 #     },
 #     {
-#       "date": "2026-02-06",
+#       "date": "2026-03-02",
+#       "category": "phone",
+#       "text": "User uses an Xperia 1."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Georgian."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "skill",
+#       "text": "User is just getting back into marathon training."
+#     },
+#     {
+#       "date": "2026-01-21",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "dislike",
-#       "text": "User can't stand liver."
+#       "date": "2025-12-27",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "anniversary",
-#       "text": "User's anniversary is May 25."
+#       "date": "2025-12-20",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is seafood pasta."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-09",
-#       "title": "Training for a 10K",
+#       "date": "2026-06-25",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-19",
+#       "date": "2026-04-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-20",
 #       "title": "Meal-prep planning",
 #       "bullets": [
 #         "wants high-protein lunches under 600 calories",
 #         "avoiding dairy this month"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 포유류에 속하는 목이 몇 개나 있을까요? | S2 아, 죄송해요. 다시 질문할게요. 혹시 그 스물아홉개 목에… | S3 …대해 좀 더 자세히 설명해 주실 수 있나요? | S4 오, 흥미롭네요. 감사합니다.
 
-     0.00s  user  발화 시작: 혹시 사물 인터넷이라는 말이 언제 처음 나왔는지 아세요?
-     3.49s  <ret> 발화 (turn1 첫 프레임)
-     3.85s  agent 발화 시작: <ret> 사물 인터넷이라는 말은 천구백구십구년에 프로クター 앤 갬블에서 일하던 케빈 애쉬턴이 처음 사용했어
-     4.03s  user  발화 끝
-     4.19s  ⚡SPAN 주입 [d'=0.71s / d_lead=6.77s]: The term “Internet of Things” was coined by Kevin Ashton in 1999 while
-     8.75s  user  발화 시작: 그렇죠.
-     9.57s  user  발화 끝
-    10.62s  agent 발화 끝
-    10.65s  agent 발화 시작: 그분이 처음 사용하신 거니까, 거의 이십오년 전이네요.
-    14.76s  user  발화 시작: 잠깐만, 지금 엄마한테 전화 좀 해야 돼.
-    14.81s  agent 발화 끝
-    17.88s  user  발화 시작: 아, 죄송해요. 다시 말씀해 주시겠어요?
-    18.00s  user  발화 끝
-    21.07s  user  발화 끝
-    21.21s  agent 발화 시작: 네, 물론이죠. 사물 인터넷이라는 말은 천구백구십구년에 케빈 애쉬턴이 처음 사용했어요.
-    28.13s  agent 발화 시작: 그게 처음이었답니다.
-    28.16s  agent 발화 끝
-    29.65s  agent 발화 끝
+     0.00s  user  발화 시작: 포유류에 속하는 목이 몇 개나 있을까요?
+     2.41s  <ret> 발화 (turn1 첫 프레임)
+     2.73s  agent 발화 시작: <ret> 포유류에 속하는 목의 수는 총 스물아홉개입니다. 정말 다양한 종들이 포함되어 있죠.
+     2.79s  user  발화 끝
+     3.11s  ⚡SPAN 주입 [d'=0.71s / d_lead=5.93s]: There are 29 orders within the class Mammalia, encompassing a wide ran
+     5.90s  user  발화 시작: 네.
+     6.44s  user  발화 끝
+     8.29s  user  발화 시작: 잠깐만, 김치냉장고 문 닫아 줘.
+     8.66s  agent 발화 끝
+    10.91s  user  발화 시작: 아, 죄송해요. 다시 질문할게요. 혹시 그 스물아홉개 목에…
+    10.91s  user  발화 끝
+    15.58s  user  발화 끝
+    16.91s  user  발화 시작: …대해 좀 더 자세히 설명해 주실 수 있나요?
+    19.44s  agent 발화 시작: 각 목은 고유한 특징과 생태적 지위를 가지고 있습니다.
+    19.56s  user  발화 끝
+    22.05s  user  발화 시작: 예.
+    22.41s  user  발화 끝
+    22.54s  user  발화 시작: 예를 들어 어떤 목들이 있을까요?
+    22.92s  agent 발화 끝
+    24.36s  <ret> 발화 (turn9 첫 프레임)
+    24.59s  agent 발화 시작: <ret> 예를 들어, 짝발굽류에는 사슴과 하마가 있고, 영장류에는 원숭이와 사람, 식육류에는 개와 고양이가
+    24.71s  user  발화 끝
+    25.49s  ⚡SPAN 주입 [d'=1.14s / d_lead=7.85s]: Examples of mammalian orders include Artiodactyla (even-toed ungulates
+    29.11s  user  발화 시작: 네네.
+    29.70s  user  발화 끝
+    32.44s  agent 발화 끝
+    34.02s  user  발화 시작: 오, 흥미롭네요. 감사합니다.
+    36.47s  user  발화 끝

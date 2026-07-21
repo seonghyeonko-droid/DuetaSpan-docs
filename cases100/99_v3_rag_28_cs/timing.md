@@ -4,63 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Casey",
+#     "name": "Hana",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-26",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 22°C."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "work",
-#       "text": "User works as a pharmacist."
-#     },
-#     {
-#       "date": "2026-04-23",
-#       "category": "skill",
-#       "text": "User is getting fairly good at freediving."
-#     },
-#     {
-#       "date": "2026-04-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in June."
+#       "date": "2026-06-12",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
 #       "date": "2026-02-08",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is bún chả."
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Lucas."
+#       "date": "2026-02-07",
+#       "category": "home",
+#       "text": "User's home address is 512 Spruce Lane."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "savings",
-#       "text": "User is saving for a wedding."
+#       "date": "2026-01-29",
+#       "category": "streaming",
+#       "text": "User subscribes to Disney+ and YouTube Premium."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "pet",
+#       "text": "User has a Border Collie named Ziggy."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-06-11",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-31",
 #       "title": "Building a PC",
 #       "bullets": [
 #         "budget around 2M won for gaming",
@@ -68,67 +61,61 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-23",
+#       "date": "2026-02-05",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
 #         "wanted coverage for the basement office"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "title": "Choosing a laptop",
-#       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕 토라라, 요즘 진짜 외로워. | S2 응, 맞아. 내가 연락 안 하면 걔네들은 연락 안 하더라고. | S3 그건 알겠는데, '충분한' 노력이 뭔지 알기가 어렵잖아. | S4 그러면… 그냥 새로운 친구를 찾아? 말처럼 쉬운 일이 아니잖아
+# EXAMINER(FDB-v2) 단계: S1 다음 주부터 새로운 일을 시작하는데, 좀 부담스럽고 걱정돼요. | S2 혹시 제가 멍청한 질문을 하면 어떡하죠? 아니면 뭔가를 이해하 | S3 그렇군요…사실 안심이 돼요. 그런데 일의 역사에 대해서도 생각 | S4 맞아요. 어쩌면 인간의 경험에 속하는 걸지도 몰라요. 고마워요
 
-     0.00s  user  발화 시작: 안녕 토라라, 요즘 진짜 외로워.
-     2.48s  agent 발화 시작: 안녕! 가끔 외로운 감정 드는 건 당연하고, 얘기해 줘서 정말 대단해.
-     2.50s  user  발화 끝
-     7.36s  user  발화 시작: 그냥… 내가 항상 먼저 연락하는 것 같아.
-     7.62s  agent 발화 끝
-    11.74s  agent 발화 시작: 힘들지, 그런 상황이면 외로울 만해. 계속 먼저 연락하는 데 에너지가 많이 들잖아.
-    11.80s  user  발화 끝
-    17.35s  user  발화 시작: 응, 맞아. 내가 연락 안 하면 걔네들은 연락 안 하더라고.
-    17.49s  agent 발화 끝
-    21.24s  agent 발화 시작: 친구 관계에서 균형이 안 맞는 것 같다는 걸 알아차린 거네. 그걸 인지하는 게 좋았어.
-    21.24s  user  발화 끝
-    22.99s  user  발화 시작: 그치.
-    23.62s  user  발화 끝
-    26.20s  user  발화 시작: 근데 뭘 해야 해? 그냥… 연락하는 걸 멈춰? 그건 너무 끔찍해.
-    26.84s  agent 발화 끝
-    30.38s  <ret> 발화 (turn8 첫 프레임)
-    30.96s  agent 발화 시작: <ret> 건강한 관계는 서로 노력하는 게 중요하고, 그건 어느 정도 주고받는 걸 말하는 거야.
-    31.15s  user  발화 끝
-    31.80s  ⚡SPAN 주입 [d'=1.42s / d_lead=6.39s]: Reciprocity in relationships is a key component of maintaining healthy
-    33.64s  user  발화 시작: 응.
-    33.99s  user  발화 끝
-    37.35s  agent 발화 끝
-    37.38s  user  발화 시작: 그건 알겠는데, '충분한' 노력이 뭔지 알기가 어렵잖아.
-    42.24s  agent 발화 시작: 맞아! 그건 정말 어려운 균형이야. 꼭 노력을 똑같이 맞춰야 하는 건 아니고, 소중하게 여겨지는 느낌을 받는
-    42.29s  user  발화 끝
-    50.44s  agent 발화 끝
-    50.92s  user  발화 시작: 만약 걔네들이 그냥… 그걸 소중히 여기지 않으면 어떡해?
-    54.29s  <ret> 발화 (turn13 첫 프레임)
-    54.42s  agent 발화 시작: <ret> 연구에 따르면 끈끈한 관계가 행복과 스트레스 감소에 중요하다고 해. 좋은 친구가 있는 사람들은 더
-    54.61s  user  발화 끝
-    55.98s  ⚡SPAN 주입 [d'=1.69s / d_lead=9.50s]: A study by the University of California, Berkeley, found that individu
-    63.92s  agent 발화 끝
-    64.04s  user  발화 시작: 그러면… 그냥 새로운 친구를 찾아? 말처럼 쉬운 일이 아니잖아.
-    69.13s  user  발화 끝
-    69.31s  agent 발화 시작: 휴, 맞는 말이야. 쉽지 않아. 하지만 계속 너를 지치게 만드는 관계는 살짝 놓아주는 것도 괜찮아.
-    76.54s  agent 발화 끝
+     0.00s  user  발화 시작: 다음 주부터 새로운 일을 시작하는데, 좀 부담스럽고 걱정돼요.
+     1.94s  agent 발화 시작: 네.
+     2.53s  agent 발화 끝
+     4.65s  agent 발화 시작: 새로운 일을 시작하면 그렇게 느끼는 건 당연해요! 함께 하나씩 해결해 봐요. 지금 가장 부담스러운 게 뭔지 
+     4.72s  user  발화 끝
+     9.01s  user  발화 시작: 음.
+     9.41s  user  발화 끝
+    13.30s  user  발화 시작: 그냥…모든 게요. 제가 충분히 잘 못 할까 봐, 아니면 일을 망칠까 봐 걱정돼요.
+    13.36s  agent 발화 끝
+    20.15s  user  발화 끝
+    20.28s  agent 발화 시작: 그런 걱정은 흔히들 하는 거니까 너무 염려하지 마세요. 누구나 처음부터 시작하는 거니까요. 적응하는 데 시간
+    25.90s  user  발화 시작: 네.
+    26.34s  user  발화 끝
+    28.48s  agent 발화 끝
+    28.83s  user  발화 시작: 혹시 제가 멍청한 질문을 하면 어떡하죠? 아니면 뭔가를 이해하지 못하면 어떡하죠?
+    34.18s  <ret> 발화 (turn8 첫 프레임)
+    34.62s  user  발화 끝
+    34.76s  agent 발화 시작: <ret> 질문하는 건 정말 좋은 거예요! 배우고 성장하려는 의지가 있다는 걸 보여주는 거니까요. 신입 사원
+    35.59s  ⚡SPAN 주입 [d'=1.42s / d_lead=17.44s]: A new employee should feel comfortable asking questions, as it demonst
+    43.54s  user  발화 시작: 그렇죠.
+    44.17s  user  발화 끝
+    52.14s  user  발화 시작: 그렇군요…사실 안심이 돼요. 그런데 일의 역사에 대해서도 생각하게 되네요. 사람들이 이런 종류의 일을 언제부
+    52.20s  agent 발화 끝
+    62.25s  user  발화 끝
+    62.29s  agent 발화 시작: <ret> 서양 개척 시대는 십오세기에 시작됐고, 탐험가와 식민지 개척자들이 무역과 농업 경제를 세웠어요. 
+    62.30s  <ret> 발화 (turn11 첫 프레임)
+    63.99s  ⚡SPAN 주입 [d'=1.69s / d_lead=12.04s]: The first wave of western settlement began in the early 15th century, 
+    69.28s  user  발화 시작: 네네.
+    69.86s  user  발화 끝
+    74.33s  agent 발화 끝
+    74.56s  user  발화 시작: 십오세기요? 와, 정말 오래됐네요. 그러니까 일 시작하는 게 항상 스트레스였던 건가요?
+    81.28s  user  발화 끝
+    81.34s  agent 발화 시작: 숨을 쉬세요. 항상 어려움은 있었을 거라고 생각해요. 물론 구체적인 내용은 많이 바뀌었겠지만요! 큰 그림을 
+    90.70s  agent 발화 끝
+    90.85s  user  발화 시작: 맞아요. 어쩌면 인간의 경험에 속하는 걸지도 몰라요. 고마워요, 다라.
+    96.27s  user  발화 끝
+    96.58s  agent 발화 시작: 도와드릴 수 있어서 기뻐요! 너무 걱정하지 마시고, 한 걸음씩 나아가세요. 분명 잘 해낼 수 있을 거예요!
+   104.73s  agent 발화 끝

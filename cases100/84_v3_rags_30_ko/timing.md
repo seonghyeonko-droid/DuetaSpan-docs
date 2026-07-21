@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "주서",
+#     "name": "혜국",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,92 +12,71 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "mid 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "skill",
-#       "text": "User is quite experienced with vintage synth collecting."
+#       "date": "2026-06-09",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "medication",
-#       "text": "User takes medication for migraines."
+#       "date": "2026-05-26",
+#       "category": "work",
+#       "text": "User works as a pharmacist."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "partner",
-#       "text": "User's partner is named Noah."
+#       "date": "2026-04-06",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Jisoo."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in September."
+#       "date": "2026-02-16",
+#       "category": "bloodtype",
+#       "text": "User's blood type is B+."
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "category": "schedule",
-#       "text": "User has a 9-to-6 weekday schedule."
+#       "date": "2026-02-02",
+#       "category": "commute",
+#       "text": "User takes a shuttle bus."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "learning",
-#       "text": "User is training for a half-marathon."
+#       "date": "2026-01-14",
+#       "category": "hobby",
+#       "text": "User is into long-distance cycling."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "anniversary",
-#       "text": "User's anniversary is June 2."
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-01-09",
+#       "category": "airline",
+#       "text": "User usually flies with Qatar Airways."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Choosing a laptop",
+#       "date": "2026-02-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-06-10",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-16",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot next Tuesday",
-#         "prefers Dr. Han at Bright Smile Clinic"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "title": "Switching phone plans",
-#       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "title": "Adopting a rescue dog",
-#       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 바이킹스가 램보 필드에서 마지막으로 이긴 게 언제였지?
-     3.08s  <ret> 발화 (turn1 첫 프레임)
-     3.70s  agent 발화 시작: <ret> 바이킹스가 램보 필드에서 그린베이 패커스를 이긴 건, 음, 이천십칠년 십이월 이십삼일이었어요. [
-     3.83s  user  발화 끝
-     4.63s  ⚡SPAN 주입 [d'=1.55s / d_lead=8.58s]: The Minnesota Vikings defeated the Green Bay Packers at Lambeau Field 
-    12.27s  agent 발화 끝
+     0.00s  user  발화 시작: 인도에서 처음으로 오 디 아이 경기를 한 건 언제야?
+     2.65s  <ret> 발화 (turn1 첫 프레임)
+     3.26s  agent 발화 시작: <ret> 오 디 아이 경기를 처음 한 건… 천구백칠십사년 칠월 오일이었어요. 런던 오벌에서 영국과 경기했답
+     3.36s  user  발화 끝
+     4.20s  ⚡SPAN 주입 [d'=1.55s / d_lead=8.69s]: India played its first One Day International (ODI) cricket match on 5 
+    11.95s  agent 발화 끝

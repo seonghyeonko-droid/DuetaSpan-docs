@@ -4,61 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "하형",
+#     "name": "우국",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "mid 30s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "date": "2026-05-13",
+#       "category": "commute",
+#       "text": "User walks 20 minutes to the office."
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-05-12",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Tobias."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-05-08",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a cappuccino with oat milk."
+#       "date": "2026-05-05",
+#       "category": "pet",
+#       "text": "User has a Ragdoll cat named Miso."
 #     },
 #     {
-#       "date": "2025-12-28",
-#       "category": "partner",
-#       "text": "User's partner is named Jisoo."
+#       "date": "2026-03-30",
+#       "category": "work",
+#       "text": "User works as a paramedic."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "airline",
-#       "text": "User usually flies with ANA."
+#       "date": "2025-12-12",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O-."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
-#       "title": "Building a PC",
+#       "date": "2026-06-09",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2026-06-01",
+#       "date": "2026-04-21",
+#       "title": "Choosing a preschool",
+#       "bullets": [
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-13",
 #       "title": "Buying a gift for a parent",
 #       "bullets": [
 #         "mom's 60th birthday next month",
@@ -66,57 +74,41 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-03-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-28",
-#       "title": "Adopting a rescue dog",
-#       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 파나마 페이퍼랑 파라다이스 페이퍼… 그 자료들을 누가 공 | S2 흐으으음… 심층 보도라… 혹시 그 신문에서 한국 관련 기사도  | S3 아, 그렇구나. 그럼 혹시 그 신문 웹사이트 주소 알 수 있을 | S4 알았어. 그럼, 혹시 그 신문에서 최근에 특별히 주목할 만한 
+# EXAMINER(FDB-v2) 단계: S1 혹시 극장 공연 선정은 누가 하는 걸까요? | S2 아, 그렇군요. 그럼 연출가는 뭐 하는 사람이에요? | S3 음, 배우는 누가 고르는 거죠? | S4 아하, 그렇군요. 감사합니다.
 
-     0.00s  user  발화 시작: 음… 파나마 페이퍼랑 파라다이스 페이퍼… 그 자료들을 누가 공개했더라?
-     2.72s  agent 발화 시작: 네.
-     3.26s  agent 발화 끝
-     5.97s  <ret> 발화 (turn2 첫 프레임)
-     6.52s  agent 발화 시작: <ret> 파나마 페이퍼와 파라다이스 페이퍼 조사는 독일의 <happy>쥐트도이체 차이퉁 신문에서 공개했습니
-     6.63s  user  발화 끝
-     7.27s  ⚡SPAN 주입 [d'=1.30s / d_lead=7.64s]: Süddeutsche Zeitung published the Panama Papers and Paradise Papers in
-    11.13s  user  발화 시작: 응.
-    11.58s  user  발화 끝
-    14.12s  user  발화 시작: 쥐트도이체 차이퉁이 독일 신문이었구나. 그럼 그 신문은 주로 무슨 기사를 다루는 신문이야?
-    14.17s  agent 발화 끝
-    19.80s  <ret> 발화 (turn5 첫 프레임)
-    20.18s  agent 발화 시작: <ret> 쥐트도이체 차이퉁은 뮌헨에서 발행되는 독일 일간지로, 심층적인 보도로 유명한 신문입니다.
-    20.23s  user  발화 끝
-    20.93s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.99s]: Süddeutsche Zeitung is a German daily newspaper published in Munich an
-    27.17s  agent 발화 끝
-    27.46s  user  발화 시작: 흐으으음… 심층 보도라… 혹시 그 신문에서 한국 관련 기사도 많이 다루나?
-    33.57s  <ret> 발화 (turn7 첫 프레임)
-    33.79s  agent 발화 시작: <ret> <happy>쥐트도이체 차이퉁에서는 한국의 정치 및 경제 발전 상황에 대한 기사를 다룬 적이 있습
-    33.85s  user  발화 끝
-    34.44s  ⚡SPAN 주입 [d'=0.87s / d_lead=6.67s]: (tool result) Süddeutsche Zeitung has reported on South Korea's politi
-    36.40s  user  발화 시작: 응.
-    36.89s  user  발화 끝
-    40.45s  agent 발화 끝
-    41.72s  user  발화 시작: 아, 그렇구나. 그럼 혹시 그 신문 웹사이트 주소 알 수 있을까?
-    46.58s  user  발화 끝
-    47.14s  agent 발화 시작: 죄송하지만 웹사이트 주소는 알려드릴 수 없습니다.
-    50.69s  agent 발화 끝
-    50.72s  user  발화 시작: 알았어. 그럼, 혹시 그 신문에서 최근에 특별히 주목할 만한 기사가 있었나?
-    56.99s  <ret> 발화 (turn12 첫 프레임)
-    57.10s  agent 발화 시작: <ret> 최근 쥐트도이체 차이퉁에서는 탈세 수법에 대한 심층 조사를 발표했습니다.
-    57.30s  user  발화 끝
-    58.17s  ⚡SPAN 주입 [d'=1.18s / d_lead=5.19s]: Süddeutsche Zeitung recently published an investigation into tax evasi
-    62.29s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 극장 공연 선정은 누가 하는 걸까요?
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.74s  agent 발화 시작: <ret> 공연 선정은 보통 극장 감독님이 담당하시죠. 극장 감독님이 어떤 공연을 올릴지 결정하는 분이세요.
+     2.88s  user  발화 끝
+     3.82s  ⚡SPAN 주입 [d'=1.18s / d_lead=6.39s]: The theatre director is responsible for choosing shows for the theatre
+     5.53s  user  발화 시작: 네.
+     5.98s  user  발화 끝
+     9.13s  agent 발화 끝
+    10.85s  user  발화 시작: 아, 그렇군요. 그럼 연출가는 뭐 하는 사람이에요?
+    13.53s  <ret> 발화 (turn4 첫 프레임)
+    13.60s  agent 발화 시작: <ret> 연출가님은 무대 연출의 창의적이고 기술적인 부분을 총괄하시는 분이에요. 무대 연출가님은 배우들의 
+    13.71s  user  발화 끝
+    14.57s  ⚡SPAN 주입 [d'=1.05s / d_lead=9.08s]: A stage director oversees the creative and technical aspects of a thea
+    17.77s  user  발화 시작: 그렇죠.
+    18.21s  user  발화 끝
+    22.68s  agent 발화 끝
+    22.68s  user  발화 시작: 음, 배우는 누가 고르는 거죠?
+    24.36s  <ret> 발화 (turn7 첫 프레임)
+    24.74s  agent 발화 시작: <ret> 배우 섭외는 캐스팅 디렉터가 담당하세요. 캐스팅 디렉터는 공연에 맞는 배우를 선택하는 역할을 하시
+    24.84s  user  발화 끝
+    25.17s  ⚡SPAN 주입 [d'=0.81s / d_lead=6.67s]: The casting director is responsible for selecting actors for a theatre
+    31.41s  agent 발화 끝
+    31.54s  user  발화 시작: 아하, 그렇군요. 감사합니다.
+    33.33s  user  발화 끝
+    33.63s  agent 발화 시작: 천만에요.
+    34.59s  agent 발화 끝

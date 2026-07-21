@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_47",
-#     "name": "시영",
+#     "name": "라연",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,235 +13,250 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "phone",
-#       "text": "User uses an iPhone 15."
+#       "date": "2026-06-03",
+#       "category": "bloodtype",
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-06-15",
+#       "date": "2026-05-16",
+#       "category": "car",
+#       "text": "User drives a 2017 Honda Civic."
+#     },
+#     {
+#       "date": "2026-04-20",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
+#     },
+#     {
+#       "date": "2026-03-01",
 #       "category": "learning",
-#       "text": "User is taking pottery classes."
+#       "text": "User is learning Spanish."
 #     },
 #     {
-#       "date": "2026-05-29",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "music",
-#       "text": "User likes listening to K-ballads."
+#       "date": "2026-02-07",
+#       "category": "dislike",
+#       "text": "User can't stand bell peppers."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-08",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-03",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "title": "Refinancing a mortgage",
+#       "date": "2025-12-22",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-01",
-#       "title": "Researching a used car",
+#       "date": "2025-12-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "title": "Choosing a preschool",
+#       "bullets": [
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 머리 자르러 예약했어. 팔월 이십오일 오후 네시에. | S2 오, 간단하네. 그럼 토마토 소스는 직접 만들어야 할까? | S3 미션 임파서블! 보고 싶었는데. 그럼 '파스타 핏'에서 밥 먹 | S4 알았어. 그럼 예약하는 방법 좀 알아봐 줄 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 오늘 점심 약속이 있는데, 사월 구일 오후 열두시 십오분에 삼 | S2 아, 그렇군요. 그럼, 부산에서 갈 만한 근교 여행지 추천해  | S3 필라테스 와이 에스는 어디에 있어요? | S4 그렇군요.
 
-     0.00s  user  발화 시작: 오늘 머리 자르러 예약했어. 팔월 이십오일 오후 네시에.
-     4.69s  agent 발화 시작: 네, 기억해 둘게요.
-     4.77s  user  발화 끝
-     5.86s  user  발화 시작: 그리고 다음 주에 친구랑 부산역 근처 카페 가려고 하는데, 괜찮은 데 알아봐 줄 수 있어?
-     6.07s  agent 발화 끝
-    11.24s  <ret> 발화 (turn3 첫 프레임)
-    11.42s  agent 발화 시작: <ret> 부산역 근처 카페를 찾으셨군요. '카페 드롭탑 부산역점'이 괜찮을 것 같아요. 아메리카노는 사천오
-    11.56s  user  발화 끝
-    12.10s  ⚡SPAN 주입 [d'=0.85s / d_lead=9.69s]: (tool result) 부산역 근처에는 '카페 드롭탑 부산역점'이 있으며, 아메리카노는 4,500원, 라떼는 5,000원입니
-    21.11s  agent 발화 끝
-    22.52s  user  발화 시작: 오, 드롭탑 괜찮지. 분위기는 어때?
-    25.76s  user  발화 끝
-    25.76s  agent 발화 시작: 드롭탑은 편안하고 넓은 공간을 제공하며, 콘센트도 잘 되어 있어서 공부하거나 노트북 작업하기에도 좋아요.
-    32.62s  agent 발화 끝
-    32.80s  user  발화 시작: 좋아, 그럼 혹시 거기 근처에 맛있는 빵집도 있을까?
-    36.23s  agent 발화 시작: <ret> 부산역 근처 빵집으로는 '블랑제리뵈르'가 있어요. 다양한 빵과 케이크가 있는데, 특히 소금빵이 유
-    36.27s  <ret> 발화 (turn7 첫 프레임)
-    36.40s  user  발화 끝
-    36.88s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.39s]: (tool result) 부산역 근처에는 '블랑제리뵈르'가 있으며, 다양한 종류의 빵과 케이크를 판매하고 있습니다. 특히 소금
-    44.59s  user  발화 시작: 소금빵! 맛있겠다. 그럼 다음 주에 거기서 만나서 빵 먹으면서 수다 떨자.
-    44.62s  agent 발화 끝
-    47.34s  agent 발화 시작: 네네.
-    47.83s  agent 발화 끝
-    49.26s  agent 발화 시작: 네, 좋아요! 다음 주에 '블랑제리뵈르'에서 만나는 걸로 할까요?
-    49.54s  user  발화 끝
-    51.02s  user  발화 시작: 그래.
-    51.65s  user  발화 끝
-    53.13s  user  발화 시작: 응, 그래. 아, 근데 혹시 '다음 푸드 네트워크 스타' 시즌 구 우승자가 누구였지? 갑자기 궁금해졌어.
-    53.20s  agent 발화 끝
-    59.27s  <ret> 발화 (turn13 첫 프레임)
-    59.73s  agent 발화 시작: <ret> '다음 푸드 네트워크 스타' 시즌 구의 우승자는 다마리스 필립스였어요. 남부 스타일 요리와 매력적
-    59.89s  user  발화 끝
-    60.13s  ⚡SPAN 주입 [d'=0.85s / d_lead=9.73s]: (tool result) Damaris Phillips won Season 9 of The Next Food Network S
-    69.27s  user  발화 시작: 다마리스 필립스! 기억이 안 났는데, 알려줘서 고마워. 요즘 요리에 관심이 많아져서.
-    69.46s  agent 발화 끝
-    71.89s  agent 발화 시작: 네네.
-    72.39s  agent 발화 끝
-    76.47s  agent 발화 시작: 요리에 관심이 많아지셨군요. 혹시 특별히 배우고 싶은 요리가 있으세요?
-    76.50s  user  발화 끝
-    81.19s  user  발화 시작: 음… 파스타! 파스타는 정말 좋아하는데, 집에서 제대로 만들어 본 적이 없어.
-    81.37s  agent 발화 끝
-    84.55s  agent 발화 시작: 네.
-    84.95s  agent 발화 끝
-    86.68s  <ret> 발화 (turn19 첫 프레임)
-    86.90s  agent 발화 시작: <ret> 간단한 토마토 파스타 레시피는 파스타 면 일 공 공 지, 토마토 소스 이 공 공 지, 양파 이분의
-    87.03s  user  발화 끝
-    87.55s  ⚡SPAN 주입 [d'=0.87s / d_lead=11.73s]: (tool result) 가장 기본적인 토마토 파스타 레시피는 파스타 면 100g, 토마토 소스 200g, 양파 1/2개, 마
-    98.51s  user  발화 시작: 오, 간단하네. 그럼 토마토 소스는 직접 만들어야 할까?
-    98.64s  agent 발화 끝
-   102.01s  agent 발화 시작: 직접 만드셔도 좋고, 시판 토마토 소스를 사용하셔도 괜찮아요. 직접 만들면 더 맛있겠지만, 시간과 노력이 필
-   102.20s  user  발화 끝
-   104.75s  user  발화 시작: 그래.
-   105.20s  user  발화 끝
-   110.26s  agent 발화 끝
-   110.36s  user  발화 시작: 음… 귀찮으니까 시판 소스나 써야겠다. 그럼 혹시 파스타 면 종류가 뭐가 있는지 알아봐 줄 수 있어?
-   116.75s  <ret> 발화 (turn24 첫 프레임)
-   116.83s  agent 발화 시작: <ret> 파스타 면 종류는 스파게티, 페투치네, 푸실리, 펜네, 리가토니 등이 있어요. 면마다 어울리는 소
-   116.98s  user  발화 끝
-   117.70s  ⚡SPAN 주입 [d'=0.95s / d_lead=8.90s]: (tool result) 파스타 면 종류는 스파게티, 페투치네, 푸실리, 펜네, 리가토니 등이 있으며, 각 면마다 어울리는 소
-   120.19s  user  발화 시작: 응.
-   120.50s  user  발화 끝
-   125.74s  agent 발화 끝
-   126.40s  user  발화 시작: 스파게티는 기본이지. 그럼 페투치네는 어떤 소스랑 잘 어울려?
-   130.85s  agent 발화 시작: 페투치네는 크림소스나 알프레도 소스와 잘 어울려요. 넓적한 면이 소스를 잘 흡수해서 더욱 맛있답니다.
-   130.93s  user  발화 끝
-   138.72s  agent 발화 끝
-   138.79s  user  발화 시작: 크림소스! 완전 내 스타일인데. 그럼 부산에서 파스타 맛집 좀 알아봐 줘.
-   141.97s  agent 발화 시작: 맞아요.
-   142.69s  agent 발화 끝
-   144.11s  <ret> 발화 (turn30 첫 프레임)
-   144.12s  agent 발화 시작: <ret> 부산 해운대에는 '라벨라치타'라는 파스타 맛집이 있어요. 봉골레 파스타가 특히 유명하고, 평점은 
-   144.31s  user  발화 끝
-   145.01s  ⚡SPAN 주입 [d'=0.90s / d_lead=8.67s]: (tool result) 부산 해운대에는 '라벨라치타'라는 파스타 맛집이 있으며, 특히 봉골레 파스타가 유명합니다. 평점은 4
-   152.78s  agent 발화 끝
-   152.90s  user  발화 시작: 해운대? 거기는 좀 멀리 떨어져 있네. 서면 근처에는 없을까?
-   156.52s  <ret> 발화 (turn32 첫 프레임)
-   156.98s  agent 발화 시작: <ret> 서면에는 '파스타 핏'이라는 파스타 맛집이 있어요. 다양한 파스타와 스테이크를 팔고, 일인당 가격
-   157.11s  user  발화 끝
-   157.98s  ⚡SPAN 주입 [d'=1.46s / d_lead=9.36s]: (tool result) 서면에는 '파스타 핏'이라는 파스타 맛집이 있으며, 다양한 종류의 파스타와 스테이크를 판매합니다. 가
-   166.21s  user  발화 시작: 이만원이면 괜찮네. 그럼 거기가 분위기는 어때?
-   166.34s  agent 발화 끝
-   169.23s  agent 발화 시작: '파스타 핏'은 아늑하고 로맨틱한 분위기로 데이트 장소로도 인기가 많아요.
-   169.44s  user  발화 끝
-   174.18s  agent 발화 끝
-   175.13s  user  발화 시작: 오, 데이트 장소로 딱이네. 그럼 혹시 그 근처에 영화관도 있을까?
-   176.91s  agent 발화 시작: 네.
-   177.40s  agent 발화 끝
-   179.64s  <ret> 발화 (turn37 첫 프레임)
-   179.82s  agent 발화 시작: <ret> 서면에는 '메가박스 서면'이 있어요. 지금 '미션 임파서블: 데드 레코닝 PART ONE'을 상영
-   180.04s  user  발화 끝
-   181.23s  ⚡SPAN 주입 [d'=1.59s / d_lead=6.86s]: (tool result) 서면에는 '메가박스 서면'이 있으며, 현재 '미션 임파서블: 데드 레코닝 PART ONE'을 상영하고
-   186.68s  agent 발화 끝
-   186.77s  user  발화 시작: 미션 임파서블! 보고 싶었는데. 그럼 '파스타 핏'에서 밥 먹고, '메가박스 서면'에서 영화 보고 데이트하기
-   192.00s  🃏 CARD 주입 (2400f, 누적 39턴 요약, 112f): haircut date: 팔월 이십오일 오후 네시; cuisine preference: 파스타; restaurant location: 서면; restaurant:
-   194.55s  user  발화 끝
-   194.62s  agent 발화 시작: 네, 완벽한 데이트 코스네요!
-   196.78s  agent 발화 끝
-   197.06s  user  발화 시작: 아, 맞다. 내가 팔월 이십오일에 머리 자르기로 했었지?
-   200.94s  agent 발화 시작: 네, 기억하고 있어요. 팔월 이십오일 오후 네시에 머리 자르기로 하셨죠.
-   201.09s  user  발화 끝
-   204.25s  user  발화 시작: 음.
-   204.70s  user  발화 끝
-   205.42s  agent 발화 끝
-   205.46s  user  발화 시작: 시간은 몇 시였지?
-   206.83s  agent 발화 시작: 오후 네시였습니다.
-   206.93s  user  발화 끝
-   208.53s  agent 발화 끝
-   209.79s  user  발화 시작: 아, 맞아. 그리고 머리 자르는 비용은 얼마였지?
-   213.10s  agent 발화 시작: 이만 오천원이었습니다.
+     0.00s  user  발화 시작: 오늘 점심 약속이 있는데, 사월 구일 오후 열두시 십오분에 삼만 오천원짜리 식사 예약했어요.
+     2.02s  agent 발화 시작: 음.
+     2.46s  agent 발화 끝
+     6.73s  user  발화 끝
+     6.78s  agent 발화 시작: 네, 기억해 둘게요. 혹시 다른 계획은 없으신가요?
+     8.74s  user  발화 시작: 그렇죠.
+     9.31s  user  발화 끝
+    12.56s  agent 발화 끝
+    12.77s  user  발화 시작: 아니요, 특별한 건 없어요. 요즘 '원스 어폰 어 타임'에 푹 빠져서 보고 있는데… 헨리 부모님은 누구였는지
+    17.18s  agent 발화 시작: 네.
+    17.68s  agent 발화 끝
+    21.07s  <ret> 발화 (turn6 첫 프레임)
+    21.43s  agent 발화 시작: <ret> 헨리의 아버지는 닐 캐시디, 어머니는 레지나 밀스였어요. 두 분 다 드라마에서 중요한 역할을 하셨
+    21.47s  user  발화 끝
+    22.22s  ⚡SPAN 주입 [d'=1.16s / d_lead=8.47s]: Neal Cassidy was Henry's father, and Regina Mills was his mother.
+    29.90s  user  발화 시작: 아, 그렇군요. 닐 캐시디… 뭔가 익숙한 이름인데.
+    29.90s  agent 발화 끝
+    33.58s  user  발화 끝
+    33.64s  agent 발화 시작: 네, 닐 캐시디는 드라마 팬들 사이에서 꽤 유명한 캐릭터예요.
+    38.96s  agent 발화 끝
+    39.23s  user  발화 시작: 부산에서 데이트할 만한 곳 추천해 줄 수 있어요? 조용한 카페가 좋을 것 같아요.
+    41.88s  agent 발화 시작: 네.
+    42.46s  agent 발화 끝
+    43.92s  <ret> 발화 (turn11 첫 프레임)
+    44.38s  agent 발화 시작: <ret> 부산에는 예쁜 카페들이 많아요. 범천동에 있는 카페 윈 라이프나, 연제구의 커피 스미스가 괜찮을 
+    44.52s  user  발화 끝
+    45.02s  ⚡SPAN 주입 [d'=1.10s / d_lead=8.89s]: (tool result) Busan has many cafes: Cafe Une Vie (-35.1054, 128.7678),
+    53.28s  agent 발화 끝
+    53.33s  user  발화 시작: 카페 윈 라이프… 거긴 분위기가 어때요?
+    55.85s  agent 발화 시작: 카페 윈 라이프는 아늑하고 조용한 분위기로, 데이트하기에 아주 좋은 곳이에요.
+    55.85s  user  발화 끝
+    61.78s  agent 발화 끝
+    62.03s  user  발화 시작: 좋아요. 그럼, 이번 주 토요일에 영화 볼 만한 영화관도 추천해 주세요.
+    66.41s  user  발화 끝
+    66.42s  <ret> 발화 (turn15 첫 프레임)
+    66.59s  agent 발화 시작: <ret> 부산에는 메가박스 해운대와 롯데시네마 부산역이 있어요. 어떤 영화를 보고 싶으세요?
+    67.02s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.32s]: (tool result) Busan has several cinemas: Megabox Haeundae (35.1561, 12
+    71.78s  user  발화 시작: 네.
+    72.18s  user  발화 끝
+    73.63s  user  발화 시작: 음… 액션 영화가 보고 싶은데, 최신 개봉작 중에서 추천해 줄 만한 거 있어요?
+    73.91s  agent 발화 끝
+    78.26s  <ret> 발화 (turn18 첫 프레임)
+    78.76s  agent 발화 시작: <ret> 부산에서 지금 상영 중인 액션 영화로는 “퓨리오사: 매드맥스 사가”와 “배드 보이즈: 라이드 오어
+    78.86s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.53s]: (tool result) Currently showing in Busan: “Furiosa: A Mad Max Saga” an
+    78.86s  user  발화 끝
+    82.08s  user  발화 시작: 네.
+    82.53s  user  발화 끝
+    87.28s  agent 발화 끝
+    87.74s  user  발화 시작: “퓨리오사”가 괜찮겠네요. 그럼 이번 주 토요일 오후 세시에 예매해 줄 수 있어요?
+    92.46s  <ret> 발화 (turn21 첫 프레임)
+    92.70s  agent 발화 시작: <ret> 죄송하지만, 현재 영화 예매 기능은 지원하지 않습니다. 직접 예매하셔야 할 것 같아요.
+    92.77s  user  발화 끝
+    93.35s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.64s]: (no information found)
+   100.34s  agent 발화 끝
+   100.65s  user  발화 시작: 아, 그렇군요. 그럼, 부산에서 갈 만한 근교 여행지 추천해 줄 수 있어요?
+   105.17s  <ret> 발화 (turn23 첫 프레임)
+   105.57s  agent 발화 시작: <ret> 부산 근교에는 태종대와 감천문화마을이 있어요. 둘 다 아름다운 풍경을 자랑하는 곳이죠.
+   105.70s  user  발화 끝
+   106.40s  ⚡SPAN 주입 [d'=1.23s / d_lead=7.92s]: (tool result) Nearby attractions include Taejongdae Park (-35.0345, 12
+   113.39s  user  발화 시작: 감천문화마을은 가봤는데, 태종대는 아직 못 가봤어요. 태종대는 어떻게 가야 해요?
+   113.49s  agent 발화 끝
+   118.86s  <ret> 발화 (turn25 첫 프레임)
+   118.96s  agent 발화 시작: <ret> 태종대까지는 자가용으로 약 십사 점 이킬로미터, 삼십분 정도 소요됩니다.
+   119.03s  user  발화 끝
+   120.04s  ⚡SPAN 주입 [d'=1.18s / d_lead=6.48s]: (tool result) 14.2 km, 30 min by driving.
+   121.29s  user  발화 시작: 네.
+   121.73s  user  발화 끝
+   125.44s  agent 발화 끝
+   126.37s  user  발화 시작: 삼십분이면 괜찮겠네요. 아, 맞다. 제가 점심 약속했던 날짜가 언제였죠?
+   130.27s  agent 발화 시작: 음.
+   130.67s  agent 발화 끝
+   131.69s  agent 발화 시작: 사월 구일에 오후 열두시 십오분에 삼만 오천원짜리 식사 예약하셨어요.
+   131.77s  user  발화 끝
+   137.43s  agent 발화 끝
+   137.74s  user  발화 시작: 아, 맞아요! 감사합니다.
+   140.27s  user  발화 끝
+   140.49s  agent 발화 시작: 천만에요.
+   141.59s  user  발화 시작: 음… 요즘 날씨가 너무 건조한데, 가습기 추천해 줄 수 있어요?
+   141.69s  agent 발화 끝
+   146.23s  <ret> 발화 (turn33 첫 프레임)
+   146.64s  agent 발화 시작: <ret> 요즘 인기 있는 가습기는 레보이트 엘 브이 육 공 공 에이치 에이치와 허니웰 에이치 씨 엠 삼 오
+   146.65s  user  발화 끝
+   146.89s  ⚡SPAN 주입 [d'=0.66s / d_lead=18.23s]: (tool result) The best humidifiers are: Levoit LV600HH (4.5 stars, $99
+   164.87s  agent 발화 끝
+   165.50s  user  발화 시작: 가격이 좀 비싸네요. 좀 더 저렴한 가습기 없을까요?
+   168.85s  <ret> 발화 (turn35 첫 프레임)
+   169.37s  agent 발화 시작: <ret> 좀 더 저렴한 가습기로는 퓨어 엔리치먼트 미스테어 클라우드와 에버라스팅 컴포트 초음파 가습기가 있
+   169.46s  user  발화 끝
+   170.26s  ⚡SPAN 주입 [d'=1.41s / d_lead=16.14s]: (tool result) Affordable humidifiers include: Pure Enrichment MistAire
+   181.49s  user  발화 시작: 네네.
+   182.12s  user  발화 끝
+   185.45s  user  발화 시작: 퓨어 엔리치먼트 미스테어 클라우드가 괜찮겠네요.
+   185.51s  agent 발화 끝
+   188.80s  user  발화 끝
+   189.22s  agent 발화 시작: 좋은 선택이에요. 작고 휴대하기 편해서 사무실이나 침실에서 사용하기 좋아요.
+   192.00s  🃏 CARD 주입 (2400f, 누적 39턴 요약, 112f): lunch date: 사월 구일 오후 열두시 십오분; lunch cost: 삼만 오천원; movie time: 이번 주 토요일 오후 세시
+   193.50s  user  발화 시작: 네.
+   194.09s  user  발화 끝
+   196.35s  user  발화 시작: 혹시 부산에서 괜찮은 필라테스 학원도 추천해 줄 수 있을까요?
+   196.44s  agent 발화 끝
+   200.42s  <ret> 발화 (turn41 첫 프레임)
+   200.59s  agent 발화 시작: <ret> 부산에는 필라테스 와이 에스와 바디 밸런스 필라테스가 있어요. 둘 다 전문 강사진과 쾌적한 시설을
+   200.66s  user  발화 끝
+   201.33s  ⚡SPAN 주입 [d'=0.91s / d_lead=10.29s]: (tool result) Pilates studios in Busan include: Pilates YS (-35.1768, 
+   210.88s  agent 발화 끝
+   210.90s  user  발화 시작: 필라테스 와이 에스는 어디에 있어요?
    213.35s  user  발화 끝
-   214.70s  user  발화 시작: 고마워. 다시 한번 알려줘서.
-   214.85s  agent 발화 끝
-   216.88s  agent 발화 시작: 천만에요.
-   217.06s  user  발화 끝
-   217.70s  agent 발화 끝
-   217.96s  user  발화 시작: 아, 그리고 이번 주 토요일에 친구들이랑 부산 해운대에서 바베큐 파티 할 건데, 혹시 해운대에서 바베큐 할 
-   226.85s  <ret> 발화 (turn50 첫 프레임)
-   226.97s  agent 발화 시작: <ret> 해운대에는 '해운대 바베큐 광장'이 있어요. 테이블과 그릴을 빌릴 수 있고, 테이블당 삼만원이라고
-   227.04s  user  발화 끝
-   228.74s  ⚡SPAN 주입 [d'=1.89s / d_lead=7.37s]: (tool result) 해운대에는 '해운대 바베큐 광장'이 있으며, 테이블과 그릴을 대여할 수 있습니다. 이용 요금은 테이블
-   234.17s  user  발화 시작: 삼만원이면 괜찮네. 그럼 거기는 예약해야 할까?
-   234.33s  agent 발화 끝
-   237.90s  agent 발화 시작: 네, '해운대 바베큐 광장'은 예약이 필수입니다. 미리 예약하지 않으면 자리를 잡기 어려울 수 있어요.
-   238.06s  user  발화 끝
-   242.63s  user  발화 시작: 어.
-   243.27s  user  발화 끝
-   244.66s  agent 발화 끝
-   244.92s  user  발화 시작: 알았어. 그럼 예약하는 방법 좀 알아봐 줄 수 있어?
-   247.64s  <ret> 발화 (turn55 첫 프레임)
-   247.83s  agent 발화 시작: <ret> '해운대 바베큐 광장'은 전화(공 오 일 칠 사 삼 이 팔 이 팔)나 온라인(https://www
-   247.87s  user  발화 끝
-   248.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.13s]: (tool result) 해운대 바베큐 광장은 전화(051-743-2828) 또는 온라인(https://www.haeundae
-   251.72s  user  발화 시작: 음.
-   252.21s  user  발화 끝
-   258.95s  agent 발화 끝
-   259.01s  user  발화 시작: 오, 온라인으로도 예약할 수 있네. 그럼 예약해 줄 수 있어?
-   260.54s  agent 발화 시작: 네.
-   260.99s  agent 발화 끝
-   262.85s  user  발화 끝
-   263.04s  agent 발화 시작: 죄송합니다. 저는 예약을 대행할 수 없습니다. 직접 전화하거나 온라인으로 예약하셔야 합니다.
-   269.20s  agent 발화 끝
-   270.31s  user  발화 시작: 알았어. 직접 해야 하는 거구나. 아, 근데 내가 팔월 이십오일에 머리 자르기로 예약한 거, 혹시 몇 시였지
-   277.70s  user  발화 시작: … 잠깐만, 그 전에 혹시 파스타 핏 근처에 주차하기 편한 곳이 있을까?
-   277.87s  user  발화 끝
-   280.79s  agent 발화 시작: 네네.
-   281.42s  agent 발화 끝
-   282.20s  <ret> 발화 (turn63 첫 프레임)
-   282.70s  user  발화 끝
-   282.80s  agent 발화 시작: <ret> 파스타 핏 근처에는 '서면 주차타워'가 있어요. 한시간당 삼천원이라고 하네요.
-   283.50s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.14s]: (tool result) 파스타 핏 근처에는 '서면 주차타워'가 있으며, 1시간당 3,000원의 요금을 부과합니다.
-   285.37s  user  발화 시작: 응.
-   285.72s  user  발화 끝
-   287.93s  agent 발화 끝
-   288.00s  user  발화 시작: 오, 괜찮네. 그럼 주차타워 주소 좀 알려줄 수 있어?
-   291.12s  agent 발화 시작: 서면 주차타워 주소는 부산광역시 부산진구 부전동 이 이 사 일 공입니다.
-   291.24s  user  발화 끝
-   293.15s  user  발화 시작: 어.
-   293.60s  user  발화 끝
-   297.38s  agent 발화 끝
-   297.44s  user  발화 시작: 고마워. 다시 돌아와서, 머리 자르기로 예약한 시간이 몇 시였지?
-   302.34s  agent 발화 시작: 오후 네시였습니다.
-   302.44s  user  발화 끝
-   303.71s  agent 발화 끝
-   305.08s  user  발화 시작: 알았어. 다시 한번 알려줘서 고마워.
-   307.66s  agent 발화 시작: [happy] 천만에요. 즐거운 시간 보내세요!
-   307.81s  user  발화 끝
-   310.57s  agent 발화 끝
+   213.43s  agent 발화 시작: 필라테스 와이 에스는 부산 해운대구에 위치하고 있습니다.
+   218.17s  agent 발화 끝
+   219.16s  user  발화 시작: 아, 해운대군요.
+   220.43s  agent 발화 시작: 네, 해운대역 근처에 있어요.
+   220.46s  user  발화 끝
+   223.10s  agent 발화 끝
+   223.32s  user  발화 시작: 혹시 그 필라테스 학원 예약도 가능할까요?
+   226.40s  <ret> 발화 (turn47 첫 프레임)
+   226.51s  user  발화 끝
+   226.76s  agent 발화 시작: <ret> 죄송하지만, 현재 필라테스 학원 예약 기능은 지원하지 않습니다. 직접 문의하셔야 할 것 같아요.
+   227.82s  ⚡SPAN 주입 [d'=1.42s / d_lead=7.88s]: (no information found)
+   231.99s  user  발화 시작: 그렇죠.
+   232.57s  user  발화 끝
+   234.64s  agent 발화 끝
+   234.67s  user  발화 시작: 아, 그렇군요.
+   235.85s  user  발화 끝
+   236.01s  agent 발화 시작: 네, 직접 전화해서 예약하시는 것이 가장 정확할 거예요.
+   237.35s  user  발화 시작: 네.
+   237.93s  user  발화 끝
+   240.45s  user  발화 시작: 요즘 스트레스가 너무 심한데, 마음을 안정시키는 방법 없을까요?
+   240.54s  agent 발화 끝
+   244.84s  user  발화 끝
+   245.07s  agent 발화 시작: 스트레스가 심하시군요. 심호흡을 하거나, 명상을 하거나, 좋아하는 음악을 듣는 것이 도움이 될 수 있어요.
+   254.34s  agent 발화 끝
+   254.79s  user  발화 시작: —그런데, 사실 요즘 이별 후유증 때문에 너무 힘들어요.
+   258.81s  user  발화 시작: 혹시 이런 감정을 다루는 데 도움이 되는 책이라도 추천해 줄 수 있을까요?
+   258.85s  user  발화 끝
+   263.22s  <ret> 발화 (turn56 첫 프레임)
+   263.41s  agent 발화 시작: <ret> 이별 후유증 때문에 힘드시군요. 감정을 다루는 데 도움이 되는 책으로는… “괜찮아, 아프지 않아도
+   263.42s  user  발화 끝
+   265.15s  ⚡SPAN 주입 [d'=1.93s / d_lead=13.50s]: “It's Okay That You're Not Okay” by Megan Devine explores grief and he
+   276.91s  agent 발화 끝
+   277.12s  user  발화 시작: 그 책… 한번 찾아봐야겠네요.
+   279.13s  agent 발화 시작: 네, 읽어보시면 마음이 조금은 편안해지실 거예요.
+   279.24s  user  발화 끝
+   281.68s  user  발화 시작: 맞아요.
+   282.26s  user  발화 끝
+   283.62s  agent 발화 끝
+   283.77s  agent 발화 시작: 슬픔은 자연스러운 감정이에요. 억지로 참으려고 하지 마시고, 충분히 느끼고 표현하는 것이 중요합니다.
+   291.02s  user  발화 시작: 네.
+   291.47s  user  발화 끝
+   293.55s  agent 발화 끝
+   293.90s  user  발화 시작: 그렇군요.
+   294.67s  user  발화 끝
+   295.09s  agent 발화 시작: 힘들 때는 주변 사람들에게 도움을 요청하는 것도 좋은 방법이에요.
+   300.18s  agent 발화 끝
+   300.42s  user  발화 시작: 네, 알겠습니다.
+   301.70s  user  발화 끝
+   302.11s  agent 발화 시작: 혹시 가족이나 친구분들과 이야기 나눠보셨나요?
+   306.23s  agent 발화 끝
+   307.11s  user  발화 시작: 아직은 좀 어려워요.
+   308.65s  user  발화 끝
+   308.66s  agent 발화 시작: 괜찮아요. 천천히 시간을 가지고, 마음이 준비될 때 이야기해 보세요.
+   314.36s  agent 발화 끝
+   314.80s  user  발화 시작: 네.
+   315.36s  agent 발화 시작: 저는 항상 당신 곁에 있다는 것을 기억해주세요.
+   315.44s  user  발화 끝
+   318.23s  user  발화 시작: 네.
+   318.63s  user  발화 끝
+   319.39s  agent 발화 시작: 천만에요.
+   319.43s  agent 발화 끝
+   320.53s  agent 발화 끝
+   320.58s  user  발화 시작: 아, 제가 점심 약속 때 얼마를 냈었죠?
+   323.32s  user  발화 끝
+   323.38s  agent 발화 시작: 사월 구일에 삼만 오천원을 내셨습니다.
+   326.69s  agent 발화 끝
+   327.59s  user  발화 시작: 아, 맞아요. 잊고 있었네요.
+   329.39s  user  발화 끝
+   329.43s  agent 발화 시작: 네, 기억해 드려서 다행이에요.
+   332.25s  agent 발화 끝
+   332.38s  user  발화 시작: 그럼, 오늘 하루도 잘 보내세요.
+   334.58s  user  발화 끝

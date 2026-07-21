@@ -4,121 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "하담",
+#     "name": "세국",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
-#       "category": "car",
-#       "text": "User drives a 2021 Tesla Model 3."
+#       "date": "2026-05-10",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is tonkotsu ramen."
 #     },
 #     {
-#       "date": "2026-05-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Slovenia in February."
+#       "date": "2026-03-08",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Yuna."
 #     },
 #     {
-#       "date": "2026-05-11",
-#       "category": "commute",
-#       "text": "User takes a shuttle bus."
-#     },
-#     {
-#       "date": "2026-04-16",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
-#     },
-#     {
-#       "date": "2026-03-20",
-#       "category": "employer",
-#       "text": "User works at a game studio."
-#     },
-#     {
-#       "date": "2026-03-01",
+#       "date": "2026-03-07",
 #       "category": "bloodtype",
-#       "text": "User's blood type is A+."
+#       "text": "User's blood type is B+."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "work",
-#       "text": "User works as a civil engineer."
+#       "date": "2026-02-28",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
-#     },
-#     {
-#       "date": "2026-01-17",
+#       "date": "2026-01-05",
 #       "category": "floor",
 #       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "category": "dislike",
+#       "text": "User can't stand durian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Booking a moving company",
+#       "date": "2026-06-08",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "moving a 2-bedroom apartment across town on the 30th",
-#         "needs help disassembling furniture"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-06-04",
-#       "title": "Building a PC",
+#       "date": "2026-02-21",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "title": "Selling a used bike",
+#       "date": "2025-12-03",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "title": "Booking a Japan trip",
-#       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 하담님. 저는 케리라입니다. 힘든 변화나 슬픔을 겪을 때 곁에서 함께하는 역할을 하고 있어요.
-     2.26s  user  발화 시작: 그래.
-     2.71s  user  발화 끝
-     7.32s  agent 발화 끝
-     7.59s  user  발화 시작: 안녕하세요. 요즘 좀 힘드네요.
-     9.76s  user  발화 끝
-     9.93s  agent 발화 시작: 힘든 시간을 보내고 계시는군요. 괜찮아요, 그런 감정은 자연스러운 거예요. 잠시 숨을 고르고, 어떤 점이 가
-    15.46s  user  발화 시작: 응.
-    15.91s  user  발화 끝
-    19.99s  agent 발화 시작: 하담님의 하루는 보통 어떻게 보내시나요? —
-    20.04s  agent 발화 끝
-    21.85s  user  발화 시작: interrupting] … 혹시 제가 전에 슬로베니아 여행 계획 세운다고 말씀드렸었죠?
-    22.52s  agent 발화 끝
-    25.66s  agent 발화 시작: 음.
-    26.29s  agent 발화 끝
-    26.81s  <ret> 발화 (turn8 첫 프레임)
-    27.21s  user  발화 끝
-    27.32s  agent 발화 시작: <ret> 아, 맞아요. 슬로베니아 여행 계획을 세우고 계셨죠. 이천이십육년 이월에 가신다고 하셨어요.
-    27.62s  ⚡SPAN 주입 [d'=0.81s / d_lead=8.07s]: [2026-05-22] User is planning a trip to Slovenia in February.
-    35.38s  agent 발화 시작: 슬로베니아 여행을 이월에 계획하고 계신다고 말씀하셨던 게 기억나요. 혹시 슬로베니아 여행 준비하면서 특별히 
-    35.38s  agent 발화 끝
-    43.68s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세국님! 저는 아루나예요. 오늘 하루 어떠셨어요?
+     4.94s  agent 발화 끝
+     5.18s  user  발화 시작: 그냥 그래. 지금 몇 시야?
+     6.37s  <ret> 발화 (turn2 첫 프레임)
+     6.79s  agent 발화 시작: <ret> 지금 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십오분이에요.
+     6.84s  user  발화 끝
+     7.61s  ⚡SPAN 주입 [d'=1.24s / d_lead=5.27s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul rig
+     8.77s  user  발화 시작: 응.
+     9.23s  user  발화 끝
+    12.06s  agent 발화 끝
+    12.83s  user  발화 시작: 아, 그러네. 혹시 내가 제일 좋아하는 음식이 뭐였지?
+    15.56s  <ret> 발화 (turn5 첫 프레임)
+    16.07s  agent 발화 시작: <ret> 음… 세국님이 가장 좋아하시는 음식은 돈코츠 라멘이셨어요. 힘든 날이면 꼭 찾으시더라고요.
+    16.16s  user  발화 끝
+    16.81s  ⚡SPAN 주입 [d'=1.24s / d_lead=8.57s]: [2026-05-10] User's go-to comfort dish is tonkotsu ramen.
+    24.65s  agent 발화 끝

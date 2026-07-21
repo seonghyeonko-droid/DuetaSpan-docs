@@ -4,100 +4,90 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Samuel",
+#     "name": "Anna",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "late 40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-09",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-09",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
+#       "date": "2026-05-16",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Hana."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "anniversary",
-#       "text": "User's anniversary is October 13."
+#       "date": "2026-04-22",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     },
 #     {
-#       "date": "2026-03-31",
-#       "category": "show",
-#       "text": "User is currently watching a stand-up comedy special."
+#       "date": "2026-02-18",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Noah."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
+#       "date": "2026-01-28",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
 #       "date": "2025-12-07",
-#       "category": "airline",
-#       "text": "User usually flies with Lufthansa."
+#       "category": "dislike",
+#       "text": "User can't stand cilantro."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-19",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2026-06-05",
-#       "title": "Choosing a preschool",
+#       "date": "2026-04-07",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-02-04",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-13",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who has the most wins in professional golf on the PGA Tour?
-     3.81s  <ret> 발화 (turn1 첫 프레임)
-     3.93s  user  발화 끝
-     4.07s  agent 발화 시작: <ret> Well, it seems Sam Snead holds that record, with eight
-     4.86s  ⚡SPAN 주입 [d'=1.05s / d_lead=8.11s]: Sam Snead won eighty-two PGA Tour events during his career, more than 
-    12.18s  agent 발화 끝
+     0.00s  user  발화 시작: Who founded the All India Harijan Sevak Sangh?
+     2.22s  <ret> 발화 (turn1 첫 프레임)
+     2.99s  agent 발화 시작: <ret> The All India Harijan Sevak Sangh was founded by Mahat
+     3.13s  user  발화 끝
+     3.27s  ⚡SPAN 주입 [d'=1.05s / d_lead=11.92s]: Mahatma Gandhi founded the All India Harijan Sevak Sangh in 1932 to wo
+    14.91s  agent 발화 끝

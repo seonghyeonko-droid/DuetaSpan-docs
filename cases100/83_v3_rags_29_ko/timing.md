@@ -4,105 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "은정",
+#     "name": "서형",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-09",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-06-09",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Minjun."
 #     },
 #     {
-#       "date": "2026-05-08",
-#       "category": "gym",
-#       "text": "User has a gym membership near the station."
+#       "date": "2026-05-16",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is an iced americano."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "anniversary",
-#       "text": "User's anniversary is October 1."
-#     },
-#     {
-#       "date": "2026-03-31",
-#       "category": "show",
-#       "text": "User is currently watching a stand-up comedy special."
-#     },
-#     {
-#       "date": "2026-03-10",
-#       "category": "floor",
-#       "text": "User lives on the 12th floor."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "streaming",
-#       "text": "User subscribes to Apple Music and Coupang Play."
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "category": "car",
-#       "text": "User drives a 2017 Honda Civic."
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "category": "airline",
-#       "text": "User usually flies with Lufthansa."
-#     },
-#     {
-#       "date": "2025-12-07",
+#       "date": "2026-04-22",
 #       "category": "diet",
 #       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "category": "learning",
+#       "text": "User is learning Spanish."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-01-03",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-06-05",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "title": "Meal-prep planning",
-#       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-12",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: pga 투어에서 가장 많은 우승을 한 선수는 누구인가요?
-     3.13s  <ret> 발화 (turn1 첫 프레임)
-     4.21s  ⚡SPAN 주입 [d'=1.09s / d_lead=10.66s]: Sam Snead holds the record for the most wins on the PGA Tour, with 82 
-     4.27s  agent 발화 시작: <ret> pga 투어에서 가장 많은 우승을 한 선수는 샘 스니드 선수인데, 총 팔십이번 우승을 기록하고 있
-     4.31s  user  발화 끝
-    14.93s  agent 발화 끝
+     0.00s  user  발화 시작: 전 인도 해리잔 세바크 상을 누가 설립했나요?
+     2.85s  <ret> 발화 (turn1 첫 프레임)
+     3.08s  agent 발화 시작: <ret> 전 인도 해리잔 세바크 상은, 마하트마 간디가 천구백삼십이년에 불가촉천민의 지위 향상을 위해 설립
+     3.22s  user  발화 끝
+     3.93s  ⚡SPAN 주입 [d'=1.09s / d_lead=6.85s]: Mahatma Gandhi founded the All India Harijan Sevak Sangh in 1932 to wo
+     9.94s  agent 발화 끝

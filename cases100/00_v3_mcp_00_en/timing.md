@@ -4,126 +4,138 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Mason",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "early 40s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "mid 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "partner",
-#       "text": "User's partner is named Haruto."
+#       "date": "2026-06-01",
+#       "category": "child",
+#       "text": "User has a child named Sofia, age 11."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "skill",
-#       "text": "User is quite experienced with bread baking."
+#       "date": "2026-05-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "airline",
-#       "text": "User usually flies with Air France."
+#       "date": "2026-04-07",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is tonkotsu ramen."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "commute",
-#       "text": "User works from home."
+#       "date": "2026-01-13",
+#       "category": "anniversary",
+#       "text": "User's anniversary is July 6."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "employer",
-#       "text": "User works at a consulting firm."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "home",
-#       "text": "User's home address is 46 Rosewood Drive."
-#     },
-#     {
-#       "date": "2026-01-23",
-#       "category": "savings",
-#       "text": "User is saving for a wedding."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "music",
-#       "text": "User likes listening to classical piano."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "streaming",
-#       "text": "User subscribes to Apple Music and Coupang Play."
+#       "date": "2026-01-01",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-15",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-06-04",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "title": "Training for a 10K",
+#       "date": "2026-02-17",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "current pace is around 6 minutes per km",
-#         "race is in November"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-03",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the location of IP address | S2 I'm thinking of reaching out to a  | S3 …Do you think I should apologize,  | S4 What's the weather like in Seoul r
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling so stuck lately. I nee | S2 That's disappointing. What about o | S3 Great, thank you! That's a big wei | S4 Tony's Pizza sounds amazing. Can y
 
-     0.00s  user  발화 시작: What is the location of IP address ten dot zero dot zero dot
-     3.12s  agent 발화 시작: Yeah.
-     3.61s  agent 발화 끝
-     4.47s  <ret> 발화 (turn2 첫 프레임)
-     4.84s  agent 발화 시작: <ret> That IP address, ten dot zero dot zero dot one, points
-     5.00s  user  발화 끝
-     5.80s  ⚡SPAN 주입 [d'=1.33s / d_lead=15.59s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
-    20.43s  agent 발화 끝
-    20.86s  user  발화 시작: Oh, wow. That’s interesting.
-    23.11s  user  발화 끝
-    23.35s  agent 발화 시작: [happy] It is! Knowing the location of an IP address can be 
-    34.24s  agent 발화 끝
-    34.25s  user  발화 시작: I'm thinking of reaching out to a friend I haven't spoken to
-    38.55s  user  발화 끝
-    38.68s  agent 발화 시작: That’s a great idea! Reaching out shows you care. Sometimes 
-    44.47s  agent 발화 시작: It can be tricky knowing what to say—you want to be genuine 
-    44.61s  agent 발화 끝
-    48.14s  user  발화 시작: …Do you think I should apologize, even if I'm not sure I did
-    48.77s  agent 발화 끝
-    52.35s  user  발화 끝
-    52.78s  agent 발화 시작: Apologizing for any misunderstanding, even without taking fu
-    58.98s  user  발화 시작: Yeah.
-    59.46s  user  발화 끝
-    65.16s  agent 발화 끝
-    65.55s  user  발화 시작: Hmm, that makes sense.
-    66.98s  agent 발화 시작: [curious] Sometimes, just asking how they are and genuinely 
-    67.11s  user  발화 끝
-    77.55s  agent 발화 끝
-    78.46s  user  발화 시작: What's the weather like in Seoul right now?
-    80.24s  <ret> 발화 (turn14 첫 프레임)
-    80.57s  user  발화 끝
-    80.84s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-eight point z
-    81.39s  ⚡SPAN 주입 [d'=1.15s / d_lead=9.92s]: (tool result) {"temperature": 28.0, "humidity": 75, "wind speed": 6.2,
-    90.76s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling so stuck lately. I need to get out and do someth
+     5.38s  user  발화 끝
+     5.43s  agent 발화 시작: It's completely understandable to feel that way. Sometimes j
+    10.21s  user  발화 시작: Yeah.
+    10.62s  user  발화 끝
+    12.15s  agent 발화 끝
+    12.36s  user  발화 시작: Yeah, it's hard. I used to love going to the movies, but I h
+    14.92s  agent 발화 시작: Yeah.
+    15.83s  agent 발화 끝
+    16.94s  agent 발화 시작: [happy] Movies are a wonderful escape! Perhaps a new release
+    16.98s  user  발화 끝
+    24.29s  agent 발화 끝
+    24.38s  user  발화 시작: Hmm, maybe. Are there any sci-fi movies playing near me? I'm
+    29.98s  <ret> 발화 (turn7 첫 프레임)
+    30.07s  agent 발화 시작: <ret> Oh, it seems there aren’t any sci-fi movies listed at 
+    30.11s  user  발화 끝
+    30.58s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.18s]: (tool result) (no information found)
+    35.53s  user  발화 시작: Yeah.
+    36.15s  user  발화 끝
+    37.25s  agent 발화 끝
+    38.11s  user  발화 시작: That's disappointing. What about other theaters in San Franc
+    41.88s  <ret> 발화 (turn10 첫 프레임)
+    42.36s  agent 발화 시작: <ret> Actually, "Dune: Part Two" is playing at AMC Metreon 1
+    42.44s  user  발화 끝
+    43.27s  ⚡SPAN 주입 [d'=1.39s / d_lead=9.08s]: (tool result) {"movies": [{"title": "Dune: Part Two", "theater": "AMC 
+    51.35s  user  발화 시작: Dune sounds good! Can you check if there are seats available
+    51.45s  agent 발화 끝
+    55.20s  agent 발화 시작: Yeah, yeah.
+    56.57s  <ret> 발화 (turn13 첫 프레임)
+    56.70s  user  발화 끝
+    56.84s  agent 발화 시작: <ret> Yes, there are forty-two seats available for the six o
+    57.08s  agent 발화 끝
+    57.82s  ⚡SPAN 주입 [d'=1.25s / d_lead=8.39s]: (tool result) {"available seats": 42}
+    65.23s  agent 발화 끝
+    67.50s  user  발화 시작: Perfect. I'll take two tickets, please.
+    69.60s  <ret> 발화 (turn15 첫 프레임)
+    70.16s  agent 발화 시작: <ret> Wonderful! Your tickets for “Dune: Part Two” at six o’
+    70.19s  user  발화 끝
+    70.67s  ⚡SPAN 주입 [d'=1.06s / d_lead=15.49s]: (tool result) {"confirmation number": "MV729-3846", "total cost": "36.
+    85.66s  agent 발화 끝
+    88.22s  user  발화 시작: Great, thank you! That's a big weight off my mind.
+    90.93s  user  발화 끝
+    91.20s  agent 발화 시작: [happy] You’re very welcome! Sometimes a little planning can
+    96.94s  agent 발화 끝
+    97.13s  user  발화 시작: I feel much better already. I think I'll grab dinner before 
+   101.16s  user  발화 끝
+   101.32s  agent 발화 시작: That sounds lovely. Perhaps somewhere near AMC Metreon?
+   103.14s  user  발화 시작: Yeah.
+   103.58s  user  발화 끝
+   105.87s  agent 발화 끝
+   106.02s  user  발화 시작: Yes, maybe. Find me some Italian restaurants nearby.
+   109.93s  <ret> 발화 (turn22 첫 프레임)
+   110.54s  user  발화 끝
+   110.65s  ⚡SPAN 주입 [d'=0.72s / d_lead=11.88s]: (tool result) {"restaurants": [{"name": "Sotto Mare Oysteria & Seafood
+   110.70s  agent 발화 시작: <ret> Sotto Mare Oysteria & Seafood is point four miles away
+   122.58s  agent 발화 끝
+   123.91s  user  발화 시작: Tony's Pizza sounds amazing. Can you make a reservation for 
+   128.77s  user  발화 끝
+   128.81s  <ret> 발화 (turn24 첫 프레임)
+   129.04s  agent 발화 시작: <ret> Your reservation at Tony's Pizza Napoletana is confirm
+   130.17s  ⚡SPAN 주입 [d'=1.35s / d_lead=8.84s]: (tool result) {"confirmation number": "RSV-8274", "status": "confirmed
+   137.88s  agent 발화 끝
+   139.05s  user  발화 시작: Perfect. Thank you so much, Giaon.
+   141.13s  agent 발화 시작: [happy] You’re very welcome. I'm glad I could help you plan 
+   141.22s  user  발화 끝
+   148.82s  agent 발화 끝

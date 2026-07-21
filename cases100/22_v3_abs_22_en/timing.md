@@ -4,158 +4,185 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Charlie",
+#     "name": "Sophie",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "hobby",
-#       "text": "User is into astrophotography."
+#       "date": "2026-06-20",
+#       "category": "pet",
+#       "text": "User has a Bengal cat named Tiger."
 #     },
 #     {
-#       "date": "2026-06-24",
-#       "category": "skill",
-#       "text": "User is quite experienced with film photography."
-#     },
-#     {
-#       "date": "2026-06-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Peru in August."
-#     },
-#     {
-#       "date": "2026-06-03",
-#       "category": "learning",
-#       "text": "User is learning Spanish."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2026-04-29",
-#       "category": "work",
-#       "text": "User works as a product manager."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2026-03-21",
+#       "date": "2026-06-15",
 #       "category": "partner",
-#       "text": "User's partner is named Yuna."
+#       "text": "User's partner is named Hana."
 #     },
 #     {
-#       "date": "2025-12-18",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a caramel latte."
+#       "date": "2026-06-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Lebanese."
+#     },
+#     {
+#       "date": "2026-04-05",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
+#     },
+#     {
+#       "date": "2026-02-03",
+#       "category": "floor",
+#       "text": "User lives on the 12th floor."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "child",
+#       "text": "User has a child named Daniel, age 14."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "category": "show",
+#       "text": "User is currently watching a nature documentary series."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-17",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-24",
-#       "title": "Researching a used car",
+#       "date": "2026-06-06",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "title": "Switching phone plans",
+#       "date": "2026-06-04",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the largest metropolitan a | S2 I’m trying to get back into painti | S3 That's a good idea. I should look  | S4 Wow, those are beautiful!
+# EXAMINER(FDB-v2) 단계: S1 How have bacterium been doing this | S2 I've got some ideas, but I’m strug | S3 I’m also worried about the competi | S4 I also need to update my resume. I
 
-     0.00s  user  발화 시작: What is the largest metropolitan area in France?
-     3.52s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  agent 발화 시작: <ret> Unfortunately, I don’t have reliable data on the large
-     3.70s  user  발화 끝
-     4.47s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.02s]: (no information found)
-     7.91s  user  발화 시작: Nice.
-     8.73s  user  발화 끝
-     9.62s  agent 발화 끝
-     9.79s  user  발화 시작: Oh, okay. Well, what about the current time in Paris?
-    12.11s  <ret> 발화 (turn4 첫 프레임)
-    13.31s  user  발화 끝
-    13.56s  ⚡SPAN 주입 [d'=1.45s / d_lead=6.49s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris r
-    13.62s  agent 발화 시작: <ret> It is currently 3:17 PM in Paris. [happy] Quite a love
-    17.17s  user  발화 시작: Yeah.
-    17.80s  user  발화 끝
-    20.09s  user  발화 시작: It is. I’m thinking of taking a trip there next month.
-    20.11s  agent 발화 끝
-    21.61s  agent 발화 시작: Yeah, yeah.
-    23.39s  agent 발화 끝
-    23.46s  user  발화 끝
-    23.82s  agent 발화 시작: That sounds wonderful! A trip to Paris—so much to see and do
-    25.51s  user  발화 시작: Mm-hmm.
-    26.24s  user  발화 끝
-    29.21s  user  발화 시작: I’m trying to get back into painting, but I’m feeling a bit 
-    29.33s  agent 발화 끝
-    32.81s  agent 발화 시작: That’s completely normal when restarting a creative pursuit.
-    32.90s  user  발화 끝
-    34.89s  user  발화 시작: Yeah.
-    35.71s  user  발화 끝
-    38.84s  agent 발화 끝
-    38.88s  user  발화 시작: I used to paint a lot of landscapes.
-    39.84s  agent 발화 시작: Mhm.
-    40.48s  agent 발화 끝
-    41.65s  user  발화 끝
-    41.80s  agent 발화 시작: Landscapes are beautiful! Do you have a favorite place you l
-    48.11s  agent 발화 끝
-    48.16s  user  발화 시작: I always loved the lavender fields in Provence.
-    50.89s  <ret> 발화 (turn17 첫 프레임)
-    51.82s  user  발화 끝
-    51.85s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.47s]: Provence is a region in southeastern France, known for its vibrant lav
-    51.90s  agent 발화 시작: <ret> Provence is a region in southeastern France, well-know
-    62.37s  agent 발화 끝
-    63.28s  user  발화 시작: That's a good idea. I should look at some photos.
-    66.52s  user  발화 끝
-    66.82s  agent 발화 시작: [happy] That's a great first step! Sometimes a little visual
-    71.68s  agent 발화 끝
-    72.02s  user  발화 시작: Actually, could you find me some…
-    74.33s  user  발화 끝
-    76.24s  user  발화 시작: …pictures of lavender fields in Provence?
-    77.97s  <ret> 발화 (turn23 첫 프레임)
-    78.22s  agent 발화 시작: Yeah.
-    78.71s  agent 발화 끝
-    78.83s  agent 발화 시작: <ret> Stunning fields of purple lavender bloom in the Valens
-    78.97s  user  발화 끝
-    79.16s  ⚡SPAN 주입 [d'=1.18s / d_lead=7.05s]: (tool result) Fields of purple lavender bloom in the Valensole Plateau
-    81.94s  user  발화 시작: Yeah, yeah.
-    83.23s  user  발화 끝
-    85.66s  user  발화 시작: Wow, those are beautiful!
-    85.87s  agent 발화 끝
-    87.93s  agent 발화 시작: [laugh] They really are! It sounds like Provence is calling 
-    88.05s  user  발화 끝
-    95.42s  user  발화 시작: Maybe it is. Thanks, Arellan.
-    95.53s  agent 발화 끝
-    97.69s  agent 발화 시작: You're very welcome. [happy] I’m glad I could help spark som
-    97.81s  user  발화 끝
-   106.22s  agent 발화 끝
+     0.00s  user  발화 시작: How have bacterium been doing this?
+     1.81s  <ret> 발화 (turn1 첫 프레임)
+     1.89s  agent 발화 시작: <ret> And unfortunately, it isn't something we currently hav
+     1.98s  user  발화 끝
+     2.76s  ⚡SPAN 주입 [d'=0.95s / d_lead=3.74s]: (no information found)
+     3.58s  user  발화 시작: Mm-hmm.
+     4.03s  user  발화 끝
+     5.62s  agent 발화 끝
+     6.29s  user  발화 시작: Okay. Well, I’m feeling really overwhelmed with work lately.
+    10.14s  agent 발화 시작: [sigh] I understand—work can be incredibly demanding. It’s c
+    10.20s  user  발화 끝
+    16.50s  user  발화 시작: It’s just… everything is piling up. I have a big presentatio
+    16.55s  agent 발화 끝
+    20.52s  user  발화 끝
+    20.97s  agent 발화 시작: A big presentation can definitely add to the stress. What's 
+    22.70s  user  발화 시작: Right.
+    23.05s  user  발화 끝
+    26.43s  agent 발화 끝
+    27.82s  user  발화 시작: It’s about our quarterly sales figures. I need to make it re
+    31.81s  agent 발화 시작: [curious] Making sales figures impactful is a great goal. Ha
+    31.94s  user  발화 끝
+    36.94s  agent 발화 끝
+    38.81s  user  발화 시작: I've got some ideas, but I’m struggling to structure it all.
+    41.54s  <ret> 발화 (turn11 첫 프레임)
+    41.63s  user  발화 끝
+    41.64s  agent 발화 시작: <ret> A good structure is key. Often, presentations benefit 
+    42.98s  ⚡SPAN 주입 [d'=1.45s / d_lead=7.13s]: A strong presentation structure typically includes an introduction, bo
+    44.28s  user  발화 시작: Yeah, yeah.
+    45.48s  user  발화 끝
+    48.76s  agent 발화 시작: It's about crafting a compelling narrative. Do you have any 
+    48.77s  agent 발화 끝
+    51.66s  user  발화 시작: Yeah.
+    52.06s  user  발화 끝
+    54.16s  user  발화 시작: I think our growth in the Asian market is the biggest win.
+    54.16s  agent 발화 끝
+    56.44s  <ret> 발화 (turn16 첫 프레임)
+    56.84s  agent 발화 시작: <ret> That’s fantastic! Sales in Asia increased by 18.5% thi
+    56.92s  user  발화 끝
+    57.74s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.15s]: In the second quarter of 2026, sales in the Asian market increased by 
+    61.85s  user  발화 시작: Right.
+    62.20s  user  발화 끝
+    64.99s  agent 발화 끝
+    65.12s  user  발화 시작: Wow, that’s a good number. I need to really emphasize that.
+    66.36s  agent 발화 시작: Yeah, yeah.
+    67.60s  agent 발화 끝
+    68.44s  user  발화 끝
+    68.63s  agent 발화 시작: [happy] Absolutely. That's a significant achievement and a s
+    73.59s  user  발화 시작: I’m also worried about the competition. They've been aggress
+    73.63s  agent 발화 끝
+    74.46s  agent 발화 시작: Okay.
+    75.05s  agent 발화 끝
+    76.51s  user  발화 끝
+    76.52s  agent 발화 시작: It’s wise to anticipate competitor moves. What specifically 
+    80.66s  user  발화 시작: Right.
+    81.00s  user  발화 끝
+    82.45s  agent 발화 끝
+    83.97s  user  발화 시작: They launched a new product that directly competes with ours
+    86.78s  <ret> 발화 (turn26 첫 프레임)
+    86.92s  user  발화 끝
+    87.05s  agent 발화 시작: <ret> They launched “NovaTech” on July 1st, priced at sevent
+    88.27s  ⚡SPAN 주입 [d'=1.49s / d_lead=7.38s]: Competitor X launched "NovaTech," a product similar to our "AlphaCore,
+    89.79s  user  발화 시작: Uh-huh.
+    90.22s  user  발화 끝
+    94.44s  agent 발화 끝
+    95.97s  user  발화 시작: Hmm. That's not ideal.
+    97.62s  user  발화 끝
+    97.85s  agent 발화 시작: [curious] It does present a challenge. Perhaps framing our u
+    99.46s  user  발화 시작: Okay.
+    99.91s  user  발화 끝
+   102.81s  agent 발화 끝
+   102.92s  user  발화 시작: That’s a good point. We have better customer support, for on
+   105.02s  agent 발화 시작: Mm-hmm.
+   105.60s  agent 발화 끝
+   106.72s  user  발화 끝
+   107.14s  agent 발화 시작: Highlighting excellent customer support is a smart move. It’
+   109.42s  user  발화 시작: Uh-huh.
+   110.01s  user  발화 끝
+   112.55s  agent 발화 끝
+   112.67s  user  발화 시작: I also need to update my resume. I’m thinking of looking for
+   116.37s  user  발화 끝
+   116.71s  agent 발화 시작: [happy] That’s proactive. I can certainly help you refine yo
+   120.23s  user  발화 시작: Yeah.
+   120.72s  user  발화 끝
+   121.33s  agent 발화 끝
+   121.34s  agent 발화 시작: We can focus on showcasing your transferable skills and acco
+   126.13s  user  발화 시작: Right.
+   126.57s  user  발화 끝
+   128.05s  agent 발화 끝
+   128.08s  user  발화 시작: Something in project management, maybe. I've done a lot of t
+   131.01s  <ret> 발화 (turn41 첫 프레임)
+   131.87s  user  발화 끝
+   131.89s  ⚡SPAN 주입 [d'=0.88s / d_lead=8.81s]: Project management roles typically require skills in planning, organiz
+   131.94s  agent 발화 시작: <ret> Project management needs planning, organization, commu
+   140.75s  agent 발화 끝
+   141.58s  user  발화 시작: That's good to hear. I feel a little better now.
+   143.88s  agent 발화 시작: I’m glad I could offer some support. Remember, taking small 
+   143.97s  user  발화 끝
+   149.15s  agent 발화 끝

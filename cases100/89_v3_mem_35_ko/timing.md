@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "지슬",
+#     "name": "세진",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,44 +13,44 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "60s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
-#       "category": "savings",
-#       "text": "User is saving for a trip to Europe next year."
+#       "date": "2026-06-09",
+#       "category": "anniversary",
+#       "text": "User's anniversary is September 19."
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#       "date": "2026-05-09",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-02-02",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Minjun."
+#       "date": "2026-04-18",
+#       "category": "bloodtype",
+#       "text": "User's blood type is A+."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "phone",
-#       "text": "User uses a Galaxy Z Flip."
+#       "date": "2026-03-07",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Sofia."
 #     },
 #     {
-#       "date": "2025-12-28",
+#       "date": "2026-02-10",
 #       "category": "temp",
-#       "text": "User keeps the home thermostat around 21°C."
+#       "text": "User keeps the home thermostat around 24°C."
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "category": "schedule",
-#       "text": "User has a four-day compressed week."
+#       "date": "2025-12-07",
+#       "category": "allergy",
+#       "text": "User is allergic to bee stings."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
+#       "date": "2026-04-13",
 #       "title": "Choosing a preschool",
 #       "bullets": [
 #         "wants one within walking distance",
@@ -58,77 +58,79 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-02-25",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-11",
-#       "title": "Looking for a therapist",
+#       "date": "2026-02-12",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-24",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 브루. 요즘 유럽 여행을 계획 중인데, 어디로 가 | S2 스위스요? 좋네요. 스위스 물가는 비싼 편인가요? | S3 …혹시 스위스 말고 다른 곳은 없을까요? 물가가 조금 더 저렴 | S4 아, 포트 와인이요! 와인도 좋아해요. 포르투는 스위스보다 물
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 요즘 좀 피곤해서 식단 관리를 시작하려고 하는데, | S2 생선은 어떤 종류가 좋을까요? | S3 아니요, 그냥 조용하고 편안하게 쉴 수 있는 곳이면 좋겠어요. | S4 그럼, 북촌 한옥마을 근처에 괜찮은 카페가 있다면 알려주세요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 지슬님. 저는 브루입니다. 편안한 일상과 균형 잡힌 삶을 도와드리는 웰빙 가이드예요.
-     2.21s  user  발화 시작: 아.
-     2.79s  user  발화 끝
-     6.83s  user  발화 시작: 안녕하세요, 브루. 요즘 유럽 여행을 계획 중인데, 어디로 가는 게 좋을까요?
-     7.46s  agent 발화 끝
-    10.46s  agent 발화 시작: 음.
-    10.96s  agent 발화 끝
-    11.22s  <ret> 발화 (turn4 첫 프레임)
-    11.81s  agent 발화 시작: <ret> 유럽 여행을 준비하고 계시는군요. 내년에 유럽 여행을 계획하고 계신다고 말씀하신 적이 있으셨어요.
-    12.01s  user  발화 끝
-    12.55s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.62s]: [2026-06-10] User is saving for a trip to Europe next year.
-    13.88s  user  발화 시작: 네.
-    14.34s  user  발화 끝
-    18.26s  user  발화 시작: 네, 맞아요. 어디가 좋을지 잘 모르겠어요. 너무 많은 곳이 있어서요.
-    18.44s  agent 발화 끝
-    22.80s  user  발화 끝
-    23.03s  agent 발화 시작: 유럽은 정말 아름다운 곳이 많죠. 혹시 특별히 관심 있는 나라나 도시가 있으신가요? 아니면 어떤 스타일의 여
-    33.00s  agent 발화 끝
-    33.15s  user  발화 시작: 음… 조용하고 한적한 곳이 좋겠어요. 너무 복잡한 도시는 피하고 싶고, 자연을 즐길 수 있는 곳이면 더 좋겠
-    35.52s  agent 발화 시작: 아.
-    36.02s  agent 발화 끝
-    41.21s  user  발화 끝
-    41.28s  agent 발화 시작: 조용하고 자연을 즐길 수 있는 곳을 찾으시는군요. 스위스는 어떠세요? 아름다운 알프스 산맥과 맑은 호수가 있
-    47.44s  user  발화 시작: 맞아요.
-    48.26s  user  발화 끝
-    49.49s  user  발화 시작: 스위스요? 좋네요. 스위스 물가는 비싼 편인가요?
-    49.66s  agent 발화 끝
-    52.06s  <ret> 발화 (turn13 첫 프레임)
-    52.54s  agent 발화 시작: <ret> 취리히의 평균 월 생활비는 이백오십만 원 정도예요. 집세가 백이십만 원, 식비가 육십만 원, 교통
-    52.73s  user  발화 끝
-    53.38s  ⚡SPAN 주입 [d'=1.32s / d_lead=9.74s]: (tool result) Zurich, Switzerland: Average monthly expenses are $2,500
-    62.28s  agent 발화 끝
-    62.30s  user  발화 시작: 이백오십만 원이면 좀 부담스럽네요 —
-    64.84s  user  발화 끝
-    64.84s  user  발화 시작: …혹시 스위스 말고 다른 곳은 없을까요? 물가가 조금 더 저렴한 곳으로요.
-    69.69s  agent 발화 시작: 스위스 외에도 물가가 저렴하면서 자연을 즐길 수 있는 곳은 많습니다. 포르투갈의 포르투는 어떠세요? 아름다운
-    69.80s  user  발화 끝
-    73.64s  user  발화 시작: 네네.
-    74.36s  user  발화 끝
-    80.23s  user  발화 시작: 포르투요? 거기는 어떤 곳이에요?
-    80.31s  agent 발화 끝
-    82.44s  user  발화 끝
-    82.58s  agent 발화 시작: 포르투는 포르투갈 제이의 도시로, 아름다운 두로 강을 따라 펼쳐진 풍경이 인상적인 곳입니다. 포트 와인으로도
-    90.31s  agent 발화 끝
-    90.37s  user  발화 시작: 아, 포트 와인이요! 와인도 좋아해요. 포르투는 스위스보다 물가가 훨씬 저렴한가요?
-    95.61s  <ret> 발화 (turn21 첫 프레임)
-    95.70s  agent 발화 시작: <ret> 포르투의 평균 월 생활비는 백이십만 원 정도예요. 집세가 오십만 원, 식비가 삼십만 원, 교통비가
-    95.92s  user  발화 끝
-    96.60s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.24s]: (tool result) Porto, Portugal: Average monthly expenses are $1,200 USD
-   104.40s  user  발화 시작: 네.
-   105.03s  user  발화 끝
-   107.94s  agent 발화 끝
-   108.15s  user  발화 시작: 와, 정말 많이 저렴하네요. 포르투가 괜찮을 것 같아요. 감사합니다, 브루.
-   112.78s  user  발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세진님! 저는 트헤르입니다. 건강한 습관을 만드는 걸 도와드리는 웰니스 코치예요.
+     5.88s  agent 발화 끝
+     6.36s  user  발화 시작: 안녕하세요. 요즘 좀 피곤해서 식단 관리를 시작하려고 하는데, 추천해 줄 만한 점심 메뉴가 있을까요?
+    12.39s  <ret> 발화 (turn2 첫 프레임)
+    12.42s  agent 발화 시작: <ret> 칼로리는 육 공 공 케이 씨 에이 엘 이하로, 유제품은 피하고 싶으시고요.
+    12.51s  user  발화 끝
+    13.70s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.00s]: [2026-02-12] Past chat — Meal-prep planning: wants high-protein lunche
+    17.41s  agent 발화 끝
+    17.51s  agent 발화 시작: 지난 대화에서 말씀하신 것처럼, 고단백 점심을 원하시고, 육백칼로리 이하, 유제품을 피하시는군요. 닭가슴살 
+    22.63s  user  발화 시작: 응.
+    23.03s  user  발화 끝
+    31.56s  agent 발화 끝
+    31.72s  user  발화 시작: 닭가슴살은 좀 질려서 잘 안 먹게 되더라고요. 다른 메뉴는 없을까요?
+    36.02s  user  발화 끝
+    36.35s  agent 발화 시작: 닭가슴살 외에도 고단백 메뉴는 많답니다. 두부나 생선을 활용한 요리도 좋아요.
+    41.57s  agent 발화 끝
+    42.00s  user  발화 시작: 생선은 어떤 종류가 좋을까요?
+    43.88s  user  발화 끝
+    44.02s  agent 발화 시작: 흰살 생선은 지방이 적고 단백질이 풍부해서 점심에 먹기 좋답니다.
+    48.56s  agent 발화 끝
+    48.57s  agent 발화 시작: 아쉽게도, 특정 생선 종류에 대한 정보를 지금은 찾을 수 없네요.
+    50.35s  user  발화 시작: 응.
+    50.65s  user  발화 끝
+    52.55s  agent 발화 끝
+    53.22s  user  발화 시작: 그럼, 이번 주말에 서울에서 갈 만한 곳을 추천해 줄 수 있나요?
+    57.40s  user  발화 끝
+    57.58s  agent 발화 시작: 서울에서 어디를 가고 싶으신가요? 혹시 특별히 관심 있는 분야가 있으신가요?
+    61.09s  user  발화 시작: 응.
+    61.39s  user  발화 끝
+    62.61s  agent 발화 끝
+    62.98s  user  발화 시작: 아니요, 그냥 조용하고 편안하게 쉴 수 있는 곳이면 좋겠어요. —
+    66.34s  user  발화 시작: … 혹시 북촌 한옥마을은 어떠세요? 거기는 조용하고 예쁜 카페도 많잖아요.
+    66.47s  user  발화 끝
+    71.24s  user  발화 끝
+    71.47s  agent 발화 시작: 북촌 한옥마을도 좋은 선택이네요. 전통적인 분위기에서 여유로운 시간을 보내실 수 있을 거예요.
+    77.54s  agent 발화 시작: 북촌 한옥마을에 대한 추가 정보는 찾을 수 없지만, 아름다운 한옥들과 아기자기한 카페들이 많다고 들었어요.
+    77.58s  agent 발화 끝
+    84.16s  agent 발화 끝
+    84.37s  user  발화 시작: 그럼, 북촌 한옥마을 근처에 괜찮은 카페가 있다면 알려주세요.
+    88.16s  user  발화 끝
+    88.41s  <ret> 발화 (turn19 첫 프레임)
+    88.52s  agent 발화 시작: <ret> 북촌 한옥마을 근처에서 차마시는뜰이라는 한국 전통차 카페가 평점이 사 점 오점이고 가격대는 보통이
+    89.45s  ⚡SPAN 주입 [d'=1.05s / d_lead=7.41s]: (tool result) {"restaurants": [{"name": "차마시는뜰", "address": "10 Bukcho
+    92.91s  user  발화 시작: 응.
+    93.22s  user  발화 끝
+    95.93s  agent 발화 끝
+    96.59s  user  발화 시작: 차마시는뜰, 괜찮겠네요. 감사합니다.
+    99.38s  user  발화 끝

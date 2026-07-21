@@ -4,138 +4,154 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Jordan",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "age_range": "early 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-05-15",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Minjun."
+#       "date": "2026-04-20",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Greek."
+#       "date": "2026-03-20",
+#       "category": "car",
+#       "text": "User drives a 2019 Hyundai Tucson."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "savings",
-#       "text": "User is saving for a new car."
+#       "date": "2026-02-19",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-01-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is January 21."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "partner",
+#       "text": "User's partner is named Sara."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "hobby",
+#       "text": "User is into woodworking."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-16",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-30",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "title": "Building a PC",
+#       "date": "2026-01-07",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "title": "Sorting out a visa",
+#       "date": "2025-12-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "title": "Adopting a rescue dog",
-#       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕, 태스. 이선희 씨 전화번호 좀 찾아 줄래? | S2 꽤 덥겠네. 초보자한테 좋은 하이킹 코스 있어? | S3 흠, 그럼 평일에 가야겠다. 숙소는 어때? 성산일출봉 근처에  | S4 그렇지. 짐을 너무 많이 싸는 경향이 있어. 목록을 만들어 봐
+# EXAMINER(FDB-v2) 단계: S1 안녕 토미, 엄마 의사 에블린 리드 박사님 연락처 알아? | S2 음, 스웨디시 병원에 소속되어 있는 것 같아. | S3 시애틀로 갈 거야. 며칠 머물 생각이야. | S4 합리적인 가격이네. 다음 주에 예약 가능한지 확인해 줄래?
 
-     0.00s  user  발화 시작: 안녕, 태스. 이선희 씨 전화번호 좀 찾아 줄래?
-     3.76s  <ret> 발화 (turn1 첫 프레임)
-     3.87s  agent 발화 시작: <ret> 미안, 이선희 씨 전화번호는 공개된 게 없는 것 같아. 정보가 없어 보이네.
-     4.03s  user  발화 끝
-     5.49s  user  발화 시작: 응.
-     5.56s  ⚡SPAN 주입 [d'=1.80s / d_lead=5.14s]: (no information found)
-     5.85s  user  발화 끝
-     8.95s  user  발화 시작: 다음 달에 제주도 여행 갈까 하는데.
-     9.01s  agent 발화 끝
-    11.95s  user  발화 끝
-    12.36s  agent 발화 시작: 제주도라니, 좋겠다! 쉬고 재충전하기 좋은 곳이지.
-    15.25s  user  발화 시작: 음.
-    15.74s  user  발화 끝
-    16.60s  user  발화 시작: 거기서 하이킹 하고 싶은데. 팔월 제주도 날씨는 보통 어때?
-    16.61s  agent 발화 끝
-    20.80s  <ret> 발화 (turn7 첫 프레임)
-    20.97s  agent 발화 시작: <ret> 이천이십육년 팔월 제주도는 평균 기온이 섭씨 이십칠 점 오도 정도 되고, 습도는 칠십팔퍼센트, 강
-    21.08s  user  발화 끝
-    22.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=12.90s]: (tool result) Jeju Island: August 2026 - Average temperature 27.5°C, h
-    33.87s  agent 발화 끝
-    34.02s  user  발화 시작: 꽤 덥겠네. 초보자한테 좋은 하이킹 코스 있어?
-    38.51s  user  발화 끝
-    38.56s  agent 발화 시작: 한라산 국립공원에 몇 군데 코스가 있는데—
-    40.90s  user  발화 시작: 팔월에는 사람이 많아?
-    41.47s  agent 발화 끝
-    42.78s  user  발화 끝
-    43.23s  agent 발화 시작: 팔월은 성수기니까, 특히 주말에는 꽤 붐빌 거야.
-    46.92s  agent 발화 끝
-    47.21s  user  발화 시작: 흠, 그럼 평일에 가야겠다. 숙소는 어때? 성산일출봉 근처에 괜찮은 가격 호텔 있어?
-    51.31s  agent 발화 시작: 음.
-    51.76s  agent 발화 끝
-    54.40s  <ret> 발화 (turn14 첫 프레임)
-    54.44s  user  발화 끝
-    54.59s  agent 발화 시작: <ret> 몇 군데 찾았어! 휘슬러크 성산 호텔은 밤에 팔십오 달러 정도 하고 평점은 사 점 이점이야. 오션
-    56.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.36s]: (tool result) Hotel Whistlelark Seongsan: $85/night, 4.2 stars, 2km fr
-    61.94s  user  발화 시작: 음.
-    62.43s  user  발화 끝
-    67.94s  agent 발화 끝
-    68.06s  user  발화 시작: 오션뷰 호텔 괜찮은 것 같아. 팔월 십오일부터 십구일까지 예약 가능해?
-    73.83s  <ret> 발화 (turn17 첫 프레임)
-    74.00s  agent 발화 시작: <ret> [happy] 잘 됐네! 오션뷰 호텔 팔월 십오일부터 십구일까지 예약 가능해. 스탠다드 더블룸은 
-    74.08s  user  발화 끝
-    75.01s  ⚡SPAN 주입 [d'=1.18s / d_lead=11.46s]: (tool result) Ocean View Hotel: Available. Standard Double Room: $68/n
-    85.46s  agent 발화 끝
-    85.55s  user  발화 시작: 좋아! 딱 좋아. 오일 여행에 짐을 가볍게 싸는 거 추천해 줄 만한 거 있어?
-    89.46s  agent 발화 시작: 맞아요.
-    90.52s  agent 발화 끝
-    91.54s  agent 발화 시작: 당연하지. 캡슐 옷장을 추천해. 몇 가지 활용도 높은 옷을 섞어 입는 거지. 날씨가 따뜻해도 레이어드하는 게
-    91.56s  user  발화 끝
-   101.75s  user  발화 시작: 그렇지. 짐을 너무 많이 싸는 경향이 있어. 목록을 만들어 봐야겠다.
-   102.07s  agent 발화 끝
-   107.47s  agent 발화 시작: [curious] 목록은 정말 좋은 생각이야! 필요한 것만 집중하게 해 주거든. 원하면 내가 목록 만드는 것
-   107.58s  user  발화 끝
-   114.56s  agent 발화 끝
-   116.21s  user  발화 시작: 아니, 괜찮아. 내가 알아서 할 수 있어. 도와줘서 고마워, 태스!
-   121.30s  user  발화 끝
-   121.31s  agent 발화 시작: [happy] 천만에! 여행 계획 짜는 데 도움이 돼서 기뻐. 제주도에서 즐거운 시간 보내!
-   127.14s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕 토미, 엄마 의사 에블린 리드 박사님 연락처 알아?
+     3.89s  agent 발화 시작: 도와드릴 수 있는지 한번 알아볼게요. 리드 박사님에 대해 다른 정보가 있으세요?
+     3.96s  user  발화 끝
+     8.61s  agent 발화 끝
+     8.62s  user  발화 시작: 이름하고 시애틀에서 진료하신다는 것밖에 몰라.
+    11.38s  <ret> 발화 (turn3 첫 프레임)
+    11.40s  agent 발화 시작: <ret> 정말 죄송하지만, 시애틀에서 진료하시는 에블린 리드 박사님 연락처를 찾을 수 없었어요.
+    11.56s  user  발화 끝
+    12.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.33s]: (no information found)
+    16.73s  agent 발화 끝
+    17.46s  user  발화 시작: 아, 짜증나네. 분명 어디에 등록되어 있을 줄 알았는데.
+    21.18s  user  발화 끝
+    21.29s  agent 발화 시작: 그런 정보를 찾기가 생각보다 어려울 수 있어요. 혹시 병원 소속은 아세요?
+    24.67s  user  발화 시작: 그래.
+    25.24s  user  발화 끝
+    26.20s  agent 발화 끝
+    26.87s  user  발화 시작: 음, 스웨디시 병원에 소속되어 있는 것 같아.
+    28.39s  agent 발화 시작: 네.
+    28.84s  agent 발화 끝
+    29.69s  user  발화 끝
+    29.85s  <ret> 발화 (turn9 첫 프레임)
+    30.01s  agent 발화 시작: <ret> 아, 네! 스웨디시 메디컬 센터 – 발라드 내과 에블린 리드 박사님요. 전화번호는 이 공 육 칠 
+    30.47s  ⚡SPAN 주입 [d'=0.62s / d_lead=8.71s]: (tool result) Dr. Evelyn Reed, Internal Medicine, Swedish Medical Cent
+    34.36s  user  발화 시작: 어.
+    34.80s  user  발화 끝
+    38.46s  user  발화 시작: 완벽해! 딱 필요한 정보야. 고마워!
+    38.72s  agent 발화 끝
+    41.38s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 부모님을 돌보는 건 스트레스가 많이 될 수 있어요.
+    41.45s  user  발화 끝
+    45.92s  user  발화 시작: 정말 그래. 방문 계획을 세우려고 해.
+    45.96s  agent 발화 끝
+    49.02s  agent 발화 시작: 좋은 생각이네요. 시애틀 방문이신가요, 아니면 다른 곳인가요?
+    49.07s  user  발화 끝
+    50.66s  user  발화 시작: 응.
+    51.10s  user  발화 끝
+    53.22s  user  발화 시작: 시애틀로 갈 거야. 며칠 머물 생각이야.
+    53.23s  agent 발화 끝
+    55.30s  agent 발화 시작: 아.
+    55.88s  agent 발화 끝
+    56.50s  user  발화 끝
+    56.52s  agent 발화 시작: 시애틀은 아름다운 도시예요. 호텔을 찾아드릴까요?
+    58.83s  user  발화 시작: 응.
+    59.25s  user  발화 끝
+    59.72s  agent 발화 끝
+    59.74s  user  발화 시작: 그래, 부탁해. 병원 근처면 좋겠어. …스웨디시 발라드에 괜찮은 구내식당 있어? 방문하면 배고파지기 쉬워서.
+    67.98s  user  발화 끝
+    68.00s  user  발화 시작: 응.
+    68.35s  <ret> 발화 (turn22 첫 프레임)
+    68.43s  user  발화 끝
+    68.52s  agent 발화 시작: <ret> 네, 스웨디시 메디컬 센터 – 발라드에는 오전 여섯시 삼십분부터 오후 여덟시까지 구내식당이 운영되
+    70.08s  ⚡SPAN 주입 [d'=1.73s / d_lead=7.65s]: (tool result) Swedish Medical Center - Ballard Cafeteria, 5100 24th Av
+    71.34s  user  발화 시작: 어.
+    72.08s  user  발화 끝
+    75.74s  <ret> 발화 (turn24 첫 프레임)
+    76.16s  agent 발화 시작: <ret> 발라드 호텔이 근처에 있는데, 오백이십사 노스웨스트 마켓 스트리트에 있고, 객실 요금은 일박에 이
+    76.16s  agent 발화 끝
+    76.39s  ⚡SPAN 주입 [d'=0.66s / d_lead=7.88s]: (tool result) The Ballard Hotel, 524 NW Market St, Seattle, WA 98107, 
+    83.91s  user  발화 시작: 합리적인 가격이네. 다음 주에 예약 가능한지 확인해 줄래?
+    84.03s  agent 발화 끝
+    87.87s  <ret> 발화 (turn26 첫 프레임)
+    88.06s  agent 발화 시작: <ret> 잘 됐어요! 발라드 호텔 예약이 이천이십육년 칠월 십칠일부터 이십일까지 확정됐습니다. 예약 확인 
+    88.11s  user  발화 끝
+    89.29s  ⚡SPAN 주입 [d'=1.42s / d_lead=10.56s]: (tool result) The Ballard Hotel, Seattle, July 17-20, 2026, room confi
+    95.82s  user  발화 시작: 어어.
+    96.60s  user  발화 끝
+    98.60s  user  발화 시작: 정말 고마워, 토미. 정말 많은 도움을 받았어.
+    98.62s  agent 발화 끝
+   100.83s  agent 발화 시작: 네.
+   101.35s  agent 발화 끝
+   101.77s  user  발화 끝
+   102.02s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 이 시간 동안 자신을 돌보는 것도 중요합니다.
+   106.41s  agent 발화 끝

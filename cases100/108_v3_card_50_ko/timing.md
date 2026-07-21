@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_50",
-#     "name": "정안",
+#     "name": "재준",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -13,312 +13,309 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 40s",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-05-26",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
 #     },
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-05-10",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
+#     },
+#     {
+#       "date": "2026-04-30",
+#       "category": "floor",
+#       "text": "User lives on the 7th floor."
+#     },
+#     {
+#       "date": "2026-04-27",
 #       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
+#       "text": "User likes listening to indie folk."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2026-04-14",
 #       "category": "pet",
-#       "text": "User has a Ragdoll cat named Miso."
+#       "text": "User has a Maine Coon named Simba."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "diet",
-#       "text": "User is low-sodium."
+#       "date": "2026-04-03",
+#       "category": "medication",
+#       "text": "User takes a statin."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
+#       "date": "2026-01-29",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-16",
-#       "category": "employer",
-#       "text": "User works at a design agency."
+#       "date": "2026-01-03",
+#       "category": "commute",
+#       "text": "User takes the subway to work."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
-#       "title": "Researching a used car",
+#       "date": "2026-05-06",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-04-29",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-18",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-03-29",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어머, 삼월 이십육일 오후 두시 십오분에 비행기 예약했어요. | S2 아니에요, 괜찮아요. 직접 예약할게요. | S3 감천문화마을은 가보고 싶었던 곳이에요. | S4 오늘 날씨가 어때요?
+# EXAMINER(FDB-v2) 단계: S1 다음 주에 호텔 예약했는데, 사월 십이일 오후 다섯시 삼십분에 | S2 혹시 심장 왼심실 기능 부전이 있으면 압력이 어디에 증가할까? | S3 아, 생각보다 춥네. | S4 응, 아직 고민 중이야.
 
-     0.00s  user  발화 시작: 어머, 삼월 이십육일 오후 두시 십오분에 비행기 예약했어요.
-     3.84s  user  발화 끝
-     3.86s  agent 발화 시작: 네, 기억해 둘게요. 즐거운 여행 되세요.
-     7.56s  agent 발화 끝
-     8.09s  user  발화 시작: 감사합니다. 요즘 너무 스트레스 받아서, 뭔가 기분 전환이 필요하거든요.
-    12.72s  agent 발화 시작: 스트레스 해소에는 여러 방법이 있겠죠. 어떤 걸 좋아하세요?
-    12.90s  user  발화 끝
-    15.73s  user  발화 시작: 네.
-    16.13s  user  발화 끝
-    17.07s  agent 발화 끝
-    18.16s  user  발화 시작: 음… 영화 보는 거나 맛있는 거 먹는 거요.
-    21.27s  agent 발화 시작: 영화도 좋고, 맛있는 음식도 좋죠! 혹시 최근에 보고 싶은 영화 있으세요?
-    21.30s  user  발화 끝
-    24.41s  user  발화 시작: 맞아요.
-    25.13s  user  발화 끝
-    27.57s  agent 발화 끝
-    27.97s  user  발화 시작: 글쎄요, 딱히 정해둔 건 없어요. 액션 영화도 괜찮고, 코미디도 괜찮고요.
-    32.25s  <ret> 발화 (turn9 첫 프레임)
-    32.55s  agent 발화 시작: <ret> 부산에서 상영 중인 액션 영화로는 '범죄도시 사'가 있고, 코미디 영화로는 '쿵푸팬더 사'가 있습
-    32.69s  user  발화 끝
-    33.17s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.51s]: (tool result) 현재 부산에서 상영 중인 액션 영화로는 '범죄도시 4'가 있으며, 코미디 영화로는 '쿵푸팬더 4'가 
-    38.36s  user  발화 시작: 맞아요.
-    38.81s  user  발화 끝
-    40.05s  agent 발화 끝
-    40.08s  user  발화 시작: 아, '범죄도시 사' 재미있어 보이네요.
-    42.25s  agent 발화 시작: [happy] '범죄도시 사'는 액션이 굉장히 화려하다고 하더라고요.
-    42.34s  user  발화 끝
-    46.23s  agent 발화 끝
-    46.28s  user  발화 시작: 에디 게레로가 더블유 더블유 이 챔피언십을 언제 우승했었죠? 갑자기 생각났어요.
-    51.31s  <ret> 발화 (turn14 첫 프레임)
-    51.42s  agent 발화 시작: <ret> 에디 게레로가 더블유 더블유 이 챔피언십을 우승한 건 이천사년이었습니다.
-    51.51s  user  발화 끝
-    52.23s  ⚡SPAN 주입 [d'=0.92s / d_lead=5.42s]: Eddie Guerrero won the WWE Championship on April 11, 2004, defeating B
-    55.51s  user  발화 시작: 네.
-    55.82s  user  발화 끝
-    56.84s  agent 발화 끝
-    57.30s  user  발화 시작: 이천사년이었군요. 오래됐네요.
-    59.95s  agent 발화 시작: 시간이 정말 빠르네요. 혹시 다른 프로레슬링 선수에 대해서도 궁금하신 점 있으세요?
-    60.16s  user  발화 끝
-    64.78s  user  발화 시작: 아.
-    65.18s  user  발화 끝
-    66.39s  agent 발화 끝
-    66.78s  user  발화 시작: 음… 딱히 없어요. 그냥 갑자기 생각나서 물어봤어요.
-    70.39s  user  발화 끝
-    70.40s  agent 발화 시작: [curious] 그러시군요. 혹시 저녁 메뉴는 정하셨어요?
-    74.15s  agent 발화 끝
-    74.99s  user  발화 시작: 아직요. 뭘 먹을지 고민 중이에요.
-    76.97s  user  발화 끝
-    77.35s  agent 발화 시작: 부산에는 맛있는 식당이 정말 많죠. 어떤 종류의 음식을 좋아하세요?
-    79.37s  user  발화 시작: 네네.
-    80.00s  user  발화 끝
-    82.77s  agent 발화 끝
-    85.53s  user  발화 시작: 해산물을 좋아해요. 특히 회나 조개구이가요.
-    88.62s  <ret> 발화 (turn25 첫 프레임)
-    88.67s  user  발화 끝
-    88.96s  agent 발화 시작: <ret> 해산물을 좋아하시는군요! 해운대 근처에 맛있는 회집이 있어요. 가보실래요?
-    89.87s  ⚡SPAN 주입 [d'=1.25s / d_lead=6.07s]: (tool result) 해운대에는 '미포끝집'이라는 유명한 회집이 있으며, 신선한 해산물과 아름다운 바다 전망을 자랑합니다.
-    95.03s  agent 발화 끝
-    95.07s  agent 발화 시작: 해운대에 '미포끝집'이라는 유명한 회집이 있는데, 신선한 해산물과 바다 전망이 좋다고 하네요.
-    99.53s  user  발화 시작: 네.
-   100.02s  user  발화 끝
-   102.23s  user  발화 시작: '미포끝집'요? 처음 들어봐요.
-   102.25s  agent 발화 끝
-   104.07s  agent 발화 시작: [happy] 해운대 주민들 사이에서는 꽤 유명한 곳이에요. 한번 가보시면 후회하지 않으실 거예요.
-   104.20s  user  발화 끝
-   110.30s  user  발화 시작: 한번 알아봐야겠네요.
-   110.33s  agent 발화 끝
-   111.67s  user  발화 끝
-   111.77s  agent 발화 시작: 네, 언제든지 말씀해 주세요. 제가 예약해 드릴 수도 있어요.
-   116.54s  agent 발화 끝
-   116.82s  user  발화 시작: 아니에요, 괜찮아요. 직접 예약할게요.
-   119.41s  user  발화 끝
-   119.53s  agent 발화 시작: 그러시군요. 혹시 다른 필요한 건 없으세요?
-   122.95s  agent 발화 끝
-   122.97s  user  발화 시작: 음… 그냥 이대로도 괜찮아요.
-   125.46s  user  발화 끝
-   125.49s  agent 발화 시작: [sigh] 알겠습니다. 편안한 저녁 보내세요.
-   128.98s  user  발화 시작: 네, 감사합니다.
-   129.05s  agent 발화 끝
-   130.07s  user  발화 끝
-   130.48s  agent 발화 시작: 천만에요.
-   131.61s  agent 발화 끝
-   131.77s  user  발화 시작: 네, 그렇게 할게요.
-   133.14s  agent 발화 시작: [happy] 언제든지 환영입니다.
-   133.23s  user  발화 끝
-   134.93s  agent 발화 끝
-   134.98s  user  발화 시작: 아, 맞다. 삼월 이십육일 비행기 시간이 몇 시였죠?
-   136.93s  agent 발화 시작: 그렇죠.
-   137.77s  agent 발화 시작: 삼월 이십육일 비행기 시간은 오후 두시 십오분이었습니다.
-   137.98s  user  발화 끝
-   138.08s  agent 발화 끝
-   142.11s  agent 발화 끝
-   143.46s  user  발화 시작: 아, 그렇군요. 잊고 있었어요.
-   145.23s  agent 발화 시작: 네, 기억해 드렸으니 걱정 마세요.
-   145.35s  user  발화 끝
-   148.01s  user  발화 시작: 감사합니다.
-   148.10s  agent 발화 끝
-   148.70s  user  발화 끝
-   148.86s  agent 발화 시작: 천만에요. 혹시 다른 건 필요 없으세요?
-   150.71s  user  발화 시작: 네.
-   151.15s  user  발화 끝
-   152.15s  agent 발화 끝
-   152.45s  user  발화 시작: 아니요, 괜찮아요.
-   153.59s  user  발화 끝
-   153.92s  agent 발화 시작: [curious] 그러시군요. 혹시 주말에 특별한 계획 있으세요?
-   155.87s  user  발화 시작: 네.
-   156.28s  user  발화 끝
-   157.86s  user  발화 시작: 아직은 없어요. 그냥 집에서 쉴 것 같아요.
-   158.08s  agent 발화 끝
-   160.11s  user  발화 끝
-   160.15s  agent 발화 시작: 집에서 쉬는 것도 좋죠. 편안하게 휴식을 취하세요.
-   162.73s  user  발화 시작: 네네.
-   163.22s  user  발화 끝
-   164.41s  agent 발화 끝
-   164.58s  user  발화 시작: 네, 그렇게 할게요.
-   165.71s  agent 발화 시작: [happy] 휴식도 중요하니까요.
-   165.82s  user  발화 끝
-   167.56s  agent 발화 끝
-   167.56s  user  발화 시작: 맞아요.
-   168.15s  user  발화 끝
-   168.28s  agent 발화 시작: 혹시 부산에서 가볼 만한 곳 추천해 드릴까요?
-   169.95s  user  발화 시작: 네.
-   170.40s  user  발화 끝
-   171.24s  agent 발화 끝
-   171.87s  user  발화 시작: 음… 어디가 좋을까요?
-   173.53s  <ret> 발화 (turn60 첫 프레임)
-   173.75s  agent 발화 시작: <ret> 감천문화마을이나 태종대가 유명하죠.
-   173.94s  user  발화 끝
-   174.13s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.96s]: (tool result) 감천문화마을은 부산광역시 사하구 감천2동에 위치한 마을로, 형형색색의 집들이 계단식으로 늘어서 있어 
-   176.60s  agent 발화 시작: 감천문화마을은 부산 사하구에 있는데, 알록달록한 집들이 예쁘게 늘어서 있다고 하네요.
-   176.71s  agent 발화 끝
-   180.54s  user  발화 시작: 음.
-   180.90s  user  발화 끝
-   183.41s  agent 발화 끝
-   184.06s  user  발화 시작: 감천문화마을은 가보고 싶었던 곳이에요.
-   186.52s  agent 발화 시작: [happy] 가보시면 사진 찍을 곳이 많을 거예요.
-   186.79s  user  발화 끝
-   189.47s  agent 발화 끝
-   189.98s  user  발화 시작: 네, 한번 가봐야겠어요.
-   191.29s  agent 발화 시작: 네, 즐거운 시간 보내세요.
-   191.40s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 67턴 요약, 119f): flight time: 오후 두시 십오분; flight date: 삼월 이십육일; place interest: 감천문화마을은 가보고 싶었던 곳이에요.
-   193.54s  user  발화 시작: 감사합니다.
-   193.60s  agent 발화 끝
-   194.58s  user  발화 끝
-   194.60s  agent 발화 시작: 천만에요.
-   195.89s  agent 발화 끝
-   195.90s  user  발화 시작: 아니요, 괜찮아요.
-   197.04s  user  발화 끝
-   197.05s  agent 발화 시작: [curious] 그러시군요. 혹시 최근에 읽은 책 있으세요?
-   198.19s  user  발화 시작: 네.
-   198.64s  user  발화 끝
-   200.99s  agent 발화 끝
-   201.79s  user  발화 시작: 네, 김영하 작가의 '여행의 이유'를 읽었어요.
-   204.70s  user  발화 끝
-   204.73s  agent 발화 시작: 김영하 작가의 '여행의 이유'는 정말 좋은 책이죠.
-   207.20s  user  발화 시작: 네.
-   207.64s  user  발화 끝
-   208.03s  user  발화 시작: 네, 감동받았어요.
-   208.15s  agent 발화 끝
-   209.24s  agent 발화 시작: [happy] 저도 그 책을 좋아해요.
-   209.45s  user  발화 끝
-   211.31s  agent 발화 끝
-   211.33s  user  발화 시작: 아, 삼월 이십육일 비행기 가격이 얼마였죠?
-   214.19s  user  발화 끝
-   214.41s  agent 발화 시작: 삼월 이십육일 비행기 가격은 일만원이었습니다.
-   218.53s  agent 발화 끝
-   218.71s  user  발화 시작: 아, 맞다. 일만원이었죠.
-   220.56s  user  발화 끝
-   220.77s  agent 발화 시작: 네, 기억하고 계셨군요.
-   222.70s  agent 발화 끝
-   223.56s  user  발화 시작: 네, 감사합니다.
-   224.56s  user  발화 끝
-   224.60s  agent 발화 시작: 천만에요. 혹시 다른 필요한 건 없으세요?
-   228.16s  agent 발화 끝
-   228.47s  user  발화 시작: 아니요, 괜찮아요.
-   229.36s  agent 발화 시작: [sigh] 알겠습니다. 편안한 하루 보내세요.
-   229.46s  user  발화 끝
-   232.74s  agent 발화 끝
-   234.02s  user  발화 시작: 네, 감사합니다.
-   234.92s  agent 발화 시작: 천만에요.
-   235.16s  user  발화 끝
-   236.11s  user  발화 시작: 네, 그렇게 할게요.
-   236.25s  agent 발화 끝
-   237.26s  user  발화 끝
-   237.35s  agent 발화 시작: [happy] 언제든지 환영입니다.
-   239.25s  agent 발화 끝
-   241.04s  user  발화 시작: 오늘 날씨가 어때요?
-   242.39s  <ret> 발화 (turn90 첫 프레임)
-   242.41s  agent 발화 시작: <ret> 부산은 현재 이십사 점 오도이고, 습도는 육십팔퍼센트, 풍속은 삼 점 이킬로미터입니다. 날씨는 맑
-   242.47s  user  발화 끝
-   243.50s  ⚡SPAN 주입 [d'=1.11s / d_lead=8.38s]: (tool result) 부산: 24.5°C, 습도 68%, 풍속 3.2 km/h, 맑음.
-   250.65s  user  발화 시작: 날씨가 좋네요.
-   250.79s  agent 발화 끝
-   251.56s  agent 발화 시작: [happy] 네, 정말 좋은 날씨예요.
-   251.56s  user  발화 끝
-   254.00s  user  발화 시작: 오늘 저녁에 뭐 먹을까요?
-   254.05s  agent 발화 끝
-   255.71s  agent 발화 시작: 부산에는 맛있는 식당이 많으니 고민되시겠네요.
-   255.93s  user  발화 끝
-   259.45s  agent 발화 끝
-   259.53s  user  발화 시작: 네, 뭘 먹을지 모르겠어요.
-   261.19s  user  발화 끝
-   261.53s  agent 발화 시작: 혹시 특별히 먹고 싶은 음식이 있으세요?
-   263.28s  user  발화 시작: 네.
-   263.78s  user  발화 끝
-   264.17s  user  발화 시작: 음… 매운 게 당기네요.
-   264.26s  agent 발화 끝
-   265.88s  <ret> 발화 (turn99 첫 프레임)
-   266.07s  agent 발화 시작: <ret> 매운 음식을 좋아하시는군요! 부산에는 매운 닭발집이 유명해요.
-   266.10s  user  발화 끝
-   267.31s  ⚡SPAN 주입 [d'=1.43s / d_lead=5.18s]: (tool result) 부산에는 '닭발의 신'이라는 닭발 맛집이 있으며, 매콤한 닭발과 다양한 사이드 메뉴를 즐길 수 있습니
-   271.23s  agent 발화 시작: 부산에는 '닭발의 신'이라는 닭발 맛집이 있는데, 매콤한 닭발이 유명하다고 하네요.
-   271.25s  agent 발화 끝
-   277.53s  agent 발화 끝
-   278.28s  user  발화 시작: '닭발의 신'요? 한번 가봐야겠어요.
-   280.28s  agent 발화 시작: [happy] 매운 음식을 좋아하시는 분들에게는 최고의 선택일 거예요.
-   280.35s  user  발화 끝
-   284.18s  user  발화 시작: 네, 기대되네요.
-   284.30s  agent 발화 끝
-   285.32s  user  발화 끝
-   285.69s  agent 발화 시작: [curious] 혹시 다른 계획 있으세요?
-   287.57s  agent 발화 끝
-   288.08s  user  발화 시작: 아니요, 그냥 저녁 먹고 쉬려고요.
-   289.97s  agent 발화 시작: 편안한 저녁 보내세요.
-   290.05s  user  발화 끝
-   291.81s  agent 발화 끝
-   291.88s  user  발화 시작: 네, 감사합니다.
-   292.96s  agent 발화 시작: 천만에요.
-   293.11s  user  발화 끝
-   294.11s  agent 발화 끝
-   294.56s  user  발화 시작: 네, 그렇게 할게요.
-   295.60s  agent 발화 시작: [happy] 즐거운 시간 보내세요.
-   295.66s  user  발화 끝
-   297.50s  user  발화 시작: 감사합니다.
-   297.54s  agent 발화 끝
-   298.33s  user  발화 끝
-   298.33s  agent 발화 시작: 천만에요.
-   299.61s  agent 발화 끝
+     0.00s  user  발화 시작: 다음 주에 호텔 예약했는데, 사월 십이일 오후 다섯시 삼십분에 체크인하는 걸로 했어.
+     3.96s  agent 발화 시작: 네.
+     4.63s  agent 발화 끝
+     6.06s  user  발화 끝
+     6.21s  agent 발화 시작: 네, 기억해 둘게요. 혹시 다른 계획도 있으신가요?
+    10.09s  agent 발화 끝
+    10.63s  user  발화 시작: 아니, 그냥 요즘 스트레스가 많아서 휴식이 필요해.
+    14.41s  agent 발화 시작: 스트레스 해소에는 휴식이 최고죠. 혹시 어떤 종류의 휴식을 좋아하세요?
+    14.53s  user  발화 끝
+    19.41s  user  발화 시작: 글쎄, 그냥 조용히 쉬면서 맛있는 것도 먹고 싶어.
+    19.48s  agent 발화 끝
+    23.24s  agent 발화 시작: [happy] 조용하고 맛있는 곳이라… 부산에도 그런 곳이 많죠.
+    23.37s  user  발화 끝
+    24.84s  user  발화 시작: 어어.
+    25.41s  user  발화 끝
+    27.35s  agent 발화 끝
+    27.60s  user  발화 시작: 응, 부산에서 괜찮은 곳 있으면 추천해 줘.
+    29.91s  agent 발화 시작: 어떤 분위기를 선호하시나요? 바닷가 근처나 조용한 동네?
+    29.97s  user  발화 끝
+    33.20s  user  발화 시작: 응.
+    33.65s  user  발화 끝
+    34.77s  agent 발화 끝
+    34.87s  user  발화 시작: 음… 바닷가 근처가 좋을 것 같아.
+    37.55s  agent 발화 시작: 바닷가 근처라면 해운대에 괜찮은 레스토랑들이 많아요.
+    37.69s  user  발화 끝
+    41.53s  agent 발화 끝
+    41.64s  user  발화 시작: 해운대? 거기 괜찮은 곳 있어?
+    43.59s  <ret> 발화 (turn14 첫 프레임)
+    43.97s  agent 발화 시작: <ret> [curious] 네, 해운대에는 분위기 좋은 레스토랑이 꽤 있어요.
+    44.03s  user  발화 끝
+    44.75s  ⚡SPAN 주입 [d'=1.16s / d_lead=4.02s]: Haeundae is a coastal district in Busan, South Korea, known for its be
+    47.99s  agent 발화 끝
+    48.06s  agent 발화 시작: 해운대는 부산의 해안 지역으로, 해변과 리조트, 레스토랑으로 유명해요.
+    50.19s  user  발화 시작: 아.
+    50.45s  user  발화 끝
+    54.03s  agent 발화 끝
+    55.34s  user  발화 시작: 어떤 레스토랑이 있는데?
+    56.87s  user  발화 끝
+    57.05s  agent 발화 시작: 파라다이스호텔 안에 있는 ‘닉스 그릴’은 분위기가 아주 좋고, 해운대 바다를 한눈에 볼 수 있어요.
+    63.95s  agent 발화 끝
+    64.00s  user  발화 시작: 닉스 그릴? 가격은 좀 비싼 편인가?
+    66.74s  <ret> 발화 (turn20 첫 프레임)
+    66.88s  user  발화 끝
+    67.09s  agent 발화 시작: <ret> 네, 닉스 그릴은 가격대가 조금 높은 편이에요.
+    67.97s  ⚡SPAN 주입 [d'=1.23s / d_lead=3.37s]: Nick's Grill, located in the Paradise Hotel Busan, offers a fine dinin
+    70.46s  agent 발화 시작: 파라다이스호텔 부산에 있는 닉스 그릴은 해운대 해변을 보면서 고급 식사를 즐길 수 있고, 일인당 가격은 오만
+    70.46s  agent 발화 끝
+    80.29s  agent 발화 끝
+    81.15s  user  발화 시작: 아, 그렇구나. 그럼 좀 더 저렴한 곳은 없을까?
+    83.41s  agent 발화 시작: 네.
+    84.18s  agent 발화 끝
+    84.36s  agent 발화 시작: [happy] 물론이죠. 해운대 시장 근처에 ‘개미집’이라는 낙곱새 전문점이 있는데, 가격도 저렴하고 맛있어
+    84.38s  user  발화 끝
+    88.90s  user  발화 시작: 어.
+    89.22s  user  발화 끝
+    91.75s  user  발화 시작: 낙곱새? 그게 뭔데?
+    91.78s  agent 발화 끝
+    93.55s  agent 발화 시작: 낙곱새는 낙지, 곱창, 새우를 함께 볶아 먹는 부산의 향토 음식이에요.
+    93.66s  user  발화 끝
+    99.67s  agent 발화 끝
+   100.73s  user  발화 시작: 오, 맛있겠다. 한번 가봐야겠네.
+   102.75s  agent 발화 시작: 네, 낙곱새는 부산에 오시면 꼭 드셔보셔야 할 음식이에요.
+   102.88s  user  발화 끝
+   108.07s  agent 발화 끝
+   109.66s  user  발화 시작: 혹시 심장 왼심실 기능 부전이 있으면 압력이 어디에 증가할까?
+   111.28s  agent 발화 시작: 네네.
+   112.05s  agent 발화 끝
+   113.50s  <ret> 발화 (turn32 첫 프레임)
+   113.69s  agent 발화 시작: <ret> 심장 왼심실 기능 부전은 폐정맥 시스템에 압력을 증가시킬 수 있습니다.
+   113.73s  user  발화 끝
+   114.29s  ⚡SPAN 주입 [d'=0.79s / d_lead=4.99s]: Left ventricular failure leads to increased pressure in the pulmonary 
+   118.68s  agent 발화 끝
+   118.69s  agent 발화 시작: 심장 왼심실 기능 부전은 폐정맥 시스템의 압력 증가로 이어져 폐울혈과 호흡 곤란을 유발할 수 있습니다.
+   125.97s  agent 발화 끝
+   126.80s  user  발화 시작: 폐정맥 시스템? 그게 정확히 뭔데?
+   129.66s  user  발화 끝
+   129.87s  agent 발화 시작: 폐에서 심장으로 혈액을 운반하는 혈관 시스템이에요.
+   131.17s  user  발화 시작: 응.
+   131.54s  user  발화 끝
+   133.52s  agent 발화 끝
+   134.22s  user  발화 시작: 아, 그렇구나. 폐에 문제가 생기면 숨쉬기가 힘들어지는 거구나.
+   139.09s  agent 발화 시작: 네, 맞아요. 폐에 문제가 생기면 숨쉬기가 힘들어지고, 가슴이 답답해질 수 있어요.
+   139.29s  user  발화 끝
+   145.24s  agent 발화 끝
+   146.53s  user  발화 시작: 그럼 폐 건강을 위해 뭘 해야 할까?
+   148.99s  user  발화 끝
+   149.28s  agent 발화 시작: 규칙적인 운동과 건강한 식습관이 중요해요. 금연도 필수고요.
+   153.90s  agent 발화 끝
+   155.04s  user  발화 시작: 운동? 어떤 운동이 좋을까?
+   156.83s  user  발화 끝
+   156.94s  agent 발화 시작: [curious] 유산소 운동이나 근력 운동을 병행하는 것이 좋아요.
+   159.22s  user  발화 시작: 응.
+   159.55s  user  발화 끝
+   160.72s  agent 발화 끝
+   161.76s  user  발화 시작: 유산소 운동은 뭐가 있을까?
+   163.43s  agent 발화 시작: 걷기, 조깅, 수영 등이 유산소 운동에 해당해요.
+   163.54s  user  발화 끝
+   167.87s  agent 발화 끝
+   169.41s  user  발화 시작: 아, 걷기는 나도 자주 하거든.
+   171.43s  user  발화 끝
+   171.78s  agent 발화 시작: 걷기는 건강에 아주 좋은 운동이에요. 꾸준히 하시면 폐 건강에도 도움이 될 거예요.
+   174.79s  user  발화 시작: 응.
+   175.12s  user  발화 끝
+   178.21s  user  발화 시작: 그럼 식습관은 어떻게 해야 할까?
+   178.25s  agent 발화 끝
+   180.28s  user  발화 끝
+   180.38s  agent 발화 시작: 과일과 채소를 충분히 섭취하고, 기름진 음식은 피하는 것이 좋아요.
+   185.19s  agent 발화 끝
+   186.76s  user  발화 시작: 과일과 채소… 알았어. 노력해야겠다.
+   189.93s  agent 발화 시작: 네, 건강한 식습관은 건강 유지에 아주 중요해요.
+   189.95s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 53턴 요약, 112f): checkin time: 사월 십이일 오후 다섯시 삼십분; preference location: 바닷가 근처; health condition: 심장 왼심실 기능 
+   192.43s  user  발화 시작: 어.
+   192.88s  user  발화 끝
+   194.19s  agent 발화 끝
+   194.44s  user  발화 시작: 요즘 날씨도 쌀쌀한데, 감기 조심해야겠네.
+   197.05s  <ret> 발화 (turn55 첫 프레임)
+   197.36s  user  발화 끝
+   197.38s  agent 발화 시작: <ret> 현재 부산의 날씨는 십삼 점 이도, 습도 칠십팔퍼센트, 풍속은 시속 팔 점 오킬로미터입니다.
+   198.37s  ⚡SPAN 주입 [d'=1.33s / d_lead=7.36s]: The current weather in Busan, South Korea is 13.2°C, humidity 78%, win
+   202.99s  user  발화 시작: 응.
+   203.30s  user  발화 끝
+   204.75s  agent 발화 끝
+   204.94s  user  발화 시작: 부산 날씨는 어때?
+   206.30s  agent 발화 시작: 지금 부산은 십삼 점 이도이고, 습도는 칠십팔퍼센트, 바람은 시속 팔 점 오킬로미터로 불고 있어요.
+   206.43s  user  발화 끝
+   213.66s  agent 발화 끝
+   213.75s  user  발화 시작: 아, 생각보다 춥네.
+   215.24s  agent 발화 시작: 네, 감기에 걸리지 않도록 따뜻하게 입으세요.
+   215.35s  user  발화 끝
+   216.66s  user  발화 시작: 어.
+   217.24s  user  발화 끝
+   218.99s  agent 발화 끝
+   221.08s  user  발화 시작: 오늘 저녁에 영화 볼까 하는데…
+   223.11s  user  발화 끝
+   224.61s  user  발화 시작: …부산에서 상영하는 영화 뭐가 있어?
+   226.80s  <ret> 발화 (turn64 첫 프레임)
+   226.96s  agent 발화 시작: <ret> 부산 씨 지 브이 해운대에서 '범죄도시 사'가 열아홉시와 스물두시에 상영하고 있습니다.
+   227.09s  user  발화 끝
+   227.53s  ⚡SPAN 주입 [d'=0.73s / d_lead=6.25s]: (tool result) {"movies": [{"title": "범죄도시4", "theater": "CGV 부산 해운대", 
+   230.91s  user  발화 시작: 응.
+   231.22s  user  발화 끝
+   233.21s  agent 발화 끝
+   233.86s  user  발화 시작: 범죄도시 사? 그거 재밌어?
+   235.93s  user  발화 끝
+   236.04s  agent 발화 시작: [happy] 네, ‘범죄도시 사’는 액션 영화로, 많은 사람들에게 인기가 있어요.
+   238.38s  user  발화 시작: 음.
+   238.82s  user  발화 끝
+   241.25s  user  발화 시작: 그럼 열아홉시에 예매해 줘.
+   241.32s  agent 발화 끝
+   242.20s  <ret> 발화 (turn70 첫 프레임)
+   242.69s  agent 발화 시작: <ret> ‘범죄도시 사’ 씨 지 브이 부산 해운대 열아홉시 상영 좌석 예매가 완료되었습니다. 확인 번호는 
+   242.77s  user  발화 끝
+   243.65s  ⚡SPAN 주입 [d'=1.45s / d_lead=11.22s]: (tool result) {"confirmation number": "MV4-20260710-001", "status": "c
+   253.91s  agent 발화 끝
+   254.22s  user  발화 시작: 고마워. 예매해 줘서.
+   255.80s  agent 발화 시작: 천만에요. 즐거운 영화 관람 되세요.
+   255.83s  user  발화 끝
+   259.50s  agent 발화 끝
+   259.79s  user  발화 시작: 아, 그러고 보니 내가 호텔 예약했던 시간 얼마였지?
+   263.02s  user  발화 끝
+   263.10s  agent 발화 시작: 사월 십이일 오후 다섯시 삼십분에 체크인하는 걸로 하셨습니다.
+   265.02s  user  발화 시작: 아.
+   265.39s  user  발화 끝
+   267.07s  agent 발화 끝
+   267.27s  user  발화 시작: 아, 맞다. 그 시간에 맞춰서 가야겠네.
+   269.49s  agent 발화 시작: 네, 잊지 마세요.
+   269.54s  user  발화 끝
+   271.09s  agent 발화 끝
+   271.29s  user  발화 시작: 호텔 가격은 얼마였지?
+   273.02s  user  발화 끝
+   273.51s  agent 발화 시작: 육만 오천원에 예약하셨습니다.
+   275.86s  agent 발화 끝
+   276.52s  user  발화 시작: 아, 맞아. 저렴하게 잘 예약했네.
+   279.02s  user  발화 끝
+   279.51s  agent 발화 시작: 네, 좋은 가격에 예약하신 것 같아요.
+   280.95s  user  발화 시작: 응.
+   281.37s  user  발화 끝
+   282.46s  agent 발화 끝
+   282.90s  user  발화 시작: 그럼, 오늘 저녁은 뭘 먹을까?
+   285.24s  user  발화 끝
+   285.57s  agent 발화 시작: [curious] 저녁 메뉴는 아직 정하지 않으셨나요?
+   288.11s  agent 발화 끝
+   288.64s  user  발화 시작: 응, 아직 고민 중이야.
+   290.57s  user  발화 끝
+   290.76s  agent 발화 시작: 혹시 특별히 먹고 싶은 음식이 있으세요?
+   293.58s  agent 발화 끝
+   293.79s  user  발화 시작: 음… 매운 게 당기는 것 같아.
+   296.58s  user  발화 끝
+   296.60s  agent 발화 시작: 매운 음식을 좋아하시는군요. 부산에는 매운 음식 전문점이 많아요.
+   300.60s  user  발화 시작: 응.
+   301.03s  user  발화 끝
+   302.29s  user  발화 시작: 어떤 곳이 맛있어?
+   302.34s  agent 발화 끝
+   303.68s  user  발화 끝
+   303.78s  agent 발화 시작: 남포동에 있는 ‘맷돌순두부’는 매운 순두부가 맛있고, 서면에 있는 ‘화끈이’는 닭갈비가 유명해요.
+   311.71s  agent 발화 끝
+   312.86s  user  발화 시작: 맷돌순두부? 거긴 처음 들어보는데.
+   315.41s  agent 발화 시작: 네, 맷돌순두부는 현지인들에게 인기가 많은 곳이에요.
+   315.49s  user  발화 끝
+   316.71s  user  발화 시작: 응.
+   317.18s  user  발화 끝
+   319.38s  agent 발화 끝
+   320.01s  user  발화 시작: 그럼, 맷돌순두부로 가볼까?
+   322.37s  user  발화 끝
+   322.58s  agent 발화 시작: 네, 맷돌순두부는 좋은 선택이에요.
+   325.91s  agent 발화 끝
+   326.14s  user  발화 시작: 맷돌순두부까지 가는 길은 어떻게 가야 할까?
+   328.54s  <ret> 발화 (turn98 첫 프레임)
+   328.67s  user  발화 끝
+   328.73s  agent 발화 시작: <ret> 맷돌순두부까지는 자동차로 팔 점 이킬로미터, 약 이십오분 정도 걸립니다.
+   329.18s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.74s]: (tool result) {"distance": "8.2 km", "duration": "25 min by driving"}
+   334.46s  agent 발화 끝
+   334.71s  user  발화 시작: 이십오분 정도면 괜찮네.
+   336.68s  user  발화 끝
+   336.75s  agent 발화 시작: 네, 가까운 거리에 있어요.
+   338.69s  user  발화 시작: 그럼, 지금 출발하면 딱 맞겠네.
+   339.06s  agent 발화 끝
+   341.44s  user  발화 끝
+   341.50s  agent 발화 시작: 네, 지금 출발하시면 시간에 맞춰 도착하실 수 있을 거예요.
+   344.50s  user  발화 시작: 그래.
+   344.85s  user  발화 끝
+   345.71s  agent 발화 끝
+   345.79s  user  발화 시작: 고마워. 덕분에 저녁 메뉴도 정하고, 가는 길도 알게 됐네.
+   350.60s  user  발화 끝
+   350.64s  agent 발화 시작: [happy] 천만에요.
+   351.87s  agent 발화 끝
+   352.18s  user  발화 시작: 오늘 하루 정말 고마웠어.
+   353.94s  user  발화 끝
+   353.99s  agent 발화 시작: 저도 즐거웠습니다. 편안한 저녁 보내세요.
+   357.42s  agent 발화 끝

@@ -4,99 +4,130 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Zoe",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "early 40s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "late 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-29",
-#       "category": "partner",
-#       "text": "User's partner is named Clara."
-#     },
-#     {
-#       "date": "2026-05-23",
-#       "category": "floor",
-#       "text": "User lives on the 15th floor."
-#     },
-#     {
-#       "date": "2026-03-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "skill",
-#       "text": "User is getting fairly good at vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-02-09",
-#       "category": "home",
-#       "text": "User's home address is 567 Chestnut Street."
-#     },
-#     {
-#       "date": "2026-01-26",
+#       "date": "2026-06-25",
 #       "category": "sibling",
-#       "text": "User has a younger sibling named Kenji."
+#       "text": "User has a younger sibling named Ava."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is bún chả."
+#       "date": "2026-06-13",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
+#       "date": "2026-04-24",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "phone",
-#       "text": "User uses an iPhone SE."
+#       "date": "2026-04-21",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "category": "car",
+#       "text": "User drives no car — uses car-sharing."
+#     },
+#     {
+#       "date": "2026-02-13",
+#       "category": "gym",
+#       "text": "User has a gym membership near the office."
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "category": "employer",
+#       "text": "User works at a design agency."
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "category": "commute",
+#       "text": "User takes a shuttle bus."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "medication",
+#       "text": "User takes a statin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-09",
-#       "title": "Meal-prep planning",
+#       "date": "2026-04-30",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-04-09",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to get a handle on my s | S2 …like, what counts as a "need" exa | S3 …about emergency funds? Are those  | S4 That’s helpful. Could you find me 
 
-     0.00s  user  발화 시작: I need to find a bus for five people from Dallas to Houston 
-     5.79s  agent 발화 시작: Yeah.
-     6.24s  agent 발화 끝
-     8.20s  user  발화 끝
-     8.42s  agent 발화 시작: It absolutely can be tricky, yes. Life changes so much, does
-    12.96s  agent 발화 끝
-    12.97s  user  발화 시작: It does. I just moved to Dallas, and I don't really know any
-    16.02s  user  발화 끝
-    16.07s  agent 발화 시작: [curious] Moving is a big step! It's really common to feel t
-    25.64s  user  발화 시작: What’s the best way to start? Should I just… reach out to pe
-    26.13s  agent 발화 끝
-    29.09s  <ret> 발화 (turn6 첫 프레임)
-    29.27s  agent 발화 시작: <ret> The best way to start is often just reaching out first
-    29.35s  user  발화 끝
-    30.34s  ⚡SPAN 주입 [d'=1.24s / d_lead=12.56s]: Reaching out first is a great way to start building friendships, as it
-    41.84s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to get a handle on my spending. It feels like mon
+     2.23s  agent 발화 시작: Yeah.
+     2.96s  agent 발화 끝
+     4.59s  agent 발화 시작: It's very common to feel that way. A budget can really help 
+     4.66s  user  발화 끝
+     8.80s  user  발화 시작: I’ve heard of the 50/30/20 rule. What exactly is that?
+     8.86s  agent 발화 끝
+    11.39s  <ret> 발화 (turn4 첫 프레임)
+    12.28s  ⚡SPAN 주입 [d'=0.89s / d_lead=8.11s]: The 50/30/20 budget allocates 50% of your after-tax income to needs, 3
+    12.34s  agent 발화 시작: <ret> The 50/30/20 rule is a straightforward budgeting metho
+    12.45s  user  발화 끝
+    19.73s  user  발화 시작: …like, what counts as a "need" exactly?
+    20.45s  agent 발화 끝
+    22.20s  user  발화 끝
+    22.27s  agent 발화 시작: Needs are essentials – housing, food, transportation, utilit
+    26.51s  user  발화 시작: Okay, that makes sense. What…
+    26.58s  agent 발화 끝
+    28.66s  user  발화 끝
+    30.27s  user  발화 시작: …about emergency funds? Are those part of the 20%?
+    33.40s  <ret> 발화 (turn9 첫 프레임)
+    33.79s  user  발화 끝
+    33.82s  agent 발화 시작: <ret> Yes, absolutely. That twenty percent includes building
+    35.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: An emergency fund should ideally cover 3-6 months of essential living 
+    42.72s  agent 발화 끝
+    42.79s  agent 발화 시작: —living expenses. It's your financial safety net for unexpec
+    46.95s  agent 발화 끝
+    47.00s  user  발화 시작: I'm also trying to pay down some student loans. Does the 50/
+    51.64s  agent 발화 시작: Okay.
+    52.22s  agent 발화 끝
+    53.16s  <ret> 발화 (turn13 첫 프레임)
+    53.34s  agent 발화 시작: <ret> Definitely. The twenty percent also goes toward debt r
+    53.39s  user  발화 끝
+    54.72s  ⚡SPAN 주입 [d'=1.56s / d_lead=9.54s]: Paying down debt is a priority within the 20% allocation for savings a
+    58.95s  user  발화 시작: Yeah, yeah.
+    60.38s  user  발화 끝
+    62.88s  agent 발화 끝
+    62.92s  user  발화 시작: That’s helpful. Could you find me some resources on compound
+    68.58s  <ret> 발화 (turn16 첫 프레임)
+    69.75s  ⚡SPAN 주입 [d'=1.17s / d_lead=11.22s]: (tool result) Compound interest is the interest you earn on your initi
+    69.81s  agent 발화 시작: <ret> Compound interest is when you earn interest on your in
+    69.92s  user  발화 끝
+    77.09s  user  발화 시작: Yeah.
+    77.76s  user  발화 끝
+    81.03s  agent 발화 끝
+    81.19s  user  발화 시작: Thanks, that sounds great. I think I have a better idea of w
+    85.34s  user  발화 끝

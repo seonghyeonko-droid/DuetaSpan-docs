@@ -4,138 +4,190 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "Sky",
+#     "name": "Bruno",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "mid 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-05-22",
+#       "category": "work",
+#       "text": "User works as a carpenter."
+#     },
+#     {
+#       "date": "2026-04-16",
+#       "category": "diet",
+#       "text": "User is halal."
+#     },
+#     {
+#       "date": "2026-03-27",
 #       "category": "dish",
-#       "text": "User's go-to comfort dish is cold buckwheat noodles."
+#       "text": "User's go-to comfort dish is butter chicken."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O+."
-#     },
-#     {
-#       "date": "2026-05-01",
-#       "category": "learning",
-#       "text": "User is learning to bake sourdough."
-#     },
-#     {
-#       "date": "2026-04-28",
-#       "category": "commute",
-#       "text": "User drives about 40 minutes each way."
-#     },
-#     {
-#       "date": "2026-04-17",
-#       "category": "anniversary",
-#       "text": "User's anniversary is June 23."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
-#     },
-#     {
-#       "date": "2026-01-28",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 20°C."
-#     },
-#     {
-#       "date": "2026-01-22",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
-#     },
-#     {
-#       "date": "2026-01-05",
+#       "date": "2026-03-15",
 #       "category": "partner",
-#       "text": "User's partner is named Emma."
+#       "text": "User's partner is named Rin."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "phone",
+#       "text": "User uses an iPhone 15."
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "anniversary",
+#       "text": "User's anniversary is April 8."
+#     },
+#     {
+#       "date": "2025-12-18",
+#       "category": "airline",
+#       "text": "User usually flies with Qatar Airways."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Refinancing a mortgage",
+#       "date": "2026-06-06",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "current rate is 4.2 percent",
-#         "wants to compare 15- vs 30-year terms"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-03-19",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Sami, I'm trying to get better  | S2 Maybe. Do you have… | S3 A sunrise alarm clock sounds inter | S4 That’s a good idea. I always forge
+# EXAMINER(FDB-v2) 단계: S1 Hi Zion, I’m thinking about taking | S2 December 6th, 1889… That’s quite a | S3 Mostly hiking and stargazing. It’s | S4 That’s manageable. I’m starting to
 
-     0.00s  user  발화 시작: Hi Sami, I'm trying to get better at mornings. It's just… ha
-     4.63s  user  발화 끝
-     4.69s  agent 발화 시작: Good morning! It absolutely can be, but small changes really
-     9.11s  user  발화 시작: Yeah.
-     9.75s  user  발화 끝
-    12.43s  agent 발화 끝
-    13.46s  user  발화 시작: Probably just getting out of bed. I hit snooze like five tim
-    18.41s  user  발화 끝
-    18.84s  agent 발화 시작: That's super common! It’s a tough habit to break. We can wor
-    21.12s  user  발화 시작: Yeah, yeah.
-    22.68s  user  발화 끝
-    24.76s  user  발화 시작: Maybe. Do you have…
-    24.81s  agent 발화 끝
-    26.87s  user  발화 끝
-    28.48s  user  발화 시작: …any tips for that?
-    29.21s  <ret> 발화 (turn9 첫 프레임)
-    29.29s  agent 발화 시작: Mm-hmm.
-    29.78s  agent 발화 시작: <ret> A lot of people find it helpful to get some bright lig
-    29.90s  user  발화 끝
-    29.90s  ⚡SPAN 주입 [d'=0.69s / d_lead=9.04s]: Exposure to bright light first thing in the morning can help regulate 
-    30.07s  agent 발화 끝
-    33.64s  user  발화 시작: Nice.
-    34.56s  user  발화 끝
-    38.83s  agent 발화 끝
-    38.83s  agent 발화 시작: We could also explore a sunrise alarm clock, or simply openi
-    41.00s  user  발화 시작: Uh-huh.
-    41.54s  user  발화 끝
-    43.56s  user  발화 시작: A sunrise alarm clock sounds interesting. What’s the best wa
-    43.68s  agent 발화 끝
-    46.01s  agent 발화 시작: Yeah.
-    46.64s  agent 발화 끝
-    48.55s  user  발화 끝
-    48.64s  <ret> 발화 (turn15 첫 프레임)
-    48.65s  agent 발화 시작: <ret> The best way to set one up is to have it gradually inc
-    49.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=10.30s]: Sunrise alarm clocks gradually increase light intensity over 30-60 min
-    54.30s  user  발화 시작: Oh.
-    54.79s  user  발화 끝
-    58.95s  agent 발화 끝
-    59.90s  user  발화 시작: Yeah, I think so. I also want to start drinking more water.
-    63.29s  agent 발화 시작: Yeah.
-    64.06s  agent 발화 끝
-    64.43s  user  발화 끝
-    64.68s  <ret> 발화 (turn19 첫 프레임)
-    64.70s  agent 발화 시작: <ret> It’s currently ten seventeen AM here in Seoul, so perh
-    65.47s  ⚡SPAN 주입 [d'=0.80s / d_lead=6.67s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Asia/Seoul ri
-    71.37s  agent 발화 끝
-    72.31s  user  발화 시작: That’s a good idea. I always forget.
-    75.22s  user  발화 끝
-    75.66s  agent 발화 시작: [happy] It’s easy to forget! We can make it a habit by linki
-    83.19s  user  발화 시작: Okay, I can try that. Maybe I’ll set a reminder too.
-    83.31s  agent 발화 끝
-    87.27s  agent 발화 시작: Excellent! Reminders are a great way to reinforce new habits
-    87.40s  user  발화 끝
-    94.27s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Zion, I’m thinking about taking some time off next year a
+     1.61s  agent 발화 시작: Yeah.
+     2.52s  agent 발화 끝
+     5.54s  user  발화 끝
+     5.59s  agent 발화 시작: [happy] Hello! Taking time off is wonderful—I can absolutely
+     9.64s  user  발화 시작: Yeah, totally.
+    10.60s  user  발화 끝
+    14.91s  agent 발화 끝
+    15.11s  user  발화 시작: I’m leaning toward Alaska, maybe a trip focused on national 
+    19.79s  user  발화 끝
+    19.87s  agent 발화 시작: Alaska is a fantastic choice! It's brimming with natural bea
+    29.76s  user  발화 시작: Fort Davis keeps coming up, but I don’t know much about it.
+    29.87s  agent 발화 끝
+    31.75s  <ret> 발화 (turn7 첫 프레임)
+    32.44s  ⚡SPAN 주입 [d'=0.69s / d_lead=11.17s]: Fort Davis National Historic Site preserves one of the best examples o
+    32.47s  user  발화 끝
+    32.49s  agent 발화 시작: <ret> Fort Davis was established in 1854 as one of the best 
+    38.56s  user  발화 시작: Mm-hmm.
+    39.01s  user  발화 끝
+    43.64s  user  발화 시작: Interesting. Who *was* Fort Davis named after?
+    43.66s  agent 발화 끝
+    47.64s  <ret> 발화 (turn10 첫 프레임)
+    48.17s  agent 발화 시작: <ret> Fort Davis is named after Jefferson Davis, who was the
+    48.23s  user  발화 끝
+    48.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=12.05s]: Jefferson Davis, a United States senator and later president of the Co
+    60.22s  agent 발화 끝
+    60.34s  user  발화 시작: Oh, *that* Jefferson Davis. What happened to him?
+    62.45s  <ret> 발화 (turn12 첫 프레임)
+    63.67s  ⚡SPAN 주입 [d'=1.23s / d_lead=10.89s]: Jefferson Davis died in New Orleans, Louisiana, on December 6, 1889, a
+    63.73s  agent 발화 시작: <ret> Jefferson Davis died in New Orleans, Louisiana, on Dec
+    63.74s  user  발화 끝
+    74.63s  agent 발화 끝
+    74.69s  user  발화 시작: December 6th, 1889… That’s quite a while ago.
+    78.73s  agent 발화 시작: [sigh] It is, isn’t it? A different era entirely. It's good 
+    78.82s  user  발화 끝
+    84.29s  user  발화 시작: Yeah.
+    84.74s  user  발화 끝
+    87.67s  agent 발화 끝
+    87.69s  user  발화 시작: It is. Speaking of eras, what’s the weather like in Fort Dav
+    92.83s  <ret> 발화 (turn17 첫 프레임)
+    93.04s  agent 발화 시작: <ret> The current weather in Fort Davis, Texas is twenty-thr
+    93.10s  user  발화 끝
+    93.96s  ⚡SPAN 주입 [d'=1.13s / d_lead=10.94s]: (tool result) 23.9°C, humidity 62%, wind 11.2 km/h
+   103.99s  agent 발화 끝
+   104.16s  user  발화 시작: Sounds pleasant enough. What about lodging near the park?
+   106.99s  <ret> 발화 (turn20 첫 프레임)
+   107.32s  agent 발화 시작: Mhm.
+   107.76s  agent 발화 끝
+   108.63s  ⚡SPAN 주입 [d'=1.64s / d_lead=10.71s]: (tool result) Hotel Limpia (4.6 stars, $189/night), Fort Davis Histori
+   108.68s  agent 발화 시작: <ret> Hotel Limpia has four point six stars and costs one hu
+   108.77s  user  발화 끝
+   113.66s  user  발화 시작: Yeah.
+   114.15s  user  발화 끝
+   119.39s  agent 발화 끝
+   119.52s  user  발화 시작: The lodge sounds good. I’m trying to pack light for this tri
+   123.27s  user  발화 끝
+   123.63s  agent 발화 시작: [happy] Packing light is key for a relaxing trip! I often re
+   134.38s  agent 발화 끝
+   135.11s  user  발화 시작: Mostly hiking and stargazing. It’s a dark sky park, I hear.
+   140.70s  user  발화 끝
+   140.82s  agent 발화 시작: That’s wonderful! Fort Davis is renowned for its dark skies.
+   150.88s  user  발화 시작: …What about dealing with the altitude? I get headaches easil
+   151.44s  agent 발화 끝
+   154.17s  agent 발화 시작: Okay.
+   154.75s  agent 발화 끝
+   155.53s  user  발화 끝
+   155.62s  agent 발화 시작: [curious] That’s a very good point! Fort Davis sits at over 
+   167.54s  agent 발화 끝
+   169.09s  user  발화 시작: Five thousand eight hundred feet… okay, good to know.
+   172.56s  user  발화 끝
+   172.89s  agent 발화 시작: Yes, and staying hydrated is crucial. Avoid alcohol and caff
+   177.60s  user  발화 시작: Oh.
+   178.37s  user  발화 끝
+   180.35s  agent 발화 끝
+   180.49s  agent 발화 시작: I’m glad you think so. I also recommend bringing some electr
+   184.03s  user  발화 시작: Yeah.
+   184.42s  user  발화 끝
+   185.90s  agent 발화 끝
+   186.52s  user  발화 시작: I will. Are there any interesting towns nearby?
+   189.44s  <ret> 발화 (turn35 첫 프레임)
+   189.66s  agent 발화 시작: <ret> Near Fort Davis, Marfa, Texas, has Cochineal—an Americ
+   189.81s  user  발화 끝
+   190.04s  ⚡SPAN 주입 [d'=0.60s / d_lead=13.45s]: (tool result) Marfa, Texas: Cochineal (American, $$), Food Shark (Medi
+   192.00s  🃏 CARD 주입 (2400f, 누적 36턴 요약, 38f): destination: Alaska (2m ago); park: Fort Davis (2m ago); activities: hiking and stargazing
+   203.11s  agent 발화 끝
+   203.20s  user  발화 시작: Marfa sounds fun. How far is it from Fort Davis?
+   206.15s  <ret> 발화 (turn37 첫 프레임)
+   206.41s  agent 발화 시작: <ret> Marfa is eighty-eight point five kilometers from Fort 
+   206.49s  user  발화 끝
+   206.75s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.48s]: (tool result) 88.5 km, 1 hour 16 min by driving
+   214.89s  agent 발화 끝
+   215.86s  user  발화 시작: That’s manageable. I’m starting to feel better about this tr
+   219.70s  user  발화 끝
+   219.81s  agent 발화 시작: [happy] That’s excellent to hear! Planning is half the fun, 
+   223.57s  user  발화 시작: Right.
+   223.97s  user  발화 끝
+   229.07s  agent 발화 끝
+   229.34s  user  발화 시작: Maybe later. What about jet lag? I’m flying from the East Co
+   234.28s  user  발화 끝
+   234.32s  agent 발화 시작: Jet lag can be tough! Adjusting your sleep schedule a few da
+   239.26s  user  발화 시작: Uh-huh.
+   239.66s  user  발화 끝
+   244.10s  agent 발화 끝
+   244.24s  user  발화 시작: Good advice. I’m writing all this down.
+   246.09s  agent 발화 시작: [laugh] Wonderful! I'm here whenever you need more ideas or 
+   246.21s  user  발화 끝
+   256.61s  agent 발화 끝
+   257.03s  user  발화 시작: Thanks, Zion. You've been a big help.
+   258.91s  user  발화 끝
+   259.10s  agent 발화 시작: [happy] You’re very welcome! I’m glad I could help. Enjoy pl
+   267.81s  agent 발화 끝

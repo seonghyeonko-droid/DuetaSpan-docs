@@ -4,359 +4,321 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_43",
-#     "name": "준완",
+#     "name": "수서",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
+#       "date": "2026-06-21",
+#       "category": "partner",
+#       "text": "User's partner is named Emma."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "show",
-#       "text": "User is currently watching a historical K-drama."
+#       "date": "2026-04-30",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-25",
-#       "category": "employer",
-#       "text": "User works at a consulting firm."
+#       "date": "2026-04-15",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is beef tacos."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "phone",
-#       "text": "User uses an Xperia 1."
-#     },
-#     {
-#       "date": "2026-01-17",
+#       "date": "2026-02-16",
 #       "category": "anniversary",
-#       "text": "User's anniversary is October 26."
+#       "text": "User's anniversary is June 12."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "learning",
-#       "text": "User is training for a half-marathon."
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to the Scottish Highlands in September."
+#       "date": "2025-12-13",
+#       "category": "bloodtype",
+#       "text": "User's blood type is AB+."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Renovating the bathroom",
+#       "date": "2026-06-22",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-27",
-#       "title": "Looking for a therapist",
+#       "date": "2025-12-21",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "title": "Studying for the TOEIC",
-#       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-23",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨가 어때? | S2 가격대는 어느 정도야? | S3 그냥 맛있는 거 먹고 싶어. | S4 아, 맞다. 십이월 칠일 저녁 식사 비용이 얼마였지?
+# EXAMINER(FDB-v2) 단계: S1 오늘 의사 선생님 진료 예약해 둔 거 기억하지? | S2 진복호가 평점이 더 높네. 거기로 가볼까? | S3 아, 맞다. 그때 그 영화… | S4 그냥 집에서 쉬면서 영화나 볼까 생각 중이야.
 
-     0.00s  user  발화 시작: 오늘 날씨가 어때?
-     1.47s  agent 발화 시작: 부산은 현재 맑고, 기온은 이십육도입니다. 습도는 육십팔퍼센트, 바람은 시속 칠킬로미터로 불고 있습니다.
-     1.47s  user  발화 끝
-     7.72s  user  발화 시작: 음.
-     8.22s  user  발화 끝
-    10.27s  agent 발화 끝
-    12.43s  user  발화 시작: 아, 그렇구나. 십이월 칠일에 저녁 식사 예약해 둔 거 기억해 둬. 오후 두시 십오분이고, 비용은 일만원이야
-    20.73s  user  발화 끝
-    21.10s  agent 발화 시작: 네, 기억해 둘게요.
-    22.75s  agent 발화 끝
-    23.77s  user  발화 시작: 요즘 플래시 새 시즌 언제 나오는지 궁금해.
-    26.34s  <ret> 발화 (turn6 첫 프레임)
-    26.84s  agent 발화 시작: <ret> 플래시 새 시즌은 이천십구년 시월 팔일에 첫 방송을 시작했어요. 첫 에피소드 제목은 "Girl P
-    26.95s  user  발화 끝
-    27.90s  ⚡SPAN 주입 [d'=1.56s / d_lead=7.41s]: The Flash season 6 premiered on October 8, 2019, with the first episod
-    34.19s  user  발화 시작: 오, 꽤 기다려야 하는구나.
-    34.25s  agent 발화 끝
-    35.93s  agent 발화 시작: 네, 조금 더 기다려야 할 것 같아요. 그래도 곧 만날 수 있겠죠.
-    35.99s  user  발화 끝
-    40.52s  agent 발화 끝
-    40.69s  user  발화 시작: 요즘 스트레스가 너무 심해. 뭔가 기분 전환이 필요해.
-    42.86s  agent 발화 시작: 맞아요.
-    43.59s  agent 발화 끝
-    44.58s  user  발화 끝
-    44.71s  agent 발화 시작: 스트레스 해소에는 여러 가지 방법이 있겠죠. 좋아하는 음악을 듣거나, 산책을 하는 것도 좋은 방법이에요.
-    51.71s  agent 발화 끝
-    52.51s  user  발화 시작: 음… 좋은 생각이야.
-    54.17s  user  발화 끝
-    54.21s  <ret> 발화 (turn13 첫 프레임)
-    54.21s  agent 발화 시작: <ret> 혹시 부산에서 조용하고 아늑한 카페를 추천해 드릴까요?
-    56.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: Cafe Yeonje is a popular cafe in Busan, known for its cozy atmosphere 
-    57.72s  agent 발화 시작: 부산에서 아늑한 분위기와 맛있는 커피로 유명한 카페 연제가 있어요. 연제구에 위치해 있습니다.
-    57.73s  agent 발화 끝
-    64.30s  agent 발화 끝
-    64.83s  user  발화 시작: 카페 연제? 이름이 예쁘네.
-    67.10s  agent 발화 시작: [happy] 네, 인기가 많은 곳이에요. 조용히 책을 읽거나, 친구와 담소를 나누기에 좋다고 해요.
-    67.27s  user  발화 끝
-    70.27s  user  발화 시작: 응.
-    70.76s  user  발화 끝
-    73.12s  agent 발화 끝
-    73.25s  user  발화 시작: 한번 가봐야겠어.
-    74.49s  agent 발화 시작: 언제든 편하게 방문해 보세요.
-    74.72s  user  발화 끝
-    76.26s  user  발화 시작: 최근에 영화 볼만한 거 있어?
-    76.42s  agent 발화 끝
-    77.90s  <ret> 발화 (turn21 첫 프레임)
-    78.05s  agent 발화 시작: <ret> 크리스토퍼 놀란 감독의 이천이십삼년 전기 스릴러 영화 "오펜하이머"가 개봉했어요. 연출과 연기력이
-    78.28s  user  발화 끝
-    79.22s  ⚡SPAN 주입 [d'=1.32s / d_lead=8.53s]: "Oppenheimer" is a 2023 biographical thriller film directed by Christo
-    86.58s  agent 발화 끝
-    87.17s  user  발화 시작: 오펜하이머? 장르가 좀 어렵겠는데.
-    89.98s  agent 발화 시작: [curious] 네, 좀 무거운 주제를 다루고 있는 영화지만, 많은 사람들이 감명 깊게 보고 있다고 해요.
-    90.13s  user  발화 끝
-    95.55s  user  발화 시작: 음… 고민해 봐야겠어.
-    95.87s  agent 발화 끝
-    97.75s  user  발화 끝
-    97.83s  agent 발화 시작: 혹시 다른 장르의 영화를 추천해 드릴까요?
-    99.73s  user  발화 시작: 응.
-   100.23s  user  발화 끝
-   100.40s  user  발화 시작: 그냥 부산에서 데이트하기 좋은 레스토랑을 알려줘.
-   100.55s  agent 발화 끝
-   102.81s  <ret> 발화 (turn28 첫 프레임)
-   103.36s  agent 발화 시작: <ret> 부산 해운대에 위치한 라 보엠은 로맨틱한 분위기와 맛있는 파스타로 유명한 이탈리아 레스토랑이에요.
-   103.59s  user  발화 끝
-   103.73s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.04s]: La Boheme is a popular Italian restaurant in Haeundae, Busan, known fo
-   106.47s  user  발화 시작: 어.
-   107.10s  user  발화 끝
-   110.40s  agent 발화 끝
-   110.74s  user  발화 시작: 라 보엠? 분위기가 괜찮겠네.
-   113.32s  user  발화 끝
-   113.34s  agent 발화 시작: [happy] 네, 데이트 장소로 인기가 많다고 해요. 특히 파스타가 맛있다고 하네요.
-   118.30s  agent 발화 끝
-   118.45s  user  발화 시작: 가격대는 어느 정도야?
-   119.32s  <ret> 발화 (turn33 첫 프레임)
-   119.92s  agent 발화 시작: <ret> 라 보엠의 일인당 평균 가격은 삼만 원에서 오만 원 정도입니다.
-   120.06s  user  발화 끝
-   120.80s  ⚡SPAN 주입 [d'=1.48s / d_lead=4.53s]: La Boheme's average price per person is around 30,000-50,000 won.
-   124.32s  user  발화 시작: 적당한 가격이네.
-   124.45s  agent 발화 끝
-   125.80s  agent 발화 시작: 네, 부담 없이 즐기기에 좋은 곳이에요.
-   125.88s  user  발화 끝
-   128.85s  agent 발화 끝
-   129.64s  user  발화 시작: 부산에서 외국인 친구가 놀러 오는데, 어디를 데려가면 좋을까?
-   133.89s  <ret> 발화 (turn37 첫 프레임)
-   133.94s  agent 발화 시작: <ret> 부산 감천문화마을은 예술 작품과 미로처럼 얽힌 골목길로 유명한 다채로운 마을입니다.
-   133.99s  user  발화 끝
-   134.92s  ⚡SPAN 주입 [d'=1.03s / d_lead=6.25s]: Gamcheon Culture Village is a colorful village in Busan, known for its
-   140.16s  user  발화 시작: 감천문화마을? 사진 찍기 좋을 것 같네.
-   140.19s  agent 발화 끝
-   143.79s  agent 발화 시작: [happy] 네, 사진 명소로 인기가 많아요. 외국인 친구도 분명 좋아할 거예요.
-   143.86s  user  발화 끝
-   148.78s  user  발화 시작: 거기도 가봐야겠다.
-   148.79s  agent 발화 끝
-   150.11s  user  발화 끝
-   150.49s  agent 발화 시작: 네, 즐거운 시간을 보내시길 바랍니다.
-   153.02s  user  발화 시작: 요즘 운동을 너무 안 해서 걱정이야.
-   153.07s  agent 발화 끝
-   155.44s  agent 발화 시작: 규칙적인 운동은 건강에 매우 중요하죠. 꾸준히 운동하는 습관을 들이는 것이 중요합니다.
-   155.56s  user  발화 끝
-   161.40s  user  발화 시작: 어떻게 시작해야 할지 모르겠어.
-   161.60s  agent 발화 끝
-   163.38s  agent 발화 시작: [curious] 간단한 운동부터 시작해 보세요. 매일 삼십분 정도 걷는 것도 좋은 방법입니다.
-   163.61s  user  발화 끝
-   168.52s  agent 발화 끝
-   168.95s  user  발화 시작: 걷기? 생각보다 쉽네.
-   170.90s  agent 발화 시작: 네, 누구나 쉽게 시작할 수 있는 운동이에요.
-   171.03s  user  발화 끝
-   173.81s  agent 발화 끝
-   173.93s  user  발화 시작: 부산에서 요가 수업을 하는 곳을 알려줘.
-   176.00s  <ret> 발화 (turn49 첫 프레임)
-   176.29s  agent 발화 시작: <ret> 부산 센텀시에 위치한 부산요가스튜디오는 모든 수준의 사람들을 위한 다양한 수업을 제공하는 인기 요
-   176.42s  user  발화 끝
-   176.96s  ⚡SPAN 주입 [d'=0.95s / d_lead=8.35s]: Busan Yoga Studio is a popular yoga studio in Centum City, Busan, offe
-   180.01s  user  발화 시작: 어어.
-   180.69s  user  발화 끝
-   184.56s  user  발화 시작: 부산요가스튜디오? 괜찮겠네.
-   184.63s  agent 발화 끝
-   187.22s  agent 발화 시작: [happy] 네, 다양한 수업을 선택할 수 있다고 해요.
-   187.28s  user  발화 끝
-   189.85s  agent 발화 끝
-   191.17s  user  발화 시작: 수업료는 어느 정도야?
-   192.00s  🃏 CARD 주입 (2400f, 누적 54턴 요약, 85f): dinner date: 십이월 칠일 오후 두시 십오분 (2분 전); dinner cost: 일만원 (2분 전)
-   192.66s  <ret> 발화 (turn54 첫 프레임)
-   192.73s  user  발화 끝
-   192.99s  agent 발화 시작: <ret> 부산요가스튜디오의 요가 수업 평균 가격은 회당 이만 원에서 삼만 원 정도입니다.
-   193.81s  ⚡SPAN 주입 [d'=1.16s / d_lead=5.27s]: The average price for a yoga class at Busan Yoga Studio is 20,000-30,0
-   198.26s  agent 발화 끝
-   198.30s  user  발화 시작: 적당한 가격이네.
-   199.87s  user  발화 끝
-   199.99s  agent 발화 시작: 네, 부담 없이 시작해 볼 수 있겠어요.
-   202.41s  user  발화 시작: 오늘 저녁에 뭐 먹을까?
-   202.48s  agent 발화 끝
-   204.15s  agent 발화 시작: [curious] 혹시 특별히 먹고 싶은 음식이 있나요?
-   204.30s  user  발화 끝
-   204.97s  user  발화 시작: 어.
-   205.52s  user  발화 끝
-   206.55s  agent 발화 끝
-   207.80s  user  발화 시작: 그냥 맛있는 거 먹고 싶어.
-   209.12s  <ret> 발화 (turn61 첫 프레임)
-   209.46s  user  발화 끝
-   209.56s  agent 발화 시작: <ret> 그럼 부산에서 유명한 돼지국밥을 먹어보는 건 어때요?
-   210.65s  ⚡SPAN 주입 [d'=1.53s / d_lead=3.29s]: Busan is famous for its 돼지국밥 (pork and rice soup), a hearty and flavor
-   212.85s  agent 발화 끝
-   213.24s  user  발화 시작: 돼지국밥? 괜찮지.
-   215.01s  agent 발화 시작: [happy] 네, 부산에 오시면 꼭 드셔봐야 할 음식이에요.
-   215.22s  user  발화 끝
-   218.38s  agent 발화 끝
-   218.47s  user  발화 시작: 어디가 맛있어?
-   219.04s  <ret> 발화 (turn65 첫 프레임)
-   219.47s  agent 발화 시작: <ret> 부산 서면에 위치한 스와인하우스는 진한 국물과 부드러운 돼지고기로 유명한 돼지국밥 전문점입니다.
-   219.62s  user  발화 끝
-   219.77s  ⚡SPAN 주입 [d'=0.73s / d_lead=6.86s]: Swine House is a popular 돼지국밥 restaurant in Seomyeon, Busan, known for
-   226.33s  agent 발화 끝
-   227.49s  user  발화 시작: 스와인하우스? 한번 가봐야겠다.
-   229.93s  user  발화 끝
-   230.34s  agent 발화 시작: 네, 즐거운 식사 되세요.
-   232.28s  agent 발화 끝
-   232.71s  user  발화 시작: 아, 맞다. 십이월 칠일에 저녁 식사 예약했던 거, 몇 시였지?
-   236.08s  agent 발화 시작: 네.
-   236.58s  agent 발화 끝
-   237.27s  agent 발화 시작: 십이월 칠일 저녁 식사는 오후 두시 십오분에 예약하셨습니다.
-   237.43s  user  발화 끝
-   241.62s  agent 발화 끝
-   243.58s  user  발화 시작: 아, 맞아. 고마워.
-   245.42s  user  발화 끝
-   245.43s  agent 발화 시작: 천만에요.
-   246.33s  user  발화 시작: 요즘 책 읽을 시간이 없어서 아쉬워.
-   246.39s  agent 발화 끝
-   248.68s  user  발화 끝
-   248.70s  agent 발화 시작: 책 읽기는 마음의 양식을 쌓는 좋은 방법이죠. 시간을 내서 꾸준히 읽는 것이 중요합니다.
-   251.40s  user  발화 시작: 응.
-   251.89s  user  발화 끝
-   254.72s  user  발화 시작: 어떻게 시간을 내야 할지 모르겠어.
-   254.81s  agent 발화 끝
-   257.11s  user  발화 끝
-   257.51s  agent 발화 시작: [curious] 자기 전에 삼십분 정도 책을 읽는 것도 좋은 방법이에요.
-   261.06s  agent 발화 끝
-   261.18s  user  발화 시작: 자기 전에? 괜찮은 생각이야.
-   263.50s  agent 발화 시작: 네, 잠들기 전에 책을 읽으면 마음이 편안해지고 숙면을 취하는 데 도움이 됩니다.
-   263.62s  user  발화 끝
-   269.38s  agent 발화 끝
-   270.86s  user  발화 시작: 부산에서 조용한 서점을 알려줘.
-   272.66s  <ret> 발화 (turn81 첫 프레임)
-   273.12s  agent 발화 시작: <ret> 부산 보수동책거리는 서점과 출판사들이 늘어선 역사적인 거리입니다.
-   273.12s  user  발화 끝
-   273.56s  ⚡SPAN 주입 [d'=0.90s / d_lead=4.77s]: Bosu-dong Book Street is a historic street in Busan, lined with bookst
-   275.90s  user  발화 시작: 응.
-   276.40s  user  발화 끝
-   277.88s  agent 발화 끝
-   278.73s  user  발화 시작: 보수동책거리? 한번 가봐야겠다.
-   281.63s  user  발화 끝
-   281.68s  agent 발화 시작: [happy] 네, 조용히 책을 읽기에 좋은 곳이에요.
-   284.68s  agent 발화 끝
-   284.83s  user  발화 시작: 책 가격은 어느 정도야?
-   286.02s  <ret> 발화 (turn86 첫 프레임)
-   286.40s  agent 발화 시작: <ret> 보수동책거리의 책 평균 가격은 일만 원에서 이만 원 정도입니다.
-   286.48s  user  발화 끝
-   287.21s  ⚡SPAN 주입 [d'=1.19s / d_lead=4.30s]: The average price of a book at Bosu-dong Book Street is 10,000-20,000 
-   288.30s  user  발화 시작: 어.
-   288.84s  user  발화 끝
-   290.70s  agent 발화 끝
-   291.53s  user  발화 시작: 적당한 가격이네.
-   293.10s  agent 발화 시작: 네, 부담 없이 책을 구입할 수 있겠어요.
-   293.19s  user  발화 끝
-   294.13s  user  발화 시작: 어.
-   294.75s  user  발화 끝
-   296.01s  agent 발화 끝
-   297.08s  user  발화 시작: 아, 맞다. 십이월 칠일 저녁 식사 비용이 얼마였지?
-   301.70s  agent 발화 시작: 십이월 칠일 저녁 식사 비용은 일만원입니다.
-   301.75s  user  발화 끝
-   303.13s  user  발화 시작: 어어.
-   303.95s  user  발화 끝
-   305.12s  agent 발화 끝
-   305.31s  user  발화 시작: 아, 맞아. 고마워.
-   306.79s  user  발화 끝
-   306.95s  agent 발화 시작: 천만에요.
-   307.75s  user  발화 시작: 요즘 너무 피곤해서 힘들다.
-   307.86s  agent 발화 끝
-   309.87s  user  발화 끝
-   310.14s  agent 발화 시작: [sigh] 힘든 시간을 보내고 계시는군요. 충분한 휴식을 취하고, 스트레스를 해소하는 것이 중요합니다.
-   317.22s  agent 발화 끝
-   318.56s  user  발화 시작: 어떻게 하면 좋을까?
-   319.89s  agent 발화 시작: 따뜻한 물에 몸을 담그거나, 좋아하는 음악을 듣는 것도 도움이 될 거예요.
-   320.03s  user  발화 끝
-   324.66s  agent 발화 끝
-   324.69s  user  발화 시작: 음… 좋은 생각이야.
-   326.34s  agent 발화 시작: 네, 자신을 돌보는 시간을 가지세요.
-   326.53s  user  발화 끝
-   329.11s  agent 발화 끝
-   330.27s  user  발화 시작: 부산에서 마사지 잘하는 곳을 알려줘.
-   332.52s  <ret> 발화 (turn103 첫 프레임)
-   332.77s  agent 발화 시작: <ret> 부산 센텀시에 위치한 스파랜드 센텀시티는 다양한 마사지 트리트먼트와 휴식 시설을 제공하는 대규모 
-   332.90s  user  발화 끝
-   333.44s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.09s]: Spa Land Centum City is a large spa in Centum City, Busan, offering a 
-   335.64s  user  발화 시작: 응.
-   336.13s  user  발화 끝
-   339.86s  agent 발화 끝
-   342.17s  user  발화 시작: 스파랜드 센텀시티? 한번 가봐야겠다.
-   345.12s  user  발화 끝
-   345.25s  agent 발화 시작: [happy] 네, 편안하게 휴식을 취할 수 있는 곳이에요.
-   348.02s  agent 발화 끝
-   348.25s  user  발화 시작: 마사지 가격은 어느 정도야?
-   349.65s  <ret> 발화 (turn108 첫 프레임)
-   350.06s  agent 발화 시작: <ret> 스파랜드 센텀시티의 마사지 평균 가격은 시간당 오만 원에서 십만 원 정도입니다.
-   350.23s  user  발화 끝
-   350.76s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.74s]: The average price for a massage at Spa Land Centum City is 50,000-100,
-   355.80s  agent 발화 끝
-   355.98s  user  발화 시작: 좀 비싸네.
-   357.17s  user  발화 끝
-   357.46s  agent 발화 시작: 네, 고급 스파이기 때문에 가격이 조금 높은 편이에요.
-   358.63s  user  발화 시작: 어.
-   359.21s  user  발화 끝
-   361.01s  user  발화 시작: 그래도 한번 가봐야겠다.
-   361.07s  agent 발화 끝
-   362.62s  user  발화 끝
-   362.83s  agent 발화 시작: 네, 즐거운 시간 보내세요.
-   364.90s  agent 발화 끝
-   364.92s  user  발화 시작: 오늘 날씨가 다시 어때?
-   366.53s  agent 발화 시작: 부산은 현재 흐리고, 기온은 이십오도입니다. 습도는 칠십이퍼센트, 바람은 시속 오킬로미터로 불고 있습니다.
-   366.72s  user  발화 끝
-   374.74s  agent 발화 끝
-   374.75s  user  발화 시작: 흐리네.
-   375.39s  user  발화 끝
-   375.48s  agent 발화 시작: 네, 비가 올 수도 있으니 우산을 챙기시는 것이 좋겠습니다.
-   379.51s  agent 발화 끝
-   379.53s  user  발화 시작: 알았어.
-   380.13s  agent 발화 시작: 그럼 좋은 하루 보내세요.
-   380.36s  user  발화 끝
-   381.79s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 의사 선생님 진료 예약해 둔 거 기억하지?
+     2.54s  user  발화 끝
+     2.68s  agent 발화 시작: 네, 기억해 둘게요. 사월 십팔일 오후 다섯시에 예약하신 것 맞죠?
+     7.80s  agent 발화 끝
+     7.91s  user  발화 시작: 맞아. 그리고 다음 주에 친구랑 여행 가기로 했는데, 어디로 갈까 고민이야.
+    12.39s  user  발화 끝
+    12.51s  agent 발화 시작: 친구분과 여행 계획을 세우시는군요. 어디를 생각하고 계신가요?
+    14.41s  user  발화 시작: 어.
+    14.72s  user  발화 끝
+    16.52s  agent 발화 끝
+    17.26s  user  발화 시작: 음… 아직 딱히 정해둔 곳은 없어. 그냥 따뜻한 곳으로 가고 싶어.
+    21.48s  user  발화 끝
+    21.52s  agent 발화 시작: 따뜻한 곳이면 좋을 텐데요. 혹시 바다를 좋아하시나요?
+    24.01s  user  발화 시작: 어.
+    24.45s  user  발화 끝
+    25.59s  agent 발화 끝
+    25.60s  user  발화 시작: 바다도 좋지. 근데 너무 붐비는 곳은 싫어. 조용하고 한적한 곳이면 더 좋고.
+    30.56s  <ret> 발화 (turn9 첫 프레임)
+    30.67s  agent 발화 시작: <ret> 조용하고 한적한 바다… 알겠습니다. 그럼, 영화 '스위트 홈 앨라배마'에 나오는 엄마 역할, 누가
+    30.69s  user  발화 끝
+    32.17s  ⚡SPAN 주입 [d'=1.61s / d_lead=9.08s]: Mary Kay Place played the mother in Sweet Home Alabama.
+    39.72s  agent 발화 시작: 영화 '스위트 홈 앨라배마'의 엄마 역할을 맡은 배우는… 메리 케이 플레이스예요. 연기를 정말 잘 하시죠.
+    39.76s  agent 발화 끝
+    44.25s  user  발화 시작: 응.
+    44.63s  user  발화 끝
+    47.60s  agent 발화 끝
+    47.61s  user  발화 시작: 아, 맞다! 메리 케이 플레이스! 기억났어.
+    50.14s  user  발화 끝
+    50.15s  agent 발화 시작: 다행이네요. 혹시 다른 영화에 대해서도 궁금한 점이 있으신가요?
+    55.28s  agent 발화 끝
+    55.49s  user  발화 시작: 음… 요즘 볼 만한 영화가 있을까?
+    57.82s  <ret> 발화 (turn15 첫 프레임)
+    57.83s  agent 발화 시작: <ret> 지금 상영 중인 영화 중에서 평점이 높은 영화는… '퓨리오사: 매드맥스 사가', '인사이드 아웃 
+    57.93s  user  발화 끝
+    58.76s  ⚡SPAN 주입 [d'=0.95s / d_lead=14.56s]: (tool result) {"movies": [{"title": "퓨리오사: 매드맥스 사가", "rating": 8.6, "g
+    66.90s  user  발화 시작: 응.
+    67.30s  user  발화 끝
+    72.39s  agent 발화 끝
+    72.62s  user  발화 시작: 퓨리오사가 평점이 높네? 한번 볼까?
+    74.62s  agent 발화 시작: '퓨리오사'는 액션과 에스 에프 장르라 호평을 받고 있어요. 혹시 예매를 도와드릴까요?
+    74.68s  user  발화 끝
+    81.05s  agent 발화 끝
+    81.21s  user  발화 시작: 아니, 아직은 그냥 알아보기만 할게.
+    83.53s  user  발화 끝
+    83.67s  agent 발화 시작: 네, 알겠습니다. 그럼, 여행 계획은 어떻게 되시나요?
+    85.57s  user  발화 시작: 응.
+    85.88s  user  발화 끝
+    88.16s  agent 발화 끝
+    88.34s  user  발화 시작: 여행 계획은 아직 막막해. 어디로 가면 좋을지…
+    91.66s  user  발화 끝
+    92.02s  agent 발화 시작: 여행지를 정하는 데 어려움을 느끼시는군요. 혹시 어떤 스타일의 여행을 좋아하시나요?
+    93.95s  user  발화 시작: 어.
+    94.39s  user  발화 끝
+    97.87s  user  발화 시작: 음… 그냥 조용히 쉬면서 맛있는 것도 먹고 싶어.
+    97.94s  agent 발화 끝
+   100.11s  agent 발화 시작: 네네.
+   100.88s  agent 발화 끝
+   102.06s  user  발화 끝
+   102.16s  agent 발화 시작: 조용히 쉬면서 맛있는 음식을 즐기는 여행… 좋은데요. 서울 근교에 그런 곳도 많아요.
+   109.53s  agent 발화 끝
+   109.57s  user  발화 시작: 서울 근교? 어디가 좋을까?
+   111.70s  agent 발화 시작: 서울 근교에는 가평, 양평, 강화도 같은 곳이 있어요.
+   111.78s  user  발화 끝
+   116.33s  agent 발화 끝
+   118.34s  user  발화 시작: 강화도는 어때?
+   119.36s  user  발화 끝
+   119.44s  agent 발화 시작: 강화도는 역사 유적지와 아름다운 자연 경관이 어우러진 곳이에요. 조용히 쉬기에도 좋고, 맛있는 음식도 많아요
+   125.09s  user  발화 시작: 응응.
+   125.54s  user  발화 끝
+   127.69s  user  발화 시작: 강화도에 괜찮은 식당이 있을까?
+   127.69s  agent 발화 끝
+   128.96s  <ret> 발화 (turn34 첫 프레임)
+   129.24s  agent 발화 시작: <ret> 강화도에서 해산물 요리가 맛있는 식당은… '진복호'와 '선창횟집'이 있어요. 평점은 각각 사 점 
+   129.36s  user  발화 끝
+   130.51s  ⚡SPAN 주입 [d'=1.55s / d_lead=8.48s]: (tool result) {"restaurants": [{"name": "진복호", "cuisine": "해산물", "rati
+   133.88s  user  발화 시작: 어.
+   134.14s  user  발화 끝
+   137.72s  agent 발화 끝
+   138.36s  user  발화 시작: 진복호가 평점이 더 높네. 거기로 가볼까?
+   141.31s  user  발화 끝
+   141.53s  agent 발화 시작: '진복호'는 싱싱한 해산물 요리를 맛볼 수 있는 곳으로 유명해요.
+   143.88s  user  발화 시작: 응.
+   144.26s  user  발화 끝
+   145.92s  agent 발화 끝
+   146.35s  user  발화 시작: 좋아. 그럼 진복호 예약해 줄래?
+   148.53s  agent 발화 시작: 네, 예약해 드릴게요. 몇 명으로 예약하시겠어요?
+   148.56s  user  발화 끝
+   152.47s  agent 발화 끝
+   153.33s  user  발화 시작: 두명으로 예약해 줘.
+   154.46s  agent 발화 시작: 두명으로 '진복호' 예약하시겠네요. 날짜와 시간을 정해주세요.
+   154.48s  user  발화 끝
+   159.32s  agent 발화 끝
+   159.36s  user  발화 시작: 다음 주 토요일 저녁 일곱시에 예약해 줘.
+   161.35s  user  발화 끝
+   161.41s  <ret> 발화 (turn44 첫 프레임)
+   161.42s  agent 발화 시작: <ret> 네, '진복호'에 다음 주 토요일 저녁 일곱시에 두명으로 예약이 완료되었습니다. 예약 번호는 알 
+   162.08s  ⚡SPAN 주입 [d'=0.67s / d_lead=10.48s]: (tool result) {"reservation id": "RES5-123456", "status": "confirmed",
+   168.00s  user  발화 시작: 그치.
+   168.44s  user  발화 끝
+   171.61s  user  발화 시작: 고마워. 덕분에 여행 계획이 점점 구체화되는 것 같아.
+   171.90s  agent 발화 끝
+   172.78s  agent 발화 시작: 네.
+   173.46s  agent 발화 끝
+   175.12s  user  발화 끝
+   175.33s  agent 발화 시작: 도움이 되었다니 기쁘네요. 혹시 다른 계획도 세워드릴까요?
+   179.34s  user  발화 시작: 아니, 오늘은 이 정도면 충분해.
+   179.68s  agent 발화 끝
+   181.60s  user  발화 끝
+   181.69s  agent 발화 시작: 네, 알겠습니다. 그럼, 오늘 의사 선생님 진료 예약 시간, 다시 한번 확인해 드릴까요?
+   188.22s  agent 발화 끝
+   188.24s  user  발화 시작: 아, 그래. 진료 시간… 몇 시였지?
+   191.30s  user  발화 끝
+   191.45s  agent 발화 시작: 사월 십팔일 오후 다섯시입니다.
+   192.00s  🃏 CARD 주입 (2400f, 누적 53턴 요약, 109f): travel preference: 조용하고 한적한 곳; restaurant: 진복호; restaurant reservation people: 두명; restaur
+   193.98s  agent 발화 끝
+   194.43s  user  발화 시작: 아, 맞아. 삼만 오천원이었나?
+   196.06s  agent 발화 시작: 네, 삼만 오천원입니다.
+   196.13s  user  발화 끝
+   198.54s  agent 발화 끝
+   198.55s  user  발화 시작: 잊고 있었네. 고마워.
+   200.48s  user  발화 끝
+   200.71s  agent 발화 시작: 천만에요.
+   201.95s  agent 발화 끝
+   202.35s  user  발화 시작: 혹시 오늘 날씨 어때?
+   203.42s  <ret> 발화 (turn58 첫 프레임)
+   203.71s  agent 발화 시작: <ret> 지금 서울은 십팔 점 이도이고, 습도는 육십오퍼센트, 바람은 시속 팔 점 오킬로미터입니다.
+   203.89s  user  발화 끝
+   204.38s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.58s]: (tool result) "18.2°C, humidity 65%, wind 8.5 km/h"
+   206.57s  user  발화 시작: 어.
+   206.82s  user  발화 끝
+   210.18s  user  발화 시작: 꽤 따뜻하네.
+   210.28s  agent 발화 끝
+   211.03s  agent 발화 시작: 네, 오늘 날씨가 아주 좋네요.
+   211.15s  user  발화 끝
+   213.94s  agent 발화 끝
+   214.09s  user  발화 시작: 여행 가기 좋은 날씨겠다.
+   215.49s  agent 발화 시작: 네, 여행 가기에 딱 좋은 날씨예요.
+   215.61s  user  발화 끝
+   218.53s  agent 발화 끝
+   219.78s  user  발화 시작: 아, 맞다. 그때 그 영화…
+   221.44s  user  발화 끝
+   221.89s  agent 발화 시작: 영화에 대해서 말씀하시는 건가요?
+   224.01s  agent 발화 끝
+   224.69s  user  발화 시작: 응. 그 영화, 배우 이름이 뭐였지?
+   227.61s  user  발화 끝
+   227.64s  agent 발화 시작: 어떤 영화를 말씀하시는 건가요?
+   230.13s  agent 발화 끝
+   230.25s  user  발화 시작: 스위트 홈 앨라배마!
+   231.64s  <ret> 발화 (turn69 첫 프레임)
+   232.08s  agent 발화 시작: <ret> 아, '스위트 홈 앨라배마' 말씀하시는군요.
+   232.13s  user  발화 끝
+   232.80s  ⚡SPAN 주입 [d'=1.16s / d_lead=3.23s]: Mary Kay Place played the mother in Sweet Home Alabama.
+   235.29s  agent 발화 시작: '스위트 홈 앨라배마'에서 엄마 역할을 맡은 배우는… 메리 케이 플레이스입니다.
+   235.31s  agent 발화 끝
+   240.93s  agent 발화 끝
+   241.00s  user  발화 시작: 맞아!
+   241.44s  user  발화 끝
+   241.79s  agent 발화 시작: 기억이 안 나셨나 봐요.
+   243.27s  user  발화 시작: 아니, 그냥 다시 한번 확인하고 싶었어.
+   243.30s  agent 발화 끝
+   245.74s  agent 발화 시작: 네, 알겠습니다.
+   245.76s  user  발화 끝
+   247.34s  agent 발화 끝
+   247.65s  user  발화 시작: 음… 갑자기 궁금해졌는데, 그 영화 감독은 누구야?
+   250.92s  <ret> 발화 (turn76 첫 프레임)
+   251.35s  agent 발화 시작: <ret> '스위트 홈 앨라배마'의 감독은 앤드류 플레밍입니다.
+   251.48s  user  발화 끝
+   251.89s  ⚡SPAN 주입 [d'=0.97s / d_lead=3.65s]: Andrew Fleming directed Sweet Home Alabama.
+   253.87s  user  발화 시작: 응.
+   254.26s  user  발화 끝
+   255.00s  agent 발화 끝
+   256.25s  user  발화 시작: 앤드류 플레밍… 처음 들어보는 이름이네.
+   258.88s  agent 발화 시작: 앤드류 플레밍은 코미디 영화 감독으로 유명합니다.
+   259.04s  user  발화 끝
+   262.10s  user  발화 시작: 아, 그렇구나.
+   262.39s  agent 발화 끝
+   263.11s  user  발화 끝
+   263.22s  agent 발화 시작: [happy] 혹시 다른 영화 감독에 대해서도 궁금하신가요?
+   266.73s  agent 발화 끝
+   267.08s  user  발화 시작: 아니, 오늘은 이 정도면 충분해.
+   269.11s  user  발화 끝
+   269.31s  agent 발화 시작: 네, 알겠습니다.
+   271.10s  agent 발화 끝
+   271.25s  user  발화 시작: 아, 근데… 지금 몇 시지?
+   273.64s  user  발화 끝
+   273.78s  agent 발화 시작: 지금은 이천이십육년 칠월 십일 오후 세시 십오분입니다.
+   275.94s  user  발화 시작: 어어.
+   276.52s  user  발화 끝
+   278.45s  agent 발화 끝
+   278.62s  user  발화 시작: 아, 벌써 이렇게 됐네. 시간 진짜 빠르다.
+   280.80s  user  발화 끝
+   280.80s  agent 발화 시작: 시간이 정말 빠르게 흘러가는 것 같아요.
+   283.65s  agent 발화 끝
+   283.94s  user  발화 시작: 그래.
+   284.37s  agent 발화 시작: 혹시 오늘 하루 계획은 어떻게 되시나요?
+   284.48s  user  발화 끝
+   285.46s  user  발화 시작: 응응.
+   285.90s  user  발화 끝
+   286.90s  agent 발화 끝
+   287.97s  user  발화 시작: 그냥 집에서 쉬면서 영화나 볼까 생각 중이야.
+   290.78s  user  발화 끝
+   290.85s  agent 발화 시작: 집에서 편안하게 영화를 보시는 것도 좋겠네요.
+   291.95s  user  발화 시작: 응.
+   292.34s  user  발화 끝
+   293.72s  user  발화 시작: 응.
+   293.75s  agent 발화 끝
+   294.12s  user  발화 끝
+   294.18s  agent 발화 시작: [curious] 혹시 어떤 영화를 보실 건가요?
+   297.08s  agent 발화 끝
+   297.87s  user  발화 시작: 아직 정하지 않았어. 추천해 줄 영화 있어?
+   300.81s  user  발화 끝
+   300.86s  agent 발화 시작: 네, '인사이드 아웃 이'가 평점이 높고 재미있다고 하네요.
+   304.06s  user  발화 시작: 어어.
+   304.60s  user  발화 끝
+   305.14s  user  발화 시작: 인사이드 아웃 이? 한번 찾아봐야겠다.
+   305.15s  agent 발화 끝
+   307.03s  user  발화 끝
+   307.28s  agent 발화 시작: 네, 한번 찾아보세요.
+   309.30s  agent 발화 끝
+   309.56s  user  발화 시작: 아, 그리고… 다음 주 토요일 진료 예약, 다시 한번 확인해 줄래?
+   313.17s  user  발화 끝
+   313.37s  agent 발화 시작: 네, 다시 한번 확인해 드릴게요.
+   315.95s  agent 발화 끝
+   316.03s  user  발화 시작: 아니, 잠깐만! 그 진료, 혹시 다른 병원에서 더 잘 보는 곳 없을까?
+   320.07s  user  발화 끝
+   320.17s  agent 발화 시작: 다른 병원을 알아봐 드릴까요? 어떤 과의 진료를 찾으시는 건가요?
+   322.49s  user  발화 시작: 응.
+   322.80s  user  발화 끝
+   324.44s  agent 발화 끝
+   324.76s  user  발화 시작: 음… 내과.
+   325.98s  <ret> 발화 (turn108 첫 프레임)
+   326.12s  agent 발화 시작: <ret> 서울에서 내과 전문의가 잘 알려진 병원은… '서울내과'와 '세브란스병원 내과'가 있어요. 평점은 
+   326.19s  user  발화 끝
+   326.93s  ⚡SPAN 주입 [d'=0.95s / d_lead=14.65s]: (tool result) {"providers": [{"name": "서울내과", "address": "서울 강남구 테헤란로 
+   340.77s  agent 발화 끝
+   340.92s  user  발화 시작: 서울내과가 평점이 더 높네.
+   342.85s  user  발화 끝
+   343.37s  agent 발화 시작: 네, '서울내과'가 평점이 조금 더 높네요.
+   346.93s  agent 발화 끝
+   347.01s  user  발화 시작: 좋아. 그럼 진료 예약, 서울내과로 바꿔줘.
+   349.64s  <ret> 발화 (turn112 첫 프레임)
+   350.18s  agent 발화 시작: <ret> 네, '서울내과'에 다음 주 토요일 오후 다섯시에 진료 예약을 변경했습니다. 예약 번호는 에이 피
+   350.19s  user  발화 끝
+   350.70s  ⚡SPAN 주입 [d'=1.06s / d_lead=9.22s]: (tool result) {"appointment id": "APP7-890123", "status": "confirmed",
+   359.34s  user  발화 시작: 고마워.
+   359.40s  agent 발화 끝
+   359.83s  agent 발화 시작: 천만에요.
+   359.91s  user  발화 끝
+   361.12s  agent 발화 끝
+   361.31s  user  발화 시작: 이제 정말 아무것도 할 게 없네.
+   363.20s  agent 발화 시작: [sigh] 그러시군요. 편안한 휴식을 취하시길 바랍니다.
+   363.33s  user  발화 끝
+   367.55s  user  발화 시작: 응. 고마워.
+   367.55s  agent 발화 끝
+   368.93s  user  발화 끝
+   369.11s  agent 발화 시작: 언제든지 필요하시면 말씀해주세요. 좋은 하루 보내세요.
+   373.91s  agent 발화 끝

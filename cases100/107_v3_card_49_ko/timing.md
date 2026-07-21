@@ -4,309 +4,252 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_49",
-#     "name": "정별",
+#     "name": "예람",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "late 30s",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "skill",
-#       "text": "User is just getting back into board-game design."
+#       "date": "2026-06-20",
+#       "category": "airline",
+#       "text": "User usually flies with Lufthansa."
 #     },
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-06-08",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-05-18",
+#       "category": "medication",
+#       "text": "User takes a vitamin D supplement."
+#     },
+#     {
+#       "date": "2026-04-30",
+#       "category": "schedule",
+#       "text": "User has a fully remote setup."
+#     },
+#     {
+#       "date": "2026-04-26",
+#       "category": "wake",
+#       "text": "User usually wakes up close to 9am after night shifts."
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "category": "emergency",
-#       "text": "User's emergency contact is Elena."
+#       "text": "User's emergency contact is Clara."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "plant",
-#       "text": "User is growing a few succulents at home."
+#       "date": "2026-02-22",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is beef tacos."
 #     },
 #     {
-#       "date": "2026-04-06",
-#       "category": "dislike",
-#       "text": "User can't stand liver."
-#     },
-#     {
-#       "date": "2026-04-04",
-#       "category": "employer",
-#       "text": "User works at a game studio."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A+."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "child",
-#       "text": "User has a child named Marco, age 10."
+#       "date": "2025-12-16",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-06",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "title": "Choosing a preschool",
+#       "date": "2026-04-17",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "title": "Looking for a therapist",
+#       "date": "2026-02-24",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 너무 피곤하네요. 유월 십칠일 오전 아홉시에 치과 예약이 | S2 요즘은 그림 그리는 것에 관심이 생겼어요. | S3 감사합니다. | S4 특별히 잘하는 요리는 없어요. 그냥 간단한 요리만 해요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 머리 자르러 가는 약속 있거든. | S2 고마워. | S3 좋아, 그럼 감천문화마을로 가보자. | S4 그냥… 너무 갑자기 헤어졌어. 이유도 잘 모르겠고.
 
-     0.00s  user  발화 시작: 오늘 너무 피곤하네요. 유월 십칠일 오전 아홉시에 치과 예약이 있는데, 그 전까지는 좀 쉬어야겠어요. 비용은
-     8.53s  user  발화 끝
-     8.67s  agent 발화 시작: 네, 기억해 둘게요. 힘든 하루 보내셨군요. 잠시라도 편히 쉬시는 게 좋겠어요.
-    12.75s  user  발화 시작: 네.
-    13.25s  user  발화 끝
-    15.45s  user  발화 시작: 맞아요. 요즘 일 때문에 스트레스가 너무 많아서요. 뭔가 기분 전환할 만한 게 필요해요.
-    15.49s  agent 발화 끝
-    21.61s  user  발화 끝
-    22.04s  agent 발화 시작: [happy] 스트레스 해소에는 좋아하는 음악을 듣는 것도 좋은 방법이에요. 혹시 요즘 즐겨 듣는 노래 있으
-    28.95s  agent 발화 끝
-    30.06s  user  발화 시작: 음… 요즘은 클래식 음악을 좀 듣고 있어요. 특히 토탈 이클립스 오브 더 하트라는 노래가 좋더라고요.
-    36.29s  <ret> 발화 (turn6 첫 프레임)
-    36.41s  user  발화 끝
-    36.56s  agent 발화 시작: <ret> 토탈 이클립스 오브 더 하트라는 노래는 보니 타일러의 대표곡으로, 천구백팔십삼년에 발매되었고 미국
-    37.08s  ⚡SPAN 주입 [d'=0.79s / d_lead=9.04s]: Bonnie Tyler released "Total Eclipse of the Heart" in 1983, and it bec
-    45.40s  user  발화 시작: 아, 보니 타일러군요. 목소리가 정말 독특하죠.
-    45.60s  agent 발화 끝
-    49.07s  agent 발화 시작: 네, 정말 매력적인 음색이에요. [curious] 혹시 그 노래를 처음 들었던 계기가 있으세요?
-    49.23s  user  발화 끝
-    51.91s  user  발화 시작: 네.
-    52.54s  user  발화 끝
-    54.98s  user  발화 시작: 친구가 추천해 줬어요. 옛날 노래인데도 불구하고 너무 좋다고 하더라고요.
-    55.10s  agent 발화 끝
-    59.84s  user  발화 끝
-    60.08s  agent 발화 시작: 친구분 취향이 좋으시네요. [happy] 클래식 음악과 팝 음악을 함께 즐기시는군요.
-    62.97s  user  발화 시작: 예.
-    63.47s  user  발화 끝
-    65.96s  agent 발화 끝
-    66.14s  user  발화 시작: 네, 가끔씩 분위기에 따라 듣는 게 달라요. 요즘은 좀 차분한 음악이 끌리네요.
-    69.48s  agent 발화 시작: 예.
-    70.11s  agent 발화 끝
-    71.51s  <ret> 발화 (turn15 첫 프레임)
-    71.52s  user  발화 끝
-    71.67s  agent 발화 시작: <ret> 차분한 음악은 마음을 안정시키는 데 도움이 되죠. 혹시 서울에서 조용한 카페를 찾고 계신가요?
-    72.77s  ⚡SPAN 주입 [d'=1.26s / d_lead=7.04s]: Cafe Onion Anguk is a popular cafe located in Anguk-dong, Seoul, known
-    78.69s  agent 발화 시작: 서울의 안국동에 위치한 카페 어니언 안국은 전통적인 한국 분위기와 맛있는 페이스트리로 유명한 인기 카페예요.
-    78.72s  agent 발화 끝
-    81.14s  user  발화 시작: 네.
-    81.78s  user  발화 끝
-    86.37s  agent 발화 끝
-    86.61s  user  발화 시작: 오, 안국동 카페요? 분위기가 좋을 것 같네요.
-    90.63s  user  발화 끝
-    90.87s  agent 발화 시작: 네, 조용하고 아늑한 분위기에서 차를 즐기기에 안성맞춤이에요.
-    95.20s  user  발화 시작: 주말에 한번 가봐야겠어요. 혹시 다른 추천할 만한 곳도 있을까요?
-    95.36s  agent 발화 끝
-    99.46s  agent 발화 시작: [curious] 서울에는 다양한 볼거리가 많죠. 혹시 어떤 종류의 장소를 선호하시나요?
-    99.56s  user  발화 끝
-   101.33s  user  발화 시작: 음.
-   101.74s  user  발화 끝
-   105.02s  agent 발화 끝
-   105.43s  user  발화 시작: 음… 미술관이나 박물관도 좋고, 공원도 좋고요.
-   109.16s  <ret> 발화 (turn24 첫 프레임)
-   109.42s  agent 발화 시작: <ret> 서울에는 국립중앙박물관, 예술의전당 등 훌륭한 문화 시설이 많아요.
-   109.54s  user  발화 끝
-   110.55s  ⚡SPAN 주입 [d'=1.39s / d_lead=5.36s]: The National Museum of Korea houses a vast collection of Korean art an
-   114.76s  agent 발화 시작: 국립중앙박물관은 고대부터 현대까지 한국 미술과 유물을 소장하고 있는 방대한 컬렉션을 자랑합니다.
-   114.78s  agent 발화 끝
-   117.72s  user  발화 시작: 네.
-   118.18s  user  발화 끝
-   121.34s  user  발화 시작: 국립중앙박물관은 가봤는데 정말 좋았어요.
-   121.89s  agent 발화 끝
-   124.33s  agent 발화 시작: [happy] 다녀오셨다니 다행이네요. 다양한 전시물을 감상할 수 있어서 좋죠.
-   124.33s  user  발화 끝
-   129.70s  agent 발화 끝
-   129.88s  user  발화 시작: 네, 한국 역사와 문화를 배울 수 있어서 좋았어요.
-   131.36s  agent 발화 시작: 예.
-   131.81s  agent 발화 끝
-   133.49s  user  발화 끝
-   133.74s  agent 발화 시작: [curious] 혹시 요즘 관심 있는 분야가 있으세요?
-   136.19s  agent 발화 끝
-   138.06s  user  발화 시작: 요즘은 그림 그리는 것에 관심이 생겼어요.
-   140.83s  user  발화 끝
-   140.89s  agent 발화 시작: 그림 그리기에 관심이 생기셨군요. [happy] 창작 활동은 스트레스 해소에도 도움이 될 거예요.
-   147.52s  agent 발화 끝
-   147.82s  user  발화 시작: 네, 힐링이 될 것 같아요. 혹시 그림을 배울 수 있는 곳을 추천해 주실 수 있나요?
-   152.07s  <ret> 발화 (turn35 첫 프레임)
-   152.63s  agent 발화 시작: <ret> 홍대 아트 스튜디오는 초보자부터 숙련된 예술가까지 다양한 미술 수업을 제공합니다. 그림, 드로잉,
-   152.63s  user  발화 끝
-   153.02s  ⚡SPAN 주입 [d'=0.95s / d_lead=9.46s]: Hongdae Art Studio offers various art classes, including painting, dra
-   162.09s  agent 발화 끝
-   162.23s  user  발화 시작: 홍대 아트 스튜디오요? 홍대 근처에 사니까 가기 편하겠네요.
-   164.58s  agent 발화 시작: 예.
-   165.22s  agent 발화 끝
-   166.22s  agent 발화 시작: 네, 홍대는 젊음과 예술의 거리로 유명하죠. 다양한 볼거리와 즐길 거리가 많아요.
-   166.26s  user  발화 끝
-   171.31s  user  발화 시작: 맞아요.
-   172.18s  user  발화 끝
-   172.84s  agent 발화 끝
-   172.88s  user  발화 시작: 맞아요. 데이트 코스로도 좋고요.
-   175.23s  user  발화 끝
-   175.33s  agent 발화 시작: [happy] 데이트 코스로도 훌륭한 선택이에요.
-   177.82s  agent 발화 끝
-   178.17s  user  발화 시작: 요즘 날씨가 너무 좋아서 밖으로 나가고 싶네요.
-   181.26s  user  발화 끝
-   181.38s  agent 발화 시작: 네, 완연한 봄 날씨가 정말 좋죠. [curious] 혹시 이번 주말에 특별한 계획이 있으신가요?
-   184.02s  user  발화 시작: 네.
-   184.56s  user  발화 끝
-   187.96s  agent 발화 끝
-   189.38s  user  발화 시작: 아직 특별한 계획은 없어요. 그냥 집에서 쉬거나, 카페에 갈까 생각 중이에요.
-   192.00s  🃏 CARD 주입 (2400f, 누적 46턴 요약, 119f): appointment time: 유월 십칠일 오전 아홉시; appointment cost: 십이만원; location preference: 안국동 카페; acti
-   194.58s  agent 발화 시작: [happy] 집에서 쉬면서 재충전하는 것도 좋고, 카페에서 여유로운 시간을 보내는 것도 좋죠.
-   194.71s  user  발화 끝
-   198.21s  user  발화 시작: 음.
-   198.80s  user  발화 끝
-   200.38s  user  발화 시작: 네, 둘 다 좋을 것 같아요.
-   200.42s  agent 발화 끝
-   202.18s  user  발화 끝
-   202.41s  agent 발화 시작: [curious] 혹시 영화 보는 것도 좋아하시나요?
-   204.70s  user  발화 시작: 네, 영화 보는 거 좋아해요.
-   204.76s  agent 발화 끝
-   206.66s  <ret> 발화 (turn51 첫 프레임)
-   206.67s  agent 발화 시작: <ret> "인사이드 아웃 이"는 감정적인 깊이와 공감 가는 캐릭터로 긍정적인 평가를 받은 최근 개봉한 애니
-   206.78s  user  발화 끝
-   207.26s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.53s]: "Inside Out 2" is a recently released animated film that has received 
-   209.66s  user  발화 시작: 네.
-   210.29s  user  발화 끝
-   215.16s  user  발화 시작: "인사이드 아웃 이"요? 평이 좋더라고요. 한번 봐야겠네요.
-   215.20s  agent 발화 끝
-   219.28s  agent 발화 시작: 네, 가족과 함께 보기에도 좋은 영화예요.
-   219.42s  user  발화 끝
-   222.15s  agent 발화 끝
-   222.17s  user  발화 시작: 맞아요. 주말에 가족과 함께 보러 가야겠어요.
-   225.32s  user  발화 끝
-   225.74s  agent 발화 시작: [happy] 좋은 시간 보내시길 바랍니다.
-   227.50s  user  발화 시작: 감사합니다.
-   227.67s  agent 발화 끝
-   228.48s  agent 발화 시작: [curious] 혹시 요즘 운동도 하고 계신가요?
-   228.50s  user  발화 끝
-   229.41s  user  발화 시작: 네.
-   230.04s  user  발화 끝
-   230.93s  agent 발화 끝
-   231.22s  user  발화 시작: 음… 운동은 잘 안 해요. 해야 하는데…
-   235.07s  user  발화 끝
-   235.14s  agent 발화 시작: 운동은 건강 유지에 필수적이죠. [happy] 가벼운 산책부터 시작하는 것도 좋은 방법이에요.
-   240.81s  user  발화 시작: 네, 산책은 가끔 해요.
-   240.98s  agent 발화 끝
-   242.24s  <ret> 발화 (turn63 첫 프레임)
-   242.56s  user  발화 끝
-   242.78s  agent 발화 시작: <ret> [curious] 서울에서 산책하기 좋은 공원을 추천해 드릴까요?
-   243.03s  ⚡SPAN 주입 [d'=0.78s / d_lead=3.23s]: Olympic Park is a large public park in Seoul, offering walking trails,
-   245.94s  agent 발화 시작: 올림픽 공원은 서울에 있는 넓은 공원으로, 산책로, 정원, 문화 명소가 있어요.
-   246.01s  agent 발화 끝
-   252.30s  user  발화 시작: 올림픽 공원요? 가본 적 있는데 정말 크더라고요.
-   252.66s  agent 발화 끝
-   255.53s  agent 발화 시작: 네, 넓어서 산책하기에 정말 좋죠.
-   255.68s  user  발화 끝
-   258.49s  agent 발화 끝
-   258.65s  user  발화 시작: 맞아요. 자연을 느낄 수 있어서 좋았어요.
-   261.75s  user  발화 끝
-   262.09s  agent 발화 시작: [happy] 자연 속에서 힐링하는 것은 정말 중요하죠.
-   265.16s  user  발화 시작: 네, 그래요.
-   265.19s  agent 발화 끝
-   266.14s  agent 발화 시작: [curious] 혹시 요즘 스트레스 관리를 위해 특별히 하는 것이 있으신가요?
-   266.16s  user  발화 끝
-   269.61s  user  발화 시작: 스트레스 관리는… 잘 모르겠어요. 그냥 친구들과 수다를 떨거나, 음악을 듣거나 해요.
-   269.66s  agent 발화 끝
-   272.72s  agent 발화 시작: 아.
-   273.35s  agent 발화 끝
-   275.04s  agent 발화 시작: 친구들과 수다를 떨거나 음악을 듣는 것도 좋은 방법이에요. [happy] 자신만의 스트레스 해소법을 찾는 것
-   275.11s  user  발화 끝
-   279.78s  user  발화 시작: 네.
-   280.41s  user  발화 끝
-   282.54s  agent 발화 끝
-   282.74s  user  발화 시작: 네, 맞는 말이에요.
-   284.39s  user  발화 끝
-   284.41s  agent 발화 시작: [curious] 혹시 요즘 관심 있는 분야가 있으신가요?
-   287.04s  user  발화 시작: 요즘은 요리에 관심이 생겼어요.
-   287.14s  agent 발화 끝
-   289.26s  user  발화 끝
-   289.53s  agent 발화 시작: 요리에 관심이 생기셨군요. [happy] 요리는 창의력을 발휘하고 맛있는 음식을 만들 수 있어서 정말 좋아요
-   297.13s  agent 발화 끝
-   298.26s  user  발화 시작: 네, 요리하는 게 재미있어요.
-   300.05s  user  발화 끝
-   300.32s  agent 발화 시작: [curious] 혹시 어떤 요리를 잘 만드시나요?
-   302.72s  agent 발화 끝
-   302.89s  user  발화 시작: 특별히 잘하는 요리는 없어요. 그냥 간단한 요리만 해요.
-   306.59s  agent 발화 시작: 간단한 요리도 충분히 맛있을 수 있죠. [happy] 요리는 정성이 중요해요.
-   306.73s  user  발화 끝
-   311.92s  user  발화 시작: 네, 그래요.
-   311.92s  agent 발화 끝
-   312.92s  user  발화 끝
-   313.00s  agent 발화 시작: [curious] 혹시 여행 가는 것을 좋아하시나요?
-   314.65s  user  발화 시작: 예.
-   315.19s  user  발화 끝
-   315.45s  agent 발화 끝
-   315.87s  user  발화 시작: 네, 여행 가는 거 정말 좋아해요.
-   318.08s  user  발화 끝
-   318.53s  agent 발화 시작: 여행은 새로운 경험을 하고 세상을 보는 시야를 넓혀주는 좋은 기회죠. [happy] 최근에 가고 싶었던 곳이
-   323.35s  user  발화 시작: 네.
-   323.99s  user  발화 끝
-   325.94s  user  발화 시작: 음… 요즘은 제주도에 가고 싶어요.
-   325.99s  agent 발화 끝
-   328.90s  user  발화 끝
-   329.14s  agent 발화 시작: 제주도는 아름다운 자연경관과 다양한 볼거리가 있는 곳이죠. [happy] 힐링하기에 정말 좋은 곳이에요.
-   335.61s  user  발화 시작: 맞아요. 바다도 보고, 맛있는 음식도 먹고 싶어요.
-   335.90s  agent 발화 끝
-   339.95s  user  발화 끝
-   340.04s  <ret> 발화 (turn92 첫 프레임)
-   340.08s  agent 발화 시작: <ret> [curious] 혹시 제주도에서 특별히 가보고 싶은 곳이 있으신가요?
-   341.04s  ⚡SPAN 주입 [d'=1.01s / d_lead=3.38s]: Seongsan Ilchulbong Peak is a volcanic crater on Jeju Island, offering
-   343.43s  agent 발화 시작: 성산일출봉은 제주도에 있는 화산 분화구로, 멋진 일출을 감상할 수 있어요.
-   343.46s  agent 발화 끝
-   345.17s  user  발화 시작: 네.
-   345.67s  user  발화 끝
-   349.50s  agent 발화 끝
-   350.17s  user  발화 시작: 성산일출봉요? 사진으로 봤는데 정말 멋있더라고요.
-   354.62s  user  발화 끝
-   354.93s  agent 발화 시작: 네, 직접 가서 보시면 더욱 감동적일 거예요.
-   356.70s  user  발화 시작: 네.
-   357.33s  user  발화 끝
-   357.92s  user  발화 시작: 맞아요. 꼭 한번 가보고 싶어요.
-   358.12s  agent 발화 끝
-   360.83s  user  발화 끝
-   361.29s  agent 발화 시작: [happy] 즐거운 여행 되시길 바랍니다.
-   363.08s  user  발화 시작: 감사합니다. 아, 제가 치과 예약한 날짜가 언제였죠?
-   363.55s  agent 발화 끝
-   366.65s  agent 발화 시작: 유월 십칠일입니다.
-   366.74s  user  발화 끝
-   368.27s  agent 발화 끝
-   368.31s  user  발화 시작: 아, 맞네요. 그때 시간은 몇 시였죠?
-   371.27s  agent 발화 시작: 오전 아홉시입니다.
-   371.32s  user  발화 끝
-   372.57s  user  발화 시작: 네, 알겠습니다. 감사합니다.
-   372.69s  agent 발화 끝
-   374.46s  agent 발화 시작: [happy] 도움이 되어서 기쁩니다.
-   374.54s  user  발화 끝
-   376.21s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 머리 자르러 가는 약속 있거든.
+     2.15s  agent 발화 시작: 네, 기억해 둘게요.
+     2.24s  user  발화 끝
+     3.52s  agent 발화 끝
+     4.51s  user  발화 시작: 그건 그렇고, 밥 뉴하트 쇼에 조안나 역을 누가 맡았는지 기억나?
+     9.08s  <ret> 발화 (turn3 첫 프레임)
+     9.13s  agent 발화 시작: <ret> 밥 뉴하트 쇼의 조안나 역은 메리 프랜이 맡았어요. 총 백삼십구개 에피소드에 출연했대요.
+     9.22s  user  발화 끝
+     9.78s  ⚡SPAN 주입 [d'=0.70s / d_lead=6.34s]: Mary Frann played Joanna Loudon on the Bob Newhart Show from 1982 to 1
+    15.46s  agent 발화 끝
+    15.52s  user  발화 시작: 오, 그렇구나.
+    16.38s  <ret> 발화 (turn5 첫 프레임)
+    16.48s  user  발화 끝
+    16.57s  agent 발화 시작: <ret> 부산에 분위기 좋은 카페가 몇 군데 있어요. 해운대에 있는 '카페 드림'은 평점이 사 점 오점이고
+    17.68s  ⚡SPAN 주입 [d'=1.30s / d_lead=7.27s]: (tool result) {"restaurants": [{"name": "카페 드림", "address": "부산 해운대구 해
+    22.15s  user  발화 시작: 어어.
+    22.86s  user  발화 끝
+    23.83s  agent 발화 끝
+    23.90s  user  발화 시작: 카페 드림? 해운대에 있구나.
+    26.07s  user  발화 끝
+    26.27s  agent 발화 시작: 네, 해운대로 백이십삼번지에 있어요.
+    28.75s  agent 발화 끝
+    29.39s  user  발화 시작: 음, 부산역 근처에 맛집은 없을까?
+    31.74s  <ret> 발화 (turn10 첫 프레임)
+    32.00s  agent 발화 시작: <ret> 부산역 근처에는 '밀면 전문점'이 평점 사 점 삼점에 가격대는 저렴해요.
+    32.15s  user  발화 끝
+    32.57s  ⚡SPAN 주입 [d'=0.83s / d_lead=4.95s]: (tool result) {"restaurants": [{"name": "밀면 전문점", "address": "부산 동구 부산
+    34.09s  user  발화 시작: 응.
+    34.49s  user  발화 끝
+    36.96s  agent 발화 끝
+    37.06s  user  발화 시작: 밀면 전문점? 좋네.
+    38.99s  agent 발화 시작: 네, 부산역광장 십번지에 있어요.
+    39.02s  user  발화 끝
+    41.48s  agent 발화 끝
+    41.65s  user  발화 시작: 아, 그러고 보니 구월 이십삼일 약속 시간 맞춰서 알람 설정해 줄 수 있어?
+    46.57s  <ret> 발화 (turn15 첫 프레임)
+    46.64s  agent 발화 시작: <ret> 네, 이천이십육년 구월 이십삼일 오후 한시 사십오분에 알람을 설정했어요.
+    46.73s  user  발화 끝
+    47.49s  ⚡SPAN 주입 [d'=0.92s / d_lead=5.46s]: (tool result) Alarm set for September 23, 2026 at 1:45 PM.
+    52.10s  agent 발화 끝
+    53.78s  user  발화 시작: 고마워.
+    54.51s  user  발화 끝
+    54.95s  <ret> 발화 (turn17 첫 프레임)
+    54.96s  agent 발화 시작: <ret> [happy] 별거 아니에요. 혹시 요즘 영화 볼만한 거 있어요?
+    55.55s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.46s]: (tool result) Currently showing movies: "인터스텔라" (Sci-Fi), "어벤져스: 엔드게임"
+    58.42s  agent 발화 끝
+    58.51s  agent 발화 시작: 요즘은 '인터스텔라', '어벤져스: 엔드게임', '기생충'이 상영 중이에요.
+    63.09s  agent 발화 끝
+    63.86s  user  발화 시작: '기생충'은 이미 봤어.
+    65.75s  user  발화 끝
+    65.89s  agent 발화 시작: 아, 그러셨군요. 그럼 '인터스텔라'나 '어벤져스: 엔드게임'은 어떠세요?
+    67.50s  user  발화 시작: 어.
+    67.97s  user  발화 끝
+    70.47s  agent 발화 끝
+    70.71s  user  발화 시작: 음… '인터스텔라'가 더 끌리네.
+    72.97s  <ret> 발화 (turn23 첫 프레임)
+    73.27s  user  발화 끝
+    73.56s  agent 발화 시작: <ret> 네, 부산역 씨 지 브이에서 오늘 오후 두시, 다섯시 삼십분, 아홉시에 상영하고 있어요.
+    74.57s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.34s]: (tool result) "인터스텔라" is playing at CGV Busan Station at 2:00 PM, 5:30
+    79.91s  agent 발화 끝
+    80.53s  user  발화 시작: 오후 다섯시 삼십분으로 예매해 줄 수 있어?
+    82.44s  <ret> 발화 (turn25 첫 프레임)
+    82.87s  agent 발화 시작: <ret> 네, '인터스텔라' 오후 다섯시 삼십분 부산역 씨 지 브이 티켓 두 장을 예매했어요. 확인 번호는
+    82.92s  user  발화 끝
+    83.04s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.03s]: (tool result) Two tickets for "인터스텔라" at CGV Busan Station at 5:30 PM 
+    93.90s  agent 발화 끝
+    94.05s  user  발화 시작: 와, 진짜 고마워.
+    95.31s  <ret> 발화 (turn27 첫 프레임)
+    95.43s  user  발화 끝
+    95.88s  agent 발화 시작: <ret> [happy] 천만에요. 혹시 부산에서 데이트하기 좋은 장소도 알아볼까요?
+    97.17s  ⚡SPAN 주입 [d'=1.86s / d_lead=4.30s]: (tool result) Popular romantic spots in Busan: Taejongdae Park, Gamche
+   100.18s  agent 발화 끝
+   100.34s  agent 발화 시작: 부산에서 데이트하기 좋은 곳으로는 태종대 공원, 감천문화마을, 해운대 해변이 유명해요.
+   106.63s  agent 발화 끝
+   106.93s  user  발화 시작: 해운대 해변은 너무 뻔하잖아.
+   108.86s  user  발화 끝
+   108.97s  agent 발화 시작: [curious] 그렇군요. 그럼 감천문화마을이나 태종대 공원은 어떠세요?
+   113.06s  user  발화 시작: 감천문화마을은 사진 찍기 좋지 않아?
+   113.40s  agent 발화 끝
+   115.64s  agent 발화 시작: 네, 알록달록한 집들이 예뻐서 사진 찍기 정말 좋아요.
+   115.76s  user  발화 끝
+   119.62s  agent 발화 끝
+   119.68s  user  발화 시작: 좋아, 그럼 감천문화마을로 가보자.
+   122.47s  <ret> 발화 (turn34 첫 프레임)
+   122.81s  agent 발화 시작: <ret> 부산역에서 지하철 일호선을 타고 토성역에서 내려서 육번 출구로 나오세요. 그리고 일 일번이나 일 
+   122.81s  user  발화 끝
+   123.50s  ⚡SPAN 주입 [d'=1.04s / d_lead=11.22s]: (tool result) Take subway line 1 from Busan Station to Toseong Station
+   134.02s  agent 발화 끝
+   134.07s  user  발화 시작: 오, 알았어.
+   135.65s  agent 발화 시작: 혹시 오늘 저녁에 뭐 하실 계획 있으세요?
+   135.66s  user  발화 끝
+   138.03s  user  발화 시작: 글쎄, 아직 딱히.
+   138.19s  agent 발화 끝
+   139.61s  user  발화 끝
+   139.84s  agent 발화 시작: [sigh] 요즘 힘든 일 있으세요?
+   142.84s  agent 발화 끝
+   142.97s  user  발화 시작: 그냥 좀 답답해.
+   144.27s  user  발화 끝
+   144.51s  agent 발화 시작: [curious] 어떤 점이 답답하신가요?
+   146.21s  agent 발화 끝
+   147.59s  user  발화 시작: 그냥… 헤어진 지 얼마 안 돼서 그런가 봐.
+   148.97s  agent 발화 시작: 네.
+   149.74s  agent 발화 끝
+   150.08s  agent 발화 시작: 아… 힘드시겠어요. 헤어짐은 누구에게나 어려운 일이죠.
+   150.12s  user  발화 끝
+   154.19s  agent 발화 끝
+   154.35s  user  발화 시작: 응…
+   154.79s  user  발화 끝
+   154.92s  agent 발화 시작: 괜찮으시다면, 그분에 대한 이야기를 조금 해 주실 수 있을까요?
+   158.01s  user  발화 시작: 응.
+   158.36s  user  발화 끝
+   159.18s  agent 발화 끝
+   159.38s  user  발화 시작: 음… (잠시 침묵)
+   160.24s  user  발화 끝
+   160.71s  agent 발화 시작: [happy] 천천히 말씀하셔도 괜찮아요. 제가 옆에서 들어드릴게요.
+   162.92s  user  발화 시작: 어.
+   163.37s  user  발화 끝
+   164.63s  agent 발화 끝
+   164.75s  user  발화 시작: 그냥… 너무 갑자기 헤어졌어. 이유도 잘 모르겠고.
+   169.42s  agent 발화 시작: 갑작스러운 이별은 정말 혼란스러울 수 있어요. 이유를 모르는 건 더 힘들고요.
+   169.45s  user  발화 끝
+   174.65s  agent 발화 끝
+   174.94s  user  발화 시작: 응… 어떻게 해야 할지 모르겠어.
+   177.00s  agent 발화 시작: [curious] 지금 가장 하고 싶은 건 뭐예요?
+   177.12s  user  발화 끝
+   178.93s  agent 발화 끝
+   180.10s  user  발화 시작: 그냥… 혼자 있고 싶어.
+   182.15s  user  발화 끝
+   182.15s  agent 발화 시작: 혼자만의 시간을 갖는 것도 좋은 방법이에요. 자신을 돌보는 데 집중하세요.
+   186.92s  agent 발화 끝
+   187.68s  user  발화 시작: 그래야겠지.
+   188.68s  agent 발화 시작: 구월 이십삼일 머리 자르러 가는 약속 시간이 어떻게 되나요?
+   188.69s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 58턴 요약, 124f): haircut date: 구월 이십삼일; haircut time: 오후 한시 사십오분; movie time: 오후 다섯시 삼십분; movie location: 부
+   192.42s  agent 발화 끝
+   192.52s  <ret> 발화 (turn58 첫 프레임)
+   192.60s  agent 발화 시작: <ret> 오후 한시 사십오분이에요.
+   193.53s  ⚡SPAN 주입 [d'=1.01s / d_lead=2.07s]: [2026-07-10] 오후 1시 45분.
+   194.67s  agent 발화 끝
+   195.87s  user  발화 시작: 아, 맞아.
+   196.95s  user  발화 끝
+   196.96s  agent 발화 시작: 그리고 머리 자르는 비용은 얼마였죠?
+   198.87s  <ret> 발화 (turn61 첫 프레임)
+   198.99s  agent 발화 끝
+   199.03s  agent 발화 시작: <ret> 이십만원이었어요.
+   199.62s  ⚡SPAN 주입 [d'=0.75s / d_lead=1.42s]: [2026-07-10] 200,000원.
+   200.45s  agent 발화 끝
+   201.55s  user  발화 시작: 아, 그래.
+   202.43s  agent 발화 시작: [happy] 괜찮으시다면, 잠시 긍정적인 생각을 해보는 건 어떠세요?
+   202.43s  user  발화 끝
+   203.65s  user  발화 시작: 맞아.
+   204.26s  user  발화 끝
+   206.22s  agent 발화 끝
+   207.33s  user  발화 시작: 그래야겠지.
+   208.19s  agent 발화 시작: [happy] 힘든 시간도 지나갈 거예요. 제가 항상 곁에서 응원할게요.
+   208.29s  user  발화 끝
+   211.97s  agent 발화 끝

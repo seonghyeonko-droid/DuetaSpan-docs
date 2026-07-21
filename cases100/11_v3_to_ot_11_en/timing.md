@@ -4,108 +4,108 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Noa",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "age_range": "60s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "show",
-#       "text": "User is currently watching a stand-up comedy special."
-#     },
-#     {
-#       "date": "2026-04-24",
-#       "category": "dislike",
-#       "text": "User can't stand bell peppers."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "car",
-#       "text": "User drives a 2019 Hyundai Tucson."
-#     },
-#     {
-#       "date": "2026-03-18",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Daniel."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB-."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-01-09",
-#       "category": "pet",
-#       "text": "User has a Ragdoll cat named Miso."
-#     },
-#     {
-#       "date": "2025-12-28",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Yuna."
-#     },
-#     {
-#       "date": "2025-12-26",
+#       "date": "2026-05-19",
 #       "category": "temp",
 #       "text": "User keeps the home thermostat around 26°C."
+#     },
+#     {
+#       "date": "2026-04-05",
+#       "category": "child",
+#       "text": "User has a child named Rin, age 10."
+#     },
+#     {
+#       "date": "2026-03-29",
+#       "category": "wake",
+#       "text": "User usually wakes up around 6am."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "floor",
+#       "text": "User lives on the 8th floor."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "phone",
+#       "text": "User uses an Xperia 1."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "commute",
+#       "text": "User works from home."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "skill",
+#       "text": "User is just getting back into marathon training."
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "category": "hobby",
+#       "text": "User is into pottery."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-05-15",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "title": "Switching phone plans",
+#       "date": "2026-04-03",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Frella, do you know when someon | S2 Oh, nineteen ninety-nine… that’s e | S3 Did you remember to take the recyc | S4 Sorry, what were we talking about?
+# EXAMINER(FDB-v2) 단계: S1 Hi Salo, I'm studying biology and  | S2 The number of orders in class mamm | S3 Oh, hold on a sec, honey, can you  | S4 Sorry about that. So, 29 orders… t
 
-     0.00s  user  발화 시작: Hi Frella, do you know when someone first came up with the t
-     7.02s  <ret> 발화 (turn1 첫 프레임)
-     7.35s  agent 발화 시작: <ret> Well, that’s a great question! The phrase “Internet of
-     7.50s  user  발화 끝
-     7.93s  ⚡SPAN 주입 [d'=0.91s / d_lead=11.92s]: Kevin Ashton coined the phrase “Internet of Things” in 1999 while work
-    19.27s  agent 발화 끝
-    19.38s  user  발화 시작: Oh, nineteen ninety-nine… that’s earlier than I thought.
-    22.92s  agent 발화 시작: [curious] It often surprises people! It’s interesting to thi
-    23.03s  user  발화 끝
-    28.64s  user  발화 시작: Yeah.
-    29.13s  user  발화 끝
-    31.12s  agent 발화 끝
-    31.19s  user  발화 시작: Did you remember to take the recycling out?
-    33.89s  user  발화 시작: Sorry, what were we talking about? Oh right, the internet of
-    34.10s  user  발화 끝
-    37.72s  user  발화 끝
-    38.21s  agent 발화 시작: No worries at all. It’s easy to get distracted. Sometimes, l
-    46.23s  user  발화 시작: Okay.
-    47.20s  user  발화 끝
-    49.07s  <ret> 발화 (turn9 첫 프레임)
-    49.14s  agent 발화 시작: <ret> It’s good to acknowledge those little shifts in focus.
-    49.28s  agent 발화 끝
-    49.67s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.42s]: Ashton used the term in a presentation for Procter & Gamble executives
-    65.10s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Salo, I'm studying biology and I'm stuck on a question.
+     1.82s  agent 발화 시작: Yeah.
+     2.41s  agent 발화 끝
+     3.51s  user  발화 끝
+     3.63s  agent 발화 시작: Hello! It's perfectly normal to get stuck sometimes. What's 
+     9.14s  agent 발화 끝
+     9.29s  user  발화 시작: The number of orders in class mammalia is…? I just can't rem
+    12.72s  agent 발화 시작: Mm-hmm.
+    13.45s  agent 발화 끝
+    13.80s  user  발화 끝
+    13.94s  <ret> 발화 (turn5 첫 프레임)
+    14.13s  agent 발화 시작: <ret> Oh, that's a good one! For a bit of biological detail,
+    14.83s  ⚡SPAN 주입 [d'=0.90s / d_lead=6.25s]: There are 29 orders within the class Mammalia, encompassing a wide var
+    17.73s  user  발화 시작: Right.
+    18.32s  user  발화 끝
+    20.38s  agent 발화 끝
+    20.55s  user  발화 시작: Oh, hold on a sec, honey, can you grab the mail?
+    23.03s  user  발화 시작: Sorry about that. So, 29 orders… that’s helpful.
+    23.04s  user  발화 끝
+    25.59s  agent 발화 시작: Yeah, totally.
+    26.43s  user  발화 끝
+    26.50s  agent 발화 시작: [happy] You’re very welcome! It’s great you’re pursuing biol
+    26.92s  agent 발화 끝
+    31.50s  agent 발화 끝

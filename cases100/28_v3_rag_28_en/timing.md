@@ -4,63 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Casey",
+#     "name": "Hana",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-26",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 22°C."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "work",
-#       "text": "User works as a pharmacist."
-#     },
-#     {
-#       "date": "2026-04-23",
-#       "category": "skill",
-#       "text": "User is getting fairly good at freediving."
-#     },
-#     {
-#       "date": "2026-04-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in June."
+#       "date": "2026-06-12",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
 #       "date": "2026-02-08",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is bún chả."
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Lucas."
+#       "date": "2026-02-07",
+#       "category": "home",
+#       "text": "User's home address is 512 Spruce Lane."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "savings",
-#       "text": "User is saving for a wedding."
+#       "date": "2026-01-29",
+#       "category": "streaming",
+#       "text": "User subscribes to Disney+ and YouTube Premium."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "pet",
+#       "text": "User has a Border Collie named Ziggy."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-06-11",
+#       "title": "Meal-prep planning",
+#       "bullets": [
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-31",
 #       "title": "Building a PC",
 #       "bullets": [
 #         "budget around 2M won for gaming",
@@ -68,67 +61,61 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-23",
+#       "date": "2026-02-05",
+#       "title": "Studying for the TOEIC",
+#       "bullets": [
+#         "target score is 850",
+#         "exam is in about six weeks"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers for a 3-story house",
 #         "wanted coverage for the basement office"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "title": "Choosing a laptop",
-#       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Torara, I'm feeling really lone | S2 Yeah, exactly. It’s like, if I don | S3 That makes sense, but it's hard to | S4 So… just find new friends? Easier 
+# EXAMINER(FDB-v2) 단계: S1 I’m starting a new job next week,  | S2 But what if I ask silly questions? | S3 That’s…reassuring, actually. I kee | S4 You're right. Maybe it's just part
 
-     0.00s  user  발화 시작: Hi Torara, I'm feeling really lonely lately.
-     3.20s  agent 발화 시작: Hi there! It’s completely normal to feel lonely sometimes, a
-     3.28s  user  발화 끝
-     9.78s  user  발화 시작: It's just… I feel like I’m always the one reaching out to pe
-     9.78s  agent 발화 끝
-    13.94s  user  발화 끝
-    14.11s  agent 발화 시작: That can be exhausting, and it's understandable why you'd fe
-    24.17s  agent 발화 끝
-    24.32s  user  발화 시작: Yeah, exactly. It’s like, if I don’t text, they don’t text b
-    28.68s  user  발화 끝
-    29.15s  agent 발화 시작: It sounds like you're noticing an imbalance in your friendsh
-    31.00s  user  발화 시작: Mhm.
-    31.45s  user  발화 끝
-    34.99s  agent 발화 끝
-    35.03s  user  발화 시작: But what do I do? Just… stop reaching out? That feels awful.
-    39.61s  <ret> 발화 (turn8 첫 프레임)
-    40.18s  agent 발화 시작: <ret> Healthy connections really depend on both people putti
-    40.21s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.34s]: Reciprocity in relationships is a key component of maintaining healthy
-    40.22s  user  발화 끝
-    42.87s  user  발화 시작: Mm-hmm.
-    43.51s  user  발화 끝
-    46.52s  agent 발화 끝
-    46.57s  user  발화 시작: That makes sense, but it's hard to know what's 'enough' effo
-    49.88s  agent 발화 시작: [curious] It is! It's a tricky balance. It's not always abou
-    49.99s  user  발화 끝
-    57.44s  agent 발화 끝
-    57.58s  user  발화 시작: What if they just… don't value it?
-    59.33s  <ret> 발화 (turn13 첫 프레임)
-    59.95s  agent 발화 시작: <ret> Research shows strong connections are important for we
-    60.12s  user  발화 끝
-    60.39s  ⚡SPAN 주입 [d'=1.07s / d_lead=7.46s]: A study by the University of California, Berkeley, found that individu
-    67.41s  agent 발화 끝
-    67.41s  user  발화 시작: So… just find new friends? Easier said than done.
-    70.97s  user  발화 끝
-    71.37s  agent 발화 시작: [sigh] You’re right, it isn’t easy. But it’s okay to gently 
-    80.41s  agent 발화 끝
+     0.00s  user  발화 시작: I’m starting a new job next week, and I’m feeling really ove
+     1.69s  agent 발화 시작: Right.
+     2.59s  agent 발화 끝
+     4.06s  agent 발화 시작: [happy] It’s completely normal to feel that way, starting so
+     4.07s  user  발화 끝
+     8.89s  user  발화 시작: Okay.
+     9.47s  user  발화 끝
+    13.61s  agent 발화 끝
+    13.89s  user  발화 시작: Just…everything. I’m worried I won’t be good enough, or that
+    19.12s  user  발화 끝
+    19.53s  agent 발화 시작: Those are common worries, absolutely. Remember, everyone sta
+    24.89s  user  발화 시작: Mm-hmm.
+    25.29s  user  발화 끝
+    27.10s  user  발화 시작: But what if I ask silly questions? Or if I don’t understand 
+    27.27s  agent 발화 끝
+    30.98s  <ret> 발화 (turn8 첫 프레임)
+    31.40s  user  발화 끝
+    31.53s  agent 발화 시작: <ret> Oh, asking questions is *excellent*! It shows you’re e
+    31.58s  ⚡SPAN 주입 [d'=0.60s / d_lead=18.69s]: A new employee should feel comfortable asking questions, as it demonst
+    41.02s  user  발화 시작: Right.
+    41.47s  user  발화 끝
+    50.23s  agent 발화 끝
+    51.92s  user  발화 시작: That’s…reassuring, actually. I keep thinking about the histo
+    59.88s  <ret> 발화 (turn11 첫 프레임)
+    60.12s  agent 발화 시작: <ret> For context, the first wave of western settlement bega
+    60.23s  user  발화 끝
+    60.95s  ⚡SPAN 주입 [d'=1.07s / d_lead=14.46s]: The first wave of western settlement began in the early 15th century, 
+    68.61s  user  발화 시작: Right.
+    69.20s  user  발화 끝
+    74.59s  agent 발화 끝
+    75.11s  user  발화 시작: The 15th century? Wow. That’s a long time ago. So it's alway
+    82.56s  user  발화 끝
+    83.04s  agent 발화 시작: [sigh] I imagine it’s always had its challenges, yes. Though
+    92.46s  user  발화 시작: You're right. Maybe it's just part of the human experience. 
+    92.63s  agent 발화 끝
+    97.41s  user  발화 끝
+    97.46s  agent 발화 시작: [happy] You’re very welcome! Remember, I’m here to help you 
+   107.04s  agent 발화 끝

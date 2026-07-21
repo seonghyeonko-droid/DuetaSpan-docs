@@ -4,56 +4,58 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Jordan",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "60s",
+#     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-06-26",
+#       "category": "schedule",
+#       "text": "User has a hybrid 3-days-in-office week."
 #     },
 #     {
-#       "date": "2026-04-23",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-06-24",
+#       "category": "music",
+#       "text": "User likes listening to city pop."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 26°C."
+#       "date": "2026-06-11",
+#       "category": "home",
+#       "text": "User's home address is 867 Juniper Lane."
+#     },
+#     {
+#       "date": "2026-05-18",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is margherita pizza."
 #     },
 #     {
 #       "date": "2026-03-03",
-#       "category": "employer",
-#       "text": "User works at a school district."
+#       "category": "partner",
+#       "text": "User's partner is named Yuna."
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is a flat white."
+#       "date": "2026-02-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Jisoo."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-04",
-#       "title": "Planning a wedding",
-#       "bullets": [
-#         "guest list around 80 people",
-#         "comparing two venues for next May"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-25",
+#       "date": "2026-05-28",
 #       "title": "Renovating the bathroom",
 #       "bullets": [
 #         "budget of 6M won",
@@ -61,35 +63,77 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "title": "Comparing health insurance",
+#       "date": "2026-05-11",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-05",
+#       "title": "Learning to invest",
+#       "bullets": [
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-11",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Men… that’s an unusual name. Is th | S2 It’s a senior leadership position, | S3 …but how do I even *begin* to prio | S4 Okay, that sounds… less terrifying
+# EXAMINER(FDB-v2) 단계: S1 A wellness coach? That sounds…inte | S2 Okay, small changes. Like… what’s  | S3 Like what? I don't have time for a | S4 Both, honestly. My mind just races
 
-     0.00s  agent 발화 시작: Hello Jordan, I’m Men, your wellness coach.
-     1.31s  user  발화 시작: Yeah.
-     1.81s  user  발화 끝
-     2.91s  agent 발화 끝
-     3.58s  user  발화 시작: Men… that’s an unusual name. Is that… Korean? I’m just start
-     9.74s  agent 발화 시작: [curious] It is! My parents wanted a name meaning “to strive
-     9.84s  user  발화 끝
-    17.62s  agent 발화 끝
-    17.93s  user  발화 시작: It’s a senior leadership position, a big change from what I'
-    23.91s  agent 발화 시작: It’s perfectly normal to feel that way when taking on new re
-    23.95s  user  발화 끝
-    31.21s  user  발화 시작: …but how do I even *begin* to prioritize everything? There’s
-    31.80s  agent 발화 끝
-    36.02s  user  발화 끝
-    36.04s  agent 발화 시작: [happy] That’s a fantastic question, Jordan. Let’s focus on 
-    39.95s  user  발화 시작: Yeah.
-    40.44s  user  발화 끝
-    45.49s  agent 발화 끝
-    45.54s  user  발화 시작: Okay, that sounds… less terrifying. What’s the first thing I
-    51.23s  user  발화 끝
+     0.00s  agent 발화 시작: Hello Quinn, I’m Saia, your wellness coach.
+     1.62s  user  발화 시작: Right.
+     2.06s  user  발화 끝
+     2.58s  agent 발화 끝
+     2.93s  user  발화 시작: A wellness coach? That sounds…intense. I just feel really sc
+     8.28s  user  발화 끝
+     8.55s  agent 발화 시작: It can feel that way! Scattered energy often means we’re try
+    16.75s  agent 발화 끝
+    17.49s  user  발화 시작: Easier said than done, right? I’m juggling work, friends, tr
+    23.32s  user  발화 끝
+    23.55s  agent 발화 시작: [happy] It absolutely is a lot, and acknowledging that is th
+    26.62s  user  발화 시작: Okay.
+    27.20s  user  발화 끝
+    31.87s  agent 발화 끝
+    32.14s  user  발화 시작: Okay, small changes. Like… what’s the *smallest* change I co
+    36.84s  agent 발화 시작: Perhaps a mindful minute each morning? Just one minute of fo
+    36.84s  user  발화 끝
+    39.46s  user  발화 시작: Mm-hmm.
+    39.90s  user  발화 끝
+    43.72s  agent 발화 끝
+    45.24s  user  발화 시작: A minute? That sounds… doable. I always skip breakfast thoug
+    47.72s  agent 발화 시작: Right.
+    48.03s  agent 발화 끝
+    50.24s  agent 발화 시작: Skipping breakfast can disrupt your energy levels. It's not 
+    50.31s  user  발화 끝
+    59.15s  user  발화 시작: Like what? I don't have time for a big cook-up.
+    59.21s  agent 발화 끝
+    61.10s  agent 발화 시작: Mm-hmm.
+    61.59s  agent 발화 끝
+    62.55s  user  발화 끝
+    62.59s  agent 발화 시작: When we talk about quick breakfasts… When we talk about quic
+    82.08s  agent 발화 끝
+    82.14s  user  발화 시작: Oatmeal… hmm. Okay, that actually sounds okay. What about sl
+    89.54s  agent 발화 시작: [sigh] Sleep is foundational. Are you finding it hard to fal
+    89.55s  user  발화 끝
+    93.33s  user  발화 시작: Yeah.
+    93.77s  user  발화 끝
+    95.23s  agent 발화 끝
+    95.39s  user  발화 시작: Both, honestly. My mind just races.
+    97.92s  user  발화 끝
+    98.30s  agent 발화 시작: Racing thoughts are common. We can explore some relaxation t
+   106.38s  user  발화 시작: Progressive muscle relaxation? What’s that?
+   106.47s  agent 발화 끝
+   109.49s  user  발화 끝
+   109.83s  agent 발화 시작: It involves tensing and releasing different muscle groups to
+   119.17s  agent 발화 끝

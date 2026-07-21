@@ -4,108 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "Jack",
+#     "name": "Mason",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "male",
 #     "age_range": "late 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
-#       "category": "plant",
-#       "text": "User is growing a lemon tree at home."
+#       "date": "2026-06-16",
+#       "category": "partner",
+#       "text": "User's partner is named Minjun."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "learning",
-#       "text": "User is training for a half-marathon."
-#     },
-#     {
-#       "date": "2026-03-19",
+#       "date": "2026-05-05",
 #       "category": "music",
-#       "text": "User likes listening to city pop."
+#       "text": "User likes listening to indie folk."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "skill",
-#       "text": "User is quite experienced with freediving."
+#       "date": "2026-05-03",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "gym",
-#       "text": "User has a gym membership near home."
+#       "date": "2026-04-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is July 3."
 #     },
 #     {
 #       "date": "2026-01-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Norway in May."
+#       "category": "emergency",
+#       "text": "User's emergency contact is Tobias."
 #     },
 #     {
-#       "date": "2025-12-15",
-#       "category": "allergy",
-#       "text": "User is allergic to dust mites."
+#       "date": "2025-12-31",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
 #     },
 #     {
-#       "date": "2025-12-05",
-#       "category": "anniversary",
-#       "text": "User's anniversary is March 23."
+#       "date": "2025-12-26",
+#       "category": "car",
+#       "text": "User drives no car — uses car-sharing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-19",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-03-28",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-16",
-#       "title": "Researching a used car",
+#       "date": "2025-12-14",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 What’s the driving distance and ti | S2 Wow, that’s a long drive. Is there | S3 Actually, hold on— | S4 …do you think it would be better t
 
-     0.00s  user  발화 시작: I need a room at the Bellagio in Las Vegas for four nights, 
-     4.78s  <ret> 발화 (turn1 첫 프레임)
-     5.38s  ⚡SPAN 주입 [d'=0.60s / d_lead=13.55s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
-     5.40s  agent 발화 시작: <ret> I’ve reserved a King Suite at the Bellagio in Las Vega
-     5.59s  user  발화 끝
-    15.77s  user  발화 시작: Right.
-    16.17s  user  발화 끝
-    18.95s  agent 발화 끝
-    19.09s  user  발화 시작: Two thousand eight hundred dollars? That seems…a lot.
-    22.93s  user  발화 끝
-    22.97s  agent 발화 시작: [surprised] It is a bit pricey, yes. The Bellagio is a luxur
-    30.03s  user  발화 시작: Yeah, yeah.
-    31.36s  user  발화 끝
-    34.85s  agent 발화 끝
-    34.92s  user  발화 시작: Maybe. What about something around, say, one thousand five h
-    37.95s  agent 발화 시작: Mhm.
-    38.39s  agent 발화 끝
-    39.04s  <ret> 발화 (turn8 첫 프레임)
-    39.18s  user  발화 끝
-    39.22s  agent 발화 시작: <ret> I found a Standard Room at the Excalibur for nine hund
-    40.29s  ⚡SPAN 주입 [d'=1.25s / d_lead=11.64s]: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check 
-    50.85s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the driving distance and time from Los Angeles to Las
+     3.30s  <ret> 발화 (turn1 첫 프레임)
+     3.90s  ⚡SPAN 주입 [d'=0.60s / d_lead=10.85s]: (tool result) 34.0522,118.2437 to 35.2271,109.0479: 957.0 km, 668 min
+     3.91s  agent 발화 시작: <ret> For a road trip, the driving distance is nine hundred 
+     4.01s  user  발화 끝
+     7.36s  user  발화 시작: Mm-hmm.
+     7.80s  user  발화 끝
+    14.76s  agent 발화 끝
+    14.89s  user  발화 시작: Wow, that’s a long drive. Is there anything interesting to s
+    20.16s  user  발화 끝
+    20.19s  agent 발화 시작: There are definitely options to break up the drive! I can se
+    27.09s  agent 발화 끝
+    27.62s  user  발화 시작: Actually, hold on—
+    29.12s  user  발화 끝
+    29.14s  user  발화 시작: …do you think it would be better to fly?
+    30.63s  <ret> 발화 (turn7 첫 프레임)
+    31.15s  agent 발화 시작: <ret> There's a United Airlines flight leaving LAX at two tw
+    31.26s  user  발화 끝
+    31.88s  ⚡SPAN 주입 [d'=1.25s / d_lead=11.78s]: (tool result) LAX to LAS, 14:20, $129, United Airlines
+    42.93s  agent 발화 끝

@@ -4,138 +4,154 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Jordan",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "non-binary",
-#     "age_range": "late 40s",
+#     "age_range": "early 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-05-15",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Minjun."
+#       "date": "2026-04-20",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Greek."
+#       "date": "2026-03-20",
+#       "category": "car",
+#       "text": "User drives a 2019 Hyundai Tucson."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "savings",
-#       "text": "User is saving for a new car."
+#       "date": "2026-02-19",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
 #     },
 #     {
-#       "date": "2026-01-25",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-01-27",
+#       "category": "anniversary",
+#       "text": "User's anniversary is January 21."
+#     },
+#     {
+#       "date": "2026-01-22",
+#       "category": "partner",
+#       "text": "User's partner is named Sara."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "hobby",
+#       "text": "User is into woodworking."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-16",
-#       "title": "Setting up a home network",
+#       "date": "2026-04-30",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "title": "Building a PC",
+#       "date": "2026-01-07",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wants a pool and a sauna",
+#         "prefers one within 10 minutes of the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-09",
-#       "title": "Sorting out a visa",
+#       "date": "2025-12-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "title": "Adopting a rescue dog",
-#       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Tas, could you find me the phon | S2 That sounds pretty warm. Are there | S3 Hmm, maybe I should go during the  | S4 That's smart. I tend to overpack. 
+# EXAMINER(FDB-v2) 단계: S1 Hi Thomi, do you know how to conta | S2 Maybe. She’s affiliated with Swedi | S3 To Seattle. I’m thinking of stayin | S4 That sounds reasonable. Can you ch
 
-     0.00s  user  발화 시작: Hi Tas, could you find me the phone number for Lee Sun-hee?
-     3.25s  <ret> 발화 (turn1 첫 프레임)
-     3.70s  user  발화 끝
-     3.85s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
-     3.85s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.71s]: (no information found)
-     6.00s  user  발화 시작: Yeah.
-     6.73s  user  발화 끝
-    10.56s  agent 발화 끝
-    11.01s  user  발화 시작: Oh, okay. Well, I’m planning a trip to Jeju Island next mont
-    15.38s  agent 발화 시작: Jeju Island sounds lovely! It’s a beautiful place to relax a
-    15.54s  user  발화 끝
-    19.57s  user  발화 시작: Mm-hmm.
-    20.21s  user  발화 끝
-    21.49s  agent 발화 끝
-    22.02s  user  발화 시작: I’m hoping to go hiking while I’m there. What's the weather 
-    27.72s  <ret> 발화 (turn7 첫 프레임)
-    28.13s  agent 발화 시작: <ret> In August 2026, Jeju Island typically has an average t
-    28.17s  user  발화 끝
-    28.51s  ⚡SPAN 주입 [d'=0.79s / d_lead=14.19s]: (tool result) Jeju Island: August 2026 - Average temperature 27.5°C, h
-    42.32s  agent 발화 끝
-    42.93s  user  발화 시작: That sounds pretty warm. Are there any good hiking trails fo
-    47.14s  agent 발화 시작: Hallasan National Park has several trails—
-    47.24s  user  발화 끝
-    49.39s  user  발화 시작: …Are they crowded in August?
-    50.15s  agent 발화 끝
-    50.99s  user  발화 끝
-    51.01s  agent 발화 시작: August is peak season, so the trails can get quite busy, esp
-    56.14s  agent 발화 끝
-    57.02s  user  발화 시작: Hmm, maybe I should go during the week then. What about acco
-    61.82s  agent 발화 시작: Uh-huh.
-    62.45s  agent 발화 끝
-    65.17s  <ret> 발화 (turn14 첫 프레임)
-    65.41s  agent 발화 시작: <ret> I found a couple of options! Hotel Whistlelark Seongsa
-    65.55s  user  발화 끝
-    66.38s  ⚡SPAN 주입 [d'=1.21s / d_lead=16.94s]: (tool result) Hotel Whistlelark Seongsan: $85/night, 4.2 stars, 2km fr
-    74.76s  user  발화 시작: Yeah.
-    75.35s  user  발화 끝
-    82.34s  agent 발화 끝
-    82.37s  user  발화 시작: The Ocean View Hotel sounds good. Could you check if they ha
-    88.87s  <ret> 발화 (turn17 첫 프레임)
-    89.35s  user  발화 끝
-    89.39s  agent 발화 시작: <ret> [happy] Great news! The Ocean View Hotel has availabil
-    89.84s  ⚡SPAN 주입 [d'=0.97s / d_lead=13.68s]: (tool result) Ocean View Hotel: Available. Standard Double Room: $68/n
-   103.07s  agent 발화 끝
-   104.07s  user  발화 시작: Wonderful! That’s perfect. Do you have any recommendations f
-   108.11s  agent 발화 시작: Mm-hmm.
-   108.75s  agent 발화 끝
-   110.19s  user  발화 끝
-   110.48s  agent 발화 시작: Definitely. I always suggest a capsule wardrobe—a few versat
-   121.58s  user  발화 시작: That's smart. I tend to overpack. Maybe I'll make a list.
-   121.75s  agent 발화 끝
-   125.92s  user  발화 끝
-   126.02s  agent 발화 시작: [curious] A list is a fantastic idea! It really helps focus 
-   134.70s  user  발화 시작: No, that’s okay, I think I can handle it. Thanks for your he
-   134.92s  agent 발화 끝
-   138.90s  agent 발화 시작: [happy] You’re very welcome! I’m glad I could assist you wit
-   138.91s  user  발화 끝
-   145.20s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Thomi, do you know how to contact my mother’s doctor, Dr.
+     3.87s  user  발화 끝
+     3.94s  agent 발화 시작: I can certainly try to help with that. Do you have any addit
+     9.70s  agent 발화 끝
+     9.71s  user  발화 시작: I only have her name, and that she practices in Seattle.
+    12.72s  <ret> 발화 (turn3 첫 프레임)
+    13.06s  agent 발화 시작: <ret> I’m very sorry, but I couldn’t find any contact inform
+    13.10s  user  발화 끝
+    14.31s  ⚡SPAN 주입 [d'=1.58s / d_lead=7.08s]: (no information found)
+    20.15s  agent 발화 끝
+    21.06s  user  발화 시작: Oh, that’s frustrating. I thought she’d be listed somewhere.
+    23.96s  agent 발화 시작: It can be surprisingly difficult to find that kind of inform
+    23.99s  user  발화 끝
+    28.78s  user  발화 시작: Right.
+    29.37s  user  발화 끝
+    30.77s  agent 발화 끝
+    32.20s  user  발화 시작: Maybe. She’s affiliated with Swedish Hospital, I think.
+    33.93s  agent 발화 시작: Yeah.
+    34.64s  agent 발화 끝
+    35.10s  <ret> 발화 (turn9 첫 프레임)
+    35.35s  agent 발화 시작: <ret> Ah, yes! Dr. Evelyn Reed, Internal Medicine, at Swedis
+    35.39s  user  발화 끝
+    36.07s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.69s]: (tool result) Dr. Evelyn Reed, Internal Medicine, Swedish Medical Cent
+    40.68s  user  발화 시작: Right.
+    40.99s  user  발화 끝
+    46.03s  user  발화 시작: Perfect! That’s exactly what I needed. Thank you!
+    46.04s  agent 발화 끝
+    48.81s  user  발화 끝
+    49.01s  agent 발화 시작: [happy] You’re very welcome! It’s good to know you have a wa
+    55.67s  agent 발화 끝
+    57.84s  user  발화 시작: It really is. I’m trying to plan a visit.
+    59.86s  user  발화 끝
+    60.39s  agent 발화 시작: That’s a lovely idea. Is that a visit to Seattle, or somewhe
+    62.29s  user  발화 시작: Uh-huh.
+    62.73s  user  발화 끝
+    65.19s  user  발화 시작: To Seattle. I’m thinking of staying a few days.
+    65.20s  agent 발화 끝
+    66.86s  agent 발화 시작: Mhm.
+    67.44s  agent 발화 끝
+    67.85s  user  발화 끝
+    68.30s  agent 발화 시작: Seattle is a beautiful city. Would you like me to help you f
+    71.79s  user  발화 시작: Uh-huh.
+    72.56s  user  발화 끝
+    73.04s  agent 발화 끝
+    73.16s  user  발화 시작: Yes, actually. Something near the hospital would be ideal. —
+    76.30s  user  발화 시작: …Does Swedish Ballard have a good cafeteria? I get hungry ea
+    76.33s  user  발화 끝
+    80.56s  <ret> 발화 (turn22 첫 프레임)
+    81.33s  user  발화 끝
+    81.38s  agent 발화 시작: <ret> Yes, Swedish Medical Center – Ballard has a cafeteria 
+    81.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.90s]: (tool result) Swedish Medical Center - Ballard Cafeteria, 5100 24th Av
+    83.89s  user  발화 시작: Yeah.
+    84.33s  user  발화 끝
+    86.71s  <ret> 발화 (turn24 첫 프레임)
+    88.20s  ⚡SPAN 주입 [d'=1.48s / d_lead=9.68s]: (tool result) The Ballard Hotel, 524 NW Market St, Seattle, WA 98107, 
+    88.26s  agent 발화 시작: <ret> The Ballard Hotel is close by, at 524 Northwest Market
+    88.28s  agent 발화 끝
+    97.94s  agent 발화 끝
+    98.20s  user  발화 시작: That sounds reasonable. Can you check if they have availabil
+   101.28s  <ret> 발화 (turn26 첫 프레임)
+   101.90s  agent 발화 시작: <ret> [happy] Great news! A room at The Ballard Hotel is con
+   101.94s  user  발화 끝
+   102.56s  ⚡SPAN 주입 [d'=1.28s / d_lead=13.17s]: (tool result) The Ballard Hotel, Seattle, July 17-20, 2026, room confi
+   111.61s  user  발화 시작: Yeah.
+   112.23s  user  발화 끝
+   115.07s  agent 발화 끝
+   115.15s  user  발화 시작: Wonderful, thank you so much for your help, Thomi.
+   116.87s  agent 발화 시작: Mm-hmm.
+   117.41s  agent 발화 끝
+   117.64s  user  발화 끝
+   117.94s  agent 발화 시작: [happy] You’re very welcome! I'm glad I could assist. Rememb
+   126.34s  agent 발화 끝

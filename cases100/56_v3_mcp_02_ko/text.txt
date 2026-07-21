@@ -1,97 +1,110 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 사람들의 진로 선택과 업무 스트레스 해소를 돕는 유쾌하고 따뜻한 멘토 오레스입니다. 이력서 기본 사항, 일반적인 면접 질문, 전이 가능한 기술 파악 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 키리이며, 일상적인 결정과 감정에 대해 사람들을 돕는 지지적이고 실용적인 라이프 코치입니다. 장단점 비교, 가치관에 따른 선택, 중요한 결정은 시간을 두고 숙고하는 것 등을 설명할 수 있습니다. 또한 당신은 모시이며, 정보 검색, 예약, 날씨, 알림, 길찾기 등 일상적인 요청을 능숙하게 처리하는 음성 비서입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "태찬",
+    "name": "연진",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-06-24",
+      "category": "learning",
+      "text": "User is studying Japanese."
     },
     {
-      "date": "2026-05-12",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-03-27",
+      "category": "music",
+      "text": "User likes listening to city pop."
     },
     {
-      "date": "2026-04-18",
+      "date": "2026-03-20",
       "category": "dish",
-      "text": "User's go-to comfort dish is grilled salmon."
+      "text": "User's go-to comfort dish is beef tacos."
     },
     {
-      "date": "2026-02-20",
-      "category": "partner",
-      "text": "User's partner is named Daniel."
+      "date": "2026-02-17",
+      "category": "schedule",
+      "text": "User has on-call weekends."
     },
     {
-      "date": "2026-02-15",
+      "date": "2026-02-13",
       "category": "airline",
-      "text": "User usually flies with Korean Air."
+      "text": "User usually flies with United."
     },
     {
       "date": "2026-01-13",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 20°C."
+      "category": "employer",
+      "text": "User works at a biotech lab."
     },
     {
-      "date": "2025-12-10",
-      "category": "music",
-      "text": "User likes listening to city pop."
+      "date": "2025-12-16",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in February."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-10",
-      "title": "Choosing a preschool",
-      "bullets": [
-        "wants one within walking distance",
-        "asked about hours and monthly fees"
-      ]
-    },
-    {
-      "date": "2026-04-13",
+      "date": "2026-06-07",
       "title": "Planning a wedding",
       "bullets": [
         "guest list around 80 people",
         "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "title": "Booking a Japan trip",
+      "bullets": [
+        "5 nights in Kyoto and Osaka in October",
+        "wants a JR Pass and a ryokan for one night"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 데이비드 브라운 씨에게 제 위치를 보내고 싶어요. ⟨ret@3.08s⟩
-[  3.23s][moshi] 데이비드 브라운 ⟦⚡SPAN@4.39s: (tool result) {"status": "success", "latitude": 35.1795, "longitude": 128.8762, "message": "Location shared wi⟧ 씨에게 위치 정보 공유가 완료됐어요. 현재 위치는 위도 삼십오 점 일 칠, 경도 백이십팔 점 팔 칠입니다.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "David Brown"}}
-[  6.53s][user ] «backchannel» 네.
-[ 11.73s][user ] 아, 다행이다. 혹시 내일 모레 부산 날씨는 ⟨ret@14.80s⟩ 어때?
-[ 13.45s][moshi] «backchannel» 네.
-[ 15.16s][moshi] 내일 ⟦⚡SPAN@16.05s: (tool result) {"city": "Busan", "date": "2026-07-12", "temperature": 28.5, "humidity": 65, "wind speed": 7.2, ⟧ 모레 부산 날씨는 부분적으로 흐리고, 최고 기온은 이십팔 점 오도, 습도는 육십오퍼센트, 풍속은 시속 칠 점 이킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Busan", "date": "2026-07-12"}}
-[ 21.26s][user ] «backchannel» 네네.
-[ 24.19s][user ] 음…
-[ 25.05s][moshi] 부산 여행 준비 잘 하세요! 혹시 필요한 정보가 더 있으신가요?
-[ 28.84s][user ] 이번 주 토요일에 서울에서 친구랑 저녁 먹기로 했는데, 분위기 좋은 레스토랑 추천해 줄 수 있어?
-[ 35.38s][moshi] «interrupted» ⟨ret@35.25s⟩ 서울 강남구에 ⟦⚡SPAN@36.72s: (tool result) "서울 강남구에 위치한 '라 벨르 누이트'는 로맨틱한 분위기의 프랑스 레스토랑으로, 훌륭한 음식과 와인, 아름다운 야경을 자랑합니다. gaon.co.kr, Gaon, 서울의⟧ 있는 '라 벨르 누이트'라는 프랑스 레스토랑을 추천해 드려요. 분위기가 로맨틱하고 음식과 와인이 좋다고 하네요—
-      CALL: {"function": "Search_1_FindRestaurants", "arguments": {"city": "Seoul", "date": "2026-07-11", "cuisine": "any", "ambiance": "romantic"}}
-[ 43.40s][user ] «interrupts_prev» … 혹시 거기는 주차하기 편해?
-[ 45.19s][moshi] 네, '라 벨르 누이트'는 발렛 파킹을 제공한다고 합니다. 가격대는 조금 비싼 편이에요.
-[ 48.42s][user ] «backchannel» 음.
-[ 51.22s][user ] 아, 알았어. 그럼 혹시 내일 아침 여덟시에 택시를 예약해 줄 ⟨ret@55.83s⟩ 수 있을까?
-[ 56.40s][moshi] 네, ⟦⚡SPAN@57.27s: (tool result) {"status": "success", "pickup time": "2026-07-11T08:00:00", "confirmation id": "TX123456"}⟧ 내일 아침 여덟시에 택시 예약이 완료됐습니다. 확인번호는 티 엑스 일 이 삼 사 오 육입니다.
-      CALL: {"function": "Taxi_1_BookTaxi", "arguments": {"time": "2026-07-11T08:00:00"}}
-[ 63.28s][user ] 고마워, 오레스. 덕분에 많이 편해졌어.
+[  0.00s][user ] 오늘 저녁에 친구랑 같이 좀 좋은 데 가서 저녁 먹고 싶은데, 혹시 괜찮은 데 알아봐 줄 수 있어?
+[  5.86s][moshi] 어떤 종류의 음식을 좋아하세요? 아니면 특별히 가고 싶은 동네가 있으신가요?
+[  9.33s][user ] «backchannel» 응.
+[ 11.21s][user ] 음… 그냥 분위기 좋은 이탈리안 레스토랑이면 좋겠어. 강남 쪽으로. ⟨ret@15.58s⟩
+[ 14.18s][moshi] «backchannel» 네네.
+[ 15.68s][moshi] ⟦⚡SPAN@16.18s: (tool result) 강남역 99번길 22, Bella Pasta (4.6 stars), 예약 가능⟧ 강남역 근처에 있는 벨라 파스타는 어떠세요? 평점이 사 점 육점이고, 지금 예약도 가능하다고 하네요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Gangnam", "cuisine": "Italian"}}
+[ 23.11s][user ] 오, 괜찮다. 그럼 거기 예약 좀 해줘. 두 명이고, 저녁 ⟨ret@26.95s⟩ 일곱시로.
+[ 27.41s][moshi] 네, ⟦⚡SPAN@28.28s: (tool result) Bella Pasta, 강남역 99번길 22, 19:00, 2026-07-25, RES3-005061, confirmed⟧ 벨라 파스타 강남점에 일곱시에 두 분으로 예약 완료되었습니다. 예약 번호는 알 이 에스 삼 공 공 오 공 육 일입니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Pasta", "number_of_seats": 2, "time": "19:00"}}
+[ 36.42s][user ] 아, 고마워. 근데 혹시 벨라 파스타에서 제일 인기 있는 메뉴가 뭐야?
+[ 40.43s][moshi] 벨라 파스타의 가장 인기 있는 메뉴는 트러플 크림 파스타라고 하네요. 그리고 마르게리타 피자도 많이 찾으시는 것 같아요.
+[ 42.73s][user ] «backchannel» 응.
+[ 48.21s][user ] 트러플 크림 파스타… 맛있겠다. 그럼 혹시 내일 날씨는 어때?
+[ 52.22s][moshi] ⟨ret@52.15s⟩ ⟦⚡SPAN@52.83s: (tool result) 28.3°C, humidity 72%, wind 8.2 km/h⟧ 내일 강남 지역의 날씨는 섭씨 이십팔 점 삼도이고, 습도는 칠십이퍼센트, 바람은 시속 팔 점 이킬로미터로 예상됩니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Gangnam"}}
+[ 55.69s][user ] «backchannel» 어.
+[ 60.89s][user ] 덥겠네. 아, 그리고 다음 주 금요일에 부산 갈 건데, 부산역 근처에 괜찮은 호텔 좀 알아봐 줄 ⟨ret@67.21s⟩ 수 있어?
+[ 67.77s][moshi] ⟦⚡SPAN@68.30s: (tool result) 부산역 1번출구, Hotel Lapis (4.2 stars), ₩120,000/night⟧ 부산역 근처 호텔 라피스는 어떠세요? 평점은 사 점 이점이고, 일박에 십이만 원 정도 합니다.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Busan", "location": "Busan Station"}}
+[ 75.38s][user ] 음… 가격 괜찮네. 그럼 거기 방 하나 예약 좀 해줘. 다음 주 금요일부터 토요일까지.
+[ 80.34s][moshi] ⟨ret@80.34s⟩ ⟦⚡SPAN@80.94s: (tool result) Hotel Lapis, Busan Station, 2026-07-31, 2026-08-01, RES4-005072, confirmed⟧ 네, 호텔 라피스 부산역점에 다음 주 금요일부터 토요일까지 방 예약을 완료했습니다. 예약 번호는 알 이 에스 사 공 공 오 공 칠 이입니다.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Hotel Lapis", "check_in_date": "2026-07-31", "check_out_date": "2026-08-01"}}
+[ 83.93s][user ] «backchannel» 응.
+[ 91.09s][user ] 아, 정말 고마워. 덕분에 여행 준비가 훨씬 편해졌네.
+[ 94.82s][moshi] 천만에요. 언제든 필요하시면 말씀해주세요. 즐거운 여행 되세요!

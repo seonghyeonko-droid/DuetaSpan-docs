@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "서민",
+#     "name": "유슬",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,45 +12,66 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 40s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
+#       "date": "2026-04-17",
+#       "category": "medication",
+#       "text": "User takes antihistamines in spring."
+#     },
+#     {
+#       "date": "2026-02-22",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O+."
+#     },
+#     {
+#       "date": "2026-02-16",
+#       "category": "dislike",
+#       "text": "User can't stand liver."
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "category": "employer",
+#       "text": "User works at a fintech startup."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
+#     },
+#     {
+#       "date": "2025-12-09",
 #       "category": "allergy",
-#       "text": "User is allergic to bee stings."
+#       "text": "User is allergic to tree nuts."
 #     },
 #     {
-#       "date": "2026-06-05",
-#       "category": "airline",
-#       "text": "User usually flies with Air France."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
-#     },
-#     {
-#       "date": "2026-02-12",
-#       "category": "hobby",
-#       "text": "User is into board-game design."
-#     },
-#     {
-#       "date": "2026-02-03",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Noah."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-12-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
+#       "date": "2026-06-11",
+#       "title": "Renovating the bathroom",
+#       "bullets": [
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-06",
 #       "title": "Meal-prep planning",
 #       "bullets": [
 #         "wants high-protein lunches under 600 calories",
@@ -58,59 +79,36 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-31",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-01-08",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-01",
-#       "title": "Studying for the TOEIC",
-#       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 스페인 식민지였던 나라들의 국기에 공통적으로 들어가는 색깔이  | S2 아, 그렇구나. | S3 아르헨티나 국기는 파란색과 흰색이잖아. | S4 그렇군요.
 
-     0.00s  user  발화 시작: 스페인 식민지였던 나라들의 국기에 공통적으로 들어가는 색깔이 있을까?
-     2.84s  agent 발화 시작: 네.
-     3.29s  agent 발화 끝
-     4.86s  user  발화 끝
-     5.03s  agent 발화 시작: 음, 그건 제가 지금 바로 알 수 있는 정보는 아니네요. [sigh] 스페인의 옛 식민지들의 국기를 찾아봐야
-     8.75s  user  발화 시작: 응.
-     9.10s  user  발화 끝
-    12.26s  agent 발화 끝
-    12.53s  user  발화 시작: 아, 그렇구나.
-    13.35s  user  발화 끝
-    13.49s  agent 발화 시작: 좀 더 자세히 알아볼까요? 혹시 특별히 관심 있는 나라가 있으세요?
-    16.05s  user  발화 시작: 어.
-    16.68s  user  발화 끝
-    17.60s  agent 발화 시작: 스페인 식민지였던 나라들은 정말 다양하죠. 필리핀, 멕시코, 아르헨티나… [happy] 다들 아름다운 국기를
-    17.79s  agent 발화 끝
-    24.98s  user  발화 시작: 아르헨티나 국기는 파란색과 흰색이잖아.
-    25.25s  agent 발화 끝
-    27.24s  <ret> 발화 (turn9 첫 프레임)
-    27.56s  user  발화 끝
-    27.63s  agent 발화 시작: <ret> 맞아요. 아르헨티나 국기는 하늘색과 흰색 줄무늬로 이루어져 있죠. 하지만 다른 나라들은 다를 수도
-    28.51s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.35s]: The flags of many former Spanish colonies incorporate the colors red, 
-    33.93s  agent 발화 시작: 많은 스페인 옛 식민지들의 국기에는 빨간색, 금색, 파란색이 들어가는데, 스페인 자체의 역사적 색상과 제국의
-    33.98s  agent 발화 끝
-    43.12s  agent 발화 끝
-    44.30s  user  발화 시작: 그렇군요.
-    44.91s  agent 발화 시작: 혹시 다른 궁금한 점이 있으세요? 아니면 다른 나라의 국기에 대해 더 알아볼까요?
-    44.97s  user  발화 끝
-    49.48s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 빈 씨. 요즘 좀 의욕이 안 나요.
+     2.85s  user  발화 끝
+     3.30s  agent 발화 시작: 안녕하세요! 의욕이 없으시다니, 마음이 편치 않으시겠어요. 제가 빈이라고 해요.
+     4.06s  agent 발화 끝
+     4.19s  user  발화 시작: 네, 그렇죠. 뭘 해야 할지 모르겠어요.
+     6.32s  <ret> 발화 (turn3 첫 프레임)
+     6.75s  user  발화 끝
+     6.83s  agent 발화 시작: <ret> 뭘 해야 할지 모르는 건 흔한 일이에요. 작은 것부터 시작해보는 건 어떨까요?
+     8.26s  ⚡SPAN 주입 [d'=1.93s / d_lead=5.46s]: Motivation is the physiological or psychological process that gives pu
+    12.29s  agent 발화 끝
+    12.44s  agent 발화 시작: 동기 부여는 행동의 목적을 부여하는 생리적 또는 심리적 과정이라고 해요. [happy] 작은 성공 경험을 쌓
+    16.22s  user  발화 시작: 음.
+    16.48s  user  발화 끝
+    20.59s  agent 발화 끝
+    20.76s  agent 발화 시작: 혹시 최근에 즐거웠던 일이나 성취감을 느꼈던 일이 있으세요?
+    22.88s  user  발화 시작: 네.
+    23.47s  user  발화 끝
+    24.59s  user  발화 시작: 음… 딱히 떠오르는 건 없네요.
+    24.83s  agent 발화 끝
+    27.67s  user  발화 끝
+    27.85s  agent 발화 시작: 괜찮아요. 지금부터라도 찾아보면 된답니다.
+    31.78s  agent 발화 끝
