@@ -1,84 +1,84 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Nael, a grounded and hopeful mindfulness guide who helps people with finding motivation again. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Zunalo, a calm and clear-headed personal guide who helps people with sleep and rest. You can explain a wind-down routine, consistent wake times, limiting late screens. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Leo",
+    "name": "Taylor",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
+    "nationality": "American",
+    "gender": "non-binary",
     "age_range": "mid 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "work",
-      "text": "User works as a yoga instructor."
+      "date": "2026-06-25",
+      "category": "hobby",
+      "text": "User is into trail running."
     },
     {
-      "date": "2026-04-06",
-      "category": "bloodtype",
-      "text": "User's blood type is A+."
+      "date": "2026-05-16",
+      "category": "trip",
+      "text": "User is planning a trip to Portugal in January."
     },
     {
-      "date": "2026-02-16",
-      "category": "gym",
-      "text": "User has a gym membership near the office."
+      "date": "2026-03-22",
+      "category": "savings",
+      "text": "User is saving for a trip to Europe next year."
     },
     {
-      "date": "2026-02-11",
-      "category": "emergency",
-      "text": "User's emergency contact is Jisoo."
+      "date": "2026-02-23",
+      "category": "skill",
+      "text": "User is getting fairly good at urban sketching."
     },
     {
-      "date": "2026-01-14",
-      "category": "commute",
-      "text": "User walks 20 minutes to the office."
+      "date": "2025-12-05",
+      "category": "music",
+      "text": "User likes listening to indie folk."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Comparing health insurance",
+      "date": "2026-05-25",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "self-employed and needs dental",
-        "wants a low deductible"
+        "wanted a pet-friendly building under 900k won/month",
+        "needed parking and a second bedroom near line 2"
       ]
     },
     {
-      "date": "2026-01-24",
-      "title": "Looking for a therapist",
+      "date": "2026-05-24",
+      "title": "Switching phone plans",
       "bullets": [
-        "prefers evening video sessions",
-        "wants someone who does CBT"
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
       ]
     },
     {
-      "date": "2025-12-29",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-28",
+      "title": "Refinancing a mortgage",
       "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
+        "current rate is 4.2 percent",
+        "wants to compare 15- vs 30-year terms"
       ]
     },
     {
-      "date": "2025-12-15",
-      "title": "Adopting a rescue dog",
+      "date": "2026-01-08",
+      "title": "Planning a dinner party",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When did India play its first One Day International cricket ⟨ret@4.21s⟩ match?
-[  4.40s][moshi] Oh, ⟦⚡SPAN@5.02s: India played its first One Day International match on July 5, 1974, against England at The Oval in London.⟧ looking back at cricket history… India first played a One Day International match on July 5, 1974, against England at The Oval in London. [happy] It’s amazing to see how far the sport has come since then, isn’t it?
+[  0.00s][user ] Who sang the songs in the movie ⟨ret@2.16s⟩ Selena?
+[  2.35s][moshi] That's ⟦⚡SPAN@2.97s: Selena Quintanilla-Pérez sang many of the songs in the 1997 film *Selena*.⟧ a good question about the music! Selena herself sang many of the songs in the nineteen ninety-seven film *Selena*.

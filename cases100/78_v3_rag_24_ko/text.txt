@@ -1,128 +1,104 @@
 v3_rag_24_ko src=nq style=v1
-SYSTEM: <system> 당신은 워라밸을 돕는 친절하고 침착한 웰빙 가이드 베아입니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 유능하게 처리하는 음성 비서 모시이기도 합니다. 위에 언급된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 동정적이고 직접적인 동료 지원자 에레리입니다. 적극적 경청, 친절한 경계 설정, 갈등이 고조되기 전에 진정시키는 방법을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "라람",
+    "name": "윤안",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 40s",
+    "gender": "non-binary",
+    "age_range": "60s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-14",
-      "category": "emergency",
-      "text": "User's emergency contact is Minjun."
+      "date": "2026-06-05",
+      "category": "hobby",
+      "text": "User is into trail running."
     },
     {
-      "date": "2026-05-10",
-      "category": "show",
-      "text": "User is currently watching a stand-up comedy special."
+      "date": "2026-05-25",
+      "category": "medication",
+      "text": "User takes an inhaler for asthma."
     },
     {
-      "date": "2026-04-29",
-      "category": "sibling",
-      "text": "User has a younger sibling named Mina."
+      "date": "2026-05-16",
+      "category": "music",
+      "text": "User likes listening to classical piano."
     },
     {
-      "date": "2026-04-19",
-      "category": "bloodtype",
-      "text": "User's blood type is O-."
+      "date": "2026-04-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is French."
     },
     {
-      "date": "2026-04-18",
-      "category": "allergy",
-      "text": "User is allergic to gluten."
-    },
-    {
-      "date": "2026-03-16",
-      "category": "trip",
-      "text": "User is planning a trip to Slovenia in July."
-    },
-    {
-      "date": "2025-12-21",
+      "date": "2026-03-10",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-10",
+      "category": "trip",
+      "text": "User is planning a trip to Georgia in June."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "car",
+      "text": "User drives a 2018 Mazda CX-5."
+    },
+    {
+      "date": "2025-12-26",
+      "category": "anniversary",
+      "text": "User's anniversary is May 8."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
-      "title": "Meal-prep planning",
+      "date": "2026-06-07",
+      "title": "Building a PC",
       "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
       ]
     },
     {
-      "date": "2025-12-25",
-      "title": "Planning a camping trip",
+      "date": "2026-04-25",
+      "title": "Learning to invest",
       "bullets": [
-        "a weekend at a lake site in September",
-        "asked about a 4-person tent and a cooler"
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "title": "Looking for a therapist",
+      "bullets": [
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     }
   ]
 }
-표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, 베아님. 오늘 하루도 잘 보내셨어요?
-[  4.09s][moshi] [happy] 안녕하세요! 덕분에 잘 보냈어요. 오늘 하루도 긍정 에너지 가득하시길 바랄게요. 혹시 오늘 저에게 어떤 도움을 드릴까요?
-[ 13.10s][user ] 음… 요즘 스트레스가 너무 많아서, 뭔가 기분 전환이 필요할 것 같아요.
-[ 16.89s][moshi] «backchannel» 맞아요.
-[ 19.27s][moshi] 스트레스 해소에는 여러 가지 방법이 있겠죠. 혹시 평소에 즐겨 하시는 취미 활동이 있으신가요?
-[ 21.27s][user ] «backchannel» 예.
-[ 27.02s][user ] 취미는 딱히 없어요. 그냥 맛있는 거 먹거나, 카페에 가는 정도예요.
-[ 32.48s][moshi] 맛있는 음식을 드시는 건 정말 좋은 방법이죠. 혹시 특별히 좋아하는 음식이 있으세요?
-[ 37.62s][user ] «backchannel» 네.
-[ 39.06s][user ] 커피를 좋아해요. 특히 특별한 커피요. ⟨ret@42.17s⟩
-[ 42.48s][moshi] 특별한 ⟦⚡SPAN@43.37s: Kopi luwak is a coffee made from coffee cherries that have been eaten, and partially digested, by the Asian pa⟧ 커피라… 어떤 종류의 커피를 좋아하시는지 여쭤봐도 될까요?
-[ 47.22s][moshi] 특별한 커피라면, 코피 루왁을 추천해 드리고 싶어요. 아시아 팔미스트릿이 먹고 배출한 커피 열매로 만든 커피랍니다.
-[ 56.75s][user ] 코피 루왁이요? 처음 들어봐요. 가격은 얼마나 해요?
-[ 60.88s][moshi] 코피 루왁은 꽤 고가인 편이에요. 일킬로그램에 삼십만원에서 육십만원 정도 한답니다.
-[ 67.44s][moshi] 현재 온라인 쇼핑몰에서 판매하는 코피 루왁의 가격 정보는 찾을 수 없네요.
-[ 72.43s][user ] 아, 그렇군요. 너무 비싸네요… 좀 더 저렴한 특별한 커피는 없을까요? ⟨ret@78.39s⟩
-[ 76.17s][moshi] «backchannel» 음.
-[ 78.83s][moshi] ⟦⚡SPAN@79.45s: Jamaica Blue Mountain coffee is known for its mild flavor, lack of bitterness, and high price. It generally se⟧ 자메이카 블루 마운틴 커피는 부드러운 맛과 쓴맛이 적고, 가격이 조금 높은 편이에요. 일반적으로 한 잔에 이십달러가 넘는다고 하네요.
-[ 90.56s][user ] 이십달러요? 그래도 코피 루왁보다는 저렴하네요.
-[ 94.43s][moshi] 네, 코피 루왁보다는 가격이 조금 더 합리적일 거예요. 커피 취향에 따라 선택하시면 좋을 것 같아요.
-[102.92s][user ] 혹시 서울에서 코피 루왁을 맛볼 수 있는 곳이 ⟨ret@106.03s⟩ 있을까요?
-[105.08s][moshi] «backchannel» 네.
-[106.24s][moshi] «interrupted» 잠시만 ⟦⚡SPAN@107.32s: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul", "cuisine": "Coffee"}}⟧ 기다려 주세요—
-[107.39s][user ] «interrupts_prev» … 혹시 코피 루왁 말고 다른 특이한 커피는 없을까요? 좀 더 저렴한 걸로요.
-[112.69s][moshi] 아, 네, 물론입니다. 코피 루왁 외에도 다양한 종류의 특별한 커피가 있답니다.
-[118.48s][moshi] ⟨ret@118.15s⟩ 블랙 ⟦⚡SPAN@119.23s: Black Ivory Coffee is made from coffee cherries that have been eaten and excreted by elephants. It is consider⟧ 아이보리 커피도 있어요. 코끼리가 먹은 커피 열매로 만든 커피랍니다.
-[123.70s][moshi] 블랙 아이보리 커피는 코끼리가 먹고 배출한 커피 열매로 만든 커피예요. 세계에서 가장 비싼 커피 중 하나로 여겨진답니다.
-[132.22s][user ] 코끼리가 먹었다고요? 정말 신기하네요. 가격은 얼마나 해요?
-[136.56s][moshi] 블랙 아이보리 커피는 일킬로그램에 백만원이 넘는다고 해요. 코피 루왁보다 훨씬 비싸죠.
-[142.91s][moshi] 현재 국내에서 블랙 아이보리 커피를 판매하는 곳에 대한 정보는 찾을 수 없네요.
-[145.41s][user ] «backchannel» 예.
-[148.76s][user ] 너무 비싸서 엄두도 안 나네요… 그냥 평범한 커피나 마셔야겠어요.
-[150.73s][moshi] «backchannel» 음.
-[154.09s][moshi] [sigh] 너무 비싼 가격 때문에 아쉬우시겠네요. 하지만 맛있는 커피는 기분 전환에 큰 도움이 될 수 있으니, 꼭 드셔보시길 바랄게요.
-[161.56s][user ] «backchannel» 음.
-[163.26s][user ] 네, 감사합니다. 혹시 지금 서울 날씨는 어때요?
-[166.54s][moshi] ⟨ret@166.49s⟩ ⟦⚡SPAN@167.09s: (tool result) 25.1°C, humidity 72%, wind 5.2 km/h⟧ 현재 서울의 날씨는 이십오 점 일도, 습도는 칠십이퍼센트, 바람은 시속 오 점 이킬로미터로 불고 있습니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[169.93s][user ] «backchannel» 네.
-[174.05s][user ] 날씨가 좋네요. 오늘 저녁에 영화 ⟨ret@177.02s⟩ 볼까요?
-[177.58s][moshi] ⟦⚡SPAN@177.62s: {"function": "Movies_1_FindMovies", "arguments": {"location": "Seoul"}}⟧ [happy] 좋은 생각이에요! 어떤 영화를 보고 싶으세요?
-[181.36s][moshi] 서울에서 상영 중인 영화를 찾아볼게요. 잠시만 기다려 주세요.
-[183.13s][user ] «backchannel» 네.
-[185.92s][user ] 네, 부탁드려요.
-[187.31s][moshi] 현재 서울에서 상영 중인 영화는 '인터스텔라', '어벤져스', '기생충' 등이 있습니다.
-[189.76s][user ] «backchannel» 맞아요.
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 45턴 · 124프레임 스팬
-          │ constraint budget: 너무 비싸네요… 좀 더 저렴한 특별한 커피는 없을까요?; open plan activity: 오늘 저녁에 영화 볼까요?
-          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[194.74s][user ] 인터스텔라가 보고 싶어요.
-[196.39s][moshi] 인터스텔라를 보시겠군요. 예매해 드릴까요?
-[200.36s][moshi] [happy] 예매를 완료했습니다. 즐거운 영화 관람 되세요!
+[  0.00s][user ] 요즘 좀 힘든 일이 많았어. 뭔가 위로가 필요해.
+[  3.93s][moshi] [happy] 힘든 일들이 많으셨다니, 마음이 아프네요. 제가 옆에서 힘이 되어 드릴게요.
+[  9.50s][user ] 혹시 성인들의 어려운 일에 도움을 주는 성인이 있대?
+[ 13.11s][moshi] ⟨ret@12.92s⟩ 성인들의 어려운 ⟦⚡SPAN@14.26s: Saint Jude is the patron saint of hopeless causes and difficult situations.⟧ 일에는 성 유다가 도움을 주는 성인이래요.
+[ 16.81s][user ] 아, 성 유다구나. 고마워. 혹시 오늘 날씨 ⟨ret@20.15s⟩ 어때?
+[ 20.46s][moshi] ⟦⚡SPAN@21.21s: (tool result) Current weather in Seoul is 28°C and cloudy.⟧ 지금 서울 날씨는 이십팔도이고 구름이 많다고 하네요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울"}}

@@ -1,249 +1,162 @@
 v3_card_44_en src=nq style=card_recall
-SYSTEM: <system> You are Juna, a wise and unhurried peer supporter who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Tes, a kind and observant counselor who helps people with goal-setting and follow-through. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_44",
-    "name": "Riley",
+    "name": "Aiden",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "mid 30s",
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-08",
-      "category": "coffee",
-      "text": "User's usual coffee order is a cappuccino with oat milk."
+      "date": "2026-06-05",
+      "category": "employer",
+      "text": "User works at a consulting firm."
     },
     {
-      "date": "2026-02-20",
-      "category": "learning",
-      "text": "User is taking pottery classes."
+      "date": "2026-05-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2026-01-12",
-      "category": "savings",
-      "text": "User is saving for paying off student loans."
+      "date": "2026-03-07",
+      "category": "emergency",
+      "text": "User's emergency contact is Haruto."
     },
     {
-      "date": "2026-01-08",
-      "category": "music",
-      "text": "User likes listening to classical piano."
+      "date": "2026-01-16",
+      "category": "schedule",
+      "text": "User has a 9-to-6 weekday schedule."
     },
     {
-      "date": "2025-12-29",
-      "category": "anniversary",
-      "text": "User's anniversary is November 7."
-    },
-    {
-      "date": "2025-12-27",
-      "category": "home",
-      "text": "User's home address is 35 Cypress Court."
-    },
-    {
-      "date": "2025-12-24",
-      "category": "commute",
-      "text": "User walks 20 minutes to the office."
+      "date": "2026-01-06",
+      "category": "pet",
+      "text": "User has a Bengal cat named Tiger."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-15",
-      "title": "Booking a Japan trip",
-      "bullets": [
-        "5 nights in Kyoto and Osaka in October",
-        "wants a JR Pass and a ryokan for one night"
-      ]
-    },
-    {
-      "date": "2026-01-19",
+      "date": "2026-04-09",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot next Tuesday",
         "prefers Dr. Han at Bright Smile Clinic"
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building under 900k won/month",
+        "needed parking and a second bedroom near line 2"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] I got tickets to a show! It’s on May 7th, and the time is 2:30 PM.
-[  5.43s][moshi] Oh, that sounds lovely! Got it, I’ll remember that.
-[  7.82s][user ] «backchannel» Okay.
-[  8.55s][user ] And they were 175 Canadian dollars. Just wanted to mention it.
-[ 13.03s][moshi] [happy] Wonderful! I’ve noted the price as well.
-[ 16.02s][user ] I’ve been feeling pretty overwhelmed lately, just with everything.
-[ 19.74s][moshi] It’s completely understandable to feel that way. Burnout is a real thing.
-[ 24.71s][user ] It’s just… work, and then trying to have a life, it feels impossible.
-[ 30.11s][moshi] Finding balance is a journey, not a destination. We can explore some strategies.
-[ 34.47s][user ] «backchannel» Right.
-[ 36.39s][user ] Do you think it helps to just… accept that some days will be bad?
-[ 40.56s][moshi] Radical acceptance can lessen suffering. It’s about acknowledging what *is*.
-[ 46.70s][user ] I keep trying to plan things, but then I feel guilty if I don’t get them done.
-[ 49.60s][moshi] «backchannel» Uh-huh.
-[ 51.09s][moshi] That’s a common pattern. Perfectionism fuels the guilt cycle.
-[ 54.55s][user ] It’s just hard to let go of the idea of being productive all the time.
-[ 58.08s][moshi] Productivity isn't the measure of your worth. Rest and self-care are vital too.
-[ 63.99s][user ] I wonder… who is the leader of the United Kingdom ⟨ret@67.48s⟩ right now?
-[ 67.96s][moshi] Oh, ⟦⚡SPAN@68.84s: Theresa May served as Prime Minister of the United Kingdom from 2016 to 2019.⟧ you’re curious about current leadership— Theresa May served as Prime Minister of the United Kingdom from 2016 to 2019.
-[ 76.47s][user ] Oh, right! I remember now. It feels like ages ago.
-[ 78.69s][moshi] «backchannel» Yeah.
-[ 80.91s][moshi] Time does fly, doesn’t it? It’s easy to lose track.
-[ 84.95s][user ] I’ve been meaning to find a new coffee shop near me. Somewhere cozy.
-[ 86.42s][moshi] «backchannel» Okay.
-[ 89.09s][moshi] ⟨ret@88.84s⟩ ⟦⚡SPAN@89.50s: Pilot Coffee Roasters Toronto (-79.3832, 43.6777) is located at 250 Adelaide St W, Toronto, ON M5H 1Y2, Canada⟧ For a cozy atmosphere, Pilot Coffee Roasters is a solid choice— it’s at 250 Adelaide Street West, Toronto.
-[ 97.23s][user ] Oh, that sounds good! I've walked past there before, I think.
-[101.52s][moshi] [happy] It’s a lovely spot. They really focus on quality coffee.
-[106.11s][user ] I need to get my ⟨ret@107.92s⟩ hair cut too. Any recommendations?
-[107.13s][moshi] «backchannel» Yeah.
-[109.57s][moshi] ⟦⚡SPAN@109.52s: Salon Vanity Toronto is located at 280 Queen St W, Toronto, ON M5V 1Z5, Canada and has a 4.6 star rating.⟧ Salon Vanity on Queen Street West has a 4.6-star rating— they’re at 280 Queen Street West.
-[116.11s][user ] That’s great! I always look for places with good reviews.
-[120.04s][moshi] Reviews are a helpful way to get a sense of a place.
-[122.87s][user ] I’m thinking about starting to meditate. Do you have any tips?
-[126.14s][moshi] Start small, even five minutes a day can be beneficial.
-[127.61s][user ] «backchannel» Yeah, yeah.
-[129.99s][user ] That sounds manageable. I always feel like I need hours to meditate.
-[134.19s][moshi] It’s about consistency, not duration. Don’t pressure yourself.
-[135.82s][user ] «backchannel» Yeah.
-[138.54s][user ] I’m also trying to eat better, but it’s so hard with takeout being so easy.
-[143.03s][moshi] Meal prepping can help. Even a few healthy snacks each week.
-[146.94s][user ] That's a good idea. I always end up ordering pizza on Fridays.
-[151.81s][moshi] A small treat is okay! It's about balance, not deprivation.
-[156.92s][user ] I’ve been trying to read more, but I can never seem to focus.
-[157.83s][moshi] «backchannel» Yeah.
-[160.20s][moshi] Audiobooks can be a good alternative if focusing is difficult.
-[163.88s][user ] Oh, that’s true! I could listen while I’m walking.
-[168.03s][moshi] [happy] Exactly! Multitasking in a healthy way.
-[170.20s][user ] «backchannel» Yeah, totally.
-[171.47s][user ] I was thinking of taking a weekend trip somewhere.
-[174.26s][moshi] That sounds wonderful! A change of scenery can be very restorative.
-[178.33s][user ] I’m not sure where to go though. Somewhere not too far from ⟨ret@182.16s⟩ Toronto.
-[182.43s][moshi] ⟦⚡SPAN@182.76s: Niagara-on-the-Lake is a town in Ontario, Canada, located 130 km south of Toronto.⟧ For a nearby getaway, Niagara-on-the-Lake is a lovely option— it’s 130 kilometers south of Toronto.
-[184.79s][user ] «backchannel» Mhm.
-[189.25s][user ] Niagara-on-the-Lake… I’ve heard good things about that place.
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 54턴 · 56프레임 스팬
-          │ show date: May 7th (3m ago); show time: 2:30 PM (3m ago); ticket price: 175 Canadian dollars (3m ago); weekend trip (20s ago)
+[  0.00s][user ] Hey Tes, good to chat again. I’ve got a flight coming up, actually.
+[  4.42s][moshi] Hi Aiden, it's lovely to connect with you too.
+[  7.42s][user ] It's on July 18th, departing at 2:30 PM. I already arranged everything, just letting you know. It was two hundred fifty-five dollars.
+[ 13.22s][moshi] «backchannel» Yeah, yeah.
+[ 15.76s][moshi] Got it, I’ll remember that. That sounds like a good plan.
+[ 17.58s][user ] «backchannel» Yeah, totally.
+[ 19.61s][user ] So, I was thinking about TV shows, actually. I’m really getting into *Grey’s Anatomy*.
+[ 22.02s][moshi] «backchannel» Yeah.
+[ 25.17s][moshi] Oh, a classic! It's a show many people enjoy.
+[ 27.28s][user ] «backchannel» Yeah.
+[ 28.94s][user ] I was wondering, who was the chief of surgery in season thirteen? It’s driving me ⟨ret@34.17s⟩ crazy.
+[ 34.28s][moshi] It's easy ⟦⚡SPAN@35.40s: Miranda Bailey became the Chief of Surgery at Grey Sloan Memorial Hospital in Season 14, after Richard Webber ⟧ to lose track of details... Miranda Bailey became Chief of Surgery in Season fourteen, after Richard Webber stepped down.
+[ 42.96s][user ] Oh, okay, so not thirteen. My mistake.
+[ 46.31s][moshi] It happens! Details can be tricky to recall.
+[ 47.72s][user ] «backchannel» Uh-huh.
+[ 49.55s][user ] I'm also trying to get back into reading. Any recommendations? I like thrillers.
+[ 54.76s][moshi] Thrillers are a fantastic choice! I'm happy to offer some ideas.
+[ 57.68s][user ] «backchannel» Mhm.
+[ 59.75s][user ] I've been meaning to check out that ⟨ret@61.85s⟩ new Italian place downtown.
+[ 62.99s][moshi] ⟦⚡SPAN@62.93s: Bella Notte is an Italian restaurant located at 542 Green Street, San Francisco, CA 94133, with a 4.2-star rat⟧ Bella Notte is at 542 Green Street, with a four point two star rating from three hundred fifty-seven reviews. Perhaps we could look at the menu?
+[ 71.86s][user ] That sounds great! What kind of food do they specialize in?
+[ 75.81s][moshi] They're known for their handmade pasta and seafood dishes.
+[ 79.21s][user ] I’m thinking about getting my car detailed this weekend. Any ⟨ret@82.81s⟩ good places nearby?
+[ 83.75s][moshi] ⟦⚡SPAN@83.70s: (tool result) Shine & Detail offers mobile car detailing services in San Francisco, with packages starting at ⟧ Shine & Detail offers mobile detailing, starting at ninety-nine dollars. They have a four point eight star rating from one hundred twenty-five reviews.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "car detailing", "location": "San Francisco"}}
+[ 92.73s][user ] Ninety-nine sounds reasonable. Do they come to you?
+[ 96.55s][moshi] Yes, they are a mobile service, so they come to your location.
+[100.54s][user ] Perfect! I'll look them up. I also need to find a ⟨ret@103.88s⟩ new barber.
+[104.64s][moshi] ⟦⚡SPAN@104.58s: (tool result) The Golden Comb Barber Shop is located at 1450 Lombard Street, San Francisco, CA 94123, and offe⟧ The Golden Comb Barber Shop is on Lombard Street, with a four point five star rating from eighty-eight reviews.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "barber", "location": "San Francisco"}}
+[111.23s][user ] Lombard Street? That’s a bit of a drive. Are ⟨ret@114.43s⟩ there any closer options?
+[116.08s][moshi] ⟦⚡SPAN@116.02s: (tool result) Urban Edge Barbershop is located at 780 Valencia Street, San Francisco, CA 94110, and specialize⟧ Urban Edge Barbershop is on Valencia Street, with a four point six star rating from sixty-two reviews.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "barber", "location": "San Francisco", "radius": "2 miles"}}
+[119.56s][user ] «backchannel» Yeah.
+[122.39s][user ] Valencia Street is much better. I think I'll give them a call.
+[126.31s][moshi] That sounds like a great plan.
+[127.66s][user ] Actually, I'm thinking about taking a weekend trip somewhere.
+[130.99s][moshi] A weekend getaway sounds wonderful! Where are you thinking of going?
+[135.04s][user ] I haven't decided yet. Somewhere relatively close to ⟨ret@138.86s⟩ San Francisco.
+[139.52s][moshi] ⟦⚡SPAN@139.46s: (tool result) Napa Valley, approximately 50 miles northeast of San Francisco, is known for its wineries and sc⟧ Napa Valley, about fifty miles northeast of here, is known for wineries and beautiful landscapes.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "near San Francisco", "trip_length": "weekend"}}
+[143.23s][user ] «backchannel» Yeah.
+[146.19s][user ] Napa Valley sounds nice. How long does it take to drive there?
+[150.44s][moshi] It usually takes around an hour and a half to drive to Napa Valley, depending on traffic.
+[152.25s][user ] «backchannel» Yeah.
+[155.77s][user ] Okay, good to know. I’m also trying to figure out dinner tonight.
+[159.76s][moshi] Dinner plans are important! What kind of cuisine are you in the mood for?
+[164.50s][user ] Something casual. Maybe a good ⟨ret@166.55s⟩ burger place?
+[167.25s][moshi] ⟦⚡SPAN@167.20s: (tool result) Super Duper Burgers has several locations in San Francisco and is known for its high-quality bur⟧ Super Duper Burgers has several locations and a four point three star rating from one thousand eight hundred fifty-two reviews.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "burgers", "location": "San Francisco"}}
+[175.03s][user ] Super Duper is always good. I think I'll go with that.
+[178.60s][moshi] Excellent choice! A classic for a reason.
+[179.62s][user ] «backchannel» Yeah.
+[181.73s][user ] I'm also trying to get ⟨ret@183.13s⟩ more organized with my schedule.
+[183.22s][moshi] «backchannel» Yeah, yeah.
+[185.03s][moshi] ⟦⚡SPAN@184.97s: (tool result) You currently have one alarm set for 7:00 AM tomorrow.⟧ You have one alarm set for seven AM tomorrow.
+      CALL: {"function": "Alarm_1_GetAlarms", "arguments": {}}
+[189.01s][user ] Oh, right! I set that this morning. I almost forgot.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 52턴 · 116프레임 스팬
+          │ flight date: July 18th (3m ago); flight time: 2:30 PM (3m ago); flight cost: two hundred fifty-five dollars (3m ago); tv preference: *Grey’s Anatomy* (2m ago); cuisine preference: thrillers (2m ago); weekend trip location: Somewhere relatively close to San Francisco (56s ago); potential trip: Napa Valley (52s ago); restaurant cuisine: burgers (27s ago)
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[192.77s][moshi] It’s known for its wineries and charming atmosphere.
-[195.04s][user ] «backchannel» Yeah, yeah.
-[196.44s][user ] Maybe I’ll look into that. I need a break from the city.
-[199.71s][moshi] A little escape can do wonders for the soul.
-[200.85s][user ] «backchannel» Uh-huh.
-[202.31s][user ] I’m trying to find a good ⟨ret@203.83s⟩ yoga studio too.
-[204.93s][moshi] ⟦⚡SPAN@204.87s: YogaSpace Toronto is located at 401 Richmond St W, Toronto, ON M5V 3A8, Canada and offers various classes.⟧ YogaSpace on Richmond Street West offers a variety of classes— it’s at 401 Richmond Street West.
-[211.58s][user ] Oh, that's not too far from where I live.
-[213.92s][moshi] [happy] Convenient location is always a plus!
-[218.31s][user ] I’ve been really struggling with sleep lately.
-[221.00s][moshi] Creating a relaxing bedtime routine can improve sleep quality.
-[225.26s][user ] I try to avoid screens before bed, but it’s hard.
-[228.78s][moshi] Blue light filters can help reduce screen’s impact.
-[230.20s][user ] «backchannel» Mm-hmm.
-[231.95s][user ] I’ll have to try that. I’m always scrolling through my phone.
-[235.36s][moshi] It’s a common habit. Awareness is the first step.
-[239.20s][user ] I wonder if there are any ⟨ret@240.75s⟩ good art exhibits on right now?
-[242.11s][moshi] ⟦⚡SPAN@242.05s: The Art Gallery of Ontario (AGO) currently has an exhibit titled "Fragments of Epic Memory".⟧ The Art Gallery of Ontario has an exhibit called "Fragments of Epic Memory" currently showing.
-[247.94s][user ] Oh, that sounds interesting! I haven’t been to the AGO in ages.
-[251.03s][moshi] «backchannel» Yeah.
-[252.59s][moshi] It’s a great place to spend an afternoon.
-[254.12s][user ] «backchannel» Yeah.
-[254.82s][user ] I should probably make a list of things to do.
-[255.94s][moshi] «backchannel» Yeah.
-[257.44s][moshi] A list can help you prioritize and feel more in control.
-[261.70s][user ] It’s just… it feels like there’s always so much to do.
-[263.81s][moshi] «backchannel» Yeah.
-[265.63s][moshi] It's okay to not do everything. Prioritize what matters most.
-[270.37s][user ] I've been thinking about getting a massage.
-[272.61s][moshi] ⟨ret@272.54s⟩ ⟦⚡SPAN@273.27s: Body Blitz Spa Toronto is located at 120 Avenue Rd, Toronto, ON M5R 3L7, Canada and has a 4.5 star rating.⟧ For a relaxing massage, Body Blitz Spa has a 4.5-star rating— they’re at 120 Avenue Road.
-[280.73s][user ] That sounds amazing. I really need to de-stress.
-[283.19s][moshi] «backchannel» Yeah.
-[284.30s][moshi] [happy] Self-care is never selfish. It's essential.
-[287.34s][user ] I’m trying to be more mindful of my spending.
-[289.63s][moshi] Tracking your expenses can provide valuable insights.
-[292.67s][user ] I always end up spending more than I realize.
-[295.16s][moshi] Small changes can add up over time.
-[298.19s][user ] I need to find ⟨ret@299.14s⟩ a good dry cleaner.
-[298.74s][moshi] «backchannel» Yeah.
-[300.15s][moshi] ⟦⚡SPAN@300.10s: Parkdale Cleaners Toronto is located at 1609 Queen St W, Toronto, ON M6R 1G8, Canada.⟧ Parkdale Cleaners on Queen Street West is a local option— it’s at 1609 Queen Street West.
-[306.73s][user ] That's pretty close to my apartment.
-[308.65s][moshi] [happy] Convenient! It’s good to support local businesses.
-[311.83s][user ] I’ve been meaning to call my mom.
-[313.71s][moshi] Connecting with loved ones is always a good idea.
-[317.23s][user ] I always feel bad when I don’t talk to her enough.
-[318.36s][moshi] «backchannel» Yeah.
-[320.09s][moshi] It's understandable to feel that way. Family is important.
-[321.51s][user ] «backchannel» Yeah.
-[324.20s][user ] I’m thinking about volunteering somewhere.
-[326.69s][moshi] Volunteering can be a rewarding experience.
-[329.21s][user ] I want to do something meaningful with my time.
-[330.84s][moshi] «backchannel» Mm-hmm.
-[331.90s][moshi] That’s a wonderful goal. There are many organizations in need.
-[334.09s][user ] «backchannel» Yeah.
-[336.51s][user ] I’m trying to learn a new language.
-[338.54s][moshi] That’s a challenging but rewarding pursuit!
-[341.29s][user ] It’s harder than I thought it would be.
-[343.49s][moshi] It takes time and dedication. Be patient with yourself.
-[348.42s][user ] I'm getting a bit overwhelmed with all this, actually.
-[351.27s][moshi] «interrupted» It's okay to feel overwhelmed— you're trying to make a lot of changes—
-[354.50s][user ] «interrupts_prev» …but what time did I say that concert was again?
-[355.86s][moshi] «backchannel» Yeah.
-[357.16s][moshi] Oh, the concert— you said it was at 2:30 PM.
-[360.79s][user ] Right, thanks. I always forget these things.
-[363.96s][moshi] It’s easy to misplace details.
-[366.11s][user ] I ⟨ret@366.18s⟩ need to find a good bookstore.
-[367.89s][moshi] ⟦⚡SPAN@367.84s: Type Books Toronto is located at 883 Queen St W, Toronto, ON M6J 1G3, Canada.⟧ Type Books on Queen Street West is a well-regarded bookstore— it’s at 883 Queen Street West.
-[371.63s][user ] «backchannel» Yeah.
-[373.79s][user ] That sounds perfect! I love browsing bookstores.
-[377.31s][moshi] [happy] It’s a wonderful way to spend an afternoon.
-[380.11s][user ] I'm trying to find a good podcast to listen to.
-[383.15s][moshi] There are so many great podcasts out there! What are your interests?
-          ┌─ 🃏 CARD 주입 @384.0s (4800f) — 지금까지 대화 전체의 누적 요약 · 126턴 · 48프레임 스팬
-          │ concert time: 2:30 PM (6m ago); concert date: May 7th (6m ago); concert cost: 175 Canadian dollars (6m ago)
-          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[386.62s][user ] I like true crime, but also things about psychology.
-[388.49s][moshi] «backchannel» Yeah.
-[389.84s][moshi] "Criminal" is a popular true crime podcast.
-[390.75s][user ] «backchannel» Yeah.
-[393.48s][user ] I’ll check that out. I need something to listen to on my commute.
-[394.63s][moshi] «backchannel» Yeah.
-[397.07s][moshi] A podcast can make your commute more enjoyable.
-[398.53s][user ] «backchannel» Uh-huh.
-[399.73s][user ] I’m thinking about taking a cooking class.
-[402.10s][moshi] Learning new skills can be very fulfilling.
-[403.36s][user ] «backchannel» Yeah.
-[404.84s][user ] I want to be able to cook more than just pasta.
-[407.25s][moshi] Expanding your culinary repertoire is a great goal.
-[410.49s][user ] I’m trying to be more organized.
-[412.66s][moshi] Decluttering can create a sense of calm.
-[415.50s][user ] My apartment is a mess right now.
-[417.93s][moshi] Start with one small area. It’s less daunting.
-[420.31s][user ] «backchannel» Yeah.
-[421.17s][user ] I’m considering getting a pet.
-[422.66s][moshi] Pets can bring a lot of joy, but also responsibility.
-[426.45s][user ] I’ve always wanted a dog, but I’m not sure if I have the time.
-[430.55s][moshi] It’s important to consider your lifestyle.
-[431.49s][user ] «backchannel» Mm-hmm.
-[434.55s][user ] I’m trying to be more grateful for what I have.
-[437.51s][moshi] Gratitude practice can shift your perspective.
-[440.75s][user ] It’s easy to focus on what’s missing.
-[442.78s][moshi] [happy] You’re right. Intentional gratitude is powerful.
-[443.70s][user ] «backchannel» Mm-hmm.
-[445.81s][user ] I’m wondering how much that concert ticket was again?
-[448.53s][moshi] You mentioned the ticket was 175 Canadian dollars.
-[450.19s][user ] «backchannel» Okay.
-[453.06s][user ] Oh, yes! Thanks for reminding me.
-[455.64s][moshi] You’re very welcome.
-[457.06s][user ] I think I’ll just relax tonight and watch a movie.
-[458.06s][moshi] «backchannel» Right.
-[459.86s][moshi] That sounds like a perfect way to unwind.
-[462.53s][user ] Maybe I’ll order some takeout.
-[464.35s][moshi] A little comfort food is always nice.
-[465.56s][user ] «backchannel» Mm-hmm.
-[467.19s][user ] I’m glad I talked to you.
-[468.45s][moshi] [happy] I’m glad I could offer some support. Take care.
+[192.96s][moshi] It's easy to overlook things in a busy day.
+[195.62s][user ] I’m thinking about starting a new hobby. Something creative.
+[198.09s][moshi] «backchannel» Right.
+[199.65s][moshi] That's wonderful! Exploring creativity is very fulfilling.
+[205.05s][user ] I've always wanted to learn how to paint.
+[207.43s][moshi] Painting is a fantastic hobby. It’s very relaxing.
+[211.47s][user ] Do you know of any good ⟨ret@212.89s⟩ art classes in the area?
+[213.89s][moshi] ⟦⚡SPAN@213.84s: (tool result) The San Francisco Art Institute offers a variety of art classes for all skill levels.⟧ The San Francisco Art Institute offers art classes for all levels.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "art classes", "location": "San Francisco"}}
+[216.87s][user ] «backchannel» Yeah, yeah.
+[219.59s][user ] The Art Institute sounds a little intimidating. Something ⟨ret@223.28s⟩ more beginner-friendly?
+[221.52s][moshi] «backchannel» Mhm.
+[224.26s][moshi] ⟦⚡SPAN@224.21s: (tool result) Palette Studios offers beginner painting and drawing classes in San Francisco. They have a 4.7-s⟧ Palette Studios offers beginner classes, with a four point seven star rating from seventy-five reviews.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "beginner art classes", "location": "San Francisco"}}
+[227.01s][user ] «backchannel» Yeah.
+[230.68s][user ] That sounds perfect! I’ll check them out.
+[233.94s][moshi] Wonderful! I'm glad I could help.
+[237.36s][user ] What time did I say my flight was again? I can't quite remember.
+[241.40s][moshi] Earlier you said your flight is on July eighteenth at two thirty PM.
+[247.06s][user ] Right, thanks! And how much was it again?
+[249.90s][moshi] You mentioned it was two hundred fifty-five dollars.
+[253.12s][user ] Perfect. I think that covers everything.
+[255.67s][moshi] It sounds like you have a lot planned, Aiden.
+[257.99s][user ] Yeah, it’s been a busy week.
+[260.08s][moshi] It’s good to take time for yourself, though.
+[262.18s][user ] Definitely. Well, thanks for the help, Tes.
+[265.40s][moshi] It was my pleasure, Aiden. I'm always here if you need anything. Have a wonderful day!

@@ -1,114 +1,86 @@
 # v3_hesit_18_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-# {
-#   "profile": {
-#     "user_id": "v3_hesit_18",
-#     "name": "우국",
-#     "location": {
-#       "city": "Busan",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
-#     },
-#     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "Korean"
-#   },
-#   "saved_memories": [
-#     {
-#       "date": "2026-05-13",
-#       "category": "commute",
-#       "text": "User walks 20 minutes to the office."
-#     },
-#     {
-#       "date": "2026-05-12",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Tobias."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
-#     },
-#     {
-#       "date": "2026-05-05",
-#       "category": "pet",
-#       "text": "User has a Ragdoll cat named Miso."
-#     },
-#     {
-#       "date": "2026-03-30",
-#       "category": "work",
-#       "text": "User works as a paramedic."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O-."
-#     }
-#   ],
-#   "conversation_summaries": [
-#     {
-#       "date": "2026-06-09",
-#       "title": "Learning to invest",
-#       "bullets": [
-#         "asked about index funds vs individual stocks",
-#         "wants to start with 500k won a month"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-13",
-#       "title": "Buying a gift for a parent",
-#       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-03",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
-#       ]
-#     }
-#   ]
-# }
+# EXAMINER(FDB-v2) 단계: S1 음… 혹시 스타 이즈 본, 제일 처음 나온 게 언제였지? | S2 아, 옛날 영화들은 다 그렇게 이름이 낯설어. 요즘 영화들은  | S3 바비? 그거 좀 웃기던데. | S4 음… 그냥 한식.
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 극장 공연 선정은 누가 하는 걸까요? | S2 아, 그렇군요. 그럼 연출가는 뭐 하는 사람이에요? | S3 음, 배우는 누가 고르는 거죠? | S4 아하, 그렇군요. 감사합니다.
-
-     0.00s  user  발화 시작: 혹시 극장 공연 선정은 누가 하는 걸까요?
-     2.64s  <ret> 발화 (turn1 첫 프레임)
-     2.74s  agent 발화 시작: <ret> 공연 선정은 보통 극장 감독님이 담당하시죠. 극장 감독님이 어떤 공연을 올릴지 결정하는 분이세요.
-     2.88s  user  발화 끝
-     3.82s  ⚡SPAN 주입 [d'=1.18s / d_lead=6.39s]: The theatre director is responsible for choosing shows for the theatre
-     5.53s  user  발화 시작: 네.
-     5.98s  user  발화 끝
-     9.13s  agent 발화 끝
-    10.85s  user  발화 시작: 아, 그렇군요. 그럼 연출가는 뭐 하는 사람이에요?
-    13.53s  <ret> 발화 (turn4 첫 프레임)
-    13.60s  agent 발화 시작: <ret> 연출가님은 무대 연출의 창의적이고 기술적인 부분을 총괄하시는 분이에요. 무대 연출가님은 배우들의 
-    13.71s  user  발화 끝
-    14.57s  ⚡SPAN 주입 [d'=1.05s / d_lead=9.08s]: A stage director oversees the creative and technical aspects of a thea
-    17.77s  user  발화 시작: 그렇죠.
-    18.21s  user  발화 끝
-    22.68s  agent 발화 끝
-    22.68s  user  발화 시작: 음, 배우는 누가 고르는 거죠?
-    24.36s  <ret> 발화 (turn7 첫 프레임)
-    24.74s  agent 발화 시작: <ret> 배우 섭외는 캐스팅 디렉터가 담당하세요. 캐스팅 디렉터는 공연에 맞는 배우를 선택하는 역할을 하시
-    24.84s  user  발화 끝
-    25.17s  ⚡SPAN 주입 [d'=0.81s / d_lead=6.67s]: The casting director is responsible for selecting actors for a theatre
-    31.41s  agent 발화 끝
-    31.54s  user  발화 시작: 아하, 그렇군요. 감사합니다.
-    33.33s  user  발화 끝
-    33.63s  agent 발화 시작: 천만에요.
-    34.59s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 스타 이즈 본, 제일 처음 나온 게 언제였지?
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.48s  agent 발화 시작: <ret> 제일 처음 스타 이즈 본에 출연한 건 천구백삼십칠년의 재닛 게이너였어요.
+     3.63s  user  발화 끝
+     4.56s  ⚡SPAN 주입 [d'=1.18s / d_lead=4.99s]: Janet Gaynor starred in the first Star is Born in 1937.
+     8.48s  agent 발화 끝
+     8.57s  user  발화 시작: 재닛 게이너… 이름이 좀 낯설긴 한데.
+    11.99s  user  발화 끝
+    12.05s  agent 발화 시작: 처음 들어보시는 분일 수도 있겠네요.
+    14.04s  user  발화 시작: 그… 아, 옛날 영화구나. 혹시 다른 배우들도 있었어?
+    14.07s  agent 발화 끝
+    17.00s  <ret> 발화 (turn5 첫 프레임)
+    17.39s  agent 발화 시작: <ret> 천구백삼십칠년 스타 이즈 본에는 프레드릭 마치도 함께 출연했어요.
+    17.51s  user  발화 끝
+    18.05s  ⚡SPAN 주입 [d'=1.05s / d_lead=4.30s]: Fredric March also starred in the 1937 version of A Star is Born.
+    21.62s  user  발화 시작: 프레드릭 마치… 그 사람도 오래된 배우인가 보네.
+    21.69s  agent 발화 끝
+    24.62s  user  발화 끝
+    24.65s  agent 발화 시작: 네, 프레드릭 마치도 꽤 오래된 배우시죠.
+    26.49s  user  발화 시작: 응.
+    26.94s  user  발화 끝
+    27.28s  agent 발화 끝
+    27.91s  user  발화 시작: 아, 옛날 영화들은 다 그렇게 이름이 낯설어. 요즘 영화들은 누가 나왔는지 바로 알겠던데.
+    33.21s  agent 발화 시작: 요즘 영화는 더 쉽게 접할 수 있으니까 그럴 거예요.
+    33.28s  user  발화 끝
+    34.34s  user  발화 시작: 그래.
+    34.74s  user  발화 끝
+    36.31s  agent 발화 끝
+    36.47s  user  발화 시작: 요즘 영화는… 음… 혹시 최근에 나온 영화 중에 볼 만한 거 있어?
+    39.21s  agent 발화 시작: 예.
+    39.61s  agent 발화 끝
+    41.15s  agent 발화 시작: 어떤 장르를 좋아하시나요?
+    41.16s  user  발화 끝
+    42.99s  agent 발화 끝
+    43.12s  user  발화 시작: 그냥… 재미있는 거. 코미디?
+    46.04s  <ret> 발화 (turn16 첫 프레임)
+    46.16s  agent 발화 시작: <ret> 요즘 인기 있는 코미디 영화는 '바비'(이천이십삼), '슈퍼 마리오 브라더스'(이천이십삼), '노
+    46.19s  user  발화 끝
+    46.64s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.21s]: (tool result) "Top comedy movies: 'Barbie' (2023), 'The Super Mario Br
+    54.31s  user  발화 시작: 바비? 그거 좀 웃기던데.
+    54.37s  agent 발화 끝
+    56.09s  agent 발화 시작: 네, '바비'는 많은 분들이 재미있다고 하시더라고요.
+    56.15s  user  발화 끝
+    57.52s  user  발화 시작: 맞아.
+    58.18s  user  발화 끝
+    58.86s  agent 발화 끝
+    58.93s  user  발화 시작: 아, 그럼 '바비' 예매해 줘. 이번 주 토요일 저녁 일곱시에.
+    60.14s  agent 발화 시작: 예.
+    60.45s  agent 발화 끝
+    62.31s  <ret> 발화 (turn22 첫 프레임)
+    62.69s  agent 발화 시작: <ret> 네, '바비' 영화, 이천이십육년 칠월 십일일 저녁 일곱시로 두장 예매 완료되었습니다. 총 비용은
+    62.73s  user  발화 끝
+    63.54s  ⚡SPAN 주입 [d'=1.23s / d_lead=7.18s]: (tool result) "Booking confirmed: Barbie, July 11, 2026, 7:00 PM, 2 ti
+    69.86s  agent 발화 끝
+    70.63s  user  발화 시작: 오, 고마워!
+    71.70s  user  발화 끝
+    71.77s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
+    74.30s  agent 발화 끝
+    76.11s  user  발화 시작: 아, 그리고… 혹시 토요일 저녁에 맛있는 저녁 먹을 만한 곳도 추천해 줄 수 있어?
+    78.39s  agent 발화 시작: 네.
+    78.83s  agent 발화 끝
+    81.86s  user  발화 끝
+    82.00s  agent 발화 시작: 어떤 종류의 음식을 좋아하세요?
+    83.83s  agent 발화 끝
+    83.86s  user  발화 시작: 음… 그냥 한식.
+    85.28s  <ret> 발화 (turn29 첫 프레임)
+    85.53s  agent 발화 시작: <ret> 근처 한식집으로는 '한쿡'(평점 사 점 오, 가격 보통), '서울 가든'(평점 사 점 이, 가격 
+    85.64s  user  발화 끝
+    86.57s  ⚡SPAN 주입 [d'=1.29s / d_lead=7.74s]: (tool result) "Nearby Korean restaurants: 'Han Cook'(rating 4.5, price
+    93.22s  user  발화 시작: '한쿡'으로 예약해 줘. 토요일 저녁 일곱시 반. 두 명.
+    93.27s  agent 발화 끝
+    96.31s  agent 발화 시작: 네네.
+    96.90s  agent 발화 끝
+    97.19s  <ret> 발화 (turn32 첫 프레임)
+    97.63s  agent 발화 시작: <ret> 네, '한쿡' 식당, 이천이십육년 칠월 십일일 저녁 일곱시 반으로 두명 예약 완료되었습니다.
+    97.72s  user  발화 끝
+    98.44s  ⚡SPAN 주입 [d'=1.25s / d_lead=6.11s]: (tool result) "Reservation confirmed at Han Cook for July 11, 2026, 7:
+   103.74s  user  발화 시작: 알았어, 고마워.
+   103.75s  agent 발화 끝
+   105.25s  agent 발화 시작: 즐거운 주말 보내세요.
+   105.30s  user  발화 끝
+   106.81s  agent 발화 끝

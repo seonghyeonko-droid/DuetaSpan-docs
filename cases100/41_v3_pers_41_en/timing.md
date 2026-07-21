@@ -4,120 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Harry",
+#     "name": "Leo",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "age_range": "early 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "medication",
-#       "text": "User takes a statin."
+#       "date": "2026-06-26",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
 #     },
 #     {
-#       "date": "2026-06-03",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
+#       "date": "2026-05-24",
+#       "category": "employer",
+#       "text": "User works at a regional bank."
 #     },
 #     {
-#       "date": "2026-05-10",
-#       "category": "commute",
-#       "text": "User takes a shuttle bus."
+#       "date": "2026-04-17",
+#       "category": "hobby",
+#       "text": "User is into pottery."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "learning",
-#       "text": "User is studying for the CPA exam."
+#       "date": "2026-03-19",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "streaming",
-#       "text": "User subscribes to Disney+ and YouTube Premium."
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "category": "dislike",
-#       "text": "User can't stand bell peppers."
-#     },
-#     {
-#       "date": "2026-01-10",
-#       "category": "skill",
-#       "text": "User is a complete beginner at vintage synth collecting."
+#       "date": "2026-02-16",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Ava."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-15",
-#       "title": "Sorting out a visa",
+#       "date": "2026-04-12",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-21",
+#       "date": "2026-04-02",
 #       "title": "Booking a moving company",
 #       "bullets": [
 #         "moving a 2-bedroom apartment across town on the 30th",
 #         "needs help disassembling furniture"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-10",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just really stressed about fin | S2 Okay, sure. What do I do? | S3 That’s good to know. I also haven’ | S4 No, I think I’m good for now. Just
 
-     0.00s  agent 발화 시작: Hello Harry, I'm Kana. I'm here to offer support and help yo
-     6.90s  agent 발화 끝
-     7.59s  user  발화 시작: I’m just really stressed about finals, honestly.
-    10.00s  agent 발화 시작: Mhm.
-    10.77s  agent 발화 끝
-    10.79s  user  발화 끝
-    11.12s  agent 발화 시작: [happy] Finals are definitely a tough time, Harry. It’s comp
-    20.20s  agent 발화 끝
-    20.25s  user  발화 시작: Not really. I just… keep studying, I guess. It doesn’t seem 
-    22.48s  agent 발화 시작: Mhm.
-    23.06s  agent 발화 끝
-    25.67s  agent 발화 시작: I understand. Sometimes pushing harder just makes the stress
-    25.77s  user  발화 끝
-    35.49s  user  발화 시작: Okay, sure. What do I do?
-    35.78s  agent 발화 끝
-    37.61s  user  발화 끝
-    37.87s  agent 발화 시작: Close your eyes if you’re comfortable, and breathe in slowly
-    48.90s  agent 발화 끝
-    49.35s  user  발화 시작: [laugh] That’s… surprisingly helpful, actually. I feel a lit
-    55.01s  agent 발화 시작: [happy] I’m so glad to hear that, Harry! It’s amazing what a
-    55.04s  user  발화 끝
-    58.09s  user  발화 시작: Wow.
-    58.91s  user  발화 끝
-    63.57s  agent 발화 끝
-    63.72s  user  발화 시작: That’s good to know. I also haven’t been sleeping well, whic
-    65.76s  agent 발화 시작: Uh-huh.
-    66.67s  agent 발화 끝
-    68.17s  user  발화 끝
-    68.24s  agent 발화 시작: That’s very common when stressed. Creating a relaxing bedtim
-    74.02s  user  발화 시작: Mm-hmm.
-    74.46s  user  발화 끝
-    78.95s  agent 발화 끝
-    79.00s  user  발화 시작: Easier said than done! But I’ll try. Thanks, Kana.
-    82.97s  user  발화 끝
-    83.05s  agent 발화 시작: [curious] You’re very welcome, Harry.
-    85.11s  agent 발화 끝
-    85.44s  user  발화 시작: No, I think I’m good for now. Just knowing those simple thin
-    90.38s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour, Leo. I’m Meaen, and I’m here to help you set and ac
+     8.02s  agent 발화 끝
+     8.85s  user  발화 시작: Wellness goals… that sounds a bit grand, honestly. I just fe
+    15.40s  agent 발화 시작: It's perfectly alright to start small, Leo. Feeling stuck is
+    15.44s  user  발화 끝
+    24.71s  user  발화 시작: Okay, good. I’ve been trying to exercise more, but I always 
+    25.13s  agent 발화 끝
+    30.68s  user  발화 끝
+    31.10s  agent 발화 시작: [sigh] That's understandable. Excuses are often just unmet n
+    38.04s  user  발화 시작: Yeah.
+    38.52s  user  발화 끝
+    40.14s  agent 발화 끝
+    40.45s  user  발화 시작: Well, I work long hours, and when I get home, I’m exhausted.
+    46.76s  user  발화 끝
+    46.78s  agent 발화 시작: It sounds like time and convenience are key factors. That st
+    65.54s  agent 발화 끝

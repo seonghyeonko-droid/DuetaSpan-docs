@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "세국",
+#     "name": "유준",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,83 +13,97 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "mid 20s",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is tonkotsu ramen."
+#       "date": "2026-06-26",
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Yuna."
+#       "date": "2026-06-16",
+#       "category": "savings",
+#       "text": "User is saving for a trip to Europe next year."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B+."
+#       "date": "2026-04-10",
+#       "category": "child",
+#       "text": "User has a child named Clara, age 13."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-03-23",
+#       "category": "home",
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "floor",
-#       "text": "User lives on the 12th floor."
+#       "date": "2026-03-17",
+#       "category": "streaming",
+#       "text": "User subscribes to Disney+ and YouTube Premium."
 #     },
 #     {
-#       "date": "2025-12-08",
-#       "category": "dislike",
-#       "text": "User can't stand durian."
+#       "date": "2026-02-27",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "music",
+#       "text": "User likes listening to city pop."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is black drip coffee."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-08",
-#       "title": "Researching a used car",
+#       "date": "2026-01-21",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-21",
-#       "title": "Switching phone plans",
-#       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     },
 #     {
 #       "date": "2025-12-03",
-#       "title": "Planning a dinner party",
+#       "title": "Booking a Japan trip",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 세국님! 저는 아루나예요. 오늘 하루 어떠셨어요?
-     4.94s  agent 발화 끝
-     5.18s  user  발화 시작: 그냥 그래. 지금 몇 시야?
-     6.37s  <ret> 발화 (turn2 첫 프레임)
-     6.79s  agent 발화 시작: <ret> 지금 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십오분이에요.
-     6.84s  user  발화 끝
-     7.61s  ⚡SPAN 주입 [d'=1.24s / d_lead=5.27s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul rig
-     8.77s  user  발화 시작: 응.
-     9.23s  user  발화 끝
-    12.06s  agent 발화 끝
-    12.83s  user  발화 시작: 아, 그러네. 혹시 내가 제일 좋아하는 음식이 뭐였지?
-    15.56s  <ret> 발화 (turn5 첫 프레임)
-    16.07s  agent 발화 시작: <ret> 음… 세국님이 가장 좋아하시는 음식은 돈코츠 라멘이셨어요. 힘든 날이면 꼭 찾으시더라고요.
-    16.16s  user  발화 끝
-    16.81s  ⚡SPAN 주입 [d'=1.24s / d_lead=8.57s]: [2026-05-10] User's go-to comfort dish is tonkotsu ramen.
-    24.65s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 유준님. 저는 지아이아예요. 만나 뵙게 되어 정말 기뻐요.
+     3.69s  user  발화 시작: 그치.
+     4.47s  user  발화 끝
+     6.09s  user  발화 시작: 어, 안녕하세요. 뭐 도와주실 거예요?
+     6.12s  agent 발화 끝
+     8.28s  <ret> 발화 (turn3 첫 프레임)
+     8.70s  agent 발화 시작: <ret> 지금 서울 시간은 이천이십육년 칠월 십일 금요일 오전 열시 십칠분이에요.
+     8.83s  user  발화 끝
+     9.52s  ⚡SPAN 주입 [d'=1.24s / d_lead=5.69s]: (tool result) The current time in Seoul, South Korea is 10:17 AM on Fr
+    12.16s  user  발화 시작: 음.
+    12.56s  user  발화 끝
+    14.39s  agent 발화 끝
+    14.46s  agent 발화 시작: 혹시 오늘 하루 계획 있으신가요?
+    16.81s  agent 발화 끝
+    16.90s  user  발화 시작: 아, 유럽 여행 준비 좀 해야 하는데…
+    19.29s  user  발화 끝
+    19.42s  <ret> 발화 (turn7 첫 프레임)
+    19.61s  agent 발화 시작: <ret> 유럽 여행 준비하시는군요.
+    20.66s  ⚡SPAN 주입 [d'=1.24s / d_lead=2.21s]: [2026-02-27] User is saving for a trip to Europe next year.
+    21.74s  agent 발화 시작: 내년에 유럽 여행을 가실 계획이 있으시다고 말씀하셨었죠.
+    21.82s  agent 발화 끝
+    23.38s  user  발화 시작: 응.
+    23.77s  user  발화 끝
+    26.08s  user  발화 시작: 어, 맞아요. 근데 그때보다 좀 더 구체적으로 정해야 할 것 같아서요.
+    26.08s  agent 발화 끝
+    30.20s  user  발화 끝
+    30.43s  agent 발화 시작: 여행 계획을 구체적으로 세우는 데 도움을 드릴 수 있어요. 혹시 어디를 가고 싶으신가요?
+    37.14s  agent 발화 끝

@@ -4,106 +4,135 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Bruno",
+#     "name": "Lukas",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
-#       "category": "commute",
-#       "text": "User walks 20 minutes to the office."
+#       "date": "2026-06-21",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Tobias."
+#       "date": "2026-06-06",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-05-08",
-#       "category": "wake",
-#       "text": "User usually wakes up at 5:30am for a run."
+#       "date": "2026-04-24",
+#       "category": "child",
+#       "text": "User has a child named Jisoo, age 12."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "pet",
-#       "text": "User has a Ragdoll cat named Miso."
+#       "date": "2026-03-16",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-03-30",
-#       "category": "work",
-#       "text": "User works as a paramedic."
+#       "date": "2026-02-08",
+#       "category": "streaming",
+#       "text": "User subscribes to Netflix and Spotify."
 #     },
 #     {
-#       "date": "2025-12-12",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O-."
+#       "date": "2025-12-25",
+#       "category": "employer",
+#       "text": "User works at a media company."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-09",
-#       "title": "Learning to invest",
+#       "date": "2026-06-26",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "asked about index funds vs individual stocks",
-#         "wants to start with 500k won a month"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-21",
-#       "title": "Choosing a preschool",
+#       "date": "2026-01-15",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "asked for an early-morning slot next Tuesday",
+#         "prefers Dr. Han at Bright Smile Clinic"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-13",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-01-12",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-28",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hi Keana, I’m feeling a bit lost a | S2 Definitely. So, what's a simple wa | S3 But what if they don’t respond rig | S4 Okay, that’s… helpful. I guess I j
 
-     0.00s  user  발화 시작: I’m just… well, trying to figure out who decides what plays 
-     2.91s  agent 발화 시작: Right.
-     3.50s  agent 발화 끝
-     5.95s  <ret> 발화 (turn2 첫 프레임)
-     6.39s  user  발화 끝
-     6.50s  agent 발화 시작: <ret> It often falls to the theatre director—they’re usually
-     7.77s  ⚡SPAN 주입 [d'=1.82s / d_lead=5.98s]: The theatre director is typically responsible for selecting the plays 
-    12.45s  user  발화 시작: Oh, okay. So it's not, like, a committee?
-    12.47s  agent 발화 끝
-    14.10s  agent 발화 시작: Uh-huh.
-    14.67s  agent 발화 끝
-    16.28s  user  발화 끝
-    16.40s  agent 발화 시작: [happy] Not usually, though committees *can* offer input, th
-    18.81s  user  발화 시작: Yeah.
-    19.44s  user  발화 끝
-    21.93s  agent 발화 시작: It’s a big responsibility, shaping the season! It really req
-    21.96s  agent 발화 끝
-    27.16s  agent 발화 끝
-    27.36s  user  발화 시작: Hmmmmm…that makes sense. It's a lot of pressure.
-    30.96s  agent 발화 시작: [sigh] It absolutely is. A director needs both artistic tast
-    30.96s  user  발화 끝
-    38.21s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Keana, I’m feeling a bit lost about keeping up with frien
+     3.99s  agent 발화 시작: Hi there! It's completely normal to feel that way sometimes.
+     4.09s  user  발화 끝
+    10.61s  agent 발화 끝
+    12.09s  user  발화 시작: Yeah, that’s true. But who actually… uh… who oversees the, u
+    16.95s  <ret> 발화 (turn3 첫 프레임)
+    18.76s  ⚡SPAN 주입 [d'=1.82s / d_lead=6.04s]: The Internet Architecture Board (IAB) is currently overseen by Ted Har
+    18.81s  user  발화 끝
+    18.82s  agent 발화 시작: <ret> The Internet Architecture Board, or IAB, is currently 
+    24.86s  agent 발화 끝
+    25.76s  user  발화 시작: Oh, Ted Hardie. Interesting!
+    28.33s  user  발화 끝
+    28.49s  agent 발화 시작: [happy] It is! It's good to know who's guiding things, isn't
+    33.30s  user  발화 시작: Yeah.
+    33.74s  user  발화 끝
+    34.84s  agent 발화 끝
+    34.88s  user  발화 시작: Definitely. So, what's a simple way to reach out to someone 
+    40.46s  user  발화 끝
+    40.75s  agent 발화 시작: A quick text or message is perfect! Just a simple “thinking 
+    44.33s  user  발화 시작: Right.
+    44.77s  user  발화 끝
+    46.54s  agent 발화 끝
+    46.68s  agent 발화 시작: It shows you care without pressure. You don’t need a big eve
+    50.21s  user  발화 시작: Yeah.
+    50.80s  user  발화 끝
+    51.35s  user  발화 시작: That makes sense. I always worry about bothering people.
+    51.35s  agent 발화 끝
+    55.01s  user  발화 끝
+    55.17s  agent 발화 시작: [sigh] That's a really common worry! It's okay to reach out,
+    59.39s  user  발화 시작: Oh.
+    59.83s  user  발화 끝
+    61.29s  user  발화 시작: But what if they don’t respond right away? Should I.
+    61.66s  agent 발화 끝
+    65.14s  agent 발화 시작: It's totally fine if they don't respond immediately—
+    65.31s  user  발화 끝
+    67.16s  user  발화 시작: …but does that mean they’re not interested in being friends 
+    67.86s  agent 발화 끝
+    70.16s  <ret> 발화 (turn18 첫 프레임)
+    70.74s  agent 발화 시작: <ret> It doesn’t necessarily mean they aren't interested. Re
+    70.84s  user  발화 끝
+    70.91s  ⚡SPAN 주입 [d'=0.75s / d_lead=9.04s]: Research suggests that assuming negative intent when someone doesn't r
+    79.78s  agent 발화 끝
+    80.00s  user  발화 시작: Okay, that’s… helpful. I guess I just overthink things.
+    84.67s  user  발화 끝
+    84.72s  agent 발화 시작: [curious] We all do sometimes! It’s a sign you value the fri
+    90.34s  agent 발화 끝
+    90.47s  user  발화 시작: Regular contact… like what? Beyond just texting when I think
+    95.28s  agent 발화 시작: Maybe share an article you think they’d like, or comment on 
+    95.42s  user  발화 끝
+   100.52s  agent 발화 끝

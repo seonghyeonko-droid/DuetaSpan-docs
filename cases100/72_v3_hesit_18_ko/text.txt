@@ -1,97 +1,43 @@
 v3_hesit_18_ko src=nq style=v1
-SYSTEM: <system> 당신은 트히오이아이며, 이별 후 적응을 돕는 세심하고 정직한 커리어 코치입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_hesit_18",
-    "name": "우국",
-    "location": {
-      "city": "Busan",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-05-13",
-      "category": "commute",
-      "text": "User walks 20 minutes to the office."
-    },
-    {
-      "date": "2026-05-12",
-      "category": "emergency",
-      "text": "User's emergency contact is Tobias."
-    },
-    {
-      "date": "2026-05-08",
-      "category": "wake",
-      "text": "User usually wakes up at 5:30am for a run."
-    },
-    {
-      "date": "2026-05-05",
-      "category": "pet",
-      "text": "User has a Ragdoll cat named Miso."
-    },
-    {
-      "date": "2026-03-30",
-      "category": "work",
-      "text": "User works as a paramedic."
-    },
-    {
-      "date": "2025-12-12",
-      "category": "bloodtype",
-      "text": "User's blood type is O-."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-06-09",
-      "title": "Learning to invest",
-      "bullets": [
-        "asked about index funds vs individual stocks",
-        "wants to start with 500k won a month"
-      ]
-    },
-    {
-      "date": "2026-04-21",
-      "title": "Choosing a preschool",
-      "bullets": [
-        "wants one within walking distance",
-        "asked about hours and monthly fees"
-      ]
-    },
-    {
-      "date": "2026-04-13",
-      "title": "Buying a gift for a parent",
-      "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
-      ]
-    },
-    {
-      "date": "2026-03-03",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building under 900k won/month",
-        "needed parking and a second bedroom near line 2"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 번아웃과 회복을 돕는 인내심 있고 격려하는 라이프 코치인 게미입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 극장 공연 선정은 누가 하는 ⟨ret@2.64s⟩ 걸까요?
-[  2.74s][moshi] 공연 ⟦⚡SPAN@3.82s: The theatre director is responsible for choosing shows for the theatre.⟧ 선정은 보통 극장 감독님이 담당하시죠. 극장 감독님이 어떤 공연을 올릴지 결정하는 분이세요.
-[  5.53s][user ] «backchannel» 네.
-[ 10.85s][user ] 아, 그렇군요. 그럼 연출가는 뭐 하는 사람이에요?
-[ 13.60s][moshi] ⟨ret@13.53s⟩ 연출가님은 ⟦⚡SPAN@14.57s: A stage director oversees the creative and technical aspects of a theatre production.⟧ 무대 연출의 창의적이고 기술적인 부분을 총괄하시는 분이에요. 무대 연출가님은 배우들의 연기 지도와 무대 디자인을 책임지시죠.
-[ 17.77s][user ] «backchannel» 그렇죠.
-[ 22.68s][user ] 음, 배우는 누가 고르는 ⟨ret@24.36s⟩ 거죠?
-[ 24.74s][moshi] ⟦⚡SPAN@25.17s: The casting director is responsible for selecting actors for a theatre production.⟧ 배우 섭외는 캐스팅 디렉터가 담당하세요. 캐스팅 디렉터는 공연에 맞는 배우를 선택하는 역할을 하시는 분이랍니다.
-[ 31.54s][user ] 아하, 그렇군요. 감사합니다.
-[ 33.63s][moshi] 천만에요.
+[  0.00s][user ] 음… 혹시 스타 이즈 본, 제일 처음 나온 게 ⟨ret@3.38s⟩ 언제였지?
+[  3.48s][moshi] 제일 ⟦⚡SPAN@4.56s: Janet Gaynor starred in the first Star is Born in 1937.⟧ 처음 스타 이즈 본에 출연한 건 천구백삼십칠년의 재닛 게이너였어요.
+[  8.57s][user ] 재닛 게이너… 이름이 좀 낯설긴 한데.
+[ 12.05s][moshi] 처음 들어보시는 분일 수도 있겠네요.
+[ 14.04s][user ] 그… 아, 옛날 영화구나. 혹시 다른 배우들도 ⟨ret@17.00s⟩ 있었어?
+[ 17.39s][moshi] ⟦⚡SPAN@18.05s: Fredric March also starred in the 1937 version of A Star is Born.⟧ 천구백삼십칠년 스타 이즈 본에는 프레드릭 마치도 함께 출연했어요.
+[ 21.62s][user ] 프레드릭 마치… 그 사람도 오래된 배우인가 보네.
+[ 24.65s][moshi] 네, 프레드릭 마치도 꽤 오래된 배우시죠.
+[ 26.49s][user ] «backchannel» 응.
+[ 27.91s][user ] 아, 옛날 영화들은 다 그렇게 이름이 낯설어. 요즘 영화들은 누가 나왔는지 바로 알겠던데.
+[ 33.21s][moshi] 요즘 영화는 더 쉽게 접할 수 있으니까 그럴 거예요.
+[ 34.34s][user ] «backchannel» 그래.
+[ 36.47s][user ] 요즘 영화는… 음… 혹시 최근에 나온 영화 중에 볼 만한 거 있어?
+[ 39.21s][moshi] «backchannel» 예.
+[ 41.15s][moshi] 어떤 장르를 좋아하시나요?
+[ 43.12s][user ] 그냥… 재미있는 거. 코미디?
+[ 46.16s][moshi] ⟨ret@46.04s⟩ ⟦⚡SPAN@46.64s: (tool result) "Top comedy movies: 'Barbie' (2023), 'The Super Mario Bros. Movie' (2023), 'No Hard Feelings' (2⟧ 요즘 인기 있는 코미디 영화는 '바비'(이천이십삼), '슈퍼 마리오 브라더스'(이천이십삼), '노 하드 필링스'(이천이십삼)가 있어요.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"genre": "comedy"}}
+[ 54.31s][user ] 바비? 그거 좀 웃기던데.
+[ 56.09s][moshi] 네, '바비'는 많은 분들이 재미있다고 하시더라고요.
+[ 57.52s][user ] «backchannel» 맞아.
+[ 58.93s][user ] 아, 그럼 '바비' 예매해 줘. 이번 주 토요일 저녁 ⟨ret@62.31s⟩ 일곱시에.
+[ 60.14s][moshi] «backchannel» 예.
+[ 62.69s][moshi] 네, ⟦⚡SPAN@63.54s: (tool result) "Booking confirmed: Barbie, July 11, 2026, 7:00 PM, 2 tickets, total cost ₩30,000."⟧ '바비' 영화, 이천이십육년 칠월 십일일 저녁 일곱시로 두장 예매 완료되었습니다. 총 비용은 삼만 원입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Barbie", "date": "2026-07-11", "time": "19:00"}}
+[ 70.63s][user ] 오, 고마워!
+[ 71.77s][moshi] 천만에요. 즐거운 시간 보내세요.
+[ 76.11s][user ] 아, 그리고… 혹시 토요일 저녁에 맛있는 저녁 먹을 만한 곳도 추천해 줄 수 있어?
+[ 78.39s][moshi] «backchannel» 네.
+[ 82.00s][moshi] 어떤 종류의 음식을 좋아하세요?
+[ 83.86s][user ] 음… 그냥 ⟨ret@85.28s⟩ 한식.
+[ 85.53s][moshi] 근처 ⟦⚡SPAN@86.57s: (tool result) "Nearby Korean restaurants: 'Han Cook'(rating 4.5, price $$), 'Seoul Garden'(rating 4.2, price $⟧ 한식집으로는 '한쿡'(평점 사 점 오, 가격 보통), '서울 가든'(평점 사 점 이, 가격 저렴)이 있습니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean"}}
+[ 93.22s][user ] '한쿡'으로 예약해 줘. 토요일 저녁 일곱시 반. 두 ⟨ret@97.19s⟩ 명.
+[ 96.31s][moshi] «backchannel» 네네.
+[ 97.63s][moshi] 네, ⟦⚡SPAN@98.44s: (tool result) "Reservation confirmed at Han Cook for July 11, 2026, 7:30 PM, party of 2."⟧ '한쿡' 식당, 이천이십육년 칠월 십일일 저녁 일곱시 반으로 두명 예약 완료되었습니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Han Cook", "date": "2026-07-11", "time": "19:30", "party_size": 2}}
+[103.74s][user ] 알았어, 고마워.
+[105.25s][moshi] 즐거운 주말 보내세요.

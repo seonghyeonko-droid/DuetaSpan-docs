@@ -1,10 +1,10 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Ena, a grounded and hopeful mindfulness guide who helps people with building better routines. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Somi, a gentle and perceptive listening companion who helps people with building better routines. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Sky",
+    "name": "Ella",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,124 +12,78 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-06",
-      "category": "floor",
-      "text": "User lives on the 3rd floor."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "wake",
-      "text": "User usually wakes up at 5:30am for a run."
-    },
-    {
-      "date": "2026-03-12",
+      "date": "2026-06-09",
       "category": "savings",
       "text": "User is saving for a wedding."
     },
     {
-      "date": "2026-02-15",
-      "category": "work",
-      "text": "User works as a civil engineer."
+      "date": "2026-05-12",
+      "category": "anniversary",
+      "text": "User's anniversary is August 13."
     },
     {
-      "date": "2026-01-30",
+      "date": "2026-02-23",
       "category": "airline",
-      "text": "User usually flies with Delta."
+      "text": "User usually flies with Lufthansa."
     },
     {
-      "date": "2026-01-21",
-      "category": "show",
-      "text": "User is currently watching a stand-up comedy special."
+      "date": "2026-02-22",
+      "category": "phone",
+      "text": "User uses an iPhone SE."
     },
     {
-      "date": "2026-01-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-02-07",
+      "category": "coffee",
+      "text": "User's usual coffee order is black drip coffee."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
-      "title": "Comparing gym memberships",
+      "date": "2025-12-26",
+      "title": "Fixing a leaking faucet",
       "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
       ]
     },
     {
-      "date": "2026-03-16",
-      "title": "Adopting a rescue dog",
+      "date": "2025-12-20",
+      "title": "Looking for a therapist",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
-      ]
-    },
-    {
-      "date": "2026-01-12",
-      "title": "Planning a dinner party",
-      "bullets": [
-        "hosting eight friends on Saturday",
-        "one guest is gluten-free"
-      ]
-    },
-    {
-      "date": "2026-01-05",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot next Tuesday",
-        "prefers Dr. Han at Bright Smile Clinic"
+        "prefers evening video sessions",
+        "wants someone who does CBT"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m feeling really stressed lately, and I want to build a better morning routine.
-[  3.91s][moshi] It’s wonderful you’re prioritizing self-care. A calm morning can set a positive tone.
-[ 10.80s][user ] That sounds great! Do you have any suggestions for starting?
-[ 14.39s][moshi] [happy] Starting small is key. Perhaps five minutes of mindful breathing?
-[ 20.16s][user ] Five minutes sounds doable. What else could I add?
-[ 22.89s][moshi] Gentle stretching, a glass of water, or journaling could be nice additions.
-[ 26.53s][user ] «backchannel» Yeah.
-[ 28.16s][user ] Journaling… I haven’t done that in years. What should I write about?
-[ 31.81s][moshi] Gratitude, intentions for the day, or simply your thoughts – anything feels right.
-[ 35.49s][user ] «backchannel» Yeah.
-[ 38.07s][user ] Okay, gratitude sounds good. I'm also trying to eat healthier.
-[ 41.73s][moshi] That’s fantastic! Small changes to your diet can make a big difference.
-[ 44.05s][user ] «backchannel» Uh-huh.
-[ 47.24s][user ] I was thinking about making smoothies. Do you have a good ⟨ret@50.33s⟩ recipe?
-[ 49.29s][moshi] «backchannel» Yeah.
-[ 50.66s][moshi] ⟦⚡SPAN@51.06s: A simple smoothie recipe includes one cup of spinach, half a banana, half a cup of berries, and one cup of alm⟧ For a quick and nutritious boost, you could try a smoothie. It’s simple – one cup of spinach, half a banana, half a cup of berries, and one cup of almond milk.
-[ 62.07s][user ] That sounds really good! I think I'll try that tomorrow.
-[ 65.26s][moshi] [happy] Wonderful! Consistency is more important than perfection, remember that.
-[ 68.73s][user ] «backchannel» Okay.
-[ 71.22s][user ] I'm also planning a trip to Sydney next month.
-[ 74.02s][moshi] Sydney! A beautiful city. Are you hoping to find any specific attractions there?
-[ 80.38s][user ] I'd love to find some beaches. Free entry would ⟨ret@83.29s⟩ be ideal.
-[ 82.25s][moshi] «backchannel» Right.
-[ 83.77s][moshi] Give me ⟦⚡SPAN@84.52s: (tool result) (no information found)⟧ a moment while I check for free beaches in Sydney.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Sydney, Australia", "free_entry": "True", "category": "beach"}}
-[ 85.02s][user ] «backchannel» Yeah.
-[ 87.14s][user ] Okay, thanks.
-[ 88.88s][moshi] [sigh] It seems information on free-entry beaches in Sydney is limited at the moment.
-[ 94.08s][user ] Oh, that's disappointing. Maybe I could look for parks instead? –
-[ 97.06s][user ] …Actually, before we go down that rabbit hole, could you find me a good Thai restaurant ⟨ret@101.41s⟩ in Sydney?
-[101.90s][moshi] ⟦⚡SPAN@102.01s: (tool result) (no information found)⟧ [curious] That's a great idea! Let me search for Thai restaurants in Sydney for you.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"category": "Thai", "location": "Sydney, Australia"}}
-[107.46s][moshi] Unfortunately, my search didn’t return any Thai restaurants in Sydney right now.
-[110.79s][user ] «backchannel» Yeah.
-[112.71s][user ] That's strange. Sydney is a big city!
-[115.92s][moshi] It is, indeed. Sometimes the data isn’t fully updated. Perhaps try searching again later?
-[123.55s][user ] You’re right. Maybe I'll just explore and see what I find.
-[126.99s][moshi] [happy] That sounds lovely! Embracing the unexpected can be very rewarding.
-[132.58s][user ] I think I need to set an alarm for tomorrow morning, to wake up early.
-[136.74s][moshi] Excellent! What time would you like me to set it for?
-[140.97s][user ] 6:30 ⟨ret@141.10s⟩ AM, please.
-[142.71s][moshi] ⟦⚡SPAN@143.10s: (tool result) Alarm set for 06:30, confirmed⟧ Your alarm is set for six thirty AM. A peaceful start awaits you.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:30"}}
+[  0.00s][user ] I’m trying to build a better morning routine. Any ideas?
+[  3.56s][moshi] Starting small is often the best approach.
+[  7.08s][user ] I keep hitting snooze. It’s ⟨ret@9.01s⟩ awful.
+[  9.16s][moshi] That’s ⟦⚡SPAN@9.86s: (no information found)⟧ really common! Let’s see…
+      CALL: {"function": "Alarm_1_GetAlarms", "arguments": {}}
+[ 11.77s][moshi] It looks like you don’t have any alarms currently set. Perhaps that’s part of the issue?
+[ 14.58s][user ] «backchannel» Right.
+[ 17.34s][user ] No, I set one, but I just turn it off.
+[ 18.55s][moshi] «backchannel» Yeah.
+[ 19.71s][moshi] Hmm, okay. It sounds like you need something… more compelling.
+[ 21.81s][user ] «backchannel» Uh-huh.
+[ 25.40s][user ] Maybe a walk before ⟨ret@26.72s⟩ work? Would that help?
+[ 27.90s][moshi] ⟦⚡SPAN@27.84s: (tool result) Discovery Park, 3801 Discovery Park Blvd, Seattle, WA 98199, USA, lat 47.66266, lon -122.41289⟧ Discovery Park in Seattle is a lovely place for a walk. It’s at latitude 47.66, longitude -122.41.
+      CALL: {"function": "map_geo", "arguments": {"address": "Discovery Park", "city": "Seattle, WA"}}
+[ 34.16s][user ] «backchannel» Yeah.
+[ 40.53s][user ] That’s pretty far. Is there something closer?
+  ⟦⚡지연 SPAN 도착@42.70s: Kerry Park, 211 W Highland Dr, Seattle, WA 98119, USA, lat 47.60683, lon -122.33473⟧
+[ 43.49s][moshi] «deferred_result» ⟨ret@43.49s⟩ Oh — about closer parks. Kerry Park is much closer, at latitude 47.60, longitude -122.33. It’s known for its city views!
+[ 47.78s][user ] «backchannel» Yeah.
+[ 58.08s][user ] That sounds perfect! But—
+[ 60.10s][user ] …what’s the weather like there ⟨ret@62.21s⟩ right now?
+[ 63.29s][moshi] It’s ⟦⚡SPAN@64.00s: (tool result) Current conditions: 68°F, partly cloudy, wind 8 mph from the southwest.⟧ currently 68 degrees Fahrenheit and partly cloudy, with an 8 mile per hour wind from the southwest. Sounds pleasant enough for a walk, doesn’t it?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seattle, WA"}}

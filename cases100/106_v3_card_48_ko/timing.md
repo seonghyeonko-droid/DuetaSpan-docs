@@ -4,344 +4,274 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_48",
-#     "name": "하찬",
+#     "name": "예현",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "pet",
-#       "text": "User has a Ragdoll cat named Miso."
-#     },
-#     {
-#       "date": "2026-04-23",
+#       "date": "2026-04-18",
 #       "category": "bloodtype",
-#       "text": "User's blood type is B+."
+#       "text": "User's blood type is B-."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "date": "2026-04-06",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
 #     },
 #     {
-#       "date": "2026-03-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-04-03",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is margherita pizza."
+#       "date": "2026-03-04",
+#       "category": "medication",
+#       "text": "User takes insulin."
 #     },
 #     {
-#       "date": "2026-01-30",
-#       "category": "work",
-#       "text": "User works as a HR manager."
+#       "date": "2026-03-02",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 26°C."
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "category": "hobby",
-#       "text": "User is into calligraphy."
+#       "date": "2026-01-08",
+#       "category": "show",
+#       "text": "User is currently watching a stand-up comedy special."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "dislike",
-#       "text": "User can't stand liver."
+#       "date": "2025-12-28",
+#       "category": "diet",
+#       "text": "User is keto."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "child",
+#       "text": "User has a child named Marco, age 2."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-13",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-04-03",
+#       "title": "Buying a gift for a parent",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-07",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-02-20",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-12",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 의사 선생님 진료 예약이 삼월 이십육일 오후 두시 십오분 | S2 아, 인사이드 아웃 이요? 재밌을 것 같은데요. | S3 네, 노력해야죠. | S4 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 크리오우스 씨. 요즘 부모님 건강이 좀 걱정돼서요 | S2 혹시 강남에 맛있는 식당도 추천해 주실 수 있나요? | S3 부모님 건강 관리도 신경 써야 하는데… | S4 아직 정하지 않았어요. 세브란스 병원 건강검진센터에 예약 가능
 
-     0.00s  user  발화 시작: 오늘 의사 선생님 진료 예약이 삼월 이십육일 오후 두시 십오분으로 되어 있어요. 비용은 십만 오천원이에요.
-     7.68s  agent 발화 시작: 네, 기억해 둘게요. 다른 계획은 없으세요?
-     7.70s  user  발화 끝
-    12.17s  agent 발화 끝
-    13.63s  user  발화 시작: 요즘 'Yeh Un Dino Ki Baat Hai'에 나오는 나이나 역할 배우가 누구인지 궁금해요.
-    17.28s  agent 발화 시작: 네.
-    18.05s  agent 발화 끝
-    19.18s  user  발화 끝
-    19.34s  agent 발화 시작: 아, 그 드라마에 관심이 있으시군요. 어떤 점이 궁금하신가요?
-    21.21s  user  발화 시작: 네네.
-    21.79s  user  발화 끝
-    25.57s  agent 발화 끝
-    25.68s  user  발화 시작: 배우 이름을 알고 싶어요.
-    26.98s  <ret> 발화 (turn7 첫 프레임)
-    27.31s  agent 발화 시작: <ret> 그 드라마에서 나이나 역할을 맡은 배우는 아시 싱이라고 합니다. 인도의 텔레비전 배우입니다.
-    27.38s  user  발화 끝
-    27.99s  ⚡SPAN 주입 [d'=1.01s / d_lead=8.39s]: Ashi Singh is an Indian television actress who is known for playing th
-    35.69s  agent 발화 끝
-    36.18s  user  발화 시작: 아, 아시 싱이군요. 네, 기억해 두겠습니다.
-    39.89s  user  발화 끝
-    39.98s  agent 발화 시작: 드라마를 즐겁게 시청하시길 바랍니다. 혹시 다른 드라마도 즐겨 보시나요?
-    44.03s  user  발화 시작: 그렇죠.
-    44.80s  user  발화 끝
-    46.24s  user  발화 시작: 가끔 보는데, 요즘은 특별히 보고 있는 건 없어요.
-    46.28s  agent 발화 끝
-    50.12s  user  발화 끝
-    50.58s  agent 발화 시작: 그렇군요. 요즘 날씨가 많이 따뜻해졌는데, 산책이라도 가보시는 건 어떠세요?
-    57.66s  agent 발화 끝
-    58.01s  user  발화 시작: 날씨가 좋으면 산책도 좋죠. 부산 해운대 근처에 괜찮은 카페 아세요?
-    63.30s  <ret> 발화 (turn14 첫 프레임)
-    63.37s  agent 발화 시작: <ret> 해운대 해변 근처에 카페 베네가 있습니다. 주소는 해운대해변로 이백칠십구번지이고, 오전 열시부터 
-    63.43s  user  발화 끝
-    64.51s  ⚡SPAN 주입 [d'=1.22s / d_lead=12.66s]: Cafe Bene Haeundae Beach is located at 279, Haeundaehaebyeon-ro, Haeun
-    76.03s  agent 발화 끝
-    76.90s  user  발화 시작: 아, 카페 베네요. 가끔 가봤어요. 좀 더 조용한 곳 없을까요?
-    81.55s  agent 발화 시작: 조용한 곳을 찾으시는군요. 해운대 근처에 분위기 좋은 작은 카페들이 몇 군데 있어요.
-    81.57s  user  발화 끝
-    85.12s  user  발화 시작: 네네.
-    85.85s  user  발화 끝
-    89.23s  user  발화 시작: 추천해 주실 수 있나요?
-    89.33s  agent 발화 끝
-    90.57s  <ret> 발화 (turn19 첫 프레임)
-    90.84s  agent 발화 시작: <ret> 해운대구에 있는 모리 하나 커피라는 작은 카페가 조용하고 커피도 맛있다고 합니다. 오전 열한시부터
-    90.95s  user  발화 끝
-    91.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.43s]: Mori Hana Coffee is a small cafe located in Haeundae-gu, Busan. It is 
-    97.61s  user  발화 시작: 네.
-    98.00s  user  발화 끝
-   101.21s  user  발화 시작: 모리 하나 커피요? 한번 가봐야겠네요.
-   101.28s  agent 발화 끝
-   103.89s  user  발화 끝
-   103.97s  agent 발화 시작: 꼭 한번 가보세요. 마음에 드실 거예요.
-   106.12s  user  발화 시작: 네.
-   106.63s  user  발화 끝
-   107.75s  agent 발화 끝
-   109.32s  user  발화 시작: 부산에서 데이트하기 좋은 레스토랑도 추천해 주실 수 있나요?
-   113.08s  <ret> 발화 (turn25 첫 프레임)
-   113.63s  agent 발화 시작: <ret> 해운대구에 있는 라 보엠이라는 프랑스 레스토랑이 로맨틱한 분위기와 맛있는 프랑스 요리로 유명합니다
-   113.80s  user  발화 끝
-   114.35s  ⚡SPAN 주입 [d'=1.27s / d_lead=11.13s]: La Boheme is a French restaurant located in Haeundae-gu, Busan. It is 
-   117.69s  user  발화 시작: 음.
-   118.14s  user  발화 끝
-   124.75s  user  발화 시작: 라 보엠이요. 분위기가 좋으면 좋을 것 같아요.
-   124.76s  agent 발화 끝
-   128.07s  agent 발화 시작: 분위기가 정말 좋아요. 기념일에 가기에도 좋을 것 같아요.
-   128.20s  user  발화 끝
-   133.67s  agent 발화 끝
-   133.69s  user  발화 시작: 요즘 영화관에서 상영하는 영화 중에 볼 만한 게 있을까요?
-   137.89s  <ret> 발화 (turn30 첫 프레임)
-   137.98s  agent 발화 시작: <ret> 현재 부산 해운대 롯데시네마에서 '인사이드 아웃 이'가 상영 중입니다. 오전 열시부터 밤 열시까지
-   138.10s  user  발화 끝
-   139.67s  ⚡SPAN 주입 [d'=1.78s / d_lead=11.59s]: "Inside Out 2" is currently showing at Lotte Cinema Haeundae in Busan.
-   149.47s  user  발화 시작: 아, 인사이드 아웃 이요? 재밌을 것 같은데요.
-   149.58s  agent 발화 끝
-   152.63s  user  발화 끝
-   152.75s  agent 발화 시작: 평점이 높아서 많은 사람들이 재미있다고 하네요.
-   157.23s  agent 발화 끝
-   157.45s  user  발화 시작: 오늘 저녁 메뉴는 뭘로 할까요?
-   159.87s  user  발화 끝
-   159.94s  agent 발화 시작: 저녁 메뉴 고민이시군요. 혹시 특별히 드시고 싶은 음식이 있으세요?
-   166.79s  agent 발화 끝
-   167.22s  user  발화 시작: 글쎄요, 딱히 생각나는 건 없어요.
-   169.81s  user  발화 끝
-   169.85s  agent 발화 시작: 그렇군요. 근처에 맛있는 파스타집이 있는데, 한번 가보시는 건 어떠세요?
-   176.66s  agent 발화 끝
-   177.15s  user  발화 시작: 파스타도 좋죠. 부산역 근처에 괜찮은 파스타집 아세요?
-   180.98s  <ret> 발화 (turn38 첫 프레임)
-   181.51s  user  발화 끝
-   181.53s  agent 발화 시작: <ret> 부산역 근처에 파스타 미아라는 이탈리아 레스토랑이 있는데, 맛있는 파스타와 피자로 유명합니다. 평
-   182.37s  ⚡SPAN 주입 [d'=1.39s / d_lead=11.40s]: Pasta Mia is an Italian restaurant located near Busan Station. It is k
-   192.00s  🃏 CARD 주입 (2400f, 누적 39턴 요약, 95f): appointment time: 삼월 이십육일 오후 두시 십오분 (3분 전); appointment cost: 십만 오천원 (3분 전)
-   192.93s  agent 발화 끝
-   193.01s  user  발화 시작: 파스타 미아요. 한번 가봐야겠네요.
-   195.70s  agent 발화 시작: 꼭 한번 가보세요. 마음에 드실 거예요.
-   195.79s  user  발화 끝
-   197.85s  user  발화 시작: 네.
-   198.29s  user  발화 끝
-   199.48s  agent 발화 끝
-   199.68s  user  발화 시작: 오늘 의사 선생님 진료가 몇 시였죠?
-   202.01s  user  발화 끝
-   202.41s  agent 발화 시작: 오늘 의사 선생님 진료는 오후 두시 십오분이었습니다.
-   204.73s  user  발화 시작: 그렇죠.
-   205.32s  user  발화 끝
-   207.47s  agent 발화 끝
-   207.95s  user  발화 시작: 아, 맞다. 오후 두시 십오분이었죠.
-   210.52s  agent 발화 시작: 네, 맞습니다. 진료 잘 받으시길 바랍니다.
-   210.57s  user  발화 끝
-   214.85s  user  발화 시작: 감사합니다. 요즘 스트레스가 좀 심한데, 마음을 다스리는 데 도움이 되는 게 있을까요?
-   214.98s  agent 발화 끝
-   220.70s  user  발화 끝
-   221.01s  agent 발화 시작: 스트레스가 심하시군요. 마음을 다스리는 데 도움이 되는 여러 가지 방법이 있습니다.
-   229.21s  user  발화 시작: 어떤 방법들이 있나요?
-   229.35s  agent 발화 끝
-   230.97s  agent 발화 시작: 명상이나 요가를 해보시는 건 어떠세요?
-   231.04s  user  발화 끝
-   234.52s  user  발화 시작: 명상도 좋죠.
-   234.62s  agent 발화 끝
-   235.74s  user  발화 끝
-   236.03s  agent 발화 시작: 아니면, 좋아하는 음악을 듣거나 책을 읽는 것도 도움이 될 수 있습니다.
-   238.71s  user  발화 시작: 예.
-   239.23s  user  발화 끝
-   241.63s  agent 발화 끝
-   241.85s  user  발화 시작: 음악 듣는 것도 좋아해요.
-   243.72s  agent 발화 시작: 긍정적인 생각을 하려고 노력하는 것도 중요합니다.
-   243.78s  user  발화 끝
-   248.03s  agent 발화 끝
-   248.29s  user  발화 시작: 네, 노력해야죠.
-   249.48s  agent 발화 시작: 힘든 일이 있으면 언제든지 저에게 말씀해주세요.
-   249.57s  user  발화 끝
-   254.68s  agent 발화 끝
-   254.81s  user  발화 시작: 감사합니다.
-   255.65s  agent 발화 시작: 도움이 되어 기쁩니다.
-   255.70s  user  발화 끝
-   257.53s  user  발화 시작: 부산에서 주말에 갈 만한 곳 추천해 주실 수 있나요?
-   257.91s  agent 발화 끝
-   260.47s  <ret> 발화 (turn61 첫 프레임)
-   261.06s  agent 발화 시작: <ret> 영도구에 있는 태종대 공원은 아름다운 바다 전망을 자랑하는 관광 명소입니다.
-   261.19s  user  발화 끝
-   262.04s  ⚡SPAN 주입 [d'=1.57s / d_lead=7.18s]: Taejongdae Park is a scenic park located in Yeongdo-gu, Busan. It offe
-   265.19s  user  발화 시작: 예.
-   265.58s  user  발화 끝
-   268.24s  agent 발화 끝
-   269.30s  user  발화 시작: 태종대 공원이요. 가본 적은 없는데, 한번 가봐야겠네요.
-   273.72s  agent 발화 시작: 꼭 한번 가보세요. 정말 아름다운 곳입니다.
-   273.82s  user  발화 끝
-   275.88s  user  발화 시작: 네.
-   276.45s  user  발화 끝
-   278.05s  user  발화 시작: 오늘 저녁에 영화를 볼까 하는데, 어떤 영화가 좋을까요?
-   278.15s  agent 발화 끝
-   281.62s  <ret> 발화 (turn67 첫 프레임)
-   281.76s  agent 발화 시작: <ret> 현재 씨 지 브이 부산 해운대에서 '배드 보이즈: 라이드 오어 다이'가 상영 중입니다. 오전 열한
-   281.93s  user  발화 끝
-   282.67s  ⚡SPAN 주입 [d'=1.04s / d_lead=12.38s]: "Bad Boys: Ride or Die" is currently showing at CGV Busan Haeundae. Sh
-   294.14s  agent 발화 끝
-   294.14s  user  발화 시작: 배드 보이즈요? 액션 영화 좋아해요.
-   297.09s  user  발화 끝
-   297.24s  agent 발화 시작: 액션 영화를 좋아하시는군요. 재미있게 보실 수 있을 거예요.
-   301.07s  user  발화 시작: 네네.
-   301.85s  user  발화 끝
-   303.10s  agent 발화 끝
-   303.83s  user  발화 시작: 오늘 의사 선생님 진료비가 얼마였죠?
-   306.86s  agent 발화 시작: 오늘 의사 선생님 진료비는 십만 오천원이었습니다.
-   306.90s  user  발화 끝
-   311.53s  agent 발화 끝
-   311.70s  user  발화 시작: 아, 맞다. 십만 오천원이 맞았죠.
-   314.81s  agent 발화 시작: 네, 맞습니다. 건강 관리에 유의하세요.
-   314.82s  user  발화 끝
-   319.74s  agent 발화 끝
-   320.96s  user  발화 시작: 감사합니다. 요즘 너무 피곤한데, 잠을 잘 자는 방법이 있을까요?
-   325.47s  user  발화 끝
-   325.98s  agent 발화 시작: 잠을 잘 자는 방법에 대해 궁금하시군요.
-   329.77s  agent 발화 끝
-   330.19s  user  발화 시작: 네, 잠을 잘 자고 싶어요.
-   332.38s  agent 발화 시작: 잠들기 전에 따뜻한 물로 샤워를 하거나, 따뜻한 우유를 마시는 것도 도움이 될 수 있습니다.
-   332.40s  user  발화 끝
-   341.10s  agent 발화 끝
-   341.15s  user  발화 시작: 따뜻한 우유도 좋죠.
-   342.73s  user  발화 끝
-   343.14s  agent 발화 시작: 잠자리에 들기 전에 스마트폰이나 컴퓨터 사용을 자제하는 것도 중요합니다.
-   349.16s  user  발화 시작: 네, 노력해야죠.
-   349.25s  agent 발화 끝
-   350.72s  user  발화 끝
-   351.18s  agent 발화 시작: 편안한 잠자리를 만드시길 바랍니다.
-   354.67s  agent 발화 끝
-   354.82s  user  발화 시작: 감사합니다.
-   355.69s  agent 발화 시작: 도움이 되어 기쁩니다.
-   355.76s  user  발화 끝
-   357.81s  agent 발화 끝
-   358.18s  user  발화 시작: 부산에서 분위기 좋은 호텔 추천해 주실 수 있나요?
-   361.44s  <ret> 발화 (turn86 첫 프레임)
-   361.71s  agent 발화 시작: <ret> 해운대구에 있는 파크 하얏트 부산은 아름다운 바다 전망과 세계적인 수준의 시설을 갖춘 고급 호텔입
-   361.80s  user  발화 끝
-   362.87s  ⚡SPAN 주입 [d'=1.42s / d_lead=9.49s]: Park Hyatt Busan is a luxury hotel located in Haeundae-gu, Busan. It o
-   368.03s  user  발화 시작: 네.
-   368.71s  user  발화 끝
-   371.20s  agent 발화 끝
-   371.51s  user  발화 시작: 파크 하얏트 부산이요. 비쌀 것 같은데요.
-   374.69s  agent 발화 시작: 고급 호텔이라 가격은 비싼 편입니다.
-   374.75s  user  발화 끝
-   378.18s  user  발화 시작: 좀 더 저렴한 호텔은 없을까요?
-   378.21s  agent 발화 끝
-   380.14s  <ret> 발화 (turn91 첫 프레임)
-   380.49s  user  발화 끝
-   380.55s  agent 발화 시작: <ret> 해운대구에 있는 호텔 엘씨티는 편안한 숙박 시설과 해변까지 편리하게 접근할 수 있는 중간 가격대의
-   381.91s  ⚡SPAN 주입 [d'=1.77s / d_lead=9.18s]: Hotel LCT is a mid-range hotel located in Haeundae-gu, Busan. It offer
-   384.00s  🃏 CARD 주입 (4800f, 누적 92턴 요약, 75f): appointment time: 오후 두시 십오분 (6분 전); appointment cost: 십만 오천원 (6분 전)
-   389.73s  agent 발화 끝
-   390.80s  user  발화 시작: 호텔 엘씨티요. 괜찮겠네요.
-   393.43s  user  발화 끝
-   393.65s  agent 발화 시작: 가격도 합리적이고, 위치도 좋아서 괜찮습니다.
-   398.40s  agent 발화 끝
-   398.45s  user  발화 시작: 부산에서 맛있는 커피를 마실 수 있는 곳은 어디일까요?
-   400.29s  agent 발화 시작: 네.
-   401.06s  agent 발화 끝
-   402.39s  user  발화 끝
-   402.46s  <ret> 발화 (turn96 첫 프레임)
-   402.46s  agent 발화 시작: <ret> 부산에 있는 앤트러사이트 커피 로스터스는 고품질 커피와 세련된 인테리어로 유명한 인기 있는 커피숍
-   403.64s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.52s]: Anthracite Coffee Roasters is a popular coffee shop located in Busan. 
-   408.73s  user  발화 시작: 네.
-   409.40s  user  발화 끝
-   410.99s  agent 발화 끝
-   411.94s  user  발화 시작: 앤트러사이트 커피 로스터스요. 한번 가봐야겠네요.
-   416.10s  agent 발화 시작: 꼭 한번 가보세요. 커피 맛이 정말 좋습니다.
-   416.13s  user  발화 끝
-   419.86s  user  발화 시작: 네.
-   420.30s  user  발화 끝
-   421.13s  user  발화 시작: 오늘 저녁 메뉴는 뭘로 할까요? —
-   421.18s  agent 발화 끝
-   423.65s  user  발화 끝
-   423.67s  user  발화 시작: … 혹시 근처에 맛있는 곱창집 아세요?
-   426.27s  <ret> 발화 (turn103 첫 프레임)
-   426.56s  agent 발화 시작: <ret> 네, 해운대 근처에 맛있는 곱창집이 몇 군데 있습니다.
-   426.59s  user  발화 끝
-   427.65s  ⚡SPAN 주입 [d'=1.38s / d_lead=5.37s]: Gopchang Story Haeundae is a popular Korean BBQ restaurant specializin
-   431.93s  agent 발화 끝
-   431.98s  agent 발화 시작: 해운대구에 있는 곱창스토리 해운대점이 곱창 전문점으로 인기가 많습니다.
-   438.63s  user  발화 시작: 곱창스토리 해운대점이요. 한번 가봐야겠네요.
-   438.69s  agent 발화 끝
-   442.33s  agent 발화 시작: 꼭 한번 가보세요. 곱창 맛이 정말 좋습니다.
-   442.48s  user  발화 끝
-   447.40s  user  발화 시작: 감사합니다.
-   447.49s  agent 발화 끝
-   448.36s  user  발화 끝
-   448.43s  agent 발화 시작: 도움이 되어 기쁩니다. 오늘 하루도 즐겁게 보내세요.
-   453.64s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 크리오우스 씨. 요즘 부모님 건강이 좀 걱정돼서요.
+     5.10s  agent 발화 시작: 안녕하세요, 예현님. 부모님 건강이 걱정되시는군요. 제가 옆에서 힘이 되어 드릴게요.
+     5.13s  user  발화 끝
+    12.86s  agent 발화 끝
+    14.32s  user  발화 시작: 다행이에요. 지난달에 호텔 예약했는데, 일월 구일 오후 열두시 십오분 체크인이에요.
+    20.07s  agent 발화 시작: 네, 기억해 둘게요.
+    20.16s  user  발화 끝
+    22.06s  agent 발화 끝
+    22.16s  user  발화 시작: 숙박비는 오만 원으로 이미 다 정해놨어요.
+    25.14s  agent 발화 시작: 네, 알겠습니다. 오만 원이시군요.
+    25.17s  user  발화 끝
+    29.44s  agent 발화 끝
+    30.01s  user  발화 시작: 요즘 미국에서 제일 부자인 주는 어디예요?
+    32.57s  <ret> 발화 (turn7 첫 프레임)
+    32.89s  agent 발화 시작: <ret> 미국에서 제일 부자… 메릴랜드 주의 가구당 중간 소득이 구만 이백삼달러이고, 일인당 소득은 사만 
+    32.93s  user  발화 끝
+    33.57s  ⚡SPAN 주입 [d'=1.01s / d_lead=2.12s]: Maryland boasts a median household income of $90,203 and a per capita 
+    48.47s  agent 발화 끝
+    48.49s  user  발화 시작: 아, 그렇군요. 메릴랜드 주는 처음 들어봐요.
+    52.02s  user  발화 끝
+    52.08s  agent 발화 시작: 네, 좋은 곳이 많다고 들었어요.
+    55.21s  agent 발화 끝
+    55.69s  user  발화 시작: 음… 요즘 영화 볼 만한 거 있어요?
+    58.25s  user  발화 끝
+    58.27s  <ret> 발화 (turn11 첫 프레임)
+    58.37s  agent 발화 시작: <ret> 지금 상영 중인 영화로는 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', '가필드 무비'
+    59.49s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.04s]: (tool result) Currently showing movies include 'Inside Out 2', 'Bad Bo
+    64.31s  user  발화 시작: 그렇죠.
+    65.01s  user  발화 끝
+    67.41s  agent 발화 끝
+    67.72s  user  발화 시작: '인사이드 아웃 이'가 재미있어 보이네요. 예매할 수 있을까요?
+    69.23s  agent 발화 시작: 음.
+    69.72s  agent 발화 끝
+    71.76s  <ret> 발화 (turn15 첫 프레임)
+    72.11s  agent 발화 시작: <ret> 죄송하지만, 제가 직접 영화 티켓을 예매해 드릴 수는 없어요. 상영 시간만 찾아드릴 수 있습니다.
+    72.22s  user  발화 끝
+    72.48s  ⚡SPAN 주입 [d'=0.71s / d_lead=9.09s]: (tool result) I cannot directly book movie tickets. I can only find sh
+    77.35s  user  발화 시작: 그렇죠.
+    78.15s  user  발화 끝
+    81.16s  user  발화 시작: 아, 그렇군요. 그럼 '인사이드 아웃 이' 상영 시간 좀 알아봐 주시겠어요?
+    81.20s  agent 발화 끝
+    85.91s  <ret> 발화 (turn18 첫 프레임)
+    85.99s  agent 발화 시작: <ret> 오늘 씨 지 브이 강남에서 '인사이드 아웃 이' 상영 시간은 오후 두시, 네시 삼십분, 일곱시입니
+    86.09s  user  발화 끝
+    87.10s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.90s]: (tool result) Showtimes for 'Inside Out 2' at CGV Gangnam are 14:00, 1
+    92.89s  agent 발화 끝
+    93.00s  user  발화 시작: 오후 네시 삼십분으로 알아봐 주세요.
+    95.69s  user  발화 끝
+    96.09s  agent 발화 시작: 네, 오후 네시 삼십분으로 알아볼게요.
+    99.69s  agent 발화 끝
+   100.78s  user  발화 시작: 혹시 강남에 맛있는 식당도 추천해 주실 수 있나요?
+   102.72s  agent 발화 시작: 네.
+   103.62s  agent 발화 끝
+   104.23s  <ret> 발화 (turn23 첫 프레임)
+   104.51s  user  발화 끝
+   104.73s  agent 발화 시작: <ret> 강남에서 인기 있는 식당으로는 '고궁 명동점', '보름나', '서초 삼계탕'이 있습니다.
+   105.41s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.81s]: (tool result) Popular restaurants in Gangnam include 'Gogung Myeongdon
+   111.19s  user  발화 시작: 네.
+   111.65s  user  발화 끝
+   113.54s  agent 발화 끝
+   113.69s  user  발화 시작: '고궁 명동점'은 어떤 음식점인가요?
+   115.78s  <ret> 발화 (turn26 첫 프레임)
+   116.27s  agent 발화 시작: <ret> 고궁 명동점은 한국 궁중 요리를 전문으로 하며, 세련된 분위기에서 전통 음식을 제공합니다.
+   116.41s  user  발화 끝
+   117.01s  ⚡SPAN 주입 [d'=1.23s / d_lead=7.78s]: (tool result) Gogung Myeongdong specializes in Korean royal cuisine, o
+   124.04s  user  발화 시작: 오, 맛있겠네요. 부모님과 함께 가기 좋을 것 같아요.
+   124.05s  agent 발화 끝
+   126.52s  agent 발화 시작: 네.
+   127.29s  agent 발화 끝
+   127.83s  user  발화 끝
+   128.02s  agent 발화 시작: 네, 부모님께서 좋아하실 것 같아요.
+   131.49s  agent 발화 끝
+   131.60s  user  발화 시작: 혹시 강남역 근처에 괜찮은 카페도 있을까요?
+   134.74s  <ret> 발화 (turn31 첫 프레임)
+   135.10s  agent 발화 시작: <ret> 강남역 근처의 인기 있는 카페로는 '카페베네', '스타벅스', '이디야 커피'가 있습니다.
+   135.10s  user  발화 끝
+   136.27s  ⚡SPAN 주입 [d'=1.54s / d_lead=7.55s]: (tool result) Popular cafes near Gangnam Station include 'Caffè Bene',
+   142.65s  agent 발화 끝
+   142.81s  user  발화 시작: '카페베네'는 어떤 분위기인가요?
+   144.86s  <ret> 발화 (turn33 첫 프레임)
+   144.99s  agent 발화 시작: <ret> 카페베네는 아늑한 분위기에서 다양한 커피, 디저트, 가벼운 식사를 즐길 수 있습니다.
+   145.06s  user  발화 끝
+   145.58s  ⚡SPAN 주입 [d'=0.72s / d_lead=7.46s]: (tool result) Caffè Bene offers a cozy atmosphere with a wide selectio
+   150.73s  user  발화 시작: 네.
+   151.26s  user  발화 끝
+   152.45s  agent 발화 끝
+   152.48s  user  발화 시작: 좋네요. 부모님과 함께 차 마시러 가기 좋을 것 같아요.
+   154.59s  agent 발화 시작: 네.
+   155.35s  agent 발화 끝
+   156.39s  agent 발화 시작: 네, 부모님께서 좋아하실 거예요.
+   156.47s  user  발화 끝
+   159.57s  agent 발화 끝
+   160.98s  user  발화 시작: 그런데 제가 일월 구일에 예약한 호텔이 어디였죠?
+   164.00s  user  발화 끝
+   164.07s  agent 발화 시작: 일월 구일에 예약하신 호텔은 말씀하신 대로 오만 원에 예약하신 호텔이었죠.
+   170.87s  agent 발화 끝
+   170.91s  user  발화 시작: 아, 맞아요. 오만 원이었죠.
+   172.70s  user  발화 끝
+   173.19s  agent 발화 시작: 네, 맞습니다.
+   175.22s  agent 발화 끝
+   175.37s  user  발화 시작: 요즘 날씨가 너무 덥네요.
+   177.47s  user  발화 끝
+   177.86s  agent 발화 시작: 네, 정말 덥네요. 건강 관리에 유의하세요.
+   181.26s  user  발화 시작: 맞아요.
+   182.01s  user  발화 끝
+   182.75s  agent 발화 끝
+   183.25s  user  발화 시작: 부모님 건강 관리도 신경 써야 하는데…
+   185.98s  agent 발화 시작: 부모님 건강이 걱정이시군요. 제가 도움이 될 만한 정보가 있을까요?
+   186.00s  user  발화 끝
+   189.16s  user  발화 시작: 네.
+   189.62s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 48턴 요약, 114f): hotel checkin: 일월 구일 오후 열두시 십오분; hotel cost: 오만 원; movie time: 오후 네시 삼십분; cafe preference:
+   193.28s  agent 발화 끝
+   194.26s  user  발화 시작: 서울에서 괜찮은 건강검진 센터는 어디가 있을까요?
+   197.96s  <ret> 발화 (turn49 첫 프레임)
+   197.97s  agent 발화 시작: <ret> 서울에서 인기 있는 건강검진 센터로는 '세브란스 병원 건강검진센터', '삼성 의료원 건강검진센터'
+   198.03s  user  발화 끝
+   199.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: (tool result) Popular health checkup centers in Seoul include 'Severan
+   209.65s  user  발화 시작: '세브란스 병원 건강검진센터'는 어떤 검진 프로그램을 제공하나요?
+   209.84s  agent 발화 끝
+   214.01s  <ret> 발화 (turn51 첫 프레임)
+   214.30s  agent 발화 시작: <ret> 세브란스 병원 건강검진센터는 기본 검진, 종합 검진, 전문 검진 등 다양한 프로그램을 제공합니다.
+   214.43s  user  발화 끝
+   214.68s  ⚡SPAN 주입 [d'=0.68s / d_lead=9.26s]: (tool result) Severance Hospital Health Checkup Center offers a variet
+   217.10s  user  발화 시작: 예.
+   217.55s  user  발화 끝
+   223.56s  agent 발화 끝
+   224.46s  user  발화 시작: 부모님께 종합 검진을 권해 드려야겠어요.
+   227.71s  user  발화 끝
+   227.97s  agent 발화 시작: 네, 부모님 건강을 위해 좋은 선택일 것 같아요.
+   232.37s  user  발화 시작: 혹시 서울에서 가볼 만한 곳도 추천해 주실 수 있나요?
+   232.43s  agent 발화 끝
+   235.92s  <ret> 발화 (turn56 첫 프레임)
+   236.06s  agent 발화 시작: <ret> 서울에서 인기 있는 관광 명소로는 경복궁, N서울타워, 북촌 한옥마을이 있습니다.
+   236.16s  user  발화 끝
+   237.36s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.22s]: (tool result) Popular attractions in Seoul include Gyeongbokgung Palac
+   243.28s  agent 발화 끝
+   244.00s  user  발화 시작: 경복궁은 가본 적이 있는데, 북촌 한옥마을은 아직 못 가봤어요.
+   248.56s  agent 발화 시작: 네, 북촌 한옥마을은 아름다운 전통 가옥들이 모여 있는 곳이라 부모님과 함께 가보시면 좋아하실 거예요.
+   248.63s  user  발화 끝
+   257.12s  agent 발화 끝
+   257.20s  user  발화 시작: 좋아요. 다음에 부모님과 함께 가봐야겠어요.
+   260.43s  agent 발화 시작: 네, 즐거운 시간 보내시길 바랍니다.
+   260.49s  user  발화 끝
+   262.91s  user  발화 시작: 그런데 제가 호텔 예약했던 시간이 몇 시였죠? —
+   263.27s  agent 발화 끝
+   265.95s  user  발화 시작: … 혹시 부모님 건강검진 예약도 도와주실 수 있나요?
+   265.98s  user  발화 끝
+   269.74s  user  발화 끝
+   269.95s  agent 발화 시작: 네, 건강검진 예약도 도와드릴 수 있습니다. 혹시 원하시는 날짜나 시간이 있으신가요?
+   278.01s  agent 발화 끝
+   279.07s  user  발화 시작: 아직 정하지 않았어요. 세브란스 병원 건강검진센터에 예약 가능한 날짜를 알아봐 주세요.
+   285.57s  <ret> 발화 (turn65 첫 프레임)
+   285.97s  agent 발화 시작: <ret> 죄송하지만, 제가 직접 건강검진 예약을 해 드릴 수는 없어요. 예약 가능한 날짜와 시간을 찾아드릴
+   286.08s  user  발화 끝
+   286.27s  ⚡SPAN 주입 [d'=0.70s / d_lead=9.69s]: (tool result) I cannot directly book appointments. I can only find ava
+   295.65s  user  발화 시작: 알겠습니다. 그럼 예약 가능한 날짜와 시간을 알아봐 주세요.
+   295.65s  agent 발화 끝
+   299.46s  <ret> 발화 (turn67 첫 프레임)
+   299.76s  user  발화 끝
+   299.83s  agent 발화 시작: <ret> 세브란스 병원 건강검진센터에서 예약 가능한 날짜는 칠월 십칠일, 이십사일, 삼십일일입니다.
+   300.86s  ⚡SPAN 주입 [d'=1.40s / d_lead=9.00s]: (tool result) Available dates at Severance Hospital Health Checkup Cen
+   306.17s  user  발화 시작: 네.
+   306.75s  user  발화 끝
+   308.83s  user  발화 시작: 칠월 이십사일로 알아봐 주세요.
+   308.83s  agent 발화 끝
+   311.31s  user  발화 끝
+   311.44s  agent 발화 시작: 네, 칠월 이십사일로 알아볼게요.
+   314.85s  user  발화 시작: 혹시 제가 일월 구일에 예약했던 호텔 가격이 얼마였죠?
+   315.01s  agent 발화 끝
+   318.97s  user  발화 끝
+   319.03s  agent 발화 시작: 일월 구일에 예약하신 호텔 가격은 오만 원이었습니다.
+   323.55s  agent 발화 끝
+   324.75s  user  발화 시작: 아, 맞아요. 오만 원이었죠.
+   326.77s  user  발화 끝
+   326.78s  agent 발화 시작: 네, 맞습니다.
+   328.57s  agent 발화 끝
+   330.90s  user  발화 시작: 오늘 날씨가 너무 덥네요.
+   332.88s  user  발화 끝
+   333.00s  agent 발화 시작: 네, 정말 덥네요. 시원한 물 많이 드세요.
+   337.44s  user  발화 시작: 부모님도 더위를 많이 타시는데…
+   337.91s  agent 발화 끝
+   339.50s  agent 발화 시작: 부모님께서 더위를 많이 타시는군요. 건강 관리에 더욱 신경 써야 할 것 같아요.
+   339.60s  user  발화 끝
+   343.09s  user  발화 시작: 네.
+   343.49s  user  발화 끝
+   347.00s  agent 발화 끝
+   347.02s  user  발화 시작: 네, 걱정이에요.
+   348.42s  user  발화 끝
+   348.43s  agent 발화 시작: 제가 옆에서 함께 걱정하고 응원하겠습니다.
+   352.77s  agent 발화 끝
+   353.49s  user  발화 시작: 감사합니다, 크리오우스 씨.
+   355.43s  user  발화 끝
+   355.49s  agent 발화 시작: 천만에요, 예현님.
+   357.52s  agent 발화 끝

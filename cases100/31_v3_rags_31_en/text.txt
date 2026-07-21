@@ -1,96 +1,97 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Brin, a measured and insightful well-being guide who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Naen, a upbeat and supportive peer supporter who helps people with dating and relationships. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Andrea",
+    "name": "Casey",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "mid 30s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-18",
-      "category": "medication",
-      "text": "User takes medication for migraines."
+      "date": "2026-05-22",
+      "category": "commute",
+      "text": "User works from home."
     },
     {
-      "date": "2026-06-17",
-      "category": "sibling",
-      "text": "User has a younger sibling named Kenji."
+      "date": "2026-04-28",
+      "category": "savings",
+      "text": "User is saving for a new car."
     },
     {
-      "date": "2026-05-23",
+      "date": "2026-04-24",
+      "category": "wake",
+      "text": "User usually wakes up at 5:30am for a run."
+    },
+    {
+      "date": "2026-02-26",
       "category": "plant",
-      "text": "User is growing basil on the windowsill at home."
+      "text": "User is growing a monstera at home."
     },
     {
-      "date": "2026-05-21",
-      "category": "home",
-      "text": "User's home address is 687 Juniper Lane."
+      "date": "2026-02-24",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
     },
     {
-      "date": "2026-05-04",
-      "category": "bloodtype",
-      "text": "User's blood type is AB+."
+      "date": "2026-02-20",
+      "category": "car",
+      "text": "User drives a 2019 Hyundai Tucson."
     },
     {
-      "date": "2026-04-11",
-      "category": "streaming",
-      "text": "User subscribes to a shared Netflix family plan."
+      "date": "2026-02-04",
+      "category": "trip",
+      "text": "User is planning a trip to Patagonia in March."
     },
     {
       "date": "2026-01-11",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 21°C."
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-12-25",
-      "category": "diet",
-      "text": "User is keto."
-    },
-    {
-      "date": "2025-12-08",
-      "category": "car",
-      "text": "User drives a 2020 Kia Niro."
+      "date": "2025-12-09",
+      "category": "allergy",
+      "text": "User is allergic to eggs."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-12",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-07",
+      "title": "Planning a wedding",
       "bullets": [
-        "party of six on the 14th",
-        "looking for outdoor seating with a vegetarian option"
+        "guest list around 80 people",
+        "comparing two venues for next May"
       ]
     },
     {
-      "date": "2025-12-22",
-      "title": "Adopting a rescue dog",
+      "date": "2026-04-14",
+      "title": "Choosing a preschool",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     },
     {
-      "date": "2025-12-10",
-      "title": "Buying a gift for a parent",
+      "date": "2026-03-03",
+      "title": "Fixing a leaking faucet",
       "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who sings the opening to Sunday Night ⟨ret@2.34s⟩ Football?
-[  2.96s][moshi] Oh, that’s ⟦⚡SPAN@4.20s: Carrie Underwood has performed the theme song for NBC's Sunday Night Football since 2013, with her version pre⟧ a great question! The singer you’re looking for is Carrie Underwood – she’s been performing the theme song for Sunday Night Football since 2013.
+[  0.00s][user ] Who helped the US Department of Defense create ⟨ret@2.95s⟩ the internet?
+[  1.95s][moshi] «backchannel» Right.
+[  3.53s][moshi] Oh, ⟦⚡SPAN@4.50s: In the 1960s, the Department of Defense’s Advanced Research Projects Agency collaborated with universities and⟧ that's a great question! Let me check… Actually, it was a team effort. Back in the nineteen-sixties, the Department of Defense’s Advanced Research Projects Agency worked with universities and research institutions to develop ARPANET, which eventually became the internet.

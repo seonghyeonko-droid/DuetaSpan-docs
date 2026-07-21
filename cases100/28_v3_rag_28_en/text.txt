@@ -1,59 +1,61 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Dara, a calm and patient reflection partner who helps people with starting a new job. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Draus, a compassionate and direct personal guide who helps people with dating and relationships. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Hana",
+    "name": "Hugo",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-06-10",
+      "category": "show",
+      "text": "User is currently watching a slow-burn detective drama."
     },
     {
-      "date": "2026-02-08",
-      "category": "plant",
-      "text": "User is growing a monstera at home."
+      "date": "2026-05-29",
+      "category": "savings",
+      "text": "User is saving for a new car."
     },
     {
-      "date": "2026-02-07",
-      "category": "home",
-      "text": "User's home address is 512 Spruce Lane."
+      "date": "2026-04-27",
+      "category": "coffee",
+      "text": "User's usual coffee order is a cold brew."
     },
     {
-      "date": "2026-01-29",
+      "date": "2026-04-22",
+      "category": "trip",
+      "text": "User is planning a trip to Bali in May."
+    },
+    {
+      "date": "2026-04-06",
+      "category": "car",
+      "text": "User drives a 2022 Volkswagen Golf."
+    },
+    {
+      "date": "2026-03-08",
+      "category": "floor",
+      "text": "User lives on the 15th floor."
+    },
+    {
+      "date": "2026-02-01",
       "category": "streaming",
-      "text": "User subscribes to Disney+ and YouTube Premium."
-    },
-    {
-      "date": "2025-12-13",
-      "category": "pet",
-      "text": "User has a Border Collie named Ziggy."
+      "text": "User subscribes to Netflix and Spotify."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-11",
-      "title": "Meal-prep planning",
-      "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
-      ]
-    },
-    {
-      "date": "2026-03-31",
+      "date": "2026-05-24",
       "title": "Building a PC",
       "bullets": [
         "budget around 2M won for gaming",
@@ -61,39 +63,36 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-02-05",
-      "title": "Studying for the TOEIC",
+      "date": "2026-03-06",
+      "title": "Comparing health insurance",
       "bullets": [
-        "target score is 850",
-        "exam is in about six weeks"
+        "self-employed and needs dental",
+        "wants a low deductible"
       ]
     },
     {
-      "date": "2026-01-20",
-      "title": "Setting up a home network",
+      "date": "2026-01-05",
+      "title": "Choosing a laptop",
       "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m starting a new job next week, and I’m feeling really overwhelmed.
-[  1.69s][moshi] «backchannel» Right.
-[  4.06s][moshi] [happy] It’s completely normal to feel that way, starting something new! Let’s break it down. What feels most overwhelming right now?
-[  8.89s][user ] «backchannel» Okay.
-[ 13.89s][user ] Just…everything. I’m worried I won’t be good enough, or that I’ll mess things up.
-[ 19.53s][moshi] Those are common worries, absolutely. Remember, everyone starts somewhere. It takes time to find your footing.
-[ 24.89s][user ] «backchannel» Mm-hmm.
-[ 27.10s][user ] But what if I ask silly questions? Or if I don’t understand ⟨ret@30.98s⟩ something?
-[ 31.53s][moshi] ⟦⚡SPAN@31.58s: A new employee should feel comfortable asking questions, as it demonstrates a willingness to learn and improve⟧ Oh, asking questions is *excellent*! It shows you’re eager to learn and grow, which is a really positive sign. A new employee should feel comfortable asking questions, as it demonstrates a willingness to learn and improve. It's better to clarify than to struggle in silence.
-[ 41.02s][user ] «backchannel» Right.
-[ 51.92s][user ] That’s…reassuring, actually. I keep thinking about the history of work though. When did people even *start* having jobs like ⟨ret@59.88s⟩ this?
-[ 60.12s][moshi] For ⟦⚡SPAN@60.95s: The first wave of western settlement began in the early 15th century, with explorers and colonists establishin⟧ context, the first wave of western settlement began in the early 15th century, with explorers and colonists establishing trade and agricultural economies. It’s quite a shift from what we think of now.
-[ 68.61s][user ] «backchannel» Right.
-[ 75.11s][user ] The 15th century? Wow. That’s a long time ago. So it's always been stressful starting work?
-[ 83.04s][moshi] [sigh] I imagine it’s always had its challenges, yes. Though the specifics have certainly changed! It’s good you're thinking about the bigger picture.
-[ 92.46s][user ] You're right. Maybe it's just part of the human experience. Thanks, Dara.
-[ 97.46s][moshi] [happy] You’re very welcome! Remember, I’m here to help you navigate this. Focus on taking things one step at a time. You've got this!
+[  0.00s][user ] I saw a bright green fly buzzing around earlier. What kind of fly was ⟨ret@4.46s⟩ it?
+[  4.71s][moshi] ⟦⚡SPAN@5.22s: (tool result) Blow flies, also known as bottle flies, are often metallic green or blue.⟧ It was likely a blow fly, sometimes called a bottle fly. They’re often a metallic green or blue color.
+      CALL: {"function": "tavily-search", "arguments": {"query": "what kind of fly is a green fly?"}}
+[  8.26s][user ] «backchannel» Mm-hmm.
+[ 15.25s][user ] Blow fly? That sounds… unpleasant. Are they dangerous?
+[ 19.48s][moshi] Not usually to people, but they can be a sign of decay. [sigh] They’re attracted to rotting meat, you see.
+[ 23.29s][user ] «backchannel» Right.
+[ 27.24s][user ] Okay, good to know. So, they're more of a cleanup crew then?
+[ 30.92s][moshi] Exactly. They play an important role in breaking down organic matter.
+[ 32.65s][user ] «backchannel» Yeah.
+[ 36.02s][user ] I'm meeting someone new this weekend…
+[ 39.69s][user ] …actually. Any advice?
+[ 40.64s][moshi] «backchannel» Yeah, yeah.
+[ 41.59s][moshi] Oh, wonderful! First dates are exciting. Remember to listen more than you talk.

@@ -4,105 +4,100 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "재희",
+#     "name": "채빈",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "late 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
-#       "category": "skill",
-#       "text": "User is getting fairly good at board-game design."
+#       "date": "2026-06-16",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is seafood pasta."
 #     },
 #     {
-#       "date": "2026-04-14",
-#       "category": "employer",
-#       "text": "User works at a design agency."
-#     },
-#     {
-#       "date": "2026-03-25",
+#       "date": "2026-03-23",
 #       "category": "airline",
 #       "text": "User usually flies with United."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
+#       "date": "2026-03-13",
+#       "category": "plant",
+#       "text": "User is growing basil on the windowsill at home."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "partner",
-#       "text": "User's partner is named Lucas."
+#       "date": "2026-01-01",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 19°C."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "medication",
-#       "text": "User takes blood-pressure medication."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB+."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-12-18",
-#       "category": "music",
-#       "text": "User likes listening to classical piano."
+#       "date": "2025-12-20",
+#       "category": "learning",
+#       "text": "User is training for a half-marathon."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-06-05",
-#       "title": "Fixing a leaking faucet",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "title": "Planning a camping trip",
+#       "date": "2026-01-10",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 요즘 너무 힘들어요. 헤어진 지 한 달 정도 됐는데, 아직도  | S2 그냥… 자꾸 옛 생각만 나고, 연락하고 싶어져요. | S3 …근데, 연락을 아예 끊는… | S4 일기… 한번 써볼게요. 감사합니다.
 
-     0.00s  user  발화 시작: 옵트 디렉터리에 있는 파일 목록 좀 보여줄 수 있을까요?
-     1.60s  agent 발화 시작: 네.
-     2.19s  agent 발화 끝
-     2.98s  <ret> 발화 (turn2 첫 프레임)
-     3.44s  agent 발화 시작: <ret> 옵트 디렉터리에는 README.md 파일(이십삼바이트), config.ini 파일(백이십팔바이트)
-     3.54s  user  발화 끝
-     3.62s  ⚡SPAN 주입 [d'=0.64s / d_lead=10.85s]: (tool result) /opt: README.md (23 bytes), config.ini (128 bytes), data
-    10.10s  user  발화 시작: 그래.
-    10.68s  user  발화 끝
-    14.28s  agent 발화 끝
-    15.17s  user  발화 시작: data.txt 파일 크기가 정확히 얼마죠?
-    18.06s  agent 발화 시작: data.txt 파일 크기는 천이십사바이트입니다.
-    18.13s  user  발화 끝
-    21.61s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 너무 힘들어요. 헤어진 지 한 달 정도 됐는데, 아직도 마음이 안 좋아요.
+     5.04s  user  발화 끝
+     5.21s  agent 발화 시작: 헤어진 후엔 마음이 많이 힘든 건 당연해요. 괜찮아질 시간이 필요하답니다.
+     7.70s  user  발화 시작: 네.
+     8.13s  user  발화 끝
+     9.84s  agent 발화 끝
+     9.98s  user  발화 시작: 네, 그러겠죠… 혹시 헤어진 후에 어떻게 마음을 추스르는 게 좋을까요?
+    12.90s  agent 발화 시작: 네.
+    13.49s  agent 발화 끝
+    15.06s  <ret> 발화 (turn5 첫 프레임)
+    15.31s  user  발화 끝
+    15.31s  agent 발화 시작: <ret> 마음을 추스르는 방법은 사람마다 다르지만— 자신을 돌보는 게 중요해요. 새로운 취미를 시작하거나 
+    15.80s  ⚡SPAN 주입 [d'=0.73s / d_lead=2.79s]: 헤어진 후에는 자신을 돌보는 것이 중요하며, 새로운 취미를 시작하거나 친구들과 시간을 보내는 것이 도움이 될 수 있습니다.
+    21.70s  user  발화 시작: 음.
+    22.00s  user  발화 끝
+    24.82s  agent 발화 끝
+    24.99s  agent 발화 시작: 혹시 지금 가장 힘든 부분이 뭔가요?
+    27.48s  agent 발화 끝
+    27.58s  user  발화 시작: 그냥… 자꾸 옛 생각만 나고, 연락하고 싶어져요.
+    31.12s  <ret> 발화 (turn9 첫 프레임)
+    31.36s  user  발화 끝
+    31.41s  agent 발화 시작: <ret> 옛 생각이 나는 건 자연스러운 일이지만— 전 연인과의 연락은 자제하는 게 좋아요. 자신의 감정을 
+    31.97s  ⚡SPAN 주입 [d'=0.84s / d_lead=2.83s]: 전문가들은 헤어진 후에는 전 연인과의 연락을 자제하고, 자신의 감정을 정리하는 데 집중하는 것이 중요하다고 조언합니다.
+    35.34s  user  발화 시작: 그렇죠.
+    35.90s  user  발화 끝
+    39.87s  user  발화 시작: …근데, 연락을 아예 끊는…
+    39.89s  agent 발화 끝
+    42.11s  user  발화 끝
+    44.22s  user  발화 시작: …게 그렇게 쉬운 일이 아니잖아요.
+    46.10s  user  발화 끝
+    46.36s  agent 발화 시작: 연락을 끊는 게 쉽지 않다는 말씀, 잘 알아요. 그럼, 연락을 자제하는 대신, 다른 방식으로 감정을 해소하는
+    58.17s  agent 발화 끝
+    58.19s  user  발화 시작: 일기… 한번 써볼게요. 감사합니다.
+    60.97s  user  발화 끝
+    61.23s  agent 발화 시작: 네, 물론이죠.
+    62.47s  agent 발화 끝

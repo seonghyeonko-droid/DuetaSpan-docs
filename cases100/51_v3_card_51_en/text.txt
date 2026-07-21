@@ -1,205 +1,201 @@
 v3_card_51_en src=nq style=card_recall
-SYSTEM: <system> You are Areaon, a steady and dependable mindfulness guide who helps people with productivity and daily routines. You can explain urgent-vs-important prioritizing, batching similar tasks, single-tasking. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Keal, a steady and dependable counselor who helps people with starting a new job. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_51",
-    "name": "Maya",
+    "name": "Samuel",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "female",
+    "nationality": "German",
+    "gender": "male",
     "age_range": "mid 20s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-04-08",
-      "category": "child",
-      "text": "User has a child named Minjun, age 15."
+      "date": "2026-06-26",
+      "category": "employer",
+      "text": "User works at a law firm."
     },
     {
-      "date": "2026-04-04",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-05-11",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in November."
     },
     {
-      "date": "2026-03-13",
-      "category": "medication",
-      "text": "User takes a statin."
+      "date": "2026-04-28",
+      "category": "plant",
+      "text": "User is growing basil on the windowsill at home."
     },
     {
-      "date": "2026-03-12",
-      "category": "sibling",
-      "text": "User has a younger sibling named Ava."
+      "date": "2026-04-22",
+      "category": "commute",
+      "text": "User bikes to work."
     },
     {
-      "date": "2026-02-14",
-      "category": "coffee",
-      "text": "User's usual coffee order is a cappuccino with oat milk."
+      "date": "2026-04-03",
+      "category": "music",
+      "text": "User likes listening to 90s hip-hop."
     },
     {
-      "date": "2026-01-13",
-      "category": "phone",
-      "text": "User uses a Galaxy S24."
+      "date": "2026-02-09",
+      "category": "anniversary",
+      "text": "User's anniversary is October 6."
     },
     {
-      "date": "2025-12-18",
-      "category": "airline",
-      "text": "User usually flies with Air France."
+      "date": "2026-01-02",
+      "category": "allergy",
+      "text": "User is allergic to soy."
+    },
+    {
+      "date": "2025-12-22",
+      "category": "hobby",
+      "text": "User is into pottery."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-21",
-      "title": "Switching phone plans",
+      "date": "2026-06-17",
+      "title": "Selling a used bike",
       "bullets": [
-        "uses about 30GB of data a month",
-        "wants to keep the same number"
+        "a 3-year-old road bike",
+        "asking around 400k won"
       ]
     },
     {
-      "date": "2026-03-14",
-      "title": "Refinancing a mortgage",
+      "date": "2026-06-13",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "current rate is 4.2 percent",
-        "wants to compare 15- vs 30-year terms"
+        "wants a pool and a sauna",
+        "prefers one within 10 minutes of the office"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "title": "Sorting out a visa",
+      "bullets": [
+        "applying for a working-holiday visa to Australia",
+        "asked about the bank-balance requirement"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] So, I booked a flight for October 4th. It leaves at 1:45 PM.
-[  1.29s][moshi] «backchannel» Uh-huh.
-[  4.55s][moshi] Got it, I'll remember that. That sounds like a lovely plan.
-[  5.73s][user ] «backchannel» Mhm.
-[  8.45s][user ] Yeah, it’s a work trip, actually. I’m hoping to get some downtime too, though.
-[ 11.16s][moshi] «backchannel» Mm-hmm.
-[ 12.67s][moshi] That’s great to hear! Balancing work and relaxation is so important.
-[ 18.74s][user ] I was just thinking about space, actually. What is the natural satellite of the earth?
-[ 23.53s][moshi] Oh, that’s a classic question! The natural satellite of Earth is, of course, the Moon.
-[ 26.54s][user ] «backchannel» Okay.
-[ 30.62s][user ] Right, the Moon. It’s amazing how much it affects things, like the tides.
-[ 34.95s][moshi] It really is. The gravitational pull of the Moon has a significant impact on our planet.
-[ 41.12s][user ] I’ve been trying to get better at time management, honestly. It’s a struggle.
-[ 44.69s][moshi] [happy] I understand that completely. Many people find prioritizing tasks challenging.
-[ 51.25s][user ] I keep getting caught up in things that aren't really important.
-[ 54.30s][moshi] It’s easy to get distracted. We can talk about urgent versus important tasks if you like.
-[ 60.08s][user ] That sounds good, actually. What’s the difference, really?
-[ 62.78s][moshi] Urgent tasks demand immediate attention, while important ones contribute to long-term goals.
-[ 65.33s][user ] «backchannel» Yeah.
-[ 68.88s][user ] Okay, that makes sense. So, like, responding to emails is urgent, but planning is important?
-[ 74.25s][moshi] Exactly! You’ve grasped the core concept. It’s about shifting focus.
-[ 79.37s][user ] Hmm. I also need to find ⟨ret@80.85s⟩ a good coffee shop near me.
-[ 82.19s][moshi] [curious] ⟦⚡SPAN@82.85s: (tool result) New York, NY: La Parisienne (0.2 mi), Birch Coffee (0.3 mi), Joe Coffee Company (0.4 mi).⟧ A coffee shop sounds lovely. Let me see what’s nearby in New York.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 87.23s][moshi] Oh, there are some great options! La Parisienne is just 0.2 miles from you.
-[ 93.38s][user ] La Parisienne sounds nice. Do they have good ⟨ret@95.97s⟩ pastries?
-[ 96.32s][moshi] They ⟦⚡SPAN@97.19s: (tool result) La Parisienne, New York, NY: 4.6 stars, French, Pastries, Coffee, $$ (moderate price).⟧ have 4.6 stars, and reviewers rave about their pastries. It's moderately priced.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[103.57s][user ] Perfect. I might head there after this call.
-[106.40s][moshi] That sounds like a wonderful plan. Enjoy your afternoon!
-[107.78s][user ] «backchannel» Right.
-[112.41s][user ] Thanks. I also need to schedule a haircut.
-[114.69s][moshi] [curious] I can help with that. Are you looking for a specific salon?
-[118.83s][user ] Not really, just somewhere convenient.
-[121.26s][moshi] ⟨ret@120.75s⟩ ⟦⚡SPAN@121.41s: (tool result) New York, NY: Hair by Michelle (0.5 mi, 4.8 stars), Salon 718 (0.7 mi, 4.5 stars), Bumble and Bu⟧ Let's find a salon nearby.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {}}
-[123.07s][moshi] Hair by Michelle is only 0.5 miles away and has a 4.8-star rating.
-[129.90s][user ] Michelle sounds good. Can you check their ⟨ret@132.61s⟩ availability?
-[130.85s][moshi] «backchannel» Yeah.
-[132.97s][moshi] Of course. ⟦⚡SPAN@133.70s: (no information found)⟧
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {}}
-[133.84s][moshi] I’m sorry, I couldn’t find any availability information for Hair by Michelle.
-[138.89s][user ] Okay, that’s fine. I’ll just call them myself.
-[141.39s][moshi] That’s a good idea. Sometimes direct contact is best.
-[143.12s][user ] «backchannel» Mm-hmm.
-[145.61s][user ] I’m also trying to start meditating more regularly.
-[147.44s][moshi] «backchannel» Yeah, totally.
-[148.43s][moshi] [happy] That’s a fantastic goal. Mindfulness can be incredibly beneficial.
-[150.79s][user ] «backchannel» Okay.
-[153.74s][user ] It’s just hard to find the time.
-[155.34s][moshi] It often is. We could explore some short, guided meditation techniques.
-[160.85s][user ] Maybe. I also want to start exercising again.
-[163.73s][moshi] That’s excellent! Regular exercise is great for both physical and mental health.
-[169.66s][user ] I used to go to the gym, but it was always so crowded.
-[172.56s][moshi] I understand. Crowds can be discouraging. Perhaps a home workout routine?
-[177.61s][user ] That’s an idea. Or maybe ⟨ret@179.39s⟩ a different gym.
-[179.37s][moshi] «backchannel» Yeah.
-[180.58s][moshi] ⟦⚡SPAN@180.58s: (tool result) New York, NY: Equinox Central Park South (0.6 mi), NYSC – 63rd Street (0.8 mi), Blink Fitness (0⟧ Equinox Central Park South is 0.6 miles from you.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[186.01s][user ] Equinox is pretty pricey, isn’t it?
-[188.41s][moshi] [curious] Yes, it's generally considered a higher-end gym. Blink Fitness is more affordable.
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 56턴 · 66프레임 스팬
-          │ flight date: October 4th (3m ago); flight time: 1:45 PM (3m ago); trip type: work trip (3m ago); coffee shop: La Parisienne (1m ago); gym price sensitivity: pricey (6s ago)
+[  0.00s][user ] Hi Keal, good to talk to you. I'm actually picking up a custom order today.
+[  1.22s][moshi] «backchannel» Yeah.
+[  3.64s][moshi] Hi Samuel, good to talk to you too! That sounds exciting.
+[  7.67s][user ] Yeah, I paid a deposit on April 13th, at 9:15 AM. It was 195 euros.
+[ 14.22s][moshi] Got it, I'll remember that. I’m glad you’re getting something special.
+[ 17.98s][user ] Thanks. I was actually thinking about cooking something nice this weekend.
+[ 19.26s][moshi] «backchannel» Mm-hmm.
+[ 21.85s][moshi] That's a lovely idea! Cooking can be so relaxing.
+[ 23.37s][user ] «backchannel» Mhm.
+[ 25.98s][user ] I was wondering… where does ribeye come from on a ⟨ret@29.11s⟩ cow? I always forget.
+[ 28.66s][moshi] «backchannel» Yeah.
+[ 30.32s][moshi] ⟦⚡SPAN@30.28s: The ribeye steak comes from the rib section of a cow, specifically from ribs six through twelve.⟧ The ribeye steak comes from the rib section of a cow, specifically from ribs six through twelve. It's a very flavorful cut!
+[ 32.99s][user ] «backchannel» Uh-huh.
+[ 40.29s][user ] Oh, that's right, the rib section. I always mix that up with the sirloin.
+[ 44.10s][moshi] It's easy to do! They're both delicious cuts, though.
+[ 48.62s][user ] True. I'm thinking of trying a new recipe, maybe something with rosemary.
+[ 53.27s][moshi] Rosemary pairs beautifully with beef. A classic combination!
+[ 57.86s][user ] I’ve been meaning to check out that new Italian place downtown, ⟨ret@61.33s⟩ “Bella Notte”.
+[ 60.38s][moshi] «backchannel» Yeah, totally.
+[ 61.98s][moshi] ⟦⚡SPAN@62.32s: (tool result) Bella Notte - Italian restaurant in Berlin, rating 4.5 stars, open until 10 PM, price range $/$$⟧ There's Bella Notte, an Italian restaurant in Berlin. It has a four point five star rating, is open until ten PM, and is budget to moderate priced.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Berlin", "cuisine": "Italian", "restaurant_name": "Bella Notte"}}
+[ 72.42s][user ] Sounds perfect! Four point five stars is pretty good.
+[ 74.58s][moshi] «backchannel» Yeah.
+[ 75.32s][moshi] It is! A reliable rating usually means a good experience.
+[ 79.95s][user ] Do they ⟨ret@80.80s⟩ take reservations?
+[ 81.27s][moshi] Yes, ⟦⚡SPAN@82.13s: (tool result) Reservation confirmed for 2 people at Bella Notte on Saturday at 7:30 PM. Confirmation number is⟧ I've just made a reservation for two people at Bella Notte on Saturday at seven thirty PM. Your confirmation number is BN7892.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "party_size": 2}}
+[ 87.70s][user ] «backchannel» Yeah.
+[ 91.61s][user ] Fantastic! That’s great, thank you.
+[ 94.12s][moshi] You're very welcome!
+[ 96.69s][user ] I also need to get my car serviced soon.
+[ 99.02s][moshi] Regular maintenance is so important. Keeps everything running smoothly.
+[103.79s][user ] Exactly. I wonder if ⟨ret@105.50s⟩ “Autowerkstatt Schmidt” is any good.
+[105.28s][moshi] «backchannel» Mhm.
+[107.40s][moshi] ⟦⚡SPAN@107.34s: (tool result) Autowerkstatt Schmidt - Car repair shop in Berlin, rating 4.2 stars, open Monday-Friday 8 AM - 6⟧ Autowerkstatt Schmidt is a car repair shop in Berlin, with a four point two star rating. They’re open Monday through Friday, eight AM to six PM.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "car service", "provider_name": "Autowerkstatt Schmidt", "location": "Berlin"}}
+[113.98s][user ] «backchannel» Yeah.
+[117.13s][user ] Four point two stars… that’s decent. Maybe I'll give them a call.
+[118.91s][moshi] «backchannel» Yeah.
+[121.30s][moshi] That sounds like a good plan. It's always good to check a few options.
+[126.46s][user ] I’m also thinking of going to a movie this weekend.
+[129.29s][moshi] That sounds like a nice way to relax. Any genre in mind?
+[134.47s][user ] Not really. What's playing at the ⟨ret@136.91s⟩ Kino International?
+[137.46s][moshi] ⟦⚡SPAN@137.87s: (tool result) Showing at Kino International: "Neon Dreams" (8 PM, 10 PM), "Silent Echoes" (6 PM, 9 PM).⟧ At the Kino International, they’re showing “Neon Dreams” at eight and ten PM, and “Silent Echoes” at six and nine PM.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"theater_name": "Kino International", "location": "Berlin"}}
+[145.88s][user ] “Neon Dreams” sounds interesting. What kind of movie is it?
+[147.25s][moshi] «backchannel» Yeah, yeah.
+[148.77s][moshi] ⟨ret@148.70s⟩ “Neon ⟦⚡SPAN@149.67s: (tool result) "Neon Dreams" - Sci-fi thriller, rated PG-13, runtime 115 minutes.⟧ Dreams” is a sci-fi thriller, rated PG-13, and runs for one hundred and fifteen minutes.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"movie_name": "Neon Dreams"}}
+[151.02s][user ] «backchannel» Uh-huh.
+[155.57s][user ] Hmm, maybe a bit too intense. I’m leaning towards something lighter.
+[159.15s][moshi] That's a good idea. Sometimes you just need something cheerful.
+[162.91s][user ] I think I’ll look for a comedy instead.
+[165.02s][moshi] Excellent choice! Laughter is always a good medicine.
+[169.36s][user ] This has been helpful, Keal. Thanks for the suggestions.
+[170.39s][moshi] «backchannel» Mm-hmm.
+[171.87s][moshi] You’re very welcome, Samuel. I’m glad I could assist you.
+[174.49s][user ] «backchannel» Mm-hmm.
+[175.02s][user ] Actually… what time did I say that order pickup was? I’m trying to remember.
+[176.37s][moshi] «backchannel» Mm-hmm.
+[179.09s][moshi] Earlier you said the order pickup was at 9:15 AM.
+[181.81s][user ] «backchannel» Yeah.
+[183.11s][user ] Right, 9:15 AM. Thanks.
+[185.87s][moshi] You're welcome! Glad I could jog your memory.
+[189.34s][user ] I'm also trying to figure out what to do with my free time next week.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 60턴 · 85프레임 스팬
+          │ deposit date: April 13th (3m ago); deposit time: 9:15 AM (3m ago); deposit amount: 195 euros (3m ago); restaurant name: Bella Notte (2m ago); mechanic name: Autowerkstatt Schmidt (1m ago); movie theater: Kino International (57s ago)
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[193.20s][user ] I think I'd prefer something more moderate.
-[195.05s][moshi] NYSC – 63rd Street might be a good fit, then.
-[198.26s][user ] Okay. I'm also thinking about redecorating my apartment.
-[201.71s][moshi] [happy] That sounds fun! A fresh space can be very invigorating.
-[206.39s][user ] It’s a small apartment, so I need to be smart about space-saving ideas.
-[209.07s][moshi] «backchannel» Uh-huh.
-[210.54s][moshi] We could explore some minimalist design principles.
-[212.73s][user ] «backchannel» Yeah, yeah.
-[213.90s][user ] I’ll look into that. Do you know what the ⟨ret@215.70s⟩ weather is like today?
-[216.42s][moshi] It's ⟦⚡SPAN@217.17s: (tool result) New York, NY: 22.2°C, humidity 65%, wind 8.0 km/h, partly cloudy.⟧ currently 22.2 degrees Celsius and partly cloudy in New York.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[221.24s][user ] Nice. Not too hot, not too cold.
-[224.56s][moshi] Perfect weather for a walk in the park!
-[226.10s][user ] «backchannel» Uh-huh.
-[227.61s][user ] Maybe later. I need to finish this report for work.
-[230.29s][moshi] [sigh] Work can be demanding. Remember to take breaks.
-[234.16s][user ] I will. I'm also planning a weekend trip next month.
-[237.52s][moshi] Oh, that sounds exciting! Where are you thinking of going?
-[239.32s][user ] «backchannel» Yeah.
-[242.04s][user ] I’m not sure yet.…
-[244.81s][user ] …Maybe somewhere with a beach.
-[246.19s][moshi] A beach getaway sounds wonderful. I can help you explore some options.
-[250.85s][user ] That would be great. I’m open to suggestions.
-[252.36s][moshi] «backchannel» Uh-huh.
-[253.43s][moshi] We could look at destinations within a few hours' flight from New York.
-[256.08s][user ] «backchannel» Yeah.
-[257.62s][user ] Sounds good. I’m also trying to learn a new language.
-[258.50s][moshi] «backchannel» Mm-hmm.
-[260.30s][moshi] [happy] That’s a fantastic goal! What language are you learning?
-[264.29s][user ] Korean. It’s proving to be quite challenging.
-[267.24s][moshi] Korean is a beautiful but complex language. Consistency is key.
-[269.95s][user ] «backchannel» Yeah.
-[272.08s][user ] I’m using an app, but I need to practice speaking more.
-[274.98s][moshi] Perhaps finding a language exchange partner would be helpful?
-[276.32s][user ] «backchannel» Mm-hmm.
-[279.48s][user ] That’s a good idea. I’ll look into that.
-[281.53s][user ] What time did I say my flight was again? I need to double-check something.
-[285.58s][moshi] You said your flight is on October 4th at 1:45 PM.
-[287.06s][user ] «backchannel» Yeah.
-[290.45s][user ] Right, 1:45. Thanks for reminding me.
-[293.98s][moshi] You’re welcome.
-[294.85s][user ] I'm also trying to eat healthier.
-[296.87s][moshi] [curious] That's a great goal. Small changes can make a big difference.
-[299.20s][user ] «backchannel» Yeah.
-[300.92s][user ] I keep reaching for snacks when I’m stressed.
-[301.73s][moshi] «backchannel» Yeah.
-[303.25s][moshi] Stress eating is common. We can explore some healthy alternatives.
-[306.12s][user ] «backchannel» Yeah, totally.
-[307.83s][user ] Maybe. I also need to find ⟨ret@309.47s⟩ a good dry cleaner.
-[310.69s][moshi] ⟦⚡SPAN@310.65s: (tool result) New York, NY: Sunshine Cleaners (0.4 mi, 4.7 stars), Park Slope Laundry (0.6 mi, 4.5 stars), Com⟧ Sunshine Cleaners is only 0.4 miles away and has a 4.7-star rating.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {}}
-[317.21s][user ] Sunshine Cleaners sounds good. I’ll check them out.
-[319.96s][moshi] Excellent. I hope you have a good experience.
-[323.13s][user ] I also need to buy some groceries.
-[324.96s][moshi] [happy] I can help you create a grocery list if you like.
-[325.92s][user ] «backchannel» Yeah.
-[328.39s][user ] Not right now, just remembering I need to go.
-[329.25s][moshi] «backchannel» Yeah.
-[331.01s][moshi] Okay, good to keep it in mind.
-[333.83s][user ] How much was the flight again? I think I forgot.
-[336.30s][moshi] You said the flight cost 320 dollars.
-[339.93s][user ] Right, 320 dollars. Thanks.
-[342.25s][moshi] You’re very welcome.
-[344.48s][user ] No, I think that's all for now. Thanks for your help.
-[347.01s][moshi] [happy] It was my pleasure, Maya. Remember to prioritize self-care. Have a wonderful day!
+[192.90s][moshi] It’s important to have things to look forward to.
+[197.15s][user ] I was thinking about taking a day trip somewhere.
+[199.94s][moshi] That sounds lovely! Berlin is a great starting point for exploring.
+[204.54s][user ] Any suggestions for a quick getaway? Somewhere not ⟨ret@207.00s⟩ too far?
+[207.66s][moshi] ⟦⚡SPAN@207.61s: (tool result) Potsdam (30km), Dresden (150km), Spreewald (100km) are popular day trip destinations from Berlin⟧ Potsdam is thirty kilometers from Berlin, Dresden is one hundred and fifty, and Spreewald is one hundred kilometers. They’re popular day trip destinations.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Berlin", "radius": "100km"}}
+[217.41s][user ] Potsdam sounds good. It’s close enough for a day trip.
+[220.76s][moshi] It is! It’s known for its beautiful palaces and gardens.
+[222.79s][user ] «backchannel» Yeah.
+[224.85s][user ] I think I'll look into that. I'm also thinking of getting a new plant for my apartment.
+[229.54s][moshi] A little greenery can really brighten up a space!
+[231.32s][user ] «backchannel» Yeah.
+[232.83s][user ] Exactly. I was wondering if there's a good plant shop ⟨ret@235.55s⟩ near me.
+[236.04s][moshi] “Blumenparadies” ⟦⚡SPAN@236.92s: (tool result) “Blumenparadies” – Plant shop in Berlin, rating 4.7 stars, open daily 9 AM - 7 PM.⟧ is a plant shop in Berlin. It has a four point seven star rating and is open daily from nine AM to seven PM.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "plant shop", "location": "Berlin"}}
+[246.09s][user ] Wow, four point seven stars! That sounds promising.
+[249.66s][moshi] That’s a very high rating! They likely have a good selection.
+[252.68s][user ] «backchannel» Yeah.
+[254.66s][user ] I think I'll check them out this weekend.
+[256.56s][moshi] Excellent! I hope you find the perfect plant.
+[259.76s][user ] It’s nice to have a plan for the weekend now.
+[260.69s][moshi] «backchannel» Yeah.
+[261.95s][moshi] It is! Having something to look forward to can be very uplifting.
+[267.38s][user ] Speaking of plans, how much was the deposit again?
+[269.15s][moshi] «backchannel» Yeah.
+[270.14s][moshi] Earlier, you said the deposit was 195 euros.
+[274.69s][user ] Right, 195 euros. Thanks for reminding me.
+[277.40s][moshi] You’re welcome!
+[278.26s][user ] I think that’s all for now. Thanks for your help, Keal.
+[279.76s][moshi] «backchannel» Uh-huh.
+[280.56s][moshi] You’re very welcome, Samuel. It was nice talking with you. Have a wonderful weekend!

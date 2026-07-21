@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "서형",
+#     "name": "다진",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,60 +13,70 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 30s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Minjun."
+#       "date": "2026-06-27",
+#       "category": "music",
+#       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is an iced americano."
+#       "date": "2026-06-15",
+#       "category": "medication",
+#       "text": "User takes medication for migraines."
 #     },
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-05-31",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "learning",
-#       "text": "User is learning Spanish."
+#       "date": "2026-04-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Georgian."
 #     },
 #     {
-#       "date": "2026-01-15",
+#       "date": "2026-03-10",
 #       "category": "gym",
 #       "text": "User has a gym membership near home."
+#     },
+#     {
+#       "date": "2026-02-14",
+#       "category": "work",
+#       "text": "User works as a barista."
+#     },
+#     {
+#       "date": "2025-12-26",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Leo."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-03",
-#       "title": "Planning a camping trip",
+#       "date": "2026-04-14",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 전 인도 해리잔 세바크 상을 누가 설립했나요?
-     2.85s  <ret> 발화 (turn1 첫 프레임)
-     3.08s  agent 발화 시작: <ret> 전 인도 해리잔 세바크 상은, 마하트마 간디가 천구백삼십이년에 불가촉천민의 지위 향상을 위해 설립
-     3.22s  user  발화 끝
-     3.93s  ⚡SPAN 주입 [d'=1.09s / d_lead=6.85s]: Mahatma Gandhi founded the All India Harijan Sevak Sangh in 1932 to wo
-     9.94s  agent 발화 끝
+     0.00s  user  발화 시작: 크로스컨트리 스키가 올림픽 종목으로 추가된 건 언제야?
+     3.25s  <ret> 발화 (turn1 첫 프레임)
+     3.48s  agent 발화 시작: <ret> 크로스컨트리 스키는 천구백이십사년 동계 올림픽에서 처음 종목으로 채택되었어요.
+     3.62s  user  발화 끝
+     4.33s  ⚡SPAN 주입 [d'=1.09s / d_lead=4.94s]: Cross-country skiing was first included in the Winter Olympics in 1924
+     8.42s  agent 발화 끝

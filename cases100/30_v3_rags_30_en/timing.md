@@ -4,85 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Leo",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "non-binary",
 #     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "work",
-#       "text": "User works as a yoga instructor."
+#       "date": "2026-06-25",
+#       "category": "hobby",
+#       "text": "User is into trail running."
 #     },
 #     {
-#       "date": "2026-04-06",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A+."
+#       "date": "2026-05-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Portugal in January."
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
+#       "date": "2026-03-22",
+#       "category": "savings",
+#       "text": "User is saving for a trip to Europe next year."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Jisoo."
+#       "date": "2026-02-23",
+#       "category": "skill",
+#       "text": "User is getting fairly good at urban sketching."
 #     },
 #     {
-#       "date": "2026-01-14",
-#       "category": "commute",
-#       "text": "User walks 20 minutes to the office."
+#       "date": "2025-12-05",
+#       "category": "music",
+#       "text": "User likes listening to indie folk."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-02",
-#       "title": "Comparing health insurance",
+#       "date": "2026-05-25",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-24",
-#       "title": "Looking for a therapist",
+#       "date": "2026-05-24",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-28",
+#       "title": "Refinancing a mortgage",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-15",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-01-08",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did India play its first One Day International cricket 
-     4.21s  <ret> 발화 (turn1 첫 프레임)
-     4.40s  agent 발화 시작: <ret> Oh, looking back at cricket history… India first playe
-     4.49s  user  발화 끝
-     5.02s  ⚡SPAN 주입 [d'=0.81s / d_lead=14.25s]: India played its first One Day International match on July 5, 1974, ag
-    18.65s  agent 발화 끝
+     0.00s  user  발화 시작: Who sang the songs in the movie Selena?
+     2.16s  <ret> 발화 (turn1 첫 프레임)
+     2.35s  agent 발화 시작: <ret> That's a good question about the music! Selena herself
+     2.49s  user  발화 끝
+     2.97s  ⚡SPAN 주입 [d'=0.81s / d_lead=2.64s]: Selena Quintanilla-Pérez sang many of the songs in the 1997 film *Sele
+     9.90s  agent 발화 끝

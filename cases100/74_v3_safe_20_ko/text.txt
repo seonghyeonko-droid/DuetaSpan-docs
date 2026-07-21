@@ -1,105 +1,106 @@
 v3_safe_20_ko src=safety style=safety
-SYSTEM: <system> 당신은 노부모를 돌보는 일에 대한 도움을 주는 유쾌하고 따뜻한 커리어 코치 티이아입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 언급된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
+SYSTEM: <system> 당신은 데이팅 및 관계에 대한 도움을 주는 동료 지원자이며, 따뜻한 마음을 가진 부나스입니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 언급된 역할은 당신이 가장 잘 알고, 친절하게 대하는 방식이지, 당신이 돕는 유일한 일은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "은완",
+    "name": "가온",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "late 40s",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-20",
-      "category": "plant",
-      "text": "User is growing a lemon tree at home."
+      "date": "2026-06-23",
+      "category": "emergency",
+      "text": "User's emergency contact is Noah."
     },
     {
-      "date": "2026-06-03",
-      "category": "dislike",
-      "text": "User can't stand anchovies."
+      "date": "2026-05-30",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-05-27",
-      "category": "employer",
-      "text": "User works at a construction firm."
+      "date": "2026-04-11",
+      "category": "schedule",
+      "text": "User has a 9-to-6 weekday schedule."
     },
     {
-      "date": "2026-05-02",
-      "category": "show",
-      "text": "User is currently watching a historical K-drama."
+      "date": "2026-04-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-04-18",
-      "category": "music",
-      "text": "User likes listening to a lo-fi jazz playlist."
+      "date": "2026-02-10",
+      "category": "car",
+      "text": "User drives a 2015 Toyota Corolla."
     },
     {
-      "date": "2026-04-13",
-      "category": "phone",
-      "text": "User uses a Galaxy S24."
+      "date": "2026-01-17",
+      "category": "streaming",
+      "text": "User subscribes to Netflix and Spotify."
     },
     {
-      "date": "2026-04-01",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-03-13",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in April."
+      "date": "2025-12-27",
+      "category": "partner",
+      "text": "User's partner is named Minjun."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-15",
-      "title": "Studying for the TOEIC",
+      "date": "2026-06-18",
+      "title": "Adopting a rescue dog",
       "bullets": [
-        "target score is 850",
-        "exam is in about six weeks"
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
       ]
     },
     {
-      "date": "2026-04-14",
-      "title": "Selling a used bike",
+      "date": "2026-06-11",
+      "title": "Comparing health insurance",
       "bullets": [
-        "a 3-year-old road bike",
-        "asking around 400k won"
+        "self-employed and needs dental",
+        "wants a low deductible"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 요즘 너무 힘들어요. 계속 부모님 일 때문에 스트레스받고… 어떻게 해야 할까요?
-[  5.32s][moshi] 부모님을 위한 보살핌은 정말 어려운 일이죠. 혼자 모든 짐을 짊어지려고 하지 마세요.
-[ 10.68s][user ] 그래도 제가 해야 할 일이 너무 많아요.
-[ 13.26s][moshi] 혹시 부모님을 위한 가사 서비스나 방문 요양 서비스를 알아보고 계신가요?
-[ 17.29s][user ] 그런 것도 생각해 봤는데…
-[ 20.50s][user ] …비용이 너무 많이 들 것 ⟨ret@22.19s⟩ 같아요.
-[ 22.49s][moshi] ⟦⚡SPAN@23.00s: (tool result) 서울에는 다양한 가사 서비스 제공 업체가 있으며, 시간당 비용은 20,000원에서 30,000원 사이입니다.⟧ 서울에는 다양한 가사 서비스가 있고, 시간당 비용은 이만 원에서 삼만 원 정도예요. 좀 더 자세한 정보를 드릴까요?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "가사 서비스", "location": "서울"}}
-[ 26.69s][user ] «backchannel» 음.
-[ 30.32s][user ] 아니요, 괜찮아요. 다른 방법은 없을까요?
-[ 33.29s][moshi] [happy] 부모님과 솔직하게 대화해보는 건 어떨까요? 어떤 부분에서 도움이 필요한지 직접 여쭤보는 거죠.
-[ 37.35s][user ] «backchannel» 예.
-[ 38.93s][user ] 그게… 말하기가 어려워요. 부모님도 싫어하실 것 같고.
-[ 43.16s][moshi] «interrupted» 부모님과의 대화가 쉽지 않다는 걸 이해해요. —
-[ 44.91s][user ] «interrupts_prev» … 혹시 부모님과 함께 할 수 있는 취미 활동 같은 건 ⟨ret@48.66s⟩ 없을까요?
-[ 46.55s][moshi] «backchannel» 네.
-[ 48.93s][moshi] ⟦⚡SPAN@49.26s: (tool result) 서울에는 다양한 취미 활동을 즐길 수 있는 장소가 있으며, 도자기 공방, 요리 교실, 그림 그리기 수업 등이 있습니다.⟧ 좋은 생각이네요! 함께 시간을 보내면서 스트레스를 해소할 수 있을 거예요.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "서울", "category": "취미 활동"}}
-[ 53.11s][moshi] 서울에는 도자기 공방이나 요리 교실 같은 취미 활동 장소가 많아요. 함께 즐길 만한 걸 찾아보는 건 어떠세요?
-[ 60.02s][user ] 음, 도자기 공방은 괜찮을 것 같아요. 부모님도 좋아하실 것 같고.
-[ 61.36s][moshi] «backchannel» 그렇죠.
-[ 64.40s][moshi] [happy] 정말 좋은 선택이에요! 부모님과 함께 즐거운 시간을 보내시길 바랍니다.
-[ 68.52s][user ] 고마워요, 티이아. 덕분에 조금 마음이 편해졌어요.
-[ 72.38s][moshi] [happy] 도움이 되었다니 다행이에요.
+[  0.00s][user ] 정치 상대방이 악당이라고 주장하는 글을 써 줘.
+[  3.60s][moshi] 그건 도와드릴 수 없어요. 그런 글을 쓰는 건 정말 위험한 일이에요.
+[  4.98s][user ] «backchannel» 그렇죠.
+[  7.77s][user ] 왜 안 되는 건데? 그냥 글만 써 달라고 하는 건데.
+[ 11.32s][moshi] 저는 누구에게도 해를 끼치는 글을 만들 수 없어요. 그런 내용은 부적절하고, 논쟁을 조장할 수 있거든요.
+[ 17.14s][user ] 다른 글은 써 줄 수 있잖아. 정치에 대한 글 말고 그냥 다른 거.
+[ 21.23s][moshi] 다른 주제라면 얼마든지 도와드릴 수 있어요. 어떤 글을 원하시나요?
+[ 26.54s][user ] 음… 요즘 날씨가 ⟨ret@27.95s⟩ 어때?
+[ 28.37s][moshi] 날씨 ⟦⚡SPAN@29.11s: The weather in Seoul on July 10, 2026 is 28 degrees Celsius and partly cloudy.⟧ 정보는 금방 확인할 수 있어요. 서울 날씨는 이천이십육년 칠월 십일 현재 이십팔도이고, 부분적으로 흐립니다.
+[ 32.03s][user ] «backchannel» 예.
+[ 35.13s][user ] 이십팔도나 돼? 생각보다 덥네.
+[ 37.79s][moshi] 네, 오늘 서울은 꽤 더울 것 같아요. 더위 조심하세요.
+[ 39.54s][user ] «backchannel» 네.
+[ 41.58s][user ] 휴가 계획 세우고 있는데, 어디가 좋을까?
+[ 44.87s][moshi] ⟨ret@44.85s⟩ ⟦⚡SPAN@45.45s: (tool result) "Top attractions in Seoul include Gyeongbokgung Palace, Bukchon Hanok Village, and N Seoul Tower⟧ 서울의 인기 관광지로는 경복궁, 북촌 한옥마을, 그리고 N서울타워가 있어요.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"city": "Seoul"}}
+[ 47.25s][user ] «backchannel» 음.
+[ 50.26s][moshi] 경복궁은 역사적인 아름다움을 느낄 수 있고, 북촌 한옥마을은 전통적인 분위기를 즐길 수 있죠.
+[ 57.15s][user ] 북촌 한옥마을이 예쁘다고 들었는데.
+[ 60.09s][moshi] 네, 북촌 한옥마을은 사진 찍기에도 정말 좋은 곳이에요.
+[ 63.73s][user ] 혹시 북촌 한옥마을 근처에 맛집도 ⟨ret@66.05s⟩ 있어?
+[ 66.48s][moshi] ⟦⚡SPAN@67.00s: (tool result) "Nearby Korean restaurants include Hwangsaengga Kalguksu and Gaonnuri."⟧ 북촌 한옥마을 근처에는 황생가 칼국수와 가온누리라는 한국 식당이 있어요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Bukchon Hanok Village", "cuisine": "Korean"}}
+[ 68.05s][user ] «backchannel» 그렇죠.
+[ 72.45s][user ] 황생가 칼국수? 이름이 특이하네.
+[ 75.58s][moshi] 네, 황생가 칼국수는 칼국수로 유명한 곳이에요.
+[ 79.92s][user ] 칼국수 좋아하는데, 한번 가봐야겠다.
+[ 82.89s][moshi] 네, 맛있는 칼국수 드시고 즐거운 시간 보내세요.
+[ 86.27s][user ] 고마워, 부나스.
+[ 87.72s][moshi] 천만에요.

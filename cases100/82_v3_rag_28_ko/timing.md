@@ -4,96 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "준재",
+#     "name": "하담",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "late 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-10",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "date": "2026-05-29",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2026-04-27",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a cold brew."
 #     },
 #     {
-#       "date": "2026-01-29",
+#       "date": "2026-04-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Bali in May."
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "category": "car",
+#       "text": "User drives a 2022 Volkswagen Golf."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "floor",
+#       "text": "User lives on the 15th floor."
+#     },
+#     {
+#       "date": "2026-02-01",
 #       "category": "streaming",
-#       "text": "User subscribes to Wavve and Melon."
-#     },
-#     {
-#       "date": "2025-12-13",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User subscribes to Netflix and Spotify."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-21",
-#       "title": "Choosing a preschool",
-#       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-31",
-#       "title": "Meal-prep planning",
-#       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-11",
+#       "date": "2026-05-24",
 #       "title": "Building a PC",
 #       "bullets": [
 #         "budget around 2M won for gaming",
 #         "torn between two GPUs"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "title": "Choosing a laptop",
+#       "bullets": [
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 새로운 직장 생활을 시작하는데, 뭔가 조언을 해 줄 수 있을까 | S2 어떤 이야기를요? 구체적으로 좀 알려주세요. | S3 십오세기요? 생각보다 훨씬 빠르네요. 요즘은 어떻게 달라졌을까 | S4 음… 관계를 맺는 게 제일 어려울 것 같아요.
 
-     0.00s  user  발화 시작: 새로운 직장 생활을 시작하는데, 뭔가 조언을 해 줄 수 있을까요?
-     1.64s  agent 발화 시작: 네네.
-     2.40s  agent 발화 끝
-     3.88s  user  발화 끝
-     4.00s  agent 발화 시작: 새로운 시작을 축하드려요! [happy] 적응하는 데 도움이 될 만한 몇 가지 이야기를 해 드릴게요.
-     6.53s  user  발화 시작: 그렇죠.
-     6.96s  user  발화 끝
-     9.06s  user  발화 시작: 어떤 이야기를요? 구체적으로 좀 알려주세요.
-     9.17s  agent 발화 끝
-    11.54s  <ret> 발화 (turn5 첫 프레임)
-    11.70s  agent 발화 시작: <ret> 서구 개척의 첫 물결은 십오세기에 시작되었는데, 탐험과 무역 기회가 그 원동력이었어요.
-    11.73s  user  발화 끝
-    13.21s  ⚡SPAN 주입 [d'=1.67s / d_lead=6.05s]: The first wave of western settlement began in the early 15th century, 
-    17.76s  agent 발화 끝
-    17.79s  user  발화 시작: 십오세기요? 생각보다 훨씬 빠르네요. 요즘은 어떻게 달라졌을까요?
-    22.46s  user  발화 끝
-    22.79s  agent 발화 시작: 요즘은 훨씬 더 복잡해졌죠. [curious] 하지만 기본은 같아요. 새로운 환경에 적응하고, 관계를 맺고,
-    27.51s  user  발화 시작: 음.
-    27.82s  user  발화 끝
-    29.73s  user  발화 시작: 음… 관계를 맺는 게 제일 어려울 것 같아요.
-    29.73s  agent 발화 끝
-    32.34s  agent 발화 시작: 관계를 맺는 건 중요하죠. [sigh] 하지만 너무 조급해하지 마세요. 천천히 알아가면 돼요.
-    32.40s  user  발화 끝
-    37.80s  agent 발화 끝
+     0.00s  user  발화 시작: 초록 파리 종류가 뭐예요? 혹시 아세요?
+     2.34s  user  발화 끝
+     2.51s  agent 발화 시작: 어떤 파리에 대해 궁금하신 건지 조금 더 자세히 말씀해 주시겠어요?
+     4.41s  user  발화 시작: 네.
+     4.67s  user  발화 끝
+     6.30s  agent 발화 끝
+     7.50s  user  발화 시작: 그냥 초록색 파리요. 정원 같은 데서 많이 보이던데…
+    11.11s  <ret> 발화 (turn4 첫 프레임)
+    11.16s  user  발화 끝
+    11.18s  agent 발화 시작: <ret> 파리의 종류는 정말 다양하죠. 초록색 파리는 보통 Calliphoridae 과에 속하는 파리인데,
+    12.19s  ⚡SPAN 주입 [d'=1.08s / d_lead=2.28s]: A blow fly is a type of fly in the family Calliphoridae, known for its
+    23.74s  agent 발화 끝
+    23.74s  user  발화 시작: 아, 청파리요? 좀 징그럽네요. 다른 파리는요?
+    27.01s  <ret> 발화 (turn6 첫 프레임)
+    27.53s  user  발화 끝
+    27.58s  agent 발화 시작: <ret> 지금 서울 날씨는 이십팔도, 구름이 조금 낀 상태입니다.
+    28.34s  ⚡SPAN 주입 [d'=1.33s / d_lead=3.70s]: (tool result) Current weather in Seoul, South Korea: 28°C, Partly Clou
+    31.27s  agent 발화 끝

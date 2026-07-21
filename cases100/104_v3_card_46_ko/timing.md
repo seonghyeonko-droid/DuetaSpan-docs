@@ -4,48 +4,63 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_46",
-#     "name": "윤서",
+#     "name": "소연",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-02",
+#       "category": "child",
+#       "text": "User has a child named Jisoo, age 2."
 #     },
 #     {
-#       "date": "2026-05-16",
-#       "category": "airline",
-#       "text": "User usually flies with Air France."
+#       "date": "2026-05-28",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     },
 #     {
-#       "date": "2026-05-05",
-#       "category": "music",
-#       "text": "User likes listening to K-ballads."
+#       "date": "2026-04-11",
+#       "category": "anniversary",
+#       "text": "User's anniversary is August 4."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
+#       "date": "2026-03-17",
+#       "category": "bloodtype",
+#       "text": "User's blood type is O+."
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "category": "medication",
-#       "text": "User takes a statin."
+#       "date": "2026-02-24",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "car",
+#       "text": "User drives a 2020 Kia Niro."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "work",
+#       "text": "User works as a UX researcher."
+#     },
+#     {
+#       "date": "2025-12-19",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-06-28",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing the Kia Niro hybrid and Hyundai Ioniq",
@@ -53,206 +68,218 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "title": "Setting up a home network",
+#       "date": "2026-05-17",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-11",
+#       "date": "2026-02-25",
 #       "title": "Choosing a laptop",
 #       "bullets": [
 #         "budget around 1.8M won",
 #         "needs it for video editing and light gaming"
 #       ]
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "title": "Learning to invest",
-#       "bullets": [
-#         "asked about index funds vs individual stocks",
-#         "wants to start with 500k won a month"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 머리 자르러 가는 약속이 있는데, 십일월 칠일 오후 두시 | S2 '펜돌리노' 가볼까? 예약해 줄 수 있어? | S3 좋은 생각이다. 음악 추천해 줄 수 있어? | S4 고마워. 부산에 가서 뭐 할지 좀 더 자세히 알려줘.
+# EXAMINER(FDB-v2) 단계: S1 오늘 진짜 더운데, 휴… | S2 부산에서 시원하게 놀 수 있는 곳 없을까? | S3 태종대? 거기도 가봤어. | S4 휴식을 취하고 싶지만 시간이 없어.
 
-     0.00s  user  발화 시작: 오늘 머리 자르러 가는 약속이 있는데, 십일월 칠일 오후 두시 십오분에 예약했어.
-     6.04s  user  발화 끝
-     6.14s  agent 발화 시작: 네, 기억해 둘게요.
-     7.97s  agent 발화 끝
-     8.01s  user  발화 시작: 그리고, 'It's Always Sunny in Philadelphia' 시즌 십삼은 몇 에피소드야?
-    11.92s  <ret> 발화 (turn3 첫 프레임)
-    12.87s  agent 발화 시작: <ret> 'It's Always Sunny in Philadelphia' 시즌 십삼은 총 열 편으로 구성되
-    12.90s  user  발화 끝
-    13.30s  ⚡SPAN 주입 [d'=1.38s / d_lead=6.80s]: The thirteenth season of It's Always Sunny in Philadelphia consists of
-    19.68s  agent 발화 끝
-    19.89s  user  발화 시작: 오, 고마워. 요즘 날씨가 너무 춥던데, 서울 날씨는 어때?
-    24.34s  <ret> 발화 (turn5 첫 프레임)
-    24.72s  user  발화 끝
-    24.78s  agent 발화 시작: <ret> 지금 서울의 기온은 십사 점 칠도이고, 습도는 팔십육퍼센트, 바람은 시속 십삼킬로미터로 불고 있어
-    25.40s  ⚡SPAN 주입 [d'=1.06s / d_lead=8.34s]: (tool result) 14.7°C, humidity 86%, wind 13.0 km/h
-    33.12s  agent 발화 끝
-    35.15s  user  발화 시작: 음, 생각보다 그렇게 춥진 않네. 주말에 영화 보러 갈까 하는데, 상영하는 영화 뭐가 있어?
-    39.54s  agent 발화 시작: 그렇죠.
-    40.39s  agent 발화 끝
-    42.08s  <ret> 발화 (turn8 첫 프레임)
-    42.15s  agent 발화 시작: <ret> 현재 상영 중인 영화는 '오펜하이머', '미션 임파서블: 데드 레코닝 PART ONE', 그리고 
-    42.21s  user  발화 끝
-    42.85s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.45s]: (tool result) Oppenheimer (168 minutes), Mission: Impossible – Dead Re
-    46.65s  user  발화 시작: 네.
-    47.05s  user  발화 끝
-    49.54s  user  발화 시작: '오펜하이머' 볼까. 혹시 근처 영화관에서 몇 시에 상영하는지 알아봐 줄 수 있어?
-    49.60s  agent 발화 끝
-    55.22s  <ret> 발화 (turn11 첫 프레임)
-    55.23s  agent 발화 시작: <ret> '오펜하이머'는 씨 지 브이 강남에서 오후 두시, 다섯시 삼십분, 아홉시에 상영하고, 롯데시네마 
-    55.26s  user  발화 끝
-    57.13s  ⚡SPAN 주입 [d'=1.91s / d_lead=12.80s]: (tool result) CGV 강남: 14:00, 17:30, 21:00; 롯데시네마 월드타워: 15:15, 18:45, 2
-    62.90s  user  발화 시작: 네.
-    63.35s  user  발화 끝
-    68.02s  agent 발화 끝
-    68.22s  user  발화 시작: 롯데시네마 월드타워 여섯시 사십오분으로 예매해 줘.
-    71.23s  <ret> 발화 (turn14 첫 프레임)
-    71.81s  agent 발화 시작: <ret> 네, '오펜하이머' 롯데시네마 월드타워 오후 여섯시 사십오분 예매가 완료되었습니다. 예매번호는 엠
-    71.96s  user  발화 끝
-    72.33s  ⚡SPAN 주입 [d'=1.10s / d_lead=8.89s]: (tool result) Oppenheimer, 롯데시네마 월드타워, 18:45, 2026-07-25, MOV-009876, 
-    75.91s  user  발화 시작: 네.
-    76.31s  user  발화 끝
-    80.71s  agent 발화 끝
-    81.25s  user  발화 시작: 고마워. 저녁 먹을 만한 곳도 추천해 줄 수 있어?
-    84.56s  <ret> 발화 (turn17 첫 프레임)
-    84.70s  user  발화 끝
-    84.74s  agent 발화 시작: <ret> 근처에는 '프리미 이탈리안', '펜돌리노', '밍글스'가 있어요. 이탈리아 음식점과 한식집이 있는
-    86.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.59s]: (tool result) Primi Italian (Italian, 246 m), Pendolino (Italian, 104 
-    93.33s  agent 발화 끝
-    93.34s  user  발화 시작: '펜돌리노' 가볼까? 예약해 줄 수 있어?
-    96.18s  <ret> 발화 (turn19 첫 프레임)
-    96.37s  agent 발화 시작: <ret> 네, '펜돌리노' 서울 지점에 저녁 일곱시에 예약이 완료되었습니다. 예약번호는 알 이 에스 공 공
-    96.41s  user  발화 끝
-    97.02s  ⚡SPAN 주입 [d'=0.84s / d_lead=8.24s]: (tool result) Pendolino, 서울, 19:00, 2026-07-25, RES-003456, confirmed
-   101.29s  user  발화 시작: 네.
-   101.64s  user  발화 끝
-   104.51s  user  발화 시작: 좋아. 주말 계획은 대충 다 세운 것 같네. 혹시 이번 주말에 서울에서 특별한 행사 같은 거 있어?
-   104.61s  agent 발화 끝
-   110.72s  <ret> 발화 (turn22 첫 프레임)
-   110.90s  agent 발화 시작: <ret> 이번 주말에는 서울 재즈 페스티벌, 부산 국제 영화제 프리뷰, 그리고 롯데월드 매직 아일랜드 여름
-   111.04s  user  발화 끝
-   111.89s  ⚡SPAN 주입 [d'=1.17s / d_lead=8.20s]: (tool result) Seoul Jazz Festival (July 27-28), Busan International Fi
-   119.10s  agent 발화 끝
-   120.87s  user  발화 시작: 재즈 페스티벌은 어디에서 해?
-   122.60s  <ret> 발화 (turn24 첫 프레임)
-   122.92s  agent 발화 시작: <ret> 서울 재즈 페스티벌은 올림픽공원에서 열립니다.
-   123.03s  user  발화 끝
-   123.54s  ⚡SPAN 주입 [d'=0.95s / d_lead=3.46s]: (tool result) Olympic Park, Seoul (-37.5288, 127.1053)
-   125.31s  user  발화 시작: 네.
-   125.66s  user  발화 끝
-   126.39s  agent 발화 끝
-   126.63s  user  발화 시작: 올림픽공원은 어떻게 가?
-   128.43s  <ret> 발화 (turn27 첫 프레임)
-   128.49s  user  발화 끝
-   128.50s  agent 발화 시작: <ret> 서울에서 올림픽공원까지는 자동차로 십 점 팔킬로미터, 약 십일분 정도 걸립니다.
-   129.06s  ⚡SPAN 주입 [d'=0.63s / d_lead=6.00s]: (tool result) 10.8 km, 11 min by driving
-   131.52s  user  발화 시작: 맞아요.
-   132.10s  user  발화 끝
-   134.50s  agent 발화 끝
-   134.55s  user  발화 시작: 알았어. 며칠 전에 미용실 예약했다고 했는데, 그게 언제였지?
-   139.28s  agent 발화 시작: 십일월 칠일 오후 두시 십오분에 예약하셨다고 말씀하셨어요.
-   139.39s  user  발화 끝
-   144.35s  agent 발화 끝
-   145.81s  user  발화 시작: 아, 맞아. 그때 가격은 얼마였더라?
-   148.67s  user  발화 끝
-   148.76s  agent 발화 시작: 십오만 오천원이라고 말씀하셨어요.
-   151.29s  agent 발화 끝
-   151.63s  user  발화 시작: 아, 기억났네. 요즘 스트레스가 너무 쌓여서, 뭔가 기분 전환할 만한 거 없을까?
-   157.52s  user  발화 끝
-   157.72s  agent 발화 시작: [sigh] 스트레스가 쌓이셨다니 안타깝네요. 따뜻한 차 한 잔 마시면서 휴식을 취해보시는 건 어떠세요? 아
-   162.18s  user  발화 시작: 네.
-   162.63s  user  발화 끝
-   168.80s  agent 발화 끝
-   170.73s  user  발화 시작: 좋은 생각이다. 음악 추천해 줄 수 있어?
-   173.52s  <ret> 발화 (turn37 첫 프레임)
-   173.81s  agent 발화 시작: <ret> 요즘 인기 있는 노래로는 뉴진스의 'Ditto', 아이브의 'I 에이 엠', 그리고 르세라핌의 '
-   173.83s  user  발화 끝
-   175.43s  ⚡SPAN 주입 [d'=1.91s / d_lead=8.58s]: (tool result) NewJeans - Ditto, IVE - I AM, LE SSERAFIM - UNFORGIVEN
-   182.39s  agent 발화 끝
-   183.04s  user  발화 시작: 'Ditto' 한번 들어볼까. 지금 재생해 줘.
-   185.83s  <ret> 발화 (turn39 첫 프레임)
-   185.97s  agent 발화 시작: <ret> 네, 뉴진스의 'Ditto'를 재생합니다.
-   186.13s  user  발화 끝
-   186.43s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.97s]: (tool result) Playing: NewJeans - Ditto
-   188.94s  agent 발화 끝
-   189.31s  user  발화 시작: 좋아. 혹시 이번 주말에 부산에 갈만한 곳 있어?
-   192.00s  🃏 CARD 주입 (2400f, 누적 41턴 요약, 128f): haircut date: 십일월 칠일 오후 두시 십오분; movie time: 오후 여섯시 사십오분; movie theater: 롯데시네마 월드타워; song: 
-   193.21s  agent 발화 시작: 서울과는 다른 분위기를 느끼고 싶으신가요? 부산에는 해운대, 광안리, 감천문화마을 등 아름다운 관광지가 많아
-   193.36s  user  발화 끝
-   200.12s  user  발화 시작: 네.
-   200.51s  user  발화 끝
-   202.62s  agent 발화 끝
-   203.25s  user  발화 시작: 해운대는 어떤 곳이야?
-   204.71s  <ret> 발화 (turn44 첫 프레임)
-   204.90s  user  발화 끝
-   204.99s  agent 발화 시작: <ret> 해운대는 부산의 대표적인 해변으로, 아름다운 백사장과 푸른 바다가 있는 곳이에요. 근처에는 해운대
-   205.77s  ⚡SPAN 주입 [d'=1.06s / d_lead=9.78s]: (tool result) Haeundae Beach, Busan (-35.1603, 129.1763): Aquarium (15
-   211.61s  user  발화 시작: 맞아요.
-   212.20s  user  발화 끝
-   214.76s  agent 발화 끝
-   214.85s  user  발화 시작: 아쿠아리움 가볼까?
-   216.22s  agent 발화 시작: 해운대 아쿠아리움은 다양한 해양 생물을 만날 수 있는 곳이에요. 아이들과 함께 가기에도 좋고, 데이트 코스로
-   216.34s  user  발화 끝
-   224.85s  agent 발화 끝
-   225.35s  user  발화 시작: 좋아. 부산까지 기차표 예매해 줘.
-   227.82s  <ret> 발화 (turn49 첫 프레임)
-   228.05s  agent 발화 시작: <ret> 서울에서 부산까지 가는 기차표는 케이 티 엑스 백이십삼이 오전 여덟시에 출발해서 열시 삼십분에 도
-   228.13s  user  발화 끝
-   228.59s  ⚡SPAN 주입 [d'=0.77s / d_lead=16.18s]: (tool result) KTX 123 (08:00-10:30, ₩59,800), KTX 456 (14:00-16:30, ₩6
-   244.23s  agent 발화 끝
-   244.32s  user  발화 시작: 케이 티 엑스 백이십삼으로 예매해 줘.
-   247.23s  <ret> 발화 (turn51 첫 프레임)
-   247.25s  agent 발화 시작: <ret> 네, 케이 티 엑스 백이십삼 서울에서 부산 가는 기차표 예매가 완료되었습니다. 예매번호는 티 알 
-   247.32s  user  발화 끝
-   248.41s  ⚡SPAN 주입 [d'=1.18s / d_lead=10.19s]: (tool result) KTX 123, Seoul to Busan, 08:00, 2026-07-27, TRAIN-012345
-   257.13s  user  발화 시작: 고마워. 부산에 가서 뭐 할지 좀 더 자세히 알려줘.
-   257.44s  agent 발화 끝
-   258.88s  agent 발화 시작: 그렇죠.
-   259.80s  agent 발화 끝
-   260.74s  user  발화 끝
-   260.78s  agent 발화 시작: 부산에는 감천문화마을, 태종대, 자갈치시장 등 다양한 볼거리가 있어요. 해운대 근처에는 동백섬도 있어서 산책
-   270.57s  agent 발화 끝
-   271.60s  user  발화 시작: 감천문화마을은 어떤 곳이야?
-   273.31s  <ret> 발화 (turn56 첫 프레임)
-   273.93s  agent 발화 시작: <ret> 감천문화마을은 부산의 대표적인 관광지로, 알록달록한 집들이 언덕에 붙어 있는 아름다운 곳이에요. 
-   273.99s  user  발화 끝
-   274.41s  ⚡SPAN 주입 [d'=1.10s / d_lead=10.66s]: (tool result) Gamcheon Culture Village, Busan (-35.1068, 129.1156): Ar
-   284.52s  user  발화 시작: 좋아. 부산 여행 계획은 대충 다 세운 것 같네. 다시 서울로 돌아오는 기차표도 예매해 줘.
-   284.59s  agent 발화 끝
-   290.90s  <ret> 발화 (turn58 첫 프레임)
-   291.04s  agent 발화 시작: <ret> 부산에서 서울로 돌아오는 기차표는 케이 티 엑스 칠백팔십구가 오후 여섯시에 출발해서 여덟시 삼십분
-   291.09s  user  발화 끝
-   291.66s  ⚡SPAN 주입 [d'=0.76s / d_lead=14.37s]: (tool result) KTX 789 (18:00-20:30, ₩60,000), KTX 012 (22:00-00:30, ₩6
-   301.97s  user  발화 시작: 그렇죠.
-   302.64s  user  발화 끝
-   305.41s  agent 발화 끝
-   305.41s  user  발화 시작: 케이 티 엑스 칠백팔십구로 예매해 줘.
-   307.94s  user  발화 끝
-   307.95s  <ret> 발화 (turn61 첫 프레임)
-   307.98s  agent 발화 시작: <ret> 네, 케이 티 엑스 칠백팔십구 부산에서 서울 가는 기차표 예매가 완료되었습니다. 예매번호는 티 알
-   309.07s  ⚡SPAN 주입 [d'=1.12s / d_lead=11.43s]: (tool result) KTX 789, Busan to Seoul, 18:00, 2026-07-27, TRAIN-065432
-   319.41s  agent 발화 끝
-   320.00s  user  발화 시작: 고마워. 근데, 오늘 머리 자르러 가는 약속이 언제였지?
-   323.98s  agent 발화 시작: 십일월 칠일 오후 두시 십오분에 예약하셨다고 말씀하셨어요.
-   324.02s  user  발화 끝
-   325.33s  user  발화 시작: 네.
-   325.73s  user  발화 끝
-   328.01s  agent 발화 끝
-   328.48s  user  발화 시작: 아, 맞아. 그때 머리 자르는 데 얼마 냈었지?
-   331.49s  user  발화 끝
-   331.97s  agent 발화 시작: 십오만 오천원이라고 말씀하셨어요.
-   334.83s  agent 발화 끝
-   335.09s  user  발화 시작: 그래. 이제 정말 다 끝났네. 즐거운 주말 보내세요.
-   338.89s  agent 발화 시작: [happy] 네, 윤서님도 즐거운 주말 보내세요!
-   338.93s  user  발화 끝
-   341.98s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 진짜 더운데, 휴…
+     2.12s  user  발화 끝
+     2.21s  agent 발화 시작: 더위 조심하셔야 해요. 시원한 물 많이 드세요.
+     4.27s  user  발화 시작: 응.
+     4.58s  user  발화 끝
+     6.17s  agent 발화 끝
+     7.36s  user  발화 시작: 구월 구일 오후 다섯시 사십오분에 비행기 예약해 놨어.
+     9.62s  agent 발화 시작: 음.
+     9.97s  agent 발화 끝
+    11.24s  agent 발화 시작: 네, 기억해 둘게요. 즐거운 여행 되세요.
+    11.27s  user  발화 끝
+    14.88s  agent 발화 끝
+    15.21s  user  발화 시작: 이만원짜리 티켓으로 예약했어.
+    17.46s  user  발화 끝
+    17.66s  agent 발화 시작: 네, 이만원짜리 티켓 말씀이시죠? 기억해 둘게요.
+    19.45s  user  발화 시작: 응.
+    19.70s  user  발화 끝
+    21.24s  agent 발화 끝
+    21.34s  user  발화 시작: 요즘 영화 볼만한 거 있어?
+    23.39s  agent 발화 시작: 요즘 개봉한 영화들이 많죠. 어떤 장르를 좋아하세요?
+    23.45s  user  발화 끝
+    27.55s  user  발화 시작: 음… 팔십년대 영화 좋아해.
+    27.68s  agent 발화 끝
+    30.01s  agent 발화 시작: 팔십년대 영화요? 클래식 영화를 좋아하시는군요.
+    30.09s  user  발화 끝
+    33.54s  agent 발화 끝
+    34.02s  user  발화 시작: 맞아. 플래시댄스 알지?
+    36.07s  user  발화 끝
+    36.12s  <ret> 발화 (turn14 첫 프레임)
+    36.19s  agent 발화 시작: <ret> 플래시댄스요? 천구백팔십삼년에 개봉한 영화죠. 제니퍼 힐스가 알렉스 오언스 역을 맡았어요.
+    36.89s  ⚡SPAN 주입 [d'=0.77s / d_lead=8.48s]: Jennifer Beals starred as Alex Owens, a welder who dreams of becoming 
+    40.17s  user  발화 시작: 맞아.
+    40.62s  user  발화 끝
+    44.67s  agent 발화 끝
+    44.70s  user  발화 시작: 그 영화 진짜 재밌었어.
+    46.58s  user  발화 끝
+    46.62s  agent 발화 시작: 그렇죠? 팔십년대의 청춘 영화는 다 명작이죠.
+    49.38s  user  발화 시작: 어.
+    49.68s  user  발화 끝
+    51.01s  agent 발화 끝
+    51.41s  user  발화 시작: 혹시 부산에서 볼 수 있는 댄스 학원 아는 데 있어?
+    54.04s  <ret> 발화 (turn20 첫 프레임)
+    54.62s  agent 발화 시작: <ret> 부산댄스아카데미라는 곳이 있어요. 서구에 있고, 전화번호는 공 오 일 일 이 삼 사 오 육 칠이고
+    54.64s  user  발화 끝
+    55.95s  ⚡SPAN 주입 [d'=1.91s / d_lead=11.36s]: (tool result) {"name": "Busan Dance Academy", "address": "123 Seo-gu, 
+    62.22s  user  발화 시작: 응응.
+    62.80s  user  발화 끝
+    65.99s  agent 발화 끝
+    67.04s  user  발화 시작: 오, 괜찮네.
+    68.14s  agent 발화 시작: 네, 댄스 배우기에 좋은 곳 같아요.
+    68.15s  user  발화 끝
+    71.09s  agent 발화 끝
+    71.34s  user  발화 시작: 요즘 날씨가 너무 덥잖아.
+    73.33s  agent 발화 시작: 정말 덥죠. 건강 관리에 유의하세요.
+    73.42s  user  발화 끝
+    76.16s  user  발화 시작: 부산에서 시원하게 놀 수 있는 곳 없을까?
+    76.61s  agent 발화 끝
+    78.76s  <ret> 발화 (turn27 첫 프레임)
+    78.94s  agent 발화 시작: <ret> 해운대 해변은 어떠세요? 부산에서 유명한 해변이고, 시원한 바람과 다양한 물놀이를 즐길 수 있어요
+    79.06s  user  발화 끝
+    79.72s  ⚡SPAN 주입 [d'=0.95s / d_lead=10.52s]: (tool result) {"name": "Haeundae Beach", "description": "A popular bea
+    82.46s  user  발화 시작: 그치.
+    83.04s  user  발화 끝
+    89.46s  agent 발화 끝
+    89.50s  user  발화 시작: 해운대? 맨날 가봤지.
+    91.52s  agent 발화 시작: 아, 해운대는 많이 가보셨군요. 다른 곳을 추천해 드릴게요.
+    91.64s  user  발화 끝
+    96.15s  agent 발화 끝
+    97.62s  user  발화 시작: 뭐 다른 데가 있어?
+    98.93s  user  발화 끝
+    99.03s  agent 발화 시작: 광안리 해변도 시원하고 예쁜 곳이에요.
+   101.94s  agent 발화 끝
+   102.13s  user  발화 시작: 광안리도 괜찮지.
+   103.68s  user  발화 끝
+   103.78s  agent 발화 시작: 네, 광안리 해변도 좋은 선택이에요.
+   106.59s  agent 발화 끝
+   106.76s  user  발화 시작: 저녁에 뭐 먹을까?
+   108.28s  user  발화 끝
+   108.58s  agent 발화 시작: 저녁 메뉴는 정하셨나요?
+   110.70s  agent 발화 끝
+   110.76s  user  발화 시작: 글쎄… 맛있는 거 먹고 싶어.
+   113.19s  user  발화 끝
+   113.31s  agent 발화 시작: 맛있는 거요? 어떤 종류의 음식을 좋아하세요?
+   117.34s  user  발화 시작: 음… 돼지국밥 먹을까?
+   117.42s  agent 발화 끝
+   119.52s  <ret> 발화 (turn40 첫 프레임)
+   119.59s  user  발화 끝
+   119.60s  agent 발화 시작: <ret> 부산돼지국밥이라는 곳이 있어요. 남구에 있고, 전화번호는 공 오 일 구 팔 칠 육 오 사 삼이고요
+   121.06s  ⚡SPAN 주입 [d'=1.54s / d_lead=10.33s]: (tool result) {"name": "Busan Pork Soup", "address": "456 Nam-gu, Busa
+   123.96s  user  발화 시작: 응.
+   124.22s  user  발화 끝
+   129.94s  agent 발화 끝
+   130.05s  user  발화 시작: 가격대는 어느 정도야?
+   131.66s  user  발화 끝
+   131.69s  agent 발화 시작: 보통 가격대입니다.
+   133.25s  agent 발화 끝
+   133.29s  user  발화 시작: 부산에서 데이트하기 좋은 곳 없을까?
+   135.77s  <ret> 발화 (turn45 첫 프레임)
+   135.81s  agent 발화 시작: <ret> 태종대 공원이 데이트하기 좋은 곳이에요. 아름다운 바다 전망을 감상할 수 있고, 낭만적인 분위기를
+   135.82s  user  발화 끝
+   137.19s  ⚡SPAN 주입 [d'=1.42s / d_lead=10.57s]: (tool result) {"name": "Taejongdae Park", "description": "A scenic par
+   146.38s  agent 발화 끝
+   146.43s  user  발화 시작: 태종대? 거기도 가봤어.
+   148.35s  agent 발화 시작: 아, 태종대도 가보셨군요.
+   148.47s  user  발화 끝
+   150.94s  agent 발화 끝
+   151.43s  user  발화 시작: 부산에서 조용한 카페 추천해 줘.
+   153.07s  <ret> 발화 (turn49 첫 프레임)
+   153.67s  agent 발화 시작: <ret> 조용한 카페 부산이라는 곳이 있어요. 중구에 있고, 전화번호는 공 오 일 오 오 오 일 이 삼 사
+   153.73s  user  발화 끝
+   153.82s  ⚡SPAN 주입 [d'=0.75s / d_lead=13.17s]: (tool result) {"name": "Quiet Cafe Busan", "address": "789 Jung-gu, Bu
+   166.84s  agent 발화 끝
+   166.94s  user  발화 시작: 저렴한 카페네.
+   168.28s  agent 발화 시작: 네, 부담 없이 방문할 수 있는 곳이에요.
+   168.29s  user  발화 끝
+   169.96s  user  발화 시작: 응.
+   170.27s  user  발화 끝
+   171.14s  user  발화 시작: 혹시 내가 구월 구일 비행기 시간이 몇 시였지?
+   171.19s  agent 발화 끝
+   174.18s  agent 발화 시작: 구월 구일 오후 다섯시 사십오분이었어요.
+   174.31s  user  발화 끝
+   177.72s  agent 발화 끝
+   178.24s  user  발화 시작: 아, 그렇지.
+   179.33s  user  발화 끝
+   179.35s  agent 발화 시작: 네, 기억해 두셨군요.
+   181.03s  agent 발화 끝
+   181.97s  user  발화 시작: 그때 비행기 티켓 가격이 얼마였더라?
+   184.19s  user  발화 끝
+   184.60s  agent 발화 시작: 이만원이었어요.
+   185.99s  agent 발화 끝
+   186.85s  user  발화 시작: 아, 맞아.
+   187.94s  agent 발화 시작: 네, 다시 기억하셨네요.
+   187.96s  user  발화 끝
+   189.66s  user  발화 시작: 요즘 스트레스 너무 받아.
+   190.13s  agent 발화 끝
+   191.45s  agent 발화 시작: [sigh] 스트레스 받으시면 힘드시죠.
+   191.47s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 63턴 요약, 121f): flight date: 구월 구일; flight time: 오후 다섯시 사십오분; ticket price: 이만원; date spot: 태종대 공원; cafe: 
+   194.36s  agent 발화 끝
+   194.65s  user  발화 시작: 응… 일 때문에 너무 힘들어.
+   197.10s  agent 발화 시작: 일 때문에 힘드시다니, 안타깝네요.
+   197.13s  user  발화 끝
+   200.57s  agent 발화 끝
+   200.78s  user  발화 시작: 어떻게 하면 좋을까?
+   202.14s  user  발화 끝
+   202.42s  agent 발화 시작: 잠시 휴식을 취하는 건 어떠세요?
+   204.77s  agent 발화 끝
+   205.18s  user  발화 시작: 휴식을 취하고 싶지만 시간이 없어.
+   207.50s  agent 발화 시작: 시간이 없으시군요. 잠시라도 좋아하는 음악을 듣거나, 산책을 하는 것도 도움이 될 수 있어요.
+   207.64s  user  발화 끝
+   211.47s  user  발화 시작: 어.
+   211.78s  user  발화 끝
+   214.43s  agent 발화 끝
+   215.35s  user  발화 시작: 좋은 생각인데…
+   216.63s  user  발화 끝
+   216.91s  agent 발화 시작: 네, 작은 휴식이라도 스트레스 해소에 도움이 될 거예요.
+   219.63s  user  발화 시작: 어.
+   219.99s  user  발화 끝
+   220.86s  agent 발화 끝
+   222.32s  user  발화 시작: 고마워.
+   223.00s  user  발화 끝
+   223.51s  agent 발화 시작: 천만에요.
+   224.61s  agent 발화 끝
+   226.74s  user  발화 시작: 오늘 날씨 어때?
+   227.71s  <ret> 발화 (turn76 첫 프레임)
+   227.90s  agent 발화 시작: <ret> 부산은 현재 이십팔도이고, 습도는 칠십퍼센트, 날씨는 맑습니다.
+   228.01s  user  발화 끝
+   229.10s  ⚡SPAN 주입 [d'=1.39s / d_lead=4.81s]: (tool result) {"temperature": "28°C", "humidity": "70%", "condition": 
+   229.99s  user  발화 시작: 응.
+   230.30s  user  발화 끝
+   232.71s  agent 발화 끝
+   232.95s  user  발화 시작: 맑은 날씨네.
+   234.08s  agent 발화 시작: 네, 야외 활동하기 좋은 날씨예요.
+   234.21s  user  발화 끝
+   237.08s  agent 발화 끝
+   237.12s  user  발화 시작: 부산에서 주말에 갈만한 곳 추천해 줘.
+   240.05s  <ret> 발화 (turn81 첫 프레임)
+   240.22s  agent 발화 시작: <ret> 경주라는 역사 도시가 있어요. 부산에서 팔십킬로미터 거리에 있고, 고대 사찰과 무덤으로 유명합니다
+   240.26s  user  발화 끝
+   241.11s  ⚡SPAN 주입 [d'=1.06s / d_lead=6.92s]: (tool result) {"name": "Gyeongju", "description": "A historical city n
+   247.11s  user  발화 시작: 경주? 가보고 싶었는데.
+   247.14s  agent 발화 끝
+   249.08s  agent 발화 시작: 네, 주말에 다녀오시면 좋은 추억을 만드실 수 있을 거예요.
+   249.13s  user  발화 끝
+   252.22s  user  발화 시작: 응.
+   252.48s  user  발화 끝
+   253.51s  agent 발화 끝
+   254.25s  user  발화 시작: 알았어.
+   255.00s  user  발화 끝
+   255.07s  agent 발화 시작: 네, 즐거운 주말 보내세요.
+   257.41s  agent 발화 끝
+   258.29s  user  발화 시작: 고마워.
+   258.92s  user  발화 끝
+   259.19s  agent 발화 시작: 천만에요.
+   260.28s  agent 발화 끝

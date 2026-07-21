@@ -4,299 +4,257 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_43",
-#     "name": "Marcus",
+#     "name": "Ivy",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "mid 20s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "mid 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "work",
-#       "text": "User works as a translator."
+#       "date": "2026-06-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Georgia in December."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "employer",
-#       "text": "User works at a construction firm."
+#       "date": "2026-05-25",
+#       "category": "learning",
+#       "text": "User is taking an online data-science course."
 #     },
 #     {
-#       "date": "2026-04-20",
+#       "date": "2026-05-01",
 #       "category": "car",
-#       "text": "User drives a 2018 Mazda CX-5."
+#       "text": "User drives a 2020 Kia Niro."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "partner",
-#       "text": "User's partner is named Rin."
+#       "date": "2026-04-10",
+#       "category": "employer",
+#       "text": "User works at a law firm."
 #     },
 #     {
-#       "date": "2026-02-26",
+#       "date": "2026-04-09",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 22°C."
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-13",
+#       "category": "phone",
+#       "text": "User uses a Galaxy Z Flip."
+#     },
+#     {
+#       "date": "2026-02-24",
 #       "category": "music",
 #       "text": "User likes listening to classical piano."
 #     },
 #     {
-#       "date": "2026-02-21",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B+."
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "category": "learning",
-#       "text": "User is studying for a driving test."
+#       "date": "2025-12-30",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-06-09",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-15",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-26",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I picked up a custom order today.  | S2 I can imagine! Sounds a bit unusua | S3 It often does. I’m also thinking o | S4 Maybe somewhere in Italy. I haven'
+# EXAMINER(FDB-v2) 단계: S1 Hi Kleaus, how are you doing today | S2 That's a good idea. Somewhere not  | S3 My chair, my sweater, my desk, my  | S4 Perfect. Are there any good seafoo
 
-     0.00s  user  발화 시작: I picked up a custom order today. It was on May 17th, at 11:
-     5.93s  user  발화 끝
-     6.23s  agent 발화 시작: Got it, I'll remember that. It's good to have things sorted.
-    10.56s  agent 발화 끝
-    10.70s  user  발화 시작: And I paid a 100 euros as a deposit for it.
-    14.03s  user  발화 끝
-    14.40s  agent 발화 시작: Ne, je m'en souviendrai. That’s great, Marcus. So, what’s on
-    18.09s  user  발화 시작: Right.
-    18.77s  user  발화 끝
-    21.44s  agent 발화 끝
-    23.31s  user  발화 시작: I was just reading about maple syrup. Where is it mostly pro
-    27.53s  agent 발화 시작: That’s a sweet question! Maple syrup is primarily produced i
-    27.61s  user  발화 끝
-    31.58s  user  발화 시작: Yeah.
-    32.30s  user  발화 끝
-    33.68s  user  발화 시작: Northeastern North America? That's quite a specific area.
-    33.96s  agent 발화 끝
-    37.65s  user  발화 끝
-    37.72s  agent 발화 시작: [happy] It is! The climate and sugar maple trees there are p
-    40.34s  user  발화 시작: Yeah.
-    40.79s  user  발화 끝
-    42.85s  agent 발화 끝
-    43.37s  user  발화 시작: I see. Are there any other significant producers?
-    44.59s  agent 발화 시작: Yeah.
-    45.35s  agent 발화 끝
-    46.67s  agent 발화 시작: Yes, there’s some production in Russia and parts of Asia, bu
-    46.70s  user  발화 끝
-    50.69s  user  발화 시작: Mhm.
-    51.17s  user  발화 끝
-    52.37s  agent 발화 끝
-    52.45s  user  발화 시작: Interesting. So, it’s really a North American thing.
-    55.67s  user  발화 끝
-    56.15s  agent 발화 시작: Largely, yes. It's deeply rooted in the culture and history 
-    58.21s  user  발화 시작: Yeah.
-    58.74s  user  발화 끝
-    62.06s  agent 발화 끝
-    62.09s  user  발화 시작: I guess so. It’s funny what things are tied to specific plac
-    66.06s  user  발화 끝
-    66.16s  agent 발화 시작: It is! Like Parisian pastries are tied to Paris, wouldn't yo
-    67.97s  user  발화 시작: Yeah, totally.
-    69.06s  user  발화 끝
-    72.17s  agent 발화 끝
-    73.37s  user  발화 시작: Absolutely! Speaking of which, I need to find a good patisse
-    77.69s  <ret> 발화 (turn22 첫 프레임)
-    77.70s  agent 발화 시작: <ret> For a delightful treat, Du Pain et des Idées is a popu
-    77.79s  user  발화 끝
-    78.68s  ⚡SPAN 주입 [d'=0.98s / d_lead=12.96s]: (tool result) Paris: Du Pain et des Idées (34 Rue Yves Toudic, 75010 P
-    90.66s  agent 발화 끝
-    90.67s  user  발화 시작: Du Pain et des Idées sounds good. What’s their specialty?
-    93.13s  agent 발화 시작: Right.
-    94.18s  agent 발화 끝
-    94.31s  user  발화 끝
-    94.37s  <ret> 발화 (turn25 첫 프레임)
-    94.49s  agent 발화 시작: <ret> They are famous for their escargot pastries, especiall
-    94.97s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.28s]: (tool result) Du Pain et des Idées (34 Rue Yves Toudic, 75010 Paris) i
-   100.78s  agent 발화 끝
-   100.88s  user  발화 시작: Escargot pastries? That’s an interesting name!
-   104.41s  agent 발화 시작: [laugh] It is! They’re shaped like snails, but thankfully, t
-   104.45s  user  발화 끝
-   111.31s  agent 발화 끝
-   112.16s  user  발화 시작: I can imagine! Sounds a bit unusual, but I’m willing to try 
-   116.54s  agent 발화 시작: Excellent! Trying new things is always rewarding.
-   116.60s  user  발화 끝
-   119.27s  user  발화 시작: Yeah, totally.
-   120.36s  user  발화 끝
-   121.79s  user  발화 시작: It is. I'm thinking of inviting some friends over this weeke
-   121.82s  agent 발화 끝
-   125.41s  agent 발화 시작: That sounds lovely, Marcus. A little get-together can be ver
-   125.47s  user  발화 끝
-   129.16s  user  발화 시작: Okay.
-   129.93s  user  발화 끝
-   130.75s  user  발화 시작: I was hoping to make some cocktails. Any recommendations?
-   130.82s  agent 발화 끝
-   134.44s  user  발화 끝
-   134.94s  agent 발화 시작: [happy] Of course! A classic French 75 is always a good choi
-   140.44s  agent 발화 끝
-   141.98s  user  발화 시작: A French 75? I think I've heard of that. What's in it?
-   146.10s  user  발화 끝
-   146.28s  agent 발화 시작: It’s gin, champagne, lemon juice, and sugar. Very refreshing
-   152.08s  user  발화 시작: That does sound good. I’ll have to look up a recipe.
-   152.35s  agent 발화 끝
-   154.42s  agent 발화 시작: Mm-hmm.
-   155.16s  agent 발화 시작: I can help with that if you’d like.
-   155.18s  agent 발화 끝
-   155.27s  user  발화 끝
-   157.88s  agent 발화 끝
-   157.88s  user  발화 시작: No, I think I can manage. I’m pretty good at finding recipes
-   159.48s  agent 발화 시작: Yeah.
-   160.25s  agent 발화 끝
-   162.25s  agent 발화 시작: That’s great! You’re resourceful.
-   162.28s  user  발화 끝
-   164.79s  agent 발화 끝
-   164.93s  user  발화 시작: Thanks. I also need to get some groceries.
-   166.81s  agent 발화 시작: Mhm.
-   167.49s  agent 발화 끝
-   168.04s  user  발화 끝
-   168.47s  agent 발화 시작: Ah, the essential task of stocking up. Is there anything spe
-   171.77s  user  발화 시작: Mhm.
-   172.39s  user  발화 끝
-   173.84s  agent 발화 끝
-   174.72s  user  발화 시작: Just the usual things, really. Fruit, vegetables, some chees
-   178.63s  user  발화 끝
-   178.91s  agent 발화 시작: Sounds like a lovely spread. Are you planning on cooking som
-   184.78s  agent 발화 끝
-   185.27s  user  발화 시작: Maybe. I haven't decided yet. It depends on what I find at t
-   189.20s  agent 발화 시작: That's a good approach! Letting the ingredients inspire you.
-   189.33s  user  발화 끝
-   191.65s  user  발화 시작: Yeah.
-   192.00s  🃏 CARD 주입 (2400f, 누적 53턴 요약, 86f): order date: May 17th, at 11:15 AM (3m ago); order deposit: 100 euros (3m ago); open plan: 
-   192.18s  user  발화 끝
-   194.60s  agent 발화 끝
-   195.72s  user  발화 시작: Exactly. I like to be spontaneous.
-   198.79s  agent 발화 시작: [curious] Spontaneity can lead to wonderful creations.
-   198.90s  user  발화 끝
-   200.88s  user  발화 시작: Yeah.
-   201.28s  user  발화 끝
-   202.17s  user  발화 시작: It often does. I’m also thinking of going to a concert next 
-   202.53s  agent 발화 끝
-   206.35s  user  발화 끝
-   206.45s  agent 발화 시작: Oh, that sounds fun! What kind of music are you into?
-   210.94s  agent 발화 끝
-   211.15s  user  발화 시작: I like jazz, mostly. But I’m open to other things.
-   214.93s  <ret> 발화 (turn59 첫 프레임)
-   215.03s  user  발화 끝
-   215.23s  agent 발화 시작: <ret> This evening, you can see The Dave Brubeck Quartet at 
-   215.53s  ⚡SPAN 주입 [d'=0.60s / d_lead=10.89s]: (tool result) Paris: Tonight, Ronnie Scott's Jazz Club presents The Da
-   221.78s  user  발화 시작: Yeah.
-   222.47s  user  발화 끝
-   226.12s  agent 발화 끝
-   226.28s  user  발화 시작: Diana Krall! I love her!
-   229.11s  agent 발화 시작: [happy] That’s fantastic! She's a truly gifted performer.
-   229.13s  user  발화 끝
-   231.29s  user  발화 시작: Yeah.
-   231.69s  user  발화 끝
-   234.06s  agent 발화 끝
-   234.35s  user  발화 시작: I’ll definitely have to get tickets for that.
-   236.61s  user  발화 끝
-   236.74s  agent 발화 시작: I can help you with that if you like.
-   239.13s  agent 발화 끝
-   239.40s  user  발화 시작: Actually, I'll check online first. I prefer to choose my sea
-   241.02s  agent 발화 시작: Yeah.
-   242.07s  agent 발화 끝
-   244.27s  agent 발화 시작: That's a wise choice. Having control over your seating is al
-   244.36s  user  발화 끝
-   246.79s  user  발화 시작: Yeah.
-   247.24s  user  발화 끝
-   249.83s  agent 발화 끝
-   250.84s  user  발화 시작: Exactly. It's the little things.
-   253.12s  agent 발화 시작: [sigh] It truly is. Sometimes, it's the small details that m
-   253.23s  user  발화 끝
-   260.47s  agent 발화 끝
-   260.60s  user  발화 시작: Right? So, about that custom order… –
-   263.32s  user  발화 끝
-   263.34s  user  발화 시작: …do you remember what time I said I was picking it up? I'm t
-   268.52s  user  발화 끝
-   268.64s  agent 발화 시작: You said you were picking it up on May 17th, at 11:15 AM.
-   273.77s  agent 발화 끝
-   274.31s  user  발화 시작: Oh yes, that's right! Thanks for reminding me.
-   277.02s  agent 발화 시작: You’re very welcome, Marcus. It’s good to keep track of thin
-   277.22s  user  발화 끝
-   280.99s  user  발화 시작: It is. I’m also trying to plan a small trip.
-   280.99s  agent 발화 끝
-   283.61s  agent 발화 시작: Right.
-   284.49s  agent 발화 시작: A trip? How exciting! Where are you thinking of going?
-   284.53s  user  발화 끝
-   284.58s  agent 발화 끝
-   289.30s  agent 발화 끝
-   289.49s  user  발화 시작: Maybe somewhere in Italy. I haven't decided yet.
-   292.87s  user  발화 끝
-   292.96s  agent 발화 시작: Italy is a wonderful choice! So much history and delicious f
-   294.68s  user  발화 시작: Yeah.
-   295.27s  user  발화 끝
-   298.74s  agent 발화 끝
-   300.64s  user  발화 시작: Exactly! I'm thinking maybe Rome or Florence.
-   304.14s  agent 발화 시작: Both are fantastic cities. Rome has the ancient ruins, Flore
-   304.15s  user  발화 끝
-   309.12s  user  발화 시작: Yeah, totally.
-   310.20s  user  발화 끝
-   310.99s  agent 발화 끝
-   311.39s  user  발화 시작: True. I'm leaning towards Florence, actually.
-   314.35s  user  발화 끝
-   314.65s  agent 발화 시작: Florence is a beautiful city. The Duomo is breathtaking.
-   319.22s  agent 발화 끝
-   320.48s  user  발화 시작: I've seen pictures. It looks amazing.
-   322.52s  <ret> 발화 (turn89 첫 프레임)
-   322.68s  agent 발화 시작: <ret> A one-way flight with Air France on July 20th, 2026, i
-   322.69s  user  발화 끝
-   323.69s  ⚡SPAN 주입 [d'=1.17s / d_lead=11.38s]: (tool result) A one-way flight from Paris (CDG) to Florence (FLR) on J
-   334.06s  agent 발화 끝
-   334.13s  user  발화 시작: That's not bad at all. I might just book that.
-   335.21s  agent 발화 시작: Okay.
-   336.12s  agent 발화 끝
-   337.31s  user  발화 끝
-   337.43s  agent 발화 시작: It sounds like a good option, Marcus.
-   338.33s  user  발화 시작: Yeah.
-   338.68s  user  발화 끝
-   340.36s  agent 발화 끝
-   340.64s  user  발화 시작: I’ll look into it more later. I need to finish my grocery li
-   342.36s  agent 발화 시작: Yeah.
-   343.59s  agent 발화 끝
-   343.95s  agent 발화 시작: Prioritizing is important.
-   344.03s  user  발화 끝
-   346.30s  agent 발화 끝
-   348.21s  user  발화 시작: It is. What was the deposit amount again? I need to check my
-   352.93s  agent 발화 시작: You paid a deposit of 100 euros.
-   353.03s  user  발화 끝
-   354.13s  user  발화 시작: Uh-huh.
-   354.53s  user  발화 끝
-   355.93s  agent 발화 끝
-   356.02s  user  발화 시작: Ah, yes. That's what I thought. Thanks.
-   358.39s  agent 발화 시작: You're most welcome.
-   358.46s  user  발화 끝
-   360.14s  user  발화 시작: No, I think that's all for now.
-   360.16s  agent 발화 끝
-   362.17s  agent 발화 시작: [happy] Wonderful! Have a lovely day, Marcus. It was a pleas
-   362.22s  user  발화 끝
-   367.87s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Kleaus, how are you doing today?
+     2.09s  user  발화 끝
+     2.46s  agent 발화 시작: I'm doing wonderfully, Ivy. It’s a lovely day, isn’t it?
+     7.07s  agent 발화 끝
+     7.25s  user  발화 시작: Well, I have a dentist appointment on March 16th, at 9:45 AM
+    15.41s  user  발화 끝
+    15.63s  agent 발화 시작: Got it, I’ll remember that. That sounds like a straightforwa
+    18.49s  user  발화 시작: Okay.
+    18.98s  user  발화 끝
+    21.35s  agent 발화 끝
+    23.22s  user  발화 시작: Not really, just thinking about silly things. Like, what’s t
+    27.84s  <ret> 발화 (turn6 첫 프레임)
+    28.43s  agent 발화 시작: <ret> It's Woodstock, a little yellow bird. He’s Snoopy’s be
+    28.44s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.35s]: Woodstock is a fictional yellow bird cartoon character who appears in 
+    28.48s  user  발화 끝
+    33.77s  user  발화 시작: Yes! That's right. I always forget.
+    33.78s  agent 발화 끝
+    37.37s  agent 발화 시작: It happens. Our minds hold so much, and sometimes little det
+    37.46s  user  발화 끝
+    42.41s  user  발화 시작: Okay.
+    42.80s  user  발화 끝
+    46.42s  agent 발화 끝
+    46.54s  user  발화 시작: True. I'm thinking of going to a movie this weekend. Any rec
+    50.90s  <ret> 발화 (turn11 첫 프레임)
+    51.12s  user  발화 끝
+    51.30s  agent 발화 시작: <ret> ‘Dune: Part Two’, ‘Kung Fu Panda 4’, and ‘Ghostbusters
+    51.50s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.13s]: (tool result) Currently showing in London: 'Dune: Part Two' (PG-13), '
+    56.11s  user  발화 시작: Mm-hmm.
+    56.56s  user  발화 끝
+    60.42s  agent 발화 끝
+    61.99s  user  발화 시작: Hmm, maybe 'Dune'. What are the showtimes?
+    64.97s  <ret> 발화 (turn14 첫 프레임)
+    65.22s  agent 발화 시작: <ret> Let me look up the showtimes for 'Dune: Part Two'.
+    65.32s  user  발화 끝
+    66.72s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.32s]: (tool result) 'Dune: Part Two' showtimes in London: Odeon Leicester Sq
+    68.50s  agent 발화 시작: At the Odeon Leicester Square, it’s showing at 2:30 PM and 7
+    68.54s  agent 발화 끝
+    73.92s  user  발화 시작: Yeah.
+    74.37s  user  발화 끝
+    78.74s  agent 발화 끝
+    79.17s  user  발화 시작: The 7 PM showing sounds good.
+    81.20s  agent 발화 시작: Wonderful. A good choice! Do you want me to find you restaur
+    81.32s  user  발화 끝
+    89.82s  agent 발화 끝
+    90.22s  user  발화 시작: That's a good idea. Somewhere not too expensive.
+    92.06s  agent 발화 시작: Right.
+    92.83s  agent 발화 끝
+    93.53s  <ret> 발화 (turn21 첫 프레임)
+    93.85s  agent 발화 시작: <ret> Let me find some moderately priced restaurants near Od
+    93.97s  user  발화 끝
+    94.73s  ⚡SPAN 주입 [d'=1.19s / d_lead=5.23s]: (tool result) Nearby moderate-priced restaurants: Dishoom Covent Garde
+    99.02s  agent 발화 시작: Dishoom Covent Garden, Flat Iron Steak, and Barrafina Adelai
+    99.08s  agent 발화 끝
+   104.80s  user  발화 시작: Uh-huh.
+   105.28s  user  발화 끝
+   108.84s  agent 발화 끝
+   109.05s  user  발화 시작: Dishoom sounds lovely.
+   110.73s  <ret> 발화 (turn25 첫 프레임)
+   111.03s  user  발화 끝
+   111.09s  agent 발화 시작: <ret> I’ve reserved a table for one at Dishoom Covent Garden
+   111.68s  ⚡SPAN 주입 [d'=0.95s / d_lead=9.18s]: (tool result) Reservation confirmed at Dishoom Covent Garden for 1 per
+   120.23s  user  발화 시작: Perfect, thank you!
+   120.27s  agent 발화 끝
+   121.66s  user  발화 끝
+   121.98s  agent 발화 시작: You're very welcome, Ivy. It sounds like a lovely evening is
+   129.05s  user  발화 시작: It does. I’ve been feeling a bit stressed lately, though. Wo
+   129.11s  agent 발화 끝
+   131.22s  agent 발화 시작: Yeah, yeah.
+   132.99s  agent 발화 끝
+   133.77s  agent 발화 시작: [sigh] I’m sorry to hear that. Work stress is so common. It’
+   133.87s  user  발화 끝
+   138.55s  user  발화 시작: Yeah.
+   138.99s  user  발화 끝
+   141.18s  agent 발화 끝
+   141.26s  agent 발화 시작: Perhaps we could explore some quick grounding techniques? So
+   148.81s  user  발화 시작: That sounds good actually. What do you suggest?
+   149.19s  agent 발화 끝
+   151.71s  user  발화 끝
+   151.77s  agent 발화 시작: One simple technique is the 5-4-3-2-1 method. Name five thin
+   155.33s  user  발화 시작: Uh-huh.
+   155.78s  user  발화 끝
+   160.88s  agent 발화 끝
+   161.09s  user  발화 시작: Okay, five things I can see… a lamp…
+   164.53s  user  발화 끝
+   166.53s  user  발화 시작: …a book, my phone, a plant, the window.
+   168.38s  agent 발화 시작: Mm-hmm.
+   169.08s  agent 발화 끝
+   170.11s  user  발화 끝
+   170.44s  agent 발화 시작: Wonderful. Now, four things you can touch.
+   173.67s  user  발화 시작: Yeah.
+   174.12s  user  발화 끝
+   175.95s  agent 발화 끝
+   175.97s  user  발화 시작: My chair, my sweater, my desk, my pen.
+   178.21s  agent 발화 시작: Yeah.
+   179.40s  agent 발화 끝
+   179.44s  user  발화 끝
+   179.61s  agent 발화 시작: Excellent. Three things you can hear.
+   181.84s  user  발화 시작: Uh-huh.
+   182.29s  user  발화 끝
+   183.29s  agent 발화 끝
+   183.48s  user  발화 시작: The hum of the fridge, traffic outside, my own breathing.
+   188.25s  agent 발화 시작: Good. Two things you can smell.
+   188.29s  user  발화 끝
+   189.32s  user  발화 시작: Mm-hmm.
+   189.76s  user  발화 끝
+   191.57s  agent 발화 끝
+   191.61s  user  발화 시작: Coffee, and… the plant, I guess.
+   192.00s  🃏 CARD 주입 (2400f, 누적 49턴 요약, 93f): dentist date: March 16th (3m ago); dentist time: 9:45 AM (3m ago); dentist cost: 85 pounds
+   195.03s  user  발화 끝
+   195.06s  agent 발화 시작: Very good. And finally, one thing you can taste.
+   199.36s  agent 발화 끝
+   200.24s  user  발화 시작: Hmm… the lingering taste of my tea.
+   203.30s  user  발화 끝
+   203.72s  agent 발화 시작: That’s a lovely way to end it. How do you feel now?
+   207.01s  user  발화 시작: A little calmer, actually. Thanks, Kleaus.
+   207.37s  agent 발화 끝
+   209.55s  user  발화 끝
+   209.62s  agent 발화 시작: [happy] I’m so glad to hear that, Ivy. It’s a small thing, b
+   213.81s  user  발화 시작: Mm-hmm.
+   214.44s  user  발화 끝
+   215.67s  agent 발화 끝
+   216.70s  user  발화 시작: It does. I'm thinking about a weekend getaway. Somewhere not
+   219.75s  <ret> 발화 (turn56 첫 프레임)
+   220.96s  user  발화 끝
+   221.19s  ⚡SPAN 주입 [d'=1.43s / d_lead=7.83s]: (tool result) Popular weekend getaways from London: Oxford (60 miles),
+   221.25s  agent 발화 시작: <ret> Oxford, Cambridge, Brighton, and Bath are all popular 
+   229.08s  agent 발화 끝
+   230.24s  user  발화 시작: Brighton sounds nice. What’s the weather like there this wee
+   233.78s  <ret> 발화 (turn58 첫 프레임)
+   234.03s  user  발화 끝
+   234.26s  agent 발화 시작: <ret> Let me check the forecast for Brighton.
+   235.72s  ⚡SPAN 주입 [d'=1.94s / d_lead=2.91s]: (tool result) Brighton weather this weekend: Saturday - Sunny, 18°C; S
+   237.04s  agent 발화 시작: It’s looking sunny on Saturday, eighteen degrees Celsius, an
+   237.17s  agent 발화 끝
+   245.25s  agent 발화 끝
+   245.50s  user  발화 시작: Perfect. Are there any good seafood restaurants in Brighton?
+   249.58s  user  발화 끝
+   249.64s  <ret> 발화 (turn61 첫 프레임)
+   249.72s  agent 발화 시작: <ret> Let me find some highly-rated seafood restaurants in B
+   250.42s  ⚡SPAN 주입 [d'=0.77s / d_lead=4.61s]: (tool result) Top-rated seafood restaurants in Brighton: Riddle & Finn
+   254.33s  agent 발화 끝
+   254.35s  agent 발화 시작: Riddle & Finn, The Coal Shed, and Terre à Terre are all high
+   259.77s  user  발화 시작: Yeah.
+   260.25s  user  발화 끝
+   265.57s  agent 발화 끝
+   265.69s  user  발화 시작: Riddle & Finn sounds good. What’s their price range?
+   268.58s  <ret> 발화 (turn65 첫 프레임)
+   269.12s  user  발화 끝
+   269.40s  ⚡SPAN 주입 [d'=0.82s / d_lead=6.92s]: (tool result) Riddle & Finn, Brighton: Price range - $$ (moderate). Av
+   269.45s  agent 발화 시작: <ret> Riddle & Finn is in the moderate price range. An avera
+   274.36s  user  발화 시작: Yeah.
+   274.94s  user  발화 끝
+   276.37s  agent 발화 끝
+   276.69s  user  발화 시작: Okay, good to know. I'm trying to remember… what time did I 
+   282.88s  user  발화 끝
+   283.09s  agent 발화 시작: Earlier, you mentioned your dentist appointment was at 9:45 
+   286.49s  user  발화 시작: Mm-hmm.
+   286.93s  user  발화 끝
+   288.31s  agent 발화 끝
+   288.62s  user  발화 시작: Ah yes, that’s right. And how much was it again?
+   290.23s  agent 발화 시작: Yeah.
+   291.16s  user  발화 끝
+   291.42s  agent 발화 끝
+   291.78s  agent 발화 시작: A while back, you said the appointment cost 85 pounds.
+   296.37s  agent 발화 끝
+   296.51s  user  발화 시작: Thank you. That’s helpful. I think I'm going to start planni
+   301.56s  user  발화 끝
+   301.81s  agent 발화 시작: Wonderful! It sounds like a lovely plan. I'm happy to have h
+   310.57s  agent 발화 끝
+   310.96s  user  발화 시작: You’ve been a great help, Kleaus.
+   312.76s  agent 발화 시작: [curious] It’s my pleasure, Ivy. Remember, I’m here whenever
+   312.83s  user  발화 끝
+   322.95s  agent 발화 끝

@@ -1,119 +1,52 @@
 # v3_fstart_15_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-# {
-#   "profile": {
-#     "user_id": "v3_fstart_15",
-#     "name": "은원",
-#     "location": {
-#       "city": "Busan",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
-#     },
-#     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "60s",
-#     "language": "Korean"
-#   },
-#   "saved_memories": [
-#     {
-#       "date": "2026-06-25",
-#       "category": "schedule",
-#       "text": "User has a 9-to-6 weekday schedule."
-#     },
-#     {
-#       "date": "2026-04-24",
-#       "category": "floor",
-#       "text": "User lives on the 7th floor."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 19°C."
-#     },
-#     {
-#       "date": "2026-04-11",
-#       "category": "car",
-#       "text": "User drives a 2017 Honda Civic."
-#     },
-#     {
-#       "date": "2026-02-24",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "employer",
-#       "text": "User works at an airline."
-#     },
-#     {
-#       "date": "2026-01-07",
-#       "category": "commute",
-#       "text": "User takes the subway to work."
-#     }
-#   ],
-#   "conversation_summaries": [
-#     {
-#       "date": "2026-05-11",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-30",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-09",
-#       "title": "Renovating the bathroom",
-#       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
-#       ]
-#     }
-#   ]
-# }
+# EXAMINER(FDB-v2) 단계: S1 오늘 뉴스 좀 찾아봐 줘. 주식 시장 관련 기사 위주로, 깊게 | S2 아, 그렇구나. 그럼 지금 주식 투자하기 좋은 시기일까— 아, | S3 장기적인 관점이라… 좀 더 자세히 설명해 줄 수 있어? | S4 국채는 어떻게 사는 거야?
 
-# EXAMINER(FDB-v2) 단계: S1 버스 티켓 예매 좀 도와주세요. 시애틀에서 포틀랜드로, 오월  | S2 네, 확인했어요. 그런데 혹시 다른 날짜에도 자리가 있을까요? | S3 오월 십이일 오후 두시쯤에 출발하는 버스가 있는지 알아봐 주세 | S4 … 혹시 그 버스는 와이파이가 돼요?
-
-     0.00s  user  발화 시작: 버스 티켓 예매 좀 도와주세요. 시애틀에서 포틀랜드로, 오월 십일에 오전 열시 십오분 출발하는 티켓 세장으로
-     8.11s  user  발화 끝
-     8.62s  <ret> 발화 (turn1 첫 프레임)
-     8.68s  agent 발화 시작: <ret> 네, 시애틀에서 포틀랜드행 버스 티켓 세장을 예매해 드렸습니다. 예약번호는 비 유 에스 삼 공 공
-     9.77s  ⚡SPAN 주입 [d'=1.15s / d_lead=12.62s]: (tool result) Seattle, WA, Portland, OR, 2024-05-10, 10:15, BUS3-00506
-    21.30s  agent 발화 끝
-    21.53s  user  발화 시작: 네, 확인했어요. 그런데 혹시 다른 날짜에도 자리가 있을까요?
-    25.50s  user  발화 끝
-    25.53s  agent 발화 시작: 다른 날짜도 확인해 볼까요? 혹시 특정 날짜를 생각하고 계신가요?
-    30.61s  agent 발화 끝
-    30.87s  user  발화 시작: 오월 십이일 오후 두시쯤에 출발하는 버스가 있는지 알아봐 주세요.
-    34.83s  <ret> 발화 (turn5 첫 프레임)
-    35.02s  user  발화 끝
-    35.22s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-    35.70s  ⚡SPAN 주입 [d'=0.87s / d_lead=1.84s]: Seattle, WA, Portland, OR, 2024-05-12, 14:00, BUS3-005078, available
-    36.49s  user  발화 시작: … 혹시 그 버스는 와이파이가 돼요?
-    37.06s  agent 발화 끝
-    37.94s  <ret> 발화 (turn7 첫 프레임)
-    38.41s  agent 발화 시작: <ret> 네, 해당 버스에는 와이파이가 제공됩니다. 편안하게 이용하실 수 있을 거예요.
-    38.42s  user  발화 끝
-    38.54s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.61s]: BUS3-005078: wifi available
-    40.72s  user  발화 시작: 응.
-    41.03s  user  발화 끝
-    44.99s  agent 발화 시작: 혹시 좌석 지정도 가능한가 궁금하시군요. 좌석 지정은 예약 단계에서 가능합니다.
-    45.02s  agent 발화 끝
-    52.26s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 뉴스 좀 찾아봐 줘. 주식 시장 관련 기사 위주로, 깊게 파고들어서.
+     5.13s  user  발화 끝
+     5.46s  <ret> 발화 (turn1 첫 프레임)
+     5.51s  agent 발화 시작: <ret> 네, 알겠습니다. 주식 시장 관련 기사를 찾아볼게요.
+     6.60s  ⚡SPAN 주입 [d'=1.15s / d_lead=5.32s]: (tool result) https://www.reuters.com
+    10.83s  agent 발화 시작: 로이터에서 주식 시장 관련 기사 일페이지를 찾았습니다.
+    10.84s  agent 발화 끝
+    15.13s  agent 발화 끝
+    15.60s  user  발화 시작: 음…
+    16.05s  user  발화 끝
+    16.12s  agent 발화 시작: 최근 시장 동향은 변동성이 큰 편이고, 금리 인상 가능성이 계속 언급되고 있어요.
+    22.77s  agent 발화 끝
+    23.13s  user  발화 시작: 금리 인상이 주식 시장에 어떤 영향을 줄까?
+    25.59s  <ret> 발화 (turn6 첫 프레임)
+    25.94s  user  발화 끝
+    26.06s  agent 발화 시작: <ret> 금리 인상은 여러 요인에 영향을 미치죠. 이천이십삼년 삼월 이십이일에 연준이 금리를 영 점 이 오
+    26.47s  ⚡SPAN 주입 [d'=0.87s / d_lead=3.52s]: The Federal Reserve raised interest rates by 0.25 percentage points on
+    43.03s  user  발화 시작: 아, 그렇구나. 그럼 지금 주식 투자하기 좋은 시기일까— 아, 잠깐, 그보다 내일 아침 아홉시에 중요한 회의
+    43.07s  agent 발화 끝
+    50.46s  <ret> 발화 (turn8 첫 프레임)
+    50.58s  user  발화 끝
+    50.79s  agent 발화 시작: <ret> 회의 알람을 맞춰 드릴게요. 내일 아침 아홉시에 알람이 설정되었습니다.
+    51.31s  ⚡SPAN 주입 [d'=0.85s / d_lead=2.45s]: (tool result) Alarm set for 2026-07-11 09:00
+    52.91s  user  발화 시작: 응.
+    53.36s  user  발화 끝
+    56.29s  agent 발화 끝
+    57.27s  user  발화 시작: 고마워. 그럼 다시 주식 이야기로 돌아가서, 지금 투자하면 손해 볼 가능성이 클까?
+    62.55s  user  발화 끝
+    63.00s  agent 발화 시작: 금리 인상 시기에는 일반적으로 주식 시장이 조정을 받습니다. 하지만 장기적인 관점에서 보면 기회가 될 수도 
+    71.84s  agent 발화 끝
+    73.43s  user  발화 시작: 장기적인 관점이라… 좀 더 자세히 설명해 줄 수 있어?
+    76.70s  user  발화 끝
+    76.78s  agent 발화 시작: 금리 인상이 단기적으로는 기업의 자금 조달 비용을 높여서 이익 감소로 이어질 수 있지만—
+    83.02s  user  발화 시작: …근데 지금 당장 돈이 필요한 상황이라서, 안전한 투자처는 어디 없을까?
+    83.64s  agent 발화 끝
+    87.78s  user  발화 끝
+    87.80s  agent 발화 시작: 당장 돈이 필요하시다면, 안전 자산 위주로 포트폴리오를 구성하는 것이 좋겠네요. 예금이나 국채 등을 고려해 
+    96.70s  agent 발화 끝
+    97.52s  user  발화 시작: 국채는 어떻게 사는 거야?
+    98.93s  agent 발화 시작: 국채는 은행이나 증권사를 통해 구매할 수 있습니다. 아니면, 정부에서 발행하는 것을 직접 구매할 수도 있습니
+    98.94s  user  발화 끝
+   102.57s  user  발화 시작: 어어.
+   102.96s  user  발화 끝
+   107.78s  agent 발화 끝
+   108.00s  user  발화 시작: 알았어. 알려줘서 고마워.
+   109.80s  user  발화 끝
+   109.99s  agent 발화 시작: 천만에요. 언제든지 궁금한 점이 있으면 저에게 물어보세요.
+   114.90s  agent 발화 끝

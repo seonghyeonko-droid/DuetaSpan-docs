@@ -4,108 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Sky",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "60s",
-#     "language": "English"
+#     "age_range": "mid 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-19",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 26°C."
+#       "date": "2026-05-24",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Ava."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "child",
-#       "text": "User has a child named Rin, age 10."
+#       "date": "2026-05-21",
+#       "category": "airline",
+#       "text": "User usually flies with United."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "wake",
-#       "text": "User usually wakes up around 6am."
+#       "date": "2026-05-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Morocco in November."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "floor",
-#       "text": "User lives on the 8th floor."
+#       "date": "2026-04-25",
+#       "category": "music",
+#       "text": "User likes listening to a lo-fi jazz playlist."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "phone",
-#       "text": "User uses an Xperia 1."
+#       "date": "2026-04-02",
+#       "category": "plant",
+#       "text": "User is growing a lemon tree at home."
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Spanish tapas."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "schedule",
+#       "text": "User has rotating night shifts."
 #     },
 #     {
 #       "date": "2026-01-25",
-#       "category": "commute",
-#       "text": "User works from home."
-#     },
-#     {
-#       "date": "2026-01-21",
-#       "category": "skill",
-#       "text": "User is just getting back into marathon training."
-#     },
-#     {
-#       "date": "2025-12-27",
 #       "category": "hobby",
-#       "text": "User is into pottery."
-#     },
-#     {
-#       "date": "2025-12-20",
-#       "category": "savings",
-#       "text": "User is saving for a new car."
+#       "text": "User is into sea kayaking."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-15",
-#       "title": "Booking a moving company",
+#       "date": "2026-06-10",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "moving a 2-bedroom apartment across town on the 30th",
-#         "needs help disassembling furniture"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "title": "Choosing a laptop",
+#       "date": "2025-12-05",
+#       "title": "Selling a used bike",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
+#         "a 3-year-old road bike",
+#         "asking around 400k won"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Salo, I'm studying biology and  | S2 The number of orders in class mamm | S3 Oh, hold on a sec, honey, can you  | S4 Sorry about that. So, 29 orders… t
 
-     0.00s  user  발화 시작: Hi Salo, I'm studying biology and I'm stuck on a question.
-     1.82s  agent 발화 시작: Yeah.
-     2.41s  agent 발화 끝
-     3.51s  user  발화 끝
-     3.63s  agent 발화 시작: Hello! It's perfectly normal to get stuck sometimes. What's 
-     9.14s  agent 발화 끝
-     9.29s  user  발화 시작: The number of orders in class mammalia is…? I just can't rem
-    12.72s  agent 발화 시작: Mm-hmm.
-    13.45s  agent 발화 끝
-    13.80s  user  발화 끝
-    13.94s  <ret> 발화 (turn5 첫 프레임)
-    14.13s  agent 발화 시작: <ret> Oh, that's a good one! For a bit of biological detail,
-    14.83s  ⚡SPAN 주입 [d'=0.90s / d_lead=6.25s]: There are 29 orders within the class Mammalia, encompassing a wide var
-    17.73s  user  발화 시작: Right.
-    18.32s  user  발화 끝
-    20.38s  agent 발화 끝
-    20.55s  user  발화 시작: Oh, hold on a sec, honey, can you grab the mail?
-    23.03s  user  발화 시작: Sorry about that. So, 29 orders… that’s helpful.
-    23.04s  user  발화 끝
-    25.59s  agent 발화 시작: Yeah, totally.
-    26.43s  user  발화 끝
-    26.50s  agent 발화 시작: [happy] You’re very welcome! It’s great you’re pursuing biol
-    26.92s  agent 발화 끝
-    31.50s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Sox, quick question – who’s won the most Gold Glove awar
+     3.59s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  ⚡SPAN 주입 [d'=0.91s / d_lead=6.14s]: Greg Maddux has won a record sixteen Gold Glove Awards as a pitcher, m
+     4.57s  agent 발화 시작: <ret> Greg Maddux has sixteen Gold Glove Awards, which is th
+     4.63s  user  발화 끝
+    10.64s  user  발화 시작: Honey, the oven timer's going off — can you grab it?
+    10.71s  agent 발화 끝
+    13.13s  user  발화 시작: Okay, back to baseball… sixteen, wow. Is there anyone close 
+    13.31s  user  발화 끝
+    16.48s  agent 발화 시작: Mm-hmm.
+    16.92s  agent 발화 끝
+    18.50s  user  발화 끝
+    18.56s  <ret> 발화 (turn5 첫 프레임)
+    18.83s  agent 발화 시작: <ret> Sixteen is definitely a high bar… Ozzie Smith comes in
+    19.16s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.52s]: Ozzie Smith won thirteen Gold Glove Awards during his career as a shor
+    27.64s  agent 발화 끝

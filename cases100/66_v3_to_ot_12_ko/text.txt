@@ -1,106 +1,17 @@
 v3_to_ot_12_ko src=nq style=v1
-SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 통해 사람들을 돕는 침착하고 명료한 라이프 코치 데아미입니다. 호흡 기법, 간단한 접지 운동, 기본적인 수면 위생 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_to_ot_12",
-    "name": "다린",
-    "location": {
-      "city": "Busan",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-27",
-      "category": "commute",
-      "text": "User takes the subway to work."
-    },
-    {
-      "date": "2026-04-18",
-      "category": "medication",
-      "text": "User takes insulin."
-    },
-    {
-      "date": "2026-04-12",
-      "category": "music",
-      "text": "User likes listening to indie folk."
-    },
-    {
-      "date": "2026-03-24",
-      "category": "show",
-      "text": "User is currently watching a slow-burn detective drama."
-    },
-    {
-      "date": "2026-03-20",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-01-31",
-      "category": "streaming",
-      "text": "User subscribes to Netflix and Spotify."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-03-27",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six on the 14th",
-        "looking for outdoor seating with a vegetarian option"
-      ]
-    },
-    {
-      "date": "2026-03-01",
-      "title": "Planning a camping trip",
-      "bullets": [
-        "a weekend at a lake site in September",
-        "asked about a 4-person tent and a cooler"
-      ]
-    },
-    {
-      "date": "2025-12-13",
-      "title": "Sorting out a visa",
-      "bullets": [
-        "applying for a working-holiday visa to Australia",
-        "asked about the bank-balance requirement"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 친절하고 침착한 경청 동반자인 아리입니다. 적극적 경청, 친절한 경계 설정, 갈등이 고조되기 전에 진정시키는 방법 등을 설명할 수 있습니다. 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 moshi이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 것은 아닙니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 셀린 디옹 전에 'The Power of Love' 부른 가수 누구였지?
-[  2.03s][moshi] «backchannel» 네.
-[  3.58s][moshi] ⟨ret@3.48s⟩ 음, 그 ⟦⚡SPAN@5.26s: Jennifer Rush released "The Power of Love" in 1984, and it became a major hit for her before Celine Dion cover⟧ 노래를 처음 부른 가수는 제니퍼 러쉬였어요. 천구백팔십사년에 발표해서 큰 인기를 끌었죠. 셀린 디옹이 커버하기 전에요.
-[  8.29s][user ] «backchannel» 응.
-[ 12.55s][user ] «to_other» 잠깐만, 아기가 울어.
-[ 14.29s][user ] 아, 미안. 그래서, 제니퍼 러쉬.
-[ 17.87s][moshi] 네, 맞아요. 제니퍼 러쉬였어요. 혹시 다른 노래도 궁금하신가요?
-[ 19.98s][user ] «backchannel» 음.
-[ 22.15s][moshi] [happy] 혹시 어떤 장르의 음악을 좋아하시는지 여쭤봐도 될까요? 스트레스 해소에 도움이 되는 음악을 추천해 드릴 수 있어요.
-[ 25.52s][user ] «backchannel» 어.
-[ 29.11s][user ] 음… 잔잔한 음악 좋아해. 마음이 ⟨ret@32.02s⟩ 편해지는.
-[ 32.50s][moshi] ⟦⚡SPAN@32.86s: Brian Eno is an English musician, composer, and record producer, known for his work in ambient music.⟧ 마음이 편해지는 잔잔한 음악이라… 그럼 엠비언트 음악이나 뉴에이지 음악은 어떠세요? 브라이언 이노 같은 아티스트가 있어요.
-[ 39.74s][moshi] 브라이언 이노는 앰비언트 음악으로 유명한 영국의 음악가이자 프로듀서예요. 그의 음악은 아주 차분하고 편안하죠.
-[ 45.63s][user ] «backchannel» 응.
-[ 48.82s][user ] 브라이언 이노? 처음 들어보는데.
-[ 51.33s][moshi] [curious] 브라이언 이노는 앰비언트 음악의 선구자라고 할 수 있어요. 그의 앨범 'Ambient 일: Music for Airports'는 꼭 한번 들어보시길 추천해요.
-[ 56.39s][user ] «backchannel» 맞아.
-[ 59.48s][user ] 공항 음악? 특이하네.
-[ 61.95s][moshi] 네, 공항에서 사람들이 편안하게 기다릴 수 있도록 만든 음악이에요. 주변 소음을 덮어주고 마음을 안정시켜 주죠.
-[ 69.47s][moshi] 죄송하지만, 지금은 공항 음악에 대한 더 자세한 정보를 찾을 수 없네요.
-[ 74.06s][user ] 아, 그래? 그럼 그냥… 심호흡하는 방법 좀 알려줘.
-[ 78.58s][moshi] ⟨ret@78.46s⟩ [sigh] ⟦⚡SPAN@79.43s: (tool result) {"provider name": "Mindful Breathing", "provider description": "Guided breathing exercises for s⟧ 스트레스가 많으신가 봐요. 심호흡은 긴장을 푸는 데 아주 효과적이죠. 숨을 깊게 들이쉬고 천천히 내쉬는 것을 반복해 보세요.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "breathing exercise"}}
-[ 86.81s][moshi] 마음챙김 호흡이라는 곳에서 스트레스 해소와 이완을 위한 심호흡 운동을 무료로 제공하고 있어요. 온라인으로 이용할 수 있습니다.
-[ 96.39s][user ] 온라인이라고? 좋아.
-[ 98.22s][moshi] 네, 언제 어디서든 편하게 따라 할 수 있어요. 심호흡과 함께 명상도 병행하면 더욱 효과적이에요.
-[104.46s][moshi] [happy] 오늘 하루도 수고 많으셨어요. 편안한 밤 보내세요.
+[  0.00s][user ] 아리 씨, 혹시 알링턴 국립묘지 땅을 누가 기증했는지 알려 주실 수 있을까요?
+[  1.76s][moshi] «backchannel» 음.
+[  5.32s][moshi] ⟨ret@5.22s⟩ 알링턴 국립묘지에 대한 ⟦⚡SPAN@7.00s: Custis Lee donated the land for Arlington National Cemetery.⟧ 정보요? 잠깐만 확인해 볼게요.
+[  8.90s][moshi] 알링턴 국립묘지 땅은 커스티스 리 씨가 기증하셨습니다.
+[ 11.44s][user ] «backchannel» 네.
+[ 12.97s][user ] «to_other» 여보, 오븐 타이머 울린다 — 좀 꺼 줄래?
+[ 16.50s][user ] 아, 죄송해요. 잠시만요. 다시 질문 드려도 될까요?
+[ 20.09s][moshi] 어떤 질문이 있으신가요?
+[ 21.63s][user ] «to_other» 잠깐만, 택배 왔나 봐 — 문 좀 열어 줄래?
+[ 22.69s][moshi] «backchannel» 음.
+[ 25.19s][moshi] 네, 다시 말씀해 주세요. 제가 도와드리겠습니다.
+[ 28.15s][user ] 아, 커스티스 리 씨가 땅을 기증했다고요?
+[ 31.28s][moshi] 맞습니다. 커스티스 리 씨가 알링턴 국립묘지 땅을 기증하셨습니다. [happy] 그분의 헌신에 감사하죠.

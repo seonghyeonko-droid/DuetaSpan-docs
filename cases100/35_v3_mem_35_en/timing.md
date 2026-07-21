@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Freya",
+#     "name": "Theo",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,106 +12,100 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "allergy",
-#       "text": "User is allergic to latex."
+#       "date": "2026-06-12",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is bún chả."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "anniversary",
-#       "text": "User's anniversary is April 24."
-#     },
-#     {
-#       "date": "2026-04-18",
+#       "date": "2026-06-02",
 #       "category": "coffee",
-#       "text": "User's usual coffee order is a cold brew."
+#       "text": "User's usual coffee order is a cappuccino with oat milk."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A+."
+#       "date": "2026-04-04",
+#       "category": "airline",
+#       "text": "User usually flies with Qatar Airways."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2026-03-02",
+#       "category": "plant",
+#       "text": "User is growing a monstera at home."
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "category": "music",
+#       "text": "User likes listening to K-ballads."
+#     },
+#     {
+#       "date": "2026-01-27",
 #       "category": "sibling",
-#       "text": "User has a younger sibling named Sofia."
+#       "text": "User has a younger sibling named Jisoo."
 #     },
 #     {
-#       "date": "2026-02-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-01-18",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
 #     },
 #     {
-#       "date": "2025-12-07",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 22°C."
+#       "date": "2026-01-05",
+#       "category": "wake",
+#       "text": "User usually wakes up around 7:30am."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-13",
-#       "title": "Choosing a laptop",
+#       "date": "2026-06-07",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "budget around 1.8M won",
-#         "needs it for video editing and light gaming"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-25",
-#       "title": "Selling a used bike",
+#       "date": "2026-04-24",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-03-04",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm alright, thanks. I'm trying to | S2 Oh, that's right! I'd forgotten I  | S3 Yes, Canada is perfect. Somewhere  | S4 …Actually, before you do that, are
 
-     0.00s  agent 발화 시작: Hi Freya, I'm Ther. It's lovely to connect with you today. H
-     5.08s  agent 발화 끝
-     5.74s  user  발화 시작: I'm alright, thanks. I'm trying to plan a relaxing weekend g
-     9.70s  user  발화 끝
-     9.89s  agent 발화 시작: A relaxing weekend sounds wonderful! Do you have any prefere
-    12.02s  user  발화 시작: Yeah.
-    12.37s  user  발화 끝
-    15.86s  agent 발화 끝
-    16.33s  user  발화 시작: Somewhere with good food, maybe near the water. I was thinki
-    21.42s  <ret> 발화 (turn5 첫 프레임)
-    21.59s  user  발화 끝
-    21.67s  agent 발화 시작: <ret> When planning your travel, I recall you prefer a windo
-    22.71s  ⚡SPAN 주입 [d'=1.29s / d_lead=5.94s]: User prefers a window seat when traveling.
-    27.61s  agent 발화 끝
-    28.82s  user  발화 시작: Oh, that's right! I'd forgotten I mentioned that.
-    30.14s  agent 발화 시작: Yeah.
-    30.89s  agent 발화 끝
-    31.73s  user  발화 끝
-    31.86s  agent 발화 시작: [happy] I’m glad I remembered! Now, about that spa weekend, 
-    38.14s  user  발화 시작: Yes, Canada is perfect. Somewhere not too far from Toronto, 
-    38.52s  agent 발화 끝
-    43.09s  user  발화 끝
-    43.27s  agent 발화 시작: Okay, staying relatively close to Toronto. Let me see what I
-    48.34s  user  발화 시작: …Actually, before you do that, are there any places that als
-    48.99s  agent 발화 끝
-    52.10s  agent 발화 시작: Okay.
-    52.77s  agent 발화 끝
-    54.31s  user  발화 끝
-    54.64s  <ret> 발화 (turn13 첫 프레임)
-    54.64s  agent 발화 시작: <ret> For a spa with nearby hiking, Toronto has several opti
-    55.87s  ⚡SPAN 주입 [d'=1.23s / d_lead=11.81s]: {"location": "Toronto", "cuisine": "spa", "amenities": "hiking trails"
-    66.45s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Theo, I'm Vimi. I understand you're looking for some supp
+     6.08s  agent 발화 끝
+     6.74s  user  발화 시작: Yeah, exactly. I've been feeling pretty overwhelmed lately, 
+     9.51s  agent 발화 시작: Uh-huh.
+    10.10s  agent 발화 끝
+    12.81s  <ret> 발화 (turn3 첫 프레임)
+    12.99s  user  발화 끝
+    13.07s  agent 발화 시작: <ret> Earlier, you mentioned bún chả is your comfort food. P
+    14.10s  ⚡SPAN 주입 [d'=1.29s / d_lead=6.86s]: [2026-06-12] User's go-to comfort dish is bún chả.
+    19.92s  agent 발화 끝
+    20.61s  user  발화 시작: Oh, that's right! I do love bún chả. Are there any good Viet
+    25.10s  <ret> 발화 (turn5 첫 프레임)
+    25.96s  user  발화 끝
+    26.00s  agent 발화 시작: <ret> I found three Vietnamese restaurants in Toronto: Pho X
+    26.34s  ⚡SPAN 주입 [d'=1.23s / d_lead=14.89s]: (tool result) Found 3 Vietnamese restaurants in Toronto: Pho Xe Lua (4
+    40.89s  agent 발화 끝
+    42.14s  user  발화 시작: Pho Xe Lua sounds good. Can you make a reservation for me th
+    45.80s  <ret> 발화 (turn7 첫 프레임)
+    46.23s  agent 발화 시작: <ret> I’ve reserved a table for you at Pho Xe Lua for tonigh
+    46.27s  user  발화 끝
+    46.58s  ⚡SPAN 주입 [d'=0.79s / d_lead=10.18s]: (tool result) Reservation confirmed at Pho Xe Lua for July tenth, seve
+    56.41s  agent 발화 끝

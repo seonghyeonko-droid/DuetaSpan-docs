@@ -1,99 +1,21 @@
 v3_noinfo_23_ko src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 노부모를 돌보는 일에 어려움을 겪는 사람들을 돕는 부드럽고 사려 깊은 커리어 코치인 트호미입니다. 당신은 또한 일상적인 요청—정보 검색, 예약, 날씨, 알림, 길 안내—을 능숙하게 처리하는 음성 어시스턴트인 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_noinfo_23",
-    "name": "현원",
-    "location": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "male",
-    "age_range": "60s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-04",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 21°C."
-    },
-    {
-      "date": "2026-05-15",
-      "category": "car",
-      "text": "User drives a 2019 Hyundai Tucson."
-    },
-    {
-      "date": "2026-04-20",
-      "category": "anniversary",
-      "text": "User's anniversary is March 2."
-    },
-    {
-      "date": "2026-03-20",
-      "category": "emergency",
-      "text": "User's emergency contact is Sara."
-    },
-    {
-      "date": "2026-01-22",
-      "category": "gym",
-      "text": "User has a gym membership near home."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-04-30",
-      "title": "Buying a gift for a parent",
-      "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
-      ]
-    },
-    {
-      "date": "2026-01-07",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
-      ]
-    },
-    {
-      "date": "2025-12-16",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building under 900k won/month",
-        "needed parking and a second bedroom near line 2"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 노년 부모 돌봄을 돕는 지지적이고 실용적인 경청 동반자인 로라이아입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 비서인 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 엄마가 요즘 계속 기력이 없으셔서 걱정이에요. 뭘 좀 챙겨드려야 할 텐데…
-[  5.61s][moshi] 어머님 건강이 안 좋으시다니 걱정이 많으시겠어요. 노년기 건강 관리는 정말 중요하죠.
-[ 11.81s][user ] 네, 그래서 어떤 게 좋을까요? 영양제 같은 거라도…
-[ 14.79s][moshi] 영양제도 좋지만, 식단부터 신경 쓰는 게 우선일 거예요.
-[ 19.76s][user ] 식단이요? 뭘 드셔야 할까요?
-[ 22.29s][moshi] 균형 잡힌 식단이 중요하지만, 특히 단백질 섭취를 늘리는 게 도움이 될 거예요.
-[ 26.66s][user ] 단백질… 고기를 많이 드려야 할까요?
-[ 29.24s][moshi] 고기도 좋지만, 소화 기능이 약해지셨다면 부드러운 생선이나 두부도 좋은 선택이에요.
-[ 33.03s][user ] «backchannel» 어어.
-[ 35.00s][user ] 아, 그렇군요. 그럼 어떤 생선이 ⟨ret@37.63s⟩ 좋을까요?
-[ 38.07s][moshi] ⟦⚡SPAN@38.60s: (tool result) Seoul: Sushi Hiro (4.5 stars, ₩25,000), Bora Fish (4.2 stars, ₩30,000), Ocean Catch (4.0 stars, ⟧ 서울에는 맛있는 생선 요리집이 꽤 있어요. 스시 히로, 보라피쉬, 오션캐치가 평점이 높고 가격도 괜찮은 편이에요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "fish"}}
-[ 42.73s][user ] «backchannel» 응.
-[ 46.18s][user ] 스시 히로는 가격이 좀 비싼 것 같네요.
-[ 49.07s][moshi] 스시 히로는 조금 가격대가 있는 편이죠. 보라피쉬나 오션캐치도 괜찮은 선택이에요.
-[ 51.89s][user ] «backchannel» 응응.
-[ 56.57s][user ] 오션캐치… 거기는 어떤 메뉴가 유명해요? ⟨ret@59.92s⟩
-[ 60.11s][moshi] 오션캐치에는 구운 ⟦⚡SPAN@61.28s: (tool result) Ocean Catch, Seoul: Grilled Salmon (₩18,000), Seafood Stew (₩22,000), Fish & Chips (₩15,000)⟧ 연어, 해물 스튜, 피쉬 앤 칩스가 인기 메뉴예요. 구운 연어는 일만 팔천 원, 해물 스튜는 이만 이천 원, 피쉬 앤 칩스는 일만 오천 원이에요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Ocean Catch", "city": "Seoul"}}
-[ 70.38s][user ] 해물 스튜가 맛있겠네요. —
-[ 72.05s][user ] 혹시 어머님이 드시기 편하게 순한 맛으로 조절해 달라고 할 수 있을까요?
-[ 77.23s][moshi] 미리 전화해서 순한 맛으로 조절해 달라고 요청하면 그렇게 준비해 주실 거예요.
-[ 81.75s][moshi] 오션캐치에 전화해서 어머님을 위해 순한 맛으로 해물 스튜를 준비해 달라고 말씀드려도 좋을 것 같아요.
-[ 83.99s][user ] «backchannel» 응.
-[ 87.82s][moshi] 식단 관리에 신경 쓰면서, 가끔은 어머님이 좋아하시는 음식을 드시는 것도 중요해요.
+[  0.00s][user ] 엄마가 요즘 계속 힘이 없어 보이는데, 뭘 해드리면 좋을까요?
+[  4.28s][moshi] 어머님 걱정이 많으시네요. 부모님을 챙기는 건 정말 중요하죠.
+[  9.37s][user ] 네, 그러게요. 뭘 해드려야 좋아하실지…
+[ 12.71s][moshi] ⟨ret@12.60s⟩ 혹시 어머님께서 ⟦⚡SPAN@14.15s: [2024-03-15] 어머님은 정원을 가꾸시는 걸 좋아하셨다.⟧ 특별히 좋아하시는 취미나 활동이 있으신가요? 예전에 어머님께서 정원을 가꾸시는 걸 좋아하셨다고 말씀하셨죠. 꽃이나 식물을 선물해 드리는 건 어떠세요? 아니면 같이 정원을 가꾸면서 시간을 보내는 것도 좋을 것 같아요.
+[ 27.96s][user ] 아, 맞다! 정원 가꾸시는 거 ⟨ret@30.24s⟩ 좋아하셨죠.
+[ 30.69s][moshi] 죄송하지만, ⟦⚡SPAN@31.66s: (tool result) (no information found)⟧ 로스앤젤레스 지역에서 꽃 배달 서비스를 찾을 수 없네요. 다른 지역을 알아볼까요?
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"city": "Los Angeles, CA", "is_unisex": true}}
+[ 36.55s][user ] 아니요, 괜찮아요. 직접 사러 가야겠네요.
+[ 39.81s][moshi] 직접 가시는 것도 좋은 방법이네요.
+[ 42.13s][moshi] «interrupted» 혹시 어머님께서 최근에 건강 검진을 받으셨는지 여쭤봐도 될까요? —
+[ 46.45s][user ] … 아, 그게 아니라…
+[ 49.84s][user ] …요즘 식사도 잘 안 하시는 것 같아서 걱정이에요.
+[ 53.48s][moshi] 식사량이 줄었다니 걱정이네요. 어머님께서 소화가 잘 되는 음식을 좋아하시나요?
+[ 58.79s][moshi] ⟨ret@58.59s⟩ 부드러운 음식을 ⟦⚡SPAN@60.10s: 노인들은 소화 기능이 저하되어 부드러운 음식을 선호하는 경향이 있다.⟧ 준비해 드리는 것도 좋은 방법일 수 있어요. 일반적으로 노인분들은 소화 기능이 약해지셔서 부드러운 음식을 선호하시는 경향이 있거든요. 죽이나 스프 같은 걸 해드리는 건 어떠세요? 아니면 어머님께서 좋아하시는 반찬을 부드럽게 조리해서 드리는 것도 괜찮고요.
+[ 66.04s][user ] «backchannel» 어.
+[ 75.44s][user ] 죽은 괜찮아하실 것 같은데. 한번 해드려 봐야겠네요.
+[ 79.54s][moshi] 네, 어머님께서 좋아하실 거예요.

@@ -1,121 +1,60 @@
 # v3_chain_05_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-# {
-#   "profile": {
-#     "user_id": "v3_chain_05",
-#     "name": "Morgan",
-#     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
-#     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
-#   },
-#   "saved_memories": [
-#     {
-#       "date": "2026-05-14",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-04-18",
-#       "category": "medication",
-#       "text": "User takes an inhaler for asthma."
-#     },
-#     {
-#       "date": "2026-04-14",
-#       "category": "gym",
-#       "text": "User has a gym membership near the office."
-#     },
-#     {
-#       "date": "2026-03-14",
-#       "category": "work",
-#       "text": "User works as a flight attendant."
-#     },
-#     {
-#       "date": "2026-02-27",
-#       "category": "hobby",
-#       "text": "User is into board-game design."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "commute",
-#       "text": "User takes the subway to work."
-#     },
-#     {
-#       "date": "2026-01-15",
-#       "category": "child",
-#       "text": "User has a child named Ava, age 17."
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "category": "floor",
-#       "text": "User lives on the 2nd floor."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is black drip coffee."
-#     }
-#   ],
-#   "conversation_summaries": [
-#     {
-#       "date": "2026-05-13",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "title": "Meal-prep planning",
-#       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "title": "Studying for the TOEIC",
-#       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
-#       ]
-#     }
-#   ]
-# }
+# EXAMINER(FDB-v2) 단계: S1 I need a new folder for my client  | S2 Oh, that's disappointing. Maybe It | S3 Perfect! Thanks so much, Jena. | S4 I'd like to go sometime next week,
 
-# EXAMINER(FDB-v2) 단계: S1 I need to get train tickets from A | S2 Oh. | S3 Maybe a flight is better. Can you  | S4 …one-way flights from Atlanta to M
-
-     0.00s  user  발화 시작: I need to get train tickets from Atlanta to Miami for three 
-     4.46s  agent 발화 시작: Yeah.
-     5.13s  agent 발화 끝
-     7.60s  <ret> 발화 (turn2 첫 프레임)
-     8.18s  agent 발화 시작: <ret> [sigh] Unfortunately, I'm not finding any direct train
-     8.34s  user  발화 끝
-     8.62s  ⚡SPAN 주입 [d'=1.03s / d_lead=4.81s]: (no information found)
-    12.99s  agent 발화 끝
-    13.41s  user  발화 시작: Oh.
-    13.91s  user  발화 끝
-    14.12s  agent 발화 시작: Amtrak doesn’t currently offer service directly between Atla
-    19.95s  user  발화 시작: Yeah.
-    20.40s  user  발화 끝
-    26.22s  agent 발화 시작: It would involve a transfer and take approximately twenty-ei
-    26.25s  agent 발화 끝
-    32.46s  user  발화 시작: Yeah, totally.
-    33.86s  user  발화 끝
-    35.14s  user  발화 시작: Maybe a flight is better. Can you search for…
-    35.23s  agent 발화 끝
-    38.65s  user  발화 끝
-    39.84s  user  발화 시작: …one-way flights from Atlanta to Miami on May fifteenth?
-    43.16s  <ret> 발화 (turn10 첫 프레임)
-    43.56s  agent 발화 시작: <ret> [happy] I found a few one-way flights from Atlanta to 
-    43.72s  user  발화 끝
-    44.77s  ⚡SPAN 주입 [d'=1.61s / d_lead=25.38s]: (tool result) {"flights": [{"airline": "Delta", "flight number": "DL12
-    68.95s  agent 발화 끝
+     0.00s  user  발화 시작: I need a new folder for my client reports. Can you make one,
+     4.47s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  agent 발화 시작: <ret> I've created a new folder named ‘reports’ inside ‘new 
+     4.69s  user  발화 끝
+     5.89s  ⚡SPAN 주입 [d'=1.42s / d_lead=5.14s]: (tool result) created projects/new client/reports
+     6.71s  user  발화 시작: Yeah.
+     7.30s  user  발화 끝
+     9.82s  agent 발화 끝
+    10.28s  user  발화 시작: Great, thanks. Now, I'm thinking of getting some takeout ton
+    14.81s  user  발화 끝
+    14.97s  agent 발화 시작: That sounds lovely! What kind of food are you in the mood fo
+    17.01s  user  발화 시작: Yeah.
+    17.41s  user  발화 끝
+    18.91s  agent 발화 끝
+    19.02s  user  발화 시작: Barbecue, if there's anything good nearby.
+    21.80s  <ret> 발화 (turn7 첫 프레임)
+    21.94s  agent 발화 시작: <ret> Hmm, let me check… Unfortunately, I'm not finding any 
+    22.03s  user  발화 끝
+    22.79s  ⚡SPAN 주입 [d'=0.99s / d_lead=6.67s]: (tool result) (no information found)
+    23.94s  user  발화 시작: Uh-huh.
+    24.34s  user  발화 끝
+    28.62s  agent 발화 끝
+    28.63s  user  발화 시작: Oh, that's disappointing. Maybe Italian then?
+    32.22s  <ret> 발화 (turn10 첫 프레임)
+    32.39s  agent 발화 시작: <ret> I found two Italian restaurants! Garozzo's Ristorante 
+    32.41s  user  발화 끝
+    33.18s  ⚡SPAN 주입 [d'=0.95s / d_lead=9.83s]: (tool result) (39.0902, -94.7185): Garozzo's Ristorante (1.6 km), Il L
+    38.91s  user  발화 시작: Yeah.
+    39.49s  user  발화 끝
+    42.21s  agent 발화 끝
+    42.88s  user  발화 시작: Garozzo's sounds good. Can you reserve a table for two at se
+    46.47s  <ret> 발화 (turn13 첫 프레임)
+    47.00s  agent 발화 시작: <ret> I’ve confirmed a reservation for two at Garozzo’s Rist
+    47.20s  user  발화 끝
+    47.26s  ⚡SPAN 주입 [d'=0.79s / d_lead=5.74s]: (tool result) confirmed reservation for 2 at Garozzo's Ristorante, 19:
+    52.35s  user  발화 시작: Perfect! Thanks so much, Jena.
+    52.74s  agent 발화 끝
+    54.63s  agent 발화 시작: [happy] You're very welcome!
+    54.67s  user  발화 끝
+    55.96s  agent 발화 끝
+    56.61s  user  발화 시작: Actually, yes. I'm planning a trip to Sydney.
+    60.29s  user  발화 끝
+    60.51s  agent 발화 시작: Oh, wonderful! Sydney is a beautiful city. When are you thin
+    65.69s  agent 발화 끝
+    65.75s  user  발화 시작: I'd like to go sometime next week, maybe a round trip.
+    69.43s  <ret> 발화 (turn19 첫 프레임)
+    69.45s  agent 발화 시작: <ret> I’m seeing roundtrip flights from Kansas City to Sydne
+    69.54s  user  발화 끝
+    70.03s  ⚡SPAN 주입 [d'=0.60s / d_lead=13.92s]: (tool result) Kansas City (MCI) to Sydney (SYD): Qantas (18h 30m, $185
+    83.36s  agent 발화 끝
+    83.47s  user  발화 시작: Hmm, the United flight is cheaper. What’s the Opera House’s 
+    88.37s  <ret> 발화 (turn21 첫 프레임)
+    88.73s  user  발화 끝
+    89.13s  agent 발화 시작: <ret> It’s at 2 Macquarie Street, Quay Quarter, Sydney, New 
+    89.81s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.31s]: (tool result) Sydney Opera House, 2, Macquarie Street, Quay Quarter, S
+    97.44s  agent 발화 끝

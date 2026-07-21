@@ -1,92 +1,60 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-# {
-#   "profile": {
-#     "user_id": "v3_fake__13",
-#     "name": "정민",
-#     "location": {
-#       "city": "Seoul",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
-#     },
-#     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 40s",
-#     "language": "Korean"
-#   },
-#   "saved_memories": [
-#     {
-#       "date": "2026-05-30",
-#       "category": "work",
-#       "text": "User works as a sales manager."
-#     },
-#     {
-#       "date": "2026-05-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2026-04-16",
-#       "category": "phone",
-#       "text": "User uses an iPhone 13."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "pet",
-#       "text": "User has a Shiba Inu named Kongi."
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O-."
-#     }
-#   ],
-#   "conversation_summaries": [
-#     {
-#       "date": "2026-04-09",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-15",
-#       "title": "Switching phone plans",
-#       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "title": "Planning a dinner party",
-#       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
-#       ]
-#     }
-#   ]
-# }
+# EXAMINER(FDB-v2) 단계: S1 섹스 앤 더 시티에서 미스터 빅 역을 누가 맡았지? | S2 오, '섹스 앤 더 시티' 말고 다른 드라마도 있었어요? | S3 음… '고담'이 좀 더 끌리네요. 혹시 예약도 가능해요? | S4 …편하게 저녁 먹을 수 있겠네요.
 
-
-     0.00s  user  발화 시작: 안녕하세요, 로라우스 씨. 요즘 좀 힘든 시간을 보내고 있어요.
-     4.30s  user  발화 끝
-     4.38s  <ret> 발화 (turn1 첫 프레임)
-     4.50s  agent 발화 시작: <ret> 안녕하세요. 힘든 시간을 보내고 계신다니 마음이 아픕니다. 어떤 점이 가장 힘드신가요?
-     5.61s  ⚡SPAN 주입 [d'=1.23s / d_lead=6.86s]: The National Civil Rights Museum opened on September 28, 1991, in Memp
-    10.77s  <ret> 발화 (turn2 첫 프레임)
-    11.26s  agent 발화 시작: <ret> 민권 박물관에 대해 궁금해하시는군요. 그곳은 천구백구십일년 구월 이십팔일에 테네시주 멤피스에서 문
-    11.36s  agent 발화 끝
-    11.84s  ⚡SPAN 주입(IRRELEVANT) [d'=1.07s / d_lead=9.83s]: The average high temperature in Reykjavik, Iceland, on July 10th is 13
-    15.89s  user  발화 시작: 맞아요.
-    16.48s  user  발화 끝
-    21.07s  user  발화 시작: 아, 몰랐어요. 마틴 루터 킹 주니어 목사님과 관련된 곳이었군요.
-    21.09s  agent 발화 끝
-    26.32s  agent 발화 시작: [curious] 네, 맞아요. 마틴 루터 킹 주니어 목사님이 암살당한 로레인 모텔 자리에 세워졌습니다. 그
-    26.42s  user  발화 끝
-    36.32s  agent 발화 시작: 힘든 시간을 보내고 계시다면, 잠시 감정을 느껴보는 것도 괜찮습니다. 괜찮으시다면, 지금 기분이 어떤지 조금
-    36.38s  agent 발화 끝
-    47.12s  agent 발화 끝
+     0.00s  user  발화 시작: 섹스 앤 더 시티에서 미스터 빅 역을 누가 맡았지?
+     1.52s  agent 발화 시작: 그렇죠.
+     2.36s  <ret> 발화 (turn2 첫 프레임)
+     2.48s  agent 발화 끝
+     2.95s  agent 발화 시작: <ret> 음, 잠깐만요.
+     3.06s  user  발화 끝
+     4.17s  ⚡SPAN 주입 [d'=1.81s / d_lead=1.86s]: Christopher David Noth.
+     4.71s  agent 발화 시작: 크리스토퍼 데이비드 노스 씨가 맡았어요.
+     4.81s  agent 발화 끝
+     7.49s  user  발화 시작: 아, 그렇군요. 혹시 그 배우 다른 작품도 해봤어요?
+     7.51s  agent 발화 끝
+    11.35s  <ret> 발화 (turn5 첫 프레임)
+    11.49s  agent 발화 시작: <ret> 네, 물론이죠. 꽤 많은 작품에 출연했어요.
+    11.63s  user  발화 끝
+    12.67s  ⚡SPAN 주입 [d'=1.33s / d_lead=3.79s]: Christopher David Noth is an American actor. He is known for his role 
+    15.21s  agent 발화 시작: 크리스토퍼 데이비드 노스 씨는 '섹스 앤 더 시티'의 미스터 빅 역할로 유명한 미국 배우예요.
+    15.27s  agent 발화 끝
+    19.55s  user  발화 시작: 응.
+    19.94s  user  발화 끝
+    21.59s  agent 발화 끝
+    22.62s  user  발화 시작: 오, '섹스 앤 더 시티' 말고 다른 드라마도 있었어요?
+    25.07s  agent 발화 시작: 그렇죠.
+    26.07s  agent 발화 끝
+    26.44s  <ret> 발화 (turn10 첫 프레임)
+    26.52s  agent 발화 시작: <ret> 네, '로앤오더'에도 출연했었죠.
+    26.58s  user  발화 끝
+    27.31s  ⚡SPAN 주입 [d'=0.86s / d_lead=3.46s]: Christopher Noth appeared in several episodes of Law & Order.
+    29.84s  <ret> 발화 (turn11 첫 프레임)
+    29.98s  agent 발화 시작: <ret> '로앤오더'에도 몇 번 출연하셨다고 해요.
+    29.99s  agent 발화 끝
+    30.80s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=2.72s]: The current temperature in Seoul is 28 degrees Celsius with a humidity
+    31.16s  user  발화 시작: 아.
+    31.56s  user  발화 끝
+    32.70s  agent 발화 끝
+    32.77s  user  발화 시작: 아, '로앤오더'도 재밌게 봤었는데… 이사 온 지 얼마 안 됐는데, 주변에 맛집 좀 알려줄 수 있어요?
+    39.36s  <ret> 발화 (turn14 첫 프레임)
+    39.72s  user  발화 끝
+    39.87s  agent 발화 시작: <ret> 이사 오신 거 축하드려요! 맛집을 찾아볼까요?
+    39.96s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.51s]: (tool result) {"restaurants": [{"name": "고담", "cuisine": "양식", "rating
+    43.37s  agent 발화 시작: 주변에 '고담'이라는 양식집과 '미담진'이라는 한식집이 있어요. 평점도 꽤 높네요. 둘 다 괜찮은 선택일 것
+    43.38s  agent 발화 끝
+    52.17s  agent 발화 끝
+    53.27s  user  발화 시작: 음… '고담'이 좀 더 끌리네요. 혹시 예약도 가능해요?
+    56.68s  <ret> 발화 (turn17 첫 프레임)
+    57.10s  user  발화 끝
+    57.22s  agent 발화 시작: <ret> 네, '고담'에 예약이 완료됐습니다. 예약 번호는 알 일 이 삼 사 오예요. 즐거운 식사 되세요!
+    57.82s  ⚡SPAN 주입 [d'=1.13s / d_lead=7.13s]: (tool result) {"reservation id": "R12345", "status": "confirmed"}
+    64.35s  agent 발화 끝
+    65.35s  user  발화 시작: 와, 정말 고마워요! 덕분에…
+    68.61s  user  발화 끝
+    69.74s  user  발화 시작: …편하게 저녁 먹을 수 있겠네요.
+    71.65s  agent 발화 시작: 천만에요! 도움이 되어서 기뻐요. 혹시 다른 필요한 건 없으세요?
+    71.67s  user  발화 끝
+    77.06s  agent 발화 끝
+    77.12s  agent 발화 시작: 이사 오셨으니, 주변 편의시설 정보도 알아봐 드릴까요?
+    81.55s  agent 발화 끝

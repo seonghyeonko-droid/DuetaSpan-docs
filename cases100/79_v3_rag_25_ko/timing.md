@@ -4,132 +4,183 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "채완",
+#     "name": "유율",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "mid 30s",
+#     "age_range": "60s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
-#       "category": "music",
-#       "text": "User likes listening to a lo-fi jazz playlist."
+#       "date": "2026-04-27",
+#       "category": "airline",
+#       "text": "User usually flies with Qatar Airways."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-04-25",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Yuna."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "child",
-#       "text": "User has a child named Daniel, age 10."
+#       "date": "2026-03-10",
+#       "category": "learning",
+#       "text": "User is studying for the CPA exam."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Sara."
+#       "date": "2026-02-23",
+#       "category": "schedule",
+#       "text": "User has a 9-to-6 weekday schedule."
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "category": "partner",
-#       "text": "User's partner is named Sara."
+#       "date": "2026-02-07",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-06-08",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "title": "Sorting out a visa",
+#       "date": "2026-03-01",
+#       "title": "Meal-prep planning",
 #       "bullets": [
-#         "applying for a working-holiday visa to Australia",
-#         "asked about the bank-balance requirement"
+#         "wants high-protein lunches under 600 calories",
+#         "avoiding dairy this month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-20",
-#       "title": "Booking a Japan trip",
+#       "date": "2025-12-24",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "asked about mesh routers for a 3-story house",
+#         "wanted coverage for the basement office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 밀하우스라는 캐릭터 이름을 지은 사람이 누구인지 아세요? | S2 아, 음악도 했다고요? 어떤 노래가 유명한가요? | S3 혹시 앨리 고르츠의 다른 노래도 추천해 주실 수 있나요? | S4 흥미롭네요. 혹시 그 노래를 들어볼 수 있는 곳이 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 올림피아 두카키스가 아카데미 상을 받은 영화를 감독한 사람이  | S2 아카데미 말고 다른 상도 궁금하다. | S3 이십팔도나 돼? 생각보다 덥네. | S4 오, 진짜? 그럼 지금 예매해 볼까?
 
-     0.00s  user  발화 시작: 혹시 밀하우스라는 캐릭터 이름을 지은 사람이 누구인지 아세요?
-     1.66s  agent 발화 시작: 예.
-     2.06s  agent 발화 끝
-     3.04s  <ret> 발화 (turn2 첫 프레임)
-     3.61s  agent 발화 시작: <ret> '심슨 가족'의 밀하우스를 지은 사람은 매트 그로닝의 어린 시절 친구인 밀하우스 반 호튼이라고 합
-     3.64s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.67s]: Matt Groening named Milhouse after a childhood friend, Milhouse Van Ho
-     3.67s  user  발화 끝
-     5.87s  user  발화 시작: 네.
-     6.18s  user  발화 끝
-    10.28s  agent 발화 끝
-    10.58s  user  발화 시작: 매트 그로닝은 또 어떤 작품들로 유명한가요?
-    13.29s  agent 발화 시작: 매트 그로닝은 '퓨처라마'와 '디스엔챈티드' 같은 애니메이션도 만들었답니다.
-    13.36s  user  발화 끝
-    18.41s  user  발화 시작: 그 외에 다른 활동도 있었나요?
-    18.43s  agent 발화 끝
-    20.31s  agent 발화 시작: 네, 매트 그로닝은 풍자적인 가사로도 유명한 음악가이기도 합니다.
-    20.36s  user  발화 끝
-    24.87s  agent 발화 끝
-    25.66s  user  발화 시작: 아, 음악도 했다고요? 어떤 노래가 유명한가요?
-    28.74s  <ret> 발화 (turn9 첫 프레임)
-    29.04s  agent 발화 시작: <ret> 천구백구십일년에 앨리 고르츠가 밀하우스에 대한 노래를 썼는데, 매트 그로닝이 코러스로 참여했습니다
-    29.09s  user  발화 끝
-    30.08s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.95s]: Allie Goertz wrote a song about Milhouse in 1991, and Matt Groening pr
-    31.60s  user  발화 시작: 네.
-    32.00s  user  발화 끝
-    35.98s  agent 발화 끝
-    37.07s  user  발화 시작: 앨리 고르츠는 어떤 가수인가요?
-    39.56s  user  발화 끝
-    39.64s  agent 발화 시작: 앨리 고르츠는 재치 있는 가사와 독특한 스타일로 유명한 싱어송라이터입니다.
-    42.63s  user  발화 시작: 예.
-    42.98s  user  발화 끝
-    44.39s  agent 발화 끝
-    44.62s  user  발화 시작: 혹시 앨리 고르츠의 다른 노래도 추천해 주실 수 있나요?
-    46.83s  agent 발화 시작: 네네.
-    47.41s  agent 발화 끝
-    48.07s  user  발화 끝
-    48.35s  agent 발화 시작: 앨리 고르츠는 'Time to Say Goodbye'라는 곡으로도 유명합니다—
-    51.55s  user  발화 시작: 잠깐만요, 밀하우스 노래가 더 궁금한데, 혹시 가사를 알 수 있을까요?
-    52.23s  agent 발화 끝
-    55.89s  <ret> 발화 (turn18 첫 프레임)
-    56.33s  agent 발화 시작: <ret> [curious] 잠시만 기다려 주세요.
-    56.41s  user  발화 끝
-    57.12s  ⚡SPAN 주입 [d'=1.23s / d_lead=1.56s]: The song about Milhouse is a quirky, upbeat tune that references many 
-    57.89s  agent 발화 끝
-    57.95s  agent 발화 시작: 밀하우스에 대한 노래는 그 캐릭터의 삶의 여러 측면을 언급하는 기발하고 신나는 곡입니다.
-    64.11s  agent 발화 끝
-    64.59s  user  발화 시작: 어떤 면을 언급하고 있나요? 좀 더 자세히 알려주세요.
-    67.94s  agent 발화 시작: 노래 가사에는 밀하우스의 안경, 엄마와의 관계, 리사의 짝사랑 등이 담겨 있다고 합니다.
-    68.00s  user  발화 끝
-    74.51s  agent 발화 끝
-    74.75s  user  발화 시작: 흥미롭네요. 혹시 그 노래를 들어볼 수 있는 곳이 있을까요?
-    77.63s  <ret> 발화 (turn23 첫 프레임)
-    78.24s  agent 발화 시작: <ret> 유튜브에서 앨리 고르츠의 '밀하우스' 노래를 찾을 수 있습니다. 주소는 이렇습니다: https:/
-    78.37s  user  발화 끝
-    78.42s  ⚡SPAN 주입 [d'=0.79s / d_lead=10.52s]: (tool result) {"artist": "Allie Goertz", "track name": "Milhouse", "so
-    88.76s  agent 발화 끝
-    89.21s  user  발화 시작: 감사합니다. 덕분에 좋은 노래를 알게 되었네요.
-    92.36s  user  발화 끝
-    92.68s  agent 발화 시작: [happy] 도움이 되었다니 기쁩니다. 즐겁게 감상하세요!
-    97.36s  agent 발화 끝
+     0.00s  user  발화 시작: 올림피아 두카키스가 아카데미 상을 받은 영화를 감독한 사람이 누구였지?
+     5.04s  <ret> 발화 (turn1 첫 프레임)
+     5.12s  agent 발화 시작: <ret> 올림피아 두카키스는 천구백팔십칠년 영화 *문스트럭*에서 아카데미 여우조연상을 받았는데, 그 영화를
+     5.24s  user  발화 끝
+     6.51s  ⚡SPAN 주입 [d'=1.47s / d_lead=10.62s]: (tool result) Olympia Dukakis won an Academy Award for Best Supporting
+     8.75s  user  발화 시작: 그래.
+     9.15s  user  발화 끝
+    15.74s  agent 발화 끝
+    17.28s  user  발화 시작: 노먼 주이슨? 음, 그 이름은 처음 듣는 것 같아.
+    21.42s  <ret> 발화 (turn4 첫 프레임)
+    21.85s  agent 발화 시작: <ret> 노먼 주이슨은 캐나다 출신의 영화감독이에요.
+    21.90s  user  발화 끝
+    22.26s  ⚡SPAN 주입 [d'=0.84s / d_lead=3.42s]: Norman Jewison is a Canadian film director, producer, and actor, known
+    25.17s  agent 발화 시작: 노먼 주이슨은 사회 문제를 다룬 드라마를 주로 연출하는 캐나다 출신의 영화감독이자 제작자, 배우라고 해요.
+    25.27s  agent 발화 끝
+    28.13s  user  발화 시작: 음.
+    28.43s  user  발화 끝
+    31.70s  <ret> 발화 (turn7 첫 프레임)
+    32.30s  agent 발화 시작: <ret> *문스트럭* 외에도 다양한 영화를 감독했답니다.
+    32.32s  ⚡SPAN 주입 [d'=0.63s / d_lead=3.98s]: Norman Jewison directed several critically acclaimed films, including 
+    32.40s  agent 발화 끝
+    36.28s  agent 발화 끝
+    36.44s  agent 발화 시작: *신시내티 키드*, *밤의 열기*, *예수 그리스도 슈퍼스타* 등 비평가들에게 호평받는 영화들을 여러 편 감
+    39.48s  user  발화 시작: 응.
+    39.88s  user  발화 끝
+    44.78s  agent 발화 끝
+    44.78s  user  발화 시작: 아, *밤의 열기*는 들어본 적 있어. 그거 재밌었나?
+    48.81s  <ret> 발화 (turn11 첫 프레임)
+    48.95s  user  발화 끝
+    49.03s  agent 발화 시작: <ret> 천구백육십칠년에 아카데미 작품상과 감독상을 포함해 다섯 개의 아카데미 상을 받았을 정도로 아주 유
+    49.98s  ⚡SPAN 주입 [d'=1.17s / d_lead=8.66s]: *In the Heat of the Night* won five Academy Awards in 1967, including 
+    57.69s  agent 발화 끝
+    57.70s  user  발화 시작: 그럼 노먼 주이슨 감독은 다른 상도 많이 받았겠네?
+    61.16s  <ret> 발화 (turn13 첫 프레임)
+    61.59s  agent 발화 시작: <ret> 네, 여러 상을 받았어요.
+    61.71s  user  발화 끝
+    62.38s  ⚡SPAN 주입 [d'=1.23s / d_lead=2.54s]: Norman Jewison has received numerous awards throughout his career, inc
+    64.12s  agent 발화 끝
+    64.20s  agent 발화 시작: 아카데미 영화 예술 과학 아카데미의 어빙 G. 탈버그 기념상을 비롯해 영화 경력 동안 수많은 상을 받았다고 
+    70.11s  user  발화 시작: 응.
+    70.56s  user  발화 끝
+    72.26s  agent 발화 끝
+    73.10s  user  발화 시작: 아카데미 말고 다른 상도 궁금하다.
+    75.44s  <ret> 발화 (turn17 첫 프레임)
+    75.45s  agent 발화 시작: <ret> 골든 글로브 상, 디렉터스 길드 오브 아메리카 상, 그리고 영화에 대한 공헌으로 여러 개의 명예 
+    75.56s  user  발화 끝
+    76.23s  ⚡SPAN 주입 [d'=0.79s / d_lead=7.41s]: (tool result) Norman Jewison has won a Golden Globe Award, a Directors
+    80.14s  user  발화 시작: 응.
+    80.54s  user  발화 끝
+    82.79s  user  발화 시작: 디렉터스 길드 오브 아메리카 상은 뭐하는 상이야?
+    82.86s  agent 발화 끝
+    85.32s  <ret> 발화 (turn20 첫 프레임)
+    85.85s  user  발화 끝
+    85.92s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.44s]: The Directors Guild of America Award is an annual award presented by t
+    85.92s  agent 발화 시작: <ret> 영화감독들의 조합에서 주는 상이에요.
+    88.37s  agent 발화 끝
+    88.37s  agent 발화 시작: 영화감독들의 조합인 디렉터스 길드 오브 아메리카에서 영화와 텔레비전 분야의 뛰어난 연출 성과를 인정하여 매년
+    98.02s  agent 발화 끝
+    98.16s  user  발화 시작: 아, 그렇구나. 혹시 지금 날씨 어때?
+   101.14s  <ret> 발화 (turn23 첫 프레임)
+   101.62s  user  발화 끝
+   101.69s  agent 발화 시작: <ret> 현재 서울의 날씨는 섭씨 이십팔도이고 맑아요.
+   102.20s  ⚡SPAN 주입 [d'=1.06s / d_lead=4.25s]: (tool result) The current weather in Seoul is 28 degrees Celsius and s
+   104.63s  user  발화 시작: 어.
+   104.93s  user  발화 끝
+   105.85s  user  발화 시작: 이십팔도나 돼? 생각보다 덥네.
+   105.94s  agent 발화 끝
+   107.99s  <ret> 발화 (turn26 첫 프레임)
+   108.24s  agent 발화 시작: <ret> 오늘 서울의 최고 기온은 섭씨 삼십이도로 예보되어 있어요.
+   108.29s  user  발화 끝
+   109.39s  ⚡SPAN 주입 [d'=1.40s / d_lead=3.61s]: The high for today in Seoul is forecast to be 32 degrees Celsius.
+   111.85s  agent 발화 끝
+   112.59s  user  발화 시작: 으, 더위 진짜 싫어. 시원한 데 가고 싶다.
+   115.77s  user  발화 끝
+   115.86s  agent 발화 시작: 어디로 가고 싶으세요?
+   117.38s  agent 발화 끝
+   118.65s  user  발화 시작: 글쎄… 영화라도 봐야겠다.
+   120.92s  <ret> 발화 (turn30 첫 프레임)
+   121.43s  user  발화 끝
+   121.48s  agent 발화 시작: <ret> 지금 상영 중인 코미디 영화로는 *배드 보이 라이드 오어 다이*와 *인사이드 아웃 이*가 있어요.
+   121.57s  ⚡SPAN 주입 [d'=0.65s / d_lead=6.06s]: (tool result) Several comedy movies are currently playing in theaters,
+   126.02s  user  발화 시작: 그치.
+   126.37s  user  발화 끝
+   127.55s  agent 발화 끝
+   127.69s  user  발화 시작: *인사이드 아웃 이*가 괜찮아 보이는데.
+   129.95s  <ret> 발화 (turn33 첫 프레임)
+   130.05s  agent 발화 시작: <ret> 네, *인사이드 아웃 이*는 최근에 개봉해서 인기가 많아요.
+   130.14s  user  발화 끝
+   130.74s  ⚡SPAN 주입 [d'=0.79s / d_lead=4.16s]: *Inside Out 2* has grossed over $400 million worldwide since its relea
+   134.21s  agent 발화 끝
+   134.23s  agent 발화 시작: 이천이십사년 유월 십사일 개봉 이후 전 세계적으로 사억 달러가 넘는 수익을 올렸다고 해요.
+   140.45s  user  발화 시작: 오, 진짜? 그럼 지금 예매해 볼까?
+   140.48s  agent 발화 끝
+   142.88s  agent 발화 시작: 예매해 드릴까요?
+   142.88s  user  발화 끝
+   144.39s  agent 발화 끝
+   144.87s  user  발화 시작: 네, 예매해 줘.
+   146.08s  user  발화 끝
+   146.22s  <ret> 발화 (turn38 첫 프레임)
+   146.43s  agent 발화 시작: <ret> *인사이드 아웃 이*의 칠월 십일일 저녁 일곱시 씨 지 브이 강남 영화 예매가 완료되었습니다. 확
+   146.88s  ⚡SPAN 주입 [d'=0.66s / d_lead=8.39s]: (tool result) Your tickets for *Inside Out 2* at CGV Gangnam on July 1
+   154.52s  user  발화 시작: 고마워. 덕분에 시원하게 영화 볼 수 있겠어.
+   154.82s  agent 발화 끝
+   158.08s  user  발화 끝
+   158.19s  agent 발화 시작: 다행이에요. 즐거운 시간 보내세요.
+   161.51s  agent 발화 끝

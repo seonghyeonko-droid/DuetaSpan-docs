@@ -4,93 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Theo",
+#     "name": "Dylan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
-#       "category": "allergy",
-#       "text": "User is allergic to dust mites."
+#       "date": "2026-06-26",
+#       "category": "dislike",
+#       "text": "User can't stand blue cheese."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Mina."
+#       "date": "2026-06-16",
+#       "category": "floor",
+#       "text": "User lives on the 2nd floor."
 #     },
 #     {
-#       "date": "2026-04-14",
-#       "category": "learning",
-#       "text": "User is training for a half-marathon."
+#       "date": "2026-06-01",
+#       "category": "airline",
+#       "text": "User usually flies with Emirates."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "plant",
-#       "text": "User is growing a fiddle-leaf fig at home."
+#       "date": "2026-05-19",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is mushroom risotto."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
+#       "date": "2026-03-03",
+#       "category": "phone",
+#       "text": "User uses an iPhone 15."
+#     },
+#     {
+#       "date": "2026-02-04",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Kenji."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "skill",
+#       "text": "User is quite experienced with marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
-#       "title": "Researching a used car",
+#       "date": "2026-05-25",
+#       "title": "Building a PC",
 #       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
+#         "budget around 2M won for gaming",
+#         "torn between two GPUs"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "title": "Booking a Japan trip",
+#       "date": "2026-04-02",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "title": "Fixing a leaking faucet",
-#       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Wow, Ten… that’s an unusual name.  | S2 I have, but it feels… childish. I’ | S3 …But what if I hate everything els | S4 Maybe. I haven’t really thought ab
 
-     0.00s  agent 발화 시작: Hello Theo, I’m Hellaen. I help people navigate the start of
-     5.17s  user  발화 시작: Mhm.
-     5.76s  user  발화 끝
-     7.69s  agent 발화 끝
-     7.86s  user  발화 시작: I’m starting a new role next week, and honestly, I’m pretty 
-    12.74s  agent 발화 시작: [happy] It's lovely to meet you too, Theo. Anxiety before a 
-    12.85s  user  발화 끝
-    16.61s  user  발화 시작: Yeah.
-    17.19s  user  발화 끝
-    20.39s  agent 발화 끝
-    20.72s  user  발화 시작: I do! It’s just… a lot of responsibility. I keep replaying w
-    25.09s  agent 발화 시작: Yeah.
-    25.53s  agent 발화 끝
-    28.46s  user  발화 끝
-    28.89s  agent 발화 시작: That’s a common pattern. We can try a quick grounding exerci
-    32.70s  user  발화 시작: Yeah.
-    33.15s  user  발화 끝
-    36.58s  agent 발화 끝
-    37.67s  user  발화 시작: Box breathing? How does that even work? I’m skeptical, but w
-    44.25s  agent 발화 시작: It’s simple. Inhale for four seconds, hold for four, exhale 
-    44.29s  user  발화 끝
-    53.90s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Dylan. I’m Ten, and I help people clarify their g
+     8.66s  agent 발화 끝
+     8.96s  user  발화 시작: Wow, Ten… that’s an unusual name. Are you… a person? Or, wel
+    16.03s  user  발화 끝
+    16.18s  agent 발화 시작: That’s a fair question! I’m designed to offer support as a c
+    27.32s  agent 발화 끝
+    27.65s  user  발화 시작: Okay, I get it. So, you're like a… digital coach? I'm feelin
+    35.64s  user  발화 끝
+    35.70s  agent 발화 시작: It’s very common to feel stuck, Dylan. Often, that stems fro
+    40.16s  user  발화 시작: Uh-huh.
+    40.55s  user  발화 끝
+    48.55s  agent 발화 끝
+    48.55s  user  발화 시작: I have, but it feels… childish. I’ve spent twenty years in f
+    55.63s  user  발화 끝
+    55.79s  agent 발화 시작: That’s understandable. Years invested create a strong sense 
+    71.07s  user  발화 시작: …But what if I hate everything else? What if finance is just
+    71.69s  agent 발화 끝
+    76.63s  user  발화 끝
+    76.79s  agent 발화 시작: That’s a valid worry, Dylan. It’s brave to even consider tha
+    82.30s  user  발화 시작: Yeah, yeah.
+    83.43s  user  발화 끝
+    89.81s  agent 발화 끝
+    89.86s  agent 발화 시작: Sometimes, the discomfort isn’t with the field itself, but w
+   100.71s  agent 발화 끝
+   101.94s  user  발화 시작: Maybe. I haven’t really thought about the culture, to be hon
+   108.43s  user  발화 끝
+   108.64s  agent 발화 시작: That’s very insightful. Often, we focus so intently on tasks
+   122.18s  agent 발화 끝

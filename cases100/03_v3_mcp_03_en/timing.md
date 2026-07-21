@@ -4,107 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Chloe",
+#     "name": "Milan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "mid 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Sichuan."
+#       "date": "2026-06-16",
+#       "category": "home",
+#       "text": "User's home address is 404 Rosewood Drive."
 #     },
 #     {
-#       "date": "2026-04-14",
-#       "category": "skill",
-#       "text": "User is getting fairly good at board-game design."
+#       "date": "2026-06-15",
+#       "category": "dish",
+#       "text": "User's go-to comfort dish is cold buckwheat noodles."
 #     },
 #     {
-#       "date": "2026-04-07",
-#       "category": "employer",
-#       "text": "User works at a design agency."
-#     },
-#     {
-#       "date": "2026-03-25",
+#       "date": "2026-05-13",
 #       "category": "airline",
-#       "text": "User usually flies with United."
+#       "text": "User usually flies with ANA."
 #     },
 #     {
-#       "date": "2026-03-07",
-#       "category": "wake",
-#       "text": "User usually wakes up close to 9am after night shifts."
+#       "date": "2026-05-02",
+#       "category": "learning",
+#       "text": "User is studying for a driving test."
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB+."
+#       "date": "2026-04-30",
+#       "category": "employer",
+#       "text": "User works at a law firm."
 #     },
 #     {
-#       "date": "2026-01-31",
-#       "category": "medication",
-#       "text": "User takes insulin."
+#       "date": "2026-02-27",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "anniversary",
-#       "text": "User's anniversary is September 6."
+#       "date": "2026-01-01",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Emma."
 #     },
 #     {
-#       "date": "2025-12-18",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-12-28",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
-#       "title": "Switching phone plans",
+#       "date": "2026-06-07",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "uses about 30GB of data a month",
-#         "wants to keep the same number"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-12",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-03-08",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "title": "Planning a camping trip",
-#       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I'm just… really struggling after  | S2 Actually, before we do that – do y | S3 …do you think it’ll make things wo | S4 Okay. Thanks, Moraen. That actuall
 
-     0.00s  user  발화 시작: Can you list the contents of the opt directory, please?
-     1.45s  agent 발화 시작: Yeah.
-     2.04s  agent 발화 끝
-     2.68s  <ret> 발화 (turn2 첫 프레임)
-     3.25s  agent 발화 시작: <ret> The opt directory contains google, bin, kde, and pytho
-     3.30s  user  발화 끝
-     4.28s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.05s]: (tool result) {"files": ./google, ./bin, ./kde, ./python3.10}
-     6.87s  user  발화 시작: Uh-huh.
-     7.31s  user  발화 끝
-     9.29s  agent 발화 끝
-    10.95s  user  발화 시작: Oh, good. And what's in the google directory?
-    13.30s  <ret> 발화 (turn5 첫 프레임)
-    13.63s  agent 발화 시작: <ret> [happy] Inside google, you'll find chrome, docs, and d
-    13.69s  user  발화 끝
-    14.50s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.11s]: (tool result) {"files": ./chrome, ./docs, ./drive}
-    17.74s  agent 발화 끝
+     0.00s  user  발화 시작: I'm just… really struggling after the breakup. It feels like
+     5.45s  agent 발화 시작: It’s completely normal to feel that way, you know. Adjusting
+     5.53s  user  발화 끝
+     9.10s  user  발화 시작: Yeah.
+     9.55s  user  발화 끝
+    12.35s  agent 발화 끝
+    13.64s  user  발화 시작: Yeah, I know, but…
+    14.89s  user  발화 끝
+    15.17s  agent 발화 시작: It's okay to let yourself feel those things, truly. Don’t pu
+    20.30s  <ret> 발화 (turn5 첫 프레임)
+    20.31s  agent 발화 시작: <ret> Sometimes, a little distraction can help… …perhaps fin
+    20.32s  agent 발화 끝
+    20.90s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.66s]: Restaurants_2_FindRestaurants({"city": "New York, NY", "cuisine": "Ita
+    26.51s  user  발화 시작: Mm-hmm.
+    26.96s  user  발화 끝
+    29.56s  agent 발화 시작: There's Bella Napoli, rated 4.5 stars, and Trattoria Romana,
+    29.62s  agent 발화 끝
+    34.30s  user  발화 시작: Yeah.
+    34.84s  user  발화 끝
+    38.07s  agent 발화 끝
+    38.45s  user  발화 시작: Actually, before we do that – do you think it’s okay to try 
+    44.93s  agent 발화 시작: That's a really good question—
+    44.93s  user  발화 끝
+    45.83s  user  발화 시작: …do you think it’ll make things worse, or better, long term?
+    46.49s  agent 발화 끝
+    47.45s  agent 발화 시작: Okay.
+    48.32s  agent 발화 끝
+    49.47s  user  발화 끝
+    49.52s  agent 발화 시작: It’s a very personal decision. Removing reminders can create
+    57.38s  agent 발화 시작: It depends on what feels right for *you*. There's no single 
+    57.45s  agent 발화 끝
+    59.09s  user  발화 시작: Yeah, totally.
+    60.46s  user  발화 끝
+    61.83s  agent 발화 끝
+    61.95s  user  발화 시작: Okay. Thanks, Moraen. That actually helps.
+    64.85s  user  발화 끝

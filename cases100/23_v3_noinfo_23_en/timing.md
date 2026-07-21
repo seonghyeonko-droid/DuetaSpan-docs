@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Riley",
+#     "name": "Liam",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,146 +12,133 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 40s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-15",
-#       "category": "show",
-#       "text": "User is currently watching a slow-burn detective drama."
+#       "date": "2026-06-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to Morocco in March."
 #     },
 #     {
-#       "date": "2026-04-20",
-#       "category": "commute",
-#       "text": "User drives about 40 minutes each way."
+#       "date": "2026-05-13",
+#       "category": "wake",
+#       "text": "User usually wakes up around 7:30am."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "car",
-#       "text": "User drives a 2019 Hyundai Tucson."
+#       "date": "2026-04-05",
+#       "category": "streaming",
+#       "text": "User subscribes to Wavve and Melon."
 #     },
 #     {
-#       "date": "2026-02-19",
-#       "category": "plant",
-#       "text": "User is growing basil on the windowsill at home."
+#       "date": "2026-03-03",
+#       "category": "work",
+#       "text": "User works as a electrician."
 #     },
 #     {
-#       "date": "2026-01-27",
-#       "category": "anniversary",
-#       "text": "User's anniversary is January 21."
+#       "date": "2026-02-23",
+#       "category": "diet",
+#       "text": "User is dairy-free."
 #     },
 #     {
 #       "date": "2026-01-22",
-#       "category": "partner",
-#       "text": "User's partner is named Sara."
-#     },
-#     {
-#       "date": "2026-01-15",
-#       "category": "hobby",
-#       "text": "User is into woodworking."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is French."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-06-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-29",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-02",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-11",
+#       "title": "Refinancing a mortgage",
+#       "bullets": [
+#         "current rate is 4.2 percent",
+#         "wants to compare 15- vs 30-year terms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Thomi, do you know how to conta | S2 Maybe. She’s affiliated with Swedi | S3 To Seattle. I’m thinking of stayin | S4 That sounds reasonable. Can you ch
+# EXAMINER(FDB-v2) 단계: S1 Hi Hur, do you know how to reach A | S2 …I’m thinking of a trip to Italy,  | S3 That’s…expensive. Are there any ch | S4 That sounds nice. And could you fi
 
-     0.00s  user  발화 시작: Hi Thomi, do you know how to contact my mother’s doctor, Dr.
-     3.87s  user  발화 끝
-     3.94s  agent 발화 시작: I can certainly try to help with that. Do you have any addit
-     9.70s  agent 발화 끝
-     9.71s  user  발화 시작: I only have her name, and that she practices in Seattle.
-    12.72s  <ret> 발화 (turn3 첫 프레임)
-    13.06s  agent 발화 시작: <ret> I’m very sorry, but I couldn’t find any contact inform
-    13.10s  user  발화 끝
-    14.31s  ⚡SPAN 주입 [d'=1.58s / d_lead=7.08s]: (no information found)
-    20.15s  agent 발화 끝
-    21.06s  user  발화 시작: Oh, that’s frustrating. I thought she’d be listed somewhere.
-    23.96s  agent 발화 시작: It can be surprisingly difficult to find that kind of inform
-    23.99s  user  발화 끝
-    28.78s  user  발화 시작: Right.
-    29.37s  user  발화 끝
-    30.77s  agent 발화 끝
-    32.20s  user  발화 시작: Maybe. She’s affiliated with Swedish Hospital, I think.
-    33.93s  agent 발화 시작: Yeah.
-    34.64s  agent 발화 끝
-    35.10s  <ret> 발화 (turn9 첫 프레임)
-    35.35s  agent 발화 시작: <ret> Ah, yes! Dr. Evelyn Reed, Internal Medicine, at Swedis
-    35.39s  user  발화 끝
-    36.07s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.69s]: (tool result) Dr. Evelyn Reed, Internal Medicine, Swedish Medical Cent
-    40.68s  user  발화 시작: Right.
-    40.99s  user  발화 끝
-    46.03s  user  발화 시작: Perfect! That’s exactly what I needed. Thank you!
-    46.04s  agent 발화 끝
-    48.81s  user  발화 끝
-    49.01s  agent 발화 시작: [happy] You’re very welcome! It’s good to know you have a wa
-    55.67s  agent 발화 끝
-    57.84s  user  발화 시작: It really is. I’m trying to plan a visit.
-    59.86s  user  발화 끝
-    60.39s  agent 발화 시작: That’s a lovely idea. Is that a visit to Seattle, or somewhe
-    62.29s  user  발화 시작: Uh-huh.
-    62.73s  user  발화 끝
-    65.19s  user  발화 시작: To Seattle. I’m thinking of staying a few days.
-    65.20s  agent 발화 끝
-    66.86s  agent 발화 시작: Mhm.
-    67.44s  agent 발화 끝
-    67.85s  user  발화 끝
-    68.30s  agent 발화 시작: Seattle is a beautiful city. Would you like me to help you f
-    71.79s  user  발화 시작: Uh-huh.
-    72.56s  user  발화 끝
-    73.04s  agent 발화 끝
-    73.16s  user  발화 시작: Yes, actually. Something near the hospital would be ideal. —
-    76.30s  user  발화 시작: …Does Swedish Ballard have a good cafeteria? I get hungry ea
-    76.33s  user  발화 끝
-    80.56s  <ret> 발화 (turn22 첫 프레임)
-    81.33s  user  발화 끝
-    81.38s  agent 발화 시작: <ret> Yes, Swedish Medical Center – Ballard has a cafeteria 
-    81.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.90s]: (tool result) Swedish Medical Center - Ballard Cafeteria, 5100 24th Av
-    83.89s  user  발화 시작: Yeah.
-    84.33s  user  발화 끝
-    86.71s  <ret> 발화 (turn24 첫 프레임)
-    88.20s  ⚡SPAN 주입 [d'=1.48s / d_lead=9.68s]: (tool result) The Ballard Hotel, 524 NW Market St, Seattle, WA 98107, 
-    88.26s  agent 발화 시작: <ret> The Ballard Hotel is close by, at 524 Northwest Market
-    88.28s  agent 발화 끝
-    97.94s  agent 발화 끝
-    98.20s  user  발화 시작: That sounds reasonable. Can you check if they have availabil
-   101.28s  <ret> 발화 (turn26 첫 프레임)
-   101.90s  agent 발화 시작: <ret> [happy] Great news! A room at The Ballard Hotel is con
-   101.94s  user  발화 끝
-   102.56s  ⚡SPAN 주입 [d'=1.28s / d_lead=13.17s]: (tool result) The Ballard Hotel, Seattle, July 17-20, 2026, room confi
-   111.61s  user  발화 시작: Yeah.
-   112.23s  user  발화 끝
-   115.07s  agent 발화 끝
-   115.15s  user  발화 시작: Wonderful, thank you so much for your help, Thomi.
-   116.87s  agent 발화 시작: Mm-hmm.
-   117.41s  agent 발화 끝
-   117.64s  user  발화 끝
-   117.94s  agent 발화 시작: [happy] You’re very welcome! I'm glad I could assist. Rememb
-   126.34s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Hur, do you know how to reach Anya Sharma? I need her num
+     3.09s  <ret> 발화 (turn1 첫 프레임)
+     3.69s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.88s]: (no information found)
+     3.70s  agent 발화 시작: <ret> I’ve checked, and unfortunately, I couldn’t find a con
+     3.79s  user  발화 끝
+     9.51s  user  발화 시작: Uh-huh.
+    10.19s  user  발화 끝
+    12.58s  agent 발화 끝
+    12.90s  user  발화 시작: Oh, that’s a shame. I thought she lived around here.
+    15.28s  user  발화 끝
+    15.72s  agent 발화 시작: It’s understandable to hope for a quick connection. Perhaps 
+    17.84s  user  발화 시작: Uh-huh.
+    18.29s  user  발화 끝
+    22.38s  agent 발화 끝
+    23.37s  user  발화 시작: Good idea. Actually…
+    25.36s  user  발화 끝
+    26.75s  user  발화 시작: …I’m thinking of a trip to Italy, maybe next month.
+    27.61s  agent 발화 시작: Yeah.
+    28.20s  agent 발화 끝
+    29.58s  agent 발화 시작: Italy sounds lovely! A wonderful place to unwind. What part 
+    29.60s  user  발화 끝
+    33.92s  user  발화 시작: Okay.
+    34.62s  user  발화 끝
+    36.94s  agent 발화 끝
+    38.16s  user  발화 시작: Rome, I think. I’ve always wanted to see the Colosseum.
+    40.63s  <ret> 발화 (turn12 첫 프레임)
+    41.05s  agent 발화 시작: <ret> Okay, Alitalia flight AZ602 departs Phoenix on August 
+    41.17s  user  발화 끝
+    41.42s  ⚡SPAN 주입 [d'=0.79s / d_lead=12.51s]: (tool result) {"flight number": "AZ602", "airline": "Alitalia", "depar
+    45.59s  user  발화 시작: Right.
+    45.94s  user  발화 끝
+    53.56s  agent 발화 끝
+    55.20s  user  발화 시작: That’s…expensive. Are there any cheaper options, even with a
+    59.28s  <ret> 발화 (turn15 첫 프레임)
+    59.80s  agent 발화 시작: <ret> Yes, there’s a United Airlines flight, UA987, with a l
+    59.88s  ⚡SPAN 주입 [d'=0.60s / d_lead=14.28s]: (tool result) {"flight number": "UA987", "airline": "United Airlines",
+    59.94s  user  발화 끝
+    74.07s  agent 발화 끝
+    74.16s  user  발화 시작: That’s much better. Can you show me some hotels near the Col
+    75.82s  <ret> 발화 (turn17 첫 프레임)
+    77.49s  ⚡SPAN 주입 [d'=1.67s / d_lead=9.98s]: (tool result) {"hotel name": "Hotel Artemide", "address": "Via Naziona
+    77.54s  agent 발화 시작: <ret> Hotel Artemide is a four-and-a-half-star hotel about o
+    77.66s  user  발화 끝
+    81.45s  user  발화 시작: Yeah.
+    81.99s  user  발화 끝
+    87.52s  agent 발화 끝
+    88.41s  user  발화 시작: That sounds nice. And could you find a good restaurant nearb
+    92.01s  <ret> 발화 (turn20 첫 프레임)
+    93.21s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.80s]: (tool result) {"restaurant name": "La Taverna dei Fori Imperiali", "ad
+    93.27s  agent 발화 시작: <ret> La Taverna dei Fori Imperiali is a highly-rated Italia
+    93.29s  user  발화 끝
+   104.07s  agent 발화 끝
+   104.49s  user  발화 시작: Perfect! You've been a huge help, Hur.
+   106.62s  user  발화 끝
+   106.89s  agent 발화 시작: [happy] You're very welcome. It’s my pleasure to help you pl
+   115.91s  agent 발화 끝

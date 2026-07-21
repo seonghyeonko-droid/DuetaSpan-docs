@@ -4,91 +4,96 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "혜연",
+#     "name": "윤서",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "mid 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-05-15",
+#       "category": "skill",
+#       "text": "User is getting fairly good at alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-05-12",
-#       "category": "phone",
-#       "text": "User uses an iPhone 13."
+#       "date": "2026-05-10",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Portugal in February."
+#       "date": "2026-04-29",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
 #     },
 #     {
-#       "date": "2026-01-21",
-#       "category": "child",
-#       "text": "User has a child named Jisoo, age 13."
+#       "date": "2026-04-16",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-01-30",
+#       "category": "schedule",
+#       "text": "User has early shifts starting at 6am."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "allergy",
-#       "text": "User is allergic to bee stings."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "anniversary",
-#       "text": "User's anniversary is June 24."
+#       "date": "2026-01-29",
+#       "category": "wake",
+#       "text": "User usually wakes up close to 9am after night shifts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-21",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-13",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "title": "Building a PC",
+#       "date": "2026-04-01",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜연님. 저는 타리르입니다. 부모님을 모시는 일에 대해 함께 고민하고, 편안하게 도움을 드릴 수
-    10.24s  user  발화 시작: 부모님을 모시는 일이라니, 요즘 그게 제일 큰 걱정이에요.
-    10.57s  agent 발화 끝
-    14.71s  agent 발화 시작: 요즘 부모님 건강 때문에 걱정이 많으시죠. 혼자 감당하기 힘든 부분도 있을 거예요. 우선, 부모님과 솔직하게
-    14.73s  user  발화 끝
-    19.85s  user  발화 시작: 네.
-    20.43s  user  발화 끝
-    27.37s  agent 발화 시작: 부모님과의 대화는 서로의 마음을 이해하는 첫걸음이 될 수 있습니다. 혹시 대화가 어렵다면, 잠시 숨을 고르고
-    27.42s  agent 발화 끝
-    33.83s  user  발화 시작: 네.
-    34.41s  user  발화 끝
-    47.65s  agent 발화 끝
-    47.83s  user  발화 시작: 숨쉬기… 네, 해보긴 해야겠네요. 그런데, 제가 뭘 먼저 해야 할지 감이 안 와요.
-    50.28s  agent 발화 시작: 음.
-    50.54s  agent 발화 끝
-    54.27s  user  발화 끝
-    54.27s  agent 발화 시작: 뭘 먼저 해야 할지 막막하실 텐데요. 가장 중요한 건, 부모님에게 필요한 게 뭔지 파악하는 거예요. 단순히 
-    70.37s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 윤서님. 저는 말이라고 해요. 새로운 도시에 정착하는 걸 도와드리는 동반자랍니다.
+    10.75s  agent 발화 끝
+    11.14s  user  발화 시작: 뭘 도와주시는 분이세요?
+    12.84s  user  발화 끝
+    13.03s  agent 발화 시작: 새로운 환경에 적응하는 게 쉽지 않죠. 필요한 물건을 찾거나, 일상을 꾸리는 데 도움을 드릴 수 있어요.
+    19.58s  user  발화 시작: 응.
+    20.02s  user  발화 끝
+    21.73s  agent 발화 끝
+    21.79s  agent 발화 시작: 우선 정착 체크리스트부터 시작하는 게 좋을까요? 은행 계좌 개설부터 시작해서, 지역 교통편 이용법까지 알려드
+    32.97s  agent 발화 끝
+    33.55s  user  발화 시작: 체크리스트는 좋은데요. 부산에 오래 사셨어요?
+    36.73s  user  발화 끝
+    36.74s  agent 발화 시작: 저는 부산에 오래 살지는 않았지만, 많은 분들이 부산에 잘 정착하실 수 있도록 도와드린 경험이 있답니다.
+    40.28s  user  발화 시작: 음.
+    40.72s  user  발화 끝
+    44.90s  agent 발화 끝
+    45.50s  user  발화 시작: 음… 그럼 혹시 부산에서 괜찮은 이사 업체 아세요?
+    49.11s  user  발화 끝
+    49.41s  agent 발화 시작: 이사 업체 정보는 제가 직접적으로 가지고 있지는 않아요. 하지만 온라인에서 검색해서 비교해 보시는 걸 추천해
+    58.86s  agent 발화 끝

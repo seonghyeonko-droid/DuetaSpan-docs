@@ -4,284 +4,270 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_53",
-#     "name": "Camille",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "skill",
-#       "text": "User is quite experienced with beekeeping."
+#       "date": "2026-06-28",
+#       "category": "learning",
+#       "text": "User is learning to play guitar."
 #     },
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-04-19",
+#       "category": "car",
+#       "text": "User drives a 2018 Mazda CX-5."
+#     },
+#     {
+#       "date": "2026-04-08",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Hana."
+#     },
+#     {
+#       "date": "2026-04-01",
 #       "category": "sibling",
-#       "text": "User has a younger sibling named Kenji."
+#       "text": "User has a younger sibling named Leo."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is black drip coffee."
+#       "date": "2026-01-28",
+#       "category": "wake",
+#       "text": "User usually wakes up close to 9am after night shifts."
 #     },
 #     {
-#       "date": "2026-02-01",
-#       "category": "music",
-#       "text": "User likes listening to city pop."
+#       "date": "2026-01-01",
+#       "category": "streaming",
+#       "text": "User subscribes to Disney+ and YouTube Premium."
 #     },
 #     {
-#       "date": "2025-12-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is French."
+#       "date": "2025-12-16",
+#       "category": "medication",
+#       "text": "User takes blood-pressure medication."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "savings",
-#       "text": "User is saving for a down payment on an apartment."
+#       "date": "2025-12-11",
+#       "category": "anniversary",
+#       "text": "User's anniversary is March 28."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-16",
-#       "title": "Planning a dinner party",
+#       "date": "2026-06-08",
+#       "title": "Sorting out a visa",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "applying for a working-holiday visa to Australia",
+#         "asked about the bank-balance requirement"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "title": "Fixing a leaking faucet",
+#       "date": "2026-03-02",
+#       "title": "Adopting a rescue dog",
 #       "bullets": [
-#         "it's a single-handle kitchen tap",
-#         "asked whether to replace the cartridge"
+#         "looking at a 2-year-old Beagle mix",
+#         "asked about crate training and vet costs"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I got tickets to a show! It's on M | S2 Something to relieve tension in my | S3 I’m feeling a bit overwhelmed with | S4 I'm also trying to find a good boo
+# EXAMINER(FDB-v2) 단계: S1 Hey Klelo, just wanted to chat. I' | S2 SPQR, got it. Italian sounds good. | S3 It's a collection of contemporary  | S4 I know! I need to find a salon nea
 
-     0.00s  user  발화 시작: I got tickets to a show! It's on March 13th, at 3:15 PM.
-     5.23s  user  발화 끝
-     5.24s  agent 발화 시작: Got it, I'll remember that. Sounds exciting! What kind of sh
-     9.68s  user  발화 시작: It’s a comedy night. And the tickets were 85 Australian doll
-     9.70s  agent 발화 끝
-    14.38s  user  발화 끝
-    14.54s  agent 발화 시작: [happy] Wonderful! 85 Australian dollars for a comedy night 
-    20.59s  agent 발화 끝
-    20.70s  user  발화 시작: Actually, yes. I was wondering, who played Lori Ann on *Reba
-    27.58s  <ret> 발화 (turn5 첫 프레임)
-    28.11s  user  발화 끝
-    28.13s  agent 발화 시작: <ret> Oh, the actor you're thinking of is Park Overall. She 
-    28.25s  ⚡SPAN 주입 [d'=0.67s / d_lead=9.22s]: Park Overall portrayed Lori Ann Douglass in the television series *Reb
-    37.35s  agent 발화 끝
-    37.40s  user  발화 시작: Oh, right! Park Overall. I knew it was a familiar face.
-    41.91s  agent 발화 시작: [happy] Glad I could help jog your memory!
-    42.03s  user  발화 끝
-    42.70s  user  발화 시작: Yeah.
-    43.28s  user  발화 끝
-    44.00s  agent 발화 끝
-    44.94s  user  발화 시작: Hmm, I'm thinking about redecorating my living room. I need 
-    50.30s  user  발화 끝
-    50.45s  agent 발화 시작: That sounds fun! What kind of style are you leaning towards?
-    57.34s  agent 발화 끝
-    58.74s  user  발화 시작: I'm not sure, honestly. Something cozy and inviting, I think
-    63.28s  agent 발화 시작: Right.
-    63.96s  agent 발화 끝
-    66.16s  user  발화 끝
-    66.22s  agent 발화 시작: Cozy and rustic is lovely! We could look at some images of l
-    69.89s  user  발화 시작: Yeah.
-    70.34s  user  발화 끝
-    72.52s  user  발화 시작: That would be great.
-    72.56s  agent 발화 끝
-    73.56s  <ret> 발화 (turn16 첫 프레임)
-    73.91s  agent 발화 시작: <ret> For a cozy vibe, The Tea Room QVB at 1888 George Stree
-    74.05s  user  발화 끝
-    74.77s  ⚡SPAN 주입 [d'=1.21s / d_lead=11.51s]: (tool result) Sydney has several cozy restaurants, including The Tea R
-    85.42s  agent 발화 끝
-    85.68s  user  발화 시작: Oh, Butter! I've heard good things about that place.
-    89.13s  user  발화 끝
-    89.37s  agent 발화 시작: [happy] It's quite popular! They’re known for their pastries
-    94.41s  agent 발화 끝
-    94.53s  user  발화 시작: No, not yet. Maybe I should check it out.
-    96.42s  agent 발화 시작: Yeah.
-    96.72s  agent 발화 끝
-    97.55s  user  발화 끝
-    97.56s  agent 발화 시작: I think you'd enjoy it. It’s a perfect spot for a relaxed af
-   100.53s  user  발화 시작: Yeah.
-   101.11s  user  발화 끝
-   102.20s  agent 발화 끝
-   102.34s  user  발화 시작: Speaking of relaxed afternoons, I really need a massage.
-   104.73s  agent 발화 시작: Yeah, yeah.
-   105.98s  agent 발화 끝
-   106.29s  user  발화 끝
-   106.44s  agent 발화 시작: A massage sounds wonderful. Are you looking for a specific t
-   109.61s  user  발화 시작: Yeah.
-   110.10s  user  발화 끝
-   111.67s  user  발화 시작: Something to relieve tension in my shoulders and neck.
-   111.76s  agent 발화 끝
-   114.30s  <ret> 발화 (turn28 첫 프레임)
-   115.39s  ⚡SPAN 주입 [d'=1.10s / d_lead=8.72s]: (tool result) Sydney offers numerous massage services, including Endot
-   115.41s  user  발화 끝
-   115.43s  agent 발화 시작: <ret> Endota Spa and BodyMindLife, both with several locatio
-   119.87s  user  발화 시작: Yeah.
-   120.31s  user  발화 끝
-   124.15s  agent 발화 끝
-   124.71s  user  발화 시작: Endota Spa… I think there's one near me.
-   127.92s  user  발화 끝
-   128.08s  agent 발화 시작: [curious] Yes, there is one in the city center. Would you li
-   133.40s  agent 발화 끝
-   133.66s  user  발화 시작: No, that’s alright. I’ll look at their website later.
-   136.83s  agent 발화 시작: Sounds good. Take your time.
-   136.88s  user  발화 끝
-   138.85s  agent 발화 끝
-   139.24s  user  발화 시작: I’m also thinking about getting a new plant for the living r
-   143.03s  user  발화 끝
-   143.35s  agent 발화 시작: A plant will really brighten up the space! Do you have any p
-   149.04s  agent 발화 끝
-   149.11s  user  발화 시작: Something easy to care for, definitely. I'm not very good wi
-   153.92s  <ret> 발화 (turn37 첫 프레임)
-   154.34s  user  발화 끝
-   154.35s  agent 발화 시작: <ret> For easy care, snake plants and ZZ plants are great ch
-   154.96s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.34s]: Snake plants (Sansevieria trifasciata) and ZZ plants (Zamioculcas zami
-   160.69s  agent 발화 끝
-   160.76s  user  발화 시작: Those sound promising. I'll look into those.
-   164.04s  user  발화 끝
-   164.17s  agent 발화 시작: [happy] Excellent! They are quite popular.
-   166.45s  agent 발화 끝
-   166.45s  user  발화 시작: I'm trying to think of something else… Oh! I need to book a 
-   171.21s  user  발화 끝
-   171.27s  agent 발화 시작: A haircut is always a good idea. Do you have a preferred sal
-   173.47s  user  발화 시작: Yeah.
-   173.87s  user  발화 끝
-   176.33s  user  발화 시작: Not really. Somewhere nearby would be convenient.
-   176.36s  agent 발화 끝
-   178.82s  <ret> 발화 (turn44 첫 프레임)
-   179.79s  ⚡SPAN 주입 [d'=0.97s / d_lead=7.67s]: (tool result) Several highly-rated hair salons are located in Sydney, 
-   179.85s  agent 발화 시작: <ret> Edwards and Co on Oxford Street and Joey Scandizzo Sal
-   180.00s  user  발화 끝
-   187.52s  agent 발화 끝
-   187.60s  user  발화 시작: Edwards and Co… I’ve walked past that one before.
-   191.09s  agent 발화 시작: [curious] It’s a very popular salon. They specialize in a ra
-   191.17s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 47턴 요약, 97f): show date: March 13th; show time: 3:15 PM; ticket price: 85 Australian dollars; living roo
-   193.10s  user  발화 시작: Yeah.
-   193.54s  user  발화 끝
-   195.84s  user  발화 시작: Maybe I’ll give them a call.
-   195.85s  agent 발화 끝
-   197.84s  user  발화 끝
-   197.92s  agent 발화 시작: That sounds like a good plan.
-   199.06s  user  발화 시작: Yeah, yeah.
-   199.90s  agent 발화 끝
-   199.90s  user  발화 시작: I’m feeling a bit overwhelmed with everything.
-   200.68s  user  발화 끝
-   202.54s  user  발화 끝
-   202.73s  agent 발화 시작: [sigh] It’s completely understandable to feel overwhelmed wh
-   211.71s  agent 발화 끝
-   212.76s  user  발화 시작: You’re right. It’s just a lot to think about.
-   214.80s  agent 발화 시작: Yeah.
-   215.10s  agent 발화 끝
-   216.22s  user  발화 끝
-   216.37s  agent 발화 시작: [happy] It is! But you're handling it beautifully. Remember 
-   219.20s  user  발화 시작: Yeah.
-   219.65s  user  발화 끝
-   222.11s  agent 발화 끝
-   222.69s  user  발화 시작: I should probably focus on one thing at a time.
-   225.94s  agent 발화 시작: Exactly. Starting with one small task can make a big differe
-   225.97s  user  발화 끝
-   230.56s  user  발화 시작: Okay. I think I’ll start with the plant.
-   230.62s  agent 발화 끝
-   232.97s  agent 발화 시작: That's a great choice. A little greenery can really lift you
-   233.09s  user  발화 끝
-   235.00s  user  발화 시작: Mm-hmm.
-   235.54s  user  발화 끝
-   237.88s  agent 발화 끝
-   239.23s  user  발화 시작: I'm also thinking about taking a weekend trip soon.
-   242.78s  agent 발화 시작: A weekend trip sounds lovely! Do you have any destinations i
-   242.78s  user  발화 끝
-   245.31s  user  발화 시작: Yeah.
-   245.80s  user  발화 끝
-   247.50s  agent 발화 끝
-   247.53s  user  발화 시작: Not yet. Maybe somewhere within driving distance of Sydney.
-   250.13s  <ret> 발화 (turn66 첫 프레임)
-   251.61s  ⚡SPAN 주입 [d'=1.48s / d_lead=9.45s]: (tool result) The Blue Mountains (approximately 100 km west of Sydney)
-   251.67s  agent 발화 시작: <ret> The Blue Mountains, about 100 kilometers west, and Hun
-   251.74s  user  발화 끝
-   260.98s  user  발화 시작: Oh, the Blue Mountains! I haven't been there in years.
-   261.12s  agent 발화 끝
-   264.16s  user  발화 끝
-   264.50s  agent 발화 시작: [happy] It's a beautiful spot! The scenery is breathtaking.
-   267.04s  user  발화 시작: Uh-huh.
-   267.48s  user  발화 끝
-   268.08s  agent 발화 끝
-   268.32s  user  발화 시작: I remember going there as a kid.
-   270.56s  agent 발화 시작: That's lovely! It's wonderful to revisit places from your ch
-   270.58s  user  발화 끝
-   272.57s  user  발화 시작: Yeah.
-   273.02s  user  발화 끝
-   275.23s  agent 발화 끝
-   275.43s  user  발화 시작: What time did I say that show was again?
-   277.79s  agent 발화 시작: You said the show was at 3:15 PM.
-   277.87s  user  발화 끝
-   279.96s  user  발화 시작: Uh-huh.
-   280.41s  user  발화 끝
-   281.19s  agent 발화 끝
-   281.96s  user  발화 시작: Right, 3:15 PM. Thanks for reminding me.
-   285.24s  agent 발화 시작: [happy] You're very welcome!
-   285.38s  user  발화 끝
-   286.76s  user  발화 시작: I'm also trying to find a good book to read.
-   286.77s  agent 발화 끝
-   289.39s  user  발화 끝
-   289.57s  agent 발화 시작: A good book is always a treat. What genres do you enjoy?
-   292.89s  user  발화 시작: Yeah, yeah.
-   294.01s  user  발화 끝
-   294.09s  agent 발화 끝
-   294.32s  user  발화 시작: I like mysteries and thrillers.
-   296.29s  <ret> 발화 (turn82 첫 프레임)
-   296.88s  agent 발화 시작: <ret> "The Silent Patient" by Alex Michaelides and "The Gues
-   297.00s  user  발화 끝
-   297.14s  ⚡SPAN 주입 [d'=0.85s / d_lead=8.66s]: (tool result) Several mystery novels are currently popular in Sydney, 
-   300.93s  user  발화 시작: Mm-hmm.
-   301.58s  user  발화 끝
-   305.53s  agent 발화 끝
-   305.56s  user  발화 시작: "The Silent Patient"... I’ve seen that one recommended a lot
-   309.44s  agent 발화 시작: [curious] It’s a very gripping read. Many people have enjoye
-   309.49s  user  발화 끝
-   313.02s  user  발화 시작: I think I’ll add that to my list.
-   313.06s  agent 발화 끝
-   315.40s  agent 발화 시작: Excellent choice!
-   315.49s  user  발화 끝
-   316.68s  agent 발화 끝
-   317.05s  user  발화 시작: I'm starting to feel a little tired.
-   319.38s  user  발화 끝
-   319.72s  agent 발화 시작: [sigh] It's okay to feel tired. You've been doing a lot toda
-   321.04s  user  발화 시작: Right.
-   321.72s  user  발화 끝
-   324.02s  agent 발화 끝
-   324.19s  user  발화 시작: I think I just need to relax for a while.
-   326.54s  user  발화 끝
-   326.85s  agent 발화 시작: That sounds like a perfect plan.
-   328.86s  agent 발화 끝
-   329.06s  user  발화 시작: How much was that show ticket again?
-   331.20s  agent 발화 시작: You said the tickets were 85 Australian dollars.
-   331.29s  user  발화 끝
-   332.80s  user  발화 시작: Yeah.
-   333.38s  user  발화 끝
-   334.80s  agent 발화 끝
-   336.46s  user  발화 시작: Oh yes, 85 Australian dollars. Thank you.
-   340.53s  user  발화 끝
-   340.72s  agent 발화 시작: [happy] My pleasure!
-   341.84s  agent 발화 끝
-   341.88s  user  발화 시작: I think that's all for now.
-   343.75s  agent 발화 시작: [happy] Alright. It’s been lovely chatting with you, Camille
-   343.75s  user  발화 끝
-   348.43s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Klelo, just wanted to chat. I'm heading to a conference 
+     1.88s  agent 발화 시작: Yeah.
+     2.31s  agent 발화 끝
+     4.20s  user  발화 끝
+     4.29s  agent 발화 시작: Hi Quinn! That sounds exciting. Conferences can be really gr
+     7.83s  user  발화 시작: Yeah.
+     8.28s  user  발화 끝
+    10.26s  user  발화 시작: Yeah, I think so. I actually already booked a hotel for it. 
+    10.27s  agent 발화 끝
+    17.52s  user  발화 끝
+    17.68s  agent 발화 시작: Got it, I'll remember that. That sounds well-planned!
+    18.77s  user  발화 시작: Yeah.
+    19.35s  user  발화 끝
+    21.15s  user  발화 시작: And it was 110 dollars a night, which isn’t bad for the loca
+    21.21s  agent 발화 끝
+    25.96s  user  발화 끝
+    26.26s  agent 발화 시작: Okay, 110 dollars. Wonderful. Glad you found a good deal!
+    31.48s  user  발화 시작: So, I was reading about the Hubble telescope, and I got curi
+    31.57s  agent 발화 끝
+    35.73s  user  발화 끝
+    35.84s  agent 발화 시작: Oh, fascinating! Hubble is incredible. What about it sparked
+    38.12s  user  발화 시작: Yeah.
+    38.52s  user  발화 끝
+    40.94s  user  발화 시작: What kind of light does it actually collect? I mean, is it v
+    41.22s  agent 발화 끝
+    46.78s  <ret> 발화 (turn13 첫 프레임)
+    47.07s  agent 발화 시작: <ret> That’s a great question about what Hubble sees… It obs
+    47.19s  user  발화 끝
+    48.42s  ⚡SPAN 주입 [d'=1.64s / d_lead=3.81s]: The Hubble Space Telescope observes near-infrared, visible, and ultrav
+    59.44s  agent 발화 끝
+    60.15s  user  발화 시작: Near-infrared… interesting! I didn't realize it saw beyond w
+    66.26s  user  발화 끝
+    66.35s  agent 발화 시작: Exactly! That’s why it can reveal so much about distant gala
+    71.83s  agent 발화 끝
+    73.02s  user  발화 시작: Makes sense. I'm also trying to figure out what I should pac
+    77.97s  user  발화 끝
+    78.02s  agent 발화 시작: Packing for a conference can be tricky. Comfort is key, but 
+    84.46s  agent 발화 끝
+    84.49s  user  발화 시작: True. I'm thinking layers, since the weather can be unpredic
+    89.45s  agent 발화 시작: Layers are always a good idea. San Francisco weather is noto
+    89.49s  user  발화 끝
+    91.14s  user  발화 시작: Mm-hmm.
+    91.58s  user  발화 끝
+    94.66s  user  발화 시작: Definitely. I was looking at restaurants near the Moscone Ce
+    94.77s  agent 발화 끝
+    98.27s  <ret> 발화 (turn22 첫 프레임)
+    98.67s  user  발화 끝
+    98.67s  agent 발화 시작: <ret> Finding good places to eat is essential… SPQR, an Ital
+    99.58s  ⚡SPAN 주입 [d'=1.31s / d_lead=3.34s]: SPQR is an Italian restaurant located at 1911 Fillmore St, San Francis
+   113.46s  agent 발화 끝
+   114.43s  user  발화 시작: SPQR, got it. Italian sounds good. Is it pricey?
+   118.00s  <ret> 발화 (turn24 첫 프레임)
+   119.20s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.86s]: SPQR's price range is $$$ (pricey).
+   119.25s  agent 발화 시작: <ret> SPQR is in the pricey range, denoted as "$$$". It's kn
+   119.34s  user  발화 끝
+   128.11s  agent 발화 끝
+   129.56s  user  발화 시작: Okay, pricey but good. I might splurge. I also need to find 
+   135.48s  user  발화 끝
+   135.57s  agent 발화 시작: A good coffee shop is a must for any conference! Fuel is imp
+   140.23s  agent 발화 끝
+   140.36s  user  발화 시작: Right? I need somewhere with good Wi-Fi too, for last-minute
+   144.84s  agent 발화 시작: Reliable Wi-Fi is crucial for staying connected.
+   144.93s  user  발화 끝
+   147.13s  user  발화 시작: Yeah.
+   147.71s  user  발화 끝
+   148.62s  agent 발화 끝
+   148.81s  user  발화 시작: I wonder if there’s a quiet one nearby? I get easily distrac
+   151.67s  agent 발화 시작: Okay.
+   152.12s  <ret> 발화 (turn32 첫 프레임)
+   152.26s  agent 발화 끝
+   153.26s  ⚡SPAN 주입 [d'=1.13s / d_lead=7.97s]: Sightglass Coffee is located at 270 Mason St, San Francisco, CA 94102 
+   153.31s  agent 발화 시작: <ret> Sightglass Coffee at 270 Mason Street offers Wi-Fi. Th
+   153.35s  user  발화 끝
+   155.65s  user  발화 시작: Okay.
+   156.58s  user  발화 끝
+   161.27s  agent 발화 끝
+   162.35s  user  발화 시작: Sightglass… okay, I’ll check that out. Thanks! I'm also thin
+   169.51s  agent 발화 시작: A movie sounds like a great way to relax. Any genre in mind?
+   169.59s  user  발화 끝
+   174.27s  agent 발화 끝
+   174.34s  user  발화 시작: Not really. Something new, maybe? What's playing in San Fran
+   175.76s  agent 발화 시작: Yeah.
+   176.07s  agent 발화 끝
+   177.66s  <ret> 발화 (turn38 첫 프레임)
+   178.90s  agent 발화 시작: <ret> "Inside Out 2", "Bad Boys: Ride or Die", and "The Garf
+   178.96s  user  발화 끝
+   179.24s  ⚡SPAN 주입 [d'=1.58s / d_lead=7.91s]: (tool result) Currently playing in San Francisco: "Inside Out 2", "Bad
+   186.79s  user  발화 시작: "Inside Out 2"... hmm, that sounds interesting. What are the
+   186.81s  agent 발화 끝
+   190.84s  agent 발화 시작: Mm-hmm.
+   191.42s  agent 발화 끝
+   191.89s  <ret> 발화 (turn41 첫 프레임)
+   192.00s  🃏 CARD 주입 (2400f, 누적 41턴 요약, 57f): hotel checkin: March 2nd, check-in at 3:30 PM (3m ago); hotel price: 110 dollars a night (
+   192.07s  agent 발화 시작: <ret> Showtimes for "Inside Out 2" are 1:00 PM, 4:00 PM, 7:0
+   192.16s  user  발화 끝
+   193.18s  ⚡SPAN 주입 [d'=1.29s / d_lead=9.02s]: (tool result) "Inside Out 2" showtimes in San Francisco: 1:00 PM, 4:00
+   201.09s  agent 발화 끝
+   201.09s  user  발화 시작: 7:00 PM sounds good. I'm also trying to decide if I should g
+   208.51s  user  발화 끝
+   208.68s  agent 발화 시작: The de Young always has interesting exhibits. What's the exh
+   213.55s  user  발화 시작: It's a collection of contemporary portraits. I'm a big fan o
+   213.56s  agent 발화 끝
+   218.88s  agent 발화 시작: That sounds wonderful. Contemporary portraits can be really 
+   218.92s  user  발화 끝
+   223.95s  user  발화 시작: Yeah, I think so. I’m also trying to figure out how to stay 
+   223.96s  agent 발화 끝
+   229.81s  agent 발화 시작: Ah, that’s a common struggle. I can definitely help with tha
+   229.91s  user  발화 끝
+   233.63s  user  발화 시작: Really? How? I keep getting distracted.
+   233.71s  agent 발화 끝
+   236.91s  user  발화 끝
+   236.99s  agent 발화 시작: Well, techniques like the Pomodoro Technique can be really e
+   243.52s  user  발화 시작: The Pomodoro Technique? I've heard of that. Twenty-five minu
+   243.60s  agent 발화 끝
+   248.84s  user  발화 끝
+   248.91s  agent 발화 시작: Exactly! Twenty-five minutes of focused work, then a five-mi
+   250.62s  user  발화 시작: Right.
+   251.25s  user  발화 끝
+   254.17s  user  발화 시작: That sounds manageable. I also read about spaced repetition.
+   254.18s  agent 발화 끝
+   259.30s  user  발화 끝
+   259.39s  agent 발화 시작: Spaced repetition is fantastic for long-term retention. Revi
+   266.68s  agent 발화 끝
+   267.70s  user  발화 시작: I think I need both. I keep forgetting things I’ve already s
+   271.97s  user  발화 끝
+   272.23s  agent 발화 시작: It’s perfectly normal to forget things. That’s why those tec
+   277.29s  agent 발화 끝
+   277.99s  user  발화 시작: You're right. What time did I say my hotel check-in was agai
+   281.96s  user  발화 끝
+   281.96s  agent 발화 시작: Earlier you said your hotel check-in was at 3:30 PM.
+   286.11s  user  발화 시작: Oh yeah, 3:30 PM. Thanks! I’m also thinking about getting a 
+   286.12s  agent 발화 끝
+   288.92s  agent 발화 시작: Yeah.
+   289.41s  agent 발화 끝
+   291.18s  user  발화 끝
+   291.65s  agent 발화 시작: A fresh haircut is always a good idea. A little self-care.
+   294.22s  user  발화 시작: Mhm.
+   294.90s  user  발화 끝
+   296.10s  user  발화 시작: I know! I need to find a salon nearby.
+   296.14s  agent 발화 끝
+   298.07s  <ret> 발화 (turn64 첫 프레임)
+   299.33s  ⚡SPAN 주입 [d'=1.26s / d_lead=10.06s]: Fox and Jane Salon is located at 1498 Valencia St, San Francisco, CA 9
+   299.37s  agent 발화 시작: <ret> Fox and Jane Salon at 1498 Valencia Street has a 4.7-s
+   299.42s  user  발화 끝
+   307.16s  user  발화 시작: Mm-hmm.
+   307.74s  user  발화 끝
+   309.41s  user  발화 시작: Fox and Jane… 4.7 stars is good. What's their price range li
+   309.43s  agent 발화 끝
+   312.81s  agent 발화 시작: Yeah.
+   313.25s  agent 발화 끝
+   314.87s  <ret> 발화 (turn68 첫 프레임)
+   315.67s  user  발화 끝
+   315.76s  agent 발화 시작: <ret> Haircuts at Fox and Jane range from 85 to 150 dollars.
+   316.49s  ⚡SPAN 주입 [d'=1.61s / d_lead=8.91s]: Fox and Jane Salon's haircuts range from 85 to 150 dollars.
+   319.94s  user  발화 시작: Yeah.
+   320.52s  user  발화 끝
+   324.67s  agent 발화 끝
+   324.90s  user  발화 시작: Okay, that's reasonable. I also need to buy groceries this w
+   329.81s  user  발화 끝
+   329.83s  agent 발화 시작: Groceries are a necessity! Do you have a favorite store?
+   331.77s  user  발화 시작: Uh-huh.
+   332.21s  user  발화 끝
+   333.56s  agent 발화 끝
+   333.74s  user  발화 시작: Not really. Just somewhere convenient.
+   336.32s  agent 발화 시작: There's a Safeway on Market Street that's pretty convenient.
+   336.41s  user  발화 끝
+   338.12s  user  발화 시작: Yeah.
+   338.86s  user  발화 끝
+   339.98s  agent 발화 끝
+   340.75s  user  발화 시작: Safeway is good. I think I’ll go there.
+   341.75s  agent 발화 시작: Right.
+   342.14s  agent 발화 끝
+   343.33s  user  발화 끝
+   343.49s  agent 발화 시작: Excellent choice! It’s a well-stocked store.
+   345.96s  user  발화 시작: Right.
+   346.64s  user  발화 끝
+   346.78s  agent 발화 끝
+   346.80s  user  발화 시작: How much was the hotel a night again?
+   349.94s  user  발화 끝
+   350.41s  agent 발화 시작: Earlier you mentioned the hotel was 110 dollars a night.
+   352.98s  user  발화 시작: Right.
+   353.42s  user  발화 끝
+   354.41s  agent 발화 끝
+   354.85s  user  발화 시작: Right, 110 dollars. Thanks. I think I have everything planne
+   359.42s  agent 발화 시작: That's wonderful! You've done a great job organizing everyth
+   359.52s  user  발화 끝
+   363.61s  agent 발화 끝
+   363.65s  user  발화 시작: Thanks, Klelo. You've been really helpful.
+   366.21s  user  발화 끝
+   366.26s  agent 발화 시작: You're very welcome, Quinn. I'm glad I could assist you. It 
+   371.20s  agent 발화 끝

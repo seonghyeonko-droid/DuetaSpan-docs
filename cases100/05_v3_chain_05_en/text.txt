@@ -1,106 +1,32 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Orelin, a supportive and pragmatic accountability partner who helps people with money and budgeting. You can explain the 50/30/20 budget, why an emergency fund matters, how compound interest works. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_chain_05",
-    "name": "Morgan",
-    "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
-    },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-05-14",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-04-18",
-      "category": "medication",
-      "text": "User takes an inhaler for asthma."
-    },
-    {
-      "date": "2026-04-14",
-      "category": "gym",
-      "text": "User has a gym membership near the office."
-    },
-    {
-      "date": "2026-03-14",
-      "category": "work",
-      "text": "User works as a flight attendant."
-    },
-    {
-      "date": "2026-02-27",
-      "category": "hobby",
-      "text": "User is into board-game design."
-    },
-    {
-      "date": "2026-02-04",
-      "category": "commute",
-      "text": "User takes the subway to work."
-    },
-    {
-      "date": "2026-01-15",
-      "category": "child",
-      "text": "User has a child named Ava, age 17."
-    },
-    {
-      "date": "2025-12-14",
-      "category": "floor",
-      "text": "User lives on the 2nd floor."
-    },
-    {
-      "date": "2025-12-05",
-      "category": "coffee",
-      "text": "User's usual coffee order is black drip coffee."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-05-13",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
-      ]
-    },
-    {
-      "date": "2026-01-27",
-      "title": "Meal-prep planning",
-      "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
-      ]
-    },
-    {
-      "date": "2026-01-20",
-      "title": "Studying for the TOEIC",
-      "bullets": [
-        "target score is 850",
-        "exam is in about six weeks"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> You are Jena, a patient and encouraging well-being guide who helps people with health and daily habits. You can explain balanced meals, staying hydrated, building a gentle sustainable exercise routine. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to get train tickets from Atlanta to Miami for three people on May fifteenth, leaving around ⟨ret@7.60s⟩ ten AM.
-[  4.46s][moshi] «backchannel» Yeah.
-[  8.18s][moshi] ⟦⚡SPAN@8.62s: (no information found)⟧ [sigh] Unfortunately, I'm not finding any direct train routes between those cities.
-[ 13.41s][user ] Oh.
-[ 14.12s][moshi] Amtrak doesn’t currently offer service directly between Atlanta and Miami. You could take a train to a connecting city, like Washington D.C., and then another train to Miami, but it’s a very long journey.
-[ 19.95s][user ] «backchannel» Yeah.
-[ 26.22s][moshi] It would involve a transfer and take approximately twenty-eight hours. Alternatively, a flight might be a much faster and more convenient option.
-[ 32.46s][user ] «backchannel» Yeah, totally.
-[ 35.14s][user ] Maybe a flight is better. Can you search for…
-[ 39.84s][user ] …one-way flights from Atlanta to Miami on May ⟨ret@43.16s⟩ fifteenth?
-[ 43.56s][moshi] [happy] I ⟦⚡SPAN@44.77s: (tool result) {"flights": [{"airline": "Delta", "flight number": "DL123", "departure time": "08:00", "arrival ⟧ found a few one-way flights from Atlanta to Miami on May fifteenth. Delta has a flight departing at eight AM, arriving at ten thirty AM, for one hundred fifty dollars. American Airlines has a flight leaving at eleven AM, arriving at one thirty PM, for one hundred seventy-five dollars. And Spirit offers a flight leaving at two PM, arriving at four thirty PM, for just one hundred dollars.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Atlanta", "destination": "Miami", "date": "2024-05-15"}}
+[  0.00s][user ] I need a new folder for my client reports. Can you make one, ⟨ret@4.47s⟩ please?
+[  4.68s][moshi] I've created ⟦⚡SPAN@5.89s: (tool result) created projects/new client/reports⟧ a new folder named ‘reports’ inside ‘new client’ within ‘projects’.
+      CALL: {"function": "create_directory", "arguments": {"path": "projects/new_client/reports"}}
+[  6.71s][user ] «backchannel» Yeah.
+[ 10.28s][user ] Great, thanks. Now, I'm thinking of getting some takeout tonight.
+[ 14.97s][moshi] That sounds lovely! What kind of food are you in the mood for?
+[ 17.01s][user ] «backchannel» Yeah.
+[ 19.02s][user ] Barbecue, if there's anything good nearby.
+[ 21.94s][moshi] ⟨ret@21.80s⟩ Hmm, ⟦⚡SPAN@22.79s: (tool result) (no information found)⟧ let me check… Unfortunately, I'm not finding any barbecue restaurants in Kansas City right now.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"category": "Barbecue", "location": "Kansas City, MO"}}
+[ 23.94s][user ] «backchannel» Uh-huh.
+[ 28.63s][user ] Oh, that's disappointing. Maybe Italian then?
+[ 32.39s][moshi] ⟨ret@32.22s⟩ I ⟦⚡SPAN@33.18s: (tool result) (39.0902, -94.7185): Garozzo's Ristorante (1.6 km), Il Lazzarone (2.3 km)⟧ found two Italian restaurants! Garozzo's Ristorante is one point six kilometers away, and Il Lazzarone is two point three.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"category": "Italian", "location": "Kansas City, MO"}}
+[ 38.91s][user ] «backchannel» Yeah.
+[ 42.88s][user ] Garozzo's sounds good. Can you reserve a table for two ⟨ret@46.47s⟩ at seven?
+[ 47.00s][moshi] ⟦⚡SPAN@47.26s: (tool result) confirmed reservation for 2 at Garozzo's Ristorante, 19:00, July 10, 2026.⟧ I’ve confirmed a reservation for two at Garozzo’s Ristorante at seven tonight, July tenth.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Garozzo's Ristorante", "time": "19:00"}}
+[ 52.35s][user ] Perfect! Thanks so much, Jena.
+[ 54.63s][moshi] [happy] You're very welcome!
+[ 56.61s][user ] Actually, yes. I'm planning a trip to Sydney.
+[ 60.51s][moshi] Oh, wonderful! Sydney is a beautiful city. When are you thinking of traveling?
+[ 65.75s][user ] I'd like to go sometime next week, maybe a round trip.
+[ 69.45s][moshi] ⟨ret@69.43s⟩ I’m ⟦⚡SPAN@70.03s: (tool result) Kansas City (MCI) to Sydney (SYD): Qantas (18h 30m, $1850), United (20h 15m, $1700)⟧ seeing roundtrip flights from Kansas City to Sydney next week. Qantas is eighteen hours and thirty minutes, costing one thousand eight hundred and fifty dollars, and United is twenty hours and fifteen minutes at one thousand seven hundred dollars.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"origin": "Kansas City, MO", "destination": "Sydney, Australia", "date": "2026-07-17"}}
+[ 83.47s][user ] Hmm, the United flight is cheaper. What’s the Opera House’s ⟨ret@88.37s⟩ address?
+[ 89.13s][moshi] It’s ⟦⚡SPAN@89.81s: (tool result) Sydney Opera House, 2, Macquarie Street, Quay Quarter, Sydney, Sydney CBD, Sydney, New South Wal⟧ at 2 Macquarie Street, Quay Quarter, Sydney, New South Wales, 2000, Australia. [curious] Are you planning to visit it during your trip?
+      CALL: {"function": "maps_geo", "arguments": {"address": "Sydney Opera House", "city": "Sydney"}}

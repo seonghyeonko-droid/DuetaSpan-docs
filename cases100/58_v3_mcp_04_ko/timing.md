@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "서정",
+#     "name": "우슬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,58 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "mid 30s",
+#     "gender": "male",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
-#       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is black drip coffee."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "anniversary",
-#       "text": "User's anniversary is February 19."
-#     },
-#     {
-#       "date": "2026-03-06",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 24°C."
-#     },
-#     {
-#       "date": "2026-02-15",
+#       "date": "2026-05-29",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Leo."
+#       "date": "2026-05-20",
+#       "category": "schedule",
+#       "text": "User has a hybrid 3-days-in-office week."
 #     },
 #     {
-#       "date": "2026-01-15",
-#       "category": "floor",
-#       "text": "User lives on the 15th floor."
+#       "date": "2026-05-14",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "category": "car",
+#       "text": "User drives a 2018 Mazda CX-5."
+#     },
+#     {
+#       "date": "2026-03-05",
+#       "category": "airline",
+#       "text": "User usually flies with United."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "emergency",
+#       "text": "User's emergency contact is Elena."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "employer",
+#       "text": "User works at a school district."
+#     },
+#     {
+#       "date": "2026-01-19",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
+#     },
+#     {
+#       "date": "2025-12-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Turkish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-07",
-#       "title": "Building a PC",
+#       "date": "2026-04-26",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "wanted a pet-friendly building under 900k won/month",
+#         "needed parking and a second bedroom near line 2"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-13",
+#       "date": "2026-02-06",
+#       "title": "Comparing health insurance",
+#       "bullets": [
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-21",
 #       "title": "Fixing a leaking faucet",
 #       "bullets": [
 #         "it's a single-handle kitchen tap",
@@ -73,29 +91,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 로스앤젤레스에서 라스베이거스까지 운전해서 가는 거리랑 시간은  | S2 육백육십팔분이면 거의 열한시간이네요. 좀 더 가까운 곳으로 갈 | S3 포틀랜드에 괜찮은 유니섹스 미용실이 있을까요? | S4 …혹시 시애틀은 어떨까요? 시애틀에는 괜찮은 곳이 있을 것 같
+# EXAMINER(FDB-v2) 단계: S1 새로운 클라이언트 서류 보관할 폴더 좀 만들어 줄래? 프로젝트 | S2 이십팔도? 생각보다 덥네. 그럼 칠월 십오일은? | S3 에밀리 카터… 좋아. 위치 좀 알려줘. | S4 응, 이제 슬슬 항공권 알아봐야겠다. 칠월 십팔일부터 이십오일
 
-     0.00s  user  발화 시작: 로스앤젤레스에서 라스베이거스까지 운전해서 가는 거리랑 시간은 얼마나 걸릴까요?
-     5.23s  <ret> 발화 (turn1 첫 프레임)
-     5.55s  user  발화 끝
-     5.58s  agent 발화 시작: <ret> 로스앤젤레스에서 라스베이거스까지 운전하는 거리는 구백오십칠킬로미터이고, 시간이 육백육십팔분 정도 
-     6.45s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.80s]: 34.0522,118.2437 to 35.2271,109.0479: 957.0 km, 668 min
-     8.65s  user  발화 시작: 예.
-     8.99s  user  발화 끝
-    15.38s  agent 발화 끝
-    15.53s  user  발화 시작: 육백육십팔분이면 거의 열한시간이네요. 좀 더 가까운 곳으로 갈 만한 곳 없을까요?
-    21.37s  user  발화 끝
-    21.40s  agent 발화 시작: [happy] 네, 열한시간 정도 걸리죠. 혹시 포틀랜드 쪽은 어떠세요? 그쪽도 볼거리가 많답니다.
-    26.79s  agent 발화 끝
-    27.15s  user  발화 시작: 포틀랜드에 괜찮은 유니섹스 미용실이 있을까요?
-    29.64s  <ret> 발화 (turn6 첫 프레임)
-    30.08s  agent 발화 시작: <ret> 죄송하지만, 포틀랜드에서 유니섹스 미용실 정보를 찾을 수 없었습니다. —
-    30.14s  user  발화 끝
-    30.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.87s]: (tool result) (no information found)
-    34.21s  user  발화 시작: …혹시 시애틀은 어떨까요? 시애틀에는 괜찮은 곳이 있을 것 같아요.
-    34.95s  agent 발화 끝
-    38.33s  user  발화 끝
-    38.77s  agent 발화 시작: [surprised] 아, 시애틀이요? 좋은 생각이에요. 시애틀에는 괜찮은 미용실이 꽤 있을 거예요. 잠시만
-    45.22s  agent 발화 끝
-    45.27s  agent 발화 시작: 죄송하지만 시애틀에서도 유니섹스 미용실 정보를 찾을 수 없었습니다. 다른 도시를 알아볼까요?
-    51.52s  agent 발화 끝
+     0.00s  user  발화 시작: 새로운 클라이언트 서류 보관할 폴더 좀 만들어 줄래? 프로젝트 밑에다가.
+     4.38s  user  발화 끝
+     4.58s  agent 발화 시작: 네, 물론이죠. 어떤 프로젝트 밑에 만들어 드릴까요?
+     5.76s  user  발화 시작: 응응.
+     6.34s  user  발화 끝
+     8.20s  agent 발화 끝
+     8.25s  user  발화 시작: 그냥 ‘프로젝트’ 폴더 아래에 ‘새 클라이언트’ 폴더 만들고, 그 안에 ‘문서’ 폴더 만들어줘.
+    13.23s  <ret> 발화 (turn4 첫 프레임)
+    13.52s  user  발화 끝
+    13.71s  agent 발화 시작: <ret> 네, ‘프로젝트/새 클라이언트/문서’ 폴더를 만들었어요. 확인해 보실까요?
+    14.47s  ⚡SPAN 주입 [d'=1.24s / d_lead=4.67s]: (tool result) created projects/new client/documentation
+    16.81s  user  발화 시작: 그래.
+    17.11s  user  발화 끝
+    18.38s  agent 발화 끝
+    18.88s  user  발화 시작: 응, 확인 좀 해 봐. 근데 혹시 내일 모레 날씨 어때?
+    23.13s  <ret> 발화 (turn7 첫 프레임)
+    23.57s  agent 발화 시작: <ret> 내일 모레, 칠월 십이일 서울 날씨는 이십팔도, 구름 조금이에요.
+    23.61s  user  발화 끝
+    23.76s  ⚡SPAN 주입 [d'=0.64s / d_lead=4.53s]: Weather_1_GetWeather({"city": "Seoul", "date": "2026-07-12"}) => (tool
+    28.10s  agent 발화 끝
+    29.60s  user  발화 시작: 이십팔도? 생각보다 덥네. 그럼 칠월 십오일은?
+    33.53s  agent 발화 시작: [happy] 칠월 십오일은 삼십도, 맑음으로 예상돼요. 휴가 계획 세우기 좋겠네요!
+    33.57s  user  발화 끝
+    37.48s  user  발화 시작: 음.
+    37.89s  user  발화 끝
+    38.88s  user  발화 시작: 휴가… 어디로 갈까 고민이야. 혹시 피닉스에 심리 상담사 알아봐 줄 수 있어? 보험 되는 곳으로.
+    39.03s  agent 발화 끝
+    46.01s  <ret> 발화 (turn12 첫 프레임)
+    46.21s  user  발화 끝
+    46.37s  agent 발화 시작: <ret> 아쉽게도 피닉스에서 보험 적용되는 심리 상담사를 찾을 수 없었어요. 다른 도시를 알아볼까요?
+    47.25s  ⚡SPAN 주입 [d'=1.24s / d_lead=6.13s]: (tool result) (no information found)
+    52.50s  agent 발화 끝
+    53.50s  user  발화 시작: 음… 다른 곳도 찾아봐 줘. 로스앤젤레스는 어때?
+    57.32s  <ret> 발화 (turn14 첫 프레임)
+    57.79s  user  발화 끝
+    57.87s  agent 발화 시작: <ret> 로스앤젤레스에는 ‘에밀리 카터’ 선생님이 계세요. 주소는 백이십삼 메인 스트리트, 전화번호는 오 
+    59.15s  ⚡SPAN 주입 [d'=1.83s / d_lead=11.86s]: (tool result) Dr. Emily Carter, 123 Main St, Los Angeles, CA, (555) 12
+    65.08s  user  발화 시작: 응.
+    65.44s  user  발화 끝
+    69.72s  agent 발화 끝
+    69.76s  user  발화 시작: 에밀리 카터… 좋아. 위치 좀 알려줘.
+    72.18s  <ret> 발화 (turn17 첫 프레임)
+    72.44s  user  발화 끝
+    72.72s  agent 발화 시작: <ret> 삼십사 점 영 오 위도, -백십팔 점 이 사 경도입니다. 지도에 표시해 드릴까요?
+    73.19s  ⚡SPAN 주입 [d'=1.01s / d_lead=5.95s]: (tool result) 34.052235, -118.243683
+    75.70s  user  발화 시작: 어어.
+    76.29s  user  발화 끝
+    78.61s  user  발화 시작: 응, 지도에 표시해 줘. 그리고 내 친구 앨리스 존슨한테 내 위치도 공유해 줘.
+    78.67s  agent 발화 끝
+    83.65s  <ret> 발화 (turn20 첫 프레임)
+    83.78s  agent 발화 시작: <ret> 앨리스 존슨 님께 위치 공유를 완료했습니다. 메시지 아이 디는 엠 이 에스 일 공 공 오 육 일 
+    83.80s  user  발화 끝
+    84.89s  ⚡SPAN 주입 [d'=1.24s / d_lead=6.75s]: (tool result) 37.774929, -122.419416, Alice Johnson, MES1-005614, conf
+    88.72s  user  발화 시작: 응.
+    89.12s  user  발화 끝
+    90.53s  agent 발화 끝
+    90.99s  user  발화 시작: 고마워. 앨리스한테 위치 공유까지 해주고.
+    94.10s  user  발화 끝
+    94.54s  agent 발화 시작: [laugh] 천만에요! 언제든 편하게 말씀하세요. 휴가 계획은 좀 더 구체화됐나요?
+    97.13s  user  발화 시작: 음.
+    97.51s  user  발화 끝
+   100.78s  agent 발화 끝
+   100.94s  user  발화 시작: 응, 이제 슬슬 항공권 알아봐야겠다. 칠월 십팔일부터 이십오일까지 로스앤젤레스 왕복 항공권 좀 찾아줘.
+   105.13s  agent 발화 시작: 음.
+   105.48s  agent 발화 끝
+   108.01s  <ret> 발화 (turn27 첫 프레임)
+   108.30s  user  발화 끝
+   108.31s  agent 발화 시작: <ret> 칠월 십팔일부터 이십오일까지 로스앤젤레스 왕복 항공권은, 대한항공이 천 이백 달러, 한 번 경유,
+   108.95s  ⚡SPAN 주입 [d'=0.93s / d_lead=15.76s]: (tool result) Korean Air, $1200, 1 stop, 14h 30m; Asiana Airlines, $13
+   124.08s  agent 발화 끝
+   124.28s  user  발화 시작: 음… 대한항공이 제일 괜찮네.
+   126.81s  user  발화 끝
+   126.86s  agent 발화 시작: 네, 대한항공이 시간과 가격 면에서 균형이 좋네요.
+   130.04s  agent 발화 끝

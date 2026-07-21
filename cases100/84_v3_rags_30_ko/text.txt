@@ -1,78 +1,88 @@
 v3_rags_30_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 동기 부여를 찾는 사람들을 돕는 차분하고 희망적인 마음챙김 가이드 낼입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 침착하고 명료한 개인 가이드 주나로입니다. 당신은 잠자리 루틴, 일관된 기상 시간, 늦은 시간 화면 사용 제한 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시(moshi)이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "혜국",
+    "name": "예민",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "mid 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-09",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
-    },
-    {
-      "date": "2026-05-26",
-      "category": "work",
-      "text": "User works as a pharmacist."
-    },
-    {
-      "date": "2026-04-06",
-      "category": "emergency",
-      "text": "User's emergency contact is Jisoo."
-    },
-    {
-      "date": "2026-02-16",
-      "category": "bloodtype",
-      "text": "User's blood type is B+."
-    },
-    {
-      "date": "2026-02-02",
-      "category": "commute",
-      "text": "User takes a shuttle bus."
-    },
-    {
-      "date": "2026-01-14",
+      "date": "2026-06-27",
       "category": "hobby",
-      "text": "User is into long-distance cycling."
+      "text": "User is into salsa dancing."
     },
     {
-      "date": "2026-01-09",
-      "category": "airline",
-      "text": "User usually flies with Qatar Airways."
+      "date": "2026-06-23",
+      "category": "trip",
+      "text": "User is planning a trip to Portugal in March."
+    },
+    {
+      "date": "2026-05-11",
+      "category": "savings",
+      "text": "User is saving for a trip to Europe next year."
+    },
+    {
+      "date": "2026-05-10",
+      "category": "skill",
+      "text": "User is getting fairly good at vintage synth collecting."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
+    },
+    {
+      "date": "2026-03-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-03-11",
+      "category": "commute",
+      "text": "User works from home."
+    },
+    {
+      "date": "2026-01-15",
+      "category": "home",
+      "text": "User's home address is 경기 성남시 분당구 판교로 235."
+    },
+    {
+      "date": "2026-01-02",
+      "category": "streaming",
+      "text": "User subscribes to Wavve and Melon."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-08",
-      "title": "Setting up a home network",
+      "date": "2026-06-27",
+      "title": "Learning to invest",
       "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
       ]
     },
     {
-      "date": "2025-12-16",
-      "title": "Comparing gym memberships",
+      "date": "2026-05-15",
+      "title": "Switching phone plans",
       "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 인도에서 처음으로 오 디 아이 경기를 한 ⟨ret@2.65s⟩ 건 언제야?
-[  3.26s][moshi] 오 ⟦⚡SPAN@4.20s: India played its first One Day International (ODI) cricket match on 5 July 1974 against England at The Oval in⟧ 디 아이 경기를 처음 한 건… 천구백칠십사년 칠월 오일이었어요. 런던 오벌에서 영국과 경기했답니다.
+[  0.00s][user ] 영화 '셀레나'에 나오는 노래들은 ⟨ret@2.02s⟩ 누가 부르나요?
+[  2.63s][moshi] 영화 ⟦⚡SPAN@3.57s: Selena sang the songs in the movie Selena.⟧ '셀레나'의 노래들은 셀레나가 직접 불렀습니다.

@@ -4,64 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Ella",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "early 40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-12",
-#       "category": "child",
-#       "text": "User has a child named Hana, age 17."
+#       "date": "2026-05-15",
+#       "category": "skill",
+#       "text": "User is getting fairly good at alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-04-21",
-#       "category": "bloodtype",
-#       "text": "User's blood type is A-."
+#       "date": "2026-05-10",
+#       "category": "floor",
+#       "text": "User lives on the 3rd floor."
 #     },
 #     {
-#       "date": "2026-02-11",
-#       "category": "phone",
-#       "text": "User uses an iPhone 13."
+#       "date": "2026-04-29",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 24°C."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to Portugal in February."
+#       "date": "2026-04-16",
+#       "category": "medication",
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-01-30",
+#       "category": "schedule",
+#       "text": "User has early shifts starting at 6am."
+#     },
+#     {
+#       "date": "2026-01-29",
+#       "category": "wake",
+#       "text": "User usually wakes up close to 9am after night shifts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-13",
+#       "title": "Booking a moving company",
 #       "bullets": [
-#         "wanted a pet-friendly building under 900k won/month",
-#         "needed parking and a second bedroom near line 2"
+#         "moving a 2-bedroom apartment across town on the 30th",
+#         "needs help disassembling furniture"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "title": "Planning a camping trip",
+#       "date": "2026-04-01",
+#       "title": "Looking for a therapist",
 #       "bullets": [
-#         "a weekend at a lake site in September",
-#         "asked about a 4-person tent and a cooler"
+#         "prefers evening video sessions",
+#         "wants someone who does CBT"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-18",
+#       "date": "2026-03-11",
 #       "title": "Fixing a leaking faucet",
 #       "bullets": [
 #         "it's a single-handle kitchen tap",
@@ -72,25 +77,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Ella, it’s lovely to meet you. I’m Tarir, a wellness c
-    10.38s  agent 발화 끝
-    11.55s  user  발화 시작: Oh, hi Tarir. That’s… specific. My grandma just got diagnose
-    17.01s  user  발화 끝
-    17.04s  agent 발화 시작: It’s completely understandable to feel lost after a new diag
-    21.85s  user  발화 시작: Yeah.
-    22.30s  user  발화 끝
-    28.90s  agent 발화 시작: Often, the first step is understanding the diagnosis itself,
-    28.91s  agent 발화 끝
-    34.54s  user  발화 시작: Yeah.
-    35.07s  user  발화 끝
-    46.67s  agent 발화 끝
-    47.11s  user  발화 시작: My mom is taking on most of the care, and she’s already exha
-    49.58s  agent 발화 시작: Mm-hmm.
-    50.03s  agent 발화 끝
-    53.62s  agent 발화 시작: That guilt is very common, Ella. [sigh] It's important to re
-    53.66s  user  발화 끝
-    64.63s  user  발화 시작: Yeah, yeah.
-    65.87s  user  발화 끝
-    67.81s  agent 발화 끝
-    68.01s  user  발화 시작: Boundaries… yeah, that sounds good. She tends to just… do ev
-    72.35s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour, Riley. I’m Mal, and I help people feel settled when
+     9.31s  agent 발화 끝
+    10.48s  user  발화 시작: Oh… a settling-in guide? That’s… specific. I just moved here
+    16.03s  agent 발화 시작: It *is* specific! I find new arrivals often feel overwhelmed
+    16.03s  user  발화 끝
+    24.97s  user  발화 시작: Yeah.
+    25.51s  user  발화 끝
+    27.90s  agent 발화 끝
+    27.90s  agent 발화 시작: Perhaps finding your way around? Or maybe connecting with pe
+    32.94s  user  발화 시작: Uh-huh.
+    33.43s  user  발화 끝
+    39.20s  user  발화 시작: Definitely the people. I work from home, so it’s not like I 
+    39.45s  agent 발화 끝
+    43.13s  user  발화 끝
+    43.27s  agent 발화 시작: That’s very common when you’re remote. Building a social lif
+    53.84s  agent 발화 끝
+    54.00s  user  발화 시작: I guess… I don’t even know where to *look* for those things.
+    57.24s  user  발화 끝
+    57.51s  agent 발화 시작: There are a few options! Atelier des Lumières offers art cla
+    76.39s  agent 발화 끝

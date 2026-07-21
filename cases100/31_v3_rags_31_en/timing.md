@@ -4,97 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Andrea",
+#     "name": "Casey",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "mid 30s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "medication",
-#       "text": "User takes medication for migraines."
+#       "date": "2026-05-22",
+#       "category": "commute",
+#       "text": "User works from home."
 #     },
 #     {
-#       "date": "2026-06-17",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Kenji."
+#       "date": "2026-04-28",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2026-05-23",
+#       "date": "2026-04-24",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
+#     },
+#     {
+#       "date": "2026-02-26",
 #       "category": "plant",
-#       "text": "User is growing basil on the windowsill at home."
+#       "text": "User is growing a monstera at home."
 #     },
 #     {
-#       "date": "2026-05-21",
-#       "category": "home",
-#       "text": "User's home address is 687 Juniper Lane."
+#       "date": "2026-02-24",
+#       "category": "music",
+#       "text": "User likes listening to a lo-fi jazz playlist."
 #     },
 #     {
-#       "date": "2026-05-04",
-#       "category": "bloodtype",
-#       "text": "User's blood type is AB+."
+#       "date": "2026-02-20",
+#       "category": "car",
+#       "text": "User drives a 2019 Hyundai Tucson."
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "category": "streaming",
-#       "text": "User subscribes to a shared Netflix family plan."
+#       "date": "2026-02-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Patagonia in March."
 #     },
 #     {
 #       "date": "2026-01-11",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 21°C."
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "category": "diet",
-#       "text": "User is keto."
-#     },
-#     {
-#       "date": "2025-12-08",
-#       "category": "car",
-#       "text": "User drives a 2020 Kia Niro."
+#       "date": "2025-12-09",
+#       "category": "allergy",
+#       "text": "User is allergic to eggs."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-07",
+#       "title": "Planning a wedding",
 #       "bullets": [
-#         "party of six on the 14th",
-#         "looking for outdoor seating with a vegetarian option"
+#         "guest list around 80 people",
+#         "comparing two venues for next May"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-22",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-04-14",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "title": "Buying a gift for a parent",
+#       "date": "2026-03-03",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "mom's 60th birthday next month",
-#         "considering a spa day or a watch"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who sings the opening to Sunday Night Football?
-     2.34s  <ret> 발화 (turn1 첫 프레임)
-     2.81s  user  발화 끝
-     2.96s  agent 발화 시작: <ret> Oh, that’s a great question! The singer you’re looking
-     4.20s  ⚡SPAN 주입 [d'=1.86s / d_lead=9.87s]: Carrie Underwood has performed the theme song for NBC's Sunday Night F
-    12.83s  agent 발화 끝
+     0.00s  user  발화 시작: Who helped the US Department of Defense create the internet?
+     1.95s  agent 발화 시작: Right.
+     2.71s  agent 발화 끝
+     2.95s  <ret> 발화 (turn2 첫 프레임)
+     3.53s  agent 발화 시작: <ret> Oh, that's a great question! Let me check… Actually, i
+     3.56s  user  발화 끝
+     4.50s  ⚡SPAN 주입 [d'=1.56s / d_lead=19.16s]: In the 1960s, the Department of Defense’s Advanced Research Projects A
+    22.70s  agent 발화 끝

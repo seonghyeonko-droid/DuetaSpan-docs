@@ -1,96 +1,97 @@
 v3_rags_31_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 번아웃과 회복을 돕는 신중하고 통찰력 있는 웰빙 가이드 브린입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
+SYSTEM: <system> 당신은 데이팅 및 관계에 대한 도움을 제공하는 긍정적이고 지지적인 또래 지원자 낸입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "우국",
+    "name": "보현",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "mid 30s",
+    "gender": "female",
+    "age_range": "60s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-18",
-      "category": "medication",
-      "text": "User takes medication for migraines."
+      "date": "2026-05-22",
+      "category": "commute",
+      "text": "User works from home."
     },
     {
-      "date": "2026-06-17",
-      "category": "sibling",
-      "text": "User has a younger sibling named Kenji."
+      "date": "2026-04-28",
+      "category": "savings",
+      "text": "User is saving for a new car."
     },
     {
-      "date": "2026-05-23",
+      "date": "2026-04-24",
+      "category": "wake",
+      "text": "User usually wakes up at 5:30am for a run."
+    },
+    {
+      "date": "2026-02-26",
       "category": "plant",
-      "text": "User is growing basil on the windowsill at home."
+      "text": "User is growing a monstera at home."
     },
     {
-      "date": "2026-05-21",
-      "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
+      "date": "2026-02-24",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
     },
     {
-      "date": "2026-05-04",
-      "category": "bloodtype",
-      "text": "User's blood type is AB+."
+      "date": "2026-02-20",
+      "category": "car",
+      "text": "User drives a 2019 Hyundai Tucson."
     },
     {
-      "date": "2026-04-11",
-      "category": "streaming",
-      "text": "User subscribes to a shared Netflix family plan."
+      "date": "2026-02-04",
+      "category": "trip",
+      "text": "User is planning a trip to Patagonia in March."
     },
     {
       "date": "2026-01-11",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 21°C."
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-12-25",
-      "category": "diet",
-      "text": "User is keto."
-    },
-    {
-      "date": "2025-12-08",
-      "category": "car",
-      "text": "User drives a 2020 Kia Niro."
+      "date": "2025-12-09",
+      "category": "allergy",
+      "text": "User is allergic to eggs."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-12",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-07",
+      "title": "Planning a wedding",
       "bullets": [
-        "party of six on the 14th",
-        "looking for outdoor seating with a vegetarian option"
+        "guest list around 80 people",
+        "comparing two venues for next May"
       ]
     },
     {
-      "date": "2025-12-22",
-      "title": "Adopting a rescue dog",
+      "date": "2026-04-14",
+      "title": "Choosing a preschool",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     },
     {
-      "date": "2025-12-10",
-      "title": "Buying a gift for a parent",
+      "date": "2026-03-03",
+      "title": "Fixing a leaking faucet",
       "bullets": [
-        "mom's 60th birthday next month",
-        "considering a spa day or a watch"
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 일요일 나이트 풋볼 오프닝은 누가 ⟨ret@2.16s⟩ 불러?
-[  2.44s][moshi] ⟦⚡SPAN@2.76s: Carrie Underwood sings the opening theme song for Sunday Night Football.⟧ 일요일 나이트 풋볼 오프닝 테마송은 캐리 언더우드가 부릅니다. [happy] 그녀의 파워풀한 보컬이 경기 시작을 알리죠.
+[  0.00s][user ] 인터넷을 개발하는 데 미국 국방부가 누구랑 손을 ⟨ret@2.68s⟩ 잡았어?
+[  2.96s][moshi] ⟦⚡SPAN@3.28s: The U.S. Department of Defense’s Advanced Research Projects Agency (ARPA) collaborated with universities and r⟧ 음, 그건 좀 오래된 이야기네요. 미국 국방부의 고급 연구 계획국, 그러니까 에이 알 피 에이가 천구백육십년대에 대학이랑 연구 기관들과 함께 인터넷을 개발했어요.
+[ 10.19s][user ] «backchannel» 응.

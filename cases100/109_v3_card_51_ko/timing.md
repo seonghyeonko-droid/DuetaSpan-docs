@@ -4,261 +4,239 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_51",
-#     "name": "태슬",
+#     "name": "정준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
-#       "category": "child",
-#       "text": "User has a child named Yuna, age 17."
+#       "date": "2026-05-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in June."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "hobby",
-#       "text": "User is into film photography."
-#     },
-#     {
-#       "date": "2026-03-13",
-#       "category": "dislike",
-#       "text": "User can't stand natto."
-#     },
-#     {
-#       "date": "2026-02-18",
-#       "category": "coffee",
-#       "text": "User's usual coffee order is black drip coffee."
-#     },
-#     {
-#       "date": "2026-01-01",
+#       "date": "2026-04-28",
 #       "category": "plant",
-#       "text": "User is growing a few succulents at home."
+#       "text": "User is growing a lemon tree at home."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Daniel."
+#       "date": "2026-04-22",
+#       "category": "commute",
+#       "text": "User drives about 40 minutes each way."
 #     },
 #     {
-#       "date": "2025-12-06",
-#       "category": "temp",
-#       "text": "User keeps the home thermostat around 19°C."
+#       "date": "2026-02-09",
+#       "category": "music",
+#       "text": "User likes listening to K-ballads."
+#     },
+#     {
+#       "date": "2026-01-02",
+#       "category": "hobby",
+#       "text": "User is into urban sketching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-05-21",
+#       "title": "Planning a camping trip",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "a weekend at a lake site in September",
+#         "asked about a 4-person tent and a cooler"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
-#       "title": "Selling a used bike",
+#       "date": "2025-12-31",
+#       "title": "Planning a dinner party",
 #       "bullets": [
-#         "a 3-year-old road bike",
-#         "asking around 400k won"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-29",
-#       "title": "Comparing health insurance",
-#       "bullets": [
-#         "self-employed and needs dental",
-#         "wants a low deductible"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-22",
-#       "title": "Booking a Japan trip",
-#       "bullets": [
-#         "5 nights in Kyoto and Osaka in October",
-#         "wants a JR Pass and a ryokan for one night"
+#         "hosting eight friends on Saturday",
+#         "one guest is gluten-free"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 의사 선생님 진료 예약이 팔월 십구일 오후 다섯시 사십오 | S2 음… 테니스도 가끔 봐요. 요즘 테니스도 재밌더라고요. | S3 음… 혹시 영화 볼 만한 거 추천해 줄 수 있어요? | S4 …그 갈등이 계속되니까, 제가 좀 스트레스를 많이 받고 있어요
+# EXAMINER(FDB-v2) 단계: S1 오늘 진짜 바쁘네. | S2 어디가 제일 좋을까? | S3 아, 그렇지. 기억해 줘서 고마워. | S4 아, 오늘 저녁 메뉴는 뭘 먹을까?
 
-     0.00s  user  발화 시작: 오늘 의사 선생님 진료 예약이 팔월 십구일 오후 다섯시 사십오분으로 되어 있어요.
-     5.13s  agent 발화 시작: 네, 기억해 둘게요. 혹시 다른 계획도 있으신가요?
-     5.24s  user  발화 끝
-     8.58s  agent 발화 끝
-     9.01s  user  발화 시작: 아, 별다른 건 없고 그냥… 야구 좀 볼까 생각 중이에요.
-    12.66s  user  발화 끝
-    13.17s  agent 발화 시작: 야구 좋아하시는군요! [happy] 요즘 흥미진진한 경기가 많죠.
-    14.41s  user  발화 시작: 음.
-    14.92s  user  발화 끝
-    17.17s  user  발화 시작: 응, 근데 누가 투수왕이에요? 역대 최고 투수는 누구죠?
-    17.28s  agent 발화 끝
-    20.22s  <ret> 발화 (turn6 첫 프레임)
-    20.36s  user  발화 끝
-    20.47s  agent 발화 시작: <ret> 역대 최고의 투수는 사이 영이라고 해요. 오백십일승을 거두고 칠천삼백오십육이닝 이상을 던졌다고 합
-    21.44s  ⚡SPAN 주입 [d'=1.22s / d_lead=7.52s]: Cy Young won 511 games, pitched more than 7,356 innings, and recorded 
-    27.99s  agent 발화 끝
-    28.77s  user  발화 시작: 오, 사이 영! 이름은 많이 들어봤는데… 대단하네요.
-    33.64s  agent 발화 시작: 네, 정말 대단하죠. 야구 역사에 길이 남을 선수입니다.
-    33.68s  user  발화 끝
-    35.19s  user  발화 시작: 그치.
-    35.63s  user  발화 끝
-    37.30s  agent 발화 끝
-    38.04s  user  발화 시작: 요즘은 누가 사이 영상 받는 거죠?
-    39.88s  user  발화 끝
-    39.92s  <ret> 발화 (turn11 첫 프레임)
-    39.95s  agent 발화 시작: <ret> 사이 영상은 매년 최고의 투수에게 주어지는 상인데요. 올해는 십일월 십오일에 뉴욕에서 시상식이 열
-    41.46s  ⚡SPAN 주입 [d'=1.54s / d_lead=8.67s]: (tool result) {"events": [{"name": "Cy Young Award", "date": "November
-    45.27s  user  발화 시작: 응.
-    45.67s  user  발화 끝
-    48.62s  agent 발화 끝
-    48.92s  user  발화 시작: 아, 그렇군요. 그럼 올해는 누가 받을까요?
-    51.41s  user  발화 끝
-    51.75s  agent 발화 시작: 아직 확정되지는 않았지만, 현재 가장 유력한 후보는 블레이크 스넬 선수입니다.
-    54.58s  user  발화 시작: 어어.
-    55.16s  user  발화 끝
-    57.59s  agent 발화 끝
-    57.87s  user  발화 시작: 블레이크 스넬요? 잘 몰라요.
-    59.72s  user  발화 끝
-    59.80s  agent 발화 시작: 블레이크 스넬 선수는 샌디에이고 파드레스 소속의 투수입니다.
-    63.42s  user  발화 시작: 아, 샌디에이고 파드레스! 그 팀은 알아요.
-    63.80s  agent 발화 끝
-    66.63s  user  발화 끝
-    66.64s  agent 발화 시작: [curious] 혹시 야구 외에 다른 스포츠도 즐겨 보시나요?
-    69.76s  agent 발화 끝
-    70.77s  user  발화 시작: 음… 테니스도 가끔 봐요. 요즘 테니스도 재밌더라고요.
-    74.94s  user  발화 끝
-    75.00s  agent 발화 시작: 테니스도 좋아하시는군요! 혹시 좋아하는 테니스 선수 있으세요?
-    79.63s  user  발화 시작: 글쎄요… 나달은 멋있지만, 요즘은 알카라스가 잘하잖아요.
-    79.65s  agent 발화 끝
-    83.43s  agent 발화 시작: 맞아요, 카를로스 알카라스 선수도 정말 대단하죠. 젊은 선수인데도 불구하고 엄청난 실력을 보여주고 있습니다.
-    83.47s  user  발화 끝
-    91.44s  agent 발화 끝
-    92.05s  user  발화 시작: 응, 진짜 대단해. 근데, 저기… 혹시 서울에서 분위기 좋은 카페 아세요?
-    94.11s  agent 발화 시작: 네.
-    94.41s  agent 발화 끝
-    96.71s  <ret> 발화 (turn26 첫 프레임)
-    96.86s  user  발화 끝
-    96.91s  agent 발화 시작: <ret> 서울에는 분위기 좋은 카페가 많은데요, 종로구 관훈동에 있는 '카페 어니언 안국'이 평점이 사 점
-    97.47s  ⚡SPAN 주입 [d'=0.75s / d_lead=9.24s]: (tool result) {"restaurants": [{"name": "Cafe Onion Anguk", "address":
-    99.70s  user  발화 시작: 응.
-   100.09s  user  발화 끝
-   106.07s  user  발화 시작: 카페 어니언 안국이요? 처음 들어봐요.
-   106.15s  agent 발화 끝
-   108.68s  agent 발화 시작: 한옥을 개조한 카페라서 분위기가 정말 좋다고 합니다.
-   108.84s  user  발화 끝
-   112.12s  user  발화 시작: 오, 한옥 카페라니! 가보고 싶네요.
-   112.23s  agent 발화 끝
-   114.66s  user  발화 끝
-   114.85s  agent 발화 시작: [happy] 한번 가보시면 정말 좋아하실 거예요.
-   116.00s  user  발화 시작: 음.
-   116.40s  user  발화 끝
-   117.63s  agent 발화 끝
-   117.86s  user  발화 시작: 혹시 거기 근처에 맛집도 있을까요?
-   119.78s  <ret> 발화 (turn34 첫 프레임)
-   120.07s  user  발화 끝
-   120.11s  agent 발화 시작: <ret> 카페 어니언 안국 근처에는 '토속촌 삼계탕'이 유명합니다. 평점은 사 점 이점이고, 가격은 일만 
-   121.63s  ⚡SPAN 주입 [d'=1.85s / d_lead=9.82s]: (tool result) {"restaurants": [{"name": "Tosokchon Samgyetang", "addre
-   129.93s  agent 발화 끝
-   130.18s  user  발화 시작: 삼계탕도 좋네요. 근데, 아, 저기… 팔월 십구일 진료 시간이 몇 시였죠?
-   135.08s  user  발화 끝
-   135.32s  agent 발화 시작: 팔월 십구일 진료 시간은 오후 다섯시 사십오분이었습니다.
-   139.29s  agent 발화 끝
-   139.31s  user  발화 시작: 아, 맞다. 다섯시 사십오분이네요.
-   141.33s  agent 발화 시작: 네, 기억해 두셨다니 다행입니다.
-   141.38s  user  발화 끝
-   143.52s  agent 발화 끝
-   143.77s  user  발화 시작: 음… 혹시 영화 볼 만한 거 추천해 줄 수 있어요?
-   144.86s  agent 발화 시작: 예.
-   145.17s  agent 발화 끝
-   146.67s  <ret> 발화 (turn41 첫 프레임)
-   146.90s  agent 발화 시작: <ret> 지금 서울에서 상영하는 영화 중에서 '인사이드 아웃 이'가 인기 있습니다. 강남 씨 지 브이에서 
-   147.00s  user  발화 끝
-   147.44s  ⚡SPAN 주입 [d'=0.77s / d_lead=10.18s]: (tool result) {"movies": [{"title": "Inside Out 2", "theater": "CGV Ga
-   153.38s  user  발화 시작: 응.
-   153.78s  user  발화 끝
-   156.96s  user  발화 시작: 인사이드 아웃 이요? 재밌을까요?
-   157.07s  agent 발화 끝
-   159.11s  agent 발화 시작: 네, 평점이 좋고 많은 사람들이 재미있다고 하네요.
-   159.15s  user  발화 끝
-   162.61s  agent 발화 끝
-   163.38s  user  발화 시작: 그럼, 혹시 티켓 예매도 해줄 수 있어요?
-   166.11s  agent 발화 시작: 죄송하지만, 티켓 예매 기능은 아직 지원하지 않습니다. 직접 예매하셔야 합니다.
-   166.22s  user  발화 끝
-   171.59s  agent 발화 끝
-   171.99s  user  발화 시작: 아, 그렇군요. 그럼, 제가 직접 예매해야겠네요.
-   175.55s  user  발화 끝
-   175.89s  agent 발화 시작: 네, 그렇게 하시는 게 좋을 것 같습니다.
-   177.58s  user  발화 시작: 응.
-   177.93s  user  발화 끝
-   178.40s  agent 발화 끝
-   178.43s  user  발화 시작: 음… 혹시 팔월 십구일 진료비가 얼마였죠?
-   181.92s  user  발화 끝
-   182.23s  agent 발화 시작: 팔월 십구일 진료비는 십만원이었습니다.
-   184.95s  agent 발화 끝
-   185.01s  user  발화 시작: 아, 맞다. 십만 원이었죠.
-   186.79s  user  발화 끝
-   187.23s  agent 발화 시작: 네, 기억해 두셨다니 다행입니다. [sigh] 혹시 요즘 힘든 일 있으세요?
-   189.50s  user  발화 시작: 음.
-   189.94s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 55턴 요약, 128f): appointment time: 오후 다섯시 사십오분 (3분 전); appointment date: 팔월 십구일 (1분 전); favorite sport: 야구 
-   192.62s  agent 발화 끝
-   192.64s  user  발화 시작: 음… 사실 회사에서 좀 힘든 일이 있었어요.
-   196.17s  user  발화 끝
-   196.23s  agent 발화 시작: 회사에서 힘든 일이 있으셨다니 안타깝네요. 혹시 어떤 일인지 말씀해 주실 수 있으세요?
-   198.31s  user  발화 시작: 응응.
-   198.90s  user  발화 끝
-   202.19s  agent 발화 끝
-   202.38s  user  발화 시작: 음… 팀원들과의 갈등이 좀 있어요.
-   205.06s  agent 발화 시작: 팀원들과의 갈등이라… —
-   205.10s  user  발화 끝
-   206.26s  user  발화 시작: …그 갈등이 계속되니까, 제가 좀 스트레스를 많이 받고 있어요. 어떻게 해야 할까요?
-   206.97s  agent 발화 끝
-   211.07s  user  발화 끝
-   211.16s  agent 발화 시작: 스트레스를 많이 받으신다니 마음이 아픕니다. 팀원들과의 갈등은 정말 힘든 일이죠. 우선, 상대방의 입장을 이
-   221.75s  agent 발화 끝
-   222.51s  user  발화 시작: 상대방의 입장을 이해하라니… 쉽지 않아요.
-   225.55s  agent 발화 시작: 물론 쉽지 않겠지만, 노력하면 분명히 도움이 될 거예요. 그리고 자신의 감정을 솔직하게 표현하는 것도 중요합
-   225.56s  user  발화 끝
-   229.19s  user  발화 시작: 어.
-   229.68s  user  발화 끝
-   233.47s  agent 발화 끝
-   234.42s  user  발화 시작: 제 감정을 솔직하게 표현하는 것도… 좀 어려워요.
-   238.44s  user  발화 끝
-   238.61s  agent 발화 시작: 솔직하게 표현하는 것이 어렵다면, 편지를 써보는 것도 좋은 방법입니다.
-   243.87s  user  발화 시작: 편지를 써보라니… 좋은 아이디어네요.
-   243.94s  agent 발화 끝
-   246.35s  user  발화 끝
-   246.56s  agent 발화 시작: 네, 편지를 쓰면서 자신의 감정을 정리하고, 상대방에게 전달하고 싶은 내용을 적어보세요.
-   248.28s  user  발화 시작: 음.
-   248.68s  user  발화 끝
-   252.15s  agent 발화 끝
-   252.69s  user  발화 시작: 한번 시도해 볼게요.
-   253.83s  user  발화 끝
-   254.42s  agent 발화 시작: [happy] 잘 생각하신 거예요. 그리고 혹시 혼자 해결하기 어렵다면, 전문가의 도움을 받는 것도 좋은 방
-   257.68s  user  발화 시작: 응응.
-   258.08s  user  발화 끝
-   261.37s  user  발화 시작: 전문가의 도움이라… 고려해 볼게요.
-   261.40s  agent 발화 끝
-   264.19s  agent 발화 시작: 네, 필요하다면 언제든지 전문가의 도움을 받으세요.
-   264.23s  user  발화 끝
-   265.97s  user  발화 시작: 그래.
-   266.41s  user  발화 끝
-   267.44s  user  발화 시작: 감사합니다. 덕분에 좀 마음이 풀리는 것 같아요.
-   267.55s  agent 발화 끝
-   270.06s  agent 발화 시작: 도움이 되었다니 다행입니다.
-   270.10s  user  발화 끝
-   272.09s  agent 발화 끝
-   272.34s  user  발화 시작: 네, 알겠습니다. 그럼 이만 끊을게요.
-   274.50s  user  발화 끝
-   275.00s  agent 발화 시작: 네, 좋은 하루 보내세요.
-   276.79s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 진짜 바쁘네.
+     1.40s  agent 발화 시작: 네, 그러시군요. 오늘 하루도 힘내세요.
+     1.52s  user  발화 끝
+     3.83s  agent 발화 끝
+     4.27s  user  발화 시작: 치과 예약해 둔 거 기억하지? 시월 십오일 오후 열두시 삼십분.
+     8.57s  user  발화 끝
+     9.13s  agent 발화 시작: 네, 기억해 둘게요. 이만 원짜리 진료였죠?
+    12.38s  agent 발화 끝
+    12.46s  user  발화 시작: 맞아, 그거. 아, 요즘 뭔가 심심해. 뭐 재미있는 거 없을까?
+    17.26s  user  발화 끝
+    17.31s  agent 발화 시작: 심심하시군요. 뭔가 새로운 취미를 시작해 보시는 건 어떠세요?
+    19.61s  user  발화 시작: 응.
+    19.87s  user  발화 끝
+    21.95s  agent 발화 끝
+    22.73s  user  발화 시작: 취미라… 뭘 해야 할지 모르겠어.
+    25.32s  agent 발화 시작: [curious] 혹시 미술에 관심 있으신가요?
+    25.33s  user  발화 끝
+    27.36s  user  발화 시작: 미술? 음… 괜찮을지도.
+    27.49s  agent 발화 끝
+    29.41s  <ret> 발화 (turn10 첫 프레임)
+    29.68s  user  발화 끝
+    29.69s  agent 발화 시작: <ret> 미켈란젤로의 천지창조는 천오백팔년에서 천오백십이년 사이에 시스티나 예배당 천장에 그려진 프레스코화
+    30.36s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.33s]: The Creation of Adam is a fresco by the Italian Renaissance artist Mic
+    38.02s  agent 발화 끝
+    38.62s  user  발화 시작: 아, 천지창조! 손가락 두 개가 닿는 그림이지?
+    41.80s  user  발화 끝
+    41.97s  agent 발화 시작: 맞아요. 아주 유명한 작품이죠.
+    44.28s  user  발화 시작: 그 그림, 어디에 있어요?
+    44.34s  agent 발화 끝
+    46.20s  user  발화 끝
+    46.40s  agent 발화 시작: 바티칸 시국에 있는 시스티나 예배당에 있습니다.
+    47.65s  user  발화 시작: 그래.
+    48.05s  user  발화 끝
+    49.45s  agent 발화 끝
+    49.55s  user  발화 시작: 바티칸… 가보고 싶다.
+    51.34s  agent 발화 시작: [happy] 언젠가 꼭 방문해 보시길 바랍니다.
+    51.38s  user  발화 끝
+    53.87s  agent 발화 끝
+    54.00s  user  발화 시작: 아, 근데 부산에도 미술관이 많잖아.
+    56.44s  user  발화 끝
+    56.67s  agent 발화 시작: 네, 부산에도 좋은 미술관들이 많이 있습니다.
+    59.66s  user  발화 시작: 어디가 제일 좋을까?
+    59.79s  agent 발화 끝
+    60.45s  <ret> 발화 (turn21 첫 프레임)
+    60.85s  agent 발화 시작: <ret> 부산의 미술관을 알아봐 드릴까요? 부산시립미술관은 해운대구 수영강변대로 백삼에 위치하고 있고, 평
+    61.04s  user  발화 끝
+    61.46s  ⚡SPAN 주입 [d'=1.01s / d_lead=2.41s]: (tool result) {"restaurants": [{"name": "부산시립미술관", "address": "부산 해운대구
+    64.73s  user  발화 시작: 그래.
+    65.22s  user  발화 끝
+    70.50s  agent 발화 끝
+    70.83s  user  발화 시작: 오, 평점 괜찮네. 거기가 제일 가까울까?
+    73.60s  agent 발화 시작: 네, 현재 계신 곳에서 가장 가까운 미술관입니다.
+    73.72s  user  발화 끝
+    75.42s  user  발화 시작: 헐.
+    75.82s  user  발화 끝
+    76.73s  agent 발화 끝
+    77.02s  user  발화 시작: 가볼 만하겠는데.
+    78.31s  user  발화 끝
+    78.41s  agent 발화 시작: [laugh] 네, 한번 방문해 보세요. 분명 즐거운 시간을 보내실 수 있을 거예요.
+    80.97s  user  발화 시작: 응응.
+    81.41s  user  발화 끝
+    83.92s  user  발화 시작: 아, 근데 부산역 근처에 맛집도 추천해 줄 수 있어?
+    84.05s  agent 발화 끝
+    86.90s  <ret> 발화 (turn30 첫 프레임)
+    87.10s  agent 발화 시작: <ret> 부산역 근처 맛집을 찾아 드릴까요? 부산역 근처 밀면집은 동구 중앙대로 이 이 일에 있고, 평점은
+    87.11s  user  발화 끝
+    88.26s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.49s]: (tool result) {"restaurants": [{"name": "밀면집", "address": "부산 동구 중앙대로 
+    97.01s  user  발화 시작: 밀면? 부산 명물이잖아.
+    97.06s  agent 발화 끝
+    98.68s  agent 발화 시작: 네, 부산에 오시면 꼭 드셔봐야 할 음식입니다.
+    98.79s  user  발화 끝
+   100.62s  user  발화 시작: 그래.
+   100.92s  user  발화 끝
+   101.72s  user  발화 시작: 좋아, 그럼 나중에 밀면 먹으러 가야겠다.
+   101.82s  agent 발화 끝
+   104.30s  user  발화 끝
+   104.41s  agent 발화 시작: [happy] 네, 맛있게 드세요.
+   105.73s  user  발화 시작: 아, 오늘 날씨 어때?
+   105.78s  agent 발화 끝
+   107.14s  <ret> 발화 (turn37 첫 프레임)
+   107.15s  user  발화 끝
+   107.18s  agent 발화 시작: <ret> 현재 부산의 기온은 이십팔도이고, 날씨는 맑으며, 습도는 육십퍼센트입니다.
+   107.90s  ⚡SPAN 주입 [d'=0.76s / d_lead=6.01s]: (tool result) {"weather": {"temperature": 28, "condition": "맑음", "humi
+   113.19s  agent 발화 끝
+   113.40s  user  발화 시작: 맑네. 나들이 가기 좋겠다.
+   115.66s  user  발화 끝
+   115.79s  agent 발화 시작: 네, 완연한 여름 날씨네요.
+   117.89s  agent 발화 끝
+   118.02s  user  발화 시작: 아, 맞다. 치과 예약했던 거, 또 언제였지?
+   121.21s  user  발화 끝
+   121.23s  agent 발화 시작: 시월 십오일 오후 열두시 삼십분입니다.
+   124.24s  agent 발화 끝
+   124.94s  user  발화 시작: 아, 그렇지. 기억해 줘서 고마워.
+   127.00s  user  발화 끝
+   127.03s  agent 발화 시작: [curious] 천만에요.
+   128.13s  agent 발화 끝
+   128.62s  user  발화 시작: 혹시 영화 볼 만한 거 있어?
+   129.87s  <ret> 발화 (turn45 첫 프레임)
+   130.10s  user  발화 끝
+   130.15s  agent 발화 시작: <ret> 영화 정보를 찾아 드릴까요? 현재 부산에서 상영 중인 영화 중 엘리멘탈은 애니메이션 장르이고, 평
+   130.73s  ⚡SPAN 주입 [d'=0.87s / d_lead=2.23s]: (tool result) {"movies": [{"title": "엘리멘탈", "genre": "애니메이션", "rating"
+   139.61s  agent 발화 끝
+   139.64s  user  발화 시작: 엘리멘탈? 평점 높네.
+   141.66s  user  발화 끝
+   142.15s  agent 발화 시작: 네, 많은 사람들에게 호평을 받고 있습니다.
+   145.06s  agent 발화 끝
+   146.56s  user  발화 시작: 아, 혹시 부산역 근처에 괜찮은 카페도 있어?
+   149.59s  <ret> 발화 (turn49 첫 프레임)
+   149.74s  user  발화 끝
+   149.90s  agent 발화 시작: <ret> 부산역 근처 카페를 찾아 드릴까요? 커피베네 부산역점은 동구 중앙대로 일 사 일에 위치하고 있고,
+   151.57s  ⚡SPAN 주입 [d'=1.98s / d_lead=2.70s]: (tool result) {"restaurants": [{"name": "커피베네 부산역점", "address": "부산 동구
+   159.62s  user  발화 시작: 커피베네? 거기 괜찮아.
+   159.63s  agent 발화 끝
+   161.24s  agent 발화 시작: 네, 잠시 쉬어가기 좋은 곳입니다.
+   161.36s  user  발화 끝
+   163.61s  agent 발화 끝
+   163.78s  user  발화 시작: 아, 치과 예약했던 게 얼마였지?
+   165.80s  agent 발화 시작: 이만 원이었습니다.
+   165.86s  user  발화 끝
+   167.14s  agent 발화 끝
+   167.25s  user  발화 시작: 아, 맞다.
+   168.02s  user  발화 끝
+   168.07s  agent 발화 시작: [sigh] 기억력이 흐릿해지시는 것 같아 안타깝네요.
+   169.44s  user  발화 시작: 그래.
+   169.88s  user  발화 끝
+   171.55s  user  발화 시작: 괜찮아. 나이 먹으면 그럴 수 있지.
+   171.62s  agent 발화 끝
+   173.63s  user  발화 끝
+   173.65s  agent 발화 시작: 네, 그럴 수도 있죠. 하지만 저는 항상 곁에 있으니 걱정 마세요.
+   178.20s  agent 발화 끝
+   178.24s  user  발화 시작: 고마워.
+   178.82s  user  발화 끝
+   178.88s  agent 발화 시작: [happy] 천만에요.
+   179.98s  agent 발화 끝
+   180.33s  user  발화 시작: 아, 오늘 저녁 메뉴는 뭘 먹을까?
+   182.74s  user  발화 끝
+   183.18s  agent 발화 시작: 저녁 메뉴를 고민하시는군요. 혹시 특별히 드시고 싶은 게 있으신가요?
+   188.12s  user  발화 시작: 음… 돼지국밥이 먹고 싶다.
+   188.42s  agent 발화 끝
+   190.51s  agent 발화 시작: 돼지국밥! 좋은 선택이네요. 부산에 오시면 꼭 드셔봐야 할 음식이죠.
+   190.54s  user  발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 65턴 요약, 100f): dental appmt: 시월 십오일 오후 열두시 삼십분; art interest: 미술; location preference: 바티칸; dinner pref: 
+   193.30s  user  발화 시작: 응.
+   193.71s  user  발화 끝
+   196.00s  agent 발화 끝
+   196.01s  user  발화 시작: 그렇지.
+   196.54s  user  발화 끝
+   197.07s  agent 발화 시작: 부산역 근처에 맛있는 돼지국밥집도 많습니다.
+   200.93s  user  발화 시작: 아, 그럼 추천해 줘.
+   200.95s  agent 발화 끝
+   202.04s  <ret> 발화 (turn69 첫 프레임)
+   202.06s  agent 발화 시작: <ret> 돼지국밥집을 찾아 드릴까요? 송정세대국밥은 해운대구 구남로사십일번길 이십이에 위치하고 있고, 평점
+   202.06s  user  발화 끝
+   203.25s  ⚡SPAN 주입 [d'=1.21s / d_lead=1.86s]: (tool result) {"restaurants": [{"name": "송정3대국밥", "address": "부산 해운대구 
+   211.35s  agent 발화 끝
+   211.37s  user  발화 시작: 송정세대국밥? 한번 가봐야겠다.
+   214.12s  agent 발화 시작: 네, 맛있게 드세요.
+   214.23s  user  발화 끝
+   215.67s  agent 발화 끝
+   216.29s  user  발화 시작: 아, 오늘 날씨 다시 한번 확인해 줄 수 있어?
+   219.11s  <ret> 발화 (turn73 첫 프레임)
+   219.20s  agent 발화 시작: <ret> 현재 부산의 기온은 이십구도이고, 날씨는 맑으며, 습도는 오십팔퍼센트입니다.
+   219.37s  user  발화 끝
+   219.71s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.59s]: (tool result) {"weather": {"temperature": 29, "condition": "맑음", "humi
+   221.79s  user  발화 시작: 응.
+   222.22s  user  발화 끝
+   224.69s  user  발화 시작: 맑네.
+   224.78s  agent 발화 끝
+   225.46s  user  발화 끝
+   225.52s  agent 발화 시작: 네, 오늘도 좋은 날씨입니다.
+   227.47s  user  발화 시작: 아, 그럼 이만 끊을게.
+   227.54s  agent 발화 끝
+   228.84s  agent 발화 시작: 네, 즐거운 하루 보내세요.
+   228.87s  user  발화 끝
+   230.54s  agent 발화 끝

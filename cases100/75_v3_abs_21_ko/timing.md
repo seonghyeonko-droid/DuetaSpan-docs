@@ -1,114 +1,102 @@
 # v3_abs_21_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-# {
-#   "profile": {
-#     "user_id": "v3_abs_21",
-#     "name": "유슬",
-#     "location": {
-#       "city": "Seoul",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
-#     },
-#     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "Korean"
-#   },
-#   "saved_memories": [
-#     {
-#       "date": "2026-04-17",
-#       "category": "medication",
-#       "text": "User takes antihistamines in spring."
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O+."
-#     },
-#     {
-#       "date": "2026-02-16",
-#       "category": "dislike",
-#       "text": "User can't stand liver."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "employer",
-#       "text": "User works at a fintech startup."
-#     },
-#     {
-#       "date": "2026-02-01",
-#       "category": "savings",
-#       "text": "User is saving for paying off student loans."
-#     },
-#     {
-#       "date": "2025-12-09",
-#       "category": "allergy",
-#       "text": "User is allergic to tree nuts."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     }
-#   ],
-#   "conversation_summaries": [
-#     {
-#       "date": "2026-06-11",
-#       "title": "Renovating the bathroom",
-#       "bullets": [
-#         "budget of 6M won",
-#         "wants a walk-in shower instead of a tub"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-06",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
-#         "wants under 30k miles and below 25M won"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "title": "Meal-prep planning",
-#       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-08",
-#       "title": "Planning a dinner party",
-#       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
-#       ]
-#     }
-#   ]
-# }
+# EXAMINER(FDB-v2) 단계: S1 오늘 너무 힘든 하루였어. 기분 전환할 만한 영화라도 볼까? | S2 오, 극한직업! 그거 봤는데 진짜 웃겼어. 그럼… | S3 응, 알아봐 줘. 피크닉 음식 포장해서 갈 만한 곳 있으면 좋 | S4 완벽해! 정말 고마워.
 
-
-     0.00s  user  발화 시작: 안녕하세요, 빈 씨. 요즘 좀 의욕이 안 나요.
-     2.85s  user  발화 끝
-     3.30s  agent 발화 시작: 안녕하세요! 의욕이 없으시다니, 마음이 편치 않으시겠어요. 제가 빈이라고 해요.
-     4.06s  agent 발화 끝
-     4.19s  user  발화 시작: 네, 그렇죠. 뭘 해야 할지 모르겠어요.
-     6.32s  <ret> 발화 (turn3 첫 프레임)
-     6.75s  user  발화 끝
-     6.83s  agent 발화 시작: <ret> 뭘 해야 할지 모르는 건 흔한 일이에요. 작은 것부터 시작해보는 건 어떨까요?
-     8.26s  ⚡SPAN 주입 [d'=1.93s / d_lead=5.46s]: Motivation is the physiological or psychological process that gives pu
-    12.29s  agent 발화 끝
-    12.44s  agent 발화 시작: 동기 부여는 행동의 목적을 부여하는 생리적 또는 심리적 과정이라고 해요. [happy] 작은 성공 경험을 쌓
-    16.22s  user  발화 시작: 음.
-    16.48s  user  발화 끝
-    20.59s  agent 발화 끝
-    20.76s  agent 발화 시작: 혹시 최근에 즐거웠던 일이나 성취감을 느꼈던 일이 있으세요?
-    22.88s  user  발화 시작: 네.
-    23.47s  user  발화 끝
-    24.59s  user  발화 시작: 음… 딱히 떠오르는 건 없네요.
-    24.83s  agent 발화 끝
-    27.67s  user  발화 끝
-    27.85s  agent 발화 시작: 괜찮아요. 지금부터라도 찾아보면 된답니다.
-    31.78s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 너무 힘든 하루였어. 기분 전환할 만한 영화라도 볼까?
+     2.61s  agent 발화 시작: 아.
+     3.05s  agent 발화 끝
+     3.98s  user  발화 끝
+     4.05s  agent 발화 시작: [happy] 아, 힘든 하루였군요. 영화 보는 건 정말 좋은 생각이에요! 뭐 보고 싶으세요?
+     6.64s  user  발화 시작: 음.
+     6.89s  user  발화 끝
+    10.44s  agent 발화 끝
+    10.55s  user  발화 시작: 음… 톰 행크스 영화는 어때? 그 사람이 출연한 영화 중에 재밌는 거 추천해 줘.
+    14.23s  agent 발화 시작: 네.
+    14.72s  agent 발화 끝
+    16.31s  user  발화 끝
+    16.38s  agent 발화 시작: 톰 행크스 영화요? 좋은 선택이에요! 그가 아카데미 남우주연상 후보에 몇 번 올랐는지 궁금하네요.
+    23.79s  agent 발화 끝
+    24.25s  user  발화 시작: 그게 뭔데? 톰 행크스가 남우주연상 후보에 오른 적이 몇 번이나 있어?
+    28.26s  <ret> 발화 (turn8 첫 프레임)
+    28.65s  user  발화 끝
+    28.66s  agent 발화 시작: <ret> 음, 좋은 질문이에요. 솔직히 그건 어디에도 기록이 없어서, 저도 답을 찾을 수가 없네요. 아쉽네
+    29.53s  ⚡SPAN 주입 [d'=1.27s / d_lead=1.67s]: (no information found)
+    38.09s  user  발화 시작: 아… 그렇구나. 그럼, 요즘 상영하는 영화 중에 코미디 영화 추천해 줘.
+    38.11s  agent 발화 끝
+    41.22s  agent 발화 시작: 그렇죠.
+    42.13s  agent 발화 끝
+    42.81s  <ret> 발화 (turn11 첫 프레임)
+    43.32s  user  발화 끝
+    43.33s  agent 발화 시작: <ret> 지금 서울에서 상영하는 코미디 영화 중 '극한직업'이 평점 팔 점 일점이고, 열네시, 열여섯시 삼
+    43.50s  ⚡SPAN 주입 [d'=0.69s / d_lead=10.57s]: (tool result) {"movies": [{"title": "극한직업", "rating": 8.1, "showtimes"
+    53.90s  agent 발화 끝
+    54.43s  user  발화 시작: 오, 극한직업! 그거 봤는데 진짜 웃겼어. 그럼…
+    57.98s  user  발화 끝
+    59.17s  user  발화 시작: …이번 주말에 서울 근교로 드라이브 갈 만한 곳 없을까?
+    61.80s  agent 발화 시작: 네네.
+    62.36s  <ret> 발화 (turn15 첫 프레임)
+    62.38s  agent 발화 끝
+    62.61s  agent 발화 시작: <ret> 서울에서 반경 오십킬로미터 안에 있는 곳 중에 남이섬이 있어요. 거리는 육십킬로미터이고, 아름다운
+    62.70s  user  발화 끝
+    63.75s  ⚡SPAN 주입 [d'=1.39s / d_lead=10.99s]: (tool result) {"attractions": [{"name": "남이섬", "distance": "60km", "de
+    70.02s  user  발화 시작: 어.
+    70.46s  user  발화 끝
+    73.60s  agent 발화 끝
+    74.80s  user  발화 시작: 남이섬… 좋네. 근데 거리가 조금 멀다. 좀 더 가까운 곳은 없을까? 삼십킬로미터 이내로.
+    80.88s  <ret> 발화 (turn18 첫 프레임)
+    80.95s  agent 발화 시작: <ret> 서울에서 삼십킬로미터 이내에는 서울숲이 있어요. 거리는 십킬로미터고, 넓은 잔디밭과 다양한 테마 
+    80.97s  user  발화 끝
+    81.58s  ⚡SPAN 주입 [d'=0.69s / d_lead=11.86s]: (tool result) {"attractions": [{"name": "서울숲", "distance": "10km", "de
+    92.81s  agent 발화 끝
+    92.94s  user  발화 시작: 서울숲! 그거 좋겠다. 이번 주 토요일에 서울숲에서 피크닉 할까?
+    97.07s  user  발화 끝
+    97.21s  agent 발화 시작: [happy] 토요일에 서울숲 피크닉이라니, 정말 멋진 계획이네요! 혹시 서울숲 주변에 맛있는 식당도 알아볼
+   104.25s  agent 발화 끝
+   104.45s  user  발화 시작: 응, 알아봐 줘. 피크닉 음식 포장해서 갈 만한 곳 있으면 좋겠다.
+   106.49s  agent 발화 시작: 그렇죠.
+   107.26s  agent 발화 끝
+   108.75s  <ret> 발화 (turn23 첫 프레임)
+   109.01s  agent 발화 시작: <ret> 서울숲 근처에 '브런치빈 서울숲점'이 평점 사 점 오점으로 브런치를 판매하고 있어요. 포장도 가능
+   109.06s  user  발화 끝
+   109.98s  ⚡SPAN 주입 [d'=1.23s / d_lead=8.75s]: (tool result) {"restaurants": [{"name": "브런치빈 서울숲점", "cuisine": "브런치",
+   111.74s  user  발화 시작: 응.
+   112.18s  user  발화 끝
+   117.76s  agent 발화 끝
+   118.59s  user  발화 시작: 브런치빈… 괜찮네. 그럼, 이번 주 토요일 서울숲 피크닉, 브런치빈 포장, 확정!
+   125.98s  user  발화 끝
+   126.04s  agent 발화 시작: [surprised] 네, 물론이죠! 이번 주 토요일 서울숲 피크닉, 브런치빈 포장으로 확정입니다! 정말 즐
+   130.48s  user  발화 시작: 응.
+   130.92s  user  발화 끝
+   133.82s  agent 발화 끝
+   133.90s  user  발화 시작: 고마워, 프리르! 덕분에 기분이 훨씬 좋아졌어.
+   137.04s  agent 발화 시작: [laugh] 천만에요! 제가 도와드릴 수 있어서 정말 기뻐요.
+   137.08s  user  발화 끝
+   139.52s  user  발화 시작: 어.
+   140.10s  user  발화 끝
+   140.64s  agent 발화 끝
+   140.93s  user  발화 시작: 응, 알겠어. 혹시… 알람 맞춰줄 수 있어? 토요일 아침 아홉시에 맞춰줘.
+   144.20s  agent 발화 시작: 네.
+   144.65s  agent 발화 끝
+   146.41s  <ret> 발화 (turn33 첫 프레임)
+   146.59s  agent 발화 시작: <ret> 네, 토요일 칠월 십이일 아침 아홉시에 알람을 맞춰 드렸습니다. 잊지 않도록 꼭 알려드릴게요!
+   146.69s  user  발화 끝
+   147.40s  ⚡SPAN 주입 [d'=0.98s / d_lead=7.41s]: (tool result) {"status": "success", "alarm time": "09:00", "alarm date
+   149.73s  user  발화 시작: 어.
+   150.27s  user  발화 끝
+   154.00s  agent 발화 끝
+   154.18s  user  발화 시작: 완벽해! 정말 고마워.
+   156.15s  user  발화 끝
+   156.35s  agent 발화 시작: [happy] 천만에요! 언제나 당신의 행복을 응원합니다. 혹시 더 필요한 건 없으세요?
+   162.51s  agent 발화 끝
+   162.66s  user  발화 시작: 음… 딱히 없는데. 그냥… 프리르 덕분에 마음이 편안해졌어.
+   165.80s  agent 발화 시작: 네.
+   166.25s  agent 발화 끝
+   167.35s  agent 발화 시작: [curious] 그런 말씀을 해주시니 저도 정말 기쁘네요. 힘든 하루 잘 마무리하시고, 즐거운 주말 보내세
+   167.42s  user  발화 끝
+   170.15s  user  발화 시작: 응.
+   170.45s  user  발화 끝
+   175.04s  agent 발화 끝
+   176.57s  user  발화 시작: 네, 그렇게 할게요. 안녕!
+   178.35s  agent 발화 시작: 안녕히 가세요!
+   178.37s  user  발화 끝
+   179.57s  agent 발화 끝

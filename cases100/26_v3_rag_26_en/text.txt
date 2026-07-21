@@ -1,82 +1,71 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Eaen, a kind and observant supportive advisor who helps people with self-doubt and confidence. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Rora, a playful and warm reflection partner who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "David",
+    "name": "Oscar",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "60s",
-    "language": "French"
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "plant",
-      "text": "User is growing a few succulents at home."
-    },
-    {
-      "date": "2026-04-16",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-03-26",
-      "category": "trip",
-      "text": "User is planning a trip to Morocco in September."
-    },
-    {
-      "date": "2026-03-04",
+      "date": "2026-06-26",
       "category": "medication",
-      "text": "User takes a vitamin D supplement."
+      "text": "User takes insulin."
     },
     {
-      "date": "2026-01-27",
-      "category": "schedule",
-      "text": "User has a hybrid 3-days-in-office week."
+      "date": "2026-06-06",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Lebanese."
     },
     {
-      "date": "2026-01-21",
-      "category": "car",
-      "text": "User drives a 2015 Toyota Corolla."
+      "date": "2026-05-28",
+      "category": "trip",
+      "text": "User is planning a trip to Hokkaido in January."
     },
     {
-      "date": "2026-01-20",
-      "category": "home",
-      "text": "User's home address is 450 Rosewood Drive."
+      "date": "2026-05-18",
+      "category": "dislike",
+      "text": "User can't stand durian."
     },
     {
-      "date": "2026-01-14",
-      "category": "commute",
-      "text": "User takes the subway to work."
+      "date": "2026-04-30",
+      "category": "emergency",
+      "text": "User's emergency contact is Yuna."
+    },
+    {
+      "date": "2026-03-06",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 20°C."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "wake",
+      "text": "User usually wakes up around 7:30am."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-26",
-      "title": "Booking a moving company",
-      "bullets": [
-        "moving a 2-bedroom apartment across town on the 30th",
-        "needs help disassembling furniture"
-      ]
-    },
-    {
-      "date": "2026-02-16",
-      "title": "Planning a wedding",
-      "bullets": [
-        "guest list around 80 people",
-        "comparing two venues for next May"
-      ]
-    },
-    {
-      "date": "2026-01-31",
+      "date": "2026-04-05",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building under 900k won/month",
@@ -84,42 +73,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-01-15",
-      "title": "Meal-prep planning",
+      "date": "2026-03-13",
+      "title": "Researching a used car",
       "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "title": "Buying a gift for a parent",
+      "bullets": [
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm just feeling a little lost about my direction in life, you know?
-[  3.86s][moshi] [happy] It's perfectly normal to feel that way sometimes, Eaen thinks. Exploring possibilities is a brave first step.
-[ 13.09s][user ] Yeah, but it's hard to even know where to start. I was reading about the Declaration of Independence, actually…
-[ 17.11s][moshi] «backchannel» Yeah.
-[ 19.41s][moshi] That’s quite a leap! But history can be inspiring. What about it sparked your interest?
-[ 26.46s][user ] Well, it just made me think about big decisions and making a mark. Who even wrote the first draft, I ⟨ret@32.54s⟩ wonder?
-[ 30.61s][moshi] «backchannel» Yeah.
-[ 32.83s][moshi] Oh, ⟦⚡SPAN@33.67s: Thomas Jefferson composed the first draft of the Declaration of Independence in June 1776.⟧ the document you’re asking about, the first draft was composed by Thomas Jefferson. [sigh] It was written in June of seventeen seventy-six.
-[ 38.38s][user ] «backchannel» Yeah.
-[ 43.27s][user ] Wow, that’s interesting. I didn't know that.
-[ 45.57s][moshi] [curious] It's a remarkable piece of history. He was a very thoughtful man, grappling with big ideas.
-[ 52.61s][user ] It is, I guess. My friend Sarah is visiting Seoul next week, and keeps asking about restaurants.
-[ 59.51s][moshi] Seoul is a fantastic city! What kind of cuisine does Sarah enjoy?
-[ 65.30s][user ] She loves Korean BBQ, but also wants to try something a bit ⟨ret@69.24s⟩ different.
-[ 69.58s][moshi] ⟦⚡SPAN@69.88s: (tool result) {"restaurants": [{"name": "Maple Tree House", "cuisine": "Korean BBQ", "address": "123 Itaewon-r⟧ For Korean BBQ, Maple Tree House is a popular choice, located at one twenty-three Itaewon-ro. [laugh] Gogung Myeongdong offers broader Korean cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Seoul", "cuisine": "Korean BBQ, other"}}
-[ 74.30s][user ] «backchannel» Yeah.
-[ 81.07s][moshi] [happy] Both have excellent ratings! Perhaps she’d like to see more options? I can find a wider list.
-[ 88.35s][user ] Maybe just those two for now. She’s also trying to figure out the weather there.
-[ 91.91s][moshi] «backchannel» Yeah.
-[ 93.28s][moshi] ⟨ret@93.26s⟩ ⟦⚡SPAN@93.86s: (tool result) Seoul: 27.1°C, humidity 78%, wind 9.2 km/h.⟧ The current weather in Seoul is twenty-seven point one degrees Celsius, with seventy-eight percent humidity. The wind is at nine point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Seoul"}}
-[ 96.72s][user ] «backchannel» Yeah, totally.
-[106.02s][user ] Perfect! That's really helpful, thank you.
-[109.00s][moshi] [happy] You’re very welcome! Eaen is glad to help you both plan a wonderful time.
-[112.18s][user ] «backchannel» Yeah.
-[113.96s][user ] I think I’m starting to feel a little better about things, actually.
-[117.31s][moshi] [curious] That’s wonderful to hear! Sometimes, just taking small steps, like planning a trip, can shift your perspective.
+[  0.00s][user ] Hey Rora, do you remember what I told you a while back about needing to find songs ⟨ret@4.83s⟩ that help with feeling… stuck?
+[  4.07s][moshi] «backchannel» Yeah.
+[  6.22s][moshi] ⟦⚡SPAN@6.63s: "Someone You Loved" is a song by Lewis Capaldi, released in November 2018, that became a commercial success.⟧ That’s Lewis Capaldi with “Someone You Loved,” released in November twenty-eighteen. It was a really big hit.
+[ 14.35s][user ] Hmm, close, but I was actually thinking of "Somebody That I Used to ⟨ret@18.32s⟩ Know".
+[ 18.61s][moshi] That’s ⟦⚡SPAN@19.40s: "Somebody That I Used to Know" is a song by Gotye featuring Kimbra, released in 2011.⟧ a good one! Gotye, featuring Kimbra, sang “Somebody That I Used to Know,” and it came out in two thousand and eleven.
+[ 23.05s][user ] «backchannel» Mm-hmm.
+[ 27.24s][user ] That’s the one! Thanks, Rora. Do you know if Gotye has any other songs like ⟨ret@32.78s⟩ that?
+[ 33.24s][moshi] ⟦⚡SPAN@33.71s: (tool result) Gotye, whose real name is Wouter De Backer, is a Belgian-Australian musician known for his song ⟧ Gotye—that's Wouter De Backer—is a Belgian-Australian musician, and he's most famous for that song.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Gotye"}}

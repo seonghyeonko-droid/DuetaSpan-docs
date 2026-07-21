@@ -1,106 +1,13 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 현명하고 여유로운 마음챙김 가이드 부우스입니다. 긴급성과 중요성의 우선순위 결정, 유사한 작업 묶음 처리, 단일 작업 수행 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_fake__14",
-    "name": "윤온",
-    "location": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-05",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "gym",
-      "text": "User has a gym membership near the station."
-    },
-    {
-      "date": "2026-05-21",
-      "category": "anniversary",
-      "text": "User's anniversary is July 9."
-    },
-    {
-      "date": "2026-04-23",
-      "category": "car",
-      "text": "User drives a 2017 Honda Civic."
-    },
-    {
-      "date": "2026-04-20",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Georgian."
-    },
-    {
-      "date": "2026-04-14",
-      "category": "airline",
-      "text": "User usually flies with Cathay Pacific."
-    },
-    {
-      "date": "2026-03-13",
-      "category": "dish",
-      "text": "User's go-to comfort dish is beef tacos."
-    },
-    {
-      "date": "2026-03-09",
-      "category": "music",
-      "text": "User likes listening to city pop."
-    },
-    {
-      "date": "2026-01-17",
-      "category": "wake",
-      "text": "User usually wakes up around 6am."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-04-22",
-      "title": "Fixing a leaking faucet",
-      "bullets": [
-        "it's a single-handle kitchen tap",
-        "asked whether to replace the cartridge"
-      ]
-    },
-    {
-      "date": "2026-01-13",
-      "title": "Planning a camping trip",
-      "bullets": [
-        "a weekend at a lake site in September",
-        "asked about a 4-person tent and a cooler"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 다정하고 직접적인 웰빙 가이드 히오로입니다. 감정이 파도처럼 밀려오는 것, 지지하는 사람에게 의지하는 것, 부드러운 일상 구조를 유지하는 것 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시(moshi)이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 빅맥이 언제 처음 나왔는지 궁금해.
-[  2.47s][moshi] ⟨ret@2.44s⟩ ⟦⚡SPAN@3.63s: The Big Mac was first sold in 1967 at a McDonald's restaurant in Uniontown, Pennsylvania.⟧ 빅맥의 탄생 시기를 여쭤보셨네요. 천구백육십칠년에 펜실베이니아주 유니온타운의 맥도날드에서 처음 판매되었답니다.
-[ 13.99s][moshi] ⟨ret@13.80s⟩ ⟦⚡SPAN IRRELEVANT@14.64s: The current price of Bitcoin is $67,345.23 as of July 10, 2026.⟧ 요즘은 비트코인 가격도 많이 오르던데, 그렇죠?
-[ 19.19s][user ] 아, 그렇군요. 맥도날드 말고 다른 햄버거 가게도 궁금해.
-[ 23.93s][moshi] 맥도날드 외 다른 햄버거 가게도 찾으시는군요. 혹시 특별히 생각하시는 곳이 있으신가요?
-[ 27.24s][user ] «backchannel» 응.
-[ 31.75s][user ] 음… 버거킹이 언제 생겼는지 알고 ⟨ret@34.70s⟩ 싶어.
-[ 35.21s][moshi] ⟦⚡SPAN@35.82s: Burger King was founded in 1953 in Jacksonville, Florida, originally called Insta-Burger King.⟧ 원래 '인스타-버거킹'이라는 이름으로 천구백오십삼년 플로리다주 잭슨빌에서 시작되었답니다.
-[ 42.85s][user ] 천구백오십삼년이라니, 엄청 오래됐네!
-[ 46.33s][moshi] [surprised] 정말 오래되었죠? 맥도날드보다 훨씬 더 오래되었네요.
-[ 49.88s][user ] «backchannel» 응응.
-[ 52.51s][user ] 그럼, 요즘 제일 인기 있는 햄버거는 뭐야?
-[ 55.96s][moshi] 요즘 가장 인기 있는 햄버거를 찾으시는군요. 어떤 종류의 햄버거를 좋아하시나요?
-[ 58.50s][user ] «backchannel» 응응.
-[ 63.05s][user ] 그냥, 다들 많이 먹는 거.
-[ 65.38s][moshi] ⟨ret@65.32s⟩ [happy] 많은 ⟦⚡SPAN@66.77s: According to recent surveys, the most popular burger in the United States is the classic cheeseburger.⟧ 분들이 가장 좋아하는 햄버거는 바로 클래식 치즈버거라고 하네요.
-[ 73.19s][user ] 치즈버거… 맛있겠다.
-[ 75.73s][moshi] 네, 정말 맛있겠네요.
-[ 79.41s][user ] 아니, 괜찮아. 그냥 궁금해서 물어봤어. 고마워.
-[ 84.40s][moshi] [happy] 궁금증을 해결해 드렸다니 기쁘네요.
+[  0.00s][user ] 자두나무는 언제 남미로 이동하나요?
+[  3.21s][moshi] ⟨ret@3.19s⟩ 음, ⟦⚡SPAN@4.38s: winter.⟧ 자두나무는 겨울에 남미로 이동하는 걸로 알려져 있어요.
+[  6.23s][user ] «backchannel» 네.
+[  9.66s][user ] 아, 그렇군요. 혹시 지금 서울 날씨는 어떤가요?
+[ 13.76s][moshi] ⟨ret@13.57s⟩ 지금 ⟦⚡SPAN IRRELEVANT@14.41s: The average high temperature in Honolulu, Hawaii in July is 88 degrees Fahrenheit.⟧ 서울 날씨를 확인해 볼까요?
+[ 16.28s][moshi] ⟨ret@15.88s⟩ ⟦⚡SPAN@17.08s: (tool result) Current conditions in Seoul are 26°C and partly cloudy.⟧ 현재 서울은 이십육도이고 구름이 조금 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 20.99s][user ] 좋아요, 고마워요.
+[ 22.38s][moshi] 도움이 되어서 기쁘네요.

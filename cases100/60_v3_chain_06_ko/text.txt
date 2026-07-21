@@ -1,102 +1,11 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 동료 지원자로서 사람들의 동기 부여를 찾는 것을 돕는 부드럽고 사려 깊은 벨라로입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_chain_06",
-    "name": "라형",
-    "location": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 40s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-27",
-      "category": "sibling",
-      "text": "User has a younger sibling named Clara."
-    },
-    {
-      "date": "2026-05-19",
-      "category": "coffee",
-      "text": "User's usual coffee order is black drip coffee."
-    },
-    {
-      "date": "2026-03-19",
-      "category": "bloodtype",
-      "text": "User's blood type is A+."
-    },
-    {
-      "date": "2026-03-16",
-      "category": "medication",
-      "text": "User takes a daily thyroid medication."
-    },
-    {
-      "date": "2026-02-13",
-      "category": "car",
-      "text": "User drives a 2019 Hyundai Tucson."
-    },
-    {
-      "date": "2026-02-03",
-      "category": "gym",
-      "text": "User has a gym membership near the office."
-    },
-    {
-      "date": "2026-01-28",
-      "category": "skill",
-      "text": "User is just getting back into beekeeping."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-05-29",
-      "title": "Looking for a therapist",
-      "bullets": [
-        "prefers evening video sessions",
-        "wants someone who does CBT"
-      ]
-    },
-    {
-      "date": "2026-04-23",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
-      ]
-    },
-    {
-      "date": "2026-01-30",
-      "title": "Selling a used bike",
-      "bullets": [
-        "a 3-year-old road bike",
-        "asking around 400k won"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 노부모 돌봄에 대한 도움을 제공하는 따뜻하고 세심한 상담사 케리스입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 유능하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 기분이 좀 울적한데, 뭔가 기분 전환할 만한 거 없을까요?
-[  3.92s][moshi] [happy] 기분 전환이라… 뭘 좋아하시는지 알면 더 좋을 텐데요. 혹시 좋아하는 음악 장르나 영화가 있으세요?
-[  6.89s][user ] «backchannel» 맞아.
-[  9.74s][user ] 음… 영화는 좋아하는데…
-[ 13.99s][user ] …요즘 볼 만한 게 뭐가 있을까요?
-[ 14.87s][moshi] «backchannel» 예.
-[ 15.94s][moshi] ⟨ret@15.85s⟩ 요즘 극장에서 ⟦⚡SPAN@17.04s: The most popular movie currently showing in theaters is "Inside Out 2", a sequel to the 2015 animated film.⟧ 가장 인기 있는 영화는 "인사이드 아웃 이"인데요, 이천십오년에 나온 애니메이션 영화의 후속작이에요. 혹시 애니메이션 좋아하시나요? 다른 장르도 추천해 드릴 수 있어요.
-[ 21.25s][user ] «backchannel» 응.
-[ 26.29s][user ] 네, 애니메이션 괜찮아요.
-[ 27.80s][moshi] [curious] "인사이드 아웃 이"는 감정이라는 주제를 다루고 있어서, 지금 느끼시는 울적함에 공감될 수도 있을 것 같아요. 평점도 꽤 높다고 하네요.
-[ 31.38s][user ] «backchannel» 음.
-[ 35.78s][moshi] «interrupted» 지금부터 영화 예매를 도와드릴까요? 아니면 다른 영화를 찾아볼까요? —
-[ 39.83s][user ] «interrupts_prev» 잠깐만요, 혹시 이 영화 부산에서 볼 수 ⟨ret@42.58s⟩ 있을까요?
-[ 41.45s][moshi] «backchannel» 네.
-[ 42.79s][moshi] 부산에는 ⟦⚡SPAN@43.84s: (tool result) Busan: Lotte Cinema Busan Station (1.2 km), Megabox Haeundae (5.7 km), CGV Centum City (7.3 km).⟧ 롯데시네마 부산역(일 점 이킬로미터), 메가박스 해운대(오 점 칠킬로미터), 씨 지 브이 센텀시티(칠 점 삼킬로미터)에서 "인사이드 아웃 이"를 상영하고 있어요.
-      CALL: {"function": "Movies_3_FindMovies", "arguments": {"city": "부산", "movie_name": "인사이드 아웃 2"}}
-[ 52.79s][user ] 롯데시네마 부산역이 제일 가까운가 보네요.
-[ 55.64s][moshi] [happy] 네, 롯데시네마 부산역이 가장 가깝습니다. 혹시 오늘 시간대별 상영 시간표를 확인해 드릴까요?
+[  0.00s][user ] 어머, 퇴근하고 저녁 뭐 먹을지 ⟨ret@3.09s⟩ 벌써 고민이야.
+[  3.89s][moshi] ⟦⚡SPAN@4.30s: (tool result) 서울: La Cuisine (123 m), 밍글스 (245 m), 권숙수 (312 m)⟧ 서울에 La Cuisine, 밍글스, 권숙수 세 곳이 있네요. 밍글스가 괜찮아 보여요. 분위기가 좋다고 하던데요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "서울"}}
+[  7.62s][user ] «backchannel» 응.
+[ 10.65s][user ] 밍글스 예약 좀 해줘. 오늘 저녁 일곱시로. ⟨ret@14.47s⟩
+[ 14.57s][moshi] 네, ⟦⚡SPAN@15.37s: (tool result) 밍글스, 19:00, RES2-987654, confirmed⟧ 밍글스 오늘 저녁 일곱시에 예약 완료되었습니다. 즐거운 저녁 식사 되세요!
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "밍글스", "time": "19:00"}}

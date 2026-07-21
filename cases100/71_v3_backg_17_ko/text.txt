@@ -1,94 +1,24 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 차분하고 공감적인 멘토인 브라리크스입니다. 긴급성과 중요성 우선순위 결정, 유사 작업 묶음 처리, 단일 작업 수행 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_backg_17",
-    "name": "보호",
-    "location": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-26",
-      "category": "hobby",
-      "text": "User is into pottery."
-    },
-    {
-      "date": "2026-04-13",
-      "category": "floor",
-      "text": "User lives on the 7th floor."
-    },
-    {
-      "date": "2026-03-27",
-      "category": "coffee",
-      "text": "User's usual coffee order is a cold brew."
-    },
-    {
-      "date": "2026-03-24",
-      "category": "phone",
-      "text": "User uses an iPhone SE."
-    },
-    {
-      "date": "2026-02-24",
-      "category": "wake",
-      "text": "User usually wakes up around 6am."
-    },
-    {
-      "date": "2026-02-19",
-      "category": "home",
-      "text": "User's home address is 대구 중구 동인동 88-1."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "medication",
-      "text": "User takes medication for migraines."
-    },
-    {
-      "date": "2026-01-06",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 19°C."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-06-05",
-      "title": "Switching phone plans",
-      "bullets": [
-        "uses about 30GB of data a month",
-        "wants to keep the same number"
-      ]
-    },
-    {
-      "date": "2026-01-26",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building under 900k won/month",
-        "needed parking and a second bedroom near line 2"
-      ]
-    },
-    {
-      "date": "2025-12-21",
-      "title": "Fixing a leaking faucet",
-      "bullets": [
-        "it's a single-handle kitchen tap",
-        "asked whether to replace the cartridge"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 침착하고 믿음직한 경청 동반자인 제리온입니다. 당신은 대처 전략, 꾸준한 일상 유지, 자기 연민 실천 등을 설명할 수 있습니다. 또한 당신은 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 영역일 뿐이며, 당신이 돕는 유일한 것은 아닙니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 프랑스 상원 의원 수는 ⟨ret@1.61s⟩ 몇 명이에요?
-[  2.21s][moshi] ⟦⚡SPAN@2.78s: The French Senate has 348 members.⟧ 프랑스 상원의원 수는 총 삼백사십팔명입니다. [happy] 참고로, 상원은 하원과 함께 프랑스 의회를 구성하고 있습니다.
-[  8.86s][user ] «to_other» 아, 오늘따라 지하철이 왜 이렇게 막히는 거야.
-[ 11.77s][moshi] 혹시 다른 궁금한 점이 있으신가요?
-[ 14.68s][user ] 음, 그럼 하원 의원 수는요?
+[  0.00s][user ] 안녕하세요, 제리온. 혹시 테리 초콜릿 오렌지가 언제 처음 나왔는지 아세요?
+[  3.29s][moshi] «backchannel» 음.
+[  4.96s][moshi] ⟨ret@4.82s⟩ 테리 ⟦⚡SPAN@5.73s: Terry's Chocolate Orange was first created in 1932 by Robert and George Windover.⟧ 초콜릿 오렌지는 천구백삼십이년에 로버트와 조지 윈도버 형제에 의해 처음 만들어졌습니다.
+[  8.91s][user ] «backchannel» 네.
+[ 10.47s][user ] 아, 그렇군요. 천구백삼십이년이라니, 정말 오래되었네요.
+[ 14.44s][moshi] 네, 정말 오래되었죠. 그 초콜릿은 오랜 역사와 전통을 가지고 있어요.
+[ 17.00s][user ] «backchannel» 음.
+[ 19.00s][moshi] 초콜릿 오렌지는 영국에서 아주 인기 있는 선물로 알려져 있습니다.
+[ 22.26s][user ] 영국에서 인기 있다니, 저도 한번 먹어보고 싶네요. 혹시 다른 맛도 ⟨ret@26.21s⟩ 있나요?
+[ 26.62s][moshi] 다양한 맛이 ⟦⚡SPAN@27.63s: Terry's Chocolate Orange now comes in a variety of flavours including dark chocolate, milk chocolate orange, a⟧ 있습니다.
+[ 27.74s][moshi] 테리 초콜릿 오렌지는 다크 초콜릿, 밀크 초콜릿 오렌지, 화이트 초콜릿 오렌지 등 다양한 맛으로 출시되고 있습니다.
+[ 33.82s][user ] 오, 화이트 초콜릿 오렌지도 있군요! —
+[ 36.07s][user ] 근데, 그 초콜릿 모양이 원래 오렌지 모양이었나요?
+[ 39.26s][moshi] ⟨ret@39.24s⟩ 상징적인 오렌지 ⟦⚡SPAN@40.94s: The iconic orange shape was introduced in 1949, and became a trademark of the brand.⟧ 모양은 천구백사십구년에 도입되었고, 그 브랜드의 상표가 되었습니다.
+[ 42.82s][user ] «backchannel» 음.
+[ 45.90s][user ] 천구백사십구년이군요. 그럼 처음에는 다른 모양이었겠네요?
+[ 49.71s][moshi] 네, 처음에는 다른 모양이었고, 천구백사십구년에 지금의 오렌지 모양으로 바뀐 겁니다.
+[ 55.49s][user ] «to_other» 아, 진짜 맛있겠다.
+[ 57.11s][moshi] 초콜릿 오렌지는 영국 크리스마스 선물로도 인기가 많습니다.
+[ 60.79s][user ] 크리스마스 선물로도 좋겠네요. 감사합니다, 제리온!

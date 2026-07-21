@@ -1,97 +1,87 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Salo, a patient and encouraging counselor who helps people with family and relationships. You can explain active listening, setting kind boundaries, calming a conflict before it escalates. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Sox, a practical and reassuring peer supporter who helps people with rebuilding after a setback. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Sky",
+    "name": "Morgan",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
+    "nationality": "French",
     "gender": "non-binary",
-    "age_range": "60s",
-    "language": "English"
+    "age_range": "mid 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-19",
-      "category": "temp",
-      "text": "User keeps the home thermostat around 26°C."
+      "date": "2026-05-24",
+      "category": "sibling",
+      "text": "User has a younger sibling named Ava."
     },
     {
-      "date": "2026-04-05",
-      "category": "child",
-      "text": "User has a child named Rin, age 10."
+      "date": "2026-05-21",
+      "category": "airline",
+      "text": "User usually flies with United."
     },
     {
-      "date": "2026-03-29",
-      "category": "wake",
-      "text": "User usually wakes up around 6am."
+      "date": "2026-05-05",
+      "category": "trip",
+      "text": "User is planning a trip to Morocco in November."
     },
     {
-      "date": "2026-03-20",
-      "category": "floor",
-      "text": "User lives on the 8th floor."
+      "date": "2026-04-25",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
     },
     {
-      "date": "2026-02-28",
-      "category": "phone",
-      "text": "User uses an Xperia 1."
+      "date": "2026-04-02",
+      "category": "plant",
+      "text": "User is growing a lemon tree at home."
+    },
+    {
+      "date": "2026-03-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Spanish tapas."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "schedule",
+      "text": "User has rotating night shifts."
     },
     {
       "date": "2026-01-25",
-      "category": "commute",
-      "text": "User works from home."
-    },
-    {
-      "date": "2026-01-21",
-      "category": "skill",
-      "text": "User is just getting back into marathon training."
-    },
-    {
-      "date": "2025-12-27",
       "category": "hobby",
-      "text": "User is into pottery."
-    },
-    {
-      "date": "2025-12-20",
-      "category": "savings",
-      "text": "User is saving for a new car."
+      "text": "User is into sea kayaking."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-15",
-      "title": "Booking a moving company",
+      "date": "2026-06-10",
+      "title": "Building a PC",
       "bullets": [
-        "moving a 2-bedroom apartment across town on the 30th",
-        "needs help disassembling furniture"
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
       ]
     },
     {
-      "date": "2026-04-03",
-      "title": "Choosing a laptop",
+      "date": "2025-12-05",
+      "title": "Selling a used bike",
       "bullets": [
-        "budget around 1.8M won",
-        "needs it for video editing and light gaming"
+        "a 3-year-old road bike",
+        "asking around 400k won"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Salo, I'm studying biology and I'm stuck on a question.
-[  1.82s][moshi] «backchannel» Yeah.
-[  3.63s][moshi] Hello! It's perfectly normal to get stuck sometimes. What's the question you're wrestling with?
-[  9.29s][user ] The number of orders in class mammalia is…? I just can't remember.
-[ 12.72s][moshi] «backchannel» Mm-hmm.
-[ 14.13s][moshi] ⟨ret@13.94s⟩ Oh, ⟦⚡SPAN@14.83s: There are 29 orders within the class Mammalia, encompassing a wide variety of mammals.⟧ that's a good one! For a bit of biological detail, there are 29 orders within the class Mammalia.
-[ 17.73s][user ] «backchannel» Right.
-[ 20.55s][user ] «to_other» Oh, hold on a sec, honey, can you grab the mail?
-[ 23.03s][user ] Sorry about that. So, 29 orders… that’s helpful.
-[ 25.59s][moshi] «backchannel» Yeah, totally.
-[ 26.50s][moshi] [happy] You’re very welcome! It’s great you’re pursuing biology – it’s a fascinating field.
+[  0.00s][user ] Hey Sox, quick question – who’s won the most Gold Glove awards ⟨ret@3.59s⟩ in MLB history?
+[  4.57s][moshi] ⟦⚡SPAN@4.51s: Greg Maddux has won a record sixteen Gold Glove Awards as a pitcher, more than any other player in Major Leagu⟧ Greg Maddux has sixteen Gold Glove Awards, which is the most of any player. Pretty impressive, right?
+[ 10.64s][user ] «to_other» Honey, the oven timer's going off — can you grab it?
+[ 13.13s][user ] Okay, back to baseball… sixteen, wow. Is there anyone close to that number?
+[ 16.48s][moshi] «backchannel» Mm-hmm.
+[ 18.83s][moshi] ⟨ret@18.56s⟩ ⟦⚡SPAN@19.16s: Ozzie Smith won thirteen Gold Glove Awards during his career as a shortstop, second-most in MLB history.⟧ Sixteen is definitely a high bar… Ozzie Smith comes in second with thirteen Gold Glove Awards. He was an amazing shortstop!

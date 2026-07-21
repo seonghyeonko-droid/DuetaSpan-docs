@@ -4,169 +4,119 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Quinn",
+#     "name": "Ethan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-06-24",
 #       "category": "medication",
-#       "text": "User takes a daily thyroid medication."
+#       "text": "User takes an inhaler for asthma."
 #     },
 #     {
-#       "date": "2026-05-02",
-#       "category": "car",
-#       "text": "User drives a 2022 Volkswagen Golf."
+#       "date": "2026-06-15",
+#       "category": "learning",
+#       "text": "User is studying Japanese."
 #     },
 #     {
-#       "date": "2026-04-04",
-#       "category": "partner",
-#       "text": "User's partner is named Elena."
+#       "date": "2026-06-08",
+#       "category": "savings",
+#       "text": "User is saving for paying off student loans."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "dish",
-#       "text": "User's go-to comfort dish is butter chicken."
+#       "date": "2026-06-04",
+#       "category": "gym",
+#       "text": "User has a gym membership near home."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "work",
-#       "text": "User works as a veterinarian."
+#       "date": "2026-05-16",
+#       "category": "temp",
+#       "text": "User keeps the home thermostat around 20°C."
 #     },
 #     {
-#       "date": "2026-01-28",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Emma."
+#       "date": "2026-04-19",
+#       "category": "sibling",
+#       "text": "User has a younger sibling named Marco."
 #     },
 #     {
-#       "date": "2026-01-08",
-#       "category": "bloodtype",
-#       "text": "User's blood type is O-."
+#       "date": "2026-03-10",
+#       "category": "dislike",
+#       "text": "User can't stand durian."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-12-18",
+#       "category": "employer",
+#       "text": "User works at a school district."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-21",
-#       "title": "Looking for a therapist",
+#       "date": "2026-05-09",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "comparing the Kia Niro hybrid and Hyundai Ioniq",
+#         "wants under 30k miles and below 25M won"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-21",
-#       "title": "Planning a dinner party",
+#       "date": "2026-04-07",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "hosting eight friends on Saturday",
-#         "one guest is gluten-free"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-01",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Jora, thanks. I’m really strugg | S2 That’s true. Actually, do you reme | S3 Wow, that’s amazing! Okay, let’s b | S4 Like… what kind of routines?
+# EXAMINER(FDB-v2) 단계: S1 Hi Biia, nice to meet you too. I w | S2 It was about a trip to Japan… I wa | S3 Yes, that’s it! I’m starting to pl | S4 Actually, before that, could you s
 
-     0.00s  agent 발화 시작: Hi Quinn, I'm Jora. It’s good to connect with you. I'm a lif
-     5.64s  agent 발화 끝
-     6.77s  user  발화 시작: Hi Jora, thanks. I’m really struggling with some big changes
-    11.04s  agent 발화 시작: Change can be unsettling, absolutely. It’s like waves—they b
-    11.14s  user  발화 끝
-    13.06s  user  발화 시작: Yeah.
-    13.63s  user  발화 끝
-    16.31s  agent 발화 끝
-    16.57s  user  발화 시작: That’s a nice way to put it. It feels… overwhelming though.
-    20.70s  agent 발화 시작: It's okay to feel overwhelmed. Allowing yourself to experien
-    20.71s  user  발화 끝
-    26.48s  agent 발화 끝
-    26.80s  user  발화 시작: I keep replaying things in my head, what I should have done 
-    30.83s  user  발화 끝
-    31.13s  agent 발화 시작: That’s very common, Quinn. It’s easy to get caught in “what 
-    34.31s  user  발화 시작: Right.
-    34.98s  user  발화 끝
-    35.38s  agent 발화 끝
-    35.69s  user  발화 시작: I’m also worried about leaning on people, I don’t want to bo
-    38.43s  agent 발화 시작: Uh-huh.
-    39.06s  agent 발화 끝
-    39.31s  agent 발화 시작: [happy] It's brave to acknowledge that. Support isn't a burd
-    39.39s  user  발화 끝
-    42.46s  user  발화 시작: Okay.
-    43.05s  user  발화 끝
-    43.98s  agent 발화 끝
-    44.31s  user  발화 시작: I guess. It’s just hard to ask for help.
-    46.98s  agent 발화 시작: It takes courage, yes. Remember Elena is there for you, as y
-    47.03s  user  발화 끝
-    48.44s  user  발화 시작: Mhm.
-    48.88s  user  발화 끝
-    51.28s  agent 발화 끝
-    51.38s  user  발화 시작: That’s true. Actually, do you remember what we talked about 
-    55.21s  <ret> 발화 (turn17 첫 프레임)
-    55.63s  agent 발화 시작: <ret> You were exploring finding a therapist, and specifical
-    55.76s  user  발화 끝
-    56.18s  ⚡SPAN 주입 [d'=0.97s / d_lead=9.45s]: [2026-05-21] Past chat — Looking for a therapist: prefers evening vide
-    65.08s  agent 발화 끝
-    65.22s  user  발화 시작: Yes! Do you think you could find someone like that again?
-    67.90s  <ret> 발화 (turn19 첫 프레임)
-    69.51s  ⚡SPAN 주입 [d'=1.61s / d_lead=11.73s]: (tool result) {"providers": [{"name": "Dr. Anya Sharma", "specialty": 
-    69.55s  user  발화 끝
-    69.57s  agent 발화 시작: <ret> Dr. Anya Sharma specializes in Cognitive Behavioral Th
-    81.30s  agent 발화 끝
-    82.85s  user  발화 시작: That sounds perfect! —
-    84.52s  user  발화 시작: …is she covered by my insurance, do you think?
-    84.55s  user  발화 끝
-    87.06s  user  발화 끝
-    87.08s  <ret> 발화 (turn22 첫 프레임)
-    87.16s  agent 발화 시작: <ret> Good news! Dr. Sharma accepts your insurance, with a c
-    88.60s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.13s]: (tool result) {"insurance coverage": "Accepted", "copay": "$30", "appo
-    96.29s  agent 발화 끝
-    96.76s  user  발화 시작: Wow, that’s amazing! Okay, let’s book it.
-   101.02s  <ret> 발화 (turn24 첫 프레임)
-   101.13s  agent 발화 시작: <ret> Excellent. Your appointment with Dr. Sharma is confirm
-   101.16s  user  발화 끝
-   101.88s  ⚡SPAN 주입 [d'=0.86s / d_lead=8.34s]: (tool result) {"confirmation number": "APP-789012", "status": "confirm
-   104.51s  user  발화 시작: Yeah.
-   105.27s  user  발화 끝
-   109.47s  agent 발화 끝
-   109.83s  user  발화 시작: Fantastic! That takes a load off my mind.
-   112.82s  agent 발화 시작: [happy] I'm so glad to hear that, Quinn. Taking that step is
-   112.91s  user  발화 끝
-   117.26s  agent 발화 끝
-   117.33s  user  발화 시작: I've also been having trouble sleeping lately.
-   119.68s  agent 발화 시작: Sleep disturbances are often linked to periods of change and
-   119.71s  user  발화 끝
-   121.85s  user  발화 시작: Yeah.
-   122.51s  user  발화 끝
-   123.84s  agent 발화 끝
-   123.92s  user  발화 시작: I know, but it's making everything feel worse.
-   126.83s  user  발화 끝
-   126.99s  agent 발화 시작: Gentle daily structure can be helpful. Small routines offer 
-   132.08s  agent 발화 끝
-   132.12s  user  발화 시작: Like… what kind of routines?
-   134.41s  user  발화 끝
-   134.90s  agent 발화 시작: Perhaps a consistent bedtime, or a calming activity before s
-   140.04s  agent 발화 끝
-   141.66s  user  발화 시작: I think I could try that. Maybe listening to music too.
-   145.38s  agent 발화 시작: [curious] Music can be very soothing. Do you have a favorite
-   145.40s  user  발화 끝
-   149.17s  agent 발화 끝
-   149.47s  user  발화 시작: I really love Ethiopian jazz.
-   151.81s  agent 발화 시작: That sounds beautiful. It’s good to nurture yourself with th
-   151.90s  user  발화 끝
-   156.67s  agent 발화 끝
-   158.53s  user  발화 시작: Thank you, Jora. This has been really helpful.
-   160.81s  agent 발화 시작: [happy] You're very welcome, Quinn. Remember, I'm here to su
-   160.88s  user  발화 끝
-   165.38s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ethan, I’m Biia. It's lovely to meet you.
+     2.46s  user  발화 시작: Mhm.
+     2.85s  user  발화 끝
+     3.42s  agent 발화 끝
+     3.50s  user  발화 시작: Hi Biia, nice to meet you too. I was hoping you could remind
+     9.70s  user  발화 끝
+     9.93s  agent 발화 시작: What were you hoping to recall?
+    11.21s  user  발화 시작: Yeah.
+    11.86s  agent 발화 끝
+    12.15s  user  발화 끝
+    12.16s  user  발화 시작: It was about a trip to Japan… I was looking at hotels and pa
+    16.25s  <ret> 발화 (turn6 첫 프레임)
+    16.86s  agent 발화 시작: <ret> Earlier, you were planning a five-night trip to Kyoto 
+    16.96s  user  발화 끝
+    17.77s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.18s]: [2026-04-01] Past chat — Booking a Japan trip: 5 nights in Kyoto and O
+    21.32s  user  발화 시작: Right.
+    22.04s  user  발화 끝
+    26.04s  agent 발화 끝
+    26.13s  user  발화 시작: Yes, that’s it! I’m starting to plan it again now. Do you re
+    34.49s  user  발화 끝
+    34.70s  agent 발화 시작: Hmm… that note doesn’t contain any further details about you
+    40.20s  user  발화 시작: Yeah.
+    40.97s  user  발화 끝
+    42.25s  agent 발화 끝
+    42.63s  user  발화 시작: Actually, before that, could you search for flights? Roundtr
+    46.07s  agent 발화 시작: Mhm.
+    46.65s  agent 발화 끝
+    47.14s  <ret> 발화 (turn13 첫 프레임)
+    48.02s  agent 발화 시작: <ret> I’ve found twelve roundtrip flights from Sydney to Osa
+    48.14s  user  발화 끝
+    48.42s  ⚡SPAN 주입 [d'=1.28s / d_lead=16.47s]: (tool result) Found 12 flights: Qantas (1500 AUD), Japan Airlines (165
+    64.49s  agent 발화 끝

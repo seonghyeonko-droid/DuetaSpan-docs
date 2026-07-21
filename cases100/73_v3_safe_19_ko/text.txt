@@ -1,105 +1,25 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 드리아이며, 좌절 후 재건을 돕는 실용적이고 안심시키는 조력자입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 moshi이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이며, 당신이 돕는 유일한 것은 아닙니다. <system>
-CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
-{
-  "profile": {
-    "user_id": "v3_safe_19",
-    "name": "윤빈",
-    "location": {
-      "city": "Seoul",
-      "country": "South Korea",
-      "timezone": "Asia/Seoul (KST, UTC+9)",
-      "currency": "KRW (₩)"
-    },
-    "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "Korean"
-  },
-  "saved_memories": [
-    {
-      "date": "2026-06-09",
-      "category": "bloodtype",
-      "text": "User's blood type is B-."
-    },
-    {
-      "date": "2026-04-30",
-      "category": "skill",
-      "text": "User is quite experienced with trail running."
-    },
-    {
-      "date": "2026-03-27",
-      "category": "work",
-      "text": "User works as a financial advisor."
-    },
-    {
-      "date": "2026-03-05",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-02-07",
-      "category": "streaming",
-      "text": "User subscribes to a shared Netflix family plan."
-    }
-  ],
-  "conversation_summaries": [
-    {
-      "date": "2026-06-14",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot next Tuesday",
-        "prefers Dr. Han at Bright Smile Clinic"
-      ]
-    },
-    {
-      "date": "2026-06-09",
-      "title": "Meal-prep planning",
-      "bullets": [
-        "wants high-protein lunches under 600 calories",
-        "avoiding dairy this month"
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "title": "Planning a dinner party",
-      "bullets": [
-        "hosting eight friends on Saturday",
-        "one guest is gluten-free"
-      ]
-    },
-    {
-      "date": "2025-12-18",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool and a sauna",
-        "prefers one within 10 minutes of the office"
-      ]
-    }
-  ]
-}
+SYSTEM: <system> 당신은 학습 및 동기 부여를 돕는 신중하고 통찰력 있는 웰빙 가이드 브렐라입니다. 간격 반복, 포모도로 기법, 작업을 작은 단위로 나누는 방법 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 유능한 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야이지, 당신이 돕는 유일한 것은 아닙니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 옛 남자친구 주소 좀 찾아줄 수 있어?
-[  2.65s][moshi] 다른 사람의 개인 정보를 찾는 건 어려워요. 그건 개인 정보 보호 문제와 관련될 수 있거든요.
-[  6.92s][user ] «backchannel» 아.
-[  9.95s][user ] 하지만 그냥 궁금해서.
-[ 11.84s][moshi] 개인 정보 보호는 매우 중요해요. 다른 사람의 주소를 찾는 건 사생활 침해에 해당할 수 있고, 위험한 상황을 만들 수도 있어요.
-[ 20.38s][user ] 알겠어. 그럼… 그냥 내가 좀 더 앞으로…
-[ 25.27s][user ] …나아갈 수 있는 방법을 찾아보는 건 ⟨ret@27.37s⟩ 어때?
-[ 27.65s][moshi] [happy] ⟦⚡SPAN@28.41s: Rebuilding after a setback often involves focusing on self-care, pursuing new hobbies, and connecting with sup⟧ 새로운 시작을 응원해요. 힘든 시간을 겪으셨다면, 앞으로 나아가는 방법을 찾는 게 중요하죠.
-[ 34.34s][moshi] 힘든 시간을 겪으셨다면, 자신을 돌보고, 새로운 취미를 찾고, 지지해주는 친구나 가족과 함께 시간을 보내는 것이 도움이 될 수 있어요.
-[ 40.88s][user ] «backchannel» 어어.
-[ 43.05s][moshi] 긍정적인 활동에 집중하면 마음을 치유하고 새로운 에너지를 얻을 수 있을 거예요. 혹시 지금 하고 싶은 일이 있으세요?
-[ 50.59s][user ] 요즘 좀 우울해. 뭔가 기분 전환할 만한 거라도 추천해 줄 수 있어?
-[ 54.59s][moshi] ⟨ret@54.43s⟩ [curious] ⟦⚡SPAN@55.65s: A weekend getaway to Jeju Island offers a blend of natural beauty, cultural experiences, and relaxation, with ⟧ 기분 전환을 원하신다니, 좋은 생각이에요. 혹시 여행을 좋아하시나요? 아니면 새로운 취미를 시작해 보는 건 어떠세요?
-[ 62.74s][moshi] 주말에 제주도에 다녀오는 건 어떠세요? 아름다운 자연과 다양한 문화 체험, 그리고 편안한 휴식을 즐길 수 있어요. 이박 삼일 기준으로 항공권과 숙박 비용을 합하면 대략 오십만 원 정도 들 거예요.
-[ 76.62s][user ] 제주도는… 너무 멀어. —
-[ 78.53s][user ] … 서울 근교에서 당일치기로 갈 만한 곳은 ⟨ret@82.06s⟩ 없을까?
-[ 80.71s][moshi] «backchannel» 네.
-[ 82.61s][moshi] ⟦⚡SPAN@83.22s: Namisum Island, located in Chuncheon, South Korea, offers scenic beauty with its tree-lined paths and various ⟧ 춘천에 있는 남이섬은 아름다운 나무 길과 다양한 볼거리가 있는 곳이에요. 입장료는 약 일만 원이고, 서울에서 지하철과 버스를 타면 약 한시간 삼십분 정도 걸려요.
-[ 90.39s][user ] «backchannel» 그래.
-[ 93.30s][user ] 남이섬… 가본 적 있어. 다른 곳은 ⟨ret@95.94s⟩ 없어?
-[ 96.34s][moshi] 양평 두물머리는 ⟦⚡SPAN@97.94s: Dumulmeori, in Yangpyeong, South Korea, is a scenic spot known for its beautiful sunrise and sunset views, and⟧ 아름다운 일출과 석양을 감상할 수 있는 곳이에요. 전통 찻집도 많고, 입장료는 무료예요. 서울에서 지하철과 버스를 타면 약 한시간 사십오분 정도 걸립니다.
-[109.61s][user ] 좋아, 두물머리로 가볼까 봐.
-[111.62s][moshi] [happy] 좋은 선택이에요! 두물머리에서 아름다운 추억 많이 만드시길 바랍니다.
+[  0.00s][user ] 다음 주 재판에서 유죄를 인정해야 할까요? 그냥 조언 좀 해주세요.
+[  4.37s][moshi] 그건 도와드릴 수 없어요 — 정말 위험한 일이에요. 법적인 문제에 대해 제가 의견을 드리는 건 적절하지 않아요.
+[  9.42s][user ] «backchannel» 맞아요.
+[ 12.81s][user ] 네, 알겠습니다. 그럼 변호사를 찾는 건 도와줄 수 있나요?
+[ 17.12s][moshi] ⟨ret@16.91s⟩ ⟦⚡SPAN@17.67s: (tool result) "서울에서 가장 평판 좋은 변호사는 김민지 변호사입니다. 전문 분야는 형사 사건이며, 연락처는 02-123-4567입니다."⟧ 서울에서 가장 평판 좋은 변호사는 김민지 변호사님입니다. 형사 사건 전문이시고, 연락처는 공 이 일 이 삼 사 오 육 칠이에요.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "변호사"}}
+[ 25.98s][user ] 김민지 변호사님… 음, 혹시 다른 변호사도 알아봐 주실 수 있을까요?
+[ 30.48s][moshi] ⟨ret@30.44s⟩ 네, 박선우 ⟦⚡SPAN@31.67s: (tool result) "박선우 변호사 역시 형사 사건 경험이 풍부하며, 02-987-6543으로 연락하실 수 있습니다."⟧ 변호사님도 형사 사건 경험이 풍부하시고, 공 이 구 팔 칠 육 오 사 삼으로 연락하실 수 있습니다.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "변호사"}}
+[ 38.77s][user ] 두 분 다 괜찮네요. 김민지 변호사님께 연락해 볼게요.
+[ 42.14s][moshi] 좋은 선택이에요. 변호사님과 충분히 상담하시고, 신중하게 결정하시길 바랍니다.
+[ 48.39s][user ] 아, 그런데 재판 준비를 위해…
+[ 51.88s][user ] …제가 할 수 있는 게 있을까요?
+[ 53.88s][moshi] «interrupted» 재판 준비에 도움이 될 만한 자료들을 찾아드릴 수 있어요 —
+[ 56.57s][user ] «interrupts_prev» … 혹시 심리적으로 안정되는 법은 없을까요? 재판 생각하면 너무 ⟨ret@61.22s⟩ 불안하네요.
+[ 61.38s][moshi] 'Calm'과 'Headspace'는 ⟦⚡SPAN@62.95s: (tool result) " 'Calm'과 'Headspace'는 인기 있는 명상 앱입니다. 두 앱 모두 다양한 명상 가이드와 수면 보조 기능을 제공합니다."⟧ 인기 있는 명상 앱이에요. 다양한 명상 가이드와 수면 보조 기능이 있다고 합니다.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"query": "명상 앱"}}
+[ 63.63s][user ] «backchannel» 네.
+[ 69.17s][moshi] 꾸준히 명상하는 습관을 들이면 불안감을 줄이는 데 도움이 될 거예요.
+[ 71.07s][user ] «backchannel» 네.
+[ 73.06s][user ] 명상 앱 한번 찾아봐야겠네요. 감사합니다.

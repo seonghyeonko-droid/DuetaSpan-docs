@@ -4,79 +4,89 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "혜국",
+#     "name": "예민",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "mid 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2026-05-26",
-#       "category": "work",
-#       "text": "User works as a pharmacist."
-#     },
-#     {
-#       "date": "2026-04-06",
-#       "category": "emergency",
-#       "text": "User's emergency contact is Jisoo."
-#     },
-#     {
-#       "date": "2026-02-16",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B+."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "commute",
-#       "text": "User takes a shuttle bus."
-#     },
-#     {
-#       "date": "2026-01-14",
+#       "date": "2026-06-27",
 #       "category": "hobby",
-#       "text": "User is into long-distance cycling."
+#       "text": "User is into salsa dancing."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "airline",
-#       "text": "User usually flies with Qatar Airways."
+#       "date": "2026-06-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Portugal in March."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "savings",
+#       "text": "User is saving for a trip to Europe next year."
+#     },
+#     {
+#       "date": "2026-05-10",
+#       "category": "skill",
+#       "text": "User is getting fairly good at vintage synth collecting."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "music",
+#       "text": "User likes listening to a lo-fi jazz playlist."
+#     },
+#     {
+#       "date": "2026-03-22",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "commute",
+#       "text": "User works from home."
+#     },
+#     {
+#       "date": "2026-01-15",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2026-01-02",
+#       "category": "streaming",
+#       "text": "User subscribes to Wavve and Melon."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-08",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-27",
+#       "title": "Learning to invest",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "asked about index funds vs individual stocks",
+#         "wants to start with 500k won a month"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-15",
+#       "title": "Switching phone plans",
 #       "bullets": [
-#         "wants a pool and a sauna",
-#         "prefers one within 10 minutes of the office"
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 인도에서 처음으로 오 디 아이 경기를 한 건 언제야?
-     2.65s  <ret> 발화 (turn1 첫 프레임)
-     3.26s  agent 발화 시작: <ret> 오 디 아이 경기를 처음 한 건… 천구백칠십사년 칠월 오일이었어요. 런던 오벌에서 영국과 경기했답
-     3.36s  user  발화 끝
-     4.20s  ⚡SPAN 주입 [d'=1.55s / d_lead=8.69s]: India played its first One Day International (ODI) cricket match on 5 
-    11.95s  agent 발화 끝
+     0.00s  user  발화 시작: 영화 '셀레나'에 나오는 노래들은 누가 부르나요?
+     2.02s  <ret> 발화 (turn1 첫 프레임)
+     2.63s  agent 발화 시작: <ret> 영화 '셀레나'의 노래들은 셀레나가 직접 불렀습니다.
+     2.72s  user  발화 끝
+     3.57s  ⚡SPAN 주입 [d'=1.55s / d_lead=3.61s]: Selena sang the songs in the movie Selena.
+     6.24s  agent 발화 끝

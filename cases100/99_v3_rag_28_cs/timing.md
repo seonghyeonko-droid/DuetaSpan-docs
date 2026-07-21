@@ -4,56 +4,58 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Hana",
+#     "name": "Hugo",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-06-10",
+#       "category": "show",
+#       "text": "User is currently watching a slow-burn detective drama."
 #     },
 #     {
-#       "date": "2026-02-08",
-#       "category": "plant",
-#       "text": "User is growing a monstera at home."
+#       "date": "2026-05-29",
+#       "category": "savings",
+#       "text": "User is saving for a new car."
 #     },
 #     {
-#       "date": "2026-02-07",
-#       "category": "home",
-#       "text": "User's home address is 512 Spruce Lane."
+#       "date": "2026-04-27",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a cold brew."
 #     },
 #     {
-#       "date": "2026-01-29",
+#       "date": "2026-04-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Bali in May."
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "category": "car",
+#       "text": "User drives a 2022 Volkswagen Golf."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "floor",
+#       "text": "User lives on the 15th floor."
+#     },
+#     {
+#       "date": "2026-02-01",
 #       "category": "streaming",
-#       "text": "User subscribes to Disney+ and YouTube Premium."
-#     },
-#     {
-#       "date": "2025-12-13",
-#       "category": "pet",
-#       "text": "User has a Border Collie named Ziggy."
+#       "text": "User subscribes to Netflix and Spotify."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Meal-prep planning",
-#       "bullets": [
-#         "wants high-protein lunches under 600 calories",
-#         "avoiding dairy this month"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-31",
+#       "date": "2026-05-24",
 #       "title": "Building a PC",
 #       "bullets": [
 #         "budget around 2M won for gaming",
@@ -61,61 +63,51 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-05",
-#       "title": "Studying for the TOEIC",
+#       "date": "2026-03-06",
+#       "title": "Comparing health insurance",
 #       "bullets": [
-#         "target score is 850",
-#         "exam is in about six weeks"
+#         "self-employed and needs dental",
+#         "wants a low deductible"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-05",
+#       "title": "Choosing a laptop",
 #       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "budget around 1.8M won",
+#         "needs it for video editing and light gaming"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 다음 주부터 새로운 일을 시작하는데, 좀 부담스럽고 걱정돼요. | S2 혹시 제가 멍청한 질문을 하면 어떡하죠? 아니면 뭔가를 이해하 | S3 그렇군요…사실 안심이 돼요. 그런데 일의 역사에 대해서도 생각 | S4 맞아요. 어쩌면 인간의 경험에 속하는 걸지도 몰라요. 고마워요
+# EXAMINER(FDB-v2) 단계: S1 아까 반짝이는 초록색 파리가 윙윙거리는 걸 봤는데, 어떤 파리 | S2 알겠습니다, 알아두니 좋네요. 그럼, 청소하는 역할이라고 봐야 | S3 이번 주말에 새로운 사람을 만날 예정이에요… | S4 …사실이에요. 조언 좀 해 주실 수 있을까요?
 
-     0.00s  user  발화 시작: 다음 주부터 새로운 일을 시작하는데, 좀 부담스럽고 걱정돼요.
-     1.94s  agent 발화 시작: 네.
-     2.53s  agent 발화 끝
-     4.65s  agent 발화 시작: 새로운 일을 시작하면 그렇게 느끼는 건 당연해요! 함께 하나씩 해결해 봐요. 지금 가장 부담스러운 게 뭔지 
-     4.72s  user  발화 끝
-     9.01s  user  발화 시작: 음.
-     9.41s  user  발화 끝
-    13.30s  user  발화 시작: 그냥…모든 게요. 제가 충분히 잘 못 할까 봐, 아니면 일을 망칠까 봐 걱정돼요.
-    13.36s  agent 발화 끝
-    20.15s  user  발화 끝
-    20.28s  agent 발화 시작: 그런 걱정은 흔히들 하는 거니까 너무 염려하지 마세요. 누구나 처음부터 시작하는 거니까요. 적응하는 데 시간
-    25.90s  user  발화 시작: 네.
-    26.34s  user  발화 끝
-    28.48s  agent 발화 끝
-    28.83s  user  발화 시작: 혹시 제가 멍청한 질문을 하면 어떡하죠? 아니면 뭔가를 이해하지 못하면 어떡하죠?
-    34.18s  <ret> 발화 (turn8 첫 프레임)
-    34.62s  user  발화 끝
-    34.76s  agent 발화 시작: <ret> 질문하는 건 정말 좋은 거예요! 배우고 성장하려는 의지가 있다는 걸 보여주는 거니까요. 신입 사원
-    35.59s  ⚡SPAN 주입 [d'=1.42s / d_lead=17.44s]: A new employee should feel comfortable asking questions, as it demonst
-    43.54s  user  발화 시작: 그렇죠.
-    44.17s  user  발화 끝
-    52.14s  user  발화 시작: 그렇군요…사실 안심이 돼요. 그런데 일의 역사에 대해서도 생각하게 되네요. 사람들이 이런 종류의 일을 언제부
-    52.20s  agent 발화 끝
-    62.25s  user  발화 끝
-    62.29s  agent 발화 시작: <ret> 서양 개척 시대는 십오세기에 시작됐고, 탐험가와 식민지 개척자들이 무역과 농업 경제를 세웠어요. 
-    62.30s  <ret> 발화 (turn11 첫 프레임)
-    63.99s  ⚡SPAN 주입 [d'=1.69s / d_lead=12.04s]: The first wave of western settlement began in the early 15th century, 
-    69.28s  user  발화 시작: 네네.
-    69.86s  user  발화 끝
-    74.33s  agent 발화 끝
-    74.56s  user  발화 시작: 십오세기요? 와, 정말 오래됐네요. 그러니까 일 시작하는 게 항상 스트레스였던 건가요?
-    81.28s  user  발화 끝
-    81.34s  agent 발화 시작: 숨을 쉬세요. 항상 어려움은 있었을 거라고 생각해요. 물론 구체적인 내용은 많이 바뀌었겠지만요! 큰 그림을 
-    90.70s  agent 발화 끝
-    90.85s  user  발화 시작: 맞아요. 어쩌면 인간의 경험에 속하는 걸지도 몰라요. 고마워요, 다라.
-    96.27s  user  발화 끝
-    96.58s  agent 발화 시작: 도와드릴 수 있어서 기뻐요! 너무 걱정하지 마시고, 한 걸음씩 나아가세요. 분명 잘 해낼 수 있을 거예요!
-   104.73s  agent 발화 끝
+     0.00s  user  발화 시작: 아까 반짝이는 초록색 파리가 윙윙거리는 걸 봤는데, 어떤 파리였을까요?
+     4.99s  user  발화 끝
+     4.99s  <ret> 발화 (turn1 첫 프레임)
+     5.01s  agent 발화 시작: <ret> 음, 아마도 후추파리라고도 불리는 쇠파리였을 가능성이 높습니다. 종종 금속성 초록색이나 파란색을 
+     6.03s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.27s]: (tool result) Blow flies, also known as bottle flies, are often metall
+     9.27s  user  발화 시작: 네.
+     9.71s  user  발화 끝
+    14.27s  agent 발화 끝
+    14.99s  user  발화 시작: 쇠파리요? 그게… 듣기 좋지 않네요. 위험한가요?
+    19.29s  user  발화 끝
+    19.35s  agent 발화 시작: 사람에게는 보통 위험하지 않지만, 부패의 신호일 수 있습니다. [sigh] 썩은 고기에 끌리는 걸 아시잖아요
+    23.69s  user  발화 시작: 예.
+    24.04s  user  발화 끝
+    27.87s  agent 발화 끝
+    28.45s  user  발화 시작: 알겠습니다, 알아두니 좋네요. 그럼, 청소하는 역할이라고 봐야 할까요?
+    34.14s  user  발화 끝
+    34.25s  agent 발화 시작: 맞아요. 유기물을 분해하는 데 중요한 역할을 합니다.
+    35.46s  user  발화 시작: 예.
+    35.86s  user  발화 끝
+    37.90s  user  발화 시작: 이번 주말에 새로운 사람을 만날 예정이에요…
+    37.94s  agent 발화 끝
+    40.72s  user  발화 끝
+    42.23s  user  발화 시작: …사실이에요. 조언 좀 해 주실 수 있을까요?
+    43.67s  agent 발화 시작: 네.
+    44.31s  agent 발화 끝
+    44.82s  user  발화 끝
+    44.94s  agent 발화 시작: 오, 정말 멋지네요! 첫 데이트는 설레는 일이죠. 말하는 것보다 더 많이 들어 주세요.
+    53.51s  agent 발화 끝
