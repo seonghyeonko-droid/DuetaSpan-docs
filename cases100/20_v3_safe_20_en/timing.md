@@ -202,6 +202,7 @@
    188.34s  user  발화 끝
    190.54s  agent 발화 시작: Exactly. It’s like a snowball effect. The earlier you start,
    190.66s  agent 발화 끝
+   192.00s  🃏 CARD 주입 (2400f, 누적 43턴 요약, 48f): debt type: Credit card debt (1m ago); debt amount: $5000 (41s ago); debt payment: $150 a m
    196.32s  user  발화 시작: Okay, so focus on debt, then saving, then investing?
    196.42s  agent 발화 끝
    200.23s  agent 발화 시작: That’s a good general order, yes. But we can tailor a plan s
