@@ -88,16 +88,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [  2.57s][user ] Hi Thunalo, nice to meet you. I'm feeling really stressed about my commute.
 [  8.04s][moshi] Commutes can be tough, absolutely. Do you drive, take public transit, or something else?
 [ 14.78s][user ] I drive, a Hyundai Tucson. It’s just… so much ⟨ret@18.86s⟩ traffic.
-[ 19.33s][moshi] You’re ⟦⚡SPAN@20.15s: [2026-02-11] User usually wakes up at 5:30am for a run.⟧ a morning person, waking up at 5:30 AM for a run – that’s dedication! Perhaps adjusting your work hours slightly could ease the traffic?
+[ 19.33s][moshi] You’re a ⟦⚡SPAN@20.40s: [2026-02-11] User usually wakes up at 5:30am for a run.⟧ morning person, waking up at 5:30 AM for a run – that’s dedication! Perhaps adjusting your work hours slightly could ease the traffic?
 [ 24.13s][user ] «backchannel» Yeah.
 [ 29.03s][user ] Hmm, maybe. But my boss is pretty strict about start times.
 [ 31.14s][moshi] «backchannel» Uh-huh.
 [ 33.39s][moshi] [sigh] That sounds frustrating, Nina. It’s tough when you can’t control the schedule.
 [ 37.18s][user ] «backchannel» Yeah.
-[ 39.13s][moshi] ⟨ret@38.76s⟩ I ⟦⚡SPAN@39.95s: (tool result) Traffic from 123 Main St, San Francisco to 456 Market St, San Francisco is currently heavy, with⟧ wonder if exploring alternative routes might help? We could check real-time traffic data.
+[ 39.13s][moshi] ⟨ret@38.76s⟩ I wonder ⟦⚡SPAN@40.20s: (tool result) Traffic from 123 Main St, San Francisco to 456 Market St, San Francisco is currently heavy, with⟧ if exploring alternative routes might help? We could check real-time traffic data.
       CALL: {"function": "get_traffic", "arguments": {"origin": "User's Home", "destination": "User's Work"}}
 [ 45.26s][moshi] «interrupted» Currently, the drive is looking at fifty-five minutes, but taking I-280 could shave it down to forty-eight. —
 [ 52.99s][user ] «interrupts_prev» …Wait, do you know if there’s parking near my office? It’s gotten so crowded lately.
 [ 56.60s][moshi] «backchannel» Mhm.
-[ 58.55s][moshi] ⟨ret@58.19s⟩ There ⟦⚡SPAN@59.01s: (tool result) Parking at 5th & Market Garage: $35/day, 20 spaces available. Union Square Garage: $40/day, 12 s⟧ are spaces at 5th & Market for thirty-five dollars a day, and Union Square has twelve spots for forty. Does either of those work for you?
+[ 58.55s][moshi] ⟨ret@58.19s⟩ There ⟦⚡SPAN@59.26s: (tool result) Parking at 5th & Market Garage: $35/day, 20 spaces available. Union Square Garage: $40/day, 12 s⟧ are spaces at 5th & Market for thirty-five dollars a day, and Union Square has twelve spots for forty. Does either of those work for you?
       CALL: {"function": "find_parking", "arguments": {"location": "456 Market St, San Francisco"}}

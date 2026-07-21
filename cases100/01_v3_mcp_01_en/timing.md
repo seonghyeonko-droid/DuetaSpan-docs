@@ -99,11 +99,11 @@
      6.79s  <ret> 발화 (turn2 첫 프레임)
      6.94s  agent 발화 시작: <ret> I’ve reserved a room for you at the Mountain Lodge in 
      7.09s  user  발화 끝
-     7.14s  ⚡SPAN 주입 [d'=0.35s / d_lead=14.38s]: (tool result) {"confirmation id": "AX789YZ", "hotel name": "Mountain L
+     7.39s  ⚡SPAN 주입 [d'=0.60s / d_lead=14.38s]: (tool result) {"confirmation id": "AX789YZ", "hotel name": "Mountain L
     21.32s  agent 발화 끝
     22.78s  user  발화 시작: That sounds good. Is there anything fun to do nearby?
-    26.24s  <ret> 발화 (turn4 첫 프레임)
-    26.56s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.69s]: Denver is known for its vibrant arts scene, craft breweries, and outdo
+    25.68s  <ret> 발화 (turn4 첫 프레임)
+    26.56s  ⚡SPAN 주입 [d'=0.89s / d_lead=7.69s]: Denver is known for its vibrant arts scene, craft breweries, and outdo
     26.62s  user  발화 끝
     26.62s  agent 발화 시작: <ret> Denver has a lot to offer! It’s known for its arts sce
     30.52s  user  발화 시작: Yeah.
@@ -117,15 +117,15 @@
     45.47s  <ret> 발화 (turn9 첫 프레임)
     45.91s  agent 발화 시작: <ret> The forecast for May tenth in Denver is eighteen point
     46.05s  user  발화 끝
-    46.77s  ⚡SPAN 주입 [d'=1.30s / d_lead=11.27s]: (tool result) {"temperature": "18.3°C", "humidity": "62%", "wind speed
+    47.02s  ⚡SPAN 주입 [d'=1.55s / d_lead=11.27s]: (tool result) {"temperature": "18.3°C", "humidity": "62%", "wind speed
     57.17s  agent 발화 끝
     57.28s  user  발화 시작: That’s pretty good. I think I’ll pack light. —
     60.29s  user  발화 시작: …Actually, are there any good hiking trails close to the hot
     60.43s  user  발화 끝
     62.00s  agent 발화 시작: Yeah, yeah.
-    63.50s  <ret> 발화 (turn13 첫 프레임)
+    63.17s  <ret> 발화 (turn13 첫 프레임)
     63.57s  agent 발화 끝
-    63.91s  ⚡SPAN 주입 [d'=0.49s / d_lead=8.20s]: Red Rocks Amphitheatre and Trading Post has several trails ranging in 
+    63.91s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.20s]: Red Rocks Amphitheatre and Trading Post has several trails ranging in 
     63.97s  agent 발화 시작: <ret> Red Rocks Amphitheatre and Trading Post has trails for
     64.04s  user  발화 끝
     69.17s  user  발화 시작: Yeah.
@@ -134,9 +134,9 @@
     72.18s  agent 발화 끝
     73.90s  agent 발화 시작: Yeah.
     74.68s  agent 발화 끝
-    76.47s  <ret> 발화 (turn17 첫 프레임)
+    75.63s  <ret> 발화 (turn17 첫 프레임)
     76.59s  user  발화 끝
-    76.59s  ⚡SPAN 주입 [d'=0.71s / d_lead=8.39s]: The Trading Post Trail at Red Rocks is a 1.4-mile loop, rated as easy,
+    76.59s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.39s]: The Trading Post Trail at Red Rocks is a 1.4-mile loop, rated as easy,
     76.65s  agent 발화 시작: <ret> The Trading Post Trail is a one point four-mile loop, 
     81.17s  user  발화 시작: Yeah.
     81.71s  user  발화 끝
@@ -153,7 +153,7 @@
    105.23s  <ret> 발화 (turn24 첫 프레임)
    105.57s  user  발화 끝
    105.61s  agent 발화 시작: <ret> There's a Whole Foods Market at one four oh one Pearl 
-   105.99s  ⚡SPAN 주입 [d'=0.76s / d_lead=9.60s]: Whole Foods Market is located at 1401 Pearl St, Denver, CO 80202, appr
+   106.24s  ⚡SPAN 주입 [d'=1.01s / d_lead=9.60s]: Whole Foods Market is located at 1401 Pearl St, Denver, CO 80202, appr
    109.11s  user  발화 시작: Mm-hmm.
    109.88s  user  발화 끝
    115.21s  agent 발화 끝

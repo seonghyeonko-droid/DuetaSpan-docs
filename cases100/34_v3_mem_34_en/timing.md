@@ -95,7 +95,7 @@
     18.86s  <ret> 발화 (turn4 첫 프레임)
     19.33s  agent 발화 시작: <ret> You’re a morning person, waking up at 5:30 AM for a ru
     19.42s  user  발화 끝
-    20.15s  ⚡SPAN 주입 [d'=1.29s / d_lead=9.18s]: [2026-02-11] User usually wakes up at 5:30am for a run.
+    20.40s  ⚡SPAN 주입 [d'=1.54s / d_lead=9.18s]: [2026-02-11] User usually wakes up at 5:30am for a run.
     24.13s  user  발화 시작: Yeah.
     24.63s  user  발화 끝
     28.51s  agent 발화 끝
@@ -109,7 +109,7 @@
     38.76s  <ret> 발화 (turn10 첫 프레임)
     39.13s  agent 발화 시작: <ret> I wonder if exploring alternative routes might help? W
     39.36s  agent 발화 끝
-    39.95s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.30s]: (tool result) Traffic from 123 Main St, San Francisco to 456 Market St
+    40.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.30s]: (tool result) Traffic from 123 Main St, San Francisco to 456 Market St
     45.26s  agent 발화 시작: Currently, the drive is looking at fifty-five minutes, but t
     45.43s  agent 발화 끝
     52.99s  user  발화 시작: …Wait, do you know if there’s parking near my office? It’s g
@@ -119,5 +119,5 @@
     58.19s  <ret> 발화 (turn14 첫 프레임)
     58.27s  user  발화 끝
     58.55s  agent 발화 시작: <ret> There are spaces at 5th & Market for thirty-five dolla
-    59.01s  ⚡SPAN 주입 [d'=0.81s / d_lead=8.44s]: (tool result) Parking at 5th & Market Garage: $35/day, 20 spaces avail
+    59.26s  ⚡SPAN 주입 [d'=1.06s / d_lead=8.44s]: (tool result) Parking at 5th & Market Garage: $35/day, 20 spaces avail
     66.99s  agent 발화 끝

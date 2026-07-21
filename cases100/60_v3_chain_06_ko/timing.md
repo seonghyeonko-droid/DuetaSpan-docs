@@ -81,7 +81,7 @@
      2.95s  <ret> 발화 (turn1 첫 프레임)
      3.24s  user  발화 끝
      3.25s  agent 발화 시작: <ret> [happy] 코드 생성 세션이 시작됐습니다. 세션 아이디는 씨 지 이 공 이 육 공 칠 일 공 
-     3.92s  ⚡SPAN 주입 [d'=0.97s / d_lead=12.29s]: (tool result) {"session id": "cg-20260710-1433-892", "status": "active
+     4.17s  ⚡SPAN 주입 [d'=1.22s / d_lead=12.29s]: (tool result) {"session id": "cg-20260710-1433-892", "status": "active
     10.40s  user  발화 시작: 네네.
     11.04s  user  발화 끝
     15.53s  user  발화 시작: 음, 그 세션에 간단한 유닛 테스트 코드를 만들어 줘. 함수 이름은 'calculate_sum'으로 하고, 
@@ -89,5 +89,5 @@
     22.53s  <ret> 발화 (turn4 첫 프레임)
     22.64s  agent 발화 시작: <ret> [happy] 네, 'calculate_sum' 함수에 대한 유닛 테스트 코드를 생성했습니다. 두
     22.80s  user  발화 끝
-    23.18s  ⚡SPAN 주입 [d'=0.65s / d_lead=7.60s]: {"code": "def calculate_sum(a, b):\n  return a + b"}
+    23.43s  ⚡SPAN 주입 [d'=0.90s / d_lead=7.60s]: {"code": "def calculate_sum(a, b):\n  return a + b"}
     30.23s  agent 발화 끝

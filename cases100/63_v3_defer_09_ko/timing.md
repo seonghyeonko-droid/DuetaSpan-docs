@@ -88,7 +88,7 @@
      2.49s  <ret> 발화 (turn1 첫 프레임)
      2.58s  user  발화 끝
      2.72s  agent 발화 시작: <ret> 지금 달러 한 개가 유로로 영 점 구 이유로 정도 돼요.
-     3.63s  ⚡SPAN 주입 [d'=1.14s / d_lead=4.12s]: (tool result) As of July 10, 2026, at 2:35 PM PST, one US dollar equal
+     3.88s  ⚡SPAN 주입 [d'=1.39s / d_lead=4.12s]: (tool result) As of July 10, 2026, at 2:35 PM PST, one US dollar equal
      6.77s  user  발화 시작: 아, 그렇군요. 그럼 부산 해운대…
      6.84s  agent 발화 끝
     10.10s  user  발화 끝

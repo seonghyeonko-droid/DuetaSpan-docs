@@ -94,13 +94,13 @@
      4.06s  <ret> 발화 (turn1 첫 프레임)
      4.09s  agent 발화 시작: <ret> 두 분이 드디어 연인이 되는 건 시즌 칠 마지막 에피소드에서 볼 수 있어요. [happy] 두 분
      4.12s  user  발화 끝
-     5.00s  ⚡SPAN 주입 [d'=0.94s / d_lead=6.86s]: The final episode in season 7 features Niles and Daphne finally gettin
+     5.25s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.86s]: The final episode in season 7 features Niles and Daphne finally gettin
     10.95s  agent 발화 끝
     11.43s  user  발화 시작: 음, 그렇네요.
     12.14s  <ret> 발화 (turn3 첫 프레임)
     12.32s  agent 발화 시작: <ret> 혹시 '프렌즈'나 다른 시트콤도 좋아하세요? 비슷한 분위기의 드라마를 추천해 드릴 수도 있어요.
     12.48s  user  발화 끝
-    12.73s  ⚡SPAN 주입(IRRELEVANT) [d'=0.59s / d_lead=5.93s]: The average high temperature in Fairbanks, Alaska in July is 70°F (21°
+    12.98s  ⚡SPAN 주입(IRRELEVANT) [d'=0.84s / d_lead=5.93s]: The average high temperature in Fairbanks, Alaska in July is 70°F (21°
     18.10s  agent 발화 시작: 요즘 날씨가 참 좋죠.
     18.25s  agent 발화 끝
     19.93s  agent 발화 끝

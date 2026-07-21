@@ -71,7 +71,7 @@
      6.93s  <ret> 발화 (turn2 첫 프레임)
      7.12s  agent 발화 시작: <ret> 음, 사실 키스 리처즈가 쳤어—빌 와이먼의 악기가 그때 세션에서 말을 안 들어서 대신 베이스를 쳤
      7.14s  user  발화 끝
-     7.23s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.39s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
+     7.53s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.39s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
     15.51s  agent 발화 끝
     16.58s  user  발화 시작: 아, 그렇군요? 정말 흥미롭네요…
     19.76s  user  발화 끝

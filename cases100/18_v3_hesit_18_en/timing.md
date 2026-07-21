@@ -90,7 +90,7 @@
      7.60s  <ret> 발화 (turn1 첫 프레임)
      7.77s  agent 발화 시작: <ret> [happy] Those papers were released by the Internationa
      7.87s  user  발화 끝
-     7.90s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.97s]: The International Consortium of Investigative Journalists released bot
+     8.20s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.97s]: The International Consortium of Investigative Journalists released bot
     15.45s  user  발화 시작: Mm-hmm.
     15.94s  user  발화 끝
     17.74s  agent 발화 끝
@@ -98,7 +98,7 @@
     23.04s  <ret> 발화 (turn4 첫 프레임)
     23.55s  agent 발화 시작: <ret> Yes, the Süddeutsche Zeitung received the initial leak
     23.78s  user  발화 끝
-    23.84s  ⚡SPAN 주입 [d'=0.81s / d_lead=7.14s]: Süddeutsche Zeitung received the initial leak of 11.5 million files th
+    24.09s  ⚡SPAN 주입 [d'=1.06s / d_lead=7.14s]: Süddeutsche Zeitung received the initial leak of 11.5 million files th
     30.69s  agent 발화 끝
     30.89s  user  발화 시작: Right, right. So, they were the first to get the files?
     32.35s  agent 발화 시작: Yeah.
@@ -109,8 +109,8 @@
     37.15s  user  발화 끝
     39.58s  agent 발화 끝
     39.74s  user  발화 시작: What exactly *are* the Paradise Papers, then? Are they just…
-    44.65s  <ret> 발화 (turn10 첫 프레임)
-    44.75s  ⚡SPAN 주입 [d'=0.99s / d_lead=11.73s]: The Paradise Papers are 13.4 million leaked files relating to offshore
+    43.48s  <ret> 발화 (turn10 첫 프레임)
+    44.72s  ⚡SPAN 주입 [d'=1.24s / d_lead=11.73s]: The Paradise Papers are 13.4 million leaked files relating to offshore
     44.78s  agent 발화 시작: <ret> The Paradise Papers are thirteen point four million le
     44.93s  user  발화 끝
     56.46s  user  발화 시작: Thirteen point four million… wow. That's a lot of data.

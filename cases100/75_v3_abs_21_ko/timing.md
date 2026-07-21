@@ -106,7 +106,7 @@
     27.24s  <ret> 발화 (turn9 첫 프레임)
     27.56s  user  발화 끝
     27.63s  agent 발화 시작: <ret> 맞아요. 아르헨티나 국기는 하늘색과 흰색 줄무늬로 이루어져 있죠. 하지만 다른 나라들은 다를 수도
-    28.26s  ⚡SPAN 주입 [d'=1.02s / d_lead=6.35s]: The flags of many former Spanish colonies incorporate the colors red, 
+    28.51s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.35s]: The flags of many former Spanish colonies incorporate the colors red, 
     33.93s  agent 발화 시작: 많은 스페인 옛 식민지들의 국기에는 빨간색, 금색, 파란색이 들어가는데, 스페인 자체의 역사적 색상과 제국의
     33.98s  agent 발화 끝
     43.12s  agent 발화 끝

@@ -78,10 +78,10 @@
      6.16s  agent 발화 시작: Hello! I'm Halo, and I'm happy to help you jog your memory. 
     12.14s  user  발화 시작: I know the title is "Dangerous," and I think the artist's na
     12.17s  agent 발화 끝
-    17.83s  <ret> 발화 (turn3 첫 프레임)
+    17.63s  <ret> 발화 (turn3 첫 프레임)
     17.84s  agent 발화 시작: <ret> That sounds like Big Data’s song “Dangerous”, which wa
     17.93s  user  발화 끝
-    18.86s  ⚡SPAN 주입 [d'=1.03s / d_lead=6.76s]: Big Data's single "Dangerous" was certified gold by the Recording Indu
+    18.91s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.76s]: Big Data's single "Dangerous" was certified gold by the Recording Indu
     19.86s  user  발화 시작: Yeah.
     20.35s  user  발화 끝
     24.60s  agent 발화 끝
@@ -95,14 +95,14 @@
     50.32s  <ret> 발화 (turn9 첫 프레임)
     50.44s  agent 발화 시작: <ret> Actually, "Dangerous" saw a bit of a comeback in 2016,
     50.55s  user  발화 끝
-    51.82s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.97s]: The song "Dangerous" by Big Data experienced a resurgence in popularit
+    52.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: The song "Dangerous" by Big Data experienced a resurgence in popularit
     54.05s  user  발화 시작: Yeah.
     54.58s  user  발화 끝
     56.41s  agent 발화 끝
     56.48s  user  발화 시작: Oh, commercials! That's probably it. What commercials used i
     60.57s  <ret> 발화 (turn12 첫 프레임)
     61.12s  agent 발화 시작: <ret> It was featured in commercials for the 2016 Buick Casc
-    61.13s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.53s]: (tool result) Several commercials for the 2016 Buick Cascada featured 
+    61.38s  ⚡SPAN 주입 [d'=0.81s / d_lead=6.53s]: (tool result) Several commercials for the 2016 Buick Cascada featured 
     61.38s  user  발화 끝
     64.75s  user  발화 시작: Yeah.
     65.39s  user  발화 끝

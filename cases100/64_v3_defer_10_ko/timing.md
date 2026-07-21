@@ -105,7 +105,7 @@
      3.42s  <ret> 발화 (turn1 첫 프레임)
      3.69s  agent 발화 시작: <ret> 시카고에서 보스턴까지 대중교통으로 가는 데는 총 스물한시간 사십오분 정도 걸리고, 거리는 천이십삼
      3.93s  user  발화 끝
-     4.51s  ⚡SPAN 주입 [d'=1.09s / d_lead=10.25s]: (tool result) {"total time": "21h 45m", "total distance": "1023 miles"
+     4.76s  ⚡SPAN 주입 [d'=1.34s / d_lead=10.25s]: (tool result) {"total time": "21h 45m", "total distance": "1023 miles"
     13.88s  agent 발화 시작: 먼저 암트랙 기차를 타고, 그 다음에는 엠 비 티 에이 그린 라인 지하철, 마지막으로 그레이하운드 버스를 타
     13.94s  agent 발화 끝
     24.04s  agent 발화 끝
@@ -117,7 +117,7 @@
     38.95s  <ret> 발화 (turn6 첫 프레임)
     39.22s  agent 발화 시작: <ret> 이천이십육년 칠월 십일 오전 여덟시에 칠번 플랫폼에서 출발하는 삼백이십이번 암트랙 기차를 타면, 
     39.25s  user  발화 끝
-    40.20s  ⚡SPAN 주입 [d'=1.26s / d_lead=16.47s]: {"departure_time": "2026-07-10T08:00:00", "arrival_time": "2026-07-11T
+    40.45s  ⚡SPAN 주입 [d'=1.51s / d_lead=16.47s]: {"departure_time": "2026-07-10T08:00:00", "arrival_time": "2026-07-11T
     55.68s  user  발화 시작: 백오십달러면 괜찮은 가격이네.
     55.69s  agent 발화 끝
     57.69s  agent 발화 시작: [happy] 네, 괜찮은 가격인 것 같아요. 미리 예매하면 더 저렴할 수도 있어요.
@@ -129,13 +129,13 @@
     68.58s  <ret> 발화 (turn11 첫 프레임)
     69.17s  agent 발화 시작: <ret> 시카고에는 인텔리젠시아 커피라는 유명한 카페가 있어요. 고품질 커피와 세련된 분위기로 알려져 있고
     69.19s  user  발화 끝
-    69.84s  ⚡SPAN 주입 [d'=1.27s / d_lead=12.94s]: Intelligentsia Coffee is a popular coffee shop in Chicago, known for i
+    70.09s  ⚡SPAN 주입 [d'=1.52s / d_lead=12.94s]: Intelligentsia Coffee is a popular coffee shop in Chicago, known for i
     82.12s  agent 발화 끝
     83.04s  user  발화 시작: 거기는 내가 가본 적 있어. 다른 곳은 없을까?
     86.08s  <ret> 발화 (turn13 첫 프레임)
     86.25s  agent 발화 시작: <ret> 사와다 커피라는 일본풍의 카페도 있어요. 독특하고 미니멀한 분위기를 자랑하며, 백십이 노스 그린 
     86.42s  user  발화 끝
-    86.94s  ⚡SPAN 주입 [d'=0.86s / d_lead=10.34s]: Sawada Coffee is a Japanese-inspired coffee shop in Chicago, offering 
+    87.19s  ⚡SPAN 주입 [d'=1.11s / d_lead=10.34s]: Sawada Coffee is a Japanese-inspired coffee shop in Chicago, offering 
     96.19s  user  발화 시작: 사와다 커피, 이름이 독특하네.
     96.59s  agent 발화 끝
     98.12s  agent 발화 시작: [curious] 네, 독특한 이름이죠. 커피 맛도 훌륭하다고 해요.
@@ -147,13 +147,13 @@
    106.76s  <ret> 발화 (turn18 첫 프레임)
    106.84s  agent 발화 시작: <ret> 보스턴 도착 후에는 엠 비 티 에이 그린 라인 지하철을 타고 사우스 스테이션으로 가면 돼요.
    107.08s  user  발화 끝
-   108.26s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.23s]: {"mode": "subway", "departure_time": "2026-07-11T15:00:00", "arrival_t
+   108.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: {"mode": "subway", "departure_time": "2026-07-11T15:00:00", "arrival_t
    114.07s  agent 발화 끝
    114.12s  user  발화 시작: 사우스 스테이션에서 내 숙소까지 택시를 타면 얼마나 걸릴까?
    117.68s  <ret> 발화 (turn20 첫 프레임)
    118.05s  user  발화 끝
    118.12s  agent 발화 시작: <ret> 사우스 스테이션에서 리버티 호텔까지 택시를 타면 약 십분 정도 걸리고, 예상 비용은 십오달러입니다
-   118.61s  ⚡SPAN 주입 [d'=0.93s / d_lead=8.58s]: (tool result) {"total time": "10m", "total distance": "2.5 miles", "mo
+   118.86s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.58s]: (tool result) {"total time": "10m", "total distance": "2.5 miles", "mo
    126.70s  agent 발화 끝
    126.71s  user  발화 시작: 십오달러면 괜찮네.
    128.36s  user  발화 끝
@@ -165,7 +165,7 @@
    139.38s  <ret> 발화 (turn25 첫 프레임)
    139.44s  agent 발화 시작: <ret> 네, 시카고에서 이천이십육년 칠월 십이일에 열리는 Tech Innovation Summit 티켓을
    139.60s  user  발화 끝
-   140.55s  ⚡SPAN 주입 [d'=1.18s / d_lead=13.96s]: (tool result) {"event name": "Tech Innovation Summit", "date": "2026-0
+   140.80s  ⚡SPAN 주입 [d'=1.43s / d_lead=13.96s]: (tool result) {"event name": "Tech Innovation Summit", "date": "2026-0
    153.40s  agent 발화 끝
    154.10s  user  발화 시작: 고마워.
    154.86s  agent 발화 시작: [happy] 천만에요. 컨퍼런스 잘 다녀오세요.

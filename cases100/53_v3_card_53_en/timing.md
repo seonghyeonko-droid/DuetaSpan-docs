@@ -4,359 +4,355 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_53",
-#     "name": "Ivy",
+#     "name": "Léa",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "early 40s",
+#     "age_range": "60s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
-#       "category": "bloodtype",
-#       "text": "User's blood type is B+."
+#       "date": "2026-06-18",
+#       "category": "coffee",
+#       "text": "User's usual coffee order is a flat white."
 #     },
 #     {
-#       "date": "2026-05-21",
-#       "category": "streaming",
-#       "text": "User subscribes to Twitch and Spotify."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "hobby",
-#       "text": "User is into freediving."
-#     },
-#     {
-#       "date": "2026-03-25",
+#       "date": "2026-06-09",
 #       "category": "medication",
 #       "text": "User takes insulin."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "sibling",
-#       "text": "User has a younger sibling named Rin."
+#       "date": "2026-05-28",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     },
 #     {
-#       "date": "2026-02-04",
-#       "category": "floor",
-#       "text": "User lives on the 3rd floor."
+#       "date": "2026-05-06",
+#       "category": "allergy",
+#       "text": "User is allergic to tree nuts."
 #     },
 #     {
-#       "date": "2025-12-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-28",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "learning",
-#       "text": "User is studying for the CPA exam."
+#       "date": "2025-12-10",
+#       "category": "skill",
+#       "text": "User is just getting back into trail running."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-13",
-#       "title": "Choosing a preschool",
+#       "date": "2026-05-27",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "wants one within walking distance",
-#         "asked about hours and monthly fees"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-16",
+#       "title": "Fixing a leaking faucet",
 #       "bullets": [
-#         "asked for an early-morning slot next Tuesday",
-#         "prefers Dr. Han at Bright Smile Clinic"
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "title": "Booking a Japan trip",
+#       "bullets": [
+#         "5 nights in Kyoto and Osaka in October",
+#         "wants a JR Pass and a ryokan for one night"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I have a job interview coming up o | S2 What else can I do to relax? | S3 Niagara-on-the-Lake sounds nice. | S4 It's good you remember.
+# EXAMINER(FDB-v2) 단계: S1 I need to pick up a custom order t | S2 Oh, that’s not too far from me. I  | S3 Sotto Mare? I’ve walked past there | S4 I’m also trying to decide what to 
 
-     0.00s  user  발화 시작: I have a job interview coming up on January 11th.
-     3.39s  agent 발화 시작: That’s great to hear, Ivy! Preparing for an interview can be
-     3.51s  user  발화 끝
-     7.47s  agent 발화 끝
-     7.56s  user  발화 시작: It’s at 4:15 PM, so I need to figure out my schedule.
-    12.46s  agent 발화 시작: Okay, 4:15 PM on January 11th. That gives you some time to p
-    12.56s  user  발화 끝
-    14.24s  user  발화 시작: Yeah.
-    14.74s  user  발화 끝
-    17.78s  agent 발화 끝
-    17.80s  user  발화 시작: And the prep course cost 175 Canadian dollars.
-    22.33s  user  발화 끝
-    22.34s  agent 발화 시작: I see. 175 Canadian dollars is a worthwhile investment in yo
-    27.11s  user  발화 시작: I'm really hoping this goes well.
-    27.43s  agent 발화 끝
-    29.24s  agent 발화 시작: I’m sending positive energy your way! Let’s talk about how t
-    29.27s  user  발화 끝
-    31.59s  user  발화 시작: Yeah.
-    32.04s  user  발화 끝
-    34.09s  user  발화 시작: I was reading about biology, and it's fascinating.
-    34.14s  agent 발화 끝
-    37.24s  agent 발화 시작: It truly is a vast and interesting field. What specifically 
-    37.47s  user  발화 끝
-    39.08s  user  발화 시작: Yeah.
-    39.62s  user  발화 끝
-    41.64s  agent 발화 끝
-    41.89s  user  발화 시작: I was wondering who came up with the system of naming things
-    45.77s  agent 발화 시작: Yeah.
-    46.22s  agent 발화 끝
-    47.20s  <ret> 발화 (turn15 첫 프레임)
-    47.24s  agent 발화 시작: <ret> That system—using two terms to name organisms—was form
-    47.40s  user  발화 끝
-    47.87s  ⚡SPAN 주입 [d'=0.66s / d_lead=10.81s]: Carl Linnaeus, a Swedish botanist, zoologist, and physician, formally 
-    57.99s  user  발화 시작: Wow, that’s a mouthful! Linnaeus, huh?
-    58.05s  agent 발화 끝
-    61.23s  agent 발화 시작: [happy] It is a bit of a name to remember, isn't it? He real
-    61.31s  user  발화 끝
-    62.88s  user  발화 시작: Uh-huh.
-    63.38s  user  발화 끝
-    66.14s  agent 발화 끝
-    67.19s  user  발화 시작: It makes me think about how we categorize everything, really
-    70.78s  agent 발화 시작: You’re right, categorization is a fundamental part of how we
-    70.89s  user  발화 끝
-    75.18s  agent 발화 끝
-    75.87s  user  발화 시작: It’s like organizing your closet, I guess.
-    78.96s  user  발화 끝
-    79.47s  agent 발화 시작: That’s a great analogy! A well-organized closet can definite
-    81.97s  user  발화 시작: Yeah, yeah.
-    83.25s  user  발화 끝
-    84.47s  agent 발화 끝
-    85.14s  user  발화 시작: Speaking of stress, I’ve been having trouble winding down at
-    88.05s  agent 발화 시작: Yeah.
-    88.68s  agent 발화 끝
-    89.86s  user  발화 끝
-    89.87s  agent 발화 시작: That's a common struggle, Ivy. Many people find it hard to s
-    94.90s  user  발화 시작: I scroll on my phone until I’m exhausted.
-    95.06s  agent 발화 끝
-    97.87s  user  발화 끝
-    98.14s  agent 발화 시작: That blue light can really interfere with your sleep cycle. 
-   102.82s  agent 발화 끝
-   102.92s  user  발화 시작: Melatonin?
-   104.03s  user  발화 끝
-   104.49s  agent 발화 시작: It's a hormone that regulates sleep. Less melatonin makes it
-   107.25s  user  발화 시작: Uh-huh.
-   107.73s  user  발화 끝
-   109.49s  agent 발화 끝
-   110.50s  user  발화 시작: So, no phone before bed?
-   112.78s  agent 발화 시작: Ideally, try to avoid screens for at least an hour before be
-   112.94s  user  발화 끝
-   115.90s  user  발화 시작: Yeah.
-   116.30s  user  발화 끝
-   117.12s  agent 발화 끝
-   117.65s  user  발화 시작: That sounds… difficult.
-   119.91s  agent 발화 시작: It does take practice, but your sleep will thank you for it.
-   119.95s  user  발화 끝
-   122.68s  user  발화 시작: What else can I do to relax?
-   122.82s  agent 발화 끝
-   124.63s  agent 발화 시작: There are many options! A warm bath, reading a book, or list
-   124.66s  user  발화 끝
-   129.96s  agent 발화 끝
-   130.02s  user  발화 시작: I like to read. Maybe I should start that again.
-   131.98s  agent 발화 시작: Mhm.
-   132.43s  agent 발화 끝
-   132.73s  agent 발화 시작: That’s a wonderful idea! Reading can be a very effective way
-   132.93s  user  발화 끝
-   136.99s  agent 발화 끝
-   137.25s  user  발화 시작: What kind of books do you think are best for relaxing?
-   140.72s  user  발화 끝
-   140.76s  agent 발화 시작: Something light and enjoyable, nothing too stimulating or th
-   145.66s  agent 발화 끝
-   145.83s  user  발화 시작: Maybe a mystery?
-   147.45s  user  발화 끝
-   147.46s  agent 발화 시작: A cozy mystery could be perfect. Something with a gentle pac
-   152.59s  agent 발화 끝
-   153.75s  user  발화 시작: I think I have…
-   155.31s  user  발화 끝
-   157.19s  user  발화 시작: …one on my shelf somewhere…
-   159.21s  agent 발화 시작: [happy] Wonderful! Rediscovering something you already own i
-   159.31s  user  발화 끝
-   161.49s  user  발화 시작: Yeah.
-   161.94s  user  발화 끝
-   163.38s  agent 발화 끝
-   163.73s  user  발화 시작: I’m thinking about getting a new pillow too.
-   166.13s  user  발화 끝
-   166.26s  agent 발화 시작: A good pillow is essential for a comfortable night’s sleep. 
-   168.62s  user  발화 시작: Right.
-   169.11s  user  발화 끝
-   171.07s  agent 발화 끝
-   171.32s  user  발화 시작: I don’t even know! There are so many options.
-   174.56s  user  발화 끝
-   174.59s  agent 발화 시작: There are! Memory foam, down, latex… it can be overwhelming.
-   179.73s  agent 발화 끝
-   180.51s  user  발화 시작: What’s the difference?
-   181.63s  <ret> 발화 (turn56 첫 프레임)
-   181.81s  ⚡SPAN 주입 [d'=0.68s / d_lead=10.44s]: Memory foam pillows conform to the shape of your head and neck, provid
-   181.87s  agent 발화 시작: <ret> Memory foam pillows conform to your head and neck, off
-   181.88s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 57턴 요약, 103f): interview date: January 11th (3m ago); interview time: 4:15 PM (3m ago); prep course cost:
-   192.30s  agent 발화 끝
-   193.55s  user  발화 시작: Latex sounds good, I have allergies.
-   197.11s  user  발화 끝
-   197.31s  agent 발화 시작: That’s a great choice then! Latex is a good option for aller
-   201.44s  user  발화 시작: Maybe I'll look at those online.
-   202.03s  agent 발화 끝
-   203.37s  user  발화 끝
-   203.59s  agent 발화 시작: There are many retailers that sell latex pillows online, and
-   206.03s  user  발화 시작: Right.
-   206.66s  user  발화 끝
-   209.80s  agent 발화 끝
-   209.81s  user  발화 시작: I was thinking about taking a weekend getaway.
-   212.58s  agent 발화 시작: That sounds lovely! A change of scenery can be very rejuvena
-   212.67s  user  발화 끝
-   214.94s  user  발화 시작: Yeah.
-   215.54s  user  발화 끝
-   216.91s  user  발화 시작: Maybe somewhere not too far from Toronto?
-   216.98s  agent 발화 끝
-   219.82s  user  발화 끝
-   219.89s  agent 발화 시작: There are several charming towns within a few hours’ drive. 
-   223.07s  user  발화 시작: Yeah.
-   223.71s  user  발화 끝
-   225.69s  user  발화 시작: Niagara-on-the-Lake sounds nice.
-   225.82s  agent 발화 끝
-   228.47s  user  발화 끝
-   228.62s  agent 발화 시작: It’s a beautiful town with wineries, theaters, and historic 
-   232.84s  agent 발화 끝
-   233.82s  user  발화 시작: Have you been?
-   234.72s  agent 발화 시작: As a peer supporter, I don't travel! But I've read a lot abo
-   235.10s  user  발화 끝
-   240.80s  user  발화 시작: I wonder what the weather is like there right now.
-   240.97s  agent 발화 끝
-   242.85s  <ret> 발화 (turn73 첫 프레임)
-   243.29s  agent 발화 시작: <ret> The weather in Niagara-on-the-Lake is currently 18.5 d
-   243.53s  user  발화 끝
-   243.70s  ⚡SPAN 주입 [d'=0.85s / d_lead=10.99s]: (tool result) 18.5°C, humidity 62%, wind 12.8 km/h, condition: partly 
-   250.15s  user  발화 시작: Mm-hmm.
-   250.56s  user  발화 끝
-   254.28s  agent 발화 끝
-   254.55s  user  발화 시작: That sounds perfect!
-   256.54s  user  발화 끝
-   256.55s  user  발화 시작: I'm trying to establish a consistent wake-up time. It's so h
-   259.00s  agent 발화 시작: Yeah.
-   259.49s  agent 발화 끝
-   261.55s  user  발화 끝
-   261.80s  agent 발화 시작: I understand. It’s challenging to change a habit, especially
-   264.74s  user  발화 시작: Right.
-   265.15s  user  발화 끝
-   266.14s  user  발화 시작: I keep hitting snooze.
-   266.33s  agent 발화 끝
-   268.08s  user  발화 끝
-   268.44s  agent 발화 시작: That’s very common! It disrupts your sleep cycle and can lea
-   272.93s  agent 발화 끝
-   273.12s  user  발화 시작: What’s the best way to break that habit?
-   275.68s  agent 발화 시작: Try placing your alarm across the room, so you have to get o
-   275.71s  user  발화 끝
-   280.08s  agent 발화 끝
-   280.46s  user  발화 시작: That’s… mean.
-   282.00s  agent 발화 시작: [laugh] It’s a little tough love! But it can be effective.
-   282.07s  user  발화 끝
-   283.23s  user  발화 시작: Yeah.
-   283.68s  user  발화 끝
-   285.90s  user  발화 시작: I guess I could try it.
-   286.16s  agent 발화 끝
-   287.35s  agent 발화 시작: Small steps can make a big difference.
-   287.65s  user  발화 끝
-   288.38s  user  발화 시작: Yeah.
-   288.92s  user  발화 끝
-   289.34s  user  발화 시작: Do you think a weighted blanket would help?
-   289.47s  agent 발화 끝
-   291.73s  user  발화 끝
-   292.14s  agent 발화 시작: Some people find weighted blankets very comforting. They can
-   298.40s  user  발화 시작: How do they work?
-   298.54s  agent 발화 끝
-   299.17s  <ret> 발화 (turn93 첫 프레임)
-   299.56s  ⚡SPAN 주입 [d'=1.50s / d_lead=8.78s]: Weighted blankets apply gentle, distributed pressure to the body, whic
-   299.61s  agent 발화 시작: <ret> Weighted blankets apply gentle pressure to your body, 
-   299.82s  user  발화 끝
-   303.78s  user  발화 시작: Right.
-   304.37s  user  발화 끝
-   308.39s  agent 발화 끝
-   308.41s  user  발화 시작: That sounds… nice.
-   310.80s  agent 발화 시작: It’s like a gentle hug! It can be very soothing.
-   310.86s  user  발화 끝
-   313.65s  user  발화 시작: I'm trying to remember… what time did I say my interview was
-   313.76s  agent 발화 끝
-   318.47s  user  발화 끝
-   318.49s  agent 발화 시작: You said your interview is on January 11th at 4:15 PM.
-   322.70s  agent 발화 끝
-   325.44s  user  발화 시작: Right, thanks! I always forget.
-   328.02s  user  발화 끝
-   328.08s  agent 발화 시작: It's easy to lose track of details when you have a lot on yo
-   331.64s  agent 발화 끝
-   332.42s  user  발화 시작: It's good you remember.
-   333.78s  agent 발화 시작: I'm here to help!
-   333.79s  user  발화 끝
-   334.60s  agent 발화 끝
-   334.64s  user  발화 시작: I think I need to book a massage.
-   337.01s  agent 발화 시작: That’s a fantastic idea! Massage can be incredibly relaxing 
-   337.14s  user  발화 끝
-   342.80s  agent 발화 끝
-   342.92s  user  발화 시작: Do you know any good places in Toronto?
-   345.98s  agent 발화 시작: There are many excellent massage therapy clinics in Toronto.
-   346.02s  user  발화 끝
-   352.05s  agent 발화 끝
-   352.44s  user  발화 시작: I’m not sure. Swedish?
-   354.69s  user  발화 끝
-   355.08s  agent 발화 시작: Swedish massage is a good starting point. It’s gentle and re
-   359.21s  agent 발화 끝
-   359.22s  user  발화 시작: Okay, let’s look for a Swedish massage in Toronto.
-   362.31s  <ret> 발화 (turn110 첫 프레임)
-   362.73s  ⚡SPAN 주입 [d'=0.41s / d_lead=4.07s]: (tool result) Stillwater Spa offers a variety of massage services, inc
-   362.90s  agent 발화 시작: <ret> Stillwater Spa offers Swedish massage in a tranquil se
-   363.06s  user  발화 끝
-   365.88s  user  발화 시작: Yeah, totally.
-   366.97s  agent 발화 끝
-   367.16s  user  발화 끝
-   367.62s  user  발화 시작: That sounds… nice.
-   369.74s  user  발화 끝
-   370.17s  agent 발화 시작: It has good reviews online. Would you like me to find their 
-   372.01s  user  발화 시작: Yeah.
-   372.51s  user  발화 끝
-   374.52s  agent 발화 끝
-   374.69s  user  발화 시작: Actually, how much did I say the prep course cost again?
-   378.29s  agent 발화 시작: You said the prep course cost 175 Canadian dollars.
-   378.30s  user  발화 끝
-   380.19s  user  발화 시작: Mm-hmm.
-   380.73s  user  발화 끝
-   382.69s  agent 발화 끝
-   382.82s  user  발화 시작: Oh yes, that's right.
-   384.00s  🃏 CARD 주입 (4800f, 누적 119턴 요약, 113f): interview date: January 11th (6m ago); interview time: 4:15 PM (6m ago); prep course cost:
-   384.66s  user  발화 끝
-   384.72s  agent 발화 시작: [happy] Glad I could help jog your memory!
-   385.25s  user  발화 시작: Yeah.
-   385.75s  user  발화 끝
-   386.61s  agent 발화 끝
-   386.69s  user  발화 시작: I’m glad you remember everything.
-   388.66s  agent 발화 시작: I’m designed to be attentive and supportive, Ivy.
-   388.90s  user  발화 끝
-   391.29s  user  발화 시작: I think I'll try to get to bed early tonight.
-   391.44s  agent 발화 끝
-   394.21s  agent 발화 시작: That’s a wonderful goal. A good night’s sleep will do you a 
-   394.42s  user  발화 끝
-   395.92s  user  발화 시작: Yeah.
-   396.42s  user  발화 끝
-   398.33s  agent 발화 끝
-   398.40s  user  발화 시작: I’m going to turn off my phone an hour before bed.
-   401.77s  agent 발화 시작: That’s a great first step. You’re taking positive action to 
-   401.92s  user  발화 끝
-   404.94s  user  발화 시작: Yeah.
-   405.44s  user  발화 끝
-   406.44s  agent 발화 끝
-   406.53s  user  발화 시작: I might read a chapter of my mystery novel.
-   409.62s  agent 발화 시작: That sounds like a perfect way to unwind.
-   409.67s  user  발화 끝
-   410.41s  user  발화 시작: Yeah.
-   410.86s  user  발화 끝
-   412.11s  agent 발화 끝
-   412.44s  user  발화 시작: Thanks for talking me through all this.
-   414.27s  agent 발화 시작: You’re very welcome, Ivy. I’m here for you, and I'm glad I c
-   414.37s  user  발화 끝
-   423.41s  agent 발화 끝
+     0.00s  user  발화 시작: I need to pick up a custom order today.
+     2.38s  agent 발화 시작: Sounds good, Léa.
+     2.50s  user  발화 끝
+     3.67s  agent 발화 끝
+     3.77s  user  발화 시작: I put down a deposit on it back on November 8th.
+     6.86s  user  발화 끝
+     6.86s  agent 발화 시작: I see. And what time were you planning to pick it up?
+     8.24s  user  발화 시작: Yeah, yeah.
+     9.76s  user  발화 끝
+     9.92s  agent 발화 끝
+     9.93s  user  발화 시작: At 4:15 PM, I think. It was 65 dollars for the deposit.
+    14.11s  agent 발화 시작: Okay, November 8th at 4:15 PM, a 65 dollar deposit.
+    14.29s  user  발화 끝
+    18.05s  user  발화 시작: Actually, I was just wondering… who sang “Tell Me Lies”?
+    18.41s  agent 발화 끝
+    22.37s  <ret> 발화 (turn8 첫 프레임)
+    22.66s  agent 발화 시작: <ret> Oh, that’s a classic! The song you’re thinking of is b
+    22.78s  user  발화 끝
+    23.05s  ⚡SPAN 주입 [d'=0.68s / d_lead=3.84s]: Fleetwood Mac released "Tell Me Lies" as a single from their 1977 albu
+    26.16s  user  발화 시작: Fleetwood Mac, right. I always get them mixed up with other 
+    26.49s  agent 발화 끝
+    30.90s  agent 발화 시작: It's easy to do! That whole scene was full of incredible art
+    30.97s  user  발화 끝
+    35.39s  agent 발화 끝
+    35.69s  user  발화 시작: It was. Speaking of remembering things, I'm trying to reorga
+    38.79s  agent 발화 시작: Yeah.
+    39.23s  agent 발화 끝
+    41.37s  agent 발화 시작: That sounds like a good project. A tidy space can do wonders
+    41.48s  user  발화 끝
+    43.75s  user  발화 시작: Yeah.
+    44.21s  user  발화 끝
+    46.05s  agent 발화 끝
+    46.91s  user  발화 시작: Exactly! I keep meaning to get better at prioritizing. Urgen
+    53.35s  user  발화 끝
+    53.52s  agent 발화 시작: Precisely. Distinguishing between the two is a key step towa
+    57.22s  user  발화 시작: Okay.
+    58.04s  user  발화 끝
+    58.57s  agent 발화 끝
+    58.63s  user  발화 시작: I always feel like everything is urgent.
+    61.35s  user  발화 끝
+    61.36s  agent 발화 시작: That’s a very common feeling, Léa. We can work on strategies
+    64.63s  user  발화 시작: Right.
+    64.98s  user  발화 끝
+    66.54s  agent 발화 끝
+    67.34s  user  발화 시작: I'd like that. Maybe batching similar tasks?
+    70.62s  user  발화 끝
+    71.13s  agent 발화 시작: Batching is excellent. Grouping similar tasks minimizes cont
+    76.97s  agent 발화 끝
+    77.52s  user  발화 시작: I've heard about that. Do you think it works for things like
+    81.53s  agent 발화 시작: Designating specific times for email instead of checking con
+    81.68s  user  발화 끝
+    83.30s  user  발화 시작: Yeah.
+    83.94s  user  발화 끝
+    87.37s  agent 발화 끝
+    88.12s  user  발화 시작: Hmm, I should try that. I’m also thinking about getting a ne
+    92.13s  agent 발화 시작: A fresh cut can definitely lift your spirits! Are you lookin
+    92.34s  user  발화 끝
+    97.69s  agent 발화 끝
+    98.26s  user  발화 시작: Not really. Just a good salon, somewhere convenient.
+   102.10s  user  발화 끝
+   102.27s  agent 발화 시작: <ret> For a skilled cut in San Francisco, a highly-rated spo
+   102.29s  <ret> 발화 (turn29 첫 프레임)
+   103.59s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.14s]: Edwards and Co in Paddington is a highly-rated hair salon offering a r
+   107.41s  agent 발화 끝
+   107.50s  user  발화 시작: Edwards and Co? I haven’t heard of them. Where are they loca
+   112.17s  agent 발화 시작: They're located at 1800 Fillmore Street, San Francisco.
+   112.22s  user  발화 끝
+   113.86s  user  발화 시작: Uh-huh.
+   114.36s  user  발화 끝
+   116.42s  user  발화 시작: Oh, that’s not too far from me. I might check them out.
+   116.80s  agent 발화 끝
+   117.79s  agent 발화 시작: Yeah, yeah.
+   119.07s  agent 발화 끝
+   119.46s  agent 발화 시작: Excellent. They seem to have very positive reviews online.
+   119.66s  user  발화 끝
+   122.61s  agent 발화 끝
+   122.78s  user  발화 시작: Good to know. I’m also trying to find a good book to read.
+   126.78s  agent 발화 시작: Wonderful! What genres do you typically enjoy, Léa?
+   126.94s  user  발화 끝
+   130.53s  user  발화 시작: I like mysteries and thrillers mostly. Something with a good
+   130.53s  agent 발화 끝
+   132.73s  agent 발화 시작: Yeah.
+   133.23s  agent 발화 끝
+   135.25s  <ret> 발화 (turn40 첫 프레임)
+   135.31s  agent 발화 시작: <ret> If you enjoy a good twist, you might like "The Silent 
+   135.53s  user  발화 끝
+   136.34s  ⚡SPAN 주입 [d'=1.09s / d_lead=4.86s]: "The Silent Patient" by Alex Michaelides is a psychological thriller w
+   140.17s  agent 발화 끝
+   140.31s  user  발화 시작: That sounds interesting. I’ll…
+   142.90s  user  발화 끝
+   144.68s  user  발화 시작: …add it to my list.
+   145.12s  agent 발화 시작: Okay.
+   145.75s  agent 발화 끝
+   146.08s  agent 발화 시작: Great! A good book is always a welcome escape.
+   146.15s  user  발화 끝
+   149.28s  user  발화 시작: It is. I'm thinking about taking a weekend trip soon, too.
+   149.31s  agent 발화 끝
+   152.48s  agent 발화 시작: Yeah, yeah.
+   153.72s  agent 발화 끝
+   153.80s  agent 발화 시작: That sounds lovely! Do you have any destinations in mind?
+   153.90s  user  발화 끝
+   156.89s  user  발화 시작: Mhm.
+   157.39s  user  발화 끝
+   157.96s  agent 발화 끝
+   158.37s  user  발화 시작: Not yet. Somewhere relaxing, maybe near the beach.
+   162.44s  user  발화 끝
+   162.78s  agent 발화 시작: [happy] A relaxing beach getaway sounds perfect. Perhaps som
+   168.56s  agent 발화 끝
+   169.93s  user  발화 시작: That’s a good idea. Maybe Monterey or Carmel?
+   172.32s  agent 발화 시작: Yeah.
+   172.77s  agent 발화 끝
+   173.37s  <ret> 발화 (turn53 첫 프레임)
+   173.60s  agent 발화 시작: <ret> Carmel-by-the-Sea is a charming coastal city known for
+   173.68s  user  발화 끝
+   174.32s  ⚡SPAN 주입 [d'=0.95s / d_lead=4.86s]: Carmel-by-the-Sea is a charming coastal city in California known for i
+   178.46s  agent 발화 끝
+   179.14s  user  발화 시작: Carmel sounds nice. How far is that from San Francisco?
+   183.30s  user  발화 끝
+   183.35s  agent 발화 시작: It’s approximately 120 miles south of San Francisco, about a
+   189.00s  agent 발화 끝
+   189.16s  user  발화 시작: Okay, that's not too bad. I could definitely do that.
+   192.00s  🃏 CARD 주입 (2400f, 누적 57턴 요약, 85f): deposit date: November 8th (3m ago); pickup time: 4:15 PM (3m ago); deposit amount: 65 dol
+   192.12s  user  발화 끝
+   192.15s  agent 발화 시작: It’s a very scenic drive. You could even stop in Monterey al
+   196.18s  agent 발화 끝
+   197.03s  user  발화 시작: That’s a good idea. I love the Monterey Bay Aquarium.
+   201.15s  user  발화 끝
+   201.37s  agent 발화 시작: It’s a fantastic aquarium! A very popular attraction.
+   204.93s  agent 발화 끝
+   205.90s  user  발화 시작: It is. I'm also trying to find a good place to get Italian f
+   209.48s  <ret> 발화 (turn61 첫 프레임)
+   209.97s  agent 발화 시작: <ret> For a delicious Italian meal, a popular spot is… Sotto
+   210.07s  user  발화 끝
+   210.59s  ⚡SPAN 주입 [d'=1.10s / d_lead=6.30s]: Sotto Mare Oysteria & Seafood in North Beach is a popular Italian rest
+   216.27s  agent 발화 끝
+   218.41s  user  발화 시작: Sotto Mare? I’ve walked past there. I didn’t realize it was 
+   220.31s  agent 발화 시작: Yeah.
+   220.81s  agent 발화 끝
+   223.05s  agent 발화 시작: It’s very well-regarded, especially for their seafood.
+   223.13s  user  발화 끝
+   224.75s  user  발화 시작: Mm-hmm.
+   225.29s  user  발화 끝
+   225.63s  agent 발화 끝
+   225.64s  user  발화 시작: I love seafood. I'll have to try it.
+   228.69s  user  발화 끝
+   228.81s  agent 발화 시작: You definitely should. It’s a local favorite.
+   231.05s  user  발화 시작: I’m starting to feel a little overwhelmed with everything I 
+   231.12s  agent 발화 끝
+   235.43s  agent 발화 시작: [sigh] It’s understandable to feel overwhelmed when you have
+   235.49s  user  발화 끝
+   240.43s  agent 발화 끝
+   240.74s  user  발화 시작: It's just a lot. Maybe I should focus on one thing at a time
+   245.27s  user  발화 끝
+   245.47s  agent 발화 시작: Single-tasking is a powerful technique. It allows you to giv
+   249.94s  user  발화 시작: Mm-hmm.
+   250.48s  user  발화 끝
+   251.81s  user  발화 시작: That makes sense. I need to be more mindful.
+   251.96s  agent 발화 끝
+   254.84s  agent 발화 시작: Mindfulness is a wonderful practice. It can help you stay gr
+   255.00s  user  발화 끝
+   258.89s  user  발화 시작: I'll try to remember that. I’m also thinking about getting n
+   258.95s  agent 발화 끝
+   263.51s  user  발화 끝
+   263.53s  agent 발화 시작: New curtains can really brighten up a room! Are you looking 
+   265.34s  user  발화 시작: Yeah.
+   265.84s  user  발화 끝
+   268.57s  agent 발화 끝
+   268.61s  user  발화 시작: Not yet. Just browsing for ideas.
+   271.38s  user  발화 끝
+   271.39s  agent 발화 시작: That’s a good starting point. Inspiration often strikes when
+   276.11s  agent 발화 끝
+   276.58s  user  발화 시작: True. I feel like I'm always running around.
+   279.55s  agent 발화 시작: It sounds like you have a very full life, Léa.
+   279.63s  user  발화 끝
+   281.30s  user  발화 시작: Right.
+   281.80s  user  발화 끝
+   282.60s  agent 발화 끝
+   282.62s  user  발화 시작: I do. Sometimes I wish I could just slow down.
+   284.00s  agent 발화 시작: Uh-huh.
+   284.50s  agent 발화 끝
+   286.32s  agent 발화 시작: [happy] Finding moments of calm amidst the busyness is essen
+   286.38s  user  발화 끝
+   290.35s  agent 발화 끝
+   290.75s  user  발화 시작: I agree. I need to schedule more downtime.
+   293.70s  user  발화 끝
+   294.15s  agent 발화 시작: Scheduling downtime is a proactive way to prioritize self-ca
+   298.16s  user  발화 시작: I should do that. I’m also thinking about getting a massage.
+   298.31s  agent 발화 끝
+   301.93s  <ret> 발화 (turn89 첫 프레임)
+   302.19s  agent 발화 시작: <ret> For a relaxing massage in San Francisco, Kabuki Spring
+   302.37s  user  발화 끝
+   303.84s  ⚡SPAN 주입 [d'=1.91s / d_lead=4.86s]: Kabuki Springs & Spa in Japantown offers a variety of massage services
+   307.05s  agent 발화 끝
+   307.89s  user  발화 시작: Kabuki Springs? I’ve heard of that place. Is it expensive?
+   312.06s  user  발화 끝
+   312.33s  agent 발화 시작: Their prices vary depending on the service, but generally ra
+   314.17s  user  발화 시작: Yeah.
+   314.80s  user  발화 끝
+   317.86s  user  발화 시작: Okay, that’s not too bad. I might look into that.
+   318.02s  agent 발화 끝
+   320.45s  user  발화 끝
+   320.49s  agent 발화 시작: Excellent. They have a very good reputation.
+   321.44s  user  발화 시작: Okay.
+   321.94s  user  발화 끝
+   323.07s  agent 발화 끝
+   324.66s  user  발화 시작: I’m also trying to decide what to make for dinner tonight.
+   326.06s  agent 발화 시작: Yeah.
+   326.56s  agent 발화 끝
+   328.41s  user  발화 끝
+   328.44s  agent 발화 시작: Oh, fun! Do you have any ingredients you'd like to use up?
+   330.83s  user  발화 시작: Mm-hmm.
+   331.27s  user  발화 끝
+   332.00s  user  발화 시작: I have some chicken and vegetables.
+   332.00s  agent 발화 끝
+   333.67s  <ret> 발화 (turn101 첫 프레임)
+   333.96s  agent 발화 시작: <ret> A simple option with chicken and vegetables would be L
+   334.12s  user  발화 끝
+   334.42s  ⚡SPAN 주입 [d'=0.75s / d_lead=4.25s]: Lemon Herb Roasted Chicken with Roasted Vegetables is a simple and fla
+   336.81s  user  발화 시작: Yeah.
+   337.26s  user  발화 끝
+   338.22s  agent 발화 끝
+   339.06s  user  발화 시작: That sounds good. I like roasted chicken.
+   341.87s  agent 발화 시작: It’s a classic for a reason! Delicious and relatively easy t
+   342.11s  user  발화 끝
+   344.87s  user  발화 시작: Yeah.
+   345.27s  user  발화 끝
+   346.64s  user  발화 시작: It is. I’m also trying to find a good podcast to listen to.
+   346.73s  agent 발화 끝
+   350.92s  agent 발화 시작: Wonderful! What topics interest you?
+   350.99s  user  발화 끝
+   353.36s  agent 발화 끝
+   353.53s  user  발화 시작: True crime, mostly.
+   355.27s  <ret> 발화 (turn109 첫 프레임)
+   355.38s  agent 발화 시작: <ret> If you like true crime, you might enjoy the podcast "C
+   355.51s  user  발화 끝
+   356.05s  ⚡SPAN 주입 [d'=0.79s / d_lead=3.24s]: "Crime Junkie" is a popular true crime podcast covering a wide range o
+   358.61s  agent 발화 끝
+   359.63s  user  발화 시작: I’ve heard of that one. I’ll check it out.
+   362.17s  user  발화 끝
+   362.25s  agent 발화 시작: It's very popular among true crime enthusiasts.
+   363.78s  user  발화 시작: Yeah.
+   364.28s  user  발화 끝
+   365.02s  agent 발화 끝
+   366.43s  user  발화 시작: It sounds good. I need to remember what time I said I was pi
+   371.82s  agent 발화 시작: You said you were picking it up on November 8th at 4:15 PM.
+   371.93s  user  발화 끝
+   375.30s  user  발화 시작: Right, 4:15 PM. Thanks for reminding me.
+   375.75s  agent 발화 끝
+   378.74s  agent 발화 시작: You’re very welcome, Léa.
+   378.91s  user  발화 끝
+   379.70s  user  발화 시작: I’m also trying to recall how much the deposit was again.
+   380.31s  agent 발화 끝
+   383.33s  agent 발화 시작: You said the deposit was 65 dollars.
+   383.40s  user  발화 끝
+   384.00s  🃏 CARD 주입 (4800f, 누적 119턴 요약, 90f): user name: Léa (6m ago); deposit date: November 8th (6m ago); pickup time: 4:15 PM (6m ago
+   386.48s  agent 발화 끝
+   387.11s  user  발화 시작: Oh yes, 65 dollars. Okay, good.
+   389.96s  agent 발화 시작: I'm glad I could help.
+   390.07s  user  발화 끝
+   391.08s  user  발화 시작: Not right now, I think. Just trying to get organized.
+   391.25s  agent 발화 끝
+   393.74s  agent 발화 시작: Mm-hmm.
+   394.24s  agent 발화 끝
+   395.01s  agent 발화 시작: That’s a wonderful goal. Remember to be kind to yourself thr
+   395.20s  user  발화 끝
+   399.21s  agent 발화 끝
+   399.31s  user  발화 시작: I will. Thank you, Fuon.
+   401.12s  agent 발화 시작: [happy] You're very welcome, Léa. Have a wonderful day!
+   401.29s  user  발화 끝
+   404.27s  agent 발화 끝

@@ -98,5 +98,5 @@
     29.09s  <ret> 발화 (turn6 첫 프레임)
     29.27s  agent 발화 시작: <ret> The best way to start is often just reaching out first
     29.35s  user  발화 끝
-    30.09s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.56s]: Reaching out first is a great way to start building friendships, as it
+    30.34s  ⚡SPAN 주입 [d'=1.24s / d_lead=12.56s]: Reaching out first is a great way to start building friendships, as it
     41.84s  agent 발화 끝

@@ -77,11 +77,11 @@
 
      0.00s  user  발화 시작: I want to send my location to David Brown.
      1.05s  agent 발화 시작: Yeah.
+     1.38s  <ret> 발화 (turn2 첫 프레임)
      1.54s  agent 발화 끝
-     2.22s  <ret> 발화 (turn2 첫 프레임)
      2.44s  agent 발화 시작: <ret> Great! Your location has been sent to David Brown – it
      2.54s  user  발화 끝
-     2.71s  ⚡SPAN 주입 [d'=1.09s / d_lead=6.72s]: (tool result) {"status": "success", "latitude": 35.1295, "longitude": 
+     2.71s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.72s]: (tool result) {"status": "success", "latitude": 35.1295, "longitude": 
      9.15s  agent 발화 끝
      9.87s  user  발화 시작: Thanks! I’m actually interviewing with a company tomorrow. A
     12.56s  agent 발화 시작: Uh-huh.
@@ -113,7 +113,7 @@
     82.09s  <ret> 발화 (turn17 첫 프레임)
     82.35s  user  발화 끝
     82.38s  agent 발화 시작: <ret> I can help with that! I analyzed your resume, and it s
-    83.24s  ⚡SPAN 주입 [d'=1.15s / d_lead=10.30s]: (tool result) {"overall score": 65, "keywords missing": Agile, Scrum, 
+    83.49s  ⚡SPAN 주입 [d'=1.40s / d_lead=10.30s]: (tool result) {"overall score": 65, "keywords missing": Agile, Scrum, 
     92.58s  agent 발화 시작: It also recommends a modern template and focusing on quantif
     92.68s  agent 발화 끝
     97.48s  agent 발화 끝

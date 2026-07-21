@@ -81,23 +81,23 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Please refund twenty-five dollars and fifty cents for capture ID C-one-two-three-four-five-six-seven-eight-nine-zero, invoice INV-nine-eight-seven-six-five-four-three-two-one-zero, and add a note about a damaged item.
-[ 14.68s][moshi] ⟨ret@14.47s⟩ ⟦⚡SPAN@15.50s: (tool result) Refund created: ID R-4567890123, amount $25.50, status pending.⟧ Okay, I’ve created a refund request for twenty-five dollars and fifty cents, capture ID C-one-two-three-four-five-six-seven-eight-nine-zero, with a note about a damaged item. The refund ID is R-four-five-six-seven-eight-nine-zero-one-two-three, and it’s currently pending.
+[ 14.68s][moshi] ⟨ret@14.47s⟩ Okay, ⟦⚡SPAN@15.75s: (tool result) Refund created: ID R-4567890123, amount $25.50, status pending.⟧ I’ve created a refund request for twenty-five dollars and fifty cents, capture ID C-one-two-three-four-five-six-seven-eight-nine-zero, with a note about a damaged item. The refund ID is R-four-five-six-seven-eight-nine-zero-one-two-three, and it’s currently pending.
       CALL: {"function": "create_refund", "arguments": {"amount": 25.5, "capture_id": "C-1234567890", "invoice_id": "INV-9876543210", "note": "damaged item"}}
 [ 21.02s][user ] «backchannel» Mhm.
 [ 32.88s][user ] That’s great, thanks. Uh, I’m thinking about a trip, actually… to Seoul.
 [ 38.78s][moshi] [happy] Oh, Seoul is a fantastic choice! It's such a vibrant city.
 [ 44.04s][user ] Yeah, but I’m not sure when to go—I was thinking maybe next month… or the month after? – no, definitely ⟨ret@50.12s⟩ next month.
-[ 50.52s][moshi] ⟦⚡SPAN@50.76s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ So, today is July tenth, two thousand twenty-six, which means next month would be August. August is a lovely time to visit Seoul, with generally warm weather.
+[ 50.52s][moshi] ⟦⚡SPAN@51.01s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ So, today is July tenth, two thousand twenty-six, which means next month would be August. August is a lovely time to visit Seoul, with generally warm weather.
 [ 59.23s][user ] «backchannel» Mhm.
 [ 62.40s][moshi] It’s a popular tourist season, though, so expect more crowds.
 [ 64.50s][user ] «backchannel» Yeah.
-[ 67.07s][user ] Crowds are…okay, I guess. What’s the weather usually like in Seoul in ⟨ret@73.21s⟩ August?
+[ 67.07s][user ] Crowds are…okay, I guess. What’s the weather usually like in Seoul ⟨ret@72.47s⟩ in August?
 [ 73.44s][moshi] ⟦⚡SPAN@73.77s: (tool result) Seoul, August 15, 2026: 28.5°C, humidity 78%, wind 6.2 km/h, partly cloudy.⟧ On August fifteenth, two thousand twenty-six, the weather in Seoul is expected to be twenty-eight point five degrees Celsius, with seventy-eight percent humidity and a six point two kilometer per hour wind, and it will be partly cloudy.
       CALL: {"function": "get_weather", "arguments": {"city": "Seoul", "date": "2026-08-15"}}
 [ 88.30s][user ] That sounds…warm.
 [ 90.71s][moshi] [curious] It is! But it's a manageable warmth, especially with the city’s excellent air conditioning. Perhaps we can look at some indoor activities to balance it out?
 [101.79s][user ] Actually, I need to book a taxi to the airport. My flight is at seven PM next ⟨ret@107.38s⟩ Tuesday.
-[107.76s][moshi] Next ⟦⚡SPAN@108.43s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ Tuesday is July twenty-first, two thousand twenty-six. I can book a taxi for you. What’s your current location?
+[107.76s][moshi] Next ⟦⚡SPAN@108.68s: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ Tuesday is July twenty-first, two thousand twenty-six. I can book a taxi for you. What’s your current location?
 [116.86s][user ] I’m at the Grand ⟨ret@118.58s⟩ Hyatt hotel.
-[119.07s][moshi] ⟦⚡SPAN@119.07s: (tool result) Taxi booked: ID TX-7890123456, pickup 7:00 PM July 21, Grand Hyatt hotel to Incheon Internationa⟧ Perfect! A taxi is booked for you, ID TX-seven-eight-nine-zero-one-two-three-four-five-six, picking you up at seven PM on July twenty-first from the Grand Hyatt hotel, heading to Incheon International Airport. That should give you plenty of time to get to the airport without rushing.
+[119.07s][moshi] ⟦⚡SPAN@119.32s: (tool result) Taxi booked: ID TX-7890123456, pickup 7:00 PM July 21, Grand Hyatt hotel to Incheon Internationa⟧ Perfect! A taxi is booked for you, ID TX-seven-eight-nine-zero-one-two-three-four-five-six, picking you up at seven PM on July twenty-first from the Grand Hyatt hotel, heading to Incheon International Airport. That should give you plenty of time to get to the airport without rushing.
       CALL: {"function": "book_taxi", "arguments": {"pickup_location": "Grand Hyatt hotel", "destination": "Incheon International Airport", "pickup_time": "2026-07-21T19:00:00"}}

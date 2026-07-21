@@ -72,8 +72,8 @@
      0.00s  user  발화 시작: 혹시 사물 인터넷이라는 말이 언제 처음 나왔는지 아세요?
      3.49s  <ret> 발화 (turn1 첫 프레임)
      3.85s  agent 발화 시작: <ret> 사물 인터넷이라는 말은 천구백구십구년에 프로クター 앤 갬블에서 일하던 케빈 애쉬턴이 처음 사용했어
-     3.94s  ⚡SPAN 주입 [d'=0.46s / d_lead=6.77s]: The term “Internet of Things” was coined by Kevin Ashton in 1999 while
      4.03s  user  발화 끝
+     4.19s  ⚡SPAN 주입 [d'=0.71s / d_lead=6.77s]: The term “Internet of Things” was coined by Kevin Ashton in 1999 while
      8.75s  user  발화 시작: 그렇죠.
      9.57s  user  발화 끝
     10.62s  agent 발화 끝

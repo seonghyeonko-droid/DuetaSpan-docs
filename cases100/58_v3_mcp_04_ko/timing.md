@@ -91,7 +91,7 @@
      6.84s  <ret> 발화 (turn2 첫 프레임)
      7.17s  user  발화 끝
      7.19s  agent 발화 시작: <ret> 벨라지오 호텔, 라스베이거스, 이천이십육년 칠월 십팔일부터 사박 예약이 완료되었어요. 확인 번호는
-     7.81s  ⚡SPAN 주입 [d'=0.97s / d_lead=9.23s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
+     8.06s  ⚡SPAN 주입 [d'=1.22s / d_lead=9.23s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
     14.20s  user  발화 시작: 응응.
     14.97s  user  발화 끝
     16.41s  agent 발화 끝
@@ -101,7 +101,7 @@
     27.38s  agent 발화 끝
     27.55s  user  발화 시작: 그 호텔 주변에 괜찮은 식당 좀 찾아줘.
     29.72s  <ret> 발화 (turn7 첫 프레임)
-    30.02s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.44s]: (tool result) "The Mayfair Supper Club at Bellagio offers a sophistica
     30.18s  agent 발화 시작: <ret> 벨라지오 호텔 근처에는 메이페어 슈퍼 클럽이라는 식당이 있어요. 라이브 공연을 보면서 현대 미국 
     30.27s  user  발화 끝
+    30.32s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.44s]: (tool result) "The Mayfair Supper Club at Bellagio offers a sophistica
     38.61s  agent 발화 끝

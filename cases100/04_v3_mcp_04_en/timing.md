@@ -89,7 +89,7 @@
 
      0.00s  user  발화 시작: I need a room at the Bellagio in Las Vegas for four nights, 
      4.78s  <ret> 발화 (turn1 첫 프레임)
-     5.08s  ⚡SPAN 주입 [d'=0.30s / d_lead=13.55s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
+     5.38s  ⚡SPAN 주입 [d'=0.60s / d_lead=13.55s]: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check i
      5.40s  agent 발화 시작: <ret> I’ve reserved a King Suite at the Bellagio in Las Vega
      5.59s  user  발화 끝
     15.77s  user  발화 시작: Right.
@@ -104,8 +104,8 @@
     34.92s  user  발화 시작: Maybe. What about something around, say, one thousand five h
     37.95s  agent 발화 시작: Mhm.
     38.39s  agent 발화 끝
+    39.04s  <ret> 발화 (turn8 첫 프레임)
     39.18s  user  발화 끝
-    39.21s  <ret> 발화 (turn8 첫 프레임)
     39.22s  agent 발화 시작: <ret> I found a Standard Room at the Excalibur for nine hund
-    40.21s  ⚡SPAN 주입 [d'=1.00s / d_lead=11.64s]: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check 
+    40.29s  ⚡SPAN 주입 [d'=1.25s / d_lead=11.64s]: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check 
     50.85s  agent 발화 끝

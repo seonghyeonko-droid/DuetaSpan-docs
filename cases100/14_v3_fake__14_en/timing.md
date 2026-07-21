@@ -94,7 +94,7 @@
      9.95s  <ret> 발화 (turn2 첫 프레임)
     10.04s  user  발화 끝
     10.15s  agent 발화 시작: <ret> They finally get together in the final episode of seas
-    10.25s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.88s]: Niles and Daphne consummate their relationship in the final episode of
+    10.55s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.88s]: Niles and Daphne consummate their relationship in the final episode of
     12.72s  user  발화 시작: Yeah.
     13.54s  user  발화 끝
     18.03s  agent 발화 끝
@@ -104,7 +104,7 @@
     24.51s  <ret> 발화 (turn6 첫 프레임)
     24.89s  agent 발화 시작: <ret> [happy] It really is! Their will-they-won’t-they dynam
     24.93s  user  발화 끝
-    25.40s  ⚡SPAN 주입(IRRELEVANT) [d'=0.90s / d_lead=7.60s]: The current price of titanium futures is $2,850 per metric ton on the 
+    25.65s  ⚡SPAN 주입(IRRELEVANT) [d'=1.15s / d_lead=7.60s]: The current price of titanium futures is $2,850 per metric ton on the 
     32.39s  agent 발화 시작: They play off each other brilliantly, don’t they?
     32.49s  agent 발화 끝
     34.31s  user  발화 시작: Yeah.

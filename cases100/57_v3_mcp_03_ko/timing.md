@@ -100,9 +100,9 @@
      1.85s  agent 발화 시작: 예.
      2.67s  agent 발화 끝
      4.76s  <ret> 발화 (turn2 첫 프레임)
-     5.15s  ⚡SPAN 주입 [d'=0.39s / d_lead=7.33s]: Deep, slow breathing exercises can help calm the nervous system and re
      5.21s  agent 발화 시작: <ret> 스트레스 해소에 도움이 되는 몇 가지 방법이 있어요. 간단한 호흡 운동은 어떠세요?
      5.32s  user  발화 끝
+     5.40s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.33s]: Deep, slow breathing exercises can help calm the nervous system and re
     12.44s  agent 발화 시작: 심호흡을 통해 긴장을 풀고 불안감을 줄일 수 있어요. 코로 사초 동안 숨을 깊이 들이마셨다가, 칠초 동안 참
     12.53s  agent 발화 끝
     25.52s  agent 발화 끝
@@ -112,7 +112,7 @@
     29.84s  <ret> 발화 (turn6 첫 프레임)
     30.12s  agent 발화 시작: <ret> [happy] 그럼, 간단한 접지 운동은 어떠세요? 주변의 사물에 집중하면서 현재에 머무는 연습이
     30.18s  user  발화 끝
-    31.02s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.85s]: Grounding exercises involve focusing on the present moment by engaging
+    31.27s  ⚡SPAN 주입 [d'=1.43s / d_lead=8.85s]: Grounding exercises involve focusing on the present moment by engaging
     38.87s  agent 발화 시작: 오감을 활용해서 현재에 집중하는 거예요. 보이는 것 다섯 가지, 만져지는 것 네 가지, 들리는 것 세 가지,
     38.97s  agent 발화 끝
     54.36s  agent 발화 끝
@@ -122,7 +122,7 @@
     57.77s  user  발화 끝
     57.78s  <ret> 발화 (turn10 첫 프레임)
     58.09s  agent 발화 시작: <ret> 네, 좋아요. 잠자리에 들기 전에 잠시 시간을 내서 해보시면 도움이 될 거예요. 혹시 잠자리 환경
-    58.37s  ⚡SPAN 주입 [d'=0.59s / d_lead=9.50s]: A dark, quiet, and cool bedroom is conducive to sleep. Maintaining a r
+    58.62s  ⚡SPAN 주입 [d'=0.84s / d_lead=9.50s]: A dark, quiet, and cool bedroom is conducive to sleep. Maintaining a r
     67.60s  agent 발화 끝
     67.64s  agent 발화 시작: 어둡고 조용하고 시원한 침실 환경이 숙면에 도움이 돼요. 규칙적인 수면 습관을 유지하고 잠들기 전에 카페인이
     71.96s  user  발화 시작: 응.
@@ -134,7 +134,7 @@
     86.04s  <ret> 발화 (turn15 첫 프레임)
     86.19s  agent 발화 시작: <ret> [curious] 커튼을 바꾸는 것도 좋은 방법이에요. 아니면, 수면 안대를 사용하는 것도 도움이
     86.35s  user  발화 끝
-    86.91s  ⚡SPAN 주입 [d'=0.87s / d_lead=8.07s]: Sleep masks block out light, creating a darker environment for sleep. 
+    87.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.07s]: Sleep masks block out light, creating a darker environment for sleep. 
     94.17s  agent 발화 시작: 수면 안대를 사용하면 빛을 차단해서 더 어두운 환경을 만들 수 있어요. 다양한 재질과 가격대의 제품이 있답니
     94.25s  agent 발화 끝
     98.31s  user  발화 시작: 응응.
@@ -144,7 +144,7 @@
    109.29s  <ret> 발화 (turn19 첫 프레임)
    109.62s  agent 발화 시작: <ret> 아마존에서 수면 안대를 검색해 봤는데, 알래스카 베어 실크 수면 안대가 십구 점 구 구달러, 버키
    109.70s  user  발화 끝
-   110.33s  ⚡SPAN 주입 [d'=1.03s / d_lead=20.42s]: (tool result) {"title": "Amazon.com: sleep mask", "url": "https://www.
+   110.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=20.42s]: (tool result) {"title": "Amazon.com: sleep mask", "url": "https://www.
    130.04s  agent 발화 끝
    130.95s  user  발화 시작: 오, 알래스카 베어 제품이 괜찮아 보이네요. 감사합니다.
    135.20s  user  발화 끝

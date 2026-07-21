@@ -83,9 +83,9 @@
 
      0.00s  user  발화 시작: Hi Tas, could you find me the phone number for Lee Sun-hee?
      3.25s  <ret> 발화 (turn1 첫 프레임)
-     3.55s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.71s]: (no information found)
      3.70s  user  발화 끝
      3.85s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a publicly listed phone num
+     3.85s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.71s]: (no information found)
      6.00s  user  발화 시작: Yeah.
      6.73s  user  발화 끝
     10.56s  agent 발화 끝
@@ -96,10 +96,10 @@
     20.21s  user  발화 끝
     21.49s  agent 발화 끝
     22.02s  user  발화 시작: I’m hoping to go hiking while I’m there. What's the weather 
-    27.75s  <ret> 발화 (turn7 첫 프레임)
+    27.72s  <ret> 발화 (turn7 첫 프레임)
     28.13s  agent 발화 시작: <ret> In August 2026, Jeju Island typically has an average t
     28.17s  user  발화 끝
-    28.29s  ⚡SPAN 주입 [d'=0.54s / d_lead=14.19s]: (tool result) Jeju Island: August 2026 - Average temperature 27.5°C, h
+    28.51s  ⚡SPAN 주입 [d'=0.79s / d_lead=14.19s]: (tool result) Jeju Island: August 2026 - Average temperature 27.5°C, h
     42.32s  agent 발화 끝
     42.93s  user  발화 시작: That sounds pretty warm. Are there any good hiking trails fo
     47.14s  agent 발화 시작: Hallasan National Park has several trails—
@@ -115,7 +115,7 @@
     65.17s  <ret> 발화 (turn14 첫 프레임)
     65.41s  agent 발화 시작: <ret> I found a couple of options! Hotel Whistlelark Seongsa
     65.55s  user  발화 끝
-    66.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=16.94s]: (tool result) Hotel Whistlelark Seongsan: $85/night, 4.2 stars, 2km fr
+    66.38s  ⚡SPAN 주입 [d'=1.21s / d_lead=16.94s]: (tool result) Hotel Whistlelark Seongsan: $85/night, 4.2 stars, 2km fr
     74.76s  user  발화 시작: Yeah.
     75.35s  user  발화 끝
     82.34s  agent 발화 끝
@@ -123,7 +123,7 @@
     88.87s  <ret> 발화 (turn17 첫 프레임)
     89.35s  user  발화 끝
     89.39s  agent 발화 시작: <ret> [happy] Great news! The Ocean View Hotel has availabil
-    89.59s  ⚡SPAN 주입 [d'=0.72s / d_lead=13.68s]: (tool result) Ocean View Hotel: Available. Standard Double Room: $68/n
+    89.84s  ⚡SPAN 주입 [d'=0.97s / d_lead=13.68s]: (tool result) Ocean View Hotel: Available. Standard Double Room: $68/n
    103.07s  agent 발화 끝
    104.07s  user  발화 시작: Wonderful! That’s perfect. Do you have any recommendations f
    108.11s  agent 발화 시작: Mm-hmm.

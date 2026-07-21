@@ -90,11 +90,11 @@
      5.77s  <ret> 발화 (turn2 첫 프레임)
      6.25s  agent 발화 시작: <ret> 죄송해요, 팔월 십오일 댈러스에서 휴스턴 가는 버스편은 지금 찾을 수 없네요. 다른 날짜를 알아볼
      6.44s  user  발화 끝
-     6.79s  ⚡SPAN 주입 [d'=1.02s / d_lead=6.62s]: (no information found)
+     7.04s  ⚡SPAN 주입 [d'=1.27s / d_lead=6.62s]: (no information found)
     12.86s  agent 발화 끝
     13.04s  user  발화 시작: 아, 팔월 이십일로 해 봐.
     14.58s  <ret> 발화 (turn4 첫 프레임)
     14.96s  agent 발화 시작: <ret> 팔월 이십일 댈러스에서 휴스턴 가는 버스는 오후 두시 삼십분에 출발하는 그레이하운드 버스, 일인당
     15.11s  user  발화 끝
-    15.63s  ⚡SPAN 주입 [d'=1.05s / d_lead=9.55s]: (tool result) 14:30, Greyhound, $125.00, 6h 15m
+    15.88s  ⚡SPAN 주입 [d'=1.30s / d_lead=9.55s]: (tool result) 14:30, Greyhound, $125.00, 6h 15m
     24.51s  agent 발화 끝

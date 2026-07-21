@@ -96,8 +96,8 @@
 
 
      0.00s  user  발화 시작: Who played Milburn Drysdale, the banker on *The Beverly Hill
-     4.12s  <ret> 발화 (turn1 첫 프레임)
+     4.10s  <ret> 발화 (turn1 첫 프레임)
      4.34s  agent 발화 시작: <ret> That would be Raymond Thomas Bailey—he played Milburn 
      4.43s  user  발화 끝
-     5.62s  ⚡SPAN 주입 [d'=1.50s / d_lead=10.62s]: Raymond Thomas Bailey portrayed Milburn Drysdale, the president of the
+     5.95s  ⚡SPAN 주입 [d'=1.86s / d_lead=10.62s]: Raymond Thomas Bailey portrayed Milburn Drysdale, the president of the
     14.96s  agent 발화 끝

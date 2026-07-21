@@ -89,7 +89,7 @@
      7.02s  <ret> 발화 (turn1 첫 프레임)
      7.35s  agent 발화 시작: <ret> Well, that’s a great question! The phrase “Internet of
      7.50s  user  발화 끝
-     7.68s  ⚡SPAN 주입 [d'=0.66s / d_lead=11.92s]: Kevin Ashton coined the phrase “Internet of Things” in 1999 while work
+     7.93s  ⚡SPAN 주입 [d'=0.91s / d_lead=11.92s]: Kevin Ashton coined the phrase “Internet of Things” in 1999 while work
     19.27s  agent 발화 끝
     19.38s  user  발화 시작: Oh, nineteen ninety-nine… that’s earlier than I thought.
     22.92s  agent 발화 시작: [curious] It often surprises people! It’s interesting to thi
@@ -107,5 +107,5 @@
     49.07s  <ret> 발화 (turn9 첫 프레임)
     49.14s  agent 발화 시작: <ret> It’s good to acknowledge those little shifts in focus.
     49.28s  agent 발화 끝
-    49.37s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.42s]: Ashton used the term in a presentation for Procter & Gamble executives
+    49.67s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.42s]: Ashton used the term in a presentation for Procter & Gamble executives
     65.10s  agent 발화 끝

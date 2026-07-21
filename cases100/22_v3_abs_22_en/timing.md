@@ -97,14 +97,14 @@
      3.52s  <ret> 발화 (turn1 첫 프레임)
      3.60s  agent 발화 시작: <ret> Unfortunately, I don’t have reliable data on the large
      3.70s  user  발화 끝
-     4.22s  ⚡SPAN 주입 [d'=0.70s / d_lead=6.02s]: (no information found)
+     4.47s  ⚡SPAN 주입 [d'=0.95s / d_lead=6.02s]: (no information found)
      7.91s  user  발화 시작: Nice.
      8.73s  user  발화 끝
      9.62s  agent 발화 끝
      9.79s  user  발화 시작: Oh, okay. Well, what about the current time in Paris?
+    12.11s  <ret> 발화 (turn4 첫 프레임)
     13.31s  user  발화 끝
-    13.49s  <ret> 발화 (turn4 첫 프레임)
-    13.59s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.49s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris r
+    13.56s  ⚡SPAN 주입 [d'=1.45s / d_lead=6.49s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris r
     13.62s  agent 발화 시작: <ret> It is currently 3:17 PM in Paris. [happy] Quite a love
     17.17s  user  발화 시작: Yeah.
     17.80s  user  발화 끝
@@ -130,10 +130,10 @@
     41.80s  agent 발화 시작: Landscapes are beautiful! Do you have a favorite place you l
     48.11s  agent 발화 끝
     48.16s  user  발화 시작: I always loved the lavender fields in Provence.
-    51.80s  <ret> 발화 (turn17 첫 프레임)
+    50.89s  <ret> 발화 (turn17 첫 프레임)
     51.82s  user  발화 끝
+    51.85s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.47s]: Provence is a region in southeastern France, known for its vibrant lav
     51.90s  agent 발화 시작: <ret> Provence is a region in southeastern France, well-know
-    51.90s  ⚡SPAN 주입 [d'=0.71s / d_lead=10.47s]: Provence is a region in southeastern France, known for its vibrant lav
     62.37s  agent 발화 끝
     63.28s  user  발화 시작: That's a good idea. I should look at some photos.
     66.52s  user  발화 끝
@@ -142,12 +142,12 @@
     72.02s  user  발화 시작: Actually, could you find me some…
     74.33s  user  발화 끝
     76.24s  user  발화 시작: …pictures of lavender fields in Provence?
+    77.97s  <ret> 발화 (turn23 첫 프레임)
     78.22s  agent 발화 시작: Yeah.
-    78.42s  <ret> 발화 (turn23 첫 프레임)
     78.71s  agent 발화 끝
     78.83s  agent 발화 시작: <ret> Stunning fields of purple lavender bloom in the Valens
     78.97s  user  발화 끝
-    79.16s  ⚡SPAN 주입 [d'=0.93s / d_lead=7.05s]: (tool result) Fields of purple lavender bloom in the Valensole Plateau
+    79.16s  ⚡SPAN 주입 [d'=1.18s / d_lead=7.05s]: (tool result) Fields of purple lavender bloom in the Valensole Plateau
     81.94s  user  발화 시작: Yeah, yeah.
     83.23s  user  발화 끝
     85.66s  user  발화 시작: Wow, those are beautiful!

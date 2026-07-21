@@ -104,7 +104,7 @@
      8.02s  <ret> 발화 (turn1 첫 프레임)
      8.31s  agent 발화 시작: <ret> '로빈 후드: 프린스 오브 티브스'에서 보안관은 천구백구십일년에 앨런 리크먼 배우가 연기하셨어요.
      8.39s  user  발화 끝
-     8.50s  ⚡SPAN 주입 [d'=0.48s / d_lead=11.41s]: Alan Rickman played the Sheriff of Nottingham in the 1991 film Robin H
+     8.75s  ⚡SPAN 주입 [d'=0.73s / d_lead=11.41s]: Alan Rickman played the Sheriff of Nottingham in the 1991 film Robin H
     12.45s  user  발화 시작: 네.
     13.09s  user  발화 끝
     19.73s  agent 발화 끝
@@ -114,7 +114,7 @@
     26.73s  <ret> 발화 (turn5 첫 프레임)
     27.14s  agent 발화 시작: <ret> 지금 서울의 기온은 삼십일 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 사 점 이킬로미터로 측
     27.42s  user  발화 끝
-    27.98s  ⚡SPAN 주입 [d'=1.25s / d_lead=9.00s]: (tool result) {"temperature": "31.5°C", "humidity": "68%", "wind speed
+    28.23s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.00s]: (tool result) {"temperature": "31.5°C", "humidity": "68%", "wind speed
     36.00s  user  발화 시작: 네, 정말 덥네요. 보안관 역할 말고 앨런 리크먼 배우는 다른 영화에서도 유명하죠?
     36.14s  agent 발화 끝
     41.92s  user  발화 끝

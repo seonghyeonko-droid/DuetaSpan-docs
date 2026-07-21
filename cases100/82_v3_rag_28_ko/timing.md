@@ -112,7 +112,7 @@
     59.83s  <ret> 발화 (turn12 첫 프레임)
     60.16s  agent 발화 시작: <ret> 관계에서 상호성은 사람들이 비슷한 행동으로 반응하는 경향이 있다는 뜻이에요. 상대방이 시큰둥하게 
     60.16s  user  발화 끝
-    60.75s  ⚡SPAN 주입 [d'=0.93s / d_lead=8.66s]: Reciprocity in relationships means that people tend to respond to acti
+    61.00s  ⚡SPAN 주입 [d'=1.18s / d_lead=8.66s]: Reciprocity in relationships means that people tend to respond to acti
     68.83s  agent 발화 끝
     71.44s  user  발화 시작: 아… 그럼 그냥 포기해야 할까요?
     73.69s  user  발화 끝
@@ -130,7 +130,7 @@
     97.94s  <ret> 발화 (turn20 첫 프레임)
     98.33s  agent 발화 시작: <ret> 서울에서 상영 중인 최신 한국 영화로는 '파묘', '댓글부대', '노량: 죽음의 바다' 등이 있어
     98.45s  user  발화 끝
-    98.99s  ⚡SPAN 주입 [d'=1.05s / d_lead=10.34s]: (tool result) "서울에서 상영 중인 최신 한국 영화로는 '파묘', '댓글부대', '노량: 죽음의 바다' 등이 있습니
+    99.24s  ⚡SPAN 주입 [d'=1.30s / d_lead=10.34s]: (tool result) "서울에서 상영 중인 최신 한국 영화로는 '파묘', '댓글부대', '노량: 죽음의 바다' 등이 있습니
    102.20s  user  발화 시작: 예.
    102.69s  user  발화 끝
    108.67s  agent 발화 끝

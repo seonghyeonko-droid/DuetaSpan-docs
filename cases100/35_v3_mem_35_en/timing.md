@@ -94,16 +94,16 @@
     14.71s  user  발화 끝
     16.98s  agent 발화 끝
     17.73s  user  발화 시작: Hmm, not really. Just somewhere not too crowded.
-    21.32s  <ret> 발화 (turn7 첫 프레임)
+    19.83s  <ret> 발화 (turn7 첫 프레임)
+    21.32s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.11s]: (tool result) The Grounds of Alexandria: 4.5 stars, known for its calm
     21.38s  agent 발화 시작: <ret> The Grounds of Alexandria seems ideal – it’s known for
     21.39s  user  발화 끝
-    21.42s  ⚡SPAN 주입 [d'=1.25s / d_lead=6.11s]: (tool result) The Grounds of Alexandria: 4.5 stars, known for its calm
     27.49s  agent 발화 끝
     27.53s  user  발화 시작: Alexandria… that's a bit far. Is there anything closer to th
     29.12s  agent 발화 시작: Yeah, totally.
     30.78s  agent 발화 끝
-    32.54s  <ret> 발화 (turn10 첫 프레임)
-    32.71s  ⚡SPAN 주입 [d'=1.33s / d_lead=6.49s]: (tool result) Edition Coffee Roasters: 4.6 stars, minimalist décor, ex
+    31.13s  <ret> 발화 (turn10 첫 프레임)
+    32.71s  ⚡SPAN 주입 [d'=1.58s / d_lead=6.49s]: (tool result) Edition Coffee Roasters: 4.6 stars, minimalist décor, ex
     32.77s  agent 발화 시작: <ret> Edition Coffee Roasters in the CBD has minimalist déco
     32.81s  user  발화 끝
     37.51s  user  발화 시작: Mhm.
@@ -113,7 +113,7 @@
     41.56s  <ret> 발화 (turn13 첫 프레임)
     41.79s  user  발화 끝
     41.87s  agent 발화 시작: <ret> Yes, they do! Wi-Fi is available, and most tables have
-    42.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.20s]: (tool result) Edition Coffee Roasters: Wi-Fi available, power outlets 
+    42.93s  ⚡SPAN 주입 [d'=1.37s / d_lead=8.20s]: (tool result) Edition Coffee Roasters: Wi-Fi available, power outlets 
     50.07s  agent 발화 끝
     50.87s  user  발화 시작: Perfect. I was thinking about getting some work done this we
     54.71s  user  발화 끝
@@ -123,7 +123,7 @@
     61.91s  <ret> 발화 (turn17 첫 프레임)
     62.21s  agent 발화 시작: <ret> [curious] That’s a great question, Jordan. Let me quic
     62.25s  user  발화 끝
-    62.80s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.67s]: (tool result) Edition Coffee Roasters: Oat milk available.
+    63.05s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.67s]: (tool result) Edition Coffee Roasters: Oat milk available.
     68.81s  agent 발화 시작: Yes, they do have oat milk available! You can enjoy your cof
     68.88s  agent 발화 끝
     74.19s  agent 발화 끝

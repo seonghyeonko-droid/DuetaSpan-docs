@@ -99,5 +99,5 @@
      3.08s  <ret> 발화 (turn1 첫 프레임)
      3.70s  agent 발화 시작: <ret> 바이킹스가 램보 필드에서 그린베이 패커스를 이긴 건, 음, 이천십칠년 십이월 이십삼일이었어요. [
      3.83s  user  발화 끝
-     4.38s  ⚡SPAN 주입 [d'=1.30s / d_lead=8.58s]: The Minnesota Vikings defeated the Green Bay Packers at Lambeau Field 
+     4.63s  ⚡SPAN 주입 [d'=1.55s / d_lead=8.58s]: The Minnesota Vikings defeated the Green Bay Packers at Lambeau Field 
     12.27s  agent 발화 끝

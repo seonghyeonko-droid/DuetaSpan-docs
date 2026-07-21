@@ -97,17 +97,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 
 [  0.00s][user ] I’m feeling really overwhelmed with work lately. Can you find me some articles about managing stress ⟨ret@5.91s⟩ at work?
 [  2.38s][moshi] «backchannel» Mm-hmm.
-[  6.48s][moshi] Many ⟦⚡SPAN@7.27s: A 2023 study by the American Institute of Stress found that 83% of US workers suffer from work-related stress.⟧ people experience work-related stress—in fact, eighty-three percent of US workers do—and mindfulness, exercise, and setting boundaries are all helpful ways to cope.
+[  6.48s][moshi] Many ⟦⚡SPAN@7.52s: A 2023 study by the American Institute of Stress found that 83% of US workers suffer from work-related stress.⟧ people experience work-related stress—in fact, eighty-three percent of US workers do—and mindfulness, exercise, and setting boundaries are all helpful ways to cope.
 [ 19.25s][user ] That's… a lot. I think I need to try some breathing exercises. Do you know any good ones?
 [ 22.43s][moshi] «backchannel» Yeah.
 [ 25.34s][moshi] [happy] I do! Breathing exercises are a fantastic way to quickly calm your nervous system. Let’s try a simple box breathing technique.
-[ 34.73s][user ] Box breathing? How does ⟨ret@36.17s⟩ that work?
+[ 34.73s][user ] Box breathing? ⟨ret@35.50s⟩ How does that work?
 [ 36.76s][moshi] ⟦⚡SPAN@36.70s: Box breathing involves inhaling for four seconds, holding your breath for four seconds, exhaling for four seco⟧ Box breathing is really easy—you inhale for four seconds, hold for four, exhale for four, and then hold empty for another four, repeating that cycle a few times.
 [ 41.34s][user ] «backchannel» Yeah.
 [ 47.32s][user ] Okay, I'll try that. I also haven’t been sleeping well.
 [ 50.71s][moshi] That’s often connected to stress, unfortunately. Perhaps we could look up some sleep hygiene tips?
 [ 53.09s][user ] «backchannel» Yeah.
-[ 57.02s][user ] Yes, please. What are the main things I should be ⟨ret@60.26s⟩ doing?
+[ 57.02s][user ] Yes, please. What are the main things I should ⟨ret@60.01s⟩ be doing?
 [ 60.44s][moshi] ⟦⚡SPAN@60.78s: (tool result) Title: Sleep Hygiene | Sleep Foundation; Domain: sleepfoundation.org; Snippet: Maintain a regula⟧ The Sleep Foundation recommends keeping a regular schedule, a relaxing routine, a dark and quiet room, and avoiding caffeine and alcohol before bed.
       CALL: {"function": "tavily-crawl", "arguments": {"url": "https://www.sleepfoundation.org/sleep-hygiene", "max_links": 10, "depth": 2, "focus": "sleep hygiene tips"}}
 [ 66.57s][user ] «backchannel» Yeah.
@@ -118,7 +118,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 81.72s][moshi] That sounds lovely. Where are you thinking of going?
 [ 83.16s][user ] «backchannel» Mhm.
 [ 85.64s][user ] I was wondering about Jeju Island. What's the weather like there right ⟨ret@89.23s⟩ now?
-[ 89.55s][moshi] ⟦⚡SPAN@89.91s: (tool result) Jeju Island: 26.5°C, humidity 68%, wind 8.2 km/h, partly cloudy.⟧ Right now in Jeju Island, it’s twenty-six point five degrees Celsius, with sixty-eight percent humidity, partly cloudy, and a wind speed of eight point two kilometers per hour.
+[ 89.55s][moshi] Right ⟦⚡SPAN@90.16s: (tool result) Jeju Island: 26.5°C, humidity 68%, wind 8.2 km/h, partly cloudy.⟧ now in Jeju Island, it’s twenty-six point five degrees Celsius, with sixty-eight percent humidity, partly cloudy, and a wind speed of eight point two kilometers per hour.
       CALL: {"function": "get_weather", "arguments": {"location": "Jeju Island"}}
 [100.20s][user ] That sounds perfect. Maybe a few days there would really help.
 [103.46s][moshi] [curious] It certainly could. Jeju Island is beautiful and peaceful. Perhaps a bit of mindful exploration would be beneficial?

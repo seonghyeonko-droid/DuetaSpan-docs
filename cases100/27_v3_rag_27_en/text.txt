@@ -93,17 +93,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 24.76s][user ] Maybe. Do you have…
 [ 28.48s][user ] …any tips ⟨ret@29.21s⟩ for that?
 [ 29.29s][moshi] «backchannel» Mm-hmm.
-[ 29.78s][moshi] ⟦⚡SPAN@29.65s: Exposure to bright light first thing in the morning can help regulate your body’s natural sleep-wake cycle, ma⟧ A lot of people find it helpful to get some bright light exposure first thing, which can really help regulate your body’s natural sleep-wake cycle, making waking up easier.
+[ 29.78s][moshi] ⟦⚡SPAN@29.90s: Exposure to bright light first thing in the morning can help regulate your body’s natural sleep-wake cycle, ma⟧ A lot of people find it helpful to get some bright light exposure first thing, which can really help regulate your body’s natural sleep-wake cycle, making waking up easier.
 [ 33.64s][user ] «backchannel» Nice.
 [ 38.83s][moshi] We could also explore a sunrise alarm clock, or simply opening the curtains right away.
 [ 41.00s][user ] «backchannel» Uh-huh.
 [ 43.56s][user ] A sunrise alarm clock sounds interesting. What’s the best way to set one up?
 [ 46.01s][moshi] «backchannel» Yeah.
-[ 48.65s][moshi] ⟨ret@48.64s⟩ ⟦⚡SPAN@48.94s: Sunrise alarm clocks gradually increase light intensity over 30-60 minutes before your set alarm time, mimicki⟧ The best way to set one up is to have it gradually increase light intensity over thirty to sixty minutes before your alarm, mimicking a natural sunrise and promoting a gentler wake-up.
+[ 48.65s][moshi] ⟨ret@48.64s⟩ The ⟦⚡SPAN@49.24s: Sunrise alarm clocks gradually increase light intensity over 30-60 minutes before your set alarm time, mimicki⟧ best way to set one up is to have it gradually increase light intensity over thirty to sixty minutes before your alarm, mimicking a natural sunrise and promoting a gentler wake-up.
 [ 54.30s][user ] «backchannel» Oh.
 [ 59.90s][user ] Yeah, I think so. I also want to start drinking more water.
 [ 63.29s][moshi] «backchannel» Yeah.
-[ 64.70s][moshi] ⟨ret@64.68s⟩ It’s ⟦⚡SPAN@65.22s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Asia/Seoul right now.⟧ currently ten seventeen AM here in Seoul, so perhaps keeping a glass of water by your bed would be a good start?
+[ 64.70s][moshi] ⟨ret@64.68s⟩ It’s currently ⟦⚡SPAN@65.47s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Asia/Seoul right now.⟧ ten seventeen AM here in Seoul, so perhaps keeping a glass of water by your bed would be a good start?
       CALL: {"function": "get_time", "arguments": {}}
 [ 72.31s][user ] That’s a good idea. I always forget.
 [ 75.66s][moshi] [happy] It’s easy to forget! We can make it a habit by linking it to something you already do. Like, drink water *before* you check your phone.

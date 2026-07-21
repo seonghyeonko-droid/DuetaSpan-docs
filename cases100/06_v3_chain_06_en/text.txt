@@ -78,15 +78,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Begin a code generation session and save the output to my ⟨ret@4.14s⟩ tests directory.
-[  4.73s][moshi] ⟦⚡SPAN@4.44s: (tool result) Session initiated. ID: cg-20260710-1433. Output will be saved to /Users/user/tests.⟧ [happy] Okay, a code generation session has started for you. It’s session ID cg-20260710-1433, and the files will go to your tests directory. What would you like to generate?
+[  4.73s][moshi] ⟦⚡SPAN@4.74s: (tool result) Session initiated. ID: cg-20260710-1433. Output will be saved to /Users/user/tests.⟧ [happy] Okay, a code generation session has started for you. It’s session ID cg-20260710-1433, and the files will go to your tests directory. What would you like to generate?
       CALL: {"function": "start_codegen_session", "arguments": {"directory": "tests"}}
 [ 13.17s][user ] «backchannel» Uh-huh.
 [ 19.19s][user ] Something to help me with burnout. Maybe a simple breathing exercise timer?
 [ 23.77s][moshi] I’m checking for resources on breathing exercises now… Hmm, it seems I don’t have specific code examples for that right away. Would you like me to search for some breathing techniques?
 [ 27.80s][user ] «backchannel» Yeah.
-[ 36.40s][user ] Yes, please. Something for when I'm really overwhelmed.
+[ 36.40s][user ] Yes, please. Something for when I'm really overwhelmed. ⟨ret@39.57s⟩
 [ 37.58s][moshi] «backchannel» Yeah, totally.
-[ 39.89s][moshi] ⟨ret@39.59s⟩ [curious] ⟦⚡SPAN@40.95s: (tool result) Box breathing, also known as square breathing, involves inhaling for four seconds, holding your ⟧ I found box breathing—inhale four seconds, hold four, exhale four, hold four. It's a technique for overwhelm, from Verywell Mind. Would you like code for a timer for that?
+[ 39.89s][moshi] [curious] I ⟦⚡SPAN@41.18s: (tool result) Box breathing, also known as square breathing, involves inhaling for four seconds, holding your ⟧ found box breathing—inhale four seconds, hold four, exhale four, hold four. It's a technique for overwhelm, from Verywell Mind. Would you like code for a timer for that?
       CALL: {"function": "search", "arguments": {"query": "breathing exercises for overwhelm"}}
 [ 46.74s][user ] «backchannel» Yeah, yeah.
 [ 53.77s][user ] Yes, that sounds perfect!

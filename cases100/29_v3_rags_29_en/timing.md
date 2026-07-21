@@ -99,5 +99,5 @@
      3.81s  <ret> 발화 (turn1 첫 프레임)
      3.93s  user  발화 끝
      4.07s  agent 발화 시작: <ret> Well, it seems Sam Snead holds that record, with eight
-     4.61s  ⚡SPAN 주입 [d'=0.80s / d_lead=8.11s]: Sam Snead won eighty-two PGA Tour events during his career, more than 
+     4.86s  ⚡SPAN 주입 [d'=1.05s / d_lead=8.11s]: Sam Snead won eighty-two PGA Tour events during his career, more than 
     12.18s  agent 발화 끝

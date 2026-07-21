@@ -77,7 +77,7 @@
      3.00s  <ret> 발화 (turn1 첫 프레임)
      3.24s  user  발화 끝
      3.38s  agent 발화 시작: <ret> 네, 회의 취소가 완료되었어요. 확인 번호는 엠 케이 칠 이 구 사입니다.
-     3.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.89s]: (tool result) {"status": "success", "confirmation id": "MK7294"}
+     4.21s  ⚡SPAN 주입 [d'=1.21s / d_lead=5.89s]: (tool result) {"status": "success", "confirmation id": "MK7294"}
      7.66s  user  발화 시작: 음.
      8.16s  user  발화 끝
      9.26s  agent 발화 끝
@@ -85,7 +85,7 @@
     15.20s  user  발화 끝
     15.24s  <ret> 발화 (turn4 첫 프레임)
     15.41s  agent 발화 시작: <ret> 다음 주 화요일로 다시 예약해 드렸습니다. 확인 번호는 큐 엘 팔 오 일 육입니다.
-    15.59s  ⚡SPAN 주입 [d'=0.35s / d_lead=5.93s]: (tool result) {"status": "success", "confirmation id": "QL8516"}
+    15.84s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.93s]: (tool result) {"status": "success", "confirmation id": "QL8516"}
     18.66s  user  발화 시작: 음.
     19.11s  user  발화 끝
     21.31s  user  발화 시작: 잠깐만, 화요일 말고 수요일로 바꿔줘.
@@ -97,7 +97,7 @@
     29.22s  <ret> 발화 (turn9 첫 프레임)
     29.38s  user  발화 끝
     29.81s  agent 발화 시작: <ret> 수요일 오후 세 시로 변경 완료되었어요. 확인 번호는 브이 엑스 삼 공 이 팔입니다. [happy
-    30.23s  ⚡SPAN 주입 [d'=1.01s / d_lead=9.69s]: (tool result) {"status": "success", "confirmation id": "VX3028"}
+    30.48s  ⚡SPAN 주입 [d'=1.26s / d_lead=9.69s]: (tool result) {"status": "success", "confirmation id": "VX3028"}
     39.50s  agent 발화 끝
     39.53s  user  발화 시작: 아니, 괜찮아. 그건 다야.
     42.90s  user  발화 끝

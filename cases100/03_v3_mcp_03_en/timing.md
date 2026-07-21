@@ -102,7 +102,7 @@
      5.91s  <ret> 발화 (turn2 첫 프레임)
      6.48s  agent 발화 시작: <ret> Many people experience work-related stress—in fact, ei
      6.71s  user  발화 끝
-     7.27s  ⚡SPAN 주입 [d'=1.35s / d_lead=11.77s]: A 2023 study by the American Institute of Stress found that 83% of US 
+     7.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=11.77s]: A 2023 study by the American Institute of Stress found that 83% of US 
     18.25s  agent 발화 끝
     19.25s  user  발화 시작: That's… a lot. I think I need to try some breathing exercise
     22.43s  agent 발화 시작: Yeah.
@@ -111,8 +111,8 @@
     25.37s  user  발화 끝
     34.00s  agent 발화 끝
     34.73s  user  발화 시작: Box breathing? How does that work?
-    36.17s  <ret> 발화 (turn7 첫 프레임)
-    36.70s  ⚡SPAN 주입 [d'=0.95s / d_lead=10.66s]: Box breathing involves inhaling for four seconds, holding your breath 
+    35.50s  <ret> 발화 (turn7 첫 프레임)
+    36.70s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.66s]: Box breathing involves inhaling for four seconds, holding your breath 
     36.76s  agent 발화 시작: <ret> Box breathing is really easy—you inhale for four secon
     36.99s  user  발화 끝
     41.34s  user  발화 시작: Yeah.
@@ -125,10 +125,10 @@
     53.49s  user  발화 끝
     57.02s  user  발화 시작: Yes, please. What are the main things I should be doing?
     57.10s  agent 발화 끝
-    60.26s  <ret> 발화 (turn13 첫 프레임)
+    60.01s  <ret> 발화 (turn13 첫 프레임)
     60.44s  agent 발화 시작: <ret> The Sleep Foundation recommends keeping a regular sche
     60.58s  user  발화 끝
-    60.78s  ⚡SPAN 주입 [d'=0.52s / d_lead=8.90s]: (tool result) Title: Sleep Hygiene | Sleep Foundation; Domain: sleepfo
+    60.78s  ⚡SPAN 주입 [d'=0.77s / d_lead=8.90s]: (tool result) Title: Sleep Hygiene | Sleep Foundation; Domain: sleepfo
     66.57s  user  발화 시작: Yeah.
     67.02s  user  발화 끝
     69.34s  agent 발화 끝
@@ -148,7 +148,7 @@
     89.23s  <ret> 발화 (turn22 첫 프레임)
     89.55s  agent 발화 시작: <ret> Right now in Jeju Island, it’s twenty-six point five d
     89.66s  user  발화 끝
-    89.91s  ⚡SPAN 주입 [d'=0.67s / d_lead=10.34s]: (tool result) Jeju Island: 26.5°C, humidity 68%, wind 8.2 km/h, partly
+    90.16s  ⚡SPAN 주입 [d'=0.92s / d_lead=10.34s]: (tool result) Jeju Island: 26.5°C, humidity 68%, wind 8.2 km/h, partly
     99.89s  agent 발화 끝
    100.20s  user  발화 시작: That sounds perfect. Maybe a few days there would really hel
    103.43s  user  발화 끝

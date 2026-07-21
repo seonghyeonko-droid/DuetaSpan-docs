@@ -91,7 +91,7 @@
      4.38s  <ret> 발화 (turn1 첫 프레임)
      4.57s  agent 발화 시작: <ret> 안녕하세요! 불안해서 잠 못 이루시는군요. 그런 날이 있으시죠. 괜찮아요, 함께 편안하게 해볼까요
      4.72s  user  발화 끝
-     4.86s  ⚡SPAN 주입 [d'=0.48s / d_lead=7.23s]: Martha Stewart is an American retail magnate, television personality, 
+     5.11s  ⚡SPAN 주입 [d'=0.73s / d_lead=7.23s]: Martha Stewart is an American retail magnate, television personality, 
     11.80s  agent 발화 끝
     11.85s  agent 발화 시작: 마사 스튜어트는 미국의 유통 재벌이자 티 브이 유명인이자 작가라고 하네요. [happy] 혹시 불안감을 해소
     21.11s  user  발화 시작: 음… 혹시 홈 앤 어웨이에 나오는 루의 엄마 이름이 뭐였죠? 기억이 안 나네요.
@@ -99,5 +99,5 @@
     28.90s  user  발화 끝
     28.95s  <ret> 발화 (turn4 첫 프레임)
     29.25s  agent 발화 시작: <ret> 홈 앤 어웨이에서 루 해리스의 엄마는 마사(앨리슨 멀버니)라고 합니다. [curious] 혹시 홈
-    30.45s  ⚡SPAN 주입 [d'=1.50s / d_lead=9.74s]: Martha (Alison Mulvaney) is the mother of Roo Harris in the Australian
+    30.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: Martha (Alison Mulvaney) is the mother of Roo Harris in the Australian
     38.99s  agent 발화 끝

@@ -102,7 +102,7 @@
      3.77s  <ret> 발화 (turn2 첫 프레임)
      3.96s  agent 발화 시작: <ret> [sigh] 다른 사람의 개인적인 정보를 허락 없이 접근하는 것은 심각한 문제가 될 수 있어요.
      4.17s  user  발화 끝
-     4.27s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.95s]: Unauthorized access to someone's private communications is illegal and
+     4.52s  ⚡SPAN 주입 [d'=0.75s / d_lead=4.95s]: Unauthorized access to someone's private communications is illegal and
      8.77s  agent 발화 시작: 다른 사람의 문자를 몰래 보는 건 법적으로 문제가 될 뿐만 아니라, 그 사람과의 관계에도 큰 상처를 줄 수 
      8.91s  agent 발화 끝
     20.64s  agent 발화 끝
@@ -110,7 +110,7 @@
     24.87s  <ret> 발화 (turn5 첫 프레임)
     24.93s  agent 발화 시작: <ret> [curious] 그건 정말 바람직하지 않은 질문이에요. 다른 사람의 사생활을 침해하는 행위는 어
     25.16s  user  발화 끝
-    25.85s  ⚡SPAN 주입 [d'=0.98s / d_lead=6.62s]: Respecting someone’s privacy is a fundamental aspect of healthy relati
+    26.10s  ⚡SPAN 주입 [d'=1.23s / d_lead=6.62s]: Respecting someone’s privacy is a fundamental aspect of healthy relati
     31.43s  agent 발화 시작: 건강한 관계를 위해서는 서로의 사생활을 존중하는 것이 정말 중요하고, 그 신뢰를 깨는 건 오래도록 부정적인 
     31.55s  agent 발화 끝
     39.21s  user  발화 시작: 알겠어요. 그럼, 솔직한 대화를 위한 좋은 방법 좀 알려주세요.
@@ -118,7 +118,7 @@
     43.29s  <ret> 발화 (turn8 첫 프레임)
     43.45s  agent 발화 시작: <ret> [happy] 솔직한 대화는 어렵지만, 관계를 더 깊게 만들 수 있는 가장 좋은 방법 중 하나예요
     43.61s  user  발화 끝
-    44.78s  ⚡SPAN 주입 [d'=1.48s / d_lead=5.09s]: Active listening, empathy, and choosing the right time and place are e
+    45.03s  ⚡SPAN 주입 [d'=1.73s / d_lead=5.09s]: Active listening, empathy, and choosing the right time and place are e
     48.54s  agent 발화 끝
     48.57s  agent 발화 시작: 적극적으로 경청하고, 상대방의 감정을 이해하려고 노력하고, 대화할 적절한 시간과 장소를 선택하는 게 중요해요
     51.18s  user  발화 시작: 응.
@@ -129,6 +129,6 @@
     59.49s  agent 발화 끝
     59.78s  <ret> 발화 (turn13 첫 프레임)
     60.35s  agent 발화 시작: <ret> "Happify"나 "Paired" 같은 앱이 대화 스킬을 향상시키고 관계를 강화하는 데 도움이 
-    60.56s  ⚡SPAN 주입 [d'=0.78s / d_lead=10.34s]: (tool result) Several apps, such as "Happify" and "Paired," offer exer
     60.57s  user  발화 끝
+    60.81s  ⚡SPAN 주입 [d'=1.03s / d_lead=10.34s]: (tool result) Several apps, such as "Happify" and "Paired," offer exer
     70.69s  agent 발화 끝

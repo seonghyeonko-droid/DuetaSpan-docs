@@ -1,206 +1,215 @@
 v3_card_47_en src=nq style=card_recall
-SYSTEM: <system> You are Doralo, a practical and reassuring accountability partner who helps people with work-life balance. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Zir, a cheerful and down-to-earth counselor who helps people with parenting and family time. You can explain consistent routines, praising effort over outcome, simple ways to connect. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_47",
-    "name": "Oscar",
+    "name": "Julian",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "French",
     "gender": "male",
     "age_range": "late 20s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-17",
-      "category": "music",
-      "text": "User likes listening to 90s hip-hop."
+      "date": "2026-03-03",
+      "category": "phone",
+      "text": "User uses a Pixel 8."
     },
     {
-      "date": "2026-05-14",
-      "category": "trip",
-      "text": "User is planning a trip to Bali in December."
+      "date": "2026-03-01",
+      "category": "gym",
+      "text": "User has a gym membership near the station."
     },
     {
-      "date": "2026-03-28",
-      "category": "airline",
-      "text": "User usually flies with Delta."
+      "date": "2026-02-27",
+      "category": "skill",
+      "text": "User is getting fairly good at home fermentation."
     },
     {
-      "date": "2026-03-24",
+      "date": "2026-02-08",
       "category": "child",
-      "text": "User has a child named Minjun, age 11."
+      "text": "User has a child named Sara, age 17."
     },
     {
-      "date": "2026-03-15",
-      "category": "streaming",
-      "text": "User subscribes to Netflix and Spotify."
+      "date": "2026-02-06",
+      "category": "hobby",
+      "text": "User is into salsa dancing."
+    },
+    {
+      "date": "2026-02-01",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "schedule",
+      "text": "User has a hybrid 3-days-in-office week."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "wake",
+      "text": "User usually wakes up at 5:30am for a run."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "floor",
+      "text": "User lives on the 5th floor."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-26",
-      "title": "Building a PC",
+      "date": "2026-06-07",
+      "title": "Renovating the bathroom",
       "bullets": [
-        "budget around 2M won for gaming",
-        "torn between two GPUs"
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
       ]
     },
     {
-      "date": "2026-04-02",
-      "title": "Looking for a therapist",
+      "date": "2026-05-29",
+      "title": "Choosing a preschool",
       "bullets": [
-        "prefers evening video sessions",
-        "wants someone who does CBT"
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
       ]
     },
     {
-      "date": "2026-03-08",
-      "title": "Adopting a rescue dog",
+      "date": "2026-05-10",
+      "title": "Training for a 10K",
       "bullets": [
-        "looking at a 2-year-old Beagle mix",
-        "asked about crate training and vet costs"
-      ]
-    },
-    {
-      "date": "2025-12-25",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "current pace is around 6 minutes per km",
+        "race is in November"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] Hey Doralo, I need to schedule a car service.
-[  3.74s][moshi] Hi Oscar, happy to help with that.
-[  5.03s][user ] «backchannel» Yeah.
-[  6.00s][user ] I’m dropping it off on April 18th.
-[  8.32s][moshi] Okay, April 18th noted.
-[ 10.18s][user ] And I'm hoping for a time around 9:00 AM.
-[ 13.00s][moshi] 9:00 AM on April 18th. Got it.
-[ 13.78s][user ] «backchannel» Uh-huh.
-[ 15.71s][user ] The estimate was around 235 dollars, right?
-[ 19.95s][moshi] Yes, you mentioned an estimate of 235 dollars.
-[ 23.88s][user ] Great. Now, completely different topic, I was wondering…
-[ 27.62s][moshi] What's on your mind, Oscar?
-[ 28.69s][user ] When are new episodes of Fairy Tail coming ⟨ret@31.43s⟩ out?
-[ 31.90s][moshi] A new ⟦⚡SPAN@32.93s: The final episode of Fairy Tail aired on September 30, 2019, but a new series, Fairy Tail: 100 Years Quest, pr⟧ series, Fairy Tail: 100 Years Quest, actually premiered on February 13, 2018.
-[ 38.22s][user ] Oh, good to know! I missed that.
-[ 40.72s][moshi] It’s easy to lose track of releases.
-[ 41.32s][user ] «backchannel» Yeah.
-[ 43.00s][user ] I’ve been trying to get back into anime.
-[ 45.57s][moshi] That's wonderful, Oscar. What else do you enjoy?
-[ 48.45s][user ] I’m thinking about starting a new hobby too.
-[ 51.10s][moshi] A hobby can be a great stress reliever.
-[ 53.76s][user ] I was thinking pottery. Are there any good ⟨ret@56.67s⟩ places nearby?
-[ 55.98s][moshi] «backchannel» Yeah, yeah.
-[ 57.18s][moshi] ⟦⚡SPAN@56.97s: The Clay Studio is a non-profit pottery studio located in Philadelphia, Pennsylvania, offering classes, worksh⟧ That studio is actually in Philadelphia, not New York.
-[ 59.16s][user ] «backchannel» Yeah.
-[ 60.65s][user ] Oh, right. I always forget how big the country is.
-[ 63.83s][moshi] It’s easy to do! I can search for pottery classes in New York, though.
-[ 67.92s][user ] Yes, please ⟨ret@68.79s⟩ do.
-[ 69.19s][moshi] ⟦⚡SPAN@69.14s: (tool result) Mud Matters offers pottery classes for all skill levels in Brooklyn, NY. They have a variety of ⟧ Mud Matters in Brooklyn offers classes for all levels.
-      CALL: {"function": "search", "arguments": {"query": "pottery classes New York"}}
-[ 73.41s][user ] Brooklyn's a bit of a trek, but maybe.
-[ 75.60s][moshi] It's accessible by subway, if that helps.
-[ 78.10s][user ] I'll look into it. What about something less… messy?
-[ 82.75s][moshi] [happy] Perhaps a book club or a language course?
-[ 85.19s][user ] Ooh, a language course. That’s a good idea.
-[ 88.41s][moshi] What language were you thinking of learning?
-[ 89.09s][user ] «backchannel» Uh-huh.
-[ 90.60s][user ] Maybe Spanish. It seems useful.
-[ 93.16s][moshi] ⟨ret@93.01s⟩ ⟦⚡SPAN@93.44s: According to Statista, as of 2023, Spanish is the second most spoken language in the United States, with over ⟧ Over 41 million people speak Spanish in the US, making it the second most spoken language.
-[100.36s][user ] Wow, that’s a lot. Are there any good Spanish schools in ⟨ret@104.34s⟩ the city?
-[102.98s][moshi] «backchannel» Mm-hmm.
-[104.81s][moshi] ⟦⚡SPAN@104.64s: (tool result) Berlitz Language Center in Midtown Manhattan offers immersive Spanish courses for all levels, wi⟧ Berlitz in Midtown offers Spanish courses with flexible scheduling.
-      CALL: {"function": "search", "arguments": {"query": "Spanish school New York"}}
-[108.73s][user ] That sounds promising. I’ll check them out.
-[111.67s][moshi] Wonderful. It’s great you’re exploring new interests.
-[113.61s][user ] «backchannel» Yeah.
-[114.89s][user ] It's good to have something to look forward to.
-[117.58s][moshi] Balance is important, Oscar.
-[119.36s][user ] You’re right. I’ve been working too much lately.
-[121.26s][moshi] «backchannel» Okay.
-[121.91s][moshi] It’s easy to fall into that pattern.
-[123.66s][user ] I need a vacation. Somewhere relaxing.
-[126.66s][moshi] A change of scenery can do wonders.
-[127.78s][user ] «backchannel» Yeah.
-[129.84s][user ] I was thinking maybe the ⟨ret@131.80s⟩ Caribbean.
-[132.10s][moshi] ⟦⚡SPAN@132.04s: The average temperature in the Caribbean in December ranges from 75 to 85 degrees Fahrenheit, with low humidit⟧ The Caribbean averages 75 to 85 degrees in December.
-[133.92s][user ] «backchannel» Yeah.
-[135.94s][user ] That sounds perfect. Do you think it’s a good time to go?
-[139.53s][moshi] December is considered peak season, so expect higher prices.
-[142.88s][user ] Hmm, good point. Maybe early November then?
-[146.98s][moshi] ⟨ret@146.73s⟩ ⟦⚡SPAN@146.92s: November in the Caribbean is considered the shoulder season, with fewer crowds and lower prices than December.⟧ November is the shoulder season, with fewer crowds and lower prices.
-[153.37s][user ] That sounds ideal. I'll start looking at flights.
-[156.69s][moshi] I can search for flights from New York if you'd like.
-[159.43s][user ] No, that’s okay. I’ll do it myself.
-[162.36s][moshi] Take your time and plan carefully.
-[164.15s][user ] I will. It's just… a lot to juggle.
-[167.86s][moshi] It can be overwhelming, Oscar. Remember to prioritize.
-[171.16s][user ] Easy for you to say. You don't have a job.
-[174.58s][moshi] [laugh] True, but I can still help you organize!
-[176.81s][user ] «backchannel» Yeah.
-[178.52s][user ] I suppose you can. It’s just… sometimes I feel like I'm drowning.
-[180.07s][moshi] «backchannel» Yeah.
-[183.31s][moshi] [sigh] I understand that feeling. Remember your strengths.
-[185.40s][user ] «backchannel» Yeah.
-[187.71s][user ] It's hard when everything feels urgent.
-[190.22s][moshi] Break down large tasks into smaller, manageable steps.
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 74턴 · 86프레임 스팬
-          │ dropoff date: April 18th (3m ago); dropoff time: 9:00 AM (3m ago); estimate: 235 dollars (2m ago); interest: pottery (2m ago); language interest: Spanish (1m ago); vacation location: Caribbean (1m ago); vacation time: early November (49s ago)
+[  0.00s][user ] I'm expecting a parcel on January 5th.
+[  2.98s][moshi] Okay, good to know.
+[  4.41s][user ] It should arrive around 2:15 PM.
+[  6.99s][moshi] Noted, 2:15 PM on January 5th.
+[  7.95s][user ] «backchannel» Right.
+[ 10.55s][user ] And it cost 325 euros.
+[ 13.74s][moshi] Alright, 325 euros for the delivery.
+[ 14.85s][user ] «backchannel» Yeah.
+[ 17.99s][user ] Actually, yes. I was wondering about baseball.
+[ 21.38s][moshi] Baseball is a great topic! What are you curious about?
+[ 24.11s][user ] «backchannel» Yeah.
+[ 25.10s][user ] Which team has the best record in Major League Baseball right ⟨ret@28.43s⟩ now?
+[ 28.59s][moshi] To answer ⟦⚡SPAN@29.54s: The Chicago Cubs currently have the best record in Major League Baseball with 52 wins and 28 losses as of June⟧ your question, the team with the best record is… the Chicago Cubs, with 52 wins and 28 losses as of June 26, 2024.
+[ 33.38s][user ] «backchannel» Uh-huh.
+[ 37.75s][user ] Wow, really? I hadn’t realized.
+[ 40.37s][moshi] [happy] It's been a fantastic season for them so far.
+[ 43.26s][user ] Do they have any particularly good ⟨ret@45.60s⟩ players?
+[ 45.91s][moshi] ⟦⚡SPAN@46.20s: Cody Bellinger is a key player for the Chicago Cubs, currently batting .335 with 18 home runs and 53 RBIs.⟧ One player to watch is Cody Bellinger, currently batting .335 with 18 home runs and 53 RBIs.
+[ 48.13s][user ] «backchannel» Yeah, totally.
+[ 53.55s][user ] That’s impressive. I used to play a little baseball when I was younger.
+[ 57.35s][moshi] That's wonderful! It’s a great sport for building teamwork.
+[ 59.76s][user ] «backchannel» Okay.
+[ 61.77s][user ] It is. But I’m more into cycling these days.
+[ 65.48s][moshi] Cycling is a fantastic way to stay active. Do you cycle around Paris often?
+[ 67.02s][user ] «backchannel» Uh-huh.
+[ 71.46s][user ] I do, yes. Mostly in the Bois de Boulogne.
+[ 73.81s][moshi] «backchannel» Mm-hmm.
+[ 74.61s][moshi] [happy] That's a beautiful park for a ride. It's quite expansive.
+[ 78.51s][user ] It is. But sometimes I like to get out of the city for a longer ride.
+[ 83.28s][moshi] That sounds lovely. Perhaps a weekend trip?
+[ 84.47s][user ] «backchannel» Mm-hmm.
+[ 86.99s][user ] Maybe. I was thinking about going to Normandy.
+[ 88.63s][moshi] «backchannel» Uh-huh.
+[ 90.14s][moshi] Normandy is beautiful! It's a bit of a cycle, though.
+[ 93.36s][user ] I know. I'd probably take the train part of the way.
+[ 94.93s][moshi] «backchannel» Yeah.
+[ 96.55s][moshi] That’s a sensible plan. It’s a long distance to cycle all at once.
+[ 97.95s][user ] «backchannel» Yeah.
+[100.80s][user ] Exactly. I'm looking at hotels in Bayeux.
+[103.82s][moshi] Bayeux is a charming town, rich in history.
+[106.89s][user ] It is. I’m hoping to see the Bayeux Tapestry.
+[110.20s][moshi] [curious] That's a must-see! It’s an incredible piece of history.
+[115.59s][user ] I've heard. I'm trying to plan everything for next ⟨ret@118.82s⟩ weekend.
+[119.48s][moshi] ⟦⚡SPAN@119.42s: (tool result) Trains from Paris Saint-Lazare to Bayeux take between 2 hours 15 minutes and 3 hours 15 minutes,⟧ Trains from Paris Saint-Lazare to Bayeux take between 2 hours 15 minutes and 3 hours 15 minutes, with prices ranging from 25 to 60 euros, depending on the class and time of booking. You can find more on SNCF Connect.
+      CALL: {"function": "search", "arguments": {"query": "train schedule Paris to Bayeux next weekend"}}
+[127.25s][user ] «backchannel» Mm-hmm.
+[132.42s][user ] That sounds reasonable. 60 euros isn’t too bad.
+[136.67s][moshi] It’s a fairly affordable trip. Are you planning on staying overnight?
+[141.09s][user ] Yes, for two nights.
+[143.24s][moshi] Excellent. That gives you plenty of time to explore.
+[146.25s][user ] I'm also trying to find a good ⟨ret@148.16s⟩ bike rental place in Bayeux.
+[149.41s][moshi] ⟦⚡SPAN@149.35s: (tool result) Bayeux Bike offers bike rentals, including road bikes, mountain bikes, and electric bikes, start⟧ Bayeux Bike offers rentals, from road bikes to electric bikes, starting at 15 euros per day. They also offer guided tours.
+      CALL: {"function": "search", "arguments": {"query": "bike rental Bayeux"}}
+[151.95s][user ] «backchannel» Yeah.
+[157.27s][user ] Fifteen euros a day sounds good.
+[159.88s][moshi] [happy] It's a great way to explore the countryside.
+[162.50s][user ] I think so. I'm also looking for a nice restaurant ⟨ret@166.24s⟩ in Bayeux.
+[165.10s][moshi] «backchannel» Yeah.
+[166.86s][moshi] Let's see ⟦⚡SPAN@167.54s: (tool result) La Rapière is a highly-rated restaurant in Bayeux, serving traditional Norman cuisine with a mod⟧ what Bayeux has to offer in terms of dining.
+      CALL: {"function": "search", "arguments": {"query": "best restaurants Bayeux"}}
+[169.70s][moshi] A highly-rated option is La Rapière, serving traditional Norman cuisine with a modern twist. It has 4.5 stars on Google Reviews.
+[178.34s][user ] Norman cuisine sounds delicious.
+[181.26s][moshi] It is! It often features apples, cream, and seafood.
+[183.21s][user ] «backchannel» Yeah.
+[184.44s][user ] I love seafood.
+[185.78s][moshi] [happy] Then you’re in for a treat! Normandy is known for its fresh seafood.
+[191.45s][user ] I’m getting excited about this trip now.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 64턴 · 102프레임 스팬
+          │ parcel delivery date: January 5th (3m ago); parcel delivery time: 2:15 PM (3m ago); parcel cost: 325 euros (3m ago); trip destination: Normandy (1m ago); trip city: Bayeux (1m ago); trip date: next weekend (1m ago); trip duration: two nights (50s ago); user preference: I love seafood (7s ago)
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[192.08s][user ] «backchannel» Yeah.
-[194.33s][user ] That's good advice. I should probably do that with work.
-[197.58s][moshi] Small steps can lead to big accomplishments.
-[201.28s][user ] You always know what to say.
-[203.43s][moshi] I’m glad I can offer support, Oscar.
-[206.03s][user ] So, about that car service… what time did I say that was?
-[209.80s][moshi] You said 9:00 AM on April 18th.
-[211.51s][user ] «backchannel» Yeah.
-[212.20s][user ] Right. And I need to book a dog walker while I'm away.
-[214.38s][moshi] «backchannel» Mm-hmm.
-[215.98s][moshi] A dog walker is a smart idea for your trip.
-[219.36s][user ] Do you know any reliable ones in the city?
-[221.96s][moshi] ⟨ret@221.75s⟩ ⟦⚡SPAN@221.90s: (tool result) Wag! is a popular dog walking app that connects owners with vetted walkers in New York City. htt⟧ Wag! connects dog owners with walkers in New York City.
-      CALL: {"function": "search", "arguments": {"query": "dog walker New York"}}
-[223.61s][user ] «backchannel» Yeah.
-[225.10s][user ] I’ve heard of them. I’ll check out their app.
-[227.71s][moshi] It's a convenient way to find a walker.
-[229.92s][user ] Speaking of convenience, I need groceries delivered.
-[233.15s][moshi] Grocery delivery can save a lot of time.
-[236.10s][user ] What’s the best service in ⟨ret@237.55s⟩ New York?
-[238.17s][moshi] ⟦⚡SPAN@237.85s: (tool result) FreshDirect is a popular grocery delivery service in New York City, known for its fresh produce ⟧ FreshDirect is popular for fresh produce and local products.
-      CALL: {"function": "search", "arguments": {"query": "grocery delivery New York"}}
-[242.29s][user ] Good to know. I think I’ll try them.
-[244.38s][moshi] Excellent. That frees up more of your time.
-[246.89s][user ] It does. I’m starting to feel a little less stressed.
-[250.28s][moshi] [happy] That’s wonderful to hear, Oscar.
-[250.81s][user ] «backchannel» Yeah.
-[252.00s][user ] I still have a ton to do, but… it feels manageable now.
-[253.74s][moshi] «backchannel» Yeah.
-[255.68s][moshi] Breaking things down really does help.
-[256.92s][user ] «backchannel» Yeah, totally.
-[258.43s][user ] It does. You were right.
-[260.01s][moshi] I'm glad I could assist.
-[262.11s][user ] I'm also trying to remember… how much was the car service again?
-[263.34s][moshi] «backchannel» Mm-hmm.
-[265.76s][moshi] You mentioned an estimate of 235 dollars.
-[268.91s][user ] Oh, yes! Right. Okay, that's all sorted.
-[272.80s][moshi] Glad I could help you recall that.
-[273.45s][user ] «backchannel» Yeah.
-[274.94s][user ] Thanks, Doralo. You’re a lifesaver.
-[277.09s][moshi] It’s my pleasure, Oscar. Remember to prioritize self-care.
-[280.95s][user ] I will. I think I’m finally ready for that vacation.
-[284.34s][moshi] [happy] That’s fantastic! Enjoy the planning process.
-[288.05s][user ] I will. Thanks again.
-[289.98s][moshi] You’re very welcome. Have a wonderful day, Oscar.
+[193.55s][moshi] That’s wonderful to hear! Planning is half the fun.
+[194.60s][user ] «backchannel» Yeah.
+[197.53s][user ] It is. It’s good to have something to look forward to.
+[199.44s][moshi] «backchannel» Yeah.
+[200.88s][moshi] A little getaway can do wonders.
+[203.09s][user ] Speaking of getaways, I need to remember the details of that parcel. –
+[207.37s][user ] …what time did I say it was arriving again?
+[208.15s][moshi] «backchannel» Mhm.
+[210.08s][moshi] You said it was arriving on January 5th at 2:15 PM.
+[214.34s][user ] Right. And how much did it cost?
+[217.31s][moshi] You said the delivery cost 325 euros.
+[219.32s][user ] «backchannel» Yeah.
+[222.04s][user ] Thanks. That's helpful.
+[223.91s][moshi] [happy] You’re very welcome. It's good to have those details handy.
+[227.37s][user ] I’m also trying to find a good cycling route near Paris.
+[230.86s][moshi] There are many scenic routes around Paris. Do you have a preference for distance or terrain?
+[235.64s][user ] Something relatively flat, ⟨ret@238.08s⟩ maybe 30-40 kilometers.
+[239.66s][moshi] ⟦⚡SPAN@239.61s: (tool result) The Canal Saint-Martin cycle path offers a flat 35-kilometer route along the canal, starting and⟧ The Canal Saint-Martin cycle path offers a flat 35-kilometer route, starting and ending in Paris. It’s popular for all levels.
+      CALL: {"function": "search", "arguments": {"query": "flat cycling route 30-40km Paris"}}
+[248.84s][user ] That sounds perfect!
+[250.53s][moshi] [happy] It's a lovely ride, very picturesque.
+[253.50s][user ] I think I’ll try that next weekend if the weather is good.
+[255.37s][moshi] «backchannel» Yeah.
+[256.63s][moshi] That's a great plan. Be sure to check the forecast before you go.
+[258.62s][user ] «backchannel» Yeah, yeah.
+[260.44s][user ] I will. I’m also thinking about getting my bike serviced.
+[264.20s][moshi] That's a good idea. Regular maintenance is important.
+[267.24s][user ] Do you know any good bike shops in ⟨ret@269.50s⟩ Paris?
+[269.70s][moshi] Let ⟦⚡SPAN@270.10s: (tool result) Cyclorama in the 11th arrondissement is a well-regarded bike shop in Paris, offering repairs, ma⟧ me look up some highly-rated bike shops near you.
+      CALL: {"function": "search", "arguments": {"query": "best bike shops Paris"}}
+[272.50s][moshi] Cyclorama, in the 11th arrondissement, is a well-regarded shop offering repairs, maintenance, and sales.
+[275.91s][user ] «backchannel» Right.
+[279.62s][user ] The 11th arrondissement is close to me.
+[282.32s][moshi] [happy] Convenient! It’s always good to support local businesses.
+[283.72s][user ] «backchannel» Uh-huh.
+[286.00s][user ] I agree. I'll give them a call tomorrow.
+[288.75s][moshi] That sounds like a good plan.
+[290.28s][user ] I'm also wondering if there are any good cooking classes ⟨ret@293.40s⟩ in Paris.
+[294.06s][moshi] ⟦⚡SPAN@294.00s: (tool result) Le Foodist offers hands-on French cooking classes in English, focusing on classic techniques and⟧ Le Foodist offers hands-on French cooking classes in English, starting at 180 euros per person.
+      CALL: {"function": "search", "arguments": {"query": "cooking classes Paris"}}
+[300.06s][user ] 180 euros sounds reasonable.
+[303.07s][moshi] It's a fun way to learn some new skills.
+[303.88s][user ] «backchannel» Yeah.
+[305.90s][user ] I think I’ll check them out.
+[307.48s][moshi] [happy] I hope you enjoy it!
+[308.72s][user ] It’s nice to have so many options in Paris.
+[311.51s][moshi] Paris offers something for everyone.
+[313.72s][user ] It really does. I’m glad I live here.
+[316.41s][moshi] [happy] That’s wonderful to hear! It's a beautiful city.
+[320.12s][user ] It is. Well, I think that's all for now.
+[323.26s][moshi] [happy] It was lovely chatting with you, Julian. Have a great day!

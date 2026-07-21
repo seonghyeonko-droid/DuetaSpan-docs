@@ -94,11 +94,11 @@
      7.53s  <ret> 발화 (turn4 첫 프레임)
      7.74s  agent 발화 시작: <ret> Your anniversary is on September eighth, and it’s comp
      7.86s  user  발화 끝
-     8.47s  ⚡SPAN 주입 [d'=0.94s / d_lead=5.14s]: [2026-04-30] User's anniversary is September 8.
+     8.72s  ⚡SPAN 주입 [d'=1.19s / d_lead=5.14s]: [2026-04-30] User's anniversary is September 8.
     12.88s  agent 발화 끝
     13.11s  user  발화 시작: Right. Do you… remember what I was looking at for my home ne
     18.20s  <ret> 발화 (turn6 첫 프레임)
     18.58s  user  발화 끝
     18.59s  agent 발화 시작: <ret> You were asking about mesh routers for a three-story h
-    19.70s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.74s]: [2026-03-06] Past chat — Setting up a home network: asked about mesh r
+    20.03s  ⚡SPAN 주입 [d'=1.83s / d_lead=5.74s]: [2026-03-06] Past chat — Setting up a home network: asked about mesh r
     24.33s  agent 발화 끝

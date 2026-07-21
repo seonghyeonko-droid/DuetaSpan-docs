@@ -93,9 +93,9 @@
      3.10s  user  발화 끝
     10.93s  user  발화 시작: Thanks. Actually, to take my mind off things, I was wonderin
     10.94s  agent 발화 끝
-    17.74s  <ret> 발화 (turn3 첫 프레임)
+    17.07s  <ret> 발화 (turn3 첫 프레임)
+    17.76s  ⚡SPAN 주입 [d'=0.69s / d_lead=6.95s]: Martha MacKenzie (played by Alison Mulvaney) is the mother of Roo Stew
     17.82s  agent 발화 시작: <ret> Roo Stewart’s mother is Martha MacKenzie, who is playe
-    17.84s  ⚡SPAN 주입 [d'=0.44s / d_lead=6.95s]: Martha MacKenzie (played by Alison Mulvaney) is the mother of Roo Stew
     17.92s  user  발화 끝
     24.70s  user  발화 시작: Oh, right, Martha! I knew that…
     24.77s  agent 발화 끝

@@ -118,7 +118,7 @@
     26.81s  <ret> 발화 (turn8 첫 프레임)
     27.21s  user  발화 끝
     27.32s  agent 발화 시작: <ret> 아, 맞아요. 슬로베니아 여행 계획을 세우고 계셨죠. 이천이십육년 이월에 가신다고 하셨어요.
-    27.37s  ⚡SPAN 주입 [d'=0.56s / d_lead=8.07s]: [2026-05-22] User is planning a trip to Slovenia in February.
+    27.62s  ⚡SPAN 주입 [d'=0.81s / d_lead=8.07s]: [2026-05-22] User is planning a trip to Slovenia in February.
     35.38s  agent 발화 시작: 슬로베니아 여행을 이월에 계획하고 계신다고 말씀하셨던 게 기억나요. 혹시 슬로베니아 여행 준비하면서 특별히 
     35.38s  agent 발화 끝
     43.68s  agent 발화 끝

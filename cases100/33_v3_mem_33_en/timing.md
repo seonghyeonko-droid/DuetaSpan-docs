@@ -86,9 +86,9 @@
      3.29s  user  발화 시작: Hi Kelira, nice to meet you too. What time is it right now?
      3.32s  agent 발화 끝
      5.83s  agent 발화 시작: Mm-hmm.
+     6.13s  <ret> 발화 (turn4 첫 프레임)
      6.46s  agent 발화 끝
-     6.79s  <ret> 발화 (turn4 첫 프레임)
-     6.90s  ⚡SPAN 주입 [d'=0.52s / d_lead=3.61s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Berlin 
+     6.90s  ⚡SPAN 주입 [d'=0.77s / d_lead=3.61s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Berlin 
      6.94s  user  발화 끝
      6.96s  agent 발화 시작: <ret> It is currently 3:17 PM in Berlin, where you are—
      9.97s  user  발화 시작: …Actually, I'm starting to feel a bit overwhelmed with weddi
@@ -106,5 +106,5 @@
     24.73s  <ret> 발화 (turn11 첫 프레임)
     24.94s  agent 발화 시작: <ret> Yes, you mentioned you were comparing two venues for n
     25.05s  user  발화 끝
-    25.12s  ⚡SPAN 주입 [d'=0.38s / d_lead=9.13s]: [2026-04-06] Past chat — Planning a wedding: guest list around 80 peop
+    25.37s  ⚡SPAN 주입 [d'=0.63s / d_lead=9.13s]: [2026-04-06] Past chat — Planning a wedding: guest list around 80 peop
     34.07s  agent 발화 끝

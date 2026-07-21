@@ -72,7 +72,7 @@
      6.92s  user  발화 끝
      7.01s  <ret> 발화 (turn3 첫 프레임)
      7.13s  agent 발화 시작: <ret> 세션 사십이를 종료했고, 테스트도 성공적으로 생성됐어. 확인 번호는 구 비 칠 엑스 이 엘이야.
-     7.79s  ⚡SPAN 주입 [d'=0.78s / d_lead=6.35s]: (tool result) Session 42 ended. Tests generated successfully. Confirma
+     8.04s  ⚡SPAN 주입 [d'=1.03s / d_lead=6.35s]: (tool result) Session 42 ended. Tests generated successfully. Confirma
     10.40s  user  발화 시작: 응.
     10.75s  user  발화 끝
     13.42s  user  발화 시작: 확인번호 다시 한 번만 알려줘.

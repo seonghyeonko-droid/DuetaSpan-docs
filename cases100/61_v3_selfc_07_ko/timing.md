@@ -86,7 +86,7 @@
     12.35s  <ret> 발화 (turn2 첫 프레임)
     12.80s  agent 발화 시작: <ret> 네, 환불 요청해 드렸어요. 환불 아이 디는 R-four-five-six-seven-eight-n
     12.89s  user  발화 끝
-    13.48s  ⚡SPAN 주입 [d'=1.13s / d_lead=11.51s]: (tool result) {"refund id": "R-four-five-six-seven-eight-nine-zero-one
+    13.73s  ⚡SPAN 주입 [d'=1.38s / d_lead=11.51s]: (tool result) {"refund id": "R-four-five-six-seven-eight-nine-zero-one
     21.12s  user  발화 시작: 맞아.
     21.75s  user  발화 끝
     24.13s  user  발화 시작: 아, 잠깐만요. 캡처 아이 디가 틀렸어요. C-one-two-three-four-five-six-seven-
@@ -94,7 +94,7 @@
     33.96s  <ret> 발화 (turn5 첫 프레임)
     34.39s  agent 발화 시작: <ret> 캡처 아이 디를 수정해서 다시 환불 요청을 보냈어요. 새로운 환불 아이 디는 R-one-two-t
     34.47s  user  발화 끝
-    34.81s  ⚡SPAN 주입 [d'=0.85s / d_lead=10.62s]: (tool result) {"refund id": "R-one-two-three-four-five-six-seven-eight
+    35.06s  ⚡SPAN 주입 [d'=1.10s / d_lead=10.62s]: (tool result) {"refund id": "R-one-two-three-four-five-six-seven-eight
     44.94s  agent 발화 시작: 금액은 동일하게 이십오 점 오달러입니다.
     45.01s  agent 발화 끝
     47.62s  user  발화 시작: 알겠습니다. 이번 주말에 여행 가는데, 짐을 어떻게 싸야 할까요?

@@ -98,6 +98,6 @@
      0.00s  user  발화 시작: 비버리힐즈의 백만장자에서 밀번 드라이스데일 역을 맡은 배우는 누구였나요?
      4.24s  <ret> 발화 (turn1 첫 프레임)
      4.52s  agent 발화 시작: <ret> 비버리힐즈의 백만장자에서 밀번 드라이스데일 역은 레이먼드 토마스 베일리 배우가 맡았답니다.
-     4.54s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.09s]: Raymond Thomas Bailey was an American actor best known for his role as
      4.63s  user  발화 끝
+     4.84s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.09s]: Raymond Thomas Bailey was an American actor best known for his role as
     11.61s  agent 발화 끝

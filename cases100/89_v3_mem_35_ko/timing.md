@@ -88,7 +88,7 @@
     11.22s  <ret> 발화 (turn4 첫 프레임)
     11.81s  agent 발화 시작: <ret> 유럽 여행을 준비하고 계시는군요. 내년에 유럽 여행을 계획하고 계신다고 말씀하신 적이 있으셨어요.
     12.01s  user  발화 끝
-    12.30s  ⚡SPAN 주입 [d'=1.09s / d_lead=6.62s]: [2026-06-10] User is saving for a trip to Europe next year.
+    12.55s  ⚡SPAN 주입 [d'=1.34s / d_lead=6.62s]: [2026-06-10] User is saving for a trip to Europe next year.
     13.88s  user  발화 시작: 네.
     14.34s  user  발화 끝
     18.26s  user  발화 시작: 네, 맞아요. 어디가 좋을지 잘 모르겠어요. 너무 많은 곳이 있어서요.
@@ -108,7 +108,7 @@
     52.06s  <ret> 발화 (turn13 첫 프레임)
     52.54s  agent 발화 시작: <ret> 취리히의 평균 월 생활비는 이백오십만 원 정도예요. 집세가 백이십만 원, 식비가 육십만 원, 교통
     52.73s  user  발화 끝
-    53.13s  ⚡SPAN 주입 [d'=1.07s / d_lead=9.74s]: (tool result) Zurich, Switzerland: Average monthly expenses are $2,500
+    53.38s  ⚡SPAN 주입 [d'=1.32s / d_lead=9.74s]: (tool result) Zurich, Switzerland: Average monthly expenses are $2,500
     62.28s  agent 발화 끝
     62.30s  user  발화 시작: 이백오십만 원이면 좀 부담스럽네요 —
     64.84s  user  발화 끝
@@ -126,7 +126,7 @@
     95.61s  <ret> 발화 (turn21 첫 프레임)
     95.70s  agent 발화 시작: <ret> 포르투의 평균 월 생활비는 백이십만 원 정도예요. 집세가 오십만 원, 식비가 삼십만 원, 교통비가
     95.92s  user  발화 끝
-    96.35s  ⚡SPAN 주입 [d'=0.74s / d_lead=12.24s]: (tool result) Porto, Portugal: Average monthly expenses are $1,200 USD
+    96.60s  ⚡SPAN 주입 [d'=0.99s / d_lead=12.24s]: (tool result) Porto, Portugal: Average monthly expenses are $1,200 USD
    104.40s  user  발화 시작: 네.
    105.03s  user  발화 끝
    107.94s  agent 발화 끝

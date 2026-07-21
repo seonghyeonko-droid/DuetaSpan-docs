@@ -81,8 +81,8 @@
     13.01s  user  발화 시작: Well, I like fruit, but I need something with a bit more pro
     15.59s  agent 발화 시작: Yeah.
     16.23s  agent 발화 끝
-    20.00s  <ret> 발화 (turn4 첫 프레임)
-    20.24s  ⚡SPAN 주입 [d'=1.09s / d_lead=13.57s]: (tool result) Oatmeal with berries and nuts provides a balanced mix of
+    18.90s  <ret> 발화 (turn4 첫 프레임)
+    20.24s  ⚡SPAN 주입 [d'=1.34s / d_lead=13.57s]: (tool result) Oatmeal with berries and nuts provides a balanced mix of
     20.29s  agent 발화 시작: <ret> Oatmeal with berries and nuts is a fantastic option, p
     20.59s  user  발화 끝
     32.63s  ⚡지연 SPAN 주입(선제발표 직전): [2024-07-06] I'm training for a half marathon.

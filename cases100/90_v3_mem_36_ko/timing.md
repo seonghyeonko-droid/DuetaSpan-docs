@@ -89,7 +89,7 @@
     12.18s  <ret> 발화 (turn4 첫 프레임)
     12.71s  agent 발화 시작: <ret> 네, 채별님. 한 달에 삼십기가 정도 사용하시고, 번호는 그대로 유지하고 싶다고 말씀하셨죠.
     12.87s  user  발화 끝
-    12.95s  ⚡SPAN 주입 [d'=0.77s / d_lead=7.28s]: [2026-05-24] Past chat — Switching phone plans: uses about 30GB of dat
+    13.20s  ⚡SPAN 주입 [d'=1.02s / d_lead=7.28s]: [2026-05-24] Past chat — Switching phone plans: uses about 30GB of dat
     20.00s  agent 발화 끝
     20.12s  user  발화 시작: 맞아요. 지금 쓰고 있는 요금제가 너무 비싼 것 같아서 다른 요금제를 알아보고 싶어요.
     25.81s  user  발화 끝

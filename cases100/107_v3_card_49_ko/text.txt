@@ -1,0 +1,157 @@
+v3_card_49_ko src=nq style=card_recall
+SYSTEM: <system> 당신은 크로크스이며, 일상적인 불안 관리를 돕는 사려 깊고 부드러운 말투의 라이프 코치입니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 어시스턴트 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야이지, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_card_49",
+    "name": "예우",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-11",
+      "category": "medication",
+      "text": "User takes antihistamines in spring."
+    },
+    {
+      "date": "2026-04-26",
+      "category": "savings",
+      "text": "User is saving for a new car."
+    },
+    {
+      "date": "2026-04-03",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-03-19",
+      "category": "car",
+      "text": "User drives a 2020 Kia Niro."
+    },
+    {
+      "date": "2025-12-09",
+      "category": "plant",
+      "text": "User is growing a monstera at home."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-06",
+      "title": "Booking a moving company",
+      "bullets": [
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "title": "Adopting a rescue dog",
+      "bullets": [
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
+
+[  0.00s][user ] 오늘 아침에 차 수리 맡기기로 했잖아요.
+[  2.58s][moshi] 네, 그러셨군요. 어떤 차종이신가요?
+[  6.17s][user ] 현대 소나타요. 일월 십이일 오전 아홉시 삼십분에 맡기기로 했어요.
+[ 12.03s][moshi] 오전 아홉시 삼십분에 소나타를 맡기시는군요.
+[ 16.39s][user ] 수리비는 대략 이만 오천원 정도 예상한다고 하셨던 것 같아요.
+[ 19.19s][moshi] «backchannel» 네.
+[ 20.52s][moshi] 네, 이만 오천원 정도로 예상하신다고 말씀해주셨어요.
+[ 23.93s][user ] 아니요, 그건 됐어요. 혹시 마하나티 영화에서 사만다 역할이 누구였죠? 갑자기 ⟨ret@30.10s⟩ 궁금해졌어요.
+[ 30.29s][moshi] 마하나티 ⟦⚡SPAN@31.64s: Madhuravani played the role of Samantha in the 2018 Indian period biographical film Mahanati.⟧ 영화에서 사만다 역할을 맡은 배우는 마두라바니였습니다. 이천십팔년에 개봉한 인도 전기 영화예요.
+[ 38.66s][user ] 아, 맞아요. 마두라바니였죠. 연기를 정말 잘 하시던데.
+[ 43.77s][moshi] [happy] 네, 마두라바니 씨는 연기력이 뛰어나신 배우시죠.
+[ 47.51s][user ] 요즘 계속 불안해서 잠을 잘 못 자고 있어요. 어떻게 하면 좋을까요?
+[ 52.20s][moshi] 불안하신 마음이 드시는군요. 규칙적인 수면 습관을 들이는 것이 도움이 될 수 있습니다.
+[ 58.23s][user ] 규칙적인 수면 습관... 말은…
+[ 62.99s][user ] …쉽죠. 어떻게 해야 할까요?
+[ 65.50s][moshi] 잠자리에 드는 시간과 일어나는 시간을 일정하게 유지해 보세요.
+[ 67.96s][user ] «backchannel» 맞아요.
+[ 69.77s][user ] 그건 해보려고 노력하고 있는데, 쉽지 않네요.
+[ 72.65s][moshi] [sigh] 힘드시겠어요. 잠들기 전에 따뜻한 물로 샤워를 하거나, 차를 마시는 것도 도움이 될 수 있습니다.
+[ 77.51s][user ] «backchannel» 네.
+[ 81.17s][user ] 차는 어떤 차를 마셔야 할까요?
+[ 83.21s][moshi] 캐모마일 차나 라벤더 차가 진정 효과가 있어서 좋습니다.
+[ 86.36s][user ] «backchannel» 그렇죠.
+[ 88.28s][user ] 캐모마일 차… 한번 사봐야겠네요.
+[ 90.56s][moshi] 네, 한번 시도해 보세요. 도움이 되셨으면 좋겠습니다.
+[ 93.84s][user ] 오늘 ⟨ret@94.56s⟩ 날씨가 어때요?
+[ 95.14s][moshi] ⟦⚡SPAN@95.56s: (tool result) 28.2°C, humidity 65%, wind 3.1 km/h, partly cloudy.⟧ 서울은 현재 이십팔 점 이도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 일킬로미터로 불고 있습니다. 구름이 조금 있어요.
+      CALL: {"function": "get_weather", "arguments": {"location": "Seoul"}}
+[100.98s][user ] «backchannel» 네.
+[105.59s][user ] 꽤 덥네요.
+[106.82s][moshi] [curious] 네, 오늘 서울은 꽤 더울 것 같습니다.
+[108.08s][user ] «backchannel» 음.
+[110.63s][user ] 혹시 서울에서 괜찮은 마사지샵 ⟨ret@112.63s⟩ 아세요?
+[113.22s][moshi] 서울 ⟦⚡SPAN@114.33s: The Spa at Shilla Seoul is a luxury spa offering a range of treatments and facilities in Seoul.⟧ 신라호텔 스파는 다양한 트리트먼트와 시설을 갖춘 고급 스파입니다.
+[115.75s][user ] «backchannel» 예.
+[118.83s][user ] 신라호텔 스파… 가격이 좀 비쌀 것 같은데요.
+[122.07s][moshi] 네, 가격대는 조금 높은 편입니다. 좀 더 저렴한 곳을 찾으시겠어요?
+[124.23s][user ] «backchannel» 음.
+[127.06s][user ] 음… 조금 저렴한 곳도 ⟨ret@128.92s⟩ 괜찮아요.
+[129.49s][moshi] ⟦⚡SPAN@129.81s: Thai Oasis Spa Seoul is a popular spa offering traditional Thai massages at reasonable prices.⟧ 타이 오아시스 스파 서울은 합리적인 가격으로 전통 태국 마사지를 제공하는 인기 있는 스파입니다.
+[135.76s][user ] 타이 오아시스 스파… 거기가 어디에 있어요?
+[139.20s][moshi] 강남역 근처에 있습니다.
+[141.48s][user ] 강남역… 알겠어요.
+[143.30s][moshi] [happy] 네, 강남역 근처에 있습니다.
+[145.97s][user ] 혹시 요즘 인기 있는 드라마가 뭐예요?
+[148.34s][moshi] ⟨ret@148.24s⟩ ⟦⚡SPAN@148.95s: "Queen of Tears" is a popular South Korean drama currently airing on tvN and Netflix.⟧ 현재 tvN과 넷플릭스에서 방영 중인 "눈물의 여왕"이 인기 있는 한국 드라마입니다.
+[153.60s][user ] "눈물의 여왕"… 한번 봐야겠네요.
+[156.09s][moshi] 네, 많은 분들이 재미있게 보고 계시는 드라마입니다.
+[157.67s][user ] «backchannel» 네.
+[159.40s][user ] 오늘 저녁은 뭘 먹을까요?
+[161.39s][moshi] 저녁 메뉴를 고민하시는군요. 혹시 특별히 드시고 싶은 음식이 있으세요?
+[165.02s][user ] «backchannel» 네.
+[166.72s][user ] 글쎄요… 딱히 생각나는 건 없네요.
+[169.88s][moshi] [curious] 그럼 제가 추천해 드릴까요?
+[172.62s][user ] 네, 추천해 주세요.
+[174.27s][moshi] ⟨ret@173.91s⟩ ⟦⚡SPAN@174.66s: Bibimbap is a popular Korean dish consisting of mixed rice with vegetables, meat, and gochujang (chili pepper ⟧ 비빔밥은 채소, 고기, 고추장과 함께 섞은 밥으로 구성된 인기 있는 한국 음식입니다.
+[181.16s][user ] 비빔밥… 맛있겠네요.
+[183.18s][moshi] 네, 비빔밥은 맛있고 영양도 풍부합니다.
+[186.24s][user ] 오늘 차 맡기는 거… 일월 십이일이었죠?
+[188.99s][moshi] 네, 일월 십이일 오전 아홉시 삼십분에 차를 맡기기로 하셨습니다.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 59턴 · 114프레임 스팬
+          │ car model: 현대 소나타요; appointment time: 일월 십이일 오전 아홉시 삼십분; repair cost: 이만 오천원; massage location: 강남역
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
+[193.22s][user ] 아, 맞아요. 오전 아홉시 삼십분이었어요.
+[197.05s][moshi] [happy] 네, 기억하고 계셨군요.
+[199.84s][user ] 혹시 이번 주말에 가까운 곳으로 여행 갈 만한 곳이 ⟨ret@202.82s⟩ 있을까요?
+[203.19s][moshi] 서울 근처의 ⟦⚡SPAN@204.54s: Nami Island is a popular tourist destination near Seoul, known for its beautiful scenery and attractions.⟧ 남이섬은 아름다운 경치와 명소로 유명한 인기 관광지입니다.
+[206.55s][user ] «backchannel» 네.
+[208.31s][user ] 남이섬… 가보고 싶었는데.
+[210.25s][moshi] 네, 남이섬은 데이트 코스로도 인기가 많습니다.
+[213.55s][user ] 이번 주말에 남이섬에 갈 수 있을까요?
+[215.81s][moshi] [curious] 이번 주말은 칠월 십삼일, 십사일인데, 남이섬에 가실 수 있습니다.
+[221.52s][user ] 좋네요. 그럼 남이섬 가는 방법 좀 알려주세요.
+[225.50s][moshi] ⟨ret@225.50s⟩ 서울에서 남이섬에 가려면 ⟦⚡SPAN@227.16s: To get to Nami Island from Seoul, you can take the ITX-Cheongchun train to Gapyeong Station and then a ferry t⟧ 아이 티 엑스-청춘 열차를 타고 가평역으로 가서 페리를 타야 합니다.
+[231.64s][user ] 아이 티 엑스-청춘 열차… 가평역… 알겠습니다.
+[235.88s][moshi] 네, 가평역에서 페리를 타면 남이섬으로 갈 수 있습니다.
+[242.13s][user ] 혹시 남이섬 근처에 맛집도 있나요?
+[244.75s][moshi] ⟨ret@244.68s⟩ 남이섬 ⟦⚡SPAN@245.75s: Dakgalbi restaurants are popular in the Gapyeong area near Nami Island.⟧ 근처 가평 지역에는 닭갈비 식당이 인기가 많습니다.
+[246.60s][user ] «backchannel» 네.
+[249.03s][user ] 닭갈비… 맛있겠네요.
+[251.31s][moshi] 네, 닭갈비는 매콤달콤한 맛이 일품입니다.
+[254.97s][user ] 오늘 차 맡기는 비용이 얼마였죠?
+[256.97s][moshi] 차 수리 비용은 이만 오천원이라고 말씀해주셨습니다.
+[260.27s][user ] 아, 맞아요. 이만 오천원이었어요.
+[263.11s][moshi] [happy] 네, 정확히 기억하고 계시네요.
+[265.56s][user ] 오늘 저녁 메뉴는 비빔밥으로 정했어요.
+[268.29s][moshi] 비빔밥을 선택하셨군요. 맛있게 드세요.
+[271.86s][user ] 감사합니다.
+[272.78s][moshi] [happy] 천만에요.
+[273.96s][user ] 네, 알겠습니다. 좋은 하루 보내세요.
+[277.11s][moshi] [happy] 예우님도 좋은 하루 보내세요.

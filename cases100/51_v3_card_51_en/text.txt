@@ -1,235 +1,184 @@
 v3_card_51_en src=nq style=card_recall
-SYSTEM: <system> You are Klorax, a grounded and empathetic supportive advisor who helps people with stress relief and mindfulness. You can explain breathing techniques, a quick grounding exercise, basic sleep hygiene. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Farius, a wise and unhurried habit coach who helps people with burnout and recovery. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_51",
-    "name": "Nathan",
+    "name": "Julia",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "late 20s",
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "60s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-01",
-      "category": "hobby",
-      "text": "User is into film photography."
+      "date": "2026-06-15",
+      "category": "anniversary",
+      "text": "User's anniversary is February 7."
     },
     {
-      "date": "2026-05-08",
-      "category": "learning",
-      "text": "User is studying Japanese."
+      "date": "2026-05-12",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-04-18",
+      "date": "2026-03-20",
       "category": "trip",
-      "text": "User is planning a trip to Slovenia in September."
+      "text": "User is planning a trip to Kyoto in July."
     },
     {
-      "date": "2026-03-30",
-      "category": "car",
-      "text": "User drives a 2019 Hyundai Tucson."
+      "date": "2026-01-31",
+      "category": "streaming",
+      "text": "User subscribes to Disney+ and YouTube Premium."
     },
     {
-      "date": "2026-03-16",
+      "date": "2026-01-08",
       "category": "emergency",
-      "text": "User's emergency contact is Emma."
-    },
-    {
-      "date": "2026-03-07",
-      "category": "music",
-      "text": "User likes listening to classical piano."
-    },
-    {
-      "date": "2026-02-26",
-      "category": "airline",
-      "text": "User usually flies with Korean Air."
-    },
-    {
-      "date": "2026-01-23",
-      "category": "diet",
-      "text": "User is kosher."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "work",
-      "text": "User works as a product manager."
+      "text": "User's emergency contact is Lucas."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-07",
+      "date": "2026-05-14",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool and a sauna",
+        "prefers one within 10 minutes of the office"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "title": "Planning a dinner party",
+      "bullets": [
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    },
+    {
+      "date": "2026-03-11",
       "title": "Learning to invest",
       "bullets": [
         "asked about index funds vs individual stocks",
         "wants to start with 500k won a month"
-      ]
-    },
-    {
-      "date": "2026-02-13",
-      "title": "Looking for a therapist",
-      "bullets": [
-        "prefers evening video sessions",
-        "wants someone who does CBT"
-      ]
-    },
-    {
-      "date": "2026-02-09",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] I have a dentist appointment coming up. It's on October 14th.
-[  1.00s][moshi] «backchannel» Yeah.
-[  2.94s][moshi] Okay, I’ve got that noted for you.
-[  5.11s][user ] And it's at 2:00 PM.
-[  6.34s][moshi] Perfect, October 14th at 2:00 PM.
-[  8.64s][user ] «backchannel» Yeah.
-[  9.78s][user ] Actually, yes. I was just wondering… when did Apple stop supporting Safari for ⟨ret@15.02s⟩ Windows?
-[ 15.09s][moshi] ⟦⚡SPAN@15.12s: Apple ceased development of Safari for Windows in January 2012, with the release of Safari 5.1.1 being the las⟧ Apple stopped supporting Safari for Windows in January 2012, with version 5.1.1 being the final release for that platform.
-[ 17.96s][user ] «backchannel» Right.
-[ 24.27s][user ] Oh, wow, that was a while ago. I didn't realize it had been that long.
-[ 27.48s][moshi] It really has been! Technology moves so quickly sometimes.
-[ 32.82s][user ] It does. I’m thinking about getting a new laptop, actually. Something a bit more… portable.
-[ 36.93s][moshi] That sounds lovely! A new laptop could be just what you need.
-[ 43.44s][user ] I'm leaning towards a MacBook Air, but they're quite pricey.
-[ 46.58s][moshi] They are a popular choice, known for their lightweight design and performance.
-[ 49.45s][user ] «backchannel» Uh-huh.
-[ 50.99s][user ] Exactly. I'm trying to weigh up the cost versus the benefits. Do you think it’s worth the investment?
-[ 55.32s][moshi] [happy] It depends on your needs, Nathan. If portability and a streamlined experience are important, it could be a great fit.
-[ 62.56s][user ] I do a lot of travelling for work, so portability is definitely key.
-[ 66.60s][moshi] That makes a MacBook Air sound even more appealing, then.
-[ 67.81s][user ] «backchannel» Yeah.
-[ 70.43s][user ] Yeah, but then I worry about losing it when I travel. I’m a bit clumsy, to be honest.
-[ 71.75s][moshi] «backchannel» Uh-huh.
-[ 74.63s][moshi] That’s a valid concern. Perhaps a protective case and a tracking device could offer some peace of mind?
-[ 78.29s][user ] «backchannel» Mm-hmm.
-[ 80.37s][user ] That’s a good idea. I hadn’t thought of a tracking device.
-[ 83.39s][moshi] They're quite small and can be easily attached to your belongings.
-[ 85.27s][user ] «backchannel» Right.
-[ 86.76s][user ] I'll look into that. Maybe I should just focus on finding a good case first.
-[ 91.06s][moshi] That's a sensible approach. A sturdy case is always a good starting point.
-[ 97.24s][user ] Speaking of travel, I'm thinking about a weekend getaway. Somewhere not too far from London.
-[102.14s][moshi] That sounds wonderful! A quick escape can be very refreshing.
-[107.24s][user ] I was thinking maybe Brighton? It's easy to get to.
-[108.26s][moshi] «backchannel» Yeah.
-[110.35s][moshi] Brighton is a fantastic choice. It’s a vibrant seaside city with plenty to offer.
-[112.73s][user ] «backchannel» Yeah.
-[115.79s][user ] I haven’t been there in ages. I remember it being really fun.
-[118.29s][moshi] It definitely has a lively atmosphere.
-[121.11s][user ] Do you know if there are any good vegan restaurants there?
-[122.42s][moshi] «backchannel» Mhm.
-[123.98s][moshi] ⟨ret@123.82s⟩ ⟦⚡SPAN@123.92s: (tool result) Riddle & Finns is a popular vegan restaurant in Brighton, known for its seafood-style vegan dish⟧ Riddle & Finns is a popular vegan restaurant in Brighton, known for its seafood-style vegan dishes and lively atmosphere on Jubilee Street.
-      CALL: {"function": "search", "arguments": {"query": "vegan restaurants Brighton"}}
-[132.51s][user ] Oh, that sounds interesting! Seafood-style vegan?
-[136.22s][moshi] [curious] It's a unique concept! They use plant-based ingredients to recreate the flavors and textures of seafood.
-[143.28s][user ] That's clever. I might have to check that out.
-[145.16s][moshi] I think you’d enjoy it.
-[148.87s][user ] I’m also trying to get into a better sleep routine. I’ve been really stressed lately.
-[150.47s][moshi] «backchannel» Uh-huh.
-[153.47s][moshi] I understand. Stress can definitely disrupt sleep. I can offer some guidance on sleep hygiene, if you'd like.
-[162.06s][user ] That would be great, actually. I’m desperate for a good night’s sleep.
-[165.19s][moshi] A regular sleep schedule is a good starting point. Try going to bed and waking up around the same time each day, even on weekends.
-[168.99s][user ] «backchannel» Uh-huh.
-[173.50s][user ] I struggle with that. Weekends are when I try to catch up on sleep.
-[176.94s][moshi] I see. While it’s tempting, it can actually make it harder to fall asleep on Sunday night.
-[180.66s][user ] «backchannel» Yeah.
-[182.60s][user ] You’re probably right. I always feel groggy on Mondays.
-[184.60s][moshi] «backchannel» Yeah.
-[186.10s][moshi] That’s a common experience. Consistency is key for regulating your body's natural sleep-wake cycle.
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 57턴 · 79프레임 스팬
-          │ appt date: October 14th (3m ago); appt time: 2:00 PM (3m ago); travel frequency: a lot of travelling for work (2m ago); potential destination: Brighton (1m ago); dietary restriction: vegan (1m ago); current issue: stressed (43s ago)
+[  0.00s][user ] I have a doctor’s checkup coming up.
+[  1.75s][moshi] Alright, I’m here to help you stay on track.
+[  4.70s][user ] It’s on June 6th.
+[  6.01s][moshi] Noted. June 6th is marked in your calendar.
+[  8.26s][user ] «backchannel» Mm-hmm.
+[ 11.02s][user ] And it's at 10:00 AM.
+[ 12.58s][moshi] Excellent. 10:00 AM on June 6th it is.
+[ 15.67s][user ] It costs 350 dollars.
+[ 17.88s][moshi] Okay, 350 dollars for the checkup.
+[ 20.88s][user ] No, that’s all for now. I was actually wondering about something completely different.
+[ 25.50s][moshi] [happy] Of course. What’s on your mind, Julia?
+[ 28.20s][user ] What is the diameter of the ⟨ret@29.93s⟩ Millennium Dome?
+[ 30.29s][moshi] ⟦⚡SPAN@30.76s: The Millennium Dome, now known as the O2 Arena, has a diameter of 365 metres.⟧ So, thinking about impressive structures—a fascinating fact is the Millennium Dome—now the O2 Arena—has a diameter of 365 metres.
+[ 41.99s][user ] Wow, that's huge.
+[ 43.24s][moshi] It certainly is. A testament to ambitious engineering.
+[ 47.12s][user ] I'm thinking of redecorating my living room.
+[ 49.27s][moshi] [curious] That sounds lovely. Are you leaning towards a particular style?
+[ 54.57s][user ] I'm not sure, maybe something Scandinavian.
+[ 57.23s][moshi] Scandinavian design is very popular—clean lines and a focus on functionality.
+[ 63.93s][user ] Do you think it would suit a New York apartment?
+[ 66.37s][moshi] It’s quite adaptable—especially with New York’s often-minimalist spaces.
+[ 71.61s][user ] What colors are typical of ⟨ret@73.67s⟩ that style?
+[ 74.25s][moshi] When we ⟦⚡SPAN@75.53s: Common colours in Scandinavian design include white, grey, and beige, with accents of pastel shades.⟧ think of Scandinavian style—the typical color palette includes white, grey, and beige—with soft accents of pastel shades.
+[ 84.35s][user ] Pastel shades sound nice.
+[ 86.73s][moshi] They bring a gentle warmth without overwhelming the space.
+[ 91.27s][user ] I'm also thinking about getting a new rug.
+[ 92.21s][moshi] «backchannel» Yeah.
+[ 93.26s][moshi] A rug can really tie a room together. What size are you considering?
+[ 97.63s][user ] I haven't measured yet.
+[ 98.85s][moshi] It’s best to measure first—to ensure a good fit and flow.
+[100.46s][user ] «backchannel» Right.
+[102.55s][user ] True. I should probably do that.
+[104.46s][moshi] Taking that small step can save you a lot of trouble later.
+[106.47s][user ] «backchannel» Yeah.
+[108.33s][user ] I'm feeling a bit overwhelmed with all these decisions.
+[109.26s][moshi] «backchannel» Yeah.
+[110.96s][moshi] [sigh] It’s perfectly normal to feel that way—when facing so many choices. Remember to focus on what truly brings you joy.
+[116.57s][user ] «backchannel» Mm-hmm.
+[118.92s][user ] That’s good advice. I also need to find a good moving company.
+[119.91s][moshi] «backchannel» Yeah.
+[122.38s][moshi] Ah, planning ahead. Moving can be stressful—finding the right company is key.
+[128.13s][user ] I’m downsizing, so it’s a bit more complicated.
+[130.48s][moshi] Downsizing adds another layer—but also a chance for a fresh start.
+[134.81s][user ] Do you know any good movers in ⟨ret@136.53s⟩ New York?
+[137.09s][moshi] ⟦⚡SPAN@137.13s: Bill Removalists Sydney is top-rated for its reliability and professionalism in moving services.⟧ For a reliable move—one of the top-rated options is Bill Removalists Sydney.
+[140.51s][user ] «backchannel» Yeah.
+[142.23s][user ] …Wait, Sydney? I'm in ⟨ret@143.75s⟩ New York!
+[144.14s][moshi] 8-star ⟦⚡SPAN@144.85s: Gotham Moving is highly rated in New York City for residential moves, with a 4.8-star rating from over 500 rev⟧ rating from over 500 reviews.
+[147.69s][user ] That sounds much better.
+[149.21s][moshi] [happy] I’m glad we corrected that. Accuracy is important.
+[151.24s][user ] «backchannel» Right.
+[153.04s][user ] Do they offer packing ⟨ret@154.67s⟩ services?
+[154.88s][moshi] Yes, they ⟦⚡SPAN@156.33s: (tool result) Gotham Moving offers full-service packing, including fragile item packing and custom crating, ac⟧ do—Gotham Moving offers full-service packing—including fragile item packing and custom crating—according to their website.
+      CALL: {"function": "search", "arguments": {"query": "Gotham Moving packing services"}}
+[160.47s][user ] «backchannel» Yeah, yeah.
+[163.62s][user ] Good. That would save me a lot of time.
+[164.35s][moshi] «backchannel» Mm-hmm.
+[165.75s][moshi] Delegating tasks—when you’re feeling stretched—is a very wise choice.
+[171.08s][user ] I'm also thinking about taking a weekend trip.
+[173.56s][moshi] A little getaway sounds wonderful. Do you have somewhere in mind?
+[177.64s][user ] Maybe Boston.
+[178.75s][moshi] Boston is a great choice—easily reachable from New York.
+[183.84s][user ] What's ⟨ret@184.12s⟩ the train ride like?
+[185.42s][moshi] ⟦⚡SPAN@185.80s: (tool result) Amtrak's Acela Express offers frequent service from New York Penn Station to Boston South Statio⟧ Amtrak’s Acela Express—offers frequent service from New York Penn Station to Boston South Station—with a typical travel time of around 3 hours and 40 minutes.
+      CALL: {"function": "search", "arguments": {"query": "Amtrak New York to Boston"}}
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 63턴 · 93프레임 스팬
+          │ checkup date: June 6th; checkup time: 10:00 AM; checkup cost: 350 dollars; decor style: Scandinavian; decor location: New York apartment; moving status: downsizing; moving location: New York; weekend trip location: Boston; train route: New York Penn Station to Boston South Station; train duration: 3 hours and 40 minutes
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[193.50s][user ] Okay, I'll try to be more consistent. What about before bed? Any tips for winding down?
-[198.13s][moshi] [happy] Creating a relaxing bedtime routine can be very helpful. Things like a warm bath, reading a book, or listening to calming music.
-[206.90s][user ] I usually end up scrolling through my phone. That’s probably not ideal.
-[208.27s][moshi] «backchannel» Yeah.
-[210.28s][moshi] You’re right, the blue light from screens can interfere with sleep.
-[214.20s][user ] I know, I know. It’s a bad habit.
-[215.07s][moshi] «backchannel» Yeah.
-[215.81s][moshi] It’s a common one! Try putting your phone away at least an hour before bed.
-[220.59s][user ] I’ll try. It’s hard though!
-[222.22s][moshi] Small steps are perfectly fine. Even reducing your screen time by a little bit can make a difference.
-[226.15s][user ] «backchannel» Mm-hmm.
-[228.33s][user ] You’re right. It’s about progress, not perfection.
-[230.89s][moshi] Exactly. And remember, gentle breathing exercises can also help calm your mind.
-[232.73s][user ] «backchannel» Right.
-[237.16s][user ] Like what kind of breathing exercises?
-[239.37s][moshi] The 4-7-8 technique is a simple one. Inhale for four seconds, hold for seven, and exhale for eight.
-[246.23s][user ] 4-7-8… I think I’ve heard of that.
-[248.79s][moshi] It’s very effective for reducing anxiety and promoting relaxation.
-[250.69s][user ] «backchannel» Yeah.
-[254.38s][user ] I’ll give it a go tonight.
-[255.89s][moshi] Wonderful. Let me know how it goes.
-[257.82s][user ] «backchannel» Yeah.
-[259.39s][user ] Will do. I’m also thinking about getting a massage.
-[260.40s][moshi] «backchannel» Yeah.
-[262.00s][moshi] A massage sounds like a wonderful way to relieve stress.
-[264.49s][user ] «backchannel» Yeah.
-[265.58s][user ] I haven’t had one in ages. I just need to find a good place.
-[269.13s][moshi] I can help with that. Are you looking for a massage in London?
-[270.88s][user ] «backchannel» Mhm.
-[273.81s][user ] Yes, somewhere near where ⟨ret@275.61s⟩ I live.
-[276.06s][moshi] ⟦⚡SPAN@275.91s: (tool result) The Thai Massage Centre in Kensington offers a range of traditional Thai massages, with prices s⟧ The Thai Massage Centre in Kensington offers traditional Thai massages, with prices starting from 60 pounds for a 60-minute session.
-      CALL: {"function": "search", "arguments": {"query": "massage London"}}
-[280.93s][user ] «backchannel» Yeah.
-[284.38s][user ] 60 pounds? That sounds reasonable. Kensington is a bit of a trek though.
-[289.62s][moshi] It is a bit further out. I can refine the search to a closer location if you’d like.
-[292.01s][user ] «backchannel» Yeah, yeah.
-[294.35s][user ] Yes, please. Something more ⟨ret@295.90s⟩ central.
-[296.30s][moshi] ⟦⚡SPAN@296.24s: (tool result) Cloud Twelve Holistic Wellbeing Centre in Notting Hill provides a range of massage therapies, in⟧ Cloud Twelve Holistic Wellbeing Centre in Notting Hill offers Swedish, deep tissue, and aromatherapy massages, ranging from 85 to 120 pounds.
-      CALL: {"function": "search", "arguments": {"query": "massage central London"}}
-[299.86s][user ] «backchannel» Yeah, yeah.
-[306.77s][user ] Okay, that’s a bit more expensive. But Notting Hill is much closer.
-[310.68s][moshi] It’s a trade-off between price and convenience.
-[313.52s][user ] True. I think I’ll check out Cloud Twelve.
-[315.81s][moshi] Excellent choice.
-[318.35s][user ] So, um, what time did I say my dentist appointment was again?
-[319.57s][moshi] «backchannel» Mhm.
-[322.11s][moshi] You said your dentist appointment is on October 14th at 2:00 PM.
-[324.95s][user ] «backchannel» Right.
-[326.49s][user ] Right, 2:00 PM. Thanks for reminding me.
-[328.59s][moshi] You're very welcome.
-[331.36s][user ] I’m also trying to find a good moving company. I'm thinking of moving flats soon.
-[335.33s][moshi] That’s exciting! Moving can be a bit stressful, though.
-[339.03s][user ] It is. I need someone reliable.
-[341.18s][moshi] Reliability is key. I can search for moving companies in London for you.
-[344.91s][user ] «backchannel» Yeah.
-[346.25s][user ] Please ⟨ret@346.86s⟩ do.
-[347.14s][moshi] ⟦⚡SPAN@347.08s: (tool result) Robins & Downs Removals is a London-based moving company offering packing, storage, and transpor⟧ Robins & Downs Removals is a London-based company offering packing, storage, and transportation, typically starting from 300 pounds.
-      CALL: {"function": "search", "arguments": {"query": "moving companies London"}}
-[352.12s][user ] «backchannel» Okay.
-[355.30s][user ] 300 pounds… that sounds about right.
-[358.28s][moshi] It’s a starting point, of course. Prices will depend on the amount of belongings you have.
-[363.96s][user ] Yeah, I have quite a lot of books.
-[364.61s][moshi] «backchannel» Yeah.
-[366.00s][moshi] Books can add up quickly! It’s best to get a detailed quote.
-[370.69s][user ] I’ll definitely do that. I think that’s all for now.
-[372.25s][moshi] «backchannel» Mm-hmm.
-[373.48s][moshi] Before we finish, do you remember how much that dentist appointment was?
-[375.65s][user ] «backchannel» Okay.
-[377.71s][user ] Oh, yes. It was 445 pounds.
-[380.39s][moshi] You’re right, the dentist appointment was 445 pounds.
-          ┌─ 🃏 CARD 주입 @384.0s (4800f) — 지금까지 대화 전체의 누적 요약 · 124턴 · 89프레임 스팬
-          │ dentist date: October 14th; dentist time: 2:00 PM; laptop preference: leaning towards a MacBook Air; travel preference: portability is key; weekend getaway location: Brighton; dietary restriction: vegan; sleep issue: stressed lately; massage location: London; massage location pref: more central; moving location: London; dentist cost: 445 pounds
-          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[385.74s][user ] Thank you for reminding me.
-[386.99s][moshi] You’re very welcome, Nathan.
-[388.76s][user ] I think I’m all set now.
-[390.23s][moshi] [happy] Wonderful! I'm glad I could help. Remember to prioritize self-care, especially during stressful times. A little mindfulness can go a long way.
-[396.47s][user ] «backchannel» Uh-huh.
-[399.96s][user ] I will. Thanks again.
-[401.33s][moshi] Take care, Nathan. Have a lovely day.
+[196.49s][user ] That's not too bad.
+[197.90s][moshi] It's a comfortable and efficient way to travel.
+[199.37s][user ] «backchannel» Okay.
+[201.20s][user ] I should probably book tickets in advance.
+[203.34s][moshi] Definitely—especially for popular routes like that one.
+[206.34s][user ] I’m getting a little tired just thinking about all of this.
+[209.28s][moshi] [sigh] It’s understandable—planning can be exhausting. Remember to prioritize self-care.
+[216.24s][user ] You’re right. I need to take a break.
+[217.79s][moshi] A moment of peace can do wonders for your energy levels.
+[220.86s][user ] What did I say my doctor's appointment was at?
+[223.41s][moshi] You said it was at 10:00 AM.
+[226.76s][user ] Right. And how much was the checkup again?
+[229.44s][moshi] You mentioned it costs 350 dollars.
+[230.58s][user ] «backchannel» Yeah.
+[233.15s][user ] Okay, good. I was starting to doubt myself.
+[235.35s][moshi] It’s easy to lose track—when you have a lot on your mind.
+[238.96s][user ] I think I'll just relax for the rest of the day.
+[240.73s][moshi] «backchannel» Yeah.
+[241.45s][moshi] That sounds like a perfect plan. Allow yourself to rest and recharge.
+[243.28s][user ] «backchannel» Yeah, yeah.
+[246.37s][user ] Maybe I'll read a book.
+[247.84s][moshi] A wonderful way to unwind and escape.
+[250.53s][user ] Do you have any recommendations?
+[252.57s][moshi] What kind of books do you typically enjoy?
+[255.08s][user ] I like ⟨ret@256.16s⟩ historical fiction.
+[256.76s][moshi] ⟦⚡SPAN@257.19s: "The Nightingale" by Kristin Hannah is a popular historical fiction novel set in France during World War II, p⟧ If you enjoy historical fiction—"The Nightingale" by Kristin Hannah—set in France during World War II—is a popular choice.
+[262.49s][user ] «backchannel» Yeah, yeah.
+[265.12s][user ] That sounds interesting.
+[266.31s][moshi] It’s a beautifully written and moving story.
+[267.95s][user ] «backchannel» Yeah.
+[268.81s][user ] I’ll add it to my list.
+[270.45s][moshi] Excellent. A little literary escape awaits.
+[273.50s][user ] I think I’m all set for now.
+[275.09s][moshi] [happy] Wonderful. I’m here whenever you need anything else, Julia. Remember to be kind to yourself.

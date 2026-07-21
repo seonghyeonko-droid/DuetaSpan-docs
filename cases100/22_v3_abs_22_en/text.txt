@@ -93,10 +93,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What is the largest metropolitan area in France?
-[  3.60s][moshi] ⟨ret@3.52s⟩ Unfortunately, ⟦⚡SPAN@4.22s: (no information found)⟧ I don’t have reliable data on the largest metropolitan area in France right now.
+[  3.60s][moshi] ⟨ret@3.52s⟩ Unfortunately, ⟦⚡SPAN@4.47s: (no information found)⟧ I don’t have reliable data on the largest metropolitan area in France right now.
 [  7.91s][user ] «backchannel» Nice.
-[  9.79s][user ] Oh, okay. Well, what about the current time in Paris?
-[ 13.62s][moshi] ⟨ret@13.49s⟩ ⟦⚡SPAN@13.59s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris right now.⟧ It is currently 3:17 PM in Paris. [happy] Quite a lovely time of day, isn’t it?
+[  9.79s][user ] Oh, okay. Well, what about the current ⟨ret@12.11s⟩ time in Paris?
+[ 13.62s][moshi] ⟦⚡SPAN@13.56s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris right now.⟧ It is currently 3:17 PM in Paris. [happy] Quite a lovely time of day, isn’t it?
       CALL: {"function": "get_time", "arguments": {"city": "Paris"}}
 [ 17.17s][user ] «backchannel» Yeah.
 [ 20.09s][user ] It is. I’m thinking of taking a trip there next month.
@@ -109,12 +109,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 38.88s][user ] I used to paint a lot of landscapes.
 [ 39.84s][moshi] «backchannel» Mhm.
 [ 41.80s][moshi] Landscapes are beautiful! Do you have a favorite place you like to paint, or dream of painting?
-[ 48.16s][user ] I always loved the lavender fields in Provence.
-[ 51.90s][moshi] ⟨ret@51.80s⟩ ⟦⚡SPAN@51.90s: Provence is a region in southeastern France, known for its vibrant lavender fields, picturesque villages, and ⟧ Provence is a region in southeastern France, well-known for its vibrant lavender fields and charming villages. [curious] Maybe revisiting those memories could inspire you?
+[ 48.16s][user ] I always loved the lavender fields ⟨ret@50.89s⟩ in Provence.
+[ 51.90s][moshi] ⟦⚡SPAN@51.85s: Provence is a region in southeastern France, known for its vibrant lavender fields, picturesque villages, and ⟧ Provence is a region in southeastern France, well-known for its vibrant lavender fields and charming villages. [curious] Maybe revisiting those memories could inspire you?
 [ 63.28s][user ] That's a good idea. I should look at some photos.
 [ 66.82s][moshi] [happy] That's a great first step! Sometimes a little visual inspiration is all you need.
 [ 72.02s][user ] Actually, could you find me some…
-[ 76.24s][user ] …pictures of lavender fields in ⟨ret@78.42s⟩ Provence?
+[ 76.24s][user ] …pictures of lavender fields ⟨ret@77.97s⟩ in Provence?
 [ 78.22s][moshi] «backchannel» Yeah.
 [ 78.83s][moshi] ⟦⚡SPAN@79.16s: (tool result) Fields of purple lavender bloom in the Valensole Plateau, Provence, France, attracting tourists ⟧ Stunning fields of purple lavender bloom in the Valensole Plateau in Provence, France, and attract lots of visitors.
       CALL: {"function": "search", "arguments": {"query": "lavender fields Provence France"}}

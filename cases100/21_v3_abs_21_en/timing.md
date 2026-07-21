@@ -79,7 +79,7 @@
      3.74s  <ret> 발화 (turn2 첫 프레임)
      4.04s  agent 발화 시작: <ret> Unfortunately, there isn't a single color shared by al
      4.21s  user  발화 끝
-     4.51s  ⚡SPAN 주입 [d'=0.77s / d_lead=9.83s]: (no information found)
+     4.76s  ⚡SPAN 주입 [d'=1.02s / d_lead=9.83s]: (no information found)
      9.19s  user  발화 시작: Yeah.
      9.82s  user  발화 끝
     13.87s  agent 발화 끝
@@ -105,7 +105,7 @@
     66.03s  <ret> 발화 (turn14 첫 프레임)
     66.26s  agent 발화 시작: <ret> One way to approach that is setting healthy boundaries
     66.27s  user  발화 끝
-    67.06s  ⚡SPAN 주입 [d'=1.03s / d_lead=11.73s]: Setting healthy boundaries involves clearly communicating your limits 
+    67.31s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.73s]: Setting healthy boundaries involves clearly communicating your limits 
     70.83s  user  발화 시작: Yeah.
     71.55s  user  발화 끝
     78.00s  agent 발화 끝

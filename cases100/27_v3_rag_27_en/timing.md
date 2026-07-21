@@ -102,9 +102,9 @@
     28.48s  user  발화 시작: …any tips for that?
     29.21s  <ret> 발화 (turn9 첫 프레임)
     29.29s  agent 발화 시작: Mm-hmm.
-    29.65s  ⚡SPAN 주입 [d'=0.44s / d_lead=9.04s]: Exposure to bright light first thing in the morning can help regulate 
     29.78s  agent 발화 시작: <ret> A lot of people find it helpful to get some bright lig
     29.90s  user  발화 끝
+    29.90s  ⚡SPAN 주입 [d'=0.69s / d_lead=9.04s]: Exposure to bright light first thing in the morning can help regulate 
     30.07s  agent 발화 끝
     33.64s  user  발화 시작: Nice.
     34.56s  user  발화 끝
@@ -119,7 +119,7 @@
     48.55s  user  발화 끝
     48.64s  <ret> 발화 (turn15 첫 프레임)
     48.65s  agent 발화 시작: <ret> The best way to set one up is to have it gradually inc
-    48.94s  ⚡SPAN 주입 [d'=0.30s / d_lead=10.30s]: Sunrise alarm clocks gradually increase light intensity over 30-60 min
+    49.24s  ⚡SPAN 주입 [d'=0.60s / d_lead=10.30s]: Sunrise alarm clocks gradually increase light intensity over 30-60 min
     54.30s  user  발화 시작: Oh.
     54.79s  user  발화 끝
     58.95s  agent 발화 끝
@@ -129,7 +129,7 @@
     64.43s  user  발화 끝
     64.68s  <ret> 발화 (turn19 첫 프레임)
     64.70s  agent 발화 시작: <ret> It’s currently ten seventeen AM here in Seoul, so perh
-    65.22s  ⚡SPAN 주입 [d'=0.55s / d_lead=6.67s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Asia/Seoul ri
+    65.47s  ⚡SPAN 주입 [d'=0.80s / d_lead=6.67s]: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Asia/Seoul ri
     71.37s  agent 발화 끝
     72.31s  user  발화 시작: That’s a good idea. I always forget.
     75.22s  user  발화 끝

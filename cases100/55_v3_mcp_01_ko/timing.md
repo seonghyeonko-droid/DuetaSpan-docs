@@ -91,13 +91,13 @@
      7.14s  <ret> 발화 (turn3 첫 프레임)
      7.27s  agent 발화 시작: <ret> 마운틴 로지 호텔, 이천이십사년 오월 십일부터 삼박 예약이 완료되었어요. 총 금액은 육백칠십오달러
      7.44s  user  발화 끝
-     7.98s  ⚡SPAN 주입 [d'=0.85s / d_lead=10.30s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
+     8.23s  ⚡SPAN 주입 [d'=1.10s / d_lead=10.30s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
     17.45s  user  발화 시작: 육백칠십오달러? 생각보다 비싸네. 더 저렴한 곳 찾아봐 줘.
     17.57s  agent 발화 끝
     21.39s  <ret> 발화 (turn5 첫 프레임)
     21.57s  agent 발화 시작: <ret> 덴버에는 계절과 편의시설에 따라 평균 객실 요금이 백달러에서 이백오십달러까지 다양한 호텔이 있어요
     21.66s  user  발화 끝
-    22.09s  ⚡SPAN 주입 [d'=0.69s / d_lead=11.59s]: Denver has many hotels with average nightly rates ranging from $100 to
+    22.34s  ⚡SPAN 주입 [d'=0.94s / d_lead=11.59s]: Denver has many hotels with average nightly rates ranging from $100 to
     29.25s  user  발화 시작: 어.
     29.79s  user  발화 끝
     33.16s  agent 발화 끝
@@ -112,8 +112,8 @@
     49.52s  agent 발화 끝
     54.11s  <ret> 발화 (turn12 첫 프레임)
     54.61s  agent 발화 시작: <ret> 마운틴 로지는 체크인 일흔두시간 전에 취소하면 전액 환불되지만, 일흔두시간 이내 취소 시에는 오십
-    54.68s  ⚡SPAN 주입 [d'=0.57s / d_lead=8.95s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
     54.82s  user  발화 끝
+    54.93s  ⚡SPAN 주입 [d'=0.82s / d_lead=8.95s]: (tool result) {"confirmation id": "MX829Z", "hotel name": "Mountain Lo
     59.21s  user  발화 시작: 응.
     59.80s  user  발화 끝
     63.50s  agent 발화 시작: 햄튼 인으로 변경하는 것은 언제든 가능합니다. 수수료를 고려하면 햄튼 인이 더 나은 선택일 수도 있겠네요.
@@ -125,7 +125,7 @@
     72.37s  <ret> 발화 (turn17 첫 프레임)
     72.54s  agent 발화 시작: <ret> [happy] 네, 햄튼 인 덴버 다운타운으로 변경되었어요. 확인번호는 엔 와이 일 사 칠 케이이
     72.59s  user  발화 끝
-    73.45s  ⚡SPAN 주입 [d'=1.07s / d_lead=7.83s]: (tool result) {"confirmation id": "NY147K", "hotel name": "Hampton Inn
+    73.70s  ⚡SPAN 주입 [d'=1.32s / d_lead=7.83s]: (tool result) {"confirmation id": "NY147K", "hotel name": "Hampton Inn
     77.50s  user  발화 시작: 응.
     77.95s  user  발화 끝
     80.22s  user  발화 시작: 오, 훨씬 저렴하네. 고마워.

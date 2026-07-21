@@ -91,5 +91,5 @@
      4.08s  <ret> 발화 (turn2 첫 프레임)
      4.32s  agent 발화 시작: <ret> It was December twenty-third, two thousand and sevente
      4.50s  user  발화 끝
-     4.62s  ⚡SPAN 주입 [d'=0.55s / d_lead=11.36s]: The Minnesota Vikings last defeated the Green Bay Packers at Lambeau F
+     4.87s  ⚡SPAN 주입 [d'=0.80s / d_lead=11.36s]: The Minnesota Vikings last defeated the Green Bay Packers at Lambeau F
     15.68s  agent 발화 끝

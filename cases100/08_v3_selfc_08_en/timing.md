@@ -74,16 +74,16 @@
 # EXAMINER(FDB-v2) 단계: S1 I need to unconfirm the meeting sc | S2 That's better. I'm really stressed | S3 …Is she even aware there *is* a pr | S4 Do you have any advice on how to s
 
      0.00s  user  발화 시작: I need to unconfirm the meeting scheduled for Monday.
-     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.58s  <ret> 발화 (turn1 첫 프레임)
      3.02s  agent 발화 시작: <ret> Alright, meeting one two three four five is cancelled,
      3.14s  user  발화 끝
-     3.15s  ⚡SPAN 주입 [d'=0.51s / d_lead=9.04s]: (tool result) Meeting 12345 cancelled. Confirmation ID: XJ789
+     3.34s  ⚡SPAN 주입 [d'=0.76s / d_lead=9.04s]: (tool result) Meeting 12345 cancelled. Confirmation ID: XJ789
     12.06s  agent 발화 끝
     12.43s  user  발화 시작: Actually, it was Tuesday, not Monday.
     14.34s  <ret> 발화 (turn3 첫 프레임)
     14.88s  agent 발화 시작: <ret> [happy] No problem at all. Meeting one two three four 
     14.88s  user  발화 끝
-    15.37s  ⚡SPAN 주입 [d'=1.03s / d_lead=11.73s]: (tool result) Meeting 12345 cancelled. Confirmation ID: YK234
+    15.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.73s]: (tool result) Meeting 12345 cancelled. Confirmation ID: YK234
     21.39s  user  발화 시작: Mm-hmm.
     21.89s  user  발화 끝
     26.61s  agent 발화 끝

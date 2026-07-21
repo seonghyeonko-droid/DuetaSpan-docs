@@ -78,10 +78,10 @@
 
 
      0.00s  user  발화 시작: Hey Ele, I was just watching Robin Hood: Prince of Thieves a
-     6.90s  <ret> 발화 (turn1 첫 프레임)
+     6.05s  <ret> 발화 (turn1 첫 프레임)
      7.43s  agent 발화 시작: <ret> The Sheriff of Nottingham was brilliantly played by Al
      7.46s  user  발화 끝
-     7.72s  ⚡SPAN 주입 [d'=1.41s / d_lead=6.35s]: Alan Rickman portrayed the Sheriff of Nottingham in the 1991 film Robi
+     7.72s  ⚡SPAN 주입 [d'=1.66s / d_lead=6.35s]: Alan Rickman portrayed the Sheriff of Nottingham in the 1991 film Robi
      9.69s  user  발화 시작: Yeah.
     10.09s  user  발화 끝
     13.68s  user  발화 시작: Alan Rickman! Of course! He was so good. I completely forgot
@@ -93,7 +93,7 @@
     25.83s  agent 발화 끝
     26.84s  user  발화 시작: He really did. Okay, back to movies… Do you know what year *
     33.29s  <ret> 발화 (turn7 첫 프레임)
-    33.59s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.09s]: Jurassic Park, directed by Steven Spielberg, was first released in the
     33.76s  agent 발화 시작: <ret> *Jurassic Park* first roared onto the big screen on Ju
     33.78s  user  발화 끝
+    33.89s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.09s]: Jurassic Park, directed by Steven Spielberg, was first released in the
     40.85s  agent 발화 끝

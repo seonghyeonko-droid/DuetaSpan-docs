@@ -87,7 +87,7 @@
      3.40s  <ret> 발화 (turn1 첫 프레임)
      3.56s  user  발화 끝
      3.65s  agent 발화 시작: <ret> 마추픽추를 서양에 알린 건 미국의 탐험가인 히람 빙엄 씨예요, 천구백십일년에요.
-     3.70s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.53s]: Hiram Bingham, an American explorer, brought Machu Picchu to Western a
+     4.00s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.53s]: Hiram Bingham, an American explorer, brought Machu Picchu to Western a
      6.50s  user  발화 시작: 응.
      6.86s  user  발화 끝
     10.18s  agent 발화 끝
@@ -127,9 +127,9 @@
     64.23s  agent 발화 끝
     65.27s  user  발화 시작: 그럼 뭘 해야 할까?
     66.24s  <ret> 발화 (turn21 첫 프레임)
-    66.54s  ⚡SPAN 주입 [d'=0.30s / d_lead=5.61s]: Mindfulness meditation involves focusing on the present moment without
     66.72s  agent 발화 시작: <ret> 판단 없이 현재에 집중하는 명상, 마음 챙김 명상을 해보는 건 어떠세요?
     66.83s  user  발화 끝
+    66.84s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.61s]: Mindfulness meditation involves focusing on the present moment without
     72.25s  user  발화 시작: 명상…
     72.32s  agent 발화 끝
     73.10s  agent 발화 시작: 짧게 시작해 보세요. 오분이라도 괜찮아요. 편안한 곳에 앉아서 눈을 감고 호흡에 집중해 보세요.
@@ -143,7 +143,7 @@
     87.52s  <ret> 발화 (turn27 첫 프레임)
     87.94s  agent 발화 시작: <ret> 서울에 있는 올림픽공원은 넓은 녹지와 조용한 산책로를 제공해요.
     88.10s  user  발화 끝
-    89.02s  ⚡SPAN 주입 [d'=1.50s / d_lead=5.28s]: Olympic Park in Seoul offers extensive green spaces and peaceful walki
+    89.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: Olympic Park in Seoul offers extensive green spaces and peaceful walki
     91.91s  user  발화 시작: 그치.
     92.69s  user  발화 끝
     93.22s  agent 발화 끝

@@ -76,8 +76,8 @@
      7.99s  agent 발화 끝
      8.29s  user  발화 시작: I was wondering… who actually discovered it?
     10.96s  <ret> 발화 (turn3 첫 프레임)
-    11.26s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.50s]: Hiram Bingham III, an American historian, politician, explorer, and le
     11.55s  agent 발화 시작: <ret> It was Hiram Bingham III, an American historian, who r
+    11.56s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.50s]: Hiram Bingham III, an American historian, politician, explorer, and le
     11.70s  user  발화 끝
     23.05s  agent 발화 끝
     23.35s  user  발화 시작: Oh, so it wasn’t… completely lost? … I thought it was hidden
@@ -91,8 +91,8 @@
     38.98s  user  발화 시작: Right. So, what was Bingham doing there in the first place?
     42.23s  <ret> 발화 (turn9 첫 프레임)
     42.82s  agent 발화 시작: <ret> He was actually leading an expedition funded by Yale U
-    43.00s  ⚡SPAN 주입 [d'=0.78s / d_lead=9.55s]: Bingham was leading an expedition sponsored by Yale University and the
     43.01s  user  발화 끝
+    43.25s  ⚡SPAN 주입 [d'=1.03s / d_lead=9.55s]: Bingham was leading an expedition sponsored by Yale University and the
     45.96s  user  발화 시작: Yeah.
     46.59s  user  발화 끝
     52.26s  agent 발화 시작: It’s a fascinating story, isn't it? He stumbled upon Machu P
@@ -110,7 +110,7 @@
     76.79s  <ret> 발화 (turn17 첫 프레임)
     76.95s  agent 발화 시작: <ret> Getting there was quite the undertaking! Bingham’s tea
     77.17s  user  발화 끝
-    77.51s  ⚡SPAN 주입 [d'=0.72s / d_lead=10.16s]: Bingham and his team traveled by train to Aguas Calientes, then hiked 
+    77.76s  ⚡SPAN 주입 [d'=0.97s / d_lead=10.16s]: Bingham and his team traveled by train to Aguas Calientes, then hiked 
     87.11s  agent 발화 끝
     87.53s  user  발화 시작: Wow, that sounds exhausting! I guess…
     90.76s  user  발화 끝
@@ -123,14 +123,14 @@
    101.15s  agent 발화 끝
    105.13s  <ret> 발화 (turn23 첫 프레임)
    105.34s  agent 발화 시작: <ret> April tends to be a good time, though the weather can 
-   105.47s  ⚡SPAN 주입 [d'=0.34s / d_lead=11.59s]: (tool result) Temperature: 18.5°C, humidity: 68%, precipitation: 5mm, 
    105.52s  user  발화 끝
+   105.73s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.59s]: (tool result) Temperature: 18.5°C, humidity: 68%, precipitation: 5mm, 
    116.63s  user  발화 시작: Hmm, rain isn’t ideal… Is May better?
    116.94s  agent 발화 끝
    120.52s  user  발화 끝
    120.59s  <ret> 발화 (turn25 첫 프레임)
    120.74s  agent 발화 시작: <ret> May looks much more promising! May 1st, 2027, is forec
-   121.32s  ⚡SPAN 주입 [d'=0.73s / d_lead=10.67s]: (tool result) Temperature: 20.1°C, humidity: 62%, precipitation: 2mm, 
+   121.57s  ⚡SPAN 주입 [d'=0.98s / d_lead=10.67s]: (tool result) Temperature: 20.1°C, humidity: 62%, precipitation: 2mm, 
    127.59s  user  발화 시작: Yeah.
    128.42s  user  발화 끝
    131.05s  user  발화 시작: That sounds perfect! Okay, good to know.
@@ -146,7 +146,7 @@
    144.52s  <ret> 발화 (turn32 첫 프레임)
    144.86s  agent 발화 시작: <ret> You are right to be mindful of that. Machu Picchu sits
    145.02s  user  발화 끝
-   145.19s  ⚡SPAN 주입 [d'=0.67s / d_lead=12.19s]: Machu Picchu is located at an altitude of 2,430 meters (7,972 feet) ab
+   145.44s  ⚡SPAN 주입 [d'=0.92s / d_lead=12.19s]: Machu Picchu is located at an altitude of 2,430 meters (7,972 feet) ab
    150.04s  user  발화 시작: Yeah.
    150.77s  user  발화 끝
    157.01s  agent 발화 시작: It’s common, but there are ways to mitigate it. [curious] Th

@@ -91,10 +91,10 @@
 
 
      0.00s  user  발화 시작: End the code generation session for data analysis, session f
+     6.57s  <ret> 발화 (turn1 첫 프레임)
      6.72s  user  발화 끝
-     6.74s  <ret> 발화 (turn1 첫 프레임)
      6.96s  agent 발화 시작: <ret> [happy] Okay, session forty-two is finished, and your 
-     7.90s  ⚡SPAN 주입 [d'=1.17s / d_lead=8.72s]: (tool result) Session 42 ended. Tests created: data analysis tests.py
+     7.99s  ⚡SPAN 주입 [d'=1.42s / d_lead=8.72s]: (tool result) Session 42 ended. Tests created: data analysis tests.py
     11.45s  user  발화 시작: Yeah.
     12.08s  user  발화 끝
     15.57s  user  발화 시작: Good. Now, can you find me a quiet cafe nearby for working?
@@ -104,7 +104,7 @@
     20.64s  <ret> 발화 (turn5 첫 프레임)
     20.79s  agent 발화 시작: <ret> I’ve found a good spot for focused work—Cafe Yeonjae i
     20.95s  user  발화 끝
-    21.38s  ⚡SPAN 주입 [d'=0.74s / d_lead=8.44s]: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu,
+    21.63s  ⚡SPAN 주입 [d'=0.99s / d_lead=8.44s]: There are many cafes in Busan, but Cafe Yeonjae, located in Yeonje-gu,
     26.77s  user  발화 시작: Yeah.
     27.22s  user  발화 끝
     29.24s  agent 발화 끝

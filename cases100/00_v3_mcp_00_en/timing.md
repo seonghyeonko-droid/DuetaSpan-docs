@@ -99,7 +99,7 @@
      4.47s  <ret> 발화 (turn2 첫 프레임)
      4.84s  agent 발화 시작: <ret> That IP address, ten dot zero dot zero dot one, points
      5.00s  user  발화 끝
-     5.55s  ⚡SPAN 주입 [d'=1.08s / d_lead=15.59s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
+     5.80s  ⚡SPAN 주입 [d'=1.33s / d_lead=15.59s]: (tool result) {"latitude": 37.5665, "longitude": 126.9780, "city": "Se
     20.43s  agent 발화 끝
     20.86s  user  발화 시작: Oh, wow. That’s interesting.
     23.11s  user  발화 끝
@@ -125,5 +125,5 @@
     80.24s  <ret> 발화 (turn14 첫 프레임)
     80.57s  user  발화 끝
     80.84s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-eight point z
-    81.14s  ⚡SPAN 주입 [d'=0.90s / d_lead=9.92s]: (tool result) {"temperature": 28.0, "humidity": 75, "wind speed": 6.2,
+    81.39s  ⚡SPAN 주입 [d'=1.15s / d_lead=9.92s]: (tool result) {"temperature": 28.0, "humidity": 75, "wind speed": 6.2,
     90.76s  agent 발화 끝

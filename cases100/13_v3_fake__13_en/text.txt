@@ -71,28 +71,28 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 
 [  0.00s][user ] Hi Kellax, I was just wondering… when did *The Wizard of Oz* come ⟨ret@4.72s⟩ out?
 [  3.08s][moshi] «backchannel» Yeah.
-[  5.27s][moshi] ⟦⚡SPAN@5.46s: The film *The Wizard of Oz* was first released on August 25, 1939, in the United States.⟧ That wonderful film first came out on August twenty-fifth, nineteen thirty-nine, in the United States. It's a classic!
+[  5.27s][moshi] ⟦⚡SPAN@5.71s: The film *The Wizard of Oz* was first released on August 25, 1939, in the United States.⟧ That wonderful film first came out on August twenty-fifth, nineteen thirty-nine, in the United States. It's a classic!
 [ 11.49s][user ] Wow, that was a long time ago.
 [ 14.62s][moshi] It truly was! It’s amazing how some stories continue to resonate across generations, isn't it?
 [ 21.91s][user ] Definitely. Do you think it’s still popular with kids today?
 [ 23.86s][moshi] «backchannel» Yeah.
 [ 26.37s][moshi] I believe so. Its themes of courage, friendship, and finding your way home are timeless.
 [ 28.97s][user ] «backchannel» Yeah, yeah.
-[ 31.77s][user ] I guess you’re right. What about the ⟨ret@34.26s⟩ music?
+[ 31.77s][user ] I guess you’re right. What about ⟨ret@33.79s⟩ the music?
 [ 33.49s][moshi] «backchannel» Yeah.
 [ 34.45s][moshi] ⟦⚡SPAN@34.39s: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by Yip Harburg.⟧ The music was composed by Harold Arlen, with lyrics penned by Yip Harburg— a truly iconic pairing.
 [ 41.13s][user ] Oh, I didn’t know that!
 [ 43.00s][moshi] [happy] It’s fun to learn the details behind the magic, don’t you think?
-[ 47.32s][user ] Yeah, it is. Did they film it all in ⟨ret@50.27s⟩ Kansas?
+[ 47.32s][user ] Yeah, it is. Did ⟨ret@48.79s⟩ they film it all in Kansas?
 [ 50.61s][moshi] ⟦⚡SPAN@50.55s: While the story begins in Kansas, *The Wizard of Oz* was primarily filmed at Metro-Goldwyn-Mayer Studios in Cu⟧ While the story starts in Kansas, much of the film was actually shot at Metro-Goldwyn-Mayer Studios in Culver City, California.
 [ 54.47s][user ] «backchannel» Yeah.
 [ 58.43s][user ] Oh, so it wasn't really filmed on a farm?
 [ 59.43s][moshi] «backchannel» Yeah.
 [ 60.95s][moshi] Not entirely! They used sets to create that sense of Kansas, and of course, Oz itself.
 [ 63.72s][user ] «backchannel» Mm-hmm.
-[ 66.73s][user ] That makes sense. It looked ⟨ret@69.41s⟩ so colorful!
-[ 70.01s][moshi] ⟦⚡SPAN IRRELEVANT@69.84s: The average retail price of organic thyme in Portland, Oregon, is $3.99 per bunch as of July 9, 2026.⟧ The vibrant colors are definitely one of the things that make it so memorable— it’s a feast for the eyes!
-[ 74.56s][user ] It really is. Was Dorothy a child ⟨ret@78.41s⟩ actor?
+[ 66.73s][user ] That makes sense. It looked ⟨ret@69.27s⟩ so colorful!
+[ 70.01s][moshi] ⟦⚡SPAN IRRELEVANT@69.95s: The average retail price of organic thyme in Portland, Oregon, is $3.99 per bunch as of July 9, 2026.⟧ The vibrant colors are definitely one of the things that make it so memorable— it’s a feast for the eyes!
+[ 74.56s][user ] It really is. Was Dorothy ⟨ret@77.45s⟩ a child actor?
 [ 78.71s][moshi] ⟦⚡SPAN@78.65s: Judy Garland, who played Dorothy, was only 16 years old during the filming of *The Wizard of Oz*.⟧ Judy Garland, who played Dorothy, was just sixteen years old during filming. It was a huge role for a young actress!
 [ 83.33s][user ] «backchannel» Uh-huh.
 [ 85.48s][user ] Wow, sixteen! That’s so young. What other movies was she in? —

@@ -100,7 +100,7 @@
     34.78s  <ret> 발화 (turn6 첫 프레임)
     35.27s  agent 발화 시작: <ret> Good communication really comes down to actively liste
     35.28s  user  발화 끝
-    35.72s  ⚡SPAN 주입 [d'=0.95s / d_lead=13.82s]: Healthy communication involves active listening, expressing feelings c
+    35.97s  ⚡SPAN 주입 [d'=1.20s / d_lead=13.82s]: Healthy communication involves active listening, expressing feelings c
     40.16s  user  발화 시작: Yeah.
     40.70s  user  발화 끝
     49.09s  agent 발화 끝

@@ -88,7 +88,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] I need a room at the Bellagio in Las Vegas for four nights, beginning on ⟨ret@4.78s⟩ July eighteenth.
-[  5.40s][moshi] ⟦⚡SPAN@5.08s: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check in date": "2026-07-18", "length of stay":⟧ I’ve reserved a King Suite at the Bellagio in Las Vegas for you, checking in on July eighteenth for four nights. The total cost is two thousand eight hundred dollars, and your confirmation ID is BH729X.
+[  5.40s][moshi] ⟦⚡SPAN@5.38s: (tool result) {"hotel name": "Bellagio", "city": "Las Vegas", "check in date": "2026-07-18", "length of stay":⟧ I’ve reserved a King Suite at the Bellagio in Las Vegas for you, checking in on July eighteenth for four nights. The total cost is two thousand eight hundred dollars, and your confirmation ID is BH729X.
       CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Bellagio", "city": "Las Vegas", "check_in_date": "2026-07-18", "length_of_stay": 4}}
 [ 15.77s][user ] «backchannel» Right.
 [ 19.09s][user ] Two thousand eight hundred dollars? That seems…a lot.
@@ -96,5 +96,5 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 30.03s][user ] «backchannel» Yeah, yeah.
 [ 34.92s][user ] Maybe. What about something around, say, one thousand five hundred?
 [ 37.95s][moshi] «backchannel» Mhm.
-[ 39.22s][moshi] ⟨ret@39.21s⟩ I found ⟦⚡SPAN@40.21s: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check in date": "2026-07-18", "length of stay"⟧ a Standard Room at the Excalibur for nine hundred and fifty dollars, checking in on July eighteenth for four nights. Your confirmation ID is EX214Y. Does that sound better?
+[ 39.22s][moshi] ⟨ret@39.04s⟩ I found ⟦⚡SPAN@40.29s: (tool result) {"hotel name": "Excalibur", "city": "Las Vegas", "check in date": "2026-07-18", "length of stay"⟧ a Standard Room at the Excalibur for nine hundred and fifty dollars, checking in on July eighteenth for four nights. Your confirmation ID is EX214Y. Does that sound better?
       CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "any", "city": "Las Vegas", "check_in_date": "2026-07-18", "length_of_stay": 4, "max_price": 1500}}

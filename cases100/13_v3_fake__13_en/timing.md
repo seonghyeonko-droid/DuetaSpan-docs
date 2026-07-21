@@ -76,7 +76,7 @@
      4.72s  <ret> 발화 (turn2 첫 프레임)
      5.13s  user  발화 끝
      5.27s  agent 발화 시작: <ret> That wonderful film first came out on August twenty-fi
-     5.46s  ⚡SPAN 주입 [d'=0.74s / d_lead=6.16s]: The film *The Wizard of Oz* was first released on August 25, 1939, in 
+     5.71s  ⚡SPAN 주입 [d'=0.99s / d_lead=6.16s]: The film *The Wizard of Oz* was first released on August 25, 1939, in 
     11.43s  agent 발화 끝
     11.49s  user  발화 시작: Wow, that was a long time ago.
     14.26s  user  발화 끝
@@ -92,9 +92,9 @@
     31.70s  agent 발화 끝
     31.77s  user  발화 시작: I guess you’re right. What about the music?
     33.49s  agent 발화 시작: Yeah.
+    33.79s  <ret> 발화 (turn11 첫 프레임)
     33.99s  agent 발화 끝
-    34.26s  <ret> 발화 (turn11 첫 프레임)
-    34.39s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.62s]: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by
+    34.39s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.62s]: Harold Arlen composed the music for *The Wizard of Oz*, with lyrics by
     34.45s  agent 발화 시작: <ret> The music was composed by Harold Arlen, with lyrics pe
     34.59s  user  발화 끝
     41.07s  agent 발화 끝
@@ -103,8 +103,8 @@
     43.07s  user  발화 끝
     45.87s  agent 발화 끝
     47.32s  user  발화 시작: Yeah, it is. Did they film it all in Kansas?
-    50.27s  <ret> 발화 (turn15 첫 프레임)
-    50.55s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.13s]: While the story begins in Kansas, *The Wizard of Oz* was primarily fil
+    48.79s  <ret> 발화 (turn15 첫 프레임)
+    50.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.13s]: While the story begins in Kansas, *The Wizard of Oz* was primarily fil
     50.61s  agent 발화 시작: <ret> While the story starts in Kansas, much of the film was
     50.69s  user  발화 끝
     54.47s  user  발화 시작: Yeah.
@@ -119,14 +119,14 @@
     64.20s  user  발화 끝
     66.60s  agent 발화 끝
     66.73s  user  발화 시작: That makes sense. It looked so colorful!
-    69.41s  <ret> 발화 (turn22 첫 프레임)
-    69.84s  ⚡SPAN 주입(IRRELEVANT) [d'=0.43s / d_lead=4.86s]: The average retail price of organic thyme in Portland, Oregon, is $3.9
+    69.27s  <ret> 발화 (turn22 첫 프레임)
+    69.95s  ⚡SPAN 주입(IRRELEVANT) [d'=0.68s / d_lead=4.86s]: The average retail price of organic thyme in Portland, Oregon, is $3.9
     70.01s  agent 발화 시작: <ret> The vibrant colors are definitely one of the things th
     70.29s  user  발화 끝
     74.56s  user  발화 시작: It really is. Was Dorothy a child actor?
     74.87s  agent 발화 끝
-    78.41s  <ret> 발화 (turn24 첫 프레임)
-    78.65s  ⚡SPAN 주입 [d'=0.94s / d_lead=6.06s]: Judy Garland, who played Dorothy, was only 16 years old during the fil
+    77.45s  <ret> 발화 (turn24 첫 프레임)
+    78.65s  ⚡SPAN 주입 [d'=1.19s / d_lead=6.06s]: Judy Garland, who played Dorothy, was only 16 years old during the fil
     78.71s  agent 발화 시작: <ret> Judy Garland, who played Dorothy, was just sixteen yea
     78.91s  user  발화 끝
     83.33s  user  발화 시작: Uh-huh.

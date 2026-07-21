@@ -71,7 +71,7 @@
      6.47s  <ret> 발화 (turn2 첫 프레임)
      6.70s  agent 발화 시작: <ret> That would be Keith Richards, actually—he stepped in t
      6.78s  user  발화 끝
-     7.22s  ⚡SPAN 주입 [d'=0.76s / d_lead=7.46s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
+     7.47s  ⚡SPAN 주입 [d'=1.01s / d_lead=7.46s]: Keith Richards played bass on the Rolling Stones’ “Sympathy for the De
     14.14s  user  발화 시작: Oh, really? That’s interesting…
     14.15s  agent 발화 끝
     17.05s  user  발화 끝

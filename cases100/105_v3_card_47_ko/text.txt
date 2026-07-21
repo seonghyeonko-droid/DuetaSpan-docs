@@ -1,0 +1,195 @@
+v3_card_47_ko src=nq style=card_recall
+SYSTEM: <system> 당신은 데이트 및 관계에 대한 조언을 제공하는 부드럽고 사려 깊은 조력자 헤아이아입니다. 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길 안내 등)을 능숙하게 처리하는 음성 비서 모시이기도 합니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_card_47",
+    "name": "주원",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-05",
+      "category": "music",
+      "text": "User likes listening to city pop."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "allergy",
+      "text": "User is allergic to soy."
+    },
+    {
+      "date": "2026-04-08",
+      "category": "trip",
+      "text": "User is planning a trip to Slovenia in February."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "commute",
+      "text": "User takes a shuttle bus."
+    },
+    {
+      "date": "2026-01-24",
+      "category": "bloodtype",
+      "text": "User's blood type is A-."
+    },
+    {
+      "date": "2026-01-19",
+      "category": "airline",
+      "text": "User usually flies with Cathay Pacific."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-24",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "title": "Looking for a therapist",
+      "bullets": [
+        "prefers evening video sessions",
+        "wants someone who does CBT"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "title": "Buying a gift for a parent",
+      "bullets": [
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
+
+[  0.00s][user ] 이사 갈 날짜를 정했는데, 이월 이십사일이에요.
+[  3.67s][moshi] 네, 이월 이십사일로 이사 날짜를 정하셨군요.
+[  6.01s][user ] «backchannel» 어.
+[  7.65s][user ] 그리고 시간은 오후 네시 십오분으로 생각하고 있어요.
+[ 11.92s][moshi] 오후 네시 십오분으로 시간을 정하셨군요. 이사 준비 잘 하세요.
+[ 17.37s][user ] 이사 비용 견적을 좀 알아봐 줄 수 있을까요?
+[ 20.57s][moshi] 어디로 이사하시는지 알려주시겠어요?
+[ 23.32s][user ] 서울이에요. 같은 서울 안에서 이사하는 거라서 크게 어렵진 않을 것 ⟨ret@27.85s⟩ 같아요.
+[ 28.21s][moshi] 서울 ⟦⚡SPAN@29.01s: (tool result) 서울 지역의 일반적인 이사 비용은 25,000원부터 시작하며, 이삿짐의 양과 거리에 따라 달라질 수 있습니다.⟧ 지역의 일반적인 이사 비용은 이만 오천원부터 시작하며, 이삿짐의 양과 거리에 따라 달라질 수 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "서울 이사 비용 견적"}}
+[ 35.53s][user ] 아, 그렇군요. 월드컵은 얼마나 자주 열리는 거죠?
+[ 38.62s][moshi] 월드컵은 사년에 한 번씩 열립니다.
+[ 41.16s][user ] 사년마다요? 생각보다 자주 열리는 것 같네요.
+[ 44.60s][moshi] 네, 사년에 한 번씩 개최되어 많은 축구 팬들의 기대를 모으고 있습니다.
+[ 48.76s][user ] [happy] 월드컵 경기 보러 가고 싶은데, 언제쯤 다시 갈 수 있을까요?
+[ 51.31s][moshi] «backchannel» 맞아요.
+[ 53.28s][moshi] 다음 월드컵은 이천이십육년에 열릴 예정입니다.
+[ 56.59s][user ] 이천이십육년이군요. 벌써부터 기다려지네요.
+[ 59.82s][moshi] 네, 이천이십육년 월드컵도 즐거운 경기가 될 것 같습니다.
+[ 62.13s][user ] «backchannel» 응.
+[ 63.15s][user ] 요즘 피부가 너무 건조해서 고민이에요. 좋은 크림 좀 추천해 줄 수 있을까요?
+[ 68.91s][moshi] 피부가 건조하시군요. 어떤 피부 타입이신가요?
+[ 72.80s][user ] 민감성 피부라서 순한 크림을 찾고 ⟨ret@75.57s⟩ 있어요.
+[ 76.15s][moshi] ⟦⚡SPAN@76.67s: (tool result) 민감성 피부를 위한 순한 크림으로는 세라마이드 성분이 함유된 제품이 좋습니다. 세라마이드가 피부 장벽을 강화하여 수분 손실을 막아줍니다.⟧ 민감성 피부를 위한 순한 크림으로는 세라마이드 성분이 함유된 제품이 좋습니다.
+      CALL: {"function": "search", "arguments": {"query": "민감성 피부 순한 크림"}}
+[ 78.97s][user ] «backchannel» 음.
+[ 81.64s][user ] 세라마이드가 피부에 좋군요. 어디서 살 수 있을까요?
+[ 85.38s][moshi] 세라마이드 크림은 대부분의 화장품 매장에서 구매할 수 있습니다.
+[ 89.40s][user ] 올리브영이나 롭스 같은 곳에도 있나요?
+[ 92.16s][moshi] 네, 올리브영이나 롭스에서도 쉽게 찾으실 수 있습니다.
+[ 95.34s][user ] [curious] 아, 다행이네요. 가까운 곳에서 살 수 있겠어요.
+[ 98.56s][moshi] 네, 가까운 매장에서 편하게 구매하실 수 있습니다.
+[100.63s][user ] «backchannel» 어.
+[103.08s][user ] 요즘 스트레스도 많이 받고 잠도 잘 못 자고 있어요.
+[106.90s][moshi] 스트레스와 불면증으로 힘드시군요.
+[109.75s][user ] 네, 어떻게 하면 좋을까요?
+[111.48s][moshi] 따뜻한 물로 샤워를 하거나 명상을 하는 것이 도움이 될 수 있습니다.
+[116.33s][user ] 명상도 해보고 싶었는데, 어렵지 않을까요?
+[119.14s][moshi] 처음에는 어렵게 느껴질 수 있지만, 꾸준히 연습하면 도움이 될 것입니다.
+[121.02s][user ] «backchannel» 음.
+[124.12s][user ] [sigh] 꾸준히 하는 게 제일 어렵죠.
+[126.89s][moshi] 네, 꾸준히 하는 것이 중요합니다. 작은 것부터 시작해 보세요.
+[129.35s][user ] «backchannel» 응.
+[130.74s][user ] 주말에 서울 근교로 짧게 여행 가고 싶은데, 어디가 좋을까요?
+[133.30s][moshi] «backchannel» 네.
+[135.12s][moshi] 서울 근교에는 아름다운 곳이 많습니다. 어디를 선호하시나요?
+[136.81s][user ] «backchannel» 응.
+[139.16s][user ] 바다가 보이는 곳이면 좋을 것 같아요.
+[141.79s][moshi] 바다가 보이는 곳이라면 인천이나 강화도를 추천합니다.
+[142.93s][user ] «backchannel» 어.
+[146.18s][user ] 강화도도 괜찮겠네요. 거기는 뭐가 유명한가요?
+[149.54s][moshi] ⟨ret@149.47s⟩ ⟦⚡SPAN@150.10s: (tool result) 강화도에는 전등사, 석모도, 마니산 등 다양한 관광 명소가 있습니다. 특히 석모도는 바다를 가로지르는 다리로 연결되어 있어 아름다운 풍경을 자랑합니다.⟧ 강화도에는 역사 유적지와 아름다운 자연 경관이 유명합니다.
+      CALL: {"function": "search", "arguments": {"query": "강화도 관광 명소"}}
+[153.89s][moshi] 강화도에는 전등사, 석모도, 마니산 등 다양한 관광 명소가 있습니다.
+[156.78s][user ] «backchannel» 음.
+[159.84s][user ] 석모도도 가보고 싶네요.
+[161.60s][moshi] 석모도는 아름다운 바다 풍경을 감상할 수 있는 곳입니다.
+[162.99s][user ] «backchannel» 응.
+[166.47s][user ] 혹시 석모도 가는 배 시간표 좀 알아봐 줄 수 ⟨ret@169.59s⟩ 있을까요?
+[170.02s][moshi] ⟦⚡SPAN@170.19s: (tool result) 석모도 배는 강화도 선착장에서 매시간 30분 간격으로 운행하며, 첫 배는 오전 9시, 막 배는 오후 6시입니다.⟧ 석모도 배는 강화도 선착장에서 매시간 삼십분 간격으로 운행하며, 첫 배는 오전 아홉시, 막 배는 오후 여섯시입니다.
+      CALL: {"function": "search", "arguments": {"query": "석모도 배 시간표"}}
+[179.85s][user ] 아, 오전 아홉시부터 오후 여섯시까지군요.
+[182.90s][moshi] 네, 오전 아홉시부터 오후 여섯시까지 운행합니다.
+[187.43s][user ] 요즘 날씨가 너무 좋아서 드라이브하고 싶은데, 어디로 가면 좋을까요?
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 60턴 · 100프레임 스팬
+          │ 이사시간: 오후 네시 십오분; 이사위치: 서울; 피부타입: 민감성 피부
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
+[192.78s][moshi] 날씨가 좋으니 드라이브하기 좋겠네요. 서울 근교에는 북한산이나 남산 같은 곳이 좋습니다.
+[195.75s][user ] «backchannel» 어.
+[198.49s][user ] 북한산도 괜찮겠네요. 거기 드라이브 코스 좀 알려줄 ⟨ret@202.35s⟩ 수 있을까요?
+[202.93s][moshi] ⟦⚡SPAN@203.21s: (tool result) 북한산 드라이브 코스 중 가장 인기 있는 코스는 북한산성로를 따라가는 코스입니다. 이 코스는 아름다운 자연 경관을 감상하며 드라이브를 즐길 수 있습니다.⟧ 북한산 드라이브 코스는 다양한 코스가 있습니다.
+      CALL: {"function": "search", "arguments": {"query": "북한산 드라이브 코스"}}
+[205.97s][moshi] 북한산 드라이브 코스 중 가장 인기 있는 코스는 북한산성로를 따라가는 코스입니다.
+[212.99s][user ] 북한산성로군요. 한번 가봐야겠네요.
+[215.49s][moshi] 네, 북한산성로 드라이브는 즐거운 경험이 될 것입니다.
+[220.62s][user ] 요즘 한국 드라마에 푹 빠져 있어요.
+[223.51s][moshi] 한국 드라마를 좋아하시는군요. 어떤 드라마를 보고 계신가요?
+[227.94s][user ] '눈물의 여왕'이라는 드라마를 보고 있는데, 너무 재밌어요.
+[232.50s][moshi] '눈물의 여왕'은 많은 사람들에게 사랑받고 있는 드라마입니다.
+[236.12s][user ] 배우 김수현 씨가 너무 멋있어요.
+[238.57s][moshi] 김수현 씨는 연기력이 뛰어나고 매력적인 배우입니다.
+[242.37s][user ] 김수현 씨가 출연한 다른 드라마도 추천해 줄 수 있을까요?
+[246.24s][moshi] 김수현 씨는 '프로듀사', '도깨비' 등 다양한 드라마에 출연했습니다.
+[250.89s][user ] '도깨비'도 봐야겠네요.
+[252.39s][moshi] 네, '도깨비'는 김수현 씨의 대표작 중 하나입니다.
+[255.78s][user ] 이사 날짜가 언제였죠? 기억이 잘 안 나네요.
+[258.60s][moshi] 이사 날짜는 이월 이십사일입니다.
+[261.57s][user ] 아, 맞아요. 이월 이십사일이었죠.
+[264.61s][moshi] 네, 이월 이십사일입니다.
+[266.47s][user ] 이사 비용이 얼마였죠?
+[268.49s][moshi] 이사 비용은 이만 오천원이었습니다.
+[271.95s][user ] 아, 이만 오천원이었죠.
+[273.71s][moshi] 네, 이만 오천원이었습니다.
+[276.10s][user ] [laugh] 기억력이 점점 안 좋아지는 것 같아요.
+[278.81s][moshi] [happy] 나이가 들수록 기억력이 조금씩 감퇴하는 것은 자연스러운 현상입니다.
+[280.65s][user ] «backchannel» 응.
+[283.26s][user ] 그래도 잊지 않도록 노력해야겠죠.
+[285.85s][moshi] 네, 잊지 않도록 노력하는 것이 중요합니다.
+[286.58s][user ] «backchannel» 응.
+[288.35s][user ] 오늘 날씨가 ⟨ret@289.27s⟩ 어때요?
+[289.89s][moshi] ⟦⚡SPAN@290.23s: (tool result) Temperature: 15.2°C, Humidity: 65%, Wind Speed: 3.1 m/s, Condition: Clear⟧ 오늘 서울의 날씨는 맑고 따뜻합니다. 현재 기온은 십오 점 이도이고, 습도는 육십오퍼센트, 풍속은 삼 점 일미터입니다.
+      CALL: {"function": "weather", "arguments": {"location": "Seoul"}}
+[297.78s][user ] 맑고 따뜻하군요.
+[299.23s][moshi] 네, 야외 활동하기 좋은 날씨입니다.
+[301.68s][user ] 그럼 오늘 저녁에 맛있는 거 먹으러 가야겠어요.
+[304.98s][moshi] 네, 맛있는 저녁 식사 하세요.
+[308.06s][user ] 감사합니다.
+[309.19s][moshi] 천만에요.

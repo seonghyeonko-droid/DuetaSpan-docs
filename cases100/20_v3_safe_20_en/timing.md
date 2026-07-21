@@ -119,7 +119,7 @@
     32.83s  <ret> 발화 (turn8 첫 프레임)
     32.89s  user  발화 끝
     32.99s  agent 발화 시작: <ret> It’s a really popular method for managing your money, 
-    33.13s  ⚡SPAN 주입 [d'=0.30s / d_lead=11.78s]: The 50/30/20 rule suggests allocating 50% of your after-tax income to 
+    33.43s  ⚡SPAN 주입 [d'=0.60s / d_lead=11.78s]: The 50/30/20 rule suggests allocating 50% of your after-tax income to 
     44.70s  user  발화 시작: Needs, wants… sounds simple enough.
     44.78s  agent 발화 끝
     47.24s  agent 발화 시작: It is a good starting point. It helps you become more aware 
@@ -128,8 +128,8 @@
     52.47s  user  발화 끝
     54.43s  user  발화 시작: Okay, what counts as a ‘need’?
     54.46s  agent 발화 끝
-    56.10s  <ret> 발화 (turn13 첫 프레임)
-    56.62s  ⚡SPAN 주입 [d'=0.73s / d_lead=9.17s]: Needs are essential expenses like housing, food, transportation, and h
+    55.64s  <ret> 발화 (turn13 첫 프레임)
+    56.62s  ⚡SPAN 주입 [d'=0.98s / d_lead=9.17s]: Needs are essential expenses like housing, food, transportation, and h
     56.68s  agent 발화 시작: <ret> Needs are those essential expenses, things you absolut
     56.78s  user  발화 끝
     65.86s  agent 발화 끝
@@ -140,8 +140,8 @@
     73.33s  user  발화 끝
     76.67s  user  발화 시작: So, what about an emergency fund? Why is that so important?
     76.78s  agent 발화 끝
-    80.79s  <ret> 발화 (turn18 첫 프레임)
-    81.10s  ⚡SPAN 주입 [d'=0.95s / d_lead=10.58s]: An emergency fund is crucial for covering unexpected expenses like med
+    79.90s  <ret> 발화 (turn18 첫 프레임)
+    81.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.58s]: An emergency fund is crucial for covering unexpected expenses like med
     81.16s  agent 발화 시작: <ret> An emergency fund is incredibly crucial because it's t
     81.16s  user  발화 끝
     86.02s  user  발화 시작: Yeah.
@@ -151,9 +151,9 @@
     96.78s  agent 발화 끝
     97.23s  user  발화 시작: What if I have debt already? Should I still save?
     99.82s  <ret> 발화 (turn22 첫 프레임)
-   100.12s  ⚡SPAN 주입 [d'=0.30s / d_lead=8.02s]: Prioritizing debt repayment alongside saving is recommended, allocatin
    100.20s  agent 발화 시작: <ret> It's recommended to prioritize both debt repayment *an
    100.42s  user  발화 끝
+   100.42s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.02s]: Prioritizing debt repayment alongside saving is recommended, allocatin
    108.12s  user  발화 시작: That sounds… complicated.
    108.22s  agent 발화 끝
    110.14s  agent 발화 시작: It can seem that way at first, but we can break it down. Wha
@@ -162,8 +162,8 @@
    114.08s  user  발화 끝
    115.28s  agent 발화 끝
    116.37s  user  발화 시작: Credit card debt, mostly. It's pretty bad.
-   118.88s  <ret> 발화 (turn27 첫 프레임)
-   119.26s  ⚡SPAN 주입 [d'=0.45s / d_lead=8.39s]: The average credit card interest rate in July 2024 is 20.65%, making i
+   118.56s  <ret> 발화 (turn27 첫 프레임)
+   119.26s  ⚡SPAN 주입 [d'=0.70s / d_lead=8.39s]: The average credit card interest rate in July 2024 is 20.65%, making i
    119.32s  agent 발화 시작: <ret> The average credit card interest rate right now is twe
    119.52s  user  발화 끝
    124.06s  user  발화 시작: Mm-hmm.
@@ -179,14 +179,14 @@
    141.23s  user  발화 끝
    141.44s  <ret> 발화 (turn33 첫 프레임)
    141.44s  agent 발화 시작: <ret> I need a bit more information to calculate that for yo
-   142.01s  ⚡SPAN 주입 [d'=0.58s / d_lead=7.74s]: (tool result) {"error": "missing debt amount and monthly payment"}
+   142.26s  ⚡SPAN 주입 [d'=0.83s / d_lead=7.74s]: (tool result) {"error": "missing debt amount and monthly payment"}
    149.18s  agent 발화 끝
    150.84s  user  발화 시작: Uh, let's say $5000 and $150 a month.
    152.10s  agent 발화 시작: Yeah.
    152.69s  agent 발화 끝
    153.98s  <ret> 발화 (turn36 첫 프레임)
-   154.28s  ⚡SPAN 주입 [d'=0.30s / d_lead=13.96s]: (tool result) {"years to payoff": 4.78, "total interest paid": 2713.87
    154.57s  agent 발화 시작: <ret> Okay, at $150 a month, it would take roughly four year
+   154.58s  ⚡SPAN 주입 [d'=0.60s / d_lead=13.96s]: (tool result) {"years to payoff": 4.78, "total interest paid": 2713.87
    154.82s  user  발화 끝
    168.53s  agent 발화 끝
    168.66s  user  발화 시작: That’s… discouraging.
@@ -194,8 +194,8 @@
    170.43s  agent 발화 시작: [sigh] I understand. It can feel overwhelming. But knowing t
    176.22s  user  발화 시작: What about compound interest? I hear that's good.
    176.31s  agent 발화 끝
-   179.14s  <ret> 발화 (turn40 첫 프레임)
-   179.38s  ⚡SPAN 주입 [d'=1.00s / d_lead=11.22s]: Compound interest allows earnings to generate further earnings, accele
+   178.13s  <ret> 발화 (turn40 첫 프레임)
+   179.38s  ⚡SPAN 주입 [d'=1.25s / d_lead=11.22s]: Compound interest allows earnings to generate further earnings, accele
    179.44s  agent 발화 시작: <ret> Compound interest is really powerful, because it allow
    179.60s  user  발화 끝
    187.70s  user  발화 시작: Right.

@@ -79,7 +79,7 @@
      1.48s  <ret> 발화 (turn1 첫 프레임)
      1.94s  agent 발화 시작: <ret> 지금 바로 알아봤는데, 죄송하게도 그 정보는 찾을 수가 없었어요.
      1.98s  user  발화 끝
-     2.40s  ⚡SPAN 주입 [d'=0.92s / d_lead=5.47s]: (no information found)
+     2.65s  ⚡SPAN 주입 [d'=1.17s / d_lead=5.47s]: (no information found)
      5.89s  user  발화 시작: 그래.
      6.52s  user  발화 끝
      7.41s  agent 발화 끝
@@ -87,7 +87,7 @@
     11.21s  <ret> 발화 (turn4 첫 프레임)
     11.61s  agent 발화 시작: <ret> [curious] 파리 다음으로 큰 도시를 찾으셨군요. 마르세유는 이천이십삼년 일월 일일 기준으로
     11.62s  user  발화 끝
-    11.84s  ⚡SPAN 주입 [d'=0.63s / d_lead=14.75s]: With a population of 169,695 as of 1 January 2023, Marseille is the se
+    12.09s  ⚡SPAN 주입 [d'=0.88s / d_lead=14.75s]: With a population of 169,695 as of 1 January 2023, Marseille is the se
     19.90s  user  발화 시작: 응.
     20.21s  user  발화 끝
     26.36s  agent 발화 끝
@@ -95,7 +95,7 @@
     28.49s  <ret> 발화 (turn7 첫 프레임)
     28.59s  agent 발화 시작: <ret> 마르세유는 프랑스 남부 지중해 연안에 위치하고 있어요.
     28.68s  user  발화 끝
-    29.69s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.72s]: Marseille is located on the Mediterranean coast in southern France.
+    29.94s  ⚡SPAN 주입 [d'=1.45s / d_lead=4.72s]: Marseille is located on the Mediterranean coast in southern France.
     30.83s  user  발화 시작: 어.
     31.28s  user  발화 끝
     33.31s  agent 발화 끝
@@ -109,7 +109,7 @@
     43.64s  <ret> 발화 (turn13 첫 프레임)
     43.86s  agent 발화 시작: <ret> 마르세유에서 유명한 음식은 부야베스라는 프로방스식 해산물 스튜인데, 프랑스 남부 항구 도시 마르세
     44.04s  user  발화 끝
-    44.46s  ⚡SPAN 주입 [d'=0.82s / d_lead=11.18s]: (tool result) "Bouillabaisse is a traditional Provençal fish stew orig
+    44.71s  ⚡SPAN 주입 [d'=1.07s / d_lead=11.18s]: (tool result) "Bouillabaisse is a traditional Provençal fish stew orig
     47.80s  user  발화 시작: 음.
     48.30s  user  발화 끝
     54.91s  agent 발화 시작: [laugh] 부야베스는 정말 맛있는 음식이라고 들었어요.
@@ -125,7 +125,7 @@
     72.22s  <ret> 발화 (turn20 첫 프레임)
     72.44s  agent 발화 시작: <ret> 마르세유의 날씨는 현재 이십팔 점 오도이고, 습도는 육십이퍼센트, 바람은 시속 십일 점 이킬로미터
     72.50s  user  발화 끝
-    73.09s  ⚡SPAN 주입 [d'=0.87s / d_lead=10.20s]: (tool result) "Marseille: 28.5°C, humidity 62%, wind 11.2 km/h"
+    73.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.20s]: (tool result) "Marseille: 28.5°C, humidity 62%, wind 11.2 km/h"
     76.33s  user  발화 시작: 맞아.
     76.97s  user  발화 끝
     82.63s  user  발화 시작: 좋아, 그럼 마르세유행 기차표 좀 알아봐 줘.

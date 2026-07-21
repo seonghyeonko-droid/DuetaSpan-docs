@@ -105,7 +105,7 @@
      3.75s  <ret> 발화 (turn1 첫 프레임)
      3.82s  agent 발화 시작: <ret> Okay, to get from Chicago to Boston by public transpor
      4.03s  user  발화 끝
-     4.61s  ⚡SPAN 주입 [d'=0.86s / d_lead=5.04s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Take the
+     4.86s  ⚡SPAN 주입 [d'=1.11s / d_lead=5.04s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Take the
      8.26s  user  발화 시작: …how long will the whole trip take?
      8.87s  agent 발화 끝
     10.24s  user  발화 끝
@@ -125,7 +125,7 @@
     34.84s  <ret> 발화 (turn10 첫 프레임)
     35.34s  user  발화 끝
     35.46s  agent 발화 시작: <ret> There is! Flying is much faster. A flight from Chicago
-    36.34s  ⚡SPAN 주입 [d'=1.50s / d_lead=7.84s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Fly from
+    36.64s  ⚡SPAN 주입 [d'=1.80s / d_lead=7.84s]: (tool result) {"trip": [{"legs": [{"steps": [{"instruction": "Fly from
     43.30s  agent 발화 끝
     44.82s  user  발화 시작: Three hours is much better. What's the price range for a fli
     46.42s  agent 발화 시작: Yeah.
@@ -133,7 +133,7 @@
     48.11s  <ret> 발화 (turn13 첫 프레임)
     48.57s  user  발화 끝
     48.61s  agent 발화 시작: <ret> A flight with United Airlines on July 10th is currentl
-    48.88s  ⚡SPAN 주입 [d'=0.76s / d_lead=8.16s]: (tool result) {"flights": [{"airline": "United Airlines", "price": "35
+    49.13s  ⚡SPAN 주입 [d'=1.01s / d_lead=8.16s]: (tool result) {"flights": [{"airline": "United Airlines", "price": "35
     56.62s  user  발화 시작: That’s not terrible. I think I’ll look into flights more ser
     56.77s  agent 발화 끝
     60.14s  agent 발화 시작: [happy] That sounds like a good plan! Sometimes a little tim
@@ -193,5 +193,5 @@
    169.06s  <ret> 발화 (turn42 첫 프레임)
    169.18s  agent 발화 시작: <ret> I'm glad to hear that. I promised to look up some loca
    169.37s  user  발화 끝
-   169.78s  ⚡SPAN 주입 [d'=0.73s / d_lead=6.49s]: {"classes": [{"name": "Boston Art Alliance", "description": "Painting 
+   170.03s  ⚡SPAN 주입 [d'=0.98s / d_lead=6.49s]: {"classes": [{"name": "Boston Art Alliance", "description": "Painting 
    187.28s  agent 발화 끝

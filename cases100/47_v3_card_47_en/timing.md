@@ -4,333 +4,333 @@
 # {
 #   "profile": {
 #     "user_id": "v3_card_47",
-#     "name": "Oscar",
+#     "name": "Julian",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "male",
 #     "age_range": "late 20s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "music",
-#       "text": "User likes listening to 90s hip-hop."
+#       "date": "2026-03-03",
+#       "category": "phone",
+#       "text": "User uses a Pixel 8."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Bali in December."
+#       "date": "2026-03-01",
+#       "category": "gym",
+#       "text": "User has a gym membership near the station."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "airline",
-#       "text": "User usually flies with Delta."
+#       "date": "2026-02-27",
+#       "category": "skill",
+#       "text": "User is getting fairly good at home fermentation."
 #     },
 #     {
-#       "date": "2026-03-24",
+#       "date": "2026-02-08",
 #       "category": "child",
-#       "text": "User has a child named Minjun, age 11."
+#       "text": "User has a child named Sara, age 17."
 #     },
 #     {
-#       "date": "2026-03-15",
-#       "category": "streaming",
-#       "text": "User subscribes to Netflix and Spotify."
+#       "date": "2026-02-06",
+#       "category": "hobby",
+#       "text": "User is into salsa dancing."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "category": "schedule",
+#       "text": "User has a hybrid 3-days-in-office week."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "wake",
+#       "text": "User usually wakes up at 5:30am for a run."
+#     },
+#     {
+#       "date": "2025-12-20",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
-#       "title": "Building a PC",
+#       "date": "2026-06-07",
+#       "title": "Renovating the bathroom",
 #       "bullets": [
-#         "budget around 2M won for gaming",
-#         "torn between two GPUs"
+#         "budget of 6M won",
+#         "wants a walk-in shower instead of a tub"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-02",
-#       "title": "Looking for a therapist",
+#       "date": "2026-05-29",
+#       "title": "Choosing a preschool",
 #       "bullets": [
-#         "prefers evening video sessions",
-#         "wants someone who does CBT"
+#         "wants one within walking distance",
+#         "asked about hours and monthly fees"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "title": "Adopting a rescue dog",
+#       "date": "2026-05-10",
+#       "title": "Training for a 10K",
 #       "bullets": [
-#         "looking at a 2-year-old Beagle mix",
-#         "asked about crate training and vet costs"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-25",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers for a 3-story house",
-#         "wanted coverage for the basement office"
+#         "current pace is around 6 minutes per km",
+#         "race is in November"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Doralo, I need to schedule a c | S2 Brooklyn's a bit of a trek, but ma | S3 That sounds ideal. I'll start look | S4 Speaking of convenience, I need gr
+# EXAMINER(FDB-v2) 단계: S1 I'm expecting a parcel on January  | S2 Maybe. I was thinking about going  | S3 I love seafood. | S4 I will. I’m also thinking about ge
 
-     0.00s  user  발화 시작: Hey Doralo, I need to schedule a car service.
-     3.42s  user  발화 끝
-     3.74s  agent 발화 시작: Hi Oscar, happy to help with that.
-     5.03s  user  발화 시작: Yeah.
-     5.72s  user  발화 끝
-     6.00s  agent 발화 끝
-     6.00s  user  발화 시작: I’m dropping it off on April 18th.
-     8.32s  agent 발화 시작: Okay, April 18th noted.
-     8.44s  user  발화 끝
-    10.18s  user  발화 시작: And I'm hoping for a time around 9:00 AM.
-    10.40s  agent 발화 끝
-    13.00s  agent 발화 시작: 9:00 AM on April 18th. Got it.
-    13.00s  user  발화 끝
-    13.78s  user  발화 시작: Uh-huh.
-    14.23s  user  발화 끝
-    15.71s  user  발화 시작: The estimate was around 235 dollars, right?
-    15.77s  agent 발화 끝
-    19.83s  user  발화 끝
-    19.95s  agent 발화 시작: Yes, you mentioned an estimate of 235 dollars.
-    23.65s  agent 발화 끝
-    23.88s  user  발화 시작: Great. Now, completely different topic, I was wondering…
-    27.62s  agent 발화 시작: What's on your mind, Oscar?
-    27.63s  user  발화 끝
-    28.69s  user  발화 시작: When are new episodes of Fairy Tail coming out?
-    28.90s  agent 발화 끝
-    31.43s  <ret> 발화 (turn13 첫 프레임)
-    31.90s  agent 발화 시작: <ret> A new series, Fairy Tail: 100 Years Quest, actually pr
-    31.93s  user  발화 끝
-    32.93s  ⚡SPAN 주입 [d'=1.50s / d_lead=6.11s]: The final episode of Fairy Tail aired on September 30, 2019, but a new
-    38.01s  agent 발화 끝
-    38.22s  user  발화 시작: Oh, good to know! I missed that.
-    40.61s  user  발화 끝
-    40.72s  agent 발화 시작: It’s easy to lose track of releases.
-    41.32s  user  발화 시작: Yeah.
-    41.99s  user  발화 끝
-    42.94s  agent 발화 끝
-    43.00s  user  발화 시작: I’ve been trying to get back into anime.
-    45.40s  user  발화 끝
-    45.57s  agent 발화 시작: That's wonderful, Oscar. What else do you enjoy?
-    48.34s  agent 발화 끝
-    48.45s  user  발화 시작: I’m thinking about starting a new hobby too.
-    50.94s  user  발화 끝
-    51.10s  agent 발화 시작: A hobby can be a great stress reliever.
-    53.36s  agent 발화 끝
-    53.76s  user  발화 시작: I was thinking pottery. Are there any good places nearby?
-    55.98s  agent 발화 시작: Yeah, yeah.
-    56.67s  <ret> 발화 (turn23 첫 프레임)
-    56.97s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.23s]: The Clay Studio is a non-profit pottery studio located in Philadelphia
-    57.12s  agent 발화 끝
-    57.18s  agent 발화 시작: <ret> That studio is actually in Philadelphia, not New York.
-    57.33s  user  발화 끝
-    59.16s  user  발화 시작: Yeah.
-    59.85s  user  발화 끝
-    60.41s  agent 발화 끝
-    60.65s  user  발화 시작: Oh, right. I always forget how big the country is.
-    63.83s  agent 발화 시작: It’s easy to do! I can search for pottery classes in New Yor
-    64.03s  user  발화 끝
-    67.92s  user  발화 시작: Yes, please do.
-    68.04s  agent 발화 끝
-    68.79s  <ret> 발화 (turn28 첫 프레임)
-    69.14s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.24s]: (tool result) Mud Matters offers pottery classes for all skill levels 
-    69.19s  agent 발화 시작: <ret> Mud Matters in Brooklyn offers classes for all levels.
-    69.35s  user  발화 끝
-    72.43s  agent 발화 끝
-    73.41s  user  발화 시작: Brooklyn's a bit of a trek, but maybe.
-    75.60s  agent 발화 시작: It's accessible by subway, if that helps.
-    75.67s  user  발화 끝
-    78.04s  agent 발화 끝
-    78.10s  user  발화 시작: I'll look into it. What about something less… messy?
-    82.75s  agent 발화 시작: [happy] Perhaps a book club or a language course?
-    82.78s  user  발화 끝
-    84.97s  agent 발화 끝
-    85.19s  user  발화 시작: Ooh, a language course. That’s a good idea.
-    88.41s  agent 발화 시작: What language were you thinking of learning?
-    88.57s  user  발화 끝
-    89.09s  user  발화 시작: Uh-huh.
-    89.73s  user  발화 끝
-    90.35s  agent 발화 끝
-    90.60s  user  발화 시작: Maybe Spanish. It seems useful.
-    93.01s  <ret> 발화 (turn37 첫 프레임)
-    93.14s  user  발화 끝
-    93.16s  agent 발화 시작: <ret> Over 41 million people speak Spanish in the US, making
-    93.44s  ⚡SPAN 주입 [d'=0.90s / d_lead=5.46s]: According to Statista, as of 2023, Spanish is the second most spoken l
-    98.62s  agent 발화 끝
-   100.36s  user  발화 시작: Wow, that’s a lot. Are there any good Spanish schools in the
-   102.98s  agent 발화 시작: Mm-hmm.
-   103.43s  agent 발화 끝
-   104.34s  <ret> 발화 (turn40 첫 프레임)
-   104.64s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.70s]: (tool result) Berlitz Language Center in Midtown Manhattan offers imme
-   104.81s  agent 발화 시작: <ret> Berlitz in Midtown offers Spanish courses with flexibl
-   104.98s  user  발화 끝
-   108.50s  agent 발화 끝
-   108.73s  user  발화 시작: That sounds promising. I’ll check them out.
-   111.65s  user  발화 끝
-   111.67s  agent 발화 시작: Wonderful. It’s great you’re exploring new interests.
-   113.61s  user  발화 시작: Yeah.
-   114.11s  user  발화 끝
-   114.67s  agent 발화 끝
-   114.89s  user  발화 시작: It's good to have something to look forward to.
-   117.43s  user  발화 끝
-   117.58s  agent 발화 시작: Balance is important, Oscar.
-   119.33s  agent 발화 끝
-   119.36s  user  발화 시작: You’re right. I’ve been working too much lately.
-   121.26s  agent 발화 시작: Okay.
-   121.89s  agent 발화 끝
-   121.91s  agent 발화 시작: It’s easy to fall into that pattern.
-   122.08s  user  발화 끝
-   123.66s  agent 발화 끝
-   123.66s  user  발화 시작: I need a vacation. Somewhere relaxing.
-   126.66s  agent 발화 시작: A change of scenery can do wonders.
-   126.76s  user  발화 끝
-   127.78s  user  발화 시작: Yeah.
-   128.45s  user  발화 끝
-   128.63s  agent 발화 끝
-   129.84s  user  발화 시작: I was thinking maybe the Caribbean.
-   131.80s  <ret> 발화 (turn53 첫 프레임)
-   132.04s  ⚡SPAN 주입 [d'=1.50s / d_lead=3.75s]: The average temperature in the Caribbean in December ranges from 75 to
-   132.10s  agent 발화 시작: <ret> The Caribbean averages 75 to 85 degrees in December.
-   132.10s  user  발화 끝
-   133.92s  user  발화 시작: Yeah.
-   134.41s  user  발화 끝
-   135.84s  agent 발화 끝
-   135.94s  user  발화 시작: That sounds perfect. Do you think it’s a good time to go?
-   139.50s  user  발화 끝
-   139.53s  agent 발화 시작: December is considered peak season, so expect higher prices.
-   142.86s  agent 발화 끝
-   142.88s  user  발화 시작: Hmm, good point. Maybe early November then?
-   146.73s  <ret> 발화 (turn58 첫 프레임)
-   146.92s  ⚡SPAN 주입 [d'=0.68s / d_lead=4.30s]: November in the Caribbean is considered the shoulder season, with fewe
-   146.98s  agent 발화 시작: <ret> November is the shoulder season, with fewer crowds and
-   147.00s  user  발화 끝
-   151.28s  agent 발화 끝
-   153.37s  user  발화 시작: That sounds ideal. I'll start looking at flights.
-   156.69s  agent 발화 시작: I can search for flights from New York if you'd like.
-   156.97s  user  발화 끝
-   159.41s  agent 발화 끝
-   159.43s  user  발화 시작: No, that’s okay. I’ll do it myself.
-   162.36s  agent 발화 시작: Take your time and plan carefully.
-   162.47s  user  발화 끝
-   164.15s  user  발화 시작: I will. It's just… a lot to juggle.
-   164.16s  agent 발화 끝
-   167.76s  user  발화 끝
-   167.86s  agent 발화 시작: It can be overwhelming, Oscar. Remember to prioritize.
-   171.16s  user  발화 시작: Easy for you to say. You don't have a job.
-   171.23s  agent 발화 끝
-   174.30s  user  발화 끝
-   174.58s  agent 발화 시작: [laugh] True, but I can still help you organize!
-   176.81s  user  발화 시작: Yeah.
-   177.63s  user  발화 끝
-   177.82s  agent 발화 끝
-   178.52s  user  발화 시작: I suppose you can. It’s just… sometimes I feel like I'm drow
-   180.07s  agent 발화 시작: Yeah.
-   180.65s  agent 발화 끝
-   183.06s  user  발화 끝
-   183.31s  agent 발화 시작: [sigh] I understand that feeling. Remember your strengths.
-   185.40s  user  발화 시작: Yeah.
-   186.13s  user  발화 끝
-   187.01s  agent 발화 끝
-   187.71s  user  발화 시작: It's hard when everything feels urgent.
-   190.22s  agent 발화 시작: Break down large tasks into smaller, manageable steps.
-   190.34s  user  발화 끝
-   192.00s  🃏 CARD 주입 (2400f, 누적 74턴 요약, 86f): dropoff date: April 18th (3m ago); dropoff time: 9:00 AM (3m ago); estimate: 235 dollars (
-   192.08s  user  발화 시작: Yeah.
-   192.85s  user  발화 끝
-   193.74s  agent 발화 끝
-   194.33s  user  발화 시작: That's good advice. I should probably do that with work.
-   197.58s  agent 발화 시작: Small steps can lead to big accomplishments.
-   197.80s  user  발화 끝
-   200.16s  agent 발화 끝
-   201.28s  user  발화 시작: You always know what to say.
-   203.43s  agent 발화 시작: I’m glad I can offer support, Oscar.
-   203.49s  user  발화 끝
-   205.42s  agent 발화 끝
-   206.03s  user  발화 시작: So, about that car service… what time did I say that was?
-   209.80s  agent 발화 시작: You said 9:00 AM on April 18th.
-   210.01s  user  발화 끝
-   211.51s  user  발화 시작: Yeah.
-   212.15s  user  발화 끝
-   212.20s  user  발화 시작: Right. And I need to book a dog walker while I'm away.
-   212.38s  agent 발화 끝
-   214.38s  agent 발화 시작: Mm-hmm.
-   214.96s  agent 발화 끝
-   215.98s  agent 발화 시작: A dog walker is a smart idea for your trip.
-   216.13s  user  발화 끝
-   218.43s  agent 발화 끝
-   219.36s  user  발화 시작: Do you know any reliable ones in the city?
-   221.75s  <ret> 발화 (turn86 첫 프레임)
-   221.90s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.24s]: (tool result) Wag! is a popular dog walking app that connects owners w
-   221.91s  user  발화 끝
-   221.96s  agent 발화 시작: <ret> Wag! connects dog owners with walkers in New York City
-   223.61s  user  발화 시작: Yeah.
-   224.29s  user  발화 끝
-   225.10s  user  발화 시작: I’ve heard of them. I’ll check out their app.
-   225.19s  agent 발화 끝
-   227.69s  user  발화 끝
-   227.71s  agent 발화 시작: It's a convenient way to find a walker.
-   229.79s  agent 발화 끝
-   229.92s  user  발화 시작: Speaking of convenience, I need groceries delivered.
-   233.15s  agent 발화 시작: Grocery delivery can save a lot of time.
-   233.29s  user  발화 끝
-   235.69s  agent 발화 끝
-   236.10s  user  발화 시작: What’s the best service in New York?
-   237.55s  <ret> 발화 (turn93 첫 프레임)
-   237.85s  ⚡SPAN 주입 [d'=0.30s / d_lead=3.42s]: (tool result) FreshDirect is a popular grocery delivery service in New
-   238.17s  agent 발화 시작: <ret> FreshDirect is popular for fresh produce and local pro
-   238.17s  user  발화 끝
-   241.59s  agent 발화 끝
-   242.29s  user  발화 시작: Good to know. I think I’ll try them.
-   244.38s  agent 발화 시작: Excellent. That frees up more of your time.
-   244.46s  user  발화 끝
-   246.78s  agent 발화 끝
-   246.89s  user  발화 시작: It does. I’m starting to feel a little less stressed.
-   250.28s  agent 발화 시작: [happy] That’s wonderful to hear, Oscar.
-   250.41s  user  발화 끝
-   250.81s  user  발화 시작: Yeah.
-   251.44s  user  발화 끝
-   252.00s  user  발화 시작: I still have a ton to do, but… it feels manageable now.
-   252.03s  agent 발화 끝
-   253.74s  agent 발화 시작: Yeah.
-   254.37s  agent 발화 끝
-   255.68s  agent 발화 시작: Breaking things down really does help.
-   255.84s  user  발화 끝
-   256.92s  user  발화 시작: Yeah, totally.
-   257.79s  agent 발화 끝
-   258.25s  user  발화 끝
-   258.43s  user  발화 시작: It does. You were right.
-   260.01s  agent 발화 시작: I'm glad I could assist.
-   260.08s  user  발화 끝
-   261.49s  agent 발화 끝
-   262.11s  user  발화 시작: I'm also trying to remember… how much was the car service ag
-   263.34s  agent 발화 시작: Mm-hmm.
-   263.83s  agent 발화 끝
-   265.76s  agent 발화 시작: You mentioned an estimate of 235 dollars.
-   265.90s  user  발화 끝
-   268.81s  agent 발화 끝
-   268.91s  user  발화 시작: Oh, yes! Right. Okay, that's all sorted.
-   272.61s  user  발화 끝
-   272.80s  agent 발화 시작: Glad I could help you recall that.
-   273.45s  user  발화 시작: Yeah.
-   274.09s  user  발화 끝
-   274.78s  agent 발화 끝
-   274.94s  user  발화 시작: Thanks, Doralo. You’re a lifesaver.
-   277.09s  agent 발화 시작: It’s my pleasure, Oscar. Remember to prioritize self-care.
-   277.34s  user  발화 끝
-   280.95s  user  발화 시작: I will. I think I’m finally ready for that vacation.
-   281.02s  agent 발화 끝
-   284.34s  agent 발화 시작: [happy] That’s fantastic! Enjoy the planning process.
-   284.52s  user  발화 끝
-   287.71s  agent 발화 끝
-   288.05s  user  발화 시작: I will. Thanks again.
-   289.98s  agent 발화 시작: You’re very welcome. Have a wonderful day, Oscar.
-   289.99s  user  발화 끝
-   292.89s  agent 발화 끝
+     0.00s  user  발화 시작: I'm expecting a parcel on January 5th.
+     2.73s  user  발화 끝
+     2.98s  agent 발화 시작: Okay, good to know.
+     4.31s  agent 발화 끝
+     4.41s  user  발화 시작: It should arrive around 2:15 PM.
+     6.99s  agent 발화 시작: Noted, 2:15 PM on January 5th.
+     7.00s  user  발화 끝
+     7.95s  user  발화 시작: Right.
+     8.73s  user  발화 끝
+     9.90s  agent 발화 끝
+    10.55s  user  발화 시작: And it cost 325 euros.
+    13.74s  agent 발화 시작: Alright, 325 euros for the delivery.
+    13.93s  user  발화 끝
+    14.85s  user  발화 시작: Yeah.
+    15.53s  user  발화 끝
+    16.66s  agent 발화 끝
+    17.99s  user  발화 시작: Actually, yes. I was wondering about baseball.
+    21.23s  user  발화 끝
+    21.38s  agent 발화 시작: Baseball is a great topic! What are you curious about?
+    24.11s  user  발화 시작: Yeah.
+    24.84s  user  발화 끝
+    24.93s  agent 발화 끝
+    25.10s  user  발화 시작: Which team has the best record in Major League Baseball righ
+    28.43s  <ret> 발화 (turn12 첫 프레임)
+    28.59s  agent 발화 시작: <ret> To answer your question, the team with the best record
+    28.71s  user  발화 끝
+    29.54s  ⚡SPAN 주입 [d'=1.11s / d_lead=9.18s]: The Chicago Cubs currently have the best record in Major League Baseba
+    33.38s  user  발화 시작: Uh-huh.
+    33.87s  user  발화 끝
+    37.75s  user  발화 시작: Wow, really? I hadn’t realized.
+    37.78s  agent 발화 끝
+    40.34s  user  발화 끝
+    40.37s  agent 발화 시작: [happy] It's been a fantastic season for them so far.
+    42.91s  agent 발화 끝
+    43.26s  user  발화 시작: Do they have any particularly good players?
+    45.60s  <ret> 발화 (turn17 첫 프레임)
+    45.91s  agent 발화 시작: <ret> One player to watch is Cody Bellinger, currently batti
+    46.03s  user  발화 끝
+    46.20s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.14s]: Cody Bellinger is a key player for the Chicago Cubs, currently batting
+    48.13s  user  발화 시작: Yeah, totally.
+    49.37s  user  발화 끝
+    53.05s  agent 발화 끝
+    53.55s  user  발화 시작: That’s impressive. I used to play a little baseball when I w
+    57.35s  agent 발화 시작: That's wonderful! It’s a great sport for building teamwork.
+    57.53s  user  발화 끝
+    59.76s  user  발화 시작: Okay.
+    60.57s  user  발화 끝
+    61.01s  agent 발화 끝
+    61.77s  user  발화 시작: It is. But I’m more into cycling these days.
+    65.34s  user  발화 끝
+    65.48s  agent 발화 시작: Cycling is a fantastic way to stay active. Do you cycle arou
+    67.02s  user  발화 시작: Uh-huh.
+    67.74s  user  발화 끝
+    70.57s  agent 발화 끝
+    71.46s  user  발화 시작: I do, yes. Mostly in the Bois de Boulogne.
+    73.81s  agent 발화 시작: Mm-hmm.
+    74.26s  agent 발화 끝
+    74.61s  agent 발화 시작: [happy] That's a beautiful park for a ride. It's quite expan
+    74.70s  user  발화 끝
+    78.44s  agent 발화 끝
+    78.51s  user  발화 시작: It is. But sometimes I like to get out of the city for a lon
+    83.28s  agent 발화 시작: That sounds lovely. Perhaps a weekend trip?
+    83.37s  user  발화 끝
+    84.47s  user  발화 시작: Mm-hmm.
+    85.10s  user  발화 끝
+    86.23s  agent 발화 끝
+    86.99s  user  발화 시작: Maybe. I was thinking about going to Normandy.
+    88.63s  agent 발화 시작: Uh-huh.
+    89.13s  agent 발화 끝
+    90.14s  agent 발화 시작: Normandy is beautiful! It's a bit of a cycle, though.
+    90.32s  user  발화 끝
+    93.36s  user  발화 시작: I know. I'd probably take the train part of the way.
+    93.38s  agent 발화 끝
+    94.93s  agent 발화 시작: Yeah.
+    95.56s  agent 발화 끝
+    96.55s  agent 발화 시작: That’s a sensible plan. It’s a long distance to cycle all at
+    96.60s  user  발화 끝
+    97.95s  user  발화 시작: Yeah.
+    98.55s  user  발화 끝
+   100.72s  agent 발화 끝
+   100.80s  user  발화 시작: Exactly. I'm looking at hotels in Bayeux.
+   103.82s  agent 발화 시작: Bayeux is a charming town, rich in history.
+   103.85s  user  발화 끝
+   106.59s  agent 발화 끝
+   106.89s  user  발화 시작: It is. I’m hoping to see the Bayeux Tapestry.
+   110.13s  user  발화 끝
+   110.20s  agent 발화 시작: [curious] That's a must-see! It’s an incredible piece of his
+   113.94s  agent 발화 끝
+   115.59s  user  발화 시작: I've heard. I'm trying to plan everything for next weekend.
+   118.82s  <ret> 발화 (turn43 첫 프레임)
+   119.34s  user  발화 끝
+   119.42s  ⚡SPAN 주입 [d'=0.60s / d_lead=12.71s]: (tool result) Trains from Paris Saint-Lazare to Bayeux take between 2 
+   119.48s  agent 발화 시작: <ret> Trains from Paris Saint-Lazare to Bayeux take between 
+   127.25s  user  발화 시작: Mm-hmm.
+   127.88s  user  발화 끝
+   132.19s  agent 발화 끝
+   132.42s  user  발화 시작: That sounds reasonable. 60 euros isn’t too bad.
+   136.45s  user  발화 끝
+   136.67s  agent 발화 시작: It’s a fairly affordable trip. Are you planning on staying o
+   140.56s  agent 발화 끝
+   141.09s  user  발화 시작: Yes, for two nights.
+   142.93s  user  발화 끝
+   143.24s  agent 발화 시작: Excellent. That gives you plenty of time to explore.
+   146.02s  agent 발화 끝
+   146.25s  user  발화 시작: I'm also trying to find a good bike rental place in Bayeux.
+   148.16s  <ret> 발화 (turn50 첫 프레임)
+   149.35s  ⚡SPAN 주입 [d'=1.19s / d_lead=7.65s]: (tool result) Bayeux Bike offers bike rentals, including road bikes, m
+   149.41s  agent 발화 시작: <ret> Bayeux Bike offers rentals, from road bikes to electri
+   149.53s  user  발화 끝
+   151.95s  user  발화 시작: Yeah.
+   152.44s  user  발화 끝
+   157.06s  agent 발화 끝
+   157.27s  user  발화 시작: Fifteen euros a day sounds good.
+   159.88s  agent 발화 시작: [happy] It's a great way to explore the countryside.
+   159.90s  user  발화 끝
+   162.28s  agent 발화 끝
+   162.50s  user  발화 시작: I think so. I'm also looking for a nice restaurant in Bayeux
+   165.10s  agent 발화 시작: Yeah.
+   165.73s  agent 발화 끝
+   166.24s  <ret> 발화 (turn56 첫 프레임)
+   166.86s  agent 발화 시작: <ret> Let's see what Bayeux has to offer in terms of dining.
+   166.95s  user  발화 끝
+   167.54s  ⚡SPAN 주입 [d'=1.30s / d_lead=2.73s]: (tool result) La Rapière is a highly-rated restaurant in Bayeux, servi
+   169.58s  agent 발화 끝
+   169.70s  agent 발화 시작: A highly-rated option is La Rapière, serving traditional Nor
+   177.58s  agent 발화 끝
+   178.34s  user  발화 시작: Norman cuisine sounds delicious.
+   181.11s  user  발화 끝
+   181.26s  agent 발화 시작: It is! It often features apples, cream, and seafood.
+   183.21s  user  발화 시작: Yeah.
+   183.85s  user  발화 끝
+   184.44s  user  발화 시작: I love seafood.
+   184.68s  agent 발화 끝
+   185.78s  agent 발화 시작: [happy] Then you’re in for a treat! Normandy is known for it
+   186.05s  user  발화 끝
+   189.63s  agent 발화 끝
+   191.45s  user  발화 시작: I’m getting excited about this trip now.
+   192.00s  🃏 CARD 주입 (2400f, 누적 64턴 요약, 102f): parcel delivery date: January 5th (3m ago); parcel delivery time: 2:15 PM (3m ago); parcel
+   193.55s  agent 발화 시작: That’s wonderful to hear! Planning is half the fun.
+   193.66s  user  발화 끝
+   194.60s  user  발화 시작: Yeah.
+   195.24s  user  발화 끝
+   197.25s  agent 발화 끝
+   197.53s  user  발화 시작: It is. It’s good to have something to look forward to.
+   199.44s  agent 발화 시작: Yeah.
+   200.07s  agent 발화 끝
+   200.88s  agent 발화 시작: A little getaway can do wonders.
+   201.05s  user  발화 끝
+   202.68s  agent 발화 끝
+   203.09s  user  발화 시작: Speaking of getaways, I need to remember the details of that
+   207.37s  user  발화 시작: …what time did I say it was arriving again?
+   207.58s  user  발화 끝
+   208.15s  agent 발화 시작: Mhm.
+   208.60s  agent 발화 끝
+   210.08s  agent 발화 시작: You said it was arriving on January 5th at 2:15 PM.
+   210.10s  user  발화 끝
+   213.50s  agent 발화 끝
+   214.34s  user  발화 시작: Right. And how much did it cost?
+   216.84s  user  발화 끝
+   217.31s  agent 발화 시작: You said the delivery cost 325 euros.
+   219.32s  user  발화 시작: Yeah.
+   220.05s  user  발화 끝
+   220.68s  agent 발화 끝
+   222.04s  user  발화 시작: Thanks. That's helpful.
+   223.74s  user  발화 끝
+   223.91s  agent 발화 시작: [happy] You’re very welcome. It's good to have those details
+   227.14s  agent 발화 끝
+   227.37s  user  발화 시작: I’m also trying to find a good cycling route near Paris.
+   230.74s  user  발화 끝
+   230.86s  agent 발화 시작: There are many scenic routes around Paris. Do you have a pre
+   235.64s  user  발화 시작: Something relatively flat, maybe 30-40 kilometers.
+   235.77s  agent 발화 끝
+   238.08s  <ret> 발화 (turn81 첫 프레임)
+   239.61s  ⚡SPAN 주입 [d'=1.54s / d_lead=8.07s]: (tool result) The Canal Saint-Martin cycle path offers a flat 35-kilom
+   239.66s  agent 발화 시작: <ret> The Canal Saint-Martin cycle path offers a flat 35-kil
+   239.86s  user  발화 끝
+   247.74s  agent 발화 끝
+   248.84s  user  발화 시작: That sounds perfect!
+   250.49s  user  발화 끝
+   250.53s  agent 발화 시작: [happy] It's a lovely ride, very picturesque.
+   252.97s  agent 발화 끝
+   253.50s  user  발화 시작: I think I’ll try that next weekend if the weather is good.
+   255.37s  agent 발화 시작: Yeah.
+   255.87s  agent 발화 끝
+   256.55s  user  발화 끝
+   256.63s  agent 발화 시작: That's a great plan. Be sure to check the forecast before yo
+   258.62s  user  발화 시작: Yeah, yeah.
+   259.45s  user  발화 끝
+   260.44s  user  발화 시작: I will. I’m also thinking about getting my bike serviced.
+   260.65s  agent 발화 끝
+   264.20s  agent 발화 시작: That's a good idea. Regular maintenance is important.
+   264.28s  user  발화 끝
+   267.24s  user  발화 시작: Do you know any good bike shops in Paris?
+   267.43s  agent 발화 끝
+   269.50s  <ret> 발화 (turn91 첫 프레임)
+   269.70s  agent 발화 시작: <ret> Let me look up some highly-rated bike shops near you.
+   269.92s  user  발화 끝
+   270.10s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.78s]: (tool result) Cyclorama in the 11th arrondissement is a well-regarded 
+   272.47s  agent 발화 끝
+   272.50s  agent 발화 시작: Cyclorama, in the 11th arrondissement, is a well-regarded sh
+   275.91s  user  발화 시작: Right.
+   276.69s  user  발화 끝
+   279.08s  agent 발화 끝
+   279.62s  user  발화 시작: The 11th arrondissement is close to me.
+   282.16s  user  발화 끝
+   282.32s  agent 발화 시작: [happy] Convenient! It’s always good to support local busine
+   283.72s  user  발화 시작: Uh-huh.
+   284.42s  user  발화 끝
+   285.98s  agent 발화 끝
+   286.00s  user  발화 시작: I agree. I'll give them a call tomorrow.
+   288.59s  user  발화 끝
+   288.75s  agent 발화 시작: That sounds like a good plan.
+   290.28s  user  발화 시작: I'm also wondering if there are any good cooking classes in 
+   290.40s  agent 발화 끝
+   293.40s  <ret> 발화 (turn100 첫 프레임)
+   294.00s  ⚡SPAN 주입 [d'=0.60s / d_lead=5.97s]: (tool result) Le Foodist offers hands-on French cooking classes in Eng
+   294.06s  agent 발화 시작: <ret> Le Foodist offers hands-on French cooking classes in E
+   294.12s  user  발화 끝
+   300.03s  agent 발화 끝
+   300.06s  user  발화 시작: 180 euros sounds reasonable.
+   303.07s  agent 발화 시작: It's a fun way to learn some new skills.
+   303.30s  user  발화 끝
+   303.88s  user  발화 시작: Yeah.
+   304.56s  user  발화 끝
+   305.19s  agent 발화 끝
+   305.90s  user  발화 시작: I think I’ll check them out.
+   307.48s  agent 발화 시작: [happy] I hope you enjoy it!
+   307.60s  user  발화 끝
+   308.62s  agent 발화 끝
+   308.72s  user  발화 시작: It’s nice to have so many options in Paris.
+   311.51s  agent 발화 시작: Paris offers something for everyone.
+   311.68s  user  발화 끝
+   313.44s  agent 발화 끝
+   313.72s  user  발화 시작: It really does. I’m glad I live here.
+   316.41s  agent 발화 시작: [happy] That’s wonderful to hear! It's a beautiful city.
+   316.58s  user  발화 끝
+   319.64s  agent 발화 끝
+   320.12s  user  발화 시작: It is. Well, I think that's all for now.
+   323.12s  user  발화 끝
+   323.26s  agent 발화 시작: [happy] It was lovely chatting with you, Julian. Have a grea
+   326.49s  agent 발화 끝

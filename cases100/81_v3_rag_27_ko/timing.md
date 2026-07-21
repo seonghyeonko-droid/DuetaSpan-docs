@@ -74,7 +74,7 @@
      2.00s  <ret> 발화 (turn1 첫 프레임)
      2.29s  agent 발화 시작: <ret> 저는 주로 라이프스타일 잡지를 보는데요, 마사 스튜어트 리빙 같은 잡지가 인기가 많아요.
      2.31s  user  발화 끝
-     2.80s  ⚡SPAN 주입 [d'=0.81s / d_lead=6.35s]: Martha Stewart Living is an American monthly magazine focused on homek
+     3.05s  ⚡SPAN 주입 [d'=1.06s / d_lead=6.35s]: Martha Stewart Living is an American monthly magazine focused on homek
      8.61s  agent 발화 시작: 마사 스튜어트 리빙은 집 꾸미기, 요리, 손님 초대, 정원 가꾸기에 초점을 맞춘 미국의 월간 잡지예요.
      8.64s  agent 발화 끝
     10.51s  user  발화 시작: 아.
@@ -87,8 +87,8 @@
     20.44s  user  발화 끝
     21.88s  agent 발화 끝
     21.93s  user  발화 시작: 홈스타일링 말고 다른 잡지도 봐요?
-    24.40s  <ret> 발화 (turn8 첫 프레임)
-    24.61s  ⚡SPAN 주입 [d'=1.03s / d_lead=5.78s]: Tall Timber Short Lines is a bimonthly magazine devoted to narrow gaug
+    23.33s  <ret> 발화 (turn8 첫 프레임)
+    24.61s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.78s]: Tall Timber Short Lines is a bimonthly magazine devoted to narrow gaug
     24.67s  agent 발화 시작: <ret> Tall Timber Short Lines는 좁은 게이지 철도, 역사적인 것과 현대적인 것을 다루
     24.74s  user  발화 끝
     28.62s  user  발화 시작: 어.

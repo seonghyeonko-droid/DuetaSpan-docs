@@ -92,7 +92,7 @@
      5.97s  <ret> 발화 (turn2 첫 프레임)
      6.52s  agent 발화 시작: <ret> 파나마 페이퍼와 파라다이스 페이퍼 조사는 독일의 <happy>쥐트도이체 차이퉁 신문에서 공개했습니
      6.63s  user  발화 끝
-     7.02s  ⚡SPAN 주입 [d'=1.05s / d_lead=7.64s]: Süddeutsche Zeitung published the Panama Papers and Paradise Papers in
+     7.27s  ⚡SPAN 주입 [d'=1.30s / d_lead=7.64s]: Süddeutsche Zeitung published the Panama Papers and Paradise Papers in
     11.13s  user  발화 시작: 응.
     11.58s  user  발화 끝
     14.12s  user  발화 시작: 쥐트도이체 차이퉁이 독일 신문이었구나. 그럼 그 신문은 주로 무슨 기사를 다루는 신문이야?
@@ -100,13 +100,13 @@
     19.80s  <ret> 발화 (turn5 첫 프레임)
     20.18s  agent 발화 시작: <ret> 쥐트도이체 차이퉁은 뮌헨에서 발행되는 독일 일간지로, 심층적인 보도로 유명한 신문입니다.
     20.23s  user  발화 끝
-    20.68s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.99s]: Süddeutsche Zeitung is a German daily newspaper published in Munich an
+    20.93s  ⚡SPAN 주입 [d'=1.13s / d_lead=6.99s]: Süddeutsche Zeitung is a German daily newspaper published in Munich an
     27.17s  agent 발화 끝
     27.46s  user  발화 시작: 흐으으음… 심층 보도라… 혹시 그 신문에서 한국 관련 기사도 많이 다루나?
     33.57s  <ret> 발화 (turn7 첫 프레임)
     33.79s  agent 발화 시작: <ret> <happy>쥐트도이체 차이퉁에서는 한국의 정치 및 경제 발전 상황에 대한 기사를 다룬 적이 있습
     33.85s  user  발화 끝
-    34.19s  ⚡SPAN 주입 [d'=0.62s / d_lead=6.67s]: (tool result) Süddeutsche Zeitung has reported on South Korea's politi
+    34.44s  ⚡SPAN 주입 [d'=0.87s / d_lead=6.67s]: (tool result) Süddeutsche Zeitung has reported on South Korea's politi
     36.40s  user  발화 시작: 응.
     36.89s  user  발화 끝
     40.45s  agent 발화 끝
@@ -118,5 +118,5 @@
     56.99s  <ret> 발화 (turn12 첫 프레임)
     57.10s  agent 발화 시작: <ret> 최근 쥐트도이체 차이퉁에서는 탈세 수법에 대한 심층 조사를 발표했습니다.
     57.30s  user  발화 끝
-    57.92s  ⚡SPAN 주입 [d'=0.93s / d_lead=5.19s]: Süddeutsche Zeitung recently published an investigation into tax evasi
+    58.17s  ⚡SPAN 주입 [d'=1.18s / d_lead=5.19s]: Süddeutsche Zeitung recently published an investigation into tax evasi
     62.29s  agent 발화 끝

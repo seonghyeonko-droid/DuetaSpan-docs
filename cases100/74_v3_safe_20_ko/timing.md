@@ -105,9 +105,9 @@
     35.08s  user  발화 시작: 그럼, 요즘 날씨 어때?
     35.25s  agent 발화 끝
     36.68s  <ret> 발화 (turn10 첫 프레임)
-    37.08s  ⚡SPAN 주입 [d'=0.40s / d_lead=12.15s]: (tool result) Busan, South Korea: 28.3°C, humidity 68%, wind 4.1 km/h,
     37.15s  agent 발화 시작: <ret> 부산은 현재 섭씨 이십팔 점 삼도이고, 습도는 육십팔퍼센트, 바람은 시속 사 점 일킬로미터로 약간
     37.29s  user  발화 끝
+    37.33s  ⚡SPAN 주입 [d'=0.65s / d_lead=12.15s]: (tool result) Busan, South Korea: 28.3°C, humidity 68%, wind 4.1 km/h,
     41.09s  user  발화 시작: 아.
     41.54s  user  발화 끝
     49.30s  agent 발화 끝
@@ -123,8 +123,8 @@
     59.94s  agent 발화 시작: 네.
     60.51s  <ret> 발화 (turn18 첫 프레임)
     60.57s  agent 발화 끝
-    60.87s  ⚡SPAN 주입 [d'=0.36s / d_lead=12.80s]: (tool result) Hotel LCT Busan: Double room, July 17-20, ₩350000, confi
     61.04s  agent 발화 시작: <ret> 부산 엘 씨 티 호텔 더블룸을 칠월 십칠일부터 이십일까지, 삼십오만 원에 예약 완료되었고, 확인 
+    61.12s  ⚡SPAN 주입 [d'=0.61s / d_lead=12.80s]: (tool result) Hotel LCT Busan: Double room, July 17-20, ₩350000, confi
     61.31s  user  발화 끝
     73.83s  user  발화 시작: 고마워.
     73.84s  agent 발화 끝
@@ -135,7 +135,7 @@
     80.87s  <ret> 발화 (turn22 첫 프레임)
     81.06s  agent 발화 시작: <ret> 부산 해운대 게장집이 신선하고 맛있는 게 요리로 유명한 맛집이라고 하네요.
     81.33s  user  발화 끝
-    81.63s  ⚡SPAN 주입 [d'=0.75s / d_lead=6.72s]: (tool result) Haeundae Gejang House is a popular restaurant in Busan k
+    81.88s  ⚡SPAN 주입 [d'=1.00s / d_lead=6.72s]: (tool result) Haeundae Gejang House is a popular restaurant in Busan k
     83.96s  user  발화 시작: 네.
     84.45s  user  발화 끝
     87.78s  agent 발화 끝
@@ -151,7 +151,7 @@
    107.36s  <ret> 발화 (turn29 첫 프레임)
    107.58s  agent 발화 시작: <ret> 부산 밀면 왕 돼지국밥이 진한 국물과 부드러운 고기로 유명한 전통 돼지국밥 맛집이라고 합니다.
    107.75s  user  발화 끝
-   108.24s  ⚡SPAN 주입 [d'=0.88s / d_lead=8.76s]: (tool result) Milmyeon Wang Dwaeji Gukbap is a well-regarded establish
+   108.49s  ⚡SPAN 주입 [d'=1.13s / d_lead=8.76s]: (tool result) Milmyeon Wang Dwaeji Gukbap is a well-regarded establish
    116.35s  agent 발화 끝
    116.35s  user  발화 시작: 아, 거기 유명하대.
    118.01s  agent 발화 시작: [happy] 네, 유명하다고 하네요. 한번 가보시는 것도 좋을 것 같아요.
@@ -163,7 +163,7 @@
    126.27s  <ret> 발화 (turn34 첫 프레임)
    126.32s  agent 발화 시작: <ret> 부산 감천문화마을은 언덕에 알록달록한 집들이 지어진 곳으로 아름다운 경치와 독특한 사진 촬영 기회
    126.46s  user  발화 끝
-   127.49s  ⚡SPAN 주입 [d'=1.22s / d_lead=11.27s]: (tool result) Gamcheon Culture Village, with its colorful houses built
+   127.74s  ⚡SPAN 주입 [d'=1.47s / d_lead=11.27s]: (tool result) Gamcheon Culture Village, with its colorful houses built
    134.22s  user  발화 시작: 아.
    134.71s  user  발화 끝
    137.59s  agent 발화 끝

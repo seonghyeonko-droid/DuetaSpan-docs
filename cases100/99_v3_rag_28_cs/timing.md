@@ -114,7 +114,7 @@
     30.38s  <ret> 발화 (turn8 첫 프레임)
     30.96s  agent 발화 시작: <ret> 건강한 관계는 서로 노력하는 게 중요하고, 그건 어느 정도 주고받는 걸 말하는 거야.
     31.15s  user  발화 끝
-    31.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=6.39s]: Reciprocity in relationships is a key component of maintaining healthy
+    31.80s  ⚡SPAN 주입 [d'=1.42s / d_lead=6.39s]: Reciprocity in relationships is a key component of maintaining healthy
     33.64s  user  발화 시작: 응.
     33.99s  user  발화 끝
     37.35s  agent 발화 끝
@@ -126,7 +126,7 @@
     54.29s  <ret> 발화 (turn13 첫 프레임)
     54.42s  agent 발화 시작: <ret> 연구에 따르면 끈끈한 관계가 행복과 스트레스 감소에 중요하다고 해. 좋은 친구가 있는 사람들은 더
     54.61s  user  발화 끝
-    55.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.50s]: A study by the University of California, Berkeley, found that individu
+    55.98s  ⚡SPAN 주입 [d'=1.69s / d_lead=9.50s]: A study by the University of California, Berkeley, found that individu
     63.92s  agent 발화 끝
     64.04s  user  발화 시작: 그러면… 그냥 새로운 친구를 찾아? 말처럼 쉬운 일이 아니잖아.
     69.13s  user  발화 끝

@@ -78,7 +78,7 @@
      2.38s  <ret> 발화 (turn1 첫 프레임)
      2.98s  agent 발화 시작: <ret> 엔론 스캔들에 연루된 은행들이 몇 군데 있었는데, 특히 메릴린치가 여러 금융 수법을 통해 관련되어
      3.23s  user  발화 끝
-     3.30s  ⚡SPAN 주입 [d'=0.92s / d_lead=7.19s]: Several banks, including Merrill Lynch, were involved in the Enron sca
+     3.55s  ⚡SPAN 주입 [d'=1.17s / d_lead=7.19s]: Several banks, including Merrill Lynch, were involved in the Enron sca
      7.45s  user  발화 시작: 그치.
      8.08s  user  발화 끝
     10.17s  agent 발화 끝
@@ -88,5 +88,5 @@
     15.16s  <ret> 발화 (turn5 첫 프레임)
     15.28s  user  발화 끝
     15.36s  agent 발화 시작: <ret> 메릴린치는 특수 목적 법인을 이용해서 엔론의 부채를 숨기고 이익을 부풀리는 걸 도왔다고 해요.
-    16.38s  ⚡SPAN 주입 [d'=1.22s / d_lead=7.00s]: Merrill Lynch helped Enron hide debt and inflate profits through speci
+    16.63s  ⚡SPAN 주입 [d'=1.47s / d_lead=7.00s]: Merrill Lynch helped Enron hide debt and inflate profits through speci
     22.36s  agent 발화 끝

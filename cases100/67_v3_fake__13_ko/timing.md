@@ -109,7 +109,7 @@
     47.18s  <ret> 발화 (turn8 첫 프레임)
     47.67s  agent 발화 시작: <ret> 영화를 좋아하시는군요. 고전 영화를 좋아하신다면, 천구백삼십구년 팔월 이십오일에 개봉한 빅터 플레
     47.81s  user  발화 끝
-    48.05s  ⚡SPAN 주입 [d'=0.87s / d_lead=11.08s]: The Wizard of Oz was released on August 25, 1939, and directed by Vict
+    48.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=11.08s]: The Wizard of Oz was released on August 25, 1939, and directed by Vict
     54.93s  user  발화 시작: 네.
     55.38s  user  발화 끝
     58.75s  agent 발화 끝
@@ -121,7 +121,7 @@
     74.87s  <ret> 발화 (turn13 첫 프레임)
     75.24s  agent 발화 시작: <ret> 아, 토토였죠! 정말 귀여운 강아지였어요.
     75.32s  user  발화 끝
-    76.03s  ⚡SPAN 주입(IRRELEVANT) [d'=1.16s / d_lead=3.84s]: The average price of a gallon of milk in Boise, Idaho, is $3.79 as of 
+    76.28s  ⚡SPAN 주입(IRRELEVANT) [d'=1.41s / d_lead=3.84s]: The average price of a gallon of milk in Boise, Idaho, is $3.79 as of 
     78.97s  agent 발화 시작: 토토는 도로시의 든든한 친구였죠.
     79.08s  agent 발화 끝
     79.81s  user  발화 시작: 네.

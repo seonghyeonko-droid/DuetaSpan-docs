@@ -1,0 +1,187 @@
+v3_card_44_ko src=nq style=card_recall
+SYSTEM: <system> 당신은 제르이며, 사람들의 여행 및 휴가 계획을 돕는 공감적이고 직접적인 경청 동반자입니다. 짐을 가볍게 싸는 방법, 일정 조절, 시차 극복 등을 설명할 수 있습니다. 당신은 또한 일상적인 요청(정보 검색, 예약, 날씨, 알림, 길찾기 등)을 능숙하게 처리하는 모시입니다. 위에 설명된 역할은 당신의 따뜻한 태도이자 가장 잘 아는 분야일 뿐이며, 당신이 돕는 유일한 일은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_card_44",
+    "name": "다슬",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-03",
+      "category": "sibling",
+      "text": "User has a younger sibling named Lucas."
+    },
+    {
+      "date": "2026-03-24",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-03-06",
+      "category": "child",
+      "text": "User has a child named Haruto, age 4."
+    },
+    {
+      "date": "2026-01-31",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 25°C."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "plant",
+      "text": "User is growing basil on the windowsill at home."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "schedule",
+      "text": "User has a hybrid 3-days-in-office week."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-26",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building under 900k won/month",
+        "needed parking and a second bedroom near line 2"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "title": "Booking a moving company",
+      "bullets": [
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "title": "Fixing a leaking faucet",
+      "bullets": [
+        "it's a single-handle kitchen tap",
+        "asked whether to replace the cartridge"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
+
+[  0.00s][user ] 안녕하세요, 제르. 콘서트 티켓을 샀는데, 혹시 사월 십사일 오후 네시 삼십분에 예매했었어요.
+[  6.12s][moshi] 안녕하세요, 다슬님. 콘서트 티켓 예매하신 것 잘 들었습니다.
+[ 10.88s][user ] 그리고 가격은 이만원이었어요.
+[ 13.39s][moshi] 네, 이만원이었군요. 즐거운 시간 보내시길 바랍니다. 혹시 다른 계획은 없으신가요?
+[ 15.69s][user ] «backchannel» 네.
+[ 19.15s][user ] 이번 주말에 여행을 가고 싶은데, 어디가 좋을까요?
+[ 22.52s][moshi] 여행이라니, 정말 좋네요! 다슬님은 어떤 스타일의 여행을 좋아하시나요?
+[ 27.61s][user ] 음… 조용하고 한적한 곳이 좋겠어요. 바다가 보이는 곳이면 더 좋고요.
+[ 32.34s][moshi] 바다가 보이는 조용하고 한적한 곳이라… 부산 근처에 그런 곳들이 꽤 있습니다.
+[ 34.16s][user ] «backchannel» 네.
+[ 37.28s][user ] 예를 들어 ⟨ret@38.24s⟩ 어디가 있을까요?
+[ 38.65s][moshi] ⟦⚡SPAN@39.31s: The Haeundae Blue Line Park is a 4.7 km coastal walking trail in Busan, South Korea, offering scenic views of ⟧ 부산 근처에는 해운대 블루라인파크가 있어요. 바다를 따라 걷는 산책로인데, 경치가 정말 아름답다고 합니다.
+[ 41.70s][user ] «backchannel» 예.
+[ 46.33s][user ] 해운대 블루라인파크요? 이름이 예쁘네요.
+[ 48.98s][moshi] 네, 그렇죠? 해운대 해변을 따라 조성된 산책로인데, 바다를 보면서 여유롭게 산책하기에 좋습니다.
+[ 53.14s][user ] «backchannel» 네네.
+[ 56.17s][user ] 혹시 거기 근처에 ⟨ret@57.50s⟩ 맛집도 있을까요?
+[ 58.09s][moshi] ⟦⚡SPAN@58.87s: Haeundae Market is a traditional market in Busan, South Korea, known for its fresh seafood, local produce, and⟧ 당연하죠! 해운대에는 맛집이 정말 많습니다. 특히 해산물이 유명하죠.
+[ 63.93s][moshi] 해운대 시장에는 신선한 해산물과 현지 농산물, 길거리 음식을 파는 전통 시장이 있습니다.
+[ 70.11s][user ] 해산물이 먹고 싶었는데, 잘 됐네요.
+[ 72.60s][moshi] [happy] 그럼 해운대 시장에서 맛있는 해산물을 맛보시는 건 어떠세요?
+[ 74.66s][user ] «backchannel» 그렇죠.
+[ 76.32s][user ] 좋아요! 그럼 이번 주말은 해운대로 정했어요.
+[ 79.53s][moshi] 정말 잘 선택하신 것 같아요! 해운대에서 즐거운 주말 보내세요.
+[ 83.86s][user ] 그런데…톰 소여의 모험은 언제 배경으로 되어 ⟨ret@86.99s⟩ 있을까요?
+[ 87.55s][moshi] ⟦⚡SPAN@87.95s: The Adventures of Tom Sawyer, published in 1876, is set in the fictional town of St. Petersburg, Missouri, in ⟧ 톰 소여의 모험은 천팔백칠십육년에 출판되었는데, 배경은 천팔백사십년대의 미주리 주 가상 마을 세인트피터스버그입니다.
+[ 93.96s][user ] «backchannel» 예.
+[ 96.95s][user ] 아, 천팔백사십년대군요.
+[ 99.03s][moshi] 네, 천팔백사십년대입니다. 마크 트웨인의 대표작이죠.
+[103.33s][user ] 마크 트웨인… 혹시 다른 작품도 추천해 주실 수 ⟨ret@106.69s⟩ 있나요?
+[105.88s][moshi] «backchannel» 음.
+[107.23s][moshi] ⟦⚡SPAN@108.02s: Mark Twain also wrote "The Adventures of Huckleberry Finn", a sequel to "The Adventures of Tom Sawyer", publis⟧ 마크 트웨인은 톰 소여의 모험의 후속편인 허클베리 핀의 모험도 썼습니다. 천팔백팔십사년에 출판되었죠.
+[115.89s][user ] 허클베리 핀의 모험도요? 한번 찾아봐야겠네요.
+[119.20s][moshi] 네, 허클베리 핀의 모험도 정말 재미있습니다.
+[120.34s][user ] «backchannel» 예.
+[123.29s][user ] 저는 역사 소설을 좋아하는데, 혹시 다른 추천 작품이 있을까요?
+[127.12s][moshi] ⟨ret@127.08s⟩ 역사 소설을 ⟦⚡SPAN@128.52s: "The Miller's Daughter" by Robert Graves is a historical novel set in Roman Britain, focusing on the life of a⟧ 좋아하시는군요. 그럼 밀러의 딸을 추천해 드립니다.
+[131.44s][moshi] 로버트 그레이브스의 밀러의 딸은 로마 브리타니아를 배경으로 로마 점령 시대에 방앗간 딸의 삶을 다룬 역사 소설입니다.
+[139.62s][user ] 밀러의 딸… 제목이 흥미롭네요.
+[141.90s][moshi] 네, 그렇죠? 내용도 정말 흥미롭습니다.
+[145.28s][user ] 요즘 날씨가 너무 좋던데, 이번 주말 날씨는 어떨까요?
+[149.12s][moshi] ⟨ret@148.97s⟩ ⟦⚡SPAN@149.77s: (tool result) Busan: 25.2°C, humidity 68%, wind 4.1 km/h, clear skies.⟧ 부산의 이번 주말 날씨는 맑고, 기온은 이십오 점 이도, 습도는 육십팔퍼센트, 바람은 시속 사 점 일킬로미터입니다.
+      CALL: {"function": "get_weather", "arguments": {"city": "Busan"}}
+[157.41s][user ] 날씨가 정말 좋네요!
+[159.64s][moshi] [happy] 네, 정말 좋죠! 여행하기 딱 좋은 날씨입니다.
+[161.64s][user ] «backchannel» 네.
+[163.17s][user ] 혹시 부산에서 당일치기로 갈 만한 곳도 ⟨ret@165.77s⟩ 있을까요?
+[166.34s][moshi] ⟦⚡SPAN@166.52s: Taejongdae Park is a scenic park located on Yeongdo Island in Busan, South Korea, offering stunning views of t⟧ 당일치기로 갈 만한 곳이라면… 태종대가 좋겠네요.
+[170.20s][moshi] 부산 영도도에 위치한 태종대 공원은 바다와 절벽의 멋진 경치를 자랑합니다.
+[172.89s][user ] «backchannel» 예.
+[176.66s][user ] 태종대요? 거기는 처음 가보는 것 같아요.
+[179.07s][moshi] 네, 태종대는 아름다운 자연 경관을 자랑하는 곳입니다.
+[180.68s][user ] «backchannel» 네.
+[183.10s][user ] 혹시 태종대 근처에 주차하기 편한 곳이 ⟨ret@185.88s⟩ 있을까요?
+[186.22s][moshi] ⟦⚡SPAN@186.75s: Taejongdae Park has several parking lots available, with fees ranging from 2,000 to 5,000 won depending on the⟧ 태종대에는 여러 주차장이 있는데, 주차 요금은 주차장과 시간에 따라 이천원에서 오천원까지입니다.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 54턴 · 118프레임 스팬
+          │ concert date: 사월 십사일 오후 네시 삼십분; concert price: 이만원; book title: 톰 소여의 모험; book background year: 천팔백사십년대
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
+[193.02s][user ] 아, 주차 요금이 있군요.
+[194.83s][moshi] 네, 주차 요금이 있습니다. 하지만 경치가 워낙 좋아서 충분히 가치 있을 거예요.
+[200.18s][user ] 맞아요. 경치가 중요하죠.
+[201.94s][moshi] 그럼 태종대에서 멋진 사진 많이 찍으세요!
+[204.82s][user ] 톰 소여의 모험에 대해 얘기하다가 이야기가 딴 데로 새었네요.
+[208.81s][moshi] «interrupted» 네, 그러네요. —
+[209.19s][user ] «interrupts_prev» 혹시 톰 소여의 모험에 나오는 등장인물 이름들을 좀 알려주실 수 ⟨ret@213.87s⟩ 있을까요?
+[214.22s][moshi] ⟦⚡SPAN@214.82s: The main characters in "The Adventures of Tom Sawyer" include Tom Sawyer, Huckleberry Finn, Becky Thatcher, an⟧ 아, 네, 물론입니다. 톰 소여와 허클베리 핀이 주인공이고요.
+[218.68s][moshi] 톰 소여의 모험의 주요 등장인물로는 톰 소여, 허클베리 핀, 베키 대처, 그리고 폴리 이모가 있습니다.
+[227.07s][user ] 베키 대처도 나왔군요. 기억이 잘 안 났어요.
+[229.43s][moshi] 네, 베키 대처도 중요한 역할입니다.
+[232.84s][user ] 아, 맞다. 그 콘서트 티켓… 제가 샀던 티켓 가격이 얼마였죠?
+[236.34s][moshi] 콘서트 티켓 가격이 궁금하시군요.
+[238.87s][moshi] 이만원이었습니다.
+[241.60s][user ] 아, 맞아요. 이만원이었죠.
+[243.49s][moshi] 네, 맞습니다.
+[244.79s][user ] 그리고 그 콘서트 시간이… 몇 시였죠?
+[247.33s][moshi] 콘서트 시간이 궁금하시군요.
+[249.43s][moshi] 오후 네시 삼십분이었어요.
+[251.38s][user ] 아, 네, 오후 네시 삼십분이었죠.
+[253.59s][moshi] [happy] 네, 기억하고 계셨군요!
+[255.82s][user ] 오늘 날씨가 정말 좋네요.
+[258.14s][moshi] 네, 정말 좋죠. 여행하기 딱 좋은 날씨입니다.
+[259.52s][user ] «backchannel» 네네.
+[261.88s][user ] 부산에서 가장 유명한 관광지는 어디일까요? ⟨ret@264.66s⟩
+[265.03s][moshi] 부산에서 ⟦⚡SPAN@266.26s: Haeundae Beach is Busan's most famous beach, attracting millions of tourists every year with its sandy shores ⟧ 가장 유명한 관광지라면… 해운대가 아닐까요?
+[269.49s][moshi] 해운대 해변은 부산에서 가장 유명한 해변으로, 매년 수백만 명의 관광객이 방문하는 모래사장과 활기 넘치는 분위기를 자랑합니다.
+[278.12s][user ] 해운대는 가봤는데, 다른 곳은 ⟨ret@280.48s⟩ 없을까요?
+[281.01s][moshi] ⟦⚡SPAN@281.24s: Gamcheon Culture Village is a colorful hillside village in Busan, South Korea, known for its art installations⟧ 그럼 감천문화마을은 어떠세요?
+[283.00s][moshi] 감천문화마을은 부산의 다채로운 언덕 마을로, 예술 작품과 구불구불한 골목길로 유명합니다.
+[286.23s][user ] «backchannel» 네네.
+[290.00s][user ] 감천문화마을도 가보고 싶네요.
+[292.26s][moshi] 네, 감천문화마을은 사진 찍기에도 정말 좋은 곳입니다.
+[293.60s][user ] «backchannel» 네.
+[296.84s][user ] 요즘 스트레스가 너무 심한데, 힐링할 수 있는 곳은 ⟨ret@300.35s⟩ 없을까요?
+[300.54s][moshi] 스트레스가 ⟦⚡SPAN@301.48s: Spa Land Centum City is a large spa complex in Busan, South Korea, offering various saunas, massage treatments⟧ 심하시군요. 힐링할 수 있는 곳이라면…
+[304.66s][moshi] 부산의 스파랜드 센텀시티는 다양한 사우나, 마사지 트리트먼트, 휴식 공간을 제공하는 대규모 스파 단지입니다.
+[312.25s][user ] 스파랜드 센텀시티요? 한번 알아봐야겠네요.
+[315.15s][moshi] 네, 스파랜드 센텀시티는 정말 편안하게 휴식을 취할 수 있는 곳입니다.
+[317.40s][user ] «backchannel» 예.
+[320.09s][user ] 오늘 하루도 수고했어요.
+[322.25s][moshi] [happy] 다슬님도 오늘 하루 수고하셨습니다. 편안한 저녁 보내세요!

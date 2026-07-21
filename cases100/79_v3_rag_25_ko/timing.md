@@ -87,8 +87,8 @@
     21.67s  agent 발화 시작: 음.
     21.98s  agent 발화 끝
     22.45s  <ret> 발화 (turn7 첫 프레임)
-    22.75s  ⚡SPAN 주입 [d'=0.30s / d_lead=7.88s]: Big Data's song "Dangerous" was certified gold by the Recording Indust
     22.88s  agent 발화 시작: <ret> 빅 데이터의 노래 "Dangerous"가 이천십오년 오월 십이일에 미국 음반산업협회에서 골드 인증
+    23.05s  ⚡SPAN 주입 [d'=0.60s / d_lead=7.88s]: Big Data's song "Dangerous" was certified gold by the Recording Indust
     23.06s  user  발화 끝
     26.75s  user  발화 시작: 응응.
     27.39s  user  발화 끝
@@ -105,7 +105,7 @@
     48.45s  user  발화 끝
     48.51s  <ret> 발화 (turn14 첫 프레임)
     48.73s  agent 발화 시작: <ret> 빅 데이터는 앨런 윌키스의 프로젝트인데, 이천십삼년에 발매된 "Daylight"라는 곡이 현대자동
-    49.88s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.55s]: Big Data, the project of Alan Wilkis, is known for the 2013 single "Da
+    50.13s  ⚡SPAN 주입 [d'=1.61s / d_lead=9.55s]: Big Data, the project of Alan Wilkis, is known for the 2013 single "Da
     54.31s  user  발화 시작: 응.
     54.71s  user  발화 끝
     58.27s  agent 발화 끝

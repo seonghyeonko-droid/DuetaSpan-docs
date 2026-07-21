@@ -77,8 +77,8 @@
 
      0.00s  user  발화 시작: Hey Bro, I’m reading about Enron and it’s just… a lot. What 
      5.68s  <ret> 발화 (turn1 첫 프레임)
-     5.98s  ⚡SPAN 주입 [d'=0.30s / d_lead=9.64s]: Several financial institutions, including Merrill Lynch, Credit Suisse
      6.26s  agent 발화 시작: <ret> [happy] That's a tough story, but you're right to ask.
+     6.28s  ⚡SPAN 주입 [d'=0.60s / d_lead=9.64s]: Several financial institutions, including Merrill Lynch, Credit Suisse
      6.40s  user  발화 끝
     15.73s  user  발화 시작: Did you see the traffic on the bridge this morning? Awful.
     15.90s  agent 발화 끝
@@ -87,7 +87,7 @@
     22.87s  <ret> 발화 (turn4 첫 프레임)
     22.96s  user  발화 끝
     23.06s  agent 발화 시작: <ret> It looks like Merrill Lynch did, actually—they paid tw
-    23.65s  ⚡SPAN 주입 [d'=0.77s / d_lead=11.08s]: In 2002, Merrill Lynch paid $2.6 million in penalties to settle charge
+    23.90s  ⚡SPAN 주입 [d'=1.02s / d_lead=11.08s]: In 2002, Merrill Lynch paid $2.6 million in penalties to settle charge
     33.58s  user  발화 시작: That’s… really messed up. I think I need a break from this.
     34.14s  agent 발화 끝
     37.38s  user  발화 끝

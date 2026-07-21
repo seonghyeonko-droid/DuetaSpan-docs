@@ -101,8 +101,8 @@
 
 
      0.00s  user  발화 시작: pga 투어에서 가장 많은 우승을 한 선수는 누구인가요?
-     4.04s  <ret> 발화 (turn1 첫 프레임)
-     4.21s  ⚡SPAN 주입 [d'=0.84s / d_lead=10.66s]: Sam Snead holds the record for the most wins on the PGA Tour, with 82 
+     3.13s  <ret> 발화 (turn1 첫 프레임)
+     4.21s  ⚡SPAN 주입 [d'=1.09s / d_lead=10.66s]: Sam Snead holds the record for the most wins on the PGA Tour, with 82 
      4.27s  agent 발화 시작: <ret> pga 투어에서 가장 많은 우승을 한 선수는 샘 스니드 선수인데, 총 팔십이번 우승을 기록하고 있
      4.31s  user  발화 끝
     14.93s  agent 발화 끝

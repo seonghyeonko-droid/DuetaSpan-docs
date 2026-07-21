@@ -105,7 +105,7 @@
     10.80s  <ret> 발화 (turn4 첫 프레임)
     11.16s  agent 발화 시작: <ret> 네, 기억합니다. 주완님께서 시내에서 반려동물과 함께 살 수 있는, 구십만 원 이하의 보증금에 주
     11.23s  user  발화 끝
-    11.35s  ⚡SPAN 주입 [d'=0.55s / d_lead=10.30s]: [2026-06-03] Apartment hunting downtown: wanted a pet-friendly buildin
+    11.60s  ⚡SPAN 주입 [d'=0.80s / d_lead=10.30s]: [2026-06-03] Apartment hunting downtown: wanted a pet-friendly buildin
     21.46s  agent 발화 끝
     21.71s  user  발화 시작: 맞아요, 그거. 혹시 지금 부산에 그런 곳이 있을까요?
     25.05s  agent 발화 시작: 부산에는 그런 조건에 맞는 아파트가 몇 군데 있습니다.
@@ -119,5 +119,5 @@
     31.75s  <ret> 발화 (turn10 첫 프레임)
     32.15s  agent 발화 시작: <ret> 해운대 팰리체가 보증금 팔십오만 원이고, 해운대 푸르지오가 팔십팔만 원입니다. 두 곳 모두 반려동
     32.20s  user  발화 끝
-    32.76s  ⚡SPAN 주입 [d'=1.02s / d_lead=9.83s]: (tool result) {"results": [{"name": "해운대 팰리체", "address": "부산 해운대구 해운대
+    33.01s  ⚡SPAN 주입 [d'=1.27s / d_lead=9.83s]: (tool result) {"results": [{"name": "해운대 팰리체", "address": "부산 해운대구 해운대
     41.98s  agent 발화 끝

@@ -87,7 +87,7 @@
      6.66s  <ret> 발화 (turn3 첫 프레임)
      7.27s  agent 발화 시작: <ret> You asked about investing, and I recall you wanted to 
      7.28s  user  발화 끝
-     7.93s  ⚡SPAN 주입 [d'=1.27s / d_lead=5.97s]: [2026-03-27] User can't stand durian.
+     8.18s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.97s]: [2026-03-27] User can't stand durian.
     10.70s  user  발화 시작: Mm-hmm.
     11.28s  user  발화 끝
     13.11s  agent 발화 시작: That’s a great first step – many people find index funds are
@@ -96,8 +96,8 @@
     18.42s  user  발화 끝
     19.87s  user  발화 시작: …Actually, before we get into funds, can we look at my data 
     19.97s  agent 발화 끝
-    26.72s  <ret> 발화 (turn8 첫 프레임)
+    25.83s  <ret> 발화 (turn8 첫 프레임)
     27.10s  user  발화 끝
-    27.11s  ⚡SPAN 주입 [d'=1.03s / d_lead=9.31s]: [2026-06-21] Past chat — Switching phone plans: uses about 30GB of dat
+    27.11s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.31s]: [2026-06-21] Past chat — Switching phone plans: uses about 30GB of dat
     27.16s  agent 발화 시작: <ret> Switching plans is a smart move. You mentioned using a
     36.47s  agent 발화 끝

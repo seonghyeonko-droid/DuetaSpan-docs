@@ -80,9 +80,9 @@
 
      0.00s  user  발화 시작: Begin a code generation session and save the output to my te
      4.14s  <ret> 발화 (turn1 첫 프레임)
-     4.44s  ⚡SPAN 주입 [d'=0.30s / d_lead=14.65s]: (tool result) Session initiated. ID: cg-20260710-1433. Output will be 
      4.71s  user  발화 끝
      4.73s  agent 발화 시작: <ret> [happy] Okay, a code generation session has started fo
+     4.74s  ⚡SPAN 주입 [d'=0.60s / d_lead=14.65s]: (tool result) Session initiated. ID: cg-20260710-1433. Output will be 
     13.17s  user  발화 시작: Uh-huh.
     13.62s  user  발화 끝
     19.19s  user  발화 시작: Something to help me with burnout. Maybe a simple breathing 
@@ -95,10 +95,10 @@
     36.40s  user  발화 시작: Yes, please. Something for when I'm really overwhelmed.
     37.58s  agent 발화 시작: Yeah, totally.
     39.33s  agent 발화 끝
-    39.59s  <ret> 발화 (turn8 첫 프레임)
+    39.57s  <ret> 발화 (turn8 첫 프레임)
     39.77s  user  발화 끝
     39.89s  agent 발화 시작: <ret> [curious] I found box breathing—inhale four seconds, h
-    40.95s  ⚡SPAN 주입 [d'=1.36s / d_lead=13.50s]: (tool result) Box breathing, also known as square breathing, involves 
+    41.18s  ⚡SPAN 주입 [d'=1.61s / d_lead=13.50s]: (tool result) Box breathing, also known as square breathing, involves 
     46.74s  user  발화 시작: Yeah, yeah.
     48.16s  user  발화 끝
     53.38s  agent 발화 끝

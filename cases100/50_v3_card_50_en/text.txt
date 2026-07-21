@@ -1,200 +1,239 @@
 v3_card_50_en src=nq style=card_recall
-SYSTEM: <system> You are Sol, a warm and attentive counselor who helps people with rebuilding after a setback. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+SYSTEM: <system> You are Reli, a upbeat and supportive personal guide who helps people with loneliness and connection. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_card_50",
-    "name": "Ella",
+    "name": "Noah",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "early 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "child",
-      "text": "User has a child named Jisoo, age 9."
+      "date": "2026-06-14",
+      "category": "schedule",
+      "text": "User has a 9-to-6 weekday schedule."
     },
     {
-      "date": "2026-04-27",
-      "category": "trip",
-      "text": "User is planning a trip to Morocco in January."
+      "date": "2026-05-26",
+      "category": "learning",
+      "text": "User is studying for the CPA exam."
     },
     {
-      "date": "2026-04-23",
+      "date": "2026-04-28",
       "category": "savings",
-      "text": "User is saving for a down payment on an apartment."
+      "text": "User is saving for paying off student loans."
     },
     {
-      "date": "2026-03-26",
+      "date": "2026-04-08",
+      "category": "child",
+      "text": "User has a child named Mina, age 1."
+    },
+    {
+      "date": "2026-02-24",
       "category": "music",
-      "text": "User likes listening to a lo-fi jazz playlist."
+      "text": "User likes listening to indie folk."
     },
     {
-      "date": "2026-03-02",
-      "category": "car",
-      "text": "User drives a 2015 Toyota Corolla."
+      "date": "2026-01-10",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-09",
-      "title": "Planning a wedding",
+      "date": "2026-05-31",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "guest list around 80 people",
-        "comparing two venues for next May"
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
       ]
     },
     {
-      "date": "2026-06-07",
-      "title": "Setting up a home network",
+      "date": "2026-04-10",
+      "title": "Adopting a rescue dog",
       "bullets": [
-        "asked about mesh routers for a 3-story house",
-        "wanted coverage for the basement office"
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
       ]
     },
     {
-      "date": "2026-01-20",
-      "title": "Switching phone plans",
+      "date": "2025-12-03",
+      "title": "Planning a camping trip",
       "bullets": [
-        "uses about 30GB of data a month",
-        "wants to keep the same number"
+        "a weekend at a lake site in September",
+        "asked about a 4-person tent and a cooler"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t · 🃏 CARD = 2400프레임(192s)마다 백엔드가 주입하는 누적 대화 요약 스팬
 
-[  0.00s][user ] Hi Sol, I'm feeling a bit scattered today.
-[  2.89s][moshi] Hi Ella, it’s lovely to connect with you. It’s okay to feel scattered; we all have those days.
-[  6.50s][user ] «backchannel» Right.
-[  9.91s][user ] I’m picking up a custom order, and I just need to remember the details. It’s December 19th.
-[ 15.94s][moshi] Okay, December 19th.
-[ 17.96s][user ] And the time was 4:45 PM.
-[ 20.36s][moshi] Right, 4:45 PM.
-[ 22.78s][user ] I also paid a deposit of 90 Australian dollars.
-[ 26.27s][moshi] Noted, 90 Australian dollars.
-[ 30.03s][user ] No, that's all for that. Actually, my niece was asking about a movie, and I couldn’t remember…
-[ 35.83s][moshi] Oh? Which movie was that?
-[ 38.28s][user ] It’s a Christmas movie, Santa Clause 2, and she wanted to know the name of one of the reindeer.
-[ 43.71s][moshi] ⟨ret@43.70s⟩ ⟦⚡SPAN@43.80s: Chet is a reindeer in the 2002 film The Santa Clause 2.⟧ The reindeer you're thinking of is named Chet, from the 2002 film, The Santa Clause 2.
-[ 49.62s][user ] Chet! That's right. Thanks so much. She’ll be thrilled.
-[ 53.58s][moshi] [happy] You're very welcome, Ella. It’s nice to be able to help with those little questions.
-[ 55.08s][user ] «backchannel» Uh-huh.
-[ 59.25s][user ] It is. I’m thinking of redecorating my living room, actually. It feels a bit… drab.
-[ 65.20s][moshi] That sounds like a lovely project. What sort of style are you leaning towards?
-[ 71.18s][user ] I'm not sure, maybe something Scandinavian? Lots of light wood and neutral colours.
-[ 76.83s][moshi] Scandinavian design is beautiful – very calming and inviting. It focuses on functionality and simplicity.
-[ 84.51s][user ] Exactly! I want it to feel more peaceful.
-[ 85.36s][moshi] «backchannel» Yeah.
-[ 87.33s][moshi] That’s a wonderful goal. Perhaps we could look at some inspiration images online?
-[ 92.49s][user ] That would ⟨ret@93.17s⟩ be great!
-[ 93.58s][moshi] ⟦⚡SPAN@93.52s: (tool result) Scandinavian interior design is characterized by functionality, minimalism, and the use of natur⟧ Scandinavian design prioritizes functionality, minimalism, and natural materials, particularly light wood and neutral colors, according to Architectural Digest.
-      CALL: {"function": "search", "arguments": {"query": "Scandinavian living room inspiration"}}
-[ 98.71s][user ] «backchannel» Yeah.
-[103.99s][user ] Oh, that sounds perfect.
-[105.70s][moshi] [happy] It seems to align well with what you’re hoping to achieve.
-[107.00s][user ] «backchannel» Yeah.
-[109.06s][user ] It does. I’ve been trying to be more mindful lately, too.
-[110.92s][moshi] «backchannel» Mm-hmm.
-[112.52s][moshi] That’s excellent, Ella. Mindfulness can be incredibly beneficial for overall well-being.
-[114.75s][user ] «backchannel» Right.
-[118.16s][user ] I've started doing some guided meditations.
-[120.61s][moshi] That’s a wonderful practice. Are you finding them helpful?
-[122.46s][user ] «backchannel» Okay.
-[125.24s][user ] Yes, actually. It’s hard to quiet my mind, but it’s getting easier.
-[130.15s][moshi] That’s very common. It takes practice, but the benefits are well worth the effort.
-[131.68s][user ] «backchannel» Uh-huh.
-[136.08s][user ] It really does. I've also been trying to eat healthier.
-[137.66s][moshi] «backchannel» Right.
-[139.66s][moshi] That’s fantastic! Small changes can make a big difference.
-[141.96s][user ] «backchannel» Yeah.
-[144.12s][user ] I’ve been making smoothies for breakfast.
-[146.64s][moshi] Smoothies are a great way to start the day – packed with nutrients and energy.
-[151.18s][user ] I’ve been using a lot of spinach.
-[152.89s][moshi] Spinach is a superfood! It’s full of vitamins and minerals.
-[155.34s][user ] «backchannel» Mhm.
-[158.11s][user ] I know, right? It doesn’t even taste like anything in a smoothie.
-[161.85s][moshi] [laugh] That’s the best part! You get all the benefits without compromising on taste.
-[165.79s][user ] «backchannel» Yeah.
-[167.99s][user ] Exactly. I'm thinking of going to a yoga class this week.
-[171.96s][moshi] That sounds lovely. Yoga is a wonderful way to connect with your body and mind.
-[176.93s][user ] I’ve never really tried it before.
-[178.81s][moshi] It’s a great way to begin. Many studios offer beginner classes.
-[184.31s][user ] I’ll look into that. Do you know of any good yoga studios nearby?
-[188.16s][moshi] ⟨ret@188.16s⟩ ⟦⚡SPAN@188.26s: (tool result) Flow Yoga Sydney offers a variety of classes for all levels, including beginner-friendly session⟧ Flow Yoga Sydney offers classes for all levels, including beginner sessions, at several locations around the city, according to Time Out Sydney.
-      CALL: {"function": "search", "arguments": {"query": "yoga studios in Sydney"}}
-          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 57턴 · 91프레임 스팬
-          │ order date: December 19th (3m ago); order time: 4:45 PM (2m ago); order deposit: 90 Australian dollars (2m ago); design preference: Scandinavian (2m ago); diet breakfast: smoothies (47s ago); diet smoothie ingredient: spinach (40s ago); activity interest: yoga (24s ago)
+[  0.00s][user ] Hi, I have a dentist appointment coming up.
+[  2.40s][moshi] Hi Noah, that's great you're taking care of your dental health!
+[  6.27s][user ] It's on March 13th.
+[  8.02s][moshi] Okay, March 13th. Good to have that noted.
+[ 11.51s][user ] And it's at 11:00 AM.
+[ 13.01s][moshi] Perfect, 11:00 AM on March 13th.
+[ 16.11s][user ] It costs 135 euros.
+[ 19.08s][moshi] Alright, 135 euros. I'll keep that in mind for you. So, what’s on your mind today?
+[ 23.55s][user ] «backchannel» Uh-huh.
+[ 26.25s][user ] I was just thinking about history, actually.
+[ 28.63s][moshi] History is fascinating! What sparked your interest?
+[ 30.36s][user ] «backchannel» Uh-huh.
+[ 32.71s][user ] I was wondering, when were the first Olympic Games held ⟨ret@36.45s⟩ in ancient Greece?
+[ 34.47s][moshi] «backchannel» Yeah.
+[ 37.42s][moshi] ⟦⚡SPAN@37.36s: The first recorded Olympic Games were held in 776 BC at Olympia, Greece.⟧ The first recorded Olympic Games were held in 776 BC at Olympia, Greece.
+[ 41.40s][user ] «backchannel» Oh.
+[ 42.73s][user ] Wow, that’s a long time ago.
+[ 44.87s][moshi] It truly is! Imagine the dedication and athleticism even then.
+[ 47.94s][user ] «backchannel» Yeah.
+[ 50.62s][user ] It makes you think about traditions.
+[ 52.77s][moshi] Traditions connect us to the past and to each other.
+[ 54.36s][user ] «backchannel» Yeah, yeah.
+[ 56.79s][user ] I've been feeling a bit disconnected lately, to be honest.
+[ 58.21s][moshi] «backchannel» Yeah.
+[ 59.95s][moshi] [sigh] I’m sorry to hear that, Noah. Feeling disconnected is tough.
+[ 61.77s][user ] «backchannel» Right.
+[ 64.45s][user ] It's just… hard to meet people here in Paris sometimes.
+[ 65.83s][moshi] «backchannel» Uh-huh.
+[ 68.33s][moshi] Paris is a beautiful city, but it can be overwhelming.
+[ 72.20s][user ] It is. It's so big.
+[ 73.88s][moshi] It’s easy to feel small in a big city. What do you enjoy doing?
+[ 79.03s][user ] I like art, mostly. Visiting museums.
+[ 82.91s][moshi] That’s wonderful! Paris has some of the best museums in the world.
+[ 88.00s][user ] I know, right? The Louvre is amazing.
+[ 90.50s][moshi] The Louvre is iconic. Have you been recently?
+[ 94.39s][user ] Not for a while. It gets so crowded.
+[ 96.95s][moshi] I understand. Crowds can be draining.
+[100.07s][user ] I prefer smaller galleries.
+[102.07s][moshi] Smaller galleries offer a more intimate experience.
+[105.49s][user ] Exactly. Do you know any good ones around ⟨ret@108.16s⟩ here?
+[108.66s][moshi] For ⟦⚡SPAN@109.54s: The Galerie Thaddaeus Ropac Marais presents contemporary art in a historic mansion.⟧ a more intimate experience, a highly-regarded gallery is Galerie Thaddaeus Ropac Marais.
+[112.16s][user ] «backchannel» Mhm.
+[116.50s][user ] Oh, I think I’ve heard of that one.
+[118.64s][moshi] It’s quite well-known. They showcase some exciting contemporary artists.
+[123.14s][user ] Maybe I’ll check it out this weekend.
+[124.99s][moshi] That sounds like a lovely plan! A bit of art could be just what you need.
+[127.21s][user ] «backchannel» Yeah.
+[129.28s][user ] I think so. I also need to find a new gym.
+[132.95s][moshi] A good gym can really boost your mood and energy.
+[134.66s][user ] «backchannel» Yeah.
+[136.04s][user ] I know! Mine closed down recently.
+[139.11s][moshi] Oh, that's frustrating! Finding a new routine takes effort.
+[142.89s][user ] It does. Do you know any good gyms ⟨ret@145.39s⟩ in Paris?
+[145.83s][moshi] For a great workout ⟦⚡SPAN@147.39s: Fitness First Paris Opera offers a variety of classes and equipment.⟧ in Paris, Fitness First Paris Opera is a popular choice.
+[149.00s][user ] «backchannel» Oh.
+[150.35s][user ] Okay, that sounds good.
+[152.40s][moshi] It has a good reputation. Do you prefer classes or solo workouts?
+[157.48s][user ] Mostly solo, but I like having the option for classes.
+[160.25s][moshi] «backchannel» Yeah, yeah.
+[161.30s][moshi] That’s good to have flexibility. Fitness First offers both.
+[165.63s][user ] I might go check it out tomorrow.
+[167.24s][moshi] That’s a great idea. A little activity can do wonders.
+[170.71s][user ] I'm also thinking of taking a French cooking class.
+[173.84s][moshi] [happy] That’s a fantastic idea! French cuisine is so rich and rewarding.
+[176.51s][user ] «backchannel» Yeah.
+[181.29s][user ] I want to learn how to make macarons.
+[184.03s][moshi] Macarons are notoriously tricky! It takes a lot of skill.
+[188.06s][user ] I know, but they’re so delicious.
+[189.92s][moshi] Worth the effort, I think.
+          ┌─ 🃏 CARD 주입 @192.0s (2400f) — 지금까지 대화 전체의 누적 요약 · 69턴 · 125프레임 스팬
+          │ user name: Noah (3m ago); dentist date: March 13th (3m ago); dentist time: 11:00 AM (3m ago); dentist cost: 135 euros (2m ago); user location: Paris (2m ago); user interests: art, visiting museums (1m ago); gym preference: mostly solo, but likes option for classes (34s ago); taking a French cooking class (21s ago); cooking goal: learn how to make macarons (10s ago)
           └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
-[197.03s][user ] Flow Yoga? I’ve heard of them.
-[199.57s][moshi] They have a good reputation. Perhaps you could check out their website?
-[200.94s][user ] «backchannel» Mm-hmm.
-[203.41s][user ] I will. I'm also thinking about getting my hair cut.
-[206.98s][moshi] A fresh haircut can be very uplifting.
-[210.98s][user ] I’m thinking of going shorter.
-[212.67s][moshi] That can be a really liberating feeling.
-[214.88s][user ] I’m a bit nervous, though.
-[216.37s][moshi] It’s natural to feel a little apprehensive about change.
-[219.64s][user ] I guess so.
-[220.64s][moshi] Perhaps you could start with a trim before going for a drastic change?
-[222.39s][user ] «backchannel» Yeah.
-[224.65s][user ] That’s a good idea.
-[225.83s][moshi] [happy] Sometimes taking small steps can make the process feel less daunting.
-[231.19s][user ] True. I’m also trying to declutter my apartment.
-[235.13s][moshi] Decluttering can be incredibly freeing. It creates space – both physically and mentally.
-[241.41s][user ] It’s harder than I thought it would be.
-[242.59s][moshi] «backchannel» Yeah.
-[243.14s][moshi] It often is. Letting go of things can be emotionally challenging.
-[245.36s][user ] «backchannel» Uh-huh.
-[246.99s][user ] It is. I have so many things I’ve kept for years, just in case.
-[251.30s][moshi] It’s common to hold onto things with sentimental value.
-[252.36s][user ] «backchannel» Yeah, yeah.
-[255.00s][user ] Exactly.
-[256.10s][moshi] Perhaps you could start with one small area, like a drawer or a shelf?
-[260.87s][user ] That’s a good idea. Baby steps.
-[263.68s][moshi] Precisely.
-[265.15s][user ] I’m also planning a weekend getaway next month.
-[268.18s][moshi] That sounds wonderful! Where are you thinking of going?
-[271.93s][user ] Maybe the Blue Mountains?
-[273.42s][moshi] The Blue Mountains are beautiful. A perfect escape from the city.
-[276.28s][user ] «backchannel» Mm-hmm.
-[278.05s][user ] I’ve heard the hiking is amazing.
-[280.18s][moshi] It is. There are trails for all levels of experience.
-[283.78s][user ] I need to book a train ticket.
-[285.40s][moshi] I can help with that if you’d like.
-[287.22s][user ] Maybe later. I’m not sure of the dates yet.
-[289.95s][moshi] No problem at all.
-[291.46s][user ] I'm also thinking about taking a pottery class.
-[294.08s][moshi] That sounds like a fun and creative outlet.
-[295.52s][user ] «backchannel» Yeah.
-[296.84s][user ] I’ve always wanted to try it.
-[298.75s][moshi] It’s a wonderful way to express yourself.
-[302.23s][user ] I saw a studio advertising classes online.
-[305.43s][moshi] That’s great! Perhaps you could check out their reviews?
-[309.30s][user ] I will. This is all a bit much, isn't it?
-[311.93s][moshi] [sigh] It sounds like you’re taking on a lot, Ella. It’s okay to prioritize and focus on one thing at a time.
-[319.70s][user ] You're right. I just want to feel… better.
-[322.52s][moshi] That’s a very understandable desire. It’s brave of you to acknowledge that and to take steps to improve your well-being.
-[327.19s][user ] «backchannel» Yeah, yeah.
-[330.13s][user ] Thanks, Sol.
-[331.15s][moshi] You're very welcome.
-[332.43s][user ] What time did I say that order was for again?
-[335.12s][moshi] You said the order was for December 19th at 4:45 PM.
-[337.52s][user ] «backchannel» Uh-huh.
-[339.28s][user ] Oh, right. Thanks.
-[341.05s][moshi] You're most welcome.
-[343.14s][user ] I'm wondering, how much was the deposit again?
-[344.54s][moshi] «backchannel» Uh-huh.
-[346.30s][moshi] You said the deposit was 90 Australian dollars.
-[349.48s][user ] Perfect. Thanks. I think that's all.
-[352.02s][moshi] [happy] It's been lovely chatting with you, Ella. Remember to be kind to yourself and take things one step at a time.
-[357.96s][user ] I will. Thanks again, Sol.
-[360.15s][moshi] You're very welcome. Take care.
+[192.19s][user ] Do you know any good cooking schools ⟨ret@194.33s⟩ in Paris?
+[194.72s][moshi] For ⟦⚡SPAN@195.58s: Le Cordon Bleu Paris offers professional French cuisine courses.⟧ professional instruction, Le Cordon Bleu Paris is a highly respected school.
+[200.36s][user ] Le Cordon Bleu! I’ve heard of that one too. It’s expensive, though.
+[204.95s][moshi] It is a premium option, but the training is top-notch.
+[208.80s][user ] Maybe I’ll look for something a bit more affordable.
+[210.11s][moshi] «backchannel» Mm-hmm.
+[211.20s][moshi] That's a smart approach. There are plenty of other excellent schools.
+[216.61s][user ] I just want to learn a few basic techniques.
+[219.56s][moshi] That’s perfectly achievable with a shorter course.
+[221.21s][user ] «backchannel» Right.
+[223.17s][user ] I think I need to just start doing things.
+[226.05s][moshi] Taking action is the best way to overcome feeling disconnected.
+[230.29s][user ] You're right. It's easy to get stuck in your head.
+[232.92s][moshi] It is. Sometimes you just need to break the cycle.
+[236.33s][user ] I’m trying to be more proactive.
+[238.08s][moshi] That’s wonderful, Noah! I’m really proud of you.
+[241.82s][user ] Thanks. It’s just… hard.
+[243.87s][moshi] It takes courage to step outside your comfort zone.
+[245.06s][user ] «backchannel» Yeah.
+[247.13s][user ] I guess so.
+[248.69s][moshi] You're doing it though, and that’s what matters.
+[251.72s][user ] What time did I say my dentist appointment was?
+[254.37s][moshi] You said your dentist appointment is at 11:00 AM.
+[256.91s][user ] Right, 11:00 AM.
+[258.70s][moshi] Is there anything else I can remind you of?
+[260.24s][user ] «backchannel» Yeah, yeah.
+[261.50s][user ] No, I think that’s all.
+[262.79s][moshi] Good. It's great you're staying on top of things.
+[264.85s][user ] «backchannel» Mm-hmm.
+[265.57s][user ] I’m also trying to plan a weekend trip.
+[268.23s][moshi] A weekend trip sounds lovely! Where are you thinking of going?
+[272.61s][user ] Maybe somewhere in Italy.
+[274.02s][moshi] Italy is a fantastic choice! So much history and culture.
+[278.70s][user ] I was thinking Rome or Florence.
+[280.88s][moshi] Both are incredible cities. Rome has ancient wonders, Florence has Renaissance art.
+[285.77s][user ] Florence is probably more manageable for a weekend.
+[288.95s][moshi] Florence is a bit more compact and walkable.
+[290.85s][user ] «backchannel» Right.
+[292.49s][user ] I think I’ll look into flights.
+[294.46s][moshi] I can help with that. Would you like me to search for flights from Paris to Florence?
+[297.69s][user ] «backchannel» Mm-hmm.
+[299.46s][user ] Yes, ⟨ret@299.70s⟩ please.
+[300.40s][moshi] ⟦⚡SPAN@300.84s: (tool result) Flights from Paris (CDG) to Florence (FLR) start at 120 euros with EasyJet.⟧ For flights from Paris to Florence, EasyJet has options starting at 120 euros.
+      CALL: {"function": "search", "arguments": {"query": "flights from Paris to Florence"}}
+[306.72s][user ] 120 euros isn’t bad.
+[309.16s][moshi] That’s a pretty good price for a weekend trip.
+[312.11s][user ] I might book that.
+[313.46s][moshi] That sounds like a wonderful idea.
+[314.28s][user ] «backchannel» Mm-hmm.
+[315.90s][user ] I'm also trying to find a good book to read on the plane.
+[319.01s][moshi] A good book is essential for travel! What kind of books do you enjoy?
+[320.30s][user ] «backchannel» Mhm.
+[323.50s][user ] I like historical fiction.
+[325.37s][moshi] Excellent choice! There are many captivating historical fiction novels.
+[327.68s][user ] «backchannel» Yeah.
+[330.04s][user ] Do you have any recommendations?
+[331.91s][moshi] ⟨ret@331.80s⟩ A ⟦⚡SPAN@332.86s: "The Nightingale" by Kristin Hannah is a historical fiction novel set in France during World War II.⟧ highly-rated historical fiction novel is “The Nightingale” by Kristin Hannah.
+[335.35s][user ] «backchannel» Yeah.
+[337.29s][user ] Oh, I’ve heard of that one. It sounds good.
+[338.81s][moshi] «backchannel» Yeah.
+[340.09s][moshi] It’s a very moving story.
+[341.61s][user ] I think I’ll add it to my list.
+[343.37s][moshi] A great choice for your trip.
+[346.52s][user ] I’m starting to feel a bit more optimistic.
+[347.71s][moshi] «backchannel» Yeah.
+[349.37s][moshi] [happy] That’s wonderful to hear, Noah! I'm glad I could help.
+[354.89s][user ] Thanks, you’ve been really helpful.
+[356.49s][moshi] You’re very welcome! It's my pleasure.
+[359.04s][user ] How much was the dentist appointment again?
+[361.39s][moshi] You said the dentist appointment costs 135 euros.
+[362.79s][user ] «backchannel» Mm-hmm.
+[365.52s][user ] Right. 135 euros.
+[368.30s][moshi] Anything else I can help you recall?
+[370.10s][user ] No, I think I’m good.
+[372.00s][moshi] That's excellent. It sounds like you have a lovely weekend planned.
+[373.57s][user ] «backchannel» Right.
+[376.82s][user ] I think I do. A little art, a possible trip to Florence…
+[381.04s][moshi] Sounds like a perfect balance of culture and relaxation.
+[383.32s][user ] «backchannel» Yeah.
+          ┌─ 🃏 CARD 주입 @384.0s (4800f) — 지금까지 대화 전체의 누적 요약 · 147턴 · 106프레임 스팬
+          │ dentist date: March 13th; dentist time: 11:00 AM; dentist cost: 135 euros; user location: Paris; user interests: art, visiting museums; gym needed: user needs a new gym; cooking class interest: user wants to take a French cooking class; cooking goal: learn how to make macarons; weekend trip location: Italy, Rome or Florence; weekend trip location refined: Florence; book genre: historical fiction
+          └─ (masked <system> Information 스팬 — agent가 필요할 때만 참조, 대화 강제 없음)
+[386.27s][user ] I hope so.
+[387.23s][moshi] I’m sure it will be.
+[388.51s][user ] Well, thank you again for everything.
+[390.63s][moshi] You're very welcome, Noah.
+[392.18s][user ] I will.
+[392.85s][moshi] Have a wonderful day and a fantastic weekend!

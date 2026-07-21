@@ -112,8 +112,8 @@
     34.99s  agent 발화 끝
     35.03s  user  발화 시작: But what do I do? Just… stop reaching out? That feels awful.
     39.61s  <ret> 발화 (turn8 첫 프레임)
-    39.91s  ⚡SPAN 주입 [d'=0.30s / d_lead=6.34s]: Reciprocity in relationships is a key component of maintaining healthy
     40.18s  agent 발화 시작: <ret> Healthy connections really depend on both people putti
+    40.21s  ⚡SPAN 주입 [d'=0.60s / d_lead=6.34s]: Reciprocity in relationships is a key component of maintaining healthy
     40.22s  user  발화 끝
     42.87s  user  발화 시작: Mm-hmm.
     43.51s  user  발화 끝
@@ -126,7 +126,7 @@
     59.33s  <ret> 발화 (turn13 첫 프레임)
     59.95s  agent 발화 시작: <ret> Research shows strong connections are important for we
     60.12s  user  발화 끝
-    60.14s  ⚡SPAN 주입 [d'=0.82s / d_lead=7.46s]: A study by the University of California, Berkeley, found that individu
+    60.39s  ⚡SPAN 주입 [d'=1.07s / d_lead=7.46s]: A study by the University of California, Berkeley, found that individu
     67.41s  agent 발화 끝
     67.41s  user  발화 시작: So… just find new friends? Easier said than done.
     70.97s  user  발화 끝

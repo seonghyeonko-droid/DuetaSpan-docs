@@ -83,7 +83,7 @@
      2.50s  <ret> 발화 (turn1 첫 프레임)
      2.74s  agent 발화 시작: <ret> 롤링 스톤즈의 천구백육십팔년 곡 "심파시 포 더 데블"의 베이스는 키스 리처드가 연주했어요.
      2.91s  user  발화 끝
-     3.88s  ⚡SPAN 주입 [d'=1.38s / d_lead=6.76s]: Keith Richards played bass on the Rolling Stones' 1968 song "Sympathy 
+     4.13s  ⚡SPAN 주입 [d'=1.63s / d_lead=6.76s]: Keith Richards played bass on the Rolling Stones' 1968 song "Sympathy 
      5.68s  user  발화 시작: 어어.
      6.50s  user  발화 끝
      9.51s  agent 발화 끝
