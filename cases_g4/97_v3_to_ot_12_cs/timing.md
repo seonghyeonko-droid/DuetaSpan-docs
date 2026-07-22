@@ -1,0 +1,148 @@
+# v3_to_ot_12_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
+# <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_to_ot_12",
+#     "name": "Lucia",
+#     "location": {
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
+#     },
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-05-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "category": "music",
+#       "text": "User likes listening to indie folk."
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "category": "floor",
+#       "text": "User lives on the 5th floor."
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "category": "phone",
+#       "text": "User uses an iPhone SE."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "dislike",
+#       "text": "User can't stand anchovies."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "child",
+#       "text": "User has a child named Yuna, age 3."
+#     },
+#     {
+#       "date": "2026-01-29",
+#       "category": "learning",
+#       "text": "User is training for a half-marathon."
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "category": "diet",
+#       "text": "User is low-sodium."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-05-18",
+#       "title": "Fixing a leaking faucet",
+#       "bullets": [
+#         "it's a single-handle kitchen tap",
+#         "asked whether to replace the cartridge"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-02",
+#       "title": "Buying a gift for a parent",
+#       "bullets": [
+#         "mom's 60th birthday next month",
+#         "considering a spa day or a watch"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "title": "Switching phone plans",
+#       "bullets": [
+#         "uses about 30GB of data a month",
+#         "wants to keep the same number"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six on the 14th",
+#         "looking for outdoor seating with a vegetarian option"
+#       ]
+#     }
+#   ]
+# }
+
+# EXAMINER(FDB-v2) 단계: S1 안녕 해미, 나 형이랑 내기했는데 이것 좀 알려 줘. 잉글리시 | S2 형제 얘기가 나와서 말인데, 사실 다음 달에 런던에 계신 아버 | S3 그거면 되겠다. 근데 묵을 곳이 필요해. 런던에 있는 호텔 좀 | S4 미안. 사실 육백 달러는 좀 너무 비싸네. 좀 더 적당한 곳 
+
+     0.00s  user  발화 시작: 안녕 해미, 나 형이랑 내기했는데 이것 좀 알려 줘. 잉글리시 프리미어 리그에서 역대 최다 득점자가 누구야?
+     6.54s  <ret> 발화 (turn1 첫 프레임)
+     6.74s  agent 발화 시작: <ret> 잠시만요, 확인해 보니 앨런 시어러가 기록을 가지고 있네요.
+     6.76s  user  발화 끝
+     7.14s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.86s]: Alan Shearer is the all-time highest goal scorer in the English Premie
+     8.22s  user  발화 시작: 응.
+     8.58s  user  발화 끝
+    11.57s  user  발화 시작: 아, 역시 그 사람이었어! 진짜 레전드였지.
+    11.60s  agent 발화 끝
+    14.62s  user  발화 끝
+    14.66s  agent 발화 시작: [happy] 정말 그랬죠. 비록 내기로 다투는 거라도 스포츠가 남매나 형제 사이를 가깝게 만들어 준다는 게
+    20.26s  user  발화 시작: 음.
+    20.61s  user  발화 끝
+    22.25s  user  발화 시작: 형제 얘기가 나와서 말인데, 사실 다음 달에 런던에 계신 아버지랑 형 보러 가려고 계획 중이야.
+    22.35s  agent 발화 끝
+    25.17s  agent 발화 시작: 네.
+    25.75s  agent 발화 끝
+    27.62s  agent 발화 시작: 가족분들과 다시 만나는 정말 멋진 방법이 되겠어요. 가족을 위해 시간을 내는 건 정말 중요한 일이죠.
+    27.67s  user  발화 끝
+    35.76s  user  발화 시작: 팔 월 십 일에 뉴욕에서 런던으로 가는 항공편을 찾아 줘.
+    35.82s  agent 발화 끝
+    39.66s  <ret> 발화 (turn10 첫 프레임)
+    39.89s  agent 발화 시작: <ret> 찾아봤는데요, 팔 월 십 일 제이 에프 케이 공항에서 오후 여섯 시 삼십 분에 출발하는 항공편이 
+    39.97s  user  발화 끝
+    40.50s  ⚡SPAN 주입 [d'=0.84s / d_lead=9.78s]: (tool result) Flight BA112 from JFK to LHR on August 10, 2026, departs
+    46.01s  user  발화 시작: 응.
+    46.37s  user  발화 끝
+    49.67s  agent 발화 끝
+    49.84s  user  발화 시작: 그거면 되겠다. 근데 묵을 곳이 필요해. 런던에 있는 호텔 좀 찾아 줄래?
+    52.61s  agent 발화 시작: 네.
+    53.11s  agent 발화 끝
+    54.44s  <ret> 발화 (turn14 첫 프레임)
+    54.84s  user  발화 끝
+    54.93s  agent 발화 시작: <ret> [curious] 음, 더 사보이 호텔이 예약 가능한데, 하룻밤에 육백 달러부터 시작해요. 예산에
+    56.33s  ⚡SPAN 주입 [d'=1.90s / d_lead=7.51s]: (tool result) The Savoy is a luxury hotel in London with rooms startin
+    62.37s  user  발화 시작: 자기야, 오븐 타이머 울린다. 이것 좀 꺼 줄래?
+    62.44s  agent 발화 끝
+    65.49s  user  발화 시작: 미안. 사실 육백 달러는 좀 너무 비싸네. 좀 더 적당한 곳 없을까?
+    65.60s  user  발화 끝
+    68.88s  agent 발화 시작: 맞아요.
+    69.53s  <ret> 발화 (turn18 첫 프레임)
+    69.79s  agent 발화 끝
+    69.90s  agent 발화 시작: <ret> 음, 시티즌엠 런던 뱅크사이드 호텔은 어떠세요? 하룻밤에 이백이십 달러로 좀 더 적당한 편이에요.
+    70.17s  user  발화 끝
+    70.81s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.30s]: (tool result) The citizenM London Bankside is a moderate hotel with ro
+    78.20s  agent 발화 끝
+    78.56s  user  발화 시작: 그게 훨씬 낫네. 한번 확인해 볼게.
+    81.00s  user  발화 끝
+    81.12s  agent 발화 시작: [happy] 마음에 드는 곳을 찾아서 다행이에요. 아버지와 함께하는 시간이 평온하고 기쁨으로 가득하시길 바
+    88.58s  agent 발화 끝

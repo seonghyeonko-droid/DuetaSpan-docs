@@ -1,0 +1,91 @@
+v3_rag_27_ko src=hotpotqa style=v1
+SYSTEM: <system> 당신은 이별 후 적응을 돕는 다정하고 사색적인 습관 코치, 크루낸입니다. 당신은 또한 정보 검색, 예약, 날씨, 알림, 길 안내 등 모든 일상적인 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_27",
+    "name": "라국",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-26",
+      "category": "trip",
+      "text": "User is planning a trip to Taiwan in March."
+    },
+    {
+      "date": "2026-05-14",
+      "category": "bloodtype",
+      "text": "User's blood type is AB+."
+    },
+    {
+      "date": "2026-05-03",
+      "category": "car",
+      "text": "User drives a 2015 Toyota Corolla."
+    },
+    {
+      "date": "2026-02-11",
+      "category": "partner",
+      "text": "User's partner is named Yuna."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Lebanese."
+    },
+    {
+      "date": "2026-01-31",
+      "category": "employer",
+      "text": "User works at an airline."
+    },
+    {
+      "date": "2026-01-26",
+      "category": "work",
+      "text": "User works as a paramedic."
+    },
+    {
+      "date": "2026-01-25",
+      "category": "diet",
+      "text": "User is keto."
+    },
+    {
+      "date": "2026-01-11",
+      "category": "show",
+      "text": "User is currently watching a nature documentary series."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-22",
+      "title": "Switching phone plans",
+      "bullets": [
+        "uses about 30GB of data a month",
+        "wants to keep the same number"
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot next Tuesday",
+        "prefers Dr. Han at Bright Smile Clinic"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 안녕하세요, 크루낸 님. 요즘 마음 정리를 하다가 문득 궁금한 게 생겼어요.
+[  4.61s][moshi] [happy] 안녕하세요. 어떤 게 궁금하신가요? 편하게 말씀해 주세요.
+[  8.57s][user ] 조던 민츠가 내부 고발한 내용이 언제 세상에 알려졌는지 ⟨ret@13.02s⟩ 기억나세요?
+[ 13.20s][moshi] 그 사건에 ⟦⚡SPAN@14.82s: Jordan Mintz's whistleblowing was publicized in October 2001.⟧ 대해 말씀드리자면, 공개된 시점은... 이천일년 시월이었습니다.
+[ 17.61s][user ] 아, 그렇군요. 알려주셔서 감사해요.

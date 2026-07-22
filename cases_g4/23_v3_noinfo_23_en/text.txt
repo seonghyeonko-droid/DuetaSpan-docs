@@ -1,0 +1,120 @@
+v3_noinfo_23_en src=mcp style=mcp_noinfo
+SYSTEM: <system> You are Sella, a practical and reassuring life coach who helps people with goal-setting and follow-through. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_noinfo_23",
+    "name": "Hugo",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "60s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-18",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-05-28",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-05-08",
+      "category": "learning",
+      "text": "User is learning Spanish."
+    },
+    {
+      "date": "2026-04-16",
+      "category": "phone",
+      "text": "User uses a Galaxy Z Flip."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Greek."
+    },
+    {
+      "date": "2026-03-13",
+      "category": "streaming",
+      "text": "User subscribes to Netflix and Spotify."
+    },
+    {
+      "date": "2026-02-18",
+      "category": "commute",
+      "text": "User drives about 40 minutes each way."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "anniversary",
+      "text": "User's anniversary is December 22."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-27",
+      "title": "Building a PC",
+      "bullets": [
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "title": "Studying for the TOEIC",
+      "bullets": [
+        "target score is 850",
+        "exam is in about six weeks"
+      ]
+    },
+    {
+      "date": "2025-12-07",
+      "title": "Booking a moving company",
+      "bullets": [
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey Sella, can you look up the weather for my birthday back on June twelfth, twenty twenty-four?
+[  3.43s][moshi] «backchannel» Yeah.
+[  6.53s][moshi] ⟨ret@6.20s⟩ [curious] Let me see... ⟦⚡SPAN@7.78s: (no information found)⟧ I'm sorry, I can't find weather records for a past date like that.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2024-06-12"}}
+[ 12.40s][user ] Oh, right. Well, I'm planning a trip to Phoenix this February. Can you find some hotels ⟨ret@18.01s⟩ there?
+[ 18.37s][moshi] I ⟦⚡SPAN@18.97s: (tool result) Desert Mirage Hotel, Moderate, 200 dollars per night; Saguaro Sands, Pricey, 450 dollars per nig⟧ found the Desert Mirage Hotel at a moderate two hundred dollars a night, and Saguaro Sands, which is pricier at four hundred fifty dollars.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Phoenix, AZ"}}
+[ 21.02s][user ] «backchannel» Yeah.
+[ 28.55s][user ] The Desert Mirage sounds perfect. I want to stay for four nights starting February twenty-eighth for three ⟨ret@36.46s⟩ rooms.
+[ 32.19s][moshi] «backchannel» Yeah.
+[ 36.70s][moshi] [happy] All ⟦⚡SPAN@37.75s: (tool result) Desert Mirage Hotel, 2025-02-28, Phoenix, AZ, HOT4-005701, confirmed⟧ set! Your reservation at the Desert Mirage Hotel is confirmed for February twenty-eighth. Your confirmation number is HOT four zero zero five seven zero one.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"place_name": "Desert Mirage Hotel", "check_in_date": "2025-02-28", "stay_length": 4, "location": "Phoenix, AZ", "number_of_rooms": "3"}}
+[ 40.20s][user ] «backchannel» Mhm.
+[ 46.60s][user ] Thanks. I should probably find some things to do while I'm there. Any landmarks?
+[ 48.20s][moshi] «backchannel» Yeah.
+[ 50.92s][moshi] ⟨ret@50.87s⟩ You ⟦⚡SPAN@51.61s: (tool result) Musical Instrument Museum, Desert Botanical Garden, Heard Museum⟧ should check out the Musical Instrument Museum, the Desert Botanical Garden, or the Heard Museum.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Phoenix, AZ", "category": "landmark"}}
+[ 53.72s][user ] «backchannel» Yeah.
+[ 57.25s][user ] That sounds like a great list. I'll need a car to get around—
+[ 61.84s][user ] Actually, are there any good restaurants near the Desert ⟨ret@65.53s⟩ Mirage Hotel?
+[ 66.05s][moshi] [happy] ⟦⚡SPAN@66.73s: (tool result) Cactus Grill, Moderate, American; Sizzle Southwestern, Pricey, Mexican⟧ Of course. There is the Cactus Grill, which is moderate and serves American food, and Sizzle Southwestern, a pricier Mexican spot.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Desert Mirage Hotel, Phoenix, AZ"}}
+[ 74.92s][user ] I'll try the Cactus Grill. Can you book a table for four people this February twenty-eighth at seven ⟨ret@81.51s⟩ p.m.?
+[ 81.84s][moshi] Done! You ⟦⚡SPAN@82.99s: (tool result) Cactus Grill, 2025-02-28, 19:00, 4 guests, confirmed⟧ have a table for four at Cactus Grill on February twenty-eighth at seven p.m.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Cactus Grill", "date": "2025-02-28", "time": "19:00", "guests": "4"}}
+[ 88.19s][user ] Perfect. Now, about that car rental. What's available in ⟨ret@92.09s⟩ Phoenix?
+[ 92.69s][moshi] I ⟦⚡SPAN@93.36s: (tool result) Toyota Camry, Budget, 50 dollars per day; Chevrolet Tahoe, Pricey, 120 dollars per day⟧ see a budget Toyota Camry for fifty dollars a day or a pricey Chevrolet Tahoe for one hundred twenty dollars.
+      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"location": "Phoenix, AZ", "date": "2025-02-28"}}
+[ 99.49s][user ] The Camry is fine. Book that for me for four days starting the ⟨ret@103.74s⟩ twenty-eighth.
+[104.05s][moshi] [happy] You're all set! ⟦⚡SPAN@105.74s: (tool result) Toyota Camry, Phoenix, AZ, 2025-02-28, 4 days, confirmed⟧ The Toyota Camry is reserved for you in Phoenix for four days starting February twenty-eighth.
+      CALL: {"function": "RentalCars_3_ReserveCar", "arguments": {"car_type": "Toyota Camry", "location": "Phoenix, AZ", "start_date": "2025-02-28", "days": 4}}

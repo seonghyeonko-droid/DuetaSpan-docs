@@ -1,0 +1,87 @@
+v3_rags_29_en src=nq_single style=rag_single
+SYSTEM: <system> You are Tulo, a steady and dependable well-being guide who helps people with everyday decisions and feelings. You can explain weighing pros and cons, choosing by your values, sleeping on a big choice. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rags_29",
+    "name": "Mason",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-27",
+      "category": "bloodtype",
+      "text": "User's blood type is AB-."
+    },
+    {
+      "date": "2026-05-02",
+      "category": "streaming",
+      "text": "User subscribes to Disney+ and YouTube Premium."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "home",
+      "text": "User's home address is 718 Rosewood Drive."
+    },
+    {
+      "date": "2026-04-16",
+      "category": "hobby",
+      "text": "User is into trail running."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "coffee",
+      "text": "User's usual coffee order is a caramel latte."
+    },
+    {
+      "date": "2026-01-29",
+      "category": "partner",
+      "text": "User's partner is named Ava."
+    },
+    {
+      "date": "2025-12-20",
+      "category": "trip",
+      "text": "User is planning a trip to Namibia in April."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-22",
+      "title": "Adopting a rescue dog",
+      "bullets": [
+        "looking at a 2-year-old Beagle mix",
+        "asked about crate training and vet costs"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
+      ]
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Buying a gift for a parent",
+      "bullets": [
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] What are those blue boxes…
+[  3.01s][user ] …you see at the ⟨ret@4.17s⟩ post office?
+[  4.43s][moshi] Those ⟦⚡SPAN@5.22s: The blue boxes at the post office are mail collection boxes.⟧ are mail collection boxes.

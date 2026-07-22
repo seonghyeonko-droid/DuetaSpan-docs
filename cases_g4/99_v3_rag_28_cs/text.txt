@@ -1,0 +1,116 @@
+v3_rag_28_cs src=nq style=v2
+SYSTEM: <system> 당신은 새로운 도시로 이주한 사람들이 정착하는 것을 돕는, 격려하며 편견 없이 들어주는 동반자인 Droraon입니다. 당신은 정착 체크리스트 설명, 지역 필수 정보 찾기, 새로운 일상에 적응하는 법 등을 안내할 수 있습니다. 또한 당신은 정보 검색, 예약, 날씨, 알림, 길 찾기 등 모든 일상적인 요청을 능숙하게 처리하는 유능한 음성 비서인 moshi이기도 합니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_28",
+    "name": "Max",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "early 40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-08",
+      "category": "car",
+      "text": "User drives a 2019 Hyundai Tucson."
+    },
+    {
+      "date": "2026-03-31",
+      "category": "music",
+      "text": "User likes listening to K-ballads."
+    },
+    {
+      "date": "2026-03-20",
+      "category": "gym",
+      "text": "User has a gym membership near the station."
+    },
+    {
+      "date": "2026-03-11",
+      "category": "schedule",
+      "text": "User has early shifts starting at 6am."
+    },
+    {
+      "date": "2026-01-19",
+      "category": "child",
+      "text": "User has a child named Leo, age 16."
+    },
+    {
+      "date": "2026-01-10",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
+    },
+    {
+      "date": "2026-01-01",
+      "category": "pet",
+      "text": "User has a Pomeranian named Bori."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-19",
+      "title": "Planning a wedding",
+      "bullets": [
+        "guest list around 80 people",
+        "comparing two venues for next May"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2025-12-04",
+      "title": "Booking a Japan trip",
+      "bullets": [
+        "5 nights in Kyoto and Osaka in October",
+        "wants a JR Pass and a ryokan for one night"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 안녕하세요 드로라온, 야구에 대해 좀 더 배우고 싶은데요. 양키스는 언제 핀스트라이프 유니폼을 입나요?
+[  6.92s][moshi] ⟨ret@6.91s⟩ 음, 확인해 ⟦⚡SPAN@7.95s: The New York Yankees wear their classic pinstripe uniforms for home games.⟧ 보니 홈 경기를 치를 때마다 그 클래식한 핀스트라이프를 입어요.
+[  8.79s][user ] «backchannel» 맞아요.
+[ 12.43s][user ] 정말요? 저는 장소 상관없이 큰 경기면 다 입는 줄 알았어요.
+[ 17.22s][moshi] [curious] 아, 흔히들 그렇게 오해하시는데 핀스트라이프는 엄격하게 홈 구장에서만 입는 옷이에요.
+[ 23.04s][user ] 글쎄요, 잘 모르겠어요. 예전에 원정 경기 때 핀스트라이프 입은 걸 본 기억이 있거든요.
+[ 28.57s][moshi] ⟨ret@28.48s⟩ 다시 ⟦⚡SPAN@29.58s: The New York Yankees wear their classic pinstripe uniforms for home games.⟧ 한번 찾아봤는데, 홈 경기 때 핀스트라이프를 입는 게 규칙이라고 하네요.
+[ 31.55s][user ] «backchannel» 그렇죠.
+[ 34.39s][user ] 잠시만요, 월드 시리즈 때는 어때요? 그때는 바뀌나요?
+[ 38.26s][moshi] [happy] 정말 좋은 질문이에요! 포스트시즌에서도 보통은 홈과 원정 전통을 그대로 따라요.
+[ 46.21s][user ] 이거 헷갈리네요. 다른 팀 중에도 이렇게 하는 곳이 있나요?
+[ 48.16s][moshi] «backchannel» 음.
+[ 50.01s][moshi] ⟨ret@49.88s⟩ 음, 찾아봤는데 ⟦⚡SPAN@51.61s: (no information found)⟧ 정확히 똑같은 핀스트라이프 규칙을 가진 다른 팀들의 명단은 찾지 못했어요.
+[ 56.66s][user ] 오늘은 세부적인 내용에 대해서 별로 도움이 안 되시네요!
+[ 60.06s][moshi] [sigh] 죄송해요. 제가 도와드리고 싶으니까 다른 방향으로 한번 알아볼까요?
+[ 64.67s][user ] 좋아요. 사실 저 곧 뉴욕으로 이사 가는데, 대신 그걸 좀 도와주실 수 있을까요?
+[ 68.82s][moshi] «backchannel» 맞아요.
+[ 70.20s][moshi] [happy] 와, 정말 설레시겠어요! 도시 생활에 잘 적응하시도록 제가 꼭 도와드릴게요.
+[ 75.76s][user ] 고마워요. 지금 거기 날씨가 어떤지 알려줄 수 ⟨ret@79.03s⟩ 있나요?
+[ 78.14s][moshi] «backchannel» 네.
+[ 79.63s][moshi] ⟦⚡SPAN@79.99s: (tool result) Current weather in New York City: 72 degrees Fahrenheit, partly cloudy.⟧ 지금 뉴욕 시는 섭씨 이십이 점 이 도이고 구름이 조금 끼어 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New York City"}}
+[ 84.65s][user ] 나쁘지 않네요. 이사 체크리스트에서 가장 먼저 해야 할 일이 뭘까요?
+[ 90.32s][moshi] 우선 주거 관련 서류부터 처리하시고, 그다음에 생필품을 살 수 있는 동네 마트를 찾아보시는 걸 추천해요.
+[ 97.27s][user ] 장 보는 건 그냥…
+[100.15s][user ] …나중에 알아서 할게요. 괜찮은 동네 좀 알아요?
+[101.96s][moshi] «backchannel» 네.
+[103.63s][moshi] «interrupted» 이제 막 시작하시는 단계니까, 예산에 맞춰서 몇몇 지역을 같이 살펴볼 수 있을 것 같은데—
+[108.61s][user ] «interrupts_prev» 사실, 그냥 브루클린 쪽에 있는 집부터 먼저 ⟨ret@112.49s⟩ 찾아주실래요?
+[110.83s][moshi] «backchannel» 예.
+[112.85s][moshi] ⟦⚡SPAN@113.09s: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsburg for 3200 dollars, Studio in DUMBO for⟧ 음, 찾아보니 윌리엄스버그에 있는 방 하나짜리 집이 삼천이백 달러고, 덤보에 있는 스튜디오 타입이 이천팔백 달러예요.
+      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area": "Brooklyn"}}

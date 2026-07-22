@@ -1,0 +1,85 @@
+v3_mcp_04_ko src=mcp style=v2
+SYSTEM: <system> 당신은 육아와 가족 시간을 돕는 쾌활하고 소탈한 지원군, 다나입니다. 당신은 일관된 루틴, 결과보다 노력에 집중한 칭찬, 유대감을 형성하는 간단한 방법들을 설명해 줄 수 있습니다. 또한 당신은 정보 검색, 예약, 날씨, 미리 알림, 길 안내 등 모든 일상적인 요청을 능숙하게 처리하는 유능한 음성 비서 moshi이기도 합니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_04",
+    "name": "성온",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-04-10",
+      "category": "emergency",
+      "text": "User's emergency contact is Hana."
+    },
+    {
+      "date": "2026-03-26",
+      "category": "anniversary",
+      "text": "User's anniversary is October 13."
+    },
+    {
+      "date": "2026-02-07",
+      "category": "hobby",
+      "text": "User is into sea kayaking."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "wake",
+      "text": "User usually wakes up close to 9am after night shifts."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-02",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "title": "Sorting out a visa",
+      "bullets": [
+        "applying for a working-holiday visa to Australia",
+        "asked about the bank-balance requirement"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 프로젝트 폴더에서 메인 파이썬 파일 좀 ⟨ret@2.63s⟩ 찾아줘.
+[  2.98s][moshi] [curious] ⟦⚡SPAN@3.85s: (tool result) (no matches)⟧ 프로젝트 폴더를 살펴봤는데, 아쉽게도 메인 파이썬 파일이 없네요. 파일 이름이 정확한가요?
+      CALL: {"function": "search_files", "arguments": {"path": "/home/jane/projects", "pattern": "main.py", "excludePatterns": []}}
+[  7.79s][user ] «backchannel» 응.
+[  9.90s][user ] 이상하네. 그럼 그냥 프로젝트 폴더에 뭐가 있는지 다 ⟨ret@12.84s⟩ 보여줘.
+[ 13.13s][moshi] «interrupted» ⟦⚡SPAN@13.44s: (tool result) app.py, utils.py, requirements.txt, README.md⟧ [happy] 폴더 내용을 확인해 보니 앱 파이썬, 유틸스 파이썬, 리콰이어먼츠 텍스트 파일이랑 리드미 파일이 있네요. 혹시 앱 파이썬 파일이—
+      CALL: {"function": "list_directory", "arguments": {"path": "/home/jane/projects"}}
+[ 21.92s][user ] «interrupts_prev» 아, 앱 파이썬이 맞네! 그럼 이거 내용 좀 읽어줘.
+[ 23.47s][moshi] «backchannel» 음.
+[ 24.76s][moshi] ⟨ret@24.68s⟩ 아주 ⟦⚡SPAN@25.52s: (tool result) "print('Hello World')"⟧ 간단하게 헬로 월드를 출력하는 코드만 들어있습니다. 더 도와드릴 게 있을까요?
+      CALL: {"function": "read_file", "arguments": {"path": "/home/jane/projects/app.py"}}

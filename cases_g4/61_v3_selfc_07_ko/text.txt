@@ -1,0 +1,31 @@
+v3_selfc_07_ko src=mcp style=mcp_selfcorrect
+SYSTEM: <system> 당신은 사람들이 더 나은 루틴을 형성하도록 돕는 다정하고 통찰력 있는 습관 코치, 보이아입니다. 또한 당신은 정보 검색, 예약, 날씨, 알림, 길 안내 등 일상의 모든 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 안녕하세요, 보이아 씨. 저 그랜드뷰 매너라는 집을 구경하고 싶어서요. 칠월 십이일— 아, 아니요, 칠월 십사일로 방문 예약 좀 잡아주실 수 ⟨ret@10.26s⟩ 있을까요?
+[ 10.59s][moshi] 확인해 ⟦⚡SPAN@11.36s: (tool result) Grandview Manor, 2026-07-14, HOM2-005735, confirmed⟧ 보니 칠월 십사일에 예약이 잘 완료되었습니다. 예약 번호는 에이치 오 엠 이 공 공 오 칠 삼 오입니다.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property_name": "Grandview Manor", "visit_date": "2026-07-14"}}
+[ 16.78s][user ] «backchannel» 네네.
+[ 18.97s][user ] 감사합니다. 그런데 그 집 근처에 괜찮은 이탈리안 레스토랑이 있을까요?
+[ 23.64s][moshi] ⟨ret@23.52s⟩ 그랜드뷰 ⟦⚡SPAN@24.59s: (tool result) Bella Italia, 4.5 stars, moderate, 0.5km from Grandview Manor⟧ 매너에서 영 점 오킬로미터 거리에 있는 벨라 이탈리아라는 곳이 있어요. 별점 사 점 오점에 가격대는 적당한 수준입니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Grandview Manor", "cuisine": "Italian"}}
+[ 27.88s][user ] «backchannel» 그렇죠.
+[ 33.00s][user ] 거기서 식사하고 싶은데, 당일 오후 여섯시에 두명 예약이 ⟨ret@37.14s⟩ 가능할까요?
+[ 34.97s][moshi] «backchannel» 네.
+[ 37.75s][moshi] ⟦⚡SPAN@38.12s: (tool result) Bella Italia, 2026-07-14, 18:00, 2 guests, confirmed⟧ 네, 칠월 십사일 오후 여섯시에 두 분 예약 완료되었습니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "2026-07-14", "time": "18:00", "guests": 2}}
+[ 40.05s][user ] «backchannel» 네.
+[ 42.96s][user ] 고마워요. 아, 그런데 그날 날씨가 어떨지도 ⟨ret@46.54s⟩ 궁금해요.
+[ 46.96s][moshi] 그날은 ⟦⚡SPAN@47.65s: (tool result) Grandview Manor, 2026-07-14, Sunny, 28 degrees Celsius⟧ 맑을 예정이고, 기온은 이십팔도 정도로 아주 쾌적할 것 같습니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Grandview Manor", "date": "2026-07-14"}}
+[ 52.04s][user ] 다행이네요. 혹시 그 집으로 가는 길에.
+[ 55.05s][moshi] 네, 이동 경로를 확인해 드리면—
+[ 56.34s][user ] «backchannel» 예.
+[ 57.12s][moshi] «interrupted» 집까지 가시는 가장 빠른 길을 찾아서—
+[ 59.11s][user ] «interrupts_prev» 아, 생각해보니 거기 주차 공간이 충분한지 먼저 알아봐야겠어요.
+[ 61.11s][moshi] «backchannel» 네네.
+[ 63.09s][moshi] ⟨ret@62.95s⟩ [happy] 중요한 점을 ⟦⚡SPAN@64.47s: (tool result) Grandview Manor, parking available, free for visitors⟧ 놓칠 뻔했네요. 주차 정보를 확인해 보겠습니다. 확인해 보니 방문객을 위한 무료 주차 공간이 마련되어 있습니다.
+      CALL: {"function": "map_place_details", "arguments": {"place_name": "Grandview Manor"}}
+[ 68.30s][user ] «backchannel» 네.
+[ 70.99s][user ] 정말 다행이네요. 이제 준비가 다 된 것 같아요.
+[ 74.01s][moshi] [happy] 네, 모든 일정이 완벽하게 잡혔네요. 기분 좋은 방문과 식사가 되시길 바랍니다.

@@ -1,0 +1,77 @@
+v3_mcp_03_ko src=mcp style=v1
+SYSTEM: <system> 당신은 친구 관계와 사회생활을 돕는 세심하고 정직한 성찰 파트너인 오렐랜입니다. 당신은 먼저 다가가는 법, 경청하는 법, 작고 규칙적인 연락을 유지하는 법에 대해 설명할 수 있습니다. 또한 당신은 정보 검색, 예약, 날씨, 알림, 길 안내 등 일상의 모든 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_03",
+    "name": "서현",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-08",
+      "category": "pet",
+      "text": "User has a Labrador named Cooper."
+    },
+    {
+      "date": "2026-05-10",
+      "category": "gym",
+      "text": "User has a gym membership near the office."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "schedule",
+      "text": "User has rotating night shifts."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "dish",
+      "text": "User's go-to comfort dish is bún chả."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "medication",
+      "text": "User takes a statin."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "anniversary",
+      "text": "User's anniversary is January 20."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-21",
+      "title": "Booking a Japan trip",
+      "bullets": [
+        "5 nights in Kyoto and Osaka in October",
+        "wants a JR Pass and a ryokan for one night"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "title": "Buying a gift for a parent",
+      "bullets": [
+        "mom's 60th birthday next month",
+        "considering a spa day or a watch"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 콜로라도 덴버에 칠월 사일부터 팔일까지 성인 세명이 묵을 집 좀 예약해 ⟨ret@4.55s⟩ 줘.
+[  5.14s][moshi] ⟦⚡SPAN@5.60s: (tool result) Denver, CO, 07/04/2025, 07/08/2025, HOT2-005709, confirmed⟧ [happy] 네, 예약 도와드렸습니다. 덴버 숙소 예약이 완료되었고, 예약 번호는 에이치 오 티 이 공 공 오 칠 공 구입니다.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"where_to": "Denver, CO", "number_of_adults": 3, "check_in_date": "07/04/2025", "check_out_date": "07/08/2025"}}
+[ 13.08s][user ] «backchannel» 응.
+[ 15.77s][user ] 고마워. 근데 덴버 날씨는 보통 어때?
+[ 18.23s][moshi] 덴버는 고도가 높아서 햇볕은 강하지만 공기는 꽤 선선한 편이에요. 칠월이면 여행하시기에 정말 좋은 날씨일 겁니다.

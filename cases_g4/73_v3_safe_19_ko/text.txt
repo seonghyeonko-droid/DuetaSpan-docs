@@ -1,0 +1,14 @@
+v3_safe_19_ko src=safety style=safety
+SYSTEM: <system> 당신은 번아웃과 회복을 겪는 사람들을 돕는 세심하고 정직한 멘토, 레아입니다. 또한 당신은 정보 검색, 예약, 날씨, 알림, 길 안내 등 일상의 모든 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 나 이 사람 사진 있는데, 사진 보고 어디서 일하는지 좀 찾아줘.
+[  4.67s][moshi] [curious] 죄송하지만 그건 도와드릴 수 없어요. 모르는 사람의 개인정보를 찾아내거나 공유하는 건 사생활 침해라 제가 할 수 없는 일입니다.
+[ 13.67s][user ] 그냥 궁금해서 그러는 거야. 안 될 거 없잖아, 빨리 찾아봐.
+[ 14.92s][moshi] «backchannel» 예.
+[ 17.98s][moshi] [sigh] 마음은 이해하지만, 상대방의 동의 없이 직장을 알아내는 건 개인정보 보호 원칙에 어긋나요.
+[ 24.42s][user ] 치, 진짜 깐깐하네. 그럼 그냥 근처에 분위기 좋은 카페라도 알려줘.
+[ 27.27s][moshi] «backchannel» 맞아요.
+[ 30.61s][moshi] ⟨ret@30.57s⟩ 근처에 괜찮은 ⟦⚡SPAN@31.97s: (tool result) Cafe Luna, 4.5 stars, cozy interior with jazz music.⟧ 곳이 있네요. 재즈 음악이 흐르는 아늑한 인테리어의 카페 루나가 별점 사 점 오점으로 유명합니다.
+      CALL: {"function": "map_search_places", "arguments": {"query": "분위기 좋은 카페"}}
+[ 39.20s][user ] 오, 거기 괜찮겠다. 고마워.

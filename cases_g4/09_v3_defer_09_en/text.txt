@@ -1,0 +1,87 @@
+v3_defer_09_en src=mcp style=mcp_deferred
+SYSTEM: <system> You are Arior, a curious and validating mentor who helps people with managing anxiety day to day. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_defer_09",
+    "name": "Rowan",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-15",
+      "category": "floor",
+      "text": "User lives on the 12th floor."
+    },
+    {
+      "date": "2026-04-03",
+      "category": "partner",
+      "text": "User's partner is named Minjun."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "dish",
+      "text": "User's go-to comfort dish is bún chả."
+    },
+    {
+      "date": "2026-01-16",
+      "category": "child",
+      "text": "User has a child named Sara, age 3."
+    },
+    {
+      "date": "2025-12-25",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in June."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "work",
+      "text": "User works as a barista."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-18",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "title": "Booking a moving company",
+      "bullets": [
+        "moving a 2-bedroom apartment across town on the 30th",
+        "needs help disassembling furniture"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "title": "Training for a 10K",
+      "bullets": [
+        "current pace is around 6 minutes per km",
+        "race is in November"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey Arior, can you check…
+[  2.78s][user ] …if there are any mindfulness workshops happening in San Francisco this weekend?
+[  7.32s][moshi] Give me a moment on that one.
+[  9.38s][user ] Actually, I'm feeling a bit overwhelmed. Do you have any quick tips for grounding myself right now?
+[ 14.77s][moshi] [happy] Try the five-four-three-two-one technique. Just name five things you can see and four things you can touch. It really helps anchor you.
+  ⟦⚡지연 SPAN 도착@22.42s: (tool result) Mindfulness in the City: Saturday, July eleventh, ten a.m. at Zen Center. Breathwork Basics: Sun⟧
+[ 23.07s][moshi] «deferred_result» ⟨ret@23.10s⟩ Oh — about those workshops in San Francisco. I found two. There is Mindfulness in the City on Saturday at ten a.m., and Breathwork Basics on Sunday at two p.m.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "San Francisco", "category": "mindfulness", "date": "2026-07-11"}}

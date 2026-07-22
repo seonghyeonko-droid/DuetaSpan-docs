@@ -1,0 +1,107 @@
+v3_chain_06_ko src=mcp style=mcp_chained
+SYSTEM: <system> 당신은 육아와 가족 시간으로 고민하는 사람들을 돕는 신중하고 통찰력 있는 상담사 젤랄입니다. 당신은 일관된 루틴, 결과보다 노력에 대한 칭찬, 유대감을 형성하는 간단한 방법들을 설명할 수 있습니다. 또한 당신은 정보 검색, 예약, 날씨, 미리 알림, 길 안내 등 일상의 모든 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_chain_06",
+    "name": "노아",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "late 40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-11",
+      "category": "coffee",
+      "text": "User's usual coffee order is a caramel latte."
+    },
+    {
+      "date": "2026-04-26",
+      "category": "streaming",
+      "text": "User subscribes to Apple Music and Coupang Play."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "home",
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
+    },
+    {
+      "date": "2026-03-11",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-02-16",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in July."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "music",
+      "text": "User likes listening to a lo-fi jazz playlist."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "wake",
+      "text": "User usually wakes up around 7:30am."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-03",
+      "title": "Training for a 10K",
+      "bullets": [
+        "current pace is around 6 minutes per km",
+        "race is in November"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "title": "Choosing a laptop",
+      "bullets": [
+        "budget around 1.8M won",
+        "needs it for video editing and light gaming"
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "title": "Building a PC",
+      "bullets": [
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 시안 종루에서 회민가까지 자전거로 얼마나 걸려? ⟨ret@3.84s⟩
+[  4.14s][moshi] 자전거로 ⟦⚡SPAN@5.06s: (tool result) Distance: 1.2 km, Duration: 6 minutes, Route: North via South Street.⟧ 가시면 금방 도착하시겠어요. 거리는 일 점 이 킬로미터고, 시간은 육분 정도 걸립니다. 천천히 풍경 보면서 가기 딱 좋은 거리네요.
+      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Xi'an Bell Tower", "destination": "Muslim Quarter"}}
+[  7.32s][user ] «backchannel» 어어.
+[ 14.47s][user ] 생각보다 가깝네. 거기 근처에 괜찮은 식당 있을까?
+[ 18.93s][moshi] ⟨ret@18.84s⟩ 회민가 ⟦⚡SPAN@19.74s: (tool result) Restaurants in Muslim Quarter: Yangrou Paomo (Moderate, 4.5 stars), Biang Biang Noodles (Budget,⟧ 쪽에는 맛집이 정말 많죠. 양로우 파오모는 가격대가 중간 정도에 별점 사 점 오점이고, 비앙비앙면은 저렴한 편에 별점 사 점 이점입니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Muslim Quarter, Xi'an"}}
+[ 27.10s][user ] «backchannel» 응.
+[ 29.68s][moshi] «interrupted» [happy] 두 곳 다 유명한 곳인데, 혹시 더 끌리는—
+[ 31.72s][user ] «interrupts_prev» 양로우 파오모 여기로 예약할 수 있어?
+[ 34.37s][moshi] ⟨ret@34.30s⟩ 오늘 ⟦⚡SPAN@35.54s: (tool result) Reservation confirmed for Yangrou Paomo at 19:00 today.⟧ 열아홉시로 양로우 파오모 예약이 완료되었습니다.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Yangrou Paomo", "time": "19:00"}}
+[ 35.80s][user ] «backchannel» 그치.
+[ 37.98s][user ] 고마워!
+[ 39.03s][moshi] [happy] 별말씀을요. 가족분들과 함께 즐거운 식사 시간 되시길 바랍니다.

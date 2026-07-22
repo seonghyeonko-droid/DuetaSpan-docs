@@ -1,0 +1,99 @@
+v3_rags_30_ko src=nq_single style=rag_single
+SYSTEM: <system> 당신은 새로운 도시로 이주한 사람들이 잘 정착할 수 있도록 돕는, 격려심 많고 비판적이지 않은 웰니스 코치 코라온입니다. 당신은 정착 체크리스트 설명, 지역 필수 시설 찾기, 새로운 일상에 적응하는 법 등을 안내할 수 있습니다. 또한 당신은 정보 검색, 예약, 날씨, 알림, 길 안내 등 모든 일상적인 요청을 능숙하게 처리하는 유능한 음성 비서 moshi이기도 합니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rags_30",
+    "name": "서재",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "late 40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-11",
+      "category": "bloodtype",
+      "text": "User's blood type is B+."
+    },
+    {
+      "date": "2026-05-08",
+      "category": "home",
+      "text": "User's home address is 부산 수영구 광안동 210-3."
+    },
+    {
+      "date": "2026-03-15",
+      "category": "coffee",
+      "text": "User's usual coffee order is black drip coffee."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "dislike",
+      "text": "User can't stand durian."
+    },
+    {
+      "date": "2026-01-19",
+      "category": "streaming",
+      "text": "User subscribes to Disney+ and YouTube Premium."
+    },
+    {
+      "date": "2026-01-11",
+      "category": "floor",
+      "text": "User lives on the 8th floor."
+    },
+    {
+      "date": "2026-01-08",
+      "category": "allergy",
+      "text": "User is allergic to latex."
+    },
+    {
+      "date": "2025-12-09",
+      "category": "trip",
+      "text": "User is planning a trip to Peru in January."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-11",
+      "title": "Renovating the bathroom",
+      "bullets": [
+        "budget of 6M won",
+        "wants a walk-in shower instead of a tub"
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "title": "Selling a used bike",
+      "bullets": [
+        "a 3-year-old road bike",
+        "asking around 400k won"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "title": "Building a PC",
+      "bullets": [
+        "budget around 2M won for gaming",
+        "torn between two GPUs"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 영화 울프 오브 월 스트리트는 ⟨ret@2.72s⟩ 어디서 촬영했어?
+[  3.33s][moshi] 촬영지는 ⟦⚡SPAN@4.27s: The movie The Wolf of Wall Street was filmed in Ardsley, New York.⟧ 뉴욕의 아즈슬리입니다.

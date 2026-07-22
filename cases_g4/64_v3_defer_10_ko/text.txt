@@ -1,0 +1,105 @@
+v3_defer_10_ko src=mcp style=mcp_deferred
+SYSTEM: <system> 당신은 새로운 직장 생활을 시작하는 사람들을 돕는, 격려심 많고 비판적이지 않은 지지적인 조언자 도라미입니다. 당신은 또한 정보 검색, 예약, 날씨, 미리 알림, 길 안내 등 일상의 모든 요청을 능숙하게 처리하는 유능한 음성 비서 moshi입니다. 위의 역할은 당신의 따뜻한 태도와 가장 잘 아는 분야일 뿐, 당신이 돕는 유일한 영역은 아닙니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_defer_10",
+    "name": "도훈",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-17",
+      "category": "music",
+      "text": "User likes listening to K-ballads."
+    },
+    {
+      "date": "2026-04-07",
+      "category": "wake",
+      "text": "User usually wakes up around 6am."
+    },
+    {
+      "date": "2026-03-06",
+      "category": "emergency",
+      "text": "User's emergency contact is Tobias."
+    },
+    {
+      "date": "2026-02-17",
+      "category": "airline",
+      "text": "User usually flies with United."
+    },
+    {
+      "date": "2026-02-14",
+      "category": "partner",
+      "text": "User's partner is named Daniel."
+    },
+    {
+      "date": "2026-02-04",
+      "category": "coffee",
+      "text": "User's usual coffee order is black drip coffee."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "car",
+      "text": "User drives a 2019 Hyundai Tucson."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "dish",
+      "text": "User's go-to comfort dish is bibimbap."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-19",
+      "title": "Comparing health insurance",
+      "bullets": [
+        "self-employed and needs dental",
+        "wants a low deductible"
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "title": "Meal-prep planning",
+      "bullets": [
+        "wants high-protein lunches under 600 calories",
+        "avoiding dairy this month"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 나 타임스퀘어까지 가야 하는데, 혼자 탈 수 있는 풀 차량으로 하나 불러줘.
+[  4.35s][moshi] 그건 잠시만요, 확인해 볼게요.
+[  6.36s][user ] 아, 그리고 오늘 뉴욕 날씨는 어때?
+[  9.39s][moshi] ⟨ret@9.29s⟩ [happy] ⟦⚡SPAN@10.19s: (tool result) New York, New York, 22 degrees Celsius, Partly Cloudy⟧ 오늘은 구름이 조금 끼어 있고, 기온은 이십이도예요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New York, New York"}}
+[ 14.31s][user ] 생각보다 선선하네. 근처에 괜찮은 식당 ⟨ret@17.62s⟩ 있을까?
+[ 18.09s][moshi] [curious] ⟦⚡SPAN@18.76s: (tool result) Joe's Pizza, Budget, 4.5 stars; The Roast Hall, Moderate, 4.2 stars⟧ 가벼운 식사를 원하시면 조스 피자라는 저렴한 곳이 있고, 조금 더 제대로 드시려면 더 로스트 홀이라는 적당한 가격대의 식당이 있어요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Times Square, New York, New York"}}
+[ 20.96s][user ] «backchannel» 응.
+[ 27.00s][user ] 그냥 피자가 낫겠다. 근데…
+[ 30.57s][user ] …거기까지 가는 데 얼마나 걸리.
+[ 32.23s][moshi] «interrupted» 피자 좋죠! 타임스퀘어 쪽은 항상 북적여서—
+[ 34.60s][user ] «interrupts_prev» 아, 근데 지금 바로 출발할 수 있는 차가 있는지부터 알려줘.
+[ 36.47s][moshi] «backchannel» 맞아요.
+[ 38.30s][moshi] [happy] 네, 당연하죠. 제가 바로 확인해 드릴게요.
+  ⟦⚡지연 SPAN 도착@39.71s: (tool result) Times Square, New York, New York, Pool, RID2-005714, confirmed⟧
+[ 40.60s][moshi] «deferred_result» ⟨ret@40.60s⟩ 아, 아까 요청하신 차량 호출 결과가 나왔어요. 타임스퀘어행 풀 차량 예약이 완료되었습니다. 예약 번호는 알 아이 디 이 공 공 오 칠 일 사예요.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"destination": "Times Square, New York, New York", "number_of_seats": 1, "ride_type": "Pool"}}
+[ 47.07s][user ] «backchannel» 그래.
+[ 51.04s][user ] 오, 다행이다. 고마워!
+[ 52.93s][moshi] [happy] 별말씀을요. 새로운 시작을 앞두고 계신 만큼 오늘 하루가 정말 기분 좋게 흘러가면 좋겠어요.
+[ 56.52s][user ] «backchannel» 응.
+[ 59.33s][user ] 응, 덕분에 든든해.
+[ 61.39s][moshi] 언제든 도움이 필요하시면 말씀해 주세요. 조심히 가세요!

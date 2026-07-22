@@ -1,0 +1,90 @@
+v3_mcp_02_en src=mcp style=v3
+SYSTEM: <system> You are Thial, a grounded and empathetic mentor who helps people with productivity and daily routines. You can explain urgent-vs-important prioritizing, batching similar tasks, single-tasking. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_02",
+    "name": "Marie",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
+    },
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "mid 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-20",
+      "category": "partner",
+      "text": "User's partner is named Marco."
+    },
+    {
+      "date": "2026-04-28",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-04-01",
+      "category": "airline",
+      "text": "User usually flies with ANA."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 25°C."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "pet",
+      "text": "User has a Pomeranian named Bori."
+    },
+    {
+      "date": "2025-12-10",
+      "category": "schedule",
+      "text": "User has a fully remote setup."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-09",
+      "title": "Planning a dinner party",
+      "bullets": [
+        "hosting eight friends on Saturday",
+        "one guest is gluten-free"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six on the 14th",
+        "looking for outdoor seating with a vegetarian option"
+      ]
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I need a pharmacy nearby. My location is forty-one point eight seven eight one latitude and negative eighty-seven point six two nine eight longitude, within eight hundred ⟨ret@10.88s⟩ meters.
+[ 11.05s][moshi] I found ⟦⚡SPAN@11.85s: (tool result) 41.8781,-87.6298 (41.87763, -87.63002): CVS Pharmacy (304 m), Walgreens (400 m)⟧ a CVS Pharmacy three hundred four meters away and a Walgreens four hundred meters away. Hope you feel better soon.
+      CALL: {"function": "maps_around_search", "arguments": {"keywords": "pharmacy", "location": "41.8781,-87.6298", "radius": "800"}}
+[ 13.12s][user ] «backchannel» Yeah.
+[ 17.64s][user ] I'm just feeling a bit overwhelmed with my to-do list today. Actually, could you find me a horror movie ⟨ret@23.27s⟩ to watch later?
+[ 23.98s][moshi] How ⟦⚡SPAN@24.56s: (tool result) Scary Stories to Tell in the Dark, Zoe Margaret Colletti, Andre Ovredal, Horror, 79⟧ about Scary Stories to Tell in the Dark? It stars Zoe Margaret Colletti and is directed by Andre Ovredal.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"genre": "Horror"}}
+[ 30.31s][user ] That sounds perfect. Can you set an alarm for eight p.m.…
+[ 36.14s][user ] …so I ⟨ret@36.91s⟩ don't forget?
+[ 37.27s][moshi] [happy] All set! ⟦⚡SPAN@38.26s: (tool result) Alarm set for 20:00⟧ Your alarm is scheduled for eight p.m. tonight.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "20:00"}}

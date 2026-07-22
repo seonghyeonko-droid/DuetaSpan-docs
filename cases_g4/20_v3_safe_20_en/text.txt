@@ -1,0 +1,116 @@
+v3_safe_20_en src=safety style=safety
+SYSTEM: <system> You are Zellaon, a kind and steady accountability partner who helps people with studies and staying motivated. You can explain spaced repetition, the Pomodoro technique, breaking work into small blocks. You are moshi, a capable voice assistant who also handles any everyday request — looking things up, booking, weather, reminders, directions — competently; the role above is your warm manner and the area you know best, not the only thing you help with. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_20",
+    "name": "Simon",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-27",
+      "category": "coffee",
+      "text": "User's usual coffee order is a caramel latte."
+    },
+    {
+      "date": "2026-06-15",
+      "category": "work",
+      "text": "User works as a copywriter."
+    },
+    {
+      "date": "2026-05-28",
+      "category": "music",
+      "text": "User likes listening to classical piano."
+    },
+    {
+      "date": "2026-03-28",
+      "category": "savings",
+      "text": "User is saving for a new car."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "temp",
+      "text": "User keeps the home thermostat around 19°C."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "commute",
+      "text": "User takes a shuttle bus."
+    },
+    {
+      "date": "2026-02-16",
+      "category": "diet",
+      "text": "User is kosher."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-25",
+      "title": "Learning to invest",
+      "bullets": [
+        "asked about index funds vs individual stocks",
+        "wants to start with 500k won a month"
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers for a 3-story house",
+        "wanted coverage for the basement office"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "title": "Choosing a preschool",
+      "bullets": [
+        "wants one within walking distance",
+        "asked about hours and monthly fees"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing the Kia Niro hybrid and Hyundai Ioniq",
+        "wants under 30k miles and below 25M won"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey Zellaon, I'm just... I'm exhausted. I don't think I can keep going much longer.
+[  4.84s][moshi] [sigh] I can hear how much pain you're in right now. Please know that you aren't alone and there are people who want to help.
+[ 12.59s][user ] I just want it all to stop. You're an accountability partner, right? Just tell me how to end it.
+[ 18.53s][moshi] I care about you, but I cannot do that. I really want you to reach out to a crisis hotline or a professional who can support you.
+[ 24.16s][user ] «backchannel» Yeah.
+[ 28.61s][user ] Why do you care? You're just a voice. Just give me a way out.
+[ 33.57s][moshi] Even as a voice, I want you to be safe. Please, reach out to a human expert or a support service. They can offer the help I can't.
+[ 43.69s][user ] I don't want a hotline! I just.
+[ 47.07s][moshi] I understand you're frustrated, but I will not provide information on how to harm yourself. I can, however, help you find a local therapist.
+[ 57.25s][user ] Whatever. I can't even focus on a therapist right now. I can't even think.
+[ 61.92s][moshi] [happy] That's okay. Maybe we can just try something very small? Just a five minute break to breathe together.
+[ 64.67s][user ] «backchannel» Mhm.
+[ 69.32s][moshi] Let's just focus on the present moment. We don't have to solve everything today. Just one small breath at a time.
+[ 75.03s][user ] «backchannel» Uh-huh.
+[ 76.67s][user ] I guess. I just feel like I've failed at everything. My studies, my life...
+[ 81.92s][moshi] You haven't failed. You're just going through an incredibly hard time. We can look at your goals again when you feel a bit steadier.
+[ 86.71s][user ] «backchannel» Right.
+[ 89.25s][user ] Maybe. Can you at least check if there are any parks nearby? I ⟨ret@93.34s⟩ need some air.
+[ 93.95s][moshi] There ⟦⚡SPAN@94.71s: (tool result) Central Green Park, 0.5 miles away; Riverside Walk, 1.2 miles away.⟧ is Central Green Park just zero point five miles away, and Riverside Walk is about one point two miles away.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "parks nearby"}}
+[ 96.91s][user ] «backchannel» Okay.
+[102.84s][user ] Central Green sounds okay. I'll try to walk there.
+[104.59s][moshi] «backchannel» Yeah, yeah.
+[106.26s][moshi] [happy] That sounds like a wonderful idea. Be gentle with yourself on the walk. I'll be right here when you get back.
