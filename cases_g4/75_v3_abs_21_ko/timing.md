@@ -91,9 +91,9 @@
     23.40s  user  발화 시작: 고마워요. 아, 그리고 갑자기 궁금한 게 생겼는데, 힙합 영향을 받은 시카고 곡들의 베이스 라인은 뭐가 달랐
     27.70s  agent 발화 시작: 네네.
     28.81s  agent 발화 끝
-    31.19s  <ret> 발화 (turn10 첫 프레임)
+    30.88s  <ret> 발화 (turn10 첫 프레임)
+    31.48s  ⚡SPAN 주입 [d'=0.60s / d_lead=1.94s]: (no information found)
     31.77s  agent 발화 시작: <ret> 음, 좋은 질문이네요. 솔직히 그건 어디에도 기록이 없어서, 저도 답을 찾을 수가 없네요.
-    31.79s  ⚡SPAN 주입 [d'=0.60s / d_lead=1.94s]: (no information found)
     31.93s  user  발화 끝
     40.16s  agent 발화 끝
     40.73s  user  발화 시작: 아, 정말요? 의외네요. 그럼 그냥 넘어가죠.
@@ -103,10 +103,10 @@
     48.09s  user  발화 끝
     50.25s  user  발화 시작: 네. 일어나서 가벼운 스트레칭을 하고 싶은데, 집 근처에 요가 수업 같은 게 있을까요?
     50.42s  agent 발화 끝
-    55.59s  <ret> 발화 (turn15 첫 프레임)
+    55.65s  <ret> 발화 (turn15 첫 프레임)
     55.91s  agent 발화 시작: <ret> 근처에 괜찮은 곳이 하나 있네요. 영 점 오킬로미터 거리에 젠 요가 스튜디오가 있고, 아침 플로우
     55.95s  user  발화 끝
-    56.19s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.37s]: (tool result) Zen Yoga Studio, 0.5km away, offers morning flow classes
+    57.05s  ⚡SPAN 주입 [d'=1.39s / d_lead=2.37s]: (tool result) Zen Yoga Studio, 0.5km away, offers morning flow classes
     61.78s  user  발화 시작: 네.
     62.42s  user  발화 끝
     64.34s  agent 발화 시작: 가볍게 몸을 풀기에 딱 좋을 것 같아요.
@@ -115,18 +115,18 @@
     66.47s  user  발화 끝
     67.19s  user  발화 시작: 좋은 생각이에요! 혹시 내일 오전 일곱시에 예약이 가능한지 확인해 주시겠어요?
     67.26s  agent 발화 끝
-    72.88s  <ret> 발화 (turn20 첫 프레임)
+    72.45s  <ret> 발화 (turn20 첫 프레임)
     72.94s  agent 발화 시작: <ret> [happy] 네, 내일 일곱시로 예약 완료되었습니다.
     73.12s  user  발화 끝
-    74.42s  ⚡SPAN 주입 [d'=1.53s / d_lead=4.72s]: (tool result) Appointment confirmed for 2026-07-11 at 07:00.
+    73.14s  ⚡SPAN 주입 [d'=0.69s / d_lead=4.72s]: (tool result) Appointment confirmed for 2026-07-11 at 07:00.
     76.08s  user  발화 시작: 예.
     76.58s  user  발화 끝
     77.66s  agent 발화 끝
     78.37s  user  발화 시작: 감사합니다. 이제 완벽하네요. 아, 그런데 내일 날씨가 어떨까요? 비가 오면 가기 힘들 것 같아서요.
-    86.08s  <ret> 발화 (turn23 첫 프레임)
+    86.45s  <ret> 발화 (turn23 첫 프레임)
     86.58s  agent 발화 시작: <ret> 다행히 날씨는 아주 좋을 것 같아요. 칠월 십일일은 맑고, 최고 기온 이십팔도, 최저 기온 이십도
     86.67s  user  발화 끝
-    87.29s  ⚡SPAN 주입 [d'=1.21s / d_lead=3.76s]: (tool result) July 11, 2026: Sunny, high 28 degrees Celsius, low 20 de
+    87.05s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.76s]: (tool result) July 11, 2026: Sunny, high 28 degrees Celsius, low 20 de
     94.45s  user  발화 시작: 네네.
     95.13s  user  발화 끝
     96.53s  user  발화 시작: 다행이네요! 딘 덕분에 내일 아침이 기대돼요.

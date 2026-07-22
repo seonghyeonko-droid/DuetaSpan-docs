@@ -89,16 +89,16 @@
     11.28s  user  발화 시작: Thanks. Random question, but can an ACLs limit access to one
     12.73s  agent 발화 시작: Mm-hmm.
     13.55s  agent 발화 끝
+    15.15s  <ret> 발화 (turn5 첫 프레임)
     16.19s  user  발화 끝
-    16.50s  <ret> 발화 (turn5 첫 프레임)
+    16.37s  ⚡SPAN 주입 [d'=1.22s / d_lead=1.13s]: (no information found)
     16.70s  agent 발화 시작: <ret> Hmm, good question. Honestly, I can't find a reliable 
-    17.72s  ⚡SPAN 주입 [d'=1.22s / d_lead=1.13s]: (no information found)
     24.58s  agent 발화 끝
     26.18s  user  발화 시작: That's weird. Anyway, I want to take her out for dinner to a
-    31.61s  <ret> 발화 (turn7 첫 프레임)
+    31.73s  <ret> 발화 (turn7 첫 프레임)
     32.21s  agent 발화 시작: <ret> You've got Luigi's Bistro, which is moderate, and Past
     32.38s  user  발화 끝
-    33.15s  ⚡SPAN 주입 [d'=1.54s / d_lead=6.35s]: (tool result) Luigi's Bistro: Moderate price, 4.5 stars. Pasta Palace:
+    33.27s  ⚡SPAN 주입 [d'=1.54s / d_lead=6.35s]: (tool result) Luigi's Bistro: Moderate price, 4.5 stars. Pasta Palace:
     35.51s  user  발화 시작: Right.
     36.00s  user  발화 끝
     38.56s  agent 발화 끝
@@ -107,10 +107,10 @@
     41.64s  user  발화 시작: Luigi's sounds perfect. Can you book a table for two at seve
     43.74s  agent 발화 시작: Yeah.
     44.24s  agent 발화 끝
-    45.50s  <ret> 발화 (turn12 첫 프레임)
+    45.79s  <ret> 발화 (turn12 첫 프레임)
     45.90s  agent 발화 시작: <ret> All set! You're confirmed for two people at Luigi's Bi
     45.99s  user  발화 끝
-    46.80s  ⚡SPAN 주입 [d'=1.30s / d_lead=5.41s]: (tool result) Reservation confirmed for Luigi's Bistro at 7:00 PM for 
+    46.75s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.41s]: (tool result) Reservation confirmed for Luigi's Bistro at 7:00 PM for 
     49.99s  user  발화 시작: Yeah.
     50.43s  user  발화 끝
     51.30s  user  발화 시작: Great. I'm just worried she'll start an argument again.

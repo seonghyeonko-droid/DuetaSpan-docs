@@ -79,17 +79,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you locate a family counselor in Seattle, Washington who doesn't accept insurance?
-[  5.37s][moshi] ⟨ret@5.35s⟩ I searched for ⟦⚡SPAN@6.44s: (tool result) (no information found)⟧ family counselors in Seattle who don't take insurance, but unfortunately, no information was found. It's a bit of a hurdle, but we'll find a way.
+[  0.00s][user ] Can you locate a family counselor in Seattle, Washington who doesn't ⟨ret@4.06s⟩ accept insurance?
+[  5.37s][moshi] ⟦⚡SPAN@5.15s: (tool result) (no information found)⟧ I searched for family counselors in Seattle who don't take insurance, but unfortunately, no information was found. It's a bit of a hurdle, but we'll find a way.
       CALL: {"function": "Services_4_FindProvider", "arguments": {"city": "Seattle, WA", "type": "Family Counselor", "insurance_accepted": false}}
 [  8.87s][user ] «backchannel» Uh-huh.
-[ 15.87s][user ] That's useless. Why can't you just find someone who's highly rated regardless of the ⟨ret@20.82s⟩ insurance?
-[ 21.17s][moshi] I understand ⟦⚡SPAN@22.46s: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insurance. Northwest Healing: 4.5 stars, privat⟧ the frustration. Let's broaden the search. I found Seattle Family Wellness with four point eight stars, and Northwest Healing with four point five stars, which is private pay only.
+[ 15.87s][user ] That's useless. Why can't you just find someone who's highly rated regardless of the ⟨ret@20.80s⟩ insurance?
+[ 21.17s][moshi] I understand ⟦⚡SPAN@22.44s: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insurance. Northwest Healing: 4.5 stars, privat⟧ the frustration. Let's broaden the search. I found Seattle Family Wellness with four point eight stars, and Northwest Healing with four point five stars, which is private pay only.
       CALL: {"function": "Services_4_FindProvider", "arguments": {"city": "Seattle, WA", "type": "Family Counselor"}}
 [ 27.16s][user ] «backchannel» Nice.
-[ 33.25s][user ] Northwest Healing sounds better since I'm paying out of pocket. Can you book me an appointment there for next ⟨ret@38.64s⟩ Monday?
+[ 33.25s][user ] Northwest Healing sounds better since I'm paying out of pocket. Can you book me an appointment there for ⟨ret@38.52s⟩ next Monday?
 [ 36.12s][moshi] «backchannel» Mm-hmm.
-[ 38.96s][moshi] Taking ⟦⚡SPAN@39.53s: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.⟧ that first step is often the hardest part. You're all set. Your appointment at Northwest Healing is confirmed for Monday, July thirteenth, at ten AM.
+[ 38.96s][moshi] Taking that ⟦⚡SPAN@40.07s: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.⟧ first step is often the hardest part. You're all set. Your appointment at Northwest Healing is confirmed for Monday, July thirteenth, at ten AM.
       CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Northwest Healing", "date": "2026-07-13"}}
 [ 48.90s][user ] Wait, I just remembered I have a conflict at ten. Can you move it to two PM?
 [ 53.19s][moshi] «interrupted» Let me check if they can shift that for you—

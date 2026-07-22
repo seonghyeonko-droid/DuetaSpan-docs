@@ -108,12 +108,12 @@
     38.26s  agent 발화 시작: [happy] 정말 좋은 질문이에요! 포스트시즌에서도 보통은 홈과 원정 전통을 그대로 따라요.
     45.85s  agent 발화 끝
     46.21s  user  발화 시작: 이거 헷갈리네요. 다른 팀 중에도 이렇게 하는 곳이 있나요?
+    48.07s  <ret> 발화 (turn12 첫 프레임)
     48.16s  agent 발화 시작: 음.
     48.70s  agent 발화 끝
-    49.88s  <ret> 발화 (turn12 첫 프레임)
+    49.80s  ⚡SPAN 주입 [d'=1.73s / d_lead=6.49s]: (no information found)
     50.01s  agent 발화 시작: <ret> 음, 찾아봤는데 정확히 똑같은 핀스트라이프 규칙을 가진 다른 팀들의 명단은 찾지 못했어요.
     50.14s  user  발화 끝
-    51.61s  ⚡SPAN 주입 [d'=1.73s / d_lead=6.49s]: (no information found)
     56.49s  agent 발화 끝
     56.66s  user  발화 시작: 오늘은 세부적인 내용에 대해서 별로 도움이 안 되시네요!
     60.06s  agent 발화 시작: [sigh] 죄송해요. 제가 도와드리고 싶으니까 다른 방향으로 한번 알아볼까요?
@@ -128,10 +128,10 @@
     75.85s  agent 발화 끝
     78.14s  agent 발화 시작: 네.
     78.92s  agent 발화 끝
-    79.03s  <ret> 발화 (turn20 첫 프레임)
+    79.52s  <ret> 발화 (turn20 첫 프레임)
     79.63s  agent 발화 시작: <ret> 지금 뉴욕 시는 섭씨 이십이 점 이 도이고 구름이 조금 끼어 있어요.
     79.78s  user  발화 끝
-    79.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.99s]: (tool result) Current weather in New York City: 72 degrees Fahrenheit,
+    80.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.99s]: (tool result) Current weather in New York City: 72 degrees Fahrenheit,
     84.62s  agent 발화 끝
     84.65s  user  발화 시작: 나쁘지 않네요. 이사 체크리스트에서 가장 먼저 해야 할 일이 뭘까요?
     89.92s  user  발화 끝
@@ -148,8 +148,8 @@
    109.33s  agent 발화 끝
    110.83s  agent 발화 시작: 예.
    111.33s  agent 발화 끝
-   112.49s  <ret> 발화 (turn29 첫 프레임)
+   112.63s  <ret> 발화 (turn29 첫 프레임)
    112.82s  user  발화 끝
    112.85s  agent 발화 시작: <ret> 음, 찾아보니 윌리엄스버그에 있는 방 하나짜리 집이 삼천이백 달러고, 덤보에 있는 스튜디오 타입이
-   113.09s  ⚡SPAN 주입 [d'=0.60s / d_lead=8.71s]: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsbu
+   113.75s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.71s]: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsbu
    121.56s  agent 발화 끝

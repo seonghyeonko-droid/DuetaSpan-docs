@@ -81,28 +81,28 @@
 # EXAMINER(FDB-v2) 단계: S1 워싱턴주 시애틀에 보험 처리 안 되는 가족 상담사 좀 찾아 줘 | S2 내 돈 내고 하는 거니까 노스웨스트 힐링이 더 낫겠다. 다음  | S3 잠깐, 생각해보니 열 시에 일정이 겹치네. 오후 두 시로 옮겨 | S4 아니, 그냥 취소해 줘. 확실하게 내가 직접 전화할게.
 
      0.00s  user  발화 시작: 워싱턴주 시애틀에 보험 처리 안 되는 가족 상담사 좀 찾아 줘.
+     2.77s  <ret> 발화 (turn1 첫 프레임)
      3.65s  user  발화 끝
-     3.71s  <ret> 발화 (turn1 첫 프레임)
+     3.69s  ⚡SPAN 주입 [d'=0.92s / d_lead=8.90s]: (tool result) (no information found)
      3.75s  agent 발화 시작: <ret> 음, 시애틀에서 보험 안 받는 가족 상담사를 찾아봤는데 아쉽게도 정보가 없네요. 조금 까다롭긴 하
-     4.63s  ⚡SPAN 주입 [d'=0.92s / d_lead=8.90s]: (tool result) (no information found)
      7.33s  user  발화 시작: 그래.
      7.91s  user  발화 끝
     12.65s  agent 발화 끝
     13.03s  user  발화 시작: 쓸모없네. 보험 상관없이 그냥 평점 높은 사람으로 찾으면 되잖아?
+    17.38s  <ret> 발화 (turn4 첫 프레임)
     17.38s  user  발화 끝
-    17.39s  <ret> 발화 (turn4 첫 프레임)
     17.40s  agent 발화 시작: <ret> 답답하시겠어요. 검색 범위를 넓혀 볼게요. 확인해 보니 별점 사 점 팔 점인 시애틀 패밀리 웰니스
-    19.35s  ⚡SPAN 주입 [d'=1.96s / d_lead=3.77s]: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insuran
+    19.34s  ⚡SPAN 주입 [d'=1.96s / d_lead=3.77s]: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insuran
     23.75s  user  발화 시작: 오.
     24.20s  user  발화 끝
     30.11s  agent 발화 끝
     30.25s  user  발화 시작: 내 돈 내고 하는 거니까 노스웨스트 힐링이 더 낫겠다. 다음 주 월요일로 예약 잡아 줘.
     33.08s  agent 발화 시작: 그렇죠.
     33.76s  agent 발화 끝
-    35.48s  <ret> 발화 (turn8 첫 프레임)
+    35.40s  <ret> 발화 (turn8 첫 프레임)
     35.83s  agent 발화 시작: <ret> 첫걸음을 떼는 게 가장 어려운 법이죠. 예약 완료됐어요. 칠 월 십삼 일 월요일 오전 열 시에 노
     36.00s  user  발화 끝
-    36.16s  ⚡SPAN 주입 [d'=0.68s / d_lead=4.23s]: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.
+    36.63s  ⚡SPAN 주입 [d'=1.23s / d_lead=4.23s]: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.
     45.13s  user  발화 시작: 잠깐, 생각해보니 열 시에 일정이 겹치네. 오후 두 시로 옮겨 줘.
     45.24s  agent 발화 끝
     49.75s  agent 발화 시작: 시간 변경이 가능한지 바로 확인해 볼게요—

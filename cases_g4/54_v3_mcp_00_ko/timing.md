@@ -95,9 +95,9 @@
     23.67s  user  발화 끝
     30.33s  agent 발화 끝
     30.38s  user  발화 시작: 그렇게 말씀해 주시니 힘이 나네요. 아, 그런데 이사 갈 동네에 괜찮은 해변이 있는지 궁금해요. 샌프란시스코
-    39.01s  <ret> 발화 (turn7 첫 프레임)
+    38.69s  <ret> 발화 (turn7 첫 프레임)
+    39.29s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.16s]: (tool result) (no information found)
     39.56s  agent 발화 시작: <ret> 아쉽게도 조건에 맞는 무료 해변 정보가 검색되지 않았어요.
-    39.61s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.16s]: (tool result) (no information found)
     39.75s  user  발화 끝
     43.55s  user  발화 시작: 아, 그렇군요. 그럼 그냥 근처에 유명한 공원이라도 있을까요?
     43.73s  agent 발화 끝
@@ -111,10 +111,10 @@
     56.24s  agent 발화 끝
     58.28s  agent 발화 시작: 맞아요.
     58.91s  agent 발화 끝
-    61.32s  <ret> 발화 (turn14 첫 프레임)
+    61.35s  <ret> 발화 (turn14 첫 프레임)
     61.47s  agent 발화 시작: <ret> 내일 칠월 십일일 오전 일곱시에 알람이 설정되었습니다.
     61.58s  user  발화 끝
-    62.63s  ⚡SPAN 주입 [d'=1.30s / d_lead=4.12s]: (tool result) Alarm set for 07:00, 2026-07-11
+    62.71s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.12s]: (tool result) Alarm set for 07:00, 2026-07-11
     65.59s  agent 발화 끝
     66.72s  user  발화 시작: 감사합니다, 리아스 씨. 덕분에 마음이 한결 편해졌어요.
     70.41s  agent 발화 시작: [happy] 도움이 되었다니 정말 기뻐요.

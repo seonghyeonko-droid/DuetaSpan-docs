@@ -109,11 +109,11 @@
     40.22s  agent 발화 끝
     40.75s  user  발화 시작: This is confusing. Is there any other team that does that?
     42.94s  agent 발화 시작: Yeah, yeah.
-    44.59s  <ret> 발화 (turn12 첫 프레임)
+    44.31s  <ret> 발화 (turn12 첫 프레임)
     44.78s  agent 발화 끝
+    45.07s  ⚡SPAN 주입 [d'=0.76s / d_lead=4.53s]: (no information found)
     45.10s  user  발화 끝
     45.22s  agent 발화 시작: <ret> I couldn't find a specific list of other teams with th
-    45.36s  ⚡SPAN 주입 [d'=0.76s / d_lead=4.53s]: (no information found)
     49.75s  agent 발화 끝
     49.94s  user  발화 시작: You're not very helpful with the details today!
     53.22s  agent 발화 시작: [sigh] I'm sorry about that. I'm here to support you, so let
@@ -128,10 +128,10 @@
     69.68s  agent 발화 끝
     71.84s  agent 발화 시작: Yeah.
     72.48s  agent 발화 끝
-    73.10s  <ret> 발화 (turn20 첫 프레임)
+    73.19s  <ret> 발화 (turn20 첫 프레임)
     73.36s  user  발화 끝
     73.63s  agent 발화 시작: <ret> Right now in New York City, it is seventy-two degrees 
-    73.83s  ⚡SPAN 주입 [d'=0.73s / d_lead=4.72s]: (tool result) Current weather in New York City: 72 degrees Fahrenheit,
+    73.92s  ⚡SPAN 주입 [d'=0.73s / d_lead=4.72s]: (tool result) Current weather in New York City: 72 degrees Fahrenheit,
     78.18s  user  발화 시작: Not too bad. What should be the first thing on my moving che
     78.35s  agent 발화 끝
     81.80s  agent 발화 시작: I'd suggest starting with your housing paperwork and then fi
@@ -148,8 +148,8 @@
    102.94s  agent 발화 끝
    103.95s  agent 발화 시작: Mhm.
    104.44s  agent 발화 끝
-   105.19s  <ret> 발화 (turn29 첫 프레임)
+   105.38s  <ret> 발화 (turn29 첫 프레임)
    105.53s  agent 발화 시작: <ret> I found a one bedroom in Williamsburg for thirty-two h
    105.56s  user  발화 끝
-   106.30s  ⚡SPAN 주입 [d'=1.10s / d_lead=7.60s]: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsbu
+   106.91s  ⚡SPAN 주입 [d'=1.53s / d_lead=7.60s]: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsbu
    113.14s  agent 발화 끝

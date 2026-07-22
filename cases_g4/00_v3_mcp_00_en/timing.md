@@ -124,10 +124,10 @@
     49.06s  user  발화 시작: Could you find a psychologist in Austin who takes insurance?
     50.54s  agent 발화 시작: Okay.
     51.18s  agent 발화 끝
-    52.78s  <ret> 발화 (turn14 첫 프레임)
+    51.39s  <ret> 발화 (turn14 첫 프레임)
     52.90s  user  발화 끝
+    53.30s  ⚡SPAN 주입 [d'=1.91s / d_lead=5.13s]: (tool result) (no information found)
     53.38s  agent 발화 시작: <ret> I'm sorry, I couldn't find any psychologists in Austin
-    54.70s  ⚡SPAN 주입 [d'=1.91s / d_lead=5.13s]: (tool result) (no information found)
     58.52s  agent 발화 끝
     60.15s  user  발화 시작: Oh, that's a bummer. I'll just check my provider's website l
     64.23s  agent 발화 시작: [happy] No worries at all. You've got this, and taking thing

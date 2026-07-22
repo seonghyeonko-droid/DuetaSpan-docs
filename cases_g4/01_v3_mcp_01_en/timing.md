@@ -81,28 +81,28 @@
 # EXAMINER(FDB-v2) 단계: S1 Can you locate a family counselor  | S2 Northwest Healing sounds better si | S3 Wait, I just remembered I have a c | S4 Actually, just cancel it. I'll cal
 
      0.00s  user  발화 시작: Can you locate a family counselor in Seattle, Washington who
+     4.06s  <ret> 발화 (turn1 첫 프레임)
      5.00s  user  발화 끝
-     5.35s  <ret> 발화 (turn1 첫 프레임)
+     5.15s  ⚡SPAN 주입 [d'=1.09s / d_lead=8.67s]: (tool result) (no information found)
      5.37s  agent 발화 시작: <ret> I searched for family counselors in Seattle who don't 
-     6.44s  ⚡SPAN 주입 [d'=1.09s / d_lead=8.67s]: (tool result) (no information found)
      8.87s  user  발화 시작: Uh-huh.
      9.32s  user  발화 끝
     14.04s  agent 발화 끝
     15.87s  user  발화 시작: That's useless. Why can't you just find someone who's highly
-    20.82s  <ret> 발화 (turn4 첫 프레임)
+    20.80s  <ret> 발화 (turn4 첫 프레임)
     21.17s  agent 발화 시작: <ret> I understand the frustration. Let's broaden the search
     21.19s  user  발화 끝
-    22.46s  ⚡SPAN 주입 [d'=1.64s / d_lead=3.10s]: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insuran
+    22.44s  ⚡SPAN 주입 [d'=1.64s / d_lead=3.10s]: (tool result) Seattle Family Wellness: 4.8 stars, accepts most insuran
     27.16s  user  발화 시작: Nice.
     27.80s  user  발화 끝
     33.18s  agent 발화 끝
     33.25s  user  발화 시작: Northwest Healing sounds better since I'm paying out of pock
     36.12s  agent 발화 시작: Mm-hmm.
     36.94s  agent 발화 끝
-    38.64s  <ret> 발화 (turn8 첫 프레임)
+    38.52s  <ret> 발화 (turn8 첫 프레임)
     38.96s  agent 발화 시작: <ret> Taking that first step is often the hardest part. You'
     39.04s  user  발화 끝
-    39.53s  ⚡SPAN 주입 [d'=0.89s / d_lead=3.37s]: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.
+    40.07s  ⚡SPAN 주입 [d'=1.55s / d_lead=3.37s]: (tool result) Appointment confirmed for July 13, 2026, at 10:00 AM.
     48.70s  agent 발화 끝
     48.90s  user  발화 시작: Wait, I just remembered I have a conflict at ten. Can you mo
     53.19s  agent 발화 시작: Let me check if they can shift that for you—

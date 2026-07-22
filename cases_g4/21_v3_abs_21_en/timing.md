@@ -89,10 +89,10 @@
     26.03s  agent 발화 끝
     30.88s  agent 발화 시작: Right.
     31.52s  agent 발화 끝
-    35.58s  <ret> 발화 (turn10 첫 프레임)
+    35.09s  <ret> 발화 (turn10 첫 프레임)
     35.70s  user  발화 끝
+    35.87s  ⚡SPAN 주입 [d'=0.79s / d_lead=0.97s]: (no information found)
     36.12s  agent 발화 시작: <ret> Hmm, good question. Honestly, I can't find a reliable 
-    36.36s  ⚡SPAN 주입 [d'=0.79s / d_lead=0.97s]: (no information found)
     42.82s  user  발화 시작: Oh, that's a shame. I thought it was a specific thing. Anywa
     42.88s  agent 발화 끝
     46.14s  agent 발화 시작: Yeah.
@@ -101,28 +101,28 @@
     49.25s  agent 발화 시작: Six a.m. is a bold start! Should we set an alarm for you to 
     53.64s  agent 발화 끝
     53.78s  user  발화 시작: Yes, please. Set one for six a.m. tomorrow.
-    57.13s  <ret> 발화 (turn15 첫 프레임)
+    57.10s  <ret> 발화 (turn15 첫 프레임)
     57.30s  user  발화 끝
     57.56s  agent 발화 시작: <ret> [happy] All set. You'll have a gentle wake-up call at 
-    57.73s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.84s]: (tool result) Alarm set for 06:00 on July 11, 2026.
+    57.70s  ⚡SPAN 주입 [d'=0.60s / d_lead=3.84s]: (tool result) Alarm set for 06:00 on July 11, 2026.
     61.04s  user  발화 시작: Thanks. I think I'll try to go for a walk too. Is it going t
     61.41s  agent 발화 끝
     63.01s  agent 발화 시작: Yeah.
     63.46s  agent 발화 끝
-    66.17s  <ret> 발화 (turn18 첫 프레임)
+    65.94s  <ret> 발화 (turn18 첫 프레임)
     66.48s  agent 발화 시작: <ret> You're in luck. It'll be sunny with a high of seventy-
+    66.54s  ⚡SPAN 주입 [d'=0.60s / d_lead=4.02s]: (tool result) Tomorrow in New York: Sunny, high of 78 degrees, low of 
     66.70s  user  발화 끝
-    67.63s  ⚡SPAN 주입 [d'=1.46s / d_lead=4.02s]: (tool result) Tomorrow in New York: Sunny, high of 78 degrees, low of 
     69.15s  user  발화 시작: Yeah.
     69.79s  user  발화 끝
     70.51s  agent 발화 끝
     70.51s  agent 발화 시작: A morning walk sounds like a wonderful way to ground yoursel
     73.65s  user  발화 시작: It really does. I might stop by a cafe. Are there any good c
     73.65s  agent 발화 끝
-    78.44s  <ret> 발화 (turn22 첫 프레임)
+    78.49s  <ret> 발화 (turn22 첫 프레임)
     78.94s  agent 발화 시작: <ret> There is Ralph's Coffee, which is a bit pricey, and Es
     79.11s  user  발화 끝
-    79.19s  ⚡SPAN 주입 [d'=0.76s / d_lead=5.09s]: (tool result) 1. Ralph's Coffee - Pricey, 4.5 stars. 2. Espresso House
+    79.59s  ⚡SPAN 주입 [d'=1.10s / d_lead=5.09s]: (tool result) 1. Ralph's Coffee - Pricey, 4.5 stars. 2. Espresso House
     83.75s  user  발화 시작: I'll try Espresso House. I'm actually feeling a bit more mot
     84.03s  agent 발화 끝
     87.65s  agent 발화 시작: Right.

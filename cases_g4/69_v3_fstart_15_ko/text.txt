@@ -5,24 +5,24 @@ SYSTEM: <system> 당신은 인생의 큰 전환기를 맞이한 사람들을 돕
 [  0.00s][user ] 수이아, 나 지금 마음이 너무 복잡해서 그런데... 혹시 마이애미에 보험 적용되는 정신과 의사 좀— 아니다, 됐어. 그냥 오늘 날씨부터 알려 줘.
 [ 12.44s][moshi] ⟨ret@12.38s⟩ 오늘 ⟦⚡SPAN@13.53s: (tool result) Current weather in Miami, FL: 28 degrees Celsius, partly cloudy.⟧ 마이애미 날씨는요, 기온은 이십팔도이고 구름이 조금 껴 있습니다. 산책하시기에 딱 좋은 날씨네요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Miami, FL"}}
-[ 19.75s][user ] 그렇구나. 아까 말하려던 거 다시 생각해 봤는데, 역시 전문가 도움을 받는 게 좋을 것 같아. 보험 되는 곳으로 ⟨ret@29.16s⟩ 찾아줄래?
-[ 29.26s][moshi] ⟦⚡SPAN@30.03s: (tool result) (no information found)⟧ [sigh] 죄송해요. 확인해 봤는데 마이애미에서 보험 적용이 가능한 정신과 의사 정보를 찾지 못했습니다.
+[ 19.75s][user ] 그렇구나. 아까 말하려던 거 다시 생각해 봤는데, 역시 전문가 도움을 받는 게 좋을 것 같아. 보험 ⟨ret@28.15s⟩ 되는 곳으로 찾아줄래?
+[ 29.26s][moshi] ⟦⚡SPAN@29.03s: (tool result) (no information found)⟧ [sigh] 죄송해요. 확인해 봤는데 마이애미에서 보험 적용이 가능한 정신과 의사 정보를 찾지 못했습니다.
       CALL: {"function": "Services_4_FindProvider", "arguments": {"city": "Miami, FL", "type": "Psychiatrist", "insurance_accepted": true}}
 [ 34.92s][user ] «backchannel» 그치.
-[ 38.12s][user ] 아, 진짜? 생각보다 어렵네. 그럼 그냥 근처에 평점 좋은 곳이라도 있는지 검색해 ⟨ret@45.42s⟩ 봐.
-[ 45.81s][moshi] ⟦⚡SPAN@46.49s: (tool result) Found: Dr. Sarah Jenkins, Rating: 4.8, Address: 123 Health Way, Miami, FL.⟧ 다른 곳을 찾아보니 괜찮은 분이 계세요. 평점 사 점 팔점인 사라 제킨스 의사가 백이십삼 헬스 웨이에 있습니다.
+[ 38.12s][user ] 아, 진짜? 생각보다 어렵네. 그럼 그냥 근처에 평점 좋은 곳이라도 있는지 검색해 ⟨ret@45.34s⟩ 봐.
+[ 45.81s][moshi] ⟦⚡SPAN@45.94s: (tool result) Found: Dr. Sarah Jenkins, Rating: 4.8, Address: 123 Health Way, Miami, FL.⟧ 다른 곳을 찾아보니 괜찮은 분이 계세요. 평점 사 점 팔점인 사라 제킨스 의사가 백이십삼 헬스 웨이에 있습니다.
       CALL: {"function": "Services_4_FindProvider", "arguments": {"city": "Miami, FL", "type": "Psychiatrist"}}
 [ 48.33s][user ] «backchannel» 응.
-[ 54.64s][user ] 여기로 예약하고 싶어. 가능한 가장 빠른 시간으로 ⟨ret@59.51s⟩ 잡아줘.
-[ 59.88s][moshi] ⟦⚡SPAN@60.11s: (tool result) Appointment confirmed for July 11, 2026, at 10:00 AM.⟧ 네, 바로 예약해 드렸습니다. 예약 날짜는 칠월 십일일 오전 열시입니다.
+[ 54.64s][user ] 여기로 예약하고 싶어. 가능한 가장 빠른 시간으로 잡아줘.
+[ 59.88s][moshi] ⟨ret@59.74s⟩ 네, ⟦⚡SPAN@60.71s: (tool result) Appointment confirmed for July 11, 2026, at 10:00 AM.⟧ 바로 예약해 드렸습니다. 예약 날짜는 칠월 십일일 오전 열시입니다.
       CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Sarah Jenkins", "city": "Miami, FL"}}
 [ 63.32s][user ] «backchannel» 음.
 [ 65.41s][user ] 고마워. 근데 갑자기 너무 긴장된다. 나 잘할 수 있을까?
 [ 68.33s][moshi] «backchannel» 음.
 [ 71.57s][moshi] [happy] 당연하죠. 처음은 누구에게나 낯설고 떨리는 법이에요. 스스로에게 조금만 더 관대해지셔도 괜찮습니다.
-[ 79.01s][user ] 응, 그 말이 위로가 된다. 예약한 곳까지 어떻게 가는지 ⟨ret@83.99s⟩ 알려줄래?
+[ 79.01s][user ] 응, 그 말이 위로가 된다. 예약한 곳까지 어떻게 가는지 알려줄래?
 [ 82.07s][moshi] «backchannel» 음.
-[ 84.11s][moshi] 현재 위치에서 ⟦⚡SPAN@85.75s: (tool result) Route from current location to 123 Health Way: 15 minutes by car via I-95 South.⟧ 가시는 길 안내해 드릴게요. 아이 구십오번 남쪽 방향으로 차를 타고 가시면 십오분 정도 걸립니다.
+[ 84.11s][moshi] ⟨ret@84.06s⟩ 현재 위치에서 ⟦⚡SPAN@85.69s: (tool result) Route from current location to 123 Health Way: 15 minutes by car via I-95 South.⟧ 가시는 길 안내해 드릴게요. 아이 구십오번 남쪽 방향으로 차를 타고 가시면 십오분 정도 걸립니다.
       CALL: {"function": "map_directions", "arguments": {"destination": "123 Health Way, Miami, FL"}}
 [ 93.10s][user ] 알았어. 이제 좀 마음이 놓이네.
 [ 96.66s][moshi] [happy] 다행이에요. 내일 예약 시간 맞춰서 편안한 마음으로 다녀오세요. 제가 계속 응원하겠습니다.

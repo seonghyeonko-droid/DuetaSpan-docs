@@ -9,26 +9,26 @@
     13.53s  ⚡SPAN 주입 [d'=1.15s / d_lead=1.55s]: (tool result) Current weather in Miami, FL: 28 degrees Celsius, partly
     19.16s  agent 발화 끝
     19.75s  user  발화 시작: 그렇구나. 아까 말하려던 거 다시 생각해 봤는데, 역시 전문가 도움을 받는 게 좋을 것 같아. 보험 되는 곳
-    29.16s  <ret> 발화 (turn3 첫 프레임)
+    28.15s  <ret> 발화 (turn3 첫 프레임)
+    29.03s  ⚡SPAN 주입 [d'=0.87s / d_lead=7.82s]: (tool result) (no information found)
     29.26s  agent 발화 시작: <ret> [sigh] 죄송해요. 확인해 봤는데 마이애미에서 보험 적용이 가능한 정신과 의사 정보를 찾지 못
     29.44s  user  발화 끝
-    30.03s  ⚡SPAN 주입 [d'=0.87s / d_lead=7.82s]: (tool result) (no information found)
     34.92s  user  발화 시작: 그치.
     35.74s  user  발화 끝
     37.08s  agent 발화 끝
     38.12s  user  발화 시작: 아, 진짜? 생각보다 어렵네. 그럼 그냥 근처에 평점 좋은 곳이라도 있는지 검색해 봐.
-    45.42s  <ret> 발화 (turn6 첫 프레임)
+    45.34s  <ret> 발화 (turn6 첫 프레임)
     45.81s  agent 발화 시작: <ret> 다른 곳을 찾아보니 괜찮은 분이 계세요. 평점 사 점 팔점인 사라 제킨스 의사가 백이십삼 헬스 웨
     45.86s  user  발화 끝
-    46.49s  ⚡SPAN 주입 [d'=1.08s / d_lead=2.96s]: (tool result) Found: Dr. Sarah Jenkins, Rating: 4.8, Address: 123 Heal
+    45.94s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.96s]: (tool result) Found: Dr. Sarah Jenkins, Rating: 4.8, Address: 123 Heal
     48.33s  user  발화 시작: 응.
     48.92s  user  발화 끝
     54.20s  agent 발화 끝
     54.64s  user  발화 시작: 여기로 예약하고 싶어. 가능한 가장 빠른 시간으로 잡아줘.
-    59.51s  <ret> 발화 (turn9 첫 프레임)
+    59.74s  <ret> 발화 (turn9 첫 프레임)
     59.88s  agent 발화 시작: <ret> 네, 바로 예약해 드렸습니다. 예약 날짜는 칠월 십일일 오전 열시입니다.
     59.91s  user  발화 끝
-    60.11s  ⚡SPAN 주입 [d'=0.60s / d_lead=2.17s]: (tool result) Appointment confirmed for July 11, 2026, at 10:00 AM.
+    60.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.17s]: (tool result) Appointment confirmed for July 11, 2026, at 10:00 AM.
     63.32s  user  발화 시작: 음.
     63.96s  user  발화 끝
     65.29s  agent 발화 끝
@@ -41,10 +41,10 @@
     79.40s  agent 발화 끝
     82.07s  agent 발화 시작: 음.
     82.65s  agent 발화 끝
-    83.99s  <ret> 발화 (turn16 첫 프레임)
+    84.06s  <ret> 발화 (turn16 첫 프레임)
     84.11s  agent 발화 시작: <ret> 현재 위치에서 가시는 길 안내해 드릴게요. 아이 구십오번 남쪽 방향으로 차를 타고 가시면 십오분 
     84.29s  user  발화 끝
-    85.75s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.02s]: (tool result) Route from current location to 123 Health Way: 15 minute
+    85.69s  ⚡SPAN 주입 [d'=1.64s / d_lead=3.02s]: (tool result) Route from current location to 123 Health Way: 15 minute
     92.18s  agent 발화 끝
     93.10s  user  발화 시작: 알았어. 이제 좀 마음이 놓이네.
     96.65s  user  발화 끝

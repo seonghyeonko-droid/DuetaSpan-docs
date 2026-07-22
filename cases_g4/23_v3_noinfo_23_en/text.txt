@@ -87,34 +87,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Sella, can you look up the weather for my birthday back on June twelfth, twenty twenty-four?
+[  0.00s][user ] Hey Sella, can you look up the weather for my birthday back on ⟨ret@4.72s⟩ June twelfth, twenty twenty-four?
 [  3.43s][moshi] «backchannel» Yeah.
-[  6.53s][moshi] ⟨ret@6.20s⟩ [curious] Let me see... ⟦⚡SPAN@7.78s: (no information found)⟧ I'm sorry, I can't find weather records for a past date like that.
+[  6.53s][moshi] ⟦⚡SPAN@6.31s: (no information found)⟧ [curious] Let me see... I'm sorry, I can't find weather records for a past date like that.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2024-06-12"}}
-[ 12.40s][user ] Oh, right. Well, I'm planning a trip to Phoenix this February. Can you find some hotels ⟨ret@18.01s⟩ there?
-[ 18.37s][moshi] I ⟦⚡SPAN@18.97s: (tool result) Desert Mirage Hotel, Moderate, 200 dollars per night; Saguaro Sands, Pricey, 450 dollars per nig⟧ found the Desert Mirage Hotel at a moderate two hundred dollars a night, and Saguaro Sands, which is pricier at four hundred fifty dollars.
+[ 12.40s][user ] Oh, right. Well, I'm planning a trip to Phoenix this February. Can you find some hotels ⟨ret@17.97s⟩ there?
+[ 18.37s][moshi] I ⟦⚡SPAN@18.93s: (tool result) Desert Mirage Hotel, Moderate, 200 dollars per night; Saguaro Sands, Pricey, 450 dollars per nig⟧ found the Desert Mirage Hotel at a moderate two hundred dollars a night, and Saguaro Sands, which is pricier at four hundred fifty dollars.
       CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Phoenix, AZ"}}
 [ 21.02s][user ] «backchannel» Yeah.
-[ 28.55s][user ] The Desert Mirage sounds perfect. I want to stay for four nights starting February twenty-eighth for three ⟨ret@36.46s⟩ rooms.
+[ 28.55s][user ] The Desert Mirage sounds perfect. I want to stay for four nights starting February twenty-eighth for three ⟨ret@36.18s⟩ rooms.
 [ 32.19s][moshi] «backchannel» Yeah.
-[ 36.70s][moshi] [happy] All ⟦⚡SPAN@37.75s: (tool result) Desert Mirage Hotel, 2025-02-28, Phoenix, AZ, HOT4-005701, confirmed⟧ set! Your reservation at the Desert Mirage Hotel is confirmed for February twenty-eighth. Your confirmation number is HOT four zero zero five seven zero one.
+[ 36.70s][moshi] ⟦⚡SPAN@36.78s: (tool result) Desert Mirage Hotel, 2025-02-28, Phoenix, AZ, HOT4-005701, confirmed⟧ [happy] All set! Your reservation at the Desert Mirage Hotel is confirmed for February twenty-eighth. Your confirmation number is HOT four zero zero five seven zero one.
       CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"place_name": "Desert Mirage Hotel", "check_in_date": "2025-02-28", "stay_length": 4, "location": "Phoenix, AZ", "number_of_rooms": "3"}}
 [ 40.20s][user ] «backchannel» Mhm.
-[ 46.60s][user ] Thanks. I should probably find some things to do while I'm there. Any landmarks?
+[ 46.60s][user ] Thanks. I should probably find some things to do while I'm there. ⟨ret@50.40s⟩ Any landmarks?
 [ 48.20s][moshi] «backchannel» Yeah.
-[ 50.92s][moshi] ⟨ret@50.87s⟩ You ⟦⚡SPAN@51.61s: (tool result) Musical Instrument Museum, Desert Botanical Garden, Heard Museum⟧ should check out the Musical Instrument Museum, the Desert Botanical Garden, or the Heard Museum.
+[ 50.92s][moshi] You should ⟦⚡SPAN@52.07s: (tool result) Musical Instrument Museum, Desert Botanical Garden, Heard Museum⟧ check out the Musical Instrument Museum, the Desert Botanical Garden, or the Heard Museum.
       CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Phoenix, AZ", "category": "landmark"}}
 [ 53.72s][user ] «backchannel» Yeah.
 [ 57.25s][user ] That sounds like a great list. I'll need a car to get around—
-[ 61.84s][user ] Actually, are there any good restaurants near the Desert ⟨ret@65.53s⟩ Mirage Hotel?
-[ 66.05s][moshi] [happy] ⟦⚡SPAN@66.73s: (tool result) Cactus Grill, Moderate, American; Sizzle Southwestern, Pricey, Mexican⟧ Of course. There is the Cactus Grill, which is moderate and serves American food, and Sizzle Southwestern, a pricier Mexican spot.
+[ 61.84s][user ] Actually, are there any good restaurants near the Desert Mirage Hotel?
+[ 66.05s][moshi] ⟨ret@65.92s⟩ [happy] ⟦⚡SPAN@66.71s: (tool result) Cactus Grill, Moderate, American; Sizzle Southwestern, Pricey, Mexican⟧ Of course. There is the Cactus Grill, which is moderate and serves American food, and Sizzle Southwestern, a pricier Mexican spot.
       CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Desert Mirage Hotel, Phoenix, AZ"}}
-[ 74.92s][user ] I'll try the Cactus Grill. Can you book a table for four people this February twenty-eighth at seven ⟨ret@81.51s⟩ p.m.?
-[ 81.84s][moshi] Done! You ⟦⚡SPAN@82.99s: (tool result) Cactus Grill, 2025-02-28, 19:00, 4 guests, confirmed⟧ have a table for four at Cactus Grill on February twenty-eighth at seven p.m.
+[ 74.92s][user ] I'll try the Cactus Grill. Can you book a table for four people this February twenty-eighth at ⟨ret@81.22s⟩ seven p.m.?
+[ 81.84s][moshi] Done! ⟦⚡SPAN@82.73s: (tool result) Cactus Grill, 2025-02-28, 19:00, 4 guests, confirmed⟧ You have a table for four at Cactus Grill on February twenty-eighth at seven p.m.
       CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Cactus Grill", "date": "2025-02-28", "time": "19:00", "guests": "4"}}
-[ 88.19s][user ] Perfect. Now, about that car rental. What's available in ⟨ret@92.09s⟩ Phoenix?
-[ 92.69s][moshi] I ⟦⚡SPAN@93.36s: (tool result) Toyota Camry, Budget, 50 dollars per day; Chevrolet Tahoe, Pricey, 120 dollars per day⟧ see a budget Toyota Camry for fifty dollars a day or a pricey Chevrolet Tahoe for one hundred twenty dollars.
+[ 88.19s][user ] Perfect. Now, about that car rental. What's available in ⟨ret@92.29s⟩ Phoenix?
+[ 92.69s][moshi] I see ⟦⚡SPAN@93.63s: (tool result) Toyota Camry, Budget, 50 dollars per day; Chevrolet Tahoe, Pricey, 120 dollars per day⟧ a budget Toyota Camry for fifty dollars a day or a pricey Chevrolet Tahoe for one hundred twenty dollars.
       CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"location": "Phoenix, AZ", "date": "2025-02-28"}}
-[ 99.49s][user ] The Camry is fine. Book that for me for four days starting the ⟨ret@103.74s⟩ twenty-eighth.
-[104.05s][moshi] [happy] You're all set! ⟦⚡SPAN@105.74s: (tool result) Toyota Camry, Phoenix, AZ, 2025-02-28, 4 days, confirmed⟧ The Toyota Camry is reserved for you in Phoenix for four days starting February twenty-eighth.
+[ 99.49s][user ] The Camry is fine. Book that for me for four days starting the ⟨ret@103.67s⟩ twenty-eighth.
+[104.05s][moshi] [happy] ⟦⚡SPAN@104.64s: (tool result) Toyota Camry, Phoenix, AZ, 2025-02-28, 4 days, confirmed⟧ You're all set! The Toyota Camry is reserved for you in Phoenix for four days starting February twenty-eighth.
       CALL: {"function": "RentalCars_3_ReserveCar", "arguments": {"car_type": "Toyota Camry", "location": "Phoenix, AZ", "start_date": "2025-02-28", "days": 4}}

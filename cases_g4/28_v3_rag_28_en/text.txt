@@ -92,9 +92,9 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 28.72s][user ] «backchannel» Okay.
 [ 30.22s][user ] Wait, what about the World Series? Do they change then?
 [ 34.34s][moshi] [happy] That's a great question! They generally stick to the home and away tradition even in the postseason.
-[ 40.75s][user ] This is confusing. Is there any other team that does ⟨ret@44.59s⟩ that?
+[ 40.75s][user ] This is confusing. Is there any other team that ⟨ret@44.31s⟩ does that?
 [ 42.94s][moshi] «backchannel» Yeah, yeah.
-[ 45.22s][moshi] ⟦⚡SPAN@45.36s: (no information found)⟧ I couldn't find a specific list of other teams with the exact same pinstripe rule.
+[ 45.22s][moshi] ⟦⚡SPAN@45.07s: (no information found)⟧ I couldn't find a specific list of other teams with the exact same pinstripe rule.
 [ 49.94s][user ] You're not very helpful with the details today!
 [ 53.22s][moshi] [sigh] I'm sorry about that. I'm here to support you, so let's try a different angle.
 [ 59.94s][user ] Fine. I'm actually moving to New York soon, so maybe you can help with that instead.
@@ -102,7 +102,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 65.33s][moshi] [happy] That is so exciting! I'd love to help you settle into the city.
 [ 69.66s][user ] Thanks. Can you tell me what the weather is like there right now?
 [ 71.84s][moshi] «backchannel» Yeah.
-[ 73.63s][moshi] ⟨ret@73.10s⟩ ⟦⚡SPAN@73.83s: (tool result) Current weather in New York City: 72 degrees Fahrenheit, partly cloudy.⟧ Right now in New York City, it is seventy-two degrees and partly cloudy.
+[ 73.63s][moshi] ⟨ret@73.19s⟩ ⟦⚡SPAN@73.92s: (tool result) Current weather in New York City: 72 degrees Fahrenheit, partly cloudy.⟧ Right now in New York City, it is seventy-two degrees and partly cloudy.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New York City"}}
 [ 78.18s][user ] Not too bad. What should be the first thing on my moving checklist?
 [ 81.80s][moshi] I'd suggest starting with your housing paperwork and then finding a local grocery store to get your essentials.
@@ -110,7 +110,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 [ 93.37s][user ] …later. Do you know any good neighborhoods?
 [ 95.80s][moshi] «backchannel» Mhm.
 [ 98.03s][moshi] «interrupted» Since you're just starting out, maybe we could look at some different areas based on your budget—
-[102.18s][user ] «interrupts_prev» Actually, can you just find me a place in Brooklyn ⟨ret@105.19s⟩ first?
+[102.18s][user ] «interrupts_prev» Actually, can you just find me a place in Brooklyn first?
 [103.95s][moshi] «backchannel» Mhm.
-[105.53s][moshi] I ⟦⚡SPAN@106.30s: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsburg for 3200 dollars, Studio in DUMBO for⟧ found a one bedroom in Williamsburg for thirty-two hundred dollars and a studio in DUMBO for twenty-eight hundred dollars.
+[105.53s][moshi] ⟨ret@105.38s⟩ I found a ⟦⚡SPAN@106.91s: (tool result) Available homes in Brooklyn: 1BR apartment in Williamsburg for 3200 dollars, Studio in DUMBO for⟧ one bedroom in Williamsburg for thirty-two hundred dollars and a studio in DUMBO for twenty-eight hundred dollars.
       CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area": "Brooklyn"}}
