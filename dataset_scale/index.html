@@ -1,0 +1,128 @@
+<!doctype html><meta charset="utf-8">
+<title>DuetaSpan — Dataset Scale &amp; Augmentation Spec</title>
+<script src="../gate.js"></script>
+<body style="font-family:sans-serif;max-width:1040px;margin:24px auto;padding:0 14px;color:#1a1a1a">
+<p style="margin:0 0 10px"><a href="../" style="color:#1a4f8b;text-decoration:none">← DuetaSpan main</a></p>
+<h1 style="margin:6px 0">Dataset Scale &amp; Augmentation Spec</h1>
+<p style="color:#555;font-size:14px;line-height:1.6">Measured 2026-07-29 by full scan — no sampling, no estimation. Every figure below comes from a
+command whose output is archived alongside this page.</p>
+
+<style>
+table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0}
+th,td{border:1px solid #ccc;padding:6px 9px;vertical-align:top}
+th{background:#eef4fb;text-align:left}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{background:#eef4fb;font-weight:700}
+h2{margin-top:32px;border-bottom:2px solid #4a90d9;padding-bottom:4px}
+h3{margin:22px 0 6px;color:#5a2f8b}
+.big{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.big div{flex:1;min-width:210px;border:1px solid #ddd;border-radius:10px;padding:12px 16px;background:#fff}
+.big b{font-size:22px;color:#2b6cb0;display:block}
+.big span{font-size:12.5px;color:#666}
+.note{background:#f3ecfb;border:1px solid #d9c8ee;border-radius:10px;padding:12px 16px;margin:18px 0;font-size:13.5px;line-height:1.65}
+.warn{background:#fff6e9;border:1px solid #f0d0a0;border-radius:10px;padding:12px 16px;margin:18px 0;font-size:13.5px;line-height:1.65}
+.ok{color:#2f7a3f;font-weight:600} .no{color:#b03030;font-weight:600}
+code{background:#f4f4f6;padding:1px 5px;border-radius:3px}
+</style>
+
+<h2>1. Scale</h2>
+<div class="big">
+<div><b>2.61 TB</b><span>speech · 446,913 dialogues · 12,573 hours · 24 kHz/16-bit</span></div>
+<div><b>44.9 GB</b><span>text · 2,688,541 dialogues · 65.3 M turns</span></div>
+</div>
+
+<h3>Speech</h3>
+<table>
+<tr><th>tree</th><th class="n">dialogues</th><th class="n">size</th><th>format</th></tr>
+<tr><td>prod_export_v2</td><td class="n">376,183</td><td class="n">1,816 G</td><td>flac</td></tr>
+<tr><td>dsp_export</td><td class="n">50,455</td><td class="n">858 G</td><td><b>wav (uncompressed)</b></td></tr>
+<tr><td>newkinds_scale</td><td class="n">20,275</td><td class="n">—</td><td>flac</td></tr>
+<tr class="tot"><td>total</td><td class="n">446,913</td><td class="n">2,674 G = 2.61 TB</td><td>—</td></tr>
+</table>
+<p style="font-size:13px;line-height:1.6">Each dialogue is stored as <b>three files</b>: one interleaved stereo (L=user, R=agent) plus the two
+per-speaker monos it was built from. The stereo therefore duplicates content already on disk — unique
+content is ≈1.31 TB, and the 12,573-hour figure counts it once. Converting <code>dsp_export</code> from
+WAV to FLAC would reclaim ≈215 G.</p>
+<p style="font-size:13px;line-height:1.6"><b>Counting key is <code>part|id</code>, not the filename.</b> <code>dsp_export</code> reuses the same slot id
+across parts, so de-duplicating on filename alone collapses 50,455 dialogues to 628.</p>
+
+<h3>Text</h3>
+<table>
+<tr><th>store</th><th class="n">dialogues</th><th class="n">size</th><th>note</th></tr>
+<tr><td>textgen_v2 (current EN)</td><td class="n">1,635,017</td><td class="n">26 G</td><td>generation source</td></tr>
+<tr><td>textgen_ko_v1 (KO)</td><td class="n">859,423</td><td class="n">5.5 G</td><td>generation source</td></tr>
+<tr><td>textgen_v1 (legacy EN+KO)</td><td class="n">751,096</td><td class="n">5.7 G</td><td>generation source</td></tr>
+<tr><td>textgen_v2_ko_legacy</td><td class="n">54,283</td><td class="n">426 M</td><td>generation source</td></tr>
+<tr><td>├ pool union (unique ids)</td><td class="n"><b>2,688,541</b></td><td class="n">37.6 G</td><td>611,278 duplicates are regeneration lineage</td></tr>
+<tr><td>export texts (audio-backed)</td><td class="n">449,244</td><td class="n">7.28 G</td><td>strict subset · spans + Context DB added here</td></tr>
+<tr class="tot"><td>on disk</td><td class="n">2,688,541</td><td class="n">44.9 GB</td><td>—</td></tr>
+</table>
+<p style="font-size:13px;line-height:1.6"><b>Only 16.6% has audio.</b> 2,241,628 dialogues exist as text alone. The EN and KO tracks are
+disjoint by construction (<code>v2 ∩ ko_v1</code> = 0), which is the "generate KO natively, never
+translate" rule visible in the data.</p>
+
+<h2>2. Augmentation spec</h2>
+<p style="font-size:13.5px;line-height:1.65">Acoustic variation is produced <b>only in the augmentation layer</b>. Nothing is baked into the source
+audio. Each dialogue stores <code>user_variants[5,8,T]</code> — one hard-clean plus four augmented
+realizations — and training draws one at random on every access, so the same dialogue is heard
+differently each epoch.</p>
+
+<table>
+<tr><th>operation</th><th>track</th><th>labeled overlap span</th></tr>
+<tr><td>echo (agent leak)</td><td>p = 0.3</td><td><b>unchanged</b></td></tr>
+<tr><td>reverb / RIR</td><td>p = 0.3</td><td><b>independently redrawn</b> — the one differentiator</td></tr>
+<tr><td>noise</td><td>p = 0.3</td><td><b>unchanged</b></td></tr>
+<tr><td>gain</td><td>p = 0.5, uniform −24…+15 dB</td><td>small offset, within ±6 dB</td></tr>
+<tr class="tot"><td colspan="2">no gate fires → output is <b>bit-identical to input</b></td><td class="ok">verified</td></tr>
+</table>
+
+<div class="note">
+<b>Why operation-level, not re-running the pipeline on the span.</b> Slicing the span and passing it
+through <code>AcousticAug</code> again would necessarily redraw noise and echo, so the noise floor would
+jump at the boundary and the room would stop being the only difference. Instead the track pipeline runs
+once (echo → reverb → noise → gain), and only the <b>RIR difference</b> is cross-faded into the span
+(20 ms), with the gain offset applied as a scalar. Unit tests assert the echo and noise logs are
+character-for-character identical inside and outside the span.
+</div>
+
+<h3>Overlap channels</h3>
+<table>
+<tr><th>channel</th><th>what it is</th><th>timing</th><th>voice</th></tr>
+<tr><td><code>side_to_other</code></td><td>the user genuinely addressing a third party — a real turn on the user track</td><td>overlap is <b>emergent, not required</b>; FDB v1.5 itself measures 0/25 overlap with side speech starting +3.8 s after the user turn ends</td><td><b>same as the user</b> (FDB v1.5 §3.2)</td></tr>
+<tr><td><code>background</code></td><td>ambient speech unrelated to the conversation — <b>not a turn</b></td><td><b>random arrival</b>, freely overlapping ongoing speech</td><td><b>different from the user</b></td></tr>
+</table>
+<p style="font-size:13px;line-height:1.6">Label coverage: <b>47,227 dialogues</b> (side_to_other 40,883 / background 6,349) carry a verified
+overlap span. Labels were recovered by joining the per-turn marker — which survives in the generation
+records but was dropped when export wrote the per-dialogue text JSON — back to timeline wall-clock.
+Alignment was verified, never assumed: dialogues whose record and export snapshot disagreed were
+skipped rather than guessed.</p>
+
+<div class="warn">
+<b>Known defect — background is currently mis-built.</b> In the existing corpus a background line was
+emitted as an ordinary turn on the user track, so it sits in a silent gap and the agent <i>waits for it
+to finish</i> — teaching exactly the wrong behaviour — and it was synthesized with the user's own voice.
+Full-scan audit in progress. The correct construction, being implemented now, injects a rendered
+utterance <b>borrowed from another dialogue</b> at a <b>random time</b> with its <b>own RIR</b>: a
+different voice comes for free, and occupying no turn slot makes interrupting the conversation
+structurally impossible.
+</div>
+
+<div class="warn">
+<b>Known defect — <code>channel</code> value mismatch.</b> <code>textgen_v2</code> writes
+<code>channel: "side"</code> while the assembler only recognises
+<code>("side_to_other", "background")</code>, so 205,448 marker turns never received a
+<code>channel</code> in the timeline. Recovering labels from the generation records worked around this;
+the generator itself is still affected.
+</div>
+
+<h2>3. Data rules added 2026-07-29</h2>
+<table>
+<tr><th>#</th><th>rule</th></tr>
+<tr><td>17-c2</td><td>Overlap RIR is an <b>independent draw from the same pool</b> — not a far-field or long-reverb spec. "Slightly different" is the target; landing on something similar is acceptable.</td></tr>
+<tr><td>25</td><td><code>background</code> uses a different voice from the user; <code>side_to_other</code> uses the same voice. Both get their own room draw.</td></tr>
+<tr><td>26</td><td>Background speech is a clip <b>borrowed from another generated dialogue</b>, not from the voice-reference bank (bank clips are fixed lines and would repeat the same sentence everywhere).</td></tr>
+<tr><td>28</td><td><b>Context DB is mandatory in every dialogue</b>, not conditional on kind. A dialogue without one is not training data. Retrieval must go through the router with the Context DB always in scope — no <code>source == "mem"</code> gate, no lexical shortcut.</td></tr>
+</table>
+
+<p style="font-size:12.5px;color:#666;margin-top:28px">Source measurements and terminal captures:
+internal dashboard (<code>bench_listen/scale.html</code>, <code>status.html</code>, <code>aug.html</code>).</p>
