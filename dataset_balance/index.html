@@ -4,7 +4,7 @@
 <body style="font-family:sans-serif;max-width:1040px;margin:24px auto;padding:0 14px;color:#1a1a1a">
 <p style="margin:0 0 10px"><a href="../" style="color:#1a4f8b;text-decoration:none">← DuetaSpan 메인</a></p>
 <h1 style="margin:6px 0">Kind 균형 &amp; 생성 풀</h1>
-<p style="color:#555;font-size:14px;line-height:1.6">전체 생성 가능 풀 ≈ <b>1.4M 대화</b>. 하드코딩 상수가 아니라 <b>다양성 소스</b>(공식 QA/도구 데이터셋 + 자체 Context DB 조합)가 겹치기 시작하는 지점.
+<p style="color:#555;font-size:14px;line-height:1.6">전체 생성 가능 풀 ≈ <b>1.4M 대화</b>로 설계했고, <b>실측 2,688,541 고유 대화</b>가 만들어졌다(§0). 아래는 설계 근거. 하드코딩 상수가 아니라 <b>다양성 소스</b>(공식 QA/도구 데이터셋 + 자체 Context DB 조합)가 겹치기 시작하는 지점.
 생성 분포는 <code>gen30</code> BASE(42 EN 슬롯) 비율을 그대로 따르고, 각 kind의 <b>물량</b>은 그 비율을 1.4M 풀에 매핑한 값.
 모든 kind에 <b>출처(reference)</b>를 명시했고, 외부 데이터셋이 없는 자체 설계 kind는 <b>§C에 방법론</b>을 상세히 설명한다.</p>
 
@@ -38,7 +38,58 @@ code{background:#f2f2f2;padding:1px 4px;border-radius:3px;font-size:12px}
   <div>합계 기준선<br><b>≈ 1.4M</b></div>
 </div>
 
-<h2>A. Kind별 균형 · 출처 (BASE 비율 → 1.4M 매핑)</h2>
+
+<h2 style="border-bottom:2px solid #b03030">0. 실측 (2026-07-29 전수) — 아래 설계값과 대조</h2>
+<p style="font-size:13.5px;line-height:1.65">생성 풀 <code>ksh-fs/production/*/parts/*/records.jsonl</code> 전수 집계.
+파일 인스턴스 <b>3,299,819</b>건, id 중복 제거 시 <b>2,688,541</b> 대화(중복 611,278은 재생성 계보).
+kind는 <b>20종</b>. 아래 설계 비율은 <code>gen30</code> BASE 기준의 계획값이고, 이 표가 실제로 만들어진 결과다.</p>
+
+<div class="tk"><table>
+<tr><th style="width:20%">kind</th><th class="cnt" style="width:12%">레코드</th><th class="pct" style="width:9%">비중</th><th>풀별 분해</th></tr>
+<tr><td>rag</td><td class="cnt">387,529</td><td class="pct">11.74%</td><td class="ref">v2 178,372 · ko_v1 99,687 · v1 102,962 · ko_leg 6,508</td></tr>
+<tr><td>to_other</td><td class="cnt">387,515</td><td class="pct">11.74%</td><td class="ref">v2 178,369 · ko_v1 99,660 · v1 102,976 · ko_leg 6,510</td></tr>
+<tr><td>fake_span</td><td class="cnt">387,495</td><td class="pct">11.74%</td><td class="ref">v2 178,372 · ko_v1 99,663 · v1 102,954 · ko_leg 6,506</td></tr>
+<tr><td>abstain</td><td class="cnt">189,004</td><td class="pct">5.73%</td><td class="ref">v2 86,996 · ko_v1 48,602 · v1 50,226 · ko_leg 3,180</td></tr>
+<tr class="sub"><td>mcp_chained</td><td class="cnt">165,654</td><td class="pct">5.02%</td><td class="ref">v2 76,248 · ko_v1 42,611 · v1 44,016 · ko_leg 2,779</td></tr>
+<tr class="sub"><td>mcp_v2</td><td class="cnt">165,607</td><td class="pct">5.02%</td><td class="ref">v2 76,250 · ko_v1 42,609 · v1 43,984 · ko_leg 2,764</td></tr>
+<tr class="sub"><td>mcp_v1</td><td class="cnt">165,604</td><td class="pct">5.02%</td><td class="ref">v2 76,251 · ko_v1 42,586 · v1 43,996 · ko_leg 2,771</td></tr>
+<tr class="sub"><td>mcp_selfcorrect</td><td class="cnt">165,601</td><td class="pct">5.02%</td><td class="ref">v2 76,249 · ko_v1 42,587 · v1 43,996 · ko_leg 2,769</td></tr>
+<tr class="sub"><td>mcp_deferred</td><td class="cnt">165,594</td><td class="pct">5.02%</td><td class="ref">v2 76,248 · ko_v1 42,608 · v1 43,970 · ko_leg 2,768</td></tr>
+<tr class="sub"><td>mcp_v3</td><td class="cnt">165,587</td><td class="pct">5.02%</td><td class="ref">v2 76,249 · ko_v1 42,590 · v1 43,978 · ko_leg 2,770</td></tr>
+<tr><td>recall</td><td class="cnt">141,977</td><td class="pct">4.30%</td><td class="ref">v2 89,000 · ko_v1 49,727 · ko_leg 3,250 <span style="color:#b06000">(v1 없음)</span></td></tr>
+<tr><td>no_dup_ret</td><td class="cnt">141,974</td><td class="pct">4.30%</td><td class="ref">v2 89,000 · ko_v1 49,736 · ko_leg 3,238 <span style="color:#b06000">(v1 없음)</span></td></tr>
+<tr class="sub"><td>mcp_falsestart</td><td class="cnt">116,156</td><td class="pct">3.52%</td><td class="ref">v2 73,560 · ko_v1 42,596 <span style="color:#b06000">(v1·ko_leg 없음)</span></td></tr>
+<tr><td>interrupt</td><td class="cnt">114,344</td><td class="pct">3.47%</td><td class="ref">v1 102,956 · ko_leg 6,504 · <b>v2 4,884뿐</b></td></tr>
+<tr><td>card_recall</td><td class="cnt">99,997</td><td class="pct">3.03%</td><td class="ref"><b>v2 전용</b> 99,997 — Context DB를 가진 유일한 kind</td></tr>
+<tr class="sub"><td>mcp_noinfo</td><td class="cnt">94,449</td><td class="pct">2.86%</td><td class="ref">v2 43,497 · ko_v1 24,295 · v1 25,082 · ko_leg 1,575</td></tr>
+<tr><td>pause</td><td class="cnt">91,426</td><td class="pct">2.77%</td><td class="ref">v2 57,882 · ko_v1 33,544 <span style="color:#b06000">(v1·ko_leg 없음)</span></td></tr>
+<tr><td>hesitation</td><td class="cnt">68,563</td><td class="pct">2.08%</td><td class="ref">v2 43,413 · ko_v1 25,150</td></tr>
+<tr><td>background</td><td class="cnt">68,561</td><td class="pct">2.08%</td><td class="ref">v2 43,410 · ko_v1 25,151</td></tr>
+<tr><td>safety</td><td class="cnt">17,182</td><td class="pct">0.52%</td><td class="ref">v2 10,770 · ko_v1 6,021 · ko_leg 391</td></tr>
+<tr class="tot"><td>합계</td><td class="cnt">3,299,819</td><td class="pct">100%</td><td class="ref">고유 대화 2,688,541 · kind 20종</td></tr>
+</table></div>
+
+<div class="note" style="background:#fff1f1;border-color:#e8b0b0">
+<b>설계값과 어긋난 것 — 실측이 정본이다.</b>
+<table style="margin-top:8px">
+<tr><th>항목</th><th class="pct">설계</th><th class="pct">실측</th><th>판정</th></tr>
+<tr><td>MCP 계열 합</td><td class="pct">31%</td><td class="pct">36.5%</td><td>과다 (8종 합 1,204,252)</td></tr>
+<tr><td>RAG</td><td class="pct">23.8%</td><td class="pct">11.74%</td><td><b>절반</b></td></tr>
+<tr><td>mem 계열 (recall + no_dup_ret + card_recall)</td><td class="pct">11.9%</td><td class="pct">11.6%</td><td>일치</td></tr>
+<tr><td><b>persona</b></td><td class="pct">11.9%</td><td class="pct"><b>0%</b></td><td><b>풀에 아예 없다</b> — kind 20종에 존재하지 않음</td></tr>
+<tr><td>safety</td><td class="pct">4.8%</td><td class="pct">0.52%</td><td><b>9배 부족</b></td></tr>
+</table>
+persona는 구 <code>dsp_export</code>(v3 실험기)에는 <code>PERSONA</code> 스타일로 존재하지만 현행 textgen 풀 어디에도 없다.
+설계상 11.9%를 차지해야 할 kind가 양산 라인에 편입되지 않은 것이다. safety도 계획의 1/9에 그친다.
+</div>
+
+<div class="note">
+<b>오디오까지 간 것은 16.6%뿐.</b> 고유 대화 2,688,541 중 스테레오가 렌더링된 것은 <b>446,913</b>건이고
+나머지 2,241,628건은 텍스트로만 존재한다. 즉 위 비중은 <b>생성 풀</b>의 분포이며,
+실제 학습 믹스의 분포와 같지 않다. 학습 편입분 기준 분포는 <code>mix250k/manifest.json</code>이 정본이다.
+</div>
+
+<h2>A. Kind별 균형 · 출처 — 설계값 (BASE 비율 → 1.4M 매핑)</h2>
 <div class="tk"><table>
 <tr><th style="width:14%">kind</th><th style="width:9%">family</th><th style="width:7%">비율</th><th style="width:11%">물량 @1.4M</th><th style="width:15%">고유 소스 헤드룸</th><th>출처 (reference) / 방법론</th></tr>
 <tr><td><b>mcp</b></td><td class="fam">MCP</td><td class="pct">11.9%</td><td class="cnt">166,667</td><td class="cap">76,251</td><td>Google <b>SGD</b> + <b>BFCL</b> taxonomy → 125-tool 카탈로그 (§C-1)</td></tr>
